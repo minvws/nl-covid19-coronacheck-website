@@ -27,6 +27,7 @@ jobs:
         run: |
           sudo gem install bundler jekyll
           sudo bundle install
+          sudo bundle update --bundler
 
       - name: Build site
         run: bundle exec jekyll build
