@@ -1,0 +1,25 @@
+<header>
+  <div class="skiplinks">
+    <a href="#content">
+      {{ site.data.translations.header-skip-to-content[page.lang] }}
+    </a>
+  </div>
+  <div class="logobar">
+    <div class="logo">
+      <a href="{{ langSlug }}">
+        <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}">
+      </a>
+    </div>
+  </div>
+  <div class="header header--slim">
+    <div class="header__center">
+      <!-- {% include language-picker.html %} -->
+      <div class="header__title">
+        {{ site.data.translations.head-app-name }}
+      </div>
+    </div>
+    <img src="{{ site.baseurl }}/img/logo-badge.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" />
+  </div>
+</header>
+
+

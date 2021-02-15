@@ -1,0 +1,53 @@
+<div class="language-picker {% if page.layout == 'home' %} language-picker--home language-picker--right-orientation{% endif %}">
+  <span class="language-picker__current">
+    <span class="language-picker__label">
+      {{ site.data.translations.header-language-picker-label[page.lang] }}:
+    </span>
+    <strong>{{ site.data.languages[page.lang].label }}</strong>
+  </span>
+  <button type="button" class="language-picker__toggle" aria-controls="language-dropdown" aria-expanded="false">
+    <span class="screen-reader-text">
+      {{ site.data.translations.header-language-picker-switch-lang[page.lang] }}
+    </span>
+    <span class="language-picker__chevron"></span>
+  </button>
+  <div class="language-picker__dropdown" id="language-dropdown">
+    <span class="language-picker__title">
+      {{ site.data.translations.header-language-picker-switch-lang[page.lang] }}:
+    </span>
+    <ul class="language-picker__languages">
+      {% for lang in site.data.languages %}
+        {% assign language = lang[1] %}
+        <li class="language-picker__language">
+          {%- if lang[0] != page.lang -%}
+
+          {% assign url_size = page.url | remove:'/index.html' | split: '/' %}
+          {%- if page.error -%}
+            {%- assign lang_prefix = lang[0] -%}
+            {%- assign slug = '/404.html' %}
+          {%- elsif url_size.size > 2 -%}
+            {%- assign lang_prefix = lang[0] -%}
+            {%- assign slug = page.url | replace_first: page.lang, '' | replace_first '//', '/' | remove:'.html'%}
+           {%- else -%}
+            {%- assign lang_prefix = lang[0] -%}
+            {%- assign slug = '/' %}
+          {% endif %}
+
+          <a class="language-picker__link"
+            href="{{ site.baseurl }}/{{ lang_prefix }}{{ slug }}"
+            hreflang="{{ lang[0] }}"
+            lang="{{ lang[0] }}"
+          >
+          {% endif %}
+          {{ language.label }}
+          {% if lang[0] == page.lang %}
+            ({{ site.data.translations.header-language-picker-current-lang[page.lang] }})
+          {% endif %}
+          {% if lang[0] != page.lang %}
+          </a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

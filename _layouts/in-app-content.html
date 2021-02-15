@@ -1,0 +1,30 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+
+
+<!DOCTYPE html>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+<!--
+  This website is generated at {{ site.time }}.
+  The code is open source. You are welcome to contribute. Go to git: 
+  https://github.com/minvws/nl-covid19-coronatester-website
+-->
+{% include head.html %}
+<body>
+  <main class="content-center content-center__in_app" id="content">
+    <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
+      {% if page.title %}<h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>{% endif %}
+      {{ content }}
+    </div>
+  </main>
+
+  {% if page.redirectToApp %}
+    <script src="{{ site.baseurl }}/js/redirect-app.js?v={{ timeslug }}"></script>
+  {% endif %}
+
+</body>
+</html>
+

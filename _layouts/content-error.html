@@ -1,0 +1,51 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+
+
+<!DOCTYPE html>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+<!--
+  This website is generated at {{ site.time }}.
+  The code is open source. You are welcome to contribute. Go to git: 
+  https://github.com/minvws/nl-covid19-coronatester-website
+-->
+{% include head.html %}
+<body>
+  <div class="logobar" role="banner">
+    <div class="logo">
+      <a href="{{ langSlug }}">
+        <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}">
+      </a>
+    </div>
+  </div>
+  <main class="content-error" id="content">
+    <div class="content-center content-center--error">
+      {% include language-picker.html %}
+      <div class="content-block">
+
+        <img src="{{ site.baseurl }}/img/404-logo.svg" alt="404-coronamelder" />
+
+        <h1 id="{{ site.data.translations.error-title[page.lang] | slugify }}">{{ site.data.translations.error-title[page.lang] }}</h1>
+
+        <p>
+          <a href="{{ langSlug }}" class="link__404">{{ site.data.translations.error-back-to-home-page[page.lang] }}</a> 
+        </p>
+
+        <p>
+          <a href="{{ langSlug }}/faq" class="link__404">{{ site.data.translations.error-back-to-faq[page.lang] }}</a>
+        </p>
+
+
+        {{ content }}
+      </div>
+    </div>
+  </main>
+
+
+{% include footer-js.html %}
+</body>
+</html>
+

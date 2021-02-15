@@ -1,0 +1,46 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+
+
+<!DOCTYPE html>
+<!--
+  This website is generated at {{ site.time }}.
+  The code is open source. You are welcome to contribute. Go to git: 
+  https://github.com/minvws/nl-covid19-coronatester-website
+-->
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <main id="content">
+    <div class="container">
+      <div class="lead">
+        <div class="lead__text">
+          <div class="content-block">
+            <div class="md-block-lead">
+                <p>{{ site.data.translations.info-lead[page.lang] }}</p>
+                {% comment %}
+                  {% if page.lang == 'nl' %}
+                    <p class="announcement">{{ site.data.translations.info-announcement }}</p>
+                  {% endif %}
+                {% endcomment %}
+            </div>
+              
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include stories.html %}
+    <!-- {% include badges.html class="layout-app-badges--center-wrap" huawei="true" %} -->
+    {% include information.html %}
+    <!-- {% if page.lang == 'en' or page.lang == 'nl' %}{% include video.html %}{% endif %} -->
+    {% include faq.html %}
+    <!-- {% include badges.html class="layout-app-badges--center-wrap layout-app-badges--background" huawei="true" %} -->
+  </main>
+  {% include footer.html %}
+</body>
+</html>

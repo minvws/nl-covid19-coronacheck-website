@@ -1,0 +1,41 @@
+repo: minvws/nl-covid19-notification-app-website
+
+collections:
+  questions:
+    output: true
+    permalink: /:categories/:name/
+  stories:
+    output: false
+
+sass:
+  load_paths:
+    - css
+    - css-rtl
+
+include:
+  - .well-known
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - README.content-translations.md
+  - README.development.md
+  - README.i18n.md
+  - README.requirements.md
+  - LICENSES.md
+  - LICENSE.txt
+  - LICENSE.pdf
+  - example.content-page.md
+  - .sass-cache
+  - .history
+
+plugins:
+  - "jekyll-github-metadata"
+  - "jekyll-sitemap"
+  # - "jekyll-seo-tag"
+
+incremental: false
+
+url: "https://www.coronamelder.nl"

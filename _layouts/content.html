@@ -1,0 +1,47 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+
+<!DOCTYPE html>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+<!--
+  This website is generated at {{ site.time }}.
+  The code is open source. You are welcome to contribute. Go to git: 
+  https://github.com/minvws/nl-covid19-coronatester-website
+-->
+{% include head.html %}
+<body>
+  {% include header-slim.html %}
+  <main class="content-center" id="content">
+    {% if page.showBreadCrumbs %}
+      {% include breadcrumbs.html title=page.title collection=page.collection %}
+    {% endif %}
+
+    {% if page.showHomeBtn %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}">
+          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-home[page.lang] }}
+        </a>
+      </p>
+    {% endif %}
+    
+    <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
+      <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+      {{ content }}
+    </div>
+
+    {% if page.collection == 'questions' %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}/faq">
+          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-faq[page.lang] }} 
+        </a>
+      </p>
+    {% endif %}
+
+
+  </main>
+  {% include footer.html %}
+</body>
+</html>
