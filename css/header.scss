@@ -1,12 +1,9 @@
 .header {
   position: relative;
-  background: linear-gradient(180deg, #EFF7F9 0%, #EFF7F9 100%);
+  background: #EFF7F9;
   background-size: 120px;
   background-position: right 20px top 80px;
-  min-height: 300px;
-  @media(min-width: 960px) {
-    background: linear-gradient(180deg, #EFF7F9 0%, #EFF7F9 100%);
-  }
+  min-height: 300px; 
 
   &::before {
     content: '';
@@ -52,7 +49,6 @@
       width: 300px;
       height: 255px;
     }
-      
   }
 }
 
