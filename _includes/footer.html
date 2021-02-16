@@ -4,9 +4,11 @@
 {%- endif -%}
 
 <footer>
-    {% if page.showContact  %}
-        {% include footer-phone.html %}
-    {% endif %}
+    {% comment %}
+        {% if page.showContact  %}
+            {% include footer-phone.html %}
+        {% endif %}
+    {% endcomment %}
     
     {% if page.showTogether  %}
     <div class="footer-samen {{ small }}">
@@ -16,13 +18,14 @@
     </div>
     {% endif %}
 
+    {% comment %}
     <div class="footer">
         <div class="footer-inner">
             <div class="footer-links">
                 <div class="footer-links-col ___desktop-50">
                     <div class="footer-logos-info">
-                        <h2 class="screen-reader-text">{{ site.data.translations.footer-colophon[page.lang] }}</h2>
-                        {{ site.data.translations.footer-logos-info_md[page.lang] }}</div>
+                    <h2 class="screen-reader-text">{{ site.data.translations.footer-colophon[page.lang] }}</h2>
+                    {{ site.data.translations.footer-logos-info_md[page.lang] }}</div>
                 </div>
                 <div class="footer-links-col ___desktop-25">
                     <h3>{{ site.data.translations.footer-misc-title[page.lang] }}</h3>
@@ -30,11 +33,6 @@
                         <li>
                             <a href="{{ langSlug }}{{ site.data.translations.footer-misc-privacy-url }}">
                                 {{ site.data.translations.footer-misc-privacy[page.lang] }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ langSlug }}{{ site.data.translations.footer-misc-interoperability-url }}">
-                                {{ site.data.translations.footer-misc-interoperability[page.lang] }}
                             </a>
                         </li>
                         <li>
@@ -65,15 +63,6 @@
                                 {{ site.data.translations.footer-misc-pers[page.lang] }} {{ site.data.translations.english[page.lang] }}
                             </a>
                         </li>
-                        {% if page.lang == 'nl' or page.lang == 'fy' or page.lang == 'en' %}
-                        <li>
-                            <a href="{{ site.data.translations.footer-misc-partnertoolkit-url }}" target="_blank" rel="noopener noreferrer">
-                                {{ site.data.translations.footer-misc-partnertoolkit[page.lang] }} 
-                                {% if page.lang == 'en' %}(Dutch){% endif %}
-                                {% if page.lang == 'fy' %}(Nederlânsk){% endif %}
-                            </a>
-                        </li>
-                        {% endif %}
                     </ul>
                 </div>
                 <div class="footer-links-col ___desktop-25">
@@ -87,6 +76,7 @@
         
         </div>
     </div>
+    {% endcomment %}
 </footer>
 
 {% include footer-js.html %}

@@ -4,4 +4,5 @@ lang: nl
 showBreadCrumbs: true
 showContact: true
 title: Veelgestelde vragen
+published: false
 ---

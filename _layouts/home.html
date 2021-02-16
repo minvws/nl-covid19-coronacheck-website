@@ -17,29 +17,33 @@
   {% include header.html %}
   <main id="content">
     <div class="container">
-      <div class="lead">
+        {% comment %} 
+        <div class="lead">
         <div class="lead__text">
           <div class="content-block">
             <div class="md-block-lead">
                 <p>{{ site.data.translations.info-lead[page.lang] }}</p>
+                {% endcomment %}
                 {% comment %}
                   {% if page.lang == 'nl' %}
                     <p class="announcement">{{ site.data.translations.info-announcement }}</p>
                   {% endif %}
                 {% endcomment %}
+                {% comment %}
             </div>
               
             {{ content }}
           </div>
         </div>
-      </div>
+      </div>{% endcomment %}
     </div>
-    {% include stories.html %}
-    <!-- {% include badges.html class="layout-app-badges--center-wrap" huawei="true" %} -->
-    {% include information.html %}
-    <!-- {% if page.lang == 'en' or page.lang == 'nl' %}{% include video.html %}{% endif %} -->
-    {% include faq.html %}
-    <!-- {% include badges.html class="layout-app-badges--center-wrap layout-app-badges--background" huawei="true" %} -->
+    {% comment %} {% include stories.html %} {% endcomment %}
+    {% comment %} {% include badges.html class="layout-app-badges--center-wrap" huawei="true" %} {% endcomment %}
+    {% comment %} {% include information.html %} {% endcomment %}
+    {% comment %} {% if page.lang == 'en' or page.lang == 'nl' %}{% include video.html %}{% endif %} {% endcomment %}
+     {% include under-construction.html %}
+    {% comment %}  {% include faq.html %}
+    {% include badges.html class="layout-app-badges--center-wrap layout-app-badges--background" huawei="true" %} {% endcomment %}
   </main>
   {% include footer.html %}
 </body>
