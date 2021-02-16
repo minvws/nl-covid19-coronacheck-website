@@ -42,7 +42,7 @@
     font-weight: 600;
 
     span.md-highlight {
-        color: $color-WARN_red;
+        color: $color-coronacheck_blue;
     }
 
     @media (min-width: 740px) {
@@ -122,13 +122,13 @@
 .footer-phone_action_text {
     display: block;
     font-weight: 800;
-    color: $color-WARN_red;
+    color: $color-coronacheck_blue;
     font-size: 32px;
     margin-bottom: 0.5em;
     line-height: 1.4;
 
     a {
-        color: $color-WARN_red;
+        color: $color-coronacheck_blue;
     }
 }
 
