@@ -81,7 +81,20 @@ header-title:
   pl: 
   ro: 
   tr: 
-    
+
+header-subtitle:
+  nl: Zo veilig mogelijk<br /> eropuit
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
+
 header-appstore:
   nl: Downloaden in de App Store
   fy: Download yn de App Store
@@ -521,7 +534,7 @@ info-huawei-img:
   ro: huawei-en.svg
   tr: huawei-tr.svg
  
-footer-samen-logo-url: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronavirus-beeld-en-video/communicatiemiddelen-campagne
+footer-samen-logo-url: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/
 footer-samen-logo:
   nl: Alleen samen krijgen we corona onder controle. Ga naar campagnewebsite
   fy: Allinne mei-inoar krije wy koroana ûnder kontrôle. Gean nei de kampanjewebside
