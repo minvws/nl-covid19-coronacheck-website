@@ -291,7 +291,7 @@ youarehere:
   tr: Buradasınız
 
 faq:
-  nl: Veelgestelde vragen
+  nl: Veelgestelde vragen over CoronaCheck
   fy: Faakstelde fragen
   en: Frequently asked questions
   ar: الأسئلة المتكررة
@@ -302,9 +302,22 @@ faq:
   pl: Najczęściej zadawane pytania
   ro: Întrebări frecvente
   tr: Bütün sık sorulan sorular
-  
+
+faq-scanner:
+  nl: Veelgestelde vragen over de CoronaCheck scanner app
+  fy: Faakstelde fragen
+  en: Frequently asked questions
+  ar: الأسئلة المتكررة
+  bg: Често задавани въпроси
+  de: Häufig gestellte Fragen
+  es: Preguntas frecuentes
+  fr: Questions fréquemment posées
+  pl: Najczęściej zadawane pytania
+  ro: Întrebări frecvente
+  tr: Bütün sık sorulan sorular
+
 faq-category-howtheapphelps:
-  nl: Hoe de app helpt tegen corona
+  nl: Algemeen
   fy: Hoe de app helpt tegen corona
   en: How the app helps to stop the spread of coronavirus
   ar: How the app helps to stop the spread of coronavirus 

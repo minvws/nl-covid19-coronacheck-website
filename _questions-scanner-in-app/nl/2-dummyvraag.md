@@ -1,8 +1,8 @@
 ---
-layout: content
+layout: in-app-question
 index: 2
 set: 1
-title: Vraag 1
+title: Vraag 2 over de scanner-app
 lang: nl
 categories:
 - nl
@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Antwoord vraag 1
+Antwoord vraag 2
