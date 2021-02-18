@@ -1,8 +1,8 @@
 ---
-layout: content
-index: 2
+layout: in-app-question
+index: 1
 set: 1
-title: Vraag 2 over de scanner-app
+title: Hoe werkt de CoronaCheck app?
 lang: nl
 categories:
 - nl
@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Antwoord vraag 2
+Antwoord volgt

@@ -1,8 +1,8 @@
 ---
-layout: content
+layout: in-app-question
 index: 2
-set: 1
-title: Vraag 1 over de scanner-app
+set: 4
+title: Hoe worden mijn gegevens gebruikt?
 lang: nl
 categories:
 - nl
@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Antwoord vraag 1
+Antwoord volgt

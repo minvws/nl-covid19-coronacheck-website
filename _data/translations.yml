@@ -317,82 +317,108 @@ faq:
   tr: Bütün sık sorulan sorular
 
 faq-scanner:
-  nl: Veelgestelde vragen over de CoronaCheck scanner app
-  fy: Faakstelde fragen
-  en: Frequently asked questions
-  ar: الأسئلة المتكررة
-  bg: Често задавани въпроси
-  de: Häufig gestellte Fragen
-  es: Preguntas frecuentes
-  fr: Questions fréquemment posées
-  pl: Najczęściej zadawane pytania
-  ro: Întrebări frecvente
-  tr: Bütün sık sorulan sorular
+  nl: Support
+  fy: 
+  en:
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
 
-faq-category-howtheapphelps:
+faq-category-howthescannerappworks:
+  nl: Hoe werkt de Scanner?
+  fy: 
+  en:
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:  
+
+faq-category-scannerapp-privacy:
+  nl: Hoe werkt de Scanner?
+  fy: 
+  en:
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:  
+
+faq-category-scannerapp-errors:
+  nl: Hoe werkt de Scanner?
+  fy: 
+  en:
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-general:
   nl: Algemeen
-  fy: Hoe de app helpt tegen corona
-  en: How the app helps to stop the spread of coronavirus
-  ar: How the app helps to stop the spread of coronavirus 
-  bg: How the app helps to stop the spread of coronavirus 
-  de: How the app helps to stop the spread of coronavirus 
-  es: How the app helps to stop the spread of coronavirus 
-  fr: How the app helps to stop the spread of coronavirus 
-  pl: How the app helps to stop the spread of coronavirus 
-  ro: How the app helps to stop the spread of coronavirus 
-  tr: How the app helps to stop the spread of coronavirus 
+  fy: 
+  en:
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
   
-faq-category-howtheappworks:
-  nl: Werking van de app
-  fy: Werking van de app
-  en: How the app works  
-  ar: How the app works 
-  bg: How the app works 
-  de: How the app works 
-  es: How the app works 
-  fr: How the app works 
-  pl: How the app works 
-  ro: How the app works 
-  tr: How the app works 
-  
-faq-category-dailyLife:
-  nl: CoronaCheck in het dagelijks leven
-  fy: CoronaCheck in het dagelijks leven
-  en: CoronaCheck in everyday life
-  ar: CoronaCheck in everyday life
-  bg: CoronaCheck in everyday life
-  de: CoronaCheck in everyday life 
-  es: CoronaCheck in everyday life
-  fr: CoronaCheck in everyday life
-  pl: CoronaCheck in everyday life 
-  ro: CoronaCheck in everyday life
-  tr: CoronaCheck in everyday life 
+faq-category-howtouse:
+  nl: Gebruik CoronaCheck
+  fy: 
+  en:
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-troubleshooting:
+  nl: Problemen
+  fy: 
+  en:
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
 
 faq-category-privacy:
-  nl: Privacy, vrijwilligheid en misbruik 
-  fy: Privacy, vrijwilligheid en misbruik 
-  en: Privacy, voluntariness and abuse
-  ar: Privacy, voluntariness and abuse
-  bg: Privacy, voluntariness and abuse
-  de: Privacy, voluntariness and abuse 
-  es: Privacy, voluntariness and abuse
-  fr: Privacy, voluntariness and abuse
-  pl: Privacy, voluntariness and abuse 
-  ro: Privacy, voluntariness and abuse
-  tr: Privacy, voluntariness and abuse 
-
-faq-category-lessAskedQuestions:
-  nl: Overige vragen
-  fy: Overige vragen
-  en: Miscellaneous
-  ar: Miscellaneous
-  bg: Miscellaneous
-  de: Miscellaneous 
-  es: Miscellaneous
-  fr: Miscellaneous
-  pl: Miscellaneous 
-  ro: Miscellaneous
-  tr: Miscellaneous 
+  nl: Privacy
+  fy: 
+  en:
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
 
 layout-template-home:
   nl: Home

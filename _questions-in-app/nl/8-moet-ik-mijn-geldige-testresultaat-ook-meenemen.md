@@ -1,8 +1,8 @@
 ---
 layout: in-app-question
-index: 2
-set: 1
-title: Vraag 3 over de scanner-app
+index: 5
+set: 2
+title: Moet ik mijn geldige testresultaat ook meenemen?
 lang: nl
 categories:
 - nl
@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Antwoord vraag 3
+Antwoord volgt

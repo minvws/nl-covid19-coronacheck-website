@@ -23,7 +23,7 @@
       {% assign questions = site.questions-scanner-in-app | where:"lang", page.lang | sort: "index"  %}
 
       <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-howtheapphelps[page.lang]|slugify }}">{{ site.data.translations.faq-category-howtheapphelps[page.lang] }}</h2>
+        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-howthescannerappworks[page.lang]|slugify }}">{{ site.data.translations.faq-category-howthescannerappworks[page.lang] }}</h2>
 
         <div class="faq-layout__contents __overview">
             <ul class="faq-layout-contents__list">
@@ -47,8 +47,7 @@
             </ul>
         </div>
 
-        {% comment %}
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-howtheappworks[page.lang]|slugify }}">{{ site.data.translations.faq-category-howtheappworks[page.lang] }}</h2>
+        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-scannerapp-privacy[page.lang]|slugify }}">{{ site.data.translations.faq-category-scannerapp-privacy[page.lang] }}</h2>
 
         <div class="faq-layout__contents __overview">
             <ul class="faq-layout-contents__list">
@@ -72,7 +71,7 @@
             </ul>
         </div>
 
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-dailyLife[page.lang]|slugify }}">{{ site.data.translations.faq-category-dailyLife[page.lang] }}</h2>
+        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-scannerapp-errors[page.lang]|slugify }}">{{ site.data.translations.faq-category-scannerapp-errors[page.lang] }}</h2>
 
         <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
             <ul class="faq-layout-contents__list">
@@ -87,40 +86,6 @@
             {% endfor %}
             </ul>
         </div>
-
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-privacy[page.lang]|slugify }}">{{ site.data.translations.faq-category-privacy[page.lang] }}</h2>
-
-        <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-            <ul class="faq-layout-contents__list">
-              {% for question in questions %}
-              {% if question.set == 4 %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-                            {{ question.title }}
-                        </a>
-                    </li>
-                    {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
-
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-lessAskedQuestions[page.lang]|slugify }}">{{ site.data.translations.faq-category-lessAskedQuestions[page.lang] }}</h2>
-
-        <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-            <ul class="faq-layout-contents__list">
-              {% for question in questions %}
-              {% if question.set == 5 %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-                            {{ question.title }}
-                        </a>
-                    </li>
-                    {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
-
-        {% endcomment %}
       </div>
     </div>
 

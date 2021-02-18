@@ -1,8 +1,8 @@
 ---
 layout: in-app-question
-index: 2
+index: 3
 set: 1
-title: Vraag 3 over de app
+title: Mag ik iemand zonder geldig testbewijs in de CoronaCheck app binnen laten?
 lang: nl
 categories:
 - nl
@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Antwoord vraag 1
+Antwoord volgt
