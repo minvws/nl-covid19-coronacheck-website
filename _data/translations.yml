@@ -304,7 +304,7 @@ youarehere:
   tr: Buradasınız
 
 faq:
-  nl: Veelgestelde vragen over CoronaCheck
+  nl: Meestgestelde vragen over CoronaCheck
   fy: Faakstelde fragen
   en: Frequently asked questions
   ar: الأسئلة المتكررة
@@ -434,7 +434,7 @@ layout-template-home:
   tr: Anasayfa
   
 layout-template-faq:
-  nl: Terug naar veelgestelde vragen
+  nl: Terug naar meestgestelde vragen
   fy: Werom nei faakstelde fragen
   en: Back to frequently asked questions
   ar: الرجوع إلى الأسئلة المتكررة
@@ -447,7 +447,7 @@ layout-template-faq:
   tr: Sık sorulan sorulara dön
   
 layout-faq-btn:
-  nl: Bekijk alle veelgestelde vragen
+  nl: Bekijk alle meestgestelde vragen
   fy: Besjoch alle faakstelde fragen (Nederlânsk)
   en: All frequently asked questions
   ar: جميع الأسئلة المتكررة (الانجليزية)
@@ -966,7 +966,7 @@ error-back-to-home-page:
   tr: CoronaCheck.nl ana sayfasına geri dön
   
 error-back-to-faq:
-  nl: Ga naar veelgestelde vragen
+  nl: Ga naar meestgestelde vragen
   fy: Gean nei faakstelde fragen
   en: Go to frequently asked questions
   ar: انتقل إلى الأسئلة المتكررة
