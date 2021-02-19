@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Antwoord volgt
+In de app worden geen gegevens verwerkt of opgeslagen. Er wordt alleen gecontroleerd of de getoonde QR-code geldig is. 

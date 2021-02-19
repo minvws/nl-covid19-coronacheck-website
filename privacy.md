@@ -2,13 +2,6 @@
 layout: content
 lang: nl
 showBreadCrumbs: true
-permalink: /privacy
-title: Privacyverklaring CoronaMelder
----
----
-layout: content
-lang: nl
-showBreadCrumbs: true
 title: Privacyverklaring CoronaCheck
 ---
 ## Over CoronaCheck
@@ -63,7 +56,7 @@ De gegevens worden aan niemand verstrekt. Het testbewijs is bedoeld voor een sca
 Binnen CoronaCheck worden gegevens als volgt bewaard:
 
 - De persoon kan via CoronaCheck een testbewijs genereren. Het testbewijs is een maximaal aantal uren geldig (gemeten na het tijdstip waarop de test is afgenomen). Nadat het testbewijs zijn geldigheid heeft verloren, wordt het testbewijs automatisch verwijderd.
-- Een testbewijs is een afgeleide van het testresultaat. Het testresultaat kunt u zelf verwijderen.
+- Een testbewijs is een afgeleide van het testresultaat. Het testresultaat wordt na 48 uur verwijderd, als u de app gebruikt. Als de 48 uur zijn verstreken, maar u de app niet gebruikt, wordt het testresultaat verwijderd, zodra u de app weer opent.
 - In de CoronaCheck Scanner (app 2) worden geen gegevens opgeslagen.
 
 IP-adressen die voor beheers- en beveiligingsdoeleinden worden verwerkt, worden door CoronaCheck na maximaal 7 dagen verwijderd.

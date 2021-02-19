@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Antwoord volgt
+Lukt het je niet om de CoronaCheck app te gebruiken? Dan kun je bij het Fieldlab evenement ook je testresultaat dat je van de testlocatie hebt gekregen laten zien op je telefoon of op papier.
