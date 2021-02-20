@@ -505,21 +505,21 @@ info-caveat-fy: |
 info-caveat-letop-fy: 'Tink derom:'
 
 info-app-store-url:
-  nl: https://apps.apple.com/nl/app/id1517652429
-  fy: https://apps.apple.com/nl/app/id1517652429
-  en: https://apps.apple.com/gb/app/id1517652429
-  ar: https://apps.apple.com/gb/app/id1517652429
-  bg: https://apps.apple.com/gb/app/id1517652429 
-  de: https://apps.apple.com/gb/app/id1517652429 
-  fr: https://apps.apple.com/gb/app/id1517652429
-  es: https://apps.apple.com/gb/app/id1517652429
-  pl: https://apps.apple.com/gb/app/id1517652429
-  ro: https://apps.apple.com/gb/app/id1517652429
-  tr:  https://apps.apple.com/gb/app/id1517652429
+  nl: 
+  fy: 
+  en: 
+  ar: 
+  bg:  
+  de:  
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr:  
   
-info-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.en
+info-google-play-url: 
   
-info-huawei-url: https://appgallery.huawei.com/#/app/C103008211
+info-huawei-url: 
     
 info-app-store-img:
   nl: app-store-badge-nl.svg
