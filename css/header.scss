@@ -74,9 +74,9 @@
 
 .header--slim {
     min-height: 180px;
-    padding: 0 0 50px 0;
+    padding: 20px 0 50px 0; // TODO padding-top: 0
     color: #ffffff;
-    background: linear-gradient(0deg, #C9005D 38%, #315BBC 130%);
+    background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
 
     &::before,
     &::after {
@@ -85,7 +85,7 @@
 
     .header__logo-badge {
       position: absolute;
-      top: 5px;
+      top: 30px; // TODO 15
       right: 30px;
       bottom: 0;
       z-index: 0;
@@ -101,7 +101,7 @@
     }
 
     @media(min-width: 960px) {
-        background: linear-gradient(0deg, #C9005D 38%, #315BBC 130%);
+        background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
         &:before {
             content: none;
             background-image: none;
@@ -110,6 +110,7 @@
             /** Perfect alignment: width: of this element, width of the element above */
             width: 80px;
             right: calc((980px / -2) + calc(100% / 2));
+            top: 15px;
         }
     }
 }
