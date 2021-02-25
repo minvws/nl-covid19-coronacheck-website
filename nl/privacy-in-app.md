@@ -5,7 +5,7 @@ title: Privacyverklaring CoronaCheck
 ---
 ## Over CoronaCheck
 
-CoronaCheck (app) is een technisch hulpmiddel dat helpt bij het genereren en tonen van een digitaal bewijs dat u recent negatief bent getest op het COVID-19 virus. Het testbewijs is een bewijs dat iemand negatief is getest en dat tijdelijk geldig is. Dit bewijs kan worden gebruikt om toegang te geven tot specifieke evenementen en locaties. Het testbewijs maakt het (in combinatie met andere risicobeperkende maatregelen) mogelijk om daar waar verlichting van de lockdown mogelijk is, dit ook te doen.
+CoronaCheck (app) is alleen bedoeld voor Covid-19 bestrijding en is een technisch hulpmiddel dat helpt bij het genereren en tonen van een digitaal bewijs dat u recent negatief bent getest op het COVID-19 virus. Het testbewijs is een bewijs dat iemand negatief is getest en dat tijdelijk geldig is. Dit bewijs kan worden gebruikt om toegang te geven tot specifieke evenementen en locaties. Het testbewijs maakt het (in combinatie met andere risicobeperkende maatregelen) mogelijk om daar waar verlichting van de lockdown mogelijk is, dit ook te doen.
 
 ### 1. Hoe werkt CoronaCheck?
 
@@ -37,6 +37,8 @@ Ook het IP-adres wordt gebruikt. Dit is inherent aan het gebruik van internet en
 In de CoronaCheck Scanner (app 2) wordt het testbewijs gescand. Daarbij wordt getoond of de drager ervan beschikt over een negatief testbewijs dat nog geldig is. 
 
 Tenslotte wordt toestelinformatie verwerkt (de geïnstalleerde versie van de CoronaCheck app en het besturingssysteem van uw mobiele telefoon). Dit wordt vastgelegd om problemen en installatiemogelijkheden te kunnen onderzoeken en gebruikers hierover te informeren.
+
+Voor al deze gegevens geldt dat deze worden alleen gebruikt in het kader van Covid-19 bestrijding.
 
 ### 3. Wie is de opdrachtgever voor CoronaCheck?
 
