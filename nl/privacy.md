@@ -69,7 +69,7 @@ De CoronaCheck Scanner app heeft permissie nodig voor het cameragebruik van de t
 
 Het gebruik van CoronaCheck is vrijwilig. CoronaCheck valt niet onder de AVG, zodat er ook in formele zin geen sprake is van een verplichting om de rechten van betrokkenen te faciliteren.
 
-U hebt altijd het recht een klacht over de verwerking van uw persoonsgegevens in te dienen bij de Autoriteit Persoonsgegevens of bij de rechter. Meer informatie daarover vindt u op [de website van de Autoriteit Persoonsgegevens] (https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap). 
+U hebt altijd het recht een klacht over de verwerking van uw persoonsgegevens in te dienen bij de Autoriteit Persoonsgegevens of bij de rechter. Meer informatie daarover vindt u op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap). 
 
 Vragen of klachten over het gebruik van CoronaCheck kunt u stellen aan [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl). 
 
