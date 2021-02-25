@@ -5,7 +5,7 @@ title: Privacyverklaring CoronaCheck
 ---
 ## Over CoronaCheck
 
-CoronaCheck (app) is een technisch hulpmiddel dat helpt bij het genereren en tonen van een digitaal bewijs dat u recent negatief bent getest op het COVID-19 virus.
+CoronaCheck (app) is een technisch hulpmiddel dat helpt bij het genereren en tonen van een digitaal bewijs dat u recent negatief bent getest op het COVID-19 virus. Het testbewijs is een bewijs dat iemand negatief is getest en dat tijdelijk geldig is. Dit bewijs kan worden gebruikt om toegang te geven tot specifieke evenementen en locaties. Het testbewijs maakt het (in combinatie met andere risicobeperkende maatregelen) mogelijk om daar waar verlichting van de lockdown mogelijk is, dit ook te doen.
 
 ### 1. Hoe werkt CoronaCheck?
 
@@ -13,6 +13,7 @@ Met de CoronaCheck app kunnen personen kunnen laten zien dat zij beschikken over
 
 - De CoronaCheck app (app 1) – dit is de app die de persoon gebruikt om een testbewijs te genereren en presenteren.
 - De CoronaCheck Scanner app (app 2) – dit is de app die een controleur aan de deur gebruikt en die het getoonde testbewijs kan verifiëren op geldigheid.
+
 - De infrastructuur waarop de CoronaCheck app code draait en waarvandaan bijvoorbeeld de updates worden verstrekt.
 
 Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen.
@@ -23,9 +24,9 @@ De CoronaCheck app is bedoeld voor een zuiver persoonlijk of huishoudelijk gebru
 
 In het kader van de app worden de volgende gegevens verwerkt:
 
-BSN – Het BurgerServiceNummer wordt gebruikt in de communicatie tussen de DigiD app en het teststation. Op deze manier wordt er voor gezorgd dat de juiste persoon de juiste testresultaten ontvangt. Dit is de gebruikelijke manier van werken als testresultaten worden opgehaald bij de GGD. CoronaCheck ontvangt en ziet de BSN niet. Als de testresultaten worden aangeleverd door een andere partij dan de GGD wordt geen BSN gebruikt, maar krijgen mensen bij het teststation een voor CoronaCheck niet herleidbare en unieke code (‘voucher’) waarmee we de juiste resultaten aan de juiste persoon kunnen koppelen.
-
 Testresultaat – Het testresultaat dat CoronaCheck ophaalt bij het teststation bevat gegevens over de test: of het wel of geen negatieve test is, datum / tijdstip afname test, het type test (PCR, Antigeen, …), het teststation en een unieke identifier. Deze unieke identifier wordt door het teststation verstrekt en is niet gerelateerd aan een persoon, we weten dus niet wie dit is. Deze identifier gebruiken we als controlemiddel om vast te stellen dat het testresultaat maar op één telefoon is gedownload.
+
+Geboortedatum – Bij de installatie van de app vragen we u om uw geboortedatum in te voeren. De geboortedatum wordt gebruikt om te kunnen controleren dat u het juiste testresultaat heeft ontvangen.
 
 Testbewijs – Het testbewijs bevat een deel van de gegevens die in het testresultaat zijn opgenomen: het type test (PCR, Antigeen, …) en datum / tijdstip afname test, afgerond op hele uren.
 
@@ -59,7 +60,11 @@ Binnen CoronaCheck worden gegevens als volgt bewaard:
 
 IP-adressen die voor beheers- en beveiligingsdoeleinden worden verwerkt, worden door CoronaCheck na maximaal 7 dagen verwijderd.
 
-### 7. Klachten over gebruik van uw gegevens
+### 7. Welke permissies heeft de app nodig?
+
+De CoronaCheck Scanner app heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om de QR code van de CoronaCheck app te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een QR code te scannen.
+
+### 8. Klachten over gebruik van uw gegevens
 
 Het gebruik van CoronaCheck is vrijwilig. CoronaCheck valt niet onder de AVG, zodat er ook in formele zin geen sprake is van een verplichting om de rechten van betrokkenen te faciliteren.
 
@@ -67,10 +72,10 @@ U hebt altijd het recht een klacht over de verwerking van uw persoonsgegevens in
 
 Vragen of klachten over het gebruik van CoronaCheck kunt u stellen aan [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl). 
 
-### 8. Beveiliging van uw persoonsgegevens
+### 9. Beveiliging van uw persoonsgegevens
 
 De Minister van Volksgezondheid, Welzijn en Sport neemt de bescherming van uw gegevens serieus en neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan.
 
-### 9. Wijziging privacyverklaring
+### 10. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 15 februari 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 21 februari 2021.
