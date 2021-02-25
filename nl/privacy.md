@@ -3,6 +3,7 @@ layout: content
 lang: nl
 showBreadCrumbs: true
 title: Privacyverklaring CoronaCheck
+redirect_from: /privacy
 ---
 ## Over CoronaCheck
 

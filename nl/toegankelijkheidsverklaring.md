@@ -3,6 +3,7 @@ layout: content
 lang: nl
 showBreadCrumbs: true
 title: Toegankelijkheid
+redirect_from: /toegankelijkheidsverklaring
 ---
 
 Datum toegankelijkheidsverklaring 09-10-2020
