@@ -66,7 +66,9 @@ IP-adressen die voor beheers- en beveiligingsdoeleinden worden verwerkt, worden 
 
 ### 7. Welke permissies heeft de app nodig?
 
-De CoronaCheck Scanner app heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om de QR code van de CoronaCheck app te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een QR code te scannen.
+De CoronaCheck app (app 1) heeft permissie nodig voor het cameragebruik van de telefoon. Hiermee kan een persoon zelf een ‘token’ aangeleverd door de testaanbieder, in de vorm van een QR-code scannen, om op die manier het testresultaat op te halen naar de app. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel gebruiken, maar vervalt alleen de functionaliteit om QR-codes te scannen.
+
+De CoronaCheck Scanner app (app 2) heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om het testbewijs, in de vorm van een QR-code, uit de CoronaCheck app (app 1) te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het testbewijs, in de vorm van een QR-code te scannen.
 
 ### 8. Klachten over gebruik van uw gegevens
 
@@ -82,4 +84,4 @@ De Minister van Volksgezondheid, Welzijn en Sport neemt de bescherming van uw ge
 
 ### 10. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 21 februari 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 2 maart 2021.
