@@ -18,9 +18,7 @@ Met de CoronaCheck app kunnen personen kunnen laten zien dat zij beschikken over
 
 -           De infrastructuur waarop de CoronaCheck app code draait en waarvandaan bijvoorbeeld de updates worden verstrekt.
 
-Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen.
-
-De CoronaCheck app is bedoeld voor een zuiver persoonlijk of huishoudelijk gebruik. Volgens artikel 2c van de AVG betekent dit dat de AVG niet van toepassing is. CoronaCheck is met grote zorgvuldigheid en transparantie ontworpen om te waarborgen dat geen inbreuk wordt gemaakt op uw privacy.
+Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen.  Tijdens de installatie van deze app wordt u gevraagd toestemming te geven om uw gegevens te verwerken.
 
 ### 2. Welke gegevens worden verwerkt? 
 
@@ -34,7 +32,7 @@ Testbewijs – Het testbewijs bevat een deel van de gegevens die in het testresu
 
 Digitale handtekening – deze wordt geplaatst om zeker te weten dat het testbewijs niet kan worden aangepast. Deze handtekening is een soort echtheidsbewijs, waarmee u ‘bewijst’ u dat het digitale testbewijs klopt.
 
-Ook het IP-adres wordt gebruikt. Dit is inherent aan het gebruik van internet en IP-technologie en is nodig om technisch gezien een verbinding op te bouwen tussen de server van het teststation en uw telefoon. Het IP-adres wordt enkel verwerkt voor beheers- en beveiligingsdoeleinden. CoronaCheck verwijdert het IP-adres bij ontvangst.
+Ook het IP-adres wordt gebruikt. Dit is inherent aan het gebruik van internet en IP-technologie en is nodig om technisch gezien een verbinding op te bouwen tussen de server van het teststation en uw telefoon. Het IP-adres wordt enkel verwerkt voor beheers- en beveiligingsdoeleinden. CoronaCheck verwijdert het IP-adres bij ontvangst en ziet dit niet.
 
 In de CoronaCheck Scanner (app 2) wordt het testbewijs gescand. Daarbij wordt getoond of de drager ervan beschikt over een negatief testbewijs dat nog geldig is. 
 
@@ -72,7 +70,9 @@ De CoronaCheck Scanner app (app 2) heeft permissie nodig voor het cameragebruik 
 
 ### 8. Klachten over gebruik van uw gegevens
 
-Het gebruik van CoronaCheck is vrijwilig. CoronaCheck valt niet onder de AVG, zodat er ook in formele zin geen sprake is van een verplichting om de rechten van betrokkenen te faciliteren.
+De privacy wetgeving geeft u mogelijkheden om over uw eigen gegevens te beschikken, zoals recht op inzage, correctie en verwijdering. Bij installatie van de app vragen we uw geboortedatum. Deze wordt gebruikt om later bij een testresultaat te controleren of deze geboortedatum overeenkomt. Om deze reden kunt u deze achteraf niet aanpassen. Als u een testbewijs genereert, ziet u bij de QR-code welke geboortedatum u heeft ingevoegd. 
+
+Als u niet langer CoronaCheck wilt gebruiken, worden ook al uw gegevens verwijderd.
 
 U hebt altijd het recht een klacht over de verwerking van uw persoonsgegevens in te dienen bij de Autoriteit Persoonsgegevens of bij de rechter. Meer informatie daarover vindt u op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap). 
 
@@ -84,4 +84,4 @@ De Minister van Volksgezondheid, Welzijn en Sport neemt de bescherming van uw ge
 
 ### 10. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 2 maart 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 3 maart 2021.
