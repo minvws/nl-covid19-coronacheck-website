@@ -2,6 +2,7 @@
 layout: in-app-content
 lang: nl
 title: Testaanbieders Fieldlab evenementen
+redirect_from: /testaanbieders-fieldlab-in-de-app
 ---
 Voor de Fieldlab evenementen zijn de onderstaande testaanbieders beschikbaar. Neem voor vragen omtrent het afnemen van een test contact op met Fieldlab. 
 
