@@ -1,0 +1,103 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+
+<!DOCTYPE html>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+<!--
+  This website is generated at {{ site.time }}.
+  The code is open source. You are welcome to contribute. Go to git: 
+  https://github.com/minvws/nl-covid19-coronatester-website
+-->
+{% include head.html %}
+<body>
+  {% include header-slim.html %}
+  <main class="content-center" id="content">
+    {% if page.showBreadCrumbs %}
+      {% include breadcrumbs.html title=page.title collection=page.collection %}
+    {% endif %}
+
+    {% if page.showHomeBtn %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}">
+          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-home[page.lang] }}
+        </a>
+      </p>
+    {% endif %}
+    
+    <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
+      <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+      {{ content }}
+
+      <form class="form">
+        <div class="form-section">
+          <label for="email" class="fieldlabel">E-mailadres<strong class="req"> *</strong></label> 
+        
+          <div class="field">
+              <input id="email" type="text" placeholder="naam@domein.nl" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" required  aria-required="true">
+              <p class="meta">Voer hier een geldig e-mailadres in. Voorbeeld: 'naam@domein.nl'.</p>
+          </div>
+        </div>
+
+        <fieldset>
+          <div  class="form-section">
+          <legend>
+            Akkoordverklaringen <strong class="req"> *</strong>
+          </legend>
+
+          <div class="field">
+            <div role="group">
+              <label>
+                <input id="privacy" type="checkbox" required  aria-required="true" />
+                Ik ga akkoord met de <a href="/privacy" target="_blank">privacyverklaring <img src="{{ site.baseurl }}/img/external-link.svg" alt="opent in apart venster" width="12px" height="12px"></a>
+              </label>
+            </div>
+
+            <div role="group">
+              <label>
+                <input id="feedbackmail" type="checkbox" required  aria-required="true" />
+                Ik ga er mee akkoord dat mijn e-mailadres eenmalig wordt gebruikt om mij te benaderen voor het vragen van feedback.
+              </label>
+            </div>
+          </div></div>
+        </fieldset>
+
+        <fieldset>
+          <div  class="form-section">
+          <legend>
+              Welke app wil je downloaden <strong class="req"> *</strong>
+          </legend>
+
+          <div class="field">
+            <div role="group">
+            <label>
+              <input type="radio" id="android" name="app" value="android_version" required  aria-required="true" />
+              Android versie
+            </label>
+          </div>
+            <div role="group">
+            <label>
+              <input type="radio" id="iphone" name="app" value="iphone_version" required  aria-required="true" />
+              iPhone versie
+            </label>
+          </div></div>
+        </fieldset>
+
+        <input type="submit" value="Ja, ik doe mee" />
+      </form>
+    </div>
+
+    {% if page.collection == 'questions' %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}/faq">
+          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-faq[page.lang] }} 
+        </a>
+      </p>
+    {% endif %}
+
+  </main>
+  {% include footer.html %}
+</body>
+</html>
