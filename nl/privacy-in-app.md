@@ -2,6 +2,7 @@
 layout: in-app-content
 lang: nl
 title: Privacyverklaring CoronaCheck
+redirect_from: /privacy-in-app
 ---
 ## Over CoronaCheck
 
