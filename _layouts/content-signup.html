@@ -31,62 +31,7 @@
       <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
       {{ content }}
 
-      <form class="form">
-        <div class="form-section">
-          <label for="email" class="fieldlabel">E-mailadres<strong class="req"> *</strong></label> 
-        
-          <div class="field">
-              <input id="email" type="text" placeholder="naam@domein.nl" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" required  aria-required="true">
-              <p class="meta">Voer hier een geldig e-mailadres in. Voorbeeld: 'naam@domein.nl'.</p>
-          </div>
-        </div>
-
-        <fieldset>
-          <div  class="form-section">
-          <legend>
-            Akkoordverklaringen <strong class="req"> *</strong>
-          </legend>
-
-          <div class="field">
-            <div role="group">
-              <label>
-                <input id="privacy" type="checkbox" required  aria-required="true" />
-                Ik ga akkoord met de <a href="/privacy" target="_blank">privacyverklaring <img src="{{ site.baseurl }}/img/external-link.svg" alt="opent in apart venster" width="12px" height="12px"></a>
-              </label>
-            </div>
-
-            <div role="group">
-              <label>
-                <input id="feedbackmail" type="checkbox" required  aria-required="true" />
-                Ik ga er mee akkoord dat mijn e-mailadres eenmalig wordt gebruikt om mij te benaderen voor het vragen van feedback.
-              </label>
-            </div>
-          </div></div>
-        </fieldset>
-
-        <fieldset>
-          <div  class="form-section">
-          <legend>
-              Welke app wil je downloaden <strong class="req"> *</strong>
-          </legend>
-
-          <div class="field">
-            <div role="group">
-            <label>
-              <input type="radio" id="android" name="app" value="android_version" required  aria-required="true" />
-              Android versie
-            </label>
-          </div>
-            <div role="group">
-            <label>
-              <input type="radio" id="iphone" name="app" value="iphone_version" required  aria-required="true" />
-              iPhone versie
-            </label>
-          </div></div>
-        </fieldset>
-
-        <input type="submit" value="Ja, ik doe mee" />
-      </form>
+      {% include signup-form.html %}
     </div>
 
     {% if page.collection == 'questions' %}
