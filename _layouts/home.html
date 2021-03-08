@@ -41,7 +41,9 @@
     {% comment %} {% include badges.html class="layout-app-badges--center-wrap" huawei="true" %} {% endcomment %}
     {% comment %} {% include information.html %} {% endcomment %}
     {% comment %} {% if page.lang == 'en' or page.lang == 'nl' %}{% include video.html %}{% endif %} {% endcomment %}
-     {% include under-construction.html %}
+    
+    {{ content }}
+
     {% comment %}  {% include faq.html %}
     {% include badges.html class="layout-app-badges--center-wrap layout-app-badges--background" huawei="true" %} {% endcomment %}
   </main>
