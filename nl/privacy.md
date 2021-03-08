@@ -14,11 +14,13 @@ CoronaCheck (app) is alleen bedoeld voor Covid-19 bestrijding en is een technisc
 Met de CoronaCheck app kunnen personen kunnen laten zien dat zij beschikken over een (digitaal) geldig negatief testbewijs. CoronaCheck bestaat uit de volgende componenten:
 
 - De CoronaCheck app (app 1) – dit is de app die de persoon gebruikt om een testbewijs te genereren en presenteren.
-- De CoronaCheck Scanner app (app 2) – dit is de app die een controleur aan de deur gebruikt en die het getoonde testbewijs kan verifiëren op geldigheid.
+- De CoronaCheck Scanner app (app 2) – dit is de app die een controleur aan de deur gebruikt en die het getoonde testbewijs kan controleren op geldigheid.
 
 -           De infrastructuur waarop de CoronaCheck app code draait en waarvandaan bijvoorbeeld de updates worden verstrekt.
 
-Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen.  Tijdens de installatie van deze app wordt u gevraagd toestemming te geven om uw gegevens te verwerken.
+Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen.  
+
+Tijdens de installatie van deze app wordt u gevraagd toestemming te geven om uw gegevens te verwerken.
 
 ### 2. Welke gegevens worden verwerkt? 
 
@@ -64,8 +66,6 @@ IP-adressen die voor beheers- en beveiligingsdoeleinden worden verwerkt, worden 
 
 ### 7. Welke permissies heeft de app nodig?
 
-De CoronaCheck app (app 1) heeft permissie nodig voor het cameragebruik van de telefoon. Hiermee kan een persoon zelf een ‘token’ aangeleverd door de testaanbieder, in de vorm van een QR-code scannen, om op die manier het testresultaat op te halen naar de app. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel gebruiken, maar vervalt alleen de functionaliteit om QR-codes te scannen.
-
 De CoronaCheck Scanner app (app 2) heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om het testbewijs, in de vorm van een QR-code, uit de CoronaCheck app (app 1) te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het testbewijs, in de vorm van een QR-code te scannen.
 
 ### 8. Klachten over gebruik van uw gegevens
@@ -84,4 +84,4 @@ De Minister van Volksgezondheid, Welzijn en Sport neemt de bescherming van uw ge
 
 ### 10. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 3 maart 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 8 maart 2021.
