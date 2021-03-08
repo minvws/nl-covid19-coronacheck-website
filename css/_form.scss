@@ -4,7 +4,14 @@
 }
 
 .form-section {
-    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 576px) {
+    .form-section {
+        display: flex;
+        margin-bottom: .5rem;
+    }
 }
 
 fieldset {
@@ -134,9 +141,15 @@ input::placeholder {
 .form {
     margin-bottom: 2rem; 
 }
- 
+
 .form input[type="text"] {
-    width: calc( 100% - ( 44px + 1rem ))
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .form input[type="text"] {
+        width: calc( 100% - ( 44px + 1rem ))
+    }
 }
 
 @media (min-width: 768px) {
@@ -160,7 +173,8 @@ input::placeholder {
 
     .form .field {
         flex: 1 1 auto;
-        margin-bottom: .5rem
+        margin-bottom: .5rem;
+        margin-top: 0;
     }
 }
 
