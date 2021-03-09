@@ -4,7 +4,7 @@
       <label for="email" class="fieldlabel">E-mailadres<strong class="req"> *</strong></label> 
         
       <div class="field">
-          <input id="email" type="text" placeholder="naam@domein.nl" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" required  aria-required="true">
+          <input id="email" name="email" type="text" placeholder="naam@domein.nl" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" required  aria-required="true">
           <p class="meta">Voer hier een geldig e-mailadres in. Voorbeeld: 'naam@domein.nl'.</p>
       </div>
     </div>
@@ -18,14 +18,14 @@
       <div class="field">
         <div role="group">
           <label>
-            <input id="privacy" type="checkbox" required  aria-required="true" />
+            <input id="privacy" name="privacy" type="checkbox" required  aria-required="true" />
             Ik ga akkoord met de <a href="/privacy" target="_blank">privacyverklaring <img src="{{ site.baseurl }}/img/external-link.svg" alt="opent in apart venster" width="12px" height="12px"></a>
           </label>
         </div>
 
         <div role="group">
           <label>
-            <input id="feedbackmail" type="checkbox" />
+            <input id="feedbackmail" name="feedbackmail" type="checkbox" />
             Ik ga er mee akkoord dat mijn e-mailadres eenmalig wordt gebruikt om mij te benaderen voor het vragen van feedback.
           </label>
         </div>
