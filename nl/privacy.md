@@ -14,13 +14,11 @@ CoronaCheck (app) is alleen bedoeld voor Covid-19 bestrijding en is een technisc
 Met de CoronaCheck app kunnen personen kunnen laten zien dat zij beschikken over een (digitaal) geldig negatief testbewijs. CoronaCheck bestaat uit de volgende componenten:
 
 - De CoronaCheck app (app 1) – dit is de app die de persoon gebruikt om een testbewijs te genereren en presenteren.
-- De CoronaCheck Scanner app (app 2) – dit is de app die een controleur aan de deur gebruikt en die het getoonde testbewijs kan controleren op geldigheid.
+- De CoronaCheck Scanner app (app 2) – dit is de app die een controleur aan de deur gebruikt en die het getoonde testbewijs controleert op geldigheid.
 
 -           De infrastructuur waarop de CoronaCheck app code draait en waarvandaan bijvoorbeeld de updates worden verstrekt.
 
-Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen.  
-
-Tijdens de installatie van deze app wordt u gevraagd toestemming te geven om uw gegevens te verwerken.
+Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen. Tijdens de installatie van deze app wordt u gevraagd toestemming te geven om uw gegevens te verwerken. Bezoekers van de Fieldlab evenementen op 13 en 14 maart 2021 melden zich aan op de website www.coronacheck.nl/fieldlab en worden daar gevraagd in te stemmen met ons privacy beleid. 
 
 ### 2. Welke gegevens worden verwerkt? 
 
@@ -42,6 +40,8 @@ Tenslotte wordt toestelinformatie verwerkt (de geïnstalleerde versie van de Cor
 
 Voor al deze gegevens geldt dat deze worden alleen gebruikt in het kader van Covid-19 bestrijding.
 
+Als u zich aanmeldt via www.coronacheck.nl/fieldlab, geven wij uw emailadres door aan Apple of  Google (afhankelijk van uw device), zodat wij u kunnen uitnodigen voor het downloaden van de CoronaCheck app en / of de CoronaCheck Scanner app. Wij gebruiken uw emailadres alleen voor relevante communicatie rondom het evenement (tot uiterlijk 4 weken na het event).
+
 ### 3. Wie is de opdrachtgever voor CoronaCheck?
 
 De Minister van Volksgezondheid, Welzijn en Sport is opdrachtgever voor CoronaCheck.
@@ -62,7 +62,7 @@ Binnen CoronaCheck worden gegevens als volgt bewaard:
 - Een testbewijs is een afgeleide van het testresultaat. Het testresultaat wordt na 48 uur verwijderd, als u de app gebruikt. Als de 48 uur zijn verstreken, maar u de app niet gebruikt, wordt het testresultaat verwijderd, zodra u de app weer opent.
 - In de CoronaCheck Scanner (app 2) worden geen gegevens opgeslagen.
 
-IP-adressen die voor beheers- en beveiligingsdoeleinden worden verwerkt, worden door CoronaCheck na maximaal 7 dagen verwijderd.
+Als u zich aanmeldt via [www.coronacheck.nl/fieldlab](http://www.coronacheck.nl/fieldlab) vult u uw emailadres in zodat wij u kunnen uitnodigen. Wij slaan dit emailadres op en verwijderen dit na uiterlijk 4 weken. Dit geeft ons de gelegenheid om u kort na het evenement nog te kunnen benaderen, indien dit nodig zou zijn. 
 
 ### 7. Welke permissies heeft de app nodig?
 
@@ -84,4 +84,4 @@ De Minister van Volksgezondheid, Welzijn en Sport neemt de bescherming van uw ge
 
 ### 10. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 8 maart 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 9 maart 2021.
