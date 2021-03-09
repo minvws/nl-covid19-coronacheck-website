@@ -1,11 +1,12 @@
 ---
-layout: content-signup
+layout: content
 lang: nl
 showBreadCrumbs: true
 showContact: true
+device: android
 title: Fieldlab
 published: true
-redirect_from: /fieldlab
+redirect_from: /fieldlab-android
 ---
 **Help met het ontwikkelen van CoronaCheck**
 
@@ -19,11 +20,7 @@ Neem indien je gebruik maakt van de CoronaCheck app ook altijd de testuitslag me
 
 Bedankt voor je deelname en heel veel plezier in Biddinghuizen!
 
-## Uitleg
+{% include signup-form.html %}
 
-- [Uitleg installatie iPhone](/nl/instructies-iphone)
-- [Uitleg installatie Android](/nl/instructies-android)
 
-## Aanmelden
-
-(Redirect naar /instructies-android of /instructies-iphone )
+{% include instructies-android.md %}

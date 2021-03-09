@@ -1,12 +1,3 @@
----
-layout: content
-lang: nl
-showBreadCrumbs: true
-showContact: true
-title: Instructies installeren demoversie op iOS
-published: true
-redirect_from: /instructies-ios
---- 
 ## Downloaden CoronaCheck op iOS
 
 Aangezien de CoronaCheck app nog in ontwikkeling en nog niet voor het grote publiek beschikbaar, is de app momenteel nog niet te downloaden vanuit de Apple App store. Het downloaden van de app op je telefoon gebeurd daarom met behulp van TestFlight, dit is een online dienst waarmee je je app kunt testen voordat de app in de App store verschijnt.
