@@ -1,22 +1,21 @@
 ---
-layout: content
+layout: content-pilot
 lang: nl
 showBreadCrumbs: true
 showContact: true
+showFAQ: false
 device: iphone
-title: Fieldlab
+title: Help met het ontwikkelen van CoronaCheck
 published: true
 redirect_from: /fieldlab-ios
 ---
-**Help met het ontwikkelen van CoronaCheck**
-
-Als er in de toekomst op grotere schaal evenementen zoals die van Fieldlab georganiseerd gaan worden, is er een makkelijke en veilige manier nodig om te laten zien dat je recent negatief bent getest op corona. Daarom ontwikkelt het Ministerie van Volksgezondheid, Welzijn en Sport de CoronaCheck app. Met de app kun je met een recente negatieve corona testresultaat een testbewijs genereren: een QR code waarmee jij toegang krijgt tot het evenement.
+Als er in de toekomst op grotere schaal evenementen zoals die van Fieldlab georganiseerd gaan worden, is er een makkelijke en veilige manier nodig om te laten zien dat je recent negatief bent getest op corona. Daarom ontwikkelt het Ministerie van Volksgezondheid, Welzijn en Sport de CoronaCheck app. 
 
 Tijdens de Fieldlab evenementen van 13 en 14 maart in Biddinghuizen kun je CoronaCheck al gebruiken. Zo testen we samen of het werkt, en leren we hoe CoronaCheck verder verbeterd kan worden. 
 
-Download met de instructies hieronder de CoronaCheck app en maak van jouw negatieve corona testresultaat een persoonlijke QR-code. Dat is jouw testbewijs. Deze QR-code wordt vervolgens gescand voordat je toegang krijgt tot het evenement. 
+De CoronaCheck app is alleen op uitnodiging beschikbaar via een speciale testomgeving. De app is namelijk nog niet beschikbaar via Google Play Store en Apple App store. Nadat je je e-mailadres hebt ingevuld ontvang je een uitnodiging om de app te downloaden. Maak daarna van jouw negatieve corona testresultaat een persoonlijke QR-code. Dat is jouw testbewijs. Deze QR-code wordt vervolgens gescand voordat je toegang krijgt tot het evenement.
 
-Neem indien je gebruik maakt van de CoronaCheck app ook altijd de testuitslag mee die je hebt ontvangen van de testaanbieder.
+Neem indien je gebruik maakt van de CoronaCheck app ook altijd de testuitslag mee die je hebt ontvangen vanuit Saltro, de test aanbieder.
 
 Bedankt voor je deelname en heel veel plezier in Biddinghuizen!
 
@@ -34,10 +33,10 @@ Voordat je de app kunt testen moet je eerst de TestFlight-app downloaden uit de 
 2. Open de app en ga akkoord met de voorwaarden
 3. Log in met het Apple ID waarmee je de apps wilt gaan testen
 
-![img](https://lh5.googleusercontent.com/gMXgIh5tRiUQaZI7fNeoZHaDDbwGhDI3X8Z9WpRMStL4LKQJogDW66fwwSbYl_WduMsm1Gd3BFhz0hoOHgnrUyVov4E8eOmg_qSsYHQFakOw2eiahyJpBx4LxO0kJDslfV_M6Wuh)
+![img](/img/fieldlab-appinstallatie.png)
 
 ### Stap 2: Uitnodiging ontvangen na invullen formulier
-Indien je het formulier hierboven hebt ingevuld zul je een e-mail ontvangen (hoe snel?) die specifiek naar jou wordt gestuurd met een speciale link zodat je de app kunt downloaden:
+Indien je het formulier hierboven hebt ingevuld zul je een e-mail ontvangen die specifiek naar jou wordt gestuurd met een speciale link zodat je de app kunt downloaden:
 
 1. Kijk in mail voor de uitnodiging (“Rijksoverheid has invited you to test CoronaCheck”) 
 2. Open de e-mail op je iPhone en klik op de link “View in TestFlight”
@@ -45,4 +44,4 @@ Indien je het formulier hierboven hebt ingevuld zul je een e-mail ontvangen (hoe
 4. TestFlight zal de app installeren en na afloop kun je op de knop "Open" tikken
 
 ### Stap 3: Open de CoronaCheck app
-Nadat je via Testflight de CoronaCheck app hebt gedownload kun je de app downloaden en openen.
+Nadat je via Testflight de CoronaCheck app hebt gedownload kun je de app openen.
