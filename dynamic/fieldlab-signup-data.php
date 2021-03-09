@@ -48,15 +48,18 @@ try {
 
     $databaseParams = [];
     $databaseParams[] = 'dbname='.$dbName;
-    !empty($dbSSLM) ?? $databaseParams[] = 'sslmode='.$dbSSLM;
-    !empty($dbSSLM) ?? $databaseParams[] = 'sslrootcert='.$dbSSLCA;
-    !empty($dbSSLM) ?? $databaseParams[] = 'sslcert='.$dbSSLCert;
-    !empty($dbSSLM) ?? $databaseParams[] = 'sslkey='.$dbSSLKey;
+    if (!empty($dbSSLM)) {
+        $databaseParams[] = 'sslmode='.$dbSSLM;
+        $databaseParams[] = 'sslrootcert='.$dbSSLCA;
+        $databaseParams[] = 'sslcert='.$dbSSLCert;
+        $databaseParams[] = 'sslkey='.$dbSSLKey;
+    }
+
 
     $pdo = new PDO('pgsql:host='.$dbHost.';'.implode(";",$databaseParams).';', $dbUser, $dbPass);
 
     // Insert into the database
-    $sql = 'INSERT INTO FieldLabsSignUp (email, privacy, feedbackmail, app, client_key, nonce)
+    $sql = 'INSERT INTO fieldlabs_signup (email, privacy, feedbackmail, app, client_key, nonce)
                 VALUES (:email, :privacy, :feedbackmail, :app, :client_key, :nonce)';
 
     $stmt = $pdo->prepare($sql);
