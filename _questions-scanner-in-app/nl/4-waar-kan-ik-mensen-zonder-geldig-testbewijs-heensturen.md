@@ -9,6 +9,7 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
+published: false
 ---
 Indien de bezoeker wel over een geldig negatief resultaat beschikt, kan deze worden gebruikt om een testbewijs te maken in de CoronaCheck app. Gebruik hiervoor de cijfercode die benoemd staat op het testresultaat.  
 

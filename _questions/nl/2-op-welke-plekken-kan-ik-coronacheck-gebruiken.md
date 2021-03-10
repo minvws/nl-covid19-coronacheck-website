@@ -10,5 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-CoronaCheck is op dit moment alleen te gebruiken bij het evenement van Fieldlab. Hier wordt de CoronaCheck app getest. 
-
+Op dit moment is CoronaCheck alleen te gebruiken bij de evenementen van Fieldlab. Daar wordt de app getest. 

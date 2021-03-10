@@ -10,10 +10,8 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-In de [privacyverklaring](www.coronacheck.nl/nl/privacy-in-de-app) staat hoe CoronaCheck omgaat met jouw gegevens. Dit zijn de belangrijkste punten:
+In de [privacyverklaring](/nl/privacy) staat hoe CoronaCheck omgaat met jouw gegevens. Dit zijn de belangrijkste punten:
 
-- Gebruik van CoronaCheck is vrijwillig
 - Je naam wordt niet gebruikt of bewaard
 - Je GPS- of locatiegegevens worden niet gebruikt of bewaard
 - Anderen kunnen jou niet terugvinden als gebruiker van deze app
-

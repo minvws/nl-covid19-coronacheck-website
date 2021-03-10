@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Lukt het je niet om de CoronaCheck app te gebruiken? Dan kun je bij het Fieldlab evenement ook je testresultaat dat je van de testlocatie hebt gekregen laten zien op je telefoon of op papier.
+Tijdens het Fieldlab-evenement mag dat. Als het je niet lukt de CoronaCheck-app te gebruiken kun je het testresultaat op je telefoon of op papier laten zien.

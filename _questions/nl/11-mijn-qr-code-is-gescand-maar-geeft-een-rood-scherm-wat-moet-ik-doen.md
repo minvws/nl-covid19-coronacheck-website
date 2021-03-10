@@ -12,6 +12,6 @@ showContact: true
 ---
 Een rood scherm betekent dat je QR-code niet geldig is.
 
-Heb je de QR-code vanuit de CoronaCheck app laten zien? Een schermafbeelding of andere kopie van een QR-code is niet geldig en leidt altijd tot een rood scherm. Laat de QR-code dus altijd in de app zien. 
+Laat de QR-code altijd in de CoronaCheck-app zien. Een schermafbeelding of andere kopie van een QR-code is niet geldig en leidt altijd tot een rood scherm.
 
-Gaat het alsnog mis? Bel de helpdesk: 0800-1421 of vraag hulp aan een Fieldlab medewerker in de buurt.
+Gaat het alsnog mis? Bij het Fieldlab-evenement mag je jouw testresultaat (gekregen van de testaanbieder) ook op papier of op je telefoon laten zien.
