@@ -1,6 +1,0 @@
-CoronaCheck pilot
-
-## Uitleg
-
-
-## Aanmelden
