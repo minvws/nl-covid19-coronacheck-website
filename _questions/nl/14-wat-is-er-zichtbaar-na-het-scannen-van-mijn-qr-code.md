@@ -10,6 +10,6 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Na het scannen van jouw QR-code toont de Scanner app alleen een groen (geldig testbewijs) of rood (ongeldig testbewijs) scherm. 
+Na het scannen van jouw QR-code laat de Scanner-app alleen een groen (geldig testbewijs) of rood (ongeldig testbewijs) scherm zien. 
 
-Een rood scherm betekent niet dat jij corona hebt. Het betekent alleen dat er geen bewijs van een recente negatieve coronatest is.
+Een rood scherm betekent niet dat je corona hebt. Het betekent alleen dat er geen bewijs van een recente negatieve coronatest is.

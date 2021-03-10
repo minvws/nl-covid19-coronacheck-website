@@ -10,6 +10,6 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Ja, omdat we tijdens de Fieldlab evenementen de werking van de CoronaCheck app testen, vragen wij je om ook een kopie van je testresultaat mee te nemen. 
+Ja, graag. Tijdens het Fieldlab-evenement testen we of de CoronaCheck-app werkt. Daarom vragen we je voor de zekerheid ook het testresultaat op je telefoon of papier mee te nemen. 
 
-In de toekomst zal een geldig testbewijs in de CoronaCheck app voldoende zijn om toegang te verkrijgen. 
+In de toekomst is een geldig testbewijs in de CoronaCheck-app voldoende om toegang te krijgen. 

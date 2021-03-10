@@ -10,6 +10,6 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Alleen als je bent getest bij een door Fieldlab aangewezen testlocatie ontvang je bij je testresultaat een code die je in de CoronaCheck app kunt gebruiken. Deze code staat vermeld onderaan je testresultaat. 
+Je krijgt een sms met unieke code als je testresultaat bekend is. Deze krijg je op de dag voor het evenement, uiterlijk om 23:00 uur.
 
-Ben je bij een aangewezen testlocatie geweest maar heb je geen code gekregen? Neem dan contact op met de testlocatie.
+Geen sms met unieke code gekregen? Neem contact op met je testlocatie, telefonisch via 030-200 64 34 optie 1 of via mail [triagecovid@saltro.nl](mailto:triagecovid@saltro.nl).
