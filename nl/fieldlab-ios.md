@@ -37,7 +37,7 @@ Voordat je de app kunt testen moet je eerst de TestFlight-app downloaden uit de 
 ![img](/img/fieldlab-appinstallatie.png)
 
 ### Stap 2: Uitnodiging ontvangen na invullen formulier
-Indien je het formulier hierboven hebt ingevuld zul je een e-mail ontvangen die specifiek naar jou wordt gestuurd met een speciale link zodat je de app kunt downloaden:
+Indien je het formulier hierboven hebt ingevuld zul je een email ontvangen met daarin een link zodat je de app kunt downloaden:
 
 1. Kijk in mail voor de uitnodiging (“Rijksoverheid has invited you to test CoronaCheck”) 
 2. Open de e-mail op je iPhone en klik op de link “View in TestFlight”
