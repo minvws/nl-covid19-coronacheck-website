@@ -12,7 +12,7 @@ Aangezien de CoronaCheck app nog in ontwikkeling en nog niet voor het grote publ
 ### Stap 1: TestFlight-app installeren 
 Voordat je de app kunt testen moet je eerst de TestFlight-app downloaden uit de App store:
 
-1. [Download de TestFlight-app](https://www.iculture.nl/app/899247664/8)
+1. <a href="https://www.iculture.nl/app/899247664/8" rel="noreferrer noopener" target="_blank">Download de TestFlight-app</a>
 2. Open de app en ga akkoord met de voorwaarden
 3. Log in met het Apple ID waarmee je de apps wilt gaan testen
 
