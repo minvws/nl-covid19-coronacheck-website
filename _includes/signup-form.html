@@ -5,7 +5,7 @@
         
       <div class="field">
           <input id="email" name="email" type="text" placeholder="naam@domein.nl" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" required  aria-required="true">
-          {% if page.device == 'android' %}<p class="meta">Vul hier jouw e-mailadres in dat gekoppeld is aan de Google Play Store.</p>
+          {% if page.device == 'android' %}<p class="meta"><strong>Let op:</strong> Vul hier jouw e-mailadres in dat gekoppeld is aan de Google Play Store.</p>
           {% else %} <p class="meta">Voer hier een geldig e-mailadres in. Voorbeeld: 'naam@domein.nl'.</p>
           {% endif %}
       </div>
