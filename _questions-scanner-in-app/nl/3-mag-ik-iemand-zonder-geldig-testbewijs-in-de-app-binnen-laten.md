@@ -10,6 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Indien de bezoeker wel over een geldig negatief resultaat beschikt, kan deze worden gebruikt om een testbewijs te maken in de CoronaCheck app. Gebruik hiervoor de cijfercode die benoemd staat op het testresultaat.  
-
-Heeft de bezoeker geen test gedaan? Stuur hem of haar naar de snelteststraat aanwezig bij het Fieldlab experiment om een sneltest te laten doen. 
+Dat mag tijdens het Fieldlab-evenement. Als de bezoeker geen geldig testbewijs in de CoronaCheck app kan laten zien, mag hij of zij het testresultaat (gekregen van de testlocatie) op de telefoon of op papier laten zien.
