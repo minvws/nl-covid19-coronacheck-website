@@ -6,18 +6,18 @@
 
 <!DOCTYPE html>
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
-<!--
+{% comment %}<!--
   This website is generated at {{ site.time }}.
   The code is open source. You are welcome to contribute. Go to git: 
-  https://github.com/minvws/nl-covid19-coronatester-website
--->
+  https://github.com/minvws/nl-covid19-coronacheck-website-private
+-->{% endcomment %}
 {% include head.html %}
 <body>
   {% include header-slim.html %}
   <main class="content-center" id="content">
-    {% if page.showBreadCrumbs %}
+    {% comment %}{% if page.showBreadCrumbs %}
       {% include breadcrumbs.html title=page.title collection=page.collection %}
-    {% endif %}
+    {% endif %}{% endcomment %}
 
     {% if page.showHomeBtn %}
       <p class="content-center__home return_link">
@@ -33,7 +33,7 @@
       {% assign questions = site.questions | where:"lang", page.lang | sort: "index"  %}
 
       <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-howtheapphelps[page.lang]|slugify }}">{{ site.data.translations.faq-category-howtheapphelps[page.lang] }}</h2>
+        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-general[page.lang]|slugify }}">{{ site.data.translations.faq-category-general[page.lang] }}</h2>
 
         <div class="faq-layout__contents __overview">
             <ul class="faq-layout-contents__list">
@@ -58,7 +58,7 @@
         </div>
 
 
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-howtheappworks[page.lang]|slugify }}">{{ site.data.translations.faq-category-howtheappworks[page.lang] }}</h2>
+        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-howtouse[page.lang]|slugify }}">{{ site.data.translations.faq-category-howtouse[page.lang] }}</h2>
 
         <div class="faq-layout__contents __overview">
             <ul class="faq-layout-contents__list">
@@ -82,7 +82,7 @@
             </ul>
         </div>
 
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-dailyLife[page.lang]|slugify }}">{{ site.data.translations.faq-category-dailyLife[page.lang] }}</h2>
+        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-troubleshooting[page.lang]|slugify }}">{{ site.data.translations.faq-category-troubleshooting[page.lang] }}</h2>
 
         <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
             <ul class="faq-layout-contents__list">
@@ -104,22 +104,6 @@
             <ul class="faq-layout-contents__list">
               {% for question in questions %}
               {% if question.set == 4 %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-                            {{ question.title }}
-                        </a>
-                    </li>
-                    {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
-
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-lessAskedQuestions[page.lang]|slugify }}">{{ site.data.translations.faq-category-lessAskedQuestions[page.lang] }}</h2>
-
-        <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-            <ul class="faq-layout-contents__list">
-              {% for question in questions %}
-              {% if question.set == 5 %}
                     <li>
                         <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                             {{ question.title }}

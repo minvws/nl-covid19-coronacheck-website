@@ -1,0 +1,198 @@
+.form {
+    padding: 10px;
+    border: 1px solid $color-mediumgrey;
+}
+
+.form-section {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 576px) {
+    .form-section {
+        display: flex;
+        margin-bottom: .5rem;
+    }
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    vertical-align: top;
+    border: 0
+}
+
+fieldset:after {
+    display: table;
+    clear: both;
+    content: ""
+}
+
+input[type="text"] {
+    min-height: 44px;
+    padding-left: 1rem;
+    border: 1px solid dimgray;
+    border-radius: 0;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input:required:invalid:not(:placeholder-shown) + p.meta {
+    display: none;
+}
+
+input:required:invalid:not(:placeholder-shown) {
+    border-color: crimson;
+}
+
+input:required:invalid:not(:placeholder-shown) + p.meta {
+    display: block;
+}
+
+input[type="text"]:valid {
+    border: 1px solid dimgray;
+}
+
+input[type="text"]:focus {
+    outline: 2px dotted #000;
+    z-index: 1010;
+    outline-offset: 0;
+    -webkit-box-shadow: 0 0 0 2px #fff;
+    box-shadow: 0 0 0 2px #fff
+}
+
+[dir="rtl"] input[type="text"] {
+    padding-left: 0;
+    padding-right: 1rem
+}
+
+input[type="checkbox"], input[type="radio"] {
+    min-width: 15px;
+    min-height: 15px;
+    margin-right: .5rem;
+    margin-top: 7px
+}
+
+input[type="checkbox"]:focus, input[type="radio"]:focus {
+    outline: 2px dotted #000;
+    z-index: 1010;
+    outline-offset: 0;
+    -webkit-box-shadow: 0 0 0 2px #fff;
+    box-shadow: 0 0 0 2px #fff
+}
+
+input[type="submit"] {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    width: auto;
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    background-color: #01689b;
+    margin-top: .5rem;
+    margin-left: 35%;
+}
+
+input[type="submit"]:focus {
+    outline: 2px dotted #000;
+    z-index: 1010;
+    outline-offset: 0;
+    -webkit-box-shadow: 0 0 0 2px #fff;
+    box-shadow: 0 0 0 2px #fff
+}
+
+input[type="submit"]:hover {
+    color: #fff;
+    outline: none;
+    background-color: #01496d
+}
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    color: dimgray
+}
+
+input::-moz-placeholder {
+    opacity: 1;
+    color: dimgray
+}
+
+input:-ms-input-placeholder {
+    opacity: 1;
+    color: dimgray
+}
+
+input::-ms-input-placeholder {
+    opacity: 1;
+    color: dimgray
+}
+
+input::placeholder {
+    opacity: 1;
+    color: dimgray
+}
+
+.form {
+    margin-bottom: 2rem; 
+}
+
+.form input[type="text"] {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .form input[type="text"] {
+        width: calc( 100% - ( 44px + 1rem ))
+    }
+}
+
+@media (min-width: 768px) {
+    .form input[type="text"] {
+        width:calc( 100% - ( 44px + 2rem ))
+    }
+}
+
+.form label, .form legend {
+    margin-bottom: .5rem;
+    padding-right: .5rem;
+}
+
+@media (min-width: 576px) {
+    .form label, .form legend, .field {
+        flex: 0 0 35%;
+        margin-bottom: .5rem;
+        padding-right: .5rem;
+        padding-top: 12px;
+    }
+
+    .form .field {
+        flex: 1 1 auto;
+        margin-bottom: .5rem;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .form label, .form legend, .field {
+        padding-top: 9px;
+    }
+}
+
+.form label.radio:not(:last-of-type),.form label.choice:not(:last-of-type) {
+    margin-bottom: .5rem
+}
+
+.form p.meta {
+    font-size: .88889rem;
+    line-height: 1.6875;
+    font-weight: normal;
+    color: #535353;
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
