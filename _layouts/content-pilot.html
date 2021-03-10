@@ -15,10 +15,6 @@
 <body>
   {% include header-slim.html %}
   <main class="content-center" id="content">
-    {% if page.showBreadCrumbs %}
-      {% include breadcrumbs.html title=page.title collection=page.collection %}
-    {% endif %}
-
     {% if page.showHomeBtn %}
       <p class="content-center__home return_link">
         <a href="{{ langSlug }}">

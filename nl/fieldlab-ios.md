@@ -47,4 +47,4 @@ Indien je het formulier hierboven hebt ingevuld zul je een e-mail ontvangen die 
 ### Stap 3: Open de CoronaCheck app
 Nadat je via Testflight de CoronaCheck app hebt gedownload kun je de app openen.
 
-- [Bekijk de meestgestelde vragen](/faq)
+[Bekijk de meestgestelde vragen](/faq)

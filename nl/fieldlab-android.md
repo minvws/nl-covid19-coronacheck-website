@@ -29,4 +29,4 @@ Aangezien de CoronaCheck app nog in ontwikkeling en nog niet voor het grote publ
 
 Wanneer je hierboven je e-mailadres hebt ingevuld ontvang je een e-mail met daarin een link. Wanneer je op die link klikt zal de app gedownload worden. 
 
-- [Bekijk de meestgestelde vragen](/faq)
+[Bekijk de meestgestelde vragen](/faq)

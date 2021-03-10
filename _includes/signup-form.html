@@ -1,7 +1,7 @@
 <section class="signup-form-pilot" data-device="{{ page.device }}">
   <form class="form" method="post" action="/dynamic/fieldlab-signup-data">
     <div class="form-section">
-      <label for="email" class="fieldlabel">E-mailadres<strong class="req"> *</strong></label> 
+      <label for="email" class="fieldlabel">E-mailadres: <strong class="req"> *</strong></label> 
         
       <div class="field">
           <input id="email" name="email" type="text" placeholder="naam@domein.nl" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" required  aria-required="true">
@@ -14,14 +14,14 @@
     <fieldset>
       <div  class="form-section">
       <legend>
-        Akkoordverklaringen
+        Akkoordverklaringen:
       </legend>
 
       <div class="field">
         <div role="group">
           <label>
             <input id="privacy" name="privacy" type="checkbox" required  aria-required="true" />
-            Ik ga akkoord met de <a href="/privacy" target="_blank">privacyverklaring <img src="{{ site.baseurl }}/img/external-link.svg" alt="opent in apart venster" width="12px" height="12px"></a> <strong class="req"> *</strong>
+            Ik ga akkoord met de <span style="display: inline-block"><a href="/privacy" target="_blank">privacyverklaring <img src="{{ site.baseurl }}/img/external-link.svg" alt="opent in apart venster" width="12px" height="12px" style="display: inline-block;"></a> <strong class="req"> *</strong></span>
           </label>
         </div>
 
