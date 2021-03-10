@@ -72,7 +72,12 @@ try {
     $stmt->execute();
 
     // Set redirect url
-    $redirectUri = "/fieldlab-bedankt";
+    if($_REQUEST['app'] == 'iphone_version')
+        $redirectUri = "/instructies-ios";
+    else if($_REQUEST['app'] == 'android_version')
+        $redirectUri = "/instructies-android";
+    else
+        $redirectUri = "/500";
 
 } catch (Exception $e) {
     $redirectUri = "/500";
