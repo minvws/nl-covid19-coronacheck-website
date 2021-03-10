@@ -39,7 +39,7 @@ Tenslotte wordt toestelinformatie verwerkt (de geïnstalleerde versie van de Cor
 
 Voor al deze gegevens geldt dat deze worden alleen gebruikt in het kader van Covid-19 bestrijding.
 
-Als u zich aanmeldt via www.coronacheck.nl/fieldlab, geven wij uw emailadres door aan Apple of  Google (afhankelijk van uw device), zodat wij u kunnen uitnodigen voor het downloaden van de CoronaCheck app en / of de CoronaCheck Scanner app. Wij gebruiken uw emailadres alleen voor relevante communicatie rondom het evenement (tot uiterlijk 4 weken na het event).
+Als u zich aanmeldt via www.coronacheck.nl/fieldlab, geven wij uw e-mailadres door aan Apple of  Google (afhankelijk van uw device), zodat wij u kunnen uitnodigen voor het downloaden van de CoronaCheck app en / of de CoronaCheck Scanner app. Wij gebruiken uw e-mailadres alleen voor relevante communicatie rondom het evenement (tot uiterlijk 4 weken na het event).
 
 ### 3. Wie is de opdrachtgever voor CoronaCheck?
 
@@ -61,7 +61,7 @@ Binnen CoronaCheck worden gegevens als volgt bewaard:
 - Een testbewijs is een afgeleide van het testresultaat. Het testresultaat wordt na 48 uur verwijderd, als u de app gebruikt. Als de 48 uur zijn verstreken, maar u de app niet gebruikt, wordt het testresultaat verwijderd, zodra u de app weer opent.
 - In de CoronaCheck Scanner (app 2) worden geen gegevens opgeslagen.
 
-Als u zich aanmeldt via [www.coronacheck.nl/fieldlab](http://www.coronacheck.nl/fieldlab) vult u uw emailadres in zodat wij u kunnen uitnodigen. Wij slaan dit emailadres op en verwijderen dit na uiterlijk 4 weken. Dit geeft ons de gelegenheid om u kort na het evenement nog te kunnen benaderen, indien dit nodig zou zijn. 
+Als u zich aanmeldt via [www.coronacheck.nl/fieldlab](http://www.coronacheck.nl/fieldlab) vult u uw e-mailadres in zodat wij u kunnen uitnodigen. Wij slaan dit e-mailadres op en verwijderen dit na uiterlijk 4 weken. Dit geeft ons de gelegenheid om u kort na het evenement nog te kunnen benaderen, indien dit nodig zou zijn. 
 
 ### 7. Welke permissies heeft de app nodig?
 

@@ -13,7 +13,9 @@ Als er in de toekomst op grotere schaal evenementen zoals die van Fieldlab georg
 
 Tijdens de Fieldlab evenementen van 13 en 14 maart in Biddinghuizen kun je CoronaCheck al gebruiken. Zo testen we samen of het werkt, en leren we hoe CoronaCheck verder verbeterd kan worden. 
 
-De CoronaCheck app is alleen op uitnodiging beschikbaar via een speciale testomgeving. De app is namelijk nog niet beschikbaar via Google Play Store en Apple App store. Nadat je je e-mailadres hebt ingevuld ontvang je een uitnodiging en instructies om de app te downloaden. Maak daarna van jouw negatieve corona testresultaat een persoonlijke QR-code. Dat is jouw testbewijs. Deze QR-code wordt vervolgens gescand voordat je toegang krijgt tot het evenement.
+[Bekijk alle meestgestelde vragen](/faq)
+
+De CoronaCheck app is alleen op uitnodiging beschikbaar via een speciale testomgeving. De app is namelijk nog niet beschikbaar via de publieke App Stores van Google en Apple. Nadat je je e-mailadres hebt ingevuld ontvang je een uitnodiging en instructies om de app te downloaden. Maak daarna van jouw negatieve corona testresultaat een persoonlijke QR-code. Dat is jouw testbewijs. Deze QR-code wordt vervolgens gescand voordat je toegang krijgt tot het evenement.
 
 Neem indien je gebruik maakt van de CoronaCheck app ook altijd de testuitslag mee die je hebt ontvangen vanuit Saltro, de test aanbieder.
 
@@ -25,4 +27,4 @@ Bedankt voor je deelname en heel veel plezier in Biddinghuizen!
 
 Aangezien de CoronaCheck app nog in ontwikkeling en nog niet voor het grote publiek beschikbaar, is de app alleen te downloaden vanuit de Google Play Store na aanmelding. 
 
-Wanneer je hierboven je emailadres hebt ingevuld ontvang je een email met daarin een link. Wanneer je op die link klikt zal de app gedownload worden. 
+Wanneer je hierboven je e-mailadres hebt ingevuld ontvang je een e-mail met daarin een link. Wanneer je op die link klikt zal de app gedownload worden. 
