@@ -22,21 +22,22 @@ jobs:
             key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
             restore-keys: |
               ${{ runner.os }}-gems-
-
       - name: Install Jekyll
         run: |
           sudo gem install bundler jekyll
           sudo bundle install
           sudo bundle update --bundler
-
       - name: Build site
         run: bundle exec jekyll build
 
       - name: Create version.json
         run: 'echo "{ \"version\": \"${{ env.RELEASE_VERSION }}\", \"git_ref\": \"$GITHUB_SHA\"}" > ./_site/version.json'
 
+      - name: Rename folder
+        run: mv _site public
+
       - name: Create tar
-        run: tar -czf ct_website_${{ env.RELEASE_VERSION }}.tar.gz -C ./_site .
+        run: tar -czf ct_website_${{ env.RELEASE_VERSION }}.tar.gz ./public
 
       - name: Upload release tar
         uses: actions/upload-artifact@v1
