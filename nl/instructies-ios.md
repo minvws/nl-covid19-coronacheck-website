@@ -7,7 +7,7 @@ title: Downloaden CoronaCheck op iOS
 published: true
 redirect_from: /instructies-ios
 ---
-De app is momenteel nog niet te downloaden vanuit de Apple App store. Het downloaden van de app op je telefoon gebeurt daarom met behulp van TestFlight. Dit is een online dienst waarmee je je app kunt testen voordat de app in de App store verschijnt.
+De app is momenteel nog niet te downloaden vanuit de Apple App store. Het downloaden van de app op je telefoon gebeurt daarom met behulp van TestFlight. Dit is een online dienst waarmee je de app kunt testen voordat de app in de App store verschijnt.
 
 ### Stap 1: TestFlight-app installeren 
 Voordat je de app kunt testen moet je eerst de TestFlight-app downloaden uit de App store:
