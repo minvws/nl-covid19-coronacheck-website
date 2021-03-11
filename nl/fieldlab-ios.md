@@ -26,7 +26,7 @@ Bedankt voor je deelname en heel veel plezier in Biddinghuizen!
 {% include signup-form.html %}
 
 ## Downloaden CoronaCheck op iOS
-De app is momenteel nog niet te downloaden vanuit de Apple App store. Daarom doen we het met behulp van TestFlight. Dit is een online dienst waarmee je je app kunt testen voordat deze in de App store verschijnt.
+De app is momenteel nog niet te downloaden vanuit de Apple App store. Daarom doen we het met behulp van TestFlight. Dit is een online dienst waarmee je de app kunt testen voordat deze in de App store verschijnt.
 
 ### Stap 1: TestFlight-app installeren 
 Voordat je de app kunt testen moet je eerst de TestFlight-app downloaden uit de App store:
