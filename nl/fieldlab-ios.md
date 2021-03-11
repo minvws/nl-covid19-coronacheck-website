@@ -24,8 +24,7 @@ Bedankt voor je deelname en heel veel plezier in Biddinghuizen!
 {% include signup-form.html %}
 
 ## Downloaden CoronaCheck op iOS
-
-Aangezien de CoronaCheck app nog in ontwikkeling en nog niet voor het grote publiek beschikbaar, is de app momenteel nog niet te downloaden vanuit de Apple App store. Het downloaden van de app op je telefoon gebeurd daarom met behulp van TestFlight, dit is een online dienst waarmee je je app kunt testen voordat de app in de App store verschijnt.
+De app is momenteel nog niet te downloaden vanuit de Apple App store. Daarom doen we het met behulp van TestFlight. Dit is een online dienst waarmee je je app kunt testen voordat deze in de App store verschijnt.
 
 ### Stap 1: TestFlight-app installeren 
 Voordat je de app kunt testen moet je eerst de TestFlight-app downloaden uit de App store:
@@ -36,7 +35,7 @@ Voordat je de app kunt testen moet je eerst de TestFlight-app downloaden uit de 
 
 ![img](/img/fieldlab-appinstallatie.png)
 
-### Stap 2: Uitnodiging ontvangen na invullen formulier
+### Stap 2: CoronaCheck downloaden via link uit mail
 Indien je het formulier hierboven hebt ingevuld zul je een email ontvangen met daarin een link zodat je de app kunt downloaden:
 
 1. Kijk in mail voor de uitnodiging (“Rijksoverheid has invited you to test CoronaCheck”) 

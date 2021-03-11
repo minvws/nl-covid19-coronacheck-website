@@ -25,8 +25,6 @@ Bedankt voor je deelname en heel veel plezier in Biddinghuizen!
 
 ## Downloaden CoronaCheck op Android
 
-Aangezien de CoronaCheck app nog in ontwikkeling en nog niet voor het grote publiek beschikbaar, is de app alleen te downloaden vanuit de Google Play Store na aanmelding. 
-
-Wanneer je hierboven je e-mailadres hebt ingevuld ontvang je een e-mail met daarin een link. Wanneer je op die link klikt zal de app gedownload worden. 
+Wanneer je hierboven je mailadres hebt ingevuld ontvang je een mail met daarin een link, dit kan maximaal anderhalf uur duren. Wanneer je op de link in de mail klikt kun je de app downloaden. 
 
 [Bekijk de meestgestelde vragen](/faq)
