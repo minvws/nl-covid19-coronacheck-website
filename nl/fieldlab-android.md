@@ -21,12 +21,6 @@ Maak je gebruik van de CoronaCheck-app? Neem dan ook de testuitslag mee. Deze he
 
 Bedankt voor je deelname en heel veel plezier in Biddinghuizen!
 
-## Meld je aan
-
-{% include signup-form.html %}
-
-## Downloaden CoronaCheck op Android
-
-Wanneer je hierboven je mailadres hebt ingevuld ontvang je een mail met daarin een link, dit kan maximaal anderhalf uur duren. Wanneer je op de link in de mail klikt kun je de app downloaden. 
+{% include announcement.html %}
 
 [Bekijk de meestgestelde vragen](/faq)
