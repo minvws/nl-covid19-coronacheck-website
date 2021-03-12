@@ -21,6 +21,6 @@ Maak je gebruik van de CoronaCheck-app? Neem dan ook de testuitslag mee. Deze he
 
 Bedankt voor je deelname en heel veel plezier in Biddinghuizen!
 
-- [Installeer CoronaCheck op een iPhone](/nl/fieldlab-ios)
-- [Installeer CoronaCheck op Android](/nl/fieldlab-android)
-- [Bekijk de meestgestelde vragen](/faq)
+{% include announcement.html %}
+
+[Bekijk de meestgestelde vragen](/faq)

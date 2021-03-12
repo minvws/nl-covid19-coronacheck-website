@@ -1,6 +1,25 @@
-.form {
+.form, .fieldlab-announcement {
     padding: 10px;
     border: 1px solid $color-mediumgrey;
+}
+
+.fieldlab-announcement {
+    background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
+    color: white;
+    font-weight: bolder;
+    border-color: #1D73F6;
+}
+
+.fieldlab-announcement a {
+    color: white;
+}
+
+.fieldlab-announcement p:first-child {
+    margin-top: 0;
+}
+
+.fieldlab-announcement p:last-child {
+    margin-bottom: 0;
 }
 
 .form-section {
