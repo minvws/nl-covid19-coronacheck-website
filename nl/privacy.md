@@ -82,4 +82,4 @@ De Minister van Volksgezondheid, Welzijn en Sport neemt de bescherming van uw ge
 
 ### 10. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 16 maart 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 16 maart 2021.

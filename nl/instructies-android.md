@@ -3,7 +3,7 @@ layout: content-pilot
 lang: nl
 showBreadCrumbs: true
 showContact: true
-title:  Downloaden CoronaCheck op Android
+title: Downloaden CoronaCheck op Android
 published: true
 redirect_from: /instructies-android
 ---
