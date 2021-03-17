@@ -17,7 +17,7 @@ Met de CoronaCheck app kunnen personen kunnen laten zien dat zij beschikken over
 
 - De infrastructuur waarop de CoronaCheck app code draait en waarvandaan bijvoorbeeld de updates worden verstrekt.
 
-Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen. Tijdens de installatie van deze app wordt u gevraagd toestemming te geven om uw gegevens te verwerken. Bezoekers van de Fieldlab evenementen op 13 en 14 maart 2021 melden zich aan op de website www.coronacheck.nl/fieldlab en worden daar gevraagd in te stemmen met ons privacy beleid. 
+Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen. Tijdens de installatie van deze app wordt u gevraagd toestemming te geven om uw gegevens te verwerken. Bezoekers van de Fieldlab evenementen op 20 en 21 maart 2021 melden zich aan op de website www.coronacheck.nl/fieldlab en worden daar gevraagd in te stemmen met ons privacy beleid. 
 
 ### 2. Welke gegevens worden verwerkt? 
 

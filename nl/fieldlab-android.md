@@ -11,7 +11,7 @@ redirect_from: /fieldlab-android
 --- 
 Als er in de toekomst op grotere schaal evenementen zoals die van Fieldlab georganiseerd gaan worden, is er een makkelijke en veilige manier nodig om te laten zien dat je recent negatief bent getest op corona. Daarom ontwikkelt het Ministerie van Volksgezondheid, Welzijn en Sport de CoronaCheck app.
 
-CoronaCheck is voor het eerst te gebruiken tijdens de Fieldlab-evenementen van 13 en 14 maart in Biddinghuizen. Daar testen we samen of het werkt. En leren we hoe CoronaCheck verder verbeterd kan worden. 
+CoronaCheck is voor het eerst te gebruiken tijdens de Fieldlab-evenementen van 20 en 21 maart in Biddinghuizen. Daar testen we samen of het werkt. En leren we hoe CoronaCheck verder verbeterd kan worden. 
 
 De CoronaCheck-app is alleen op uitnodiging beschikbaar. Dat gaat via een speciale testomgeving. De app is namelijk nog niet beschikbaar via de Apple App Store en de Google Play Store. Nadat je je e-mailadres hebt ingevuld krijg je een uitnodiging en instructies om de app te downloaden.
 
