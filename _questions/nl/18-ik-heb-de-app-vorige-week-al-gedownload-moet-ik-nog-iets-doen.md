@@ -10,5 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Er is nu een nieuwe versie van de app. Als het goed is wordt de app vanzelf bijgewerkt. Staat er een versienummer onderin je menu? Dan heb je de laatste versie. Geen versienummer? Kijk dan of er een nieuwere versie van de app beschikbaar is in de Google Play Store of via Testflight (iOS).
-
+Er is nu een nieuwe versie van de app. Als het goed is wordt de app vanzelf bijgewerkt. Staat er een versienummer rechts onderin je menu? Dan heb je de laatste versie. Geen versienummer? Kijk dan of er een nieuwere versie van de app beschikbaar is in de Google Play Store of via Testflight (iOS).
