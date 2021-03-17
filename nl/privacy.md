@@ -9,7 +9,7 @@ redirect_from: /privacy
 
 CoronaCheck (app) is alleen bedoeld voor Covid-19 bestrijding en is een technisch hulpmiddel dat helpt bij het genereren en tonen van een digitaal bewijs dat u recent negatief bent getest op het COVID-19 virus. Het testbewijs is een bewijs dat iemand negatief is getest en dat tijdelijk geldig is. Dit bewijs kan worden gebruikt om toegang te geven tot specifieke evenementen en locaties. Het testbewijs maakt het (in combinatie met andere risicobeperkende maatregelen) mogelijk om daar waar verlichting van de lockdown mogelijk is, dit ook te doen.
 
-**Let op:** voor de Fieldlab evenementen van 20 en 21 maart geldt een andere <a href="/nl/privacy-fieldlab">privacy verklaring<span class="screen-reader-text"> voor de Fieldlab evenementen van 20 en 21 maart</span></a>.
+**Let op:** voor de Fieldlab evenementen van 20 en 21 maart geldt een andere <a href="/nl/privacy-fieldlab">privacy verklaring</a>.
 
 ### 1. Hoe werkt CoronaCheck?
 
