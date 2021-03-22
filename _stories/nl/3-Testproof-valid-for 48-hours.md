@@ -1,11 +1,9 @@
 ---
 index: 3
 show: true
-graphic: Illustratie 3.svg
+graphic: 3_geldig.svg
 title-highlight: Hoe lang is het geldig?
-title: Je testbewijs geldt 48 uur
+title: Je testbewijs is 40 uur geldig
 lang: nl
 ---
-
-Een negatief testresultaat is 48 uur geldig. In die periode is de kans dat je anderen besmet namelijk klein. Als je testresultaat verloopt verdwijnt de QR uit de app. Nieuwe QR-code nodig? Laat je opnieuw testen.
-
+Zorg dat jouw QR-code binnen 40 uur na het moment van testen aan de deur gescand is. Als je testbewijs verloopt verdwijnt de QR-code uit de app. Nieuwe QR-code nodig? Laat je opnieuw testen. 

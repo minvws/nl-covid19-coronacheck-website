@@ -3,12 +3,10 @@
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang | append: '/' -%}
 {%- endif -%}
 
-<footer>
-    {% comment %}
-        {% if page.showContact  %}
-            {% include footer-phone.html %}
-        {% endif %}
-    {% endcomment %}
+<footer> 
+    {% if page.showContact  %}
+        {% include footer-phone.html %}
+    {% endif %} 
     
     {% if page.showTogether  %}
     <div class="footer-samen {{ small }}">
@@ -17,8 +15,7 @@
         </a>
     </div>
     {% endif %}
-
-    {% comment %}
+ 
     <div class="footer">
         <div class="footer-inner">
             <div class="footer-links">
@@ -41,6 +38,7 @@
                                 {{ site.data.translations.english[page.lang] }}
                             </a>
                         </li>
+                        {% comment %}
                         <li>
                             <a href="{{ langSlug}}{{ site.data.translations.footer-misc-colofon-url[page.lang] }}">
                                 {{ site.data.translations.footer-misc-colofon[page.lang] }}
@@ -52,6 +50,7 @@
                                 {{ site.data.translations.footer-misc-accessibility-statement[page.lang] }}  {{ site.data.translations.english[page.lang] }}
                             </a>
                         </li>
+                        {% endcomment %}
                         <li>
                             <a href="{{ langSlug }}{{ site.data.translations.footer-misc-report-vulnerability-url }}">
                                 {{ site.data.translations.footer-misc-report-vulnerability[page.lang] }}
@@ -75,8 +74,7 @@
             </div>
         
         </div>
-    </div>
-    {% endcomment %}
+    </div> 
 </footer>
 
 {% include footer-js.html %}

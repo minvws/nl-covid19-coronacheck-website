@@ -15,7 +15,7 @@ CoronaCheck is voor het eerst te gebruiken tijdens de Fieldlab-evenementen van 1
 
 De CoronaCheck-app is alleen op uitnodiging beschikbaar. Dat gaat via een speciale testomgeving. De app is namelijk nog niet beschikbaar via de Apple App Store en de Google Play Store. **Het is op dit moment niet mogelijk om de app te downloaden. Je ontvangt meer informatie over het downloaden van CoronaCheck op 18 of 19 maart via de Close-app.**
 
-Wanneer je testresultaat binnen is, krijg je een e-mail en een sms van de testaanbieder Saltro. In de sms vind je een unieke code. Met die code haal je jouw negatieve testresultaat (geen corona) op in de app en maak je een persoonlijke QR-code. Dat is jouw testbewijs. Deze QR-code wordt gescand voor toegang tot het evenement.
+Wanneer je testresultaat binnen is, krijg je een e-mail en een sms van de testaanbieder Saltro. In de sms vind je een unieke code. Met die code haal je jouw negatieve testresultaat op in de app en maak je een persoonlijke QR-code. Dat is jouw testbewijs. Deze QR-code wordt gescand voor toegang tot het evenement.
 
 Maak je gebruik van de CoronaCheck-app? Neem dan ook de testuitslag mee. Deze heb je gekregen van de testaanbieder Saltro.
 

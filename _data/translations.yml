@@ -3,7 +3,7 @@ head-app-name: CoronaCheck
 head-social-og-site_name: CoronaCheck
   
 head-social-og-title:
-  nl: CoronaCheck
+  nl: CoronaCheck. Krijg toegang na testen
   fy: 
   en: 
   ar: 
@@ -83,7 +83,7 @@ header-title:
   tr: 
 
 header-subtitle:
-  nl: Zo veilig mogelijk eropuit
+  nl: Krijg toegang na testen
   fy: 
   en: 
   ar: 
@@ -471,7 +471,7 @@ english:
   tr: (ingilizce)
   
 info-lead: 
-  nl: 
+  nl: "De overheid wil dat sociale, culturele en sportieve locaties in tijden van corona op verantwoorde manier open kunnen. Dankzij CoronaCheck kunnen bezoekers laten zien dat zij recent negatief getest zijn op corona."
   fy: 
   en: 
   ar: 
@@ -560,11 +560,11 @@ info-huawei-img:
   ro: huawei-en.svg
   tr: huawei-tr.svg
  
-footer-samen-logo-url: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/
+footer-samen-logo-url: https://www.rijksoverheid.nl/coronacheck
 footer-samen-logo:
-  nl: Alleen samen krijgen we corona onder controle. Ga naar campagnewebsite
-  fy: Allinne mei-inoar krije wy koroana ûnder kontrôle. Gean nei de kampanjewebside
-  en: Only together we can control corona. Go to the campagne website
+  nl: Alleen samen krijgen we corona onder controle. Meer informatie over CoronaCheck
+  fy: Allinne mei-inoar krije wy koroana ûnder kontrôle.
+  en: Only together we can control corona. More information about CoronaCheck
   ar: معًا فقط نستطيع السيطرة على كورونا.
   bg: Единствено заедно ще поставим под контрол коронавируса.
   de: Nur gemeinsam bekommen wir Corona unter Kontrolle.
@@ -1004,58 +1004,45 @@ information-title:
   ro: 'Folosim datele dvs. în felul următor:'
   tr: 'Verilerinizi şu şekilde ele alıyoruz:'
   
-information-alert:
-  nl: Heb je corona? Dan kun je anderen waarschuwen zonder dat zij weten wie je bent.
-  fy: Hast koroana? Dan kinst oaren warskôgje sûnder dat sy witte wa'tst bist
-  en: If you test positive for coronavirus, you can warn others by sharing your codes via the app.
-  ar: هل لديك كورونا؟ يمكنك تحذير الآخرين دون أن يعرفوا من تكون.
-  bg: Имаш ли коронавирус? Тогава можеш да предупредиш други хора, без да знаят кой си.
-  de: Haben Sie Corona? Dann können Sie andere warnen, ohne dass die anderen wissen, wer Sie sind.
-  es: ¿Tienes coronavirus? En ese caso, puedes avisar a otros sin que sepan quién eres.
-  fr: Avez-vous le coronavirus? Alors vous pouvez avertir les autres sans qu'ils ne sachent qui vous êtes.
-  pl: Masz koronawirusa? W takim razie możesz ostrzec innych bez podawania informacji kim jesteś.
-  ro: Sunteți infectat cu coronavirus? Atunci îi puteți avertiza pe ceilalți fără ca aceștia să știe cine sunteți.
-  tr: Sizde Korona mı var? O zaman, kim olduğunuz bilinmeden başkalarını uyarabilirsiniz.
-  
-information-bluetooth:
-  nl: Je bluetooth-gegevens worden 14 dagen op je telefoon bewaard. Je kunt ze altijd zelf verwijderen.
-  fy: Dyn bluetooth-gegevens wurde 14 dagen op dyn telefoan bewarre. Do kinst se altyd sels wiskje.
-  en: Your Bluetooth data is stored on your phone for 14 days. You can always delete this data yourself.
-  ar: يتم تخزين بيانات البلوتوث على هاتفك لمدة 14 يومًا. يمكنك حذفها بنفسك دائمًا.
-  bg: Твоите bluetooth данни се съхраняват 14 дни на телефона ти. Винаги можеш да ги премахнеш сам.
-  de: Ihre Bluetooth-Daten werden 14 Tage auf Ihrem Telefon gespeichert. Sie können sie jederzeit selbst löschen.
-  es: Tus datos de Bluetooth se mantienen guardados 14 días en tu teléfono. Siempre puedes borrarlos tú.
-  fr: Vos données Bluetooth sont conservées pendant 14 jours sur votre téléphone. Vous pouvez toujours les supprimer vous-même.
-  pl: Twoje dane Bluetooth są przechowywane w telefonie przez 14 dni. Zawsze możesz samodzielnie je usunąć.
-  ro: Datele dvs. Bluetooth sunt stocate pe telefonul dvs. timp de 14 zile. Le puteți șterge oricând.
-  tr: Bluetooth verileriniz 14 gün boyunca telefonunuzda saklanır. Bunları her zaman kendiniz silebilirsiniz.
-  
+information-qrcode:
+  nl: In de QR-code staat alleen wanneer je negatief getest bent.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+    
 information-naw:
-  nl: Je naam, e-mailadres en telefoonnummer worden niet gebruikt of bewaard.
-  fy: Dyn namme, e-mailadres en telefoannûmer wurde net brûk of bewarre.
-  en: Your name, email address and telephone number are not used or stored.
-  ar: لن يتم استخدام أو تخزين اسمك وعنوان بريدك الإلكتروني ورقم هاتفك
-  bg: Името, имейлът и телефонният ти номер не се използват или съхраняват.
-  de: Ihr Name, Ihre E-Mail-Adresse und Telefonnummer werden nicht verwendet oder gespeichert.
-  es: No se guardarán ni usarán tu nombre, tu correo electrónico ni tu número de teléfono.
-  fr: Votre nom, votre adresse de courrier électronique et votre numéro de téléphone ne sont ni utilisés ni conservés.
-  pl: Twoje imię i nazwisko, adres e-mail i numer telefonu nie będą używane ani przechowywane.
-  ro: Numele, adresa e-mail și numărul dvs. de telefon nu sunt folosite sau stocate.
-  tr: Adınız, e-posta adresiniz ve telefon numaranız kullanılmayacak veya saklanmayacaktır.
+  nl: Jouw gegevens worden nergens centraal opgeslagen.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
   
 information-gps:
-  nl: De app weet nooit waar je bent en gebruikt geen gps- en locatiegegevens
-  fy: De app wit nea wêr ast bist en brûkt gjin gps- en lokaasjegegevens
-  en: Your GPS or location data is not used or stored.
-  ar: لن يتعرف التطبيق على مكانك أبدًا ولا يقوم باستخدام الـ GPS وبيانات موقعك الجغرافي
-  bg: Приложението никога не знае кой си и не използва gps данни и данни за местоположение
-  de: Die App weiß nie, wo Sie sind, und verwendet keine GPS- oder Standortdaten.
-  es: La app no sabe nunca dónde estás ni tampoco utiliza ningún dato GPS o de localización.
-  fr: L'application ne sait jamais où vous êtes et n'utilise pas de données GPS ou de localisation.
-  pl: Aplikacja nigdy nie wie gdzie się znajdujesz i nie korzysta z danych lokalizacyjnych i GPS.
-  ro: Aplicația nu știe niciodată cine sunteți și nu folosește datele dvs. de locație GPS
-  tr: Uygulama nerede olduğunuzu asla bilmez ve GPS ve konum verilerini kullanmaz
-  
+  nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+    
 # Media element (used for videos)
 # See _includes/components/mediaplayer.html
   

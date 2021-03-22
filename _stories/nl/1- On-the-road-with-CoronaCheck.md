@@ -1,10 +1,9 @@
 ---
 index: 1
 show: true
-graphic: Illustratie 1.png
+graphic: 1_veilig_op_pad.svg
 title-highlight: Waarom deze app?
-title: Getest en wel op pad
+title: Alleen toegang na testen
 lang: nl
 ---
-
-Om zo veilig mogelijk op pad te kunnen is het belangrijk eerst een Coronatest te doen. Alleen bij een negatieve test krijg je toegang tot sociale uitgaansgelegenheden, zoals een restaurant of event.
+Jouw gezondheid en die van anderen is belangrijk. Ook als je wat leuks gaat doen. Laat je daarom eerst testen. Als blijkt dat je op het moment van testen geen corona had, krijg je toegang tot bepaalde sociale, culturele of sportieve activiteiten.

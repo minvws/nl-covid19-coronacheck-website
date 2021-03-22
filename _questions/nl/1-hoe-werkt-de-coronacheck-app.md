@@ -9,8 +9,12 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
+featuredHome: true
+featuredHomeIndex: 1
+featuredHomeIcon: app-touch
+featuredHomeText: Als bezoeker doe je eerst een coronatest. Is je testresultaat negatief? Dan kun je deze ophalen in de app.
 ---
-Als bezoeker doe je eerst een coronatest. Is je testresultaat negatief (geen corona)? Dan kun je deze ophalen in de app. Dat doe je als volgt:
+Als bezoeker doe je eerst een coronatest. Is je testresultaat negatief? Dan kun je deze ophalen in de app. Dat doe je als volgt:
 
 1. Vul jouw unieke code in in de CoronaCheck-app. Deze code krijg je per sms van de testlocatie 
 2. Na controle haalt de CoronaCheck app je testresultaat op
