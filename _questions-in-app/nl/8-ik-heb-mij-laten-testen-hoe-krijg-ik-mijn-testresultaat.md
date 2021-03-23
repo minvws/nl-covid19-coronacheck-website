@@ -10,6 +10,6 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Als je je hebt laten testen voor een praktijkproef krijg je jouw testresultaat via een e-mail van [Testen voor Toegang](www.testenvoortoegang.nl). 
+Als je je hebt laten testen voor een praktijkproef krijg je jouw testresultaat via een e-mail.
 
 In de e-mail staat ook een code. Daarmee haal je jouw testresultaat op in de CoronaCheck-app en maak je er een QR-code van. De QR-code is jouw testbewijs.
