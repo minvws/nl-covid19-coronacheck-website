@@ -23,7 +23,7 @@
       {% assign questions = site.questions-scanner-in-app | where:"lang", page.lang | sort: "index"  %}
 
       <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-howthescannerappworks[page.lang]|slugify }}">{{ site.data.translations.faq-category-howthescannerappworks[page.lang] }}</h2>
+        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-scanner-general[page.lang]|slugify }}">{{ site.data.translations.faq-category-scanner-general[page.lang] }}</h2>
 
         <div class="faq-layout__contents __overview">
             <ul class="faq-layout-contents__list">
