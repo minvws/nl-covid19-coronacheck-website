@@ -4,7 +4,7 @@ lang: nl
 showBreadCrumbs: true
 showContact: true
 title: Downloaden CoronaCheck op iOS
-published: true
+published: false
 redirect_from: /instructies-ios
 ---
 De app is momenteel nog niet te downloaden vanuit de Apple App store. Daarom doen we dit met behulp van TestFlight. Dit is een online dienst waarmee je de app kunt testen voordat deze in de App store verschijnt.
