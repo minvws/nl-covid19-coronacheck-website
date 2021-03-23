@@ -9,6 +9,9 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
+featuredHome: true
+featuredHomeIndex: 1
+featuredHomeIcon: app-touch
 ---
 Als bezoeker doe je eerst een coronatest. Had je op het moment van testen geen corona? Dan kun je toegang krijgen tot bepaalde sociale, culturele of sportieve activiteiten. Je kunt het testresultaat ophalen in de app. Dat doe je als volgt:
 

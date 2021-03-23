@@ -12,7 +12,6 @@ showContact: true
 featuredHome: true
 featuredHomeIndex: 5
 featuredHomeIcon: privacy
-featuredHomeText: Jouw gegevens worden nergens centraal opgeslagen. Je GPS- of locatiegegevens worden niet gebruikt of bewaard.
 ---
 In de [privacyverklaring](/nl/privacy) staat hoe CoronaCheck omgaat met jouw gegevens. Dit zijn de belangrijkste punten:
 
