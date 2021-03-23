@@ -4,6 +4,7 @@ lang: nl
 showBreadCrumbs: true
 title: Privacyverklaring CoronaCheck Fieldlab
 redirect_from: /privacy-fieldlab
+published: false
 ---
 ## Over CoronaCheck
 

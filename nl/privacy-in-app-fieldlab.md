@@ -3,6 +3,7 @@ layout: in-app-content
 lang: nl
 title: Privacyverklaring CoronaCheck Fieldlab
 redirect_from: /privacy-in-app-fieldlab
+published: false
 ---
 ## Over CoronaCheck
 

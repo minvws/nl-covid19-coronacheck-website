@@ -6,7 +6,7 @@ showContact: true
 showFAQ: false
 device: android
 title: Help met het ontwikkelen van CoronaCheck
-published: true
+published: false
 redirect_from: /fieldlab-android
 --- 
 Als er in de toekomst op grotere schaal evenementen zoals die van Fieldlab georganiseerd gaan worden, is er een makkelijke en veilige manier nodig om te laten zien dat je recent negatief bent getest op corona. Daarom ontwikkelt het Ministerie van Volksgezondheid, Welzijn en Sport de CoronaCheck app.
