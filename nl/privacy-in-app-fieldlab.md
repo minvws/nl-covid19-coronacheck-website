@@ -3,6 +3,7 @@ layout: in-app-content
 lang: nl
 title: Privacyverklaring CoronaCheck Fieldlab
 redirect_from: /privacy-in-app-fieldlab
+published: false
 ---
 ## Over CoronaCheck
 
@@ -38,7 +39,7 @@ Tenslotte wordt toestelinformatie verwerkt (de geïnstalleerde versie van de Cor
 
 Voor al deze gegevens geldt dat deze worden alleen gebruikt in het kader van Covid-19 bestrijding.
 
-Als u zich aanmeldt via www.coronacheck.nl/fieldlab, geven wij uw emailadres door aan Apple of  Google (afhankelijk van uw device), zodat wij u kunnen uitnodigen voor het downloaden van de CoronaCheck app en / of de CoronaCheck Scanner app. Wij gebruiken uw emailadres alleen voor relevante communicatie rondom het evenement (tot uiterlijk 4 weken na het event).
+Als u zich aanmeldt via www.coronacheck.nl/fieldlab, geven wij uw emailadres door aan Apple of Google (afhankelijk van uw device), zodat wij u kunnen uitnodigen voor het downloaden van de CoronaCheck app en / of de CoronaCheck Scanner app. Wij gebruiken uw emailadres alleen voor relevante communicatie rondom het evenement (tot uiterlijk 4 weken na het event).
 
 ### 3. Wie is de opdrachtgever voor CoronaCheck?
 
@@ -82,4 +83,4 @@ De Minister van Volksgezondheid, Welzijn en Sport neemt de bescherming van uw ge
 
 ### 10. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze  website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 9 maart 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 9 maart 2021.
