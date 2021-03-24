@@ -304,6 +304,19 @@ youarehere:
   tr: Buradasınız
 
 faq:
+  nl: Meestgestelde vragen
+  fy: Faakstelde fragen
+  en: Frequently asked questions
+  ar: الأسئلة المتكررة
+  bg: Често задавани въпроси
+  de: Häufig gestellte Fragen
+  es: Preguntas frecuentes
+  fr: Questions fréquemment posées
+  pl: Najczęściej zadawane pytania
+  ro: Întrebări frecvente
+  tr: Bütün sık sorulan sorular
+
+faq-coronacheck:
   nl: Meestgestelde vragen over CoronaCheck
   fy: Faakstelde fragen
   en: Frequently asked questions

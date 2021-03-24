@@ -17,7 +17,7 @@
 <body>
   <main class="content-center content-center__in_app" id="content">
     <div class="content-block">
-      <h1 id="frequently-asked-questions">{{ site.data.translations.faq[page.lang] }}</h1>
+      <h1 id="frequently-asked-questions">{{ site.data.translations.faq-coronacheck[page.lang] }}</h1>
 
       {% assign questions = site.questions-in-app | where:"lang", page.lang | sort: "index"  %}
 
