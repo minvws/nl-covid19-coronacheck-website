@@ -2,7 +2,7 @@
 index: 4
 show: true
 graphic: 2_scannen.svg
-title-highlight: Hoe wordt mijn bewijs gecontroleerd? 
+title-highlight: Hoe wordt mijn testbewijs gecontroleerd? 
 title: De CoronaCheck Scanner
 lang: nl
 ---
