@@ -6,4 +6,4 @@ title-highlight: Hoe werkt het?
 title: Jouw QR-code op zak
 lang: nl
 ---
-Bewijst je test dat je op dat moment geen corona hebt? Dan kun je in deze app een testbewijs maken, in de vorm van een QR-code. Dat is jouw testbewijs. De QR-code wordt gescand voordat je toegang krijgt.
+Had je op het moment van testen geen corona?  Dan kun je in deze app een testbewijs maken, in de vorm van een QR-code. Dat is jouw testbewijs. De QR-code wordt gescand voordat je toegang krijgt.
