@@ -28,13 +28,13 @@ Deze licenties, voorwaarden en disclaimers vormen een integraal onderdeel van zo
 ### Backend licenties:
 
 - [CoronaCheck backend licentie](https://github.com/minvws/nl-covid19-coronacheck-app-backend/blob/main/LICENSES.md)
-- [CoronaCheck BFF private licentie](https://github.com/minvws/nl-covid19-coronacheck-app-bff-private/blob/main/LICENSES.md)
+- [CoronaCheck BFF private licentie](https://github.com/minvws/nl-covid19-coronacheck-app-bff/blob/main/LICENSES.md)
 - [CoronaCheck CL core licentie](https://github.com/minvws/nl-covid19-coronacheck-cl-core/blob/main/LICENSES.md)
 
 ### Third party bibliotheken voor de backend:
 
-- [CoronaCheck third party licenties](https://github.com/minvws/nl-covid19-coronacheck-app-backend-private/tree/main/licenses)
-- [CoronaCheck BFF private third party licenties](https://github.com/minvws/nl-covid19-coronacheck-app-bff-private/tree/main/licenses)
+- [CoronaCheck third party licenties](https://github.com/minvws/nl-covid19-coronacheck-app-backend/tree/main/licenses)
+- [CoronaCheck BFF private third party licenties](https://github.com/minvws/nl-covid19-coronacheck-app-bff/tree/main/licenses)
 - [CoronaCheck CL core third party licenties](https://github.com/minvws/nl-covid19-coronacheck-cl-core/tree/main/licenses)
 
 ### Melden van kwetsbaarheden
