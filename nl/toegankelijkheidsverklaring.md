@@ -22,7 +22,7 @@ Wij borgen goede toegankelijkheid door diverse maatregelen binnen onze (dagelijk
 -   Deze website is gevalideerd met een geautomatiseerde toegankelijkheidstool en de bevindingen hieruit zijn opgelost. 
 -   Bij de borging van de toegankelijkheid zijn 2 experts betrokken die geen onderdeel uitmaakten van het bouwteam.
 -   Er zal een formeel toegankelijkheidsonderzoek plaatsvinden volgens de WCAG-EM standaard. Hierbij wordt getoetst op zowel functioneel-technische onderdelen als de redactionele aspecten. Gevonden knelpunten lossen wij duurzaam op.
--   Planning onderzoek: Dit onderzoek wordt uitgevoerd eind April.
+-   Planning onderzoek: Dit onderzoek wordt uitgevoerd eind april.
 -   Kennis medewerkers: onze medewerkers houden hun kennis over toegankelijkheid op peil en passen dit toe waar nodig.
 
 ## Onderdelen waarop de site verbeterd wordt
