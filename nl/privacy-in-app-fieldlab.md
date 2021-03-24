@@ -11,11 +11,11 @@ CoronaCheck (app) is alleen bedoeld voor Covid-19 bestrijding en is een technisc
 
 ### 1. Hoe werkt CoronaCheck?
 
-Met de CoronaCheck app kunnen personen kunnen laten zien dat zij beschikken over een (digitaal) geldig negatief testbewijs. CoronaCheck bestaat uit de volgende componenten:
+Met de CoronaCheck-app kunnen personen kunnen laten zien dat zij beschikken over een (digitaal) geldig negatief testbewijs. CoronaCheck bestaat uit de volgende componenten:
 
-- De CoronaCheck app (app 1) – dit is de app die de persoon gebruikt om een testbewijs te genereren en presenteren.
+- De CoronaCheck-app (app 1) – dit is de app die de persoon gebruikt om een testbewijs te genereren en presenteren.
 - De CoronaCheck Scanner app (app 2) – dit is de app die een controleur aan de deur gebruikt en die het getoonde testbewijs controleert op geldigheid.
-- De infrastructuur waarop de CoronaCheck app code draait en waarvandaan bijvoorbeeld de updates worden verstrekt.
+- De infrastructuur waarop de CoronaCheck-app code draait en waarvandaan bijvoorbeeld de updates worden verstrekt.
 
 Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen. Tijdens de installatie van deze app wordt u gevraagd toestemming te geven om uw gegevens te verwerken. Bezoekers van de Fieldlab evenementen op 20 en 21 maart 2021 melden zich aan op de website www.coronacheck.nl/fieldlab en worden daar gevraagd in te stemmen met ons privacy beleid. 
 
@@ -35,11 +35,11 @@ Ook het IP-adres wordt gebruikt. Dit is inherent aan het gebruik van internet en
 
 In de CoronaCheck Scanner (app 2) wordt het testbewijs gescand. Daarbij wordt getoond of de drager ervan beschikt over een negatief testbewijs dat nog geldig is. 
 
-Tenslotte wordt toestelinformatie verwerkt (de geïnstalleerde versie van de CoronaCheck app en het besturingssysteem van uw mobiele telefoon). Dit wordt vastgelegd om problemen en installatiemogelijkheden te kunnen onderzoeken en gebruikers hierover te informeren.
+Tenslotte wordt toestelinformatie verwerkt (de geïnstalleerde versie van de CoronaCheck-app en het besturingssysteem van uw mobiele telefoon). Dit wordt vastgelegd om problemen en installatiemogelijkheden te kunnen onderzoeken en gebruikers hierover te informeren.
 
 Voor al deze gegevens geldt dat deze worden alleen gebruikt in het kader van Covid-19 bestrijding.
 
-Als u zich aanmeldt via www.coronacheck.nl/fieldlab, geven wij uw emailadres door aan Apple of Google (afhankelijk van uw device), zodat wij u kunnen uitnodigen voor het downloaden van de CoronaCheck app en / of de CoronaCheck Scanner app. Wij gebruiken uw emailadres alleen voor relevante communicatie rondom het evenement (tot uiterlijk 4 weken na het event).
+Als u zich aanmeldt via www.coronacheck.nl/fieldlab, geven wij uw emailadres door aan Apple of Google (afhankelijk van uw device), zodat wij u kunnen uitnodigen voor het downloaden van de CoronaCheck-app en / of de CoronaCheck Scanner app. Wij gebruiken uw emailadres alleen voor relevante communicatie rondom het evenement (tot uiterlijk 4 weken na het event).
 
 ### 3. Wie is de opdrachtgever voor CoronaCheck?
 
@@ -65,7 +65,7 @@ Als u zich aanmeldt via [www.coronacheck.nl/fieldlab](http://www.coronacheck.nl/
 
 ### 7. Welke permissies heeft de app nodig?
 
-De CoronaCheck Scanner app (app 2) heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om het testbewijs, in de vorm van een QR-code, uit de CoronaCheck app (app 1) te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het testbewijs, in de vorm van een QR-code te scannen.
+De CoronaCheck Scanner app (app 2) heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om het testbewijs, in de vorm van een QR-code, uit de CoronaCheck-app (app 1) te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het testbewijs, in de vorm van een QR-code te scannen.
 
 ### 8. Klachten over gebruik van uw gegevens
 

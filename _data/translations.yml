@@ -187,9 +187,9 @@ govlogo:
   tr: Logo Hollanda Devleti, ana sayfa
   
 header__logo-badge: 
-  nl: Logo CoronaCheck app
-  fy: Logo CoronaCheck app
-  en: Logo CoronaCheck app
+  nl: Logo CoronaCheck-app
+  fy: Logo CoronaCheck-app
+  en: Logo CoronaCheck-app
   ar: شعار تطبيق CoronaCheck
   bg: Лого приложение CoronaCheck
   de: Logo CoronaCheck-App
@@ -200,9 +200,9 @@ header__logo-badge:
   tr: Logo CoronaCheck uygulaması
   
 header__logo-badge:
-  nl: Logo CoronaCheck app
-  fy: Logo CoronaCheck app
-  en: Logo CoronaCheck app
+  nl: Logo CoronaCheck-app
+  fy: Logo CoronaCheck-app
+  en: Logo CoronaCheck-app
   ar: CoronaCheck شعار تطبيق 
   bg: Лого на приложението CoronaCheck
   de: Logo CoronaCheck-App
@@ -484,7 +484,7 @@ english:
   tr: (ingilizce)
   
 info-lead: 
-  nl: "CoronaCheck is ontwikkeld als onderdeel van toegangstesten. Met de CoronaCheck app kunnen bezoekers aan tonen dat ze negatief getest zijn op corona. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open.<br /><br />
+  nl: "CoronaCheck is ontwikkeld als onderdeel van toegangstesten. Met de CoronaCheck-app kunnen bezoekers aan tonen dat ze negatief getest zijn op corona. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open.<br /><br />
   CoronaCheck wordt op dit moment alleen gebruikt bij vooraf aangekondigde praktijkproeven, zoals de interland Nederland - Letland op 27 maart."
   fy: 
   en: 
@@ -500,7 +500,7 @@ info-lead:
 info-lead-title:
   nl: Download de CoronaCheck-app
   fy: Download de CoronaCheck-app
-  en: Download the CoronaCheck app
+  en: Download the CoronaCheck-app
   ar: قم بتنزيل تطبيق CoronaCheck
   bg: Изтегли приложението CoronaCheck
   de: Laden Sie die CoronaCheck-App herunter
@@ -591,7 +591,7 @@ footer-samen-logo:
 footer-phone:
   nl: Heb je vragen over CoronaCheck?
   fy: Hast fragen oer de CoronaCheck?
-  en: Do you have any questions about the CoronaCheck app?
+  en: Do you have any questions about the CoronaCheck-app?
   ar: هل لديك أي أسئلة حول CoronaCheck؟
   bg: Имаш ли въпроси относно CoronaCheck?
   de: Haben Sie Fragen zu CoronaCheck?
