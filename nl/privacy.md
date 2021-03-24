@@ -81,7 +81,7 @@ Als u niet langer CoronaCheck wilt gebruiken en de app verwijdert, worden ook al
 
 U hebt altijd het recht een klacht over de verwerking van uw persoonsgegevens in te dienen bij de Autoriteit Persoonsgegevens of bij de rechter. Meer informatie daarover vindt u op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap). 
 
-Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie van Volksgezondheid, Welzijn en Sport vindt u op de website van het ministerie.
+Contactgegevens van de Functionaris voor Gegevensbescherming van het ministerie van Volksgezondheid, Welzijn en Sport vindt u op de website van het ministerie.
 
 Vragen of klachten over het gebruik van CoronaCheck kunt u stellen aan [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl). 
 
