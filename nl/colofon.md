@@ -1,8 +1,9 @@
 ---
-layout: in-app-content
+layout: content
 lang: nl
+showBreadCrumbs: true
 title: Colofon
-redirect_from: /colofon-in-app
+redirect_from: /colofon
 ---
 De apps CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. De apps hadden niet tot stand kunnen komen zonder de hulp van tientallen experts, ervaringsdeskundigen en een grote open source community van burgers die heeft meegekeken en getest tijdens de ontwikkeling.
 

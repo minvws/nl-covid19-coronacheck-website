@@ -12,12 +12,12 @@ Deze privacyverklaring is geschreven voor de inzet van de apps CoronaCheck en Co
 
 ### 1. Hoe werkt CoronaCheck?
 
-Met de CoronaCheck app kunnen personen kunnen laten zien dat zij beschikken over een (digitaal) geldig negatief testbewijs. CoronaCheck bestaat uit de volgende componenten:
+Met de CoronaCheck-app kunnen personen kunnen laten zien dat zij beschikken over een (digitaal) geldig negatief testbewijs. CoronaCheck bestaat uit de volgende componenten:
 
-- De CoronaCheck app – dit is de app die de persoon gebruikt om een testbewijs te genereren en presenteren.
+- De CoronaCheck-app – dit is de app die de persoon gebruikt om een testbewijs te genereren en presenteren.
 - De CoronaCheck Scanner app – dit is de app die een controleur aan de deur gebruikt en die het getoonde testbewijs controleert op geldigheid.
 
-- De infrastructuur waarop de CoronaCheck app code draait en waarvandaan bijvoorbeeld de updates worden verstrekt.
+- De infrastructuur waarop de CoronaCheck-app code draait en waarvandaan bijvoorbeeld de updates worden verstrekt.
 
 Het downloaden en het gebruik van CoronaCheck is en blijft vrijwillig. Het is uw eigen keuze om een evenement te bezoeken, waarvoor de organisator u verzoekt om een digitaal testbewijs te overhandigen. 
 
@@ -37,7 +37,7 @@ Ook het IP-adres wordt gebruikt. Dit is inherent aan het gebruik van internet en
 
 In de CoronaCheck Scanner wordt het testbewijs gescand. Daarbij wordt getoond of de drager ervan beschikt over een negatief testbewijs dat nog geldig is. 
 
-Tenslotte wordt toestelinformatie verwerkt (de geïnstalleerde versie van de CoronaCheck app en het besturingssysteem van uw mobiele telefoon). Dit wordt vastgelegd om problemen en installatiemogelijkheden te kunnen onderzoeken en gebruikers hierover te informeren.
+Tenslotte wordt toestelinformatie verwerkt (de geïnstalleerde versie van de CoronaCheck-app en het besturingssysteem van uw mobiele telefoon). Dit wordt vastgelegd om problemen en installatiemogelijkheden te kunnen onderzoeken en gebruikers hierover te informeren.
 
 Voor al deze gegevens geldt dat deze worden alleen gebruikt in het kader van Covid-19 bestrijding.
 
@@ -68,7 +68,7 @@ Binnen CoronaCheck worden gegevens als volgt bewaard:
 
 ### 7. Welke permissies heeft de app nodig?
 
-De CoronaCheck Scanner app heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om het testbewijs, in de vorm van een QR-code, uit de CoronaCheck app te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het testbewijs, in de vorm van een QR-code te scannen.
+De CoronaCheck Scanner app heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om het testbewijs, in de vorm van een QR-code, uit de CoronaCheck-app te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het testbewijs, in de vorm van een QR-code te scannen.
 
 ### 8. Klachten over gebruik van uw gegevens
 
@@ -80,7 +80,7 @@ Als u niet langer CoronaCheck wilt gebruiken en de app verwijdert, worden ook al
 
 U hebt altijd het recht een klacht over de verwerking van uw persoonsgegevens in te dienen bij de Autoriteit Persoonsgegevens of bij de rechter. Meer informatie daarover vindt u op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap). 
 
-Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie van Volksgezondheid, Welzijn en Sport vindt u op de website van het ministerie.
+Contactgegevens van de Functionaris voor Gegevensbescherming van het ministerie van Volksgezondheid, Welzijn en Sport vindt u op de website van het ministerie.
 
 Vragen of klachten over het gebruik van CoronaCheck kunt u stellen aan [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl). 
 

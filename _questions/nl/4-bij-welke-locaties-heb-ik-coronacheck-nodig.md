@@ -9,6 +9,9 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
+featuredHome: true
+featuredHomeIndex: 4
+featuredHomeIcon: location
 ---
 Op dit moment wordt de CoronaCheck-app alleen getest bij praktijkproeven. 
 

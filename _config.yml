@@ -7,6 +7,9 @@ collections:
   questions-in-app:
     output: true
     permalink: in-app/:categories/:name/
+  questions-scanner:
+    output: true
+    permalink: /scanner/:categories/:name/
   questions-scanner-in-app:
     output: true
     permalink: in-app/scanner/:categories/:name/

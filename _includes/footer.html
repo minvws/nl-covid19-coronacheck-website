@@ -3,12 +3,10 @@
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang | append: '/' -%}
 {%- endif -%}
 
-<footer>
-    {% comment %}
-        {% if page.showContact  %}
-            {% include footer-phone.html %}
-        {% endif %}
-    {% endcomment %}
+<footer> 
+    {% if page.showContact  %}
+        {% include footer-phone.html %}
+    {% endif %} 
     
     {% if page.showTogether  %}
     <div class="footer-samen {{ small }}">
@@ -17,8 +15,7 @@
         </a>
     </div>
     {% endif %}
-
-    {% comment %}
+ 
     <div class="footer">
         <div class="footer-inner">
             <div class="footer-links">
@@ -75,8 +72,7 @@
             </div>
         
         </div>
-    </div>
-    {% endcomment %}
+    </div> 
 </footer>
 
 {% include footer-js.html %}

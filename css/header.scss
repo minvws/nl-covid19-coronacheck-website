@@ -4,7 +4,6 @@
   background-size: 120px;
   background-position: right 20px top 80px;
   min-height: 300px; 
-  overflow-x: hidden; //todo temp added
 
   &::before {
     content: '';
@@ -159,9 +158,8 @@
     }
 
     @media (min-width: 960px) {
-      // padding: 0 0 10em 0; //todo temp page
-        padding: 0 0 5em 0; 
-        margin-left: 90px;
+      padding: 0 0 10em 0;
+      margin-left: 90px;
     }
 }
 

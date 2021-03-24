@@ -9,6 +9,9 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
+featuredHome: true
+featuredHomeIndex: 2
+featuredHomeIcon: thumbs-up
 ---
 CoronaCheck en CoronaCheck Scanner worden op dit moment getest tijdens praktijkproeven. Bijvoorbeeld tijdens een interland van het Nederlands elftal. Zo zien we of de apps goed werken en hoe ze verbeterd kunnen worden.
 

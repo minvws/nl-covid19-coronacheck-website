@@ -26,7 +26,7 @@ Indien je het formulier hierboven hebt ingevuld zul je een e-mail ontvangen met 
 3. Je wordt nu doorgestuurd naar de TestFlight-app, waar de app in jouw lijstje komt te staan. Tik op de knop "Installeer" om de betreffende app te installeren
 4. TestFlight zal de app installeren en na afloop kun je op de knop "Open" tikken
 
-### Stap 3: Open de CoronaCheck app
-Nadat je via Testflight de CoronaCheck app hebt gedownload kun je de app openen.
+### Stap 3: Open de CoronaCheck-app
+Nadat je via Testflight de CoronaCheck-app hebt gedownload kun je de app openen.
 
 [Bekijk de meestgestelde vragen](/faq)

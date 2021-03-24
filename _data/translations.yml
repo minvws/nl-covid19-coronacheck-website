@@ -3,7 +3,7 @@ head-app-name: CoronaCheck
 head-social-og-site_name: CoronaCheck
   
 head-social-og-title:
-  nl: CoronaCheck
+  nl: CoronaCheck. Krijg toegang na testen
   fy: 
   en: 
   ar: 
@@ -83,7 +83,7 @@ header-title:
   tr: 
 
 header-subtitle:
-  nl: Zo veilig mogelijk eropuit
+  nl: Krijg toegang na testen
   fy: 
   en: 
   ar: 
@@ -187,9 +187,9 @@ govlogo:
   tr: Logo Hollanda Devleti, ana sayfa
   
 header__logo-badge: 
-  nl: Logo CoronaCheck app
-  fy: Logo CoronaCheck app
-  en: Logo CoronaCheck app
+  nl: Logo CoronaCheck-app
+  fy: Logo CoronaCheck-app
+  en: Logo CoronaCheck-app
   ar: شعار تطبيق CoronaCheck
   bg: Лого приложение CoronaCheck
   de: Logo CoronaCheck-App
@@ -200,9 +200,9 @@ header__logo-badge:
   tr: Logo CoronaCheck uygulaması
   
 header__logo-badge:
-  nl: Logo CoronaCheck app
-  fy: Logo CoronaCheck app
-  en: Logo CoronaCheck app
+  nl: Logo CoronaCheck-app
+  fy: Logo CoronaCheck-app
+  en: Logo CoronaCheck-app
   ar: CoronaCheck شعار تطبيق 
   bg: Лого на приложението CoronaCheck
   de: Logo CoronaCheck-App
@@ -304,6 +304,19 @@ youarehere:
   tr: Buradasınız
 
 faq:
+  nl: Meestgestelde vragen
+  fy: Faakstelde fragen
+  en: Frequently asked questions
+  ar: الأسئلة المتكررة
+  bg: Често задавани въпроси
+  de: Häufig gestellte Fragen
+  es: Preguntas frecuentes
+  fr: Questions fréquemment posées
+  pl: Najczęściej zadawane pytania
+  ro: Întrebări frecvente
+  tr: Bütün sık sorulan sorular
+
+faq-coronacheck:
   nl: Meestgestelde vragen over CoronaCheck
   fy: Faakstelde fragen
   en: Frequently asked questions
@@ -471,7 +484,8 @@ english:
   tr: (ingilizce)
   
 info-lead: 
-  nl: 
+  nl: "CoronaCheck is ontwikkeld als onderdeel van toegangstesten. Met de CoronaCheck-app kunnen bezoekers aantonen dat ze negatief getest zijn op corona. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open.<br /><br />
+  CoronaCheck wordt op dit moment alleen gebruikt bij vooraf aangekondigde praktijkproeven, zoals de interland Nederland - Letland op 27 maart."
   fy: 
   en: 
   ar: 
@@ -486,7 +500,7 @@ info-lead:
 info-lead-title:
   nl: Download de CoronaCheck-app
   fy: Download de CoronaCheck-app
-  en: Download the CoronaCheck app
+  en: Download the CoronaCheck-app
   ar: قم بتنزيل تطبيق CoronaCheck
   bg: Изтегли приложението CoronaCheck
   de: Laden Sie die CoronaCheck-App herunter
@@ -560,11 +574,11 @@ info-huawei-img:
   ro: huawei-en.svg
   tr: huawei-tr.svg
  
-footer-samen-logo-url: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/
+footer-samen-logo-url: https://www.rijksoverheid.nl/coronacheck
 footer-samen-logo:
-  nl: Alleen samen krijgen we corona onder controle. Ga naar campagnewebsite
-  fy: Allinne mei-inoar krije wy koroana ûnder kontrôle. Gean nei de kampanjewebside
-  en: Only together we can control corona. Go to the campagne website
+  nl: Alleen samen krijgen we corona onder controle. Meer informatie over CoronaCheck
+  fy: Allinne mei-inoar krije wy koroana ûnder kontrôle.
+  en: Only together we can control corona. More information about CoronaCheck
   ar: معًا فقط نستطيع السيطرة على كورونا.
   bg: Единствено заедно ще поставим под контрол коронавируса.
   de: Nur gemeinsam bekommen wir Corona unter Kontrolle.
@@ -577,7 +591,7 @@ footer-samen-logo:
 footer-phone:
   nl: Heb je vragen over CoronaCheck?
   fy: Hast fragen oer de CoronaCheck?
-  en: Do you have any questions about the CoronaCheck app?
+  en: Do you have any questions about the CoronaCheck-app?
   ar: هل لديك أي أسئلة حول CoronaCheck؟
   bg: Имаш ли въпроси относно CoronaCheck?
   de: Haben Sie Fragen zu CoronaCheck?
@@ -653,17 +667,17 @@ footer-colophon:
   tr: Kolofon
         
 footer-logos-info_md:
-  nl: De CoronaCheck-app is ontwikkeld door het Ministerie van Volksgezondheid, Welzijn en Sport in samenwerking met het <a href="https://www.rivm.nl/" target="_blank" rel="noopener noreferrer"><abbr title="Rijksinstituut voor Volksgezondheid en Milieu">RIVM</abbr></a> en de landelijke <a href="https://www.ggd.nl/" target="_blank" rel="noopener noreferrer"><abbr title="Gemeentelijke gezondheidsdienst">GGD'en</abbr></a>. De app had niet tot stand kunnen komen zonder de hulp van tientallen experts, ervaringsdeskundigen en een grote open source community van burgers die heeft meegekeken en getest tijdens de ontwikkeling. Er is alles aan gedaan om te zorgen voor een privacyvriendelijke, veilige, toegankelijke en gebruiksvriendelijke app die helpt corona onder controle te krijgen en houden.
-  fy: De CoronaCheck-app is ûntwikkele troch it ministearje fan Volksgezondheid, Welzijn en Sport yn gearwurking mei it <a href="https://www.rivm.nl/" target="_blank" rel="noopener noreferrer"><abbr title="Rijksinstituut voor Volksgezondheid en Milieu">RIVM</abbr></a> en de lanlike <a href="https://www.ggd.nl/" target="_blank" rel="noopener noreferrer"><abbr title="Gemeentelijke gezondheidsdienst">GGD'en</abbr></a>. De app hie net ta stân komme kinnen sûnder de help fan tsientallen eksperts, ûnderfiningssaakkundigen en in grutte open source community fan boargers dy’t by de ûntwikkeling mei sjoen en test hawwe. Der is alles oan dien om te soargjen foar in privacyfreonlike, feilige, tagonklike en gebrûksfreonlike app, dy’t helpt koroana ûnder kontrôle te krijen en te hâlden.
-  en: The CoronaCheck app has been developed by the Ministry of Public Health, Welfare and Sport in partnership with the National Institute for Public Health and Environment (<a href='https://www.rivm.nl/en' target='_blank' rel='noopener noreferrer'><abbr title='Rijksinstituut voor Volksgezondheid en Milieu'>RIVM</abbr></a>) and the municipal health services (<a href='https://www.ggd.nl/' target='_blank'><abbr title='Gemeentelijke gezondheidsdienst'>GGD</abbr>s</a>). across the country. The app would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens, who all lent a hand and helped to test the app during its development. Every effort has been made to create an app that respects users' privacy and that is accessible, easy to use and secure. An app that will help us to get coronavirus under control and to keep it under control. 
-  ar: تم تطوير تطبيق CoronaCheck من قبل وزارة الصحة والرعاية والرياضة بالتعاون مع <a href='https://www.rivm.nl/en' target='_blank' rel='noopener noreferrer'><abbr title='Rijksinstituut voor Volksgezondheid en Milieu'>RIVM</abbr></a> ودوائر <a href='https://www.ggd.nl/' target='_blank'><abbr title='Gemeentelijke gezondheidsdienst'>GGDs</abbr></a> على صعيد الوطن. لم يكن من الممكن تطوير التطبيق بدون مساعدة عشرات الخبراء والمختصين الميدانيين ومجتمع كبير مفتوح المصدر من المواطنين الذين رأوا التطوير واختبروه. لقد تم بذل كل الجهود من أجل توفير تطبيق صديق للخصوصية وآمن ويمكن الوصول إليه وسهل الاستخدام يساعد في التحكم والسيطرة على كورونا.
-  bg: Приложението CoronaCheck е разработено от Министерството на здравеопазването, благосъстоянието и спорта в сътрудничество с Националния институт за здравеопазване и околна среда <a href='https://www.rivm.nl/en' target='_blank' rel='noopener noreferrer'><abbr title='Rijksinstituut voor Volksgezondheid en Milieu'>RIVM</abbr></a> и националните Общински здравни инспекции <a href='https://www.ggd.nl/' target='_blank'><abbr title='Gemeentelijke gezondheidsdienst'>GGD</abbr></a>. Приложението не би могло да бъде създадено без помощта на десетки експерти, специалисти с практически опит и голяма общност с отворен код от граждани, която успоредно наблюдаваше и тестваше по време на разработката. Положени са всички усилия да се осигури защитаващо поверителността на личните данни, сигурно, достъпно и лесно за използване приложение, което помага да се постави и задържи коронавируса под контрол.
-  de: Die App CoronaCheck wurde vom Ministerie van Volksgezondheid, Welzijn en Sport (Ministerium für Gesundheit, Gemeinwohl und Sport) entwickelt. Dies erfolgte in Zusammenarbeit mit dem <a href='https://www.rivm.nl/en' target='_blank' rel='noopener noreferrer'><abbr title='Rijksinstituut voor Volksgezondheid en Milieu'>RIVM</abbr></a> und dem <a href='https://www.ggd.nl/' target='_blank'><abbr title='Gemeentelijke gezondheidsdienst'>GGD</abbr></a>. Die App wäre nicht möglich gewesen ohne die Hilfe von zahlreichen Fachleuten, Erfahrungsexperten und einer großen Open Source Community. Zu ihr gehören Bürger, die die Entwicklung mitverfolgt und die App getestet haben. Wir haben alles getan, um für eine datenschutzgerechte, sichere, zugängliche und benutzerfreundliche App zu sorgen, die hilft, Corona unter Kontrolle zu bekommen und zu halten.
-  es: La app CoronaCheck ha sido diseñada por el Ministerio de Salud, Bienestar y Deporte con la colaboración del <a href='https://www.rivm.nl/en' target='_blank' rel='noopener noreferrer'><abbr title='Rijksinstituut voor Volksgezondheid en Milieu'>RIVM</abbr></a> (Instituto Nacional de Salud Pública y Medio Ambiente) y los <a href='https://www.ggd.nl/' target='_blank'><abbr title='Gemeentelijke gezondheidsdienst'>GGD</abbr></a> (servicios de salud municipales). La app no hubiera llegado a desarrollarse sin la ayuda de decenas de expertos y especialistas, y una gran comunidad de código abierto de ciudadanos que la han estado observando y probando durante su diseño. Se ha hecho todo lo posible para conseguir una app que respete la privacidad y sea segura, accesible y de uso fácil, para ayudar a controlar y contener la propagación del coronavirus.
-  fr: L’application CoronaCheck est développée par le Ministère de la Santé publique, du Bien-être et des Sports, en collaboration avec le <a href='https://www.rivm.nl/en' target='_blank' rel='noopener noreferrer'><abbr title='Rijksinstituut voor Volksgezondheid en Milieu'>RIVM</abbr></a> (l’Institut national de la santé publique et de l'environnement néerlandais) et les <a href='https://www.ggd.nl/' target='_blank'><abbr title='Gemeentelijke gezondheidsdienst'>GGD</abbr></a> nationaux. L’application n’aurait pas pu voir le jour sans l’aide de dizaines de spécialistes, experts du vécu et une grande communauté open source de citoyens qui ont réfléchi au projet et l’ont testé durant ses phases de développement. Tout a été mis en œuvre pour garantir une application préservant la vie privée de ses utilisateurs, sûre, accessible et conviviale et qui aide à stopper la propagation du Covid-19.
-  pl: Aplikacja CoronaCheck została stworzona przez holenderskie Ministerstwo Zdrowia, Opieki Społecznej i Sportu we współpracy z Narodowym Instytutem Zdrowia Publicznego i Środowiska (<a href='https://www.rivm.nl/en' target='_blank' rel='noopener noreferrer'><abbr title='Rijksinstituut voor Volksgezondheid en Milieu'>RIVM</abbr></a>) oraz krajowymi oddziałami <a href='https://www.ggd.nl/' target='_blank'><abbr title='Gemeentelijke gezondheidsdienst'>GGD</abbr></a>. Aplikacja nie powstałaby bez pomocy dziesiątek doświadczonych ekspertów oraz dużej, obywatelskiej społeczności open source, która obserwowała i testowała ją podczas procesu tworzenia. Dołożono wszelkich starań, aby zapewnić bezpieczną, dostępną oraz przyjazną dla prywatności i użytkownika aplikację, która pomoże uzyskać i utrzymać kontrolę nad koronawirusem.
-  ro: Aplicația CoronaCheck-app este creată de către Ministerul olandez al Sănătății Publice, Bunăstării și Sportului în colaborare cu <a href='https://www.rivm.nl/en' target='_blank' rel='noopener noreferrer'><abbr title='Rijksinstituut voor Volksgezondheid en Milieu'>RIVM</abbr></a> (Institutul Național olandez pentru sănătate publică și mediu) și <a href='https://www.ggd.nl/' target='_blank'><abbr title='Gemeentelijke gezondheidsdienst'>GGD</abbr></a> (Serviciul de Sănătate Municipal). Nu ar fi fost posibilă construcția aplicației fără ajutorul zecilor de experți, specialiști și o mare comunitate de cetățeni care au participat prin testări în timpul construcției aplicației. S-au depus toate eforturile pentru a crea o aplicație sigură, accesibilă, ușor de folosit, care respectă datele cu caracter personal, care ajută la ținerea sub control a coronavirusului.
-  tr: CoronaCheck uygulaması, Sağlık, Refah ve Spor Bakanlığı tarafından <a href='https://www.rivm.nl/en' target='_blank' rel='noopener noreferrer'><abbr title='Rijksinstituut voor Volksgezondheid en Milieu'>RIVM</abbr></a> ve ulusal <a href='https://www.ggd.nl/' target='_blank'><abbr title='Gemeentelijke gezondheidsdienst'>GGD</abbr></a>'ler ile işbirliği içinde geliştirilmiştir. Uygulama, onlarca uzmanın, alan uzmanının ve geliştirme sırasında izleyen ve test eden büyük bir açık kaynak vatandaş topluluğunun yardımı olmadan oluşturulamazdı. Korona’yı kontrol etmeye ve kontrol altında tutmaya yardımcı olan, gizlilik dostu, güvenli, erişilebilir ve kullanıcı dostu bir uygulama sağlamak için her türlü çaba gösterildi."
+  nl: De apps CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. De apps hadden niet tot stand kunnen komen zonder de hulp van tientallen experts, ervaringsdeskundigen en een grote open source community van burgers die heeft meegekeken en getest tijdens de ontwikkeling. 
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
     
 footer-more-info-title:
   nl: Meer informatie?
@@ -1004,58 +1018,45 @@ information-title:
   ro: 'Folosim datele dvs. în felul următor:'
   tr: 'Verilerinizi şu şekilde ele alıyoruz:'
   
-information-alert:
-  nl: Heb je corona? Dan kun je anderen waarschuwen zonder dat zij weten wie je bent.
-  fy: Hast koroana? Dan kinst oaren warskôgje sûnder dat sy witte wa'tst bist
-  en: If you test positive for coronavirus, you can warn others by sharing your codes via the app.
-  ar: هل لديك كورونا؟ يمكنك تحذير الآخرين دون أن يعرفوا من تكون.
-  bg: Имаш ли коронавирус? Тогава можеш да предупредиш други хора, без да знаят кой си.
-  de: Haben Sie Corona? Dann können Sie andere warnen, ohne dass die anderen wissen, wer Sie sind.
-  es: ¿Tienes coronavirus? En ese caso, puedes avisar a otros sin que sepan quién eres.
-  fr: Avez-vous le coronavirus? Alors vous pouvez avertir les autres sans qu'ils ne sachent qui vous êtes.
-  pl: Masz koronawirusa? W takim razie możesz ostrzec innych bez podawania informacji kim jesteś.
-  ro: Sunteți infectat cu coronavirus? Atunci îi puteți avertiza pe ceilalți fără ca aceștia să știe cine sunteți.
-  tr: Sizde Korona mı var? O zaman, kim olduğunuz bilinmeden başkalarını uyarabilirsiniz.
-  
-information-bluetooth:
-  nl: Je bluetooth-gegevens worden 14 dagen op je telefoon bewaard. Je kunt ze altijd zelf verwijderen.
-  fy: Dyn bluetooth-gegevens wurde 14 dagen op dyn telefoan bewarre. Do kinst se altyd sels wiskje.
-  en: Your Bluetooth data is stored on your phone for 14 days. You can always delete this data yourself.
-  ar: يتم تخزين بيانات البلوتوث على هاتفك لمدة 14 يومًا. يمكنك حذفها بنفسك دائمًا.
-  bg: Твоите bluetooth данни се съхраняват 14 дни на телефона ти. Винаги можеш да ги премахнеш сам.
-  de: Ihre Bluetooth-Daten werden 14 Tage auf Ihrem Telefon gespeichert. Sie können sie jederzeit selbst löschen.
-  es: Tus datos de Bluetooth se mantienen guardados 14 días en tu teléfono. Siempre puedes borrarlos tú.
-  fr: Vos données Bluetooth sont conservées pendant 14 jours sur votre téléphone. Vous pouvez toujours les supprimer vous-même.
-  pl: Twoje dane Bluetooth są przechowywane w telefonie przez 14 dni. Zawsze możesz samodzielnie je usunąć.
-  ro: Datele dvs. Bluetooth sunt stocate pe telefonul dvs. timp de 14 zile. Le puteți șterge oricând.
-  tr: Bluetooth verileriniz 14 gün boyunca telefonunuzda saklanır. Bunları her zaman kendiniz silebilirsiniz.
-  
+information-qrcode:
+  nl: In de QR-code staat alleen wanneer je negatief getest bent.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+    
 information-naw:
-  nl: Je naam, e-mailadres en telefoonnummer worden niet gebruikt of bewaard.
-  fy: Dyn namme, e-mailadres en telefoannûmer wurde net brûk of bewarre.
-  en: Your name, email address and telephone number are not used or stored.
-  ar: لن يتم استخدام أو تخزين اسمك وعنوان بريدك الإلكتروني ورقم هاتفك
-  bg: Името, имейлът и телефонният ти номер не се използват или съхраняват.
-  de: Ihr Name, Ihre E-Mail-Adresse und Telefonnummer werden nicht verwendet oder gespeichert.
-  es: No se guardarán ni usarán tu nombre, tu correo electrónico ni tu número de teléfono.
-  fr: Votre nom, votre adresse de courrier électronique et votre numéro de téléphone ne sont ni utilisés ni conservés.
-  pl: Twoje imię i nazwisko, adres e-mail i numer telefonu nie będą używane ani przechowywane.
-  ro: Numele, adresa e-mail și numărul dvs. de telefon nu sunt folosite sau stocate.
-  tr: Adınız, e-posta adresiniz ve telefon numaranız kullanılmayacak veya saklanmayacaktır.
+  nl: Jouw gegevens worden nergens centraal opgeslagen.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
   
 information-gps:
-  nl: De app weet nooit waar je bent en gebruikt geen gps- en locatiegegevens
-  fy: De app wit nea wêr ast bist en brûkt gjin gps- en lokaasjegegevens
-  en: Your GPS or location data is not used or stored.
-  ar: لن يتعرف التطبيق على مكانك أبدًا ولا يقوم باستخدام الـ GPS وبيانات موقعك الجغرافي
-  bg: Приложението никога не знае кой си и не използва gps данни и данни за местоположение
-  de: Die App weiß nie, wo Sie sind, und verwendet keine GPS- oder Standortdaten.
-  es: La app no sabe nunca dónde estás ni tampoco utiliza ningún dato GPS o de localización.
-  fr: L'application ne sait jamais où vous êtes et n'utilise pas de données GPS ou de localisation.
-  pl: Aplikacja nigdy nie wie gdzie się znajdujesz i nie korzysta z danych lokalizacyjnych i GPS.
-  ro: Aplicația nu știe niciodată cine sunteți și nu folosește datele dvs. de locație GPS
-  tr: Uygulama nerede olduğunuzu asla bilmez ve GPS ve konum verilerini kullanmaz
-  
+  nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+    
 # Media element (used for videos)
 # See _includes/components/mediaplayer.html
   
