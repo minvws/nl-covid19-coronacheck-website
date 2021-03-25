@@ -35,11 +35,12 @@
 }
 
 .btn--large {
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
   font-weight: 800;
 
   @media (min-width: 740px) {
+    font-size: 20px;
     max-width: 360px;
   }
 }
