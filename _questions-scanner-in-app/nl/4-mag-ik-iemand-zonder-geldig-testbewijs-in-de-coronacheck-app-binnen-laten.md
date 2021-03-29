@@ -10,6 +10,6 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Nee, de bezoeker moet altijd een geldig testbewijs laten zien. Alleen een toegangskaartje is dus niet voldoende bij de interland Nederland - Letland op 27 maart.
+Nee, de bezoeker moet altijd een geldig testbewijs laten zien. 
 
 Als testbewijs kan je de QR-code in de CoronaCheck-app laten zien. Of het geprinte testbewijs dat je bij je testuitslag hebt gekregen.
