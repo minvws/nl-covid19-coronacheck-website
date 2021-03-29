@@ -4,4 +4,7 @@ lang: nl
 title: Maak een afspraak voor een Corona test
 redirect_from: /testaanbieders-fieldlab-in-de-app
 ---
-De informatie rondom het inplannen van de test voorafgaand en na afloop van het Fieldlab evenement van 27 maart ontvangt u via de Close-app. 
+Informatie rondom het inplannen van de coronatest, voorafgaand en na afloop van een praktijkproef, ontvang je via de organisatie van het evenement.
+
+
+
