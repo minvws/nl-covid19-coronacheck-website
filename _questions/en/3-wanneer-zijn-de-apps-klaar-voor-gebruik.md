@@ -13,6 +13,6 @@ featuredHome: true
 featuredHomeIndex: 2
 featuredHomeIcon: thumbs-up
 ---
-CoronaCheck and CoronaCheck Scanner are currently being tested in field trials, such as an international match of the Dutch national football team. These trials prove if the apps are working properly and show how they can be improved.
+CoronaCheck and CoronaCheck Scanner are currently being tested in field trials. These trials prove if the apps are working properly and show how they can be improved.
 
 The apps will only be taken into use when their use has been approved by law. This legislation is necessary as a negative test declaration may be temporarily compulsory for certain industries and would indirectly require all visitors to be tested.
