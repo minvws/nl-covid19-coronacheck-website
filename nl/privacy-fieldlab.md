@@ -30,7 +30,7 @@ Geboortedatum – Bij de installatie van de app vragen we u om uw geboortedatum 
 
 Testbewijs – Het testbewijs bevat een deel van de gegevens die in het testresultaat zijn opgenomen: het type test (PCR, Antigeen, …) en datum / tijdstip afname test, afgerond op hele uren.
 
-Digitale handtekening – deze wordt geplaatst om zeker te weten dat het testbewijs niet kan worden aangepast. Deze handtekening is een soort echtheidsbewijs, waarmee u ‘bewijst’ u dat het digitale testbewijs klopt.
+Digitale handtekening – deze wordt geplaatst om zeker te weten dat het testbewijs niet kan worden aangepast. Deze handtekening is een soort echtheidsbewijs, waarmee u 'bewijst' u dat het digitale testbewijs klopt.
 
 Ook het IP-adres wordt gebruikt. Dit is inherent aan het gebruik van internet en IP-technologie en is nodig om technisch gezien een verbinding op te bouwen tussen de server van het teststation en uw telefoon. Het IP-adres wordt enkel verwerkt voor beheers- en beveiligingsdoeleinden. CoronaCheck verwijdert het IP-adres bij ontvangst en ziet dit niet.
 

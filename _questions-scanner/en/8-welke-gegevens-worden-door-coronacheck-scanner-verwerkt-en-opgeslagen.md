@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-No data is saved. The app only checks if the visitor’s QR code is valid.  
+No data is saved. The app only checks if the visitor's QR code is valid.  

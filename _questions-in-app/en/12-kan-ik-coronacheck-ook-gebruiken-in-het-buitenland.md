@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-No, you can’t use the CoronaCheck app abroad.
+No, you can't use the CoronaCheck app abroad.

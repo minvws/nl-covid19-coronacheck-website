@@ -21,6 +21,6 @@ You can retrieve your negative test result to your CoronaCheck app in 3 steps:
 2. The CoronaCheck app checks your code and retrieves your test result.
 3. The app makes a negative test declaration by means of a QR code.  
 
-This QR code is scanned at the entrance of the location you’re visiting. A valid QR code gives you access to the venue.
+This QR code is scanned at the entrance of the location you're visiting. A valid QR code gives you access to the venue.
 
 Your QR code is valid for 40 hours. This is calculated from when you take the test until the start of your activity. An activity is assumed to take no longer than 8 hours. Should you need a new QR code, you can simply take another test.
