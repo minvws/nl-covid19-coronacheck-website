@@ -2,7 +2,7 @@
 layout: in-app-question
 index: 13
 set: 3
-title: De app zegt dat er geen negatief testresultaat gevonden is. Hoe kan dit?
+title: De app zegt dat er geen negatieve testuitslag gevonden is. Hoe kan dit?
 lang: nl
 categories:
 - nl
