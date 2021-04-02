@@ -15,4 +15,4 @@ featuredHomeIcon: app-touch
 ---
 Nee, de bezoeker moet altijd een geldig testbewijs laten zien. 
 
-Als testbewijs kan je de QR-code in de CoronaCheck-app laten zien. Of het geprinte testbewijs dat je bij je testuitslag van testen voor toegang hebt gekregen.
+Als testbewijs kan je de QR-code in de CoronaCheck-app laten zien.
