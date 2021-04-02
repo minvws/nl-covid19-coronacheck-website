@@ -1,5 +1,7 @@
 head-app-name: CoronaCheck
   
+## SOCIAL tags
+
 head-social-og-site_name: CoronaCheck
   
 head-social-og-title:
@@ -28,9 +30,39 @@ head-social-og-description:
   ro: 
   tr: 
  
-head-social-og-image-url: head-social-og-image--nl.png?v=3
+head-social-og-image-url: coronacheck-social-og-image--nl.png?=v1
+
+scanner-social-og-site_name: CoronaCheck Scanner
+  
+scanner-social-og-title:
+  nl: Download CoronaCheck Scanner
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
     
-head-social-og-image-alt:
+scanner-social-og-description:
+  nl: 
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
+ 
+scanner-social-og-image-url: scanner-social-og-image--nl.png?v=1
+    
+social-og-image-alt:
   nl: Impressie van website waarop toelichting te vinden is
   fy: Ympresje fan webside
   en: Impression of website on which more information can be found
@@ -94,6 +126,33 @@ header-subtitle:
   pl: 
   ro: 
   tr: 
+
+scanner-header-title:
+  nl: CoronaCheck Scanner
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
+
+scanner-header-subtitle:
+  nl: Open veilig de deuren
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
+
 
 header-appstore:
   nl: Downloaden in de App Store
@@ -483,7 +542,7 @@ english:
   ro: (engleză)
   tr: (ingilizce)
   
-info-lead: 
+coronacheck-lead: 
   nl: "CoronaCheck is ontwikkeld als onderdeel van toegangstesten. Met de CoronaCheck-app kunnen bezoekers aantonen dat ze negatief getest zijn op corona. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open.<br /><br />
   CoronaCheck wordt op dit moment alleen gebruikt bij vooraf aangekondigde praktijkproeven."
   fy: 
@@ -497,7 +556,7 @@ info-lead:
   ro: 
   tr: 
   
-info-lead-title:
+coronacheck-lead-title:
   nl: Download de CoronaCheck-app
   fy: Download de CoronaCheck-app
   en: Download the CoronaCheck-app
@@ -510,16 +569,46 @@ info-lead-title:
   ro: Descărcați aplicația CoronaCheck
   tr: CoronaCheck uygulamasını indirin
   
-info-announcement: |
+coronacheck-announcement: |
   Geen meldingen
 
-info-caveat-fy: |
- De app wurket yn it Frysk allinne op Android tastellen dy’t Frysk as systeemtaal stypje. Do kinst Frysk as taal foar dy tastellen yn de ynstellingen fan Android ynstelle. iPhones stypje Frysk as systeemtaal spitigernôch net. Yn de oare talen kin yn de Appstore hjir de app wol delhelle wurde.
+# info-caveat-fy: |
+#  De app wurket yn it Frysk allinne op Android tastellen dy’t Frysk as systeemtaal stypje. Do kinst Frysk as taal foar dy tastellen yn de ynstellingen fan Android ynstelle. iPhones stypje Frysk as systeemtaal spitigernôch net. Yn de oare talen kin yn de Appstore hjir de app wol delhelle wurde.
 
-info-caveat-letop-fy: 'Tink derom:'
+# info-caveat-letop-fy: 'Tink derom:'
 
-info-app-store-url:
-  nl: 
+scanner-lead: 
+  nl: "Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde sociale, culturele of sportieve activiteiten. Maar alleen als uit de coronatest blijkt dat zij geen corona hebben."
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
+  
+scanner-lead-title:
+  nl: Download de CoronaCheck Scanner-app
+  fy: Download de CoronaCheck Scanner-app
+  en: Download the CoronaCheck Scanner-app
+  ar: قم بتنزيل تطبيق CoronaCheck Scanner
+  bg: Изтегли приложението CoronaCheck Scanner
+  de: Laden Sie die CoronaCheck Scanner-App herunter
+  es: Descárgate la app CoronaCheck Scanner
+  fr: Téléchargez l’appli CoronaCheck Scanner
+  pl: Pobierz aplikację CoronaCheck Scanner
+  ro: Descărcați aplicația CoronaCheck Scanner
+  tr: CoronaCheck Scanner uygulamasını indirin
+  
+
+scanner-announcement: |
+  Geen meldingen
+
+coronacheck-app-store-url:
+  nl: https://apps.apple.com/nl/app/coronacheck/id1548269870
   fy: 
   en: 
   ar: 
@@ -531,11 +620,28 @@ info-app-store-url:
   ro: 
   tr:  
   
-info-google-play-url: 
+coronacheck-google-play-url: 
   
-info-huawei-url: 
+coronacheck-huawei-url: 
     
-info-app-store-img:
+scanner-app-store-url:
+  nl: https://apps.apple.com/nl/app/coronacheck-scanner/id1549842661
+  fy: https://apps.apple.com/nl/app/coronacheck-scanner/id1549842661
+  en: 
+  ar: 
+  bg:  
+  de:  
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr:  
+  
+scanner-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
+  
+scanner-huawei-url: 
+
+badge-app-store-img:
   nl: app-store-badge-nl.svg
   fy: app-store-badge-nl.svg
   en: app-store-badge-en.svg
@@ -546,9 +652,9 @@ info-app-store-img:
   es: app-store-badge-es.svg
   pl: app-store-badge-pl.svg
   ro: app-store-badge-ro.svg
-  tr:  app-store-badge-tr.svg
+  tr: app-store-badge-tr.svg
   
-info-google-play-img:
+badge-google-play-img:
   nl: google-play-badge-nl.svg
   fy: google-play-badge-nl.svg
   en: google-play-badge-en.svg
@@ -561,7 +667,7 @@ info-google-play-img:
   ro: google-play-badge-ro.svg
   tr: google-play-badge-tr.svg
   
-info-huawei-img: 
+badge-huawei-img: 
   nl: huawei.svg
   fy: huawei.svg
   en: huawei-en.svg
@@ -855,6 +961,7 @@ footer-misc-report-vulnerability:
 #   pl: contact
 #   ro: contact
 #   tr:  contact
+
 # footer-misc-contact:
 #   nl: Contact
 #   en: Contact
@@ -1056,7 +1163,60 @@ information-gps:
   pl: 
   ro: 
   tr: 
+
+
+scanner-information-title:
+  nl: 'Privacy is altijd beschermd:'
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+
+scanner-information-qrcode:
+  nl: In de QR-code staat alleen wanneer de bezoeker negatief getest is.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
     
+scanner-information-naw:
+  nl: De gegevens van de bezoeker worden nergens centraal opgeslagen.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+  
+scanner-information-gps:
+  nl: GPS- of locatiegegevens van de bezoeker worden niet gebruikt of bewaard.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+
 # Media element (used for videos)
 # See _includes/components/mediaplayer.html
   

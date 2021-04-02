@@ -1,10 +1,10 @@
 <div class="stories">
-  {% assign stories = site.stories | where:"lang", page.lang | where:"show", true | sort: "index" %}
+  {% assign stories = site.scanner-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}
   {% for story in stories %}
   <article class="stories__story" id="story-{{ story.index }}">
     <div class="stories__story-column-image">
       <img
-        src="{{ site.baseurl }}/img/story-images/{{ story.graphic }}"
+        src="{{ site.baseurl }}/img/scanner-howto/{{ story.graphic }}"
         alt=""
         loading="lazy"
         class="stories__story-image"
@@ -12,11 +12,11 @@
     </div>
     <div class="stories__story-column-content">
       <h2>
-        <span class="stories__story-title__highlight">{{story.title-highlight}}</span>
+        {% comment %}<span class="stories__story-title__highlight">{{story.title-highlight}}</span>{% endcomment %}
         <span class="stories__story-title">{{story.title}}</span>
       </h2>
-      <div class="stories__story-text" markdown="1">
-        {{ story.content }}
+      <div class="stories__story-text">
+        {{ story.content  }}
       </div>
     </div>
   </article>
