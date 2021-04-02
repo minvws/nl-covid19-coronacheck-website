@@ -119,7 +119,11 @@
 }
 
 .stories__story-text {
-  line-height: 138%;
+  line-height: 1.38em;
+
+  p {
+    margin-bottom: 1.2rem;
+  }
 }
 
 .stories-image__animate {

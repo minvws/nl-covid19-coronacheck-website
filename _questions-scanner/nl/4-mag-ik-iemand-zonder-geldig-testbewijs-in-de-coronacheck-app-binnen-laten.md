@@ -9,6 +9,9 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
+featuredHome: true
+featuredHomeIndex: 2
+featuredHomeIcon: app-touch
 ---
 Nee, de bezoeker moet altijd een geldig testbewijs laten zien. 
 
