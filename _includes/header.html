@@ -11,16 +11,16 @@
           <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}">
         </a>
       </div>
-      {% if include.for == "coronacheck" %}
-        <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
-          {{ site.data.translations.faq[page.lang] }}
-        </a>
-      {% elsif include.for == "scanner" %}
+      {% if include.for == "scanner" %}
         <a href="{{ langSlug }}/faq-scanner" class="header__layout__faq-link">
           {{ site.data.translations.faq[page.lang] }}
         </a>
+      {% else %}
+        <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
+          {{ site.data.translations.faq[page.lang] }}
+        </a>
       {% endif %}
-      {% comment %} {% include language-picker.html %} {% endcomment %}
+      {% include language-picker.html headertype="default" %}
     </div>
     <div class="container">
 
