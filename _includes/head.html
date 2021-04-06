@@ -27,7 +27,23 @@
 
     <meta name="theme-color" content="#154273">
 
-    {% if include.for == "coronacheck" %}
+    {% if include.for == "scanner" %}
+        <meta name="apple-itunes-app" content="app-id=1549842661">
+        
+        <meta property="og:site_name" content="{{ site.data.translations.scanner-social-og-site_name }}">
+        <meta property="og:title" content="{% if page.title != '' %}{{ page.title }} - {{ site.data.translations.scanner-social-og-site_name }}{% else %}{{ site.data.translations.scanner-social-og-title[page.lang] }}{% endif %}" />
+        <meta property="og:description" content="{{ site.data.translations.scanner-social-og-description[page.lang] }}"/>
+        <meta property="og:updated_time" content="{{ site.time | date: "%s" }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ page.permalink }}">
+        <meta property="og:image" content="https://coronacheck.nl/img/{{ site.data.translations.scanner-social-og-image-url }}">
+
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="{% if page.title != '' %}{{ page.title }} - {{ site.data.translations.scanner-social-og-site_name }}{% else %}{{ site.data.translations.scanner-social-og-title[page.lang] }}{% endif %}" />
+        <meta name="twitter:description" content="{{ site.data.translations.scanner-social-og-description[page.lang] }}" />
+        <meta name="twitter:image" content="https://coronacheck.nl/img/{{ site.data.translations.scanner-social-og-image-url }}" />
+    {% else %}
         {% comment %}<meta name="apple-itunes-app" content="app-id=1548269870">{% endcomment %}
 
         <meta name="description" content="{{ site.data.translations.head-social-og-description[page.lang] }}">
@@ -57,22 +73,6 @@
         <meta name="twitter:description" content="{{ site.data.translations.head-social-og-description[page.lang] }}" />
         <meta name="twitter:image" content="https://coronacheck.nl/img/{{ site.data.translations.head-social-og-image-url }}" />
         <meta name="twitter:image:alt" content="{{ site.data.translations.head-social-og-image-alt[page.lang] }}" /> 
-    {% elsif include.for == "scanner" %}
-        <meta name="apple-itunes-app" content="app-id=1549842661">
-        
-        <meta property="og:site_name" content="{{ site.data.translations.scanner-social-og-site_name }}">
-        <meta property="og:title" content="{% if page.title != '' %}{{ page.title }} - {{ site.data.translations.scanner-social-og-site_name }}{% else %}{{ site.data.translations.scanner-social-og-title[page.lang] }}{% endif %}" />
-        <meta property="og:description" content="{{ site.data.translations.scanner-social-og-description[page.lang] }}"/>
-        <meta property="og:updated_time" content="{{ site.time | date: "%s" }}" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="{{ page.permalink }}">
-        <meta property="og:image" content="https://coronacheck.nl/img/{{ site.data.translations.scanner-social-og-image-url }}">
-
-
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="{% if page.title != '' %}{{ page.title }} - {{ site.data.translations.scanner-social-og-site_name }}{% else %}{{ site.data.translations.scanner-social-og-title[page.lang] }}{% endif %}" />
-        <meta name="twitter:description" content="{{ site.data.translations.scanner-social-og-description[page.lang] }}" />
-        <meta name="twitter:image" content="https://coronacheck.nl/img/{{ site.data.translations.scanner-social-og-image-url }}" />
     {% endif %}
 
     <meta name="og:image:alt" content="{{ site.data.translations.social-og-image-alt[page.lang] }}" /> 

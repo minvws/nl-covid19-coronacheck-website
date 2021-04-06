@@ -24,19 +24,7 @@
     </div>
     <div class="container">
 
-      {% if include.for == "coronacheck" %}
-        <div class="header__layout">
-          {% comment %}  <img src="{{ site.baseurl }}/img/logo-app.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" /> {% endcomment %}
-          <div class="header__layout__middle">
-            <h1 class="header__text">
-              {{ site.data.translations.header-title[page.lang] }}<br />
-              <span>{{ site.data.translations.header-subtitle[page.lang] }}</span>
-            </h1>
-
-            {% comment %} {% include badges.html %} {% endcomment %}
-          </div>
-        </div>
-      {% elsif include.for == "scanner" %}
+      {% if include.for == "scanner" %}
         <div class="header__layout">
           {% comment %}  <img src="{{ site.baseurl }}/img/logo-app.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" /> {% endcomment %}
           <div class="header__layout__middle">
@@ -48,7 +36,20 @@
             {% include scanner-badges.html %}
           </div>
         </div>
+      {% else %}
+        <div class="header__layout">
+          {% comment %}  <img src="{{ site.baseurl }}/img/logo-app.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" /> {% endcomment %}
+          <div class="header__layout__middle">
+            <h1 class="header__text">
+              {{ site.data.translations.header-title[page.lang] }}<br />
+              <span>{{ site.data.translations.header-subtitle[page.lang] }}</span>
+            </h1>
+  
+            {% comment %} {% include badges.html %} {% endcomment %}
+          </div>
+        </div>
       {% endif %}
+      
     </div>
   </div>
 </header>
