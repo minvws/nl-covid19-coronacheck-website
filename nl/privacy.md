@@ -45,9 +45,9 @@ Bij het testresultaat worden de volgende gegevens meegegeven vanuit de testaanbi
 
 Testbewijs – Het testbewijs bevat een deel van de gegevens die in het testresultaat zijn opgenomen: het type test en de datum en tijdstip van afname van de test afgerond op hele uren.
 
-Digitale handtekening – deze wordt geplaatst om zeker te weten dat het testbewijs niet kan worden aangepast. Deze handtekening is een soort echtheidsbewijs, waarmee u ‘bewijst’ u dat het digitale testbewijs klopt.
+Digitale handtekening – deze wordt geplaatst om zeker te weten dat het testbewijs niet kan worden aangepast. Deze handtekening is een soort echtheidsbewijs, waarmee u 'bewijst' u dat het digitale testbewijs klopt.
 
-Ook het IP-adres wordt gebruikt. Dit is inherent aan het gebruik van internet en IP-technologie en is nodig om technisch gezien een verbinding op te bouwen tussen de server van het teststation en uw telefoon. Het IP-adres wordt enkel verwerkt voor beheers- en beveiligingsdoeleinden. Het IP-adres wordt voor ontvangst ‘gestript’ door onze provider Prolocation en CoronaCheck ziet het IP-adres niet.
+Ook het IP-adres wordt gebruikt. Dit is inherent aan het gebruik van internet en IP-technologie en is nodig om technisch gezien een verbinding op te bouwen tussen de server van het teststation en uw telefoon. Het IP-adres wordt enkel verwerkt voor beheers- en beveiligingsdoeleinden. Het IP-adres wordt voor ontvangst 'gestript' door onze provider Prolocation en CoronaCheck ziet het IP-adres niet.
 
 In de CoronaCheck Scanner wordt het testbewijs gescand. Daarbij wordt getoond of de drager ervan beschikt over een negatief testbewijs dat nog geldig is.
 

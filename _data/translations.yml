@@ -7,7 +7,7 @@ head-social-og-site_name: CoronaCheck
 head-social-og-title:
   nl: CoronaCheck. Krijg toegang na testen
   fy: 
-  en: 
+  en: CoronaCheck. Get tested, gain access
   ar: 
   bg: 
   de: 
@@ -37,7 +37,7 @@ scanner-social-og-site_name: CoronaCheck Scanner
 scanner-social-og-title:
   nl: Download CoronaCheck Scanner
   fy: 
-  en: 
+  en: Download CoronaCheck Scanner
   ar: 
   bg: 
   de: 
@@ -77,16 +77,16 @@ social-og-image-alt:
     
 page-title:
   nl: CoronaCheck
-  fy: 
-  en: 
-  ar: 
-  bg: 
-  de: 
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr: 
+  fy: CoronaCheck
+  en: CoronaCheck
+  ar: CoronaCheck
+  bg: CoronaCheck
+  de: CoronaCheck
+  fr: CoronaCheck
+  es: CoronaCheck
+  pl: CoronaCheck
+  ro: CoronaCheck
+  tr: CoronaCheck
     
 header-skip-to-content:
   nl: Ga direct naar inhoud
@@ -103,21 +103,21 @@ header-skip-to-content:
     
 header-title:
   nl: CoronaCheck
-  fy: 
-  en: 
-  ar: 
-  bg: 
-  de: 
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr: 
+  fy: CoronaCheck
+  en: CoronaCheck
+  ar: CoronaCheck
+  bg: CoronaCheck
+  de: CoronaCheck
+  fr: CoronaCheck
+  es: CoronaCheck
+  pl: CoronaCheck
+  ro: CoronaCheck
+  tr: CoronaCheck
 
 header-subtitle:
   nl: Krijg toegang na testen
   fy: 
-  en: 
+  en: Get tested, gain access
   ar: 
   bg: 
   de: 
@@ -130,7 +130,7 @@ header-subtitle:
 scanner-header-title:
   nl: CoronaCheck Scanner
   fy: 
-  en: 
+  en: CoronaCheck Scanner 
   ar: 
   bg: 
   de: 
@@ -143,7 +143,7 @@ scanner-header-title:
 scanner-header-subtitle:
   nl: Open veilig de deuren
   fy: 
-  en: 
+  en: Open the doors safely*
   ar: 
   bg: 
   de: 
@@ -282,7 +282,7 @@ phone-action:
   es: <a href="tel:0800-1421">0800-1421</a>
   pl: <a href="tel:0800-1421">0800-1421</a>
   ro: <a href="tel:0800-1421">0800-1421</a>
-  tr:  <a href="tel:0800-1421">0800-1421</a>
+  tr: <a href="tel:0800-1421">0800-1421</a>
     
 minvws:
   nl: "Ministerie van Volksgezondheid,<br>Welzijn en Sport"
@@ -391,7 +391,7 @@ faq-coronacheck:
 faq-scanner:
   nl: Support
   fy: 
-  en:
+  en: Support
   ar: 
   bg: 
   de: 
@@ -404,7 +404,7 @@ faq-scanner:
 faq-category-scanner-general:
   nl: Algemeen
   fy: 
-  en:
+  en: General
   ar: 
   bg: 
   de: 
@@ -417,7 +417,7 @@ faq-category-scanner-general:
 faq-category-scannerapp-privacy:
   nl: Privacy
   fy: 
-  en:
+  en: Privacy
   ar: 
   bg: 
   de: 
@@ -430,7 +430,7 @@ faq-category-scannerapp-privacy:
 faq-category-scannerapp-errors:
   nl: Foutmeldingen
   fy: 
-  en:
+  en: Errors
   ar: 
   bg: 
   de: 
@@ -443,7 +443,7 @@ faq-category-scannerapp-errors:
 faq-category-general:
   nl: Algemeen
   fy: 
-  en:
+  en: General
   ar: 
   bg: 
   de: 
@@ -456,7 +456,7 @@ faq-category-general:
 faq-category-howtouse:
   nl: Gebruik CoronaCheck
   fy: 
-  en:
+  en: Using CoronaCheck
   ar: 
   bg: 
   de: 
@@ -469,7 +469,7 @@ faq-category-howtouse:
 faq-category-troubleshooting:
   nl: Problemen
   fy: 
-  en:
+  en: Troubleshooting
   ar: 
   bg: 
   de: 
@@ -482,7 +482,7 @@ faq-category-troubleshooting:
 faq-category-privacy:
   nl: Privacy
   fy: 
-  en:
+  en: Privacy
   ar: 
   bg: 
   de: 
@@ -543,10 +543,9 @@ english:
   tr: (ingilizce)
   
 coronacheck-lead: 
-  nl: "CoronaCheck is ontwikkeld als onderdeel van toegangstesten. Met de CoronaCheck-app kunnen bezoekers aantonen dat ze negatief getest zijn op corona. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open.<br /><br />
-  CoronaCheck wordt op dit moment alleen gebruikt bij vooraf aangekondigde praktijkproeven."
+  nl: "CoronaCheck is ontwikkeld als onderdeel van toegangstesten. Met de CoronaCheck-app kunnen bezoekers aantonen dat ze negatief getest zijn op corona. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open.<br /><br />CoronaCheck wordt op dit moment alleen gebruikt bij vooraf aangekondigde praktijkproeven."
   fy: 
-  en: 
+  en: "CoronaCheck is created as part of access testing. With the CoronaCheck app, visitors can prove having tested negative for corona. This way, certain social, cultural or sports venues can open quickly, in a responsible manner. <br /><br />CoronaCheck is currently only being tested in field trials."
   ar: 
   bg: 
   de: 
@@ -775,7 +774,7 @@ footer-colophon:
 footer-logos-info_md:
   nl: De apps CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. De apps hadden niet tot stand kunnen komen zonder de hulp van tientallen experts, ervaringsdeskundigen en een grote open source community van burgers die heeft meegekeken en getest tijdens de ontwikkeling. 
   fy: 
-  en: 
+  en: The CoronaCheck and CoronaCheck Scanner apps have been developed by the Ministry of Public Health, Welfare and Sport. The apps would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens, who all lent a hand and helped to test the app during its development.
   ar: 
   bg: 
   de: 
@@ -1128,7 +1127,7 @@ information-title:
 information-qrcode:
   nl: In de QR-code staat alleen wanneer je negatief getest bent.
   fy: 
-  en: 
+  en: Your QR code only says when you tested negative.
   ar: 
   bg: 
   de: 
@@ -1141,7 +1140,7 @@ information-qrcode:
 information-naw:
   nl: Jouw gegevens worden nergens centraal opgeslagen.
   fy: 
-  en: 
+  en: Your data is not centrally stored anywhere.
   ar: 
   bg: 
   de: 
@@ -1154,7 +1153,7 @@ information-naw:
 information-gps:
   nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard.
   fy: 
-  en: 
+  en: Your GPS or location data are not used or saved.
   ar: 
   bg: 
   de: 

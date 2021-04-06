@@ -11,32 +11,20 @@
           <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}">
         </a>
       </div>
-      {% if include.for == "coronacheck" %}
-        <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
-          {{ site.data.translations.faq[page.lang] }}
-        </a>
-      {% elsif include.for == "scanner" %}
+      {% if include.for == "scanner" %}
         <a href="{{ langSlug }}/faq-scanner" class="header__layout__faq-link">
           {{ site.data.translations.faq[page.lang] }}
         </a>
+      {% else %}
+        <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
+          {{ site.data.translations.faq[page.lang] }}
+        </a>
       {% endif %}
-      {% comment %} {% include language-picker.html %} {% endcomment %}
+      {% include language-picker.html headertype="default" %}
     </div>
     <div class="container">
 
-      {% if include.for == "coronacheck" %}
-        <div class="header__layout">
-          {% comment %}  <img src="{{ site.baseurl }}/img/logo-app.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" /> {% endcomment %}
-          <div class="header__layout__middle">
-            <h1 class="header__text">
-              {{ site.data.translations.header-title[page.lang] }}<br />
-              <span>{{ site.data.translations.header-subtitle[page.lang] }}</span>
-            </h1>
-
-            {% comment %} {% include badges.html %} {% endcomment %}
-          </div>
-        </div>
-      {% elsif include.for == "scanner" %}
+      {% if include.for == "scanner" %}
         <div class="header__layout">
           {% comment %}  <img src="{{ site.baseurl }}/img/logo-app.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" /> {% endcomment %}
           <div class="header__layout__middle">
@@ -48,7 +36,20 @@
             {% include scanner-badges.html %}
           </div>
         </div>
+      {% else %}
+        <div class="header__layout">
+          {% comment %}  <img src="{{ site.baseurl }}/img/logo-app.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" /> {% endcomment %}
+          <div class="header__layout__middle">
+            <h1 class="header__text">
+              {{ site.data.translations.header-title[page.lang] }}<br />
+              <span>{{ site.data.translations.header-subtitle[page.lang] }}</span>
+            </h1>
+  
+            {% comment %} {% include badges.html %} {% endcomment %}
+          </div>
+        </div>
       {% endif %}
+      
     </div>
   </div>
 </header>
