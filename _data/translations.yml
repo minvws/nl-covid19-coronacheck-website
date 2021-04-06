@@ -7,7 +7,7 @@ head-social-og-site_name: CoronaCheck
 head-social-og-title:
   nl: CoronaCheck. Krijg toegang na testen
   fy: 
-  en: 
+  en: CoronaCheck. Get tested, gain access*
   ar: 
   bg: 
   de: 
@@ -37,7 +37,7 @@ scanner-social-og-site_name: CoronaCheck Scanner
 scanner-social-og-title:
   nl: Download CoronaCheck Scanner
   fy: 
-  en: 
+  en: Download CoronaCheck Scanner
   ar: 
   bg: 
   de: 
@@ -77,16 +77,16 @@ social-og-image-alt:
     
 page-title:
   nl: CoronaCheck
-  fy: 
-  en: 
-  ar: 
-  bg: 
-  de: 
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr: 
+  fy: CoronaCheck
+  en: CoronaCheck
+  ar: CoronaCheck
+  bg: CoronaCheck
+  de: CoronaCheck
+  fr: CoronaCheck
+  es: CoronaCheck
+  pl: CoronaCheck
+  ro: CoronaCheck
+  tr: CoronaCheck
     
 header-skip-to-content:
   nl: Ga direct naar inhoud
@@ -103,21 +103,21 @@ header-skip-to-content:
     
 header-title:
   nl: CoronaCheck
-  fy: 
-  en: 
-  ar: 
-  bg: 
-  de: 
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr: 
+  fy: CoronaCheck
+  en: CoronaCheck
+  ar: CoronaCheck
+  bg: CoronaCheck
+  de: CoronaCheck
+  fr: CoronaCheck
+  es: CoronaCheck
+  pl: CoronaCheck
+  ro: CoronaCheck
+  tr: CoronaCheck
 
 header-subtitle:
   nl: Krijg toegang na testen
   fy: 
-  en: 
+  en: Get tested, gain access*
   ar: 
   bg: 
   de: 
@@ -130,7 +130,7 @@ header-subtitle:
 scanner-header-title:
   nl: CoronaCheck Scanner
   fy: 
-  en: 
+  en: CoronaCheck Scanner 
   ar: 
   bg: 
   de: 
@@ -143,7 +143,7 @@ scanner-header-title:
 scanner-header-subtitle:
   nl: Open veilig de deuren
   fy: 
-  en: 
+  en: Open the doors safely*
   ar: 
   bg: 
   de: 
@@ -282,7 +282,7 @@ phone-action:
   es: <a href="tel:0800-1421">0800-1421</a>
   pl: <a href="tel:0800-1421">0800-1421</a>
   ro: <a href="tel:0800-1421">0800-1421</a>
-  tr:  <a href="tel:0800-1421">0800-1421</a>
+  tr: <a href="tel:0800-1421">0800-1421</a>
     
 minvws:
   nl: "Ministerie van Volksgezondheid,<br>Welzijn en Sport"
