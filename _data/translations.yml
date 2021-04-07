@@ -577,7 +577,7 @@ coronacheck-announcement: |
 # info-caveat-letop-fy: 'Tink derom:'
 
 scanner-lead: 
-  nl: "Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde sociale, culturele of sportieve activiteiten. Maar alleen als uit de coronatest blijkt dat zij geen corona hebben."
+  nl: "Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde sociale, culturele of sportieve activiteiten. Maar alleen als uit de coronatest blijkt dat zij geen corona hebben. Kijk op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen?utm_campaign=coronavirus&utm_source=coronacheck.nl/nl/scanner' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid</a> om te zien welke pilots er in april worden gedaan met testen voor toegang."
   fy: 
   en: 
   ar: 
@@ -1205,6 +1205,84 @@ scanner-information-naw:
   
 scanner-information-gps:
   nl: GPS- of locatiegegevens van de bezoeker worden niet gebruikt of bewaard.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+
+demo-qr-title:
+  nl: Probeer het scannen
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+
+demo-qr-subtitle: 
+  nl: Ervaren hoe de scanner werkt? Open CoronaCheck Scanner op je telefoon en scan de QR-codes
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+ 
+demo-qr-gray:
+  nl: Grijs scherm? Dat betekent dat er een geldige demo-code is gescand. Bij het scannen van een echte geldige QR-code zal het scherm groen worden inplaats van grijs.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+
+demo-qr-gray-alt:
+  nl: Een QR code van een fictief persoon die wel naar binnen mag
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+
+demo-qr-red:
+  nl: Een rood scherm betekent niet dat de bezoeker corona heeft, alleen dat de QR-code niet geldig is.
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+
+demo-qr-red-alt:
+  nl: Een QR code van een fictief persoon die niet naar binnen mag
   fy: 
   en: 
   ar: 
