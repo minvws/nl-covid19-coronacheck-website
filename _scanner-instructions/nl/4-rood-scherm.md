@@ -5,9 +5,11 @@ graphic: 4_scherm_rood.svg
 title: Rood scherm
 lang: nl
 ---
-Rood scherm? Dat betekent niet dat de bezoeker corona heeft. Het betekent dat de QR-code ongeldig is. Er is dus geen bewijs van een recente negatieve testuitslag. 
+Rood scherm? Dat betekent niet dat de bezoeker corona heeft. Het betekent alleen dat de QR-code ongeldig is. Er is dus geen bewijs van een recente negatieve testuitslag. Dit kun je doen:
 
-Dit kun je doen:
 - Controleer of de bezoeker de QR-code vanuit de CoronaCheck-app laat zien. Een schermafbeelding of kopie van een QR-code geeft altijd een rood scherm.
-- Is de bezoeker wel negatief op corona getest in de afgelopen 40 uur? Bij de testuitslag krijgt de bezoeker een unieke code, waarmee in de CoronaCheck-app een testbewijs kan worden gemaakt .
-- Heeft de bezoeker geen coronatest gedaan? Dan is het niet mogelijk een testbewijs te maken. Vraag de bezoeker eerst een test te doen.
+- Vraag de bezoeker de app volledig af te sluiten en opnieuw op te starten. Scan daarna opnieuw de QR-code.
+- Blijft er een rood scherm komen, terwijl de bezoeker wel een negatieve testuitslag heeft? Stuur de bezoeker naar onze helpdesk, telefoonnummer: <a href="tel:0800-1421">0800-1421</a>.<br /><br />
+
+
+Er is altijd een groen scherm nodig voor toegang tot locaties waar een testbewijs nodig is. Heeft de bezoeker geen (geldige) QR-code? Dan kun je de bezoeker niet binnenlaten.
