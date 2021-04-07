@@ -60,7 +60,7 @@
   background-color: $color-focus-background;
   font-style: italic;
   padding: 30px;
-
-  width: 339px;
-  height: 339px;
+  max-width: 339px;
+  height: auto;
+  width: 100%;
 }
