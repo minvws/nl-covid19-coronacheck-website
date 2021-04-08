@@ -1,0 +1,18 @@
+.section {
+    padding: 20px 0;
+
+    .section-block {
+        width: 456px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    @include tablet() {
+        padding: 0 12px;
+
+        .section-block {
+            width: 100%;
+            //padding: 0 12px;
+        }
+    }
+}

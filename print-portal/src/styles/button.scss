@@ -1,0 +1,23 @@
+button {
+    height: 48px;
+    border-radius: 24px;
+    background: #1540EB;
+    border: 0;
+    padding: 0 50px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease;
+
+    &.button--full-width {
+        width: 100%;
+    }
+
+    &.button--inactive {
+        background: #F2F2F7;
+        color: #8F8F93;
+        pointer-events: none;
+    }
+}
