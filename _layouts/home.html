@@ -36,13 +36,13 @@
     </div>
 
     {% include stories.html %}
-    {% comment %} {% include coronacheck-badges.html class="layout-app-badges--center-wrap" huawei="true" %} {% endcomment %}
+    {% include coronacheck-badges.html class="layout-app-badges--center-wrap" %} 
     {% include information.html %}
     {% comment %} {% if page.lang == 'en' or page.lang == 'nl' %}{% include video.html %}{% endif %} {% endcomment %}
     
     {% include faq.html for="coronacheck" %}
     
-    {% comment %} {% include coronacheck-badges.html class="layout-app-badges--center-wrap layout-app-badges--background" huawei="true" %} {% endcomment %}
+    {% include coronacheck-badges.html class="layout-app-badges--center-wrap layout-app-badges--background" %}
   </main>
   {% include footer.html %}
 </body>
