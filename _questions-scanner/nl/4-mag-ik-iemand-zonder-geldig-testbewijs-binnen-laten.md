@@ -6,7 +6,7 @@ title: Mag ik iemand zonder geldig testbewijs binnen laten?
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner
 showBreadCrumbs: true
 showContact: true
 showOnFAQoverview: true
