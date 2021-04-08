@@ -16,11 +16,9 @@
 <body>
   <main class="content-center content-center__in_app" id="content">
     {% if page.collection == 'questions-in-app' %}
-      <a href="/nl/faq-in-app">Terug naar meestgestelde vragen</a>
-    {% endif %}
-
-    {% if page.collection == 'questions-scanner-in-app' %}
-      <a href="/nl/faq-scanner-in-app">Terug naar Support</a>
+      <a href="{{ langSlug }}/faq-in-app">{{ site.data.translations.layout-template-faq[page.lang] }}</a>
+    {% elsif page.collection == 'questions-scanner-in-app' %}
+      <a href="{{ langSlug }}/faq-scanner-in-app">{{ site.data.translations.layout-template-faq[page.lang] }}</a>
     {% endif %}
 
     <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
