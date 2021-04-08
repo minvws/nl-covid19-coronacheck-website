@@ -7,7 +7,7 @@
 <nav class="content-center__home breadcrumbs" aria-label="{{ site.data.translations.youarehere[page.lang] }}:"> 
   <ul> 
   {% for crumb in crumbs offset: 1 %}
-  {{% assign start_crumb = '' %}}
+    {{% assign start_crumb = '' %}}
     {% if forloop.first %}
     <li class="breadcrumbs-item"> 
         <a class="breadcrumbs" href="{{langSlug}}">
@@ -17,13 +17,19 @@
           <span class="icon icon-chevron-right"></span>
         {% endif %}
     </li> 
-    {% elsif forloop.last == false %}
+    {% elsif forloop.last == false and include.collection == 'questions-scanner' %} 
       <li class="breadcrumbs-item">
-        <a class="breadcrumbs" href="{{langSlug}}/faq">
-          {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
+        <a class="breadcrumbs" href="{{langSlug}}/faq-scanner">
+        {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
         <span class="icon icon-chevron-right"></span>
       </li>
-    {% else %}
+    {% elsif forloop.last == false and include.collection == 'questions' %}
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs" href="{{langSlug}}/faq">
+            {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
+          <span class="icon icon-chevron-right"></span>
+        </li>
+    {% else  %}
       <li class="breadcrumbs-item"> 
         {% if page.contentLang == 'en' %}
           <span class="breadcrumbs disabled" dir="ltr" lang="en" aria-current="page">{{ include.title | truncate: 40 }}</span>
