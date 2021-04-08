@@ -9,9 +9,6 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
-featuredHome: true
-featuredHomeIndex: 5
-featuredHomeIcon: privacy
 ---
 The [privacy statement](/en/privacy) outlines how CoronaCheck processes your data. The most important principles:
 
