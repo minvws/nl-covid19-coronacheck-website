@@ -9,6 +9,7 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
+showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 1
 featuredHomeIcon: app-touch
