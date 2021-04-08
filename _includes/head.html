@@ -28,6 +28,7 @@
     <meta name="theme-color" content="#154273">
 
     {% if include.for == "scanner" %}
+        {% comment %}meta tags for the coronacheck scanner landingpage{% endcomment %}
         <meta name="apple-itunes-app" content="app-id=1549842661">
         
         <meta property="og:site_name" content="{{ site.data.translations.scanner-social-og-site_name }}">
@@ -38,18 +39,18 @@
         <meta property="og:url" content="{{ page.permalink }}">
         <meta property="og:image" content="https://coronacheck.nl/img/{{ site.data.translations.scanner-social-og-image-url }}">
 
-
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="{% if page.title != '' %}{{ page.title }} - {{ site.data.translations.scanner-social-og-site_name }}{% else %}{{ site.data.translations.scanner-social-og-title[page.lang] }}{% endif %}" />
         <meta name="twitter:description" content="{{ site.data.translations.scanner-social-og-description[page.lang] }}" />
         <meta name="twitter:image" content="https://coronacheck.nl/img/{{ site.data.translations.scanner-social-og-image-url }}" />
     {% else %}
-        {% comment %}<meta name="apple-itunes-app" content="app-id=1548269870">{% endcomment %}
+        <meta name="apple-itunes-app" content="app-id=1548269870">
 
         <meta name="description" content="{{ site.data.translations.head-social-og-description[page.lang] }}">
         <link rel="alternate" hreflang="nl-NL" href="https://coronacheck.nl" />
-        {% comment %}
         <link rel="alternate" hreflang="en-GB" href="https://coronacheck.nl/en" />
+
+        {% comment %}
         <link rel="alternate" hreflang="ar" href="https://coronacheck.nl/ar" />
         <link rel="alternate" hreflang="bg" href="https://coronacheck.nl/bg" />
         <link rel="alternate" hreflang="de" href="https://coronacheck.nl/de" />

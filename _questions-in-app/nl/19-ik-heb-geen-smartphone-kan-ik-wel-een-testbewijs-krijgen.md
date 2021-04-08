@@ -1,5 +1,5 @@
 ---
-layout: content
+layout: in-app-question
 index: 19
 set: 1
 title: Ik heb geen smartphone. Kan ik wel een testbewijs krijgen? 

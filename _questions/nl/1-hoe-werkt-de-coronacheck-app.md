@@ -9,6 +9,7 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
+showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 1
 featuredHomeIcon: app-touch
@@ -22,3 +23,5 @@ Als bezoeker doe je eerst een coronatest. Had je op het moment van testen geen c
 Laat de QR-code scannen aan de deur van de locatie waar je naar binnen wilt. Is je QR-code geldig? Dan mag je naar binnen.
 
 Je QR-code is 40 uur geldig. Dat is vanaf het moment van de test tot aan de start van je activiteit. Hierbij gaan we ervan uit dat een activiteit niet langer dan 8 uur duurt. Nieuwe QR-code nodig? Laat je opnieuw testen.
+
+Let op: je kunt maar voor één persoon een testbewijs in de CoronaCheck-app laten zien. Iedere bezoeker heeft dus een eigen telefoon met de app nodig.

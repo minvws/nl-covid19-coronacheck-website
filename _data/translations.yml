@@ -389,9 +389,9 @@ faq-coronacheck:
   tr: Bütün sık sorulan sorular
 
 faq-scanner:
-  nl: Support
+  nl: Meestgestelde vragen
   fy: 
-  en: Support
+  en: Frequently asked questions
   ar: 
   bg: 
   de: 
@@ -619,7 +619,7 @@ coronacheck-app-store-url:
   ro: 
   tr:  
   
-coronacheck-google-play-url: 
+coronacheck-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder
   
 coronacheck-huawei-url: 
     

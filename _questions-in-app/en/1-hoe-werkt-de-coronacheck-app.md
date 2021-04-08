@@ -8,10 +8,7 @@ categories:
 - en
 - faq
 showBreadCrumbs: true
-showContact: true
-featuredHome: true
-featuredHomeIndex: 1
-featuredHomeIcon: app-touch
+showContact: true 
 ---
 As a visitor, you first take a corona test. If your test proves you don't have coronavirus at that time, you get access to certain social, cultural or sports activities.
 

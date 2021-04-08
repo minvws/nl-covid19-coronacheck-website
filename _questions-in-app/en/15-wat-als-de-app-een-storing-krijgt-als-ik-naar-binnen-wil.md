@@ -12,4 +12,4 @@ showContact: true
 ---
 Close and restart the app. 
 
-If the app still doesn't work, phone 0800-1421 or email [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
+If the app still doesn't work, phone <a href="tel:0800-1421">0800-1421</a> or email [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).

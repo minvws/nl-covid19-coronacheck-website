@@ -9,9 +9,6 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
-featuredHome: true
-featuredHomeIndex: 2
-featuredHomeIcon: thumbs-up
 ---
 CoronaCheck and CoronaCheck Scanner are currently being tested in field trials. These trials prove if the apps are working properly and show how they can be improved.
 
