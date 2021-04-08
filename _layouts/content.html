@@ -19,9 +19,7 @@
       {% include breadcrumbs.html title=page.title collection=page.collection %}
     {% endif %}{% endcomment %}
     {% if page.collection == 'questions' %}
-      <a href="{{ langSlug }}/faq">{{ site.data.translations.layout-template-faq[page.lang] }}</a>
-    {% elsif page.collection == 'questions-scanner' %}
-      <a href="{{ langSlug }}/faq-scanner">{{ site.data.translations.layout-template-faq[page.lang] }}</a>
+      <a href="/nl/faq">Terug naar meestgestelde vragen</a>
     {% endif %}
 
     {% if page.showHomeBtn %}
