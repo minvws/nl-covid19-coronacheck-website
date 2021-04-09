@@ -46,8 +46,8 @@ export default {
             }
         },
         async generateQRCode() {
-            const dpi = 150;
-            const size = QRSizeInCm * cmToInch * dpi;
+            const dpi = 190;
+            const size = Math.round(QRSizeInCm * cmToInch * dpi);
             return new Promise((resolve, reject) => {
                 QRCode.toDataURL(this.qrCode, { width: size, height: size })
                     .then(url => {
@@ -59,7 +59,11 @@ export default {
             })
         },
         getDocument(urlQR) {
-            const doc = new JsPDF();
+            const settings = {
+                orientation: 'p',
+                format: 'a4'
+            };
+            const doc = new JsPDF(settings);
             const grid = 8;
             const pageHeight = 297;
             const pageWidth = 210;
