@@ -110,11 +110,6 @@ export default {
                     fontSize: 20,
                     position: [pageMarginLeft, pageMarginTop]
                 }, {
-                    text: 'QR-code niet vouwen',
-                    fontSize: 8,
-                    position: [(pageMarginLeft + 0.5 * QRSizeInCm * 10), 95],
-                    properties: { align: 'center' }
-                }, {
                     text: 'Initialen',
                     fontSize: 10,
                     position: [pageMarginLeft, tableBaseY]
@@ -172,7 +167,7 @@ Let op: dit is géén toegangsticket voor je activiteit`,
                     position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding)]
                 }, {
                     text: `Bekijk de meestgestelde vragen op www.CoronaCheck.nl
-                    
+
 Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                     lineHeight: lineHeightSmall,
                     position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding + 2 * lineHeightSmall)],
