@@ -4,6 +4,7 @@ import ProvideCode from '@/components/views/provide-code/ProvideCode.vue'
 import YourTestResults from '@/components/views/your-test-results/YourTestResults';
 import Print from '@/components/views/print/Print';
 import HelpTestResult from '@/components/views/help-pages/HelpTestResult';
+import HelpTestResultSomethingWrong from '@/components/views/help-pages/HelpTestResultSomethingWrong';
 
 Vue.use(VueRouter)
 
@@ -24,6 +25,10 @@ const routes = [
         path: '/uitleg-testresultaat',
         name: 'HelpTestResult',
         component: HelpTestResult
+    }, {
+        path: '/testresultaat-er-klopt-iets-niet',
+        name: 'HelpTestResultSomethingWrong',
+        component: HelpTestResultSomethingWrong
     }
 ]
 

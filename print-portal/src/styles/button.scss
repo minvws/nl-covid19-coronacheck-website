@@ -35,12 +35,6 @@ button {
     line-height: 1;
     cursor: pointer;
 
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
     &:after {
         content: '?';
         position: absolute;
@@ -49,4 +43,12 @@ button {
         transform: translate(-50%, calc(-50% - 1px));
         pointer-events: none;
     }
+}
+
+.button-modest {
+    color: $active-color;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
 }

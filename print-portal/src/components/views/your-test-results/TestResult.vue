@@ -14,9 +14,9 @@ export default {
     computed: {
         status() {
             if (this.testResult.negativeResult) {
-                return 'Negatief test resultaat (geen corona)';
+                return 'Negatief testresultaat (geen corona)';
             } else {
-                return 'Positief test resultaat (wel corona)';
+                return 'Positief testresultaat (wel corona)';
             }
         },
         date() {

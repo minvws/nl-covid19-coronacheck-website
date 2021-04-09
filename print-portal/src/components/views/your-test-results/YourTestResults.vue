@@ -59,26 +59,30 @@ export default {
                         </p>
                         <div class="YourTestResults__header">
                             Opgehaald testresultaat
-                            <div class="info-button">
-                                <router-link :to="{ name: 'HelpTestResult' }"/>
-                            </div>
+                            <router-link
+                                :to="{ name: 'HelpTestResult' }"
+                                class="info-button">
+                            </router-link>
                         </div>
                         <div class="YourTestResults__results">
                             <TestResult
                                 :testResult="testResult"/>
+                            <router-link
+                                :to="{ name: 'HelpTestResultSomethingWrong' }"
+                                class="button-modest">
+                                Er klopt iets niet
+                            </router-link>
+                        </div>
+                        <div class="YourTestResults__footer">
+                            <button
+                                @click="createTestCertificate()">
+                                Maak testbewijs
+                            </button>
                         </div>
                     </div>
 
                     <div v-else>
                         Geen testresultaat bekend
-                    </div>
-                    <div
-                        v-if="testResult"
-                        class="YourTestResults__footer">
-                        <button
-                            @click="createTestCertificate()">
-                            Maak testbewijs
-                        </button>
                     </div>
                 </div>
             </div>

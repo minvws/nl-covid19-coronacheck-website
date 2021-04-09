@@ -81,7 +81,7 @@ export default {
                 <div
                     v-if="verificationCodeStatus.expired"
                     @click="requestNewVerificationCode()"
-                    class="input__small-button">
+                    class="button-modest">
                     Stuur opnieuw
                 </div>
             </div>
