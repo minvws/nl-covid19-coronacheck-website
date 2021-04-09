@@ -184,6 +184,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
             doc.roundedRect(questionsTableBaseX, questionsTableBaseY, (pageWidth / 2 - 20), 60, borderRadius, borderRadius, 'F');
 
             // images
+            // use slow image compression after failing opening pdf on Chrome
             const imageSettings = [null, 'SLOW']
             doc.addImage(urlQR, 'PNG', pageMarginLeft, qrCodeY, 70, 70, ...imageSettings);
             doc.addImage(createImageOnTheFly('assets/img/pdf/artwork.png'), 'PNG', (questionsTableBaseX + 17), (pageHeight / 2 + 14), 52, 44, ...imageSettings);
