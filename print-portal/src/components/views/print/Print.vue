@@ -46,7 +46,7 @@ export default {
             }
         },
         async generateQRCode() {
-            const dpi = 190;
+            const dpi = 100;
             const size = Math.round(QRSizeInCm * cmToInch * dpi);
             return new Promise((resolve, reject) => {
                 QRCode.toDataURL(this.qrCode, { width: size, height: size })
@@ -165,14 +165,14 @@ Als je vraag er niet bij staat, stuur dan een email naar support@leadhealthcare.
             ];
 
             // bottom bar
-            doc.setFillColor(240, 240, 240);
+            doc.setFillColor(239, 247, 249);
             doc.rect(0, (pageHeight - bottomBarHeight), pageWidth, bottomBarHeight, 'F');
 
             // images
             doc.addImage(urlQR, 'PNG', grid, (grid * 3), 70, 70);
-            doc.addImage(createImageOnTheFly('assets/img/temp/corona-check-print.png'), 'PNG', box4BaseX, box2BaseY - 5);
-            doc.addImage(createImageOnTheFly('assets/img/temp/corona-check-logo.png'), 'PNG', grid, (pageHeight - bottomBarHeight + 5));
-            doc.addImage(createImageOnTheFly('assets/img/temp/fold-instructions.png'), 'PNG', 65, box2BaseY - 10);
+            doc.addImage(createImageOnTheFly('assets/img/pdf/artwork.png'), 'PNG', box4BaseX, box2BaseY - 5, 52, 44);
+            doc.addImage(createImageOnTheFly('assets/img/pdf/coronacheck.png'), 'PNG', grid, (pageHeight - bottomBarHeight + 7.5), 70, 15);
+            doc.addImage(createImageOnTheFly('assets/img/pdf/fold-instructions.PNG'), 'PNG', 65, (box2BaseY - 10), 35, 10);
 
             // lines
             doc.setDrawColor(200, 200, 200);
