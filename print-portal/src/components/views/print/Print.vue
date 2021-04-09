@@ -17,6 +17,12 @@ export default {
         },
         qrCode() {
             return this.$store.state.qrCode;
+        },
+        maxValidityHours() {
+            return this.$store.state.holderConfig.maxValidityHours;
+        },
+        validUntil() {
+            return dateTool.addHoursToDate(this.testResult.sampleDate, this.maxValidityHours, true);
         }
     },
     methods: {
@@ -51,8 +57,7 @@ export default {
             const sizeInPixels = Math.round(QRSizeInCm * cmToInch * dpi);
             const qrOptions = {
                 width: sizeInPixels,
-                height: sizeInPixels,
-                margin: 0
+                height: sizeInPixels
             };
             return new Promise((resolve, reject) => {
                 QRCode.toDataURL(this.qrCode, qrOptions)
@@ -135,7 +140,7 @@ export default {
                     text: 'Geldig tot',
                     position: [pageMarginLeft, (tableBaseY + 4 * lineHeight)]
                 }, {
-                    text: '00-00-0000',
+                    text: this.validUntil,
                     fontWeight: 700,
                     position: [tableBaseCol2X, (tableBaseY + 4 * lineHeight)]
                 }, {

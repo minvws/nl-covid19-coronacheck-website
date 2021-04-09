@@ -6,6 +6,7 @@ import testProviders from './modules/testProviders';
 Vue.use(Vuex)
 
 const state = {
+    holderConfig: null,
     // todo remove before publication
     testCode: 'TST-TTTTTTTTTT-G2',
     // testCode: 'TST-PENDINGYY1-G2',
@@ -31,6 +32,9 @@ const mutations = {
     },
     setQrCode(state, qrCode) {
         state.qrCode = qrCode;
+    },
+    setHolderConfig(state, holderConfig) {
+        state.holderConfig = holderConfig;
     }
 }
 
