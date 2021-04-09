@@ -1,4 +1,10 @@
-$font-main: 'Noto Sans', sans-serif;
+@font-face {
+    font-family: 'RO';
+    src: url('/assets/fonts/RO-SansWebText-Regular.woff') format('woff'),
+         url('/assets/fonts/RO-SansWebText-Regular.woff2') format('woff2');
+}
+
+$font-main: 'RO', sans-serif;
 $font-headers: 'Montserrat', sans-serif;
 
 body {

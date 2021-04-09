@@ -16,7 +16,8 @@ module.exports = {
         "indent": ["error", 4],
         "space-before-function-paren": 0,
         "quote-props": 0,
-        "semi": 0
+        "semi": 0,
+        "camelcase": 0
     },
     overrides: [
         {

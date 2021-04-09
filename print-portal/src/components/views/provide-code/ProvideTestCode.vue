@@ -7,6 +7,10 @@ export default {
             type: Object,
             required: true
         },
+        isTestCodeValid: {
+            type: Boolean,
+            required: true
+        },
         getSignedResult: {
             type: Function,
             required: true
@@ -27,10 +31,6 @@ export default {
             set(value) {
                 this.$store.commit('updateProperty', { key: 'testCode', value })
             }
-        },
-        isTestCodeValid() {
-            // todo refine
-            return this.testCode.length > 3;
         }
     },
     methods: {

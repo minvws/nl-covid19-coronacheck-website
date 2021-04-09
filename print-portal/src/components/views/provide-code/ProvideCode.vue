@@ -30,11 +30,25 @@ export default {
         verificationCode() {
             return this.$store.state.verificationCode;
         },
+        testProviderIdentifier() {
+            return this.testCode.split('-')[0];
+        },
+        testProvider() {
+            if (this.testProviderIdentifier) {
+                return this.$store.getters['testProviders/getTestProviderByIdentifier'](this.testProviderIdentifier);
+            } else {
+                return null;
+            }
+        },
         token() {
             return this.testCode.split('-')[1];
         },
         testResultStatus() {
             return this.$store.state.testResultStatus;
+        },
+        isTestCodeValid() {
+            // todo refine
+            return this.testCode.length > 3 && this.token.length > 1 && this.testProvider !== null && this.testProvider !== undefined;
         }
     },
     methods: {
@@ -51,7 +65,7 @@ export default {
         async getSignedResult(includeVerificationCode) {
             return new Promise((resolve, reject) => {
                 let responseForSignedResult, data;
-                const url = 'https://api-ct.bananenhalen.nl/ctp/get_test_result';
+                const url = this.testProvider.result_url;
                 const headers = {
                     'Authorization': `Bearer ${this.token}`,
                     'CoronaCheck-Protocol-Version': '2.0',
@@ -127,7 +141,26 @@ export default {
             } else {
                 return 'unknown_error';
             }
+        },
+        async getConfiguration() {
+            const url = 'https://api-ct.bananenhalen.nl/v1/holder/config_ctp';
+            axios({
+                method: 'get',
+                url: url
+            }).then((response) => {
+                if (response.data && response.data.payload) {
+                    const config = JSON.parse(atob(response.data.payload));
+                    this.$store.commit('testProviders/init', config.corona_test_providers);
+                } else {
+                    console.error('Something went wrong when retrieving config corona test providers')
+                }
+            }).catch((error) => {
+                console.error(error);
+            })
         }
+    },
+    mounted() {
+        this.getConfiguration();
     }
 }
 </script>
@@ -148,6 +181,7 @@ export default {
                     <form autocomplete="off">
                         <ProvideTestCode
                             :test-code-status="testCodeStatus"
+                            :is-test-code-valid="isTestCodeValid"
                             :get-signed-result="getSignedResult"/>
                         <ProvideVerificationCode
                             v-if="showVerificationCodeModule"

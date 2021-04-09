@@ -4,6 +4,8 @@ import _base from './modules/_base-module';
 
 Vue.use(Vuex)
 
+import testProviders from "./modules/testProviders";
+
 const state = {
     // todo remove before publication
     testCode: 'TST-TTTTTTTTTT-G2',
@@ -37,5 +39,7 @@ export default new Vuex.Store({
     state,
     mutations,
     actions: {},
-    modules: {}
+    modules: {
+        testProviders
+    }
 })
