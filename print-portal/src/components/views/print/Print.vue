@@ -244,31 +244,36 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                 :callback-back="goBack"/>
             <div class="section">
                 <div class="section-block">
-                    <h1>
-                        Jouw testbewijs
-                    </h1>
-                    <p>
-                        Lees hier welke informatie er in verwerkt is. Open of download de PDF en print hem als  testbewijs.
-                    </p>
-                    <div class="Print__container">
-                        <div class="Print__buttons">
-                            <button
-                                class="button--full-width"
-                                @click="openPDF()">
-                                Open PDF
-                            </button>
-                            <button
-                                class="button--full-width"
-                                @click="downloadPDF()">
-                                Download PDF
-                            </button>
+                    <div v-if="qrCode.length > 0">
+                        <h1>
+                            Jouw testbewijs
+                        </h1>
+                        <p>
+                            Lees hier welke informatie er in verwerkt is. Open of download de PDF en print hem als  testbewijs.
+                        </p>
+                        <div class="Print__container">
+                            <div class="Print__buttons">
+                                <button
+                                    class="button--full-width"
+                                    @click="openPDF()">
+                                    Open PDF
+                                </button>
+                                <button
+                                    class="button--full-width"
+                                    @click="downloadPDF()">
+                                    Download PDF
+                                </button>
+                            </div>
+                            <div class="Print__image">
+                                <img
+                                    alt="Holder QR code maken"
+                                    width="248"
+                                    src="assets/img/artwork/holder_qrcode_maken_full.svg"/>
+                            </div>
                         </div>
-                        <div class="Print__image">
-                            <img
-                                alt="Holder QR code maken"
-                                width="248"
-                                src="assets/img/artwork/holder_qrcode_maken_full.svg"/>
-                        </div>
+                    </div>
+                    <div v-else>
+                        Geen QR code aanwezig
                     </div>
                 </div>
             </div>
