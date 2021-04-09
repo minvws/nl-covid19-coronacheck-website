@@ -29,11 +29,19 @@ export default {
                 return this.$store.state.testCode;
             },
             set(value) {
+                // editing the test code should reset the process
+                this.resetProcess();
                 this.$store.commit('updateProperty', { key: 'testCode', value })
             }
         }
     },
     methods: {
+        resetProcess() {
+            // brings ui back to step 1
+            this.$store.commit('setTestResultStatus', 'idle');
+            // remove verification code
+            this.$store.commit('updateProperty', { key: 'verificationCode', value: '' })
+        },
         sendTestCode() {
             if (this.isTestCodeValid) {
                 this.getSignedResult(false);
