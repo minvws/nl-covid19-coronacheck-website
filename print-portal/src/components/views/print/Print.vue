@@ -47,10 +47,16 @@ export default {
         },
         async generateQRCode() {
             const dpi = 100;
-            const size = Math.round(QRSizeInCm * cmToInch * dpi);
+            const sizeInPixels = Math.round(QRSizeInCm * cmToInch * dpi);
+            const qrOptions = {
+                width: sizeInPixels,
+                height: sizeInPixels,
+                margin: 0
+            };
             return new Promise((resolve, reject) => {
-                QRCode.toDataURL(this.qrCode, { width: size, height: size })
+                QRCode.toDataURL(this.qrCode, qrOptions)
                     .then(url => {
+                        console.log(url);
                         resolve(url);
                     })
                     .catch(err => {
@@ -65,6 +71,9 @@ export default {
             };
             const doc = new JsPDF(settings);
             const grid = 8;
+            // this is top paper to baseline first text
+            const pageMarginTop = 20;
+            const pageMarginLeft = 17;
             const pageHeight = 297;
             const pageWidth = 210;
             const bottomBarHeight = 30;
@@ -97,51 +106,51 @@ export default {
                     text: 'Je testbewijs',
                     fontWeight: 700,
                     fontSize: 20,
-                    position: [grid, (grid * 2)]
+                    position: [pageMarginLeft, pageMarginTop]
                 }, {
                     text: 'QR-code niet vouwen',
                     fontSize: 8,
-                    position: [(grid + 0.5 * QRSizeInCm * 10), 95],
+                    position: [(pageMarginLeft + 0.5 * QRSizeInCm * 10), 95],
                     properties: { align: 'center' }
                 }, {
                     text: 'Initialen',
                     fontSize: 10,
-                    position: [grid, tableBaseY]
+                    position: [pageMarginLeft, tableBaseY]
                 }, {
                     text: this.testResult.holder.initials,
                     fontWeight: 700,
                     position: [tableBaseCol2X, tableBaseY]
                 }, {
                     text: 'Geboortedag',
-                    position: [grid, (tableBaseY + lineHeight)]
+                    position: [pageMarginLeft, (tableBaseY + lineHeight)]
                 }, {
                     text: '00-00-0000',
                     fontWeight: 700,
                     position: [tableBaseCol2X, (tableBaseY + lineHeight)]
                 }, {
                     text: 'Getest op',
-                    position: [grid, (tableBaseY + 3 * lineHeight)]
+                    position: [pageMarginLeft, (tableBaseY + 3 * lineHeight)]
                 }, {
                     text: '00-00-0000',
                     fontWeight: 700,
                     position: [tableBaseCol2X, (tableBaseY + 3 * lineHeight)]
                 }, {
                     text: 'Geldig tot',
-                    position: [grid, (tableBaseY + 4 * lineHeight)]
+                    position: [pageMarginLeft, (tableBaseY + 4 * lineHeight)]
                 }, {
                     text: '00-00-0000',
                     fontWeight: 700,
                     position: [tableBaseCol2X, (tableBaseY + 4 * lineHeight)]
                 }, {
                     text: 'INSTRUCTIES',
-                    position: [grid, box2BaseY]
+                    position: [pageMarginLeft, box2BaseY]
                 }, {
                     text: `1. Print deze pagina. Dat is je testbewijs
 2. Neem geldige identificatie mee naar de activiteit
 3. Toon de QR-code bij de toegang van je activiteit en eventueel je toegangskaartje.
 
 Let op: Dit is géén toegangsticket voor je evenement`,
-                    position: [grid, (box2BaseY + 2 * lineHeight)],
+                    position: [pageMarginLeft, (box2BaseY + 2 * lineHeight)],
                     width: (pageWidth / 2 - (2 * grid))
                 }, {
                     text: 'Wil je liever jouw testbewijs op je telefoon laten zien? Gebruik dan de code uit de e-mail in CoronaCheck-app.',
@@ -169,9 +178,9 @@ Als je vraag er niet bij staat, stuur dan een email naar support@leadhealthcare.
             doc.rect(0, (pageHeight - bottomBarHeight), pageWidth, bottomBarHeight, 'F');
 
             // images
-            doc.addImage(urlQR, 'PNG', grid, (grid * 3), 70, 70);
+            doc.addImage(urlQR, 'PNG', pageMarginLeft, (grid * 3), 70, 70);
             doc.addImage(createImageOnTheFly('assets/img/pdf/artwork.png'), 'PNG', box4BaseX, box2BaseY - 5, 52, 44);
-            doc.addImage(createImageOnTheFly('assets/img/pdf/coronacheck.png'), 'PNG', grid, (pageHeight - bottomBarHeight + 7.5), 70, 15);
+            doc.addImage(createImageOnTheFly('assets/img/pdf/coronacheck.png'), 'PNG', pageMarginLeft, (pageHeight - bottomBarHeight + 7.5), 70, 15);
             doc.addImage(createImageOnTheFly('assets/img/pdf/fold-instructions.PNG'), 'PNG', 65, (box2BaseY - 10), 35, 10);
 
             // lines
