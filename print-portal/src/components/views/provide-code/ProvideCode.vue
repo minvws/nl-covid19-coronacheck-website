@@ -22,7 +22,7 @@ export default {
     },
     computed: {
         showVerificationCodeModule() {
-            return this.testResultStatus === 'verification_required';
+            return this.testResultStatus === 'verification_required' || this.testResultStatus === 'complete';
         },
         testCode() {
             return this.$store.state.testCode;
