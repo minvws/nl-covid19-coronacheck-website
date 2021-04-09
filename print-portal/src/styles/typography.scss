@@ -5,6 +5,7 @@ body {
     font-family: $font-main;
     font-size: 16px;
     line-height: calc(22/16);
+    color: #4F4F4F;
 }
 
 h1 {
@@ -13,6 +14,7 @@ h1 {
     line-height: calc(39/32);
     margin-top: 0;
     margin-bottom: 24px;
+    color: $black-1;
 }
 
 h2 {
@@ -21,4 +23,5 @@ h2 {
     line-height: 1;
     margin-top: 0;
     margin-bottom: 20px;
+    color: $black-1;
 }

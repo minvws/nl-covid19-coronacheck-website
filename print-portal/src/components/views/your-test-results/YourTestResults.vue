@@ -50,18 +50,25 @@ export default {
                 :callback-back="goBack"/>
             <div class="section">
                 <div class="section-block">
-                    <h1>
-                        Jouw negatieve testresultaat
-                    </h1>
-                    <p v-if="testResult">
-                        Je hebt 1 nieuw negatief testresultaat (geen corona). Maak van dit resultaat een QR-code. Dat is jouw bewijs.
-                    </p>
-                    <div
-                        v-if="testResult"
-                        class="YourTestResults__results">
-                        <TestResult
-                            :testResult="testResult"/>
+                    <div v-if="testResult">
+                        <h1>
+                            Jouw negatieve testresultaat
+                        </h1>
+                        <p>
+                            Je hebt 1 nieuw negatief testresultaat (geen corona). Maak van dit resultaat een QR-code. Dat is jouw bewijs.
+                        </p>
+                        <div class="YourTestResults__header">
+                            Opgehaald testresultaat
+                            <div class="info-button">
+                                <router-link :to="{ name: 'HelpTestResult' }"/>
+                            </div>
+                        </div>
+                        <div class="YourTestResults__results">
+                            <TestResult
+                                :testResult="testResult"/>
+                        </div>
                     </div>
+
                     <div v-else>
                         Geen testresultaat bekend
                     </div>
@@ -81,6 +88,12 @@ export default {
 
 <style lang="scss">
 .YourTestResults {
+
+    .YourTestResults__header {
+        position: relative;
+        margin: 48px 0 16px 0;
+        font-weight: 700;
+    }
 
     .YourTestResults__footer {
         margin-top: 70px;
