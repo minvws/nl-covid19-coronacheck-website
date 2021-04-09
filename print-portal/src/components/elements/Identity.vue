@@ -11,16 +11,16 @@ export default {
     <div class="Identity">
         <div class="logo-nederland">
             <img
-                alt="todo"
+                alt="Label Rijksoverheid"
                 width="45"
-                src="assets/img/temp/nederland.png"/>
+                src="assets/img/rijksoverheid/label_ministerie.svg"/>
         </div>
         <div class="pagewrap">
             <img
                 class="Identity__image"
-                alt="todo"
-                height="300"
-                src="assets/img/temp/corona-check.png"/>
+                alt="Holder QR maken"
+                width="356"
+                src="assets/img/artwork/holder_qrcode_maken.svg"/>
         </div>
     </div>
 </template>
@@ -31,7 +31,7 @@ export default {
 .Identity {
     background: $background-color-1;
     position: relative;
-    height: 300px;
+    height: 250px;
     display: flex;
     align-items: flex-end;
 
@@ -42,13 +42,17 @@ export default {
         transform: translateX(-50%);
     }
 
+    .Identity__image {
+        display: block;
+        height: auto;
+        margin-left: 60px;
+    }
+
     @include mobile() {
         justify-content: center;
 
         .Identity__image {
-            display: block;
-            width: 350px;
-            height: auto;
+
         }
     }
 }

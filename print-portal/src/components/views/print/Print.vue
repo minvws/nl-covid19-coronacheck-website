@@ -243,8 +243,9 @@ Als je vraag er niet bij staat, stuur dan een email naar support@leadhealthcare.
                         </div>
                         <div class="Print__image">
                             <img
-                                alt="todo"
-                                src="assets/img/temp/corona-check-print-qr-code.png"/>
+                                alt="Holder QR code maken"
+                                width="248"
+                                src="assets/img/artwork/holder_qrcode_maken_full.svg"/>
                         </div>
                     </div>
                 </div>
@@ -259,11 +260,12 @@ Als je vraag er niet bij staat, stuur dan een email naar support@leadhealthcare.
 .Print {
 
     .Print__container {
-        margin-top: 60px;
+        margin-top: 40px;
         display: flex;
 
         .Print__buttons {
-            width: 50%;
+            width: 212px;
+            margin-top: 40px;
 
             button {
                 margin-bottom: 24px;
@@ -271,10 +273,13 @@ Als je vraag er niet bij staat, stuur dan een email naar support@leadhealthcare.
         }
 
         .Print__image {
-            width: 50%;
+            width: calc(100% - 212px);
+            display: flex;
+            justify-content: flex-end;
 
             img {
                 width: 100%;
+                margin-right: -60px;
             }
         }
     }

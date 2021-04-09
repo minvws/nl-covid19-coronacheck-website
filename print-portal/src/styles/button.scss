@@ -10,9 +10,15 @@ button {
     cursor: pointer;
     outline: none;
     transition: background 0.3s ease;
+    letter-spacing: -0.4px;
+    font-family: $font-main;
+    white-space: nowrap;
 
     &.button--full-width {
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &.button--inactive {
