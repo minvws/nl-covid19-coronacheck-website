@@ -1,10 +1,9 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import _base from './modules/_base-module';
+import testProviders from './modules/testProviders';
 
 Vue.use(Vuex)
-
-import testProviders from "./modules/testProviders";
 
 const state = {
     // todo remove before publication

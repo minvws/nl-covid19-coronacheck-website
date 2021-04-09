@@ -14,8 +14,12 @@ class Holder {
         this.lastNameInitial = lastNameInitial;
     }
 
+    get birthDayString() {
+        return numberTool.getLeadingZero(this.birthDay) + ' ' + dateTool.monthNumberToMonthName(Number(this.birthMonth));
+    }
+
     get string() {
-        return this.firstNameInitial + ' ' + this.lastNameInitial + ' ' + numberTool.getLeadingZero(this.birthDay) + ' ' + dateTool.monthNumberToMonthName(Number(this.birthMonth));
+        return this.firstNameInitial + ' ' + this.lastNameInitial + ' ' + this.birthDayString;
     }
 
     get initials() {

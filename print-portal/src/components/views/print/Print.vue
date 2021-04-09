@@ -3,6 +3,7 @@ import Navigation from '@/components/elements/Navigation';
 import QRCode from 'qrcode'
 import { jsPDF as JsPDF } from 'jspdf';
 import montserrat from '@/assets/fontAsBase64';
+import dateTool from '@/tools/date';
 
 const cmToInch = 0.393700787;
 const QRSizeInCm = 7;
@@ -56,7 +57,6 @@ export default {
             return new Promise((resolve, reject) => {
                 QRCode.toDataURL(this.qrCode, qrOptions)
                     .then(url => {
-                        console.log(url);
                         resolve(url);
                     })
                     .catch(err => {
@@ -70,22 +70,24 @@ export default {
                 format: 'a4'
             };
             const doc = new JsPDF(settings);
-            const grid = 8;
+            const pageHeight = 297;
+            const pageWidth = 210;
             // this is top paper to baseline first text
             const pageMarginTop = 20;
             const pageMarginLeft = 17;
-            const pageHeight = 297;
-            const pageWidth = 210;
+            const lineHeight = 6;
+            const lineHeightSmall = 5.5;
             const bottomBarHeight = 30;
-            const box2BaseY = (pageHeight / 2) + (2 * grid);
-            const box4BaseX = (pageWidth / 2) + grid;
-            const box4BaseY = pageHeight - bottomBarHeight + grid;
-            const tableBaseY = 110;
-            const tableBaseCol2X = 70;
-            const lineHeight = 7;
-            const lineHeightSmall = 5;
-            const table2Padding = 8;
-            const table2BaseY = box2BaseY + 55;
+            const qrCodeY = 30;
+            const tableBaseY = 112;
+            const tableBaseCol2X = 48;
+            const instructionsBaseY = (pageHeight / 2) + 17;
+            const questionsTableBaseX = (pageWidth / 2) + 10;
+            const questionsTableBaseY = (pageHeight / 2) + 53;
+            const questionsTablePadding = 8;
+            const footerBaseX = questionsTableBaseX;
+            const footerBaseY = pageHeight - bottomBarHeight + 10;
+            const borderRadius = 6;
             // init
             doc.addFileToVFS('montserrat.ttf', montserrat.regular);
             doc.addFileToVFS('montserrat-bold.ttf', montserrat.bold);
@@ -124,14 +126,14 @@ export default {
                     text: 'Geboortedag',
                     position: [pageMarginLeft, (tableBaseY + lineHeight)]
                 }, {
-                    text: '00-00-0000',
+                    text: this.testResult.holder.birthDayString,
                     fontWeight: 700,
                     position: [tableBaseCol2X, (tableBaseY + lineHeight)]
                 }, {
                     text: 'Getest op',
                     position: [pageMarginLeft, (tableBaseY + 3 * lineHeight)]
                 }, {
-                    text: '00-00-0000',
+                    text: dateTool.dateToString(this.testResult.sampleDate),
                     fontWeight: 700,
                     position: [tableBaseCol2X, (tableBaseY + 3 * lineHeight)]
                 }, {
@@ -143,33 +145,38 @@ export default {
                     position: [tableBaseCol2X, (tableBaseY + 4 * lineHeight)]
                 }, {
                     text: 'INSTRUCTIES',
-                    position: [pageMarginLeft, box2BaseY]
+                    fontWeight: 700,
+                    position: [pageMarginLeft, instructionsBaseY]
                 }, {
-                    text: `1. Print deze pagina. Dat is je testbewijs
-2. Neem geldige identificatie mee naar de activiteit
-3. Toon de QR-code bij de toegang van je activiteit en eventueel je toegangskaartje.
+                    text: `1. Print dit testbewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)
 
-Let op: Dit is géén toegangsticket voor je evenement`,
-                    position: [pageMarginLeft, (box2BaseY + 2 * lineHeight)],
-                    width: (pageWidth / 2 - (2 * grid))
+2. Neem een geldig identiteitsbewijs mee naar de activiteit
+
+3. Laat het testbewijs (en eventueel ook je toegangskaartje) zien bij de ingang
+
+
+Let op: dit is géén toegangsticket voor je activiteit`,
+                    position: [pageMarginLeft, (instructionsBaseY + 3 * lineHeight)],
+                    width: (pageWidth / 2 - (2 * pageMarginLeft))
                 }, {
-                    text: 'Wil je liever jouw testbewijs op je telefoon laten zien? Gebruik dan de code uit de e-mail in CoronaCheck-app.',
+                    text: 'Laat je jouw testbewijs liever op je telefoon zien? Gebruik dan de code uit de e-mail in de CoronaCheck-app',
                     fontWeight: 400,
                     fontSize: 10,
                     lineHeight: lineHeightSmall,
-                    position: [box4BaseX, box4BaseY],
-                    width: (pageWidth / 2 - (2 * grid))
+                    position: [footerBaseX, footerBaseY],
+                    width: (pageWidth / 2 - (2 * pageMarginLeft))
                 }, {
-                    text: 'Vragen?',
+                    text: 'VRAGEN?',
                     fontWeight: 700,
                     fontSize: 10,
-                    position: [(box4BaseX + table2Padding), table2BaseY]
+                    position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding)]
                 }, {
-                    text: `Bekijk de Meestgestelde vragen op www.coronaCheck.nl
-Als je vraag er niet bij staat, stuur dan een email naar support@leadhealthcare.nl of bel naar 085-0658002.`,
+                    text: `Bekijk de meestgestelde vragen op www.CoronaCheck.nl
+                    
+Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                     lineHeight: lineHeightSmall,
-                    position: [(box4BaseX + table2Padding), (table2BaseY + 2 * lineHeightSmall)],
-                    width: (pageWidth / 2 - (2 * grid) - (2 * table2Padding))
+                    position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding + 2 * lineHeightSmall)],
+                    width: (pageWidth / 2 - 20 - (2 * questionsTablePadding))
                 }
             ];
 
@@ -177,20 +184,20 @@ Als je vraag er niet bij staat, stuur dan een email naar support@leadhealthcare.
             doc.setFillColor(239, 247, 249);
             doc.rect(0, (pageHeight - bottomBarHeight), pageWidth, bottomBarHeight, 'F');
 
+            // questions table (do before the artwork image which should be on top
+            doc.setFillColor(239, 247, 249);
+            doc.roundedRect(questionsTableBaseX, questionsTableBaseY, (pageWidth / 2 - 20), 60, borderRadius, borderRadius, 'F');
+
             // images
-            doc.addImage(urlQR, 'PNG', pageMarginLeft, (grid * 3), 70, 70);
-            doc.addImage(createImageOnTheFly('assets/img/pdf/artwork.png'), 'PNG', box4BaseX, box2BaseY - 5, 52, 44);
-            doc.addImage(createImageOnTheFly('assets/img/pdf/coronacheck.png'), 'PNG', pageMarginLeft, (pageHeight - bottomBarHeight + 7.5), 70, 15);
-            doc.addImage(createImageOnTheFly('assets/img/pdf/fold-instructions.PNG'), 'PNG', 65, (box2BaseY - 10), 35, 10);
+            doc.addImage(urlQR, 'PNG', pageMarginLeft, qrCodeY, 70, 70);
+            doc.addImage(createImageOnTheFly('assets/img/pdf/artwork.png'), 'PNG', (questionsTableBaseX + 17), (pageHeight / 2 + 14), 52, 44);
+            doc.addImage(createImageOnTheFly('assets/img/pdf/coronacheck.png'), 'PNG', 10, (pageHeight - bottomBarHeight + 8), 70, 15);
+            doc.addImage(createImageOnTheFly('assets/img/pdf/fold-instructions.PNG'), 'PNG', 65, (instructionsBaseY - 6), 35, 10);
 
             // lines
-            doc.setDrawColor(200, 200, 200);
+            doc.setDrawColor(224, 224, 223);
             doc.line(0, (pageHeight / 2), pageWidth, (pageHeight / 2));
             doc.line((pageWidth / 2), 0, (pageWidth / 2), pageHeight);
-
-            // table border
-            doc.setDrawColor(0, 0, 0);
-            doc.rect(box4BaseX, table2BaseY - table2Padding, (pageWidth / 2 - (2 * grid)), 50, 'S');
 
             // texts
             for (const textItem of textItems) {

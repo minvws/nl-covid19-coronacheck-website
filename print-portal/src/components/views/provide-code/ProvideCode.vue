@@ -91,7 +91,6 @@ export default {
                         } else {
                             this.$store.commit('setTestResultStatus', 'unknown_error')
                         }
-
                         if (this.testResultStatus === 'complete') {
                             this.testCodeStatus.error = '';
                             const testResult = new TestResult(payload.result);
