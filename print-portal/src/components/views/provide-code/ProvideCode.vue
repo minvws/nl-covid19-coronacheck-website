@@ -45,6 +45,9 @@ export default {
                 this.verificationCodeStatus.expired = true;
             }, 10000)
         },
+        expire() {
+            this.verificationCodeStatus.expired = true;
+        },
         async getSignedResult(includeVerificationCode) {
             return new Promise((resolve, reject) => {
                 let responseForSignedResult, data;
@@ -76,6 +79,7 @@ export default {
                         }
 
                         if (this.testResultStatus === 'complete') {
+                            this.testCodeStatus.error = '';
                             const testResult = new TestResult(payload.result);
                             this.$store.commit('setTestResult', testResult);
                             this.$store.commit('setSignature', response.data);
@@ -95,7 +99,17 @@ export default {
                         this.$store.commit('setTestResultStatus', responseForSignedResult);
 
                         if (this.testResultStatus === 'verification_required') {
-                            this.startExpirationTimer();
+                            this.testCodeStatus.error = '';
+                            if (includeVerificationCode) {
+                                this.verificationCodeStatus.error = 'Geen geldige verificatie code';
+                                this.expire();
+                            } else {
+                                this.startExpirationTimer();
+                            }
+                        }
+
+                        if (this.testResultStatus === 'invalid_token') {
+                            this.testCodeStatus.error = 'Geen geldige code';
                         }
                     }
                 })
