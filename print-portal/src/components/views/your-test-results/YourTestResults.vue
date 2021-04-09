@@ -37,7 +37,7 @@ export default {
             }
         },
         goBack() {
-            this.$router.push({ name: 'Home' });
+            this.$router.push({ name: 'ProvideCode' });
         }
     }
 }
