@@ -49,7 +49,7 @@ Testbewijs – Het testbewijs (in de vorm van een QR-code) bevat een deel van de
 
 Digitale handtekening – deze wordt geplaatst om zeker te weten dat het testbewijs niet kan worden aangepast. De digitale handtekening is op zichzelf geen persoonsgegeven binnen het proces, maar het tekenen van een testresultaat is wel noodzakelijk voor de werking van CoronaCheck. 
 
-Ook het IP-adres wordt gebruikt. Dit is inherent aan het gebruik van internet en IP-technologie en is nodig om technisch gezien een verbinding op te bouwen tussen de server van het teststation en uw telefoon. Het IP-adres wordt enkel verwerkt voor beheers- en beveiligingsdoeleinden. Het IP-adres wordt voor ontvangst van op de signing server ‘gestript’ door de provider Prolocation.
+Ook het IP-adres wordt gebruikt. Dit is inherent aan het gebruik van internet en IP-technologie en is nodig om technisch gezien een verbinding op te bouwen tussen de server van het teststation en uw telefoon. Het IP-adres wordt enkel verwerkt voor beheers- en beveiligingsdoeleinden. Het IP-adres wordt voor ontvangst van de signing server ‘gestript’ door de provider Prolocation B.V.
 
 In de CoronaCheck Scanner wordt het testbewijs gescand. Daarbij wordt getoond of de drager ervan beschikt over een negatief testbewijs dat nog geldig is. CoronaCheck Scanner verwerkt geen persoonsgegevens.
 
@@ -63,7 +63,7 @@ De met CoronaCheck verzamelde gegevens worden uitsluitend gebruikt voor de in de
 
 ### 6. Wie heeft toegang tot de gegevens?
 
-Het digitaal tekenen van het testbewijs gebeurt bij Prolocation B.V. Prolocation verwerkt hiervoor het IP-adres in opdracht van het ministerie van Volksgezondheid, Welzijn en Sport en heeft in AVG termen de rol van verwerker. Met Prolocation B.V. zijn passende afspraken gemaakt om de bescherming van persoonsgegevens te waarborgen. 
+Het digitaal tekenen van het testbewijs gebeurt bij Prolocation B.V. Prolocation B.V. verwerkt hiervoor het IP-adres in opdracht van het ministerie van Volksgezondheid, Welzijn en Sport en heeft in AVG termen de rol van verwerker. Met Prolocation B.V. zijn passende afspraken gemaakt om de bescherming van persoonsgegevens te waarborgen. 
 
 ### 7. Hoe lang worden gegevens bewaard?
 
