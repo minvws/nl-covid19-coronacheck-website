@@ -28,4 +28,4 @@ showContact: true
 
 Indien een bezoeker geen smartphone heeft, is het laten zien van de testuitslag mogelijk als tijdelijke oplossing. Deze uitslag hoeft niet gescand te worden. Er wordt gewerkt aan een structurele oplossing.
 
-    Kijk voor meer informatie op [www.coronacheck.nl/scanner](/nl/scanner).
+Kijk voor meer informatie op [www.coronacheck.nl/scanner](/nl/scanner).
