@@ -14,7 +14,7 @@ showContact: true
     Druk op de knop ‘Start Scannen’ en vraag de bezoeker de QR-code in de CoronaCheck-app te laten zien. Deze QR-code geldt als testbewijs en kan veilig op afstand uitgelezen worden.
 
 2. **Scan de QR-code**
-    Richt de camera van je telefoon op het testbewijs op de telefoon van de bezoeker en scan de QR-code.
+    Richt de camera van je telefoon op het testbewijs op de telefoon van de bezoeker en scan de QR-code. Onder de QR-code van de bezoeker zie je een animatie van een fietser. Als de fietsende persoon stil staat betekent dit dat de bezoeker een schermafbeelding van de QR-code laat zien. Vraag de bezoeker dan de QR-code in de CoronaCheck-app te laten zien. 
 
 3. **Groen scherm**
     Groen scherm? De bezoeker heeft een geldige negatieve testuitslag en mag naar binnen. Het kan zijn dat de bezoeker ook een toegangskaartje nodig heeft. 
