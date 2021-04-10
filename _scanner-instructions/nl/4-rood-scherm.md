@@ -13,3 +13,5 @@ Rood scherm? Dat betekent niet dat de bezoeker corona heeft. Het betekent alleen
 
 
 Er is altijd een groen scherm nodig voor toegang tot locaties waar een testbewijs nodig is. Heeft de bezoeker geen (geldige) QR-code? Dan kun je de bezoeker niet binnenlaten.
+
+Indien een bezoeker geen smartphone heeft, is het laten zien van de testuitslag mogelijk als tijdelijke oplossing. Deze uitslag hoeft niet gescand te worden. Er wordt gewerkt aan een structurele oplossing.
