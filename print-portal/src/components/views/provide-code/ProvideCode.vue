@@ -5,6 +5,7 @@ import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
 import axios from 'axios';
 import TestResult from '@/classes/TestResult';
+import luhnModN from '@/tools/luhn-mod-n';
 
 export default {
     name: 'ProvideCode',
@@ -31,8 +32,11 @@ export default {
         verificationCode() {
             return this.$store.state.verificationCode;
         },
+        numberOfHyphens() {
+            return (this.testCode.match(/-/g) || []).length;
+        },
         testProviderIdentifier() {
-            return this.testCode.split('-')[0];
+            return this.numberOfHyphens > 0 ? this.testCode.split('-')[0] : null;
         },
         testProvider() {
             if (this.testProviderIdentifier) {
@@ -42,14 +46,29 @@ export default {
             }
         },
         token() {
-            return this.testCode.split('-')[1];
+            return this.numberOfHyphens > 0 ? this.testCode.split('-')[1] : null;
+        },
+        checksumSet() {
+            return this.numberOfHyphens > 1 ? this.testCode.split('-')[2] : null;
+        },
+        checkSum() {
+            return this.checksumSet ? this.checksumSet[0] : null;
+        },
+        luhn() {
+            return luhnModN.generateCheckCharacter(this.token.toUpperCase());
+        },
+        checkSumIsValid() {
+            return this.checkSum ? (this.luhn === this.checkSum) : false;
         },
         testResultStatus() {
             return this.$store.state.testResultStatus;
         },
         isTestCodeValid() {
-            // todo refine
-            return this.testCode.length > 3 && this.token.length > 1 && this.testProvider !== null && this.testProvider !== undefined;
+            return this.numberOfHyphens === 2 &&
+                this.testProviderIdentifier.length === 3 &&
+                (this.testProvider !== null && this.testProvider !== undefined) &&
+                this.checksumSet.length === 2 &&
+                this.checkSumIsValid;
         }
     },
     methods: {

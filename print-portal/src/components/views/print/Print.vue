@@ -192,9 +192,9 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
             // use slow image compression after failing opening pdf on Chrome
             const imageSettings = [null, 'SLOW']
             doc.addImage(urlQR, 'PNG', pageMarginLeft, qrCodeY, 70, 70, ...imageSettings);
-            doc.addImage(createImageOnTheFly('assets/img/pdf/artwork.png'), 'PNG', (questionsTableBaseX + 17), (pageHeight / 2 + 14), 52, 44, ...imageSettings);
-            doc.addImage(createImageOnTheFly('assets/img/pdf/coronacheck.png'), 'PNG', 10, (pageHeight - bottomBarHeight + 8), 70, 15, ...imageSettings);
-            doc.addImage(createImageOnTheFly('assets/img/pdf/fold-instructions.PNG'), 'PNG', 65, (instructionsBaseY - 6), 35, 10, ...imageSettings);
+            doc.addImage(createImageOnTheFly('./assets/img/pdf/artwork.png'), 'PNG', (questionsTableBaseX + 17), (pageHeight / 2 + 14), 52, 44, ...imageSettings);
+            doc.addImage(createImageOnTheFly('./assets/img/pdf/coronacheck.png'), 'PNG', 10, (pageHeight - bottomBarHeight + 8), 70, 15, ...imageSettings);
+            doc.addImage(createImageOnTheFly('./assets/img/pdf/fold-instructions.PNG'), 'PNG', 65, (instructionsBaseY - 6), 35, 10, ...imageSettings);
 
             // lines
             doc.setDrawColor(224, 224, 223);
