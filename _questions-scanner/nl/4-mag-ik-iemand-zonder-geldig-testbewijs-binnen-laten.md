@@ -14,6 +14,6 @@ featuredHome: true
 featuredHomeIndex: 2
 featuredHomeIcon: app-touch
 ---
-Nee, de bezoeker moet altijd een geldig testbewijs laten zien. De geldigheid van het testbewijs kan gecontroleerd worden met behulp van de CoronaCheck Scanner.
+De bezoeker moet altijd een geldig testbewijs laten zien. De geldigheid van het testbewijs kan gecontroleerd worden met behulp van de CoronaCheck Scanner.
 
-Ook tijdens de pilots testen voor toegang in april is een testbewijs verplicht. Aangezien het papieren testbewijs nog in ontwikkeling is, is het op dit moment alleen mogelijk om met behulp van het testbewijs in de CoronaCheck-app deel te nemen aan de pilots. Zodra het papieren testbewijs beschikbaar komt, wordt hierover gecommuniceerd. 
+**Let op:** Tijdens de pilots testen voor toegang is het voor bezoekers zonder smartphone, tijdelijk mogelijk om je testuitslag te laten zien. Deze uitslag hoeft niet gescand te worden. Zodra het papieren testbewijs beschikbaar komt, wordt hierover gecommuniceerd. 

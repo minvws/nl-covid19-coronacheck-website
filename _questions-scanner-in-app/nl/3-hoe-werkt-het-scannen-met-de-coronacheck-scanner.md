@@ -26,6 +26,6 @@ showContact: true
     - Vraag de bezoeker de app volledig af te sluiten en opnieuw op te starten. Scan daarna opnieuw de QR-code.
     - Blijft er een rood scherm komen, terwijl de bezoeker wel een negatieve testuitslag heeft? Stuur de bezoeker naar onze helpdesk, telefoonnummer: <a href="tel:0800-1421">0800-1421</a>.
 
-    Er is altijd een groen scherm nodig voor toegang tot locaties waar een testbewijs nodig is. Heeft de bezoeker geen (geldige) QR-code? Dan kun je de bezoeker niet binnenlaten. 
+Indien een bezoeker geen smartphone heeft, is het laten zien van de testuitslag mogelijk als tijdelijke oplossing. Deze uitslag hoeft niet gescand te worden. Er wordt gewerkt aan een structurele oplossing.
 
-    Kijk voor meer informatie op [www.coronacheck.nl/scanner](/nl/scanner).
+Kijk voor meer informatie op [www.coronacheck.nl/scanner](/nl/scanner).
