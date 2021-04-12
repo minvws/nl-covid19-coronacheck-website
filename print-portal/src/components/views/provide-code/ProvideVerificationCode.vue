@@ -1,6 +1,9 @@
 <script>
+import Translate from '../../elements/Translate';
+
 export default {
     name: 'ProvideVerificationCode',
+    components: { Translate },
     props: {
         verificationCodeStatus: {
             type: Object,
@@ -11,7 +14,6 @@ export default {
             required: true
         }
     },
-    components: {},
     computed: {
         verificationCode: {
             get() {
@@ -66,8 +68,8 @@ export default {
     <div class="ProvideVerificationCode">
         <div class="input__set">
             <div class="input__label">
-                <b>Verificatie code</b><br>
-                Je krijgt een code in een sms of e-mail
+                <b><Translate :word="'verificationCode'"/></b><br>
+                <Translate :word="'verificationCodeDirection'"/>
             </div>
             <input
                 v-model="verificationCode"
@@ -82,7 +84,7 @@ export default {
                     v-if="verificationCodeStatus.expired"
                     @click="requestNewVerificationCode()"
                     class="button-modest">
-                    Stuur opnieuw
+                    <Translate :word="'sendAgain'"/>
                 </div>
             </div>
         </div>
@@ -90,7 +92,7 @@ export default {
             @click="sendVerificationCode()"
             type="button"
             :class="{'button--inactive': !isVerificationCodeValid}">
-            Volgende
+            <Translate :word="'next'"/>
         </button>
     </div>
 </template>

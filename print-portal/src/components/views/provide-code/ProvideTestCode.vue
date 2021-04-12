@@ -1,7 +1,9 @@
 <script>
+import Translate from '../../elements/Translate';
+
 export default {
     name: 'ProvideTestCode',
-    components: {},
+    components: { Translate },
     props: {
         testCodeStatus: {
             type: Object,
@@ -55,7 +57,7 @@ export default {
     <div class="ProvideTestCode">
         <div class="input__set">
             <div class="input__label">
-                <b>Unieke code</b>
+                <strong><Translate :word="'uniqueCode'"/></strong>
             </div>
             <input
                 v-model="testCode"
@@ -72,7 +74,7 @@ export default {
             @click="sendTestCode()"
             type="button"
             :class="{'button--inactive': !isTestCodeValid}">
-            Volgende
+            <Translate :word="'next'"/>
         </button>
     </div>
 </template>

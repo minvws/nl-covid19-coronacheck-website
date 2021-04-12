@@ -1,5 +1,6 @@
 <script>
 import PreferMobile from '@/components/elements/PreferMobile';
+import Translate from '@/components/elements/Translate';
 import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
 import axios from 'axios';
@@ -7,7 +8,7 @@ import TestResult from '@/classes/TestResult';
 
 export default {
     name: 'ProvideCode',
-    components: { ProvideVerificationCode, ProvideTestCode, PreferMobile },
+    components: { Translate, ProvideVerificationCode, ProvideTestCode, PreferMobile },
     data () {
         return {
             testCodeStatus: {
@@ -170,11 +171,10 @@ export default {
             <div class="section">
                 <div class="section-block">
                     <h1>
-                        Code invullen
+                        <Translate :word="'enterCode'"/>
                     </h1>
                     <p>
-                        Vul de code in die je van je testlocatie hebt gekregen. Of klik op de link in de e-mail die je van je
-                        testlocatie hebt ontvangen.
+                        <Translate :word="'testCodeDirection'"/>
                     </p>
 
                     <form autocomplete="off">

@@ -31,11 +31,11 @@ const getters = {
 const actions = {};
 
 const mutations = {
-    init(state, set) {
+    init(state, set, Model) {
         state.all = [];
         for (const item of set) {
             if (item) {
-                state.all.push(item);
+                state.all.push(new Model(item));
             }
         }
     },

@@ -2,6 +2,14 @@
     font-family: 'RO';
     src: url('/assets/fonts/RO-SansWebText-Regular.woff') format('woff'),
          url('/assets/fonts/RO-SansWebText-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'RO';
+    src: url('/assets/fonts/RO-SansWebText-Bold.woff') format('woff'),
+    url('/assets/fonts/RO-SansWebText-Bold.woff2') format('woff2');
+    font-weight: 700;
 }
 
 $font-main: 'RO', sans-serif;

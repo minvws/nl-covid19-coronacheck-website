@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import _base from './modules/_base-module';
+import languages from './modules/languages';
 import testProviders from './modules/testProviders';
 
 Vue.use(Vuex)
@@ -43,6 +44,7 @@ export default new Vuex.Store({
     mutations,
     actions: {},
     modules: {
+        languages,
         testProviders
     }
 })

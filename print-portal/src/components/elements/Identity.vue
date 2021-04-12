@@ -1,7 +1,9 @@
 <script>
+import LanguagePicker from './language/LanguagePicker';
+
 export default {
     name: 'Identity',
-    components: {},
+    components: { LanguagePicker },
     computed: {},
     methods: {}
 }
@@ -22,6 +24,7 @@ export default {
                 width="356"
                 src="assets/img/artwork/holder_qrcode_maken.svg"/>
         </div>
+        <LanguagePicker/>
     </div>
 </template>
 
@@ -46,6 +49,12 @@ export default {
         display: block;
         height: auto;
         margin-left: 60px;
+    }
+
+    .LanguagePicker {
+        position: absolute;
+        right: 30px;
+        top: 30px;
     }
 
     @include mobile() {

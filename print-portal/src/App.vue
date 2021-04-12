@@ -1,10 +1,16 @@
 <script>
 import Identity from '@/components/elements/Identity';
 import axios from 'axios';
+import languages from '@/data/languages';
 
 export default {
     components: { Identity },
     methods: {
+        init() {
+            this.getHolderConfig();
+            // todo this should be done based on oneskyapp
+            this.addLanguages();
+        },
         getHolderConfig() {
             const url = 'https://api-ct.bananenhalen.nl/v1/holder/config/';
             axios({
@@ -18,10 +24,14 @@ export default {
             }).catch((error) => {
                 console.log(error);
             })
+        },
+        addLanguages() {
+            this.$store.commit('languages/init', languages);
+            this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
         }
     },
     mounted() {
-        this.getHolderConfig();
+        this.init();
     }
 }
 </script>
