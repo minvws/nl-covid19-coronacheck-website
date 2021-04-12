@@ -31,8 +31,8 @@ export default {
         },
         downloadPDF() {
             if (this.qrCode.length > 0) {
-                this.generateQRCode().then((urlQR) => {
-                    const document = this.getDocument(urlQR);
+                this.generateQRCode().then(async (urlQR) => {
+                    const document = await this.getDocument(urlQR);
                     const documentName = 'corona-check-test.pdf';
                     document.save(documentName);
                 })
@@ -43,8 +43,8 @@ export default {
         },
         openPDF() {
             if (this.qrCode.length > 0) {
-                this.generateQRCode().then((urlQR) => {
-                    const document = this.getDocument(urlQR);
+                this.generateQRCode().then(async (urlQR) => {
+                    const document = await this.getDocument(urlQR);
                     this.open(document);
                 })
             } else {
@@ -69,7 +69,16 @@ export default {
                     })
             })
         },
-        getDocument(urlQR) {
+        async createImageOnTheFly(src) {
+            return new Promise((resolve, reject) => {
+                const img = document.createElement('img');
+                img.onload = () => {
+                    resolve(img);
+                }
+                img.src = src;
+            })
+        },
+        async getDocument(urlQR) {
             const settings = {
                 orientation: 'p',
                 format: 'a4'
@@ -101,12 +110,6 @@ export default {
             doc.setFont('montserrat');
             const regular = ['montserrat', 'normal', 400];
             const bold = ['montserrat', 'normal', 700];
-
-            const createImageOnTheFly = function(src) {
-                const img = document.createElement('img');
-                img.src = src;
-                return img;
-            }
 
             const textItems = [
                 {
@@ -191,10 +194,14 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
             // images
             // use slow image compression after failing opening pdf on Chrome
             const imageSettings = [null, 'SLOW']
+            const imageArtwork = await this.createImageOnTheFly('assets/img/pdf/artwork.png');
+            const imageCoronacheck = await this.createImageOnTheFly('assets/img/pdf/coronacheck.png');
+            const imageFoldInstructions = await this.createImageOnTheFly('assets/img/pdf/fold-instructions.png');
+            console.log(imageArtwork);
             doc.addImage(urlQR, 'PNG', pageMarginLeft, qrCodeY, 70, 70, ...imageSettings);
-            doc.addImage(createImageOnTheFly('assets/img/pdf/artwork.png'), 'PNG', (questionsTableBaseX + 17), (pageHeight / 2 + 14), 52, 44, ...imageSettings);
-            doc.addImage(createImageOnTheFly('assets/img/pdf/coronacheck.png'), 'PNG', 10, (pageHeight - bottomBarHeight + 8), 70, 15, ...imageSettings);
-            doc.addImage(createImageOnTheFly('assets/img/pdf/fold-instructions.PNG'), 'PNG', 65, (instructionsBaseY - 6), 35, 10, ...imageSettings);
+            doc.addImage(imageArtwork, 'PNG', (questionsTableBaseX + 17), (pageHeight / 2 + 14), 52, 44, ...imageSettings);
+            doc.addImage(imageCoronacheck, 'PNG', 10, (pageHeight - bottomBarHeight + 8), 70, 15, ...imageSettings);
+            doc.addImage(imageFoldInstructions, 'PNG', 65, (instructionsBaseY - 6), 35, 10, ...imageSettings);
 
             // lines
             doc.setDrawColor(224, 224, 223);
