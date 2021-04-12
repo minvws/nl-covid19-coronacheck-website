@@ -89,12 +89,12 @@ export default {
                         <p>
                             Er is geen negatieve testuitslag beschikbaar.
                         </p>
-                        <div class="YourTestResults__footer">
+                        <p>
                             <button
                                 @click="goBack()">
                                 Naar home
                             </button>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
