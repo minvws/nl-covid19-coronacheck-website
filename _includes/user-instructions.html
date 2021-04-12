@@ -1,0 +1,20 @@
+<h2 class="instructions__title">Hoe werkt het?</h2>
+  <div class="instructions">
+  
+  {% assign user_instructions = site.user-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}
+  {% for instruction in user_instructions %}
+  <article class="instructions__step">
+    <img
+      src="{{ site.baseurl }}/img/{{ instruction.graphic }}"
+      alt=""
+      loading="lazy"
+      class="instructions__step-image"
+    >
+    <span class="instructions__step-title">{{ instruction.title }}</span>
+    </span>
+    <p class="instructions__step-text" markdown="1">
+      {{ instruction.content }}
+    </p>
+  </article>
+  {% endfor %}
+</div>

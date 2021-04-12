@@ -1,0 +1,37 @@
+.paper {
+  background-color: #EFF7F9;
+  margin: 0 auto;
+  max-width: 1190px;
+  color: #333;
+
+  @media (min-width: 740px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.paper_column-image {
+  margin-bottom: 1.0em;
+
+  @media (min-width: 740px) {
+    width: 50%;
+    margin-left: 1.5em;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0em;
+  }
+}
+
+.paper_column-content {
+  @media (min-width: 740px) {
+    width: 50%;
+    margin-right: 1.5em;
+  }
+}
+
+.paper h2 {
+  font-size: 22px;
+  font-family: Montserrat;
+  line-height: 27px;
+}

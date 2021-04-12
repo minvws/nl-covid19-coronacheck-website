@@ -13,7 +13,7 @@ collections:
   questions-scanner-in-app:
     output: true
     permalink: in-app/scanner/:categories/:name/
-  stories:
+  user-instructions:
     output: false
   scanner-instructions:
     output: false  

@@ -102,7 +102,7 @@ header-skip-to-content:
   tr: Doğrudan içeriğe gidin
     
 header-title:
-  nl: CoronaCheck
+  nl: Ga naar een event met de CoronaCheck-app
   fy: CoronaCheck
   en: CoronaCheck
   ar: CoronaCheck
@@ -115,9 +115,9 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Krijg toegang na testen
+  nl: Met de app kun je aantonen dat je negatief getest bent op corona. Lees hier <a href="#">meer over de app</a>
   fy: 
-  en: Get tested, gain access
+  en: Get tested, gain access*
   ar: 
   bg: 
   de: 

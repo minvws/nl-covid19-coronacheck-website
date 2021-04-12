@@ -89,13 +89,10 @@
     }
 }
 
-
-.footer-phone__row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+.footer-phone--background {
+    background-color: #EFF7F9;
 }
+
 .footer-phone__column-left {
     display: flex;
     flex-direction: column;
