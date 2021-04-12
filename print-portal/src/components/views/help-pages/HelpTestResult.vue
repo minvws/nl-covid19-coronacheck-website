@@ -9,7 +9,28 @@ export default {
 
 <template>
     <div class="HelpTestResult">
-        Uitleg over je testresultaat
+        <div class="pagewrap">
+            <div class="section">
+                <div class="section-block">
+                    <h1>
+                        Over de testuitslag
+                    </h1>
+                    <p>
+                        Met je testuitslag worden de testdatum en jouw gegevens opgehaald.
+                    </p>
+                    <p>
+                        Je gegevens bestaan uit: (1) de eerste letter van je voornaam, (2) de eerste letter van je
+                        achternaam, (3)  je geboortedag en (4) geboortemaand.
+                    </p>
+                    <h2>
+                        Kloppen jouw gegevens niet met je identiteitsbewijs?
+                    </h2>
+                    <p>
+                        Neem contact op met je testlocatie om je  gegevens te laten aanpassen.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
