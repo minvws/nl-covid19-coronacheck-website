@@ -9,8 +9,8 @@ Vue.use(Vuex)
 const state = {
     holderConfig: null,
     // todo remove before publication
-    testCode: 'TST-TTTTTTTTTT-G2',
-    // testCode: 'TST-PENDINGYY1-G2',
+    // testCode: 'TST-TTTTTTTTTT-G2',
+    testCode: 'TST-PENDINGYY1-G2',
     verificationCode: '123456',
     testResultStatus: 'idle',
     testResult: null,
