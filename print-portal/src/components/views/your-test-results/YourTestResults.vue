@@ -47,6 +47,7 @@ export default {
     <div class="YourTestResults">
         <div class="pagewrap">
             <Navigation
+                v-if="testResult"
                 :callback-back="goBack"/>
             <div class="section">
                 <div class="section-block">
@@ -82,7 +83,18 @@ export default {
                     </div>
 
                     <div v-else>
-                        Geen testresultaat bekend
+                        <h1>
+                            Geen negatieve testuitslag
+                        </h1>
+                        <p>
+                            Er is geen negatieve testuitslag beschikbaar.
+                        </p>
+                        <div class="YourTestResults__footer">
+                            <button
+                                @click="goBack()">
+                                Naar home
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
