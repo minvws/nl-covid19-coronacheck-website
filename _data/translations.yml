@@ -1243,7 +1243,7 @@ demo-qr-subtitle:
   tr: 
  
 demo-qr-gray:
-  nl: Grijs scherm? Dat betekent dat er een geldige demo-code is gescand. Bij het scannen van een echte geldige QR-code zal het scherm groen worden inplaats van grijs.
+  nl: Grijs scherm? Dat betekent dat er een geldige demo-code is gescand. Bij het scannen van een echte geldige QR-code zal het scherm groen worden in plaats van grijs.
   fy: 
   en: 
   ar: 
