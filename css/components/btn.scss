@@ -1,13 +1,14 @@
 
 .btn {
-  padding: 10px 10px;
+  padding: 10px 20px;
   margin-bottom: 5px;
   background: #fff;
   color: $color-RO_darkblue;
   border: 1px solid $color-RO_darkblue;
-  border-radius: 6px;
   display: inline-block;
   transition: var(--transition-in);
+  border-radius: 20px 20px 20px 20px / 50% 50% 50% 50%;
+
   .icon {
     position: relative;
     top: 2px;
@@ -38,6 +39,7 @@
   font-size: 18px;
   width: 100%;
   font-weight: 800;
+  border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
 
   @media (min-width: 740px) {
     font-size: 20px;
@@ -62,4 +64,8 @@
   [lang="fy"] .btn--large {
     max-width: 500px;
   }
+}
+
+.btn--cta {
+  border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
 }
