@@ -144,6 +144,9 @@ export default {
                         if (this.testResultStatus === 'invalid_token') {
                             this.testCodeStatus.error = 'Geen geldige code';
                         }
+                    } else {
+                        const message = '<strong>Sorry, er gaat iets mis</strong><br><br>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck.';
+                        this.$store.commit('modal/set', { message });
                     }
                 })
             })

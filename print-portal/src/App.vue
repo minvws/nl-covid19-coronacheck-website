@@ -2,9 +2,10 @@
 import Identity from '@/components/elements/Identity';
 import axios from 'axios';
 import languages from '@/data/languages';
+import Modal from './components/elements/Modal';
 
 export default {
-    components: { Identity },
+    components: { Modal, Identity },
     methods: {
         init() {
             this.getHolderConfig();
@@ -40,6 +41,7 @@ export default {
     <div id="app">
         <Identity/>
         <router-view/>
+        <Modal/>
     </div>
 </template>
 
