@@ -1,9 +1,10 @@
 <script>
 import Navigation from '@/components/elements/Navigation';
+import HolderIdentityCharacters from '../your-test-results/HolderIdentityCharacters';
 
 export default {
     name: 'HelpTestResult',
-    components: { Navigation },
+    components: { HolderIdentityCharacters, Navigation },
     computed: {},
     methods: {
         goBack() {
@@ -30,6 +31,7 @@ export default {
                         Je gegevens bestaan uit: (1) de eerste letter van je voornaam, (2) de eerste letter van je
                         achternaam, (3)  je geboortedag en (4) geboortemaand.
                     </p>
+                    <HolderIdentityCharacters/>
                     <h3>
                         Kloppen jouw gegevens niet met je identiteitsbewijs?
                     </h3>
@@ -45,5 +47,8 @@ export default {
 <style lang="scss">
 .HelpTestResult {
 
+    .HolderIdentityCharacters {
+        padding: 40px 0 70px 0;
+    }
 }
 </style>

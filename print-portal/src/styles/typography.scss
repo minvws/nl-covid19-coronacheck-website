@@ -34,7 +34,7 @@ h2 {
 h3 {
     font-family: $font-headers;
     font-size: 22px;
-    line-height: 1;
+    line-height: calc(27/22);
     margin-top: 0;
     margin-bottom: 20px;
     color: $black-1;
