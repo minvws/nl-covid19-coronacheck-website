@@ -5,6 +5,7 @@ import YourTestResults from '@/components/views/your-test-results/YourTestResult
 import Print from '@/components/views/print/Print';
 import HelpTestResult from '@/components/views/help-pages/HelpTestResult';
 import HelpTestResultSomethingWrong from '@/components/views/help-pages/HelpTestResultSomethingWrong';
+import urlDictionary from '@/data/url-dictionary';
 
 Vue.use(VueRouter)
 
@@ -12,23 +13,18 @@ const locales = ['nl', 'en']
 
 const routesBase = [
     {
-        path: '/code-invullen',
         name: 'ProvideCode',
         component: ProvideCode
     }, {
-        path: '/test-resultaten',
-        name: 'YourTestResults',
+        name: 'YourTestResult',
         component: YourTestResults
     }, {
-        path: '/print',
         name: 'Print',
         component: Print
     }, {
-        path: '/uitleg-testresultaat',
         name: 'HelpTestResult',
         component: HelpTestResult
     }, {
-        path: '/testresultaat-er-klopt-iets-niet',
         name: 'HelpTestResultSomethingWrong',
         component: HelpTestResultSomethingWrong
     }
@@ -39,11 +35,11 @@ const routes = [];
 for (const route of routesBase) {
     for (const locale of locales) {
         const newRoute = { ...route };
-        newRoute.path = '/' + locale + route.path;
         newRoute.name = locale + '/' + route.name;
         newRoute.meta = {
             key: route.name
         }
+        newRoute.path = '/' + locale + '/' + urlDictionary[route.name][locale];
         routes.push(newRoute);
     }
 }
