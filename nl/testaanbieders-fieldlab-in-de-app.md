@@ -8,9 +8,9 @@ Door heel Nederland zijn er pilot activiteiten en evenementen waarbij een testbe
 ### Bij klachten
 Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, benauwdheid, verhoging of koorts. Laat je testen bij de GGD. 
 
-<a href="https://www.coronatest.nl" class="btn btn-cta">Maak afspraak</a>
+<a href="https://www.coronatest.nl" class="btn btn--cta">Maak afspraak</a>
 
 ### Heb je geen klachten?
 Laat je testen via Testen voor Toegang.
 
-<a href="https://www.testenvoortoegang.nl" class="btn btn-cta">Maak afspraak</a>
+<a href="https://www.testenvoortoegang.nl" class="btn btn--cta">Maak afspraak</a>

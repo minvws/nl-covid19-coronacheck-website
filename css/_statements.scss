@@ -89,7 +89,7 @@
     font-family: inherit;
     text-align: left;
     cursor: pointer;
-    transition: var(--transition-in);
+    transition: var(--transition-out);
 
     &:after {
         // Make the whole .statement-summary clickable
@@ -115,10 +115,6 @@
         margin: 0 -0.4em 0 -0.4em;
     }
 }
-
-// 
-//
-//
 
 .statement-summary__icon {
     position: absolute;

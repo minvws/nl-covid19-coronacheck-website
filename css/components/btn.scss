@@ -5,9 +5,8 @@
   background: #fff;
   color: $color-RO_darkblue;
   border: 1px solid $color-RO_darkblue;
+  border-radius: 6px;
   display: inline-block;
-  transition: var(--transition-in);
-  border-radius: 20px 20px 20px 20px / 50% 50% 50% 50%;
 
   .icon {
     position: relative;
@@ -39,7 +38,6 @@
   font-size: 18px;
   width: 100%;
   font-weight: 800;
-  border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
 
   @media (min-width: 740px) {
     font-size: 20px;
@@ -67,5 +65,24 @@
 }
 
 .btn--cta {
+  background: $color-coronacheck_blue;
+  border: 1px solid currentColor;
+  color: white;
   border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
+
+  &:visited {
+    color: white;
+    background-color: $color-lighter-app-blue;
+  }
+
+  &:hover {
+    color: $color-coronacheck_blue;
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    text-decoration: none;
+    color: $color-coronacheck_blue;
+    background-color: #ffffff;
+  }
 }
