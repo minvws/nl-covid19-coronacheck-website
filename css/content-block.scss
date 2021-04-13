@@ -113,6 +113,7 @@
             font-size: 40px;
         }
     }
+
     .content-block a {
         font-size: 21px;
         line-height: 22px;
@@ -148,11 +149,14 @@
         text-decoration: underline;
     }
 
+    .btn {
+        text-decoration: none;
+    }
+
     // Block elements
 
     h1 {
         margin: 25px 0 40px 0;
-        color: $color-RO_darkblue;
         font-size: 30px;
         line-height: 116%;
     }
