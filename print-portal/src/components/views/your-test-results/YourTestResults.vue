@@ -84,17 +84,17 @@ export default {
 
                     <div v-else>
                         <h2>
-                            Geen negatieve testuitslag
+                            Er is geen testuitslag bekend
                         </h2>
                         <p>
-                            Er is geen negatieve testuitslag beschikbaar.
+                            Haal eerst je tesultaat op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen.
                         </p>
-                        <p>
+                        <div class="section-block__footer">
                             <button
                                 @click="goBack()">
-                                Naar home
+                                Testuitslag ophalen
                             </button>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -248,6 +248,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
     <div class="Print">
         <div class="pagewrap">
             <Navigation
+                v-if="qrCode.length > 0"
                 :callback-back="goBack"/>
             <div class="section">
                 <div class="section-block">
