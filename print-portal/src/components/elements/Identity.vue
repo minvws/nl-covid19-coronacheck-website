@@ -5,7 +5,9 @@ export default {
     name: 'Identity',
     components: { LanguagePicker },
     computed: {},
-    methods: {}
+    methods: {
+        // todo faq href for multi language
+    }
 }
 </script>
 
@@ -24,7 +26,14 @@ export default {
                 width="356"
                 src="assets/img/artwork/holder_qrcode_maken.svg"/>
         </div>
-        <LanguagePicker/>
+        <div class="Identity__tools">
+            <a
+                href="https://coronacheck.nl/nl/faq"
+                class="Identity__faq">
+                {{translate('faq')}}
+            </a>
+            <LanguagePicker/>
+        </div>
     </div>
 </template>
 
@@ -51,10 +60,20 @@ export default {
         margin-left: 60px;
     }
 
-    .LanguagePicker {
+    .Identity__tools {
         position: absolute;
         right: 30px;
         top: 30px;
+        display: flex;
+        align-items: center;
+
+        .Identity__faq {
+            color: $blue-1;
+            font-weight: 700;
+            font-size: 20px;
+            text-decoration: none;
+            margin-right: 24px;
+        }
     }
 
     @include mobile() {

@@ -50,6 +50,7 @@ export default {
     display: flex;
     height: 350px;
     overflow: hidden;
+    margin-bottom: 100px;
 
     .PreferMobile__image {
         width: 250px;

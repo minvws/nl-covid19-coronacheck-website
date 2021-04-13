@@ -11,6 +11,10 @@ const dictionary = {
         'nl': 'Code invullen',
         'en': 'Enter code'
     },
+    'faq': {
+        'nl': 'Meestgestelde vragen',
+        'en': 'Frequently askes questions'
+    },
     'language': {
         'nl': 'Taal',
         'en': 'Language'
