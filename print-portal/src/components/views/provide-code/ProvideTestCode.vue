@@ -55,13 +55,14 @@ export default {
 <template>
     <div class="ProvideTestCode">
         <div class="input__set">
-            <div class="input__label">
+            <label for="input--testCode">
                 <strong>
                     {{translate('uniqueCode')}}
                 </strong>
-            </div>
+            </label>
             <input
                 v-model="testCode"
+                id="input--testCode"
                 class="input--capitals"
                 placeholder="Bijv. BRB-YYYYYYYYY1-Z2"/>
             <div
@@ -74,7 +75,8 @@ export default {
             v-if="showButton"
             @click="sendTestCode()"
             type="button"
-            :class="{'button--inactive': !isTestCodeValid}">
+            :class="{'button--inactive': !isTestCodeValid}"
+            class="button-standard">
             {{translate('next')}}
         </button>
     </div>

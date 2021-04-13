@@ -18,8 +18,8 @@ export default {
 </script>
 
 <template>
-    <div class="Navigation">
-        <div
+    <nav>
+        <button
             v-if="callbackBack"
             @click="goBack()"
             class="Navigation__button Navigation__back">
@@ -27,14 +27,14 @@ export default {
                 alt="Pagina terug"
                 src="assets/img/icons/arrow-left.svg"/>
             Terug
-        </div>
-    </div>
+        </button>
+    </nav>
 </template>
 
 <style lang="scss">
 @import "@/styles/variables/index";
 
-.Navigation {
+nav {
     height: 60px;
     display: flex;
     align-items: center;

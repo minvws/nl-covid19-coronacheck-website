@@ -11,9 +11,11 @@ export default {
     <div class="TestResultPending">
         <div class="section">
             <div class="section-block">
-                <h2>
-                    Testuitslag nog niet bekend
-                </h2>
+                <header>
+                    <h2>
+                        Testuitslag nog niet bekend
+                    </h2>
+                </header>
                 <p>
                     Probeer het later nog eens.<br>
                     Neem voor vragen contact op met jouw testlocatie.

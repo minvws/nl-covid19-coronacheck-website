@@ -52,46 +52,52 @@ export default {
             <div class="section">
                 <div class="section-block">
                     <div v-if="testResult">
-                        <h2>
-                            Jouw negatieve testresultaat
-                        </h2>
+                        <header>
+                            <h2>
+                                Jouw negatieve testresultaat
+                            </h2>
+                        </header>
                         <p>
                             Je hebt 1 nieuw negatief testresultaat (geen corona). Maak van dit resultaat een QR-code. Dat is jouw bewijs.
                         </p>
                         <div class="YourTestResults__header">
                             Opgehaald testresultaat
-                            <div
+                            <button
                                 @click="goto('HelpTestResult')"
                                 class="info-button">
-                            </div>
+                            </button>
                         </div>
                         <div class="YourTestResults__results">
                             <TestResult
                                 :testResult="testResult"/>
-                            <div
+                            <button
                                 @click="goto('HelpTestResult')"
                                 class="button-modest">
                                 Er klopt iets niet
-                            </div>
+                            </button>
                         </div>
                         <div class="YourTestResults__footer">
                             <button
-                                @click="createTestCertificate()">
+                                @click="createTestCertificate()"
+                                class="button-standard">
                                 Maak testbewijs
                             </button>
                         </div>
                     </div>
 
                     <div v-else>
-                        <h2>
-                            Er is geen testuitslag bekend
-                        </h2>
+                        <header>
+                            <h2>
+                                Er is geen testuitslag bekend
+                            </h2>
+                        </header>
                         <p>
                             Haal eerst je tesultaat op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen.
                         </p>
                         <div class="section-block__footer">
                             <button
-                                @click="goBack()">
+                                @click="goBack()"
+                                class="button-standard">
                                 Testuitslag ophalen
                             </button>
                         </div>

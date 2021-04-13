@@ -25,40 +25,40 @@ export default {
 </script>
 
 <template>
-    <div class="HolderIdentityCharacters">
-        <div class="HolderIdentityCharacters__set">
+    <ul class="HolderIdentityCharacters">
+        <li>
             <div class="HolderIdentityCharacters__label">
                 1
             </div>
             <div class="HolderIdentityCharacters__value">
                 {{holder.firstNameInitial}}
             </div>
-        </div>
-        <div class="HolderIdentityCharacters__set">
+        </li>
+        <li>
             <div class="HolderIdentityCharacters__label">
                 2
             </div>
             <div class="HolderIdentityCharacters__value">
                 {{holder.lastNameInitial}}
             </div>
-        </div>
-        <div class="HolderIdentityCharacters__set">
+        </li>
+        <li>
             <div class="HolderIdentityCharacters__label">
                 3
             </div>
             <div class="HolderIdentityCharacters__value">
                 {{holder.birthDayStyled}}
             </div>
-        </div>
-        <div class="HolderIdentityCharacters__set">
+        </li>
+        <li>
             <div class="HolderIdentityCharacters__label">
                 4
             </div>
             <div class="HolderIdentityCharacters__value">
                 {{holder.birthDayMonthStyled}}
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 </template>
 
 <style lang="scss">
@@ -66,8 +66,11 @@ export default {
 
 .HolderIdentityCharacters {
     display: flex;
+    padding: 0;
+    margin: 0;
 
-    .HolderIdentityCharacters__set {
+    li {
+        list-style: none;
         width: 56px;
         margin-right: 12px;
 

@@ -253,21 +253,23 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
             <div class="section">
                 <div class="section-block">
                     <div v-if="qrCode.length > 0">
-                        <h2>
-                            Jouw testbewijs
-                        </h2>
+                        <header>
+                            <h2>
+                                Jouw testbewijs
+                            </h2>
+                        </header>
                         <p>
                             Lees hier welke informatie er in verwerkt is. Open of download de PDF en print hem als  testbewijs.
                         </p>
                         <div class="Print__container">
                             <div class="Print__buttons">
                                 <button
-                                    class="button--full-width"
+                                    class="button-standard button--full-width"
                                     @click="openPDF()">
                                     Open PDF
                                 </button>
                                 <button
-                                    class="button--full-width"
+                                    class="button-standard button--full-width"
                                     @click="downloadPDF()">
                                     Download PDF
                                 </button>
@@ -281,9 +283,11 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                         </div>
                     </div>
                     <div v-else>
-                        <h2>
-                            Er is geen testbewijs bekend
-                        </h2>
+                        <header>
+                            <h2>
+                                Er is geen testbewijs bekend
+                            </h2>
+                        </header>
                         <p>
                             Je kan van een negatief testuitslag een testbewijs maken. Haal eerst je tesultaat op.
                         </p>

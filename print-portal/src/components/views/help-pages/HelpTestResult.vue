@@ -21,9 +21,11 @@ export default {
                 :callback-back="goBack"/>
             <div class="section">
                 <div class="section-block">
-                    <h2>
-                        Over de testuitslag
-                    </h2>
+                    <header>
+                        <h2>
+                            Over de testuitslag
+                        </h2>
+                    </header>
                     <p>
                         Met je testuitslag worden de testdatum en jouw gegevens opgehaald.
                     </p>
