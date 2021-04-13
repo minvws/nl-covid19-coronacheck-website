@@ -252,9 +252,9 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
             <div class="section">
                 <div class="section-block">
                     <div v-if="qrCode.length > 0">
-                        <h1>
+                        <h2>
                             Jouw testbewijs
-                        </h1>
+                        </h2>
                         <p>
                             Lees hier welke informatie er in verwerkt is. Open of download de PDF en print hem als  testbewijs.
                         </p>
@@ -280,9 +280,9 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                         </div>
                     </div>
                     <div v-else>
-                        <h1>
+                        <h2>
                             Er is geen testbewijs bekend
-                        </h1>
+                        </h2>
                         <p>
                             Je kan van een negatief testuitslag een testbewijs maken. Haal eerst je tesultaat op.
                         </p>

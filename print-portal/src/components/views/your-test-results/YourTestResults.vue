@@ -52,9 +52,9 @@ export default {
             <div class="section">
                 <div class="section-block">
                     <div v-if="testResult">
-                        <h1>
+                        <h2>
                             Jouw negatieve testresultaat
-                        </h1>
+                        </h2>
                         <p>
                             Je hebt 1 nieuw negatief testresultaat (geen corona). Maak van dit resultaat een QR-code. Dat is jouw bewijs.
                         </p>
@@ -83,9 +83,9 @@ export default {
                     </div>
 
                     <div v-else>
-                        <h1>
+                        <h2>
                             Geen negatieve testuitslag
-                        </h1>
+                        </h2>
                         <p>
                             Er is geen negatieve testuitslag beschikbaar.
                         </p>

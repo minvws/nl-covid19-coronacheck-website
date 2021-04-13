@@ -191,9 +191,9 @@ export default {
         <div class="pagewrap">
             <div class="section">
                 <div class="section-block">
-                    <h1>
+                    <h2>
                         {{translate('enterCode')}}
-                    </h1>
+                    </h2>
                     <p>
                         {{translate('testCodeDirection')}}
                     </p>

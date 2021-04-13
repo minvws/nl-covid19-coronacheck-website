@@ -20,9 +20,9 @@ export default {
                 :callback-back="goBack"/>
             <div class="section">
                 <div class="section-block">
-                    <h1>
+                    <h2>
                         Over de testuitslag
-                    </h1>
+                    </h2>
                     <p>
                         Met je testuitslag worden de testdatum en jouw gegevens opgehaald.
                     </p>
@@ -30,9 +30,9 @@ export default {
                         Je gegevens bestaan uit: (1) de eerste letter van je voornaam, (2) de eerste letter van je
                         achternaam, (3)  je geboortedag en (4) geboortemaand.
                     </p>
-                    <h2>
+                    <h3>
                         Kloppen jouw gegevens niet met je identiteitsbewijs?
-                    </h2>
+                    </h3>
                     <p>
                         Neem contact op met je testlocatie om je  gegevens te laten aanpassen.
                     </p>
