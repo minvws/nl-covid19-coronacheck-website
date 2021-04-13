@@ -1,10 +1,9 @@
 <script>
 import LanguagePickerLanguages from './LanguagePickerLanguages';
-import Translate from '../Translate';
 
 export default {
     name: 'LanguagePicker',
-    components: { Translate, LanguagePickerLanguages },
+    components: { LanguagePickerLanguages },
     data() {
         return {
             isOpen: false
@@ -42,7 +41,7 @@ export default {
             @click="open()"
             class="LanguagePicker__current">
             <div class="LanguagePicker__label">
-                <Translate :word="'language'"/>:
+                {{translate('language')}}
                 <strong>{{currentLanguage.name}}</strong>
             </div>
             <div class="LanguagePicker__chevron"></div>

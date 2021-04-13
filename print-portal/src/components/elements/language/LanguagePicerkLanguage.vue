@@ -1,10 +1,9 @@
 <script>
 import Language from '@/classes/Language';
-import Translate from '../Translate';
 
 export default {
     name: 'LanguagePicerkLanguage',
-    components: { Translate },
+    components: { },
     props: {
         language: {
             type: Language,
@@ -32,7 +31,7 @@ export default {
         class="LanguagePicerkLanguage">
         {{language.name}}
         <span v-if="isCurrent">
-            (<Translate :word="'currentLanguage'"/>)
+            ({{translate('currentLanguage')}})
         </span>
     </li>
 </template>
@@ -43,6 +42,7 @@ export default {
     margin: 0;
     padding: 6px 18px;
     cursor: pointer;
+    white-space: nowrap;
 
     &.LanguagePicerkLanguage--current {
         color: #333;

@@ -1,11 +1,10 @@
 <script>
 import LanguagePicerkLanguage from './LanguagePicerkLanguage';
-import Translate from '../Translate';
 import vClickOutside from 'v-click-outside';
 
 export default {
     name: 'LanguagePickerLanguages',
-    components: { Translate, LanguagePicerkLanguage },
+    components: { LanguagePicerkLanguage },
     directives: {
         clickOutside: vClickOutside.directive
     },
@@ -27,7 +26,7 @@ export default {
         v-click-outside="close"
         class="LanguagePickerLanguages">
         <div class="LanguagePickerLanguages__head">
-            <Translate :word="'changeLanguage'"/>:
+            {{translate('changeLanguage')}}
         </div>
         <ul>
             <LanguagePicerkLanguage

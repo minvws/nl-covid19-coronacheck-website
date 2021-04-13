@@ -1,6 +1,5 @@
 <script>
 import PreferMobile from '@/components/elements/PreferMobile';
-import Translate from '@/components/elements/Translate';
 import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
 import axios from 'axios';
@@ -9,7 +8,7 @@ import luhnModN from '@/tools/luhn-mod-n';
 
 export default {
     name: 'ProvideCode',
-    components: { Translate, ProvideVerificationCode, ProvideTestCode, PreferMobile },
+    components: { ProvideVerificationCode, ProvideTestCode, PreferMobile },
     data () {
         return {
             testCodeStatus: {
@@ -193,10 +192,10 @@ export default {
             <div class="section">
                 <div class="section-block">
                     <h1>
-                        <Translate :word="'enterCode'"/>
+                        {{translate('enterCode')}}
                     </h1>
                     <p>
-                        <Translate :word="'testCodeDirection'"/>
+                        {{translate('testCodeDirection')}}
                     </p>
 
                     <form autocomplete="off">

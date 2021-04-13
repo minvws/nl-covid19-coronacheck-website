@@ -1,9 +1,7 @@
 <script>
-import Translate from '../../elements/Translate';
-
 export default {
     name: 'ProvideVerificationCode',
-    components: { Translate },
+    components: { },
     props: {
         verificationCodeStatus: {
             type: Object,
@@ -68,8 +66,8 @@ export default {
     <div class="ProvideVerificationCode">
         <div class="input__set">
             <div class="input__label">
-                <b><Translate :word="'verificationCode'"/></b><br>
-                <Translate :word="'verificationCodeDirection'"/>
+                <b>{{translate('verificationCode')}}</b><br>
+                {{translate('verificationCodeDirection')}}
             </div>
             <input
                 v-model="verificationCode"
@@ -84,7 +82,7 @@ export default {
                     v-if="verificationCodeStatus.expired"
                     @click="requestNewVerificationCode()"
                     class="button-modest">
-                    <Translate :word="'didNotGetCode'"/>
+                    {{translate('didNotGetCode')}}
                 </div>
             </div>
         </div>
@@ -92,7 +90,7 @@ export default {
             @click="sendVerificationCode()"
             type="button"
             :class="{'button--inactive': !isVerificationCodeValid}">
-            <Translate :word="'next'"/>
+            {{translate('next')}}
         </button>
     </div>
 </template>

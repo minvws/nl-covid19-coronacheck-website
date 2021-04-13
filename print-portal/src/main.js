@@ -3,9 +3,9 @@ import App from './App.vue'
 // import './registerServiceWorker'
 import router from './router'
 import store from './store';
-import CurrentLanguage from '@/components/mixins/CurrentLanguage';
+import Translate from '@/components/mixins/Translate';
 
-Vue.mixin(CurrentLanguage);
+Vue.mixin(Translate);
 
 Vue.config.productionTip = false
 
