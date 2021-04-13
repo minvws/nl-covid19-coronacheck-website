@@ -12,7 +12,7 @@ export default {
         <div class="PreferMobile__image">
             <img
                 alt="Liever je testbewijs op je mobiel?"
-                src="assets/img/temp/prefer-mobile.png"/>
+                src="assets/img/artwork/mobile-phone-using-coronacheck.png"/>
         </div>
         <div class="PreferMobile__text">
             <h2>
@@ -48,6 +48,8 @@ export default {
     margin-top: 110px;
     padding: 70px 120px 0 120px;
     display: flex;
+    height: 350px;
+    overflow: hidden;
 
     .PreferMobile__image {
         width: 250px;
