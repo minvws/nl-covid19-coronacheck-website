@@ -89,4 +89,17 @@ export default {
         }
     }
 }
+
+.direction-rtl {
+
+    .LanguagePicker {
+
+        .LanguagePicker__current {
+
+            .LanguagePicker__label {
+                margin: 0 0 0 12px;
+            }
+        }
+    }
+}
 </style>

@@ -2,11 +2,18 @@ const languages = [
     {
         id: 1,
         name: 'Nederlands',
-        locale: 'nl'
+        locale: 'nl',
+        direction: 'ltr'
     }, {
         id: 2,
         name: 'English',
-        locale: 'en'
+        locale: 'en',
+        direction: 'ltr'
+    }, {
+        id: 3,
+        name: 'عربى',
+        locale: 'ar',
+        direction: 'rtl'
     }
 ];
 

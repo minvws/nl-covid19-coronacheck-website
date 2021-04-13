@@ -28,7 +28,7 @@ export default {
         },
         addLanguages() {
             this.$store.commit('languages/init', languages);
-            this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
+            this.$store.commit('languages/setCurrent', this.$store.state.languages.all[2]);
         }
     },
     mounted() {
@@ -38,7 +38,10 @@ export default {
 </script>
 
 <template>
-    <div id="app">
+    <div
+        id="app"
+        :class="{'direction-rtl': currentLanguage.direction === 'rtl' }"
+        :style="{'direction': currentLanguage.direction }">
         <Identity/>
         <router-view/>
         <Modal/>

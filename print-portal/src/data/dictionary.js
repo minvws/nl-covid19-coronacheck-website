@@ -13,7 +13,8 @@ const dictionary = {
     },
     'changeLanguage': {
         'nl': 'Wissel van taal',
-        'en': 'Change language'
+        'en': 'Change language',
+        'ar': 'تغيير اللغة'
     },
     'close': {
         'nl': 'Sluiten',
@@ -25,7 +26,8 @@ const dictionary = {
     },
     'currentLanguage': {
         'nl': 'Huidige taal',
-        'en': 'Current language'
+        'en': 'Current language',
+        'ar': 'اللغة الحالية'
     },
     'didNotGetCode': {
         'nl': 'Ik heb geen code gekregen',
@@ -37,19 +39,23 @@ const dictionary = {
     },
     'enterCode': {
         'nl': 'Code invullen',
-        'en': 'Enter code'
+        'en': 'Enter code',
+        'ar': 'ادخل الرمز'
     },
     'faq': {
         'nl': 'Meestgestelde vragen',
-        'en': 'Frequently askes questions'
+        'en': 'Frequently askes questions',
+        'ar': 'التعليمات'
     },
     'language': {
         'nl': 'Taal',
-        'en': 'Language'
+        'en': 'Language',
+        'ar': 'لغة'
     },
     'next': {
         'nl': 'Volgende',
-        'en': 'Next'
+        'en': 'Next',
+        'ar': 'التالي'
     },
     'noTestProofPresent': {
         'nl': 'Er is geen testbewijs bekend',
@@ -81,11 +87,13 @@ const dictionary = {
     },
     'testCodeDirection': {
         'nl': 'Vul de code in die je van je testlocatie hebt gekregen. Of klik op de link in de e-mail die je van je testlocatie hebt ontvangen.',
-        'en': 'Enter the code you received from your test location. Or click the link in the email you received from your test location.'
+        'en': 'Enter the code you received from your test location. Or click the link in the email you received from your test location.',
+        'ar': 'أدخل الرمز الذي تلقيته من موقع الاختبار الخاص بك. أو انقر فوق الارتباط الموجود في البريد الإلكتروني الذي تلقيته من موقع الاختبار الخاص بك.'
     },
     'uniqueCode': {
         'nl': 'Unieke code',
-        'en': 'Unique code'
+        'en': 'Unique code',
+        'ar': 'كود فريد'
     },
     'retrievedTestResult': {
         'nl': 'Opgehaald testresultaat',

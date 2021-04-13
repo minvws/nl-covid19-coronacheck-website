@@ -9,7 +9,7 @@ import TestResultPending from '@/components/views/your-test-results/TestResultPe
 
 Vue.use(VueRouter)
 
-const locales = ['nl', 'en']
+const locales = ['nl', 'en', 'ar']
 
 const routesBase = [
     {

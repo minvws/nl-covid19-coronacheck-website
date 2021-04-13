@@ -84,4 +84,17 @@ export default {
         }
     }
 }
+
+.direction-rtl {
+
+    .Identity {
+
+        .Identity__tools {
+
+            .Identity__faq {
+                margin: 0 0 0 24px;
+            }
+        }
+    }
+}
 </style>
