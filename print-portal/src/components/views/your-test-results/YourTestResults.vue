@@ -25,7 +25,7 @@ export default {
                 }).then((response) => {
                     if (response.data.status === 'ok' && response.data.error === 0) {
                         this.$store.commit('setQrCode', response.data.qr.data);
-                        this.$router.push({ name: 'Print' });
+                        this.goto('Print')
                     }
                     console.log(response);
                 }).catch((error) => {
@@ -37,7 +37,7 @@ export default {
             }
         },
         goBack() {
-            this.$router.push({ name: 'ProvideCode' });
+            this.goto('ProvideCode');
         }
     }
 }
@@ -60,19 +60,19 @@ export default {
                         </p>
                         <div class="YourTestResults__header">
                             Opgehaald testresultaat
-                            <router-link
-                                :to="{ name: 'HelpTestResult' }"
+                            <div
+                                @click="goto('HelpTestResult')"
                                 class="info-button">
-                            </router-link>
+                            </div>
                         </div>
                         <div class="YourTestResults__results">
                             <TestResult
                                 :testResult="testResult"/>
-                            <router-link
-                                :to="{ name: 'HelpTestResultSomethingWrong' }"
+                            <div
+                                @click="goto('HelpTestResult')"
                                 class="button-modest">
                                 Er klopt iets niet
-                            </router-link>
+                            </div>
                         </div>
                         <div class="YourTestResults__footer">
                             <button

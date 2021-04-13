@@ -4,7 +4,6 @@ import ProvideCode from '@/components/views/provide-code/ProvideCode.vue'
 import YourTestResults from '@/components/views/your-test-results/YourTestResults';
 import Print from '@/components/views/print/Print';
 import HelpTestResult from '@/components/views/help-pages/HelpTestResult';
-import HelpTestResultSomethingWrong from '@/components/views/help-pages/HelpTestResultSomethingWrong';
 import urlDictionary from '@/data/url-dictionary';
 
 Vue.use(VueRouter)
@@ -24,9 +23,6 @@ const routesBase = [
     }, {
         name: 'HelpTestResult',
         component: HelpTestResult
-    }, {
-        name: 'HelpTestResultSomethingWrong',
-        component: HelpTestResultSomethingWrong
     }
 ];
 
@@ -54,6 +50,7 @@ routes.unshift({
 })
 
 const router = new VueRouter({
+    // mode: 'history',
     base: process.env.BASE_URL,
     routes
 })

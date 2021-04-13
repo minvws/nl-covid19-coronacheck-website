@@ -76,7 +76,7 @@ export default {
             this.verificationCodeStatus.expired = false;
             this.expirationTimer = setTimeout(() => {
                 this.verificationCodeStatus.expired = true;
-            }, 1000)
+            }, 10000)
         },
         expire() {
             this.verificationCodeStatus.expired = true;
@@ -115,7 +115,7 @@ export default {
                             const testResult = new TestResult(payload.result);
                             this.$store.commit('setTestResult', testResult);
                             this.$store.commit('setSignature', response.data);
-                            this.$router.push({ name: this.currentLanguage.locale + '/YourTestResult' });
+                            this.goto('YourTestResult');
                         }
                     }
                 }).catch((error) => {

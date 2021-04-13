@@ -1,15 +1,23 @@
 <script>
+import Navigation from '@/components/elements/Navigation';
+
 export default {
     name: 'HelpTestResult',
-    components: {},
+    components: { Navigation },
     computed: {},
-    methods: {}
+    methods: {
+        goBack() {
+            this.goto('YourTestResult');
+        }
+    }
 }
 </script>
 
 <template>
     <div class="HelpTestResult">
         <div class="pagewrap">
+            <Navigation
+                :callback-back="goBack"/>
             <div class="section">
                 <div class="section-block">
                     <h1>

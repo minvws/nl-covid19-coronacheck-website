@@ -27,7 +27,7 @@ export default {
     },
     methods: {
         goBack() {
-            this.$router.push({ name: 'YourTestResults' });
+            this.goto('YourTestResult');
         },
         downloadPDF() {
             if (this.qrCode.length > 0) {

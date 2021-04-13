@@ -14,10 +14,6 @@ const urls = {
     'HelpTestResult': {
         'nl': 'wat-betekent-je-testresultaat',
         'en': 'explaining-your-tes-result'
-    },
-    'HelpTestResultSomethingWrong': {
-        'nl': 'er-klopt-iets-niet-aan-mijn-testresultaat',
-        'en': 'something-is-wrong-with-my-testresult'
     }
 }
 
