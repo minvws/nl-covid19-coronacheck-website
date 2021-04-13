@@ -15,12 +15,8 @@
 {% include head.html %}
 <body>
   <main class="content-center content-center__in_app" id="content">
-    {% if page.collection == 'questions-in-app' %}
-      <a href="/nl/faq-in-app">Terug naar meestgestelde vragen</a>
-    {% endif %}
-
-    {% if page.collection == 'questions-scanner-in-app' %}
-      <a href="/nl/faq-scanner-in-app">Terug naar Support</a>
+    {% if page.showBreadCrumbs %}
+      {% include breadcrumbs.html title=page.title collection=page.collection %}
     {% endif %}
 
     <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>

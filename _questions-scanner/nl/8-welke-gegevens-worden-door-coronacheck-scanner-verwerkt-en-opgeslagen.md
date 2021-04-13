@@ -6,7 +6,7 @@ title: Welke gegevens worden door CoronaCheck Scanner verwerkt en opgeslagen?
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner
 showBreadCrumbs: true
 showContact: true
 ---
