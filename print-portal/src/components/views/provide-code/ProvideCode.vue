@@ -76,7 +76,7 @@ export default {
             this.verificationCodeStatus.expired = false;
             this.expirationTimer = setTimeout(() => {
                 this.verificationCodeStatus.expired = true;
-            }, 10000)
+            }, 1000)
         },
         expire() {
             this.verificationCodeStatus.expired = true;

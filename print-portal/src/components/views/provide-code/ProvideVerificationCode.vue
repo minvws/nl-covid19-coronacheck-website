@@ -36,11 +36,22 @@ export default {
             }
         },
         requestNewVerificationCode() {
-            if (this.isVerificationCodeValid) {
+            const message = '<strong>Heb je geen verificatie code gekregen?</strong><p>Als je geen sms/email met een verificatie code hebt gekregen van de testlocatie, kan je een nieuwe code toegestuurd krijgen.</p>'
+
+            const confirmAction = () => {
                 // false means: do request without the verification code
                 // this will trigger backend to send sms again
                 this.getSignedResult(false);
             }
+
+            this.$store.commit('modal/set', {
+                message,
+                confirm: true,
+                confirmAction,
+                confirmYes: this.translate('sendAgain'),
+                confirmNo: this.translate('back'),
+                closeButton: false
+            })
         },
         async getTestResults() {
             return new Promise((resolve, reject) => {

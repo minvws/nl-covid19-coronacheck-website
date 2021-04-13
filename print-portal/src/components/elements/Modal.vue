@@ -10,6 +10,12 @@ export default {
         showConfirm() {
             return this.$store.state.modal.confirm;
         },
+        confirmText() {
+            return this.$store.state.modal.confirmYes;
+        },
+        refuteText() {
+            return this.$store.state.modal.confirmNo;
+        },
         confirmAction() {
             return this.$store.state.modal.confirmAction;
         },
@@ -62,22 +68,20 @@ export default {
             <div class="modal__footer">
                 <div
                     v-if="showConfirm"
-                    class="modal__confirm">
-                    <div
-                        @click="confirm()"
-                        class="button button--ok">
-                        {{confirmText}}
-                    </div>
-                    <div
-                        @click="refute()"
-                        class="button">
+                    @click="refute()"
+                    class="button-modest">
                     {{refuteText}}
-                    </div>
+                </div>
+                <div
+                    v-if="showConfirm"
+                    @click="confirm()"
+                    class="button-modest button--ok">
+                    {{confirmText}}
                 </div>
                 <div
                     v-if="showCloseButton"
                     @click="close()"
-                    class="button-modest">Sluiten</div>
+                    class="button-modest">{{translate('close')}}</div>
             </div>
         </div>
     </div>
@@ -129,15 +133,8 @@ export default {
         display: flex;
         align-items: center;
 
-        .modal__confirm {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            justify-content: flex-end;
-
-            .button-modest {
-                margin-right: 8px;
-            }
+        .button-modest {
+            margin-right: 100px;
         }
     }
 

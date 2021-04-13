@@ -1,11 +1,23 @@
 const dictionary = {
+    'back': {
+        'nl': 'Terug',
+        'en': 'Back'
+    },
     'changeLanguage': {
         'nl': 'Wissel van taal',
         'en': 'Change language'
     },
+    'close': {
+        'nl': 'Sluiten',
+        'en': 'Close'
+    },
     'currentLanguage': {
         'nl': 'Huidige taal',
         'en': 'Current language'
+    },
+    'didNotGetCode': {
+        'nl': 'Ik heb geen code gekregen',
+        'en': 'I did not get a code'
     },
     'enterCode': {
         'nl': 'Code invullen',
@@ -23,9 +35,9 @@ const dictionary = {
         'nl': 'Volgende',
         'en': 'Next'
     },
-    'didNotGetCode': {
-        'nl': 'Ik heb geen code gekregen',
-        'en': 'I did not get a code'
+    'sendAgain': {
+        'nl': 'Stuur opnieuw',
+        'en': 'Send again'
     },
     'testCodeDirection': {
         'nl': 'Vul de code in die je van je testlocatie hebt gekregen. Of klik op de link in de e-mail die je van je testlocatie hebt ontvangen.',
