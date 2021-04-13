@@ -84,7 +84,7 @@ export default {
                     v-if="verificationCodeStatus.expired"
                     @click="requestNewVerificationCode()"
                     class="button-modest">
-                    <Translate :word="'sendAgain'"/>
+                    <Translate :word="'didNotGetCode'"/>
                 </div>
             </div>
         </div>

@@ -2,19 +2,11 @@
 export default {
     name: 'CurrentLanguage',
     components: {},
-    computed: {},
+    computed: {
+        currentLanguage() {
+            return this.$store.state.languages.current;
+        }
+    },
     methods: {}
 }
 </script>
-
-<template>
-    <div class="CurrentLanguage">
-        CurrentLanguage
-    </div>
-</template>
-
-<style lang="scss">
-    .CurrentLanguage {
-
-    }
-</style>

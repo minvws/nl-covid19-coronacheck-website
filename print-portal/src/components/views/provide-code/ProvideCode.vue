@@ -116,7 +116,7 @@ export default {
                             const testResult = new TestResult(payload.result);
                             this.$store.commit('setTestResult', testResult);
                             this.$store.commit('setSignature', response.data);
-                            this.$router.push({ name: 'YourTestResults' });
+                            this.$router.push({ name: this.currentLanguage.locale + '/YourTestResults' });
                         }
                     }
                 }).catch((error) => {

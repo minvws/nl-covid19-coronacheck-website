@@ -8,9 +8,11 @@ import HelpTestResultSomethingWrong from '@/components/views/help-pages/HelpTest
 
 Vue.use(VueRouter)
 
-const routes = [
+const locales = ['nl', 'en']
+
+const routesBase = [
     {
-        path: '/',
+        path: '/code-invullen',
         name: 'ProvideCode',
         component: ProvideCode
     }, {
@@ -30,7 +32,30 @@ const routes = [
         name: 'HelpTestResultSomethingWrong',
         component: HelpTestResultSomethingWrong
     }
-]
+];
+
+const routes = [];
+
+for (const route of routesBase) {
+    for (const locale of locales) {
+        const newRoute = { ...route };
+        newRoute.path = '/' + locale + route.path;
+        newRoute.name = locale + '/' + route.name;
+        newRoute.meta = {
+            key: route.name
+        }
+        routes.push(newRoute);
+    }
+}
+
+routes.unshift({
+    path: '/',
+    name: 'ProvideCode',
+    redirect: { name: 'nl/ProvideCode' },
+    meta: {
+        key: 'ProvideCode'
+    }
+})
 
 const router = new VueRouter({
     base: process.env.BASE_URL,
