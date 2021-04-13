@@ -14,9 +14,9 @@ export default {
     computed: {
         status() {
             if (this.testResult.negativeResult) {
-                return 'Negatief testresultaat (geen corona)';
+                return this.translate('resultNegative');
             } else {
-                return 'Positief testresultaat (wel corona)';
+                return this.translate('resultPositive');
             }
         },
         date() {
@@ -36,7 +36,7 @@ export default {
             {{date}}
         </div>
         <div class="TestResult__date">
-            Jouw gegevens: {{testResult.holder.string}}
+            {{translate('yourCredentials')}}: {{testResult.holder.string}}
         </div>
     </div>
 </template>

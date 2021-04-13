@@ -23,22 +23,17 @@ export default {
                 <div class="section-block">
                     <header>
                         <h2>
-                            Over de testuitslag
+                            {{translate('aboutTestResult')}}
                         </h2>
                     </header>
-                    <p>
-                        Met je testuitslag worden de testdatum en jouw gegevens opgehaald.
-                    </p>
-                    <p>
-                        Je gegevens bestaan uit: (1) de eerste letter van je voornaam, (2) de eerste letter van je
-                        achternaam, (3)  je geboortedag en (4) geboortemaand.
-                    </p>
+                    <div v-html="translate('aboutTestResultDirection')"/>
+
                     <HolderIdentityCharacters/>
                     <h3>
-                        Kloppen jouw gegevens niet met je identiteitsbewijs?
+                        {{translate('yourCredentialsWrong')}}
                     </h3>
                     <p>
-                        Neem contact op met je testlocatie om je  gegevens te laten aanpassen.
+                        {{translate('yourCredentialsWrongDirection')}}
                     </p>
                 </div>
             </div>

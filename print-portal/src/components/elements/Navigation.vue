@@ -26,7 +26,7 @@ export default {
             <img
                 alt="Pagina terug"
                 src="assets/img/icons/arrow-left.svg"/>
-            Terug
+            {{translate('back')}}
         </button>
     </nav>
 </template>

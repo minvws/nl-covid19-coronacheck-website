@@ -16,11 +16,10 @@ export default {
         </div>
         <div class="PreferMobile__text">
             <h3>
-                Liever je testbewijs op je mobiel?
+                {{translate('preferMobile')}}
             </h3>
             <p>
-                Gebruik de app. Het is ook mogelijk een geprint testbewijs te maken wanneer je een testbewijs hebt
-                gemaakt in de app.
+                {{translate('preferMobileDirection')}}
             </p>
             <div class="PreferMobile__badges">
                 <a

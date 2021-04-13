@@ -54,14 +54,14 @@ export default {
                     <div v-if="testResult">
                         <header>
                             <h2>
-                                Jouw negatieve testresultaat
+                                {{translate('yourNegativeTestresult')}}
                             </h2>
                         </header>
                         <p>
-                            Je hebt 1 nieuw negatief testresultaat (geen corona). Maak van dit resultaat een QR-code. Dat is jouw bewijs.
+                            {{translate('yourNegativeTestresultDirection')}}
                         </p>
                         <div class="YourTestResults__header">
-                            Opgehaald testresultaat
+                            {{translate('retrievedTestResult')}}
                             <button
                                 @click="goto('HelpTestResult')"
                                 class="info-button">
@@ -73,14 +73,14 @@ export default {
                             <button
                                 @click="goto('HelpTestResult')"
                                 class="button-modest">
-                                Er klopt iets niet
+                                {{translate('somethingIsWrong')}}
                             </button>
                         </div>
                         <div class="YourTestResults__footer">
                             <button
                                 @click="createTestCertificate()"
                                 class="button-standard">
-                                Maak testbewijs
+                                {{translate('createTestProof')}}
                             </button>
                         </div>
                     </div>
@@ -88,17 +88,17 @@ export default {
                     <div v-else>
                         <header>
                             <h2>
-                                Er is geen testuitslag bekend
+                                {{translate('noTestResultPresent')}}
                             </h2>
                         </header>
                         <p>
-                            Haal eerst je tesultaat op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen.
+                            {{translate('noTestResultPresentDirection')}}
                         </p>
                         <div class="section-block__footer">
                             <button
                                 @click="goBack()"
                                 class="button-standard">
-                                Testuitslag ophalen
+                                {{translate('retrieveTestResult')}}
                             </button>
                         </div>
                     </div>

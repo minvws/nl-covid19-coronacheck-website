@@ -255,23 +255,23 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                     <div v-if="qrCode.length > 0">
                         <header>
                             <h2>
-                                Jouw testbewijs
+                                {{translate('yourTestProof')}}
                             </h2>
                         </header>
                         <p>
-                            Lees hier welke informatie er in verwerkt is. Open of download de PDF en print hem als  testbewijs.
+                            {{translate('yourTestProofDirection')}}
                         </p>
                         <div class="Print__container">
                             <div class="Print__buttons">
                                 <button
                                     class="button-standard button--full-width"
                                     @click="openPDF()">
-                                    Open PDF
+                                    {{translate('openPDF')}}
                                 </button>
                                 <button
                                     class="button-standard button--full-width"
                                     @click="downloadPDF()">
-                                    Download PDF
+                                    {{translate('downloadPDF')}}
                                 </button>
                             </div>
                             <div class="Print__image">
@@ -285,16 +285,17 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                     <div v-else>
                         <header>
                             <h2>
-                                Er is geen testbewijs bekend
+                                {{translate('noTestProofPresent')}}
                             </h2>
                         </header>
                         <p>
-                            Je kan van een negatief testuitslag een testbewijs maken. Haal eerst je tesultaat op.
+                            {{translate('noTestProofPresentDirection')}}
                         </p>
                         <div class="section-block__footer">
                             <button
-                                @click="goBack()">
-                                Testuitslag ophalen
+                                @click="goBack()"
+                                class="button-standard">
+                                {{translate('retrieveTestResult')}}
                             </button>
                         </div>
                     </div>
