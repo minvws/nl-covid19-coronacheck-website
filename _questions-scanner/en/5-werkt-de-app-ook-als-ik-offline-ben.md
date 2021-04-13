@@ -6,7 +6,7 @@ title: Does the app work without internet connection?
 lang: en
 categories:
 - en
-- faq
+- faq-scanner
 showBreadCrumbs: true
 showContact: true
 ---
