@@ -110,12 +110,15 @@ export default {
                         } else {
                             this.$store.commit('setTestResultStatus', 'unknown_error')
                         }
+                        console.log(this.testResultStatus);
                         if (this.testResultStatus === 'complete') {
                             this.testCodeStatus.error = '';
                             const testResult = new TestResult(payload.result);
                             this.$store.commit('setTestResult', testResult);
                             this.$store.commit('setSignature', response.data);
                             this.goto('YourTestResult');
+                        } else if (this.testResultStatus === 'pending') {
+                            this.goto('TestResultPending')
                         }
                     }
                 }).catch((error) => {

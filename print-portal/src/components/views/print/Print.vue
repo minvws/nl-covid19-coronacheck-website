@@ -286,12 +286,12 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                         <p>
                             Je kan van een negatief testuitslag een testbewijs maken. Haal eerst je tesultaat op.
                         </p>
-                        <p>
+                        <div class="section-block__footer">
                             <button
                                 @click="goBack()">
                                 Testuitslag ophalen
                             </button>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

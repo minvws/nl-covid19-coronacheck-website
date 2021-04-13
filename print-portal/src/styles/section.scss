@@ -2,9 +2,13 @@
     padding: 20px 0;
 
     .section-block {
-        width: 456px;
+        width: 460px;
         max-width: 100%;
         margin: 0 auto;
+
+        .section-block__footer {
+            margin-top: 40px;
+        }
     }
 
     @include tablet() {

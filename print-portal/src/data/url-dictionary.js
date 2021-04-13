@@ -13,7 +13,11 @@ const urls = {
     },
     'HelpTestResult': {
         'nl': 'wat-betekent-je-testresultaat',
-        'en': 'explaining-your-tes-result'
+        'en': 'explaining-your-test-result'
+    },
+    'TestResultPending': {
+        'nl': 'testresultaat-nog-niet-bekend',
+        'en': 'test-result-is-pending'
     }
 }
 

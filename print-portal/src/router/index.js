@@ -5,6 +5,7 @@ import YourTestResults from '@/components/views/your-test-results/YourTestResult
 import Print from '@/components/views/print/Print';
 import HelpTestResult from '@/components/views/help-pages/HelpTestResult';
 import urlDictionary from '@/data/url-dictionary';
+import TestResultPending from '@/components/views/your-test-results/TestResultPending';
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,9 @@ const routesBase = [
     }, {
         name: 'HelpTestResult',
         component: HelpTestResult
+    }, {
+        name: 'TestResultPending',
+        component: TestResultPending
     }
 ];
 
