@@ -28,7 +28,7 @@ export default {
         },
         addLanguages() {
             this.$store.commit('languages/init', languages);
-            this.$store.commit('languages/setCurrent', this.$store.state.languages.all[2]);
+            this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
         }
     },
     mounted() {
