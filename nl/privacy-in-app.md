@@ -75,7 +75,7 @@ Binnen CoronaCheck worden persoonsgegevens als volgt bewaard:
 
 ### 8. Welke permissies heeft CoronaCheck Scanner nodig?
 
-1. De CoronaCheck Scanner app heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om het testbewijs, in de vorm van een QR-code, uit de CoronaCheck app te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het testbewijs, in de vorm van een QR-code te scannen.
+De CoronaCheck Scanner app heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om het testbewijs, in de vorm van een QR-code, uit de CoronaCheck app te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het testbewijs, in de vorm van een QR-code te scannen.
 
 ### 9. Uw rechten ten aanzien van uw persoonsgegevens
 

@@ -6,7 +6,7 @@ title: Welke informatie kan ik voorafgaand aan mijn pilot evenement delen met mi
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner
 showBreadCrumbs: true
 showContact: true
 ---
