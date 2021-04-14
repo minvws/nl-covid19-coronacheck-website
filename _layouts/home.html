@@ -16,24 +16,6 @@
 <body>
   {% include header.html %}
   <main id="content">
-    <!-- <div class="container"> 
-        <div class="lead">
-        <div class="lead__text">
-          <div class="content-block">
-            <div class="md-block-lead">
-                <p>{{ site.data.translations.coronacheck-lead[page.lang] }}</p> 
-                {% comment %}
-                  {% if page.lang == 'nl' %}
-                    <p class="announcement">{{ site.data.translations.coronacheck-announcement }}</p>
-                  {% endif %}
-                {% endcomment %}
-            </div>
-              
-            {{ page.content }}
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     {% include user-instructions.html %}
     {% include paper.html %}

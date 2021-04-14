@@ -1,0 +1,21 @@
+.icon {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 1rem;
+}
+
+.icon-chevron-right {
+    background-image: url('../img/chevron-up.svg');
+    transform: rotate(90deg);
+}
+
+.icon-chevron-left {
+    background-image: url('../img/chevron-up.svg');
+    transform: rotate(-90deg);
+}
+
+.icon-close {
+    background-image: url('../img/close.svg');
+}

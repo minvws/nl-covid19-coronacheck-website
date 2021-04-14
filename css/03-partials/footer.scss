@@ -261,37 +261,3 @@
         margin-top: 28px;
     }
 }
-
-.footer-logos {
-    margin: 1em 0 2em 0;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
-    > a {
-        margin-top: 1em;
-        margin-right: 1.4em;
-    }
-
-    > a > img {
-        display: block;
-        max-height: 120px;
-        height: 100%;
-        width: 100%;
-
-        &.___logo-ggd {
-            height: auto;
-            width: 162px;
-        }
-    }
-}
-
-.footer__misc {
-    margin: 2em 0 0 0;
-    font-size: 0.84em;
-
-    a, a:visited {
-        color: #fff;
-    }
-}
-

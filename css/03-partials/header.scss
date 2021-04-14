@@ -1,3 +1,40 @@
+
+  .logobar {
+    padding: 0 0 20px 0;
+    z-index: 1;
+    position: relative;
+
+    @media (min-width: 740px) {
+        padding-bottom: 45px;
+    }
+
+    @media (min-width: 960px) {
+        padding-bottom: 50px;
+    }
+}
+
+.logo a {
+    display:block;
+    max-width: 50px;
+    margin: 0 auto;
+}
+
+.logo img {
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+    margin-top: -20px;
+
+    @media (min-width: 740px) {
+        width: 45px;
+        margin-top: 0;
+    }
+
+    @media (min-width: 960px) {
+        width: 50px;
+    }
+}
+
 .header {
   position: relative;
   background: #EFF7F9;
@@ -52,7 +89,20 @@
   }
 }
 
-.browser-ie-11 .header{
+@media only screen and (max-width: 400px) {
+  header h1 {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 2.125rem;
+  }
+
+  header h1 .subtitle {
+      font-size: 1.375rem;
+      line-height: 1.625rem;
+  }
+}
+
+.browser-ie-11 .header {
   @media(min-width: 960px) {
     &::before {
       width: 1480px;
@@ -224,5 +274,35 @@
 
   [lang="bg"] & {
     right: 300px;
+  }
+}
+
+// Rest of this file is only used on scanner landingpage:
+
+.lead {
+  position: relative;
+  margin: -3.7em 0 0 0;
+  padding: 2em 1.6em 0 1.6em;
+  background-color: #FFF;
+  border-radius: 2em;
+  color: #333333; /* RO tekst */;
+
+  @media (min-width: 740px) {
+      padding: 2em 2.4em 0 54px;
+  }
+
+  @media (min-width: 960px) {
+      margin-left: 90px;
+      max-width: 740px;
+  }
+}
+
+.announcement {
+  color: #ca005d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.42;
+  p { 
+      margin-top: 0;
   }
 }
