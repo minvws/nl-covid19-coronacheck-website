@@ -15,9 +15,3 @@ Voor de CoronaCheck-applicaties wordt een doorlopende evaluatie uitgevoerd door 
 Het laatste rapport van de doorlopende evaluatie is hier te downloaden:
 
 <a href="/media/Factsheet_doorlopende_evaluatie.pdf" rel="noopener noreferrer" target="_blank">Factsheet doorlopende evaluatie (PDF, 78kb)</a>
-
-Op 20 en 21 maart 2021 zijn in Biddinghuizen twee Fieldlab evenementen gehouden, met in totaal ongeveer 3000 bezoekers. Op zaterdag 27 maart 2021 is in de Johan Cruijff ArenA in Amsterdam de voetbalwedstrijd Nederland – Letland gespeeld, waarbij ruim 5000 bezoekers aanwezig waren.
-
-Het rapport van de observaties tijdens deze evenementen is hier te downloaden:
-
-<a href="/media/Factsheet_Observaties_CoronaCheck.pdf" rel="noopener noreferrer" target="_blank">Factsheet Observaties CoronaCheck (PDF, 314kb)</a>
