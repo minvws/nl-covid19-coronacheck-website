@@ -23,6 +23,15 @@ export default {
         },
         validUntil() {
             return dateTool.addHoursToDate(this.testResult.sampleDate, this.maxValidityHours, true);
+        },
+        fileName() {
+            const info = [
+                dateTool.dateToString(this.testResult.sampleDate, 'yyyyMMdd'),
+                'coronacheck',
+                'testbewijs',
+                this.testResult.holder.stringCompact
+            ];
+            return info.join('_') + '.pdf';
         }
     },
     methods: {
@@ -36,8 +45,7 @@ export default {
             if (this.qrCode.length > 0) {
                 this.generateQRCode().then(async (urlQR) => {
                     const document = await this.getDocument(urlQR);
-                    const documentName = 'corona-check-test.pdf';
-                    document.save(documentName);
+                    document.save(this.fileName);
                 })
             } else {
                 // todo

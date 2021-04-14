@@ -30,6 +30,10 @@ class Holder {
         return this.firstNameInitial + ' ' + this.lastNameInitial + ' ' + this.birthDayString;
     }
 
+    get stringCompact() {
+        return this.firstNameInitial + this.lastNameInitial + this.birthDayString;
+    }
+
     get initials() {
         return this.firstNameInitial + ' ' + this.lastNameInitial;
     }
