@@ -28,8 +28,10 @@ include:
 
 exclude:
   - vendor
+  - print-portal
   - Gemfile
   - Gemfile.lock
+  - CODE_OF_CONDUCT.md
   - README.md
   - README.content-translations.md
   - README.development.md
