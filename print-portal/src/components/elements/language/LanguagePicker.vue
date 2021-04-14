@@ -36,16 +36,20 @@ export default {
 
 <template>
     <div class="LanguagePicker">
-        <div
+        <button
             v-if="currentLanguage"
             @click="open()"
+            v-on:keyup.esc="close()"
+            tabindex="0"
+            aria-controls="language-dropdown"
+            :aria-expanded="isOpen"
             class="LanguagePicker__current">
             <div class="LanguagePicker__label">
                 {{translate('language')}}:
                 <strong>{{currentLanguage.name}}</strong>
             </div>
             <div class="LanguagePicker__chevron"></div>
-        </div>
+        </button>
         <LanguagePickerLanguages
             v-if="isOpen"/>
     </div>

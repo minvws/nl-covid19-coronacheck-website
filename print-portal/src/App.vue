@@ -39,6 +39,7 @@ export default {
 
 <template>
     <div
+        v-if="currentLanguage"
         id="app"
         :class="{'direction-rtl': currentLanguage.direction === 'rtl' }"
         :style="{'direction': currentLanguage.direction }">
