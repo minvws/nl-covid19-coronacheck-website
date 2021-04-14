@@ -4,57 +4,36 @@ import ProvideCode from '@/components/views/provide-code/ProvideCode.vue'
 import YourTestResults from '@/components/views/your-test-results/YourTestResults';
 import Print from '@/components/views/print/Print';
 import HelpTestResult from '@/components/views/help-pages/HelpTestResult';
-import urlDictionary from '@/data/url-dictionary';
 import TestResultPending from '@/components/views/your-test-results/TestResultPending';
 
 Vue.use(VueRouter)
 
-const locales = ['nl']
-
-const routesBase = [
+const routes = [
     {
-        name: 'ProvideCode',
-        component: ProvideCode
+        path: '/',
+        component: ProvideCode,
+        name: 'ProvideCode'
     }, {
+        path: '/jouw-testresultaat',
         name: 'YourTestResult',
         component: YourTestResults
     }, {
+        path: '/print-qr',
         name: 'Print',
         component: Print
     }, {
+        path: '/wat-betekent-je-testresultaat',
         name: 'HelpTestResult',
         component: HelpTestResult
     }, {
+        path: '/testresultaat-nog-niet-bekend',
         name: 'TestResultPending',
         component: TestResultPending
     }
 ];
 
-const routes = [];
-
-for (const route of routesBase) {
-    for (const locale of locales) {
-        const newRoute = { ...route };
-        newRoute.name = locale + '/' + route.name;
-        newRoute.meta = {
-            key: route.name
-        }
-        newRoute.path = '/' + locale + '/' + urlDictionary[route.name][locale];
-        routes.push(newRoute);
-    }
-}
-
-routes.unshift({
-    path: '/',
-    name: 'ProvideCode',
-    redirect: { name: 'nl/ProvideCode' },
-    meta: {
-        key: 'ProvideCode'
-    }
-})
-
 const router = new VueRouter({
-    // mode: 'history',
+    mode: 'history',
     base: process.env.BASE_URL,
     routes
 })
