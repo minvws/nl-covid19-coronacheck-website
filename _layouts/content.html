@@ -15,11 +15,8 @@
 <body>
   {% include header-slim.html %}
   <main class="content-center" id="content">
-    {% comment %}{% if page.showBreadCrumbs %}
+    {% if page.showBreadCrumbs %}
       {% include breadcrumbs.html title=page.title collection=page.collection %}
-    {% endif %}{% endcomment %}
-    {% if page.collection == 'questions' %}
-      <a href="/nl/faq">Terug naar meestgestelde vragen</a>
     {% endif %}
 
     {% if page.showHomeBtn %}

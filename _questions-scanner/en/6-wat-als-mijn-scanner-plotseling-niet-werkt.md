@@ -6,7 +6,7 @@ title: What if my scanner suddenly doesn't work?
 lang: en
 categories:
 - en
-- faq
+- faq-scanner
 showBreadCrumbs: true
 showContact: true
 ---

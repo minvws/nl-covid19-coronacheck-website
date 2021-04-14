@@ -6,7 +6,7 @@ title: Wanneer zijn de apps klaar voor gebruik?
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner
 showBreadCrumbs: true
 showContact: true
 ---
