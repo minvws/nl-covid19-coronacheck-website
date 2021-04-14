@@ -12,25 +12,32 @@ export default {
         },
         signature() {
             return this.$store.state.signature;
+        },
+        hasQR() {
+            return this.$store.state.qrCode.length > 0;
         }
     },
     methods: {
         createTestCertificate() {
             if (this.signature) {
-                const url = 'https://api-ct.bananenhalen.nl/staticproof/paper';
-                axios({
-                    method: 'post',
-                    url: url,
-                    data: this.signature
-                }).then((response) => {
-                    if (response.data.status === 'ok' && response.data.error === 0) {
-                        this.$store.commit('setQrCode', response.data.qr.data);
-                        this.$router.push({ name: 'Print' });
-                    }
-                    console.log(response);
-                }).catch((error) => {
-                    console.error(error);
-                })
+                if (this.hasQR) {
+                    this.$router.push({ name: 'Print' });
+                } else {
+                    const url = 'https://api-ct.bananenhalen.nl/staticproof/paper';
+                    axios({
+                        method: 'post',
+                        url: url,
+                        data: this.signature
+                    }).then((response) => {
+                        if (response.data.status === 'ok' && response.data.error === 0) {
+                            this.$store.commit('setQrCode', response.data.qr.data);
+                            this.$router.push({ name: 'Print' });
+                        }
+                        console.log(response);
+                    }).catch((error) => {
+                        console.error(error);
+                    })
+                }
             } else {
                 // todo
                 console.error('no signature')
