@@ -54,7 +54,7 @@ jobs:
       - name: Copy print portal to public
         run: mv print-portal/dist public/nl/print
 
-      - name: Remake for NL print portal
+      - name: Remake for EN print portal
         run: |
           sed -i 's/nl\/print/en\/print/g' print-portal/vue.config.js
 
