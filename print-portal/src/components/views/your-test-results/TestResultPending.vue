@@ -21,7 +21,8 @@ export default {
                 <div class="section-block__footer">
                     <button
                         @click="goto('ProvideCode')"
-                        type="button">
+                        type="button"
+                        class="button-standard">
                         Naar home
                     </button>
                 </div>
