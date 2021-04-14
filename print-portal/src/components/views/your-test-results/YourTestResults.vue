@@ -52,11 +52,9 @@ export default {
             <div class="section">
                 <div class="section-block">
                     <div v-if="testResult">
-                        <header>
-                            <h2>
-                                {{translate('yourNegativeTestresult')}}
-                            </h2>
-                        </header>
+                        <h2>
+                            {{translate('yourNegativeTestresult')}}
+                        </h2>
                         <p>
                             {{translate('yourNegativeTestresultDirection')}}
                         </p>
@@ -64,6 +62,7 @@ export default {
                             {{translate('retrievedTestResult')}}
                             <button
                                 @click="goto('HelpTestResult')"
+                                type="button"
                                 class="info-button">
                             </button>
                         </div>
@@ -72,6 +71,7 @@ export default {
                                 :testResult="testResult"/>
                             <button
                                 @click="goto('HelpTestResult')"
+                                type="button"
                                 class="button-modest">
                                 {{translate('somethingIsWrong')}}
                             </button>
@@ -79,6 +79,7 @@ export default {
                         <div class="YourTestResults__footer">
                             <button
                                 @click="createTestCertificate()"
+                                type="button"
                                 class="button-standard">
                                 {{translate('createTestProof')}}
                             </button>
@@ -86,17 +87,16 @@ export default {
                     </div>
 
                     <div v-else>
-                        <header>
-                            <h2>
-                                {{translate('noTestResultPresent')}}
-                            </h2>
-                        </header>
+                        <h2>
+                            {{translate('noTestResultPresent')}}
+                        </h2>
                         <p>
                             {{translate('noTestResultPresentDirection')}}
                         </p>
                         <div class="section-block__footer">
                             <button
                                 @click="goBack()"
+                                type="button"
                                 class="button-standard">
                                 {{translate('retrieveTestResult')}}
                             </button>

@@ -40,7 +40,7 @@ export default {
             v-if="currentLanguage"
             @click="open()"
             v-on:keyup.esc="close()"
-            tabindex="0"
+            type="button"
             aria-controls="language-dropdown"
             :aria-expanded="isOpen"
             class="LanguagePicker__current">
@@ -64,7 +64,6 @@ export default {
         background: #fff;
         cursor: pointer;
         padding: 12px;
-        outline: 2px solid transparent;
         border-radius: 6px;
         display: flex;
         align-items: center;

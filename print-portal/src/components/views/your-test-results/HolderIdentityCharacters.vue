@@ -1,25 +1,16 @@
 <script>
+import Holder from '@/classes/Holder';
+
 export default {
     name: 'HolderIdentityCharacters',
     components: {},
-    data() {
-        return {
-            genericHolder: {
-                firstNameInitial: 'G',
-                lastNameInitial: 'W',
-                birthDayStyled: '01',
-                birthDayMonthStyled: 'FEB'
-            }
+    props: {
+        holder: {
+            type: Holder,
+            required: true
         }
     },
-    computed: {
-        testResult() {
-            return this.$store.state.testResult;
-        },
-        holder() {
-            return this.testResult ? this.testResult.holder : this.genericHolder;
-        }
-    },
+    computed: {},
     methods: {}
 }
 </script>

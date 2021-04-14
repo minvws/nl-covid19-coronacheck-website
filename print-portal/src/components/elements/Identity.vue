@@ -13,12 +13,14 @@ export default {
 
 <template>
     <div class="Identity">
-        <div class="logo-nederland">
+        <a
+            :href="'/' + currentLanguage.locale"
+            class="logo-nederland">
             <img
                 alt="Label Rijksoverheid"
                 width="45"
                 src="assets/img/rijksoverheid/label_ministerie.svg"/>
-        </div>
+        </a>
         <div class="pagewrap">
             <img
                 class="Identity__image"
@@ -73,6 +75,10 @@ export default {
             font-size: 20px;
             text-decoration: none;
             margin-right: 24px;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 

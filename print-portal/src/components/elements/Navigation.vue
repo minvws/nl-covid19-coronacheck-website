@@ -22,9 +22,11 @@ export default {
         <button
             v-if="callbackBack"
             @click="goBack()"
+            :aria-label="translate('back')"
+            type="button"
             class="Navigation__button Navigation__back">
             <img
-                alt="Pagina terug"
+                alt=""
                 src="assets/img/icons/arrow-left.svg"/>
             {{translate('back')}}
         </button>

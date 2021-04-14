@@ -77,12 +77,13 @@ export default {
     <div class="ProvideVerificationCode">
         <div class="input__set">
             <label for="input--verificationCode">
-                <b>{{translate('verificationCode')}}</b><br>
+                <strong>{{translate('verificationCode')}}</strong><br>
                 {{translate('verificationCodeDirection')}}
             </label>
             <input
                 v-model="verificationCode"
                 id="input--verificationCode"
+                type="text"
                 placeholder="Bijv. 123456"/>
             <div
                 v-if="verificationCodeStatus.error.length > 0"
@@ -93,6 +94,7 @@ export default {
                 <button
                     v-if="verificationCodeStatus.expired"
                     @click="requestNewVerificationCode()"
+                    type="button"
                     class="button-modest">
                     {{translate('didNotGetCode')}}
                 </button>

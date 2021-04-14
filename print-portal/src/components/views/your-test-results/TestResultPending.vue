@@ -11,18 +11,17 @@ export default {
     <div class="TestResultPending">
         <div class="section">
             <div class="section-block">
-                <header>
-                    <h2>
-                        Testuitslag nog niet bekend
-                    </h2>
-                </header>
+                <h2>
+                    Testuitslag nog niet bekend
+                </h2>
                 <p>
                     Probeer het later nog eens.<br>
                     Neem voor vragen contact op met jouw testlocatie.
                 </p>
                 <div class="section-block__footer">
                     <button
-                        @click="goto('ProvideCode')">
+                        @click="goto('ProvideCode')"
+                        type="button">
                         Naar home
                     </button>
                 </div>

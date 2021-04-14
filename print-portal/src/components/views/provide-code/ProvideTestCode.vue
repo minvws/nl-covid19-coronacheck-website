@@ -63,6 +63,7 @@ export default {
             <input
                 v-model="testCode"
                 id="input--testCode"
+                type="text"
                 class="input--capitals"
                 placeholder="Bijv. BRB-YYYYYYYYY1-Z2"/>
             <div

@@ -5,10 +5,22 @@ import HolderIdentityCharacters from '../your-test-results/HolderIdentityCharact
 export default {
     name: 'HelpTestResult',
     components: { HolderIdentityCharacters, Navigation },
-    computed: {},
+    computed: {
+        testResult() {
+            return this.$store.state.testResult;
+        },
+        holder() {
+            return this.testResult ? this.testResult.holder : null;
+        }
+    },
     methods: {
         goBack() {
             this.goto('YourTestResult');
+        }
+    },
+    mounted() {
+        if (!this.holder) {
+            this.goto('YourTestResult')
         }
     }
 }
@@ -21,14 +33,13 @@ export default {
                 :callback-back="goBack"/>
             <div class="section">
                 <div class="section-block">
-                    <header>
-                        <h2>
-                            {{translate('aboutTestResult')}}
-                        </h2>
-                    </header>
+                    <h2>
+                        {{translate('aboutTestResult')}}
+                    </h2>
                     <div v-html="translate('aboutTestResultDirection')"/>
 
-                    <HolderIdentityCharacters/>
+                    <HolderIdentityCharacters
+                        :holder="holder"/>
                     <h3>
                         {{translate('yourCredentialsWrong')}}
                     </h3>

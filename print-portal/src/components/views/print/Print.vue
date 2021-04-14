@@ -253,22 +253,22 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
             <div class="section">
                 <div class="section-block">
                     <div v-if="qrCode.length > 0">
-                        <header>
-                            <h2>
-                                {{translate('yourTestProof')}}
-                            </h2>
-                        </header>
+                        <h2>
+                            {{translate('yourTestProof')}}
+                        </h2>
                         <p>
                             {{translate('yourTestProofDirection')}}
                         </p>
                         <div class="Print__container">
                             <div class="Print__buttons">
                                 <button
+                                    type="button"
                                     class="button-standard button--full-width"
                                     @click="openPDF()">
                                     {{translate('openPDF')}}
                                 </button>
                                 <button
+                                    type="button"
                                     class="button-standard button--full-width"
                                     @click="downloadPDF()">
                                     {{translate('downloadPDF')}}
@@ -283,17 +283,16 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                         </div>
                     </div>
                     <div v-else>
-                        <header>
-                            <h2>
-                                {{translate('noTestProofPresent')}}
-                            </h2>
-                        </header>
+                        <h2>
+                            {{translate('noTestProofPresent')}}
+                        </h2>
                         <p>
                             {{translate('noTestProofPresentDirection')}}
                         </p>
                         <div class="section-block__footer">
                             <button
                                 @click="goBack()"
+                                type="button"
                                 class="button-standard">
                                 {{translate('retrieveTestResult')}}
                             </button>
