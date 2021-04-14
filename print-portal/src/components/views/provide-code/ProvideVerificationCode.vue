@@ -36,7 +36,7 @@ export default {
             }
         },
         requestNewVerificationCode() {
-            const message = '<strong>Heb je geen verificatie code gekregen?</strong><p>Als je geen sms/email met een verificatie code hebt gekregen van de testlocatie, kan je een nieuwe code toegestuurd krijgen.</p>'
+            const message = this.translate('noVerificationCodeMessage')
 
             const confirmAction = () => {
                 // false means: do request without the verification code
@@ -84,7 +84,7 @@ export default {
                 v-model="verificationCode"
                 id="input--verificationCode"
                 type="text"
-                placeholder="Bijv. 123456"/>
+                :placeholder="translate('forInstanceAbbr') + ' 123456'"/>
             <div
                 v-if="verificationCodeStatus.error.length > 0"
                 class="input__error">

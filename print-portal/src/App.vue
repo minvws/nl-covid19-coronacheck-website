@@ -11,6 +11,7 @@ export default {
             this.getHolderConfig();
             // todo this should be done based on oneskyapp
             this.addLanguages();
+            this.setCurrentLanguage();
         },
         getHolderConfig() {
             const url = 'https://api-ct.bananenhalen.nl/v1/holder/config/';
@@ -28,7 +29,20 @@ export default {
         },
         addLanguages() {
             this.$store.commit('languages/init', languages);
-            this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
+        },
+        setCurrentLanguage() {
+            const routeNameChunks = this.$route.name.split('/');
+            if (routeNameChunks.length > 0) {
+                const locale = routeNameChunks[0];
+                const language = this.$store.getters['languages/getItemByProperty']('locale', locale, true);
+                if (language) {
+                    this.$store.commit('languages/setCurrent', language);
+                } else {
+                    this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
+                }
+            } else {
+                this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
+            }
         }
     },
     mounted() {

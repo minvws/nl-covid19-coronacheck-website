@@ -47,6 +47,11 @@ const dictionary = {
         'en': 'Frequently askes questions',
         'ar': 'التعليمات'
     },
+    'forInstanceAbbr': {
+        'nl': 'Bijv.',
+        'en': 'E.g.',
+        'ar': 'على سبيل المثال'
+    },
     'language': {
         'nl': 'Taal',
         'en': 'Language',
@@ -72,6 +77,11 @@ const dictionary = {
     'noTestResultPresentDirection': {
         'nl': 'Haal eerst je tesultaat op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen.',
         'en': 'Get your result first. Use the code that you received from the test location for this.'
+    },
+    'noVerificationCodeMessage': {
+        'nl': '<strong>Heb je geen verificatie code gekregen?</strong><p>Als je geen sms/email met een verificatie code hebt gekregen van de testlocatie, kan je een nieuwe code toegestuurd krijgen.</p>',
+        'en': '<strong> Did you get a verification code? </strong> <p> If you did not get an text message / email with a verification code from the test site, you can be sent a new code. </p>',
+        'ar': '<strong> هل لم تتلق رمز التحقق؟ </ strong> <p> إذا لم تتلق رسالة قصيرة SMS / بريدًا إلكترونيًا يحتوي على رمز التحقق من موقع الاختبار ، فقد تتلقى رمزًا جديدًا. </ p>'
     },
     'preferMobile': {
         'nl': 'Liever je testbewijs op je mobiel?',

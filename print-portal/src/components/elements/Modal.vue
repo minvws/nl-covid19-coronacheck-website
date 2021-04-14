@@ -66,22 +66,25 @@ export default {
             </div>
 
             <div class="modal__footer">
-                <div
+                <button
                     v-if="showConfirm"
                     @click="refute()"
+                    type="button"
                     class="button-modest">
                     {{refuteText}}
-                </div>
-                <div
+                </button>
+                <button
                     v-if="showConfirm"
                     @click="confirm()"
+                    type="button"
                     class="button-modest button--ok">
                     {{confirmText}}
-                </div>
-                <div
+                </button>
+                <button
                     v-if="showCloseButton"
                     @click="close()"
-                    class="button-modest">{{translate('close')}}</div>
+                    type="button"
+                    class="button-modest">{{translate('close')}}</button>
             </div>
         </div>
     </div>

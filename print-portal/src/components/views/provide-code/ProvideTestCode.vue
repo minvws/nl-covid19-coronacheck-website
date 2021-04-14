@@ -65,7 +65,7 @@ export default {
                 id="input--testCode"
                 type="text"
                 class="input--capitals"
-                placeholder="Bijv. BRB-YYYYYYYYY1-Z2"/>
+                :placeholder="translate('forInstanceAbbr') + ' BRB-YYYYYYYYY1-Z2'"/>
             <div
                 v-if="testCodeStatus.error.length > 0"
                 class="input__error">
