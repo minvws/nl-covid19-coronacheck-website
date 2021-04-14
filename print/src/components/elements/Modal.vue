@@ -122,7 +122,7 @@ export default {
     border-radius: 5px;
 
     .modal__body {
-        padding: 40px;
+        padding: $length-l;
         font-size: 16px;
 
         strong {
@@ -132,12 +132,16 @@ export default {
 
     .modal__footer {
         position: relative;
-        padding: 0 40px 40px 40px;
+        padding: 0 $length-l $length-l $length-l;
         display: flex;
         align-items: center;
 
         .button-modest {
-            margin-right: 100px;
+            margin-right: $length-xl;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 

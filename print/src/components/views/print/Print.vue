@@ -320,15 +320,14 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
 .Print {
 
     .Print__container {
-        margin-top: 40px;
+        margin-top: $length-xl;
         display: flex;
 
         .Print__buttons {
             width: 212px;
-            margin-top: 40px;
 
             button {
-                margin-bottom: 24px;
+                margin-bottom: $length-s;
             }
         }
 
@@ -336,10 +335,11 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
             width: calc(100% - 212px);
             display: flex;
             justify-content: flex-end;
+            margin-top: -$length-s;
 
             img {
                 width: 100%;
-                margin-right: -60px;
+                margin-right: -$length-xl;
             }
         }
     }

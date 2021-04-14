@@ -56,9 +56,7 @@ export default {
     <div class="ProvideTestCode">
         <div class="input__set">
             <label for="input--testCode">
-                <strong>
-                    {{translate('uniqueCode')}}
-                </strong>
+                {{translate('uniqueCode')}}
             </label>
             <input
                 v-model="testCode"

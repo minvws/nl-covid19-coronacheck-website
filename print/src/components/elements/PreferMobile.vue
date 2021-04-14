@@ -45,11 +45,11 @@ export default {
 .PreferMobile {
     background: $background-color-1;
     margin-top: 110px;
-    padding: 70px 120px 0 120px;
+    padding: $length-xxl 108px 0 108px;
     display: flex;
     height: 350px;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: $length-xxl;
 
     .PreferMobile__image {
         width: 250px;

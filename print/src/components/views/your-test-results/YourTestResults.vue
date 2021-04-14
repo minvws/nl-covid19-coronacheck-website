@@ -82,7 +82,7 @@ export default {
                                 {{translate('somethingIsWrong')}}
                             </button>
                         </div>
-                        <div class="YourTestResults__footer">
+                        <div class="section-block__footer">
                             <button
                                 @click="createTestCertificate()"
                                 type="button"
@@ -115,11 +115,13 @@ export default {
 </template>
 
 <style lang="scss">
+@import "@/styles/variables/index";
+
 .YourTestResults {
 
     .YourTestResults__header {
         position: relative;
-        margin: 48px 0 16px 0;
+        margin: $length-l 0 $grid-x2 0;
         font-weight: 700;
     }
 

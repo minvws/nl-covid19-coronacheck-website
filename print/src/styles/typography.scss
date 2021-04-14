@@ -27,7 +27,7 @@ h2 {
     font-size: 30px;
     line-height: calc(39/32);
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: $length-s;
     color: $black-1;
 }
 
@@ -36,6 +36,6 @@ h3 {
     font-size: 22px;
     line-height: calc(27/22);
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: $grid-x2;
     color: $black-1;
 }

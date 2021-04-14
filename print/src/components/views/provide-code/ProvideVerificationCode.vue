@@ -77,8 +77,10 @@ export default {
     <div class="ProvideVerificationCode">
         <div class="input__set">
             <label for="input--verificationCode">
-                <strong>{{translate('verificationCode')}}</strong><br>
-                {{translate('verificationCodeDirection')}}
+                {{translate('verificationCode')}}<br>
+                <div class="label--side-note">
+                    {{translate('verificationCodeDirection')}}
+                </div>
             </label>
             <input
                 v-model="verificationCode"

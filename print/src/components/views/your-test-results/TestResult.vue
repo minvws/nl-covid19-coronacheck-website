@@ -45,13 +45,13 @@ export default {
 @import "@/styles/variables/index";
 
 .TestResult {
-    padding: 8px 0;
-    border-bottom: 1px solid $grey-2;
+    padding: $grid-x2 0;
+    border-bottom: 1px solid $grey-4;
     font-size: 17px;
-    margin-bottom: 12px;
+    margin-bottom: $grid-x2;
 
     &:first-child {
-        border-top: 1px solid $grey-2;
+        border-top: 1px solid $grey-4;
     }
 
     .TestResult__status {

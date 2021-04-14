@@ -42,7 +42,7 @@ export default {
 @import "@/styles/variables/index";
 
 nav {
-    height: 64px;
+    height: $length-xl;
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -55,15 +55,11 @@ nav {
         font-size: 16px;
 
         img {
-            width: 16px;
+            width: $grid-x2;
             height: auto;
             display: block;
             margin-right: 10px;
         }
-    }
-
-    @include tablet() {
-        padding: 0 12px;
     }
 }
 </style>

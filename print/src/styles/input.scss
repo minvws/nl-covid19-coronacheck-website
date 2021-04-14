@@ -1,20 +1,28 @@
 .input__set {
-    margin: 40px 0;
+    margin: $length-l 0;
 
     label {
-        font-size: 14px;
+        font-size: 13px;
+        font-weight: 700;
+
+        .label--side-note {
+            font-weight: 400;
+            color: $secondary-text;
+            font-size: 15px;
+        }
     }
 
     input {
-        height: 52px;
+        height: $length-xl;
         border: 0;
         border-bottom: 1px solid $grey-3;
         width: 100%;
         border-radius: 0;
         outline: 0;
         font-size: 16px;
-        transition: border-bottom $standard-transition ease;
+        transition: border-bottom 0.3s ease;
         color: $primary-text;
+        padding: 0;
 
         &.input--capitals {
             text-transform: uppercase;
