@@ -18,7 +18,7 @@ export default {
 <template>
     <div class="Identity">
         <a
-            :href="'/' + currentLanguage.locale"
+            href="https://coronacheck.nl/"
             class="logo-nederland">
             <img
                 alt="Label Rijksoverheid"
@@ -75,7 +75,7 @@ export default {
         align-items: center;
 
         .Identity__faq {
-            color: $blue-1;
+            color: $color-overheid-1;
             font-weight: 700;
             font-size: 20px;
             text-decoration: none;

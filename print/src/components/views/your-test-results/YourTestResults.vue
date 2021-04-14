@@ -25,7 +25,7 @@ export default {
                 }).then((response) => {
                     if (response.data.status === 'ok' && response.data.error === 0) {
                         this.$store.commit('setQrCode', response.data.qr.data);
-                        this.goto('Print')
+                        this.$router.push({ name: 'Print' });
                     }
                     console.log(response);
                 }).catch((error) => {
@@ -37,7 +37,7 @@ export default {
             }
         },
         goBack() {
-            this.goto('ProvideCode');
+            this.$router.push({ name: 'ProvideCode' });
         }
     }
 }
@@ -47,7 +47,7 @@ export default {
     <div class="YourTestResults">
         <div class="pagewrap">
             <Navigation
-                v-if="testResult"
+                :display-back-button="testResult !== null"
                 :callback-back="goBack"/>
             <div class="section">
                 <div class="section-block">

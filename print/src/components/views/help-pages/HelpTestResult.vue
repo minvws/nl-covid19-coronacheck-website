@@ -15,12 +15,12 @@ export default {
     },
     methods: {
         goBack() {
-            this.goto('YourTestResult');
+            this.$router.push({ name: 'YourTestResult' });
         }
     },
     mounted() {
         if (!this.holder) {
-            this.goto('YourTestResult')
+            this.$router.push({ name: 'YourTestResult' })
         }
     }
 }

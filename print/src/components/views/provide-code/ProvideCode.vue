@@ -5,20 +5,19 @@ import ProvideVerificationCode from './ProvideVerificationCode';
 import axios from 'axios';
 import TestResult from '@/classes/TestResult';
 import luhnModN from '@/tools/luhn-mod-n';
+import Navigation from '@/components/elements/Navigation';
 
 export default {
     name: 'ProvideCode',
-    components: { ProvideVerificationCode, ProvideTestCode, PreferMobile },
+    components: { Navigation, ProvideVerificationCode, ProvideTestCode, PreferMobile },
     data () {
         return {
             testCodeStatus: {
                 error: ''
             },
             verificationCodeStatus: {
-                error: '',
-                expired: false
-            },
-            expirationTimer: null
+                error: ''
+            }
         }
     },
     computed: {
@@ -71,16 +70,6 @@ export default {
         }
     },
     methods: {
-        startExpirationTimer() {
-            clearTimeout(this.expirationTimer);
-            this.verificationCodeStatus.expired = false;
-            this.expirationTimer = setTimeout(() => {
-                this.verificationCodeStatus.expired = true;
-            }, 10000)
-        },
-        expire() {
-            this.verificationCodeStatus.expired = true;
-        },
         async getSignedResult(includeVerificationCode) {
             return new Promise((resolve, reject) => {
                 let responseForSignedResult, data;
@@ -116,9 +105,9 @@ export default {
                             const testResult = new TestResult(payload.result);
                             this.$store.commit('setTestResult', testResult);
                             this.$store.commit('setSignature', response.data);
-                            this.goto('YourTestResult');
+                            this.$router.push({ name: 'YourTestResult' });
                         } else if (this.testResultStatus === 'pending') {
-                            this.goto('TestResultPending')
+                            this.$router.push({ name: 'TestResultPending' })
                         }
                     }
                 }).catch((error) => {
@@ -137,9 +126,6 @@ export default {
                             this.testCodeStatus.error = '';
                             if (includeVerificationCode) {
                                 this.verificationCodeStatus.error = 'Geen geldige verificatie code';
-                                this.expire();
-                            } else {
-                                this.startExpirationTimer();
                             }
                         }
 
@@ -192,6 +178,8 @@ export default {
 <template>
     <div class="ProvideCode">
         <div class="pagewrap">
+            <Navigation
+                :display-back-button="false"/>
             <div class="section">
                 <div class="section-block">
                     <h2>

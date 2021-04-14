@@ -10,13 +10,12 @@ button {
 .button-standard {
     height: 48px;
     border-radius: 24px;
-    background: #1540EB;
+    background: $main-color-1;
     border: 0;
     padding: 0 50px;
     font-size: 17px;
     font-weight: 700;
     color: #fff;
-    transition: background 0.3s ease;
 
     &.button--full-width {
         width: 100%;
@@ -26,9 +25,13 @@ button {
     }
 
     &.button--inactive {
-        background: #F2F2F7;
-        color: #8F8F93;
+        background: $grey-5;
+        color: $secondary-text;
         pointer-events: none;
+    }
+
+    &:hover {
+        background: $primary-text;
     }
 }
 
@@ -62,8 +65,12 @@ button {
 }
 
 .button-modest {
-    color: $active-color;
+    color: $link-text;
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }

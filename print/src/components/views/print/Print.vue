@@ -27,7 +27,10 @@ export default {
     },
     methods: {
         goBack() {
-            this.goto('YourTestResult');
+            this.$router.push({ name: 'YourTestResult' });
+        },
+        goHome() {
+            this.$router.push({ name: 'ProvideCode' });
         },
         downloadPDF() {
             if (this.qrCode.length > 0) {
@@ -248,7 +251,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
     <div class="Print">
         <div class="pagewrap">
             <Navigation
-                v-if="qrCode.length > 0"
+                :display-back-button="qrCode.length > 0"
                 :callback-back="goBack"/>
             <div class="section">
                 <div class="section-block">
@@ -291,7 +294,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                         </p>
                         <div class="section-block__footer">
                             <button
-                                @click="goBack()"
+                                @click="goHome()"
                                 type="button"
                                 class="button-standard">
                                 {{translate('retrieveTestResult')}}

@@ -6,6 +6,11 @@ export default {
         callbackBack: {
             type: Function,
             required: false
+        },
+        displayBackButton: {
+            type: Boolean,
+            required: true,
+            default: true
         }
     },
     computed: {},
@@ -20,7 +25,7 @@ export default {
 <template>
     <nav>
         <button
-            v-if="callbackBack"
+            v-if="displayBackButton && callbackBack"
             @click="goBack()"
             :aria-label="translate('back')"
             type="button"
@@ -37,7 +42,7 @@ export default {
 @import "@/styles/variables/index";
 
 nav {
-    height: 60px;
+    height: 64px;
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -47,12 +52,13 @@ nav {
         display: flex;
         align-items: center;
         font-weight: 700;
+        font-size: 16px;
 
         img {
-            width: 20px;
+            width: 16px;
             height: auto;
             display: block;
-            margin-right: 6px;
+            margin-right: 10px;
         }
     }
 

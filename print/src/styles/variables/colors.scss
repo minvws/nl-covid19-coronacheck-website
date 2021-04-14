@@ -1,11 +1,20 @@
-$background-color-1: #EFF7F9;
+$black-1: #383836;
+$grey-1: #666666;
+$grey-2: #8F8F93;
+$grey-3: #C7C7CC;
+$grey-4: #E5E5EA;
+$grey-5: #F2F2F7;
+$white: #FFFFFF;
 
-$grey-1: rgba(60, 60, 67, 0.29);
-$grey-2: #D0D0D0;
+$color-overheid-1: #154273;
+$main-color-1: #1540EB;
+$main-color-2: #69DBFF;
+$main-color-3: #3DEC94;
 
-$active-color: #007AFF;
+$primary-text: $black-1;
+$secondary-text: #727679;
+$link-text: #007AFF;
 $error-color: #B30900;
 
-$black-1: #383836;
-
-$blue-1: #154273;
+$background-color-1: #EFF7F9;
+$active-color: $link-text;

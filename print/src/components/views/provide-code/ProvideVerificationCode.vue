@@ -92,7 +92,6 @@ export default {
             </div>
             <div class="request-new-verification-code__container">
                 <button
-                    v-if="verificationCodeStatus.expired"
                     @click="requestNewVerificationCode()"
                     type="button"
                     class="button-modest">
