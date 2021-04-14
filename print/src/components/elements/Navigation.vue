@@ -9,7 +9,7 @@ export default {
         },
         displayBackButton: {
             type: Boolean,
-            required: true,
+            required: false,
             default: true
         }
     },

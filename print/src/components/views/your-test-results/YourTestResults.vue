@@ -66,21 +66,21 @@ export default {
                         </p>
                         <div class="YourTestResults__header">
                             {{translate('retrievedTestResult')}}
-                            <button
-                                @click="goto('HelpTestResult')"
+                            <router-link
+                                :to="{ name: 'HelpTestResult', hash: '#HolderIdentityCharacters' }"
                                 type="button"
                                 class="info-button">
-                            </button>
+                            </router-link>
                         </div>
                         <div class="YourTestResults__results">
                             <TestResult
                                 :testResult="testResult"/>
-                            <button
-                                @click="goto('HelpTestResult')"
+                            <router-link
+                                :to="{ name: 'HelpTestResult' }"
                                 type="button"
                                 class="button-modest">
                                 {{translate('somethingIsWrong')}}
-                            </button>
+                            </router-link>
                         </div>
                         <div class="section-block__footer">
                             <button

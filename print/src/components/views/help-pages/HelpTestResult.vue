@@ -38,6 +38,7 @@ export default {
                     </h2>
                     <div v-html="translate('aboutTestResultDirection')"/>
 
+                    <a name="HolderIdentityCharacters"></a>
                     <HolderIdentityCharacters
                         :holder="holder"/>
                     <h3>
