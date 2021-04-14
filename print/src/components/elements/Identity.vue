@@ -4,7 +4,11 @@ import LanguagePicker from './language/LanguagePicker';
 export default {
     name: 'Identity',
     components: { LanguagePicker },
-    computed: {},
+    computed: {
+        hasLanguages() {
+            return this.$store.state.languages.all.length > 1;
+        }
+    },
     methods: {
         // todo faq href for multi language
     }
@@ -34,7 +38,8 @@ export default {
                 class="Identity__faq">
                 {{translate('faq')}}
             </a>
-            <LanguagePicker/>
+            <LanguagePicker
+                v-if="hasLanguages"/>
         </div>
     </div>
 </template>
