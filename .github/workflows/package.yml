@@ -42,7 +42,7 @@ jobs:
         with:
           node-version: '14.x'
 
-      - name: Create EN print portal
+      - name: Create NL print portal
         run: |
           cd print-portal
           npm install -g @vue/cli-service
@@ -52,13 +52,13 @@ jobs:
           NODE_ENV: development
 
       - name: Copy print portal to public
-        run: mv print-portal/dist public/en/print
+        run: mv print-portal/dist public/nl/print
 
       - name: Remake for NL print portal
         run: |
           sed -i 's/nl\/print/en\/print/g' print-portal/vue.config.js
 
-      - name: Create NL print portal
+      - name: Create EN print portal
         run: |
           cd print-portal
           npm run build --if-present
@@ -66,7 +66,7 @@ jobs:
           NODE_ENV: development
 
       - name: Copy print portal to public
-        run: mv print-portal/dist public/nl/print
+        run: mv print-portal/dist public/en/print
 
       - name: Create tar
         run: tar -czf ct_website_${{ env.RELEASE_VERSION }}.tar.gz ./public
