@@ -99,7 +99,6 @@ export default {
                         } else {
                             this.$store.commit('setTestResultStatus', 'unknown_error')
                         }
-                        console.log(this.testResultStatus);
                         if (this.testResultStatus === 'complete') {
                             this.testCodeStatus.error = '';
                             const testResult = new TestResult(payload.result);

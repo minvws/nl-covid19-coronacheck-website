@@ -33,7 +33,6 @@ export default {
                             this.$store.commit('setQrCode', response.data.qr.data);
                             this.$router.push({ name: 'Print' });
                         }
-                        console.log(response);
                     }).catch((error) => {
                         console.error(error);
                     })

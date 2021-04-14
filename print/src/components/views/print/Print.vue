@@ -208,7 +208,6 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
             const imageArtwork = await this.createImageOnTheFly('assets/img/pdf/artwork.png');
             const imageCoronacheck = await this.createImageOnTheFly('assets/img/pdf/coronacheck.png');
             const imageFoldInstructions = await this.createImageOnTheFly('assets/img/pdf/fold-instructions.png');
-            console.log(imageArtwork);
             doc.addImage(urlQR, 'PNG', pageMarginLeft, qrCodeY, 70, 70, ...imageSettings);
             doc.addImage(imageArtwork, 'PNG', (questionsTableBaseX + 17), (pageHeight / 2 + 14), 52, 44, ...imageSettings);
             doc.addImage(imageCoronacheck, 'PNG', 10, (pageHeight - bottomBarHeight + 8), 70, 15, ...imageSettings);
