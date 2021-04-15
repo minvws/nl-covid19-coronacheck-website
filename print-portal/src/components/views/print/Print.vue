@@ -6,7 +6,7 @@ import montserrat from '@/assets/fontAsBase64';
 import dateTool from '@/tools/date';
 
 const cmToInch = 0.393700787;
-const QRSizeInCm = 7;
+const QRSizeInCm = 8;
 
 export default {
     name: 'Print',
@@ -68,7 +68,9 @@ export default {
             const sizeInPixels = Math.round(QRSizeInCm * cmToInch * dpi);
             const qrOptions = {
                 width: sizeInPixels,
-                height: sizeInPixels
+                height: sizeInPixels,
+                margin: 0,
+                errorCorrectionLevel: 'M'
             };
             return new Promise((resolve, reject) => {
                 QRCode.toDataURL(this.qrCode, qrOptions)
@@ -99,12 +101,12 @@ export default {
             const pageWidth = 210;
             // this is top paper to baseline first text
             const pageMarginTop = 20;
-            const pageMarginLeft = 17;
+            const pageMarginLeft = 12;
             const lineHeight = 6;
             const lineHeightSmall = 5.5;
             const bottomBarHeight = 30;
-            const qrCodeY = 30;
-            const tableBaseY = 112;
+            const qrCodeY = 27;
+            const tableBaseY = 116;
             const tableBaseCol2X = 48;
             const instructionsBaseY = (pageHeight / 2) + 17;
             const questionsTableBaseX = (pageWidth / 2) + 10;
@@ -214,7 +216,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
             const imageArtwork = await this.createImageOnTheFly('assets/img/pdf/artwork.png');
             const imageCoronacheck = await this.createImageOnTheFly('assets/img/pdf/coronacheck.png');
             const imageFoldInstructions = await this.createImageOnTheFly('assets/img/pdf/fold-instructions.png');
-            doc.addImage(urlQR, 'PNG', pageMarginLeft, qrCodeY, 70, 70, ...imageSettings);
+            doc.addImage(urlQR, 'PNG', pageMarginLeft, qrCodeY, (QRSizeInCm * 10), (QRSizeInCm * 10), ...imageSettings);
             doc.addImage(imageArtwork, 'PNG', (questionsTableBaseX + 17), (pageHeight / 2 + 14), 52, 44, ...imageSettings);
             doc.addImage(imageCoronacheck, 'PNG', 10, (pageHeight - bottomBarHeight + 8), 70, 15, ...imageSettings);
             doc.addImage(imageFoldInstructions, 'PNG', 65, (instructionsBaseY - 6), 35, 10, ...imageSettings);
