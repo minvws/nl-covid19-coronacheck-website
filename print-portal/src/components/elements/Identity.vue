@@ -90,8 +90,20 @@ export default {
     @include mobile() {
         justify-content: center;
 
-        .Identity__image {
+        .pagewrap {
+            padding: 0;
+        }
 
+        .Identity__image {
+            margin: 0 auto;
+            height: 150px;
+        }
+
+        .Identity__tools {
+
+            .Identity__faq {
+                display: none;
+            }
         }
     }
 }

@@ -44,7 +44,7 @@ export default {
 
 .PreferMobile {
     background: $background-color-1;
-    margin-top: 110px;
+    margin-top: $length-xxl;
     padding: $length-xxl 108px 0 108px;
     display: flex;
     height: 350px;
@@ -73,6 +73,7 @@ export default {
             height: 60px;
             padding: 10px;
             margin-right: 20px;
+            display: block;
 
             &.app-badge--with-padding {
                 height: 60px;
@@ -103,6 +104,36 @@ export default {
 
         .PreferMobile__text {
             width: 100%;
+        }
+    }
+
+    @include mobile() {
+        padding: $length-xl $length-s 0 $length-s;
+        height: auto;
+        margin-bottom: $length-xxl--mobile;
+
+        .PreferMobile__image {
+            width: 100%;
+            margin-right: 0;
+            height: 260px;
+            overflow: hidden;
+            padding: 0 $length-xl--mobile;
+        }
+
+        .PreferMobile__text {
+            width: 100%;
+            margin-bottom: 56px;
+
+            .PreferMobile__badges {
+                display: block;
+
+                // ugly bottom margin. The android images have 10px padding inside the image
+                // to be consequent, we do this for apple as well with padding.
+                // 10 + 10 = 20 -> -4px to reach the designed 16 (...)
+                .app-badge {
+                    margin: 0 0 -4px 0;
+                }
+            }
         }
     }
 }

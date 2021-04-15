@@ -6,10 +6,11 @@ import axios from 'axios';
 import TestResult from '@/classes/TestResult';
 import luhnModN from '@/tools/luhn-mod-n';
 import Navigation from '@/components/elements/Navigation';
+import FaqMobileLink from '@/components/elements/FaqMobileLink';
 
 export default {
     name: 'ProvideCode',
-    components: { Navigation, ProvideVerificationCode, ProvideTestCode, PreferMobile },
+    components: { FaqMobileLink, Navigation, ProvideVerificationCode, ProvideTestCode, PreferMobile },
     data () {
         return {
             testCodeStatus: {
@@ -100,6 +101,7 @@ export default {
                             this.$store.commit('setTestResultStatus', 'unknown_error')
                         }
                         if (this.testResultStatus === 'complete') {
+                            this.setCurrentDate(response);
                             this.testCodeStatus.error = '';
                             const testResult = new TestResult(payload.result);
                             this.$store.commit('setTestResult', testResult);
@@ -133,10 +135,13 @@ export default {
                         }
                     } else {
                         const message = '<strong>Sorry, er gaat iets mis</strong><br><br>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck.';
-                        this.$store.commit('modal/set', { message });
+                        this.$store.commit('modal/set', { message, closeButton: true });
                     }
                 })
             })
+        },
+        setCurrentDate(response) {
+            console.log(response);
         },
         // todo please pay extra attention to this code while reviewing
         handle401(response) {
@@ -201,6 +206,8 @@ export default {
                 </div>
             </div>
             <PreferMobile/>
+
+            <FaqMobileLink/>
         </div>
     </div>
 </template>

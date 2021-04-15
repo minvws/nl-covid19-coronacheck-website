@@ -61,5 +61,13 @@ nav {
             margin-right: 10px;
         }
     }
+
+    @include mobile() {
+        height: $length-xl--mobile;
+
+        .Navigation__button {
+            display: none;
+        }
+    }
 }
 </style>

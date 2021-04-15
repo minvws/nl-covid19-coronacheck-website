@@ -10,8 +10,11 @@
         }
     }
 
+    &.section--text-align-center {
+        text-align: center;
+    }
+
     @include tablet() {
-        padding: 0 12px;
 
         .section-block {
             width: 100%;

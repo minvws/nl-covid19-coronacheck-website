@@ -338,7 +338,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
             margin-top: -$length-s;
 
             img {
-                width: 100%;
+                width: 248px;
                 margin-right: -$length-xl;
             }
         }
@@ -347,17 +347,31 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
     @include tablet() {
 
         .Print__container {
+
+            .Print__image {
+
+                img {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    @include mobile() {
+
+        .Print__container {
             display: block;
 
             .Print__buttons {
-                width: 100%;
+                margin-bottom: $length-xxl--mobile;
             }
 
             .Print__image {
                 width: 100%;
+                margin: 0;
 
                 img {
-                    width: 500px;
+                    margin: 0 auto;
                 }
             }
         }
