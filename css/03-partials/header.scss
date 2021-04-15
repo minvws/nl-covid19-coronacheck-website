@@ -35,7 +35,9 @@
     }
 }
 
-.header {
+// Scanner Landingspage
+
+.header--scanner {
   position: relative;
   background: #EFF7F9;
   background-size: 120px;
@@ -87,117 +89,15 @@
       right: calc((1100px / -2) + calc(100% / 2));
     }
   }
-}
 
-@media only screen and (max-width: 400px) {
-  header h1 {
-      width: 100%;
-      font-size: 2rem;
-      line-height: 2.125rem;
-  }
-
-  header h1 .subtitle {
-      font-size: 1.375rem;
-      line-height: 1.625rem;
-  }
-}
-
-.browser-ie-11 .header {
-  @media(min-width: 960px) {
-    &::before {
-      width: 1480px;
-      height: 460px;
-      left: 0; 
-      right: 0;
-      margin-left: auto; 
-      margin-right: auto; 
-      background-image: url('../img/background-full.svg');
-    }
-
-    &::after {
-      content: none;
-    }
-  }
-}
-
-
-.header--slim {
-    min-height: 180px;
-    padding: 0px 0 50px 0; 
-    color: #ffffff;
-    background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
-
-    &::before,
-    &::after {
-      content: none;
-    }
-
-    .header__logo-badge {
-      position: absolute;
-      top: 15px;
-      right: 30px;
-      bottom: 0;
-      z-index: 0;
-      width: 80px;
-
-      .browser-ie-11 & {
-          right: 166px;
-      }
-    }
-
-    @media(min-width: 740px) {
-        min-height: 220px;
-    }
-
-    @media(min-width: 960px) {
-        background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
-        &:before {
-            content: none;
-            background-image: none;
-        }
-        .header__logo-badge {
-            /** Perfect alignment: width: of this element, width of the element above */
-            width: 80px;
-            right: calc((980px / -2) + calc(100% / 2));
-            top: 15px;
-        }
-    }
-}
-
-.header--statement {
-    min-height: 160px;
-}
-
-.header__title {
-    font-size: 30px;
-    font-weight: 800;
-    padding-top: 30px;
-
-    @media (min-width: 740px) {
-        font-size: 40px;
-        padding-left: 55px;
-    }
-
+  .header__layout__middle {
     @media (min-width: 960px) {
-        padding-left: 155px;
+        position: relative; 
+        padding: 20px 0 0 250px;
     }
-}
+  }
 
-.header__center {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-
-    @media (min-width: 740px) {
-        padding: 0 40px;
-    }
-
-    @media (min-width: 960px) {
-        padding: 0 40px;
-    }
-}
-
-.header__layout {
+  .header__layout {
     color: $color-RO_darkblue;
     // See .content with negative margin-top
     padding: 0 0 10em 1.38em;
@@ -210,14 +110,6 @@
     @media (min-width: 960px) {
       padding: 0 0 10em 0;
       margin-left: 90px;
-    }
-}
-
-.header__layout__middle {
-    @media (min-width: 960px) {
-        position: relative;
-        // padding: 20px 0 0 180px; //todo temp page
-        padding: 20px 0 0 250px;
     }
 }
 
@@ -242,7 +134,132 @@
     @media (min-width: 960px) {
         width: 100%;
     }
+  }
 }
+
+@media only screen and (max-width: 400px) {
+  header h1 {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 2.125rem;
+  }
+
+  header h1 .subtitle {
+      font-size: 1.375rem;
+      line-height: 1.625rem;
+  }
+}
+
+.lead {
+  position: relative;
+  margin: -3.7em 0 0 0;
+  padding: 2em 1.6em 0 1.6em;
+  background-color: #FFF;
+  border-radius: 2em;
+  color: #333333; /* RO tekst */;
+
+  @media (min-width: 740px) {
+      padding: 2em 2.4em 0 54px;
+  }
+
+  @media (min-width: 960px) {
+      margin-left: 90px;
+      max-width: 740px;
+  }
+}
+
+.browser-ie-11 .header--scanner {
+  @media(min-width: 960px) {
+    &::before {
+      width: 1480px;
+      height: 460px;
+      left: 0; 
+      right: 0;
+      margin-left: auto; 
+      margin-right: auto; 
+      background-image: url('../img/background-full.svg');
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+// Slim header, used on subpages
+
+.header--slim {
+  min-height: 180px;
+  padding: 0px 0 50px 0; 
+  color: #ffffff;
+  background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
+
+  &::before,
+  &::after {
+    content: none;
+  }
+
+  .header__logo-badge {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    bottom: 0;
+    z-index: 0;
+    width: 80px;
+
+    .browser-ie-11 & {
+        right: 166px;
+    }
+  }
+
+  @media(min-width: 740px) {
+      min-height: 220px;
+  }
+
+  @media(min-width: 960px) {
+      background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
+      &:before {
+          content: none;
+          background-image: none;
+      }
+      .header__logo-badge {
+          /** Perfect alignment: width: of this element, width of the element above */
+          width: 80px;
+          right: calc((980px / -2) + calc(100% / 2));
+          top: 15px;
+      }
+  }
+
+  .header__title {
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 30px;
+
+    @media (min-width: 740px) {
+        font-size: 40px;
+        padding-left: 55px;
+    }
+
+    @media (min-width: 960px) {
+        padding-left: 155px;
+    }
+  }
+
+  .header__center {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (min-width: 740px) {
+        padding: 0 40px;
+    }
+
+    @media (min-width: 960px) {
+        padding: 0 40px;
+    }
+  }
+}
+
 
 .header__logo-badge {
     width: 100px;
@@ -277,32 +294,3 @@
   }
 }
 
-// Rest of this file is only used on scanner landingpage:
-
-.lead {
-  position: relative;
-  margin: -3.7em 0 0 0;
-  padding: 2em 1.6em 0 1.6em;
-  background-color: #FFF;
-  border-radius: 2em;
-  color: #333333; /* RO tekst */;
-
-  @media (min-width: 740px) {
-      padding: 2em 2.4em 0 54px;
-  }
-
-  @media (min-width: 960px) {
-      margin-left: 90px;
-      max-width: 740px;
-  }
-}
-
-.announcement {
-  color: #ca005d;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.42;
-  p { 
-      margin-top: 0;
-  }
-}

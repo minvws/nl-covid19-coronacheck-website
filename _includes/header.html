@@ -4,7 +4,7 @@
       {{ site.data.translations.header-skip-to-content[page.lang] }}
     </a>
   </div>
-  <div class="header">
+  <div class="header {% if include.for == "scanner" %}header--scanner{% endif %}">
     <div class="logobar">
       <div class="logo">
         <a href="{{ langSlug }}">
@@ -26,7 +26,6 @@
 
       {% if include.for == "scanner" %}
         <div class="header__layout">
-          {% comment %}  <img src="{{ site.baseurl }}/img/logo-app.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" /> {% endcomment %}
           <div class="header__layout__middle">
             <h1 class="header__text">
               {{ site.data.translations.scanner-header-title[page.lang] }}<br />
@@ -38,8 +37,7 @@
         </div>
       {% else %}
         <div class="header__layout">
-          <div class="header__layout__middle">
-            <h1 class="header__text">
+            <h1 class="header__title">
               {{ site.data.translations.header-title[page.lang] }}<br />
               <span>{{ site.data.translations.header-subtitle[page.lang] }}</span>
             </h1>
