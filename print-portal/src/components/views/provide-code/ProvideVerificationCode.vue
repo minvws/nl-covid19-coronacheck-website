@@ -87,6 +87,8 @@ export default {
                 v-model="verificationCode"
                 id="input--verificationCode"
                 type="text"
+                pattern="[0-9]*"
+                inputmode="numeric"
                 :placeholder="translate('forInstanceAbbr') + ' 123456'"/>
             <div
                 v-if="verificationCodeStatus.error.length > 0"
