@@ -24,8 +24,8 @@ export default {
             <div class="PreferMobile__badges">
                 <a
                     class="app-badge"
-                    href=""
-                    target="">
+                    href="https://apps.apple.com/nl/app/coronacheck/id1548269870"
+                    target="_blank">
                     <img src="assets/img/app-store-badges/apple-store-badge.svg"/>
                 </a>
                 <a
