@@ -22,6 +22,11 @@
           <div class="content-block">
             <div class="md-block-lead">
                 <p>{{ site.data.translations.scanner-lead[page.lang] }}</p> 
+                {% comment %}
+                  {% if page.lang == 'nl' %}
+                    <p class="announcement">{{ site.data.translations.scanner-announcement }}</p>
+                  {% endif %}
+                {% endcomment %}
             </div>
               
             <div markdown="1">

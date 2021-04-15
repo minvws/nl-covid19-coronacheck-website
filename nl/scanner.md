@@ -1,5 +1,5 @@
 ---
-layout: scanner-home
+layout: home-scanner
 lang: nl
 title: ''
 showTogether : true
