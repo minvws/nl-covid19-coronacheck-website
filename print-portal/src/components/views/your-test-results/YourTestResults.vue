@@ -71,6 +71,7 @@ export default {
                                 :to="{ name: 'HelpTestResult', hash: '#HolderIdentityCharacters' }"
                                 type="button"
                                 class="info-button">
+                                <img src="assets/img/icons/info.svg" alt=""/>
                             </router-link>
                         </div>
                         <div class="YourTestResults__results">
