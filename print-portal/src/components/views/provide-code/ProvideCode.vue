@@ -175,26 +175,7 @@ export default {
             } else {
                 return 'unknown_error';
             }
-        },
-        async getConfiguration() {
-            const url = 'https://api-ct.bananenhalen.nl/v1/holder/config_ctp';
-            axios({
-                method: 'get',
-                url: url
-            }).then((response) => {
-                if (response.data && response.data.payload) {
-                    const config = JSON.parse(atob(response.data.payload));
-                    this.$store.commit('testProviders/init', config.corona_test_providers);
-                } else {
-                    console.error('Something went wrong when retrieving config corona test providers')
-                }
-            }).catch((error) => {
-                console.error(error);
-            })
         }
-    },
-    mounted() {
-        this.getConfiguration();
     }
 }
 </script>

@@ -6,14 +6,20 @@ import Modal from './components/elements/Modal';
 
 export default {
     components: { Modal, Identity },
+    computed: {
+        dataReady() {
+            return this.currentLanguage && this.$store.state.holderConfig && this.$store.state.testProviders.all.length > 0;
+        }
+    },
     methods: {
         init() {
             this.getHolderConfig();
+            this.getTestProviders();
             // todo this should be done based on oneskyapp
             this.addLanguages();
             this.setCurrentLanguage();
         },
-        getHolderConfig() {
+        async getHolderConfig() {
             const url = 'https://api-ct.bananenhalen.nl/v1/holder/config/';
             axios({
                 method: 'get',
@@ -25,6 +31,22 @@ export default {
                 }
             }).catch((error) => {
                 console.log(error);
+            })
+        },
+        async getTestProviders() {
+            const url = 'https://api-ct.bananenhalen.nl/v1/holder/config_ctp';
+            axios({
+                method: 'get',
+                url: url
+            }).then((response) => {
+                if (response.data && response.data.payload) {
+                    const config = JSON.parse(atob(response.data.payload));
+                    this.$store.commit('testProviders/init', config.corona_test_providers);
+                } else {
+                    console.error('Something went wrong when retrieving config corona test providers')
+                }
+            }).catch((error) => {
+                console.error(error);
             })
         },
         addLanguages() {
@@ -53,7 +75,7 @@ export default {
 
 <template>
     <div
-        v-if="currentLanguage"
+        v-if="dataReady"
         id="app"
         :class="{'direction-rtl': currentLanguage.direction === 'rtl' }"
         :style="{'direction': currentLanguage.direction }">
