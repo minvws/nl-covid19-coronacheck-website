@@ -31,9 +31,9 @@ export default {
             this.$store.commit('languages/init', languages);
         },
         setCurrentLanguage() {
-            const routeNameChunks = this.$route.name.split('/');
+            const routeNameChunks = window.location.href.split('/');
             if (routeNameChunks.length > 0) {
-                const locale = routeNameChunks[0];
+                const locale = routeNameChunks[3];
                 const language = this.$store.getters['languages/getItemByProperty']('locale', locale, true);
                 if (language) {
                     this.$store.commit('languages/setCurrent', language);
