@@ -122,7 +122,7 @@ export default {
             const regular = ['montserrat', 'normal', 400];
             const bold = ['montserrat', 'normal', 700];
 
-            const textItems = [
+            const textItemsA = [
                 {
                     text: 'Je testbewijs',
                     fontWeight: 700,
@@ -143,26 +143,30 @@ export default {
                     text: this.testResult.holder.birthDayString,
                     fontWeight: 700,
                     position: [tableBaseCol2X, (tableBaseY + lineHeight)]
-                }, {
-                    text: 'Getest op',
-                    position: [pageMarginLeft, (tableBaseY + 3 * lineHeight)]
-                }, {
-                    text: dateTool.dateToString(this.testResult.sampleDate),
-                    fontWeight: 700,
-                    position: [tableBaseCol2X, (tableBaseY + 3 * lineHeight)]
-                }, {
-                    text: 'Geldig tot',
-                    position: [pageMarginLeft, (tableBaseY + 4 * lineHeight)]
-                }, {
-                    text: this.validUntil,
-                    fontWeight: 700,
-                    position: [tableBaseCol2X, (tableBaseY + 4 * lineHeight)]
-                }, {
-                    text: 'INSTRUCTIES',
-                    fontWeight: 700,
-                    position: [pageMarginLeft, instructionsBaseY]
-                }, {
-                    text: `1. Print dit testbewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)
+                }]
+
+            const privacyItems = [{
+                text: 'Getest op',
+                position: [pageMarginLeft, (tableBaseY + 3 * lineHeight)]
+            }, {
+                text: dateTool.dateToString(this.testResult.sampleDate),
+                fontWeight: 700,
+                position: [tableBaseCol2X, (tableBaseY + 3 * lineHeight)]
+            }, {
+                text: 'Geldig tot',
+                position: [pageMarginLeft, (tableBaseY + 4 * lineHeight)]
+            }, {
+                text: this.validUntil,
+                fontWeight: 700,
+                position: [tableBaseCol2X, (tableBaseY + 4 * lineHeight)]
+            }];
+
+            const texItemsB = [{
+                text: 'INSTRUCTIES',
+                fontWeight: 700,
+                position: [pageMarginLeft, instructionsBaseY]
+            }, {
+                text: `1. Print dit testbewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)
 
 2. Neem een geldig identiteitsbewijs mee naar de activiteit
 
@@ -170,29 +174,31 @@ export default {
 
 
 Let op: dit is géén toegangsticket voor je activiteit`,
-                    position: [pageMarginLeft, (instructionsBaseY + 3 * lineHeight)],
-                    width: (pageWidth / 2 - (2 * pageMarginLeft))
-                }, {
-                    text: 'Laat je jouw testbewijs liever op je telefoon zien? Gebruik dan de code uit de e-mail in de CoronaCheck-app',
-                    fontWeight: 400,
-                    fontSize: 10,
-                    lineHeight: lineHeightSmall,
-                    position: [footerBaseX, footerBaseY],
-                    width: (pageWidth / 2 - (2 * pageMarginLeft))
-                }, {
-                    text: 'VRAGEN?',
-                    fontWeight: 700,
-                    fontSize: 10,
-                    position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding)]
-                }, {
-                    text: `Bekijk de meestgestelde vragen op www.CoronaCheck.nl
+                position: [pageMarginLeft, (instructionsBaseY + 3 * lineHeight)],
+                width: (pageWidth / 2 - (2 * pageMarginLeft))
+            }, {
+                text: 'Laat je jouw testbewijs liever op je telefoon zien? Gebruik dan de code uit de e-mail in de CoronaCheck-app',
+                fontWeight: 400,
+                fontSize: 10,
+                lineHeight: lineHeightSmall,
+                position: [footerBaseX, footerBaseY],
+                width: (pageWidth / 2 - (2 * pageMarginLeft))
+            }, {
+                text: 'VRAGEN?',
+                fontWeight: 700,
+                fontSize: 10,
+                position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding)]
+            }, {
+                text: `Bekijk de meestgestelde vragen op www.CoronaCheck.nl
 
 Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
-                    lineHeight: lineHeightSmall,
-                    position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding + 2 * lineHeightSmall)],
-                    width: (pageWidth / 2 - 20 - (2 * questionsTablePadding))
-                }
-            ];
+                lineHeight: lineHeightSmall,
+                position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding + 2 * lineHeightSmall)],
+                width: (pageWidth / 2 - 20 - (2 * questionsTablePadding))
+            }];
+
+            const textItems = (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'acceptance')
+                ? [...textItemsA, ...privacyItems, ...texItemsB] : [...textItemsA, ...texItemsB];
 
             // bottom bar
             doc.setFillColor(239, 247, 249);
