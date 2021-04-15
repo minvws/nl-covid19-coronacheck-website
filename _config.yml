@@ -19,6 +19,7 @@ collections:
     output: false  
 
 sass:
+  style: compressed
   load_paths:
     - css
 
