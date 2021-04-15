@@ -12,6 +12,7 @@ body {
 .pagewrap {
     width: 1024px;
     margin: 0 auto;
+    padding-bottom: $length-xxl;
 
     @include tablet() {
         width: 100%;
