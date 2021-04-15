@@ -18,7 +18,8 @@ export default {
                 return this.$store.state.verificationCode;
             },
             set(value) {
-                this.$store.commit('updateProperty', { key: 'verificationCode', value })
+                const strippedValue = value.replace(/ /g, '');
+                this.$store.commit('updateProperty', { key: 'verificationCode', value: strippedValue })
             }
         },
         isVerificationCodeValid() {

@@ -32,7 +32,8 @@ export default {
             set(value) {
                 // editing the test code should reset the process
                 this.resetProcess();
-                this.$store.commit('updateProperty', { key: 'testCode', value })
+                const strippedValue = value.replace(/ /g, '');
+                this.$store.commit('updateProperty', { key: 'testCode', value: strippedValue })
             }
         }
     },
