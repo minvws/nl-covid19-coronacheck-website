@@ -8,10 +8,11 @@ import luhnModN from '@/tools/luhn-mod-n';
 import Navigation from '@/components/elements/Navigation';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import dateTool from '@/tools/date';
+import Footer from '@/components/elements/Footer';
 
 export default {
     name: 'ProvideCode',
-    components: { FaqMobileLink, Navigation, ProvideVerificationCode, ProvideTestCode, PreferMobile },
+    components: { Footer, FaqMobileLink, Navigation, ProvideVerificationCode, ProvideTestCode, PreferMobile },
     data () {
         return {
             testCodeStatus: {
@@ -220,6 +221,7 @@ export default {
 
             <FaqMobileLink/>
         </div>
+        <Footer/>
     </div>
 </template>
 
