@@ -63,6 +63,7 @@ export default {
             </label>
             <input
                 v-model="testCode"
+                v-on:keyup.enter="sendTestCode"
                 id="input--testCode"
                 type="text"
                 class="input--capitals"

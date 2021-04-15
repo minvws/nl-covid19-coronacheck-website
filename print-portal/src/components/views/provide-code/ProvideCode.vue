@@ -194,7 +194,9 @@ export default {
                         {{translate('testCodeDirection')}}
                     </p>
 
-                    <form autocomplete="off">
+                    <form
+                        v-on:submit.prevent
+                        autocomplete="off">
                         <ProvideTestCode
                             :test-code-status="testCodeStatus"
                             :is-test-code-valid="isTestCodeValid"

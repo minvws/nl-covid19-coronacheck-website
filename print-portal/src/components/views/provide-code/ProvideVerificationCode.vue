@@ -85,6 +85,7 @@ export default {
             </label>
             <input
                 v-model="verificationCode"
+                v-on:keyup.enter="sendVerificationCode"
                 id="input--verificationCode"
                 type="text"
                 pattern="[0-9]*"
