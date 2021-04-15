@@ -23,8 +23,8 @@ export default {
             }
         },
         isVerificationCodeValid() {
-            // todo refine
-            return this.verificationCode.length === 6;
+            const pattern = /^\d+$/;
+            return this.verificationCode.length === 6 && pattern.test(this.verificationCode);
         },
         testResultStatus() {
             return this.$store.state.testResultStatus;
