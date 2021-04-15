@@ -7,6 +7,7 @@ import TestResult from '@/classes/TestResult';
 import luhnModN from '@/tools/luhn-mod-n';
 import Navigation from '@/components/elements/Navigation';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
+import dateTool from '@/tools/date';
 
 export default {
     name: 'ProvideCode',
@@ -101,7 +102,7 @@ export default {
                             this.$store.commit('setTestResultStatus', 'unknown_error')
                         }
                         if (this.testResultStatus === 'complete') {
-                            this.setCurrentDate(response);
+                            this.setTimerForValidityTestResult(response, payload.result);
                             this.testCodeStatus.error = '';
                             const testResult = new TestResult(payload.result);
                             this.$store.commit('setTestResult', testResult);
@@ -140,8 +141,18 @@ export default {
                 })
             })
         },
-        setCurrentDate(response) {
-            console.log(response);
+        setTimerForValidityTestResult(response, testResult) {
+            const dateNow = response.headers.date;
+            const dateSample = testResult.sampleDate;
+            const maxValidity = this.$store.state.holderConfig.maxValidityHours;
+            const invalidAt = dateTool.addHoursToDate(dateSample, maxValidity, false);
+            const timeToInvalidation = invalidAt.getTime() - new Date(dateNow).getTime();
+            setTimeout(() => {
+                const message = 'Uw testuitslag is niet meer geldig';
+                this.$store.commit('invalidate');
+                this.$store.commit('modal/set', { message, closeButton: true });
+                this.$router.push({ name: 'ProvideCode' });
+            }, timeToInvalidation)
         },
         // todo please pay extra attention to this code while reviewing
         handle401(response) {

@@ -40,6 +40,13 @@ const mutations = {
     },
     setHolderConfig(state, holderConfig) {
         state.holderConfig = holderConfig;
+    },
+    invalidate(state) {
+        state.testCode = '';
+        state.verificationCode = '';
+        state.testResultStatus = '';
+        state.signature = '';
+        state.qrCode = '';
     }
 }
 
