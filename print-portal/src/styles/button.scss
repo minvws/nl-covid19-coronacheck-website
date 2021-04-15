@@ -31,7 +31,10 @@ button {
     }
 
     &:hover {
-        background: $primary-text;
+
+        @media (hover: hover) and (pointer: fine) {
+            background: $primary-text;
+        }
     }
 }
 
@@ -71,6 +74,9 @@ button {
     text-decoration: none;
 
     &:hover {
-        text-decoration: underline;
+
+        @media (hover: hover) and (pointer: fine) {
+            text-decoration: underline;
+        }
     }
 }
