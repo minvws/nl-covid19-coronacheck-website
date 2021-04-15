@@ -567,9 +567,6 @@ coronacheck-lead-title:
   pl: Pobierz aplikację CoronaCheck
   ro: Descărcați aplicația CoronaCheck
   tr: CoronaCheck uygulamasını indirin
-  
-coronacheck-announcement: |
-  Geen meldingen
 
 # info-caveat-fy: |
 #  De app wurket yn it Frysk allinne op Android tastellen dy’t Frysk as systeemtaal stypje. Do kinst Frysk as taal foar dy tastellen yn de ynstellingen fan Android ynstelle. iPhones stypje Frysk as systeemtaal spitigernôch net. Yn de oare talen kin yn de Appstore hjir de app wol delhelle wurde.
@@ -602,10 +599,6 @@ scanner-lead-title:
   ro: Descărcați aplicația CoronaCheck Scanner
   tr: CoronaCheck Scanner uygulamasını indirin
   
-
-scanner-announcement: |
-  Geen meldingen
-
 coronacheck-app-store-url:
   nl: https://apps.apple.com/nl/app/coronacheck/id1548269870
   fy: 
