@@ -1,9 +1,10 @@
 <script>
 import Navigation from '@/components/elements/Navigation';
+import Footer from '@/components/elements/Footer';
 
 export default {
     name: 'TestResultPending',
-    components: { Navigation },
+    components: { Footer, Navigation },
     computed: {},
     methods: {}
 }
@@ -34,6 +35,7 @@ export default {
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
 </template>
 

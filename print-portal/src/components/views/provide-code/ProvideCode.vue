@@ -103,7 +103,7 @@ export default {
                             this.$store.commit('setTestResultStatus', 'unknown_error')
                         }
                         if (this.testResultStatus === 'complete') {
-                            this.setTimerForValidityTestResult(response, payload.result);
+                            this.setTimerForValidityTestResult(payload.result);
                             this.testCodeStatus.error = '';
                             const testResult = new TestResult(payload.result);
                             this.$store.commit('setTestResult', testResult);
@@ -142,18 +142,26 @@ export default {
                 })
             })
         },
-        setTimerForValidityTestResult(response, testResult) {
-            const dateNow = response.headers.date;
-            const dateSample = testResult.sampleDate;
-            const maxValidity = this.$store.state.holderConfig.maxValidityHours;
-            const invalidAt = dateTool.addHoursToDate(dateSample, maxValidity, false);
-            const timeToInvalidation = invalidAt.getTime() - new Date(dateNow).getTime();
-            setTimeout(() => {
-                const message = 'Uw testuitslag is niet meer geldig';
-                this.$store.commit('invalidate');
-                this.$store.commit('modal/set', { message, closeButton: true });
-                this.$router.push({ name: 'ProvideCode' });
-            }, timeToInvalidation)
+        setTimerForValidityTestResult(testResult) {
+            const url = 'https://api-ct.bananenhalen.nl/v3/holder/config/';
+            axios({
+                method: 'get',
+                url: url
+            }).then((response) => {
+                const dateNow = response.headers.date;
+                const dateSample = testResult.sampleDate;
+                const maxValidity = this.$store.state.holderConfig.maxValidityHours;
+                const invalidAt = dateTool.addHoursToDate(dateSample, maxValidity, false);
+                const timeToInvalidation = invalidAt.getTime() - new Date(dateNow).getTime();
+                setTimeout(() => {
+                    const message = 'Uw testuitslag is niet meer geldig';
+                    this.$store.commit('invalidate');
+                    this.$store.commit('modal/set', { message, closeButton: true });
+                    this.$router.push({ name: 'ProvideCode' });
+                }, timeToInvalidation)
+            }).catch((error) => {
+                console.log(error);
+            })
         },
         // todo please pay extra attention to this code while reviewing
         handle401(response) {

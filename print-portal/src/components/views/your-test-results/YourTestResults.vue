@@ -2,10 +2,11 @@
 import TestResult from './TestResult';
 import Navigation from '@/components/elements/Navigation';
 import axios from 'axios';
+import Footer from '@/components/elements/Footer';
 
 export default {
     name: 'YourTestResults',
-    components: { Navigation, TestResult },
+    components: { Footer, Navigation, TestResult },
     computed: {
         testResult() {
             return this.$store.state.testResult;
@@ -111,6 +112,7 @@ export default {
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
 </template>
 

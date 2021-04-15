@@ -4,13 +4,14 @@ import QRCode from 'qrcode'
 import { jsPDF as JsPDF } from 'jspdf';
 import montserrat from '@/assets/fontAsBase64';
 import dateTool from '@/tools/date';
+import Footer from '@/components/elements/Footer';
 
 const cmToInch = 0.393700787;
 const QRSizeInCm = 8;
 
 export default {
     name: 'Print',
-    components: { Navigation },
+    components: { Footer, Navigation },
     computed: {
         testResult() {
             return this.$store.state.testResult;
@@ -319,6 +320,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
 </template>
 

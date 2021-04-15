@@ -1,10 +1,11 @@
 <script>
 import Navigation from '@/components/elements/Navigation';
 import HolderIdentityCharacters from '../your-test-results/HolderIdentityCharacters';
+import Footer from '@/components/elements/Footer';
 
 export default {
     name: 'HelpTestResult',
-    components: { HolderIdentityCharacters, Navigation },
+    components: { Footer, HolderIdentityCharacters, Navigation },
     computed: {
         testResult() {
             return this.$store.state.testResult;
@@ -50,6 +51,7 @@ export default {
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
 </template>
 
