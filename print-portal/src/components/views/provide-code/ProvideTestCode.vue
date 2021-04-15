@@ -41,7 +41,9 @@ export default {
             // brings ui back to step 1
             this.$store.commit('setTestResultStatus', 'idle');
             // remove verification code
-            this.$store.commit('updateProperty', { key: 'verificationCode', value: '' })
+            this.$store.commit('updateProperty', { key: 'verificationCode', value: '' });
+            // remove QR code
+            this.$store.commit('clearQrCode');
         },
         sendTestCode() {
             if (this.isTestCodeValid) {

@@ -35,6 +35,9 @@ const mutations = {
     setQrCode(state, qrCode) {
         state.qrCode = qrCode;
     },
+    clearQrCode(state) {
+        state.qrCode = '';
+    },
     setHolderConfig(state, holderConfig) {
         state.holderConfig = holderConfig;
     }
