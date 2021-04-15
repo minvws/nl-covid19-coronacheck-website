@@ -15,14 +15,16 @@
 @import "02-components/skiplinks";
 @import "02-components/icons";
 @import "02-components/language-picker";
-// @import "02-components/video";
+
 @import "03-partials/header";
 @import "03-partials/content-block";
 @import "03-partials/footer";
-@import "03-partials/statements";
-@import "03-partials/faq";
-@import "03-partials/instructions";
-@import "03-partials/paper";
-@import "03-partials/about";
-@import "03-partials/information";
-@import "03-partials/demo-codes";
+@import "03-partials/faq-overview";
+@import "03-partials/corona-scanner-demo-codes";
+
+// As used on the homepage
+@import "03-partials/how-to-use-coronacheck";
+@import "03-partials/get-a-print-version";
+@import "03-partials/about-coronacheck";
+@import "03-partials/how-your-data-is-handled";
+@import "03-partials/faq-highlighted-on-home";
