@@ -1,0 +1,27 @@
+---
+---
+
+// Breakpoints:
+// 420px (mobile)
+// 740px (tablet)
+// 960px (desktop)
+
+@import "01-setup/colors";
+@import "01-setup/fonts";
+@import "01-setup/basics";
+@import "01-setup/form";
+@import "02-components/btn";
+// @import "02-components/app-badges";
+@import "02-components/skiplinks";
+@import "02-components/icons";
+@import "02-components/language-picker";
+@import "03-partials/header";
+// @import "03-partials/content-block";
+@import "03-partials/footer";
+// @import "03-partials/faq-highlighted-on-home";
+// @import "03-partials/faq-overview";
+// @import "03-partials/how-to-use-coronacheck";
+// @import "03-partials/get-a-print-version";
+// @import "03-partials/about-coronacheck";
+// @import "03-partials/how-your-data-is-handled";
+// @import "03-partials/corona-scanner-demo-codes";
