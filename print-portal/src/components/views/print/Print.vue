@@ -38,7 +38,12 @@ export default {
             // we dont know and dont need the year
             const date = '1900-' + this.qrData.birthMonth + '-' + this.qrData.birthDay;
             const format = 'dd LLL';
-            return dateTool.dateToString(date, format).toUpperCase();
+            const string = dateTool.dateToString(date, format).toUpperCase();
+            if (string[string.length - 1] === '.') {
+                return string.slice(0, -1);
+            } else {
+                return string;
+            }
         },
         fileName() {
             const info = [
