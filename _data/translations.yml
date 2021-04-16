@@ -18,7 +18,7 @@ head-social-og-title:
   tr: 
     
 head-social-og-description:
-  nl: 
+  nl: Met CoronaCheck kunnen bezoekers naar pilots toegangstesten. Zij moeten zich eerst laten testen op het coronavirus.
   fy: 
   en: 
   ar: 
@@ -48,7 +48,7 @@ scanner-social-og-title:
   tr: 
     
 scanner-social-og-description:
-  nl: 
+  nl: Met CoronaCheck Scanner kunnen sociale, culturele en sportieve locaties toegangstesten organiseren. Zo openen zij veilig de deuren in tijden van corona.
   fy: 
   en: 
   ar: 
@@ -102,7 +102,7 @@ header-skip-to-content:
   tr: Doğrudan içeriğe gidin
     
 header-title:
-  nl: CoronaCheck
+  nl: Ga naar een event met de CoronaCheck-app
   fy: CoronaCheck
   en: CoronaCheck
   ar: CoronaCheck
@@ -115,9 +115,9 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Krijg toegang na testen
+  nl: Met de app kun je aantonen dat je negatief getest bent op corona. Lees hier <a href="#">meer over de app</a>
   fy: 
-  en: Get tested, gain access
+  en: Get tested, gain access*
   ar: 
   bg: 
   de: 
@@ -567,9 +567,6 @@ coronacheck-lead-title:
   pl: Pobierz aplikację CoronaCheck
   ro: Descărcați aplicația CoronaCheck
   tr: CoronaCheck uygulamasını indirin
-  
-coronacheck-announcement: |
-  Geen meldingen
 
 # info-caveat-fy: |
 #  De app wurket yn it Frysk allinne op Android tastellen dy’t Frysk as systeemtaal stypje. Do kinst Frysk as taal foar dy tastellen yn de ynstellingen fan Android ynstelle. iPhones stypje Frysk as systeemtaal spitigernôch net. Yn de oare talen kin yn de Appstore hjir de app wol delhelle wurde.
@@ -602,10 +599,6 @@ scanner-lead-title:
   ro: Descărcați aplicația CoronaCheck Scanner
   tr: CoronaCheck Scanner uygulamasını indirin
   
-
-scanner-announcement: |
-  Geen meldingen
-
 coronacheck-app-store-url:
   nl: https://apps.apple.com/nl/app/coronacheck/id1548269870
   fy: 
@@ -1243,7 +1236,7 @@ demo-qr-subtitle:
   tr: 
  
 demo-qr-gray:
-  nl: Grijs scherm? Dat betekent dat er een geldige demo-code is gescand. Bij het scannen van een echte geldige QR-code zal het scherm groen worden inplaats van grijs.
+  nl: Grijs scherm? Dat betekent dat er een geldige demo-code is gescand. Bij het scannen van een echte geldige QR-code zal het scherm groen worden in plaats van grijs.
   fy: 
   en: 
   ar: 

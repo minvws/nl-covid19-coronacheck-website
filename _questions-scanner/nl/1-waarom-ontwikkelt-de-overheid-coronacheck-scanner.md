@@ -6,7 +6,7 @@ title: Waarom ontwikkelt de overheid CoronaCheck Scanner?
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner
 showBreadCrumbs: true
 showContact: true
 ---

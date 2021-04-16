@@ -1,0 +1,48 @@
+{%- assign langSlug = site.baseurl | append: '/'  -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang | append: '/' -%}
+{%- endif -%}
+
+{% if include.for == "coronacheck" %}
+  {% assign questions = site.questions | where:"lang", page.lang | where:"featuredHome", true  | sort: "featuredHomeIndex" %}
+{% elsif include.for == "scanner" %}
+  {% assign questions = site.questions-scanner | where:"lang", page.lang | where:"featuredHome", true  | sort: "featuredHomeIndex" %}
+{% endif %}
+
+<section class="faq-homepage">
+  <h2 class="faq-homepage__title" id="faq">{{ site.data.translations.faq[page.lang] }}</h2>
+
+  <div class="highlighted-faqs">
+    {% for question in questions %}
+  
+      <article class="highlighted-faq">
+        <div class="highlighted-faq__summary">
+          <div class="highlighted-faq__summary__icon">
+            {% include graphics/{{ question.featuredHomeIcon }}.svg  %}
+          </div>
+          <div class="statement__content">
+            <h3>{{ question.title }}</h3>
+            <p>{{ question.featuredHomeText }}</p>
+          </div>
+          <a href="{{ site.baseurl }}{{ question.url }}" class="highlighted-faq__summary__btn-expand">
+            <span class="icon icon-chevron-right"></span>{{ site.data.translations.readmore[page.lang] }}
+            <span class="screen-reader-text"> {{ site.data.translations.readmore-about_screen-reader[page.lang] }}: {{ question.title }}</span>
+          </a>
+        </div>
+      
+      </article>
+    {% endfor %}
+  </div>
+
+  <p class="faq-homepage__more">
+    {% if include.for == "coronacheck" %}
+      <a href="{{ langSlug }}faq" class="btn btn--large">
+        {{ site.data.translations.layout-faq-btn[page.lang] }}<span class="icon icon-chevron-right"></span>
+      </a>
+    {% elsif include.for == "scanner" %}
+      <a href="{{ langSlug }}faq-scanner" class="btn btn--large">
+        {{ site.data.translations.layout-faq-btn[page.lang] }}<span class="icon icon-chevron-right"></span>
+      </a>
+    {% endif %}
+  </p>
+</section>

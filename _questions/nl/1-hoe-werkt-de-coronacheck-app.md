@@ -24,4 +24,6 @@ Laat de QR-code scannen aan de deur van de locatie waar je naar binnen wilt. Is 
 
 Je QR-code is 40 uur geldig. Dat is vanaf het moment van de test tot aan de start van je activiteit. Hierbij gaan we ervan uit dat een activiteit niet langer dan 8 uur duurt. Nieuwe QR-code nodig? Laat je opnieuw testen.
 
-Let op: je kunt maar voor één persoon een testbewijs in de CoronaCheck-app laten zien. Iedere bezoeker heeft dus een eigen telefoon met de app nodig.
+**Let op**: je kunt maar voor één persoon een testbewijs in de CoronaCheck-app laten zien. Iedere bezoeker heeft dus een eigen telefoon met de app nodig. 
+
+Als je geen smartphone hebt, is het laten zien van de testuitslag mogelijk als tijdelijke oplossing. Deze uitslag hoeft niet gescand te worden. Er wordt gewerkt aan een structurele oplossing.

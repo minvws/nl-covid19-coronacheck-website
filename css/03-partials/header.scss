@@ -1,0 +1,366 @@
+  .logobar {
+    padding: 0 0 20px 0;
+    z-index: 1;
+    position: relative;
+
+    @media (min-width: 740px) {
+        padding-bottom: 45px;
+    }
+
+    @media (min-width: 960px) {
+        padding-bottom: 50px;
+    }
+}
+
+.logo a {
+    display:block;
+    max-width: 50px;
+    margin: 0 auto;
+}
+
+.logo img {
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+    margin-top: -20px;
+
+    @media (min-width: 740px) {
+        width: 45px;
+        margin-top: 0;
+    }
+
+    @media (min-width: 960px) {
+        width: 50px;
+    }
+}
+
+.header {
+  position: relative;
+  background: #EFF7F9;
+
+  .header__title {
+    font-size: 30px;
+    font-weight: 800;
+
+    @media (min-width: 825px) {
+      font-size: 40px;
+      line-height: 1.25;
+    }
+  }
+}
+
+// Homepage
+
+.header--home {
+  .header__layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 30px;
+  }
+
+  .header__layout--image {
+    display: none;
+    flex: 0 1 300px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      position: relative;
+      bottom: -10px;
+    }
+  }
+
+  .header__layout--content {
+    flex: 0 1 535px;
+    padding: 30px 0;
+    
+    p {
+      margin-top: 24px;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media(min-width: 680px) {
+    .header__layout {
+      padding-left: 0;
+    }
+
+    .header__layout--image {
+      display: block;
+      padding: 30px 0 0 30px;
+    }
+
+    .header__layout--content {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media(min-width: 960px) {
+
+  }
+
+  @media(min-width: 960px) {
+    .header__layout--content {
+      padding-left: 105px;
+      box-sizing: content-box;
+    }
+  }
+}
+
+
+// Scanner Landingspage
+
+.header--scanner {
+  background-size: 120px;
+  background-position: right 20px top 80px;
+  min-height: 300px; 
+
+  &::before {
+    content: '';
+    background: transparent url("../img/1_veilig_op_pad.svg?v=1") no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 200px;
+    height: 218px;
+
+    @media(min-width: 680px) {
+      width: 460px;
+      height: 344px;
+      background-position: bottom -23px;
+    }
+
+    @media(min-width: 960px) {
+      left: calc((1300px / -2) + calc(100% / 2));
+      width: 460px;
+      height: 344px;
+    }
+  }
+
+  &::after {
+    content: '';
+    background: transparent url("../img/2_qr_op_zak.svg?v=1") no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    width: 120px;
+    height: 200px;
+
+    @media(min-width: 680px) {
+      width: 300px;
+      height: 255px;
+      background-position: bottom -23px;
+    }
+
+    @media(min-width: 960px) {
+      right: calc((1100px / -2) + calc(100% / 2));
+    }
+  }
+
+  .header__layout__middle {
+    @media (min-width: 960px) {
+        position: relative; 
+        padding: 20px 0 0 250px;
+    }
+  }
+
+  .header__layout {
+    color: $color-RO_darkblue;
+    // See .content with negative margin-top
+    padding: 0 0 10em 1.38em;
+    position: relative;
+
+    @media (min-width: 680px) {
+        padding: 0 0 19em 4.0em;
+    }
+
+    @media (min-width: 960px) {
+      padding: 0 0 10em 0;
+      margin-left: 90px;
+    }
+}
+
+.header__text {
+    position: relative;
+    margin-bottom: 1.5em;
+    font-size: 28px;
+    line-height: 1.16em;
+    max-width: 350px;
+
+    span {
+      font-size: .6em;
+    }
+
+    @media (min-width: 680px) {
+        max-width: 700px;
+        padding-right: 0.5em;
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+
+    @media (min-width: 960px) {
+        width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header h1 {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 2.125rem;
+  }
+
+  header h1 .subtitle {
+      font-size: 1.375rem;
+      line-height: 1.625rem;
+  }
+}
+
+.lead {
+  position: relative;
+  margin: -3.7em 0 0 0;
+  padding: 2em 1.6em 0 1.6em;
+  background-color: #FFF;
+  border-radius: 2em;
+  color: #333333; /* RO tekst */;
+
+  @media (min-width: 740px) {
+      padding: 2em 2.4em 0 54px;
+  }
+
+  @media (min-width: 960px) {
+      margin-left: 90px;
+      max-width: 740px;
+  }
+}
+
+.browser-ie-11 .header--scanner {
+  @media(min-width: 960px) {
+    &::before {
+      width: 1480px;
+      height: 460px;
+      left: 0; 
+      right: 0;
+      margin-left: auto; 
+      margin-right: auto; 
+      background-image: url('../img/background-full.svg');
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+// Slim header, used on subpages
+
+.header--slim {
+  min-height: 180px;
+  padding: 0px 0 50px 0; 
+  color: #ffffff;
+  background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
+
+  &::before,
+  &::after {
+    content: none;
+  }
+
+  .header__logo-badge {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    bottom: 0;
+    z-index: 0;
+    width: 80px;
+
+    .browser-ie-11 & {
+        right: 166px;
+    }
+  }
+
+  @media(min-width: 740px) {
+      min-height: 220px;
+  }
+
+  @media(min-width: 960px) {
+      background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
+      &:before {
+          content: none;
+          background-image: none;
+      }
+      .header__logo-badge {
+          /** Perfect alignment: width: of this element, width of the element above */
+          width: 80px;
+          right: calc((980px / -2) + calc(100% / 2));
+          top: 15px;
+      }
+  }
+
+  .header__title {
+    padding-top: 30px;
+
+    @media (min-width: 740px) {
+        padding-left: 55px;
+    }
+
+    @media (min-width: 960px) {
+        padding-left: 155px;
+    }
+  }
+
+  .header__center {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (min-width: 740px) {
+        padding: 0 40px;
+    }
+
+    @media (min-width: 960px) {
+        padding: 0 40px;
+    }
+  }
+}
+
+
+.header__logo-badge {
+    width: 100px;
+    margin: 0 0 1.5em;
+    
+    @media (min-width: 680px) {
+        margin: 1.5em 0;
+    }
+
+    @media (min-width: 960px) {
+        width: 132px;
+        position: relative;
+        float: left;
+    }
+}
+
+.header__layout__faq-link {
+  position: absolute;
+  top: 38px;
+  right: 230px;
+  min-width: 118px;
+  font-weight: 800;
+  font-size: 20px;
+  display: none;
+
+  @media (min-width: 960px) {
+    display: inline-block;
+  }
+
+  [lang="bg"] & {
+    right: 300px;
+  }
+}
+
