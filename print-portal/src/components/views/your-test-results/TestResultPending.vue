@@ -18,19 +18,18 @@ export default {
             <div class="section">
                 <div class="section-block">
                     <h2>
-                        Testuitslag nog niet bekend
+                        {{translate('resultPending')}}
                     </h2>
                     <p>
-                        Probeer het later nog eens.<br>
-                        Neem voor vragen contact op met jouw testlocatie.
+                        {{translate('resultPendingDirection')}}
                     </p>
                     <div class="section-block__footer">
-                        <button
-                            @click="goto('ProvideCode')"
+                        <router-link
+                            :to="{ name: 'ProvideCode' }"
                             type="button"
                             class="button-standard">
-                            Naar home
-                        </button>
+                            {{translate('back')}}
+                        </router-link>
                     </div>
                 </div>
             </div>

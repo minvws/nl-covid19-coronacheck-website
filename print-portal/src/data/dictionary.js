@@ -129,6 +129,14 @@ const dictionary = {
         'nl': 'Positief testresultaat (wel corona)',
         'en': 'Positive test result (corona)'
     },
+    'resultPending': {
+        'nl': 'Testuitslag nog niet bekend',
+        'en': 'Test result is pending'
+    },
+    'resultPendingDirection': {
+        'nl': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.',
+        'en': 'Please try again later. <br>If you have any questions, please contact your test location.'
+    },
     'somethingIsWrong': {
         'nl': 'Er klopt iets niet',
         'en': 'Something is wrong'
