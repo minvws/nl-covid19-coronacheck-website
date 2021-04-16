@@ -41,6 +41,9 @@ export default {
         },
         refute() {
             this.close();
+        },
+        setFocus() {
+            console.log('!');
         }
     },
     watch: {
@@ -50,7 +53,19 @@ export default {
                     this.close();
                 }, 5000)
             }
+        },
+        showModal() {
+            if (this.showModal) {
+                this.setFocus();
+            }
         }
+    },
+    mounted() {
+        window.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && this.showConfirm) {
+                this.close();
+            }
+        });
     }
 }
 </script>
@@ -59,13 +74,18 @@ export default {
     <div
         :class="{'popup--active': showModal}"
         class="cover">
+        <div
+            @click="close()"
+            class="cover__clickable-area"></div>
         <div class="modal">
             <div
                 v-html="message"
                 class="modal__body">
             </div>
 
-            <div class="modal__footer">
+            <div
+                v-if="showModal"
+                class="modal__footer">
                 <button
                     v-if="showConfirm"
                     @click="refute()"
@@ -103,6 +123,15 @@ export default {
     transition: opacity 0.3s cubic-bezier(.4,0,.2,1);
     opacity: 0;
     pointer-events: none;
+
+    .cover__clickable-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
 
     &.popup--active {
         opacity: 1;
