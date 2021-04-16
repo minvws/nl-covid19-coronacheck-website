@@ -12,6 +12,11 @@ const QRSizeInCm = 8;
 export default {
     name: 'Print',
     components: { Footer, Navigation },
+    data() {
+        return {
+            document: null
+        }
+    },
     computed: {
         testResult() {
             return this.$store.state.testResult;
@@ -42,26 +47,29 @@ export default {
         goHome() {
             this.$router.push({ name: 'ProvideCode' });
         },
+        createDocument() {
+            this.generateQRCode().then(async (urlQR) => {
+                this.document = await this.getDocument(urlQR);
+            })
+        },
         downloadPDF() {
-            if (this.qrCode.length > 0) {
-                this.generateQRCode().then(async (urlQR) => {
-                    const document = await this.getDocument(urlQR);
-                    document.save(this.fileName);
-                })
+            if (this.document) {
+                this.document.save(this.fileName);
             } else {
-                // todo
-                console.error('No QR code')
+                console.error('No document available');
             }
         },
         openPDF() {
-            if (this.qrCode.length > 0) {
-                this.generateQRCode().then(async (urlQR) => {
-                    const document = await this.getDocument(urlQR);
-                    this.open(document);
-                })
+            if (this.document) {
+                const string = this.document.output('datauristring');
+                const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
+                const action = window.open();
+                action.document.open();
+                action.document.write(embed);
+                action.document.close();
             } else {
                 // todo
-                console.error('No QR code')
+                console.error('No document available');
             }
         },
         async generateQRCode() {
@@ -250,14 +258,11 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                 }
             }
             return doc;
-        },
-        open(document) {
-            const string = document.output('datauristring');
-            const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
-            const action = window.open();
-            action.document.open();
-            action.document.write(embed);
-            action.document.close();
+        }
+    },
+    mounted() {
+        if (this.qrCode.length > 0) {
+            this.createDocument();
         }
     }
 }
@@ -282,12 +287,14 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                             <div class="Print__buttons">
                                 <button
                                     type="button"
+                                    :class="{'button--inactive': !document }"
                                     class="button-standard button--full-width"
                                     @click="openPDF()">
                                     {{translate('openPDF')}}
                                 </button>
                                 <button
                                     type="button"
+                                    :class="{'button--inactive': !document }"
                                     class="button-standard button--full-width"
                                     @click="downloadPDF()">
                                     {{translate('downloadPDF')}}
