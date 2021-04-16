@@ -1,5 +1,4 @@
 <script>
-// this content is temporarily waiting to share content with homepage
 export default {
     name: 'Footer',
     components: {},
@@ -11,54 +10,26 @@ export default {
 <template>
     <div class="Footer">
         <div class="pagewrap">
-            <div class="footer-links">
-                <div class="footer-links-col ___desktop-50">
-                    <div class="footer-logos-info">
-                        De apps CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. De apps hadden niet tot stand kunnen komen zonder de hulp van tientallen experts, ervaringsdeskundigen en een grote open source community van burgers die heeft meegekeken en getest tijdens de ontwikkeling.</div>
+            <div class="Footer__content">
+                <div class="Footer__col Footer__intro">
+                    De apps CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid,
+                    Welzijn en Sport. De apps hadden niet tot stand kunnen komen zonder de hulp van tientallen experts,
+                    ervaringsdeskundigen en een grote open source community van burgers die heeft meegekeken en getest
+                    tijdens de ontwikkeling.
                 </div>
-                <div class="footer-links-col ___desktop-25">
-                    <h3>Over CoronaCheck</h3>
-                    <ul>
-                        <li>
-                            <a href="/nl/privacy">
-                                Privacy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/nl/cookies">
-                                Cookies
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/nl/colofon">
-                                Colofon
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/nl/toegankelijkheidsverklaring">
-                                Toegankelijkheidsverklaring
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/nl/kwetsbaarheid-melden">
-                                Kwetsbaarheid melden
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/nl/pers">
-                                Pers
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-links-col ___desktop-25">
-                    <h3>Meer informatie?</h3>
-                    <ul>
-                        <li><a href="https://rijksoverheid.nl" target="_blank" rel="noopener noreferrer">Kijk op rijksoverheid.nl </a></li>
-                    </ul>
+                <div class="Footer__col Footer__info">
+                    <h3>
+                        Heb je vragen over CoronaCheck?<br>
+                        Bel 0800-1421 (gratis)
+                    </h3>
+                    <p>
+                        <strong>Openingstijden</strong><br>
+                        Maandag t/m zondag 08.00 – 20.00 uur
+                    </p>
+                    <p>
+                        <strong>Of stuur een e-mail naar:</strong><br>
+                        helpdesk@coronacheck.nl
+                    </p>
                 </div>
             </div>
         </div>
@@ -74,56 +45,32 @@ export default {
     margin-top: $length-xxl;
     color: #fff;
 
-    .footer-links {
+    .Footer__content {
         display: flex;
-        font-size: 16px;
-        line-height: 1.38em;
+        justify-content: space-between;
 
-        .footer-links-col {
-            padding: 0 50px 0 0;
-
-            .footer-logos-info {
-                margin-top: 28px;
-            }
+        .Footer__col {
+            width: calc(50% - #{$length-s});
 
             h3 {
                 color: #fff;
-                margin-top: 32px;
-                margin-bottom: 10px;
-                font-size: 20px;
+                margin-top: 0;
+                margin-bottom: $length-s;
             }
+        }
+    }
 
-            ul {
-                margin: 0;
-                padding: 0;
+    @include mobile() {
 
-                li {
-                    list-style: none;
-                    margin-bottom: 0.4em;
-                    padding-left: 20px;
+        .Footer__content {
+            display: block;
 
-                    a {
-                        color: #fff;
-                        position: relative;
-                        text-decoration: none;
+            .Footer__col {
+                width: 100%;
+                margin-bottom: $length-s;
 
-                        &:hover {
-                            text-decoration: un;
-                        }
-
-                        &:before {
-                            content: '';
-                            position: absolute;
-                            height: 10px;
-                            width: 10px;
-                            background: url(https://coronacheck.nl/img/chevron-right-white.svg) no-repeat 50% 50%;
-                            transition: var(--transition-out);
-                            display: inline-block;
-                            margin-right: 5px;
-                            top: 5px;
-                            left: -20px;
-                        }
-                    }
+                &:last-child {
+                    margin-bottom: 0;
                 }
             }
         }
