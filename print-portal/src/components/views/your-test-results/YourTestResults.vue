@@ -1,7 +1,6 @@
 <script>
 import TestResult from './TestResult';
 import Navigation from '@/components/elements/Navigation';
-import axios from 'axios';
 import Footer from '@/components/elements/Footer';
 
 export default {
@@ -24,10 +23,9 @@ export default {
                 if (this.hasQR) {
                     this.$router.push({ name: 'Print' });
                 } else {
-                    const url = 'https://api-ct.bananenhalen.nl/staticproof/paper';
-                    axios({
+                    this.$axios({
                         method: 'post',
-                        url: url,
+                        url: 'staticproof/paper',
                         data: this.signature
                     }).then((response) => {
                         if (response.data.status === 'ok' && response.data.error === 0) {

@@ -1,6 +1,5 @@
 <script>
 import Identity from '@/components/elements/Identity';
-import axios from 'axios';
 import languages from '@/data/languages';
 import Modal from './components/elements/Modal';
 
@@ -20,10 +19,9 @@ export default {
             this.setCurrentLanguage();
         },
         async getHolderConfig() {
-            const url = 'https://api-ct.bananenhalen.nl/v1/holder/config/';
-            axios({
+            this.$axios({
                 method: 'get',
-                url: url
+                url: '/holder/config/'
             }).then((response) => {
                 if (response.data && response.data.payload) {
                     const holderConfig = JSON.parse(atob(response.data.payload));
@@ -34,10 +32,9 @@ export default {
             })
         },
         async getTestProviders() {
-            const url = 'https://api-ct.bananenhalen.nl/v1/holder/config_ctp';
-            axios({
+            this.$axios({
                 method: 'get',
-                url: url
+                url: 'holder/config_ctp'
             }).then((response) => {
                 if (response.data && response.data.payload) {
                     const config = JSON.parse(atob(response.data.payload));

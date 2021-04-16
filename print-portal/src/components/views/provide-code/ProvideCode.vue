@@ -2,7 +2,6 @@
 import PreferMobile from '@/components/elements/PreferMobile';
 import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
-import axios from 'axios';
 import TestResult from '@/classes/TestResult';
 import luhnModN from '@/tools/luhn-mod-n';
 import Navigation from '@/components/elements/Navigation';
@@ -89,7 +88,7 @@ export default {
                     data = null;
                 }
 
-                axios({
+                this.$axios({
                     method: 'post',
                     headers: headers,
                     url: url,
@@ -143,10 +142,9 @@ export default {
             })
         },
         setTimerForValidityTestResult(testResult) {
-            const url = 'https://api-ct.bananenhalen.nl/v3/holder/config/';
-            axios({
+            this.$axios({
                 method: 'get',
-                url: url
+                url: '/holder/config/'
             }).then((response) => {
                 const dateNow = response.headers.date;
                 const dateSample = testResult.sampleDate;
