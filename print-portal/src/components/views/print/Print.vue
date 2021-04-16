@@ -300,6 +300,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                                 <button
                                     type="button"
                                     :class="{'button--inactive': !document }"
+                                    :tabindex="document ? 0 : -1"
                                     class="button-standard button--full-width"
                                     @click="openPDF()">
                                     {{translate('openPDF')}}
@@ -307,6 +308,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                                 <button
                                     type="button"
                                     :class="{'button--inactive': !document }"
+                                    :tabindex="document ? 0 : -1"
                                     class="button-standard button--full-width"
                                     @click="downloadPDF()">
                                     {{translate('downloadPDF')}}

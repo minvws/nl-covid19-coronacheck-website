@@ -28,6 +28,7 @@ button {
         background: $grey-5;
         color: $secondary-text;
         pointer-events: none;
+        user-select: none;
     }
 
     &:hover {

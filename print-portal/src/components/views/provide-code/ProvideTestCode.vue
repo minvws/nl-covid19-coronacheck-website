@@ -78,6 +78,7 @@ export default {
             v-if="showButton"
             @click="sendTestCode()"
             type="button"
+            :tabindex="isTestCodeValid ? 0 : -1"
             :class="{'button--inactive': !isTestCodeValid}"
             class="button-standard">
             {{translate('next')}}
