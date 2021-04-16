@@ -72,7 +72,7 @@ jobs:
         run: tar -czf ct_website_${{ env.RELEASE_VERSION }}.tar.gz ./public
 
       - name: Upload release tar
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: ct_website_${{ env.RELEASE_VERSION }}
           path: ct_website_${{ env.RELEASE_VERSION }}.tar.gz

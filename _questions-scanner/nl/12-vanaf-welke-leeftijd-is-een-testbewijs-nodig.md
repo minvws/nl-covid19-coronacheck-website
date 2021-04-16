@@ -6,7 +6,7 @@ title: Vanaf welke leeftijd is een testbewijs nodig?
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner
 showBreadCrumbs: true
 showContact: true
 ---

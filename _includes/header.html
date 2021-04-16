@@ -4,7 +4,7 @@
       {{ site.data.translations.header-skip-to-content[page.lang] }}
     </a>
   </div>
-  <div class="header">
+  <div class="header {% if include.for == "scanner" %}header--scanner{% else %}header--home{% endif %}">
     <div class="logobar">
       <div class="logo">
         <a href="{{ langSlug }}">
@@ -20,36 +20,41 @@
           {{ site.data.translations.faq[page.lang] }}
         </a>
       {% endif %}
-      {% include language-picker.html headertype="default" %}
+      {% include components/language-picker.html headertype="default" %}
     </div>
     <div class="container">
 
       {% if include.for == "scanner" %}
+
         <div class="header__layout">
-          {% comment %}  <img src="{{ site.baseurl }}/img/logo-app.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" /> {% endcomment %}
           <div class="header__layout__middle">
             <h1 class="header__text">
               {{ site.data.translations.scanner-header-title[page.lang] }}<br />
               <span>{{ site.data.translations.scanner-header-subtitle[page.lang] }}</span>
             </h1>
 
-            {% include scanner-badges.html %}
+            {% include components/scanner-badges.html %}
           </div>
         </div>
+
       {% else %}
+
         <div class="header__layout">
-          {% comment %}  <img src="{{ site.baseurl }}/img/logo-app.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" /> {% endcomment %}
-          <div class="header__layout__middle">
-            <h1 class="header__text">
+          <div class="header__layout--image">
+            <img src="{{ site.baseurl }}/img/CoronaCheck_app.png" alt="">
+          </div>
+
+          <div class="header__layout--content">
+            <h1 class="header__title">
               {{ site.data.translations.header-title[page.lang] }}<br />
-              <span>{{ site.data.translations.header-subtitle[page.lang] }}</span>
             </h1>
-  
-            {% include coronacheck-badges.html %}
+            <p>{{ site.data.translations.header-subtitle[page.lang] }}</p>
+            {% include components/coronacheck-badges.html %}
           </div>
         </div>
+
       {% endif %}
-      
+
     </div>
   </div>
 </header>

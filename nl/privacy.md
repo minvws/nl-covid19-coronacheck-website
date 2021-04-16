@@ -5,9 +5,9 @@ showBreadCrumbs: true
 title: Privacyverklaring CoronaCheck
 redirect_from: /privacy
 ---
-Deze privacyverklaring is geschreven voor de inzet van de CoronaCheck app tijdens pilots die vanaf 27 maart 2021 worden gehouden en toont aan op welke wijze persoonsgegevens van bezoekers van een pilot evenement (hierna: gebruikers) worden verwerkt en welke technische en organisatorische maatregelen genomen zijn ter bescherming van deze persoonsgegevens. Tijdens deze pilots wordt gebruik gemaakt van een versie van de app die beperkter is in functionaliteit dan de versie zoals beschreven in het wetsvoorstel, versie 8 maart 2021, dat ter consultatie is aangeboden. Dit houdt tevens in dat er sprake is van een beperktere verwerking van persoonsgegevens in deze versie. 
+Deze privacyverklaring is geschreven voor de inzet van de CoronaCheck app en de CoronaCheck Scanner app tijdens pilots die vanaf 27 maart 2021 worden gehouden en toont aan op welke wijze persoonsgegevens van bezoekers van een pilot evenement (hierna: gebruikers) worden verwerkt en welke technische en organisatorische maatregelen genomen zijn ter bescherming van deze persoonsgegevens. Tijdens deze pilots wordt gebruik gemaakt van een versie van beide apps die beperkter is in functionaliteit dan de versie zoals beschreven in het wetsvoorstel, versie 8 maart 2021, dat ter consultatie is aangeboden. Dit houdt tevens in dat er sprake is van een beperktere verwerking van persoonsgegevens in deze versies. 
 
-Deze privacyverklaring is derhalve niet van toepassing op versies van CoronaCheck die zijn ingezet voor 27 maart 2021 en deze verklaring is beperkt tot de versie van CoronaCheck die wordt ingezet voor pilot evenementen. 
+Deze privacyverklaring is derhalve niet van toepassing op versies van CoronaCheck en CoronaCheck Scanner die zijn ingezet voor 27 maart 2021 en deze verklaring is beperkt tot de versie van CoronaCheck die wordt ingezet voor pilot evenementen. 
 
 ## Over CoronaCheck
 
@@ -25,13 +25,13 @@ De Minister van Volksgezondheid, Welzijn en Sport is verwerkingsverantwoordelijk
 
 ### 2. Grondslag voor het verwerken van persoonsgegevens
 
-De grondslag voor het verwerken van persoonsgegevens binnen CoronaCheck en de signing service is de toestemming van de gebruiker. Deze toestemming wordt gegeven door een gebruiker nadat de app op de smartphone van de gebruiker is geïnstalleerd en de gebruiker kennis heeft genomen van deze privacyverklaring. 
+De grondslag voor het verwerken van persoonsgegevens binnen CoronaCheck en de signing service is de toestemming van de gebruiker. Deze toestemming wordt gegeven door een gebruiker nadat de app op de smartphone van de gebruiker is geïnstalleerd en de gebruiker kennis heeft genomen van deze privacyverklaring. Binnen CoronaCheck Scanner worden geen persoonsgegevens verwerkt. 
 
 ### 3. Met welk doel worden persoonsgegevens verwerkt?
 
 De overheid werkt er hard aan de samenleving verantwoord te openen. Het testen van bezoekers op het COVID-19 virus voordat zij een openbaar evenement of openbare locatie betreden is daar een onderdeel van. Met dergelijke toegangstesten kunnen sociale, culturele en sportieve locaties in tijden van corona sneller verantwoord open. Het tonen van een negatieve testuitslag geeft bezoekers toegang tot de betreffende locatie. Met CoronaCheck kunnen bezoekers digitaal hun negatieve testbewijs tonen om toegang te krijgen tot locaties.
 
-### 4. Welke gegevens worden verwerkt?
+### 4. Welke persoonsgegevens worden verwerkt?
 
 CoronaCheck verwerkt de volgende persoonsgegevens:
 
@@ -65,33 +65,37 @@ De met CoronaCheck verzamelde gegevens worden uitsluitend gebruikt voor de in de
 
 Het digitaal tekenen van het testbewijs gebeurt bij Prolocation B.V. Prolocation verwerkt hiervoor het IP-adres in opdracht van het ministerie van Volksgezondheid, Welzijn en Sport en heeft in AVG termen de rol van verwerker. Met Prolocation B.V. zijn passende afspraken gemaakt om de bescherming van persoonsgegevens te waarborgen. 
 
-### 7. Hoe lang worden gegevens bewaard?
+### 7. Hoe lang worden persoonsgegevens bewaard?
 
 Binnen CoronaCheck worden persoonsgegevens als volgt bewaard:
 
 - De persoon kan via CoronaCheck een testbewijs genereren. Het testbewijs is maximaal 40 uur geldig (gemeten na het tijdstip waarop de test is afgenomen). Nadat het testbewijs zijn geldigheid heeft verloren, worden het testbewijs en de aangemaakte QR-code automatisch verwijderd.
 - De eerste letter van de voor- en achternaam en de geboortedag en –maand van de gebruiker worden alleen gebruikt bij het ophalen van het testbewijs en worden hierna ook automatisch verwijderd.
 - Het IP-adres dat voor beheers- en beveiligingsdoeleinden wordt verwerkt door onze provider Prolocation B.V., wordt daarna maximaal 7 dagen verwijderd.
-- In de CoronaCheck Scanner-app worden geen persoonsgegevens opgeslagen.
+- In de CoronaCheck Scanner app worden geen persoonsgegevens opgeslagen.
 
-### 8. Uw rechten ten aanzien van uw persoonsgegevens
+### 8. Welke permissies heeft CoronaCheck Scanner nodig?
 
-U heeft een aantal rechten om controle te houden over uw persoonsgegevens. Deze kunt u vinden op de [website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/rechten-van-betrokkenen).
+De CoronaCheck Scanner app heeft permissie nodig voor het cameragebruik van de telefoon. Deze permissie is nodig om het testbewijs, in de vorm van een QR-code, uit de CoronaCheck app te scannen. Deze permissie is optioneel. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het testbewijs, in de vorm van een QR-code te scannen.
+
+### 9. Uw rechten ten aanzien van uw persoonsgegevens
+
+U heeft een aantal rechten om controle te houden over uw persoonsgegevens. Deze kunt u [vinden op de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/rechten-van-betrokkenen). 
 
 CoronaCheck is ontworpen volgens de standaard van privacy by design en de bescherming van uw persoonsgegevens staat bij de inzet van CoronaCheck voorop. Er bestaat de mogelijkheid om een beroep te doen op een van uw privacy rechten ten aanzien van de inzet van CoronaCheck. Een dergelijk verzoek kunt u indienen op [helpdesk@CoronaCheck.nl](mailto:helpdesk@CoronaCheck.nl). 
 
-### 9. Klachten over gebruik van uw gegevens
+### 10. Klachten over gebruik van uw gegevens
 
 Vragen of klachten over het gebruik van CoronaCheck kunt u stellen aan [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
 
-Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie van Volksgezondheid, Welzijn en Sport vindt u op de [website van het ministerie](https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/privacy).
+Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie van Volksgezondheid, Welzijn en Sport vindt u op de [website van het ministerie.](https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/privacy)
 
 U hebt altijd het recht een klacht over de verwerking van uw persoonsgegevens in te dienen bij de Autoriteit Persoonsgegevens of bij de rechter. Meer informatie daarover vindt u op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap).
 
-### 10. Beveiliging van uw persoonsgegevens
+### 11. Beveiliging van uw persoonsgegevens
 
 De Minister van Volksgezondheid, Welzijn en Sport neemt de bescherming van uw persoonsgegevens serieus en neemt passende technische en organisatorische maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan.
 
-### 11. Wijziging privacyverklaring
+### 12. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 6 april 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 12 april 2021.

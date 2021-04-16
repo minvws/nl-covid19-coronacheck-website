@@ -1,0 +1,94 @@
+
+:root {
+    --transition-in: 262ms ease;
+    --transition-in--fast: 100ms ease;
+    --transition-out: 162ms ease;
+    --transition-out--fast: 62ms ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-offset: 8px;
+    outline: 2px solid transparent;
+
+    &:focus {
+        outline: 2px solid $color-focus;
+        outline-offset: 4px;
+        transition: 100ms ease-out;
+    }
+}
+
+.browser-ie-11 * {
+    outline-offset: 0;
+    outline: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    // &[ar] {
+    //     direction: rtl;
+    // }
+}
+
+body {
+    font-family: 'RO Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', 'RO Sans', sans-serif;
+    color: #383836;
+}
+
+.container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+a, a:visited {
+    color: $color-RO_darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $color-RO_darkblue--interaction;
+    text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+// 404 pagina
+
+.link__404 {
+    font-size: 21px;
+
+    &:before {
+        content: '';
+        position: relative;
+        height: 10px;
+        width: 10px;
+        background: url(../img/chevron-right-darkblue.svg) no-repeat 50% 50%;
+        transition: var(--transition-out);
+        padding: 10px;
+    }
+}

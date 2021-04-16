@@ -1,0 +1,30 @@
+
+<div class="{{ include.class }}">
+  {% if include.class %}
+    <h2>{{ site.data.translations.scanner-lead-title[page.lang] }}:</h2>
+  {% endif %}
+  <ul class="layout-app-badges">
+    <li class="app_badge_column__left">
+      <a class="app-store" href="{{ site.data.translations.scanner-app-store-url[page.lang] }}">
+        <img src="{{ site.baseurl }}/img/badges/{{ site.data.translations.badge-app-store-img[page.lang] }}" 
+        alt="{{ site.data.translations.header-appstore[page.lang] }}" 
+        height="65" width="196"
+        />
+      </a>
+    </li>
+    <li class="app_badge_column__right">
+      <a class="play-store" href="{{ site.data.translations.scanner-google-play-url }}">
+        <img src="{{ site.baseurl }}/img/badges/{{site.data.translations.badge-google-play-img[page.lang] }}" alt="{{ site.data.translations.header-googleplaystore[page.lang] }}" height="65" width="216" />
+      </a>
+    </li>
+    <li class="app_badge_column__right {% if include.huawei != 'true' %}huawei-only-show-mobile{% endif %}">
+      <a class="huawei-store" href="{{ site.data.translations.scanner-huawei-url }}">
+        <img src="{{ site.baseurl }}/img/badges/{{site.data.translations.badge-huawei-img[page.lang]  }}" alt="{{ site.data.translations.header-huaweiappgallery[page.lang] }}" height="65" width="216" />
+      </a>
+    </li>
+  </ul>
+  {% comment %}{% if page.lang == 'fy' %}
+  <p class="badges__caveat">
+      <strong class="note">{{ site.data.translations.sca-caveat-letop-fy }}</strong> {{ site.data.translations.info-caveat-fy }}</p>
+  {% endif %}{% endcomment %}
+</div>
