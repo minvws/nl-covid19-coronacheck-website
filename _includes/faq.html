@@ -36,11 +36,11 @@
 
   <p class="faq-homepage__more">
     {% if include.for == "coronacheck" %}
-      <a href="{{ langSlug }}faq" class="btn btn--color-secondary btn--large">
+      <a href="{{ langSlug }}faq" class="btn btn--large">
         {{ site.data.translations.layout-faq-btn[page.lang] }}<span class="icon icon-chevron-right"></span>
       </a>
     {% elsif include.for == "scanner" %}
-      <a href="{{ langSlug }}faq-scanner" class="btn btn--color-secondary btn--large">
+      <a href="{{ langSlug }}faq-scanner" class="btn btn--large">
         {{ site.data.translations.layout-faq-btn[page.lang] }}<span class="icon icon-chevron-right"></span>
       </a>
     {% endif %}
