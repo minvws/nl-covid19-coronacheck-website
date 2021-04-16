@@ -108,7 +108,7 @@ export default {
         <button
             @click="sendVerificationCode()"
             type="button"
-            :tabindex="isVerificationCodeValid ? 0 : -1"
+            :disabled="!isVerificationCodeValid"
             :class="{'button--inactive': !isVerificationCodeValid}"
             class="button-standard">
             {{translate('next')}}
