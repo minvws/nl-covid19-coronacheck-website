@@ -33,7 +33,7 @@ export default {
     methods: {
         sendVerificationCode() {
             if (this.isVerificationCodeValid) {
-                this.getSignedResult(true);
+                this.getSignedResult({ includeVerificationCode: true });
             }
         },
         requestNewVerificationCode() {
@@ -42,7 +42,7 @@ export default {
             const confirmAction = () => {
                 // false means: do request without the verification code
                 // this will trigger backend to send sms again
-                this.getSignedResult(false);
+                this.getSignedResult({ includeVerificationCode: false });
             }
 
             this.$store.commit('modal/set', {

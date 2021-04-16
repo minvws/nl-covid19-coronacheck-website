@@ -72,7 +72,7 @@ export default {
         }
     },
     methods: {
-        async getSignedResult(includeVerificationCode) {
+        async getSignedResult(options) {
             return new Promise((resolve, reject) => {
                 let responseForSignedResult, data;
                 const url = this.testProvider.result_url;
@@ -82,7 +82,7 @@ export default {
                     'Content-Type': 'application/json'
                 };
 
-                if (includeVerificationCode) {
+                if (options.includeVerificationCode) {
                     data = { 'verificationCode': this.verificationCode };
                 } else {
                     data = null;
@@ -126,7 +126,7 @@ export default {
 
                         if (this.testResultStatus === 'verification_required') {
                             this.testCodeStatus.error = '';
-                            if (includeVerificationCode) {
+                            if (options.includeVerificationCode) {
                                 this.verificationCodeStatus.error = 'Geen geldige verificatie code';
                             }
                         }

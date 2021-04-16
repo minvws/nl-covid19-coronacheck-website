@@ -48,7 +48,7 @@ export default {
         },
         sendTestCode() {
             if (this.isTestCodeValid) {
-                this.getSignedResult(false);
+                this.getSignedResult({ includeVerificationCode: false });
             }
         }
     }
