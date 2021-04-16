@@ -43,7 +43,11 @@ export default {
             this.close();
         },
         setFocus() {
-            console.log('!');
+            if (this.showConfirm) {
+                this.$refs.refute.focus();
+            } else if (this.showCloseButton) {
+                this.$refs.close.focus();
+            }
         }
     },
     watch: {
@@ -56,7 +60,10 @@ export default {
         },
         showModal() {
             if (this.showModal) {
-                this.setFocus();
+                // wait untill the v-if is active
+                setTimeout(() => {
+                    this.setFocus();
+                })
             }
         }
     },
@@ -89,6 +96,8 @@ export default {
                 <button
                     v-if="showConfirm"
                     @click="refute()"
+                    ref="refute"
+                    tabindex="1"
                     type="button"
                     class="button-modest">
                     {{refuteText}}
@@ -96,6 +105,8 @@ export default {
                 <button
                     v-if="showConfirm"
                     @click="confirm()"
+                    ref="confirm"
+                    tabindex="2"
                     type="button"
                     class="button-modest button--ok">
                     {{confirmText}}
@@ -103,6 +114,8 @@ export default {
                 <button
                     v-if="showCloseButton"
                     @click="close()"
+                    ref="close"
+                    tabindex="3"
                     type="button"
                     class="button-modest">{{translate('close')}}</button>
             </div>
