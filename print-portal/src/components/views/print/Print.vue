@@ -56,7 +56,7 @@ export default {
             if (this.document) {
                 this.document.save(this.fileName);
             } else {
-                console.error('No document available');
+                this.somethingGeneralWentWrong();
             }
         },
         openPDF() {
@@ -68,9 +68,21 @@ export default {
                 action.document.write(embed);
                 action.document.close();
             } else {
-                // todo
-                console.error('No document available');
+                this.somethingGeneralWentWrong();
             }
+        },
+        somethingGeneralWentWrong() {
+            const message = 'Er ging iets mis.';
+            const confirmAction = () => {
+                this.$router.push({ name: 'ProvideCode' });
+            }
+            this.$store.commit('modal/set', {
+                message,
+                confirm: true,
+                confirmAction,
+                confirmYes: this.translate('goBackToStart'),
+                confirmNo: this.translate('close')
+            });
         },
         async generateQRCode() {
             const dpi = 300;

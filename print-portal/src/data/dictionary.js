@@ -52,6 +52,10 @@ const dictionary = {
         'en': 'E.g.',
         'ar': 'على سبيل المثال'
     },
+    'goBackToStart': {
+        'nl': 'Terug naar het begin',
+        'en': 'Start again'
+    },
     'language': {
         'nl': 'Taal',
         'en': 'Language',
