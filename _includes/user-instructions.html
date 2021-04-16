@@ -2,19 +2,21 @@
   <div class="instructions">
   
   {% assign user_instructions = site.user-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}
-  {% for instruction in user_instructions %}
-  <article class="instructions__step">
+  {% for step in user_instructions %}
+  <article class="instructions__step instructions__step--{{ step.index }}" id="step-{{ step.index }}">
     <img
-      src="{{ site.baseurl }}/img/{{ instruction.graphic }}"
+      src="{{ site.baseurl }}/img/{{ step.graphic }}"
       alt=""
       loading="lazy"
       class="instructions__step-image"
     >
-    <span class="instructions__step-title">{{ instruction.title }}</span>
-    </span>
-    <p class="instructions__step-text" markdown="1">
-      {{ instruction.content }}
-    </p>
+    <div class="instructions__step-content">
+      <span class="instructions__step-title">{{ step.title }}</span>
+      </span>
+      <p class="instructions__step-text" markdown="1">
+        {{ step.content }}
+      </p>
+    </div>
   </article>
   {% endfor %}
 </div>
