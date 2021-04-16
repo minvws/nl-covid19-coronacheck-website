@@ -40,10 +40,10 @@ export default {
                     const config = JSON.parse(atob(response.data.payload));
                     this.$store.commit('testProviders/init', config.corona_test_providers);
                 } else {
-                    console.error('Something went wrong when retrieving config corona test providers')
+                    this.$store.commit('modal/set', { message: this.translate('generalError'), closeButton: true });
                 }
             }).catch((error) => {
-                console.error(error);
+                this.$store.commit('modal/set', { message: (this.translate('generalError') + '<p>' + error + '</p>'), closeButton: true });
             })
         },
         addLanguages() {

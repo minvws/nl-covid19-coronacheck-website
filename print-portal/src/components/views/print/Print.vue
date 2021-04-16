@@ -113,8 +113,8 @@ export default {
                     .then(url => {
                         resolve(url);
                     })
-                    .catch(err => {
-                        console.error(err)
+                    .catch(error => {
+                        this.$store.commit('modal/set', { message: (this.translate('generalError') + '<p>' + error + '</p>'), closeButton: true });
                     })
             })
         },

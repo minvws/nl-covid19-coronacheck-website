@@ -52,6 +52,10 @@ const dictionary = {
         'en': 'E.g.',
         'ar': 'على سبيل المثال'
     },
+    'generalError': {
+        'nl': '<strong>Sorry, er gaat iets mis</strong><p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck.</p>',
+        'en': '<strong> Sorry, something is wrong </strong><p>This is due to a technical error. Contact the CoronaCheck helpdesk.</p>'
+    },
     'goBackToStart': {
         'nl': 'Terug naar het begin',
         'en': 'Start again'

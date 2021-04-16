@@ -34,12 +34,11 @@ export default {
                             this.$router.push({ name: 'Print' });
                         }
                     }).catch((error) => {
-                        console.error(error);
+                        this.$store.commit('modal/set', { message: (this.translate('generalError') + '<p>' + error + '</p>'), closeButton: true });
                     })
                 }
             } else {
-                // todo
-                console.error('no signature')
+                this.$store.commit('modal/set', { message: this.translate('generalError'), closeButton: true });
             }
         },
         goBack() {
