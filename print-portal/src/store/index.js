@@ -10,9 +10,9 @@ Vue.use(Vuex)
 const state = {
     holderConfig: null,
     // todo remove before publication
-    testCode: 'TST-TTTTTTTTTT-G2',
+    testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
     // testCode: 'TST-STRXBJG8888-52',
-    verificationCode: '123456',
+    verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
     testResultStatus: 'idle',
     testResult: null,
     signature: null,
