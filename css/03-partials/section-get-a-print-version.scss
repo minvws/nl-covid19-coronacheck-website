@@ -57,7 +57,9 @@
     margin-bottom: 15px;
 
     @media (min-width: 680px) {
+      p:last-of-type {
       margin-bottom: 40px;
+      }
     }
   }
 
