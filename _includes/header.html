@@ -20,7 +20,7 @@
           {{ site.data.translations.faq[page.lang] }}
         </a>
       {% endif %}
-      {% include language-picker.html headertype="default" %}
+      {% include components/language-picker.html headertype="default" %}
     </div>
     <div class="container">
 
@@ -33,7 +33,7 @@
               <span>{{ site.data.translations.scanner-header-subtitle[page.lang] }}</span>
             </h1>
 
-            {% include scanner-badges.html %}
+            {% include components/scanner-badges.html %}
           </div>
         </div>
 
@@ -49,7 +49,7 @@
               {{ site.data.translations.header-title[page.lang] }}<br />
             </h1>
             <p>{{ site.data.translations.header-subtitle[page.lang] }}</p>
-            {% include coronacheck-badges.html %}
+            {% include components/coronacheck-badges.html %}
           </div>
         </div>
 

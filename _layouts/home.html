@@ -17,14 +17,14 @@
   {% include header.html %}
   <main id="content">
 
-    {% include user-instructions.html %}
-    {% include print-version.html %}
-    {% include about-coronacheck.html %}
+    {% include components/user-instructions.html %}
+    {% include components/print-version.html %}
+    {% include components/about-coronacheck.html %}
 
-    {% include information.html %}
-    {% include faq.html for="coronacheck" %}
+    {% include components/information.html %}
+    {% include components/faq.html for="coronacheck" %}
 
-    {% include coronacheck-badges.html class="layout-app-badges--center-wrap" %}
+    {% include components/coronacheck-badges.html class="layout-app-badges--center-wrap" %}
 
   </main>
   {% include footer.html %}
