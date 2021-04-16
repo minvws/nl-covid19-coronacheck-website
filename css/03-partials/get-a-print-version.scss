@@ -1,4 +1,4 @@
-.paper {
+.print-version {
   background-color: #EFF7F9;
   margin: 0 auto;
   max-width: 1190px;
@@ -10,7 +10,7 @@
   }
 }
 
-.paper_column-image {
+.print-version_column-image {
   margin-bottom: 1.0em;
 
   @media (min-width: 740px) {
@@ -23,14 +23,14 @@
   }
 }
 
-.paper_column-content {
+.print-version_column-content {
   @media (min-width: 740px) {
     width: 50%;
     margin-right: 1.5em;
   }
 }
 
-.paper h2 {
+.print-version h2 {
   font-size: 22px;
   font-family: Montserrat;
   line-height: 27px;
