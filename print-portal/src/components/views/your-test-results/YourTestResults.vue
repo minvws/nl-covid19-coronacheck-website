@@ -32,6 +32,7 @@ export default {
                     }).then((response) => {
                         if (response.data.status === 'ok' && response.data.error === 0) {
                             this.$store.commit('setQrCode', response.data.qr.data);
+                            this.$store.commit('setQrData', response.data.qr.attributesIssued);
                             this.$router.push({ name: 'Print' });
                         }
                     }).catch((error) => {

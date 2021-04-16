@@ -16,7 +16,8 @@ const state = {
     testResultStatus: 'idle',
     testResult: null,
     signature: null,
-    qrCode: ''
+    qrCode: '',
+    qrData: null
 };
 
 const mutations = {
@@ -38,6 +39,9 @@ const mutations = {
     clearQrCode(state) {
         state.qrCode = '';
     },
+    setQrData(state, qrData) {
+        state.qrData = qrData;
+    },
     setHolderConfig(state, holderConfig) {
         state.holderConfig = holderConfig;
     },
@@ -47,6 +51,7 @@ const mutations = {
         state.testResultStatus = '';
         state.signature = '';
         state.qrCode = '';
+        state.qrData = null;
     }
 }
 

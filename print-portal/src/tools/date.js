@@ -6,7 +6,7 @@ const monthNumberToMonthName = (n) => {
     return months[(n - 1)];
 }
 
-const dateToString = (dateString, dateFormat = 'dd-MM-yyyy HH:mm', locale) => {
+const dateToString = (dateInput, dateFormat = 'dd-MM-yyyy HH:mm', locale) => {
     switch (locale) {
     case 'en':
         locale = en;
@@ -15,11 +15,11 @@ const dateToString = (dateString, dateFormat = 'dd-MM-yyyy HH:mm', locale) => {
         locale = nl;
         break;
     }
-    return format(new Date(dateString), dateFormat, { locale });
+    return format(new Date(dateInput), dateFormat, { locale });
 }
 
-const addHoursToDate = (dateString, hours, formatted) => {
-    const newDate = addHours(new Date(dateString), hours);
+const addHoursToDate = (dateInput, hours, formatted) => {
+    const newDate = addHours(new Date(dateInput), hours);
     return formatted ? dateToString(newDate) : newDate;
 }
 

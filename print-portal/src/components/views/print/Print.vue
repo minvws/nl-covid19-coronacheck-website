@@ -18,24 +18,34 @@ export default {
         }
     },
     computed: {
-        testResult() {
-            return this.$store.state.testResult;
-        },
         qrCode() {
             return this.$store.state.qrCode;
+        },
+        qrData() {
+            return this.$store.state.qrData;
         },
         maxValidityHours() {
             return this.$store.state.holderConfig.maxValidityHours;
         },
         validUntil() {
-            return dateTool.addHoursToDate(this.testResult.sampleDate, this.maxValidityHours, true);
+            return dateTool.addHoursToDate((this.qrData.sampleTime * 1000), this.maxValidityHours, true);
+        },
+        holderString() {
+            // based on qr feedback, not from testresult.holder
+            return this.qrData.firstNameInitial + this.qrData.lastNameInitial + this.birthDayString;
+        },
+        birthDayString() {
+            // we dont know and dont need the year
+            const date = '1900-' + this.qrData.birthMonth + '-' + this.qrData.birthDay;
+            const format = 'dd LLL';
+            return dateTool.dateToString(date, format).toUpperCase();
         },
         fileName() {
             const info = [
-                dateTool.dateToString(this.testResult.sampleDate, 'yyyyMMdd'),
+                dateTool.dateToString((this.qrData.sampleTime * 1000), 'yyyyMMdd'),
                 'coronacheck',
                 'testbewijs',
-                this.testResult.holder.stringCompact
+                this.holderString
             ];
             return info.join('_') + '.pdf';
         }
@@ -156,14 +166,14 @@ export default {
                     fontSize: 10,
                     position: [pageMarginLeft, tableBaseY]
                 }, {
-                    text: this.testResult.holder.initials,
+                    text: this.qrData.firstNameInitial + this.qrData.lastNameInitial,
                     fontWeight: 700,
                     position: [tableBaseCol2X, tableBaseY]
                 }, {
                     text: 'Geboortedag',
                     position: [pageMarginLeft, (tableBaseY + lineHeight)]
                 }, {
-                    text: this.testResult.holder.birthDayString,
+                    text: this.birthDayString,
                     fontWeight: 700,
                     position: [tableBaseCol2X, (tableBaseY + lineHeight)]
                 }]
@@ -172,7 +182,7 @@ export default {
                 text: 'Getest op',
                 position: [pageMarginLeft, (tableBaseY + 3 * lineHeight)]
             }, {
-                text: dateTool.dateToString(this.testResult.sampleDate),
+                text: dateTool.dateToString((this.qrData.sampleTime * 1000)),
                 fontWeight: 700,
                 position: [tableBaseCol2X, (tableBaseY + 3 * lineHeight)]
             }, {
