@@ -5,6 +5,7 @@ import { jsPDF as JsPDF } from 'jspdf';
 import montserrat from '@/assets/fontAsBase64';
 import dateTool from '@/tools/date';
 import Footer from '@/components/elements/Footer';
+import { detect } from 'detect-browser';
 
 const cmToInch = 0.393700787;
 const QRSizeInCm = 8;
@@ -36,7 +37,7 @@ export default {
         },
         birthDayString() {
             // we dont know and dont need the year
-            const date = '1900-' + this.qrData.birthMonth + '-' + this.qrData.birthDay;
+            const date = '1900/' + this.qrData.birthMonth + '/' + this.qrData.birthDay;
             const format = 'dd LLL';
             const string = dateTool.dateToString(date, format).toUpperCase();
             if (string[string.length - 1] === '.') {
@@ -76,12 +77,23 @@ export default {
         },
         openPDF() {
             if (this.document) {
-                const string = this.document.output('datauristring');
-                const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
-                const action = window.open();
-                action.document.open();
-                action.document.write(embed);
-                action.document.close();
+                const browser = detect();
+                if (browser.os === 'Android OS' || browser.os === 'iOS') {
+                    const oldBlob = this.document.output('blob');
+                    const newBlob = new Blob([oldBlob], { type: 'application/octet-stream' })
+                    const objectUrl = URL.createObjectURL(newBlob);
+                    const anchor = document.createElement('a');
+                    anchor.href = objectUrl;
+                    anchor.click();
+                    URL.revokeObjectURL(objectUrl);
+                } else {
+                    const string = this.document.output('datauristring');
+                    const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
+                    const action = window.open();
+                    action.document.open();
+                    action.document.write(embed);
+                    action.document.close();
+                }
             } else {
                 this.somethingGeneralWentWrong();
             }

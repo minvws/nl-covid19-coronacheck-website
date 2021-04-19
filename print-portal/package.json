@@ -12,6 +12,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "date-fns": "^2.20.1",
+    "detect-browser": "^5.2.0",
     "jspdf": "^2.3.1",
     "qrcode": "^1.4.4",
     "register-service-worker": "^1.7.1",
