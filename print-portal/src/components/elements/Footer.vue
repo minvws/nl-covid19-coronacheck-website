@@ -28,7 +28,9 @@ export default {
                     </p>
                     <p>
                         <strong>Of stuur een e-mail naar:</strong><br>
-                        helpdesk@coronacheck.nl
+                        <a href="mailto:helpdesk@coronacheck.nl" target="_blank">
+                            helpdesk@coronacheck.nl
+                        </a>
                     </p>
                 </div>
             </div>
@@ -56,6 +58,10 @@ export default {
                 color: #fff;
                 margin-top: 0;
                 margin-bottom: $length-s;
+            }
+
+            a {
+                color: #fff;
             }
         }
     }
