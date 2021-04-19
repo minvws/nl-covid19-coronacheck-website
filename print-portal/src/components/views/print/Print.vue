@@ -106,7 +106,7 @@ export default {
                 width: sizeInPixels,
                 height: sizeInPixels,
                 margin: 0,
-                errorCorrectionLevel: 'M'
+                errorCorrectionLevel: 'L'
             };
             return new Promise((resolve, reject) => {
                 QRCode.toDataURL(this.qrCode, qrOptions)
