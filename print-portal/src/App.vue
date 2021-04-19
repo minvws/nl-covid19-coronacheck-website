@@ -34,7 +34,7 @@ export default {
         async getTestProviders() {
             this.$axios({
                 method: 'get',
-                url: 'holder/config_ctp'
+                url: '/holder/config_ctp'
             }).then((response) => {
                 if (response.data && response.data.payload) {
                     const config = JSON.parse(atob(response.data.payload));

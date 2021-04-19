@@ -25,7 +25,7 @@ export default {
                 } else {
                     this.$axios({
                         method: 'post',
-                        url: 'staticproof/paper',
+                        url: '/staticproof/paper',
                         data: this.signature
                     }).then((response) => {
                         if (response.data.status === 'ok' && response.data.error === 0) {
