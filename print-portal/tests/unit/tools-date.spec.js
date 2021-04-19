@@ -9,15 +9,15 @@ describe('Date tool', () => {
     })
 
     it('Formatting of a date used for a testresult without language setting', () => {
-        const dateString = '2021-04-13 08:00';
-        const dateStringExpected = 'dinsdag 13 april 08:00';
-        expect(dateTool.dateToString(dateString, 'EEEE d LLLL hh:mm')).toMatch(dateStringExpected)
+        const dateString = '2021-04-13 14:00';
+        const dateStringExpected = 'dinsdag 13 april 14:00';
+        expect(dateTool.dateToString(dateString, 'EEEE d LLLL HH:mm')).toMatch(dateStringExpected)
     })
 
     it('Formatting of a date used for a testresult, english', () => {
-        const dateString = '2021-04-13 08:00';
-        const dateStringExpected = 'Tuesday 13 April 08:00';
-        expect(dateTool.dateToString(dateString, 'EEEE d LLLL hh:mm', 'en')).toMatch(dateStringExpected)
+        const dateString = '2021-04-13 14:00';
+        const dateStringExpected = 'Tuesday 13 April 14:00';
+        expect(dateTool.dateToString(dateString, 'EEEE d LLLL HH:mm', 'en')).toMatch(dateStringExpected)
     })
 
     it('Date 40 hours later', () => {

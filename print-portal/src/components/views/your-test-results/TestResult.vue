@@ -20,7 +20,7 @@ export default {
             }
         },
         date() {
-            return dateTool.dateToString(this.testResult.sampleDate, 'EEEE d LLLL hh:mm', this.currentLanguage.locale);
+            return dateTool.dateToString(this.testResult.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
         }
     },
     methods: {}
