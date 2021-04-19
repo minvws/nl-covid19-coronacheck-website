@@ -34,11 +34,19 @@ export default {
                             this.$router.push({ name: 'Print' });
                         }
                     }).catch((error) => {
-                        this.$store.commit('modal/set', { message: (this.translate('generalError') + '<p>' + error + '</p>'), closeButton: true });
+                        this.$store.commit('modal/set', {
+                            messageHead: this.translate('generalError'),
+                            messageBody: this.translate('generalErrorBody') + '<p>' + error + '</p>',
+                            closeButton: true
+                        });
                     })
                 }
             } else {
-                this.$store.commit('modal/set', { message: this.translate('generalError'), closeButton: true });
+                this.$store.commit('modal/set', {
+                    messageHead: this.translate('generalError'),
+                    messageBody: this.translate('generalErrorBody'),
+                    closeButton: true
+                });
             }
         },
         goBack() {

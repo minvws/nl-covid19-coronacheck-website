@@ -3,9 +3,17 @@ export default {
     name: 'Modal',
     components: {},
     props: {},
+    data() {
+        return {
+            elementThatHadFocusBeforeModal: null
+        }
+    },
     computed: {
-        message() {
-            return this.$store.state.modal.message;
+        messageHead() {
+            return this.$store.state.modal.messageHead;
+        },
+        messageBody() {
+            return this.$store.state.modal.messageBody;
         },
         showConfirm() {
             return this.$store.state.modal.confirm;
@@ -73,6 +81,10 @@ export default {
                 this.close();
             }
         });
+
+        this.$refs.tabEnd.addEventListener('focus', (event) => {
+            this.setFocus();
+        });
     }
 }
 </script>
@@ -84,20 +96,27 @@ export default {
         <div
             @click="close()"
             class="cover__clickable-area"></div>
-        <div class="modal">
+        <div
+            class="modal"
+            role="alertdialog"
+            :aria-modal="showModal"
+            aria-labelledby="modal__head"
+            aria-describedby="modal__body">
             <div
-                v-html="message"
-                class="modal__body">
+                v-html="messageHead"
+                id="modal__head">
             </div>
-
+            <div
+                v-html="messageBody"
+                id="modal__body">
+            </div>
             <div
                 v-if="showModal"
-                class="modal__footer">
+                id="modal__footer">
                 <button
                     v-if="showConfirm"
                     @click="refute()"
                     ref="refute"
-                    tabindex="1"
                     type="button"
                     class="button-modest">
                     {{refuteText}}
@@ -106,7 +125,6 @@ export default {
                     v-if="showConfirm"
                     @click="confirm()"
                     ref="confirm"
-                    tabindex="2"
                     type="button"
                     class="button-modest button--ok">
                     {{confirmText}}
@@ -115,11 +133,13 @@ export default {
                     v-if="showCloseButton"
                     @click="close()"
                     ref="close"
-                    tabindex="3"
                     type="button"
                     class="button-modest">{{translate('close')}}</button>
             </div>
         </div>
+        <div
+            ref="tabEnd"
+            tabindex="0"></div>
     </div>
 </template>
 
@@ -163,8 +183,14 @@ export default {
     transition: top 1s ease;
     border-radius: 5px;
 
-    .modal__body {
-        padding: $length-l;
+    #modal__head {
+        padding: $length-l $length-l 0 $length-l;
+        margin-bottom: $grid-x2;
+        font-weight: 700;
+    }
+
+    #modal__body {
+        padding: 0 $length-l;
         font-size: 16px;
 
         strong {
@@ -172,9 +198,9 @@ export default {
         }
     }
 
-    .modal__footer {
+    #modal__footer {
         position: relative;
-        padding: 0 $length-l $length-l $length-l;
+        padding: $length-l;
         display: flex;
         align-items: center;
 

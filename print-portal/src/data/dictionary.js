@@ -53,8 +53,12 @@ const dictionary = {
         'ar': 'على سبيل المثال'
     },
     'generalError': {
-        'nl': '<strong>Sorry, er gaat iets mis</strong><p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck.</p>',
-        'en': '<strong> Sorry, something is wrong </strong><p>This is due to a technical error. Contact the CoronaCheck helpdesk.</p>'
+        'nl': 'Sorry, er gaat iets mis',
+        'en': 'Sorry, something is wrong'
+    },
+    'generalErrorBody': {
+        'nl': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck.</p>',
+        'en': '<p>This is due to a technical error. Contact the CoronaCheck helpdesk.</p>'
     },
     'goBackToStart': {
         'nl': 'Terug naar het begin',
@@ -86,10 +90,13 @@ const dictionary = {
         'nl': 'Haal eerst je tesultaat op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen.',
         'en': 'Get your result first. Use the code that you received from the test location for this.'
     },
+    'noVerificationCodeHead': {
+        'nl': 'Heb je geen verificatie code gekregen?',
+        'en': 'Did you get a verification code?'
+    },
     'noVerificationCodeMessage': {
-        'nl': '<strong>Heb je geen verificatie code gekregen?</strong><p>Als je geen sms/email met een verificatie code hebt gekregen van de testlocatie, kan je een nieuwe code toegestuurd krijgen.</p>',
-        'en': '<strong> Did you get a verification code? </strong> <p> If you did not get an text message / email with a verification code from the test site, you can be sent a new code. </p>',
-        'ar': '<strong> هل لم تتلق رمز التحقق؟ </ strong> <p> إذا لم تتلق رسالة قصيرة SMS / بريدًا إلكترونيًا يحتوي على رمز التحقق من موقع الاختبار ، فقد تتلقى رمزًا جديدًا. </ p>'
+        'nl': '<p>Als je geen sms/email met een verificatie code hebt gekregen van de testlocatie, kan je een nieuwe code toegestuurd krijgen.</p>',
+        'en': '<p> If you did not get an text message / email with a verification code from the test site, you can be sent a new code. </p>'
     },
     'preferMobile': {
         'nl': 'Liever je testbewijs op je mobiel?',

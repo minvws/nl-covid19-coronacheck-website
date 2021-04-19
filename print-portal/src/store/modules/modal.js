@@ -4,7 +4,8 @@ const state = {
     confirmAction: null,
     confirmYes: 'Yes',
     confirmNo: 'No',
-    message: '...',
+    messageHead: '...',
+    messageBody: '...',
     closeButton: true
 };
 
@@ -19,7 +20,8 @@ const mutations = {
         state.confirmAction = options.confirmAction;
         state.confirmYes = options.confirmYes || 'Yes';
         state.confirmNo = options.confirmNo || 'No';
-        state.message = options.message;
+        state.messageHead = options.messageHead;
+        state.messageBody = options.messageBody;
         state.closeButton = options.closeButton;
         state.closeAfter = options.closeAfter || false;
     },

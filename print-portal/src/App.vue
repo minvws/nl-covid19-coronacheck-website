@@ -40,10 +40,18 @@ export default {
                     const config = JSON.parse(atob(response.data.payload));
                     this.$store.commit('testProviders/init', config.corona_test_providers);
                 } else {
-                    this.$store.commit('modal/set', { message: this.translate('generalError'), closeButton: true });
+                    this.$store.commit('modal/set', {
+                        messageHead: this.translate('generalError'),
+                        messageBody: this.translate('generalErrorBody'),
+                        closeButton: true
+                    });
                 }
             }).catch((error) => {
-                this.$store.commit('modal/set', { message: (this.translate('generalError') + '<p>' + error + '</p>'), closeButton: true });
+                this.$store.commit('modal/set', {
+                    messageHead: this.translate('generalError'),
+                    messageBody: (this.translate('generalErrorBody') + '<p>' + error + '</p>'),
+                    closeButton: true
+                });
             })
         },
         addLanguages() {

@@ -87,12 +87,12 @@ export default {
             }
         },
         somethingGeneralWentWrong() {
-            const message = 'Er ging iets mis.';
             const confirmAction = () => {
                 this.$router.push({ name: 'ProvideCode' });
             }
             this.$store.commit('modal/set', {
-                message,
+                messageHead: this.translate('generalError'),
+                messageBody: this.translate('generalErrorBody'),
                 confirm: true,
                 confirmAction,
                 confirmYes: this.translate('goBackToStart'),
@@ -114,7 +114,11 @@ export default {
                         resolve(url);
                     })
                     .catch(error => {
-                        this.$store.commit('modal/set', { message: (this.translate('generalError') + '<p>' + error + '</p>'), closeButton: true });
+                        this.$store.commit('modal/set', {
+                            messageHead: this.translate('generalError'),
+                            messageBody: this.translate('generalErrorBody') + '<p>' + error + '</p>',
+                            closeButton: true
+                        });
                     })
             })
         },

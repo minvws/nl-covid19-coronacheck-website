@@ -37,8 +37,6 @@ export default {
             }
         },
         requestNewVerificationCode() {
-            const message = this.translate('noVerificationCodeMessage')
-
             const confirmAction = () => {
                 // false means: do request without the verification code
                 // this will trigger backend to send sms again
@@ -46,7 +44,8 @@ export default {
             }
 
             this.$store.commit('modal/set', {
-                message,
+                messageHead: this.translate('noVerificationCodeHead'),
+                messageBody: this.translate('noVerificationCodeMessage'),
                 confirm: true,
                 confirmAction,
                 confirmYes: this.translate('sendAgain'),
