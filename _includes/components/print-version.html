@@ -9,10 +9,12 @@
     >
   </div>
   <div class="print-version__column-content">
-    <h2 class="print-version__title">Wil je een papieren testbewijs?</h2>
+    <h2 class="print-version__title">{{ site.data.translations.print-version-title[page.lang] }}</h2>
     <p>
-      <a href="#">Lees hier meer <span class="screen-reader-text">over het maken van een papieren testbewijs</span></a>
+      {{ site.data.translations.print-version-content[page.lang] }}
     </p>
-    <a href="#" class="btn">Maak papieren testbewijs</a>
+    {% comment %}
+      <a href="{{ site.data.translations.print-version-url[page.lang] }}" class="btn">{{ site.data.translations.print-version-url-link[page.lang] }}</a>
+    {% endcomment %}
   </div>
 </div>
