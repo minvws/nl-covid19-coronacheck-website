@@ -10,9 +10,6 @@ categories:
 showBreadCrumbs: true
 showContact: true
 showOnFAQoverview: true
-featuredHome: true
-featuredHomeIndex: 2
-featuredHomeIcon: thumbs-up
 ---
 CoronaCheck en CoronaCheck Scanner worden op dit moment getest tijdens de pilots testen voor toegang. Zo zien we of de apps goed werken en hoe ze verbeterd kunnen worden.
 

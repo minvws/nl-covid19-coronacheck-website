@@ -2,7 +2,7 @@
 layout: content
 index: 4
 set: 1
-title: Bij welke locaties is een testbewijs nodig als ik naar binnen wil?
+title: Bij welke locatie heb ik een testbewijs nodig? 
 lang: nl
 categories:
 - nl
@@ -12,7 +12,6 @@ showContact: true
 showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 4
-featuredHomeIcon: location
 ---
 Op dit moment wordt de CoronaCheck-app alleen getest tijdens de pilots testen voor toegang. Kijk voor de pilot evenementen in april op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen?utm_campaign=coronavirus&utm_source=coronacheck.nl/nl/scanner' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid</a>. 
 

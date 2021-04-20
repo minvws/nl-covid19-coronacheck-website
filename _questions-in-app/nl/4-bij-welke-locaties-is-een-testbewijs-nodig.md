@@ -2,7 +2,7 @@
 layout: in-app-question
 index: 4
 set: 1
-title: Bij welke locaties is een testbewijs nodig als ik naar binnen wil?
+title: Bij welke locatie heb ik een testbewijs nodig? 
 lang: nl
 categories:
 - nl
