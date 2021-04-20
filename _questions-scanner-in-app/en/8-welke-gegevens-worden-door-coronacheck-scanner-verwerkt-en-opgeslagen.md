@@ -6,7 +6,8 @@ title: What data is processed and saved by the CoronaCheck scanner?
 lang: en
 categories:
 - en
-- faq
+- faq-scanner
+- in-app
 showBreadCrumbs: true
 showContact: true
 ---

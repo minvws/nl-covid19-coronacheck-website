@@ -6,7 +6,8 @@ title: Hoe werkt het scannen met de CoronaCheck Scanner?
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner
+- in-app
 showBreadCrumbs: true
 showContact: true
 ---

@@ -6,7 +6,8 @@ title: Can I allow a visitor access without a valid test declaration in the Coro
 lang: en
 categories:
 - en
-- faq
+- faq-scanner
+- in-app
 showBreadCrumbs: true
 showContact: true
 ---

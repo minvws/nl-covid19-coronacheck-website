@@ -7,6 +7,7 @@ lang: en
 categories:
 - en
 - faq
+- in-app
 showBreadCrumbs: true
 showContact: true 
 ---

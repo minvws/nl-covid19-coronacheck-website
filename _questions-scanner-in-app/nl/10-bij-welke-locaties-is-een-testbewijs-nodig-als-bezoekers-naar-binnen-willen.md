@@ -6,7 +6,8 @@ title: Bij welke locaties is een testbewijs nodig als bezoekers naar binnen will
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner
+- in-app
 showBreadCrumbs: true
 showContact: true
 ---

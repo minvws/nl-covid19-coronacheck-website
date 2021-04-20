@@ -6,7 +6,8 @@ title: I get a red screen after scanning a QR code. What now?
 lang: en
 categories:
 - en
-- faq
+- faq-scanner
+- in-app
 showBreadCrumbs: true
 showContact: true
 ---

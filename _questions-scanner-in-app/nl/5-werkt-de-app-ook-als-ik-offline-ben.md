@@ -6,7 +6,8 @@ title: Werkt de app ook als ik offline ben?
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner
+- in-app
 showBreadCrumbs: true
 showContact: true
 ---
