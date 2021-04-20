@@ -12,7 +12,6 @@ showContact: true
 showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 2
-featuredHomeIcon: app-touch
 ---
 De bezoeker moet altijd een geldig testbewijs laten zien. De geldigheid van het testbewijs kan gecontroleerd worden met behulp van de CoronaCheck Scanner.
 

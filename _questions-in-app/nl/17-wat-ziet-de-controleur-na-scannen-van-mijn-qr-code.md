@@ -6,7 +6,7 @@ title: Wat ziet de controleur na het scannen van mijn QR-code?
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

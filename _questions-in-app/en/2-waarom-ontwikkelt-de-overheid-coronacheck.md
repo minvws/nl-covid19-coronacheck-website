@@ -6,7 +6,7 @@ title: Why is the government developing the CoronaCheck app?
 lang: en
 categories:
 - en
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

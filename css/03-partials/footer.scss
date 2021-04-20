@@ -1,9 +1,8 @@
 
 .footer-samen {
     padding: 2.2rem 1.4rem 5rem 1.4em;
-    max-width: 1100px;
+    max-width: 940px;
     flex-direction: column;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
 
     @media(min-width: 740px) {
         padding: 3.2rem 1.4rem 2rem 1.4em;
@@ -62,50 +61,40 @@
 
 .footer-phone {
     padding: 2.2rem 1.4rem 2rem 1.4em;
-    max-width: 1100px;
+    max-width: 940px;
     color: $color-RO_darkblue;
     font-size: 16px;
     margin-bottom: 2em;
 
-    &.small {
-        @media(min-width: 740px) {
-            margin-bottom: 1em;
-            padding: 4rem 200px 4rem 200px; 
-        }
-    }
-
     @media(min-width: 740px) {
-        padding-top: 3.0em;
-        padding-bottom: 3.2em;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         display: flex;
-        font-size: 24px;
-
-    }
-
-    @media(min-width: 960px) {
-        padding-top: 4.0em;
-        padding-bottom: 5em;
+        font-size: 18px;
         margin: 0 auto;
     }
 }
 
 .footer-phone--background {
-    background-color: #EFF7F9;
+    background-color: $color-RO_lightblue;
 }
 
 .footer-phone__column-left {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.5em;
-    width: 120px;
-    flex: 0 0 120px;
-    align-items: baseline;
-    justify-content: left;
+    flex: 0 0 33.333%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
 }
 
 .footer-phone__column-right {
     display: flex;
     flex-direction: column;
+
+    h3 {
+        font-size: 18px;
+    }
 }
 
 .footer-phone_text {
@@ -128,14 +117,8 @@
     }
 }
 
-.footer-opening-hours {
-    font-weight: 800;
-    line-height: 2.2;
-}
-
-
 .footer-phonetimes {
-  margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 
@@ -159,7 +142,7 @@
     position: relative;
     padding: 1em;
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 940px;
     font-size: 1em;
     line-height: 1em;
     color: #fff;
@@ -168,11 +151,9 @@
         margin-right: 1.6em;
         margin-left: 1.6em;
         padding-bottom: 2.5em;
-        //padding: 2em 1em calc(1.4em + 24px) 1em;
     }
     
     @media (min-width: 960px) {
-        //padding: 1em 3em calc(1.4em + 24px) 3em;
         margin: 4.8em auto 0 auto;
     }
     

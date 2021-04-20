@@ -6,7 +6,7 @@ title: Ik heb geen smartphone. Kan ik wel een testbewijs krijgen?
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

@@ -5,7 +5,13 @@
 
   img{
     height: 65px;
+    width: auto;
+
+    @media (min-width: 740px) {
+      height: 30px;
+    }
   }
+
   .app_badge_column__left {
     display: inline-block;
     @media (min-width: 740px) {
@@ -26,6 +32,11 @@
   position: relative;
   text-align: center;
 
+  img {
+    height: 65px;
+    width: auto;
+  }
+
   h2 {
     font-size: 24px;
     color: #333333;
@@ -42,7 +53,7 @@
   }
 
   @media (min-width: 960px) {
-    max-width: 1190px;
+    max-width: 1030px;
   }
 
   .badges__caveat {
@@ -53,7 +64,7 @@
 }
 
 .layout-app-badges--background {
-  background-color: #EFF7F9 /* lightblauw */;
+  background-color: $color-RO_lightblue /* lightblauw */;
 }
 
 .badges__caveat {

@@ -1,23 +1,22 @@
 .information {
   display: block;
-  background-color: #EFF7F9 /* lightblauw */;
+  background-color: $color-RO_lightblue /* lightblauw */;
   margin: 0 auto 1em;
   padding: 1em 1.6em;
   position: relative;
 
-  @media (min-width: 740px) {
+  @media (min-width: 680px) {
     width: calc(100% - (54px * 2));
     padding: 50px 80px;
   }
 
   @media (min-width: 960px) {
-    max-width: 1190px;
+    max-width: 1030px;
   }
 }
 
 .information-title {
   font-size: 32px;
-  color: $color-RO_darkblue;
   text-align: center;
   margin-bottom: 1.25em;
 }
@@ -37,7 +36,7 @@
     display: block;
     width: 100%;
 
-    @media (min-width: 740px) {
+    @media (min-width: 680px) {
       width: calc(50% - 64px);
       margin: 32px;
     }

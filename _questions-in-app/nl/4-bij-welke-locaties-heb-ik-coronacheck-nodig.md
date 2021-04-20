@@ -6,7 +6,7 @@ title: Bij welke locaties heb ik CoronaCheck nodig als ik naar binnen wil?
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

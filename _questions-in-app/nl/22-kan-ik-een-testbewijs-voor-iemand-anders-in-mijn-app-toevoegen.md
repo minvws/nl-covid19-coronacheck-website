@@ -6,7 +6,7 @@ title: Kan ik een testbewijs voor iemand anders in mijn CoronaCheck-app toevoege
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

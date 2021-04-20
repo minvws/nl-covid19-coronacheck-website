@@ -115,7 +115,7 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Met de app kun je aantonen dat je negatief getest bent op corona. Lees hier <a href="#">meer over de app</a>
+  nl: Met de app kan je aantonen dat je negatief getest bent op corona. CoronaCheck wordt op dit moment getest tijdens de pilots testen voor toegang, kijk voor de actuele lijst op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen?utm_campaign=coronavirus&utm_source=coronacheck.nl/nl/' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid.</a>
   fy: 
   en: Get tested, gain access*
   ar: 
@@ -519,7 +519,7 @@ layout-template-faq:
   tr: Sık sorulan sorulara dön
   
 layout-faq-btn:
-  nl: Bekijk alle meestgestelde vragen
+  nl: Bekijk alle vragen
   fy: Besjoch alle faakstelde fragen (Nederlânsk)
   en: All frequently asked questions
   ar: جميع الأسئلة المتكررة (الانجليزية)
@@ -739,17 +739,17 @@ footer-phone-opening-hours:
   tr: "Pazartesi - Pazar 08:00 - 20:00 "
   
 footer-phone-mail: 
-  nl: "Of stuur een e-mail naar: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  fy: "Of stjoer in e-mail nei: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  en: "Or send an e-mail to: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  ar: "أو ارسل بريدًا الكترونيًا إلى: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  bg: "Или изпрати имейл на <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  de: "Oder schicken Sie eine E-Mail an: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  es: "O envía un correo a: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  fr: "Ou envoyez un courriel à : <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  pl: "Lub wyślij wiadomość e-mail na adres: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  ro: "Sau trimiteți un mesaj prin email la: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  tr: "Veya şu adrese bir e-posta gönderin: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
+  nl: "Of stuur een e-mail naar:"
+  fy: "Of stjoer in e-mail nei:"
+  en: "Or send an e-mail to:"
+  ar: "أو ارسل بريدًا الكترونيًا إلى:"
+  bg: "Или изпрати имейл на"
+  de: "Oder schicken Sie eine E-Mail an:"
+  es: "O envía un correo a:"
+  fr: "Ou envoyez un courriel à :"
+  pl: "Lub wyślij wiadomość e-mail na adres:"
+  ro: "Sau trimiteți un mesaj prin email la:"
+  tr: "Veya şu adrese bir e-posta gönderin:"
     
 footer-colophon: 
   nl: Colofon
@@ -1118,7 +1118,7 @@ information-title:
   tr: 'Verilerinizi şu şekilde ele alıyoruz:'
   
 information-qrcode:
-  nl: In de QR-code staat alleen wanneer je negatief getest bent.
+  nl: In de QR-code staan minimale persoonsgegevens.
   fy: 
   en: Your QR code only says when you tested negative.
   ar: 
@@ -1384,4 +1384,38 @@ home-video-content_md:
   nl: Bekijk in 2 minuten wat CoronaCheck is, wat CoronaCheck doet en waarom de app belangrijk is.
   fy: Besjoch yn 2 minuten wat CoronaCheck is, wat CoronaCheck docht en wêrom’t de app wichtich is. (Nederlânsk)
   en: Find out in two-minutes what CoronaCheck is, what it does and what it can mean for you!
-  
+
+user-instructions-title:
+  nl: Hoe werkt het?
+  fy: 
+  en: How does it work?
+
+print-version-title:
+  nl: Wil je een papieren testbewijs?
+  fy: 
+  en: 
+
+print-version-content:
+  nl: Vanaf donderdag 22 april is het mogelijk om hier je papieren testbewijs te maken.
+  fy: 
+  en: 
+
+print-version-url: 
+  nl: Vanaf donderdag 22 april is het mogelijk om hier je papieren testbewijs te maken.
+  fy: 
+  en: 
+
+print-version-url-link: 
+  nl: Maak papieren testbewijs
+  fy: 
+  en: 
+
+about-coronacheck-title:
+  nl: Over CoronaCheck
+  fy: Oer CoronaCheck
+  en: About CoronaCheck
+
+about-coronacheck-content:
+  nl: <p>CoronaCheck is ontwikkeld als onderdeel van toegangstesten. Met de CoronaCheck-app kunnen bezoekers aantonen dat ze negatief getest zijn op corona. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open.</p>
+  fy: 
+  en: 

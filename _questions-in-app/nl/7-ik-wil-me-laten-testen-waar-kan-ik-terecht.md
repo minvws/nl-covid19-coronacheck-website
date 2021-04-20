@@ -6,7 +6,7 @@ title: Ik wil me laten testen, waar kan ik terecht?
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

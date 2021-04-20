@@ -6,7 +6,7 @@ title: I've taken a test, how do I get my results?
 lang: en
 categories:
 - en
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---
