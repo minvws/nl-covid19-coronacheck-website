@@ -17,15 +17,11 @@
   
       <article class="highlighted-faq">
         <div class="highlighted-faq__summary">
-          <div class="highlighted-faq__summary__icon">
-            {% include graphics/{{ question.featuredHomeIcon }}.svg  %}
-          </div>
-          <div class="statement__content">
+          <div class="highlighted-faq__title">
             <h3>{{ question.title }}</h3>
-            <p>{{ question.featuredHomeText }}</p>
           </div>
           <a href="{{ site.baseurl }}{{ question.url }}" class="highlighted-faq__summary__btn-expand">
-            <span class="icon icon-chevron-right"></span>{{ site.data.translations.readmore[page.lang] }}
+            {{ site.data.translations.readmore[page.lang] }}
             <span class="screen-reader-text"> {{ site.data.translations.readmore-about_screen-reader[page.lang] }}: {{ question.title }}</span>
           </a>
         </div>

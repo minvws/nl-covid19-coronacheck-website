@@ -6,7 +6,7 @@ title: Werkt CoronaCheck Scanner op mijn telefoon?
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner-in-app
 showBreadCrumbs: true
 showContact: true
 ---

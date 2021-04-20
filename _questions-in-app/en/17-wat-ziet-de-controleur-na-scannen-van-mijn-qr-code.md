@@ -6,7 +6,7 @@ title: What does the scanner see after scanning my QR code?
 lang: en
 categories:
 - en
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

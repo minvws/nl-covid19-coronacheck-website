@@ -6,7 +6,7 @@ title: When are the apps ready to be used? 
 lang: en
 categories:
 - en
-- faq
+- faq-scanner-in-app
 showBreadCrumbs: true
 showContact: true
 ---

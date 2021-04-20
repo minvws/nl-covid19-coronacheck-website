@@ -6,7 +6,7 @@ title: Why is a test declaration valid for 40 hours?
 lang: en
 categories:
 - en
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

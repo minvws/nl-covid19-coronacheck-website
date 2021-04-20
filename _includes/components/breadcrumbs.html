@@ -8,28 +8,39 @@
   <ul> 
   {% for crumb in crumbs offset: 1 %}
     {{% assign start_crumb = '' %}}
+    
     {% if forloop.first %}
     <li class="breadcrumbs-item"> 
+      {% if include.collection == 'questions-in-app' %} 
+        <a class="breadcrumbs" href="{{langSlug}}/faq-in-app">
+          {{ site.data.translations.faq[page.lang] }}</a>
+      {% elsif include.collection == 'questions-scanner-in-app' %}
+        <a class="breadcrumbs" href="{{langSlug}}/faq-scanner-in-app">
+          {{ site.data.translations.faq[page.lang] }}</a>
+      {% else %}
         <a class="breadcrumbs" href="{{langSlug}}">
-          {{ site.data.translations.layout-template-home[page.lang] }}
-        </a>
-        {% if forloop.last == false %}
-          <span class="icon icon-chevron-right"></span>
-        {% endif %}
-    </li> 
-    {% elsif forloop.last == false and include.collection == 'questions-scanner' %} 
-      <li class="breadcrumbs-item">
-        <a class="breadcrumbs" href="{{langSlug}}/faq-scanner">
-        {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
+          {{ site.data.translations.layout-template-home[page.lang] }}</a>
+      {% endif %}
+
+      {% if forloop.last == false %}
         <span class="icon icon-chevron-right"></span>
-      </li>
-    {% elsif forloop.last == false and include.collection == 'questions' %}
+      {% endif %}
+    </li> 
+    {% elsif forloop.last == false %} 
+      {% if include.collection == 'questions-scanner' %} 
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs" href="{{langSlug}}/faq">
-            {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
+          <a class="breadcrumbs" href="{{langSlug}}/faq-scanner">
+          {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
           <span class="icon icon-chevron-right"></span>
         </li>
-    {% else  %}
+      {% elsif include.collection == 'questions' %}
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs" href="{{langSlug}}/faq">
+              {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
+            <span class="icon icon-chevron-right"></span>
+          </li>
+      {% endif %}
+    {% elsif forloop.last  %}
       <li class="breadcrumbs-item"> 
         {% if page.contentLang == 'en' %}
           <span class="breadcrumbs disabled" dir="ltr" lang="en" aria-current="page">{{ include.title | truncate: 40 }}</span>

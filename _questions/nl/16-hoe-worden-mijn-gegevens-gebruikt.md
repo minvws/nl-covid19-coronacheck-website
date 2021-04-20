@@ -11,8 +11,7 @@ showBreadCrumbs: true
 showContact: true
 showOnFAQoverview: true
 featuredHome: true
-featuredHomeIndex: 5
-featuredHomeIcon: privacy
+featuredHomeIndex: 3
 ---
 In de [privacyverklaring](/nl/privacy) staat hoe CoronaCheck omgaat met jouw gegevens. Dit zijn de belangrijkste punten:
 
