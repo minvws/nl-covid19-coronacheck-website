@@ -6,7 +6,7 @@ title: What if the app doesn't work when I want to get access?
 lang: en
 categories:
 - en
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

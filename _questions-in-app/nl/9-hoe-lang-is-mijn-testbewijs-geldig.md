@@ -6,7 +6,7 @@ title: Hoe lang is mijn testbewijs geldig?
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

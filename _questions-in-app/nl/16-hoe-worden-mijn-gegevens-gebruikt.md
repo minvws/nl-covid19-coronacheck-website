@@ -6,7 +6,7 @@ title: Hoe worden mijn gegevens gebruikt?
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

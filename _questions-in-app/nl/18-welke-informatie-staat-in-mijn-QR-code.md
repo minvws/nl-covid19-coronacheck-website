@@ -6,7 +6,7 @@ title: Welke informatie staat in mijn QR-code?
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---
