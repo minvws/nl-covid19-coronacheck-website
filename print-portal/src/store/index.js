@@ -13,6 +13,7 @@ const state = {
     verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
     testResultStatus: 'idle',
     testResult: null,
+    userConsent: false,
     signature: null,
     qrCode: '',
     qrData: null
@@ -39,6 +40,9 @@ const mutations = {
     },
     setQrData(state, qrData) {
         state.qrData = qrData;
+    },
+    setUserConsent(state, consentState) {
+        state.userConsent = consentState;
     },
     setHolderConfig(state, holderConfig) {
         state.holderConfig = holderConfig;

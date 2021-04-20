@@ -1,8 +1,9 @@
 <script>
+import UserConsent from '@/components/elements/UserConsent';
 
 export default {
     name: 'ProvideTestCode',
-    components: { },
+    components: { UserConsent },
     props: {
         testCodeStatus: {
             type: Object,
@@ -24,6 +25,9 @@ export default {
         showButton() {
             // only show this button when there is an action to be done concerning the test code
             return this.testResultStatus !== 'verification_required' && this.testResultStatus !== 'complete';
+        },
+        hasGivenConsent() {
+            return this.$store.state.userConsent;
         },
         testCode: {
             get() {
@@ -47,7 +51,7 @@ export default {
             this.$store.commit('clearQrCode');
         },
         sendTestCode() {
-            if (this.isTestCodeValid) {
+            if (this.isTestCodeValid && this.hasGivenConsent) {
                 this.getSignedResult({ includeVerificationCode: false });
             }
         }
@@ -59,7 +63,7 @@ export default {
     <div class="ProvideTestCode">
         <div class="input__set">
             <label for="input--testCode">
-                {{translate('uniqueCode')}}
+                {{translate('uniqueCode')}} {{hasGivenConsent}}
             </label>
             <input
                 v-model="testCode"
@@ -74,12 +78,13 @@ export default {
                 {{testCodeStatus.error}}
             </div>
         </div>
+        <UserConsent/>
         <button
             v-if="showButton"
             @click="sendTestCode()"
             type="button"
-            :disabled="!isTestCodeValid"
-            :class="{'button--inactive': !isTestCodeValid}"
+            :disabled="(!isTestCodeValid || !hasGivenConsent)"
+            :class="{'button--inactive': (!isTestCodeValid || !hasGivenConsent)}"
             class="button-standard">
             {{translate('next')}}
         </button>
@@ -87,7 +92,12 @@ export default {
 </template>
 
 <style lang="scss">
+@import "@/styles/variables/index";
+
 .ProvideTestCode {
 
+    .UserConsent {
+        margin-bottom: $length-s;
+    }
 }
 </style>
