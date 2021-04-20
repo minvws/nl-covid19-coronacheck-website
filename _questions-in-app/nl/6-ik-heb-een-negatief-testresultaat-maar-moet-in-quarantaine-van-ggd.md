@@ -6,7 +6,7 @@ title: Ik heb een negatieve uitslag, maar moet in quarantaine blijven van de GGD
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

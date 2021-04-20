@@ -6,7 +6,7 @@ title: I have a valid QR code, but I also have symptoms. Can I still get access?
 lang: en
 categories:
 - en
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

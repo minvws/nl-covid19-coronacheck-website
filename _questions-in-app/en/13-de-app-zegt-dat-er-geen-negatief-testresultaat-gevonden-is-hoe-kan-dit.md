@@ -6,7 +6,7 @@ title: The app doesn't show a negative test result. Why?
 lang: en
 categories:
 - en
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 published: false

@@ -6,7 +6,7 @@ title: Can I use the CoronaCheck app abroad?
 lang: en
 categories:
 - en
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

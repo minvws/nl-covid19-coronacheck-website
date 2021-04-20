@@ -6,7 +6,7 @@ title: Mijn QR-code is gescand, maar geeft een rood scherm. Wat moet ik doen?
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

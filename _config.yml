@@ -6,13 +6,13 @@ collections:
     permalink: /:categories/:name/
   questions-in-app:
     output: true
-    permalink: in-app/:categories/:name/
+    permalink: /:categories/:name/
   questions-scanner:
     output: true
     permalink: /:categories/:name/
   questions-scanner-in-app:
     output: true
-    permalink: in-app/scanner/:categories/:name/
+    permalink: /:categories/:name/
   stories:
     output: false
   scanner-instructions:
