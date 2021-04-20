@@ -39,7 +39,7 @@
   background: $color-RO_lightblue;
 
   .header__title {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 800;
 
     @media (min-width: 825px) {
@@ -57,6 +57,7 @@
     justify-content: center;
     align-items: flex-end;
     padding-left: 30px;
+    padding-right: 30px;
   }
 
   .header__layout--image {
@@ -159,7 +160,7 @@
     }
 
     @media(min-width: 960px) {
-      right: calc((1100px / -2) + calc(100% / 2));
+      right: calc((940px / -2) + calc(100% / 2));
     }
   }
 
@@ -316,7 +317,7 @@
   }
 
   .header__center {
-    max-width: 1100px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 0 20px;
 

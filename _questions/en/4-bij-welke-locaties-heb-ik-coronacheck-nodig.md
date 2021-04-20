@@ -12,7 +12,6 @@ showContact: true
 showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 4
-featuredHomeIcon: location
 ---
 At this point in time, the CoronaCheck app is being tested in field trials. In the future, access to certain social, cultural and sports locations will require a negative test result: a visit to the museum, festival or football match.
 
