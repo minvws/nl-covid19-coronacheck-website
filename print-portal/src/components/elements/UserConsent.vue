@@ -39,6 +39,7 @@ export default {
     border-radius: 12px;
     display: flex;
     align-items: center;
+    font-size: 22px;
 
     input[type=checkbox] {
         width: 28px;
