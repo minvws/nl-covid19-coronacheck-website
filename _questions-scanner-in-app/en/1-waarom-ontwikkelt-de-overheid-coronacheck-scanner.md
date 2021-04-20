@@ -6,8 +6,7 @@ title: Why is the government developing the CoronaCheck Scanner?
 lang: en
 categories:
 - en
-- faq-scanner
-- in-app
+- faq-scanner-in-app
 showBreadCrumbs: true
 showContact: true
 ---

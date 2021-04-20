@@ -6,8 +6,7 @@ title: What information does my QR code contain?
 lang: en
 categories:
 - en
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

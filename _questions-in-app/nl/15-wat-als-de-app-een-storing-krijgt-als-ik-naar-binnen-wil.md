@@ -6,8 +6,7 @@ title: Wat als de app een storing krijgt als ik naar binnen wil?
 lang: nl
 categories:
 - nl
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

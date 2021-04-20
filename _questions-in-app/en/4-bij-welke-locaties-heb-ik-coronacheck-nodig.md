@@ -6,8 +6,7 @@ title: Which locations require the CoronaCheck app to get access?
 lang: en
 categories:
 - en
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

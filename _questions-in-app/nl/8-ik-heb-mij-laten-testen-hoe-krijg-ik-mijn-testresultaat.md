@@ -6,8 +6,7 @@ title: Ik heb mij laten testen, hoe krijg ik mijn testuitslag?
 lang: nl
 categories:
 - nl
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

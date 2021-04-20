@@ -6,8 +6,7 @@ title: Kan ik CoronaCheck ook gebruiken in het buitenland?
 lang: nl
 categories:
 - nl
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

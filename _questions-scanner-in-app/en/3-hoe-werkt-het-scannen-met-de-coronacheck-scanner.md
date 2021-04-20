@@ -6,8 +6,7 @@ title: How does the CoronaCheck Scanner work?
 lang: en
 categories:
 - en
-- faq-scanner
-- in-app
+- faq-scanner-in-app
 showBreadCrumbs: true
 showContact: true
 ---

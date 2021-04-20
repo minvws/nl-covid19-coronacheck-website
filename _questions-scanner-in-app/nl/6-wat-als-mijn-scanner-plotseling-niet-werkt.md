@@ -6,8 +6,7 @@ title: Wat als mijn scanner plotseling niet werkt?
 lang: nl
 categories:
 - nl
-- faq-scanner
-- in-app
+- faq-scanner-in-app
 showBreadCrumbs: true
 showContact: true
 ---

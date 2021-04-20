@@ -6,8 +6,7 @@ title: De app zegt dat er geen negatieve testuitslag gevonden is. Hoe kan dit?
 lang: nl
 categories:
 - nl
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 published: false

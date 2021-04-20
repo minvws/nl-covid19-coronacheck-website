@@ -6,8 +6,7 @@ title: Ik krijg na het scannen van een QR-code een rood scherm te zien, wat nu?
 lang: nl
 categories:
 - nl
-- faq-scanner
-- in-app
+- faq-scanner-in-app
 showBreadCrumbs: true
 showContact: true
 ---

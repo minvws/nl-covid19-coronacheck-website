@@ -6,8 +6,7 @@ title: Is the CoronaCheck app compatible with my phone?
 lang: en
 categories:
 - en
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

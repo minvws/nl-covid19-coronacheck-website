@@ -6,8 +6,7 @@ title: Werkt CoronaCheck op mijn telefoon?
 lang: nl
 categories:
 - nl
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

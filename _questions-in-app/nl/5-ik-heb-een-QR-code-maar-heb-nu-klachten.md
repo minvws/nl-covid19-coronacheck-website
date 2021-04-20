@@ -6,8 +6,7 @@ title: Ik heb een QR-code, maar heb nu klachten. Mag ik alsnog naar binnen?
 lang: nl
 categories:
 - nl
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

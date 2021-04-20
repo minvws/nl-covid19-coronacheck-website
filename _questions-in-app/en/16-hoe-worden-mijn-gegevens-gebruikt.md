@@ -6,8 +6,7 @@ title: What happens to my data?
 lang: en
 categories:
 - en
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

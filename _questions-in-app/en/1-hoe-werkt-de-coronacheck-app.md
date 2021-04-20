@@ -6,8 +6,7 @@ title: How does the CoronaCheck app work?
 lang: en
 categories:
 - en
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true 
 ---

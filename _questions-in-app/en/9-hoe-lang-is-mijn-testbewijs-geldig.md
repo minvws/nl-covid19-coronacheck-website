@@ -6,8 +6,7 @@ title: How long is my test declaration valid?
 lang: en
 categories:
 - en
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

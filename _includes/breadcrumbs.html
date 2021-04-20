@@ -10,14 +10,22 @@
     {{% assign start_crumb = '' %}}
     
     {% if forloop.first %}
-      <li class="breadcrumbs-item"> 
+    <li class="breadcrumbs-item"> 
+      {% if include.collection == 'questions-in-app' %} 
+        <a class="breadcrumbs" href="{{langSlug}}/faq-in-app">
+          {{ site.data.translations.faq[page.lang] }}</a>
+      {% elsif include.collection == 'questions-scanner-in-app' %}
+        <a class="breadcrumbs" href="{{langSlug}}/faq-scanner-in-app">
+          {{ site.data.translations.faq[page.lang] }}</a>
+      {% else %}
         <a class="breadcrumbs" href="{{langSlug}}">
-          {{ site.data.translations.layout-template-home[page.lang] }}
-        </a>
-        {% if forloop.last == false %}
-          <span class="icon icon-chevron-right"></span>
-        {% endif %}
-      </li> 
+          {{ site.data.translations.layout-template-home[page.lang] }}</a>
+      {% endif %}
+
+      {% if forloop.last == false %}
+        <span class="icon icon-chevron-right"></span>
+      {% endif %}
+    </li> 
     {% elsif forloop.last == false %} 
       {% if include.collection == 'questions-scanner' %} 
         <li class="breadcrumbs-item">

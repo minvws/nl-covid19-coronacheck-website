@@ -6,8 +6,7 @@ title: Kan mijn testbewijs meerdere keren gescand worden?
 lang: nl
 categories:
 - nl
-- faq
-- in-app
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---
