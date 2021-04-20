@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <div class="section section--text-align-center only-mobile">
+    <div class="section section--text-align-center only-mobile section--FaqMobileLink">
         <a
             href="https://coronacheck.nl/nl/faq"
             class="FaqMobileLink">
@@ -19,6 +19,17 @@ export default {
 
 <style lang="scss">
 @import "@/styles/variables/index";
+
+.section--FaqMobileLink {
+
+    &.only-mobile {
+
+        @include mobile() {
+            // display: initial makes it inline?
+            display: block;
+        }
+    }
+}
 
 .FaqMobileLink {
     color: $color-overheid-1;

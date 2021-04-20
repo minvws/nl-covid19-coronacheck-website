@@ -20,7 +20,10 @@ export default {
                 <div class="Footer__col Footer__info">
                     <h3>
                         Heb je vragen over CoronaCheck?<br>
-                        Bel 0800-1421 (gratis)
+                        Bel
+                        <span class="only-desktop">0800-1421</span>
+                        <a class="only-mobile" href="tel:08001421">0800-1421</a>
+                        (gratis)
                     </h3>
                     <p>
                         <strong>Openingstijden</strong><br>
