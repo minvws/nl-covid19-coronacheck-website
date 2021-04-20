@@ -36,7 +36,7 @@
 
 .header {
   position: relative;
-  background: #EFF7F9;
+  background: $color-RO_lightblue;
 
   .header__title {
     font-size: 30px;
@@ -347,6 +347,7 @@
 }
 
 .header__layout__faq-link {
+  color: $color-RO_darkblue;
   position: absolute;
   top: 38px;
   right: 230px;
@@ -361,6 +362,10 @@
 
   [lang="bg"] & {
     right: 300px;
+  }
+
+  &:visited {
+    color: $color-RO_darkblue;
   }
 }
 

@@ -12,10 +12,14 @@
 .about__column-image {
   padding: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 
   @media (min-width: 740px) {
-    flex: 0 1 50%;
+    flex: 0 0 50%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    flex-direction: row;
   }
 
   .about__image {
@@ -33,8 +37,9 @@
 
   @media (min-width: 740px) {
     padding-top: 30px;
+    padding-left: 0;
+    padding-right: 80px;
     flex: 0 1 50%;
-    margin-left: 0;
   }
 
   p {
