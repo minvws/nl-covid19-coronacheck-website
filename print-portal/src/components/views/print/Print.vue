@@ -36,15 +36,21 @@ export default {
             return this.qrData.firstNameInitial + this.qrData.lastNameInitial + this.birthDayString;
         },
         birthDayString() {
-            // we dont know and dont need the year
-            const date = '1900/' + this.qrData.birthMonth + '/' + this.qrData.birthDay;
-            const format = 'dd LLL';
-            const string = dateTool.dateToString(date, format).toUpperCase();
-            if (string[string.length - 1] === '.') {
-                return string.slice(0, -1);
+            let day, month;
+            if (this.qrData.birthDay.length > 0) {
+                day = Number(this.qrData.birthDay);
+                if (day < 10) {
+                    day = '0' + day;
+                }
             } else {
-                return string;
+                day = '-';
             }
+            if (this.qrData.birthMonth.length > 0) {
+                month = dateTool.monthNumberToMonthName(Number(this.qrData.birthMonth));
+            } else {
+                month = '-';
+            }
+            return day + ' ' + month;
         },
         fileName() {
             const info = [
