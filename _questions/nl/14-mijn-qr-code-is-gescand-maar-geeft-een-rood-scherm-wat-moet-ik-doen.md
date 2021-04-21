@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 14
-set: 3
+set: 7
 title: Mijn QR-code is gescand, maar geeft een rood scherm. Wat moet ik doen?
 lang: nl
 categories:

@@ -1,7 +1,7 @@
 ---
 layout: content
-index: 11
-set: 2
+index: 3
+set: 3
 title: Werkt CoronaCheck op mijn telefoon? 
 lang: nl
 categories:

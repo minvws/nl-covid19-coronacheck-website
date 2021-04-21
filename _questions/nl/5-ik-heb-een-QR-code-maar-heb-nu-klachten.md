@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 5
-set: 1
+set: 6
 title: Ik heb een QR-code, maar heb nu klachten. Mag ik alsnog naar binnen?
 lang: nl
 categories:

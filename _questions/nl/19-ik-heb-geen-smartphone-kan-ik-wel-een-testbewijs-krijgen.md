@@ -1,7 +1,7 @@
 ---
 layout: content
-index: 19
-set: 1
+index: 2
+set: 4
 title: Ik heb geen smartphone. Kan ik wel een testbewijs krijgen? 
 lang: nl
 categories:

@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 6
-set: 1
+set: 6
 title: Ik heb een negatieve uitslag, maar moet in quarantaine blijven van de GGD. Wat nu?
 lang: nl
 categories:

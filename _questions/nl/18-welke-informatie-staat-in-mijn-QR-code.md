@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 18
-set: 4
+set: 8
 title: Welke informatie staat in mijn QR-code? 
 lang: nl
 categories:

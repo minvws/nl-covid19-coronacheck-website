@@ -1,7 +1,7 @@
 ---
 layout: content
-index: 22
-set: 2
+index: 2
+set: 3
 title: Kan ik een testbewijs voor iemand anders in mijn CoronaCheck-app toevoegen?
 lang: nl
 categories:
