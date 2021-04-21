@@ -58,12 +58,36 @@
             </ul>
         </div>
 
+        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-scanner-testdocument[page.lang]|slugify }}">{{ site.data.translations.faq-category-scanner-testdocument[page.lang] }}</h2>
+
+        <div class="faq-layout__contents __overview">
+            <ul class="faq-layout-contents__list">
+              {% for question in questions %}
+                {% if question.set == 2 %}
+                  {% if question.featuredHome != true %}
+                    <li>
+                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
+                            {{ question.title }}
+                        </a>
+                    </li>
+                  {% elsif question.featuredHome == true and question.showOnFAQoverview %}
+                    <li>
+                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}">
+                            {{ question.title }}
+                        </a>
+                    </li>
+                  {% endif %}
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+
         <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-scannerapp-errors[page.lang]|slugify }}">{{ site.data.translations.faq-category-scannerapp-errors[page.lang] }}</h2>
 
         <div class="faq-layout__contents __overview">
             <ul class="faq-layout-contents__list">
             {% for question in questions %}
-                {% if question.set == 2 %}
+                {% if question.set == 3 %}
                   {% if question.featuredHome != true %}
                     <li>
                         <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}">
@@ -87,7 +111,7 @@
         <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
             <ul class="faq-layout-contents__list">
               {% for question in questions %}
-              {% if question.set == 3 %}
+              {% if question.set == 4 %}
                     <li>
                         <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                             {{ question.title }}
@@ -100,9 +124,9 @@
       </div>
     </div>
 
-    {% if page.collection == 'questions' %}
+    {% if page.collection == 'questions-scanner' %}
       <p class="content-center__home return_link">
-        <a href="{{ langSlug }}/faq">
+        <a href="{{ langSlug }}/faq-scanner">
           <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-faq[page.lang] }} 
         </a>
       </p>
