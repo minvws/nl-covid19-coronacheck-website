@@ -54,6 +54,12 @@ export default {
                 this.holderString
             ];
             return info.join('_') + '.pdf';
+        },
+        browser() {
+            return detect();
+        },
+        hideOpenButton() {
+            return this.browser.name === 'ie';
         }
     },
     methods: {
@@ -68,32 +74,22 @@ export default {
                 this.document = await this.getDocument(urlQR);
             })
         },
-        downloadPDF() {
+        openPDF() {
             if (this.document) {
-                this.document.save(this.fileName);
+                console.log(this.browser);
+                const string = this.document.output('datauristring');
+                const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
+                const action = window.open();
+                action.document.open();
+                action.document.write(embed);
+                action.document.close();
             } else {
                 this.somethingGeneralWentWrong();
             }
         },
-        openPDF() {
+        downloadPDF() {
             if (this.document) {
-                const browser = detect();
-                if (browser.os === 'Android OS' || browser.os === 'iOS') {
-                    const oldBlob = this.document.output('blob');
-                    const newBlob = new Blob([oldBlob], { type: 'application/octet-stream' })
-                    const objectUrl = URL.createObjectURL(newBlob);
-                    const anchor = document.createElement('a');
-                    anchor.href = objectUrl;
-                    anchor.click();
-                    URL.revokeObjectURL(objectUrl);
-                } else {
-                    const string = this.document.output('datauristring');
-                    const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
-                    const action = window.open();
-                    action.document.open();
-                    action.document.write(embed);
-                    action.document.close();
-                }
+                this.document.save(this.fileName);
             } else {
                 this.somethingGeneralWentWrong();
             }
@@ -329,9 +325,11 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                         <div class="Print__container">
                             <div class="Print__buttons">
                                 <button
+                                    v-if="!hideOpenButton"
                                     type="button"
                                     :class="{'button--inactive': !document }"
                                     :disabled="!document"
+                                    id="open-pdf"
                                     class="button-standard button--full-width"
                                     @click="openPDF()">
                                     {{translate('openPDF')}}
@@ -340,6 +338,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                                     type="button"
                                     :class="{'button--inactive': !document }"
                                     :disabled="!document"
+                                    id="download-pdf"
                                     class="button-standard button--full-width"
                                     @click="downloadPDF()">
                                     {{translate('downloadPDF')}}
@@ -436,6 +435,18 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                     margin: 0 auto;
                 }
             }
+        }
+    }
+
+    // hide the open button on mobile. This sometimes fails and besides that it creates undesirable user experience
+    #open-pdf {
+
+        @include mobile() {
+            display: none;
+        }
+
+        @include mobile-landscape-X() {
+            display: none;
         }
     }
 }
