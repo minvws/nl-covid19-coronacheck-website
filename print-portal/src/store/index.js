@@ -9,8 +9,8 @@ Vue.use(Vuex)
 
 const state = {
     holderConfig: null,
-    testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
-    verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
+    testCode: (process.env.NODE_ENV === 'localdevelopment') ? 'TST-TTTTTTTTTT-G2' : '',
+    verificationCode: (process.env.NODE_ENV === 'localdevelopment') ? '123456' : '',
     testResultStatus: 'idle',
     testResult: null,
     userConsent: false,
