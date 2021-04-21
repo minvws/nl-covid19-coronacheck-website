@@ -45,8 +45,11 @@
       </p>
     {% endif %}
 
-
   </main>
-  {% include footer.html %}
+  {% if page.collection == 'questions-scanner' %}
+    {% include footer.html for="scanner" %}
+  {% else %}
+    {% include footer.html %}
+  {% endif %}
 </body>
 </html>
