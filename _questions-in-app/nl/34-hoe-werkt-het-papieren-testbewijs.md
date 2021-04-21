@@ -1,12 +1,12 @@
 ---
-layout: content
+layout: in-app-question
 index: 1
 set: 4
 title: Hoe werkt het papieren testbewijs? 
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 showOnFAQoverview: true
