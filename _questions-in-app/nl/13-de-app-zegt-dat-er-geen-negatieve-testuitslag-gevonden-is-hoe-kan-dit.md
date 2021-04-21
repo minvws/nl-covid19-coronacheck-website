@@ -1,15 +1,15 @@
 ---
-layout: content
+layout: in-app-question
 index: 13
-set: 3
+set: 7
 title: De app zegt dat er geen negatieve testuitslag gevonden is. Hoe kan dit?
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
-published: false
+published: true
 ---
 Dat kan meerdere oorzaken hebben:
 

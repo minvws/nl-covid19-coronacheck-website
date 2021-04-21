@@ -1,6 +1,6 @@
 ---
 layout: content
-index: 10
+index: 4
 set: 2
 title: Waarom is de geldigheidsduur van een testbewijs 40 uur? 
 lang: nl

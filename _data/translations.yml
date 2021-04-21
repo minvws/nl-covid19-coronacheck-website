@@ -1,4 +1,6 @@
 head-app-name: CoronaCheck
+
+scanner-app-name: CoronaCheck Scanner
   
 ## SOCIAL tags
 
@@ -115,7 +117,7 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Met de app kan je aantonen dat je negatief getest bent op corona. CoronaCheck wordt op dit moment getest tijdens de pilots testen voor toegang, kijk voor de actuele lijst op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen?utm_campaign=coronavirus&utm_source=coronacheck.nl/nl/' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid.</a>
+  nl: Met de app kan je aantonen dat je negatief getest bent op corona. CoronaCheck wordt op dit moment getest tijdens de pilots testen voor toegang, kijk voor de actuele lijst op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid.</a>
   fy: 
   en: Get tested, gain access*
   ar: 
@@ -414,6 +416,19 @@ faq-category-scanner-general:
   ro: 
   tr:  
 
+faq-category-scanner-testdocument:
+  nl: Toegang met testbewijs
+  fy: 
+  en: Toegang met testbewijs
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:  
+
 faq-category-scannerapp-privacy:
   nl: Privacy
   fy: 
@@ -454,9 +469,61 @@ faq-category-general:
   tr:
   
 faq-category-howtouse:
-  nl: Gebruik CoronaCheck
+  nl: Toegang met testbewijs
   fy: 
-  en: Using CoronaCheck
+  en: Using CoronaCheck*
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-usingtheapp:
+  nl: Testbewijs in de app
+  fy: 
+  en: Using CoronaCheck*
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-usingprintversion:
+  nl: Testbewijs op papier
+  fy: 
+  en: Using CoronaCheck*
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-gettingtested:
+  nl: Testen
+  fy: 
+  en: Getting tested
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-misc:
+  nl: Overig
+  fy: 
+  en: Miscellaneous
   ar: 
   bg: 
   de: 
@@ -574,7 +641,7 @@ coronacheck-lead-title:
 # info-caveat-letop-fy: 'Tink derom:'
 
 scanner-lead: 
-  nl: "Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde sociale, culturele of sportieve activiteiten. Maar alleen als uit de coronatest blijkt dat zij geen corona hebben. Kijk op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen?utm_campaign=coronavirus&utm_source=coronacheck.nl/nl/scanner' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid</a> om te zien welke pilots er in april worden gedaan met testen voor toegang."
+  nl: "Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde sociale, culturele of sportieve locaties. Maar alleen als uit de coronatest blijkt dat zij geen corona hebben. Kijk op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid</a> om te zien welke pilots er in april worden gedaan met testen voor toegang."
   fy: 
   en: 
   ar: 
@@ -828,6 +895,19 @@ footer-misc-title:
   pl: O CoronaCheck
   ro: Despre CoronaCheck
   tr: CoronaCheck hakkında
+
+footer-misc-title-scanner:
+  nl: Over CoronaCheck Scanner
+  fy: Oer CoronaCheck
+  en: About CoronaCheck
+  ar: حول CoronaCheck
+  bg: За CoronaCheck
+  de: Über CoronaCheck
+  es: Sobre CoronaCheck
+  fr: À propos de CoronaCheck
+  pl: O CoronaCheck
+  ro: Despre CoronaCheck
+  tr: CoronaCheck hakkında
   
 footer-contact-title:
   nl: Contact
@@ -841,6 +921,8 @@ footer-contact-title:
   pl: Kontakt
   ro: Contact
   tr: İletişim
+
+
     
 footer-logos-minvws-url: https://minvws.nl/
 footer-logos-minvws-img-alt: 
@@ -887,10 +969,26 @@ footer-logos-ggd-img-alt:
   tr: GGD Hollanda logosu
   
 footer-misc-privacy-url: privacy
+
 footer-misc-privacy:
   nl: Privacy
   fy: Privacyferklearring
   en: Privacy
+  ar: الخصوصية
+  bg: Защита на личните данни
+  de: Datenschutz
+  es: Privacidad
+  fr: Confidentialité
+  pl: Prywatność
+  ro: Confidențialitate
+  tr: Gizlilik
+
+footer-misc-terms-of-service-url: gebruikersvoorwaarden
+
+footer-misc-terms-of-service:
+  nl: Gebruikersvoorwaarden
+  fy: 
+  en: Terms of Service
   ar: الخصوصية
   bg: Защита на личните данни
   de: Datenschutz
@@ -1396,12 +1494,12 @@ print-version-title:
   en: 
 
 print-version-content:
-  nl: Vanaf donderdag 23 april is het mogelijk om hier je papieren testbewijs te maken.
+  nl: Vanaf vrijdag 23 april is het mogelijk om hier je papieren testbewijs te maken.
   fy: 
   en: 
 
 print-version-url: 
-  nl: /
+  nl: /nl/print/
   fy: 
   en: 
 
@@ -1416,6 +1514,6 @@ about-coronacheck-title:
   en: About CoronaCheck
 
 about-coronacheck-content:
-  nl: <p>CoronaCheck is ontwikkeld als onderdeel van toegangstesten. Met de CoronaCheck-app kunnen bezoekers aantonen dat ze negatief getest zijn op corona. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open.</p>
+  nl: <p>Met behulp van een testbewijs via de CoronaCheck-app of op papier toon je aan dat je kortgeleden negatief getest bent op corona. Zo kan Nederland meer buiten de deur doen.</p>
   fy: 
   en: 

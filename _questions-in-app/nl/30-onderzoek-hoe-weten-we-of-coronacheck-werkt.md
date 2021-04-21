@@ -10,7 +10,7 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Voor de CoronaCheck-applicaties wordt een doorlopende evaluatie uitgevoerd door een team met experts vanuit verschillende disciplines. De evaluatie omvat zowel kwantitatief als kwalitatief onderzoek en richt zich op de doelstellingen van CoronaCheck.
+Het geprinte testbewijs en de apps CoronaCheck en CoronaCheck Scanner worden doorlopend onderzocht. Dat doet een team van experts met verschillende disciplines. Dit gaat zowel om kwantitatief als kwalitatief onderzoek en richt zich op de doelstellingen van CoronaCheck.
 
 Het laatste rapport van de doorlopende evaluatie is hier te downloaden:
 

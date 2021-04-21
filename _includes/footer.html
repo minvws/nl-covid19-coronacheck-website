@@ -25,13 +25,26 @@
                     {{ site.data.translations.footer-logos-info_md[page.lang] }}</div>
                 </div>
                 <div class="footer-links-col ___desktop-25">
-                    <h3>{{ site.data.translations.footer-misc-title[page.lang] }}</h3>
+                    {% if include.for != "scanner" %}
+                        <h3>{{ site.data.translations.footer-misc-title[page.lang] }}</h3>
+                    {% else %}
+                        <h3>{{ site.data.translations.footer-misc-title-scanner[page.lang] }}</h3>
+                    {% endif %}
                     <ul>
-                        <li>
-                            <a href="{{ langSlug }}{{ site.data.translations.footer-misc-privacy-url }}">
-                                {{ site.data.translations.footer-misc-privacy[page.lang] }}
-                            </a>
-                        </li>
+                        {% if include.for != "scanner" %}
+                            <li>
+                                <a href="{{ langSlug }}{{ site.data.translations.footer-misc-privacy-url }}">
+                                    {{ site.data.translations.footer-misc-privacy[page.lang] }}
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if include.for == "scanner" %}
+                            <li>
+                                <a href="{{ langSlug }}{{ site.data.translations.footer-misc-terms-of-service-url }}">
+                                    {{ site.data.translations.footer-misc-terms-of-service[page.lang] }}
+                                </a>
+                            </li>
+                        {% endif %}
                         <li>
                             <a href="{{ langSlug }}{{ site.data.translations.footer-misc-cookies-url }}">
                                 {{ site.data.translations.footer-misc-cookies[page.lang] }}
