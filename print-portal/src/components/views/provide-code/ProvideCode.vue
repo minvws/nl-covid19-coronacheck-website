@@ -176,6 +176,9 @@ export default {
             } else {
                 return 'unknown_error';
             }
+        },
+        goHome() {
+            window.location = 'https://coronacheck.nl/nl/';
         }
     }
 }
@@ -185,7 +188,7 @@ export default {
     <div class="ProvideCode">
         <div class="pagewrap">
             <Navigation
-                :display-back-button="false"/>
+                :callback-back="goHome"/>
             <div class="section">
                 <div class="section-block">
                     <h2>
