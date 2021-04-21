@@ -895,6 +895,19 @@ footer-misc-title:
   pl: O CoronaCheck
   ro: Despre CoronaCheck
   tr: CoronaCheck hakkında
+
+footer-misc-title-scanner:
+  nl: Over CoronaCheck Scanner
+  fy: Oer CoronaCheck
+  en: About CoronaCheck
+  ar: حول CoronaCheck
+  bg: За CoronaCheck
+  de: Über CoronaCheck
+  es: Sobre CoronaCheck
+  fr: À propos de CoronaCheck
+  pl: O CoronaCheck
+  ro: Despre CoronaCheck
+  tr: CoronaCheck hakkında
   
 footer-contact-title:
   nl: Contact
@@ -908,6 +921,8 @@ footer-contact-title:
   pl: Kontakt
   ro: Contact
   tr: İletişim
+
+
     
 footer-logos-minvws-url: https://minvws.nl/
 footer-logos-minvws-img-alt: 
@@ -954,10 +969,26 @@ footer-logos-ggd-img-alt:
   tr: GGD Hollanda logosu
   
 footer-misc-privacy-url: privacy
+
 footer-misc-privacy:
   nl: Privacy
   fy: Privacyferklearring
   en: Privacy
+  ar: الخصوصية
+  bg: Защита на личните данни
+  de: Datenschutz
+  es: Privacidad
+  fr: Confidentialité
+  pl: Prywatność
+  ro: Confidențialitate
+  tr: Gizlilik
+
+footer-misc-terms-of-service-url: gebruikersvoorwaarden
+
+footer-misc-terms-of-service:
+  nl: Gebruikersvoorwaarden
+  fy: 
+  en: Terms of Service
   ar: الخصوصية
   bg: Защита на личните данни
   de: Datenschutz
