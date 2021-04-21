@@ -99,7 +99,7 @@ const dictionary = {
         'nl': 'Unieke code'
     },
     'retrievedTestResult': {
-        'nl': 'Opgehaalde testuitslagen'
+        'nl': 'Opgehaalde testuitslag'
     },
     'resultNegative': {
         'nl': 'Negatieve testuitslag'
@@ -144,7 +144,7 @@ const dictionary = {
         'nl': 'Jouw testbewijs'
     },
     'yourTestProofDirection': {
-        'nl': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er zoal in staat. Open of download de PDF, print het uit en neem ‘m mee.'
+        'nl': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er zoal in staat. Open of download de PDF, print het uit en neem ’m mee.'
     }
 };
 
