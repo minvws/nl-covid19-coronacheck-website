@@ -1,7 +1,7 @@
 ---
 layout: content
-index: 13
-set: 1
+index: 6
+set: 2
 title: Welke informatie kan ik voorafgaand aan mijn pilot evenement delen met mijn bezoekers?
 lang: nl
 categories:

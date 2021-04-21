@@ -1,7 +1,7 @@
 ---
 layout: content
-index: 10
-set: 1
+index: 1
+set: 2
 title: Bij welke locaties is een testbewijs nodig als bezoekers naar binnen willen?
 lang: nl
 categories:

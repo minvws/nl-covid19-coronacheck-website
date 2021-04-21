@@ -1,7 +1,7 @@
 ---
 layout: content
-index: 4
-set: 1
+index: 2
+set: 2
 title: Mag ik iemand zonder geldig testbewijs binnen laten? 
 lang: nl
 categories:

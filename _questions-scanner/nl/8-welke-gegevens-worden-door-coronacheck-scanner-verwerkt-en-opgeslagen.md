@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 1
-set: 3
+set: 4
 title: Welke gegevens worden door CoronaCheck Scanner verwerkt en opgeslagen?
 lang: nl
 categories:

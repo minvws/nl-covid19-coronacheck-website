@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 7
-set: 2
+set: 3
 title: Ik krijg na het scannen van een QR-code een rood scherm te zien, wat nu?
 lang: nl
 categories:
