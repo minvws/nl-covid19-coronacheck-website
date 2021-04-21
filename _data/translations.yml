@@ -414,6 +414,19 @@ faq-category-scanner-general:
   ro: 
   tr:  
 
+faq-category-scanner-testdocument:
+  nl: Toegang met testbewijs
+  fy: 
+  en: Toegang met testbewijs
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:  
+
 faq-category-scannerapp-privacy:
   nl: Privacy
   fy: 
@@ -454,9 +467,61 @@ faq-category-general:
   tr:
   
 faq-category-howtouse:
-  nl: Gebruik CoronaCheck
+  nl: Toegang met testbewijs
   fy: 
-  en: Using CoronaCheck
+  en: Using CoronaCheck*
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-usingtheapp:
+  nl: Testbewijs in de app
+  fy: 
+  en: Using CoronaCheck*
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-usingprintversion:
+  nl: Testbewijs op papier
+  fy: 
+  en: Using CoronaCheck*
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-gettingtested:
+  nl: Testen
+  fy: 
+  en: Getting tested
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-misc:
+  nl: Overig
+  fy: 
+  en: Miscellaneous
   ar: 
   bg: 
   de: 
