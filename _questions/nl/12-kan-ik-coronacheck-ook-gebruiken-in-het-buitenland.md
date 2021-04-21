@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Nee, je kunt CoronaCheck niet in het buitenland gebruiken.
+Nee, je kunt CoronaCheck op dit moment niet in het buitenland gebruiken.
