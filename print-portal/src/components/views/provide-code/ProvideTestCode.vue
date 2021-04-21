@@ -16,6 +16,10 @@ export default {
         getSignedResult: {
             type: Function,
             required: true
+        },
+        verificationNeeded: {
+            type: Boolean,
+            required: true
         }
     },
     computed: {
@@ -23,8 +27,7 @@ export default {
             return this.$store.state.testResultStatus;
         },
         showButton() {
-            // only show this button when there is an action to be done concerning the test code
-            return this.testResultStatus !== 'verification_required' && this.testResultStatus !== 'complete';
+            return !this.verificationNeeded;
         },
         hasGivenConsent() {
             return this.$store.state.userConsent;
@@ -43,12 +46,7 @@ export default {
     },
     methods: {
         resetProcess() {
-            // brings ui back to step 1
-            this.$store.commit('setTestResultStatus', 'idle');
-            // remove verification code
-            this.$store.commit('updateProperty', { key: 'verificationCode', value: '' });
-            // remove QR code
-            this.$store.commit('clearQrCode');
+            this.$store.commit('reset');
         },
         sendTestCode() {
             if (this.isTestCodeValid && this.hasGivenConsent) {

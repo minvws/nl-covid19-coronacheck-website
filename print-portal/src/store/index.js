@@ -12,6 +12,7 @@ const state = {
     testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
     verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
     testResultStatus: 'idle',
+    verificationNeeded: false,
     testResult: null,
     userConsent: false,
     signature: null,
@@ -47,10 +48,23 @@ const mutations = {
     setHolderConfig(state, holderConfig) {
         state.holderConfig = holderConfig;
     },
+    setVerificationNeeded(state, status) {
+        state.verificationNeeded = status;
+    },
+    reset(state) {
+        // clear all except testcode
+        state.verificationCode = '';
+        state.verificationNeeded = false;
+        state.testResultStatus = 'idle';
+        state.signature = '';
+        state.qrCode = '';
+        state.qrData = null;
+    },
     invalidate(state) {
         state.testCode = '';
         state.verificationCode = '';
-        state.testResultStatus = '';
+        state.verificationNeeded = false;
+        state.testResultStatus = 'idle';
         state.signature = '';
         state.qrCode = '';
         state.qrData = null;

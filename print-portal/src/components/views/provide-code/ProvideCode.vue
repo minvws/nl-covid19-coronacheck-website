@@ -23,14 +23,14 @@ export default {
         }
     },
     computed: {
-        showVerificationCodeModule() {
-            return this.testResultStatus === 'verification_required' || this.testResultStatus === 'complete';
-        },
         testCode() {
             return this.$store.state.testCode;
         },
         verificationCode() {
             return this.$store.state.verificationCode;
+        },
+        verificationNeeded() {
+            return this.$store.state.verificationNeeded;
         },
         numberOfHyphens() {
             return (this.testCode.match(/-/g) || []).length;
@@ -125,10 +125,13 @@ export default {
                         this.$store.commit('setTestResultStatus', responseForSignedResult);
 
                         if (this.testResultStatus === 'verification_required') {
+                            this.$store.commit('setVerificationNeeded', true);
                             this.testCodeStatus.error = '';
                             if (options.includeVerificationCode) {
                                 this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
                             }
+                        } else {
+                            this.$store.commit('setVerificationNeeded', false);
                         }
 
                         if (this.testResultStatus === 'invalid_token') {
@@ -204,9 +207,10 @@ export default {
                         <ProvideTestCode
                             :test-code-status="testCodeStatus"
                             :is-test-code-valid="isTestCodeValid"
-                            :get-signed-result="getSignedResult"/>
+                            :get-signed-result="getSignedResult"
+                            :verification-needed="verificationNeeded"/>
                         <ProvideVerificationCode
-                            v-if="showVerificationCodeModule"
+                            v-if="verificationNeeded"
                             :verification-code-status="verificationCodeStatus"
                             :get-signed-result="getSignedResult"/>
                     </form>
