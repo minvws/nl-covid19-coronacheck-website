@@ -37,16 +37,28 @@ export default {
         },
         birthDayString() {
             let day, month;
+            const exceptions = ['00', 'X', 'XX', 'x', 'xx'];
             if (this.qrData.birthDay.length > 0) {
-                day = Number(this.qrData.birthDay);
-                if (day < 10) {
-                    day = '0' + day;
+                if (exceptions.indexOf(this.qrData.birthDay) === -1) {
+                    // design wants a leadig zero
+                    day = Number(this.qrData.birthDay);
+                    if (day < 10) {
+                        day = '0' + day;
+                    }
+                } else {
+                    // leave the exception as is
+                    day = this.qrData.birthDay;
                 }
             } else {
+                // represent empty property with a dash
                 day = '-';
             }
             if (this.qrData.birthMonth.length > 0) {
-                month = dateTool.monthNumberToMonthName(Number(this.qrData.birthMonth));
+                if (exceptions.indexOf(this.qrData.birthMonth) === -1) {
+                    month = dateTool.monthNumberToMonthName(Number(this.qrData.birthMonth));
+                } else {
+                    month = this.qrData.birthDay;
+                }
             } else {
                 month = '-';
             }
