@@ -21,8 +21,8 @@ export default {
                     <h3>
                         Heb je vragen over CoronaCheck?<br>
                         Bel
-                        <span class="only-desktop">0800-1421</span>
-                        <a class="only-mobile" href="tel:08001421">0800-1421</a>
+                        <span class="telephone--as-span">0800-1421</span>
+                        <a class="telephone--as-anchor" href="tel:08001421">0800-1421</a>
                         (gratis)
                     </h3>
                     <p>
@@ -82,6 +82,28 @@ export default {
                     margin-bottom: 0;
                 }
             }
+        }
+    }
+
+    .telephone--as-span {
+        display: inline;
+
+        @include mobile() {
+            display: none;
+        }
+        @include mobile-landscape-X() {
+            display: none;
+        }
+    }
+
+    .telephone--as-anchor {
+        display: none;
+
+        @include mobile() {
+            display: inline;
+        }
+        @include mobile-landscape-X() {
+            display: inline;
         }
     }
 }
