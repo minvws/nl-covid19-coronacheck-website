@@ -47,10 +47,12 @@ export default {
         border-radius: 50%;
         margin-right: 20px;
         border: 1px solid $grey-3;
+        cursor: pointer;
     }
 
     label {
         width: calc(100% - 48px);
+        cursor: pointer;
     }
 }
 </style>
