@@ -1,8 +1,8 @@
 ---
 layout: content
 index: 4
-set: 1
-title: Bij welke locatie heb ik een testbewijs nodig? 
+set: 2
+title: Bij welke locaties is een testbewijs nodig als ik naar binnen wil?
 lang: nl
 categories:
 - nl

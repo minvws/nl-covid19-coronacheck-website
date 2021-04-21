@@ -1,6 +1,6 @@
 ---
 layout: content
-index: 9
+index: 3
 set: 2
 title: Hoe lang is mijn testbewijs geldig?
 lang: nl

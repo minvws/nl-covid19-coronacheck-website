@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 15
-set: 3
+set: 7
 title: Wat als de app een storing krijgt als ik naar binnen wil?
 lang: nl
 categories:

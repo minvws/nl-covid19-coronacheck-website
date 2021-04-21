@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 17
-set: 4
+set: 8
 title: Wat ziet de controleur na het scannen van mijn QR-code?
 lang: nl
 categories:

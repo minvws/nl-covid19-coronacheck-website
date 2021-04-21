@@ -1,6 +1,6 @@
 ---
 layout: content
-index: 20
+index: 2
 set: 2
 title: Kan mijn testbewijs meerdere keren gescand worden? 
 lang: nl

@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 1
-set: 1
+set: 3
 title: Hoe werkt de CoronaCheck-app?
 lang: nl
 categories:

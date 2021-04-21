@@ -1,8 +1,8 @@
 ---
 layout: content
-index: 11
-set: 2
-title: Hoe wordt mijn testbewijs gecontroleerd?*
+index: 1
+set: 4
+title: Hoe werkt het papieren testbewijs? 
 lang: nl
 categories:
 - nl
@@ -10,7 +10,5 @@ categories:
 showBreadCrumbs: true
 showContact: true
 showOnFAQoverview: true
-featuredHome: true
-featuredHomeIndex: 5
 ---
 Volgt

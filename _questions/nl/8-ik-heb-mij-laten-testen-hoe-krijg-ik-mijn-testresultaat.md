@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 8
-set: 2
+set: 5
 title: Ik heb mij laten testen, hoe krijg ik mijn testuitslag? 
 lang: nl
 categories:

@@ -1,7 +1,7 @@
 ---
 layout: content
-index: 12
-set: 2
+index: 4
+set: 3
 title: Kan ik CoronaCheck ook gebruiken in het buitenland?
 lang: nl
 categories:
