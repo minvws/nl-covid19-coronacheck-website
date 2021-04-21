@@ -76,7 +76,6 @@ export default {
         },
         openPDF() {
             if (this.document) {
-                console.log(this.browser);
                 const string = this.document.output('datauristring');
                 const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
                 const action = window.open();
