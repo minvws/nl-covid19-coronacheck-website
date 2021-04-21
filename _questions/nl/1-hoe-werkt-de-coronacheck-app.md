@@ -14,7 +14,7 @@ featuredHome: true
 featuredHomeIndex: 1
 featuredHomeIcon: app-touch
 ---
-Als bezoeker doe je eerst een coronatest. Had je op het moment van testen geen corona? Dan kun je toegang krijgen tot bepaalde sociale, culturele of sportieve activiteiten. Je kunt de testuitslag ophalen in de app. Dat doe je als volgt:
+Als bezoeker doe je eerst een coronatest. Had je op het moment van testen geen corona? Dan kun je toegang krijgen tot bepaalde sociale, culturele of sportieve locaties. Je kunt de testuitslag ophalen in de app. Dat doe je als volgt:
 
 1. Vul in de CoronaCheck-app jouw code in. Deze code krijg je in een e-mail bij je testuitslag
 2. Na controle van de code haalt de CoronaCheck-app je testuitslag op
