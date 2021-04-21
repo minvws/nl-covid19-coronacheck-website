@@ -14,27 +14,27 @@
 
 .print-version__column-image {
   overflow-y: hidden;
-  flex: 1 1 250px;
+  flex: 1 1 auto;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 30px;
+  padding-top: 0px;
   text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
  
   @media (min-width: 680px) {
     flex: 0 0 50%;
     padding-left: 80px;
-    padding-right: 80px;
+    padding-right: 50px;
     padding-top: 40px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-end;
     padding-top: 30px;
   }
 
   .print-version__image {
-    box-shadow: 0 8px 24px 0 rgba(0,0,0,.15);
     max-width: 250px;
     width: 100%;
   }
