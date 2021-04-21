@@ -6,7 +6,7 @@ import Translate from '@/components/mixins/Translate';
 import axios from 'axios';
 
 const axiosConfig = {
-    baseURL: 'https://api-ct.bananenhalen.nl/v3'
+    baseURL: window.config.api
 };
 Vue.prototype.$axios = axios.create(axiosConfig)
 
