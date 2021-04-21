@@ -10,4 +10,6 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Er worden geen gegevens opgeslagen. De app controleert alleen of de QR-code van de bezoeker geldig is.
+De CoronaCheck Scanner controleert of de QR-code van de bezoeker geldig is. Ook zie je als controleur een aantal minimale gegevens: (1) de eerste letter van de voornaam, (2) de eerste letter van de achternaam, (3) de geboortedag en (4) de geboortemaand. Dit is ter controle, om zeker te zijn dat het testbewijs bij de persoon hoort. 
+
+De CoronaCheck Scanner slaat deze set gegevens niet op.
