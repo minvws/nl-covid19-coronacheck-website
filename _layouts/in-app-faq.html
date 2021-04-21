@@ -22,6 +22,7 @@
       {% assign questions = site.questions-in-app | where:"lang", page.lang | sort: "index"  %}
 
       <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
+        
         <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-general[page.lang]|slugify }}">{{ site.data.translations.faq-category-general[page.lang] }}</h2>
 
         <div class="faq-layout__contents __overview">
@@ -103,28 +104,12 @@
             </ul>
         </div>
 
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-gettingtested[page.lang]|slugify }}">{{ site.data.translations.faq-category-gettingtested[page.lang] }}</h2>
-
-        <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-            <ul class="faq-layout-contents__list">
-              {% for question in questions %}
-              {% if question.set == 5 %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-                            {{ question.title }}
-                        </a>
-                    </li>
-                    {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
-
         <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-misc[page.lang]|slugify }}">{{ site.data.translations.faq-category-misc[page.lang] }}</h2>
 
         <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
             <ul class="faq-layout-contents__list">
               {% for question in questions %}
-              {% if question.set == 7 %}
+              {% if question.set == 6 %}
                     <li>
                         <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                             {{ question.title }}
@@ -134,7 +119,6 @@
             {% endfor %}
             </ul>
         </div>
-
 
         <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-troubleshooting[page.lang]|slugify }}">{{ site.data.translations.faq-category-troubleshooting[page.lang] }}</h2>
 
@@ -167,6 +151,7 @@
             {% endfor %}
             </ul>
         </div>
+
       </div>
     </div>
 
