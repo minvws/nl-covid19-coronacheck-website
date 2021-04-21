@@ -63,7 +63,7 @@ export default {
     <div class="ProvideTestCode">
         <div class="input__set">
             <label for="input--testCode">
-                {{translate('uniqueCode')}} {{hasGivenConsent}}
+                {{translate('uniqueCode')}}
             </label>
             <input
                 v-model="testCode"

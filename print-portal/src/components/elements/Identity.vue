@@ -32,6 +32,11 @@ export default {
                 width="356"
                 src="assets/img/artwork/holder_qrcode_maken.svg"/>
         </div>
+        <a
+            href="https://coronacheck.nl/nl/"
+            class="CoronaCheck-logo">
+            CoronaCheck
+        </a>
         <div class="Identity__tools">
             <a
                 href="https://coronacheck.nl/nl/faq"
@@ -65,6 +70,21 @@ export default {
         display: block;
         height: auto;
         margin-left: 60px;
+    }
+
+    .CoronaCheck-logo {
+        position: absolute;
+        left: 20px;
+        top: 27px;
+        color: $color-overheid-1;
+        font-weight: 700;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 4px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .Identity__tools {

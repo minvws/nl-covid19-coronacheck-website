@@ -1,192 +1,150 @@
 const dictionary = {
     'aboutTestResult': {
-        'nl': 'Over de testuitslag',
-        'en': 'About the test result'
+        'nl': 'Over de testuitslag'
     },
     'aboutTestResultDirection': {
-        'nl': '<p>Met je testuitslag worden de testdatum en jouw gegevens opgehaald.</p><p>Je gegevens bestaan uit: (1) de eerste letter van je voornaam, (2) de eerste letter van jeachternaam, (3)  je geboortedag en (4) geboortemaand.</p>',
-        'en': '<p> With your test result, the test date and your data are retrieved. </p> <p> Your data consists of: (1) the first letter of your first name, (2) the first letter of your last name, (3) your birthday and (4) month of birth. </p>'
+        'nl': '<p>In een testuitslag staan de uitslag, het tijdstip van de test en minimale gegevens van jou.</p><p>Je gegevens bestaan uit: (1) de eerste letter van je voornaam, (2) de eerste letter van je achternaam, (3) je geboortedag en (4) geboortemaand.</p>'
     },
     'back': {
-        'nl': 'Terug',
-        'en': 'Back'
+        'nl': 'Terug'
     },
     'changeLanguage': {
-        'nl': 'Wissel van taal',
-        'en': 'Change language',
-        'ar': 'تغيير اللغة'
+        'nl': 'Wissel van taal'
     },
     'close': {
-        'nl': 'Sluiten',
-        'en': 'Close'
+        'nl': 'Sluiten'
     },
     'createTestProof': {
-        'nl': 'Maak testbewijs',
-        'en': 'Create test proof'
+        'nl': 'Maak QR-code'
     },
     'currentLanguage': {
-        'nl': 'Huidige taal',
-        'en': 'Current language',
-        'ar': 'اللغة الحالية'
+        'nl': 'Huidige taal'
+    },
+    'dateOfTest': {
+        'nl': 'Testdatum'
     },
     'didNotGetCode': {
-        'nl': 'Ik heb geen code gekregen',
-        'en': 'I did not get a code'
+        'nl': 'Ik heb geen code gekregen'
     },
     'downloadPDF': {
-        'nl': 'Download PDF',
-        'en': 'Download PDF'
+        'nl': 'Download PDF'
     },
     'enterCode': {
-        'nl': 'Code invullen',
-        'en': 'Enter code',
-        'ar': 'ادخل الرمز'
+        'nl': 'Testuitslag ophalen'
     },
     'faq': {
-        'nl': 'Meestgestelde vragen',
-        'en': 'Frequently askes questions',
-        'ar': 'التعليمات'
+        'nl': 'Meestgestelde vragen'
     },
     'forInstanceAbbr': {
-        'nl': 'Bijv.',
-        'en': 'E.g.',
-        'ar': 'على سبيل المثال'
+        'nl': 'Bijv.'
     },
     'generalError': {
-        'nl': 'Sorry, er gaat iets mis',
-        'en': 'Sorry, something is wrong'
+        'nl': 'Sorry, er gaat iets mis'
     },
     'generalErrorBody': {
-        'nl': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck.</p>',
-        'en': '<p>This is due to a technical error. Contact the CoronaCheck helpdesk.</p>'
+        'nl': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck.</p>'
     },
     'goBackToStart': {
-        'nl': 'Terug naar het begin',
-        'en': 'Start again'
+        'nl': 'Naar home'
+    },
+    'invalidTestCode': {
+        'nl': 'Geen geldige code'
+    },
+    'invalidVerificationCode': {
+        'nl': 'Geen geldige verificatiecode'
     },
     'language': {
-        'nl': 'Taal',
-        'en': 'Language',
-        'ar': 'لغة'
+        'nl': 'Taal'
     },
     'next': {
-        'nl': 'Volgende',
-        'en': 'Next',
-        'ar': 'التالي'
+        'nl': 'Volgende'
     },
     'noTestProofPresent': {
-        'nl': 'Er is geen testbewijs bekend',
-        'en': 'No test proof present'
+        'nl': 'Er is nog geen testbewijs'
     },
     'noTestProofPresentDirection': {
-        'nl': 'Je kan van een negatief testuitslag een testbewijs maken. Haal eerst je tesultaat op.',
-        'en': 'You can turn a negative test result into a test certificate. Get your result first.'
+        'nl': 'Je kunt alleen van een negatieve testuitslag een testbewijs maken. Haal eerst je testuitslag op.'
     },
     'noTestResultPresent': {
-        'nl': 'Er is geen testuitslag bekend',
-        'en': 'No test test result present'
+        'nl': 'Er is geen testuitslag bekend'
     },
     'noTestResultPresentDirection': {
-        'nl': 'Haal eerst je tesultaat op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen.',
-        'en': 'Get your result first. Use the code that you received from the test location for this.'
+        'nl': 'Haal eerst je testuitslag op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen. '
     },
     'noVerificationCodeHead': {
-        'nl': 'Heb je geen verificatie code gekregen?',
-        'en': 'Did you get a verification code?'
+        'nl': 'Nieuwe verificatiecode nodig?'
     },
     'noVerificationCodeMessage': {
-        'nl': '<p>Als je geen sms/email met een verificatie code hebt gekregen van de testlocatie, kan je een nieuwe code toegestuurd krijgen.</p>',
-        'en': '<p> If you did not get an text message / email with a verification code from the test site, you can be sent a new code. </p>'
+        'nl': '<p>Je krijgt de verificatiecode via een sms of e-mail van de testlocatie. Niet gekregen? Dan kunnen we een nieuwe code sturen.</p>'
     },
     'preferMobile': {
-        'nl': 'Liever je testbewijs op je mobiel?',
-        'en': 'Prefer your test certificate on your mobile?'
+        'nl': 'Liever je testbewijs op je mobiel?'
     },
     'preferMobileDirection': {
-        'nl': 'Gebruik de app. Het is ook mogelijk een geprint testbewijs te maken wanneer je een testbewijs hebt gemaakt in de app.',
-        'en': 'Use the app. It is also possible to create a printed test receipt if you have created a test receipt in the app'
-    },
-    'sendAgain': {
-        'nl': 'Stuur opnieuw',
-        'en': 'Send again'
-    },
-    'testCodeDirection': {
-        'nl': 'Vul de code in die je van je testlocatie hebt gekregen. Of klik op de link in de e-mail die je van je testlocatie hebt ontvangen.',
-        'en': 'Enter the code you received from your test location. Or click the link in the email you received from your test location.',
-        'ar': 'أدخل الرمز الذي تلقيته من موقع الاختبار الخاص بك. أو انقر فوق الارتباط الموجود في البريد الإلكتروني الذي تلقيته من موقع الاختبار الخاص بك.'
-    },
-    'uniqueCode': {
-        'nl': 'Unieke code',
-        'en': 'Unique code',
-        'ar': 'كود فريد'
-    },
-    'retrievedTestResult': {
-        'nl': 'Opgehaald testresultaat',
-        'en': 'Retrieved test result'
+        'nl': 'Download dan de app. Ook van een testbewijs in de app kun je een print maken. '
     },
     'retrieveTestResult': {
-        'nl': 'Testuitslag ophalen',
-        'en': 'Retrieve test result'
+        'nl': 'Testuitslag ophalen'
+    },
+    'sendCode': {
+        'nl': 'Stuur code'
+    },
+    'sendAgain': {
+        'nl': 'Verstuur opnieuw'
+    },
+    'testCodeDirection': {
+        'nl': 'Vul de code in die je van je testlocatie hebt gekregen. Of klik op de link in de e-mail die je van je testlocatie hebt ontvangen.'
+    },
+    'uniqueCode': {
+        'nl': 'Unieke code'
+    },
+    'retrievedTestResult': {
+        'nl': 'Opgehaalde testuitslagen'
     },
     'resultNegative': {
-        'nl': 'Negatief testresultaat (geen corona)',
-        'en': 'Negative test result (no corona)'
+        'nl': 'Negatieve testuitslag'
     },
     'resultPositive': {
-        'nl': 'Positief testresultaat (wel corona)',
-        'en': 'Positive test result (corona)'
+        'nl': 'Positieve testuitslag'
     },
     'resultPending': {
-        'nl': 'Testuitslag nog niet bekend',
-        'en': 'Test result is pending'
+        'nl': 'Testuitslag nog niet bekend'
     },
     'resultPendingDirection': {
-        'nl': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.',
-        'en': 'Please try again later. <br>If you have any questions, please contact your test location.'
+        'nl': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.'
     },
     'somethingIsWrong': {
-        'nl': 'Er klopt iets niet',
-        'en': 'Something is wrong'
+        'nl': 'Er klopt iets niet'
     },
     'openPDF': {
-        'nl': 'Open PDF',
-        'en': 'Open PDF'
+        'nl': 'Open PDF'
     },
     'verificationCode': {
-        'nl': 'Verificatie code',
-        'en': 'Verification code'
+        'nl': 'Verificatie code'
     },
     'verificationCodeDirection': {
-        'nl': 'Je krijgt een code in een sms of e-mail',
-        'en': 'You will receive a code in a text message or e-mail'
+        'nl': 'Je krijgt een code in een sms of e-mail'
     },
     'yourCredentials': {
-        'nl': 'Jouw gegevens',
-        'en': 'Your credentials'
+        'nl': 'Jouw gegevens'
     },
     'yourCredentialsWrong': {
-        'nl': 'Kloppen jouw gegevens niet met je identiteitsbewijs?',
-        'en': 'Do your details not match your proof of identity?'
+        'nl': 'Zijn deze gegevens anders dan op je identiteitsbewijs?'
     },
     'yourCredentialsWrongDirection': {
-        'nl': 'Neem contact op met je testlocatie om je  gegevens te laten aanpassen.',
-        'en': 'Contact your test location to have your details changed.'
+        'nl': 'Neem contact op met je testlocatie. Zij kunnen je gegevens aanpassen.'
     },
     'yourNegativeTestresult': {
-        'nl': 'Jouw negatieve testresultaat',
-        'en': 'Your negative test result'
+        'nl': 'Controleer je testuitslag'
     },
     'yourNegativeTestresultDirection': {
-        'nl': 'Je hebt 1 nieuw negatief testresultaat (geen corona). Maak van dit resultaat een QR-code. Dat is jouw bewijs.',
-        'en': 'You have 1 new negative test result (no corona). Turn this result into a QR code. That\'s your proof.'
+        'nl': '<p>Deze testuitslag is opgehaald bij de testlocatie. Op het moment van testen had je geen corona.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>'
     },
     'yourTestProof': {
-        'nl': 'Jouw testbewijs',
-        'en': 'Your test proof'
+        'nl': 'Jouw testbewijs'
     },
     'yourTestProofDirection': {
-        'nl': 'Lees hier welke informatie er in verwerkt is. Open of download de PDF en print hem als  testbewijs.',
-        'en': 'Read here what information is included. Open or download the PDF and print it as a test certificate.'
+        'nl': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er zoal in staat. Open of download de PDF, print het uit en neem ‘m mee.'
     }
 };
 

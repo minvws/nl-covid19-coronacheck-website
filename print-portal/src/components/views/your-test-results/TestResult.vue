@@ -33,7 +33,7 @@ export default {
             {{status}}
         </div>
         <div class="TestResult__date">
-            {{date}}
+            {{translate('dateOfTest')}}: {{date}}
         </div>
         <div class="TestResult__date">
             {{translate('yourCredentials')}}: {{testResult.holder.string}}

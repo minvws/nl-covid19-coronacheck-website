@@ -48,8 +48,8 @@ export default {
                 messageBody: this.translate('noVerificationCodeMessage'),
                 confirm: true,
                 confirmAction,
-                confirmYes: this.translate('sendAgain'),
-                confirmNo: this.translate('back'),
+                confirmYes: this.translate('sendCode'),
+                confirmNo: this.translate('close'),
                 closeButton: false
             })
         },
@@ -100,7 +100,13 @@ export default {
                     @click="requestNewVerificationCode()"
                     type="button"
                     class="button-modest">
-                    {{translate('didNotGetCode')}}
+                    <span v-if="verificationCodeStatus.error.length > 0">
+                        {{translate('sendAgain')}}
+                    </span>
+                    <span v-else>
+                        {{translate('didNotGetCode')}}
+                    </span>
+
                 </button>
             </div>
         </div>

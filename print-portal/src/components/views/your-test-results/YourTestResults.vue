@@ -68,9 +68,7 @@ export default {
                         <h2>
                             {{translate('yourNegativeTestresult')}}
                         </h2>
-                        <p>
-                            {{translate('yourNegativeTestresultDirection')}}
-                        </p>
+                        <div v-html="translate('yourNegativeTestresultDirection')"/>
                         <div class="YourTestResults__header">
                             {{translate('retrievedTestResult')}}
                             <router-link
@@ -112,7 +110,7 @@ export default {
                                 @click="goBack()"
                                 type="button"
                                 class="button-standard">
-                                {{translate('retrieveTestResult')}}
+                                {{translate('goBackToStart')}}
                             </button>
                         </div>
                     </div>

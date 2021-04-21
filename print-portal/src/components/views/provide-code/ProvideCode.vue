@@ -127,12 +127,12 @@ export default {
                         if (this.testResultStatus === 'verification_required') {
                             this.testCodeStatus.error = '';
                             if (options.includeVerificationCode) {
-                                this.verificationCodeStatus.error = 'Geen geldige verificatie code';
+                                this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
                             }
                         }
 
                         if (this.testResultStatus === 'invalid_token') {
-                            this.testCodeStatus.error = 'Geen geldige code';
+                            this.testCodeStatus.error = this.translate('invalidTestCode');
                         }
                     } else {
                         this.$store.commit('modal/set', {
