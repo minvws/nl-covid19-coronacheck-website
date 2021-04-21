@@ -13,10 +13,15 @@
 -->
 {% include head.html %}
 <body>
-  {% include header-slim.html %}
+  {% if page.collection == 'questions-scanner' %}
+    {% include header-slim.html for="scanner" %}
+  {% else %}
+    {% include header-slim.html %}
+  {% endif %}
+  
   <main class="content-center" id="content">
     {% if page.showBreadCrumbs %}
-      {% include breadcrumbs.html title=page.title collection=page.collection %}
+      {% include components/breadcrumbs.html title=page.title collection=page.collection %}
     {% endif %}
 
     {% if page.showHomeBtn %}
@@ -40,8 +45,11 @@
       </p>
     {% endif %}
 
-
   </main>
-  {% include footer.html %}
+  {% if page.collection == 'questions-scanner' %}
+    {% include footer.html for="scanner" %}
+  {% else %}
+    {% include footer.html %}
+  {% endif %}
 </body>
 </html>

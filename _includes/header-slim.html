@@ -13,9 +13,13 @@
   </div>
   <div class="header header--slim">
     <div class="header__center">
-      {% include language-picker.html %}
+      {% include components/language-picker.html %}
       <div class="header__title">
-        {{ site.data.translations.head-app-name }}
+        {% if include.for == "scanner" %}
+          {{ site.data.translations.scanner-app-name }}
+        {% else %}
+          {{ site.data.translations.head-app-name }}
+        {% endif %}
       </div>
     </div>
     <img src="{{ site.baseurl }}/img/logo-badge.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" />

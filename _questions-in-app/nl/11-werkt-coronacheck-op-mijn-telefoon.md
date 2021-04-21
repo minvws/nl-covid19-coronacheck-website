@@ -1,7 +1,7 @@
 ---
 layout: in-app-question
-index: 11
-set: 2
+index: 3
+set: 3
 title: Werkt CoronaCheck op mijn telefoon? 
 lang: nl
 categories:
@@ -9,5 +9,10 @@ categories:
 - faq-in-app
 showBreadCrumbs: true
 showContact: true
+showOnFAQoverview: true
+featuredHome: true
+featuredHomeIndex: 6
 ---
-CoronaCheck is te gebruiken op alle iOS en Android-telefoons vanaf Android 6 en iOS 12 (de iPhone 5s en nieuwer). Dat geldt ook voor CoronaCheck Scanner. 
+CoronaCheck werkt op iOS en Android-telefoons vanaf Android 6 en iOS 12 (de iPhone 5s en nieuwer). 
+
+De app is gratis te downloaden uit de Apple App Store en Google Play Store. 

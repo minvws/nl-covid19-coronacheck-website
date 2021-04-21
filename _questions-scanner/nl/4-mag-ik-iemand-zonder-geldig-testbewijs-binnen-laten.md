@@ -1,7 +1,7 @@
 ---
 layout: content
-index: 4
-set: 1
+index: 2
+set: 2
 title: Mag ik iemand zonder geldig testbewijs binnen laten? 
 lang: nl
 categories:
@@ -12,8 +12,9 @@ showContact: true
 showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 2
-featuredHomeIcon: app-touch
 ---
-De bezoeker moet altijd een geldig testbewijs laten zien. De geldigheid van het testbewijs kan gecontroleerd worden met behulp van de CoronaCheck Scanner.
+Nee, de bezoeker moet altijd een geldig testbewijs en identiteitsbewijs laten zien. Ook tijdens de pilots testen voor toegang is een testbewijs verplicht. 
 
-**Let op:** Tijdens de pilots testen voor toegang is het voor bezoekers zonder smartphone, tijdelijk mogelijk om je testuitslag te laten zien. Deze uitslag hoeft niet gescand te worden. Zodra het papieren testbewijs beschikbaar komt, wordt hierover gecommuniceerd. 
+Je controleert de geldigheid van het testbewijs met behulp van de CoronaCheck Scanner. Groen scherm? De bezoeker heeft een geldig testbewijs. Controleer nu of de gegevens op het groene scherm hetzelfde zijn als de gegevens op het identiteitsbewijs. Check? Dan mag de bezoeker naar binnen. Het kan zijn dat er ook een toegangskaartje nodig is. 
+
+**Let op:** Tijdens de pilots testen voor toegang is het tijdelijk (tot 23 april) mogelijk om je testuitslag te laten zien. Dit is speciaal voor bezoekers zonder smartphone. Deze uitslag hoeft niet gescand te worden.

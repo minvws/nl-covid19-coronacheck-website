@@ -1,0 +1,54 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+
+
+<!DOCTYPE html>
+<!--
+  This website is generated at {{ site.time }}.
+  The code is open source. You are welcome to contribute. Go to git: 
+  https://github.com/minvws/nl-covid19-coronacheck-website
+-->
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+{% include head.html for="scanner" %}
+<body>
+  {% include header.html for="scanner" %}
+  <main id="content">
+    <div class="container"> 
+        <div class="lead">
+        <div class="lead__text">
+          <div class="content-block">
+            <div class="md-block-lead">
+                <p>{{ site.data.translations.scanner-lead[page.lang] }}</p> 
+                {% comment %}
+                  {% if page.lang == 'nl' %}
+                    <p class="announcement">{{ site.data.translations.scanner-announcement }}</p>
+                  {% endif %}
+                {% endcomment %}
+            </div>
+              
+            <div markdown="1">
+              {{ page.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- {% include components/scanner-badges.html class="layout-app-badges--center-wrap"  %} -->
+
+    {% include components/scanner-instructions.html %}
+
+    {% include components/demo-codes.html %}
+
+    {% include components/faq.html for="scanner" %}
+
+    {% include components/scanner-information.html %}
+    
+    {% include components/scanner-badges.html class="layout-app-badges--center-wrap" %}
+  </main>
+  {% include footer.html  for="scanner" %}
+</body>
+</html>

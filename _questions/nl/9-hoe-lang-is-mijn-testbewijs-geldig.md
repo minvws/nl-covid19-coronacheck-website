@@ -1,6 +1,6 @@
 ---
 layout: content
-index: 9
+index: 3
 set: 2
 title: Hoe lang is mijn testbewijs geldig?
 lang: nl
@@ -12,8 +12,7 @@ showContact: true
 showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 2
-featuredHomeIcon: calendar
 ---
-Een testbewijs is geldig tot 40 uur na het moment van testen. In die tijd is de kans dat je anderen besmet namelijk klein. Plan je test dus op tijd. En zorg dat jouw QR-code binnen 40 uur gescand is aan de deur.
+Een testbewijs is geldig tot 40 uur na het moment van testen. In die tijd is de kans dat je anderen besmet namelijk klein. Plan je test dus op tijd. En zorg dat jouw QR-code binnen 40 uur gescand is aan de deur. 
 
-Goed om te weten: in mijn overzicht zie je hoe lang de QR-code nog geldig is.
+Goed om te weten: in 'mijn overzicht' in de CoronaCheck-app zie je hoe lang de QR-code nog geldig is.

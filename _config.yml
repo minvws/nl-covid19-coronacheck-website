@@ -13,15 +13,15 @@ collections:
   questions-scanner-in-app:
     output: true
     permalink: /:categories/:name/
-  stories:
+  user-instructions:
     output: false
   scanner-instructions:
     output: false  
 
 sass:
+  style: compressed
   load_paths:
     - css
-    - css-rtl
 
 include:
   - .well-known
