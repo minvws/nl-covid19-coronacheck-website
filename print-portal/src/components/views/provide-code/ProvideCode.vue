@@ -147,7 +147,7 @@ export default {
         setTimerForValidityTestResult(testResult) {
             this.$axios({
                 method: 'get',
-                url: '/holder/config/'
+                url: '/holder/config'
             }).then((response) => {
                 const dateNow = response.headers.date;
                 const dateSample = testResult.sampleDate;

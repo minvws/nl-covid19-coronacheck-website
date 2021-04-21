@@ -21,7 +21,7 @@ export default {
         async getHolderConfig() {
             this.$axios({
                 method: 'get',
-                url: '/holder/config/'
+                url: '/holder/config'
             }).then((response) => {
                 if (response.data && response.data.payload) {
                     const holderConfig = JSON.parse(atob(response.data.payload));
