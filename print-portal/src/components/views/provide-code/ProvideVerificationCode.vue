@@ -24,7 +24,7 @@ export default {
         },
         isVerificationCodeValid() {
             const pattern = /^\d+$/;
-            return this.verificationCode.length === 6 && pattern.test(this.verificationCode);
+            return this.verificationCode.length >= 5 && pattern.test(this.verificationCode);
         },
         testResultStatus() {
             return this.$store.state.testResultStatus;
