@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 5
-set: 2
+set: 3
 title: Werkt de app ook als ik offline ben?
 lang: nl
 categories:

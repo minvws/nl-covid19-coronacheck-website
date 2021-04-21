@@ -1,7 +1,7 @@
 ---
 layout: content
-index: 12
-set: 1
+index: 3
+set: 2
 title: Vanaf welke leeftijd is een testbewijs nodig? 
 lang: nl
 categories:

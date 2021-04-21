@@ -1,7 +1,7 @@
 ---
 layout: content
 index: 6
-set: 2
+set: 3
 title: Wat als mijn scanner plotseling niet werkt?
 lang: nl
 categories:
