@@ -46,10 +46,10 @@ jobs:
         run: |
           cd print-portal
           npm install -g @vue/cli-service
-          npm install
+          npm install --production=false
           npm run build --if-present
         env:
-          NODE_ENV: development
+          NODE_ENV: production
 
       - name: Copy print portal to public
         run: mv print-portal/dist public/nl/print
@@ -63,7 +63,7 @@ jobs:
           cd print-portal
           npm run build --if-present
         env:
-          NODE_ENV: development
+          NODE_ENV: production
 
       - name: Copy print portal to public
         run: mv print-portal/dist public/en/print
