@@ -4,7 +4,7 @@
       {{ site.data.translations.header-skip-to-content[page.lang] }}
     </a>
   </div>
-  <div class="header {% if include.for == "scanner" %}header--scanner{% else %}header--home{% endif %}">
+  <div class="header header--home">
     <div class="logobar">
       <div class="logo">
         <a href="{{ langSlug }}">
@@ -27,12 +27,15 @@
       {% if include.for == "scanner" %}
 
         <div class="header__layout">
-          <div class="header__layout__middle">
-            <h1 class="header__text">
-              {{ site.data.translations.scanner-header-title[page.lang] }}<br />
-              <span>{{ site.data.translations.scanner-header-subtitle[page.lang] }}</span>
-            </h1>
+          <div class="header__layout--image">
+            <img src="{{ site.baseurl }}/img/CoronaCheckScanner_app-tall.png" alt="{{ site.data.translations.scanner-header-alt[page.lang] }}">
+          </div>
 
+          <div class="header__layout--content">
+            <h1 class="header__title">
+              {{ site.data.translations.scanner-header-title[page.lang] }}
+            </h1>
+            <p>{{ site.data.translations.scanner-header-subtitle[page.lang] }}</p>
             {% include components/scanner-badges.html %}
           </div>
         </div>
@@ -41,7 +44,7 @@
 
         <div class="header__layout">
           <div class="header__layout--image">
-            <img src="{{ site.baseurl }}/img/CoronaCheck_app.png" alt="">
+            <img src="{{ site.baseurl }}/img/CoronaCheck_app.png" alt="{{ site.data.translations.coronacheck-header-alt[page.lang] }}">
           </div>
 
           <div class="header__layout--content">
