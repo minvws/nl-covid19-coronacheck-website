@@ -160,8 +160,8 @@ export default {
                 setTimeout(() => {
                     this.$store.commit('invalidate');
                     this.$store.commit('modal/set', {
-                        messageHead: this.translate('oldTestCodeHead'),
-                        messageBody: this.translate('oldTestCodeBody'),
+                        messageHead: this.translate('expiredTestCodeHead'),
+                        messageBody: this.translate('expiredTestCodeBody'),
                         closeButton: true
                     });
                     this.$router.push({ name: 'ProvideCode' });
