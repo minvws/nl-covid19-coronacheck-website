@@ -117,7 +117,7 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Met de app bewijs je dat je negatief getest bent op corona. Je kan CoronaCheck momenteel gebruiken tijdens de pilots van Testen voor Toegang. Kijk voor het actuele overzicht op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid.</a>
+  nl: Met de app bewijs je dat je negatief getest bent op corona. Je kan CoronaCheck momenteel gebruiken tijdens de pilots van Testen voor Toegang. Kijk voor het actuele overzicht op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
   fy: 
   en: Get tested, gain access*
   ar: 
@@ -143,7 +143,7 @@ scanner-header-title:
   tr: 
 
 scanner-header-subtitle:
-  nl: Open veilig de deuren
+  nl: Met CoronaCheck Scanner controleer je de geldigheid van het testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt tijdens de pilots Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
   fy: 
   en: Open the doors safely*
   ar: 
@@ -155,6 +155,31 @@ scanner-header-subtitle:
   ro: 
   tr: 
 
+coronacheck-header-alt:
+  nl: Voorbeeld van de CoronaCheck app
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
+    
+scanner-header-alt:
+  nl: Voorbeeld van de CoronaCheck Scanner app
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
 
 header-appstore:
   nl: Downloaden in de App Store
@@ -1485,6 +1510,11 @@ home-video-content_md:
 
 user-instructions-title:
   nl: Hoe werkt het?
+  fy: 
+  en: How does it work?
+
+scanner-instructions-title:
+  nl: Hoe werkt het scannen?
   fy: 
   en: How does it work?
 
