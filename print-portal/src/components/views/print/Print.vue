@@ -237,8 +237,7 @@ export default {
 
 2. Neem een geldig identiteitsbewijs mee naar de activiteit
 
-3. Laat het testbewijs (en eventueel ook je toegangskaartje) zien bij de ingang
-
+3. Laat het testbewijs en je identiteitsbewijs (en eventueel ook je toegangskaartje) zien bij de ingang
 
 Let op: dit is géén toegangsticket voor je activiteit`,
                 position: [pageMarginLeft, (instructionsBaseY + 3 * lineHeight)],

@@ -48,7 +48,7 @@ const dictionary = {
         'nl': 'Sorry, er gaat iets mis'
     },
     'generalErrorBody': {
-        'nl': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck.</p>'
+        'nl': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck via 0800-1421.</p>'
     },
     'goBackToStart': {
         'nl': 'Naar home'
@@ -126,7 +126,7 @@ const dictionary = {
         'nl': 'Open PDF'
     },
     'verificationCode': {
-        'nl': 'Verificatie code'
+        'nl': 'Verificatiecode'
     },
     'verificationCodeDirection': {
         'nl': 'Je krijgt een code in een sms of e-mail'
@@ -144,13 +144,13 @@ const dictionary = {
         'nl': 'Controleer je testuitslag'
     },
     'yourNegativeTestresultDirection': {
-        'nl': '<p>Deze testuitslag is opgehaald bij de testlocatie. Op het moment van testen had je geen corona.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>'
+        'nl': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>'
     },
     'yourTestProof': {
         'nl': 'Jouw testbewijs'
     },
     'yourTestProofDirection': {
-        'nl': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er zoal in staat. Open of download de PDF, print het uit en neem ’m mee.'
+        'nl': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er in staat. Open of download de PDF, print het uit en neem ’m mee.'
     }
 };
 
