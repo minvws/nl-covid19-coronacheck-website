@@ -11,6 +11,8 @@
 
 .scanner-instructions__step {
   padding: 0em 1.6em 2em;
+  margin: 16px 0;
+  padding-bottom: 16px;
   
   @media (min-width: 740px) {
     padding: 2em 0.5em;
@@ -18,22 +20,10 @@
     padding: 0 54px;
     display: flex;
     flex-direction: column;
-  }
-
-  @media (min-width: 960px) {
-    padding: 0 146px;
-  } 
-
-  margin: 16px 0;
-  padding-bottom: 16px;
- 
-  @media (min-width: 740px) {
     margin: 16px 0;
-    display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
   }
-
 }
 
 .scanner-instructions__column-image {
