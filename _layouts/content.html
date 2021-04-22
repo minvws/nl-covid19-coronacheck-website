@@ -13,7 +13,7 @@
 -->
 {% include head.html %}
 <body>
-  {% if page.collection == 'questions-scanner' %}
+  {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
     {% include header-slim.html for="scanner" %}
   {% else %}
     {% include header-slim.html %}
@@ -46,7 +46,7 @@
     {% endif %}
 
   </main>
-  {% if page.collection == 'questions-scanner' %}
+  {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
     {% include footer.html for="scanner" %}
   {% else %}
     {% include footer.html %}

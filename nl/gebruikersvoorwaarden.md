@@ -1,5 +1,6 @@
 ---
 layout: content
+domain: scanner
 lang: nl
 showBreadCrumbs: true
 title: Gebruikersvoorwaarden voor CoronaCheck Scanner 
