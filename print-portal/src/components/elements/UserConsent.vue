@@ -9,6 +9,9 @@ export default {
             },
             set(value) {
                 this.$store.commit('setUserConsent', value);
+                if (!value) {
+                    this.$store.commit('reset')
+                }
             }
         }
     },
