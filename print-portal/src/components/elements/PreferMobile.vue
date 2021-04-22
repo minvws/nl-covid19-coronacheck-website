@@ -90,27 +90,11 @@ export default {
         }
     }
 
-    @include tablet() {
-        padding: 70px 12px 0 12px;
-        flex-direction: column-reverse;
-
-        .PreferMobile__image {
-            width: 100%;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .PreferMobile__text {
-            width: 100%;
-        }
-    }
-
     @include mobile() {
         padding: $length-xl $length-s 0 $length-s;
         height: auto;
         margin-bottom: $length-xxl--mobile;
+        flex-direction: column-reverse;
 
         .PreferMobile__image {
             width: 100%;
@@ -118,6 +102,10 @@ export default {
             height: 260px;
             overflow: hidden;
             padding: 0 $length-xl--mobile;
+
+            img {
+                width: 100%;
+            }
         }
 
         .PreferMobile__text {
