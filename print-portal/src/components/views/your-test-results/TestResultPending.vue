@@ -6,7 +6,11 @@ export default {
     name: 'TestResultPending',
     components: { Footer, Navigation },
     computed: {},
-    methods: {}
+    methods: {
+        goBack() {
+            this.$router.push({ name: 'ProvideCode' });
+        }
+    }
 }
 </script>
 
@@ -20,16 +24,15 @@ export default {
                     <h2>
                         {{translate('resultPending')}}
                     </h2>
-                    <p>
-                        {{translate('resultPendingDirection')}}
-                    </p>
+                    <div v-html="translate('resultPendingDirection')"/>
                     <div class="section-block__footer">
-                        <router-link
+                        <button
+                            @click="goBack()"
                             :to="{ name: 'ProvideCode' }"
                             type="button"
                             class="button-standard">
                             {{translate('back')}}
-                        </router-link>
+                        </button>
                     </div>
                 </div>
             </div>
