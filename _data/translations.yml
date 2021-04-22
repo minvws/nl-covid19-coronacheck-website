@@ -117,7 +117,7 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Met de app bewijs je dat je negatief getest bent op corona. Je kan CoronaCheck momenteel gebruiken tijdens de pilots van Testen voor Toegang. Kijk voor het actuele overzicht op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
+  nl: Met de app bewijs je dat je negatief getest bent op corona. Je kan CoronaCheck momenteel gebruiken tijdens de pilots van Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
   fy: 
   en: Get tested, gain access*
   ar: 
@@ -1241,7 +1241,7 @@ information-title:
   tr: 'Verilerinizi şu şekilde ele alıyoruz:'
   
 information-qrcode:
-  nl: In de QR-code staan minimale persoonsgegevens.
+  nl: In de QR-code staan minimale persoonsgegevens
   fy: 
   en: Your QR code only says when you tested negative.
   ar: 
@@ -1254,7 +1254,7 @@ information-qrcode:
   tr: 
     
 information-naw:
-  nl: Jouw gegevens worden nergens centraal opgeslagen.
+  nl: Jouw gegevens worden nergens centraal opgeslagen
   fy: 
   en: Your data is not centrally stored anywhere.
   ar: 
@@ -1267,7 +1267,7 @@ information-naw:
   tr: 
   
 information-gps:
-  nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard.
+  nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard
   fy: 
   en: Your GPS or location data are not used or saved.
   ar: 
