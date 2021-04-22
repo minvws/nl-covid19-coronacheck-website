@@ -8,9 +8,9 @@ export default {
                 return this.$store.state.userConsent;
             },
             set(value) {
-                this.$store.commit('setUserConsent', value);
-                if (!value) {
-                    this.$store.commit('reset')
+                // only true is possible, after consent is given, the input is being disabled
+                if (value) {
+                    this.$store.commit('giveUserConsent');
                 }
             }
         }
@@ -23,10 +23,13 @@ export default {
     <div class="UserConsent">
         <input
             v-model="userConsent"
+            :disabled="userConsent"
             id="user-consent"
             name="user-consent"
             type="checkbox">
-        <label for="user-consent">
+        <label
+            :disabled="userConsent"
+            for="user-consent">
             Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank">privacyverklaring</a> gelezen en
             geef toestemming voor het verwerken van mijn persoonsgegevens.
         </label>
@@ -51,11 +54,19 @@ export default {
         margin-right: 20px;
         border: 1px solid $grey-3;
         cursor: pointer;
+
+        &[disabled] {
+            cursor: default;
+        }
     }
 
     label {
         width: calc(100% - 48px);
         cursor: pointer;
+
+        &[disabled] {
+            cursor: default;
+        }
     }
 }
 </style>
