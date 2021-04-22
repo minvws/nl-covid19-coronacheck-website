@@ -117,7 +117,7 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Met de app kan je aantonen dat je negatief getest bent op corona. CoronaCheck wordt op dit moment getest tijdens de pilots testen voor toegang, kijk voor de actuele lijst op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid.</a>
+  nl: Met de app bewijs je dat je negatief getest bent op corona. Je kan CoronaCheck momenteel gebruiken tijdens de pilots van Testen voor Toegang. Kijk voor het actuele overzicht op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid.</a>
   fy: 
   en: Get tested, gain access*
   ar: 
@@ -1256,7 +1256,7 @@ information-gps:
 
 
 scanner-information-title:
-  nl: 'Privacy is altijd beschermd:'
+  nl: Voorwaarden voor gebruik
   fy: 
   en: 
   ar: 
@@ -1269,7 +1269,7 @@ scanner-information-title:
   tr: 
 
 scanner-information-qrcode:
-  nl: In de QR-code staat alleen wanneer de bezoeker negatief getest is.
+  nl: In de QR-code staan minimale gegevens van de bezoeker
   fy: 
   en: 
   ar: 
@@ -1282,7 +1282,7 @@ scanner-information-qrcode:
   tr: 
     
 scanner-information-naw:
-  nl: De gegevens van de bezoeker worden nergens centraal opgeslagen.
+  nl: Deze gegevens mag je alleen gebruiken voor controle van het testbewijs
   fy: 
   en: 
   ar: 
@@ -1295,7 +1295,7 @@ scanner-information-naw:
   tr: 
   
 scanner-information-gps:
-  nl: GPS- of locatiegegevens van de bezoeker worden niet gebruikt of bewaard.
+  nl: Gegevens van de bezoeker worden nergens centraal opgeslagen
   fy: 
   en: 
   ar: 
