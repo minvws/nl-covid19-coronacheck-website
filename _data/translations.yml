@@ -104,7 +104,7 @@ header-skip-to-content:
   tr: Doğrudan içeriğe gidin
     
 header-title:
-  nl: Ga naar een event met de CoronaCheck-app
+  nl: Krijg toegang met de CoronaCheck-app
   fy: CoronaCheck
   en: CoronaCheck
   ar: CoronaCheck
@@ -130,7 +130,7 @@ header-subtitle:
   tr: 
 
 scanner-header-title:
-  nl: CoronaCheck Scanner
+  nl: Geef toegang met de CoronaCheck Scanner
   fy: 
   en: CoronaCheck Scanner 
   ar: 
