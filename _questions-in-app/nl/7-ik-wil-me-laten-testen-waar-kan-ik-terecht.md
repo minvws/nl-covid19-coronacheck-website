@@ -1,7 +1,7 @@
 ---
 layout: in-app-question
-index: 7
-set: 5
+index: 1
+set: 6
 title: Ik wil me laten testen, waar kan ik terecht?
 lang: nl
 categories:
