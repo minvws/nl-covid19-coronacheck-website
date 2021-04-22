@@ -158,9 +158,12 @@ export default {
                 const invalidAt = dateTool.addHoursToDate(dateSample, maxValidity, false);
                 const timeToInvalidation = invalidAt.getTime() - new Date(dateNow).getTime();
                 setTimeout(() => {
-                    const message = 'Uw testuitslag is niet meer geldig';
                     this.$store.commit('invalidate');
-                    this.$store.commit('modal/set', { message, closeButton: true });
+                    this.$store.commit('modal/set', {
+                        messageHead: this.translate('oldTestCodeHead'),
+                        messageBody: this.translate('oldTestCodeBody'),
+                        closeButton: true
+                    });
                     this.$router.push({ name: 'ProvideCode' });
                 }, timeToInvalidation)
             }).catch((error) => {

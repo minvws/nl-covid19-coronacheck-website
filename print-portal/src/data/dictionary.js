@@ -77,6 +77,12 @@ const dictionary = {
     'noVerificationCodeMessage': {
         'nl': '<p>Je krijgt de verificatiecode via een sms of e-mail van de testlocatie. Niet gekregen? Dan kunnen we een nieuwe code sturen.</p>'
     },
+    'oldTestCodeHead': {
+        'nl': 'Deze code is verlopen'
+    },
+    'oldTestCodeBody': {
+        'nl': '<p>De code is niet meer geldig.</p>'
+    },
     'preferMobile': {
         'nl': 'Liever je testbewijs op je mobiel?'
     },
