@@ -36,7 +36,7 @@ const dictionary = {
         'nl': 'Deze code is verlopen'
     },
     'expiredTestCodeBody': {
-        'nl': '<p>De code is niet meer geldig.</p>'
+        'nl': '<p>De code die je invult is niet meer geldig. Controleer of je de juiste code hebt ingevuld. Nieuwe code nodig? Laat je dan opnieuw testen.</p>'
     },
     'faq': {
         'nl': 'Meestgestelde vragen'
