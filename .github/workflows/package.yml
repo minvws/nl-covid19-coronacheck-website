@@ -68,6 +68,12 @@ jobs:
       - name: Copy print portal to public
         run: mv print-portal/dist public/en/print
 
+      - name: Copy fonts
+        run: cp -R public/nl/print/assets/fonts public/assets/
+
+      - name: Copy img
+        run: cp -R public/nl/print/assets/img public/assets/
+
       - name: Create tar
         run: tar -czf ct_website_${{ env.RELEASE_VERSION }}.tar.gz ./public
 

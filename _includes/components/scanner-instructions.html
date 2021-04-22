@@ -1,3 +1,4 @@
+<h2 class="instructions__title">{{ site.data.translations.scanner-instructions-title[page.lang] }}</h2>
 <div class="scanner-instructions">
   {% assign scanner-instructions = site.scanner-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}
   {% for step in scanner-instructions %}

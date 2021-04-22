@@ -104,7 +104,7 @@ header-skip-to-content:
   tr: Doğrudan içeriğe gidin
     
 header-title:
-  nl: Ga naar een event met de CoronaCheck-app
+  nl: Krijg toegang met de CoronaCheck-app
   fy: CoronaCheck
   en: CoronaCheck
   ar: CoronaCheck
@@ -117,7 +117,7 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Met de app kan je aantonen dat je negatief getest bent op corona. CoronaCheck wordt op dit moment getest tijdens de pilots testen voor toegang, kijk voor de actuele lijst op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid.</a>
+  nl: Met de app bewijs je dat je negatief getest bent op corona. Je kan CoronaCheck momenteel gebruiken tijdens de pilots van Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
   fy: 
   en: Get tested, gain access*
   ar: 
@@ -130,7 +130,7 @@ header-subtitle:
   tr: 
 
 scanner-header-title:
-  nl: CoronaCheck Scanner
+  nl: Geef toegang met de CoronaCheck Scanner
   fy: 
   en: CoronaCheck Scanner 
   ar: 
@@ -143,7 +143,7 @@ scanner-header-title:
   tr: 
 
 scanner-header-subtitle:
-  nl: Open veilig de deuren
+  nl: Met CoronaCheck Scanner controleer je de geldigheid van het testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt tijdens de pilots Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
   fy: 
   en: Open the doors safely*
   ar: 
@@ -155,6 +155,31 @@ scanner-header-subtitle:
   ro: 
   tr: 
 
+coronacheck-header-alt:
+  nl: Voorbeeld van de CoronaCheck app
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
+    
+scanner-header-alt:
+  nl: Voorbeeld van de CoronaCheck Scanner app
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
 
 header-appstore:
   nl: Downloaden in de App Store
@@ -1216,7 +1241,7 @@ information-title:
   tr: 'Verilerinizi şu şekilde ele alıyoruz:'
   
 information-qrcode:
-  nl: In de QR-code staan minimale persoonsgegevens.
+  nl: In de QR-code staan minimale persoonsgegevens
   fy: 
   en: Your QR code only says when you tested negative.
   ar: 
@@ -1229,7 +1254,7 @@ information-qrcode:
   tr: 
     
 information-naw:
-  nl: Jouw gegevens worden nergens centraal opgeslagen.
+  nl: Jouw gegevens worden nergens centraal opgeslagen
   fy: 
   en: Your data is not centrally stored anywhere.
   ar: 
@@ -1242,7 +1267,7 @@ information-naw:
   tr: 
   
 information-gps:
-  nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard.
+  nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard
   fy: 
   en: Your GPS or location data are not used or saved.
   ar: 
@@ -1256,7 +1281,7 @@ information-gps:
 
 
 scanner-information-title:
-  nl: 'Privacy is altijd beschermd:'
+  nl: Voorwaarden voor gebruik
   fy: 
   en: 
   ar: 
@@ -1269,7 +1294,7 @@ scanner-information-title:
   tr: 
 
 scanner-information-qrcode:
-  nl: In de QR-code staat alleen wanneer de bezoeker negatief getest is.
+  nl: In de QR-code staan minimale gegevens van de bezoeker
   fy: 
   en: 
   ar: 
@@ -1282,7 +1307,7 @@ scanner-information-qrcode:
   tr: 
     
 scanner-information-naw:
-  nl: De gegevens van de bezoeker worden nergens centraal opgeslagen.
+  nl: Deze gegevens mag je alleen gebruiken voor controle van het testbewijs
   fy: 
   en: 
   ar: 
@@ -1295,7 +1320,7 @@ scanner-information-naw:
   tr: 
   
 scanner-information-gps:
-  nl: GPS- of locatiegegevens van de bezoeker worden niet gebruikt of bewaard.
+  nl: Gegevens van de bezoeker worden nergens centraal opgeslagen
   fy: 
   en: 
   ar: 
@@ -1488,18 +1513,23 @@ user-instructions-title:
   fy: 
   en: How does it work?
 
+scanner-instructions-title:
+  nl: Hoe werkt het scannen?
+  fy: 
+  en: How does it work?
+
 print-version-title:
-  nl: Wil je een papieren testbewijs?
+  nl: Liever een papieren testbewijs?
   fy: 
   en: 
 
 print-version-content:
-  nl: Vanaf vrijdag 23 april is het mogelijk om hier je papieren testbewijs te maken.
+  nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq/#testbewijs-op-papier">Lees hier meer</a>.
   fy: 
   en: 
 
 print-version-url: 
-  nl: /nl/print/
+  nl: /print
   fy: 
   en: 
 
