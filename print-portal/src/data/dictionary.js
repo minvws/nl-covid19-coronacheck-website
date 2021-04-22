@@ -87,7 +87,7 @@ const dictionary = {
         'nl': 'Liever je testbewijs op je mobiel?'
     },
     'preferMobileDirection': {
-        'nl': 'Download dan de app. Ook van een testbewijs in de app kun je een print maken. '
+        'nl': 'Download dan de app.'
     },
     'retrieveTestResult': {
         'nl': 'Testuitslag ophalen'
