@@ -16,17 +16,18 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      - uses: actions/cache@v2
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-            path: vendor/bundle
-            key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-            restore-keys: |
-              ${{ runner.os }}-gems-
+          ruby-version: 2.7
+          bundler-cache: true
+
       - name: Install Jekyll
         run: |
-          sudo gem install bundler jekyll
-          sudo bundle install
-          sudo bundle update --bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+          bundle update --bundler
+
       - name: Build site
         run: bundle exec jekyll build
 
@@ -36,11 +37,48 @@ jobs:
       - name: Rename folder
         run: mv _site public
 
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - name: Create NL print portal
+        run: |
+          cd print-portal
+          npm install -g @vue/cli-service
+          npm install --production=false
+          npm run build --if-present
+        env:
+          NODE_ENV: production
+
+      - name: Copy print portal to public
+        run: mv print-portal/dist public/nl/print
+
+      - name: Remake for EN print portal
+        run: |
+          sed -i 's/nl\/print/en\/print/g' print-portal/vue.config.js
+
+      - name: Create EN print portal
+        run: |
+          cd print-portal
+          npm run build --if-present
+        env:
+          NODE_ENV: production
+
+      - name: Copy print portal to public
+        run: mv print-portal/dist public/en/print
+
+      - name: Copy fonts
+        run: cp -R public/nl/print/assets/fonts public/assets/
+
+      - name: Copy img
+        run: cp -R public/nl/print/assets/img public/assets/
+
       - name: Create tar
         run: tar -czf ct_website_${{ env.RELEASE_VERSION }}.tar.gz ./public
 
       - name: Upload release tar
         uses: actions/upload-artifact@v2
         with:
-            name: ct_website_${{ env.RELEASE_VERSION }}
-            path: ct_website_${{ env.RELEASE_VERSION }}.tar.gz
+          name: ct_website_${{ env.RELEASE_VERSION }}
+          path: ct_website_${{ env.RELEASE_VERSION }}.tar.gz
