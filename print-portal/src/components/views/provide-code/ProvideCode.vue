@@ -81,8 +81,7 @@ export default {
                 const url = this.testProvider.result_url;
                 const headers = {
                     'Authorization': `Bearer ${this.token}`,
-                    'CoronaCheck-Protocol-Version': '2.0',
-                    'Content-Type': 'application/json'
+                    'CoronaCheck-Protocol-Version': '2.0'
                 };
 
                 if (options.includeVerificationCode) {
