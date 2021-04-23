@@ -82,13 +82,13 @@ Binnen CoronaCheck en in coronacheck.nl worden persoonsgegevens als volgt bewaar
 - Het IP-adres dat voor beheers- en beveiligingsdoeleinden wordt verwerkt door onze provider Prolocation B.V., wordt daarna maximaal 7 dagen verwijderd.
 - In de CoronaCheck Scanner app worden geen persoonsgegevens vastgelegd.
 
-### 9. Uw rechten ten aanzien van uw persoonsgegevens
+### 8. Uw rechten ten aanzien van uw persoonsgegevens
 
 U heeft een aantal rechten om controle te houden op uw persoonsgegevens. Deze kunt u vinden op de [website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/rechten-van-betrokkenen). 
 
 CoronaCheck en de website coronacheck.nl zijn ontworpen volgens de standaard van privacy by design en de bescherming van uw persoonsgegevens staat bij de inzet van CoronaCheck voorop. Er bestaat de mogelijkheid om een beroep te doen op een van uw privacy rechten ten aanzien van de inzet van CoronaCheck. Een dergelijk verzoek kunt u indienen op [helpdesk@CoronaCheck.nl](mailto:helpdesk@CoronaCheck.nl). 
 
-### 10. Klachten over gebruik van uw gegevens
+### 9. Klachten over gebruik van uw gegevens
 
 Vragen of klachten over het gebruik van CoronaCheck kunt u stellen aan [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
 
@@ -96,10 +96,10 @@ Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie 
 
 U hebt altijd het recht een klacht over de verwerking van uw persoonsgegevens in te dienen bij de Autoriteit Persoonsgegevens of bij de rechter. Meer informatie daarover vindt u op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap).
 
-### 11. Beveiliging van uw persoonsgegevens
+### 10. Beveiliging van uw persoonsgegevens
 
 De Minister van Volksgezondheid, Welzijn en Sport neemt de bescherming van uw persoonsgegevens serieus en neemt passende technische en organisatorische maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan.
 
-### 12. Wijziging privacyverklaring
+### 11. Wijziging privacyverklaring
 
 Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 22 april 2021.

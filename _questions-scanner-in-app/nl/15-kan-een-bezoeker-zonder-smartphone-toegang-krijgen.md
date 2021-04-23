@@ -10,4 +10,4 @@ categories:
 showBreadCrumbs: true
 showContact: true
 ---
-Ja, ook zonder smartphone kun je een testbewijs krijgen. Print jouw testbewijs uit via [www.coronacheck.nl/print](/print) (mogelijk vanaf 23 april).
+Ja, ook zonder smartphone kun je een testbewijs krijgen. Print jouw testbewijs uit via [www.coronacheck.nl/print/](/print).
