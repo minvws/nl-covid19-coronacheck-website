@@ -80,7 +80,7 @@ export default {
                 let responseForSignedResult, data;
                 const url = this.testProvider.result_url;
                 const headers = {
-                    'Authorization': `Bearer ${this.token}`,
+                    'Authorization': `Bearer ${this.token.toUpperCase()}`,
                     'CoronaCheck-Protocol-Version': '2.0',
                     'Content-Type': 'application/x-www-form-urlencoded'
                 };
