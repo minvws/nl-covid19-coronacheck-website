@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const codePoints = 'BCFGJLQRSTUVXYZ23456789';
 
 const numberOfValidInputCharacters = function() {
