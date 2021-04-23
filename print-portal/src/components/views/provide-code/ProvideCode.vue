@@ -55,7 +55,8 @@ export default {
             return this.checksumSet ? this.checksumSet[0] : null;
         },
         luhn() {
-            return luhnModN.generateCheckCharacter(this.token.toUpperCase());
+            return true;
+            //return luhnModN.generateCheckCharacter(this.token.toUpperCase());
         },
         checkSumIsValid() {
             return this.checkSum ? (this.luhn === this.checkSum) : false;
