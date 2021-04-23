@@ -11,7 +11,7 @@ showBreadCrumbs: true
 showContact: true
 showOnFAQoverview: true
 ---
-Geen smartphone of liever een papieren testbewijs? Ga naar [www.coronacheck.nl/print](http://www.coronacheck.nl/print) (mogelijk vanaf 23 april) en volg deze stappen: 
+Geen smartphone of liever een papieren testbewijs? Ga naar [www.coronacheck.nl/print](http://www.coronacheck.nl/print) en volg deze stappen: 
 
 1. Vul op [www.coronacheck.nl/print](http://www.coronacheck.nl/print) jouw unieke code in. Deze code krijg je bij je negatieve testuitslag
 2. Na controle van de unieke code haalt CoronaCheck je testuitslag op
