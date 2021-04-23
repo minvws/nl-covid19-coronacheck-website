@@ -62,7 +62,7 @@
 .footer-phone {
     padding: 2.2rem 1.4rem 2rem 1.4em;
     max-width: 940px;
-    color: $color-RO_darkblue;
+    color: $color-coronacheck_black;
     font-size: 16px;
     margin-bottom: 2em;
 
@@ -77,6 +77,15 @@
 
 .footer-phone--background {
     background-color: $color-RO_lightblue;
+
+    a, a:visited { 
+        color: $color-cc-link-darker;
+
+        &:hover,
+        &:focus {
+          color: $color-cc-link-darker--interaction;
+        }
+    }
 }
 
 .footer-phone__column-left {
@@ -107,14 +116,10 @@
 .footer-phone_action_text {
     display: block;
     font-weight: 800;
-    color: $color-coronacheck_blue;
+    color: $color-cc-link-darker;
     font-size: 32px;
     margin-bottom: 0.5em;
     line-height: 1.4;
-
-    a {
-        color: $color-coronacheck_blue;
-    }
 }
 
 .footer-phonetimes {
