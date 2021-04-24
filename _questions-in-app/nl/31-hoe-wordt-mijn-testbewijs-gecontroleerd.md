@@ -2,7 +2,7 @@
 layout: in-app-question
 index: 6
 set: 2
-title: Hoe wordt mijn testbewijs gecontroleerd?*
+title: Hoe wordt mijn testbewijs gecontroleerd?
 lang: nl
 categories:
 - nl

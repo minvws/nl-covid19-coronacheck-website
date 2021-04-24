@@ -10,6 +10,15 @@
     flex-direction: row;
     width: calc(100% - (54px * 2));
   }
+
+  a, a:visited { 
+    color: $color-cc-link-darker;
+
+    &:hover,
+    &:focus {
+      color: $color-cc-link-darker--interaction;
+    }
+  }
 }
 
 .print-version__column-image {
