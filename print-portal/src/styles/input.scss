@@ -24,10 +24,6 @@
         color: $primary-text;
         padding: 0;
 
-        &.input--capitals {
-            text-transform: uppercase;
-        }
-
         &:focus {
             border-bottom: 1px solid $active-color;
         }

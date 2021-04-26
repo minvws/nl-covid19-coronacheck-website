@@ -50,7 +50,7 @@ export default {
                 this.checkCheckSumIsValid;
         },
         isVerificationCodeValid() {
-             return this.checkIfIsCorrectLength && this.checkIfIsOnlyNumber;
+            return this.checkIfIsCorrectLength && this.checkIfIsOnlyNumber;
         },
         checkIfHasTwoHyphens() {
             return this.numberOfHyphens === 2;
@@ -183,11 +183,11 @@ export default {
                     if (error.response) {
                         const status = error.response.status;
                         switch (status) {
-                        case 401:
-                            responseForSignedResult = this.handle401(error.response)
-                            break;
-                        default:
-                            responseForSignedResult = 'unknown_error';
+                            case 401:
+                                responseForSignedResult = this.handle401(error.response)
+                                break;
+                            default:
+                                responseForSignedResult = 'unknown_error';
                         }
                         this.$store.commit('setTestResultStatus', responseForSignedResult);
 
