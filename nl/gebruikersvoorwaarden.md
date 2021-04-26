@@ -49,7 +49,7 @@ In deze gebruikersvoorwaarden leest u hoe CoronaCheck Scanner werkt, wat u ermee
 
 Om digitale testbewijzen uit CoronaCheck en fysieke testbewijzen op papier te controleren op geldigheid is CoronaCheck Scanner benodigd. CoronaCheck Scanner kunt gratis u downloaden in de App Store (voor iOS) en de Google Play Store (voor Android) en installeren op uw smartphone of tablet. Download u CoronaCheck Scanner daarom alleen in de App Store of Google Play Store en wees alert op valse/namaak apps. CoronaCheck Scanner wordt alleen ondersteund vanaf iOS versie 11 en Android versie 6. 
 
-Nadat CoronaCheck Scanner is gedownload en deze voorwaarden zijn geaccepteerd, kan CoronaCheck Scanner gebruikt worden. Voordat u gebruik kunt maken van de app dient dus u deze gebruikersvoorwaarden te lezen en akkoord te gaan met de gebruikersvoorwaarden. U kunt deze gebruikersvoorwaarden terugvinden op https://coronacheck.nl/nl/gebruikersvoorwaarden.html. 
+Nadat CoronaCheck Scanner is gedownload en deze voorwaarden zijn geaccepteerd, kan CoronaCheck Scanner gebruikt worden. Voordat u gebruik kunt maken van de app dient dus u deze gebruikersvoorwaarden te lezen en akkoord te gaan met de gebruikersvoorwaarden. U kunt deze gebruikersvoorwaarden terugvinden op [de website van CoronaCheck](https://coronacheck.nl/nl/gebruikersvoorwaarden.html). 
 
 ### Een testbewijs scannen 
 
@@ -103,7 +103,7 @@ CoronaCheck Scanner is met grote zorg ontworpen. VWS werkt hard om de app zo goe
 
 U gaat er, door deze gebruikersvoorwaarden te accepteren, mee akkoord dat CoronaCheck Scanner niet foutloos functioneert, tijdelijk, permanent, geheel of gedeeltelijk niet beschikbaar kan zijn, meldingen door u niet, niet tijdig en/of niet volledig worden ontvangen.
 
-Heeft u een vraag of klacht over CoronaCheck Scanner of wilt u een storing melden? Kijk voor meer informatie op https://coronacheck.nl/nl.  
+Heeft u een vraag of klacht over CoronaCheck Scanner of wilt u een storing melden? Kijk voor meer informatie op [de website van CoronaCheck](https://coronacheck.nl/).
 
 ## Aansprakelijkheid 
 
@@ -123,7 +123,7 @@ VWS kan de voorwaarden wijzigen als VWS dat noodzakelijk vindt. De datum en de v
 
 ## Beëindigen van CoronaCheck Scanner
 
-Het controleren van testbewijzen om toegang te verstrekken is een tijdelijke crisismaatregel. Dat betekent dat niet voorspeld kan worden wat er precies gaat gebeuren. Daarom kan VWS op ieder moment beslissen om het gebruik van CoronaCheck Scanner te stoppen. Wanneer dit gebeurt, wordt u daarover geïnformeerd via https://coronacheck.nl/nl.  
+Het controleren van testbewijzen om toegang te verstrekken is een tijdelijke crisismaatregel. Dat betekent dat niet voorspeld kan worden wat er precies gaat gebeuren. Daarom kan VWS op ieder moment beslissen om het gebruik van CoronaCheck Scanner te stoppen. Wanneer dit gebeurt, wordt u daarover geïnformeerd via [de website van CoronaCheck](https://coronacheck.nl/nl).  
 
 ## Toepasselijk recht en bevoegde rechter
 
@@ -135,8 +135,8 @@ Wanneer een deel van deze voorwaarden onwettig, ongeldig of niet-afdwingbaar zij
 
 ## Contact
 
-Indien u een vraag of klacht over CoronaCheck Scanner heeft, kijk dan voor meer informatie op https://coronacheck.nl/nl.  
+Indien u een vraag of klacht over CoronaCheck Scanner heeft, kijk dan voor meer informatie op [de website van CoronaCheck](https://coronacheck.nl/nl).  
 
 Versie 1.1.
 
-Laatste update: 22 april 2021. 
+Laatste update: 23 april 2021. 
