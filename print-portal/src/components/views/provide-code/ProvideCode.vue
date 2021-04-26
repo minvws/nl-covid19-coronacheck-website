@@ -57,7 +57,7 @@ export default {
             return this.checksumSet ? this.checksumSet[0] : null;
         },
         luhn() {
-            return luhnModN.generateCheckCharacter(this.token.toUpperCase());
+            return luhnModN.generateCheckCharacter(this.token);
         },
         checkSumIsValid() {
             // return this.checkSum ? (this.luhn === this.checkSum) : false;
@@ -80,7 +80,7 @@ export default {
                 let responseForSignedResult, data;
                 const url = this.testProvider.result_url;
                 const headers = {
-                    'Authorization': `Bearer ${this.token.toUpperCase()}`,
+                    'Authorization': `Bearer ${this.token}`,
                     'CoronaCheck-Protocol-Version': '2.0',
                     'Content-Type': 'application/x-www-form-urlencoded'
                 };
