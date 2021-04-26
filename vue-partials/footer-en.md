@@ -1,5 +1,0 @@
----
-layout: footer
-lang: en
----
-
