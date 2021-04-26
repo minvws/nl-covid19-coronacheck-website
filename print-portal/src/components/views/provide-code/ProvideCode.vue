@@ -9,8 +9,6 @@ import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import dateTool from '@/tools/date';
 import Footer from '@/components/elements/Footer';
 
-/* eslint-disable */
-
 export default {
     name: 'ProvideCode',
     components: { Footer, FaqMobileLink, Navigation, ProvideVerificationCode, ProvideTestCode, PreferMobile },
@@ -116,7 +114,7 @@ export default {
         },
         feedbackClientSideTestCode() {
             let error;
-            if (!this.checkIfHasTwoHyphens){
+            if (!this.checkIfHasTwoHyphens) {
                 error = this.translate('errorNumberOfHyphens');
             } else if (!this.checkPrefixLength) {
                 error = this.translate('errorPrefixLength');
@@ -132,7 +130,7 @@ export default {
         },
         feedbackClientSideVerficationCode() {
             let error;
-            if (!this.checkIfIsCorrectLength){
+            if (!this.checkIfIsCorrectLength) {
                 error = this.translate('errorVerificationCodeLength');
             } else if (!this.checkIfIsOnlyNumber) {
                 error = this.translate('errorVerificationOnlyNumber');
@@ -183,11 +181,11 @@ export default {
                     if (error.response) {
                         const status = error.response.status;
                         switch (status) {
-                            case 401:
-                                responseForSignedResult = this.handle401(error.response)
-                                break;
-                            default:
-                                responseForSignedResult = 'unknown_error';
+                        case 401:
+                            responseForSignedResult = this.handle401(error.response)
+                            break;
+                        default:
+                            responseForSignedResult = 'unknown_error';
                         }
                         this.$store.commit('setTestResultStatus', responseForSignedResult);
 
