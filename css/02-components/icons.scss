@@ -1,0 +1,37 @@
+.icon {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 1rem;
+}
+
+.icon-chevron-right,
+.icon-chevron-left {
+    background-image: url('../img/chevron-up.svg');
+}
+
+.btn .icon-chevron-right,
+.btn .icon-chevron-left {
+    background-image: url('../img/chevron-up-white.svg');
+}
+
+.btn:hover,
+.btn:focus {
+    .icon-chevron-right,
+    .icon-chevron-left {
+        background-image: url('../img/chevron-up.svg');
+    }
+}
+
+.icon-chevron-right {
+    transform: rotate(90deg);
+}
+
+.icon-chevron-left {
+    transform: rotate(-90deg);
+}
+
+.icon-close {
+    background-image: url('../img/close.svg');
+}

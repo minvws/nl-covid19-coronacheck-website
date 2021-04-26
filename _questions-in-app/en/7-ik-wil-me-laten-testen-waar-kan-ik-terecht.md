@@ -6,7 +6,7 @@ title: Where can I get tested?
 lang: en
 categories:
 - en
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

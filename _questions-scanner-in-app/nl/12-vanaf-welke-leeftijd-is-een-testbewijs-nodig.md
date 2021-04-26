@@ -1,13 +1,13 @@
 ---
 layout: in-app-question
-index: 12
-set: 1
+index: 3
+set: 2
 title: Vanaf welke leeftijd is een testbewijs nodig? 
 lang: nl
 categories:
 - nl
-- faq
+- faq-scanner-in-app
 showBreadCrumbs: true
 showContact: true
 ---
-Het tonen van een testbewijs bij evenementen en activiteiten waar dat juridisch verplicht is, is verplicht vanaf 12 jaar. Dit geldt ook voor de pilots testen voor toegang in april.
+Bezoekers vanaf 12 jaar moeten een testbewijs laten zien bij evenementen en activiteiten waar een testbewijs juridisch verplicht is. Dit geldt ook voor de pilots testen voor toegang.

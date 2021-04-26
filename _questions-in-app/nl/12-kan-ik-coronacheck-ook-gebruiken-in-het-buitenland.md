@@ -1,13 +1,13 @@
 ---
 layout: in-app-question
-index: 12
-set: 2
+index: 4
+set: 3
 title: Kan ik CoronaCheck ook gebruiken in het buitenland?
 lang: nl
 categories:
 - nl
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---
-Nee, je kunt CoronaCheck niet in het buitenland gebruiken.
+Nee, je kunt CoronaCheck op dit moment niet in het buitenland gebruiken.

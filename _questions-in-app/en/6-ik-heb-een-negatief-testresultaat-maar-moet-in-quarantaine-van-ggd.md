@@ -6,7 +6,7 @@ title: Despite my negative test result, the GGD orders me to self-isolate. What 
 lang: en
 categories:
 - en
-- faq
+- faq-in-app
 showBreadCrumbs: true
 showContact: true
 ---

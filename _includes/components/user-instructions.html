@@ -1,0 +1,22 @@
+<h2 class="instructions__title">{{ site.data.translations.user-instructions-title[page.lang] }}</h2>
+  <div class="instructions">
+  
+  {% assign user_instructions = site.user-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}
+  {% for step in user_instructions %}
+  <article class="instructions__step instructions__step--{{ step.index }}" id="step-{{ step.index }}">
+    <img
+      src="{{ site.baseurl }}/img/{{ step.graphic }}"
+      alt=""
+      loading="lazy"
+      class="instructions__step-image"
+    >
+    <div class="instructions__step-content">
+      <span class="instructions__step-title">{{ step.title }}</span>
+      </span>
+      <p class="instructions__step-text" markdown="1">
+        {{ step.content }}
+      </p>
+    </div>
+  </article>
+  {% endfor %}
+</div>

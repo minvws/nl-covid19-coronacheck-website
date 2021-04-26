@@ -1,0 +1,24 @@
+.section {
+
+    .section-block {
+        width: 460px;
+        max-width: 100%;
+        margin: 0 auto;
+
+        .section-block__footer {
+            margin-top: $length-xl;
+        }
+    }
+
+    &.section--text-align-center {
+        text-align: center;
+    }
+
+    @include tablet() {
+
+        .section-block {
+            width: 100%;
+            //padding: 0 12px;
+        }
+    }
+}

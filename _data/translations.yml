@@ -1,4 +1,6 @@
 head-app-name: CoronaCheck
+
+scanner-app-name: CoronaCheck Scanner
   
 ## SOCIAL tags
 
@@ -18,7 +20,7 @@ head-social-og-title:
   tr: 
     
 head-social-og-description:
-  nl: 
+  nl: Met CoronaCheck kunnen bezoekers naar pilots toegangstesten. Zij moeten zich eerst laten testen op het coronavirus.
   fy: 
   en: 
   ar: 
@@ -48,7 +50,7 @@ scanner-social-og-title:
   tr: 
     
 scanner-social-og-description:
-  nl: 
+  nl: Met CoronaCheck Scanner kunnen sociale, culturele en sportieve locaties toegangstesten organiseren. Zo openen zij veilig de deuren in tijden van corona.
   fy: 
   en: 
   ar: 
@@ -102,7 +104,7 @@ header-skip-to-content:
   tr: Doğrudan içeriğe gidin
     
 header-title:
-  nl: CoronaCheck
+  nl: Krijg toegang met de CoronaCheck-app
   fy: CoronaCheck
   en: CoronaCheck
   ar: CoronaCheck
@@ -115,9 +117,9 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Krijg toegang na testen
+  nl: Met de app bewijs je dat je negatief getest bent op corona. Je kan CoronaCheck momenteel gebruiken tijdens de pilots van Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
   fy: 
-  en: Get tested, gain access
+  en: Get tested, gain access*
   ar: 
   bg: 
   de: 
@@ -128,7 +130,7 @@ header-subtitle:
   tr: 
 
 scanner-header-title:
-  nl: CoronaCheck Scanner
+  nl: Geef toegang met de CoronaCheck Scanner
   fy: 
   en: CoronaCheck Scanner 
   ar: 
@@ -141,7 +143,7 @@ scanner-header-title:
   tr: 
 
 scanner-header-subtitle:
-  nl: Open veilig de deuren
+  nl: Met CoronaCheck Scanner controleer je de geldigheid van het testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt tijdens de pilots Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
   fy: 
   en: Open the doors safely*
   ar: 
@@ -153,6 +155,31 @@ scanner-header-subtitle:
   ro: 
   tr: 
 
+coronacheck-header-alt:
+  nl: Voorbeeld van de CoronaCheck app
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
+    
+scanner-header-alt:
+  nl: Voorbeeld van de CoronaCheck Scanner app
+  fy: 
+  en: 
+  ar: 
+  bg: 
+  de: 
+  fr: 
+  es: 
+  pl: 
+  ro: 
+  tr: 
 
 header-appstore:
   nl: Downloaden in de App Store
@@ -414,6 +441,19 @@ faq-category-scanner-general:
   ro: 
   tr:  
 
+faq-category-scanner-testdocument:
+  nl: Toegang met testbewijs
+  fy: 
+  en: Toegang met testbewijs
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:  
+
 faq-category-scannerapp-privacy:
   nl: Privacy
   fy: 
@@ -454,9 +494,61 @@ faq-category-general:
   tr:
   
 faq-category-howtouse:
-  nl: Gebruik CoronaCheck
+  nl: Toegang met testbewijs
   fy: 
-  en: Using CoronaCheck
+  en: Using CoronaCheck*
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-usingtheapp:
+  nl: Testbewijs in de app
+  fy: 
+  en: Using CoronaCheck*
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-usingprintversion:
+  nl: Testbewijs op papier
+  fy: 
+  en: Using CoronaCheck*
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-gettingtested:
+  nl: Testen
+  fy: 
+  en: Getting tested
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-misc:
+  nl: Overig
+  fy: 
+  en: Miscellaneous
   ar: 
   bg: 
   de: 
@@ -519,7 +611,7 @@ layout-template-faq:
   tr: Sık sorulan sorulara dön
   
 layout-faq-btn:
-  nl: Bekijk alle meestgestelde vragen
+  nl: Bekijk alle vragen
   fy: Besjoch alle faakstelde fragen (Nederlânsk)
   en: All frequently asked questions
   ar: جميع الأسئلة المتكررة (الانجليزية)
@@ -567,9 +659,6 @@ coronacheck-lead-title:
   pl: Pobierz aplikację CoronaCheck
   ro: Descărcați aplicația CoronaCheck
   tr: CoronaCheck uygulamasını indirin
-  
-coronacheck-announcement: |
-  Geen meldingen
 
 # info-caveat-fy: |
 #  De app wurket yn it Frysk allinne op Android tastellen dy’t Frysk as systeemtaal stypje. Do kinst Frysk as taal foar dy tastellen yn de ynstellingen fan Android ynstelle. iPhones stypje Frysk as systeemtaal spitigernôch net. Yn de oare talen kin yn de Appstore hjir de app wol delhelle wurde.
@@ -577,7 +666,7 @@ coronacheck-announcement: |
 # info-caveat-letop-fy: 'Tink derom:'
 
 scanner-lead: 
-  nl: "Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde sociale, culturele of sportieve activiteiten. Maar alleen als uit de coronatest blijkt dat zij geen corona hebben. Kijk op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen?utm_campaign=coronavirus&utm_source=coronacheck.nl/nl/scanner' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid</a> om te zien welke pilots er in april worden gedaan met testen voor toegang."
+  nl: "Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde sociale, culturele of sportieve locaties. Maar alleen als uit de coronatest blijkt dat zij geen corona hebben. Kijk op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid</a> om te zien welke pilots er in april worden gedaan met testen voor toegang."
   fy: 
   en: 
   ar: 
@@ -602,10 +691,6 @@ scanner-lead-title:
   ro: Descărcați aplicația CoronaCheck Scanner
   tr: CoronaCheck Scanner uygulamasını indirin
   
-
-scanner-announcement: |
-  Geen meldingen
-
 coronacheck-app-store-url:
   nl: https://apps.apple.com/nl/app/coronacheck/id1548269870
   fy: 
@@ -746,17 +831,17 @@ footer-phone-opening-hours:
   tr: "Pazartesi - Pazar 08:00 - 20:00 "
   
 footer-phone-mail: 
-  nl: "Of stuur een e-mail naar: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  fy: "Of stjoer in e-mail nei: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  en: "Or send an e-mail to: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  ar: "أو ارسل بريدًا الكترونيًا إلى: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  bg: "Или изпрати имейл на <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  de: "Oder schicken Sie eine E-Mail an: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  es: "O envía un correo a: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  fr: "Ou envoyez un courriel à : <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  pl: "Lub wyślij wiadomość e-mail na adres: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  ro: "Sau trimiteți un mesaj prin email la: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
-  tr: "Veya şu adrese bir e-posta gönderin: <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>"
+  nl: "Of stuur een e-mail naar:"
+  fy: "Of stjoer in e-mail nei:"
+  en: "Or send an e-mail to:"
+  ar: "أو ارسل بريدًا الكترونيًا إلى:"
+  bg: "Или изпрати имейл на"
+  de: "Oder schicken Sie eine E-Mail an:"
+  es: "O envía un correo a:"
+  fr: "Ou envoyez un courriel à :"
+  pl: "Lub wyślij wiadomość e-mail na adres:"
+  ro: "Sau trimiteți un mesaj prin email la:"
+  tr: "Veya şu adrese bir e-posta gönderin:"
     
 footer-colophon: 
   nl: Colofon
@@ -835,6 +920,19 @@ footer-misc-title:
   pl: O CoronaCheck
   ro: Despre CoronaCheck
   tr: CoronaCheck hakkında
+
+footer-misc-title-scanner:
+  nl: Over CoronaCheck Scanner
+  fy: Oer CoronaCheck
+  en: About CoronaCheck
+  ar: حول CoronaCheck
+  bg: За CoronaCheck
+  de: Über CoronaCheck
+  es: Sobre CoronaCheck
+  fr: À propos de CoronaCheck
+  pl: O CoronaCheck
+  ro: Despre CoronaCheck
+  tr: CoronaCheck hakkında
   
 footer-contact-title:
   nl: Contact
@@ -848,6 +946,8 @@ footer-contact-title:
   pl: Kontakt
   ro: Contact
   tr: İletişim
+
+
     
 footer-logos-minvws-url: https://minvws.nl/
 footer-logos-minvws-img-alt: 
@@ -894,10 +994,26 @@ footer-logos-ggd-img-alt:
   tr: GGD Hollanda logosu
   
 footer-misc-privacy-url: privacy
+
 footer-misc-privacy:
   nl: Privacy
   fy: Privacyferklearring
   en: Privacy
+  ar: الخصوصية
+  bg: Защита на личните данни
+  de: Datenschutz
+  es: Privacidad
+  fr: Confidentialité
+  pl: Prywatność
+  ro: Confidențialitate
+  tr: Gizlilik
+
+footer-misc-terms-of-service-url: gebruikersvoorwaarden
+
+footer-misc-terms-of-service:
+  nl: Gebruikersvoorwaarden
+  fy: 
+  en: Terms of Service
   ar: الخصوصية
   bg: Защита на личните данни
   de: Datenschutz
@@ -1125,7 +1241,7 @@ information-title:
   tr: 'Verilerinizi şu şekilde ele alıyoruz:'
   
 information-qrcode:
-  nl: In de QR-code staat alleen wanneer je negatief getest bent.
+  nl: In de QR-code staan minimale persoonsgegevens
   fy: 
   en: Your QR code only says when you tested negative.
   ar: 
@@ -1138,7 +1254,7 @@ information-qrcode:
   tr: 
     
 information-naw:
-  nl: Jouw gegevens worden nergens centraal opgeslagen.
+  nl: Jouw gegevens worden nergens centraal opgeslagen
   fy: 
   en: Your data is not centrally stored anywhere.
   ar: 
@@ -1151,7 +1267,7 @@ information-naw:
   tr: 
   
 information-gps:
-  nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard.
+  nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard
   fy: 
   en: Your GPS or location data are not used or saved.
   ar: 
@@ -1165,7 +1281,7 @@ information-gps:
 
 
 scanner-information-title:
-  nl: 'Privacy is altijd beschermd:'
+  nl: Voorwaarden voor gebruik
   fy: 
   en: 
   ar: 
@@ -1178,7 +1294,7 @@ scanner-information-title:
   tr: 
 
 scanner-information-qrcode:
-  nl: In de QR-code staat alleen wanneer de bezoeker negatief getest is.
+  nl: In de QR-code staan minimale gegevens van de bezoeker
   fy: 
   en: 
   ar: 
@@ -1191,7 +1307,7 @@ scanner-information-qrcode:
   tr: 
     
 scanner-information-naw:
-  nl: De gegevens van de bezoeker worden nergens centraal opgeslagen.
+  nl: Deze gegevens mag je alleen gebruiken voor controle van het testbewijs
   fy: 
   en: 
   ar: 
@@ -1204,7 +1320,7 @@ scanner-information-naw:
   tr: 
   
 scanner-information-gps:
-  nl: GPS- of locatiegegevens van de bezoeker worden niet gebruikt of bewaard.
+  nl: Gegevens van de bezoeker worden nergens centraal opgeslagen
   fy: 
   en: 
   ar: 
@@ -1391,4 +1507,43 @@ home-video-content_md:
   nl: Bekijk in 2 minuten wat CoronaCheck is, wat CoronaCheck doet en waarom de app belangrijk is.
   fy: Besjoch yn 2 minuten wat CoronaCheck is, wat CoronaCheck docht en wêrom’t de app wichtich is. (Nederlânsk)
   en: Find out in two-minutes what CoronaCheck is, what it does and what it can mean for you!
-  
+
+user-instructions-title:
+  nl: Hoe werkt het?
+  fy: 
+  en: How does it work?
+
+scanner-instructions-title:
+  nl: Hoe werkt het scannen?
+  fy: 
+  en: How does it work?
+
+print-version-title:
+  nl: Liever een papieren testbewijs?
+  fy: 
+  en: 
+
+print-version-content:
+  nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq#testbewijs-op-papier">Lees hier meer</a>.
+  fy: 
+  en: 
+
+print-version-url: 
+  nl: /print
+  fy: 
+  en: 
+
+print-version-url-link: 
+  nl: Maak papieren testbewijs
+  fy: 
+  en: 
+
+about-coronacheck-title:
+  nl: Over CoronaCheck
+  fy: Oer CoronaCheck
+  en: About CoronaCheck
+
+about-coronacheck-content:
+  nl: <p>Met behulp van een testbewijs via de CoronaCheck-app of op papier toon je aan dat je kortgeleden negatief getest bent op corona. Zo kan Nederland meer buiten de deur doen.</p>
+  fy: 
+  en: 
