@@ -82,7 +82,7 @@ export default {
         <button
             @click="submit()"
             type="button"
-            class="button-standard">
+            class="btn">
             {{$t('next')}}
         </button>
     </div>

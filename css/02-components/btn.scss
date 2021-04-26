@@ -8,6 +8,8 @@
   border: 1px solid currentColor;
   color: white;
   border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
+  font-size: inherit;
+  font-family: inherit;
 
   @media (min-width: 740px) {
     padding: 10px 35px;

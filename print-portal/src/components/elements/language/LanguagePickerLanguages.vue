@@ -24,11 +24,12 @@ export default {
 <template>
     <div
         v-click-outside="close"
-        class="LanguagePickerLanguages">
-        <div class="LanguagePickerLanguages__head">
-            {{$t('changeLanguage')}}
-        </div>
-        <ul>
+        id="language-dropdown"
+        class="language-picker__dropdown">
+        <span class="language-picker__title">
+            {{$t('changeLanguage')}}:
+        </span>
+        <ul class="language-picker__languages">
             <LanguagePicerkLanguage
                 v-for="(language, index) in languages"
                 :key="index"
@@ -36,29 +37,3 @@ export default {
         </ul>
     </div>
 </template>
-
-<style lang="scss">
-.LanguagePickerLanguages {
-    position: absolute;
-    background: #fff;
-    top: -10px;
-    right: -5px;
-    opacity: 1;
-    // transition: opacity var(--transition-in), transform var(--transition-in);
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 12px 0;
-    min-width: 232px;
-    z-index: 1;
-    color: #090c0e;
-
-    .LanguagePickerLanguages__head {
-        padding: 0 18px;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-}
-</style>

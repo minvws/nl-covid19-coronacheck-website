@@ -109,7 +109,7 @@ export default {
                             <button
                                 @click="createTestCertificate()"
                                 type="button"
-                                class="button-standard">
+                                class="btn">
                                 {{$t('createTestProof')}}
                             </button>
                             <div class="button__help-button">
@@ -134,7 +134,7 @@ export default {
                             <button
                                 @click="goBack()"
                                 type="button"
-                                class="button-standard">
+                                class="btn">
                                 {{$t('goBackToStart')}}
                             </button>
                         </div>

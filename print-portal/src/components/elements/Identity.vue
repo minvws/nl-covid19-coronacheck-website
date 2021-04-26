@@ -17,14 +17,15 @@ export default {
 
 <template>
     <div class="Identity">
-        <a
-            href="https://coronacheck.nl/"
-            class="logo-nederland">
-            <img
-                alt="Label Rijksoverheid"
-                width="45"
-                src="assets/img/rijksoverheid/label_ministerie.svg"/>
-        </a>
+        <div class="logo">
+            <a href="https://coronacheck.nl/">
+                <img
+                    alt="Label Rijksoverheid"
+                    width="45"
+                    src="assets/img/rijksoverheid/label_ministerie.svg"/>
+            </a>
+        </div>
+
         <div class="pagewrap">
             <img
                 class="Identity__image"
@@ -37,15 +38,13 @@ export default {
             class="CoronaCheck-logo">
             CoronaCheck
         </a>
-        <div class="Identity__tools">
-            <a
-                href="https://coronacheck.nl/nl/faq"
-                class="Identity__faq">
-                {{$t('faq')}}
-            </a>
-            <LanguagePicker
-                v-if="hasLanguages"/>
-        </div>
+        <a
+            href="https://coronacheck.nl/nl/faq"
+            class="Identity__faq">
+            {{$t('faq')}}
+        </a>
+        <LanguagePicker
+            v-if="hasLanguages"/>
     </div>
 </template>
 
@@ -59,17 +58,17 @@ export default {
     display: flex;
     align-items: flex-end;
 
-    .logo-nederland {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
-    }
-
     .Identity__image {
         display: block;
         height: auto;
         margin-left: 60px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
     }
 
     .CoronaCheck-logo {
@@ -84,26 +83,6 @@ export default {
 
         &:hover {
             text-decoration: underline;
-        }
-    }
-
-    .Identity__tools {
-        position: absolute;
-        right: 30px;
-        top: 30px;
-        display: flex;
-        align-items: center;
-
-        .Identity__faq {
-            color: $color-overheid-1;
-            font-weight: 700;
-            font-size: 20px;
-            text-decoration: none;
-            margin-right: 24px;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
     }
 
@@ -123,19 +102,6 @@ export default {
 
             .Identity__faq {
                 display: none;
-            }
-        }
-    }
-}
-
-.direction-rtl {
-
-    .Identity {
-
-        .Identity__tools {
-
-            .Identity__faq {
-                margin: 0 0 0 24px;
             }
         }
     }

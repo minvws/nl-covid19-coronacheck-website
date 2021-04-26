@@ -26,41 +26,18 @@ export default {
 
 <template>
     <li
-        :class="{ 'LanguagePicerkLanguage--current': isCurrent }"
-        class="LanguagePicerkLanguage">
+        class="language-picker__language">
+        <span v-if="isCurrent">
+            {{language.name}} ({{translate('currentLanguage')}})
+        </span>
         <button
+            v-else
             @click="select()"
-            :hreflang="language.locale"
+            class="language-picker__link"
+            hreflang="language.locale"
             :lang="language.locale"
             type="button">
             {{language.name}}
-            <span v-if="isCurrent">
-            ({{$t('currentLanguage')}})
-        </span>
         </button>
     </li>
 </template>
-
-<style lang="scss">
-.LanguagePicerkLanguage {
-    margin: 0;
-
-    button {
-        font-size: inherit;
-        color: #154273;
-        white-space: nowrap;
-        width: 100%;
-        padding: 6px 18px;
-        text-align: left;
-    }
-
-    &.LanguagePicerkLanguage--current {
-
-        button {
-            color: #333;
-            font-weight: bold;
-        }
-
-    }
-}
-</style>

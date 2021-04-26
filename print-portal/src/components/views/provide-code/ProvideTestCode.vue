@@ -61,9 +61,9 @@ export default {
             v-if="!verificationNeeded"
             @click="submit()"
             type="button"
-            :disabled="!hasGivenConsent"
-            :class="{'button--inactive': !hasGivenConsent}"
-            class="button-standard">
+            :disabled="(!isTestCodeValid || !hasGivenConsent)"
+            :class="{'button--inactive': (!isTestCodeValid || !hasGivenConsent)}"
+            class="btn">
             {{$t('next')}}
         </button>
     </div>

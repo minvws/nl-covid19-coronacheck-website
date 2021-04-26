@@ -30,7 +30,7 @@ export default {
                             @click="goBack()"
                             :to="{ name: 'ProvideCode' }"
                             type="button"
-                            class="button-standard">
+                            class="btn">
                             {{$t('back')}}
                         </button>
                     </div>
