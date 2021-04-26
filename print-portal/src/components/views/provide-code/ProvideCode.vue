@@ -21,7 +21,8 @@ export default {
             },
             verificationCodeStatus: {
                 error: ''
-            }
+            },
+            timer: null
         }
     },
     computed: {
@@ -34,6 +35,47 @@ export default {
         verificationNeeded() {
             return this.$store.state.verificationNeeded;
         },
+        testResultStatus() {
+            return this.$store.state.testResultStatus;
+        },
+        token() {
+            return this.numberOfHyphens > 0 ? this.testCode.split('-')[1] : null;
+        },
+        // checks
+        isTestCodeValid() {
+            return this.checkIfHasTwoHyphens &&
+                this.checkPrefixLength &&
+                this.checkIfHasTestProvider &&
+                this.checkSuffixLength &&
+                this.checkCheckSumIsValid;
+        },
+        isVerificationCodeValid() {
+             return this.checkIfIsCorrectLength && this.checkIfIsOnlyNumber;
+        },
+        checkIfHasTwoHyphens() {
+            return this.numberOfHyphens === 2;
+        },
+        checkPrefixLength() {
+            return this.testProviderIdentifier.length === 3;
+        },
+        checkIfHasTestProvider() {
+            return this.testProvider !== null && this.testProvider !== undefined;
+        },
+        checkSuffixLength() {
+            return this.checksumSet.length === 2;
+        },
+        checkCheckSumIsValid() {
+            // return this.checkSum ? (this.luhn === this.checkSum) : false;
+            return true;
+        },
+        checkIfIsCorrectLength() {
+            return this.verificationCode.length >= 5;
+        },
+        checkIfIsOnlyNumber() {
+            const pattern = /^\d+$/;
+            return pattern.test(this.verificationCode);
+        },
+        // check helpers
         numberOfHyphens() {
             return (this.testCode.match(/-/g) || []).length;
         },
@@ -47,9 +89,6 @@ export default {
                 return null;
             }
         },
-        token() {
-            return this.numberOfHyphens > 0 ? this.testCode.split('-')[1] : null;
-        },
         checksumSet() {
             return this.numberOfHyphens > 1 ? this.testCode.split('-')[2] : null;
         },
@@ -58,23 +97,48 @@ export default {
         },
         luhn() {
             return luhnModN.generateCheckCharacter(this.token.toUpperCase());
-        },
-        checkSumIsValid() {
-            // return this.checkSum ? (this.luhn === this.checkSum) : false;
-            return true;
-        },
-        testResultStatus() {
-            return this.$store.state.testResultStatus;
-        },
-        isTestCodeValid() {
-            return this.numberOfHyphens === 2 &&
-                this.testProviderIdentifier.length === 3 &&
-                (this.testProvider !== null && this.testProvider !== undefined) &&
-                this.checksumSet.length === 2 &&
-                this.checkSumIsValid;
         }
     },
     methods: {
+        submitTestCode() {
+            if (this.isTestCodeValid) {
+                this.getSignedResult({ includeVerificationCode: false });
+            } else {
+                this.feedbackClientSideTestCode();
+            }
+        },
+        submitVerificationCode(options) {
+            if (this.isVerificationCodeValid) {
+                this.getSignedResult({ includeVerificationCode: true });
+            } else {
+                this.feedbackClientSideVerficationCode();
+            }
+        },
+        feedbackClientSideTestCode() {
+            let error;
+            if (!this.checkIfHasTwoHyphens){
+                error = this.translate('errorNumberOfHyphens');
+            } else if (!this.checkPrefixLength) {
+                error = this.translate('errorPrefixLength');
+            } else if (!this.checkIfHasTestProvider) {
+                error = this.translate('errorHasTestProvider');
+            } else if (!this.checkSuffixLength) {
+                error = this.translate('errorSuffixLength');
+            } else if (!this.checkCheckSumIsValid) {
+                // this check is currently disabled
+                error = this.translate('errorCheckSumIsValid');
+            }
+            this.testCodeStatus.error = error;
+        },
+        feedbackClientSideVerficationCode() {
+            let error;
+            if (!this.checkIfIsCorrectLength){
+                error = this.translate('errorVerificationCodeLength');
+            } else if (!this.checkIfIsOnlyNumber) {
+                error = this.translate('errorVerificationOnlyNumber');
+            }
+            this.verificationCodeStatus.error = error;
+        },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {
                 let responseForSignedResult, data;
@@ -151,6 +215,9 @@ export default {
             })
         },
         setTimerForValidityTestResult(testResult) {
+            if (this.timer) {
+                clearTimeout(this.timer);
+            }
             this.$axios({
                 method: 'get',
                 url: '/holder/config'
@@ -160,7 +227,7 @@ export default {
                 const maxValidity = this.$store.state.holderConfig.maxValidityHours;
                 const invalidAt = dateTool.addHoursToDate(dateSample, maxValidity, false);
                 const timeToInvalidation = invalidAt.getTime() - new Date(dateNow).getTime();
-                setTimeout(() => {
+                this.timer = setTimeout(() => {
                     this.$store.commit('invalidate');
                     this.$store.commit('modal/set', {
                         messageHead: this.translate('expiredTestCodeHead'),
@@ -173,7 +240,6 @@ export default {
                 console.log(error);
             })
         },
-        // todo please pay extra attention to this code while reviewing
         handle401(response) {
             if (response.data && response.data.payload) {
                 const payload = JSON.parse(atob(response.data.payload));
@@ -191,9 +257,6 @@ export default {
         }
     }
 }
-
-/* eslint-enable */
-
 </script>
 
 <template>
@@ -214,14 +277,14 @@ export default {
                         v-on:submit.prevent
                         autocomplete="off">
                         <ProvideTestCode
+                            @submit="submitTestCode"
                             :test-code-status="testCodeStatus"
-                            :is-test-code-valid="isTestCodeValid"
-                            :get-signed-result="getSignedResult"
                             :verification-needed="verificationNeeded"/>
                         <ProvideVerificationCode
                             v-if="verificationNeeded"
-                            :verification-code-status="verificationCodeStatus"
-                            :get-signed-result="getSignedResult"/>
+                            @submit-test-code="submitTestCode"
+                            @submit-verification-code="submitVerificationCode"
+                            :verification-code-status="verificationCodeStatus"/>
                     </form>
                 </div>
             </div>

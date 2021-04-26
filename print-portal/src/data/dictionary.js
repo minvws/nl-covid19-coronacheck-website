@@ -32,6 +32,27 @@ const dictionary = {
     'enterCode': {
         'nl': 'Testuitslag ophalen'
     },
+    'errorNumberOfHyphens': {
+        'nl': 'todo-transl Er moeten 2 streepjes in je code zitten'
+    },
+    'errorPrefixLength': {
+        'nl': 'todo-transl De prefix moet 3 letters (?) hebben'
+    },
+    'errorHasTestProvider': {
+        'nl': 'todo-transl De prefix klopt niet (geen testprovider gevonden)'
+    },
+    'errorCheckSumIsValid': {
+        'nl': 'todo-transl Je token klopt niet (middelste deel match niet met de checksum)'
+    },
+    'errorSuffixLength': {
+        'nl': 'todo-transl De suffix moet 2 characters hebben'
+    },
+    'errorVerificationCodeLength': {
+        'nl': 'todo-transl je code moet 5 of meer cijfers hebben'
+    },
+    'errorVerificationOnlyNumber': {
+        'nl': 'todo-transl Je code moet alleen cijfers bevatten'
+    },
     'expiredTestCodeHead': {
         'nl': 'Deze code is verlopen'
     },

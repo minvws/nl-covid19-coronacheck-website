@@ -6,10 +6,6 @@ export default {
         verificationCodeStatus: {
             type: Object,
             required: true
-        },
-        getSignedResult: {
-            type: Function,
-            required: true
         }
     },
     computed: {
@@ -21,26 +17,16 @@ export default {
                 const strippedValue = value.replace(/ /g, '');
                 this.$store.commit('updateProperty', { key: 'verificationCode', value: strippedValue })
             }
-        },
-        isVerificationCodeValid() {
-            const pattern = /^\d+$/;
-            return this.verificationCode.length >= 5 && pattern.test(this.verificationCode);
-        },
-        testResultStatus() {
-            return this.$store.state.testResultStatus;
         }
     },
     methods: {
-        sendVerificationCode() {
-            if (this.isVerificationCodeValid) {
-                this.getSignedResult({ includeVerificationCode: true });
-            }
+        submit() {
+            this.$emit('submit-verification-code')
         },
         requestNewVerificationCode() {
             const confirmAction = () => {
-                // false means: do request without the verification code
                 // this will trigger backend to send sms again
-                this.getSignedResult({ includeVerificationCode: false });
+                this.$emit('submit-test-code')
             }
 
             this.$store.commit('modal/set', {
@@ -51,22 +37,6 @@ export default {
                 confirmYes: this.translate('sendCode'),
                 confirmNo: this.translate('close'),
                 closeButton: false
-            })
-        },
-        async getTestResults() {
-            return new Promise((resolve, reject) => {
-                // just resolve for now
-                setTimeout(() => {
-                    const set = [
-                        {
-                            id: 1,
-                            status: 'negative',
-                            date: '2021-03-06 11:00',
-                            properties: ' G W 01 FEB'
-                        }
-                    ];
-                    resolve(set);
-                }, 500)
             })
         }
     }
@@ -106,15 +76,12 @@ export default {
                     <span v-else>
                         {{translate('didNotGetCode')}}
                     </span>
-
                 </button>
             </div>
         </div>
         <button
-            @click="sendVerificationCode()"
+            @click="submit()"
             type="button"
-            :disabled="!isVerificationCodeValid"
-            :class="{'button--inactive': !isVerificationCodeValid}"
             class="button-standard">
             {{translate('next')}}
         </button>
