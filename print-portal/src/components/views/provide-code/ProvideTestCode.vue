@@ -40,7 +40,8 @@ export default {
                 // editing the test code should reset the process
                 this.resetProcess();
                 const strippedValue = value.replace(/ /g, '');
-                this.$store.commit('updateProperty', { key: 'testCode', value: strippedValue })
+                const toUpperCase = strippedValue.toUpperCase();
+                this.$store.commit('updateProperty', { key: 'testCode', value: toUpperCase })
             }
         }
     },
@@ -68,7 +69,6 @@ export default {
                 v-on:keyup.enter="sendTestCode"
                 id="input--testCode"
                 type="text"
-                class="input--capitals"
                 :placeholder="translate('forInstanceAbbr') + ' BRB-YYYYYYYYY1-Z2'"/>
             <div
                 v-if="testCodeStatus.error.length > 0"
