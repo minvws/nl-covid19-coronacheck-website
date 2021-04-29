@@ -4,7 +4,6 @@ import Home from '@/components/views/home/Home.vue'
 import ProvideCode from '@/components/views/provide-code/ProvideCode.vue'
 import YourTestResults from '@/components/views/your-test-results/YourTestResults';
 import Print from '@/components/views/print/Print';
-import HelpTestResult from '@/components/views/help-pages/HelpTestResult';
 import TestResultPending from '@/components/views/your-test-results/TestResultPending';
 
 Vue.use(VueRouter)
@@ -26,10 +25,6 @@ const routes = [
         path: '/print-qr',
         name: 'Print',
         component: Print
-    }, {
-        path: '/wat-betekent-je-testresultaat',
-        name: 'HelpTestResult',
-        component: HelpTestResult
     }, {
         path: '/testresultaat-nog-niet-bekend',
         name: 'TestResultPending',

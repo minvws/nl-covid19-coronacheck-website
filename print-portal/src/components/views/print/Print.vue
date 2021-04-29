@@ -85,7 +85,7 @@ export default {
             this.$router.push({ name: 'YourTestResult' });
         },
         goHome() {
-            this.$router.push({ name: 'ProvideCode' });
+            this.$router.push({ name: 'Home' });
         },
         createDocument() {
             this.generateQRCode().then(async (urlQR) => {

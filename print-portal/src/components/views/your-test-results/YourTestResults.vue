@@ -15,6 +15,15 @@ export default {
         },
         hasQR() {
             return this.$store.state.qrCode.length > 0;
+        },
+        holderContent() {
+            const holder = this.testResult.holder;
+            return {
+                firstNameInitial: holder.firstNameInitial,
+                lastNameInitial: holder.lastNameInitial,
+                birthDayStyled: holder.birthDayStyled,
+                birthDayMonthStyled: holder.birthDayMonthStyled
+            }
         }
     },
     methods: {
@@ -51,6 +60,20 @@ export default {
         },
         goBack() {
             this.$router.push({ name: 'Home' });
+        },
+        openModalTestResultsAbout() {
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.testResultAbout.head'),
+                messageBody: this.$t('message.info.testResultAbout.body', this.holderContent),
+                closeButton: true
+            })
+        },
+        openModalTestResultsSomethingWrong() {
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.testResultSomethingWrong.head'),
+                messageBody: this.$t('message.info.testResultSomethingWrong.body', this.holderContent),
+                closeButton: true
+            })
         }
     }
 }
@@ -71,12 +94,12 @@ export default {
                         <div v-html="$t('yourNegativeTestresultDirection')"/>
                         <div class="YourTestResults__header">
                             {{$t('retrievedTestResult')}}
-                            <router-link
-                                :to="{ name: 'HelpTestResult', hash: '#HolderIdentityCharacters' }"
+                            <button
+                                @click="openModalTestResultsAbout()"
                                 type="button"
                                 class="info-button">
                                 <img src="assets/img/icons/info.svg" alt=""/>
-                            </router-link>
+                            </button>
                         </div>
                         <div class="YourTestResults__results">
                             <TestResult
@@ -90,12 +113,12 @@ export default {
                                 {{$t('createTestProof')}}
                             </button>
                             <div class="button__help-button">
-                                <router-link
-                                    :to="{ name: 'HelpTestResult' }"
+                                <button
+                                    @click="openModalTestResultsSomethingWrong()"
                                     type="button"
                                     class="button-modest">
                                     {{$t('somethingIsWrong')}}
-                                </router-link>
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,20 @@
+import messageInfoTestResultAbout from './templates/message-info-testResultAbout'
+
 const dictionary = {
     'nl': {
-        'aboutTestResult': 'Over de testuitslag',
-        'aboutTestResultDirection': '<p>In een testuitslag staan de uitslag, het tijdstip van de test en minimale gegevens van jou.</p><p>Je gegevens bestaan uit: (1) de eerste letter van je voornaam, (2) de eerste letter van je achternaam, (3) je geboortedag en (4) geboortemaand.</p>',
+        'message': {
+            'info': {
+                'testResultAbout': {
+                    'head': 'Over de testuitslag',
+                    'body': messageInfoTestResultAbout
+                },
+                'testResultSomethingWrong': {
+                    'head': 'Kloppen de gegevens niet?',
+                    'body': messageInfoTestResultAbout
+                }
+            },
+            'error': {}
+        },
         'back': 'Terug',
         'changeLanguage': 'Wissel van taal',
         'close': 'Sluiten',
