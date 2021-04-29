@@ -42,7 +42,7 @@ const dictionary = {
         'resultPositive': 'Positieve testuitslag',
         'resultPending': 'Testuitslag nog niet bekend',
         'resultPendingDirection': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.',
-        'somethingIsWrong': 'Er klopt iets niet',
+        'somethingIsWrong': 'Klopt er iets niet?',
         'openPDF': 'Open PDF',
         'userConsentText': 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank">privacyverklaring</a> gelezen en geef toestemming voor het verwerken van mijn persoonsgegevens.',
         'verificationCode': 'Verificatiecode',

@@ -50,7 +50,7 @@ export default {
             }
         },
         goBack() {
-            this.$router.push({ name: 'ProvideCode' });
+            this.$router.push({ name: 'Home' });
         }
     }
 }
@@ -81,12 +81,6 @@ export default {
                         <div class="YourTestResults__results">
                             <TestResult
                                 :testResult="testResult"/>
-                            <router-link
-                                :to="{ name: 'HelpTestResult' }"
-                                type="button"
-                                class="button-modest">
-                                {{$t('somethingIsWrong')}}
-                            </router-link>
                         </div>
                         <div class="section-block__footer">
                             <button
@@ -95,6 +89,14 @@ export default {
                                 class="button-standard">
                                 {{$t('createTestProof')}}
                             </button>
+                            <div class="button__help-button">
+                                <router-link
+                                    :to="{ name: 'HelpTestResult' }"
+                                    type="button"
+                                    class="button-modest">
+                                    {{$t('somethingIsWrong')}}
+                                </router-link>
+                            </div>
                         </div>
                     </div>
 
