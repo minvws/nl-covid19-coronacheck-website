@@ -5,6 +5,7 @@ import ProvideCode from '@/components/views/provide-code/ProvideCode.vue'
 import YourTestResults from '@/components/views/your-test-results/YourTestResults';
 import Print from '@/components/views/print/Print';
 import TestResultPending from '@/components/views/your-test-results/TestResultPending';
+import store from '@/store'
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,15 @@ const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
     routes
+})
+
+router.beforeEach((to, from, next) => {
+    // check for user consent, otherwise redirect to home
+    if (to.name !== 'Home' && !store.state.userConsent) {
+        next({ name: 'Home' })
+    } else {
+        next();
+    }
 })
 
 export default router
