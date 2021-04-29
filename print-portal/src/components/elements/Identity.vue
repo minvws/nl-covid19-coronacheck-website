@@ -63,7 +63,7 @@ export default {
         position: absolute;
         left: 50%;
         top: 0;
-        transform: translate(-50%);
+        transform: translateX(-50%);
     }
 
     .Identity__image {
