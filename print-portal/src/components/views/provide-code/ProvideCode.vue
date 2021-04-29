@@ -129,19 +129,19 @@ export default {
                             this.$store.commit('setVerificationNeeded', true);
                             this.testCodeStatus.error = '';
                             if (options.includeVerificationCode) {
-                                this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
+                                this.verificationCodeStatus.error = this.$t('invalidVerificationCode');
                             }
                         } else {
                             this.$store.commit('setVerificationNeeded', false);
                         }
 
                         if (this.testResultStatus === 'invalid_token') {
-                            this.testCodeStatus.error = this.translate('invalidTestCode');
+                            this.testCodeStatus.error = this.$t('invalidTestCode');
                         }
                     } else {
                         this.$store.commit('modal/set', {
-                            messageHead: this.translate('generalError'),
-                            messageBody: (this.translate('generalErrorBody') + '<p>' + error + '</p>'),
+                            messageHead: this.$t('generalError'),
+                            messageBody: (this.$t('generalErrorBody') + '<p>' + error + '</p>'),
                             closeButton: true
                         });
                     }
@@ -161,8 +161,8 @@ export default {
                 setTimeout(() => {
                     this.$store.commit('invalidate');
                     this.$store.commit('modal/set', {
-                        messageHead: this.translate('expiredTestCodeHead'),
-                        messageBody: this.translate('expiredTestCodeBody'),
+                        messageHead: this.$t('expiredTestCodeHead'),
+                        messageBody: this.$t('expiredTestCodeBody'),
                         closeButton: true
                     });
                     this.$router.push({ name: 'ProvideCode' });
@@ -200,10 +200,10 @@ export default {
             <div class="section">
                 <div class="section-block">
                     <h2>
-                        {{translate('enterCode')}}
+                        {{$t('enterCode')}}
                     </h2>
                     <p>
-                        {{translate('testCodeDirection')}}
+                        {{$t('testCodeDirection')}}
                     </p>
 
                     <form

@@ -35,16 +35,16 @@ export default {
                         }
                     }).catch((error) => {
                         this.$store.commit('modal/set', {
-                            messageHead: this.translate('generalError'),
-                            messageBody: this.translate('generalErrorBody') + '<p>' + error + '</p>',
+                            messageHead: this.$t('generalError'),
+                            messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
                             closeButton: true
                         });
                     })
                 }
             } else {
                 this.$store.commit('modal/set', {
-                    messageHead: this.translate('generalError'),
-                    messageBody: this.translate('generalErrorBody'),
+                    messageHead: this.$t('generalError'),
+                    messageBody: this.$t('generalErrorBody'),
                     closeButton: true
                 });
             }
@@ -66,11 +66,11 @@ export default {
                 <div class="section-block">
                     <div v-if="testResult">
                         <h2>
-                            {{translate('yourNegativeTestresult')}}
+                            {{$t('yourNegativeTestresult')}}
                         </h2>
-                        <div v-html="translate('yourNegativeTestresultDirection')"/>
+                        <div v-html="$t('yourNegativeTestresultDirection')"/>
                         <div class="YourTestResults__header">
-                            {{translate('retrievedTestResult')}}
+                            {{$t('retrievedTestResult')}}
                             <router-link
                                 :to="{ name: 'HelpTestResult', hash: '#HolderIdentityCharacters' }"
                                 type="button"
@@ -85,7 +85,7 @@ export default {
                                 :to="{ name: 'HelpTestResult' }"
                                 type="button"
                                 class="button-modest">
-                                {{translate('somethingIsWrong')}}
+                                {{$t('somethingIsWrong')}}
                             </router-link>
                         </div>
                         <div class="section-block__footer">
@@ -93,24 +93,24 @@ export default {
                                 @click="createTestCertificate()"
                                 type="button"
                                 class="button-standard">
-                                {{translate('createTestProof')}}
+                                {{$t('createTestProof')}}
                             </button>
                         </div>
                     </div>
 
                     <div v-else>
                         <h2>
-                            {{translate('noTestResultPresent')}}
+                            {{$t('noTestResultPresent')}}
                         </h2>
                         <p>
-                            {{translate('noTestResultPresentDirection')}}
+                            {{$t('noTestResultPresentDirection')}}
                         </p>
                         <div class="section-block__footer">
                             <button
                                 @click="goBack()"
                                 type="button"
                                 class="button-standard">
-                                {{translate('goBackToStart')}}
+                                {{$t('goBackToStart')}}
                             </button>
                         </div>
                     </div>

@@ -26,7 +26,7 @@ export default {
         v-click-outside="close"
         class="LanguagePickerLanguages">
         <div class="LanguagePickerLanguages__head">
-            {{translate('changeLanguage')}}
+            {{$t('changeLanguage')}}
         </div>
         <ul>
             <LanguagePicerkLanguage

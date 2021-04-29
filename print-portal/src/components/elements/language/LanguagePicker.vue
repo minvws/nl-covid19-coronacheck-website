@@ -45,7 +45,7 @@ export default {
             :aria-expanded="isOpen"
             class="LanguagePicker__current">
             <div class="LanguagePicker__label">
-                {{translate('language')}}:
+                {{$t('language')}}:
                 <strong>{{currentLanguage.name}}</strong>
             </div>
             <div class="LanguagePicker__chevron"></div>

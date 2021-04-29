@@ -14,7 +14,6 @@ export default {
         init() {
             this.getHolderConfig();
             this.getTestProviders();
-            // todo this should be done based on oneskyapp
             this.addLanguages();
             this.setCurrentLanguage();
         },
@@ -41,15 +40,15 @@ export default {
                     this.$store.commit('testProviders/init', config.corona_test_providers);
                 } else {
                     this.$store.commit('modal/set', {
-                        messageHead: this.translate('generalError'),
-                        messageBody: this.translate('generalErrorBody'),
+                        messageHead: this.$t('generalError'),
+                        messageBody: this.$t('generalErrorBody'),
                         closeButton: true
                     });
                 }
             }).catch((error) => {
                 this.$store.commit('modal/set', {
-                    messageHead: this.translate('generalError'),
-                    messageBody: (this.translate('generalErrorBody') + '<p>' + error + '</p>'),
+                    messageHead: this.$t('generalError'),
+                    messageBody: (this.$t('generalErrorBody') + '<p>' + error + '</p>'),
                     closeButton: true
                 });
             })
@@ -58,18 +57,19 @@ export default {
             this.$store.commit('languages/init', languages);
         },
         setCurrentLanguage() {
-            const routeNameChunks = window.location.href.split('/');
-            if (routeNameChunks.length > 0) {
-                const locale = routeNameChunks[3];
-                const language = this.$store.getters['languages/getItemByProperty']('locale', locale, true);
-                if (language) {
-                    this.$store.commit('languages/setCurrent', language);
-                } else {
-                    this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
-                }
-            } else {
-                this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
-            }
+            this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
+            // const routeNameChunks = window.location.href.split('/');
+            // if (routeNameChunks.length > 0) {
+            //     const locale = routeNameChunks[3];
+            //     const language = this.$store.getters['languages/getItemByProperty']('locale', locale, true);
+            //     if (language) {
+            //         this.$store.commit('languages/setCurrent', language);
+            //     } else {
+            //         this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
+            //     }
+            // } else {
+            //     this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
+            // }
         }
     },
     mounted() {
@@ -81,9 +81,7 @@ export default {
 <template>
     <div
         v-if="dataReady"
-        id="app"
-        :class="{'direction-rtl': currentLanguage.direction === 'rtl' }"
-        :style="{'direction': currentLanguage.direction }">
+        id="app">
         <Identity/>
         <router-view/>
         <Modal/>

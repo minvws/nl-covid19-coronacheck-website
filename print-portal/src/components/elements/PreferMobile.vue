@@ -16,10 +16,10 @@ export default {
         </div>
         <div class="PreferMobile__text">
             <h3>
-                {{translate('preferMobile')}}
+                {{$t('preferMobile')}}
             </h3>
             <p>
-                {{translate('preferMobileDirection')}}
+                {{$t('preferMobileDirection')}}
             </p>
             <div class="PreferMobile__badges">
                 <a

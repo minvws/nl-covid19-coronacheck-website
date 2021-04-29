@@ -35,18 +35,18 @@ export default {
             <div class="section">
                 <div class="section-block">
                     <h2>
-                        {{translate('aboutTestResult')}}
+                        {{$t('aboutTestResult')}}
                     </h2>
-                    <div v-html="translate('aboutTestResultDirection')"/>
+                    <div v-html="$t('aboutTestResultDirection')"/>
 
                     <a name="HolderIdentityCharacters"></a>
                     <HolderIdentityCharacters
                         :holder="holder"/>
                     <h3>
-                        {{translate('yourCredentialsWrong')}}
+                        {{$t('yourCredentialsWrong')}}
                     </h3>
                     <p>
-                        {{translate('yourCredentialsWrongDirection')}}
+                        {{$t('yourCredentialsWrongDirection')}}
                     </p>
                 </div>
             </div>

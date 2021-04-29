@@ -60,14 +60,14 @@ export default {
     <div class="ProvideTestCode">
         <div class="input__set">
             <label for="input--testCode">
-                {{translate('uniqueCode')}}
+                {{$t('uniqueCode')}}
             </label>
             <input
                 v-model="testCode"
                 v-on:keyup.enter="sendTestCode"
                 id="input--testCode"
                 type="text"
-                :placeholder="translate('forInstanceAbbr') + ' BRB-YYYYYYYYY1-Z2'"/>
+                :placeholder="$t('forInstanceAbbr') + ' BRB-YYYYYYYYY1-Z2'"/>
             <div
                 v-if="testCodeStatus.error.length > 0"
                 class="input__error">
@@ -81,7 +81,7 @@ export default {
             :disabled="(!isTestCodeValid || !hasGivenConsent)"
             :class="{'button--inactive': (!isTestCodeValid || !hasGivenConsent)}"
             class="button-standard">
-            {{translate('next')}}
+            {{$t('next')}}
         </button>
     </div>
 </template>

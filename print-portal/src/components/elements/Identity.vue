@@ -41,7 +41,7 @@ export default {
             <a
                 href="https://coronacheck.nl/nl/faq"
                 class="Identity__faq">
-                {{translate('faq')}}
+                {{$t('faq')}}
             </a>
             <LanguagePicker
                 v-if="hasLanguages"/>
@@ -63,7 +63,7 @@ export default {
         position: absolute;
         left: 50%;
         top: 0;
-        transform: translateX(-50%);
+        transform: translate(-50%);
     }
 
     .Identity__image {

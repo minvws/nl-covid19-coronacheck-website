@@ -42,9 +42,9 @@ export default {
             <div class="section">
                 <div class="section-block">
                     <h2>
-                        {{translate('printPortalHomeHeader')}}
+                        {{$t('printPortalHomeHeader')}}
                     </h2>
-                    <div v-html="translate('printPortalHomeBodyText')"/>
+                    <div v-html="$t('printPortalHomeBodyText')"/>
                 </div>
                 <div class="section-block">
                     <UserConsent
@@ -59,7 +59,7 @@ export default {
                         :disabled="!consent"
                         :class="{'button--inactive': !consent}"
                         class="button-standard">
-                        {{translate('next')}}
+                        {{$t('next')}}
                     </button>
                 </div>
             </div>

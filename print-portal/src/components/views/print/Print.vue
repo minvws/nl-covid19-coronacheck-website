@@ -116,12 +116,12 @@ export default {
                 this.$router.push({ name: 'ProvideCode' });
             }
             this.$store.commit('modal/set', {
-                messageHead: this.translate('generalError'),
-                messageBody: this.translate('generalErrorBody'),
+                messageHead: this.$t('generalError'),
+                messageBody: this.$t('generalErrorBody'),
                 confirm: true,
                 confirmAction,
-                confirmYes: this.translate('goBackToStart'),
-                confirmNo: this.translate('close')
+                confirmYes: this.$t('goBackToStart'),
+                confirmNo: this.$t('close')
             });
         },
         async generateQRCode() {
@@ -140,8 +140,8 @@ export default {
                     })
                     .catch(error => {
                         this.$store.commit('modal/set', {
-                            messageHead: this.translate('generalError'),
-                            messageBody: this.translate('generalErrorBody') + '<p>' + error + '</p>',
+                            messageHead: this.$t('generalError'),
+                            messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
                             closeButton: true
                         });
                     })
@@ -333,10 +333,10 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                 <div class="section-block">
                     <div v-if="qrCode.length > 0">
                         <h2>
-                            {{translate('yourTestProof')}}
+                            {{$t('yourTestProof')}}
                         </h2>
                         <p>
-                            {{translate('yourTestProofDirection')}}
+                            {{$t('yourTestProofDirection')}}
                         </p>
                         <div class="Print__container">
                             <div class="Print__buttons">
@@ -348,7 +348,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                                     id="open-pdf"
                                     class="button-standard button--full-width"
                                     @click="openPDF()">
-                                    {{translate('openPDF')}}
+                                    {{$t('openPDF')}}
                                 </button>
                                 <button
                                     type="button"
@@ -357,7 +357,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                                     id="download-pdf"
                                     class="button-standard button--full-width"
                                     @click="downloadPDF()">
-                                    {{translate('downloadPDF')}}
+                                    {{$t('downloadPDF')}}
                                 </button>
                             </div>
                             <div class="Print__image">
@@ -370,17 +370,17 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                     </div>
                     <div v-else>
                         <h2>
-                            {{translate('noTestProofPresent')}}
+                            {{$t('noTestProofPresent')}}
                         </h2>
                         <p>
-                            {{translate('noTestProofPresentDirection')}}
+                            {{$t('noTestProofPresentDirection')}}
                         </p>
                         <div class="section-block__footer">
                             <button
                                 @click="goHome()"
                                 type="button"
                                 class="button-standard">
-                                {{translate('retrieveTestResult')}}
+                                {{$t('retrieveTestResult')}}
                             </button>
                         </div>
                     </div>
