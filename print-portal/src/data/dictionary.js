@@ -108,7 +108,7 @@ const dictionary = {
         'nl': 'Vul de code in die je van je testlocatie hebt gekregen. Of klik op de link in de e-mail die je van je testlocatie hebt ontvangen.'
     },
     'uniqueCode': {
-        'nl': 'Unieke code'
+        'nl': 'Ophaalcode'
     },
     'retrievedTestResult': {
         'nl': 'Opgehaalde testuitslag'
