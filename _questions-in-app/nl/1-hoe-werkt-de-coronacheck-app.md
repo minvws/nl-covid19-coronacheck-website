@@ -16,7 +16,7 @@ featuredHomeIcon: app-touch
 ---
 Als bezoeker doe je eerst een coronatest. Blijkt uit de test dat je geen corona hebt? Dan kun je toegang krijgen tot bepaalde sociale, culturele of sportieve activiteiten. Je kunt jouw testuitslag ophalen in de app. Dat doe je als volgt:
 
-1. Vul in de CoronaCheck-app jouw ophaalcode in. Deze ophaalcode krijg je bij je negatieve testuitslag
+1. Vul in de CoronaCheck-app jouw ophaalcode in. Deze code krijg je bij je negatieve testuitslag
 2. Na controle van de ophaalcode haalt de CoronaCheck-app je testuitslag op
 3. De app maakt van jouw negatieve testuitslag een testbewijs, in de vorm van een QR-code 
 
