@@ -1,5 +1,6 @@
 ---
 layout: faq-scanner-overview
+domain: scanner
 lang: nl
 showBreadCrumbs: true
 showContact: true

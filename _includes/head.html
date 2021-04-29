@@ -23,7 +23,11 @@
 
     {% if include.for == "scanner" %}
         {% comment %}meta tags for the coronacheck scanner landingpage{% endcomment %}
-        <meta name="apple-itunes-app" content="app-id=1549842661">
+        {% if include.in-app And include.in-app != "" And include.in-app != nil %}
+            {% comment %}Don't show quick app download banner{% endcomment %}
+        {% else %}
+            <meta name="apple-itunes-app" content="app-id=1549842661">
+        {% endif %}
         
         <meta property="og:site_name" content="{{ site.data.translations.scanner-social-og-site_name }}">
         <meta property="og:title" content="{% if page.title != '' %}{{ page.title }} - {{ site.data.translations.scanner-social-og-site_name }}{% else %}{{ site.data.translations.scanner-social-og-title[page.lang] }}{% endif %}" />
@@ -38,7 +42,12 @@
         <meta name="twitter:description" content="{{ site.data.translations.scanner-social-og-description[page.lang] }}" />
         <meta name="twitter:image" content="https://coronacheck.nl/img/{{ site.data.translations.scanner-social-og-image-url }}" />
     {% else %}
-        <meta name="apple-itunes-app" content="app-id=1548269870">
+        {% if include.in-app And include.in-app != "" And include.in-app != nil %}
+            {% comment %}Don't show quick app download banner{% endcomment %}
+        {% else %}
+            <meta name="apple-itunes-app" content="app-id=1548269870">
+        {% endif %}
+
 
         <meta name="description" content="{{ site.data.translations.head-social-og-description[page.lang] }}">
         <link rel="alternate" hreflang="nl-NL" href="https://coronacheck.nl" />
