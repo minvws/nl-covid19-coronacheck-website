@@ -99,17 +99,25 @@ export default {
     },
     methods: {
         submitTestCode() {
-            if (this.isTestCodeValid) {
-                this.getSignedResult({ includeVerificationCode: false });
+            if (this.testCode.length > 0) {
+                if (this.isTestCodeValid) {
+                    this.getSignedResult({ includeVerificationCode: false });
+                } else {
+                    this.testCodeStatus.error = this.translate('invalidTestCode');
+                }
             } else {
-                this.testCodeStatus.error = this.translate('invalidTestCode');
+                this.testCodeStatus.error = this.translate('emptyTestCode');
             }
         },
         submitVerificationCode(options) {
-            if (this.isVerificationCodeValid) {
-                this.getSignedResult({ includeVerificationCode: true });
+            if (this.verificationCode.length > 0) {
+                if (this.isVerificationCodeValid) {
+                    this.getSignedResult({ includeVerificationCode: true });
+                } else {
+                    this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
+                }
             } else {
-                this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
+                this.verificationCodeStatus.error = this.translate('emptyVerificationCode');
             }
         },
         async getSignedResult(options) {
