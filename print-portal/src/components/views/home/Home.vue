@@ -1,11 +1,13 @@
 <script>
 import Navigation from '@/components/elements/Navigation';
+import PreferMobile from '@/components/elements/PreferMobile';
 import Footer from '@/components/elements/Footer';
 import UserConsent from './UserConsent';
 
 export default {
     name: 'Home',
     components: {
+        PreferMobile,
         Footer,
         UserConsent,
         Navigation
@@ -61,6 +63,7 @@ export default {
                     </button>
                 </div>
             </div>
+            <PreferMobile/>
         </div>
         <Footer/>
     </div>
