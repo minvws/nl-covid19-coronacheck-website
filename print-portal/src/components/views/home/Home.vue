@@ -15,9 +15,6 @@ export default {
     computed: {
         consent() {
             return this.$store.state.userConsent;
-        },
-        consentLabel() {
-            return 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank">privacyverklaring</a> gelezen en geef toestemming voor het verwerken van mijn persoonsgegevens.';
         }
     },
     methods: {
@@ -50,7 +47,7 @@ export default {
                     <UserConsent
                         :consent="consent"
                         @update="setUserConsent"
-                        :label="consentLabel"/>
+                        :label="$t('userConsentText')"/>
                 </div>
                 <div class="section-block">
                     <button

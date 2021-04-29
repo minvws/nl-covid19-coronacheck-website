@@ -44,6 +44,7 @@ const dictionary = {
         'resultPendingDirection': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.',
         'somethingIsWrong': 'Er klopt iets niet',
         'openPDF': 'Open PDF',
+        'userConsentText': 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank">privacyverklaring</a> gelezen en geef toestemming voor het verwerken van mijn persoonsgegevens.',
         'verificationCode': 'Verificatiecode',
         'verificationCodeDirection': 'Je krijgt een code in een sms of e-mail',
         'yourCredentials': 'Jouw gegevens',
