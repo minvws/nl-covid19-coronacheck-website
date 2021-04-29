@@ -1,5 +1,6 @@
 ---
 layout: in-app-content
+domain: scanner
 lang: nl
 title: Over de CoronaCheck Scanner app
 redirect_from: /over-de-scanner-app-in-app

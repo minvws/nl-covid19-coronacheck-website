@@ -4,8 +4,6 @@
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
 {%- endif -%}
 
-
-
 <!DOCTYPE html>
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
 <!--
@@ -13,7 +11,13 @@
   The code is open source. You are welcome to contribute. Go to git: 
   https://github.com/minvws/nl-covid19-coronacheck-website
 -->
-{% include head.html %}
+
+{% if page.collection == 'questions-scanner-in-app' or page.domain == 'scanner' %}
+  {% include head.html for="scanner" in-app="true" %}
+{% else %}
+  {% include head.html in-app="true" %}
+{% endif %}
+
 <body>
   <main class="content-center content-center__in_app" id="content">
     <div class="content-block">
@@ -122,6 +126,5 @@
     {% endif %}
 
   </main>
-  {% include footer.html %}
 </body>
 </html>
