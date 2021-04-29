@@ -76,7 +76,7 @@ export default {
         browser() {
             return detect();
         },
-        hideOpenButton() {
+        browserIsIE() {
             return this.browser.name === 'ie';
         }
     },
@@ -339,11 +339,14 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                             {{$t('yourTestProofDirection')}}
                         </p>
                         <div class="Print__container">
-                            <div class="Print__buttons">
+                            <div
+                                :class="{'browser-ie': browserIsIE}"
+                                class="Print__buttons">
                                 <button
-                                    v-if="!hideOpenButton"
                                     type="button"
-                                    :class="{'button--inactive': !document }"
+                                    :class="{
+                                        'button--inactive': !document
+                                    }"
                                     :disabled="!document"
                                     id="open-pdf"
                                     class="button-standard button--full-width"
@@ -357,7 +360,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                                     id="download-pdf"
                                     class="button-standard button--full-width"
                                     @click="downloadPDF()">
-                                    {{$t('downloadPDF')}}
+                                    {{$t('openPDF')}}
                                 </button>
                             </div>
                             <div class="Print__image">
@@ -405,6 +408,42 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
 
             button {
                 margin-bottom: $length-s;
+            }
+
+            #open-pdf {
+                display: block;
+
+                // hide the open button on mobile. This sometimes fails and besides that it creates undesirable user experience
+                @include mobile() {
+                    display: none;
+                }
+
+                @include mobile-landscape-X() {
+                    display: none;
+                }
+            }
+
+            #download-pdf {
+                display: none;
+
+                @include mobile() {
+                    display: block;
+                }
+
+                @include mobile-landscape-X() {
+                    display: block;
+                }
+            }
+
+            &.browser-ie {
+
+                #open-pdf {
+                    display: none;
+                }
+
+                #download-pdf {
+                    display: block;
+                }
             }
         }
 
@@ -454,15 +493,12 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
         }
     }
 
-    // hide the open button on mobile. This sometimes fails and besides that it creates undesirable user experience
-    #open-pdf {
+    .Print__container {
+        margin-top: $length-xl;
+        display: flex;
 
-        @include mobile() {
-            display: none;
-        }
+        .Print__buttons {
 
-        @include mobile-landscape-X() {
-            display: none;
         }
     }
 }
