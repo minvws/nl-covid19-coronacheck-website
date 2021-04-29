@@ -102,7 +102,7 @@ export default {
             if (this.isTestCodeValid) {
                 this.getSignedResult({ includeVerificationCode: false });
             } else {
-                this.feedbackClientSideTestCode();
+                this.testCodeStatus.error = this.translate('invalidTestCode');
             }
         },
         submitVerificationCode(options) {
@@ -111,22 +111,6 @@ export default {
             } else {
                 this.feedbackClientSideVerficationCode();
             }
-        },
-        feedbackClientSideTestCode() {
-            let error;
-            if (!this.checkIfHasTwoHyphens) {
-                error = this.translate('errorNumberOfHyphens');
-            } else if (!this.checkPrefixLength) {
-                error = this.translate('errorPrefixLength');
-            } else if (!this.checkIfHasTestProvider) {
-                error = this.translate('errorHasTestProvider');
-            } else if (!this.checkSuffixLength) {
-                error = this.translate('errorSuffixLength');
-            } else if (!this.checkCheckSumIsValid) {
-                // this check is currently disabled
-                error = this.translate('errorCheckSumIsValid');
-            }
-            this.testCodeStatus.error = error;
         },
         feedbackClientSideVerficationCode() {
             let error;
