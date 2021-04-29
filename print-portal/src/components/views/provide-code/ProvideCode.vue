@@ -9,8 +9,6 @@ import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import dateTool from '@/tools/date';
 import Footer from '@/components/elements/Footer';
 
-/* eslint-disable */
-
 export default {
     name: 'ProvideCode',
     components: { Footer, FaqMobileLink, Navigation, ProvideVerificationCode, ProvideTestCode, PreferMobile },
@@ -186,13 +184,11 @@ export default {
                 return 'unknown_error';
             }
         },
-        goHome() {
-            window.location = 'https://coronacheck.nl/nl/';
+        back() {
+            this.$router.push({ name: 'Home' });
         }
     }
 }
-
-/* eslint-enable */
 
 </script>
 
@@ -200,7 +196,7 @@ export default {
     <div class="ProvideCode">
         <div class="pagewrap">
             <Navigation
-                :callback-back="goHome"/>
+                :callback-back="back"/>
             <div class="section">
                 <div class="section-block">
                     <h2>

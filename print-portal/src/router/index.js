@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Home from '@/components/views/home/Home.vue'
 import ProvideCode from '@/components/views/provide-code/ProvideCode.vue'
 import YourTestResults from '@/components/views/your-test-results/YourTestResults';
 import Print from '@/components/views/print/Print';
@@ -11,6 +12,10 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
+        component: Home,
+        name: 'Home'
+    }, {
+        path: '/testuitslag-ophalen',
         component: ProvideCode,
         name: 'ProvideCode'
     }, {

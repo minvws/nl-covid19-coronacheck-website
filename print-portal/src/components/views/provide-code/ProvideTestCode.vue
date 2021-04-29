@@ -1,9 +1,7 @@
 <script>
-import UserConsent from '@/components/elements/UserConsent';
-
 export default {
     name: 'ProvideTestCode',
-    components: { UserConsent },
+    components: { },
     props: {
         testCodeStatus: {
             type: Object,
@@ -76,7 +74,6 @@ export default {
                 {{testCodeStatus.error}}
             </div>
         </div>
-        <UserConsent/>
         <button
             v-if="showButton"
             @click="sendTestCode()"

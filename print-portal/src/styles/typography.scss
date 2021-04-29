@@ -54,6 +54,15 @@ h3 {
     color: $black-1;
 }
 
+h4 {
+    font-family: $font-headers;
+    font-size: 18px;
+    line-height: calc(27/22);
+    margin-top: 0;
+    margin-bottom: $grid-x1;
+    color: $black-1;
+}
+
 @include mobile() {
 
     h2 {
