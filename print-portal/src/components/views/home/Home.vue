@@ -1,10 +1,12 @@
 <script>
 import Navigation from '@/components/elements/Navigation';
+import Footer from '@/components/elements/Footer';
 import UserConsent from './UserConsent';
 
 export default {
     name: 'Home',
     components: {
+        Footer,
         UserConsent,
         Navigation
     },
@@ -60,6 +62,7 @@ export default {
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
 </template>
 
