@@ -109,17 +109,8 @@ export default {
             if (this.isVerificationCodeValid) {
                 this.getSignedResult({ includeVerificationCode: true });
             } else {
-                this.feedbackClientSideVerficationCode();
+                this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
             }
-        },
-        feedbackClientSideVerficationCode() {
-            let error;
-            if (!this.checkIfIsCorrectLength) {
-                error = this.translate('errorVerificationCodeLength');
-            } else if (!this.checkIfIsOnlyNumber) {
-                error = this.translate('errorVerificationOnlyNumber');
-            }
-            this.verificationCodeStatus.error = error;
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {
