@@ -30,12 +30,12 @@ export default {
             }
 
             this.$store.commit('modal/set', {
-                messageHead: this.translate('noVerificationCodeHead'),
-                messageBody: this.translate('noVerificationCodeMessage'),
+                messageHead: this.$t('noVerificationCodeHead'),
+                messageBody: this.$t('noVerificationCodeMessage'),
                 confirm: true,
                 confirmAction,
-                confirmYes: this.translate('sendCode'),
-                confirmNo: this.translate('close'),
+                confirmYes: this.$t('sendCode'),
+                confirmNo: this.$t('close'),
                 closeButton: false
             })
         }
@@ -47,9 +47,9 @@ export default {
     <div class="ProvideVerificationCode">
         <div class="input__set">
             <label for="input--verificationCode">
-                {{translate('verificationCode')}}<br>
+                {{$t('verificationCode')}}<br>
                 <div class="label--side-note">
-                    {{translate('verificationCodeDirection')}}
+                    {{$t('verificationCodeDirection')}}
                 </div>
             </label>
             <input
@@ -59,7 +59,7 @@ export default {
                 type="text"
                 pattern="[0-9]*"
                 inputmode="numeric"
-                :placeholder="translate('forInstanceAbbr') + ' 123456'"/>
+                :placeholder="$t('forInstanceAbbr') + ' 123456'"/>
             <div
                 v-if="verificationCodeStatus.error.length > 0"
                 class="input__error">
@@ -71,10 +71,10 @@ export default {
                     type="button"
                     class="button-modest">
                     <span v-if="verificationCodeStatus.error.length > 0">
-                        {{translate('sendAgain')}}
+                        {{$t('sendAgain')}}
                     </span>
                     <span v-else>
-                        {{translate('didNotGetCode')}}
+                        {{$t('didNotGetCode')}}
                     </span>
                 </button>
             </div>
@@ -83,7 +83,7 @@ export default {
             @click="submit()"
             type="button"
             class="button-standard">
-            {{translate('next')}}
+            {{$t('next')}}
         </button>
     </div>
 </template>

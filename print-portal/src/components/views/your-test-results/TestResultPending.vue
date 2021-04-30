@@ -22,16 +22,16 @@ export default {
             <div class="section">
                 <div class="section-block">
                     <h2>
-                        {{translate('resultPending')}}
+                        {{$t('resultPending')}}
                     </h2>
-                    <div v-html="translate('resultPendingDirection')"/>
+                    <div v-html="$t('resultPendingDirection')"/>
                     <div class="section-block__footer">
                         <button
                             @click="goBack()"
                             :to="{ name: 'ProvideCode' }"
                             type="button"
                             class="button-standard">
-                            {{translate('back')}}
+                            {{$t('back')}}
                         </button>
                     </div>
                 </div>

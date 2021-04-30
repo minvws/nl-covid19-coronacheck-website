@@ -15,6 +15,15 @@ export default {
         },
         hasQR() {
             return this.$store.state.qrCode.length > 0;
+        },
+        holderContent() {
+            const holder = this.testResult.holder;
+            return {
+                firstNameInitial: holder.firstNameInitial,
+                lastNameInitial: holder.lastNameInitial,
+                birthDayStyled: holder.birthDayStyled,
+                birthDayMonthStyled: holder.birthDayMonthStyled
+            }
         }
     },
     methods: {
@@ -35,22 +44,36 @@ export default {
                         }
                     }).catch((error) => {
                         this.$store.commit('modal/set', {
-                            messageHead: this.translate('generalError'),
-                            messageBody: this.translate('generalErrorBody') + '<p>' + error + '</p>',
+                            messageHead: this.$t('generalError'),
+                            messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
                             closeButton: true
                         });
                     })
                 }
             } else {
                 this.$store.commit('modal/set', {
-                    messageHead: this.translate('generalError'),
-                    messageBody: this.translate('generalErrorBody'),
+                    messageHead: this.$t('generalError'),
+                    messageBody: this.$t('generalErrorBody'),
                     closeButton: true
                 });
             }
         },
         goBack() {
-            this.$router.push({ name: 'ProvideCode' });
+            this.$router.push({ name: 'Home' });
+        },
+        openModalTestResultsAbout() {
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.testResultAbout.head'),
+                messageBody: this.$t('message.info.testResultAbout.body', this.holderContent),
+                closeButton: true
+            })
+        },
+        openModalTestResultsSomethingWrong() {
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.testResultSomethingWrong.head'),
+                messageBody: this.$t('message.info.testResultSomethingWrong.body', this.holderContent),
+                closeButton: true
+            })
         }
     }
 }
@@ -66,51 +89,53 @@ export default {
                 <div class="section-block">
                     <div v-if="testResult">
                         <h2>
-                            {{translate('yourNegativeTestresult')}}
+                            {{$t('yourNegativeTestresult')}}
                         </h2>
-                        <div v-html="translate('yourNegativeTestresultDirection')"/>
+                        <div v-html="$t('yourNegativeTestresultDirection')"/>
                         <div class="YourTestResults__header">
-                            {{translate('retrievedTestResult')}}
-                            <router-link
-                                :to="{ name: 'HelpTestResult', hash: '#HolderIdentityCharacters' }"
+                            {{$t('retrievedTestResult')}}
+                            <button
+                                @click="openModalTestResultsAbout()"
                                 type="button"
                                 class="info-button">
                                 <img src="assets/img/icons/info.svg" alt=""/>
-                            </router-link>
+                            </button>
                         </div>
                         <div class="YourTestResults__results">
                             <TestResult
                                 :testResult="testResult"/>
-                            <router-link
-                                :to="{ name: 'HelpTestResult' }"
-                                type="button"
-                                class="button-modest">
-                                {{translate('somethingIsWrong')}}
-                            </router-link>
                         </div>
                         <div class="section-block__footer">
                             <button
                                 @click="createTestCertificate()"
                                 type="button"
                                 class="button-standard">
-                                {{translate('createTestProof')}}
+                                {{$t('createTestProof')}}
                             </button>
+                            <div class="button__help-button">
+                                <button
+                                    @click="openModalTestResultsSomethingWrong()"
+                                    type="button"
+                                    class="button-modest">
+                                    {{$t('somethingIsWrong')}}
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                     <div v-else>
                         <h2>
-                            {{translate('noTestResultPresent')}}
+                            {{$t('noTestResultPresent')}}
                         </h2>
                         <p>
-                            {{translate('noTestResultPresentDirection')}}
+                            {{$t('noTestResultPresentDirection')}}
                         </p>
                         <div class="section-block__footer">
                             <button
                                 @click="goBack()"
                                 type="button"
                                 class="button-standard">
-                                {{translate('goBackToStart')}}
+                                {{$t('goBackToStart')}}
                             </button>
                         </div>
                     </div>

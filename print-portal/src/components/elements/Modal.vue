@@ -134,7 +134,7 @@ export default {
                     @click="close()"
                     ref="close"
                     type="button"
-                    class="button-modest">{{translate('close')}}</button>
+                    class="button-modest">{{$t('close')}}</button>
             </div>
         </div>
         <div

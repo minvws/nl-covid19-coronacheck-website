@@ -41,7 +41,7 @@ export default {
             <a
                 href="https://coronacheck.nl/nl/faq"
                 class="Identity__faq">
-                {{translate('faq')}}
+                {{$t('faq')}}
             </a>
             <LanguagePicker
                 v-if="hasLanguages"/>

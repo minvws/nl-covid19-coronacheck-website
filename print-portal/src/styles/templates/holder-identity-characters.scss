@@ -1,0 +1,29 @@
+.holder-identity-characters {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+    width: 56px;
+    margin-right: 12px;
+
+    .HolderIdentityCharacters__label {
+      text-align: center;
+      margin-bottom: 16px;
+      font-size: 12px;
+    }
+
+    .HolderIdentityCharacters__value {
+      height: 44px;
+      border: 2px solid $black-1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 4px;
+    }
+  }
+}

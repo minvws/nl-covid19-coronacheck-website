@@ -35,7 +35,7 @@ export default {
             type="button">
             {{language.name}}
             <span v-if="isCurrent">
-            ({{translate('currentLanguage')}})
+            ({{$t('currentLanguage')}})
         </span>
         </button>
     </li>

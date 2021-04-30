@@ -42,8 +42,8 @@ const mutations = {
     setQrData(state, qrData) {
         state.qrData = qrData;
     },
-    giveUserConsent(state) {
-        state.userConsent = true;
+    setUserConsent(state, value) {
+        state.userConsent = value;
     },
     setHolderConfig(state, holderConfig) {
         state.holderConfig = holderConfig;

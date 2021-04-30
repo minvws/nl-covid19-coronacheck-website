@@ -14,9 +14,9 @@ export default {
     computed: {
         status() {
             if (this.testResult.negativeResult) {
-                return this.translate('resultNegative');
+                return this.$t('resultNegative');
             } else {
-                return this.translate('resultPositive');
+                return this.$t('resultPositive');
             }
         },
         date() {
@@ -33,10 +33,10 @@ export default {
             {{status}}
         </div>
         <div class="TestResult__date">
-            {{translate('dateOfTest')}}: {{date}}
+            {{$t('dateOfTest')}}: {{date}}
         </div>
         <div class="TestResult__date">
-            {{translate('yourCredentials')}}: {{testResult.holder.string}}
+            {{$t('yourCredentials')}}: {{testResult.holder.string}}
         </div>
     </div>
 </template>

@@ -27,13 +27,13 @@ export default {
         <button
             v-if="displayBackButton && callbackBack"
             @click="goBack()"
-            :aria-label="translate('back')"
+            :aria-label="$t('back')"
             type="button"
             class="Navigation__button Navigation__back">
             <img
                 alt=""
                 src="assets/img/icons/arrow-left.svg"/>
-            {{translate('back')}}
+            {{$t('back')}}
         </button>
     </nav>
 </template>
