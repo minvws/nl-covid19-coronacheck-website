@@ -103,10 +103,10 @@ export default {
                 if (this.isTestCodeValid) {
                     this.getSignedResult({ includeVerificationCode: false });
                 } else {
-                    this.testCodeStatus.error = this.translate('invalidTestCode');
+                    this.testCodeStatus.error = this.$t('invalidTestCode');
                 }
             } else {
-                this.testCodeStatus.error = this.translate('emptyTestCode');
+                this.testCodeStatus.error = this.$t('emptyTestCode');
             }
         },
         submitVerificationCode(options) {
@@ -114,10 +114,10 @@ export default {
                 if (this.isVerificationCodeValid) {
                     this.getSignedResult({ includeVerificationCode: true });
                 } else {
-                    this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
+                    this.verificationCodeStatus.error = this.$t('invalidVerificationCode');
                 }
             } else {
-                this.verificationCodeStatus.error = this.translate('emptyVerificationCode');
+                this.verificationCodeStatus.error = this.$t('emptyVerificationCode');
             }
         },
         async getSignedResult(options) {
