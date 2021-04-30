@@ -29,6 +29,12 @@ const dictionary = {
     'downloadPDF': {
         'nl': 'Download PDF'
     },
+    'emptyTestCode': {
+        'nl': 'De ophaalcode moet nog ingevuld worden'
+    },
+    'emptyVerificationCode': {
+        'nl': 'De verificatiecode moet nog ingevuld worden'
+    },
     'enterCode': {
         'nl': 'Testuitslag ophalen'
     },
