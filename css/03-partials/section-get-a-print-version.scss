@@ -21,6 +21,17 @@
   }
 }
 
+a.print-version__btn {
+  &,&:visited {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: $color-cc-link-darker--interaction;
+    }
+  }
+}
+
 .print-version__column-image {
   overflow-y: hidden;
   flex: 1 1 auto;
