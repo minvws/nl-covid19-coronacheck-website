@@ -9,4 +9,5 @@ redirect_from:
   - /index
   - /en/
   - /en
+  - /app/redeem
 ---
