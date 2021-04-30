@@ -1,3 +1,8 @@
 .DS_Store
 print/node_modules
 print/dist
+.sass-cache
+_site/
+Gemfile.lock
+.jekyll-cache/
+.jekyll-metadata

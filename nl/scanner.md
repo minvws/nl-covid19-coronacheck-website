@@ -1,5 +1,6 @@
 ---
 layout: home-scanner
+domain: scanner
 lang: nl
 title: ''
 showTogether : true

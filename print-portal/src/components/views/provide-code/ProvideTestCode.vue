@@ -7,26 +7,12 @@ export default {
             type: Object,
             required: true
         },
-        isTestCodeValid: {
-            type: Boolean,
-            required: true
-        },
-        getSignedResult: {
-            type: Function,
-            required: true
-        },
         verificationNeeded: {
             type: Boolean,
             required: true
         }
     },
     computed: {
-        testResultStatus() {
-            return this.$store.state.testResultStatus;
-        },
-        showButton() {
-            return !this.verificationNeeded;
-        },
         hasGivenConsent() {
             return this.$store.state.userConsent;
         },
@@ -36,7 +22,7 @@ export default {
             },
             set(value) {
                 // editing the test code should reset the process
-                this.resetProcess();
+                this.$store.commit('reset');
                 const strippedValue = value.replace(/ /g, '');
                 const toUpperCase = strippedValue.toUpperCase();
                 this.$store.commit('updateProperty', { key: 'testCode', value: toUpperCase })
@@ -44,12 +30,9 @@ export default {
         }
     },
     methods: {
-        resetProcess() {
-            this.$store.commit('reset');
-        },
-        sendTestCode() {
-            if (this.isTestCodeValid && this.hasGivenConsent) {
-                this.getSignedResult({ includeVerificationCode: false });
+        submit() {
+            if (this.hasGivenConsent) {
+                this.$emit('submit')
             }
         }
     }
@@ -75,11 +58,11 @@ export default {
             </div>
         </div>
         <button
-            v-if="showButton"
-            @click="sendTestCode()"
+            v-if="!verificationNeeded"
+            @click="submit()"
             type="button"
-            :disabled="(!isTestCodeValid || !hasGivenConsent)"
-            :class="{'button--inactive': (!isTestCodeValid || !hasGivenConsent)}"
+            :disabled="!hasGivenConsent"
+            :class="{'button--inactive': !hasGivenConsent}"
             class="button-standard">
             {{$t('next')}}
         </button>
