@@ -43,7 +43,7 @@ export default {
         </a>
         <a
             href="https://coronacheck.nl/nl/faq"
-            class="Identity__faq">
+            class="header__layout__faq-link">
             {{$t('faq')}}
         </a>
         <LanguagePicker

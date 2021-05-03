@@ -80,7 +80,9 @@ export default {
 </script>
 
 <template>
-    <div class="YourTestResults">
+    <div
+        id="content"
+        class="YourTestResults">
         <div class="pagewrap">
             <Navigation
                 :display-back-button="testResult !== null"

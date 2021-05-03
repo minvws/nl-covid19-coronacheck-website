@@ -15,7 +15,9 @@ export default {
 </script>
 
 <template>
-    <div class="TestResultPending">
+    <div
+        id="content"
+        class="TestResultPending">
         <div class="pagewrap">
             <Navigation
                 :display-back-button="false"/>

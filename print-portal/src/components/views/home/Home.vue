@@ -57,7 +57,7 @@ export default {
                         type="button"
                         :disabled="!consent"
                         :class="{'button--inactive': !consent}"
-                        class="button-standard">
+                        class="btn">
                         {{$t('next')}}
                     </button>
                 </div>

@@ -324,7 +324,9 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
 </script>
 
 <template>
-    <div class="Print">
+    <div
+        id="content"
+        class="Print">
         <div class="pagewrap">
             <Navigation
                 :display-back-button="qrCode.length > 0"
