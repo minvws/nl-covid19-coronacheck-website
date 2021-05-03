@@ -30,11 +30,14 @@ export default {
         </div>
 
         <div class="pagewrap">
-            <img
-                class="Identity__image"
-                alt="Holder QR maken"
-                width="356"
-                src="assets/img/artwork/holder_qrcode_maken.svg"/>
+            <div class="Identity__image-container">
+                <img
+                    class="Identity__image"
+                    alt="Holder QR maken"
+                    width="356"
+                    src="assets/img/artwork/holder_qrcode_maken.svg"/>
+            </div>
+
         </div>
         <a
             href="https://coronacheck.nl/nl/"
@@ -58,13 +61,21 @@ export default {
     background: $background-color-1;
     position: relative;
     height: 250px;
-    display: flex;
-    align-items: flex-end;
 
-    .Identity__image {
-        display: block;
-        height: auto;
-        margin-left: 60px;
+    .pagewrap {
+        height: 100%;
+
+        .Identity__image-container {
+            display: flex;
+            align-items: flex-end;
+            height: 100%;
+
+            .Identity__image {
+                display: block;
+                height: auto;
+                margin-left: 60px;
+            }
+        }
     }
 
     .logo {
