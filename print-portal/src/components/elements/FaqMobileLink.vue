@@ -32,7 +32,7 @@ export default {
 }
 
 .FaqMobileLink {
-    color: $color-overheid-1;
+    color: $color-RO_darkblue;
     font-weight: 700;
     font-size: 20px;
     text-decoration: none;

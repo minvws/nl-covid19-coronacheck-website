@@ -19,6 +19,7 @@
   &:hover {
     color: $color-coronacheck_blue;
     background-color: #ffffff;
+    text-decoration: none;
   }
 
   &:focus {
@@ -28,8 +29,8 @@
   }
 
   &[disabled] {
-    background: $grey-5;
-    color: $secondary-text;
+    background: $color-lightgrey;
+    color: $color-darkgrey;
     pointer-events: none;
     user-select: none;
   }

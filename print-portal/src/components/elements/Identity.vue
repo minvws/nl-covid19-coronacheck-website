@@ -30,11 +30,14 @@ export default {
         </div>
 
         <div class="pagewrap">
-            <img
-                class="Identity__image"
-                alt="Holder QR maken"
-                width="356"
-                src="assets/img/artwork/holder_qrcode_maken.svg"/>
+            <div class="Identity__image-container">
+                <img
+                    class="Identity__image"
+                    alt="Holder QR maken"
+                    width="356"
+                    src="assets/img/artwork/holder_qrcode_maken.svg"/>
+            </div>
+
         </div>
         <a
             href="https://coronacheck.nl/nl/"
@@ -55,16 +58,24 @@ export default {
 @import "@/styles/variables/index";
 
 .Identity {
-    background: $background-color-1;
+    background: $color-RO_lightblue;
     position: relative;
     height: 250px;
-    display: flex;
-    align-items: flex-end;
 
-    .Identity__image {
-        display: block;
-        height: auto;
-        margin-left: 60px;
+    .pagewrap {
+        height: 100%;
+
+        .Identity__image-container {
+            display: flex;
+            align-items: flex-end;
+            height: 100%;
+
+            .Identity__image {
+                display: block;
+                height: auto;
+                margin-left: 60px;
+            }
+        }
     }
 
     .logo {
@@ -78,7 +89,7 @@ export default {
         position: absolute;
         left: 20px;
         top: 27px;
-        color: $color-overheid-1;
+        color: $color-RO_darkblue;
         font-weight: 700;
         font-size: 20px;
         text-decoration: none;
