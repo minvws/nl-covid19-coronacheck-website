@@ -4,12 +4,8 @@
   list-style-type:none;
 
   img{
-    height: 65px;
+    height: 40px;
     width: auto;
-
-    @media (min-width: 740px) {
-      height: 30px;
-    }
   }
 
   .app_badge_column__left {
