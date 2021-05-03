@@ -241,7 +241,9 @@ export default {
 </script>
 
 <template>
-    <div class="ProvideCode">
+    <div
+        id="content"
+        class="ProvideCode">
         <div class="pagewrap">
             <Navigation
                 :callback-back="back"/>

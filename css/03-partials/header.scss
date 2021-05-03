@@ -12,7 +12,7 @@
     }
 }
 
-.logo a {
+.logo {
     display:block;
     max-width: 50px;
     margin: 0 auto;
@@ -155,7 +155,7 @@
       right: 0;
       margin-left: auto; 
       margin-right: auto; 
-      background-image: url('../img/background-full.svg');
+      background-image: url('#{$file-path}img/background-full.svg');
     }
 
     &::after {

@@ -324,7 +324,9 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
 </script>
 
 <template>
-    <div class="Print">
+    <div
+        id="content"
+        class="Print">
         <div class="pagewrap">
             <Navigation
                 :display-back-button="qrCode.length > 0"
@@ -349,7 +351,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                                     }"
                                     :disabled="!document"
                                     id="open-pdf"
-                                    class="button-standard button--full-width"
+                                    class="btn button--full-width"
                                     @click="openPDF()">
                                     {{$t('openPDF')}}
                                 </button>
@@ -358,7 +360,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                                     :class="{'button--inactive': !document }"
                                     :disabled="!document"
                                     id="download-pdf"
-                                    class="button-standard button--full-width"
+                                    class="btn button--full-width"
                                     @click="downloadPDF()">
                                     {{$t('openPDF')}}
                                 </button>
@@ -382,7 +384,7 @@ Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
                             <button
                                 @click="goHome()"
                                 type="button"
-                                class="button-standard">
+                                class="btn">
                                 {{$t('retrieveTestResult')}}
                             </button>
                         </div>

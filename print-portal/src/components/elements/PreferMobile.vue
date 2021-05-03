@@ -21,20 +21,24 @@ export default {
             <p>
                 {{$t('preferMobileDirection')}}
             </p>
-            <div class="PreferMobile__badges">
-                <a
-                    class="app-badge"
-                    href="https://apps.apple.com/nl/app/coronacheck/id1548269870"
-                    target="_blank">
-                    <img src="assets/img/app-store-badges/apple-store-badge.svg"/>
-                </a>
-                <a
-                    class="app-badge app-badge--with-padding"
-                    href="https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder"
-                    target="_blank">
-                    <img src="assets/img/app-store-badges/google-play-badge.png"/>
-                </a>
-            </div>
+            <ul class="layout-app-badges">
+                <li class="app_badge_column__left">
+                    <a
+                        class="app-store"
+                        href="https://apps.apple.com/nl/app/coronacheck/id1548269870"
+                        target="_blank">
+                        <img src="assets/img/app-store-badges/app-store-badge-nl.svg"/>
+                    </a>
+                </li>
+                <li class="app_badge_column__right">
+                    <a
+                        class="play-store"
+                        href="https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder"
+                        target="_blank">
+                        <img src="assets/img/app-store-badges/google-play-badge-nl.svg"/>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
@@ -63,31 +67,6 @@ export default {
 
     .PreferMobile__text {
         width: calc(100% - 310px);
-    }
-
-    .PreferMobile__badges {
-        display: flex;
-        margin-left: -10px;
-
-        .app-badge {
-            height: 60px;
-            padding: 10px;
-            margin-right: 20px;
-            display: block;
-
-            &.app-badge--with-padding {
-                height: 60px;
-                padding: 0;
-            }
-
-            &:last-child {
-                margin-right: 0;
-            }
-
-            img {
-                height: 100%;
-            }
-        }
     }
 
     @include mobile() {

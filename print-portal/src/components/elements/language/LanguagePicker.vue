@@ -35,20 +35,26 @@ export default {
 </script>
 
 <template>
-    <div class="LanguagePicker">
+    <div class="language-picker language-picker--home language-picker--right-orientation">
+        <span class="language-picker__current">
+            <span class="language-picker__label">
+                {{$t('language')}}:
+            </span>
+            <strong>
+                {{currentLanguage.name}}
+            </strong>
+        </span>
         <button
-            v-if="currentLanguage"
             @click="open()"
             v-on:keyup.esc="close()"
             type="button"
+            class="language-picker__toggle"
             aria-controls="language-dropdown"
-            :aria-expanded="isOpen"
-            class="LanguagePicker__current">
-            <div class="LanguagePicker__label">
-                {{$t('language')}}:
-                <strong>{{currentLanguage.name}}</strong>
-            </div>
-            <div class="LanguagePicker__chevron"></div>
+            :aria-expanded="isOpen">
+            <span class="screen-reader-text">
+              Wissel van taal
+            </span>
+            <span class="language-picker__chevron"></span>
         </button>
         <LanguagePickerLanguages
             v-if="isOpen"/>
@@ -56,53 +62,5 @@ export default {
 </template>
 
 <style lang="scss">
-.LanguagePicker {
-    position: relative;
-
-    .LanguagePicker__current {
-        color: #154273;
-        background: #fff;
-        cursor: pointer;
-        padding: 12px;
-        border-radius: 6px;
-        display: flex;
-        align-items: center;
-
-        .LanguagePicker__label {
-            font-size: 16px;
-            margin-right: 12px;
-        }
-
-        .LanguagePicker__chevron {
-            width: 12px;
-            position: relative;
-
-            &:after {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 0;
-                border: solid currentColor;
-                border-width: 0 1px 1px 0;
-                padding: 3px;
-                transform: translate(0, -50%) rotate(45deg);
-                color: currentColor;
-                transition: transform var(--transition-out);
-            }
-        }
-    }
-}
-
-.direction-rtl {
-
-    .LanguagePicker {
-
-        .LanguagePicker__current {
-
-            .LanguagePicker__label {
-                margin: 0 0 0 12px;
-            }
-        }
-    }
-}
+    // all css via shared css with homepage
 </style>

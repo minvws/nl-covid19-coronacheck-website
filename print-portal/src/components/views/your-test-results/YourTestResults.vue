@@ -37,6 +37,7 @@ export default {
                         url: '/staticproof/paper',
                         data: this.signature
                     }).then((response) => {
+                        console.log(response);
                         if (response.data.status === 'ok' && response.data.error === 0) {
                             this.$store.commit('setQrCode', response.data.qr.data);
                             this.$store.commit('setQrData', response.data.qr.attributesIssued);
@@ -59,6 +60,9 @@ export default {
             }
         },
         goBack() {
+            this.$router.push({ name: 'ProvideCode' });
+        },
+        goHome() {
             this.$router.push({ name: 'Home' });
         },
         openModalTestResultsAbout() {
@@ -80,7 +84,9 @@ export default {
 </script>
 
 <template>
-    <div class="YourTestResults">
+    <div
+        id="content"
+        class="YourTestResults">
         <div class="pagewrap">
             <Navigation
                 :display-back-button="testResult !== null"
@@ -109,7 +115,7 @@ export default {
                             <button
                                 @click="createTestCertificate()"
                                 type="button"
-                                class="button-standard">
+                                class="btn">
                                 {{$t('createTestProof')}}
                             </button>
                             <div class="button__help-button">
@@ -132,9 +138,9 @@ export default {
                         </p>
                         <div class="section-block__footer">
                             <button
-                                @click="goBack()"
+                                @click="goHome()"
                                 type="button"
-                                class="button-standard">
+                                class="btn">
                                 {{$t('goBackToStart')}}
                             </button>
                         </div>

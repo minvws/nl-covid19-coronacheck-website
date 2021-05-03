@@ -1,6 +1,6 @@
 
 .btn {
-  padding: 10px 20px;
+  padding: 14px 50px;
   margin-bottom: 5px;
   background: #fff;
   display: inline-block;
@@ -8,10 +8,8 @@
   border: 1px solid currentColor;
   color: white;
   border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
-
-  @media (min-width: 740px) {
-    padding: 10px 35px;
-  }
+  font-size: inherit;
+  font-family: inherit;
 
   &:visited {
     color: white;
@@ -27,6 +25,13 @@
     text-decoration: none;
     color: $color-coronacheck_blue;
     background-color: #ffffff;
+  }
+
+  &[disabled] {
+    background: $grey-5;
+    color: $secondary-text;
+    pointer-events: none;
+    user-select: none;
   }
 }
 

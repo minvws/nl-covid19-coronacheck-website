@@ -87,7 +87,7 @@ button {
         position: relative;
         height: 10px;
         width: 10px;
-        background: url(../img/chevron-right-darkblue.svg) no-repeat 50% 50%;
+        background: url(#{$file-path}img/chevron-right-darkblue.svg) no-repeat 50% 50%;
         transition: var(--transition-out);
         padding: 10px;
     }

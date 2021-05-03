@@ -32,7 +32,9 @@ export default {
 </script>
 
 <template>
-    <div class="home">
+    <div
+        id="content"
+        class="home">
         <div class="pagewrap">
             <Navigation
                 :callback-back="gotoHome"/>
@@ -55,7 +57,7 @@ export default {
                         type="button"
                         :disabled="!consent"
                         :class="{'button--inactive': !consent}"
-                        class="button-standard">
+                        class="btn">
                         {{$t('next')}}
                     </button>
                 </div>
