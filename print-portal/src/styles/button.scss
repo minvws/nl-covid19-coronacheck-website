@@ -7,34 +7,12 @@ button {
 }
 
 .button-standard {
-    //height: 48px;
-    //border-radius: 24px;
-    //background: $main-color-1;
-    //border: 0;
-    //padding: 0 50px;
-    //font-size: 17px;
-    //font-weight: 700;
-    //color: #fff;
 
     &.button--full-width {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    &.button--inactive {
-        background: $grey-5;
-        color: $secondary-text;
-        pointer-events: none;
-        user-select: none;
-    }
-
-    &:hover {
-
-        @media (hover: hover) and (pointer: fine) {
-            background: $primary-text;
-        }
     }
 }
 

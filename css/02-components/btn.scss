@@ -26,6 +26,13 @@
     color: $color-coronacheck_blue;
     background-color: #ffffff;
   }
+
+  &[disabled] {
+    background: $grey-5;
+    color: $secondary-text;
+    pointer-events: none;
+    user-select: none;
+  }
 }
 
 .btn--large {
