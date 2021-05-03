@@ -1,9 +1,10 @@
 <script>
 import LanguagePicker from './language/LanguagePicker';
+import Skiplinks from './Skiplinks';
 
 export default {
     name: 'Identity',
-    components: { LanguagePicker },
+    components: { Skiplinks, LanguagePicker },
     computed: {
         hasLanguages() {
             return this.$store.state.languages.all.length > 1;
@@ -17,6 +18,8 @@ export default {
 
 <template>
     <div class="Identity">
+        <Skiplinks/>
+
         <div class="logo">
             <a href="https://coronacheck.nl/">
                 <img

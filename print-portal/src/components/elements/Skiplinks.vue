@@ -14,9 +14,3 @@ export default {
         </a>
     </div>
 </template>
-
-<style lang="scss">
-.Skiplinks {
-
-}
-</style>

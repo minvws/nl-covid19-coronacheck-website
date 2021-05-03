@@ -32,7 +32,9 @@ export default {
 </script>
 
 <template>
-    <div class="home">
+    <div
+        id="content"
+        class="home">
         <div class="pagewrap">
             <Navigation
                 :callback-back="gotoHome"/>
