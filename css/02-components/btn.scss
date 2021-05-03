@@ -28,7 +28,7 @@
   }
 
   &[disabled] {
-    background: $grey-5;
+    background: $color-lightgrey;
     color: $secondary-text;
     pointer-events: none;
     user-select: none;
