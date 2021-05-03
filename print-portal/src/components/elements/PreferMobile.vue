@@ -47,7 +47,7 @@ export default {
 @import "@/styles/variables/index";
 
 .PreferMobile {
-    background: $background-color-1;
+    background: $color-RO_lightblue;
     margin-top: $length-xxl;
     padding: $length-xxl 108px 0 108px;
     display: flex;

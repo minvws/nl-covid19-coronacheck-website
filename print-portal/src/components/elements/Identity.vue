@@ -58,7 +58,7 @@ export default {
 @import "@/styles/variables/index";
 
 .Identity {
-    background: $background-color-1;
+    background: $color-RO_lightblue;
     position: relative;
     height: 250px;
 
@@ -89,7 +89,7 @@ export default {
         position: absolute;
         left: 20px;
         top: 27px;
-        color: $color-overheid-1;
+        color: $color-RO_darkblue;
         font-weight: 700;
         font-size: 20px;
         text-decoration: none;

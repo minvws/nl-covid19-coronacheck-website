@@ -7,7 +7,7 @@
 
         .label--side-note {
             font-weight: 400;
-            color: $secondary-text;
+            color: $color-darkgrey;
             font-size: 15px;
         }
     }
@@ -15,23 +15,23 @@
     input {
         height: $length-xl;
         border: 0;
-        border-bottom: 1px solid $grey-3;
+        border-bottom: 1px solid $color-mediumgrey;
         width: 100%;
         border-radius: 0;
         outline: 0;
         font-size: 16px;
         transition: border-bottom 0.3s ease;
-        color: $primary-text;
+        color: $color-coronacheck_black;
         padding: 0;
 
         &:focus {
-            border-bottom: 1px solid $active-color;
+            border-bottom: 1px solid $color-coronacheck_blue;
         }
     }
 
     .input__error {
         margin-top: 12px;
-        color: $error-color;
+        color: $color-error;
         font-size: 13px;
         padding-left: 24px;
         position: relative;
@@ -48,7 +48,7 @@
             font-weight: 700;
             border-radius: 50%;
             padding-bottom: 1px;
-            border: 1px solid $error-color;
+            border: 1px solid $color-error;
             display: flex;
             align-items: center;
             justify-content: center;

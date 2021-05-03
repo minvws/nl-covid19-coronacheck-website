@@ -46,12 +46,12 @@ export default {
 
 .TestResult {
     padding: $grid-x2 0;
-    border-bottom: 1px solid $grey-4;
+    border-bottom: 1px solid $color-lightgrey;
     font-size: 17px;
     margin-bottom: $grid-x2;
 
     &:first-child {
-        border-top: 1px solid $grey-4;
+        border-top: 1px solid $color-lightgrey;
     }
 
     .TestResult__status {

@@ -43,7 +43,7 @@ export default {
 
 .UserConsent {
     padding: 20px;
-    background: $grey-5;
+    background: $color-lightgrey;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -53,7 +53,7 @@ export default {
         height: 28px;
         border-radius: 50%;
         margin-right: 20px;
-        border: 1px solid $grey-3;
+        border: 1px solid $color-mediumgrey;
         cursor: pointer;
     }
 
