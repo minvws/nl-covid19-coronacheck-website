@@ -1526,7 +1526,7 @@ print-version-title:
 print-version-content:
   nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq#testbewijs-op-papier">Lees hier meer</a>.
   fy: 
-  en: A test declaration on paper is convenient if you don't have a smartphone. <a href="/nl/faq#test-declaration-on-paper">Lees hier meer</a> 
+  en: A test declaration on paper is convenient if you don't have a smartphone. <a href="/nl/faq#printed-test-declaration">Lees hier meer</a> 
 
 print-version-url: 
   nl: /print
