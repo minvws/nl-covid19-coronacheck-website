@@ -46,13 +46,11 @@ These terms of use outline the functioning of the CoronaCheck Scanner app, how t
 
 ## How does the CoronaCheck Scanner app work?
 
-
-
 ### Download and installation
 
 The CoronaCheck Scanner app is required to check the validity of digital test declarations in both the CoronaCheck app as well as hard copy test declarations printed off on paper. The CoronaCheck Scanner app is available free of charge in the App Store (for iOS) and Google Play Store (for Android) and can be installed on a smartphone or tablet. Make sure you only download the CoronaCheck Scanner app from the App Store or Google Play Store and be aware of fake or counterfeit apps. The CoronaCheck Scanner app is only supported from iOS version 11 and Android version 6 and up.
 
-After downloading the CoronaCheck Scanner app and agreeing to these terms, you can use the CoronaCheck Scanner app. Before you can use this app, you need to read and agree to the terms of use. You can find these terms of use at https://coronacheck.nl/nl/gebruikersvoorwaarden.html. 
+After downloading the CoronaCheck Scanner app and agreeing to these terms, you can use the CoronaCheck Scanner app. Before you can use this app, you need to read and agree to the [terms of use](https://coronacheck.nl/en/gebruikersvoorwaarden.html).
 
 ### Scanning a test declaration
 
@@ -108,7 +106,7 @@ The CoronaCheck Scanner app has been designed with great care. VWS works hard to
 
 By accepting these terms of use, you agree that CoronaCheck may not function flawlessly, may not be available temporarily, partially, permanently or entirely and that notifications are not received or processed by you timely and/or fully.
 
-Do you have a question or complaint about the CoronaCheck Scanner app or do you want to report a malfunction? Please consult https://coronacheck.nl/nl for more information.  
+Do you have a question or complaint about the CoronaCheck Scanner app or do you want to report a malfunction? Please consult [the website of coronacheck](https://coronacheck.nl/en) for more information.  
 
 ## Liability
 
@@ -126,7 +124,7 @@ VWS may change the terms if and when VWS deems necessary. The date and version v
 
 ## Termination of the CoronaCheck Scanner app
 
-Checking test declarations to allow access is a temporary crisis measure. This means it cannot be predicted what will happen in the future. For this reason, VWS can decide at any time to terminate use of the CoronaCheck Scanner app. Should this happen, you will be informed via https://coronacheck.nl/nl.  
+Checking test declarations to allow access is a temporary crisis measure. This means it cannot be predicted what will happen in the future. For this reason, VWS can decide at any time to terminate use of the CoronaCheck Scanner app. Should this happen, you will be informed via [the website of coronacheck](https://coronacheck.nl/en).  
 
 
 ## Applicable law and competent court
@@ -137,7 +135,7 @@ If any part of these terms is illegal, not valid or unenforceable, such will not
 
 ## Contact
 
-If you have a question of complaint about the CoronaCheck Scanner app, please consult https://coronacheck.nl/nl for more information.  
+If you have a question of complaint about the CoronaCheck Scanner app, please consult [the website of coronacheck](https://coronacheck.nl/en) for more information.  
 
 Version 1.1.
 
