@@ -12,15 +12,15 @@ Deze privacyverklaring is derhalve niet van toepassing op versies van CoronaChec
 
 CoronaCheck (app) is een technisch hulpmiddel dat helpt om op digitale wijze een bewijs te tonen dat u recent negatief bent getest op het COVID-19 virus. Dit kan ook door een testbewijs te genereren via coronacheck.nl en dit vervolgens te printen als fysiek testbewijs. Wanneer in deze privacyverklaring wordt verwezen naar de website coronacheck.nl ziet dit expliciet op de functie binnen coronacheck.nl om een testbewijs te genereren. Het testbewijs is een bewijs dat iemand negatief is getest en dat tijdelijk geldig is. Dit bewijs is een van de vereisten om toegang te krijgen tot specifieke evenementen die bij wijze van pilot worden georganiseerd. Hieronder wordt kort uitgelegd hoe het genereren van een testbewijs in CoronaCheck en het genereren van een fysiek testbewijs werkt. De hieronder beschreven werking is breder dan de daadwerkelijke verwerking van persoonsgegevens die binnen CoronaCheck en coronacheck.nl plaatsvindt, maar is in deze verklaring opgenomen om inzicht in het gehele proces te bieden.
 
-Als bezoeker van een pilot evenement doet u eerst een coronatest bij de aangewezen testaanbieder voor het betreffende pilot evenement. De testuitslag krijgt u van de testaanbieder. Bij de testuitslag ontvangt u ook een code. Vervolgens kunt u gebruik maken van twee verschillende routes om een testbewijs te genereren. Hieronder worden beide routes beschreven: (1) het generen van een testbewijs via CoronaCheck (digitaal testbewijs) en (2) het generen van een testbewijs dat geschikt is om te printen (fysiek testbewijs).
+Als bezoeker van een pilot evenement doet u eerst een coronatest bij de aangewezen testaanbieder voor het betreffende pilot evenement. De testuitslag krijgt u van de testaanbieder. Bij de testuitslag ontvangt u ook een ophaalcode. Vervolgens kunt u gebruik maken van twee verschillende routes om een testbewijs te genereren. Hieronder worden beide routes beschreven: (1) het generen van een testbewijs via CoronaCheck (digitaal testbewijs) en (2) het generen van een testbewijs dat geschikt is om te printen (fysiek testbewijs).
 
 ### CoronaCheck (digitaal testbewijs)
 
 U kunt de CoronaCheck app downloaden op uw smartphone in de App Store of Google Play Store. Na het installeren van de app krijgt u uitleg over hoe de app werkt. Ook wordt om toestemming gevraagd voor het gebruik van uw gegevens. Nadat u toestemming heeft gegeven voor het verwerken van uw gegevens kunt u gebruik maken van de app. De ophaalcode die u bij de testuitslag heeft ontvangen, kunt u invoeren in CoronaCheck. Indien er een testuitslag beschikbaar is krijgt u een extra controle code toegestuurd via de sms. U voert deze sms-code eveneens in. Na controle van de codes haalt CoronaCheck de negatieve testuitslag op bij de betreffende testaanbieder. De testuitslag kunt u daarna omzetten in een testbewijs door op de knop ‘maak QR-code’ te klikken. De testuitslag wordt vervolgens digitaal getekend via een zogeheten signing service. CoronaCheck maakt na deze ondertekening een testbewijs in de vorm van een QR-code. Een set identificerende gegevens (eerste letter voornaam, eerste letter achternaam, geboortedag en geboortemaand) maakt onderdeel uit van deze QR-code en wordt als regel onder de QR-code weergegeven ter voorkoming van fraude in het tonen van QR-codes aan een controleur. Deze gegevens worden ter bestrijding van fraude door de controleur gecheckt aan de hand van het identiteitsbewijs van de persoon. 
 
-## Fysiek testbewijs
+### Fysiek testbewijs
 
-Voor het tonen van een papieren testbewijs kan een testbewijs worden gegenereerd via de website coronacheck.nl. De persoon voert hiertoe zijn/haar ophaalcode die bij de testuitslag is ontvangen in op de website. Vervolgens ontvangt de persoon een verificatiecode per sms, welke de persoon eveneens op de website invoert. Na controle van de codes vindt hetzelfde proces plaats als bij de route van het digitale testbewijs, namelijk dat de testuitslag wordt opgehaald bij en getekend door de testaanbieder. Vervolgens wordt na ondertekening door de signing service een QR-code (inclusief set identificerende gegevens in de QR-code en als regel onder de QR-code) gegenereerd, dit is het testbewijs. Hierna kan het testbewijs worden geprint als fysiek testbewijs. 
+Voor het tonen van een papieren testbewijs kan een testbewijs worden gegenereerd via de website coronacheck.nl. De persoon voert hiertoe zijn/haar ophaalcode die bij de testuitslag is ontvangen in op de website. Vervolgens ontvangt de persoon een extra controle code per sms, welke de persoon eveneens op de website invoert. Na controle van de codes vindt hetzelfde proces plaats als bij de route van het digitale testbewijs, namelijk dat de testuitslag wordt opgehaald bij en getekend door de testaanbieder. Vervolgens wordt na ondertekening door de signing service een QR-code (inclusief set identificerende gegevens in de QR-code en als regel onder de QR-code) gegenereerd, dit is het testbewijs. Hierna kan het testbewijs worden geprint als fysiek testbewijs. 
 
 Vervolgens laat u ofwel het digitale testbewijs of het fysieke testbewijs (in beide gevallen is dit een QR-code) scannen aan de deur van het pilot evenement waar u naar binnen wilt. De controleur aan de deur gebruikt hiervoor de CoronaCheck Scanner app. Is uw QR-code geldig en heeft u een toegangsbewijs? Dan mag u naar binnen.
 
@@ -32,7 +32,7 @@ De Minister van Volksgezondheid, Welzijn en Sport is verwerkingsverantwoordelijk
 
 ### 2. Grondslag voor het verwerken van persoonsgegevens
 
-De grondslag voor het verwerken van persoonsgegevens binnen CoronaCheck, op coronacheck.nl en de signing service is de toestemming van de gebruiker. Deze toestemming wordt in CoronaCheck gegeven door een gebruiker nadat de app op de smartphone van de gebruiker is geïnstalleerd en de gebruiker kennis heeft genomen van deze privacyverklaring. Bij gebruik van de website coronacheck.nl wordt toestemming gevraagd voordat de persoon zijn of haar token kan invullen. De QR-code wordt gescand met CoronaCheck Scanner. In CoronaCheck Scanner worden geen persoonsgegevens vastgelegd. 
+De grondslag voor het verwerken van persoonsgegevens binnen CoronaCheck, op coronacheck.nl en de signing service is de toestemming van de gebruiker. Deze toestemming wordt in CoronaCheck gegeven door een gebruiker nadat de app op de smartphone van de gebruiker is geïnstalleerd en de gebruiker kennis heeft genomen van deze privacyverklaring. Bij gebruik van de website coronacheck.nl wordt toestemming gevraagd voordat de persoon zijn of haar ophaalcode kan invullen. De QR-code wordt gescand met CoronaCheck Scanner. In CoronaCheck Scanner worden geen persoonsgegevens vastgelegd. 
 
 ### 3. Met welk doel worden persoonsgegevens verwerkt?
 
@@ -76,10 +76,13 @@ Het digitaal tekenen van het testbewijs gebeurt bij Prolocation B.V. Prolocation
 
 Binnen CoronaCheck en in coronacheck.nl worden persoonsgegevens als volgt bewaard:
 
-- De persoon kan via CoronaCheck een digitaal testbewijs genereren. Het testbewijs is maximaal 40 uur geldig (gemeten na het tijdstip waarop de test is afgenomen). Nadat het testbewijs zijn geldigheid heeft verloren, worden het testbewijs en de aangemaakte QR-code automatisch verwijderd bij het openen van de app. De eerste letter van de voor- en achternaam en de geboortedag en –maand als onderdeel van het testbewijs van de gebruiker worden daarmee ook automatisch verwijderd.
-- De persoon kan via coronacheck.nl een testbewijs genereren dat kan worden geprint en gebruikt als fysiek testbewijs. De QR-code (inclusief set identificerende gegevens) wordt verwijderd zodra de persoon de browser waarin de QR-code wordt getoond sluit. Indien de persoon niet zelf de browser sluit verdwijnt de QR-code in de browser automatisch na 40 uur. 
-- Het IP-adres dat voor beheers- en beveiligingsdoeleinden wordt verwerkt door onze provider Prolocation B.V., wordt daarna maximaal 7 dagen verwijderd.
-- In de CoronaCheck Scanner app worden geen persoonsgegevens vastgelegd.
+De persoon kan via CoronaCheck een digitaal testbewijs genereren. Het testbewijs is maximaal 40 uur geldig (gemeten na het tijdstip waarop de test is afgenomen). Nadat het testbewijs zijn geldigheid heeft verloren, worden het testbewijs en de aangemaakte QR-code automatisch verwijderd bij het openen van de app. De eerste letter van de voor- en achternaam en de geboortedag en –maand als onderdeel van het testbewijs van de gebruiker worden daarmee ook automatisch verwijderd.
+
+De persoon kan via coronacheck.nl een testbewijs genereren dat kan worden geprint en gebruikt als fysiek testbewijs. De QR-code (inclusief set identificerende gegevens) wordt verwijderd zodra de persoon de browser waarin de QR-code wordt getoond sluit. Indien de persoon niet zelf de browser sluit verdwijnt de QR-code in de browser automatisch na 40 uur. 
+
+Het IP-adres dat voor beheers- en beveiligingsdoeleinden wordt verwerkt door onze provider Prolocation B.V., wordt daarna maximaal 7 dagen verwijderd.
+
+In de CoronaCheck Scanner app worden geen persoonsgegevens vastgelegd.
 
 ### 8. Uw rechten ten aanzien van uw persoonsgegevens
 
@@ -101,4 +104,4 @@ De Minister van Volksgezondheid, Welzijn en Sport neemt de bescherming van uw pe
 
 ### 11. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 22 april 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 30 april 2021.
