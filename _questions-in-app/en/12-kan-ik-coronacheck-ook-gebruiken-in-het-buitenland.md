@@ -1,7 +1,7 @@
 ---
 layout: in-app-question
-index: 12
-set: 2
+index: 4
+set: 3
 title: Can I use the CoronaCheck app abroad?
 lang: en
 categories:
