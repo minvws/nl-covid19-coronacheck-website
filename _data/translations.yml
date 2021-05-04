@@ -496,7 +496,7 @@ faq-category-general:
 faq-category-howtouse:
   nl: Toegang met testbewijs
   fy: 
-  en: Using CoronaCheck*
+  en: Getting access with a test declaration
   ar: 
   bg: 
   de: 
@@ -509,7 +509,7 @@ faq-category-howtouse:
 faq-category-usingtheapp:
   nl: Testbewijs in de app
   fy: 
-  en: Using CoronaCheck*
+  en: Test declaration in the app
   ar: 
   bg: 
   de: 
@@ -522,7 +522,7 @@ faq-category-usingtheapp:
 faq-category-usingprintversion:
   nl: Testbewijs op papier
   fy: 
-  en: Test declaration on paper
+  en: Printed test declaration
   ar: 
   bg: 
   de: 
@@ -548,7 +548,7 @@ faq-category-gettingtested:
 faq-category-misc:
   nl: Overig
   fy: 
-  en: Miscellaneous
+  en: Other questions
   ar: 
   bg: 
   de: 
@@ -561,7 +561,7 @@ faq-category-misc:
 faq-category-troubleshooting:
   nl: Problemen
   fy: 
-  en: Troubleshooting
+  en: Issues/errors
   ar: 
   bg: 
   de: 
