@@ -2,7 +2,7 @@
 layout: content
 index: 4
 set: 2
-title: Bij welke locaties is een testbewijs nodig als ik naar binnen wil?
+title: Which locations require a test declaration to get access?
 lang: en
 categories:
 - en
