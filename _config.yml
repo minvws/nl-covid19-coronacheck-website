@@ -76,7 +76,7 @@ defaults:
       path: "_questions-scanner/nl"
       type: "questions-scanner"
     values:
-      layout: in-app-question
+      layout: content
       categories:
       - nl
       - faq-scanner
@@ -89,11 +89,11 @@ defaults:
       path: "_questions-scanner/en"
       type: "questions-scanner"
     values:
-      layout: in-app-question
+      layout: content
       categories:
       - en
       - faq-scanner
-      lang: nl
+      lang: en
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
