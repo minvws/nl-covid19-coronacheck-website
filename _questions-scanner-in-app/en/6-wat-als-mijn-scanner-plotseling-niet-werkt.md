@@ -1,15 +1,8 @@
 ---
-layout: in-app-question
 index: 6
-set: 2
-title: What if my scanner suddenly doesn't work?
-lang: en
-categories:
-- en
-- faq-scanner-in-app
-showBreadCrumbs: true
-showContact: true
+set: 3
+title: Wat als mijn scanner plotseling niet werkt?
 ---
-Close and restart the app. 
+Sluit de app af en start ‘m opnieuw op. 
 
-Still doesn't work? Phone <a href="tel:0800-1421">0800-1421</a> or email  [helpdesk@coronacheck.nl](helpdesk@coronacheck.nl).
+Werkt de app nog steeds niet? Bel <a href="tel:0800-1421">0800-1421</a> of mail naar [helpdesk@coronacheck.nl](helpdesk@coronacheck.nl).

@@ -1,13 +1,12 @@
 ---
-layout: in-app-question
 index: 7
-set: 2
-title: I get a red screen after scanning a QR code. What now?
-lang: en
-categories:
-- en
-- faq-scanner-in-app
-showBreadCrumbs: true
-showContact: true
+set: 3
+title: Ik krijg na het scannen van een QR-code een rood scherm te zien, wat nu?
 ---
-A red screen means the visitor's QR code is not valid. This does not mean the visitor has tested positive for corona. It simply means the scanned QR code is not valid. This means they have either shared a screenshot or don't have a recent negative test declaration in their app. Without a valid test declaration, access is not permitted. 
+Rood scherm? Dat betekent niet dat de bezoeker corona heeft. Het betekent alleen dat de QR-code ongeldig is. Er is dus geen bewijs van een recente negatieve testuitslag of het testbewijs is verlopen (ouder dan 40 uur). Dit kun je doen:
+
+- Controleer of de bezoeker de QR-code vanuit de CoronaCheck-app laat zien. Een schermafbeelding of kopie van een QR-code uit de app geeft altijd een rood scherm
+- Vraag de bezoeker de app volledig af te sluiten en opnieuw op te starten. Scan daarna opnieuw de QR-code
+- Blijft er een rood scherm komen, terwijl de bezoeker wel een negatieve testuitslag heeft? Stuur de bezoeker naar onze helpdesk, telefoonnummer: <a href="tel:0800-1421">0800-1421</a>
+
+Er is altijd een groen scherm nodig voor toegang. Heeft de bezoeker geen (geldige) QR-code? Dan kun je de bezoeker niet binnenlaten. 

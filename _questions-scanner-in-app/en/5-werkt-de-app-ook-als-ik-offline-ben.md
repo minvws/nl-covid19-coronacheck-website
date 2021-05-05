@@ -1,15 +1,10 @@
 ---
-layout: in-app-question
 index: 5
-set: 2
-title: Does the app work without internet connection?
-lang: en
-categories:
-- en
-- faq-scanner-in-app
-showBreadCrumbs: true
-showContact: true
----
-Yes, you don't need an internet connection to scan the QR codes. You only need to be connected to the internet on the first time opening the app.
+set: 3
+title: Werkt de app ook als ik offline ben?
 
-Good to know: the visitors also don't need an internet connection to have their QR code scanned.
+showOnFAQoverview: true
+featuredHome: true
+featuredHomeIndex: 3
+---
+Je hebt geen internet nodig om QR-codes te scannen. Alleen de eerste keer dat je de app opent heb je verbinding met het internet nodig. Goed om te weten: de bezoeker heeft ook geen internet nodig om de QR-code in de CoronaCheck-app te laten scannen.

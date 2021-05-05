@@ -1,14 +1,8 @@
 ---
-layout: content
 index: 5
 set: 3
 title: Werkt de app ook als ik offline ben?
-lang: nl
-categories:
-- nl
-- faq-scanner
-showBreadCrumbs: true
-showContact: true
+
 showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 3

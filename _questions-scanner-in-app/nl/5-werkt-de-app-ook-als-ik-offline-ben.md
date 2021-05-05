@@ -1,14 +1,9 @@
 ---
-layout: in-app-question
+
 index: 5
 set: 3
 title: Werkt de app ook als ik offline ben?
-lang: nl
-categories:
-- nl
-- faq-scanner-in-app
-showBreadCrumbs: true
-showContact: true
+
 showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 3
