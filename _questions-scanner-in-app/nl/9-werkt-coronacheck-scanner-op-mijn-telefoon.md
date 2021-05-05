@@ -4,7 +4,7 @@ index: 9
 set: 1
 title: Werkt CoronaCheck Scanner op mijn telefoon? 
 
-showOnFAQoverview: true
+
 featuredHome: true
 featuredHomeIndex: 2
 ---

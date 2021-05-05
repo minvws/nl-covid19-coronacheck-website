@@ -1,12 +1,10 @@
 ---
 index: 9
 set: 1
-title: Werkt CoronaCheck Scanner op mijn telefoon? 
-
-showOnFAQoverview: true
+title: Is CoronaCheck Scanner compatible with my phone?
 featuredHome: true
 featuredHomeIndex: 2
 ---
-CoronaCheck Scanner is te gebruiken op alle iOS en Android-telefoons vanaf Android 6 en iOS 12 (de iPhone 5s en nieuwer). Ook is een werkende camera nodig.
+CoronaCheck Scanner works on all iOS and Android phones with Android 6 and iOS 12 and up (iPhone 5s and newer). You also need a working phone camera. 
 
-Het scannen aan de deur kan zonder internet. Wel heb je minimaal één keer per drie dagen internet nodig om een configuratie van de app op te halen.
+You don’t need an internet connection to scan for access at the entrance. You do need an internet connection once every three days minimum to sync the configuration of the app. 

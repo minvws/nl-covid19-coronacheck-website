@@ -1,24 +1,22 @@
 ---
 index: 3
 set: 1
-title: Hoe werkt het scannen met de CoronaCheck Scanner?
+title: How does the CoronaCheck Scanner work?
 ---
-1. **Houd afstand**
-    Druk op de knop 'Start Scannen' en vraag de bezoeker het testbewijs te laten zien. Dat mag zowel via de CoronaCheck-app als op papier. Het testbewijs, in de vorm van een QR-code, kan op veilige afstand uitgelezen worden.
+1. **Keep distance**
+    Press ‘Start Scan’ and ask the visitor to display their test declaration, either from the CoronaCheck app or printed off as a hard copy. The test declaration, in the form of a QR code, can be scanned from a safe distance. 
 
-2. **Scan de QR-code**
-    Richt de camera van je telefoon op het testbewijs van de bezoeker en scan de QR-code.
+2. **Scan the QR code**
+    Aim your phone camera at the visitor’s test declaration and scan the QR code.
 
-3. **Groen scherm**
-    Groen scherm? De bezoeker heeft een geldig testbewijs. Controleer nu of de gegevens op het groene scherm hetzelfde zijn als de gegevens op het identiteitsbewijs. Check? Dan mag de bezoeker naar binnen. Het kan zijn dat er ook een toegangskaartje nodig is.  
+3. **Green screen**
+    Green screen? The visitor has a valid negative test declaration. Check if the identifying data on the green screen corresponds with the details on the proof of identity. All good? Then the visitor is allowed access. They may need an additional entrance ticket. 
 
 4. **Rood scherm**
-    Rood scherm? Dat betekent niet dat de bezoeker corona heeft. Het betekent alleen dat de QR-code ongeldig is. Er is dus geen bewijs van een recente negatieve testuitslag of het testbewijs is verlopen (ouder dan 40 uur). Dit kun je doen:
+    A red screen does not mean the visitor has tested positive for corona. It simply means the QR code is not valid. This means there is no proof of a recent negative test result, or the test declaration has expired (older than 40 hours). In this case:
 
-    - Controleer of de bezoeker de QR-code vanuit de CoronaCheck-app laat zien. Een schermafbeelding of kopie van een QR-code uit de app geeft altijd een rood scherm 
-    - Vraag de bezoeker de app volledig af te sluiten en opnieuw op te starten. Scan daarna opnieuw de QR-code
-    - Blijft er een rood scherm komen, terwijl de bezoeker wel een negatieve testuitslag heeft? Stuur de bezoeker naar onze helpdesk, telefoonnummer: <a href="tel:0800-1421">0800-1421</a>.
+    - Check if the visitor has used a screenshot instead of the QR code directly from the app. Scanning a screenshot will lead to a red screen.
+    - Ask the visitor to restart the app. And try scanning again. 
+    - Keep getting a red screen while the visitor does have a negative test result? Please refer the visitor to our helpdesk at <a href="tel:0800-1421">0800-1421</a>.
 
-Er is altijd een groen scherm nodig voor toegang. Heeft de bezoeker geen (geldige) QR-code? Dan kun je de bezoeker niet binnenlaten. 
-
-Kijk voor meer informatie op [www.coronacheck.nl/scanner](/nl/scanner).
+At all times, a green screen is required for access. If the visitor doesn’t have a (valid) QR code, you can’t give them access. For more information, visit [www.coronacheck.nl/scanner](/en/scanner).

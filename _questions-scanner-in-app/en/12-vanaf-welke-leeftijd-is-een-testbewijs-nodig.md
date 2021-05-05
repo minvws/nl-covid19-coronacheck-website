@@ -1,6 +1,6 @@
 ---
 index: 3
 set: 2
-title: Vanaf welke leeftijd is een testbewijs nodig?
+title: From what age is a test declaration required? 
 ---
-Bezoekers vanaf 12 jaar moeten een testbewijs laten zien bij evenementen en activiteiten waar een testbewijs juridisch verplicht is. Dit geldt ook voor de pilots testen voor toegang.
+Visitors from ages 12 and over are required to display a test declaration for events and activities legally requiring a test declaration. This also applies to the pilots ‘ Testen voor Toegang’. 

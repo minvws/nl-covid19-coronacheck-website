@@ -1,10 +1,10 @@
 ---
 index: 1
 set: 2
-title: Bij welke locaties is een testbewijs nodig als bezoekers naar binnen willen?
+title: For which locations do visitors need a test declaration to get access?
 ---
-Op dit moment wordt de CoronaCheck-app alleen getest tijdens pilots testen voor toegang. Kijk voor de evenementen met testbewijs in april op <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>de website van de Rijksoverheid</a>.
+The CoronaCheck app is currently only tested during pilots for ‘Testen voor Toegang’. For an overview of events requiring a test declaration, see the <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website of the Dutch Government (Dutch)</a>.
 
-In de toekomst is voor toegang tot bepaalde sociale, culturele of sportieve locaties een negatieve testuitslag nodig. Denk bijvoorbeeld aan een bezoek aan het museum, een festival of een voetbalwedstrijd. 
+In the future, access to certain social, cultural or sports events will require a negative test result. Such as a visit to a museum, festival or football match. 
 
-Het kabinet bepaalt welke locaties een testbewijs nodig hebben. Maar eerst moet de wet goedgekeurd worden. Het testbewijs wordt slechts tijdelijk ingezet, om bepaalde activiteiten snel en verantwoord mogelijk te maken. 
+The government will determine which locations should require a test declaration, but only after the legal bills have been passed. The test declaration is only a temporary means to help us reopen certain events in a safe and responsible manner. 

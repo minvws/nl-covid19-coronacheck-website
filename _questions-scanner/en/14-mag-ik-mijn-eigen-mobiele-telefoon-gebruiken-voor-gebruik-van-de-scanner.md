@@ -1,6 +1,6 @@
 ---
 index: 14
 set: 1
-title: Mag ik mijn eigen mobiele telefoon gebruiken voor gebruik van de CoronaCheck Scanner?
+title: Am I allowed to use my personal mobile phone to use the CoronaCheck Scanner app?
 ---
-Ja, dat mag.
+Yes, that’s allowed.

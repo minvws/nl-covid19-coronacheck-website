@@ -1,8 +1,8 @@
 ---
 index: 1
 set: 4
-title: Welke gegevens worden door CoronaCheck Scanner verwerkt en opgeslagen?
+title: What data is processed and saved by the CoronaCheck Scanner?
 ---
-De CoronaCheck Scanner controleert of de QR-code van de bezoeker geldig is. Ook zie je als controleur een aantal minimale gegevens: (1) de eerste letter van de voornaam, (2) de eerste letter van de achternaam, (3) de geboortedag en (4) de geboortemaand. Dit is ter controle, om zeker te zijn dat het testbewijs bij de persoon hoort. 
+The CoronaCheck Scanner app checks the validity of the visitor’s QR code. The scanner also checks a minimum amount of identifying data: (1) the first name initial, (2) the last name initial, (3) the day of birth and (4) the month of birth. This check is to ensure the test result belongs to the visitor.
 
-De CoronaCheck Scanner slaat deze set gegevens niet op.
+This data is not saved by the CoronaCheck Scanner app. 

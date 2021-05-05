@@ -1,12 +1,10 @@
 ---
 index: 2
 set: 2
-title: Mag ik iemand zonder geldig testbewijs binnen laten? 
-
-showOnFAQoverview: true
+title: Can I allow a visitor access without a proof of identity or a valid test declaration in the CoronaCheck app or on paper?
 featuredHome: true
 featuredHomeIndex: 2
 ---
-Nee, de bezoeker moet altijd een geldig testbewijs en identiteitsbewijs laten zien. Ook tijdens de pilots testen voor toegang is een testbewijs verplicht. 
+No, at all times the visitor must be able to show a valid test declaration and proof of identity.  A test declaration is also required during the pilots ‘Testen voor Toegang’.  
 
-Je controleert de geldigheid van het testbewijs met behulp van de CoronaCheck Scanner. Groen scherm? De bezoeker heeft een geldig testbewijs. Controleer nu of de gegevens op het groene scherm hetzelfde zijn als de gegevens op het identiteitsbewijs. Check? Dan mag de bezoeker naar binnen. Het kan zijn dat er ook een toegangskaartje nodig is. 
+You can check the validity of a test declaration with the CoronaCheck Scanner app. Green screen? That means the visitor’s test declaration is valid. You can now check if the identifying data on the green screen match the details on their proof of identity. All good? Then they’re allowed access. They may also need an additional entrance ticket. 

@@ -1,10 +1,10 @@
 ---
 index: 15
 set: 1
-title: Kan ik een APK-bestand downloaden om de CoronaCheck Scanner op een Mobile Device Management Systeem te zetten?
+title: Can I download an APK file to convert CoronaCheck Scanner to a Mobile Device Management System?
 ---
-Ja, dat kan. Je kunt het APK-bestand downloaden via deze link: 
+Yes, you can. You can download the APK-file via this link:
 
-<a href="/files/apk/nl.rijksoverheid.ctr.verifier/latest.apk" class="btn btn--cta">Download APK bestand</a>
+<a href="/files/apk/nl.rijksoverheid.ctr.verifier/latest.apk" class="btn btn--cta">Download APK file</a>
 
-Let op: de CoronaCheck Scanner wordt regelmatig geüpdatet. Soms is dit een verplichte update. In dat geval werkt de CoronaCheck Scanner niet meer totdat de nieuwe versie geïnstalleerd is. De app geeft hier een melding van en verwijst je naar de store. Heb je de Scanner handmatig via het APK-bestand geïnstalleerd? Dan moet je ook handmatig de app bijwerken bij op het moment dat je deze melding krijgt. Advies: maak zoveel mogelijk gebruik van de CoronaCheck Scanner vanuit de Apple App Store en Google Play Store.
+Note: CoronaCheck Scanner is being updated on a regular basis. Sometimes this is a mandatory update. In that case, the CoronaCheck Scanner will no longer work until the new version is installed. The app will notify you and refer you to the store. Did you install the Scanner manually via the APK file? Then you also have to manually update the app when you receive this notification. Advice: use the CoronaCheck Scanner from the Apple App Store and Google Play Store as much as possible.

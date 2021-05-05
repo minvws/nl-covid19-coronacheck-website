@@ -1,6 +1,6 @@
 ---
 index: 4
 set: 2
-title: Kan het testbewijs meerdere keren gescand worden?
+title: Can the test declaration be scanned multiple times?
 ---
-Ja, dat kan. Een testbewijs is geldig tot 40 uur na het moment van testen. Binnen deze 40 uur kan het testbewijs (de QR-code) meerdere keren gescand worden. 
+Yes, that’s possible. A test declaration is valid for 40 hours after the time of testing. Within this time frame, the test declaration (QR code) can be scanned multiple times. 

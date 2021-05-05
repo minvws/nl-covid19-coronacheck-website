@@ -1,8 +1,8 @@
 ---
 index: 1
 set: 1
-title: Waarom ontwikkelt de overheid CoronaCheck Scanner?
+title: Why is the government developing the CoronaCheck Scanner?
 ---
-De overheid wil dat sociale, culturele en sportieve locaties in tijden van corona op verantwoorde manier open kunnen. Dankzij de app CoronaCheck krijgen bezoekers toegang tot deze locaties. Maar alleen als uit een coronatest blijkt dat zij op dat moment geen corona hadden. 
-
-Met CoronaCheck Scanner kan de controleur bij de ingang de geldigheid van het testbewijs van de bezoeker controleren.
+The Dutch government wants to open social, cultural and sports locations in a responsible manner in times of corona. The CoronaCheck app allows visitors access to these locations, though only if a corona test shows they did not have corona at the time of testing.
+ 
+With the CoronaCheck Scanner, the scanner checks the validity of the visitor’s test declaration at the entrance.

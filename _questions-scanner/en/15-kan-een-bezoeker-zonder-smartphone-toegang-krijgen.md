@@ -1,6 +1,6 @@
 ---
 index: 5
 set: 2
-title: Kan een bezoeker zonder smartphone toegang krijgen tot een locatie waar een testbewijs nodig is?
+title: Can a visitor get access to a location that requires a test declaration if they don’t own a smartphone?
 ---
-Ja, ook zonder smartphone kun je een testbewijs krijgen. Print jouw testbewijs uit via [www.coronacheck.nl/print/](/print).
+Yes, even without a smartphone a visitor can get access with a test declaration. You can print off a hard copy of your test declaration at [www.coronacheck.nl/print/](/print).

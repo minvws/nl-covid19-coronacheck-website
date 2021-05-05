@@ -3,7 +3,7 @@ index: 2
 set: 2
 title: Mag ik iemand zonder geldig testbewijs binnen laten? 
 
-showOnFAQoverview: true
+
 featuredHome: true
 featuredHomeIndex: 2
 ---
