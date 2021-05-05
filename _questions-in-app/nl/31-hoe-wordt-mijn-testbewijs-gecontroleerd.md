@@ -2,7 +2,7 @@
 index: 6
 set: 2
 title: Hoe wordt mijn testbewijs gecontroleerd? 
-showOnFAQoverview: true
+
 featuredHome: true
 featuredHomeIndex: 5
 ---

@@ -2,7 +2,6 @@
 index: 13
 set: 7
 title: The app doesn't show a negative test result. Why?
-published: true
 ---
 If the app doesn't show a negative test result, there are 2 possible scenarios:
 

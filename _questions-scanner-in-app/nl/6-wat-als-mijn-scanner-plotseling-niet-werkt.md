@@ -3,7 +3,6 @@
 index: 6
 set: 3
 title: Wat als mijn scanner plotseling niet werkt?
-
 ---
 Sluit de app af en start ‘m opnieuw op. 
 

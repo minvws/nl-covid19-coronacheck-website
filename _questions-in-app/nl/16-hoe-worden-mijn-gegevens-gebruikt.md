@@ -2,7 +2,7 @@
 index: 16
 set: 8
 title: Hoe worden mijn gegevens gebruikt? 
-showOnFAQoverview: true
+
 featuredHome: true
 featuredHomeIndex: 3
 ---

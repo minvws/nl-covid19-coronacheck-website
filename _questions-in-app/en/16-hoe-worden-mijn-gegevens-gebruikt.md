@@ -2,7 +2,7 @@
 index: 16
 set: 8
 title: What happens to my data? 
-showOnFAQoverview: true
+
 featuredHome: true
 featuredHomeIndex: 3
 ---

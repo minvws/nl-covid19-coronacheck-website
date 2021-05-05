@@ -2,12 +2,7 @@
 index: 4
 set: 2
 title: Bij welke locaties is een testbewijs nodig als ik naar binnen wil?
-lang: nl
-categories:
-- nl
-- faq
-showBreadCrumbs: true
-showContact: true
+
 
 featuredHome: true
 featuredHomeIndex: 4

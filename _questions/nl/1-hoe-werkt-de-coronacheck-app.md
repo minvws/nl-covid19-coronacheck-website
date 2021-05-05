@@ -2,12 +2,7 @@
 index: 1
 set: 3
 title: Hoe werkt de CoronaCheck-app?
-lang: nl
-categories:
-- nl
-- faq
-showBreadCrumbs: true
-showContact: true
+
 
 featuredHome: true
 featuredHomeIndex: 1

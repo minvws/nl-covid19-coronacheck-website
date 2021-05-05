@@ -2,12 +2,7 @@
 index: 3
 set: 3
 title: Werkt CoronaCheck op mijn telefoon? 
-lang: nl
-categories:
-- nl
-- faq
-showBreadCrumbs: true
-showContact: true
+
 
 featuredHome: true
 featuredHomeIndex: 6

@@ -2,13 +2,6 @@
 index: 3
 set: 1
 title: Wanneer zijn de apps klaar voor gebruik?
-lang: nl
-categories:
-- nl
-- faq
-showBreadCrumbs: true
-showContact: true
-
 ---
 CoronaCheck en CoronaCheck Scanner worden op dit moment getest tijdens de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>pilots 'Testen voor Toegang'</a>. Zo zien we of de apps goed werken en hoe ze verbeterd kunnen worden.
 
