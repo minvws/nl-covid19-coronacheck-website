@@ -1,14 +1,7 @@
 ---
-layout: content
 index: 2
 set: 3
 title: Kan ik een testbewijs voor iemand anders in mijn CoronaCheck-app toevoegen?
-lang: nl
-categories:
-- nl
-- faq
-showBreadCrumbs: true
-showContact: true
 ---
 Nee, het is op dit moment nog niet mogelijk om een testbewijs voor iemand anders toe te voegen in de CoronaCheck-app. 
 

@@ -1,14 +1,7 @@
 ---
-layout: in-app-question
 index: 1
 set: 3
-title: Hoe werkt de CoronaCheck-app?
-lang: nl
-categories:
-- nl
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
+title: Hoe werkt de CoronaCheck-app? 
 showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 1

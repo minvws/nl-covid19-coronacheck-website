@@ -1,5 +1,4 @@
 ---
-layout: content
 index: 13
 set: 7
 title: De app zegt dat er geen negatieve testuitslag gevonden is. Hoe kan dit?

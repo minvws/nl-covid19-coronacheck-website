@@ -1,14 +1,7 @@
 ---
-layout: in-app-question
 index: 16
 set: 8
-title: What happens to my data?
-lang: en
-categories:
-- en
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
+title: What happens to my data? 
 showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 3

@@ -1,14 +1,8 @@
 ---
-layout: in-app-question
 index: 30
 set: 1
 title: "Research: How do we know if CoronaCheck works?"
-lang: en
-categories:
-- en
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
+
 ---
 A multidisciplinary team of experts conducts ongoing research into the printed test declaration and the CoronaCheck and CoronaCheck Scanner apps. This includes both quantitative and qualitative research focusing on the goals of CoronaCheck.
 

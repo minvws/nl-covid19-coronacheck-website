@@ -1,15 +1,7 @@
 ---
-layout: content
 index: 3
 set: 2
 title: How long is my test declaration valid?
-lang: en
-categories:
-- en
-- faq
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 2
 ---

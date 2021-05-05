@@ -1,15 +1,7 @@
 ---
-layout: content
 index: 6
 set: 2
 title: How is my test declaration checked?
-lang: en
-categories:
-- en
-- faq
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 5
 ---

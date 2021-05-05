@@ -1,5 +1,4 @@
 ---
-layout: content
 index: 4
 set: 2
 title: Bij welke locaties is een testbewijs nodig als ik naar binnen wil?
@@ -9,7 +8,7 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
-showOnFAQoverview: true
+
 featuredHome: true
 featuredHomeIndex: 4
 ---

@@ -1,15 +1,7 @@
 ---
-layout: content
 index: 1
 set: 3
 title: How does the CoronaCheck app work?
-lang: en
-categories:
-- en
-- faq
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 1
 featuredHomeIcon: app-touch

@@ -1,14 +1,7 @@
 ---
-layout: content
 index: 2
 set: 3
 title: Can I add someone else’s test declaration to my CoronaCheck app?
-lang: en
-categories:
-- en
-- faq
-showBreadCrumbs: true
-showContact: true
 ---
 At this time, it is not possible to add another person’s test declaration to your CoronaCheck app. 
 

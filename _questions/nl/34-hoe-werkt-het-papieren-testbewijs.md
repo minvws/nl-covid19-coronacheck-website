@@ -1,5 +1,4 @@
 ---
-layout: content
 index: 1
 set: 4
 title: Hoe werkt het papieren testbewijs? 
@@ -9,7 +8,7 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
-showOnFAQoverview: true
+
 ---
 Geen smartphone of liever een papieren testbewijs? Ga naar [www.coronacheck.nl/print](http://www.coronacheck.nl/print) en volg deze stappen: 
 

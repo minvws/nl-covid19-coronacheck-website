@@ -1,14 +1,7 @@
 ---
-layout: content
 index: 2
 set: 1
 title: Why is the government developing the CoronaCheck app?
-lang: en
-categories:
-- en
-- faq
-showBreadCrumbs: true
-showContact: true
 ---
 The government is working hard to open public venues in a responsible manner. The pilots ‘Testen voor Toegang’ are part of this. Access testing plays a key role and allows opening of social, cultural and sports locations faster yet responsibly.
  

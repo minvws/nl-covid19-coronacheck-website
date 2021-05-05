@@ -1,15 +1,7 @@
 ---
-layout: in-app-question
 index: 1
 set: 4
 title: How does the printed test declaration work?
-lang: en
-categories:
-- en
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
 ---
 Don't own a smartphone or prefer a printed test declaration? Go to  [www.coronacheck.nl/print](http://www.coronacheck.nl/print) and follow these steps: 
 

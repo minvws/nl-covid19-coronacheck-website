@@ -1,14 +1,7 @@
 ---
-layout: in-app-question
 index: 13
 set: 7
 title: The app doesn't show a negative test result. Why?
-lang: en
-categories:
-- en
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
 ---
 If the app doesn't show a negative test result, there are 2 possible scenarios:
 

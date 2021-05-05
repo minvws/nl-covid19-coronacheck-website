@@ -1,14 +1,7 @@
 ---
-layout: content
 index: 6
 set: 6
 title: Despite my negative test result, the GGD orders me to self-isolate. What do I do?
-lang: en
-categories:
-- en
-- faq
-showBreadCrumbs: true
-showContact: true
 ---
 Follow the GGD’s recommendations and stay in quarantine. The negative test result is only a reflection of the time of testing.
 

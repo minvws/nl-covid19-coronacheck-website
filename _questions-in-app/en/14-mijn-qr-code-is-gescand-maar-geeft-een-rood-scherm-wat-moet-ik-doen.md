@@ -1,14 +1,7 @@
 ---
-layout: in-app-question
 index: 14
 set: 7
 title: My QR code has been scanned but gives a red screen. What do I do?
-lang: en
-categories:
-- en
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
 ---
 A red screen means your QR code is not valid. Always display your QR code directly from the CoronaCheck app. A screenshot or other duplicate of a QR code is not valid and will lead to a red screen.
 

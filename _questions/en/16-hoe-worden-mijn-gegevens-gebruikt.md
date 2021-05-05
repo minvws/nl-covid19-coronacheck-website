@@ -1,15 +1,7 @@
 ---
-layout: content
 index: 16
 set: 8
 title: What happens to my data?
-lang: en
-categories:
-- en
-- faq
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 3
 ---

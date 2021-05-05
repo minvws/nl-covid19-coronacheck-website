@@ -1,15 +1,7 @@
 ---
-layout: content
 index: 4
 set: 2
 title: Which locations require a test declaration to get access?
-lang: en
-categories:
-- en
-- faq
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 4
 ---

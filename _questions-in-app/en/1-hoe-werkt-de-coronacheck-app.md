@@ -1,15 +1,7 @@
 ---
-layout: in-app-question
 index: 1
 set: 3
 title: How does the CoronaCheck app work?
-lang: en
-categories:
-- en
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
 ---
 As a visitor, you first take a corona test. If your test proves you don't have coronavirus at that time, you get access to certain social, cultural or sports activities.
  

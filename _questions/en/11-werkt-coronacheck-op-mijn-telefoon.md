@@ -1,15 +1,7 @@
 ---
-layout: content
 index: 3
 set: 3
 title: Is the CoronaCheck app compatible with my phone?
-lang: en
-categories:
-- en
-- faq
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
 featuredHome: true
 featuredHomeIndex: 6
 ---

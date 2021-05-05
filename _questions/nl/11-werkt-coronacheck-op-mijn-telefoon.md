@@ -1,5 +1,4 @@
 ---
-layout: content
 index: 3
 set: 3
 title: Werkt CoronaCheck op mijn telefoon? 
@@ -9,7 +8,7 @@ categories:
 - faq
 showBreadCrumbs: true
 showContact: true
-showOnFAQoverview: true
+
 featuredHome: true
 featuredHomeIndex: 6
 ---
