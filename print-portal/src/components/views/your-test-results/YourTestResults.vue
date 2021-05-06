@@ -37,7 +37,6 @@ export default {
                         url: '/staticproof/paper',
                         data: this.signature
                     }).then((response) => {
-                        console.log(response);
                         if (response.data.status === 'ok' && response.data.error === 0) {
                             this.$store.commit('setQrCode', response.data.qr.data);
                             this.$store.commit('setQrData', response.data.qr.attributesIssued);

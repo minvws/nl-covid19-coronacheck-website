@@ -66,7 +66,7 @@ export default {
         },
         fileName() {
             const info = [
-                dateTool.dateToString((this.qrData.sampleTime * 1000), 'yyyyMMdd'),
+                dateTool.dateToString((this.qrData.sampleTime * 1000), 'yyyyMMdd', this.currentLanguage.locale),
                 'coronacheck',
                 'testbewijs',
                 this.holderString
@@ -216,7 +216,7 @@ export default {
                 text: this.$t('pdf.testedAt'),
                 position: [pageMarginLeft, (tableBaseY + 3 * lineHeight)]
             }, {
-                text: dateTool.dateToString((this.qrData.sampleTime * 1000), this.currentLanguage.locale),
+                text: dateTool.dateToString((this.qrData.sampleTime * 1000), 'dd-MM-yyyy HH:mm', this.currentLanguage.locale),
                 fontWeight: 700,
                 position: [tableBaseCol2X, (tableBaseY + 3 * lineHeight)]
             }, {
@@ -249,7 +249,7 @@ export default {
                 fontSize: 10,
                 position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding)]
             }, {
-                text: this.$t('pdf.footertext'),
+                text: this.$t('pdf.footerText'),
                 lineHeight: lineHeightSmall,
                 position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding + 2 * lineHeightSmall)],
                 width: (pageWidth / 2 - 20 - (2 * questionsTablePadding))
