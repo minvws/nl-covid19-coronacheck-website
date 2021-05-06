@@ -5,7 +5,7 @@ import dictionary from '@/data/language/dictionary';
 Vue.use(VueI18n)
 
 export default new VueI18n({
-    locale: 'en',
+    locale: 'nl',
     fallbackLocale: 'nl',
     messages: dictionary
 })

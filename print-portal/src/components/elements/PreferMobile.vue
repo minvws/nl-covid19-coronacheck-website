@@ -19,7 +19,7 @@ export default {
                 {{$t('preferMobile')}}
             </h3>
             <p>
-                {{$t('Then download the app. You can also make a print of the test declaration in the app.')}}
+                {{$t('preferMobileDirection')}}
             </p>
             <ul class="layout-app-badges">
                 <li class="app_badge_column__left">
