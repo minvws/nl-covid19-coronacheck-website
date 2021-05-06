@@ -32,6 +32,15 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
         'yourTestProof': 'Your test declaration',
         'validUntil': 'Valid until'
     },
+    'image': {
+        'holder': {
+            'overview': 'My overview',
+            'showQrIntro': 'Show your QR code and your ID at the entrance of the location you are visiting.',
+            'myQr': 'My QR code',
+            'validText': 'Valid until<br> March 11th 14:06',
+            'showQr': 'Show QR'
+        }
+    },
     'back': 'Back',
     'changeLanguage': 'Change language',
     'close': 'Close',
@@ -43,7 +52,7 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
     'enterCode': 'Retrieve test result',
     'expiredTestCodeHead': 'Your QR code has expired',
     'expiredTestCodeBody': '<p>The code you\'ve entered is invalid. Please check it. Need a new QR code? Get tested again.</p>',
-    'faq': 'frequently asked questions',
+    'faq': 'Frequently asked questions',
     'forInstanceAbbr': 'E.g.',
     'generalError': 'Sorry, something went wrong',
     'generalErrorBody': '<p>Because of a technical error. Contact the CoronaCheck helpdesk via 0800-1421.</p>',

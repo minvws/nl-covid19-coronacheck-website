@@ -1,7 +1,9 @@
 <script>
+import ImageHolder from './i18n-images/ImageHolder';
+
 export default {
     name: 'PreferMobile',
-    components: {},
+    components: { ImageHolder },
     computed: {},
     methods: {}
 }
@@ -10,9 +12,7 @@ export default {
 <template>
     <div class="PreferMobile">
         <div class="PreferMobile__image">
-            <img
-                alt="Liever je testbewijs op je mobiel?"
-                src="assets/img/artwork/mobile-phone-using-coronacheck.png"/>
+            <ImageHolder/>
         </div>
         <div class="PreferMobile__text">
             <h3>
@@ -27,7 +27,7 @@ export default {
                         class="app-store"
                         href="https://apps.apple.com/nl/app/coronacheck/id1548269870"
                         target="_blank">
-                        <img src="assets/img/app-store-badges/app-store-badge-nl.svg"/>
+                        <img :src="'assets/img/app-store-badges/app-store-badge-' + currentLanguage.locale + '.svg'"/>
                     </a>
                 </li>
                 <li class="app_badge_column__right">
@@ -35,7 +35,7 @@ export default {
                         class="play-store"
                         href="https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder"
                         target="_blank">
-                        <img src="assets/img/app-store-badges/google-play-badge-nl.svg"/>
+                        <img :src="'assets/img/app-store-badges/google-play-badge-' + currentLanguage.locale + '.svg'"/>
                     </a>
                 </li>
             </ul>

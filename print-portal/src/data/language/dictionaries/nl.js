@@ -34,6 +34,15 @@ Let op: dit is géén toegangsticket voor je activiteit`,
         'yourTestProof': 'Je testbewijs',
         'validUntil': 'Geldig tot'
     },
+    'image': {
+        'holder': {
+            'overview': 'Mijn overzicht',
+            'showQrIntro': 'Laat zowel de QR-code als je identiteitsbewijs zien bij de ingang van de locatie die je bezoekt.',
+            'myQr': 'Mijn QR-code',
+            'validText': 'Geldig tot donderdag<br>11 maart 14:06',
+            'showQr': 'Toon QR'
+        }
+    },
     'back': 'Terug',
     'changeLanguage': 'Wissel van taal',
     'close': 'Sluiten',
