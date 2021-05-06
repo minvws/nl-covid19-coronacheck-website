@@ -1528,6 +1528,11 @@ scanner-instructions-title:
   fy: 
   en: How does scanning work?
 
+print-version-img:
+  nl: /img/printbewijs.png
+  fy: 
+  en: /img/printbewijs-en.png
+
 print-version-title:
   nl: Liever een papieren testbewijs?
   fy: 
