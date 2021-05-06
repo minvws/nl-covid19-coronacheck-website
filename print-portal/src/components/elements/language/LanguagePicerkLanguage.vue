@@ -18,6 +18,7 @@ export default {
     methods: {
         select() {
             this.$store.commit('languages/setCurrent', this.language);
+            this.$i18n.locale = this.language.locale;
             this.$parent.$parent.close();
         }
     }

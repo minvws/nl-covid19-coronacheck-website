@@ -9,7 +9,7 @@ Vue.use(Vuex)
 
 const state = {
     holderConfig: null,
-    testCode: (process.env.NODE_ENV === 'development') ? 'ZZZ-Q2VUSXRJV5RZQG-52' : '',
+    testCode: (process.env.NODE_ENV === 'development') ? 'ZZZ-9B5F42BF23F68Z-52' : '',
     verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
     testResultStatus: 'idle',
     verificationNeeded: false,
