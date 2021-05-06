@@ -21,6 +21,17 @@ export default {
         close() {
             this.isOpen = false;
         }
+    },
+    watch: {
+        currentLanguage: function (newValue, oldValue) {
+            if (process.env.NODE_ENV === 'production') {
+                if (newValue && oldValue) {
+                    const route = this.$route;
+                    const url = 'www.coronacheck.nl/' + this.currentLanguage.locale + route.path;
+                    window.open(url);
+                }
+            }
+        }
     }
 }
 </script>
