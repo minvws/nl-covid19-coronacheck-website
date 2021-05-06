@@ -1,7 +1,7 @@
 ---
 index: 2
 set: 2
-title: Can I allow a visitor access without a proof of identity or a valid test declaration in the CoronaCheck app or on paper?
+title: Can I allow a visitor access without a proof of identity or a valid test declaration?
 featuredHome: true
 featuredHomeIndex: 2
 ---
