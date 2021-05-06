@@ -1,15 +1,10 @@
 ---
-layout: in-app-question
+
 index: 9
 set: 1
 title: Werkt CoronaCheck Scanner op mijn telefoon? 
-lang: nl
-categories:
-- nl
-- faq-scanner-in-app
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
+
+
 featuredHome: true
 featuredHomeIndex: 2
 ---

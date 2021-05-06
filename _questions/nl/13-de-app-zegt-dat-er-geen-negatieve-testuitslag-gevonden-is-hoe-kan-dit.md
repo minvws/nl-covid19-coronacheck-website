@@ -1,15 +1,7 @@
 ---
-layout: content
 index: 13
 set: 7
 title: De app zegt dat er geen negatieve testuitslag gevonden is. Hoe kan dit?
-lang: nl
-categories:
-- nl
-- faq
-showBreadCrumbs: true
-showContact: true
-published: true
 ---
 Dat kan meerdere oorzaken hebben:
 

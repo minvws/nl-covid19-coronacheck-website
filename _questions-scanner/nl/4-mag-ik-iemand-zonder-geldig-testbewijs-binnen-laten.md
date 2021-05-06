@@ -1,15 +1,9 @@
 ---
-layout: content
 index: 2
 set: 2
 title: Mag ik iemand zonder geldig testbewijs binnen laten? 
-lang: nl
-categories:
-- nl
-- faq-scanner
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
+
+
 featuredHome: true
 featuredHomeIndex: 2
 ---

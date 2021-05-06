@@ -1,14 +1,7 @@
 ---
-layout: in-app-question
 index: 3
 set: 1
 title: Hoe werkt het scannen met de CoronaCheck Scanner?
-lang: nl
-categories:
-- nl
-- faq-scanner-in-app
-showBreadCrumbs: true
-showContact: true
 ---
 1. **Houd afstand**
     Druk op de knop 'Start Scannen' en vraag de bezoeker het testbewijs te laten zien. Dat mag zowel via de CoronaCheck-app als op papier. Het testbewijs, in de vorm van een QR-code, kan op veilige afstand uitgelezen worden.

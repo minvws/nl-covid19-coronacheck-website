@@ -1,14 +1,7 @@
 ---
-layout: content
 index: 2
 set: 1
 title: Waarom ontwikkelt de overheid de CoronaCheck-app?
-lang: nl
-categories:
-- nl
-- faq
-showBreadCrumbs: true
-showContact: true
 ---
 De overheid werkt hard om de samenleving verantwoord te openen. De pilots testen voor toegang zijn daar onderdeel van. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open. 
 

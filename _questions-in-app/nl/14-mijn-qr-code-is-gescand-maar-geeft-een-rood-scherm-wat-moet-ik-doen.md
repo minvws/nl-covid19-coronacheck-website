@@ -1,14 +1,7 @@
 ---
-layout: in-app-question
 index: 14
 set: 7
 title: Mijn QR-code is gescand, maar geeft een rood scherm. Wat moet ik doen?
-lang: nl
-categories:
-- nl
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
 ---
 Rood scherm? Dat betekent dat je testbewijs, in de vorm van een QR-code, ongeldig is. Er is dus geen bewijs van een recente negatieve testuitslag of je testbewijs is verlopen. Dit kun je doen:
 

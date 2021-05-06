@@ -1,15 +1,8 @@
 ---
-layout: in-app-question
 index: 3
 set: 2
-title: Hoe lang is mijn testbewijs geldig?
-lang: nl
-categories:
-- nl
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
+title: Hoe lang is mijn testbewijs geldig? 
+
 featuredHome: true
 featuredHomeIndex: 2
 ---

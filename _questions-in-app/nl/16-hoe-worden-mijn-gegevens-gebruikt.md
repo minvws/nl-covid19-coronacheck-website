@@ -1,15 +1,8 @@
 ---
-layout: in-app-question
 index: 16
 set: 8
-title: Hoe worden mijn gegevens gebruikt?
-lang: nl
-categories:
-- nl
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
+title: Hoe worden mijn gegevens gebruikt? 
+
 featuredHome: true
 featuredHomeIndex: 3
 ---

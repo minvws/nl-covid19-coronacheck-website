@@ -1,14 +1,7 @@
 ---
-layout: in-app-question
 index: 15
 set: 7
 title: Wat als de app een storing krijgt als ik naar binnen wil?
-lang: nl
-categories:
-- nl
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
 ---
 Sluit de app dan af en start ‘m opnieuw op. 
 

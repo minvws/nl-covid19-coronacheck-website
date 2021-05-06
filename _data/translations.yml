@@ -106,7 +106,7 @@ header-skip-to-content:
 header-title:
   nl: Krijg toegang met de CoronaCheck-app
   fy: CoronaCheck
-  en: CoronaCheck
+  en: Get access with the CoronaCheck app
   ar: CoronaCheck
   bg: CoronaCheck
   de: CoronaCheck
@@ -119,7 +119,7 @@ header-title:
 header-subtitle:
   nl: Met de app bewijs je dat je negatief getest bent op corona. Je kan CoronaCheck momenteel gebruiken tijdens de pilots van Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
   fy: 
-  en: Get tested, gain access*
+  en: With this app, you are able to prove you've recently tested negative for corona. You can use CoronaCheck during the pilots Testen voor Toegang. Find an up-to-date overview of the pilots on the <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' hreflang="nl" rel='noopener noreferrer'>website of the Dutch Government (Dutch)</a>.
   ar: 
   bg: 
   de: 
@@ -132,7 +132,7 @@ header-subtitle:
 scanner-header-title:
   nl: Geef toegang met de CoronaCheck Scanner
   fy: 
-  en: CoronaCheck Scanner 
+  en: Allow access with CoronaCheck Scanner 
   ar: 
   bg: 
   de: 
@@ -145,7 +145,7 @@ scanner-header-title:
 scanner-header-subtitle:
   nl: Met CoronaCheck Scanner controleer je de geldigheid van het testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt tijdens de pilots Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
   fy: 
-  en: Open the doors safely*
+  en: With CoronaCheck Scanner you check the validity of the visitor’s negative test result. And also if the data on your screen matches the data on the proof of identity. You can use the CoronaCheck Scanner during the pilots Testen voor Toegang. Find an up-to-date overview of the pilots on the <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' hreflang="nl" rel='noopener noreferrer'>website of the Dutch Government (Dutch)</a>.
   ar: 
   bg: 
   de: 
@@ -155,10 +155,15 @@ scanner-header-subtitle:
   ro: 
   tr: 
 
+coronacheck-header-img:
+  nl: /img/CoronaCheck_app.png
+  fy: /img/CoronaCheck_app.png
+  en: /img/CoronaCheck_app-en.png
+
 coronacheck-header-alt:
   nl: Voorbeeld van de CoronaCheck app
   fy: 
-  en: 
+  en: Example of the CoronaCheck app
   ar: 
   bg: 
   de: 
@@ -168,10 +173,15 @@ coronacheck-header-alt:
   ro: 
   tr: 
     
+scanner-header-img:
+  nl: /img/CoronaCheckScanner_app-tall.png
+  fy: /img/CoronaCheckScanner_app-tall.png
+  en: /img/CoronaCheckScanner_app-tall-en.png
+
 scanner-header-alt:
   nl: Voorbeeld van de CoronaCheck Scanner app
   fy: 
-  en: 
+  en: Example of the CoronaCheck Scanner app
   ar: 
   bg: 
   de: 
@@ -444,7 +454,7 @@ faq-category-scanner-general:
 faq-category-scanner-testdocument:
   nl: Toegang met testbewijs
   fy: 
-  en: Toegang met testbewijs
+  en: Getting access with a test declaration 
   ar: 
   bg: 
   de: 
@@ -496,7 +506,7 @@ faq-category-general:
 faq-category-howtouse:
   nl: Toegang met testbewijs
   fy: 
-  en: Using CoronaCheck*
+  en: Getting access with a test declaration
   ar: 
   bg: 
   de: 
@@ -509,7 +519,7 @@ faq-category-howtouse:
 faq-category-usingtheapp:
   nl: Testbewijs in de app
   fy: 
-  en: Using CoronaCheck*
+  en: Test declaration in the app
   ar: 
   bg: 
   de: 
@@ -522,7 +532,7 @@ faq-category-usingtheapp:
 faq-category-usingprintversion:
   nl: Testbewijs op papier
   fy: 
-  en: Using CoronaCheck*
+  en: Printed test declaration
   ar: 
   bg: 
   de: 
@@ -548,7 +558,7 @@ faq-category-gettingtested:
 faq-category-misc:
   nl: Overig
   fy: 
-  en: Miscellaneous
+  en: Other questions
   ar: 
   bg: 
   de: 
@@ -561,7 +571,7 @@ faq-category-misc:
 faq-category-troubleshooting:
   nl: Problemen
   fy: 
-  en: Troubleshooting
+  en: Issues/errors
   ar: 
   bg: 
   de: 
@@ -613,7 +623,7 @@ layout-template-faq:
 layout-faq-btn:
   nl: Bekijk alle vragen
   fy: Besjoch alle faakstelde fragen (Nederlânsk)
-  en: All frequently asked questions
+  en: View all frequently asked questions
   ar: جميع الأسئلة المتكررة (الانجليزية)
   bg: Виж всички често задавани въпроси (на английски език)
   de: Lesen Sie alle häufig gestellten Fragen (Englisch)
@@ -693,16 +703,16 @@ scanner-lead-title:
   
 coronacheck-app-store-url:
   nl: https://apps.apple.com/nl/app/coronacheck/id1548269870
-  fy: 
-  en: 
-  ar: 
-  bg:  
-  de:  
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr:  
+  fy: https://apps.apple.com/nl/app/coronacheck/id1548269870
+  en: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  ar: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  bg: https://apps.apple.com/gb/app/coronacheck/id1548269870 
+  de: https://apps.apple.com/gb/app/coronacheck/id1548269870  
+  fr: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  es: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  pl: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  ro: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  tr: https://apps.apple.com/gb/app/coronacheck/id1548269870
   
 coronacheck-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder
   
@@ -711,15 +721,15 @@ coronacheck-huawei-url:
 scanner-app-store-url:
   nl: https://apps.apple.com/nl/app/coronacheck-scanner/id1549842661
   fy: https://apps.apple.com/nl/app/coronacheck-scanner/id1549842661
-  en: 
-  ar: 
-  bg:  
-  de:  
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr:  
+  en: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  ar: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  bg: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  de: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661  
+  fr: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  es: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  pl: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  ro: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  tr: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661 
   
 scanner-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
   
@@ -781,7 +791,7 @@ footer-samen-logo:
 footer-phone:
   nl: Heb je vragen over CoronaCheck?
   fy: Hast fragen oer de CoronaCheck?
-  en: Do you have any questions about the CoronaCheck-app?
+  en: Do you have any questions about CoronaCheck?
   ar: هل لديك أي أسئلة حول CoronaCheck؟
   bg: Имаш ли въпроси относно CoronaCheck?
   de: Haben Sie Fragen zu CoronaCheck?
@@ -923,16 +933,16 @@ footer-misc-title:
 
 footer-misc-title-scanner:
   nl: Over CoronaCheck Scanner
-  fy: Oer CoronaCheck
-  en: About CoronaCheck
-  ar: حول CoronaCheck
-  bg: За CoronaCheck
-  de: Über CoronaCheck
-  es: Sobre CoronaCheck
-  fr: À propos de CoronaCheck
-  pl: O CoronaCheck
-  ro: Despre CoronaCheck
-  tr: CoronaCheck hakkında
+  fy: Oer CoronaCheck Scanner
+  en: About CoronaCheck Scanner
+  ar: حول CoronaCheck Scanner
+  bg: За CoronaCheck Scanner
+  de: Über CoronaCheck Scanner
+  es: Sobre CoronaCheck Scanner
+  fr: À propos de CoronaCheck Scanner
+  pl: O CoronaCheck Scanner
+  ro: Despre CoronaCheck Scanner
+  tr: CoronaCheck Scanner hakkında
   
 footer-contact-title:
   nl: Contact
@@ -1243,7 +1253,7 @@ information-title:
 information-qrcode:
   nl: In de QR-code staan minimale persoonsgegevens
   fy: 
-  en: Your QR code only says when you tested negative.
+  en: The QR code contains a minimum amount of data
   ar: 
   bg: 
   de: 
@@ -1256,7 +1266,7 @@ information-qrcode:
 information-naw:
   nl: Jouw gegevens worden nergens centraal opgeslagen
   fy: 
-  en: Your data is not centrally stored anywhere.
+  en: Your data is not centrally stored anywhere
   ar: 
   bg: 
   de: 
@@ -1269,7 +1279,7 @@ information-naw:
 information-gps:
   nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard
   fy: 
-  en: Your GPS or location data are not used or saved.
+  en: Your GPS or location data is not used or saved
   ar: 
   bg: 
   de: 
@@ -1283,7 +1293,7 @@ information-gps:
 scanner-information-title:
   nl: Voorwaarden voor gebruik
   fy: 
-  en: 
+  en: Acceptable use policy
   ar: 
   bg: 
   de: 
@@ -1294,9 +1304,9 @@ scanner-information-title:
   tr: 
 
 scanner-information-qrcode:
-  nl: In de QR-code staan minimale gegevens van de bezoeker
+  nl: The QR code contains a minimum amount of data of the visitor
   fy: 
-  en: 
+  en: The QR code contains a minimum amount of data of the visitor
   ar: 
   bg: 
   de: 
@@ -1309,7 +1319,7 @@ scanner-information-qrcode:
 scanner-information-naw:
   nl: Deze gegevens mag je alleen gebruiken voor controle van het testbewijs
   fy: 
-  en: 
+  en: You're only allowed to use this data to check the valid negative test result
   ar: 
   bg: 
   de: 
@@ -1322,7 +1332,7 @@ scanner-information-naw:
 scanner-information-gps:
   nl: Gegevens van de bezoeker worden nergens centraal opgeslagen
   fy: 
-  en: 
+  en: The visitor's data is not centrally stored anywhere
   ar: 
   bg: 
   de: 
@@ -1335,7 +1345,7 @@ scanner-information-gps:
 demo-qr-title:
   nl: Probeer het scannen
   fy: 
-  en: 
+  en: Try scanning
   ar: 
   bg: 
   de: 
@@ -1348,7 +1358,7 @@ demo-qr-title:
 demo-qr-subtitle: 
   nl: Ervaren hoe de scanner werkt? Open CoronaCheck Scanner op je telefoon en scan de QR-codes
   fy: 
-  en: 
+  en: Want to experience how the scanner works? <br />Open CoronaCheck Scanner on your phone and scan the QR codes.
   ar: 
   bg: 
   de: 
@@ -1361,7 +1371,7 @@ demo-qr-subtitle:
 demo-qr-gray:
   nl: Grijs scherm? Dat betekent dat er een geldige demo-code is gescand. Bij het scannen van een echte geldige QR-code zal het scherm groen worden in plaats van grijs.
   fy: 
-  en: 
+  en: Gray screen? This means you’ve scanned a valid demo code. When scanning a real valid QR code, the screen will turn green instead of gray.
   ar: 
   bg: 
   de: 
@@ -1374,7 +1384,7 @@ demo-qr-gray:
 demo-qr-gray-alt:
   nl: Een QR code van een fictief persoon die wel naar binnen mag
   fy: 
-  en: 
+  en: A QR code of a fictitious person who is allowed to enter
   ar: 
   bg: 
   de: 
@@ -1387,7 +1397,7 @@ demo-qr-gray-alt:
 demo-qr-red:
   nl: Een rood scherm betekent niet dat de bezoeker corona heeft, alleen dat de QR-code niet geldig is.
   fy: 
-  en: 
+  en: A red screen does not mean the visitor has coronavirus. It just means the QR code is invalid.
   ar: 
   bg: 
   de: 
@@ -1400,7 +1410,7 @@ demo-qr-red:
 demo-qr-red-alt:
   nl: Een QR code van een fictief persoon die niet naar binnen mag
   fy: 
-  en: 
+  en: A QR code of a fictitious person who is not allowed to enter
   ar: 
   bg: 
   de: 
@@ -1516,34 +1526,47 @@ user-instructions-title:
 scanner-instructions-title:
   nl: Hoe werkt het scannen?
   fy: 
-  en: How does it work?
+  en: How does scanning work?
+
+print-version-img:
+  nl: /img/printbewijs.png
+  fy: 
+  en: /img/printbewijs-en.png
 
 print-version-title:
   nl: Liever een papieren testbewijs?
   fy: 
-  en: 
-
+  en: Prefer a test declaration on paper?
+ 
 print-version-content:
   nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq#testbewijs-op-papier">Lees hier meer</a>.
   fy: 
-  en: 
+  en: A test declaration on paper is convenient if you don't have a smartphone. <a href="/nl/faq#printed-test-declaration">Lees hier meer</a>.
 
 print-version-url: 
   nl: /print
   fy: 
-  en: 
+  en: /en/print
 
 print-version-url-link: 
   nl: Maak papieren testbewijs
   fy: 
-  en: 
+  en: Make test declaration on paper
 
 about-coronacheck-title:
   nl: Over CoronaCheck
   fy: Oer CoronaCheck
   en: About CoronaCheck
+  ar: حول CoronaCheck
+  bg: За CoronaCheck
+  de: Über CoronaCheck
+  es: Sobre CoronaCheck
+  fr: À propos de CoronaCheck
+  pl: O CoronaCheck
+  ro: Despre CoronaCheck
+  tr: CoronaCheck hakkında
 
 about-coronacheck-content:
   nl: <p>Met behulp van een testbewijs via de CoronaCheck-app of op papier toon je aan dat je kortgeleden negatief getest bent op corona. Zo kan Nederland meer buiten de deur doen.</p>
   fy: 
-  en: 
+  en: <p>With a test declaration via the CoronaCheck app or on paper, you can prove you've recently tested negative for corona. This way, the Netherlands can head out more often. </p>
