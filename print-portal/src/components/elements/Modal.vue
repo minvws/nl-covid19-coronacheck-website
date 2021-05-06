@@ -219,6 +219,7 @@ export default {
         width: 100%;
         height: 100%;
         transform: none;
+        border-radius: 0;
     }
 }
 </style>
