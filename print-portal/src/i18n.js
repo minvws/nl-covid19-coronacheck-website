@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
-import dictionary from '@/data/dictionary';
+import dictionary from '@/data/language/dictionary';
 
 Vue.use(VueI18n)
 
