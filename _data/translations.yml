@@ -693,16 +693,16 @@ scanner-lead-title:
   
 coronacheck-app-store-url:
   nl: https://apps.apple.com/nl/app/coronacheck/id1548269870
-  fy: 
-  en: 
-  ar: 
-  bg:  
-  de:  
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr:  
+  fy: https://apps.apple.com/nl/app/coronacheck/id1548269870
+  en: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  ar: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  bg: https://apps.apple.com/gb/app/coronacheck/id1548269870 
+  de: https://apps.apple.com/gb/app/coronacheck/id1548269870  
+  fr: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  es: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  pl: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  ro: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  tr: https://apps.apple.com/gb/app/coronacheck/id1548269870
   
 coronacheck-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder
   
@@ -1519,14 +1519,14 @@ scanner-instructions-title:
   en: How does scanning work?
 
 print-version-title:
-  nl: Prefer a test declaration on paper?
+  nl: Liever een papieren testbewijs?
   fy: 
-  en: 
+  en: Prefer a test declaration on paper?
  
 print-version-content:
   nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq#testbewijs-op-papier">Lees hier meer</a>.
   fy: 
-  en: A test declaration on paper is convenient if you don't have a smartphone. <a href="/nl/faq#printed-test-declaration">Lees hier meer</a> 
+  en: A test declaration on paper is convenient if you don't have a smartphone. <a href="/nl/faq#printed-test-declaration">Lees hier meer</a>.
 
 print-version-url: 
   nl: /print
