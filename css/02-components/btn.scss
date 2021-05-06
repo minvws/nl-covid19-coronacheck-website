@@ -1,6 +1,6 @@
 
 .btn {
-  padding: 14px 50px;
+  padding: 14px 20px;
   margin-bottom: 5px;
   background: #fff;
   display: inline-block;
@@ -10,6 +10,10 @@
   border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
   font-size: inherit;
   font-family: inherit;
+
+  @media (min-width: 740px) {
+    padding: 14px 50px;
+  }
 
   &:visited {
     color: white;
