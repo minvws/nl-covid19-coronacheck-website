@@ -71,6 +71,8 @@ export default {
                 this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
             }
             this.$i18n.locale = this.$store.state.languages.current.locale;
+            const html = document.documentElement;
+            html.setAttribute('lang', this.$store.state.languages.current.locale)
         }
     },
     mounted() {

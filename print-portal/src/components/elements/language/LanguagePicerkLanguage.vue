@@ -17,8 +17,11 @@ export default {
     },
     methods: {
         select() {
+            const locale = this.language.locale;
             this.$store.commit('languages/setCurrent', this.language);
-            this.$i18n.locale = this.language.locale;
+            this.$i18n.locale = locale;
+            const html = document.documentElement;
+            html.setAttribute('lang', locale)
             this.$parent.$parent.close();
         }
     }
