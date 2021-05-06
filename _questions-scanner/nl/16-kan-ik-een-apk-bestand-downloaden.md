@@ -1,14 +1,7 @@
 ---
-layout: content
 index: 15
 set: 1
 title: Kan ik een APK-bestand downloaden om de CoronaCheck Scanner op een Mobile Device Management Systeem te zetten?
-lang: nl
-categories:
-- nl
-- faq-scanner
-showBreadCrumbs: true
-showContact: true
 ---
 Ja, dat kan. Je kunt het APK-bestand downloaden via deze link: 
 

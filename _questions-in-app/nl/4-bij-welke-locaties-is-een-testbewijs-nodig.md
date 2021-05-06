@@ -1,15 +1,8 @@
 ---
-layout: in-app-question
 index: 4
 set: 2
-title: Bij welke locaties is een testbewijs nodig als ik naar binnen wil?
-lang: nl
-categories:
-- nl
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
+title: Bij welke locaties is een testbewijs nodig als ik naar binnen wil? 
+
 featuredHome: true
 featuredHomeIndex: 4
 ---

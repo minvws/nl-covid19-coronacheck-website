@@ -55,7 +55,7 @@ export default {
             }
             if (this.qrData.birthMonth.length > 0) {
                 if (exceptions.indexOf(this.qrData.birthMonth) === -1) {
-                    month = dateTool.monthNumberToMonthName(Number(this.qrData.birthMonth));
+                    month = dateTool.monthNumberToMonthName(Number(this.qrData.birthMonth), this.currentLanguage.locale);
                 } else {
                     month = this.qrData.birthDay;
                 }
@@ -66,7 +66,7 @@ export default {
         },
         fileName() {
             const info = [
-                dateTool.dateToString((this.qrData.sampleTime * 1000), 'yyyyMMdd'),
+                dateTool.dateToString((this.qrData.sampleTime * 1000), 'yyyyMMdd', this.currentLanguage.locale),
                 'coronacheck',
                 'testbewijs',
                 this.holderString
@@ -116,12 +116,12 @@ export default {
                 this.$router.push({ name: 'ProvideCode' });
             }
             this.$store.commit('modal/set', {
-                messageHead: this.$t('generalError'),
-                messageBody: this.$t('generalErrorBody'),
+                messageHead: this.$t('pdf.generalError'),
+                messageBody: this.$t('pdf.generalErrorBody'),
                 confirm: true,
                 confirmAction,
-                confirmYes: this.$t('goBackToStart'),
-                confirmNo: this.$t('close')
+                confirmYes: this.$t('pdf.goBackToStart'),
+                confirmNo: this.$t('pdf.close')
             });
         },
         async generateQRCode() {
@@ -140,8 +140,8 @@ export default {
                     })
                     .catch(error => {
                         this.$store.commit('modal/set', {
-                            messageHead: this.$t('generalError'),
-                            messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
+                            messageHead: this.$t('pdf.generalError'),
+                            messageBody: this.$t('pdf.generalErrorBody') + '<p>' + error + '</p>',
                             closeButton: true
                         });
                     })
@@ -191,12 +191,12 @@ export default {
 
             const textItemsA = [
                 {
-                    text: 'Je testbewijs',
+                    text: this.$t('pdf.yourTestProof'),
                     fontWeight: 700,
                     fontSize: 20,
                     position: [pageMarginLeft, pageMarginTop]
                 }, {
-                    text: 'Initialen',
+                    text: this.$t('pdf.initials'),
                     fontSize: 10,
                     position: [pageMarginLeft, tableBaseY]
                 }, {
@@ -204,7 +204,7 @@ export default {
                     fontWeight: 700,
                     position: [tableBaseCol2X, tableBaseY]
                 }, {
-                    text: 'Geboortedag',
+                    text: this.$t('pdf.dayOfBirth'),
                     position: [pageMarginLeft, (tableBaseY + lineHeight)]
                 }, {
                     text: this.birthDayString,
@@ -213,14 +213,14 @@ export default {
                 }]
 
             const privacyItems = [{
-                text: 'Getest op',
+                text: this.$t('pdf.testedAt'),
                 position: [pageMarginLeft, (tableBaseY + 3 * lineHeight)]
             }, {
-                text: dateTool.dateToString((this.qrData.sampleTime * 1000)),
+                text: dateTool.dateToString((this.qrData.sampleTime * 1000), 'dd-MM-yyyy HH:mm', this.currentLanguage.locale),
                 fontWeight: 700,
                 position: [tableBaseCol2X, (tableBaseY + 3 * lineHeight)]
             }, {
-                text: 'Geldig tot',
+                text: this.$t('pdf.validUntil'),
                 position: [pageMarginLeft, (tableBaseY + 4 * lineHeight)]
             }, {
                 text: this.validUntil,
@@ -229,35 +229,27 @@ export default {
             }];
 
             const texItemsB = [{
-                text: 'INSTRUCTIES',
+                text: this.$t('pdf.instructions'),
                 fontWeight: 700,
                 position: [pageMarginLeft, instructionsBaseY]
             }, {
-                text: `1. Print dit testbewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)
-
-2. Neem een geldig identiteitsbewijs mee naar de activiteit
-
-3. Laat het testbewijs en je identiteitsbewijs (en eventueel ook je toegangskaartje) zien bij de ingang
-
-Let op: dit is géén toegangsticket voor je activiteit`,
+                text: this.$t('pdf.instructionsText'),
                 position: [pageMarginLeft, (instructionsBaseY + 3 * lineHeight)],
                 width: (pageWidth / 2 - (2 * pageMarginLeft))
             }, {
-                text: 'Laat je jouw testbewijs liever op je telefoon zien? Gebruik dan de code uit de e-mail in de CoronaCheck-app',
+                text: this.$t('pdf.preferMobile'),
                 fontWeight: 400,
                 fontSize: 10,
                 lineHeight: lineHeightSmall,
                 position: [footerBaseX, footerBaseY],
                 width: (pageWidth / 2 - (2 * pageMarginLeft))
             }, {
-                text: 'VRAGEN?',
+                text: this.$t('pdf.questions'),
                 fontWeight: 700,
                 fontSize: 10,
                 position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding)]
             }, {
-                text: `Bekijk de meestgestelde vragen op www.CoronaCheck.nl
-
-Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
+                text: this.$t('pdf.footerText'),
                 lineHeight: lineHeightSmall,
                 position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding + 2 * lineHeightSmall)],
                 width: (pageWidth / 2 - 20 - (2 * questionsTablePadding))

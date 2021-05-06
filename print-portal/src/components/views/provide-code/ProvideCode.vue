@@ -165,7 +165,10 @@ export default {
                         const status = error.response.status;
                         switch (status) {
                         case 401:
-                            responseForSignedResult = this.handle401(error.response)
+                            responseForSignedResult = this.handleError(error.response)
+                            break;
+                        case 403:
+                            responseForSignedResult = this.handleError(error.response)
                             break;
                         default:
                             responseForSignedResult = 'unknown_error';
@@ -184,6 +187,14 @@ export default {
 
                         if (this.testResultStatus === 'invalid_token') {
                             this.testCodeStatus.error = this.$t('invalidTestCode');
+                        }
+
+                        if (this.testResultStatus === 'result_blocked') {
+                            this.$store.commit('modal/set', {
+                                messageHead: this.$t('generalError'),
+                                messageBody: this.$t('generalErrorBody') + '<p>result_blocked</p>',
+                                closeButton: true
+                            });
                         }
                     } else {
                         this.$store.commit('modal/set', {
@@ -221,7 +232,7 @@ export default {
                 console.log(error);
             })
         },
-        handle401(response) {
+        handleError(response) {
             if (response.data && response.data.payload) {
                 const payload = JSON.parse(atob(response.data.payload));
                 if (payload.status) {

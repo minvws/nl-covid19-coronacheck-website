@@ -46,11 +46,12 @@
 }
 
 .instructions__step-image {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
+  width: 100%;
   
   @media (min-width: 320px) {
     max-width: 30%;
-    flex: 0 1 30%;
+    // flex: 0 1 30%;
     align-self: center;
   }
 
@@ -62,7 +63,6 @@
     width: 100%; 
     align-self: center;
     max-width: 150px;
-    max-height: auto;
   }
 }
 
@@ -74,11 +74,13 @@
   .instructions__step-content {
     padding: 30px 15px 0 15px;
   }
+}
 
+@media (min-width: 960px) {
   .instructions__step--1 .instructions__step-content {
     padding-left: 30px;
   }
-
+  
   .instructions__step--3 .instructions__step-content {
     padding-right: 30px;
   }

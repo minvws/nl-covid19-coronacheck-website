@@ -35,8 +35,8 @@ redirect_from: /gebruikersvoorwaarden
 
 - **AVG**: Algemene Verordening Gegevensbescherming
 - **Controleur**: Iemand die de geldigheid van een testbewijs controleert
-- **Testresultaat**: Resultaat van een test dat door teststation wordt verstrekt aan persoon
-- **Verstrekker**: Teststation (GGD of anders) die een testresultaat verstrekt
+- **Testuitslag**: Uitslag van een test op COVID-19 dat door teststation wordt verstrekt aan persoon
+- **Verstrekker**: Teststation (GGD of anders) dat een testuitslag verstrekt
 - **VWS**: Het Ministerie van Volksgezondheid, Welzijn en Sport
 
 ## Over deze gebruikersvoorwaarden
@@ -89,7 +89,7 @@ Met de inzet van CoronaCheck Scanner worden geen persoonsgegevens vastgelegd. Co
 
 ### Doelbinding
 
-CoronaCheck Scanner wordt gebruikt om toegang tot een bepaald evenement of bepaalde locatie te reguleren door te controleren of iemand beschikt over een testbewijs. Dit is alleen mogelijk indien een persoon een negatief testresultaat van een aangesloten testaanbieder heeft ontvangen en vervolgens een testbewijs heeft gegenereerd. Het is niet toegestaan om bij gebruik van CoronaCheck Scanner een testbewijs dat wordt getoond op enige manier vast te leggen, waaronder maar niet beperkt tot: het maken van een screenshot. CoronaCheck Scanner mag enkel en alleen worden gebruikt om een testbewijs te lezen. Het opslaan of bijhouden van de testbewijzen die aan een controleur worden getoond is uitdrukkelijk niet toegestaan. 
+CoronaCheck Scanner wordt gebruikt om toegang tot een bepaald evenement of bepaalde locatie te reguleren door te controleren of iemand beschikt over een testbewijs. Dit is alleen mogelijk indien een persoon een negatieve testuitslag van een aangesloten testaanbieder heeft ontvangen en vervolgens een testbewijs heeft gegenereerd. Het is niet toegestaan om bij gebruik van CoronaCheck Scanner een testbewijs dat wordt getoond op enige manier vast te leggen, waaronder maar niet beperkt tot: het maken van een screenshot. CoronaCheck Scanner mag enkel en alleen worden gebruikt om een testbewijs te lezen. Het opslaan of bijhouden van de testbewijzen die aan een controleur worden getoond is uitdrukkelijk niet toegestaan. 
 
 ## Beveiliging 
 
@@ -139,4 +139,4 @@ Indien u een vraag of klacht over CoronaCheck Scanner heeft, kijk dan voor meer 
 
 Versie 1.1.
 
-Laatste update: 23 april 2021. 
+Laatste update: 30 april 2021. 

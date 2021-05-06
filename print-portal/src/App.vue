@@ -57,19 +57,21 @@ export default {
             this.$store.commit('languages/init', languages);
         },
         setCurrentLanguage() {
-            this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
-            // const routeNameChunks = window.location.href.split('/');
-            // if (routeNameChunks.length > 0) {
-            //     const locale = routeNameChunks[3];
-            //     const language = this.$store.getters['languages/getItemByProperty']('locale', locale, true);
-            //     if (language) {
-            //         this.$store.commit('languages/setCurrent', language);
-            //     } else {
-            //         this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
-            //     }
-            // } else {
-            //     this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
-            // }
+            const routeNameChunks = window.location.href.split('/');
+            if (routeNameChunks.length > 0) {
+                const locale = routeNameChunks[3];
+                const language = this.$store.getters['languages/getItemByProperty']('locale', locale, true);
+                if (language) {
+                    this.$store.commit('languages/setCurrent', language);
+                } else {
+                    this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
+                }
+            } else {
+                this.$store.commit('languages/setCurrent', this.$store.state.languages.all[0]);
+            }
+            this.$i18n.locale = this.$store.state.languages.current.locale;
+            const html = document.documentElement;
+            html.setAttribute('lang', this.$store.state.languages.current.locale)
         }
     },
     mounted() {

@@ -1,15 +1,9 @@
 ---
-layout: in-app-question
 index: 3
 set: 3
 title: Werkt CoronaCheck op mijn telefoon? 
-lang: nl
-categories:
-- nl
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
+
+
 featuredHome: true
 featuredHomeIndex: 6
 ---

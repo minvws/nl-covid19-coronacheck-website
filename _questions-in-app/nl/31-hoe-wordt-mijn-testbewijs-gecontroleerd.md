@@ -1,15 +1,8 @@
 ---
-layout: in-app-question
 index: 6
 set: 2
-title: Hoe wordt mijn testbewijs gecontroleerd?
-lang: nl
-categories:
-- nl
-- faq-in-app
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
+title: Hoe wordt mijn testbewijs gecontroleerd? 
+
 featuredHome: true
 featuredHomeIndex: 5
 ---

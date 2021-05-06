@@ -18,6 +18,112 @@ collections:
   scanner-instructions:
     output: false  
 
+defaults:
+  -
+    scope:
+      path: "_questions/nl"
+      type: "questions"
+    values:
+      layout: content
+      categories:
+      - nl
+      - faq
+      lang: nl
+      showBreadCrumbs: true
+      showContact: true
+      showOnFAQoverview: true
+  -
+    scope:
+      path: "_questions/en"
+      type: "questions"
+    values:
+      layout: content
+      categories:
+      - en
+      - faq
+      lang: en
+      showBreadCrumbs: true
+      showContact: true
+      showOnFAQoverview: true
+  -
+    scope:
+      path: "_questions-in-app/en"
+      type: "questions-in-app"
+    values:
+      layout: in-app-question
+      categories:
+      - en
+      - faq-in-app
+      lang: en
+      showBreadCrumbs: true
+      showContact: true
+      showOnFAQoverview: true
+  -
+    scope:
+      path: "_questions-in-app/nl"
+      type: "questions-in-app"
+    values:
+      layout: in-app-question
+      categories:
+      - nl
+      - faq-in-app
+      lang: nl
+      showBreadCrumbs: true
+      showContact: true
+      showOnFAQoverview: true
+  -
+    scope:
+      path: "_questions-scanner/nl"
+      type: "questions-scanner"
+    values:
+      layout: content
+      categories:
+      - nl
+      - faq-scanner
+      lang: nl
+      showBreadCrumbs: true
+      showContact: true
+      showOnFAQoverview: true
+  -
+    scope:
+      path: "_questions-scanner/en"
+      type: "questions-scanner"
+    values:
+      layout: content
+      categories:
+      - en
+      - faq-scanner
+      lang: en
+      showBreadCrumbs: true
+      showContact: true
+      showOnFAQoverview: true
+  -
+    scope:
+      path: "_questions-scanner-in-app/en"
+      type: "questions-scanner-in-app"
+    values:
+      layout: in-app-question
+      categories:
+      - en
+      - faq-scanner-in-app
+      lang: en
+      showBreadCrumbs: true
+      showContact: true
+      showOnFAQoverview: true
+  -
+    scope:
+      path: "_questions-scanner-in-app/nl"
+      type: "questions-scanner-in-app"
+    values:
+      layout: in-app-question
+      categories:
+      - nl
+      - faq-scanner-in-app
+      lang: nl
+      showBreadCrumbs: true
+      showContact: true
+      showOnFAQoverview: true
+
 sass:
   style: compressed
   load_paths:

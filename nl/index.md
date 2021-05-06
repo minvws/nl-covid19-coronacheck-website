@@ -7,7 +7,5 @@ showContact: true
 lang-ref: covid19-notification-app-website-index
 redirect_from: 
   - /index
-  - /en/
-  - /en
   - /app/redeem
 ---

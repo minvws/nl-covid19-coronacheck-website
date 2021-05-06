@@ -1,15 +1,9 @@
 ---
-layout: content
 index: 1
 set: 3
 title: Hoe werkt de CoronaCheck-app?
-lang: nl
-categories:
-- nl
-- faq
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
+
+
 featuredHome: true
 featuredHomeIndex: 1
 featuredHomeIcon: app-touch
@@ -22,4 +16,4 @@ Als bezoeker doe je eerst een coronatest. Blijkt uit de test dat je geen corona 
 
 Laat de QR-code scannen aan de deur van de locatie waar je naar binnen wilt. Is je QR-code geldig en komen je gegevens overeen met je identiteitsbewijs? Dan mag je naar binnen. Het kan zijn dat er ook een toegangskaartje nodig is. 
 
-**Let op:** je kunt maar voor één persoon een testbewijs in de CoronaCheck-app laten zien. Iedere bezoeker heeft dus een eigen telefoon met de app nodig of een geprint testbewijs. Download en print jouw testbewijs op [www.coronacheck.nl/print](http://www.coronacheck.nl/print).
+**Let op:** je kunt maar voor één persoon een testbewijs in de CoronaCheck-app laten zien. Iedere bezoeker heeft dus een eigen telefoon met de app nodig of een geprint testbewijs. Download en print jouw testbewijs op [www.coronacheck.nl/print](/print).

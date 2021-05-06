@@ -1,14 +1,8 @@
 ---
-layout: in-app-question
+
 index: 6
 set: 2
 title: Welke informatie kan ik voorafgaand aan mijn pilot evenement delen met mijn bezoekers?
-lang: nl
-categories:
-- nl
-- faq-scanner-in-app
-showBreadCrumbs: true
-showContact: true
 ---
 De volgende tekst kan gebruikt worden richting bezoekers:
 

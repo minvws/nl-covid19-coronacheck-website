@@ -1,15 +1,9 @@
 ---
-layout: content
 index: 16
 set: 8
 title: Hoe worden mijn gegevens gebruikt?
-lang: nl
-categories:
-- nl
-- faq
-showBreadCrumbs: true
-showContact: true
-showOnFAQoverview: true
+
+
 featuredHome: true
 featuredHomeIndex: 3
 ---
