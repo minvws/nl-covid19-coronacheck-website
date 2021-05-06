@@ -15,7 +15,8 @@ export default {
             },
             set(value) {
                 const strippedValue = value.replace(/ /g, '');
-                this.$store.commit('updateProperty', { key: 'verificationCode', value: strippedValue })
+                const strippedValue2 = strippedValue.replace(/\t/g, '');
+                this.$store.commit('updateProperty', { key: 'verificationCode', value: strippedValue2 })
             }
         }
     },
@@ -54,7 +55,7 @@ export default {
             </label>
             <input
                 v-model="verificationCode"
-                v-on:keyup.enter="sendVerificationCode"
+                v-on:keyup.enter="submit"
                 id="input--verificationCode"
                 type="text"
                 pattern="[0-9]*"
