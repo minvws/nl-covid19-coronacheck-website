@@ -8,7 +8,7 @@ De volgende tekst kan gebruikt worden richting bezoekers:
 ---
 Om toegang te krijgen tot [naam activiteit/evenement] moet je naast je toegangsticket ook je testbewijs in de CoronaCheck-app of op papier laten zien.
 
-Via de CoronaCheck-app of op www.coronacheck.nl/print zet je jouw negatieve testuitslag om in een testbewijs, die snel kan worden gescand bij de ingang van het evenement. Wanneer je jouw negatieve testuitslag ontvangt via Testen voor toegang, zit daar ook een ophaalcode bij. Met behulp van deze ophaalcode kun je in de CoronaCheck-app of op www.coronacheck.nl/print jouw testuitslag omzetten naar een testbewijs, in de vorm van een QR-code.
+Via de CoronaCheck-app of op www.coronacheck.nl/en/print zet je jouw negatieve testuitslag om in een testbewijs, die snel kan worden gescand bij de ingang van het evenement. Wanneer je jouw negatieve testuitslag ontvangt via Testen voor toegang, zit daar ook een ophaalcode bij. Met behulp van deze ophaalcode kun je in de CoronaCheck-app of op www.coronacheck.nl/en/print jouw testuitslag omzetten naar een testbewijs, in de vorm van een QR-code.
 
 Je laat vervolgens jouw QR-code scannen bij de ingang van ons evenement. Is je QR-code geldig? Dan mag je naar binnen. 
 

@@ -1531,7 +1531,7 @@ print-version-content:
 print-version-url: 
   nl: /print
   fy: 
-  en: /print
+  en: /en/print
 
 print-version-url-link: 
   nl: Maak papieren testbewijs
