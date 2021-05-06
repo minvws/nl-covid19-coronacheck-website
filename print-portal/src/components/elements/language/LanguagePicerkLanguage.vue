@@ -28,7 +28,7 @@ export default {
     <li
         class="language-picker__language">
         <span v-if="isCurrent">
-            {{language.name}} ({{translate('currentLanguage')}})
+            {{language.name}} ({{$t('currentLanguage')}})
         </span>
         <button
             v-else

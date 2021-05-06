@@ -1,4 +1,4 @@
-import holderIdentityCharacters from './holder-identity-characters'
+import holderIdentityCharacters from './../../snippets/holder-identity-characters'
 
 const html = `
 <p>In een testuitslag staan de uitslag, het tijdstip van de test en minimale gegevens van jou.</p>

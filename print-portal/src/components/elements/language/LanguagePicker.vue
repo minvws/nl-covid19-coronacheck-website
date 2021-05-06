@@ -21,15 +21,6 @@ export default {
         close() {
             this.isOpen = false;
         }
-    },
-    watch: {
-        currentLanguage: function (newValue, oldValue) {
-            if (newValue && oldValue) {
-                const route = this.$route;
-                const name = this.currentLanguage.locale + '/' + route.meta.key;
-                this.$router.push({ name });
-            }
-        }
     }
 }
 </script>
