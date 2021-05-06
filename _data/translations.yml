@@ -613,7 +613,7 @@ layout-template-faq:
 layout-faq-btn:
   nl: Bekijk alle vragen
   fy: Besjoch alle faakstelde fragen (Nederlânsk)
-  en: All frequently asked questions
+  en: View all frequently asked questions
   ar: جميع الأسئلة المتكررة (الانجليزية)
   bg: Виж всички често задавани въпроси (на английски език)
   de: Lesen Sie alle häufig gestellten Fragen (Englisch)
@@ -781,7 +781,7 @@ footer-samen-logo:
 footer-phone:
   nl: Heb je vragen over CoronaCheck?
   fy: Hast fragen oer de CoronaCheck?
-  en: Do you have any questions about the CoronaCheck-app?
+  en: Do you have any questions about CoronaCheck?
   ar: هل لديك أي أسئلة حول CoronaCheck؟
   bg: Имаш ли въпроси относно CoronaCheck?
   de: Haben Sie Fragen zu CoronaCheck?
