@@ -711,15 +711,15 @@ coronacheck-huawei-url:
 scanner-app-store-url:
   nl: https://apps.apple.com/nl/app/coronacheck-scanner/id1549842661
   fy: https://apps.apple.com/nl/app/coronacheck-scanner/id1549842661
-  en: 
-  ar: 
-  bg:  
-  de:  
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr:  
+  en: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  ar: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  bg: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  de: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661  
+  fr: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  es: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  pl: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  ro: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  tr: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661 
   
 scanner-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
   
