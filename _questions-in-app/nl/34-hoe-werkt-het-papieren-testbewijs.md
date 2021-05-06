@@ -5,9 +5,9 @@ title: Hoe werkt het papieren testbewijs?
 
 
 ---
-Geen smartphone of liever een papieren testbewijs? Ga naar [www.coronacheck.nl/print](http://www.coronacheck.nl/print) en volg deze stappen: 
+Geen smartphone of liever een papieren testbewijs? Ga naar [www.coronacheck.nl/print](/print) en volg deze stappen: 
 
-1. Vul op [www.coronacheck.nl/print](http://www.coronacheck.nl/print) jouw ophaalcode in. Deze code krijg je bij je negatieve testuitslag
+1. Vul op [www.coronacheck.nl/print](/print) jouw ophaalcode in. Deze code krijg je bij je negatieve testuitslag
 2. Na controle van de ophaalcode haalt CoronaCheck je testuitslag op
 3. Daarna wordt van jouw negatieve testuitslag een testbewijs gemaakt, in de vorm van een QR-code 
 4. Print jouw QR-code en neem hem mee
