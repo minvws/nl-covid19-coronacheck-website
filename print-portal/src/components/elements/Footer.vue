@@ -50,6 +50,7 @@ export default {
 @import "@/styles/variables/index";
 
 .footer {
+    margin-top: 100px;
 
     .pagewrap {
         // padding done by footer-innter
@@ -76,6 +77,14 @@ export default {
         @include mobile-landscape-X() {
             display: inline;
         }
+    }
+
+    @include mobile() {
+        margin-top: 64px;
+    }
+
+    @include mobile-landscape-X() {
+        margin-top: 64px;
     }
 }
 
