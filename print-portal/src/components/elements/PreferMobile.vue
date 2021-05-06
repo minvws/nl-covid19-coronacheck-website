@@ -69,6 +69,10 @@ export default {
         width: calc(100% - 310px);
     }
 
+    .app_badge_column__left {
+        margin-right: 32px;
+    }
+
     @include mobile() {
         padding: $length-xl $length-s 0 $length-s;
         height: auto;
