@@ -27,7 +27,7 @@ export default {
             if (process.env.NODE_ENV !== 'development') {
                 if (newValue && oldValue) {
                     const route = this.$route;
-                    const url = 'www.coronacheck.nl/' + this.currentLanguage.locale + route.path;
+                    const url = window.location.hostname + '/' + this.currentLanguage.locale + route.path;
                     window.open(url);
                 }
             }
