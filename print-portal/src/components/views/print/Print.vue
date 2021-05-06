@@ -55,7 +55,7 @@ export default {
             }
             if (this.qrData.birthMonth.length > 0) {
                 if (exceptions.indexOf(this.qrData.birthMonth) === -1) {
-                    month = dateTool.monthNumberToMonthName(Number(this.qrData.birthMonth));
+                    month = dateTool.monthNumberToMonthName(Number(this.qrData.birthMonth), this.currentLanguage.locale);
                 } else {
                     month = this.qrData.birthDay;
                 }

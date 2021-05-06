@@ -15,59 +15,57 @@ const en = {
         'error': {}
     },
     'pdf': {
-        'dayOfBirth': 'TODO!: Geboortedag',
-        'footerText': `TODO!:Bekijk de meestgestelde vragen op www.CoronaCheck.nl
+        'dayOfBirth': 'Day of birth',
+        'footerText': `View the frequently asked questions at www.CoronaCheck.nl
+Send an e-mail to helpdesk@coronacheck.nl or call at 0800-1421 (free)`,
+        'initials': 'Initials',
+        'instructions': 'Instructions',
+        'instructionsText': `1. Make a print of this test declaration on A4 size paper without adjusting the scale (in black-white is fine)
 
-Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
-        'initials': 'TODO!:Initialen',
-        'instructions': 'TODO!:INSTRUCTIES',
-        'instructionsText': `TODO!:1. Print dit testbewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)
+2. Bring a valid proof of identity to the activity
 
-2. Neem een geldig identiteitsbewijs mee naar de activiteit
-
-3. Laat het testbewijs en je identiteitsbewijs (en eventueel ook je toegangskaartje) zien bij de ingang
-
-Let op: dit is géén toegangsticket voor je activiteit`,
-        'preferMobile': 'TODO!:Laat je jouw testbewijs liever op je telefoon zien? Gebruik dan de code uit de e-mail in de CoronaCheck-app',
-        'questions': 'TODO!:VRAGEN?',
-        'testedAt': 'TODO!:Getest op',
-        'yourTestProof': 'TODO!:Je testbewijs',
-        'validUntil': 'TODO!:Geldig tot'
+3. Display your test declaration and proof of identity (and if necessary your entrance ticket) at the entrance
+Beware: this is not an entrance ticket for the activity you're visiting`,
+        'preferMobile': 'Prefer showing your test declaration on your mobile phone? Then use the retrieval code (the test location sends it in an email) in the CoronaCheck app.',
+        'questions': 'Questions?',
+        'testedAt': 'Tested for',
+        'yourTestProof': 'Your test declaration',
+        'validUntil': 'Valid until'
     },
     'back': 'Back',
     'changeLanguage': 'Change language',
     'close': 'Close',
     'createTestProof': 'Make QR code',
-    'currentLanguage': 'Huidige taal',
+    'currentLanguage': 'Current language',
     'dateOfTest': 'Test date',
-    'didNotGetCode': 'Ik heb geen code gekregen',
-    'emptyTestCode': 'Ophaalcode niet ingevuld',
+    'didNotGetCode': 'I don\'t have a code',
+    'emptyTestCode': 'Retrieval code not entered',
     'enterCode': 'Retrieve test result',
     'expiredTestCodeHead': 'Your QR code has expired',
-    'expiredTestCodeBody': '<p>The code you’ve entered is invalid. Please check it again. Need a new QR code? Get tested again.</p>',
-    'faq': 'Meestgestelde vragen',
+    'expiredTestCodeBody': '<p>The code you\'ve entered is invalid. Please check it. Need a new QR code? Get tested again.</p>',
+    'faq': 'frequently asked questions',
     'forInstanceAbbr': 'E.g.',
     'generalError': 'Sorry, something went wrong',
     'generalErrorBody': '<p>Because of a technical error. Contact the CoronaCheck helpdesk via 0800-1421.</p>',
-    'goBackToStart': 'Naar home',
+    'goBackToStart': 'To Home',
     'invalidTestCode': 'Invalid retrieval code',
-    'invalidVerificationCode': 'Geen geldige verificatiecode',
+    'invalidVerificationCode': 'Invalid verification code',
     'language': 'Language',
     'next': 'Next',
-    'noTestProofPresent': 'Er is nog geen testbewijs',
-    'noTestProofPresentDirection': 'Je kunt alleen van een negatieve testuitslag een testbewijs maken. Haal eerst je testuitslag op.',
-    'noTestResultPresent': 'Er is geen testuitslag bekend',
-    'noTestResultPresentDirection': 'Haal eerst je testuitslag op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen. ',
-    'noVerificationCodeHead': 'Nieuwe verificatiecode nodig?',
+    'noTestProofPresent': 'There\'s no test result',
+    'noTestProofPresentDirection': 'You can only turn a negative test result into a test declaration. Retrieve your test result first.',
+    'noTestResultPresent': 'Test result not known',
+    'noTestResultPresentDirection': 'Retrieve your test result first. Use the retrieval code given to you by the test location.',
+    'noVerificationCodeHead': 'Need a new verification code?',
     'noVerificationCodeMessage': '<p>The test location sends you a verification code via text or email. Didn\'t get one? Then you can request a new code.</p>',
     'preferMobile': 'Prefer having your test declaration on mobile?',
-    'preferMobileDirection': 'Then download the app. You can also make a print of the test declaration in the app.',
-    'printPortalHomeBodyText': '<p>Een testbewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><h4>Alleen toegang na testen</h4><p>Laat je daarom testen als je bepaalde sociale, culturele of sportieve activiteiten bezoekt. Ook als je al gevaccineerd bent. Blijkt uit de test dat je geen corona hebt (negatieve testuitslag)? Dan krijg je toegang.</p><h4>Jouw QR-code op zak</h4><p>Als uit de test blijkt dat je geen corona hebt kun je in de app of op papier een persoonlijke QR-code maken. Dat is jouw testbewijs. De QR-code wordt gescand voordat je toegang krijgt. Zorg dat jouw QR-code binnen 40 uur na het moment van testen gescand is bij de ingang.</p><h4>Zo min mogelijk gegevens</h4><p>In jouw QR-code staan alleen je negatieve testuitslag (geen corona), het tijdstip van de test en minimale gegevens: de eerste letter van je voornaam, de eerste letter van je achternaam, je geboortedag en geboortemaand. Dit is ter controle, om zeker te zijn dat de testuitslag bij jou hoort.</p>',
-    'printPortalHomeHeader': 'Krijg toegang met een papieren testbewijs',
-    'retrieveTestResult': 'Testuitslag ophalen',
+    'preferMobileDirection': 'Then download the app.',
+    'printPortalHomeBodyText': '<p>A test declaration on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><h4>Only access after testing</h4><p>Get tested when visiting certain social, cultural or sports events. Even when you\'ve already been vaccinated. Does your test prove you don\'t have coronavirus (negative test result)? Then you can get access.</p><h4>Your QR code in your pocket</h4><p>If your test proves you don\'t have coronavirus, you can make a personal QR code in this app. This will be your test declaration. The QR code is scanned before you get access.</p><h4>Minimum amount of data</h4><p>Your QR code only states when you tested negative (no coronavirus), the time of testing, and the minimum amount of identifying data: your first name initial, your last name initial, your day of birth, and your month of both. We verify this information to make sure the test result is yours.</p>',
+    'printPortalHomeHeader': 'Get access with a test declaration on paper',
+    'retrieveTestResult': 'Retrieve test result',
     'sendCode': 'Send code',
-    'sendAgain': 'Verstuur opnieuw',
-    'testCodeDirection': 'Enter your retrieval code. The test location sent it to you. Or click on the link in the email you’ll get from the test location.',
+    'sendAgain': 'Send again',
+    'testCodeDirection': 'Enter your retrieval code. The test location sent it to you. Or click on the link in the email you\'ll get from the test location.',
     'uniqueCode': 'Retrieval code',
     'retrievedTestResult': 'Retrieved test result',
     'resultNegative': 'Negative test result',
@@ -76,13 +74,13 @@ Let op: dit is géén toegangsticket voor je activiteit`,
     'somethingIsWrong': 'Is something wrong?',
     'openPDF': 'Open PDF',
     'userConsentText': 'I\'ve read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and give consent for processing my personal data.',
-    'verificationCode': 'Verificatiecode',
-    'verificationCodeDirection': 'Je krijgt een code in een sms of e-mail',
+    'verificationCode': 'Verification code',
+    'verificationCodeDirection': 'You get a code via text or email',
     'yourCredentials': 'Identification details',
     'yourNegativeTestresult': 'Check your test result',
     'yourNegativeTestresultDirection': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test declaration.</p>',
     'yourTestProof': 'Your test declaration',
-    'yourTestProofDirection': 'You’ve made a test declaration,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.'
+    'yourTestProofDirection': 'You\'ve made a test declaration,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.'
 }
 
 export default en;
