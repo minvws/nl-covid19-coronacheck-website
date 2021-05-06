@@ -1,7 +1,7 @@
 ---
 index: 3
 show: true
-graphic: instructions-step3.png
+graphic: instructions-step3-en.png
 title: 3. Show your QR code
 lang: en
 ---

@@ -1,7 +1,7 @@
 ---
 index: 2
 show: true
-graphic: instructions-step2.png
+graphic: instructions-step2-en.png
 title: 2. Make a QR code
 lang: en
 ---

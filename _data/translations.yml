@@ -155,6 +155,11 @@ scanner-header-subtitle:
   ro: 
   tr: 
 
+coronacheck-header-img:
+  nl: /img/CoronaCheck_app.png
+  fy: /img/CoronaCheck_app.png
+  en: /img/CoronaCheck_app-en.png
+
 coronacheck-header-alt:
   nl: Voorbeeld van de CoronaCheck app
   fy: 
@@ -168,6 +173,11 @@ coronacheck-header-alt:
   ro: 
   tr: 
     
+scanner-header-img:
+  nl: /img/CoronaCheckScanner_app-tall.png
+  fy: /img/CoronaCheckScanner_app-tall.png
+  en: /img/CoronaCheckScanner_app-tall-en.png
+
 scanner-header-alt:
   nl: Voorbeeld van de CoronaCheck Scanner app
   fy: 

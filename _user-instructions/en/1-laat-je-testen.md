@@ -1,7 +1,7 @@
 ---
 index: 1
 show: true
-graphic: instructions-step1.png
+graphic: instructions-step1-en.png
 title: 1. Get tested
 lang: en
 ---
