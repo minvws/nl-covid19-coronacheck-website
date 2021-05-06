@@ -32,6 +32,15 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
         'yourTestProof': 'Your test declaration',
         'validUntil': 'Valid until'
     },
+    'image': {
+        'holder': {
+            'overview': 'My overview',
+            'showQrIntro': 'Show your QR code and your ID at the entrance of the location you are visiting.',
+            'myQr': 'My QR code',
+            'validText': 'Valid until<br> March 11th 14:06',
+            'showQr': 'Show QR'
+        }
+    },
     'back': 'Back',
     'changeLanguage': 'Change language',
     'close': 'Close',
