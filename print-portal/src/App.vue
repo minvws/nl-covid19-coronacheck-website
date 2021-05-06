@@ -60,7 +60,6 @@ export default {
             const routeNameChunks = window.location.href.split('/');
             if (routeNameChunks.length > 0) {
                 const locale = routeNameChunks[3];
-                console.log(locale);
                 const language = this.$store.getters['languages/getItemByProperty']('locale', locale, true);
                 if (language) {
                     this.$store.commit('languages/setCurrent', language);

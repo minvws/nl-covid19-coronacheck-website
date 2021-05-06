@@ -26,9 +26,8 @@ export default {
         currentLanguage: function (newValue, oldValue) {
             if (process.env.NODE_ENV !== 'development') {
                 if (newValue && oldValue) {
-                    const route = this.$route;
-                    const url = window.location.hostname + '/' + this.currentLanguage.locale + route.path;
-                    window.open(url);
+                    const url = window.location.hostname + '/' + this.currentLanguage.locale + '/print';
+                    window.open(url, '_self');
                 }
             }
         }
