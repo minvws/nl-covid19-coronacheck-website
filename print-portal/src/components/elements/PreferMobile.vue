@@ -28,7 +28,7 @@ export default {
                         href="https://apps.apple.com/nl/app/coronacheck/id1548269870"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <img :src="'assets/img/app-store-badges/app-store-badge-' + currentLanguage.locale + '.svg'" alt="{{$t('header-appstore')}}" />
+                        <img :src="'assets/img/app-store-badges/app-store-badge-' + currentLanguage.locale + '.svg'" :alt="$t('header-appstore')" />
                     </a>
                 </li>
                 <li class="app_badge_column__right">
@@ -37,7 +37,7 @@ export default {
                         href="https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <img :src="'assets/img/app-store-badges/google-play-badge-' + currentLanguage.locale + '.svg'" alt="{{$t('header-googleplaystore')}}" />
+                        <img :src="'assets/img/app-store-badges/google-play-badge-' + currentLanguage.locale + '.svg'" :alt="$t('header-googleplaystore')" />
                     </a>
                 </li>
             </ul>

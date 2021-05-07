@@ -102,8 +102,8 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
     'view-faq': 'View frequently asked questions',
     'logo-government': 'Logo Dutch Government, homepage',
     'identity_image_alt': 'Make Holder QR code',
-    'header-appstore': 'Downloaden in de App Store',
-    'header-googleplaystore': 'Download on the App Store'
+    'header-appstore': 'Download on the App Store',
+    'header-googleplaystore': 'Get it on Google Play'
 }
 
 export default en;

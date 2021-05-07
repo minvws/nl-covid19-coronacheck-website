@@ -107,7 +107,7 @@ Let op: dit is géén toegangsticket voor je activiteit`,
     'logo-government': 'Logo Rijksoverheid, homepage',
     'identity_image_alt': 'Holder QR maken',
     'header-appstore': 'Downloaden in de App Store',
-    'header-googleplaystore': 'Ontdek het op Google Play',
+    'header-googleplaystore': 'Ontdek het op Google Play'
 }
 
 export default nl;

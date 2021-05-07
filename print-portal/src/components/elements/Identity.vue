@@ -23,7 +23,7 @@ export default {
         <div class="logo">
             <a href="https://coronacheck.nl/">
                 <img
-                    alt="{{$t('logo-government')}"
+                    :alt="$t('logo-government')"
                     width="45"
                     src="assets/img/rijksoverheid/label_ministerie.svg"/>
             </a>
