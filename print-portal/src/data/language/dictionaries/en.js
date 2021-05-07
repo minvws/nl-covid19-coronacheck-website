@@ -25,6 +25,7 @@ Send an e-mail to helpdesk@coronacheck.nl or call at 0800-1421 (free)`,
 2. Bring a valid proof of identity to the activity
 
 3. Display your test declaration and proof of identity (and if necessary your entrance ticket) at the entrance
+
 Beware: this is not an entrance ticket for the activity you're visiting`,
         'preferMobile': 'Prefer showing your test declaration on your mobile phone? Then use the retrieval code (the test location sends it in an email) in the CoronaCheck app.',
         'questions': 'Questions?',
