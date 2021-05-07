@@ -93,7 +93,21 @@ Let op: dit is géén toegangsticket voor je activiteit`,
     'yourNegativeTestresult': 'Controleer je testuitslag',
     'yourNegativeTestresultDirection': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
     'yourTestProof': 'Jouw testbewijs',
-    'yourTestProofDirection': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er in staat. Open of download de PDF, print het uit en neem ’m mee.'
+    'yourTestProofDirection': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er in staat. Open of download de PDF, print het uit en neem ’m mee.',
+    'skiplink': 'Ga direct naar inhoud',
+    'footer-colophon': 'Colofon',
+    'footer-about': 'De apps CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. De apps hadden niet tot stand kunnen komen zonder de hulp van tientallen experts, ervaringsdeskundigen en een grote open source community van burgers die heeft meegekeken en getest tijdens de ontwikkeling.',
+    'footer-phone': 'Heb je vragen over CoronaCheck?',
+    'footer-phone-call': 'Bel',
+    'footer-phone-call-free': '(Gratis)',
+    'footer-phone-opening': 'Openingstijden',
+    'footer-phone-opening-hours': 'Maandag t/m zondag 08.00 – 20.00 uur',
+    'footer-phone-mail': 'Of stuur een e-mail naar:',
+    'view-faq': 'Bekijk de meestgestelde vragen',
+    'logo-government': 'Logo Rijksoverheid, homepage',
+    'identity_image_alt': 'Holder QR maken',
+    'header-appstore': 'Downloaden in de App Store',
+    'header-googleplaystore': 'Ontdek het op Google Play',
 }
 
 export default nl;
