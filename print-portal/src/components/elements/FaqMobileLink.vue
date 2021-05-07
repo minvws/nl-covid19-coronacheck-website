@@ -12,7 +12,7 @@ export default {
         <a
             href="https://coronacheck.nl/nl/faq"
             class="FaqMobileLink">
-            Bekijk de meestgestelde vragen
+            {{$t('view-faq')}}
         </a>
     </div>
 </template>

@@ -10,7 +10,7 @@ export default {
 <template>
     <div class="skiplinks">
         <a href="#content">
-            Ga direct naar inhoud
+            {{$t('skiplink')}}
         </a>
     </div>
 </template>

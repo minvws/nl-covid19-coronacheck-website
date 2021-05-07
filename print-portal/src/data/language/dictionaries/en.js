@@ -89,7 +89,21 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
     'yourNegativeTestresult': 'Check your test result',
     'yourNegativeTestresultDirection': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test declaration.</p>',
     'yourTestProof': 'Your test declaration',
-    'yourTestProofDirection': 'You\'ve made a test declaration,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.'
+    'yourTestProofDirection': 'You\'ve made a test declaration,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.',
+    'skiplink': 'Skip to content',
+    'footer-colophon': 'Colophon',
+    'footer-about': 'The CoronaCheck and CoronaCheck Scanner apps have been developed by the Ministry of Public Health, Welfare and Sport. The apps would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens, who all lent a hand and helped to test the app during its development.',
+    'footer-phone': 'Do you have any questions about CoronaCheck?',
+    'footer-phone-call': 'Call',
+    'footer-phone-call-free': '(Free)',
+    'footer-phone-opening': 'Opening hours',
+    'footer-phone-opening-hours': 'Monday till Sunday 08.00 a.m. - 08.00 p.m.',
+    'footer-phone-mail': 'Or send an e-mail to:',
+    'view-faq': 'View frequently asked questions',
+    'logo-government': 'Logo Dutch Government, homepage',
+    'identity_image_alt': 'Make Holder QR code',
+    'header-appstore': 'Download on the App Store',
+    'header-googleplaystore': 'Get it on Google Play'
 }
 
 export default en;

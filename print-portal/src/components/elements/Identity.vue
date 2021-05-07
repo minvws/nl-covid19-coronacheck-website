@@ -23,7 +23,7 @@ export default {
         <div class="logo">
             <a href="https://coronacheck.nl/">
                 <img
-                    alt="Label Rijksoverheid"
+                    :alt="$t('logo-government')"
                     width="45"
                     src="assets/img/rijksoverheid/label_ministerie.svg"/>
             </a>
@@ -33,7 +33,7 @@ export default {
             <div class="Identity__image-container">
                 <img
                     class="Identity__image"
-                    alt="Holder QR maken"
+                    alt=""
                     width="356"
                     src="assets/img/artwork/holder_qrcode_maken.svg"/>
             </div>
