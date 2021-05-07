@@ -1,19 +1,19 @@
 ---
 index: 6
 set: 2
-title: Welke informatie kan ik voorafgaand aan mijn pilot evenement delen met mijn bezoekers?
+title: Which information can I share with our visitors ahead of the pilot event?
 ---
-De volgende tekst kan gebruikt worden richting bezoekers:
+The following copy can be used to inform visitors:
+
 
 ---
-Om toegang te krijgen tot [naam activiteit/evenement] moet je naast je toegangsticket ook je testbewijs in de CoronaCheck-app of op papier laten zien.
+To get access to [name of event/activity], you need a digital or printed test declaration in addition to your entrance ticket.
 
-Via de CoronaCheck-app of op www.coronacheck.nl/en/print zet je jouw negatieve testuitslag om in een testbewijs, die snel kan worden gescand bij de ingang van het evenement. Wanneer je jouw negatieve testuitslag ontvangt via Testen voor toegang, zit daar ook een ophaalcode bij. Met behulp van deze ophaalcode kun je in de CoronaCheck-app of op www.coronacheck.nl/en/print jouw testuitslag omzetten naar een testbewijs, in de vorm van een QR-code.
+In the CoronaCheck app or on www.coronacheck.nl/en/print you can convert your negative test result into a test declaration which you can get scanned at the entrance of the event. When receiving your negative test result from Testen voor Toegang, you will also receive a token. You can use this code in the CoronaCheck app or on www.coronacheck.nl/en/print to convert your negative test result into a test declaration in the form of a QR code.
 
-Je laat vervolgens jouw QR-code scannen bij de ingang van ons evenement. Is je QR-code geldig? Dan mag je naar binnen. 
+You have your QR code scanned at the entrance of the event. A valid QR code gives you access. 
 
-**Let op: je kunt maar voor één persoon een testbewijs in de CoronaCheck-app laten zien. Iedere bezoeker heeft dus een eigen telefoon met de app nodig of het geprinte testbewijs nodig.**
+**Please note: the CoronaCheck app only holds 1 person’s test declaration. Every individual will need their own phone and CoronaCheck app, or an individually printed test declaration.**
 
-Meer informatie vind je via www.coronacheck.nl of neem contact op met de CoronaCheck Helpdesk via 0800-1421 of helpdesk@coronacheck.nl. De helpdesk is bereikbaar van maandag t/m zondag van 08.00 tot 20.00 uur.
-
+For more information, go to www.coronacheck.nl. You can contact the CoronaCheck helpdesk at 0800-1421 or helpdesk@coronacheck.nl. The helpdesk is available Monday through Sunday from 08.00 - 20.00 hours.
 

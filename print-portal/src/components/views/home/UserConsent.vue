@@ -53,7 +53,7 @@ export default {
         height: 28px;
         border-radius: 50%;
         margin-right: 20px;
-        border: 1px solid $color-mediumgrey;
+        border: 1px solid $color-darkgrey;
         cursor: pointer;
     }
 
