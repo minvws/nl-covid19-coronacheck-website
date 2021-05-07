@@ -33,7 +33,7 @@ export default {
             <div class="Identity__image-container">
                 <img
                     class="Identity__image"
-                    :alt="$t('identity_image_alt')"
+                    alt=""
                     width="356"
                     src="assets/img/artwork/holder_qrcode_maken.svg"/>
             </div>
