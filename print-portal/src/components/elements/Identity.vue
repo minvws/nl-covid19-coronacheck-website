@@ -105,11 +105,18 @@ export default {
 
         .pagewrap {
             padding: 0;
+
+            .Identity__image-container {
+
+                .Identity__image {
+                    margin: 0 auto;
+                    height: 150px;
+                }
+            }
         }
 
-        .Identity__image {
-            margin: 0 auto;
-            height: 150px;
+        .CoronaCheck-logo {
+            top: 42px;
         }
 
         .Identity__tools {
