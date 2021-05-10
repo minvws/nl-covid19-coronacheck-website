@@ -1,12 +1,9 @@
 import { format, addHours } from 'date-fns';
 import { nl, en } from 'date-fns/locale';
+import i18n from '@/i18n'
 
-const monthNumberToMonthName = (n, locale) => {
-    const months = {
-        nl: ['JAN', 'FEB', 'MAR', 'APR', 'MEI', 'JUN', 'JUL', 'AUG', 'SEP', 'OKT', 'NOV', 'DEC'],
-        en: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
-    }
-    return months[locale][(n - 1)];
+const monthNumberToMonthNameAbbr = (n) => {
+    return i18n.t('date.months.abbr.' + (n - 1))
 }
 
 const dateToString = (dateInput, dateFormat = 'dd-MM-yyyy HH:mm', locale) => {
@@ -27,7 +24,7 @@ const addHoursToDate = (dateInput, hours, formatted) => {
 }
 
 export default {
-    monthNumberToMonthName,
+    monthNumberToMonthNameAbbr,
     dateToString,
     addHoursToDate
 }

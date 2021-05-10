@@ -1,6 +1,13 @@
 import messageInfoTestResultAbout from './../templates/nl/message-info-testResultAbout';
+import footer from './../templates/nl/footer';
 
 const nl = {
+    'date': {
+        'months': {
+            'abbr': ['JAN', 'FEB', 'MAA', 'APR', 'MEI', 'JUN', 'JUL', 'AUG', 'SEP', 'OKT', 'NOV', 'DEC']
+        }
+    },
+    'template': { footer },
     'message': {
         'info': {
             'testResultAbout': {
@@ -95,14 +102,6 @@ Let op: dit is géén toegangsticket voor je activiteit`,
     'yourTestProof': 'Jouw testbewijs',
     'yourTestProofDirection': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er in staat. Open of download de PDF, print het uit en neem ’m mee.',
     'skiplink': 'Ga direct naar inhoud',
-    'footer-colophon': 'Colofon',
-    'footer-about': 'De apps CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. De apps hadden niet tot stand kunnen komen zonder de hulp van tientallen experts, ervaringsdeskundigen en een grote open source community van burgers die heeft meegekeken en getest tijdens de ontwikkeling.',
-    'footer-phone': 'Heb je vragen over CoronaCheck?',
-    'footer-phone-call': 'Bel',
-    'footer-phone-call-free': '(Gratis)',
-    'footer-phone-opening': 'Openingstijden',
-    'footer-phone-opening-hours': 'Maandag t/m zondag 08.00 – 20.00 uur',
-    'footer-phone-mail': 'Of stuur een e-mail naar:',
     'view-faq': 'Bekijk de meestgestelde vragen',
     'logo-government': 'Logo Rijksoverheid, homepage',
     'identity_image_alt': 'Holder QR maken',

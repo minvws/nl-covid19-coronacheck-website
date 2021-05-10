@@ -1,6 +1,5 @@
 import numberTool from '@/tools/numbers';
 import dateTool from '@/tools/date';
-import store from '@/store';
 
 class Holder {
     constructor({
@@ -20,7 +19,7 @@ class Holder {
     }
 
     get birthDayMonthStyled() {
-        return dateTool.monthNumberToMonthName(Number(this.birthMonth), store.state.languages.current.locale);
+        return dateTool.monthNumberToMonthNameAbbr(Number(this.birthMonth));
     }
 
     get birthDayString() {
