@@ -1,4 +1,5 @@
 import messageInfoTestResultAbout from './../templates/en/message-info-testResultAbout';
+import footer from './../templates/en/footer';
 
 const en = {
     'date': {
@@ -6,6 +7,7 @@ const en = {
             'abbr': ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
         }
     },
+    'template': { footer },
     'message': {
         'info': {
             'testResultAbout': {
@@ -97,14 +99,6 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
     'yourTestProof': 'Your test declaration',
     'yourTestProofDirection': 'You\'ve made a test declaration,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.',
     'skiplink': 'Skip to content',
-    'footer-colophon': 'Colophon',
-    'footer-about': 'The CoronaCheck and CoronaCheck Scanner apps have been developed by the Ministry of Public Health, Welfare and Sport. The apps would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens, who all lent a hand and helped to test the app during its development.',
-    'footer-phone': 'Do you have any questions about CoronaCheck?',
-    'footer-phone-call': 'Call',
-    'footer-phone-call-free': '(Free)',
-    'footer-phone-opening': 'Opening hours',
-    'footer-phone-opening-hours': 'Monday till Sunday 08.00 a.m. - 08.00 p.m.',
-    'footer-phone-mail': 'Or send an e-mail to:',
     'view-faq': 'View frequently asked questions',
     'logo-government': 'Logo Dutch Government, homepage',
     'identity_image_alt': 'Make Holder QR code',
