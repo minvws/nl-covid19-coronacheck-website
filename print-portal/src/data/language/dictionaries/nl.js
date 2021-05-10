@@ -1,6 +1,11 @@
 import messageInfoTestResultAbout from './../templates/nl/message-info-testResultAbout';
 
 const nl = {
+    'date': {
+        'months': {
+            'abbr': ['JAN', 'FEB', 'MAA', 'APR', 'MEI', 'JUN', 'JUL', 'AUG', 'SEP', 'OKT', 'NOV', 'DEC']
+        }
+    },
     'message': {
         'info': {
             'testResultAbout': {

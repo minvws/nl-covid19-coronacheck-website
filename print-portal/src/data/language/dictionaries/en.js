@@ -1,6 +1,11 @@
 import messageInfoTestResultAbout from './../templates/en/message-info-testResultAbout';
 
 const en = {
+    'date': {
+        'months': {
+            'abbr': ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
+        }
+    },
     'message': {
         'info': {
             'testResultAbout': {
