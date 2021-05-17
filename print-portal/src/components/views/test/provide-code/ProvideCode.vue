@@ -1,17 +1,16 @@
 <script>
+import Page from '@/components/elements/Page';
 import PreferMobile from '@/components/elements/PreferMobile';
 import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
 import TestResult from '@/classes/TestResult';
 import luhnModN from '@/tools/luhn-mod-n';
-import Navigation from '@/components/elements/Navigation';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import dateTool from '@/tools/date';
-import Footer from '@/components/elements/Footer';
 
 export default {
     name: 'ProvideCode',
-    components: { Footer, FaqMobileLink, Navigation, ProvideVerificationCode, ProvideTestCode, PreferMobile },
+    components: { Page, FaqMobileLink, ProvideVerificationCode, ProvideTestCode, PreferMobile },
     data () {
         return {
             testCodeStatus: {
@@ -252,46 +251,33 @@ export default {
 </script>
 
 <template>
-    <div
-        id="content"
-        class="ProvideCode">
-        <div class="pagewrap">
-            <Navigation
-                :callback-back="back"/>
-            <div class="section">
-                <div class="section-block">
-                    <h2>
-                        {{$t('enterCode')}}
-                    </h2>
-                    <p>
-                        {{$t('testCodeDirection')}}
-                    </p>
+    <Page @back="back">
+        <div class="section">
+            <div class="section-block">
+                <h2>
+                    {{$t('enterCode')}}
+                </h2>
+                <p>
+                    {{$t('testCodeDirection')}}
+                </p>
 
-                    <form
-                        v-on:submit.prevent
-                        autocomplete="off">
-                        <ProvideTestCode
-                            @submit="submitTestCode"
-                            :test-code-status="testCodeStatus"
-                            :verification-needed="verificationNeeded"/>
-                        <ProvideVerificationCode
-                            v-if="verificationNeeded"
-                            @submit-test-code="submitTestCode"
-                            @submit-verification-code="submitVerificationCode"
-                            :verification-code-status="verificationCodeStatus"/>
-                    </form>
-                </div>
+                <form
+                    v-on:submit.prevent
+                    autocomplete="off">
+                    <ProvideTestCode
+                        @submit="submitTestCode"
+                        :test-code-status="testCodeStatus"
+                        :verification-needed="verificationNeeded"/>
+                    <ProvideVerificationCode
+                        v-if="verificationNeeded"
+                        @submit-test-code="submitTestCode"
+                        @submit-verification-code="submitVerificationCode"
+                        :verification-code-status="verificationCodeStatus"/>
+                </form>
             </div>
-            <PreferMobile/>
-
-            <FaqMobileLink/>
         </div>
-        <Footer/>
-    </div>
+        <PreferMobile/>
+
+        <FaqMobileLink/>
+    </Page>
 </template>
-
-<style lang="scss">
-.ProvideCode {
-
-}
-</style>

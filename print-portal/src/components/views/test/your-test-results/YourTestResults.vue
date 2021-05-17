@@ -1,11 +1,10 @@
 <script>
+import Page from '@/components/elements/Page';
 import TestResult from './TestResult';
-import Navigation from '@/components/elements/Navigation';
-import Footer from '@/components/elements/Footer';
 
 export default {
     name: 'YourTestResults',
-    components: { Footer, Navigation, TestResult },
+    components: { Page, TestResult },
     computed: {
         testResult() {
             return this.$store.state.testResult;
@@ -83,72 +82,66 @@ export default {
 </script>
 
 <template>
-    <div
-        id="content"
+    <Page
+        @back="goBack"
         class="YourTestResults">
-        <div class="pagewrap">
-            <Navigation
-                :display-back-button="testResult !== null"
-                :callback-back="goBack"/>
-            <div class="section">
-                <div class="section-block">
-                    <div v-if="testResult">
-                        <h2>
-                            {{$t('yourNegativeTestresult')}}
-                        </h2>
-                        <div v-html="$t('yourNegativeTestresultDirection')"/>
-                        <div class="YourTestResults__header">
-                            {{$t('retrievedTestResult')}}
-                            <button
-                                @click="openModalTestResultsAbout()"
-                                type="button"
-                                class="info-button">
-                                <img src="assets/img/icons/info.svg" alt=""/>
-                            </button>
-                        </div>
-                        <div class="YourTestResults__results">
-                            <TestResult
-                                :testResult="testResult"/>
-                        </div>
-                        <div class="section-block__footer">
-                            <button
-                                @click="createTestCertificate()"
-                                type="button"
-                                class="btn">
-                                {{$t('createTestProof')}}
-                            </button>
-                            <div class="button__help-button">
-                                <button
-                                    @click="openModalTestResultsSomethingWrong()"
-                                    type="button"
-                                    class="button-modest">
-                                    {{$t('somethingIsWrong')}}
-                                </button>
-                            </div>
-                        </div>
+        <div class="section">
+            <div class="section-block">
+                <div v-if="testResult">
+                    <h2>
+                        {{$t('yourNegativeTestresult')}}
+                    </h2>
+                    <div v-html="$t('yourNegativeTestresultDirection')"/>
+                    <div class="YourTestResults__header">
+                        {{$t('retrievedTestResult')}}
+                        <button
+                            @click="openModalTestResultsAbout()"
+                            type="button"
+                            class="info-button">
+                            <img src="assets/img/icons/info.svg" alt=""/>
+                        </button>
                     </div>
-
-                    <div v-else>
-                        <h2>
-                            {{$t('noTestResultPresent')}}
-                        </h2>
-                        <p>
-                            {{$t('noTestResultPresentDirection')}}
-                        </p>
-                        <div class="section-block__footer">
+                    <div class="YourTestResults__results">
+                        <TestResult
+                            :testResult="testResult"/>
+                    </div>
+                    <div class="section-block__footer">
+                        <button
+                            @click="createTestCertificate()"
+                            type="button"
+                            class="btn">
+                            {{$t('createTestProof')}}
+                        </button>
+                        <div class="button__help-button">
                             <button
-                                @click="goHome()"
+                                @click="openModalTestResultsSomethingWrong()"
                                 type="button"
-                                class="btn">
-                                {{$t('goBackToStart')}}
+                                class="button-modest">
+                                {{$t('somethingIsWrong')}}
                             </button>
                         </div>
                     </div>
                 </div>
+
+                <div v-else>
+                    <h2>
+                        {{$t('noTestResultPresent')}}
+                    </h2>
+                    <p>
+                        {{$t('noTestResultPresentDirection')}}
+                    </p>
+                    <div class="section-block__footer">
+                        <button
+                            @click="goHome()"
+                            type="button"
+                            class="btn">
+                            {{$t('goBackToStart')}}
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <Footer/>
-    </div>
+    </Page>
 </template>
 
 <style lang="scss">

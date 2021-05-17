@@ -1,16 +1,18 @@
 <script>
+import Page from '@/components/elements/Page';
+
 export default {
     name: 'Vaccination',
-    components: {},
+    components: { Page },
     computed: {},
     methods: {}
 }
 </script>
 
 <template>
-    <div class="Vaccination">
+    <Page>
         Vaccination
-    </div>
+    </Page>
 </template>
 
 <style lang="scss">

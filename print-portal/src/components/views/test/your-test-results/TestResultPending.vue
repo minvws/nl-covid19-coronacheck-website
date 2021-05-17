@@ -1,10 +1,9 @@
 <script>
-import Navigation from '@/components/elements/Navigation';
-import Footer from '@/components/elements/Footer';
+import Page from '@/components/elements/Page';
 
 export default {
     name: 'TestResultPending',
-    components: { Footer, Navigation },
+    components: { Page },
     computed: {},
     methods: {
         goBack() {
@@ -15,36 +14,23 @@ export default {
 </script>
 
 <template>
-    <div
-        id="content"
-        class="TestResultPending">
-        <div class="pagewrap">
-            <Navigation
-                :display-back-button="false"/>
-            <div class="section">
-                <div class="section-block">
-                    <h2>
-                        {{$t('resultPending')}}
-                    </h2>
-                    <div v-html="$t('resultPendingDirection')"/>
-                    <div class="section-block__footer">
-                        <button
-                            @click="goBack()"
-                            :to="{ name: 'ProvideCode' }"
-                            type="button"
-                            class="btn">
-                            {{$t('back')}}
-                        </button>
-                    </div>
+    <Page :display-back-button="false">
+        <div class="section">
+            <div class="section-block">
+                <h2>
+                    {{$t('resultPending')}}
+                </h2>
+                <div v-html="$t('resultPendingDirection')"/>
+                <div class="section-block__footer">
+                    <button
+                        @click="goBack()"
+                        :to="{ name: 'ProvideCode' }"
+                        type="button"
+                        class="btn">
+                        {{$t('back')}}
+                    </button>
                 </div>
             </div>
         </div>
-        <Footer/>
-    </div>
+    </Page>
 </template>
-
-<style lang="scss">
-.TestResultPending {
-
-}
-</style>

@@ -1,16 +1,14 @@
 <script>
-import Navigation from '@/components/elements/Navigation';
+import Page from '@/components/elements/Page';
 import PreferMobile from '@/components/elements/PreferMobile';
-import Footer from '@/components/elements/Footer';
 import UserConsent from './UserConsent';
 
 export default {
     name: 'Home',
     components: {
+        Page,
         PreferMobile,
-        Footer,
-        UserConsent,
-        Navigation
+        UserConsent
     },
     computed: {
         consent() {
@@ -32,40 +30,35 @@ export default {
 </script>
 
 <template>
-    <div
-        id="content"
-        class="home">
-        <div class="pagewrap">
-            <Navigation
-                :callback-back="gotoHome"/>
-            <div class="section">
-                <div class="section-block">
-                    <h2>
-                        {{$t('printPortalHomeHeader')}}
-                    </h2>
-                    <div v-html="$t('printPortalHomeBodyText')"/>
-                </div>
-                <div class="section-block">
-                    <UserConsent
-                        :consent="consent"
-                        @update="setUserConsent"
-                        :label="$t('userConsentText')"/>
-                </div>
-                <div class="section-block">
-                    <button
-                        @click="gotoProvideCode()"
-                        type="button"
-                        :disabled="!consent"
-                        :class="{'button--inactive': !consent}"
-                        class="btn">
-                        {{$t('next')}}
-                    </button>
-                </div>
+    <Page
+        class="home"
+        @back="gotoHome">
+        <div class="section">
+            <div class="section-block">
+                <h2>
+                    {{$t('printPortalHomeHeader')}}
+                </h2>
+                <div v-html="$t('printPortalHomeBodyText')"/>
             </div>
-            <PreferMobile/>
+            <div class="section-block">
+                <UserConsent
+                    :consent="consent"
+                    @update="setUserConsent"
+                    :label="$t('userConsentText')"/>
+            </div>
+            <div class="section-block">
+                <button
+                    @click="gotoProvideCode()"
+                    type="button"
+                    :disabled="!consent"
+                    :class="{'button--inactive': !consent}"
+                    class="btn">
+                    {{$t('next')}}
+                </button>
+            </div>
         </div>
-        <Footer/>
-    </div>
+        <PreferMobile/>
+    </Page>
 </template>
 
 <style lang="scss">

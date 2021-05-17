@@ -1,10 +1,9 @@
 <script>
-import Navigation from '@/components/elements/Navigation';
+import Page from '@/components/elements/Page';
 import QRCode from 'qrcode'
 import { jsPDF as JsPDF } from 'jspdf';
 import montserrat from '@/assets/fontAsBase64';
 import dateTool from '@/tools/date';
-import Footer from '@/components/elements/Footer';
 import { detect } from 'detect-browser';
 
 const cmToInch = 0.393700787;
@@ -12,7 +11,7 @@ const QRSizeInCm = 8;
 
 export default {
     name: 'Print',
-    components: { Footer, Navigation },
+    components: { Page },
     data() {
         return {
             document: null
@@ -316,76 +315,71 @@ export default {
 </script>
 
 <template>
-    <div
-        id="content"
-        class="Print">
-        <div class="pagewrap">
-            <Navigation
-                :display-back-button="qrCode.length > 0"
-                :callback-back="goBack"/>
-            <div class="section">
-                <div class="section-block">
-                    <div v-if="qrCode.length > 0">
-                        <h2>
-                            {{$t('yourTestProof')}}
-                        </h2>
-                        <p>
-                            {{$t('yourTestProofDirection')}}
-                        </p>
-                        <div class="Print__container">
-                            <div
-                                :class="{'browser-ie': browserIsIE}"
-                                class="Print__buttons">
-                                <button
-                                    type="button"
-                                    :class="{
+    <Page
+        class="Print"
+        @back="goBack"
+        :display-back-button="qrCode.length > 0">
+        <div class="section">
+            <div class="section-block">
+                <div v-if="qrCode.length > 0">
+                    <h2>
+                        {{$t('yourTestProof')}}
+                    </h2>
+                    <p>
+                        {{$t('yourTestProofDirection')}}
+                    </p>
+                    <div class="Print__container">
+                        <div
+                            :class="{'browser-ie': browserIsIE}"
+                            class="Print__buttons">
+                            <button
+                                type="button"
+                                :class="{
                                         'button--inactive': !document
                                     }"
-                                    :disabled="!document"
-                                    id="open-pdf"
-                                    class="btn button--full-width"
-                                    @click="openPDF()">
-                                    {{$t('openPDF')}}
-                                </button>
-                                <button
-                                    type="button"
-                                    :class="{'button--inactive': !document }"
-                                    :disabled="!document"
-                                    id="download-pdf"
-                                    class="btn button--full-width"
-                                    @click="downloadPDF()">
-                                    {{$t('openPDF')}}
-                                </button>
-                            </div>
-                            <div class="Print__image">
-                                <img
-                                    alt="Holder QR code maken"
-                                    width="248"
-                                    src="assets/img/artwork/holder_qrcode_maken_full.svg"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div v-else>
-                        <h2>
-                            {{$t('noTestProofPresent')}}
-                        </h2>
-                        <p>
-                            {{$t('noTestProofPresentDirection')}}
-                        </p>
-                        <div class="section-block__footer">
+                                :disabled="!document"
+                                id="open-pdf"
+                                class="btn button--full-width"
+                                @click="openPDF()">
+                                {{$t('openPDF')}}
+                            </button>
                             <button
-                                @click="goHome()"
                                 type="button"
-                                class="btn">
-                                {{$t('retrieveTestResult')}}
+                                :class="{'button--inactive': !document }"
+                                :disabled="!document"
+                                id="download-pdf"
+                                class="btn button--full-width"
+                                @click="downloadPDF()">
+                                {{$t('openPDF')}}
                             </button>
                         </div>
+                        <div class="Print__image">
+                            <img
+                                alt="Holder QR code maken"
+                                width="248"
+                                src="assets/img/artwork/holder_qrcode_maken_full.svg"/>
+                        </div>
+                    </div>
+                </div>
+                <div v-else>
+                    <h2>
+                        {{$t('noTestProofPresent')}}
+                    </h2>
+                    <p>
+                        {{$t('noTestProofPresentDirection')}}
+                    </p>
+                    <div class="section-block__footer">
+                        <button
+                            @click="goHome()"
+                            type="button"
+                            class="btn">
+                            {{$t('retrieveTestResult')}}
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <Footer/>
-    </div>
+    </Page>
 </template>
 
 <style lang="scss">
