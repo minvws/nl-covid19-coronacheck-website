@@ -26,28 +26,6 @@ export default {
         padding: 0;
     }
 
-    .telephone--as-span {
-        display: inline;
-
-        @include mobile() {
-            display: none;
-        }
-        @include mobile-landscape-X() {
-            display: none;
-        }
-    }
-
-    .telephone--as-anchor {
-        display: none;
-
-        @include mobile() {
-            display: inline;
-        }
-        @include mobile-landscape-X() {
-            display: inline;
-        }
-    }
-
     @include mobile() {
         margin-top: 64px;
     }

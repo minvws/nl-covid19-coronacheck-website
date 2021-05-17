@@ -73,6 +73,31 @@ a:hover {
     text-decoration: underline;
 }
 
+a[href^="tel"],
+a[href^="tel"]:visited, 
+a[href^="tel"]:hover {
+    text-decoration: none;
+    color: currentColor;
+    pointer-events: none;
+    cursor: default;
+}
+
+@media (hover: hover) { 
+    a[href^="tel"],
+    a[href^="tel"]:visited {
+        color: $color-coronacheck-link;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    a[href^="tel"]:hover {
+        text-decoration: underline;
+        color: $color-coronacheck-link--interaction;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+}
+
 button {
   cursor: pointer;
 }

@@ -11,8 +11,7 @@ const html = `
         </div>
         <div class="footer-links-col ___desktop-50">
             <h3> Heb je vragen over CoronaCheck?<br>
-                Bel <span class="telephone--as-span">0800-1421</span>
-                <a href="tel:08001421" class="telephone--as-anchor">0800-1421</a> (Gratis)
+            Call <a href="tel:08001421">0800-1421</a> (Free)
             </h3>
             <p><strong>Openingstijden</strong><br> Maandag t/m zondag 08.00 – 20.00 uur</p>
             <p><strong>Of stuur een e-mail naar:</strong><br>
