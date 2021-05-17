@@ -20,7 +20,7 @@ export default {
             window.location = 'https://coronacheck.nl/nl/';
         },
         gotoProvideCode() {
-            this.$router.push({ name: 'ProvideCode' });
+            this.$router.push({ name: 'Vaccination' });
         },
         setUserConsent(value) {
             this.$store.commit('setUserConsent', value);
