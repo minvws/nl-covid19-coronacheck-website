@@ -74,6 +74,8 @@ export default {
                 display: block;
                 height: auto;
                 margin-left: 60px;
+                max-width: 343px;
+                width: 100%;
             }
         }
     }

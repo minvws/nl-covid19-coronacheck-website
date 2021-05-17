@@ -10,7 +10,7 @@ export default {
 <template>
     <div class="PreferMobile">
         <div class="PreferMobile__image">
-            <img :src="'assets/img/CoronaCheck_app-' + currentLanguage.locale + '.png'" alt="" />
+            <img :src="'assets/img/CoronaCheck_app-' + currentLanguage.locale + '.png'" alt="" width="226" height="289" />
         </div>
         <div class="PreferMobile__text">
             <h3>
@@ -62,6 +62,7 @@ export default {
 
         img {
             width: 100%;
+            height: auto;
         }
     }
 
@@ -82,12 +83,16 @@ export default {
         .PreferMobile__image {
             width: 100%;
             margin-right: 0;
-            height: 260px;
             overflow: hidden;
-            padding: 0 $length-xl--mobile;
+            padding: 0;
+            align-items: flex-end;
+            justify-content: center;
+            display: flex;
 
             img {
-                width: 100%;
+                width: auto;
+                height: auto;
+                max-height: 260px;
             }
         }
 
