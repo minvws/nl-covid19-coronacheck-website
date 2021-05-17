@@ -159,37 +159,11 @@ coronacheck-header-img:
   nl: /img/CoronaCheck_app.png
   fy: /img/CoronaCheck_app.png
   en: /img/CoronaCheck_app-en.png
-
-coronacheck-header-alt:
-  nl: Voorbeeld van de CoronaCheck app
-  fy: 
-  en: Example of the CoronaCheck app
-  ar: 
-  bg: 
-  de: 
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr: 
     
 scanner-header-img:
   nl: /img/CoronaCheckScanner_app-tall.png
   fy: /img/CoronaCheckScanner_app-tall.png
   en: /img/CoronaCheckScanner_app-tall-en.png
-
-scanner-header-alt:
-  nl: Voorbeeld van de CoronaCheck Scanner app
-  fy: 
-  en: Example of the CoronaCheck Scanner app
-  ar: 
-  bg: 
-  de: 
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr: 
 
 header-appstore:
   nl: Downloaden in de App Store
