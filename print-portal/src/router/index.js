@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/views/home/Home.vue'
-import ProvideCode from '@/components/views/provide-code/ProvideCode.vue'
-import YourTestResults from '@/components/views/your-test-results/YourTestResults';
-import Print from '@/components/views/print/Print';
+import Vaccination from '@/components/views/vaccination/Vaccination.vue'
+import ProvideCode from '@/components/views/test/provide-code/ProvideCode.vue'
+import YourTestResults from '@/components/views/test/your-test-results/YourTestResults';
 import TestResultPending from '@/components/views/your-test-results/TestResultPending';
+import Print from '@/components/views/print/Print';
 import store from '@/store'
 
 Vue.use(VueRouter)
@@ -14,6 +15,10 @@ const routes = [
         path: '/',
         component: Home,
         name: 'Home'
+    }, {
+        path: '/vaccination',
+        component: Vaccination,
+        name: 'Vaccination'
     }, {
         path: '/testuitslag-ophalen',
         component: ProvideCode,
@@ -42,9 +47,12 @@ const router = new VueRouter({
     }
 })
 
+// todo remove Vaccination
+const pagesWithoutConsentNeeded = ['Home', 'Vaccination']
+
 router.beforeEach((to, from, next) => {
     // check for user consent, otherwise redirect to home
-    if (to.name !== 'Home' && !store.state.userConsent) {
+    if (pagesWithoutConsentNeeded.indexOf(to.name) === -1 && !store.state.userConsent) {
         next({ name: 'Home' })
     } else {
         next();
