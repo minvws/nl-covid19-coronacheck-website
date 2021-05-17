@@ -3,10 +3,10 @@ const html = `
         <div class="footer-links-col ___desktop-50">
             <div class="footer-logos-info">
                 <h2 class="screen-reader-text">Colofon</h2>
-                De apps CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid,
-                Welzijn en Sport. De apps hadden niet tot stand kunnen komen zonder de hulp van tientallen experts,
-                ervaringsdeskundigen en een grote open source community van burgers die heeft meegekeken en getest
-                tijdens de ontwikkeling.
+                CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn
+                en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder
+                de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community
+                tijdens de ontwikkeling meegekeken en getest.
             </div>
         </div>
         <div class="footer-links-col ___desktop-50">
