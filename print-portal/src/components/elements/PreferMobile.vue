@@ -1,9 +1,7 @@
 <script>
-import ImageHolder from './i18n-images/ImageHolder';
-
 export default {
     name: 'PreferMobile',
-    components: { ImageHolder },
+    components: { },
     computed: {},
     methods: {}
 }
@@ -12,7 +10,7 @@ export default {
 <template>
     <div class="PreferMobile">
         <div class="PreferMobile__image">
-            <ImageHolder/>
+            <img :src="'assets/img/CoronaCheck_app-' + currentLanguage.locale + '.png'" alt="" />
         </div>
         <div class="PreferMobile__text">
             <h3>
