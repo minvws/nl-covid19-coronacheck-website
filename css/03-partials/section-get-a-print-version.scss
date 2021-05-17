@@ -1,5 +1,4 @@
 .print-version {
-  background-color: $color-RO_lightblue;
   margin: 0 auto;
   max-width: 940px;
   color: #333;
@@ -9,15 +8,6 @@
   @media (min-width: 680px) {
     flex-direction: row;
     width: calc(100% - (54px * 2));
-  }
-
-  a, a:visited { 
-    color: $color-cc-link-darker;
-
-    &:hover,
-    &:focus {
-      color: $color-cc-link-darker--interaction;
-    }
   }
 }
 

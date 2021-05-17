@@ -36,7 +36,6 @@
 
 .header {
   position: relative;
-  background: $color-RO_lightblue;
 
   .header__title {
     font-size: 24px;
@@ -45,15 +44,6 @@
     @media (min-width: 825px) {
       font-size: 40px;
       line-height: 1.25;
-    }
-  }
-
-  a, a:visited { 
-    color: $color-cc-link-darker;
-
-    &:hover,
-    &:focus {
-      color: $color-cc-link-darker--interaction;
     }
   }
 }

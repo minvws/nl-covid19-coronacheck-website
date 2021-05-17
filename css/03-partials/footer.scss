@@ -76,19 +76,6 @@
     }
 }
 
-.footer-phone--background {
-    background-color: $color-RO_lightblue;
-
-    a, a:visited { 
-        color: $color-cc-link-darker;
-
-        &:hover,
-        &:focus {
-          color: $color-cc-link-darker--interaction;
-        }
-    }
-}
-
 .footer-phone__column-left {
     display: flex;
     flex-direction: column;
