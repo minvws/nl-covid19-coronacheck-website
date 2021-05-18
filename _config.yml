@@ -17,6 +17,8 @@ collections:
     output: false
   scanner-instructions:
     output: false  
+  announcements:
+    output: false  
 
 defaults:
   -
