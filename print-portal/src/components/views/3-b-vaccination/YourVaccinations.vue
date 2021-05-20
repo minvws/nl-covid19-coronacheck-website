@@ -1,6 +1,7 @@
 <script>
 import Page from '@/components/elements/Page';
 import Loading from '@/components/elements/Loading';
+import mockVaccinationEvens from '@/data/mock/mock-vaccinations';
 
 export default {
     name: 'YourVaccinations',
@@ -40,6 +41,14 @@ export default {
             }
             this.accessToken = new URLSearchParams(params).get('access_token');
             this.$store.commit('setUserConsent', true);
+            // mock connection
+            setTimeout(this.retrieveResults, 5000);
+        },
+        retrieveResults() {
+            const result = mockVaccinationEvens.events;
+            const vaccinations = result.filter(ev => ev.type === 'vaccination').map(ev => ev.vaccination);
+            this.$store.commit('vaccinations/init', vaccinations);
+            // this.isLoading = false;
         }
     },
     mounted() {
@@ -49,27 +58,31 @@ export default {
 </script>
 
 <template>
-    <div class="YourVaccinations">
-        <Page
-            @back="back">
-            <div class="section">
-                <div class="section-block">
-                    <h2>
-                        {{$t('views.yourVaccinations.pageHeader')}}
-                    </h2>
-                    <div
-                        v-if="!isLoading"
-                        v-html="$t('views.yourVaccinations.pageIntro')"/>
-                </div>
-                <div class="section-block">
-                    <Loading v-if="isLoading"/>
-                    <div v-else>
-                        Je vaccinaties
-                    </div>
-                </div>
+    <Page
+        class="YourVaccinations"
+        @back="back">
+        <div class="section">
+            <div class="section-block">
+                <h2>
+                    {{$t('views.yourVaccinations.pageHeader')}}
+                </h2>
+                <div
+                    v-if="!isLoading"
+                    v-html="$t('views.yourVaccinations.pageIntro')"/>
             </div>
-        </Page>
-    </div>
+            <div
+                v-if="isLoading"
+                class="section-block">
+                <Loading
+                    :text="'(Mocking digid connection...)'"/>
+            </div>
+            <div
+                v-else
+                class="section-block">
+                Je vaccinaties
+            </div>
+        </div>
+    </Page>
 </template>
 
 <style lang="scss">

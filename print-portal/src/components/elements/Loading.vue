@@ -2,6 +2,12 @@
 export default {
     name: 'Loading',
     components: {},
+    props: {
+        text: {
+            type: String,
+            required: false
+        }
+    },
     computed: {},
     methods: {}
 }
@@ -9,7 +15,14 @@ export default {
 
 <template>
     <div class="Loading">
-        <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div class="lds-default">
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <div
+                v-if="text"
+                class="Loading__text">
+                {{text}}
+            </div>
+        </div>
     </div>
 </template>
 
@@ -29,7 +42,18 @@ export default {
             width: 40px * $size;
             height: 40px * $size;
 
-            div {
+            .Loading__text {
+                position: absolute;
+                left: 100%;
+                top: 40px * $size;
+                transform: translateY(-50%);
+                margin-top: -2px;
+                padding-left: 30px;
+                white-space: nowrap;
+                font-size: 12px;
+            }
+
+            div:not(.Loading__text) {
                 position: absolute;
                 width: 6px * $size;
                 height: 6px * $size;
