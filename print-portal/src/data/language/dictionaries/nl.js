@@ -21,6 +21,11 @@ const nl = {
             'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
             'choiceVaccinationHeader': 'Een vaccinatie',
             'choiceVaccinationBody': 'Ik heb mijn prik of prikken gehad'
+        },
+        'collectVaccination': {
+            'pageHeader': 'Vaccinatie ophalen',
+            'pageIntro': '<p>Heb je een of meer prikken gekregen? Dan kan je een  bewijs maken.</p><p>Vragen over vaccinaties? <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">Lees hier meer</a></p>',
+            'loginDigid': 'Login met DigiD'
         }
     },
     'message': {

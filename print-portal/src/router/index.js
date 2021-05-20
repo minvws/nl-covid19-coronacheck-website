@@ -5,7 +5,7 @@ import ChoiceProof from '@/components/views/2-choice-proof/ChoiceProof'
 import ProvideCode from '@/components/views/3-a-test/provide-code/ProvideCode'
 import YourTestResults from '@/components/views/3-a-test/your-test-results/YourTestResults';
 import TestResultPending from '@/components/views/3-a-test/your-test-results/TestResultPending';
-import Vaccination from '@/components/views/3-b-vaccination/Vaccination'
+import CollectVaccination from '@/components/views/3-b-vaccination/CollectVaccination'
 import Print from '@/components/views/4-print/Print';
 import store from '@/store'
 
@@ -21,9 +21,9 @@ const routes = [
         component: ChoiceProof,
         name: 'ChoiceProof'
     }, {
-        path: '/vaccination',
-        component: Vaccination,
-        name: 'Vaccination'
+        path: '/vaccinatie-ophalen',
+        component: CollectVaccination,
+        name: 'CollectVaccination'
     }, {
         path: '/testuitslag-ophalen',
         component: ProvideCode,

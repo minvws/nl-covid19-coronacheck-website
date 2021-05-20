@@ -14,7 +14,7 @@ export default {
             this.$router.push({ name: 'ProvideCode' });
         },
         gotoVaccinationPage() {
-            this.$router.push({ name: 'Vaccination' });
+            this.$router.push({ name: 'CollectVaccination' });
         }
     }
 }

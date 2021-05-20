@@ -21,6 +21,11 @@ const en = {
             'choiceTestBody': 'TODO',
             'choiceVaccinationHeader': 'TODO',
             'choiceVaccinationBody': 'TODO'
+        },
+        'collectVaccination': {
+            'pageHeader': 'TODO',
+            'pageIntro': 'TODO',
+            'loginDigid': 'TODO'
         }
     },
     'message': {

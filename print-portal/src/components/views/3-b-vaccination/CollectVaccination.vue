@@ -2,7 +2,7 @@
 import Page from '@/components/elements/Page';
 
 export default {
-    name: 'Vaccination',
+    name: 'CollectVaccination',
     components: { Page },
     data() {
         return {
@@ -35,21 +35,31 @@ export default {
 <template>
     <Page
         @back="back">
-        <button
-            v-if="!accessToken || accessToken.length === 0"
-            type="button"
-            class="btn"
-            @click="getToken">
-            Get token
-        </button>
-        <span v-else>
-            {{accessToken}}
-        </span>
+        <div class="section">
+            <div class="section-block">
+                <h2>
+                    {{$t('views.collectVaccination.pageHeader')}}
+                </h2>
+                <div v-html="$t('views.collectVaccination.pageIntro')"/>
+            </div>
+            <div class="section-block">
+                <button
+                    v-if="!accessToken || accessToken.length === 0"
+                    type="button"
+                    class="btn"
+                    @click="getToken">
+                    {{$t('views.collectVaccination.loginDigid')}}
+                </button>
+                <span v-else>
+                    {{accessToken}}
+                </span>
+            </div>
+        </div>
     </Page>
 </template>
 
 <style lang="scss">
-.Vaccination {
+    .CollectVaccination {
 
-}
+    }
 </style>
