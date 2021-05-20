@@ -19,6 +19,9 @@ export default {
         },
         holder() {
             return this.$store.state.holder;
+        },
+        title() {
+            return this.$t('orderWords.' + (this.vaccination.doseNumber - 1)) + ' ' + this.$t('vaccination').toLocaleLowerCase();
         }
     },
     methods: {}
@@ -28,7 +31,7 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status">
-            {{vaccination.doseNumber}}
+            {{title}}
         </div>
         <div class="proof-event__date">
             {{$t('name')}}: {{holder.fullName}}

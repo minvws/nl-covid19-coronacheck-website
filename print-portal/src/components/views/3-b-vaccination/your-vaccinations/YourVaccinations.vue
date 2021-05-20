@@ -47,7 +47,7 @@ export default {
             this.accessToken = new URLSearchParams(params).get('access_token');
             this.$store.commit('setUserConsent', true);
             // mock connection
-            setTimeout(this.retrieveResults, 1000);
+            setTimeout(this.retrieveResults, 100);
         },
         retrieveResults() {
             const result = mockData;
@@ -56,6 +56,12 @@ export default {
                 this.$store.commit('proofEvents/create', proofEvent);
             }
             this.isLoading = false;
+        },
+        gotoPrint() {
+            //
+        },
+        openModalVaccinationSomethingWrong() {
+            //
         }
     },
     mounted() {
@@ -91,6 +97,22 @@ export default {
                         v-for="proofEvent of vaccinationProofEvents"
                         :key="proofEvent.unique"
                         :proof-event="proofEvent"/>
+                </div>
+                <div class="section-block__footer">
+                    <button
+                        @click="gotoPrint()"
+                        type="button"
+                        class="btn">
+                        {{$t('createTestProof')}}
+                    </button>
+                    <div class="button__help-button">
+                        <button
+                            @click="openModalVaccinationSomethingWrong()"
+                            type="button"
+                            class="button-modest">
+                            {{$t('somethingIsWrong')}}
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
