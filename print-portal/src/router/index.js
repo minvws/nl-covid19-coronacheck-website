@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '@/components/views/home/Home.vue'
-import ChoiceProof from '@/components/views/choice-proof/ChoiceProof'
-import Vaccination from '@/components/views/vaccination/Vaccination'
-import ProvideCode from '@/components/views/test/provide-code/ProvideCode'
-import YourTestResults from '@/components/views/test/your-test-results/YourTestResults';
-import TestResultPending from '@/components/views/test/your-test-results/TestResultPending';
-import Print from '@/components/views/print/Print';
+import Home from '@/components/views/1-home/Home.vue'
+import ChoiceProof from '@/components/views/2-choice-proof/ChoiceProof'
+import ProvideCode from '@/components/views/3-a-test/provide-code/ProvideCode'
+import YourTestResults from '@/components/views/3-a-test/your-test-results/YourTestResults';
+import TestResultPending from '@/components/views/3-a-test/your-test-results/TestResultPending';
+import Vaccination from '@/components/views/3-b-vaccination/Vaccination'
+import Print from '@/components/views/4-print/Print';
 import store from '@/store'
 
 Vue.use(VueRouter)
