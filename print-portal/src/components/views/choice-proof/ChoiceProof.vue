@@ -1,13 +1,20 @@
 <script>
 import Page from '@/components/elements/Page';
+import PageChoice from '@/components/elements/PageChoice';
 
 export default {
     name: 'ChoiceProof',
-    components: { Page },
+    components: { PageChoice, Page },
     computed: {},
     methods: {
         back() {
             this.$router.push({ name: 'Home' })
+        },
+        gotoTestPage() {
+
+        },
+        gotoVaccinationPage() {
+
         }
     }
 }
@@ -22,6 +29,16 @@ export default {
                     {{$t('views.choiceProof.pageHeader')}}
                 </h2>
                 <div v-html="$t('views.choiceProof.pageIntro')"/>
+            </div>
+            <div class="section-block">
+                <PageChoice
+                    @select="gotoTestPage"
+                    :header="'Test'"
+                    :body="'Lorem ipsum'"/>
+                <PageChoice
+                    @select="gotoVaccinationPage"
+                    :header="'Vaccinatie'"
+                    :body="'Dolor sit amet'"/>
             </div>
         </div>
     </Page>
