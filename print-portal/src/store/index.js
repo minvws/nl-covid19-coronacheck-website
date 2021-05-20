@@ -4,6 +4,7 @@ import _base from './modules/_base-module';
 import modal from './modules/modal';
 import languages from './modules/languages';
 import testProviders from './modules/testProviders';
+import vaccinations from './modules/vaccinations';
 
 Vue.use(Vuex)
 
@@ -78,6 +79,7 @@ export default new Vuex.Store({
     modules: {
         modal,
         languages,
-        testProviders
+        testProviders,
+        vaccinations
     }
 })
