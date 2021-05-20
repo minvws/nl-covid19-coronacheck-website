@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-    <div
+    <button
         @click="select"
         class="PageChoice">
         <div class="PageChoice__header">
@@ -33,7 +33,7 @@ export default {
         <div class="PageChoice__icon">
             <img src="assets/img/icons/next.svg"/>
         </div>
-    </div>
+    </button>
 </template>
 
 <style lang="scss">
@@ -47,9 +47,19 @@ export default {
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     cursor: pointer;
     position: relative;
+    border: 2px solid transparent;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: inherit;
+    outline: none;
 
     &:hover {
-        background: $color-mediumgrey;
+        background: #fff;
+    }
+
+    &:focus {
+        border: 2px solid $color-coronacheck-link;
     }
 
     &:last-child {
