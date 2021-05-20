@@ -8,6 +8,17 @@ const nl = {
         }
     },
     'template': { footer },
+    'views': {
+        'home': {
+            'pageHeader': 'Krijg toegang met een papieren testbewijs',
+            'pageIntro': '<p>Een testbewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><h4>Alleen toegang na testen</h4><p>Laat je daarom testen als je bepaalde sociale, culturele of sportieve activiteiten bezoekt. Ook als je al gevaccineerd bent. Blijkt uit de test dat je geen corona hebt (negatieve testuitslag)? Dan krijg je toegang.</p><h4>Jouw QR-code op zak</h4><p>Als uit de test blijkt dat je geen corona hebt kun je in de app of op papier een persoonlijke QR-code maken. Dat is jouw testbewijs. De QR-code wordt gescand voordat je toegang krijgt. Zorg dat jouw QR-code binnen 40 uur na het moment van testen gescand is bij de ingang.</p><h4>Zo min mogelijk gegevens</h4><p>In jouw QR-code staan alleen je negatieve testuitslag (geen corona), het tijdstip van de test en minimale gegevens: de eerste letter van je voornaam, de eerste letter van je achternaam, je geboortedag en geboortemaand. Dit is ter controle, om zeker te zijn dat de testuitslag bij jou hoort.</p>',
+            'userConsentText': 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank">privacyverklaring</a> gelezen en geef toestemming voor het verwerken van mijn persoonsgegevens.'
+        },
+        'choiceProof': {
+            'pageHeader': 'Waar wil je een papieren bewijs van maken?',
+            'pageIntro': '<p>Je kan een QR-code maken van een negatieve testuitslag (geldt 40 uur) of van een vaccinatie (geldt 1 jaar). In Europa kan geldigheid verschillen.</p>'
+        }
+    },
     'message': {
         'info': {
             'testResultAbout': {
@@ -78,8 +89,6 @@ Let op: dit is géén toegangsticket voor je activiteit`,
     'noVerificationCodeMessage': '<p>Je krijgt de verificatiecode via een sms of e-mail van de testlocatie. Niet gekregen? Dan kunnen we een nieuwe code sturen.</p>',
     'preferMobile': 'Liever je testbewijs op je mobiel?',
     'preferMobileDirection': 'Download dan de app.',
-    'printPortalHomeBodyText': '<p>Een testbewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><h4>Alleen toegang na testen</h4><p>Laat je daarom testen als je bepaalde sociale, culturele of sportieve activiteiten bezoekt. Ook als je al gevaccineerd bent. Blijkt uit de test dat je geen corona hebt (negatieve testuitslag)? Dan krijg je toegang.</p><h4>Jouw QR-code op zak</h4><p>Als uit de test blijkt dat je geen corona hebt kun je in de app of op papier een persoonlijke QR-code maken. Dat is jouw testbewijs. De QR-code wordt gescand voordat je toegang krijgt. Zorg dat jouw QR-code binnen 40 uur na het moment van testen gescand is bij de ingang.</p><h4>Zo min mogelijk gegevens</h4><p>In jouw QR-code staan alleen je negatieve testuitslag (geen corona), het tijdstip van de test en minimale gegevens: de eerste letter van je voornaam, de eerste letter van je achternaam, je geboortedag en geboortemaand. Dit is ter controle, om zeker te zijn dat de testuitslag bij jou hoort.</p>',
-    'printPortalHomeHeader': 'Krijg toegang met een papieren testbewijs',
     'retrieveTestResult': 'Testuitslag ophalen',
     'sendCode': 'Stuur code',
     'sendAgain': 'Verstuur opnieuw',
@@ -91,7 +100,6 @@ Let op: dit is géén toegangsticket voor je activiteit`,
     'resultPendingDirection': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.',
     'somethingIsWrong': 'Klopt er iets niet?',
     'openPDF': 'Open PDF',
-    'userConsentText': 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank">privacyverklaring</a> gelezen en geef toestemming voor het verwerken van mijn persoonsgegevens.',
     'verificationCode': 'Verificatiecode',
     'verificationCodeDirection': 'Je krijgt een code in een sms of e-mail',
     'yourCredentials': 'Jouw gegevens',

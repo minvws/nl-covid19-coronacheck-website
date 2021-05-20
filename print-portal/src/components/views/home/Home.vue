@@ -19,8 +19,8 @@ export default {
         gotoHome() {
             window.location = 'https://coronacheck.nl/nl/';
         },
-        gotoProvideCode() {
-            this.$router.push({ name: 'Vaccination' });
+        gotoChoice() {
+            this.$router.push({ name: 'ChoiceProof' });
         },
         setUserConsent(value) {
             this.$store.commit('setUserConsent', value);
@@ -36,19 +36,19 @@ export default {
         <div class="section">
             <div class="section-block">
                 <h2>
-                    {{$t('printPortalHomeHeader')}}
+                    {{$t('views.home.pageHeader')}}
                 </h2>
-                <div v-html="$t('printPortalHomeBodyText')"/>
+                <div v-html="$t('views.home.pageIntro')"/>
             </div>
             <div class="section-block">
                 <UserConsent
                     :consent="consent"
                     @update="setUserConsent"
-                    :label="$t('userConsentText')"/>
+                    :label="$t('views.home.userConsentText')"/>
             </div>
             <div class="section-block">
                 <button
-                    @click="gotoProvideCode()"
+                    @click="gotoChoice()"
                     type="button"
                     :disabled="!consent"
                     :class="{'button--inactive': !consent}"

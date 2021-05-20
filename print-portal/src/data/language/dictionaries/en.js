@@ -8,6 +8,17 @@ const en = {
         }
     },
     'template': { footer },
+    'views': {
+        'home': {
+            'pageHeader': 'Get access with a test declaration on paper',
+            'pageIntro': '<p>A test declaration on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><h4>Only access after testing</h4><p>Get tested when visiting certain social, cultural or sports events. Even when you\'ve already been vaccinated. Does your test prove you don\'t have coronavirus (negative test result)? Then you can get access.</p><h4>Your QR code in your pocket</h4><p>If your test proves you don\'t have coronavirus, you can make a personal QR code in this app. This will be your test declaration. The QR code is scanned before you get access.</p><h4>Minimum amount of data</h4><p>Your QR code only states when you tested negative (no coronavirus), the time of testing, and the minimum amount of identifying data: your first name initial, your last name initial, your day of birth, and your month of both. We verify this information to make sure the test result is yours.</p>',
+            'userConsentText': 'I\'ve read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and give consent for processing my personal data.'
+        },
+        'choiceProof': {
+            'pageHeader': 'TODO',
+            'pageIntro': '<p>TODO</p>'
+        }
+    },
     'message': {
         'info': {
             'testResultAbout': {
@@ -77,8 +88,6 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
     'noVerificationCodeMessage': '<p>The test location sends you a verification code via text or email. Didn\'t get one? Then you can request a new code.</p>',
     'preferMobile': 'Prefer having your test declaration on mobile?',
     'preferMobileDirection': 'Then download the app.',
-    'printPortalHomeBodyText': '<p>A test declaration on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><h4>Only access after testing</h4><p>Get tested when visiting certain social, cultural or sports events. Even when you\'ve already been vaccinated. Does your test prove you don\'t have coronavirus (negative test result)? Then you can get access.</p><h4>Your QR code in your pocket</h4><p>If your test proves you don\'t have coronavirus, you can make a personal QR code in this app. This will be your test declaration. The QR code is scanned before you get access.</p><h4>Minimum amount of data</h4><p>Your QR code only states when you tested negative (no coronavirus), the time of testing, and the minimum amount of identifying data: your first name initial, your last name initial, your day of birth, and your month of both. We verify this information to make sure the test result is yours.</p>',
-    'printPortalHomeHeader': 'Get access with a test declaration on paper',
     'retrieveTestResult': 'Retrieve test result',
     'sendCode': 'Send code',
     'sendAgain': 'Send again',
@@ -90,7 +99,6 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
     'resultPendingDirection': 'Please try again later.<br>If you have any questions, contact your test location.',
     'somethingIsWrong': 'Is something wrong?',
     'openPDF': 'Open PDF',
-    'userConsentText': 'I\'ve read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and give consent for processing my personal data.',
     'verificationCode': 'Verification code',
     'verificationCodeDirection': 'You get a code via text or email',
     'yourCredentials': 'Identification details',

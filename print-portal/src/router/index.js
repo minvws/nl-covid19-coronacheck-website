@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/views/home/Home.vue'
-import Vaccination from '@/components/views/vaccination/Vaccination.vue'
-import ProvideCode from '@/components/views/test/provide-code/ProvideCode.vue'
+import ChoiceProof from '@/components/views/choice-proof/ChoiceProof'
+import Vaccination from '@/components/views/vaccination/Vaccination'
+import ProvideCode from '@/components/views/test/provide-code/ProvideCode'
 import YourTestResults from '@/components/views/test/your-test-results/YourTestResults';
 import TestResultPending from '@/components/views/test/your-test-results/TestResultPending';
 import Print from '@/components/views/print/Print';
@@ -15,6 +16,10 @@ const routes = [
         path: '/',
         component: Home,
         name: 'Home'
+    }, {
+        path: '/keuze-papieren-bewijs',
+        component: ChoiceProof,
+        name: 'ChoiceProof'
     }, {
         path: '/vaccination',
         component: Vaccination,
