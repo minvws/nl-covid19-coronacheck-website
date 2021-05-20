@@ -5,8 +5,8 @@ import ChoiceProof from '@/components/views/2-choice-proof/ChoiceProof'
 import ProvideCode from '@/components/views/3-a-test/provide-code/ProvideCode'
 import YourTestResults from '@/components/views/3-a-test/your-test-results/YourTestResults';
 import TestResultPending from '@/components/views/3-a-test/your-test-results/TestResultPending';
-import CollectVaccination from '@/components/views/3-b-vaccination/CollectVaccination'
-import YourVaccinations from '@/components/views/3-b-vaccination/YourVaccinations'
+import CollectVaccination from '@/components/views/3-b-vaccination/collect-vaccination/CollectVaccination'
+import YourVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinations'
 import Print from '@/components/views/4-print/Print';
 import store from '@/store'
 

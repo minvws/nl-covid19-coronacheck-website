@@ -51,9 +51,7 @@ export default {
             for (const proofEvent of result.events) {
                 this.$store.commit('proofEvents/create', proofEvent);
             }
-            // const vaccinations = result.filter(ev => ev.type === 'vaccination').map(ev => ev.vaccination);
-            // this.$store.commit('/init', vaccinations);
-            // this.isLoading = false;
+            this.isLoading = false;
         }
     },
     mounted() {
