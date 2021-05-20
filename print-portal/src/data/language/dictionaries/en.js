@@ -26,6 +26,10 @@ const en = {
             'pageHeader': 'TODO',
             'pageIntro': 'TODO',
             'loginDigid': 'TODO'
+        },
+        'yourVaccinations': {
+            'pageHeader': 'TODO',
+            'pageIntro': '<p>TODO</p>'
         }
     },
     'message': {

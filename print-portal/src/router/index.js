@@ -6,6 +6,7 @@ import ProvideCode from '@/components/views/3-a-test/provide-code/ProvideCode'
 import YourTestResults from '@/components/views/3-a-test/your-test-results/YourTestResults';
 import TestResultPending from '@/components/views/3-a-test/your-test-results/TestResultPending';
 import CollectVaccination from '@/components/views/3-b-vaccination/CollectVaccination'
+import YourVaccinations from '@/components/views/3-b-vaccination/YourVaccinations'
 import Print from '@/components/views/4-print/Print';
 import store from '@/store'
 
@@ -24,6 +25,10 @@ const routes = [
         path: '/vaccinatie-ophalen',
         component: CollectVaccination,
         name: 'CollectVaccination'
+    }, {
+        path: '/jouw-vaccinaties',
+        component: YourVaccinations,
+        name: 'YourVaccinations'
     }, {
         path: '/testuitslag-ophalen',
         component: ProvideCode,
