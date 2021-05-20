@@ -31,6 +31,14 @@ const en = {
         'yourVaccinations': {
             'pageHeader': 'TODO',
             'pageIntro': '<p>TODO</p>'
+        },
+        'printTestResult': {
+            'pageHeader': 'Your test declaration',
+            'pageIntro': 'You\'ve made a test declaration,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.'
+        },
+        'printVaccination': {
+            'pageHeader': 'TODO',
+            'pageIntro': '<p>TODO</p>'
         }
     },
     'message': {
@@ -46,6 +54,9 @@ const en = {
             'vaccinationAbout': {
                 'head': 'TODO',
                 'body': messageInfoVaccinationAbout
+            },
+            'vaccinationSomethingWrong': {
+                'body': '<p>TODO</p>'
             }
         },
         'error': {}
@@ -66,7 +77,6 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
         'preferMobile': 'Prefer showing your test declaration on your mobile phone? Then use the retrieval code (the test location sends it in an email) in the CoronaCheck app.',
         'questions': 'Questions?',
         'testedAt': 'Tested for',
-        'yourTestProof': 'Your test declaration',
         'validUntil': 'Valid until'
     },
     'image': {
@@ -127,7 +137,6 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
     'yourNegativeTestresult': 'Check your test result',
     'yourNegativeTestresultDirection': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test declaration.</p>',
     'yourTestProof': 'Your test declaration',
-    'yourTestProofDirection': 'You\'ve made a test declaration,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.',
     'skiplink': 'Skip to content',
     'view-faq': 'View frequently asked questions',
     'logo-government': 'Logo Dutch Government, homepage',

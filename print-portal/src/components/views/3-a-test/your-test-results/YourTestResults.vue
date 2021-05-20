@@ -29,7 +29,7 @@ export default {
         createTestCertificate() {
             if (this.signature) {
                 if (this.hasQR) {
-                    this.$router.push({ name: 'Print' });
+                    this.$router.push({ name: 'PrintTestResult' });
                 } else {
                     this.$axios({
                         method: 'post',
@@ -39,7 +39,7 @@ export default {
                         if (response.data.status === 'ok' && response.data.error === 0) {
                             this.$store.commit('setQrCode', response.data.qr.data);
                             this.$store.commit('setQrData', response.data.qr.attributesIssued);
-                            this.$router.push({ name: 'Print' });
+                            this.$router.push({ name: 'PrintTestResult' });
                         }
                     }).catch((error) => {
                         this.$store.commit('modal/set', {

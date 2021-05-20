@@ -7,7 +7,8 @@ import YourTestResults from '@/components/views/3-a-test/your-test-results/YourT
 import TestResultPending from '@/components/views/3-a-test/your-test-results/TestResultPending';
 import CollectVaccination from '@/components/views/3-b-vaccination/collect-vaccination/CollectVaccination'
 import YourVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinations'
-import Print from '@/components/views/4-print/Print';
+import PrintTestResult from '@/components/views/4-print/PrintTestResult';
+import PrintVaccination from '@/components/views/4-print/PrintVaccination';
 import store from '@/store'
 
 Vue.use(VueRouter)
@@ -38,9 +39,13 @@ const routes = [
         name: 'YourTestResult',
         component: YourTestResults
     }, {
-        path: '/print-qr',
-        name: 'Print',
-        component: Print
+        path: '/print-testuitslag',
+        name: 'PrintTestResult',
+        component: PrintTestResult
+    }, {
+        path: '/print-vaccinatie',
+        name: 'PrintVaccination',
+        component: PrintVaccination
     }, {
         path: '/testresultaat-nog-niet-bekend',
         name: 'TestResultPending',

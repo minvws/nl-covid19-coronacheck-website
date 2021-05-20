@@ -58,10 +58,14 @@ export default {
             this.isLoading = false;
         },
         gotoPrint() {
-            //
+            this.$router.push({ name: 'PrintVaccination' });
         },
         openModalVaccinationSomethingWrong() {
-            //
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('somethingIsWrong'),
+                messageBody: this.$t('message.info.vaccinationSomethingWrong.body'),
+                closeButton: true
+            })
         }
     },
     mounted() {

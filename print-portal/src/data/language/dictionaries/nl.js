@@ -31,6 +31,14 @@ const nl = {
         'yourVaccinations': {
             'pageHeader': 'Jouw opgehaalde vaccinaties ',
             'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>'
+        },
+        'printTestResult': {
+            'pageHeader': 'Je testbewijs',
+            'pageIntro': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er in staat. Open of download de PDF, print het uit en neem ’m mee.'
+        },
+        'printVaccination': {
+            'pageHeader': 'Print jouw vaccinatiebewijs',
+            'pageIntro': '<p>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt een vaccinatiebewijs voor binnen Nederland, en een vaccinatiebewijs voor in Europa.<br><a href="" target="_blank">Lees hier</a> wat er zoal in staat. Print de PDF en neem het printje mee.</p>'
         }
     },
     'message': {
@@ -46,6 +54,9 @@ const nl = {
             'vaccinationAbout': {
                 'head': 'Over jouw vaccinatie',
                 'body': messageInfoVaccinationAbout
+            },
+            'vaccinationSomethingWrong': {
+                'body': '<p>Klopt je naam of geboortedatum niet? Neem contact op met je huisarts en geef dit door.</p><p>Mist er een prik?<br>Neem contact op met de locatie waar je bent gevaccineerd.</p>'
             }
         },
         'error': {}
@@ -67,7 +78,6 @@ Let op: dit is géén toegangsticket voor je activiteit`,
         'preferMobile': 'Laat je jouw testbewijs liever op je telefoon zien? Gebruik dan de code uit de e-mail in de CoronaCheck-app',
         'questions': 'VRAGEN?',
         'testedAt': 'Getest op',
-        'yourTestProof': 'Je testbewijs',
         'validUntil': 'Geldig tot'
     },
     'image': {
@@ -130,7 +140,6 @@ Let op: dit is géén toegangsticket voor je activiteit`,
     'yourNegativeTestresult': 'Controleer je testuitslag',
     'yourNegativeTestresultDirection': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
     'yourTestProof': 'Jouw testbewijs',
-    'yourTestProofDirection': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er in staat. Open of download de PDF, print het uit en neem ’m mee.',
     'skiplink': 'Ga direct naar inhoud',
     'view-faq': 'Bekijk de meestgestelde vragen',
     'logo-government': 'Logo Rijksoverheid, homepage',
