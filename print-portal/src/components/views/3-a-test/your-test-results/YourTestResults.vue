@@ -33,7 +33,7 @@ export default {
                 } else {
                     this.$axios({
                         method: 'post',
-                        url: '/staticproof/paper',
+                        url: '/holder/paper',
                         data: this.signature
                     }).then((response) => {
                         if (response.data.status === 'ok' && response.data.error === 0) {
