@@ -2,15 +2,20 @@
 import Page from '@/components/elements/Page';
 import Loading from '@/components/elements/Loading';
 import mockData from '@/data/mock/data';
+import Vaccination from './Vaccination';
 
 export default {
     name: 'YourVaccinations',
-    components: { Loading, Page },
-    computed: {},
+    components: { Vaccination, Loading, Page },
     data() {
         return {
             isLoading: true,
             accessToken: ''
+        }
+    },
+    computed: {
+        vaccinationProofEvents() {
+            return this.$store.getters['proofEvents/getProofEvents']('vaccination');
         }
     },
     methods: {
@@ -46,7 +51,6 @@ export default {
         },
         retrieveResults() {
             const result = mockData;
-            console.log(result);
             this.$store.commit('updateHolder', result.holder);
             for (const proofEvent of result.events) {
                 this.$store.commit('proofEvents/create', proofEvent);
@@ -82,7 +86,12 @@ export default {
             <div
                 v-else
                 class="section-block">
-                Je vaccinaties
+                <div class="proof-events">
+                    <Vaccination
+                        v-for="proofEvent of vaccinationProofEvents"
+                        :key="proofEvent.unique"
+                        :proof-event="proofEvent"/>
+                </div>
             </div>
         </div>
     </Page>

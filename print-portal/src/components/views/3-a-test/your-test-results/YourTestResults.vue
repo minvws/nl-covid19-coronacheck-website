@@ -101,7 +101,7 @@ export default {
                             <img src="assets/img/icons/info.svg" alt=""/>
                         </button>
                     </div>
-                    <div class="YourTestResults__results">
+                    <div class="proof-events">
                         <TestResult
                             :testResult="testResult"/>
                     </div>

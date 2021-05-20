@@ -8,7 +8,10 @@ const state = {
 };
 
 const getters = {
-    ..._base.getters
+    ..._base.getters,
+    getProofEvents: (state) => (type) => {
+        return state.all.filter(p => p.type === type);
+    }
 };
 
 const actions = {};

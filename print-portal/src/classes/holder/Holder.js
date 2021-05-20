@@ -1,5 +1,4 @@
-// import numberTool from '@/tools/numbers';
-// import dateTool from '@/tools/date';
+import dateTool from '@/tools/date';
 
 class Holder {
     constructor({
@@ -14,29 +13,13 @@ class Holder {
         this.birthDate = birthDate;
     }
 
-    // get birthDayStyled() {
-    //     return numberTool.getLeadingZero(this.birthDay);
-    // }
-    //
-    // get birthDayMonthStyled() {
-    //     return dateTool.monthNumberToMonthNameAbbr(Number(this.birthMonth));
-    // }
-    //
-    // get birthDayString() {
-    //     return this.birthDayStyled + ' ' + this.birthDayMonthStyled;
-    // }
-    //
-    // get string() {
-    //     return this.firstNameInitial + ' ' + this.lastNameInitial + ' ' + this.birthDayString;
-    // }
-    //
-    // get stringCompact() {
-    //     return this.firstNameInitial + this.lastNameInitial + this.birthDayString;
-    // }
-    //
-    // get initials() {
-    //     return this.firstNameInitial + ' ' + this.lastNameInitial;
-    // }
+    get fullName() {
+        return [this.firstName, this.infix, this.lastName].join(' ');
+    }
+
+    get birthDateString() {
+        return dateTool.dateToString(this.birthDate, 'dd LLLL yyyy');
+    }
 }
 
 export default Holder;

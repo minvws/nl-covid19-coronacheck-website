@@ -65,7 +65,7 @@ export default {
         },
         fileName() {
             const info = [
-                dateTool.dateToString((this.qrData.sampleTime * 1000), 'yyyyMMdd', this.currentLanguage.locale),
+                dateTool.dateTimeToString((this.qrData.sampleTime * 1000), 'yyyyMMdd', this.currentLanguage.locale),
                 'coronacheck',
                 'testbewijs',
                 this.holderString
@@ -215,7 +215,7 @@ export default {
                 text: this.$t('pdf.testedAt'),
                 position: [pageMarginLeft, (tableBaseY + 3 * lineHeight)]
             }, {
-                text: dateTool.dateToString((this.qrData.sampleTime * 1000), 'dd-MM-yyyy HH:mm', this.currentLanguage.locale),
+                text: dateTool.dateTimeToString((this.qrData.sampleTime * 1000), 'dd-MM-yyyy HH:mm', this.currentLanguage.locale),
                 fontWeight: 700,
                 position: [tableBaseCol2X, (tableBaseY + 3 * lineHeight)]
             }, {

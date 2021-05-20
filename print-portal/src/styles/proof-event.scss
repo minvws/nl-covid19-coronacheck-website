@@ -1,0 +1,18 @@
+.proof-event {
+    padding: $grid-x2 0;
+    border-bottom: 1px solid $color-lightgrey;
+    font-size: 17px;
+    margin-bottom: $grid-x2;
+
+    &:first-child {
+        border-top: 1px solid $color-lightgrey;
+    }
+
+    &__status {
+        font-weight: 700;
+    }
+
+    > div {
+        margin-bottom: 4px;
+    }
+}

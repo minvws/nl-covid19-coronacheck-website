@@ -6,7 +6,20 @@ const monthNumberToMonthNameAbbr = (n) => {
     return i18n.t('date.months.abbr.' + (n - 1))
 }
 
-const dateToString = (dateInput, dateFormat = 'dd-MM-yyyy HH:mm', locale) => {
+const dateToString = (dateInput, dateFormat = 'dd-MM-yyyy', locale) => {
+    console.log(dateFormat);
+    switch (locale) {
+    case 'en':
+        locale = en;
+        break;
+    default:
+        locale = nl;
+        break;
+    }
+    return format(new Date(dateInput), dateFormat, { locale });
+}
+
+const dateTimeToString = (dateInput, dateFormat = 'dd-MM-yyyy HH:mm', locale) => {
     switch (locale) {
     case 'en':
         locale = en;
@@ -20,11 +33,12 @@ const dateToString = (dateInput, dateFormat = 'dd-MM-yyyy HH:mm', locale) => {
 
 const addHoursToDate = (dateInput, hours, formatted) => {
     const newDate = addHours(new Date(dateInput), hours);
-    return formatted ? dateToString(newDate) : newDate;
+    return formatted ? dateTimeToString(newDate) : newDate;
 }
 
 export default {
     monthNumberToMonthNameAbbr,
     dateToString,
+    dateTimeToString,
     addHoursToDate
 }
