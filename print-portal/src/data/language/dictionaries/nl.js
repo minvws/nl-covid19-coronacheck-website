@@ -17,7 +17,7 @@ const nl = {
         },
         'choiceProof': {
             'pageHeader': 'Waar wil je een papieren bewijs van maken?',
-            'pageIntro': '<p>Je kan een QR-code maken van een negatieve testuitslag (geldt 40 uur) of van een vaccinatie (geldt 1 jaar). In Europa kan geldigheid verschillen.</p>',
+            'pageIntro': '<p>Je kan een QR-code maken van een negatieve testuitslag (geldt %{maxValidityHoursForTestResult} uur) of van een vaccinatie (geldt 1 jaar). In Europa kan geldigheid verschillen.</p>',
             'choiceTestHeader': 'Een negatieve testuitslag',
             'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
             'choiceVaccinationHeader': 'Een vaccinatie',
