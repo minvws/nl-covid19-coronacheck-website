@@ -47,7 +47,7 @@ export default {
             this.accessToken = new URLSearchParams(params).get('access_token');
             this.$store.commit('setUserConsent', true);
             // mock connection
-            setTimeout(this.retrieveResults, 100);
+            setTimeout(this.retrieveResults, 2000);
         },
         retrieveResults() {
             const result = mockData;
