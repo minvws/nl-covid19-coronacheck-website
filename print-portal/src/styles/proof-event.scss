@@ -3,6 +3,7 @@
     border-bottom: 1px solid $color-lightgrey;
     font-size: 17px;
     margin-bottom: $grid-x2;
+    position: relative;
 
     &:first-child {
         border-top: 1px solid $color-lightgrey;
@@ -14,5 +15,11 @@
 
     > div {
         margin-bottom: 4px;
+    }
+
+    .info-button {
+        position: absolute;
+        right: $grid-x2;
+        top: $grid-x2;
     }
 }

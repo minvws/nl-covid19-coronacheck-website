@@ -7,7 +7,6 @@ const monthNumberToMonthNameAbbr = (n) => {
 }
 
 const dateToString = (dateInput, dateFormat = 'dd-MM-yyyy', locale) => {
-    console.log(dateFormat);
     switch (locale) {
     case 'en':
         locale = en;

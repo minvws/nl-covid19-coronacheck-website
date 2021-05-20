@@ -1,0 +1,15 @@
+.vaccination-info {
+
+    .vaccination-info__section {
+        margin-bottom: $length-xl;
+
+        h5 {
+            font-size: inherit;
+            margin-bottom: $grid-x2;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

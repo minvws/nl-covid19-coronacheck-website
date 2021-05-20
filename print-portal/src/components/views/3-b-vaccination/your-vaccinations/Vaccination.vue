@@ -22,9 +22,30 @@ export default {
         },
         title() {
             return this.$t('orderWords.' + (this.vaccination.doseNumber - 1)) + ' ' + this.$t('vaccination').toLocaleLowerCase();
+        },
+        vaccineName() {
+            const vaccine = this.$store.state.holderConfig.hpkCodes.find(hpkCode => {
+                // todo temp stringify this, will be fixed by Nick
+                return String(hpkCode.code) === this.vaccination.hpkCode;
+            })
+            return vaccine ? vaccine.name : ''
         }
     },
-    methods: {}
+    methods: {
+        openModalVaccinationAbout() {
+            const data = {
+                discreteInfoString: this.holder.discreteInfoString,
+                fullName: this.holder.fullName,
+                birthDate: this.holder.birthDateString,
+                vaccin: this.vaccineName
+            }
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.vaccinationAbout.head'),
+                messageBody: this.$t('message.info.vaccinationAbout.body', data),
+                closeButton: true
+            })
+        }
+    }
 }
 </script>
 
@@ -39,6 +60,13 @@ export default {
         <div class="proof-event__date">
             {{$t('dateOfBirth')}}: {{holder.birthDateString}}
         </div>
+
+        <button
+            @click="openModalVaccinationAbout()"
+            type="button"
+            class="info-button">
+            <img src="assets/img/icons/info.svg" alt=""/>
+        </button>
     </div>
 </template>
 

@@ -14,11 +14,19 @@ class Holder {
     }
 
     get fullName() {
-        return [this.firstName, this.infix, this.lastName].join(' ');
+        return this.infix + ' ' + this.lastName + ', ' + this.firstName[0];
     }
 
     get birthDateString() {
         return dateTool.dateToString(this.birthDate, 'dd LLLL yyyy');
+    }
+
+    get birthDateStringShort() {
+        return this.birthDate.split('-')[2] + ' ' + dateTool.monthNumberToMonthNameAbbr(Number(this.birthDate.split('-')[1]));
+    }
+
+    get discreteInfoString() {
+        return this.firstName[0] + ' ' + this.lastName[0] + ' ' + this.birthDateStringShort;
     }
 }
 

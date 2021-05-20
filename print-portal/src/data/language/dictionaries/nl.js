@@ -1,4 +1,5 @@
 import messageInfoTestResultAbout from './../templates/nl/message-info-testResultAbout';
+import messageInfoVaccinationAbout from './../templates/nl/message-info-vaccinationAbout';
 import footer from './../templates/nl/footer';
 
 const nl = {
@@ -41,6 +42,10 @@ const nl = {
             'testResultSomethingWrong': {
                 'head': 'Kloppen de gegevens niet?',
                 'body': messageInfoTestResultAbout
+            },
+            'vaccinationAbout': {
+                'head': 'Over jouw vaccinatie',
+                'body': messageInfoVaccinationAbout
             }
         },
         'error': {}

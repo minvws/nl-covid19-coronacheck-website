@@ -179,7 +179,7 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10000;
-    top: 40%;
+    top: 50%;
     transition: top 1s ease;
     border-radius: 5px;
 

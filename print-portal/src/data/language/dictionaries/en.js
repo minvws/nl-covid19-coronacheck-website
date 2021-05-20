@@ -1,4 +1,5 @@
 import messageInfoTestResultAbout from './../templates/en/message-info-testResultAbout';
+import messageInfoVaccinationAbout from './../templates/en/message-info-vaccinationAbout';
 import footer from './../templates/en/footer';
 
 const en = {
@@ -35,12 +36,16 @@ const en = {
     'message': {
         'info': {
             'testResultAbout': {
-                'head': '',
+                'head': 'TODO',
                 'body': messageInfoTestResultAbout
             },
             'testResultSomethingWrong': {
-                'head': '',
+                'head': 'TODO',
                 'body': messageInfoTestResultAbout
+            },
+            'vaccinationAbout': {
+                'head': 'TODO',
+                'body': messageInfoVaccinationAbout
             }
         },
         'error': {}
