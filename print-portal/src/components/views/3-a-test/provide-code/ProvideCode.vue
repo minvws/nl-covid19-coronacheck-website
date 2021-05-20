@@ -149,6 +149,7 @@ export default {
                             this.$store.commit('setTestResultStatus', 'unknown_error')
                         }
                         if (this.testResultStatus === 'complete') {
+                            console.log(payload.result);
                             this.setTimerForValidityTestResult(payload.result);
                             this.testCodeStatus.error = '';
                             const testResult = new TestResult(payload.result);

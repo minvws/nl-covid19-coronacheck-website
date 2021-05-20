@@ -1,3 +1,5 @@
+// this is the version 2 holder for get_test_result
+// it probably will be replaced all over for Holder.js (v3)
 import numberTool from '@/tools/numbers';
 import dateTool from '@/tools/date';
 

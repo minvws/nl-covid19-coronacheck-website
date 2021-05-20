@@ -1,7 +1,7 @@
 <script>
 import Page from '@/components/elements/Page';
 import Loading from '@/components/elements/Loading';
-import mockVaccinationEvens from '@/data/mock/mock-vaccinations';
+import mockData from '@/data/mock/data';
 
 export default {
     name: 'YourVaccinations',
@@ -42,12 +42,17 @@ export default {
             this.accessToken = new URLSearchParams(params).get('access_token');
             this.$store.commit('setUserConsent', true);
             // mock connection
-            setTimeout(this.retrieveResults, 5000);
+            setTimeout(this.retrieveResults, 1000);
         },
         retrieveResults() {
-            const result = mockVaccinationEvens.events;
-            const vaccinations = result.filter(ev => ev.type === 'vaccination').map(ev => ev.vaccination);
-            this.$store.commit('vaccinations/init', vaccinations);
+            const result = mockData;
+            console.log(result);
+            this.$store.commit('updateHolder', result.holder);
+            for (const proofEvent of result.events) {
+                this.$store.commit('proofEvents/create', proofEvent);
+            }
+            // const vaccinations = result.filter(ev => ev.type === 'vaccination').map(ev => ev.vaccination);
+            // this.$store.commit('/init', vaccinations);
             // this.isLoading = false;
         }
     },

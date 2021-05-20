@@ -4,12 +4,14 @@ import _base from './modules/_base-module';
 import modal from './modules/modal';
 import languages from './modules/languages';
 import testProviders from './modules/testProviders';
-import vaccinations from './modules/vaccinations';
+import proofEvents from './modules/proofEvents';
+import Holder from '@/classes/holder/Holder';
 
 Vue.use(Vuex)
 
 const state = {
     holderConfig: null,
+    holder: null,
     testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
     verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
     testResultStatus: 'idle',
@@ -52,6 +54,9 @@ const mutations = {
     setVerificationNeeded(state, status) {
         state.verificationNeeded = status;
     },
+    updateHolder(state, holder) {
+        state.holder = new Holder(holder);
+    },
     reset(state) {
         // clear all except testcode
         state.verificationCode = '';
@@ -60,6 +65,7 @@ const mutations = {
         state.signature = '';
         state.qrCode = '';
         state.qrData = null;
+        state.holder = null;
     },
     invalidate(state) {
         state.testCode = '';
@@ -69,6 +75,7 @@ const mutations = {
         state.signature = '';
         state.qrCode = '';
         state.qrData = null;
+        state.holder = null;
     }
 }
 
@@ -80,6 +87,6 @@ export default new Vuex.Store({
         modal,
         languages,
         testProviders,
-        vaccinations
+        proofEvents
     }
 })

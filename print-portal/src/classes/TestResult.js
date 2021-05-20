@@ -1,4 +1,4 @@
-import Holder from './Holder';
+import HolderV2 from './holder/HolderV2';
 
 class TestResult {
     constructor({
@@ -9,7 +9,7 @@ class TestResult {
         testType = ''
     }) {
         this.unique = unique;
-        this.holder = new Holder(holder);
+        this.holder = new HolderV2(holder);
         this.negativeResult = negativeResult;
         this.sampleDate = sampleDate;
         this.testType = testType;

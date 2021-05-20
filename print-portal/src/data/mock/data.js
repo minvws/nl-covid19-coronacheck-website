@@ -1,11 +1,11 @@
-const mockVaccinationEvens = {
+const data = {
     'protocolVersion': '3.0',
     'providerIdentifier': 'XXX',
     'status': 'complete', // This refers to the data-completeness, not vaccination status.
     'holder': {
-        'firstName': '',
-        'infix': '',
-        'lastName': '',
+        'firstName': 'Tom',
+        'infix': 'van der',
+        'lastName': 'Veen',
         'birthDate': '1970-01-01' // ISO 8601
     },
     'events': [
@@ -28,4 +28,4 @@ const mockVaccinationEvens = {
     ]
 }
 
-export default mockVaccinationEvens;
+export default data;
