@@ -15,7 +15,7 @@ export default {
             this.mgr.signinRedirect();
         },
         back() {
-            this.$router.push({ name: 'Home' })
+            this.$router.push({ name: 'ChoiceProof' })
         },
         readToken() {
             let params = decodeURI(window.location.hash);

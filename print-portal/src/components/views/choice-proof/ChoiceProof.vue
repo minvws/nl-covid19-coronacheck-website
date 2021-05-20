@@ -11,10 +11,10 @@ export default {
             this.$router.push({ name: 'Home' })
         },
         gotoTestPage() {
-
+            this.$router.push({ name: 'ProvideCode' });
         },
         gotoVaccinationPage() {
-
+            this.$router.push({ name: 'Vaccination' });
         }
     }
 }
@@ -33,12 +33,12 @@ export default {
             <div class="section-block">
                 <PageChoice
                     @select="gotoTestPage"
-                    :header="'Test'"
-                    :body="'Lorem ipsum'"/>
+                    :header="$t('views.choiceProof.choiceTestHeader')"
+                    :body="$t('views.choiceProof.choiceTestBody')"/>
                 <PageChoice
                     @select="gotoVaccinationPage"
-                    :header="'Vaccinatie'"
-                    :body="'Dolor sit amet'"/>
+                    :header="$t('views.choiceProof.choiceVaccinationHeader')"
+                    :body="$t('views.choiceProof.choiceVaccinationBody')"/>
             </div>
         </div>
     </Page>

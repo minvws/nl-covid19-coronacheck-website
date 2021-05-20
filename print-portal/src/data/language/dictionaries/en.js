@@ -16,7 +16,11 @@ const en = {
         },
         'choiceProof': {
             'pageHeader': 'TODO',
-            'pageIntro': '<p>TODO</p>'
+            'pageIntro': '<p>TODO</p>',
+            'choiceTestHeader': 'TODO',
+            'choiceTestBody': 'TODO',
+            'choiceVaccinationHeader': 'TODO',
+            'choiceVaccinationBody': 'TODO'
         }
     },
     'message': {
