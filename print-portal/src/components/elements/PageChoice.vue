@@ -42,7 +42,7 @@ export default {
 .PageChoice {
     background: $color-lightgrey;
     margin-bottom: 24px;
-    padding: $grid-x2 64px $grid-x2 $grid-x2;
+    padding: $grid-x2 60px $grid-x2 $grid-x2;
     border-radius: 9px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     cursor: pointer;
