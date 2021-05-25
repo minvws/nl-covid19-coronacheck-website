@@ -33,19 +33,11 @@
             <ul class="faq-layout-contents__list">
               {% for question in questions %}
                 {% if question.set == 1 %}
-                  {% if question.featuredHome != true %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-                            {{ question.title }}
-                        </a>
-                    </li>
-                  {% elsif question.featuredHome == true and question.showOnFAQoverview %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}">
-                            {{ question.title }}
-                        </a>
-                    </li>
-                  {% endif %}
+                  <li>
+                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                        {{ question.title }}
+                    </a>
+                  </li>
                 {% endif %}
             {% endfor %}
             </ul>
@@ -57,19 +49,11 @@
             <ul class="faq-layout-contents__list">
               {% for question in questions %}
                 {% if question.set == 2 %}
-                  {% if question.featuredHome != true %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-                            {{ question.title }}
-                        </a>
-                    </li>
-                  {% elsif question.featuredHome == true and question.showOnFAQoverview %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}">
-                            {{ question.title }}
-                        </a>
-                    </li>
-                  {% endif %}
+                  <li>
+                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                        {{ question.title }}
+                    </a>
+                  </li>
                 {% endif %}
             {% endfor %}
             </ul>
@@ -80,21 +64,13 @@
         <div class="faq-layout__contents __overview">
             <ul class="faq-layout-contents__list">
             {% for question in questions %}
-                {% if question.set == 3 %}
-                  {% if question.featuredHome != true %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}">
-                            {{ question.title }}
-                        </a>
-                    </li>
-                  {% elsif question.featuredHome == true and question.showOnFAQoverview %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}">
-                            {{ question.title }}
-                        </a>
-                    </li>
-                  {% endif %}
-                {% endif %}
+              {% if question.set == 3 %} 
+                <li>
+                  <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                      {{ question.title }}
+                  </a>
+                </li>
+              {% endif %}
             {% endfor %}
             </ul>
         </div>
@@ -105,25 +81,17 @@
             <ul class="faq-layout-contents__list">
               {% for question in questions %}
               {% if question.set == 4 %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-                            {{ question.title }}
-                        </a>
-                    </li>
-                    {% endif %}
+                <li>
+                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                        {{ question.title }}
+                    </a>
+                </li>
+              {% endif %}
             {% endfor %}
             </ul>
         </div>
       </div>
     </div>
-
-    {% if page.collection == 'questions' %}
-      <p class="content-center__home return_link">
-        <a href="{{ langSlug }}/faq">
-          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-faq[page.lang] }} 
-        </a>
-      </p>
-    {% endif %}
 
   </main>
 </body>
