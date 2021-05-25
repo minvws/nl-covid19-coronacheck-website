@@ -18,7 +18,7 @@
  
     {% assign announcements = site.announcements | where:"lang", page.lang %}
     {% if announcements.size != 0 %}
-      <div class="announcement">
+      <div class="announcement offset-background">
         {% for announcement in announcements %}
           <h2>{{ announcement.title }}</h2>
           {{ announcement.content }}
