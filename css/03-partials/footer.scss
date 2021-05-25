@@ -60,7 +60,7 @@
 // Phone footer
 //
 
-.footer-phone {
+.footer-contact {
     padding: 2.2rem 1.4rem 2rem 1.4em;
     max-width: 940px;
     color: $color-coronacheck_black;
@@ -76,7 +76,7 @@
     }
 }
 
-.footer-phone__column-left {
+.footer-contact__column-left {
     display: flex;
     flex-direction: column;
     flex: 0 0 33.333%;
@@ -85,33 +85,23 @@
     padding-bottom: 30px;
 }
 
-.footer-phone__column-right {
+.footer-contact__column-right {
     display: flex;
     flex-direction: column;
+}
+
+.footer-contact {
+    h2 {
+        margin-bottom: 30px;
+    }
 
     h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
-}
 
-.footer-phone_text {
-    display: block;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 1.4;
-}
-
-.footer-phone_action_text {
-    display: block;
-    font-weight: 800;
-    color: $color-cc-link-darker;
-    font-size: 32px;
-    margin-bottom: 0.5em;
-    line-height: 1.4;
-}
-
-.footer-phonetimes {
-    margin-bottom: 20px;
+    p {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -177,11 +167,22 @@
         left: -20px;
     }
 
+    h2 {
+        margin-top:28px;
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
     h3 {
         color: #fff;
-        margin-top: 32px;
-        margin-bottom: 10px;
-        font-size: 20px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 
     ul li {
