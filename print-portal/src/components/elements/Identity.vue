@@ -34,7 +34,8 @@ export default {
                 <img
                     class="Identity__image"
                     alt=""
-                    width="356"
+                    width="246"
+                    height="150"
                     src="assets/img/artwork/holder_qrcode_maken.svg"/>
             </div>
 
