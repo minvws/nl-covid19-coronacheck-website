@@ -13,8 +13,14 @@ $color-focus-footer: rgba(255,255,255,1);
 
 $color-coronacheck-link: rgba(0, 113, 235,1);
 $color-coronacheck-link--interaction: rgba(0, 96, 219,1);
+
+// Use on areas with light-blue background or set the class offset-background
 $color-cc-link-darker: rgba(0, 78, 178,1);
 $color-cc-link-darker--interaction: rgba(0, 76, 200,1);
+
+// Use on areas with light-grey background
+$color-cc-link-on-lightgrey: rgba(0, 80, 167, 1);
+$color-cc-link-on-lightgrey--interaction: rgba(0, 78, 177, 1);
 
 $color-error: rgba(179, 9, 0, 1);
 $color-background: rgba(255, 247, 246, 1);
