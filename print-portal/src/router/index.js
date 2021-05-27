@@ -5,6 +5,7 @@ import ChoiceProof from '@/components/views/2-a-choice-proof/ChoiceProof'
 import ChoiceTestLocation from '@/components/views/2-b-choice-test-location/ChoiceTestLocation'
 import ProvideCode from '@/components/views/3-a-test/provide-code/ProvideCode'
 import YourTestResults from '@/components/views/3-a-test/your-test-results/YourTestResults';
+import YourTestResultsRedirect from '@/components/views/3-a-test/your-test-results/YourTestResultsRedirect';
 import TestResultPending from '@/components/views/3-a-test/your-test-results/TestResultPending';
 import CollectVaccination from '@/components/views/3-b-vaccination/collect-vaccination/CollectVaccination'
 import YourVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinations'
@@ -43,6 +44,10 @@ const routes = [
         path: '/jouw-testresultaat',
         name: 'YourTestResult',
         component: YourTestResults
+    }, {
+        path: '/jouw-testresultaat-redirect',
+        name: 'YourTestResultsRedirect',
+        component: YourTestResultsRedirect
     }, {
         path: '/print-testuitslag',
         name: 'PrintTestResult',

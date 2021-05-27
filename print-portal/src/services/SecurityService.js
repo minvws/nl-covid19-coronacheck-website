@@ -1,28 +1,22 @@
 import Oidc from 'oidc-client';
 
-// todo redirect uri's should be based on languages locale setting
+// todo redirect uri's should handle language
 
-// const mgr = new Oidc.UserManager({
-//     userStore: new Oidc.WebStorageStateStore(),
-//     authority: 'https://dev-51odbhlm.eu.auth0.com',
-//     client_id: '3GPG1OoyjiI94HT2uRszIaBK9041LtAt',
-//     redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties',
-//     response_type: 'id_token token',
-//     scope: 'openid profile email phone address',
-//     post_logout_redirect_uri: window.location.origin + '/nl/print',
-//     silent_redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties/',
-//     accessTokenExpiringNotificationTime: 10,
-//     automaticSilentRenew: true,
-//     filterProtocolClaims: true,
-//     loadUserInfo: true
-// })
-
-const mgr = new Oidc.UserManager({
+const options = {
     userStore: new Oidc.WebStorageStateStore(),
     authority: 'https://dev-51odbhlm.eu.auth0.com',
     client_id: '3GPG1OoyjiI94HT2uRszIaBK9041LtAt',
-    redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties',
     response_type: 'code'
+}
+
+const mgrVaccination = new Oidc.UserManager({
+    ...options,
+    redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties'
+})
+
+const mgrNegativeTest = new Oidc.UserManager({
+    ...options,
+    redirect_uri: window.location.origin + '/nl/print/jouw-testresultaat-redirect'
 })
 
 // const mgr = new Oidc.UserManager({
@@ -34,8 +28,14 @@ const mgr = new Oidc.UserManager({
 // })
 
 export default class SecurityService {
-    signinRedirect() {
-        mgr.signinRedirect().catch(function (err) {
+    getVaccinations() {
+        mgrVaccination.signinRedirect().catch(function (err) {
+            console.log(err)
+        })
+    }
+
+    getNegativeTests() {
+        mgrNegativeTest.signinRedirect().catch(function (err) {
             console.log(err)
         })
     }

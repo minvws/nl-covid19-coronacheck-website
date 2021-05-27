@@ -8,7 +8,7 @@ export default {
     computed: {},
     methods: {
         getToken() {
-            this.mgr.signinRedirect();
+            this.mgr.getVaccinations();
         },
         back() {
             this.$router.push({ name: 'ChoiceProof' })

@@ -5,7 +5,7 @@ const data = {
     'holder': {
         'firstName': 'Tom',
         'infix': 'van der',
-        'lastName': 'Veen',
+        'lastName': 'Steen',
         'birthDate': '1984-03-01' // ISO 8601
     },
     'events': [
@@ -38,6 +38,19 @@ const data = {
                 'country': 'NLD', // optional iso 3166 3-letter country field, will be set to NLD if left out. Can be used if shot was administered abroad
                 'doseNumber': 2, // optional, will be based on business rules / brand info if left out
                 'totalDoses': 2 // optional, will be based on business rules / brand info if left out
+            }
+        }, {
+            'type': 'negativetest',
+            'unique': 'ee5afb32-3ef5-4fdf-94e3-e61b752dbed7',
+            'isSpecimen': true,
+            'negativetest': {
+                'sampleDate': '2021-01-01T10:00:00Z',
+                'resultDate': '2021-01-02T10:00:00Z',
+                'negativeResult': true,
+                'facility': 'GGD XL Amsterdam',
+                'type': 'LP6464-4',
+                'name': '???',
+                'manufacturer': '1232'
             }
         }
     ]
