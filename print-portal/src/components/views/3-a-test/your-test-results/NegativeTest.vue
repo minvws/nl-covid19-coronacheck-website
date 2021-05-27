@@ -4,7 +4,7 @@ import Holder from '@/classes/holder/Holder';
 import dateTool from '@/tools/date';
 
 export default {
-    name: 'TestResult',
+    name: 'NegativeTest',
     components: {},
     props: {
         negativeTest: {
@@ -28,13 +28,13 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status">
-            {{$t('components.testResult.resultNegative')}}
+            {{$t('components.NegativeTest.resultNegative')}}
         </div>
         <div class="proof-event__date">
-            {{$t('components.testResult.dateOfTest')}}: {{date}}
+            {{$t('components.NegativeTest.dateOfTest')}}: {{date}}
         </div>
         <div class="proof-event__date">
-            {{$t('components.testResult.yourCredentials')}}: {{holder.discreteInfoString}}
+            {{$t('components.NegativeTest.yourCredentials')}}: {{holder.discreteInfoString}}
         </div>
     </div>
 </template>

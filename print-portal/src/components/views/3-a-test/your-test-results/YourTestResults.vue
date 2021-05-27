@@ -1,11 +1,11 @@
 <script>
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
-import TestResult from './TestResult';
+import NegativeTest from './NegativeTest';
 
 export default {
     name: 'YourTestResults',
-    components: { Page, PageIntro, TestResult },
+    components: { Page, PageIntro, NegativeTest },
     computed: {
         negativeTestProofEvents() {
             return this.$store.getters['proofEvents/getProofEvents']('negativetest');
@@ -113,7 +113,7 @@ export default {
                         </button>
                     </div>
                     <div class="proof-events">
-                        <TestResult
+                        <NegativeTest
                             :negative-test="latestNegativeTest"
                             :holder="holder"/>
                     </div>

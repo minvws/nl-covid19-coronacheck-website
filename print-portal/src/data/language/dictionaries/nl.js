@@ -88,7 +88,7 @@ const nl = {
             'changeLanguage': 'Wissel van taal',
             'currentLanguage': 'Huidige taal'
         },
-        'testResult': {
+        'NegativeTest': {
             'resultNegative': 'Negatieve testuitslag',
             'dateOfTest': 'Testdatum',
             'yourCredentials': 'Jouw gegevens'

@@ -88,7 +88,7 @@ const en = {
             'changeLanguage': 'Change language',
             'currentLanguage': 'Current language'
         },
-        'testResult': {
+        'NegativeTest': {
             'resultNegative': 'Negative test result',
             'dateOfTest': 'Test date',
             'yourCredentials': 'Identification details'
