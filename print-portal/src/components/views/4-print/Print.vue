@@ -68,38 +68,36 @@ export default {
         @back="goBack"
         :display-back-button="qrCode.length > 0">
         <div class="section">
+            <slot></slot>
             <div class="section-block">
-                <div>
-                    <slot></slot>
-                    <div class="Print__container">
-                        <div
-                            :class="{'browser-ie': browserIsIE}"
-                            class="Print__buttons">
-                            <button
-                                type="button"
-                                :class="{'button--inactive': !document}"
-                                :disabled="!document"
-                                id="open-pdf"
-                                class="btn button--full-width"
-                                @click="openPDF()">
-                                {{$t('views.print.openPDF')}}
-                            </button>
-                            <button
-                                type="button"
-                                :class="{'button--inactive': !document }"
-                                :disabled="!document"
-                                id="download-pdf"
-                                class="btn button--full-width"
-                                @click="downloadPDF()">
-                                {{$t('views.print.openPDF')}}
-                            </button>
-                        </div>
-                        <div class="Print__image">
-                            <img
-                                alt="Holder QR code maken"
-                                width="248"
-                                src="assets/img/artwork/holder_qrcode_maken_full.svg"/>
-                        </div>
+                <div class="Print__container">
+                    <div
+                        :class="{'browser-ie': browserIsIE}"
+                        class="Print__buttons">
+                        <button
+                            type="button"
+                            :class="{'button--inactive': !document}"
+                            :disabled="!document"
+                            id="open-pdf"
+                            class="btn button--full-width"
+                            @click="openPDF()">
+                            {{$t('views.print.openPDF')}}
+                        </button>
+                        <button
+                            type="button"
+                            :class="{'button--inactive': !document }"
+                            :disabled="!document"
+                            id="download-pdf"
+                            class="btn button--full-width"
+                            @click="downloadPDF()">
+                            {{$t('views.print.openPDF')}}
+                        </button>
+                    </div>
+                    <div class="Print__image">
+                        <img
+                            alt="Holder QR code maken"
+                            width="248"
+                            src="assets/img/artwork/holder_qrcode_maken_full.svg"/>
                     </div>
                 </div>
             </div>

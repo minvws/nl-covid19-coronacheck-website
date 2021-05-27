@@ -1,11 +1,12 @@
 <script>
 import Page from '@/components/elements/Page';
+import PageIntro from '@/components/elements/PageIntro';
 import PageChoice from '@/components/elements/PageChoice';
 import PreferMobile from '@/components/elements/PreferMobile';
 
 export default {
     name: 'ChoiceTestLocation',
-    components: { Page, PageChoice, PreferMobile },
+    components: { Page, PageIntro, PageChoice, PreferMobile },
     computed: {},
     methods: {
         back() {
@@ -27,12 +28,9 @@ export default {
 <template>
     <Page @back="back">
         <div class="section">
-            <div class="section-block">
-                <h2>
-                    {{$t('views.choiceTestLocation.pageHeader')}}
-                </h2>
-                <div v-html="$t('views.choiceTestLocation.pageIntro')"/>
-            </div>
+            <PageIntro
+                :head="$t('views.choiceTestLocation.pageHeader')"
+                :intro="$t('views.choiceTestLocation.pageIntro')"/>
             <div class="section-block">
                 <div class="page-choices">
                     <PageChoice

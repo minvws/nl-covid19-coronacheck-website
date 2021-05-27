@@ -1,11 +1,12 @@
 <script>
 import Page from '@/components/elements/Page';
+import PageIntro from '@/components/elements/PageIntro';
 import PageChoice from '@/components/elements/PageChoice';
 import PreferMobile from '@/components/elements/PreferMobile';
 
 export default {
     name: 'ChoiceProof',
-    components: { PageChoice, Page, PreferMobile },
+    components: { Page, PageIntro, PageChoice, PreferMobile },
     computed: {
         maxValidityHoursForTestResult() {
             return this.$store.state.holderConfig.maxValidityHours
@@ -28,12 +29,9 @@ export default {
 <template>
     <Page @back="back">
         <div class="section">
-            <div class="section-block">
-                <h2>
-                    {{$t('views.choiceProof.pageHeader')}}
-                </h2>
-                <div v-html="$t('views.choiceProof.pageIntro', { maxValidityHoursForTestResult: maxValidityHoursForTestResult })"/>
-            </div>
+            <PageIntro
+                :head="$t('views.choiceProof.pageHeader')"
+                :intro="$t('views.choiceProof.pageIntro', { maxValidityHoursForTestResult: maxValidityHoursForTestResult })"/>
             <div class="section-block">
                 <div class="page-choices">
                     <PageChoice

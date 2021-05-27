@@ -1,5 +1,6 @@
 <script>
 import Page from '@/components/elements/Page';
+import PageIntro from '@/components/elements/PageIntro';
 import PreferMobile from '@/components/elements/PreferMobile';
 import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
@@ -10,7 +11,7 @@ import dateTool from '@/tools/date';
 
 export default {
     name: 'ProvideCode',
-    components: { Page, FaqMobileLink, ProvideVerificationCode, ProvideTestCode, PreferMobile },
+    components: { Page, PageIntro, FaqMobileLink, ProvideVerificationCode, ProvideTestCode, PreferMobile },
     data () {
         return {
             testCodeStatus: {
@@ -254,14 +255,10 @@ export default {
 <template>
     <Page @back="back">
         <div class="section">
+            <PageIntro
+                :head="$t('views.provideCode.pageHeader')"
+                :intro="$t('views.provideCode.pageIntro')"/>
             <div class="section-block">
-                <h2>
-                    {{$t('views.provideCode.pageHeader')}}
-                </h2>
-                <p>
-                    {{$t('views.provideCode.pageIntro')}}
-                </p>
-
                 <form
                     v-on:submit.prevent
                     autocomplete="off">

@@ -1,9 +1,10 @@
 <script>
 import Page from '@/components/elements/Page';
+import PageIntro from '@/components/elements/PageIntro';
 
 export default {
     name: 'TestResultPending',
-    components: { Page },
+    components: { Page, PageIntro },
     computed: {},
     methods: {
         goBack() {
@@ -16,11 +17,10 @@ export default {
 <template>
     <Page :display-back-button="false">
         <div class="section">
+            <PageIntro
+                :head="$t('views.testResultPending.pageHeader')"
+                :intro="$t('views.testResultPending.pageIntro')"/>
             <div class="section-block">
-                <h2>
-                    {{$t('views.testResultPending.pageHeader')}}
-                </h2>
-                <div v-html="$t('views.testResultPending.pageIntro')"/>
                 <div class="section-block__footer">
                     <button
                         @click="goBack()"

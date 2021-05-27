@@ -1,9 +1,10 @@
 <script>
 import Page from '@/components/elements/Page';
+import PageIntro from '@/components/elements/PageIntro';
 
 export default {
     name: 'CollectVaccination',
-    components: { Page },
+    components: { Page, PageIntro },
     computed: {},
     methods: {
         getToken() {
@@ -20,12 +21,11 @@ export default {
     <Page
         @back="back">
         <div class="section">
+            <PageIntro
+                :head="$t('views.collectVaccination.pageHeader')"
+                :intro="$t('views.collectVaccination.pageIntro')"/>
             <div class="section-block">
-                <h2>
-                    {{$t('views.collectVaccination.pageHeader')}}
-                </h2>
-                <div v-html="$t('views.collectVaccination.pageIntro')"/>
-                <div class="section-block__footer">
+                 <div class="section-block__footer">
                     <button
                         type="button"
                         class="btn"

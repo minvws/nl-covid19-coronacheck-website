@@ -1,12 +1,13 @@
 <script>
 import Page from '@/components/elements/Page';
+import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
 import mockData from '@/data/mock/data';
 import Vaccination from './Vaccination';
 
 export default {
     name: 'YourVaccinations',
-    components: { Vaccination, Loading, Page },
+    components: { Page, PageIntro, Loading, Vaccination },
     data() {
         return {
             isLoading: true,
@@ -79,14 +80,9 @@ export default {
         class="YourVaccinations"
         @back="back">
         <div class="section">
-            <div class="section-block">
-                <h2>
-                    {{$t('views.yourVaccinations.pageHeader')}}
-                </h2>
-                <div
-                    v-if="!isLoading"
-                    v-html="$t('views.yourVaccinations.pageIntro')"/>
-            </div>
+            <PageIntro
+                :head="$t('views.yourVaccinations.pageHeader')"
+                :intro="$t('views.yourVaccinations.pageIntro')"/>
             <div
                 v-if="isLoading"
                 class="section-block">

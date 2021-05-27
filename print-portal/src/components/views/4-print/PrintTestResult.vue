@@ -1,10 +1,11 @@
 <script>
 import Print from './Print';
+import PageIntro from '@/components/elements/PageIntro';
 import PrintMixin from './print-mixin';
 
 export default {
     name: 'PrintTestResult',
-    components: { Print },
+    components: { Print, PageIntro },
     mixins: [PrintMixin],
     computed: {
         qrCode() {
@@ -25,10 +26,9 @@ export default {
             @back="back"
             :qr-code="qrCode"
             :document="document">
-            <h2>
-                {{$t('views.printTestResult.pageHeader')}}
-            </h2>
-            <div v-html="$t('views.printTestResult.pageIntro')"/>
+            <PageIntro
+                :head="$t('views.printTestResult.pageHeader')"
+                :intro="$t('views.printTestResult.pageIntro')"/>
         </Print>
     </div>
 </template>

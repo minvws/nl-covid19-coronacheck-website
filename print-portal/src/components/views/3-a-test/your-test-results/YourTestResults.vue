@@ -1,10 +1,11 @@
 <script>
 import Page from '@/components/elements/Page';
+import PageIntro from '@/components/elements/PageIntro';
 import TestResult from './TestResult';
 
 export default {
     name: 'YourTestResults',
-    components: { Page, TestResult },
+    components: { Page, PageIntro, TestResult },
     computed: {
         testResult() {
             return this.$store.state.testResult;
@@ -86,12 +87,12 @@ export default {
         @back="goBack"
         class="YourTestResults">
         <div class="section">
-            <div class="section-block">
-                <div v-if="testResult">
-                    <h2>
-                        {{$t('views.yourTestResults.pageHeader')}}
-                    </h2>
-                    <div v-html="$t('views.yourTestResults.pageIntro')"/>
+            <div  v-if="testResult">
+                <PageIntro
+                    :head="$t('views.yourTestResults.pageHeader')"
+                    :intro="$t('views.yourTestResults.pageIntro')"/>
+
+                <div class="section-block">
                     <div class="YourTestResults__header">
                         {{$t('views.yourTestResults.retrievedTestResult')}}
                         <button
@@ -122,14 +123,14 @@ export default {
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div v-else>
-                    <h2>
-                        {{$t('views.yourTestResults.noTestResultPresent')}}
-                    </h2>
-                    <p>
-                        {{$t('views.yourTestResults.noTestResultPresentDirection')}}
-                    </p>
+            <div v-else>
+                <PageIntro
+                    :head="$t('views.yourTestResults.noTestResultPresent')"
+                    :intro="$t('views.yourTestResults.noTestResultPresentDirection')"/>
+
+                <div class="section-block">
                     <div class="section-block__footer">
                         <button
                             @click="goHome()"

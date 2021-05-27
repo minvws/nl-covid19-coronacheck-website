@@ -1,14 +1,16 @@
 <script>
 import Page from '@/components/elements/Page';
-import PreferMobile from '@/components/elements/PreferMobile';
+import PageIntro from '@/components/elements/PageIntro';
 import UserConsent from './UserConsent';
+import PreferMobile from '@/components/elements/PreferMobile';
 
 export default {
     name: 'Home',
     components: {
         Page,
-        PreferMobile,
-        UserConsent
+        PageIntro,
+        UserConsent,
+        PreferMobile
     },
     computed: {
         consent() {
@@ -34,12 +36,9 @@ export default {
         class="home"
         @back="gotoHome">
         <div class="section">
-            <div class="section-block">
-                <h2>
-                    {{$t('views.home.pageHeader')}}
-                </h2>
-                <div v-html="$t('views.home.pageIntro')"/>
-            </div>
+            <PageIntro
+                :head="$t('views.home.pageHeader')"
+                :intro="$t('views.home.pageIntro')"/>
             <div class="section-block">
                 <UserConsent
                     @update="setUserConsent"
