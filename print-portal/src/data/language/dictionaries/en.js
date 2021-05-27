@@ -1,6 +1,7 @@
-import messageInfoTestResultAbout from './../templates/en/message-info-testResultAbout';
-import messageInfoVaccinationAbout from './../templates/en/message-info-vaccinationAbout';
-import footer from './../templates/en/footer';
+import messageInfoTestResultAbout from '../templates/en/message-info-testResultAbout';
+import messageInfoVaccinationAbout from '../templates/en/message-info-vaccinationAbout';
+import footer from '../templates/en/footer';
+import { pdfFooter, pdfInstructions } from '../templates/en/pdf';
 
 const en = {
     'date': {
@@ -70,6 +71,10 @@ const en = {
         'preferMobile': {
             'header': 'Prefer having your test declaration on mobile?',
             'intro': 'Then download the app.'
+        },
+        'vaccination': {
+            'name': 'Name',
+            'dateOfBirth': 'Date of birth'
         }
     },
     'message': {
@@ -94,17 +99,10 @@ const en = {
     },
     'pdf': {
         'dayOfBirth': 'Day of birth',
-        'footerText': `View the frequently asked questions at www.CoronaCheck.nl
-Send an e-mail to helpdesk@coronacheck.nl or call at 0800-1421 (free)`,
+        'footerText': pdfFooter,
         'initials': 'Initials',
         'instructions': 'Instructions',
-        'instructionsText': `1. Make a print of this test declaration on A4 size paper without adjusting the scale (in black-white is fine)
-
-2. Bring a valid proof of identity to the activity
-
-3. Display your test declaration and proof of identity (and if necessary your entrance ticket) at the entrance
-
-Beware: this is not an entrance ticket for the activity you're visiting`,
+        'instructionsText': pdfInstructions,
         'preferMobile': 'Prefer showing your test declaration on your mobile phone? Then use the retrieval code (the test location sends it in an email) in the CoronaCheck app.',
         'questions': 'Questions?',
         'testedAt': 'Tested for',
@@ -121,7 +119,6 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
     },
     'back': 'Back',
     'close': 'Close',
-    'dateOfBirth': 'Date of birth',
     'didNotGetCode': 'I don\'t have a code',
     'emptyTestCode': 'Retrieval code not entered',
     'enterCode': 'Retrieve test result',
@@ -134,7 +131,6 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
     'goBackToStart': 'To Home',
     'invalidTestCode': 'Invalid retrieval code',
     'invalidVerificationCode': 'Invalid verification code',
-    'name': 'Name',
     'next': 'Next',
     'noTestProofPresent': 'There\'s no test result',
     'noTestProofPresentDirection': 'You can only turn a negative test result into a test declaration. Retrieve your test result first.',

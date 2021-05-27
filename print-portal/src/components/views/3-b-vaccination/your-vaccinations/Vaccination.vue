@@ -55,10 +55,10 @@ export default {
             {{title}}
         </div>
         <div class="proof-event__date">
-            {{$t('name')}}: {{holder.fullName}}
+            {{$t('components.vaccination.name')}}: {{holder.fullName}}
         </div>
         <div class="proof-event__date">
-            {{$t('dateOfBirth')}}: {{holder.birthDateString}}
+            {{$t('components.vaccination.dateOfBirth')}}: {{holder.birthDateString}}
         </div>
 
         <button

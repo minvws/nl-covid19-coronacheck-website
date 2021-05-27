@@ -1,6 +1,7 @@
-import messageInfoTestResultAbout from './../templates/nl/message-info-testResultAbout';
-import messageInfoVaccinationAbout from './../templates/nl/message-info-vaccinationAbout';
-import footer from './../templates/nl/footer';
+import messageInfoTestResultAbout from '../templates/nl/message-info-testResultAbout';
+import messageInfoVaccinationAbout from '../templates/nl/message-info-vaccinationAbout';
+import footer from '../templates/nl/footer';
+import { pdfFooter, pdfInstructions } from '../templates/nl/pdf';
 
 const nl = {
     'date': {
@@ -70,6 +71,10 @@ const nl = {
         'preferMobile': {
             'header': 'Liever je testbewijs op je mobiel?',
             'intro': 'Download dan de app.'
+        },
+        'vaccination': {
+            'name': 'Naam',
+            'dateOfBirth': 'Geboortedatum'
         }
     },
     'message': {
@@ -94,18 +99,10 @@ const nl = {
     },
     'pdf': {
         'dayOfBirth': 'Geboortedag',
-        'footerText': `Bekijk de meestgestelde vragen op www.CoronaCheck.nl
-
-Stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)`,
+        'footerText': pdfFooter,
         'initials': 'Initialen',
         'instructions': 'INSTRUCTIES',
-        'instructionsText': `1. Print dit testbewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)
-
-2. Neem een geldig identiteitsbewijs mee naar de activiteit
-
-3. Laat het testbewijs en je identiteitsbewijs (en eventueel ook je toegangskaartje) zien bij de ingang
-
-Let op: dit is géén toegangsticket voor je activiteit`,
+        'instructionsText': pdfInstructions,
         'preferMobile': 'Laat je jouw testbewijs liever op je telefoon zien? Gebruik dan de code uit de e-mail in de CoronaCheck-app',
         'questions': 'VRAGEN?',
         'testedAt': 'Getest op',
@@ -123,7 +120,6 @@ Let op: dit is géén toegangsticket voor je activiteit`,
     'back': 'Terug',
     'close': 'Sluiten',
     'createTestProof': 'Maak QR-code',
-    'dateOfBirth': 'Geboortedatum',
     'didNotGetCode': 'Ik heb geen code gekregen',
     'emptyTestCode': 'Ophaalcode niet ingevuld',
     'enterCode': 'Testuitslag ophalen',
@@ -136,7 +132,6 @@ Let op: dit is géén toegangsticket voor je activiteit`,
     'goBackToStart': 'Naar home',
     'invalidTestCode': 'Geen geldige ophaalcode',
     'invalidVerificationCode': 'Geen geldige verificatiecode',
-    'name': 'Naam',
     'next': 'Volgende',
     'noTestProofPresent': 'Er is nog geen testbewijs',
     'noTestProofPresentDirection': 'Je kunt alleen van een negatieve testuitslag een testbewijs maken. Haal eerst je testuitslag op.',
