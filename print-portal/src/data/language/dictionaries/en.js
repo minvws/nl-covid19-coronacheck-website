@@ -24,6 +24,14 @@ const en = {
             'choiceVaccinationHeader': 'TODO',
             'choiceVaccinationBody': 'TODO'
         },
+        'choiceTestLocation': {
+            'pageHeader': 'TODO Waar ben je getest?',
+            'pageIntro': '<p>TODO Is je testuitslag negatief? Dan kan je er een QR-code van maken. Geef aan bij welke testlocatie je bent getest.</p>',
+            'choiceGGDHead': 'TODO GGD',
+            'choiceGGDBody': 'TODO Login met DigiD',
+            'choiceOtherLocation': 'TODO Andere testlocatie',
+            'didNotGetTestedYet': 'TODO Ik ben nog niet getest'
+        },
         'collectVaccination': {
             'pageHeader': 'TODO',
             'pageIntro': 'TODO',

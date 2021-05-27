@@ -127,6 +127,10 @@ const nl = {
             'noVerificationCode': {
                 'head': 'Nieuwe verificatiecode nodig?',
                 'body': '<p>Je krijgt de verificatiecode via een sms of e-mail van de testlocatie. Niet gekregen? Dan kunnen we een nieuwe code sturen.</p>'
+            },
+            'didNotGetTestedYet': {
+                'head': 'Ik ben nog niet getest',
+                'body': '<p>Je moet je eerst laten testen voordat je een QR-code kan maken. Als uit de test blijkt dat je geen corona hebt kan je jouw QR-code maken.</p><p>Een testbewijs is geldig tot 40 uur na het moment van testen. Plan je test dus op tijd. En zorg dat jouw QR-code binnen 40 uur gescand is bij de ingang.</p><p><a href="https://coronatest.nl/" class="btn" target="_blank">Maak een afspraak</a></p>'
             }
         },
         'error': {

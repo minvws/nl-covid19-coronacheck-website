@@ -19,7 +19,11 @@ export default {
             this.$router.push({ name: 'ProvideCode' });
         },
         openModal() {
-            console.log('modal')
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.didNotGetTestedYet.head'),
+                messageBody: this.$t('message.info.didNotGetTestedYet.body'),
+                closeButton: true
+            })
         }
     }
 }
