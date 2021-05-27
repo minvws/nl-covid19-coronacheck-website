@@ -73,6 +73,67 @@ a:hover {
     text-decoration: underline;
 }
 
+.offset-background {
+    background-color: $color-RO_lightblue;
+  
+    a, a:visited { 
+        color: $color-cc-link-darker;
+  
+        &:hover,
+        &:focus {
+            color: $color-cc-link-darker--interaction;
+        }
+    }
+}
+
+a[href^="tel"],
+.content-block a[href^="tel"] {
+    &,
+    &:visited {
+        color: $color-coronacheck-link;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    &:hover, 
+    &:focus {
+        text-decoration: underline;
+        color: $color-coronacheck-link--interaction;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+}
+
+.offset-background a[href^="tel"] {
+    &,
+    &:visited {
+        color: $color-cc-link-darker;
+    }
+
+    &:hover, 
+    &:focus {
+        text-decoration: underline;
+        color: $color-cc-link-darker--interaction;
+    }
+}
+
+@media (hover: hover) { 
+    // Make phone links not clickable on anything that is not a hover device 
+    a[href^="tel"],
+    .offset-background a[href^="tel"],
+    .content-block a[href^="tel"] {
+        &,
+        &:visited, 
+        &:hover, 
+        &:focus {
+            text-decoration: none;
+            color: inherit;
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+}
+
 button {
   cursor: pointer;
 }

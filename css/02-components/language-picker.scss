@@ -65,6 +65,10 @@
     pointer-events: none;
 }
 
+.language-picker__current-language {
+    font-weight: bold;
+}
+
 .language-picker__toggle {
     background: transparent;
     border: 0;
@@ -165,8 +169,6 @@
         color: $color-RO_darkblue--interaction;
     }
 }
-
-// Temporary
 
 .language-picker--home {
     position: absolute;

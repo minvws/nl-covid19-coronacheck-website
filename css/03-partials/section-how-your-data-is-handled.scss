@@ -1,6 +1,5 @@
 .information {
   display: block;
-  background-color: $color-RO_lightblue /* lightblauw */;
   margin: 0 auto 1em;
   padding: 1em 1.6em;
   position: relative;
@@ -12,15 +11,6 @@
 
   @media (min-width: 960px) {
     max-width: 940px;
-  }
-
-  a, a:visited { 
-    color: $color-cc-link-darker;
-
-    &:hover,
-    &:focus {
-      color: $color-cc-link-darker--interaction;
-    }
   }
 }
 

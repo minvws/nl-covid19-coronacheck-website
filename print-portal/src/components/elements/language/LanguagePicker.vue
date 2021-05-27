@@ -1,9 +1,13 @@
 <script>
 import LanguagePickerLanguages from './LanguagePickerLanguages';
+import vClickOutside from 'v-click-outside';
 
 export default {
     name: 'LanguagePicker',
     components: { LanguagePickerLanguages },
+    directives: {
+        clickOutside: vClickOutside.directive
+    },
     data() {
         return {
             isOpen: false
@@ -36,7 +40,9 @@ export default {
 </script>
 
 <template>
-    <div class="language-picker language-picker--home language-picker--right-orientation">
+    <div
+        v-click-outside="close"
+        class="language-picker language-picker--home language-picker--right-orientation">
         <span class="language-picker__current">
             <span class="language-picker__label">
                 {{$t('language')}}:
@@ -47,18 +53,18 @@ export default {
         </span>
         <button
             @click="open()"
-            v-on:keyup.esc="close()"
+            v-on:keyup.esc="close"
             type="button"
             class="language-picker__toggle"
             aria-controls="language-dropdown"
-            :aria-expanded="isOpen">
+            :aria-expanded="isOpen ? 'true' : 'false'">
             <span class="screen-reader-text">
               Wissel van taal
             </span>
             <span class="language-picker__chevron"></span>
         </button>
         <LanguagePickerLanguages
-            v-if="isOpen"/>
+            @close="close"/>
     </div>
 </template>
 

@@ -21,8 +21,8 @@ export default {
             this.$store.commit('languages/setCurrent', this.language);
             this.$i18n.locale = locale;
             const html = document.documentElement;
-            html.setAttribute('lang', locale)
-            this.$parent.$parent.close();
+            html.setAttribute('lang', locale);
+            this.$emit('close');
         }
     }
 }
@@ -38,7 +38,7 @@ export default {
             v-else
             @click="select()"
             class="language-picker__link"
-            hreflang="language.locale"
+            :hreflang="language.locale"
             :lang="language.locale"
             type="button">
             {{language.name}}

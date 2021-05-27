@@ -48,6 +48,7 @@
 .instructions__step-image {
   flex: 0 1 auto;
   width: 100%;
+  height: auto;
   
   @media (min-width: 320px) {
     max-width: 30%;

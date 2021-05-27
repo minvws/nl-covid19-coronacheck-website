@@ -61,5 +61,14 @@ export default {
         width: calc(100% - 48px);
         cursor: pointer;
     }
+
+    a, a:visited {
+        color: $color-cc-link-on-lightgrey;
+
+        &:hover,
+        &:focus {
+            color: $color-cc-link-on-lightgrey--interaction;
+        }
+    }
 }
 </style>

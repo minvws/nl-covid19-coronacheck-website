@@ -10,6 +10,14 @@
             color: $color-darkgrey;
             font-size: 15px;
         }
+
+        a, a:visited {
+            color: $color-cc-link-darker;
+        }
+
+        a:hover, a:focus {
+            color: $color-cc-link-darker--interaction;
+        }
     }
 
     input {

@@ -10,13 +10,14 @@ const html = `
             </div>
         </div>
         <div class="footer-links-col ___desktop-50">
-            <h3> Do you have any questions about CoronaCheck?<br>
-            Call <span class="telephone--as-span">0800-1421</span>
-            <a href="tel:08001421" class="telephone--as-anchor">0800-1421</a> (Free)
-            </h3>
-            <p><strong>Opening hours</strong><br> Monday till Sunday 08.00 a.m. - 08.00 p.m. </p>
-            <p><strong>Or send an e-mail to:</strong><br>
-            <a href="mailto:helpdesk@coronacheck.nl" target="_blank"> helpdesk@coronacheck.nl </a>
+            <h2>Do you have questions about CoronaCheck? Contact us
+            </h2>
+            <h3>Call the helpdesk</h3>
+            <p><a href="tel:08001421">0800-1421</a> (free).<br />
+            Available Monday till Sunday 08.00 a.m. - 08.00 p.m.</p>
+            <h3>Or send an e-mail to:</h3>
+            <p>
+                <a href="mailto:helpdesk@coronacheck.nl" target="_blank" rel="noopener noreferrer">helpdesk@coronacheck.nl</a>
             </p>
         </div>
     </div>
