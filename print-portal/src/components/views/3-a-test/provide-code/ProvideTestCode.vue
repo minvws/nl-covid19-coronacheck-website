@@ -14,7 +14,7 @@ export default {
     },
     computed: {
         hasGivenConsent() {
-            return this.$store.state.userConsent;
+            return this.$store.state.userConsent || process.env.NODE_ENV === 'development';
         },
         testCode: {
             get() {

@@ -4,10 +4,11 @@ import PageIntro from '@/components/elements/PageIntro';
 import PreferMobile from '@/components/elements/PreferMobile';
 import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
-import TestResult from '@/classes/TestResult';
+// import TestResult from '@/classes/TestResult';
 import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import dateTool from '@/tools/date';
+import { negativeTestConversionV2ToV3 } from '@/tools/version-conversion';
 
 export default {
     name: 'ProvideCode',
@@ -120,6 +121,17 @@ export default {
                 this.verificationCodeStatus.error = this.$t('views.provideCode.emptyVerificationCode');
             }
         },
+        addNegativeTestV2(payload) {
+            // todo move to the testResult itself? There theoretically might be multiple?
+            this.setTimerForValidityTestResult(payload.result);
+            this.testCodeStatus.error = '';
+            const negativeTestV3 = negativeTestConversionV2ToV3(payload.result);
+            console.log(negativeTestV3);
+            // const testResult = new TestResult(payload.result);
+            // this.$store.commit('setTestResult', testResult);
+            // this.$store.commit('setSignature', response.data);
+            // this.$router.push({ name: 'YourTestResult' });
+        },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {
                 let responseForSignedResult, data;
@@ -150,13 +162,7 @@ export default {
                             this.$store.commit('setTestResultStatus', 'unknown_error')
                         }
                         if (this.testResultStatus === 'complete') {
-                            console.log(payload.result);
-                            this.setTimerForValidityTestResult(payload.result);
-                            this.testCodeStatus.error = '';
-                            const testResult = new TestResult(payload.result);
-                            this.$store.commit('setTestResult', testResult);
-                            this.$store.commit('setSignature', response.data);
-                            this.$router.push({ name: 'YourTestResult' });
+                            this.addNegativeTestV2(payload)
                         } else if (this.testResultStatus === 'pending') {
                             this.$router.push({ name: 'TestResultPending' })
                         }
