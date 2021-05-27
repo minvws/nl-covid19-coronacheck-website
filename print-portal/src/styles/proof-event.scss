@@ -1,12 +1,12 @@
 .proof-event {
     padding: $grid-x2 0;
-    border-bottom: 1px solid $color-lightgrey;
+    border-bottom: 1px solid $color-mediumgrey;
     font-size: 17px;
     margin-bottom: $grid-x2;
     position: relative;
 
     &:first-child {
-        border-top: 1px solid $color-lightgrey;
+        border-top: 1px solid $color-mediumgrey;
     }
 
     &__status {
