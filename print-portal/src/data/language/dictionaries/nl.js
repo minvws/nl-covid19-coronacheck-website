@@ -32,6 +32,19 @@ const nl = {
             'pageHeader': 'Jouw opgehaalde vaccinaties ',
             'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>'
         },
+        'yourTestResults': {
+            'pageHeader': 'Controleer je testuitslag',
+            'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
+            'createTestProofButton': 'Maak QR-code',
+            'somethingIsWrong': 'Klopt er iets niet?',
+            'retrievedTestResult': 'Opgehaalde testuitslag',
+            'noTestResultPresent': 'Er is geen testuitslag bekend',
+            'noTestResultPresentDirection': 'Haal eerst je testuitslag op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen. '
+        },
+        'testResultPending': {
+            'pageHeader': 'Testuitslag nog niet bekend',
+            'pageIntro': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.'
+        },
         'printTestResult': {
             'pageHeader': 'Je testbewijs',
             'pageIntro': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er in staat. Open of download de PDF, print het uit en neem ’m mee.'
@@ -39,6 +52,24 @@ const nl = {
         'printVaccination': {
             'pageHeader': 'Print jouw vaccinatiebewijs',
             'pageIntro': '<p>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt een vaccinatiebewijs voor binnen Nederland, en een vaccinatiebewijs voor in Europa.<br><a href="" target="_blank">Lees hier</a> wat er zoal in staat. Print de PDF en neem het printje mee.</p>'
+        }
+    },
+    'components': {
+        'languagePicker': {
+            'language': 'Taal',
+            'changeLanguage': 'Wissel van taal',
+            'currentLanguage': 'Huidige taal'
+        },
+        'testResult': {
+            'dateOfTest': 'Testdatum',
+            'yourCredentials': 'Jouw gegevens'
+        },
+        'faq': {
+            'viewFaq': 'Bekijk de meestgestelde vragen'
+        },
+        'preferMobile': {
+            'header': 'Liever je testbewijs op je mobiel?',
+            'intro': 'Download dan de app.'
         }
     },
     'message': {
@@ -90,12 +121,9 @@ Let op: dit is géén toegangsticket voor je activiteit`,
         }
     },
     'back': 'Terug',
-    'changeLanguage': 'Wissel van taal',
     'close': 'Sluiten',
     'createTestProof': 'Maak QR-code',
-    'currentLanguage': 'Huidige taal',
     'dateOfBirth': 'Geboortedatum',
-    'dateOfTest': 'Testdatum',
     'didNotGetCode': 'Ik heb geen code gekregen',
     'emptyTestCode': 'Ophaalcode niet ingevuld',
     'enterCode': 'Testuitslag ophalen',
@@ -108,40 +136,27 @@ Let op: dit is géén toegangsticket voor je activiteit`,
     'goBackToStart': 'Naar home',
     'invalidTestCode': 'Geen geldige ophaalcode',
     'invalidVerificationCode': 'Geen geldige verificatiecode',
-    'language': 'Taal',
     'name': 'Naam',
     'next': 'Volgende',
     'noTestProofPresent': 'Er is nog geen testbewijs',
     'noTestProofPresentDirection': 'Je kunt alleen van een negatieve testuitslag een testbewijs maken. Haal eerst je testuitslag op.',
-    'noTestResultPresent': 'Er is geen testuitslag bekend',
-    'noTestResultPresentDirection': 'Haal eerst je testuitslag op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen. ',
     'noVerificationCodeHead': 'Nieuwe verificatiecode nodig?',
     'noVerificationCodeMessage': '<p>Je krijgt de verificatiecode via een sms of e-mail van de testlocatie. Niet gekregen? Dan kunnen we een nieuwe code sturen.</p>',
     'openPDF': 'Open PDF',
     'orderWords': ['Eerste', 'Tweede', 'Derde'],
-    'preferMobile': 'Liever je testbewijs op je mobiel?',
-    'preferMobileDirection': 'Download dan de app.',
     'retrieveTestResult': 'Testuitslag ophalen',
     'sendCode': 'Stuur code',
     'sendAgain': 'Verstuur opnieuw',
     'testCodeDirection': 'Vul jouw ophaalcode in. Deze heb je van de testlocatie gekregen. Of klik op de link in de e-mail die je van je testlocatie krijgt.',
     'uniqueCode': 'Ophaalcode',
-    'retrievedTestResult': 'Opgehaalde testuitslag',
     'resultNegative': 'Negatieve testuitslag',
-    'resultPending': 'Testuitslag nog niet bekend',
-    'resultPendingDirection': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.',
-    'somethingIsWrong': 'Klopt er iets niet?',
     'vaccination': 'Vaccinatie',
     'verificationCode': 'Verificatiecode',
     'verificationCodeDirection': 'Je krijgt een code in een sms of e-mail',
-    'yourCredentials': 'Jouw gegevens',
     'yourCredentialsWrong': 'Zijn deze gegevens anders dan op je identiteitsbewijs?',
     'yourCredentialsWrongDirection': 'Neem contact op met je testlocatie. Zij kunnen je gegevens aanpassen.',
-    'yourNegativeTestresult': 'Controleer je testuitslag',
-    'yourNegativeTestresultDirection': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
     'yourTestProof': 'Jouw testbewijs',
     'skiplink': 'Ga direct naar inhoud',
-    'view-faq': 'Bekijk de meestgestelde vragen',
     'logo-government': 'Logo Rijksoverheid, homepage',
     'identity_image_alt': 'Holder QR maken',
     'header-appstore': 'Downloaden in de App Store',

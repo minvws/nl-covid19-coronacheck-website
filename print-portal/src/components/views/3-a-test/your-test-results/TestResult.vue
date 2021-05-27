@@ -33,10 +33,10 @@ export default {
             {{status}}
         </div>
         <div class="proof-event__date">
-            {{$t('dateOfTest')}}: {{date}}
+            {{$t('components.testResult.dateOfTest')}}: {{date}}
         </div>
         <div class="proof-event__date">
-            {{$t('yourCredentials')}}: {{testResult.holder.string}}
+            {{$t('components.testResult.yourCredentials')}}: {{testResult.holder.string}}
         </div>
     </div>
 </template>

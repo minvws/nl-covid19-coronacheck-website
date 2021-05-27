@@ -70,8 +70,4 @@ export default {
     </div>
 </template>
 
-<style lang="scss">
-.Vaccination {
-
-}
-</style>
+<style lang="scss"></style>

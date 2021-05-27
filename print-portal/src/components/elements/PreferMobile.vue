@@ -16,10 +16,10 @@ export default {
         </div>
         <div class="PreferMobile__text">
             <h3>
-                {{$t('preferMobile')}}
+                {{$t('components.preferMobile.header')}}
             </h3>
             <p>
-                {{$t('preferMobileDirection')}}
+                {{$t('components.preferMobile.intro')}}
             </p>
             <ul class="layout-app-badges">
                 <li class="app_badge_column__left">

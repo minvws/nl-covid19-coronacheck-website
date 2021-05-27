@@ -39,7 +39,7 @@ export default {
     <div class="language-picker language-picker--home language-picker--right-orientation">
         <span class="language-picker__current">
             <span class="language-picker__label">
-                {{$t('language')}}:
+                {{$t('components.languagePicker.language')}}:
             </span>
             <strong>
                 {{currentLanguage.name}}
@@ -53,7 +53,7 @@ export default {
             aria-controls="language-dropdown"
             :aria-expanded="isOpen">
             <span class="screen-reader-text">
-              Wissel van taal
+              {{$t('components.languagePicker.changeLanguage')}}
             </span>
             <span class="language-picker__chevron"></span>
         </button>

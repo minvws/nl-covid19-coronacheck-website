@@ -27,7 +27,7 @@ export default {
         id="language-dropdown"
         class="language-picker__dropdown">
         <span class="language-picker__title">
-            {{$t('changeLanguage')}}:
+            {{$t('components.languagePicker.changeLanguage')}}:
         </span>
         <ul class="language-picker__languages">
             <LanguagePicerkLanguage

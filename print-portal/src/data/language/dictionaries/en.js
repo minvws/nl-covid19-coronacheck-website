@@ -32,6 +32,19 @@ const en = {
             'pageHeader': 'TODO',
             'pageIntro': '<p>TODO</p>'
         },
+        'yourTestResults': {
+            'pageHeader': 'Check your test result',
+            'pageIntro': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test declaration.</p>',
+            'createTestProofButton': 'Make QR code',
+            'somethingIsWrong': 'Is something wrong?',
+            'retrievedTestResult': 'Retrieved test result',
+            'noTestResultPresent': 'Test result not known',
+            'noTestResultPresentDirection': 'Retrieve your test result first. Use the retrieval code given to you by the test location.'
+        },
+        'testResultPending': {
+            'pageHeader': 'Test result not yet known',
+            'pageIntro': 'Please try again later.<br>If you have any questions, contact your test location.'
+        },
         'printTestResult': {
             'pageHeader': 'Your test declaration',
             'pageIntro': 'You\'ve made a test declaration,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.'
@@ -39,6 +52,24 @@ const en = {
         'printVaccination': {
             'pageHeader': 'TODO',
             'pageIntro': '<p>TODO</p>'
+        }
+    },
+    'components': {
+        'languagePicker': {
+            'language': 'Language',
+            'changeLanguage': 'Change language',
+            'currentLanguage': 'Current language'
+        },
+        'testResult': {
+            'dateOfTest': 'Test date',
+            'yourCredentials': 'Identification details'
+        },
+        'faq': {
+            'viewFaq': 'View frequently asked questions'
+        },
+        'preferMobile': {
+            'header': 'Prefer having your test declaration on mobile?',
+            'intro': 'Then download the app.'
         }
     },
     'message': {
@@ -89,12 +120,8 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
         }
     },
     'back': 'Back',
-    'changeLanguage': 'Change language',
     'close': 'Close',
-    'createTestProof': 'Make QR code',
-    'currentLanguage': 'Current language',
     'dateOfBirth': 'Date of birth',
-    'dateOfTest': 'Test date',
     'didNotGetCode': 'I don\'t have a code',
     'emptyTestCode': 'Retrieval code not entered',
     'enterCode': 'Retrieve test result',
@@ -107,38 +134,25 @@ Beware: this is not an entrance ticket for the activity you're visiting`,
     'goBackToStart': 'To Home',
     'invalidTestCode': 'Invalid retrieval code',
     'invalidVerificationCode': 'Invalid verification code',
-    'language': 'Language',
     'name': 'Name',
     'next': 'Next',
     'noTestProofPresent': 'There\'s no test result',
     'noTestProofPresentDirection': 'You can only turn a negative test result into a test declaration. Retrieve your test result first.',
-    'noTestResultPresent': 'Test result not known',
-    'noTestResultPresentDirection': 'Retrieve your test result first. Use the retrieval code given to you by the test location.',
     'noVerificationCodeHead': 'Need a new verification code?',
     'noVerificationCodeMessage': '<p>The test location sends you a verification code via text or email. Didn\'t get one? Then you can request a new code.</p>',
     'openPDF': 'Open PDF',
     'orderWords': ['First', 'Second', 'Third'],
-    'preferMobile': 'Prefer having your test declaration on mobile?',
-    'preferMobileDirection': 'Then download the app.',
     'retrieveTestResult': 'Retrieve test result',
     'sendCode': 'Send code',
     'sendAgain': 'Send again',
     'testCodeDirection': 'Enter your retrieval code. The test location sent it to you. Or click on the link in the email you\'ll get from the test location.',
     'uniqueCode': 'Retrieval code',
-    'retrievedTestResult': 'Retrieved test result',
     'resultNegative': 'Negative test result',
-    'resultPending': 'Test result not yet known',
-    'resultPendingDirection': 'Please try again later.<br>If you have any questions, contact your test location.',
-    'somethingIsWrong': 'Is something wrong?',
     'vaccination': 'Vaccination',
     'verificationCode': 'Verification code',
     'verificationCodeDirection': 'You get a code via text or email',
-    'yourCredentials': 'Identification details',
-    'yourNegativeTestresult': 'Check your test result',
-    'yourNegativeTestresultDirection': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test declaration.</p>',
     'yourTestProof': 'Your test declaration',
     'skiplink': 'Skip to content',
-    'view-faq': 'View frequently asked questions',
     'logo-government': 'Logo Dutch Government, homepage',
     'identity_image_alt': 'Make Holder QR code',
     'header-appstore': 'Download on the App Store',

@@ -38,8 +38,4 @@ export default {
     </Page>
 </template>
 
-<style lang="scss">
-    .CollectVaccination {
-
-    }
-</style>
+<style lang="scss"></style>

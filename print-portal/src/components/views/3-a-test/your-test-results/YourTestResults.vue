@@ -89,11 +89,11 @@ export default {
             <div class="section-block">
                 <div v-if="testResult">
                     <h2>
-                        {{$t('yourNegativeTestresult')}}
+                        {{$t('views.yourTestResults.pageHeader')}}
                     </h2>
-                    <div v-html="$t('yourNegativeTestresultDirection')"/>
+                    <div v-html="$t('views.yourTestResults.pageIntro')"/>
                     <div class="YourTestResults__header">
-                        {{$t('retrievedTestResult')}}
+                        {{$t('views.yourTestResults.retrievedTestResult')}}
                         <button
                             @click="openModalTestResultsAbout()"
                             type="button"
@@ -110,14 +110,14 @@ export default {
                             @click="createTestCertificate()"
                             type="button"
                             class="btn">
-                            {{$t('createTestProof')}}
+                            {{$t('views.yourTestResults.createTestProofButton')}}
                         </button>
                         <div class="button__help-button">
                             <button
                                 @click="openModalTestResultsSomethingWrong()"
                                 type="button"
                                 class="button-modest">
-                                {{$t('somethingIsWrong')}}
+                                {{$t('views.yourTestResults.somethingIsWrong')}}
                             </button>
                         </div>
                     </div>
@@ -125,10 +125,10 @@ export default {
 
                 <div v-else>
                     <h2>
-                        {{$t('noTestResultPresent')}}
+                        {{$t('views.yourTestResults.noTestResultPresent')}}
                     </h2>
                     <p>
-                        {{$t('noTestResultPresentDirection')}}
+                        {{$t('views.yourTestResults.noTestResultPresentDirection')}}
                     </p>
                     <div class="section-block__footer">
                         <button

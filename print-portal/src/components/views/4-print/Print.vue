@@ -80,9 +80,7 @@ export default {
                             class="Print__buttons">
                             <button
                                 type="button"
-                                :class="{
-                                        'button--inactive': !document
-                                    }"
+                                :class="{'button--inactive': !document}"
                                 :disabled="!document"
                                 id="open-pdf"
                                 class="btn button--full-width"

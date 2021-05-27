@@ -18,9 +18,9 @@ export default {
         <div class="section">
             <div class="section-block">
                 <h2>
-                    {{$t('resultPending')}}
+                    {{$t('views.testResultPending.pageHeader')}}
                 </h2>
-                <div v-html="$t('resultPendingDirection')"/>
+                <div v-html="$t('views.testResultPending.pageIntro')"/>
                 <div class="section-block__footer">
                     <button
                         @click="goBack()"
