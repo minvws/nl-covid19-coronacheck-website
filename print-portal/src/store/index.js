@@ -10,14 +10,16 @@ import Holder from '@/classes/holder/Holder';
 Vue.use(Vuex)
 
 const state = {
+    // general
     holderConfig: null,
+    userConsent: false,
     holder: null,
+    // negativeTest v2 flow
     testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
+    verificationNeeded: false,
     verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
     testResultStatus: 'idle',
-    verificationNeeded: false,
-    testResult: null,
-    userConsent: false,
+    // print
     signature: null,
     qrCode: '',
     qrData: null
@@ -29,9 +31,6 @@ const mutations = {
     },
     setTestResultStatus(state, testResultStatus) {
         state.testResultStatus = testResultStatus;
-    },
-    setTestResult(state, testResult) {
-        state.testResult = testResult;
     },
     setSignature(state, signature) {
         state.signature = signature;

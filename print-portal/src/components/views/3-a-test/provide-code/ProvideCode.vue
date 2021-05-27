@@ -121,16 +121,18 @@ export default {
                 this.verificationCodeStatus.error = this.$t('views.provideCode.emptyVerificationCode');
             }
         },
-        addNegativeTestV2(payload) {
+        addNegativeTestV2(signature, payload) {
             // todo move to the testResult itself? There theoretically might be multiple?
             this.setTimerForValidityTestResult(payload.result);
             this.testCodeStatus.error = '';
+
             const negativeTestV3 = negativeTestConversionV2ToV3(payload.result);
-            console.log(negativeTestV3);
-            // const testResult = new TestResult(payload.result);
-            // this.$store.commit('setTestResult', testResult);
-            // this.$store.commit('setSignature', response.data);
-            // this.$router.push({ name: 'YourTestResult' });
+            this.$store.commit('updateHolder', negativeTestV3.holder);
+            for (const proofEvent of negativeTestV3.events) {
+                this.$store.commit('proofEvents/create', proofEvent);
+            }
+            this.$store.commit('setSignature', signature);
+            this.$router.push({ name: 'YourTestResult' });
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {
@@ -162,7 +164,7 @@ export default {
                             this.$store.commit('setTestResultStatus', 'unknown_error')
                         }
                         if (this.testResultStatus === 'complete') {
-                            this.addNegativeTestV2(payload)
+                            this.addNegativeTestV2(response.data, payload)
                         } else if (this.testResultStatus === 'pending') {
                             this.$router.push({ name: 'TestResultPending' })
                         }

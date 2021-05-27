@@ -1,19 +1,24 @@
 <script>
-import TestResult from '@/classes/TestResult';
+import NegativeTest from '@/classes/events/NegativeTest';
+import Holder from '@/classes/holder/Holder';
 import dateTool from '@/tools/date';
 
 export default {
     name: 'TestResult',
     components: {},
     props: {
-        testResult: {
-            type: TestResult,
+        negativeTest: {
+            type: NegativeTest,
+            required: true
+        },
+        holder: {
+            type: Holder,
             required: true
         }
     },
     computed: {
         date() {
-            return dateTool.dateTimeToString(this.testResult.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
+            return dateTool.dateTimeToString(this.negativeTest.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
         }
     },
     methods: {}
@@ -29,7 +34,7 @@ export default {
             {{$t('components.testResult.dateOfTest')}}: {{date}}
         </div>
         <div class="proof-event__date">
-            {{$t('components.testResult.yourCredentials')}}: {{testResult.holder.string}}
+            {{$t('components.testResult.yourCredentials')}}: {{holder.discreteInfoString}}
         </div>
     </div>
 </template>

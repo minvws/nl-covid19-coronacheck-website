@@ -7,14 +7,33 @@ export default {
     name: 'YourTestResults',
     components: { Page, PageIntro, TestResult },
     computed: {
-        testResult() {
-            return this.$store.state.testResult;
+        negativeTestProofEvents() {
+            return this.$store.getters['proofEvents/getProofEvents']('negativetest');
+        },
+        latestNegativeTest() {
+            if (this.negativeTestProofEvents.length > 0) {
+                const negativeTests = this.negativeTestProofEvents.map(proofEvent => proofEvent.negativetest);
+                if (negativeTests.length === 1) {
+                    return negativeTests[0];
+                } else {
+                    // if there are multiple (which should never be the case actually)
+                    // we sort them and pick the most recent
+                    return negativeTests.sort((a, b) => {
+                        return new Date(b.sampleDate) - new Date(a.sampleDate);
+                    })[0];
+                }
+            } else {
+                return null;
+            }
         },
         signature() {
             return this.$store.state.signature;
         },
         hasQR() {
             return this.$store.state.qrCode.length > 0;
+        },
+        holder() {
+            return this.$store.state.holder;
         },
         holderContent() {
             const holder = this.testResult.holder;
@@ -87,7 +106,7 @@ export default {
         @back="goBack"
         class="YourTestResults">
         <div class="section">
-            <div  v-if="testResult">
+            <div  v-if="latestNegativeTest">
                 <PageIntro
                     :head="$t('views.yourTestResults.pageHeader')"
                     :intro="$t('views.yourTestResults.pageIntro')"/>
@@ -104,7 +123,8 @@ export default {
                     </div>
                     <div class="proof-events">
                         <TestResult
-                            :testResult="testResult"/>
+                            :negative-test="latestNegativeTest"
+                            :holder="holder"/>
                     </div>
                     <div class="section-block__footer">
                         <button
