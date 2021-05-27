@@ -42,8 +42,8 @@ export default {
             </div>
             <div class="section-block">
                 <UserConsent
-                    :consent="consent"
                     @update="setUserConsent"
+                    :consent="consent"
                     :label="$t('views.home.userConsentText')"/>
             </div>
             <div class="section-block">

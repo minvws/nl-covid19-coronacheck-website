@@ -24,6 +24,14 @@ const nl = {
             'choiceVaccinationHeader': 'Een vaccinatie',
             'choiceVaccinationBody': 'Ik heb mijn prik of prikken gehad'
         },
+        'choiceTestLocation': {
+            'pageHeader': 'Waar ben je getest?',
+            'pageIntro': '<p>Is je testuitslag negatief? Dan kan je er een QR-code van maken. Geef aan bij welke testlocatie je bent getest.</p>',
+            'choiceGGDHead': 'GGD',
+            'choiceGGDBody': 'Login met DigiD',
+            'choiceOtherLocation': 'Andere testlocatie',
+            'didNotGetTestedYet': 'Ik ben nog niet getest'
+        },
         'collectVaccination': {
             'pageHeader': 'Vaccinatie ophalen',
             'pageIntro': '<p>Heb je een of meer prikken gekregen? Dan kan je een  bewijs maken.</p><p>Vragen over vaccinaties? <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">Lees hier meer</a></p>',

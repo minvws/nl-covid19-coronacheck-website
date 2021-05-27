@@ -24,11 +24,15 @@ export default {
     <button
         @click="select"
         class="PageChoice">
-        <div class="PageChoice__header">
-            {{header}}
-        </div>
-        <div class="PageChoice__body">
-            {{body}}
+        <div class="PageChoice__content">
+            <div class="PageChoice__header PageChoice__line">
+                {{header}}
+            </div>
+            <div
+                v-if="body"
+                class="PageChoice__body PageChoice__line">
+                {{body}}
+            </div>
         </div>
         <div class="PageChoice__icon">
             <img src="assets/img/icons/next.svg"/>
@@ -36,7 +40,7 @@ export default {
     </button>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/styles/variables/index";
 
 .PageChoice {
@@ -54,6 +58,7 @@ export default {
     font-size: inherit;
     outline: none;
     white-space: normal;
+    height: 80px;
 
     &:hover {
         background: #fff;
@@ -69,7 +74,14 @@ export default {
 
     &__header {
         font-weight: 700;
+    }
+
+    &__line {
         margin-bottom: $grid-x1;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__icon {

@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/views/1-home/Home.vue'
-import ChoiceProof from '@/components/views/2-choice-proof/ChoiceProof'
+import ChoiceProof from '@/components/views/2-a-choice-proof/ChoiceProof'
+import ChoiceTestLocation from '@/components/views/2-b-choice-test-location/ChoiceTestLocation'
 import ProvideCode from '@/components/views/3-a-test/provide-code/ProvideCode'
 import YourTestResults from '@/components/views/3-a-test/your-test-results/YourTestResults';
 import TestResultPending from '@/components/views/3-a-test/your-test-results/TestResultPending';
@@ -22,6 +23,10 @@ const routes = [
         path: '/keuze-papieren-bewijs',
         component: ChoiceProof,
         name: 'ChoiceProof'
+    }, {
+        path: '/waar-ben-je-getest',
+        component: ChoiceTestLocation,
+        name: 'ChoiceTestLocation'
     }, {
         path: '/vaccinatie-ophalen',
         component: CollectVaccination,
