@@ -29,7 +29,7 @@ const html = `
             4
         </div>
         <div class="HolderIdentityCharacters__value">
-            %{birthDayMonthStyled}
+            %{birthMonthStyled}
         </div>
     </li>
 </ul>`;

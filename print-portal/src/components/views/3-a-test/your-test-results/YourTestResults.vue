@@ -34,15 +34,6 @@ export default {
         },
         holder() {
             return this.$store.state.holder;
-        },
-        holderContent() {
-            const holder = this.testResult.holder;
-            return {
-                firstNameInitial: holder.firstNameInitial,
-                lastNameInitial: holder.lastNameInitial,
-                birthDayStyled: holder.birthDayStyled,
-                birthDayMonthStyled: holder.birthDayMonthStyled
-            }
         }
     },
     methods: {
@@ -86,14 +77,14 @@ export default {
         openModalTestResultsAbout() {
             this.$store.commit('modal/set', {
                 messageHead: this.$t('message.info.testResultAbout.head'),
-                messageBody: this.$t('message.info.testResultAbout.body', this.holderContent),
+                messageBody: this.$t('message.info.testResultAbout.body', this.holder),
                 closeButton: true
             })
         },
         openModalTestResultsSomethingWrong() {
             this.$store.commit('modal/set', {
                 messageHead: this.$t('message.info.testResultSomethingWrong.head'),
-                messageBody: this.$t('message.info.testResultSomethingWrong.body', this.holderContent),
+                messageBody: this.$t('message.info.testResultSomethingWrong.body', this.holder),
                 closeButton: true
             })
         }
