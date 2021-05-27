@@ -803,16 +803,16 @@ footer-phone-action:
   
 footer-phone-opening-hours:
   nl: "Bereikbaar van maandag t/m zondag 08.00 – 20.00 uur"
-  fy: "Moandei o/m snein 08:00 – 20:00 oere   "
-  en: "Available Monday till Sunday 08.00 a.m. - 08.00 p.m. "
+  fy: "Moandei o/m snein 08:00 – 20:00 oere"
+  en: "Available Monday till Sunday 08.00 a.m. - 08.00 p.m."
   ar: "من الإثنين حتى الأحد 08.00 صباحًا-08.00 مساءً "
-  bg: "От понеделник до неделя 08.00 - 20.00 часа "
-  de: "Mo-So 8–20 Uhr "
-  es: "De lunes a domingo 8.00 h - 20.00 h "
-  fr: "Du lundi au dimanche 8.00 h - 20.00 h "
-  pl: "Od poniedziałku do piątku w godz. 08:00 - 20:00 "
+  bg: "От понеделник до неделя 08.00 - 20.00 часа"
+  de: "Mo-So 8–20 Uhr"
+  es: "De lunes a domingo 8.00 h - 20.00 h"
+  fr: "Du lundi au dimanche 8.00 h - 20.00 h"
+  pl: "Od poniedziałku do piątku w godz. 08:00 - 20:00"
   ro: "De luni până vineri: 08.00 - 20.00"
-  tr: "Pazartesi - Pazar 08:00 - 20:00 "
+  tr: "Pazartesi - Pazar 08:00 - 20:00"
   
 footer-phone-mail: 
   nl: "Of stuur een e-mail naar:"
