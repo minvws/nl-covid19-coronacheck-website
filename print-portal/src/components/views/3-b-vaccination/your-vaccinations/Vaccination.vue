@@ -21,7 +21,7 @@ export default {
             return this.$store.state.holder;
         },
         title() {
-            return this.$t('orderWords.' + (this.vaccination.doseNumber - 1)) + ' ' + this.$t('vaccination').toLocaleLowerCase();
+            return this.$t('orderWords.' + (this.vaccination.doseNumber - 1)) + ' ' + this.$t('components.vaccination.vaccination').toLocaleLowerCase();
         },
         vaccineName() {
             const vaccine = this.$store.state.holderConfig.hpkCodes.find(hpkCode => {

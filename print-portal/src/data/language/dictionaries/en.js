@@ -31,7 +31,23 @@ const en = {
         },
         'yourVaccinations': {
             'pageHeader': 'TODO',
-            'pageIntro': '<p>TODO</p>'
+            'pageIntro': '<p>TODO</p>',
+            'createTestProofButton': 'Make QR code',
+            'somethingIsWrong': 'Klopt er iets niet?'
+        },
+        'provideCode': {
+            'pageHeader': 'Retrieve test result',
+            'pageIntro': 'Enter your retrieval code. The test location sent it to you. Or click on the link in the email you\'ll get from the test location.',
+            'uniqueCode': 'Retrieval code',
+            'verificationCode': 'Verification code',
+            'verificationCodeDirection': 'You get a code via text or email',
+            'sendAgain': 'Send again',
+            'didNotGetCode': 'I don\'t have a code',
+            'emptyTestCode': 'Retrieval code not entered',
+            'invalidTestCode': 'Invalid retrieval code',
+            'invalidVerificationCode': 'Invalid verification code',
+            'emptyVerificationCode': 'Verification code not entered',
+            'sendCode': 'Send code'
         },
         'yourTestResults': {
             'pageHeader': 'Check your test result',
@@ -45,6 +61,9 @@ const en = {
         'testResultPending': {
             'pageHeader': 'Test result not yet known',
             'pageIntro': 'Please try again later.<br>If you have any questions, contact your test location.'
+        },
+        'print': {
+            'openPDF': 'Open PDF'
         },
         'printTestResult': {
             'pageHeader': 'Your test declaration',
@@ -62,6 +81,7 @@ const en = {
             'currentLanguage': 'Current language'
         },
         'testResult': {
+            'resultNegative': 'Negative test result',
             'dateOfTest': 'Test date',
             'yourCredentials': 'Identification details'
         },
@@ -73,6 +93,7 @@ const en = {
             'intro': 'Then download the app.'
         },
         'vaccination': {
+            'vaccination': 'Vaccination',
             'name': 'Name',
             'dateOfBirth': 'Date of birth'
         }
@@ -80,11 +101,11 @@ const en = {
     'message': {
         'info': {
             'testResultAbout': {
-                'head': 'TODO',
+                'head': 'About the test result',
                 'body': messageInfoTestResultAbout
             },
             'testResultSomethingWrong': {
-                'head': 'TODO',
+                'head': 'Are the data incorrect?',
                 'body': messageInfoTestResultAbout
             },
             'vaccinationAbout': {
@@ -92,12 +113,27 @@ const en = {
                 'body': messageInfoVaccinationAbout
             },
             'vaccinationSomethingWrong': {
+                'head': 'TODO',
                 'body': '<p>TODO</p>'
+            },
+            'noVerificationCode': {
+                'head': 'Need a new verification code?',
+                'body': '<p>The test location sends you a verification code via text or email. Didn\'t get one? Then you can request a new code.</p>'
             }
         },
-        'error': {}
+        'error': {
+            'expiredTestCode': {
+                'head': 'Your QR code has expired',
+                'body': '<p>The code you\'ve entered is invalid. Please check it. Need a new QR code? Get tested again.</p>'
+            },
+            'general': {
+                'head': 'Sorry, something went wrong',
+                'body': '<p>Because of a technical error. Contact the CoronaCheck helpdesk via <a href="tel:0800-1421" class="only-clickable-for-mobile">0800-1421</a>.</p>'
+            }
+        }
     },
     'pdf': {
+        'yourTestProof': 'Your test declaration',
         'dayOfBirth': 'Day of birth',
         'footerText': pdfFooter,
         'initials': 'Initials',
@@ -119,35 +155,11 @@ const en = {
     },
     'back': 'Back',
     'close': 'Close',
-    'didNotGetCode': 'I don\'t have a code',
-    'emptyTestCode': 'Retrieval code not entered',
-    'enterCode': 'Retrieve test result',
-    'expiredTestCodeHead': 'Your QR code has expired',
-    'expiredTestCodeBody': '<p>The code you\'ve entered is invalid. Please check it. Need a new QR code? Get tested again.</p>',
     'faq': 'Frequently asked questions',
     'forInstanceAbbr': 'E.g.',
-    'generalError': 'Sorry, something went wrong',
-    'generalErrorBody': '<p>Because of a technical error. Contact the CoronaCheck helpdesk via <a href="tel:0800-1421" class="only-clickable-for-mobile">0800-1421</a>.</p>',
     'goBackToStart': 'To Home',
-    'invalidTestCode': 'Invalid retrieval code',
-    'invalidVerificationCode': 'Invalid verification code',
     'next': 'Next',
-    'noTestProofPresent': 'There\'s no test result',
-    'noTestProofPresentDirection': 'You can only turn a negative test result into a test declaration. Retrieve your test result first.',
-    'noVerificationCodeHead': 'Need a new verification code?',
-    'noVerificationCodeMessage': '<p>The test location sends you a verification code via text or email. Didn\'t get one? Then you can request a new code.</p>',
-    'openPDF': 'Open PDF',
     'orderWords': ['First', 'Second', 'Third'],
-    'retrieveTestResult': 'Retrieve test result',
-    'sendCode': 'Send code',
-    'sendAgain': 'Send again',
-    'testCodeDirection': 'Enter your retrieval code. The test location sent it to you. Or click on the link in the email you\'ll get from the test location.',
-    'uniqueCode': 'Retrieval code',
-    'resultNegative': 'Negative test result',
-    'vaccination': 'Vaccination',
-    'verificationCode': 'Verification code',
-    'verificationCodeDirection': 'You get a code via text or email',
-    'yourTestProof': 'Your test declaration',
     'skiplink': 'Skip to content',
     'logo-government': 'Logo Dutch Government, homepage',
     'identity_image_alt': 'Make Holder QR code',

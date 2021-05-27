@@ -31,7 +31,23 @@ const nl = {
         },
         'yourVaccinations': {
             'pageHeader': 'Jouw opgehaalde vaccinaties ',
-            'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>'
+            'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>',
+            'createTestProofButton': 'Maak QR-code',
+            'somethingIsWrong': 'Klopt er iets niet?'
+        },
+        'provideCode': {
+            'pageHeader': 'Testuitslag ophalen',
+            'pageIntro': 'Vul jouw ophaalcode in. Deze heb je van de testlocatie gekregen. Of klik op de link in de e-mail die je van je testlocatie krijgt.',
+            'uniqueCode': 'Ophaalcode',
+            'verificationCode': 'Verificatiecode',
+            'verificationCodeDirection': 'Je krijgt een code in een sms of e-mail',
+            'sendAgain': 'Verstuur opnieuw',
+            'didNotGetCode': 'Ik heb geen code gekregen',
+            'emptyTestCode': 'Ophaalcode niet ingevuld',
+            'invalidTestCode': 'Geen geldige ophaalcode',
+            'invalidVerificationCode': 'Geen geldige verificatiecode',
+            'emptyVerificationCode': 'Verificatiecode niet ingevuld',
+            'sendCode': 'Stuur code'
         },
         'yourTestResults': {
             'pageHeader': 'Controleer je testuitslag',
@@ -45,6 +61,9 @@ const nl = {
         'testResultPending': {
             'pageHeader': 'Testuitslag nog niet bekend',
             'pageIntro': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.'
+        },
+        'print': {
+            'openPDF': 'Open PDF'
         },
         'printTestResult': {
             'pageHeader': 'Je testbewijs',
@@ -62,6 +81,7 @@ const nl = {
             'currentLanguage': 'Huidige taal'
         },
         'testResult': {
+            'resultNegative': 'Negatieve testuitslag',
             'dateOfTest': 'Testdatum',
             'yourCredentials': 'Jouw gegevens'
         },
@@ -73,6 +93,7 @@ const nl = {
             'intro': 'Download dan de app.'
         },
         'vaccination': {
+            'vaccination': 'Vaccinatie',
             'name': 'Naam',
             'dateOfBirth': 'Geboortedatum'
         }
@@ -92,12 +113,27 @@ const nl = {
                 'body': messageInfoVaccinationAbout
             },
             'vaccinationSomethingWrong': {
+                'head': 'Er klopt iets niet',
                 'body': '<p>Klopt je naam of geboortedatum niet? Neem contact op met je huisarts en geef dit door.</p><p>Mist er een prik?<br>Neem contact op met de locatie waar je bent gevaccineerd.</p>'
+            },
+            'noVerificationCode': {
+                'head': 'Nieuwe verificatiecode nodig?',
+                'body': '<p>Je krijgt de verificatiecode via een sms of e-mail van de testlocatie. Niet gekregen? Dan kunnen we een nieuwe code sturen.</p>'
             }
         },
-        'error': {}
+        'error': {
+            'expiredTestCode': {
+                'head': 'De ophaalcode is verlopen',
+                'body': '<p>De code die je invult is niet meer geldig. Controleer of je de juiste code hebt ingevuld. Nieuwe code nodig? Laat je dan opnieuw testen.</p>'
+            },
+            'general': {
+                'head': 'Sorry, er gaat iets mis',
+                'body': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck via <a href="tel:0800-1421" class="only-clickable-for-mobile">0800-1421</a>.</p>'
+            }
+        }
     },
     'pdf': {
+        'yourTestProof': 'Jouw testbewijs',
         'dayOfBirth': 'Geboortedag',
         'footerText': pdfFooter,
         'initials': 'Initialen',
@@ -119,38 +155,11 @@ const nl = {
     },
     'back': 'Terug',
     'close': 'Sluiten',
-    'createTestProof': 'Maak QR-code',
-    'didNotGetCode': 'Ik heb geen code gekregen',
-    'emptyTestCode': 'Ophaalcode niet ingevuld',
-    'enterCode': 'Testuitslag ophalen',
-    'expiredTestCodeHead': 'De ophaalcode is verlopen',
-    'expiredTestCodeBody': '<p>De code die je invult is niet meer geldig. Controleer of je de juiste code hebt ingevuld. Nieuwe code nodig? Laat je dan opnieuw testen.</p>',
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
-    'generalError': 'Sorry, er gaat iets mis',
-    'generalErrorBody': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck via <a href="tel:0800-1421" class="only-clickable-for-mobile">0800-1421</a>.</p>',
     'goBackToStart': 'Naar home',
-    'invalidTestCode': 'Geen geldige ophaalcode',
-    'invalidVerificationCode': 'Geen geldige verificatiecode',
     'next': 'Volgende',
-    'noTestProofPresent': 'Er is nog geen testbewijs',
-    'noTestProofPresentDirection': 'Je kunt alleen van een negatieve testuitslag een testbewijs maken. Haal eerst je testuitslag op.',
-    'noVerificationCodeHead': 'Nieuwe verificatiecode nodig?',
-    'noVerificationCodeMessage': '<p>Je krijgt de verificatiecode via een sms of e-mail van de testlocatie. Niet gekregen? Dan kunnen we een nieuwe code sturen.</p>',
-    'openPDF': 'Open PDF',
     'orderWords': ['Eerste', 'Tweede', 'Derde'],
-    'retrieveTestResult': 'Testuitslag ophalen',
-    'sendCode': 'Stuur code',
-    'sendAgain': 'Verstuur opnieuw',
-    'testCodeDirection': 'Vul jouw ophaalcode in. Deze heb je van de testlocatie gekregen. Of klik op de link in de e-mail die je van je testlocatie krijgt.',
-    'uniqueCode': 'Ophaalcode',
-    'resultNegative': 'Negatieve testuitslag',
-    'vaccination': 'Vaccinatie',
-    'verificationCode': 'Verificatiecode',
-    'verificationCodeDirection': 'Je krijgt een code in een sms of e-mail',
-    'yourCredentialsWrong': 'Zijn deze gegevens anders dan op je identiteitsbewijs?',
-    'yourCredentialsWrongDirection': 'Neem contact op met je testlocatie. Zij kunnen je gegevens aanpassen.',
-    'yourTestProof': 'Jouw testbewijs',
     'skiplink': 'Ga direct naar inhoud',
     'logo-government': 'Logo Rijksoverheid, homepage',
     'identity_image_alt': 'Holder QR maken',

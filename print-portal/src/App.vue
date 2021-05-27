@@ -40,15 +40,15 @@ export default {
                     this.$store.commit('testProviders/init', config.corona_test_providers);
                 } else {
                     this.$store.commit('modal/set', {
-                        messageHead: this.$t('generalError'),
-                        messageBody: this.$t('generalErrorBody'),
+                        messageHead: this.$t('message.error.general.head'),
+                        messageBody: this.$t('message.error.general.body'),
                         closeButton: true
                     });
                 }
             }).catch((error) => {
                 this.$store.commit('modal/set', {
-                    messageHead: this.$t('generalError'),
-                    messageBody: (this.$t('generalErrorBody') + '<p>' + error + '</p>'),
+                    messageHead: this.$t('message.error.general.head'),
+                    messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
                     closeButton: true
                 });
             })

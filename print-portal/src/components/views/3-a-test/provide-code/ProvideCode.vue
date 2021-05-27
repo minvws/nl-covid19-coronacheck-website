@@ -102,10 +102,10 @@ export default {
                 if (this.isTestCodeValid) {
                     this.getSignedResult({ includeVerificationCode: false });
                 } else {
-                    this.testCodeStatus.error = this.$t('invalidTestCode');
+                    this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
                 }
             } else {
-                this.testCodeStatus.error = this.$t('emptyTestCode');
+                this.testCodeStatus.error = this.$t('views.provideCode.emptyTestCode');
             }
         },
         submitVerificationCode(options) {
@@ -113,10 +113,10 @@ export default {
                 if (this.isVerificationCodeValid) {
                     this.getSignedResult({ includeVerificationCode: true });
                 } else {
-                    this.verificationCodeStatus.error = this.$t('invalidVerificationCode');
+                    this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
                 }
             } else {
-                this.verificationCodeStatus.error = this.$t('emptyVerificationCode');
+                this.verificationCodeStatus.error = this.$t('views.provideCode.emptyVerificationCode');
             }
         },
         async getSignedResult(options) {
@@ -179,7 +179,7 @@ export default {
                             this.$store.commit('setVerificationNeeded', true);
                             this.testCodeStatus.error = '';
                             if (options.includeVerificationCode) {
-                                this.verificationCodeStatus.error = this.$t('invalidVerificationCode');
+                                this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
                             }
                         } else {
                             this.$store.commit('setVerificationNeeded', false);
@@ -191,15 +191,15 @@ export default {
 
                         if (this.testResultStatus === 'result_blocked') {
                             this.$store.commit('modal/set', {
-                                messageHead: this.$t('generalError'),
-                                messageBody: this.$t('generalErrorBody') + '<p>result_blocked</p>',
+                                messageHead: this.$t('message.error.general.head'),
+                                messageBody: this.$t('message.error.general.body') + '<p>result_blocked</p>',
                                 closeButton: true
                             });
                         }
                     } else {
                         this.$store.commit('modal/set', {
-                            messageHead: this.$t('generalError'),
-                            messageBody: (this.$t('generalErrorBody') + '<p>' + error + '</p>'),
+                            messageHead: this.$t('message.error.general.head'),
+                            messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
                             closeButton: true
                         });
                     }
@@ -222,8 +222,8 @@ export default {
                 this.timer = setTimeout(() => {
                     this.$store.commit('invalidate');
                     this.$store.commit('modal/set', {
-                        messageHead: this.$t('expiredTestCodeHead'),
-                        messageBody: this.$t('expiredTestCodeBody'),
+                        messageHead: this.$t('message.error.expiredTestCode.head'),
+                        messageBody: this.$t('message.error.expiredTestCode.body'),
                         closeButton: true
                     });
                     this.$router.push({ name: 'ProvideCode' });
@@ -256,10 +256,10 @@ export default {
         <div class="section">
             <div class="section-block">
                 <h2>
-                    {{$t('enterCode')}}
+                    {{$t('views.provideCode.pageHeader')}}
                 </h2>
                 <p>
-                    {{$t('testCodeDirection')}}
+                    {{$t('views.provideCode.pageIntro')}}
                 </p>
 
                 <form

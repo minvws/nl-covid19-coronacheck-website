@@ -44,7 +44,7 @@ export default {
     <div class="ProvideTestCode">
         <div class="input__set">
             <label for="input--testCode">
-                {{$t('uniqueCode')}}
+                {{$t('views.provideCode.uniqueCode')}}
             </label>
             <input
                 v-model="testCode"

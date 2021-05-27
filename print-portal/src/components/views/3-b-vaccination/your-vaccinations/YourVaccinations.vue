@@ -62,7 +62,7 @@ export default {
         },
         openModalVaccinationSomethingWrong() {
             this.$store.commit('modal/set', {
-                messageHead: this.$t('somethingIsWrong'),
+                messageHead: this.$t('message.info.vaccinationSomethingWrong.head'),
                 messageBody: this.$t('message.info.vaccinationSomethingWrong.body'),
                 closeButton: true
             })
@@ -107,14 +107,14 @@ export default {
                         @click="gotoPrint()"
                         type="button"
                         class="btn">
-                        {{$t('createTestProof')}}
+                        {{$t('views.yourVaccinations.createTestProofButton')}}
                     </button>
                     <div class="button__help-button">
                         <button
                             @click="openModalVaccinationSomethingWrong()"
                             type="button"
                             class="button-modest">
-                            {{$t('somethingIsWrong')}}
+                            {{$t('views.yourVaccinations.somethingIsWrong')}}
                         </button>
                     </div>
                 </div>

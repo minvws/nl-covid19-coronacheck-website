@@ -12,13 +12,6 @@ export default {
         }
     },
     computed: {
-        status() {
-            if (this.testResult.negativeResult) {
-                return this.$t('resultNegative');
-            } else {
-                return this.$t('resultPositive');
-            }
-        },
         date() {
             return dateTool.dateTimeToString(this.testResult.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
         }
@@ -30,7 +23,7 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status">
-            {{status}}
+            {{$t('components.testResult.resultNegative')}}
         </div>
         <div class="proof-event__date">
             {{$t('components.testResult.dateOfTest')}}: {{date}}

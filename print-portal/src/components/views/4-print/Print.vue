@@ -23,9 +23,6 @@ export default {
         }
     },
     methods: {
-        goHome() {
-            this.$router.push({ name: 'Home' });
-        },
         goBack() {
             this.$emit('back');
         },
@@ -54,7 +51,7 @@ export default {
             }
             this.$store.commit('modal/set', {
                 messageHead: this.$t('pdf.generalError'),
-                messageBody: this.$t('pdf.generalErrorBody'),
+                messageBody: this.$t('pdf.message.error.general.body'),
                 confirm: true,
                 confirmAction,
                 confirmYes: this.$t('pdf.goBackToStart'),
@@ -72,7 +69,7 @@ export default {
         :display-back-button="qrCode.length > 0">
         <div class="section">
             <div class="section-block">
-                <div v-if="qrCode.length > 0">
+                <div>
                     <slot></slot>
                     <div class="Print__container">
                         <div
@@ -85,7 +82,7 @@ export default {
                                 id="open-pdf"
                                 class="btn button--full-width"
                                 @click="openPDF()">
-                                {{$t('openPDF')}}
+                                {{$t('views.print.openPDF')}}
                             </button>
                             <button
                                 type="button"
@@ -94,7 +91,7 @@ export default {
                                 id="download-pdf"
                                 class="btn button--full-width"
                                 @click="downloadPDF()">
-                                {{$t('openPDF')}}
+                                {{$t('views.print.openPDF')}}
                             </button>
                         </div>
                         <div class="Print__image">
@@ -103,22 +100,6 @@ export default {
                                 width="248"
                                 src="assets/img/artwork/holder_qrcode_maken_full.svg"/>
                         </div>
-                    </div>
-                </div>
-                <div v-else>
-                    <h2>
-                        {{$t('noTestProofPresent')}}
-                    </h2>
-                    <p>
-                        {{$t('noTestProofPresentDirection')}}
-                    </p>
-                    <div class="section-block__footer">
-                        <button
-                            @click="goHome()"
-                            type="button"
-                            class="btn">
-                            {{$t('retrieveTestResult')}}
-                        </button>
                     </div>
                 </div>
             </div>

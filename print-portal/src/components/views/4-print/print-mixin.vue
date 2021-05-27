@@ -90,7 +90,7 @@ export default {
                     .catch(error => {
                         this.$store.commit('modal/set', {
                             messageHead: this.$t('pdf.generalError'),
-                            messageBody: this.$t('pdf.generalErrorBody') + '<p>' + error + '</p>',
+                            messageBody: this.$t('pdf.message.error.general.body') + '<p>' + error + '</p>',
                             closeButton: true
                         });
                     })

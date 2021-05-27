@@ -31,11 +31,11 @@ export default {
             }
 
             this.$store.commit('modal/set', {
-                messageHead: this.$t('noVerificationCodeHead'),
-                messageBody: this.$t('noVerificationCodeMessage'),
+                messageHead: this.$t('message.info.noVerificationCode.head'),
+                messageBody: this.$t('message.info.noVerificationCode.body'),
                 confirm: true,
                 confirmAction,
-                confirmYes: this.$t('sendCode'),
+                confirmYes: this.$t('views.provideCode.sendCode'),
                 confirmNo: this.$t('close'),
                 closeButton: false
             })
@@ -48,9 +48,9 @@ export default {
     <div class="ProvideVerificationCode">
         <div class="input__set">
             <label for="input--verificationCode">
-                {{$t('verificationCode')}}<br>
+                {{$t('views.provideCode.verificationCode')}}<br>
                 <div class="label--side-note">
-                    {{$t('verificationCodeDirection')}}
+                    {{$t('views.provideCode.verificationCodeDirection')}}
                 </div>
             </label>
             <input
@@ -72,10 +72,10 @@ export default {
                     type="button"
                     class="button-modest">
                     <span v-if="verificationCodeStatus.error.length > 0">
-                        {{$t('sendAgain')}}
+                        {{$t('views.provideCode.sendAgain')}}
                     </span>
                     <span v-else>
-                        {{$t('didNotGetCode')}}
+                        {{$t('views.provideCode.didNotGetCode')}}
                     </span>
                 </button>
             </div>
