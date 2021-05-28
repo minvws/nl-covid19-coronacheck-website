@@ -13,7 +13,7 @@ Aim your phone camera at the visitor’s test declaration and scan the QR code.
 
 ## 3. Green screen
 
-Green screen? The visitor has a valid negative test declaration. Check if the identifying data on the green screen corresponds with the details on the proof of identity. All good? Then the visitor is allowed access. They may need an additional entrance ticket. 
+Green screen? The visitor has a valid negative test certificate. Check if the identifying data on the green screen corresponds with the details on the proof of identity. All good? Then the visitor is allowed access. They may need an additional entrance ticket. 
 
 ## 4. Red screen
 A red screen does not mean the visitor has tested positive for corona. It simply means the QR code is not valid. This means there is no proof of a recent negative test result, or the test declaration has expired (older than 40 hours). In this case:
