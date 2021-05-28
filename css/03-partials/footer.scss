@@ -35,27 +35,6 @@
     }
 }
 
-.footer-samen__follow {
-    margin-top: 2em;
-    font-size: 1.4em;
-    font-weight: 600;
-
-    span.md-highlight {
-        color: $color-coronacheck_blue;
-    }
-
-    @media (min-width: 740px) {
-        margin-top: 0.5rem;
-        margin-left: 2em;
-    }
-
-    @media (min-width: 960px) {
-        margin-left: 120px;
-        margin-top: 0.2rem;
-        font-size: 32px;
-    }
-}
-
 //
 // Phone footer
 //
@@ -67,7 +46,7 @@
     font-size: 16px;
     margin-bottom: 2em;
 
-    @media(min-width: 740px) {
+    @media (min-width: 740px) {
         padding-top: 3rem;
         padding-bottom: 3rem;
         display: flex;
