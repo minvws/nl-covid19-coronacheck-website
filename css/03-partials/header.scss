@@ -1,4 +1,4 @@
-  .logobar {
+.logobar {
     padding: 0 0 20px 0;
     z-index: 1;
     position: relative;
@@ -13,7 +13,7 @@
 }
 
 .logo {
-    display:block;
+    display: block;
     max-width: 50px;
     margin: 0 auto;
 }
@@ -35,16 +35,18 @@
 }
 
 .header {
-  position: relative;
+    position: relative;
 
-  .header__title {
-    font-size: 24px;
-    font-weight: 800;
+    .header__title {
+        font-size: 24px;
+        font-weight: 800;
 
-    @media (min-width: 825px) {
-      font-size: 40px;
-      line-height: 1.25;
+        @media (min-width: 825px) {
+            font-size: 40px;
+            line-height: 1.25;
+        }
     }
+<<<<<<< Updated upstream
   } 
 
   .header__layout {
@@ -79,105 +81,197 @@
   }
 
   @media(min-width: 680px) {
+=======
+}
+
+// Homepage
+
+.header--home {
+>>>>>>> Stashed changes
     .header__layout {
-      padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .header__layout--image {
-      display: block;
-      padding: 30px 0 0 30px;
+        display: none;
+        flex: 0 1 300px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            position: relative;
+            bottom: -10px;
+        }
     }
 
     .header__layout--content {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-  }
+        flex: 0 1 535px;
+        padding: 30px 0;
 
-  @media(min-width: 960px) {
-    .header__layout--content {
-      padding-left: 105px;
-      box-sizing: content-box;
+        p {
+            margin-top: 24px;
+            margin-bottom: 40px;
+        }
     }
+
+    @media (min-width: 680px) {
+        .header__layout {
+            padding-left: 0;
+        }
+
+        .header__layout--image {
+            display: block;
+            padding: 30px 0 0 30px;
+        }
+
+        .header__layout--content {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .header__layout--content {
+            padding-left: 105px;
+            box-sizing: content-box;
+        }
+    }
+<<<<<<< Updated upstream
   }
 } 
+=======
+}
+
+@media only screen and (max-width: 400px) {
+    header h1 {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.125rem;
+    }
+
+    header h1 .subtitle {
+        font-size: 1.375rem;
+        line-height: 1.625rem;
+    }
+}
+
+.lead {
+    position: relative;
+    margin: -3.7em 0 0 0;
+    padding: 2em 1.6em 0 1.6em;
+    background-color: #fff;
+    border-radius: 2em;
+    color: #333333; /* RO tekst */
+
+    @media (min-width: 740px) {
+        padding: 2em 2.4em 0 54px;
+    }
+
+    @media (min-width: 960px) {
+        margin-left: 90px;
+        max-width: 740px;
+    }
+}
+
+.browser-ie-11 .header--scanner {
+    @media (min-width: 960px) {
+        &::before {
+            width: 1480px;
+            height: 460px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url("#{$file-path}img/background-full.svg");
+        }
+
+        &::after {
+            content: none;
+        }
+    }
+}
+>>>>>>> Stashed changes
 
 // Slim header, used on subpages
 
 .header--slim {
-  min-height: 180px;
-  padding: 0px 0 50px 0; 
-  color: #ffffff;
-  background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
+    min-height: 180px;
+    padding: 0px 0 50px 0;
+    color: #ffffff;
+    background: linear-gradient(0deg, #1d73f6 38%, #26b3ef 130%);
 
-  &::before,
-  &::after {
-    content: none;
-  }
-
-  .header__logo-badge {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    bottom: 0;
-    z-index: 0;
-    width: 80px;
-
-    .browser-ie-11 & {
-        right: 166px;
+    &::before,
+    &::after {
+        content: none;
     }
-  }
 
-  @media(min-width: 740px) {
-      min-height: 220px;
-  }
+    .header__logo-badge {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        bottom: 0;
+        z-index: 0;
+        width: 80px;
 
-  @media(min-width: 960px) {
-      background: linear-gradient(0deg, #1D73F6 38%, #26B3EF 130%);
-      &:before {
-          content: none;
-          background-image: none;
-      }
-      .header__logo-badge {
-          /** Perfect alignment: width: of this element, width of the element above */
-          width: 80px;
-          right: calc((980px / -2) + calc(100% / 2));
-          top: 15px;
-      }
-  }
-
-  .header__title {
-    padding-top: 30px;
+        .browser-ie-11 & {
+            right: 166px;
+        }
+    }
 
     @media (min-width: 740px) {
-        padding-left: 55px;
+        min-height: 220px;
     }
 
     @media (min-width: 960px) {
-        padding-left: 155px;
+        background: linear-gradient(0deg, #1d73f6 38%, #26b3ef 130%);
+        &:before {
+            content: none;
+            background-image: none;
+        }
+        .header__logo-badge {
+            /** Perfect alignment: width: of this element, width of the element above */
+            width: 80px;
+            right: calc((980px / -2) + calc(100% / 2));
+            top: 15px;
+        }
     }
-  }
 
-  .header__center {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 20px;
+    .header__title {
+        padding-top: 30px;
 
-    @media (min-width: 740px) {
-        padding: 0 40px;
+        @media (min-width: 740px) {
+            padding-left: 55px;
+        }
+
+        @media (min-width: 960px) {
+            padding-left: 155px;
+        }
     }
 
-    @media (min-width: 960px) {
-        padding: 0 40px;
+    .header__center {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        @media (min-width: 740px) {
+            padding: 0 40px;
+        }
+
+        @media (min-width: 960px) {
+            padding: 0 40px;
+        }
     }
-  }
 }
-
 
 .header__logo-badge {
     width: 100px;
     margin: 0 0 1.5em;
-    
+
     @media (min-width: 680px) {
         margin: 1.5em 0;
     }
@@ -190,25 +284,24 @@
 }
 
 .header__layout__faq-link {
-  color: $color-RO_darkblue;
-  position: absolute;
-  top: 38px;
-  right: 230px;
-  min-width: 118px;
-  font-weight: 800;
-  font-size: 20px;
-  display: none;
-
-  @media (min-width: 960px) {
-    display: inline-block;
-  }
-
-  [lang="bg"] & {
-    right: 300px;
-  }
-
-  &:visited {
     color: $color-RO_darkblue;
-  }
-}
+    position: absolute;
+    top: 38px;
+    right: 230px;
+    min-width: 118px;
+    font-weight: 800;
+    font-size: 20px;
+    display: none;
 
+    @media (min-width: 960px) {
+        display: inline-block;
+    }
+
+    [lang="bg"] & {
+        right: 300px;
+    }
+
+    &:visited {
+        color: $color-RO_darkblue;
+    }
+}
