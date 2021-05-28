@@ -31,7 +31,7 @@ The grounds for processing personal information within the CoronaCheck app, on c
 
 ### 3. For what purpose is personal information processed?
 
-The government is working hard to open society in a responsible manner. Testing visitors for the COVID-19 virus before entering a public event or public location is part of this. Such access tests allow social, cultural and sports locations to be opened responsibly and quicker during times of corona. Showing a negative test result gives visitors access to these types of venues. The CoronaCheck app allows visitors to show digital proof of their negative test declaration, allowing them access to these locations. Visitors can also generate a test declaration on the website coronacheck.nl to print off as a hard copy without having to use the CoronaCheck app.
+The government is working hard to open society in a responsible manner. Testing visitors for the COVID-19 virus before entering a public event or public location is part of this. Such access tests allow social, cultural and sports locations to be opened responsibly and quicker during times of corona. Showing a negative test result gives visitors access to these types of venues. The CoronaCheck app allows visitors to show digital proof of their negative test certificate, allowing them access to these locations. Visitors can also generate a test declaration on the website coronacheck.nl to print off as a hard copy without having to use the CoronaCheck app.
 
 ### 4. Which personal information is processed?
 

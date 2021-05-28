@@ -9,7 +9,7 @@ You can retrieve your negative test result to your CoronaCheck app in 3 steps:
 
 1. You enter your personal code in the CoronaCheck app. This code is sent via email, along with your negative test result.
 2. The CoronaCheck app checks your code and retrieves your test result.
-3. The app makes a negative test declaration by means of a QR code. 
+3. The app makes a negative test certificate by means of a QR code. 
 
 This QR code is scanned at the entrance of the location you're visiting. Do you have a valid QR code and does your identifying data correspond with your proof of identity? Then you're allowed access. You may still need an additional entrance ticket. 
 
