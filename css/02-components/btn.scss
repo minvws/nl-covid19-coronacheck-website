@@ -1,91 +1,90 @@
-
 .btn {
-  padding: 14px 20px;
-  margin-bottom: 5px;
-  background: #fff;
-  display: inline-block;
-  background: $color-coronacheck_blue;
-  border: 1px solid currentColor;
-  color: white;
-  border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
-  font-size: inherit;
-  font-family: inherit;
-
-  @media (min-width: 740px) {
-    padding: 14px 50px;
-  }
-
-  &:visited {
-    color: white;
+    padding: 14px 20px;
+    margin-bottom: 5px;
+    background: #fff;
+    display: inline-block;
     background: $color-coronacheck_blue;
-  }
+    border: 1px solid currentColor;
+    color: white;
+    border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
+    font-size: inherit;
+    font-family: inherit;
 
-  &:hover {
-    color: $color-coronacheck_blue;
-    background-color: #ffffff;
-    text-decoration: none;
-  }
+    @media (min-width: 740px) {
+        padding: 14px 50px;
+    }
 
-  &:focus {
-    text-decoration: none;
-    color: $color-coronacheck_blue;
-    background-color: #ffffff;
-  }
+    &:visited {
+        color: white;
+        background: $color-coronacheck_blue;
+    }
 
-  &[disabled] {
-    background: $color-lightgrey;
-    color: $color-darkgrey;
-    pointer-events: none;
-    user-select: none;
-  }
+    &:hover {
+        color: $color-coronacheck_blue;
+        background-color: #ffffff;
+        text-decoration: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+        color: $color-coronacheck_blue;
+        background-color: #ffffff;
+    }
+
+    &[disabled] {
+        background: $color-lightgrey;
+        color: $color-darkgrey;
+        pointer-events: none;
+        user-select: none;
+    }
 }
 
 .btn--large {
-  font-size: 18px;
-  width: 100%;
-  font-weight: 800;
+    font-size: 18px;
+    width: 100%;
+    font-weight: 800;
 
-  @media (min-width: 740px) {
-    font-size: 20px;
-    max-width: 360px;
-  }
+    @media (min-width: 740px) {
+        font-size: 20px;
+        max-width: 360px;
+    }
 }
 
 @media (min-width: 740px) {
-  [lang="bg"] .btn--large,
-  [lang="fr"] .btn--large,
-  [lang="ro"] .btn--large,
-  [lang="pl"] .btn--large,
-  [lang="de"] .btn--large,
-  [lang="tr"] .btn--large {
-    max-width: 700px;
-  }
+    [lang="bg"] .btn--large,
+    [lang="fr"] .btn--large,
+    [lang="ro"] .btn--large,
+    [lang="pl"] .btn--large,
+    [lang="de"] .btn--large,
+    [lang="tr"] .btn--large {
+        max-width: 700px;
+    }
 
-  [lang="en"] .btn--large,
-  [lang="fy"] .btn--large {
-    max-width: 500px;
-  }
+    [lang="en"] .btn--large,
+    [lang="fy"] .btn--large {
+        max-width: 500px;
+    }
 }
 
 .btn--cta {
-  background: $color-coronacheck_blue;
-  border: 1px solid currentColor;
-  color: white;
-  border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
-
-  &:visited {
-    color: white;
     background: $color-coronacheck_blue;
-  }
+    border: 1px solid currentColor;
+    color: white;
+    border-radius: 24px 24px 24px 24px / 50% 50% 50% 50%;
 
-  &:hover {
-    color: $color-coronacheck_blue;
-    background-color: #ffffff;
-  }
+    &:visited {
+        color: white;
+        background: $color-coronacheck_blue;
+    }
 
-  &:focus {
-    text-decoration: none;
-    color: $color-coronacheck_blue;
-    background-color: #ffffff;
-  }
+    &:hover {
+        color: $color-coronacheck_blue;
+        background-color: #ffffff;
+    }
+
+    &:focus {
+        text-decoration: none;
+        color: $color-coronacheck_blue;
+        background-color: #ffffff;
+    }
 }

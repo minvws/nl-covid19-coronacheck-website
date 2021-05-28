@@ -18,9 +18,9 @@
         min-height: 50px;
     }
 
-    li:first-child .faq-layout__item{
+    li:first-child .faq-layout__item {
         border-top: none;
-    } 
+    }
 }
 
 .faq-layout__item {
@@ -34,7 +34,7 @@
     width: 100%;
 
     &:hover {
-        background-color: $color-RO_darkblue; /* RO donker link2 */;
+        background-color: $color-RO_darkblue; /* RO donker link2 */
         transition: var(--transition-in);
         color: white;
 
@@ -48,7 +48,7 @@
     }
 
     &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 6px;
         right: 5px;
@@ -63,13 +63,11 @@
     }
 }
 
-
 //
 //  Modifier for faq overview page
 //
 
 .faq-layout__contents.__overview {
-
     .faq-layout-contents__list {
         border: none;
         border-bottom: 1px solid rgba(21, 66, 115, 0.5);
