@@ -35,3 +35,8 @@
         }
     }
 }
+
+.announcement p + h2 {
+    border-top: 1px solid currentColor;
+    padding-top: 20px;
+}
