@@ -20,7 +20,7 @@ U kunt CoronaCheck downloaden op uw smartphone in de Apple App Store of Google P
 
 Voor het tonen van een fysiek coronatoegangsbewijs kan een coronatoegangsbewijs worden gegenereerd via de website coronacheck.nl. De persoon voert hiertoe zijn/haar ophaalcode die bij de testuitslag is ontvangen in op de website. Vervolgens ontvangt de persoon een extra controle code per sms, welke de persoon eveneens op de website invoert. Na controle van de codes vindt hetzelfde proces plaats als bij de route van het digitale coronatoegangsbewijs, namelijk dat de testuitslag wordt opgehaald bij en getekend door de testuitvoerder. Vervolgens wordt na ondertekening door de signing service een QR-code (inclusief set identificerende gegevens in de QR-code en als regel onder de QR-code) gegenereerd, dit is het coronatoegangsbewijs. Hierna kan het coronatoegangsbewijs worden geprint als fysiek coronatoegangsbewijs. 
 
-Vervolgens laat u ofwel het digitale coronatoegangsbewijs of het fysieke coronatoegangsbewijs (in beide gevallen is dit een QR-code) scannen aan de deur van het pilot evenement waar u naar binnen wilt. De controleur aan de deur gebruikt hiervoor de CoronaCheck Scanner app. Is uw QR-code geldig en heeft u een toegangsbewijs? Dan mag u naar binnen.
+Vervolgens laat u ofwel het digitale coronatoegangsbewijs of het fysieke coronatoegangsbewijs (in beide gevallen is dit een QR-code) scannen aan de deur van de activiteit of voorziening waar u naar binnen wilt. De controleur aan de deur gebruikt hiervoor de CoronaCheck Scanner app. Is uw QR-code geldig en heeft u een toegangsbewijs? Dan mag u naar binnen.
 
 De QR-code is voor beide routes (zowel digitaal als fysiek) 40 uur geldig. Dat is gerekend vanaf het moment van afname van de COVID-19 test.
 
@@ -30,7 +30,7 @@ De Minister van Volksgezondheid, Welzijn en Sport (hierna: ‘de minister’) is
 
 ### 2. Grondslag voor het verwerken van persoonsgegevens
 
-Voor de verwerking van persoonsgegevens die betrekking hebben op de gezondheid van een persoon geldt op grond van artikel 9 AVG in beginsel een verwerkingsverbod. Op 2 juni 2021 is de Tijdelijke wet coronatoegangsbewijzen in werking getreden. Deze wet biedt de wettelijke grondslag voor de verwerkingsverantwoordelijkheid van de minister van VWS het verwerken van persoonsgegevens door de testuitvoerders bij het genereren van een coronatoegangsbewijs en vormt daarmee de uitzondering op het verwerkingsverbod. De Tijdelijke wet coronatoegangsbewijzen biedt ook de grondslag voor verwerking van niet bijzondere persoonsgegevens op grond van artikel 6, eerste lid, onderdeel e, AVG. 
+Voor de verwerking van persoonsgegevens die betrekking hebben op de gezondheid van een persoon geldt op grond van artikel 9 AVG in beginsel een verwerkingsverbod. Op 2 juni 2021 is de Tijdelijke wet coronatoegangsbewijzen in werking getreden. Deze wet biedt de wettelijke grondslag voor de verwerkingsverantwoordelijkheid van de minister van VWS voor het verwerken van persoonsgegevens door de testuitvoerders bij het genereren van een coronatoegangsbewijs en vormt daarmee de uitzondering op het verwerkingsverbod. De Tijdelijke wet coronatoegangsbewijzen biedt ook de grondslag voor verwerking van niet bijzondere persoonsgegevens op grond van artikel 6, eerste lid, onderdeel e, AVG. 
 
 In de Tijdelijke wet coronatoegangsbewijzen worden de soorten activiteiten en voorzieningen waarvoor een coronatoegangsbewijs kan worden ingezet genoemd: cultuur, evenementen, georganiseerde jeugdactiviteiten, horeca of sport. In aanvullende regelgeving kan bepaald worden dat coronatoegangsbewijzen ook ingezet worden in het beroepsonderwijs of hoger onderwijs. 
 
@@ -99,10 +99,10 @@ Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie 
 
 U hebt altijd het recht een klacht over de verwerking van uw persoonsgegevens in te dienen bij de Autoriteit Persoonsgegevens of bij de rechter. Meer informatie daarover vindt u op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap).
 
-### 10. Beveiliging van uw persoonsgegevens 
+### 	10. Beveiliging van uw persoonsgegevens
 
 De minister neemt de bescherming van uw persoonsgegevens serieus en heeft bij de totstandkoming van CoronaCheck en CoronaCheck Scanner passende technische en organisatorische maatregelen genomen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging van de verwerkte gegevens tegen te gaan.
 
-### 11. Wijziging privacyverklaring 
+### 	11. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 26 mei 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 27 mei 2021.
