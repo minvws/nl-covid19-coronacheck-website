@@ -45,12 +45,8 @@
       font-size: 40px;
       line-height: 1.25;
     }
-  }
-}
+  } 
 
-// Homepage
-
-.header--home {
   .header__layout {
     display: flex;
     justify-content: center;
@@ -104,56 +100,7 @@
       box-sizing: content-box;
     }
   }
-}
-
-@media only screen and (max-width: 400px) {
-  header h1 {
-      width: 100%;
-      font-size: 2rem;
-      line-height: 2.125rem;
-  }
-
-  header h1 .subtitle {
-      font-size: 1.375rem;
-      line-height: 1.625rem;
-  }
-}
-
-.lead {
-  position: relative;
-  margin: -3.7em 0 0 0;
-  padding: 2em 1.6em 0 1.6em;
-  background-color: #FFF;
-  border-radius: 2em;
-  color: #333333; /* RO tekst */;
-
-  @media (min-width: 740px) {
-      padding: 2em 2.4em 0 54px;
-  }
-
-  @media (min-width: 960px) {
-      margin-left: 90px;
-      max-width: 740px;
-  }
-}
-
-.browser-ie-11 .header--scanner {
-  @media(min-width: 960px) {
-    &::before {
-      width: 1480px;
-      height: 460px;
-      left: 0; 
-      right: 0;
-      margin-left: auto; 
-      margin-right: auto; 
-      background-image: url('#{$file-path}img/background-full.svg');
-    }
-
-    &::after {
-      content: none;
-    }
-  }
-}
+} 
 
 // Slim header, used on subpages
 
