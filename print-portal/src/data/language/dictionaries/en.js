@@ -1,7 +1,7 @@
-import messageInfoTestResultAbout from '../templates/en/message-info-testResultAbout';
 import messageInfoVaccinationAbout from '../templates/en/message-info-vaccinationAbout';
 import footer from '../templates/en/footer';
 import { pdfFooter, pdfInstructions } from '../templates/en/pdf';
+import { messageInfoTestResultAboutV2, messageInfoTestResultAboutV3 } from '../templates/en/message-info-testResultAbout';
 
 const en = {
     'date': {
@@ -111,12 +111,13 @@ const en = {
     'message': {
         'info': {
             'testResultAbout': {
-                'head': 'About the test result',
-                'body': messageInfoTestResultAbout
+                'head': 'TODO Wat is er opgehaald?',
+                'bodyV2': messageInfoTestResultAboutV2,
+                'bodyV3': messageInfoTestResultAboutV3
             },
             'testResultSomethingWrong': {
-                'head': 'Are the data incorrect?',
-                'body': messageInfoTestResultAbout
+                'head': 'TODO Kloppen de gegevens niet?',
+                'body': 'TODO <p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.</p>'
             },
             'vaccinationAbout': {
                 'head': 'TODO',
