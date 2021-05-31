@@ -14,6 +14,7 @@ class Vaccination {
         this.hpkCode = hpkCode;
         this.type = type;
         this.manufacturer = manufacturer;
+        this.brand = brand;
         this.completedByMedicalStatement = completedByMedicalStatement;
         this.country = country;
         this.doseNumber = doseNumber;

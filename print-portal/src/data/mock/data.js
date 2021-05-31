@@ -30,7 +30,7 @@ const data = {
             'isSpecimen': true,
             'vaccination': {
                 'date': '2021-03-01',
-                'hpkCode': '2924528', // If hpkCode is available, type/manufacturer/brand can be left blank.
+                'hpkCode': '',
                 'type': '1119349007',
                 'manufacturer': 'ORG-100030215',
                 'brand': 'EU/1/20/1507',
