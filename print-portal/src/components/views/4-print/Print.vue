@@ -95,7 +95,7 @@ export default {
                     </div>
                     <div class="Print__image">
                         <img
-                            alt="Holder QR code maken"
+                            alt="HolderV3 QR code maken"
                             width="248"
                             src="assets/img/artwork/holder_qrcode_maken_full.svg"/>
                     </div>

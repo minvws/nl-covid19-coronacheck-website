@@ -91,7 +91,9 @@ const en = {
         'NegativeTest': {
             'resultNegative': 'Negative test result',
             'dateOfTest': 'Test date',
-            'yourCredentials': 'Identification details'
+            'yourCredentials': 'Identification details',
+            'name': 'Name',
+            'dateOfBirth': 'Date of birth'
         },
         'faq': {
             'viewFaq': 'View frequently asked questions'

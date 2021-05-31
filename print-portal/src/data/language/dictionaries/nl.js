@@ -91,7 +91,9 @@ const nl = {
         'NegativeTest': {
             'resultNegative': 'Negatieve testuitslag',
             'dateOfTest': 'Testdatum',
-            'yourCredentials': 'Jouw gegevens'
+            'yourCredentials': 'Jouw gegevens',
+            'name': 'Naam',
+            'dateOfBirth': 'Geboortedatum'
         },
         'faq': {
             'viewFaq': 'Bekijk de meestgestelde vragen'

@@ -1,12 +1,15 @@
 import dateTool from '@/tools/date';
+import _Holder from './_Holder';
 
-class Holder {
+class HolderV3 extends _Holder {
     constructor({
         firstName = '',
         infix = '',
         lastName = '',
         birthDate = ''
     }) {
+        super()
+        this.protocolVersion = '3.0';
         this.firstName = firstName;
         this.infix = infix;
         this.lastName = lastName;
@@ -14,7 +17,7 @@ class Holder {
     }
 
     get fullName() {
-        return this.infix + ' ' + this.lastName + ', ' + this.firstName[0];
+        return this.firstName + ' ' + this.infix + ' ' + this.lastName;
     }
 
     get firstNameInitial() {
@@ -40,10 +43,6 @@ class Holder {
     get birthDateStringShort() {
         return this.birthDayStyled + ' ' + this.birthMonthStyled;
     }
-
-    get discreteInfoString() {
-        return this.firstNameInitial + ' ' + this.lastNameInitial + ' ' + this.birthDateStringShort;
-    }
 }
 
-export default Holder;
+export default HolderV3;

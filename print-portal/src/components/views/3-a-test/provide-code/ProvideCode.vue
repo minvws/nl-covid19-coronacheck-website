@@ -4,11 +4,11 @@ import PageIntro from '@/components/elements/PageIntro';
 import PreferMobile from '@/components/elements/PreferMobile';
 import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
-// import TestResult from '@/classes/TestResult';
 import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import dateTool from '@/tools/date';
-import { negativeTestConversionV2ToV3 } from '@/tools/version-conversion';
+import HolderV2 from '@/classes/holder/HolderV2';
+import { negativeTestConversionV2ToV3 } from '@/tools/version-conversion'
 
 export default {
     name: 'ProvideCode',
@@ -124,9 +124,8 @@ export default {
         addNegativeTestV2(signature, payload) {
             this.setTimerForValidityTestResult(payload.result);
             this.testCodeStatus.error = '';
-
             const negativeTestV3 = negativeTestConversionV2ToV3(payload.result);
-            this.$store.commit('updateHolder', negativeTestV3.holder);
+            this.$store.commit('updateHolder', new HolderV2(payload.result.holder));
             for (const proofEvent of negativeTestV3.events) {
                 this.$store.commit('proofEvents/create', proofEvent);
             }

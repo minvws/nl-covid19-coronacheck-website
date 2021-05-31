@@ -5,7 +5,6 @@ import modal from './modules/modal';
 import languages from './modules/languages';
 import testProviders from './modules/testProviders';
 import proofEvents from './modules/proofEvents';
-import Holder from '@/classes/holder/Holder';
 
 Vue.use(Vuex)
 
@@ -54,7 +53,7 @@ const mutations = {
         state.verificationNeeded = status;
     },
     updateHolder(state, holder) {
-        state.holder = new Holder(holder);
+        state.holder = holder;
     },
     reset(state) {
         // clear all except testcode

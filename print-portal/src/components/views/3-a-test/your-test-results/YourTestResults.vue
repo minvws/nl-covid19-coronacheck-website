@@ -37,9 +37,6 @@ export default {
         },
         hasQR() {
             return this.$store.state.qrCode.length > 0;
-        },
-        holder() {
-            return this.$store.state.holder;
         }
     },
     methods: {
@@ -98,17 +95,10 @@ export default {
         goHome() {
             this.$router.push({ name: 'Home' });
         },
-        openModalTestResultsAbout() {
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.testResultAbout.head'),
-                messageBody: this.$t('message.info.testResultAbout.body', this.holder),
-                closeButton: true
-            })
-        },
         openModalTestResultsSomethingWrong() {
             this.$store.commit('modal/set', {
                 messageHead: this.$t('message.info.testResultSomethingWrong.head'),
-                messageBody: this.$t('message.info.testResultSomethingWrong.body', this.holder),
+                messageBody: this.$t('message.info.testResultSomethingWrong.body', this.$store.state.holder),
                 closeButton: true
             })
         }
@@ -127,19 +117,9 @@ export default {
                     :intro="$t('views.yourTestResults.pageIntro')"/>
 
                 <div class="section-block">
-                    <div class="YourTestResults__header">
-                        {{$t('views.yourTestResults.retrievedTestResult')}}
-                        <button
-                            @click="openModalTestResultsAbout()"
-                            type="button"
-                            class="info-button">
-                            <img src="assets/img/icons/info.svg" alt=""/>
-                        </button>
-                    </div>
                     <div class="proof-events">
                         <NegativeTest
-                            :negative-test="latestNegativeTest"
-                            :holder="holder"/>
+                            :negative-test="latestNegativeTest"/>
                     </div>
                     <div class="section-block__footer">
                         <button

@@ -54,10 +54,10 @@ export default {
         <div class="proof-event__status">
             {{title}}
         </div>
-        <div class="proof-event__date">
+        <div class="proof-event__line">
             {{$t('components.vaccination.name')}}: {{holder.fullName}}
         </div>
-        <div class="proof-event__date">
+        <div class="proof-event__line">
             {{$t('components.vaccination.dateOfBirth')}}: {{holder.birthDateString}}
         </div>
 
