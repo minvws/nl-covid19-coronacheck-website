@@ -22,9 +22,17 @@ export default {
     methods: {
         openModalTestResultsAbout() {
             if (this.negativeTest.protocolVersion === '2.0') {
+                let testLocation;
+                if (this.$store.state.testCode) {
+                    const testProviderIdentifier = this.$store.state.testCode.split('-')[0]
+                    const testProvider = this.$store.getters['testProviders/getTestProviderByIdentifier'](testProviderIdentifier);
+                    if (testProvider) {
+                        testLocation = testProvider.name;
+                    }
+                } else {
+                    testLocation = ''
+                }
                 const testType = this.negativeTest.testType === 'pcr' ? 'PCR-test' : this.negativeTest.testType;
-                // todo use the testproviders name?
-                const testLocation = 'TODO'
                 const dataForV2 = {
                     discreteInfoString: this.holder.discreteInfoString,
                     testType,
@@ -40,6 +48,7 @@ export default {
                 const dataForV3 = {
                     name: this.holder.fullName,
                     birthDateString: this.holder.birthDateString,
+                    // todo map via config
                     testType: this.negativeTest.type,
                     testLocation: this.negativeTest.facility,
                     sampleDate: this.date
