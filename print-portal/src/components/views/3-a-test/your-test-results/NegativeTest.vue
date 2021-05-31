@@ -1,5 +1,5 @@
 <script>
-import NegativeTest from '@/classes/events/NegativeTest';
+import _NegativeTest from '@/classes/events/_NegativeTest';
 import dateTool from '@/tools/date';
 
 export default {
@@ -7,7 +7,7 @@ export default {
     components: {},
     props: {
         negativeTest: {
-            type: NegativeTest,
+            type: _NegativeTest,
             required: true
         }
     },
