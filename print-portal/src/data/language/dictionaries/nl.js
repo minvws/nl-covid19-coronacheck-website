@@ -137,7 +137,13 @@ const nl = {
                 'head': 'Weet je zeker dat je wilt stoppen?',
                 'body': 'Je moet later opnieuw je code invullen om je testbewijs op te halen.',
                 'yes': 'Ja, stop',
-                'no': 'Nee, terug'
+                'no': 'Nee, ga door'
+            },
+            'areYouSureToCancelNegativeTest': {
+                'head': 'Weet je zeker dat je wilt stoppen?',
+                'body': 'Je moet later opnieuw je code invullen om je testbewijs op te halen.',
+                'yes': 'Ja, stop',
+                'no': 'Nee, ga door'
             }
         },
         'error': {

@@ -75,12 +75,25 @@ export default {
             }
         },
         goBack() {
-            if (this.$route.params.flow === '2.0') {
-                this.$router.push({ name: 'ProvideCode' });
-            } else {
-                // 3.0 has to skip the redirect page, so we cannot do go(-1)
-                this.$router.push({ name: 'ChoiceTestLocation' });
+            const callback = () => {
+                this.$store.commit('clearAll')
+                this.$store.commit('proofEvents/clear')
+                if (this.$route.params.flow === '2.0') {
+                    this.$router.push({ name: 'ProvideCode' });
+                } else {
+                    // 3.0 has to skip the redirect page, so we cannot do go(-1)
+                    this.$router.push({ name: 'ChoiceTestLocation' });
+                }
             }
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.areYouSureToCancelNegativeTest.head'),
+                messageBody: this.$t('message.info.areYouSureToCancelNegativeTest.body'),
+                confirm: true,
+                confirmAction: callback,
+                confirmYes: this.$t('message.info.areYouSureToCancelNegativeTest.yes'),
+                confirmNo: this.$t('message.info.areYouSureToCancelNegativeTest.no'),
+                closeButton: false
+            })
         },
         goHome() {
             this.$router.push({ name: 'Home' });
