@@ -9,6 +9,13 @@ const options = {
     response_type: 'code'
 }
 
+// const options = {
+//     userStore: new Oidc.WebStorageStateStore(),
+//     authority: 'https://tvs-connect.coronacheck.nl/',
+//     client_id: 'test_client',
+//     response_type: 'code'
+// }
+
 const mgrVaccination = new Oidc.UserManager({
     ...options,
     redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties'
@@ -18,14 +25,6 @@ const mgrNegativeTest = new Oidc.UserManager({
     ...options,
     redirect_uri: window.location.origin + '/nl/print/jouw-testresultaat-redirect'
 })
-
-// const mgr = new Oidc.UserManager({
-//     userStore: new Oidc.WebStorageStateStore(),
-//     authority: 'https://tvs.acc.coronacheck.nl/',
-//     client_id: 'test_client',
-//     redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties',
-//     response_type: 'code'
-// })
 
 export default class SecurityService {
     getVaccinations() {
