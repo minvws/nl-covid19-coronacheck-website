@@ -133,6 +133,12 @@ const en = {
                 'body': 'TODO Je moet later opnieuw je code invullen om je testbewijs op te halen.',
                 'yes': 'TODO Ja, stop',
                 'no': 'TODO Nee, terug'
+            },
+            'areYouSureToCancelNegativeTest': {
+                'head': 'TODO Weet je zeker dat je wilt stoppen?',
+                'body': 'TODO Je kan later opnieuw een QR-code maken',
+                'yes': 'TODO Ja, stop',
+                'no': 'TODO Nee, ga door'
             }
         },
         'error': {
