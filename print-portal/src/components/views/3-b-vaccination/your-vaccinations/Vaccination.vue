@@ -31,12 +31,10 @@ export default {
                     // todo temp stringify this, will be fixed by Nick
                     return String(hpkCode.code) === this.vaccination.hpkCode;
                 })
-                console.log('A', vaccine);
             } else if (this.vaccination.brand.length > 0) {
                 vaccine = this.$store.state.holderConfig.euBrands.find(euBrand => {
                     return euBrand.code === this.vaccination.brand;
                 })
-                console.log('B', vaccine);
             }
             return vaccine ? vaccine.name : ''
         }
