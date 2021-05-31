@@ -43,7 +43,9 @@ const routes = [
     }, {
         path: '/jouw-testresultaat',
         name: 'YourTestResult',
-        component: YourTestResults
+        component: YourTestResults,
+        // flow set by either YourTestResultsRedirect (3.0) or ProvideCode (2.0)
+        props: true
     }, {
         path: '/jouw-testresultaat-redirect',
         name: 'YourTestResultsRedirect',

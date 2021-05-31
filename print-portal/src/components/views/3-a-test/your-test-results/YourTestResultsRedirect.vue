@@ -52,7 +52,7 @@ export default {
                 this.$store.commit('proofEvents/create', proofEvent);
             }
             this.isLoading = false;
-            this.$router.push({ name: 'YourTestResult' });
+            this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
         }
     },
     mounted() {

@@ -66,15 +66,15 @@ const mutations = {
         state.qrData = null;
         state.holder = null;
     },
-    invalidate(state) {
+    clearAll(state) {
+        state.holder = null;
         state.testCode = '';
-        state.verificationCode = '';
         state.verificationNeeded = false;
+        state.verificationCode = '';
         state.testResultStatus = 'idle';
         state.signature = '';
         state.qrCode = '';
         state.qrData = null;
-        state.holder = null;
     }
 }
 

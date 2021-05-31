@@ -132,7 +132,7 @@ export default {
                 this.$store.commit('proofEvents/create', proofEvent);
             }
             this.$store.commit('setSignature', signature);
-            this.$router.push({ name: 'YourTestResult' });
+            this.$router.push({ name: 'YourTestResult', params: { flow: '2.0' } });
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {
@@ -229,7 +229,7 @@ export default {
                 const invalidAt = dateTool.addHoursToDate(dateSample, maxValidity, false);
                 const timeToInvalidation = invalidAt.getTime() - new Date(dateNow).getTime();
                 this.timer = setTimeout(() => {
-                    this.$store.commit('invalidate');
+                    this.$store.commit('clearAll');
                     this.$store.commit('modal/set', {
                         messageHead: this.$t('message.error.expiredTestCode.head'),
                         messageBody: this.$t('message.error.expiredTestCode.body'),

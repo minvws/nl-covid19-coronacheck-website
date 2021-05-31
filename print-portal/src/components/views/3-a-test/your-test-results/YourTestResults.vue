@@ -6,6 +6,12 @@ import NegativeTest from './NegativeTest';
 export default {
     name: 'YourTestResults',
     components: { Page, PageIntro, NegativeTest },
+    data() {
+        return {
+            isLoading: true,
+            accessToken: ''
+        }
+    },
     computed: {
         negativeTestProofEvents() {
             return this.$store.getters['proofEvents/getProofEvents']('negativetest');
@@ -69,7 +75,12 @@ export default {
             }
         },
         goBack() {
-            this.$router.push({ name: 'ProvideCode' });
+            if (this.$route.params.flow === '2.0') {
+                this.$router.push({ name: 'ProvideCode' });
+            } else {
+                // 3.0 has to skip the redirect page, so we cannot do go(-1)
+                this.$router.push({ name: 'ChoiceTestLocation' });
+            }
         },
         goHome() {
             this.$router.push({ name: 'Home' });

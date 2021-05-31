@@ -22,23 +22,23 @@ export default {
     methods: {
         back() {
             const callback = () => {
-                // todo cancel all processes
-                console.log('cancelling processes');
+                if (this.isLoading) {
+                    // todo cancel all processes
+                    console.log('cancelling processes');
+                }
+                this.$store.commit('clearAll')
+                this.$store.commit('proofEvents/clear')
                 this.$router.push({ name: 'CollectVaccination' });
             }
-            if (this.isLoading) {
-                this.$store.commit('modal/set', {
-                    messageHead: 'Cancel',
-                    messageBody: 'weet je het zeker?',
-                    confirm: true,
-                    confirmAction: callback,
-                    confirmYes: this.$t('yes'),
-                    confirmNo: this.$t('no'),
-                    closeButton: false
-                })
-            } else {
-                this.$router.push({ name: 'CollectVaccination' });
-            }
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.areYouSureToCancelVaccination.head'),
+                messageBody: this.$t('message.info.areYouSureToCancelVaccination.body'),
+                confirm: true,
+                confirmAction: callback,
+                confirmYes: this.$t('message.info.areYouSureToCancelVaccination.yes'),
+                confirmNo: this.$t('message.info.areYouSureToCancelVaccination.no'),
+                closeButton: false
+            })
         },
         readToken() {
             let params = decodeURI(window.location.hash);

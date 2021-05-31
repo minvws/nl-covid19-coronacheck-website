@@ -127,6 +127,12 @@ const en = {
             'noVerificationCode': {
                 'head': 'Need a new verification code?',
                 'body': '<p>The test location sends you a verification code via text or email. Didn\'t get one? Then you can request a new code.</p>'
+            },
+            'areYouSureToCancelVaccination': {
+                'head': 'TODO Weet je zeker dat je wilt stoppen?',
+                'body': 'TODO Je moet later opnieuw je code invullen om je testbewijs op te halen.',
+                'yes': 'TODO Ja, stop',
+                'no': 'TODO Nee, terug'
             }
         },
         'error': {

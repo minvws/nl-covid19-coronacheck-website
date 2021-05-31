@@ -22,6 +22,9 @@ const mutations = {
         if (existingIds.indexOf(proofEvent.unique) === -1) {
             _base.mutations.create(state, proofEvent, Model);
         }
+    },
+    clear(state) {
+        state.all = []
     }
 };
 
