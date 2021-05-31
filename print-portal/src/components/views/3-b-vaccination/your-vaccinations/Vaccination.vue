@@ -1,5 +1,6 @@
 <script>
 import ProofEvent from '@/classes/events/ProofEvent';
+import dateTool from '@/tools/date';
 
 export default {
     name: 'Vaccination',
@@ -43,10 +44,14 @@ export default {
     methods: {
         openModalVaccinationAbout() {
             const data = {
-                discreteInfoString: this.holder.discreteInfoString,
-                fullName: this.holder.fullName,
-                birthDate: this.holder.birthDateString,
-                vaccin: this.vaccineName
+                name: this.holder.fullName,
+                birthDateString: this.holder.birthDateString,
+                vaccineName: this.vaccineName,
+                manufacturer: this.vaccination.manufacturer,
+                doseNumber: this.vaccination.doseNumber,
+                totalDoses: this.vaccination.totalDoses,
+                dateString: dateTool.dateToString(this.vaccination.date, 'EEEE d LLLL', this.currentLanguage.locale),
+                country: this.vaccination.country
             }
             this.$store.commit('modal/set', {
                 messageHead: this.$t('message.info.vaccinationAbout.head'),
