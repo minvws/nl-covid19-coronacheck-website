@@ -122,7 +122,6 @@ export default {
             }
         },
         addNegativeTestV2(signature, payload) {
-            // todo move to the testResult itself? There theoretically might be multiple?
             this.setTimerForValidityTestResult(payload.result);
             this.testCodeStatus.error = '';
 
