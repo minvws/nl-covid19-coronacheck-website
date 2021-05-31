@@ -4,6 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
 import mockData from '@/data/mock/data';
 import Vaccination from './Vaccination';
+import HolderV3 from '@/classes/holder/HolderV3';
 
 export default {
     name: 'YourVaccinations',
@@ -52,7 +53,7 @@ export default {
         },
         retrieveResults() {
             const result = mockData;
-            this.$store.commit('updateHolder', result.holder);
+            this.$store.commit('updateHolder', new HolderV3(result.holder));
             for (const proofEvent of result.events) {
                 this.$store.commit('proofEvents/create', proofEvent);
             }

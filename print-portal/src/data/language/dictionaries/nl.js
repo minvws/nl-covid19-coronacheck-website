@@ -1,4 +1,4 @@
-import messageInfoTestResultAbout from '../templates/nl/message-info-testResultAbout';
+import { messageInfoTestResultAboutV2, messageInfoTestResultAboutV3 } from '../templates/nl/message-info-testResultAbout';
 import messageInfoVaccinationAbout from '../templates/nl/message-info-vaccinationAbout';
 import footer from '../templates/nl/footer';
 import { pdfFooter, pdfInstructions } from '../templates/nl/pdf';
@@ -111,12 +111,13 @@ const nl = {
     'message': {
         'info': {
             'testResultAbout': {
-                'head': 'Over de testuitslag',
-                'body': messageInfoTestResultAbout
+                'head': 'Wat is er opgehaald?',
+                'bodyV2': messageInfoTestResultAboutV2,
+                'bodyV3': messageInfoTestResultAboutV3
             },
             'testResultSomethingWrong': {
                 'head': 'Kloppen de gegevens niet?',
-                'body': messageInfoTestResultAbout
+                'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.</p>'
             },
             'vaccinationAbout': {
                 'head': 'Over jouw vaccinatie',

@@ -21,11 +21,35 @@ export default {
     },
     methods: {
         openModalTestResultsAbout() {
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.testResultAbout.head'),
-                messageBody: this.$t('message.info.testResultAbout.body', this.holder),
-                closeButton: true
-            })
+            if (this.negativeTest.protocolVersion === '2.0') {
+                const testType = this.negativeTest.testType === 'pcr' ? 'PCR-test' : this.negativeTest.testType;
+                // todo use the testproviders name?
+                const testLocation = 'TODO'
+                const dataForV2 = {
+                    discreteInfoString: this.holder.discreteInfoString,
+                    testType,
+                    testLocation,
+                    sampleDate: this.date
+                }
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.info.testResultAbout.head'),
+                    messageBody: this.$t('message.info.testResultAbout.bodyV2', dataForV2),
+                    closeButton: true
+                })
+            } else {
+                const dataForV3 = {
+                    name: this.holder.fullName,
+                    birthDateString: this.holder.birthDateString,
+                    testType: this.negativeTest.type,
+                    testLocation: this.negativeTest.facility,
+                    sampleDate: this.date
+                }
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.info.testResultAbout.head'),
+                    messageBody: this.$t('message.info.testResultAbout.bodyV3', dataForV3),
+                    closeButton: true
+                })
+            }
         }
     }
 }
