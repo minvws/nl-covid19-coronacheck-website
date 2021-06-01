@@ -20,10 +20,12 @@ Aside from the authors of the various open source, 3rd-party libraries, we have 
 
 ## Application Licences, Terms & Conditions and Disclaimers
 
-- De CoronaCheck [iOS applicatie open source licentie](https://github.com/minvws/nl-covid19-coronacheck-app-ios/blob/main/LICENSES.md) en de open source [iOS bibliotheken van derden](https://github.com/minvws/nl-covid19-coronacheck-app-ios/tree/main/licenses) gebruikt in de applicatie.
-- De CoronaCheck [Android applicatie open source licentie](https://github.com/minvws/nl-covid19-coronacheck-app-android/blob/main/LICENSES.md) en de [Android bibliotheken van derden](https://github.com/minvws/nl-covid19-coronacheck-app-android/tree/main/licenses) gebruikt in de applicatie.
+- CoronaCheck on <a href="https://github.com/minvws/nl-covid19-coronacheck-app-ios/blob/main/LICENSES.md" target="_blank" rel="noopener noreferrer">iOS Application's open source licence</a>
+  and the Open Source <a href="https://github.com/minvws/nl-covid19-coronacheck-app-ios/tree/main/licenses" target="_blank" rel="noopener noreferrer">iOS 3rd-party</a> libraries used in the application.
+- CoronaCheck on <a href="https://github.com/minvws/nl-covid19-coronacheck-app-android/blob/main/LICENSES.md" target="_blank" rel="noopener noreferrer">Android's open source licence</a> and the Open Source <a href="https://github.com/minvws/nl-covid19-coronacheck-app-android/tree/main/licenses" target="_blank" rel="noopener noreferrer">Abdriud 3rd-party</a> libraries used in the application. 
 
-These licences, terms & conditions and disclaimers are an integral part of both the iOS and Android distribution and the Mobile Application. 
+These licences, terms & conditions and disclaimers are an integral part of both
+the iOS and Android distribution and the Mobile Application.
 
 ## Server Licences, Terms & Conditions and Disclaimers
  
