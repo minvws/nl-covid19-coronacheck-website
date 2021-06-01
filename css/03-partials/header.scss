@@ -46,48 +46,40 @@
             line-height: 1.25;
         }
     }
-<<<<<<< Updated upstream
-  } 
+}
 
-  .header__layout {
+.header__layout {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-left: 30px;
     padding-right: 30px;
-  }
+}
 
-  .header__layout--image {
+.header__layout--image {
     display: none;
     flex: 0 1 300px;
     overflow: hidden;
 
     img {
-      width: 100%;
-      height: auto;
-      position: relative;
-      bottom: -10px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: -10px;
     }
-  }
-
-  .header__layout--content {
-    flex: 0 1 535px;
-    padding: 30px 0;
-    
-    p {
-      margin-top: 24px;
-      margin-bottom: 40px;
-    }
-  }
-
-  @media(min-width: 680px) {
-=======
 }
 
-// Homepage
+.header__layout--content {
+    flex: 0 1 535px;
+    padding: 30px 0;
 
-.header--home {
->>>>>>> Stashed changes
+    p {
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 680px) {
     .header__layout {
         display: flex;
         justify-content: center;
@@ -141,61 +133,7 @@
             box-sizing: content-box;
         }
     }
-<<<<<<< Updated upstream
-  }
-} 
-=======
 }
-
-@media only screen and (max-width: 400px) {
-    header h1 {
-        width: 100%;
-        font-size: 2rem;
-        line-height: 2.125rem;
-    }
-
-    header h1 .subtitle {
-        font-size: 1.375rem;
-        line-height: 1.625rem;
-    }
-}
-
-.lead {
-    position: relative;
-    margin: -3.7em 0 0 0;
-    padding: 2em 1.6em 0 1.6em;
-    background-color: #fff;
-    border-radius: 2em;
-    color: #333333; /* RO tekst */
-
-    @media (min-width: 740px) {
-        padding: 2em 2.4em 0 54px;
-    }
-
-    @media (min-width: 960px) {
-        margin-left: 90px;
-        max-width: 740px;
-    }
-}
-
-.browser-ie-11 .header--scanner {
-    @media (min-width: 960px) {
-        &::before {
-            width: 1480px;
-            height: 460px;
-            left: 0;
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            background-image: url("#{$file-path}img/background-full.svg");
-        }
-
-        &::after {
-            content: none;
-        }
-    }
-}
->>>>>>> Stashed changes
 
 // Slim header, used on subpages
 
