@@ -89,11 +89,11 @@ Binnen CoronaCheck en in coronacheck.nl worden persoonsgegevens als volgt bewaar
 
 U heeft een aantal rechten om controle te houden op uw persoonsgegevens. Deze kunt u vinden op de [website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/rechten-van-betrokkenen). 
 
-CoronaCheck en de website coronacheck.nl zijn ontworpen volgens de standaard van privacy by design en de bescherming van uw persoonsgegevens staat bij de inzet van CoronaCheck voorop. Er bestaat de mogelijkheid om een beroep te doen op een van uw privacy rechten ten aanzien van de inzet van CoronaCheck. Een dergelijk verzoek kunt u indienen op [helpdesk@CoronaCheck.nl](mailto:helpdesk@CoronaCheck.nl). 
+CoronaCheck en de website coronacheck.nl zijn ontworpen volgens de standaard van privacy by design en de bescherming van uw persoonsgegevens staat bij de inzet van CoronaCheck voorop. Er bestaat de mogelijkheid om een beroep te doen op een van uw privacy rechten ten aanzien van de inzet van CoronaCheck. Een dergelijk verzoek kunt u indienen op [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl). 
 
 ### 9. Klachten over gebruik van uw gegevens
 
-Vragen of klachten over het gebruik van CoronaCheck kunt u stellen aan [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
+Vragen of klachten over het gebruik van CoronaCheck kunt u stellen aan [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie van Volksgezondheid, Welzijn en Sport vindt u op de [website van het ministerie.](https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/privacy)
 
