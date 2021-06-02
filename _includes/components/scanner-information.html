@@ -2,6 +2,7 @@
   <h2 class="information-title">{{ site.data.translations.scanner-information-title[page.lang] }}</h2>
 
   <ul class="information-layout">
+    {% comment %}
     <li class="information__block">
       <img
         src="{{ site.baseurl }}/img/information-images/naw.svg"
@@ -12,6 +13,7 @@
       >
       {{ site.data.translations.scanner-information-qrcode[page.lang] }}
     </li>
+    {% endcomment %}
     <li class="information__block">
       <img
         src="{{ site.baseurl }}/img/information-images/naw.svg"
