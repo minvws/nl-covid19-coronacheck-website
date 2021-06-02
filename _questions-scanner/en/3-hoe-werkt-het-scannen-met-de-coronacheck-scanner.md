@@ -1,7 +1,7 @@
 ---
 index: 3
 set: 1
-title: How does the CoronaCheck Scanner work?
+title: How does CoronaCheck Scanner work?
 ---
 ## 1. Keep distance
 
