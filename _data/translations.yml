@@ -117,9 +117,9 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Met de app bewijs je dat je negatief getest bent op corona. Je kan CoronaCheck momenteel gebruiken tijdens de pilots van Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
+  nl: Voor toegang tot bepaalde locaties of activiteiten heb je een negatieve testuitslag nodig. Met de app bewijs je dat je negatief op corona getest bent.
   fy: 
-  en: With this app, you are able to prove you've recently tested negative for corona. You can use CoronaCheck during the pilots Testen voor Toegang. Find an up-to-date overview of the pilots on the <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' hreflang="nl" rel='noopener noreferrer'>website of the Dutch Government (Dutch)</a>.
+  en: With this app, you are able to prove you've recently tested negative for corona. This gives you access to certain locations or activities. 
   ar: 
   bg: 
   de: 
@@ -143,9 +143,9 @@ scanner-header-title:
   tr: 
 
 scanner-header-subtitle:
-  nl: Met CoronaCheck Scanner controleer je de geldigheid van het testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt tijdens de pilots Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
+  nl: Met CoronaCheck Scanner controleer je de geldigheid van het testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
   fy: 
-  en: With CoronaCheck Scanner you check the validity of the visitor’s negative test result. And also if the data on your screen matches the data on the proof of identity. You can use the CoronaCheck Scanner during the pilots Testen voor Toegang. Find an up-to-date overview of the pilots on the <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' hreflang="nl" rel='noopener noreferrer'>website of the Dutch Government (Dutch)</a>.
+  en: With CoronaCheck Scanner you check the validity of the visitor’s negative test result. And also if the data on your screen matches the data on the proof of identity. You can use the CoronaCheck Scanner to get access to certain locations or activities.
   ar: 
   bg: 
   de: 
