@@ -4,7 +4,7 @@ lang: nl
 title: Privacyverklaring CoronaCheck en fysiek testbewijs
 redirect_from: /privacy-in-app
 ---
-Deze privacyverklaring is geschreven voor de inzet van de applicaties CoronaCheck en CoronaCheck Scanner na inwerkingtreding van de Tijdelijke wet coronatoegangsbewijzen op 2 juni 2021 en toont aan op welke wijze persoonsgegevens van personen die een coronatoegangsbewijs genereren en gebruiken worden verwerkt en welke technische en organisatorische maatregelen genomen zijn ter bescherming van deze persoonsgegevens. Een persoon kan er naast de route via CoronaCheck ook voor kiezen om het coronatoegangsbewijs uit te printen. In deze privacyverklaring is daarom ook de route voor het genereren van een schriftelijk coronatoegangsbewijs beschreven.
+Deze privacyverklaring is geschreven voor de inzet van de applicaties CoronaCheck en CoronaCheck Scanner na inwerkingtreding van de Tijdelijke wet coronatoegangsbewijzen op 5 juni 2021 en toont aan op welke wijze persoonsgegevens van personen die een coronatoegangsbewijs genereren en gebruiken worden verwerkt en welke technische en organisatorische maatregelen genomen zijn ter bescherming van deze persoonsgegevens. Een persoon kan er naast de route via CoronaCheck ook voor kiezen om het coronatoegangsbewijs uit te printen. In deze privacyverklaring is daarom ook de route voor het genereren van een schriftelijk coronatoegangsbewijs beschreven.
 
 ## Over CoronaCheck en fysiek coronatoegangsbewijs
 
@@ -30,7 +30,7 @@ De Minister van Volksgezondheid, Welzijn en Sport (hierna: ‘de minister’) is
 
 ### 2. Grondslag voor het verwerken van persoonsgegevens
 
-Voor de verwerking van persoonsgegevens die betrekking hebben op de gezondheid van een persoon geldt op grond van artikel 9 AVG in beginsel een verwerkingsverbod. Op 2 juni 2021 is de Tijdelijke wet coronatoegangsbewijzen in werking getreden. Deze wet biedt de wettelijke grondslag voor de verwerkingsverantwoordelijkheid van de minister van VWS voor het verwerken van persoonsgegevens door de testuitvoerders bij het genereren van een coronatoegangsbewijs en vormt daarmee de uitzondering op het verwerkingsverbod. De Tijdelijke wet coronatoegangsbewijzen biedt ook de grondslag voor verwerking van niet bijzondere persoonsgegevens op grond van artikel 6, eerste lid, onderdeel e, AVG. 
+Voor de verwerking van persoonsgegevens die betrekking hebben op de gezondheid van een persoon geldt op grond van artikel 9 AVG in beginsel een verwerkingsverbod. Op 5 juni 2021 is de Tijdelijke wet coronatoegangsbewijzen in werking getreden. Deze wet biedt de wettelijke grondslag voor de verwerkingsverantwoordelijkheid van de minister van VWS voor het verwerken van persoonsgegevens door de testuitvoerders bij het genereren van een coronatoegangsbewijs en vormt daarmee de uitzondering op het verwerkingsverbod. De Tijdelijke wet coronatoegangsbewijzen biedt ook de grondslag voor verwerking van niet bijzondere persoonsgegevens op grond van artikel 6, eerste lid, onderdeel e, AVG. 
 
 In de Tijdelijke wet coronatoegangsbewijzen worden de soorten activiteiten en voorzieningen waarvoor een coronatoegangsbewijs kan worden ingezet genoemd: cultuur, evenementen, georganiseerde jeugdactiviteiten, horeca of sport. In aanvullende regelgeving kan bepaald worden dat coronatoegangsbewijzen ook ingezet worden in het beroepsonderwijs of hoger onderwijs. 
 

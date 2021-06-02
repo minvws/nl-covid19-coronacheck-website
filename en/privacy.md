@@ -4,7 +4,7 @@ lang: en
 showBreadCrumbs: true
 title: CoronaCheck app and printed corona admission ticket Privacy Statement 
 ---
-This privacy policy is written for the use of the CoronaCheck app and the CoronaCheck Scanner app after the Temporary Corona Admission Tickets Law goes into effect on 2 June 2021 and outlines how personal information of persons who generate and use a corona admission ticket is processed and which technical and organisational measures have been taken to protect this personal information. A second option in addition to the CoronaCheck app is to print off a hard copy of the corona admission ticket. This privacy statement also outlines how to generate a hard copy of your corona admission ticket
+This privacy policy is written for the use of the CoronaCheck app and the CoronaCheck Scanner app after the Temporary Corona Admission Tickets Law goes into effect on 5 June 2021 and outlines how personal information of persons who generate and use a corona admission ticket is processed and which technical and organisational measures have been taken to protect this personal information. A second option in addition to the CoronaCheck app is to print off a hard copy of the corona admission ticket. This privacy statement also outlines how to generate a hard copy of your corona admission ticket
 
 ## About CoronaCheck and the printed corona admission ticket
 
@@ -30,7 +30,7 @@ The Minister of Health, Welfare and Sport (hereinafter: ‘the Minister’) is r
 
 ### 2. Grounds for processing of personal information
 
-Under Article 9 of the GDPR, in principle a processing prohibition applies to personal information relating to a person’s health. On 2 June 2021, the Temporary Corona Admission Tickets Law came into effect. This law provides the legal grounds for the processing responsibility of the Ministry of Health, Welfare and Sport for the processing of personal information by test providers when generating a corona admission ticket and is therefore an exception to this processing prohibition. 
+Under Article 9 of the GDPR, in principle a processing prohibition applies to personal information relating to a person’s health. On 5 June 2021, the Temporary Corona Admission Tickets Law came into effect. This law provides the legal grounds for the processing responsibility of the Ministry of Health, Welfare and Sport for the processing of personal information by test providers when generating a corona admission ticket and is therefore an exception to this processing prohibition. 
 
 The Temporary Corona Admission Tickets Law also provides the grounds for the processing of non-special personal information under Article 6, first paragraph, section E of the GDPR.
 
