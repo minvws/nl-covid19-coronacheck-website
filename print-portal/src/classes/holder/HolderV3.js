@@ -17,7 +17,11 @@ class HolderV3 extends _Holder {
     }
 
     get fullName() {
-        return this.firstName + ' ' + this.infix + ' ' + this.lastName;
+        if (this.infix) {
+            return this.infix + ' ' + this.lastName + ', ' + this.firstName;
+        } else {
+            return this.lastName + ', ' + this.firstName;
+        }
     }
 
     get firstNameInitial() {
