@@ -64,8 +64,8 @@ export default {
                 }
                 this.$router.push({ name: 'YourVaccinations' });
                 break;
-            case 'server-busy':
-                console.log('server-busy')
+            case 'not-possible':
+                this.$router.push({ name: 'NotPossibleVaccinations' });
                 break;
             case 'no-vaccinations':
                 this.$router.push({ name: 'NoVaccinations' });
@@ -101,7 +101,7 @@ export default {
                     @click="getResult('two-vaccinations')">Two vaccinations</button>
 
                 <button
-                    @click="getResult('server-busy')">Server busy</button>
+                    @click="getResult('not-possible')">Not possible</button>
 
                 <button
                     @click="getResult('no-vaccinations')">No vaccinations</button>

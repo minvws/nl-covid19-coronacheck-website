@@ -3,7 +3,7 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 
 export default {
-    name: 'NoVaccinations',
+    name: 'NotPossibleVaccinations',
     components: { Page, PageIntro },
     methods: {
         goHome() {
@@ -18,8 +18,8 @@ export default {
         :display-back-button="false">
         <div class="section">
             <PageIntro
-                :head="$t('views.noVaccinations.pageHeader')"
-                :intro="$t('views.noVaccinations.pageIntro')"/>
+                :head="$t('views.notPossibleVaccinations.pageHeader')"
+                :intro="$t('views.notPossibleVaccinations.pageIntro')"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <button

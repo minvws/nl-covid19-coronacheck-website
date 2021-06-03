@@ -47,6 +47,10 @@ const en = {
             'pageHeader': 'TODO Geen vaccinatie(s) beschikbaar',
             'pageIntro': '<p>TODO Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Kijk voor meer informatie op CoronaCheck.nl/wegwijzer.</p>'
         },
+        'notPossibleVaccinations': {
+            'pageHeader': 'TODO We kunnen geen bewijs maken ',
+            'pageIntro': '<p>TODO Op dit moment kunnen we geen bewijs maken van jouw vaccinatie. Dit kan verschillende oorzaken hebben. <a href="https://coronacheck.nl/wegwijzer" target="_blank">Lees hier meer</a>.</p>'
+        },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
             'pageIntro': 'Enter your retrieval code. The test location sent it to you. Or click on the link in the email you\'ll get from the test location.',

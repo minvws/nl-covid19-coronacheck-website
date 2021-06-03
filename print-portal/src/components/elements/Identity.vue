@@ -12,13 +12,13 @@ export default {
         pageHeaderImage() {
             if (this.$route.meta.pageHeader) {
                 if (this.$route.meta.pageHeader === 'error') {
-                    return 'assets/img/artwork/coronacheck-error.svg';
+                    return 'assets/img/artwork/coronacheck-header-error.svg';
                 } else {
-                    return 'assets/img/artwork/holder_qrcode_maken.svg'
+                    return 'assets/img/artwork/coronacheck-header-regular.svg'
                 }
             } else {
                 // standard
-                return 'assets/img/artwork/holder_qrcode_maken.svg'
+                return 'assets/img/artwork/coronacheck-header-regular.svg'
             }
         }
     },
@@ -46,7 +46,7 @@ export default {
                 <img
                     class="Identity__image"
                     alt=""
-                    width="356"
+                    width="380"
                     :src="pageHeaderImage"/>
             </div>
 
@@ -81,11 +81,13 @@ export default {
             display: flex;
             align-items: flex-end;
             height: 100%;
+            overflow: hidden;
 
             .Identity__image {
                 display: block;
                 height: auto;
                 margin-left: 60px;
+                margin-bottom: -70px;
             }
         }
     }

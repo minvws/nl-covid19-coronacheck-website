@@ -11,6 +11,7 @@ import CollectVaccination from '@/components/views/3-b-vaccination/collect-vacci
 import YourVaccinationsRedirect from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinationsRedirect'
 import YourVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinations'
 import NoVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/NoVaccinations'
+import NotPossibleVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/NotPossibleVaccinations'
 import PrintTestResult from '@/components/views/4-print/PrintTestResult';
 import PrintVaccination from '@/components/views/4-print/PrintVaccination';
 import store from '@/store'
@@ -46,6 +47,13 @@ const routes = [
         path: '/geen-vaccinaties-beschikbaar',
         component: NoVaccinations,
         name: 'NoVaccinations',
+        meta: {
+            pageHeader: 'error'
+        }
+    }, {
+        path: '/we-kunnen-geen-bewijs-maken',
+        component: NotPossibleVaccinations,
+        name: 'NotPossibleVaccinations',
         meta: {
             pageHeader: 'error'
         }
