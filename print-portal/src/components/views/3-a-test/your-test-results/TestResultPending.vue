@@ -24,7 +24,6 @@ export default {
                 <div class="section-block__footer">
                     <button
                         @click="goBack()"
-                        :to="{ name: 'ProvideCode' }"
                         type="button"
                         class="btn">
                         {{$t('back')}}
