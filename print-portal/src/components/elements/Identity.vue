@@ -9,14 +9,15 @@ export default {
         hasLanguages() {
             return this.$store.state.languages.all.length > 1;
         },
-        pageHasAlternativeHeaderImage () {
-            const alternativeHeaderImagePages = ['NoVaccinations'];
-            return alternativeHeaderImagePages.indexOf(this.$route.name) > -1;
-        },
         pageHeaderImage() {
-            if (this.pageHasAlternativeHeaderImage) {
-                return 'assets/img/artwork/coronacheck-error.svg';
+            if (this.$route.meta.pageHeader) {
+                if (this.$route.meta.pageHeader === 'error') {
+                    return 'assets/img/artwork/coronacheck-error.svg';
+                } else {
+                    return 'assets/img/artwork/holder_qrcode_maken.svg'
+                }
             } else {
+                // standard
                 return 'assets/img/artwork/holder_qrcode_maken.svg'
             }
         }

@@ -45,7 +45,10 @@ const routes = [
     }, {
         path: '/geen-vaccinaties-beschikbaar',
         component: NoVaccinations,
-        name: 'NoVaccinations'
+        name: 'NoVaccinations',
+        meta: {
+            pageHeader: 'error'
+        }
     }, {
         path: '/testuitslag-ophalen',
         component: ProvideCode,
