@@ -428,7 +428,7 @@ faq-category-scanner-general:
 faq-category-scanner-testdocument:
   nl: Toegang met testbewijs
   fy: 
-  en: Getting access with a test declaration 
+  en: Getting access with a test certificate 
   ar: 
   bg: 
   de: 
@@ -480,7 +480,7 @@ faq-category-general:
 faq-category-howtouse:
   nl: Toegang met testbewijs
   fy: 
-  en: Getting access with a test declaration
+  en: Getting access with a test certificate
   ar: 
   bg: 
   de: 
@@ -506,7 +506,7 @@ faq-category-usingtheapp:
 faq-category-usingprintversion:
   nl: Testbewijs op papier
   fy: 
-  en: Printed test declaration
+  en: Printed test certificate
   ar: 
   bg: 
   de: 
@@ -843,7 +843,7 @@ footer-colophon:
 footer-logos-info_md:
   nl: CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community tijdens de ontwikkeling meegekeken en getest.
   fy: 
-  en: CoronaCheck and CoronaCheck Scanner have been developed by the Ministry of Public Health, Welfare and Sport. Both the apps and the test declaration on paper would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens. They all lent a hand and helped to test the app during its development.
+  en: CoronaCheck and CoronaCheck Scanner have been developed by the Ministry of Public Health, Welfare and Sport. Both the apps and the test certificate on paper would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens. They all lent a hand and helped to test the app during its development.
   ar: 
   bg: 
   de: 
@@ -1496,12 +1496,12 @@ print-version-img:
 print-version-title:
   nl: Liever een papieren testbewijs?
   fy: 
-  en: Prefer a test declaration on paper?
+  en: Prefer a test certificate on paper?
  
 print-version-content:
   nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq#testbewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over testbewijzen op papier</span></a>.
   fy: 
-  en: A test declaration on paper is convenient if you don't have a smartphone. <a href="/en/faq#printed-test-declaration">Read more<span class="screen-reader-text"> about a test declaration on paper</span></a>.
+  en: A test certificate on paper is convenient if you don't have a smartphone. <a href="/en/faq#printed-test-declaration">Read more<span class="screen-reader-text"> about a test certificate on paper</span></a>.
 
 print-version-url: 
   nl: /print
@@ -1511,7 +1511,7 @@ print-version-url:
 print-version-url-link: 
   nl: Maak papieren testbewijs
   fy: 
-  en: Make test declaration on paper
+  en: Make test certificate on paper
 
 for-organisations-title:
   nl: CoronaCheck Scanner

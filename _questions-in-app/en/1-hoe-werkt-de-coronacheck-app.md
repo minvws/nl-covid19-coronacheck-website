@@ -13,4 +13,4 @@ You can retrieve your negative test result to your CoronaCheck app in 3 steps:
 
 This QR code is scanned at the entrance of the location you're visiting. Do you have a valid QR code and does your identifying data correspond with your proof of identity? Then you're allowed access. You may still need an additional entrance ticket. 
 
-**Note:** the CoronaCheck app only holds 1 person's test declaration. This means every individual visitor needs their own phone and CoronaCheck app, or an individually printed test declaration. You can download and print off your test declaration via [www.coronacheck.nl/en/print](/en/print).
+**Note:** the CoronaCheck app only holds 1 person's test certificate. This means every individual visitor needs their own phone and CoronaCheck app, or an individually printed test certificate. You can download and print off your test certificate via [www.coronacheck.nl/en/print](/en/print).
