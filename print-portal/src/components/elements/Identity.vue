@@ -8,6 +8,17 @@ export default {
     computed: {
         hasLanguages() {
             return this.$store.state.languages.all.length > 1;
+        },
+        pageHasAlternativeHeaderImage () {
+            const alternativeHeaderImagePages = ['NoVaccinations'];
+            return alternativeHeaderImagePages.indexOf(this.$route.name) > -1;
+        },
+        pageHeaderImage() {
+            if (this.pageHasAlternativeHeaderImage) {
+                return 'assets/img/artwork/coronacheck-error.svg';
+            } else {
+                return 'assets/img/artwork/holder_qrcode_maken.svg'
+            }
         }
     },
     methods: {
@@ -35,7 +46,7 @@ export default {
                     class="Identity__image"
                     alt=""
                     width="356"
-                    src="assets/img/artwork/holder_qrcode_maken.svg"/>
+                    :src="pageHeaderImage"/>
             </div>
 
         </div>

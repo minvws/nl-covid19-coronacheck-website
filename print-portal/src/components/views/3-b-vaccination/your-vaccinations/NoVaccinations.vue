@@ -15,7 +15,8 @@ export default {
 </script>
 
 <template>
-    <Page :display-back-button="false">
+    <Page
+        :display-back-button="false">
         <div class="section">
             <PageIntro
                 :head="$t('views.noVaccinations.pageHeader')"
