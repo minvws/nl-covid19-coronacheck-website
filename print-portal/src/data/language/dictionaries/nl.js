@@ -38,10 +38,14 @@ const nl = {
             'loginDigid': 'Login met DigiD'
         },
         'yourVaccinations': {
-            'pageHeader': 'Jouw opgehaalde vaccinaties ',
+            'pageHeader': 'Jouw opgehaalde vaccinaties',
             'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>',
             'createTestProofButton': 'Maak QR-code',
             'somethingIsWrong': 'Klopt er iets niet?'
+        },
+        'noVaccinations': {
+            'pageHeader': 'Geen vaccinatie(s) beschikbaar',
+            'pageIntro': '<p>Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Kijk voor meer informatie op CoronaCheck.nl/wegwijzer.</p>'
         },
         'provideCode': {
             'pageHeader': 'Testuitslag ophalen',

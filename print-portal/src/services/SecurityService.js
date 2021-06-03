@@ -18,7 +18,7 @@ const options = {
 
 const mgrVaccination = new Oidc.UserManager({
     ...options,
-    redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties'
+    redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties-redirect'
 })
 
 const mgrNegativeTest = new Oidc.UserManager({

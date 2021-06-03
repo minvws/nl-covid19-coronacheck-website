@@ -8,7 +8,9 @@ import YourTestResults from '@/components/views/3-a-test/your-test-results/YourT
 import YourTestResultsRedirect from '@/components/views/3-a-test/your-test-results/YourTestResultsRedirect';
 import TestResultPending from '@/components/views/3-a-test/your-test-results/TestResultPending';
 import CollectVaccination from '@/components/views/3-b-vaccination/collect-vaccination/CollectVaccination'
+import YourVaccinationsRedirect from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinationsRedirect'
 import YourVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinations'
+import NoVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/NoVaccinations'
 import PrintTestResult from '@/components/views/4-print/PrintTestResult';
 import PrintVaccination from '@/components/views/4-print/PrintVaccination';
 import store from '@/store'
@@ -36,6 +38,14 @@ const routes = [
         path: '/jouw-vaccinaties',
         component: YourVaccinations,
         name: 'YourVaccinations'
+    }, {
+        path: '/jouw-vaccinaties-redirect',
+        component: YourVaccinationsRedirect,
+        name: 'YourVaccinationsRedirect'
+    }, {
+        path: '/geen-vaccinaties-beschikbaar',
+        component: NoVaccinations,
+        name: 'NoVaccinations'
     }, {
         path: '/testuitslag-ophalen',
         component: ProvideCode,

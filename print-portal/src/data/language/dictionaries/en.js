@@ -43,6 +43,10 @@ const en = {
             'createTestProofButton': 'Make QR code',
             'somethingIsWrong': 'Klopt er iets niet?'
         },
+        'noVaccinations': {
+            'pageHeader': 'TODO Geen vaccinatie(s) beschikbaar',
+            'pageIntro': '<p>TODO Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Kijk voor meer informatie op CoronaCheck.nl/wegwijzer.</p>'
+        },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
             'pageIntro': 'Enter your retrieval code. The test location sent it to you. Or click on the link in the email you\'ll get from the test location.',
