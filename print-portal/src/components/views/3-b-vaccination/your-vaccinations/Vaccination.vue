@@ -41,15 +41,19 @@ export default {
     },
     methods: {
         openModalVaccinationAbout() {
+            const vaccineType = this.$store.getters.getVaccineType(this.vaccination.type);
+            const manufacturer = this.$store.getters.getVaccineManufacturer(this.vaccination.manufacturer);
             const data = {
                 name: this.holder.fullName,
                 birthDateString: this.holder.birthDateString,
                 vaccineName: this.vaccineName,
-                manufacturer: this.vaccination.manufacturer,
+                vaccineType: (vaccineType ? vaccineType.name : '-'),
+                manufacturer: (manufacturer ? manufacturer.name : '-'),
                 doseNumber: this.vaccination.doseNumber,
                 totalDoses: this.vaccination.totalDoses,
                 dateString: dateTool.dateToString(this.vaccination.date, 'EEEE d LLLL', this.currentLanguage.locale),
-                country: this.vaccination.country
+                country: this.vaccination.country,
+                identificationCode: this.proofEvent.unique
             }
             this.$store.commit('modal/set', {
                 messageHead: this.$t('message.info.vaccinationAbout.head'),

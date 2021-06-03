@@ -30,6 +30,12 @@ const getters = {
     },
     getTestManufacturer: (state) => (testManufacturerCode) => {
         return state.holderConfig.euTestManufacturers.find(euTestManufacturer => euTestManufacturer.code === testManufacturerCode)
+    },
+    getVaccineType: (state) => (vaccineTypeCode) => {
+        return state.holderConfig.euVaccinations.find(euVaccination => euVaccination.code === vaccineTypeCode)
+    },
+    getVaccineManufacturer: (state) => (vaccineManufacturerCode) => {
+        return state.holderConfig.euManufacturers.find(euManufacturer => euManufacturer.code === vaccineManufacturerCode)
     }
 };
 

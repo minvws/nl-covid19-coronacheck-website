@@ -24,5 +24,5 @@ export const messageInfoTestResultAboutV3 = `
     Testuitslag: <b>negatief (geen corona)</b><br>
     Testlocatie: <b>%{testLocation}</b><br>
     Testproducent: <b>%{manufacturer}</b><br>
-    IdentificatieCode: <b>%{identificationCode}</b>
+    Identificatiecode: <b>%{identificationCode}</b>
 </p>`;
