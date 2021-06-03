@@ -1,17 +1,20 @@
 <script>
-import _NegativeTest from '@/classes/events/_NegativeTest';
 import dateTool from '@/tools/date';
+import ProofEvent from '@/classes/events/ProofEvent';
 
 export default {
     name: 'NegativeTest',
     components: {},
     props: {
-        negativeTest: {
-            type: _NegativeTest,
+        negativeTestProofEvent: {
+            type: ProofEvent,
             required: true
         }
     },
     computed: {
+        negativeTest() {
+            return this.negativeTestProofEvent.negativetest;
+        },
         date() {
             return dateTool.dateTimeToString(this.negativeTest.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
         },
@@ -32,12 +35,13 @@ export default {
                 } else {
                     testLocation = ''
                 }
-                const testType = this.negativeTest.testType === 'pcr' ? 'PCR-test' : this.negativeTest.testType;
+                const testType = this.$t('testTypes.' + this.negativeTest.testType);
                 const dataForV2 = {
                     discreteInfoString: this.holder.discreteInfoString,
                     testType,
                     testLocation,
-                    sampleDate: this.date
+                    sampleDate: this.date,
+                    identificationCode: this.negativeTestProofEvent.unique
                 }
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.info.testResultAbout.head'),

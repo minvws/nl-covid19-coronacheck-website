@@ -16,16 +16,16 @@ export default {
         negativeTestProofEvents() {
             return this.$store.getters['proofEvents/getProofEvents']('negativetest');
         },
-        latestNegativeTest() {
+        latestNegativeTestProofEvent() {
             if (this.negativeTestProofEvents.length > 0) {
-                const negativeTests = this.negativeTestProofEvents.map(proofEvent => proofEvent.negativetest);
-                if (negativeTests.length === 1) {
-                    return negativeTests[0];
+                if (this.negativeTestProofEvents.length === 1) {
+                    return this.negativeTestProofEvents[0];
                 } else {
                     // if there are multiple (which should never be the case actually)
                     // we sort them and pick the most recent
-                    return negativeTests.sort((a, b) => {
-                        return new Date(b.sampleDate) - new Date(a.sampleDate);
+                    const negativeTestProofEvents = this.negativeTestProofEvents.slice();
+                    return negativeTestProofEvents.sort((a, b) => {
+                        return new Date(b.negativetest.sampleDate) - new Date(a.negativetest.sampleDate);
                     })[0];
                 }
             } else {
@@ -111,7 +111,7 @@ export default {
         @back="goBack"
         class="YourTestResults">
         <div class="section">
-            <div  v-if="latestNegativeTest">
+            <div v-if="latestNegativeTestProofEvent">
                 <PageIntro
                     :head="$t('views.yourTestResults.pageHeader')"
                     :intro="$t('views.yourTestResults.pageIntro')"/>
@@ -119,7 +119,7 @@ export default {
                 <div class="section-block">
                     <div class="proof-events">
                         <NegativeTest
-                            :negative-test="latestNegativeTest"/>
+                            :negative-test-proof-event="latestNegativeTestProofEvent"/>
                     </div>
                     <div class="section-block__footer">
                         <button

@@ -181,13 +181,16 @@ const en = {
     'faq': 'Frequently asked questions',
     'forInstanceAbbr': 'E.g.',
     'goBackToStart': 'To Home',
+    'header-appstore': 'Download on the App Store',
+    'header-googleplaystore': 'Get it on Google Play',
+    'identity_image_alt': 'Make Holder QR code',
+    'logo-government': 'Logo Dutch Government, homepage',
     'next': 'Next',
     'orderWords': ['First', 'Second', 'Third'],
     'skiplink': 'Skip to content',
-    'logo-government': 'Logo Dutch Government, homepage',
-    'identity_image_alt': 'Make Holder QR code',
-    'header-appstore': 'Download on the App Store',
-    'header-googleplaystore': 'Get it on Google Play'
+    'testTypes': {
+        'pcr': 'PCR-test'
+    }
 }
 
 export default en;

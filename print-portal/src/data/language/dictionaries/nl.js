@@ -185,13 +185,16 @@ const nl = {
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
     'goBackToStart': 'Naar home',
+    'header-appstore': 'Downloaden in de App Store',
+    'header-googleplaystore': 'Ontdek het op Google Play',
+    'identity_image_alt': 'Holder QR maken',
+    'logo-government': 'Logo Rijksoverheid, homepage',
     'next': 'Volgende',
     'orderWords': ['Eerste', 'Tweede', 'Derde'],
     'skiplink': 'Ga direct naar inhoud',
-    'logo-government': 'Logo Rijksoverheid, homepage',
-    'identity_image_alt': 'Holder QR maken',
-    'header-appstore': 'Downloaden in de App Store',
-    'header-googleplaystore': 'Ontdek het op Google Play'
+    'testTypes': {
+        'pcr': 'PCR-test'
+    }
 }
 
 export default nl;

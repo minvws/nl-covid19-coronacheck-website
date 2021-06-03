@@ -7,7 +7,8 @@ export const messageInfoTestResultAboutV2 = `TODO
     Type test: <b>%{testType}</b><br>
     Testlocatie: <b>%{testLocation}</b><br>
     Testdatum: <b>%{sampleDate}</b><br>
-    Testuitslag: <b>negatief (geen corona)</b>
+    Testuitslag: <b>negatief (geen corona)</b><br>
+    IdentificationCode: <b>%{identificationCode}</b>
 </p>`;
 
 export const messageInfoTestResultAboutV3 = `TODO
