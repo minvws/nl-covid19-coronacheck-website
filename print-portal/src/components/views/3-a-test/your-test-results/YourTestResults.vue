@@ -2,10 +2,11 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import NegativeTest from './NegativeTest';
+import CcButton from '@/components/elements/CcButton';
 
 export default {
     name: 'YourTestResults',
-    components: { Page, PageIntro, NegativeTest },
+    components: { Page, PageIntro, NegativeTest, CcButton },
     data() {
         return {
             isLoading: true,
@@ -122,12 +123,9 @@ export default {
                             :negative-test-proof-event="latestNegativeTestProofEvent"/>
                     </div>
                     <div class="section-block__footer">
-                        <button
-                            @click="createTestCertificate()"
-                            type="button"
-                            class="btn">
-                            {{$t('views.yourTestResults.createTestProofButton')}}
-                        </button>
+                        <CcButton
+                            @select="createTestCertificate()"
+                            :label="$t('views.yourTestResults.createTestProofButton')"/>
                         <div class="button__help-button">
                             <button
                                 @click="openModalTestResultsSomethingWrong()"
@@ -147,12 +145,9 @@ export default {
 
                 <div class="section-block">
                     <div class="section-block__footer">
-                        <button
-                            @click="goHome()"
-                            type="button"
-                            class="btn">
-                            {{$t('goBackToStart')}}
-                        </button>
+                        <CcButton
+                            @select="goHome()"
+                            :label="$t('goBackToStart')"/>
                     </div>
                 </div>
             </div>

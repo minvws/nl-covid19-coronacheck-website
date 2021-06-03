@@ -1,10 +1,11 @@
 <script>
 import Page from '@/components/elements/Page';
 import { detect } from 'detect-browser';
+import CcButton from '@/components/elements/CcButton';
 
 export default {
     name: 'Print',
-    components: { Page },
+    components: { Page, CcButton },
     props: {
         qrCode: {
             type: String,
@@ -74,24 +75,18 @@ export default {
                     <div
                         :class="{'browser-ie': browserIsIE}"
                         class="Print__buttons">
-                        <button
-                            type="button"
-                            :class="{'button--inactive': !document}"
-                            :disabled="!document"
+                        <CcButton
+                            @select="openPDF()"
                             id="open-pdf"
-                            class="btn button--full-width"
-                            @click="openPDF()">
-                            {{$t('views.print.openPDF')}}
-                        </button>
-                        <button
-                            type="button"
-                            :class="{'button--inactive': !document }"
                             :disabled="!document"
+                            :label="$t('views.print.openPDF')"
+                            :full-width="true"/>
+                        <CcButton
+                            @select="openPDF()"
                             id="download-pdf"
-                            class="btn button--full-width"
-                            @click="downloadPDF()">
-                            {{$t('views.print.openPDF')}}
-                        </button>
+                            :disabled="!downloadPDF"
+                            :label="$t('views.print.openPDF')"
+                            :full-width="true"/>
                     </div>
                     <div class="Print__image">
                         <img

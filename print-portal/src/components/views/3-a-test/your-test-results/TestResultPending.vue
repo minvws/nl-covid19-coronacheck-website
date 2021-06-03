@@ -1,14 +1,15 @@
 <script>
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
+import CcButton from '@/components/elements/CcButton';
 
 export default {
     name: 'TestResultPending',
-    components: { Page, PageIntro },
+    components: { Page, PageIntro, CcButton },
     computed: {},
     methods: {
-        goBack() {
-            this.$router.push({ name: 'ProvideCode' });
+        goHome() {
+            this.$router.push({ name: 'Home' });
         }
     }
 }
@@ -22,12 +23,9 @@ export default {
                 :intro="$t('views.testResultPending.pageIntro')"/>
             <div class="section-block">
                 <div class="section-block__footer">
-                    <button
-                        @click="goBack()"
-                        type="button"
-                        class="btn">
-                        {{$t('back')}}
-                    </button>
+                    <CcButton
+                        @select="goHome()"
+                        :label="$t('goBackToStart')"/>
                 </div>
             </div>
         </div>

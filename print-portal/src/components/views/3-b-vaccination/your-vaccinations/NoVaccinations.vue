@@ -1,10 +1,11 @@
 <script>
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
+import CcButton from '@/components/elements/CcButton';
 
 export default {
     name: 'NoVaccinations',
-    components: { Page, PageIntro },
+    components: { Page, PageIntro, CcButton },
     methods: {
         goHome() {
             this.$router.push({ name: 'Home' })
@@ -22,12 +23,9 @@ export default {
                 :intro="$t('views.noVaccinations.pageIntro')"/>
             <div class="section-block">
                 <div class="section-block__footer">
-                    <button
-                        @click="goHome()"
-                        type="button"
-                        class="btn">
-                        {{$t('goBackToStart')}}
-                    </button>
+                    <CcButton
+                        @select="goHome()"
+                        :label="$t('goBackToStart')"/>
                 </div>
             </div>
         </div>

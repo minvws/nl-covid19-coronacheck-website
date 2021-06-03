@@ -1,10 +1,11 @@
 <script>
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
+import CcButton from '@/components/elements/CcButton';
 
 export default {
     name: 'CollectVaccination',
-    components: { Page, PageIntro },
+    components: { Page, PageIntro, CcButton },
     computed: {},
     methods: {
         getToken() {
@@ -26,12 +27,9 @@ export default {
                 :intro="$t('views.collectVaccination.pageIntro')"/>
             <div class="section-block">
                  <div class="section-block__footer">
-                    <button
-                        type="button"
-                        class="btn"
-                        @click="getToken">
-                        {{$t('views.collectVaccination.loginDigid')}}
-                    </button>
+                     <CcButton
+                         @select="getToken()"
+                         :label="$t('views.collectVaccination.loginDigid')"/>
                 </div>
             </div>
         </div>

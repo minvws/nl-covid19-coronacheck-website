@@ -1,7 +1,9 @@
 <script>
+import CcButton from '@/components/elements/CcButton';
+
 export default {
     name: 'ProvideVerificationCode',
-    components: { },
+    components: { CcButton },
     props: {
         verificationCodeStatus: {
             type: Object,
@@ -80,12 +82,9 @@ export default {
                 </button>
             </div>
         </div>
-        <button
-            @click="submit()"
-            type="button"
-            class="btn">
-            {{$t('next')}}
-        </button>
+        <CcButton
+            @select="submit()"
+            :label="$t('next')"/>
     </div>
 </template>
 

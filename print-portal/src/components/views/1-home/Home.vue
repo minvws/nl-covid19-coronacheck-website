@@ -3,10 +3,12 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import UserConsent from './UserConsent';
 import PreferMobile from '@/components/elements/PreferMobile';
+import CcButton from '@/components/elements/CcButton';
 
 export default {
     name: 'Home',
     components: {
+        CcButton,
         Page,
         PageIntro,
         UserConsent,
@@ -21,7 +23,7 @@ export default {
         gotoHome() {
             window.location = 'https://coronacheck.nl/nl/';
         },
-        gotoChoice() {
+        next() {
             this.$router.push({ name: 'ChoiceProof' });
         },
         setUserConsent(value) {
@@ -46,14 +48,10 @@ export default {
                     :label="$t('views.home.userConsentText')"/>
             </div>
             <div class="section-block">
-                <button
-                    @click="gotoChoice()"
-                    type="button"
+                <CcButton
+                    @select="next()"
                     :disabled="!consent"
-                    :class="{'button--inactive': !consent}"
-                    class="btn">
-                    {{$t('next')}}
-                </button>
+                    :label="$t('next')"/>
             </div>
         </div>
         <PreferMobile/>

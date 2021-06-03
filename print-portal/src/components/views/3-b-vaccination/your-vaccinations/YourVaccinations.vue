@@ -2,10 +2,11 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Vaccination from './Vaccination';
+import CcButton from '@/components/elements/CcButton';
 
 export default {
     name: 'YourVaccinations',
-    components: { Page, PageIntro, Vaccination },
+    components: { Page, PageIntro, Vaccination, CcButton },
     computed: {
         vaccinationProofEvents() {
             return this.$store.getters['proofEvents/getProofEvents']('vaccination');
@@ -58,12 +59,9 @@ export default {
                         :proof-event="proofEvent"/>
                 </div>
                 <div class="section-block__footer">
-                    <button
-                        @click="gotoPrint()"
-                        type="button"
-                        class="btn">
-                        {{$t('views.yourVaccinations.createTestProofButton')}}
-                    </button>
+                    <CcButton
+                        @select="gotoPrint()"
+                        :label="$t('views.yourVaccinations.createTestProofButton')"/>
                     <div class="button__help-button">
                         <button
                             @click="openModalVaccinationSomethingWrong()"

@@ -6,16 +6,6 @@ button {
     padding: 0;
 }
 
-.button-standard {
-
-    &.button--full-width {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
 .info-button {
     position: absolute;
     right: 0;

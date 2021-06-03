@@ -82,7 +82,10 @@ const routes = [
     }, {
         path: '/testresultaat-nog-niet-bekend',
         name: 'TestResultPending',
-        component: TestResultPending
+        component: TestResultPending,
+        meta: {
+            pageHeader: 'error'
+        }
     }
 ];
 

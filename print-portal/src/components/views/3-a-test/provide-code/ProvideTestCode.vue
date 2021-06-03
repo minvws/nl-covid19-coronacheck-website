@@ -1,7 +1,9 @@
 <script>
+import CcButton from '@/components/elements/CcButton';
+
 export default {
     name: 'ProvideTestCode',
-    components: { },
+    components: { CcButton },
     props: {
         testCodeStatus: {
             type: Object,
@@ -58,13 +60,10 @@ export default {
                 {{testCodeStatus.error}}
             </div>
         </div>
-        <button
+        <CcButton
             v-if="!verificationNeeded"
-            @click="submit()"
-            type="button"
-            class="btn">
-            {{$t('next')}}
-        </button>
+            @select="submit()"
+            :label="$t('next')"/>
     </div>
 </template>
 
