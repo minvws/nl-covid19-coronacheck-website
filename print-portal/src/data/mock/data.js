@@ -49,7 +49,7 @@ const data = {
                 'negativeResult': true,
                 'facility': 'GGD XL Amsterdam',
                 'type': 'LP6464-4',
-                'name': '???',
+                'name': 'PCR LAMP',
                 'manufacturer': '1232'
             }
         }

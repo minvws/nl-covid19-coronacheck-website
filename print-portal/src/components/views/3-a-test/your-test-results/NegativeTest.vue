@@ -49,13 +49,17 @@ export default {
                     closeButton: true
                 })
             } else {
+                const testType = this.$store.getters.getEuTestType(this.negativeTest.type);
+                const manufacturer = this.$store.getters.getTestManufacturer(this.negativeTest.manufacturer);
                 const dataForV3 = {
                     name: this.holder.fullName,
                     birthDateString: this.holder.birthDateString,
-                    // todo map via config
-                    testType: this.negativeTest.type,
+                    testType: (testType ? testType.name : '-'),
+                    testName: this.negativeTest.name,
                     testLocation: this.negativeTest.facility,
-                    sampleDate: this.date
+                    sampleDate: this.date,
+                    manufacturer: manufacturer ? manufacturer.name : '-',
+                    identificationCode: this.negativeTestProofEvent.unique
                 }
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.info.testResultAbout.head'),

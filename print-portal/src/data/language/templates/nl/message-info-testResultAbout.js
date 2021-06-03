@@ -19,7 +19,10 @@ export const messageInfoTestResultAboutV3 = `
     Naam:  <b>%{name}</b><br>
     Geboortedatum:  <b>%{birthDateString}</b><br>
     Type test: <b>%{testType}</b><br>
-    Testlocatie: <b>%{testLocation}</b><br>
+    Test naam: <b>%{testName}</b><br>
     Testdatum: <b>%{sampleDate}</b><br>
-    Testuitslag: <b>negatief (geen corona)</b>
+    Testuitslag: <b>negatief (geen corona)</b><br>
+    Testlocatie: <b>%{testLocation}</b><br>
+    Testproducent: <b>%{manufacturer}</b><br>
+    IdentificatieCode: <b>%{identificationCode}</b>
 </p>`;

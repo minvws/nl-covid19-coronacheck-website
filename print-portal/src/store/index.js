@@ -24,6 +24,15 @@ const state = {
     qrData: null
 };
 
+const getters = {
+    getEuTestType: (state) => (testTypeCode) => {
+        return state.holderConfig.euTestTypes.find(euTestType => euTestType.code === testTypeCode)
+    },
+    getTestManufacturer: (state) => (testManufacturerCode) => {
+        return state.holderConfig.euTestManufacturers.find(euTestManufacturer => euTestManufacturer.code === testManufacturerCode)
+    }
+};
+
 const mutations = {
     updateProperty(state, payload) {
         return _base.mutations.updateProperty(state, payload);
@@ -79,6 +88,7 @@ const mutations = {
 
 export default new Vuex.Store({
     state,
+    getters,
     mutations,
     actions: {},
     modules: {
