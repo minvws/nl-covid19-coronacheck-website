@@ -16,6 +16,9 @@
           {{ site.data.translations.faq[page.lang] }}
         </a>
       {% else %}
+        <a href="{{ langSlug }}/scanner" class="header__layout__scanner-link">
+          {{ site.data.translations.intro-scanner-link[page.lang] }}
+        </a>
         <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
           {{ site.data.translations.faq[page.lang] }}
         </a>

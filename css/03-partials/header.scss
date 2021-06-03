@@ -244,3 +244,27 @@
         color: $color-RO_darkblue;
     }
 }
+
+.header__layout__scanner-link {
+    color: $color-RO_darkblue;
+    position: absolute;
+    top: 38px;
+    // right: 450px;
+    left: 30px;
+    min-width: 118px;
+    font-weight: 800;
+    font-size: 20px;
+    display: none;
+
+    @media (min-width: 960px) {
+        display: inline-block;
+    }
+
+    [lang="bg"] & {
+        right: 300px;
+    }
+
+    &:visited {
+        color: $color-RO_darkblue;
+    }
+}

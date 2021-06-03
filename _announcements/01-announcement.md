@@ -5,6 +5,7 @@ published: true
 lang: nl
 # Always set a title:
 title: Maak vanaf 5 juni gebruik van CoronaCheck
+published: false
 ---
 Voor toegang tot sommige events en locaties heb je vanaf 5 juni een negatieve testuitslag nodig. Daar maak je een persoonlijke QR-code van met de CoronaCheck. Laat bij de ingang de QR-code én je identiteitsbewijs zien.
 

@@ -117,9 +117,9 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Voor toegang tot bepaalde locaties of activiteiten heb je een negatieve testuitslag nodig. Met de app bewijs je dat je negatief op corona getest bent.
+  nl: Voor toegang tot bepaalde locaties of activiteiten heb je een negatieve testuitslag nodig. Met de app bewijs je dat je negatief op corona getest bent.<br /><br />Binnenkort kun je met CoronaCheck ook van je vaccinatiebewijs een QR-code maken. Die kun je gebruiken in Nederland of voor reizen binnen Europa. <a href="/nl/faq/39-wanneer-wordt-coronacheck-verder-uitgebreid">Vanaf wanneer kan dat?</a>
   fy: 
-  en: With this app, you are able to prove you've recently tested negative for corona. This gives you access to certain locations or activities. 
+  en: With this app, you are able to prove you've recently tested negative for corona. This gives you access to certain locations or activities.<br /><br />Soon you will also be able to turn your vaccination certificate into a QR code with CoronaCheck. You can use it in the Netherlands or for travel within Europe. <a href="/en/faq/39-wanneer-wordt-coronacheck-verder-uitgebreid">When will that be possible?</a>
   ar: 
   bg: 
   de: 
@@ -1514,9 +1514,9 @@ print-version-url-link:
   en: Make test declaration on paper
 
 about-coronacheck-title:
-  nl: Over CoronaCheck
+  nl: CoronaCheck Scanner
   fy: Oer CoronaCheck
-  en: About CoronaCheck
+  en: CoronaCheck Scanner
   ar: حول CoronaCheck
   bg: За CoronaCheck
   de: Über CoronaCheck
@@ -1527,6 +1527,11 @@ about-coronacheck-title:
   tr: CoronaCheck hakkında
 
 about-coronacheck-content:
-  nl: <p>Met behulp van een testbewijs via de CoronaCheck-app of op papier toon je aan dat je kortgeleden negatief getest bent op corona. Zo kan Nederland meer buiten de deur doen.</p>
+  nl: <p>Wil je weten hoe je als organisatie CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
   fy: 
-  en: <p>With a test declaration via the CoronaCheck app or on paper, you can prove you've recently tested negative for corona. This way, the Netherlands can head out more often. </p>
+  en: <p>Would you like to find out how you as an organisation can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner">Read more about the CoronaCheck Scanner app.</a></p>
+
+intro-scanner-link:
+  nl: Informatie voor organisaties
+  fy: 
+  en: Information for organizations
