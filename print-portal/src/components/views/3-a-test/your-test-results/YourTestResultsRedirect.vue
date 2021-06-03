@@ -44,16 +44,31 @@ export default {
             this.accessToken = new URLSearchParams(params).get('access_token');
             this.$store.commit('setUserConsent', true);
             // mock connection
-            setTimeout(this.retrieveResults, 2000);
+            setTimeout(() => {
+                this.isLoading = false;
+            }, 1000);
         },
-        retrieveResults() {
+        getResult(event) {
             const result = mockData;
-            this.$store.commit('updateHolder', new HolderV3(result.holder));
-            for (const proofEvent of result.events) {
-                this.$store.commit('proofEvents/create', proofEvent);
+            this.$store.commit('proofEvents/clear');
+            switch (event) {
+            case 'negative':
+                this.$store.commit('updateHolder', new HolderV3(result.holder));
+                for (const proofEvent of result.events) {
+                    this.$store.commit('proofEvents/create', proofEvent);
+                }
+                this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
+                break;
+            case 'none':
+                this.$router.push({ name: 'TestResultNone' });
+                break;
+            case 'pending':
+                this.$router.push({ name: 'TestResultPending' });
+                break;
+            case 'not-possible':
+                this.$router.push({ name: 'TestResultNotPossible' });
+                break;
             }
-            this.isLoading = false;
-            this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
         }
     },
     mounted() {
@@ -75,8 +90,38 @@ export default {
                 <Loading
                     :text="'(Mocking digid connection...)'"/>
             </div>
+
+            <div v-else class="mock-choices">
+                Mocking the result, options:<br><br>
+                <button
+                    @click="getResult('negative')">Negative</button>
+
+                <button
+                    @click="getResult('none')">None</button>
+
+                <button
+                    @click="getResult('pending')">Pending</button>
+
+                <button
+                    @click="getResult('not-possible')">Not possible</button>
+            </div>
         </div>
     </Page>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+
+.mock-choices {
+    width: 100%;
+}
+button {
+    background: #ddd;
+    padding: 8px;
+    cursor: pointer;
+    margin: 10px;
+
+    &:hover {
+        background: pink;
+    }
+}
+</style>
