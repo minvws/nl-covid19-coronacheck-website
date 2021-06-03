@@ -24,7 +24,6 @@ export default {
                 <div class="section-block__footer">
                     <button
                         @click="goHome()"
-                        :to="{ name: 'Home' }"
                         type="button"
                         class="btn">
                         {{$t('goBackToStart')}}
