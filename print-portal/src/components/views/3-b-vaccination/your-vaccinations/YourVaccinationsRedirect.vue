@@ -65,10 +65,10 @@ export default {
                 this.$router.push({ name: 'YourVaccinations' });
                 break;
             case 'not-possible':
-                this.$router.push({ name: 'NotPossibleVaccinations' });
+                this.$router.push({ name: 'VaccinationsNotPossible' });
                 break;
             case 'no-vaccinations':
-                this.$router.push({ name: 'NoVaccinations' });
+                this.$router.push({ name: 'VaccinationsNone' });
                 break;
             }
         }

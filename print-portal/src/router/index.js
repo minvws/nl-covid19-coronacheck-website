@@ -17,9 +17,11 @@ import TestResultNone from '@/components/views/3-a-test/unhappy/TestResultNone';
 import CollectVaccination from '@/components/views/3-b-vaccination/collect-vaccination/CollectVaccination'
 import YourVaccinationsRedirect from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinationsRedirect'
 import YourVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinations'
-import NoVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/NoVaccinations'
-import NotPossibleVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/NotPossibleVaccinations'
 import PrintVaccination from '@/components/views/4-print/PrintVaccination';
+// vaccination unhappy
+import VaccinationsNone from '@/components/views/3-b-vaccination/unhappy/VaccinationsNone'
+import VaccinationsNotPossible from '@/components/views/3-b-vaccination/unhappy/VaccinationsNotPossible'
+
 import store from '@/store'
 
 Vue.use(VueRouter)
@@ -90,15 +92,15 @@ const routes = [
         name: 'YourVaccinationsRedirect'
     }, {
         path: '/geen-vaccinaties-beschikbaar',
-        component: NoVaccinations,
-        name: 'NoVaccinations',
+        component: VaccinationsNone,
+        name: 'VaccinationsNone',
         meta: {
             pageHeader: 'error'
         }
     }, {
         path: '/we-kunnen-geen-bewijs-maken',
-        component: NotPossibleVaccinations,
-        name: 'NotPossibleVaccinations',
+        component: VaccinationsNotPossible,
+        name: 'VaccinationsNotPossible',
         meta: {
             pageHeader: 'error'
         }

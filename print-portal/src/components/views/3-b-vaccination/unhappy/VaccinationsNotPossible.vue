@@ -4,7 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
 
 export default {
-    name: 'NotPossibleVaccinations',
+    name: 'VaccinationsNotPossible',
     components: { Page, PageIntro, CcButton },
     methods: {
         goHome() {
