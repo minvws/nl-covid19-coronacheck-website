@@ -1513,7 +1513,7 @@ print-version-url-link:
   fy: 
   en: Make test declaration on paper
 
-about-coronacheck-title:
+for-organisations-title:
   nl: CoronaCheck Scanner
   fy: Oer CoronaCheck
   en: CoronaCheck Scanner
@@ -1526,7 +1526,7 @@ about-coronacheck-title:
   ro: Despre CoronaCheck
   tr: CoronaCheck hakkında
 
-about-coronacheck-content:
+for-organisations-content:
   nl: <p>Wil je weten hoe je als organisatie CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
   fy: 
   en: <p>Would you like to find out how you as an organisation can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner">Read more about the CoronaCheck Scanner app.</a></p>

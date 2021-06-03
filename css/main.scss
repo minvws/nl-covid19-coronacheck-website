@@ -12,7 +12,6 @@ $file-path: "/";
 @import "01-setup/fonts";
 @import "01-setup/basics";
 @import "01-setup/form";
-@import "02-components/announcement";
 @import "02-components/btn";
 @import "02-components/app-badges";
 @import "02-components/skiplinks";
@@ -27,7 +26,8 @@ $file-path: "/";
 // As used on the homepage
 @import "03-partials/section-how-to-use-coronacheck";
 @import "03-partials/section-get-a-print-version";
-@import "03-partials/section-about-coronacheck";
+@import "03-partials/section-for-organisations";
+@import "03-partials/section-announcement";
 @import "03-partials/section-how-your-data-is-handled";
 @import "03-partials/section-faq-highlighted-on-home";
 
