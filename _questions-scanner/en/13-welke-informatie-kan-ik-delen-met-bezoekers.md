@@ -1,10 +1,9 @@
 ---
 index: 6
 set: 2
-title: Which information can I share with our visitors ahead of the pilot event?
+title: Which information can I share with our visitors ahead of our event?
 ---
 The following copy can be used to inform visitors:
-
 
 ---
 To get access to [name of event/activity], you need a digital or printed test certificate in addition to your entrance ticket.

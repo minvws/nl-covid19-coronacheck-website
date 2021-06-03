@@ -1,9 +1,8 @@
 ---
 index: 2
 set: 4
-title: Wat is het verschil tussen de QR-code op papier en in de CoronaCheck-app?
-published: false
+title: What is the difference between the QR code on paper and the code in the CoronaCheck app? 
 ---
-Een testbewijs (de QR-code) op papier is handig voor bezoekers die geen smartphone hebben. In de CoronaCheck-app verandert de QR-code elke paar minuten. Een controleur ziet dus steeds een andere QR-code, waardoor je niet te volgen bent.
+A paper test certificate (the QR code) is useful for visitors who do not have a smartphone. In the CoronaCheck app, the QR code changes every few minutes. A inspector therefore always sees a different QR code, so that you cannot be tracked.
 
-Op papier is dit niet mogelijk. De papieren versie biedt daarom minder privacy. Door regelmatig een nieuwe QR-code te printen kun je dit voorkomen. 
+This is not possible on paper. The paper version therefore offers less privacy. You can prevent this by regularly printing a new QR code.

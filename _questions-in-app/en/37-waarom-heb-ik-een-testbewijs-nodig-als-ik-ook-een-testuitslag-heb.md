@@ -1,10 +1,10 @@
 ---
 index: 2
 set: 4
-title: Waarom heb ik een testbewijs nodig als ik ook een testuitslag heb?
-published: false
+title: Why do I need a test certificate if I already have a test result? 
 ---
-Daar zijn twee redenen voor:
+You need a test certificate for two reasons:
 
-- Een testbewijs is voorzien van een digitale handtekening. Deze handtekening zorgt dat de uitslag lastig te veranderen of te vervalsen is. 
-- Een testbewijs is privacyvriendelijker dan de testuitslag. In een testbewijs staan veel minder persoonsgegevens dan in de testuitslag, namelijk alleen je initialen en je geboortedag en -maand.
+- a test certificate has been provided with a digital signature. This signature makes it difficult to change or falsify the result.
+- A test certificate is more privacy-friendly than the test result. A test certificate contains much less personal data than the test result, namely only your initials and your date and month of birth.
+ 

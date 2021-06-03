@@ -1,10 +1,10 @@
 ---
 layout: in-app-content
-lang: nl
+lang: en
 title: Take a coronavirus test
 redirect_from: /testafspraak-in-app
 ---
-Throughout the Netherlands, pilot events and activities are organized where a valid negative test certificate is mandatory. Have you signed up for a pilot?
+A negative test certificate is required for access to certain locations or activities. So get yourself tested beforehand.
 
 ## No symptoms?
 Get tested via one of the test locations that is affiliated with Testen voor Toegang.

@@ -7,6 +7,7 @@ A red screen means the visitor’s QR code is not valid. This does not mean the 
 
 - Check if the visitor has used a screenshot instead of the QR code directly from the app. Scanning a screenshot will lead to a red screen.
 - Ask the visitor to restart the app. And try scanning again. 
+- Check the time on the visitor's phone. If the time is incorrect, this can result in a red screen.
 - Keep getting a red screen while the visitor has a negative test result? Please refer them to our helpdesk at <a href="tel:0800-1421">0800-1421</a>
 
 At all times, a green screen is required for access. Does the visitor not have a (valid) QR code? Then they’re not allowed access. 

@@ -20,6 +20,7 @@ A red screen does not mean the visitor has tested positive for corona. It simply
 
 - Check if the visitor has used a screenshot instead of the QR code directly from the app. Scanning a screenshot will lead to a red screen.
 - Ask the visitor to restart the app. And try scanning again. 
+- Check the time on your visitor's phone. If the time is incorrect, this can result in a red screen.
 - Keep getting a red screen while the visitor does have a negative test result? Please refer the visitor to our helpdesk at <a href="tel:0800-1421">0800-1421</a>.
 
 At all times, a green screen is required for access. If the visitor doesn’t have a (valid) QR code, you can’t give them access. For more information, visit [www.coronacheck.nl/scanner](/en/scanner).
