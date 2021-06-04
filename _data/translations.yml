@@ -1500,7 +1500,7 @@ print-version-url-link:
   fy: 
   en: Make test certificate on paper
 
-for-organisations-title:
+about-coronacheck-scanner-title:
   nl: CoronaCheck Scanner
   fy: Oer CoronaCheck
   en: CoronaCheck Scanner
@@ -1513,12 +1513,7 @@ for-organisations-title:
   ro: Despre CoronaCheck
   tr: CoronaCheck hakkında
 
-for-organisations-content:
-  nl: <p>Wil je weten hoe je als organisatie CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
+about-coronacheck-scanner-content:
+  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
   fy: 
-  en: <p>Would you like to find out how you as an organisation can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner">Read more about the CoronaCheck Scanner app.</a></p>
-
-intro-scanner-link:
-  nl: Informatie voor organisaties
-  fy: 
-  en: Information for organizations
+  en: <p>Would you like to find out how you can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner">Read more about the CoronaCheck Scanner app.</a></p>
