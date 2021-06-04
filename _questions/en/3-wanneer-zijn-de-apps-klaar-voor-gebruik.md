@@ -1,8 +1,8 @@
 ---
 index: 3
 set: 1
-title: When are the apps ready to be used? 
+title: When are the apps ready to use? 
 ---
-From June 5, you will need a negative test result to access some activities and locations. You can turn that into a personal QR code with CoronaCheck. Show the QR code and your ID at the entrance.
+From June 5, you need a negative test result to enter certain locations and activities. With CoronaCheck, you turn this test result into a personal QR code. Show the QR code and your proof of identity at the entrance.
 
-From the beginning of July you can also use CoronaCheck to create a personal QR code from your vaccination certificate. You can use this in the Netherlands or for travel to other countries in the European Union.
+From early July, you can use CoronaCheck to turn your vaccination certificate into a personal QR code. You can use it in The Netherlands or to travel to other countries in the European Union.

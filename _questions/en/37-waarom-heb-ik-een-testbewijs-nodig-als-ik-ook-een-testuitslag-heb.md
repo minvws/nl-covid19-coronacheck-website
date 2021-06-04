@@ -1,10 +1,9 @@
 ---
 index: 2
 set: 4
-title: Why do I need a test certificate if I already have a test result? 
+title: Why do I need a test certificate if I’ve also got a test result?
 ---
-You need a test certificate for two reasons:
+There are 2 reasons for this:
 
-- a test certificate has been provided with a digital signature. This signature makes it difficult to change or falsify the result.
-- A test certificate is more privacy-friendly than the test result. A test certificate contains much less personal data than the test result, namely only your initials and your date and month of birth.
- 
+- A test certificate includes a digital autograph. This autograph makes the result difficult to change or forge.
+- A test certificate is more privacy-friendly than a test result. A test certificate includes far less personal information than a test result – only your initials, birth month, and day of birth.

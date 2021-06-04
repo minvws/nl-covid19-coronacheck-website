@@ -1,15 +1,13 @@
 ---
 index: 14
 set: 7
-title: My QR code has been scanned but gives a red screen. What do I do?
+title: My QR code was scanned but results in a red screen. What should I do now?
 ---
-A red screen means your QR code is not valid. Always display your QR code directly from the CoronaCheck app. A screenshot or other duplicate of a QR code is not valid and will lead to a red screen.
+Red screen? That means your test certificate in the form of a QR code is invalid. So there’s no evidence of a recent negative test result, or your test certificate has expired. Here’s what you can do:
 
-Here’s what you can do:
+- Always show the QR code using the CoronaCheck app. A screenshot or copy of a QR code from the app will always lead to a red screen.
+- Check the time on your phone. If the time on your phone is ahead, behind, or set to a different time zone, this can lead to a red screen.
+- Completely close the CoronaCheck app. Then start it again and have your QR code scanned once more.
+- Keep getting a red screen even though you have a valid test certificate? Contact the CoronaCheck helpdesk. Phone number: <a href="tel:0800-1421">0800-1421</a>
 
-- Always display your QR code directly from the CoronaCheck app. A screenshot or copy from the QR code from the app will always generate a red screen
-- Check the time on your phone. If it’s incorrect, this can result in a red screen.
-- Close the CoronaCheck app. Restart the app and have your QR code scanned again
-- Keep getting a red screen despite having a valid test certificate? Contact the CoronaCheck helpdesk by phone at <a href="tel:0800-1421">0800-1421</a>
-
-You’ll always need a green screen to get access, which is why you need to display your valid QR code, either digitally or printed. Don’t have a valid test certificate? Then, unfortunately, you’re not allowed access. 
+You always need a green screen to enter. So show your valid QR code in the app, or show the paper version. Don’t have a valid test certificate? Unfortunately, this means you can’t enter.

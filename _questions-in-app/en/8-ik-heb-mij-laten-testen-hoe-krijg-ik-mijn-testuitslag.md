@@ -1,10 +1,6 @@
 ---
 index: 2
 set: 6
-title: I've taken a test, how do I get my results? 
-published: false
+title: I’ve gotten tested, how do I get my result?
 ---
-If you've been tested for a field trial, you will receive your test results via email.
-The email will also include a code. This code can be used to download your test results to the CoronaCheck app or at [www.coronacheck.nl/en/print](/en/print) where you can generate a QR code. The QR code serves as your test certificate. 
-
-For more questions about testing for the pilot events, go to <a href="https://www.testenvoortoegang.nl" target="_blank" rel="noopener noreferrer" hreflang="nl">testenvoortoegang.nl</a>. 
+The test location gives you your test result. This result includes a retrieval code. With this code, you can retrieve your test result with the CoronaCheck app or on [www.coronacheck.nl/en/print](/en/print) and turn it into a QR code. This QR code is your test certificate.
