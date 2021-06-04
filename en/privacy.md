@@ -20,7 +20,7 @@ You can download the CoronaCheck app on your mobile phone from the Apple App Sto
 
 To display a printed corona admission ticket, you can generate a corona admission ticket at coronacheck.nl by entering the retrieval code you have received with your test results. You then receive an additional verification code via SMS, that you also enter on the website. After checking both codes, the same process is initiated as when generating a digital corona admission ticket: the test results are retrieved from and signed by the test provider. After signing by the signing service, a QR code is generated which serves as your corona admission ticket. Your identifying data is both part of this QR code and included underneath the QR code. You can print the corona admission ticket off as a hard copy.
 
-To get access to a pilot event, you have your QR code (in the app or on paper) scanned at the entrance. The scanner at the entrance uses the CoronaCheck Scanner app to scan your QR code. Do you have a valid QR code as well as an admission ticket? Then you’re welcome to enter.
+To get access to certain locations or activities, you have your QR code (in the app or on paper) scanned at the entrance. The scanner at the entrance uses the CoronaCheck Scanner app to scan your QR code. Do you have a valid QR code as well as an admission ticket? Then you’re welcome to enter.
 
 The QR code is valid for 40 hours (both digital and on paper). This is calculated from the time of taking the COVID-19 test.
 
