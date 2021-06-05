@@ -1,15 +1,14 @@
-
 .footer-samen {
     padding: 2.2rem 1.4rem 5rem 1.4em;
     max-width: 940px;
     flex-direction: column;
 
-    @media(min-width: 740px) {
+    @media (min-width: 740px) {
         padding: 3.2rem 1.4rem 2rem 1.4em;
         display: flex;
     }
 
-    @media(min-width: 960px) {
+    @media (min-width: 960px) {
         padding-top: 5em;
         margin: 0 auto;
     }
@@ -17,7 +16,7 @@
 
 .footer-samen__logo {
     position: relative;
-   
+
     > img {
         display: block;
         width: 100%;
@@ -35,27 +34,6 @@
     }
 }
 
-.footer-samen__follow {
-    margin-top: 2em;
-    font-size: 1.4em;
-    font-weight: 600;
-
-    span.md-highlight {
-        color: $color-coronacheck_blue;
-    }
-
-    @media (min-width: 740px) {
-        margin-top: 0.5rem;
-        margin-left: 2em;
-    }
-
-    @media (min-width: 960px) {
-        margin-left: 120px;
-        margin-top: 0.2rem;
-        font-size: 32px;
-    }
-}
-
 //
 // Phone footer
 //
@@ -67,7 +45,7 @@
     font-size: 16px;
     margin-bottom: 2em;
 
-    @media(min-width: 740px) {
+    @media (min-width: 740px) {
         padding-top: 3rem;
         padding-bottom: 3rem;
         display: flex;
@@ -104,13 +82,12 @@
     }
 }
 
-
 //
 // Regular footer
 //
 
 .footer {
-    background: #0E6999;
+    background: #0e6999;
 
     *:focus {
         outline-color: $color-focus-footer;
@@ -129,17 +106,17 @@
     font-size: 1em;
     line-height: 1em;
     color: #fff;
-    
+
     @media (min-width: 740px) {
         margin-right: 1.6em;
         margin-left: 1.6em;
         padding-bottom: 2.5em;
     }
-    
+
     @media (min-width: 960px) {
         margin: 4.8em auto 0 auto;
     }
-    
+
     @media (min-width: 1200px) {
         //padding-bottom: 0.4em;
     }
@@ -148,14 +125,15 @@
 .footer-links {
     font-size: 16px;
     line-height: 1.38em;
-    
-    a, a:visited {
+
+    a,
+    a:visited {
         color: #fff;
         position: relative;
     }
 
     li > a:before {
-        content: '';
+        content: "";
         position: absolute;
         height: 10px;
         width: 10px;
@@ -168,7 +146,7 @@
     }
 
     h2 {
-        margin-top:28px;
+        margin-top: 28px;
         color: #fff;
         margin-bottom: 20px;
         font-size: 20px;
@@ -189,28 +167,28 @@
         list-style: none;
         margin-bottom: 0.4em;
         padding-left: 20px;
-        
+
         a {
             display: block;
         }
     }
 
-    @media(min-width: 960px) {
+    @media (min-width: 960px) {
         display: flex;
     }
 }
 
 .footer-links-col {
-    @media(min-width: 960px) {
+    @media (min-width: 960px) {
         padding: 0 50px 0 0;
     }
 
-    @media(min-width: 960px) {
+    @media (min-width: 960px) {
         &.___desktop-33 {
             // order: 2;
             width: 33.3%;
         }
-        
+
         &.___desktop-66 {
             // order: 1;
             width: 66.6%;
@@ -220,7 +198,7 @@
             // order: 2;
             width: 50%;
         }
-        
+
         &.___desktop-25 {
             // order: 1;
             width: 25%;

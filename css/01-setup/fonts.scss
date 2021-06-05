@@ -1,25 +1,25 @@
 @font-face {
-    font-family: 'RO Sans';
-    src: url('#{$file-path}fonts/ROsanswebtextregular.woff2') format('woff2'),
-         url('#{$file-path}fonts/ROsanswebtextregular.woff') format('woff');
+    font-family: "RO Sans";
+    src: url("#{$file-path}fonts/ROsanswebtextregular.woff2") format("woff2"),
+        url("#{$file-path}fonts/ROsanswebtextregular.woff") format("woff");
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'RO Sans';
-    src: url('#{$file-path}fonts/ROsanswebtextbold.woff2') format('woff2'),
-         url('#{$file-path}fonts/ROsanswebtextbold.woff') format('woff');
+    font-family: "RO Sans";
+    src: url("#{$file-path}fonts/ROsanswebtextbold.woff2") format("woff2"),
+        url("#{$file-path}fonts/ROsanswebtextbold.woff") format("woff");
     font-weight: 600;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: local(''),
-        url('#{$file-path}fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('#{$file-path}fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""), url("#{$file-path}fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("#{$file-path}fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

@@ -3,6 +3,6 @@ index: 3
 set: 1
 title: Wanneer zijn de apps klaar voor gebruik?
 ---
-CoronaCheck en CoronaCheck Scanner worden op dit moment getest tijdens de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>pilots 'Testen voor Toegang'</a>. Zo zien we of de apps goed werken en hoe ze verbeterd kunnen worden.
+Voor toegang tot sommige activiteiten en locaties heb je vanaf 5 juni een negatieve testuitslag nodig. Daar maak je een persoonlijke QR-code van met CoronaCheck. Laat bij de ingang de QR-code én je identiteitsbewijs zien.
 
-De apps worden pas ingezet als de wet is goedgekeurd. Vragen om een testbewijs kan namelijk tijdelijk verplicht worden voor bepaalde sectoren. Dat betekent (indirect) dat de bezoeker zich moet laten testen. Daar is wetgeving voor nodig.
+Vanaf begin juli kun je CoronaCheck ook gebruiken om een persoonlijke QR-code te maken van je vaccinatiebewijs. Deze kun je in Nederland gebruiken of voor reizen naar andere landen in de Europese Unie.
