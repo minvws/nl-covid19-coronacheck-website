@@ -51,8 +51,8 @@ export default {
     input[type=checkbox] {
         width: 28px;
         height: 28px;
-        border-radius: 50%;
         margin-right: 20px;
+        border-radius: 3px;
         border: 1px solid $color-darkgrey;
         cursor: pointer;
     }
