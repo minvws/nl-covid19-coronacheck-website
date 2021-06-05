@@ -13,9 +13,10 @@ can find all code on [GitHub](https://github.com/minvws). This way, the precise
 way the app works is verifiable and controllable by many people, who can also
 help discover any potential vulnerabilities.
 
-## Bijdragen
+## Contributions
 
-Aside from the authors of the various open source, 3rd-party libraries, we have received contributions from many others.
+Aside from the authors of the various open source, 3rd-party libraries, we have received contributions from many others, for example <a href="/humans.txt">these people<span class="screen-reader-text"> who worked on the apps and website</span></a>.
+
 
 ## Application Licences, Terms & Conditions and Disclaimers
 

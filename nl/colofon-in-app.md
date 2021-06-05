@@ -12,7 +12,7 @@ De broncode van de app en de achterliggende systemen zijn volledig openbaar. Je 
 
 ## Bijdragen
 
-Naast de auteurs van de diverse open source, hebben we bijdragen ontvangen van heel veel andere mensen. 
+Naast de auteurs van de diverse open source, 3rd party bibliotheken hebben we bijdragen ontvangen van heel veel andere mensen, waaronder <a href="/humans.txt">deze <span class="screen-reader-text"> mensen die aan de apps en website hebben gebouwd</span></a>.
 
 ## Applicatie licenties, Condities en Disclaimers applicatie
 
