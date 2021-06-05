@@ -137,4 +137,4 @@ If you have a question of complaint about the CoronaCheck Scanner app, please co
 
 Version 1.2.
 
-Last updated: 26 May 2021. 
+Last updated: 3 June 2021. 

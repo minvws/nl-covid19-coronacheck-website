@@ -137,4 +137,4 @@ Indien u een vraag of klacht over CoronaCheck Scanner heeft, kijk dan voor meer 
 
 Versie 1.2.
 
-Laatste update: 26 mei 2021. 
+Laatste update: 3 Juni 2021. 
