@@ -16,7 +16,7 @@ help discover any potential vulnerabilities.
 
 ## Contributions
 
-Aside from the authors of the various open source, 3rd-party libraries, we have received contributions from many others, for example <a href="/humans.txt">these people<span class="screen-reader-text"> who worked on the apps and website</span></a>.
+Aside from the authors of the various open source, 3rd-party libraries, we have received contributions from many <a href="/humans.txt">people</a>.
 
 ## Application Licences, Terms & Conditions and Disclaimers
 
