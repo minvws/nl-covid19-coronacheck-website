@@ -106,5 +106,5 @@ The Minister is concerned with the protection of your personal data and has take
 
 ### 11. Security of your personal data
 
-This privacy statement is subject to change. In case of any changes, we will publish the amended privacy statement on our website, after which the amended privacy statement will take effect immediately. Last updated on 26 May 2021.
+This privacy statement is subject to change. In case of any changes, we will publish the amended privacy statement on our website, after which the amended privacy statement will take effect immediately. Last updated on 3 June 2021.
  

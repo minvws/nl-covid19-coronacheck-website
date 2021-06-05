@@ -106,4 +106,4 @@ De minister neemt de bescherming van uw persoonsgegevens serieus en heeft bij de
 
 ### 	11. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 27 mei 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 3 juni 2021.
