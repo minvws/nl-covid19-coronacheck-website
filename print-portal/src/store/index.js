@@ -5,6 +5,7 @@ import modal from './modules/modal';
 import languages from './modules/languages';
 import testProviders from './modules/testProviders';
 import proofEvents from './modules/proofEvents';
+import signedEvents from './modules/signedEvents';
 
 Vue.use(Vuex)
 
@@ -101,6 +102,7 @@ export default new Vuex.Store({
         modal,
         languages,
         testProviders,
-        proofEvents
+        proofEvents,
+        signedEvents
     }
 })

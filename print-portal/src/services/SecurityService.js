@@ -2,14 +2,14 @@ import Oidc from 'oidc-client';
 
 // todo redirect uri's should handle language
 
-// const options = {
-//     userStore: new Oidc.WebStorageStateStore(),
-//     authority: 'https://dev-51odbhlm.eu.auth0.com',
-//     client_id: '3GPG1OoyjiI94HT2uRszIaBK9041LtAt',
-//     response_type: 'code'
-// }
+const optionsTest = {
+    userStore: new Oidc.WebStorageStateStore(),
+    authority: 'https://dev-51odbhlm.eu.auth0.com',
+    client_id: '3GPG1OoyjiI94HT2uRszIaBK9041LtAt',
+    response_type: 'code'
+}
 
-const options = {
+const optionsTVS = {
     userStore: new Oidc.WebStorageStateStore(),
     authority: 'https://tvs-connect.acc.coronacheck.nl',
     client_id: 'test_client',
@@ -17,12 +17,12 @@ const options = {
 }
 
 const mgrVaccination = new Oidc.UserManager({
-    ...options,
+    ...optionsTVS,
     redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties-redirect'
 })
 
 const mgrNegativeTest = new Oidc.UserManager({
-    ...options,
+    ...optionsTest,
     redirect_uri: window.location.origin + '/nl/print/jouw-testresultaat-redirect'
 })
 

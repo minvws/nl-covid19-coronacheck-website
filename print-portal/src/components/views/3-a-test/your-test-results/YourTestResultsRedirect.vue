@@ -4,6 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
 import mockData from '@/data/mock/data';
 import HolderV3 from '@/classes/holder/HolderV3';
+import signedEventsTool from '@/tools/signed-events'
 
 export default {
     name: 'YourTestResultsRedirect',
@@ -68,6 +69,13 @@ export default {
             case 'not-possible':
                 this.$router.push({ name: 'TestResultNotPossible' });
                 break;
+            case 'test-bsn':
+                this.isLoading = true;
+                signedEventsTool.collect().then(signedEvents => {
+                    this.$store.commit('signedEvents/createAll', signedEvents);
+                    this.isLoading = false;
+                    this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
+                });
             }
         }
     },
@@ -93,6 +101,9 @@ export default {
 
             <div v-else class="mock-choices">
                 Mocking the result, options:<br><br>
+                <button
+                    @click="getResult('test-bsn')">Use test BSN</button>
+
                 <button
                     @click="getResult('negative')">Negative</button>
 

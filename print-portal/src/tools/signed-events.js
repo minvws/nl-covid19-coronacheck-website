@@ -60,10 +60,6 @@ const getEvent = async (tokenSet) => {
     })
 }
 
-// const decrypt = (string) => {
-//     return JSON.parse(atob(string))
-// }
-
 export default {
     collect
 }
