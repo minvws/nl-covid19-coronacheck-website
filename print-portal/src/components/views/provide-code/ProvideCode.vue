@@ -234,18 +234,6 @@ export default {
                 });
             })
         },
-        // handleError(response) {
-        //     if (response.data && response.data.payload) {
-        //         const payload = JSON.parse(atob(response.data.payload));
-        //         if (payload.status) {
-        //             return payload.status;
-        //         } else {
-        //             return 'unknown_error';
-        //         }
-        //     } else {
-        //         return 'unknown_error';
-        //     }
-        // },
         back() {
             this.$router.push({ name: 'Home' });
         }
