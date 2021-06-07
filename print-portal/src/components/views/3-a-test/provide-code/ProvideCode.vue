@@ -6,9 +6,6 @@ import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
 import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
-import dateTool from '@/tools/date';
-import HolderV2 from '@/classes/holder/HolderV2';
-import { negativeTestConversionV2ToV3 } from '@/tools/version-conversion'
 
 export default {
     name: 'ProvideCode',
@@ -121,15 +118,9 @@ export default {
                 this.verificationCodeStatus.error = this.$t('views.provideCode.emptyVerificationCode');
             }
         },
-        addNegativeTestV2(signature, payload) {
-            this.setTimerForValidityTestResult(payload.result);
+        addNegativeTestV2(signedEvent) {
             this.testCodeStatus.error = '';
-            const negativeTestV3 = negativeTestConversionV2ToV3(payload.result);
-            this.$store.commit('updateHolder', new HolderV2(payload.result.holder));
-            for (const proofEvent of negativeTestV3.events) {
-                this.$store.commit('proofEvents/create', proofEvent);
-            }
-            this.$store.commit('setSignature', signature);
+            this.$store.commit('signedEvents/createAll', [signedEvent]);
             this.$router.push({ name: 'YourTestResult', params: { flow: '2.0' } });
         },
         async getSignedResult(options) {
@@ -162,7 +153,7 @@ export default {
                             this.$store.commit('setTestResultStatus', 'unknown_error')
                         }
                         if (this.testResultStatus === 'complete') {
-                            this.addNegativeTestV2(response.data, payload)
+                            this.addNegativeTestV2(response.data)
                         } else if (this.testResultStatus === 'pending') {
                             this.$router.push({ name: 'TestResultPending' })
                         }
@@ -213,32 +204,32 @@ export default {
                 })
             })
         },
-        setTimerForValidityTestResult(testResult) {
-            if (this.timer) {
-                clearTimeout(this.timer);
-            }
-            this.$axios({
-                method: 'get',
-                url: '/holder/config'
-            }).then((response) => {
-                const dateNow = response.headers.date;
-                const dateSample = testResult.sampleDate;
-                const maxValidity = this.$store.state.holderConfig.maxValidityHours;
-                const invalidAt = dateTool.addHoursToDate(dateSample, maxValidity, false);
-                const timeToInvalidation = invalidAt.getTime() - new Date(dateNow).getTime();
-                this.timer = setTimeout(() => {
-                    this.$store.commit('clearAll');
-                    this.$store.commit('modal/set', {
-                        messageHead: this.$t('message.error.expiredTestCode.head'),
-                        messageBody: this.$t('message.error.expiredTestCode.body'),
-                        closeButton: true
-                    });
-                    this.$router.push({ name: 'ProvideCode' });
-                }, timeToInvalidation)
-            }).catch((error) => {
-                console.log(error);
-            })
-        },
+        // setTimerForValidityTestResult(testResult) {
+        //     if (this.timer) {
+        //         clearTimeout(this.timer);
+        //     }
+        //     this.$axios({
+        //         method: 'get',
+        //         url: '/holder/config'
+        //     }).then((response) => {
+        //         const dateNow = response.headers.date;
+        //         const dateSample = testResult.sampleDate;
+        //         const maxValidity = this.$store.state.holderConfig.maxValidityHours;
+        //         const invalidAt = dateTool.addHoursToDate(dateSample, maxValidity, false);
+        //         const timeToInvalidation = invalidAt.getTime() - new Date(dateNow).getTime();
+        //         this.timer = setTimeout(() => {
+        //             this.$store.commit('clearAll');
+        //             this.$store.commit('modal/set', {
+        //                 messageHead: this.$t('message.error.expiredTestCode.head'),
+        //                 messageBody: this.$t('message.error.expiredTestCode.body'),
+        //                 closeButton: true
+        //             });
+        //             this.$router.push({ name: 'ProvideCode' });
+        //         }, timeToInvalidation)
+        //     }).catch((error) => {
+        //         console.log(error);
+        //     })
+        // },
         handleError(response) {
             if (response.data && response.data.payload) {
                 const payload = JSON.parse(atob(response.data.payload));

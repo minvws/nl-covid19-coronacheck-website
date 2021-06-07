@@ -19,6 +19,7 @@ export default {
             const callback = () => {
                 // todo cancel all processes
                 console.log('cancelling processes');
+                this.$store.commit('signedEvents/clear');
                 this.$router.push({ name: 'ChoiceTestLocation' });
             }
             if (this.isLoading) {
@@ -32,6 +33,7 @@ export default {
                     closeButton: false
                 })
             } else {
+                this.$store.commit('signedEvents/clear');
                 this.$router.push({ name: 'ChoiceTestLocation' });
             }
         },
