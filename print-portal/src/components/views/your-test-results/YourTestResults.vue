@@ -41,6 +41,12 @@ export default {
                             this.$store.commit('setQrCode', response.data.qr.data);
                             this.$store.commit('setQrData', response.data.qr.attributesIssued);
                             this.$router.push({ name: 'Print' });
+                        } else {
+                            this.$store.commit('modal/set', {
+                                messageHead: this.$t('generalError'),
+                                messageBody: this.$t('generalErrorBody'),
+                                closeButton: true
+                            });
                         }
                     }).catch((error) => {
                         this.$store.commit('modal/set', {

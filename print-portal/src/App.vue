@@ -27,7 +27,11 @@ export default {
                     this.$store.commit('setHolderConfig', holderConfig);
                 }
             }).catch((error) => {
-                console.log(error);
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('generalError'),
+                    messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
+                    closeButton: true
+                });
             })
         },
         async getTestProviders() {
