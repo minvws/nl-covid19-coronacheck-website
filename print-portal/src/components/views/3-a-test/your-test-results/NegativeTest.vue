@@ -1,25 +1,25 @@
 <script>
 import dateTool from '@/tools/date';
-import ProofEvent from '@/classes/events/ProofEvent';
+import SignedEvent from '@/classes/events/SignedEvent';
 
 export default {
     name: 'NegativeTest',
     components: {},
     props: {
-        negativeTestProofEvent: {
-            type: ProofEvent,
+        signedEvent: {
+            type: SignedEvent,
             required: true
         }
     },
     computed: {
         negativeTest() {
-            return this.negativeTestProofEvent.negativetest;
+            return this.signedEvent.event.negativetest;
         },
         date() {
             return dateTool.dateTimeToString(this.negativeTest.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
         },
         holder() {
-            return this.$store.state.holder;
+            return this.signedEvent.holder;
         }
     },
     methods: {
@@ -41,7 +41,7 @@ export default {
                     testType,
                     testLocation,
                     sampleDate: this.date,
-                    identificationCode: this.negativeTestProofEvent.unique
+                    identificationCode: this.signedEvent.event.unique
                 }
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.info.testResultAbout.head'),
@@ -59,7 +59,7 @@ export default {
                     testLocation: this.negativeTest.facility,
                     sampleDate: this.date,
                     manufacturer: manufacturer ? manufacturer.name : '-',
-                    identificationCode: this.negativeTestProofEvent.unique
+                    identificationCode: this.signedEvent.event.unique
                 }
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.info.testResultAbout.head'),

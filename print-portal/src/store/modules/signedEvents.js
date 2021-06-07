@@ -1,4 +1,5 @@
 import _base from './_base-module';
+import SignedEvent from '@/classes/events/SignedEvent';
 
 const state = {
     all: []
@@ -18,10 +19,10 @@ const getters = {
             const holder = result.holder;
             for (const event of result.events) {
                 if (event.type === type) {
-                    proofEvents.push({
+                    proofEvents.push(new SignedEvent({
                         holder,
                         event
-                    })
+                    }))
                 }
             }
         }

@@ -15,9 +15,10 @@ export default {
     },
     computed: {
         negativeTestProofEvents() {
-            return this.$store.getters['proofEvents/getProofEvents']('negativetest');
+            return this.$store.getters['signedEvents/getProofEvents']('negativetest');
         },
         latestNegativeTestProofEvent() {
+            console.log(this.negativeTestProofEvents);
             if (this.negativeTestProofEvents.length > 0) {
                 if (this.negativeTestProofEvents.length === 1) {
                     return this.negativeTestProofEvents[0];
@@ -26,7 +27,7 @@ export default {
                     // we sort them and pick the most recent
                     const negativeTestProofEvents = this.negativeTestProofEvents.slice();
                     return negativeTestProofEvents.sort((a, b) => {
-                        return new Date(b.negativetest.sampleDate) - new Date(a.negativetest.sampleDate);
+                        return new Date(b.event.negativetest.sampleDate) - new Date(a.event.negativetest.sampleDate);
                     })[0];
                 }
             } else {
@@ -120,7 +121,7 @@ export default {
                 <div class="section-block">
                     <div class="proof-events">
                         <NegativeTest
-                            :negative-test-proof-event="latestNegativeTestProofEvent"/>
+                            :signed-event="latestNegativeTestProofEvent"/>
                     </div>
                     <div class="section-block__footer">
                         <CcButton

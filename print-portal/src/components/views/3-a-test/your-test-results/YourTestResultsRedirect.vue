@@ -2,8 +2,6 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
-import mockData from '@/data/mock/data';
-import HolderV3 from '@/classes/holder/HolderV3';
 import signedEventsTool from '@/tools/signed-events'
 
 export default {
@@ -50,16 +48,8 @@ export default {
             }, 1000);
         },
         getResult(event) {
-            const result = mockData;
-            this.$store.commit('proofEvents/clear');
+            this.$store.commit('signedEvents/clear');
             switch (event) {
-            case 'negative':
-                this.$store.commit('updateHolder', new HolderV3(result.holder));
-                for (const proofEvent of result.events) {
-                    this.$store.commit('proofEvents/create', proofEvent);
-                }
-                this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
-                break;
             case 'none':
                 this.$router.push({ name: 'TestResultNone' });
                 break;
@@ -103,9 +93,6 @@ export default {
                 Mocking the result, options:<br><br>
                 <button
                     @click="getResult('test-bsn')">Use test BSN</button>
-
-                <button
-                    @click="getResult('negative')">Negative</button>
 
                 <button
                     @click="getResult('none')">None</button>
