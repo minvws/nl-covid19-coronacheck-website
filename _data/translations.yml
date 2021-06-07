@@ -648,19 +648,6 @@ coronacheck-lead-title:
 #  De app wurket yn it Frysk allinne op Android tastellen dy’t Frysk as systeemtaal stypje. Do kinst Frysk as taal foar dy tastellen yn de ynstellingen fan Android ynstelle. iPhones stypje Frysk as systeemtaal spitigernôch net. Yn de oare talen kin yn de Appstore hjir de app wol delhelle wurde.
 
 # info-caveat-letop-fy: 'Tink derom:'
-
-scanner-lead: 
-  nl: "Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde sociale, culturele of sportieve locaties. Maar alleen als uit de coronatest blijkt dat zij geen corona hebben. Kijk op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid</a> om te zien welke pilots er in april worden gedaan met testen voor toegang."
-  fy: 
-  en: 
-  ar: 
-  bg: 
-  de: 
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr: 
   
 scanner-lead-title:
   nl: Download de CoronaCheck Scanner-app
@@ -1513,10 +1500,10 @@ print-version-url-link:
   fy: 
   en: Make certificate on paper
 
-about-coronacheck-title:
-  nl: Over CoronaCheck
+about-coronacheck-scanner-title:
+  nl: CoronaCheck Scanner
   fy: Oer CoronaCheck
-  en: About CoronaCheck
+  en: CoronaCheck Scanner
   ar: حول CoronaCheck
   bg: За CoronaCheck
   de: Über CoronaCheck
@@ -1526,7 +1513,7 @@ about-coronacheck-title:
   ro: Despre CoronaCheck
   tr: CoronaCheck hakkında
 
-about-coronacheck-content:
-  nl: <p>Met behulp van CoronaCheck bewijzen bezoekers dat ze gevaccineerd zijn. Of dat ze kortgeleden negatief getest zijn op corona. Zo kunnen Nederlanders meer buiten de deur doen en weer op reis binnen de Europese Unie.</p>
+about-coronacheck-scanner-content:
+  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
   fy: 
-  en: <p>With a certificate via the CoronaCheck app or on paper, you can prove you've been vaccinated. Or you’ve recently tested negative for corona. This way, Dutch people can head out more often. And even travel abroad within the European Union.</p>
+  en: <p>Would you like to find out how you can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner">Read more about the CoronaCheck Scanner app.</a></p>

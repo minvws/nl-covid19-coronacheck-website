@@ -4,7 +4,7 @@ lang: en
 showBreadCrumbs: true
 title: CoronaCheck app and printed corona admission ticket Privacy Statement 
 ---
-This privacy policy is written for the use of the CoronaCheck app and the CoronaCheck Scanner app after the Temporary Corona Admission Tickets Law goes into effect on 2 June 2021 and outlines how personal information of persons who generate and use a corona admission ticket is processed and which technical and organisational measures have been taken to protect this personal information. A second option in addition to the CoronaCheck app is to print off a hard copy of the corona admission ticket. This privacy statement also outlines how to generate a hard copy of your corona admission ticket
+This privacy policy is written for the use of the CoronaCheck app and the CoronaCheck Scanner app after the Temporary Corona Admission Tickets Law goes into effect on 1 June 2021 and outlines how personal information of persons who generate and use a corona admission ticket is processed and which technical and organisational measures have been taken to protect this personal information. A second option in addition to the CoronaCheck app is to print off a hard copy of the corona admission ticket. This privacy statement also outlines how to generate a hard copy of your corona admission ticket
 
 ## About CoronaCheck and the printed corona admission ticket
 
@@ -20,7 +20,7 @@ You can download the CoronaCheck app on your mobile phone from the Apple App Sto
 
 To display a printed corona admission ticket, you can generate a corona admission ticket at coronacheck.nl by entering the retrieval code you have received with your test results. You then receive an additional verification code via SMS, that you also enter on the website. After checking both codes, the same process is initiated as when generating a digital corona admission ticket: the test results are retrieved from and signed by the test provider. After signing by the signing service, a QR code is generated which serves as your corona admission ticket. Your identifying data is both part of this QR code and included underneath the QR code. You can print the corona admission ticket off as a hard copy.
 
-To get access to a pilot event, you have your QR code (in the app or on paper) scanned at the entrance. The scanner at the entrance uses the CoronaCheck Scanner app to scan your QR code. Do you have a valid QR code as well as an admission ticket? Then you’re welcome to enter.
+To get access to certain locations or activities, you have your QR code (in the app or on paper) scanned at the entrance. The scanner at the entrance uses the CoronaCheck Scanner app to scan your QR code. Do you have a valid QR code as well as an admission ticket? Then you’re welcome to enter.
 
 The QR code is valid for 40 hours (both digital and on paper). This is calculated from the time of taking the COVID-19 test.
 
@@ -30,7 +30,7 @@ The Minister of Health, Welfare and Sport (hereinafter: ‘the Minister’) is r
 
 ### 2. Grounds for processing of personal information
 
-Under Article 9 of the GDPR, in principle a processing prohibition applies to personal information relating to a person’s health. On 2 June 2021, the Temporary Corona Admission Tickets Law came into effect. This law provides the legal grounds for the processing responsibility of the Ministry of Health, Welfare and Sport for the processing of personal information by test providers when generating a corona admission ticket and is therefore an exception to this processing prohibition. 
+Under Article 9 of the GDPR, in principle a processing prohibition applies to personal information relating to a person’s health. On 1 June 2021, the Temporary Corona Admission Tickets Law came into effect. This law provides the legal grounds for the processing responsibility of the Ministry of Health, Welfare and Sport for the processing of personal information by test providers when generating a corona admission ticket and is therefore an exception to this processing prohibition. 
 
 The Temporary Corona Admission Tickets Law also provides the grounds for the processing of non-special personal information under Article 6, first paragraph, section E of the GDPR.
 
@@ -106,5 +106,5 @@ The Minister is concerned with the protection of your personal data and has take
 
 ### 11. Security of your personal data
 
-This privacy statement is subject to change. In case of any changes, we will publish the amended privacy statement on our website, after which the amended privacy statement will take effect immediately. Last updated on 26 May 2021.
+This privacy statement is subject to change. In case of any changes, we will publish the amended privacy statement on our website, after which the amended privacy statement will take effect immediately. Last updated on 3 June 2021.
  

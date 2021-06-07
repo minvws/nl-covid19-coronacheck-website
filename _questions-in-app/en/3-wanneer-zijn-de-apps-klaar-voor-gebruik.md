@@ -1,8 +1,8 @@
 ---
 index: 3
 set: 1
-title: When are the apps ready to be used? 
+title: When are the apps ready to use? 
 ---
-CoronaCheck and CoronaCheck Scanner are currently being tested in <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' hreflang="nl" rel='noopener noreferrer'>pilots 'Testen voor Toegang' (Dutch)</a>. These pilots prove if the apps are working properly and show how they can be improved.
- 
-The apps will only be taken into use when their use has been approved by law. This legislation is necessary as a negative test certificate may be temporarily compulsory for certain industries and would indirectly require all visitors to be tested.
+From June 5, you need a negative test result to enter certain locations and activities. With CoronaCheck, you turn this test result into a personal QR code. Show the QR code and your proof of identity at the entrance.
+
+From early July, you can use CoronaCheck to turn your vaccination certificate into a personal QR code. You can use it in The Netherlands or to travel to other countries in the European Union.

@@ -16,7 +16,7 @@ help discover any potential vulnerabilities.
 
 ## Contributions
 
-Aside from the authors of the various open source, 3rd-party libraries, we have received contributions from many others.
+Aside from the authors of the various open source, 3rd-party libraries, we have received contributions from many <a href="/humans.txt">people</a>.
 
 ## Application Licences, Terms & Conditions and Disclaimers
 
@@ -37,9 +37,9 @@ the iOS and Android distribution and the Mobile Application.
 
 ### 3rd-party libraries:
 
-- [CoronaCheck third party licenties](https://github.com/minvws/nl-covid19-coronacheck-app-backend/tree/main/licenses)
-- [CoronaCheck BFF private third party licenties](https://github.com/minvws/nl-covid19-coronacheck-app-bff/tree/main/licenses)
-- [CoronaCheck CL core third party licenties](https://github.com/minvws/nl-covid19-coronacheck-cl-core/tree/main/licenses)
+- [CoronaCheck third party licences](https://github.com/minvws/nl-covid19-coronacheck-app-backend/tree/main/licenses)
+- [CoronaCheck BFF private third party licences](https://github.com/minvws/nl-covid19-coronacheck-app-bff/tree/main/licenses)
+- [CoronaCheck CL core third party licences](https://github.com/minvws/nl-covid19-coronacheck-cl-core/tree/main/licenses)
 
 ## Reporting vulnerabilities
 

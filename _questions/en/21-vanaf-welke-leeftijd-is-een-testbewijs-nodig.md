@@ -1,6 +1,6 @@
 ---
 index: 5
 set: 2
-title: From what age is a test declaration required?
+title: From what age do I need a test certificate?
 ---
-Visitors from ages 12 and over need a test declaration for events and activities that require a test declaration. This includes the pilot events.
+Visitors of 13 years and up must show a test certificate at events and activities that require a test certificate. 

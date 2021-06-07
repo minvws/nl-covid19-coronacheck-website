@@ -9,7 +9,7 @@
 
 ## About
 
-This repository contains the source files of the official website for pilot app CoronaCheck and is available at [CoronaCheck.nl](https://CoronaCheck.nl)
+This repository contains the source files of the official website for CoronaCheck and CoronaCheck Scanner and is available at [CoronaCheck.nl](https://CoronaCheck.nl)
 
 ## Status
 

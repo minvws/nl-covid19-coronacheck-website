@@ -1,8 +1,8 @@
 ---
 index: 1
 set: 6
-title: Where can I get tested?
+title: I want to get tested, where should I go?
 --- 
-The CoronaCheck app is currently only used for the pilots 'Testen voor Toegang'. To get access to these events or activities, you first have to take a corona test at a specific test location. You can sign up with the host of the event or activity. They will know how you can get a (free) test. The test appointments for pilot events are booked via <a href="https://www.testenvoortoegang.nl" target="_blank" rel="noopener noreferrer" hreflang="nl">testenvoortoegang.nl</a>.
+To access certain locations or activities, you must first take a coronavirus test at an official test location. You can apply for a test with the organiser of the event or activity. They will know how you can take a (free) test. 
 
-Please note: a negative test result from the GGD currently does <u>not</u> generate a test declaration in the CoronaCheck app. This also applies to other commercial test providers. 
+Please note: if you have a negative test result issued by the GGD, you currently cannot use the CoronaCheck app to turn it into a test certificate. This also applies to other commercial testing parties.

@@ -220,6 +220,7 @@ export default {
         height: 100%;
         transform: none;
         border-radius: 0;
+        overflow: auto;
     }
 }
 </style>
