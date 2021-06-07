@@ -122,7 +122,7 @@ export default {
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {
-                let responseForSignedResult, data;
+                let data;
                 const url = this.testProvider.result_url;
                 const headers = {
                     'Authorization': `Bearer ${this.token.toUpperCase()}`,
@@ -161,17 +161,15 @@ export default {
                         }
                     }
                 }).catch((error) => {
-                    if (error.response) {
-                        const status = error.response.status;
-                        switch (status) {
-                        case 401:
-                            responseForSignedResult = this.handleError(error.response)
-                            break;
-                        case 403:
-                            responseForSignedResult = this.handleError(error.response)
-                            break;
-                        default:
-                            responseForSignedResult = 'unknown_error';
+                    // we have to catch the 401 here, because it could be 'verification_required'
+                    // this is a regular part of the happy flow
+                    if (error.response && error.response.status && (error.response.status === 401 || error.response.status === 403)) {
+                        let responseForSignedResult = 'unknown_error'
+                        if (error.response.data && error.response.data.payload) {
+                            const payload = JSON.parse(atob(error.response.data.payload));
+                            if (payload.status) {
+                                responseForSignedResult = payload.status;
+                            }
                         }
                         this.$store.commit('setTestResultStatus', responseForSignedResult);
 
@@ -229,20 +227,12 @@ export default {
                     this.$router.push({ name: 'ProvideCode' });
                 }, timeToInvalidation)
             }).catch((error) => {
-                console.log(error);
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('generalError'),
+                    messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
+                    closeButton: true
+                });
             })
-        },
-        handleError(response) {
-            if (response.data && response.data.payload) {
-                const payload = JSON.parse(atob(response.data.payload));
-                if (payload.status) {
-                    return payload.status;
-                } else {
-                    return 'unknown_error';
-                }
-            } else {
-                return 'unknown_error';
-            }
         },
         back() {
             this.$router.push({ name: 'Home' });
