@@ -2,8 +2,7 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
-import mockData from '@/data/mock/data';
-import HolderV3 from '@/classes/holder/HolderV3';
+import signedEventsTool from '@/tools/signed-events'
 
 export default {
     name: 'YourVaccinationsRedirect',
@@ -23,7 +22,7 @@ export default {
                     console.log('cancelling processes');
                 }
                 this.$store.commit('clearAll')
-                this.$store.commit('proofEvents/clear')
+                this.$store.commit('signedEvents/clear')
                 this.$router.push({ name: 'CollectVaccination' });
             }
             this.$store.commit('modal/set', {
@@ -49,20 +48,15 @@ export default {
             }, 1000);
         },
         getResult(event) {
-            const result = mockData;
-            this.$store.commit('proofEvents/clear');
+            this.$store.commit('signedEvents/clear');
             switch (event) {
-            case 'one-vaccination':
-                this.$store.commit('updateHolder', new HolderV3(result.holder));
-                this.$store.commit('proofEvents/create', result.events[0]);
-                this.$router.push({ name: 'YourVaccinations' });
-                break;
-            case 'two-vaccinations':
-                this.$store.commit('updateHolder', new HolderV3(result.holder));
-                for (const proofEvent of result.events) {
-                    this.$store.commit('proofEvents/create', proofEvent);
-                }
-                this.$router.push({ name: 'YourVaccinations' });
+            case 'test-bsn':
+                this.isLoading = true;
+                signedEventsTool.collect().then(signedEvents => {
+                    this.$store.commit('signedEvents/createAll', signedEvents);
+                    this.isLoading = false;
+                    this.$router.push({ name: 'YourVaccinations' });
+                });
                 break;
             case 'not-possible':
                 this.$router.push({ name: 'VaccinationsNotPossible' });
@@ -95,10 +89,7 @@ export default {
             <div v-else class="mock-choices">
                 Mocking the result, options:<br><br>
                 <button
-                    @click="getResult('one-vaccination')">One vaccination</button>
-
-                <button
-                    @click="getResult('two-vaccinations')">Two vaccinations</button>
+                    @click="getResult('test-bsn')">Use test BSN</button>
 
                 <button
                     @click="getResult('not-possible')">Not possible</button>

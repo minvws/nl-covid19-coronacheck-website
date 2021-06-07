@@ -9,15 +9,15 @@ const optionsTest = {
     response_type: 'code'
 }
 
-const optionsTVS = {
-    userStore: new Oidc.WebStorageStateStore(),
-    authority: 'https://tvs-connect.acc.coronacheck.nl',
-    client_id: 'test_client',
-    response_type: 'code'
-}
+// const optionsTVS = {
+//     userStore: new Oidc.WebStorageStateStore(),
+//     authority: 'https://tvs-connect.acc.coronacheck.nl',
+//     client_id: 'test_client',
+//     response_type: 'code'
+// }
 
 const mgrVaccination = new Oidc.UserManager({
-    ...optionsTVS,
+    ...optionsTest,
     redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties-redirect'
 })
 

@@ -8,15 +8,15 @@ export default {
     name: 'YourVaccinations',
     components: { Page, PageIntro, Vaccination, CcButton },
     computed: {
-        vaccinationProofEvents() {
-            return this.$store.getters['proofEvents/getProofEvents']('vaccination');
+        vaccinationSignedEvents() {
+            return this.$store.getters['signedEvents/getProofEvents']('vaccination');
         }
     },
     methods: {
         back() {
             const callback = () => {
                 this.$store.commit('clearAll')
-                this.$store.commit('proofEvents/clear')
+                this.$store.commit('signedEvents/clear')
                 this.$router.push({ name: 'CollectVaccination' });
             }
             this.$store.commit('modal/set', {
@@ -54,9 +54,9 @@ export default {
             <div class="section-block">
                 <div class="proof-events">
                     <Vaccination
-                        v-for="proofEvent of vaccinationProofEvents"
-                        :key="proofEvent.unique"
-                        :proof-event="proofEvent"/>
+                        v-for="signedEvent of vaccinationSignedEvents"
+                        :key="signedEvent.unique"
+                        :signed-event="signedEvent"/>
                 </div>
                 <div class="section-block__footer">
                     <CcButton

@@ -1,25 +1,22 @@
 <script>
-import ProofEvent from '@/classes/events/ProofEvent';
 import dateTool from '@/tools/date';
+import SignedEvent from '@/classes/events/SignedEvent';
 
 export default {
     name: 'Vaccination',
     components: {},
     props: {
-        proofEvent: {
-            type: ProofEvent,
-            required: true,
-            validator: function (value) {
-                return value.type === 'vaccination' && value.value !== null;
-            }
+        signedEvent: {
+            type: SignedEvent,
+            required: true
         }
     },
     computed: {
         vaccination() {
-            return this.proofEvent.vaccination;
+            return this.signedEvent.event.vaccination;
         },
         holder() {
-            return this.$store.state.holder;
+            return this.signedEvent.holder;
         },
         title() {
             return this.$t('orderWords.' + (this.vaccination.doseNumber - 1)) + ' ' + this.$t('components.vaccination.vaccination').toLocaleLowerCase();
@@ -53,7 +50,7 @@ export default {
                 totalDoses: this.vaccination.totalDoses,
                 dateString: dateTool.dateToString(this.vaccination.date, 'EEEE d LLLL', this.currentLanguage.locale),
                 country: this.vaccination.country,
-                identificationCode: this.proofEvent.unique
+                identificationCode: this.signedEvent.event.unique
             }
             this.$store.commit('modal/set', {
                 messageHead: this.$t('message.info.vaccinationAbout.head'),

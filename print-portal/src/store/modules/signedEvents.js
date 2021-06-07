@@ -32,7 +32,7 @@ const getters = {
                 const holder = new HolderV3(result.holder);
                 for (const ev of result.events) {
                     const event = new ProofEvent(ev)
-                    if (event.type === type) {
+                    if (event.type === type || type === 'all') {
                         proofEvents.push(new SignedEvent({
                             holder,
                             event

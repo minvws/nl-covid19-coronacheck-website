@@ -18,7 +18,6 @@ export default {
             return this.$store.getters['signedEvents/getProofEvents']('negativetest');
         },
         latestNegativeTestProofEvent() {
-            console.log(this.negativeTestProofEvents);
             if (this.negativeTestProofEvents.length > 0) {
                 if (this.negativeTestProofEvents.length === 1) {
                     return this.negativeTestProofEvents[0];
