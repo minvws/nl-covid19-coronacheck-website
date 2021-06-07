@@ -1514,6 +1514,6 @@ about-coronacheck-scanner-title:
   tr: CoronaCheck hakkında
 
 about-coronacheck-scanner-content:
-  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
+  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner" target="_blank">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
   fy: 
-  en: <p>Would you like to find out how you can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner">Read more about the CoronaCheck Scanner app.</a></p>
+  en: <p>Would you like to find out how you can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner" target="_blank">Read more about the CoronaCheck Scanner app.</a></p>
