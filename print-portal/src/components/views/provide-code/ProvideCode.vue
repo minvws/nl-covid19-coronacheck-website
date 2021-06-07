@@ -161,6 +161,17 @@ export default {
                         }
                     }
                 }).catch((error) => {
+                    if (error.response && error.response.status && error.response.status === 401) {
+
+                    } else {
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('generalError'),
+                            messageBody: (this.$t('generalErrorBody') + '<p>' + error + '</p>'),
+                            closeButton: true
+                        });
+                    }
+
+
                     if (error.response) {
                         const status = error.response.status;
                         switch (status) {
@@ -196,12 +207,7 @@ export default {
                                 closeButton: true
                             });
                         }
-                    } else {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('generalError'),
-                            messageBody: (this.$t('generalErrorBody') + '<p>' + error + '</p>'),
-                            closeButton: true
-                        });
+
                     }
                 })
             })
