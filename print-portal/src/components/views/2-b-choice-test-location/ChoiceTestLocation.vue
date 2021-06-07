@@ -3,6 +3,7 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import PageChoice from '@/components/elements/PageChoice';
 import PreferMobile from '@/components/elements/PreferMobile';
+import events from '@/tools/events'
 
 export default {
     name: 'ChoiceTestLocation',
@@ -13,7 +14,10 @@ export default {
             this.$router.push({ name: 'ChoiceProof' })
         },
         loginWithDigid() {
-            this.mgr.getNegativeTests();
+            // this.mgr.getNegativeTests();
+            events.collect().then(events => {
+                console.log(events);
+            });
         },
         gotoRetrieveTest() {
             this.$router.push({ name: 'ProvideCode' });
