@@ -36,8 +36,8 @@ const nl = {
         'collectVaccination': {
             'pageHeader': 'Vaccinatie ophalen',
             'pageIntro': '<p>Heb je een of meer prikken gekregen? Dan kan je een  bewijs maken.</p><p>Vragen over vaccinaties? Lees meer op de <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">website van de Rijksoverheid</a></p>',
-            'loginDigid': 'Login met DigiD',
-            'loginDigid': 'Ik heb geen DigiD'
+            'loginDigid': 'Login met DigiD'
+            // 'loginDigid': 'Ik heb geen DigiD'
         },
         'yourVaccinations': {
             'pageHeader': 'Jouw opgehaalde vaccinaties',
