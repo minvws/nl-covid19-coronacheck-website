@@ -1,21 +1,22 @@
 const html = `
     <p>
-        TODO EN De volgende vaccinatie gegevens zijn opgehaald:
+        The following details of your vaccination have been retrieved:
     </p>
     <p>
-        Naam: <b>%{name}</b><br>
-        Geboortedatum: <b>%{birthDateString}</b>
+        Name: <b>%{name}</b><br>
+        Date of birth: <b>%{birthDateString}</b>
     </p>
     <p>
-        Ziekteverwekker: <b>COVID-19</b><br>
-        Vaccin:  <b>%{vaccineName}</b><br>
-        Vaccin type:  <b>%{vaccineType}</b><br>
-        Producent:  <b>%{manufacturer}</b><br>
+        Pathogen: <b>COVID-19</b><br>
+        Vaccine:  <b>%{vaccineName}</b><br>
+        Vaccine type:  <b>%{vaccineType}</b><br>
+        Manufacturer:  <b>%{manufacturer}</b><br>
         Doses: <b>%{doseNumber} of %{totalDoses}</b><br>
-        Prikdatum: <b>%{dateString}</b><br>
-        Land van vaccinatie: <b>%{country}</b><br>
-        Identificatiecode: <b>%{identificationCode}</b>
+        Vaccination date: <b>%{dateString}</b><br>
+        Country of vaccination: <b>%{country}</b><br>
+        Identification code: <b>%{identificationCode}</b>
     </p>
+    <p>With your vaccination details, the app automatically retrieves a Dutch and a European QR code for you.</p>
 `;
 
 export default html;
