@@ -14,18 +14,18 @@ export default {
         }
     },
     computed: {
-        negativeTestProofEvents() {
+        negativeTestSignedEvents() {
             return this.$store.getters['signedEvents/getProofEvents']('negativetest');
         },
-        latestNegativeTestProofEvent() {
-            if (this.negativeTestProofEvents.length > 0) {
-                if (this.negativeTestProofEvents.length === 1) {
-                    return this.negativeTestProofEvents[0];
+        latestNegativeTestSignedEvent() {
+            if (this.negativeTestSignedEvents.length > 0) {
+                if (this.negativeTestSignedEvents.length === 1) {
+                    return this.negativeTestSignedEvents[0];
                 } else {
                     // if there are multiple (which should never be the case actually)
                     // we sort them and pick the most recent
-                    const negativeTestProofEvents = this.negativeTestProofEvents.slice();
-                    return negativeTestProofEvents.sort((a, b) => {
+                    const negativeTestSignedEvents = this.negativeTestSignedEvents.slice();
+                    return negativeTestSignedEvents.sort((a, b) => {
                         return new Date(b.event.negativetest.sampleDate) - new Date(a.event.negativetest.sampleDate);
                     })[0];
                 }
@@ -75,7 +75,7 @@ export default {
         goBack() {
             const callback = () => {
                 this.$store.commit('clearAll')
-                this.$store.commit('proofEvents/clear')
+                this.$store.commit('signedEvents/clear')
                 if (this.$route.params.flow === '2.0') {
                     this.$router.push({ name: 'ProvideCode' });
                 } else {
@@ -112,7 +112,7 @@ export default {
         @back="goBack"
         class="YourTestResults">
         <div class="section">
-            <div v-if="latestNegativeTestProofEvent">
+            <div v-if="latestNegativeTestSignedEvent">
                 <PageIntro
                     :head="$t('views.yourTestResults.pageHeader')"
                     :intro="$t('views.yourTestResults.pageIntro')"/>
@@ -120,7 +120,7 @@ export default {
                 <div class="section-block">
                     <div class="proof-events">
                         <NegativeTest
-                            :signed-event="latestNegativeTestProofEvent"/>
+                            :signed-event="latestNegativeTestSignedEvent"/>
                     </div>
                     <div class="section-block__footer">
                         <CcButton
