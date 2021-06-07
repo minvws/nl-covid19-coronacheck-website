@@ -18,7 +18,7 @@ const nl = {
         },
         'choiceProof': {
             'pageHeader': 'Waar wil je een papieren bewijs van maken?',
-            'pageIntro': '<p>Je kan een QR-code maken van een negatieve testuitslag (geldt %{maxValidityHoursForTestResult} uur) of van een vaccinatie (geldt 1 jaar). In Europa kan geldigheid verschillen.</p>',
+            'pageIntro': '<p>Je kan een QR-code maken van een negatieve testuitslag of van een vaccinatie. In Europa kan geldigheid verschillen.</p>',
             'choiceTestHeader': 'Een negatieve testuitslag',
             'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
             'choiceVaccinationHeader': 'Een vaccinatie',
@@ -29,13 +29,15 @@ const nl = {
             'pageIntro': '<p>Is je testuitslag negatief? Dan kan je er een QR-code van maken. Geef aan bij welke testlocatie je bent getest.</p>',
             'choiceGGDHead': 'GGD',
             'choiceGGDBody': 'Login met DigiD',
+            'loginDigid': 'Ik heb geen DigiD',
             'choiceOtherLocation': 'Andere testlocatie',
             'didNotGetTestedYet': 'Ik ben nog niet getest'
         },
         'collectVaccination': {
             'pageHeader': 'Vaccinatie ophalen',
-            'pageIntro': '<p>Heb je een of meer prikken gekregen? Dan kan je een  bewijs maken.</p><p>Vragen over vaccinaties? <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">Lees hier meer</a></p>',
-            'loginDigid': 'Login met DigiD'
+            'pageIntro': '<p>Heb je een of meer prikken gekregen? Dan kan je een  bewijs maken.</p><p>Vragen over vaccinaties? Lees meer op de <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">website van de Rijksoverheid</a></p>',
+            'loginDigid': 'Login met DigiD',
+            'loginDigid': 'Ik heb geen DigiD'
         },
         'yourVaccinations': {
             'pageHeader': 'Jouw opgehaalde vaccinaties',
@@ -48,7 +50,7 @@ const nl = {
             'pageIntro': '<p>Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Kijk voor meer informatie op CoronaCheck.nl/wegwijzer.</p>'
         },
         'notPossibleVaccinations': {
-            'pageHeader': 'We kunnen geen bewijs maken ',
+            'pageHeader': 'We kunnen geen bewijs maken',
             'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken van jouw vaccinatie. Dit kan verschillende oorzaken hebben. <a href="https://coronacheck.nl/wegwijzer" target="_blank">Lees hier meer</a>.</p>'
         },
         'provideCode': {
@@ -107,8 +109,8 @@ const nl = {
             'viewFaq': 'Bekijk de meestgestelde vragen'
         },
         'preferMobile': {
-            'header': 'Liever je testbewijs op je mobiel?',
-            'intro': 'Download dan de app.'
+            'header': 'Liever je bewijs op je mobiel?',
+            'intro': 'Download dan de app. Ook van een bewijs in de app kun je een print maken.'
         },
         'vaccination': {
             'vaccination': 'Vaccinatie',

@@ -14,41 +14,43 @@ const en = {
         'home': {
             'pageHeader': 'Get access with a test declaration on paper',
             'pageIntro': '<p>A test declaration on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><h4>Only access after testing</h4><p>Get tested when visiting certain social, cultural or sports events. Even when you\'ve already been vaccinated. Does your test prove you don\'t have coronavirus (negative test result)? Then you can get access.</p><h4>Your QR code in your pocket</h4><p>If your test proves you don\'t have coronavirus, you can make a personal QR code in this app. This will be your test declaration. The QR code is scanned before you get access.</p><h4>Minimum amount of data</h4><p>Your QR code only states when you tested negative (no coronavirus), the time of testing, and the minimum amount of identifying data: your first name initial, your last name initial, your day of birth, and your month of both. We verify this information to make sure the test result is yours.</p>',
-            'userConsentText': 'I\'ve read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and give consent for processing my personal data.'
+            'userConsentText': 'I have read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and understand how CoronaCheck processes my data.'
         },
         'choiceProof': {
-            'pageHeader': 'TODO',
-            'pageIntro': '<p>TODO</p>',
-            'choiceTestHeader': 'TODO',
-            'choiceTestBody': 'TODO',
-            'choiceVaccinationHeader': 'TODO',
-            'choiceVaccinationBody': 'TODO'
+            'pageHeader': 'What would you like to make a paper certificate of?',
+            'pageIntro': '<p>You can make a QR code of a vaccination or negative test result.</p>',
+            'choiceTestHeader': 'A negative test result',
+            'choiceTestBody': 'The test proves I do not have coronavirus',
+            'choiceVaccinationHeader': 'A vaccination',
+            'choiceVaccinationBody': 'I have had my injection or injections'
         },
         'choiceTestLocation': {
             'pageHeader': 'TODO Waar ben je getest?',
             'pageIntro': '<p>TODO Is je testuitslag negatief? Dan kan je er een QR-code van maken. Geef aan bij welke testlocatie je bent getest.</p>',
             'choiceGGDHead': 'TODO GGD',
-            'choiceGGDBody': 'TODO Login met DigiD',
+            'choiceGGDBody': 'Log in with DigiD',
+            'loginDigid': 'I don’t have DigiD',
             'choiceOtherLocation': 'TODO Andere testlocatie',
             'didNotGetTestedYet': 'TODO Ik ben nog niet getest'
         },
         'collectVaccination': {
-            'pageHeader': 'TODO',
-            'pageIntro': 'TODO',
-            'loginDigid': 'TODO'
+            'pageHeader': 'Collect vaccination',
+            'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p><p>Questions about vaccinations? Read more on the <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">website of the Dutch Government</a></p>',
+            'loginDigid': 'Log in with DigiD',
+            'loginDigid': 'I don’t have DigiD'
         },
         'yourVaccinations': {
-            'pageHeader': 'TODO',
-            'pageIntro': '<p>TODO</p>',
+            'pageHeader': 'Your retrieved vaccinations',
+            'pageIntro': '<p>You can make a QR code of your vaccination. This will be your certificate.</p>',
             'createTestProofButton': 'Make QR code',
-            'somethingIsWrong': 'Klopt er iets niet?'
+            'somethingIsWrong': 'Is something wrong?'
         },
         'noVaccinations': {
             'pageHeader': 'TODO Geen vaccinatie(s) beschikbaar',
             'pageIntro': '<p>TODO Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Kijk voor meer informatie op CoronaCheck.nl/wegwijzer.</p>'
         },
         'notPossibleVaccinations': {
-            'pageHeader': 'TODO We kunnen geen bewijs maken ',
+            'pageHeader': 'TODO We kunnen geen bewijs maken',
             'pageIntro': '<p>TODO Op dit moment kunnen we geen bewijs maken van jouw vaccinatie. Dit kan verschillende oorzaken hebben. <a href="https://coronacheck.nl/wegwijzer" target="_blank">Lees hier meer</a>.</p>'
         },
         'provideCode': {
@@ -86,8 +88,8 @@ const en = {
             'pageIntro': 'You\'ve made a test declaration,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.'
         },
         'printVaccination': {
-            'pageHeader': 'TODO',
-            'pageIntro': '<p>TODO</p>'
+            'pageHeader': 'Print your vaccination certificate',
+            'pageIntro': '<h3>Your certificate</h3><p>You’ve made a vaccination certificate in the form of a QR code. You have a QR code for The Netherlands and a QR code for when you travel within the European Union.</p><h3>Information in the QR</h3><p><a href="" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
         }
     },
     'components': {
@@ -107,8 +109,8 @@ const en = {
             'viewFaq': 'View frequently asked questions'
         },
         'preferMobile': {
-            'header': 'Prefer having your test declaration on mobile?',
-            'intro': 'Then download the app.'
+            'header': 'Prefer having your certificate on mobile?',
+            'intro': 'Then download the app. You can also make a print of the certificate in the app.'
         },
         'vaccination': {
             'vaccination': 'Vaccination',
@@ -128,26 +130,26 @@ const en = {
                 'body': 'TODO <p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.</p>'
             },
             'vaccinationAbout': {
-                'head': 'TODO',
+                'head': 'What has been retrieved?',
                 'body': messageInfoVaccinationAbout
             },
             'vaccinationSomethingWrong': {
-                'head': 'TODO',
-                'body': '<p>TODO</p>'
+                'head': 'Something is wrong',
+                'body': '<p>Wrong name or date of birth? Contact your doctor and let them know.</p><p>Missing a jab?<br>Contact the location you were vaccinated at.</p>'
             },
             'noVerificationCode': {
                 'head': 'Need a new verification code?',
                 'body': '<p>The test location sends you a verification code via text or email. Didn\'t get one? Then you can request a new code.</p>'
             },
             'areYouSureToCancelVaccination': {
-                'head': 'TODO Weet je zeker dat je wilt stoppen?',
-                'body': 'TODO Je moet later opnieuw je code invullen om je testbewijs op te halen.',
-                'yes': 'TODO Ja, stop',
-                'no': 'TODO Nee, terug'
+                'head': 'Are you sure you want to stop?',
+                'body': 'TODO Je moet dan later opnieuw met DigiD inloggen om je vaccinatie op te halen.',
+                'yes': 'Yes, stop',
+                'no': 'No,'
             },
             'areYouSureToCancelNegativeTest': {
-                'head': 'TODO Weet je zeker dat je wilt stoppen?',
-                'body': 'TODO Je kan later opnieuw een QR-code maken',
+                'head': 'Are you sure you want to stop?',
+                'body': 'You must use your code to get your test result again later.',
                 'yes': 'TODO Ja, stop',
                 'no': 'TODO Nee, ga door'
             }
@@ -155,7 +157,7 @@ const en = {
         'error': {
             'expiredTestCode': {
                 'head': 'Your QR code has expired',
-                'body': '<p>The code you\'ve entered is invalid. Please check it. Need a new QR code? Get tested again.</p>'
+                'body': '<p>The code you\'ve entered is invalid. Please check it again. Need a new QR code? Get tested again.</p>'
             },
             'general': {
                 'head': 'Sorry, something went wrong',
