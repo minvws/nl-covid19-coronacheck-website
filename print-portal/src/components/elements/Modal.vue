@@ -146,6 +146,11 @@ export default {
 <style lang="scss">
 @import "@/styles/variables/index";
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
 .cover {
     background: rgba(0,0,0,0.4);
     position: fixed;
@@ -153,8 +158,8 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    transition: opacity 0.3s cubic-bezier(.4,0,.2,1);
-    opacity: 0;
+    // transition: opacity 0.3s cubic-bezier(.4,0,.2,1);
+    display: none;
     pointer-events: none;
 
     .cover__clickable-area {
@@ -167,7 +172,8 @@ export default {
     }
 
     &.popup--active {
-        opacity: 1;
+        display: block;
+        animation: fadeIn 0.3s cubic-bezier(.4,0,.2,1);
         pointer-events: all;
     }
 }
