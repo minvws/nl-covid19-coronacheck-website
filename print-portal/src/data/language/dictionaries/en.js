@@ -121,12 +121,12 @@ const en = {
     'message': {
         'info': {
             'testResultAbout': {
-                'head': 'TODO Wat is er opgehaald?',
+                'head': 'What has been retrieved?',
                 'bodyV2': messageInfoTestResultAboutV2,
                 'bodyV3': messageInfoTestResultAboutV3
             },
             'testResultSomethingWrong': {
-                'head': 'TODO Kloppen de gegevens niet?',
+                'head': 'Something is wrong',
                 'body': 'TODO <p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.</p>'
             },
             'vaccinationAbout': {
@@ -145,13 +145,13 @@ const en = {
                 'head': 'Are you sure you want to stop?',
                 'body': 'TODO Je moet dan later opnieuw met DigiD inloggen om je vaccinatie op te halen.',
                 'yes': 'Yes, stop',
-                'no': 'No,'
+                'no': 'No, continue'
             },
             'areYouSureToCancelNegativeTest': {
                 'head': 'Are you sure you want to stop?',
                 'body': 'You must use your code to get your test result again later.',
-                'yes': 'TODO Ja, stop',
-                'no': 'TODO Nee, ga door'
+                'yes': 'Yes, stop',
+                'no': 'No, continue'
             }
         },
         'error': {
@@ -161,7 +161,7 @@ const en = {
             },
             'general': {
                 'head': 'Sorry, something went wrong',
-                'body': '<p>Because of a technical error. Contact the CoronaCheck helpdesk via <a href="tel:0800-1421" class="only-clickable-for-mobile">0800-1421</a>.</p>'
+                'body': '<p>Because of a technical error. Contact the CoronaCheck helpdesk via <a href="tel:0800-1421">0800-1421</a>.</p>'
             }
         }
     },

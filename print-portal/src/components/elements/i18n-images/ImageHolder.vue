@@ -10,7 +10,7 @@ export default {
 <template>
     <div class="ImageHolder">
         <img
-            alt="Liever je testbewijs op je mobiel?"
+            alt="Liever je bewijs op je mobiel?"
             src="assets/img/artwork/mobile-phone-using-coronacheck_empty.png"/>
 
         <div

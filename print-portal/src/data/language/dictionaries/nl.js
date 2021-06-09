@@ -18,7 +18,7 @@ const nl = {
         },
         'choiceProof': {
             'pageHeader': 'Waar wil je een papieren bewijs van maken?',
-            'pageIntro': '<p>Je kan een QR-code maken van een negatieve testuitslag of van een vaccinatie. In Europa kan geldigheid verschillen.</p>',
+            'pageIntro': '<p>Je kunt een QR-maken van een vaccinatie of van een negatieve testuitslag.</p>',
             'choiceTestHeader': 'Een negatieve testuitslag',
             'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
             'choiceVaccinationHeader': 'Een vaccinatie',
@@ -165,7 +165,7 @@ const nl = {
             },
             'general': {
                 'head': 'Sorry, er gaat iets mis',
-                'body': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck via <a href="tel:0800-1421" class="only-clickable-for-mobile">0800-1421</a>.</p>'
+                'body': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck via <a href="tel:0800-1421">0800-1421</a>.</p>'
             }
         }
     },
