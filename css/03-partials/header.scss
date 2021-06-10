@@ -33,6 +33,12 @@
     @media (min-width: 960px) {
         width: 50px;
     }
+
+    a:focus img {
+        outline: 2px solid #008fcd;
+        outline-offset: 4px;
+        transition: 100ms ease-out;
+    }
 }
 
 .header {
