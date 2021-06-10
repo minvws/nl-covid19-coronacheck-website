@@ -9,16 +9,16 @@ const optionsTest = {
     response_type: 'code'
 }
 
-// const optionsTVS = {
-//     userStore: new Oidc.WebStorageStateStore(),
-//     authority: 'https://tvs-connect.acc.coronacheck.nl',
-//     client_id: 'test_client',
-//     response_type: 'code'
-// }
-
 const mgrVaccination = new Oidc.UserManager({
-    ...optionsTest,
-    redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties-redirect'
+    userStore: new Oidc.WebStorageStateStore(),
+    authority: 'https://tvs-connect.acc.coronacheck.nl',
+    client_id: 'test_client',
+    scope: 'openid',
+    response_type: 'code',
+    redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties-redirect',
+    extraQueryParams: {
+        nonce: Math.random().toString(36).substring(7)
+    }
 })
 
 const mgrNegativeTest = new Oidc.UserManager({
