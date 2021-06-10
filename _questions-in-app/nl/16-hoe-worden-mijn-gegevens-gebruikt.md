@@ -10,4 +10,4 @@ In de [privacyverklaring](/nl/privacy) staat hoe CoronaCheck omgaat met jouw geg
 
 - In de QR-code staan minimale gegevens van jou
 - Jouw gegevens worden nergens centraal opgeslagen
-- Je GPS- of locatiegegevens worden niet gebruikt of bewaard
+- Je locatiegegevens worden niet gebruikt of bewaard

@@ -9,4 +9,4 @@ The [privacy statement](/en/privacy) outlines how CoronaCheck processes your dat
 
 - The QR code only contains a minimum amount of personal data
 - Your data is not centrally stored anywhere
-- Your GPS or location data is not used or saved
+- Your location data is not used or saved
