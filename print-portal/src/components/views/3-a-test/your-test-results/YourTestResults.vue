@@ -33,8 +33,8 @@ export default {
                 return null;
             }
         },
-        signature() {
-            return this.$store.state.signature;
+        signedEvents() {
+            return this.$store.state.signedEvents.all;
         },
         hasQR() {
             return this.$store.state.qrCode.length > 0;
@@ -42,14 +42,15 @@ export default {
     },
     methods: {
         createTestCertificate() {
-            if (this.signature) {
+            console.log(this.signedEvents);
+            if (this.signedEvents.length > 0) {
                 if (this.hasQR) {
                     this.$router.push({ name: 'PrintTestResult' });
                 } else {
                     this.$axios({
                         method: 'post',
                         url: '/holder/paper',
-                        data: this.signature
+                        data: { events: this.signedEvents }
                     }).then((response) => {
                         if (response.data.status === 'ok' && response.data.error === 0) {
                             this.$store.commit('setQrCode', response.data.qr.data);
