@@ -77,7 +77,7 @@ export default {
     },
     mounted() {
         window.addEventListener('keydown', e => {
-            if (e.key === 'Escape' && this.showConfirm) {
+            if (e.key === 'Escape') {
                 this.close();
             }
         });
