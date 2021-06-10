@@ -5,9 +5,9 @@ import store from './store';
 import CurrentLanguage from '@/components/mixins/CurrentLanguage';
 import axios from 'axios';
 import i18n from './i18n'
-import Mgr from '@/services/SecurityService'
+import AuthService from '@/services/AuthService'
 
-const mgr = new Mgr();
+const mgr = new AuthService();
 Vue.prototype.mgr = mgr;
 
 const axiosConfig = {

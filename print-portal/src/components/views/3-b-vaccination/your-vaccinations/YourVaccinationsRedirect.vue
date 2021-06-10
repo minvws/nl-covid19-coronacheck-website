@@ -68,7 +68,8 @@ export default {
         }
     },
     mounted() {
-        this.readToken();
+        // this.readToken();
+        this.mgr.completeAuthentication();
     }
 }
 </script>
