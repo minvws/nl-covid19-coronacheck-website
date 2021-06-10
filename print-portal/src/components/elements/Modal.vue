@@ -158,7 +158,6 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    // transition: opacity 0.3s cubic-bezier(.4,0,.2,1);
     display: none;
     pointer-events: none;
 
