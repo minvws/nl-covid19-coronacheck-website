@@ -42,7 +42,6 @@ export default {
     },
     methods: {
         createTestCertificate() {
-            console.log(this.signedEvents);
             if (this.signedEvents.length > 0) {
                 if (this.hasQR) {
                     this.$router.push({ name: 'PrintTestResult' });
@@ -77,12 +76,7 @@ export default {
             const callback = () => {
                 this.$store.commit('clearAll')
                 this.$store.commit('signedEvents/clear')
-                if (this.$route.params.flow === '2.0') {
-                    this.$router.push({ name: 'ProvideCode' });
-                } else {
-                    // 3.0 has to skip the redirect page, so we cannot do go(-1)
-                    this.$router.push({ name: 'ChoiceTestLocation' });
-                }
+                this.$router.push({ name: 'ChoiceProof' });
             }
             this.$store.commit('modal/set', {
                 messageHead: this.$t('message.info.areYouSureToCancelNegativeTest.head'),

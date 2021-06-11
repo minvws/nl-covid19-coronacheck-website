@@ -23,7 +23,7 @@ export default {
                 }
                 this.$store.commit('clearAll')
                 this.$store.commit('signedEvents/clear')
-                this.$router.push({ name: 'CollectVaccination' });
+                this.$router.push({ name: 'ChoiceProof' });
             }
             this.$store.commit('modal/set', {
                 messageHead: this.$t('message.info.areYouSureToCancelVaccination.head'),
@@ -37,7 +37,7 @@ export default {
         },
         completeAuthentication() {
             this.isLoading = true;
-            this.mgr.completeAuthentication().then((user) => {
+            this.authVaccinations.completeAuthentication().then((user) => {
                 this.collectEvents(user.id_token)
             }, () => {
                 this.isLoading = false;

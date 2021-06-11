@@ -9,7 +9,7 @@ export default {
     computed: {},
     methods: {
         getToken() {
-            this.mgr.startAuthentication();
+            this.authVaccinations.startAuthentication();
         },
         back() {
             this.$router.push({ name: 'ChoiceProof' })

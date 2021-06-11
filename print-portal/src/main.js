@@ -7,8 +7,11 @@ import axios from 'axios';
 import i18n from './i18n'
 import AuthService from '@/services/AuthService'
 
-const mgr = new AuthService();
-Vue.prototype.mgr = mgr;
+const authVaccinations = new AuthService(window.location.origin + '/nl/print/jouw-vaccinaties-redirect');
+const authNegativeTests = new AuthService(window.location.origin + '/nl/print/jouw-testresultaat-redirect');
+
+Vue.prototype.authVaccinations = authVaccinations;
+Vue.prototype.authNegativeTests = authNegativeTests;
 
 const axiosConfig = {
     baseURL: window.config.api
@@ -23,6 +26,7 @@ new Vue({
     router,
     store,
     i18n,
-    mgr,
+    authVaccinations,
+    authNegativeTests,
     render: h => h(App)
 }).$mount('#app')

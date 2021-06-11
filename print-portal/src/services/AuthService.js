@@ -1,5 +1,4 @@
 import { UserManager } from 'oidc-client';
-// import store from '@/store'
 
 const getNonce = (l) => {
     const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._'
@@ -22,13 +21,13 @@ const getNonce = (l) => {
     return result;
 }
 
-const getClientSettings = () => {
+const getClientSettings = (redirect_uri) => {
     return {
         authority: 'https://tvs-connect.acc.coronacheck.nl',
         client_id: 'test_client',
         scope: 'openid',
         response_type: 'code',
-        redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties-redirect',
+        redirect_uri: redirect_uri,
         extraQueryParams: {
             nonce: getNonce(32)
         },
@@ -38,7 +37,11 @@ const getClientSettings = () => {
 }
 
 export default class AuthService {
-    manager = new UserManager(getClientSettings());
+    manager = null;
+
+    constructor(redirect_uri) {
+        this.manager = new UserManager(getClientSettings(redirect_uri))
+    }
 
     startAuthentication() {
         return this.manager.signinRedirect();

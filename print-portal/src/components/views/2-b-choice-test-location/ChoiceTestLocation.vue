@@ -13,7 +13,7 @@ export default {
             this.$router.push({ name: 'ChoiceProof' })
         },
         loginWithDigid() {
-            this.mgr.getNegativeTests();
+            this.authNegativeTests.startAuthentication();
         },
         gotoRetrieveTest() {
             this.$router.push({ name: 'ProvideCode' });

@@ -17,7 +17,7 @@ export default {
             const callback = () => {
                 this.$store.commit('clearAll')
                 this.$store.commit('signedEvents/clear')
-                this.$router.push({ name: 'CollectVaccination' });
+                this.$router.push({ name: 'ChoiceProof' });
             }
             this.$store.commit('modal/set', {
                 messageHead: this.$t('message.info.areYouSureToCancelVaccination.head'),

@@ -20,7 +20,7 @@ export default {
                 // todo cancel all processes
                 console.log('cancelling processes');
                 this.$store.commit('signedEvents/clear');
-                this.$router.push({ name: 'ChoiceTestLocation' });
+                this.$router.push({ name: 'ChoiceProof' });
             }
             if (this.isLoading) {
                 this.$store.commit('modal/set', {
@@ -34,45 +34,41 @@ export default {
                 })
             } else {
                 this.$store.commit('signedEvents/clear');
-                this.$router.push({ name: 'ChoiceTestLocation' });
+                this.$router.push({ name: 'ChoiceProof' });
             }
         },
-        readToken() {
-            let params = decodeURI(window.location.hash);
-            if (params[0] === '#') {
-                params = params.substring(1)
-            }
-            this.accessToken = new URLSearchParams(params).get('access_token');
-            this.$store.commit('setUserConsent', true);
-            // mock connection
-            setTimeout(() => {
+        completeAuthentication() {
+            this.isLoading = true;
+            this.authVaccinations.completeAuthentication().then((user) => {
+                this.collectEvents(user.id_token)
+            }, () => {
                 this.isLoading = false;
-            }, 1000);
+                this.$router.push({ name: 'CollectVaccination' });
+            })
         },
-        getResult(event) {
+        collectEvents(token) {
+            console.log(token);
             this.$store.commit('signedEvents/clear');
-            switch (event) {
-            case 'none':
-                this.$router.push({ name: 'TestResultNone' });
-                break;
-            case 'pending':
-                this.$router.push({ name: 'TestResultPending' });
-                break;
-            case 'not-possible':
-                this.$router.push({ name: 'TestResultNotPossible' });
-                break;
-            case 'test-bsn':
-                this.isLoading = true;
-                signedEventsTool.collect().then(signedEvents => {
-                    this.$store.commit('signedEvents/createAll', signedEvents);
-                    this.isLoading = false;
-                    this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
+            this.isLoading = true;
+            signedEventsTool.collect(token).then(signedEvents => {
+                this.$store.commit('signedEvents/createAll', signedEvents);
+                this.isLoading = false;
+                this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
+                // todo
+                // this.$router.push({ name: 'TestResultNone' });
+                // this.$router.push({ name: 'TestResultPending' });
+                // this.$router.push({ name: 'TestResultNotPossible' });
+            }, (error) => {
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.error.general.head'),
+                    messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
+                    closeButton: true
                 });
-            }
+            });
         }
     },
     mounted() {
-        this.readToken();
+        this.completeAuthentication();
     }
 }
 </script>
@@ -89,21 +85,6 @@ export default {
                 class="section-block">
                 <Loading
                     :text="'(Mocking digid connection...)'"/>
-            </div>
-
-            <div v-else class="mock-choices">
-                Mocking the result, options:<br><br>
-                <button
-                    @click="getResult('test-bsn')">Use test BSN</button>
-
-                <button
-                    @click="getResult('none')">None</button>
-
-                <button
-                    @click="getResult('pending')">Pending</button>
-
-                <button
-                    @click="getResult('not-possible')">Not possible</button>
             </div>
         </div>
     </Page>
