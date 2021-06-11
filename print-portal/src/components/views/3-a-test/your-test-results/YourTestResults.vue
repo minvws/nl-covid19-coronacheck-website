@@ -3,10 +3,11 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import NegativeTest from './NegativeTest';
 import CcButton from '@/components/elements/CcButton';
+import CcModestButton from '@/components/elements/ccModestButton';
 
 export default {
     name: 'YourTestResults',
-    components: { Page, PageIntro, NegativeTest, CcButton },
+    components: { Page, PageIntro, NegativeTest, CcButton, CcModestButton },
     data() {
         return {
             isLoading: true,
@@ -122,12 +123,9 @@ export default {
                             @select="createTestCertificate()"
                             :label="$t('views.yourTestResults.createTestProofButton')"/>
                         <div class="button__help-button">
-                            <button
-                                @click="openModalTestResultsSomethingWrong()"
-                                type="button"
-                                class="button-modest">
-                                {{$t('views.yourTestResults.somethingIsWrong')}}
-                            </button>
+                            <CcModestButton
+                                @select="openModalTestResultsSomethingWrong()"
+                                :label="$t('views.yourTestResults.somethingIsWrong')"/>
                         </div>
                     </div>
                 </div>

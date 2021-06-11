@@ -3,10 +3,11 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import PageChoice from '@/components/elements/PageChoice';
 import PreferMobile from '@/components/elements/PreferMobile';
+import CcModestButton from '@/components/elements/ccModestButton';
 
 export default {
     name: 'ChoiceTestLocation',
-    components: { Page, PageIntro, PageChoice, PreferMobile },
+    components: { Page, PageIntro, PageChoice, PreferMobile, CcModestButton },
     computed: {},
     methods: {
         back() {
@@ -48,12 +49,9 @@ export default {
                 </div>
             </div>
             <div class="section-block">
-                <button
-                    @click="openModal()"
-                    type="button"
-                    class="button-modest">
-                    {{$t('views.choiceTestLocation.didNotGetTestedYet')}}
-                </button>
+                <CcModestButton
+                    @select="openModal()"
+                    :label="$t('views.choiceTestLocation.didNotGetTestedYet')"/>
             </div>
         </div>
         <PreferMobile/>

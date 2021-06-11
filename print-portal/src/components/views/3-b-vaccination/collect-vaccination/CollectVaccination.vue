@@ -2,10 +2,11 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
+import CcModestButton from '@/components/elements/ccModestButton';
 
 export default {
     name: 'CollectVaccination',
-    components: { Page, PageIntro, CcButton },
+    components: { CcModestButton, Page, PageIntro, CcButton },
     computed: {},
     methods: {
         getToken() {
@@ -13,6 +14,9 @@ export default {
         },
         back() {
             this.$router.push({ name: 'ChoiceProof' })
+        },
+        dontHaveDigid() {
+            window.open('https://www.digid.nl/digid-aanvragen-activeren#hoe-vraag-ik-digid-aan')
         }
     }
 }
@@ -30,6 +34,12 @@ export default {
                      <CcButton
                          @select="getToken()"
                          :label="$t('views.collectVaccination.loginDigid')"/>
+                     <div>
+                         <CcModestButton
+                             @select="dontHaveDigid"
+                             :label="$t('views.collectVaccination.dontHaveDigid')"
+                             :margin-top="true"/>
+                     </div>
                 </div>
             </div>
         </div>

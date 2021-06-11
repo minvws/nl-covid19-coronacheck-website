@@ -19,20 +19,6 @@ button {
     }
 }
 
-.button-modest {
-    color: $color-coronacheck_blue;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-
-    &:hover {
-
-        @media (hover: hover) and (pointer: fine) {
-            text-decoration: underline;
-        }
-    }
-}
-
 .button__help-button {
     margin-top: $length-s;
 }

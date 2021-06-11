@@ -1,10 +1,11 @@
 <script>
 import CcButton from '@/components/elements/CcButton';
 import ErrorLabel from '@/components/elements/ErrorLabel';
+import CcModestButton from '@/components/elements/ccModestButton';
 
 export default {
     name: 'ProvideVerificationCode',
-    components: { CcButton, ErrorLabel },
+    components: { CcButton, ErrorLabel, CcModestButton },
     props: {
         verificationCodeStatus: {
             type: Object,
@@ -68,17 +69,9 @@ export default {
                 v-if="verificationCodeStatus.error.length > 0"
                 :label="verificationCodeStatus.error"/>
             <div class="request-new-verification-code__container">
-                <button
-                    @click="requestNewVerificationCode()"
-                    type="button"
-                    class="button-modest">
-                    <span v-if="verificationCodeStatus.error.length > 0">
-                        {{$t('views.provideCode.sendAgain')}}
-                    </span>
-                    <span v-else>
-                        {{$t('views.provideCode.didNotGetCode')}}
-                    </span>
-                </button>
+                <CcModestButton
+                    @select="requestNewVerificationCode()"
+                    :label="verificationCodeStatus.error.length > 0 ? $t('views.provideCode.sendAgain') : $t('views.provideCode.didNotGetCode')"/>
             </div>
         </div>
         <CcButton

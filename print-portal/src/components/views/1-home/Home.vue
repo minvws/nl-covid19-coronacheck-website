@@ -75,6 +75,10 @@ export default {
 
 .home {
 
+    .home__section {
+        margin-bottom: $length-xl;
+    }
+
     .UserConsent {
         margin: $grid-x6 0 $length-s 0;
     }

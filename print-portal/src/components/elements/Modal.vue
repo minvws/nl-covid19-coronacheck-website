@@ -1,7 +1,9 @@
 <script>
+import CcModestButton from './ccModestButton';
+
 export default {
     name: 'Modal',
-    components: {},
+    components: { CcModestButton },
     props: {},
     data() {
         return {
@@ -112,25 +114,20 @@ export default {
                 <div
                     v-if="showModal"
                     id="modal__footer">
-                    <button
+                    <CcModestButton
                         v-if="showConfirm"
-                        @click="refute()"
-                        type="button"
-                        class="button-modest">
-                        {{refuteText}}
-                    </button>
-                    <button
+                        @select="refute()"
+                        :label="refuteText"/>
+
+                    <CcModestButton
                         v-if="showConfirm"
-                        @click="confirm()"
-                        type="button"
-                        class="button-modest button--ok">
-                        {{confirmText}}
-                    </button>
-                    <button
+                        @select="confirm()"
+                        :label="confirmText"/>
+
+                    <CcModestButton
                         v-if="showCloseButton"
-                        @click="close()"
-                        type="button"
-                        class="button-modest">{{$t('close')}}</button>
+                        @select="close()"
+                        :label="$t('close')"/>
                 </div>
             </div>
         </div>
@@ -179,6 +176,7 @@ export default {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 460px;
     height: calc(100% - 40px);
     display: flex;
     flex-direction: column;
@@ -223,7 +221,7 @@ export default {
         display: flex;
         align-items: center;
 
-        .button-modest {
+        .ccModestButton {
             margin-right: $length-xl;
 
             &:last-child {

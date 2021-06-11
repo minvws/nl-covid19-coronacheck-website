@@ -37,8 +37,8 @@ const en = {
         'collectVaccination': {
             'pageHeader': 'Collect vaccination',
             'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p><p>Questions about vaccinations? Read more on the <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">website of the Dutch Government</a></p>',
-            'loginDigid': 'Log in with DigiD'
-            // 'loginDigid': 'I don’t have DigiD'
+            'loginDigid': 'Log in with DigiD',
+            'dontHaveDigid': 'I don’t have DigiD'
         },
         'yourVaccinations': {
             'pageHeader': 'Your retrieved vaccinations',

@@ -3,10 +3,11 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Vaccination from './Vaccination';
 import CcButton from '@/components/elements/CcButton';
+import CcModestButton from '@/components/elements/ccModestButton';
 
 export default {
     name: 'YourVaccinations',
-    components: { Page, PageIntro, Vaccination, CcButton },
+    components: { Page, PageIntro, Vaccination, CcButton, CcModestButton },
     computed: {
         vaccinationSignedEvents() {
             return this.$store.getters['signedEvents/getProofEvents']('vaccination');
@@ -63,12 +64,9 @@ export default {
                         @select="gotoPrint()"
                         :label="$t('views.yourVaccinations.createTestProofButton')"/>
                     <div class="button__help-button">
-                        <button
-                            @click="openModalVaccinationSomethingWrong()"
-                            type="button"
-                            class="button-modest">
-                            {{$t('views.yourVaccinations.somethingIsWrong')}}
-                        </button>
+                        <CcModestButton
+                            @select="openModalVaccinationSomethingWrong()"
+                            :label="$t('views.yourVaccinations.somethingIsWrong')"/>
                     </div>
                 </div>
             </div>
