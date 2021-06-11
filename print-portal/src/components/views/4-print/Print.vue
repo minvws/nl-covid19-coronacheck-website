@@ -2,17 +2,16 @@
 import Page from '@/components/elements/Page';
 import { detect } from 'detect-browser';
 import CcButton from '@/components/elements/CcButton';
+import { getDocument } from '@/tools/print';
+import { generateQR } from '@/tools/qr';
+import mockQrs from '@/data/mock/qr';
 
 export default {
     name: 'Print',
     components: { Page, CcButton },
-    props: {
-        qrCode: {
-            type: String,
-            required: true
-        },
-        document: {
-            required: false
+    data() {
+        return {
+            document: null
         }
     },
     computed: {
@@ -24,6 +23,23 @@ export default {
         }
     },
     methods: {
+        createDocument(qrObject) {
+            generateQR(qrObject.data).then(async (urlQR) => {
+                this.document = await getDocument(qrObject.attributesIssued, urlQR, this.currentLanguage.locale);
+            }, (error) => {
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.error.general.head'),
+                    messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
+                    closeButton: true
+                });
+            })
+        },
+        getQR() {
+            setTimeout(() => {
+                this.$store.commit('qrs/init', mockQrs);
+                this.createDocument(this.$store.state.qrs.all[0])
+            })
+        },
         goBack() {
             this.$emit('back');
         },
@@ -59,6 +75,9 @@ export default {
                 confirmNo: this.$t('pdf.close')
             });
         }
+    },
+    mounted() {
+        this.getQR()
     }
 }
 </script>
@@ -66,8 +85,7 @@ export default {
 <template>
     <Page
         class="Print"
-        @back="goBack"
-        :display-back-button="qrCode.length > 0">
+        @back="goBack">
         <div class="section">
             <slot></slot>
             <div class="section-block">

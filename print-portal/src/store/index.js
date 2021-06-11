@@ -5,6 +5,7 @@ import modal from './modules/modal';
 import languages from './modules/languages';
 import testProviders from './modules/testProviders';
 import signedEvents from './modules/signedEvents';
+import qrs from './modules/qrs';
 
 Vue.use(Vuex)
 
@@ -16,10 +17,7 @@ const state = {
     testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
     verificationNeeded: false,
     verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
-    testResultStatus: 'idle',
-    // print
-    qrCode: '',
-    qrData: null
+    testResultStatus: 'idle'
 };
 
 const getters = {
@@ -89,6 +87,7 @@ export default new Vuex.Store({
         modal,
         languages,
         testProviders,
-        signedEvents
+        signedEvents,
+        qrs
     }
 })
