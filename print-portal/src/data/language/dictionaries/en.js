@@ -1,6 +1,5 @@
 import messageInfoVaccinationAbout from '../templates/en/message-info-vaccinationAbout';
 import footer from '../templates/en/footer';
-import { pdfFooter, pdfInstructions } from '../templates/en/pdf';
 import { messageInfoTestResultAboutV2, messageInfoTestResultAboutV3 } from '../templates/en/message-info-testResultAbout';
 
 const en = {
@@ -167,16 +166,6 @@ const en = {
         }
     },
     'pdf': {
-        'yourTestProof': 'Your test certificate',
-        'dayOfBirth': 'Day of birth',
-        'footerText': pdfFooter,
-        'initials': 'Initials',
-        'instructions': 'Instructions',
-        'instructionsText': pdfInstructions,
-        'preferMobile': 'Prefer showing your test certificate on your mobile phone? Then use the retrieval code (the test location sends it in an email) in the CoronaCheck app.',
-        'questions': 'Questions?',
-        'testedAt': 'Tested for',
-        'validUntil': 'Valid until'
     },
     'image': {
         'holder': {

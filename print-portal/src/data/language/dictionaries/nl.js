@@ -1,7 +1,6 @@
 import { messageInfoTestResultAboutV2, messageInfoTestResultAboutV3 } from '../templates/nl/message-info-testResultAbout';
 import messageInfoVaccinationAbout from '../templates/nl/message-info-vaccinationAbout';
 import footer from '../templates/nl/footer';
-import { pdfFooter, pdfInstructions } from '../templates/nl/pdf';
 
 const nl = {
     'date': {
@@ -171,16 +170,35 @@ const nl = {
         }
     },
     'pdf': {
-        'yourTestProof': 'Jouw testbewijs',
-        'dayOfBirth': 'Geboortedag',
-        'footerText': pdfFooter,
-        'initials': 'Initialen',
-        'instructions': 'INSTRUCTIES',
-        'instructionsText': pdfInstructions,
-        'preferMobile': 'Laat je jouw testbewijs liever op je telefoon zien? Gebruik dan de code uit de e-mail in de CoronaCheck-app',
+        'eu': {
+            'negativeTest': {
+                'instructions': '1. Print dit bewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat de QR-code en je testgegevens zien aan de buitenlandse grens of als er in andere landen om gevraagd wordt.',
+                'propertiesLabel': 'Gegevens negatieve test'
+            },
+            'vaccination': {
+                'instructions': '',
+                'propertiesLabel': 'Vaccinatiegegevens'
+            },
+            'title': 'Internationaal bewijs',
+            'intro': 'Reis je buiten Nederland? Gebruik dan dit EU Digitaal Corona Certificaat.\n\nBekijk voor vertrek welke test- of vaccinatie- bewijzen geldig zijn in het land dat je bezoekt: www.reopen.europa.eu/en',
+            'qrTitle': 'QR-code internationaal'
+        },
+        'nl': {
+            'negativeTest': {
+                'instructions': '',
+                'propertiesLabel': 'Gegevens'
+            },
+            'vaccination': {
+                'instructions': '',
+                'propertiesLabel': 'Gegevens'
+            },
+            'title': 'Bewijs voor in Nederland',
+            'intro': 'Bezoek je locaties of activiteiten binnen Nederland? Gebruik dan dit coronatoegangsbewijs.',
+            'qrTitle': 'Bewijs voor in Nederland'
+        },
+        'instructions': 'Instructies',
         'questions': 'VRAGEN?',
-        'testedAt': 'Getest op',
-        'validUntil': 'Geldig tot'
+        'questionsContent': 'Bekijk de meestgestelde vragen op CoronaCheck.nl of stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)'
     },
     'image': {
         'holder': {

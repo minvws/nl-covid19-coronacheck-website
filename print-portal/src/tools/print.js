@@ -1,3 +1,4 @@
+/*eslint-disable */
 import { jsPDF as JsPDF } from 'jspdf';
 import dateTool from '@/tools/date';
 import montserrat from '@/assets/fontAsBase64';
@@ -5,24 +6,24 @@ import { QRSizeInCm } from '@/data/constants'
 import i18n from '@/i18n'
 import store from '@/store'
 
+
 const pageHeight = 297;
 const pageWidth = 210;
-// this is top paper to baseline first text
-const pageMarginTop = 20;
-const pageMarginLeft = 12;
-const lineHeight = 6;
-const lineHeightSmall = 5.5;
-const bottomBarHeight = 30;
-const qrCodeY = 27;
-const tableBaseY = 116;
-const tableBaseCol2X = 48;
-const instructionsBaseY = (pageHeight / 2) + 17;
-const questionsTableBaseX = (pageWidth / 2) + 10;
-const questionsTableBaseY = (pageHeight / 2) + 53;
-const questionsTablePadding = 8;
-const footerBaseX = questionsTableBaseX;
-const footerBaseY = pageHeight - bottomBarHeight + 10;
-// const borderRadius = 6;
+const marginLeft = 10;
+// jspdf uses the baseline of a text for an y position
+const marginTop = 16;
+const leftPartLeft = marginLeft;
+const leftPartTop = 30;
+const rightPartLeft = 0.5 * pageWidth + marginLeft;
+const rightPartTop = marginTop;
+const partWidth = 0.5 * pageWidth - (2 * marginLeft)
+const bottomPartTop = 0.5 * pageHeight + marginTop;
+const lineHeight = 5;
+const marginQuestionsFrame = 4;
+const questionsFrameHeight = 54;
+const questionsFrameTop = (pageHeight / 2) - marginLeft - questionsFrameHeight;
+const questionsFrameInnerLeft = rightPartLeft + marginQuestionsFrame;
+const questionsFrameInnerWidth = partWidth - (2 * marginQuestionsFrame);
 
 const createImageOnTheFly = async (src) => {
     return new Promise((resolve, reject) => {
@@ -97,87 +98,94 @@ const initDoc = () => {
 const getTextItems = (type, territory, userData, locale) => {
     return [
         {
-            text: i18n.t('pdf.yourTestProof'),
+            text: i18n.t('pdf.' + territory + '.title'),
             fontWeight: 700,
-            fontSize: 20,
-            position: [pageMarginLeft, pageMarginTop]
+            fontSize: 22,
+            position: [leftPartLeft, leftPartTop],
+            width: partWidth,
+            textAlign: 'center',
+            lineHeight: 10
         }, {
-            text: i18n.t('pdf.initials'),
-            fontSize: 10,
-            position: [pageMarginLeft, tableBaseY]
-        }, {
-            text: userData.firstNameInitial + userData.lastNameInitial,
-            fontWeight: 700,
-            position: [tableBaseCol2X, tableBaseY]
-        }, {
-            text: i18n.t('pdf.dayOfBirth'),
-            position: [pageMarginLeft, (tableBaseY + lineHeight)]
-        }, {
-            text: getBirthDayString(userData),
-            fontWeight: 700,
-            position: [tableBaseCol2X, (tableBaseY + lineHeight)]
-        }, {
-            text: i18n.t('pdf.testedAt'),
-            position: [pageMarginLeft, (tableBaseY + 3 * lineHeight)]
-        }, {
-            text: dateTool.dateTimeToString((userData.sampleTime * 1000), 'dd-MM-yyyy HH:mm', locale),
-            fontWeight: 700,
-            position: [tableBaseCol2X, (tableBaseY + 3 * lineHeight)]
-        }, {
-            text: i18n.t('pdf.validUntil'),
-            position: [pageMarginLeft, (tableBaseY + 4 * lineHeight)]
-        }, {
-            text: getValidUntil(userData),
-            fontWeight: 700,
-            position: [tableBaseCol2X, (tableBaseY + 4 * lineHeight)]
+            text: i18n.t('pdf.' + territory + '.intro'),
+            fontWeight: 400,
+            fontSize: 11,
+            position: [leftPartLeft, 51],
+            width: partWidth,
+            textAlign: 'center'
         }, {
             text: i18n.t('pdf.instructions'),
             fontWeight: 700,
-            position: [pageMarginLeft, instructionsBaseY]
+            fontSize: 18,
+            position: [rightPartLeft, rightPartTop],
+            width: partWidth
         }, {
-            text: i18n.t('pdf.instructionsText'),
-            position: [pageMarginLeft, (instructionsBaseY + 3 * lineHeight)],
-            width: (pageWidth / 2 - (2 * pageMarginLeft))
-        }, {
-            text: i18n.t('pdf.preferMobile'),
+            text: i18n.t('pdf.' + territory + '.' + type + '.instructions'),
             fontWeight: 400,
-            fontSize: 10,
-            lineHeight: lineHeightSmall,
-            position: [footerBaseX, footerBaseY],
-            width: (pageWidth / 2 - (2 * pageMarginLeft))
+            fontSize: 11,
+            position: [rightPartLeft, 27],
+            width: partWidth
         }, {
             text: i18n.t('pdf.questions'),
             fontWeight: 700,
-            fontSize: 10,
-            position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding)]
+            fontSize: 11,
+            position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + lineHeight)],
+            width: questionsFrameInnerWidth
         }, {
-            text: i18n.t('pdf.footerText'),
-            lineHeight: lineHeightSmall,
-            position: [(questionsTableBaseX + questionsTablePadding), (questionsTableBaseY + questionsTablePadding + 2 * lineHeightSmall)],
-            width: (pageWidth / 2 - 20 - (2 * questionsTablePadding))
-        }];
+            text: i18n.t('pdf.questionsContent'),
+            fontWeight: 400,
+            fontSize: 11,
+            position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + (3 * lineHeight))],
+            width: questionsFrameInnerWidth,
+            lineHeight: lineHeight
+        }, {
+            text: i18n.t('pdf.' + territory + '.qrTitle'),
+            fontWeight: 700,
+            fontSize: 18,
+            position: [leftPartLeft, bottomPartTop],
+            width: partWidth,
+            textAlign: 'center'
+        }, {
+            text: i18n.t('pdf.' + territory + '.' + type + '.propertiesLabel'),
+            fontWeight: 700,
+            fontSize: 18,
+            position: [rightPartLeft, bottomPartTop],
+            width: partWidth,
+            textAlign: 'center'
+        },
+    ]
 }
 
 const getImageItems = async (type, territory, urlQR) => {
+    const flag = await createImageOnTheFly('assets/img/pdf/flag-' + territory + '.png');
     const imageCoronacheck = await createImageOnTheFly('assets/img/pdf/coronacheck.png');
     const imageFoldInstructions = await createImageOnTheFly('assets/img/pdf/fold-instructions.png');
+    const QRSize = QRSizeInCm * 10;
+    const coronacheckImageHeight = 10;
+    const flagWidth = 63;
+    const flagHeight = 42
     return [
         {
+            url: flag,
+            x: ((pageWidth / 2) - flagWidth) / 2,
+            y: 87,
+            width: flagWidth,
+            height: flagHeight
+        }, {
             url: urlQR,
-            x: pageMarginLeft,
-            y: qrCodeY,
-            width: (QRSizeInCm * 10),
-            height: (QRSizeInCm * 10)
+            x: ((pageWidth / 2) - QRSize) / 2,
+            y: 178,
+            width: QRSize,
+            height: QRSize
         }, {
             url: imageCoronacheck,
-            x: 10,
-            y: (pageHeight - bottomBarHeight + 8),
-            width: 70,
-            height: 15
+            x: questionsFrameInnerLeft,
+            y: questionsFrameTop + questionsFrameHeight - coronacheckImageHeight - marginQuestionsFrame,
+            width: 47,
+            height: coronacheckImageHeight
         }, {
             url: imageFoldInstructions,
-            x: 65,
-            y: (instructionsBaseY - 6),
+            x: 165,
+            y: 6,
             width: 35,
             height: 10
         }
@@ -201,6 +209,9 @@ const drawTextItems = (doc, textItems) => {
     const regular = ['montserrat', 'normal', 400];
     const bold = ['montserrat', 'normal', 700];
     for (const textItem of textItems) {
+        const textAlign = textItem.textAlign ? textItem.textAlign : 'left'
+        // for center align jspdf needs to now the center x
+        const x = (textItem.textAlign && textItem.width) ? textItem.position[0] + 0.5 * textItem.width : textItem.position[0];
         if (textItem.fontSize) {
             doc.setFontSize(textItem.fontSize);
         }
@@ -212,27 +223,35 @@ const drawTextItems = (doc, textItems) => {
         if (textItem.width) {
             let index = 0;
             const set = doc.splitTextToSize(textItem.text, textItem.width);
+
             for (const item of set) {
                 const lh = textItem.lineHeight ? textItem.lineHeight : lineHeight;
-                doc.text(item, textItem.position[0], (textItem.position[1] + index * lh), textItem.properties);
+                doc.text(item, x, (textItem.position[1] + index * lh), textAlign);
                 index++;
             }
         } else {
-            doc.text(textItem.text, textItem.position[0], textItem.position[1], textItem.properties);
+            doc.text(textItem.text, x, textItem.position[1], textAlign);
         }
     }
+}
+
+const drawQuestionFrame = (doc) => {
+    // questions table (do before the artwork image which should be on top
+    doc.setFillColor(239, 247, 249);
+    doc.roundedRect(rightPartLeft, questionsFrameTop, partWidth, questionsFrameHeight, 4, 4, 'F');
 }
 
 export const getDocument = async (type, territory, userData, urlQR, locale) => {
     const doc = initDoc();
     const textItems = getTextItems(type, territory, userData, locale);
     const imageItems = await getImageItems(type, territory, urlQR);
+    drawQuestionFrame(doc);
     drawImageItems(doc, imageItems);
     drawLines(doc);
     drawTextItems(doc, textItems)
     return doc;
 }
 
-// questions table (do before the artwork image which should be on top
-// doc.setFillColor(239, 247, 249);
-// doc.roundedRect(questionsTableBaseX, questionsTableBaseY, (pageWidth / 2 - 20), 60, borderRadius, borderRadius, 'F');
+
+
+/* eslint-enable */
