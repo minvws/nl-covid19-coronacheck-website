@@ -58,15 +58,12 @@ export default class AuthService {
     }
 
     completeAuthentication() {
-        return this.manager.signinRedirectCallback().then(user => {
-            console.log(user);
-            this.user = user;
-        }).catch((error) => {
-            store.commit('modal/set', {
-                messageHead: this.$t('message.error.general.head'),
-                messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                closeButton: true
-            });
+        return new Promise((resolve, reject) => {
+            return this.manager.signinRedirectCallback().then(user => {
+                resolve(user);
+            }).catch((error) => {
+                reject(error);
+            })
         })
     }
 }

@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const collect = async (code) => {
+const collect = async (token) => {
     return new Promise((resolve, reject) => {
-        getTokens().then((tokenSets) => {
+        getTokens(token).then((tokenSets) => {
             getEvents(tokenSets).then(events => {
                 resolve(events);
             })
@@ -10,7 +10,7 @@ const collect = async (code) => {
     })
 }
 
-const getTokens = async () => {
+const getTokens = async (token) => {
     return new Promise((resolve, reject) => {
         axios({
             method: 'get',

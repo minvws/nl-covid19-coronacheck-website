@@ -35,41 +35,31 @@ export default {
                 closeButton: false
             })
         },
-        readToken() {
-            let params = decodeURI(window.location.hash);
-            if (params[0] === '#') {
-                params = params.substring(1)
-            }
-            this.accessToken = new URLSearchParams(params).get('access_token');
-            this.$store.commit('setUserConsent', true);
-            // mock connection
-            setTimeout(() => {
+        completeAuthentication() {
+            this.isLoading = true;
+            this.mgr.completeAuthentication().then((user) => {
+                console.log(user);
+                this.collectEvents(user.id_token)
+            }, () => {
                 this.isLoading = false;
-            }, 1000);
+                this.$router.push({ name: 'CollectVaccination' });
+            })
         },
-        getResult(event) {
+        collectEvents(token) {
             this.$store.commit('signedEvents/clear');
-            switch (event) {
-            case 'test-bsn':
-                this.isLoading = true;
-                signedEventsTool.collect().then(signedEvents => {
-                    this.$store.commit('signedEvents/createAll', signedEvents);
-                    this.isLoading = false;
-                    this.$router.push({ name: 'YourVaccinations' });
-                });
-                break;
-            case 'not-possible':
-                this.$router.push({ name: 'VaccinationsNotPossible' });
-                break;
-            case 'no-vaccinations':
-                this.$router.push({ name: 'VaccinationsNone' });
-                break;
-            }
+            this.isLoading = true;
+            signedEventsTool.collect(token).then(signedEvents => {
+                this.$store.commit('signedEvents/createAll', signedEvents);
+                this.isLoading = false;
+                this.$router.push({ name: 'YourVaccinations' });
+                // todo
+                // this.$router.push({ name: 'VaccinationsNone' });
+                // this.$router.push({ name: 'VaccinationsNotPossible' });
+            });
         }
     },
     mounted() {
-        // this.readToken();
-        this.mgr.completeAuthentication();
+        this.completeAuthentication();
     }
 }
 </script>
@@ -84,19 +74,7 @@ export default {
             <div
                 v-if="isLoading"
                 class="section-block">
-                <Loading
-                    :text="'(Mocking digid connection...)'"/>
-            </div>
-            <div v-else class="mock-choices">
-                Mocking the result, options:<br><br>
-                <button
-                    @click="getResult('test-bsn')">Use test BSN</button>
-
-                <button
-                    @click="getResult('not-possible')">Not possible</button>
-
-                <button
-                    @click="getResult('no-vaccinations')">No vaccinations</button>
+                <Loading/>
             </div>
         </div>
     </Page>
