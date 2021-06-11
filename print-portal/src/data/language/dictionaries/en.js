@@ -25,13 +25,13 @@ const en = {
             'choiceVaccinationBody': 'I have had my injection or injections'
         },
         'choiceTestLocation': {
-            'pageHeader': 'TODO Waar ben je getest?',
-            'pageIntro': '<p>TODO Is je testuitslag negatief? Dan kan je er een QR-code van maken. Geef aan bij welke testlocatie je bent getest.</p>',
-            'choiceGGDHead': 'TODO GGD',
+            'pageHeader': 'Where have you been tested?',
+            'pageIntro': '<p>Is your test result negative? Then you can turn it into a QR code. Please specify at which test location you were tested.</p>',
+            'choiceGGDHead': 'GGD',
             'choiceGGDBody': 'Log in with DigiD',
             'loginDigid': 'I don’t have DigiD',
-            'choiceOtherLocation': 'TODO Andere testlocatie',
-            'didNotGetTestedYet': 'TODO Ik ben nog niet getest'
+            'choiceOtherLocation': 'Other test location',
+            'didNotGetTestedYet': 'I have not been tested yet'
         },
         'collectVaccination': {
             'pageHeader': 'Collect vaccination',
@@ -46,12 +46,12 @@ const en = {
             'somethingIsWrong': 'Is something wrong?'
         },
         'noVaccinations': {
-            'pageHeader': 'TODO Geen vaccinatie(s) beschikbaar',
-            'pageIntro': '<p>TODO Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Kijk voor meer informatie op CoronaCheck.nl/wegwijzer.</p>'
+            'pageHeader': 'No vaccination(s) available',
+            'pageIntro': '<p>Details about your vaccination are not available.</p><p>Have you been vaccinated recently? It might take a little while before your details are available.</p><p>Your general practitioner might not be affiliated with the GGD. For more information, please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">CoronaCheck.nl/en/guidepost</a>.</p>'
         },
         'notPossibleVaccinations': {
-            'pageHeader': 'TODO We kunnen geen bewijs maken',
-            'pageIntro': '<p>TODO Op dit moment kunnen we geen bewijs maken van jouw vaccinatie. Dit kan verschillende oorzaken hebben. <a href="https://coronacheck.nl/wegwijzer" target="_blank">Lees hier meer</a>.</p>'
+            'pageHeader': 'We kunnen geen bewijs maken',
+            'pageIntro': '<p>At the moment, we cannot provide proof of your vaccination. This can have different causes. For more information, please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">CoronaCheck.nl/en/guidepost</a>.</p>'
         },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
@@ -127,7 +127,7 @@ const en = {
             },
             'testResultSomethingWrong': {
                 'head': 'Something is wrong',
-                'body': 'TODO <p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.</p>'
+                'body': '<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>'
             },
             'vaccinationAbout': {
                 'head': 'What has been retrieved?',
@@ -135,7 +135,7 @@ const en = {
             },
             'vaccinationSomethingWrong': {
                 'head': 'Something is wrong',
-                'body': '<p>Wrong name or date of birth? Contact your doctor and let them know.</p><p>Missing a jab?<br>Contact the location you were vaccinated at.</p>'
+                'body': '<p>Wrong name or date of birth? Contact your doctor and let them know.</p><p>Missing an injection?<br>Contact the location you were vaccinated at.</p>'
             },
             'noVerificationCode': {
                 'head': 'Need a new verification code?',
@@ -143,7 +143,7 @@ const en = {
             },
             'areYouSureToCancelVaccination': {
                 'head': 'Are you sure you want to stop?',
-                'body': 'TODO Je moet dan later opnieuw met DigiD inloggen om je vaccinatie op te halen.',
+                'body': 'Then you need to log in again later using DigiD to retrieve your vaccination.',
                 'yes': 'Yes, stop',
                 'no': 'No, continue'
             },
