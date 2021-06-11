@@ -4,6 +4,7 @@ import _base from './modules/_base-module';
 import modal from './modules/modal';
 import languages from './modules/languages';
 import testProviders from './modules/testProviders';
+import eventProviders from './modules/eventProviders';
 import signedEvents from './modules/signedEvents';
 import qrs from './modules/qrs';
 
@@ -87,6 +88,7 @@ export default new Vuex.Store({
         modal,
         languages,
         testProviders,
+        eventProviders,
         signedEvents,
         qrs
     }

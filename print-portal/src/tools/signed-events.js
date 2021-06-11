@@ -1,4 +1,5 @@
 import axios from 'axios';
+import store from '@/store'
 
 const collect = async (token) => {
     return new Promise((resolve, reject) => {
@@ -40,18 +41,44 @@ const getEvents = async (tokenSets) => {
     for (const tokenSet of tokenSets) {
         // only do GGD for now
         if (tokenSet.provider_identifier === 'ZZZ') {
-            await getEvent(tokenSet).then(signedEvent => {
-                allEvents.push(signedEvent)
-            })
+            const eventProvider = store.getters['eventProviders/getTestProviderByIdentifier'](tokenSet.provider_identifier);
+            if (eventProvider) {
+                const result = await unomi(eventProvider, tokenSet)
+                if (result && result.informationAvailable) {
+                    await getEvent(eventProvider, tokenSet).then(signedEvent => {
+                        allEvents.push(signedEvent)
+                    })
+                }
+            }
         }
     }
     return allEvents;
 }
 
-const getEvent = async (tokenSet) => {
+const unomi = async (eventProvider, tokenSet) => {
     return new Promise((resolve, reject) => {
-        // todo replace hardcoded
-        const url = 'https://api-test.coronatester.nl/api/event';
+        const url = eventProvider.unomi_url;
+        const headers = {
+            'Authorization': `Bearer ${tokenSet.unomi}`,
+            'Content-Type': 'application/json'
+        };
+        axios({
+            method: 'post',
+            headers: headers,
+            url: url
+        }).then((response) => {
+            const payload = JSON.parse(atob(response.data.payload));
+            resolve(payload)
+        }).catch((error) => {
+            console.log(error);
+            reject(error);
+        })
+    })
+}
+
+const getEvent = async (eventProvider, tokenSet) => {
+    return new Promise((resolve, reject) => {
+        const url = eventProvider.event_url;
         const headers = {
             'Authorization': `Bearer ${tokenSet.unomi}`,
             'Content-Type': 'application/json'

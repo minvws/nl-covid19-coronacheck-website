@@ -37,11 +37,12 @@ export default {
         async getTestProviders() {
             this.$axios({
                 method: 'get',
-                url: '/holder/config_ctp'
+                url: '/holder/config_providers'
             }).then((response) => {
                 if (response.data && response.data.payload) {
                     const config = JSON.parse(atob(response.data.payload));
                     this.$store.commit('testProviders/init', config.corona_test_providers);
+                    this.$store.commit('eventProviders/init', config.event_providers);
                 } else {
                     this.$store.commit('modal/set', {
                         messageHead: this.$t('message.error.general.head'),
