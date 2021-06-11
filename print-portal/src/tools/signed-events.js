@@ -5,12 +5,17 @@ const collect = async (token) => {
         getTokens(token).then((tokenSets) => {
             getEvents(tokenSets).then(events => {
                 resolve(events);
+            }, (error) => {
+                reject(error)
             })
+        }, (error) => {
+            reject(error)
         })
     })
 }
 
 const getTokens = async (token) => {
+    // todo, use token
     return new Promise((resolve, reject) => {
         axios({
             method: 'get',
@@ -20,7 +25,6 @@ const getTokens = async (token) => {
                 resolve(response.data.tokens);
             }
         }).catch((error) => {
-            console.log(error);
             reject(error);
         })
     })

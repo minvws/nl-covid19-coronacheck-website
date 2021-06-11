@@ -55,6 +55,12 @@ export default {
                 // todo
                 // this.$router.push({ name: 'VaccinationsNone' });
                 // this.$router.push({ name: 'VaccinationsNotPossible' });
+            }, (error) => {
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.error.general.head'),
+                    messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
+                    closeButton: true
+                });
             });
         }
     },
