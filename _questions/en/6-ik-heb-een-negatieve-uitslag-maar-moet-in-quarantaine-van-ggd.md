@@ -7,4 +7,4 @@ Follow the GGD’s recommendations and stay in quarantine. The negative test res
 
 The self-isolation takes 10 days. It’s advised to take another test on day 5. If you get a negative result, you can end your self-isolation.
 
-**Please note:** a negative test result from the GGD currently does <u>not</u> generate a test certificate in the CoronaCheck app. This also applies to other commercial test providers. 
+**Please note:** a negative test result from the GGD currently does **not** generate a test certificate in the CoronaCheck app. This also applies to other commercial test providers. 
