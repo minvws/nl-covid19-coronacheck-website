@@ -51,11 +51,7 @@ export default {
             this.close();
         },
         setFocus() {
-            if (this.showConfirm) {
-                this.$refs.refute.focus();
-            } else if (this.showCloseButton) {
-                this.$refs.close.focus();
-            }
+            this.$refs.focusStart.focus();
         }
     },
     watch: {
@@ -77,7 +73,7 @@ export default {
     },
     mounted() {
         window.addEventListener('keydown', e => {
-            if (e.key === 'Escape' && this.showConfirm) {
+            if (e.key === 'Escape') {
                 this.close();
             }
         });
@@ -96,57 +92,59 @@ export default {
         <div
             @click="close()"
             class="cover__clickable-area"></div>
-        <div class="modal__container">
+        <div
+            class="modal"
+            role="alertdialog"
+            :aria-modal="showModal"
+            aria-labelledby="modal__head"
+            aria-describedby="modal__body">
             <div
-                class="modal"
-                role="alertdialog"
-                :aria-modal="showModal"
-                aria-labelledby="modal__head"
-                aria-describedby="modal__body">
-                <div
-                    v-html="messageHead"
-                    id="modal__head">
-                </div>
-                <div
-                    v-html="messageBody"
-                    id="modal__body">
-                </div>
-                <div
-                    v-if="showModal"
-                    id="modal__footer">
-                    <button
-                        v-if="showConfirm"
-                        @click="refute()"
-                        ref="refute"
-                        type="button"
-                        class="button-modest">
-                        {{refuteText}}
-                    </button>
-                    <button
-                        v-if="showConfirm"
-                        @click="confirm()"
-                        ref="confirm"
-                        type="button"
-                        class="button-modest button--ok">
-                        {{confirmText}}
-                    </button>
-                    <button
-                        v-if="showCloseButton"
-                        @click="close()"
-                        ref="close"
-                        type="button"
-                        class="button-modest">{{$t('close')}}</button>
-                </div>
+                v-html="messageHead"
+                ref="focusStart"
+                tabindex="-1"
+                id="modal__head">
             </div>
             <div
-                ref="tabEnd"
-                tabindex="0"></div>
+                v-html="messageBody"
+                id="modal__body">
+            </div>
+            <div
+                v-if="showModal"
+                id="modal__footer">
+                <button
+                    v-if="showConfirm"
+                    @click="refute()"
+                    type="button"
+                    class="button-modest">
+                    {{refuteText}}
+                </button>
+                <button
+                    v-if="showConfirm"
+                    @click="confirm()"
+                    type="button"
+                    class="button-modest button--ok">
+                    {{confirmText}}
+                </button>
+                <button
+                    v-if="showCloseButton"
+                    @click="close()"
+                    type="button"
+                    class="button-modest">{{$t('close')}}</button>
+            </div>
         </div>
+        <div
+            ref="tabEnd"
+            tabindex="0"></div>
     </div>
 </template>
 
 <style lang="scss">
 @import "@/styles/variables/index";
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
 
 .cover {
     background: rgba(0,0,0,0.4);
@@ -155,8 +153,7 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    transition: opacity 0.3s cubic-bezier(.4,0,.2,1);
-    opacity: 0;
+    display: none;
     pointer-events: none;
 
     .cover__clickable-area {
@@ -169,33 +166,20 @@ export default {
     }
 
     &.popup--active {
-        opacity: 1;
+        display: block;
+        animation: fadeIn 0.3s cubic-bezier(.4,0,.2,1);
         pointer-events: all;
-
-        .modal {
-            pointer-events: all;
-        }
     }
 }
 
-.modal__container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    height: calc(100% - 40px);
-    width: calc(100% - 40px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    pointer-events: none;
-}
-
 .modal {
-    overflow-y: auto;
     background-color: #fff;
+    position: absolute;
     width: 460px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    top: 40%;
     transition: top 1s ease;
     border-radius: 5px;
 
@@ -236,6 +220,7 @@ export default {
         height: 100%;
         transform: none;
         border-radius: 0;
+        overflow: auto;
     }
 }
 </style>

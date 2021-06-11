@@ -1,6 +1,14 @@
 <head>
     <meta charset="UTF-8">
-    <title>{% if page.title != '' %}{{ page.title }} - {% endif %}{{ site.data.translations.page-title[page.lang] }}</title>
+    <title>
+        {% if page.domain == "scanner" %}
+            {% if page.title != '' %}{{ page.title }} - {% endif %}
+            {{ site.data.translations.scanner-app-name }}
+        {% else %}
+            {% if page.title != '' %}{{ page.title }} - {% endif %}
+            {{ site.data.translations.page-title[page.lang] }}
+        {% endif %}
+    </title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -13,8 +21,8 @@
 
     <link rel="preload" as="font" href="{{ site.baseurl }}/fonts/ROsanswebtextregular.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="{{ site.baseurl }}/fonts/ROsanswebtextregular.woff" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="{{ site.baseurl }}/fonts/ROsanswebtextbold.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="{{ site.baseurl }}/fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.woff2" as="font" type="font/woff" crossorigin>
+    <link rel="preload" as="font" href="{{ site.baseurl }}/fonts/ROsanswebtextbold.woff" type="font/woff"  crossorigin="anonymous">
+    <link rel="preload" as="font" href="{{ site.baseurl }}/fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.woff2" type="font/woff"  crossorigin="anonymous">
 
     <link href="{{ site.baseurl }}/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <script src="{{ site.baseurl }}/js/vendors/focus-visible.5.1.0.min.js" crossorigin="anonymous" async></script>

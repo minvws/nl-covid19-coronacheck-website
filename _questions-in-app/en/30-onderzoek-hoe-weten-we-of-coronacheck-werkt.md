@@ -4,7 +4,7 @@ set: 1
 title: "Research: How do we know if CoronaCheck works?"
 
 ---
-A multidisciplinary team of experts conducts ongoing research into the printed test declaration and the CoronaCheck and CoronaCheck Scanner apps. This includes both quantitative and qualitative research focusing on the goals of CoronaCheck.
+A multidisciplinary team of experts conducts ongoing research into the printed test certificate and the CoronaCheck and CoronaCheck Scanner apps. This includes both quantitative and qualitative research focusing on the goals of CoronaCheck.
 
 The latest report of the ongoing evaluation is available via the link below:
 

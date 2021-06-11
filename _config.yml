@@ -17,6 +17,8 @@ collections:
     output: false
   scanner-instructions:
     output: false  
+  announcements:
+    output: false  
 
 defaults:
   -
@@ -158,4 +160,3 @@ plugins:
 
 incremental: false
 
-url: "https://www.coronacheck.nl"

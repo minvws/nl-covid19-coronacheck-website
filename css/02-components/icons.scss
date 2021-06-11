@@ -8,19 +8,19 @@
 
 .icon-chevron-right,
 .icon-chevron-left {
-    background-image: url('#{$file-path}img/chevron-up.svg');
+    background-image: url("#{$file-path}img/chevron-up.svg");
 }
 
 .btn .icon-chevron-right,
 .btn .icon-chevron-left {
-    background-image: url('#{$file-path}img/chevron-up-white.svg');
+    background-image: url("#{$file-path}img/chevron-up-white.svg");
 }
 
 .btn:hover,
 .btn:focus {
     .icon-chevron-right,
     .icon-chevron-left {
-        background-image: url('#{$file-path}img/chevron-up.svg');
+        background-image: url("#{$file-path}img/chevron-up.svg");
     }
 }
 
@@ -33,5 +33,5 @@
 }
 
 .icon-close {
-    background-image: url('#{$file-path}img/close.svg');
+    background-image: url("#{$file-path}img/close.svg");
 }

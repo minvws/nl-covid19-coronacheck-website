@@ -1,11 +1,12 @@
 .language-picker {
     background-color: rgba(255, 255, 255, 0.84);
-    color: #090C0E;
+    color: #090c0e;
     position: relative;
     padding: 12px 8px;
     transition: background-color var(--transition-out), color var(--transition-out);
 
-    display: -ms-inline-grid; display: inline-grid;
+    display: -ms-inline-grid;
+    display: inline-grid;
     -ms-grid-columns: -webkit-max-content 16px;
     -ms-grid-columns: max-content 16px;
     grid-template-columns: -webkit-max-content 16px;
@@ -65,6 +66,10 @@
     pointer-events: none;
 }
 
+.language-picker__current-language {
+    font-weight: bold;
+}
+
 .language-picker__toggle {
     background: transparent;
     border: 0;
@@ -85,7 +90,7 @@
 }
 
 .language-picker__chevron::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     right: 0;
@@ -166,15 +171,13 @@
     }
 }
 
-// Temporary
-
 .language-picker--home {
     position: absolute;
     top: 38px;
     right: 15px;
     min-width: 112px;
     border-radius: 6px;
-    
+
     @media (min-width: 360px) {
         min-width: 118px;
     }
@@ -182,7 +185,7 @@
     .language-picker__current {
         color: $color-RO_darkblue;
     }
-    
+
     .language-picker__label {
         display: none;
     }
@@ -191,7 +194,7 @@
         color: #fff;
     }
 
-    @media(min-width: 680px) {
+    @media (min-width: 680px) {
         top: 30px;
         right: 30px;
         .language-picker__label {
@@ -199,6 +202,4 @@
             min-width: 216px;
         }
     }
-
 }
-

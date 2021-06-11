@@ -3,6 +3,6 @@ index: 2
 set: 1
 title: Wanneer zijn de apps klaar voor gebruik?
 ---
-CoronaCheck en CoronaCheck Scanner worden op dit moment getest tijdens de pilots testen voor toegang. Zo zien we of de apps goed werken en hoe ze verbeterd kunnen worden. Kijk voor een overzicht van de pilot evenementen op <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>de website van de Rijksoverheid</a>. 
+Voor toegang tot sommige activiteiten en locaties hebben bezoekers vanaf 5 juni een negatieve testuitslag nodig. Dankzij de app CoronaCheck krijgen bezoekers toegang tot deze locaties. Maar alleen als uit een coronatest blijkt dat zij op dat moment geen corona hadden. 
 
-De apps worden pas ingezet als de wet is goedgekeurd. Vragen om een testbewijs kan namelijk tijdelijk verplicht worden voor bepaalde sectoren. Dat betekent (indirect) dat de bezoeker zich moet laten testen. Daar is wetgeving voor nodig.
+Met CoronaCheck Scanner kan de controleur bij de ingang de geldigheid van het testbewijs van de bezoeker controleren.

@@ -18,9 +18,11 @@
       </a>
     </li>
     <li class="app_badge_column__right {% if include.huawei != 'true' %}huawei-only-show-mobile{% endif %}">
+      {% if include.huawei == 'true' %}
       <a class="huawei-store" href="{{ site.data.translations.coronacheck-huawei-url }}">
         <img src="{{ site.baseurl }}/img/badges/{{site.data.translations.badge-huawei-img[page.lang]  }}" alt="{{ site.data.translations.header-huaweiappgallery[page.lang] }}" height="65" width="216" />
       </a>
+      {% endif %}
     </li>
   </ul>
   {% comment %}{% if page.lang == 'fy' %}

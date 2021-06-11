@@ -6,14 +6,15 @@ featuredHome: true
 featuredHomeIndex: 1
 featuredHomeIcon: app-touch
 ---
-As a visitor, you first take a corona test. If your test proves you don't have coronavirus at that time, you get access to certain social, cultural or sports activities.
- 
-You can retrieve your negative test result to your CoronaCheck app in 3 steps:
+If you are visiting, please get vaccinated or tested on coronavirus first. Have you been vaccinated, or does the test show that you don’t have coronavirus? Then you will be able to gain access to locations and activities. You can retrieve your vaccination or test result using the app. Here is how this works:   
 
-1. You enter your personal code in the CoronaCheck app. This code is sent via email, along with your negative test result.
-2. The CoronaCheck app checks your code and retrieves your test result.
-3. The app makes a negative test declaration by means of a QR code. 
+1. Get your vaccination or test details using DigiD or using the retrieval code the test location provided to you.
+2. After checking, the CoronaCheck app will retrieve your vaccination or test result
+3. The app will turn your vaccination or negative test results into proof in the form of a 
+QR code.
 
-This QR code is scanned at the entrance of the location you’re visiting. Do you have a valid QR code and does your identifying data correspond with your proof of identity? Then you’re allowed access. You may still need an additional entrance ticket. 
+**Please note:** from the beginning of July you can also create proof you’ve had coronavirus and have since recovered (a statement of recovery). You can do this as well following the above steps.
 
-**Note:** the CoronaCheck app only holds 1 person’s test declaration. This means every individual visitor needs their own phone and CoronaCheck app, or an individually printed test declaration. You can download and print off your test declaration via [www.coronacheck.nl/en/print](/en/print).
+Have your QR code scanned for access, or at the border. Is your QR code valid and do your details match your ID? Then you’re allowed to enter. You might also need an entry ticket.
+
+**Please note:** you can show proof for only one person in the CoronaCheck app. Every visitor either needs their own phone with the app, or a printed test result or proof of vaccination. Download and print your proof on [www.coronacheck.nl/en/print](/en/print).

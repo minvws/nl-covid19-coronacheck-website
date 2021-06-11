@@ -46,8 +46,9 @@ export default {
                 <img
                     class="Identity__image"
                     alt=""
-                    width="380"
-                    :src="pageHeaderImage"/>
+                    width="246"
+                    height="150"
+                    src="assets/img/artwork/holder_qrcode_maken.svg"/>
             </div>
 
         </div>
@@ -87,7 +88,8 @@ export default {
                 display: block;
                 height: auto;
                 margin-left: 60px;
-                margin-bottom: -70px;
+                max-width: 343px;
+                width: 100%;
             }
         }
     }

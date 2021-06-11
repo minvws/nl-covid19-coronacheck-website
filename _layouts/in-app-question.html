@@ -30,6 +30,21 @@
       {% if page.title %}<h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>{% endif %}
       {{ content }}
     </div>
+
+    {% if page.collection == 'questions-in-app' 
+    %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}/faq-in-app#{{ page.title | slugify }}">
+          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-faq[page.lang] }} 
+        </a>
+      </p>
+    {% elsif page.collection == 'questions-scanner-in-app' %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}/faq-scanner-in-app#{{ page.title | slugify }}">
+          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-faq[page.lang] }} 
+        </a>
+      </p>
+    {% endif %}
   </main>
 
 </body>

@@ -11,4 +11,4 @@ It can take a couple of hours before your test result is processed by the testin
 
 ## Your test result was positive
 
-A positive test result indicates you had corona at the time of testing, which means you can’t make a test declaration by means of a QR code. The testing location will get in touch with you. 
+A positive test result indicates you had corona at the time of testing, which means you can’t make a test certificate by means of a QR code. The testing location will get in touch with you. 

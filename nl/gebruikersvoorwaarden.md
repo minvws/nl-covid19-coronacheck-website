@@ -10,33 +10,33 @@ redirect_from: /gebruikersvoorwaarden
 
 1. [Gebruikte afkortingen](#gebruikte-afkortingen)
 2. [Over deze gebruikersvoorwaarden](#over-deze-gebruikersvoorwaarden)
-5. [Hoe werkt CoronaCheck Scanner?](#hoe-werkt-coronacheck-scanner)
+3. [Hoe werkt CoronaCheck Scanner?](#hoe-werkt-coronacheck-scanner)
     1. [Downloaden en installeren](#downloaden-en-installeren)
-    3. [Een testbewijs scannen](#een-testbewijs-scannen) 
+    3. [Een coronatoegangsbewijs scannen](#een-coronatoegangsbewijs-scannen) 
     4. [Updaten](#updaten)
     4. [Meer uitgebreid](#meer-uitgebreid)
     5. [App verwijderen](#app-verwijderen)
 4. [Voor wie is CoronaCheck Scanner?](#voor-wie-is-coronacheck-scanner)
-3. [Waarom CoronaCheck Scanner?](#waarom-coronacheck-scanner)
-11. [CoronaCheck Scanner biedt geen bescherming tegen het coronavirus](#coronacheck-scanner-biedt-geen-bescherming-tegen-het-coronavirus) 
-12. [Privacy](#privacy)
+5. [Waarom CoronaCheck Scanner?](#waarom-coronacheck-scanner)
+6. [CoronaCheck Scanner biedt geen bescherming tegen het coronavirus](#coronacheck-scanner-biedt-geen-bescherming-tegen-het-coronavirus) 
+7. [Privacy](#privacy)
     1. [Doelbinding](#doelbinding)
-13. [Beveiliging](#beveiliging)
-14. [Functioneren van CoronaCheck Scanner](#functioneren-van-coronacheck-scanner) 
-15. [Aansprakelijkheid](#aansprakelijkheid)
-16. [Intellectueel eigendomsrecht](#intellectueel-eigendomsrecht)
-17. [Wijzigen van de voorwaarden](#wijzigen-van-de-voorwaarden)
-18. [Beëindigen van CoronaCheck Scanner](#beeindigen-van-coronacheck-scanner)
-19. [Toepasselijk recht en bevoegde rechter](#toepasselijk-recht-en-bevoegde-rechter)
-20. [Overig](#overig)
-21. [Contact](#contact)
+8. [Beveiliging](#beveiliging)
+9. [Functioneren van CoronaCheck Scanner](#functioneren-van-coronacheck-scanner) 
+10. [Aansprakelijkheid](#aansprakelijkheid)
+11. [Intellectueel eigendomsrecht](#intellectueel-eigendomsrecht)
+12. [Wijzigen van de voorwaarden](#wijzigen-van-de-voorwaarden)
+13. [Beëindigen van CoronaCheck Scanner](#beeindigen-van-coronacheck-scanner)
+14. [Toepasselijk recht en bevoegde rechter](#toepasselijk-recht-en-bevoegde-rechter)
+15. [Overig](#overig)
+16. [Contact](#contact)
 
 ## Gebruikte afkortingen
 
 - **AVG**: Algemene Verordening Gegevensbescherming
-- **Controleur**: Iemand die de geldigheid van een testbewijs controleert
-- **Testuitslag**: Uitslag van een test op COVID-19 dat door teststation wordt verstrekt aan persoon
-- **Verstrekker**: Teststation (GGD of anders) dat een testuitslag verstrekt
+- **Controleur**: Iemand die de geldigheid van een coronatoegangsbewijs controleert
+- **Coronatoegangsbewijs**: Bewijs gemaakt met negatieve testuitslag dat door de persoon wordt getoond aan een controleur voor toegang tot een activiteit of voorziening
+- **Testuitslag**: Uitslag van een test op COVID-19 dat door testuitvoerder wordt verstrekt aan persoon
 - **VWS**: Het Ministerie van Volksgezondheid, Welzijn en Sport
 
 ## Over deze gebruikersvoorwaarden
@@ -47,15 +47,15 @@ In deze gebruikersvoorwaarden leest u hoe CoronaCheck Scanner werkt, wat u ermee
 
 ### Downloaden en installeren 
 
-Om digitale testbewijzen uit CoronaCheck en fysieke testbewijzen op papier te controleren op geldigheid is CoronaCheck Scanner benodigd. CoronaCheck Scanner kunt gratis u downloaden in de App Store (voor iOS) en de Google Play Store (voor Android) en installeren op uw smartphone of tablet. Download u CoronaCheck Scanner daarom alleen in de App Store of Google Play Store en wees alert op valse/namaak apps. CoronaCheck Scanner wordt alleen ondersteund vanaf iOS versie 11 en Android versie 6. 
+Om digitale coronatoegangsbewijzen uit CoronaCheck en fysieke coronatoegangsbewijzen op papier te controleren op geldigheid is CoronaCheck Scanner benodigd. CoronaCheck Scanner kunt gratis u downloaden in de App Store (voor iOS) en de Google Play Store (voor Android) en installeren op uw smartphone of tablet. Download u CoronaCheck Scanner daarom alleen in de App Store of Google Play Store en wees alert op valse/namaak apps. CoronaCheck Scanner wordt alleen ondersteund vanaf iOS versie 11 en Android versie 6. 
 
 Nadat CoronaCheck Scanner is gedownload en deze voorwaarden zijn geaccepteerd, kan CoronaCheck Scanner gebruikt worden. Voordat u gebruik kunt maken van de app dient dus u deze gebruikersvoorwaarden te lezen en akkoord te gaan met de gebruikersvoorwaarden. U kunt deze gebruikersvoorwaarden terugvinden op [de website van CoronaCheck](https://coronacheck.nl/nl/gebruikersvoorwaarden.html). 
 
-### Een testbewijs scannen 
+### Een coronatoegangsbewijs scannen 
 
-Wanneer personen aan een controleur het testbewijs tonen, kan met gebruik van CoronaCheck Scanner de geldigheid van het testbewijs gecontroleerd worden. Een persoon kan een digitaal testbewijs tonen in CoronaCheck of een papieren testbewijs tonen dat is gegenereerd en via coronacheck.nl en vervolgens door de persoon is geprint. Voor de validatie van een testbewijs is geen online verbinding vereist. Wanneer het testbewijs wordt gescand met behulp van CoronaCheck Scanner dient in geval van een digitaal testbewijs in CoronaCheck de bewegende visuele animatie naast de QR-code als beveiligingsfunctie. Aan de hand van deze animatie kan een controleur checken of er geen screenshot van de QR-code in CoronaCheck is gemaakt. Daarnaast wordt er bij het digitale testbewijs in CoronaCheck en het papieren testbewijs zowel in de QR-code als onder de QR-code een set identificerende gegevens (eerste letter voornaam, eerste letter achternaam, geboortedag en geboortemaand) getoond. Belangrijk is dat CoronaCheck Scanner deze set aan identificerende gegevens niet vastlegt. De QR-code inclusief set identificerende gegevens wordt alleen uitgelezen door CoronaCheck Scanner om vervolgens na het scannen van het testbewijs een ‘geldig testbewijs’ (groene kleur) of ‘geen geldig testbewijs’ (rode kleur) als status te geven. Er bestaat de mogelijkheid dat een grijs scherm wordt getoond na het scannen van een QR-code. Een grijs scherm wordt alleen getoond wanneer er een QR-code is gescand die is ontwikkeld om de werking van CoronaCheck Scanner te testen. Wanneer een grijs scherm wordt getoond heeft de gescande QR-code geen betrekking op een persoon, maar het gaat om een test code. Wanneer de status als ‘geen geldig testbewijs’ (rood scherm) weergegeven wordt, zal ook een algemene toelichting beschreven staan met mogelijke oorzaken voor het ontvangen van deze status. Ook moet de controleur de identiteit van de persoon controleren middels een check van het identiteitsbewijs (het gaat hier alleen om een fysieke check, (een kopie van) het identiteitsbewijs wordt op geen enkele wijze opgeslagen).
+Wanneer personen aan een controleur het coronatoegangsbewijs tonen, kan met gebruik van CoronaCheck Scanner de geldigheid van het coronatoegangsbewijs gecontroleerd worden. Een persoon kan een digitaal coronatoegangsbewijs tonen in CoronaCheck of een papieren coronatoegangsbewijs tonen dat is gegenereerd en via coronacheck.nl en vervolgens door de persoon is geprint. Voor de validatie van een coronatoegangsbewijs is geen online verbinding vereist. Wanneer het coronatoegangsbewijs wordt gescand met behulp van CoronaCheck Scanner dient in geval van een digitaal coronatoegangsbewijs in CoronaCheck de bewegende visuele animatie naast de QR-code als beveiligingsfunctie. Aan de hand van deze animatie kan een controleur checken of er geen screenshot van de QR-code in CoronaCheck is gemaakt. Daarnaast wordt er bij het digitale coronatoegangsbewijs in CoronaCheck en het papieren coronatoegangsbewijs zowel in de QR-code als onder de QR-code een set identificerende gegevens (eerste letter voornaam, eerste letter achternaam, geboortedag en geboortemaand) getoond. Belangrijk is dat CoronaCheck Scanner deze set aan identificerende gegevens niet vastlegt. De QR-code inclusief set identificerende gegevens wordt alleen uitgelezen door CoronaCheck Scanner om vervolgens na het scannen van het coronatoegangsbewijs een ‘geldig coronatoegangsbewijs’ (groene kleur) of ‘geen geldig coronatoegangsbewijs’ (rode kleur) als status te geven. Er bestaat de mogelijkheid dat een grijs scherm wordt getoond na het scannen van een QR-code. Een grijs scherm wordt alleen getoond wanneer er een QR-code is gescand die is ontwikkeld om de werking van CoronaCheck Scanner te testen. Wanneer een grijs scherm wordt getoond heeft de gescande QR-code geen betrekking op een persoon, maar het gaat om een test code. Wanneer de status als ‘geen geldig coronatoegangsbewijs’ (rood scherm) weergegeven wordt, zal ook een algemene toelichting beschreven staan met mogelijke oorzaken voor het ontvangen van deze status. Ook moet de controleur de identiteit van de persoon controleren middels een check van het identiteitsbewijs (het gaat hier alleen om een fysieke check, (een kopie van) het identiteitsbewijs wordt op geen enkele wijze opgeslagen).
 
-Bij een correcte weergave van de animatie (bij gebruik van CoronaCheck) en een groen scherm na het scannen van het testbewijs kan de controleur toegang verlenen tot het evenement of de locatie. 
+Bij een correcte weergave van de animatie (bij gebruik van CoronaCheck) en een groen scherm na het scannen van het coronatoegangsbewijs kan de controleur toegang verlenen tot het evenement of de locatie. 
 
 ### Updaten
 
@@ -73,23 +73,23 @@ Indien u de app niet langer wenst te gebruiken kunt u CoronaCheck Scanner verwij
 
 ## Voor wie is CoronaCheck Scanner?
 
-De app kan door iedereen gedownload worden via de Apple Appstore of Google Play Store. Een controleur kan met CoronaCheck Scanner toegang weigeren wanneer personen geen testbewijs kunnen tonen of wanneer het scannen van een testbewijs met CoronaCheck Scanner een rood scherm toont.
+De app kan door iedereen gedownload worden via de Apple Appstore of Google Play Store. Een controleur kan met CoronaCheck Scanner toegang weigeren wanneer personen geen coronatoegangsbewijs kunnen tonen of wanneer het scannen van een coronatoegangsbewijs met CoronaCheck Scanner een rood scherm toont.  
 
 ## Waarom CoronaCheck Scanner?
 
-De uitbraak van het SARS-CoV-2 (hierna: “het coronavirus”) heeft grote maatschappelijke gevolgen voor de Nederlandse samenleving. Door het coronavirus in te dammen en onder controle te krijgen kan de samenleving langzaam weer haar normale vorm aannemen en kan de economische schade zo veel mogelijk beperkt worden. CoronaCheck Scanner is bedoeld om het testbewijs in CoronaCheck of een papieren testbewijs dat door personen getoond wordt aan een controleur te scannen en zo te bepalen of iemand toegang krijgt tot een bepaalde locatie. Door alleen toegang te verlenen tot bepaalde locaties aan personen die kunnen aantonen dat zij recentelijk negatief getest zijn op het coronavirus kunnen verdere besmettingen met het virus voorkomen worden. 
+De uitbraak van het SARS-CoV-2 (hierna: “het coronavirus”) heeft grote maatschappelijke gevolgen voor de Nederlandse samenleving. Door het coronavirus in te dammen en onder controle te krijgen kan de samenleving langzaam weer haar normale vorm aannemen en kan de economische schade zo veel mogelijk beperkt worden. CoronaCheck Scanner is bedoeld om het coronatoegangsbewijs in CoronaCheck of een papieren coronatoegangsbewijs dat door personen getoond wordt aan een controleur te scannen en zo te bepalen of iemand toegang krijgt tot een bepaalde locatie. Door alleen toegang te verlenen tot bepaalde locaties aan personen die kunnen aantonen dat zij recentelijk negatief getest zijn op het coronavirus kunnen verdere besmettingen met het virus voorkomen worden. 
 
 ## CoronaCheck Scanner biedt geen bescherming tegen het coronavirus
 
-Het scannen van een testbewijs geeft aan dat de persoon op het moment van testen niet besmet was met het coronavirus. Dit geeft echter geen volledige garantie dat de betreffende persoon op het moment van het scannen van de QR-code met CoronaCheck Scanner anderen niet kan besmetten met het coronavirus. 
+Het scannen van een coronatoegangsbewijs geeft aan dat de persoon op het moment van testen niet besmet was met het coronavirus. Dit geeft echter geen volledige garantie dat de betreffende persoon op het moment van het scannen van de QR-code met CoronaCheck Scanner anderen niet kan besmetten met het coronavirus. 
 
 ## Privacy
 
-Met de inzet van CoronaCheck Scanner worden geen persoonsgegevens vastgelegd. CoronaCheck Scanner heeft permissie nodig voor het cameragebruik van het apparaat van controleur. Deze permissie is nodig om het testbewijs, in de vorm van een QR-code, te scannen. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het testbewijs, in de vorm van een QR-code te scannen. 
+Met de inzet van CoronaCheck Scanner worden geen persoonsgegevens vastgelegd. CoronaCheck Scanner heeft permissie nodig voor het cameragebruik van het apparaat van controleur. Deze permissie is nodig om het coronatoegangsbewijs, in de vorm van een QR-code, te scannen. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het coronatoegangsbewijs, in de vorm van een QR-code te scannen. 
 
 ### Doelbinding
 
-CoronaCheck Scanner wordt gebruikt om toegang tot een bepaald evenement of bepaalde locatie te reguleren door te controleren of iemand beschikt over een testbewijs. Dit is alleen mogelijk indien een persoon een negatieve testuitslag van een aangesloten testaanbieder heeft ontvangen en vervolgens een testbewijs heeft gegenereerd. Het is niet toegestaan om bij gebruik van CoronaCheck Scanner een testbewijs dat wordt getoond op enige manier vast te leggen, waaronder maar niet beperkt tot: het maken van een screenshot. CoronaCheck Scanner mag enkel en alleen worden gebruikt om een testbewijs te lezen. Het opslaan of bijhouden van de testbewijzen die aan een controleur worden getoond is uitdrukkelijk niet toegestaan. 
+CoronaCheck Scanner wordt gebruikt om toegang tot een bepaald evenement of bepaalde locatie te reguleren door te controleren of iemand beschikt over een coronatoegangsbewijs. Dit is alleen mogelijk indien een persoon een negatieve testuitslag van een aangesloten testuitvoerder heeft ontvangen en vervolgens een coronatoegangsbewijs heeft gegenereerd. Het is niet toegestaan om bij gebruik van CoronaCheck Scanner een coronatoegangsbewijs dat wordt getoond op enige manier vast te leggen, waaronder maar niet beperkt tot: het maken van een screenshot. CoronaCheck Scanner mag enkel en alleen worden gebruikt om een coronatoegangsbewijs te lezen. Het opslaan of bijhouden van de coronatoegangsbewijzen die aan een controleur worden getoond is uitdrukkelijk niet toegestaan. 
 
 ## Beveiliging 
 
@@ -123,7 +123,7 @@ VWS kan de voorwaarden wijzigen als VWS dat noodzakelijk vindt. De datum en de v
 
 ## Beëindigen van CoronaCheck Scanner
 
-Het controleren van testbewijzen om toegang te verstrekken is een tijdelijke crisismaatregel. Dat betekent dat niet voorspeld kan worden wat er precies gaat gebeuren. Daarom kan VWS op ieder moment beslissen om het gebruik van CoronaCheck Scanner te stoppen. Wanneer dit gebeurt, wordt u daarover geïnformeerd via [de website van CoronaCheck](https://coronacheck.nl/nl).  
+Het controleren van coronatoegangsbewijzen om toegang te verstrekken is een tijdelijke crisismaatregel. Dat betekent dat niet voorspeld kan worden wat er precies gaat gebeuren. Daarom kan VWS op ieder moment beslissen om het gebruik van CoronaCheck Scanner te stoppen. Wanneer dit gebeurt, wordt u daarover geïnformeerd via [de website van CoronaCheck](https://coronacheck.nl/nl).  
 
 ## Toepasselijk recht en bevoegde rechter
 
@@ -137,6 +137,6 @@ Wanneer een deel van deze voorwaarden onwettig, ongeldig of niet-afdwingbaar zij
 
 Indien u een vraag of klacht over CoronaCheck Scanner heeft, kijk dan voor meer informatie op [de website van CoronaCheck](https://coronacheck.nl/nl).  
 
-Versie 1.1.
+Versie 1.2.
 
-Laatste update: 30 april 2021. 
+Laatste update: 3 Juni 2021. 

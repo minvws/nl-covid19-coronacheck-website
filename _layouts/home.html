@@ -4,7 +4,6 @@
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
 {%- endif -%}
 
-
 <!DOCTYPE html>
 <!--
   This website is generated at {{ site.time }}.
@@ -15,11 +14,25 @@
 {% include head.html %}
 <body>
   {% include header.html %}
-  <main id="content">
+  <main id="content"> 
+ 
+    {% assign announcements = site.announcements | where:"lang", page.lang %}
+    {% if announcements.size != 0 %}
+      <div class="announcement offset-background">
+        {% for announcement in announcements %}
+          <h2>{{ announcement.title }}</h2>
+          {{ announcement.content }}
+        {% endfor %}
+      </div> 
+    {% endif %}
 
+    <div class="intro offset-background">
+        {{ site.data.translations.home-intro-content[page.lang] }}
+    </div>
+    
     {% include components/user-instructions.html %}
     {% include components/print-version.html %}
-    {% include components/about-coronacheck.html %}
+    {% include components/about-coronacheck-scanner.html %}
 
     {% include components/information.html %}
     {% include components/faq.html for="coronacheck" %}

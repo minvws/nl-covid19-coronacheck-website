@@ -117,9 +117,9 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Met de app bewijs je dat je negatief getest bent op corona. Je kan CoronaCheck momenteel gebruiken tijdens de pilots van Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
+  nl: Voor toegang tot bepaalde locaties of activiteiten heb je een negatieve testuitslag nodig. Met de app bewijs je dat je negatief op corona getest bent.<br /><br />Binnenkort kun je met CoronaCheck ook van je vaccinatiebewijs een QR-code maken. Die kun je gebruiken in Nederland of voor reizen binnen Europa. <a href="/nl/faq/39-wanneer-wordt-coronacheck-verder-uitgebreid">Vanaf wanneer kan dat?</a>
   fy: 
-  en: With this app, you are able to prove you've recently tested negative for corona. You can use CoronaCheck during the pilots Testen voor Toegang. Find an up-to-date overview of the pilots on the <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' hreflang="nl" rel='noopener noreferrer'>website of the Dutch Government (Dutch)</a>.
+  en: With this app, you are able to prove you've recently tested negative for corona. This gives you access to certain locations or activities.<br /><br />Soon you will also be able to turn your vaccination certificate into a QR code with CoronaCheck. You can use it in the Netherlands or for travel within Europe. <a href="/en/faq/39-wanneer-wordt-coronacheck-verder-uitgebreid">When will that be possible?</a>
   ar: 
   bg: 
   de: 
@@ -143,9 +143,9 @@ scanner-header-title:
   tr: 
 
 scanner-header-subtitle:
-  nl: Met CoronaCheck Scanner controleer je de geldigheid van het testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt tijdens de pilots Testen voor Toegang. Een actueel overzicht van de pilots vind je op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>website van de Rijksoverheid</a>.
+  nl: Met CoronaCheck Scanner controleer je de geldigheid van het testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
   fy: 
-  en: With CoronaCheck Scanner you check the validity of the visitor’s negative test result. And also if the data on your screen matches the data on the proof of identity. You can use the CoronaCheck Scanner during the pilots Testen voor Toegang. Find an up-to-date overview of the pilots on the <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' hreflang="nl" rel='noopener noreferrer'>website of the Dutch Government (Dutch)</a>.
+  en: With CoronaCheck Scanner you check the validity of the visitor’s negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to get access to certain locations or activities.
   ar: 
   bg: 
   de: 
@@ -159,37 +159,11 @@ coronacheck-header-img:
   nl: /img/CoronaCheck_app.png
   fy: /img/CoronaCheck_app.png
   en: /img/CoronaCheck_app-en.png
-
-coronacheck-header-alt:
-  nl: Voorbeeld van de CoronaCheck app
-  fy: 
-  en: Example of the CoronaCheck app
-  ar: 
-  bg: 
-  de: 
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr: 
     
 scanner-header-img:
   nl: /img/CoronaCheckScanner_app-tall.png
   fy: /img/CoronaCheckScanner_app-tall.png
   en: /img/CoronaCheckScanner_app-tall-en.png
-
-scanner-header-alt:
-  nl: Voorbeeld van de CoronaCheck Scanner app
-  fy: 
-  en: Example of the CoronaCheck Scanner app
-  ar: 
-  bg: 
-  de: 
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr: 
 
 header-appstore:
   nl: Downloaden in de App Store
@@ -454,7 +428,7 @@ faq-category-scanner-general:
 faq-category-scanner-testdocument:
   nl: Toegang met testbewijs
   fy: 
-  en: Getting access with a test declaration 
+  en: Getting access with a test certificate 
   ar: 
   bg: 
   de: 
@@ -506,7 +480,7 @@ faq-category-general:
 faq-category-howtouse:
   nl: Toegang met testbewijs
   fy: 
-  en: Getting access with a test declaration
+  en: Getting access with a test certificate
   ar: 
   bg: 
   de: 
@@ -532,7 +506,7 @@ faq-category-usingtheapp:
 faq-category-usingprintversion:
   nl: Testbewijs op papier
   fy: 
-  en: Printed test declaration
+  en: Printed test certificate
   ar: 
   bg: 
   de: 
@@ -674,19 +648,6 @@ coronacheck-lead-title:
 #  De app wurket yn it Frysk allinne op Android tastellen dy’t Frysk as systeemtaal stypje. Do kinst Frysk as taal foar dy tastellen yn de ynstellingen fan Android ynstelle. iPhones stypje Frysk as systeemtaal spitigernôch net. Yn de oare talen kin yn de Appstore hjir de app wol delhelle wurde.
 
 # info-caveat-letop-fy: 'Tink derom:'
-
-scanner-lead: 
-  nl: "Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde sociale, culturele of sportieve locaties. Maar alleen als uit de coronatest blijkt dat zij geen corona hebben. Kijk op de <a href='https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/cijfers-en-onderzoeken-over-het-coronavirus/pilot-toegangsbewijzen' target='_blank' rel='noopener noreferrer'>pagina van de Rijksoverheid</a> om te zien welke pilots er in april worden gedaan met testen voor toegang."
-  fy: 
-  en: 
-  ar: 
-  bg: 
-  de: 
-  fr: 
-  es: 
-  pl: 
-  ro: 
-  tr: 
   
 scanner-lead-title:
   nl: Download de CoronaCheck Scanner-app
@@ -787,11 +748,11 @@ footer-samen-logo:
   pl: Tylko wspólnymi siłami możemy uzyskać kontrolę nad koronawirusem.
   ro: Doar împreună putem controla coronavirus.
   tr: Koronayı ancak birlikte kontrol altına alabiliriz.
-    
-footer-phone:
-  nl: Heb je vragen over CoronaCheck?
+
+footer-contact-title:
+  nl: Heb je vragen over CoronaCheck?<br /> Neem contact met ons op
   fy: Hast fragen oer de CoronaCheck?
-  en: Do you have any questions about CoronaCheck?
+  en: Do you have questions about CoronaCheck? Contact us
   ar: هل لديك أي أسئلة حول CoronaCheck؟
   bg: Имаш ли въпроси относно CoronaCheck?
   de: Haben Sie Fragen zu CoronaCheck?
@@ -801,44 +762,44 @@ footer-phone:
   ro: Aveți întrebări în legătură cu CoronaCheck? 
   tr: CoronaCheck hakkında sorularınız mı var?
 
-footer-phone-action:
-  nl: Bel <a href="tel:0800-1421">0800-1421</a> (gratis)
-  fy: Belje <a href="tel:0800-1421">0800-1421</a> (fergees)
-  en: Call <a href="tel:0800-1421">0800-1421</a> (free)
-  ar: اتصل على الرقم <a href="tel:0800-1421" dir="ltr">0800-1421</a> (مجانًا)
-  bg: Обади се на <a href="tel:0800-1421">0800-1421</a> (безплатно)
-  de: Rufen Sie an unter <a href="tel:0800-1421">0800-1421</a> (kostenlos)
-  es: Llama gratis al <a href="tel:0800-1421">0800-1421</a>
-  fr: CoronaCheck? Appelez le <a href="tel:0800-1421">0800-1421</a> (gratuit)
-  pl: Zadzwoń pod (bezpłatny) numer <a href="tel:0800-1421">0800-1421</a>
-  ro: Sunați la <a href="tel:0800-1421">0800-1421</a> (număr gratuit)
-  tr: <a href="tel:0800-1421">0800-1421</a> numaralı telefonu arayın (ücretsiz)
+footer-phone: 
+  nl: Bel de helpdesk
+  fy: 
+  en: Call the helpdesk
+  ar: اتصل على الرقم 
+  bg:
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
 
-footer-phone-opening:
-  nl: Openingstijden
-  fy: Iepeningstiden
-  en: Opening hours
-  ar: ساعات العمل
-  bg: Работно време
-  de: Öffnungszeiten
-  es: Horarios
-  fr: Horaires d’ouverture
-  pl: Godziny pracy
-  ro: Orele de lucru
-  tr: Açılış saatleri
+footer-phone-action:
+  nl: <a href="tel:0800-1421">0800-1421</a> (gratis)
+  fy: <a href="tel:0800-1421">0800-1421</a> (fergees)
+  en: <a href="tel:0800-1421">0800-1421</a> (free)
+  ar: <a href="tel:0800-1421" dir="ltr">0800-1421</a> (مجانًا)
+  bg: <a href="tel:0800-1421">0800-1421</a> (безплатно)
+  de: <a href="tel:0800-1421">0800-1421</a> (kostenlos)
+  es: <a href="tel:0800-1421">0800-1421</a>
+  fr: <a href="tel:0800-1421">0800-1421</a> (gratuit)
+  pl: <a href="tel:0800-1421">0800-1421</a>
+  ro: <a href="tel:0800-1421">0800-1421</a> (număr gratuit)
+  tr: <a href="tel:0800-1421">0800-1421</a> numaralı telefonu arayın (ücretsiz)
   
 footer-phone-opening-hours:
-  nl: "Maandag t/m zondag 08.00 – 20.00 uur"
-  fy: "Moandei o/m snein 08:00 – 20:00 oere   "
-  en: "Monday till Sunday 08.00 a.m. - 08.00 p.m. "
+  nl: "Bereikbaar van maandag t/m zondag 08.00 – 20.00 uur"
+  fy: "Moandei o/m snein 08:00 – 20:00 oere"
+  en: "Available Monday till Sunday 08.00 a.m. - 08.00 p.m."
   ar: "من الإثنين حتى الأحد 08.00 صباحًا-08.00 مساءً "
-  bg: "От понеделник до неделя 08.00 - 20.00 часа "
-  de: "Mo-So 8–20 Uhr "
-  es: "De lunes a domingo 8.00 h - 20.00 h "
-  fr: "Du lundi au dimanche 8.00 h - 20.00 h "
-  pl: "Od poniedziałku do piątku w godz. 08:00 - 20:00 "
+  bg: "От понеделник до неделя 08.00 - 20.00 часа"
+  de: "Mo-So 8–20 Uhr"
+  es: "De lunes a domingo 8.00 h - 20.00 h"
+  fr: "Du lundi au dimanche 8.00 h - 20.00 h"
+  pl: "Od poniedziałku do piątku w godz. 08:00 - 20:00"
   ro: "De luni până vineri: 08.00 - 20.00"
-  tr: "Pazartesi - Pazar 08:00 - 20:00 "
+  tr: "Pazartesi - Pazar 08:00 - 20:00"
   
 footer-phone-mail: 
   nl: "Of stuur een e-mail naar:"
@@ -867,9 +828,9 @@ footer-colophon:
   tr: Kolofon
         
 footer-logos-info_md:
-  nl: De apps CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. De apps hadden niet tot stand kunnen komen zonder de hulp van tientallen experts, ervaringsdeskundigen en een grote open source community van burgers die heeft meegekeken en getest tijdens de ontwikkeling. 
+  nl: CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community tijdens de ontwikkeling meegekeken en getest.
   fy: 
-  en: The CoronaCheck and CoronaCheck Scanner apps have been developed by the Ministry of Public Health, Welfare and Sport. The apps would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens, who all lent a hand and helped to test the app during its development.
+  en: CoronaCheck and CoronaCheck Scanner have been developed by the Ministry of Public Health, Welfare and Sport. Both the apps and the test certificate on paper would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens. They all lent a hand and helped to test the app during its development.
   ar: 
   bg: 
   de: 
@@ -944,20 +905,6 @@ footer-misc-title-scanner:
   ro: Despre CoronaCheck Scanner
   tr: CoronaCheck Scanner hakkında
   
-footer-contact-title:
-  nl: Contact
-  fy: Kontact
-  en: Contact
-  ar: اتصال
-  bg: Контакт
-  de: Kontakt
-  es: Contacto
-  fr: Contact
-  pl: Kontakt
-  ro: Contact
-  tr: İletişim
-
-
     
 footer-logos-minvws-url: https://minvws.nl/
 footer-logos-minvws-img-alt: 
@@ -1277,9 +1224,9 @@ information-naw:
   tr: 
   
 information-gps:
-  nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard
+  nl: Je locatiegegevens worden niet gebruikt of bewaard
   fy: 
-  en: Your GPS or location data is not used or saved
+  en: Your location data is not used or saved
   ar: 
   bg: 
   de: 
@@ -1304,7 +1251,7 @@ scanner-information-title:
   tr: 
 
 scanner-information-qrcode:
-  nl: The QR code contains a minimum amount of data of the visitor
+  nl: In de QR-code staan minimale persoonsgegevens van de bezoeker
   fy: 
   en: The QR code contains a minimum amount of data of the visitor
   ar: 
@@ -1536,12 +1483,12 @@ print-version-img:
 print-version-title:
   nl: Liever een papieren testbewijs?
   fy: 
-  en: Prefer a test declaration on paper?
+  en: Prefer a test certificate on paper?
  
 print-version-content:
   nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq#testbewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over testbewijzen op papier</span></a>.
   fy: 
-  en: A test declaration on paper is convenient if you don't have a smartphone. <a href="/en/faq#printed-test-declaration">Read more<span class="screen-reader-text"> about a test declaration on paper</span></a>.
+  en: A test certificate on paper is convenient if you don't have a smartphone. <a href="/en/faq#printed-test-declaration">Read more<span class="screen-reader-text"> about a test certificate on paper</span></a>.
 
 print-version-url: 
   nl: /print
@@ -1551,12 +1498,12 @@ print-version-url:
 print-version-url-link: 
   nl: Maak papieren testbewijs
   fy: 
-  en: Make test declaration on paper
+  en: Make test certificate on paper
 
-about-coronacheck-title:
-  nl: Over CoronaCheck
+about-coronacheck-scanner-title:
+  nl: CoronaCheck Scanner
   fy: Oer CoronaCheck
-  en: About CoronaCheck
+  en: CoronaCheck Scanner
   ar: حول CoronaCheck
   bg: За CoronaCheck
   de: Über CoronaCheck
@@ -1566,7 +1513,11 @@ about-coronacheck-title:
   ro: Despre CoronaCheck
   tr: CoronaCheck hakkında
 
-about-coronacheck-content:
-  nl: <p>Met behulp van een testbewijs via de CoronaCheck-app of op papier toon je aan dat je kortgeleden negatief getest bent op corona. Zo kan Nederland meer buiten de deur doen.</p>
+about-coronacheck-scanner-content:
+  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner" target="_blank">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
   fy: 
-  en: <p>With a test declaration via the CoronaCheck app or on paper, you can prove you've recently tested negative for corona. This way, the Netherlands can head out more often. </p>
+  en: <p>Would you like to find out how you can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner" target="_blank">Read more about the CoronaCheck Scanner app.</a></p> 
+
+home-intro-content:
+  nl: Voor toegang tot sommige events en locaties kun je vanaf 5 juni gebruikmaken van CoronaCheck. <a href="/nl/faq/1-hoe-werkt-de-coronacheck-app/">Hoe CoronaCheck werkt lees je hier</a>. Eind juni geeft ook je bewijs van vaccinatie toegang tot events en locaties in Nederland. Hiervoor voor gebruik je dan CoronaCheck. Vanaf juli kun je CoronaCheck ook gebruiken om een persoonlijke QR-code te maken voor reizen naar andere landen in de Europese Unie. Daarover lees je op deze website binnenkort meer of lees de pagina van de Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)
+  en: To gain access to some events and locations, from June 5th you will be able to use CoronaCheck. <a href="/nl/faq/1-hoe-werkt-de-coronacheck-app/">You can read here how CoronaCheck works</a>. From the end of June, your proof of vaccination will provide access to events and locations in the Netherlands. You can use CoronaCheck for this. From the beginning of July you will be able to use CoronaCheck to create a personal QR code for travels to other countries within the European Union. You can read more about it soon on this website, or take a look at the website of the Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer" lang="nl" hreflang="nl">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)

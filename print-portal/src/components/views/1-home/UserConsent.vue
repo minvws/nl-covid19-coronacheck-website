@@ -51,8 +51,8 @@ export default {
     input[type=checkbox] {
         width: 28px;
         height: 28px;
-        border-radius: 50%;
         margin-right: 20px;
+        border-radius: 3px;
         border: 1px solid $color-darkgrey;
         cursor: pointer;
     }
@@ -60,6 +60,15 @@ export default {
     label {
         width: calc(100% - 48px);
         cursor: pointer;
+    }
+
+    a, a:visited {
+        color: $color-cc-link-on-lightgrey;
+
+        &:hover,
+        &:focus {
+            color: $color-cc-link-on-lightgrey--interaction;
+        }
     }
 }
 </style>

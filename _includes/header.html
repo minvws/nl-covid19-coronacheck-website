@@ -4,22 +4,20 @@
       {{ site.data.translations.header-skip-to-content[page.lang] }}
     </a>
   </div>
-  <div class="header header--home">
+  <div class="header offset-background">
     <div class="logobar">
       <div class="logo">
         <a href="{{ langSlug }}">
-          <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}">
+          <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}" width="40" height="80">
         </a>
       </div>
       {% if include.for == "scanner" %}
         <a href="{{ langSlug }}/faq-scanner" class="header__layout__faq-link">
-          {{ site.data.translations.faq[page.lang] }}
-        </a>
+          {{ site.data.translations.faq[page.lang] }}</a>
       {% else %}
         <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
-          {{ site.data.translations.faq[page.lang] }}
-        </a>
-      {% endif %}
+          {{ site.data.translations.faq[page.lang] }}</a>
+        {% endif %}
       {% include components/language-picker.html headertype="default" %}
     </div>
     <div class="container">
@@ -28,7 +26,7 @@
 
         <div class="header__layout">
           <div class="header__layout--image">
-            <img src="{{ site.baseurl }}{{ site.data.translations.scanner-header-img[page.lang] }}" alt="{{ site.data.translations.scanner-header-alt[page.lang] }}">
+            <img src="{{ site.baseurl }}{{ site.data.translations.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
           </div>
 
           <div class="header__layout--content">
@@ -44,7 +42,7 @@
 
         <div class="header__layout">
           <div class="header__layout--image">
-            <img src="{{ site.baseurl }}{{ site.data.translations.coronacheck-header-img[page.lang] }}" alt="{{ site.data.translations.coronacheck-header-alt[page.lang] }}">
+            <img src="{{ site.baseurl }}{{ site.data.translations.coronacheck-header-img[page.lang] }}" alt="" width="250" height="319">
           </div>
 
           <div class="header__layout--content">
