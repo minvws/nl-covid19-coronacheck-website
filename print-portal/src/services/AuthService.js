@@ -1,5 +1,5 @@
 import { UserManager } from 'oidc-client';
-import store from '@/store'
+// import store from '@/store'
 
 const getNonce = (l) => {
     const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._'
@@ -39,20 +39,7 @@ const getClientSettings = () => {
 
 export default class AuthService {
     manager = new UserManager(getClientSettings());
-    user = null;
-
-    constructor() {
-        this.manager.getUser().then(user => {
-            this.user = user;
-        }).catch((error) => {
-            store.commit('modal/set', {
-                messageHead: this.$t('message.error.general.head'),
-                messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                closeButton: true
-            });
-        })
-    }
-
+    
     startAuthentication() {
         return this.manager.signinRedirect();
     }
