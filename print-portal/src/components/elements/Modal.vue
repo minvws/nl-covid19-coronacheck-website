@@ -51,11 +51,7 @@ export default {
             this.close();
         },
         setFocus() {
-            if (this.showConfirm) {
-                this.$refs.refute.focus();
-            } else if (this.showCloseButton) {
-                this.$refs.close.focus();
-            }
+            this.$refs.focusStart.focus();
         }
     },
     watch: {
@@ -77,7 +73,7 @@ export default {
     },
     mounted() {
         window.addEventListener('keydown', e => {
-            if (e.key === 'Escape' && this.showConfirm) {
+            if (e.key === 'Escape') {
                 this.close();
             }
         });
@@ -104,6 +100,8 @@ export default {
             aria-describedby="modal__body">
             <div
                 v-html="messageHead"
+                ref="focusStart"
+                tabindex="-1"
                 id="modal__head">
             </div>
             <div
@@ -116,7 +114,6 @@ export default {
                 <button
                     v-if="showConfirm"
                     @click="refute()"
-                    ref="refute"
                     type="button"
                     class="button-modest">
                     {{refuteText}}
@@ -124,7 +121,6 @@ export default {
                 <button
                     v-if="showConfirm"
                     @click="confirm()"
-                    ref="confirm"
                     type="button"
                     class="button-modest button--ok">
                     {{confirmText}}
@@ -132,7 +128,6 @@ export default {
                 <button
                     v-if="showCloseButton"
                     @click="close()"
-                    ref="close"
                     type="button"
                     class="button-modest">{{$t('close')}}</button>
             </div>
