@@ -39,7 +39,7 @@ const getClientSettings = () => {
 
 export default class AuthService {
     manager = new UserManager(getClientSettings());
-    
+
     startAuthentication() {
         return this.manager.signinRedirect();
     }
