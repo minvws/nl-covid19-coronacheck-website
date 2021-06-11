@@ -38,7 +38,6 @@ export default {
         completeAuthentication() {
             this.isLoading = true;
             this.mgr.completeAuthentication().then((user) => {
-                console.log(user);
                 this.collectEvents(user.id_token)
             }, () => {
                 this.isLoading = false;
