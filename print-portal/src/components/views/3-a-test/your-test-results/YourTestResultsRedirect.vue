@@ -49,7 +49,6 @@ export default {
             })
         },
         collectEvents(token) {
-            console.log(token);
             this.$store.commit('signedEvents/clear');
             this.isLoading = true;
             signedEventsTool.collect(token, 'negativetest').then(signedEvents => {
