@@ -25,7 +25,7 @@ export default {
     methods: {
         createDocument(qrObject) {
             generateQR(qrObject.data).then(async (urlQR) => {
-                this.document = await getDocument(qrObject.attributesIssued, urlQR, this.currentLanguage.locale);
+                this.document = await getDocument('negativeTest', 'NL', qrObject.attributesIssued, urlQR, this.currentLanguage.locale);
             }, (error) => {
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.error.general.head'),
