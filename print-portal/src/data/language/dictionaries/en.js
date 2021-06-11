@@ -89,7 +89,7 @@ const en = {
         },
         'printVaccination': {
             'pageHeader': 'Print your vaccination certificate',
-            'pageIntro': '<h3>Your certificate</h3><p>You’ve made a vaccination certificate in the form of a QR code. You have a QR code for The Netherlands and a QR code for when you travel within the European Union.</p><h3>Information in the QR</h3><p><a href="" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
+            'pageIntro': '<h3>Your certificate</h3><p>You’ve made a vaccination certificate in the form of a QR code. You have a QR code for the Netherlands and one for other countries.</p><h3>Information in the QR</h3><p><a href="https://coronacheck.nl/en/faq/18-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
         }
     },
     'components': {
@@ -135,7 +135,7 @@ const en = {
             },
             'vaccinationSomethingWrong': {
                 'head': 'Something is wrong',
-                'body': '<p>Wrong name or date of birth? Contact your doctor and let them know.</p><p>Missing an injection?<br>Contact the location you were vaccinated at.</p>'
+                'body': '<p>Wrong name or date of birth? Or are your vaccination details incorrect? Please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">CoronaCheck.nl/en/guidepost</a> for more information.</p>'
             },
             'noVerificationCode': {
                 'head': 'Need a new verification code?',
