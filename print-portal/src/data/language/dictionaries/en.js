@@ -12,8 +12,8 @@ const en = {
     'template': { footer },
     'views': {
         'home': {
-            'pageHeader': 'Get access with a test declaration on paper',
-            'pageIntro': '<p>A test declaration on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><h4>Only access after testing</h4><p>Get tested when visiting certain social, cultural or sports events. Even when you\'ve already been vaccinated. Does your test prove you don\'t have coronavirus (negative test result)? Then you can get access.</p><h4>Your QR code in your pocket</h4><p>If your test proves you don\'t have coronavirus, you can make a personal QR code in this app. This will be your test declaration. The QR code is scanned before you get access.</p><h4>Minimum amount of data</h4><p>Your QR code only states when you tested negative (no coronavirus), the time of testing, and the minimum amount of identifying data: your first name initial, your last name initial, your day of birth, and your month of both. We verify this information to make sure the test result is yours.</p>',
+            'pageHeader': 'Get access with a test certificate on paper',
+            'pageIntro': '<p>A test certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><h4>Only access after testing</h4><p>Get tested when visiting certain social, cultural or sports events. Even when you\'ve already been vaccinated. Does your test prove you don\'t have coronavirus (negative test result)? Then you can get access.</p><h4>Your QR code in your pocket</h4><p>If your test proves you don\'t have coronavirus, you can make a personal QR code in this app. This will be your test certificate. The QR code is scanned before you get access.</p><h4>Minimum amount of data</h4><p>Your QR code only states when you tested negative (no coronavirus), the time of testing, and the minimum amount of identifying data: your first name initial, your last name initial, your day of birth, and your month of both. We verify this information to make sure the test result is yours.</p>',
             'userConsentText': 'I have read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and understand how CoronaCheck processes my data.'
         },
         'choiceProof': {
@@ -69,7 +69,7 @@ const en = {
         },
         'yourTestResults': {
             'pageHeader': 'Check your test result',
-            'pageIntro': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test declaration.</p>',
+            'pageIntro': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.</p>',
             'createTestProofButton': 'Make QR code',
             'somethingIsWrong': 'Is something wrong?',
             'retrievedTestResult': 'Retrieved test result',
@@ -84,8 +84,8 @@ const en = {
             'openPDF': 'Open PDF'
         },
         'printTestResult': {
-            'pageHeader': 'Your test declaration',
-            'pageIntro': 'You\'ve made a test declaration,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.'
+            'pageHeader': 'Your test certificate',
+            'pageIntro': 'You\'ve made a test certificate,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.'
         },
         'printVaccination': {
             'pageHeader': 'Print your vaccination certificate',
@@ -166,13 +166,13 @@ const en = {
         }
     },
     'pdf': {
-        'yourTestProof': 'Your test declaration',
+        'yourTestProof': 'Your test certificate',
         'dayOfBirth': 'Day of birth',
         'footerText': pdfFooter,
         'initials': 'Initials',
         'instructions': 'Instructions',
         'instructionsText': pdfInstructions,
-        'preferMobile': 'Prefer showing your test declaration on your mobile phone? Then use the retrieval code (the test location sends it in an email) in the CoronaCheck app.',
+        'preferMobile': 'Prefer showing your test certificate on your mobile phone? Then use the retrieval code (the test location sends it in an email) in the CoronaCheck app.',
         'questions': 'Questions?',
         'testedAt': 'Tested for',
         'validUntil': 'Valid until'
