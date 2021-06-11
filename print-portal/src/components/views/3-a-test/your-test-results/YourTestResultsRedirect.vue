@@ -52,7 +52,7 @@ export default {
             console.log(token);
             this.$store.commit('signedEvents/clear');
             this.isLoading = true;
-            signedEventsTool.collect(token).then(signedEvents => {
+            signedEventsTool.collect(token, 'negativetest').then(signedEvents => {
                 this.$store.commit('signedEvents/createAll', signedEvents);
                 this.isLoading = false;
                 this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });

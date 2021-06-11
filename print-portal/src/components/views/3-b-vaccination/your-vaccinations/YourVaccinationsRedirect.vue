@@ -49,7 +49,7 @@ export default {
         collectEvents(token) {
             this.$store.commit('signedEvents/clear');
             this.isLoading = true;
-            signedEventsTool.collect(token).then(signedEvents => {
+            signedEventsTool.collect(token, 'vaccination').then(signedEvents => {
                 this.$store.commit('signedEvents/createAll', signedEvents);
                 this.isLoading = false;
                 this.$router.push({ name: 'YourVaccinations' });

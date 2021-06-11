@@ -1,10 +1,10 @@
 import axios from 'axios';
 import store from '@/store'
 
-const collect = async (token) => {
+const collect = async (token, filter = '') => {
     return new Promise((resolve, reject) => {
         getTokens(token).then((tokenSets) => {
-            getEvents(tokenSets).then(events => {
+            getEvents(tokenSets, filter).then(events => {
                 resolve(events);
             }, (error) => {
                 reject(error)
@@ -36,7 +36,7 @@ const getTokens = async (token) => {
     })
 }
 
-const getEvents = async (tokenSets) => {
+const getEvents = async (tokenSets, filter) => {
     const allEvents = []
     for (const tokenSet of tokenSets) {
         // only do GGD for now
@@ -45,7 +45,7 @@ const getEvents = async (tokenSets) => {
             if (eventProvider) {
                 const result = await unomi(eventProvider, tokenSet)
                 if (result && result.informationAvailable) {
-                    await getEvent(eventProvider, tokenSet).then(signedEvent => {
+                    await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
                         allEvents.push(signedEvent)
                     })
                 }
@@ -76,7 +76,7 @@ const unomi = async (eventProvider, tokenSet) => {
     })
 }
 
-const getEvent = async (eventProvider, tokenSet) => {
+const getEvent = async (eventProvider, tokenSet, filter) => {
     return new Promise((resolve, reject) => {
         const url = eventProvider.event_url;
         const headers = {
@@ -86,7 +86,8 @@ const getEvent = async (eventProvider, tokenSet) => {
         axios({
             method: 'post',
             headers: headers,
-            url: url
+            url: url,
+            data: { filter: filter }
         }).then((response) => {
             resolve(response.data)
         }).catch((error) => {
