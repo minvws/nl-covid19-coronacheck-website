@@ -1,5 +1,5 @@
 import { UserManager } from 'oidc-client';
-import store from '@/store/store'
+import store from '@/store'
 
 const getNonce = (l) => {
     const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._'
