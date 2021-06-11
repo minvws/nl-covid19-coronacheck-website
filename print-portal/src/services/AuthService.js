@@ -1,35 +1,41 @@
 import { UserManager } from 'oidc-client';
+import store from '@/store/store'
 
-const getNonce = () => {
-    return Math.random().toString(36).substring(7);
+const getNonce = (l) => {
+    const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._'
+    let length = l;
+    let result = '';
+
+    while (length > 0) {
+        const bytes = new Uint8Array(16);
+        const random = window.crypto.getRandomValues(bytes);
+        random.forEach(function(c) {
+            if (length === 0) {
+                return;
+            }
+            if (c < charset.length) {
+                result += charset[c];
+                length--;
+            }
+        });
+    }
+    return result;
 }
 
 const getClientSettings = () => {
     return {
-        // userStore: new Oidc.WebStorageStateStore(),
         authority: 'https://tvs-connect.acc.coronacheck.nl',
         client_id: 'test_client',
         scope: 'openid',
         response_type: 'code',
         redirect_uri: window.location.origin + '/nl/print/jouw-vaccinaties-redirect',
         extraQueryParams: {
-            nonce: getNonce()
+            nonce: getNonce(32)
         },
         filterProtocolClaims: true,
         loadUserInfo: false
     };
 }
-//
-// const optionsTest = {
-//     userStore: new Oidc.WebStorageStateStore(),
-//     authority: 'https://dev-51odbhlm.eu.auth0.com',
-//     client_id: '3GPG1OoyjiI94HT2uRszIaBK9041LtAt',
-//     scope: 'openid',
-//     response_type: 'code',
-//     extraQueryParams: {
-//         nonce: Math.random().toString(36).substring(7)
-//     }
-// }
 
 export default class AuthService {
     manager = new UserManager(getClientSettings());
@@ -38,7 +44,13 @@ export default class AuthService {
     constructor() {
         this.manager.getUser().then(user => {
             this.user = user;
-        });
+        }).catch((error) => {
+            store.commit('modal/set', {
+                messageHead: this.$t('message.error.general.head'),
+                messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
+                closeButton: true
+            });
+        })
     }
 
     startAuthentication() {
@@ -50,7 +62,11 @@ export default class AuthService {
             console.log(user);
             this.user = user;
         }).catch((error) => {
-            console.log(error);
+            store.commit('modal/set', {
+                messageHead: this.$t('message.error.general.head'),
+                messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
+                closeButton: true
+            });
         })
     }
 }
