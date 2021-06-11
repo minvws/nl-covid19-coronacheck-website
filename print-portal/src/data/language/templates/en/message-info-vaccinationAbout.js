@@ -16,7 +16,7 @@ const html = `
         Country of vaccination: <b>%{country}</b><br>
         Identification code: <b>%{identificationCode}</b>
     </p>
-    <p>
+    <!-- <p>
         With your vaccination details, the app automatically retrieves a QR code for the Netherlands and one for other countries.
     </p>
 
@@ -36,7 +36,7 @@ const html = `
         <li>Name: <b>%{name}</b></li>
         <li>Date of birth: <b>%{birthDateString}</b></li>
         <li>Vaccine: <b>%{vaccineName}</b></li>
-    </ul>
+    </ul> -->
 `;
 
 export default html;
