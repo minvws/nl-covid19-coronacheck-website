@@ -4,15 +4,22 @@ import PageIntro from '@/components/elements/PageIntro';
 import UserConsent from './UserConsent';
 import PreferMobile from '@/components/elements/PreferMobile';
 import CcButton from '@/components/elements/CcButton';
+import ErrorLabel from '@/components/elements/ErrorLabel';
 
 export default {
     name: 'Home',
     components: {
+        ErrorLabel,
         CcButton,
         Page,
         PageIntro,
         UserConsent,
         PreferMobile
+    },
+    data() {
+        return {
+            clickedNext: false
+        }
     },
     computed: {
         consent() {
@@ -24,7 +31,10 @@ export default {
             window.location = 'https://coronacheck.nl/nl/';
         },
         next() {
-            this.$router.push({ name: 'ChoiceProof' });
+            this.clickedNext = true;
+            if (this.consent) {
+                this.$router.push({ name: 'ChoiceProof' });
+            }
         },
         setUserConsent(value) {
             this.$store.commit('setUserConsent', value);
@@ -46,11 +56,13 @@ export default {
                     @update="setUserConsent"
                     :consent="consent"
                     :label="$t('views.home.userConsentText')"/>
+                <ErrorLabel
+                    v-if="clickedNext && !consent"
+                    :label="$t('views.home.noConsentError')"/>
             </div>
             <div class="section-block">
                 <CcButton
                     @select="next()"
-                    :disabled="!consent"
                     :label="$t('next')"/>
             </div>
         </div>
@@ -65,6 +77,10 @@ export default {
 
     .UserConsent {
         margin: $grid-x6 0 $length-s 0;
+    }
+
+    .ErrorLabel {
+        margin-bottom: $length-s;
     }
 }
 </style>

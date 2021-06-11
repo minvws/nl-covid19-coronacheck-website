@@ -1,9 +1,10 @@
 <script>
 import CcButton from '@/components/elements/CcButton';
+import ErrorLabel from '@/components/elements/ErrorLabel';
 
 export default {
     name: 'ProvideTestCode',
-    components: { CcButton },
+    components: { ErrorLabel, CcButton },
     props: {
         testCodeStatus: {
             type: Object,
@@ -54,11 +55,9 @@ export default {
                 id="input--testCode"
                 type="text"
                 :placeholder="$t('forInstanceAbbr') + ' BRB-YYYYYYYYY1-Z2'"/>
-            <div
+            <ErrorLabel
                 v-if="testCodeStatus.error.length > 0"
-                class="input__error">
-                {{testCodeStatus.error}}
-            </div>
+                :label="testCodeStatus.error"/>
         </div>
         <CcButton
             v-if="!verificationNeeded"

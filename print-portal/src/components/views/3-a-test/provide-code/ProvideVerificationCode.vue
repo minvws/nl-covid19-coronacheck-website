@@ -1,9 +1,10 @@
 <script>
 import CcButton from '@/components/elements/CcButton';
+import ErrorLabel from '@/components/elements/ErrorLabel';
 
 export default {
     name: 'ProvideVerificationCode',
-    components: { CcButton },
+    components: { CcButton, ErrorLabel },
     props: {
         verificationCodeStatus: {
             type: Object,
@@ -63,11 +64,9 @@ export default {
                 pattern="[0-9]*"
                 inputmode="numeric"
                 :placeholder="$t('forInstanceAbbr') + ' 123456'"/>
-            <div
+            <ErrorLabel
                 v-if="verificationCodeStatus.error.length > 0"
-                class="input__error">
-                {{verificationCodeStatus.error}}
-            </div>
+                :label="verificationCodeStatus.error"/>
             <div class="request-new-verification-code__container">
                 <button
                     @click="requestNewVerificationCode()"
