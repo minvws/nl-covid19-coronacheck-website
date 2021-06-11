@@ -1,7 +1,7 @@
 <script>
 import CcButton from '@/components/elements/CcButton';
 import ErrorLabel from '@/components/elements/ErrorLabel';
-import CcModestButton from '@/components/elements/ccModestButton';
+import CcModestButton from '@/components/elements/CcModestButton';
 
 export default {
     name: 'ProvideVerificationCode',

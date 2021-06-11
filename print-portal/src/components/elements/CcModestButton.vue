@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'ccModestButton',
+    name: 'CcModestButton',
     props: {
         label: {
             type: String,
@@ -23,8 +23,8 @@ export default {
 <template>
     <button
         @click="select"
-        :class="{ 'ccModestButton--margin-top': marginTop }"
-        class="ccModestButton">
+        :class="{ 'CcModestButton--margin-top': marginTop }"
+        class="CcModestButton">
         {{label}}
     </button>
 </template>
@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/variables/index";
 
-.ccModestButton {
+.CcModestButton {
     color: $color-coronacheck_blue;
     font-size: 16px;
     font-weight: 700;

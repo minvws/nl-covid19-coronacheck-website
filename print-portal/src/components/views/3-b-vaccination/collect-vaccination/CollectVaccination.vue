@@ -2,7 +2,7 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
-import CcModestButton from '@/components/elements/ccModestButton';
+import CcModestButton from '@/components/elements/CcModestButton';
 
 export default {
     name: 'CollectVaccination',

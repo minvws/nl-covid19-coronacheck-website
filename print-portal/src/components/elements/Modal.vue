@@ -1,5 +1,5 @@
 <script>
-import CcModestButton from './ccModestButton';
+import CcModestButton from './CcModestButton';
 
 export default {
     name: 'Modal',
@@ -221,7 +221,7 @@ export default {
         display: flex;
         align-items: center;
 
-        .ccModestButton {
+        .CcModestButton {
             margin-right: $length-xl;
 
             &:last-child {

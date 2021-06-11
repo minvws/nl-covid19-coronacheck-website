@@ -3,7 +3,7 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import PageChoice from '@/components/elements/PageChoice';
 import PreferMobile from '@/components/elements/PreferMobile';
-import CcModestButton from '@/components/elements/ccModestButton';
+import CcModestButton from '@/components/elements/CcModestButton';
 
 export default {
     name: 'ChoiceTestLocation',
