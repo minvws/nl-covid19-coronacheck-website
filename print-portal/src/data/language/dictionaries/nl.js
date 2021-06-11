@@ -89,7 +89,7 @@ const nl = {
         },
         'printVaccination': {
             'pageHeader': 'Print jouw vaccinatiebewijs',
-            'pageIntro': '<p>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt een vaccinatiebewijs voor binnen Nederland, en een vaccinatiebewijs voor in Europa.<br><a href="" target="_blank">Lees hier</a> wat er zoal in staat. Print de PDF en neem het printje mee.</p>'
+            'pageIntro': '<h3>Jouw bewijs</h3><p>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt nu twee QR-codes: één voor Nederland en één internationale.</p><h3>Informatie in de QR</h3><p><a href="https://coronacheck.nl/nl/faq/18-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier kun je lezen wat er in de QR-codes staat</a>.</p><h3>En nu?</h3><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
         }
     },
     'components': {
@@ -135,7 +135,7 @@ const nl = {
             },
             'vaccinationSomethingWrong': {
                 'head': 'Er klopt iets niet',
-                'body': '<p>Klopt je naam of geboortedatum niet? Neem contact op met je huisarts en geef dit door.</p><p>Mist er een prik?<br>Neem contact op met de locatie waar je bent gevaccineerd.</p>'
+                'body': '<p>Kloppen je naam en/of geboortedatum niet? Of staat er onjuiste informatie over je vaccinatie? Kijk op <a href="https://coronacheck.nl/wegwijzer">CoronaCheck.nl/wegwijzer</a> voor meer informatie.</p>'
             },
             'noVerificationCode': {
                 'head': 'Nieuwe verificatiecode nodig?',
