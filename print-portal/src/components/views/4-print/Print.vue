@@ -9,6 +9,12 @@ import mockQrs from '@/data/mock/qr';
 export default {
     name: 'Print',
     components: { Page, CcButton },
+    props: {
+        type: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
             document: null
@@ -25,7 +31,7 @@ export default {
     methods: {
         createDocument(qrObject) {
             generateQR(qrObject.data).then(async (urlQR) => {
-                this.document = await getDocument('negativeTest', 'nl', qrObject.attributesIssued, urlQR, this.currentLanguage.locale);
+                this.document = await getDocument(this.type, 'nl', qrObject.attributesIssued, urlQR, this.currentLanguage.locale);
             }, (error) => {
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.error.general.head'),

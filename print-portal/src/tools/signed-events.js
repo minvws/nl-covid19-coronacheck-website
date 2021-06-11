@@ -15,14 +15,19 @@ const collect = async (token) => {
 }
 
 const getTokens = async (token) => {
-    // todo, use token
     return new Promise((resolve, reject) => {
+        const headers = {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+        };
         axios({
-            method: 'get',
-            url: 'https://api-ct.bananenhalen.nl/v2/holder/identity_hashes/?debug&bsn=999999011'
+            method: 'post',
+            url: 'https://holder-api.acc.coronacheck.nl/v4/holder/access_tokens',
+            headers
         }).then((response) => {
-            if (response.data && response.data.tokens) {
-                resolve(response.data.tokens);
+            if (response.data && response.data.payload) {
+                const payload = JSON.parse(atob(response.data.payload));
+                resolve(payload.tokens);
             }
         }).catch((error) => {
             reject(error);
@@ -34,7 +39,7 @@ const getEvents = async (tokenSets) => {
     const allEvents = []
     for (const tokenSet of tokenSets) {
         // only do GGD for now
-        if (tokenSet.provider_identifier === 'GGD') {
+        if (tokenSet.provider_identifier === 'ZZZ') {
             await getEvent(tokenSet).then(signedEvent => {
                 allEvents.push(signedEvent)
             })

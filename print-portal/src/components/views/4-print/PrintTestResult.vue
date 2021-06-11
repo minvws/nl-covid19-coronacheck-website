@@ -16,6 +16,7 @@ export default {
 <template>
     <div class="PrintTestResult">
         <Print
+            :type="'negativeTest'"
             @back="back">
             <PageIntro
                 :head="$t('views.printTestResult.pageHeader')"

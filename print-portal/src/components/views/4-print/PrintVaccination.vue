@@ -16,7 +16,8 @@ export default {
 <template>
     <div class="PrintVaccination">
         <Print
-            @back="back">
+            @back="back"
+            :type="'vaccination'">
             <PageIntro
                 :head="$t('views.printVaccination.pageHeader')"
                 :intro="$t('views.printVaccination.pageIntro')"/>

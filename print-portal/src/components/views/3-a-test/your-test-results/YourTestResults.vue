@@ -43,35 +43,7 @@ export default {
     },
     methods: {
         createTestCertificate() {
-            if (this.signedEvents.length > 0) {
-                if (this.hasQR) {
-                    this.$router.push({ name: 'PrintTestResult' });
-                } else {
-                    this.$axios({
-                        method: 'post',
-                        url: '/holder/paper',
-                        data: { events: this.signedEvents }
-                    }).then((response) => {
-                        if (response.data.status === 'ok' && response.data.error === 0) {
-                            this.$store.commit('setQrCode', response.data.qr.data);
-                            this.$store.commit('setQrData', response.data.qr.attributesIssued);
-                            this.$router.push({ name: 'PrintTestResult' });
-                        }
-                    }).catch((error) => {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.general.head'),
-                            messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
-                            closeButton: true
-                        });
-                    })
-                }
-            } else {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.error.general.head'),
-                    messageBody: this.$t('message.error.general.body'),
-                    closeButton: true
-                });
-            }
+            this.$router.push({ name: 'PrintTestResult' });
         },
         goBack() {
             const callback = () => {
