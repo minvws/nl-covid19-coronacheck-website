@@ -38,6 +38,8 @@ export default {
         completeAuthentication() {
             this.isLoading = true;
             this.authVaccinations.completeAuthentication().then((user) => {
+                // after redirect we've lost the consent
+                this.$store.commit('setUserConsent', true);
                 this.collectEvents(user.id_token)
             }, () => {
                 this.isLoading = false;
