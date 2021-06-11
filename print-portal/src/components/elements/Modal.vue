@@ -92,44 +92,46 @@ export default {
         <div
             @click="close()"
             class="cover__clickable-area"></div>
-        <div
-            class="modal"
-            role="alertdialog"
-            :aria-modal="showModal"
-            aria-labelledby="modal__head"
-            aria-describedby="modal__body">
+        <div class="modal__container">
             <div
-                v-html="messageHead"
-                ref="focusStart"
-                tabindex="-1"
-                id="modal__head">
-            </div>
-            <div
-                v-html="messageBody"
-                id="modal__body">
-            </div>
-            <div
-                v-if="showModal"
-                id="modal__footer">
-                <button
-                    v-if="showConfirm"
-                    @click="refute()"
-                    type="button"
-                    class="button-modest">
-                    {{refuteText}}
-                </button>
-                <button
-                    v-if="showConfirm"
-                    @click="confirm()"
-                    type="button"
-                    class="button-modest button--ok">
-                    {{confirmText}}
-                </button>
-                <button
-                    v-if="showCloseButton"
-                    @click="close()"
-                    type="button"
-                    class="button-modest">{{$t('close')}}</button>
+                class="modal"
+                role="alertdialog"
+                :aria-modal="showModal"
+                aria-labelledby="modal__head"
+                aria-describedby="modal__body">
+                <div
+                    v-html="messageHead"
+                    ref="focusStart"
+                    tabindex="-1"
+                    id="modal__head">
+                </div>
+                <div
+                    v-html="messageBody"
+                    id="modal__body">
+                </div>
+                <div
+                    v-if="showModal"
+                    id="modal__footer">
+                    <button
+                        v-if="showConfirm"
+                        @click="refute()"
+                        type="button"
+                        class="button-modest">
+                        {{refuteText}}
+                    </button>
+                    <button
+                        v-if="showConfirm"
+                        @click="confirm()"
+                        type="button"
+                        class="button-modest button--ok">
+                        {{confirmText}}
+                    </button>
+                    <button
+                        v-if="showCloseButton"
+                        @click="close()"
+                        type="button"
+                        class="button-modest">{{$t('close')}}</button>
+                </div>
             </div>
         </div>
         <div
@@ -172,21 +174,38 @@ export default {
     }
 }
 
+.modal__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    pointer-events: none;
+
+    @include mobile() {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .modal {
     background-color: #fff;
-    position: absolute;
-    width: 460px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10000;
-    top: 40%;
     transition: top 1s ease;
     border-radius: 5px;
+    max-width: 100%;
+    overflow-y: auto;
+    pointer-events: all;
 
     #modal__head {
         padding: $length-l $length-l 0 $length-l;
         margin-bottom: $grid-x2;
         font-weight: 700;
+        outline: none;
     }
 
     #modal__body {
