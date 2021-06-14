@@ -178,7 +178,7 @@ const nl = {
                 'propertiesLabel': 'Gegevens negatieve test'
             },
             'vaccination': {
-                'instructions': '',
+                'instructions': '1. Print dit bewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat de QR-code en je testgegevens zien aan de buitenlandse grens of als er in andere landen om gevraagd wordt.',
                 'propertiesLabel': 'Vaccinatiegegevens'
             },
             'title': 'Internationaal bewijs',
@@ -187,7 +187,7 @@ const nl = {
         },
         'nl': {
             'negativeTest': {
-                'instructions': '',
+                'instructions': '1. Print dit bewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat de QR-code (en eventueel ook je toegangskaartje) zien bij de ingang',
                 'propertiesLabel': 'Gegevens'
             },
             'vaccination': {

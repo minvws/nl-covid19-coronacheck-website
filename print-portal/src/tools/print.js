@@ -158,7 +158,7 @@ const getTextItems = (type, territory, userData, locale) => {
 const getImageItems = async (type, territory, urlQR) => {
     const flag = await createImageOnTheFly('assets/img/pdf/flag-' + territory + '.png');
     const imageCoronacheck = await createImageOnTheFly('assets/img/pdf/coronacheck.png');
-    const imageFoldInstructions = await createImageOnTheFly('assets/img/pdf/fold-instructions.png');
+    const imageFoldInstructions = await createImageOnTheFly('assets/img/pdf/fold-instructions-v2.png');
     const QRSize = QRSizeInCm * 10;
     const coronacheckImageHeight = 10;
     const flagWidth = 63;
@@ -186,8 +186,8 @@ const getImageItems = async (type, territory, urlQR) => {
             url: imageFoldInstructions,
             x: 165,
             y: 6,
-            width: 35,
-            height: 10
+            width: 40,
+            height: 15
         }
     ]
 }
