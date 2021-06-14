@@ -47,7 +47,7 @@ const nl = {
         },
         'noVaccinations': {
             'pageHeader': 'Geen vaccinatie(s) beschikbaar',
-            'pageIntro': '<p>Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Kijk voor meer informatie op CoronaCheck.nl/wegwijzer.</p>'
+            'pageIntro': '<p>Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Kijk voor meer informatie op <a href="https://coronacheck.nl/wegwijzer" target="_blank">CoronaCheck.nl/wegwijzer.</a></p>'
         },
         'notPossibleVaccinations': {
             'pageHeader': 'We kunnen geen bewijs maken',

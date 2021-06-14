@@ -52,9 +52,14 @@ export default {
             signedEventsTool.collect(token, 'vaccination').then(signedEvents => {
                 this.$store.commit('signedEvents/createAll', signedEvents);
                 this.isLoading = false;
-                this.$router.push({ name: 'YourVaccinations' });
+
+                const vaccinationSignedEvents = this.$store.getters['signedEvents/getProofEvents']('vaccination');
+                if (vaccinationSignedEvents.length > 0) {
+                    this.$router.push({ name: 'YourVaccinations' });
+                } else {
+                    this.$router.push({ name: 'VaccinationsNone' });
+                }
                 // todo
-                // this.$router.push({ name: 'VaccinationsNone' });
                 // this.$router.push({ name: 'VaccinationsNotPossible' });
             }, (error) => {
                 this.$store.commit('modal/set', {
