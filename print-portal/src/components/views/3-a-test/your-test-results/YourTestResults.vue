@@ -80,39 +80,23 @@ export default {
         @back="goBack"
         class="YourTestResults">
         <div class="section">
-            <div v-if="latestNegativeTestSignedEvent">
-                <PageIntro
-                    :head="$t('views.yourTestResults.pageHeader')"
-                    :intro="$t('views.yourTestResults.pageIntro')"/>
+            <PageIntro
+                :head="$t('views.yourTestResults.pageHeader')"
+                :intro="$t('views.yourTestResults.pageIntro')"/>
 
-                <div class="section-block">
-                    <div class="proof-events">
-                        <NegativeTest
-                            :signed-event="latestNegativeTestSignedEvent"/>
-                    </div>
-                    <div class="section-block__footer">
-                        <CcButton
-                            @select="createTestCertificate()"
-                            :label="$t('views.yourTestResults.createTestProofButton')"/>
-                        <div class="button__help-button">
-                            <CcModestButton
-                                @select="openModalTestResultsSomethingWrong()"
-                                :label="$t('views.yourTestResults.somethingIsWrong')"/>
-                        </div>
-                    </div>
+            <div class="section-block">
+                <div class="proof-events">
+                    <NegativeTest
+                        :signed-event="latestNegativeTestSignedEvent"/>
                 </div>
-            </div>
-
-            <div v-else>
-                <PageIntro
-                    :head="$t('views.yourTestResults.noTestResultPresent')"
-                    :intro="$t('views.yourTestResults.noTestResultPresentDirection')"/>
-
-                <div class="section-block">
-                    <div class="section-block__footer">
-                        <CcButton
-                            @select="goHome()"
-                            :label="$t('goBackToStart')"/>
+                <div class="section-block__footer">
+                    <CcButton
+                        @select="createTestCertificate()"
+                        :label="$t('views.yourTestResults.createTestProofButton')"/>
+                    <div class="button__help-button">
+                        <CcModestButton
+                            @select="openModalTestResultsSomethingWrong()"
+                            :label="$t('views.yourTestResults.somethingIsWrong')"/>
                     </div>
                 </div>
             </div>

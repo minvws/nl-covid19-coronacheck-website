@@ -72,13 +72,15 @@ const en = {
             'pageIntro': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.</p>',
             'createTestProofButton': 'Make QR code',
             'somethingIsWrong': 'Is something wrong?',
-            'retrievedTestResult': 'Retrieved test result',
-            'noTestResultPresent': 'Test result not known',
-            'noTestResultPresentDirection': 'Retrieve your test result first. Use the retrieval code given to you by the test location.'
+            'retrievedTestResult': 'Retrieved test result'
         },
         'testResultPending': {
             'pageHeader': 'Test result not yet known',
             'pageIntro': 'Please try again later.<br>If you have any questions, contact your test location.'
+        },
+        'testResultNone': {
+            'pageHeader': 'TOOO Geen negatieve testuitslag',
+            'pageIntro': 'TOOO Er is geen negatieve testuitslag beschikbaar.'
         },
         'print': {
             'openPDF': 'Open PDF'

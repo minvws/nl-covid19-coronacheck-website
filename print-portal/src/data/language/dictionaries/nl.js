@@ -72,13 +72,15 @@ const nl = {
             'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
             'createTestProofButton': 'Maak QR-code',
             'somethingIsWrong': 'Klopt er iets niet?',
-            'retrievedTestResult': 'Opgehaalde testuitslag',
-            'noTestResultPresent': 'Er is geen testuitslag bekend',
-            'noTestResultPresentDirection': 'Haal eerst je testuitslag op. Gebruik hiervoor de code die je van de testlocatie hebt gekregen. '
+            'retrievedTestResult': 'Opgehaalde testuitslag'
         },
         'testResultPending': {
             'pageHeader': 'Testuitslag nog niet bekend',
             'pageIntro': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.'
+        },
+        'testResultNone': {
+            'pageHeader': 'Geen negatieve testuitslag',
+            'pageIntro': 'Er is geen negatieve testuitslag beschikbaar.'
         },
         'print': {
             'openPDF': 'Open PDF'

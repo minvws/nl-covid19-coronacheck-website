@@ -3,6 +3,7 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
 import signedEventsTool from '@/tools/signed-events'
+// import { cmsDecode } from '@/tools/cms'
 
 export default {
     name: 'YourTestResultsRedirect',
@@ -54,9 +55,15 @@ export default {
             signedEventsTool.collect(token, 'negativetest').then(signedEvents => {
                 this.$store.commit('signedEvents/createAll', signedEvents);
                 this.isLoading = false;
-                this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
+
+                const negativeTestSignedEvents = this.$store.getters['signedEvents/getProofEvents']('negativetest');
+                if (negativeTestSignedEvents.length > 0) {
+                    this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
+                } else {
+                    console.log('!');
+                    this.$router.push({ name: 'TestResultNone' });
+                }
                 // todo
-                // this.$router.push({ name: 'TestResultNone' });
                 // this.$router.push({ name: 'TestResultPending' });
                 // this.$router.push({ name: 'TestResultNotPossible' });
             }, (error) => {

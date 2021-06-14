@@ -19,8 +19,8 @@ export default {
         :display-back-button="false">
         <div class="section">
             <PageIntro
-                :head="$t('views.TestResultNone.pageHeader')"
-                :intro="$t('views.TestResultNone.pageIntro')"/>
+                :head="$t('views.testResultNone.pageHeader')"
+                :intro="$t('views.testResultNone.pageIntro')"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton
