@@ -25,6 +25,9 @@ const questionsFrameTop = (pageHeight / 2) - marginLeft - questionsFrameHeight;
 const questionsFrameInnerLeft = rightPartLeft + marginQuestionsFrame;
 const questionsFrameInnerWidth = partWidth - (2 * marginQuestionsFrame);
 
+const regular = ['montserrat', 'normal', 400];
+const bold = ['montserrat', 'normal', 700];
+
 const createImageOnTheFly = async (src) => {
     return new Promise((resolve, reject) => {
         const img = document.createElement('img');
@@ -106,7 +109,17 @@ const getTextItems = (type, territory, userData, locale) => {
             textAlign: 'center',
             lineHeight: 10
         }, {
-            text: i18n.t('pdf.' + territory + '.intro'),
+            //text: i18n.t('pdf.' + territory + '.intro'),
+            text: [
+                {
+                    text: 'Reis je buiten Nederland? Gebruik dan dit EU digitaal coronacertificaat.\n\nBekijk voor vertrek welke test- of vaccinatie- bewijzen geldig zijn in het land dat je bezoekt:',
+                    fontWeight: 400
+                }, {
+                    text: 'www.reopen.europa.eu/en',
+                    fontWeight: 700,
+                    color: [71, 142, 255]
+                }
+            ],
             fontWeight: 400,
             fontSize: 11,
             position: [leftPartLeft, 51],
@@ -131,7 +144,23 @@ const getTextItems = (type, territory, userData, locale) => {
             position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + lineHeight)],
             width: questionsFrameInnerWidth
         }, {
-            text: i18n.t('pdf.questionsContent'),
+            text: [
+                {
+                    text: 'Bekijk de meestgestelde vragen op CoronaCheck.nl of stuur een e-mail naar',
+                    fontWeight: 400
+                }, {
+                    text: 'helpdesk@coronacheck.nl',
+                    fontWeight: 700
+                }, {
+                    text: 'of bel naar',
+                    fontWeight: 400
+                }, {
+                    text: '0800-1421',
+                    fontWeight: 700
+                }, {
+                    text: '(gratis)',
+                    fontWeight: 400
+                }],
             fontWeight: 400,
             fontSize: 11,
             position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + (3 * lineHeight))],
@@ -149,9 +178,8 @@ const getTextItems = (type, territory, userData, locale) => {
             fontWeight: 700,
             fontSize: 18,
             position: [rightPartLeft, bottomPartTop],
-            width: partWidth,
-            textAlign: 'center'
-        },
+            width: partWidth
+        }
     ]
 }
 
@@ -206,9 +234,12 @@ const drawLines = (doc) => {
 }
 
 const drawTextItems = (doc, textItems) => {
-    const regular = ['montserrat', 'normal', 400];
-    const bold = ['montserrat', 'normal', 700];
     for (const textItem of textItems) {
+        if (textItem.color) {
+            doc.setTextColor(...textItem.color);
+        } else {
+            doc.setTextColor(0,0,0)
+        }
         const textAlign = textItem.textAlign ? textItem.textAlign : 'left'
         // for center align jspdf needs to now the center x
         const x = (textItem.textAlign && textItem.width) ? textItem.position[0] + 0.5 * textItem.width : textItem.position[0];
@@ -221,17 +252,100 @@ const drawTextItems = (doc, textItems) => {
             doc.setFont(...regular);
         }
         if (textItem.width) {
-            let index = 0;
-            const set = doc.splitTextToSize(textItem.text, textItem.width);
-
-            for (const item of set) {
-                const lh = textItem.lineHeight ? textItem.lineHeight : lineHeight;
-                doc.text(item, x, (textItem.position[1] + index * lh), textAlign);
-                index++;
+            if (textItem.text instanceof Array) {
+                drawTextItemWithMixedChunks(doc, textItem, x, textItem.position[1])
+            } else {
+                drawTextItemOverLines(doc, textItem, x, textAlign)
             }
         } else {
             doc.text(textItem.text, x, textItem.position[1], textAlign);
         }
+    }
+}
+
+const drawTextItemWithMixedChunks = (doc, textItem, baseX, baseY) => {
+    let addedX, addedY, currentAvailableWidth;
+    const lh = textItem.lineHeight ? textItem.lineHeight : lineHeight;
+    const spaceWidth = doc.getTextWidth(' ');
+    const textAlign = textItem.textAlign;
+    addedX = 0;
+    addedY = 0;
+    currentAvailableWidth = textItem.width;
+    for (let chunk of textItem.text) {
+        if (chunk.fontWeight && chunk.fontWeight === 700) {
+            doc.setFont(...bold);
+        } else {
+            doc.setFont(...regular);
+        }
+        if (chunk.color) {
+            doc.setTextColor(...chunk.color);
+        } else {
+            doc.setTextColor(0,0,0)
+        }
+        const text = chunk.text;
+        if (doesTextFit(doc, text, currentAvailableWidth)) {
+            // add manual space
+            if (addedX > 0) {
+                addedX += spaceWidth;
+            }
+            doc.text(text, (baseX + addedX), (baseY + addedY), textAlign);
+            addedX += doc.getTextWidth(text)
+            currentAvailableWidth = textItem.width - addedX;
+        } else {
+            if (hasSpaces(text)) {
+                // fit first piece, goto newline
+                const set = doc.splitTextToSize(chunk.text, currentAvailableWidth);
+                // add manual space
+                if (addedX > 0) {
+                    addedX += spaceWidth;
+                }
+                doc.text(set[0], (baseX + addedX), (baseY + addedY), textAlign);
+                addedX = 0;
+                addedY += lh;
+                // fill the rest
+                set.shift();
+                const remainingText = set.join(' ');
+                const remainingSet = doc.splitTextToSize(remainingText, textItem.width);
+                for (const item of remainingSet) {
+                    const index = set.indexOf(item);
+                    doc.text(item, (baseX + addedX), (baseY + addedY), textAlign);
+                    if (index < set.length - 1) {
+                        addedY += lh;
+                    }
+                }
+                // leave x for next job
+                const lastItem = remainingSet[remainingSet.length - 1];
+                addedX = doc.getTextWidth(lastItem)
+                currentAvailableWidth = textItem.width - addedX;
+            } else {
+                addedX = 0;
+                addedY += lh;
+                doc.text(text, (baseX + addedX), (baseY + addedY), textAlign);
+                addedX += doc.getTextWidth(text)
+                currentAvailableWidth = textItem.width - addedX;
+            }
+
+        }
+    }
+}
+
+const hasSpaces = (text) => {
+    return text.indexOf(' ') > -1;
+}
+
+const doesTextFit = (doc, text, availableWidth) => {
+    const textWidth = doc.getTextWidth(text);
+    return textWidth <= availableWidth;
+}
+
+const drawTextItemOverLines = (doc, textItem, x, textAlign) => {
+    let index = 0;
+    const set = doc.splitTextToSize(textItem.text, textItem.width);
+
+    for (const item of set) {
+        const lh = textItem.lineHeight ? textItem.lineHeight : lineHeight;
+        doc.text(item, x, (textItem.position[1] + index * lh), textAlign);
+        index++;
     }
 }
 
