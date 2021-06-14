@@ -1,9 +1,11 @@
 import axios from 'axios';
 import store from '@/store'
+import { cmsDecode } from '@/tools/cms'
 
 const collect = async (token, filter = '') => {
     return new Promise((resolve, reject) => {
         getTokens(token).then((tokenSets) => {
+            console.log(tokenSets);
             getEvents(tokenSets, filter).then(events => {
                 resolve(events);
             }, (error) => {
@@ -27,7 +29,7 @@ const getTokens = async (token) => {
             headers
         }).then((response) => {
             if (response.data && response.data.payload) {
-                const payload = JSON.parse(atob(response.data.payload));
+                const payload = cmsDecode(response.data.payload)
                 resolve(payload.tokens);
             }
         }).catch((error) => {
@@ -67,7 +69,7 @@ const unomi = async (eventProvider, tokenSet) => {
             headers: headers,
             url: url
         }).then((response) => {
-            const payload = JSON.parse(atob(response.data.payload));
+            const payload = cmsDecode(response.data.payload)
             resolve(payload)
         }).catch((error) => {
             console.log(error);
@@ -89,6 +91,7 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
             url: url,
             data: { filter: filter }
         }).then((response) => {
+            console.log(response.data);
             resolve(response.data)
         }).catch((error) => {
             console.log(error);

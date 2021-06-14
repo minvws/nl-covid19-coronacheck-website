@@ -6,6 +6,7 @@ import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
 import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
+import { cmsDecode } from '@/tools/cms'
 
 export default {
     name: 'ProvideCode',
@@ -146,7 +147,7 @@ export default {
                     data: data
                 }).then((response) => {
                     if (response.data && response.data.payload) {
-                        const payload = JSON.parse(atob(response.data.payload));
+                        const payload = cmsDecode(response.data.payload);
                         if (payload.status) {
                             this.$store.commit('setTestResultStatus', payload.status);
                         } else {
@@ -232,7 +233,7 @@ export default {
         // },
         handleError(response) {
             if (response.data && response.data.payload) {
-                const payload = JSON.parse(atob(response.data.payload));
+                const payload = cmsDecode(response.data.payload);
                 if (payload.status) {
                     return payload.status;
                 } else {

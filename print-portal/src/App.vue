@@ -2,6 +2,7 @@
 import Identity from '@/components/elements/Identity';
 import languages from '@/data/languages';
 import Modal from './components/elements/Modal';
+import { cmsDecode } from '@/tools/cms'
 
 export default {
     components: { Modal, Identity },
@@ -23,7 +24,7 @@ export default {
                 url: '/holder/config'
             }).then((response) => {
                 if (response.data && response.data.payload) {
-                    const holderConfig = JSON.parse(atob(response.data.payload));
+                    const holderConfig = cmsDecode(response.data.payload);
                     this.$store.commit('setHolderConfig', holderConfig);
                 }
             }).catch((error) => {
@@ -40,7 +41,7 @@ export default {
                 url: '/holder/config_providers'
             }).then((response) => {
                 if (response.data && response.data.payload) {
-                    const config = JSON.parse(atob(response.data.payload));
+                    const config = cmsDecode(response.data.payload);
                     this.$store.commit('testProviders/init', config.corona_test_providers);
                     this.$store.commit('eventProviders/init', config.event_providers);
                 } else {

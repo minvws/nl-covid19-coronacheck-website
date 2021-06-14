@@ -4,6 +4,7 @@ import HolderV2 from '@/classes/holder/HolderV2';
 import { negativeTestConversionV2ToV3 } from '@/tools/version-conversion'
 import ProofEvent from '@/classes/events/ProofEvent';
 import HolderV3 from '@/classes/holder/HolderV3';
+import { cmsDecode } from '@/tools/cms'
 
 const state = {
     all: []
@@ -11,15 +12,10 @@ const state = {
 
 const getters = {
     ..._base.getters,
-    getDecrypted(state) {
-        return state.all.map(signedEvent => {
-            return JSON.parse(atob(signedEvent.payload));
-        })
-    },
     getProofEvents: (state) => (type) => {
         const proofEvents = [];
         for (const signedEvent of state.all) {
-            const result = JSON.parse(atob(signedEvent.payload));
+            const result = cmsDecode(signedEvent.payload);
             if (result.protocolVersion === '2.0') {
                 const holder = new HolderV2(result.result.holder);
                 const convertedProofEvent = negativeTestConversionV2ToV3(result.result);
