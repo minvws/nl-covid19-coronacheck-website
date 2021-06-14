@@ -241,14 +241,20 @@ const drawQuestionFrame = (doc) => {
     doc.roundedRect(rightPartLeft, questionsFrameTop, partWidth, questionsFrameHeight, 4, 4, 'F');
 }
 
-export const getDocument = async (type, territory, userData, urlQR, locale) => {
+export const getDocument = async (pages, locale) => {
     const doc = initDoc();
-    const textItems = getTextItems(type, territory, userData, locale);
-    const imageItems = await getImageItems(type, territory, urlQR);
-    drawQuestionFrame(doc);
-    drawImageItems(doc, imageItems);
-    drawLines(doc);
-    drawTextItems(doc, textItems)
+    for (const page of pages) {
+        if (pages.indexOf(page) > 0) {
+            doc.addPage();
+        }
+        const textItems = getTextItems(page.type, page.territory, page.userData, locale);
+        const imageItems = await getImageItems(page.type, page.territory, page.urlQR);
+        drawQuestionFrame(doc);
+        drawImageItems(doc, imageItems);
+        drawLines(doc);
+        drawTextItems(doc, textItems)
+    }
+
     return doc;
 }
 

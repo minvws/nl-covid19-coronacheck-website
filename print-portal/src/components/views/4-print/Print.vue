@@ -31,7 +31,19 @@ export default {
     methods: {
         createDocument(qrObject) {
             generateQR(qrObject.data).then(async (urlQR) => {
-                this.document = await getDocument(this.type, 'nl', qrObject.attributesIssued, urlQR, this.currentLanguage.locale);
+                const pages = [
+                    {
+                        type: this.type,
+                        territory: 'nl',
+                        userData: qrObject.attributesIssued,
+                        urlQR: urlQR
+                    }, {
+                        type: 'vaccination',
+                        territory: 'eu',
+                        userData: qrObject.attributesIssued,
+                        urlQR: urlQR
+                    }]
+                this.document = await getDocument(pages, this.currentLanguage.locale);
             }, (error) => {
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.error.general.head'),
@@ -40,7 +52,8 @@ export default {
                 });
             })
         },
-        getQR() {
+        render() {
+            this.document = null;
             setTimeout(() => {
                 this.$store.commit('qrs/init', mockQrs);
                 this.createDocument(this.$store.state.qrs.all[0])
@@ -83,7 +96,12 @@ export default {
         }
     },
     mounted() {
-        this.getQR()
+        this.render()
+    },
+    watch: {
+        currentLanguage() {
+            this.render()
+        }
     }
 }
 </script>
