@@ -60,7 +60,6 @@ export default {
                 if (negativeTestSignedEvents.length > 0) {
                     this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
                 } else {
-                    console.log('!');
                     this.$router.push({ name: 'TestResultNone' });
                 }
                 // todo

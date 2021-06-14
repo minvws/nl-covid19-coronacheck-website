@@ -68,7 +68,7 @@ const routes = [
             pageHeader: 'error'
         }
     }, {
-        path: '/geen-negatieve-testuitslage',
+        path: '/geen-negatieve-testuitslag',
         name: 'TestResultNone',
         component: TestResultNone,
         meta: {

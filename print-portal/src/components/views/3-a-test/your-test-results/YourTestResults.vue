@@ -71,6 +71,11 @@ export default {
                 closeButton: true
             })
         }
+    },
+    mounted() {
+        if (!this.latestNegativeTestSignedEvent) {
+            this.$router.push({ name: 'TestResultNone' });
+        }
     }
 }
 </script>
