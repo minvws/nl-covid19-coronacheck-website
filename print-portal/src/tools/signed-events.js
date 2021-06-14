@@ -5,7 +5,6 @@ import { cmsDecode } from '@/tools/cms'
 const collect = async (token, filter = '') => {
     return new Promise((resolve, reject) => {
         getTokens(token).then((tokenSets) => {
-            console.log(tokenSets);
             getEvents(tokenSets, filter).then(events => {
                 resolve(events);
             }, (error) => {
@@ -41,16 +40,18 @@ const getTokens = async (token) => {
 const getEvents = async (tokenSets, filter) => {
     const allEvents = []
     for (const tokenSet of tokenSets) {
-        // only do GGD for now
-        if (tokenSet.provider_identifier === 'ZZZ') {
-            const eventProvider = store.getters['eventProviders/getTestProviderByIdentifier'](tokenSet.provider_identifier);
-            if (eventProvider) {
-                const result = await unomi(eventProvider, tokenSet)
-                if (result && result.informationAvailable) {
-                    await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
-                        allEvents.push(signedEvent)
-                    })
-                }
+        const eventProvider = store.getters['eventProviders/getTestProviderByIdentifier'](tokenSet.provider_identifier);
+        let result;
+        if (eventProvider) {
+            try {
+                result = await unomi(eventProvider, tokenSet);
+            } catch (error) {
+                console.error(error);
+            }
+            if (result && result.informationAvailable) {
+                await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
+                    allEvents.push(signedEvent)
+                })
             }
         }
     }
@@ -69,10 +70,13 @@ const unomi = async (eventProvider, tokenSet) => {
             headers: headers,
             url: url
         }).then((response) => {
-            const payload = cmsDecode(response.data.payload)
-            resolve(payload)
+            if (response.data && response.data.payload) {
+                const payload = cmsDecode(response.data.payload)
+                resolve(payload)
+            } else {
+                resolve();
+            }
         }).catch((error) => {
-            console.log(error);
             reject(error);
         })
     })
@@ -91,10 +95,8 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
             url: url,
             data: { filter: filter }
         }).then((response) => {
-            console.log(response.data);
             resolve(response.data)
         }).catch((error) => {
-            console.log(error);
             reject(error);
         })
     })
