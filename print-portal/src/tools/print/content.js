@@ -40,22 +40,13 @@ export const getTextItems = (type, territory, userData, locale) => {
             textAlign: 'center',
             lineHeight: 10
         }, {
-            // text: i18n.t('pdf.' + territory + '.intro'),
-            text: [
-                {
-                    text: 'Reis je buiten Nederland? Gebruik dan dit EU digitaal coronacertificaat.\n\nBekijk voor vertrek welke test- of vaccinatie- bewijzen geldig zijn in het land dat je bezoekt:',
-                    fontWeight: 400
-                }, {
-                    text: 'www.reopen.europa.eu/en',
-                    fontWeight: 700,
-                    color: [71, 142, 255]
-                }
-            ],
+            text: i18n.t('pdf.' + territory + '.intro'),
             fontWeight: 400,
             fontSize: 11,
             position: [leftPartLeft, 51],
             width: partWidth,
-            textAlign: 'center'
+            textAlign: 'center',
+            hasHTML: true
         }, {
             text: i18n.t('pdf.instructions'),
             fontWeight: 700,
@@ -75,28 +66,13 @@ export const getTextItems = (type, territory, userData, locale) => {
             position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + lineHeight)],
             width: questionsFrameInnerWidth
         }, {
-            text: [
-                {
-                    text: 'Bekijk de meestgestelde vragen op CoronaCheck.nl of stuur een e-mail naar',
-                    fontWeight: 400
-                }, {
-                    text: 'helpdesk@coronacheck.nl',
-                    fontWeight: 700
-                }, {
-                    text: 'of bel naar',
-                    fontWeight: 400
-                }, {
-                    text: '0800-1421',
-                    fontWeight: 700
-                }, {
-                    text: '(gratis)',
-                    fontWeight: 400
-                }],
+            text: i18n.t('pdf.questionsContent'),
             fontWeight: 400,
             fontSize: 11,
             position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + (3 * lineHeight))],
             width: questionsFrameInnerWidth,
-            lineHeight: lineHeight
+            lineHeight: lineHeight,
+            hasHTML: true
         }, {
             text: i18n.t('pdf.' + territory + '.qrTitle'),
             fontWeight: 700,
@@ -110,6 +86,13 @@ export const getTextItems = (type, territory, userData, locale) => {
             fontSize: 18,
             position: [rightPartLeft, bottomPartTop],
             width: partWidth
+        }, {
+            text: '<b>Lorem ipsum</b> Dolor sit amet. Klik <a>https://www.nu.nl/</a> om door te gaan.',
+            fontWeight: 400,
+            fontSize: 11,
+            position: [rightPartLeft, bottomPartTop + 10],
+            width: partWidth,
+            hasHTML: true
         }
     ]
 }

@@ -182,7 +182,7 @@ const nl = {
                 'propertiesLabel': 'Vaccinatiegegevens'
             },
             'title': 'Internationaal bewijs',
-            'intro': 'Reis je buiten Nederland? Gebruik dan dit EU Digitaal Corona Certificaat.\n\nBekijk voor vertrek welke test- of vaccinatie- bewijzen geldig zijn in het land dat je bezoekt: www.reopen.europa.eu/en',
+            'intro': 'Reis je buiten Nederland? Gebruik dan dit EU Digitaal Corona Certificaat.\n\nBekijk voor vertrek welke test- of vaccinatie- bewijzen geldig zijn in het land dat je bezoekt: <a>www.reopen.europa.eu/en</a>',
             'qrTitle': 'QR-code internationaal'
         },
         'nl': {
@@ -200,7 +200,7 @@ const nl = {
         },
         'instructions': 'Instructies',
         'questions': 'VRAGEN?',
-        'questionsContent': 'Bekijk de meestgestelde vragen op CoronaCheck.nl of stuur een e-mail naar helpdesk@coronacheck.nl of bel naar 0800-1421 (gratis)'
+        'questionsContent': 'Bekijk de meestgestelde vragen op CoronaCheck.nl of stuur een e-mail naar <b>helpdesk@coronacheck.nl</b> of bel naar <b>0800-1421</b> (gratis)'
     },
     'image': {
         'holder': {

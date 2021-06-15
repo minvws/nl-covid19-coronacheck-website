@@ -2,6 +2,7 @@ import { lineHeight } from './content';
 
 export const regular = ['montserrat', 'normal', 400];
 export const bold = ['montserrat', 'normal', 700];
+const parser = new DOMParser();
 
 export const drawTextItemOverLines = (doc, textItem, x, textAlign) => {
     let index = 0;
@@ -14,7 +15,7 @@ export const drawTextItemOverLines = (doc, textItem, x, textAlign) => {
     }
 }
 
-export const drawTextItemWithMixedChunks = (doc, textItem, baseX, baseY) => {
+export const drawTextItemWithMixedChunks = (doc, chunks, textItem, baseX, baseY) => {
     let addedX, addedY, currentAvailableWidth;
     const lh = textItem.lineHeight ? textItem.lineHeight : lineHeight;
     const spaceWidth = doc.getTextWidth(' ');
@@ -22,7 +23,7 @@ export const drawTextItemWithMixedChunks = (doc, textItem, baseX, baseY) => {
     addedX = 0;
     addedY = 0;
     currentAvailableWidth = textItem.width;
-    for (const chunk of textItem.text) {
+    for (const chunk of chunks) {
         if (chunk.fontWeight && chunk.fontWeight === 700) {
             doc.setFont(...bold);
         } else {
@@ -86,4 +87,33 @@ const hasSpaces = (text) => {
 const doesTextFit = (doc, text, availableWidth) => {
     const textWidth = doc.getTextWidth(text);
     return textWidth <= availableWidth;
+}
+
+export const htmlToChunks = (text) => {
+    if (text instanceof Array) {
+        return text;
+    } else {
+        // parse the html string
+        const chunks = [];
+        const html = parser.parseFromString(text, 'text/html');
+        // find the children on the body node, these are the chunks
+        const nodes = html.querySelector('body').childNodes
+        for (const node of nodes) {
+            const chunk = {};
+            if (node.nodeType === 3) {
+                chunk.text = node.nodeValue.trim();
+            } else {
+                // we assume no deeper nesting, the text is direct on the first (and only) childNode
+                if (node.tagName.toLowerCase() === 'b') {
+                    chunk.fontWeight = 700;
+                }
+                if (node.tagName.toLowerCase() === 'a') {
+                    chunk.color = [71, 142, 255];
+                }
+                chunk.text = node.childNodes[0].nodeValue.trim();
+            }
+            chunks.push(chunk);
+        }
+        return chunks;
+    }
 }

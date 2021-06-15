@@ -1,8 +1,10 @@
+/*eslint-disable */
+
 import { jsPDF as JsPDF } from 'jspdf';
 import dateTool from '@/tools/date';
 import montserrat from '@/assets/fontAsBase64';
 import { getTextItems, getImageItems, getFrames, getLines } from './content';
-import { drawTextItemOverLines, drawTextItemWithMixedChunks, regular, bold } from './text-helpers'
+import { drawTextItemOverLines, drawTextItemWithMixedChunks, htmlToChunks, regular, bold } from './text-helpers'
 
 const getBirthDayString = (userData) => {
     let day, month;
@@ -96,9 +98,11 @@ const drawTextItems = (doc, textItems) => {
         } else {
             doc.setFont(...regular);
         }
+
         if (textItem.width) {
-            if (textItem.text instanceof Array) {
-                drawTextItemWithMixedChunks(doc, textItem, x, textItem.position[1])
+            if (textItem.hasHTML) {
+                const text = htmlToChunks(textItem.text);
+                drawTextItemWithMixedChunks(doc, text, textItem, x, textItem.position[1])
             } else {
                 drawTextItemOverLines(doc, textItem, x, textAlign)
             }
@@ -132,3 +136,4 @@ export const getDocument = async (pages, locale) => {
     }
     return doc;
 }
+/* eslint-enable */
