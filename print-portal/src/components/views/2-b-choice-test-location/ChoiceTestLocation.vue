@@ -14,7 +14,13 @@ export default {
             this.$router.push({ name: 'ChoiceProof' })
         },
         loginWithDigid() {
-            this.authNegativeTests.startAuthentication();
+            this.authNegativeTests.startAuthentication().then(() => {}).catch(() => {
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.info.digidCanceled.head'),
+                    messageBody: this.$t('message.info.digidCanceled.body'),
+                    closeButton: true
+                })
+            })
         },
         gotoRetrieveTest() {
             this.$router.push({ name: 'ProvideCode' });

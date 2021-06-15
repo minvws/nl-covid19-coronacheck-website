@@ -158,6 +158,10 @@ const nl = {
                 'body': 'Je kan later opnieuw een QR-code maken',
                 'yes': 'Ja, stop',
                 'no': 'Nee, ga door'
+            },
+            'digidCanceled': {
+                'head': 'TODO digidCanceled head',
+                'body': 'TODO digidCanceled body'
             }
         },
         'error': {

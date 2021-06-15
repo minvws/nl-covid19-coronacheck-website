@@ -154,7 +154,12 @@ const en = {
                 'body': 'You must use your code to get your test result again later.',
                 'yes': 'Yes, stop',
                 'no': 'No, continue'
+            },
+            'digidCanceled': {
+                'head': 'TODO digidCanceled head',
+                'body': 'TODO digidCanceled body'
             }
+
         },
         'error': {
             'expiredTestCode': {
