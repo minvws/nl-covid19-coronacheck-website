@@ -35,12 +35,12 @@ export default {
                     {
                         type: this.type,
                         territory: 'nl',
-                        userData: qrObject.attributesIssued,
+                        qr: qrObject,
                         urlQR: urlQR
                     }, {
                         type: 'vaccination',
                         territory: 'eu',
-                        userData: qrObject.attributesIssued,
+                        qr: qrObject,
                         urlQR: urlQR
                     }]
                 this.document = await getDocument(pages, this.currentLanguage.locale);

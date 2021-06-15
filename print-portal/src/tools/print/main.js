@@ -126,7 +126,7 @@ export const getDocument = async (pages, locale) => {
             doc.addPage();
         }
         const frames = getFrames();
-        const textItems = getTextItems(page.type, page.territory, page.userData, locale);
+        const textItems = getTextItems(page.type, page.territory, page.qr, locale);
         const lines = getLines();
         const imageItems = await getImageItems(page.type, page.territory, page.urlQR);
         drawFrames(doc, frames);

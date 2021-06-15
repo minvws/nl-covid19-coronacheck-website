@@ -29,7 +29,7 @@ const createImage = async (src) => {
     })
 };
 
-export const getTextItems = (type, territory, userData, locale) => {
+export const getTextItems = (type, territory, qr, locale) => {
     return [
         {
             text: i18n.t('pdf.' + territory + '.title'),
@@ -87,7 +87,7 @@ export const getTextItems = (type, territory, userData, locale) => {
             position: [rightPartLeft, bottomPartTop],
             width: partWidth
         }, {
-            text: 'Lorem ipsum<br>Dolor sit amet <b>Dit is bold</b><br><br>Hier weer verder <b>en weer bold!</b>',
+            text: getUserDetailsForTest(qr),
             fontWeight: 400,
             fontSize: 11,
             position: [rightPartLeft, bottomPartTop + 10],
@@ -97,9 +97,16 @@ export const getTextItems = (type, territory, userData, locale) => {
     ]
 }
 
-// const getUserDetailsForTest = (userData) => {
-//     return ``
-// }
+const getUserDetailsForTest = (qr) => {
+    console.log(qr);
+    let string = '';
+    string += '<b>Initials:</b>' + qr.initials + '<br>';
+    string += '<b>Geboortedag:</b>' + qr.birthDateStringShort + '<br>';
+    string += '<b>Geldig vanaf:</b>' + qr.validFrom + '<br>';
+    string += '<b>Geldig tot:</b>' + qr.validUntil + '<br><br>';
+    string += 'Dit hoef je niet te laten zien aan de scanner';
+    return string;
+}
 
 // const getUserDetailsForVaccination = (userData) => {
 //     console.log(userData);

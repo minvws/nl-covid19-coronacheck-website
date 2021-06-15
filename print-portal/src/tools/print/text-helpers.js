@@ -27,6 +27,7 @@ export const drawTextItemWithMixedChunks = (doc, chunks, textItem, baseX, baseY)
     const lineBreak = () => {
         addedX = 0;
         addedY += lh;
+        currentAvailableWidth = textItem.width;
     }
 
     for (const chunk of chunks) {
