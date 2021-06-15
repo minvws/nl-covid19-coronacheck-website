@@ -18,7 +18,6 @@ export default {
                 })
             })
         },
-        },
         back() {
             this.$router.push({ name: 'ChoiceProof' })
         },
