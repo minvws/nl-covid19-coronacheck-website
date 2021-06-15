@@ -23,59 +23,67 @@ export const drawTextItemWithMixedChunks = (doc, chunks, textItem, baseX, baseY)
     addedX = 0;
     addedY = 0;
     currentAvailableWidth = textItem.width;
+
+    const lineBreak = () => {
+        addedX = 0;
+        addedY += lh;
+    }
+
     for (const chunk of chunks) {
-        // font weight 700 for bold
-        if (chunk.fontWeight && chunk.fontWeight === 700) {
-            doc.setFont(...bold);
+        if (chunk.break) {
+            lineBreak();
         } else {
-            doc.setFont(...regular);
-        }
-        if (chunk.color) {
-            doc.setTextColor(...chunk.color);
-        } else {
-            doc.setTextColor(0, 0, 0)
-        }
-        const text = chunk.text;
-        if (doesTextFit(doc, text, currentAvailableWidth)) {
-            // add manual space
-            if (addedX > 0) {
-                addedX += spaceWidth;
+            // font weight 700 for bold
+            if (chunk.fontWeight && chunk.fontWeight === 700) {
+                doc.setFont(...bold);
+            } else {
+                doc.setFont(...regular);
             }
-            doc.text(text, (baseX + addedX), (baseY + addedY), textAlign);
-            addedX += doc.getTextWidth(text)
-            currentAvailableWidth = textItem.width - addedX;
-        } else {
-            if (hasSpaces(text)) {
-                // fit first piece, goto newline
-                const set = doc.splitTextToSize(chunk.text, currentAvailableWidth);
+            if (chunk.color) {
+                doc.setTextColor(...chunk.color);
+            } else {
+                doc.setTextColor(0, 0, 0)
+            }
+            const text = chunk.text;
+            if (doesTextFit(doc, text, currentAvailableWidth)) {
                 // add manual space
                 if (addedX > 0) {
                     addedX += spaceWidth;
                 }
-                doc.text(set[0], (baseX + addedX), (baseY + addedY), textAlign);
-                addedX = 0;
-                addedY += lh;
-                // fill the rest
-                set.shift();
-                const remainingText = set.join(' ');
-                const remainingSet = doc.splitTextToSize(remainingText, textItem.width);
-                for (const item of remainingSet) {
-                    const index = set.indexOf(item);
-                    doc.text(item, (baseX + addedX), (baseY + addedY), textAlign);
-                    if (index < set.length - 1) {
-                        addedY += lh;
-                    }
-                }
-                // leave x for next job
-                const lastItem = remainingSet[remainingSet.length - 1];
-                addedX = doc.getTextWidth(lastItem)
-                currentAvailableWidth = textItem.width - addedX;
-            } else {
-                addedX = 0;
-                addedY += lh;
                 doc.text(text, (baseX + addedX), (baseY + addedY), textAlign);
                 addedX += doc.getTextWidth(text)
                 currentAvailableWidth = textItem.width - addedX;
+            } else {
+                if (hasSpaces(text)) {
+                    // fit first piece, goto newline
+                    const set = doc.splitTextToSize(chunk.text, currentAvailableWidth);
+                    // add manual space
+                    if (addedX > 0) {
+                        addedX += spaceWidth;
+                    }
+                    doc.text(set[0], (baseX + addedX), (baseY + addedY), textAlign);
+                    lineBreak();
+                    // fill the rest
+                    set.shift();
+                    const remainingText = set.join(' ');
+                    const remainingSet = doc.splitTextToSize(remainingText, textItem.width);
+                    for (const item of remainingSet) {
+                        const index = set.indexOf(item);
+                        doc.text(item, (baseX + addedX), (baseY + addedY), textAlign);
+                        if (index < set.length - 1) {
+                            addedY += lh;
+                        }
+                    }
+                    // leave x for next job
+                    const lastItem = remainingSet[remainingSet.length - 1];
+                    addedX = doc.getTextWidth(lastItem)
+                    currentAvailableWidth = textItem.width - addedX;
+                } else {
+                    lineBreak();
+                    doc.text(text, (baseX + addedX), (baseY + addedY), textAlign);
+                    addedX += doc.getTextWidth(text)
+                    currentAvailableWidth = textItem.width - addedX;
+                }
             }
         }
     }
@@ -102,13 +110,19 @@ export const htmlToChunks = (text) => {
             chunk.text = node.nodeValue.trim();
         } else {
             // we assume no deeper nesting, the text is direct on the first (and only) childNode
-            if (node.tagName.toLowerCase() === 'b') {
+            switch (node.tagName.toLowerCase()) {
+            case 'b':
                 chunk.fontWeight = 700;
-            }
-            if (node.tagName.toLowerCase() === 'a') {
+                chunk.text = node.childNodes[0].nodeValue.trim();
+                break;
+            case 'a':
                 chunk.color = [71, 142, 255];
+                chunk.text = node.childNodes[0].nodeValue.trim();
+                break;
+            case 'br':
+                chunk.break = true
+                break;
             }
-            chunk.text = node.childNodes[0].nodeValue.trim();
         }
         chunks.push(chunk);
     }

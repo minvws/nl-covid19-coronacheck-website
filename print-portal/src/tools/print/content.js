@@ -87,7 +87,7 @@ export const getTextItems = (type, territory, userData, locale) => {
             position: [rightPartLeft, bottomPartTop],
             width: partWidth
         }, {
-            text: '<b>Lorem ipsum</b> Dolor sit amet. Klik <a>https://www.nu.nl/</a> om door te gaan.',
+            text: 'Lorem ipsum<br>Dolor sit amet <b>Dit is bold</b><br><br>Hier weer verder <b>en weer bold!</b>',
             fontWeight: 400,
             fontSize: 11,
             position: [rightPartLeft, bottomPartTop + 10],
@@ -96,6 +96,15 @@ export const getTextItems = (type, territory, userData, locale) => {
         }
     ]
 }
+
+// const getUserDetailsForTest = (userData) => {
+//     return ``
+// }
+
+// const getUserDetailsForVaccination = (userData) => {
+//     console.log(userData);
+//     return ''
+// }
 
 export const getImageItems = async (type, territory, urlQR) => {
     const flag = await createImage('assets/img/pdf/flag-' + territory + '.png');
