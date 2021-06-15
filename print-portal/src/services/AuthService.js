@@ -23,7 +23,7 @@ const getNonce = (l) => {
 
 const getClientSettings = (redirect_uri) => {
     return {
-        authority: 'https://tvs-connect.acc.coronacheck.nl',
+        authority: 'https://tvs.acc.coronacheck.nl',
         client_id: 'test_client',
         scope: 'openid',
         response_type: 'code',
