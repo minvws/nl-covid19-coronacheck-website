@@ -24,6 +24,7 @@ export const drawTextItemWithMixedChunks = (doc, chunks, textItem, baseX, baseY)
     addedY = 0;
     currentAvailableWidth = textItem.width;
     for (const chunk of chunks) {
+        // font weight 700 for bold
         if (chunk.fontWeight && chunk.fontWeight === 700) {
             doc.setFont(...bold);
         } else {
