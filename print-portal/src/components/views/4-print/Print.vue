@@ -2,7 +2,7 @@
 import Page from '@/components/elements/Page';
 import { detect } from 'detect-browser';
 import CcButton from '@/components/elements/CcButton';
-import { getDocument } from '@/tools/print';
+import { getDocument } from '@/tools/print/main';
 import { generateQR } from '@/tools/qr';
 import mockQrs from '@/data/mock/qr';
 
