@@ -87,7 +87,7 @@ export const getTextItems = (type, territory, qr, locale) => {
             position: [rightPartLeft, bottomPartTop],
             width: partWidth
         }, {
-            text: getUserDetailsForTest(qr),
+            text: getUserDetails(qr, territory, type),
             fontWeight: 400,
             fontSize: 11,
             position: [rightPartLeft, bottomPartTop + 10],
@@ -97,20 +97,23 @@ export const getTextItems = (type, territory, qr, locale) => {
     ]
 }
 
-const getUserDetailsForTest = (qr) => {
+const getUserDetails = (qr, territory, type) => {
     let string = '';
-    string += '<b>Initials:</b>' + qr.initials + '<br>';
-    string += '<b>Geboortedag:</b>' + qr.birthDateStringShort + '<br>';
-    string += '<b>Geldig vanaf:</b>' + qr.validFrom + '<br>';
-    string += '<b>Geldig tot:</b>' + qr.validUntil + '<br><br>';
-    string += 'Dit hoef je niet te laten zien aan de scanner';
-    return string;
+    if (territory === 'nl') {
+        string += '<b>' + i18n.t('pdf.nl.userData.initials') + ':</b>' + qr.initials + '<br>';
+        string += '<b>' + i18n.t('pdf.nl.userData.dateOfBirth') + ':</b>' + qr.birthDateStringShort + '<br>';
+        string += '<b>' + i18n.t('pdf.nl.userData.validFrom') + ':</b>' + qr.validFrom + '<br>';
+        string += '<b>' + i18n.t('pdf.nl.userData.validUntil') + ':</b>' + qr.validUntil + '<br><br>';
+        string += i18n.t('pdf.nl.userData.privacyNote');
+        return string;
+    } else {
+        if (type === 'vaccination') {
+            return 'UserData EU vaccination (todo)';
+        } else {
+            return 'UserData EU negative test (todo)';
+        }
+    }
 }
-
-// const getUserDetailsForVaccination = (userData) => {
-//     console.log(userData);
-//     return ''
-// }
 
 export const getImageItems = async (type, territory, urlQR) => {
     const flag = await createImage('assets/img/pdf/flag-' + territory + '.png');

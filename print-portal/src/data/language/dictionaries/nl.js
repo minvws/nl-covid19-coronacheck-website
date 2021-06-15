@@ -200,7 +200,14 @@ const nl = {
             },
             'title': 'Bewijs voor in Nederland',
             'intro': 'Bezoek je locaties of activiteiten binnen Nederland? Gebruik dan dit coronatoegangsbewijs.',
-            'qrTitle': 'Bewijs voor in Nederland'
+            'qrTitle': 'Bewijs voor in Nederland',
+            'userData': {
+                'initials': 'Initialen',
+                'dateOfBirth': 'Geboortedatum',
+                'validFrom': 'Geldig vanaf',
+                'validUntil': 'Geldig tot',
+                'privacyNote': 'Dit hoef je niet te laten zien aan de scanner'
+            }
         },
         'instructions': 'Instructies',
         'questions': 'VRAGEN?',
