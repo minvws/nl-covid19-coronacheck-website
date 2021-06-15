@@ -98,7 +98,6 @@ export const getTextItems = (type, territory, qr, locale) => {
 }
 
 const getUserDetailsForTest = (qr) => {
-    console.log(qr);
     let string = '';
     string += '<b>Initials:</b>' + qr.initials + '<br>';
     string += '<b>Geboortedag:</b>' + qr.birthDateStringShort + '<br>';
