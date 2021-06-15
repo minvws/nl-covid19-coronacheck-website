@@ -121,7 +121,7 @@ const router = new VueRouter({
 })
 
 // todo remove Vaccination
-const pagesWithoutConsentNeeded = ['Home', 'Vaccination']
+const pagesWithoutConsentNeeded = ['Home', 'YourVaccinationsRedirect', 'YourTestResultsRedirect']
 
 router.beforeEach((to, from, next) => {
     // check for user consent, otherwise redirect to home (disabled for development)
