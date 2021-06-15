@@ -90,30 +90,26 @@ const doesTextFit = (doc, text, availableWidth) => {
 }
 
 export const htmlToChunks = (text) => {
-    if (text instanceof Array) {
-        return text;
-    } else {
-        // parse the html string
-        const chunks = [];
-        const html = parser.parseFromString(text, 'text/html');
-        // find the children on the body node, these are the chunks
-        const nodes = html.querySelector('body').childNodes
-        for (const node of nodes) {
-            const chunk = {};
-            if (node.nodeType === 3) {
-                chunk.text = node.nodeValue.trim();
-            } else {
-                // we assume no deeper nesting, the text is direct on the first (and only) childNode
-                if (node.tagName.toLowerCase() === 'b') {
-                    chunk.fontWeight = 700;
-                }
-                if (node.tagName.toLowerCase() === 'a') {
-                    chunk.color = [71, 142, 255];
-                }
-                chunk.text = node.childNodes[0].nodeValue.trim();
+    const chunks = [];
+    // parse the html string
+    const html = parser.parseFromString(text, 'text/html');
+    // find the children on the body node, these are the chunks
+    const nodes = html.querySelector('body').childNodes
+    for (const node of nodes) {
+        const chunk = {};
+        if (node.nodeType === 3) {
+            chunk.text = node.nodeValue.trim();
+        } else {
+            // we assume no deeper nesting, the text is direct on the first (and only) childNode
+            if (node.tagName.toLowerCase() === 'b') {
+                chunk.fontWeight = 700;
             }
-            chunks.push(chunk);
+            if (node.tagName.toLowerCase() === 'a') {
+                chunk.color = [71, 142, 255];
+            }
+            chunk.text = node.childNodes[0].nodeValue.trim();
         }
-        return chunks;
+        chunks.push(chunk);
     }
+    return chunks;
 }
