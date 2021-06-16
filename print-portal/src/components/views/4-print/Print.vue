@@ -33,13 +33,23 @@ export default {
             generateQR(qrObject.data).then(async (urlQR) => {
                 const pages = [
                     {
-                        type: this.type,
-                        territory: 'nl',
+                        type: 'vaccination',
+                        territory: 'eu',
                         qr: qrObject,
                         urlQR: urlQR
                     }, {
                         type: 'vaccination',
+                        territory: 'nl',
+                        qr: qrObject,
+                        urlQR: urlQR
+                    }, {
+                        type: 'negativeTest',
                         territory: 'eu',
+                        qr: qrObject,
+                        urlQR: urlQR
+                    }, {
+                        type: 'negativeTest',
+                        territory: 'nl',
                         qr: qrObject,
                         urlQR: urlQR
                     }]
@@ -54,10 +64,10 @@ export default {
         },
         render() {
             this.document = null;
-            setTimeout(() => {
+            this.$nextTick(() => {
                 this.$store.commit('qrs/init', mockQrs);
                 this.createDocument(this.$store.state.qrs.all[0])
-            })
+            });
         },
         goBack() {
             this.$emit('back');
