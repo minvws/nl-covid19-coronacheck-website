@@ -32,7 +32,6 @@ const dateTimeToString = (dateInput, dateFormat = 'dd-MM-yyyy HH:mm', locale) =>
 
 const addHoursToDate = (dateInput, hours, formatted) => {
     const newDate = addHours(new Date(dateInput), hours);
-    console.log(newDate, dateInput);
     return formatted ? dateTimeToString(newDate) : newDate;
 }
 

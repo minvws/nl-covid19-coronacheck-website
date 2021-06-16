@@ -42,7 +42,7 @@ export const getTextItems = (type, territory, qr, locale) => {
         }, {
             text: i18n.t('pdf.' + territory + '.intro'),
             fontWeight: 400,
-            fontSize: 11,
+            fontSize: 10,
             position: [leftPartLeft, 51],
             width: partWidth,
             textAlign: 'center',
@@ -56,19 +56,19 @@ export const getTextItems = (type, territory, qr, locale) => {
         }, {
             text: i18n.t('pdf.' + territory + '.' + type + '.instructions'),
             fontWeight: 400,
-            fontSize: 11,
+            fontSize: 10,
             position: [rightPartLeft, 27],
             width: partWidth
         }, {
             text: i18n.t('pdf.questions'),
             fontWeight: 700,
-            fontSize: 11,
+            fontSize: 10,
             position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + lineHeight)],
             width: questionsFrameInnerWidth
         }, {
             text: i18n.t('pdf.questionsContent'),
             fontWeight: 400,
-            fontSize: 11,
+            fontSize: 10,
             position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + (3 * lineHeight))],
             width: questionsFrameInnerWidth,
             lineHeight: lineHeight,
@@ -89,7 +89,7 @@ export const getTextItems = (type, territory, qr, locale) => {
         }, {
             text: getUserDetails(qr, territory, type),
             fontWeight: 400,
-            fontSize: 11,
+            fontSize: 10,
             position: [rightPartLeft, bottomPartTop + 10],
             width: partWidth,
             hasHTML: true
@@ -108,7 +108,8 @@ const getUserDetails = (qr, territory, type) => {
         return string;
     } else {
         if (type === 'vaccination') {
-            return 'UserData EU vaccination (todo)';
+            string += '<b>' + i18n.t('pdf.nl.userData.initials') + ':</b>' + qr.initials + '<br>';
+            return string
         } else {
             return 'UserData EU negative test (todo)';
         }
