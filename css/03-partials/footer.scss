@@ -116,10 +116,6 @@
     @media (min-width: 960px) {
         margin: 4.8em auto 0 auto;
     }
-
-    @media (min-width: 1200px) {
-        //padding-bottom: 0.4em;
-    }
 }
 
 .footer-links {
@@ -156,6 +152,13 @@
         color: #fff;
         margin: 0;
         font-size: 16px;
+        margin-top: 32px;
+        margin-bottom: 10px;
+        font-size: 20px;
+
+        @media (min-width: 740px) {
+            font-size: 16px;
+        }
     }
 
     p {
@@ -185,22 +188,18 @@
 
     @media (min-width: 960px) {
         &.___desktop-33 {
-            // order: 2;
             width: 33.3%;
         }
 
         &.___desktop-66 {
-            // order: 1;
             width: 66.6%;
         }
 
         &.___desktop-50 {
-            // order: 2;
             width: 50%;
         }
 
         &.___desktop-25 {
-            // order: 1;
             width: 25%;
         }
     }
