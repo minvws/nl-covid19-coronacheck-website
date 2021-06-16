@@ -464,7 +464,7 @@ faq-category-scannerapp-errors:
   ro: 
   tr:
 
-faq-category-general:
+faq-category-one:
   nl: Algemeen
   fy: 
   en: General
@@ -477,10 +477,10 @@ faq-category-general:
   ro: 
   tr:
   
-faq-category-howtouse:
-  nl: Toegang met testbewijs
+faq-category-two:
+  nl: Gebruik in Nederland
   fy: 
-  en: Getting access with a test certificate
+  en: Using CoronaCheck in the Netherlands
   ar: 
   bg: 
   de: 
@@ -490,10 +490,10 @@ faq-category-howtouse:
   ro: 
   tr:
 
-faq-category-usingtheapp:
-  nl: Testbewijs in de app
+faq-category-three:
+  nl: Internationaal Reizen
   fy: 
-  en: Test declaration in the app
+  en: International travel with CoronaCheck
   ar: 
   bg: 
   de: 
@@ -503,49 +503,49 @@ faq-category-usingtheapp:
   ro: 
   tr:
 
-faq-category-usingprintversion:
-  nl: Testbewijs op papier
-  fy: 
-  en: Printed test certificate
-  ar: 
-  bg: 
-  de: 
-  es: 
-  fr: 
-  pl: 
-  ro: 
-  tr:
-
-faq-category-gettingtested:
-  nl: Testen
-  fy: 
-  en: Getting tested
-  ar: 
-  bg: 
-  de: 
-  es: 
-  fr: 
-  pl: 
-  ro: 
-  tr:
-
-faq-category-misc:
-  nl: Overig
-  fy: 
-  en: Other questions
-  ar: 
-  bg: 
-  de: 
-  es: 
-  fr: 
-  pl: 
-  ro: 
-  tr:
-
-faq-category-troubleshooting:
+faq-category-four:
   nl: Problemen
   fy: 
-  en: Issues/errors
+  en: Problems
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-five:
+  nl: Bewijs op papier
+  fy: 
+  en: Paper certificate
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-six:
+  nl: Achtergrond
+  fy: 
+  en: Background
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-seven:
+  nl: Overig
+  fy: 
+  en: Other
   ar: 
   bg: 
   de: 
@@ -1486,9 +1486,9 @@ print-version-title:
   en: Prefer a test certificate on paper?
  
 print-version-content:
-  nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq#testbewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over testbewijzen op papier</span></a>.
+  nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over testbewijzen op papier</span></a>.
   fy: 
-  en: A test certificate on paper is convenient if you don't have a smartphone. <a href="/en/faq#printed-test-declaration">Read more<span class="screen-reader-text"> about a test certificate on paper</span></a>.
+  en: A test certificate on paper is convenient if you don't have a smartphone. <a href="/en/faq#paper-certificate">Read more<span class="screen-reader-text"> about a test certificate on paper</span></a>.
 
 print-version-url: 
   nl: /print
