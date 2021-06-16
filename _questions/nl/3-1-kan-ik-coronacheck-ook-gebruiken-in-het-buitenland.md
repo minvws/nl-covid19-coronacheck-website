@@ -9,4 +9,4 @@ Ja, dat kan vanaf juli. Als je een QR-code maakt, krijg je automatisch een QR-co
 
 Gebruik in het buitenland altijd de internationale QR-code. Let op: deze QR-code is bedoeld om mee te reizen. Er kan naar gevraagd worden aan de grens of in het land van bestemming. Je kunt de internationale QR-code ook gebruiken voor locaties in het land waar je heen reist. Daarvoor moet je wel voldoen aan de lokale regels. 
 
-Weten welke test- en vaccinatiebewijzen geldig zijn in het land dat je bezoekt? Bekijk deze pagina. Zo voorkom je nare verrassingen ter plaatse. 
+Weten welke test- en vaccinatiebewijzen geldig zijn in het land dat je bezoekt? Bekijk <a href="https://www.wijsopreis.nl" rel="noopener noreferrer" target="_blank">www.wijsopreis.nl</a>. Zo voorkom je nare verrassingen ter plaatse. 
