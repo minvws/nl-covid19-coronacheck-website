@@ -36,6 +36,9 @@ const getters = {
     },
     getVaccineManufacturer: (state) => (vaccineManufacturerCode) => {
         return state.holderConfig.euManufacturers.find(euManufacturer => euManufacturer.code === vaccineManufacturerCode)
+    },
+    getNlTestType: (state) => (testTypeCode) => {
+        return state.holderConfig.nlTestTypes.find(nlTestType => nlTestType.code === testTypeCode)
     }
 };
 

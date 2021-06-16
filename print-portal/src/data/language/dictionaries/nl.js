@@ -236,10 +236,7 @@ const nl = {
     'logo-government': 'Logo Rijksoverheid, homepage',
     'next': 'Volgende',
     'orderWords': ['Eerste', 'Tweede', 'Derde'],
-    'skiplink': 'Ga direct naar inhoud',
-    'testTypes': {
-        'pcr': 'PCR-test'
-    }
+    'skiplink': 'Ga direct naar inhoud'
 }
 
 export default nl;

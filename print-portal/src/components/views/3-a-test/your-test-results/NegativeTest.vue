@@ -35,10 +35,10 @@ export default {
                 } else {
                     testLocation = ''
                 }
-                const testType = this.$t('testTypes.' + this.negativeTest.testType);
+                const testType = this.$store.getters.getNlTestType(this.negativeTest.testType)
                 const dataForV2 = {
                     discreteInfoString: this.holder.discreteInfoString,
-                    testType,
+                    testType: testType ? testType.name : '',
                     testLocation,
                     sampleDate: this.date,
                     identificationCode: this.signedEvent.event.unique
@@ -51,6 +51,7 @@ export default {
             } else {
                 const testType = this.$store.getters.getEuTestType(this.negativeTest.type);
                 const manufacturer = this.$store.getters.getTestManufacturer(this.negativeTest.manufacturer);
+                console.log(this.negativeTest);
                 const dataForV3 = {
                     name: this.holder.fullName,
                     birthDateString: this.holder.birthDateString,

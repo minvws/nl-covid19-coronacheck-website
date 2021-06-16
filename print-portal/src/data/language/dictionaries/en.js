@@ -199,10 +199,7 @@ const en = {
     'logo-government': 'Logo Dutch Government, homepage',
     'next': 'Next',
     'orderWords': ['First', 'Second', 'Third'],
-    'skiplink': 'Skip to content',
-    'testTypes': {
-        'pcr': 'PCR-test'
-    }
+    'skiplink': 'Skip to content'
 }
 
 export default en;
