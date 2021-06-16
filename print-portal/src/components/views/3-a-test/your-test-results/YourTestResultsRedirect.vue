@@ -40,13 +40,23 @@ export default {
         },
         completeAuthentication() {
             this.isLoading = true;
+            const confirmAction = () => {
+                this.$router.push({ name: 'Home' });
+            }
+
             this.authVaccinations.completeAuthentication().then((user) => {
                 // after redirect we've lost the consent
                 this.$store.commit('setUserConsent', true);
                 this.collectEvents(user.id_token)
-            }, () => {
-                this.isLoading = false;
-                this.$router.push({ name: 'CollectVaccination' });
+            }).catch(() => {
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.info.digidCanceled.head'),
+                    messageBody: this.$t('message.info.digidCanceled.body'),
+                    confirm: true,
+                    confirmAction,
+                    confirmYes: this.$t('goBackToStart'),
+                    confirmNo: this.$t('close')
+                })
             })
         },
         collectEvents(token) {

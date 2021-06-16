@@ -164,8 +164,8 @@ const nl = {
                 'no': 'Nee, ga door'
             },
             'digidCanceled': {
-                'head': 'TODO digidCanceled head',
-                'body': 'TODO digidCanceled body'
+                'head': 'Inloggen is niet gelukt',
+                'body': 'Je kunt opnieuw inloggen om je vaccinatie op te halen.'
             }
         },
         'error': {

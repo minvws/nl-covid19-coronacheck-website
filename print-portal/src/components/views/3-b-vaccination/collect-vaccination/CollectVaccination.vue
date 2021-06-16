@@ -10,13 +10,7 @@ export default {
     computed: {},
     methods: {
         getToken() {
-            this.authVaccinations.startAuthentication().then(() => {}).catch(() => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.info.digidCanceled.head'),
-                    messageBody: this.$t('message.info.digidCanceled.body'),
-                    closeButton: true
-                })
-            })
+            this.authVaccinations.startAuthentication()
         },
         back() {
             this.$router.push({ name: 'ChoiceProof' })
