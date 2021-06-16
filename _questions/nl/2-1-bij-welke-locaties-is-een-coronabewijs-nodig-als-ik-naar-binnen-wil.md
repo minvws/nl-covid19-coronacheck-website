@@ -1,7 +1,7 @@
 ---
 set: 2
 index: 1
-title: Bij welke locaties is een coronatoegangsbewijs nodig als ik naar binnen wil?
+title: Bij welke locaties is een coronabewijs nodig als ik naar binnen wil?
 featuredHome: true
 featuredHomeIndex: 4
 ---

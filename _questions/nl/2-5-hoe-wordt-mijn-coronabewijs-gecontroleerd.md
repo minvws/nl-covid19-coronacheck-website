@@ -1,7 +1,7 @@
 ---
 set: 2
 index: 5
-title: Hoe wordt mijn coronatoegangsbewijs gecontroleerd?
+title: Hoe wordt mijn coronabewijs gecontroleerd?
 featuredHome: true
 featuredHomeIndex: 5
 redirect_from: 
