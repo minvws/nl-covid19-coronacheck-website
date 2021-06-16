@@ -2,6 +2,8 @@
 index: 6
 set: 6
 title: Ik heb een negatieve uitslag, maar moet in quarantaine blijven van de GGD. Wat nu?
+redirect_from: 
+  - /nl/faq/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd
 ---
 Volg het advies van de GGD en blijf in quarantaine. De negatieve testuitslag zegt namelijk alleen iets over het moment van testen. 
 

@@ -2,6 +2,8 @@
 index: 4
 set: 3
 title: Kan ik CoronaCheck ook gebruiken in het buitenland?
+redirect_from: 
+  - /nl/faq/12-kan-ik-coronacheck-ook-gebruiken-in-het-buitenland
 ---
 Nee, je kunt CoronaCheck op dit moment niet in het buitenland gebruiken.
 

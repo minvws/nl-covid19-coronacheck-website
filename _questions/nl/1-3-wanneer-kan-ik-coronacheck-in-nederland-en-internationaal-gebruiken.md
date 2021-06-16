@@ -1,7 +1,10 @@
 ---
-index: 3
 set: 1
-title: Wanneer zijn de apps klaar voor gebruik?
+index: 3
+title: Wanneer kan ik CoronaCheck in Nederland en internationaal gebruiken?
+redirect_from: 
+  - /nl/faq/3-wanneer-zijn-de-apps-klaar-voor-gebruik
+  - /nl/faq/39-wanneer-wordt-coronacheck-verder-uitgebreid
 ---
 Voor toegang tot sommige activiteiten en locaties heb je vanaf 5 juni een negatieve testuitslag nodig. Daar maak je een persoonlijke QR-code van met CoronaCheck. Laat bij de ingang de QR-code én je identiteitsbewijs zien.
 

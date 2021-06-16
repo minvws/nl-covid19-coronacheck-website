@@ -1,7 +1,7 @@
 ---
-index: 4
 set: 2
-title: Bij welke locaties is een testbewijs nodig als ik naar binnen wil?
+index: 1
+title: Bij welke locaties is CoronaCheck nodig als ik naar binnen wil?
 featuredHome: true
 featuredHomeIndex: 4
 ---

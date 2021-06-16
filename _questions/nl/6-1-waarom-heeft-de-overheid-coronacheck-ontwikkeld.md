@@ -1,7 +1,9 @@
 ---
-index: 2
-set: 1
-title: Waarom ontwikkelt de overheid de CoronaCheck-app?
+set: 6
+index: 1
+title: Waarom heeft de overheid de CoronaCheck-app ontwikkeld?
+redirect_from: 
+  - /nl/faq/2-waarom-ontwikkelt-de-overheid-coronacheck
 ---
 De overheid werkt hard om de samenleving verantwoord te openen. De pilots testen voor toegang zijn daar onderdeel van. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open. 
 

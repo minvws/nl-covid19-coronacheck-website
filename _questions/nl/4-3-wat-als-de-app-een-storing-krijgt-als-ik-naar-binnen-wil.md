@@ -1,7 +1,9 @@
 ---
-index: 15
-set: 7
+set: 4
+index: 3
 title: Wat als de app een storing krijgt als ik naar binnen wil?
+redirect_from: 
+  - /nl/faq/15-wat-als-de-app-een-storing-krijgt-als-ik-naar-binnen-wil
 ---
 Sluit de app dan af en start ‘m opnieuw op. 
 

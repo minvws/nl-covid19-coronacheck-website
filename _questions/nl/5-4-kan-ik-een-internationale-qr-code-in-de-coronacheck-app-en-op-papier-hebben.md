@@ -1,7 +1,9 @@
 ---
-index: 7
-set: 2
+set: 5
+index: 4
 title: Kan ik een testbewijs in de CoronaCheck-app en op papier hebben?
+redirect_from: 
+  - /nl/faq/33-kan-ik-een-testbewijs-in-de-coronacheck-app-en-op-papier-hebben
 ---
 Ja, dat kan. Maar dat is niet nodig. Je testbewijs (QR-code) blijft 40 uur lang geldig en kan binnen die periode meerdere keren gescand worden. Mocht er toch iets fout gaan waardoor je het testbewijs niet meer in de app kunt laden, dan kun je altijd je testbewijs printen via [www.coronacheck.nl/print](/print).
 

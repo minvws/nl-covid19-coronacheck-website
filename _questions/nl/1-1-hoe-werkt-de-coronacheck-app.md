@@ -1,10 +1,12 @@
 ---
+set: 1
 index: 1
-set: 3
 title: Hoe werkt de CoronaCheck-app?
 featuredHome: true
 featuredHomeIndex: 1
 featuredHomeIcon: app-touch
+redirect_from: 
+  - /nl/faq/1-hoe-werkt-de-coronacheck-app
 ---
 Als bezoeker laat je jezelf eerst vaccineren of doe je een coronatest. Ben je gevaccineerd of blijkt uit de test dat je geen corona hebt? Dan kun je toegang krijgen tot locaties en activiteiten. Je kunt jouw vaccinatie- of testuitslag ophalen in de app. Dat doe je als volgt:
 
