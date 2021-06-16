@@ -10,8 +10,8 @@ export default {
     mixins: [redirectMixin],
     data() {
         return {
-            isLoading: true,
-            accessToken: ''
+            isLoading: false,
+            type: 'negativetest'
         }
     },
     computed: {},

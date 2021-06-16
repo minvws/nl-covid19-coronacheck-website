@@ -10,7 +10,7 @@ export default {
     mixins: [redirectMixin],
     data() {
         return {
-            isLoading: true,
+            isLoading: false,
             type: 'vaccination'
         }
     },
