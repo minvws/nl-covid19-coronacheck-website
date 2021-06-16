@@ -44,9 +44,7 @@ export default class AuthService {
     }
 
     startAuthentication() {
-        return new Promise((resolve, reject) => {
-            return this.manager.signinRedirect();
-        })
+        this.manager.signinRedirect();
     }
 
     completeAuthentication() {
