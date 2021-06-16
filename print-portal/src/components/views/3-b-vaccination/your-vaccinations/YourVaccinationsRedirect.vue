@@ -2,15 +2,16 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
-import signedEventsTool from '@/tools/signed-events'
+import redirectMixin from './../../3-a-test/your-test-results/redirect-mixin'
 
 export default {
     name: 'YourVaccinationsRedirect',
     components: { Page, PageIntro, Loading },
+    mixins: [redirectMixin],
     data() {
         return {
             isLoading: true,
-            accessToken: ''
+            type: 'vaccination'
         }
     },
     computed: {},
@@ -19,7 +20,6 @@ export default {
             const callback = () => {
                 if (this.isLoading) {
                     // todo cancel all processes
-                    console.log('cancelling processes');
                 }
                 this.$store.commit('clearAll')
                 this.$store.commit('signedEvents/clear')
@@ -35,48 +35,15 @@ export default {
                 closeButton: false
             })
         },
-        completeAuthentication() {
-            const confirmAction = () => {
-                this.$router.push({ name: 'Home' });
+        checkResult() {
+            const vaccinationSignedEvents = this.$store.getters['signedEvents/getProofEvents']('vaccination');
+            if (vaccinationSignedEvents.length > 0) {
+                this.$router.push({ name: 'YourVaccinations' });
+            } else {
+                this.$router.push({ name: 'VaccinationsNone' });
             }
-
-            this.authVaccinations.completeAuthentication().then((user) => {
-                // after redirect we've lost the consent
-                this.$store.commit('setUserConsent', true);
-                this.collectEvents(user.id_token)
-            }).catch(() => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.info.digidCanceled.head'),
-                    messageBody: this.$t('message.info.digidCanceled.body'),
-                    confirm: true,
-                    confirmAction,
-                    confirmYes: this.$t('goBackToStart'),
-                    confirmNo: this.$t('close')
-                })
-            })
-        },
-        collectEvents(token) {
-            this.$store.commit('signedEvents/clear');
-            this.isLoading = true;
-            signedEventsTool.collect(token, 'vaccination').then(signedEvents => {
-                this.$store.commit('signedEvents/createAll', signedEvents);
-                this.isLoading = false;
-
-                const vaccinationSignedEvents = this.$store.getters['signedEvents/getProofEvents']('vaccination');
-                if (vaccinationSignedEvents.length > 0) {
-                    this.$router.push({ name: 'YourVaccinations' });
-                } else {
-                    this.$router.push({ name: 'VaccinationsNone' });
-                }
-                // todo
-                // this.$router.push({ name: 'VaccinationsNotPossible' });
-            }, (error) => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.error.general.head'),
-                    messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                    closeButton: true
-                });
-            });
+            // todo
+            // this.$router.push({ name: 'VaccinationsNotPossible' });
         }
     },
     mounted() {

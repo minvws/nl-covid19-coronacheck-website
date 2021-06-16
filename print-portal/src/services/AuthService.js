@@ -53,8 +53,13 @@ export default class AuthService {
         return new Promise((resolve, reject) => {
             return this.manager.signinRedirectCallback().then(user => {
                 resolve(user);
-            }).catch((error) => {
-                reject(error);
+            }, (error) => {
+                if (error.response) {
+                    const status = error.response.status;
+                    if (status === 400) {
+                        reject(error)
+                    }
+                }
             })
         })
     }

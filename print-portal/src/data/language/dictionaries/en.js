@@ -158,8 +158,12 @@ const en = {
             'digidCanceled': {
                 'head': 'TODO digidCanceled head',
                 'body': 'TODO digidCanceled body'
+            },
+            'digidFinished': {
+                'head': 'TODO Je bezoek aan DigiD zit erop',
+                'body': 'TODOWe halen nu jouw vaccinaties op. Daarna kun je er een bewijs van maken.',
+                'closeText': 'TODO Ok'
             }
-
         },
         'error': {
             'expiredTestCode': {

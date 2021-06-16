@@ -34,6 +34,9 @@ export default {
         },
         showCloseButton() {
             return this.$store.state.modal.closeButton;
+        },
+        closeText() {
+            return this.$store.state.modal.closeText.length > 0 ? this.$store.state.modal.closeText : this.$t('close');
         }
     },
     methods: {
@@ -127,7 +130,7 @@ export default {
                     <CcModestButton
                         v-if="showCloseButton"
                         @select="close()"
-                        :label="$t('close')"/>
+                        :label="closeText"/>
                 </div>
             </div>
         </div>
