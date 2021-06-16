@@ -255,32 +255,6 @@ govlogo:
   pl: Logo Rządu Holandii, strona główna
   ro: Siglă Guvernul Țărilor de Jos, pagina inițială
   tr: Logo Hollanda Devleti, ana sayfa
-  
-header__logo-badge: 
-  nl: Logo CoronaCheck-app
-  fy: Logo CoronaCheck-app
-  en: Logo CoronaCheck-app
-  ar: شعار تطبيق CoronaCheck
-  bg: Лого приложение CoronaCheck
-  de: Logo CoronaCheck-App
-  es: Logo de la aplicación CoronaCheck
-  fr: Logo appli CoronaCheck
-  pl: Logo aplikacji CoronaCheck
-  ro: Siglă aplicația CoronaCheck
-  tr: Logo CoronaCheck uygulaması
-  
-header__logo-badge:
-  nl: Logo CoronaCheck-app
-  fy: Logo CoronaCheck-app
-  en: Logo CoronaCheck-app
-  ar: CoronaCheck شعار تطبيق 
-  bg: Лого на приложението CoronaCheck
-  de: Logo CoronaCheck-App
-  es: Logo del app CoronaCheck
-  fr: Logo du l’appli CoronaCheck
-  pl: Logo aplikację CoronaCheck
-  ro: Siglă aplicația CoronaCheck
-  tr: CoronaCheck uygulamasını logosu
     
 phone-action:
   nl: <a href="tel:0800-1421">0800-1421</a>
