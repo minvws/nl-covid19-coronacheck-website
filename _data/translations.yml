@@ -879,6 +879,12 @@ footer-more-info:
   ro: Vizitați rijksoverheid.nl
   tr: https://rijksoverheid.nl'e bakın
   
+footer-testappointment-url: testafspraak
+
+footer-testappointment:
+  nl: Doe een coronatest
+  en: Take a coronavirus test
+
 footer-misc-title:
   nl: Over CoronaCheck
   fy: Oer CoronaCheck
