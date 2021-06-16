@@ -182,11 +182,11 @@ const nl = {
     'pdf': {
         'eu': {
             'negativeTest': {
-                'instructions': '1. Print dit bewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat de QR-code en je testgegevens zien aan de buitenlandse grens of als er in andere landen om gevraagd wordt.',
+                'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat de QR-code en je testgegevens zien aan de buitenlandse grens of als er in andere landen om gevraagd wordt.',
                 'propertiesLabel': 'Gegevens negatieve test'
             },
             'vaccination': {
-                'instructions': '1. Print dit bewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat de QR-code en je testgegevens zien aan de buitenlandse grens of als er in andere landen om gevraagd wordt.\n\nLet op: dit papieren bewijs is 28 dagen geldig. Daarna moet je een nieuw papieren bewijs maken.',
+                'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat de QR-code en je testgegevens zien aan de buitenlandse grens of als er in andere landen om gevraagd wordt.\n\nLet op: dit papieren bewijs is 28 dagen geldig. Daarna moet je een nieuw papieren bewijs maken.',
                 'propertiesLabel': 'Vaccinatiegegevens'
             },
             'title': 'Internationaal bewijs',
@@ -194,20 +194,14 @@ const nl = {
             'qrTitle': 'QR-code internationaal'
         },
         'nl': {
-            'negativeTest': {
-                'instructions': '1. Print dit bewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat de QR-code (en eventueel ook je toegangskaartje) zien bij de ingang',
-                'propertiesLabel': 'Gegevens'
-            },
-            'vaccination': {
-                'instructions': '1. Print dit bewijs op A4 zonder de schaal aan te passen (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat de QR-code (en eventueel ook je toegangskaartje) zien bij de ingang\n\nLet op: dit papieren bewijs is 28 dagen geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.',
-                'propertiesLabel': 'Gegevens'
-            },
+            'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat de QR-code (en eventueel ook je toegangskaartje) zien bij de ingang\n\nLet op: dit papieren bewijs is 28 dagen geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.',
+            'propertiesLabel': 'Gegevens',
             'title': 'Bewijs voor in Nederland',
             'intro': 'Bezoek je locaties of activiteiten binnen Nederland? Gebruik dan dit coronatoegangsbewijs.',
             'qrTitle': 'QR-code Nederland',
             'userData': {
                 'initials': 'Initialen',
-                'dateOfBirth': 'Geboortedatum',
+                'dateOfBirth': 'Geboortedag',
                 'validFrom': 'Geldig vanaf',
                 'validUntil': 'Geldig tot',
                 'privacyNote': 'Dit hoef je niet te laten zien aan de scanner'

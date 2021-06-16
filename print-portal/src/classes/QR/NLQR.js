@@ -1,7 +1,7 @@
 import dateTool from '@/tools/date';
 import numberTools from '@/tools/numbers'
 
-class QR {
+class NLQR {
     constructor({
         data = '',
         attributesIssued = null
@@ -19,13 +19,13 @@ class QR {
     }
 
     get validFrom() {
-        return dateTool.dateTimeToString(this.attributesIssued.validFrom);
+        return dateTool.dateTimeToString(this.attributesIssued.validFrom, 'dd-MM-yyyy, HH:mm');
     }
 
     get validUntil() {
         const date = dateTool.addHoursToDate(this.attributesIssued.validFrom, Number(this.attributesIssued.validForHours));
-        return dateTool.dateTimeToString(date);
+        return dateTool.dateTimeToString(date, 'dd-MM-yyyy, HH:mm');
     }
 }
 
-export default QR;
+export default NLQR;

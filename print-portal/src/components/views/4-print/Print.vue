@@ -5,6 +5,7 @@ import CcButton from '@/components/elements/CcButton';
 import { getDocument } from '@/tools/print/main';
 import { generateQR } from '@/tools/qr';
 import mockQrs from '@/data/mock/qr';
+import NLQR from '@/classes/QR/NLQR';
 
 export default {
     name: 'Print',
@@ -29,30 +30,22 @@ export default {
         }
     },
     methods: {
-        createDocument(qrObject) {
-            generateQR(qrObject.data).then(async (urlQR) => {
+        createDocument(qrs) {
+            const nlQR = new NLQR(qrs[0]);
+            generateQR(nlQR.data).then(async (urlQR) => {
                 const pages = [
                     {
                         type: 'vaccination',
-                        territory: 'eu',
-                        qr: qrObject,
-                        urlQR: urlQR
-                    }, {
-                        type: 'vaccination',
                         territory: 'nl',
-                        qr: qrObject,
-                        urlQR: urlQR
-                    }, {
-                        type: 'negativeTest',
-                        territory: 'eu',
-                        qr: qrObject,
+                        qr: nlQR,
                         urlQR: urlQR
                     }, {
                         type: 'negativeTest',
                         territory: 'nl',
-                        qr: qrObject,
+                        qr: nlQR,
                         urlQR: urlQR
-                    }]
+                    }
+                ]
                 this.document = await getDocument(pages, this.currentLanguage.locale);
             }, (error) => {
                 this.$store.commit('modal/set', {
@@ -66,7 +59,7 @@ export default {
             this.document = null;
             this.$nextTick(() => {
                 this.$store.commit('qrs/init', mockQrs);
-                this.createDocument(this.$store.state.qrs.all[0])
+                this.createDocument(this.$store.state.qrs.all)
             });
         },
         goBack() {

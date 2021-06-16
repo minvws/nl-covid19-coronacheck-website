@@ -1,7 +1,4 @@
 import _base from './_base-module';
-import QR from '@/classes/QR';
-
-const Model = QR;
 
 const state = {
     all: [],
@@ -16,7 +13,7 @@ const actions = {};
 
 const mutations = {
     init(state, set) {
-        return _base.mutations.init(state, set, Model);
+        state.all = set;
     }
 };
 

@@ -22,6 +22,9 @@ const state = {
 };
 
 const getters = {
+    getEuBrand: (state) => (euBrandCode) => {
+        return state.holderConfig.euBrands.find(euBrand => euBrand.code === euBrandCode)
+    },
     getEuTestType: (state) => (testTypeCode) => {
         return state.holderConfig.euTestTypes.find(euTestType => euTestType.code === testTypeCode)
     },
