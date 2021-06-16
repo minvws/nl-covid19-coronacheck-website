@@ -8,14 +8,14 @@ featuredHomeIcon: app-touch
 redirect_from: 
   - /nl/faq/1-hoe-werkt-de-coronacheck-app
 ---
-Als bezoeker laat je jezelf eerst vaccineren of doe je een coronatest. Ben je gevaccineerd of blijkt uit de test dat je geen corona hebt? Dan kun je toegang krijgen tot locaties en activiteiten. Je kunt jouw vaccinatie- of testuitslag ophalen in de app. Dat doe je als volgt:
+Voor toegang tot bepaalde locaties, activiteiten en landen is een coronatoegangsbewijs nodig. Bezoek je een locatie waar dat het geval is? Volg dan deze stappen:
 
-1. Haal je vaccinatie- of testgegevens op via DigiD of met de ophaalcode die je hebt gekregen van de testlocatie.
-2. Na controle haalt de CoronaCheck-app je vaccinatie of testuitslag op
-3. De app maakt van jouw vaccinatie of negatieve testuitslag een bewijs, in de vorm van een QR-code 
+1. Als bezoeker laat je je vaccineren of doe je een coronatest
+2. Heb je een negatieve uitslag en dus geen corona? Of ben je gevaccineerd? Dan kun je de gegevens ophalen in de CoronaCheck-app. Download de app via de Apple App Store of Google Play Store.
+3. Vul in de CoronaCheck-app de ophaalcode in die je bij je negatieve testuitslag hebt gekregen. Of haal je gegevens op met DigiD.
+4. De app maakt van jouw gegevens een bewijs, in de vorm van een QR-code
+5. Laat de QR-code scannen aan de deur van de locatie waar je naar binnen wilt. Neem je identiteitsbewijs en toegangskaartje ook mee.
 
-**Let op**: vanaf begin juli kun je ook een bewijs maken als je corona hebt gehad en bent hersteld (herstelverklaring). Ook dat doe je door de stappen hierboven te volgen. 
+Vanaf begin juli kun je ook een bewijs maken als je corona hebt gehad en bent hersteld (herstelverklaring). Ook dat doe je door de stappen hierboven te volgen. 
 
-Laat de QR-code scannen voor toegang of bij de grens. Is je QR-code geldig en komen je gegevens overeen met je identiteitsbewijs? Dan mag je naar binnen. Het kan zijn dat er ook een toegangskaartje nodig is. 
-
-**Let op:** je kunt maar voor één persoon een testbewijs in de CoronaCheck-app laten zien. Iedere bezoeker heeft dus een eigen telefoon met de app nodig of een geprint testbewijs. Download en print jouw testbewijs op [www.coronacheck.nl/print](/print).
+**Let op:** je kunt maar voor één persoon een bewijs in de CoronaCheck-app maken. Iedere bezoeker heeft dus een eigen telefoon met de app nodig. Geen telefoon? Je kunt ook een QR-code printen. Download en print jouw bewijs op [www.coronacheck.nl/print](/print).

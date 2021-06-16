@@ -1,12 +1,8 @@
 ---
 index: 6
 set: 6
-title: Ik heb een negatieve uitslag, maar moet in quarantaine blijven van de GGD. Wat nu?
+title: Ik heb een geldig bewijs, maar moet in quarantaine blijven van de GGD. Wat nu? 
 redirect_from: 
   - /nl/faq/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd
 ---
-Volg het advies van de GGD en blijf in quarantaine. De negatieve testuitslag zegt namelijk alleen iets over het moment van testen. 
-
-De verplichting tot quarantaine geldt normaal gesproken 10 dagen. Laat je op de 5e dag testen. Als die test negatief is kun je stoppen met de quarantaine.
-
-**Let op:** met een negatieve testuitslag van de GGD kun je op dit moment nog **geen** testbewijs maken in de CoronaCheck-app. Dat geldt ook voor andere commerciële testaanbieders. 
+Volg het advies van de GGD en blijf in quarantaine. Ook als je een vaccinatiebewijs hebt. De verplichting tot quarantaine geldt normaal gesproken 10 dagen. Laat je op de 5e dag testen. Als die test negatief is kun je stoppen met de quarantaine.
