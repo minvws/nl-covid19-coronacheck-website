@@ -58,7 +58,7 @@ export default {
         @back="back">
         <div class="section">
             <PageIntro
-                :head="$t('views.yourTestResults.pageHeader')"/>
+                :head="$t('views.yourVaccinations.pageHeader')"/>
             <div
                 v-if="isLoading"
                 class="section-block">
