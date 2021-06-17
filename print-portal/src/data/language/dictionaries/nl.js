@@ -133,7 +133,7 @@ const nl = {
             },
             'testResultSomethingWrong': {
                 'head': 'Kloppen de gegevens niet?',
-                'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.</p>'
+                'body': '<p>Zijn deze gegevens anders dan op je identiteitsbewijs? Neem contact op met je testlocatie. Zij kunnen je gegevens laten aanpassen.</p>'
             },
             'vaccinationAbout': {
                 'head': 'Wat is er opgehaald?',
@@ -173,8 +173,8 @@ const nl = {
                 'closeText': 'Ok'
             },
             'sessionEnded': {
-                'head': 'Sessie beëindigd',
-                'body': 'Je bent meer dan 24 uur geleden begonnen op de website. Je sessie is beëindigd.'
+                'head': 'Je sessie is gestopt',
+                'body': 'Voor veiligheid stopt je sessie autmatisch 24 uur na het inloggen.'
             }
         },
         'error': {

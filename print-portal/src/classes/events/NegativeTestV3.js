@@ -11,6 +11,7 @@ class NegativeTest extends _NegativeTest {
         this.type = negativetest.type;
         this.name = negativetest.name;
         this.manufacturer = negativetest.manufacturer;
+        this.country = negativetest.country;
     }
 }
 

@@ -3,7 +3,7 @@ export const messageInfoTestResultAboutV2 = `
     De volgende gegevens zijn opgehaald bij de testlocatie:
 </p>
 <p>
-    Jouw gegevens: <b>%{discreteInfoString}</b><br>
+    Jouw gegevens: <b>%{discreteInfoString}</b><br><br>
     Type test: <b>%{testType}</b><br>
     Testlocatie: <b>%{testLocation}</b><br>
     Testdatum: <b>%{sampleDate}</b><br>
@@ -24,5 +24,6 @@ export const messageInfoTestResultAboutV3 = `
     Testuitslag: <b>negatief (geen corona)</b><br>
     Testlocatie: <b>%{testLocation}</b><br>
     Testproducent: <b>%{manufacturer}</b><br>
+    Getest in: <b>%{country}</b><br>
     Identificatiecode: <b>%{identificationCode}</b>
 </p>`;

@@ -51,7 +51,6 @@ export default {
             } else {
                 const testType = this.$store.getters.getEuTestType(this.negativeTest.type);
                 const manufacturer = this.$store.getters.getTestManufacturer(this.negativeTest.manufacturer);
-                console.log(this.negativeTest);
                 const dataForV3 = {
                     name: this.holder.fullName,
                     birthDateString: this.holder.birthDateString,
@@ -60,7 +59,8 @@ export default {
                     testLocation: this.negativeTest.facility,
                     sampleDate: this.date,
                     manufacturer: manufacturer ? manufacturer.name : '-',
-                    identificationCode: this.signedEvent.event.unique
+                    identificationCode: this.signedEvent.event.unique,
+                    country: this.negativeTest.country
                 }
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.info.testResultAbout.head'),
