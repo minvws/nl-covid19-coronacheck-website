@@ -5,8 +5,13 @@
             {% if page.title != '' %}{{ page.title }} - {% endif %}
             {{ site.data.translations.scanner-app-name }}
         {% else %}
-            {% if page.title != '' %}{{ page.title }} - {% endif %}
-            {{ site.data.translations.page-title[page.lang] }}
+            {% if page.layout == 'content-error' %}
+                {{ site.data.translations.error-pagetitle[page.lang] }} - 
+                {{ site.data.translations.page-title[page.lang] }}
+            {% else %}
+                {% if page.title != '' %}{{ page.title }} - {% endif %}
+                {{ site.data.translations.page-title[page.lang] }}
+            {% endif %}
         {% endif %}
     </title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
