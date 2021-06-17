@@ -10,6 +10,10 @@
     max-width: 940px;
     margin: 30px;
 
+    a {
+        text-decoration: underline;
+    }
+
     h2,
     h3 {
         color: $color-coronacheck_black;

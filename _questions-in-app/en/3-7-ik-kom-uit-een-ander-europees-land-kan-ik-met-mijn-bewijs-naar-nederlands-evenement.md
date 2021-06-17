@@ -1,7 +1,8 @@
 ---
 set: 3
 index: 7
-title: Ik kom uit een ander Europees land. Kan ik met mijn bewijs naar een evenement of locatie in Nederland?
-published: false
+title: I’m from another European country. Can I use my certificate to visit an event or location in the Netherlands?
 ---
-Ja, dat kan. Voor alle Europeanen gelden dezelfde binnenlandse regels zoals die ook voor de Nederlanders gelden. Wanneer de bewijzen voldoen aan de Nederlandse regels, kan je als Europeaan ook naar evenementen in Nederland. 
+{{ site.data.translations.pleaseNoteFAQs[page.lang] }}
+
+Yes, you can. The domestic rules are the same for European citizens as they are for Dutch people. When your certificate meets the Dutch rules, as an European you’re allowed to visit events in the Netherlands.

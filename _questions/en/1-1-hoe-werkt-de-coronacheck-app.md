@@ -8,6 +8,8 @@ featuredHomeIcon: app-touch
 redirect_from: 
   - /en/faq/1-hoe-werkt-de-coronacheck-app
 ---
+{{ site.data.translations.pleaseNoteFAQs[page.lang] }}
+
 Entering certain locations, activities, and countries requires a coronavirus entry pass. Is this the case for the location you’re visiting? Then follow these steps:
 
 1. As a visitor, you get vaccinated or tested for coronavirus

@@ -1112,6 +1112,19 @@ footer-misc-partnertoolkit:
   fy: Partnertoolkit
   en: Partner toolkit
   
+error-pagetitle:
+  nl: Fout
+  fy: 
+  en: Error
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+  
 error-title:
   nl: Deze pagina kan helaas niet worden gevonden
   fy: Dizze side kin spitigernôch net fûn wurde
@@ -1499,5 +1512,9 @@ about-coronacheck-scanner-content:
   en: <p>Would you like to find out how you can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner" target="_blank">Read more about the CoronaCheck Scanner app.</a></p> 
 
 home-intro-content:
-  nl: Voor toegang tot sommige events en locaties kun je vanaf 5 juni gebruikmaken van CoronaCheck. <a href="/nl/faq/1-hoe-werkt-de-coronacheck-app/">Hoe CoronaCheck werkt lees je hier</a>. Eind juni geeft ook je bewijs van vaccinatie toegang tot events en locaties in Nederland. Hiervoor voor gebruik je dan CoronaCheck. Vanaf juli kun je CoronaCheck ook gebruiken om een persoonlijke QR-code te maken voor reizen naar andere landen in de Europese Unie. Daarover lees je op deze website binnenkort meer of lees de pagina van de Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)
-  en: To gain access to some events and locations, from June 5th you will be able to use CoronaCheck. <a href="/nl/faq/1-hoe-werkt-de-coronacheck-app/">You can read here how CoronaCheck works</a>. From the end of June, your proof of vaccination will provide access to events and locations in the Netherlands. You can use CoronaCheck for this. From the beginning of July you will be able to use CoronaCheck to create a personal QR code for travels to other countries within the European Union. You can read more about it soon on this website, or take a look at the website of the Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer" lang="nl" hreflang="nl">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)
+  nl: Voor toegang tot sommige events en locaties kun je vanaf 5 juni gebruikmaken van CoronaCheck. <a href="/nl/faq/1-1-hoe-werkt-de-coronacheck-app/">Hoe CoronaCheck werkt lees je hier</a>. Eind juni geeft ook je bewijs van vaccinatie toegang tot events en locaties in Nederland. Hiervoor voor gebruik je dan CoronaCheck. Vanaf juli kun je CoronaCheck ook gebruiken om een persoonlijke QR-code te maken voor reizen naar andere landen in de Europese Unie. Daarover lees je op deze website binnenkort meer of lees de pagina van de Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)
+  en: To gain access to some events and locations, from June 5th you will be able to use CoronaCheck. <a href="/en/faq/1-1-hoe-werkt-de-coronacheck-app/">You can read here how CoronaCheck works</a>. From the end of June, your proof of vaccination will provide access to events and locations in the Netherlands. You can use CoronaCheck for this. From the beginning of July you will be able to use CoronaCheck to create a personal QR code for travels to other countries within the European Union. You can read more about it soon on this website, or take a look at the website of the Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer" lang="nl" hreflang="nl">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)
+
+pleaseNoteFAQs:
+  nl: "<strong>Let op</strong>: ben je volledig gevaccineerd en wil je een Nederlands bewijs maken? Dat kan vanaf eind juni."
+  en: "<strong>Please note</strong>: have you been fully vaccinated? And do you want to create a Dutch certificate? This is possible from the end of June."

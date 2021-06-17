@@ -1,9 +1,10 @@
 ---
 set: 3
 index: 4
-title: Heb ik in het buitenland voldoende aan één vaccinatie?  
-published: false
+title: Will one vaccination be enough to travel abroad?
 ---
-Eén vaccinatie is voldoende om een internationaal vaccinatiebewijs te maken. Daar kun je internationaal mee reizen. Let op: dit betekent niet dat je naar elk land kunt reizen. Controleer eerst of het land dat je wilt bezoeken een bewijs met één prik goedkeurt. Kijk van tevoren op <a href="https://www.wijsopreis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.wijsopreis.nl (Dutch)</a>. 
+{{ site.data.translations.pleaseNoteFAQs[page.lang] }}
 
-Binnen Nederland moet je alle prikken gehad hebben om een coronabewijs te krijgen.
+One vaccination is enough to create an international vaccination certificate. This allows you to travel abroad. Please note: this doesn’t mean you can travel to any country. Check if the country you’re planning to visit allows proof of one vaccination. Before leaving, please read through the terms on <a href="https://www.wijsopreis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.wijsopreis.nl (Dutch)</a>. 
+
+Within the Netherlands, you need to have both vaccinations to receive a corona entry pass.

@@ -5,6 +5,10 @@
     display: flex;
     flex-direction: column-reverse;
 
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+
     @media (min-width: 680px) {
         flex-direction: row;
         width: calc(100% - (54px * 2));
