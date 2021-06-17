@@ -4,7 +4,7 @@
     position: relative;
     padding: 12px 8px;
     transition: background-color var(--transition-out), color var(--transition-out);
-
+    z-index: 1;
     display: -ms-inline-grid;
     display: inline-grid;
     -ms-grid-columns: -webkit-max-content 16px;

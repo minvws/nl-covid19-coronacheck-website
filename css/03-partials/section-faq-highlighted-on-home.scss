@@ -117,6 +117,7 @@
     font-family: inherit;
     text-align: left;
     cursor: pointer;
+    text-decoration: underline;
 
     &:after {
         // Make the whole .highlighted-faq__summary clickable
@@ -134,6 +135,7 @@
         background-color: $color-coronacheck_blue;
         transition: var(--transition-in--fast);
         outline: 0;
+        text-decoration: none;
     }
 
     > .icon {
