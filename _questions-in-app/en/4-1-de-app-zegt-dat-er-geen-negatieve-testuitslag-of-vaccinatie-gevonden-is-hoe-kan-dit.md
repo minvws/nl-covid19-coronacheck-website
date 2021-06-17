@@ -7,7 +7,7 @@ redirect_from:
 ---
 {{ site.data.translations.pleaseNoteFAQs[page.lang] }}
 
-No vaccination found? There are several causes. <!-- [Find more information here](/en/guidepost). --> Were you recently vaccinated? Then it may take a while before the details are available.
+No vaccination found? There are several causes. [Find more information here](/en/guidepost). Were you recently vaccinated? Then it may take a while before the details are available.
  
 No negative test result found? There are several causes:
 
