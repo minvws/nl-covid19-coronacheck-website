@@ -174,7 +174,7 @@ const nl = {
             },
             'sessionEnded': {
                 'head': 'Je sessie is gestopt',
-                'body': 'Voor veiligheid stopt je sessie autmatisch 24 uur na het inloggen.'
+                'body': 'Voor de veiligheid stopt je sessie automatisch na 24 uur.'
             }
         },
         'error': {
