@@ -27,11 +27,13 @@ const getters = {
             } else {
                 const holder = new HolderV3(result.holder);
                 for (const ev of result.events) {
-                    const event = new ProofEvent(ev)
+                    const event = new ProofEvent(ev);
+                    const providerIdentifier = result.providerIdentifier;
                     if (event.type === type || type === 'all') {
                         proofEvents.push(new SignedEvent({
                             holder,
-                            event
+                            event,
+                            providerIdentifier
                         }))
                     }
                 }

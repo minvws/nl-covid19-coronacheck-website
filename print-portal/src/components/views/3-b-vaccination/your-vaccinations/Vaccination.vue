@@ -18,8 +18,15 @@ export default {
         holder() {
             return this.signedEvent.holder;
         },
+        monthName() {
+            return dateTool.dateToString(this.vaccination.date, 'MMMM');
+        },
+        location() {
+            const providerIdentifier = this.$store.getters['eventProviders/getTestProviderByIdentifier'](this.signedEvent.providerIdentifier);
+            return providerIdentifier ? providerIdentifier.name : '-';
+        },
         title() {
-            return this.$t('orderWords.' + (this.vaccination.doseNumber - 1)) + ' ' + this.$t('components.vaccination.vaccination').toLocaleLowerCase();
+            return this.$t('components.vaccination.vaccination') + ' ' + this.monthName + ' (' + this.location + ')';
         },
         vaccineName() {
             let vaccine;

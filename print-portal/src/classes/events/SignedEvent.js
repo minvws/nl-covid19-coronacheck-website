@@ -1,10 +1,12 @@
 class SignedEvent {
     constructor({
         holder = null,
-        event = null
+        event = null,
+        providerIdentifier = null
     }) {
         this.holder = holder;
-        this.event = event
+        this.event = event;
+        this.providerIdentifier = providerIdentifier;
     }
 }
 

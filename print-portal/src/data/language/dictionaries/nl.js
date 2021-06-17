@@ -16,13 +16,13 @@ const nl = {
     'views': {
         'home': {
             'pageHeader': 'Krijg toegang met een papieren bewijs',
-            'pageIntro': '<p>Een testbewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><div class="home__section"><h4>Alleen toegang na testen</h4><p>Laat je daarom testen als je bepaalde sociale, culturele of sportieve activiteiten bezoekt. Ook als je al gevaccineerd bent. Blijkt uit de test dat je geen corona hebt (negatieve testuitslag)? Dan krijg je toegang.</p></div><div class="home__section"><h4>Jouw QR-code op zak</h4><p>Als uit de test blijkt dat je geen corona hebt kun je in de app of op papier een persoonlijke QR-code maken. Dat is jouw testbewijs. De QR-code wordt gescand voordat je toegang krijgt. Zorg dat jouw QR-code binnen 40 uur na het moment van testen gescand is bij de ingang.</p></div><div class="home__section"><h4>Zo min mogelijk gegevens</h4><p>In jouw QR-code staan alleen je negatieve testuitslag (geen corona), het tijdstip van de test en minimale gegevens: de eerste letter van je voornaam, de eerste letter van je achternaam, je geboortedag en geboortemaand. Dit is ter controle, om zeker te zijn dat de testuitslag bij jou hoort.</p></div>',
+            'pageIntro': '<p>Een bewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><div class="home__section"><h4>Alleen toegang met een bewijs</h4><p>Wil je toegang krijgen tot bepaalde locaties of activiteiten? Of ga je op reis? Dat kan als je gevaccineerd bent. Of als uit een test blijkt dat je geen corona hebt. </p></div><div class="home__section"><h4>QR-code = jouw bewijs</h4><p>Je kunt een persoonlijke QR-code maken van een vaccinatie of een negatieve testuitslag. Dat is jouw bewijs. De QR-code wordt gecheckt voordat je toegang krijgt.</p></div><div class="home__section"><h4>QR-codes voor Nederland en internationaal</h4><p>De app maakt twee QR-codes: één voor Nederland en één voor internationaal. Reis je buiten Nederland? Gebruik dan je internationale QR-code.</p></div>',
             'userConsentText': 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank">privacyverklaring</a> gelezen en begrijp hoe CoronaCheck mijn gegevens gebruikt',
             'noConsentError': 'Ga eerst akkoord met de privacyverklaring'
         },
         'choiceProof': {
             'pageHeader': 'Waar wil je een papieren bewijs van maken?',
-            'pageIntro': '<p>Je kunt een QR-maken van een vaccinatie of van een negatieve testuitslag.</p>',
+            'pageIntro': '<p>Je kunt een QR-code maken van een negatieve testuitslag of van een vaccinatie. </p>',
             'choiceTestHeader': 'Een negatieve testuitslag',
             'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
             'choiceVaccinationHeader': 'Een vaccinatie',
@@ -39,7 +39,7 @@ const nl = {
         },
         'collectVaccination': {
             'pageHeader': 'Vaccinatie ophalen',
-            'pageIntro': '<p>Heb je een of meer prikken gekregen? Dan kan je een  bewijs maken.</p><p>Vragen over vaccinaties? Lees meer op de <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">website van de Rijksoverheid</a></p>',
+            'pageIntro': '<p>Ben je al gevaccineerd? Log in met DigiD. De gegevens van je vaccinatie worden dan automatisch opgehaald.</p><p>Nog geen prik gehad? Laat je dan eerst vaccineren.</p>',
             'loginDigid': 'Login met DigiD',
             'dontHaveDigid': 'Ik heb geen DigiD'
         },
@@ -239,7 +239,6 @@ const nl = {
     'identity_image_alt': 'Holder QR maken',
     'logo-government': 'Logo Rijksoverheid, homepage',
     'next': 'Volgende',
-    'orderWords': ['Eerste', 'Tweede', 'Derde'],
     'skiplink': 'Ga direct naar inhoud'
 }
 
