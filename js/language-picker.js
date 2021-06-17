@@ -21,7 +21,8 @@
 			document.documentElement
 				.addEventListener('click', outsideClickHandler, true);
 			firstInteractive.focus();
-		} else {
+        } else {
+            listOfLanguages.setAttribute('hidden', true);
 			document.documentElement
 				.removeEventListener('keydown', escapeKeydownHandler, true);
 			document.documentElement
