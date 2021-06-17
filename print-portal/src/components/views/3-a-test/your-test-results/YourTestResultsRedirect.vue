@@ -37,6 +37,9 @@ export default {
                 this.$router.push({ name: 'ChoiceProof' });
             }
         },
+        gotoPreviousPage() {
+            this.$router.push({ name: 'ChoiceTestLocation' });
+        },
         checkResult() {
             const negativeTestSignedEvents = this.$store.getters['signedEvents/getProofEvents']('negativetest');
             if (negativeTestSignedEvents.length > 0) {

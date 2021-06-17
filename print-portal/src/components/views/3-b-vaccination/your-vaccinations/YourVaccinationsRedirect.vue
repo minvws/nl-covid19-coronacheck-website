@@ -35,6 +35,9 @@ export default {
                 closeButton: false
             })
         },
+        gotoPreviousPage() {
+            this.$router.push({ name: 'CollectVaccination' });
+        },
         checkResult() {
             const vaccinationSignedEvents = this.$store.getters['signedEvents/getProofEvents']('vaccination');
             if (vaccinationSignedEvents.length > 0) {
