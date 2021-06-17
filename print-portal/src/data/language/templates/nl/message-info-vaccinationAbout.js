@@ -8,8 +8,8 @@ const html = `
     </p>
     <p>
         Ziekteverwekker: <b>COVID-19</b><br>
-        Vaccin type: <b>%{vaccineType}</b><br>
         Vaccin: <b>%{vaccineName}</b><br>
+        Vaccin type: <b>%{vaccineType}</b><br>
         Producent van het vaccin: <b>%{manufacturer}</b><br>
         Doses: <b>%{doseNumber} van %{totalDoses}</b><br>
         Prikdatum: <b>%{dateString}</b><br>

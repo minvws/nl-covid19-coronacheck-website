@@ -94,8 +94,8 @@ const nl = {
             'pageIntro': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er in staat. Open of download de PDF, print het uit en neem ’m mee.'
         },
         'printVaccination': {
-            'pageHeader': 'Print jouw vaccinatiebewijs',
-            'pageIntro': '<h3>Jouw bewijs</h3><p>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt nu twee QR-codes: één voor Nederland en één internationale.</p><h3>Informatie in de QR</h3><p><a href="https://coronacheck.nl/nl/faq/18-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier kun je lezen wat er in de QR-codes staat</a>.</p><h3>En nu?</h3><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+            'pageHeader': 'Print jouw Nederlandse vaccinatiebewijs',
+            'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een Nederlands vaccinatiebewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen. Als de Europese regelgeving ingaat (vanaf 1 juli) kun je ook een internationale QR-code maken.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/18-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 maand geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
         }
     },
     'components': {
@@ -141,7 +141,7 @@ const nl = {
             },
             'vaccinationSomethingWrong': {
                 'head': 'Er klopt iets niet',
-                'body': '<p>Kloppen je naam en/of geboortedatum niet? Of staat er onjuiste informatie over je vaccinatie? Kijk op <a href="https://coronacheck.nl/wegwijzer">CoronaCheck.nl/wegwijzer</a> voor meer informatie.</p>'
+                'body': '<p>Kloppen je gegevens niet? Of mist er een vaccinatie? Kijk op <a href="https://coronacheck.nl/wegwijzer" target="_blank">CoronaCheck.nl/wegwijzer</a>.</p><p>Mist er een prik? Neem contact op met de locatie waar je bent gevaccineerd.</p>'
             },
             'noVerificationCode': {
                 'head': 'Nieuwe verificatiecode nodig?',
