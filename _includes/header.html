@@ -12,14 +12,12 @@
         </a>
       </div>
       {% if include.for == "scanner" %}
-        <a href="{{ langSlug }}/" class="header__layout__faq-link">
-          {{ site.data.translations.head-app-name }}
-        </a>
+        <a href="{{ langSlug }}/faq-scanner" class="header__layout__faq-link">
+          {{ site.data.translations.faq[page.lang] }}</a>
       {% else %}
-        <a href="{{ langSlug }}/scanner" class="header__layout__faq-link">
-          {{ site.data.translations.scanner-app-name }}
-        </a>
-      {% endif %}
+        <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
+          {{ site.data.translations.faq[page.lang] }}</a>
+        {% endif %}
       {% include components/language-picker.html headertype="default" %}
     </div>
     <div class="container">

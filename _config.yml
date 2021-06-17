@@ -60,6 +60,7 @@ defaults:
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
+      webonly: false
   -
     scope:
       path: "_questions-in-app/nl"
@@ -73,6 +74,7 @@ defaults:
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
+      webonly: false
   -
     scope:
       path: "_questions-scanner/nl"
@@ -112,6 +114,7 @@ defaults:
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
+      webonly: false
   -
     scope:
       path: "_questions-scanner-in-app/nl"
@@ -125,6 +128,7 @@ defaults:
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
+      webonly: false
 
 sass:
   style: compressed

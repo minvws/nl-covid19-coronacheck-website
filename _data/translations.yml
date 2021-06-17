@@ -255,32 +255,6 @@ govlogo:
   pl: Logo Rządu Holandii, strona główna
   ro: Siglă Guvernul Țărilor de Jos, pagina inițială
   tr: Logo Hollanda Devleti, ana sayfa
-  
-header__logo-badge: 
-  nl: Logo CoronaCheck-app
-  fy: Logo CoronaCheck-app
-  en: Logo CoronaCheck-app
-  ar: شعار تطبيق CoronaCheck
-  bg: Лого приложение CoronaCheck
-  de: Logo CoronaCheck-App
-  es: Logo de la aplicación CoronaCheck
-  fr: Logo appli CoronaCheck
-  pl: Logo aplikacji CoronaCheck
-  ro: Siglă aplicația CoronaCheck
-  tr: Logo CoronaCheck uygulaması
-  
-header__logo-badge:
-  nl: Logo CoronaCheck-app
-  fy: Logo CoronaCheck-app
-  en: Logo CoronaCheck-app
-  ar: CoronaCheck شعار تطبيق 
-  bg: Лого на приложението CoronaCheck
-  de: Logo CoronaCheck-App
-  es: Logo del app CoronaCheck
-  fr: Logo du l’appli CoronaCheck
-  pl: Logo aplikację CoronaCheck
-  ro: Siglă aplicația CoronaCheck
-  tr: CoronaCheck uygulamasını logosu
     
 phone-action:
   nl: <a href="tel:0800-1421">0800-1421</a>
@@ -464,7 +438,7 @@ faq-category-scannerapp-errors:
   ro: 
   tr:
 
-faq-category-general:
+faq-category-one:
   nl: Algemeen
   fy: 
   en: General
@@ -477,10 +451,10 @@ faq-category-general:
   ro: 
   tr:
   
-faq-category-howtouse:
-  nl: Toegang met bewijs
+faq-category-two:
+  nl: Gebruik in Nederland
   fy: 
-  en: Getting access with a certificate
+  en: Using CoronaCheck in the Netherlands
   ar: 
   bg: 
   de: 
@@ -490,10 +464,10 @@ faq-category-howtouse:
   ro: 
   tr:
 
-faq-category-usingtheapp:
-  nl: Bewijs in de app
+faq-category-three:
+  nl: Internationaal Reizen
   fy: 
-  en: Certificate in the app
+  en: International travel with CoronaCheck
   ar: 
   bg: 
   de: 
@@ -503,49 +477,49 @@ faq-category-usingtheapp:
   ro: 
   tr:
 
-faq-category-usingprintversion:
-  nl: Bewijs op papier
-  fy: 
-  en: Printed certificate
-  ar: 
-  bg: 
-  de: 
-  es: 
-  fr: 
-  pl: 
-  ro: 
-  tr:
-
-faq-category-gettingtested:
-  nl: Testen
-  fy: 
-  en: Getting tested
-  ar: 
-  bg: 
-  de: 
-  es: 
-  fr: 
-  pl: 
-  ro: 
-  tr:
-
-faq-category-misc:
-  nl: Overig
-  fy: 
-  en: Other questions
-  ar: 
-  bg: 
-  de: 
-  es: 
-  fr: 
-  pl: 
-  ro: 
-  tr:
-
-faq-category-troubleshooting:
+faq-category-four:
   nl: Problemen
   fy: 
-  en: Issues/errors
+  en: Problems
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-five:
+  nl: Bewijs op papier
+  fy: 
+  en: Paper certificate
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-six:
+  nl: Achtergrond
+  fy: 
+  en: Background
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-category-seven:
+  nl: Overig
+  fy: 
+  en: Other
   ar: 
   bg: 
   de: 
@@ -879,6 +853,12 @@ footer-more-info:
   ro: Vizitați rijksoverheid.nl
   tr: https://rijksoverheid.nl'e bakın
   
+footer-testappointment-url: testafspraak
+
+footer-testappointment:
+  nl: Doe een coronatest
+  en: Take a coronavirus test
+
 footer-misc-title:
   nl: Over CoronaCheck
   fy: Oer CoronaCheck
@@ -1114,12 +1094,12 @@ footer-misc-pers:
     
 footer-misc-accessibility-statement-url: toegankelijkheidsverklaring
 footer-misc-accessibility-statement:
-  nl: Toegankelijkheidsverklaring
-  fy: Tagonklikheidsferklearring
+  nl: Toegankelijkheids&shy;verklaring
+  fy: Tagonklikheids&shy;ferklearring
   en: Accessibility statement
   ar: بيان قابلية الوصول
   bg: Декларация за достъпност
-  de: Zugänglichkeitserklärung
+  de: Zugänglichkeits&shy;erklärung
   es: Declaración de accesibilidad
   fr: Déclaration d'accessibilité
   pl: Oświadczenie o dostępności
@@ -1224,9 +1204,9 @@ information-naw:
   tr: 
   
 information-gps:
-  nl: Je GPS- of locatiegegevens worden niet gebruikt of bewaard
+  nl: Je locatiegegevens worden niet gebruikt of bewaard
   fy: 
-  en: Your GPS or location data is not used or saved
+  en: Your location data is not used or saved
   ar: 
   bg: 
   de: 
@@ -1488,7 +1468,7 @@ print-version-title:
 print-version-content:
   nl: Een bewijs op papier is handig als je geen smartphone hebt. Je kunt een bewijs maken van een vaccinatie of van een testuitslag. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over bewijzen op papier</span></a>.
   fy: 
-  en: A certificate of your test or vaccination on paper is convenient if you don’t have a smartphone. <a href="/en/faq#printed-certificate">Read more<span class="screen-reader-text"> about a certificate on paper</span></a>.
+  en: A certificate of your test or vaccination on paper is convenient if you don’t have a smartphone. <a href="/en/faq#paper-certificate">Read more<span class="screen-reader-text"> about a certificate on paper</span></a>.
 
 print-version-url: 
   nl: /print
@@ -1514,6 +1494,10 @@ about-coronacheck-scanner-title:
   tr: CoronaCheck hakkında
 
 about-coronacheck-scanner-content:
-  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
+  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner" target="_blank">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
   fy: 
-  en: <p>Would you like to find out how you can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner">Read more about the CoronaCheck Scanner app.</a></p>
+  en: <p>Would you like to find out how you can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner" target="_blank">Read more about the CoronaCheck Scanner app.</a></p> 
+
+home-intro-content:
+  nl: Voor toegang tot sommige events en locaties kun je vanaf 5 juni gebruikmaken van CoronaCheck. <a href="/nl/faq/1-hoe-werkt-de-coronacheck-app/">Hoe CoronaCheck werkt lees je hier</a>. Eind juni geeft ook je bewijs van vaccinatie toegang tot events en locaties in Nederland. Hiervoor voor gebruik je dan CoronaCheck. Vanaf juli kun je CoronaCheck ook gebruiken om een persoonlijke QR-code te maken voor reizen naar andere landen in de Europese Unie. Daarover lees je op deze website binnenkort meer of lees de pagina van de Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)
+  en: To gain access to some events and locations, from June 5th you will be able to use CoronaCheck. <a href="/nl/faq/1-hoe-werkt-de-coronacheck-app/">You can read here how CoronaCheck works</a>. From the end of June, your proof of vaccination will provide access to events and locations in the Netherlands. You can use CoronaCheck for this. From the beginning of July you will be able to use CoronaCheck to create a personal QR code for travels to other countries within the European Union. You can read more about it soon on this website, or take a look at the website of the Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer" lang="nl" hreflang="nl">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)

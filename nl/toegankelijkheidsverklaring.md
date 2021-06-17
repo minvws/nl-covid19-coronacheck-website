@@ -2,7 +2,7 @@
 layout: content
 lang: nl
 showBreadCrumbs: true
-title: Toegankelijkheidsverklaring
+title: Toegankelijkheids&shy;verklaring
 redirect_from: /toegankelijkheidsverklaring
 ---
 Datum toegankelijkheidsverklaring 24-03-2021

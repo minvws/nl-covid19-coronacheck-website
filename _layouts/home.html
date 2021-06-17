@@ -25,6 +25,10 @@
         {% endfor %}
       </div> 
     {% endif %}
+
+    <div class="intro offset-background">
+        {{ site.data.translations.home-intro-content[page.lang] }}
+    </div>
     
     {% include components/user-instructions.html %}
     {% include components/print-version.html %}

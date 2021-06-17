@@ -51,11 +51,7 @@ export default {
             this.close();
         },
         setFocus() {
-            if (this.showConfirm) {
-                this.$refs.refute.focus();
-            } else if (this.showCloseButton) {
-                this.$refs.close.focus();
-            }
+            this.$refs.focusStart.focus();
         }
     },
     watch: {
@@ -77,7 +73,7 @@ export default {
     },
     mounted() {
         window.addEventListener('keydown', e => {
-            if (e.key === 'Escape' && this.showConfirm) {
+            if (e.key === 'Escape') {
                 this.close();
             }
         });
@@ -104,6 +100,8 @@ export default {
             aria-describedby="modal__body">
             <div
                 v-html="messageHead"
+                ref="focusStart"
+                tabindex="-1"
                 id="modal__head">
             </div>
             <div
@@ -116,7 +114,6 @@ export default {
                 <button
                     v-if="showConfirm"
                     @click="refute()"
-                    ref="refute"
                     type="button"
                     class="button-modest">
                     {{refuteText}}
@@ -124,7 +121,6 @@ export default {
                 <button
                     v-if="showConfirm"
                     @click="confirm()"
-                    ref="confirm"
                     type="button"
                     class="button-modest button--ok">
                     {{confirmText}}
@@ -132,7 +128,6 @@ export default {
                 <button
                     v-if="showCloseButton"
                     @click="close()"
-                    ref="close"
                     type="button"
                     class="button-modest">{{$t('close')}}</button>
             </div>
@@ -146,6 +141,11 @@ export default {
 <style lang="scss">
 @import "@/styles/variables/index";
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
 .cover {
     background: rgba(0,0,0,0.4);
     position: fixed;
@@ -153,8 +153,7 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    transition: opacity 0.3s cubic-bezier(.4,0,.2,1);
-    opacity: 0;
+    display: none;
     pointer-events: none;
 
     .cover__clickable-area {
@@ -167,7 +166,8 @@ export default {
     }
 
     &.popup--active {
-        opacity: 1;
+        display: block;
+        animation: fadeIn 0.3s cubic-bezier(.4,0,.2,1);
         pointer-events: all;
     }
 }

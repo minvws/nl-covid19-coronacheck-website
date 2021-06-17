@@ -4,26 +4,36 @@
       {{ site.data.translations.header-skip-to-content[page.lang] }}
     </a>
   </div>
-  <div class="logobar">
-    <div class="logo">
-      <a href="{{ langSlug }}">
-        <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}">
-      </a>
-    </div>
-  </div>
   <div class="header header--slim offset-background">
-    <div class="header__center">
-      {% include components/language-picker.html %}
-      <div class="header__title">
+
+    <div class="header__title">
         {% if include.for == "scanner" %}
-          {{ site.data.translations.scanner-app-name }}
+          <a href="/{{ page.lang }}/scanner">{{ site.data.translations.scanner-app-name }}</a>
         {% else %}
-          {{ site.data.translations.head-app-name }}
+          <a href="/{{ page.lang }}">{{ site.data.translations.head-app-name }}</a>
         {% endif %}
+      </div> 
+
+      <div class="logo">
+        <a href="{{ langSlug }}">
+          <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}" width="40" height="80">
+        </a>
       </div>
+
+      {% if include.for == "scanner" %}
+        <a href="{{ langSlug }}/faq-scanner" class="header__layout__faq-link">
+          {{ site.data.translations.faq[page.lang] }}</a>
+      {% else %}
+        <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
+          {{ site.data.translations.faq[page.lang] }}</a>
+        {% endif %}
+
+      {% include components/language-picker.html headertype="default" %}
+        <div class="container">
+          <div class="header__image">
+            <img alt="" width="246" height="150" src="/img/holder_qrcode_maken.svg">
+          </div>
+        </div>
     </div>
-    <img src="{{ site.baseurl }}/img/logo-badge.svg" class="header__logo-badge" alt="{{ site.data.translations.header__logo-badge[page.lang] }}" />
   </div>
 </header>
-
-
