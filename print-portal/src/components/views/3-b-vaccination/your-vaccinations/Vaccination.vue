@@ -49,13 +49,13 @@ export default {
             const manufacturer = this.$store.getters.getVaccineManufacturer(this.vaccination.manufacturer);
             const data = {
                 name: this.holder.fullName,
-                birthDateString: this.holder.birthDateString,
+                birthDateString: dateTool.dateToString(this.holder.birthDate, 'dd-MM-yyyy'),
                 vaccineName: this.vaccineName,
                 vaccineType: (vaccineType ? vaccineType.name : '-'),
                 manufacturer: (manufacturer ? manufacturer.name : '-'),
                 doseNumber: this.vaccination.doseNumber,
                 totalDoses: this.vaccination.totalDoses,
-                dateString: dateTool.dateToString(this.vaccination.date, 'EEEE d LLLL', this.currentLanguage.locale),
+                dateString: dateTool.dateToString(this.vaccination.date, 'dd-MM-yyyy'),
                 country: this.vaccination.country,
                 identificationCode: this.signedEvent.event.unique
             }
