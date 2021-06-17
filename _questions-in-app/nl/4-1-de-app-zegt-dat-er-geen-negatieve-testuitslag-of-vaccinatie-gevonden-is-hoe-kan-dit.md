@@ -7,7 +7,7 @@ redirect_from:
 ---
 {{ site.data.translations.pleaseNoteFAQs[page.lang] }}
 
-Geen vaccinatie gevonden? Dit kan verschillende oorzaken hebben. <!-- [Kijk hier voor meer informatie](/wegwijzer). --> Ben je kortgeleden gevaccineerd? Dan kan het even duren tot de gegevens beschikbaar zijn.
+Geen vaccinatie gevonden? Dit kan verschillende oorzaken hebben. [Kijk hier voor meer informatie](/wegwijzer). Ben je kortgeleden gevaccineerd? Dan kan het even duren tot de gegevens beschikbaar zijn.
 
 Geen negatieve testuitslag gevonden? Dat kan meerdere oorzaken hebben:
 ## Je bent getest, maar je testuitslag is nog niet verwerkt
