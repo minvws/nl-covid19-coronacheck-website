@@ -48,7 +48,7 @@ export default {
                     alt=""
                     width="246"
                     height="150"
-                    src="assets/img/artwork/holder_qrcode_maken.svg"/>
+                    :src="pageHeaderImage"/>
             </div>
 
         </div>
