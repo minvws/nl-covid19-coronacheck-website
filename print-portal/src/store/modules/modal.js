@@ -7,7 +7,8 @@ const state = {
     messageHead: '...',
     messageBody: '...',
     closeButton: true,
-    closeText: ''
+    closeText: '',
+    confirmAlert: false
 };
 
 const getters = {};
@@ -26,6 +27,7 @@ const mutations = {
         state.closeButton = options.closeButton;
         state.closeAfter = options.closeAfter || false;
         state.closeText = options.closeText || '';
+        state.confirmAlert = options.confirmAlert || false
     },
     close(state) {
         state.visible = false;

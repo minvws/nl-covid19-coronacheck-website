@@ -26,7 +26,8 @@ export default {
                 confirmAction: callback,
                 confirmYes: this.$t('message.info.areYouSureToCancelVaccination.yes'),
                 confirmNo: this.$t('message.info.areYouSureToCancelVaccination.no'),
-                closeButton: false
+                closeButton: false,
+                confirmAlert: true
             })
         },
         gotoPrint() {

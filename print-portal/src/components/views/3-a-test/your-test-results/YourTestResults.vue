@@ -57,7 +57,8 @@ export default {
                 confirmAction: callback,
                 confirmYes: this.$t('message.info.areYouSureToCancelNegativeTest.yes'),
                 confirmNo: this.$t('message.info.areYouSureToCancelNegativeTest.no'),
-                closeButton: false
+                closeButton: false,
+                confirmAlert: true
             })
         },
         goHome() {

@@ -10,6 +10,11 @@ export default {
             type: Boolean,
             required: false,
             default: false
+        },
+        alert: {
+            type: Boolean,
+            required: false,
+            default: false
         }
     },
     methods: {
@@ -23,7 +28,10 @@ export default {
 <template>
     <button
         @click="select"
-        :class="{ 'CcModestButton--margin-top': marginTop }"
+        :class="{
+            'CcModestButton--margin-top': marginTop,
+            'CcModestButton--alert': alert,
+        }"
         class="CcModestButton">
         {{label}}
     </button>
@@ -40,6 +48,10 @@ export default {
 
     &--margin-top {
         margin-top: $length-s;
+    }
+
+    &--alert {
+        color: $color-error
     }
 
     &:hover {

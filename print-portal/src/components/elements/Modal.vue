@@ -37,6 +37,9 @@ export default {
         },
         closeText() {
             return this.$store.state.modal.closeText.length > 0 ? this.$store.state.modal.closeText : this.$t('close');
+        },
+        confirmAlert() {
+            return this.$store.state.modal.confirmAlert;
         }
     },
     methods: {
@@ -125,7 +128,8 @@ export default {
                     <CcModestButton
                         v-if="showConfirm"
                         @select="confirm()"
-                        :label="confirmText"/>
+                        :label="confirmText"
+                        :alert="confirmAlert"/>
 
                     <CcModestButton
                         v-if="showCloseButton"
