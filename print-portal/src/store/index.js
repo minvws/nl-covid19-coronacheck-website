@@ -67,21 +67,26 @@ const mutations = {
     setVerificationNeeded(state, status) {
         state.verificationNeeded = status;
     },
-    reset(state) {
+    resetProvideCode(state) {
         // clear all except testcode
         state.verificationCode = '';
         state.verificationNeeded = false;
         state.testResultStatus = 'idle';
-        state.qrCode = '';
-        state.qrData = null;
     },
     clearAll(state) {
         state.testCode = '';
         state.verificationNeeded = false;
         state.verificationCode = '';
         state.testResultStatus = 'idle';
-        state.qrCode = '';
-        state.qrData = null;
+        state.signedEvents = [];
+    },
+    sessionEnded(state) {
+        state.testCode = '';
+        state.verificationNeeded = false;
+        state.verificationCode = '';
+        state.testResultStatus = 'idle';
+        state.signedEvents = [];
+        state.userConsent = false
     }
 }
 

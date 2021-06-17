@@ -20,6 +20,9 @@ export default {
     watch: {
         value() {
             this.$emit('update', this.value);
+        },
+        consent() {
+            this.value = this.consent;
         }
     }
 }

@@ -17,6 +17,7 @@ export default {
             this.getTestProviders();
             this.addLanguages();
             this.setCurrentLanguage();
+            this.setTimerToEndSession();
         },
         async getHolderConfig() {
             this.$axios({
@@ -78,6 +79,19 @@ export default {
             this.$i18n.locale = this.$store.state.languages.current.locale;
             const html = document.documentElement;
             html.setAttribute('lang', this.$store.state.languages.current.locale)
+        },
+        setTimerToEndSession() {
+            const hours = 24;
+            const time = hours * 3600000
+            setTimeout(() => {
+                this.$router.push({ name: 'Home' })
+                this.$store.commit('sessionEnded')
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.info.sessionEnded.head'),
+                    messageBody: this.$t('message.info.sessionEnded.body'),
+                    closeButton: true
+                })
+            }, time)
         }
     },
     mounted() {

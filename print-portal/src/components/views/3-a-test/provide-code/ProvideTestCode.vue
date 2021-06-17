@@ -25,7 +25,7 @@ export default {
             },
             set(value) {
                 // editing the test code should reset the process
-                this.$store.commit('reset');
+                this.$store.commit('resetProvideCode');
                 const strippedValue = value.replace(/ /g, '');
                 const strippedValue2 = strippedValue.replace(/\t/g, '');
                 const toUpperCase = strippedValue2.toUpperCase();

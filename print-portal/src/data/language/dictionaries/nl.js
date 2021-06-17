@@ -171,6 +171,10 @@ const nl = {
                 'head': 'Je bezoek aan DigiD zit erop',
                 'body': 'We halen nu jouw vaccinaties op. Daarna kun je er een bewijs van maken.',
                 'closeText': 'Ok'
+            },
+            'sessionEnded': {
+                'head': 'Sessie beëindigd',
+                'body': 'Je hebt 24 uur geleden ingelogd, we beëindigen nu je sessie automatisch.'
             }
         },
         'error': {

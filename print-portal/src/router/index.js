@@ -120,7 +120,6 @@ const router = new VueRouter({
     }
 })
 
-// todo remove Vaccination
 const pagesWithoutConsentNeeded = ['Home', 'YourVaccinationsRedirect', 'YourTestResultsRedirect']
 
 router.beforeEach((to, from, next) => {

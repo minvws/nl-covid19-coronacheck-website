@@ -48,7 +48,6 @@ export default {
         goBack() {
             const callback = () => {
                 this.$store.commit('clearAll')
-                this.$store.commit('signedEvents/clear')
                 this.$router.push({ name: 'ChoiceProof' });
             }
             this.$store.commit('modal/set', {
