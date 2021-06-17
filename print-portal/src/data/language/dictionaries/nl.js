@@ -90,8 +90,8 @@ const nl = {
             'openPDF': 'Open PDF'
         },
         'printTestResult': {
-            'pageHeader': 'Je testbewijs',
-            'pageIntro': 'Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Lees hier wat er in staat. Open of download de PDF, print het uit en neem ’m mee.'
+            'pageHeader': 'Print jouw Nederlandse testbewijs',
+            'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een Nederlands testbewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen. Als de Europese regelgeving ingaat (vanaf 1 juli) kun je ook een internationale QR-code maken.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/18-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
         },
         'printVaccination': {
             'pageHeader': 'Print jouw Nederlandse vaccinatiebewijs',
