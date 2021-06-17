@@ -174,7 +174,7 @@ const nl = {
             },
             'sessionEnded': {
                 'head': 'Sessie beëindigd',
-                'body': 'Je hebt 24 uur geleden ingelogd, we beëindigen nu je sessie automatisch.'
+                'body': 'Je bent meer dan 24 uur geleden begonnen op de website. Je sessie is beëindigd.'
             }
         },
         'error': {
