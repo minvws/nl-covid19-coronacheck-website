@@ -1518,3 +1518,7 @@ home-intro-content:
 pleaseNoteFAQs:
   nl: "<strong>Let op</strong>: ben je volledig gevaccineerd en wil je een Nederlands bewijs maken? Dat kan vanaf eind juni."
   en: "<strong>Please note</strong>: have you been fully vaccinated? And do you want to create a Dutch certificate? This is possible from the end of June."
+
+sorry-btn:
+  nl: "Terug naar CoronaCheck"
+  en: "Back to CoronaCheck"
