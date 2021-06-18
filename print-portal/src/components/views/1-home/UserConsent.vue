@@ -56,7 +56,7 @@ export default {
         height: 28px;
         margin-right: 20px;
         border-radius: 3px;
-        border: 1px solid $color-darkgrey;
+        border: 1px solid $color-coronacheck_black;
         cursor: pointer;
     }
 

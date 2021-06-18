@@ -104,7 +104,7 @@ export default {
     .CoronaCheck-logo {
         position: absolute;
         left: 20px;
-        top: 27px;
+        top: 38px;
         color: $color-RO_darkblue;
         font-weight: 700;
         font-size: 20px;
