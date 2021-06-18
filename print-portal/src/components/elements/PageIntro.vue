@@ -26,5 +26,9 @@ export default {
 </template>
 
 <style lang="scss">
-
+    h1 {
+        font-size: 30px;
+        line-height: 1.21875;
+        margin-bottom: 24px;
+    }
 </style>
