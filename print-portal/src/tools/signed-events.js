@@ -70,7 +70,8 @@ const getTokens = async (token) => {
 const getEvents = async (tokenSets, filter) => {
     const response = {
         events: [],
-        errors: []
+        errors: [],
+        hasAtLeastOneUnomi: false
     }
     for (const tokenSet of tokenSets) {
         const eventProvider = store.getters['eventProviders/getTestProviderByIdentifier'](tokenSet.provider_identifier);
@@ -82,6 +83,7 @@ const getEvents = async (tokenSets, filter) => {
                 response.errors.push(error);
             }
             if (result && result.informationAvailable) {
+                response.hasAtLeastOneUnomi = true;
                 await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
                     response.events.push(signedEvent)
                 })

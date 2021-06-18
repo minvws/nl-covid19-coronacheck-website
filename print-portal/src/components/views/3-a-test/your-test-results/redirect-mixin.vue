@@ -87,6 +87,9 @@ export default {
                             closeButton: true
                         });
                         this.gotoPreviousPage()
+                    } else if (this.hasBrokenPromise(result)) {
+                        // will lead to 'no result' page (depending on vaccination / test)
+                        this.checkResult();
                     } else {
                         // regular flow
                         this.createEvents(result);
@@ -114,6 +117,9 @@ export default {
                     });
                 }
             });
+        },
+        hasBrokenPromise(result) {
+            return result.events.length === 0 && this.hasAtLeastOneUnomi;
         },
         eventIsIncomplete(result) {
             for (const signedEvent of result.events) {
