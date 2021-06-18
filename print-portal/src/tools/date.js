@@ -6,6 +6,13 @@ const monthNumberToMonthNameAbbr = (n) => {
     return i18n.t('date.months.abbr.' + (n - 1))
 }
 
+const isValidDateString = (string) => {
+    const isNumeric = (n) => {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
+    return isNumeric(new Date(string).getTime());
+}
+
 const dateToString = (dateInput, dateFormat = 'dd-MM-yyyy', locale) => {
     switch (locale) {
     case 'en':
@@ -39,5 +46,6 @@ export default {
     monthNumberToMonthNameAbbr,
     dateToString,
     dateTimeToString,
-    addHoursToDate
+    addHoursToDate,
+    isValidDateString
 }

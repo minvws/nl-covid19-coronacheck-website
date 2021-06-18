@@ -205,6 +205,10 @@ const nl = {
             'someServerErrorNoResult': {
                 'head': '',
                 'body': '<p>Je vaccinaties konden niet worden opgehaald omdat er iets fout ging bij bepaalde providers. Probeer het nog eens</p>'
+            },
+            'parseErrorInResult': {
+                'head': '',
+                'body': '<p>Er ging iets mis, resultaat kon niet worden gelezen. Neem contact op met je event provider. (Code: x)</p>'
             }
         }
     },

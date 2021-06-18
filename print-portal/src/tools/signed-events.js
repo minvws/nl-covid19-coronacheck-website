@@ -12,7 +12,7 @@ const mockAPI = (code) => {
             method: 'post',
             url: 'https://httpstat.us/' + code
         }).then((response) => {
-            console.log('goed');
+            console.log('ok');
         }).catch((error) => {
             reject(error);
         })

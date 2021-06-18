@@ -1,5 +1,7 @@
 <script>
 import signedEventsTool from '@/tools/signed-events'
+import { cmsDecode } from '@/tools/cms'
+import dateTool from '@/tools/date';
 
 export default {
     name: 'redirect-mixin',
@@ -47,7 +49,15 @@ export default {
                     const is5xx = (statusCode) => {
                         return statusCode >= 500 && statusCode < 600;
                     }
-                    if (this.hasEventsAndError(result, is429)) {
+
+                    if (this.eventIsIncomplete(result)) {
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('message.error.parseErrorInResult.head'),
+                            messageBody: this.$t('message.error.parseErrorInResult.body'),
+                            closeButton: true
+                        });
+                        this.gotoPreviousPage()
+                    } else if (this.hasEventsAndError(result, is429)) {
                         this.$store.commit('modal/set', {
                             messageHead: this.$t('message.error.someServerBusyButResult.head'),
                             messageBody: this.$t('message.error.someServerBusyButResult.body'),
@@ -104,6 +114,30 @@ export default {
                     });
                 }
             });
+        },
+        eventIsIncomplete(result) {
+            for (const signedEvent of result.events) {
+                const payload = cmsDecode(signedEvent.payload);
+                if (payload.status !== 'complete') {
+                    return true;
+                }
+                if (payload.events) {
+                    if (payload.holder && payload.holder.birthDate) {
+                        if (!dateTool.isValidDateString(payload.holder.birthDate)) {
+                            return true;
+                        }
+                    }
+                    for (const proofEvent of payload.events) {
+                        const proofEventOfType = proofEvent[proofEvent.type];
+                        if (proofEventOfType.date) {
+                            if (!dateTool.isValidDateString(proofEventOfType.date)) {
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+            return false;
         },
         hasError(result, errorChecker) {
             let hasError = false
