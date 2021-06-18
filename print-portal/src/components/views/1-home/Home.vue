@@ -52,6 +52,7 @@ export default {
                 :head="$t('views.home.pageHeader')"
                 :intro="$t('views.home.pageIntro')"/>
             <div class="section-block">
+                <h2 class="screen-reader-text">{{ $t('views.home.userConsentHeader') }}</h2>
                 <UserConsent
                     @update="setUserConsent"
                     :consent="consent"
