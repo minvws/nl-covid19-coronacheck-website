@@ -117,9 +117,9 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Voor toegang tot bepaalde locaties of activiteiten heb je een negatieve testuitslag nodig. Met de app bewijs je dat je negatief op corona getest bent.<br /><br />Binnenkort kun je met CoronaCheck ook van je vaccinatiebewijs een QR-code maken. Die kun je gebruiken in Nederland of voor reizen binnen Europa. <a href="/nl/faq/1-3-wanneer-kan-ik-coronacheck-in-nederland-en-internationaal-gebruiken/">Vanaf wanneer kan dat?</a>
+  nl: Met de app bewijs je dat je gevaccineerd of negatief op corona getest bent. Je kan CoronaCheck momenteel gebruiken voor toegang tot sommige locaties of landen binnen de Europese Unie. 
   fy: 
-  en: With this app, you are able to prove you've recently tested negative for corona. This gives you access to certain locations or activities.<br /><br />Soon you will also be able to turn your vaccination certificate into a QR code with CoronaCheck. You can use it in the Netherlands or for travel within Europe. <a href="/en/faq/1-3-wanneer-kan-ik-coronacheck-in-nederland-en-internationaal-gebruiken/">When will that be possible?</a>
+  en: With this app, you are able to prove you've been vaccinated or you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain locations or countries within the European Union. 
   ar: 
   bg: 
   de: 
@@ -143,9 +143,9 @@ scanner-header-title:
   tr: 
 
 scanner-header-subtitle:
-  nl: Met CoronaCheck Scanner controleer je de geldigheid van het testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
+  nl: Met CoronaCheck Scanner controleer je de geldigheid van het vaccinatie- of testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
   fy: 
-  en: With CoronaCheck Scanner you check the validity of the visitor’s negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to get access to certain locations or activities.
+  en: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use the CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
   ar: 
   bg: 
   de: 
@@ -400,9 +400,9 @@ faq-category-scanner-general:
   tr:  
 
 faq-category-scanner-testdocument:
-  nl: Toegang met testbewijs
+  nl: Toegang met test of vaccinatiebewijs
   fy: 
-  en: Getting access with a test certificate 
+  en: Getting access with a certificate 
   ar: 
   bg: 
   de: 
@@ -804,7 +804,7 @@ footer-colophon:
 footer-logos-info_md:
   nl: CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community tijdens de ontwikkeling meegekeken en getest.
   fy: 
-  en: CoronaCheck and CoronaCheck Scanner have been developed by the Ministry of Public Health, Welfare and Sport. Both the apps and the test certificate on paper would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens. They all lent a hand and helped to test the app during its development.
+  en: CoronaCheck and CoronaCheck Scanner have been developed by the Ministry of Public Health, Welfare and Sport. Both the apps and the certificate on paper would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens. They all lent a hand and helped to test the app during its development.
   ar: 
   bg: 
   de: 
@@ -1244,7 +1244,7 @@ scanner-information-title:
   tr: 
 
 scanner-information-qrcode:
-  nl: In de QR-code staan minimale persoonsgegevens van de bezoeker
+  nl: In de QR-code staan minimale gegevens van de bezoeker
   fy: 
   en: The QR code contains a minimum amount of data of the visitor
   ar: 
@@ -1257,7 +1257,7 @@ scanner-information-qrcode:
   tr: 
     
 scanner-information-naw:
-  nl: Deze gegevens mag je alleen gebruiken voor controle van het testbewijs
+  nl: Deze gegevens mag je alleen gebruiken voor controle van het bewijs
   fy: 
   en: You're only allowed to use this data to check the valid negative test result
   ar: 
@@ -1474,14 +1474,14 @@ print-version-img:
   en: /img/printbewijs-en.png
 
 print-version-title:
-  nl: Liever een papieren testbewijs?
+  nl: Liever een papieren bewijs?
   fy: 
-  en: Prefer a test certificate on paper?
+  en: Prefer a certificate on paper?
  
 print-version-content:
-  nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over testbewijzen op papier</span></a>.
+  nl: Een bewijs op papier is handig als je geen smartphone hebt. Je kunt een bewijs maken van een vaccinatie of van een testuitslag. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over bewijzen op papier</span></a>.
   fy: 
-  en: A test certificate on paper is convenient if you don't have a smartphone. <a href="/en/faq#paper-certificate">Read more<span class="screen-reader-text"> about a test certificate on paper</span></a>.
+  en: A certificate of your test or vaccination on paper is convenient if you don’t have a smartphone. <a href="/en/faq#paper-certificate">Read more<span class="screen-reader-text"> about a certificate on paper</span></a>.
 
 print-version-url: 
   nl: /print
@@ -1491,7 +1491,7 @@ print-version-url:
 print-version-url-link: 
   nl: Maak papieren testbewijs
   fy: 
-  en: Make test certificate on paper
+  en: Make certificate on paper
 
 about-coronacheck-scanner-title:
   nl: CoronaCheck Scanner
