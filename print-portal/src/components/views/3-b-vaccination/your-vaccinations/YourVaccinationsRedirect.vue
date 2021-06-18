@@ -48,9 +48,6 @@ export default {
             // todo
             // this.$router.push({ name: 'VaccinationsNotPossible' });
         }
-    },
-    mounted() {
-        this.completeAuthentication();
     }
 }
 </script>

@@ -51,9 +51,6 @@ export default {
             // this.$router.push({ name: 'TestResultPending' });
             // this.$router.push({ name: 'TestResultNotPossible' });
         }
-    },
-    mounted() {
-        this.completeAuthentication();
     }
 }
 </script>
