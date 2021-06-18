@@ -4,6 +4,10 @@
     padding: 1em 1.6em;
     position: relative;
 
+    a {
+        text-decoration: underline;
+    }
+
     @media (min-width: 680px) {
         width: calc(100% - (54px * 2));
         padding: 50px 80px;

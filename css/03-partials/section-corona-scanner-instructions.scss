@@ -7,6 +7,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    a {
+        text-decoration: underline;
+    }
 }
 
 .scanner-instructions__step {

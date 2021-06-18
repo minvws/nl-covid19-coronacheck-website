@@ -3,6 +3,10 @@
     max-width: 940px;
     color: #333;
 
+    a {
+        text-decoration: underline;
+    }
+
     @media (min-width: 680px) {
         width: calc(100% - (54px * 2));
         display: flex;

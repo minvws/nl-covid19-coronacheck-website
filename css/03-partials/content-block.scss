@@ -1,25 +1,17 @@
 .content-center {
     position: relative; // Necessary for specific iOS iPad overflow issue
     display: block; // Necessary for IE11
-    margin-top: -26px;
     background: #fff;
-    border-radius: 26px 26px 0 0;
     padding: 20px 20px;
     max-width: 940px;
 
     @media (min-width: 740px) {
         padding: 20px 100px;
-        margin: -50px auto 0;
-        border-radius: 34px 34px 0 0;
+        margin: 0 auto;
     }
 
     @media (min-width: 960px) {
         padding: 26px 200px 20px 200px;
-    }
-
-    &.icon-chevron-left {
-        border-radius: 0;
-        margin-top: 0;
     }
 }
 

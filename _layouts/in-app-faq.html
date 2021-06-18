@@ -24,124 +24,132 @@
     <div class="content-block">
       <h1 id="frequently-asked-questions">{{ site.data.translations.faq-coronacheck[page.lang] }}</h1>
 
-      {% assign questions = site.questions-in-app | where:"lang", page.lang | sort: "index"  %}
+      {% assign questionSetOne = site.questions-in-app | where:"lang", page.lang | where:"set", 1 | where:"webonly", false | sort: "index" %}
+      {% assign questionSetTwo = site.questions-in-app | where:"lang", page.lang | where:"set", 2 | where:"webonly", false | sort: "index" %}
+      {% assign questionSetThree = site.questions-in-app | where:"lang", page.lang | where:"set", 3 | where:"webonly", false | sort: "index" %}
+      {% assign questionSetFour = site.questions-in-app | where:"lang", page.lang | where:"set", 4 | where:"webonly", false | sort: "index" %}
+      {% assign questionSetFive = site.questions-in-app | where:"lang", page.lang | where:"set", 5 | where:"webonly", false | sort: "index" %}
+      {% assign questionSetSix = site.questions-in-app | where:"lang", page.lang | where:"set", 6 | where:"webonly", false | sort: "index" %}
+      {% assign questionSetSeven = site.questions-in-app | where:"lang", page.lang | where:"set", 7 | where:"webonly", false | sort: "index" %}
 
       <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
         
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-general[page.lang]|slugify }}">{{ site.data.translations.faq-category-general[page.lang] }}</h2>
+        {% if questionSetOne.size > 0 %}
+            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-one[page.lang]|slugify }}">{{ site.data.translations.faq-category-one[page.lang] }}</h2>
 
-        <div class="faq-layout__contents __overview">
-            <ul class="faq-layout-contents__list">
-              {% for question in questions %}
-                {% if question.set == 1 %}
-                  <li>
+            <div class="faq-layout__contents __overview">
+                <ul class="faq-layout-contents__list">
+                {% for question in questionSetOne %}
+                    <li>
+                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                            {{ question.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        {% if questionSetTwo.size > 0 %}
+            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-two[page.lang]|slugify }}">{{ site.data.translations.faq-category-two[page.lang] }}</h2>
+
+            <div class="faq-layout__contents __overview">
+                <ul class="faq-layout-contents__list">
+                {% for question in questionSetTwo %}
+                    <li>
+                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                            {{ question.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        {% if questionSetThree.size > 0 %}
+            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-three[page.lang]|slugify }}">{{ site.data.translations.faq-category-three[page.lang] }}</h2>
+
+            <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
+                <ul class="faq-layout-contents__list">
+                {% for question in questionSetThree %}
+                    <li>
                     <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
                         {{ question.title }}
                     </a>
-                  </li>
-                {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
 
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-howtouse[page.lang]|slugify }}">{{ site.data.translations.faq-category-howtouse[page.lang] }}</h2>
+        {% if questionSetFour.size > 0 %}
+            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-four[page.lang]|slugify }}">{{ site.data.translations.faq-category-four[page.lang] }}</h2>
 
-        <div class="faq-layout__contents __overview">
-            <ul class="faq-layout-contents__list">
-            {% for question in questions %}
-                {% if question.set == 2 %}
-                  <li>
+            <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
+                <ul class="faq-layout-contents__list">
+                {% for question in questionSetFour %}
+                {% if question.set == 4  %}
+                    <li>
                     <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
                         {{ question.title }}
                     </a>
-                  </li>
-                {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
 
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-usingtheapp[page.lang]|slugify }}">{{ site.data.translations.faq-category-usingtheapp[page.lang] }}</h2>
+        {% if questionSetFive.size > 0 %}
+            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-five[page.lang]|slugify }}">{{ site.data.translations.faq-category-five[page.lang] }}</h2>
 
-        <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-            <ul class="faq-layout-contents__list">
-              {% for question in questions %}
-              {% if question.set == 3 %}
-                <li>
-                  <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                      {{ question.title }}
-                  </a>
-                </li>
-              {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
+            <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
+                <ul class="faq-layout-contents__list">
+                {% for question in questionSetFive %}
+                    <li>
+                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                        {{ question.title }}
+                    </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
 
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-usingprintversion[page.lang]|slugify }}">{{ site.data.translations.faq-category-usingprintversion[page.lang] }}</h2>
+        {% if questionSetSix.size > 0 %}
+            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-six[page.lang]|slugify }}">{{ site.data.translations.faq-category-six[page.lang] }}</h2>
 
-        <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-            <ul class="faq-layout-contents__list">
-              {% for question in questions %}
-              {% if question.set == 4 %}
-                <li>
-                  <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                      {{ question.title }}
-                  </a>
-                </li>
-                {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
+            <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
+                <ul class="faq-layout-contents__list">
+                {% for question in questionSetSix %}
+                    <li>
+                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                        {{ question.title }}
+                    </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
 
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-misc[page.lang]|slugify }}">{{ site.data.translations.faq-category-misc[page.lang] }}</h2>
+        {% if questionSetSeven.size > 0 %}
+            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-seven[page.lang]|slugify }}">{{ site.data.translations.faq-category-seven[page.lang] }}</h2>
 
-        <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-            <ul class="faq-layout-contents__list">
-              {% for question in questions %}
-              {% if question.set == 6 %}
-                <li>
-                  <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                      {{ question.title }}
-                  </a>
-                </li>
-              {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
+            <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
+                <ul class="faq-layout-contents__list">
+                {% for question in questionSetSeven %}
+                    <li>
+                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                        {{ question.title }}
+                    </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
 
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-troubleshooting[page.lang]|slugify }}">{{ site.data.translations.faq-category-troubleshooting[page.lang] }}</h2>
-
-        <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-            <ul class="faq-layout-contents__list">
-              {% for question in questions %}
-              {% if question.set == 7 %}
-                <li>
-                  <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                      {{ question.title }}
-                  </a>
-                </li>
-              {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
-
-        <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-privacy[page.lang]|slugify }}">{{ site.data.translations.faq-category-privacy[page.lang] }}</h2>
-
-        <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
-            <ul class="faq-layout-contents__list">
-              {% for question in questions %}
-              {% if question.set == 8 %}
-                <li>
-                  <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                      {{ question.title }}
-                  </a>
-                </li>
-              {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
       </div>
     </div>
-
   </main>
 </body>
 </html>
