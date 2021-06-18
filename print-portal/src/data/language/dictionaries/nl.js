@@ -208,7 +208,7 @@ const nl = {
             },
             'parseErrorInResult': {
                 'head': '',
-                'body': '<p>Er ging iets mis, resultaat kon niet worden gelezen. Neem contact op met je event provider. (Code: x)</p>'
+                'body': '<p>Er ging iets mis, resultaat kon niet worden gelezen. Neem contact op met je event provider. (Code: %{identifier})</p>'
             }
         }
     },

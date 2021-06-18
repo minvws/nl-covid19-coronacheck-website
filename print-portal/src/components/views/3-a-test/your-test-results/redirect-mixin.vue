@@ -49,11 +49,13 @@ export default {
                     const is5xx = (statusCode) => {
                         return statusCode >= 500 && statusCode < 600;
                     }
-
-                    if (this.eventIsIncomplete(result)) {
+                    const dateIsCorrupt = this.dataIsCorrupt(result);
+                    const eventIsIncomplete = this.eventIsIncomplete(result);
+                    if (dateIsCorrupt || eventIsIncomplete) {
+                        const identifier = dateIsCorrupt.length > 0 ? dateIsCorrupt : eventIsIncomplete;
                         this.$store.commit('modal/set', {
                             messageHead: this.$t('message.error.parseErrorInResult.head'),
-                            messageBody: this.$t('message.error.parseErrorInResult.body'),
+                            messageBody: this.$t('message.error.parseErrorInResult.body', { identifier }),
                             closeButton: true
                         });
                         this.gotoPreviousPage()
@@ -121,29 +123,35 @@ export default {
         hasBrokenPromise(result) {
             return result.events.length === 0 && this.hasAtLeastOneUnomi;
         },
-        eventIsIncomplete(result) {
+        dataIsCorrupt(result) {
             for (const signedEvent of result.events) {
                 const payload = cmsDecode(signedEvent.payload);
-                if (payload.status !== 'complete') {
-                    return true;
-                }
                 if (payload.events) {
                     if (payload.holder && payload.holder.birthDate) {
                         if (!dateTool.isValidDateString(payload.holder.birthDate)) {
-                            return true;
+                            return payload.providerIdentifier;
                         }
                     }
                     for (const proofEvent of payload.events) {
                         const proofEventOfType = proofEvent[proofEvent.type];
                         if (proofEventOfType.date) {
                             if (!dateTool.isValidDateString(proofEventOfType.date)) {
-                                return true;
+                                return payload.providerIdentifier;
                             }
                         }
                     }
                 }
             }
-            return false;
+            return '';
+        },
+        eventIsIncomplete(result) {
+            for (const signedEvent of result.events) {
+                const payload = cmsDecode(signedEvent.payload);
+                if (payload.status !== 'complete') {
+                    return payload.providerIdentifier;
+                }
+            }
+            return '';
         },
         hasError(result, errorChecker) {
             let hasError = false
