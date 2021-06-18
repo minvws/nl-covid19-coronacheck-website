@@ -38,16 +38,97 @@ export default {
         collectEvents(token) {
             this.$store.commit('signedEvents/clear');
             this.isLoading = true;
-            signedEventsTool.collect(token, this.type).then(signedEvents => {
-                this.$store.commit('signedEvents/createAll', signedEvents);
+            signedEventsTool.collect(token, this.type).then(result => {
                 this.isLoading = false;
-                this.checkResult();
+                if (result) {
+                    const is429 = (statusCode) => {
+                        return statusCode === 429
+                    }
+                    const is5xx = (statusCode) => {
+                        return statusCode >= 500 && statusCode < 600;
+                    }
+                    if (this.hasEventsAndError(result, is429)) {
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('message.error.someServerBusyButResult.head'),
+                            messageBody: this.$t('message.error.someServerBusyButResult.body'),
+                            closeButton: true
+                        });
+                        this.createEvents(result);
+                        this.checkResult();
+                    } else if (this.hasNoEventsAndError(result, is429)) {
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('message.error.someServerBusyNoResult.head'),
+                            messageBody: this.$t('message.error.someServerBusyNoResult.body'),
+                            closeButton: true
+                        });
+                        this.gotoPreviousPage()
+                    } else if (this.hasEventsAndError(result, is5xx)) {
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('message.error.someServerErrorButResult.head'),
+                            messageBody: this.$t('message.error.someServerErrorButResult.body'),
+                            closeButton: true
+                        });
+                        this.createEvents(result);
+                        this.checkResult();
+                    } else if (this.hasNoEventsAndError(result, is5xx)) {
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('message.error.someServerErrorNoResult.head'),
+                            messageBody: this.$t('message.error.someServerErrorNoResult.body'),
+                            closeButton: true
+                        });
+                        this.gotoPreviousPage()
+                    } else {
+                        // regular flow
+                        this.createEvents(result);
+                        this.checkResult();
+                    }
+                } else {
+                    this.generalError();
+                }
             }, (error) => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.error.general.head'),
-                    messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                    closeButton: true
-                });
+                this.loading = false;
+                this.$store.commit('modal/close');
+                if (error && error.response && error.response.status) {
+                    if (error.response.status === 429) {
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('message.error.serverBusy.head'),
+                            messageBody: this.$t('message.error.serverBusy.body'),
+                            closeButton: true
+                        });
+                    }
+                } else {
+                    this.$store.commit('modal/set', {
+                        messageHead: this.$t('message.error.general.head'),
+                        messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
+                        closeButton: true
+                    });
+                }
+            });
+        },
+        hasError(result, errorChecker) {
+            let hasError = false
+            for (const error of result.errors) {
+                if (error.response && errorChecker(error.response.status)) {
+                    hasError = true;
+                }
+            }
+            return hasError;
+        },
+        hasEventsAndError(result, errorChecker) {
+            return result.events.length > 0 && this.hasError(result, errorChecker);
+        },
+        hasNoEventsAndError(result, errorChecker) {
+            return result.events.length === 0 && this.hasError(result, errorChecker);
+        },
+        createEvents(result) {
+            this.$store.commit('signedEvents/createAll', result.events);
+        },
+        generalError() {
+            this.gotoPreviousPage();
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.error.general.head'),
+                messageBody: this.$t('message.error.general.body'),
+                closeButton: true
             });
         }
     },

@@ -185,6 +185,26 @@ const nl = {
             'general': {
                 'head': 'Sorry, er gaat iets mis',
                 'body': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck via <a href="tel:0800-1421">0800-1421</a>.</p>'
+            },
+            'serverBusy': {
+                'head': 'Sorry, er gaat iets mis',
+                'body': '<p>Het is erg druk, probeer het later op de dag nog eens</p>'
+            },
+            'someServerBusyButResult': {
+                'head': 'Sorry, er gaat iets mis',
+                'body': '<p>Gegevens mogelijk niet compleet. Door drukte of een storing bij een van de partijen kunnen er gegevens ontbreken. Probeer het eventueel later nog een keer.</p>'
+            },
+            'someServerBusyNoResult': {
+                'head': 'Sorry, het is erg druk',
+                'body': '<p>Je vaccinaties konden niet worden opgehaald omdat het te druk is. Probeer het op een later oment nog eens.</p>'
+            },
+            'someServerErrorButResult': {
+                'head': '',
+                'body': '<p>Mogelijk zijn niet alle vaccinaties opgehaald omdat er iets fout ging bij bepaalde providers. Indien je vaccinaties mist, probeer het dan nog eens.</p>'
+            },
+            'someServerErrorNoResult': {
+                'head': '',
+                'body': '<p>Je vaccinaties konden niet worden opgehaald omdat er iets fout ging bij bepaalde providers. Probeer het nog eens</p>'
             }
         }
     },

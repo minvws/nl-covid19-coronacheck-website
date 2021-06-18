@@ -1,18 +1,48 @@
 import axios from 'axios';
 import store from '@/store'
 import { cmsDecode } from '@/tools/cms'
+import { errors, testScenarios } from '@/data/scenarios/test-scenarios'
+
+const testing = false;
+const testScenario = testScenarios[6];
+
+const mockAPI = (code) => {
+    return new Promise((resolve, reject) => {
+        axios({
+            method: 'post',
+            url: 'https://httpstat.us/' + code
+        }).then((response) => {
+            console.log('goed');
+        }).catch((error) => {
+            reject(error);
+        })
+    })
+}
 
 const collect = async (token, filter = '') => {
     return new Promise((resolve, reject) => {
-        getTokens(token).then((tokenSets) => {
-            getEvents(tokenSets, filter).then(events => {
-                resolve(events);
+        if (testing && testScenario.collect) {
+            if (testScenario.busy) {
+                mockAPI(429).catch((error) => reject(error))
+            } else {
+                if (testScenario.details) {
+                    reject(errors[1])
+                } else {
+                    reject(errors[0])
+                }
+            }
+        } else {
+            getTokens(token).then((tokenSets) => {
+                getEvents(tokenSets, filter).then(result => {
+                    console.log(result);
+                    resolve(result);
+                }, (error) => {
+                    reject(error)
+                })
             }, (error) => {
                 reject(error)
             })
-        }, (error) => {
-            reject(error)
-        })
+        }
     })
 }
 
@@ -38,7 +68,10 @@ const getTokens = async (token) => {
 }
 
 const getEvents = async (tokenSets, filter) => {
-    const allEvents = []
+    const response = {
+        events: [],
+        errors: []
+    }
     for (const tokenSet of tokenSets) {
         const eventProvider = store.getters['eventProviders/getTestProviderByIdentifier'](tokenSet.provider_identifier);
         let result;
@@ -46,39 +79,46 @@ const getEvents = async (tokenSets, filter) => {
             try {
                 result = await unomi(eventProvider, tokenSet);
             } catch (error) {
-                console.error(error);
+                response.errors.push(error);
             }
             if (result && result.informationAvailable) {
                 await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
-                    allEvents.push(signedEvent)
+                    response.events.push(signedEvent)
                 })
             }
         }
     }
-    return allEvents;
+    return response;
 }
 
 const unomi = async (eventProvider, tokenSet) => {
     return new Promise((resolve, reject) => {
-        const url = eventProvider.unomi_url;
-        const headers = {
-            'Authorization': `Bearer ${tokenSet.unomi}`,
-            'Content-Type': 'application/json'
-        };
-        axios({
-            method: 'post',
-            headers: headers,
-            url: url
-        }).then((response) => {
-            if (response.data && response.data.payload) {
-                const payload = cmsDecode(response.data.payload)
-                resolve(payload)
-            } else {
-                resolve();
+        if (testing && testScenario.provider && eventProvider.provider_identifier === testScenario.provider) {
+            if (testScenario.busy) {
+                mockAPI(429).catch((error) => reject(error))
+            } else if (testScenario.error) {
+                mockAPI(505).catch((error) => reject(error))
             }
-        }).catch((error) => {
-            reject(error);
-        })
+        } else {
+            const headers = {
+                'Authorization': `Bearer ${tokenSet.unomi}`,
+                'Content-Type': 'application/json'
+            };
+            axios({
+                method: 'post',
+                headers: headers,
+                url: eventProvider.unomi_url
+            }).then((response) => {
+                if (response.data && response.data.payload) {
+                    const payload = cmsDecode(response.data.payload)
+                    resolve(payload)
+                } else {
+                    resolve();
+                }
+            }).catch((error) => {
+                reject(error);
+            })
+        }
     })
 }
 
