@@ -9,7 +9,7 @@ export default {
     components: { Page, PageIntro, PageChoice, PreferMobile },
     computed: {
         maxValidityHoursForTestResult() {
-            return this.$store.state.holderConfig.maxValidityHours
+            return this.$store.state.holderConfig.maxValidityHours;
         }
     },
     methods: {
@@ -17,7 +17,12 @@ export default {
             this.$router.push({ name: 'Home' })
         },
         gotoChoiceTestLocation() {
-            this.$router.push({ name: 'ChoiceTestLocation' });
+            const ggdEnabled = this.$store.state.holderConfig.ggdEnabled
+            if (ggdEnabled) {
+                this.$router.push({ name: 'ChoiceTestLocation' });
+            } else {
+                this.$router.push({ name: 'ProvideCode' });
+            }
         },
         gotoVaccinationPage() {
             this.$router.push({ name: 'CollectVaccination' });

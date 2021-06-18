@@ -244,7 +244,12 @@ export default {
             }
         },
         back() {
-            this.$router.push({ name: 'ChoiceTestLocation' });
+            const ggdEnabled = this.$store.state.holderConfig.ggdEnabled
+            if (ggdEnabled) {
+                this.$router.push({ name: 'ChoiceTestLocation' });
+            } else {
+                this.$router.push({ name: 'ChoiceProof' });
+            }
         }
     }
 }
