@@ -1,0 +1,41 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+
+
+<!DOCTYPE html>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+<!--
+  This website is generated at {{ site.time }}.
+  The code is open source. You are welcome to contribute. Go to git: 
+  https://github.com/minvws/nl-covid19-coronacheck-website
+-->
+
+{% if page.collection == 'questions-scanner-in-app' or page.domain == 'scanner' %}
+  {% include head.html for="scanner" in-app="true" %}
+{% else %}
+  {% include head.html in-app="true" %}
+{% endif %}
+
+<body>
+    <div class="logobar">
+        <div class="logo">
+            <a href="{{ langSlug }}">
+                <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}" width="40" height="80">
+            </a>
+        </div>
+    </div>
+
+    <main class="content-center content-center__in_app content-sorry" id="content">
+
+        <img src="{{ site.baseurl }}/img/sorry.svg" width="236" height="335" alt="" class="content-sorry_image" />
+        <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
+        {% if page.title %}<h1 id="{{ page.title | slugify }}" class="content-sorry_title">{{ page.title }}</h1>{% endif %}
+        {{ content }}
+        </div>
+    </main>
+</body>
+</html>
+
