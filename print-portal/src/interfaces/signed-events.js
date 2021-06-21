@@ -1,47 +1,18 @@
 import axios from 'axios';
 import store from '@/store'
 import { cmsDecode } from '@/tools/cms'
-import { errors, testScenarios } from '@/data/scenarios/test-scenarios'
-
-const testing = false;
-const testScenario = testScenarios[6];
-
-const mockAPI = (code) => {
-    return new Promise((resolve, reject) => {
-        axios({
-            method: 'post',
-            url: 'https://httpstat.us/' + code
-        }).then((response) => {
-            console.log('ok');
-        }).catch((error) => {
-            reject(error);
-        })
-    })
-}
 
 const collect = async (token, filter = '') => {
     return new Promise((resolve, reject) => {
-        if (testing && testScenario.collect) {
-            if (testScenario.busy) {
-                mockAPI(429).catch((error) => reject(error))
-            } else {
-                if (testScenario.details) {
-                    reject(errors[1])
-                } else {
-                    reject(errors[0])
-                }
-            }
-        } else {
-            getTokens(token).then((tokenSets) => {
-                getEvents(tokenSets, filter).then(result => {
-                    resolve(result);
-                }, (error) => {
-                    reject(error)
-                })
+        getTokens(token).then((tokenSets) => {
+            getEvents(tokenSets, filter).then(result => {
+                resolve(result);
             }, (error) => {
                 reject(error)
             })
-        }
+        }, (error) => {
+            reject(error)
+        })
     })
 }
 
@@ -99,32 +70,24 @@ const getEvents = async (tokenSets, filter) => {
 
 const unomi = async (eventProvider, tokenSet) => {
     return new Promise((resolve, reject) => {
-        if (testing && testScenario.provider && eventProvider.provider_identifier === testScenario.provider) {
-            if (testScenario.busy) {
-                mockAPI(429).catch((error) => reject(error))
-            } else if (testScenario.error) {
-                mockAPI(505).catch((error) => reject(error))
+        const headers = {
+            'Authorization': `Bearer ${tokenSet.unomi}`,
+            'Content-Type': 'application/json'
+        };
+        axios({
+            method: 'post',
+            headers: headers,
+            url: eventProvider.unomi_url
+        }).then((response) => {
+            if (response.data && response.data.payload) {
+                const payload = cmsDecode(response.data.payload)
+                resolve(payload)
+            } else {
+                resolve();
             }
-        } else {
-            const headers = {
-                'Authorization': `Bearer ${tokenSet.unomi}`,
-                'Content-Type': 'application/json'
-            };
-            axios({
-                method: 'post',
-                headers: headers,
-                url: eventProvider.unomi_url
-            }).then((response) => {
-                if (response.data && response.data.payload) {
-                    const payload = cmsDecode(response.data.payload)
-                    resolve(payload)
-                } else {
-                    resolve();
-                }
-            }).catch((error) => {
-                reject(error);
-            })
-        }
+        }).catch((error) => {
+            reject(error);
+        })
     })
 }
 
@@ -141,7 +104,7 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
             url: url,
             data: { filter: filter }
         }).then((response) => {
-            // console.log(cmsDecode(response.data.payload));
+            console.log(cmsDecode(response.data.payload));
             resolve(response.data)
         }).catch((error) => {
             reject(error);
