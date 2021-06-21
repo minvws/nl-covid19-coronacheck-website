@@ -14,7 +14,7 @@ const html = `
         Doses: <b>%{doseNumber} van %{totalDoses}</b><br>
         Prikdatum: <b>%{dateString}</b><br>
         Gevaccineerd in: <b>%{country}</b><br>
-        Identificatiecode: <b>%{identificationCode}</b>
+        Identificatiecode: <b><span class="identificatie-code">%{identificationCode}</span></b>
     </p>
 `;
 

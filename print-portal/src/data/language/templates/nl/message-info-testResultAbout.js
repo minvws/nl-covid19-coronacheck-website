@@ -25,5 +25,5 @@ export const messageInfoTestResultAboutV3 = `
     Testlocatie: <b>%{testLocation}</b><br>
     Testproducent: <b>%{manufacturer}</b><br>
     Getest in: <b>%{country}</b><br>
-    Identificatiecode: <b>%{identificationCode}</b>
+    Identificatiecode: <b><span class="identificatie-code">%{identificationCode}</span></b>
 </p>`;
