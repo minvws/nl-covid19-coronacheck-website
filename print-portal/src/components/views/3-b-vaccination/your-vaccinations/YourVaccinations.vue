@@ -13,7 +13,7 @@ export default {
     computed: {
         vaccinationSignedEvents() {
             return this.$store.getters['signedEvents/getProofEvents']('vaccination').sort((a, b) => {
-                return dateTool.getTime(a.vaccination.date) - dateTool.getTime(b.vaccination.date);
+                return dateTool.getTime(a.event.vaccination.date) - dateTool.getTime(b.event.vaccination.date);
             })
         }
     },
@@ -41,15 +41,15 @@ export default {
                 //
                 // } else {
                 //     this.$store.commit('modal/set', {
-                //         messageHead: this.$t('generalError'),
-                //         messageBody: this.$t('generalErrorBody'),
+                //         messageHead: this.$t('message.error.general.head'),
+                //         messageBody: this.$t('message.error.general.body'),
                 //         closeButton: true
                 //     });
                 // }
             }).catch(error => {
                 this.$store.commit('modal/set', {
-                    messageHead: this.$t('generalError'),
-                    messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
+                    messageHead: this.$t('message.error.general.head'),
+                    messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
                     closeButton: true
                 });
             })
