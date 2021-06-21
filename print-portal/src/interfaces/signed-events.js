@@ -34,7 +34,6 @@ const collect = async (token, filter = '') => {
         } else {
             getTokens(token).then((tokenSets) => {
                 getEvents(tokenSets, filter).then(result => {
-                    console.log(result);
                     resolve(result);
                 }, (error) => {
                     reject(error)
@@ -75,14 +74,19 @@ const getEvents = async (tokenSets, filter) => {
     }
     for (const tokenSet of tokenSets) {
         const eventProvider = store.getters['eventProviders/getTestProviderByIdentifier'](tokenSet.provider_identifier);
+
         let result;
         if (eventProvider) {
+            console.log('provider_identifier', eventProvider.provider_identifier, eventProvider.unomi_url);
             try {
                 result = await unomi(eventProvider, tokenSet);
             } catch (error) {
+                console.log('error');
+                console.dir(error);
                 response.errors.push(error);
             }
             if (result && result.informationAvailable) {
+                console.log('unomi');
                 response.hasAtLeastOneUnomi = true;
                 await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
                     response.events.push(signedEvent)
@@ -137,7 +141,7 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
             url: url,
             data: { filter: filter }
         }).then((response) => {
-            console.log(cmsDecode(response.data.payload));
+            // console.log(cmsDecode(response.data.payload));
             resolve(response.data)
         }).catch((error) => {
             reject(error);
