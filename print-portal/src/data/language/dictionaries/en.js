@@ -157,12 +157,14 @@ const en = {
             },
             'digidCanceled': {
                 'head': 'TODO digidCanceled head',
-                'body': 'TODO digidCanceled body'
+                'body': 'TODO digidCanceled body',
+                'vaccination': 'vaccinations',
+                'negativetest': 'test result'
             },
             'digidFinished': {
                 'head': 'TODO Je bezoek aan DigiD zit erop',
                 'body': 'TODOWe halen nu jouw vaccinaties op. Daarna kun je er een bewijs van maken.',
-                'closeText': 'TODO Ok'
+                'closeText': 'Okay'
             }
         },
         'error': {
@@ -198,8 +200,8 @@ const en = {
     'identity_image_alt': 'Make Holder QR code',
     'logo-government': 'Logo Dutch Government, homepage',
     'next': 'Next',
-    'orderWords': ['First', 'Second', 'Third'],
-    'skiplink': 'Skip to content'
+    'skiplink': 'Skip to content',
+    'unknown': 'Unknown'
 }
 
 export default en;

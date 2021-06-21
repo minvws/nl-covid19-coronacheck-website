@@ -4,6 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import NegativeTest from './NegativeTest';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
+import signer from '@/interfaces/signer';
 
 export default {
     name: 'YourTestResults',
@@ -42,8 +43,18 @@ export default {
         }
     },
     methods: {
-        createTestCertificate() {
-            this.$router.push({ name: 'PrintTestResult' });
+        gotoPrint() {
+            signer.sign(this.$store.state.signedEvents.all).then(response => {
+                console.log(response);
+                this.$store.commit('qrs/add', response);
+                // this.$router.push({ name: 'PrintTestResult' });
+            }).catch(error => {
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.error.general.head'),
+                    messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
+                    closeButton: true
+                });
+            })
         },
         goBack() {
             const callback = () => {
@@ -96,7 +107,7 @@ export default {
                 </div>
                 <div class="section-block__footer">
                     <CcButton
-                        @select="createTestCertificate()"
+                        @select="gotoPrint()"
                         :label="$t('views.yourTestResults.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton

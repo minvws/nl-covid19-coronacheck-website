@@ -30,8 +30,8 @@ export default {
                 }
             }).catch((error) => {
                 this.$store.commit('modal/set', {
-                    messageHead: this.$t('generalError'),
-                    messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
+                    messageHead: this.$t('message.error.general.head'),
+                    messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
                     closeButton: true
                 });
             })

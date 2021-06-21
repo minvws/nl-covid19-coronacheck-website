@@ -6,6 +6,10 @@ const getLeadingZero = (n) => {
     }
 }
 
+const isNumeric = (value) => {
+    return /^-?\d+$/.test(value);
+}
+
 export default {
-    getLeadingZero
+    getLeadingZero, isNumeric
 }

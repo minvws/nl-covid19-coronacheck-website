@@ -10,13 +10,25 @@ export default {
     computed: {},
     methods: {
         getToken() {
-            this.authVaccinations.startAuthentication()
+            this.authVaccinations.startAuthentication().then(() => {
+                //
+            }).catch(error => {
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.error.general.head'),
+                    messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
+                    closeButton: true
+                });
+            })
         },
         back() {
             this.$router.push({ name: 'ChoiceProof' })
         },
         dontHaveDigid() {
-            window.open('https://www.digid.nl/digid-aanvragen-activeren#hoe-vraag-ik-digid-aan')
+            const urls = {
+                nl: 'https://www.digid.nl/digid-aanvragen-activeren#hoe-vraag-ik-digid-aan',
+                en: 'https://www.digid.nl/en/apply-or-activate-digid'
+            }
+            window.open(urls[this.currentLanguage.locale])
         }
     }
 }

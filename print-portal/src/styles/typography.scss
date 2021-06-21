@@ -26,10 +26,8 @@ h4 {
     color: $color-coronacheck_black;
 }
 
-.only-clickable-for-mobile {
-    pointer-events: none;
-    color: inherit;
-    text-decoration: none;
+.identificatie-code {
+    word-wrap: break-word;
 }
 
 @include mobile() {
@@ -40,10 +38,5 @@ h4 {
 
     h3 {
         font-size: 18px;
-    }
-
-    .only-clickable-for-mobile {
-        pointer-events: all;
-        text-decoration: underline;
     }
 }

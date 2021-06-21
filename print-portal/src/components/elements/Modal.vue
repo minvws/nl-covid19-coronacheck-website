@@ -161,6 +161,7 @@ export default {
     height: 100%;
     display: none;
     pointer-events: none;
+    z-index: 1;
 
     .cover__clickable-area {
         position: absolute;

@@ -1,8 +1,7 @@
 import _base from './_base-module';
 
 const state = {
-    all: [],
-    current: null
+    proof: null
 };
 
 const getters = {
@@ -12,8 +11,8 @@ const getters = {
 const actions = {};
 
 const mutations = {
-    init(state, set) {
-        state.all = set;
+    add(state, proof) {
+        state.proof = proof;
     }
 };
 

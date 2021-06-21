@@ -24,7 +24,7 @@ const getNonce = (l) => {
 const getClientSettings = (redirect_uri) => {
     return {
         authority: 'https://tvs.acc.coronacheck.nl',
-        client_id: 'test_client',
+        client_id: 'cc_web',
         scope: 'openid',
         response_type: 'code',
         redirect_uri: redirect_uri,
@@ -36,7 +36,7 @@ const getClientSettings = (redirect_uri) => {
     };
 }
 
-export default class AuthService {
+export default class Authentication {
     manager = null;
 
     constructor(redirect_uri) {
@@ -44,7 +44,13 @@ export default class AuthService {
     }
 
     startAuthentication() {
-        this.manager.signinRedirect();
+        return new Promise((resolve, reject) => {
+            this.manager.signinRedirect().then((result) => {
+                resolve();
+            }).catch((error) => {
+                reject(error);
+            });
+        })
     }
 
     completeAuthentication() {
@@ -52,10 +58,7 @@ export default class AuthService {
             return this.manager.signinRedirectCallback().then(user => {
                 resolve(user);
             }).catch((error) => {
-                // we do get an error 'No matching state found in storage' but can ignore this (?)
-                if (is400error(error)) {
-                    reject(error)
-                }
+                reject(error);
             })
         })
     }
@@ -63,7 +66,7 @@ export default class AuthService {
 
 // oidc-client-js seems to mutate the original error and only offers a string
 // with error.name (error.status), so 'Bad request (400)' as the error message
-// we are therefor trying to match with the string 'bad request'
-const is400error = (error) => {
-    return error.message.toLowerCase().indexOf('bad request') > -1;
-}
+// we are therefore trying to match with the string 'bad request'
+// const is400error = (error) => {
+//     return error.message.toLowerCase().indexOf('bad request') > -1;
+// }

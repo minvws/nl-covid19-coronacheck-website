@@ -4,13 +4,17 @@ import PageIntro from '@/components/elements/PageIntro';
 import Vaccination from './Vaccination';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
+import signer from '@/interfaces/signer';
+import dateTool from '@/tools/date';
 
 export default {
     name: 'YourVaccinations',
     components: { Page, PageIntro, Vaccination, CcButton, CcModestButton },
     computed: {
         vaccinationSignedEvents() {
-            return this.$store.getters['signedEvents/getProofEvents']('vaccination');
+            return this.$store.getters['signedEvents/getProofEvents']('vaccination').sort((a, b) => {
+                return dateTool.getTime(a.event.vaccination.date) - dateTool.getTime(b.event.vaccination.date);
+            })
         }
     },
     methods: {
@@ -31,7 +35,26 @@ export default {
             })
         },
         gotoPrint() {
-            this.$router.push({ name: 'PrintVaccination' });
+            signer.sign(this.$store.state.signedEvents.all).then(response => {
+                console.log(response);
+                this.$store.commit('qrs/add', response);
+                // if (response.data.status === 'ok' && response.data.error === 0) {
+                //
+                // } else {
+                //     this.$store.commit('modal/set', {
+                //         messageHead: this.$t('message.error.general.head'),
+                //         messageBody: this.$t('message.error.general.body'),
+                //         closeButton: true
+                //     });
+                // }
+                // this.$router.push({ name: 'PrintVaccination' });
+            }).catch(error => {
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.error.general.head'),
+                    messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
+                    closeButton: true
+                });
+            })
         },
         openModalVaccinationSomethingWrong() {
             this.$store.commit('modal/set', {

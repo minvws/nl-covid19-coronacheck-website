@@ -15,7 +15,7 @@ export default {
         negativeTest() {
             return this.signedEvent.event.negativetest;
         },
-        date() {
+        dateOfTest() {
             return dateTool.dateTimeToString(this.negativeTest.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
         },
         holder() {
@@ -38,9 +38,9 @@ export default {
                 const testType = this.$store.getters.getNlTestType(this.negativeTest.testType)
                 const dataForV2 = {
                     discreteInfoString: this.holder.discreteInfoString,
-                    testType: testType ? testType.name : '',
+                    testType: testType ? testType.name : this.$t('unknown'),
                     testLocation,
-                    sampleDate: this.date,
+                    sampleDate: this.dateOfTest,
                     identificationCode: this.signedEvent.event.unique
                 }
                 this.$store.commit('modal/set', {
@@ -54,11 +54,11 @@ export default {
                 const dataForV3 = {
                     name: this.holder.fullName,
                     birthDateString: this.holder.birthDateString,
-                    testType: (testType ? testType.name : '-'),
+                    testType: (testType ? testType.name : this.$t('unknown')),
                     testName: this.negativeTest.name,
                     testLocation: this.negativeTest.facility,
-                    sampleDate: this.date,
-                    manufacturer: manufacturer ? manufacturer.name : '-',
+                    sampleDate: this.dateOfTest,
+                    manufacturer: manufacturer ? manufacturer.name : this.$t('unknown'),
                     identificationCode: this.signedEvent.event.unique,
                     country: this.negativeTest.country
                 }
@@ -75,18 +75,25 @@ export default {
 
 <template>
     <div class="proof-event">
-        <div class="proof-event__status">
+        <div class="proof-event__status proof-event__line">
             {{$t('components.NegativeTest.resultNegative')}}
         </div>
-        <div v-if="negativeTest.protocolVersion === '2.0'">
+        <div
+            v-if="negativeTest.protocolVersion === '2.0'"
+            class="proof-event__wrapper">
             <div class="proof-event__line">
-                {{$t('components.NegativeTest.dateOfTest')}}: {{date}}
+                {{$t('components.NegativeTest.dateOfTest')}}: {{dateOfTest}}
             </div>
             <div class="proof-event__line">
                 {{$t('components.NegativeTest.yourCredentials')}}: {{holder.discreteInfoString}}
             </div>
         </div>
-        <div v-if="negativeTest.protocolVersion === '3.0'">
+        <div
+            v-if="negativeTest.protocolVersion === '3.0'"
+            class="proof-event__wrapper">
+            <div class="proof-event__line">
+                {{$t('components.NegativeTest.dateOfTest')}}: {{dateOfTest}}
+            </div>
             <div class="proof-event__line">
                 {{$t('components.NegativeTest.name')}}: {{holder.fullName}}
             </div>

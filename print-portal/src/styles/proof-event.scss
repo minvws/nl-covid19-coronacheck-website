@@ -13,8 +13,16 @@
         font-weight: 700;
     }
 
-    > div {
-        margin-bottom: 4px;
+    &__wrapper {
+        display: contents;
+    }
+
+    &__line {
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     .info-button {

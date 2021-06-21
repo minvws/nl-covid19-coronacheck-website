@@ -1,0 +1,51 @@
+const proof = {
+    'domestic':
+        {
+            'attributes':
+                {
+                    'isSpecimen': '0',
+                    'isPaperProof': '1',
+                    'validFrom': '1624006800',
+                    'validForHours': '2016',
+                    'firstNameInitial': 'A',
+                    'lastNameInitial': 'R',
+                    'birthDay': '20',
+                    'birthMonth': '10'
+                },
+            'qr': 'NL2:1%U7Z06I.ZWNB8JPASQDS5IAJ-*N$5QKXMN2QA4.*BDZCU3PDX8B4TXU RFABWAR6ZR- K0LMQYZQ7ZN 9M8/D2DYN4D0ZWI*GHJ+HN5:%W.OW60.UVU/QR*DWY5WY9DO4X.2J31$PITYN.I6H%FL$OMI1DN:8M7AMXT*EBK:N$0DP4JE*MZTHG1Y*8Y1$7OR6F-EY4DQ/ICBR3XW2J/N:1EBDS4%G/0TMT:XV7:VT:V7QB8AH$4MV+GK2JT/FB6V5R7CQXW/X-%LXEENCYFWA:%SWE7LU+BPLG*8N/ZWOGU+-DUJ+UT1:+XM/H-SJPM--IGUGA::%ARPV05OGUEIO0LCAKQSE:6ICT87UKMV%+PFTIKJQS0IO7SA9BSYR6R%K5W3KE*0RQ8W2 T1QI:4NVYMCR57%M3G4DDPEA/CG*FE%4U7%HF*PX9BGSZMB8$ 82ZF2U-OUQ9OD3$%*SR.6TRNYATPEDUEJAF2XX6EUS X RK6/7K*.P9TMZGF7+EO-JLWL63D8GQTP G1639L+4F70S5%T5VH*47FXV3TBYWS1W%BGD$SKA8O$C+:3LO9DD1Z:MBBEAO+1HM:H.-HNT- PDAP*ZO2:+.LAP  *V%7UFIG2JW11CPA 5CWWFEB-D-YRI6.*O60TA50MQA 87J1:6Z8*W AHV-2:-5+C$S4JO9MPB9X237ZBOXVTSOE8XL9:5R+3 V RFD1+TZTOQH8DVBVN6HDR37AGAQXKXXW-5D$NJ3NUYP4KJJXRBW3U6EJEOJZS%.A.AYK2S0LM%NBF$UT9IV5BL*:4W15N.DTBXEYN.RA%5K+K/64D$ZLNGD645BKVPVOT9PVJHANYNN-I9 %366NEA8DST6L4PSC/CS$ZLH2C%-XPI/0%9+AVQA8HU*1/7RMG1$+Y81WTFS8CZ75$BHN9 H5RIOX FH7 VS5PIA5RWF58KV9YX2CZ-:SWXWT1XGNT4U/IYRI6SI*8P7XW0-N9F61W$2IK-RPJU3EC16QJJTM/+E1LKZADCOELSV.NAZHGU1Q1D-NXC9SN51BGR1DT2Y4%U3U4%0X2/4D5YW31ENTH2QC/C4ZX/Z%8W.G66*TFNWB+L0BCHL%C8C8J*B$DD*:CT6Z-4JN$Z:DL/5071DY3DVW6BD4ERU4D4O359+V.TITEQV5A-%0+7CZVVPG-7423--RU.MOM$*%.1VYZ7OL6+ME--ZR3%KK962Y.8MR*ZTYN.GIMB6HR+5I9C5S-V7MCLCSW.MD55IOFUFEGG+0CD3ALW*EYO:F 5RUYA5UT2C5IIYSPM%H4WO0WGT3 7R4QRKGDPDVD'
+        },
+    'european':
+        {
+            'expirationTime': '2021-07-17T12:34:00+00:00',
+            'dcc':
+                {
+                    'ver': '1.3.0',
+                    'nam':
+                        {
+                            'fn': 'Musterfrau-Gößinger',
+                            'fnt': 'MUSTERFRAU<GOESSINGER',
+                            'gn': 'Gabriele',
+                            'gnt': 'GABRIELE'
+                        },
+                    'dob': '1998-02-26',
+                    'v':
+                        [
+                            {
+                                'tg': '840539006',
+                                'vp': '1119349007',
+                                'mp': 'EU/1/20/1528',
+                                'ma': 'ORG-100030215',
+                                'dn': 1,
+                                'sd': 2,
+                                'dt': '2021-02-18',
+                                'co': 'AT',
+                                'is': 'Ministry of Health, Austria',
+                                'ci': 'URN:UVCI:01:AT:10807843F94AEE0EE5093FBC254BD813#B'
+                            }
+                        ]
+                },
+            'qr': 'HC1:NCFOXN%TS3DH3ZSUZK+.V0ETD%65NL-AH-R6IOOK.IR9B+9G4G50PHZF0AT4V22F/8X*G3M9JUPY0BX/KR96R/S09T./0LWTKD33236J3TA3M*4VV2 73-E3GG396B-43O058YIB73A*G3W19UEBY5:PI0EGSP4*2DN43U*0CEBQ/GXQFY73CIBC:G 7376BXBJBAJ UNFMJCRN0H3PQN*E33H3OA70M3FMJIJN523.K5QZ4A+2XEN QT QTHC31M3+E32R44$28A9H0D3ZCL4JMYAZ+S-A5$XKX6T2YC 35H/ITX8GL2-LH/CJTK96L6SR9MU9RFGJA6Q3QR$P2OIC0JVLA8J3ET3:H3A+2+33U SAAUOT3TPTO4UBZIC0JKQTL*QDKBO.AI9BVYTOCFOPS4IJCOT0$89NT2V457U8+9W2KQ-7LF9-DF07U$B97JJ1D7WKP/HLIJL8JF8JFHJP7NVDEBU1J*Z222E.GJ457661CFFTWM-8P2IUE7K*SSW613:9/:TT5IYQBTBU16R4I1A/9VRPJ-TS.7ZEM7MSVOCD4RG2L-TQJROXL2J:52J7F0Q10SMAP3CG3KHF0DWIH'
+        }
+}
+
+export default proof;
