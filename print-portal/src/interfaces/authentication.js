@@ -36,7 +36,7 @@ const getClientSettings = (redirect_uri) => {
     };
 }
 
-export default class AuthService {
+export default class Authentication {
     manager = null;
 
     constructor(redirect_uri) {
