@@ -198,7 +198,6 @@ const en = {
     'identity_image_alt': 'Make Holder QR code',
     'logo-government': 'Logo Dutch Government, homepage',
     'next': 'Next',
-    'orderWords': ['First', 'Second', 'Third'],
     'skiplink': 'Skip to content'
 }
 
