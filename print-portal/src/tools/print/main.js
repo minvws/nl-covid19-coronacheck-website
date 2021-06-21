@@ -35,23 +35,6 @@ const getBirthDayString = (userData) => {
     }
     return day + ' ' + month;
 }
-
-// const getValidUntil = (userData) => {
-//     const maxValidityHours = store.state.holderConfig.maxValidityHours
-//     return dateTool.addHoursToDate((userData.sampleTime * 1000), maxValidityHours, true);
-// }
-
-export const getFileName = (userData) => {
-    const holderString = userData.firstNameInitial + userData.lastNameInitial + getBirthDayString;
-    const info = [
-        dateTool.dateTimeToString((this.userData.sampleTime * 1000), 'yyyyMMdd'),
-        'coronacheck',
-        'testbewijs',
-        holderString
-    ];
-    return info.join('_') + '.pdf';
-}
-
 const initDoc = () => {
     const settings = {
         orientation: 'p',

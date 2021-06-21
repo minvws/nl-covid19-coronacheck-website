@@ -26,6 +26,9 @@ export default {
         },
         browserIsIE() {
             return this.browser.name === 'ie';
+        },
+        fileName() {
+            return 'coronacheck.pdf';
         }
     },
     methods: {
@@ -120,7 +123,7 @@ export default {
                             :label="$t('views.print.openPDF')"
                             :full-width="true"/>
                         <CcButton
-                            @select="openPDF()"
+                            @select="downloadPDF()"
                             id="download-pdf"
                             :disabled="!downloadPDF"
                             :label="$t('views.print.openPDF')"
