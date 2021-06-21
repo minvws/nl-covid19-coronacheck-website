@@ -10,7 +10,7 @@ export default {
     computed: {},
     methods: {
         getToken() {
-            this.authNegativeTests.startAuthentication().then(() => {
+            this.authVaccinations.startAuthentication().then(() => {
                 //
             }).catch(error => {
                 this.$store.commit('modal/set', {
