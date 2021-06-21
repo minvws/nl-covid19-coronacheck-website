@@ -52,10 +52,9 @@ export default {
                     const dateIsCorrupt = this.dataIsCorrupt(result);
                     const eventIsIncomplete = this.eventIsIncomplete(result);
                     if (dateIsCorrupt || eventIsIncomplete) {
-                        const identifier = dateIsCorrupt.length > 0 ? dateIsCorrupt : eventIsIncomplete;
                         this.$store.commit('modal/set', {
                             messageHead: this.$t('message.error.parseErrorInResult.head'),
-                            messageBody: this.$t('message.error.parseErrorInResult.body', { identifier }),
+                            messageBody: this.$t('message.error.parseErrorInResult.body'),
                             closeButton: true
                         });
                         this.gotoPreviousPage()

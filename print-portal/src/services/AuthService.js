@@ -52,10 +52,7 @@ export default class AuthService {
             return this.manager.signinRedirectCallback().then(user => {
                 resolve(user);
             }).catch((error) => {
-                // we do get an error 'No matching state found in storage' but can ignore this (?)
-                if (is400error(error)) {
-                    reject(error)
-                }
+                reject(error);
             })
         })
     }
@@ -63,7 +60,7 @@ export default class AuthService {
 
 // oidc-client-js seems to mutate the original error and only offers a string
 // with error.name (error.status), so 'Bad request (400)' as the error message
-// we are therefor trying to match with the string 'bad request'
-const is400error = (error) => {
-    return error.message.toLowerCase().indexOf('bad request') > -1;
-}
+// we are therefore trying to match with the string 'bad request'
+// const is400error = (error) => {
+//     return error.message.toLowerCase().indexOf('bad request') > -1;
+// }
