@@ -58,7 +58,6 @@ export default {
     font-size: inherit;
     outline: none;
     white-space: normal;
-    height: 80px;
 
     &:hover {
         background: #fff;
