@@ -157,7 +157,9 @@ const en = {
             },
             'digidCanceled': {
                 'head': 'TODO digidCanceled head',
-                'body': 'TODO digidCanceled body'
+                'body': 'TODO digidCanceled body',
+                'vaccination': 'vaccinations',
+                'negativetest': 'test result'
             },
             'digidFinished': {
                 'head': 'TODO Je bezoek aan DigiD zit erop',
