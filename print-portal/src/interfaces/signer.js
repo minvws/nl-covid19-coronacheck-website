@@ -1,8 +1,7 @@
 import axios from 'axios';
-// import mockProof from '@/data/mock/proof';
 
 const sign = (signedEvents) => {
-    console.log(signedEvents);
+    console.log(JSON.stringify({ events: signedEvents }));
     return new Promise((resolve, reject) => {
         axios({
             method: 'post',

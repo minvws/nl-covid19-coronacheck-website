@@ -36,18 +36,9 @@ export default {
         },
         gotoPrint() {
             signer.sign(this.$store.state.signedEvents.all).then(response => {
-                console.log(response);
-                this.$store.commit('qrs/add', response);
-                // if (response.data.status === 'ok' && response.data.error === 0) {
-                //
-                // } else {
-                //     this.$store.commit('modal/set', {
-                //         messageHead: this.$t('message.error.general.head'),
-                //         messageBody: this.$t('message.error.general.body'),
-                //         closeButton: true
-                //     });
-                // }
-                // this.$router.push({ name: 'PrintVaccination' });
+                console.log(response.data);
+                this.$store.commit('qrs/add', response.data);
+                this.$router.push({ name: 'PrintVaccination' });
             }).catch(error => {
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.error.general.head'),

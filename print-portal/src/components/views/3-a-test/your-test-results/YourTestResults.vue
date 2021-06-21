@@ -46,8 +46,8 @@ export default {
         gotoPrint() {
             signer.sign(this.$store.state.signedEvents.all).then(response => {
                 console.log(response);
-                this.$store.commit('qrs/add', response);
-                // this.$router.push({ name: 'PrintTestResult' });
+                this.$store.commit('qrs/add', response.data);
+                this.$router.push({ name: 'PrintTestResult' });
             }).catch(error => {
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.error.general.head'),
