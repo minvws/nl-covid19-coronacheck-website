@@ -4,7 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import Vaccination from './Vaccination';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
-// import signer from '@/interfaces/signer';
+import signer from '@/interfaces/signer';
 
 export default {
     name: 'YourVaccinations',
@@ -32,24 +32,24 @@ export default {
             })
         },
         gotoPrint() {
-            // signer.sign(this.$store.state.signedEvents.all).then(response => {
-            //     console.log(response);
-            //     if (response.data.status === 'ok' && response.data.error === 0) {
-            //         //
-            //     } else {
-            //         this.$store.commit('modal/set', {
-            //             messageHead: this.$t('generalError'),
-            //             messageBody: this.$t('generalErrorBody'),
-            //             closeButton: true
-            //         });
-            //     }
-            // }).catch(error => {
-            //     this.$store.commit('modal/set', {
-            //         messageHead: this.$t('generalError'),
-            //         messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
-            //         closeButton: true
-            //     });
-            // })
+            signer.sign(this.$store.state.signedEvents.all).then(response => {
+                this.$store.commit('qrs/add', response);
+                // if (response.data.status === 'ok' && response.data.error === 0) {
+                //
+                // } else {
+                //     this.$store.commit('modal/set', {
+                //         messageHead: this.$t('generalError'),
+                //         messageBody: this.$t('generalErrorBody'),
+                //         closeButton: true
+                //     });
+                // }
+            }).catch(error => {
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('generalError'),
+                    messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
+                    closeButton: true
+                });
+            })
             this.$router.push({ name: 'PrintVaccination' });
         },
         openModalVaccinationSomethingWrong() {

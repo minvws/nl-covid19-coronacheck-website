@@ -4,7 +4,6 @@ import { detect } from 'detect-browser';
 import CcButton from '@/components/elements/CcButton';
 import { getDocument } from '@/tools/print/main';
 import { generateQR } from '@/tools/qr';
-import mockQrs from '@/data/mock/qr';
 import NLQR from '@/classes/QR/NLQR';
 
 export default {
@@ -30,17 +29,12 @@ export default {
         }
     },
     methods: {
-        createDocument(qrs) {
-            const nlQR = new NLQR(qrs[0]);
-            generateQR(nlQR.data).then(async (urlQR) => {
+        createDocument(proof) {
+            const nlQR = new NLQR(proof.domestic);
+            generateQR(nlQR.qr).then(async (urlQR) => {
                 const pages = [
                     {
-                        type: 'vaccination',
-                        territory: 'nl',
-                        qr: nlQR,
-                        urlQR: urlQR
-                    }, {
-                        type: 'negativeTest',
+                        type: this.type,
                         territory: 'nl',
                         qr: nlQR,
                         urlQR: urlQR
@@ -58,8 +52,7 @@ export default {
         render() {
             this.document = null;
             this.$nextTick(() => {
-                this.$store.commit('qrs/init', mockQrs);
-                this.createDocument(this.$store.state.qrs.all)
+                this.createDocument(this.$store.state.qrs.proof)
             });
         },
         goBack() {
