@@ -42,10 +42,15 @@ const addHoursToDate = (dateInput, hours, formatted) => {
     return formatted ? dateTimeToString(newDate) : newDate;
 }
 
+const getTime = (dateString) => {
+    return new Date(dateString).getTime();
+}
+
 export default {
     monthNumberToMonthNameAbbr,
     dateToString,
     dateTimeToString,
     addHoursToDate,
-    isValidDateString
+    isValidDateString,
+    getTime
 }

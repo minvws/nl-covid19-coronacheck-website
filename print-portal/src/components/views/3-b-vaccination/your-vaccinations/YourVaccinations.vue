@@ -5,13 +5,16 @@ import Vaccination from './Vaccination';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import signer from '@/interfaces/signer';
+import dateTool from '@/tools/date';
 
 export default {
     name: 'YourVaccinations',
     components: { Page, PageIntro, Vaccination, CcButton, CcModestButton },
     computed: {
         vaccinationSignedEvents() {
-            return this.$store.getters['signedEvents/getProofEvents']('vaccination');
+            return this.$store.getters['signedEvents/getProofEvents']('vaccination').sort((a, b) => {
+                return dateTool.getTime(a.vaccination.date) - dateTool.getTime(b.vaccination.date);
+            })
         }
     },
     methods: {

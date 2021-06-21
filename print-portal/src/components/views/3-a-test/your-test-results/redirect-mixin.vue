@@ -102,11 +102,18 @@ export default {
             }, (error) => {
                 this.loading = false;
                 this.$store.commit('modal/close');
+                this.gotoPreviousPage();
                 if (error && error.response && error.response.status) {
                     if (error.response.status === 429) {
                         this.$store.commit('modal/set', {
                             messageHead: this.$t('message.error.serverBusy.head'),
                             messageBody: this.$t('message.error.serverBusy.body'),
+                            closeButton: true
+                        });
+                    } else {
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('message.error.general.head'),
+                            messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
                             closeButton: true
                         });
                     }
