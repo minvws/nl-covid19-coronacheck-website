@@ -38,9 +38,9 @@ export default {
                 const testType = this.$store.getters.getNlTestType(this.negativeTest.testType)
                 const dataForV2 = {
                     discreteInfoString: this.holder.discreteInfoString,
-                    testType: testType ? testType.name : '',
+                    testType: testType ? testType.name : this.$t('unknown'),
                     testLocation,
-                    sampleDate: this.date,
+                    sampleDate: this.dateOfTest,
                     identificationCode: this.signedEvent.event.unique
                 }
                 this.$store.commit('modal/set', {
@@ -54,11 +54,11 @@ export default {
                 const dataForV3 = {
                     name: this.holder.fullName,
                     birthDateString: this.holder.birthDateString,
-                    testType: (testType ? testType.name : '-'),
+                    testType: (testType ? testType.name : this.$t('unknown')),
                     testName: this.negativeTest.name,
                     testLocation: this.negativeTest.facility,
                     sampleDate: this.dateOfTest,
-                    manufacturer: manufacturer ? manufacturer.name : '-',
+                    manufacturer: manufacturer ? manufacturer.name : this.$t('unknown'),
                     identificationCode: this.signedEvent.event.unique,
                     country: this.negativeTest.country
                 }
