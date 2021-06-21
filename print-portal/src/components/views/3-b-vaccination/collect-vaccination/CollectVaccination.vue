@@ -16,7 +16,11 @@ export default {
             this.$router.push({ name: 'ChoiceProof' })
         },
         dontHaveDigid() {
-            window.open('https://www.digid.nl/digid-aanvragen-activeren#hoe-vraag-ik-digid-aan')
+            const urls = {
+                nl: 'https://www.digid.nl/digid-aanvragen-activeren#hoe-vraag-ik-digid-aan',
+                en: 'https://www.digid.nl/en/apply-or-activate-digid'
+            }
+            window.open(urls[this.currentLanguage.locale])
         }
     }
 }
