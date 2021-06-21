@@ -71,7 +71,7 @@ export default {
 
 <template>
     <div class="proof-event">
-        <div class="proof-event__status">
+        <div class="proof-event__status proof-event__line">
             {{title}}
         </div>
         <div class="proof-event__line">
