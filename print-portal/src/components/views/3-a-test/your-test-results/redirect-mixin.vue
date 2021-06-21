@@ -14,7 +14,6 @@ export default {
 
             this.authVaccinations.completeAuthentication().then((user) => {
                 // after redirect we've lost the consent
-                this.$store.commit('setUserConsent', true);
                 this.notifyDigidFinished();
                 this.collectEvents(user.id_token);
             }).catch(() => {
@@ -187,6 +186,7 @@ export default {
         }
     },
     mounted() {
+        this.$store.commit('setUserConsent', true);
         this.completeAuthentication();
     }
 }
