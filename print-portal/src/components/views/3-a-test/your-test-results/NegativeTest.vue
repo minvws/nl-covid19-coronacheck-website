@@ -15,7 +15,7 @@ export default {
         negativeTest() {
             return this.signedEvent.event.negativetest;
         },
-        date() {
+        dateOfTest() {
             return dateTool.dateTimeToString(this.negativeTest.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
         },
         holder() {
@@ -57,7 +57,7 @@ export default {
                     testType: (testType ? testType.name : '-'),
                     testName: this.negativeTest.name,
                     testLocation: this.negativeTest.facility,
-                    sampleDate: this.date,
+                    sampleDate: this.dateOfTest,
                     manufacturer: manufacturer ? manufacturer.name : '-',
                     identificationCode: this.signedEvent.event.unique,
                     country: this.negativeTest.country
@@ -75,18 +75,25 @@ export default {
 
 <template>
     <div class="proof-event">
-        <div class="proof-event__status">
+        <div class="proof-event__status proof-event__line">
             {{$t('components.NegativeTest.resultNegative')}}
         </div>
-        <div v-if="negativeTest.protocolVersion === '2.0'">
+        <div
+            v-if="negativeTest.protocolVersion === '2.0'"
+            class="proof-event__wrapper">
             <div class="proof-event__line">
-                {{$t('components.NegativeTest.dateOfTest')}}: {{date}}
+                {{$t('components.NegativeTest.dateOfTest')}}: {{dateOfTest}}
             </div>
             <div class="proof-event__line">
                 {{$t('components.NegativeTest.yourCredentials')}}: {{holder.discreteInfoString}}
             </div>
         </div>
-        <div v-if="negativeTest.protocolVersion === '3.0'">
+        <div
+            v-if="negativeTest.protocolVersion === '3.0'"
+            class="proof-event__wrapper">
+            <div class="proof-event__line">
+                {{$t('components.NegativeTest.dateOfTest')}}: {{dateOfTest}}
+            </div>
             <div class="proof-event__line">
                 {{$t('components.NegativeTest.name')}}: {{holder.fullName}}
             </div>
