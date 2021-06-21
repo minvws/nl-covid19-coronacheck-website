@@ -5,7 +5,7 @@ import store from './store';
 import CurrentLanguage from '@/components/mixins/CurrentLanguage';
 import axios from 'axios';
 import i18n from './i18n'
-import AuthService from '@/services/AuthService'
+import AuthService from '@/interfaces/AuthService'
 
 const authVaccinations = new AuthService(window.location.origin + '/nl/print/jouw-vaccinaties-redirect');
 const authNegativeTests = new AuthService(window.location.origin + '/nl/print/jouw-testresultaat-redirect');

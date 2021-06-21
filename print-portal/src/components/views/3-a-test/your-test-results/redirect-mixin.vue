@@ -1,5 +1,5 @@
 <script>
-import signedEventsTool from '@/tools/signed-events'
+import signedEventsInterface from '@/interfaces/signed-events'
 import { cmsDecode } from '@/tools/cms'
 import dateTool from '@/tools/date';
 
@@ -40,7 +40,7 @@ export default {
         collectEvents(token) {
             this.$store.commit('signedEvents/clear');
             this.isLoading = true;
-            signedEventsTool.collect(token, this.type).then(result => {
+            signedEventsInterface.collect(token, this.type).then(result => {
                 this.isLoading = false;
                 if (result) {
                     const is429 = (statusCode) => {
