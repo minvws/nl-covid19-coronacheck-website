@@ -165,7 +165,9 @@ const nl = {
             },
             'digidCanceled': {
                 'head': 'Inloggen is niet gelukt',
-                'body': 'Je kunt opnieuw inloggen om je vaccinatie op te halen.'
+                'body': 'Je kunt opnieuw inloggen om je %{type} op te halen.',
+                'vaccinations': 'vaccinaties',
+                'negativetest': 'testuitslag'
             },
             'digidFinished': {
                 'head': 'Je bezoek aan DigiD zit erop',

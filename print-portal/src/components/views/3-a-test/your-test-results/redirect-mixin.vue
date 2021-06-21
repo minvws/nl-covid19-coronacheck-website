@@ -18,9 +18,10 @@ export default {
                 this.collectEvents(user.id_token);
             }).catch(() => {
                 this.gotoPreviousPage();
+                const type = this.$t('message.info.digidCanceled.' + this.type)
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.info.digidCanceled.head'),
-                    messageBody: this.$t('message.info.digidCanceled.body'),
+                    messageBody: this.$t('message.info.digidCanceled.body', { type }),
                     confirm: true,
                     confirmAction,
                     confirmYes: this.$t('goBackToStart'),
