@@ -7,7 +7,7 @@ published: true
 ---
 ## Reizen
 
-<div style="font-weight: bold;">
+<div style="font-weight: bold;" markdown="1">
 
 Vanaf 1 juli kun je jouw coronabewijs (Digital Corona Certificaat, DCC) maken om te reizen via CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt.](https://coronacheck.nl/nl/faq/1-1-hoe-werkt-de-coronacheck-app/)
 
