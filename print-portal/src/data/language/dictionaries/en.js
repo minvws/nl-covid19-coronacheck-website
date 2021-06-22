@@ -80,8 +80,8 @@ const en = {
             'pageIntro': 'Please try again later.<br>If you have any questions, contact your test location.'
         },
         'testResultNone': {
-            'pageHeader': 'No negative test result',
-            'pageIntro': 'No negative test result available.'
+            'pageHeader': 'No negative test result available',
+            'pageIntro': 'There is no negative test result available.'
         },
         'print': {
             'openPDF': 'Open PDF'
