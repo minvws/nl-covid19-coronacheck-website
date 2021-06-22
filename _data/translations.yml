@@ -7,9 +7,9 @@ scanner-app-name: CoronaCheck Scanner
 head-social-og-site_name: CoronaCheck
   
 head-social-og-title:
-  nl: CoronaCheck. Krijg toegang na testen
+  nl: Krijg toegang met de CoronaCheck-app
   fy: 
-  en: CoronaCheck. Get tested, gain access
+  en: Get access with the CoronaCheck app
   ar: 
   bg: 
   de: 
@@ -20,9 +20,9 @@ head-social-og-title:
   tr: 
     
 head-social-og-description:
-  nl: Met CoronaCheck kunnen bezoekers naar pilots toegangstesten. Zij moeten zich eerst laten testen op het coronavirus.
+  nl: Met de app bewijs je dat je gevaccineerd of negatief op corona getest bent. Je kan CoronaCheck gebruiken voor toegang tot bepaalde locaties. En om internationaal te reizen.
   fy: 
-  en: 
+  en: With this app, you are able to prove you've been vaccinated or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain locations. And to travel to other countries. 
   ar: 
   bg: 
   de: 
@@ -32,7 +32,7 @@ head-social-og-description:
   ro: 
   tr: 
  
-head-social-og-image-url: coronacheck-social-og-image--nl.png?=v1
+head-social-og-image-url: coronacheck-social-og-image--nl.png?=v2
 
 scanner-social-og-site_name: CoronaCheck Scanner
   
@@ -50,9 +50,9 @@ scanner-social-og-title:
   tr: 
     
 scanner-social-og-description:
-  nl: Met CoronaCheck Scanner kunnen sociale, culturele en sportieve locaties toegangstesten organiseren. Zo openen zij veilig de deuren in tijden van corona.
+  nl: Met CoronaCheck Scanner controleer je de geldigheid van het vaccinatie- of testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
   fy: 
-  en: 
+  en: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
   ar: 
   bg: 
   de: 
@@ -62,7 +62,7 @@ scanner-social-og-description:
   ro: 
   tr: 
  
-scanner-social-og-image-url: scanner-social-og-image--nl.png?v=1
+scanner-social-og-image-url: scanner-social-og-image--nl.png?v=2
     
 social-og-image-alt:
   nl: Impressie van website waarop toelichting te vinden is
@@ -117,9 +117,9 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Met de app bewijs je dat je gevaccineerd of negatief op corona getest bent. Je kan CoronaCheck momenteel gebruiken voor toegang tot sommige locaties of landen binnen de Europese Unie. 
+  nl: Met de app bewijs je dat je gevaccineerd of negatief op corona getest bent. Je kan CoronaCheck gebruiken voor toegang tot bepaalde locaties. En om internationaal te reizen.
   fy: 
-  en: With this app, you are able to prove you've been vaccinated or you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain locations or countries within the European Union. 
+  en: With this app, you are able to prove you've been vaccinated or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain locations. And to travel to other countries.  
   ar: 
   bg: 
   de: 
@@ -130,7 +130,7 @@ header-subtitle:
   tr: 
 
 scanner-header-title:
-  nl: Geef toegang met de CoronaCheck Scanner
+  nl: Geef toegang met CoronaCheck Scanner
   fy: 
   en: Allow access with CoronaCheck Scanner 
   ar: 
@@ -145,7 +145,7 @@ scanner-header-title:
 scanner-header-subtitle:
   nl: Met CoronaCheck Scanner controleer je de geldigheid van het vaccinatie- of testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
   fy: 
-  en: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use the CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
+  en: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
   ar: 
   bg: 
   de: 
@@ -1296,7 +1296,7 @@ demo-qr-title:
   tr: 
 
 demo-qr-subtitle: 
-  nl: Ervaren hoe de scanner werkt? Open CoronaCheck Scanner op je telefoon en scan de QR-codes
+  nl: Ervaren hoe de scanner werkt? <br />Open CoronaCheck Scanner op je telefoon en scan de QR-codes
   fy: 
   en: Want to experience how the scanner works? <br />Open CoronaCheck Scanner on your phone and scan the QR codes.
   ar: 
@@ -1479,9 +1479,9 @@ print-version-title:
   en: Prefer a certificate on paper?
  
 print-version-content:
-  nl: Een bewijs op papier is handig als je geen smartphone hebt. Je kunt een bewijs maken van een vaccinatie of van een testuitslag. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over bewijzen op papier</span></a>.
+  nl: Een bewijs op papier is handig als je geen smartphone hebt. Je kunt een bewijs maken van een vaccinatie en/of van een testuitslag. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over bewijzen op papier</span></a>.
   fy: 
-  en: A certificate of your test or vaccination on paper is convenient if you don’t have a smartphone. <a href="/en/faq#paper-certificate">Read more<span class="screen-reader-text"> about a certificate on paper</span></a>.
+  en: A certificate of your test or vaccination on paper is convenient if you don’t have a smartphone. <a href="/en/faq#paper-certificate">Read more here<span class="screen-reader-text"> about a certificate on paper</span></a>.
 
 print-version-url: 
   nl: /print
