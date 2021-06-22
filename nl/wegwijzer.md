@@ -7,7 +7,11 @@ published: true
 ---
 ## Reizen
 
-**Vanaf 1 juli kun je jouw coronabewijs (Digital Corona Certificaat, DCC) maken om te reizen via CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt.](https://coronacheck.nl/nl/faq/1-1-hoe-werkt-de-coronacheck-app/)**
+<div style="font-weight: bold;">
+
+Vanaf 1 juli kun je jouw coronabewijs (Digital Corona Certificaat, DCC) maken om te reizen via CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt.](https://coronacheck.nl/nl/faq/1-1-hoe-werkt-de-coronacheck-app/)
+
+</div>
 
 Ga je op reis? Check dan eerst [www.wijsopreis.nl](http://www.wijsopreis.nl/) voor het up-to-date geldende reisadvies per bestemming. Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem [contact op met het 24/7 BZ contact center van BZ](https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter). Dat 24 uur per dag, 7 dagen per week bereikbaar.
 
@@ -25,11 +29,11 @@ Ga je op reis? Check dan eerst [www.wijsopreis.nl](http://www.wijsopreis.nl/) vo
 
 - Jouw vaccinatiegegevens worden automatisch opgehaald bij het RIVM ([als je daar toestemming voor hebt gegeven](https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/vraag-en-antwoord/toestemming-registratie-coronavaccinatie)), de GGD of het ziekenhuis
 - Probeer je vaccinatiegegevens op te halen in CoronaCheck door in te loggen met DigiD
-- Lukt dit niet of ben je niet geregistreerd, maar wil je wel een vaccinatiebewijs? Op deze website vind je wat je kunt doen om je vaccinatiebewijs te krijgen: https://www.rijksoverheid.nl/coronabewijs
+- Lukt dit niet of ben je niet geregistreerd, maar wil je wel een vaccinatiebewijs? Op deze website vind je [wat je kunt doen om je vaccinatiebewijs te krijgen als je niet weet waar je je vaccinatiegegevens hebt laten registreren](https://www.rijksoverheid.nl/coronabewijs)
 
 ### Mijn naam of geboortedatum klopt niet van mijn vaccinatiegegevens, wat nu?
 
-- Op deze website vind je wat je dan kunt doen om je gegevens aan te laten passen: https://www.rijksoverheid.nl/coronabewijs 
+- Op deze website vind je [wat je kunt doen om je gegevens aan te laten passen](https://www.rijksoverheid.nl/coronabewijs)
 
 ### Andere vragen rondom het ophalen van je vaccinaties? 
 
