@@ -1,7 +1,7 @@
 ---
 set: 1
 index: 6
-title: Welke informatie staat in mijn QR-code? 
+title: Which information does my QR code contain?
 redirect_from: 
   - /en/faq/18-welke-informatie-staat-in-mijn-qr-code
   - /en/faq/16-hoe-worden-mijn-gegevens-gebruikt/
