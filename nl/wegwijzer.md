@@ -12,7 +12,6 @@ published: true
 Ga je op reis? Check dan eerst [www.wijsopreis.nl](http://www.wijsopreis.nl/) voor het up-to-date geldende reisadvies per bestemming. Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem [contact op met het 24/7 BZ contact center van BZ](https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter). Dat 24 uur per dag, 7 dagen per week bereikbaar.
 
 ## Vaccinatiebewijs
-
 ### Vaccinatiegegevens ophalen in de app? 
 
 [Lees hier hoe je je vaccinatiegegevens kan ophalen.](https://coronacheck.nl/nl/faq/1-1-hoe-werkt-de-coronacheck-app/)
@@ -37,7 +36,6 @@ Ga je op reis? Check dan eerst [www.wijsopreis.nl](http://www.wijsopreis.nl/) vo
 Lees hier meer [https://www.rijksoverheid.nl/coronabewijs](https://www.rijksoverheid.nl/coronabewijs) 
 
 ## Testbewijs
-
 ### Toegangstesten
 
 Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? [Hiervoor kun je terecht bij Testen voor Toegang.](https://www.testenvoortoegang.org/) Op die website vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatestbewijs voor nodig is, geeft de organisatie meestal ook veel informatie. Bijvoorbeeld op een toegangsbewijs, in een bevestigingsmail of op de website.
