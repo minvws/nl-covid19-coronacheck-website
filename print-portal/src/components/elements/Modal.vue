@@ -51,7 +51,7 @@ export default {
             if (this.confirmAction && {}.toString.call(this.confirmAction) === '[object Function]') {
                 this.confirmAction();
             } else {
-                console.log('Confirm callback is not a function.');
+                // console.log('Confirm callback is not a function.');
             }
             this.close();
         },
