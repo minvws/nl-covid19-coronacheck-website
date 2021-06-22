@@ -183,8 +183,8 @@ const en = {
     'pdf': {
         'eu': {},
         'nl': {
-            'instructions': 'TODO 1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat de QR-code (en eventueel ook je toegangskaartje) zien bij de ingang\n\nLet op: dit papieren bewijs is 28 dagen geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.',
-            'propertiesLabel': 'TODO Gegevens',
+            'instructions': '1. Print this certificate on A4 (black-and-white allowed)\n\n2. Bring a valid proof of identity to the activity you’re visiting \n\n3. Show the QR code (and if needed a ticket) at the entrance\n\nPlease note: this paper certificate is valid for 1 year. Afterwards, you can make a new paper certificate.',
+            'propertiesLabel': 'Details',
             'title': 'Certificate for the Netherlands',
             'intro': 'Visiting locations or activities within the Netherlands? Then use this certificate.',
             'qrTitle': 'QR-code Netherlands',
