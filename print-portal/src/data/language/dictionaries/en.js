@@ -14,7 +14,7 @@ const en = {
             'pageHeader': 'Get access with a test certificate on paper',
             'pageIntro': '<p>A test certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><h4>Only access after testing</h4><p>Get tested when visiting certain social, cultural or sports events. Even when you\'ve already been vaccinated. Does your test prove you don\'t have coronavirus (negative test result)? Then you can get access.</p><h4>Your QR code in your pocket</h4><p>If your test proves you don\'t have coronavirus, you can make a personal QR code in this app. This will be your test certificate. The QR code is scanned before you get access.</p><h4>Minimum amount of data</h4><p>Your QR code only states when you tested negative (no coronavirus), the time of testing, and the minimum amount of identifying data: your first name initial, your last name initial, your day of birth, and your month of both. We verify this information to make sure the test result is yours.</p>',
             'userConsentText': 'I have read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and understand how CoronaCheck processes my data.',
-            'noConsentError': 'TODO'
+            'noConsentError': 'Give consent to the privacy statement first'
         },
         'choiceProof': {
             'pageHeader': 'What would you like to make a paper certificate of?',
@@ -79,8 +79,8 @@ const en = {
             'pageIntro': 'Please try again later.<br>If you have any questions, contact your test location.'
         },
         'testResultNone': {
-            'pageHeader': 'TOOO Geen negatieve testuitslag',
-            'pageIntro': 'TOOO Er is geen negatieve testuitslag beschikbaar.'
+            'pageHeader': 'No negative test result',
+            'pageIntro': 'No negative test result available.'
         },
         'print': {
             'openPDF': 'Open PDF'
@@ -143,6 +143,10 @@ const en = {
                 'head': 'Need a new verification code?',
                 'body': '<p>The test location sends you a verification code via text or email. Didn\'t get one? Then you can request a new code.</p>'
             },
+            'didNotGetTestedYet': {
+                'head': 'I haven’t been tested yet',
+                'body': '<p>You must get tested before you make a QR code. You can only turn a negative test result into a QR code.</p><p>A test certificate is valid until 40 hours after the moment you’ve been tested. So schedule your test on time. And make sure your QR code is scanned at the entrance within 40 hours.</p><p><a href="https://coronacheck.nl/en/testafspraak-in-app" class="btn" target="_blank">Make an appointment\n</a></p>'
+            },
             'areYouSureToCancelVaccination': {
                 'head': 'Are you sure you want to stop?',
                 'body': 'Then you need to log in again later using DigiD to retrieve your vaccination.',
@@ -156,15 +160,13 @@ const en = {
                 'no': 'No, continue'
             },
             'digidCanceled': {
-                'head': 'TODO digidCanceled head',
-                'body': 'TODO digidCanceled body',
+                'head': 'Login failed',
+                'body': 'You can log in again to retrieve your %{type}',
                 'vaccination': 'vaccinations',
                 'negativetest': 'test result'
             },
             'digidFinished': {
-                'head': 'TODO Je bezoek aan DigiD zit erop',
-                'body': 'TODOWe halen nu jouw vaccinaties op. Daarna kun je er een bewijs van maken.',
-                'closeText': 'Okay'
+                'body': 'We\'ll retrieve your vaccinations. You will be logged out of DigiD automatically'
             }
         },
         'error': {
@@ -179,16 +181,24 @@ const en = {
         }
     },
     'pdf': {
-        // todo
-    },
-    'image': {
-        'holder': {
-            'overview': 'My overview',
-            'showQrIntro': 'Show your QR code and your ID at the entrance of the location you are visiting.',
-            'myQr': 'My QR code',
-            'validText': 'Valid until<br> March 11th 14:06',
-            'showQr': 'Show QR'
-        }
+        'eu': {},
+        'nl': {
+            'instructions': '1. Print this certificate on A4 (black-and-white allowed)\n\n2. Bring a valid proof of identity to the activity you’re visiting \n\n3. Show the QR code (and if needed a ticket) at the entrance.',
+            'propertiesLabel': 'Details',
+            'title': 'Certificate for the Netherlands',
+            'intro': 'Visiting locations or activities within the Netherlands? Then use this certificate.',
+            'qrTitle': 'QR-code Netherlands',
+            'userData': {
+                'initials': 'Initials',
+                'dateOfBirth': 'Day of birth',
+                'validFrom': 'Valid from',
+                'validUntil': 'Valid until',
+                'privacyNote': 'You don’t need to show this to the scanner'
+            }
+        },
+        'instructions': 'Instructions',
+        'questions': 'QUESTIONS?',
+        'questionsContent': 'Please find frequently asked questions on www.coronacheck.nl. You can also send an email to <b>helpdesk@coronacheck.nl</b> or reach us (for free) on <b>0800-1421</b>'
     },
     'back': 'Back',
     'close': 'Close',

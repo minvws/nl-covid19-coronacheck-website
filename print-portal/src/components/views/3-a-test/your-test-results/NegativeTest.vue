@@ -55,7 +55,7 @@ export default {
                     name: this.holder.fullName,
                     birthDateString: this.holder.birthDateString,
                     testType: (testType ? testType.name : this.$t('unknown')),
-                    testName: this.negativeTest.name,
+                    testName: (this.negativeTest.name.length ? this.negativeTest.name : this.$t('unknown')),
                     testLocation: this.negativeTest.facility,
                     sampleDate: this.dateOfTest,
                     manufacturer: manufacturer ? manufacturer.name : this.$t('unknown'),

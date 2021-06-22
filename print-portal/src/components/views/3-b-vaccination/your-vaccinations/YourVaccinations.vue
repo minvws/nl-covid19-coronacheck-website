@@ -12,7 +12,15 @@ export default {
     components: { Page, PageIntro, Vaccination, CcButton, CcModestButton },
     computed: {
         vaccinationSignedEvents() {
-            return this.$store.getters['signedEvents/getProofEvents']('vaccination').sort((a, b) => {
+            const vaccinationSignedEvents = this.$store.getters['signedEvents/getProofEvents']('vaccination');
+            const filteredForUnique = []
+            for (const signedEvent of vaccinationSignedEvents) {
+                const existingKeys = filteredForUnique.map(s => s.event.unique);
+                if (existingKeys.indexOf(signedEvent.event.unique) === -1) {
+                    filteredForUnique.push(signedEvent)
+                }
+            }
+            return filteredForUnique.sort((a, b) => {
                 return dateTool.getTime(a.event.vaccination.date) - dateTool.getTime(b.event.vaccination.date);
             })
         }
@@ -35,26 +43,20 @@ export default {
             })
         },
         gotoPrint() {
-            signer.sign(this.$store.state.signedEvents.all).then(response => {
-                console.log(response);
-                this.$store.commit('qrs/add', response);
-                // if (response.data.status === 'ok' && response.data.error === 0) {
-                //
-                // } else {
-                //     this.$store.commit('modal/set', {
-                //         messageHead: this.$t('message.error.general.head'),
-                //         messageBody: this.$t('message.error.general.body'),
-                //         closeButton: true
-                //     });
-                // }
-                // this.$router.push({ name: 'PrintVaccination' });
-            }).catch(error => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.error.general.head'),
-                    messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
-                    closeButton: true
-                });
-            })
+            if (this.$store.state.qrs.proof === null) {
+                signer.sign(this.$store.state.signedEvents.all).then(response => {
+                    this.$store.commit('qrs/add', response.data);
+                    this.$router.push({ name: 'PrintVaccination' });
+                }).catch(error => {
+                    this.$store.commit('modal/set', {
+                        messageHead: this.$t('message.error.general.head'),
+                        messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
+                        closeButton: true
+                    });
+                })
+            } else {
+                this.$router.push({ name: 'PrintVaccination' });
+            }
         },
         openModalVaccinationSomethingWrong() {
             this.$store.commit('modal/set', {

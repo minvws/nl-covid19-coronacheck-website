@@ -1,29 +1,28 @@
-export const messageInfoTestResultAboutV2 = `TODO
+export const messageInfoTestResultAboutV2 = `
 <p>
-    De volgende gegevens zijn opgehaald bij de testlocatie:
+    The following details were retrieved at the test location:
 </p>
 <p>
-    Jouw gegevens: <b>%{discreteInfoString}</b><br>
-    Type test: <b>%{testType}</b><br>
-    Testlocatie: <b>%{testLocation}</b><br>
-    Testdatum: <b>%{sampleDate}</b><br>
-    Testuitslag: <b>negatief (geen corona)</b><br>
-    IdentificationCode: <b>%{identificationCode}</b>
+    Your details: <b>%{discreteInfoString}</b><br>
+    Test type: <b>%{testType}</b><br>
+    Test location: <b>%{testLocation}</b><br>
+    Test date: <b>%{sampleDate}</b><br>
+    Test result: <b>negatief (geen corona)</b><br>
+    Identification code: <b>%{identificationCode}</b>
 </p>`;
 
-export const messageInfoTestResultAboutV3 = `TODO
+export const messageInfoTestResultAboutV3 = `
 <p>
-    De volgende gegevens zijn opgehaald bij de testlocatie:
+    The following details were retrieved at the test location:
 </p>
 <p>
-    TODO
-    Naam:  <b>%{name}</b><br>
-    Geboortedatum:  <b>%{birthDateString}</b><br>
+    Name:  <b>%{name}</b><br>
+    Date of birth:  <b>%{birthDateString}</b><br>
     Type test: <b>%{testType}</b><br>
-    Test naam: <b>%{testName}</b><br>
-    Testdatum: <b>%{sampleDate}</b><br>
-    Testuitslag: <b>negatief (geen corona)</b><br>
-    Testlocatie: <b>%{testLocation}</b><br>
-    Testproducent: <b>%{manufacturer}</b><br>
-    Identificatiecode: <b>%{identificationCode}</b>
+    Test name: <b>%{testName}</b><br>
+    Test date: <b>%{sampleDate}</b><br>
+    Test result:: <b>negatief (geen corona)</b><br>
+    Test location: <b>%{testLocation}</b><br>
+    Test manufacturer: <b>%{manufacturer}</b><br>
+    Identification code: <b>%{identificationCode}</b>
 </p>`;

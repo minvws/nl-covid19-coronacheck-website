@@ -30,12 +30,7 @@ export default {
             });
         },
         notifyDigidFinished() {
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.digidFinished.head'),
-                messageBody: this.$t('message.info.digidFinished.body'),
-                closeButton: true,
-                closeText: this.$t('message.info.digidFinished.closeText')
-            })
+            this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body'))
         },
         collectEvents(token) {
             this.$store.commit('signedEvents/clear');

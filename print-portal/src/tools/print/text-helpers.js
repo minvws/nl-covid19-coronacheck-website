@@ -69,9 +69,9 @@ export const drawTextItemWithMixedChunks = (doc, chunks, textItem, baseX, baseY)
                     const remainingText = set.join(' ');
                     const remainingSet = doc.splitTextToSize(remainingText, textItem.width);
                     for (const item of remainingSet) {
-                        const index = set.indexOf(item);
+                        const index = remainingSet.indexOf(item);
                         doc.text(item, (baseX + addedX), (baseY + addedY), textAlign);
-                        if (index < set.length - 1) {
+                        if (index < remainingSet.length - 1) {
                             addedY += lh;
                         }
                     }

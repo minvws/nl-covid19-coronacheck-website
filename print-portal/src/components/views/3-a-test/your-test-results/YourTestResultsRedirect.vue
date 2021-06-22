@@ -65,8 +65,7 @@ export default {
             <div
                 v-if="isLoading"
                 class="section-block">
-                <Loading
-                    :text="'(Mocking digid connection...)'"/>
+                <Loading/>
             </div>
         </div>
     </Page>
