@@ -13,6 +13,6 @@ Laat je testen via een testlocatie die bij Testen voor Toegang is aangesloten.
 <a href="https://www.testenvoortoegang.nl" class="btn btn--cta">Maak afspraak<span class="screen-reader-text"> via Testen voor Toegang</span></a>
 
 ## Bij klachten
-Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, benauwdheid, verhoging of koorts. Laat je testen bij de GGD. Let op: het is nog niet mogelijk een testuitslag van de GGD in een testbewijs om te zetten.
+Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, benauwdheid, verhoging of koorts. Laat je testen bij de GGD. 
 
 <a href="https://www.coronatest.nl" class="btn btn--cta">Maak afspraak<span class="screen-reader-text"> bij de GGD</span></a>
