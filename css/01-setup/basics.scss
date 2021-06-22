@@ -109,3 +109,27 @@ button {
         padding: 10px;
     }
 }
+
+// Sorry, we're busy page
+
+.content-sorry {
+    text-align: center;
+
+    @media (max-width: 739px) {
+        br {
+            display: none;
+        }
+    }
+
+    .content-sorry_title {
+        margin-bottom: 20px;
+    }
+
+    .content-sorry_image {
+        margin: 0px auto;
+        width: 100%;
+        max-width: 236px;
+        height: auto;
+        max-height: 30vh;
+    }
+}
