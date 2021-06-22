@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const sign = (signedEvents) => {
-    console.log(JSON.stringify({ events: signedEvents }));
     return new Promise((resolve, reject) => {
         axios({
             method: 'post',
