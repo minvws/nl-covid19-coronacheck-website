@@ -859,6 +859,20 @@ footer-testappointment:
   nl: Doe een coronatest
   en: Take a coronavirus test
 
+footer-wegwijzer-url:
+  nl: wegwijzer
+  en: guidepost
+
+footer-wegwijzer:
+  nl: Wegwijzer
+  en: Guidepost
+
+footer-wijsopreis-url: https://www.nederlandwereldwijd.nl/reizen-naar-het-buitenland
+
+footer-wijsopreis:
+  nl: Wijs op reis
+  en: Wijs op reis (dutch)
+
 footer-misc-title:
   nl: Over CoronaCheck
   fy: Oer CoronaCheck
