@@ -31,7 +31,7 @@ const nl = {
         },
         'choiceTestLocation': {
             'pageHeader': 'Waar ben je getest?',
-            'pageIntro': '<p>Is je testuitslag negatief? Dan kan je er een QR-code van maken. Geef aan bij welke testlocatie je bent getest.</p>',
+            'pageIntro': '<p>Geef aan of je bij de GGD of bij een andere testlocatie getest bent.</p>',
             'choiceGGDHead': 'GGD',
             'choiceGGDBody': 'Login met DigiD',
             'loginDigid': 'Ik heb geen DigiD',

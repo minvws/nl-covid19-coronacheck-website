@@ -27,7 +27,7 @@ const en = {
         },
         'choiceTestLocation': {
             'pageHeader': 'Where have you been tested?',
-            'pageIntro': '<p>Is your test result negative? Then you can turn it into a QR code. Please specify at which test location you were tested.</p>',
+            'pageIntro': '<p>Indicate whether you were tested at the GGD or at a different test location.</p>',
             'choiceGGDHead': 'GGD',
             'choiceGGDBody': 'Log in with DigiD',
             'loginDigid': 'I don’t have DigiD',
