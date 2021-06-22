@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import _base from './modules/_base-module';
 import modal from './modules/modal';
+import snackbar from './modules/snackbar';
 import languages from './modules/languages';
 import testProviders from './modules/testProviders';
 import eventProviders from './modules/eventProviders';
@@ -97,6 +98,7 @@ export default new Vuex.Store({
     actions: {},
     modules: {
         modal,
+        snackbar,
         languages,
         testProviders,
         eventProviders,

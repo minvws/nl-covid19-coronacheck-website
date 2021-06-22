@@ -1,14 +1,18 @@
 <script>
 import Identity from '@/components/elements/Identity';
 import languages from '@/data/languages';
-import Modal from './components/elements/Modal';
+import Modal from '@/components/elements/Modal';
 import { cmsDecode } from '@/tools/cms'
+import Snackbar from '@/components/elements/Snackbar';
 
 export default {
-    components: { Modal, Identity },
+    components: { Snackbar, Modal, Identity },
     computed: {
         dataReady() {
             return this.currentLanguage && this.$store.state.holderConfig && this.$store.state.testProviders.all.length > 0;
+        },
+        displaySnackbar() {
+            return this.$store.state.snackbar.visible
         }
     },
     methods: {
@@ -106,6 +110,7 @@ export default {
         id="app">
         <Identity/>
         <router-view/>
+        <Snackbar v-if="displaySnackbar"/>
         <Modal/>
     </div>
 </template>
