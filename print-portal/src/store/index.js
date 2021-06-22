@@ -80,6 +80,7 @@ const mutations = {
         state.verificationCode = '';
         state.testResultStatus = 'idle';
         state.signedEvents = [];
+        state.qrs.proof = null;
     },
     sessionEnded(state) {
         state.testCode = '';
@@ -87,6 +88,7 @@ const mutations = {
         state.verificationCode = '';
         state.testResultStatus = 'idle';
         state.signedEvents = [];
+        state.qrs.proof = null;
         state.userConsent = false
     }
 }

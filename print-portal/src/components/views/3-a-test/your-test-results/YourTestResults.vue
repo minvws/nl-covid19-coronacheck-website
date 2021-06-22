@@ -44,17 +44,20 @@ export default {
     },
     methods: {
         gotoPrint() {
-            signer.sign(this.$store.state.signedEvents.all).then(response => {
-                console.log(response);
-                this.$store.commit('qrs/add', response.data);
+            if (this.$store.state.qrs.proof === null) {
+                signer.sign(this.$store.state.signedEvents.all).then(response => {
+                    this.$store.commit('qrs/add', response.data);
+                    this.$router.push({ name: 'PrintTestResult' });
+                }).catch(error => {
+                    this.$store.commit('modal/set', {
+                        messageHead: this.$t('message.error.general.head'),
+                        messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
+                        closeButton: true
+                    });
+                })
+            } else {
                 this.$router.push({ name: 'PrintTestResult' });
-            }).catch(error => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.error.general.head'),
-                    messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
-                    closeButton: true
-                });
-            })
+            }
         },
         goBack() {
             const callback = () => {
