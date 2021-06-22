@@ -14,7 +14,7 @@ const en = {
             'pageHeader': 'Get access with a test certificate on paper',
             'pageIntro': '<p>A test certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><h4>Only access after testing</h4><p>Get tested when visiting certain social, cultural or sports events. Even when you\'ve already been vaccinated. Does your test prove you don\'t have coronavirus (negative test result)? Then you can get access.</p><h4>Your QR code in your pocket</h4><p>If your test proves you don\'t have coronavirus, you can make a personal QR code in this app. This will be your test certificate. The QR code is scanned before you get access.</p><h4>Minimum amount of data</h4><p>Your QR code only states when you tested negative (no coronavirus), the time of testing, and the minimum amount of identifying data: your first name initial, your last name initial, your day of birth, and your month of both. We verify this information to make sure the test result is yours.</p>',
             'userConsentText': 'I have read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and understand how CoronaCheck processes my data.',
-            'noConsentError': 'TODO'
+            'noConsentError': 'Give consent to the privacy statement first'
         },
         'choiceProof': {
             'pageHeader': 'What would you like to make a paper certificate of?',
@@ -143,6 +143,10 @@ const en = {
                 'head': 'Need a new verification code?',
                 'body': '<p>The test location sends you a verification code via text or email. Didn\'t get one? Then you can request a new code.</p>'
             },
+            'didNotGetTestedYet': {
+                'head': 'TODO Ik ben nog niet getest',
+                'body': 'TODO <p>Je moet je eerst laten testen voordat je een QR-code kan maken. Als uit de test blijkt dat je geen corona hebt kan je jouw QR-code maken.</p><p>Een testbewijs is geldig tot 40 uur na het moment van testen. Plan je test dus op tijd. En zorg dat jouw QR-code binnen 40 uur gescand is bij de ingang.</p><p><a href="https://coronacheck.nl/nl/testafspraak-in-app" class="btn" target="_blank">Maak een afspraak</a></p>'
+            },
             'areYouSureToCancelVaccination': {
                 'head': 'Are you sure you want to stop?',
                 'body': 'Then you need to log in again later using DigiD to retrieve your vaccination.',
@@ -156,15 +160,13 @@ const en = {
                 'no': 'No, continue'
             },
             'digidCanceled': {
-                'head': 'TODO digidCanceled head',
-                'body': 'TODO digidCanceled body',
+                'head': 'Login failed',
+                'body': 'You can log in again to retrieve your %{type}',
                 'vaccination': 'vaccinations',
                 'negativetest': 'test result'
             },
             'digidFinished': {
-                'head': 'TODO Je bezoek aan DigiD zit erop',
-                'body': 'TODOWe halen nu jouw vaccinaties op. Daarna kun je er een bewijs van maken.',
-                'closeText': 'Okay'
+                'body': 'We\'ll retrieve your vaccinations. You will be logged out of DigiD automatically'
             }
         },
         'error': {
@@ -179,7 +181,24 @@ const en = {
         }
     },
     'pdf': {
-        // todo
+        'eu': {},
+        'nl': {
+            'instructions': 'TODO 1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat de QR-code (en eventueel ook je toegangskaartje) zien bij de ingang\n\nLet op: dit papieren bewijs is 28 dagen geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.',
+            'propertiesLabel': 'TODO Gegevens',
+            'title': 'Certificate for the Netherlands',
+            'intro': 'Visiting locations or activities within the Netherlands? Then use this certificate.',
+            'qrTitle': 'QR-code Netherlands',
+            'userData': {
+                'initials': 'Initials',
+                'dateOfBirth': 'Day of birth',
+                'validFrom': 'Valid from',
+                'validUntil': 'Valid until',
+                'privacyNote': 'You don’t need to show this to the scanner'
+            }
+        },
+        'instructions': 'Instructions',
+        'questions': 'QUESTIONS?',
+        'questionsContent': 'TODO Bekijk de meestgestelde vragen op CoronaCheck.nl of stuur een e-mail naar <b>helpdesk@coronacheck.nl</b> of bel naar <b>0800-1421</b> (gratis)'
     },
     'image': {
         'holder': {
