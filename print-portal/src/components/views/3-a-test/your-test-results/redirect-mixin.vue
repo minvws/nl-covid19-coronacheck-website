@@ -139,6 +139,8 @@ export default {
                             if (!dateTool.isValidDateString(proofEventOfType.date)) {
                                 return payload.providerIdentifier;
                             }
+                        } else {
+                            return payload.providerIdentifier;
                         }
                     }
                 }
