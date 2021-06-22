@@ -12,7 +12,15 @@ export default {
     components: { Page, PageIntro, Vaccination, CcButton, CcModestButton },
     computed: {
         vaccinationSignedEvents() {
-            return this.$store.getters['signedEvents/getProofEvents']('vaccination').sort((a, b) => {
+            const vaccinationSignedEvents = this.$store.getters['signedEvents/getProofEvents']('vaccination');
+            const filteredForUnique = []
+            for (const signedEvent of vaccinationSignedEvents) {
+                const existingKeys = filteredForUnique.map(s => s.event.unique);
+                if (existingKeys.indexOf(signedEvent.event.unique) === -1) {
+                    filteredForUnique.push(signedEvent)
+                }
+            }
+            return filteredForUnique.sort((a, b) => {
                 return dateTool.getTime(a.event.vaccination.date) - dateTool.getTime(b.event.vaccination.date);
             })
         }
