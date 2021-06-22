@@ -7,14 +7,14 @@ import axios from 'axios';
 import i18n from './i18n'
 import AuthService from '@/interfaces/authentication'
 
-let locationHref = window.location.href;
-// production env has a / in the base url
-if (locationHref[locationHref.length - 1] !== '/') {
-    locationHref += '/';
+const getBaseUrl = () => {
+    const chunks = window.location.href.split('/print');
+    return chunks[0] + '/print/';
 }
 
-const authVaccinations = new AuthService(locationHref + 'jouw-vaccinaties-redirect');
-const authNegativeTests = new AuthService(locationHref + 'jouw-testresultaat-redirect');
+const baseUrl = getBaseUrl();
+const authVaccinations = new AuthService(baseUrl + 'jouw-vaccinaties-redirect');
+const authNegativeTests = new AuthService(baseUrl + 'jouw-testresultaat-redirect');
 
 Vue.prototype.authVaccinations = authVaccinations;
 Vue.prototype.authNegativeTests = authNegativeTests;
