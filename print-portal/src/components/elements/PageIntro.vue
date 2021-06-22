@@ -16,9 +16,9 @@ export default {
 
 <template>
     <div class="section-block">
-        <h2 v-if="head">
+        <h1 v-if="head">
             {{head}}
-        </h2>
+        </h1>
         <div
             v-if="intro"
             v-html="intro"/>
@@ -26,7 +26,9 @@ export default {
 </template>
 
 <style lang="scss">
-.PageIntro {
-
-}
+    h1 {
+        font-size: 30px;
+        line-height: 1.21875;
+        margin-bottom: 24px;
+    }
 </style>

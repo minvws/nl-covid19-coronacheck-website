@@ -13,9 +13,7 @@ export default {
             <img :src="'assets/img/CoronaCheck_app-' + currentLanguage.locale + '.png'" alt="" width="226" height="289" />
         </div>
         <div class="PreferMobile__text">
-            <h3>
-                {{$t('components.preferMobile.header')}}
-            </h3>
+            <h2>{{$t('components.preferMobile.header')}}</h2>
             <p>
                 {{$t('components.preferMobile.intro')}}
             </p>
