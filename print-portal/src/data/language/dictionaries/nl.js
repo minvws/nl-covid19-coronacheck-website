@@ -170,7 +170,7 @@ const nl = {
                 'negativetest': 'testuitslag'
             },
             'digidFinished': {
-                'body': 'Je bezoek aan DigiD zit erop. We halen nu jouw vaccinaties op. Daarna kun je er een bewijs van maken.',
+                'body': 'We halen nu jouw vaccinaties op. Je wordt automatisch uitgelogd bij DigiD',
                 'closeText': 'Ok'
             },
             'sessionEnded': {
