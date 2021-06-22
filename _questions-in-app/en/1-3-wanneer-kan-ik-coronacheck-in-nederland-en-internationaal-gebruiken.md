@@ -7,4 +7,4 @@ redirect_from:
   - /en/faq/39-wanneer-wordt-coronacheck-verder-uitgebreid
   - /en/faq-in-app/32-kan-ik-met-een-vaccinatie-ook-toegang-krijgen/
 ---
-The Dutch coronavirus entry pass is available already. From the beginning of July, you can also get an international certificate.
+From the end of June, you can turn a vaccination into a Dutch coronavirus entry pass. From the beginning of July, you can also get an international certificate - either from a test result, a vaccination or a recovery statement (if you were infected with coronavirus before).

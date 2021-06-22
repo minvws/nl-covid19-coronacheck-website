@@ -11,3 +11,5 @@ If you’ve recently tested negative or you’ve been vaccinated, you can make a
 The [CoronaCheck Scanner](/en/scanner) app never shows whether your certificate or entry pass was made from a test result or a vaccination. This is because vaccinations aren’t mandatory in the Netherlands.
 
 Abroad, however, it could matter what your certificate or entry pass was made from. This is because countries individually determine which type(s) of certificate they accept. They also set their own terms – like the validity of a test, for example. Before you travel, always go to <a href="https://www.wijsopreis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.wijsopreis.nl (Dutch)</a> to check the terms of the country you’re visiting. The Netherlands is committed to ensuring the terms within Europe are as equivalent as possible.
+
+**Please note**: from the end of June you can make a certificate from a vaccination.
