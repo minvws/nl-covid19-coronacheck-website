@@ -52,8 +52,6 @@ const getEvents = async (tokenSets, filter) => {
             try {
                 result = await unomi(eventProvider, tokenSet);
             } catch (error) {
-                console.log('error');
-                console.dir(error);
                 response.errors.push(error);
             }
             if (result && result.informationAvailable) {
