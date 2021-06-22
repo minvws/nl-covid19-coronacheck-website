@@ -79,8 +79,8 @@ const en = {
             'pageIntro': 'Please try again later.<br>If you have any questions, contact your test location.'
         },
         'testResultNone': {
-            'pageHeader': 'TOOO Geen negatieve testuitslag',
-            'pageIntro': 'TOOO Er is geen negatieve testuitslag beschikbaar.'
+            'pageHeader': 'No negative test result',
+            'pageIntro': 'No negative test result available.'
         },
         'print': {
             'openPDF': 'Open PDF'
