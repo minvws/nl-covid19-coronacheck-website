@@ -16,19 +16,25 @@
   {% include header.html %}
   <main id="content"> 
  
-    {% assign announcements = site.announcements | where:"lang", page.lang %}
-    {% if announcements.size != 0 %}
+    {% assign announcement-errors = site.announcements | where:"lang", page.lang | where:"style", "error" %}
+    {% if announcement-errors.size != 0 %}
       <div class="announcement offset-background">
-        {% for announcement in announcements %}
-          <h2>{{ announcement.title }}</h2>
+        {% for announcement in announcement-errors %}
+          {% if announcement.title != ''  %}<h2>{{ announcement.title }}</h2>{% endif %}
           {{ announcement.content }}
         {% endfor %}
       </div> 
     {% endif %}
 
-    <div class="intro offset-background">
-        {{ site.data.translations.home-intro-content[page.lang] }}
-    </div>
+    {% assign announcement-info = site.announcements | where:"lang", page.lang | where:"style", "info" %}
+    {% if announcement-info.size != 0 %}
+      <div class="intro offset-background">
+        {% for announcement in announcement-info %}
+          {% if announcement.title != '' %}<h2>{{ announcement.title }}</h2>{% endif %}
+          {{ announcement.content }}
+        {% endfor %}
+      </div> 
+    {% endif %}
     
     {% include components/user-instructions.html %}
     {% include components/print-version.html %}
