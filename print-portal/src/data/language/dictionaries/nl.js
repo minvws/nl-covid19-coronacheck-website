@@ -95,7 +95,7 @@ const nl = {
         },
         'printVaccination': {
             'pageHeader': 'Print jouw Nederlandse vaccinatiebewijs',
-            'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een Nederlands vaccinatiebewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen. Als de Europese regelgeving ingaat (vanaf 1 juli) kun je ook een internationale QR-code maken.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/18-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 maand geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+            'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een Nederlands vaccinatiebewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen. Als de Europese regelgeving ingaat (vanaf 1 juli) kun je ook een internationale QR-code maken.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/18-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
         }
     },
     'components': {
@@ -219,7 +219,7 @@ const nl = {
                 'propertiesLabel': 'Gegevens negatieve test'
             },
             'vaccination': {
-                'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat de QR-code en je testgegevens zien aan de buitenlandse grens of als er in andere landen om gevraagd wordt.\n\nLet op: dit papieren bewijs is 28 dagen geldig. Daarna moet je een nieuw papieren bewijs maken.',
+                'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat de QR-code en je testgegevens zien aan de buitenlandse grens of als er in andere landen om gevraagd wordt.',
                 'propertiesLabel': 'Vaccinatiegegevens'
             },
             'title': 'Internationaal bewijs',
@@ -227,7 +227,7 @@ const nl = {
             'qrTitle': 'QR-code internationaal'
         },
         'nl': {
-            'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat de QR-code (en eventueel ook je toegangskaartje) zien bij de ingang\n\nLet op: dit papieren bewijs is 28 dagen geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.',
+            'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat de QR-code (en eventueel ook je toegangskaartje) zien bij de ingang',
             'propertiesLabel': 'Gegevens',
             'title': 'Bewijs voor in Nederland',
             'intro': 'Bezoek je locaties of activiteiten binnen Nederland? Gebruik dan dit coronatoegangsbewijs.',
@@ -242,16 +242,7 @@ const nl = {
         },
         'instructions': 'Instructies',
         'questions': 'VRAGEN?',
-        'questionsContent': 'Bekijk de meestgestelde vragen op CoronaCheck.nl of stuur een e-mail naar <b>helpdesk@coronacheck.nl</b> of bel naar <b>0800-1421</b> (gratis)'
-    },
-    'image': {
-        'holder': {
-            'overview': 'Mijn overzicht',
-            'showQrIntro': 'Laat zowel de QR-code als je identiteitsbewijs zien bij de ingang van de locatie die je bezoekt.',
-            'myQr': 'Mijn QR-code',
-            'validText': 'Geldig tot donderdag<br>11 maart 14:06',
-            'showQr': 'Toon QR'
-        }
+        'questionsContent': 'Bekijk de meestgestelde vragen op www.coronacheck.nl of stuur een e-mail naar <b>helpdesk@coronacheck.nl</b> of bel naar <b>0800-1421</b> (gratis)'
     },
     'back': 'Terug',
     'close': 'Sluiten',

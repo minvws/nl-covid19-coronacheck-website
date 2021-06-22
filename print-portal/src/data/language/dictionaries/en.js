@@ -183,7 +183,7 @@ const en = {
     'pdf': {
         'eu': {},
         'nl': {
-            'instructions': '1. Print this certificate on A4 (black-and-white allowed)\n\n2. Bring a valid proof of identity to the activity you’re visiting \n\n3. Show the QR code (and if needed a ticket) at the entrance\n\nPlease note: this paper certificate is valid for 1 year. Afterwards, you can make a new paper certificate.',
+            'instructions': '1. Print this certificate on A4 (black-and-white allowed)\n\n2. Bring a valid proof of identity to the activity you’re visiting \n\n3. Show the QR code (and if needed a ticket) at the entrance.',
             'propertiesLabel': 'Details',
             'title': 'Certificate for the Netherlands',
             'intro': 'Visiting locations or activities within the Netherlands? Then use this certificate.',
@@ -198,16 +198,7 @@ const en = {
         },
         'instructions': 'Instructions',
         'questions': 'QUESTIONS?',
-        'questionsContent': 'TODO Bekijk de meestgestelde vragen op CoronaCheck.nl of stuur een e-mail naar <b>helpdesk@coronacheck.nl</b> of bel naar <b>0800-1421</b> (gratis)'
-    },
-    'image': {
-        'holder': {
-            'overview': 'My overview',
-            'showQrIntro': 'Show your QR code and your ID at the entrance of the location you are visiting.',
-            'myQr': 'My QR code',
-            'validText': 'Valid until<br> March 11th 14:06',
-            'showQr': 'Show QR'
-        }
+        'questionsContent': 'Please find frequently asked questions on www.coronacheck.nl. You can also send an email to <b>helpdesk@coronacheck.nl</b> or reach us (for free) on <b>0800-1421</b>'
     },
     'back': 'Back',
     'close': 'Close',
