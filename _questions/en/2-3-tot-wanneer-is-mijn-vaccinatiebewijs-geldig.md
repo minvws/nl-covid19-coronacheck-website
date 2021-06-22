@@ -3,7 +3,7 @@ set: 2
 index: 3
 title: How long is my proof of vaccination valid for in the Netherlands?
 ---
-{{ site.data.translations.pleaseNoteFAQs[page.lang] }}
+
 
 We’re unsure at this point. How long immunity from a vaccination lasts is still being researched. When we know how long you’re protected by a vaccination, its validity will be updated based on that information. Until then, the proof of vaccination is valid indefinitely.
  

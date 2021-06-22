@@ -5,7 +5,7 @@ title: De app zegt dat er geen negatieve testuitslag of vaccinatie gevonden is. 
 redirect_from: 
   - /nl/faq-in-app/13-de-app-zegt-dat-er-geen-negatieve-testuitslag-gevonden-is-hoe-kan-dit
 ---
-{{ site.data.translations.pleaseNoteFAQs[page.lang] }}
+
 
 Geen vaccinatie gevonden? Dit kan verschillende oorzaken hebben. [Kijk hier voor meer informatie](/wegwijzer). Ben je kortgeleden gevaccineerd? Dan kan het even duren tot de gegevens beschikbaar zijn.
 
