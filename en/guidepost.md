@@ -5,7 +5,6 @@ title: Guidepost
 redirect_from: 
     - /guidepost
     - /en/wegwijzer
-published: true
 ---
 ## Travelling
 
