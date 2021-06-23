@@ -5,7 +5,7 @@ import NegativeTest from './NegativeTest';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import signer from '@/interfaces/signer';
-import { handleRejection } from '@/tools/error-handler';
+import { handleRejectionSigner } from '@/tools/error-handler';
 
 export default {
     name: 'YourTestResults',
@@ -50,7 +50,7 @@ export default {
                     this.$store.commit('qrs/add', response.data);
                     this.$router.push({ name: 'PrintTestResult' });
                 }).catch(error => {
-                    handleRejection(error);
+                    handleRejectionSigner(error);
                 })
             } else {
                 this.$router.push({ name: 'PrintTestResult' });

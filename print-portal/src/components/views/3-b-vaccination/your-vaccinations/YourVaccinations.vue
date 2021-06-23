@@ -6,7 +6,7 @@ import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import signer from '@/interfaces/signer';
 import dateTool from '@/tools/date';
-import { handleRejection } from '@/tools/error-handler';
+import { handleRejectionSigner } from '@/tools/error-handler';
 
 export default {
     name: 'YourVaccinations',
@@ -50,7 +50,7 @@ export default {
                     this.$store.commit('qrs/add', response.data);
                     this.$router.push({ name: 'PrintVaccination' });
                 }).catch(error => {
-                    handleRejection(error);
+                    handleRejectionSigner(error);
                 })
             } else {
                 this.$router.push({ name: 'PrintVaccination' });

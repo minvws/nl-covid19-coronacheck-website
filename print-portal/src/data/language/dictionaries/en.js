@@ -214,6 +214,10 @@ const en = {
             'noInternet': {
                 'head': 'You\'re not connected to the internet',
                 'body': 'Check your connection and try again.'
+            },
+            'signerFailed': {
+                'head': 'TODO',
+                'body': 'TODO'
             }
         }
     },

@@ -218,6 +218,10 @@ const nl = {
             'noInternet': {
                 'head': 'Je hebt geen internet',
                 'body': 'Controleer je verbinding en probeer het opnieuw.'
+            },
+            'signerFailed': {
+                'head': '',
+                'body': 'Op dit moment kunnen we geen bewijs maken (code: xx)'
             }
         }
     },
