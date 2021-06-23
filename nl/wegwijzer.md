@@ -2,7 +2,9 @@
 layout: content
 lang: nl
 title: Wegwijzer
-redirect_from: /wegwijzer
+redirect_from: 
+    - /wegwijzer
+    - /nl/guidepost
 published: true
 ---
 ## Reizen
