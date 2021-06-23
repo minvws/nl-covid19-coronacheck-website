@@ -130,7 +130,7 @@ export default {
                 const url = this.testProvider.result_url;
                 const headers = {
                     'Authorization': `Bearer ${this.token.toUpperCase()}`,
-                    'CoronaCheck-Protocol-Version': '2.0',
+                    'CoronaCheck-Protocol-Version': '3.0',
                     'Content-Type': 'application/x-www-form-urlencoded'
                 };
 
