@@ -185,7 +185,7 @@ const en = {
             },
             'generalWithError': {
                 'head': 'Sorry, there is an outage',
-                'body': '<p>Contact our helpdesk and give them error code (%@) or try again later.</p>'
+                'body': '<p>Contact our helpdesk and give them error code (%{code}) or try again later.</p>'
             },
             'serverBusy': {
                 'head': '',
