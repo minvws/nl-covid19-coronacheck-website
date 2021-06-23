@@ -216,8 +216,8 @@ const en = {
                 'body': 'Check your connection and try again.'
             },
             'signerFailed': {
-                'head': 'TODO',
-                'body': 'TODO'
+                'head': '',
+                'body': 'At this moment, we can’t make a certificate (code: xx)'
             }
         }
     },
