@@ -240,7 +240,7 @@ const nl = {
             'propertiesLabel': 'Gegevens',
             'title': 'Bewijs voor in Nederland',
             'intro': 'Bezoek je locaties of activiteiten binnen Nederland? Gebruik dan dit coronabewijs.',
-            'qrTitle': 'QR-code Nederland',
+            'qrTitle': 'Coronabewijs',
             'userData': {
                 'initials': 'Initialen',
                 'dateOfBirth': 'Geboortedag',
