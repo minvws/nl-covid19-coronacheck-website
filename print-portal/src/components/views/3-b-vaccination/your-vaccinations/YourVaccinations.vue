@@ -47,8 +47,18 @@ export default {
         gotoPrint() {
             if (this.$store.state.qrs.proof === null) {
                 signer.sign(this.$store.state.signedEvents.all).then(response => {
-                    this.$store.commit('qrs/add', response.data);
-                    this.$router.push({ name: 'PrintVaccination' });
+                    // currently check if there is domestic result. From 2.1 on
+                    // we have to check if there is either domestic or eu
+                    if (response.data && response.data.domestic) {
+                        this.$store.commit('qrs/add', response.data);
+                        this.$router.push({ name: 'PrintVaccination' });
+                    } else {
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('message.error.signerFailed.head'),
+                            messageBody: this.$t('message.error.signerFailed.body'),
+                            closeButton: true
+                        });
+                    }
                 }).catch(error => {
                     handleRejectionSigner(error);
                 })

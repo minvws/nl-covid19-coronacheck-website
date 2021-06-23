@@ -47,8 +47,16 @@ export default {
         gotoPrint() {
             if (this.$store.state.qrs.proof === null) {
                 signer.sign(this.$store.state.signedEvents.all).then(response => {
-                    this.$store.commit('qrs/add', response.data);
-                    this.$router.push({ name: 'PrintTestResult' });
+                    if (response.data && response.data.domestic) {
+                        this.$store.commit('qrs/add', response.data);
+                        this.$router.push({ name: 'PrintTestResult' });
+                    } else {
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('message.error.signerFailed.head'),
+                            messageBody: this.$t('message.error.signerFailed.body'),
+                            closeButton: true
+                        });
+                    }
                 }).catch(error => {
                     handleRejectionSigner(error);
                 })
