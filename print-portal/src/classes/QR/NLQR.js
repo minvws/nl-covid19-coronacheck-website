@@ -11,7 +11,9 @@ class NLQR {
     }
 
     get initials() {
-        return this.attributes.firstNameInitial + '.' + this.attributes.lastNameInitial + '.';
+        const firstName = (this.attributes.firstNameInitial.length > 0) ? (this.attributes.firstNameInitial + '. ') : ''
+        const lastName = (this.attributes.lastNameInitial.length > 0) ? (this.attributes.lastNameInitial + '.') : ''
+        return firstName + lastName;
     }
 
     get validFromDate() {
