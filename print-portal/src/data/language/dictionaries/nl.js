@@ -251,7 +251,11 @@ const nl = {
         },
         'instructions': 'Instructies',
         'questions': 'VRAGEN?',
-        'questionsContent': 'Bekijk de meestgestelde vragen op www.coronacheck.nl of stuur een e-mail naar <b>helpdesk@coronacheck.nl</b> of bel naar <b>0800-1421</b> (gratis)'
+        'questionsContent': 'Bekijk de meestgestelde vragen op www.coronacheck.nl of stuur een e-mail naar <b>helpdesk@coronacheck.nl</b> of bel naar <b>0800-1421</b> (gratis)',
+        'metadata': {
+            'title': 'Coronabewijs met QR-code',
+            'author': 'CoronaCheck'
+        }
     },
     'back': 'Terug',
     'close': 'Sluiten',

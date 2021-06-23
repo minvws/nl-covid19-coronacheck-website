@@ -30,6 +30,12 @@ export default {
         },
         fileName() {
             return 'coronacheck.pdf';
+        },
+        metadata() {
+            return {
+                title: this.$t('pdf.metadata.title'),
+                author: this.$t('pdf.metadata.author')
+            };
         }
     },
     methods: {
@@ -44,7 +50,7 @@ export default {
                         urlQR: urlQR
                     }
                 ]
-                this.document = await getDocument(pages, this.currentLanguage.locale);
+                this.document = await getDocument(pages, this.currentLanguage.locale, this.metadata);
             }, (error) => {
                 handleRejection(error);
             })
@@ -66,6 +72,7 @@ export default {
                 action.document.open();
                 action.document.write(embed);
                 action.document.close();
+                action.document.title = this.metadata.title;
             } else {
                 this.somethingGeneralWentWrong();
             }

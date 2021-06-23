@@ -235,7 +235,11 @@ const en = {
         },
         'instructions': 'Instructions',
         'questions': 'QUESTIONS?',
-        'questionsContent': 'Please find frequently asked questions on www.coronacheck.nl. You can also send an email to <b>helpdesk@coronacheck.nl</b> or reach us (for free) on <b>0800-1421</b>'
+        'questionsContent': 'Please find frequently asked questions on www.coronacheck.nl. You can also send an email to <b>helpdesk@coronacheck.nl</b> or reach us (for free) on <b>0800-1421</b>',
+        'metadata': {
+            'title': 'Certificate containing QR-code',
+            'author': 'CoronaCheck'
+        }
     },
     'back': 'Back',
     'close': 'Close',

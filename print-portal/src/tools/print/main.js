@@ -36,7 +36,7 @@ const getBirthDayString = (userData) => {
     }
     return day + ' ' + month;
 }
-const initDoc = () => {
+const initDoc = (metadata, locale) => {
     const settings = {
         orientation: 'p',
         format: 'a4'
@@ -52,6 +52,12 @@ const initDoc = () => {
     doc.addFont('arial.ttf', 'arial', 'normal')
     doc.addFont('arial-bold.ttf', 'arial', 'bold')
     doc.setFont('arial');
+
+    doc.setProperties(metadata);
+    doc.setLanguage(locale);
+    doc.viewerPreferences({
+        DisplayDocTitle: true
+    });
     return doc;
 }
 
@@ -109,8 +115,8 @@ const drawFrames = (doc, frames) => {
     }
 }
 
-export const getDocument = async (pages, locale) => {
-    const doc = initDoc();
+export const getDocument = async (pages, locale, metadata) => {
+    const doc = initDoc(metadata, locale);
     for (const page of pages) {
         if (pages.indexOf(page) > 0) {
             doc.addPage();
