@@ -181,7 +181,7 @@ const en = {
             },
             'general': {
                 'head': 'Sorry, something went wrong',
-                'body': '<p>Because of a technical error. Contact the CoronaCheck helpdesk via <a href="tel:0800-1421">0800-1421</a>.</p>'
+                'body': '<p>Because of a technical error. Contact the CoronaCheck helpdesk.</p>'
             }
         }
     },

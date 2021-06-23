@@ -185,19 +185,23 @@ const nl = {
             },
             'general': {
                 'head': 'Sorry, er gaat iets mis',
-                'body': '<p>Dat komt door een technische fout. Neem contact op met de helpdesk van CoronaCheck via <a href="tel:0800-1421">0800-1421</a>.</p>'
+                'body': '<p>Neem contact op met de helpdesk van CoronaCheck.</p>'
+            },
+            'generalWithError': {
+                'head': 'Sorry, er is een storing',
+                'body': '<p>Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (%{code}) door. Of probeer het later opnieuw.</p>'
             },
             'serverBusy': {
-                'head': 'Sorry, er gaat iets mis',
+                'head': '',
                 'body': '<p>Het is erg druk, probeer het later op de dag nog eens</p>'
             },
             'someServerBusyButResult': {
-                'head': 'Sorry, er gaat iets mis',
+                'head': '',
                 'body': '<p>Gegevens mogelijk niet compleet. Door drukte of een storing bij een van de partijen kunnen er gegevens ontbreken. Probeer het eventueel later nog een keer.</p>'
             },
             'someServerBusyNoResult': {
                 'head': 'Sorry, het is erg druk',
-                'body': '<p>Je vaccinaties konden niet worden opgehaald omdat het te druk is. Probeer het op een later oment nog eens.</p>'
+                'body': '<p>Je vaccinaties konden niet worden opgehaald omdat het te druk is. Probeer het op een later moment nog eens.</p>'
             },
             'someServerErrorButResult': {
                 'head': '',
@@ -220,11 +224,11 @@ const nl = {
     'pdf': {
         'eu': {
             'negativeTest': {
-                'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat de QR-code en je testgegevens zien aan de buitenlandse grens of als er in andere landen om gevraagd wordt.',
+                'instructions': '1. Print dit coronabewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat je coronabewijs (en eventueel ook je toegangskaartje) zien bij de ingang',
                 'propertiesLabel': 'Gegevens negatieve test'
             },
             'vaccination': {
-                'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat de QR-code en je testgegevens zien aan de buitenlandse grens of als er in andere landen om gevraagd wordt.',
+                'instructions': '1. Print dit coronabewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee op reis\n\n3. Laat je coronabewijs (en eventueel ook je toegangskaartje) zien bij de ingang',
                 'propertiesLabel': 'Vaccinatiegegevens'
             },
             'title': 'Internationaal bewijs',
@@ -232,17 +236,17 @@ const nl = {
             'qrTitle': 'QR-code internationaal'
         },
         'nl': {
-            'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat de QR-code (en eventueel ook je toegangskaartje) zien bij de ingang',
+            'instructions': '1. Print dit coronabewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat je coronabewijs (en eventueel ook je toegangskaartje) zien bij de ingang',
             'propertiesLabel': 'Gegevens',
             'title': 'Bewijs voor in Nederland',
-            'intro': 'Bezoek je locaties of activiteiten binnen Nederland? Gebruik dan dit coronatoegangsbewijs.',
-            'qrTitle': 'QR-code Nederland',
+            'intro': 'Bezoek je locaties of activiteiten binnen Nederland? Gebruik dan dit coronabewijs..',
+            'qrTitle': 'Coronabewijs',
             'userData': {
                 'initials': 'Initialen',
                 'dateOfBirth': 'Geboortedag',
                 'validFrom': 'Geldig vanaf',
                 'validUntil': 'Geldig tot',
-                'privacyNote': 'Dit hoef je niet te laten zien aan de scanner'
+                'privacyNote': 'Bovenstaande gegevens hoef je niet te laten zien aan de scanner.'
             }
         },
         'instructions': 'Instructies',
