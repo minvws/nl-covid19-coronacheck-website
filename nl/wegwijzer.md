@@ -45,7 +45,7 @@ Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locati
 
 ### Reizen
 
-Wil je gebruikmaken van een coronabewijs (DCC) om te reizen naar het buitenland? [Hiervoor vind je alle informatie op deze website van de Rijksoverheid](https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie/reizen-buitenland/gratis-test-bij-reizen-naar-het-buitenland). Check voor vertrek altijd de [up-to-date inreis regels van jouw bestemming](http://www.wijsopreis.nl/).
+Wil je gebruikmaken van een coronabewijs (DCC) om te reizen naar het buitenland? [Hiervoor vind je alle informatie op deze website van de Rijksoverheid](https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie). Check voor vertrek altijd de [up-to-date inreis regels van jouw bestemming](http://www.wijsopreis.nl/).
 
 ### Klachten?
 
