@@ -5,6 +5,7 @@ import CcButton from '@/components/elements/CcButton';
 import { getDocument } from '@/tools/print/main';
 import { generateQR } from '@/tools/qr';
 import NLQR from '@/classes/QR/NLQR';
+import { handleRejection } from '@/tools/error-handler';
 
 export default {
     name: 'Print',
@@ -45,11 +46,7 @@ export default {
                 ]
                 this.document = await getDocument(pages, this.currentLanguage.locale);
             }, (error) => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.error.general.head'),
-                    messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                    closeButton: true
-                });
+                handleRejection(error);
             })
         },
         render() {

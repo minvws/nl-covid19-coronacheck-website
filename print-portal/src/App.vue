@@ -4,6 +4,7 @@ import languages from '@/data/languages';
 import Modal from '@/components/elements/Modal';
 import { cmsDecode } from '@/tools/cms'
 import Snackbar from '@/components/elements/Snackbar';
+import { handleRejection } from '@/tools/error-handler';
 
 export default {
     components: { Snackbar, Modal, Identity },
@@ -33,11 +34,7 @@ export default {
                     this.$store.commit('setHolderConfig', holderConfig);
                 }
             }).catch((error) => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.error.general.head'),
-                    messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
-                    closeButton: true
-                });
+                handleRejection(error);
             })
         },
         async getTestProviders() {
@@ -57,11 +54,7 @@ export default {
                     });
                 }
             }).catch((error) => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.error.general.head'),
-                    messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                    closeButton: true
-                });
+                handleRejection(error);
             })
         },
         addLanguages() {

@@ -205,32 +205,6 @@ export default {
                 })
             })
         },
-        // setTimerForValidityTestResult(testResult) {
-        //     if (this.timer) {
-        //         clearTimeout(this.timer);
-        //     }
-        //     this.$axios({
-        //         method: 'get',
-        //         url: '/holder/config'
-        //     }).then((response) => {
-        //         const dateNow = response.headers.date;
-        //         const dateSample = testResult.sampleDate;
-        //         const maxValidity = this.$store.state.holderConfig.maxValidityHours;
-        //         const invalidAt = dateTool.addHoursToDate(dateSample, maxValidity, false);
-        //         const timeToInvalidation = invalidAt.getTime() - new Date(dateNow).getTime();
-        //         this.timer = setTimeout(() => {
-        //             this.$store.commit('clearAll');
-        //             this.$store.commit('modal/set', {
-        //                 messageHead: this.$t('message.error.expiredTestCode.head'),
-        //                 messageBody: this.$t('message.error.expiredTestCode.body'),
-        //                 closeButton: true
-        //             });
-        //             this.$router.push({ name: 'ProvideCode' });
-        //         }, timeToInvalidation)
-        //     }).catch((error) => {
-        //         console.log(error);
-        //     })
-        // },
         handleError(response) {
             if (response.data && response.data.payload) {
                 const payload = cmsDecode(response.data.payload);

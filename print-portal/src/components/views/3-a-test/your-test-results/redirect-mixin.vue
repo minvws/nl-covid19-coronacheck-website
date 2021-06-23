@@ -2,6 +2,7 @@
 import signedEventsInterface from '@/interfaces/signed-events'
 import { cmsDecode } from '@/tools/cms'
 import dateTool from '@/tools/date';
+import { handleRejection } from '@/tools/error-handler';
 
 export default {
     name: 'redirect-mixin',
@@ -98,27 +99,7 @@ export default {
                 this.loading = false;
                 this.$store.commit('modal/close');
                 this.gotoPreviousPage();
-                if (error && error.response && error.response.status) {
-                    if (error.response.status === 429) {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.serverBusy.head'),
-                            messageBody: this.$t('message.error.serverBusy.body'),
-                            closeButton: true
-                        });
-                    } else {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.general.head'),
-                            messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                            closeButton: true
-                        });
-                    }
-                } else {
-                    this.$store.commit('modal/set', {
-                        messageHead: this.$t('message.error.general.head'),
-                        messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                        closeButton: true
-                    });
-                }
+                handleRejection(error)
             });
         },
         hasBrokenPromise(result) {
@@ -134,13 +115,26 @@ export default {
                         }
                     }
                     for (const proofEvent of payload.events) {
-                        const proofEventOfType = proofEvent[proofEvent.type];
-                        if (proofEventOfType.date) {
-                            if (!dateTool.isValidDateString(proofEventOfType.date)) {
+                        const type = proofEvent.type
+                        const proofEventOfType = proofEvent[type];
+                        let dateFields;
+                        switch (type) {
+                        case 'vaccination':
+                            dateFields = ['date']
+                            break;
+                        case 'negativetest':
+                            dateFields = ['sampleDate']
+                            break;
+                        }
+                        for (const dateField of dateFields) {
+                            if (proofEventOfType[dateField]) {
+                                const dateValue = proofEventOfType[dateField];
+                                if (!dateTool.isValidDateString(dateValue)) {
+                                    return payload.providerIdentifier;
+                                }
+                            } else {
                                 return payload.providerIdentifier;
                             }
-                        } else {
-                            return payload.providerIdentifier;
                         }
                     }
                 }

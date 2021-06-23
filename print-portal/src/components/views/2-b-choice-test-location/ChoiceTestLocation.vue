@@ -4,6 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import PageChoice from '@/components/elements/PageChoice';
 import PreferMobile from '@/components/elements/PreferMobile';
 import CcModestButton from '@/components/elements/CcModestButton';
+import { handleRejection } from '@/tools/error-handler';
 
 export default {
     name: 'ChoiceTestLocation',
@@ -17,11 +18,7 @@ export default {
             this.authNegativeTests.startAuthentication().then(() => {
                 //
             }).catch(error => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.error.general.head'),
-                    messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
-                    closeButton: true
-                });
+                handleRejection(error);
             })
         },
         gotoRetrieveTest() {

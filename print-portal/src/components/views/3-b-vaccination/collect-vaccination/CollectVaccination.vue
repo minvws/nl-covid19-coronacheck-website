@@ -3,6 +3,7 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
+import { handleRejection } from '@/tools/error-handler';
 
 export default {
     name: 'CollectVaccination',
@@ -13,11 +14,7 @@ export default {
             this.authVaccinations.startAuthentication().then(() => {
                 //
             }).catch(error => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.error.general.head'),
-                    messageBody: this.$t('message.error.general.body') + '<p>' + error + '</p>',
-                    closeButton: true
-                });
+                handleRejection(error);
             })
         },
         back() {
