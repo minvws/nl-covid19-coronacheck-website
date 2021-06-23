@@ -6,6 +6,8 @@ published: true
 lang: nl
 # Always set a title:
 title: Maak vanaf 24 juni jouw vaccinatiebewijs
+# Set styling to 'error' or 'info'
+style: error
 ---
 Vanaf morgen, 24 juni, is het mogelijk om jouw vaccinatiegegevens om te zetten in een QR-code waarmee je toegang kan krijgen tot evenementen en locaties in Nederland. Hiervoor heb je de nieuwe versie van de CoronaCheck-app nodig, die vanaf morgenmiddag te downloaden is vanuit de app stores. [Lees hier hoe je vanaf morgen je vaccinatiegegevens om kunt zetten in een QR-code](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
