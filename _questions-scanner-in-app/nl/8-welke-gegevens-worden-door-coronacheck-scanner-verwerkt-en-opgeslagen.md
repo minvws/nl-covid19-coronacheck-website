@@ -1,5 +1,4 @@
 ---
-
 index: 1
 set: 4
 title: Welke gegevens worden door CoronaCheck Scanner verwerkt en opgeslagen?

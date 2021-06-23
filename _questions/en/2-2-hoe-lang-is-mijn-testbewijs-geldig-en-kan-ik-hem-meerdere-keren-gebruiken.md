@@ -13,4 +13,4 @@ A test certificate is valid until 40 hours after the moment of testing. So withi
 
 The chances you infect other people within the first 48 hours after the moment of testing are small. That’s why you’re only able to gain entry until 40 hours after the moment of testing. In this case, we assume an activity lasts no longer than 8 hours.
 
-Good to know: in ‘my overview’ in the CoronaCheck app, you can check how long the QR code is still valid for. But please note: you can only check the validity of the Dutch QR code.
+Good to know: in 'my overview’ in the CoronaCheck app, you can check how long the QR code is still valid for. But please note: you can only check the validity of the Dutch QR code.
