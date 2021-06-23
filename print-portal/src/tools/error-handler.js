@@ -2,6 +2,7 @@ import store from '@/store';
 import i18n from '@/i18n'
 
 export const handleRejection = (error) => {
+    console.log(window.navigator.onLine);
     if (!window.navigator.onLine) {
         store.commit('modal/set', {
             messageHead: i18n.t('message.error.noInternet.head'),
