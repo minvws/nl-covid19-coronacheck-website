@@ -38,6 +38,7 @@ export default {
             }
         },
         gotoPreviousPage() {
+            this.$store.commit('snackbar/close');
             this.$router.push({ name: 'ChoiceTestLocation' });
         },
         checkResult() {
