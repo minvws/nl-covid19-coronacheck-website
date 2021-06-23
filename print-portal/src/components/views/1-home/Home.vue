@@ -77,7 +77,7 @@ export default {
 .home {
 
     .home__section {
-        margin-bottom: $length-xl;
+        margin-bottom: $length-l;
     }
 
     .UserConsent {
