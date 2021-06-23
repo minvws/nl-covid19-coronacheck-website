@@ -57,9 +57,13 @@ const getEvents = async (tokenSets, filter) => {
             if (result && result.informationAvailable) {
                 // console.log('unomi');
                 response.hasAtLeastOneUnomi = true;
-                await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
-                    response.events.push(signedEvent)
-                })
+                try {
+                    await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
+                        response.events.push(signedEvent)
+                    })
+                } catch (error) {
+                    response.errors.push(error);
+                }
             }
         }
     }
