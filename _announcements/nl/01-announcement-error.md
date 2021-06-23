@@ -1,7 +1,7 @@
 ---
 lang: nl
 # set `published` to true to show the announcement on the homepage:
-published: true
+published: false
 # copy this file, give it a different filename (doesn't matter which) and, in this example, change lang to 'en' to translate the message to English and show it on the English homepage:
 lang: nl
 # Always set a title:
