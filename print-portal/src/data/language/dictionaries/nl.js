@@ -210,6 +210,10 @@ const nl = {
             'parseErrorInResult': {
                 'head': '',
                 'body': '<p>Er ging iets mis, resultaat kon niet worden gelezen. Neem contact op met je event provider. (Code: x)</p>'
+            },
+            'noInternet': {
+                'head': 'Je hebt geen internet',
+                'body': 'Controleer je verbinding en probeer het opnieuw.'
             }
         }
     },
