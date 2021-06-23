@@ -211,7 +211,7 @@ Depending on the type of proof (EU DCC or coronavirus pass) different personal d
 
 For all types of evidence, the CoronaCheck Scanner shows the following data to the controller of a domestic activity or event:
 
-1. Indication: ‘Person holds valid certificate (green screen) or 'Person does not hold valid certificate (red screen).
+1. Indication: 'Person holds valid certificate (green screen) or 'Person does not hold valid certificate (red screen).
 2. A set of identifying data: the first letter of the first name, first letter of the last name, day and month of birth of the person involved. Based on this information, combined with the presentation of the individual's ID card, the controller can check whether the EU DCC or coronavirus pass actually belongs to the individual. This set may be smaller if the verifiability can be achieved with less data, as indicated earlier.
 
 The mentioned data will disappear from the screen with the next scan or else after 240 seconds at the latest.

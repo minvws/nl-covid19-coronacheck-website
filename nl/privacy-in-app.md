@@ -72,7 +72,7 @@ Voor het verstrekken van vaccinatiegegevens door het RIVM ten behoeve van een na
 
 ## 5. Wie is verwerkingsverantwoordelijke?
 
-De Minister van Volksgezondheid, Welzijn en Sport (hierna: ‘de minister’) is verwerkingsverantwoordelijk voor de verwerking van persoonsgegevens in CoronaCheck en de website coronacheck.nl. 
+De Minister van Volksgezondheid, Welzijn en Sport (hierna: 'de minister’) is verwerkingsverantwoordelijk voor de verwerking van persoonsgegevens in CoronaCheck en de website coronacheck.nl. 
 
 Verwerkers van de minister:
 
@@ -218,7 +218,7 @@ Afhankelijk van het type bewijs (EU DCC of Coronatoegangsbewijs) worden er versc
 
 Voor alle typen bewijs geldt dat de CoronaCheck Scanner de volgende gegevens toont aan de controleur van een binnenlandse activiteit of evenement:
 
-1. Indicatie: ‘Persoon beschikt over geldig bewijs’ (groen scherm) of ‘Persoon beschikt niet over geldig bewijs’ (rood scherm). 
+1. Indicatie: 'Persoon beschikt over geldig bewijs’ (groen scherm) of 'Persoon beschikt niet over geldig bewijs’ (rood scherm). 
 2. Een set identificerende gegevens: de eerste letter voornaam, eerste letter achternaam, geboortedag en -maand van betrokkene. Op basis van deze informatie in combinatie met het tonen van het identiteitsbewijs van betrokkene kan de controleur nagaan of het EU DCC of Coronatoegangsbewijs ook daadwerkelijk van betrokkene is. Deze set kan kleiner zijn als de verifieerbaarheid bereikt kan worden met minder gegevens, zoals eerder aangegeven.
 
 De genoemde gegevens verdwijnen van het scherm bij de eerstvolgende scan of anders uiterlijk na 240 seconden. 
