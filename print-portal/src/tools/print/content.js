@@ -92,9 +92,10 @@ export const getTextItems = (type, territory, qr, locale) => {
             fontWeight: 700,
             fontSize: 18,
             color: lightBlack,
-            position: [leftPartLeft, bottomPartTop],
-            width: partWidth,
-            textAlign: 'center'
+            position: [marginLeftIntro, bottomPartTop],
+            width: partWidthIntro,
+            textAlign: 'center',
+            lineHeight: 6.5
         }, {
             text: territory === 'nl' ? i18n.t('pdf.nl.propertiesLabel') : i18n.t('pdf.eu.' + type + '.propertiesLabel'),
             fontFamily: 'arial',
