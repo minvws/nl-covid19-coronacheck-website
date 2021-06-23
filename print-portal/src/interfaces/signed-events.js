@@ -70,7 +70,8 @@ const unomi = async (eventProvider, tokenSet) => {
     return new Promise((resolve, reject) => {
         const headers = {
             'Authorization': `Bearer ${tokenSet.unomi}`,
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'CoronaCheck-Protocol-Version': '3.0'
         };
         axios({
             method: 'post',
@@ -94,7 +95,8 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
         const url = eventProvider.event_url;
         const headers = {
             'Authorization': `Bearer ${tokenSet.unomi}`,
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'CoronaCheck-Protocol-Version': '3.0'
         };
         axios({
             method: 'post',
