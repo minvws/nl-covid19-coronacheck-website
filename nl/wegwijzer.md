@@ -41,7 +41,7 @@ Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens ka
 ## Testbewijs
 ### Toegangstesten
 
-Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? <a href="https://www.testenvoortoegang.org/" rel="noopener noreferrer" target="_blank"https://>Hiervoor kun je terecht bij Testen voor Toegang</a>. Op die website vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatest voor nodig is, geeft de organisatie meestal ook veel informatie, bijvoorbeeld op een toegangsbewijs, in een bevestigingsmail of op de website.
+Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? <a href="https://www.testenvoortoegang.org/" rel="noopener noreferrer" target="_blank" >Hiervoor kun je terecht bij Testen voor Toegang</a>. Op die website vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatest voor nodig is, geeft de organisatie meestal ook veel informatie, bijvoorbeeld op een toegangsbewijs, in een bevestigingsmail of op de website.
 
 ### Reizen
 
@@ -49,7 +49,7 @@ Wil je gebruikmaken van een coronabewijs (DCC) om te reizen naar het buitenland?
 
 ### Klachten?
 
-Heb je corona-gerelateerde klachten? Maak dan meteen een testafspraak bij de GGD via telefoonnummer <a href="tel:08001202">0800-1202</a> of op <a href="https://www.coronatest.nl/" rel="noopener noreferrer" target="_blank"https://>www.coronatest.nl</a>.
+Heb je corona-gerelateerde klachten? Maak dan meteen een testafspraak bij de GGD via telefoonnummer <a href="tel:08001202">0800-1202</a> of op <a href="https://www.coronatest.nl/" rel="noopener noreferrer" target="_blank" >www.coronatest.nl</a>.
 
 ## Herstelbewijs
 
