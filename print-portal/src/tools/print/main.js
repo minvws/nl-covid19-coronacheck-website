@@ -2,9 +2,10 @@
 
 import { jsPDF as JsPDF } from 'jspdf';
 import dateTool from '@/tools/date';
-import montserrat from '@/assets/fontAsBase64';
+import { arialRegular, arialBold } from '@/assets/fonts/arial';
+import { montserratRegular, montserratBold } from '@/assets/fonts/montserrat';
 import { getTextItems, getImageItems, getFrames, getLines } from './content';
-import { drawTextItemOverLines, drawTextItemWithMixedChunks, htmlToChunks, regular, bold } from './text-helpers'
+import { drawTextItemOverLines, drawTextItemWithMixedChunks, htmlToChunks, setFontAndWeight } from './text-helpers'
 
 const getBirthDayString = (userData) => {
     let day, month;
@@ -41,11 +42,16 @@ const initDoc = () => {
         format: 'a4'
     };
     const doc = new JsPDF(settings);
-    doc.addFileToVFS('montserrat.ttf', montserrat.regular);
-    doc.addFileToVFS('montserrat-bold.ttf', montserrat.bold);
+    doc.addFileToVFS('montserrat.ttf', montserratRegular);
+    doc.addFileToVFS('montserrat-bold.ttf', montserratBold);
     doc.addFont('montserrat.ttf', 'montserrat', 'normal')
     doc.addFont('montserrat-bold.ttf', 'montserrat', 'bold')
-    doc.setFont('montserrat');
+
+    doc.addFileToVFS('arial.ttf', arialRegular);
+    doc.addFileToVFS('arial-bold.ttf', arialBold);
+    doc.addFont('arial.ttf', 'arial', 'normal')
+    doc.addFont('arial-bold.ttf', 'arial', 'bold')
+    doc.setFont('arial');
     return doc;
 }
 
@@ -76,11 +82,12 @@ const drawTextItems = (doc, textItems) => {
         if (textItem.fontSize) {
             doc.setFontSize(textItem.fontSize);
         }
-        if (textItem.fontWeight && textItem.fontWeight === 700) {
-            doc.setFont(...bold);
+        if (textItem.color) {
+            doc.setTextColor(...textItem.color);
         } else {
-            doc.setFont(...regular);
+            doc.setTextColor(0, 0, 0)
         }
+        setFontAndWeight(doc, textItem, null)
 
         if (textItem.width) {
             if (textItem.hasHTML) {

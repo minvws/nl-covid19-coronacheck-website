@@ -4,7 +4,7 @@ import { QRSizeInCm } from '@/data/constants'
 const pageHeight = 297;
 const pageWidth = 210;
 const marginLeft = 10;
-const marginLeftIntro = 20;
+const marginLeftIntro = 15;
 // jspdf uses the baseline of a text for an y position
 const marginTop = 16;
 const leftPartLeft = marginLeft;
@@ -19,8 +19,9 @@ const questionsFrameHeight = 54;
 const questionsFrameTop = (pageHeight / 2) - marginLeft - questionsFrameHeight;
 const questionsFrameInnerLeft = rightPartLeft + marginQuestionsFrame;
 const questionsFrameInnerWidth = partWidth - (2 * marginQuestionsFrame);
-const fontSizeStandard = 9.5;
-const QrPositionY = 178;
+const fontSizeStandard = 10;
+const QrPositionY = 181;
+const lightBlack = [56, 56, 54];
 export const lineHeight = 4.5;
 
 const createImage = async (src) => {
@@ -37,14 +38,17 @@ export const getTextItems = (type, territory, qr, locale) => {
     return [
         {
             text: i18n.t('pdf.' + territory + '.title'),
+            fontFamily: 'montserrat',
             fontWeight: 700,
-            fontSize: 22,
+            fontSize: 25,
+            color: lightBlack,
             position: [leftPartLeft, leftPartTop],
             width: partWidth,
             textAlign: 'center',
             lineHeight: 9
         }, {
             text: i18n.t('pdf.' + territory + '.intro'),
+            fontFamily: 'arial',
             fontWeight: 400,
             fontSize: fontSizeStandard,
             position: [marginLeftIntro, 51],
@@ -53,24 +57,29 @@ export const getTextItems = (type, territory, qr, locale) => {
             hasHTML: true
         }, {
             text: i18n.t('pdf.instructions'),
+            fontFamily: 'montserrat',
             fontWeight: 700,
             fontSize: 18,
+            color: lightBlack,
             position: [rightPartLeft, rightPartTop],
             width: partWidth
         }, {
             text: territory === 'nl' ? i18n.t('pdf.nl.instructions') : i18n.t('pdf.eu.' + type + '.instructions'),
+            fontFamily: 'arial',
             fontWeight: 400,
             fontSize: fontSizeStandard,
             position: [rightPartLeft, 27],
             width: partWidth
         }, {
             text: i18n.t('pdf.questions'),
+            fontFamily: 'arial',
             fontWeight: 700,
             fontSize: fontSizeStandard,
             position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + lineHeight)],
             width: questionsFrameInnerWidth
         }, {
             text: i18n.t('pdf.questionsContent'),
+            fontFamily: 'arial',
             fontWeight: 400,
             fontSize: fontSizeStandard,
             position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + (3 * lineHeight))],
@@ -79,22 +88,26 @@ export const getTextItems = (type, territory, qr, locale) => {
             hasHTML: true
         }, {
             text: i18n.t('pdf.' + territory + '.qrTitle'),
+            fontFamily: 'montserrat',
             fontWeight: 700,
             fontSize: 18,
+            color: lightBlack,
             position: [leftPartLeft, bottomPartTop],
             width: partWidth,
             textAlign: 'center'
         }, {
             text: territory === 'nl' ? i18n.t('pdf.nl.propertiesLabel') : i18n.t('pdf.eu.' + type + '.propertiesLabel'),
+            fontFamily: 'arial',
             fontWeight: 700,
-            fontSize: 18,
+            fontSize: 10,
             position: [rightPartLeft, bottomPartTop],
             width: partWidth
         }, {
             text: getUserDetails(qr, territory, type),
+            fontFamily: 'arial',
             fontWeight: 400,
             fontSize: fontSizeStandard,
-            position: [rightPartLeft, QrPositionY + (0.7 * lineHeight)],
+            position: [rightPartLeft, bottomPartTop + (2 * lineHeight)],
             width: partWidth,
             hasHTML: true
         }

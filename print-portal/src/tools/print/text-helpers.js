@@ -1,7 +1,7 @@
 import { lineHeight } from './content';
 
-export const regular = ['montserrat', 'normal', 400];
-export const bold = ['montserrat', 'normal', 700];
+export const regular = ['arial', 'normal', 400];
+export const bold = ['arial', 'normal', 700];
 const parser = new DOMParser();
 
 export const drawTextItemOverLines = (doc, textItem, x, textAlign) => {
@@ -13,6 +13,13 @@ export const drawTextItemOverLines = (doc, textItem, x, textAlign) => {
         doc.text(item, x, (textItem.position[1] + index * lh), textAlign);
         index++;
     }
+}
+
+export const setFontAndWeight = (doc, textItem, chunk) => {
+    const family = textItem.fontFamily;
+    const weight = chunk ? (chunk.fontWeight ? chunk.fontWeight : 400) : (textItem.fontWeight ? textItem.fontWeight : 400);
+    const properties = [family, 'normal', weight]
+    doc.setFont(...properties);
 }
 
 export const drawTextItemWithMixedChunks = (doc, chunks, textItem, baseX, baseY) => {
@@ -34,12 +41,8 @@ export const drawTextItemWithMixedChunks = (doc, chunks, textItem, baseX, baseY)
         if (chunk.break) {
             lineBreak();
         } else {
-            // font weight 700 for bold
-            if (chunk.fontWeight && chunk.fontWeight === 700) {
-                doc.setFont(...bold);
-            } else {
-                doc.setFont(...regular);
-            }
+            setFontAndWeight(doc, textItem, chunk);
+
             if (chunk.color) {
                 doc.setTextColor(...chunk.color);
             } else {
