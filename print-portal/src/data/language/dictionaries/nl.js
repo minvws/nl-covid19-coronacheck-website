@@ -271,6 +271,7 @@ const nl = {
     'identity_image_alt': 'Holder QR maken',
     'logo-government': 'Logo Rijksoverheid, homepage',
     'next': 'Volgende',
+    'of': 'van',
     'skiplink': 'Ga direct naar inhoud',
     'unknown': 'Onbekend'
 }

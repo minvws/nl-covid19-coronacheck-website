@@ -45,16 +45,25 @@ export default {
     },
     methods: {
         openModalVaccinationAbout() {
+            let dosesString;
             const vaccineType = this.$store.getters.getVaccineType(this.vaccination.type);
             const manufacturer = this.$store.getters.getVaccineManufacturer(this.vaccination.manufacturer);
+            if (this.vaccination.doseNumber) {
+                if (this.vaccination.totalDoses) {
+                    dosesString = this.vaccination.doseNumber + ' ' + this.$t('of') + ' ' + this.vaccination.totalDoses;
+                } else {
+                    dosesString = this.vaccination.doseNumber;
+                }
+            } else {
+                dosesString = '';
+            }
             const data = {
                 name: this.holder.fullName,
                 birthDateString: dateTool.dateToString(this.holder.birthDate, 'dd-MM-yyyy'),
                 vaccineName: this.vaccineName,
                 vaccineType: (vaccineType ? vaccineType.name : '-'),
                 manufacturer: (manufacturer ? manufacturer.name : '-'),
-                doseNumber: this.vaccination.doseNumber,
-                totalDoses: this.vaccination.totalDoses,
+                dosesString: dosesString,
                 dateString: dateTool.dateToString(this.vaccination.date, 'dd-MM-yyyy'),
                 country: this.vaccination.country,
                 identificationCode: this.signedEvent.event.unique

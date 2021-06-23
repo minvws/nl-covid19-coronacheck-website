@@ -11,7 +11,7 @@ const html = `
         Vaccine:  <b>%{vaccineName}</b><br>
         Vaccine type:  <b>%{vaccineType}</b><br>
         Manufacturer:  <b>%{manufacturer}</b><br>
-        Doses: <b>%{doseNumber} of %{totalDoses}</b><br>
+        Doses: <b>%{dosesString}</b><br>
         Vaccination date: <b>%{dateString}</b><br>
         Country of vaccination: <b>%{country}</b><br>
         Identification code: <b>%{identificationCode}</b>

@@ -11,7 +11,7 @@ const html = `
         Vaccin: <b>%{vaccineName}</b><br>
         Vaccin type: <b>%{vaccineType}</b><br>
         Producent van het vaccin: <b>%{manufacturer}</b><br>
-        Doses: <b>%{doseNumber} van %{totalDoses}</b><br>
+        Doses: <b>%{dosesString}</b><br>
         Prikdatum: <b>%{dateString}</b><br>
         Gevaccineerd in: <b>%{country}</b><br>
         Identificatiecode: <b><span class="identificatie-code">%{identificationCode}</span></b>
