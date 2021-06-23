@@ -2,7 +2,6 @@ import store from '@/store';
 import i18n from '@/i18n'
 
 export const handleRejection = (error) => {
-    console.log(window.navigator.onLine);
     if (!window.navigator.onLine) {
         store.commit('modal/set', {
             messageHead: i18n.t('message.error.noInternet.head'),
@@ -14,15 +13,15 @@ export const handleRejection = (error) => {
 
     if (error) {
         if (error.response && error.response.status && error.response.status === 429) {
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.error.serverBusy.head'),
-                messageBody: this.$t('message.error.serverBusy.body'),
+            store.commit('modal/set', {
+                messageHead: i18n.t('message.error.serverBusy.head'),
+                messageBody: i18n.t('message.error.serverBusy.body'),
                 closeButton: true
             });
         } else {
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.error.general.head'),
-                messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
+            store.commit('modal/set', {
+                messageHead: i18n.t('message.error.generalWithError.head'),
+                messageBody: i18n.t('message.error.generalWithError.body', { code: error }),
                 closeButton: true
             });
         }
