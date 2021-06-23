@@ -29,7 +29,7 @@ Ga je op reis? Check dan eerst [www.wijsopreis.nl](http://www.wijsopreis.nl/) vo
 
 - Jouw vaccinatiegegevens worden automatisch opgehaald bij het RIVM ([als je daar toestemming voor hebt gegeven](https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/vraag-en-antwoord/toestemming-registratie-coronavaccinatie)), de GGD of het ziekenhuis
 - Probeer je vaccinatiegegevens op te halen in CoronaCheck door in te loggen met DigiD
-- Lukt dit niet of ben je niet geregistreerd, maar wil je wel een vaccinatiebewijs? Op deze website vind je [wat je kunt doen om je vaccinatiebewijs te krijgen als je niet weet waar je je vaccinatiegegevens hebt laten registreren](https://www.rijksoverheid.nl/coronabewijs)
+- Lukt dit niet of ben je niet geregistreerd, maar wil je wel een vaccinatiebewijs? Op deze website vind je [wat je kunt doen om je vaccinatiebewijs te krijgen als je je niet hebt laten registreren](https://www.rijksoverheid.nl/coronabewijs)
 
 ### Mijn naam of geboortedatum klopt niet van mijn vaccinatiegegevens, wat nu?
 
@@ -52,11 +52,11 @@ Wil je gebruikmaken van een coronabewijs (DCC) om te reizen naar het buitenland?
 
 Heb je corona-gerelateerde klachten? Maak dan meteen een testafspraak bij de GGD via telefoonnummer 0800-1202 of op [www.coronatest.nl](http://www.coronatest.nl).
 
-### Herstelbewijs
+## Herstelbewijs
 
 Herstelbewijzen kunnen op dit moment nog niet worden toegevoegd in CoronaCheck. Vanaf begin juli kan dit wel. Een herstelbewijs kan alleen worden gemaakt wanneer de positieve PCR testuitslag geregistreerd staat bij de GGD. 
 
-### Problemen met DigiD?
+## Problemen met DigiD?
 
 Om je vaccinatiegegevens in te laden in CoronaCheck heb je een geldige DigiD nodig. [Deze kun je via deze link aanvragen.](https://digid.nl/aanvragen) De aanvraag van een nieuwe DigiD duurt enkele werkdagen.
 
