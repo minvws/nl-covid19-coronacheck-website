@@ -867,7 +867,9 @@ footer-wegwijzer:
   nl: Wegwijzer
   en: Guidepost
 
-footer-wijsopreis-url: https://www.nederlandwereldwijd.nl/reizen-naar-het-buitenland
+footer-wijsopreis-url: 
+  nl: https://www.nederlandwereldwijd.nl/reizen-naar-het-buitenland
+  en: https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands
 
 footer-wijsopreis:
   nl: Wijs op reis
