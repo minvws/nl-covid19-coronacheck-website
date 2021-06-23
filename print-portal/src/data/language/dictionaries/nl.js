@@ -235,7 +235,7 @@ const nl = {
             'instructions': '1. Print dit bewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat de QR-code (en eventueel ook je toegangskaartje) zien bij de ingang',
             'propertiesLabel': 'Gegevens',
             'title': 'Bewijs voor in Nederland',
-            'intro': 'Bezoek je locaties of activiteiten binnen Nederland? Gebruik dan dit coronatoegangsbewijs.',
+            'intro': 'Bezoek je locaties of activiteiten binnen Nederland? Gebruik dan dit coronabewijs.',
             'qrTitle': 'QR-code Nederland',
             'userData': {
                 'initials': 'Initialen',
