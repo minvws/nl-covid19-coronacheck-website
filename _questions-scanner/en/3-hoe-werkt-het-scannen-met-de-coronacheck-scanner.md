@@ -5,11 +5,11 @@ title: How does CoronaCheck Scanner work?
 ---
 ## 1. Keep distance
 
-Press 'Start Scan’ and ask the visitor to display their test certificate, either from the CoronaCheck app or printed off as a hard copy. The test certificate, in the form of a QR code, can be scanned from a safe distance. 
+Press 'Start Scan’ and ask the visitor to display their certificate, either from the CoronaCheck app or printed off as a hard copy. The certificate, in the form of a QR code, can be scanned from a safe distance. 
 
 ## 2. Scan the QR code
 
-Aim your phone camera at the visitor’s test certificate and scan the QR code.
+Aim your phone camera at the visitor’s certificate and scan the QR code.
 
 ## 3. Green screen
 

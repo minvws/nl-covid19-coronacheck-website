@@ -4,7 +4,7 @@ const html = `
             <div class="footer-logos-info">
                 <h2 class="screen-reader-text">Colophon</h2>
                 CoronaCheck and CoronaCheck Scanner have been developed by the Ministry of Public Health, Welfare and
-                Sport. Both the apps and the test certificate on paper would not have been possible without the support
+                Sport. Both the apps and the certificate on paper would not have been possible without the support
                 of dozens of specialists, hands-on experts and a large open-source community of citizens. They all
                 lent a hand and helped to test the app during its development.
             </div>
