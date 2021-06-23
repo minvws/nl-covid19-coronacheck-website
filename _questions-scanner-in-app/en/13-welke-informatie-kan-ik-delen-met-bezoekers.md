@@ -2,6 +2,7 @@
 index: 6
 set: 2
 title: Which information can I share with our visitors ahead of our event?
+published: false
 ---
 The following copy can be used to inform visitors:
 

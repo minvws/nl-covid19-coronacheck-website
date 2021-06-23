@@ -2,6 +2,7 @@
 index: 6
 set: 2
 title: Welke informatie kan ik voorafgaand aan mijn evenement delen met mijn bezoekers?
+published: false
 ---
 De volgende tekst kan gebruikt worden richting bezoekers:
 
