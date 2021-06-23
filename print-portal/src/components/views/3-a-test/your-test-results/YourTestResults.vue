@@ -55,6 +55,7 @@ export default {
             } else {
                 this.$router.push({ name: 'PrintTestResult' });
             }
+            this.$store.commit('snackbar/close');
         },
         goBack() {
             const callback = () => {
@@ -71,6 +72,7 @@ export default {
                 closeButton: false,
                 confirmAlert: true
             })
+            this.$store.commit('snackbar/close');
         },
         goHome() {
             this.$router.push({ name: 'Home' });

@@ -42,6 +42,7 @@ export default {
                 closeButton: false,
                 confirmAlert: true
             })
+            this.$store.commit('snackbar/close');
         },
         gotoPrint() {
             if (this.$store.state.qrs.proof === null) {
@@ -54,6 +55,7 @@ export default {
             } else {
                 this.$router.push({ name: 'PrintVaccination' });
             }
+            this.$store.commit('snackbar/close');
         },
         openModalVaccinationSomethingWrong() {
             this.$store.commit('modal/set', {
