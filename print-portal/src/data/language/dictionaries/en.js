@@ -182,6 +182,38 @@ const en = {
             'general': {
                 'head': 'Sorry, something went wrong',
                 'body': '<p>Because of a technical error. Contact the CoronaCheck helpdesk.</p>'
+            },
+            'generalWithError': {
+                'head': 'Sorry, there is an outage',
+                'body': '<p>Contact our helpdesk and give them error code (%@) or try again later.</p>'
+            },
+            'serverBusy': {
+                'head': '',
+                'body': '<p>It\'s very busy at the moment. Try again later today.</p>'
+            },
+            'someServerBusyButResult': {
+                'head': '',
+                'body': '<p>Details possibly incomplete. Due to a technical issue at one of our involved parties, details might be missing. Please try again later./p>'
+            },
+            'someServerBusyNoResult': {
+                'head': 'Sorry, it\'s very busy at the moment',
+                'body': '<p>We can\'t retrieve your vaccinations now. Please try again later.</p>'
+            },
+            'someServerErrorButResult': {
+                'head': '',
+                'body': '<p>Something went wrong at one of our involved parties. Please try again if you\'re missing vaccinations.</p>'
+            },
+            'someServerErrorNoResult': {
+                'head': '',
+                'body': '<p>We can\'t retrieve your vaccinations now. Something went wrong at one of our involved parties. Please try again later.</p>'
+            },
+            'parseErrorInResult': {
+                'head': '',
+                'body': '<p>Something went wrong. The result could not be read. Please contact your event provider. (Code: x)</p>'
+            },
+            'noInternet': {
+                'head': 'You\'re not connected to the internet',
+                'body': 'Check your connection and try again.'
             }
         }
     },
