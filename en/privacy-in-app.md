@@ -7,7 +7,7 @@ This privacy statement has been written for the use of the applications CoronaCh
 
 If you want access to for example an event or activities in the Netherlands, or if you want to travel to another country within Europe you may have to proof you have tested negative, or have been vaccinated, or have already had coronavirus once before. The certificate for use within the Netherlands, in the form of a QR code, is called the coronavirus pass. For travels within Europe, you need an EU Digital Covid Certificate (we’re calling it an EU DCC which is also in the form of a QR code). You can have both certificates made via an app on your phone and save them there (CoronaCheck app) or you can have the certificates made and print them via the website [www.coronacheck.nl](http://www.coronacheck.nl). The Minister of Health, Welfare and Sport (VWS) is responsible for creating the certificates via the app of the website. To create the certificates, personal data must be processed. This privacy statement explains what personal data is involved, on what basis it is processed, what your rights are and what you can do if you disagree with the processing. 
 
-## 1. **What personal data is processed?**
+## 1. What personal data is processed?
 
 To create a domestic coronavirus pass and an EU DCC, we use data about your health: test results, vaccination records and recovery statements. We also use data that tells us something about who you are, so we can retrieve the right information and verify whether the certificate is truly yours. If you request a certificate via the app or the website, we need the following information:
 
@@ -27,7 +27,7 @@ If you’ve been tested at a test provider other than the GGD, your BSN will not
 
 In addition, other data is retrieved that cannot be traced back to you directly. [If you want to know exactly what other data is processed, click here](#overzicht-van-verwerkte-persoonsgegevens). There you will find an overview of the data collected and processed to create the coronavirus pass and the EU DCC and a description of which data is actually included in the QR code you have to show at an event or if you want to travel to another country within Europe.
 
-## 2. **Where does my data come from?**
+## 2. Where does my data come from?
 
 Information about your test, vaccination and/or recovery is provided by the care provider who tested or vaccinated you. Data for a certificate or recovery is provided by the GGD. This data is requested through two ways, in which data is also received: 
 
@@ -37,7 +37,7 @@ Information about your test, vaccination and/or recovery is provided by the care
 If you request your data in CoronaCheck or via coronacheck.nl, you will be shown which information is retrieved and where it is coming from. 
  
 
-## 3. **Why do we process this data (purpose of processing)**
+## 3. Why do we process this data (purpose of processing)
 
 We gather this data to be able to create an EU DCC and a domestic coronavirus pass for you. You may use it to gain entry to certain events and activities in the Netherlands and can travel to countries within Europe that require an EU DCC to enter. 
 
@@ -45,7 +45,7 @@ The purpose of this intended data processing is to facilitate the free movement 
 
 The Netherlands has an interest in allowing non-essential sectors that have so far been subject to most COVID-19 pandemic related restrictions (sports, culture, hospitality) to (partially) reopen. The coronavirus pass can be used for this purpose.
 
-##  4. **What is the basis for this data processing?**
+##  4. What is the basis for this data processing?
 
 The Minister of VWS is required by law to create an EU DCC and domestic coronavirus pass for someone who requests one if they meet the requirements. Of course, they need to be vaccinated or possess a valid test result. 
 
@@ -65,7 +65,7 @@ Section 58re (6) provides the basis for the Minister to process personal data, i
 
 For the provision of vaccination data by the RIVM for the purpose of a domestic coronavirus access pass, the basis is regulated in the draft legislation Change of the Public Health Act in connection with some improvements and clarifications of the temporary rules on the use of coronavirus passes in the fight against COVID-19. The ministerial regulation amending the Temporary Regulation on COVID-19 Measures in connection with the use of corona certificates based on vaccination or recovery (Article 6.31a) regulates which personal data may be processed by the RIVM. 
 
-## 5. **Who is responsible for data processing?**
+## 5. Who is responsible for data processing?
 
 The Minister of Health, Welfare and Sport (hereinafter: the Minister) is responsible for processing personal information in CoronaCheck and the website coronacheck.nl.
 
@@ -74,7 +74,7 @@ The Minister’s processors:
 - Prolocation B.V. manages the configuration server and back-end systems of VWS and the signing servers (for both the coronavirus pass and EU the DCC) used by VWS.
 - Webhelp Nederland B.V. provides the necessary helpdesk services. The helpdesk serves as a point of information and supports citizens if they get stuck in the operation of the app. They also provide explanations and referrals if citizens find that the retrieved data is incomplete or incorrect.
 
-## 6. **How long do we store your information?**
+## 6. How long do we store your information?
 
 Only data saved in the CoronaCheck app itself or printed on the paper certificate will be kept. Of course, for the paper certificate you decide how long to keep the data. This is also the case with the CoronaCheck app: if you delete the app that data will also be deleted. Otherwise, the data will be stored according to the following time periods:
 
@@ -84,7 +84,7 @@ Only data saved in the CoronaCheck app itself or printed on the paper certificat
 
 Your social security number will not be stored. Your IP address will not be stored for more than seven days.
 
-## 7. **With whom will your information be shared?**
+## 7. With whom will your information be shared?
 
  If you show your certificate to a controller at an event or to the person checking your certificate in another member state when you enter, they can read the data contained in the QR code. The controller is not allowed to store this data. They can only check at that moment whether you have a valid domestic coronavirus pass, or a valid EU DCC and they check whether this card is really yours by comparing the data they see on the CoronaCheck Scanner screen with the data on your identity card.
 
@@ -100,7 +100,7 @@ Yes, if you request your coronavirus pass or EU DCC via the website or via the a
 
 In addition, a route has been developed via a care provider portal. You can then contact the person who vaccinated or tested you and you can still receive a domestic coronavirus pass and an EU DCC via that route.
 
-## 9. **What are your rights?**
+## 9. What are your rights?
 
 You have several rights to control your personal information. You can find these on <a href="https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/rechten-van-betrokkenen" hreflang="nl" target="_blank" rel="noopener noreferrer">the website of the Dutch Data Protection Authority (Dutch)</a>.
 
@@ -108,7 +108,7 @@ As indicated earlier, both the CoronaCheck app and the website show which data i
 
 The option to invoke one of your privacy rights regarding the use of CoronaCheck and Coronacheck.nl remains in effect. You can submit such a request via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
-## 10. **Report complains about the use of your data?**
+## 10. Report complains about the use of your data?
 
 For questions or complaints about the use of the CoronaCheck app, coronacheck.nl or the CoronaCheck scanner app, please contact the helpdesk: [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
 
@@ -116,15 +116,15 @@ Contact details of the Data Protection Officer of the Ministry of Health, Welfar
 
 You can always submit a complaint about the processing of your personal data to the Dutch Data Protection Authority or to a judge. More information about this can be found on [the website of the Dutch Data Protection Authority](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap). [Contact details of the Dutch Data Protection Authority can be found here](https://www.rijksoverheid.nl/contact/contactgids/autoriteit-persoonsgegevens).
 
-## 11. **Security of your personal data**
+## 11. Security of your personal data
 
 The Minister takes protection of your personal data seriously and has taken appropriate technical and organizational measures in the creation of CoronaCheck, coronacheck.nl and CoronaCheck Scanner to prevent misuse, loss, unauthorized access, unwanted disclosure, and unauthorized alteration of the processed data.
 
-## 12. **Changing privacy statement**
+## 12. Changing privacy statement
 
 This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: June 23, 2021.
 
-## Overview of processed personal data** 
+## Overview of processed personal data 
 
 ### Personal data that is processed when issuing both an EU DCC and a coronavirus pass:
 
@@ -154,7 +154,7 @@ This privacy statement is subject to change. In such cases, we will post the ame
   - Marketing authorisation holder or manufacturer of the vaccine
   - Sequence number in series of vaccinations/doses
 
-### Personal data stored in the QR code you show to controllers:**
+### Personal data stored in the QR code you show to controllers:
 
 #### Coronavirus pass*
 

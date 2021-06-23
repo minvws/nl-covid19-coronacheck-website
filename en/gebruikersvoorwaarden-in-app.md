@@ -89,9 +89,9 @@ The CoronaCheck Scanner app is used to regulate access to a certain event or loc
 
 ## Security
 
-When using CoronaCheck Scanner, connections are secured and encrypted by Transport Layer Security (TLS), Public Key Infrastructure (PKI) and certificate pinning. This is combined with PKI Overheid certificates and certificate pinning. This means the CoronaCheck Scanner app only connects to servers with certificates issued by PKI Overheid (Dutch government). 
+When using CoronaCheck Scanner, connections are secured and encrypted by Transport Layer Security (TLS), Public Key Infrastructure (PKI) and certificate pinning. This is combined with PKI Overheid certificates and certificate pinning. This means the CoronaCheck Scanner app only connects to servers with certificates issued by PKI Overheid (Dutch Government). 
 
-Important configuration files, e.g. in which the functioning of the app can be influenced, are digitally signed. This process also exclusively uses and accepts certificates issues under the supervision of the Dutch government.
+Important configuration files, e.g. in which the functioning of the app can be influenced, are digitally signed. This process also exclusively uses and accepts certificates issues under the supervision of the Dutch Government.
 
 
 ## Functioning of the CoronaCheck Scanner app
