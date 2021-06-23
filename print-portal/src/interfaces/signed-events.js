@@ -24,7 +24,7 @@ const getTokens = async (token) => {
         };
         axios({
             method: 'post',
-            url: 'https://holder-api.acc.coronacheck.nl/v4/holder/access_tokens',
+            url: window.config.accessTokens,
             headers
         }).then((response) => {
             if (response.data && response.data.payload) {
@@ -50,7 +50,7 @@ const getEvents = async (tokenSets, filter) => {
         if (eventProvider) {
             // console.log('provider_identifier', eventProvider.provider_identifier, eventProvider.unomi_url);
             try {
-                result = await unomi(eventProvider, tokenSet);
+                result = await unomi(eventProvider, tokenSet, filter);
             } catch (error) {
                 response.errors.push(error);
             }
@@ -66,7 +66,7 @@ const getEvents = async (tokenSets, filter) => {
     return response;
 }
 
-const unomi = async (eventProvider, tokenSet) => {
+const unomi = async (eventProvider, tokenSet, filter) => {
     return new Promise((resolve, reject) => {
         const headers = {
             'Authorization': `Bearer ${tokenSet.unomi}`,
@@ -76,7 +76,8 @@ const unomi = async (eventProvider, tokenSet) => {
         axios({
             method: 'post',
             headers: headers,
-            url: eventProvider.unomi_url
+            url: eventProvider.unomi_url,
+            data: { filter: filter }
         }).then((response) => {
             if (response.data && response.data.payload) {
                 const payload = cmsDecode(response.data.payload)
