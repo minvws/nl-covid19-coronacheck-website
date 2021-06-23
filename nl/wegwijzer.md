@@ -22,13 +22,13 @@ Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens ka
 ### Lukt het niet om je vaccinatiegegevens op te halen?
 
 - Ben je pas net gevaccineerd? Het kan even duren voordat de vaccinatie is verwerkt. Probeer het over 1 à 2 dagen opnieuw. [Lukt het na een paar dagen nog steeds niet om je vaccinatiegegevens op te halen? Op deze website vind je wat je dan kunt doen](https://www.rijksoverheid.nl/coronabewijs) 
-- Ben je gevaccineerd op een andere plek dan de GGD, de huisarts of het ziekenhuis, bijvoorbeeld in het buitenland? [Op deze website vind je wat je dan kunt doen om je vaccinatiegegevens op te halen](https://www.rijksoverheid.nl/coronabewijs).
+- Ben je gevaccineerd op een andere plek dan de GGD, de huisarts of het ziekenhuis, bijvoorbeeld in het buitenland? [Op deze website vind je wat je dan kunt doen om je vaccinatiegegevens op te halen](https://www.rijksoverheid.nl/coronabewijs)
 
 ### Ik weet niet waar ik mijn vaccinatiegegevens heb laten registreren, wat nu?
 
 - Jouw vaccinatiegegevens worden automatisch opgehaald bij het RIVM ([als je daar toestemming voor hebt gegeven](https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/vraag-en-antwoord/toestemming-registratie-coronavaccinatie)), de GGD of het ziekenhuis
 - Probeer je vaccinatiegegevens op te halen in CoronaCheck door in te loggen met DigiD
-- Lukt dit niet of ben je niet geregistreerd, maar wil je wel een vaccinatiebewijs? Op deze website vind je [wat je kunt doen om je vaccinatiebewijs te krijgen als je je niet hebt laten registreren](https://www.rijksoverheid.nl/coronabewijs).
+- Lukt dit niet of ben je niet geregistreerd, maar wil je wel een vaccinatiebewijs? Op deze website vind je [wat je kunt doen om je vaccinatiebewijs te krijgen als je je niet hebt laten registreren](https://www.rijksoverheid.nl/coronabewijs)
 
 ### Mijn naam of geboortedatum klopt niet van mijn vaccinatiegegevens, wat nu?
 
