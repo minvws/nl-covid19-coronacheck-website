@@ -12,4 +12,4 @@ De [CoronaCheck Scanner](/scanner)-app laat nooit zien of jouw bewijs van een te
 
 In het buitenland kan het wel uitmaken. Landen bepalen namelijk zelf welk type bewijs wordt geaccepteerd. En ook onder welke voorwaarden - denk bijvoorbeeld aan de geldigheid van een test. Check voordat je op reis gaat altijd deze website voor de voorwaarden in het land dat je bezoekt. Nederland zet zich in om de voorwaarden binnen Europa zoveel mogelijk gelijk te houden. 
 
-**Let op**: je kunt vanaf eind juni een bewijs van je vaccinatie maken
+

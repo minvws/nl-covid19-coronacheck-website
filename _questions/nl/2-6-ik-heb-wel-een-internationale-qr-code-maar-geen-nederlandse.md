@@ -7,4 +7,4 @@ Dit betekent dat je test of vaccinatie niet geldig is in Nederland. Daarom is er
 
 Dit kan verschillende oorzaken hebben. Het kan bijvoorbeeld zijn dat je maar één vaccinatie hebt gehad. Of het kan komen doordat de geldigheidsduur in Nederland korter is dan de geldigheidsduur in andere landen. Kijk hier voor meer informatie en antwoorden. 
 
-**Let op**: je kunt vanaf eind juni een bewijs van je vaccinatie maken. Vanaf 1 juli kun je ook een internationaal bewijs maken. Dat kan gemaakt worden van een testuitslag, een vaccinatie of een herstelverklaring (als je al corona gehad hebt).
+Vanaf 1 juli kun je ook een internationaal bewijs maken. Dat kan gemaakt worden van een testuitslag, een vaccinatie of een herstelverklaring (als je al corona gehad hebt).
