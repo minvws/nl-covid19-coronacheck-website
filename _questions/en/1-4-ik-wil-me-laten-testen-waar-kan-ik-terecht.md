@@ -15,4 +15,4 @@ Get tested via one of the test locations that is affiliated with Testen voor Toe
 ## When experiencing symptoms
 Experiencing symptoms that could indicate COVID-19, like cold symptoms, coughing, shortness of breath, elevated temperature or fever? Get tested at the GGD. Please note: a negative test result from the GGD currently does not generate a test certificate. 
 
-<a href="https://www.coronatest.nl" class="btn btn--cta">Make appointment<span class="screen-reader-text"> with the GGD</span></a>
+<a href="https://www.coronatest.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Make appointment<span class="screen-reader-text"> with the GGD</span></a>
