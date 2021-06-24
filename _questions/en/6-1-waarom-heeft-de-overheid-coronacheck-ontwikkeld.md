@@ -11,5 +11,5 @@ Using the CoronaCheck-app, people in the Netherlands can create a corona certifi
 - have been (fully) vaccinated against coronavirus, or;
 - have recovered from a corona infection in the last 6 months (possible from the 1st of July)
 
-The CoronaCheck-app can be used within the Netherlands, and for international travel. The app creates two QR codes: an international QR code, and a Dutch QR code. You can show these using the CoronaCheck app, or print them on paper via the website.
+The CoronaCheck-app can be used within the Netherlands, and for international travel. The app creates two QR codes: an international QR code, and a Dutch QR code. You can show these using the CoronaCheck-app, or print them on paper via the website.
 
