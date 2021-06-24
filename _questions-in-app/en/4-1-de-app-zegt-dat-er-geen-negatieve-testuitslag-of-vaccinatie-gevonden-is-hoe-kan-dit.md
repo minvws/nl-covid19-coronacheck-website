@@ -5,8 +5,6 @@ title: The app says no negative test result or vaccination was found. How is thi
 redirect_from: 
   - /en/faq/13-de-app-zegt-dat-er-geen-negatieve-testuitslag-gevonden-is-hoe-kan-dit
 ---
-{{ site.data.translations.pleaseNoteFAQs[page.lang] }}
-
 No vaccination found? There are several causes. [Find more information here](/en/guidepost). Were you recently vaccinated? Then it may take a while before the details are available.
  
 No negative test result found? There are several causes:

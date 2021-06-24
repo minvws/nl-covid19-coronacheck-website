@@ -7,9 +7,9 @@ scanner-app-name: CoronaCheck Scanner
 head-social-og-site_name: CoronaCheck
   
 head-social-og-title:
-  nl: CoronaCheck. Krijg toegang na testen
+  nl: Krijg toegang met de CoronaCheck-app
   fy: 
-  en: CoronaCheck. Get tested, gain access
+  en: Get access with the CoronaCheck-app
   ar: 
   bg: 
   de: 
@@ -20,9 +20,9 @@ head-social-og-title:
   tr: 
     
 head-social-og-description:
-  nl: Met CoronaCheck kunnen bezoekers naar pilots toegangstesten. Zij moeten zich eerst laten testen op het coronavirus.
+  nl: Met de app bewijs je dat je gevaccineerd of negatief op corona getest bent. Je kan CoronaCheck gebruiken voor toegang tot bepaalde locaties. En om internationaal te reizen.
   fy: 
-  en: 
+  en: With this app, you are able to prove you've been vaccinated or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain locations. And to travel to other countries. 
   ar: 
   bg: 
   de: 
@@ -32,7 +32,7 @@ head-social-og-description:
   ro: 
   tr: 
  
-head-social-og-image-url: coronacheck-social-og-image--nl.png?=v1
+head-social-og-image-url: coronacheck-social-og-image--nl.png?=v2
 
 scanner-social-og-site_name: CoronaCheck Scanner
   
@@ -50,9 +50,9 @@ scanner-social-og-title:
   tr: 
     
 scanner-social-og-description:
-  nl: Met CoronaCheck Scanner kunnen sociale, culturele en sportieve locaties toegangstesten organiseren. Zo openen zij veilig de deuren in tijden van corona.
+  nl: Met CoronaCheck Scanner controleer je de geldigheid van het vaccinatie- of testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
   fy: 
-  en: 
+  en: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
   ar: 
   bg: 
   de: 
@@ -62,7 +62,7 @@ scanner-social-og-description:
   ro: 
   tr: 
  
-scanner-social-og-image-url: scanner-social-og-image--nl.png?v=1
+scanner-social-og-image-url: scanner-social-og-image--nl.png?v=2
     
 social-og-image-alt:
   nl: Impressie van website waarop toelichting te vinden is
@@ -106,7 +106,7 @@ header-skip-to-content:
 header-title:
   nl: Krijg toegang met de CoronaCheck-app
   fy: CoronaCheck
-  en: Get access with the CoronaCheck app
+  en: Get access with the CoronaCheck-app
   ar: CoronaCheck
   bg: CoronaCheck
   de: CoronaCheck
@@ -117,9 +117,9 @@ header-title:
   tr: CoronaCheck
 
 header-subtitle:
-  nl: Voor toegang tot bepaalde locaties of activiteiten heb je een negatieve testuitslag nodig. Met de app bewijs je dat je negatief op corona getest bent.<br /><br />Binnenkort kun je met CoronaCheck ook van je vaccinatiebewijs een QR-code maken. Die kun je gebruiken in Nederland of voor reizen binnen Europa. <a href="/nl/faq/1-3-wanneer-kan-ik-coronacheck-in-nederland-en-internationaal-gebruiken/">Vanaf wanneer kan dat?</a>
+  nl: Met de app bewijs je dat je gevaccineerd of negatief op corona getest bent. Je kan CoronaCheck gebruiken voor toegang tot bepaalde locaties. En om internationaal te reizen.
   fy: 
-  en: With this app, you are able to prove you've recently tested negative for corona. This gives you access to certain locations or activities.<br /><br />Soon you will also be able to turn your vaccination certificate into a QR code with CoronaCheck. You can use it in the Netherlands or for travel within Europe. <a href="/en/faq/1-3-wanneer-kan-ik-coronacheck-in-nederland-en-internationaal-gebruiken/">When will that be possible?</a>
+  en: With this app, you are able to prove you've been vaccinated or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain locations. And to travel to other countries.  
   ar: 
   bg: 
   de: 
@@ -130,7 +130,7 @@ header-subtitle:
   tr: 
 
 scanner-header-title:
-  nl: Geef toegang met de CoronaCheck Scanner
+  nl: Geef toegang met CoronaCheck Scanner
   fy: 
   en: Allow access with CoronaCheck Scanner 
   ar: 
@@ -143,9 +143,9 @@ scanner-header-title:
   tr: 
 
 scanner-header-subtitle:
-  nl: Met CoronaCheck Scanner controleer je de geldigheid van het testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
+  nl: Met CoronaCheck Scanner controleer je de geldigheid van het vaccinatie- of testbewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
   fy: 
-  en: With CoronaCheck Scanner you check the validity of the visitor’s negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to get access to certain locations or activities.
+  en: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
   ar: 
   bg: 
   de: 
@@ -400,9 +400,9 @@ faq-category-scanner-general:
   tr:  
 
 faq-category-scanner-testdocument:
-  nl: Toegang met testbewijs
+  nl: Toegang met test of vaccinatiebewijs
   fy: 
-  en: Getting access with a test certificate 
+  en: Getting access with a certificate 
   ar: 
   bg: 
   de: 
@@ -595,7 +595,7 @@ english:
 coronacheck-lead: 
   nl: "CoronaCheck is ontwikkeld als onderdeel van toegangstesten. Met de CoronaCheck-app kunnen bezoekers aantonen dat ze negatief getest zijn op corona. Zo kunnen sociale, culturele en sportieve locaties in tijden van corona verantwoord en snel open.<br /><br />CoronaCheck wordt op dit moment alleen gebruikt bij vooraf aangekondigde praktijkproeven."
   fy: 
-  en: "CoronaCheck is created as part of access testing. With the CoronaCheck app, visitors can prove having tested negative for corona. This way, certain social, cultural or sports venues can open quickly, in a responsible manner. <br /><br />CoronaCheck is currently only being tested in field trials."
+  en: "CoronaCheck is created as part of access testing. With the CoronaCheck-app, visitors can prove having tested negative for corona. This way, certain social, cultural or sports venues can open quickly, in a responsible manner. <br /><br />CoronaCheck is currently only being tested in field trials."
   ar: 
   bg: 
   de: 
@@ -804,7 +804,7 @@ footer-colophon:
 footer-logos-info_md:
   nl: CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community tijdens de ontwikkeling meegekeken en getest.
   fy: 
-  en: CoronaCheck and CoronaCheck Scanner have been developed by the Ministry of Public Health, Welfare and Sport. Both the apps and the test certificate on paper would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens. They all lent a hand and helped to test the app during its development.
+  en: CoronaCheck and CoronaCheck Scanner have been developed by the Ministry of Public Health, Welfare and Sport. Both the apps and the certificate on paper would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens. They all lent a hand and helped to test the app during its development.
   ar: 
   bg: 
   de: 
@@ -858,6 +858,22 @@ footer-testappointment-url: testafspraak
 footer-testappointment:
   nl: Doe een coronatest
   en: Take a coronavirus test
+
+footer-wegwijzer-url:
+  nl: wegwijzer
+  en: guidepost
+
+footer-wegwijzer:
+  nl: Wegwijzer
+  en: Guidepost
+
+footer-wijsopreis-url: 
+  nl: https://www.nederlandwereldwijd.nl/reizen-naar-het-buitenland
+  en: https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands
+
+footer-wijsopreis:
+  nl: Wijs op reis
+  en: Wijs op reis (dutch)
 
 footer-misc-title:
   nl: Over CoronaCheck
@@ -1244,7 +1260,7 @@ scanner-information-title:
   tr: 
 
 scanner-information-qrcode:
-  nl: In de QR-code staan minimale persoonsgegevens van de bezoeker
+  nl: In de QR-code staan minimale gegevens van de bezoeker
   fy: 
   en: The QR code contains a minimum amount of data of the visitor
   ar: 
@@ -1257,7 +1273,7 @@ scanner-information-qrcode:
   tr: 
     
 scanner-information-naw:
-  nl: Deze gegevens mag je alleen gebruiken voor controle van het testbewijs
+  nl: Deze gegevens mag je alleen gebruiken voor controle van het bewijs
   fy: 
   en: You're only allowed to use this data to check the valid negative test result
   ar: 
@@ -1296,7 +1312,7 @@ demo-qr-title:
   tr: 
 
 demo-qr-subtitle: 
-  nl: Ervaren hoe de scanner werkt? Open CoronaCheck Scanner op je telefoon en scan de QR-codes
+  nl: Ervaren hoe de scanner werkt? <br />Open CoronaCheck Scanner op je telefoon en scan de QR-codes
   fy: 
   en: Want to experience how the scanner works? <br />Open CoronaCheck Scanner on your phone and scan the QR codes.
   ar: 
@@ -1474,14 +1490,14 @@ print-version-img:
   en: /img/printbewijs-en.png
 
 print-version-title:
-  nl: Liever een papieren testbewijs?
+  nl: Liever een papieren bewijs?
   fy: 
-  en: Prefer a test certificate on paper?
+  en: Prefer a certificate on paper?
  
 print-version-content:
-  nl: Een testbewijs op papier is handig als je geen smartphone hebt. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over testbewijzen op papier</span></a>.
+  nl: Een bewijs op papier is handig als je geen smartphone hebt. Je kunt een bewijs maken van een vaccinatie en/of van een testuitslag. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over bewijzen op papier</span></a>.
   fy: 
-  en: A test certificate on paper is convenient if you don't have a smartphone. <a href="/en/faq#paper-certificate">Read more<span class="screen-reader-text"> about a test certificate on paper</span></a>.
+  en: A certificate of your test or vaccination on paper is convenient if you don’t have a smartphone. <a href="/en/faq#paper-certificate">Read more here<span class="screen-reader-text"> about a certificate on paper</span></a>.
 
 print-version-url: 
   nl: /print
@@ -1489,9 +1505,9 @@ print-version-url:
   en: /en/print
 
 print-version-url-link: 
-  nl: Maak papieren testbewijs
+  nl: Maak papieren bewijs
   fy: 
-  en: Make test certificate on paper
+  en: Make certificate on paper
 
 about-coronacheck-scanner-title:
   nl: CoronaCheck Scanner
@@ -1507,17 +1523,13 @@ about-coronacheck-scanner-title:
   tr: CoronaCheck hakkında
 
 about-coronacheck-scanner-content:
-  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om gasten toe te laten?</p><p><a href="/scanner" target="_blank">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
+  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om bezoekers toe te laten?</p><p><a href="/scanner" target="_blank">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
   fy: 
-  en: <p>Would you like to find out how you can use CoronaCheck to allow guests access to your event?</p><p><a href="/en/scanner" target="_blank">Read more about the CoronaCheck Scanner app.</a></p> 
+  en: <p>Would you like to find out how you can use CoronaCheck to allow visitors access to your event?</p><p><a href="/en/scanner" target="_blank">Read more about the CoronaCheck Scanner app.</a></p> 
 
 home-intro-content:
-  nl: Voor toegang tot sommige events en locaties kun je vanaf 5 juni gebruikmaken van CoronaCheck. <a href="/nl/faq/1-1-hoe-werkt-de-coronacheck-app/">Hoe CoronaCheck werkt lees je hier</a>. Eind juni geeft ook je bewijs van vaccinatie toegang tot events en locaties in Nederland. Hiervoor voor gebruik je dan CoronaCheck. Vanaf juli kun je CoronaCheck ook gebruiken om een persoonlijke QR-code te maken voor reizen naar andere landen in de Europese Unie. Daarover lees je op deze website binnenkort meer of lees de pagina van de Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)
-  en: To gain access to some events and locations, from June 5th you will be able to use CoronaCheck. <a href="/en/faq/1-1-hoe-werkt-de-coronacheck-app/">You can read here how CoronaCheck works</a>. From the end of June, your proof of vaccination will provide access to events and locations in the Netherlands. You can use CoronaCheck for this. From the beginning of July you will be able to use CoronaCheck to create a personal QR code for travels to other countries within the European Union. You can read more about it soon on this website, or take a look at the website of the Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer" lang="nl" hreflang="nl">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)
-
-pleaseNoteFAQs:
-  nl: "<strong>Let op</strong>: ben je volledig gevaccineerd en wil je een Nederlands bewijs maken? Dat kan vanaf eind juni."
-  en: "<strong>Please note</strong>: have you been fully vaccinated? And do you want to create a Dutch certificate? This is possible from the end of June."
+  nl: Vanaf nu kun je met toegangstesten of een vaccinatiebewijs toegang krijgen tot bepaalde events en locaties in Nederland. <a href="/nl/faq/1-1-hoe-werkt-de-coronacheck-app/">Dit is hoe CoronaCheck werkt</a>. Vanaf juli kun je met CoronaCheck ook een herstelbewijs maken en een persoonlijke QR-code om internationaal te reizen. Hierover lees je meer op de pagina van de Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>)
+  en: From now on, you will be able to use CoronaCheck to gain access to some events and locations in the Netherlands. <a href="/en/faq/1-1-hoe-werkt-de-coronacheck-app/">This is how CoronaCheck works</a>. From the beginning of July, you will be able to use CoronaCheck to create a personal QR code for travels to other countries within the European Union. You can read more about it at the website of the Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer" lang="nl" hreflang="nl">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)
 
 sorry-btn:
   nl: "Terug naar CoronaCheck"

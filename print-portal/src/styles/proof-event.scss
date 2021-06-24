@@ -1,0 +1,37 @@
+.proof-event {
+    padding: $grid-x2 0;
+    border-bottom: 1px solid $color-mediumgrey;
+    font-size: 17px;
+    margin-bottom: $grid-x2;
+    position: relative;
+
+    &:first-child {
+        border-top: 1px solid $color-mediumgrey;
+    }
+
+    &__status {
+        font-weight: 700;
+    }
+
+    &__wrapper {
+        display: contents;
+    }
+
+    &__line {
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .info-button {
+        position: absolute;
+        right: $grid-x2;
+        top: $grid-x2;
+    }
+}
+
+.proof-events {
+    margin: $length-l 0;
+}

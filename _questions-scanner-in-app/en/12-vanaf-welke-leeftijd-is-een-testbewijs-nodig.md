@@ -1,6 +1,6 @@
 ---
 index: 3
 set: 2
-title: From what age is a test certificate required?
+title: From what age is a certificate required?
 ---
-Visitors of 13 years and up must show a test certificate at events and activities that require a test certificate. 
+Visitors from ages 13 and over are required to display a certificate for events and activities legally requiring a certificate.

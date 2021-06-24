@@ -6,16 +6,6 @@ button {
     padding: 0;
 }
 
-.button-standard {
-
-    &.button--full-width {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
 .info-button {
     position: absolute;
     right: 0;
@@ -26,20 +16,6 @@ button {
 
     img {
         width: 100%;
-    }
-}
-
-.button-modest {
-    color: $color-coronacheck_blue;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-
-    &:hover {
-
-        @media (hover: hover) and (pointer: fine) {
-            text-decoration: underline;
-        }
     }
 }
 

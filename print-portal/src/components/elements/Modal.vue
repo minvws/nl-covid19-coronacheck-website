@@ -1,7 +1,9 @@
 <script>
+import CcModestButton from './CcModestButton';
+
 export default {
     name: 'Modal',
-    components: {},
+    components: { CcModestButton },
     props: {},
     data() {
         return {
@@ -32,6 +34,12 @@ export default {
         },
         showCloseButton() {
             return this.$store.state.modal.closeButton;
+        },
+        closeText() {
+            return this.$store.state.modal.closeText.length > 0 ? this.$store.state.modal.closeText : this.$t('close');
+        },
+        confirmAlert() {
+            return this.$store.state.modal.confirmAlert;
         }
     },
     methods: {
@@ -43,7 +51,7 @@ export default {
             if (this.confirmAction && {}.toString.call(this.confirmAction) === '[object Function]') {
                 this.confirmAction();
             } else {
-                console.log('Confirm callback is not a function.');
+                // console.log('Confirm callback is not a function.');
             }
             this.close();
         },
@@ -92,44 +100,42 @@ export default {
         <div
             @click="close()"
             class="cover__clickable-area"></div>
-        <div
-            class="modal"
-            role="alertdialog"
-            :aria-modal="showModal"
-            aria-labelledby="modal__head"
-            aria-describedby="modal__body">
+        <div class="modal__container">
             <div
-                v-html="messageHead"
-                ref="focusStart"
-                tabindex="-1"
-                id="modal__head">
-            </div>
-            <div
-                v-html="messageBody"
-                id="modal__body">
-            </div>
-            <div
-                v-if="showModal"
-                id="modal__footer">
-                <button
-                    v-if="showConfirm"
-                    @click="refute()"
-                    type="button"
-                    class="button-modest">
-                    {{refuteText}}
-                </button>
-                <button
-                    v-if="showConfirm"
-                    @click="confirm()"
-                    type="button"
-                    class="button-modest button--ok">
-                    {{confirmText}}
-                </button>
-                <button
-                    v-if="showCloseButton"
-                    @click="close()"
-                    type="button"
-                    class="button-modest">{{$t('close')}}</button>
+                class="modal"
+                role="alertdialog"
+                :aria-modal="showModal"
+                aria-labelledby="modal__head"
+                aria-describedby="modal__body">
+                <div
+                    v-html="messageHead"
+                    ref="focusStart"
+                    tabindex="-1"
+                    id="modal__head">
+                </div>
+                <div
+                    v-html="messageBody"
+                    id="modal__body">
+                </div>
+                <div
+                    v-if="showModal"
+                    id="modal__footer">
+                    <CcModestButton
+                        v-if="showConfirm"
+                        @select="refute()"
+                        :label="refuteText"/>
+
+                    <CcModestButton
+                        v-if="showConfirm"
+                        @select="confirm()"
+                        :label="confirmText"
+                        :alert="confirmAlert"/>
+
+                    <CcModestButton
+                        v-if="showCloseButton"
+                        @select="close()"
+                        :label="closeText"/>
+                </div>
             </div>
         </div>
         <div
@@ -155,6 +161,7 @@ export default {
     height: 100%;
     display: none;
     pointer-events: none;
+    z-index: 1;
 
     .cover__clickable-area {
         position: absolute;
@@ -172,21 +179,39 @@ export default {
     }
 }
 
+.modal__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 460px;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    pointer-events: none;
+
+    @include mobile() {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .modal {
     background-color: #fff;
-    position: absolute;
-    width: 460px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10000;
-    top: 40%;
     transition: top 1s ease;
     border-radius: 5px;
+    max-width: 100%;
+    overflow-y: auto;
+    pointer-events: all;
 
     #modal__head {
         padding: $length-l $length-l 0 $length-l;
         margin-bottom: $grid-x2;
         font-weight: 700;
+        outline: none;
     }
 
     #modal__body {
@@ -204,7 +229,7 @@ export default {
         display: flex;
         align-items: center;
 
-        .button-modest {
+        .CcModestButton {
             margin-right: $length-xl;
 
             &:last-child {

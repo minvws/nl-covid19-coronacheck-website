@@ -2,22 +2,45 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import _base from './modules/_base-module';
 import modal from './modules/modal';
+import snackbar from './modules/snackbar';
 import languages from './modules/languages';
 import testProviders from './modules/testProviders';
+import eventProviders from './modules/eventProviders';
+import signedEvents from './modules/signedEvents';
+import qrs from './modules/qrs';
 
 Vue.use(Vuex)
 
 const state = {
+    // general
     holderConfig: null,
-    testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
-    verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
-    testResultStatus: 'idle',
-    verificationNeeded: false,
-    testResult: null,
     userConsent: false,
-    signature: null,
-    qrCode: '',
-    qrData: null
+    // negativeTest v2 flow
+    testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
+    verificationNeeded: false,
+    verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
+    testResultStatus: 'idle'
+};
+
+const getters = {
+    getEuBrand: (state) => (euBrandCode) => {
+        return state.holderConfig.euBrands.find(euBrand => euBrand.code === euBrandCode)
+    },
+    getEuTestType: (state) => (testTypeCode) => {
+        return state.holderConfig.euTestTypes.find(euTestType => euTestType.code === testTypeCode)
+    },
+    getTestManufacturer: (state) => (testManufacturerCode) => {
+        return state.holderConfig.euTestManufacturers.find(euTestManufacturer => euTestManufacturer.code === testManufacturerCode)
+    },
+    getVaccineType: (state) => (vaccineTypeCode) => {
+        return state.holderConfig.euVaccinations.find(euVaccination => euVaccination.code === vaccineTypeCode)
+    },
+    getVaccineManufacturer: (state) => (vaccineManufacturerCode) => {
+        return state.holderConfig.euManufacturers.find(euManufacturer => euManufacturer.code === vaccineManufacturerCode)
+    },
+    getNlTestType: (state) => (testTypeCode) => {
+        return state.holderConfig.nlTestTypes.find(nlTestType => nlTestType.code === testTypeCode)
+    }
 };
 
 const mutations = {
@@ -26,12 +49,6 @@ const mutations = {
     },
     setTestResultStatus(state, testResultStatus) {
         state.testResultStatus = testResultStatus;
-    },
-    setTestResult(state, testResult) {
-        state.testResult = testResult;
-    },
-    setSignature(state, signature) {
-        state.signature = signature;
     },
     setQrCode(state, qrCode) {
         state.qrCode = qrCode;
@@ -51,33 +68,43 @@ const mutations = {
     setVerificationNeeded(state, status) {
         state.verificationNeeded = status;
     },
-    reset(state) {
+    resetProvideCode(state) {
         // clear all except testcode
         state.verificationCode = '';
         state.verificationNeeded = false;
         state.testResultStatus = 'idle';
-        state.signature = '';
-        state.qrCode = '';
-        state.qrData = null;
     },
-    invalidate(state) {
+    clearAll(state) {
         state.testCode = '';
-        state.verificationCode = '';
         state.verificationNeeded = false;
+        state.verificationCode = '';
         state.testResultStatus = 'idle';
-        state.signature = '';
-        state.qrCode = '';
-        state.qrData = null;
+        state.signedEvents = [];
+        state.qrs.proof = null;
+    },
+    sessionEnded(state) {
+        state.testCode = '';
+        state.verificationNeeded = false;
+        state.verificationCode = '';
+        state.testResultStatus = 'idle';
+        state.signedEvents = [];
+        state.qrs.proof = null;
+        state.userConsent = false
     }
 }
 
 export default new Vuex.Store({
     state,
+    getters,
     mutations,
     actions: {},
     modules: {
         modal,
+        snackbar,
         languages,
-        testProviders
+        testProviders,
+        eventProviders,
+        signedEvents,
+        qrs
     }
 })

@@ -5,7 +5,7 @@ title: "Research: how do we know CoronaCheck works?"
 redirect_from: 
   - /en/faq/30-onderzoek-hoe-weten-we-of-coronacheck-werkt
 ---
-The printed test certificate and the CoronaCheck and [CoronaCheck Scanner](/en/scanner) apps are reviewed continuously. This is done by a team of experts with different backgrounds and expertise and includes both quantitative and qualitative studies aimed at CoronaCheck’s objectives.
+The printed certificate and the CoronaCheck and [CoronaCheck Scanner](/en/scanner) apps are reviewed continuously. This is done by a team of experts with different backgrounds and expertise and includes both quantitative and qualitative studies aimed at CoronaCheck’s objectives.
 
 There have also been CoronaCheck trials. During the pilot phase, visitors were given entry to certain events and locations with CoronaCheck.  The pilot phase concluded positively, which is why CoronaCheck is used for more events and locations.
 

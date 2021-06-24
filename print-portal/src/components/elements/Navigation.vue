@@ -3,10 +3,6 @@ export default {
     name: 'Navigation',
     components: {},
     props: {
-        callbackBack: {
-            type: Function,
-            required: false
-        },
         displayBackButton: {
             type: Boolean,
             required: false,
@@ -16,7 +12,7 @@ export default {
     computed: {},
     methods: {
         goBack() {
-            this.callbackBack();
+            this.$emit('back');
         }
     }
 }
@@ -25,7 +21,7 @@ export default {
 <template>
     <nav>
         <button
-            v-if="displayBackButton && callbackBack"
+            v-if="displayBackButton"
             @click="goBack()"
             :aria-label="$t('back')"
             type="button"

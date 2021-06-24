@@ -8,6 +8,18 @@ export default {
     computed: {
         hasLanguages() {
             return this.$store.state.languages.all.length > 1;
+        },
+        pageHeaderImage() {
+            if (this.$route.meta.pageHeader) {
+                if (this.$route.meta.pageHeader === 'error') {
+                    return 'assets/img/artwork/coronacheck-header-error.svg';
+                } else {
+                    return 'assets/img/artwork/coronacheck-header-regular.svg'
+                }
+            } else {
+                // standard
+                return 'assets/img/artwork/coronacheck-header-regular.svg'
+            }
         }
     },
     methods: {
@@ -36,7 +48,7 @@ export default {
                     alt=""
                     width="246"
                     height="150"
-                    src="assets/img/artwork/holder_qrcode_maken.svg"/>
+                    :src="pageHeaderImage"/>
             </div>
 
         </div>
@@ -70,6 +82,7 @@ export default {
             display: flex;
             align-items: flex-end;
             height: 100%;
+            overflow: hidden;
 
             .Identity__image {
                 display: block;

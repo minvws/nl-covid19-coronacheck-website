@@ -1,6 +1,6 @@
 ---
-index: 6
-set: 6
+set: 1
+index: 9
 title: Ik heb een geldig bewijs, maar moet in quarantaine blijven van de GGD. Wat nu? 
 redirect_from: 
   - /nl/faq-in-app/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd

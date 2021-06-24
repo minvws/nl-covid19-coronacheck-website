@@ -13,11 +13,9 @@ export default {
             <img :src="'assets/img/CoronaCheck_app-' + currentLanguage.locale + '.png'" alt="" width="226" height="289" />
         </div>
         <div class="PreferMobile__text">
-            <h3>
-                {{$t('preferMobile')}}
-            </h3>
+            <h2>{{$t('components.preferMobile.header')}}</h2>
             <p>
-                {{$t('preferMobileDirection')}}
+                {{$t('components.preferMobile.intro')}}
             </p>
             <ul class="layout-app-badges">
                 <li class="app_badge_column__left">

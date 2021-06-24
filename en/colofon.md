@@ -43,4 +43,4 @@ the iOS and Android distribution and the Mobile Application.
 
 ## Reporting vulnerabilities
 
-Did you discover a weakness or vulnerability on the CoronaCheck app, the CoronaCheck Scanner app or on this website? We would like to be informed if you do. Report the vulnerability to [security@coronacheck.nl](mailto:security@coronacheck.nl) and we will look into the problem and resolve it as soon as possible.
+Did you discover a weakness or vulnerability on the CoronaCheck-app, the CoronaCheck Scanner app or on this website? We would like to be informed if you do. Report the vulnerability to [security@coronacheck.nl](mailto:security@coronacheck.nl) and we will look into the problem and resolve it as soon as possible.

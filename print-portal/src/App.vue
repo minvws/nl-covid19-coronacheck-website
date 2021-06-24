@@ -1,13 +1,19 @@
 <script>
 import Identity from '@/components/elements/Identity';
 import languages from '@/data/languages';
-import Modal from './components/elements/Modal';
+import Modal from '@/components/elements/Modal';
+import { cmsDecode } from '@/tools/cms'
+import Snackbar from '@/components/elements/Snackbar';
+import { handleRejection } from '@/tools/error-handler';
 
 export default {
-    components: { Modal, Identity },
+    components: { Snackbar, Modal, Identity },
     computed: {
         dataReady() {
             return this.currentLanguage && this.$store.state.holderConfig && this.$store.state.testProviders.all.length > 0;
+        },
+        displaySnackbar() {
+            return this.$store.state.snackbar.visible
         }
     },
     methods: {
@@ -16,6 +22,7 @@ export default {
             this.getTestProviders();
             this.addLanguages();
             this.setCurrentLanguage();
+            this.setTimerToEndSession();
         },
         async getHolderConfig() {
             this.$axios({
@@ -23,38 +30,31 @@ export default {
                 url: '/holder/config'
             }).then((response) => {
                 if (response.data && response.data.payload) {
-                    const holderConfig = JSON.parse(atob(response.data.payload));
+                    const holderConfig = cmsDecode(response.data.payload);
                     this.$store.commit('setHolderConfig', holderConfig);
                 }
             }).catch((error) => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('generalError'),
-                    messageBody: this.$t('generalErrorBody') + '<p>' + error + '</p>',
-                    closeButton: true
-                });
+                handleRejection(error);
             })
         },
         async getTestProviders() {
             this.$axios({
                 method: 'get',
-                url: '/holder/config_ctp'
+                url: '/holder/config_providers'
             }).then((response) => {
                 if (response.data && response.data.payload) {
-                    const config = JSON.parse(atob(response.data.payload));
+                    const config = cmsDecode(response.data.payload);
                     this.$store.commit('testProviders/init', config.corona_test_providers);
+                    this.$store.commit('eventProviders/init', config.event_providers);
                 } else {
                     this.$store.commit('modal/set', {
-                        messageHead: this.$t('generalError'),
-                        messageBody: this.$t('generalErrorBody'),
+                        messageHead: this.$t('message.error.general.head'),
+                        messageBody: this.$t('message.error.general.body'),
                         closeButton: true
                     });
                 }
             }).catch((error) => {
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('generalError'),
-                    messageBody: (this.$t('generalErrorBody') + '<p>' + error + '</p>'),
-                    closeButton: true
-                });
+                handleRejection(error);
             })
         },
         addLanguages() {
@@ -76,6 +76,19 @@ export default {
             this.$i18n.locale = this.$store.state.languages.current.locale;
             const html = document.documentElement;
             html.setAttribute('lang', this.$store.state.languages.current.locale)
+        },
+        setTimerToEndSession() {
+            const hours = 24;
+            const time = hours * 3600000
+            setTimeout(() => {
+                this.$router.push({ name: 'Home' })
+                this.$store.commit('sessionEnded')
+                this.$store.commit('modal/set', {
+                    messageHead: this.$t('message.info.sessionEnded.head'),
+                    messageBody: this.$t('message.info.sessionEnded.body'),
+                    closeButton: true
+                })
+            }, time)
         }
     },
     mounted() {
@@ -90,6 +103,7 @@ export default {
         id="app">
         <Identity/>
         <router-view/>
+        <Snackbar v-if="displaySnackbar"/>
         <Modal/>
     </div>
 </template>

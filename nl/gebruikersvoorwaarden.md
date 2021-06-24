@@ -34,9 +34,9 @@ redirect_from: /gebruikersvoorwaarden
 ## Gebruikte afkortingen
 
 - **AVG**: Algemene Verordening Gegevensbescherming
-- **Controleur**: Iemand die de geldigheid van een coronatoegangsbewijs controleert
-- **Coronatoegangsbewijs**: Bewijs gemaakt met negatieve testuitslag dat door de persoon wordt getoond aan een controleur voor toegang tot een activiteit of voorziening
-- **Testuitslag**: Uitslag van een test op COVID-19 dat door testuitvoerder wordt verstrekt aan persoon
+- **Controleur**: Iemand die de geldigheid van een coronatoegangsbewijs en DCC controleert
+- **Coronatoegangsbewijs**: Bewijs gemaakt met vaccinatie-, test- en/of herstelstatus dat door de persoon wordt getoond aan een controleur voor toegang tot een activiteit of voorziening
+- **DCC**: EU Digitaal Corona Certificaat: een interoperabel certificaat met informatie over de vaccinatie-, test- en/of herstelstatus van de houder, afgegeven in de context van de COVID-19-pandemie.
 - **VWS**: Het Ministerie van Volksgezondheid, Welzijn en Sport
 
 ## Over deze gebruikersvoorwaarden
@@ -47,15 +47,21 @@ In deze gebruikersvoorwaarden leest u hoe CoronaCheck Scanner werkt, wat u ermee
 
 ### Downloaden en installeren 
 
-Om digitale coronatoegangsbewijzen uit CoronaCheck en fysieke coronatoegangsbewijzen op papier te controleren op geldigheid is CoronaCheck Scanner benodigd. CoronaCheck Scanner kunt gratis u downloaden in de App Store (voor iOS) en de Google Play Store (voor Android) en installeren op uw smartphone of tablet. Download u CoronaCheck Scanner daarom alleen in de App Store of Google Play Store en wees alert op valse/namaak apps. CoronaCheck Scanner wordt alleen ondersteund vanaf iOS versie 11 en Android versie 6. 
+Om een coronatoegangsbewijs of DCC te controleren op geldigheid is CoronaCheck Scanner benodigd. CoronaCheck Scanner kunt u gratis downloaden in de Apple Appstore (voor iOS) en de Google Play Store (voor Android) en installeren op uw smartphone of tablet. Downloadt u CoronaCheck Scanner daarom alleen in de App Store of Google Play Store en wees alert op valse/namaak apps. CoronaCheck Scanner wordt alleen ondersteund vanaf iOS versie 11 en Android versie 6. 
 
-Nadat CoronaCheck Scanner is gedownload en deze voorwaarden zijn geaccepteerd, kan CoronaCheck Scanner gebruikt worden. Voordat u gebruik kunt maken van de app dient dus u deze gebruikersvoorwaarden te lezen en akkoord te gaan met de gebruikersvoorwaarden. U kunt deze gebruikersvoorwaarden terugvinden op [de website van CoronaCheck](https://coronacheck.nl/nl/gebruikersvoorwaarden.html). 
+Nadat CoronaCheck Scanner is gedownload en deze voorwaarden zijn geaccepteerd, kan CoronaCheck Scanner gebruikt worden. Voordat u gebruik kunt maken van de app dient u dus deze gebruikersvoorwaarden te lezen en akkoord te gaan met de gebruikersvoorwaarden. U kunt deze gebruikersvoorwaarden terugvinden op de [website van CoronaCheck](https://coronacheck.nl/nl/gebruikersvoorwaarden.html).
 
-### Een coronatoegangsbewijs scannen 
+### Een coronatoegangsbewijs of DCC scannen 
 
-Wanneer personen aan een controleur het coronatoegangsbewijs tonen, kan met gebruik van CoronaCheck Scanner de geldigheid van het coronatoegangsbewijs gecontroleerd worden. Een persoon kan een digitaal coronatoegangsbewijs tonen in CoronaCheck of een papieren coronatoegangsbewijs tonen dat is gegenereerd en via coronacheck.nl en vervolgens door de persoon is geprint. Voor de validatie van een coronatoegangsbewijs is geen online verbinding vereist. Wanneer het coronatoegangsbewijs wordt gescand met behulp van CoronaCheck Scanner dient in geval van een digitaal coronatoegangsbewijs in CoronaCheck de bewegende visuele animatie naast de QR-code als beveiligingsfunctie. Aan de hand van deze animatie kan een controleur checken of er geen screenshot van de QR-code in CoronaCheck is gemaakt. Daarnaast wordt er bij het digitale coronatoegangsbewijs in CoronaCheck en het papieren coronatoegangsbewijs zowel in de QR-code als onder de QR-code een set identificerende gegevens (eerste letter voornaam, eerste letter achternaam, geboortedag en geboortemaand) getoond. Belangrijk is dat CoronaCheck Scanner deze set aan identificerende gegevens niet vastlegt. De QR-code inclusief set identificerende gegevens wordt alleen uitgelezen door CoronaCheck Scanner om vervolgens na het scannen van het coronatoegangsbewijs een ‘geldig coronatoegangsbewijs’ (groene kleur) of ‘geen geldig coronatoegangsbewijs’ (rode kleur) als status te geven. Er bestaat de mogelijkheid dat een grijs scherm wordt getoond na het scannen van een QR-code. Een grijs scherm wordt alleen getoond wanneer er een QR-code is gescand die is ontwikkeld om de werking van CoronaCheck Scanner te testen. Wanneer een grijs scherm wordt getoond heeft de gescande QR-code geen betrekking op een persoon, maar het gaat om een test code. Wanneer de status als ‘geen geldig coronatoegangsbewijs’ (rood scherm) weergegeven wordt, zal ook een algemene toelichting beschreven staan met mogelijke oorzaken voor het ontvangen van deze status. Ook moet de controleur de identiteit van de persoon controleren middels een check van het identiteitsbewijs (het gaat hier alleen om een fysieke check, (een kopie van) het identiteitsbewijs wordt op geen enkele wijze opgeslagen).
+Wanneer een persoon aan een controleur een coronatoegangsbewijs of DCC toont, kan met gebruik van CoronaCheck Scanner de geldigheid van het coronatoegangsbewijs of DCC gecontroleerd worden. Een persoon kan een coronatoegangsbewijs of DCC digitaal of op papier tonen. Voor de validatie van een coronatoegangsbewijs of DCC is geen online verbinding vereist. Wanneer het coronatoegangsbewijs wordt gescand met behulp van CoronaCheck Scanner dient in geval van een digitaal coronatoegangsbewijs in CoronaCheck de bewegende visuele animatie naast de QR-code als beveiligingsfunctie. Aan de hand van deze animatie kan een controleur checken of er geen screenshot van de QR-code in CoronaCheck is gemaakt. 
 
-Bij een correcte weergave van de animatie (bij gebruik van CoronaCheck) en een groen scherm na het scannen van het coronatoegangsbewijs kan de controleur toegang verlenen tot het evenement of de locatie. 
+Na het scannen wordt er een groen of een rood scherm getoond. Groen staat voor geldig toegangsbewijs en rood voor geen geldig toegangsbewijs. Bij een groen scherm wordt tevens een set identificerende gegevens (eerste letter voornaam, eerste letter achternaam, geboortedag en geboortemaand) getoond. De controleur moet de gegevens die worden getoond op in de CoronaCheck Scanner vergelijken met de gegevens op het identiteitsbewijs van de persoon om te controleren of het coronatoegangsbewijs of DCC hoort bij de persoon die het toont. Bij een groen scherm en indien de gegevens overeenkomen kan de controleur toegang verlenen tot het evenement of de locatie. 
+
+Belangrijk is dat CoronaCheck Scanner deze set aan identificerende gegevens niet vastlegt en het ook niet toegestaan is deze gegevens of de gegevens op het identiteitsbewijs vast te leggen.
+
+Wanneer in CoronaCheck Scanner een rood scherm (geen geldig coronatoegangsbewijs of DCC) wordt weergegeven, zal ook een algemene toelichting beschreven staan met mogelijke oorzaken voor het ontvangen van deze status. 
+
+Er bestaat de mogelijkheid dat een grijs scherm wordt getoond na het scannen van een QR-code. Een grijs scherm wordt alleen getoond wanneer er een QR-code is gescand die is ontwikkeld om de werking van CoronaCheck Scanner te testen. Wanneer een grijs scherm wordt getoond heeft de gescande QR-code geen betrekking op een persoon, maar het gaat om een test code.
 
 ### Updaten
 
@@ -73,23 +79,24 @@ Indien u de app niet langer wenst te gebruiken kunt u CoronaCheck Scanner verwij
 
 ## Voor wie is CoronaCheck Scanner?
 
-De app kan door iedereen gedownload worden via de Apple Appstore of Google Play Store. Een controleur kan met CoronaCheck Scanner toegang weigeren wanneer personen geen coronatoegangsbewijs kunnen tonen of wanneer het scannen van een coronatoegangsbewijs met CoronaCheck Scanner een rood scherm toont.  
+De app kan door iedereen gedownload worden via de Apple Appstore of Google Play Store. Een controleur kan met CoronaCheck Scanner toegang weigeren wanneer personen geen coronatoegangsbewijs of DCC kunnen tonen of wanneer het scannen van een coronatoegangsbewijs of DCC met CoronaCheck Scanner een rood scherm toont.  
 
 ## Waarom CoronaCheck Scanner?
 
-De uitbraak van het SARS-CoV-2 (hierna: “het coronavirus”) heeft grote maatschappelijke gevolgen voor de Nederlandse samenleving. Door het coronavirus in te dammen en onder controle te krijgen kan de samenleving langzaam weer haar normale vorm aannemen en kan de economische schade zo veel mogelijk beperkt worden. CoronaCheck Scanner is bedoeld om het coronatoegangsbewijs in CoronaCheck of een papieren coronatoegangsbewijs dat door personen getoond wordt aan een controleur te scannen en zo te bepalen of iemand toegang krijgt tot een bepaalde locatie. Door alleen toegang te verlenen tot bepaalde locaties aan personen die kunnen aantonen dat zij recentelijk negatief getest zijn op het coronavirus kunnen verdere besmettingen met het virus voorkomen worden. 
+De uitbraak van het SARS-CoV-2 (hierna: "het coronavirus") heeft grote maatschappelijke gevolgen voor de Nederlandse samenleving. Door het coronavirus in te dammen en onder controle te krijgen kan de samenleving langzaam weer haar normale vorm aannemen en kan de economische schade zo veel mogelijk beperkt worden. CoronaCheck Scanner is bedoeld om het coronatoegangsbewijs of DCC dat door personen getoond wordt aan een controleur te scannen en zo te bepalen of iemand toegang krijgt tot een bepaalde locatie. Het is wettelijk verplicht om voor het scannen enkel deze app te gebruiken. Door alleen toegang te verlenen tot bepaalde locaties aan personen die kunnen aantonen dat zij recentelijk negatief getest of gevaccineerd zijn of hersteld zijn van het coronavirus kunnen verdere besmettingen met het virus voorkomen worden.  
 
 ## CoronaCheck Scanner biedt geen bescherming tegen het coronavirus
 
-Het scannen van een coronatoegangsbewijs geeft aan dat de persoon op het moment van testen niet besmet was met het coronavirus. Dit geeft echter geen volledige garantie dat de betreffende persoon op het moment van het scannen van de QR-code met CoronaCheck Scanner anderen niet kan besmetten met het coronavirus. 
+Het scannen van een coronatoegangsbewijs of DCC geeft aan dat de persoon op het moment van tonen gevaccineerd is, hersteld is van Corona of onlangs negatief is getest op het coronavirus. Dit geeft echter geen volledige garantie dat de betreffende persoon op het moment van het scannen van de QR-code met CoronaCheck Scanner anderen niet kan besmetten met het coronavirus.  
 
 ## Privacy
 
-Met de inzet van CoronaCheck Scanner worden geen persoonsgegevens vastgelegd. CoronaCheck Scanner heeft permissie nodig voor het cameragebruik van het apparaat van controleur. Deze permissie is nodig om het coronatoegangsbewijs, in de vorm van een QR-code, te scannen. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het coronatoegangsbewijs, in de vorm van een QR-code te scannen. 
+Met de inzet van CoronaCheck Scanner worden geen persoonsgegevens vastgelegd. CoronaCheck Scanner heeft permissie nodig voor het cameragebruik van het apparaat van controleur. Deze permissie is nodig om het coronatoegangsbewijs of DCC, in de vorm van een QR-code, te scannen. Zonder permissie kan de gebruiker de app wel installeren, maar niet gebruiken om een het coronatoegangsbewijs of DCC, in de vorm van een QR-code te scannen. 
 
 ### Doelbinding
 
-CoronaCheck Scanner wordt gebruikt om toegang tot een bepaald evenement of bepaalde locatie te reguleren door te controleren of iemand beschikt over een coronatoegangsbewijs. Dit is alleen mogelijk indien een persoon een negatieve testuitslag van een aangesloten testuitvoerder heeft ontvangen en vervolgens een coronatoegangsbewijs heeft gegenereerd. Het is niet toegestaan om bij gebruik van CoronaCheck Scanner een coronatoegangsbewijs dat wordt getoond op enige manier vast te leggen, waaronder maar niet beperkt tot: het maken van een screenshot. CoronaCheck Scanner mag enkel en alleen worden gebruikt om een coronatoegangsbewijs te lezen. Het opslaan of bijhouden van de coronatoegangsbewijzen die aan een controleur worden getoond is uitdrukkelijk niet toegestaan. 
+CoronaCheck Scanner wordt gebruikt om toegang tot een bepaald evenement of bepaalde locatie te reguleren door te controleren of iemand beschikt over een coronatoegangsbewijs of DCC. Dit is alleen mogelijk indien een persoon een geldig coronatoegangsbewijs of DCC toont. Het is niet toegestaan om bij gebruik van CoronaCheck Scanner een coronatoegangsbewijs of DCC dat wordt getoond op enige manier vast te leggen, waaronder maar niet beperkt tot: het maken van een screenshot. CoronaCheck Scanner mag enkel en alleen worden gebruikt om een coronatoegangsbewijs of DCC te lezen. Het opslaan of bijhouden van de Coronatoegangsbewijzen of DCC’s die aan een controleur worden getoond is uitdrukkelijk niet toegestaan. 
+
 
 ## Beveiliging 
 
@@ -107,11 +114,13 @@ Heeft u een vraag of klacht over CoronaCheck Scanner of wilt u een storing melde
 
 ## Aansprakelijkheid 
 
-VWS is niet aansprakelijk voor schade die u lijdt door het gebruik van CoronaCheck Scanner. VWS aanvaardt geen enkele aansprakelijk voor gevolgen van eventuele onjuistheden in de gegevens die via de app ontsloten worden. 
+VWS is niet aansprakelijk voor schade die u lijdt door het gebruik van CoronaCheck Scanner. VWS aanvaardt geen enkele aansprakelijkheid voor gevolgen van eventuele onjuistheden in de gegevens die via de app ontsloten worden. 
 
 VWS kan op ieder gewenst moment het aanbieden van de app staken of de inhoud aanpassen (zie ook onder 13). 
 
 VWS is niet aansprakelijk voor enige schade of kosten van u of van derden, uit welke hoofde dan ook, als gevolg van het gebruik of onmogelijkheid van het gebruik van de app.
+
+U verkrijgt hierbij een gebruiksrecht op het gebruik van CoronaCheck Scanner. Dit gebruiksrecht is niet-exclusief, niet-overdraagbaar, opzegbaar, niet sub-licentieerbaar. De app en alle teksten en afbeeldingen in de app en de software in de app zijn eigendom van VWS. 
 
 ## Intellectueel eigendomsrecht
 
@@ -123,7 +132,7 @@ VWS kan de voorwaarden wijzigen als VWS dat noodzakelijk vindt. De datum en de v
 
 ## Beëindigen van CoronaCheck Scanner
 
-Het controleren van coronatoegangsbewijzen om toegang te verstrekken is een tijdelijke crisismaatregel. Dat betekent dat niet voorspeld kan worden wat er precies gaat gebeuren. Daarom kan VWS op ieder moment beslissen om het gebruik van CoronaCheck Scanner te stoppen. Wanneer dit gebeurt, wordt u daarover geïnformeerd via [de website van CoronaCheck](https://coronacheck.nl/nl).  
+Het controleren van Coronatoegangsbewijzen en DCC’s om toegang te verstrekken is een tijdelijke crisismaatregel. Dat betekent dat niet voorspeld kan worden wat er precies gaat gebeuren. Daarom kan VWS op ieder moment beslissen om het gebruik van CoronaCheck Scanner te stoppen. Wanneer dit gebeurt, wordt u daarover geïnformeerd via [de website van CoronaCheck](https://coronacheck.nl/nl).  
 
 ## Toepasselijk recht en bevoegde rechter
 
@@ -139,4 +148,4 @@ Indien u een vraag of klacht over CoronaCheck Scanner heeft, kijk dan voor meer 
 
 Versie 1.2.
 
-Laatste update: 3 Juni 2021. 
+Laatste update: 23 Juni 2021. 
