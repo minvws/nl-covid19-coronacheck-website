@@ -162,11 +162,13 @@
         margin-top: 14px;
     }
 
-    #wegwijzer {
+    #wegwijzer,
+    #guidepost {
         font-size: 32px;
     }
 
-    #wegwijzer ~ h3 {
+    #wegwijzer ~ h3,
+    #guidepost ~ h3 {
         font-size: 1rem;
     }
 
