@@ -17,7 +17,7 @@ If you have any questions, you can turn to the Ministry of Foreign Affairs. <a h
 
 ## Vaccination certificate
 
-Do you want to retrieve vaccination details in the app? [Read here how to retrieve your vaccination details.](/en/faq/1-1-hoe-werkt-de-coronacheck-app/).
+Do you want to retrieve vaccination details in the app? [Read here how to retrieve your vaccination details](/en/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
 ### Failing to retrieve your vaccination details?
 
@@ -27,7 +27,7 @@ Do you want to retrieve vaccination details in the app? [Read here how to retrie
 ### I don’t know where my vaccination details where registered. What to do?
 
 - The RIVM automatically retrieves your vaccination details (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/vraag-en-antwoord/toestemming-registratie-coronavaccinatie" rel="noopener noreferrer" target="_blank" hreflang="nl">if you gave consent (Dutch)</a>) from the GGD or the hospital
-- Try to retrieve your vaccination details from the CoronaCheck app by logging in via DigiD
+- Try to retrieve your vaccination details from the CoronaCheck-app by logging in via DigiD
 - Did you fail to log in or register? <a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank" hreflang="nl">This webpage explains what you can do to get your vaccination certificate if you failed to register (Dutch)</a>
 
 ### In my vaccination details, my name and/or date of birth is wrong
