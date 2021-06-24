@@ -53,8 +53,7 @@ export const getTextItems = (type, territory, qr, locale) => {
             fontSize: fontSizeStandard,
             position: [marginLeftIntro, 51],
             width: partWidthIntro,
-            textAlign: 'center',
-            hasHTML: true
+            textAlign: 'center'
         }, {
             text: i18n.t('pdf.instructions'),
             fontFamily: 'montserrat',
@@ -84,8 +83,7 @@ export const getTextItems = (type, territory, qr, locale) => {
             fontSize: fontSizeStandard,
             position: [questionsFrameInnerLeft, (questionsFrameTop + marginQuestionsFrame + (3 * lineHeight))],
             width: questionsFrameInnerWidth,
-            lineHeight: lineHeight,
-            hasHTML: true
+            lineHeight: lineHeight
         }, {
             text: i18n.t('pdf.' + territory + '.qrTitle'),
             fontFamily: 'montserrat',
@@ -109,8 +107,7 @@ export const getTextItems = (type, territory, qr, locale) => {
             fontWeight: 400,
             fontSize: fontSizeStandard,
             position: [rightPartLeft, bottomPartTop + (2 * lineHeight)],
-            width: partWidth,
-            hasHTML: true
+            width: partWidth
         }
     ]
 }
@@ -118,26 +115,26 @@ export const getTextItems = (type, territory, qr, locale) => {
 const getUserDetails = (qr, territory, type) => {
     let string = '';
     if (territory === 'nl') {
-        string += i18n.t('pdf.nl.userData.initials') + ':<b>' + qr.initials + '</b><br>';
-        string += i18n.t('pdf.nl.userData.dateOfBirth') + ':<b>' + qr.birthDateStringShort + '</b><br>';
-        string += i18n.t('pdf.nl.userData.validFrom') + ':<b>' + qr.validFrom + '</b><br>';
-        string += i18n.t('pdf.nl.userData.validUntil') + ':<b>' + qr.validUntil + '</b><br><br>';
+        string += i18n.t('pdf.nl.userData.initials') + ': ' + qr.initials + '\n';
+        string += i18n.t('pdf.nl.userData.dateOfBirth') + ': ' + qr.birthDateStringShort + '\n';
+        string += i18n.t('pdf.nl.userData.validFrom') + ': ' + qr.validFrom + '\n';
+        string += i18n.t('pdf.nl.userData.validUntil') + ': ' + qr.validUntil + '\n\n';
         string += i18n.t('pdf.nl.userData.privacyNote');
         return string;
     } else {
         if (type === 'vaccination') {
-            string += 'Surname(s) and first name(s):<b>' + qr.fullName + '</b><br>';
-            string += 'Date of birth:<b>' + qr.birthDateString + '</b><br><br>';
-            string += 'Disease targeted:<b>COVID-19</b><br>';
-            string += 'Vaccine:<b>' + qr.vaccineBrand + '</b><br>';
-            string += 'Vaccine medicinal product:<b>' + qr.vaccineType + '</b><br>';
-            string += 'Vaccine manufacturer:<b>' + qr.vaccineManufacturer + '</b><br>';
-            string += 'Vaccination doses:<b>' + qr.doseNumber + ' out of ' + qr.totalDoses + '</b><br>';
-            string += 'Vaccination date:<b>' + qr.vaccinationDate + '</b><br>';
-            string += 'Vaccinated in:<b>' + qr.vaccinationCountry + '</b><br>';
-            string += 'Certificate issuer:<b>' + qr.certificateIssuer + '</b><br>';
-            string += 'Certificate identifier:<b>' + qr.certificateIdentifier + '</b><br><br>';
-            string += 'Valid from:<b>' + qr.validFrom + '</b><br><br>';
+            string += 'Surname(s) and first name(s): ' + qr.fullName + '\n';
+            string += 'Date of birth: ' + qr.birthDateString + '\n';
+            string += 'Disease targeted: COVID-19\n';
+            string += 'Vaccine: ' + qr.vaccineBrand + '\n';
+            string += 'Vaccine medicinal product: ' + qr.vaccineType + '\n';
+            string += 'Vaccine manufacturer: ' + qr.vaccineManufacturer + '\n';
+            string += 'Vaccination doses: ' + qr.doseNumber + ' out of ' + qr.totalDoses + '\n';
+            string += 'Vaccination date: ' + qr.vaccinationDate + '\n';
+            string += 'Vaccinated in: ' + qr.vaccinationCountry + '\n';
+            string += 'Certificate issuer: ' + qr.certificateIssuer + '\n';
+            string += 'Certificate identifier: ' + qr.certificateIdentifier + '\n\n';
+            string += 'Valid from: ' + qr.validFrom + '\n\n';
             return string
         } else {
             return 'UserData EU negative test (todo)';
