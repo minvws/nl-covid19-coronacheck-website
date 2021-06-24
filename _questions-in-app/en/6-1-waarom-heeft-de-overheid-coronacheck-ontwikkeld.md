@@ -1,12 +1,15 @@
 ---
 set: 6
 index: 1
-title: Why did the government develop CoronaCheck?
+title: Why is the government developing CoronaCheck?
 ---
-The government is working hard to responsibly open society back up. Thanks to CoronaCheck, visitors may gain entry to certain locations or activities. And they may travel again. But only if they’re vaccinated or a test shows they don’t have coronavirus at the moment.
- 
-CoronaCheck was developed to show you’ve been vaccinated or were recently tested for coronavirus. There are 3 reasons why:
- 
-1. A certificate or entry pass in CoronaCheck includes a digital autograph. This autograph makes personal details hard to change or forge.
+The government is working hard to open up society responsibly. Using CoronaCheck, visitors can get access to certain locations or activities. And they can travel again (from the 1st of July). But only if they have been vaccinated, or a test shows they didn’t have coronavirus at the time. 
 
-2. A certificate or entry pass in CoronaCheck is more privacy-friendly than a test result, registration card, or vaccination booklet. This is because CoronaCheck includes much fewer personal details: only your initials, birth month and day of birth.
+Using the CoronaCheck app, people in the Netherlands can create a corona certificate. This is possible when you:
+
+- recently tested negative for coronavirus, or;
+- have been (fully) vaccinated against coronavirus, or;
+- have recovered from a corona infection in the last 6 months (possible from the 1st of July)
+
+The CoronaCheck app can be used within the Netherlands, and for international travel. The app creates two QR codes: an international QR code, and a Dutch QR code. You can show these using the CoronaCheck app, or print them on paper via the website.
+
