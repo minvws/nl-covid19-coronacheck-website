@@ -4,10 +4,16 @@ import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import { handleRejection } from '@/tools/error-handler';
+import TooBusyButton from '@/components/elements/TooBusyButton';
 
 export default {
     name: 'CollectVaccination',
-    components: { CcModestButton, Page, PageIntro, CcButton },
+    components: { TooBusyButton, CcModestButton, Page, PageIntro, CcButton },
+    data() {
+        return {
+            tooBusy: true
+        }
+    },
     computed: {},
     methods: {
         getToken() {
@@ -40,7 +46,9 @@ export default {
                 :intro="$t('views.collectVaccination.pageIntro')"/>
             <div class="section-block">
                  <div class="section-block__footer">
+                     <TooBusyButton v-if="tooBusy"/>
                      <CcButton
+                         v-if="!tooBusy"
                          @select="getToken()"
                          :label="$t('views.collectVaccination.loginDigid')"/>
                      <div>
