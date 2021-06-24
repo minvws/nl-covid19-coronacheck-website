@@ -8,8 +8,6 @@ featuredHomeIcon: app-touch
 redirect_from: 
   - /nl/faq/1-hoe-werkt-de-coronacheck-app
 ---
-
-
 Voor toegang tot bepaalde locaties, activiteiten en landen is een coronabewijs nodig. Bezoek je een locatie waar dat het geval is? Volg dan deze stappen:
 
 1. Als bezoeker laat je je vaccineren of doe je een coronatest

@@ -16,11 +16,11 @@ Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem�
 
 ## Vaccinatiebewijs
 
-Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens kan ophalen](nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
+Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
 ### Lukt het niet om je vaccinatiegegevens op te halen?
 
-- Ben je pas net gevaccineerd? Het kan even duren voordat de vaccinatie is verwerkt. Probeer het over 1 à 2 dagen opnieuw. [Lukt het na een paar dagen nog steeds niet om je vaccinatiegegevens op te halen? Op deze website vind je wat je dan kunt doen](https://www.rijksoverheid.nl/coronabewijs) 
+- Ben je pas net gevaccineerd? Het kan even duren voordat de vaccinatie is verwerkt. Probeer het over 1 à 2 dagen opnieuw. <a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">Lukt het na een paar dagen nog steeds niet om je vaccinatiegegevens op te halen?</a>
 - Ben je gevaccineerd op een andere plek dan de GGD, de huisarts of het ziekenhuis, bijvoorbeeld in het buitenland? <a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">Op deze website vind je wat je dan kunt doen om je vaccinatiegegevens op te halen</a>
 
 ### Ik weet niet waar ik mijn vaccinatiegegevens heb laten registreren, wat nu?
