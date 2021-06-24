@@ -8,13 +8,9 @@ redirect_from:
 ---
 ## Reizen
 
-<div style="font-weight: bold;" markdown="1">
-
 Vanaf 1 juli kun je jouw coronabewijs (Digital Corona Certificaat, DCC) maken om te reizen via CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-</div>
-
-Ga je op reis? Check dan eerst <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">www.wijsopreis.nl</a> voor het up-to-date geldende reisadvies per bestemming. reisadvies per bestemming. Vanaf 1 juli kun je je gratis laten testen wanneer je op reis gaat. <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie" rel="noopener noreferrer" target="_blank">Hiervoor vind je alle informatie op deze website van de Rijksoverheid</a>.
+Ga je op reis? Check dan eerst <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">www.wijsopreis.nl</a> voor het up-to-date geldende reisadvies per bestemming. Vanaf 1 juli kun je je gratis laten testen wanneer je op reis gaat. <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie" rel="noopener noreferrer" target="_blank">Hiervoor vind je alle informatie op deze website van de Rijksoverheid</a>.
 
 Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">contact op met het contact center van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
 
@@ -35,11 +31,11 @@ Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens ka
 
 ### Mijn naam of geboortedatum klopt niet van mijn vaccinatiegegevens, wat nu?
 
-<a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">Op deze website vind je wat je kunt doen om je gegevens aan te laten passen</a>
+<a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">Op deze website vind je wat je kunt doen om je gegevens aan te laten passen</a>.
 
 ### Andere vragen rondom het ophalen van je vaccinaties? 
 
-<a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">Deze website beantwoordt je vragen over het ophalen van je vaccinaties</a>
+<a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">Deze website beantwoordt je vragen over het ophalen van je vaccinaties</a>.
 
 
 ## Testbewijs
@@ -67,7 +63,7 @@ Herstelbewijzen kunnen op dit moment nog niet worden toegevoegd in CoronaCheck. 
 
 Om je vaccinatiegegevens in te laden in CoronaCheck heb je een geldige DigiD nodig. <a href="https://www.digid.nl/digid-aanvragen-activeren/" rel="noopener noreferrer" target="_blank">Die kun je via deze link aanvragen</a>. De aanvraag van een nieuwe DigiD duurt enkele werkdagen.
 
-Je kan inloggen op DigiD via de app (<a href="https://www.digid.nl/inlogmethodes/digid-app" rel="noopener noreferrer" target="_blank">download hier de DigiD app</a> of de DigiD website met sms-controle. <a href="https://www.digid.nl/inlogmethodes/sms-controle" rel="noopener noreferrer" target="_blank">Over het instellen van een sms-controle lees je hier meer</a>.
+Je kan inloggen op DigiD via de app (<a href="https://www.digid.nl/inlogmethodes/digid-app" rel="noopener noreferrer" target="_blank">download hier de DigiD app</a>) of de DigiD website met sms-controle. <a href="https://www.digid.nl/inlogmethodes/sms-controle" rel="noopener noreferrer" target="_blank">Over het instellen van een sms-controle lees je hier meer</a>.
 
 Meer informatie over DigiD: neem gerust contact op met de Helpdesk op <a href="tel:0031881236555">+31 88 123 65 55</a> (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
 
@@ -75,4 +71,4 @@ Heb je geen DigiD of geen digitale middelen, kijk dan voor meer informatie op <a
 
 ## Papieren Coronabewijs maken
 
-Geen smartphone, liever een papieren coronabewijs of wil je een coronabewijs voor je kinderen maken? Een papieren coronabewijs maak je op [www.coronacheck.nl/print](/print)
+Geen smartphone, liever een papieren coronabewijs of wil je een coronabewijs voor je kinderen maken? Een papieren coronabewijs maak je op [www.coronacheck.nl/print](/print).
