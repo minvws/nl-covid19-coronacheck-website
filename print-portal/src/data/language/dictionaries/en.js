@@ -19,9 +19,11 @@ const en = {
         },
         'choiceProof': {
             'pageHeader': 'What would you like to make a paper certificate of?',
-            'pageIntro': '<p>You can make a QR code of a vaccination or negative test result.</p>',
+            'pageIntro': '<p>TODO You can make a QR code of a vaccination or negative test result.</p>',
             'choiceTestHeader': 'A negative test result',
             'choiceTestBody': 'The test proves I do not have coronavirus',
+            'choiceRecoveryHeader': 'TODO',
+            'choiceRecoveryBody': 'TODO',
             'choiceVaccinationHeader': 'A vaccination',
             'choiceVaccinationBody': 'I have had my injection or injections'
         },

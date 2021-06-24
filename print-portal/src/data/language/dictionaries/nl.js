@@ -23,9 +23,11 @@ const nl = {
         },
         'choiceProof': {
             'pageHeader': 'Waar wil je een papieren bewijs van maken?',
-            'pageIntro': '<p>Je kunt een QR-code maken van een negatieve testuitslag of van een vaccinatie. </p>',
+            'pageIntro': '<p>Je kunt een QR-code maken van een negatieve testuitslag, een herstelverklaring of van een vaccinatie.</p>',
             'choiceTestHeader': 'Een negatieve testuitslag',
             'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
+            'choiceRecoveryHeader': 'Een herstelverklaring',
+            'choiceRecoveryBody': 'Ik heb corona gehad en ben hersteld',
             'choiceVaccinationHeader': 'Een vaccinatie',
             'choiceVaccinationBody': 'Ik heb mijn prik of prikken gehad'
         },
