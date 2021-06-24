@@ -3,9 +3,6 @@
 {%- if page.lang -%}
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
 {%- endif -%}
-
-
-
 <!DOCTYPE html>
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
 {% include open-source-comment.html %}
@@ -14,7 +11,6 @@
 {% else %}
   {% include head.html in-app="true" %}
 {% endif %}
-
 <body>
   <main class="content-center content-center__in_app" id="content">
     <div class="content-block">
