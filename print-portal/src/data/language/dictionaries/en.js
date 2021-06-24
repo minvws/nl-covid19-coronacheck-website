@@ -228,23 +228,23 @@ const en = {
     'pdf': {
         'eu': {},
         'nl': {
-            'instructions': '1. Print this certificate on A4 (black-and-white allowed)\n\n2. Bring a valid proof of identity to the activity you’re visiting \n\n3. Show the QR code (and if needed a ticket) at the entrance.',
+            'instructions': '1. Print this certificate on A4 (black-and-white allowed)\n\n2. Bring a valid proof of identity to the activity you’re visiting \n\n3. Show the certificate and the proof of identity (and if needed a ticket) at the entrance',
             'propertiesLabel': 'Details',
             'title': 'Certificate for the Netherlands',
             'intro': 'Visiting locations or activities within the Netherlands? Then use this certificate.',
-            'qrTitle': 'QR-code Netherlands',
+            'qrTitle': 'Coronavirus pass',
             'userData': {
                 'initials': 'Initials',
                 'dateOfBirth': 'Day of birth',
                 'validFrom': 'Valid from',
                 'validUntil': 'Valid until',
                 'validUntilVaccination': 'This paper certificate is valid until %{date}. After this date, you can make a new coronavirus pass via coronacheck.nl',
-                'privacyNote': 'You don’t need to show this to the scanner'
+                'privacyNote': 'You can keep your details to yourself'
             }
         },
         'instructions': 'Instructions',
         'questions': 'QUESTIONS?',
-        'questionsContent': 'Please find frequently asked questions on www.coronacheck.nl. You can also send an email to <b>helpdesk@coronacheck.nl</b> or reach us (for free) on <b>0800-1421</b>',
+        'questionsContent': 'Please find frequently asked questions on www.coronacheck.nl. You can also send an email to helpdesk@coronacheck.nl or reach us (for free) on 0800-1421',
         'metadata': {
             'title': 'Certificate containing QR-code',
             'author': 'CoronaCheck'
