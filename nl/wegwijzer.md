@@ -8,7 +8,7 @@ redirect_from:
 ---
 ## Reizen
 
-Vanaf 1 juli kun je jouw coronabewijs (Digital Corona Certificaat, DCC) maken om te reizen via CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
+Vanaf 1 juli kun je jouw coronabewijs (Digitaal Corona Certificaat, DCC) maken om te reizen via CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
 Ga je op reis? Check dan eerst <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">www.wijsopreis.nl</a> voor het up-to-date geldende reisadvies per bestemming. Vanaf 1 juli kun je je gratis laten testen wanneer je op reis gaat. <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie" rel="noopener noreferrer" target="_blank">Hiervoor vind je alle informatie op deze website van de Rijksoverheid</a>.
 
