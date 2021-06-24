@@ -8,7 +8,7 @@ import signer from '@/interfaces/signer';
 import { handleRejectionSigner } from '@/tools/error-handler';
 
 export default {
-    name: 'YourTestResults',
+    name: 'NegativeTestOverview',
     components: { Page, PageIntro, NegativeTest, CcButton, CcModestButton },
     data() {
         return {
@@ -104,11 +104,11 @@ export default {
 <template>
     <Page
         @back="goBack"
-        class="YourTestResults">
+        class="NegativeTestOverview">
         <div class="section">
             <PageIntro
-                :head="$t('views.yourTestResults.pageHeader')"
-                :intro="$t('views.yourTestResults.pageIntro')"/>
+                :head="$t('views.NegativeTestOverview.pageHeader')"
+                :intro="$t('views.NegativeTestOverview.pageIntro')"/>
 
             <div class="section-block">
                 <div class="proof-events">
@@ -118,11 +118,11 @@ export default {
                 <div class="section-block__footer">
                     <CcButton
                         @select="gotoPrint()"
-                        :label="$t('views.yourTestResults.createTestProofButton')"/>
+                        :label="$t('views.NegativeTestOverview.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
                             @select="openModalTestResultsSomethingWrong()"
-                            :label="$t('views.yourTestResults.somethingIsWrong')"/>
+                            :label="$t('views.NegativeTestOverview.somethingIsWrong')"/>
                     </div>
                 </div>
             </div>
@@ -133,15 +133,15 @@ export default {
 <style lang="scss">
 @import "@/styles/variables/index";
 
-.YourTestResults {
+.NegativeTestOverview {
 
-    .YourTestResults__header {
+    .NegativeTestOverview__header {
         position: relative;
         margin: $length-l 0 $grid-x2 0;
         font-weight: 700;
     }
 
-    .YourTestResults__footer {
+    .NegativeTestOverview__footer {
         margin-top: 70px;
     }
 }

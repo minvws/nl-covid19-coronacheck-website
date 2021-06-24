@@ -38,11 +38,9 @@ const en = {
         },
         'collectVaccination': {
             'pageHeader': 'Collect vaccination',
-            'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p><p>Questions about vaccinations? Read more on the <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">website of the Dutch Government</a></p>',
-            'loginDigid': 'Log in with DigiD',
-            'dontHaveDigid': 'I don’t have DigiD'
+            'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p><p>Questions about vaccinations? Read more on the <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">website of the Dutch Government</a></p>'
         },
-        'yourVaccinations': {
+        'VaccinationOverview': {
             'pageHeader': 'Your retrieved vaccinations',
             'pageIntro': '<p>You can make a QR code of your vaccination. This will be your certificate.</p>',
             'createTestProofButton': 'Make QR code',
@@ -60,6 +58,10 @@ const en = {
             'pageHeader': 'We can’t make a certificate',
             'pageIntro': '<p>At this moment, we can’t make a certificate. For a Dutch certificate you need to be fully vaccinated. An international certificate can be made from July 1st.</p>'
         },
+        'collectRecovery': {
+            'pageHeader': 'TODO',
+            'pageIntro': 'TODO'
+        },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
             'pageIntro': 'Enter your retrieval code. The test location sent it to you. Or click on the link in the email you\'ll get from the test location.',
@@ -74,7 +76,7 @@ const en = {
             'emptyVerificationCode': 'Verification code not entered',
             'sendCode': 'Send code'
         },
-        'yourTestResults': {
+        'NegativeTestOverview': {
             'pageHeader': 'Check your test result',
             'pageIntro': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.</p>',
             'createTestProofButton': 'Make QR code',
@@ -125,6 +127,10 @@ const en = {
             'vaccination': 'Vaccination',
             'name': 'Name',
             'dateOfBirth': 'Date of birth'
+        },
+        'digid': {
+            'loginDigid': 'Log in with DigiD',
+            'dontHaveDigid': 'I don’t have DigiD'
         }
     },
     'message': {

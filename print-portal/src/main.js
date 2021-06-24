@@ -15,6 +15,8 @@ const getBaseUrl = () => {
 const baseUrl = getBaseUrl();
 const authVaccinations = new AuthService(baseUrl + 'jouw-vaccinaties-redirect');
 const authNegativeTests = new AuthService(baseUrl + 'jouw-testresultaat-redirect');
+// todo update redirect url
+const authRecovery = new AuthService(baseUrl + 'jouw-vaccinaties-redirect');
 
 Vue.prototype.authVaccinations = authVaccinations;
 Vue.prototype.authNegativeTests = authNegativeTests;
@@ -34,5 +36,6 @@ new Vue({
     i18n,
     authVaccinations,
     authNegativeTests,
+    authRecovery,
     render: h => h(App)
 }).$mount('#app')

@@ -2,10 +2,10 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
-import redirectMixin from './redirect-mixin'
+import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
 
 export default {
-    name: 'YourTestResultsRedirect',
+    name: 'NegativeTestRedirect',
     components: { Page, PageIntro, Loading },
     mixins: [redirectMixin],
     data() {
@@ -58,11 +58,11 @@ export default {
 
 <template>
     <Page
-        class="YourTestResultsRedirect"
+        class="NegativeTestRedirect"
         @back="back">
         <div class="section">
             <PageIntro
-                :head="$t('views.yourTestResults.pageHeader')"/>
+                :head="$t('views.NegativeTestOverview.pageHeader')"/>
             <div
                 v-if="isLoading"
                 class="section-block">

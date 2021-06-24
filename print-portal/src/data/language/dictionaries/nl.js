@@ -42,11 +42,9 @@ const nl = {
         },
         'collectVaccination': {
             'pageHeader': 'Vaccinatie ophalen',
-            'pageIntro': '<p>Ben je al gevaccineerd? Log in met DigiD. De gegevens van je vaccinatie worden dan automatisch opgehaald.</p><p>Nog geen prik gehad? Laat je dan eerst vaccineren.</p>',
-            'loginDigid': 'Login met DigiD',
-            'dontHaveDigid': 'Ik heb geen DigiD'
+            'pageIntro': '<p>Ben je al gevaccineerd? Log in met DigiD. De gegevens van je vaccinatie worden dan automatisch opgehaald.</p><p>Nog geen prik gehad? Laat je dan eerst vaccineren.</p>'
         },
-        'yourVaccinations': {
+        'VaccinationOverview': {
             'pageHeader': 'Jouw opgehaalde vaccinaties',
             'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>',
             'createTestProofButton': 'Maak QR-code',
@@ -64,6 +62,10 @@ const nl = {
             'pageHeader': 'We kunnen geen bewijs maken',
             'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Voor een Nederlands bewijs moet je volledig gevaccineerd zijn. Een internationaal bewijs kun je vanaf 1 juli maken.<p></p>'
         },
+        'collectRecovery': {
+            'pageHeader': 'Herstelverklaring maken',
+            'pageIntro': '<p>Met een positieve testuitslag van de GGD kan je een herstelverklaring maken. Ook moet je vrij van klachten zijn.</p><p>Wil je een herstelverklaring maken? Dat kan vanaf 11 dagen na een positieve uitslag (corona).</p>'
+        },
         'provideCode': {
             'pageHeader': 'Testuitslag ophalen',
             'pageIntro': 'Vul jouw ophaalcode in. Deze heb je van de testlocatie gekregen. Of klik op de link in de e-mail die je van je testlocatie krijgt.',
@@ -78,7 +80,7 @@ const nl = {
             'emptyVerificationCode': 'Verificatiecode niet ingevuld',
             'sendCode': 'Stuur code'
         },
-        'yourTestResults': {
+        'NegativeTestOverview': {
             'pageHeader': 'Controleer je testuitslag',
             'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
             'createTestProofButton': 'Maak QR-code',
@@ -129,6 +131,10 @@ const nl = {
             'vaccination': 'Vaccinatie',
             'name': 'Naam',
             'dateOfBirth': 'Geboortedatum'
+        },
+        'digid': {
+            'loginDigid': 'Login met DigiD',
+            'dontHaveDigid': 'Ik heb geen DigiD'
         }
     },
     'message': {

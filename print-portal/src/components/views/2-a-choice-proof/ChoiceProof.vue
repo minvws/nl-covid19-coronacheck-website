@@ -25,7 +25,7 @@ export default {
             }
         },
         gotoCollectRecovery() {
-
+            this.$router.push({ name: 'CollectRecovery' });
         },
         gotoCollectVaccination() {
             this.$router.push({ name: 'CollectVaccination' });

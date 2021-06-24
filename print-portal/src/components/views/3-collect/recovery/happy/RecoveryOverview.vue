@@ -1,7 +1,7 @@
 <script>
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
-import Vaccination from './Vaccination';
+import Recovery from './Recovery';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import signer from '@/interfaces/signer';
@@ -9,10 +9,11 @@ import dateTool from '@/tools/date';
 import { handleRejectionSigner } from '@/tools/error-handler';
 
 export default {
-    name: 'YourVaccinations',
-    components: { Page, PageIntro, Vaccination, CcButton, CcModestButton },
+    name: 'RecoveryOverview',
+    components: { Page, PageIntro, Recovery, CcButton, CcModestButton },
     computed: {
-        vaccinationSignedEvents() {
+        // todo make DRY with vaccination
+        recoverySignedEvents() {
             const vaccinationSignedEvents = this.$store.getters['signedEvents/getProofEvents']('vaccination');
             const filteredForUnique = []
             for (const signedEvent of vaccinationSignedEvents) {
@@ -32,16 +33,17 @@ export default {
                 this.$store.commit('clearAll')
                 this.$router.push({ name: 'ChoiceProof' });
             }
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.areYouSureToCancelVaccination.head'),
-                messageBody: this.$t('message.info.areYouSureToCancelVaccination.body'),
-                confirm: true,
-                confirmAction: callback,
-                confirmYes: this.$t('message.info.areYouSureToCancelVaccination.yes'),
-                confirmNo: this.$t('message.info.areYouSureToCancelVaccination.no'),
-                closeButton: false,
-                confirmAlert: true
-            })
+            // todo
+            // this.$store.commit('modal/set', {
+            //     messageHead: this.$t('message.info.areYouSureToCancelVaccination.head'),
+            //     messageBody: this.$t('message.info.areYouSureToCancelVaccination.body'),
+            //     confirm: true,
+            //     confirmAction: callback,
+            //     confirmYes: this.$t('message.info.areYouSureToCancelVaccination.yes'),
+            //     confirmNo: this.$t('message.info.areYouSureToCancelVaccination.no'),
+            //     closeButton: false,
+            //     confirmAlert: true
+            // })
             this.$store.commit('snackbar/close');
         },
         gotoPrint() {
@@ -52,16 +54,16 @@ export default {
                     if (response.data) {
                         if (response.data.domestic) {
                             this.$store.commit('qrs/add', response.data);
-                            this.$router.push({ name: 'PrintVaccination' });
+                            this.$router.push({ name: 'PrintRecovery' });
                         } else {
-                            this.$router.push({ name: 'VaccinationsIncomplete' });
+                            // todo ?
                         }
                     }
                 }).catch(error => {
                     handleRejectionSigner(error);
                 })
             } else {
-                this.$router.push({ name: 'PrintVaccination' });
+                this.$router.push({ name: 'PrintRecovery' });
             }
             this.$store.commit('snackbar/close');
         },
@@ -78,27 +80,27 @@ export default {
 
 <template>
     <Page
-        class="YourVaccinations"
+        class="VaccinationOverview"
         @back="back">
         <div class="section">
             <PageIntro
-                :head="$t('views.yourVaccinations.pageHeader')"
-                :intro="$t('views.yourVaccinations.pageIntro')"/>
+                :head="$t('views.VaccinationOverview.pageHeader')"
+                :intro="$t('views.VaccinationOverview.pageIntro')"/>
             <div class="section-block">
                 <div class="proof-events">
-                    <Vaccination
-                        v-for="signedEvent of vaccinationSignedEvents"
+                    <Recovery
+                        v-for="signedEvent of recoverySignedEvents"
                         :key="signedEvent.unique"
                         :signed-event="signedEvent"/>
                 </div>
                 <div class="section-block__footer">
                     <CcButton
                         @select="gotoPrint()"
-                        :label="$t('views.yourVaccinations.createTestProofButton')"/>
+                        :label="$t('views.VaccinationOverview.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
                             @select="openModalVaccinationSomethingWrong()"
-                            :label="$t('views.yourVaccinations.somethingIsWrong')"/>
+                            :label="$t('views.VaccinationOverview.somethingIsWrong')"/>
                     </div>
                 </div>
             </div>

@@ -2,16 +2,16 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
-import CcModestButton from '@/components/elements/CcModestButton';
 import { handleRejection } from '@/tools/error-handler';
+import NoDigiD from '@/components/views/3-collect/_shared/NoDigiD';
 
 export default {
     name: 'CollectVaccination',
-    components: { CcModestButton, Page, PageIntro, CcButton },
+    components: { NoDigiD, Page, PageIntro, CcButton },
     computed: {},
     methods: {
         getToken() {
-            this.authVaccinations.startAuthentication().then(() => {
+            this.authRecovery.startAuthentication().then(() => {
                 //
             }).catch(error => {
                 handleRejection(error);
@@ -19,13 +19,6 @@ export default {
         },
         back() {
             this.$router.push({ name: 'ChoiceProof' })
-        },
-        dontHaveDigid() {
-            const urls = {
-                nl: 'https://www.digid.nl/digid-aanvragen-activeren#hoe-vraag-ik-digid-aan',
-                en: 'https://www.digid.nl/en/apply-or-activate-digid'
-            }
-            window.open(urls[this.currentLanguage.locale])
         }
     }
 }
@@ -42,13 +35,8 @@ export default {
                  <div class="section-block__footer">
                      <CcButton
                          @select="getToken()"
-                         :label="$t('views.collectVaccination.loginDigid')"/>
-                     <div>
-                         <CcModestButton
-                             @select="dontHaveDigid"
-                             :label="$t('views.collectVaccination.dontHaveDigid')"
-                             :margin-top="true"/>
-                     </div>
+                         :label="$t('components.digid.loginDigid')"/>
+                     <NoDigiD/>
                 </div>
             </div>
         </div>

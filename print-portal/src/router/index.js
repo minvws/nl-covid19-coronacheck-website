@@ -2,26 +2,30 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/views/1-home/Home.vue'
 import ChoiceProof from '@/components/views/2-a-choice-proof/ChoiceProof'
-// test
+
+// test happy
 import ChoiceTestLocation from '@/components/views/2-b-choice-test-location/ChoiceTestLocation'
-import ProvideCode from '@/components/views/3-a-test/provide-code/ProvideCode'
-import YourTestResults from '@/components/views/3-a-test/your-test-results/YourTestResults';
-import YourTestResultsRedirect from '@/components/views/3-a-test/your-test-results/YourTestResultsRedirect';
+import ProvideCode from '@/components/views/3-collect/test/provide-code/ProvideCode'
+import NegativeTestOverview from '@/components/views/3-collect/test/happy/NegativeTestOverview';
+import NegativeTestRedirect from '@/components/views/3-collect/test/happy/NegativeTestRedirect';
 import PrintTestResult from '@/components/views/4-print/PrintTestResult';
 // test unhappy
-import TestResultPending from '@/components/views/3-a-test/unhappy/TestResultPending';
-import TestResultNotPossible from '@/components/views/3-a-test/unhappy/TestResultNotPossible';
-import TestResultNone from '@/components/views/3-a-test/unhappy/TestResultNone';
+import TestResultPending from '@/components/views/3-collect/test/unhappy/TestResultPending';
+import TestResultNotPossible from '@/components/views/3-collect/test/unhappy/TestResultNotPossible';
+import TestResultNone from '@/components/views/3-collect/test/unhappy/TestResultNone';
+
+// recovery
+import CollectRecovery from '@/components/views/3-collect/recovery/CollectRecovery'
 
 // vaccination
-import CollectVaccination from '@/components/views/3-b-vaccination/collect-vaccination/CollectVaccination'
-import YourVaccinationsRedirect from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinationsRedirect'
-import YourVaccinations from '@/components/views/3-b-vaccination/your-vaccinations/YourVaccinations'
+import CollectVaccination from '@/components/views/3-collect/vaccination/CollectVaccination'
+import VaccinationRedirect from '@/components/views/3-collect/vaccination/happy/VaccinationRedirect'
+import VaccinationOverview from '@/components/views/3-collect/vaccination/happy/VaccinationOverview'
 import PrintVaccination from '@/components/views/4-print/PrintVaccination';
 // vaccination unhappy
-import VaccinationsNone from '@/components/views/3-b-vaccination/unhappy/VaccinationsNone'
-import VaccinationsNotPossible from '@/components/views/3-b-vaccination/unhappy/VaccinationsNotPossible'
-import VaccinationsIncomplete from '@/components/views/3-b-vaccination/unhappy/VaccinationsIncomplete'
+import VaccinationsNone from '@/components/views/3-collect/vaccination/unhappy/VaccinationsNone'
+import VaccinationsNotPossible from '@/components/views/3-collect/vaccination/unhappy/VaccinationsNotPossible'
+import VaccinationsIncomplete from '@/components/views/3-collect/vaccination/unhappy/VaccinationsIncomplete'
 
 import store from '@/store'
 
@@ -47,13 +51,13 @@ const routes = [
     }, {
         path: '/jouw-testresultaat',
         name: 'YourTestResult',
-        component: YourTestResults,
-        // flow set by either YourTestResultsRedirect (3.0) or ProvideCode (2.0)
+        component: NegativeTestOverview,
+        // flow set by either NegativeTestRedirect (3.0) or ProvideCode (2.0)
         props: true
     }, {
         path: '/jouw-testresultaat-redirect',
-        name: 'YourTestResultsRedirect',
-        component: YourTestResultsRedirect
+        name: 'NegativeTestRedirect',
+        component: NegativeTestRedirect
     }, {
         path: '/testresultaat-nog-niet-bekend',
         name: 'TestResultPending',
@@ -85,12 +89,12 @@ const routes = [
         name: 'CollectVaccination'
     }, {
         path: '/jouw-vaccinaties',
-        component: YourVaccinations,
-        name: 'YourVaccinations'
+        component: VaccinationOverview,
+        name: 'VaccinationOverview'
     }, {
         path: '/jouw-vaccinaties-redirect',
-        component: YourVaccinationsRedirect,
-        name: 'YourVaccinationsRedirect'
+        component: VaccinationRedirect,
+        name: 'VaccinationOverviewRedirect'
     }, {
         path: '/geen-vaccinaties-beschikbaar',
         component: VaccinationsNone,
@@ -116,6 +120,10 @@ const routes = [
         path: '/print-vaccinatie',
         name: 'PrintVaccination',
         component: PrintVaccination
+    }, {
+        path: '/recovery-ophalen',
+        name: 'CollectRecovery',
+        component: CollectRecovery
     }
 ];
 
@@ -128,7 +136,7 @@ const router = new VueRouter({
     }
 })
 
-const pagesWithoutConsentNeeded = ['Home', 'YourVaccinationsRedirect', 'YourTestResultsRedirect']
+const pagesWithoutConsentNeeded = ['Home', 'VaccinationOverviewRedirect', 'NegativeTestRedirect']
 
 router.beforeEach((to, from, next) => {
     // check for user consent, otherwise redirect to home (disabled for development)

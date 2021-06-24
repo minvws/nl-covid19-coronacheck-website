@@ -7,7 +7,7 @@ export default {
     components: { Print, PageIntro },
     methods: {
         back() {
-            this.$router.push({ name: 'YourVaccinations' });
+            this.$router.push({ name: 'VaccinationOverview' });
         }
     }
 }

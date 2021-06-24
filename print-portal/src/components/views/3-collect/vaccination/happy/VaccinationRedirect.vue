@@ -2,10 +2,10 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
-import redirectMixin from './../../3-a-test/your-test-results/redirect-mixin'
+import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
 
 export default {
-    name: 'YourVaccinationsRedirect',
+    name: 'VaccinationRedirect',
     components: { Page, PageIntro, Loading },
     mixins: [redirectMixin],
     data() {
@@ -42,7 +42,7 @@ export default {
         checkResult() {
             const vaccinationSignedEvents = this.$store.getters['signedEvents/getProofEvents']('vaccination');
             if (vaccinationSignedEvents.length > 0) {
-                this.$router.push({ name: 'YourVaccinations' });
+                this.$router.push({ name: 'VaccinationOverview' });
             } else {
                 this.$router.push({ name: 'VaccinationsNone' });
             }
@@ -55,11 +55,11 @@ export default {
 
 <template>
     <Page
-        class="YourTestResultsRedirect"
+        class="NegativeTestRedirect"
         @back="back">
         <div class="section">
             <PageIntro
-                :head="$t('views.yourVaccinations.pageHeader')"/>
+                :head="$t('views.VaccinationOverview.pageHeader')"/>
             <div
                 v-if="isLoading"
                 class="section-block">
