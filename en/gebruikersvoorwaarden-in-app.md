@@ -38,7 +38,7 @@ title: CoronaCheck Scanner Terms of Use
 
 ## About the terms of use
 
-In these terms of use you will read how CoronaCheck Scanner works, what you’re able to do with it, and what your rights and responsibilities are. Please read the terms of use carefully before you accept them. By accepting these terms, you declare to VWS that you’ve completely read, understood, and accepted these terms. If you do not agree with these terms, you will not be able to install CoronaCheck scanner.
+In these terms of use you will read how CoronaCheck Scanner works, what you’re able to do with it, and what your rights and responsibilities are. Please read the terms of use carefully before you accept them. By accepting these terms, you declare to VWS that you’ve completely read, understood, and accepted these terms. If you do not agree with these terms, you will not be able to install CoronaCheck Scanner.
 
 ## How does the CoronaCheck Scanner app work?
 
@@ -111,7 +111,7 @@ Do you have a question or complaint about the CoronaCheck Scanner app or do you 
 
 VWS is not liable for any damages suffered through the use of the CoronaCheck Scanner app. VWS does not accept any liability for the consequences of any inaccuracies in the data made available in the app. 
 
-VWS can stop offering the app or change the content at any time (also see [see Termination of the CoronaCheck Scanner app](#termination-of-the-coronacheck-scanner-app)).
+VWS can stop offering the app or change the content at any time (also [see Termination of the CoronaCheck Scanner app](#termination-of-the-coronacheck-scanner-app)).
 
 VWS it not liable for any damage or costs incurred by you or third parties, for whatever reasons, because of the use or inability to use the app.
 
