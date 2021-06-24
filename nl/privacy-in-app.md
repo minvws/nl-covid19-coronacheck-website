@@ -83,7 +83,7 @@ Verwerkers van de minister:
 
 ## 6. Hoelang bewaren we jouw gegevens?
 
-Alleen de gegevens die in de CoronaCheck app zelf staan of in het papieren bewijs, worden bewaard. Voor het papieren bewijs bepaal je uiteraard zelf hoe lang je die gegevens bewaart. Dat is ook zo bij de CoronaCheck app, als je de app verwijdert worden ook de gegevens verwijderd. Anders worden de gegevens bewaard volgens onderstaande termijnen:
+Alleen de gegevens die in de CoronaCheck-app zelf staan of in het papieren bewijs, worden bewaard. Voor het papieren bewijs bepaal je uiteraard zelf hoe lang je die gegevens bewaart. Dat is ook zo bij de CoronaCheck-app, als je de app verwijdert worden ook de gegevens verwijderd. Anders worden de gegevens bewaard volgens onderstaande termijnen:
 
 - Testuitslagen: 96 uur na datum en tijd afname test
 - Vaccinatiegegevens: een jaar na vaccinatiedatum
@@ -111,13 +111,13 @@ Daarnaast is een route ontwikkeld via een hulpverlenersportaal. Je kunt dan cont
 
 Je hebt een aantal rechten om controle te houden op je persoonsgegevens. Deze kun je vinden op de [website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/rechten-van-betrokkenen).
 
-Zoals eerder aangegeven laten zowel de CoronaCheck app als de website zien welke gegevens worden opgehaald om je bewijs aan te maken zodat je die kunt bekijken. In de app kun je ook altijd terughalen welke gegevens in de QR-code staan. Als je gegevens onjuist zijn, kun je contact opnemen met je hulpverlener die je heeft getest of gevaccineerd. Verwijderen van je gegevens kun je zelf, de gegevens worden alleen bewaard in je app, dus als je die verwijdert, worden ook je gegevens verwijderd. Voor het papieren bewijs dat je hebt geprint geldt dat je zelf kunt bepalen of je die wilt vernietigen. Binnen de website Coronacheck.nl worden na het aanmaken van je bewijs geen gegevens opgeslagen dus die kunnen niet worden verwijderd. 
+Zoals eerder aangegeven laten zowel de CoronaCheck-app als de website zien welke gegevens worden opgehaald om je bewijs aan te maken zodat je die kunt bekijken. In de app kun je ook altijd terughalen welke gegevens in de QR-code staan. Als je gegevens onjuist zijn, kun je contact opnemen met je hulpverlener die je heeft getest of gevaccineerd. Verwijderen van je gegevens kun je zelf, de gegevens worden alleen bewaard in je app, dus als je die verwijdert, worden ook je gegevens verwijderd. Voor het papieren bewijs dat je hebt geprint geldt dat je zelf kunt bepalen of je die wilt vernietigen. Binnen de website Coronacheck.nl worden na het aanmaken van je bewijs geen gegevens opgeslagen dus die kunnen niet worden verwijderd. 
 
 De mogelijkheid om een beroep te doen op een van je privacy rechten ten aanzien van de inzet van CoronaCheck en Coronacheck.nl blijft van kracht. Een dergelijk verzoek kun je indienen via  [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
 
 ## 10. Klachten over het gebruik van uw gegevens melden?
 
-Voor vragen of klachten over het gebruik van de CoronaCheck app, coronacheck.nl of de CoronaCheck Scanner App kun je terecht bij de helpdesk:  [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
+Voor vragen of klachten over het gebruik van de CoronaCheck-app, coronacheck.nl of de CoronaCheck Scanner App kun je terecht bij de helpdesk:  [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
 
 Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie van Volksgezondheid, Welzijn en Sport vind je op de [website van het ministerie](https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/privacy).
 

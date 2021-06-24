@@ -76,7 +76,7 @@ The Minister’s processors:
 
 ## 6. How long do we store your information?
 
-Only data saved in the CoronaCheck app itself or printed on the paper certificate will be kept. Of course, for the paper certificate you decide how long to keep the data. This is also the case with the CoronaCheck app: if you delete the app that data will also be deleted. Otherwise, the data will be stored according to the following time periods:
+Only data saved in the CoronaCheck-app itself or printed on the paper certificate will be kept. Of course, for the paper certificate you decide how long to keep the data. This is also the case with the CoronaCheck-app: if you delete the app that data will also be deleted. Otherwise, the data will be stored according to the following time periods:
 
 - Test results: 96 hours after date and time of test administration
 - Vaccination data: one year after vaccination date
@@ -104,13 +104,13 @@ In addition, a route has been developed via a care provider portal. You can then
 
 You have several rights to control your personal information. You can find these on <a href="https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/rechten-van-betrokkenen" hreflang="nl" target="_blank" rel="noopener noreferrer">the website of the Dutch Data Protection Authority (Dutch)</a>.
 
-As indicated earlier, both the CoronaCheck app and the website show which data is collected to create your certificate so that you can view it. In the app you can always find which data is contained in the QR code. If your details are incorrect, you can contact the healthcare provider who tested or vaccinated you. You can delete your data yourself, the data is only stored in your app, so if you delete it, your data will be deleted as well. You can decide for yourself whether you want to destroy the paper proof that you have printed. Within the Coronacheck.nl website no data is stored to create your certificate and thus cannot be deleted.
+As indicated earlier, both the CoronaCheck-app and the website show which data is collected to create your certificate so that you can view it. In the app you can always find which data is contained in the QR code. If your details are incorrect, you can contact the healthcare provider who tested or vaccinated you. You can delete your data yourself, the data is only stored in your app, so if you delete it, your data will be deleted as well. You can decide for yourself whether you want to destroy the paper proof that you have printed. Within the Coronacheck.nl website no data is stored to create your certificate and thus cannot be deleted.
 
 The option to invoke one of your privacy rights regarding the use of CoronaCheck and Coronacheck.nl remains in effect. You can submit such a request via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 ## 10. Report complains about the use of your data?
 
-For questions or complaints about the use of the CoronaCheck app, coronacheck.nl or the CoronaCheck scanner app, please contact the helpdesk: [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
+For questions or complaints about the use of the CoronaCheck-app, coronacheck.nl or the CoronaCheck scanner app, please contact the helpdesk: [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
 
 Contact details of the Data Protection Officer of the Ministry of Health, Welfare and Sport can be found on the [Ministry's website](https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/privacy).
 
