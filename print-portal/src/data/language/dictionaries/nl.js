@@ -58,6 +58,10 @@ const nl = {
             'pageHeader': 'We kunnen geen bewijs maken',
             'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken van jouw vaccinatie. Dit kan verschillende oorzaken hebben. <a href="https://coronacheck.nl/wegwijzer" target="_blank">Lees hier meer</a>.</p>'
         },
+        'vaccinationsIncomplete': {
+            'pageHeader': 'We kunnen geen bewijs maken',
+            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Voor een Nederlands bewijs moet je volledig gevaccineerd zijn. Een internationaal bewijs kun je vanaf 1 juli maken.<p></p>'
+        },
         'provideCode': {
             'pageHeader': 'Testuitslag ophalen',
             'pageIntro': 'Vul jouw ophaalcode in. Deze heb je van de testlocatie gekregen. Of klik op de link in de e-mail die je van je testlocatie krijgt.',

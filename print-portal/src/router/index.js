@@ -21,6 +21,7 @@ import PrintVaccination from '@/components/views/4-print/PrintVaccination';
 // vaccination unhappy
 import VaccinationsNone from '@/components/views/3-b-vaccination/unhappy/VaccinationsNone'
 import VaccinationsNotPossible from '@/components/views/3-b-vaccination/unhappy/VaccinationsNotPossible'
+import VaccinationsIncomplete from '@/components/views/3-b-vaccination/unhappy/VaccinationsIncomplete'
 
 import store from '@/store'
 
@@ -101,6 +102,13 @@ const routes = [
         path: '/we-kunnen-geen-bewijs-maken',
         component: VaccinationsNotPossible,
         name: 'VaccinationsNotPossible',
+        meta: {
+            pageHeader: 'error'
+        }
+    }, {
+        path: '/niet-volledig-gevaccineerd',
+        component: VaccinationsIncomplete,
+        name: 'VaccinationsIncomplete',
         meta: {
             pageHeader: 'error'
         }

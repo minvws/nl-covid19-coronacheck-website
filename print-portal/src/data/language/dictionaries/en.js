@@ -51,8 +51,12 @@ const en = {
             'pageIntro': '<p>Details about your vaccination are not available.</p><p>Have you been vaccinated recently? It might take a little while before your details are available.</p><p>Your general practitioner might not be affiliated with the GGD. For more information, please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">CoronaCheck.nl/en/guidepost</a>.</p>'
         },
         'notPossibleVaccinations': {
-            'pageHeader': 'We kunnen geen bewijs maken',
+            'pageHeader': 'We can’t make a certificate',
             'pageIntro': '<p>At the moment, we cannot provide proof of your vaccination. This can have different causes. For more information, please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">CoronaCheck.nl/en/guidepost</a>.</p>'
+        },
+        'vaccinationsIncomplete': {
+            'pageHeader': 'We can’t make a certificate',
+            'pageIntro': '<p>At this moment, we can’t make a certificate. For a Dutch certificate you need to be fully vaccinated. An international certificate can be made from July 1st.</p>'
         },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
