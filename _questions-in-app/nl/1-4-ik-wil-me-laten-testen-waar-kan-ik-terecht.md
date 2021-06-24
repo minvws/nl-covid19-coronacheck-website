@@ -10,9 +10,9 @@ Voor toegang tot sommige locaties of activiteiten moet je eerst een coronatest d
 ## Geen klachten?
 Laat je testen via een testlocatie die bij Testen voor Toegang is aangesloten.
 
-<a href="https://www.testenvoortoegang.nl" class="btn btn--cta">Maak afspraak<span class="screen-reader-text"> via Testen voor Toegang</span></a>
+<a href="https://www.testenvoortoegang.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Maak afspraak<span class="screen-reader-text"> via Testen voor Toegang</span></a>
 
-**Let op:** Wil je je laten testen om op reis te gaan? Dit kan niet via Testen voor Toegang. [Lees  meer over testen voor op reis gaan op de pagina van de Rijksoverheid.](https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie/reizen-buitenland/gratis-coronatest-voor-reizigers-in-juli-en-augustus-2021). 
+**Let op:** Wil je je laten testen om op reis te gaan? Dit kan niet via Testen voor Toegang. <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie/reizen-buitenland/gratis-coronatest-voor-reizigers-in-juli-en-augustus-2021" rel="noopener noreferrer" target="_blank">Lees  meer over testen voor op reis gaan op de pagina van de Rijksoverheid</a>.
 
 ## Bij klachten
 Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, benauwdheid, verhoging of koorts. Laat je testen bij de GGD. 
