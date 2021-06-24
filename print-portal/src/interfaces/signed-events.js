@@ -94,10 +94,11 @@ const unomi = async (eventProvider, tokenSet, filter) => {
 }
 
 const getEvent = async (eventProvider, tokenSet, filter) => {
+    console.log(tokenSet);
     return new Promise((resolve, reject) => {
         const url = eventProvider.event_url;
         const headers = {
-            'Authorization': `Bearer ${tokenSet.unomi}`,
+            'Authorization': `Bearer ${tokenSet.event}`,
             'Content-Type': 'application/json',
             'CoronaCheck-Protocol-Version': '3.0'
         };
