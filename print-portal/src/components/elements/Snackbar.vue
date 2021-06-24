@@ -18,7 +18,6 @@ export default {
     mounted() {
         window.addEventListener('keydown', e => {
             if (e.key === 'Escape') {
-                // console.log('close');
                 this.close();
             }
         });
