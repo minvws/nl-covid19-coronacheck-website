@@ -224,8 +224,8 @@ const nl = {
                 'body': 'Controleer je verbinding en probeer het opnieuw.'
             },
             'signerFailed': {
-                'head': '',
-                'body': 'Op dit moment kunnen we geen bewijs maken (code: xx)'
+                'head': 'Sorry er gaat iets mis',
+                'body': 'Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (print sign error) door'
             }
         }
     },
@@ -244,7 +244,7 @@ const nl = {
             'qrTitle': 'QR-code internationaal'
         },
         'nl': {
-            'instructions': '1. Print dit coronabewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat je coronabewijs (en eventueel ook je toegangskaartje) zien bij de ingang',
+            'instructions': '1. Print dit coronabewijs op A4 (mag in zwart-wit)\n\n2. Neem een geldig identiteitsbewijs mee naar de activiteit\n\n3. Laat je coronabewijs en je identiteitsbewijs (en eventueel ook je toegangskaartje) zien bij de ingang',
             'propertiesLabel': 'Gegevens',
             'title': 'Bewijs voor in Nederland',
             'intro': 'Bezoek je locaties of activiteiten binnen Nederland? Gebruik dan dit coronabewijs.',
@@ -254,7 +254,8 @@ const nl = {
                 'dateOfBirth': 'Geboortedag',
                 'validFrom': 'Geldig vanaf',
                 'validUntil': 'Geldig tot',
-                'privacyNote': 'Bovenstaande gegevens hoef je niet te laten zien aan de scanner.'
+                'validUntilVaccination': 'Dit papieren bewijs is geldig tot %{date} Daarna kan je een nieuw Coronatoegangsbewijs maken op coronacheck.nl',
+                'privacyNote': 'Bovenstaande gegevens hoef je niet te laten zien bij de ingang.'
             }
         },
         'instructions': 'Instructies',

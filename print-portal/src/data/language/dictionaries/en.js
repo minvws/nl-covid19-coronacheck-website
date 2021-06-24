@@ -220,8 +220,8 @@ const en = {
                 'body': 'Check your connection and try again.'
             },
             'signerFailed': {
-                'head': '',
-                'body': 'At this moment, we can’t make a certificate (code: xx)'
+                'head': 'Sorry, something went wrong',
+                'body': '<p>Contact our helpdesk and give them error code (print sign error) or try again later.</p>'
             }
         }
     },
@@ -238,6 +238,7 @@ const en = {
                 'dateOfBirth': 'Day of birth',
                 'validFrom': 'Valid from',
                 'validUntil': 'Valid until',
+                'validUntilVaccination': 'This paper certificate is valid until %{date}. After this date, you can make a new coronavirus pass via coronacheck.nl',
                 'privacyNote': 'You don’t need to show this to the scanner'
             }
         },

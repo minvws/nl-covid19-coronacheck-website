@@ -118,7 +118,11 @@ const getUserDetails = (qr, territory, type) => {
         string += i18n.t('pdf.nl.userData.initials') + ': ' + qr.initials + '\n';
         string += i18n.t('pdf.nl.userData.dateOfBirth') + ': ' + qr.birthDateStringShort + '\n';
         string += i18n.t('pdf.nl.userData.validFrom') + ': ' + qr.validFrom + '\n';
-        string += i18n.t('pdf.nl.userData.validUntil') + ': ' + qr.validUntil + '\n\n';
+        if (type === 'vaccination') {
+            string += '\n' + i18n.t('pdf.nl.userData.validUntilVaccination', { date: qr.validUntil }) + '\n\n';
+        } else if (type === 'negativeTest') {
+            string += i18n.t('pdf.nl.userData.validUntil') + ': ' + qr.validUntil + '\n\n';
+        }
         string += i18n.t('pdf.nl.userData.privacyNote');
         return string;
     } else {
