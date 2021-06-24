@@ -144,6 +144,4 @@ Wanneer een deel van deze voorwaarden onwettig, ongeldig of niet-afdwingbaar zij
 
 Indien u een vraag of klacht over CoronaCheck Scanner heeft, kijk dan voor meer informatie op [de website van CoronaCheck](https://coronacheck.nl/nl).  
 
-Versie 1.2.
-
 Laatste update: 23 Juni 2021. 
