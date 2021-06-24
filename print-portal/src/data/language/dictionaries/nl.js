@@ -279,7 +279,7 @@ const nl = {
     'of': 'van',
     'skiplink': 'Ga direct naar inhoud',
     'unknown': 'Onbekend',
-    'tooBusy': 'Het is erg druk op dit moment en daarom kunt u momenteel niet inloggen. Wil je het op een later moment nog eens proberen?'
+    'tooBusy': 'Het is erg druk op dit moment. Daardoor kun je niet inloggen. Wil je het op een later moment nog eens proberen?'
 }
 
 export default nl;
