@@ -5,9 +5,10 @@ Posting announcements
 
 In case there is an update or problem with the software that quickly needs to be publicised, open the markdown file `_announcements/announcement.md` and edit this file. Comments in the frontmatter explain what (meta) information and settings need to be set:
 
-- the published state (`true` or `false`),
-- the language of the announcement,
-- and the title.
+- the `published` state (`true` or `false`),
+- the language of the announcement (`lang`),
+- the `title`,
+- and the `style` (blue background: `info`, light red background `error`)
 
 The content of the file is written in markdown. Unfortunately, to open links in a new browser window by default, you do have to use an HTML anchor link. 
 
