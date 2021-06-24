@@ -262,7 +262,8 @@ const en = {
     'next': 'Next',
     'of': 'of',
     'skiplink': 'Skip to content',
-    'unknown': 'Unknown'
+    'unknown': 'Unknown',
+    'tooBusy': 'It\'s very busy right now, and therefore you cannot log in at the moment. Could you please try again later?'
 }
 
 export default en;

@@ -9,6 +9,11 @@ import { handleRejection } from '@/tools/error-handler';
 export default {
     name: 'ChoiceTestLocation',
     components: { Page, PageIntro, PageChoice, PreferMobile, CcModestButton },
+    data() {
+        return {
+            tooBusy: true
+        }
+    },
     computed: {},
     methods: {
         back() {
@@ -46,7 +51,11 @@ export default {
                     <PageChoice
                         @select="loginWithDigid"
                         :header="$t('views.choiceTestLocation.choiceGGDHead')"
-                        :body="$t('views.choiceTestLocation.choiceGGDBody')"/>
+                        :body="$t('views.choiceTestLocation.choiceGGDBody')"
+                        :inactive="tooBusy"/>
+                    <div class="too-busy-message" v-if="tooBusy">
+                        {{$t('tooBusy')}}
+                    </div>
                     <PageChoice
                         @select="gotoRetrieveTest"
                         :header="$t('views.choiceTestLocation.choiceOtherLocation')"
