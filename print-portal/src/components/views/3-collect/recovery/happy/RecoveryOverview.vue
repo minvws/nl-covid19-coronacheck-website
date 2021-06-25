@@ -14,9 +14,9 @@ export default {
     computed: {
         // todo make DRY with vaccination
         recoverySignedEvents() {
-            const vaccinationSignedEvents = this.$store.getters['signedEvents/getProofEvents']('vaccination');
+            const signedEvents = this.$store.getters['signedEvents/getProofEvents']('recovery');
             const filteredForUnique = []
-            for (const signedEvent of vaccinationSignedEvents) {
+            for (const signedEvent of signedEvents) {
                 const existingKeys = filteredForUnique.map(s => s.event.unique);
                 if (existingKeys.indexOf(signedEvent.event.unique) === -1) {
                     filteredForUnique.push(signedEvent)
@@ -29,10 +29,10 @@ export default {
     },
     methods: {
         back() {
-            const callback = () => {
-                this.$store.commit('clearAll')
-                this.$router.push({ name: 'ChoiceProof' });
-            }
+            // const callback = () => {
+            //     this.$store.commit('clearAll')
+            //     this.$router.push({ name: 'ChoiceProof' });
+            // }
             // todo
             // this.$store.commit('modal/set', {
             //     messageHead: this.$t('message.info.areYouSureToCancelVaccination.head'),

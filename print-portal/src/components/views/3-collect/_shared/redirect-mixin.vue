@@ -7,6 +7,40 @@ import { handleRejection } from '@/tools/error-handler';
 export default {
     name: 'redirect-mixin',
     methods: {
+        back() {
+            const callback = () => {
+                if (this.isLoading) {
+                    // todo cancel all processes
+                }
+                this.$store.commit('clearAll')
+                this.$store.commit('signedEvents/clear')
+                this.$router.push({ name: this.pages.cancel });
+            }
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.areYouSureToCancel.head'),
+                messageBody: this.$t('message.info.areYouSureToCancel.body', { type: this.type }),
+                confirm: true,
+                confirmAction: callback,
+                confirmYes: this.$t('message.info.areYouSureToCancel.yes'),
+                confirmNo: this.$t('message.info.areYouSureToCancel.no'),
+                closeButton: false
+            })
+        },
+        gotoPreviousPage() {
+            this.$store.commit('snackbar/close');
+            this.$router.push({ name: this.pages.previous });
+        },
+        checkResult() {
+            const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.type);
+            if (signedEvents.length > 0) {
+                this.$router.push({ name: this.pages.overview });
+            } else {
+                this.$router.push({ name: this.pages.noResult });
+            }
+            // todo
+            // pending
+            // not possible?
+        },
         completeAuthentication() {
             this.isLoading = true;
             const confirmAction = () => {

@@ -11,7 +11,7 @@ export default {
     computed: {},
     methods: {
         getToken() {
-            this.authRecovery.startAuthentication().then(() => {
+            this.authVaccinations.startAuthentication().then(() => {
                 //
             }).catch(error => {
                 handleRejection(error);

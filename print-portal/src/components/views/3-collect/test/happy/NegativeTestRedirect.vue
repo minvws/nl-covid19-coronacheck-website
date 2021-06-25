@@ -11,46 +11,13 @@ export default {
     data() {
         return {
             isLoading: false,
-            type: 'negativetest'
-        }
-    },
-    computed: {},
-    methods: {
-        back() {
-            const callback = () => {
-                // todo cancel all processes
-                this.$store.commit('signedEvents/clear');
-                this.$router.push({ name: 'ChoiceProof' });
+            type: 'negativetest',
+            pages: {
+                cancel: 'ChoiceProof',
+                previous: 'ChoiceTestLocation',
+                overview: 'NegativeTestOverview',
+                noResult: 'TestResultNone'
             }
-            if (this.isLoading) {
-                this.$store.commit('modal/set', {
-                    messageHead: 'Cancel',
-                    messageBody: 'weet je het zeker?',
-                    confirm: true,
-                    confirmAction: callback,
-                    confirmYes: this.$t('yes'),
-                    confirmNo: this.$t('no'),
-                    closeButton: false
-                })
-            } else {
-                this.$store.commit('signedEvents/clear');
-                this.$router.push({ name: 'ChoiceProof' });
-            }
-        },
-        gotoPreviousPage() {
-            this.$store.commit('snackbar/close');
-            this.$router.push({ name: 'ChoiceTestLocation' });
-        },
-        checkResult() {
-            const negativeTestSignedEvents = this.$store.getters['signedEvents/getProofEvents']('negativetest');
-            if (negativeTestSignedEvents.length > 0) {
-                this.$router.push({ name: 'YourTestResult', params: { flow: '3.0' } });
-            } else {
-                this.$router.push({ name: 'TestResultNone' });
-            }
-            // todo
-            // this.$router.push({ name: 'TestResultPending' });
-            // this.$router.push({ name: 'TestResultNotPossible' });
         }
     }
 }

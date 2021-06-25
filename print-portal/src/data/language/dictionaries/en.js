@@ -160,15 +160,9 @@ const en = {
                 'head': 'I haven’t been tested yet',
                 'body': '<p>You must get tested before you make a QR code. You can only turn a negative test result into a QR code.</p><p>A test certificate is valid until 40 hours after the moment you’ve been tested. So schedule your test on time. And make sure your QR code is scanned at the entrance within 40 hours.</p><p><a href="https://coronacheck.nl/en/testafspraak-in-app" class="btn" target="_blank">Make an appointment\n</a></p>'
             },
-            'areYouSureToCancelVaccination': {
+            'areYouSureToCancel': {
                 'head': 'Are you sure you want to stop?',
-                'body': 'Then you need to log in again later using DigiD to retrieve your vaccination.',
-                'yes': 'Yes, stop',
-                'no': 'No, continue'
-            },
-            'areYouSureToCancelNegativeTest': {
-                'head': 'Are you sure you want to stop?',
-                'body': 'You must use your code to get your test result again later.',
+                'body': 'Then you need to log in again later using DigiD to retrieve your %{type}.',
                 'yes': 'Yes, stop',
                 'no': 'No, continue'
             },

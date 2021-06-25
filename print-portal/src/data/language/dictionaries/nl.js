@@ -164,15 +164,9 @@ const nl = {
                 'head': 'Ik ben nog niet getest',
                 'body': '<p>Je moet je eerst laten testen voordat je een QR-code kan maken. Als uit de test blijkt dat je geen corona hebt kan je jouw QR-code maken.</p><p>Een testbewijs is geldig tot 40 uur na het moment van testen. Plan je test dus op tijd. En zorg dat jouw QR-code binnen 40 uur gescand is bij de ingang.</p><p><a href="https://coronacheck.nl/nl/testafspraak-in-app" class="btn" target="_blank">Maak een afspraak</a></p>'
             },
-            'areYouSureToCancelVaccination': {
+            'areYouSureToCancel': {
                 'head': 'Weet je zeker dat je wilt stoppen?',
-                'body': 'Je moet dan later opnieuw met DigiD inloggen om je vaccinatie op te halen.',
-                'yes': 'Ja, stop',
-                'no': 'Nee, ga door'
-            },
-            'areYouSureToCancelNegativeTest': {
-                'head': 'Weet je zeker dat je wilt stoppen?',
-                'body': 'Je kan later opnieuw een QR-code maken',
+                'body': 'Je moet dan later opnieuw met DigiD inloggen om je %{type} op te halen.',
                 'yes': 'Ja, stop',
                 'no': 'Nee, ga door'
             },
