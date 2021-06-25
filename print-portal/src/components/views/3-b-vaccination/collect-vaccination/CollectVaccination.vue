@@ -11,7 +11,7 @@ export default {
     components: { TooBusyButton, CcModestButton, Page, PageIntro, CcButton },
     data() {
         return {
-            tooBusy: true
+            tooBusy: window.config.tooBusy
         }
     },
     computed: {},

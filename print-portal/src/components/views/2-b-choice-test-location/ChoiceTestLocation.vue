@@ -11,7 +11,7 @@ export default {
     components: { Page, PageIntro, PageChoice, PreferMobile, CcModestButton },
     data() {
         return {
-            tooBusy: true
+            tooBusy: window.config.tooBusy
         }
     },
     computed: {},
