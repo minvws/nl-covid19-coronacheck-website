@@ -12,8 +12,7 @@ export default {
     components: { Page, PageIntro, NegativeTest, CcButton, CcModestButton },
     data() {
         return {
-            isLoading: true,
-            accessToken: ''
+            type: 'negativetest'
         }
     },
     computed: {

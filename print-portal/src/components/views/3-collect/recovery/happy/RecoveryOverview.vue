@@ -5,26 +5,16 @@ import Recovery from './Recovery';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import signer from '@/interfaces/signer';
-import dateTool from '@/tools/date';
+import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import { handleRejectionSigner } from '@/tools/error-handler';
 
 export default {
     name: 'RecoveryOverview',
     components: { Page, PageIntro, Recovery, CcButton, CcModestButton },
-    computed: {
-        // todo make DRY with vaccination
-        recoverySignedEvents() {
-            const signedEvents = this.$store.getters['signedEvents/getProofEvents']('recovery');
-            const filteredForUnique = []
-            for (const signedEvent of signedEvents) {
-                const existingKeys = filteredForUnique.map(s => s.event.unique);
-                if (existingKeys.indexOf(signedEvent.event.unique) === -1) {
-                    filteredForUnique.push(signedEvent)
-                }
-            }
-            return filteredForUnique.sort((a, b) => {
-                return dateTool.getTime(a.event.vaccination.date) - dateTool.getTime(b.event.vaccination.date);
-            })
+    mixins: [overviewMixin],
+    data() {
+        return {
+            type: 'recovery'
         }
     },
     methods: {
@@ -89,9 +79,8 @@ export default {
             <div class="section-block">
                 <div class="proof-events">
                     <Recovery
-                        v-for="signedEvent of recoverySignedEvents"
-                        :key="signedEvent.unique"
-                        :signed-event="signedEvent"/>
+                        :key="latestSignedEvent.unique"
+                        :signed-event="latestSignedEvent"/>
                 </div>
                 <div class="section-block__footer">
                     <CcButton

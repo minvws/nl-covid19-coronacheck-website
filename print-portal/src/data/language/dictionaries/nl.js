@@ -113,13 +113,6 @@ const nl = {
             'changeLanguage': 'Wissel van taal',
             'currentLanguage': 'Huidige taal'
         },
-        'NegativeTest': {
-            'resultNegative': 'Negatieve testuitslag',
-            'dateOfTest': 'Testdatum',
-            'yourCredentials': 'Jouw gegevens',
-            'name': 'Naam',
-            'dateOfBirth': 'Geboortedatum'
-        },
         'faq': {
             'viewFaq': 'Bekijk de meestgestelde vragen'
         },
@@ -127,9 +120,22 @@ const nl = {
             'header': 'Liever je bewijs op je mobiel?',
             'intro': 'Download dan de app. Ook van een bewijs in de app kun je een print maken.'
         },
+        'NegativeTest': {
+            'resultNegative': 'Negatieve testuitslag',
+            'yourCredentials': 'Jouw gegevens',
+            'name': 'Naam'
+        },
         'vaccination': {
             'vaccination': 'Vaccinatie',
             'name': 'Naam',
+            'dateOfBirth': 'Geboortedatum'
+        },
+        'recovery': {
+            'title': 'Jouw positieve testuitslag'
+        },
+        'proofEvent': {
+            'name': 'Naam',
+            'dateOfTest': 'Testdatum',
             'dateOfBirth': 'Geboortedatum'
         },
         'digid': {

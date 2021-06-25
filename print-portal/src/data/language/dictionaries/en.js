@@ -109,19 +109,16 @@ const en = {
             'changeLanguage': 'Change language',
             'currentLanguage': 'Current language'
         },
-        'NegativeTest': {
-            'resultNegative': 'Negative test result',
-            'dateOfTest': 'Test date',
-            'yourCredentials': 'Identification details',
-            'name': 'Name',
-            'dateOfBirth': 'Date of birth'
-        },
         'faq': {
             'viewFaq': 'View frequently asked questions'
         },
         'preferMobile': {
             'header': 'Prefer having your certificate on mobile?',
             'intro': 'Then download the app. You can also make a print of the certificate in the app.'
+        },
+        'NegativeTest': {
+            'resultNegative': 'Negative test result',
+            'yourCredentials': 'Identification details'
         },
         'vaccination': {
             'vaccination': 'Vaccination',

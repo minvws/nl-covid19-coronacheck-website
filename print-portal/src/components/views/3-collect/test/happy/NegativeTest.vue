@@ -1,10 +1,11 @@
 <script>
-import dateTool from '@/tools/date';
 import SignedEvent from '@/classes/events/SignedEvent';
+import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 
 export default {
     name: 'NegativeTest',
     components: {},
+    mixins: [proofEventMixin],
     props: {
         signedEvent: {
             type: SignedEvent,
@@ -12,19 +13,13 @@ export default {
         }
     },
     computed: {
-        negativeTest() {
+        proofEvent() {
             return this.signedEvent.event.negativetest;
-        },
-        dateOfTest() {
-            return dateTool.dateTimeToString(this.negativeTest.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
-        },
-        holder() {
-            return this.signedEvent.holder;
         }
     },
     methods: {
-        openModalTestResultsAbout() {
-            if (this.negativeTest.protocolVersion === '2.0') {
+        openInfo() {
+            if (this.proofEvent.protocolVersion === '2.0') {
                 let testLocation;
                 if (this.$store.state.testCode) {
                     const testProviderIdentifier = this.$store.state.testCode.split('-')[0]
@@ -35,7 +30,7 @@ export default {
                 } else {
                     testLocation = ''
                 }
-                const testType = this.$store.getters.getNlTestType(this.negativeTest.testType)
+                const testType = this.$store.getters.getNlTestType(this.proofEvent.testType)
                 const dataForV2 = {
                     discreteInfoString: this.holder.discreteInfoString,
                     testType: testType ? testType.name : this.$t('unknown'),
@@ -49,18 +44,18 @@ export default {
                     closeButton: true
                 })
             } else {
-                const testType = this.$store.getters.getEuTestType(this.negativeTest.type);
-                const manufacturer = this.$store.getters.getTestManufacturer(this.negativeTest.manufacturer);
+                const testType = this.$store.getters.getEuTestType(this.proofEvent.type);
+                const manufacturer = this.$store.getters.getTestManufacturer(this.proofEvent.manufacturer);
                 const dataForV3 = {
                     name: this.holder.fullName,
                     birthDateString: this.holder.birthDateString,
                     testType: (testType ? testType.name : this.$t('unknown')),
-                    testName: (this.negativeTest.name.length ? this.negativeTest.name : this.$t('unknown')),
-                    testLocation: this.negativeTest.facility,
+                    testName: (this.proofEvent.name.length ? this.proofEvent.name : this.$t('unknown')),
+                    testLocation: this.proofEvent.facility,
                     sampleDate: this.dateOfTest,
                     manufacturer: manufacturer ? manufacturer.name : this.$t('unknown'),
                     identificationCode: this.signedEvent.event.unique,
-                    country: this.negativeTest.country
+                    country: this.proofEvent.country
                 }
                 this.$store.commit('modal/set', {
                     messageHead: this.$t('message.info.testResultAbout.head'),
@@ -79,31 +74,31 @@ export default {
             {{$t('components.NegativeTest.resultNegative')}}
         </div>
         <div
-            v-if="negativeTest.protocolVersion === '2.0'"
+            v-if="proofEvent.protocolVersion === '2.0'"
             class="proof-event__wrapper">
             <div class="proof-event__line">
-                {{$t('components.NegativeTest.dateOfTest')}}: {{dateOfTest}}
+                {{$t('components.proofEvent.dateOfTest')}}: {{dateOfTest}}
             </div>
             <div class="proof-event__line">
                 {{$t('components.NegativeTest.yourCredentials')}}: {{holder.discreteInfoString}}
             </div>
         </div>
         <div
-            v-if="negativeTest.protocolVersion === '3.0'"
+            v-if="proofEvent.protocolVersion === '3.0'"
             class="proof-event__wrapper">
             <div class="proof-event__line">
-                {{$t('components.NegativeTest.dateOfTest')}}: {{dateOfTest}}
+                {{$t('components.proofEvent.dateOfTest')}}: {{dateOfTest}}
             </div>
             <div class="proof-event__line">
-                {{$t('components.NegativeTest.name')}}: {{holder.fullName}}
+                {{$t('components.proofEvent.name')}}: {{holder.fullName}}
             </div>
             <div class="proof-event__line">
-                {{$t('components.NegativeTest.dateOfBirth')}}: {{holder.birthDateString}}
+                {{$t('components.proofEvent.dateOfBirth')}}: {{holder.birthDateString}}
             </div>
         </div>
 
         <button
-            @click="openModalTestResultsAbout()"
+            @click="openInfo()"
             type="button"
             class="info-button">
             <img src="assets/img/icons/info.svg" alt=""/>

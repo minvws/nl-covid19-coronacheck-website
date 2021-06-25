@@ -1,10 +1,12 @@
 <script>
 import dateTool from '@/tools/date';
 import SignedEvent from '@/classes/events/SignedEvent';
+import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 
 export default {
     name: 'Vaccination',
     components: {},
+    mixins: [proofEventMixin],
     props: {
         signedEvent: {
             type: SignedEvent,
@@ -14,9 +16,6 @@ export default {
     computed: {
         vaccination() {
             return this.signedEvent.event.vaccination;
-        },
-        holder() {
-            return this.signedEvent.holder;
         },
         monthName() {
             return dateTool.dateToString(this.vaccination.date, 'MMMM');
@@ -44,7 +43,7 @@ export default {
         }
     },
     methods: {
-        openModalVaccinationAbout() {
+        openInfo() {
             let dosesString;
             const vaccineType = this.$store.getters.getVaccineType(this.vaccination.type);
             const manufacturer = this.$store.getters.getVaccineManufacturer(this.vaccination.manufacturer);
@@ -91,7 +90,7 @@ export default {
         </div>
 
         <button
-            @click="openModalVaccinationAbout()"
+            @click="openInfo()"
             type="button"
             class="info-button">
             <img src="assets/img/icons/info.svg" alt=""/>

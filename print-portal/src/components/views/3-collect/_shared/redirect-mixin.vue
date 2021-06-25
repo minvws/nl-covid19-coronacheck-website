@@ -159,6 +159,9 @@ export default {
                         case 'negativetest':
                             dateFields = ['sampleDate']
                             break;
+                        case 'recovery':
+                            dateFields = ['sampleDate'];
+                            break;
                         }
                         for (const dateField of dateFields) {
                             if (proofEventOfType[dateField]) {
