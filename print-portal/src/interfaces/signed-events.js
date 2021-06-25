@@ -94,7 +94,6 @@ const unomi = async (eventProvider, tokenSet, filter) => {
 }
 
 const getEvent = async (eventProvider, tokenSet, filter) => {
-    console.log(tokenSet);
     return new Promise((resolve, reject) => {
         const url = eventProvider.event_url;
         const headers = {
