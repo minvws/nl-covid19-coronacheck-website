@@ -5,6 +5,7 @@ showBreadCrumbs: true
 title: Toegankelijkheids&shy;verklaring
 redirect_from: 
     - /accessibility-in-app
+    - /accessibility-coronacheck
     - /nl/accessibility-in-app
 ---
 De CoronaCheck-app moet toegankelijk zijn voor iedereen. Daar is vanaf het eerste ontwerp rekening mee gehouden – met behulp van experts en ervaringsdeskundigen. We proberen dit bij elke update te verbeteren. 
