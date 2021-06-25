@@ -47,8 +47,7 @@ const nl = {
         'VaccinationOverview': {
             'pageHeader': 'Jouw opgehaalde vaccinaties',
             'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>',
-            'createTestProofButton': 'Maak QR-code',
-            'somethingIsWrong': 'Klopt er iets niet?'
+            'createTestProofButton': 'Maak QR-code'
         },
         'noVaccinations': {
             'pageHeader': 'Geen vaccinatie(s) beschikbaar',
@@ -84,7 +83,6 @@ const nl = {
             'pageHeader': 'Controleer je testuitslag',
             'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
             'createTestProofButton': 'Maak QR-code',
-            'somethingIsWrong': 'Klopt er iets niet?',
             'retrievedTestResult': 'Opgehaalde testuitslag'
         },
         'testResultPending': {
@@ -94,6 +92,10 @@ const nl = {
         'testResultNone': {
             'pageHeader': 'Geen negatieve testuitslag',
             'pageIntro': 'Er is geen negatieve testuitslag beschikbaar.'
+        },
+        'RecoveryOverview': {
+            'pageHeader': 'Jouw positieve testuitslag',
+            'pageIntro': '<p>Als je gegevens kloppen dan kun je een QR-code maken van je positieve testuitslag. Dat is jouw bewijs.</p>'
         },
         'print': {
             'openPDF': 'Open PDF'
@@ -150,17 +152,23 @@ const nl = {
                 'bodyV2': messageInfoTestResultAboutV2,
                 'bodyV3': messageInfoTestResultAboutV3
             },
-            'testResultSomethingWrong': {
-                'head': 'Kloppen de gegevens niet?',
-                'body': '<p>Zijn deze gegevens anders dan op je identiteitsbewijs? Neem contact op met je testlocatie. Zij kunnen je gegevens laten aanpassen.</p>'
-            },
             'vaccinationAbout': {
                 'head': 'Wat is er opgehaald?',
                 'body': messageInfoVaccinationAbout
             },
-            'vaccinationSomethingWrong': {
-                'head': 'Er klopt iets niet',
-                'body': '<p>Kloppen je gegevens niet? Of mist er een vaccinatie? Kijk op <a href="https://coronacheck.nl/wegwijzer" target="_blank">CoronaCheck.nl/wegwijzer</a>.</p><p>Mist er een prik? Neem contact op met de locatie waar je bent gevaccineerd.</p>'
+            'somethingWrong': {
+                'vaccination': {
+                    'head': 'Er klopt iets niet',
+                    'body': '<p>Kloppen je gegevens niet? Of mist er een vaccinatie? Kijk op <a href="https://coronacheck.nl/wegwijzer" target="_blank">CoronaCheck.nl/wegwijzer</a>.</p><p>Mist er een prik? Neem contact op met de locatie waar je bent gevaccineerd.</p>'
+                },
+                'negativetest': {
+                    'head': 'Er klopt iets niet',
+                    'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.</p>'
+                },
+                'recovery': {
+                    'head': 'Er klopt iets niet',
+                    'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.'
+                }
             },
             'noVerificationCode': {
                 'head': 'Nieuwe verificatiecode nodig?',
@@ -183,7 +191,7 @@ const nl = {
                 'negativetest': 'testuitslag'
             },
             'digidFinished': {
-                'body': 'We halen nu jouw vaccinaties op. Je wordt automatisch uitgelogd bij DigiD'
+                'body': 'We halen nu jouw %{type} op. Je wordt automatisch uitgelogd bij DigiD'
             },
             'sessionEnded': {
                 'head': 'Je sessie is gestopt',
@@ -286,6 +294,7 @@ const nl = {
     'next': 'Volgende',
     'of': 'van',
     'skiplink': 'Ga direct naar inhoud',
+    'somethingIsWrong': 'Klopt er iets niet?',
     'unknown': 'Onbekend'
 }
 

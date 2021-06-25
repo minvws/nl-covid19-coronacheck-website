@@ -43,8 +43,7 @@ const en = {
         'VaccinationOverview': {
             'pageHeader': 'Your retrieved vaccinations',
             'pageIntro': '<p>You can make a QR code of your vaccination. This will be your certificate.</p>',
-            'createTestProofButton': 'Make QR code',
-            'somethingIsWrong': 'Is something wrong?'
+            'createTestProofButton': 'Make QR code'
         },
         'noVaccinations': {
             'pageHeader': 'No vaccination(s) available',
@@ -80,7 +79,6 @@ const en = {
             'pageHeader': 'Check your test result',
             'pageIntro': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.</p>',
             'createTestProofButton': 'Make QR code',
-            'somethingIsWrong': 'Is something wrong?',
             'retrievedTestResult': 'Retrieved test result'
         },
         'testResultPending': {
@@ -90,6 +88,10 @@ const en = {
         'testResultNone': {
             'pageHeader': 'No negative test result available',
             'pageIntro': 'There is no negative test result available.'
+        },
+        'RecoveryOverview': {
+            'pageHeader': '',
+            'pageIntro': ''
         },
         'print': {
             'openPDF': 'Open PDF'
@@ -137,10 +139,6 @@ const en = {
                 'bodyV2': messageInfoTestResultAboutV2,
                 'bodyV3': messageInfoTestResultAboutV3
             },
-            'testResultSomethingWrong': {
-                'head': 'Something is wrong',
-                'body': '<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>'
-            },
             'vaccinationAbout': {
                 'head': 'What has been retrieved?',
                 'body': messageInfoVaccinationAbout
@@ -170,7 +168,7 @@ const en = {
                 'negativetest': 'test result'
             },
             'digidFinished': {
-                'body': 'We\'ll retrieve your vaccinations. You will be logged out of DigiD automatically'
+                'body': 'We\'ll retrieve your %{type}. You will be logged out of DigiD automatically'
             },
             'noInternet': {
                 'head': 'You\'re not connected to the internet',
@@ -261,6 +259,7 @@ const en = {
     'next': 'Next',
     'of': 'of',
     'skiplink': 'Skip to content',
+    'somethingIsWrong': 'Is something wrong?',
     'unknown': 'Unknown'
 }
 

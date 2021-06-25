@@ -18,7 +18,7 @@ const negativeTestPages = [
         name: 'ProvideCode'
     }, {
         path: '/jouw-testresultaat',
-        name: 'YourTestResult',
+        name: 'NegativeTestOverview',
         component: NegativeTestOverview,
         // flow set by either NegativeTestRedirect (3.0) or ProvideCode (2.0)
         props: true

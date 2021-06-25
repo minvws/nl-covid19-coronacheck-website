@@ -4,73 +4,19 @@ import PageIntro from '@/components/elements/PageIntro';
 import Vaccination from './Vaccination';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
-import signer from '@/interfaces/signer';
-import dateTool from '@/tools/date';
-import { handleRejectionSigner } from '@/tools/error-handler';
+import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 
 export default {
     name: 'VaccinationOverview',
     components: { Page, PageIntro, Vaccination, CcButton, CcModestButton },
-    computed: {
-        vaccinationSignedEvents() {
-            const vaccinationSignedEvents = this.$store.getters['signedEvents/getProofEvents']('vaccination');
-            const filteredForUnique = []
-            for (const signedEvent of vaccinationSignedEvents) {
-                const existingKeys = filteredForUnique.map(s => s.event.unique);
-                if (existingKeys.indexOf(signedEvent.event.unique) === -1) {
-                    filteredForUnique.push(signedEvent)
-                }
+    mixins: [overviewMixin],
+    data() {
+        return {
+            type: 'vaccination',
+            pages: {
+                print: 'PrintVaccination',
+                domesticRejected: 'VaccinationsIncomplete'
             }
-            return filteredForUnique.sort((a, b) => {
-                return dateTool.getTime(a.event.vaccination.date) - dateTool.getTime(b.event.vaccination.date);
-            })
-        }
-    },
-    methods: {
-        back() {
-            const callback = () => {
-                this.$store.commit('clearAll')
-                this.$router.push({ name: 'ChoiceProof' });
-            }
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.areYouSureToCancelVaccination.head'),
-                messageBody: this.$t('message.info.areYouSureToCancelVaccination.body'),
-                confirm: true,
-                confirmAction: callback,
-                confirmYes: this.$t('message.info.areYouSureToCancelVaccination.yes'),
-                confirmNo: this.$t('message.info.areYouSureToCancelVaccination.no'),
-                closeButton: false,
-                confirmAlert: true
-            })
-            this.$store.commit('snackbar/close');
-        },
-        gotoPrint() {
-            if (this.$store.state.qrs.proof === null) {
-                signer.sign(this.$store.state.signedEvents.all).then(response => {
-                    // currently check if there is domestic result. From 2.1 on
-                    // we have to check if there is either domestic or eu
-                    if (response.data) {
-                        if (response.data.domestic) {
-                            this.$store.commit('qrs/add', response.data);
-                            this.$router.push({ name: 'PrintVaccination' });
-                        } else {
-                            this.$router.push({ name: 'VaccinationsIncomplete' });
-                        }
-                    }
-                }).catch(error => {
-                    handleRejectionSigner(error);
-                })
-            } else {
-                this.$router.push({ name: 'PrintVaccination' });
-            }
-            this.$store.commit('snackbar/close');
-        },
-        openModalVaccinationSomethingWrong() {
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.vaccinationSomethingWrong.head'),
-                messageBody: this.$t('message.info.vaccinationSomethingWrong.body'),
-                closeButton: true
-            })
         }
     }
 }
@@ -87,7 +33,7 @@ export default {
             <div class="section-block">
                 <div class="proof-events">
                     <Vaccination
-                        v-for="signedEvent of vaccinationSignedEvents"
+                        v-for="signedEvent of signedEvents"
                         :key="signedEvent.unique"
                         :signed-event="signedEvent"/>
                 </div>
@@ -97,8 +43,8 @@ export default {
                         :label="$t('views.VaccinationOverview.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
-                            @select="openModalVaccinationSomethingWrong()"
-                            :label="$t('views.VaccinationOverview.somethingIsWrong')"/>
+                            @select="openModalSomethingWrong()"
+                            :label="$t('somethingIsWrong')"/>
                     </div>
                 </div>
             </div>

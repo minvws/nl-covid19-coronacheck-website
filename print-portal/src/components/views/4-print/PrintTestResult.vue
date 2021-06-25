@@ -7,7 +7,7 @@ export default {
     components: { Print, PageIntro },
     methods: {
         back() {
-            this.$router.push({ name: 'YourTestResult' });
+            this.$router.push({ name: 'NegativeTestOverview' });
         }
     }
 }

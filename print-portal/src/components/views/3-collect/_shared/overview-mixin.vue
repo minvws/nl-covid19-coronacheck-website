@@ -1,9 +1,26 @@
 <script>
+import dateTool from '@/tools/date';
+import signer from '@/interfaces/signer';
+import { handleRejectionSigner } from '@/tools/error-handler';
+
 export default {
     name: 'overview-mixin',
     computed: {
         signedEvents() {
-            return this.$store.getters['signedEvents/getProofEvents'](this.type);
+            console.log(this.type);
+            const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.type);
+            console.log(signedEvents);
+            const filteredForUnique = []
+            // we check for unique events
+            for (const signedEvent of signedEvents) {
+                const existingKeys = filteredForUnique.map(s => s.event.unique);
+                if (existingKeys.indexOf(signedEvent.event.unique) === -1) {
+                    filteredForUnique.push(signedEvent)
+                }
+            }
+            return filteredForUnique.sort((a, b) => {
+                return dateTool.getTime(a.event[this.type].date) - dateTool.getTime(b.event[this.type].date);
+            })
         },
         // note proof event is hardcoded sorted on sample date. We cannot do this with every proof type
         // only negative test and recovery (but exactly these 2 are using this function, so currently leaving
@@ -23,6 +40,53 @@ export default {
             } else {
                 return null;
             }
+        }
+    },
+    methods: {
+        back() {
+            const callback = () => {
+                this.$store.commit('clearAll')
+                this.$router.push({ name: 'ChoiceProof' });
+            }
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.areYouSureToCancel.head'),
+                messageBody: this.$t('message.info.areYouSureToCancel.body', { type: this.type }),
+                confirm: true,
+                confirmAction: callback,
+                confirmYes: this.$t('message.info.areYouSureToCancel.yes'),
+                confirmNo: this.$t('message.info.areYouSureToCancel.no'),
+                closeButton: false,
+                confirmAlert: true
+            })
+            this.$store.commit('snackbar/close');
+        },
+        gotoPrint() {
+            if (this.$store.state.qrs.proof === null) {
+                signer.sign(this.$store.state.signedEvents.all).then(response => {
+                    // currently check if there is domestic result. From 2.1 on
+                    // we have to check if there is either domestic or eu
+                    if (response.data) {
+                        if (response.data.domestic) {
+                            this.$store.commit('qrs/add', response.data);
+                            this.$router.push({ name: this.pages.print });
+                        } else {
+                            this.$router.push({ name: this.pages.domesticRejected });
+                        }
+                    }
+                }).catch(error => {
+                    handleRejectionSigner(error);
+                })
+            } else {
+                this.$router.push({ name: this.pages.print });
+            }
+            this.$store.commit('snackbar/close');
+        },
+        openModalSomethingWrong() {
+            this.$store.commit('modal/set', {
+                messageHead: this.$t('message.info.somethingWrong.' + this.type + '.head'),
+                messageBody: this.$t('message.info.somethingWrong.' + this.type + '.body'),
+                closeButton: true
+            })
         }
     }
 }

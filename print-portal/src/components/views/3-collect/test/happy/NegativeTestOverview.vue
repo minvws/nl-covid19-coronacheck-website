@@ -4,96 +4,23 @@ import PageIntro from '@/components/elements/PageIntro';
 import NegativeTest from './NegativeTest';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
-import signer from '@/interfaces/signer';
-import { handleRejectionSigner } from '@/tools/error-handler';
+import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 
 export default {
     name: 'NegativeTestOverview',
     components: { Page, PageIntro, NegativeTest, CcButton, CcModestButton },
+    mixins: [overviewMixin],
     data() {
         return {
-            type: 'negativetest'
-        }
-    },
-    computed: {
-        negativeTestSignedEvents() {
-            return this.$store.getters['signedEvents/getProofEvents']('negativetest');
-        },
-        latestNegativeTestSignedEvent() {
-            if (this.negativeTestSignedEvents.length > 0) {
-                if (this.negativeTestSignedEvents.length === 1) {
-                    return this.negativeTestSignedEvents[0];
-                } else {
-                    // if there are multiple (which should never be the case actually)
-                    // we sort them and pick the most recent
-                    const negativeTestSignedEvents = this.negativeTestSignedEvents.slice();
-                    return negativeTestSignedEvents.sort((a, b) => {
-                        return new Date(b.event.negativetest.sampleDate) - new Date(a.event.negativetest.sampleDate);
-                    })[0];
-                }
-            } else {
-                return null;
+            type: 'negativetest',
+            pages: {
+                print: 'PrintTestResult',
+                domesticRejected: ''
             }
-        },
-        signedEvents() {
-            return this.$store.state.signedEvents.all;
-        },
-        hasQR() {
-            return this.$store.state.qrCode.length > 0;
-        }
-    },
-    methods: {
-        gotoPrint() {
-            if (this.$store.state.qrs.proof === null) {
-                signer.sign(this.$store.state.signedEvents.all).then(response => {
-                    if (response.data && response.data.domestic) {
-                        this.$store.commit('qrs/add', response.data);
-                        this.$router.push({ name: 'PrintTestResult' });
-                    } else {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.signerFailed.head'),
-                            messageBody: this.$t('message.error.signerFailed.body'),
-                            closeButton: true
-                        });
-                    }
-                }).catch(error => {
-                    handleRejectionSigner(error);
-                })
-            } else {
-                this.$router.push({ name: 'PrintTestResult' });
-            }
-            this.$store.commit('snackbar/close');
-        },
-        goBack() {
-            const callback = () => {
-                this.$store.commit('clearAll')
-                this.$router.push({ name: 'ChoiceProof' });
-            }
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.areYouSureToCancelNegativeTest.head'),
-                messageBody: this.$t('message.info.areYouSureToCancelNegativeTest.body'),
-                confirm: true,
-                confirmAction: callback,
-                confirmYes: this.$t('message.info.areYouSureToCancelNegativeTest.yes'),
-                confirmNo: this.$t('message.info.areYouSureToCancelNegativeTest.no'),
-                closeButton: false,
-                confirmAlert: true
-            })
-            this.$store.commit('snackbar/close');
-        },
-        goHome() {
-            this.$router.push({ name: 'Home' });
-        },
-        openModalTestResultsSomethingWrong() {
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.testResultSomethingWrong.head'),
-                messageBody: this.$t('message.info.testResultSomethingWrong.body', this.$store.state.holder),
-                closeButton: true
-            })
         }
     },
     mounted() {
-        if (!this.latestNegativeTestSignedEvent) {
+        if (!this.latestSignedEvent) {
             this.$router.push({ name: 'TestResultNone' });
         }
     }
@@ -102,7 +29,7 @@ export default {
 
 <template>
     <Page
-        @back="goBack"
+        @back="back"
         class="NegativeTestOverview">
         <div class="section">
             <PageIntro
@@ -112,7 +39,7 @@ export default {
             <div class="section-block">
                 <div class="proof-events">
                     <NegativeTest
-                        :signed-event="latestNegativeTestSignedEvent"/>
+                        :signed-event="latestSignedEvent"/>
                 </div>
                 <div class="section-block__footer">
                     <CcButton
@@ -120,8 +47,8 @@ export default {
                         :label="$t('views.NegativeTestOverview.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
-                            @select="openModalTestResultsSomethingWrong()"
-                            :label="$t('views.NegativeTestOverview.somethingIsWrong')"/>
+                            @select="openModalSomethingWrong()"
+                            :label="$t('somethingIsWrong')"/>
                     </div>
                 </div>
             </div>

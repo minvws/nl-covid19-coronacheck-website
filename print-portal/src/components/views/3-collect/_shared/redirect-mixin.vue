@@ -65,7 +65,7 @@ export default {
             });
         },
         notifyDigidFinished() {
-            this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body'))
+            this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: this.type }))
         },
         collectEvents(token) {
             this.$store.commit('signedEvents/clear');
