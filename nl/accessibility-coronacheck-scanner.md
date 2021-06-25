@@ -2,7 +2,8 @@
 layout: in-app-content
 lang: nl
 title: Toegankelijkheid
-redirect_from: /accessibility-in-app
+redirect_from: 
+    - /accessibility-coronacheck-scanner
 ---
 De CoronaCheck-app moet toegankelijk zijn voor iedereen. Daar is vanaf het eerste ontwerp rekening mee gehouden – met behulp van experts en ervaringsdeskundigen. We proberen dit bij elke update te verbeteren. 
 
