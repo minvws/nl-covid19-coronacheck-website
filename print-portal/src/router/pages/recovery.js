@@ -2,6 +2,7 @@ import CollectRecovery from '@/components/views/3-collect/recovery/CollectRecove
 import RecoveryRedirect from '@/components/views/3-collect/recovery/happy/RecoveryRedirect'
 import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview'
 import RecoveryNone from '@/components/views/3-collect/recovery/unhappy/RecoveryNone'
+import PrintRecovery from '@/components/views/4-print/PrintRecovery'
 
 const recoveryPages = [
     {
@@ -20,6 +21,10 @@ const recoveryPages = [
         path: '/recovery-niet-gevonden',
         name: 'RecoveryNone',
         component: RecoveryNone
+    }, {
+        path: '/print-recovery',
+        name: 'PrintRecovery',
+        component: PrintRecovery
     }
 ]
 

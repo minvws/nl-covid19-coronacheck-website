@@ -11,6 +11,7 @@ export default {
     data() {
         return {
             isLoading: false,
+            filter: 'negativetest',
             type: 'negativetest',
             pages: {
                 cancel: 'ChoiceProof',

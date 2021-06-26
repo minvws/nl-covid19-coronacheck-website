@@ -3,7 +3,7 @@ import Print from './Print';
 import PageIntro from '@/components/elements/PageIntro';
 
 export default {
-    name: 'PrintTestResult',
+    name: 'PrintNegativeTest',
     components: { Print, PageIntro },
     methods: {
         back() {
@@ -14,19 +14,13 @@ export default {
 </script>
 
 <template>
-    <div class="PrintTestResult">
+    <div class="PrintNegativeTest">
         <Print
             :type="'negativeTest'"
             @back="back">
             <PageIntro
-                :head="$t('views.printTestResult.pageHeader')"
-                :intro="$t('views.printTestResult.pageIntro')"/>
+                :head="$t('views.PrintNegativeTest.pageHeader')"
+                :intro="$t('views.PrintNegativeTest.pageIntro')"/>
         </Print>
     </div>
 </template>
-
-<style lang="scss">
-.PrintTestResult {
-
-}
-</style>

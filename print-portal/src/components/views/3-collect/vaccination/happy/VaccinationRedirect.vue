@@ -12,6 +12,7 @@ export default {
         return {
             isLoading: false,
             type: 'vaccination',
+            filter: 'vaccination',
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectVaccination',

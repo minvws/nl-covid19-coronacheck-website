@@ -2,7 +2,7 @@ import ChoiceTestLocation from '@/components/views/2-b-choice-test-location/Choi
 import ProvideCode from '@/components/views/3-collect/test/provide-code/ProvideCode'
 import NegativeTestOverview from '@/components/views/3-collect/test/happy/NegativeTestOverview';
 import NegativeTestRedirect from '@/components/views/3-collect/test/happy/NegativeTestRedirect';
-import PrintTestResult from '@/components/views/4-print/PrintTestResult';
+import PrintNegativeTest from '@/components/views/4-print/PrintNegativeTest';
 import TestResultPending from '@/components/views/3-collect/test/unhappy/TestResultPending';
 import TestResultNotPossible from '@/components/views/3-collect/test/unhappy/TestResultNotPossible';
 import TestResultNone from '@/components/views/3-collect/test/unhappy/TestResultNone';
@@ -49,8 +49,8 @@ const negativeTestPages = [
         }
     }, {
         path: '/print-testuitslag',
-        name: 'PrintTestResult',
-        component: PrintTestResult
+        name: 'PrintNegativeTest',
+        component: PrintNegativeTest
     }
 ]
 

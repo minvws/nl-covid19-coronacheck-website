@@ -14,7 +14,7 @@ export default {
         return {
             type: 'negativetest',
             pages: {
-                print: 'PrintTestResult',
+                print: 'PrintNegativeTest',
                 domesticRejected: ''
             }
         }

@@ -3,24 +3,24 @@ import Print from './Print';
 import PageIntro from '@/components/elements/PageIntro';
 
 export default {
-    name: 'PrintVaccination',
+    name: 'PrintRecovery',
     components: { Print, PageIntro },
     methods: {
         back() {
-            this.$router.push({ name: 'VaccinationOverview' });
+            this.$router.push({ name: 'RecoveryOverview' });
         }
     }
 }
 </script>
 
 <template>
-    <div class="PrintVaccination">
+    <div class="PrintRecovery">
         <Print
             @back="back"
-            :type="'vaccination'">
+            :type="'recovery'">
             <PageIntro
-                :head="$t('views.printVaccination.pageHeader')"
-                :intro="$t('views.printVaccination.pageIntro')"/>
+                :head="$t('views.printRecovery.pageHeader')"
+                :intro="$t('views.printRecovery.pageIntro')"/>
         </Print>
     </div>
 </template>

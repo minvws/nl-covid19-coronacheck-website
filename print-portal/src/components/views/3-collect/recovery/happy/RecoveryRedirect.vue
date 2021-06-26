@@ -12,6 +12,7 @@ export default {
         return {
             isLoading: false,
             type: 'recovery',
+            filter: 'recovery,positivetest',
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectRecovery',

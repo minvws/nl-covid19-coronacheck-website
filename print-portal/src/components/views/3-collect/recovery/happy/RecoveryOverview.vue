@@ -14,8 +14,8 @@ export default {
         return {
             type: 'recovery',
             pages: {
-                print: '',
-                domesticRejected: ''
+                print: 'PrintRecovery',
+                domesticRejected: '' // todo
             }
         }
     }

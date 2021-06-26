@@ -19,32 +19,23 @@ export default {
     },
     methods: {
         openInfo() {
-            // let dosesString;
-            // const vaccineType = this.$store.getters.getVaccineType(this.vaccination.type);
-            // const manufacturer = this.$store.getters.getVaccineManufacturer(this.vaccination.manufacturer);
-            // if (this.vaccination.doseNumber) {
-            //     if (this.vaccination.totalDoses) {
-            //         dosesString = this.vaccination.doseNumber + ' ' + this.$t('of') + ' ' + this.vaccination.totalDoses;
-            //     } else {
-            //         dosesString = this.vaccination.doseNumber;
-            //     }
-            // } else {
-            //     dosesString = '';
-            // }
-            // const data = {
+            console.log(this.proofEvent);
+            // const testType = this.$store.getters.getEuTestType(this.proofEvent.type);
+            // const manufacturer = this.$store.getters.getTestManufacturer(this.proofEvent.manufacturer);
+            // const dataForV3 = {
             //     name: this.holder.fullName,
-            //     birthDateString: dateTool.dateToString(this.holder.birthDate, 'dd-MM-yyyy'),
-            //     vaccineName: this.vaccineName,
-            //     vaccineType: (vaccineType ? vaccineType.name : '-'),
-            //     manufacturer: (manufacturer ? manufacturer.name : '-'),
-            //     dosesString: dosesString,
-            //     dateString: dateTool.dateToString(this.vaccination.date, 'dd-MM-yyyy'),
-            //     country: this.vaccination.country,
-            //     identificationCode: this.signedEvent.event.unique
+            //     birthDateString: this.holder.birthDateString,
+            //     testType: (testType ? testType.name : this.$t('unknown')),
+            //     testName: (this.proofEvent.name.length ? this.proofEvent.name : this.$t('unknown')),
+            //     testLocation: this.proofEvent.facility,
+            //     sampleDate: this.dateOfTest,
+            //     manufacturer: manufacturer ? manufacturer.name : this.$t('unknown'),
+            //     identificationCode: this.signedEvent.event.unique,
+            //     country: this.proofEvent.country
             // }
             // this.$store.commit('modal/set', {
-            //     messageHead: this.$t('message.info.vaccinationAbout.head'),
-            //     messageBody: this.$t('message.info.vaccinationAbout.body', data),
+            //     messageHead: this.$t('message.info.testResultAbout.head'),
+            //     messageBody: this.$t('message.info.testResultAbout.bodyV3', dataForV3),
             //     closeButton: true
             // })
         }
