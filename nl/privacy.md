@@ -181,7 +181,7 @@ Persoonsgegevens die in de EU DCC (QR-code) zijn opgenomen ongeacht het type (te
 - Naam: familienaam of familienamen en voornaam of voornamen en eventueel tussenvoegsel
 - Geboortedatum
 - Doelziekte of ziekteverwekker (bijvoorbeeld: SARS-CoV-2 en/of varianten daarop)
-- Unieke certificaatidentificatiecode
+- Uniek certificaatnummer
 - Lidstaat waar test/vaccinatie is uitgevoerd of herstelbewijs is verkregen
 - Afgever van het EU DCC, dat is voor Nederland VWS
 
