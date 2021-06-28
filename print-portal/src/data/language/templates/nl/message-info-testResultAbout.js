@@ -8,7 +8,7 @@ export const messageInfoTestResultAboutV2 = `
     Testlocatie: <b>%{testLocation}</b><br>
     Testdatum: <b>%{sampleDate}</b><br>
     Testuitslag: <b>negatief (geen corona)</b><br>
-    IdentificatieCode: <b>%{identificationCode}</b>
+    Uniek certificaatnummer: <b>%{identificationCode}</b>
 </p>`;
 
 export const messageInfoTestResultAboutV3 = `
@@ -25,5 +25,5 @@ export const messageInfoTestResultAboutV3 = `
     Testlocatie: <b>%{testLocation}</b><br>
     Testproducent: <b>%{manufacturer}</b><br>
     Getest in: <b>%{country}</b><br>
-    Identificatiecode: <b><span class="identificatie-code">%{identificationCode}</span></b>
+    Uniek certificaatnummer: <b><span class="identificatie-code">%{identificationCode}</span></b>
 </p>`;
