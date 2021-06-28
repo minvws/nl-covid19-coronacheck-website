@@ -17,7 +17,7 @@ export default {
                 }
             }
             return filteredForUnique.sort((a, b) => {
-                return dateTool.getTime(a.event[this.type].date) - dateTool.getTime(b.event[this.type].date);
+                return dateTool.getTime(a.event[a.event.type].date) - dateTool.getTime(b.event[b.event.type].date);
             })
         },
         // note proof event is hardcoded sorted on sample date. We cannot do this with every proof type
@@ -32,7 +32,7 @@ export default {
                     // we sort them and pick the most recent
                     const signedEvents = this.signedEvents.slice();
                     return signedEvents.sort((a, b) => {
-                        return new Date(b.event[this.type].sampleDate) - new Date(a.event[this.type].sampleDate);
+                        return new Date(b.event[a.event.type].sampleDate) - new Date(a.event[b.event.type].sampleDate);
                     })[0];
                 }
             } else {
