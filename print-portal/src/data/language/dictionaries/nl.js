@@ -4,10 +4,6 @@ import recovery from '../templates/nl/messages/about/recovery';
 import positiveTest from '../templates/nl/messages/about/positive-test';
 import footer from '../templates/nl/footer';
 
-// note: some texts use \n for a break. This is the standard.
-// other texts have <br> This is when the text needs to be rendered in a html-like style, because it has bold or
-// colored texts. See tools/print/text-helpers.js
-
 const nl = {
     'date': {
         'months': {
