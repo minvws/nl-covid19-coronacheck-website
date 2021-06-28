@@ -1,7 +1,7 @@
 import { negativeTestV2, negativeTestV3 } from '../templates/en/messages/about/negative-test';
 import vaccination from '../templates/en/messages/about/vaccination';
 import recovery from '../templates/en/messages/about/recovery';
-import positiveTest from '../templates/en/messages/about/positiveTest';
+import positiveTest from '../templates/en/messages/about/positive-test';
 import footer from '../templates/en/footer';
 
 const en = {
@@ -91,9 +91,13 @@ const en = {
             'pageHeader': 'No negative test result available',
             'pageIntro': 'There is no negative test result available.'
         },
-        'RecoveryOverview': {
+        'recoveryOverview': {
             'pageHeader': 'TODO Jouw positieve testuitslag',
             'pageIntro': 'TODO <p>Als je gegevens kloppen dan kun je een QR-code maken van je positieve testuitslag. Dat is jouw bewijs.</p>'
+        },
+        'recoveryNone': {
+            'pageHeader': 'TODO Jouw positieve testuitslag',
+            'pageIntro': 'TODO'
         },
         'print': {
             'openPDF': 'Open PDF'
@@ -146,7 +150,12 @@ const en = {
         },
         'digid': {
             'loginDigid': 'Log in with DigiD',
-            'dontHaveDigid': 'I don’t have DigiD'
+            'dontHaveDigid': 'I don’t have DigiD',
+            'proofType': {
+                'negativetest': 'test result',
+                'vaccination': 'vaccinations',
+                'positivetest': 'test result'
+            }
         }
     },
     'message': {
@@ -177,7 +186,7 @@ const en = {
                     'head': 'Something is wrong',
                     'body': '<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>'
                 },
-                'recovery': {
+                'positivetest': {
                     'head': 'Something is wrong',
                     'body': '<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>'
                 }

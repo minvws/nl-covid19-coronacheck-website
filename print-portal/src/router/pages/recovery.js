@@ -20,7 +20,10 @@ const recoveryPages = [
     }, {
         path: '/recovery-niet-gevonden',
         name: 'RecoveryNone',
-        component: RecoveryNone
+        component: RecoveryNone,
+        meta: {
+            pageHeader: 'error'
+        }
     }, {
         path: '/print-recovery',
         name: 'PrintRecovery',

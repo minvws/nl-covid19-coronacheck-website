@@ -91,9 +91,13 @@ const nl = {
             'pageHeader': 'Geen negatieve testuitslag',
             'pageIntro': 'Er is geen negatieve testuitslag beschikbaar.'
         },
-        'RecoveryOverview': {
+        'recoveryOverview': {
             'pageHeader': 'Jouw positieve testuitslag',
             'pageIntro': '<p>Als je gegevens kloppen dan kun je een QR-code maken van je positieve testuitslag. Dat is jouw bewijs.</p>'
+        },
+        'recoveryNone': {
+            'pageHeader': 'Jouw positieve testuitslag',
+            'pageIntro': '<p>Er is geen positieve testuitslag beschikbaar.</p><p>Ben je net getest? Het kan een paar uur duren voordat je positieve test verwerkt is. Probeer het later nog eens.</p><p>Is het langer dan 180 dagen geleden dat je getest bent? Dan is je testuitslag niet meer geldig. Je kunt dan ook geen herstelbewijs maken.</p>'
         },
         'print': {
             'openPDF': 'Open PDF'
@@ -126,7 +130,7 @@ const nl = {
         },
         'NegativeTest': {
             'resultNegative': 'Negatieve testuitslag',
-            'yourCredentials': 'Jouw gegevens',
+            'yourCredentials': 'Jouw gegevens'
         },
         'vaccination': {
             'vaccination': 'Vaccinatie',
@@ -146,7 +150,12 @@ const nl = {
         },
         'digid': {
             'loginDigid': 'Login met DigiD',
-            'dontHaveDigid': 'Ik heb geen DigiD'
+            'dontHaveDigid': 'Ik heb geen DigiD',
+            'proofType': {
+                'negativetest': 'testuitslag',
+                'vaccination': 'vaccinaties',
+                'positivetest': 'testuitslag'
+            }
         }
     },
     'message': {
@@ -177,7 +186,7 @@ const nl = {
                     'head': 'Er klopt iets niet',
                     'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.</p>'
                 },
-                'recovery': {
+                'positivetest': {
                     'head': 'Er klopt iets niet',
                     'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.'
                 }

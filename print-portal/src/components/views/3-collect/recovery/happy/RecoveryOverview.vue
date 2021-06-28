@@ -13,7 +13,7 @@ export default {
     mixins: [overviewMixin],
     data() {
         return {
-            filter: 'recovery,positivetest',
+            filter: 'positivetest',
             pages: {
                 print: 'PrintRecovery',
                 domesticRejected: '' // todo
@@ -29,8 +29,8 @@ export default {
         @back="back">
         <div class="section">
             <PageIntro
-                :head="$t('views.RecoveryOverview.pageHeader')"
-                :intro="$t('views.RecoveryOverview.pageIntro')"/>
+                :head="$t('views.recoveryOverview.pageHeader')"
+                :intro="$t('views.recoveryOverview.pageIntro')"/>
             <div class="section-block">
                 <div class="proof-events">
                     <div v-for="(signedEvent, index) in signedEvents" :key="index">

@@ -8,15 +8,16 @@ export default {
     computed: {
         signedEvents() {
             const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);
-            const filteredForUnique = []
-            // we check for unique events
-            for (const signedEvent of signedEvents) {
-                const existingKeys = filteredForUnique.map(s => s.event.unique);
-                if (existingKeys.indexOf(signedEvent.event.unique) === -1) {
-                    filteredForUnique.push(signedEvent)
-                }
-            }
-            return filteredForUnique.sort((a, b) => {
+            // currently we do not de-double anymore
+            // const filteredForUnique = []
+            // // we check for unique events
+            // for (const signedEvent of signedEvents) {
+            //     const existingKeys = filteredForUnique.map(s => s.event.unique);
+            //     if (existingKeys.indexOf(signedEvent.event.unique) === -1) {
+            //         filteredForUnique.push(signedEvent)
+            //     }
+            // }
+            return signedEvents.sort((a, b) => {
                 return dateTool.getTime(a.event[a.event.type].date) - dateTool.getTime(b.event[b.event.type].date);
             })
         },
@@ -80,9 +81,10 @@ export default {
             this.$store.commit('snackbar/close');
         },
         openModalSomethingWrong() {
+            const type = this.filter.split(',')[0]
             this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.somethingWrong.' + this.type + '.head'),
-                messageBody: this.$t('message.info.somethingWrong.' + this.type + '.body'),
+                messageHead: this.$t('message.info.somethingWrong.' + type + '.head'),
+                messageBody: this.$t('message.info.somethingWrong.' + type + '.body'),
                 closeButton: true
             })
         }

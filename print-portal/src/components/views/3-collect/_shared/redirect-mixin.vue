@@ -65,7 +65,9 @@ export default {
             });
         },
         notifyDigidFinished() {
-            this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: this.type }))
+            const type = this.filter.split(',')[0];
+            const proofType = this.$t('components.digid.proofType.' + type)
+            this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: proofType }))
         },
         collectEvents(token) {
             this.$store.commit('signedEvents/clear');
