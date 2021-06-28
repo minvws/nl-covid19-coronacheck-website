@@ -209,7 +209,8 @@ const nl = {
                 'head': 'Inloggen is niet gelukt',
                 'body': 'Je kunt opnieuw inloggen om je %{type} op te halen.',
                 'vaccination': 'vaccinaties',
-                'negativetest': 'testuitslag'
+                'negativetest': 'testuitslag',
+                'positiveetest': 'testuitslag'
             },
             'digidFinished': {
                 'body': 'We halen nu jouw %{type} op. Je wordt automatisch uitgelogd bij DigiD'

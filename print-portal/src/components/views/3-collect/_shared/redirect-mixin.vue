@@ -6,6 +6,11 @@ import { handleRejection } from '@/tools/error-handler';
 
 export default {
     name: 'redirect-mixin',
+    computed: {
+        type() {
+            return this.filter.split(',')[0];
+        }
+    },
     methods: {
         back() {
             const callback = () => {
@@ -65,8 +70,7 @@ export default {
             });
         },
         notifyDigidFinished() {
-            const type = this.filter.split(',')[0];
-            const proofType = this.$t('components.digid.proofType.' + type)
+            const proofType = this.$t('components.digid.proofType.' + this.type)
             this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: proofType }))
         },
         collectEvents(token) {
