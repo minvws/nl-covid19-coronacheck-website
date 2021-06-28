@@ -33,7 +33,10 @@ export default {
                 :intro="$t('views.recoveryOverview.pageIntro')"/>
             <div class="section-block">
                 <div class="proof-events">
-                    <div v-for="(signedEvent, index) in signedEvents" :key="index">
+                    <div
+                        v-for="(signedEvent, index) in signedEvents"
+                        :key="index"
+                        class="proof-event__wrapper">
                         <Recovery
                             v-if="signedEvent.event.recovery"
                             :key="signedEvent.unique"
