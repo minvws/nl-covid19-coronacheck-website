@@ -2,10 +2,11 @@
 import Page from '@/components/elements/Page';
 import { detect } from 'detect-browser';
 import CcButton from '@/components/elements/CcButton';
-import { getDocument } from '@/tools/print/main';
+import { getDocument } from '@/tools/print/pdf/src/index';
 import { generateQR } from '@/tools/qr';
 import NLQR from '@/classes/QR/NLQR';
 import { handleRejection } from '@/tools/error-handler';
+import { QRSizeInCm } from '@/data/constants'
 
 export default {
     name: 'Print',
@@ -50,7 +51,7 @@ export default {
                         urlQR: urlQR
                     }
                 ]
-                this.document = await getDocument(pages, this.currentLanguage.locale, this.metadata);
+                this.document = await getDocument(pages, this.currentLanguage.locale, this.metadata, this.$t('pdf'), QRSizeInCm);
             }, (error) => {
                 handleRejection(error);
             })
