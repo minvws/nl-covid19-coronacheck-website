@@ -1,4 +1,4 @@
-const html = `
+const vaccination = `
     <p>
         The following details of your vaccination have been retrieved:
     </p>
@@ -18,4 +18,4 @@ const html = `
     </p>
 `;
 
-export default html;
+export default vaccination;

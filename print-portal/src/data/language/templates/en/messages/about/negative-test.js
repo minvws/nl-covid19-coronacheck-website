@@ -1,4 +1,4 @@
-export const messageInfoTestResultAboutV2 = `
+export const negativeTestV2 = `
 <p>
     The following details were retrieved at the test location:
 </p>
@@ -11,7 +11,7 @@ export const messageInfoTestResultAboutV2 = `
     Identification code: <b>%{identificationCode}</b>
 </p>`;
 
-export const messageInfoTestResultAboutV3 = `
+export const negativeTestV3 = `
 <p>
     The following details were retrieved at the test location:
 </p>

@@ -127,7 +127,6 @@ const nl = {
         'NegativeTest': {
             'resultNegative': 'Negatieve testuitslag',
             'yourCredentials': 'Jouw gegevens',
-            'name': 'Naam'
         },
         'vaccination': {
             'vaccination': 'Vaccinatie',

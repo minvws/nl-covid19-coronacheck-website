@@ -1,6 +1,8 @@
-import messageInfoVaccinationAbout from '../templates/en/message-info-vaccinationAbout';
+import { negativeTestV2, negativeTestV3 } from '../templates/en/messages/about/negative-test';
+import vaccination from '../templates/en/messages/about/vaccination';
+import recovery from '../templates/en/messages/about/recovery';
+import positiveTest from '../templates/en/messages/about/positiveTest';
 import footer from '../templates/en/footer';
-import { messageInfoTestResultAboutV2, messageInfoTestResultAboutV3 } from '../templates/en/message-info-testResultAbout';
 
 const en = {
     'date': {
@@ -22,8 +24,8 @@ const en = {
             'pageIntro': '<p>TODO You can make a QR code of a vaccination or negative test result.</p>',
             'choiceTestHeader': 'A negative test result',
             'choiceTestBody': 'The test proves I do not have coronavirus',
-            'choiceRecoveryHeader': 'TODO',
-            'choiceRecoveryBody': 'TODO',
+            'choiceRecoveryHeader': 'TODO Een herstelverklaring',
+            'choiceRecoveryBody': 'TODO Ik heb corona gehad en ben hersteld',
             'choiceVaccinationHeader': 'A vaccination',
             'choiceVaccinationBody': 'I have had my injection or injections'
         },
@@ -58,8 +60,8 @@ const en = {
             'pageIntro': '<p>At this moment, we can’t make a certificate. For a Dutch certificate you need to be fully vaccinated. An international certificate can be made from July 1st.</p>'
         },
         'collectRecovery': {
-            'pageHeader': 'TODO',
-            'pageIntro': 'TODO'
+            'pageHeader': 'TODO Herstelverklaring maken',
+            'pageIntro': 'TODO <p>Met een positieve testuitslag van de GGD kan je een herstelverklaring maken. Ook moet je vrij van klachten zijn.</p><p>Wil je een herstelverklaring maken? Dat kan vanaf 11 dagen na een positieve uitslag (corona).</p>'
         },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
@@ -90,8 +92,8 @@ const en = {
             'pageIntro': 'There is no negative test result available.'
         },
         'RecoveryOverview': {
-            'pageHeader': '',
-            'pageIntro': ''
+            'pageHeader': 'TODO Jouw positieve testuitslag',
+            'pageIntro': 'TODO <p>Als je gegevens kloppen dan kun je een QR-code maken van je positieve testuitslag. Dat is jouw bewijs.</p>'
         },
         'print': {
             'openPDF': 'Open PDF'
@@ -105,8 +107,8 @@ const en = {
             'pageIntro': '<h3>Your certificate</h3><p>You’ve made a vaccination certificate in the form of a QR code. You have a QR code for the Netherlands and one for other countries.</p><h3>Information in the QR</h3><p><a href="https://web.acc.coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
         },
         'printRecovery': {
-            'pageHeader': '',
-            'pageIntro': ''
+            'pageHeader': 'TODO Print jouw bewijzen',
+            'pageIntro': 'TODO <h4>Jouw bewijzen</h4><p>Je hebt een herstelbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een QR-code voor als je reist binnen de Europese Unie.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 maand geldig. Daarna kan je een nieuw papieren herstelbewijs maken.</p>'
         }
     },
     'components': {
@@ -131,6 +133,17 @@ const en = {
             'name': 'Name',
             'dateOfBirth': 'Date of birth'
         },
+        'recovery': {
+            'title': 'TODO Jouw herstelbewijs'
+        },
+        'positiveTest': {
+            'title': 'TODO Jouw positieve testuitslag'
+        },
+        'proofEvent': {
+            'name': 'Name',
+            'dateOfTest': 'Test date',
+            'dateOfBirth': 'Date of birth'
+        },
         'digid': {
             'loginDigid': 'Log in with DigiD',
             'dontHaveDigid': 'I don’t have DigiD'
@@ -140,16 +153,34 @@ const en = {
         'info': {
             'testResultAbout': {
                 'head': 'What has been retrieved?',
-                'bodyV2': messageInfoTestResultAboutV2,
-                'bodyV3': messageInfoTestResultAboutV3
+                'bodyV2': negativeTestV2,
+                'bodyV3': negativeTestV3
             },
             'vaccinationAbout': {
                 'head': 'What has been retrieved?',
-                'body': messageInfoVaccinationAbout
+                'body': vaccination
             },
-            'vaccinationSomethingWrong': {
-                'head': 'Something is wrong',
-                'body': '<p>Wrong name or date of birth? Or are your vaccination details incorrect? Please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">CoronaCheck.nl/en/guidepost</a> for more information.</p>'
+            'recoveryAbout': {
+                'head': 'What has been retrieved?',
+                'body': recovery
+            },
+            'positiveTestResultAbout': {
+                'head': 'What has been retrieved?',
+                'body': positiveTest
+            },
+            'somethingWrong': {
+                'vaccination': {
+                    'head': 'Something is wrong',
+                    'body': '<p>Wrong name or date of birth? Or are your vaccination details incorrect? Please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">CoronaCheck.nl/en/guidepost</a> for more information.</p>'
+                },
+                'negativetest': {
+                    'head': 'Something is wrong',
+                    'body': '<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>'
+                },
+                'recovery': {
+                    'head': 'Something is wrong',
+                    'body': '<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>'
+                }
             },
             'noVerificationCode': {
                 'head': 'Need a new verification code?',
@@ -173,10 +204,6 @@ const en = {
             },
             'digidFinished': {
                 'body': 'We\'ll retrieve your %{type}. You will be logged out of DigiD automatically'
-            },
-            'noInternet': {
-                'head': 'You\'re not connected to the internet',
-                'body': 'Check your connection and try again.'
             }
         },
         'error': {
