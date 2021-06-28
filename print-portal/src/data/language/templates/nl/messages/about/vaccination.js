@@ -14,7 +14,7 @@ const vaccination = `
         Doses: <b>%{dosesString}</b><br>
         Prikdatum: <b>%{dateString}</b><br>
         Gevaccineerd in: <b>%{country}</b><br>
-        Identificatiecode:<br>
+        Uniek certificaatnummer:<br>
         <b>%{identificationCode}</b>
     </p>
 `;

@@ -9,7 +9,7 @@ export const negativeTestV2 = `
     Testdatum: <b>%{sampleDate}</b><br>
     Testuitslag: <b>negatief (geen corona)</b><br><br>
 
-    IdentificatieCode:<br>
+    Uniek certificaatnummer:<br>
     <b>%{identificationCode}</b>
 </p>`;
 

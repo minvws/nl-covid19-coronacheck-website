@@ -10,7 +10,7 @@ const recovery = `
     Geldig vanaf:  <b>%{validFrom}</b><br>
     Geldig tot:  <b>%{validUntil}</b><br><br>
 
-    Identificatiecode:<br>
+    Uniek certificaatnummer:<br>
     <b>%{identificationCode}</b>
 </p>`;
 
