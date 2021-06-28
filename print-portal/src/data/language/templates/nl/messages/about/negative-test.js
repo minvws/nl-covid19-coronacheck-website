@@ -1,4 +1,4 @@
-export const messageInfoTestResultAboutV2 = `
+export const negativeTestV2 = `
 <p>
     De volgende gegevens zijn opgehaald bij de testlocatie:
 </p>
@@ -7,23 +7,28 @@ export const messageInfoTestResultAboutV2 = `
     Type test: <b>%{testType}</b><br>
     Testlocatie: <b>%{testLocation}</b><br>
     Testdatum: <b>%{sampleDate}</b><br>
-    Testuitslag: <b>negatief (geen corona)</b><br>
-    IdentificatieCode: <b>%{identificationCode}</b>
+    Testuitslag: <b>negatief (geen corona)</b><br><br>
+
+    IdentificatieCode:<br>
+    <b>%{identificationCode}</b>
 </p>`;
 
-export const messageInfoTestResultAboutV3 = `
+export const negativeTestV3 = `
 <p>
     De volgende gegevens zijn opgehaald bij de testlocatie:
 </p>
 <p>
     Naam:  <b>%{name}</b><br>
-    Geboortedatum:  <b>%{birthDateString}</b><br>
+    Geboortedatum:  <b>%{birthDateString}</b><br><br>
+
     Type test: <b>%{testType}</b><br>
     Test naam: <b>%{testName}</b><br>
     Testdatum: <b>%{sampleDate}</b><br>
     Testuitslag: <b>negatief (geen corona)</b><br>
     Testlocatie: <b>%{testLocation}</b><br>
     Testproducent: <b>%{manufacturer}</b><br>
-    Getest in: <b>%{country}</b><br>
-    Identificatiecode: <b><span class="identificatie-code">%{identificationCode}</span></b>
+    Getest in: <b>%{country}</b><br><br>
+
+    Identificatiecode:<br>
+    <b>%{identificationCode}</b>
 </p>`;

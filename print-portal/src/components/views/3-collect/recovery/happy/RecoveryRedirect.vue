@@ -11,7 +11,6 @@ export default {
     data() {
         return {
             isLoading: false,
-            type: 'recovery',
             filter: 'recovery,positivetest',
             pages: {
                 cancel: 'ChoiceProof',

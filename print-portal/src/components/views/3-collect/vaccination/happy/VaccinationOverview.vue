@@ -12,7 +12,7 @@ export default {
     mixins: [overviewMixin],
     data() {
         return {
-            type: 'vaccination',
+            filter: 'vaccination',
             pages: {
                 print: 'PrintVaccination',
                 domesticRejected: 'VaccinationsIncomplete'

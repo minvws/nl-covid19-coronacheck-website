@@ -7,7 +7,7 @@ export default {
     name: 'overview-mixin',
     computed: {
         signedEvents() {
-            const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.type);
+            const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);
             const filteredForUnique = []
             // we check for unique events
             for (const signedEvent of signedEvents) {

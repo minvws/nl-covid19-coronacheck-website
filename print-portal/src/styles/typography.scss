@@ -26,10 +26,6 @@ h4 {
     color: $color-coronacheck_black;
 }
 
-.identificatie-code {
-    word-wrap: break-word;
-}
-
 @include mobile() {
 
     h2 {

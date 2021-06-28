@@ -11,7 +11,6 @@ export default {
     data() {
         return {
             isLoading: false,
-            type: 'vaccination',
             filter: 'vaccination',
             pages: {
                 cancel: 'ChoiceProof',

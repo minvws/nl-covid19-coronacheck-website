@@ -31,7 +31,7 @@ export default {
             this.$router.push({ name: this.pages.previous });
         },
         checkResult() {
-            const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.type);
+            const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);
             if (signedEvents.length > 0) {
                 this.$router.push({ name: this.pages.overview });
             } else {
@@ -157,10 +157,9 @@ export default {
                             dateFields = ['date']
                             break;
                         case 'negativetest':
-                            dateFields = ['sampleDate']
-                            break;
                         case 'recovery':
-                            dateFields = ['sampleDate'];
+                        case 'positivetest':
+                            dateFields = ['sampleDate']
                             break;
                         }
                         for (const dateField of dateFields) {

@@ -1,12 +1,9 @@
-class PositiveTest {
-    constructor({
-        sampleDate = '',
-        validFrom = '',
-        validUntil = ''
-    }) {
-        this.sampleDate = sampleDate;
-        this.validFrom = validFrom;
-        this.validUntil = validUntil;
+import _Test from './_Test';
+
+class PositiveTest extends _Test {
+    constructor(positivetest) {
+        super(positivetest);
+        this.positiveResult = true;
     }
 }
 

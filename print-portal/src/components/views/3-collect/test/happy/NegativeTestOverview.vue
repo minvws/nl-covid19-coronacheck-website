@@ -12,7 +12,7 @@ export default {
     mixins: [overviewMixin],
     data() {
         return {
-            type: 'negativetest',
+            filter: 'negativetest',
             pages: {
                 print: 'PrintNegativeTest',
                 domesticRejected: ''

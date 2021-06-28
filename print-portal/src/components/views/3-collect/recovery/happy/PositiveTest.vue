@@ -1,10 +1,9 @@
 <script>
 import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 import SignedEvent from '@/classes/events/SignedEvent';
-import dateTool from '@/tools/date';
 
 export default {
-    name: 'Recovery',
+    name: 'PositiveTest',
     components: {},
     mixins: [proofEventMixin],
     props: {
@@ -15,25 +14,27 @@ export default {
     },
     computed: {
         proofEvent() {
-            return this.signedEvent.event.recovery;
+            return this.signedEvent.event.positivetest;
         }
     },
     methods: {
         openInfo() {
-            const testDate = dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
-            const validFrom = dateTool.dateTimeToString(this.proofEvent.validFrom, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
-            const validUntil = dateTool.dateTimeToString(this.proofEvent.validUntil, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
+            const testType = this.$store.getters.getEuTestType(this.proofEvent.type);
+            const manufacturer = this.$store.getters.getTestManufacturer(this.proofEvent.manufacturer);
             const data = {
                 name: this.holder.fullName,
                 birthDateString: this.holder.birthDateString,
-                testDate,
-                validFrom,
-                validUntil,
-                identificationCode: this.signedEvent.event.unique
+                testType: (testType ? testType.name : this.$t('unknown')),
+                testName: (this.proofEvent.name.length ? this.proofEvent.name : this.$t('unknown')),
+                testLocation: this.proofEvent.facility,
+                sampleDate: this.dateOfTest,
+                manufacturer: manufacturer ? manufacturer.name : this.$t('unknown'),
+                identificationCode: this.signedEvent.event.unique,
+                country: this.proofEvent.country
             }
             this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.recoveryAbout.head'),
-                messageBody: this.$t('message.info.recoveryAbout.body', data),
+                messageHead: this.$t('message.info.positiveTestResultAbout.head'),
+                messageBody: this.$t('message.info.positiveTestResultAbout.body', data),
                 closeButton: true
             })
         }
@@ -44,7 +45,10 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status proof-event__line">
-            {{$t('components.recovery.title')}}
+            {{$t('components.positiveTest.title')}}
+        </div>
+        <div class="proof-event__line">
+            {{$t('components.proofEvent.dateOfTest')}}: {{dateOfTest}}
         </div>
         <div class="proof-event__line">
             {{$t('components.proofEvent.name')}}: {{holder.fullName}}

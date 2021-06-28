@@ -1,5 +1,7 @@
-import { messageInfoTestResultAboutV2, messageInfoTestResultAboutV3 } from '../templates/nl/message-info-testResultAbout';
-import messageInfoVaccinationAbout from '../templates/nl/message-info-vaccinationAbout';
+import { negativeTestV2, negativeTestV3 } from '../templates/nl/messages/about/negative-test';
+import vaccination from '../templates/nl/messages/about/vaccination';
+import recovery from '../templates/nl/messages/about/recovery';
+import positiveTest from '../templates/nl/messages/about/positive-test';
 import footer from '../templates/nl/footer';
 
 // note: some texts use \n for a break. This is the standard.
@@ -137,6 +139,9 @@ const nl = {
             'dateOfBirth': 'Geboortedatum'
         },
         'recovery': {
+            'title': 'Jouw herstelbewijs'
+        },
+        'positiveTest': {
             'title': 'Jouw positieve testuitslag'
         },
         'proofEvent': {
@@ -153,12 +158,20 @@ const nl = {
         'info': {
             'testResultAbout': {
                 'head': 'Wat is er opgehaald?',
-                'bodyV2': messageInfoTestResultAboutV2,
-                'bodyV3': messageInfoTestResultAboutV3
+                'bodyV2': negativeTestV2,
+                'bodyV3': negativeTestV3
             },
             'vaccinationAbout': {
                 'head': 'Wat is er opgehaald?',
-                'body': messageInfoVaccinationAbout
+                'body': vaccination
+            },
+            'recoveryAbout': {
+                'head': 'Wat is er opgehaald?',
+                'body': recovery
+            },
+            'positiveTestResultAbout': {
+                'head': 'Wat is er opgehaald?',
+                'body': positiveTest
             },
             'somethingWrong': {
                 'vaccination': {

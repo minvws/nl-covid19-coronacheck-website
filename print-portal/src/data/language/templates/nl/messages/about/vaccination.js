@@ -1,4 +1,4 @@
-const html = `
+const vaccination = `
     <p>
         Deze gegevens van je vaccinatie zijn opgehaald:
     </p>
@@ -14,8 +14,9 @@ const html = `
         Doses: <b>%{dosesString}</b><br>
         Prikdatum: <b>%{dateString}</b><br>
         Gevaccineerd in: <b>%{country}</b><br>
-        Identificatiecode: <b><span class="identificatie-code">%{identificationCode}</span></b>
+        Identificatiecode:<br>
+        <b>%{identificationCode}</b>
     </p>
 `;
 
-export default html;
+export default vaccination;

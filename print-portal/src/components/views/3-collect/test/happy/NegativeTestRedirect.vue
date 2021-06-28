@@ -12,7 +12,6 @@ export default {
         return {
             isLoading: false,
             filter: 'negativetest',
-            type: 'negativetest',
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'ChoiceTestLocation',

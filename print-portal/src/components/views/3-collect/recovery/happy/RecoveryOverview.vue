@@ -2,17 +2,18 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Recovery from './Recovery';
+import PositiveTest from './PositiveTest';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 
 export default {
     name: 'RecoveryOverview',
-    components: { Page, PageIntro, Recovery, CcButton, CcModestButton },
+    components: { PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton },
     mixins: [overviewMixin],
     data() {
         return {
-            type: 'recovery',
+            filter: 'recovery,positivetest',
             pages: {
                 print: 'PrintRecovery',
                 domesticRejected: '' // todo
@@ -32,9 +33,16 @@ export default {
                 :intro="$t('views.RecoveryOverview.pageIntro')"/>
             <div class="section-block">
                 <div class="proof-events">
-                    <Recovery
-                        :key="latestSignedEvent.unique"
-                        :signed-event="latestSignedEvent"/>
+                    <div v-for="(signedEvent, index) in signedEvents" :key="index">
+                        <Recovery
+                            v-if="signedEvent.event.recovery"
+                            :key="signedEvent.unique"
+                            :signed-event="signedEvent"/>
+                        <PositiveTest
+                            v-if="signedEvent.event.positivetest"
+                            :key="signedEvent.unique"
+                            :signed-event="signedEvent"/>
+                    </div>
                 </div>
                 <div class="section-block__footer">
                     <CcButton
