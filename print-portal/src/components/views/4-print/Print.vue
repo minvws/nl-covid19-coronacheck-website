@@ -2,10 +2,12 @@
 import Page from '@/components/elements/Page';
 import { detect } from 'detect-browser';
 import CcButton from '@/components/elements/CcButton';
-import { getDocument } from '@/tools/print/main';
-import { generateQR } from '@/tools/qr';
-import NLQR from '@/classes/QR/NLQR';
+import { getDocument, generateQR } from '@/tools/print/pdf/src/index';
 import { handleRejection } from '@/tools/error-handler';
+import { QRSizeInCm } from '@/data/constants'
+import NLQR from '@/classes/QR/NLQR';
+import EUQRnegativetest from '@/classes/QR/EUQRnegativetest';
+import EUQRvaccination from '@/classes/QR/EUQRvaccination';
 
 export default {
     name: 'Print',
@@ -56,21 +58,83 @@ export default {
         }
     },
     methods: {
-        createDocument(proof) {
-            const nlQR = new NLQR(proof.domestic);
-            generateQR(nlQR.qr).then(async (urlQR) => {
-                const pages = [
-                    {
+        async createDocument() {
+            // todo remove this
+            /*eslint-disable */
+            const proof = {
+                "domestic": null,
+                "european": {
+                    "expirationTime": "2021-07-27T09:07:28+00:00",
+                    "dcc": {
+                        "ver": "1.3.0",
+                        "nam": {
+                            "fn": "De Bouwer",
+                            "fnt": "DE<BOUWER",
+                            "gn": "Bob",
+                            "gnt": "BOB"
+                        },
+                        "dob": "1960-01-01",
+                        "v": null,
+                        "t": [
+                            {
+                                "tg": "840539006",
+                                "ci": "URN:UCI:01:NL:NGYCBFWBO5FJ7L53IHZY42#5",
+                                "co": "NL",
+                                "is": "Ministry of Health Welfare and Sport",
+                                "tt": "LP6464-4",
+                                "nm": "",
+                                "ma": "1232",
+                                "sc": "2021-06-28T14:12:02+00:00",
+                                "tr": "260415000",
+                                "tc": "Facility approved by the State of The Netherlands"
+                            }
+                        ],
+                        "r": null
+                    },
+                    "qr": "HC1:NCFCS2FY7+J2DO3L7E*SG697CE64586MD2UV88JQTMZS342T%RHG-5F+6PMQ1JF13FEINSMPWKU/$L1F4%RB664%E7NGIN:4./4FQ0:N0DX3FQ5TC1ENNFVS0$VZARZ.BE1II6O:VC8CR7$LV5L-SLHTMSEH+.4FV3G2R%+VW/B7:HQUM0WF48D03B+N5:UQEEU-KI:%6MJ3F2B-7742K-U2BTOW5SRIK::93FB2+BSUJ+/EPZ33NHTE702OXS7%1H4T7E+GE:5I*B+KHV00R-H6TS56O*WN5SH8IRI94CILIWEI PN.4+AE8X142UR.DK17X%913Q448.BGP7UTNQEPUF*KP30JKS9JBVSBH KRD24I30WF3XKI9LZVC.TDG+C9LP1UC+I2P72 K26EONG721K1G22Q343QA K$QCWALGYA3IROWC6V5WZ7RU0YE5AM3:SBR*SFRMYIBLLG5IND00$LIL894+EUFC8V320OX:U*IM3ZLH7NJ2MQ6RH/MJF1QAW%2IBWOOMB%IS.2T3BM%KU-CQC02G+TA*HK8SS9VVSOMARMTU+T6MNP5FU3/JV4WWTU*2WM:MF:BE2CDDT/6E-N345W000FGW62O%DI"
+                }
+            }
+            /* eslint-enable */
+            const pages = [];
+            if (proof.domestic) {
+                const nlQR = new NLQR(proof.domestic);
+                await generateQR(nlQR.qr, 'nl').then(async (urlQR) => {
+                    const page = {
                         type: this.type,
                         territory: 'nl',
                         qr: nlQR,
                         urlQR: urlQR
                     }
-                ]
-                this.document = await getDocument(pages, this.currentLanguage.locale, this.metadata);
-            }, (error) => {
-                handleRejection(error);
-            })
+                    pages.push(page)
+                }, (error) => {
+                    handleRejection(error);
+                })
+            }
+            if (proof.european) {
+                const getEUQR = (type, data) => {
+                    switch (type) {
+                    case 'vaccination':
+                        return new EUQRvaccination(data)
+                    case 'negativetest':
+                        return new EUQRnegativetest(data)
+                    // case 'recovery':
+                    //     return new EUQRrecovery(data)
+                    }
+                }
+                const euQR = getEUQR(this.type, proof.european);
+                await generateQR(euQR.qr, 'eu').then(async (urlQR) => {
+                    const page = {
+                        type: this.type,
+                        territory: 'eu',
+                        qr: euQR,
+                        urlQR: urlQR
+                    }
+                    pages.push(page)
+                }, (error) => {
+                    handleRejection(error);
+                })
+            }
+            this.document = await getDocument(pages, this.currentLanguage.locale, this.metadata, QRSizeInCm);
         },
         render() {
             this.document = null;

@@ -1,13 +1,30 @@
 import dateTool from '@/tools/date';
-// import numberTools from '@/tools/numbers'
 
 class _EUQR {
+    constructor({
+        qr = '',
+        dcc = null,
+        expirationTime = ''
+    }) {
+        this.qr = qr;
+        this.dcc = dcc;
+        this.expirationTime = expirationTime;
+    }
+
     get fullName() {
-        return this.JSON.nam.fn + ', ' + this.JSON.nam.gn;
+        return this.dcc.nam.fn + ', ' + this.dcc.nam.gn;
     }
 
     get birthDateString() {
-        return dateTool.dateToString(this.JSON.dob, 'dd-LL-yyyy');
+        return dateTool.dateToString(this.dcc.dob, 'dd-LL-yyyy');
+    }
+
+    get certificateNumber() {
+        return this.credential.ci
+    }
+
+    get validUntil() {
+        return dateTool.dateTimeToString(this.expirationTime, 'dd-MM-yyyy, HH:mm');
     }
 }
 
