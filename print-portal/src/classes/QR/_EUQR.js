@@ -6,7 +6,6 @@ class _EUQR {
         dcc = null,
         expirationTime = ''
     }) {
-        console.log(dcc, qr);
         this.qr = qr;
         this.dcc = dcc;
         this.expirationTime = expirationTime;
@@ -18,6 +17,14 @@ class _EUQR {
 
     get birthDateString() {
         return dateTool.dateToString(this.dcc.dob, 'dd-LL-yyyy');
+    }
+
+    get certificateNumber() {
+        return this.credential.ci
+    }
+
+    get validUntil() {
+        return dateTool.dateTimeToString(this.expirationTime, 'dd-MM-yyyy, HH:mm');
     }
 }
 
