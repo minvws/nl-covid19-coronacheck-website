@@ -25,7 +25,7 @@ Because the app and website use an internet connection, your IP address will als
 
 If you’ve been tested at a test provider other than the GGD, your BSN will not be processed, but the unique retrieval code and verification code provided to you by the test provider will be used.
 
-In addition, other data is retrieved that cannot be traced back to you directly. [If you want to know exactly what other data is processed, click here](#overzicht-van-verwerkte-persoonsgegevens). There you will find an overview of the data collected and processed to create the coronavirus pass and the EU DCC and a description of which data is actually included in the QR code you have to show at an event or if you want to travel to another country within Europe.
+In addition, other data is retrieved that cannot be traced back to you directly. [If you want to know exactly what other data is processed, click here](#overview-of-processed-personal-data). There you will find an overview of the data collected and processed to create the coronavirus pass and the EU DCC and a description of which data is actually included in the QR code you have to show at an event or if you want to travel to another country within Europe.
 
 ## 2. Where does my data come from?
 
@@ -90,7 +90,7 @@ Your social security number will not be stored. Your IP address will not be stor
 
 For checking a coronavirus pass for use in the Netherlands, the Minister of Health has developed the CoronaCheck Scanner app to be used by the controllers. This shows as little data as possible, namely a green screen (valid coronavirus pass) or a red screen (not valid). This means the checker cannot see whether your coronavirus pass is based on a negative test, a vaccination or a positive test (recovery). If a green screen is displayed, the controller will then see the first letter of your first name and first letter of your last name, date of birth and month of birth as to verify it really is your certificate.
 
-You cannot use your EU DCC in the Netherlands. If you do show your EU DCC to the controller in the Netherlands, the controller will be shown a red screen and a message that you need to show your domestic coronavirus pass. This is because the QR code of the EU DCC contains more data than we consider necessary for access in the Netherlands. If you show the EU DCC in another country, the controller in that other country will see all the data included in the QR code of the EU DCC. [Click here for an overview of that data](#overzicht-van-verwerkte-persoonsgegevens).
+You cannot use your EU DCC in the Netherlands. If you do show your EU DCC to the controller in the Netherlands, the controller will be shown a red screen and a message that you need to show your domestic coronavirus pass. This is because the QR code of the EU DCC contains more data than we consider necessary for access in the Netherlands. If you show the EU DCC in another country, the controller in that other country will see all the data included in the QR code of the EU DCC. [Click here for an overview of that data](#overview-of-processed-personal-data).
 
 Please do note that if you have your QR code scanned in another country outside of the EU, other rules for protecting your personal data may apply. And that you cannot exercise all the rights over there that you have within the EU, because within the EU the GDPR applies.
 
