@@ -96,7 +96,6 @@ export default {
             @click="openModalVaccinationAbout()"
             type="button"
             class="info-button"
-            :aria-expanded="modalOpened ? 'true' : 'false'"
             >
             <img src="assets/img/icons/info.svg" :alt="$t('message.info.vaccinationAbout.head')" />
         </button>
