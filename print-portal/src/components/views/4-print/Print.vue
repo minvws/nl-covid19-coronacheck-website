@@ -4,9 +4,11 @@ import { detect } from 'detect-browser';
 import CcButton from '@/components/elements/CcButton';
 import { getDocument } from '@/tools/print/pdf/src/index';
 import { generateQR } from '@/tools/qr';
-import NLQR from '@/classes/QR/NLQR';
 import { handleRejection } from '@/tools/error-handler';
 import { QRSizeInCm } from '@/data/constants'
+import NLQR from '@/classes/QR/NLQR';
+import EUQRnegativetest from '@/classes/QR/EUQRnegativetest';
+import EUQRvaccination from '@/classes/QR/EUQRvaccination';
 
 export default {
     name: 'Print',
@@ -40,21 +42,50 @@ export default {
         }
     },
     methods: {
-        createDocument(proof) {
-            const nlQR = new NLQR(proof.domestic);
-            generateQR(nlQR.qr).then(async (urlQR) => {
-                const pages = [
-                    {
+        async createDocument(proof) {
+            const pages = [];
+            if (proof.domestic) {
+                const nlQR = new NLQR(proof.domestic);
+                await generateQR(nlQR.qr).then(async (urlQR) => {
+                    const page = {
                         type: this.type,
                         territory: 'nl',
                         qr: nlQR,
                         urlQR: urlQR
                     }
-                ]
-                this.document = await getDocument(pages, this.currentLanguage.locale, this.metadata, this.$t('pdf'), QRSizeInCm);
-            }, (error) => {
-                handleRejection(error);
-            })
+                    pages.push(page)
+                }, (error) => {
+                    handleRejection(error);
+                })
+            }
+            if (proof.european) {
+                const getEUQR = (type, data) => {
+                    switch (type) {
+                    case 'vaccination':
+                        return new EUQRvaccination(data)
+                    case 'negativetest':
+                        return new EUQRnegativetest(data)
+                    // case 'recovery':
+                    //     return new EUQRrecovery(data)
+                    }
+                }
+                console.log(this.type);
+                const euQR = getEUQR(this.type, proof.european);
+                console.log(euQR);
+                await generateQR(euQR.qr).then(async (urlQR) => {
+                    const page = {
+                        type: this.type,
+                        territory: 'eu',
+                        qr: euQR,
+                        urlQR: urlQR
+                    }
+                    pages.push(page)
+                }, (error) => {
+                    handleRejection(error);
+                })
+            }
+            console.log(pages);
+            this.document = await getDocument(pages, this.currentLanguage.locale, this.metadata, QRSizeInCm);
         },
         render() {
             this.document = null;

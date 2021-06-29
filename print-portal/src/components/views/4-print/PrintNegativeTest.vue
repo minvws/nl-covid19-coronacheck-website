@@ -16,7 +16,7 @@ export default {
 <template>
     <div class="PrintNegativeTest">
         <Print
-            :type="'negativeTest'"
+            :type="'negativetest'"
             @back="back">
             <PageIntro
                 :head="$t('views.PrintNegativeTest.pageHeader')"

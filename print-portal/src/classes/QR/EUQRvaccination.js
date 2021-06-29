@@ -3,15 +3,8 @@ import store from '@/store';
 import dateTool from '@/tools/date';
 
 class EUQRvaccination extends EUQR {
-    constructor({
-        JSON = {}
-    }) {
-        super();
-        this.JSON = JSON
-    }
-
     get credential() {
-        return this.JSON.v[0];
+        return this.dcc.v[0];
     }
 
     get vaccineBrand() {
@@ -42,7 +35,6 @@ class EUQRvaccination extends EUQR {
     }
 
     get vaccinationCountry() {
-        // todo translate this?
         return this.credential.co;
     }
 
