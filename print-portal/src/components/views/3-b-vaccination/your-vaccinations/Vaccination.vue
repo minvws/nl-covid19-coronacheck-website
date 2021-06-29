@@ -81,7 +81,7 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status proof-event__line">
-            {{title}}
+            <strong>{{title}}</strong>
         </div>
         <div class="proof-event__line">
             {{$t('components.vaccination.name')}}: {{holder.fullName}}

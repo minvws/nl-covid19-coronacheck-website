@@ -76,30 +76,39 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status proof-event__line">
-            {{$t('components.NegativeTest.resultNegative')}}
+            <strong>{{$t('components.NegativeTest.resultNegative')}}</strong>
         </div>
         <div
             v-if="negativeTest.protocolVersion === '2.0'"
             class="proof-event__wrapper">
-            <div class="proof-event__line">
-                {{$t('components.NegativeTest.dateOfTest')}}: {{dateOfTest}}
-            </div>
-            <div class="proof-event__line">
-                {{$t('components.NegativeTest.yourCredentials')}}: {{holder.discreteInfoString}}
-            </div>
+            <dl>
+                <div class="proof-event__line">
+                    <dt>{{$t('components.NegativeTest.dateOfTest')}}:</dt>
+                    <dd>{{dateOfTest}}</dd>
+                </div>
+                <div class="proof-event__line">
+                    <dt>{{$t('components.NegativeTest.yourCredentials')}}:</dt>
+                    <dd>{{holder.discreteInfoString}}</dd>
+                </div>
+            </dl>
         </div>
         <div
             v-if="negativeTest.protocolVersion === '3.0'"
             class="proof-event__wrapper">
-            <div class="proof-event__line">
-                {{$t('components.NegativeTest.dateOfTest')}}: {{dateOfTest}}
-            </div>
-            <div class="proof-event__line">
-                {{$t('components.NegativeTest.name')}}: {{holder.fullName}}
-            </div>
-            <div class="proof-event__line">
-                {{$t('components.NegativeTest.dateOfBirth')}}: {{holder.birthDateString}}
-            </div>
+            <dl>
+                <div class="proof-event__line">
+                    <dt>{{$t('components.NegativeTest.dateOfTest')}}:</dt>
+                    <dd>{{dateOfTest}}</dd>
+                </div>
+                <div class="proof-event__line">
+                    <dt>{{$t('components.NegativeTest.name')}}:</dt>
+                    <dd>{{holder.fullName}}</dd>
+                </div>
+                <div class="proof-event__line">
+                    <dt>{{$t('components.NegativeTest.dateOfBirth')}}:</dt>
+                    <dd>{{holder.birthDateString}}</dd>
+                </div>
+            </dl>
         </div>
 
         <button
