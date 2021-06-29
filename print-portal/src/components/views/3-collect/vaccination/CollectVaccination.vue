@@ -4,10 +4,16 @@ import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
 import { handleRejection } from '@/tools/error-handler';
 import NoDigiD from '@/components/views/3-collect/_shared/NoDigiD';
+import TooBusyButton from '@/components/elements/TooBusyButton';
 
 export default {
     name: 'CollectVaccination',
-    components: { NoDigiD, Page, PageIntro, CcButton },
+    components: { TooBusyButton, NoDigiD, Page, PageIntro, CcButton },
+    data() {
+        return {
+            tooBusy: window.config.tooBusy
+        }
+    },
     computed: {},
     methods: {
         getToken() {
@@ -33,7 +39,9 @@ export default {
                 :intro="$t('views.collectVaccination.pageIntro')"/>
             <div class="section-block">
                  <div class="section-block__footer">
+                     <TooBusyButton v-if="tooBusy"/>
                      <CcButton
+                         v-if="!tooBusy"
                          @select="getToken()"
                          :label="$t('components.digid.loginDigid')"/>
                      <NoDigiD/>

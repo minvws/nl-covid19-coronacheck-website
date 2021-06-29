@@ -14,7 +14,7 @@ const en = {
     'views': {
         'home': {
             'pageHeader': 'Get access with a certificate on paper',
-            'pageIntro': '<h2 class="screen-reader-text">Here\'s how it works</h2><p>A certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><div class="home__section"><h4>Only access with a certificate</h4><p>Want access to certain locations and activities? Or are you travelling abroad? You can if you have been vaccinated or if you have a negative test result that confirms you don’t have corona.</p></div><div class="home__section"><h4>QR code = your proof</h4><p>You can make a QR code of your vaccination or a negative test result. This is your certificate. The QR code is scanned before you get access.</p></div><div class="home__section"><h4>QR codes for the Netherlands and international</h4><p>This app generates a QR code for the Netherlands and one for other countries. Travelling outside of the Netherlands? Then use your international QR code.</p></div>',
+            'pageIntro': '<h2 class="screen-reader-text">Here\'s how it works</h2><p>A certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><div class="home__section"><h4>Only access with a certificate</h4><p>Want access to certain locations and activities? Or are you travelling abroad? You can if you have been fully vaccinated or if you have a negative test result that confirms you don’t have corona.</p><p>Please note: not fully vaccinated? Then you can’t make a certificate.</p></div><div class="home__section"><h4>QR code = your proof</h4><p>You can make a QR code of your vaccination or a negative test result. This is your certificate. The QR code is scanned before you get access.</p></div><div class="home__section"><h4>QR codes for the Netherlands and international</h4><p>This app generates a QR code for the Netherlands and one for other countries. Travelling outside of the Netherlands? Then use your international QR code.</p></div>',
             'userConsentHeader': 'Start making a certificate on paper',
             'userConsentText': 'I have read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and understand how CoronaCheck processes my data.',
             'noConsentError': 'Give consent to the privacy statement first'
@@ -301,7 +301,8 @@ const en = {
     'of': 'of',
     'skiplink': 'Skip to content',
     'somethingIsWrong': 'Is something wrong?',
-    'unknown': 'Unknown'
+    'unknown': 'Unknown',
+    'tooBusy': 'It\'s very busy right now, and therefore you cannot log in at the moment. Could you please try again later?'
 }
 
 export default en;

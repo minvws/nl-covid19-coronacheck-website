@@ -14,7 +14,7 @@ const nl = {
     'views': {
         'home': {
             'pageHeader': 'Krijg toegang met een papieren bewijs',
-            'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2><p>Een bewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><div class="home__section"><h4>Alleen toegang met een bewijs</h4><p>Wil je toegang krijgen tot bepaalde locaties of activiteiten? Of ga je op reis? Dat kan als je gevaccineerd bent. Of als uit een test blijkt dat je geen corona hebt. </p></div><div class="home__section"><h4>QR-code = jouw bewijs</h4><p>Je kunt een persoonlijke QR-code maken van een vaccinatie of een negatieve testuitslag. Dat is jouw bewijs. De QR-code wordt gecheckt voordat je toegang krijgt.</p></div><div class="home__section"><h4>QR-codes voor Nederland en internationaal</h4><p>De app maakt twee QR-codes: één voor Nederland en één voor internationaal. Reis je buiten Nederland? Gebruik dan je internationale QR-code.</p></div>',
+            'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2><p>Een bewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><div class="home__section"><h4>Alleen toegang met een bewijs</h4><p>Wil je toegang krijgen tot bepaalde locaties of activiteiten? Of ga je op reis? Dat kan als uit een test blijkt dat je geen corona hebt. Of als je volledig gevaccineerd bent.</p><p>Let op: ben je je niet volledig gevaccineerd? Dan kun je geen bewijs maken.</p></div><div class="home__section"><h4>QR-code = jouw bewijs</h4><p>Je kunt een persoonlijke QR-code maken van een vaccinatie of een negatieve testuitslag. Dat is jouw bewijs. De QR-code wordt gecheckt voordat je toegang krijgt.</p></div><div class="home__section"><h4>QR-codes voor Nederland en internationaal</h4><p>De app maakt twee QR-codes: één voor Nederland en één voor internationaal. Reis je buiten Nederland? Gebruik dan je internationale QR-code.</p></div>',
             'userConsentHeader': 'Maak een papieren bewijs',
             'userConsentText': 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank">privacyverklaring</a> gelezen en begrijp hoe CoronaCheck mijn gegevens gebruikt',
             'noConsentError': 'Ga eerst akkoord met de privacyverklaring'
@@ -312,7 +312,7 @@ const nl = {
                 'dateOfBirth': 'Geboortedag',
                 'validFrom': 'Geldig vanaf',
                 'validUntil': 'Geldig tot',
-                'validUntilVaccination': 'Dit papieren bewijs is geldig tot %{date} Daarna kan je een nieuw Coronatoegangsbewijs maken op coronacheck.nl',
+                'validUntilVaccination': 'Dit papieren bewijs is geldig tot %{date} Daarna kan je een nieuw coronabewijs maken op coronacheck.nl',
                 'privacyNote': 'Bovenstaande gegevens hoef je niet te laten zien bij de ingang.'
             }
         },
@@ -337,7 +337,8 @@ const nl = {
     'of': 'van',
     'skiplink': 'Ga direct naar inhoud',
     'somethingIsWrong': 'Klopt er iets niet?',
-    'unknown': 'Onbekend'
+    'unknown': 'Onbekend',
+    'tooBusy': 'Het is erg druk op dit moment. Daardoor kun je niet inloggen. Wil je het op een later moment nog eens proberen?'
 }
 
 export default nl;

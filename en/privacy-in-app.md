@@ -25,7 +25,7 @@ Because the app and website use an internet connection, your IP address will als
 
 If you’ve been tested at a test provider other than the GGD, your BSN will not be processed, but the unique retrieval code and verification code provided to you by the test provider will be used.
 
-In addition, other data is retrieved that cannot be traced back to you directly. [If you want to know exactly what other data is processed, click here](#overzicht-van-verwerkte-persoonsgegevens). There you will find an overview of the data collected and processed to create the coronavirus pass and the EU DCC and a description of which data is actually included in the QR code you have to show at an event or if you want to travel to another country within Europe.
+In addition, other data is retrieved that cannot be traced back to you directly. [If you want to know exactly what other data is processed, click here](#overview-of-processed-personal-data). There you will find an overview of the data collected and processed to create the coronavirus pass and the EU DCC and a description of which data is actually included in the QR code you have to show at an event or if you want to travel to another country within Europe.
 
 ## 2. Where does my data come from?
 
@@ -90,13 +90,13 @@ Your social security number will not be stored. Your IP address will not be stor
 
 For checking a coronavirus pass for use in the Netherlands, the Minister of Health has developed the CoronaCheck Scanner app to be used by the controllers. This shows as little data as possible, namely a green screen (valid coronavirus pass) or a red screen (not valid). This means the checker cannot see whether your coronavirus pass is based on a negative test, a vaccination or a positive test (recovery). If a green screen is displayed, the controller will then see the first letter of your first name and first letter of your last name, date of birth and month of birth as to verify it really is your certificate.
 
-You cannot use your EU DCC in the Netherlands. If you do show your EU DCC to the controller in the Netherlands, the controller will be shown a red screen and a message that you need to show your domestic coronavirus pass. This is because the QR code of the EU DCC contains more data than we consider necessary for access in the Netherlands. If you show the EU DCC in another country, the controller in that other country will see all the data included in the QR code of the EU DCC. [Click here for an overview of that data](#overzicht-van-verwerkte-persoonsgegevens).
+You cannot use your EU DCC in the Netherlands. If you do show your EU DCC to the controller in the Netherlands, the controller will be shown a red screen and a message that you need to show your domestic coronavirus pass. This is because the QR code of the EU DCC contains more data than we consider necessary for access in the Netherlands. If you show the EU DCC in another country, the controller in that other country will see all the data included in the QR code of the EU DCC. [Click here for an overview of that data](#overview-of-processed-personal-data).
 
 Please do note that if you have your QR code scanned in another country outside of the EU, other rules for protecting your personal data may apply. And that you cannot exercise all the rights over there that you have within the EU, because within the EU the GDPR applies.
 
  ## 8. Is there automated decision-making?
 
-Yes, if you request your coronavirus pass or EU DCC via the website or via the app, this process is handled completely automatically. If you get stuck as a result and you do meet the requirements, there are several options for getting a national coronavirus pass and an EU DCC. First of all, there is a page with answers to the most frequently asked questions. If you do not find an answer to your question there, you can contact the helpdesk via: [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl). They can help you if you are stuck because the technology is not working properly. For example, the system may indicate that you do not have enough data to create a certificate, but you are sure that this is not the case. The helpdesk can then support you in finding a solution. For example, it may be that the care provider who tested or vaccinated you did not store the data correctly. You can then have this adjusted through the care provider.
+Yes, if you request your coronavirus pass or EU DCC via the website or via the app, this process is handled completely automatically. If you get stuck as a result and you do meet the requirements, there are several options for getting a national coronavirus pass and an EU DCC. First of all, there is a page with answers to the most frequently asked questions. If you do not find an answer to your question there, you can contact the helpdesk via: [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl). They can help you if you are stuck because the technology is not working properly. For example, the system may indicate that you do not have enough data to create a certificate, but you are sure that this is not the case. The helpdesk can then support you in finding a solution. For example, it may be that the care provider who tested or vaccinated you did not store the data correctly. You can then have this adjusted through the care provider.
 
 In addition, a route has been developed via a care provider portal. You can then contact the person who vaccinated or tested you and you can still receive a domestic coronavirus pass and an EU DCC via that route.
 
@@ -110,7 +110,7 @@ The option to invoke one of your privacy rights regarding the use of CoronaCheck
 
 ## 10. Report complains about the use of your data?
 
-For questions or complaints about the use of the CoronaCheck-app, coronacheck.nl or the CoronaCheck scanner app, please contact the helpdesk: [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
+For questions or complaints about the use of the CoronaCheck-app, coronacheck.nl or the CoronaCheck scanner app, please contact the helpdesk: [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 Contact details of the Data Protection Officer of the Ministry of Health, Welfare and Sport can be found on the [Ministry's website](https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/privacy).
 

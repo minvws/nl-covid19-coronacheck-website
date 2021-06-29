@@ -26,6 +26,13 @@ h4 {
     color: $color-coronacheck_black;
 }
 
+.too-busy-message {
+    margin: 18px 0 40px 0;
+    font-style: italic;
+    border-left: 1px solid #000;
+    padding-left: 12px;
+}
+
 @include mobile() {
 
     h2 {

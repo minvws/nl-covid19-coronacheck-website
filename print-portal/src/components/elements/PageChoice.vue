@@ -10,6 +10,11 @@ export default {
         body: {
             type: String,
             required: true
+        },
+        inactive: {
+            type: Boolean,
+            required: false,
+            default: false
         }
     },
     methods: {
@@ -23,7 +28,8 @@ export default {
 <template>
     <button
         @click="select"
-        class="PageChoice">
+        class="PageChoice"
+        :class="{'PageChoice--inactive': inactive}">
         <div class="PageChoice__content">
             <div class="PageChoice__header PageChoice__line">
                 {{header}}
@@ -59,6 +65,11 @@ export default {
     outline: none;
     white-space: normal;
     min-height: 80px;
+
+    &--inactive {
+        pointer-events: none;
+        opacity: 0.2;
+    }
 
     &:hover {
         background: #fff;

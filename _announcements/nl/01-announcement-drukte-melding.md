@@ -7,7 +7,7 @@ title: Sorry, het is erg druk
 # Choose a style: error or info
 style: error
 ---
-Vanaf 24 juni is het mogelijk om in de CoronaCheck-app je vaccinatiegegevens om te zetten in een QR-code. Met die QR-code krijg je toegang tot evenementen en locaties in Nederland, waar een coronabewijs gevraagd wordt. Veel mensen willen die QR-code in CoronaCheck meteen gaan gebruiken. Het kan daarom erg druk zijn in de app. Als het te druk is, vragen we je om het op een later moment het nog eens te proberen.
+Vanaf 24 juni is het mogelijk om in de CoronaCheck-app je vaccinatiegegevens om te zetten in een QR-code. Met die QR-code krijg je toegang tot evenementen en locaties in Nederland, waar een coronabewijs gevraagd wordt. Veel mensen willen die QR-code in CoronaCheck meteen gaan gebruiken. Het kan daarom erg druk zijn in de app. Als het te druk is, vragen we je om het over een paar dagen nog eens te proberen.
 
 Om een QR-code van je vaccinatiegegevens te maken, heb je de nieuwe versie van de CoronaCheck-app nodig. <a href="/nl/faq/1-1-hoe-werkt-de-coronacheck-app/">Lees hier hoe je je vaccinatiegegevens om kunt zetten in een QR-code</a>.
 
