@@ -97,7 +97,7 @@ Please do note that if you have your QR code scanned in another country outside 
 
  ## 8. Is there automated decision-making?
 
-Yes, if you request your coronavirus pass or EU DCC via the website or via the app, this process is handled completely automatically. If you get stuck as a result and you do meet the requirements, there are several options for getting a national coronavirus pass and an EU DCC. First of all, there is a page with answers to the most frequently asked questions. If you do not find an answer to your question there, you can contact the helpdesk via: [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl). They can help you if you are stuck because the technology is not working properly. For example, the system may indicate that you do not have enough data to create a certificate, but you are sure that this is not the case. The helpdesk can then support you in finding a solution. For example, it may be that the care provider who tested or vaccinated you did not store the data correctly. You can then have this adjusted through the care provider.
+Yes, if you request your coronavirus pass or EU DCC via the website or via the app, this process is handled completely automatically. If you get stuck as a result and you do meet the requirements, there are several options for getting a national coronavirus pass and an EU DCC. First of all, there is a page with answers to the most frequently asked questions. If you do not find an answer to your question there, you can contact the helpdesk via: [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl). They can help you if you are stuck because the technology is not working properly. For example, the system may indicate that you do not have enough data to create a certificate, but you are sure that this is not the case. The helpdesk can then support you in finding a solution. For example, it may be that the care provider who tested or vaccinated you did not store the data correctly. You can then have this adjusted through the care provider.
 
 In addition, a route has been developed via a care provider portal. You can then contact the person who vaccinated or tested you and you can still receive a domestic coronavirus pass and an EU DCC via that route.
 
@@ -111,7 +111,7 @@ The option to invoke one of your privacy rights regarding the use of CoronaCheck
 
 ## 10. Report complains about the use of your data?
 
-For questions or complaints about the use of the CoronaCheck-app, coronacheck.nl or the CoronaCheck scanner app, please contact the helpdesk: [helpdesk@CoronaCheck.nl](mailto:helpdesk@coronacheck.nl).
+For questions or complaints about the use of the CoronaCheck-app, coronacheck.nl or the CoronaCheck scanner app, please contact the helpdesk: [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 Contact details of the Data Protection Officer of the Ministry of Health, Welfare and Sport can be found on the [Ministry's website](https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/privacy).
 

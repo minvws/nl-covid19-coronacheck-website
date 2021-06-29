@@ -254,7 +254,7 @@ const nl = {
                 'dateOfBirth': 'Geboortedag',
                 'validFrom': 'Geldig vanaf',
                 'validUntil': 'Geldig tot',
-                'validUntilVaccination': 'Dit papieren bewijs is geldig tot %{date} Daarna kan je een nieuw Coronatoegangsbewijs maken op coronacheck.nl',
+                'validUntilVaccination': 'Dit papieren bewijs is geldig tot %{date} Daarna kan je een nieuw coronabewijs maken op coronacheck.nl',
                 'privacyNote': 'Bovenstaande gegevens hoef je niet te laten zien bij de ingang.'
             }
         },
