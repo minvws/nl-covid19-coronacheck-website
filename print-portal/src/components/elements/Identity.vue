@@ -29,7 +29,7 @@ export default {
 </script>
 
 <template>
-    <div class="Identity">
+    <header class="Identity">
         <Skiplinks/>
 
         <div class="logo">
@@ -62,7 +62,7 @@ export default {
         </a>
         <LanguagePicker
             v-if="hasLanguages"/>
-    </div>
+    </header>
 </template>
 
 <style lang="scss">
