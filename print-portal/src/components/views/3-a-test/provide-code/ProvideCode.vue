@@ -131,7 +131,7 @@ export default {
                 const headers = {
                     'Authorization': `Bearer ${this.token.toUpperCase()}`,
                     'CoronaCheck-Protocol-Version': '3.0',
-                    'Content-Type': 'application/x-www-form-urlencoded'
+                    'Content-Type': 'application/json'
                 };
 
                 if (options.includeVerificationCode) {
