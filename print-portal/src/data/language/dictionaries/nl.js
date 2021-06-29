@@ -102,17 +102,37 @@ const nl = {
         'print': {
             'openPDF': 'Open PDF'
         },
-        'PrintNegativeTest': {
-            'pageHeader': 'Print jouw Nederlandse testbewijs',
-            'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een Nederlands testbewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen. Als de Europese regelgeving ingaat (vanaf 1 juli) kun je ook een internationale QR-code maken.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+        'printNegativeTest': {
+            'both': {
+                'pageHeader': 'Print jouw bewijzen',
+                'pageIntro': '<p><b>Jouw bewijzen</b><br>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een QR-code voor als je internationaal reist.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+            },
+            'domestic': {
+                'pageHeader': 'Print jouw Nederlandse testbewijs',
+                'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een Nederlands testbewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt.</p>'
+            },
+            'european': {
+                'pageHeader': 'TODO',
+                'pageIntro': 'TODO'
+            }
         },
         'printVaccination': {
-            'pageHeader': 'Print jouw Nederlandse vaccinatiebewijs',
-            'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een Nederlands vaccinatiebewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen. Als de Europese regelgeving ingaat (vanaf 1 juli) kun je ook een internationale QR-code maken.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+            'both': {
+                'pageHeader': 'Print jouw bewijzen',
+                'pageIntro': 'p><b>Jouw bewijzen</b><br>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt nu twee QR-codes: één voor Nederland en één internationale.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+            },
+            'european': {
+                'pageHeader': 'Print jouw internationale vaccinatiebewijs',
+                'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een internationaal vaccinatiebewijs gemaakt, in de vorm van een QR-code. Deze is alleen internationaal geldig, maar niet in Nederland.</p><p>Je hebt geen Nederlands vaccinatiebewijs. Dit kan bijvoorbeeld komen doordat je maar één prik hebt gehad. Voeg je tweede prik of een herstelverklaring toe om een bewijs te maken dat geldig is in Nederland.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+            }
+            // domestic only is a non existing scenario for vaccination
         },
         'printRecovery': {
-            'pageHeader': 'Print jouw bewijzen',
-            'pageIntro': '<h4>Jouw bewijzen</h4><p>Je hebt een herstelbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een QR-code voor als je reist binnen de Europese Unie.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 maand geldig. Daarna kan je een nieuw papieren herstelbewijs maken.</p>'
+            'both': {
+                'pageHeader': 'Print jouw bewijzen',
+                'pageIntro': '<h4>Jouw bewijzen</h4><p>Je hebt een herstelbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een internationale QR-code.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+            }
+            // european only and domestic only is a non existing scenario for recovery
         }
     },
     'components': {

@@ -36,6 +36,23 @@ export default {
                 title: this.$t('pdf.metadata.title'),
                 author: this.$t('pdf.metadata.author')
             };
+        },
+        hasDomestic() {
+            return this.$store.state.qrs.proof.domestic;
+        },
+        hasEuropean() {
+            return this.$store.state.qrs.proof.european;
+        },
+        pageType() {
+            if (this.hasDomestic && this.hasEuropean) {
+                return 'both';
+            } else {
+                if (this.hasDomestic) {
+                    return 'domestic';
+                } else {
+                    return 'european';
+                }
+            }
         }
     },
     methods: {

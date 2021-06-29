@@ -65,7 +65,7 @@ export default {
                     // currently check if there is domestic result. From 2.1 on
                     // we have to check if there is either domestic or eu
                     if (response.data) {
-                        if (response.data.domestic) {
+                        if (response.data.domestic || response.data.european) {
                             this.$store.commit('qrs/add', response.data);
                             this.$router.push({ name: this.pages.print });
                         } else {
