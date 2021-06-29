@@ -107,7 +107,6 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
             url: url,
             data: { filter: filter }
         }).then((response) => {
-            console.log(cmsDecode(response.data.payload));
             resolve(response.data)
         }).catch((error) => {
             reject(error);
