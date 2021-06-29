@@ -1,10 +1,18 @@
-import _EUQR from './_EUQR';
+import _EUQRtest from './_EUQRtest';
 import store from '@/store';
 import dateTool from '@/tools/date';
 
-class EUQRnegativetest extends _EUQR {
+class EUQRnegativetest extends _EUQRtest {
     get credential() {
         return this.dcc.t[0];
+    }
+
+    get dateOfTest() {
+        return dateTool.dateTimeToString(this.credential.sc);
+    }
+
+    get testLocation() {
+        return this.credential.tc;
     }
 
     get testType() {
@@ -16,25 +24,9 @@ class EUQRnegativetest extends _EUQR {
         return this.credential.nm;
     }
 
-    get dateOfTest() {
-        return dateTool.dateTimeToString(this.credential.sc);
-    }
-
-    get testLocation() {
-        return this.credential.tc;
-    }
-
     get testManufacturer() {
         const manufacturer = store.getters.getTestManufacturer(this.credential.ma);
         return manufacturer ? manufacturer.name : '';
-    }
-
-    get countryOfTest() {
-        return this.credential.co;
-    }
-
-    get certificateIssuer() {
-        return this.credential.is;
     }
 
     get validFrom() {

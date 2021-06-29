@@ -2,11 +2,14 @@
 export default {
     name: 'print-mixin',
     computed: {
+        proof() {
+            return this.$store.state.qrs.proof
+        },
         hasDomestic() {
-            return this.$store.state.qrs.proof.domestic;
+            return this.proof.domestic;
         },
         hasEuropean() {
-            return this.$store.state.qrs.proof.european;
+            return this.proof.european;
         },
         pageType() {
             if (this.hasDomestic && this.hasEuropean) {

@@ -1,4 +1,4 @@
 [submodule "print-portal/src/tools/print/pdf"]
 	path = print-portal/src/tools/print/pdf
 	url = git@github.com:91divoc-ln/dcc-pdf-tools.git
-	branch = feature/eu-dcc
+	branch = refactor/proofs
