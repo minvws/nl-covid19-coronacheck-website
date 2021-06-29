@@ -33,12 +33,10 @@ export default {
         <Skiplinks/>
 
         <div class="logo">
-            <a href="https://coronacheck.nl/">
-                <img
-                    :alt="$t('logo-government')"
-                    width="45"
-                    src="assets/img/rijksoverheid/label_ministerie.svg"/>
-            </a>
+            <img
+                :alt="$t('logo-government')"
+                width="45"
+                src="assets/img/rijksoverheid/label_ministerie.svg"/>
         </div>
 
         <div class="pagewrap">
