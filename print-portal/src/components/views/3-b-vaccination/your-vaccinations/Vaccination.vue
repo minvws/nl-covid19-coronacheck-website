@@ -84,10 +84,12 @@ export default {
             <strong>{{title}}</strong>
         </div>
         <div class="proof-event__line">
-            {{$t('components.vaccination.name')}}: {{holder.fullName}}
+            <dt>{{$t('components.vaccination.name')}}:</dt>
+            <dd>{{holder.fullName}}</dd>
         </div>
         <div class="proof-event__line">
-            {{$t('components.vaccination.dateOfBirth')}}: {{holder.birthDateString}}
+            <dt>{{$t('components.vaccination.dateOfBirth')}}:</dt>
+            <dd>{{holder.birthDateString}}</dd>
         </div>
 
         <button
