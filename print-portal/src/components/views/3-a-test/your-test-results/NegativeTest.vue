@@ -114,8 +114,9 @@ export default {
         <button
             @click="openModalTestResultsAbout()"
             type="button"
-            class="info-button">
-            <img src="assets/img/icons/info.svg" alt="Wat is er opgehaald?"/>
+            class="info-button"
+            >
+            <img src="assets/img/icons/info.svg" :alt="$t('message.info.testResultAbout.head')"/>
         </button>
     </div>
 </template>
