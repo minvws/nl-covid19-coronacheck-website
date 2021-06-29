@@ -94,7 +94,7 @@ export default {
             @click="openModalVaccinationAbout()"
             type="button"
             class="info-button">
-            <img src="assets/img/icons/info.svg" alt=""/>
+            <img src="assets/img/icons/info.svg" alt="Wat is er opgehaald?" />
         </button>
     </div>
 </template>
