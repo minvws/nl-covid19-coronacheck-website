@@ -271,7 +271,7 @@ const nl = {
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
     'goBackToStart': 'Naar home',
-    'header-appstore': 'Downloaden in de App Store',
+    'header-appstore': 'Download in de App Store',
     'header-googleplaystore': 'Ontdek het op Google Play',
     'identity_image_alt': 'Holder QR maken',
     'logo-government': 'Logo Rijksoverheid, homepage',
