@@ -2,7 +2,7 @@
 layout: content
 lang: nl
 showBreadCrumbs: true
-title: Privacyverklaring CoronaCheck en fysiek coronatoegangsbewijs
+title: Privacyverklaring CoronaCheck en fysiek Coronatoegangsbewijs
 redirect_from: /privacy
 ---
 Deze privacyverklaring is geschreven voor de inzet van de applicaties CoronaCheck en Coronacheck.nl vanaf 24 juni 2021 en legt uit op welke wijze persoonsgegevens van personen die een Coronatoegangsbewijs of een EU Digitaal Corona Certificaat genereren en gebruiken worden verwerkt en welke maatregelen genomen zijn om deze persoonsgegevens te beschermen. 
@@ -67,9 +67,9 @@ De verordening ziet op een Europees (technisch) kader voor de uitgifte van inter
 
 ### Grondslag nationaal recht
 
-De Tijdelijke wet coronatoegangsbewijzen regelt de inzet van toegangsbewijzen met als doel het heropenen van de Nederlandse samenleving. In artikel 58re lid 4 staat dat de minister van VWS zorg draagt voor de inrichting en het beheer van de applicaties en waarborgen treft om ervoor te zorgen dat met de applicaties uitsluitend betrouwbare resultaten getoond worden. In art. 58re lid 5 is de minister van VWS aangewezen als verwerkingsverantwoordelijke. De grondslag voor het verwerken van de daarvoor benodigde gegevens is geregeld in het wetsvoorstel Wijziging van de Wet publieke gezondheid in verband met enkele verbeteringen en preciseringen van de tijdelijke regels over de inzet van coronatoegangsbewijzen bij de bestrijding van COVID-19. In artikel 58re lid 6 is de grondslag voor de minister opgenomen om persoonsgegevens, waaronder persoonsgegevens over de gezondheid te verwerken. In de ministeriële regeling tot wijziging van de Tijdelijke regeling maatregelen COVID-19 in verband met de inzet van coronatoegangsbewijzen op basis van een negatieve testuitslag (artikel 6.31) en in de ministeriële regeling tot wijziging van de Tijdelijke regeling maatregelen COVID-19 in verband met de inzet van coronatoegangsbewijzen op basis van vaccinatie- of herstelbewijzen (artikel 6.31a) wordt geregeld welke persoonsgegevens mogen worden verwerkt. 
+De Tijdelijke wet coronatoegangsbewijzen regelt de inzet van toegangsbewijzen met als doel het heropenen van de Nederlandse samenleving. In artikel 58re lid 4 staat dat de minister van VWS zorg draagt voor de inrichting en het beheer van de applicaties en waarborgen treft om ervoor te zorgen dat met de applicaties uitsluitend betrouwbare resultaten getoond worden. In art. 58re lid 5 is de minister van VWS aangewezen als verwerkingsverantwoordelijke. De grondslag voor het verwerken van de daarvoor benodigde gegevens is geregeld in de wet Wijziging van de Wet publieke gezondheid in verband met enkele verbeteringen en preciseringen van de tijdelijke regels over de inzet van coronatoegangsbewijzen bij de bestrijding van COVID-19. In artikel 58re lid 6 is de grondslag voor de minister opgenomen om persoonsgegevens, waaronder persoonsgegevens over de gezondheid te verwerken. In de ministeriële regeling tot wijziging van de Tijdelijke regeling maatregelen COVID-19 in verband met de inzet van coronatoegangsbewijzen op basis van een negatieve testuitslag (artikel 6.31) en in de ministeriële regeling tot wijziging van de Tijdelijke regeling maatregelen COVID-19 in verband met de inzet van coronatoegangsbewijzen op basis van vaccinatie- of herstelbewijzen (artikel 6.31a) wordt geregeld welke persoonsgegevens mogen worden verwerkt. 
 
-Voor het verstrekken van vaccinatiegegevens door het RIVM ten behoeve van een nationaal Coronatoegangsbewijs is de grondslag geregeld in het wetsvoorstel Wijziging van de Wet publieke gezondheid in verband met enkele verbeteringen en preciseringen van de tijdelijke regels over de inzet van coronatoegangsbewijzen bij de bestrijding van COVID-19. In de ministeriële regeling tot wijziging van de Tijdelijke regeling maatregelen COVID-19 in verband met de inzet van coronatoegangsbewijzen op basis van vaccinatie of herstel (artikel 6.31a) wordt geregeld welke persoonsgegevens door het RIVM mogen worden verwerkt. 
+Voor het verstrekken van vaccinatiegegevens door het RIVM ten behoeve van een nationaal Coronatoegangsbewijs is de grondslag geregeld in de wet Wijziging van de Wet publieke gezondheid in verband met enkele verbeteringen en preciseringen van de tijdelijke regels over de inzet van coronatoegangsbewijzen bij de bestrijding van COVID-19. In de ministeriële regeling tot wijziging van de Tijdelijke regeling maatregelen COVID-19 in verband met de inzet van coronatoegangsbewijzen op basis van vaccinatie of herstel (artikel 6.31a) wordt geregeld welke persoonsgegevens door het RIVM mogen worden verwerkt. 
 
 ## 5. Wie is verwerkingsverantwoordelijke?
 
@@ -84,7 +84,7 @@ Verwerkers van de minister:
 
 ## 6. Hoelang bewaren we jouw gegevens?
 
-Alleen de gegevens die in de CoronaCheck-app zelf staan of in het papieren bewijs, worden bewaard. Voor het papieren bewijs bepaal je uiteraard zelf hoe lang je die gegevens bewaart. Dat is ook zo bij de CoronaCheck-app, als je de app verwijdert worden ook de gegevens verwijderd. Anders worden de gegevens bewaard volgens onderstaande termijnen:
+Alleen de gegevens die in de CoronaCheck-app zelf staan of in het papieren bewijs, worden bewaard. Voor het papieren bewijs bepaal je uiteraard zelf hoe lang je die gegevens bewaart. Dat is ook zo bij de CoronaCheck-app, als je de app verwijdert, worden ook de gegevens verwijderd. Anders worden de gegevens bewaard volgens onderstaande termijnen:
 
 - Testuitslagen: 96 uur na datum en tijd afname test
 - Vaccinatiegegevens: een jaar na vaccinatiedatum
@@ -130,7 +130,7 @@ De minister neemt de bescherming van uw persoonsgegevens serieus en heeft bij de
 
 ## 12. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 23 juni 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 28 juni 2021.
 
 ## Overzicht van verwerkte persoonsgegevens
 
