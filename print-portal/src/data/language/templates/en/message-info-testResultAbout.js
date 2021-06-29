@@ -3,12 +3,12 @@ export const messageInfoTestResultAboutV2 = `
     The following details were retrieved at the test location:
 </p>
 <p>
-    Your details: <b>%{discreteInfoString}</b><br>
-    Test type: <b>%{testType}</b><br>
-    Test location: <b>%{testLocation}</b><br>
-    Test date: <b>%{sampleDate}</b><br>
-    Test result: <b>negatief (geen corona)</b><br>
-    Identification code: <b>%{identificationCode}</b>
+    Your details: <strong>%{discreteInfoString}</strong><br>
+    Test type: <strong>%{testType}</strong><br>
+    Test location: <strong>%{testLocation}</strong><br>
+    Test date: <strong>%{sampleDate}</strong><br>
+    Test result: <strong>negatief (geen corona)</strong><br>
+    Identification code: <strong>%{identificationCode}</strong>
 </p>`;
 
 export const messageInfoTestResultAboutV3 = `
@@ -16,13 +16,13 @@ export const messageInfoTestResultAboutV3 = `
     The following details were retrieved at the test location:
 </p>
 <p>
-    Name:  <b>%{name}</b><br>
-    Date of birth:  <b>%{birthDateString}</b><br>
-    Type test: <b>%{testType}</b><br>
-    Test name: <b>%{testName}</b><br>
-    Test date: <b>%{sampleDate}</b><br>
-    Test result:: <b>negatief (geen corona)</b><br>
-    Test location: <b>%{testLocation}</b><br>
-    Test manufacturer: <b>%{manufacturer}</b><br>
-    Identification code: <b>%{identificationCode}</b>
+    Name:  <strong>%{name}</strong><br>
+    Date of birth:  <strong>%{birthDateString}</strong><br>
+    Type test: <strong>%{testType}</strong><br>
+    Test name: <strong>%{testName}</strong><br>
+    Test date: <strong>%{sampleDate}</strong><br>
+    Test result:: <strong>negatief (geen corona)</strong><br>
+    Test location: <strong>%{testLocation}</strong><br>
+    Test manufacturer: <strong>%{manufacturer}</strong><br>
+    Identification code: <strong>%{identificationCode}</strong>
 </p>`;
