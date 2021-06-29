@@ -4,7 +4,7 @@ lang: en
 showBreadCrumbs: true
 title: CoronaCheck app and printed corona admission ticket Privacy Statement 
 ---
-This privacy statement has been written for the use of the applications CoronaCheck and Coronacheck.nl as of June 24, 2021 and explains how personal data of individuals who generate and use a coronavirus pass or an EU Digital COVID Certificate are processed and what measures have been taken to protect this personal data.
+This privacy statement has been written for the use of the applications CoronaCheck and CoronaCheck.nl as of June 24, 2021 and explains how personal data of individuals who generate and use a coronavirus pass or an EU Digital COVID Certificate are processed and what measures have been taken to protect this personal data.
 
 If you want access to for example an event or activities in the Netherlands, or if you want to travel to another country within Europe you may have to proof you have tested negative, or have been vaccinated, or have already had coronavirus once before. The certificate for use within the Netherlands, in the form of a QR code, is called the coronavirus pass. For travels within Europe, you need an EU Digital Covid Certificate (we’re calling it an EU DCC which is also in the form of a QR code). You can have both certificates made via an app on your phone and save them there (CoronaCheck app) or you can have the certificates made and print them via the website [www.coronacheck.nl](http://www.coronacheck.nl). The Minister of Health, Welfare and Sport (VWS) is responsible for creating the certificates via the app of the website. To create the certificates, personal data must be processed. This privacy statement explains what personal data is involved, on what basis it is processed, what your rights are and what you can do if you disagree with the processing. 
 
@@ -105,9 +105,9 @@ In addition, a route has been developed via a care provider portal. You can then
 
 You have several rights to control your personal information. You can find these on <a href="https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/rechten-van-betrokkenen" hreflang="nl" target="_blank" rel="noopener noreferrer">the website of the Dutch Data Protection Authority (Dutch)</a>.
 
-As indicated earlier, both the CoronaCheck-app and the website show which data is collected to create your certificate so that you can view it. In the app you can always find which data is contained in the QR code. If your details are incorrect, you can contact the healthcare provider who tested or vaccinated you. You can delete your data yourself, the data is only stored in your app, so if you delete it, your data will be deleted as well. You can decide for yourself whether you want to destroy the paper proof that you have printed. Within the Coronacheck.nl website no data is stored to create your certificate and thus cannot be deleted.
+As indicated earlier, both the CoronaCheck-app and the website show which data is collected to create your certificate so that you can view it. In the app you can always find which data is contained in the QR code. If your details are incorrect, you can contact the healthcare provider who tested or vaccinated you. You can delete your data yourself, the data is only stored in your app, so if you delete it, your data will be deleted as well. You can decide for yourself whether you want to destroy the paper proof that you have printed. Within the CoronaCheck.nl website no data is stored to create your certificate and thus cannot be deleted.
 
-The option to invoke one of your privacy rights regarding the use of CoronaCheck and Coronacheck.nl remains in effect. You can submit such a request via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
+The option to invoke one of your privacy rights regarding the use of CoronaCheck and CoronaCheck.nl remains in effect. You can submit such a request via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 ## 10. Report complains about the use of your data?
 
