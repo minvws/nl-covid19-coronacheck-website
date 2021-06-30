@@ -21,7 +21,8 @@
     "vue": "^2.6.11",
     "vue-i18n": "^8.24.4",
     "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "dcc-pdf-tools": "git+ssh://git@github.com:91divoc-ln/dcc-pdf-tools.git#b45d19b"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
