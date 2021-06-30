@@ -25,7 +25,7 @@ const nl = {
             'choiceTestHeader': 'Een testbewijs',
             'choiceTestBody': 'Uit de test blijkt dat ik corona heb gehad',
             'choiceRecoveryHeader': 'Een herstelbewijs',
-            'choiceRecoveryBody': 'Ik heb corona gehad en ben hersteld',
+            'choiceRecoveryBody': 'Uit de test blijkt dat ik corona heb gehad',
             'choiceVaccinationHeader': 'Een vaccinatiebewijs',
             'choiceVaccinationBody': 'Ik heb mijn prik of prikken gehad'
         },
