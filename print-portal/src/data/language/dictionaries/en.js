@@ -14,19 +14,19 @@ const en = {
     'views': {
         'home': {
             'pageHeader': 'Get access with a certificate on paper',
-            'pageIntro': '<h2 class="screen-reader-text">Here\'s how it works</h2><p>A certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><div class="home__section"><h4>Only access with a certificate</h4><p>Want access to certain locations and activities? Or are you travelling abroad? You can if you have been fully vaccinated or if you have a negative test result that confirms you don’t have corona.</p><p>Please note: not fully vaccinated? Then you can’t make a certificate.</p></div><div class="home__section"><h4>QR code = your proof</h4><p>You can make a QR code of your vaccination or a negative test result. This is your certificate. The QR code is scanned before you get access.</p></div><div class="home__section"><h4>QR codes for the Netherlands and international</h4><p>This app generates a QR code for the Netherlands and one for other countries. Travelling outside of the Netherlands? Then use your international QR code.</p></div>',
+            'pageIntro': '<h2 class="screen-reader-text">Here\'s how it works</h2><p>A certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><div class="home__section"><h4>Only access with a certificate</h4><p>Your and other people’s health matters. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass. You can make a coronavirus pass if you have been vaccinated, if a test result confirms you don’t have corona or if you\'ve had coronavirus and are recovered.</p></div><div class="home__section"><h4>QR code = your proof</h4><p>You can make a QR code of your test result or vaccination. That is your certificate. This QR code will be checked at the entrance of places or activities, or at the border.</p></div><div class="home__section"><h4>QR codes for the Netherlands and international</h4><p>You’ll get one QR code for the Netherlands and one for other countries. Travelling outside of the Netherlands? Then use your international QR code.</p></div>',
             'userConsentHeader': 'Start making a certificate on paper',
             'userConsentText': 'I have read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and understand how CoronaCheck processes my data.',
             'noConsentError': 'Give consent to the privacy statement first'
         },
         'choiceProof': {
-            'pageHeader': 'What would you like to make a paper certificate of?',
-            'pageIntro': '<p>You can make a QR-code if you\'re vaccinated, if you\'ve had corona or by taking a test</p>',
-            'choiceTestHeader': 'A negative test result',
+            'pageHeader': 'What certificate do you want to make?',
+            'pageIntro': '<p>Indicate what kind of certificate you would like to make</p>',
+            'choiceTestHeader': 'A test certificate',
             'choiceTestBody': 'The test proves I do not have coronavirus',
             'choiceRecoveryHeader': 'A recovery certificate',
-            'choiceRecoveryBody': 'I\'ve had corona and am recovered',
-            'choiceVaccinationHeader': 'A vaccination',
+            'choiceRecoveryBody': 'The test proves I have had coronavirus',
+            'choiceVaccinationHeader': 'A vaccination certificate',
             'choiceVaccinationBody': 'I have had my injection or injections'
         },
         'choiceTestLocation': {
@@ -60,8 +60,8 @@ const en = {
             'pageIntro': '<p>At this moment, we can’t make a certificate. For a Dutch certificate you need to be fully vaccinated. An international certificate can be made from July 1st.</p>'
         },
         'collectRecovery': {
-            'pageHeader': 'Make recovery certificate',
-            'pageIntro': '<p>You can make a recovery certificate of the positive test result from the GGD. Also, you need to be symptom-free. Want to make a recovery certificate? You can do so 11 days after the positive test result (corona).</p>'
+            'pageHeader': 'Retrieve recovery details',
+            'pageIntro': '<p>Have you had coronavirus? Then you can make a recovery certificate of the positive test result from the GGD. Log in with DigiD to retrieve your test result.</p><p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be symptom-free.</p>'
         },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
@@ -92,7 +92,7 @@ const en = {
             'pageIntro': 'There is no negative test result available.'
         },
         'recoveryOverview': {
-            'pageHeader': 'Your positive test result',
+            'pageHeader': 'Your retrieved positive test result',
             'pageIntro': '<p>Are your details correct? Then you can turn your positive test result into a QR code. This is your certificate.</p>'
         },
         'recoveryNone': {

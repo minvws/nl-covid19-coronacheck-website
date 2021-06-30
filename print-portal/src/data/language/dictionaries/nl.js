@@ -14,19 +14,19 @@ const nl = {
     'views': {
         'home': {
             'pageHeader': 'Krijg toegang met een papieren bewijs',
-            'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2><p>Een bewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><div class="home__section"><h4>Alleen toegang met een bewijs</h4><p>Wil je toegang krijgen tot bepaalde locaties of activiteiten? Of ga je op reis? Dat kan als uit een test blijkt dat je geen corona hebt. Of als je volledig gevaccineerd bent.</p><p>Let op: ben je je niet volledig gevaccineerd? Dan kun je geen bewijs maken.</p></div><div class="home__section"><h4>QR-code = jouw bewijs</h4><p>Je kunt een persoonlijke QR-code maken van een vaccinatie of een negatieve testuitslag. Dat is jouw bewijs. De QR-code wordt gecheckt voordat je toegang krijgt.</p></div><div class="home__section"><h4>QR-codes voor Nederland en internationaal</h4><p>De app maakt twee QR-codes: één voor Nederland en één voor internationaal. Reis je buiten Nederland? Gebruik dan je internationale QR-code.</p></div>',
+            'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2><p>Een bewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><div class="home__section"><h4>Alleen toegang met een bewijs</h4><p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang. Je kan een coronabewijs maken als je bent gevaccineerd, als uit een test blijkt dat je geen corona hebt of als je corona hebt gehad en bent hersteld.</p></div><div class="home__section"><h4>QR-code = jouw bewijs</h4><p>Van jouw testuitslag of vaccinatie wordt een QR-code gemaakt. Dat is jouw bewijs. De QR-code wordt gecheckt bij de ingang van plekken en activiteiten. Of aan de grens.</p></div><div class="home__section"><h4>QR-codes voor Nederland en internationaal</h4><p>Je krijgt twee QR-codes: één voor Nederland en één voor internationaal. Reis je buiten Nederland? Gebruik dan je internationale QR-code.</p></div>',
             'userConsentHeader': 'Maak een papieren bewijs',
             'userConsentText': 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank">privacyverklaring</a> gelezen en begrijp hoe CoronaCheck mijn gegevens gebruikt',
             'noConsentError': 'Ga eerst akkoord met de privacyverklaring'
         },
         'choiceProof': {
             'pageHeader': 'Waar wil je een papieren bewijs van maken?',
-            'pageIntro': '<p>Je kunt een QR-code maken van een negatieve testuitslag, een herstelbewijs of van een vaccinatie.</p>',
-            'choiceTestHeader': 'Een negatieve testuitslag',
-            'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
+            'pageIntro': '<p>Geef aan wat voor bewijs je wil maken.</p>',
+            'choiceTestHeader': 'Een testbewijs',
+            'choiceTestBody': 'Uit de test blijkt dat ik corona heb gehad',
             'choiceRecoveryHeader': 'Een herstelbewijs',
             'choiceRecoveryBody': 'Ik heb corona gehad en ben hersteld',
-            'choiceVaccinationHeader': 'Een vaccinatie',
+            'choiceVaccinationHeader': 'Een vaccinatiebewijs',
             'choiceVaccinationBody': 'Ik heb mijn prik of prikken gehad'
         },
         'choiceTestLocation': {
