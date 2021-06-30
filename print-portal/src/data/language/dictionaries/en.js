@@ -101,7 +101,7 @@ const en = {
         },
         'recoveryNotPossible': {
             'pageHeader': 'We can\'t make a certificate',
-            'pageIntro': 'At this moment, we can\'t make a certificate from your positive test result. This can have various causes. Read more <a href="https://coronacheck.nl/en/wegwijzer.html" target="_blank">here</a>'
+            'pageIntro': 'At this moment, we can\'t make a certificate from your positive test result. This can have various causes. Read more <a href="https://coronacheck.nl/en/wegwijzer.html" target="_blank">here</a>.'
         },
         'print': {
             'openPDF': 'Open PDF'
