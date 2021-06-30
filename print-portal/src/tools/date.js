@@ -1,5 +1,5 @@
 import { format, addHours } from 'date-fns';
-import { nl, en } from 'date-fns/locale';
+import { nl, enGB } from 'date-fns/locale';
 import i18n from '@/i18n'
 
 const monthNumberToMonthNameAbbr = (n) => {
@@ -13,10 +13,11 @@ const isValidDateString = (string) => {
     return isNumeric(new Date(string).getTime());
 }
 
-const dateToString = (dateInput, dateFormat = 'dd-MM-yyyy', locale) => {
-    switch (locale) {
+const dateToString = (dateInput, dateFormat = 'dd-MM-yyyy', localeString) => {
+    let locale;
+    switch (localeString) {
     case 'en':
-        locale = en;
+        locale = enGB;
         break;
     default:
         locale = nl;
@@ -25,10 +26,11 @@ const dateToString = (dateInput, dateFormat = 'dd-MM-yyyy', locale) => {
     return format(new Date(dateInput), dateFormat, { locale });
 }
 
-const dateTimeToString = (dateInput, dateFormat = 'dd-MM-yyyy HH:mm', locale) => {
-    switch (locale) {
+const dateTimeToString = (dateInput, dateFormat = 'dd-MM-yyyy HH:mm', localeString) => {
+    let locale;
+    switch (localeString) {
     case 'en':
-        locale = en;
+        locale = enGB;
         break;
     default:
         locale = nl;
