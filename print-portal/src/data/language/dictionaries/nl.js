@@ -287,6 +287,12 @@ const nl = {
             }
         }
     },
+    'pdf': {
+        'metadata': {
+            'title': 'Coronabewijs met QR-code',
+            'author': 'CoronaCheck'
+        }
+    },
     'back': 'Terug',
     'close': 'Sluiten',
     'faq': 'Meestgestelde vragen',
