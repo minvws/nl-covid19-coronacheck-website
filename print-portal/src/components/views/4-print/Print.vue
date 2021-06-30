@@ -60,7 +60,7 @@ export default {
         async createDocument() {
             const holderConfig = this.$store.state.holderConfig;
             const proofs = parseProofData(this.proof, holderConfig);
-            this.document = await getDocument(proofs, 'nl', QRSizeInCm)
+            this.document = await getDocument(proofs, this.currentLanguage.locale, QRSizeInCm)
         },
         render() {
             this.document = null;
