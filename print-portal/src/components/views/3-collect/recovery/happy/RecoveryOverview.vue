@@ -16,7 +16,7 @@ export default {
             filter: 'positivetest,recovery',
             pages: {
                 print: 'PrintRecovery',
-                noResultFromSigner: 'RecoveryNone'
+                noResultFromSigner: 'RecoveryNotPossible'
             }
         }
     }
