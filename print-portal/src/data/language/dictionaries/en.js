@@ -159,10 +159,10 @@ const en = {
             'dateOfBirth': 'Date of birth'
         },
         'recovery': {
-            'title': 'Your recovery certificate'
+            'title': 'Recovery certificate'
         },
         'positiveTest': {
-            'title': 'Your positive test result'
+            'title': 'Positive test result'
         },
         'proofEvent': {
             'name': 'Name',

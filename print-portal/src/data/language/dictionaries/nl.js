@@ -158,10 +158,10 @@ const nl = {
             'dateOfBirth': 'Geboortedatum'
         },
         'recovery': {
-            'title': 'Jouw herstelbewijs'
+            'title': 'Herstelbewijs'
         },
         'positiveTest': {
-            'title': 'Jouw positieve testuitslag'
+            'title': 'Positieve testuitslag'
         },
         'proofEvent': {
             'name': 'Naam',
