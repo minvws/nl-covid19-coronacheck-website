@@ -21,10 +21,10 @@ const nl = {
         },
         'choiceProof': {
             'pageHeader': 'Waar wil je een papieren bewijs van maken?',
-            'pageIntro': '<p>Je kunt een QR-code maken van een negatieve testuitslag, een herstelverklaring of van een vaccinatie.</p>',
+            'pageIntro': '<p>Je kunt een QR-code maken van een negatieve testuitslag, een herstelbewijs of van een vaccinatie.</p>',
             'choiceTestHeader': 'Een negatieve testuitslag',
             'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
-            'choiceRecoveryHeader': 'Een herstelverklaring',
+            'choiceRecoveryHeader': 'Een herstelbewijs',
             'choiceRecoveryBody': 'Ik heb corona gehad en ben hersteld',
             'choiceVaccinationHeader': 'Een vaccinatie',
             'choiceVaccinationBody': 'Ik heb mijn prik of prikken gehad'
@@ -60,8 +60,8 @@ const nl = {
             'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Voor een Nederlands bewijs moet je volledig gevaccineerd zijn. Een internationaal bewijs kun je vanaf 1 juli maken.<p></p>'
         },
         'collectRecovery': {
-            'pageHeader': 'Herstelverklaring maken',
-            'pageIntro': '<p>Met een positieve testuitslag van de GGD kan je een herstelverklaring maken. Ook moet je vrij van klachten zijn.</p><p>Wil je een herstelverklaring maken? Dat kan vanaf 11 dagen na een positieve uitslag (corona).</p>'
+            'pageHeader': 'Gegevens van je herstel ophalen',
+            'pageIntro': '<p>Heb je corona gehad? Dan kun je van de positieve testuitslag van de GGD een herstelbewijs maken. Log in met DigiD om een testuitslag op te halen.</p><p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>'
         },
         'provideCode': {
             'pageHeader': 'Testuitslag ophalen',
@@ -119,7 +119,7 @@ const nl = {
             },
             'european': {
                 'pageHeader': 'Print jouw internationale vaccinatiebewijs',
-                'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een internationaal vaccinatiebewijs gemaakt, in de vorm van een QR-code. Deze is alleen internationaal geldig, maar niet in Nederland.</p><p>Je hebt geen Nederlands vaccinatiebewijs. Dit kan bijvoorbeeld komen doordat je maar één prik hebt gehad. Voeg je tweede prik of een herstelverklaring toe om een bewijs te maken dat geldig is in Nederland.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+                'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een internationaal vaccinatiebewijs gemaakt, in de vorm van een QR-code. Deze is alleen internationaal geldig, maar niet in Nederland.</p><p>Je hebt geen Nederlands vaccinatiebewijs. Dit kan bijvoorbeeld komen doordat je maar één prik hebt gehad. Voeg je tweede prik of een herstelbewijs toe om een bewijs te maken dat geldig is in Nederland.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
             }
             // domestic only is a non existing scenario for vaccination
         },

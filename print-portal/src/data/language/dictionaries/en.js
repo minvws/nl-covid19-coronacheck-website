@@ -21,11 +21,11 @@ const en = {
         },
         'choiceProof': {
             'pageHeader': 'What would you like to make a paper certificate of?',
-            'pageIntro': '<p>TODO You can make a QR code of a vaccination or negative test result.</p>',
+            'pageIntro': '<p>You can make a QR-code if you\'re vaccinated, if you\'ve had corona or by taking a test</p>',
             'choiceTestHeader': 'A negative test result',
             'choiceTestBody': 'The test proves I do not have coronavirus',
-            'choiceRecoveryHeader': 'TODO Een herstelverklaring',
-            'choiceRecoveryBody': 'TODO Ik heb corona gehad en ben hersteld',
+            'choiceRecoveryHeader': 'A recovery certificate',
+            'choiceRecoveryBody': 'I\'ve had corona and am recovered',
             'choiceVaccinationHeader': 'A vaccination',
             'choiceVaccinationBody': 'I have had my injection or injections'
         },
@@ -60,8 +60,8 @@ const en = {
             'pageIntro': '<p>At this moment, we can’t make a certificate. For a Dutch certificate you need to be fully vaccinated. An international certificate can be made from July 1st.</p>'
         },
         'collectRecovery': {
-            'pageHeader': 'TODO Herstelverklaring maken',
-            'pageIntro': 'TODO <p>Met een positieve testuitslag van de GGD kan je een herstelverklaring maken. Ook moet je vrij van klachten zijn.</p><p>Wil je een herstelverklaring maken? Dat kan vanaf 11 dagen na een positieve uitslag (corona).</p>'
+            'pageHeader': 'Make recovery certificate',
+            'pageIntro': '<p>You can make a recovery certificate of the positive test result from the GGD. Also, you need to be symptom-free. Want to make a recovery certificate? You can do so 11 days after the positive test result (corona).</p>'
         },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
@@ -92,20 +92,21 @@ const en = {
             'pageIntro': 'There is no negative test result available.'
         },
         'recoveryOverview': {
-            'pageHeader': 'TODO Jouw positieve testuitslag',
-            'pageIntro': 'TODO <p>Als je gegevens kloppen dan kun je een QR-code maken van je positieve testuitslag. Dat is jouw bewijs.</p>'
+            'pageHeader': 'Your positive test result',
+            'pageIntro': '<p>Are your details correct? Then you can turn your positive test result into a QR code. This is your certificate.</p>'
         },
         'recoveryNone': {
-            'pageHeader': 'TODO Geen positieve testuitslag beschikbaar',
-            'pageIntro': 'TODO <p>Er is geen positieve testuitslag beschikbaar.</p><p>Ben je net getest? Het kan een paar uur duren voordat je positieve test verwerkt is. Probeer het later nog eens.</p><p>Is het langer dan %{days} dagen geleden dat je getest bent? Dan is je testuitslag niet meer geldig. Je kunt dan ook geen herstelbewijs maken.</p>'
+            'pageHeader': 'No positive test result available',
+            'pageIntro': '<p>There is no positive test result available.<p><p>Got tested recently? It can take a few hours until your details are available. Try again later.</p><p>Have you been tested more than 180 days ago? Then your test result is no longer valid. In this case, you cannot create a recovery certificate.</p>'
         },
         'print': {
             'openPDF': 'Open PDF'
         },
         'PrintNegativeTest': {
             'both': {
-                'pageHeader': 'TODO Print jouw bewijzen',
-                'pageIntro': 'TODO <p><b>Jouw bewijzen</b><br>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een QR-code voor als je internationaal reist.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+                'pageHeader': 'Print your certificates',
+                'pageIntro': '\n' +
+                    '<p><b>Your certificates</b><br>You’ve made a test certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read here</a> which information the QR code contains</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
             },
             'domestic': {
                 'pageHeader': 'Your test certificate',
@@ -114,19 +115,19 @@ const en = {
         },
         'printVaccination': {
             'both': {
-                'pageHeader': 'TODO Print jouw bewijzen',
-                'pageIntro': 'TODO <p><b>Jouw bewijzen</b><br>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt nu twee QR-codes: één voor Nederland en één internationale.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+                'pageHeader': 'Print your certificates',
+                'pageIntro': '<p><b>Your certificates</b><br>You’ve made a vaccination certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read here</a> which information the QR code contains</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p><p>Please note: this paper certificate is valid for 1 year. After that, you can make a new paper certificate of your vaccination. </p>'
             },
             'european': {
                 'pageHeader': 'Print your vaccination certificate',
-                'pageIntro': '<h3>Your certificate</h3><p>You’ve made a vaccination certificate in the form of a QR code. You have a QR code for the Netherlands and one for other countries.</p><h3>Information in the QR</h3><p><a href="https://web.acc.coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
+                'pageIntro': '<h3>Your certificate</h3><p>You’ve made a vaccination certificate in the form of a QR code. You have a QR code for the Netherlands and one for other countries.</p><h3>Information in the QR</h3><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
             }
             // domestic only is a non existing scenario for vaccination
         },
         'printRecovery': {
             'both': {
-                'pageHeader': 'TODO Print jouw bewijzen',
-                'pageIntro': 'TODO <h4>Jouw bewijzen</h4><p>Je hebt een herstelbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een internationale QR-code.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+                'pageHeader': 'Print your certificates',
+                'pageIntro': '<p><b>Your certificates</b><br>You’ve made a recovery certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read here</a> which information the QR code contains</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
             }
             // european only and domestic only is a non existing scenario for recovery
         }
@@ -154,10 +155,10 @@ const en = {
             'dateOfBirth': 'Date of birth'
         },
         'recovery': {
-            'title': 'TODO Jouw herstelbewijs'
+            'title': 'Your recovery certificate'
         },
         'positiveTest': {
-            'title': 'TODO Jouw positieve testuitslag'
+            'title': 'Your positive test result'
         },
         'proofEvent': {
             'name': 'Name',
