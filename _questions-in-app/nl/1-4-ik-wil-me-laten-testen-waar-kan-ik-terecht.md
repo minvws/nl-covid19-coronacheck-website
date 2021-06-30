@@ -24,6 +24,9 @@ Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, b
 
 <a href="https://www.coronatest.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank">Maak afspraak<span class="screen-reader-text"> bij de GGD</span></a>
 
+
 ## Overige aangesloten testlocaties:
 
 - <a href="https://www.medicorps.nl/" rel="noopener noreferrer" target="_blank">MediCorps</a>
+
+<br />

@@ -27,3 +27,5 @@ Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, b
 ## Overige aangesloten testlocaties:
 
 - <a href="https://www.medicorps.nl/" rel="noopener noreferrer" target="_blank">MediCorps</a>
+
+<br />
