@@ -1,20 +1,20 @@
-const positiveTest = `TODO
+const positiveTest = `
 <p>
-    De volgende gegevens zijn opgehaald bij de testlocatie:
+    The following details were retrieved at the test location:
 </p>
 <p>
-    Naam:  <b>%{name}</b><br>
-    Geboortedatum:  <b>%{birthDateString}</b><br><br>
+    Name:  <b>%{name}</b><br>
+    Date of birth:  <b>%{birthDateString}</b><br><br>
 
     Type test: <b>%{testType}</b><br>
-    Test naam: <b>%{testName}</b><br>
-    Testdatum: <b>%{sampleDate}</b><br>
-    Testuitslag: <b>positief (corona)</b><br>
-    Testlocatie: <b>%{testLocation}</b><br>
-    Testproducent: <b>%{manufacturer}</b><br>
-    Getest in: <b>%{country}</b><br><br>
+    Test name: <b>%{testName}</b><br>
+    Test date: <b>%{sampleDate}</b><br>
+    Test result: <b>positive (corona)</b><br>
+    Test location: <b>%{testLocation}</b><br>
+    Test manufacturer: <b>%{manufacturer}</b><br>
+    Tested in: <b>%{country}</b><br><br>
 
-    Identificatiecode:<br>
+    Identification code:<br>
     <b>%{identificationCode}</b>
 </p>`;
 

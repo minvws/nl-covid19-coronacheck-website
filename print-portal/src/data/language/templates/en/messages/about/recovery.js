@@ -1,16 +1,16 @@
-const recovery = `TODO
+const recovery = `
 <p>
-    De volgende gegevens zijn opgehaald bij de testlocatie:
+    The following details were retrieved at the test location:
 </p>
 <p>
-    Naam:  <b>%{name}</b><br>
-    Geboortedatum:  <b>%{birthDateString}</b><br><br>
+    Name:  <b>%{name}</b><br>
+    Date of birth:  <b>%{birthDateString}</b><br><br>
 
-    Testdatum:  <b>%{testDate}</b><br>
-    Geldig vanaf:  <b>%{validFrom}</b><br>
-    Geldig tot:  <b>%{validUntil}</b><br><br>
+    Test date: <b>%{testDate}</b><br>
+    Valid from: <b>%{validFrom}</b><br>
+    Valid until: <b>%{validUntil}</b><br><br>
 
-    Identificatiecode:<br>
+    Identification code::<br>
     <b>%{identificationCode}</b>
 </p>`;
 

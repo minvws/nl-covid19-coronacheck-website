@@ -21,7 +21,7 @@ export const negativeTestV3 = `
     Type test: <b>%{testType}</b><br>
     Test name: <b>%{testName}</b><br>
     Test date: <b>%{sampleDate}</b><br>
-    Test result:: <b>negatief (geen corona)</b><br>
+    Test result: <b>negative (no corona)</b><br>
     Test location: <b>%{testLocation}</b><br>
     Test manufacturer: <b>%{manufacturer}</b><br>
     Identification code: <b>%{identificationCode}</b>
