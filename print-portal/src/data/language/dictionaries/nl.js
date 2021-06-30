@@ -99,6 +99,10 @@ const nl = {
             'pageHeader': 'Geen positieve testuitslag beschikbaar',
             'pageIntro': '<p>Er is geen positieve testuitslag beschikbaar.</p><p>Ben je net getest? Het kan een paar uur duren voordat je positieve test verwerkt is. Probeer het later nog eens.</p><p>Is het langer dan %{days} dagen geleden dat je getest bent? Dan is je testuitslag niet meer geldig. Je kunt dan ook geen herstelbewijs maken.</p>'
         },
+        'recoveryNotPossible': {
+            'pageHeader': 'We kunnen geen bewijs maken',
+            'pageIntro': 'Op dit moment kunnen we geen bewijs maken van jouw positieve test. Dit kan verschillende oorzaken hebben. Lees <a href="https://coronacheck.nl/nl/wegwijzer.html" target="_blank">hier</a> meer.'
+        },
         'print': {
             'openPDF': 'Open PDF'
         },
