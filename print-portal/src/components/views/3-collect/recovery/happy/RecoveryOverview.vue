@@ -13,7 +13,7 @@ export default {
     mixins: [overviewMixin],
     data() {
         return {
-            filter: 'positivetest',
+            filter: 'positivetest,recovery',
             pages: {
                 print: 'PrintRecovery',
                 domesticRejected: '' // todo
