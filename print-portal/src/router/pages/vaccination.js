@@ -18,7 +18,7 @@ const vaccinationPages = [
     }, {
         path: '/jouw-vaccinaties-redirect',
         component: VaccinationRedirect,
-        name: 'VaccinationOverviewRedirect'
+        name: 'VaccinationRedirect'
     }, {
         path: '/geen-vaccinaties-beschikbaar',
         component: VaccinationsNone,
