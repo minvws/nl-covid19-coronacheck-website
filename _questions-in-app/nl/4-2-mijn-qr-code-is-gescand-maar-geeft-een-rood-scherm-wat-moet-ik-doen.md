@@ -5,7 +5,7 @@ title: Mijn QR-code is gescand, maar geeft een rood scherm. Wat moet ik doen?
 redirect_from: 
   - /nl/faq-in-app/14-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
 ---
-Rood scherm? Dat betekent dat je bewijs, in de vorm van een QR-code, ongeldig is. Er is dus geen geldig bewijs van een vaccinatie of een recente negatieve testuitslag. Of je testbewijs is verlopen. Het kan ook zijn dat de corona-maatregelen van het land in het land dat je bezoekt anders zijn dan in Nederland. Dit kun je doen:
+Rood scherm? Dat betekent dat je bewijs, in de vorm van een QR-code, ongeldig is. Er is dus geen geldig bewijs van een vaccinatie, een positieve testuitslag of een recente negatieve testuitslag. Of je testbewijs is verlopen. Het kan ook zijn dat de corona-maatregelen van het land in het land dat je bezoekt anders zijn dan in Nederland. Dit kun je doen:
 
 - Laat altijd de QR-code vanuit de CoronaCheck-app zien. Of een geprinte versie op [www.coronacheck.nl/print](/print). Een schermafbeelding of kopie van een QR-code uit de app geeft In Nederland een rood scherm
 - Controleer de tijd op je telefoon. Als de tijd op jouw telefoon voor of achter loopt of op een andere tijdzone staat kan dat tot een rood scherm leiden
