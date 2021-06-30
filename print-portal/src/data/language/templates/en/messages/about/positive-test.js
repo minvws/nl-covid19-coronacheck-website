@@ -14,7 +14,7 @@ const positiveTest = `
     Test manufacturer: <b>%{manufacturer}</b><br>
     Tested in: <b>%{country}</b><br><br>
 
-    Identification code:<br>
+    Unique certificate identifier:<br>
     <b>%{identificationCode}</b>
 </p>`;
 

@@ -10,7 +10,7 @@ const recovery = `
     Valid from: <b>%{validFrom}</b><br>
     Valid until: <b>%{validUntil}</b><br><br>
 
-    Identification code::<br>
+    Unique certificate identifier::<br>
     <b>%{identificationCode}</b>
 </p>`;
 

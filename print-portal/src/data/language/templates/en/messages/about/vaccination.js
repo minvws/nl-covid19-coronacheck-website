@@ -14,7 +14,7 @@ const vaccination = `
         Doses: <b>%{dosesString}</b><br>
         Vaccination date: <b>%{dateString}</b><br>
         Country of vaccination: <b>%{country}</b><br>
-        Identification code: <b>%{identificationCode}</b>
+        Unique certificate identifier: <b>%{identificationCode}</b>
     </p>
 `;
 

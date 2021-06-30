@@ -8,7 +8,7 @@ export const negativeTestV2 = `
     Test location: <b>%{testLocation}</b><br>
     Test date: <b>%{sampleDate}</b><br>
     Test result: <b>negatief (geen corona)</b><br>
-    Identification code: <b>%{identificationCode}</b>
+    Unique certificate identifier: <b>%{identificationCode}</b>
 </p>`;
 
 export const negativeTestV3 = `
