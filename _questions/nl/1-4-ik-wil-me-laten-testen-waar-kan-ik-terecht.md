@@ -5,16 +5,25 @@ title: Ik wil mij laten testen, waar kan ik terecht?
 redirect_from: 
   - /nl/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
 ---
-Voor toegang tot sommige locaties of activiteiten moet je eerst een coronatest doen. Je kunt je aanmelden bij de organisator van het evenement of de activiteit. De organisator weet hoe jij je kunt laten testen.
+Waar je het beste een coronatest doen is afhankelijk van waar je het testbewijs voor wil gebruiken.
 
-## Geen klachten?
-Laat je testen via een testlocatie die bij Testen voor Toegang is aangesloten.
+## Testen voor toegang in Nederland
 
-<a href="https://www.testenvoortoegang.nl" class="btn btn--cta"  rel="noopener noreferrer" target="_blank" hreflang="nl">Maak afspraak<span class="screen-reader-text"> via Testen voor Toegang</span></a>
+Voor toegang tot plekken en evenementen in Nederland kun je je gratis laten testen bij een locatie die is aangesloten bij Testen voor Toegang. Kijk voor meer informatie op <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoortoegang.nl</a>. 
 
-**Let op:** Wil je je laten testen om op reis te gaan? Dit kan niet via Testen voor Toegang. <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie/reizen-buitenland/gratis-coronatest-voor-reizigers-in-juli-en-augustus-2021" rel="noopener noreferrer" target="_blank">Lees  meer over testen voor op reis gaan op de pagina van de Rijksoverheid</a>.
+<a href="https://www.testenvoortoegang.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Maak afspraak<span class="screen-reader-text"> via Testen voor Toegang</span></a>
+
+## Testen voor reizigers
+
+Wil je op reis? Dan zijn er gratis coronatests beschikbaar voor reizigers. Kijk voor meer informatie op <a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoorjereis.nl</a>. 
+
+<a href="https://afspraak.testenvoorjereis.nl/" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Maak afspraak<span class="screen-reader-text"> via Testen voor je Reis</span></a>
 
 ## Bij klachten
 Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, benauwdheid, verhoging of koorts. Laat je testen bij de GGD. 
 
 <a href="https://www.coronatest.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank">Maak afspraak<span class="screen-reader-text"> bij de GGD</span></a>
+
+## Overige aangesloten testlocaties:
+
+- <a href="https://www.medicorps.nl/" class="btn btn--cta" rel="noopener noreferrer" target="_blank">MediCorps</span></a>
