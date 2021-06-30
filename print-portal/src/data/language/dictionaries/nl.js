@@ -119,7 +119,7 @@ const nl = {
         'printVaccination': {
             'both': {
                 'pageHeader': 'Print jouw bewijzen',
-                'pageIntro': 'p><b>Jouw bewijzen</b><br>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt nu twee QR-codes: één voor Nederland en één internationale.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+                'pageIntro': '<p><b>Jouw bewijzen</b><br>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt nu twee QR-codes: één voor Nederland en één internationale.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
             },
             'european': {
                 'pageHeader': 'Print jouw internationale vaccinatiebewijs',
