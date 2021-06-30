@@ -47,6 +47,10 @@ export default {
                         :header="$t('views.choiceProof.choiceTestHeader')"
                         :body="$t('views.choiceProof.choiceTestBody')"/>
                     <PageChoice
+                        @select="gotoCollectRecovery"
+                        :header="$t('views.choiceProof.choiceRecoveryHeader')"
+                        :body="$t('views.choiceProof.choiceRecoveryBody')"/>
+                    <PageChoice
                         @select="gotoCollectVaccination"
                         :header="$t('views.choiceProof.choiceVaccinationHeader')"
                         :body="$t('views.choiceProof.choiceVaccinationBody')"/>
