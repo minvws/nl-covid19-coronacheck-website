@@ -69,7 +69,7 @@ export default {
                             this.$store.commit('qrs/add', response.data);
                             this.$router.push({ name: this.pages.print });
                         } else {
-                            this.$router.push({ name: this.pages.domesticRejected });
+                            this.$router.push({ name: this.pages.noResultFromSigner });
                         }
                     }
                 }).catch(error => {

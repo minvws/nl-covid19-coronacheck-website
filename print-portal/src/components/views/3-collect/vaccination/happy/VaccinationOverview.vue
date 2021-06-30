@@ -15,7 +15,7 @@ export default {
             filter: 'vaccination',
             pages: {
                 print: 'PrintVaccination',
-                domesticRejected: 'VaccinationsIncomplete'
+                noResultFromSigner: 'VaccinationsIncomplete'
             }
         }
     }

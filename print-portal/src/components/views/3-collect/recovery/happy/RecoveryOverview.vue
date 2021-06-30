@@ -16,7 +16,7 @@ export default {
             filter: 'positivetest,recovery',
             pages: {
                 print: 'PrintRecovery',
-                domesticRejected: '' // todo
+                noResultFromSigner: 'RecoveryNone'
             }
         }
     }
