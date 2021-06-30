@@ -3,13 +3,12 @@ set: 8
 index: 3
 title: Ik heb 1 vaccinatie gekregen omdat ik al corona had gehad. Moet ik nu ook een herstelbewijs maken?
 ---
-Dit ligt eraan of je bij de zorgverlener die de vaccinatie heeft uitgevoerd hebt aangegeven dat je maar één vaccinatie nodig heeft (omdat je al corona heeft gehad). En hoe de zorgverlener de enkele vaccinatie als volledig heeft geregistreerd. 
+Dit ligt eraan of u bij uw zorgverlener die de vaccinatie heeft uitgevoerd heeft aangegeven dat u maar één vaccinatie nodig heeft omdat u al corona heeft gehad, en of de zorgverlener de enkele vaccinatie dan als volledig heeft geregistreerd.  
 
 ## Wel geregistreerd 
 
-Als de prikzetter jouw enkele vaccinatie volledig geregistreerd heeft, is het niet nodig een los herstelbewijs te maken. Je kunt dan een volledig vaccinatiebewijs maken.
+Als uw enkele vaccinatie door de prikzetter als volledig geregistreerd staat, is het niet nodig om nog een los herstelbewijs te maken. U kunt dan een volledig vaccinatiebewijs maken.
 
 ## Niet geregistreerd
 
-Staat jouw enkele vaccinatie niet als volledig geregistreerd? Je kunt een herstelbewijs toevoegen in de app als je in de afgelopen 180 dagen negatief op corona bent getest bij de GGD. 
-
+Indien uw enkele vaccinatie niet als volledig geregistreerd staat kunt u een herstelbewijs toevoegen in de app als u in de afgelopen 180 dagen negatief op corona bent getest bij de GGD. 
