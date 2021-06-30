@@ -20,7 +20,7 @@ const nl = {
             'noConsentError': 'Ga eerst akkoord met de privacyverklaring'
         },
         'choiceProof': {
-            'pageHeader': 'Waar wil je een papieren bewijs van maken?',
+            'pageHeader': 'Wat voor bewijs wil je maken?',
             'pageIntro': '<p>Geef aan wat voor bewijs je wil maken.</p>',
             'choiceTestHeader': 'Een testbewijs',
             'choiceTestBody': 'Uit de test blijkt dat ik corona heb gehad',
