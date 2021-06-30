@@ -7,7 +7,7 @@ const positiveTest = `
     Geboortedatum:  <b>%{birthDateString}</b><br><br>
 
     Type test: <b>%{testType}</b><br>
-    Test naam: <b>%{testName}</b><br>
+    Testnaam: <b>%{testName}</b><br>
     Testdatum: <b>%{sampleDate}</b><br>
     Testuitslag: <b>positief (corona)</b><br>
     Testlocatie: <b>%{testLocation}</b><br>
