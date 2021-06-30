@@ -3,9 +3,9 @@ set: 2
 index: 2
 title: How long is my test certificate valid for and can I use it multiple times?
 redirect_from: 
-  - /en/faq/9-hoe-lang-is-mijn-testbewijs-geldig
-  - /en/faq/10-waarom-is-de-geldigheidsduur-van-een-testbewijs-40-uur
-  - /en/faq/35-kan-ik-meerdere-pilots-bezoeken-met-een-testbewijs/
+  - /en/faq-in-app/9-hoe-lang-is-mijn-testbewijs-geldig
+  - /en/faq-in-app/10-waarom-is-de-geldigheidsduur-van-een-testbewijs-40-uur
+  - /en/faq-in-app/35-kan-ik-meerdere-pilots-bezoeken-met-een-testbewijs/
 featuredHome: true
 featuredHomeIndex: 2
 ---
