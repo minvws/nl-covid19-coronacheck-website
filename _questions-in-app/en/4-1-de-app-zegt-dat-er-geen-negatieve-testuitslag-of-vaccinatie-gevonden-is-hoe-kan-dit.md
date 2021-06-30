@@ -7,6 +7,6 @@ redirect_from:
 ---
 No vaccination found? There are several causes. [Find more information here](/en/guidepost).  Were you recently vaccinated? Then it may take a while before the details are available.
  
-No negative test result found? 
+No test result 
 
 It may take a few hours before the test location finishes processing your result. Please try again later. Were you tested longer than a few hours ago? Contact the test location.
