@@ -122,7 +122,7 @@ export default {
         addNegativeTestV2(signedEvent) {
             this.testCodeStatus.error = '';
             this.$store.commit('signedEvents/createAll', [signedEvent]);
-            this.$router.push({ name: 'YourTestResult', params: { flow: '2.0' } });
+            this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0' } });
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {
