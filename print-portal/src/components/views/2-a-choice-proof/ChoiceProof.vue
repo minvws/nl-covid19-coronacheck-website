@@ -24,7 +24,10 @@ export default {
                 this.$router.push({ name: 'ProvideCode' });
             }
         },
-        gotoVaccinationPage() {
+        gotoCollectRecovery() {
+            this.$router.push({ name: 'CollectRecovery' });
+        },
+        gotoCollectVaccination() {
             this.$router.push({ name: 'CollectVaccination' });
         }
     }
@@ -43,8 +46,12 @@ export default {
                         @select="gotoChoiceTestLocation"
                         :header="$t('views.choiceProof.choiceTestHeader')"
                         :body="$t('views.choiceProof.choiceTestBody')"/>
+<!--                    <PageChoice-->
+<!--                        @select="gotoCollectRecovery"-->
+<!--                        :header="$t('views.choiceProof.choiceRecoveryHeader')"-->
+<!--                        :body="$t('views.choiceProof.choiceRecoveryBody')"/>-->
                     <PageChoice
-                        @select="gotoVaccinationPage"
+                        @select="gotoCollectVaccination"
                         :header="$t('views.choiceProof.choiceVaccinationHeader')"
                         :body="$t('views.choiceProof.choiceVaccinationBody')"/>
                 </div>

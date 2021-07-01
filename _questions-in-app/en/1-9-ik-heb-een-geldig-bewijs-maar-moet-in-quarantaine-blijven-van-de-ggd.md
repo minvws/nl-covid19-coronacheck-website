@@ -3,7 +3,7 @@ index: 6
 set: 6
 title: Despite my negative test result, the GGD orders me to self-isolate. What to do? 
 redirect_from: 
-  - /en/faq/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd
+  - /en/faq-in-app/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd
 ---
 Follow the GGD’s recommendations and stay in quarantine. The negative test result is only a reflection of the time of testing.
 

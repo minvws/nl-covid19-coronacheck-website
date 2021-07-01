@@ -1,5 +1,6 @@
 import dateTool from '@/tools/date';
 import _Holder from './_Holder';
+import store from '@/store';
 
 class HolderV3 extends _Holder {
     constructor({
@@ -33,7 +34,7 @@ class HolderV3 extends _Holder {
     }
 
     get birthDateString() {
-        return dateTool.dateToString(this.birthDate, 'dd LLLL yyyy');
+        return dateTool.dateToString(this.birthDate, 'dd LLLL yyyy', store.state.languages.current.locale);
     }
 
     get birthDayStyled() {

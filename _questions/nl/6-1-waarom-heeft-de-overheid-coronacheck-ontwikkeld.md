@@ -3,7 +3,7 @@ set: 6
 index: 1
 title: Waarom heeft de overheid CoronaCheck ontwikkeld?
 ---
-De overheid werkt hard om de samenleving verantwoord te openen. Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde locaties of activiteiten. En kunnen zij weer op reis (vanaf 1 juli). Maar alleen als zij gevaccineerd zijn of als uit een test blijkt dat zij op dat moment geen corona hadden. 
+De overheid werkt hard om de samenleving verantwoord te openen. Dankzij CoronaCheck krijgen bezoekers toegang tot bepaalde locaties of activiteiten. En kunnen zij weer op reis (vanaf 1 juli). Maar alleen als zij gevaccineerd zijn, al corona gehad hebben of als uit een test blijkt dat zij op dat moment geen corona hadden. 
 
 Met de CoronaCheck-app kunnen mensen in Nederland een coronabewijs maken. Dat kan wanneer je:
 - recent negatief getest bent op corona, of;

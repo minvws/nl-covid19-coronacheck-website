@@ -5,7 +5,7 @@ title: My QR code was scanned but led to a red screen. What should I do?
 redirect_from: 
   - /en/faq/14-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
 ---
-A red screen means your certificate or entry pass in the form of a QR code is invalid. So there’s no proof of a vaccination or a recent negative test result. It could also mean your test certificate has expired. Here’s what you can do:
+A red screen means your certificate or entry pass in the form of a QR code is invalid. So there’s no proof of a vaccination, a positive test result or a recent negative test result. It could also mean your test certificate has expired. Here’s what you can do:
 
 - Always show the QR code using the CoronaCheck app. Or a printed version from [www.coronacheck.nl/en/print](/en/print). A screenshot or copy of a QR code will always lead to a red screen.
 - Check the time on your phone. If the time on your phone is ahead, behind, or set to a different time zone, this may also lead to a red screen

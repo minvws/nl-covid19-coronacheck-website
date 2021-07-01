@@ -31,3 +31,13 @@
 .proof-events {
     margin: $length-l 0;
 }
+
+.proof-event__wrapper:not(:first-child) {
+    display: contents;
+
+    .proof-event {
+        &:first-child {
+            border-top: 0;
+        }
+    }
+}
