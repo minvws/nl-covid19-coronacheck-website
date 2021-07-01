@@ -45,7 +45,13 @@ h2,
 h3,
 h4 {
     font-family: "Montserrat", "RO Sans", sans-serif;
-    color: #383836;
+    color: #969679;
+}
+
+dt,
+dd {
+    display: inline-block;
+    margin-left: 0;
 }
 
 .container {
