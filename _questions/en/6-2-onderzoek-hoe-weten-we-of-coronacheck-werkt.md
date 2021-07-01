@@ -13,6 +13,6 @@ You can download the most recent report of the ongoing evaluation here:
 
 <a href="/media/Factsheet_doorlopende_evaluatie.pdf" rel="noopener noreferrer" target="_blank">Factsheet doorlopende evaluatie (PDF, 78kb)</a>
 
-Daarnaast is er dagelijks informatie beschikbaar van het aantal downloads van CoronaCheck en [CoronaCheck Scanner](/en/scanner). Een samenvatting van deze data kun je hier downloaden:
+In addition, information about the number of times CoronaCheck and [CoronaCheck Scanner](/en/scanner) are downloaded is made available every day.  You can download an overview of this data here: 
 
 <a href="/media/Factsheet_CoronaCheck_latest.pdf" rel="noopener noreferrer" target="_blank">Factsheet CoronaCheck (PDF, 142kb)</a>

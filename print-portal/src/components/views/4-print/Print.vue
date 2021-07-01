@@ -2,10 +2,8 @@
 import Page from '@/components/elements/Page';
 import { detect } from 'detect-browser';
 import CcButton from '@/components/elements/CcButton';
-import { getDocument } from '@/tools/print/main';
-import { generateQR } from '@/tools/qr';
-import NLQR from '@/classes/QR/NLQR';
-import { handleRejection } from '@/tools/error-handler';
+import { parseProofData, getDocument } from 'dcc-pdf-tools';
+import { QRSizeInCm } from '@/data/constants'
 
 export default {
     name: 'Print',
@@ -36,24 +34,33 @@ export default {
                 title: this.$t('pdf.metadata.title'),
                 author: this.$t('pdf.metadata.author')
             };
+        },
+        proof() {
+            return this.$store.state.qrs.proof;
+        },
+        hasDomestic() {
+            return this.proof.domestic;
+        },
+        hasEuropean() {
+            return this.proof.european;
+        },
+        pageType() {
+            if (this.hasDomestic && this.hasEuropean) {
+                return 'both';
+            } else {
+                if (this.hasDomestic) {
+                    return 'domestic';
+                } else {
+                    return 'european';
+                }
+            }
         }
     },
     methods: {
-        createDocument(proof) {
-            const nlQR = new NLQR(proof.domestic);
-            generateQR(nlQR.qr).then(async (urlQR) => {
-                const pages = [
-                    {
-                        type: this.type,
-                        territory: 'nl',
-                        qr: nlQR,
-                        urlQR: urlQR
-                    }
-                ]
-                this.document = await getDocument(pages, this.currentLanguage.locale, this.metadata);
-            }, (error) => {
-                handleRejection(error);
-            })
+        async createDocument() {
+            const holderConfig = this.$store.state.holderConfig;
+            const proofs = parseProofData(this.proof, holderConfig);
+            this.document = await getDocument(proofs, this.currentLanguage.locale, QRSizeInCm)
         },
         render() {
             this.document = null;

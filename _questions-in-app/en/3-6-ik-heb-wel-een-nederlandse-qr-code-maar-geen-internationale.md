@@ -1,7 +1,7 @@
 ---
 set: 3
 index: 6
-title: Ik heb wel een Nederlandse QR-code, maar geen internationale. Wat nu?
+title: I have a Dutch QR code, but no international code. What now?
 ---
 Only a Dutch QR code was made. This code lets you gain entry to locations in The Netherlands. There are several causes. For example, your type of vaccination or test may not be accepted abroad. Check whether you’re eligible for an international QR code. Eligibility requirements may vary per country. 
 
