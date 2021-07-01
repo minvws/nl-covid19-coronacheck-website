@@ -63,7 +63,7 @@ Je kan inloggen op DigiD via de app (<a href="https://www.digid.nl/inlogmethodes
 
 Meer informatie over DigiD: neem gerust contact op met de Helpdesk op <a href="tel:0031881236555">+31 88 123 65 55</a> (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
 
-Heb je geen DigiD of geen digitale middelen, neem dan telefonisch contact op met de CoronaCheck helpdesk op <a href="tel:08001421">0800-1421</a>.
+Heb je geen DigiD of geen digitale middelen, neem dan telefonisch contact op met de CoronaCheck helpdesk.
 
 ### Foutmelding
 
