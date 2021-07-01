@@ -7,4 +7,4 @@ redirect_from:
 ---
 Completely close the app and launch it again.
 
-If the app still doesn’t work, contact the CoronaCheck helpdesk. Phone <a href="tel:0800-1421">0800-1421</a> or email [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
+If the app still doesn’t work, contact the CoronaCheck helpdesk. Phone <a href="tel:08001421">0800-1421</a> or email [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).

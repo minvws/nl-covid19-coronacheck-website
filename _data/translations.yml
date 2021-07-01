@@ -257,17 +257,17 @@ govlogo:
   tr: Logo Hollanda Devleti, ana sayfa
     
 phone-action:
-  nl: <a href="tel:0800-1421">0800-1421</a>
-  fy: <a href="tel:0800-1421">0800-1421</a>
-  en: <a href="tel:0800-1421">0800-1421</a>
+  nl: <a href="tel:08001421">0800-1421</a>
+  fy: <a href="tel:08001421">0800-1421</a>
+  en: <a href="tel:08001421">0800-1421</a>
   ar: <a href="tel:0800-1421" dir="ltr">0800-1421</a>
-  bg: <a href="tel:0800-1421">0800-1421</a>
-  de: <a href="tel:0800-1421">0800-1421</a>
-  fr: <a href="tel:0800-1421">0800-1421</a>
-  es: <a href="tel:0800-1421">0800-1421</a>
-  pl: <a href="tel:0800-1421">0800-1421</a>
-  ro: <a href="tel:0800-1421">0800-1421</a>
-  tr: <a href="tel:0800-1421">0800-1421</a>
+  bg: <a href="tel:08001421">0800-1421</a>
+  de: <a href="tel:08001421">0800-1421</a>
+  fr: <a href="tel:08001421">0800-1421</a>
+  es: <a href="tel:08001421">0800-1421</a>
+  pl: <a href="tel:08001421">0800-1421</a>
+  ro: <a href="tel:08001421">0800-1421</a>
+  tr: <a href="tel:08001421">0800-1421</a>
     
 minvws:
   nl: "Ministerie van Volksgezondheid,<br>Welzijn en Sport"
@@ -750,17 +750,17 @@ footer-phone:
   tr: 
 
 footer-phone-action:
-  nl: <a href="tel:0800-1421">0800-1421</a> (gratis)
-  fy: <a href="tel:0800-1421">0800-1421</a> (fergees)
-  en: <a href="tel:0800-1421">0800-1421</a> (free)
+  nl: <a href="tel:08001421">0800-1421</a> (gratis)
+  fy: <a href="tel:08001421">0800-1421</a> (fergees)
+  en: <a href="tel:08001421">0800-1421</a> (free)
   ar: <a href="tel:0800-1421" dir="ltr">0800-1421</a> (مجانًا)
-  bg: <a href="tel:0800-1421">0800-1421</a> (безплатно)
-  de: <a href="tel:0800-1421">0800-1421</a> (kostenlos)
-  es: <a href="tel:0800-1421">0800-1421</a>
-  fr: <a href="tel:0800-1421">0800-1421</a> (gratuit)
-  pl: <a href="tel:0800-1421">0800-1421</a>
-  ro: <a href="tel:0800-1421">0800-1421</a> (număr gratuit)
-  tr: <a href="tel:0800-1421">0800-1421</a> numaralı telefonu arayın (ücretsiz)
+  bg: <a href="tel:08001421">0800-1421</a> (безплатно)
+  de: <a href="tel:08001421">0800-1421</a> (kostenlos)
+  es: <a href="tel:08001421">0800-1421</a>
+  fr: <a href="tel:08001421">0800-1421</a> (gratuit)
+  pl: <a href="tel:08001421">0800-1421</a>
+  ro: <a href="tel:08001421">0800-1421</a> (număr gratuit)
+  tr: <a href="tel:08001421">0800-1421</a> numaralı telefonu arayın (ücretsiz)
   
 footer-phone-opening-hours:
   nl: "Bereikbaar van maandag t/m zondag 08.00 – 20.00 uur"
