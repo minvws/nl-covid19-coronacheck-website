@@ -82,14 +82,17 @@ export default {
         <div class="proof-event__status proof-event__line">
             <strong>{{title}}</strong>
         </div>
-        <div class="proof-event__line">
-            <dt>{{$t('components.vaccination.name')}}:</dt>
-            <dd>{{holder.fullName}}</dd>
-        </div>
-        <div class="proof-event__line">
-            <dt>{{$t('components.vaccination.dateOfBirth')}}:</dt>
-            <dd>{{holder.birthDateString}}</dd>
-        </div>
+
+        <dl>
+            <div class="proof-event__line">
+                <dt>{{$t('components.vaccination.name')}}:</dt>
+                <dd>{{holder.fullName}}</dd>
+            </div>
+            <div class="proof-event__line">
+                <dt>{{$t('components.vaccination.dateOfBirth')}}:</dt>
+                <dd>{{holder.birthDateString}}</dd>
+            </div>
+        </dl>
 
         <button
             @click="openInfo()"
@@ -101,4 +104,5 @@ export default {
     </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+</style>

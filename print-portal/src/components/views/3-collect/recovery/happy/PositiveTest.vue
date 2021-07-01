@@ -47,15 +47,21 @@ export default {
         <div class="proof-event__status proof-event__line">
             {{$t('components.positiveTest.title')}}
         </div>
-        <div class="proof-event__line">
-            {{$t('components.proofEvent.dateOfTest')}}: {{dateOfTest}}
-        </div>
-        <div class="proof-event__line">
-            {{$t('components.proofEvent.name')}}: {{holder.fullName}}
-        </div>
-        <div class="proof-event__line">
-            {{$t('components.vaccination.dateOfBirth')}}: {{holder.birthDateString}}
-        </div>
+
+        <dl>
+            <div class="proof-event__line">
+                <dt>{{$t('components.proofEvent.dateOfTest')}}:</dt>
+                <dd>{{dateOfTest}}</dd>
+            </div>
+            <div class="proof-event__line">
+                <dt>{{$t('components.proofEvent.name')}}:</dt>
+                <dd>{{holder.fullName}}</dd>
+            </div>
+            <div class="proof-event__line">
+                <dt>{{$t('components.vaccination.dateOfBirth')}}:</dt>
+                <dd>{{holder.birthDateString}}</dd>
+            </div>
+        </dl>
 
         <button
             @click="openInfo()"
