@@ -13,9 +13,11 @@
       {{ site.data.translations.footer-phone-action[page.lang] }}.<br />
       {{ site.data.translations.footer-phone-opening-hours[page.lang] }}
     </p>
-    <h3>{{ site.data.translations.footer-phone-mail[page.lang] }}</h3>
-    <p>
-      <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>
-    </p>
+    {% if page.layout != 'home' %}
+        <h3>{{ site.data.translations.footer-phone-mail[page.lang] }}</h3>
+        <p>
+        <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>
+        </p>
+    {% endif %}
   </div>
 </div> 
