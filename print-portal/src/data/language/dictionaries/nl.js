@@ -230,7 +230,7 @@ const nl = {
                 'body': 'Je kunt opnieuw inloggen om je %{type} op te halen.',
                 'vaccination': 'vaccinaties',
                 'negativetest': 'testuitslag',
-                'positiveetest': 'testuitslag'
+                'positivetest': 'testuitslag'
             },
             'digidFinished': {
                 'body': 'We halen nu jouw %{type} op. Je wordt automatisch uitgelogd bij DigiD'
