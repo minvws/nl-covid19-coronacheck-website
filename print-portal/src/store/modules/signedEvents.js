@@ -12,7 +12,8 @@ const state = {
 
 const getters = {
     ..._base.getters,
-    getProofEvents: (state) => (type) => {
+    getProofEvents: (state) => (filter) => {
+        const types = filter.split(',');
         const proofEvents = [];
         for (const signedEvent of state.all) {
             const result = cmsDecode(signedEvent.payload);
@@ -29,7 +30,7 @@ const getters = {
                 for (const ev of result.events) {
                     const event = new ProofEvent(ev);
                     const providerIdentifier = result.providerIdentifier;
-                    if (event.type === type || type === 'all') {
+                    if (types.indexOf(event.type) > -1 || filter === 'all') {
                         proofEvents.push(new SignedEvent({
                             holder,
                             event,

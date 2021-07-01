@@ -11,13 +11,10 @@ const getBaseUrl = () => {
     const chunks = window.location.href.split('/print');
     return chunks[0] + '/print/';
 }
-
 const baseUrl = getBaseUrl();
-const authVaccinations = new AuthService(baseUrl + 'jouw-vaccinaties-redirect');
-const authNegativeTests = new AuthService(baseUrl + 'jouw-testresultaat-redirect');
-
-Vue.prototype.authVaccinations = authVaccinations;
-Vue.prototype.authNegativeTests = authNegativeTests;
+Vue.prototype.authVaccinations = new AuthService(baseUrl + 'jouw-vaccinaties-redirect');
+Vue.prototype.authNegativeTests = new AuthService(baseUrl + 'jouw-testresultaat-redirect');
+Vue.prototype.authRecovery = new AuthService(baseUrl + 'recovery-redirect');
 
 const axiosConfig = {
     baseURL: window.config.api
@@ -32,7 +29,5 @@ new Vue({
     router,
     store,
     i18n,
-    authVaccinations,
-    authNegativeTests,
     render: h => h(App)
 }).$mount('#app')
