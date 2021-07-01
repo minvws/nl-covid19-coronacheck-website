@@ -6,58 +6,54 @@ redirect_from:
     - /wegwijzer
     - /nl/guidepost
 ---
-## Reizen
+## Reizen met CoronaCheck
 
-Vanaf 1 juli kun je jouw coronabewijs (Digitaal Corona Certificaat, DCC) maken om te reizen via CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
+Je kunt jouw coronabewijs (Digitale Corona Certificaat, DCC) maken om te reizen met CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-Ga je op reis? Check dan eerst <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">www.wijsopreis.nl</a> voor het up-to-date geldende reisadvies per bestemming. Vanaf 1 juli kun je je gratis laten testen wanneer je op reis gaat. <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie" rel="noopener noreferrer" target="_blank">Hiervoor vind je alle informatie op deze website van de Rijksoverheid</a>.
+Ga je op reis? Check dan eerst <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">www.wijsopreis.nl</a> om te zien welk coronabewijs je nodig hebt in het land dat je wil bezoeken. 
 
-Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">contact op met het contact center van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
+Vanaf 1 juli kun je je gratis laten testen wanneer je op reis gaat. <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie" rel="noopener noreferrer" target="_blank">Hiervoor vind je alle informatie op deze website van de Rijksoverheid</a>.
+
+Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">contact op met het contactcenter van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
 
 ## Vaccinatiebewijs
 
 Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-### Lukt het niet om je vaccinatiegegevens op te halen?
+### Haal uw volledige vaccinatie op
+Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Een internationale QR-code kan worden gemaakt na één vaccinatie. Let op, een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">www.wijsopreis.nl</a>.
 
-- Ben je pas net gevaccineerd? Het kan even duren voordat de vaccinatie is verwerkt. Probeer het over 1 à 2 dagen opnieuw. <a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">Lukt het na een paar dagen nog steeds niet om je vaccinatiegegevens op te halen?</a>
-- Ben je gevaccineerd op een andere plek dan de GGD, de huisarts of het ziekenhuis, bijvoorbeeld in het buitenland? <a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">Op deze website vind je wat je dan kunt doen om je vaccinatiegegevens op te halen</a>
+### Lukt het niet en ben je in Nederland gevaccineerd?
 
-### Ik weet niet waar ik mijn vaccinatiegegevens heb laten registreren, wat nu?
+Heb je bijvoorbeeld één van de volgende problemen:
+- Klopt je naam of geboortedatum niet?
+- Zie je beide vaccinaties op één dag staan?
+- Of kun je je vaccinatiegegevens niet volledig ophalen, terwijl je laatste vaccinatie langer dan 3 dagen geleden was?
 
-- Jouw vaccinatiegegevens worden automatisch opgehaald bij het RIVM (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/vraag-en-antwoord/toestemming-registratie-coronavaccinatie" rel="noopener noreferrer" target="_blank">als je daar toestemming voor hebt gegeven</a>), de GGD of het ziekenhuis
-- Probeer je vaccinatiegegevens op te halen in CoronaCheck door in te loggen met DigiD
-- Lukt dit niet of ben je niet geregistreerd, maar wil je wel een vaccinatiebewijs? Op deze website vind je <a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">wat je kunt doen om je vaccinatiebewijs te krijgen als je je niet hebt laten registreren</a>
+Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem contact op met je vaccinatiezetter (GGD op <a href="tel:08005090">0800-5090</a>, ziekenhuis, huisarts (via <a href="tel:31247247247">+31 247 247 247</a>) of een andere zorginstelling).
 
-### Mijn naam of geboortedatum klopt niet van mijn vaccinatiegegevens, wat nu?
+### Ben je in het buitenland gevaccineerd?
 
-<a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">Op deze website vind je wat je kunt doen om je gegevens aan te laten passen</a>.
-
-### Andere vragen rondom het ophalen van je vaccinaties? 
-
-<a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">Deze website beantwoordt je vragen over het ophalen van je vaccinaties</a>.
+dat ook in Nederland geldig is. Op www.rijksoverheid.nl/coronabewijs-hulp lees je hier meer over.
 
 
 ## Testbewijs
 ### Toegangstesten
 
-Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? <a href="https://www.testenvoortoegang.org/" rel="noopener noreferrer" target="_blank" >Hiervoor kun je terecht bij Testen voor Toegang</a>. Op die website vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatest voor nodig is, geeft de organisatie meestal ook veel informatie, bijvoorbeeld op een toegangsbewijs, in een bevestigingsmail of op de website.
+Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? <a href="https://www.testenvoortoegang.org/" rel="noopener noreferrer" target="_blank" >Hiervoor kun je terecht bij Testen voor Toegang</a>. Op die website vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatest voor nodig is, geeft de organisatie je meestal ook informatie, bijvoorbeeld op het ticket, in een bevestigingsmail of op de website.
 
-Lukt het niet om een testbewijs te maken en bent u langer dan 40 uur geleden getest? Dan moet u opnieuw een testafspraak maken op <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>.
-
-{% comment %} 
-### Reizen
-
-Wil je gebruikmaken van een coronabewijs (DCC) om te reizen naar het buitenland? [Hiervoor vind je alle informatie op deze website van de Rijksoverheid](https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie). Check voor vertrek altijd de [up-to-date inreis regels van jouw bestemming](https://www.wijsopreis.nl/).
-
-### Klachten?
-
-Heb je corona-gerelateerde klachten? Maak dan meteen een testafspraak bij de GGD via telefoonnummer <a href="tel:08001202">0800-1202</a> of op <a href="https://www.coronatest.nl/" rel="noopener noreferrer" target="_blank" >www.coronatest.nl</a>. 
-{% endcomment %}
+Lukt het niet om een testbewijs te maken en ben je langer dan 40 uur geleden getest? Dan moet u opnieuw een testafspraak maken op <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>.
 
 ## Herstelbewijs
 
-Herstelbewijzen kunnen op dit moment nog niet worden toegevoegd in CoronaCheck. Vanaf begin juli kan dit wel. Een herstelbewijs kan alleen worden gemaakt wanneer de positieve PCR testuitslag geregistreerd staat bij de GGD. 
+Je kunt een positieve testuitslag gebruiken om een herstelbewijs te maken met CoronaCheck. Hiervoor gelden een aantal voorwaarden:
+
+- De positieve test is afgenomen bij de GGD;
+- Het herstelbewijs is geldig 11 dagen na de positieve testuitslag, het herstelbewijs kan al wel eerder gemaakt worden; 
+- De positieve testuitslag is maximaal 180 dagen oud.
+
+Als je een PCR-test hebt gehad, ontvang je een Nederlandse en internationale QR-code. Heb je een antigeentest gedaan? Dan ontvang je alleen QR-code die geldig is voor toegang binnen Nederland.
+Het is dus niet mogelijk een herstelbewijs te maken op basis van resultaten van een antistoffentest.
 
 ## Problemen met DigiD?
 
@@ -67,8 +63,8 @@ Je kan inloggen op DigiD via de app (<a href="https://www.digid.nl/inlogmethodes
 
 Meer informatie over DigiD: neem gerust contact op met de Helpdesk op <a href="tel:0031881236555">+31 88 123 65 55</a> (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
 
-Heb je geen DigiD of geen digitale middelen, kijk dan voor meer informatie op <a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank">de website van de Rijksoverheid</a>.
+Heb je geen DigiD of geen digitale middelen, neem dan telefonisch contact op met de CoronaCheck helpdesk.
 
 ## Papieren Coronabewijs maken
 
-Geen smartphone, liever een papieren coronabewijs of wil je een coronabewijs voor je kinderen maken? Een papieren coronabewijs maak je op [www.coronacheck.nl/print](/print).
+Geen smartphone, liever een papieren coronabewijs of wil je een coronabewijs voor je kinderen maken? Of vind je het prettig om naast je CoronaCheck-app ook een papieren coronabewijs mee te nemen? Dat kan. Een papieren coronabewijs maak je op [www.coronacheck.nl/print](/print).
