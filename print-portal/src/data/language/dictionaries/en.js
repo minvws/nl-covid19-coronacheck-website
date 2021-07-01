@@ -230,7 +230,7 @@ const en = {
                 'body': 'You can log in again to retrieve your %{type}',
                 'vaccination': 'vaccinations',
                 'negativetest': 'test result',
-                'positiveetest': 'test result'
+                'positivetest': 'test result'
             },
             'digidFinished': {
                 'body': 'We\'ll retrieve your %{type}. You will be logged out of DigiD automatically'
