@@ -20,7 +20,7 @@ Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem�
 
 Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-### Haal uw volledige vaccinatie
+### Haal uw volledige vaccinatie op
 Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Een internationale QR-code kan worden gemaakt na één vaccinatie. Let op, een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">www.wijsopreis.nl</a>.
 
 ### Lukt het niet en ben je in Nederland gevaccineerd?
@@ -64,10 +64,6 @@ Je kan inloggen op DigiD via de app (<a href="https://www.digid.nl/inlogmethodes
 Meer informatie over DigiD: neem gerust contact op met de Helpdesk op <a href="tel:0031881236555">+31 88 123 65 55</a> (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
 
 Heb je geen DigiD of geen digitale middelen, neem dan telefonisch contact op met de CoronaCheck helpdesk.
-
-### Foutmelding
-
-Heb je al DigiD en lukt het je niet om hier een coronabewijs mee op te halen? Bij sommige mensen is helaas sprake van een storing. Wij adviseren je om in dat geval tijdelijk gebruik te maken van een papieren coronabewijs. Dit doe je via [www.coronacheck.nl/print](/print)
 
 ## Papieren Coronabewijs maken
 
