@@ -23,7 +23,7 @@ const nl = {
             'pageHeader': 'Wat voor bewijs wil je maken?',
             'pageIntro': '<p>Geef aan wat voor bewijs je wil maken.</p>',
             'choiceTestHeader': 'Een testbewijs',
-            'choiceTestBody': 'Uit de test blijkt dat ik corona heb gehad',
+            'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
             'choiceRecoveryHeader': 'Een herstelbewijs',
             'choiceRecoveryBody': 'Uit de test blijkt dat ik corona heb gehad',
             'choiceVaccinationHeader': 'Een vaccinatiebewijs',
