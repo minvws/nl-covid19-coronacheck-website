@@ -1,7 +1,6 @@
 ---
 set: 8
 index: 2
-title: Ik ben in een ander EU-land positief getest. Kan ik mijn positieve test in Nederland registreren zodat ik een herstelbewijs kan maken?
-published: false
+title:  I have tested positive for coronavirus in another European country. Can I register my positive test in the Netherlands, so I can create a certificate of recovery? 
 ---
-TBA
+It is not possible to issue a certificate of recovery in the Netherlands after a positive test in another country.
