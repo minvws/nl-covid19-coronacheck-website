@@ -11,11 +11,7 @@ redirect_from:
 Voor toegang tot bepaalde locaties, activiteiten en landen is een coronabewijs nodig. Bezoek je een locatie waar dat het geval is? Volg dan deze stappen:
 
 1. Als bezoeker laat je je vaccineren of doe je een coronatest
-<<<<<<< Updated upstream
-2. Heb je een negatieve uitslag en dus geen corona? Of ben je gevaccineerd? Dan kun je de gegevens ophalen in de CoronaCheck-app. Download de app via de <a href="https://apps.apple.com/nl/app/coronacheck/id1548269870" rel="noopener noreferrer" target="_blank">Apple App Store</a> of de <a href="https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder" rel="noopener noreferrer" target="_blank">Google Play Store</a>.
-=======
 2. Heb je geen corona (negatieve testuitslag), eerder al corona gehad (positieve testuitslag) of ben je gevaccineerd? Dan kun je de gegevens ophalen in de CoronaCheck-app. Download de app via de <a href="https://apps.apple.com/nl/app/coronacheck/id1548269870" rel="noopener noreferrer" target="_blank">Apple App Store</a> of de <a href="https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder" rel="noopener noreferrer" target="_blank">Google Play Store</a>.
->>>>>>> Stashed changes
 3. Vul in de CoronaCheck-app de ophaalcode in die je bij je negatieve testuitslag hebt gekregen. Of haal je gegevens op met DigiD.
 4. De app maakt van jouw gegevens een bewijs, in de vorm van een QR-code
 5. Laat de QR-code scannen aan de deur van de locatie waar je naar binnen wilt. Neem je identiteitsbewijs en toegangskaartje ook mee.
