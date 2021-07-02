@@ -10,7 +10,7 @@ redirect_from:
 
 Je kunt jouw coronabewijs (Digitale Corona Certificaat, DCC) maken om te reizen met CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-Ga je op reis? Check dan eerst <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">www.wijsopreis.nl</a> om te zien welk coronabewijs je nodig hebt in het land dat je wil bezoeken. 
+Ga je op reis? Check dan eerst <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">wijsopreis.nl</a> om te zien welk coronabewijs je nodig hebt in het land dat je wil bezoeken. 
 
 Vanaf 1 juli kun je je gratis laten testen wanneer je op reis gaat. <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie" rel="noopener noreferrer" target="_blank">Hiervoor vind je alle informatie op deze website van de Rijksoverheid</a>.
 
@@ -21,7 +21,7 @@ Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem�
 Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
 ### Haal uw volledige vaccinatie op
-Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Een internationale QR-code kan worden gemaakt na één vaccinatie. Let op, een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">www.wijsopreis.nl</a>.
+Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Een internationale QR-code kan worden gemaakt na één vaccinatie. Let op, een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">wijsopreis.nl</a>.
 
 ### Lukt het niet en ben je in Nederland gevaccineerd?
 
@@ -34,7 +34,7 @@ Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem co
 
 ### Ben je in het buitenland gevaccineerd?
 
-dat ook in Nederland geldig is. Op www.rijksoverheid.nl/coronabewijs-hulp lees je hier meer over.
+dat ook in Nederland geldig is. Op <a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a> lees je hier meer over.
 
 
 ## Testbewijs
@@ -42,7 +42,7 @@ dat ook in Nederland geldig is. Op www.rijksoverheid.nl/coronabewijs-hulp lees j
 
 Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? <a href="https://www.testenvoortoegang.org/" rel="noopener noreferrer" target="_blank" >Hiervoor kun je terecht bij Testen voor Toegang</a>. Op die website vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatest voor nodig is, geeft de organisatie je meestal ook informatie, bijvoorbeeld op het ticket, in een bevestigingsmail of op de website.
 
-Lukt het niet om een testbewijs te maken en ben je langer dan 40 uur geleden getest? Dan moet u opnieuw een testafspraak maken op <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>.
+Lukt het niet om een testbewijs te maken en ben je langer dan 40 uur geleden getest? Dan moet je opnieuw een testafspraak maken op <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>.
 
 ## Herstelbewijs
 
@@ -61,7 +61,7 @@ Om je vaccinatiegegevens in te laden in CoronaCheck heb je een geldige DigiD nod
 
 Je kan inloggen op DigiD via de app (<a href="https://www.digid.nl/inlogmethodes/digid-app" rel="noopener noreferrer" target="_blank">download hier de DigiD app</a>) of de DigiD website met sms-controle. <a href="https://www.digid.nl/inlogmethodes/sms-controle" rel="noopener noreferrer" target="_blank">Over het instellen van een sms-controle lees je hier meer</a>.
 
-Meer informatie over DigiD: neem gerust contact op met de Helpdesk op <a href="tel:0031881236555">+31 88 123 65 55</a> (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
+Meer informatie over DigiD: neem gerust contact op met de Helpdesk op <a href="tel:+31881236555">+31 88 123 65 55</a> (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
 
 Heb je geen DigiD of geen digitale middelen, neem dan telefonisch contact op met de CoronaCheck helpdesk.
 
