@@ -12,19 +12,19 @@ featuredHomeIndex: 3
 ### De Nederlandse QR-code
 De controleur ziet bij een Nederlandse QR-code slechts minimale gegevens op zijn of haar scherm:
 
-- Bij een groen scherm: persoon beschikt over een geldig test-, vaccinatie- of herstelbewijs, of
-- een rood scherm: persoon beschikt niet over een geldig test-, vaccinatie- of herstelbewijs
+- bij een groen scherm: persoon beschikt over een geldig test-, vaccinatie- of herstelbewijs, of
+- bij een rood scherm: persoon beschikt niet over een geldig Nederlands test-, vaccinatie- of herstelbewijs
 
 De controleur kan niet zien welk soort bewijs iemand heeft. Om je identiteit te controleren ziet de controleur:
 - de eerste letter van je voornaam, de eerste letter van je achternaam,
 - je geboortedag en geboortemaand.
 
-Vanwege privacy ziet de controleur niet altijd al deze gegevens. 
+Vanwege privacy ziet de controleur niet altijd al deze gegevens. Het kan dus zijn een van uw initialen is weggelaten en is vervangen voor een “-” (streepje). Dit is correct. 
 
 ### De internationale QR-code
 Als je vanaf 1 juli op reis gaat met de CoronaCheck, worden er bij controles bij de ingang van locaties of bij grenscontroles meer gegevens zichtbaar. Dit is afgesproken binnen Europa (Digitaal Corona Certificaat). 
 
-De controleur kan niet zien of je een testbewijs, vaccinatiebewijs of herstelbewijs . Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
+De controleur kan niet zien of je een testbewijs, vaccinatiebewijs of herstelbewijs hebt. Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
 
 #### Gegevens over het internationale testbewijs
 
