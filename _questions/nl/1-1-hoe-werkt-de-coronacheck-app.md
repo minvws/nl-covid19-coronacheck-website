@@ -4,7 +4,6 @@ index: 1
 title: Hoe werkt de CoronaCheck-app?
 featuredHome: true
 featuredHomeIndex: 1
-featuredHomeIcon: app-touch
 redirect_from: 
   - /nl/faq/1-hoe-werkt-de-coronacheck-app
 ---
