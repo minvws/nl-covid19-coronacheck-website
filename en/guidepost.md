@@ -65,7 +65,7 @@ To retrieve your vaccination details in CoronaCheck, you need a valid DigiD. <a 
 
 You can log in with DigiD via the app (<a href="https://www.digid.nl/en/login-methods/digid-app" rel="noopener noreferrer" target="_blank">Download the DigiD app here</a> or via the DigiD website, using SMS verification. <a href="https://www.digid.nl/en/login-methods/sms-verification" rel="noopener noreferrer" target="_blank">Read more about setting up SMS verification here</a>.
 
-Do you need more information about DigiD? Contact our Helpdesk on  <a href="tel:0031881236555">+31 88 123 65 55</a> (reachable on working days from 8.00 to 22.00 and during weekends, between 12:00-22:00).
+Do you need more information about DigiD? Contact our Helpdesk on  <a href="tel:+31881236555">+31 88 123 65 55</a> (reachable on working days from 8.00 to 22.00 and during weekends, between 12:00-22:00).
 
 Do you not have a DigiD or no digital means, please check <a href="https://www.rijksoverheid.nl/coronabewijs" rel="noopener noreferrer" target="_blank" hreflang="nl">the Dutch Government website (Dutch)</a> for more information. 
 
