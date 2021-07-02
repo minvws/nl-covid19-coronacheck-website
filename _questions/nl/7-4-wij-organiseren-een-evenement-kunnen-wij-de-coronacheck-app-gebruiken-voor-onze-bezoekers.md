@@ -4,6 +4,4 @@ index: 4
 title: Wij organiseren een evenement. Kunnen wij de CoronaCheck-app gebruiken voor onze bezoekers?
 webonly: true
 ---
-Ja, dat kan. In de CoronaCheck-app of via de website kunnen jullie negatieve uitslagen dan omgezet worden in een testbewijs. 
-
-Kijk voor meer informatie over de procedure en de eisen voor aansluiten op [de website van de Rijksoverheid](https://www.rijksoverheid.nl/aansluiten-CoronaCheck).
+In veel gevallen kan dat. Kijk voor meer informatie op de <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-voor-evenementen/coronatoegangsbewijs-informatie-voor-organisatoren" target="_blank" rel="noopener noreferrer">pagina van de Rijksoverheid voor organisatoren</a>. Meer informatie over het scannen lees je op: [www.coronacheck.nl/scanner](/scanner). 

@@ -1,7 +1,7 @@
 ---
-set: 2
+set: 1
 index: 5
-title: Hoe wordt mijn coronabewijs gecontroleerd?
+title: Hoe wordt een coronabewijs gecontroleerd?
 featuredHome: true
 featuredHomeIndex: 5
 redirect_from: 
@@ -9,6 +9,6 @@ redirect_from:
     - /nl/faq/2-5-hoe-wordt-mijn-coronabewijs-gecontroleerd
 webonly: true
 ---
-Voor toegang tot locaties en activiteiten in Nederland gebeurt dat met de [CoronaCheck Scanner](/scanner). Met deze app checkt een controleur de geldigheid van het coronabewijs bij de ingang, door de QR-code te scannen. 
+Voor toegang tot Nederlandse evenementen gebeurt dat met de [CoronaCheck Scanner](/scanner). Met deze app checkt een controleur de geldigheid van het coronabewijs bij de ingang, door de QR-code te scannen. Ben je organisator van een evenement? Kijk dan op de pagina over de CoronaCheck Scanner.
 
-Als je coronabewijs geldig is, ziet de controleur een groen scherm. In de Nederlandse QR-code staan daar minimale gegevens bij: de eerste letter van je voornaam, de eerste letter van je achternaam, je geboortedag en geboortemaand. Deze gegevens worden gecontroleerd met je identiteitsbewijs. De controleur ziet aan de Nederlandse QR-code niet of jouw bewijs van een vaccinatie of een testuitslag gemaakt is.
+Aan de grens wordt het coronabewijs gecontroleerd door de reisorganisatie.

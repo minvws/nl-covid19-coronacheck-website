@@ -3,8 +3,7 @@ set: 3
 index: 5
 title: Naar welke landen kan ik reizen met een internationale QR-code?
 ---
-
-
-Met een bewijs van vaccinatie of een negatieve testuitslag (in de vorm van een QR-code) kun je op reis. <a href="https://www.nederlandwereldwijd.nl/reizen-naar-het-buitenland" rel="noopener noreferrer" target="_blank">Lees voor vertrek eerst dit overzicht</a>. Daar lees je of een QR-code geldig is in het land dat je bezoekt. Je kunt de internationale QR-code ook gebruiken voor locaties in het land waar je heen reist. Daarvoor moet je wel voldoen aan de lokale regels. 
-
+Op dit moment is dat niet mogelijk. Tot die tijd kun je een Europees coronabewijs (Digitaal Corona Certificaat) gebruiken binnen Nederland, indien je die hebt. Ook kun je je tijdelijk nog laten testen voor een testbewijs.
+ 
+Ook kun je bellen naar <a href="tel:31247247247">+31 247 247 247</a> om je buitenlandse vaccinatie handmatig te laten verifiëren door een arts.
 

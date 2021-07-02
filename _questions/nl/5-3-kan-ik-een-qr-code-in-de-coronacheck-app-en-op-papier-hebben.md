@@ -1,6 +1,6 @@
 ---
 set: 5
-index: 4
+index: 3
 title: Kan ik een QR-code in de CoronaCheck-app en op papier hebben?
 redirect_from: 
   - /nl/faq/33-kan-ik-een-testbewijs-in-de-coronacheck-app-en-op-papier-hebben
@@ -8,4 +8,4 @@ redirect_from:
 ---
 Ja, dat kan. Maar dat is niet nodig. Zolang je bewijs geldig is blijft deze in de app staan. Mocht er toch iets fout gaan waardoor je het bewijs niet meer in de app kunt laden, dan kun je altijd je bewijs printen via [www.coronacheck.nl/print](/print).
 
-**Let op**: je kunt maar voor één persoon een bewijs in de CoronaCheck-app laten zien. Iedere bezoeker heeft dus een eigen telefoon (met app) of een geprint bewijs nodig. 
+**Let op**: je kunt maar voor één persoon een bewijs in de CoronaCheck-app laten zien. Als je een coronabewijs wilt maken voor familieleden zonder smartphone kun je wel een papieren bewijs moeten gebruiken. 

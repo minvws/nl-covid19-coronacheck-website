@@ -1,17 +1,29 @@
 ---
 set: 5
-index: 2
-title: Hoe werkt het papieren testbewijs? 
+index: 1
+title: Ik wil liever een QR-code uitprinten. Hoe werkt het papieren bewijs? 
 redirect_from: 
   - /nl/faq/34-hoe-werkt-het-papieren-testbewijs
   - /nl/faq/5-2-hoe-werkt-het-papieren-testbewijs
 webonly: true
 ---
-Geen smartphone of liever een papieren testbewijs? Ga naar [www.coronacheck.nl/print](/print) en volg deze stappen: 
+In sommige gevallen wil je liever een papieren QR-code uitprinten. Bijvoorbeeld als je geen smartphone hebt. Of als je een QR-code wilt maken voor je kinderen. Ga naar [www.coronacheck.nl/print](/print) en volg deze stappen.
 
-1. Als je (negatief) getest bent, vul je op [www.coronacheck.nl/print](/print) jouw ophaalcode in of log je in met je DigiD. Wil je een bewijs maken van je vaccinatie(s), log dan altijd in met DigiD 
-2. Na controle haalt CoronaCheck je uitslag of je vaccinatie(s) op
-3. Daarna wordt van jouw vaccinatie, jouw positieve testuitslag of je negatieve testuitslag een Nederlands bewijs gemaakt, in de vorm van een QR-code. Vanaf 1 juli krijg je ook een internationale QR-code
-4. Print jouw QR-code en neem hem mee
+## Negatief getest?
+Als je negatief getest bent, vul je op [www.coronacheck.nl/print](/print) jouw ophaalcode in. De ophaalcode is een code van letters en cijfers die je per SMS of email krijgt van je teststraat. Je krijgt deze binnen enkele uren. Wanneer je bent getest door de GGD, kun je je gegevens ophalen met behulp van DigiD.
 
-Laat de QR-code scannen bij de ingang van de locatie waar je naar binnen wilt. Of aan de grens. Let op: je kunt de internationale QR-code ook gebruiken voor locaties in het land waar je heen reist. Daarvoor moet je wel voldoen aan de lokale regels. Is je QR-code geldig en komen je gegevens overeen met je identiteitsbewijs? Dan krijg je toegang.
+## Vaccinatie?
+
+Log in met je DigiD. Vaccinatiegegevens worden opgehaald uit de systemen van het RIVM, de GGD en aangesloten huisartsen. Het kan enkele dagen duren voordat je vaccinatie geregistreerd is. 
+
+## Hersteld van corona?
+
+Je kunt een positieve testuitslag gebruiken om een herstelbewijs te maken met CoronaCheck. Hiervoor gelden een aantal voorwaarden:
+
+- De positieve test is afgenomen bij de GGD;
+- De positieve test kan niet langer geleden zijn dan 180 dagen
+- Het herstelbewijs is geldig 11 dagen na de positieve testuitslag, het herstelbewijs kan al wel eerder gemaakt worden. 
+
+Laat de QR-code scannen bij het evenement waar je naar binnen wilt. Of aan de grens.
+
+**Let op:** je kunt de internationale QR-code ook gebruiken voor locaties in het land waar je heen reist.
