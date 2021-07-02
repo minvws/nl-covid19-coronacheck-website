@@ -27,7 +27,7 @@ const vaccinationPages = [
             pageHeader: 'error'
         }
     }, {
-        path: '/we-kunnen-geen-bewijs-maken',
+        path: '/we-kunnen-geen-vaccinatie-bewijs-maken',
         component: VaccinationsNotPossible,
         name: 'VaccinationsNotPossible',
         meta: {
