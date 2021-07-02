@@ -189,6 +189,7 @@ export default {
                         }
 
                         if (this.testResultStatus === 'result_blocked') {
+                            this.$store.commit('clearAll');
                             this.$router.push({ name: 'TestResultNone' })
                         }
                     } else {
