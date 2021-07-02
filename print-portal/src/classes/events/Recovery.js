@@ -4,9 +4,9 @@ class Recovery {
         validFrom = '',
         validUntil = ''
     }) {
-        this.sampleDate = sampleDate;
-        this.validFrom = validFrom;
-        this.validUntil = validUntil;
+        this.sampleDate = sampleDate || '';
+        this.validFrom = validFrom || '';
+        this.validUntil = validUntil || '';
     }
 }
 
