@@ -2,8 +2,6 @@
 set: 1
 index: 5
 title: Hoe wordt een coronabewijs gecontroleerd?
-featuredHome: true
-featuredHomeIndex: 5
 redirect_from: 
     - /nl/faq/31-hoe-wordt-mijn-testbewijs-gecontroleerd
     - /nl/faq/2-5-hoe-wordt-mijn-coronabewijs-gecontroleerd
