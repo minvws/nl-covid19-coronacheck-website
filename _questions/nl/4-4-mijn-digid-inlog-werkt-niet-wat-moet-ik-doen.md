@@ -2,6 +2,8 @@
 set: 4
 index: 4
 title: Problemen met DigiD
+redirect_from:
+    - /nl/faq/4-4-problemen-met-digid
 ---
 Om je vaccinatiegegevens in te laden in CoronaCheck heb je een geldige DigiD nodig. <a href="https://www.digid.nl/digid-aanvragen-activeren/" rel="noreferrer nofollow" target="_blank">Een DigiD kun je via deze link aanvragen</a> De aanvraag van een nieuwe DigiD duurt enkele werkdagen.
 

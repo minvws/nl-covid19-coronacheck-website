@@ -1,10 +1,12 @@
 ---
-set: 1
-index: 5
+set: 2
+index: 2
 title: Hoe maak ik een bewijs van een vaccinatie-, herstel- of testuitslag?
 redirect_from: 
-  - /nl/faq-in-app/8-ik-heb-mij-laten-testen-hoe-krijg-ik-mijn-testuitslag
-  - /nl/faq-in-app/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
+    - /nl/faq/8-ik-heb-mij-laten-testen-hoe-krijg-ik-mijn-testuitslag
+    - /nl/faq/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
+    - /nl/faq/1-5-hoe-maak-ik-een-bewijs-van-een-vaccinatie-herstel-of-testuitslag
+webonly: true
 ---
 Je kunt een bewijs maken als je bent gevaccineerd, als je corona hebt gehad of als je bent getest. Dat kan in de app of [via de website](/nl/print). De te doorlopen stappen staan daar duidelijk uitgelegd. 
  

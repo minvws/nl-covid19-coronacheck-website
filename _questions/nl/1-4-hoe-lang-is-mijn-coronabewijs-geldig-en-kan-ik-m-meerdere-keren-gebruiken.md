@@ -1,11 +1,13 @@
 ---
 set: 2
 index: 2
-title: Hoe lang is mijn testbewijs geldig in Nederland en kan ik 'm meerdere keren gebruiken?
+title: Hoe lang is mijn coronabewijs geldig? Kan ik ‘m meerdere keren gebruiken?	
 redirect_from: 
-  - /nl/faq/9-hoe-lang-is-mijn-testbewijs-geldig
-  - /nl/faq/10-waarom-is-de-geldigheidsduur-van-een-testbewijs-40-uur
-  - /nl/faq/35-kan-ik-meerdere-pilots-bezoeken-met-een-testbewijs/
+    - /nl/faq/9-hoe-lang-is-mijn-testbewijs-geldig
+    - /nl/faq/10-waarom-is-de-geldigheidsduur-van-een-testbewijs-40-uur
+    - /nl/faq/35-kan-ik-meerdere-pilots-bezoeken-met-een-testbewijs/
+    - /nl/faq/2-2-hoe-lang-is-mijn-testbewijs-geldig-en-kan-ik-hem-meerdere-keren-gebruiken
+    - /nl/faq/2-3-tot-wanneer-is-mijn-vaccinatiebewijs-geldig
 featuredHome: true
 featuredHomeIndex: 2
 ---

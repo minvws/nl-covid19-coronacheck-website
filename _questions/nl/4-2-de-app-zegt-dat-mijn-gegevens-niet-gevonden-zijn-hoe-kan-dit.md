@@ -5,6 +5,7 @@ title: De app zegt dat er geen negatieve/positieve testuitslag of vaccinatie gev
 redirect_from: 
   - /nl/faq/13-de-app-zegt-dat-er-geen-negatieve-testuitslag-gevonden-is-hoe-kan-dit
   - /nl/faq/4-1-de-app-zegt-dat-er-geen-negatieve-testuitslag-of-vaccinatie-gevonden-is-hoe-kan-dit
+  - /nl/faq/4-1-de-app-zegt-dat-er-geen-negatieve-of positieve-testuitslag-of-vaccinatie-gevonden-is
 ---
 ## Geen vaccinatie gevonden? 
 

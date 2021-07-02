@@ -1,10 +1,7 @@
 ---
 set: 4
 index: 1
-title: De app zegt dat er geen negatieve/positieve testuitslag of vaccinatie gevonden is. Hoe kan dit?
-redirect_from: 
-  - /nl/faq-in-app/13-de-app-zegt-dat-er-geen-negatieve-testuitslag-gevonden-is-hoe-kan-dit
-  - /nl/faq-in-app/4-1-de-app-zegt-dat-er-geen-negatieve-testuitslag-of-vaccinatie-gevonden-is-hoe-kan-dit
+title: Werkt de CoronaCheck app ook offline?
 ---
 ## Geen vaccinatie gevonden? 
 

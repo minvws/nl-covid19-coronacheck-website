@@ -16,6 +16,4 @@ Voor toegang tot bepaalde locaties, activiteiten en landen is een coronabewijs n
 4. De app maakt van jouw gegevens een bewijs, in de vorm van een QR-code
 5. Laat de QR-code scannen aan de deur van de locatie waar je naar binnen wilt. Neem je identiteitsbewijs en toegangskaartje ook mee.
 
-Vanaf begin juli kun je ook een bewijs maken als je corona hebt gehad en bent hersteld (herstelverklaring). Ook dat doe je door de stappen hierboven te volgen. 
-
 **Let op:** je kunt maar voor één persoon een bewijs in de CoronaCheck-app maken. Iedere bezoeker heeft dus een eigen telefoon met de app nodig. Geen telefoon? Je kunt ook een QR-code printen. Download en print jouw bewijs op [www.coronacheck.nl/print](/print).

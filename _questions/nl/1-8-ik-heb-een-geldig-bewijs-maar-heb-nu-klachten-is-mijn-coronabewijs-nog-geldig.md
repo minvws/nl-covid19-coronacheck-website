@@ -1,9 +1,10 @@
 ---
 set: 1
 index: 8
-title: Ik heb een geldig bewijs, maar heb nu klachten. Mag ik alsnog naar binnen?
+title: Ik heb een geldig bewijs, maar heb klachten of moet in quarantaine. Is mijn coronabewijs nog geldig?
 redirect_from: 
-  - /nl/faq/5-ik-heb-een-qr-code-maar-heb-nu-klachten
+    - /nl/faq/5-ik-heb-een-qr-code-maar-heb-nu-klachten
+    - /nl/faq/1-8-ik-heb-een-geldig-bewijs-maar-heb-nu-klachten-mag-ik-alsnog-naar-binnen
 ---
 Heb je klachten als verkoudheid, hoesten of benauwdheid? Blijf thuis. Ook als je al (volledig) gevaccineerd bent. 
 

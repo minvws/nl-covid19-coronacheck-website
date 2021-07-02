@@ -5,7 +5,9 @@ title: Hoe wordt mijn coronabewijs gecontroleerd?
 featuredHome: true
 featuredHomeIndex: 5
 redirect_from: 
-  - /nl/faq-in-app/31-hoe-wordt-mijn-testbewijs-gecontroleerd
+    - /nl/faq/31-hoe-wordt-mijn-testbewijs-gecontroleerd
+    - /nl/faq/2-5-hoe-wordt-mijn-coronabewijs-gecontroleerd
+webonly: true
 ---
 Voor toegang tot locaties en activiteiten in Nederland gebeurt dat met de [CoronaCheck Scanner](/scanner). Met deze app checkt een controleur de geldigheid van het coronabewijs bij de ingang, door de QR-code te scannen. 
 

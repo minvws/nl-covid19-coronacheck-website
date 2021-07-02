@@ -1,9 +1,11 @@
 ---
-set: 1
-index: 4
+set: 2
+index: 1
 title: Ik wil mij laten testen, waar kan ik terecht?
 redirect_from: 
-  - /nl/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
+    - /nl/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
+    - /nl/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
+webonly: true
 ---
 Waar je het beste een coronatest doen is afhankelijk van waar je het testbewijs voor wil gebruiken.
 
