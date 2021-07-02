@@ -2,7 +2,7 @@ class _NegativeTest {
     constructor({
         sampleDate = ''
     }) {
-        this.sampleDate = sampleDate;
+        this.sampleDate = sampleDate || '';
     }
 }
 

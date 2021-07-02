@@ -1,12 +1,20 @@
 class _Test {
-    constructor(test) {
-        this.sampleDate = test.sampleDate;
-        this.resultDate = test.resultDate;
-        this.facility = test.facility;
-        this.type = test.type;
-        this.name = test.name;
-        this.manufacturer = test.manufacturer;
-        this.country = test.country;
+    constructor({
+        sampleDate = '',
+        resultDate = '',
+        facility = '',
+        type = '',
+        name = '',
+        manufacturer = '',
+        country = ''
+    }) {
+        this.sampleDate = sampleDate;
+        this.resultDate = resultDate;
+        this.facility = facility;
+        this.type = type;
+        this.name = name;
+        this.manufacturer = manufacturer;
+        this.country = country;
     }
 }
 
