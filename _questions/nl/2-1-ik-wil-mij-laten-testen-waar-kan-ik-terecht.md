@@ -6,6 +6,8 @@ redirect_from:
     - /nl/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
     - /nl/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
 webonly: true
+featuredHome: true
+featuredHomeIndex: 3
 ---
 Om een testbewijs te maken met de CoronaCheck-app moet je je eerst laten testen. Dit moet je doen bij een aangesloten testlocatie. [Hier vind je het overzicht van aangesloten testlocaties](#overzicht-van-testlocaties). 
 

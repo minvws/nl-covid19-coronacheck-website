@@ -7,6 +7,8 @@ redirect_from:
     - /nl/faq/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
     - /nl/faq/1-5-hoe-maak-ik-een-bewijs-van-een-vaccinatie-herstel-of-testuitslag
 webonly: true
+featuredHome: true
+featuredHomeIndex: 4
 ---
 Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app). 
 
