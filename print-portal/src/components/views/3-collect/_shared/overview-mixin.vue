@@ -62,8 +62,6 @@ export default {
         gotoPrint() {
             if (this.$store.state.qrs.proof === null) {
                 signer.sign(this.$store.state.signedEvents.all).then(response => {
-                    // currently check if there is domestic result. From 2.1 on
-                    // we have to check if there is either domestic or eu
                     if (response.data) {
                         if (response.data.domestic || response.data.european) {
                             this.$store.commit('qrs/add', response.data);
