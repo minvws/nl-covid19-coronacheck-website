@@ -21,20 +21,23 @@ export default {
             return dateTool.dateToString(this.vaccination.date, 'MMMM');
         },
         location() {
-            const providerIdentifier = this.$store.getters['eventProviders/getTestProviderByIdentifier'](this.signedEvent.providerIdentifier);
-            return providerIdentifier ? providerIdentifier.name : '-';
+            if (this.signedEvent.providerIdentifier) {
+                const providerIdentifier = this.$store.getters['eventProviders/getTestProviderByIdentifier'](this.signedEvent.providerIdentifier);
+                return providerIdentifier ? providerIdentifier.name : '-';
+            } else {
+                return '-';
+            }
         },
         title() {
             return this.$t('components.vaccination.vaccination') + ' ' + this.monthName + ' (' + this.location + ')';
         },
         vaccineName() {
             let vaccine;
-            if (this.vaccination.hpkCode.length > 0) {
+            if (this.vaccination.hpkCode && this.vaccination.hpkCode.length > 0) {
                 vaccine = this.$store.state.holderConfig.hpkCodes.find(hpkCode => {
-                    // todo temp stringify this, will be fixed by Nick
                     return String(hpkCode.code) === this.vaccination.hpkCode;
                 })
-            } else if (this.vaccination.brand.length > 0) {
+            } else if (this.vaccination.brand && this.vaccination.brand.length > 0) {
                 vaccine = this.$store.state.holderConfig.euBrands.find(euBrand => {
                     return euBrand.code === this.vaccination.brand;
                 })
