@@ -77,7 +77,7 @@ const en = {
             'emptyVerificationCode': 'Verification code not entered',
             'sendCode': 'Send code'
         },
-        'NegativeTestOverview': {
+        'negativeTestOverview': {
             'pageHeader': 'Check your test result',
             'pageIntro': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.</p>',
             'createTestProofButton': 'Make QR code',
