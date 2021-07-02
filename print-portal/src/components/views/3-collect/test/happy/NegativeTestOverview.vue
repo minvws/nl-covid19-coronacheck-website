@@ -15,7 +15,7 @@ export default {
             filter: 'negativetest',
             pages: {
                 print: 'PrintNegativeTest',
-                noResultFromSigner: ''
+                noResultFromSigner: 'NegativeTestNotPossible'
             }
         }
     },

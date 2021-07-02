@@ -83,6 +83,10 @@ const nl = {
             'createTestProofButton': 'Maak QR-code',
             'retrievedTestResult': 'Opgehaalde testuitslag'
         },
+        'negativeTestNotPossible': {
+            'pageHeader': 'We kunnen geen bewijs maken',
+            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken van jouw testuitslag. Dit kan verschillende oorzaken hebben. <a href="https://coronacheck.nl/wegwijzer" target="_blank">Lees hier meer</a>.</p>'
+        },
         'testResultPending': {
             'pageHeader': 'Testuitslag nog niet bekend',
             'pageIntro': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.'

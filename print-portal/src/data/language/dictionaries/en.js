@@ -83,6 +83,10 @@ const en = {
             'createTestProofButton': 'Make QR code',
             'retrievedTestResult': 'Retrieved test result'
         },
+        'negativeTestNotPossible': {
+            'pageHeader': 'We can’t make a certificate',
+            'pageIntro': '<p>At the moment, we cannot provide proof of your test result. This can have different causes. For more information, please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">CoronaCheck.nl/en/guidepost</a>.</p>'
+        },
         'testResultPending': {
             'pageHeader': 'Test result not yet known',
             'pageIntro': 'Please try again later.<br>If you have any questions, contact your test location.'
