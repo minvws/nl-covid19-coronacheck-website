@@ -42,7 +42,7 @@ dat ook in Nederland geldig is. Op <a href="https://www.rijksoverheid.nl/coronab
 
 Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? <a href="https://www.testenvoortoegang.org/" rel="noopener noreferrer" target="_blank" >Hiervoor kun je terecht bij Testen voor Toegang</a>. Op die website vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatest voor nodig is, geeft de organisatie je meestal ook informatie, bijvoorbeeld op het ticket, in een bevestigingsmail of op de website.
 
-Lukt het niet om een testbewijs te maken en ben je langer dan 40 uur geleden getest? Dan moet u opnieuw een testafspraak maken op <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>.
+Lukt het niet om een testbewijs te maken en ben je langer dan 40 uur geleden getest? Dan moet je opnieuw een testafspraak maken op <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>.
 
 ## Herstelbewijs
 
