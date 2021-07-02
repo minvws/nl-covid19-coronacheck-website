@@ -451,21 +451,8 @@ faq-category-one:
   ro: 
   tr:
 
-faq-category-eight:
-  nl: Herstelbewijs
-  fy: 
-  en: Recovery certificate
-  ar: 
-  bg: 
-  de: 
-  es: 
-  fr: 
-  pl: 
-  ro: 
-  tr:
-
 faq-category-two:
-  nl: Gebruik in Nederland
+  nl: Coronabewijs maken
   fy: 
   en: Using CoronaCheck in the Netherlands
   ar: 
@@ -478,7 +465,7 @@ faq-category-two:
   tr:
 
 faq-category-three:
-  nl: Internationaal Reizen
+  nl: Internationaal reizen met CoronaCheck
   fy: 
   en: International travel with CoronaCheck
   ar: 
@@ -542,6 +529,19 @@ faq-category-seven:
   ro: 
   tr: 
 
+faq-category-eight:
+  nl: Herstelbewijs
+  fy: 
+  en: Recovery certificate
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+    
 faq-category-privacy:
   nl: Privacy
   fy: 
