@@ -1,11 +1,11 @@
 import ChoiceTestLocation from '@/components/views/2-b-choice-test-location/ChoiceTestLocation'
-import ProvideCode from '@/components/views/3-collect/test/provide-code/ProvideCode'
-import NegativeTestOverview from '@/components/views/3-collect/test/happy/NegativeTestOverview';
-import NegativeTestRedirect from '@/components/views/3-collect/test/happy/NegativeTestRedirect';
+import ProvideCode from '@/components/views/3-collect/negative-test/provide-code/ProvideCode'
+import NegativeTestOverview from '@/components/views/3-collect/negative-test/happy/NegativeTestOverview';
+import NegativeTestRedirect from '@/components/views/3-collect/negative-test/happy/NegativeTestRedirect';
 import PrintNegativeTest from '@/components/views/4-print/PrintNegativeTest';
-import TestResultPending from '@/components/views/3-collect/test/unhappy/TestResultPending';
-import NegativeTestNotPossible from '@/components/views/3-collect/test/unhappy/NegativeTestNotPossible';
-import TestResultNone from '@/components/views/3-collect/test/unhappy/TestResultNone';
+import TestResultPending from '@/components/views/3-collect/negative-test/unhappy/TestResultPending';
+import NegativeTestNotPossible from '@/components/views/3-collect/negative-test/unhappy/NegativeTestNotPossible';
+import TestResultNone from '@/components/views/3-collect/negative-test/unhappy/TestResultNone';
 
 const negativeTestPages = [
     {
