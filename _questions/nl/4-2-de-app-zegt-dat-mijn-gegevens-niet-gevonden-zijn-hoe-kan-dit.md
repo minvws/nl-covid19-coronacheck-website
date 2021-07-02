@@ -27,7 +27,7 @@ Heb je bijvoorbeeld één van de volgende problemen:
 - Zie je beide vaccinaties op één dag staan?
 - Of kun je je vaccinatiegegevens niet volledig ophalen, terwijl je laatste vaccinatie langer dan 3 dagen geleden was?
 
-Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem contact op met je vaccinatiezetter (GGD op 0800-5090,  ziekenhuis, huisarts via <a href="tel:31247247247">+31 247 247 247</a> of een andere zorginstelling).
+Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem contact op met je vaccinatiezetter (GGD op 0800-5090,  ziekenhuis, huisarts of een andere zorginstelling).
 
 ## Ben je in het buitenland gevaccineerd?
 
