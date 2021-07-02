@@ -77,11 +77,15 @@ const nl = {
             'emptyVerificationCode': 'Verificatiecode niet ingevuld',
             'sendCode': 'Stuur code'
         },
-        'NegativeTestOverview': {
+        'negativeTestOverview': {
             'pageHeader': 'Controleer je testuitslag',
             'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
             'createTestProofButton': 'Maak QR-code',
             'retrievedTestResult': 'Opgehaalde testuitslag'
+        },
+        'negativeTestNotPossible': {
+            'pageHeader': 'We kunnen geen bewijs maken',
+            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken van jouw testuitslag. Dit kan verschillende oorzaken hebben. <a href="https://coronacheck.nl/wegwijzer" target="_blank">Lees hier meer</a>.</p>'
         },
         'testResultPending': {
             'pageHeader': 'Testuitslag nog niet bekend',
@@ -114,6 +118,10 @@ const nl = {
             'domestic': {
                 'pageHeader': 'Print jouw Nederlandse testbewijs',
                 'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een Nederlands testbewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt.</p>'
+            },
+            'european': {
+                'pageHeader': 'Print jouw internationale testbewijs',
+                'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Er is geen Nederlands bewijs gemaakt omdat het type test niet voldoet, of omdat het testbewijs al verlopen is in Nederland.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar het land waar je heen reist.</p>'
             }
         },
         'printVaccination': {
@@ -123,7 +131,7 @@ const nl = {
             },
             'european': {
                 'pageHeader': 'Print jouw internationale vaccinatiebewijs',
-                'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een internationaal vaccinatiebewijs gemaakt, in de vorm van een QR-code. Deze is alleen internationaal geldig, maar niet in Nederland.</p><p>Je hebt geen Nederlands vaccinatiebewijs. Dit kan bijvoorbeeld komen doordat je maar één prik hebt gehad. Voeg je tweede prik of een herstelbewijs toe om een bewijs te maken dat geldig is in Nederland.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+                'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Dit kan komen doordat je nog maar één prik hebt gehad. Probeer opnieuw een Nederlands bewijs te maken als je volledig gevaccineerd bent.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
             }
             // domestic only is a non existing scenario for vaccination
         },
