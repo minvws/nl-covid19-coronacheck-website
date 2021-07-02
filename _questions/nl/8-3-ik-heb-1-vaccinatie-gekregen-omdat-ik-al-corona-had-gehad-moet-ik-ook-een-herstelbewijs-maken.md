@@ -11,4 +11,4 @@ Als uw enkele vaccinatie door de prikzetter als volledig geregistreerd staat, is
 
 ## Niet geregistreerd
 
-Indien uw enkele vaccinatie niet als volledig geregistreerd staat kunt u een herstelbewijs toevoegen in de app als u in de afgelopen 180 dagen negatief op corona bent getest bij de GGD. 
+Indien uw enkele vaccinatie niet als volledig geregistreerd staat kunt u een herstelbewijs toevoegen in de app als u in de afgelopen 180 dagen positief op corona bent getest bij de GGD. 
