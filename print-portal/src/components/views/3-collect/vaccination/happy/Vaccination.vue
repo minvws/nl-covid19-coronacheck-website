@@ -33,7 +33,6 @@ export default {
         },
         vaccineName() {
             let vaccine;
-            console.log(this.vaccination);
             if (this.vaccination.hpkCode.length > 0) {
                 vaccine = this.$store.state.holderConfig.hpkCodes.find(hpkCode => {
                     return String(hpkCode.code) === this.vaccination.hpkCode;
