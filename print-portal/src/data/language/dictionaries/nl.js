@@ -77,7 +77,7 @@ const nl = {
             'emptyVerificationCode': 'Verificatiecode niet ingevuld',
             'sendCode': 'Stuur code'
         },
-        'NegativeTestOverview': {
+        'negativeTestOverview': {
             'pageHeader': 'Controleer je testuitslag',
             'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
             'createTestProofButton': 'Maak QR-code',
