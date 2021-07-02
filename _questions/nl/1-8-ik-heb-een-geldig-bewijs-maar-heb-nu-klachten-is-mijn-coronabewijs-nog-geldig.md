@@ -5,6 +5,8 @@ title: Ik heb een geldig bewijs, maar heb klachten of moet in quarantaine. Is mi
 redirect_from: 
     - /nl/faq/5-ik-heb-een-qr-code-maar-heb-nu-klachten
     - /nl/faq/1-8-ik-heb-een-geldig-bewijs-maar-heb-nu-klachten-mag-ik-alsnog-naar-binnen
+    - /nl/faq/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd
+    - /nl/faq/1-9-ik-heb-een-geldig-bewijs-maar-moet-in-quarantaine-blijven-van-de-ggd
 ---
 Heb je klachten als verkoudheid, hoesten of benauwdheid? Blijf thuis. Ook als je al (volledig) gevaccineerd bent. 
 
