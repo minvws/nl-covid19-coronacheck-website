@@ -29,16 +29,14 @@ export default {
 </script>
 
 <template>
-    <div class="Identity">
+    <header class="Identity">
         <Skiplinks/>
 
         <div class="logo">
-            <a href="https://coronacheck.nl/">
-                <img
-                    :alt="$t('logo-government')"
-                    width="45"
-                    src="assets/img/rijksoverheid/label_ministerie.svg"/>
-            </a>
+            <img
+                :alt="$t('logo-government')"
+                width="45"
+                src="assets/img/rijksoverheid/label_ministerie.svg"/>
         </div>
 
         <div class="pagewrap">
@@ -64,7 +62,7 @@ export default {
         </a>
         <LanguagePicker
             v-if="hasLanguages"/>
-    </div>
+    </header>
 </template>
 
 <style lang="scss">

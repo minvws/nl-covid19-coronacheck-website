@@ -14,7 +14,7 @@ const nl = {
     'views': {
         'home': {
             'pageHeader': 'Krijg toegang met een papieren bewijs',
-            'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2><p>Een bewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><div class="home__section"><h4>Alleen toegang met een bewijs</h4><p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang. Je kan een coronabewijs maken als je bent gevaccineerd, als uit een test blijkt dat je geen corona hebt of als je corona hebt gehad en bent hersteld.</p></div><div class="home__section"><h4>QR-code = jouw bewijs</h4><p>Van jouw testuitslag of vaccinatie wordt een QR-code gemaakt. Dat is jouw bewijs. De QR-code wordt gecheckt bij de ingang van plekken en activiteiten. Of aan de grens.</p></div><div class="home__section"><h4>QR-codes voor Nederland en internationaal</h4><p>Je krijgt twee QR-codes: één voor Nederland en één voor internationaal. Reis je buiten Nederland? Gebruik dan je internationale QR-code.</p></div>',
+            'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2><p>Een bewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><div class="home__section"><h3>Alleen toegang met een bewijs</h3><p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang. Je kan een coronabewijs maken als je bent gevaccineerd, als uit een test blijkt dat je geen corona hebt of als je corona hebt gehad en bent hersteld.</p></div><div class="home__section"><h3>QR-code = jouw bewijs</h3><p>Van jouw testuitslag of vaccinatie wordt een QR-code gemaakt. Dat is jouw bewijs. De QR-code wordt gecheckt bij de ingang van plekken en activiteiten. Of aan de grens.</p></div><div class="home__section"><h3>QR-codes voor Nederland en internationaal</h3><p>Je krijgt twee QR-codes: één voor Nederland en één voor internationaal. Reis je buiten Nederland? Gebruik dan je internationale QR-code.</p></div>',
             'userConsentHeader': 'Maak een papieren bewijs',
             'userConsentText': 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank">privacyverklaring</a> gelezen en begrijp hoe CoronaCheck mijn gegevens gebruikt',
             'noConsentError': 'Ga eerst akkoord met de privacyverklaring'
@@ -113,25 +113,25 @@ const nl = {
         'printNegativeTest': {
             'both': {
                 'pageHeader': 'Print jouw bewijzen',
-                'pageIntro': '<p><b>Jouw bewijzen</b><br>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een QR-code voor als je internationaal reist.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+                'pageIntro': '<p><strong>Jouw bewijzen</strong><br>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een QR-code voor als je internationaal reist.</p><p><strong>Informatie in de QR</strong><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><strong>En nu?</strong><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
             },
             'domestic': {
                 'pageHeader': 'Print jouw Nederlandse testbewijs',
-                'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een Nederlands testbewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt.</p>'
+                'pageIntro': '<p><strong>Jouw bewijs</strong><br>Je hebt een Nederlands testbewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen.</p><p><strong>Informatie in de QR</strong><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><strong>En nu?</strong><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt.</p>'
             },
             'european': {
                 'pageHeader': 'Print jouw internationale testbewijs',
-                'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Er is geen Nederlands bewijs gemaakt omdat het type test niet voldoet, of omdat het testbewijs al verlopen is in Nederland.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar het land waar je heen reist.</p>'
+                'pageIntro': '<p><strong>Jouw bewijs</strong><br>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Er is geen Nederlands bewijs gemaakt omdat het type test niet voldoet, of omdat het testbewijs al verlopen is in Nederland.</p><p><strong>Informatie in de QR</strong><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><strong>En nu?</strong><br>Print de PDF en neem het printje mee naar het land waar je heen reist.</p>'
             }
         },
         'printVaccination': {
             'both': {
                 'pageHeader': 'Print jouw bewijzen',
-                'pageIntro': '<p><b>Jouw bewijzen</b><br>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt nu twee QR-codes: één voor Nederland en één internationale.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+                'pageIntro': '<p><strong>Jouw bewijzen</strong><br>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt nu twee QR-codes: één voor Nederland en één internationale.</p><p><strong>Informatie in de QR</strong><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><strong>En nu?</strong><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
             },
             'european': {
                 'pageHeader': 'Print jouw internationale vaccinatiebewijs',
-                'pageIntro': '<p><b>Jouw bewijs</b><br>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Dit kan komen doordat je nog maar één prik hebt gehad. Probeer opnieuw een Nederlands bewijs te maken als je volledig gevaccineerd bent.</p><p><b>Informatie in de QR</b><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><b>En nu?</b><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+                'pageIntro': '<p><strong>Jouw bewijs</strong><br>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Dit kan komen doordat je nog maar één prik hebt gehad. Probeer opnieuw een Nederlands bewijs te maken als je volledig gevaccineerd bent.</p><p><strong>Informatie in de QR</strong><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Hier</a> kun je lezen wat er in de QR-codes staat.</p><p><strong>En nu?</strong><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
             }
             // domestic only is a non existing scenario for vaccination
         },
@@ -309,7 +309,7 @@ const nl = {
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
     'goBackToStart': 'Naar home',
-    'header-appstore': 'Downloaden in de App Store',
+    'header-appstore': 'Download in de App Store',
     'header-googleplaystore': 'Ontdek het op Google Play',
     'identity_image_alt': 'Holder QR maken',
     'logo-government': 'Logo Rijksoverheid, homepage',

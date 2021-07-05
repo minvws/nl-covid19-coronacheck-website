@@ -64,7 +64,9 @@ export default {
             <span class="language-picker__chevron"></span>
         </button>
         <LanguagePickerLanguages
-            @close="close"/>
+            @close="close"
+            v-if="isOpen"
+            />
     </div>
 </template>
 

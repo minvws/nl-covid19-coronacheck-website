@@ -11,9 +11,9 @@ export default {
 </script>
 
 <template>
-    <div class="ErrorLabel">
+    <p class="ErrorLabel" role="alert">
         {{label}}
-    </div>
+    </p>
 </template>
 
 <style lang="scss" scoped>
