@@ -34,7 +34,7 @@ Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem co
 
 ### Ben je in het buitenland gevaccineerd?
 
-dat ook in Nederland geldig is. Op <a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a> lees je hier meer over.
+Op dit moment kun je helaas nog niet de CoronaCheck-app gebruiken om een bewijs te maken van je vaccinatie. In sommige landen kun je ter plaatse een coronabewijs maken dat ook in Nederland geldig is. Op <a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a> lees je hier meer over.
 
 
 ## Testbewijs
