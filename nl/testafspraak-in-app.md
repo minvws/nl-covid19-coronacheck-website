@@ -1,10 +1,10 @@
 ---
 layout: in-app-content
 lang: nl
-title: Aangesloten testlocaties
+title: Testlocaties aangesloten op CoronaCheck
 redirect_from: /testafspraak-in-app
 ---
-Waar je het beste een coronatest doen is afhankelijk van waar je het testbewijs voor wil gebruiken.
+Waar je het beste een coronatest kan doen? Dat hangt ervan af waar je het testbewijs voor wil gebruiken.
 
 ## Testen voor toegang in Nederland
 
@@ -18,7 +18,7 @@ Wil je op reis? Dan zijn er gratis coronatests beschikbaar voor reizigers. Kijk 
 
 <a href="https://afspraak.testenvoorjereis.nl/" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Maak afspraak<span class="screen-reader-text"> via Testen voor je Reis</span></a>
 
-## Bij klachten
+### Bij klachten
 Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, benauwdheid, verhoging of koorts. Laat je testen bij de GGD. 
 
 <a href="https://www.coronatest.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank">Maak afspraak<span class="screen-reader-text"> bij de GGD</span></a>
@@ -27,4 +27,3 @@ Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, b
 
 - <a href="https://www.medicorps.nl/" rel="noopener noreferrer" target="_blank">MediCorps</a>
 
-<br />

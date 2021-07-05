@@ -10,8 +10,9 @@ const html = `
             </div>
         </div>
         <div class="footer-links-col ___desktop-50">
-            <h2>Do you have questions about CoronaCheck? Contact us
+            <h2>Do you have questions about CoronaCheck? Read the <a href="https://www.coronacheck.nl/en/faq"  target="_blank" rel="noopener noreferrer">frequently asked questions</a>.
             </h2>
+            <p>Don't see your question listed? Contact our helpdesk.</p>
             <h3>Call the helpdesk</h3>
             <p><a href="tel:08001421">0800-1421</a> (free).<br />
             Available Monday till Sunday 08.00 a.m. - 08.00 p.m.</p>
