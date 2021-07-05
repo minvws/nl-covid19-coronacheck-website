@@ -27,6 +27,7 @@ export default {
 
 <template>
     <button
+        type="button"
         @click="select"
         :class="{
             'CcModestButton--margin-top': marginTop,

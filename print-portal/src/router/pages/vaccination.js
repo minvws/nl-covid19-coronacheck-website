@@ -4,7 +4,6 @@ import VaccinationOverview from '@/components/views/3-collect/vaccination/happy/
 import PrintVaccination from '@/components/views/4-print/PrintVaccination';
 import VaccinationsNone from '@/components/views/3-collect/vaccination/unhappy/VaccinationsNone'
 import VaccinationsNotPossible from '@/components/views/3-collect/vaccination/unhappy/VaccinationsNotPossible'
-import VaccinationsIncomplete from '@/components/views/3-collect/vaccination/unhappy/VaccinationsIncomplete'
 
 const vaccinationPages = [
     {
@@ -27,16 +26,9 @@ const vaccinationPages = [
             pageHeader: 'error'
         }
     }, {
-        path: '/we-kunnen-geen-bewijs-maken',
+        path: '/we-kunnen-geen-vaccinatie-bewijs-maken',
         component: VaccinationsNotPossible,
         name: 'VaccinationsNotPossible',
-        meta: {
-            pageHeader: 'error'
-        }
-    }, {
-        path: '/niet-volledig-gevaccineerd',
-        component: VaccinationsIncomplete,
-        name: 'VaccinationsIncomplete',
         meta: {
             pageHeader: 'error'
         }
