@@ -736,6 +736,14 @@ footer-contact-title:
   ro: Aveți întrebări în legătură cu CoronaCheck? 
   tr: CoronaCheck hakkında sorularınız mı var?
 
+footer-contact-subtitle:
+  nl: Heb je vragen over CoronaCheck, lees dan de <a href="/nl/faq">meestgestelde vragen</a>.<br />Staat jouw vraag er niet tussen? Neem dan contact op met de helpdesk.
+  # en: If you have questions about CoronaCheck, read the <a href="/en/faq">frequently asked questions</a>.<br />If you don't see your question listed? Contact our helpdesk.
+
+footer-contact-subtitle-scanner:
+  nl: Heb je vragen over CoronaCheck Scanner, lees dan de <a href="/nl/faq-scanner">meestgestelde vragen</a>.<br />Staat jouw vraag er niet tussen? Neem dan contact op met de helpdesk.
+  # en: If you have questions about CoronaCheck, read the <a href="/en/faq">frequently asked questions</a>.<br />If you don't see your question listed? Contact our helpdesk.
+
 footer-phone: 
   nl: Bel de helpdesk
   fy: 

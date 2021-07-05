@@ -8,6 +8,11 @@
   </div>
   <div class="footer-contact__column-right"> 
     <h2>{{ site.data.translations.footer-contact-title[page.lang] }}</h2>
+    {% if page.domain == "scanner" %}
+        <p>{{ site.data.translations.footer-contact-subtitle-scanner[page.lang] }}</p>
+    {% else %}  
+        <p>{{ site.data.translations.footer-contact-subtitle[page.lang] }}</p>
+    {% endif %}
     <h3>{{ site.data.translations.footer-phone[page.lang] }}</h3>
     <p> 
       {{ site.data.translations.footer-phone-action[page.lang] }}.<br />

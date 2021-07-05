@@ -82,6 +82,10 @@
 .footer-contact__column-right {
     display: flex;
     flex-direction: column;
+
+    p:empty {
+        display: none;
+    }
 }
 
 //
