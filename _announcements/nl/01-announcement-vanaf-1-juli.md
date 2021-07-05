@@ -1,7 +1,7 @@
 ---
 lang: nl
 # set `published` to true to show the announcement on the homepage:
-published: false
+published: true
 # Always set a title:
 title: Vanaf 1 juli kun je de internationale QR-code gebruiken
 # Choose a style: error or info
