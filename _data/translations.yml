@@ -724,9 +724,9 @@ footer-samen-logo:
   tr: Koronayı ancak birlikte kontrol altına alabiliriz.
 
 footer-contact-title:
-  nl: Heb je vragen over CoronaCheck?<br /> Neem contact met ons op
+  nl: Heb je vragen over CoronaCheck?<br /> Lees dan de <a href="/nl/faq">meestgestelde vragen</a>.
   fy: Hast fragen oer de CoronaCheck?
-  en: Do you have questions about CoronaCheck? Contact us
+  en: Do you have questions about CoronaCheck? Read the <a href="/en/faq">frequently asked questions</a>.
   ar: هل لديك أي أسئلة حول CoronaCheck؟
   bg: Имаш ли въпроси относно CoronaCheck?
   de: Haben Sie Fragen zu CoronaCheck?
@@ -737,12 +737,12 @@ footer-contact-title:
   tr: CoronaCheck hakkında sorularınız mı var?
 
 footer-contact-subtitle:
-  nl: Heb je vragen over CoronaCheck, lees dan de <a href="/nl/faq">meestgestelde vragen</a>.<br />Staat jouw vraag er niet tussen? Neem dan contact op met de helpdesk.
-  # en: If you have questions about CoronaCheck, read the <a href="/en/faq">frequently asked questions</a>.<br />If you don't see your question listed? Contact our helpdesk.
+  nl: Staat jouw vraag er niet tussen? Neem dan contact op met de helpdesk.
+  en: Don't see your question listed? Contact our helpdesk.
 
-footer-contact-subtitle-scanner:
-  nl: Heb je vragen over CoronaCheck Scanner, lees dan de <a href="/nl/faq-scanner">meestgestelde vragen</a>.<br />Staat jouw vraag er niet tussen? Neem dan contact op met de helpdesk.
-  # en: If you have questions about CoronaCheck, read the <a href="/en/faq">frequently asked questions</a>.<br />If you don't see your question listed? Contact our helpdesk.
+footer-contact-title-scanner:
+  nl: Heb je vragen over CoronaCheck Scanner? Lees dan de <a href="/nl/faq-scanner">meestgestelde vragen</a>.
+  en: Do you have questions about CoronaCheck Scanner?<br /> Read the <a href="/en/faq-scanner">frequently asked questions</a>.
 
 footer-phone: 
   nl: Bel de helpdesk
