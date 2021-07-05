@@ -6,13 +6,16 @@ featuredHome: true
 featuredHomeIndex: 1
 featuredHomeIcon: app-touch
 redirect_from: 
-  - /nl/faq/1-hoe-werkt-de-coronacheck-app
+  - /nl/faq-in-app/1-hoe-werkt-de-coronacheck-app
 ---
 Met de CoronaCheck-app kunt je een coronabewijs maken. Dit is een QR-code op basis van een test, herstel of vaccinatie. Je krijgt twee QR-codes: een Nederlandse QR-code en een internationale QR-code.
 
 Wil je weten hoe het maken van een coronabewijs in de app werkt? Kijk dan dit filmpje:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fuwzLKOwJIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% comment %}
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fuwzLKOwJIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> {% endcomment %}
+
+{% include components/mediaelement.html key="2020-06-27-hoe-werkt-coronacheck" width="100%" height="394" videoLang="nl" %}
 
 Je downloadt de app via de <a href="https://apps.apple.com/nl/app/coronacheck/id1548269870" rel="noopener noreferrer" target="_blank">Apple App Store</a> of de <a href="https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder" rel="noopener noreferrer" target="_blank">Google Play Store</a>.
 
@@ -24,4 +27,4 @@ Voor het maken van een herstelbewijs of vaccinatiebewijs haal je je gegevens op 
 
 De Nederlandse QR-code laat je scannen aan de deur van de locatie waar het coronabewijs nodig is. Je kunt de internationale QR-code laten scannen als je de grens over gaat. Het coronabewijs is niet in alle landen geldig. Zoek vooraf op wat de actuele coronaregels op het land van bestemming zijn op <a href="https://www.wijsopreis.nl" target="_blank" rel="noreferrer noopener">wijsopreis.nl</a>. Die kunnen namelijk wisselen.
 
-**Let op:** je kunt maar voor één persoon een bewijs in de CoronaCheck-app maken. Iedere bezoeker heeft dus een eigen telefoon met de app nodig. Geen telefoon? Je kunt ook een QR-code printen. Download en print jouw bewijs op [www.coronacheck.nl/print](/print).
+**Let op:** Vanaf begin juli kun je ook een bewijs maken als je corona hebt gehad en bent hersteld (herstelverklaring). Ook dat doe je door de stappen hierboven te volgen.
