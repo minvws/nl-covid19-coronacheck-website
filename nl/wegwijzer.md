@@ -33,6 +33,9 @@ Heb je bijvoorbeeld één van de volgende problemen:
 
 Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem contact op met je vaccinatiezetter (GGD op <a href="tel:08005090">0800-5090</a>, ziekenhuis, huisarts of een andere zorginstelling).
 
+**Let op:** Staan je gegevens goed geregistreerd bij de GGD, maar niet goed in de CoronaCheck App, waardoor je geen geldige QR code krijgt?
+Dit probleem is bij ons bekend en er wordt hard aan gewerkt om uit te zoeken waar de oorzaak ligt om het probleem op te kunnen lossen. Als je echt binnen een paar dagen op reis gaat of een evenement wilt bezoeken, is het advies om een gratis testafspraak in te plannen. 
+
 ### Ben je in het buitenland gevaccineerd?
 
 Op dit moment kun je helaas nog niet de CoronaCheck gebruiken om een bewijs te maken van je vaccinatie. In sommige landen kun je ter plaatse een coronabewijs maken dat ook in Nederland geldig is. Op <a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a> lees je hier meer over.
@@ -51,6 +54,11 @@ Je kunt een positieve testuitslag gebruiken om een herstelbewijs te maken met Co
 - De positieve test is afgenomen bij de GGD;
 - Het herstelbewijs is geldig 11 dagen na de positieve testuitslag, het herstelbewijs kan al wel eerder gemaakt worden; 
 - De positieve testuitslag is maximaal 180 dagen oud.
+
+Voldoe je aan deze eisen maar kan jij geen herstelgegevens ophalen in CoronaCheck? Neem dan contact op met de GGD (<a href="tel:08005090">0800-5090</a>) om je gegevens te controleren.
+
+**Let op:** Staan je gegevens goed geregistreerd bij de GGD, maar niet goed in de CoronaCheck App, waardoor je geen geldige QR code krijgt?
+Dit probleem is bij ons bekend en er wordt hard aan gewerkt om uit te zoeken waar de oorzaak ligt om het probleem op te kunnen lossen. Als je echt binnen een paar dagen op reis gaat of een evenement wilt bezoeken, is het advies om een gratis testafspraak in te plannen. Voor een test om binnen Europa te kunnen reizen: <a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoorjereis.nl</a>. Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoortoegang.nl</a>.
 
 Als je een PCR-test hebt gehad, ontvang je een Nederlandse en internationale QR-code. Heb je een antigeentest gedaan? Dan ontvang je alleen QR-code die geldig is voor toegang binnen Nederland.
 
@@ -80,9 +88,6 @@ Heb je al DigiD, maar lukt het je niet om in te loggen? Je kunt een aantal stapp
 - Soms werkt het om de telefoon te herstarten en dan opnieuw te proberen;
 
 Lukt het nog steeds niet? Neem dan contact op de helpdesk van DigiD op <a href="tel:+31881236555">+31 88 123 65 55</a> (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
-
-
-
 
 
 ## Papieren Coronabewijs maken
