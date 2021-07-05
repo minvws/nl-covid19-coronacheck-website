@@ -3,9 +3,9 @@ set: 4
 index: 2
 title: De app zegt dat mijn gegevens niet gevonden zijn. Hoe kan dit?
 redirect_from: 
-  - /nl/faq/13-de-app-zegt-dat-er-geen-negatieve-testuitslag-gevonden-is-hoe-kan-dit
-  - /nl/faq/4-1-de-app-zegt-dat-er-geen-negatieve-testuitslag-of-vaccinatie-gevonden-is-hoe-kan-dit
-  - /nl/faq/4-1-de-app-zegt-dat-er-geen-negatieve-of positieve-testuitslag-of-vaccinatie-gevonden-is
+  - /nl/faq-in-app/13-de-app-zegt-dat-er-geen-negatieve-testuitslag-gevonden-is-hoe-kan-dit
+  - /nl/faq-in-app/4-1-de-app-zegt-dat-er-geen-negatieve-testuitslag-of-vaccinatie-gevonden-is-hoe-kan-dit
+  - /nl/faq-in-app/4-1-de-app-zegt-dat-er-geen-negatieve-of positieve-testuitslag-of-vaccinatie-gevonden-is
 featuredHome: true
 featuredHomeIndex: 5
 ---
@@ -24,7 +24,7 @@ Je kan alleen een herstelbewijs maken wanneer je positieve test is afgenomen bij
 
 ## Gegevens goed geregistreerd bij de GGD, maar lukt het niet je gegevens (volledig) op te halen?
 
-Dit probleem is bij ons bekend en er wordt hard aan gewerkt om uit te zoeken waar de oorzaak ligt om het probleem op te kunnen lossen. Als u echt binnen een paar dagen op reis gaan of een evenement willen bezoeken, is het advies om een gratis testafspraak in te plannen. Voor een test om binnen Europa te kunnen reizen: <a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoorjereis.nl</a>. Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoortoegang.nl</a>.
+Dit probleem is bij ons bekend en er wordt hard aan gewerkt om uit te zoeken waar de oorzaak ligt om het probleem op te kunnen lossen. Als je echt binnen een paar dagen op reis gaat of een evenement wil bezoeken, is het advies om een gratis testafspraak in te plannen. Voor een test om binnen Europa te kunnen reizen: <a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoorjereis.nl</a>. Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoortoegang.nl</a>.
 
 Zodra het is opgelost wordt dat hier gecommuniceerd.
 
