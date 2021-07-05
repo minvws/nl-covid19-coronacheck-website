@@ -191,6 +191,12 @@ details.component-mediaelement__details[open] {
     summary:focus:after {
         background-image: url(../img/chevron-right-white.svg);
     }
+
+    > div {
+        border: 1px solid;
+        padding: 20px;
+        border-radius: 6px;
+    }
 }
 
 .mejs__captions-button {
