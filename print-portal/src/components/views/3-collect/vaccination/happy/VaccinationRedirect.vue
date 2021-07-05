@@ -12,6 +12,7 @@ export default {
         return {
             isLoading: false,
             filter: 'vaccination',
+            eventProviders: '*',
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectVaccination',
