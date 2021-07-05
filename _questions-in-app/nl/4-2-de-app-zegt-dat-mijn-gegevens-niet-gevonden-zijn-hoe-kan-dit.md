@@ -24,7 +24,10 @@ Je kan alleen een herstelbewijs maken wanneer je positieve test is afgenomen bij
 
 ## Gegevens goed geregistreerd bij de GGD, maar lukt het niet je gegevens (volledig) op te halen?
 
-Dit heeft ermee te maken dat de bekende gegevens niet correct worden doorgeven vanuit het registratiesysteem naar CoronaCheck. Er wordt hard gewerkt dit technische probleem op te lossen. Mocht dit niet op tijd opgelost zijn voor de benodigde toegang tot evenementen of jouw reis, dan is het advies om je te laten testen. Voor toegang tot evenementen kan je gratis een afspraak maken bij www.testenvoortoegang.nl en voor jouw reis kan je gratis een afspraak maken bij www.testenvoorjereis.nl. Zodra de oplossing er is wordt dat hier gecommuniceerd.
+Dit probleem is bij ons bekend en er wordt hard aan gewerkt om uit te zoeken waar de oorzaak ligt om het probleem op te kunnen lossen. Als u echt binnen een paar dagen op reis gaan of een evenement willen bezoeken, is het advies om een gratis testafspraak in te plannen. Voor een test om binnen Europa te kunnen reizen: <a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoorjereis.nl</a>. Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoortoegang.nl</a>.
+
+Zodra het is opgelost wordt dat hier gecommuniceerd.
+
 ## Geen testuitslag gevonden?
 
 Het kan een paar uur duren tot jouw uitslag door de testlocatie is verwerkt. Ben je getest bij de GGD, neem dan contact op met de GGD. Ben je elders getest, wacht dan totdat je de ophaalcode hebt ontvangen of neem contact op met de testlocatie.
