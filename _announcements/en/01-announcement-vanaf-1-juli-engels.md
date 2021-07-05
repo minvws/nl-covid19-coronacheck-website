@@ -1,7 +1,7 @@
 ---
 lang: en
 # set `published` to true to show the announcement on the homepage:
-published: true
+published: false
 # Always set a title:
 title: From July 1st you can use the international QR code
 # Choose a style: error or info
