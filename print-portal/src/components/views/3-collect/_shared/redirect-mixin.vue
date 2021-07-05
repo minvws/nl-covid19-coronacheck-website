@@ -76,7 +76,7 @@ export default {
         collectEvents(token) {
             this.$store.commit('signedEvents/clear');
             this.isLoading = true;
-            signedEventsInterface.collect(token, this.filter).then(result => {
+            signedEventsInterface.collect(token, this.filter, this.eventProviders).then(result => {
                 this.isLoading = false;
                 if (result) {
                     const is429 = (statusCode) => {

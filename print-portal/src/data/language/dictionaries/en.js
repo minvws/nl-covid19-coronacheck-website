@@ -77,11 +77,15 @@ const en = {
             'emptyVerificationCode': 'Verification code not entered',
             'sendCode': 'Send code'
         },
-        'NegativeTestOverview': {
+        'negativeTestOverview': {
             'pageHeader': 'Check your test result',
             'pageIntro': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.</p>',
             'createTestProofButton': 'Make QR code',
             'retrievedTestResult': 'Retrieved test result'
+        },
+        'negativeTestNotPossible': {
+            'pageHeader': 'We can’t make a certificate',
+            'pageIntro': '<p>At the moment, we cannot provide proof of your test result. This can have different causes. For more information, please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">CoronaCheck.nl/en/guidepost</a>.</p>'
         },
         'testResultPending': {
             'pageHeader': 'Test result not yet known',
@@ -114,6 +118,10 @@ const en = {
             'domestic': {
                 'pageHeader': 'Your test certificate',
                 'pageIntro': 'You\'ve made a test certificate,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.'
+            },
+            'european': {
+                'pageHeader': 'Your certificate',
+                'pageIntro': '<h3>Your certificate</h3><p>You’ve made a test certificate in the form of a QR code. You’ve only got an international certificate. A dutch certificate could not be made because the type of test is not accepted, or because the test certificate already expired in the Netherlands.</p><h3>Information in the QR</h3><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p>'
             }
         },
         'printVaccination': {
@@ -123,7 +131,7 @@ const en = {
             },
             'european': {
                 'pageHeader': 'Print your vaccination certificate',
-                'pageIntro': '<h3>Your certificate</h3><p>You’ve made a vaccination certificate in the form of a QR code. You have a QR code for the Netherlands and one for other countries.</p><h3>Information in the QR</h3><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
+                'pageIntro': '<h3>Your certificate</h3><p>You’ve made a vaccination certificate in the form of a QR code. You’ve only got an international certificate. This could be because you’ve only had one of your vaccinations yet. Try making a Dutch certificate again when you’re fully vaccinated.</p><h3>Information in the QR</h3><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
             }
             // domestic only is a non existing scenario for vaccination
         },

@@ -12,6 +12,7 @@ export default {
         return {
             isLoading: false,
             filter: 'negativetest',
+            eventProviders: 'GGD',
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'ChoiceTestLocation',
@@ -29,7 +30,7 @@ export default {
         @back="back">
         <div class="section">
             <PageIntro
-                :head="$t('views.NegativeTestOverview.pageHeader')"/>
+                :head="$t('views.negativeTestOverview.pageHeader')"/>
             <div
                 v-if="isLoading"
                 class="section-block">

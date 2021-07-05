@@ -15,7 +15,7 @@ export default {
             filter: 'negativetest',
             pages: {
                 print: 'PrintNegativeTest',
-                noResultFromSigner: ''
+                noResultFromSigner: 'NegativeTestNotPossible'
             }
         }
     },
@@ -33,8 +33,8 @@ export default {
         class="NegativeTestOverview">
         <div class="section">
             <PageIntro
-                :head="$t('views.NegativeTestOverview.pageHeader')"
-                :intro="$t('views.NegativeTestOverview.pageIntro')"/>
+                :head="$t('views.negativeTestOverview.pageHeader')"
+                :intro="$t('views.negativeTestOverview.pageIntro')"/>
 
             <div class="section-block">
                 <div class="proof-events">
@@ -44,7 +44,7 @@ export default {
                 <div class="section-block__footer">
                     <CcButton
                         @select="gotoPrint()"
-                        :label="$t('views.NegativeTestOverview.createTestProofButton')"/>
+                        :label="$t('views.negativeTestOverview.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
                             @select="openModalSomethingWrong()"

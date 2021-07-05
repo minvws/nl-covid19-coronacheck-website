@@ -2,10 +2,17 @@ import axios from 'axios';
 import store from '@/store'
 import { cmsDecode } from '@/tools/cms'
 
-const collect = async (token, filter = '') => {
+const collect = async (token, filter = '', eventProviderIdentifiers = '*') => {
     return new Promise((resolve, reject) => {
         getTokens(token).then((tokenSets) => {
-            getEvents(tokenSets, filter).then(result => {
+            const filteredTokenSets = tokenSets.filter(tokenSet => {
+                if (eventProviderIdentifiers === '*') {
+                    return true;
+                } else {
+                    return tokenSet.provider_identifier === eventProviderIdentifiers;
+                }
+            })
+            getEvents(filteredTokenSets, filter).then(result => {
                 resolve(result);
             }, (error) => {
                 reject(error)

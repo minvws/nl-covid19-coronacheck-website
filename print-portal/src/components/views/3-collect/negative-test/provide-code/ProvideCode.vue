@@ -189,11 +189,8 @@ export default {
                         }
 
                         if (this.testResultStatus === 'result_blocked') {
-                            this.$store.commit('modal/set', {
-                                messageHead: this.$t('message.error.general.head'),
-                                messageBody: this.$t('message.error.general.body') + '<p>result_blocked</p>',
-                                closeButton: true
-                            });
+                            this.$store.commit('clearAll');
+                            this.$router.push({ name: 'TestResultNone' })
                         }
                     } else {
                         this.$store.commit('modal/set', {
