@@ -188,6 +188,10 @@
     }
 }
 
+.footer-links--print-portal a {
+    text-decoration: underline;
+}
+
 .footer-links-col {
     @media (min-width: 960px) {
         padding: 0 50px 0 0;
