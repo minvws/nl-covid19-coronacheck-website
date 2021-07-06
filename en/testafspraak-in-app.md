@@ -8,7 +8,7 @@ What is the best place to get tested for coronavirus? This depends on what you a
 
 ## Testing for access in the Netherlands
 
-For access to places and events in the Netherlands, you can have yourself tested for free at a location that is affiliated with <span lang="nl">Testen voor Toegang</a>. For more information, visit <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Testen voor Toegang</a>.
+For access to places and events in the Netherlands, you can have yourself tested for free at a location that is affiliated with <span lang="nl">Testen voor Toegang</span>. For more information, visit <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Testen voor Toegang</a>.
 
 <a href="https://www.testenvoortoegang.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Make appointment<span class="screen-reader-text"> through <span lang="nl">Testen voor Toegang</span></span></a>
 
