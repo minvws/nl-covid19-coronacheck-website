@@ -1,5 +1,5 @@
 const html = `
-    <div class="footer-links">
+    <div class="footer-links footer-links--print-portal">
         <div class="footer-links-col ___desktop-50">
             <div class="footer-logos-info">
                 <h2 class="screen-reader-text">Colophon</h2>
@@ -10,16 +10,8 @@ const html = `
             </div>
         </div>
         <div class="footer-links-col ___desktop-50">
-            <h2>Do you have questions about CoronaCheck? Read the <a href="https://www.coronacheck.nl/en/faq"  target="_blank" rel="noopener noreferrer">frequently asked questions</a>.
-            </h2>
-            <p>Don't see your question listed? Contact our helpdesk.</p>
-            <h3>Call the helpdesk</h3>
-            <p><a href="tel:08001421">0800-1421</a> (free).<br />
-            Available Monday till Sunday 08.00 a.m. - 08.00 p.m.</p>
-            <h3>Or send an e-mail to:</h3>
-            <p>
-                <a href="mailto:helpdesk@coronacheck.nl" target="_blank" rel="noopener noreferrer">helpdesk@coronacheck.nl</a>
-            </p>
+            <h2>Do you have questions about CoronaCheck?</h2>
+            <p>Read the <a href="https://www.coronacheck.nl/en/faq" target="_blank" rel="noopener noreferrer">frequently asked questions</a>.</p>
         </div>
     </div>
 `;

@@ -32,6 +32,8 @@ Are you, for example, experiencing one of the following problems:
 
 Then your vaccination details may not have been registered properly. Please contact your vaccinator (GGD via <a href="tel:08005090">0800-5090</a>, hospital or general practitioner or another healthcare provider). 
 
+Please note: are your details properly registered with the GGD, but are you still unable to retrieve your details? We are aware of this issue. We’re working hard to find out where the cause is in order to resolve the issue. If you are going on a trip or want to visit an event within a few days, the advice is to schedule a free test appointment.
+
 ### Were you vaccinated abroad?
 
 At this time, unfortunately you cannot use CoronaCheck to create a vaccination certificate yet. In some countries, you can create a coronavirus pass while you are visiting that is also valid in the Netherlands. You can read more about it on <a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank" hreflang="nl">the Dutch government website (Dutch)</a>.
@@ -50,6 +52,14 @@ ou may use a positive test result to create a certificate of recovery with Coron
 - The positive test has been carried out by the GGD;
 - The certificate of recovery is valid from 11 days after the positive test result, but the certificate of recovery can be created earlier;
 - The positive test result is no more than 180 days old.
+
+Do you meet these requirements, but are you unable to retrieve your recovery details in CoronaCheck? Please contact the GGD (<a href="tel:08005090">0800-5090</a>) to check your details.
+
+<strong>Please note:</strong> are your details properly registered with the GGD, but are you still unable to retrieve your details?
+
+We are aware of this issue. We’re working hard to find out where the cause is in order to resolve the issue. If you are going on a trip or want to visit an event within a few days, the advice is to schedule a free test appointment. 
+Make a test appointment to be able to travel within Europe via: <a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoorjereis.nl</a>. To gain access to an event in the Netherlands, make a test appointment via <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoortoegang.nl</a>.
+
 
 If you’ve had a PCR test, you’ll receive a domestic and an international QR code. Did you do an antigen test? Then you’ll only receive a QR code valid for access within the Netherlands.
 
