@@ -23,6 +23,6 @@ A red screen does **not** mean the visitor has tested positive for corona. It si
 - Check if the visitor has used a screenshot instead of the QR code directly from the app. Scanning a screenshot will lead to a red screen.
 - Check whether the visitor shows a Dutch QR code. An international QR code results in a red screen.
 - Ask the visitor to restart the app. And try scanning again. 
-- Keep getting a red screen while the visitor does have a vaccination or a positive / negative test result? Please refer the visitor to our helpdesk at <a href="tel:08001421">0800-1421</a>.
+- Keep getting a red screen while the visitor does have a vaccination or a positive / negative test result? Please refer the visitor to our helpdesk at <a href="tel:08001421">0800-1421</a> (if you are calling from abroad: <a href="tel:+31707503720">+31 70 750 37 20</a>).
 
 At all times, a green screen is required for access. If the visitor doesn’t have a (valid) QR code, you can’t give them access. For more information, visit [www.coronacheck.nl/scanner](/en/scanner).
