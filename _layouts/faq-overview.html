@@ -21,9 +21,6 @@
         </a>
       </p>
     {% endif %}
-    
-    <div class="content-block">
-      <h1 id="frequently-asked-questions">{{ site.data.translations.faq[page.lang] }}</h1>
 
       {% assign questionSetOne = site.questions | where:"lang", page.lang | where:"set", 1 | sort: "index" %}
       {% assign questionSetTwo = site.questions | where:"lang", page.lang | where:"set", 2  | sort: "index" %}
@@ -34,8 +31,12 @@
       {% assign questionSetSeven = site.questions | where:"lang", page.lang | where:"set", 7  | sort: "index" %}
       {% assign questionSetEight = site.questions | where:"lang", page.lang | where:"set", 8  | sort: "index" %}
 
+    {% include components/banner-status.html %}
+    
+    <div class="content-block">
+        <h1 id="frequently-asked-questions">{{ site.data.translations.faq[page.lang] }}</h1>
 
-      <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
+        <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
         
         {% if questionSetOne.size > 0 %}
             <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-one[page.lang]|slugify }}">{{ site.data.translations.faq-category-one[page.lang] }}</h2>
