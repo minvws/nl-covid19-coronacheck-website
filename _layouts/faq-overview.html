@@ -3,6 +3,17 @@
 {%- if page.lang -%}
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
 {%- endif -%}
+
+{% assign questionSetOne = site.questions | where:"lang", page.lang | where:"set", 1 | sort: "index" %}
+{% assign questionSetTwo = site.questions | where:"lang", page.lang | where:"set", 2  | sort: "index" %}
+{% assign questionSetThree = site.questions | where:"lang", page.lang | where:"set", 3  | sort: "index" %}
+{% assign questionSetFour = site.questions | where:"lang", page.lang | where:"set", 4  | sort: "index" %}
+{% assign questionSetFive = site.questions | where:"lang", page.lang | where:"set", 5  | sort: "index" %}
+{% assign questionSetSix = site.questions | where:"lang", page.lang | where:"set", 6  | sort: "index" %}
+{% assign questionSetSeven = site.questions | where:"lang", page.lang | where:"set", 7  | sort: "index" %}
+{% assign questionSetEight = site.questions | where:"lang", page.lang | where:"set", 8  | sort: "index" %}
+
+
 <!DOCTYPE html>
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
 {% include open-source-comment.html %}
@@ -22,14 +33,6 @@
       </p>
     {% endif %}
 
-      {% assign questionSetOne = site.questions | where:"lang", page.lang | where:"set", 1 | sort: "index" %}
-      {% assign questionSetTwo = site.questions | where:"lang", page.lang | where:"set", 2  | sort: "index" %}
-      {% assign questionSetThree = site.questions | where:"lang", page.lang | where:"set", 3  | sort: "index" %}
-      {% assign questionSetFour = site.questions | where:"lang", page.lang | where:"set", 4  | sort: "index" %}
-      {% assign questionSetFive = site.questions | where:"lang", page.lang | where:"set", 5  | sort: "index" %}
-      {% assign questionSetSix = site.questions | where:"lang", page.lang | where:"set", 6  | sort: "index" %}
-      {% assign questionSetSeven = site.questions | where:"lang", page.lang | where:"set", 7  | sort: "index" %}
-      {% assign questionSetEight = site.questions | where:"lang", page.lang | where:"set", 8  | sort: "index" %}
 
     {% include components/banner-status.html %}
     
