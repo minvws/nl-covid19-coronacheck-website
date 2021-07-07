@@ -758,9 +758,9 @@ footer-phone:
   tr: 
 
 footer-phone-action:
-  nl: <a href="tel:08001421">0800-1421</a> (gratis)
+  nl: '<a href="tel:08001421">0800-1421</a> (gratis). Of als je vanuit het buitenland belt: <a href="tel:+31707503720">+31 70 750 37 20</a>'
   fy: <a href="tel:08001421">0800-1421</a> (fergees)
-  en: <a href="tel:08001421">0800-1421</a> (free)
+  en: '<a href="tel:08001421">0800-1421</a> (free). Or if you are calling from abroad: <a href="tel:+31707503720">+31 70 750 37 20</a>'
   ar: <a href="tel:0800-1421" dir="ltr">0800-1421</a> (مجانًا)
   bg: <a href="tel:08001421">0800-1421</a> (безплатно)
   de: <a href="tel:08001421">0800-1421</a> (kostenlos)
@@ -866,6 +866,13 @@ footer-testappointment-url: testafspraak
 footer-testappointment:
   nl: Doe een coronatest
   en: Take a coronavirus test
+
+
+footer-status-url: https://status.coronacheck.nl
+
+footer-status:
+  nl: Status
+  en: Status
 
 footer-wegwijzer-url:
   nl: wegwijzer
@@ -1542,3 +1549,7 @@ home-intro-content:
 sorry-btn:
   nl: "Terug naar CoronaCheck"
   en: "Back to CoronaCheck"
+
+status-block:
+  nl: '<p>Bekijk op de <a href="https://status.coronacheck.nl">statuspagina</a> of er op dit moment een storing bekend is.  Hier vind je de laatste status en wat je in de tussentijd kunt doen.</p><p>Staat jouw probleem of storing er niet tussen? Mogelijk is er dan al een oplossing voor. Kijk dan tussen de meestgestelde vragen.</p>'
+  en: '<p>Check the <a href="https://status.coronacheck.nl/en/">status page</a> to see if there is a known issue. Here you will find the latest status and what you can do in the meantime.</p><p>Is your problem or technical issue not listed? There may already be a solution. Please check the most frequently asked questions.</p>'
