@@ -1,7 +1,7 @@
 ---
 lang: nl
 # set `published` to true to show the announcement on the homepage:
-published: true
+published: false
 # Always set a title:
 title: Mogelijk vertraging bij ophalen negatieve uitslag van de GGD in CoronaCheck
 # Choose a style: error or info
