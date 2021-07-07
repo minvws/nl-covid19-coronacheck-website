@@ -12,6 +12,7 @@ export default {
         return {
             isLoading: false,
             filter: 'positivetest,recovery',
+            eventProviders: 'GGD',
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectRecovery',

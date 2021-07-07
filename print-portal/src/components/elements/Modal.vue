@@ -107,12 +107,12 @@ export default {
                 :aria-modal="showModal"
                 aria-labelledby="modal__head"
                 aria-describedby="modal__body">
-                <div
+                <h1
                     v-html="messageHead"
                     ref="focusStart"
                     tabindex="-1"
                     id="modal__head">
-                </div>
+                </h1>
                 <div
                     v-html="messageBody"
                     id="modal__body">
@@ -212,6 +212,8 @@ export default {
         margin-bottom: $grid-x2;
         font-weight: 700;
         outline: none;
+        font-size: inherit;
+        font-family: inherit;
     }
 
     #modal__body {

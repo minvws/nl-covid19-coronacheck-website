@@ -9,14 +9,6 @@
         border-top: 1px solid $color-mediumgrey;
     }
 
-    &__status {
-        font-weight: 700;
-    }
-
-    &__wrapper {
-        display: contents;
-    }
-
     &__line {
         margin-bottom: 8px;
 
@@ -40,7 +32,6 @@
     display: contents;
 
     .proof-event {
-
         &:first-child {
             border-top: 0;
         }

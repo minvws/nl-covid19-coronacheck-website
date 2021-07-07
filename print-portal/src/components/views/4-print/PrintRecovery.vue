@@ -8,9 +8,6 @@ export default {
     components: { Print, PageIntro },
     mixins: [printMixin],
     computed: {
-        proof() {
-            return this.$store.state.qrs.proof;
-        },
         recoveryValidInFuture() {
             let dateValidFromString;
             const today = new Date().getTime();

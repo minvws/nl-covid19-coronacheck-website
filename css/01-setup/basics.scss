@@ -48,6 +48,16 @@ h4 {
     color: #383836;
 }
 
+dt,
+dd {
+    display: inline-block;
+    margin-left: 0;
+}
+
+dt {
+    margin-right: 4px;
+}
+
 .container {
     max-width: 940px;
     position: relative;

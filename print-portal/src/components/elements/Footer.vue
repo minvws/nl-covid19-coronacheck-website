@@ -8,11 +8,11 @@ export default {
 </script>
 
 <template>
-    <div class="footer">
+    <footer class="footer">
         <div class="pagewrap">
             <div v-html="$t('template.footer')" class="footer-inner"/>
         </div>
-    </div>
+    </footer>
 </template>
 
 <style lang="scss">
