@@ -22,19 +22,21 @@ export default {
 </script>
 
 <template>
-    <div id="content">
-        <div class="pagewrap">
-            <Navigation
-                @back="back"
-                :display-back-button="displayBackButton"/>
-            <slot/>
-        </div>
+    <div>
+        <main id="content" role="main">
+            <div class="pagewrap">
+                <Navigation
+                    @back="back"
+                    :display-back-button="displayBackButton"/>
+                <slot/>
+            </div>
+        </main>
         <Footer/>
     </div>
 </template>
 
 <style lang="scss">
 .Page {
-
+    //
 }
 </style>

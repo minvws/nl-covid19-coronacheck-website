@@ -3,18 +3,18 @@ const vaccination = `
         The following details of your vaccination have been retrieved:
     </p>
     <p>
-        Name: <b>%{name}</b><br>
-        Date of birth: <b>%{birthDateString}</b>
+        Name: <strong>%{name}</strong><br>
+        Date of birth: <strong>%{birthDateString}</strong>
     </p>
     <p>
-        Pathogen: <b>COVID-19</b><br>
-        Vaccine:  <b>%{vaccineName}</b><br>
-        Vaccine type:  <b>%{vaccineType}</b><br>
-        Manufacturer:  <b>%{manufacturer}</b><br>
-        Doses: <b>%{dosesString}</b><br>
-        Vaccination date: <b>%{dateString}</b><br>
-        Country of vaccination: <b>%{country}</b><br>
-        Unique certificate identifier: <b>%{identificationCode}</b>
+        Pathogen: <strong>COVID-19</strong><br>
+        Vaccine:  <strong>%{vaccineName}</strong><br>
+        Vaccine type:  <strong>%{vaccineType}</strong><br>
+        Manufacturer:  <strong>%{manufacturer}</strong><br>
+        Doses: <strong>%{dosesString}</strong><br>
+        Vaccination date: <strong>%{dateString}</strong><br>
+        Country of vaccination: <strong>%{country}</strong><br>
+        Unique certificate identifier: <strong>%{identificationCode}</strong>
     </p>
 `;
 

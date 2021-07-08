@@ -83,22 +83,29 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status proof-event__line">
-            {{title}}
+            <strong>{{title}}</strong>
         </div>
-        <div class="proof-event__line">
-            {{$t('components.vaccination.name')}}: {{holder.fullName}}
-        </div>
-        <div class="proof-event__line">
-            {{$t('components.vaccination.dateOfBirth')}}: {{holder.birthDateString}}
-        </div>
+
+        <dl>
+            <div class="proof-event__line">
+                <dt>{{$t('components.vaccination.name')}}:</dt>
+                <dd>{{holder.fullName}}</dd>
+            </div>
+            <div class="proof-event__line">
+                <dt>{{$t('components.vaccination.dateOfBirth')}}:</dt>
+                <dd>{{holder.birthDateString}}</dd>
+            </div>
+        </dl>
 
         <button
             @click="openInfo()"
             type="button"
-            class="info-button">
-            <img src="assets/img/icons/info.svg" alt=""/>
+            class="info-button"
+            >
+            <img src="assets/img/icons/info.svg" :alt="$t('message.info.vaccinationAbout.head')" />
         </button>
     </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+</style>
