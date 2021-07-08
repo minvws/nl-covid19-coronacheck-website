@@ -9,11 +9,20 @@
   <div class="footer-contact__column-right"> 
 
     {% if page.domain == "scanner" %}
-        <h2>{{ site.data.translations.footer-contact-title-scanner[page.lang] }}</h2>
+        {% if page.layout == 'faq-scanner-overview' %}
+            <h2>{{ site.data.translations.footer-contact-subtitle[page.lang] }}</h2>
+        {% else %}
+            <h2>{{ site.data.translations.footer-contact-title-scanner[page.lang] }}</h2>
+            <p>{{ site.data.translations.footer-contact-subtitle[page.lang] }}</p>
+        {% endif %}
     {% else %}
-        <h2>{{ site.data.translations.footer-contact-title[page.lang] }}</h2>
+        {% if page.layout == 'faq-overview' %}
+            <h2>{{ site.data.translations.footer-contact-subtitle[page.lang] }}</h2>
+        {% else %}
+            <h2>{{ site.data.translations.footer-contact-title[page.lang] }}</h2>
+            <p>{{ site.data.translations.footer-contact-subtitle[page.lang] }}</p>
+        {% endif %}
     {% endif %}
-    <p>{{ site.data.translations.footer-contact-subtitle[page.lang] }}</p>
     <h3>{{ site.data.translations.footer-phone[page.lang] }}</h3>
     <p> 
       {{ site.data.translations.footer-phone-action[page.lang] }}.<br />
