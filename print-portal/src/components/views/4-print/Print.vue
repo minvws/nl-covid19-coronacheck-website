@@ -124,9 +124,6 @@ export default {
         class="Print"
         @back="goBack">
         <div class="section">
-            <div v-if="browserIsSafari">
-                Dit is Safari
-            </div>
             <slot></slot>
             <div class="section-block">
                 <div class="Print__container">
