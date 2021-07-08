@@ -17,7 +17,10 @@ const vaccinationPages = [
     }, {
         path: '/jouw-vaccinaties-redirect',
         component: VaccinationRedirect,
-        name: 'VaccinationRedirect'
+        name: 'VaccinationRedirect',
+        meta: {
+            title: 'views.vaccinationOverview.pageHeader'
+        }
     }, {
         path: '/geen-vaccinaties-beschikbaar',
         component: VaccinationsNone,
@@ -35,7 +38,10 @@ const vaccinationPages = [
     }, {
         path: '/print-vaccinatie',
         name: 'PrintVaccination',
-        component: PrintVaccination
+        component: PrintVaccination,
+        meta: {
+            title: 'views.printVaccination.both.pageHeader'
+        }
     }
 ]
 

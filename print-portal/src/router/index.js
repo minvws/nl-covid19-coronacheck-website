@@ -1,24 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '@/components/views/1-home/Home.vue'
-import ChoiceProof from '@/components/views/2-a-choice-proof/ChoiceProof'
+
 import negativeTestPages from './pages/negative-test'
 import recoveryPages from './pages/recovery'
 import vaccinationPages from './pages/vaccination'
-
+import otherPages from './pages/other'
+import i18n from '@/i18n';
 import store from '@/store'
+
 Vue.use(VueRouter)
 
 const routes = [
-    {
-        path: '/',
-        component: Home,
-        name: 'Home'
-    }, {
-        path: '/keuze-papieren-bewijs',
-        component: ChoiceProof,
-        name: 'ChoiceProof'
-    },
+    ...otherPages,
     ...negativeTestPages,
     ...vaccinationPages,
     ...recoveryPages
@@ -42,5 +35,23 @@ router.beforeEach((to, from, next) => {
         next();
     }
 })
+
+router.afterEach((to, from) => {
+    const defaultTitle = 'CoronaCheck Print Portaal';
+    // Use next tick to handle router history correctly
+    // see: https://github.com/vuejs/vue-router/issues/914#issuecomment-384477609
+    Vue.nextTick(() => {
+        let pageTitleKey, pageTitle;
+        if (to.meta.title) {
+            pageTitleKey = to.meta.title;
+        } else {
+            pageTitleKey = 'views.' + (to.name.charAt(0).toLowerCase() + to.name.slice(1)) + '.pageHeader';
+        }
+        if (to.name !== 'Home') {
+            pageTitle = i18n.t(pageTitleKey) + ' | ' + defaultTitle;
+        }
+        document.title = pageTitle || defaultTitle;
+    });
+});
 
 export default router
