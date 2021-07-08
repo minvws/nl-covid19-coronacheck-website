@@ -22,9 +22,18 @@ Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem�
 
 Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-### Haal uw volledige vaccinatie op
+<details>
+<summary>Haal uw volledige vaccinatie op</summary>
+<div markdown="1">
 
 Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Een internationale QR-code kan worden gemaakt na één vaccinatie. Let op, een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op {{ site.data.translations.wijsoprijs-link[page.lang] }}.
+
+</div>
+</details>
+
+<details>
+<summary>Lukt het niet en ben je in Nederland gevaccineerd?</summary>
+<div markdown="1">
 
 Heb je bijvoorbeeld één van de volgende problemen:
 - Klopt je naam of geboortedatum niet?
@@ -36,9 +45,18 @@ Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem co
 **Let op:** Staan je gegevens goed geregistreerd bij de GGD, maar niet goed in de CoronaCheck App, waardoor je geen geldige QR code krijgt?
 Dit probleem is bij ons bekend en er wordt hard aan gewerkt om uit te zoeken waar de oorzaak ligt om het probleem op te kunnen lossen. Als je echt binnen een paar dagen op reis gaat of een evenement wilt bezoeken, is het advies om een gratis testafspraak in te plannen. 
 
-### Ben je in het buitenland gevaccineerd?
+</div>
+</details>
+
+<details>
+<summary>Ben je in het buitenland gevaccineerd?</summary>
+<div markdown="1">
 
 Op dit moment kun je helaas nog niet de CoronaCheck gebruiken om een bewijs te maken van je vaccinatie. In sommige landen kun je ter plaatse een coronabewijs maken dat ook in Nederland geldig is. Op {{ site.data.translations.coronabewijs-hulp-link[page.lang] }} lees je hier meer over.
+
+</div>
+</details>
+
 
 ## Testbewijs
 ### Toegangstesten
