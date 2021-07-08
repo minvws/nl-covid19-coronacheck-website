@@ -45,6 +45,7 @@ export default {
     methods: {
         close() {
             this.$store.commit('modal/close');
+            this.elementThatHadFocusBeforeModal.focus();
         },
         confirm() {
             // check if it is a function
@@ -74,6 +75,7 @@ export default {
             if (this.showModal) {
                 // wait untill the v-if is active
                 setTimeout(() => {
+                    this.elementThatHadFocusBeforeModal = document.activeElement;
                     this.setFocus();
                 })
             }
