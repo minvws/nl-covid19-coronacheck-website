@@ -86,6 +86,9 @@ export default {
             }
         });
 
+        this.$refs.tabStart.addEventListener('focus', (event) => {
+            this.setFocus();
+        });
         this.$refs.tabEnd.addEventListener('focus', (event) => {
             this.setFocus();
         });
@@ -97,6 +100,9 @@ export default {
     <div
         :class="{'popup--active': showModal}"
         class="cover">
+        <div
+            ref="tabStart"
+            tabindex="0"></div>
         <div
             @click="close()"
             class="cover__clickable-area"></div>
