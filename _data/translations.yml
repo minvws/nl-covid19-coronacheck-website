@@ -1568,7 +1568,7 @@ phone-digid-helpdesk:
 
 coronabewijs-hulp-link: 
   nl: '<a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a>'
-  en: '<a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank" lang="nl" hreflang="nl">Coronabewijs: praktische problemen en oplossingen</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/frequent-problems" rel="noopener noreferrer" target="_blank">Frequent problems and solutions getting a COVID certificate</a>'
 
 testen-voor-toegang-link: 
   nl: '<a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>'
