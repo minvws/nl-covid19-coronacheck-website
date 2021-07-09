@@ -233,8 +233,8 @@ Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem 
 <details><summary>Ik heb 1 vaccinatie en langer dan 180 dagen geleden positief getest</summary>
 {{ copy_langer_dan_180_dagen }}</details>
 
-<details><summary> Ik heb mijn tweede afspraak geannuleerd / ben niet geweest</summary>
-{{ copy_tweede_afspraak_afgezegd }}</details>
+<h4>Ik heb mijn tweede afspraak geannuleerd / ben niet geweest</h4>
+{{ copy_tweede_afspraak_afgezegd }}
 
 <h4>Ik heb 2 vaccinaties ontvangen</h4>
 {{ copy_twee_vaccinaties_ontvangen }}
@@ -263,9 +263,8 @@ Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem 
     <summary>Ik krijg geen verificatiecode via SMS of e-mail</summary>
     {{ copy_geen_verificatiecode }}
     </details>
-</details>
  
-<details><summary><h2>Testen voor je reis</h2></summary>
+    <h3>Testen voor je reis</h3>
     {{ copy_testen_voor_je_reis }}
 
     <details>
