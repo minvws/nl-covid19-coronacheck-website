@@ -15,7 +15,9 @@ Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens ka
 
 {% capture copy_haal_je_volledige_vaccinatie_op %}
 <div markdown="1">
-Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Zodra je vaccinatie goed is geregistreerd kun je een vaccinatiebewijs maken, maar deze wordt pas vanaf 14 dagen na je laatste prik geldig. Een internationale QR-code kan worden gemaakt na één vaccinatie. **Let op:** een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op {{ site.data.translations.wijsoprijs-link[page.lang] }}.
+Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Zodra je vaccinatie goed is geregistreerd kun je een vaccinatiebewijs maken. Met ingang van zaterdag 10 juli zijn Nederlandse QR-codes op basis van een vaccinatie geldig vanaf 14 dagen na de laatste vaccinatie. Een internationale QR-code kan worden gemaakt na één vaccinatie.
+
+**Let op:** een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op {{ site.data.translations.wijsoprijs-link[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -167,29 +169,6 @@ Wil je gebruik maken van een coronabewijs om te reizen binnen Europa? Hiervoor k
 </div>
 {% endcapture %}
 
-{% capture copy_testen_voor_je_reis_geen_ophaalcode %}
-<div markdown="1"> 
-Deze ophaalcode bestaat uit een lange reeks van letters en cijfers (bv BRB-YYYYYYYYYY-Z2). Deze ontvang je van de testlocatie. In principe ontvang je de uitslag binnen een uur. Soms kan het wat langer duren. Als je deze niet hebt ontvangen kan dat verschillende oorzaken hebben:
-
-- de testuitslag is nog niet binnen.
-- je email adres is niet correct of wellicht is de mail in uw spambox terechtgekomen.
-- er is een probleem bij de testlocatie in het doorgeven van de uitslag. Kijk op {{ site.data.translations.testen-voor-toegang-link[page.lang] }} of er storingen bekend zijn bij testlocaties.
-
-Is dit niet de oplossing, neem dan contact op met de helpdesk van Testen voor je Reis via {{ site.data.translations.phone-tvjr-helpdesk[page.lang] }}.
-</div>
-{% endcapture %}
-
-{% capture copy_testen_voor_je_reis_geen_verificatiecode %}
-<div markdown="1"> 
-De verificatiecode (per SMS of e-mail) moet normaliter binnen een minuut binnenkomen nadat je de ophaalcode hebt ingevoerd. Als je deze niet hebt ontvangen kan dat verschillende oorzaken hebben:
-
-- In het geval je aanbieder de verificatiecode per email stuurt, controleer dan ook je spam-folder.
-- Heb je wellicht een buitenlands telefoonnummer doorgegeven? Het komt sporadisch voor dat SMS berichten naar buitenlandse nummers niet doorkomen.
-
-Neem contact op met de helpdesk van Testen voor je reis via {{ site.data.translations.phone-tvjr-helpdesk[page.lang] }}.
-</div>
-{% endcapture %}
-
 {% comment %}
     Page structure
 {% endcomment %}
@@ -203,7 +182,7 @@ Ga je op reis? Check dan eerst {{ site.data.translations.wijsoprijs-link[page.la
 Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem  <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">contact op met het contactcenter van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
 
 
-<details><summary><h2>Vaccinatiebewijs</h2></summary>
+<details><summary><h2>Ik wil een vaccinatiebewijs maken</h2></summary>
 {{ copy_vaccinatiebewijs }}
 
 <h3>Haal je volledige vaccinatie op</h3>
@@ -252,8 +231,12 @@ Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem 
 
 </details>
 
-<details><summary><h2>Testbewijs</h2></summary>
+<details><summary><h2>Ik wil een testbewijs maken</h2></summary>
     {{ copy_testbewijs }}
+ 
+    <h3>Testen voor je reis</h3>
+    {{ copy_testen_voor_je_reis }}
+
     <details>
     <summary>Ik heb geen ophaalcode gekregen</summary>
     {{ copy_geen_ophaalcode }}
@@ -263,23 +246,10 @@ Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem 
     <summary>Ik krijg geen verificatiecode via SMS of e-mail</summary>
     {{ copy_geen_verificatiecode }}
     </details>
- 
-    <h3>Testen voor je reis</h3>
-    {{ copy_testen_voor_je_reis }}
-
-    <details>
-    <summary>Ik heb geen ophaalcode gekregen</summary>
-    {{ copy_testen_voor_je_reis_geen_ophaalcode }}
-    </details>
-
-    <details>
-    <summary>Ik krijg geen verificatiecode via SMS of e-mail</summary>
-    {{ copy_testen_voor_je_reis_geen_verificatiecode }}
-    </details>
 </details>
 
 
-<details><summary><h2>Herstelbewijs</h2></summary>
+<details><summary><h2>Ik wil een herstelbewijs maken</h2></summary>
 <div markdown="1">
 
 Een herstelbewijs is een bewijs dat je ooit positief getest bent op aanwezigheid van het Sars-Cov2 virus. Er zijn verschillende manieren waarop dat kan worden vastgesteld: met een zelftest, een antigeen sneltest, een PCR-test of een serologische (bloed) test.
@@ -308,6 +278,17 @@ Als je echt binnen een paar dagen op reis gaat of een evenement wilt bezoeken, i
 </div>
 </details>
 
+
+<details>
+<summary><h2>Ik wil een papieren Coronabewijs maken</h2></summary>
+<div markdown="1">
+
+Geen smartphone, liever een papieren coronabewijs of wil je een coronabewijs voor je kinderen maken? Of vind je het prettig om naast je CoronaCheck-app ook een papieren coronabewijs mee te nemen? Dat kan. Een papieren coronabewijs maak je op [www.coronacheck.nl/print](/print).
+
+</div>
+</details>
+
+
 <details>
 <summary><h2>Ik kan niet inloggen met DigiD</h2></summary>
 <div markdown="1">
@@ -335,13 +316,3 @@ Bij sommige mensen lukt het inloggen met DigiD niet. Mogelijk werkt een van de v
 Lukt het nog steeds niet? Neem dan contact op de helpdesk van DigiD op {{ site.data.translations.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
 
 </div></details>
-
-
-<details>
-<summary><h2>Papieren Coronabewijs maken</h2></summary>
-<div markdown="1">
-
-Geen smartphone, liever een papieren coronabewijs of wil je een coronabewijs voor je kinderen maken? Of vind je het prettig om naast je CoronaCheck-app ook een papieren coronabewijs mee te nemen? Dat kan. Een papieren coronabewijs maak je op [www.coronacheck.nl/print](/print).
-
-</div>
-</details>
