@@ -8,4 +8,4 @@ redirect_from:
 ---
 Voor toegang vragen sommige Nederlandse locaties om een coronabewijs. Denk bijvoorbeeld aan een festival of een voetbalwedstrijd. Als dit zo is krijg je meer informatie vanuit de organisator.
 
-Ook is vaak een coronabewijs nodig als je de grens over wilt. Let op want de regels verschillen per land. Bijvoorbeeld welk type test of vaccinatie voldoende is. Hierover lees je meer op <a href="https://www.wijsopreis.nl" target="_blank" rel="noreferrer noopener">wijsopreis.nl</a>.
+Ook is vaak een coronabewijs nodig als je de grens over wilt. Let op want de regels verschillen per land. Bijvoorbeeld welk type test of vaccinatie voldoende is. Hierover lees je meer op {{ site.data.translations.wijsoprijs-link[page.lang] }}.

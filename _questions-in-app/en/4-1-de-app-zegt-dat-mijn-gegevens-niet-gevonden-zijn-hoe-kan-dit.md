@@ -14,15 +14,15 @@ For example, do you have one of the following problems:
 - Do you see both vaccinations on the same day?
 - Are you not able to fully retrieve your vaccination details, while your last vaccination was more than 3 days ago?
 
-In these cases, the vaccination data may not have been registered properly. Contact your vaccination setter (GGD on <a href="tel:08005090">0800-5090</a>, hospital, general practitioner or another healthcare institution).
+In these cases, the vaccination data may not have been registered properly. Contact your vaccination setter (GGD on {{ site.data.translations.phone-ggd[page.lang] }}, hospital, general practitioner or another healthcare institution).
 
 ## No recovery certificate found?
 
-You can only make a recovery certificate if your positive test was taken at the GGD and the result was no more than 180 days ago. If the test result cannot be found in CoronaCheck, please contact the GGD (<a href="tel:08005090">0800-5090</a>) to check your registration.
+You can only make a recovery certificate if your positive test was taken at the GGD and the result was no more than 180 days ago. If the test result cannot be found in CoronaCheck, please contact the GGD ({{ site.data.translations.phone-ggd[page.lang] }}) to check your registration.
 
 ## Details are properly registered with the GGD. But I’m still unable to retrieve my details (completely)?
 
-We are aware of this issue. We’re working hard to find out where the cause is in order to resolve the issue. If you are going on a trip or want to visit an event within a few days, the advice is to schedule a free test appointment. Make a test appointment to be able to travel within Europe via: <a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoorjereis.nl</a>. To gain access to an event in the Netherlands, make a test appointment via <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoortoegang.nl</a>.
+We are aware of this issue. We’re working hard to find out where the cause is in order to resolve the issue. If you are going on a trip or want to visit an event within a few days, the advice is to schedule a free test appointment. Make a test appointment to be able to travel within Europe via: {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}. To gain access to an event in the Netherlands, make a test appointment via {{ site.data.translations.testen-voor-toegang-link[page.lang] }}.
 
 As soon as it is solved, it will be communicated here.
 
@@ -31,4 +31,4 @@ It may take a few hours before your results are processed by the test location. 
 
 ## Have you been vaccinated abroad?
 
-Unfortunately, you cannot use the CoronaCheck to get a vaccination certificate. In some countries you can make a coronavirus pass on site, one that is also valid in the Netherlands. You can read more about this on <a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank" lang="nl">Coronabewijs: praktische problemen en oplossingen</a>.
+Unfortunately, you cannot use the CoronaCheck to get a vaccination certificate. In some countries you can make a coronavirus pass on site, one that is also valid in the Netherlands. You can read more about this on {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}.
