@@ -10,13 +10,21 @@ export default {
             type: String,
             required: false
         }
+    },
+    mounted() {
+        this.$nextTick(() => {
+            this.$refs.initialTabStart.focus();
+        })
     }
 }
 </script>
 
 <template>
     <div class="section-block">
-        <h1 v-if="head">
+        <h1
+            v-if="head"
+            ref="initialTabStart"
+            tabindex="0">
             {{head}}
         </h1>
         <div
