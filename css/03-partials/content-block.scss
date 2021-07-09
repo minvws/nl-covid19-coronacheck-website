@@ -299,6 +299,12 @@
             transition: var(--transition-out);
         }
 
+        h3,
+        h4 {
+            font-family: inherit;
+            font-size: inherit;
+        }
+
         &[open] {
             padding-bottom: 50px;
 
@@ -315,10 +321,6 @@
                 }
             }
 
-            h3 {
-                font-size: 14px;
-            }
-
             details {
                 border-bottom: 1px solid rgba(21, 66, 115, 0.5);
 
@@ -326,9 +328,10 @@
                     margin: 14px 0;
                 }
 
-                // &:last-of-type {
-                //     margin-bottom: 50px;
-                // }
+                &[open] summary + div,
+                div {
+                    margin-top: 20px;
+                }
 
                 summary {
                     font-weight: normal;

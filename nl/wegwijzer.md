@@ -104,21 +104,21 @@ Op dit moment kun je helaas nog niet CoronaCheck gebruiken om een bewijs te make
 {% capture copy_troubleshooting %}
 <div markdown="1">
 
-### Mijn naam of geboortedatum klopt niet
+#### Mijn naam of geboortedatum klopt niet
 
 Het kan zijn dat de vaccinatiegegevens niet goed zijn ingevoerd. Neem contact op met de zorgverlener die je heeft gevaccineerd om je gegevens te laten corrigeren.
 
-### Mijn vaccinatiedatum klopt niet / beide vaccinaties staan op één dag
+#### Mijn vaccinatiedatum klopt niet / beide vaccinaties staan op één dag
 
 Kijk op {{ site.data.translations.mijnrivm-link[page.lang] }} of je gegevens juist geregistreerd staan. Staan de gegevens hier niet juist neem dan contact op met de zorgverlener die je heeft gevaccineerd om je gegevens te laten corrigeren.
 
 **Let op:** er is een bekend technisch probleem voor een beperkt aantal personen _die bij de GGD zijn gevaccineerd_ waarin twee verschillende vaccinaties op dezelfde datum zijn gezet. Hierdoor toont het RIVM en de CoronaCheck-app maar 1 vaccinatie. Dit probleem wordt zo snel mogelijk verholpen, maar we kunnen nu nog niet inschatten wanneer dit zal zijn opgelost. Ga je al binnen een paar dagen op reis? Dan kun je je het beste laten testen. Zie {{ site.data.translations.testenvoorjereis-link[page.lang] }}.
 
-### Ik heb geen BSN-nummer
+#### Ik heb geen BSN-nummer
 
 Helaas is het niet mogelijk een coronabewijs te maken wanneer u geen BSN-nummer heeft. Wel kun je bij je vaccinatiezetter een vaccinatiebewijs aanvragen waarmee je kunt reizen (afhankelijk van het land waar je naartoe gaat). 
 
-### Staat jouw vraag er niet tussen? 
+#### Staat jouw vraag er niet tussen? 
 
 Kijk op de pagina van de Rijksoverheid: {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}
 </div>
@@ -209,16 +209,17 @@ Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem 
 <h3>Haal je volledige vaccinatie op</h3>
 {{ copy_haal_je_volledige_vaccinatie_op }}
 
-<details><summary><h4>Ben je in Nederland gevaccineerd?</h4></summary>
-
-<h5>Ik heb 1 vaccinatie met Janssen ontvangen</h5>
+<details><summary><h3>Ben je in Nederland gevaccineerd?</h3></summary>
+<div>
+<h4>Ik heb 1 vaccinatie met Janssen ontvangen</h4>
 {{ copy_janssen_vaccinatie }}
 
-<h5>Heb je nog maar 1 vaccinatie gekregen (anders dan Janssen)? En heb je geen corona besmetting doorgemaakt?</h5>
+<h4>Heb je nog maar 1 vaccinatie gekregen (anders dan Janssen)? En heb je geen corona besmetting doorgemaakt?</h4>
 {{ copy_een_vaccinatie_geen_jansen }}
 
-<h5>Heb je 1 vaccinatie gehad vanwege een eerdere corona besmetting?</h5>
+<h4>Heb je 1 vaccinatie gehad vanwege een eerdere corona besmetting?</h4>
 {{ copy_een_vaccinatie_vanwege_besmetting }}
+</div>
 
 <details><summary>Ik heb 1 vaccinatie van de GGD ontvangen en bij het maken van de afspraak aangegeven dat ik in de afgelopen maanden corona heb gehad</summary>
 {{ copy_aangegeven_ggd_corona_gehad }}</details>
@@ -235,17 +236,17 @@ Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem 
 <details><summary> Ik heb mijn tweede afspraak geannuleerd / ben niet geweest</summary>
 {{ copy_tweede_afspraak_afgezegd }}</details>
 
-<h3>Ik heb 2 vaccinaties ontvangen</h3>
+<h4>Ik heb 2 vaccinaties ontvangen</h4>
 {{ copy_twee_vaccinaties_ontvangen }}
 
 </details>
 
-<details><summary>Ben je in het buitenland gevaccineerd?</summary>
+<details><summary><h3>Ben je in het buitenland gevaccineerd?</h3></summary>
 {{ copy_in_buitenland_gevaccineerd }}
 </details>
 
 <details>
-<summary>Geen of onjuiste gegevens gevonden?</summary>
+<summary><h3>Geen of onjuiste gegevens gevonden?</h3></summary>
 {{ copy_troubleshooting }}
 </details>
 
