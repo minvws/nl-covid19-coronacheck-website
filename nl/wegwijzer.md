@@ -6,14 +6,6 @@ redirect_from:
     - /wegwijzer
     - /nl/guidepost
 ---
-## Reizen met CoronaCheck 
-
-Je kunt jouw coronabewijs (Digitale Corona Certificaat, DCC) maken om te reizen met CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
-
-Ga je op reis? Check dan eerst {{ site.data.translations.wijsoprijs-link[page.lang] }} om te zien welk coronabewijs je nodig hebt in het land dat je wil bezoeken. Vanaf 1 juli kun je je gratis laten testen wanneer je op reis gaat. Hiervoor vind je alle informatie op {{ site.data.translations.reizen-en-vakantie-link[page.lang] }}.
-
-Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem  <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">contact op met het contactcenter van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
-
 {% capture copy_vaccinatiebewijs %}
 <div markdown="1">
 CoronaCheck haalt gegevens over vaccinaties op bij de systemen van het RIVM en de GGD. Ook andere zorgverleners zoals ziekenhuizen, huisartsen en andere zorgverleners die vaccineren, hebben je vaccinatiegegevens doorgegeven aan het RIVM. Dit doen zij alleen als je hier toestemming voor hebt gegeven. 
@@ -202,21 +194,30 @@ Neem contact op met de helpdesk van Testen voor je reis via {{ site.data.transla
     Page structure
 {% endcomment %}
 
+## Reizen met CoronaCheck 
+
+Je kunt jouw coronabewijs (Digitale Corona Certificaat, DCC) maken om te reizen met CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
+
+Ga je op reis? Check dan eerst {{ site.data.translations.wijsoprijs-link[page.lang] }} om te zien welk coronabewijs je nodig hebt in het land dat je wil bezoeken. Vanaf 1 juli kun je je gratis laten testen wanneer je op reis gaat. Hiervoor vind je alle informatie op {{ site.data.translations.reizen-en-vakantie-link[page.lang] }}.
+
+Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem  <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">contact op met het contactcenter van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
+
+
 <details><summary><h2>Vaccinatiebewijs</h2></summary>
 {{ copy_vaccinatiebewijs }}
 
 <h3>Haal je volledige vaccinatie op</h3>
 {{ copy_haal_je_volledige_vaccinatie_op }}
 
-<details><summary><h3>Ben je in Nederland gevaccineerd?</h3></summary>
+<details><summary><h4>Ben je in Nederland gevaccineerd?</h4></summary>
 
-<h4>Ik heb 1 vaccinatie met Janssen ontvangen</h4>
+<h5>Ik heb 1 vaccinatie met Janssen ontvangen</h5>
 {{ copy_janssen_vaccinatie }}
 
-<h4>Heb je nog maar 1 vaccinatie gekregen (anders dan Janssen)? En heb je geen corona besmetting doorgemaakt?</h4>
+<h5>Heb je nog maar 1 vaccinatie gekregen (anders dan Janssen)? En heb je geen corona besmetting doorgemaakt?</h5>
 {{ copy_een_vaccinatie_geen_jansen }}
 
-<h4>Heb je 1 vaccinatie gehad vanwege een eerdere corona besmetting?</h4>
+<h5>Heb je 1 vaccinatie gehad vanwege een eerdere corona besmetting?</h5>
 {{ copy_een_vaccinatie_vanwege_besmetting }}
 
 <details><summary>Ik heb 1 vaccinatie van de GGD ontvangen en bij het maken van de afspraak aangegeven dat ik in de afgelopen maanden corona heb gehad</summary>
@@ -234,12 +235,10 @@ Neem contact op met de helpdesk van Testen voor je reis via {{ site.data.transla
 <details><summary> Ik heb mijn tweede afspraak geannuleerd / ben niet geweest</summary>
 {{ copy_tweede_afspraak_afgezegd }}</details>
 
-</details>
-</details>
-
-### Ik heb 2 vaccinaties ontvangen
-
+<h3>Ik heb 2 vaccinaties ontvangen</h3>
 {{ copy_twee_vaccinaties_ontvangen }}
+
+</details>
 
 <details><summary>Ben je in het buitenland gevaccineerd?</summary>
 {{ copy_in_buitenland_gevaccineerd }}
@@ -250,36 +249,38 @@ Neem contact op met de helpdesk van Testen voor je reis via {{ site.data.transla
 {{ copy_troubleshooting }}
 </details>
 
+</details>
+
 <details><summary><h2>Testbewijs</h2></summary>
-{{ copy_testbewijs }}
-<details>
-<summary>Ik heb geen ophaalcode gekregen</summary>
-{{ copy_geen_ophaalcode }}
+    {{ copy_testbewijs }}
+    <details>
+    <summary>Ik heb geen ophaalcode gekregen</summary>
+    {{ copy_geen_ophaalcode }}
+    </details>
+
+    <details>
+    <summary>Ik krijg geen verificatiecode via SMS of e-mail</summary>
+    {{ copy_geen_verificatiecode }}
+    </details>
+</details>
+ 
+<details><summary><h2>Testen voor je reis</h2></summary>
+    {{ copy_testen_voor_je_reis }}
+
+    <details>
+    <summary>Ik heb geen ophaalcode gekregen</summary>
+    {{ copy_testen_voor_je_reis_geen_ophaalcode }}
+    </details>
+
+    <details>
+    <summary>Ik krijg geen verificatiecode via SMS of e-mail</summary>
+    {{ copy_testen_voor_je_reis_geen_verificatiecode }}
+    </details>
 </details>
 
-<details>
-<summary>Ik krijg geen verificatiecode via SMS of e-mail</summary>
-{{ copy_geen_verificatiecode }}
-</details>
-</details>
 
-## Testen voor je reis
-
-{{ copy_testen_voor_je_reis }}
-
-<details>
-<summary>Ik heb geen ophaalcode gekregen</summary>
-{{ copy_testen_voor_je_reis_geen_ophaalcode }}
-</details>
-
-<details>
-<summary>Ik krijg geen verificatiecode via SMS of e-mail</summary>
-{{ copy_testen_voor_je_reis_geen_verificatiecode }}
-</details>
-
-
-
-## Herstelbewijs
+<details><summary><h2>Herstelbewijs</h2></summary>
+<div markdown="1">
 
 Een herstelbewijs is een bewijs dat je ooit positief getest bent op aanwezigheid van het Sars-Cov2 virus. Er zijn verschillende manieren waarop dat kan worden vastgesteld: met een zelftest, een antigeen sneltest, een PCR-test of een serologische (bloed) test.
 
@@ -303,6 +304,9 @@ Dit kan verschillende oorzaken hebben:
 Staan je gegevens goed geregistreerd bij de GGD, maar niet goed in de CoronaCheck-app, waardoor je geen geldige QR code krijgt? Dit probleem is bij ons bekend en er wordt hard aan gewerkt om uit te zoeken waar de oorzaak ligt om het probleem op te kunnen lossen. 
 
 Als je echt binnen een paar dagen op reis gaat of een evenement wilt bezoeken, is het advies om een gratis testafspraak in te plannen. Voor een test om binnen Europa te kunnen reizen: {{ site.data.translations.testenvoorjereis-link[page.lang] }}. Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via {{ site.data.translations.testen-voor-toegang-link[page.lang] }}.
+
+</div>
+</details>
 
 <details>
 <summary><h2>Ik kan niet inloggen met DigiD</h2></summary>
@@ -333,6 +337,11 @@ Lukt het nog steeds niet? Neem dan contact op de helpdesk van DigiD op {{ site.d
 </div></details>
 
 
-## Papieren Coronabewijs maken
+<details>
+<summary><h2>Papieren Coronabewijs maken</h2></summary>
+<div markdown="1">
 
 Geen smartphone, liever een papieren coronabewijs of wil je een coronabewijs voor je kinderen maken? Of vind je het prettig om naast je CoronaCheck-app ook een papieren coronabewijs mee te nemen? Dat kan. Een papieren coronabewijs maak je op [www.coronacheck.nl/print](/print).
+
+</div>
+</details>

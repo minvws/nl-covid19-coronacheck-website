@@ -250,20 +250,26 @@
             color: #333333;
             padding: 14px 20px;
             font-size: 16px;
+            background: $color-RO_lightblue;
 
             &:focus {
                 outline-offset: -1px;
             }
 
-            &:hover {
+            &:hover,
+            &:focus {
+                outline: 2px solid #008fcd;
+                outline-offset: -1px;
                 background: $color-RO_lightblue;
             }
 
             h2,
             h3,
-            h4 {
+            h4,
+            h5 {
                 margin: 0;
                 font-size: inherit;
+                font-family: inherit;
                 line-height: inherit;
             }
         }
@@ -294,6 +300,8 @@
         }
 
         &[open] {
+            padding-bottom: 50px;
+
             summary {
                 font-weight: bold;
 
@@ -307,9 +315,36 @@
                 }
             }
 
+            h3 {
+                font-size: 14px;
+            }
+
             details {
-                margin: 14px 0;
                 border-bottom: 1px solid rgba(21, 66, 115, 0.5);
+
+                &:only-of-type {
+                    margin: 14px 0;
+                }
+
+                // &:last-of-type {
+                //     margin-bottom: 50px;
+                // }
+
+                summary {
+                    font-weight: normal;
+                    background: transparent;
+
+                    h3,
+                    h4,
+                    h5 {
+                        font-weight: normal;
+                    }
+
+                    &:hover {
+                        background: transparent;
+                        background: $color-RO_lightblue;
+                    }
+                }
             }
         }
     }
