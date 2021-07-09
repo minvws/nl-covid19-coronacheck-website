@@ -13,7 +13,7 @@ featuredHomeIndex: 4
 Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app). 
 
 ## Haal uw volledige vaccinatie op
-Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Je bewijs is pas geldig vanaf 14 dagen nadat je volledig gevaccineerd bent. Een internationale QR-code kan worden gemaakt na één vaccinatie. Let op, een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op www.wijsopreis.nl.
+Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Je bewijs is pas geldig vanaf 14 dagen nadat je volledig gevaccineerd bent. Een internationale QR-code kan worden gemaakt na één vaccinatie. Let op, een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op {{ site.data.translations.wijsoprijs-link[page.lang] }}.
 
 ## Lukt het niet en ben je in Nederland gevaccineerd?
 Heb je bijvoorbeeld één van de volgende problemen:

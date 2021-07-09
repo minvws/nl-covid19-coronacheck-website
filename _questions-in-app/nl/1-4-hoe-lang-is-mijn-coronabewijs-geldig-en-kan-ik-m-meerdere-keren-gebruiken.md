@@ -17,4 +17,4 @@ Een herstelbewijs is geldig vanaf 11 dagen na de positieve test, tot 180 dagen n
 
 Hoe lang een vaccinatie precies werkzaam is wordt nog onderzocht. Wanneer bekend is hoe lang de bescherming van een vaccinatie werkt, wordt de geldigheid van de QR-code daarop afgestemd. Totdat dit bekend is, is het vaccinatiebewijs onbeperkt geldig.
 
-Ga je naar het buitenland? De regels kunnen van land tot land verschillen. Check dus voor je vertrek de website <a href="https://www.wijsopreis.nl" target="_blank" rel="noreferrer noopener">wijsopreis.nl</a> om te zien óf en hoe lang je internationale coronabewijs geldig is.
+Ga je naar het buitenland? De regels kunnen van land tot land verschillen. Check dus voor je vertrek de website {{ site.data.translations.wijsoprijs-link[page.lang] }} om te zien óf en hoe lang je internationale coronabewijs geldig is.
