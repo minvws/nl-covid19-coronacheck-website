@@ -23,7 +23,7 @@ Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Zodra
 <div markdown="1">
 Dan ben je voor de  CoronaCheck-app volledig gevaccineerd. Je kunt op basis van deze gegevens een vaccinatiebewijs maken.
 
-**Let op!** Voorkom teleurstellingen en plan je reis van te voren via {{ site.data.translations.wijsoprijs-link[page.lang] }}
+**Let op!** Voorkom teleurstellingen en plan je reis van te voren via {{ site.data.translations.wijsoprijs-link[page.lang] }}.
 
 Het kan voorkomen dat sommige landen aanvullende eisen stellen aan een Janssen vaccinatie. 
 </div>
@@ -91,7 +91,7 @@ Heb je je vaccinatie(s) ontvangen bij de GGD en twijfel je of je de informatie j
 
 Heb je je vaccinatie bij een andere vaccinatiezetter ontvangen en ervaar je problemen? Dan moet je met de betreffende vaccinatiezetter contact opnemen.
 
-**Let op!** Niet ieder land heeft hetzelfde reisadvies voor de heenreis. Voorkom teleurstellingen en plan je reis van te voren via {{ site.data.translations.wijsoprijs-link[page.lang] }}
+**Let op!** Niet ieder land heeft hetzelfde reisadvies voor de heenreis. Voorkom teleurstellingen en plan je reis van te voren via {{ site.data.translations.wijsoprijs-link[page.lang] }}.
 </div>
 {% endcapture %}
 
