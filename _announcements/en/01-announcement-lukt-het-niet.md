@@ -8,5 +8,3 @@ title: Problems retrieving your test-, vaccination- or recovery certificate?
 style: info
 ---
 Are you unable to retrieve your details in CoronaCheck wherefore you can't make a coronavirus pass?  <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-regelen-praktische-problemen-en-oplossingen" rel="noopener noreferrer" target="_blank" hreflang="nl">Please read more on practical tips and problems creating a coronavirus pass (Dutch)</a>.
-
-As of Saturday, July 10th, the Dutch QR-codes created by vaccination details are valid 14 days after the last vaccination.
