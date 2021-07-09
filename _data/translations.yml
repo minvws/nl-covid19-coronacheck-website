@@ -1566,6 +1566,14 @@ phone-digid-helpdesk:
   nl: '<a href="tel:0881236555">088 123 65 55</a>'
   en: '<a href="tel:+31881236555">+31 88 123 65 55</a>'
 
+phone-tvt-helpdesk:
+  nl: '<a href="tel:0887770809">088 777 08 09</a>'
+  en: '<a href="tel:+31887770809">+31 88 777 08 09</a>'
+
+phone-tvjr-helpdesk:
+  nl: '<a href="tel:0887770810">088 777 08 10</a>'
+  en: '<a href="tel:+31887770810">+31 88 777 08 10</a>'
+
 coronabewijs-hulp-link: 
   nl: '<a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a>'
   en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/frequent-problems" rel="noopener noreferrer" target="_blank">Frequent problems and solutions getting a COVID certificate</a>'
@@ -1581,3 +1589,11 @@ reizen-en-vakantie-link:
 testenvoorjereis-link: 
   nl: '<a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank">Gratis coronatest voor reizigers (testenvoorjereis.nl)</a>'
   en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Free coronatest for travellers</a>'
+
+coronatest-link: 
+  nl: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank">coronatest.nl</a>'
+  en: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">coronatest.nl</a>'
+
+mijnrivm-link:
+  nl: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank">MijnRIVM - vaccinaties</a>'
+  en: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank" hreflang="nl">MyRIVM - vaccinations</a>'

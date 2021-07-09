@@ -239,6 +239,11 @@
             border-top: 0;
         }
 
+        details {
+            margin: 0;
+            border-bottom: 0;
+        }
+
         summary {
             cursor: pointer;
             position: relative;
@@ -252,6 +257,14 @@
 
             &:hover {
                 background: $color-RO_lightblue;
+            }
+
+            h2,
+            h3,
+            h4 {
+                margin: 0;
+                font-size: inherit;
+                line-height: inherit;
             }
         }
 
@@ -280,16 +293,23 @@
             transition: var(--transition-out);
         }
 
-        &[open] summary {
-            font-weight: bold;
+        &[open] {
+            summary {
+                font-weight: bold;
 
-            &:hover {
-                background: transparent;
+                &:hover {
+                    background: transparent;
+                }
+
+                &:after {
+                    background: url(../img/chevron-right.svg) center center no-repeat;
+                    transform: rotate(90deg);
+                }
             }
 
-            &:after {
-                background: url(../img/chevron-right.svg) center center no-repeat;
-                transform: rotate(90deg);
+            details {
+                margin: 14px 0;
+                border-bottom: 1px solid rgba(21, 66, 115, 0.5);
             }
         }
     }
