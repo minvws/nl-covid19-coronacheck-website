@@ -349,6 +349,10 @@
         }
     }
 
+    a[href^="tel:"] {
+        display: inline-block;
+    }
+
     .md-info-grey {
         color: #666;
         margin-bottom: 6px;

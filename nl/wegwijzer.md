@@ -87,7 +87,7 @@ Indien je je tweede afspraak hebt geannuleerd bij de GGD of niet meer bent gewee
 <div markdown="1">
 Dan ben je voor de CoronaCheck-app volledig gevaccineerd. Je kunt op basis van deze gegevens een vaccinatiebewijs opvragen.
 
-Heb je je vaccinatie(s) ontvangen bij de GGD en twijfel je of je de informatie juist hebt aangegeven of ervaar je problemen? Neem dan contact op met de GGD via 0800-5090. Zij kunnen dit voor je controleren. Het kan vervolgens een aantal dagen duren voordat deze gegevens ook beschikbaar zijn voor CoronaCheck.
+Heb je je vaccinatie(s) ontvangen bij de GGD en twijfel je of je de informatie juist hebt aangegeven of ervaar je problemen? Neem dan contact op met de GGD via {{ site.data.translations.phone-ggd[page.lang] }}. Zij kunnen dit voor je controleren. Het kan vervolgens een aantal dagen duren voordat deze gegevens ook beschikbaar zijn voor CoronaCheck.
 
 Heb je je vaccinatie bij een andere vaccinatiezetter ontvangen en ervaar je problemen? Dan moet je met de betreffende vaccinatiezetter contact opnemen.
 
