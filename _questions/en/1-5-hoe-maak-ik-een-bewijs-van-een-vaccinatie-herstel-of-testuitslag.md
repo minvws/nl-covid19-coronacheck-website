@@ -7,6 +7,8 @@ redirect_from:
   - /en/faq/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
 ---
 If you’ve recently tested negative, if you’ve had corona or if you’ve been vaccinated, you can make a certificate or entry pass (in the form of a QR code) to gain entry to a location. You can create the QR code via the app or [via the website](/en/print). The steps are clearly indicated. 
+
+**Please note:** a vaccination certificate becomes valid 14 days after you’re fully vaccinated.
  
 The [CoronaCheck Scanner](/en/scanner) app never shows whether your certificate or entry pass was made from a positive/negative test result or a vaccination. This is because vaccinations aren’t mandatory in the Netherlands.
 

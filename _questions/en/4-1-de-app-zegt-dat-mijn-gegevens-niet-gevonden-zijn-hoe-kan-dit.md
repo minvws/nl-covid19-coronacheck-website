@@ -1,7 +1,7 @@
 ---
 set: 4
 index: 1
-title: The app says my details were not found. How is this possible?
+title: The app says no negative/positive test result or vaccination was found. How is this possible?
 redirect_from: 
   - /en/faq-in-app/13-de-app-zegt-dat-er-geen-negatieve-testuitslag-gevonden-is-hoe-kan-dit
   - /en/faq-in-app/4-1-de-app-zegt-dat-er-geen-negatieve-testuitslag-of-vaccinatie-gevonden-is-hoe-kan-dit
