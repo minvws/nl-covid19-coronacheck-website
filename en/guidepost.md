@@ -43,7 +43,7 @@ At this time, unfortunately you cannot use CoronaCheck to create a vaccination c
 
 Do you want to use a coronavirus pass for access to events and locations within the Netherlands? <a href="https://www.testenvoortoegang.org/" rel="noopener noreferrer" target="_blank" hreflang="nl">Please go to Testen voor Toegang</a>. On this website you’ll find all relevant information, and you also can make an appointment there. If you’re visiting an event or location that requires proof of a negative corona test, the organization will usually provide you with information, for example on the ticket, in a confirmation email, or on the website.  
 
-Are you unable to create a test certificate and were you tested longer than 40 hours ago? Then you have to make a new test appointment at <a href="https://www.testenvoortoegang.org/" rel="noopener noreferrer" target="_blank" hreflang="nl">Testen voor Toegang</a>.
+Are you unable to create a test certificate and were you tested longer than 24 hours ago? Then you have to make a new test appointment at <a href="https://www.testenvoortoegang.org/" rel="noopener noreferrer" target="_blank" hreflang="nl">Testen voor Toegang</a>.
 
 ## Recovery certificate 
 
