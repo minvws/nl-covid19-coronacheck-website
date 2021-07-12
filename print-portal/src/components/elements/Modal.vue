@@ -120,11 +120,13 @@ export default {
                     id="modal__footer">
                     <CcModestButton
                         v-if="showConfirm"
+                        id="modal-refute"
                         @select="refute()"
                         :label="refuteText"/>
 
                     <CcModestButton
                         v-if="showConfirm"
+                        id="modal-confirm"
                         @select="confirm()"
                         :label="confirmText"
                         :alert="confirmAlert"/>

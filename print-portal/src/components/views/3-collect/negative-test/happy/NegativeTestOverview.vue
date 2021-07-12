@@ -48,6 +48,7 @@ export default {
                         :label="$t('views.negativeTestOverview.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
+                            id="something-is-wrong"
                             @select="openModalSomethingWrong()"
                             :label="$t('somethingIsWrong')"/>
                     </div>
