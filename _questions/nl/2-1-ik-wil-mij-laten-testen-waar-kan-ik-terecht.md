@@ -13,7 +13,7 @@ Waar je het beste een coronatest kan doen? Dat hangt ervan af waar je het testbe
 
 ## Testen voor toegang in Nederland
 
-Voor toegang tot plekken en evenementen in Nederland kun je je gratis laten testen bij een locatie die is aangesloten bij Testen voor Toegang. Kijk voor meer informatie op <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoortoegang.nl</a>. 
+Voor toegang tot plekken en evenementen in Nederland kun je je gratis laten testen bij een locatie die is aangesloten bij Testen voor Toegang. Kijk voor meer informatie op {{ site.data.translations.testen-voor-toegang-link[page.lang] }}. 
 
 <a href="https://www.testenvoortoegang.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Maak afspraak<span class="screen-reader-text"> via Testen voor Toegang</span></a>
 
