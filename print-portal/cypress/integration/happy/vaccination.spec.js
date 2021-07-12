@@ -1,7 +1,9 @@
+import { settings } from '../settings';
+
 context('Collect', () => {
     it('Visits the web page', () => {
         cy.wait(500);
-        cy.visit(url)
+        cy.visit(settings.url)
     })
     it('Agrees with Privacy Statement', () => {
         cy.wait(500);
@@ -19,7 +21,7 @@ context('Collect', () => {
     it('Enters the BSN and submits', () => {
         cy.wait(500);
         cy.get('#bsn_inp').clear();
-        cy.get('#bsn_inp').type(bsn.fullyVaccinated);
+        cy.get('#bsn_inp').type(settings.bsn.fullyVaccinated);
         cy.get('#submit_two').click();
     })
     it('Goes to vaccination print page', () => {
