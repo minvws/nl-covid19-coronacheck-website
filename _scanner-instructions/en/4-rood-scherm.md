@@ -5,7 +5,7 @@ graphic: 4_scherm_rood.svg
 title: Red screen
 lang: en
 ---
-Red screen? This does not mean the visitor has coronavirus. It just means the QR code is invalid or expired (older than 40 hours). So there is no proof of a  vaccination record, recovery or recent negative test result. Here's what you can do:
+Red screen? This does not mean the visitor has coronavirus. It just means the QR code is invalid or expired (older than 24 hours). So there is no proof of a  vaccination record, recovery or recent negative test result. Here's what you can do:
 
 - Check whether the visitor shows the QR code using the CoronaCheck app. A screenshot or copy of the QR code always results in a red screen.
 - Check whether the visitor shows a Dutch QR code. An international QR code results in a red screen.
