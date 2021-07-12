@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "e2e:chrome": "cypress run --no-exit --browser chrome",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
