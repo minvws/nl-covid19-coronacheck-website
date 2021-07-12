@@ -1,6 +1,6 @@
 import { settings } from '../settings';
 
-context('Collect', () => {
+context('Happy: Vaccination', () => {
     it('Visits the web page', () => {
         cy.wait(500);
         cy.visit(settings.url)
@@ -23,10 +23,11 @@ context('Collect', () => {
         cy.get('#bsn_inp').clear();
         cy.get('#bsn_inp').type(settings.bsn.fullyVaccinated);
         cy.get('#submit_two').click();
+        cy.wait(1000);
     })
     it('Goes to vaccination print page', () => {
         // wait a little longer for collecting
-        cy.wait(5000);
+        cy.wait(2000);
         cy.get('#create-qr-vaccination').click();
     })
     it('Opens the PDF', () => {
