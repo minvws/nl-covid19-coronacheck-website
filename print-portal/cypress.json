@@ -2,5 +2,6 @@
   "component": {
     "componentFolder": "src",
     "testFiles": "**/*.spec.ts"
-  }
+  },
+  "chromeWebSecurity": false
 }
