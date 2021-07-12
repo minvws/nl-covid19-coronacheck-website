@@ -1,4 +1,4 @@
-import { settings } from '../settings';
+import { settings } from '../../settings';
 
 context('Happy: Vaccination', () => {
     it('Visits the web page', () => {
