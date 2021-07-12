@@ -19,7 +19,7 @@ Voor toegang tot plekken en evenementen in Nederland kun je je gratis laten test
 
 ## Testen voor reizigers
 
-Wil je op reis? Dan zijn er gratis coronatests beschikbaar voor reizigers. Kijk voor meer informatie op <a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoorjereis.nl</a>. 
+Wil je op reis? Dan zijn er gratis coronatests beschikbaar voor reizigers. Kijk voor meer informatie op {{ site.data.translations.testenvoorjereis-link[page.lang] }}. 
 
 <a href="https://afspraak.testenvoorjereis.nl/" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Maak afspraak<span class="screen-reader-text"> via Testen voor je Reis</span></a>
 
