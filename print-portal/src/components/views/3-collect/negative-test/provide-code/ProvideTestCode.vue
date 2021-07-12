@@ -61,6 +61,7 @@ export default {
         </div>
         <CcButton
             v-if="!verificationNeeded"
+            id="submit-test-code"
             @select="submit()"
             :label="$t('next')"/>
     </div>

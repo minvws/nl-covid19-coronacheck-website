@@ -43,6 +43,7 @@ export default {
                 </div>
                 <div class="section-block__footer">
                     <CcButton
+                        id="create-qr-negative-test"
                         @select="gotoPrint()"
                         :label="$t('views.negativeTestOverview.createTestProofButton')"/>
                     <div class="button__help-button">
