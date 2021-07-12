@@ -94,9 +94,7 @@ export default {
 </script>
 
 <template>
-    <div
-        :class="{'popup--active': showModal}"
-        class="cover">
+    <div class="cover">
         <div
             @click="close()"
             class="cover__clickable-area"></div>
@@ -133,6 +131,7 @@ export default {
 
                     <CcModestButton
                         v-if="showCloseButton"
+                        id="modal-close"
                         @select="close()"
                         :label="closeText"/>
                 </div>
@@ -159,9 +158,8 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    display: none;
-    pointer-events: none;
     z-index: 1;
+    animation: fadeIn 0.3s cubic-bezier(.4,0,.2,1);
 
     .cover__clickable-area {
         position: absolute;
@@ -170,12 +168,6 @@ export default {
         width: 100%;
         height: 100%;
         z-index: 1;
-    }
-
-    &.popup--active {
-        display: block;
-        animation: fadeIn 0.3s cubic-bezier(.4,0,.2,1);
-        pointer-events: all;
     }
 }
 
