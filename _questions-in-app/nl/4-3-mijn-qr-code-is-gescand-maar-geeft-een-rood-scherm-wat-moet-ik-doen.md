@@ -6,7 +6,7 @@ redirect_from:
   - /nl/faq-in-app/14-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
   - /nl/faq-in-app/4-2-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
 ---
-Rood scherm aan de grens? Het kan ook zijn dat de corona-maatregelen van het land in het land dat je bezoekt anders zijn dan in Nederland. Kijk op <a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">wijsopreis.nl</a> voor de regels en geldigheid van het coronabewijs in andere landen.
+Rood scherm aan de grens? Het kan ook zijn dat de corona-maatregelen van het land in het land dat je bezoekt anders zijn dan in Nederland. Kijk op {{ site.data.translations.wijsoprijs-link[page.lang] }} voor de regels en geldigheid van het coronabewijs in andere landen.
 
 Rood scherm binnen Nederland? Dat betekent dat je coronabewijs, in de vorm van een QR-code, ongeldig is. Er is dus geen geldig bewijs van een vaccinatie, een herstel of een recente negatieve testuitslag. 
 

@@ -16,6 +16,4 @@ Entering certain locations, activities, and countries requires a coronavirus pas
 4. The app makes a certificate from your details, in the form of a QR code
 5. Have the QR code scanned at the entrance of the location you’re visiting. Don’t forget to also bring your proof of identity and entry ticket.
 
-From early July, you’re also able to make a certificate if you’ve had coronavirus and recovered from it (recovery certificate). Do so by also following the steps above.
-
 **Please note:** in the CoronaCheck app, you’re only able to make a certificate or entry pass for one person. So every visitor needs their own phone (with the app installed). Don’t have a phone? You can also print a QR code. Download and print your test certificate or coronavirus entry pass at [www.coronacheck.nl/en/print](/en/print).

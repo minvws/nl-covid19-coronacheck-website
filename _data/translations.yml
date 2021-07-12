@@ -737,7 +737,7 @@ footer-contact-title:
   tr: CoronaCheck hakkında sorularınız mı var?
 
 footer-contact-subtitle:
-  nl: Staat jouw vraag er niet tussen? Neem dan contact op met de helpdesk.
+  nl: Staat jouw vraag er niet tussen? <br />Neem dan contact op met de helpdesk.
   en: Don't see your question listed? Contact our helpdesk.
 
 footer-contact-title-scanner:
@@ -1553,3 +1553,47 @@ sorry-btn:
 status-block:
   nl: '<p>Bekijk op de <a href="https://status.coronacheck.nl">statuspagina</a> of er op dit moment een storing bekend is.  Hier vind je de laatste status en wat je in de tussentijd kunt doen.</p><p>Staat jouw probleem of storing er niet tussen? Mogelijk is er dan al een oplossing voor. Kijk dan tussen de meestgestelde vragen.</p>'
   en: '<p>Check the <a href="https://status.coronacheck.nl/en/">status page</a> to see if there is a known issue. Here you will find the latest status and what you can do in the meantime.</p><p>Is your problem or technical issue not listed? There may already be a solution. Please check the most frequently asked questions.</p>'
+
+wijsoprijs-link:
+  nl: '<a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">wijsopreis.nl</a>'
+  en: '<a href="https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Travelling outside the Netherlands</a>'
+
+phone-ggd:
+  nl: '<a href="tel:08005090">0800-5090</a>'
+  en: '<a href="tel:08005090">0800-5090</a>'
+
+phone-digid-helpdesk:
+  nl: '<a href="tel:0881236555">088 123 65 55</a>'
+  en: '<a href="tel:+31881236555">+31 88 123 65 55</a>'
+
+phone-tvt-helpdesk:
+  nl: '<a href="tel:0887770809">088 777 08 09</a>'
+  en: '<a href="tel:+31887770809">+31 88 777 08 09</a>'
+
+phone-tvjr-helpdesk:
+  nl: '<a href="tel:0887770810">088 777 08 10</a>'
+  en: '<a href="tel:+31887770810">+31 88 777 08 10</a>'
+
+coronabewijs-hulp-link: 
+  nl: '<a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/frequent-problems" rel="noopener noreferrer" target="_blank">Frequent problems and solutions getting a COVID certificate</a>'
+
+testen-voor-toegang-link: 
+  nl: '<a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>'
+  en: '<a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Testen voor Toegang</a>'
+
+reizen-en-vakantie-link: 
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie" rel="noopener noreferrer" target="_blank">Reizen en vakantie</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/travelling-abroad" rel="noopener noreferrer" target="_blank">Travelling abroad (information for people living in the Netherlands)</a>'
+
+testenvoorjereis-link: 
+  nl: '<a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank">testenvoorjereis.nl</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Free coronatest for travellers</a>'
+
+coronatest-link: 
+  nl: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank">coronatest.nl</a>'
+  en: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">coronatest.nl</a>'
+
+mijnrivm-link:
+  nl: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank">MijnRIVM - vaccinaties</a>'
+  en: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank" hreflang="nl">MyRIVM - vaccinations</a>'

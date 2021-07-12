@@ -1,7 +1,7 @@
 ---
 set: 2
 index: 1
-title: Which locations require a coronavirus entry pass?
+title: Which locations require a coronavirus pass?
 featuredHome: true
 featuredHomeIndex: 4
 ---

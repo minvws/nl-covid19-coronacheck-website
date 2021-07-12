@@ -17,14 +17,14 @@ Heb je bijvoorbeeld één van de volgende problemen:
 - Zie je beide vaccinaties op één dag staan?
 - Of kun je je vaccinatiegegevens niet volledig ophalen, terwijl je laatste vaccinatie langer dan 3 dagen geleden was?
 
-Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem contact op met je vaccinatiezetter (GGD op <a href="tel:08005090">0800-5090</a>, ziekenhuis, huisarts of een andere zorginstelling).
+Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem contact op met je vaccinatiezetter (GGD op {{ site.data.translations.phone-ggd[page.lang] }}, ziekenhuis, huisarts of een andere zorginstelling).
 
 ## Geen herstelbewijs gevonden?
-Je kan alleen een herstelbewijs maken wanneer je positieve test is afgenomen bij de GGD en de uitslag niet langer dan 180 dagen geleden was. Is de uitslag niet te vinden in CoronaCheck, neem contact op met de GGD (<a href="tel:08005090">0800-5090</a>) om je registratie te controleren.
+Je kan alleen een herstelbewijs maken wanneer je positieve test is afgenomen bij de GGD en de uitslag niet langer dan 180 dagen geleden was. Is de uitslag niet te vinden in CoronaCheck, neem contact op met de GGD ({{ site.data.translations.phone-ggd[page.lang] }}) om je registratie te controleren.
 
 ## Gegevens goed geregistreerd bij de GGD, maar lukt het niet je gegevens (volledig) op te halen?
 
-Dit probleem is bij ons bekend en er wordt hard aan gewerkt om uit te zoeken waar de oorzaak ligt om het probleem op te kunnen lossen. Als je echt binnen een paar dagen op reis gaat of een evenement wil bezoeken, is het advies om een gratis testafspraak in te plannen. Voor een test om binnen Europa te kunnen reizen: <a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoorjereis.nl</a>. Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">www.testenvoortoegang.nl</a>.
+Dit probleem is bij ons bekend en er wordt hard aan gewerkt om uit te zoeken waar de oorzaak ligt om het probleem op te kunnen lossen. Als je echt binnen een paar dagen op reis gaat of een evenement wil bezoeken, is het advies om een gratis testafspraak in te plannen. Voor een test om binnen Europa te kunnen reizen: {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}. Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via {{ site.data.translations.testen-voor-toegang-link[page.lang] }}.
 
 Zodra het is opgelost wordt dat hier gecommuniceerd.
 
@@ -34,4 +34,4 @@ Het kan een paar uur duren tot jouw uitslag door de testlocatie is verwerkt. Ben
 
 ## Ben je in het buitenland gevaccineerd?
 
-Op dit moment kun je helaas nog niet de CoronaCheck gebruiken om een bewijs te maken van je vaccinatie. In sommige landen kun je ter plaatse een coronabewijs maken dat ook in Nederland geldig is. Op <a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a> lees je hier meer over.
+Op dit moment kun je helaas nog niet de CoronaCheck gebruiken om een bewijs te maken van je vaccinatie. In sommige landen kun je ter plaatse een coronabewijs maken dat ook in Nederland geldig is. Op {{ site.data.translations.coronabewijs-hulp-link[page.lang] }} lees je hier meer over.
