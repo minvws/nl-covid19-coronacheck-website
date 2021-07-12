@@ -66,6 +66,7 @@ export default {
             </div>
             <div class="section-block">
                 <CcModestButton
+                    id="not-yet-tested"
                     @select="openModal()"
                     :label="$t('views.choiceTestLocation.didNotGetTestedYet')"/>
             </div>

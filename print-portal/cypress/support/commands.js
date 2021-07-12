@@ -1,4 +1,5 @@
 import { settings } from './settings';
+import {bsn} from "../data/bsn";
 
 Cypress.Commands.add('init', (type) => {
     cy.wait(500);
@@ -9,6 +10,17 @@ Cypress.Commands.add('init', (type) => {
 
     cy.wait(500);
     cy.get('#proof-choice-' + type).click();
+    cy.wait(500);
+})
+
+Cypress.Commands.add('otherLocation', (token) => {
+    cy.init('negative-test');
+    cy.get('#other-location-negative-test').click();
+    cy.wait(500);
+    cy.get('#input--testCode').clear();
+    cy.get('#input--testCode').type(token);
+    cy.wait(500);
+    cy.get('#submit-test-code').click();
     cy.wait(500);
 })
 
@@ -30,4 +42,18 @@ Cypress.Commands.add('createQR', (type) => {
 
     // cy.wait(500);
     // cy.get('#open-pdf').click();
+})
+
+Cypress.Commands.add('modalShouldSay', (string) => {
+    cy.wait(500);
+    cy.get('.modal').should('exist')
+    cy.get('.modal h1').contains(string)
+})
+
+Cypress.Commands.add('modalShouldClose', () => {
+    cy.wait(500);
+    cy.get('#modal-close').click();
+    // wait for fade out
+    cy.wait(2000);
+    cy.get('.modal').should('not.exist')
 })
