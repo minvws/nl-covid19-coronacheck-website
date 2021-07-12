@@ -22,7 +22,7 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-cypress/integration/settings.js
+cypress/integration/examples/bsn.js
 cypress/screenshots/
-cypress/support/
+cypress/support/settings.js
 cypress/videos/
