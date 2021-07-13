@@ -3,7 +3,7 @@ lang: en
 # set `published` to true to show the announcement on the homepage:
 published: true
 # Always set a title:
-title: Adjusted validity of test- and vaccination certificate for entry within the Netherlands
+title: Adjusted validity of test- and vaccination certificate 
 # Choose a style: error or info
 style: info
 ---

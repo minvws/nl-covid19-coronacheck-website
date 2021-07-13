@@ -3,7 +3,7 @@ lang: nl
 # set `published` to true to show the announcement on the homepage:
 published: true
 # Always set a title:
-title: Aangepaste geldigheid testbewijs en vaccinatiebewijs voor toegang in Nederland
+title: Aangepaste geldigheid testbewijs en vaccinatiebewijs
 # Choose a style: error or info
 style: info
 ---
