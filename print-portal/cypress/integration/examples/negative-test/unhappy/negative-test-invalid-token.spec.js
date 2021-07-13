@@ -3,8 +3,8 @@ import dictionary from '/src/data/language/dictionary';
 
 context('Unhappy | Negative Test: Invalid token', () => {
     it('Commercial Flow Invalid', () => {
-        cy.tokenFlow(token.invalid)
-        cy.get('p.ErrorLabel').should('exist')
-        cy.get('p.ErrorLabel').contains(dictionary.nl.views.provideCode.invalidTestCode);
+        cy.tokenFlow(token.invalidToken)
+        cy.get('p.error-label').should('exist')
+        cy.get('p.error-label').contains(dictionary.nl.views.provideCode.invalidTestCode);
     })
 })
