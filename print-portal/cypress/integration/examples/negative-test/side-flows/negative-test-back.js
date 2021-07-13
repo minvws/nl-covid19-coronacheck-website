@@ -1,7 +1,7 @@
 import { token } from '../../../../data/bsn';
 import dictionary from '/src/data/language/dictionary';
 
-context('Side Flow: Negative Test, go back', () => {
+context('Side Flow | Negative Test: go back', () => {
     it('Commercial Flow', () => {
         cy.otherLocation(token.valid)
     })

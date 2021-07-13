@@ -1,8 +1,8 @@
 import { token } from '../../../../data/bsn';
 
-context('Happy | Negative Test: Token', () => {
+context('Happy | Negative Test: Token + Verification', () => {
     it('Commercial Flow', () => {
-        cy.otherLocation(token.valid)
+        cy.otherLocation(token.validV2WithVerification)
     })
 
     it('Create QR', () => {

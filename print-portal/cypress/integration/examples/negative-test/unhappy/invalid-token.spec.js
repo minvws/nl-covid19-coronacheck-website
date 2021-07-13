@@ -1,7 +1,7 @@
 import { token } from '../../../../data/bsn';
 import dictionary from '/src/data/language/dictionary';
 
-context('Happy: Negative Test', () => {
+context('Unhappy | Negative Test: Invalid token', () => {
     it('Commercial Flow Invalid', () => {
         cy.otherLocation(token.invalid)
         cy.get('p.ErrorLabel').should('exist')

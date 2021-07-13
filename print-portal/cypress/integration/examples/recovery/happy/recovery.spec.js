@@ -1,6 +1,6 @@
 import { bsn } from '../../../../data/bsn';
 
-context('Happy: Recovery', () => {
+context('Happy | Recovery: DigiD', () => {
     it('Digid flow: Recovery', () => {
         cy.digidFlowCollect('recovery', bsn.recovery);
     })

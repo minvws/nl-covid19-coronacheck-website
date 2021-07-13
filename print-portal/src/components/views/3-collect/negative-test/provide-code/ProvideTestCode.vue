@@ -46,13 +46,13 @@ export default {
 <template>
     <div class="ProvideTestCode">
         <div class="input__set">
-            <label for="input--testCode">
+            <label for="input-test-code">
                 {{$t('views.provideCode.uniqueCode')}}
             </label>
             <input
                 v-model="testCode"
                 v-on:keyup.enter="submit"
-                id="input--testCode"
+                id="input-test-code"
                 type="text"
                 :placeholder="$t('forInstanceAbbr') + ' BRB-YYYYYYYYY1-Z2'"/>
             <ErrorLabel

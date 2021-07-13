@@ -13,14 +13,20 @@ Cypress.Commands.add('init', (type) => {
     cy.wait(500);
 })
 
-Cypress.Commands.add('otherLocation', (token) => {
+Cypress.Commands.add('otherLocation', (user) => {
     cy.init('negative-test');
     cy.get('#other-location-negative-test').click();
     cy.wait(500);
-    cy.get('#input--testCode').clear();
-    cy.get('#input--testCode').type(token);
+    cy.get('#input-test-code').clear();
+    cy.get('#input-test-code').type(user.token);
     cy.wait(500);
     cy.get('#submit-test-code').click();
+    if (user.verification) {
+        cy.get('#input-verification-code').clear();
+        cy.get('#input-verification-code').type(user.verification);
+        cy.wait(500);
+        cy.get('#submit-verification-code').click();
+    }
     cy.wait(500);
 })
 
