@@ -56,9 +56,14 @@ Cypress.Commands.add('modalShouldSay', (string) => {
     cy.get('.modal h1').contains(string)
 })
 
-Cypress.Commands.add('modalShouldClose', () => {
+Cypress.Commands.add('modalShouldClose', (byRefute) => {
     cy.wait(500);
-    cy.get('#modal-close').click();
+    if (byRefute) {
+        cy.get('#modal-refute').click();
+    } else {
+        cy.get('#modal-close').click();
+    }
+
     // wait for fade out
     cy.wait(2000);
     cy.get('.modal').should('not.exist')

@@ -70,6 +70,7 @@ export default {
                 :label="verificationCodeStatus.error"/>
             <div class="request-new-verification-code__container">
                 <CcModestButton
+                    id="did-not-get-verification"
                     @select="requestNewVerificationCode()"
                     :label="verificationCodeStatus.error.length > 0 ? $t('views.provideCode.sendAgain') : $t('views.provideCode.didNotGetCode')"/>
             </div>
