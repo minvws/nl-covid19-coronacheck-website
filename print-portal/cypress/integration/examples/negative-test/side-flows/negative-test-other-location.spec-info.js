@@ -3,7 +3,7 @@ import dictionary from '/src/data/language/dictionary';
 
 context('Side Flow | Negative Test: v2 info', () => {
     it('Commercial Flow', () => {
-        cy.otherLocation(token.valid)
+        cy.tokenFlow(token.valid)
     })
 
     it('Gives info about the test result', () => {

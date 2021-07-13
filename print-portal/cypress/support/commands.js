@@ -13,7 +13,7 @@ Cypress.Commands.add('init', (type) => {
     cy.wait(500);
 })
 
-Cypress.Commands.add('otherLocation', (user) => {
+Cypress.Commands.add('tokenFlow', (user) => {
     cy.init('negative-test');
     cy.get('#other-location-negative-test').click();
     cy.wait(500);
