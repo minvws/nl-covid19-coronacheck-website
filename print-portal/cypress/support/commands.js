@@ -68,3 +68,9 @@ Cypress.Commands.add('modalShouldClose', (byRefute) => {
     cy.wait(2000);
     cy.get('.modal').should('not.exist')
 })
+
+Cypress.Commands.add('pageShouldSay', (string) => {
+    cy.wait(500);
+    cy.get('main h1').should('exist')
+    cy.get('main h1').contains(string)
+})

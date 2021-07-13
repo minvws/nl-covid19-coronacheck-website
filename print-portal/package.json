@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "e2e:open": "cypress run --no-exit --browser chrome",
     "e2e": "cypress run --browser chrome",
-    "e2e:specific": "cypress run --no-exit --browser chrome --spec  cypress/integration/examples/vaccination/unhappy/vaccination-wrong-bsn.spec.js",
+    "e2e:specific": "cypress run --no-exit --browser chrome --spec  cypress/integration/examples/recovery/unhappy/recovery-none.spec.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
