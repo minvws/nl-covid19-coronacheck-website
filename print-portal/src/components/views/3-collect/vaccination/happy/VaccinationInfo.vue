@@ -68,14 +68,20 @@ export default {
             }
 
             const reasonIsRecovery = () => {
-                return this.vaccination.completionReason === '' || this.vaccination.completionReason === 'recovery';
+                return this.vaccination.completionReason === 'recovery';
             }
 
             const reasonIsPriorEvent = () => {
                 return this.vaccination.completionReason === 'priorevent';
             }
 
-            if (isCompleted() && reasonIsRecovery()) {
+            const reasonIsMissing = () => {
+                return this.vaccination.completionReason === '';
+            }
+
+            if (isCompleted() && reasonIsMissing()) {
+                return this.$t('components.vaccination.info.finalDosisValue.yes');
+            } else if (isCompleted() && reasonIsRecovery()) {
                 return this.$t('components.vaccination.info.finalDosisValue.recovery');
             } else if (isCompleted() && reasonIsPriorEvent()) {
                 return this.$t('components.vaccination.info.finalDosisValue.prior');

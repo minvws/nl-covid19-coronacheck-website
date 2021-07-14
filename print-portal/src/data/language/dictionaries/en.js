@@ -178,9 +178,10 @@ const en = {
                 'vaccinationCountry': 'Country of vaccination',
                 'identificationCode': 'Unique certificate identifier',
                 'finalDosisValue': {
+                    'yes': 'Yes',
                     'recovery': 'TODO Ja (eerder corona gehad)',
                     'prior': 'TODO Ja (ergens anders gevaccineerd)',
-                    'no': 'TODO Nee',
+                    'no': 'No',
                     'unknown': 'TODO Niet bekend'
                 }
             }

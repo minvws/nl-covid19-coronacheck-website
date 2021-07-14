@@ -178,6 +178,7 @@ const nl = {
                 'vaccinationCountry': 'Gevaccineerd in',
                 'identificationCode': 'Uniek certificaatnummer',
                 'finalDosisValue': {
+                    'yes': 'Ja',
                     'recovery': 'Ja (eerder corona gehad)',
                     'prior': 'Ja (ergens anders gevaccineerd)',
                     'no': 'Nee',
