@@ -73,7 +73,8 @@ export default {
         <VaccinationInfo
             v-if="showInfo"
             @close="closeInfo"
-            :signed-event="signedEvent"/>
+            :signed-event="signedEvent"
+            :holder="holder"/>
     </div>
 </template>
 

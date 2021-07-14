@@ -1,5 +1,4 @@
 import { negativeTestV2, negativeTestV3 } from '../templates/en/messages/about/negative-test';
-import vaccination from '../templates/en/messages/about/vaccination';
 import recovery from '../templates/en/messages/about/recovery';
 import positiveTest from '../templates/en/messages/about/positive-test';
 import footer from '../templates/en/footer';
@@ -195,10 +194,6 @@ const en = {
                 'head': 'What has been retrieved?',
                 'bodyV2': negativeTestV2,
                 'bodyV3': negativeTestV3
-            },
-            'vaccinationAbout': {
-                'head': 'What has been retrieved?',
-                'body': vaccination
             },
             'recoveryAbout': {
                 'head': 'What has been retrieved?',

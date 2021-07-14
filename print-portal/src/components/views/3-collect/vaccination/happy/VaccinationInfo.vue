@@ -1,6 +1,8 @@
 <script>
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
+import _Holder from '@/classes/holder/_Holder';
+import dateTool from '@/tools/date';
 
 export default {
     name: 'VaccinationInfo',
@@ -9,11 +11,18 @@ export default {
         signedEvent: {
             type: SignedEvent,
             required: true
+        },
+        holder: {
+            type: _Holder,
+            required: true
         }
     },
     computed: {
         vaccination() {
             return this.signedEvent.event.vaccination;
+        },
+        birthDateString() {
+            return dateTool.dateToString(this.holder.birthDate, 'dd-MM-yyyy');
         },
         vaccineName() {
             let vaccine;
@@ -28,36 +37,29 @@ export default {
             }
             return vaccine ? vaccine.name : ''
         },
-        data() {
-            //         let dosesString;
-            //         const vaccineType = this.$store.getters.getVaccineType(this.vaccination.type);
-            //         const manufacturer = this.$store.getters.getVaccineManufacturer(this.vaccination.manufacturer);
-            //         if (this.vaccination.doseNumber) {
-            //     if (this.vaccination.totalDoses) {
-            //         dosesString = this.vaccination.doseNumber + ' ' + this.$t('of') + ' ' + this.vaccination.totalDoses;
-            //     } else {
-            //         dosesString = this.vaccination.doseNumber;
-            //     }
-            // } else {
-            //     dosesString = '';
-            // }
-            // const data = {
-            //     name: this.holder.fullName,
-            //     birthDateString: dateTool.dateToString(this.holder.birthDate, 'dd-MM-yyyy'),
-            //     vaccineName: this.vaccineName,
-            //     vaccineType: (vaccineType ? vaccineType.name : '-'),
-            //     manufacturer: (manufacturer ? manufacturer.name : '-'),
-            //     dosesString: dosesString,
-            //     dateString: dateTool.dateToString(this.vaccination.date, 'dd-MM-yyyy'),
-            //     country: this.vaccination.country,
-            //     identificationCode: this.signedEvent.event.unique
-            // }
-            // this.$store.commit('modal/set', {
-            //     messageHead: this.$t('message.info.vaccinationAbout.head'),
-            //     messageBody: this.$t('message.info.vaccinationAbout.body', data),
-            //     closeButton: true
-            // })
-            return null;
+        vaccineType() {
+            const vaccineType = this.$store.getters.getVaccineType(this.vaccination.type);
+            return vaccineType ? vaccineType.name : '-';
+        },
+        vaccineManufacturer() {
+            const manufacturer = this.$store.getters.getVaccineManufacturer(this.vaccination.manufacturer);
+            return manufacturer ? manufacturer.name : '-';
+        },
+        dosesString() {
+            if (this.vaccination.totalDoses) {
+                return this.vaccination.doseNumber + ' ' + this.$t('of') + ' ' + this.vaccination.totalDoses;
+            } else {
+                return this.vaccination.doseNumber;
+            }
+        },
+        vaccinationDate() {
+            return dateTool.dateToString(this.vaccination.date, 'dd-MM-yyyy');
+        },
+        vaccinationCountry() {
+            return this.vaccination.country;
+        },
+        identificationCode() {
+            return this.signedEvent.event.unique;
         }
     },
     methods: {
@@ -72,10 +74,27 @@ export default {
     <portal to="root">
         <SlotModal @close="close">
             <template v-slot:head>
-                Wat is er opgehaald
+                {{$t('message.info.vaccinationAbout.head')}}
             </template>
             <template v-slot:body>
-                Dit is er opgehaald
+                <p>
+                    Deze gegevens van je vaccinatie zijn opgehaald:
+                </p>
+                <p>
+                    Naam: <strong>{{holder.fullName}}</strong><br>
+                    Geboortedatum: <strong>{{birthDateString}}</strong>
+                </p>
+                <p>
+                    Ziekteverwekker: <strong>COVID-19</strong><br>
+                    Vaccin: <strong>{{vaccineName}}</strong><br>
+                    Vaccin type: <strong>{{vaccineType}}</strong><br>
+                    Producent van het vaccin: <strong>{{vaccineManufacturer}}</strong><br>
+                    Doses: <strong>{{dosesString}}</strong><br>
+                    Prikdatum: <strong>{{vaccinationDate}}</strong><br>
+                    Gevaccineerd in: <strong>{{vaccinationCountry}}</strong><br>
+                    Uniek certificaatnummer:<br>
+                    <strong>{{identificationCode}}</strong>
+                </p>
             </template>
         </SlotModal>
     </portal>
