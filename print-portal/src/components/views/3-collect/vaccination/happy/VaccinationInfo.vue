@@ -53,7 +53,39 @@ export default {
             }
         },
         finalDosisString() {
-            return '???';
+            const isCompleted = () => {
+                return this.vaccination.completedByMedicalStatement === true || this.vaccination.completedByPersonalStatement === true;
+            }
+
+            const isNotCompleted = () => {
+                // mind completedByMedicalStatement, completedByPersonalStatement can be null.
+                // So this is not the same as !isCompleted()
+                return this.vaccination.completedByMedicalStatement === false && this.vaccination.completedByPersonalStatement === false;
+            }
+
+            const isUnknown = () => {
+                return this.vaccination.completedByMedicalStatement === null && this.vaccination.completedByPersonalStatement === null;
+            }
+
+            const reasonIsRecovery = () => {
+                return this.vaccination.completionReason === '' || this.vaccination.completionReason === 'recovery';
+            }
+
+            const reasonIsPriorEvent = () => {
+                return this.vaccination.completionReason === 'priorevent';
+            }
+
+            if (isCompleted() && reasonIsRecovery()) {
+                return 'ja (eerder corona gehad)';
+            } else if (isCompleted() && reasonIsPriorEvent()) {
+                return 'ja (ergens anders gevaccineerd)';
+            } else if (isNotCompleted()) {
+                return 'nee';
+            } else if (isUnknown()) {
+                return 'niet bekend';
+            } else {
+                return '?';
+            }
         },
         vaccinationDate() {
             return dateTool.dateToString(this.vaccination.date, 'dd-MM-yyyy');
