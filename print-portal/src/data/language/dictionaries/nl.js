@@ -165,7 +165,19 @@ const nl = {
         'vaccination': {
             'vaccination': 'Vaccinatie',
             'name': 'Naam',
-            'dateOfBirth': 'Geboortedatum'
+            'dateOfBirth': 'Geboortedatum',
+            'info': {
+                'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald',
+                'pathogen': 'Ziekteverwekker',
+                'vaccine': 'Vaccin',
+                'vaccineType': 'Vaccin type',
+                'manufacturer': 'Producent van het vaccin',
+                'doses': 'Doses',
+                'finalDosis': 'Is dit de laatste dosis van je vaccinatie?',
+                'vaccinationDate': 'Prikdatum',
+                'vaccinationCountry': 'Gevaccineerd in',
+                'identificationCode': 'Uniek certificaatnummer'
+            }
         },
         'recovery': {
             'title': 'Herstelbewijs'

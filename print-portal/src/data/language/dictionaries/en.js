@@ -165,7 +165,19 @@ const en = {
         'vaccination': {
             'vaccination': 'Vaccination',
             'name': 'Name',
-            'dateOfBirth': 'Date of birth'
+            'dateOfBirth': 'Date of birth',
+            'info': {
+                'detailsRetrieved': 'The following details of your vaccination have been retrieved',
+                'pathogen': 'Pathogen',
+                'vaccine': 'Vaccine',
+                'vaccineType': 'Vaccine type',
+                'manufacturer': 'Manufacturer',
+                'doses': 'Doses',
+                'finalDosis': 'Is this the last dose of your vaccination?',
+                'vaccinationDate': 'Vaccination date',
+                'vaccinationCountry': 'Country of vaccination',
+                'identificationCode': 'Unique certificate identifier'
+            }
         },
         'recovery': {
             'title': 'Recovery certificate'

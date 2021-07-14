@@ -113,30 +113,30 @@ export default {
             </template>
             <template v-slot:body>
                 <p>
-                    Deze gegevens van je vaccinatie zijn opgehaald:
+                    {{$t('components.vaccination.info.detailsRetrieved')}}:
                 </p>
                 <p>
-                    Naam: <strong>{{holder.fullName}}</strong><br>
-                    Geboortedatum: <strong>{{birthDateString}}</strong>
+                    {{$t('components.vaccination.name')}}: <strong>{{holder.fullName}}</strong><br>
+                    {{$t('components.vaccination.dateOfBirth')}}: <strong>{{birthDateString}}</strong>
                 </p>
                 <p>
-                    Ziekteverwekker:
+                    {{$t('components.vaccination.info.pathogen')}}:
                     <strong>COVID-19</strong><br>
-                    Vaccin:
+                    {{$t('components.vaccination.info.vaccine')}}:
                     <strong>{{vaccineName}}</strong><br>
-                    Vaccin type:
+                    {{$t('components.vaccination.info.vaccineType')}}:
                     <strong>{{vaccineType}}</strong><br>
-                    Producent van het vaccin:
+                    {{$t('components.vaccination.info.manufacturer')}}:
                     <strong>{{vaccineManufacturer}}</strong><br>
-                    Doses:
+                    {{$t('components.vaccination.info.doses')}}:
                     <strong>{{dosesString}}</strong><br>
-                    Is dit de laatste dosis van je vaccinatie?
+                    {{$t('components.vaccination.info.finalDosis')}}
                     <strong>{{finalDosisString}}</strong><br>
-                    Prikdatum:
+                    {{$t('components.vaccination.info.vaccinationDate')}}:
                     <strong>{{vaccinationDate}}</strong><br>
-                    Gevaccineerd in:
+                    {{$t('components.vaccination.info.vaccinationCountry')}}:
                     <strong>{{vaccinationCountry}}</strong><br>
-                    Uniek certificaatnummer:<br>
+                    {{$t('components.vaccination.info.identificationCode')}}:<br>
                     <strong>{{identificationCode}}</strong>
                 </p>
             </template>
