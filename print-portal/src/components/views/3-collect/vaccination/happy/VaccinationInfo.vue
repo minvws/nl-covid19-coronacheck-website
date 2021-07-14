@@ -112,9 +112,6 @@ export default {
                 {{$t('message.info.vaccinationAbout.head')}}
             </template>
             <template v-slot:body>
-                <div>
-                    {{vaccination}}
-                </div>
                 <p>
                     Deze gegevens van je vaccinatie zijn opgehaald:
                 </p>
