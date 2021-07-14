@@ -195,6 +195,9 @@ const nl = {
                 'bodyV2': negativeTestV2,
                 'bodyV3': negativeTestV3
             },
+            'vaccinationAbout': {
+                'head': 'Wat is er opgehaald?'
+            },
             'recoveryAbout': {
                 'head': 'Wat is er opgehaald?',
                 'body': recovery

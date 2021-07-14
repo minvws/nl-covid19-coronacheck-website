@@ -195,6 +195,9 @@ const en = {
                 'bodyV2': negativeTestV2,
                 'bodyV3': negativeTestV3
             },
+            'vaccinationAbout': {
+                'head': 'What has been retrieved?'
+            },
             'recoveryAbout': {
                 'head': 'What has been retrieved?',
                 'body': recovery
