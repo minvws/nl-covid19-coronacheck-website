@@ -52,6 +52,9 @@ export default {
                 return this.vaccination.doseNumber;
             }
         },
+        finalDosisString() {
+            return '???';
+        },
         vaccinationDate() {
             return dateTool.dateToString(this.vaccination.date, 'dd-MM-yyyy');
         },
@@ -77,6 +80,9 @@ export default {
                 {{$t('message.info.vaccinationAbout.head')}}
             </template>
             <template v-slot:body>
+                <div>
+                    {{vaccination}}
+                </div>
                 <p>
                     Deze gegevens van je vaccinatie zijn opgehaald:
                 </p>
@@ -85,13 +91,22 @@ export default {
                     Geboortedatum: <strong>{{birthDateString}}</strong>
                 </p>
                 <p>
-                    Ziekteverwekker: <strong>COVID-19</strong><br>
-                    Vaccin: <strong>{{vaccineName}}</strong><br>
-                    Vaccin type: <strong>{{vaccineType}}</strong><br>
-                    Producent van het vaccin: <strong>{{vaccineManufacturer}}</strong><br>
-                    Doses: <strong>{{dosesString}}</strong><br>
-                    Prikdatum: <strong>{{vaccinationDate}}</strong><br>
-                    Gevaccineerd in: <strong>{{vaccinationCountry}}</strong><br>
+                    Ziekteverwekker:
+                    <strong>COVID-19</strong><br>
+                    Vaccin:
+                    <strong>{{vaccineName}}</strong><br>
+                    Vaccin type:
+                    <strong>{{vaccineType}}</strong><br>
+                    Producent van het vaccin:
+                    <strong>{{vaccineManufacturer}}</strong><br>
+                    Doses:
+                    <strong>{{dosesString}}</strong><br>
+                    Is dit de laatste dosis van je vaccinatie?
+                    <strong>{{finalDosisString}}</strong><br>
+                    Prikdatum:
+                    <strong>{{vaccinationDate}}</strong><br>
+                    Gevaccineerd in:
+                    <strong>{{vaccinationCountry}}</strong><br>
                     Uniek certificaatnummer:<br>
                     <strong>{{identificationCode}}</strong>
                 </p>
