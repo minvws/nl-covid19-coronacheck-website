@@ -176,7 +176,13 @@ const nl = {
                 'finalDosis': 'Is dit de laatste dosis van je vaccinatie?',
                 'vaccinationDate': 'Prikdatum',
                 'vaccinationCountry': 'Gevaccineerd in',
-                'identificationCode': 'Uniek certificaatnummer'
+                'identificationCode': 'Uniek certificaatnummer',
+                'finalDosisValue': {
+                    'recovery': 'Ja (eerder corona gehad)',
+                    'prior': 'Ja (ergens anders gevaccineerd)',
+                    'no': 'Nee',
+                    'unknown': 'Niet bekend'
+                }
             }
         },
         'recovery': {

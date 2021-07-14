@@ -76,13 +76,13 @@ export default {
             }
 
             if (isCompleted() && reasonIsRecovery()) {
-                return 'ja (eerder corona gehad)';
+                return this.$t('components.vaccination.info.finalDosisValue.recovery');
             } else if (isCompleted() && reasonIsPriorEvent()) {
-                return 'ja (ergens anders gevaccineerd)';
+                return this.$t('components.vaccination.info.finalDosisValue.prior');
             } else if (isNotCompleted()) {
-                return 'nee';
+                return this.$t('components.vaccination.info.finalDosisValue.no');
             } else if (isUnknown()) {
-                return 'niet bekend';
+                return this.$t('components.vaccination.info.finalDosisValue.no');
             } else {
                 return '?';
             }

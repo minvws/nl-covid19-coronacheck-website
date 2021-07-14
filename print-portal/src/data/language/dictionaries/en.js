@@ -176,7 +176,13 @@ const en = {
                 'finalDosis': 'Is this the last dose of your vaccination?',
                 'vaccinationDate': 'Vaccination date',
                 'vaccinationCountry': 'Country of vaccination',
-                'identificationCode': 'Unique certificate identifier'
+                'identificationCode': 'Unique certificate identifier',
+                'finalDosisValue': {
+                    'recovery': 'TODO Ja (eerder corona gehad)',
+                    'prior': 'TODO Ja (ergens anders gevaccineerd)',
+                    'no': 'TODO Nee',
+                    'unknown': 'TODO Niet bekend'
+                }
             }
         },
         'recovery': {
