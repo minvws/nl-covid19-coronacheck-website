@@ -7,11 +7,6 @@ import PreferMobile from '@/components/elements/PreferMobile';
 export default {
     name: 'ChoiceProof',
     components: { Page, PageIntro, PageChoice, PreferMobile },
-    computed: {
-        maxValidityHoursForTestResult() {
-            return this.$store.state.holderConfig.maxValidityHours;
-        }
-    },
     methods: {
         back() {
             this.$router.push({ name: 'Home' })
@@ -39,7 +34,7 @@ export default {
         <div class="section">
             <PageIntro
                 :head="$t('views.choiceProof.pageHeader')"
-                :intro="$t('views.choiceProof.pageIntro', { maxValidityHoursForTestResult: maxValidityHoursForTestResult })"/>
+                :intro="$t('views.choiceProof.pageIntro')"/>
             <div class="section-block">
                 <div class="page-choices">
                     <PageChoice
