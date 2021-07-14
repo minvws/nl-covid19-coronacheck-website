@@ -1,7 +1,7 @@
 <script>
 import Identity from '@/components/elements/Identity';
 import languages from '@/data/languages';
-import Modal from '@/components/elements/Modal';
+import Modal from '@/components/elements/modal/Modal';
 import { cmsDecode } from '@/tools/cms'
 import Snackbar from '@/components/elements/Snackbar';
 import { handleRejection } from '@/tools/error-handler';
@@ -14,6 +14,9 @@ export default {
         },
         displaySnackbar() {
             return this.$store.state.snackbar.visible
+        },
+        displayModal() {
+            return this.$store.state.modal.visible;
         }
     },
     methods: {
@@ -104,7 +107,9 @@ export default {
         <Identity/>
         <router-view/>
         <Snackbar v-if="displaySnackbar"/>
-        <Modal/>
+        <Modal v-if="displayModal"/>
+
+        <portal-target name="root"/>
     </div>
 </template>
 
@@ -113,5 +118,11 @@ export default {
 
 * {
     box-sizing: border-box;
+}
+
+.vue-portal-target {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 </style>
