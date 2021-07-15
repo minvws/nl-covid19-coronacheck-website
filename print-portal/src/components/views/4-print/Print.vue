@@ -63,12 +63,18 @@ export default {
         async createDocument() {
             const holderConfig = this.$store.state.holderConfig;
             const proofs = parseProofData(this.proof, holderConfig, this.currentLanguage.locale);
-            this.document = await getDocument(proofs, this.currentLanguage.locale, QRSizeInCm)
+            const options = {
+                proofs,
+                locale: this.currentLanguage.locale,
+                qrSizeInCm: QRSizeInCm,
+                createdAt: this.$store.state.signedAt
+            }
+            this.document = await getDocument(options)
         },
         render() {
             this.document = null;
             this.$nextTick(() => {
-                this.createDocument(this.$store.state.qrs.proof, this.$store.state.signedAt)
+                this.createDocument(this.$store.state.qrs.proof)
             });
         },
         goBack() {
