@@ -68,7 +68,7 @@ export default {
         render() {
             this.document = null;
             this.$nextTick(() => {
-                this.createDocument(this.$store.state.qrs.proof)
+                this.createDocument(this.$store.state.qrs.proof, this.$store.state.signedAt)
             });
         },
         goBack() {
