@@ -1,7 +1,7 @@
 ---
 layout: in-app-content
 lang: en
-title: Colofon
+title: Colophon
 contentLang: en
 ---
 The CoronaCheck and CoronaCheck Scanner apps have been developed by the Ministry of Public Health, Welfare and Sport in collaboration with the RIVM and the national GGD institutions. The app could not have been realised without the help of dozens of experts, experience experts and a large civilian open-source community, who has monitored the process and tested the app as it was being developed. 
@@ -21,7 +21,7 @@ Aside from the authors of the various open source, 3rd-party libraries, we have 
 
 - CoronaCheck on <a href="https://github.com/minvws/nl-covid19-coronacheck-app-ios/blob/main/LICENSES.md" target="_blank" rel="noopener noreferrer">iOS Application's open source licence</a>
   and the Open Source <a href="https://github.com/minvws/nl-covid19-coronacheck-app-ios/tree/main/licenses" target="_blank" rel="noopener noreferrer">iOS 3rd-party</a> libraries used in the application.
-- CoronaCheck on <a href="https://github.com/minvws/nl-covid19-coronacheck-app-android/blob/main/LICENSES.md" target="_blank" rel="noopener noreferrer">Android's open source licence</a> and the Open Source <a href="https://github.com/minvws/nl-covid19-coronacheck-app-android/tree/main/licenses" target="_blank" rel="noopener noreferrer">Abdriud 3rd-party</a> libraries used in the application. 
+- CoronaCheck on <a href="https://github.com/minvws/nl-covid19-coronacheck-app-android/blob/main/LICENSES.md" target="_blank" rel="noopener noreferrer">Android's open source licence</a> and the Open Source <a href="https://github.com/minvws/nl-covid19-coronacheck-app-android/tree/main/licenses" target="_blank" rel="noopener noreferrer">Android 3rd-party</a> libraries used in the application. 
 
 These licences, terms & conditions and disclaimers are an integral part of both the iOS and Android distribution and the Mobile Application. 
 
@@ -35,9 +35,9 @@ These licences, terms & conditions and disclaimers are an integral part of both 
 
 ### 3rd-party libraries:
 
-- [CoronaCheck third party licenties](https://github.com/minvws/nl-covid19-coronacheck-app-backend/tree/main/licenses)
-- [CoronaCheck BFF private third party licenties](https://github.com/minvws/nl-covid19-coronacheck-app-bff/tree/main/licenses)
-- [CoronaCheck CL core third party licenties](https://github.com/minvws/nl-covid19-coronacheck-cl-core/tree/main/licenses)
+- [CoronaCheck third party licenses](https://github.com/minvws/nl-covid19-coronacheck-app-backend/tree/main/licenses)
+- [CoronaCheck BFF private third party licenses](https://github.com/minvws/nl-covid19-coronacheck-app-bff/tree/main/licenses)
+- [CoronaCheck CL core third party licenses](https://github.com/minvws/nl-covid19-coronacheck-cl-core/tree/main/licenses)
 
 ## Reporting vulnerabilities
 

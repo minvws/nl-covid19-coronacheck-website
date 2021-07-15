@@ -18,7 +18,7 @@ Please join the Slack channel and check out the kanban board for the latest stat
 ## Design principles
 
 * Design principle 1: Clarity and usability over eye candy
-* Design principle 2: Test the results on the target group, guerilla testing in the supermarket, etc. 
+* Design principle 2: Test the results on the target group, guerrilla testing in the supermarket, etc. 
 * Design principle 3: Mobile first
 * Design principle 4: Usable for anyone (so: simply formulated in B1 language level, tested on users, etc.)
 * Design principle 5: Confirm to the design principles of  [Gebruiker Centraal](https://www.gebruikercentraal.nl/).
