@@ -19,7 +19,8 @@ const state = {
     testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
     verificationNeeded: false,
     verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
-    testResultStatus: 'idle'
+    testResultStatus: 'idle',
+    signedAt: null
 };
 
 const getters = {
@@ -68,6 +69,9 @@ const mutations = {
     setVerificationNeeded(state, status) {
         state.verificationNeeded = status;
     },
+    setSignedAt(state, time) {
+        state.signedAt = time;
+    },
     resetProvideCode(state) {
         // clear all except testcode
         state.verificationCode = '';
@@ -81,6 +85,7 @@ const mutations = {
         state.testResultStatus = 'idle';
         state.signedEvents = [];
         state.qrs.proof = null;
+        state.signedAt = null;
     },
     sessionEnded(state) {
         state.testCode = '';
@@ -89,7 +94,8 @@ const mutations = {
         state.testResultStatus = 'idle';
         state.signedEvents = [];
         state.qrs.proof = null;
-        state.userConsent = false
+        state.userConsent = false;
+        state.signedAt = null;
     }
 }
 
