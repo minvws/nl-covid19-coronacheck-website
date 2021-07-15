@@ -1,7 +1,6 @@
 <script>
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
-import _Holder from '@/classes/holder/_Holder';
 import dateTool from '@/tools/date';
 
 export default {
@@ -11,15 +10,14 @@ export default {
         signedEvent: {
             type: SignedEvent,
             required: true
-        },
-        holder: {
-            type: _Holder,
-            required: true
         }
     },
     computed: {
         vaccination() {
             return this.signedEvent.event.vaccination;
+        },
+        holder() {
+            return this.signedEvent.holder;
         },
         birthDateString() {
             return dateTool.dateToString(this.holder.birthDate, 'dd-MM-yyyy');

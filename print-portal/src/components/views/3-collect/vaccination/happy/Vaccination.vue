@@ -14,11 +14,6 @@ export default {
             required: true
         }
     },
-    data() {
-        return {
-            showInfo: false
-        }
-    },
     computed: {
         monthName() {
             return dateTool.dateToString(this.signedEvent.event.vaccination.date, 'MMMM');
@@ -33,14 +28,6 @@ export default {
         },
         title() {
             return this.$t('components.vaccination.vaccination') + ' ' + this.monthName + ' (' + this.location + ')';
-        }
-    },
-    methods: {
-        openInfo() {
-            this.showInfo = true;
-        },
-        closeInfo() {
-            this.showInfo = false;
         }
     }
 }
@@ -73,8 +60,7 @@ export default {
         <VaccinationInfo
             v-if="showInfo"
             @close="closeInfo"
-            :signed-event="signedEvent"
-            :holder="holder"/>
+            :signed-event="signedEvent"/>
     </div>
 </template>
 
