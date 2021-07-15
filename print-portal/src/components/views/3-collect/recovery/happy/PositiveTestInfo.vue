@@ -55,10 +55,18 @@ export default {
     <portal to="root">
         <SlotModal @close="close">
             <template v-slot:head>
-                {{$t('message.info.vaccinationAbout.head')}}
+                {{$t('components.eventInfo.head')}}
             </template>
             <template v-slot:body>
-                Positive test data
+                <p>
+                    {{$t('components.eventInfo.detailsRetrieved')}}:
+                </p>
+                <p>
+                    {{$t('components.eventInfo.name')}}:
+                    <strong>{{holder.fullName}}</strong><br>
+                    {{$t('components.eventInfo.dateOfBirth')}}:
+                    <strong>{{birthDateString}}</strong>
+                </p>
             </template>
         </SlotModal>
     </portal>

@@ -53,10 +53,30 @@ export default {
     <portal to="root">
         <SlotModal @close="close">
             <template v-slot:head>
-                {{$t('message.info.vaccinationAbout.head')}}
+                {{$t('components.eventInfo.head')}}
             </template>
             <template v-slot:body>
-                Recovery data
+                <p>
+                    {{$t('components.eventInfo.detailsRetrieved')}}:
+                </p>
+                <p>
+                    {{$t('components.eventInfo.name')}}:
+                    <strong>{{holder.fullName}}</strong><br>
+                    {{$t('components.eventInfo.dateOfBirth')}}:
+                    <strong>{{birthDateString}}</strong>
+                </p>
+                <p>
+                    Testdatum:
+                    <b>%{testDate}</b><br>
+                    Geldig vanaf:
+                    <b>%{validFrom}</b><br>
+                    Geldig tot:
+                    <b>%{validUntil}</b>
+                </p>
+                <p>
+                    Uniek certificaatnummer:<br>
+                    <b>%{identificationCode}</b>
+                </p>
             </template>
         </SlotModal>
     </portal>

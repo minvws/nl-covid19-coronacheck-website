@@ -1,6 +1,3 @@
-import { negativeTestV2, negativeTestV3 } from '../templates/nl/messages/about/negative-test';
-import recovery from '../templates/nl/messages/about/recovery';
-import positiveTest from '../templates/nl/messages/about/positive-test';
 import footer from '../templates/nl/footer';
 
 const nl = {
@@ -162,12 +159,16 @@ const nl = {
             'resultNegative': 'Negatieve testuitslag',
             'yourCredentials': 'Jouw gegevens'
         },
-        'vaccination': {
-            'vaccination': 'Vaccinatie',
+        'eventInfo': {
+            'head': 'Wat is er opgehaald?',
             'name': 'Naam',
             'dateOfBirth': 'Geboortedatum',
+            'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald'
+        },
+        'vaccination': {
+            'vaccination': 'Vaccinatie',
+
             'info': {
-                'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald',
                 'pathogen': 'Ziekteverwekker',
                 'vaccine': 'Vaccin',
                 'vaccineType': 'Vaccin type',
@@ -209,22 +210,6 @@ const nl = {
     },
     'message': {
         'info': {
-            'testResultAbout': {
-                'head': 'Wat is er opgehaald?',
-                'bodyV2': negativeTestV2,
-                'bodyV3': negativeTestV3
-            },
-            'vaccinationAbout': {
-                'head': 'Wat is er opgehaald?'
-            },
-            'recoveryAbout': {
-                'head': 'Wat is er opgehaald?',
-                'body': recovery
-            },
-            'positiveTestResultAbout': {
-                'head': 'Wat is er opgehaald?',
-                'body': positiveTest
-            },
             'somethingWrong': {
                 'vaccination': {
                     'head': 'Er klopt iets niet',
