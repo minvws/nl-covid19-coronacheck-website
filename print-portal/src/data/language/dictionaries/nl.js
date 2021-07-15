@@ -163,11 +163,11 @@ const nl = {
             'head': 'Wat is er opgehaald?',
             'name': 'Naam',
             'dateOfBirth': 'Geboortedatum',
-            'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald'
+            'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald',
+            'dateOfTest': 'Testdatum'
         },
         'vaccination': {
             'vaccination': 'Vaccinatie',
-
             'info': {
                 'pathogen': 'Ziekteverwekker',
                 'vaccine': 'Vaccin',
@@ -192,11 +192,6 @@ const nl = {
         },
         'positiveTest': {
             'title': 'Positieve testuitslag'
-        },
-        'proofEvent': {
-            'name': 'Naam',
-            'dateOfTest': 'Testdatum',
-            'dateOfBirth': 'Geboortedatum'
         },
         'digid': {
             'loginDigid': 'Login met DigiD',

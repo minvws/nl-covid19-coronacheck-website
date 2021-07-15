@@ -1,11 +1,12 @@
 <script>
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
-// import dateTool from '@/tools/date';
+import eventInfoMixin from '@/components/views/3-collect/_shared/event-info-mixin'
 
 export default {
     name: 'PositiveTestInfo',
     components: { SlotModal },
+    mixins: [eventInfoMixin],
     props: {
         signedEvent: {
             type: SignedEvent,

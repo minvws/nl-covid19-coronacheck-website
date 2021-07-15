@@ -29,11 +29,11 @@ export default {
 
         <dl>
             <div class="proof-event__line">
-                <dt>{{$t('components.proofEvent.name')}}:</dt>
+                <dt>{{$t('components.eventInfo.name')}}:</dt>
                 <dd>{{holder.fullName}}</dd>
             </div>
             <div class="proof-event__line">
-                <dt>{{$t('components.vaccination.dateOfBirth')}}:</dt>
+                <dt>{{$t('components.eventInfo.dateOfBirth')}}:</dt>
                 <dd>{{holder.birthDateString}}</dd>
             </div>
         </dl>
@@ -42,7 +42,7 @@ export default {
             @click="openInfo()"
             type="button"
             class="info-button">
-            <img src="assets/img/icons/info.svg" alt=""/>
+            <img src="assets/img/icons/info.svg" :alt="$t('components.eventInfo.head')" />
         </button>
 
         <RecoveryInfo

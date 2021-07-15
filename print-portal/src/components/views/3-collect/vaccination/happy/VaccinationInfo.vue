@@ -2,10 +2,12 @@
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
 import dateTool from '@/tools/date';
+import eventInfoMixin from '@/components/views/3-collect/_shared/event-info-mixin'
 
 export default {
     name: 'VaccinationInfo',
     components: { SlotModal },
+    mixins: [eventInfoMixin],
     props: {
         signedEvent: {
             type: SignedEvent,
@@ -15,12 +17,6 @@ export default {
     computed: {
         vaccination() {
             return this.signedEvent.event.vaccination;
-        },
-        holder() {
-            return this.signedEvent.holder;
-        },
-        birthDateString() {
-            return dateTool.dateToString(this.holder.birthDate, 'dd-MM-yyyy');
         },
         vaccineName() {
             let vaccine;
