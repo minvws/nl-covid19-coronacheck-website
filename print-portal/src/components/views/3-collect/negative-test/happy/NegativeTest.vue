@@ -24,7 +24,7 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status proof-event__line">
-            <strong>{{$t('components.negativeTest.resultNegative')}}</strong>
+            <strong>{{$t('components.test.resultNegative')}}</strong>
         </div>
         <div
             v-if="proofEvent.protocolVersion === '2.0'"
@@ -35,7 +35,7 @@ export default {
                     <dd>{{dateOfTest}}</dd>
                 </div>
                 <div class="proof-event__line">
-                    <dt>{{$t('components.negativeTest.yourCredentials')}}:</dt>
+                    <dt>{{$t('components.test.yourCredentials')}}:</dt>
                     <dd>{{holder.discreteInfoString}}</dd>
                 </div>
             </dl>

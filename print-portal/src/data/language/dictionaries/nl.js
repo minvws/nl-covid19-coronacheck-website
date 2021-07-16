@@ -165,7 +165,7 @@ const nl = {
             'validFrom': 'Geldig vanaf',
             'validUntil': 'Geldig tot'
         },
-        'negativeTest': {
+        'test': {
             'resultNegative': 'Negatieve testuitslag',
             'yourCredentials': 'Jouw gegevens',
             'info': {
@@ -173,6 +173,7 @@ const nl = {
                 'testType': 'Type test',
                 'testName': 'Testnaam',
                 'testResultNegative': 'negatief (geen corona)',
+                'testResultPositive': 'positief (corona)',
                 'testLocation': 'Testlocatie',
                 'testManufacturer': 'Testproducent',
                 'testCountry': 'Getest in'

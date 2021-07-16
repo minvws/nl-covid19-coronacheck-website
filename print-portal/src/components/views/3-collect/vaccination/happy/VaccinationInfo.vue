@@ -96,11 +96,6 @@ export default {
         identificationCode() {
             return this.signedEvent.event.unique;
         }
-    },
-    methods: {
-        close() {
-            this.$emit('close');
-        }
     }
 }
 </script>

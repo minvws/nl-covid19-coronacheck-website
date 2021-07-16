@@ -1,13 +1,12 @@
 <script>
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
-import proofEventInfoMixin from '@/components/views/3-collect/_shared/proof-event-info-mixin'
-import dateTool from '@/tools/date';
+import testInfoMixin from '@/components/views/3-collect/_shared/test-info-mixin'
 
 export default {
     name: 'NegativeTestInfo',
     components: { SlotModal },
-    mixins: [proofEventInfoMixin],
+    mixins: [testInfoMixin],
     props: {
         signedEvent: {
             type: SignedEvent,
@@ -20,26 +19,6 @@ export default {
         },
         holder() {
             return this.signedEvent.holder;
-        },
-        sampleDate() {
-            return dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
-        },
-        testType() {
-            const testType = this.$store.getters.getNlTestType(this.proofEvent.testType)
-            return testType ? testType.name : this.$t('unknown')
-        },
-        testName() {
-            return this.proofEvent.name.length ? this.proofEvent.name : this.$t('unknown')
-        },
-        testLocation() {
-            return this.proofEvent.facility;
-        },
-        testManufacturer() {
-            const manufacturer = this.$store.getters.getTestManufacturer(this.proofEvent.manufacturer);
-            return manufacturer ? manufacturer.name : this.$t('unknown');
-        },
-        testCountry() {
-            return this.proofEvent.country;
         }
         // openInfo() {
         //     if (this.proofEvent.protocolVersion === '2.0') {
@@ -87,11 +66,6 @@ export default {
         //         })
         //     }
         // }
-    },
-    methods: {
-        close() {
-            this.$emit('close');
-        }
     }
 }
 </script>
@@ -104,7 +78,7 @@ export default {
             </template>
             <template v-slot:body>
                 <p>
-                    {{$t('components.negativeTest.info.detailsRetrieved')}}:
+                    {{$t('components.test.info.detailsRetrieved')}}:
                 </p>
                 <p>
                     {{$t('components.eventInfo.name')}}:
@@ -113,19 +87,19 @@ export default {
                     <strong>{{birthDateString}}</strong>
                 </p>
                 <p>
-                    {{$t('components.negativeTest.info.testType')}}:
+                    {{$t('components.test.info.testType')}}:
                     <strong>{{testType}}</strong><br>
-                    {{$t('components.negativeTest.info.testName')}}:
+                    {{$t('components.test.info.testName')}}:
                     <strong>{{testName}}</strong><br>
                     {{$t('components.eventInfo.dateOfTest')}}:
                     <strong>{{sampleDate}}</strong><br>
                     {{$t('components.eventInfo.testResult')}}:
-                    <strong>{{$t('components.negativeTest.info.testResultNegative')}}:</strong><br>
-                    {{$t('components.negativeTest.info.testManufacturer')}}:
+                    <strong>{{$t('components.test.info.testResultNegative')}}:</strong><br>
+                    {{$t('components.test.info.testManufacturer')}}:
                     <strong>{{testLocation}}</strong><br>
-                    {{$t('components.negativeTest.info.testLocation')}}:
+                    {{$t('components.test.info.testLocation')}}:
                     <strong>{{testManufacturer}}</strong><br>
-                    {{$t('components.negativeTest.info.testCountry')}}:
+                    {{$t('components.test.info.testCountry')}}:
                     <strong>{{testCountry}}</strong>
                 </p>
                 <p>

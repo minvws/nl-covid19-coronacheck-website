@@ -1,13 +1,12 @@
 <script>
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
-import proofEventInfoMixin from '@/components/views/3-collect/_shared/proof-event-info-mixin'
-import dateTool from '@/tools/date';
+import testInfoMixin from '@/components/views/3-collect/_shared/test-info-mixin'
 
 export default {
     name: 'PositiveTestInfo',
     components: { SlotModal },
-    mixins: [proofEventInfoMixin],
+    mixins: [testInfoMixin],
     props: {
         signedEvent: {
             type: SignedEvent,
@@ -15,42 +14,8 @@ export default {
         }
     },
     computed: {
-        vaccination() {
-            return this.signedEvent.event.vaccination;
-        },
-        holder() {
-            return this.signedEvent.holder;
-        },
-        identificationCode() {
-            return this.signedEvent.event.unique;
-        },
-        sampleDate() {
-            return dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
-        }
-        // openInfo() {
-        // const testType = this.$store.getters.getEuTestType(this.proofEvent.type);
-        // const manufacturer = this.$store.getters.getTestManufacturer(this.proofEvent.manufacturer);
-        // const data = {
-        //     name: this.holder.fullName,
-        //     birthDateString: this.holder.birthDateString,
-        //     testType: (testType ? testType.name : this.$t('unknown')),
-        //     testName: (this.proofEvent.name.length ? this.proofEvent.name : this.$t('unknown')),
-        //     testLocation: this.proofEvent.facility,
-        //     sampleDate: this.dateOfTest,
-        //     manufacturer: manufacturer ? manufacturer.name : this.$t('unknown'),
-        //     identificationCode: this.signedEvent.event.unique,
-        //     country: this.proofEvent.country
-        // }
-        // this.$store.commit('modal/set', {
-        //     messageHead: this.$t('message.info.positiveTestResultAbout.head'),
-        //     messageBody: this.$t('message.info.positiveTestResultAbout.body', data),
-        //     closeButton: true
-        // })
-        // }
-    },
-    methods: {
-        close() {
-            this.$emit('close');
+        proofEvent() {
+            return this.signedEvent.event.positivetest;
         }
     }
 }
@@ -73,19 +38,19 @@ export default {
                     <strong>{{birthDateString}}</strong>
                 </p>
                 <p>
-                    {{$t('components.negativeTest.info.testType')}}:
+                    {{$t('components.test.info.testType')}}:
                     <strong>{{testType}}</strong><br>
-                    {{$t('components.negativeTest.info.testName')}}:
+                    {{$t('components.test.info.testName')}}:
                     <strong>{{testName}}</strong><br>
                     {{$t('components.eventInfo.dateOfTest')}}:
                     <strong>{{sampleDate}}</strong><br>
                     {{$t('components.eventInfo.testResult')}}:
-                    <strong>{{$t('components.negativeTest.info.testResultNegative')}}:</strong><br>
-                    {{$t('components.negativeTest.info.testManufacturer')}}:
+                    <strong>{{$t('components.test.info.testResultPositive')}}:</strong><br>
+                    {{$t('components.test.info.testManufacturer')}}:
                     <strong>{{testLocation}}</strong><br>
-                    {{$t('components.negativeTest.info.testLocation')}}:
+                    {{$t('components.test.info.testLocation')}}:
                     <strong>{{testManufacturer}}</strong><br>
-                    {{$t('components.negativeTest.info.testCountry')}}:
+                    {{$t('components.test.info.testCountry')}}:
                     <strong>{{testCountry}}</strong>
                 </p>
                 <p>
