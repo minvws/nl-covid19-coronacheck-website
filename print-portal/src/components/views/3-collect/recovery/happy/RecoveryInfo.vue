@@ -2,6 +2,7 @@
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
 import eventInfoMixin from '@/components/views/3-collect/_shared/event-info-mixin'
+import dateTool from '@/tools/date';
 
 export default {
     name: 'RecoveryInfo',
@@ -14,33 +15,18 @@ export default {
         }
     },
     computed: {
-        vaccination() {
-            return this.signedEvent.event.vaccination;
+        proofEvent() {
+            return this.signedEvent.event.recovery;
         },
-        holder() {
-            return this.signedEvent.holder;
+        validFrom() {
+            return dateTool.dateTimeToString(this.proofEvent.validFrom, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
         },
-        identificationCode() {
-            return this.signedEvent.event.unique;
+        validUntil() {
+            return dateTool.dateTimeToString(this.proofEvent.validUntil, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
+        },
+        sampleDate() {
+            return dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
         }
-        // openInfo() {
-        //     const testDate = dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
-        // const validFrom = dateTool.dateTimeToString(this.proofEvent.validFrom, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
-        // const validUntil = dateTool.dateTimeToString(this.proofEvent.validUntil, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
-        // const data = {
-        //     name: this.holder.fullName,
-        //     birthDateString: this.holder.birthDateString,
-        //     testDate,
-        //     validFrom,
-        //     validUntil,
-        //     identificationCode: this.signedEvent.event.unique
-        // }
-        // this.$store.commit('modal/set', {
-        //     messageHead: this.$t('message.info.recoveryAbout.head'),
-        //     messageBody: this.$t('message.info.recoveryAbout.body', data),
-        //     closeButton: true
-        // })
-        // }
     },
     methods: {
         close() {
@@ -58,7 +44,7 @@ export default {
             </template>
             <template v-slot:body>
                 <p>
-                    {{$t('components.eventInfo.detailsRetrieved')}}:
+                    {{$t('components.recovery.info.detailsRetrieved')}}:
                 </p>
                 <p>
                     {{$t('components.eventInfo.name')}}:
@@ -67,16 +53,16 @@ export default {
                     <strong>{{birthDateString}}</strong>
                 </p>
                 <p>
-                    Testdatum:
-                    <b>%{testDate}</b><br>
-                    Geldig vanaf:
-                    <b>%{validFrom}</b><br>
-                    Geldig tot:
-                    <b>%{validUntil}</b>
+                    {{$t('components.eventInfo.dateOfTest')}}:
+                    <b>{{sampleDate}}</b><br>
+                    {{$t('components.eventInfo.validFrom')}}:
+                    <b>{{validFrom}}</b><br>
+                    {{$t('components.eventInfo.validUntil')}}:
+                    <b>{{validUntil}}</b>
                 </p>
                 <p>
-                    Uniek certificaatnummer:<br>
-                    <b>%{identificationCode}</b>
+                    {{$t('components.eventInfo.identificationCode')}}:<br>
+                    <strong>{{identificationCode}}</strong>
                 </p>
             </template>
         </SlotModal>

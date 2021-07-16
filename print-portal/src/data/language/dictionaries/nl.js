@@ -160,7 +160,10 @@ const nl = {
             'name': 'Naam',
             'dateOfBirth': 'Geboortedatum',
             'dateOfTest': 'Testdatum',
-            'testResult': 'Testuitslag'
+            'testResult': 'Testuitslag',
+            'identificationCode': 'Uniek certificaatnummer',
+            'validFrom': 'Geldig vanaf',
+            'validUntil': 'Geldig tot'
         },
         'negativeTest': {
             'resultNegative': 'Negatieve testuitslag',
@@ -187,7 +190,6 @@ const nl = {
                 'finalDosis': 'Is dit de laatste dosis van je vaccinatie?',
                 'vaccinationDate': 'Prikdatum',
                 'vaccinationCountry': 'Gevaccineerd in',
-                'identificationCode': 'Uniek certificaatnummer',
                 'finalDosisValue': {
                     'yes': 'Ja',
                     'recovery': 'Ja (eerder corona gehad)',
@@ -198,10 +200,16 @@ const nl = {
             }
         },
         'recovery': {
-            'title': 'Herstelbewijs'
+            'title': 'Herstelbewijs',
+            'info': {
+                'detailsRetrieved': 'De volgende gegevens zijn opgehaald bij de testlocatie'
+            }
         },
         'positiveTest': {
-            'title': 'Positieve testuitslag'
+            'title': 'Positieve testuitslag',
+            'info': {
+                'detailsRetrieved': 'De volgende gegevens zijn opgehaald bij de testlocatie'
+            }
         },
         'digid': {
             'loginDigid': 'Login met DigiD',

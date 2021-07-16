@@ -137,8 +137,10 @@ export default {
                     {{$t('components.vaccination.info.vaccinationDate')}}:
                     <strong>{{vaccinationDate}}</strong><br>
                     {{$t('components.vaccination.info.vaccinationCountry')}}:
-                    <strong>{{vaccinationCountry}}</strong><br>
-                    {{$t('components.vaccination.info.identificationCode')}}:<br>
+                    <strong>{{vaccinationCountry}}</strong>
+                </p>
+                <p>
+                    {{$t('components.eventInfo.identificationCode')}}:<br>
                     <strong>{{identificationCode}}</strong>
                 </p>
             </template>

@@ -2,6 +2,7 @@
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
 import eventInfoMixin from '@/components/views/3-collect/_shared/event-info-mixin'
+import dateTool from '@/tools/date';
 
 export default {
     name: 'NegativeTestInfo',
@@ -19,6 +20,9 @@ export default {
         },
         holder() {
             return this.signedEvent.holder;
+        },
+        sampleDate() {
+            return dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
         },
         testType() {
             const testType = this.$store.getters.getNlTestType(this.proofEvent.testType)
@@ -125,7 +129,7 @@ export default {
                     <strong>{{testCountry}}</strong>
                 </p>
                 <p>
-                    Identificatiecode:<br>
+                    {{$t('components.eventInfo.identificationCode')}}:<br>
                     <strong>{{identificationCode}}</strong>
                 </p>
             </template>
