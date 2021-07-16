@@ -54,12 +54,12 @@ export default {
             const isNotCompleted = () => {
                 // mind completedByMedicalStatement, completedByPersonalStatement can be null.
                 // So this is not the same as !isCompleted()
-                return this.vaccination.completedByMedicalStatement === false && this.vaccination.completedByPersonalStatement === false;
+                return !isCompleted() && (this.vaccination.completedByMedicalStatement === false || this.vaccination.completedByPersonalStatement === false)
             }
-
-            const isUnknown = () => {
-                return this.vaccination.completedByMedicalStatement === null && this.vaccination.completedByPersonalStatement === null;
-            }
+            //
+            // const isUnknown = () => {
+            //     return this.vaccination.completedByMedicalStatement === null && this.vaccination.completedByPersonalStatement === null;
+            // }
 
             const reasonIsRecovery = () => {
                 return this.vaccination.completionReason === 'recovery';
@@ -81,10 +81,8 @@ export default {
                 return this.$t('components.vaccination.info.finalDosisValue.prior');
             } else if (isNotCompleted()) {
                 return this.$t('components.vaccination.info.finalDosisValue.no');
-            } else if (isUnknown()) {
-                return this.$t('components.vaccination.info.finalDosisValue.no');
             } else {
-                return '?';
+                return this.$t('components.vaccination.info.finalDosisValue.unknown');
             }
         },
         vaccinationDate() {
