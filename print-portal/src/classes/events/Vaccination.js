@@ -5,8 +5,8 @@ class Vaccination {
         type = '',
         manufacturer = '',
         brand = '',
-        completedByPersonalStatement = false,
-        completedByMedicalStatement = false,
+        completedByPersonalStatement = null,
+        completedByMedicalStatement = null,
         completionReason = '',
         country = '',
         doseNumber = 0,
@@ -17,8 +17,8 @@ class Vaccination {
         this.type = type || '';
         this.manufacturer = manufacturer || '';
         this.brand = brand || '';
-        this.completedByPersonalStatement = completedByPersonalStatement;
-        this.completedByMedicalStatement = completedByMedicalStatement;
+        this.completedByPersonalStatement = completedByPersonalStatement || null;
+        this.completedByMedicalStatement = completedByMedicalStatement || null;
         this.completionReason = completionReason || '';
         this.country = country || '';
         this.doseNumber = doseNumber || '';
