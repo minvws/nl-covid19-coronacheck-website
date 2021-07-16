@@ -15,7 +15,7 @@ export default {
             return dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
         },
         testType() {
-            const testType = this.$store.getters.getNlTestType(this.proofEvent.testType)
+            const testType = this.$store.getters.getEuTestType(this.proofEvent.type)
             return testType ? testType.name : this.$t('unknown')
         },
         testName() {

@@ -29,6 +29,10 @@ export default {
             } else {
                 return this.$t('unknown');
             }
+        },
+        testTypeNL() {
+            const testType = this.$store.getters.getNlTestType(this.proofEvent.testType)
+            return testType ? testType.name : this.$t('unknown')
         }
     }
 }
@@ -50,7 +54,7 @@ export default {
                 </p>
                 <p>
                     {{$t('components.test.info.testType')}}:
-                    <strong>{{testType}}</strong><br>
+                    <strong>{{testTypeNL}}</strong><br>
                     {{$t('components.eventInfo.dateOfTest')}}:
                     <strong>{{sampleDate}}</strong><br>
                     {{$t('components.eventInfo.testResult')}}:
