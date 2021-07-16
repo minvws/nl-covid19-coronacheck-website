@@ -1,13 +1,13 @@
 <script>
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
-import eventInfoMixin from '@/components/views/3-collect/_shared/event-info-mixin'
+import proofEventInfoMixin from '@/components/views/3-collect/_shared/proof-event-info-mixin'
 import dateTool from '@/tools/date';
 
 export default {
     name: 'RecoveryInfo',
     components: { SlotModal },
-    mixins: [eventInfoMixin],
+    mixins: [proofEventInfoMixin],
     props: {
         signedEvent: {
             type: SignedEvent,

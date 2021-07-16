@@ -2,7 +2,7 @@
 import dateTool from '@/tools/date';
 
 export default {
-    name: 'event-info-mixin',
+    name: 'proof-event-info-mixin',
     computed: {
         holder() {
             return this.signedEvent.holder;

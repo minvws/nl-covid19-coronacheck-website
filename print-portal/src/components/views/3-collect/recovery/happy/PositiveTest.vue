@@ -24,7 +24,7 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status proof-event__line">
-            {{$t('components.positiveTest.title')}}
+            <strong>{{$t('components.positiveTest.title')}}</strong>
         </div>
 
         <dl>

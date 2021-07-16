@@ -2,12 +2,12 @@
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
 import dateTool from '@/tools/date';
-import eventInfoMixin from '@/components/views/3-collect/_shared/event-info-mixin'
+import proofEventInfoMixin from '@/components/views/3-collect/_shared/proof-event-info-mixin'
 
 export default {
     name: 'VaccinationInfo',
     components: { SlotModal },
-    mixins: [eventInfoMixin],
+    mixins: [proofEventInfoMixin],
     props: {
         signedEvent: {
             type: SignedEvent,

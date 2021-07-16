@@ -1,12 +1,13 @@
 <script>
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
-import eventInfoMixin from '@/components/views/3-collect/_shared/event-info-mixin'
+import proofEventInfoMixin from '@/components/views/3-collect/_shared/proof-event-info-mixin'
+import dateTool from '@/tools/date';
 
 export default {
     name: 'PositiveTestInfo',
     components: { SlotModal },
-    mixins: [eventInfoMixin],
+    mixins: [proofEventInfoMixin],
     props: {
         signedEvent: {
             type: SignedEvent,
@@ -22,6 +23,9 @@ export default {
         },
         identificationCode() {
             return this.signedEvent.event.unique;
+        },
+        sampleDate() {
+            return dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
         }
         // openInfo() {
         // const testType = this.$store.getters.getEuTestType(this.proofEvent.type);
@@ -60,13 +64,33 @@ export default {
             </template>
             <template v-slot:body>
                 <p>
-                    {{$t('components.eventInfo.detailsRetrieved')}}:
+                    {{$t('components.positiveTest.info.detailsRetrieved')}}:
                 </p>
                 <p>
                     {{$t('components.eventInfo.name')}}:
                     <strong>{{holder.fullName}}</strong><br>
                     {{$t('components.eventInfo.dateOfBirth')}}:
                     <strong>{{birthDateString}}</strong>
+                </p>
+                <p>
+                    {{$t('components.negativeTest.info.testType')}}:
+                    <strong>{{testType}}</strong><br>
+                    {{$t('components.negativeTest.info.testName')}}:
+                    <strong>{{testName}}</strong><br>
+                    {{$t('components.eventInfo.dateOfTest')}}:
+                    <strong>{{sampleDate}}</strong><br>
+                    {{$t('components.eventInfo.testResult')}}:
+                    <strong>{{$t('components.negativeTest.info.testResultNegative')}}:</strong><br>
+                    {{$t('components.negativeTest.info.testManufacturer')}}:
+                    <strong>{{testLocation}}</strong><br>
+                    {{$t('components.negativeTest.info.testLocation')}}:
+                    <strong>{{testManufacturer}}</strong><br>
+                    {{$t('components.negativeTest.info.testCountry')}}:
+                    <strong>{{testCountry}}</strong>
+                </p>
+                <p>
+                    {{$t('components.eventInfo.identificationCode')}}:<br>
+                    <strong>{{identificationCode}}</strong>
                 </p>
             </template>
         </SlotModal>
