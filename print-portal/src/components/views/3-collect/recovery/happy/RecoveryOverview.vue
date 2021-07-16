@@ -50,7 +50,7 @@ export default {
                 <div class="section-block__footer">
                     <CcButton
                         @select="gotoPrint()"
-                        :label="$t('views.VaccinationOverview.createTestProofButton')"/>
+                        :label="$t('views.vaccinationOverview.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
                             @select="openModalSomethingWrong()"

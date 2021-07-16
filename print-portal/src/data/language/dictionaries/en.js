@@ -1,6 +1,3 @@
-import { negativeTestV2, negativeTestV3 } from '../templates/en/messages/about/negative-test';
-import recovery from '../templates/en/messages/about/recovery';
-import positiveTest from '../templates/en/messages/about/positive-test';
 import footer from '../templates/en/footer';
 
 const en = {
@@ -41,7 +38,7 @@ const en = {
             'pageHeader': 'Collect vaccination',
             'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p><p>Questions about vaccinations? Read more on the <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">website of the Dutch Government</a></p>'
         },
-        'VaccinationOverview': {
+        'vaccinationOverview': {
             'pageHeader': 'Your retrieved vaccinations',
             'pageIntro': '<p>You can make a QR code of your vaccination. This will be your certificate.</p>',
             'createTestProofButton': 'Make QR code'
@@ -158,14 +155,32 @@ const en = {
             'header': 'Prefer having your certificate on mobile?',
             'intro': 'Then download the app. You can also make a print of the certificate in the app.'
         },
-        'NegativeTest': {
+        'eventInfo': {
+            'head': 'What has been retrieved?',
+            'name': 'Name',
+            'dateOfBirth': 'Date of birth',
+            'dateOfTest': 'Test date',
+            'testResult': 'Test result',
+            'identificationCode': 'Unique certificate identifier',
+            'validFrom': 'Valid From',
+            'validUntil': 'Valid until'
+        },
+        'test': {
             'resultNegative': 'Negative test result',
-            'yourCredentials': 'Identification details'
+            'yourCredentials': 'Identification details',
+            'info': {
+                'detailsRetrieved': 'The following details were retrieved at the test location',
+                'testType': 'Type test',
+                'testName': 'Test name',
+                'testResultNegative': 'negative (no corona)',
+                'testResultPositive': 'positive (corona)',
+                'testLocation': 'Test location',
+                'testManufacturer': 'Test manufacturer',
+                'testCountry': 'Tested in'
+            }
         },
         'vaccination': {
             'vaccination': 'Vaccination',
-            'name': 'Name',
-            'dateOfBirth': 'Date of birth',
             'info': {
                 'detailsRetrieved': 'The following details of your vaccination have been retrieved',
                 'pathogen': 'Pathogen',
@@ -187,15 +202,16 @@ const en = {
             }
         },
         'recovery': {
-            'title': 'Recovery certificate'
+            'title': 'Recovery certificate',
+            'info': {
+                'detailsRetrieved': 'The following details were retrieved at the test location'
+            }
         },
         'positiveTest': {
-            'title': 'Positive test result'
-        },
-        'proofEvent': {
-            'name': 'Name',
-            'dateOfTest': 'Test date',
-            'dateOfBirth': 'Date of birth'
+            'title': 'Positive test result',
+            'info': {
+                'detailsRetrieved': 'The following details were retrieved at the test location'
+            }
         },
         'digid': {
             'loginDigid': 'Log in with DigiD',
@@ -209,22 +225,6 @@ const en = {
     },
     'message': {
         'info': {
-            'testResultAbout': {
-                'head': 'What has been retrieved?',
-                'bodyV2': negativeTestV2,
-                'bodyV3': negativeTestV3
-            },
-            'vaccinationAbout': {
-                'head': 'What has been retrieved?'
-            },
-            'recoveryAbout': {
-                'head': 'What has been retrieved?',
-                'body': recovery
-            },
-            'positiveTestResultAbout': {
-                'head': 'What has been retrieved?',
-                'body': positiveTest
-            },
             'somethingWrong': {
                 'vaccination': {
                     'head': 'Something is wrong',

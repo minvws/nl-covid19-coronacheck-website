@@ -45,7 +45,7 @@ export default {
                     {{$t('components.eventInfo.dateOfTest')}}:
                     <strong>{{sampleDate}}</strong><br>
                     {{$t('components.eventInfo.testResult')}}:
-                    <strong>{{$t('components.test.info.testResultNegative')}}:</strong><br>
+                    <strong>{{$t('components.test.info.testResultNegative')}}</strong><br>
                     {{$t('components.test.info.testManufacturer')}}:
                     <strong>{{testManufacturer}}</strong><br>
                     {{$t('components.test.info.testLocation')}}:
