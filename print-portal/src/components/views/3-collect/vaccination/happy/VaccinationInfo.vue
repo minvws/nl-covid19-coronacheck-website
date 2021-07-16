@@ -113,7 +113,7 @@ export default {
             </template>
             <template v-slot:body>
                 <p>
-                    {{$t('components.eventInfo.detailsRetrieved')}}:
+                    {{$t('components.vaccination.info.detailsRetrieved')}}:
                 </p>
                 <p>
                     {{$t('components.eventInfo.name')}}:

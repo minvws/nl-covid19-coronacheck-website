@@ -155,20 +155,30 @@ const nl = {
             'header': 'Liever je bewijs op je mobiel?',
             'intro': 'Download dan de app. Ook van een bewijs in de app kun je een print maken.'
         },
-        'NegativeTest': {
-            'resultNegative': 'Negatieve testuitslag',
-            'yourCredentials': 'Jouw gegevens'
-        },
         'eventInfo': {
             'head': 'Wat is er opgehaald?',
             'name': 'Naam',
             'dateOfBirth': 'Geboortedatum',
-            'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald',
-            'dateOfTest': 'Testdatum'
+            'dateOfTest': 'Testdatum',
+            'testResult': 'Testuitslag'
+        },
+        'negativeTest': {
+            'resultNegative': 'Negatieve testuitslag',
+            'yourCredentials': 'Jouw gegevens',
+            'info': {
+                'detailsRetrieved': 'De volgende gegevens zijn opgehaald bij de testlocatie',
+                'testType': 'Type test',
+                'testName': 'Testnaam',
+                'testResultNegative': 'negatief (geen corona)',
+                'testLocation': 'Testlocatie',
+                'testManufacturer': 'Testproducent',
+                'testCountry': 'Getest in'
+            }
         },
         'vaccination': {
             'vaccination': 'Vaccinatie',
             'info': {
+                'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald',
                 'pathogen': 'Ziekteverwekker',
                 'vaccine': 'Vaccin',
                 'vaccineType': 'Vaccin type',

@@ -14,14 +14,28 @@ export default {
         }
     },
     computed: {
-        vaccination() {
-            return this.signedEvent.event.vaccination;
+        proofEvent() {
+            return this.signedEvent.event.negativetest;
         },
         holder() {
             return this.signedEvent.holder;
         },
-        identificationCode() {
-            return this.signedEvent.event.unique;
+        testType() {
+            const testType = this.$store.getters.getNlTestType(this.proofEvent.testType)
+            return testType ? testType.name : this.$t('unknown')
+        },
+        testName() {
+            return this.proofEvent.name.length ? this.proofEvent.name : this.$t('unknown')
+        },
+        testLocation() {
+            return this.proofEvent.facility;
+        },
+        testManufacturer() {
+            const manufacturer = this.$store.getters.getTestManufacturer(this.proofEvent.manufacturer);
+            return manufacturer ? manufacturer.name : this.$t('unknown');
+        },
+        testCountry() {
+            return this.proofEvent.country;
         }
         // openInfo() {
         //     if (this.proofEvent.protocolVersion === '2.0') {
@@ -86,13 +100,33 @@ export default {
             </template>
             <template v-slot:body>
                 <p>
-                    {{$t('components.eventInfo.detailsRetrieved')}}:
+                    {{$t('components.negativeTest.info.detailsRetrieved')}}:
                 </p>
                 <p>
                     {{$t('components.eventInfo.name')}}:
                     <strong>{{holder.fullName}}</strong><br>
                     {{$t('components.eventInfo.dateOfBirth')}}:
                     <strong>{{birthDateString}}</strong>
+                </p>
+                <p>
+                    {{$t('components.negativeTest.info.testType')}}:
+                    <strong>{{testType}}</strong><br>
+                    {{$t('components.negativeTest.info.testName')}}:
+                    <strong>{{testName}}</strong><br>
+                    {{$t('components.eventInfo.dateOfTest')}}:
+                    <strong>{{sampleDate}}</strong><br>
+                    {{$t('components.eventInfo.testResult')}}:
+                    <strong>{{$t('components.negativeTest.info.testResultNegative')}}:</strong><br>
+                    {{$t('components.negativeTest.info.testManufacturer')}}:
+                    <strong>{{testLocation}}</strong><br>
+                    {{$t('components.negativeTest.info.testLocation')}}:
+                    <strong>{{testManufacturer}}</strong><br>
+                    {{$t('components.negativeTest.info.testCountry')}}:
+                    <strong>{{testCountry}}</strong>
+                </p>
+                <p>
+                    Identificatiecode:<br>
+                    <strong>{{identificationCode}}</strong>
                 </p>
             </template>
         </SlotModal>
