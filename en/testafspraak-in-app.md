@@ -13,9 +13,9 @@ For access to places and events in the Netherlands, you can have yourself tested
 <a href="https://www.testenvoortoegang.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Make appointment<span class="screen-reader-text"> through <span lang="nl">Testen voor Toegang</span></span></a>
 
 ## Testing for travelers
-Do you want to travel? Free corona tests are available for travelers. For more information, visit <a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">Testen voor je Reis</a>
+Do you want to travel? Free corona tests are available for travelers. For more information, visit {{ site.data.translations.testenvoorjereis-link[page.lang] }}.
 
-<a href="https://www.testenvoortoegang.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Make appointment<span class="screen-reader-text"> through <span lang="nl">Testen voor je Reis</span></span></a>
+<a href="https://afspraak.testenvoorjereis.nl/" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Make appointment<span class="screen-reader-text"> through <span lang="nl">Testen voor je Reis</span></span></a>
 
 ## When experiencing symptoms
 Are you experiencing symptoms that could indicate you have coronavirus? Think of a cold, a cough, shortness of breath or a fever. Then please have yourself tested at the GGD.

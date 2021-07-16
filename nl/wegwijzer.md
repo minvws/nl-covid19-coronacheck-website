@@ -234,7 +234,7 @@ Bij sommige mensen lukt het inloggen met DigiD niet. Mogelijk werkt een van de v
 
 - Sluit alle openstaande browser van DigiD handmatig, sluit de CoronaCheck-app af en probeer daarna opnieuw in te loggen via CoronaCheck;
 - Soms is het nodig het om je browser cache handmatig te verwijderen en daarna opnieuw in te loggen via CoronaCheck;
-- In sommige gevallen werkt het om je internetverbinding te wisselen. Zet bijvoorbeeld wi-fi uit en aan en probeer het dan nog eens;
+- In sommige gevallen werkt het om je internetverbinding te wisselen. Zet bijvoorbeeld Wi-Fi uit en aan en probeer het dan nog eens;
 - Soms werkt het om de telefoon te herstarten en dan opnieuw te proberen;
 - Tenslotte kan het werken om DigiD op een ander apparaat te gebruiken.
 

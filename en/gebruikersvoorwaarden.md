@@ -7,7 +7,7 @@ title: CoronaCheck Scanner Terms of Use
 ---
 ## Contents
 
-1. [Abbreviations](#abbreviations)
+1. [Abbreviations](#used-abbreviations)
 2. [About the terms of use](#about-the-terms-of-use)
 3. [How does the CoronaCheck Scanner app work?](#how-does-the-coronacheck-scanner-app-work)
     1. [Download and installation](#download-and-installation)
@@ -68,7 +68,7 @@ To prevent abuse and/or malfunctions and/or other issues, please ensure your dev
 
 ### More information
 
-For more information on the (technical) functioning of the CoronaCheck Scanner app, please refer to the information as published on Github. This information is not legally binding and does not guarantee the workings of the CoronaCheck Scanner app.
+For more information on the (technical) functioning of the CoronaCheck Scanner app, please refer to the information as published on GitHub. This information is not legally binding and does not guarantee the workings of the CoronaCheck Scanner app.
 
 ### Uninstalling the app
 

@@ -13,9 +13,9 @@ Find detailed information about the website's accessibility in <a href="https://
 
 ## What is an accessible website?
 
-An accessible website is better usable for all groups it is aimed at. This is why governmental websites must meet functional, technical and editorial [accessibility requirements](https://www.digitoegankelijk.nl/), earlier webrichtlijnen, 'web guidelines').
+An accessible website is better usable for all groups it is aimed at. This is why governmental websites must meet functional, technical and editorial [accessibility requirements](https://www.digitoegankelijk.nl/) (earlier called webrichtlijnen, 'web guidelines').
 
-The CoronaMelder app follows the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/2018/REC-WCAG21-20180605/) on level AA as set out in the European standard EN 301 549. If this European standard is updated with specific guidelines for mobile applications, we will follow them.
+The CoronaCheck app follows the [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/2018/REC-WCAG21-20180605/) on level AA as set out in the European standard EN 301 549. If this European standard is updated with specific guidelines for mobile applications, we will follow them.
 
 ## Guarantee of Accessibility
 
