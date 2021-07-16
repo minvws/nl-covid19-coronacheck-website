@@ -27,11 +27,6 @@ export default {
         sampleDate() {
             return dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
         }
-    },
-    methods: {
-        close() {
-            this.$emit('close');
-        }
     }
 }
 </script>

@@ -47,9 +47,9 @@ export default {
                     {{$t('components.eventInfo.testResult')}}:
                     <strong>{{$t('components.test.info.testResultPositive')}}:</strong><br>
                     {{$t('components.test.info.testManufacturer')}}:
-                    <strong>{{testLocation}}</strong><br>
-                    {{$t('components.test.info.testLocation')}}:
                     <strong>{{testManufacturer}}</strong><br>
+                    {{$t('components.test.info.testLocation')}}:
+                    <strong>{{testLocation}}</strong><br>
                     {{$t('components.test.info.testCountry')}}:
                     <strong>{{testCountry}}</strong>
                 </p>

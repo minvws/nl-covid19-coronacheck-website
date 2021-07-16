@@ -1,11 +1,11 @@
 <script>
 import SignedEvent from '@/classes/events/SignedEvent';
 import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
-import NegativeTestInfo from './NegativeTestInfo';
+import NegativeTestV2Info from './NegativeTestV2Info';
 
 export default {
-    name: 'NegativeTest',
-    components: { NegativeTestInfo },
+    name: 'NegativeTestV2',
+    components: { NegativeTestV2Info },
     mixins: [proofEventMixin],
     props: {
         signedEvent: {
@@ -32,12 +32,8 @@ export default {
                 <dd>{{dateOfTest}}</dd>
             </div>
             <div class="proof-event__line">
-                <dt>{{$t('components.eventInfo.name')}}:</dt>
-                <dd>{{holder.fullName}}</dd>
-            </div>
-            <div class="proof-event__line">
-                <dt>{{$t('components.eventInfo.dateOfBirth')}}:</dt>
-                <dd>{{holder.birthDateString}}</dd>
+                <dt>{{$t('components.test.yourCredentials')}}:</dt>
+                <dd>{{holder.discreteInfoString}}</dd>
             </div>
         </dl>
 
@@ -48,7 +44,7 @@ export default {
             <img src="assets/img/icons/info.svg" :alt="$t('components.eventInfo.head')" />
         </button>
 
-        <NegativeTestInfo
+        <NegativeTestV2Info
             v-if="showInfo"
             @close="closeInfo"
             :signed-event="signedEvent"/>
