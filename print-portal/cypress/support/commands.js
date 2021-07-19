@@ -1,5 +1,4 @@
-import { settings } from './settings';
-import {bsn} from "../data/bsn";
+import { settings } from '/cypress/not-public/settings';
 
 Cypress.Commands.add('init', (type) => {
     cy.wait(500);

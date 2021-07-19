@@ -1,4 +1,4 @@
-import { token } from '../../../../data/bsn';
+import { token } from '/cypress/not-public/use-cases';
 import dictionary from '/src/data/language/dictionary';
 
 context('Side Flow | Negative Test: something is wrong', () => {

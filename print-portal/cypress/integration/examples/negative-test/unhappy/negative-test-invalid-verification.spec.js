@@ -1,4 +1,4 @@
-import { token } from '../../../../data/bsn';
+import { token } from '/cypress/not-public/use-cases';
 import dictionary from '/src/data/language/dictionary';
 
 context('Unhappy | Negative Test: Invalid verification', () => {

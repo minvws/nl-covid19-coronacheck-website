@@ -1,4 +1,4 @@
-import { bsn } from '../../../../data/bsn';
+import { bsn } from '/cypress/not-public/use-cases';
 
 context('Happy | Negative Test: DigiD', () => {
     it('Digid flow: Negative Test', () => {

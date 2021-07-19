@@ -1,4 +1,4 @@
-import { bsn } from '../../../../data/bsn';
+import { bsn } from '/cypress/not-public/use-cases';
 import dictionary from '/src/data/language/dictionary';
 
 context('Unhappy: Recovery: None', () => {
