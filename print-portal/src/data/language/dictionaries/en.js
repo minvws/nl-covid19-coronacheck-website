@@ -245,6 +245,10 @@ const en = {
             },
             'digidFinished': {
                 'body': 'We\'ll retrieve your %{type}. You will be logged out of DigiD automatically'
+            },
+            'sessionEnded': {
+                'head': 'Your session has ended',
+                'body': 'For safety, your session will automatically stop after 24 hours. '
             }
         },
         'error': {
