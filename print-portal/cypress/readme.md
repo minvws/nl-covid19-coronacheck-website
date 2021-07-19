@@ -9,7 +9,7 @@
 
 ### Unhappy
 - [x] None DigiD (None Token is not possible, this results in invalidTestCode)
-- [ ] Pending
+- [x] Pending
 - [x] Invalid token
 - [x] Invalid verification
 
