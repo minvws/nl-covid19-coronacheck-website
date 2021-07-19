@@ -194,10 +194,10 @@ const en = {
                 'identificationCode': 'Unique certificate identifier',
                 'finalDosisValue': {
                     'yes': 'Yes',
-                    'recovery': 'TODO Ja (eerder corona gehad)',
-                    'prior': 'TODO Ja (ergens anders gevaccineerd)',
+                    'recovery': 'Yes (I\'ve had coronavirus earlier)',
+                    'prior': 'Yes (I have been vaccinated elsewhere)',
                     'no': 'No',
-                    'unknown': 'TODO Niet bekend'
+                    'unknown': 'Unknown'
                 }
             }
         },
