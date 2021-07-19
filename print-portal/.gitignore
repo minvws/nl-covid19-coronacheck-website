@@ -22,7 +22,6 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-cypress/data/bsn.js
+cypress/not-public/
 cypress/screenshots/
-cypress/support/settings.js
 cypress/videos/
