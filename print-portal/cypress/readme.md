@@ -19,7 +19,14 @@
 - [x] V2 Info popup (checks if info popup opens)
 - [x] Something is wrong popup
 - [x] Not yet tested popup
+- [ ] Check content of info panel V2
+- [ ] Check content of info panel V3
+- [ ] Check content print page 'domestic'
+- [ ] Check content print page 'europe'
+- [ ] Check content print page 'both'
+
 - - -
+
 ## Recovery
 
 ### Happy
@@ -27,8 +34,16 @@
 
 ### Unhappy
 - [x] None
+
+### Side-flows
+- [ ] Check content of info panel Recovery
+- [ ] Check content of info panel Positive Test
+- [ ] Check content print page 'both'
+- [ ] Recovery Valid In Future
+
 - - -
-## Recovery
+
+## Vaccination
 
 ### Happy
 - [x] DigiD (full)
@@ -36,3 +51,13 @@
 ### Unhappy
 - [x] None
 - [x] Wrong BSN
+
+### Side-flows
+- [ ] Check content of info panel Vaccination
+- [ ] Check content print page 'europe'
+- [ ] Check content print page 'both'
+
+- - -
+
+## General
+- [ ] Change language
