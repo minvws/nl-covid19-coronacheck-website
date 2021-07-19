@@ -8,7 +8,8 @@
 - [x] Token and verification
 
 ### Unhappy
-- [ ] None
+- [ ] None Token
+- [x] None DigiD
 - [ ] Pending
 - [x] Invalid token
 - [x] Invalid verification
