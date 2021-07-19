@@ -17,8 +17,8 @@ class Vaccination {
         this.type = type || '';
         this.manufacturer = manufacturer || '';
         this.brand = brand || '';
-        this.completedByPersonalStatement = completedByPersonalStatement || null;
-        this.completedByMedicalStatement = completedByMedicalStatement || null;
+        this.completedByPersonalStatement = completedByPersonalStatement ?? null;
+        this.completedByMedicalStatement = completedByMedicalStatement ?? null;
         this.completionReason = completionReason || '';
         this.country = country || '';
         this.doseNumber = doseNumber || '';
