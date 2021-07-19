@@ -7,4 +7,4 @@ title: Problemen met het ophalen van je test-, vaccinatie- of herstelbewijs?
 # Choose a style: error or info
 style: info
 ---
-Lukt het niet om je gegevens op te halen in CoronaCheck waardoor je geen bewijs kunt maken? <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-regelen-praktische-problemen-en-oplossingen" rel="noopener noreferrer" target="_blank" hreflang="nl">Lees hier meer over de praktische tips en problemen bij het maken van een coronabewijs</a>.
+Lukt het niet om je gegevens op te halen in CoronaCheck waardoor je geen bewijs kunt maken? Lees hier meer over de <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-regelen-praktische-problemen-en-oplossingen" rel="noopener noreferrer" target="_blank" hreflang="nl">praktische tips en problemen bij het maken van een coronabewijs</a>.

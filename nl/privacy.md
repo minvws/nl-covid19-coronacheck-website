@@ -38,6 +38,7 @@ Je test-, vaccinatie- en herstelgegevens worden verstrekt door de hulpverlener d
 
  Als je in CoronaCheck of via coronacheck.nl verzoekt om je gegevens op te halen dan krijg je vervolgens te zien welke gegevens zijn opgehaald en waar deze gegevens vandaan komen.
  
+Als je alleen maar beschikt over een fysiek bewijs op papier dat je via je hulpverlener of via de helpdesk bij het CIBG hebt verkregen dan is er een mogelijkheid om je papieren bewijs alsnog in te scannen via CoronaCheck. Je kunt de QR-code van je fysieke bewijs (van je EU DCC) scannen met de camera van je telefoon. De gegevens worden dan gebruikt om een digitaal EU DCC en een digitaal Coronatoegangsbewijs te maken. Voor het gebruik van de camera op je telefoon hebben we jouw toestemming nodig. Dit wordt in CoronaCheck aan je gevraagd.
 
 ## 3. Waarom verwerken we deze gegevens? (doel van de verwerking)
 
@@ -130,7 +131,7 @@ De minister neemt de bescherming van uw persoonsgegevens serieus en heeft bij de
 
 ## 12. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 28 juni 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 14 juli 2021.
 
 ## Overzicht van verwerkte persoonsgegevens
 
