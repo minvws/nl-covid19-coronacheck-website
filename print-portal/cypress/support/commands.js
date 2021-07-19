@@ -1,8 +1,20 @@
 import { settings } from '/cypress/not-public/settings';
+import { username, password } from '/cypress/not-public/authentication';
 
 Cypress.Commands.add('init', (type) => {
+    const url = settings.url[settings.env];
     cy.wait(500);
-    cy.visit(settings.url)
+    if (settings.env === 'acceptance') {
+        cy.visit(url, {
+            auth: {
+                username: username,
+                password: password,
+            },
+        })
+    } else {
+        cy.visit(url)
+    }
+
     cy.wait(500);
     cy.get('input#user-consent').check();
     cy.get('.btn').click();
