@@ -52,11 +52,17 @@ Cypress.Commands.add('digidFlowCollect', (type, bsn) => {
     cy.wait(1000);
 })
 
-Cypress.Commands.add('createQR', (type) => {
+Cypress.Commands.add('goToPrint', (type) => {
     // wait a little longer for collecting
     cy.wait(2000);
     cy.get('#create-qr-' + type).click();
 
+    // cy.wait(500);
+    // cy.get('#open-pdf').click();
+})
+
+Cypress.Commands.add('createQR', (type) => {
+    cy.goToPrint(type)
     // cy.wait(500);
     // cy.get('#open-pdf').click();
 })

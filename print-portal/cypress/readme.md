@@ -23,7 +23,7 @@
 - [ ] Check content of info panel V3
 - [ ] Check content print page 'domestic'
 - [ ] Check content print page 'europe'
-- [ ] Check content print page 'both'
+- [x] Check content print page 'both'
 
 - - -
 
