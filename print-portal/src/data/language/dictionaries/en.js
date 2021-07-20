@@ -111,10 +111,6 @@ const en = {
                 'pageHeader': 'Print your certificates',
                 'pageIntro': '<p><b>Your certificates</b><br>You’ve made a test certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read here</a> which information the QR code contains</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
             },
-            'domestic': {
-                'pageHeader': 'Your test certificate',
-                'pageIntro': 'You\'ve made a test certificate,  in the form of a QR code. Read which information the QR code contains. Print the PDF and take it with you.'
-            },
             'european': {
                 'pageHeader': 'Your certificate',
                 'pageIntro': '<h3>Your certificate</h3><p>You’ve made a test certificate in the form of a QR code. You’ve only got an international certificate. A dutch certificate could not be made because the type of test is not accepted, or because the test certificate already expired in the Netherlands.</p><h3>Information in the QR</h3><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p>'
