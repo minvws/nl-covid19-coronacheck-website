@@ -19,6 +19,8 @@ describe('Language', () => {
                 }
 
                 if (!locationInDict[key]) {
+                    // logging empty strings as well
+                    // This is allowed, but interesting to double check
                     console.log(levels.join('/') + '/' + key);
                     expect(locationInDict[key]).not.toBeUndefined()
                 }
