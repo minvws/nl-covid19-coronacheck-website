@@ -8,7 +8,7 @@ context('Side Flow | Negative Test: v2 info', () => {
 
     it('Gives info about the test result', () => {
         cy.get('.info-button').click();
-        cy.modalShouldSay(dictionary.nl.message.info.testResultAbout.head);
+        cy.modalShouldSay(dictionary.nl.components.eventInfo.head);
         // todo check for properties of v2
         cy.modalShouldClose();
     })
