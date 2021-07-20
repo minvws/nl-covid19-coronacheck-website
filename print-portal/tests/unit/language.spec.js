@@ -48,4 +48,16 @@ describe('Language', () => {
             }
         }
     })
+
+    it('Each language should not have extra keys', () => {
+        const dutchDict = dictionary.nl;
+        for (const language of languages) {
+            if (language.locale !== 'nl') {
+                const thisDict = dictionary[language.locale];
+                // now the other way around. Jest will trigger if the dutch
+                // dictionary is missing a key 'thisDict' has
+                checkDictionaryForKeys(thisDict, dutchDict)
+            }
+        }
+    })
 })
