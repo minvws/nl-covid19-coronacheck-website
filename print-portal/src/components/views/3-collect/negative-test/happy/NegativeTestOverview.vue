@@ -5,10 +5,11 @@ import NegativeTest from './NegativeTest';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
+import NegativeTestV2 from './NegativeTestV2';
 
 export default {
     name: 'NegativeTestOverview',
-    components: { Page, PageIntro, NegativeTest, CcButton, CcModestButton },
+    components: { NegativeTestV2, Page, PageIntro, NegativeTest, CcButton, CcModestButton },
     mixins: [overviewMixin],
     data() {
         return {
@@ -38,7 +39,11 @@ export default {
 
             <div class="section-block">
                 <div class="proof-events">
+                    <NegativeTestV2
+                        v-if="latestSignedEvent.event.negativetest.protocolVersion === '2.0'"
+                        :signed-event="latestSignedEvent"/>
                     <NegativeTest
+                        v-else
                         :signed-event="latestSignedEvent"/>
                 </div>
                 <div class="section-block__footer">

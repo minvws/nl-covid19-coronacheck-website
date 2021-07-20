@@ -20,9 +20,9 @@ describe('Date tool', () => {
         expect(dateTool.dateTimeToString(dateString, 'EEEE d LLLL HH:mm', 'en')).toMatch(dateStringExpected)
     })
 
-    it('Date 40 hours later', () => {
+    it('Date 24 hours later', () => {
         const dateString = '2021-04-13 08:05';
-        const dateStringExpected = '15-04-2021 00:05';
-        expect(dateTool.addHoursToDate(dateString, 40, true)).toMatch(dateStringExpected)
+        const dateStringExpected = '14-04-2021 08:05';
+        expect(dateTool.addHoursToDate(dateString, 24, true)).toMatch(dateStringExpected)
     })
 })

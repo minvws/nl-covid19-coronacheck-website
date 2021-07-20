@@ -35,7 +35,8 @@ Information about your test, vaccination and/or recovery is provided by the care
 2. When retrieving information about vaccination or recovery or a negative test carried out by the GGD, you log in using your DigiD to identify yourself. By logging in, the Minister of VWS will receive your BSN and can, based on your BSN, retrieve your first name, last name and date of birth from the Personal Records Database. Using this combined information, the Minister will request your data from parties (like the GGD, the RIVM and your general practitioner). 
 
 If you request your data in CoronaCheck or via coronacheck.nl, you will be shown which information is retrieved and where it is coming from. 
- 
+
+If you only have a physical certificate on paper that you received from your healthcare provider or via the helpdesk at the CIBG, then it is possible to scan your paper certificate via CoronaCheck. You can scan the QR code of your physical certificate (on your EU DCC) using your smartphone camera. This information will then be used to create a digital EU DCC and a digital coronavirus pass. We need your permission to use your smartphone camera. CoronaCheck will ask you for this.
 
 ## 3. Why do we process this data (purpose of processing)
 
@@ -122,7 +123,7 @@ The Minister takes protection of your personal data seriously and has taken appr
 
 ## 12. Changing privacy statement
 
-This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: June 23, 2021.
+This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: July 14th, 2021.
 
 ## Overview of processed personal data 
 
