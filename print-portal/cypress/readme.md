@@ -21,8 +21,7 @@
 - [x] Not yet tested popup
 - [ ] Check content of info panel V2
 - [ ] Check content of info panel V3
-- [ ] Check content print page 'domestic'
-- [x] Check content print page 'europe'
+- [x] Check content print page 'european'
 - [x] Check content print page 'both'
 
 - - -
