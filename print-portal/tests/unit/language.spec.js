@@ -33,12 +33,16 @@ describe('Language', () => {
         }
     }
 
+    const checkDictionaryForKeys = (reference, target) => {
+        loopKeys(reference, target, []);
+    }
+
     it('Each language should have the dutch keys', () => {
         const dutchDict = dictionary.nl;
         for (const language of languages) {
             if (language.locale !== 'nl') {
                 const thisDict = dictionary[language.locale];
-                loopKeys(dutchDict, thisDict, []);
+                checkDictionaryForKeys(dutchDict, thisDict)
             }
         }
     })
