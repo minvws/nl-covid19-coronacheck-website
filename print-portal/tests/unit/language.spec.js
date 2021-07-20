@@ -9,28 +9,42 @@ describe('Language', () => {
         }
     })
 
-    const loopKeys = (obj, dict, levels) => {
+    const getTargetPoint = (reference, levels) => {
+        let targetPoint = reference;
+        for (const level of levels) {
+            targetPoint = targetPoint[level];
+        }
+        return targetPoint
+    }
+
+    const checkForTargetEntry= (targetPoint, key, levels) => {
+        if (!targetPoint[key]) {
+            // logging empty strings as well
+            // This is allowed, but interesting to double check
+            console.log('Missing key at: ' + levels.join('/') + '/' + key);
+            expect(targetPoint[key]).not.toBeUndefined()
+        }
+    }
+
+    const loopKeys = (obj, target, levels) => {
         for (const key in obj) {
             const entry = obj[key];
             if (typeof entry === 'string') {
-                let locationInDict = dict;
-                for (const level of levels) {
-                    locationInDict = locationInDict[level];
-                }
-
-                if (!locationInDict[key]) {
-                    // logging empty strings as well
-                    // This is allowed, but interesting to double check
-                    console.log(levels.join('/') + '/' + key);
-                    expect(locationInDict[key]).not.toBeUndefined()
-                }
+                const targetPoint = getTargetPoint(target, levels)
+                checkForTargetEntry(targetPoint, key, levels);
 
             } else if (Object.prototype.toString.call(entry) === '[object Array]') {
-                // skip for now
+                const targetPoint = getTargetPoint(target, levels)
+                checkForTargetEntry(targetPoint, key, levels);
+                // just checking the length
+                if (entry.length !== targetPoint[key].length) {
+                    console.log('Wrong array length at: ' + levels.join('/') + '/' + key);
+                    expect(entry.length).toBe(targetPoint[key].length)
+                }
             } else {
                 const newLevels = [...levels]
                 newLevels.push(key)
-                loopKeys(entry, dict, newLevels);
+                loopKeys(entry, target, newLevels);
             }
         }
     }
