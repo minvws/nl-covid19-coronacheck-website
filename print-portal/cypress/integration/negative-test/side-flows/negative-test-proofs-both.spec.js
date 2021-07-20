@@ -8,6 +8,6 @@ context('Happy | Negative Test: Proofs both', () => {
 
     it('Proofs: both', () => {
         cy.goToPrint('negative-test');
-        cy.pageShouldSay(dictionary.nl.views.printNegativeTest.both.pageHeader);
+        cy.pageHeaderShouldContain(dictionary.nl.views.printNegativeTest.both.pageHeader);
     })
 })

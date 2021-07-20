@@ -8,6 +8,6 @@ context('Side Flow | Recovery: Proofs both', () => {
 
     it('Proofs: both', () => {
         cy.goToPrint('recovery');
-        cy.pageShouldSay(dictionary.nl.views.printRecovery.both.pageHeader);
+        cy.pageHeaderShouldContain(dictionary.nl.views.printRecovery.both.pageHeader);
     })
 })

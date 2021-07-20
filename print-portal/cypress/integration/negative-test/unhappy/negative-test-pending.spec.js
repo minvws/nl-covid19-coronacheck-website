@@ -7,6 +7,6 @@ context('Unhappy | Negative Test: Pending', () => {
     })
 
     it('Should lead to the pending page', () => {
-        cy.pageShouldSay(dictionary.nl.views.testResultPending.pageHeader);
+        cy.pageHeaderShouldContain(dictionary.nl.views.testResultPending.pageHeader);
     })
 })

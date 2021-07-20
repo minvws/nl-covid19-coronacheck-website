@@ -7,6 +7,6 @@ context('Unhappy: Recovery: None', () => {
     })
 
     it('Should lead to the none recovery page', () => {
-        cy.pageShouldSay(dictionary.nl.views.recoveryNone.pageHeader);
+        cy.pageHeaderShouldContain(dictionary.nl.views.recoveryNone.pageHeader);
     })
 })

@@ -86,8 +86,14 @@ Cypress.Commands.add('modalShouldClose', (byRefute) => {
     cy.get('.modal').should('not.exist')
 })
 
-Cypress.Commands.add('pageShouldSay', (string) => {
+Cypress.Commands.add('pageHeaderShouldContain', (string) => {
     cy.wait(500);
     cy.get('main h1').should('exist')
     cy.get('main h1').contains(string)
+})
+
+Cypress.Commands.add('pageIntroShouldContain', (string) => {
+    cy.wait(500);
+    cy.get('#page-intro').should('exist')
+    cy.get('#page-intro').contains(string)
 })

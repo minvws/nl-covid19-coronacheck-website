@@ -7,6 +7,6 @@ context('Unhappy: Negative Test: None', () => {
     })
 
     it('Should lead to the none negative test page', () => {
-        cy.pageShouldSay(dictionary.nl.views.testResultNone.pageHeader);
+        cy.pageHeaderShouldContain(dictionary.nl.views.testResultNone.pageHeader);
     })
 })

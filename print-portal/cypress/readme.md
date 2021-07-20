@@ -38,7 +38,7 @@
 - [ ] Check content of info panel Recovery
 - [ ] Check content of info panel Positive Test
 - [x] Check content print page 'both'
-- [ ] Recovery Valid In Future
+- [x] Recovery Valid In Future
 
 - - -
 

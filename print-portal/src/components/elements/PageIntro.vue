@@ -21,6 +21,7 @@ export default {
         </h1>
         <div
             v-if="intro"
+            id="page-intro"
             v-html="intro"/>
     </div>
 </template>
