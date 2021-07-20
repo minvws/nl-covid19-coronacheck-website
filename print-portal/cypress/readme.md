@@ -37,7 +37,7 @@
 ### Side-flows
 - [ ] Check content of info panel Recovery
 - [ ] Check content of info panel Positive Test
-- [ ] Check content print page 'both'
+- [x] Check content print page 'both'
 - [ ] Recovery Valid In Future
 
 - - -

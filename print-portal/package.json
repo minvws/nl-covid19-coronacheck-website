@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "e2e:open": "cypress run --no-exit --browser chrome",
     "e2e": "cypress run --browser chrome",
-    "e2e:specific": "cypress run --no-exit --browser chrome --spec  cypress/integration/negative-test/side-flows/negative-test-proofs-european.spec.js",
+    "e2e:specific": "cypress run --no-exit --browser chrome --spec  cypress/integration/recovery/side-flows/recovery-proofs-both.spec.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
