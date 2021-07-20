@@ -191,7 +191,6 @@ const en = {
                 'finalDosis': 'Is this the last dose of your vaccination?',
                 'vaccinationDate': 'Vaccination date',
                 'vaccinationCountry': 'Country of vaccination',
-                'identificationCode': 'Unique certificate identifier',
                 'finalDosisValue': {
                     'yes': 'Yes',
                     'recovery': 'Yes (I\'ve had coronavirus earlier)',
