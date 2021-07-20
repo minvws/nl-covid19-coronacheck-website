@@ -86,9 +86,10 @@ export default {
                         return error.response && error.response.status && (error.response.status >= 500 && error.response.status < 600);
                     }
 
-                    const isAnyErrorWithStatusCode = (error) => {
-                        return error.message.toLowerCase() === 'network error';
+                    const is5xxOrNetwork = (error) => {
+                        return is5xx(error) || error.message.toLowerCase() === 'network error';
                     }
+
                     const dateIsCorrupt = this.dataIsCorrupt(result);
                     const eventIsIncomplete = this.eventIsIncomplete(result);
                     if (dateIsCorrupt || eventIsIncomplete) {
@@ -121,7 +122,7 @@ export default {
                         });
                         this.createEvents(result);
                         this.checkResult();
-                    } else if (this.hasNoEventsAndError(result, isAnyErrorWithStatusCode)) {
+                    } else if (this.hasNoEventsAndError(result, is5xxOrNetwork)) {
                         this.$store.commit('modal/set', {
                             messageHead: this.$t('message.error.someServerErrorNoResult.head'),
                             messageBody: this.$t('message.error.someServerErrorNoResult.body'),
