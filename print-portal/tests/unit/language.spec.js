@@ -17,8 +17,12 @@ describe('Language', () => {
                 for (const level of levels) {
                     locationInDict = locationInDict[level];
                 }
-                console.log(levels.join('/') + '/' + key);
-                expect(locationInDict[key]).not.toBeUndefined()
+
+                if (!locationInDict[key]) {
+                    console.log(levels.join('/') + '/' + key);
+                    expect(locationInDict[key]).not.toBeUndefined()
+                }
+
             } else if (Object.prototype.toString.call(entry) === '[object Array]') {
                 // skip for now
             } else {
