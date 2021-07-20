@@ -1,11 +1,11 @@
 <script>
-import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 import SignedEvent from '@/classes/events/SignedEvent';
-import PositiveTestInfo from './PositiveTestInfo';
+import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
+import NegativeTestV2Info from './NegativeTestV2Info';
 
 export default {
-    name: 'PositiveTest',
-    components: { PositiveTestInfo },
+    name: 'NegativeTestV2',
+    components: { NegativeTestV2Info },
     mixins: [proofEventMixin],
     props: {
         signedEvent: {
@@ -15,7 +15,7 @@ export default {
     },
     computed: {
         proofEvent() {
-            return this.signedEvent.event.positivetest;
+            return this.signedEvent.event.negativetest;
         }
     }
 }
@@ -24,21 +24,16 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status proof-event__line">
-            <strong>{{$t('components.positiveTest.title')}}</strong>
+            <strong>{{$t('components.test.resultNegative')}}</strong>
         </div>
-
         <dl>
             <div class="proof-event__line">
                 <dt>{{$t('components.eventInfo.dateOfTest')}}:</dt>
                 <dd>{{dateOfTest}}</dd>
             </div>
             <div class="proof-event__line">
-                <dt>{{$t('components.eventInfo.name')}}:</dt>
-                <dd>{{holder.fullName}}</dd>
-            </div>
-            <div class="proof-event__line">
-                <dt>{{$t('components.eventInfo.dateOfBirth')}}:</dt>
-                <dd>{{holder.birthDateString}}</dd>
+                <dt>{{$t('components.test.yourCredentials')}}:</dt>
+                <dd>{{holder.discreteInfoString}}</dd>
             </div>
         </dl>
 
@@ -49,11 +44,9 @@ export default {
             <img src="assets/img/icons/info.svg" :alt="$t('components.eventInfo.head')" />
         </button>
 
-        <PositiveTestInfo
+        <NegativeTestV2Info
             v-if="showInfo"
             @close="closeInfo"
             :signed-event="signedEvent"/>
     </div>
 </template>
-
-<style lang="scss"></style>

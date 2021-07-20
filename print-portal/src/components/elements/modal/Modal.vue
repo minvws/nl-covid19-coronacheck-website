@@ -1,15 +1,11 @@
 <script>
-import CcModestButton from './CcModestButton';
+import CcModestButton from '@/components/elements/CcModestButton';
+import modalMixin from './modal-mixin'
 
 export default {
     name: 'Modal',
     components: { CcModestButton },
-    props: {},
-    data() {
-        return {
-            elementThatHadFocusBeforeModal: null
-        }
-    },
+    mixins: [modalMixin],
     computed: {
         messageHead() {
             return this.$store.state.modal.messageHead;
@@ -28,9 +24,6 @@ export default {
         },
         confirmAction() {
             return this.$store.state.modal.confirmAction;
-        },
-        showModal() {
-            return this.$store.state.modal.visible;
         },
         showCloseButton() {
             return this.$store.state.modal.closeButton;
@@ -57,9 +50,6 @@ export default {
         },
         refute() {
             this.close();
-        },
-        setFocus() {
-            this.$refs.focusStart.focus();
         }
     },
     watch: {
@@ -69,34 +59,13 @@ export default {
                     this.close();
                 }, 5000)
             }
-        },
-        showModal() {
-            if (this.showModal) {
-                // wait untill the v-if is active
-                setTimeout(() => {
-                    this.setFocus();
-                })
-            }
         }
-    },
-    mounted() {
-        window.addEventListener('keydown', e => {
-            if (e.key === 'Escape') {
-                this.close();
-            }
-        });
-
-        this.$refs.tabEnd.addEventListener('focus', (event) => {
-            this.setFocus();
-        });
     }
 }
 </script>
 
 <template>
-    <div
-        :class="{'popup--active': showModal}"
-        class="cover">
+    <div class="cover">
         <div
             @click="close()"
             class="cover__clickable-area"></div>
@@ -104,7 +73,6 @@ export default {
             <div
                 class="modal"
                 role="alertdialog"
-                :aria-modal="showModal"
                 aria-labelledby="modal__head"
                 aria-describedby="modal__body">
                 <h1
@@ -117,9 +85,7 @@ export default {
                     v-html="messageBody"
                     id="modal__body">
                 </div>
-                <div
-                    v-if="showModal"
-                    id="modal__footer">
+                <div id="modal__footer">
                     <CcModestButton
                         v-if="showConfirm"
                         @select="refute()"
@@ -159,9 +125,9 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    display: none;
-    pointer-events: none;
+    pointer-events: all;
     z-index: 1;
+    animation: fadeIn 0.3s cubic-bezier(.4,0,.2,1);
 
     .cover__clickable-area {
         position: absolute;
@@ -170,12 +136,6 @@ export default {
         width: 100%;
         height: 100%;
         z-index: 1;
-    }
-
-    &.popup--active {
-        display: block;
-        animation: fadeIn 0.3s cubic-bezier(.4,0,.2,1);
-        pointer-events: all;
     }
 }
 
