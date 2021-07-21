@@ -1,7 +1,3 @@
-import { negativeTestV2, negativeTestV3 } from '../templates/nl/messages/about/negative-test';
-import vaccination from '../templates/nl/messages/about/vaccination';
-import recovery from '../templates/nl/messages/about/recovery';
-import positiveTest from '../templates/nl/messages/about/positive-test';
 import footer from '../templates/nl/footer';
 
 const nl = {
@@ -42,7 +38,7 @@ const nl = {
             'pageHeader': 'Vaccinatie ophalen',
             'pageIntro': '<p>Ben je al gevaccineerd? Log in met DigiD. De gegevens van je vaccinatie worden dan automatisch opgehaald.</p><p>Nog geen prik gehad? Laat je dan eerst vaccineren.</p>'
         },
-        'VaccinationOverview': {
+        'vaccinationOverview': {
             'pageHeader': 'Jouw opgehaalde vaccinaties',
             'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>',
             'createTestProofButton': 'Maak QR-code'
@@ -159,25 +155,62 @@ const nl = {
             'header': 'Liever je bewijs op je mobiel?',
             'intro': 'Download dan de app. Ook van een bewijs in de app kun je een print maken.'
         },
-        'NegativeTest': {
+        'eventInfo': {
+            'head': 'Wat is er opgehaald?',
+            'name': 'Naam',
+            'dateOfBirth': 'Geboortedatum',
+            'dateOfTest': 'Testdatum',
+            'testResult': 'Testuitslag',
+            'identificationCode': 'Uniek certificaatnummer',
+            'validFrom': 'Geldig vanaf',
+            'validUntil': 'Geldig tot'
+        },
+        'test': {
             'resultNegative': 'Negatieve testuitslag',
-            'yourCredentials': 'Jouw gegevens'
+            'yourCredentials': 'Jouw gegevens',
+            'info': {
+                'detailsRetrieved': 'De volgende gegevens zijn opgehaald bij de testlocatie',
+                'testType': 'Type test',
+                'testName': 'Testnaam',
+                'testResultNegative': 'negatief (geen corona)',
+                'testResultPositive': 'positief (corona)',
+                'testLocation': 'Testlocatie',
+                'testManufacturer': 'Testproducent',
+                'testCountry': 'Getest in'
+            }
         },
         'vaccination': {
             'vaccination': 'Vaccinatie',
-            'name': 'Naam',
-            'dateOfBirth': 'Geboortedatum'
+            'info': {
+                'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald',
+                'pathogen': 'Ziekteverwekker',
+                'vaccine': 'Vaccin',
+                'vaccineType': 'Vaccin type',
+                'manufacturer': 'Producent van het vaccin',
+                'doses': 'Doses',
+                'finalDosis': 'Is dit de laatste dosis van je vaccinatie?',
+                'vaccinationDate': 'Prikdatum',
+                'vaccinationCountry': 'Gevaccineerd in',
+                'finalDosisValue': {
+                    'yes': 'Ja',
+                    'recovery': 'Ja (eerder corona gehad)',
+                    'prior': 'Ja (ergens anders gevaccineerd)',
+                    'no': 'Nee',
+                    'unknown': 'Niet bekend'
+                }
+            }
         },
         'recovery': {
-            'title': 'Herstelbewijs'
+            'title': 'Herstelbewijs',
+            'info': {
+                'detailsRetrieved': 'De volgende gegevens zijn opgehaald bij de testlocatie'
+            }
         },
         'positiveTest': {
-            'title': 'Positieve testuitslag'
-        },
-        'proofEvent': {
-            'name': 'Naam',
-            'dateOfTest': 'Testdatum',
-            'dateOfBirth': 'Geboortedatum'
+            'title': 'Positieve testuitslag',
+            'info': {
+                'detailsRetrieved': 'De volgende gegevens zijn opgehaald bij de testlocatie'
+            }
         },
         'digid': {
             'loginDigid': 'Login met DigiD',
@@ -191,23 +224,6 @@ const nl = {
     },
     'message': {
         'info': {
-            'testResultAbout': {
-                'head': 'Wat is er opgehaald?',
-                'bodyV2': negativeTestV2,
-                'bodyV3': negativeTestV3
-            },
-            'vaccinationAbout': {
-                'head': 'Wat is er opgehaald?',
-                'body': vaccination
-            },
-            'recoveryAbout': {
-                'head': 'Wat is er opgehaald?',
-                'body': recovery
-            },
-            'positiveTestResultAbout': {
-                'head': 'Wat is er opgehaald?',
-                'body': positiveTest
-            },
             'somethingWrong': {
                 'vaccination': {
                     'head': 'Er klopt iets niet',
@@ -228,7 +244,7 @@ const nl = {
             },
             'didNotGetTestedYet': {
                 'head': 'Ik ben nog niet getest',
-                'body': '<p>Je moet je eerst laten testen voordat je een QR-code kan maken. Als uit de test blijkt dat je geen corona hebt kan je jouw QR-code maken.</p><p>Een testbewijs is geldig tot 40 uur na het moment van testen. Plan je test dus op tijd. En zorg dat jouw QR-code binnen 40 uur gescand is bij de ingang.</p><p><a href="https://coronacheck.nl/nl/testafspraak-in-app" class="btn" target="_blank">Maak een afspraak</a></p>'
+                'body': '<p>Je moet je eerst laten testen voordat je een QR-code kan maken. Als uit de test blijkt dat je geen corona hebt kan je jouw QR-code maken.</p><p>Een testbewijs is geldig tot 24 uur na het moment van testen. Plan je test dus op tijd. En zorg dat jouw QR-code binnen 24 uur gescand is bij de ingang.</p><p><a href="https://coronacheck.nl/nl/testafspraak-in-app" class="btn" target="_blank">Maak een afspraak</a></p>'
             },
             'areYouSureToCancel': {
                 'head': 'Weet je zeker dat je wilt stoppen?',

@@ -69,6 +69,7 @@ export default {
                         } else {
                             this.$router.push({ name: this.pages.noResultFromSigner });
                         }
+                        this.setSignedAt(response);
                     }
                 }).catch(error => {
                     handleRejectionSigner(error);
@@ -77,6 +78,11 @@ export default {
                 this.$router.push({ name: this.pages.print });
             }
             this.$store.commit('snackbar/close');
+        },
+        setSignedAt(response) {
+            if (response && response.headers && response.headers.date) {
+                this.$store.commit('setSignedAt', new Date(response.headers.date));
+            }
         },
         openModalSomethingWrong() {
             const type = this.filter.split(',')[0]

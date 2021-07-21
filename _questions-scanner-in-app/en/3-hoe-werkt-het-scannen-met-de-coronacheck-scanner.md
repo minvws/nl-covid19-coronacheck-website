@@ -18,7 +18,7 @@ Green screen? The visitor has a valid certificate. Check if the identifying data
 All good? Then the visitor is allowed access. They may need an additional entrance ticket. 
 
 ## 4. Red screen
-A red screen does **not** mean the visitor has tested positive for corona. It simply means the QR code is not valid. This means there is no proof of a vaccination, a recovery or recent negative test result, or the test certificate has expired (older than 40 hours). In this case:
+A red screen does **not** mean the visitor has tested positive for corona. It simply means the QR code is not valid. This means there is no proof of a vaccination, a recovery or recent negative test result, or the test certificate has expired (older than 24 hours). In this case:
 
 - Check if the visitor has used a screenshot instead of the QR code directly from the app. Scanning a screenshot will lead to a red screen.
 - Check whether the visitor shows a Dutch QR code. An international QR code results in a red screen.
