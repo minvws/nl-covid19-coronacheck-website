@@ -47,7 +47,7 @@ Are you unable to create a test certificate and were you tested longer than 24 h
 
 ## Recovery certificate 
 
-ou may use a positive test result to create a certificate of recovery with CoronaCheck. A number of conditions apply:
+You may use a positive test result to create a certificate of recovery with CoronaCheck. A number of conditions apply:
 
 - The positive test has been carried out by the GGD;
 - The certificate of recovery is valid from 11 days after the positive test result, but the certificate of recovery can be created earlier;
