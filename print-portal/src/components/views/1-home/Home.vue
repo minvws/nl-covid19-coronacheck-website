@@ -82,6 +82,16 @@ export default {
 
     .UserConsent {
         margin: $grid-x6 0 $length-s 0;
+
+        a,
+        a:visited {
+            color: $color-cc-link-darker;
+
+            &:hover,
+            &:focus {
+                color: $color-cc-link-darker--interaction;
+            }
+        }
     }
 
     .ErrorLabel {
