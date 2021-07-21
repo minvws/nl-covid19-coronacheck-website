@@ -19,6 +19,9 @@ export default {
             }
         });
 
+        this.$refs.tabStart.addEventListener('focus', (event) => {
+            this.setFocus();
+        });
         this.$refs.tabEnd.addEventListener('focus', (event) => {
             this.setFocus();
         });
