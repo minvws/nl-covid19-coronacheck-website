@@ -2,7 +2,6 @@
 layout: in-app-content
 lang: en
 title: Test locations affiliated with CoronaCheck
-redirect_from: /testafspraak-in-app
 ---
 What is the best place to get tested for coronavirus? This depends on what you are planning to use the test certificate for.
 
