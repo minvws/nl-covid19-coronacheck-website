@@ -47,7 +47,7 @@ Are you unable to create a test certificate and were you tested longer than 24 h
 
 ## Recovery certificate 
 
-ou may use a positive test result to create a certificate of recovery with CoronaCheck. A number of conditions apply:
+You may use a positive test result to create a certificate of recovery with CoronaCheck. A number of conditions apply:
 
 - The positive test has been carried out by the GGD;
 - The certificate of recovery is valid from 11 days after the positive test result, but the certificate of recovery can be created earlier;
@@ -72,7 +72,7 @@ DId you test positive longer than 180 days ago and did you tell your vaccinator 
 
 To retrieve your vaccination details in CoronaCheck, you need a valid DigiD. <a href="https://www.digid.nl/en/apply-or-activate-digid" rel="noopener noreferrer" target="_blank">You can request it via this link</a>.  A request for a new DigiD takes a couple of working days to process.
 
-You can log in with DigiD via the app (<a href="https://www.digid.nl/en/login-methods/digid-app" rel="noopener noreferrer" target="_blank">Download the DigiD app here</a> or via the DigiD website, using SMS verification. <a href="https://www.digid.nl/en/login-methods/sms-verification" rel="noopener noreferrer" target="_blank">Read more about setting up SMS verification here</a>.
+You can log in with DigiD via the app (<a href="https://www.digid.nl/en/login-methods/digid-app" rel="noopener noreferrer" target="_blank">Download the DigiD app here</a>) or via the DigiD website, using SMS verification. <a href="https://www.digid.nl/en/login-methods/sms-verification" rel="noopener noreferrer" target="_blank">Read more about setting up SMS verification here</a>.
 
 Do you need more information about DigiD? Contact the Helpdesk on  {{ site.data.translations.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
 
