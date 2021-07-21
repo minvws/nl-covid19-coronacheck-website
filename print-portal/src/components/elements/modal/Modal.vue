@@ -60,15 +60,6 @@ export default {
                     this.close();
                 }, 5000)
             }
-        },
-        showModal() {
-            if (this.showModal) {
-                // wait untill the v-if is active
-                setTimeout(() => {
-                    this.elementThatHadFocusBeforeModal = document.activeElement;
-                    this.setFocus();
-                })
-            }
         }
     }
 }

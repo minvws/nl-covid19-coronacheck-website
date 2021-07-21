@@ -12,7 +12,10 @@ export default {
         }
     },
     mounted() {
-        this.setFocus();
+        this.$nextTick(() => {
+            this.elementThatHadFocusBeforeModal = document.activeElement;
+            this.setFocus();
+        })
         window.addEventListener('keydown', e => {
             if (e.key === 'Escape') {
                 this.close();
