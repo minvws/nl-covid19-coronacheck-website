@@ -17,7 +17,7 @@ De controleur kan niet zien welk soort bewijs iemand heeft. Om je identiteit te 
 - de eerste letter van je voornaam, de eerste letter van je achternaam,
 - je geboortedag en geboortemaand.
 
-Vanwege privacy ziet de controleur niet altijd al deze gegevens. Het kan dus zijn een van uw initialen is weggelaten en is vervangen voor een “-” (streepje). Dit is correct. 
+Vanwege privacy ziet de controleur niet altijd al deze gegevens. Het kan dus zijn dat een van uw initialen is weggelaten en is vervangen door een "-" (streepje). Dit is correct. 
 
 ### De internationale QR-code
 Als je vanaf 1 juli op reis gaat met de CoronaCheck, worden er bij controles bij de ingang van locaties of bij grenscontroles meer gegevens zichtbaar. Dit is afgesproken binnen Europa (Digitaal Corona Certificaat). 
