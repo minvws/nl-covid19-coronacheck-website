@@ -22,7 +22,8 @@ const state = {
     testResultStatus: 'idle',
     signedAt: null,
     // we keep this registration for the focus of screenreaders.
-    visitedHomePage: false
+    visitedHomePage: false,
+    slotModalActive: false
 };
 
 const getters = {
@@ -76,6 +77,9 @@ const mutations = {
     },
     setVisitedHomePage(state) {
         state.visitedHomePage = true;
+    },
+    setSlotModalActivity(state, slotModalActivity) {
+        state.slotModalActive = slotModalActivity;
     },
     resetProvideCode(state) {
         // clear all except testcode
