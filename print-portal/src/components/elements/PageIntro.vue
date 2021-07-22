@@ -13,7 +13,13 @@ export default {
     },
     mounted() {
         this.$nextTick(() => {
-            this.$refs.initialTabStart.focus();
+            if (this.$store.state.visitedHomePage) {
+                this.$refs.initialTabStart.focus();
+            } else {
+                // to this every time, not only on home, beacuse you could enter from a redirect
+                // we assume you have been at home before then
+                this.$store.commit('setVisitedHomePage')
+            }
         })
     }
 }
