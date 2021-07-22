@@ -31,32 +31,94 @@ export default {
                 <p>
                     {{$t('components.test.info.detailsRetrieved')}}:
                 </p>
-                <p>
-                    {{$t('components.eventInfo.name')}}:
-                    <strong>{{holder.fullName}}</strong><br>
-                    {{$t('components.eventInfo.dateOfBirth')}}:
-                    <strong>{{birthDateString}}</strong>
-                </p>
-                <p>
-                    {{$t('components.test.info.testType')}}:
-                    <strong>{{testType}}</strong><br>
-                    {{$t('components.test.info.testName')}}:
-                    <strong>{{testName}}</strong><br>
-                    {{$t('components.eventInfo.dateOfTest')}}:
-                    <strong>{{sampleDate}}</strong><br>
-                    {{$t('components.eventInfo.testResult')}}:
-                    <strong>{{$t('components.test.info.testResultNegative')}}</strong><br>
-                    {{$t('components.test.info.testManufacturer')}}:
-                    <strong>{{testManufacturer}}</strong><br>
-                    {{$t('components.test.info.testLocation')}}:
-                    <strong>{{testLocation}}</strong><br>
-                    {{$t('components.test.info.testCountry')}}:
-                    <strong>{{testCountry}}</strong>
-                </p>
-                <p>
-                    {{$t('components.eventInfo.identificationCode')}}:<br>
-                    <strong>{{identificationCode}}</strong>
-                </p>
+                <dl>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.name')}}:
+                            </dt>
+                            <dd>
+                                {{holder.fullName}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.dateOfBirth')}}:
+                            </dt>
+                            <dd>
+                                {{birthDateString}}
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.test.info.testType')}}:
+                            </dt>
+                            <dd>
+                                {{testType}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.test.info.testType')}}:
+                            </dt>
+                            <dd>
+                                {{testName}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.dateOfTest')}}:
+                            </dt>
+                            <dd>
+                                {{sampleDate}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.testResult')}}:
+                            </dt>
+                            <dd>
+                                {{$t('components.test.info.testResultNegative')}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.test.info.testManufacturer')}}:
+                            </dt>
+                            <dd>
+                                {{testManufacturer}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.test.info.testLocation')}}:
+                            </dt>
+                            <dd>
+                                {{testLocation}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.test.info.testCountry')}}:
+                            </dt>
+                            <dd>
+                                {{testCountry}}
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.identificationCode')}}:<br>
+                            </dt>
+                            <dd>
+                                {{identificationCode}}
+                            </dd>
+                        </div>
+                    </div>
+                </dl>
             </template>
         </SlotModal>
     </portal>
