@@ -79,12 +79,17 @@ export default {
             signedEventsInterface.collect(token, this.filter, this.eventProviders).then(result => {
                 this.isLoading = false;
                 if (result) {
-                    const is429 = (statusCode) => {
-                        return statusCode === 429
+                    const is429 = (error) => {
+                        return error.response && error.response.status && error.response.status === 429;
                     }
-                    const is5xx = (statusCode) => {
-                        return statusCode >= 500 && statusCode < 600;
+                    const is5xx = (error) => {
+                        return error.response && error.response.status && (error.response.status >= 500 && error.response.status < 600);
                     }
+
+                    const is5xxOrNetwork = (error) => {
+                        return is5xx(error) || error.message.toLowerCase() === 'network error';
+                    }
+
                     const dateIsCorrupt = this.dataIsCorrupt(result);
                     const eventIsIncomplete = this.eventIsIncomplete(result);
                     if (dateIsCorrupt || eventIsIncomplete) {
@@ -117,7 +122,7 @@ export default {
                         });
                         this.createEvents(result);
                         this.checkResult();
-                    } else if (this.hasNoEventsAndError(result, is5xx)) {
+                    } else if (this.hasNoEventsAndError(result, is5xxOrNetwork)) {
                         this.$store.commit('modal/set', {
                             messageHead: this.$t('message.error.someServerErrorNoResult.head'),
                             messageBody: this.$t('message.error.someServerErrorNoResult.body'),
@@ -195,7 +200,7 @@ export default {
         hasError(result, errorChecker) {
             let hasError = false
             for (const error of result.errors) {
-                if (error.response && errorChecker(error.response.status)) {
+                if (errorChecker(error)) {
                     hasError = true;
                 }
             }
