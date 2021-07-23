@@ -49,7 +49,7 @@ const en = {
         },
         'notPossibleVaccinations': {
             'pageHeader': 'We can’t make a certificate',
-            'pageIntro': '<p>At the moment, we cannot provide proof of your vaccination. This can have different causes. <a href="https://www.coronacheck.nl/en/guidepost" target="_blank"> Learn more about possible causes</a>.</p>'
+            'pageIntro': '<p>At the moment, we cannot provide proof of your vaccination. This can have different causes. <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">Learn more about possible causes</a>.</p>'
         },
         'vaccinationsIncomplete': {
             'pageHeader': 'We can’t make a certificate',
