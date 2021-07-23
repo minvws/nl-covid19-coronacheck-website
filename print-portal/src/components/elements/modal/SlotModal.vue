@@ -8,7 +8,8 @@ export default {
     mixins: [modalMixin],
     methods: {
         close() {
-            this.$emit('close')
+            this.$emit('close');
+            this.elementThatHadFocusBeforeModal.focus();
         }
     }
 }
@@ -16,6 +17,9 @@ export default {
 
 <template>
     <div class="cover">
+        <div
+            ref="tabStart"
+            tabindex="0"></div>
         <div
             @click="close()"
             class="cover__clickable-area"></div>

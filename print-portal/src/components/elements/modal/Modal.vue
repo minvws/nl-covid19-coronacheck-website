@@ -38,6 +38,7 @@ export default {
     methods: {
         close() {
             this.$store.commit('modal/close');
+            this.elementThatHadFocusBeforeModal.focus();
         },
         confirm() {
             // check if it is a function
@@ -66,6 +67,9 @@ export default {
 
 <template>
     <div class="cover">
+        <div
+            ref="tabStart"
+            tabindex="0"></div>
         <div
             @click="close()"
             class="cover__clickable-area"></div>

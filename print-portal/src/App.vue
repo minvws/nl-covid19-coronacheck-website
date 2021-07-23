@@ -17,6 +17,9 @@ export default {
         },
         displayModal() {
             return this.$store.state.modal.visible;
+        },
+        modalIsActive() {
+            return this.displayModal || this.$store.state.slotModalActive;
         }
     },
     methods: {
@@ -104,9 +107,14 @@ export default {
     <div
         v-if="dataReady"
         id="app">
-        <Identity/>
-        <router-view/>
-        <Snackbar v-if="displaySnackbar"/>
+        <div
+            :aria-hidden="modalIsActive ? 'true' : 'false'"
+            class="content">
+            <Identity/>
+            <router-view/>
+            <Snackbar v-if="displaySnackbar"/>
+        </div>
+
         <Modal v-if="displayModal"/>
         <portal-target name="root"/>
     </div>

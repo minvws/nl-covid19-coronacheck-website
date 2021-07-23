@@ -48,24 +48,62 @@ export default {
                 <p>
                     {{$t('components.test.info.detailsRetrieved')}}:
                 </p>
-                <p>
-                    {{$t('components.test.yourCredentials')}}:
-                    <strong>{{holder.discreteInfoString}}</strong><br>
-                </p>
-                <p>
-                    {{$t('components.test.info.testType')}}:
-                    <strong>{{testTypeNL}}</strong><br>
-                    {{$t('components.eventInfo.dateOfTest')}}:
-                    <strong>{{sampleDate}}</strong><br>
-                    {{$t('components.eventInfo.testResult')}}:
-                    <strong>{{$t('components.test.info.testResultNegative')}}:</strong><br>
-                    {{$t('components.test.info.testLocation')}}:
-                    <strong>{{testLocation}}</strong>
-                </p>
-                <p>
-                    {{$t('components.eventInfo.identificationCode')}}:<br>
-                    <strong>{{identificationCode}}</strong>
-                </p>
+                <dl>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.test.yourCredentials')}}:
+                            </dt>
+                            <dd>
+                                {{holder.discreteInfoString}}
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.test.info.testType')}}:
+                            </dt>
+                            <dd>
+                                {{testTypeNL}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.dateOfTest')}}:
+                            </dt>
+                            <dd>
+                                {{sampleDate}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.testResult')}}:
+                            </dt>
+                            <dd>
+                                {{$t('components.test.info.testResultNegative')}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.test.info.testLocation')}}:
+                            </dt>
+                            <dd>
+                                {{testLocation}}
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.identificationCode')}}:<br>
+                            </dt>
+                            <dd>
+                                {{identificationCode}}
+                            </dd>
+                        </div>
+                    </div>
+                </dl>
             </template>
         </SlotModal>
     </portal>

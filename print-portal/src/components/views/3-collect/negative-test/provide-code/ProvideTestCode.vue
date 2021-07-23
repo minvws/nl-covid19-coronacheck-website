@@ -15,6 +15,11 @@ export default {
             required: true
         }
     },
+    data() {
+        return {
+            exampleCode: 'BRB-YYYYYYYYY1-Z2'
+        }
+    },
     computed: {
         hasGivenConsent() {
             return this.$store.state.userConsent || process.env.NODE_ENV === 'development';
@@ -49,12 +54,15 @@ export default {
             <label for="input-test-code">
                 {{$t('views.provideCode.uniqueCode')}}
             </label>
+            <div>
+                {{$t('forInstanceAbbr')}} {{exampleCode}}
+            </div>
             <input
                 v-model="testCode"
                 v-on:keyup.enter="submit"
                 id="input-test-code"
                 type="text"
-                :placeholder="$t('forInstanceAbbr') + ' BRB-YYYYYYYYY1-Z2'"/>
+                :placeholder="$t('views.provideCode.uniqueCode')"/>
             <ErrorLabel
                 v-if="testCodeStatus.error.length > 0"
                 :label="testCodeStatus.error"/>

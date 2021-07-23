@@ -20,7 +20,10 @@ const state = {
     verificationNeeded: false,
     verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
     testResultStatus: 'idle',
-    signedAt: null
+    signedAt: null,
+    // we keep this registration for the focus of screenreaders.
+    visitedHomePage: false,
+    slotModalActive: false
 };
 
 const getters = {
@@ -71,6 +74,12 @@ const mutations = {
     },
     setSignedAt(state, time) {
         state.signedAt = time;
+    },
+    setVisitedHomePage(state) {
+        state.visitedHomePage = true;
+    },
+    setSlotModalActivity(state, slotModalActivity) {
+        state.slotModalActive = slotModalActivity;
     },
     resetProvideCode(state) {
         // clear all except testcode
