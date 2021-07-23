@@ -12,7 +12,7 @@ const en = {
             'pageHeader': 'Get access with a certificate on paper',
             'pageIntro': '<h2 class="screen-reader-text">Here\'s how it works</h2><p>A certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><div class="home__section"><h3>Only access with a certificate</h3><p>Your and other people’s health matters. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass. You can make a coronavirus pass if you have been vaccinated, if a test result confirms you don’t have corona or if you\'ve had coronavirus and are recovered.</p></div><div class="home__section"><h3>QR code = your proof</h3><p>You can make a QR code of your test result or vaccination. That is your certificate. This QR code will be checked at the entrance of places or activities, or at the border.</p></div><div class="home__section"><h3>QR codes for the Netherlands and international</h3><p>You’ll get one QR code for the Netherlands and one for other countries. Travelling outside of the Netherlands? Then use your international QR code.</p></div>',
             'userConsentHeader': 'Start making a certificate on paper',
-            'userConsentText': 'I have read the <a href="https://coronacheck.nl/en/privacy" target="_blank">privacy statement</a> and understand how CoronaCheck processes my data.',
+            'userConsentText': 'I have read the <a href="https://coronacheck.nl/en/privacy" target="_blank" rel="noopener noreferrer">privacy statement</a> and understand how CoronaCheck processes my data.',
             'noConsentError': 'Give consent to the privacy statement first'
         },
         'choiceProof': {
@@ -36,7 +36,7 @@ const en = {
         },
         'collectVaccination': {
             'pageHeader': 'Collect vaccination',
-            'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p><p>Questions about vaccinations? Read more on the <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank">website of the Dutch Government</a></p>'
+            'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p><p>Questions about vaccinations? Read more on the <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank" rel="noopener noreferrer">website of the Dutch Government</a></p>'
         },
         'vaccinationOverview': {
             'pageHeader': 'Your retrieved vaccinations',
@@ -45,11 +45,11 @@ const en = {
         },
         'noVaccinations': {
             'pageHeader': 'No vaccination(s) available',
-            'pageIntro': '<p>Details about your vaccination are not available.</p><p>Have you been vaccinated recently? It might take a little while before your details are available.</p><p>Your general practitioner might not be affiliated with the GGD. You can find more information about what to do on <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">the Guidepost</a>.</p>'
+            'pageIntro': '<p>Details about your vaccination are not available.</p><p>Have you been vaccinated recently? It might take a little while before your details are available.</p><p>Your general practitioner might not be affiliated with the GGD. You can find more information about what to do on <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">the Guidepost</a>.</p>'
         },
         'notPossibleVaccinations': {
             'pageHeader': 'We can’t make a certificate',
-            'pageIntro': '<p>At the moment, we cannot provide proof of your vaccination. This can have different causes. <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">Learn more about possible causes</a>.</p>'
+            'pageIntro': '<p>At the moment, we cannot provide proof of your vaccination. This can have different causes. <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Learn more about possible causes</a>.</p>'
         },
         'vaccinationsIncomplete': {
             'pageHeader': 'We can’t make a certificate',
@@ -81,7 +81,7 @@ const en = {
         },
         'negativeTestNotPossible': {
             'pageHeader': 'We can’t make a certificate',
-            'pageIntro': '<p>At the moment, we cannot provide proof of your test result. This can have different causes. You can find more information about what to do on <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">the Guidepost</a>.</p>'
+            'pageIntro': '<p>At the moment, we cannot provide proof of your test result. This can have different causes. You can find more information about what to do on <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">the Guidepost</a>.</p>'
         },
         'testResultPending': {
             'pageHeader': 'Test result not yet known',
@@ -101,7 +101,7 @@ const en = {
         },
         'recoveryNotPossible': {
             'pageHeader': 'We can\'t make a certificate',
-            'pageIntro': 'At this moment, we can\'t make a certificate from your positive test result. This can have various causes. Read more <a href="https://coronacheck.nl/en/wegwijzer.html" target="_blank">here</a>.'
+            'pageIntro': 'At this moment, we can\'t make a certificate from your positive test result. This can have various causes. Read more <a href="https://coronacheck.nl/en/wegwijzer.html" target="_blank" rel="noopener noreferrer">here</a>.'
         },
         'print': {
             'openPDF': 'Open PDF'
@@ -109,7 +109,7 @@ const en = {
         'printNegativeTest': {
             'both': {
                 'pageHeader': 'Print your certificates',
-                'pageIntro': '<p><b>Your certificates</b><br>You’ve made a test certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">This is what\'s in the QR codes</a>.</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
+                'pageIntro': '<p><b>Your certificates</b><br>You’ve made a test certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">This is what\'s in the QR codes</a>.</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
             },
             'domestic': {
                 'pageHeader': 'Your test certificate',
@@ -117,28 +117,28 @@ const en = {
             },
             'european': {
                 'pageHeader': 'Your certificate',
-                'pageIntro': '<h3>Your certificate</h3><p>You’ve made a test certificate in the form of a QR code. You’ve only got an international certificate. A dutch certificate could not be made because the type of test is not accepted, or because the test certificate already expired in the Netherlands.</p><h3>Information in the QR</h3><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p>'
+                'pageIntro': '<h3>Your certificate</h3><p>You’ve made a test certificate in the form of a QR code. You’ve only got an international certificate. A dutch certificate could not be made because the type of test is not accepted, or because the test certificate already expired in the Netherlands.</p><h3>Information in the QR</h3><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p>'
             }
         },
         'printVaccination': {
             'both': {
                 'pageHeader': 'Print your certificates',
-                'pageIntro': '<p><b>Your certificates</b><br>You’ve made a vaccination certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">This is what\'s in the QR codes</a>.</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p><p>Please note: this paper certificate is valid for 1 year. After that, you can make a new paper certificate of your vaccination. </p>'
+                'pageIntro': '<p><b>Your certificates</b><br>You’ve made a vaccination certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">This is what\'s in the QR codes</a>.</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p><p>Please note: this paper certificate is valid for 1 year. After that, you can make a new paper certificate of your vaccination. </p>'
             },
             'european': {
                 'pageHeader': 'Print your vaccination certificate',
-                'pageIntro': '<h3>Your certificate</h3><p>You’ve made a vaccination certificate in the form of a QR code. You’ve only got an international certificate. This could be because you’ve only had one of your vaccinations yet. Try making a Dutch certificate again when you’re fully vaccinated.</p><h3>Information in the QR</h3><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
+                'pageIntro': '<h3>Your certificate</h3><p>You’ve made a vaccination certificate in the form of a QR code. You’ve only got an international certificate. This could be because you’ve only had one of your vaccinations yet. Try making a Dutch certificate again when you’re fully vaccinated.</p><h3>Information in the QR</h3><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Read what is in the QR codes</a>.</p><h3>What now?</h3><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
             }
             // domestic only is a non existing scenario for vaccination
         },
         'printRecovery': {
             'both': {
                 'pageHeader': 'Print your certificates',
-                'pageIntro': '<p><b>Your certificates</b><br>You’ve made a recovery certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">This is what\'s in the QR codes</a>.</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
+                'pageIntro': '<p><b>Your certificates</b><br>You’ve made a recovery certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">This is what\'s in the QR codes</a>.</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
             },
             // european only and domestic only is a non existing scenario for recovery
             'validInFuture': {
-                'pageIntro': '<p><b>Your certificates</b><br>You’ve made a recovery certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p>Your recovery certificate will be valid 11 days after the positive test result.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank">This is what\'s in the QR codes</a>.</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
+                'pageIntro': '<p><b>Your certificates</b><br>You’ve made a recovery certificate, in the form of  a QR code. You’ve got a code for the Netherlands and one for other countries.</p><p>Your recovery certificate will be valid 11 days after the positive test result.</p><p><b>Information in the QR</b><br><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">This is what\'s in the QR codes</a>.</p><p><b>What now?</b><br>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
             }
         }
     },
@@ -228,7 +228,7 @@ const en = {
             'somethingWrong': {
                 'vaccination': {
                     'head': 'Something is wrong',
-                    'body': '<p>Wrong name or date of birth? Or are your vaccination details incorrect? Please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank">CoronaCheck.nl/en/guidepost</a> for more information.</p>'
+                    'body': '<p>Wrong name or date of birth? Or are your vaccination details incorrect? Please go to <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">CoronaCheck.nl/en/guidepost</a> for more information.</p>'
                 },
                 'negativetest': {
                     'head': 'Something is wrong',
@@ -245,7 +245,7 @@ const en = {
             },
             'didNotGetTestedYet': {
                 'head': 'I haven’t been tested yet',
-                'body': '<p>You must get tested before you make a QR code. You can only turn a negative test result into a QR code.</p><p>A test certificate is valid until 24 hours after the moment you’ve been tested. So schedule your test on time. And make sure your QR code is scanned at the entrance within 24 hours.</p><p><a href="https://coronacheck.nl/en/testafspraak-in-app" class="btn" target="_blank">Make an appointment\n</a></p>'
+                'body': '<p>You must get tested before you make a QR code. You can only turn a negative test result into a QR code.</p><p>A test certificate is valid until 24 hours after the moment you’ve been tested. So schedule your test on time. And make sure your QR code is scanned at the entrance within 24 hours.</p><p><a href="https://coronacheck.nl/en/testafspraak-in-app" class="btn" target="_blank" rel="noopener noreferrer">Make an appointment\n</a></p>'
             },
             'areYouSureToCancel': {
                 'head': 'Are you sure you want to stop?',
