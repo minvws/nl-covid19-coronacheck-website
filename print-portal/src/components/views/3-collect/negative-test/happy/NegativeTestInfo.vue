@@ -61,7 +61,7 @@ export default {
                         </div>
                         <div class="dl__row">
                             <dt>
-                                {{$t('components.test.info.testType')}}:
+                                {{$t('components.test.info.testName')}}:
                             </dt>
                             <dd>
                                 {{testName}}
