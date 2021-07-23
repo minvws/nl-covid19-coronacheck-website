@@ -40,6 +40,7 @@ export default {
                 </div>
                 <div id="modal__footer">
                     <CcModestButton
+                        id="modal-close"
                         @select="close()"
                         :label="$t('close')"/>
                 </div>

@@ -92,17 +92,20 @@ export default {
                 <div id="modal__footer">
                     <CcModestButton
                         v-if="showConfirm"
+                        id="modal-refute"
                         @select="refute()"
                         :label="refuteText"/>
 
                     <CcModestButton
                         v-if="showConfirm"
+                        id="modal-confirm"
                         @select="confirm()"
                         :label="confirmText"
                         :alert="confirmAlert"/>
 
                     <CcModestButton
                         v-if="showCloseButton"
+                        id="modal-close"
                         @select="close()"
                         :label="closeText"/>
                 </div>
@@ -129,7 +132,6 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    pointer-events: all;
     z-index: 1;
     animation: fadeIn 0.3s cubic-bezier(.4,0,.2,1);
 

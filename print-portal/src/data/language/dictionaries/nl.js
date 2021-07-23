@@ -111,10 +111,6 @@ const nl = {
                 'pageHeader': 'Print jouw bewijzen',
                 'pageIntro': '<p><strong>Jouw bewijzen</strong><br>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een QR-code voor als je internationaal reist.</p><p><strong>Informatie in de QR</strong><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><p><strong>En nu?</strong><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
             },
-            'domestic': {
-                'pageHeader': 'Print jouw Nederlandse testbewijs',
-                'pageIntro': '<p><strong>Jouw bewijs</strong><br>Je hebt een Nederlands testbewijs gemaakt, in de vorm van een QR-code. Deze is geldig binnen Nederland, maar niet in andere landen.</p><p><strong>Informatie in de QR</strong><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><p><strong>En nu?</strong><br>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt.</p>'
-            },
             'european': {
                 'pageHeader': 'Print jouw internationale testbewijs',
                 'pageIntro': '<p><strong>Jouw bewijs</strong><br>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Er is geen Nederlands bewijs gemaakt omdat het type test niet voldoet, of omdat het testbewijs al verlopen is in Nederland.</p><p><strong>Informatie in de QR</strong><br><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><p><strong>En nu?</strong><br>Print de PDF en neem het printje mee naar het land waar je heen reist.</p>'

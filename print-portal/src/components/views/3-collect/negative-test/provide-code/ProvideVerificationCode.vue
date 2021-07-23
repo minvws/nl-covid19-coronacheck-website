@@ -51,7 +51,7 @@ export default {
 <template>
     <div class="ProvideVerificationCode">
         <div class="input__set">
-            <label for="input--verificationCode">
+            <label for="input-verification-code">
                 {{$t('views.provideCode.verificationCode')}}<br>
                 <div class="label--side-note">
                     {{$t('views.provideCode.verificationCodeDirection')}}
@@ -60,7 +60,7 @@ export default {
             <input
                 v-model="verificationCode"
                 v-on:keyup.enter="submit"
-                id="input--verificationCode"
+                id="input-verification-code"
                 type="text"
                 pattern="[0-9]*"
                 inputmode="numeric"
@@ -70,11 +70,13 @@ export default {
                 :label="verificationCodeStatus.error"/>
             <div class="request-new-verification-code__container">
                 <CcModestButton
+                    id="did-not-get-verification"
                     @select="requestNewVerificationCode()"
                     :label="verificationCodeStatus.error.length > 0 ? $t('views.provideCode.sendAgain') : $t('views.provideCode.didNotGetCode')"/>
             </div>
         </div>
         <CcButton
+            id="submit-verification-code"
             @select="submit()"
             :label="$t('next')"/>
     </div>

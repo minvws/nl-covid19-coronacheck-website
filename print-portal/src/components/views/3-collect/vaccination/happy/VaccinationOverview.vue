@@ -39,6 +39,7 @@ export default {
                 </div>
                 <div class="section-block__footer">
                     <CcButton
+                        id="create-qr-vaccination"
                         @select="gotoPrint()"
                         :label="$t('views.vaccinationOverview.createTestProofButton')"/>
                     <div class="button__help-button">

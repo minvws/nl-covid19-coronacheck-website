@@ -41,6 +41,7 @@ export default {
                  <div class="section-block__footer">
                      <TooBusyButton v-if="tooBusy"/>
                      <CcButton
+                         id="digid-vaccination"
                          v-if="!tooBusy"
                          @select="getToken()"
                          :label="$t('components.digid.loginDigid')"/>

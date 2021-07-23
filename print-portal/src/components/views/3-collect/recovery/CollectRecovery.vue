@@ -34,6 +34,7 @@ export default {
             <div class="section-block">
                  <div class="section-block__footer">
                      <CcButton
+                         id="digid-recovery"
                          @select="getToken()"
                          :label="$t('components.digid.loginDigid')"/>
                      <NoDigiD/>

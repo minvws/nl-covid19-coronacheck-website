@@ -51,7 +51,7 @@ export default {
 <template>
     <div class="ProvideTestCode">
         <div class="input__set">
-            <label for="input--testCode">
+            <label for="input-test-code">
                 {{$t('views.provideCode.uniqueCode')}}
             </label>
             <div>
@@ -60,7 +60,7 @@ export default {
             <input
                 v-model="testCode"
                 v-on:keyup.enter="submit"
-                id="input--testCode"
+                id="input-test-code"
                 type="text"
                 :placeholder="$t('views.provideCode.uniqueCode')"/>
             <ErrorLabel
@@ -69,6 +69,7 @@ export default {
         </div>
         <CcButton
             v-if="!verificationNeeded"
+            id="submit-test-code"
             @select="submit()"
             :label="$t('next')"/>
     </div>
