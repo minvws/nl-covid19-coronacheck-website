@@ -108,34 +108,102 @@ export default {
                 <p>
                     {{$t('components.vaccination.info.detailsRetrieved')}}:
                 </p>
-                <p>
-                    {{$t('components.eventInfo.name')}}:
-                    <strong>{{holder.fullName}}</strong><br>
-                    {{$t('components.eventInfo.dateOfBirth')}}:
-                    <strong>{{birthDateString}}</strong>
-                </p>
-                <p>
-                    {{$t('components.vaccination.info.pathogen')}}:
-                    <strong>COVID-19</strong><br>
-                    {{$t('components.vaccination.info.vaccine')}}:
-                    <strong>{{vaccineName}}</strong><br>
-                    {{$t('components.vaccination.info.vaccineType')}}:
-                    <strong>{{vaccineType}}</strong><br>
-                    {{$t('components.vaccination.info.manufacturer')}}:
-                    <strong>{{vaccineManufacturer}}</strong><br>
-                    {{$t('components.vaccination.info.doses')}}:
-                    <strong>{{dosesString}}</strong><br>
-                    {{$t('components.vaccination.info.finalDosis')}}
-                    <strong>{{finalDosisString}}</strong><br>
-                    {{$t('components.vaccination.info.vaccinationDate')}}:
-                    <strong>{{vaccinationDate}}</strong><br>
-                    {{$t('components.vaccination.info.vaccinationCountry')}}:
-                    <strong>{{vaccinationCountry}}</strong>
-                </p>
-                <p>
-                    {{$t('components.eventInfo.identificationCode')}}:<br>
-                    <strong>{{identificationCode}}</strong>
-                </p>
+                <dl>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.name')}}:
+                            </dt>
+                            <dd>
+                                {{holder.fullName}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.dateOfBirth')}}:
+                            </dt>
+                            <dd>
+                                {{birthDateString}}
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.vaccination.info.pathogen')}}:
+                            </dt>
+                            <dd>
+                                COVID-19
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.vaccination.info.vaccine')}}:
+                            </dt>
+                            <dd>
+                                {{vaccineName}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.vaccination.info.vaccineType')}}:
+                            </dt>
+                            <dd>
+                                {{vaccineType}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.vaccination.info.manufacturer')}}:
+                            </dt>
+                            <dd>
+                                {{vaccineManufacturer}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.vaccination.info.doses')}}:
+                            </dt>
+                            <dd>
+                                {{dosesString}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.vaccination.info.finalDosis')}}
+                            </dt>
+                            <dd>
+                                {{finalDosisString}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.vaccination.info.vaccinationDate')}}:
+                            </dt>
+                            <dd>
+                                {{vaccinationDate}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.vaccination.info.vaccinationCountry')}}:
+                            </dt>
+                            <dd>
+                                {{vaccinationCountry}}
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.identificationCode')}}:<br>
+                            </dt>
+                            <dd>
+                                {{identificationCode}}
+                            </dd>
+                        </div>
+                    </div>
+                </dl>
             </template>
         </SlotModal>
     </portal>

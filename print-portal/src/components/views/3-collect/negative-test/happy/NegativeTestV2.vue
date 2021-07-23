@@ -40,6 +40,7 @@ export default {
         <button
             @click="openInfo()"
             type="button"
+            :aria-expanded="showInfo ? 'true' : 'false'"
             class="info-button">
             <img src="assets/img/icons/info.svg" :alt="$t('components.eventInfo.head')" />
         </button>

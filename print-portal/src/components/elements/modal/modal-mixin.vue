@@ -12,13 +12,19 @@ export default {
         }
     },
     mounted() {
-        this.setFocus();
+        this.$nextTick(() => {
+            this.elementThatHadFocusBeforeModal = document.activeElement;
+            this.setFocus();
+        })
         window.addEventListener('keydown', e => {
             if (e.key === 'Escape') {
                 this.close();
             }
         });
 
+        this.$refs.tabStart.addEventListener('focus', (event) => {
+            this.setFocus();
+        });
         this.$refs.tabEnd.addEventListener('focus', (event) => {
             this.setFocus();
         });

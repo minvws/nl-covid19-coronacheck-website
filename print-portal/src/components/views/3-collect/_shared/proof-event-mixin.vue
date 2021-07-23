@@ -19,9 +19,11 @@ export default {
     methods: {
         openInfo() {
             this.showInfo = true;
+            this.$store.commit('setSlotModalActivity', true);
         },
         closeInfo() {
             this.showInfo = false;
+            this.$store.commit('setSlotModalActivity', false);
         }
     }
 }

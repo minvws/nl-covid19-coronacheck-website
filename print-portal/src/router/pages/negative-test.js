@@ -19,13 +19,14 @@ const negativeTestPages = [
     }, {
         path: '/jouw-testresultaat',
         name: 'NegativeTestOverview',
-        component: NegativeTestOverview,
-        // flow set by either NegativeTestRedirect (3.0) or ProvideCode (2.0)
-        props: true
+        component: NegativeTestOverview
     }, {
         path: '/jouw-testresultaat-redirect',
         name: 'NegativeTestRedirect',
-        component: NegativeTestRedirect
+        component: NegativeTestRedirect,
+        meta: {
+            title: 'views.negativeTestOverview.pageHeader'
+        }
     }, {
         path: '/testresultaat-nog-niet-bekend',
         name: 'TestResultPending',
@@ -50,7 +51,10 @@ const negativeTestPages = [
     }, {
         path: '/print-testuitslag',
         name: 'PrintNegativeTest',
-        component: PrintNegativeTest
+        component: PrintNegativeTest,
+        meta: {
+            title: 'views.printNegativeTest.both.pageHeader'
+        }
     }
 ]
 

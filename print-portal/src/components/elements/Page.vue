@@ -34,9 +34,3 @@ export default {
         <Footer/>
     </div>
 </template>
-
-<style lang="scss">
-.Page {
-    //
-}
-</style>

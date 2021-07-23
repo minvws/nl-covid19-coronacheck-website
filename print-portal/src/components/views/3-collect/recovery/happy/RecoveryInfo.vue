@@ -41,24 +41,62 @@ export default {
                 <p>
                     {{$t('components.recovery.info.detailsRetrieved')}}:
                 </p>
-                <p>
-                    {{$t('components.eventInfo.name')}}:
-                    <strong>{{holder.fullName}}</strong><br>
-                    {{$t('components.eventInfo.dateOfBirth')}}:
-                    <strong>{{birthDateString}}</strong>
-                </p>
-                <p>
-                    {{$t('components.eventInfo.dateOfTest')}}:
-                    <b>{{sampleDate}}</b><br>
-                    {{$t('components.eventInfo.validFrom')}}:
-                    <b>{{validFrom}}</b><br>
-                    {{$t('components.eventInfo.validUntil')}}:
-                    <b>{{validUntil}}</b>
-                </p>
-                <p>
-                    {{$t('components.eventInfo.identificationCode')}}:<br>
-                    <strong>{{identificationCode}}</strong>
-                </p>
+                <dl>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.name')}}:
+                            </dt>
+                            <dd>
+                                {{holder.fullName}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.dateOfBirth')}}:
+                            </dt>
+                            <dd>
+                                {{birthDateString}}
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.dateOfTest')}}:
+                            </dt>
+                            <dd>
+                                {{sampleDate}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.validFrom')}}:
+                            </dt>
+                            <dd>
+                                {{validFrom}}
+                            </dd>
+                        </div>
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.validUntil')}}:
+                            </dt>
+                            <dd>
+                                {{validUntil}}
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="dl__section">
+                        <div class="dl__row">
+                            <dt>
+                                {{$t('components.eventInfo.identificationCode')}}:<br>
+                            </dt>
+                            <dd>
+                                {{identificationCode}}
+                            </dd>
+                        </div>
+                    </div>
+                </dl>
             </template>
         </SlotModal>
     </portal>

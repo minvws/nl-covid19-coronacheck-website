@@ -13,7 +13,10 @@ const recoveryPages = [
     }, {
         path: '/recovery-redirect',
         name: 'RecoveryRedirect',
-        component: RecoveryRedirect
+        component: RecoveryRedirect,
+        meta: {
+            title: 'views.recoveryOverview.pageHeader'
+        }
     }, {
         path: '/recovery-overzicht',
         name: 'RecoveryOverview',
@@ -35,7 +38,10 @@ const recoveryPages = [
     }, {
         path: '/print-recovery',
         name: 'PrintRecovery',
-        component: PrintRecovery
+        component: PrintRecovery,
+        meta: {
+            title: 'views.printRecovery.both.pageHeader'
+        }
     }
 ]
 

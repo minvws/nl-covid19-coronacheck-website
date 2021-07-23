@@ -1,0 +1,11 @@
+.dl__section {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    dd {
+        font-weight: 700;
+    }
+}
