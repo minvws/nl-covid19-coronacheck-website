@@ -1,7 +1,7 @@
 ---
 lang: en
 # set `published` to true to show the announcement on the homepage:
-published: true
+published: false
 # Always set a title:
 title: Adding a paper coronavirus pass to the CoronaCheck-app
 # Choose a style: error or info
