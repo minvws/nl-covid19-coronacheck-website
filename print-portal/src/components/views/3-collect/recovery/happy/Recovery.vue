@@ -1,11 +1,11 @@
 <script>
 import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 import SignedEvent from '@/classes/events/SignedEvent';
-import dateTool from '@/tools/date';
+import RecoveryInfo from './RecoveryInfo';
 
 export default {
     name: 'Recovery',
-    components: {},
+    components: { RecoveryInfo },
     mixins: [proofEventMixin],
     props: {
         signedEvent: {
@@ -17,26 +17,6 @@ export default {
         proofEvent() {
             return this.signedEvent.event.recovery;
         }
-    },
-    methods: {
-        openInfo() {
-            const testDate = dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
-            const validFrom = dateTool.dateTimeToString(this.proofEvent.validFrom, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
-            const validUntil = dateTool.dateTimeToString(this.proofEvent.validUntil, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
-            const data = {
-                name: this.holder.fullName,
-                birthDateString: this.holder.birthDateString,
-                testDate,
-                validFrom,
-                validUntil,
-                identificationCode: this.signedEvent.event.unique
-            }
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.recoveryAbout.head'),
-                messageBody: this.$t('message.info.recoveryAbout.body', data),
-                closeButton: true
-            })
-        }
     }
 }
 </script>
@@ -44,16 +24,16 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status proof-event__line">
-            {{$t('components.recovery.title')}}
+            <strong>{{$t('components.recovery.title')}}</strong>
         </div>
 
         <dl>
             <div class="proof-event__line">
-                <dt>{{$t('components.proofEvent.name')}}:</dt>
+                <dt>{{$t('components.eventInfo.name')}}:</dt>
                 <dd>{{holder.fullName}}</dd>
             </div>
             <div class="proof-event__line">
-                <dt>{{$t('components.vaccination.dateOfBirth')}}:</dt>
+                <dt>{{$t('components.eventInfo.dateOfBirth')}}:</dt>
                 <dd>{{holder.birthDateString}}</dd>
             </div>
         </dl>
@@ -61,9 +41,15 @@ export default {
         <button
             @click="openInfo()"
             type="button"
+            :aria-expanded="showInfo ? 'true' : 'false'"
             class="info-button">
-            <img src="assets/img/icons/info.svg" alt=""/>
+            <img src="assets/img/icons/info.svg" :alt="$t('components.eventInfo.head')" />
         </button>
+
+        <RecoveryInfo
+            v-if="showInfo"
+            @close="closeInfo"
+            :signed-event="signedEvent"/>
     </div>
 </template>
 

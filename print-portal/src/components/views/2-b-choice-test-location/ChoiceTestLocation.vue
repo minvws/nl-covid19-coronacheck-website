@@ -49,6 +49,7 @@ export default {
             <div class="section-block">
                 <div class="page-choices">
                     <PageChoice
+                        id="digid-negative-test"
                         @select="loginWithDigid"
                         :header="$t('views.choiceTestLocation.choiceGGDHead')"
                         :body="$t('views.choiceTestLocation.choiceGGDBody')"
@@ -57,6 +58,7 @@ export default {
                         {{$t('tooBusy')}}
                     </div>
                     <PageChoice
+                        id="other-location-negative-test"
                         @select="gotoRetrieveTest"
                         :header="$t('views.choiceTestLocation.choiceOtherLocation')"
                         :body="''"/>
@@ -64,6 +66,7 @@ export default {
             </div>
             <div class="section-block">
                 <CcModestButton
+                    id="not-yet-tested"
                     @select="openModal()"
                     :label="$t('views.choiceTestLocation.didNotGetTestedYet')"/>
             </div>

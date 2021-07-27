@@ -185,7 +185,7 @@ export default {
                         }
 
                         if (this.testResultStatus === 'invalid_token') {
-                            this.testCodeStatus.error = this.$t('invalidTestCode');
+                            this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
                         }
 
                         if (this.testResultStatus === 'result_blocked') {

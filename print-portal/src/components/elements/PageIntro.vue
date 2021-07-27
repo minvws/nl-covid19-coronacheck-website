@@ -10,17 +10,32 @@ export default {
             type: String,
             required: false
         }
+    },
+    mounted() {
+        this.$nextTick(() => {
+            if (this.$store.state.visitedHomePage) {
+                this.$refs.initialTabStart.focus();
+            } else {
+                // to this every time, not only on home, beacuse you could enter from a redirect
+                // we assume you have been at home before then
+                this.$store.commit('setVisitedHomePage')
+            }
+        })
     }
 }
 </script>
 
 <template>
     <div class="section-block">
-        <h1 v-if="head">
+        <h1
+            v-if="head"
+            ref="initialTabStart"
+            tabindex="0">
             {{head}}
         </h1>
         <div
             v-if="intro"
+            id="page-intro"
             v-html="intro"/>
     </div>
 </template>

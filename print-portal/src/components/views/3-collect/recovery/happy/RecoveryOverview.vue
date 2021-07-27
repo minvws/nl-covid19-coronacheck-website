@@ -49,8 +49,9 @@ export default {
                 </div>
                 <div class="section-block__footer">
                     <CcButton
+                        id="create-qr-recovery"
                         @select="gotoPrint()"
-                        :label="$t('views.VaccinationOverview.createTestProofButton')"/>
+                        :label="$t('views.vaccinationOverview.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
                             @select="openModalSomethingWrong()"

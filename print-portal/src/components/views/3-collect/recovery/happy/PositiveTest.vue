@@ -1,10 +1,11 @@
 <script>
 import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 import SignedEvent from '@/classes/events/SignedEvent';
+import PositiveTestInfo from './PositiveTestInfo';
 
 export default {
     name: 'PositiveTest',
-    components: {},
+    components: { PositiveTestInfo },
     mixins: [proofEventMixin],
     props: {
         signedEvent: {
@@ -16,28 +17,6 @@ export default {
         proofEvent() {
             return this.signedEvent.event.positivetest;
         }
-    },
-    methods: {
-        openInfo() {
-            const testType = this.$store.getters.getEuTestType(this.proofEvent.type);
-            const manufacturer = this.$store.getters.getTestManufacturer(this.proofEvent.manufacturer);
-            const data = {
-                name: this.holder.fullName,
-                birthDateString: this.holder.birthDateString,
-                testType: (testType ? testType.name : this.$t('unknown')),
-                testName: (this.proofEvent.name.length ? this.proofEvent.name : this.$t('unknown')),
-                testLocation: this.proofEvent.facility,
-                sampleDate: this.dateOfTest,
-                manufacturer: manufacturer ? manufacturer.name : this.$t('unknown'),
-                identificationCode: this.signedEvent.event.unique,
-                country: this.proofEvent.country
-            }
-            this.$store.commit('modal/set', {
-                messageHead: this.$t('message.info.positiveTestResultAbout.head'),
-                messageBody: this.$t('message.info.positiveTestResultAbout.body', data),
-                closeButton: true
-            })
-        }
     }
 }
 </script>
@@ -45,20 +24,20 @@ export default {
 <template>
     <div class="proof-event">
         <div class="proof-event__status proof-event__line">
-            {{$t('components.positiveTest.title')}}
+            <strong>{{$t('components.positiveTest.title')}}</strong>
         </div>
 
         <dl>
             <div class="proof-event__line">
-                <dt>{{$t('components.proofEvent.dateOfTest')}}:</dt>
+                <dt>{{$t('components.eventInfo.dateOfTest')}}:</dt>
                 <dd>{{dateOfTest}}</dd>
             </div>
             <div class="proof-event__line">
-                <dt>{{$t('components.proofEvent.name')}}:</dt>
+                <dt>{{$t('components.eventInfo.name')}}:</dt>
                 <dd>{{holder.fullName}}</dd>
             </div>
             <div class="proof-event__line">
-                <dt>{{$t('components.vaccination.dateOfBirth')}}:</dt>
+                <dt>{{$t('components.eventInfo.dateOfBirth')}}:</dt>
                 <dd>{{holder.birthDateString}}</dd>
             </div>
         </dl>
@@ -66,9 +45,15 @@ export default {
         <button
             @click="openInfo()"
             type="button"
+            :aria-expanded="showInfo ? 'true' : 'false'"
             class="info-button">
-            <img src="assets/img/icons/info.svg" alt=""/>
+            <img src="assets/img/icons/info.svg" :alt="$t('components.eventInfo.head')" />
         </button>
+
+        <PositiveTestInfo
+            v-if="showInfo"
+            @close="closeInfo"
+            :signed-event="signedEvent"/>
     </div>
 </template>
 

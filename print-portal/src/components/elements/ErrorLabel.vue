@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <p class="ErrorLabel" role="alert">
+    <p class="error-label" role="alert">
         {{label}}
     </p>
 </template>
@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/variables/index";
 
-.ErrorLabel {
+.error-label {
     margin-top: 12px;
     color: $color-error;
     font-size: 13px;
