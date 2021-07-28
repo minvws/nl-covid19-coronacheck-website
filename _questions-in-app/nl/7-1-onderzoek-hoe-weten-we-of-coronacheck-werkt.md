@@ -14,6 +14,8 @@ Het laatste rapport van de doorlopende evaluatie is hier te downloaden:
 
 <a href="/media/Factsheet_doorlopende_evaluatie.pdf" rel="noopener noreferrer" target="_blank">Factsheet doorlopende evaluatie (PDF, 78kb)</a>
 
+<a href="/media/Tussentijdse_rapportage_juli_2021.pdf" rel="noopener noreferrer" target="_blank">Tussentijdse rapportage juli 2021 (PDF, 110kb)</a>
+
 Daarnaast is er dagelijks informatie beschikbaar van het aantal downloads van CoronaCheck en [CoronaCheck Scanner](/scanner). Een samenvatting van deze data kun je hier downloaden:
 
 <a href="/media/Factsheet_CoronaCheck_latest.pdf" rel="noopener noreferrer" target="_blank">Factsheet CoronaCheck (PDF, 142kb)</a>
