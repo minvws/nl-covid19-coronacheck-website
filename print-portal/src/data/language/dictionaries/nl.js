@@ -159,7 +159,8 @@ const nl = {
             'testResult': 'Testuitslag',
             'identificationCode': 'Uniek certificaatnummer',
             'validFrom': 'Geldig vanaf',
-            'validUntil': 'Geldig tot'
+            'validUntil': 'Geldig tot',
+            'eventsFetchedAt': 'Gegevens opgehaald bij'
         },
         'test': {
             'resultNegative': 'Negatieve testuitslag',
@@ -316,6 +317,7 @@ const nl = {
             'author': 'CoronaCheck'
         }
     },
+    'and': 'En',
     'back': 'Terug',
     'close': 'Sluiten',
     'details': 'Details',

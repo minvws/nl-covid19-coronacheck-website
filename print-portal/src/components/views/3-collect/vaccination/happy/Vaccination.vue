@@ -1,6 +1,5 @@
 <script>
 import dateTool from '@/tools/date';
-import SignedEvent from '@/classes/events/SignedEvent';
 import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 import VaccinationInfo from './VaccinationInfo';
 import InfoButton from '@/components/views/3-collect/_shared/InfoButton';
@@ -10,25 +9,32 @@ export default {
     components: { InfoButton, VaccinationInfo },
     mixins: [proofEventMixin],
     props: {
-        signedEvent: {
-            type: SignedEvent,
+        signedEventSet: {
+            type: Array,
             required: true
         }
     },
     computed: {
+        signedEvent() {
+            // todo this is temp
+            return this.signedEventSet[0];
+        },
         monthName() {
             return dateTool.dateToString(this.signedEvent.event.vaccination.date, 'MMMM');
         },
-        location() {
-            if (this.signedEvent.providerIdentifier) {
-                const providerIdentifier = this.$store.getters['eventProviders/getTestProviderByIdentifier'](this.signedEvent.providerIdentifier);
-                return providerIdentifier ? providerIdentifier.name : '-';
-            } else {
-                return '-';
-            }
+        eventsFetchedAt() {
+            const locationList = this.signedEventSet.map(signedEvent => {
+                if (signedEvent.providerIdentifier) {
+                    const providerIdentifier = this.$store.getters['eventProviders/getTestProviderByIdentifier'](signedEvent.providerIdentifier);
+                    return providerIdentifier ? providerIdentifier.name : '-';
+                } else {
+                    return '-';
+                }
+            })
+            return locationList.join(' ' + this.$t('and').toLocaleLowerCase() + ' ')
         },
         title() {
-            return this.$t('components.vaccination.vaccination') + ' ' + this.monthName + ' (' + this.location + ')';
+            return this.$t('components.vaccination.vaccination') + ' ' + this.monthName;
         }
     }
 }
@@ -49,6 +55,10 @@ export default {
                 <dt>{{$t('components.eventInfo.dateOfBirth')}}:</dt>
                 <dd>{{holder.birthDateString}}</dd>
             </div>
+            <div class="proof-event__line">
+                <dt>{{$t('components.eventInfo.eventsFetchedAt')}}:</dt>
+                <dd>{{eventsFetchedAt}}</dd>
+            </div>
         </dl>
 
         <InfoButton
@@ -58,7 +68,7 @@ export default {
         <VaccinationInfo
             v-if="showInfo"
             @close="closeInfo"
-            :signed-event="signedEvent"/>
+            :signed-event-set="signedEventSet"/>
     </div>
 </template>
 

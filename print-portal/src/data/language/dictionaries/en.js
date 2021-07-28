@@ -159,7 +159,8 @@ const en = {
             'testResult': 'Test result',
             'identificationCode': 'Unique certificate identifier',
             'validFrom': 'Valid From',
-            'validUntil': 'Valid until'
+            'validUntil': 'Valid until',
+            'eventsFetchedAt': 'Data retrieved at'
         },
         'test': {
             'resultNegative': 'Negative test result',
@@ -316,6 +317,7 @@ const en = {
             'author': 'CoronaCheck'
         }
     },
+    'and': 'And',
     'back': 'Back',
     'close': 'Close',
     'details': 'Details',
