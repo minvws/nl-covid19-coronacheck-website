@@ -64,7 +64,12 @@ export default {
                     // create an empty set
                     uniqueSignedEventSets.push([signedEvent])
                 } else {
-                    match.push(signedEvent)
+                    // we want GGD to be the first
+                    if (signedEvent.providerIdentifier === 'GGD') {
+                        match.unshift(signedEvent)
+                    } else {
+                        match.push(signedEvent)
+                    }
                 }
             }
             return uniqueSignedEventSets.sort((a, b) => {
