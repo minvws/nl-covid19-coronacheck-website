@@ -44,6 +44,9 @@ export default {
                 return this.vaccination.doseNumber;
             }
         },
+        showDosesString() {
+            return this.vaccination.doseNumber.length > 0 && this.vaccination.totalDoses.length > 0;
+        },
         isCompleted() {
             return this.vaccination.completedByMedicalStatement === true || this.vaccination.completedByPersonalStatement === true;
         },
@@ -160,7 +163,9 @@ export default {
                         {{vaccineManufacturer}}
                     </dd>
                 </div>
-                <div class="dl__row">
+                <div
+                    v-if="showDosesString"
+                    class="dl__row">
                     <dt>
                         {{$t('components.vaccination.info.doses')}}:
                     </dt>
