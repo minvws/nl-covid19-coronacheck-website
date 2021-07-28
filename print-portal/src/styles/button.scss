@@ -6,19 +6,6 @@ button {
     padding: 0;
 }
 
-.info-button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-
-    img {
-        width: 100%;
-    }
-}
-
 .button__help-button {
     margin-top: $length-s;
 }

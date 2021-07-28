@@ -318,6 +318,7 @@ const nl = {
     },
     'back': 'Terug',
     'close': 'Sluiten',
+    'details': 'Details',
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
     'goBackToStart': 'Naar home',

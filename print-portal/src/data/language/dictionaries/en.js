@@ -318,6 +318,7 @@ const en = {
     },
     'back': 'Back',
     'close': 'Close',
+    'details': 'Details',
     'faq': 'Frequently asked questions',
     'forInstanceAbbr': 'E.g.',
     'goBackToStart': 'To Home',
