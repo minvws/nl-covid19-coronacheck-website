@@ -179,7 +179,7 @@ const en = {
         'vaccination': {
             'vaccination': 'Vaccination',
             'info': {
-                'detailsRetrieved': 'The following details of your vaccination have been retrieved',
+                'detailsRetrieved': 'The following details of your vaccination have been retrieved at %{provider}',
                 'pathogen': 'Pathogen',
                 'vaccine': 'Vaccine',
                 'vaccineType': 'Vaccine type',

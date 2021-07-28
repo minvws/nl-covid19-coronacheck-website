@@ -179,7 +179,7 @@ const nl = {
         'vaccination': {
             'vaccination': 'Vaccinatie',
             'info': {
-                'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald',
+                'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald bij %{provider}',
                 'pathogen': 'Ziekteverwekker',
                 'vaccine': 'Vaccin',
                 'vaccineType': 'Vaccin type',
