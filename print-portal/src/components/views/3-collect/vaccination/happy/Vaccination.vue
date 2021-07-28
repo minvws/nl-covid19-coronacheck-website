@@ -16,7 +16,8 @@ export default {
     },
     computed: {
         signedEvent() {
-            // todo this is temp
+            // return the first of the set. If GGD is in the set, this will be GGD, which is prefered for
+            // holder info
             return this.signedEventSet[0];
         },
         monthName() {
