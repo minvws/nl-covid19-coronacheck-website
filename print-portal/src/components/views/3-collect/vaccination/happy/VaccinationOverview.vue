@@ -27,7 +27,24 @@ export default {
             const uniqueSignedEventSets = [];
 
             const isTheSameEvent = (a, b) => {
-                return a.event.vaccination.date === b.event.vaccination.date
+                const vaccinationA = a.event.vaccination;
+                const vaccinationB = b.event.vaccination;
+
+                const isOnSameDay = (a, b) => {
+                    const dayInMs = 1000 * 3600 * 24;
+                    return new Date(a.date).getTime() - new Date(b.date).getTime() < dayInMs;
+                }
+
+                const isSameHpkCode = (a, b) => {
+                    return a.hpkCode.length > 0 && a.hpkCode === b.hpkCode;
+                }
+
+                const isSameManufacturer = (a, b) => {
+                    return a.manufacturer.length > 0 && a.manufacturer === b.manufacturer;
+                }
+
+                return isOnSameDay(vaccinationA, vaccinationB) &&
+                    (isSameHpkCode(vaccinationA, vaccinationB) || isSameManufacturer(vaccinationA, vaccinationB))
             }
 
             const getMatch = (signedEvent) => {
