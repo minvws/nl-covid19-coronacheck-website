@@ -1,14 +1,23 @@
 .scanner-backlink {
-    margin: 1em auto;
     max-width: 940px;
-    color: #333;
-
-    @media (min-width: 740px) {
-        display: flex;
-        flex-direction: column;
-    }
+    height: 64px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 auto;
 
     a {
-        text-decoration: underline;
+        color: #333;
+        padding-left: 26px;
+
+        &::before {
+            content: " ";
+            width: 16px;
+            height: 14px;
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url(#{$file-path}img/arrow-left.svg);
+        }
     }
 }
