@@ -26,3 +26,9 @@ Voor het maken van een testbewijs gebruik je de ophaalcode die je per SMS of per
 Voor het maken van een herstelbewijs of vaccinatiebewijs haal je je gegevens op met je DigiD.
 
 De Nederlandse QR-code laat je scannen aan de deur van de locatie waar het coronabewijs nodig is. Je kunt de internationale QR-code laten scannen als je de grens over gaat. Het coronabewijs is niet in alle landen geldig. Zoek vooraf op wat de actuele coronaregels op het land van bestemming zijn op {{ site.data.translations.wijsoprijs-link[page.lang] }}. Die kunnen namelijk wisselen.
+
+## Uitgebreide uitleg
+Wil je meer uitleg over de stappen die je in de CoronaCheck-app of via [CoronaCheck.nl/print](http://coronacheck.nl/print) moet doen? Kijk dan op de volgende plekken:
+
+- Digisterker - [Stap voor stap door de app of website](http://www.uitlegcoronacheck.nl/)
+- Steffie - [Uitleg over CoronaCheck in makkelijke taal](https://corona.steffie.nl/nl/modules/coronacheck-app/#!/1768/stap-1.html)
