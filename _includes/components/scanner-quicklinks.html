@@ -1,0 +1,70 @@
+{%- assign langSlug = site.baseurl | append: '/'  -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang | append: '/' -%}
+{%- endif -%}
+
+<section class="scanner-quicklinks">
+  <h2 class="screen-reader-text">{{ site.data.translations.scanner-quicklinks[page.lang] }}</h2> 
+
+  <div class="scanner-menu">
+      <article class="scanner-quicklink">
+        <div class="scanner-quicklink__summary">
+            <img
+            src="{{ site.baseurl }}/img/scanner_aan_de_slag.svg"
+            alt=""
+            loading="lazy"
+            class="scanner-quicklink__image"
+            width="157"
+            height="160"
+            >
+          <div class="scanner-quicklink__title">
+            <h3>Een evenement organiseren</h3>
+          </div>
+          <a href="{{ site.baseurl }}/nl/faq-scanner#algemeen" class="scanner-quicklink__summary__btn-expand">
+            {{ site.data.translations.readmore[page.lang] }}
+            <span class="screen-reader-text"> {{ site.data.translations.readmore-about_screen-reader[page.lang] }}: Een evenement organiseren</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="scanner-quicklink">
+        <div class="scanner-quicklink__summary">
+            <img
+            src="{{ site.baseurl }}/img/scanner-instructions/2_scannen.svg"
+            alt=""
+            loading="lazy"
+            class="scanner-quicklink__image"
+            width="157"
+            height="160"
+            >
+          <div class="scanner-quicklink__title">
+            <h3>Zo werkt scannen</h3>
+          </div>
+          <a href="{{ site.baseurl }}/scanner/zo-werkt-scannen" class="scanner-quicklink__summary__btn-expand">
+            {{ site.data.translations.readmore[page.lang] }}
+            <span class="screen-reader-text"> {{ site.data.translations.readmore-about_screen-reader[page.lang] }}: Zp werkt scannen</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="scanner-quicklink">
+        <div class="scanner-quicklink__summary">
+            <img
+            src="{{ site.baseurl }}/img/2_qr_op_zak.svg"
+            alt=""
+            loading="lazy"
+            class="scanner-quicklink__image"
+            width="157"
+            height="160"
+            >
+          <div class="scanner-quicklink__title">
+            <h3>Oefen het scannen</h3>
+          </div>
+          <a href="{{ site.baseurl }}/scanner/uitproberen" class="scanner-quicklink__summary__btn-expand">
+            {{ site.data.translations.readmore[page.lang] }}
+            <span class="screen-reader-text"> {{ site.data.translations.readmore-about_screen-reader[page.lang] }}: Oefen het scannen</span>
+          </a>
+        </div>
+      </article>
+  </div>
+</section>
