@@ -1,10 +1,13 @@
 ---
 set: 4
-index: 1
+index: 2
 title: The app says no test result or vaccination was found. What can I do?
 redirect_from: 
   - /en/faq-in-app/13-de-app-zegt-dat-er-geen-negatieve-testuitslag-gevonden-is-hoe-kan-dit
   - /en/faq-in-app/4-1-de-app-zegt-dat-er-geen-negatieve-testuitslag-of-vaccinatie-gevonden-is-hoe-kan-dit
+  - /en/faq-in-app/4-1-de-app-zegt-dat-er-geen-negatieve-of positieve-testuitslag-of-vaccinatie-gevonden-is
+featuredHome: true
+featuredHomeIndex: 5
 ---
 ## No or incorrect vaccination found?
 
@@ -16,7 +19,7 @@ For example, do you have one of the following problems:
 
 In these cases, the vaccination data may not have been registered properly. Contact your vaccination setter (GGD on {{ site.data.translations.phone-ggd[page.lang] }}, hospital, general practitioner or another healthcare institution).
 
-If you are going on a trip or want to visit an event within a few days, the advice is to schedule a free test appointment so you can get access with a test certificate. Go to  ['I want to get tested for coronavirus. Where should I go?'](/en/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht) for more information.
+If you are going on a trip or want to visit an event within a few days, the advice is to schedule a free test appointment so you can get access with a test certificate. Go to  ['I want to get tested for coronavirus. Where should I go?'](/en/faq-in-app/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht) for more information.
 
 ### Have you been vaccinated abroad?
 Unfortunately, you cannot use CoronaCheck to get a vaccination certificate. In some countries you can make a coronavirus pass on site, one that is also valid in the Netherlands. You can read more about this on {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}.
