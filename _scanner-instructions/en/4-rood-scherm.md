@@ -1,7 +1,7 @@
 ---
 index: 4
 show: true
-graphic: 4_scherm_rood.svg
+graphic: scanner-instruction-3.png
 title: Red screen
 lang: en
 ---

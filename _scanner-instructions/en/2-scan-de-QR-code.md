@@ -1,7 +1,7 @@
 ---
 index: 2
 show: true
-graphic: 2_scannen.svg
+graphic: scanner-instruction-1.png
 title: Keep a distance and scan the QR code
 lang: en
 ---
