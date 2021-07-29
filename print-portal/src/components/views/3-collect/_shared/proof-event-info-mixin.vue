@@ -1,6 +1,4 @@
 <script>
-import dateTool from '@/tools/date';
-
 export default {
     name: 'proof-event-info-mixin',
     computed: {
@@ -8,7 +6,7 @@ export default {
             return this.signedEvent.holder;
         },
         birthDateString() {
-            return dateTool.dateToString(this.holder.birthDate, 'dd LLLL yyyy');
+            return this.holder.birthDateString;
         },
         identificationCode() {
             return this.signedEvent.event.unique;
