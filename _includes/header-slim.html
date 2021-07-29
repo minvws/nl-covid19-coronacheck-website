@@ -31,7 +31,12 @@
       {% include components/language-picker.html headertype="default" %}
         <div class="container">
           <div class="header__image">
-            <img alt="" width="246" height="150" src="/img/holder_qrcode_maken.svg">
+
+            {% if include.for == "scanner" %}
+                <img alt="" width="246" height="150" src="/img/2_scannen-header.svg">
+            {% else %}
+                <img alt="" width="246" height="150" src="/img/holder_qrcode_maken.svg">
+            {% endif %}
           </div>
         </div>
     </div>
