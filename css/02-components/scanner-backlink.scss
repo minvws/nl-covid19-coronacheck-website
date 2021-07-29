@@ -1,0 +1,14 @@
+.scanner-backlink {
+    margin: 1em auto;
+    max-width: 940px;
+    color: #333;
+
+    @media (min-width: 740px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}

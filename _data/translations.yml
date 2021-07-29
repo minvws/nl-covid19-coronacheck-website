@@ -169,6 +169,10 @@ coronacheck-scanner-link:
   nl: Scanner
   en: Scanner
 
+coronacheck-scanner-backlink:
+  nl: Terug naar CoronaCheck Scanner
+  en: Back to CoronaCheck Scanner
+
 header-appstore:
   nl: Download in de App Store
   fy: Download yn de App Store
@@ -313,7 +317,7 @@ x-of-y:
   tr: itibaren
         
 readmore:
-  nl: Meer uitleg
+  nl: Lees meer
   fy: Mear útlis
   en: More information
   ar: للمزيد من التوضيح
@@ -381,6 +385,19 @@ faq-scanner:
   nl: Meestgestelde vragen
   fy: 
   en: Frequently asked questions
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+
+scanner-quicklinks:
+  nl: Snel aan de slag met CoronaCheck Scanner
+  fy: 
+  en: Get started with CoronaCheck Scanner
   ar: 
   bg: 
   de: 
