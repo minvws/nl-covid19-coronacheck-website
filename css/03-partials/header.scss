@@ -252,7 +252,7 @@
     z-index: 1;
 
     @media (min-width: 960px) {
-        display: inline-block;
+        display: block;
     }
 
     [lang="bg"] & {
@@ -265,18 +265,10 @@
 }
 
 .header__quick-link--scanner {
-    right: 400px;
     display: none;
-
-    [lang="en"] & {
-        right: 450px;
-    }
-
-    [lang="bg"] & {
-        right: 570px;
-    }
 
     @media (min-width: 1150px) {
         display: inline-block;
+        margin-right: 30px;
     }
 }
