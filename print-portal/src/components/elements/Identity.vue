@@ -57,7 +57,7 @@ export default {
         </a>
         <a
             href="https://coronacheck.nl/nl/faq"
-            class="header__layout__faq-link">
+            class="header__quick-link">
             {{$t('faq')}}
         </a>
         <LanguagePicker
