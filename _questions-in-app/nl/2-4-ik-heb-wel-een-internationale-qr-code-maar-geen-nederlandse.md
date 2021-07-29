@@ -7,4 +7,4 @@ redirect_from:
 ---
 Dit betekent dat je testuitslag of vaccinatie niet geldig is in Nederland. Daarom is er alleen een internationale QR-code gemaakt. Deze is geldig in sommige landen buiten Nederland.
 
-Dit kan verschillende oorzaken hebben. Het kan bijvoorbeeld zijn dat je maar één vaccinatie hebt gehad. Of het kan komen doordat de geldigheidsduur in Nederland korter is dan de geldigheidsduur in andere landen. <a href="http://www.rijksoverheid.nl/coronabewijs-hulp">Kijk op de pagina van de Rijksoverheid voor meer informatie en antwoorden</a>.
+Dit kan verschillende oorzaken hebben. Het kan bijvoorbeeld zijn dat je maar één vaccinatie hebt gehad. Of het kan komen doordat de geldigheidsduur in Nederland korter is dan de geldigheidsduur in andere landen. Zie ook: {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}.
