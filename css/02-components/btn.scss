@@ -88,6 +88,15 @@
         color: $color-coronacheck_blue;
         background-color: #ffffff;
     }
+
+    .offset-background & {
+        color: white;
+
+        &:hover,
+        &:focus {
+            color: $color-cc-link-darker--interaction;
+        }
+    }
 }
 
 .btn--expand {
