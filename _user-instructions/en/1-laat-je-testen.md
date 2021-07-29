@@ -1,7 +1,7 @@
 ---
 index: 1
 show: true
-graphic: instructions-step1-en.png
+graphic: Home_EN_Iphone1-min.png
 title: 1. Get tested or vaccinated
 lang: en
 ---

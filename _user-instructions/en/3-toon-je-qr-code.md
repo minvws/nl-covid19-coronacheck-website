@@ -1,7 +1,7 @@
 ---
 index: 3
 show: true
-graphic: instructions-step3-en.png
+graphic: Home_EN_Iphone3-min.png
 title: 3. Show your QR code
 lang: en
 ---
