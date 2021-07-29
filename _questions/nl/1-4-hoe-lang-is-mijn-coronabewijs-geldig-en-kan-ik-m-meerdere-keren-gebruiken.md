@@ -11,7 +11,7 @@ redirect_from:
 featuredHome: true
 featuredHomeIndex: 2
 ---
-Een Nederlands testbewijs is met ingang van dinsdag 13 juli geldig tot 24 uur na het moment van testen. Binnen deze 24 uur kun je met het bewijs (de Nederlandse QR-code) dus meerdere locaties of activiteiten bezoeken. En de QR-code steeds opnieuw laten scannen. Let op: een door de GGD afgenomen test is veelal niet binnen 24 uur na afname beschikbaar in CoronaCheck.
+Een Nederlands testbewijs is geldig tot 24 uur na het moment van testen. Binnen deze 24 uur kun je met het bewijs (de Nederlandse QR-code) dus meerdere locaties of activiteiten bezoeken. En de QR-code steeds opnieuw laten scannen. Let op: een door de GGD afgenomen test is veelal niet binnen 24 uur na afname beschikbaar in CoronaCheck.
 
 Een herstelbewijs is geldig vanaf 11 dagen na de positieve test, tot 180 dagen na de positieve test.
 
