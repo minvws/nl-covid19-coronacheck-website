@@ -1,6 +1,6 @@
 ---
 set: 4
-index: 3
+index: 5
 title: What if the app is down when I’m at the entrance?
 redirect_from: 
   - /en/faq/15-wat-als-de-app-een-storing-krijgt-als-ik-naar-binnen-wil

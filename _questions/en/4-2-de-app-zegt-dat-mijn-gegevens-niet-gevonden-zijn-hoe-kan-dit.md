@@ -1,11 +1,13 @@
 ---
 set: 4
-index: 1
+index: 2
 title: The app says no test result or vaccination was found. What can I do?
 redirect_from: 
   - /en/faq/13-de-app-zegt-dat-er-geen-negatieve-testuitslag-gevonden-is-hoe-kan-dit
   - /en/faq/4-1-de-app-zegt-dat-er-geen-negatieve-testuitslag-of-vaccinatie-gevonden-is-hoe-kan-dit
-  - /en/faq/4-2-de-app-zegt-dat-mijn-gegevens-niet-gevonden-zijn-hoe-kan-dit
+  - /en/faq/4-1-de-app-zegt-dat-er-geen-negatieve-of positieve-testuitslag-of-vaccinatie-gevonden-is
+featuredHome: true
+featuredHomeIndex: 5
 ---
 ## No or incorrect vaccination found?
 
