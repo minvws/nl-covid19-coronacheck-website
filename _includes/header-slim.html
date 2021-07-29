@@ -6,7 +6,7 @@
   </div>
   <div class="header header--slim offset-background">
 
-    <div class="header__title">
+    <div class="header__homelink">
         {% if include.for == "scanner" %}
           <a href="/{{ page.lang }}/scanner">{{ site.data.translations.scanner-app-name }}</a>
         {% else %}
@@ -21,10 +21,10 @@
       </div>
 
       {% if include.for == "scanner" %}
-        <a href="{{ langSlug }}/faq-scanner" class="header__layout__faq-link">
+        <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
           {{ site.data.translations.faq[page.lang] }}</a>
       {% else %}
-        <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
+        <a href="{{ langSlug }}/faq" class="header__quick-link">
           {{ site.data.translations.faq[page.lang] }}</a>
         {% endif %}
 
