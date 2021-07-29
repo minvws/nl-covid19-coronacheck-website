@@ -156,9 +156,9 @@ scanner-header-subtitle:
   tr: 
 
 coronacheck-header-img:
-  nl: /img/CoronaCheck_app.png
-  fy: /img/CoronaCheck_app.png
-  en: /img/CoronaCheck_app-en.png
+  nl: /img/Home_NL_Header-min.png
+  fy: /img/Home_NL_Header-min.png
+  en: /img/Home_EN_Header-min.png
     
 scanner-header-img:
   nl: /img/CoronaCheckScanner_app-tall.png
