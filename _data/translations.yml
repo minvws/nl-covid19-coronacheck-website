@@ -1542,9 +1542,9 @@ about-coronacheck-scanner-title:
   tr: CoronaCheck hakkında
 
 about-coronacheck-scanner-content:
-  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om bezoekers toe te laten?</p><p><a href="/scanner" target="_blank">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
+  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om bezoekers toe te laten?</p><p><a href="/scanner" class="btn btn--cta" target="_blank">Bekijk de Scanner-app</a></p>
   fy: 
-  en: <p>Would you like to find out how you can use CoronaCheck to allow visitors access to your event?</p><p><a href="/en/scanner" target="_blank">Read more about the CoronaCheck Scanner app.</a></p> 
+  en: <p>Would you like to find out how you can use CoronaCheck to allow visitors access to your event?</p><p><a href="/en/scanner" class="btn btn--cta" target="_blank">View the Scanner app</a></p> 
 
 home-intro-content:
   nl: Vanaf nu kun je met toegangstesten of een vaccinatiebewijs toegang krijgen tot bepaalde events en locaties in Nederland. <a href="/nl/faq/1-1-hoe-werkt-de-coronacheck-app/">Dit is hoe CoronaCheck werkt</a>. Vanaf juli kun je met CoronaCheck ook een herstelbewijs maken en een persoonlijke QR-code om internationaal te reizen. Hierover lees je meer op de pagina van de Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>)
