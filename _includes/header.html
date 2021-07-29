@@ -23,10 +23,12 @@
         <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
           {{ site.data.translations.faq[page.lang] }}</a>
       {% else %}
-        <a href="{{ langSlug }}/scanner" class="header__quick-link header__quick-link--scanner">
-          {{ site.data.translations.coronacheck-scanner-link[page.lang] }}</a>
-        <a href="{{ langSlug }}/faq" class="header__quick-link">
-          {{ site.data.translations.faq[page.lang] }}</a>
+        <div class="header__quick-link">
+            <a href="{{ langSlug }}/scanner" class="header__quick-link--scanner">
+            {{ site.data.translations.coronacheck-scanner-link[page.lang] }}</a>
+            <a href="{{ langSlug }}/faq" class="">
+            {{ site.data.translations.faq[page.lang] }}</a>
+        </div>
         {% endif %}
       {% include components/language-picker.html headertype="default" %}
     </div>
