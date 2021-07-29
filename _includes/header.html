@@ -5,6 +5,14 @@
     </a>
   </div>
   <div class="header offset-background">
+    <div class="header__homelink">
+    {% if include.for == "scanner" %}
+        <a href="/{{ page.lang }}/scanner">{{ site.data.translations.scanner-app-name }}</a>
+    {% else %}
+        <a href="/{{ page.lang }}">{{ site.data.translations.head-app-name }}</a>
+    {% endif %}
+    </div> 
+    
     <div class="logobar">
       <div class="logo">
         <a href="{{ langSlug }}">
@@ -12,10 +20,12 @@
         </a>
       </div>
       {% if include.for == "scanner" %}
-        <a href="{{ langSlug }}/faq-scanner" class="header__layout__faq-link">
+        <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
           {{ site.data.translations.faq[page.lang] }}</a>
       {% else %}
-        <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
+        <a href="{{ langSlug }}/scanner" class="header__quick-link header__quick-link--scanner">
+          {{ site.data.translations.coronacheck-scanner-link[page.lang] }}</a>
+        <a href="{{ langSlug }}/faq" class="header__quick-link">
           {{ site.data.translations.faq[page.lang] }}</a>
         {% endif %}
       {% include components/language-picker.html headertype="default" %}
@@ -51,6 +61,10 @@
             </h1>
             <p>{{ site.data.translations.header-subtitle[page.lang] }}</p>
             {% include components/coronacheck-badges.html %}
+          </div>
+
+          <div class="header__layout--image">
+              <img src="{{ site.baseurl }}{{ site.data.translations.coronacheck-header-illustration }}" alt="" width="250" height="319">
           </div>
         </div>
 

@@ -157,13 +157,17 @@ scanner-header-subtitle:
 
 coronacheck-header-img:
   nl: /img/Home_NL_Header-min.png
-  fy: /img/Home_NL_Header-min.png
   en: /img/Home_EN_Header-min.png
+
+coronacheck-header-illustration: /img/Home_Header_Person.svg
     
 scanner-header-img:
   nl: /img/CoronaCheckScanner_app-tall.png
-  fy: /img/CoronaCheckScanner_app-tall.png
   en: /img/CoronaCheckScanner_app-tall-en.png
+
+coronacheck-scanner-link:
+  nl: Scanner
+  en: Scanner
 
 header-appstore:
   nl: Download in de App Store
