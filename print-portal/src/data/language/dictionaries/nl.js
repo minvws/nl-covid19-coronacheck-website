@@ -186,7 +186,7 @@ const nl = {
                 'manufacturer': 'Producent van het vaccin',
                 'doses': 'Doses',
                 'finalDosis': 'Is dit de laatste dosis van je vaccinatie?',
-                'vaccinationDate': 'Prikdatum',
+                'vaccinationDate': 'Vaccinatiedatum',
                 'vaccinationCountry': 'Gevaccineerd in',
                 'identificationCode': 'Uniek vaccinatienummer',
                 'finalDosisValue': {
