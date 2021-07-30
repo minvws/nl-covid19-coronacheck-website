@@ -19,7 +19,7 @@ export default {
         vaccineInfo() {
             return this.$store.getters.getVaccineInfo(this.vaccination.hpkCode);
         },
-        vaccineName() {
+        vaccineBrand() {
             if (this.vaccineInfo) {
                 return this.vaccineInfo.name;
             } else {
@@ -152,7 +152,7 @@ export default {
                         {{$t('components.vaccination.info.vaccine')}}:
                     </dt>
                     <dd>
-                        {{vaccineName}}
+                        {{vaccineBrand}}
                     </dd>
                 </div>
                 <div class="dl__row">
