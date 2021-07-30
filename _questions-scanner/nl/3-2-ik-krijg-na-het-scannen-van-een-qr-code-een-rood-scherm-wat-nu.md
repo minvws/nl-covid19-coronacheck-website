@@ -1,7 +1,9 @@
 ---
-index: 7
 set: 3
+index: 2
 title: Ik krijg na het scannen van een QR-code een rood scherm te zien, wat nu?
+redirect_from: 
+  - /nl/faq-scanner/7-na-scannen-een-rood-scherm-wat-nu
 ---
 Rood scherm? Dat betekent niet dat de bezoeker corona heeft. Het betekent alleen dat de QR-code ongeldig is. Er is dus geen bewijs van een vaccinatie, van herstel of van een recente negatieve testuitslag. Of het bewijs is verlopen (ouder dan 24 uur). Dit kun je doen:
 
