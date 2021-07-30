@@ -34,12 +34,12 @@ export default {
         vaccineType() {
             const typeCode = this.vaccineInfo ? this.vaccineInfo.vp : this.vaccination.type;
             const vaccineType = this.$store.getters.getVaccineType(typeCode);
-            return vaccineType ? vaccineType.name : '-';
+            return vaccineType ? vaccineType.name : '';
         },
         vaccineManufacturer() {
             const manufacturerCode = this.vaccineInfo ? this.vaccineInfo.ma : this.vaccination.manufacturer;
             const manufacturer = this.$store.getters.getVaccineManufacturer(manufacturerCode);
-            return manufacturer ? manufacturer.name : '-';
+            return manufacturer ? manufacturer.name : '';
         },
         dosesString() {
             if (this.vaccination.doseNumber.length > 0 && this.vaccination.totalDoses.length > 0) {
@@ -105,9 +105,9 @@ export default {
         providerName() {
             if (this.signedEvent.providerIdentifier) {
                 const providerIdentifier = this.$store.getters['eventProviders/getTestProviderByIdentifier'](this.signedEvent.providerIdentifier);
-                return providerIdentifier ? providerIdentifier.name : '-';
+                return providerIdentifier ? providerIdentifier.name : '';
             } else {
-                return '-';
+                return '';
             }
         }
     }
