@@ -157,7 +157,6 @@ const en = {
             'dateOfBirth': 'Date of birth',
             'dateOfTest': 'Test date',
             'testResult': 'Test result',
-            'identificationCode': 'Unique certificate identifier',
             'validFrom': 'Valid From',
             'validUntil': 'Valid until',
             'eventsFetchedAt': 'Data retrieved at'
@@ -173,7 +172,8 @@ const en = {
                 'testResultPositive': 'positive (corona)',
                 'testLocation': 'Test location',
                 'testManufacturer': 'Test manufacturer',
-                'testCountry': 'Tested in'
+                'testCountry': 'Tested in',
+                'identificationCode': 'Unique test identifier'
             }
         },
         'vaccination': {
@@ -188,6 +188,7 @@ const en = {
                 'finalDosis': 'Is this the last dose of your vaccination?',
                 'vaccinationDate': 'Vaccination date',
                 'vaccinationCountry': 'Country of vaccination',
+                'identificationCode': 'Unique vaccination identifier',
                 'finalDosisValue': {
                     'yes': 'Yes',
                     'recovery': 'Yes (I\'ve had coronavirus earlier)',
