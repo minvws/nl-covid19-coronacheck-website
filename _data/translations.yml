@@ -407,7 +407,21 @@ scanner-quicklinks:
   ro: 
   tr: 
 
-faq-category-scanner-general:
+
+faq-scanner-category-one:
+  nl: Evenement organiseren
+  fy: 
+  en: Organising an event
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-scanner-category-two:
   nl: Algemeen
   fy: 
   en: General
@@ -418,12 +432,12 @@ faq-category-scanner-general:
   fr: 
   pl: 
   ro: 
-  tr:  
+  tr:
 
-faq-category-scanner-testdocument:
-  nl: Toegang met test of vaccinatiebewijs
+faq-scanner-category-three:
+  nl: Problemen
   fy: 
-  en: Getting access with a certificate 
+  en: Problems
   ar: 
   bg: 
   de: 
@@ -431,9 +445,9 @@ faq-category-scanner-testdocument:
   fr: 
   pl: 
   ro: 
-  tr:  
+  tr:
 
-faq-category-scannerapp-privacy:
+faq-scanner-category-four:
   nl: Privacy
   fy: 
   en: Privacy
@@ -444,20 +458,8 @@ faq-category-scannerapp-privacy:
   fr: 
   pl: 
   ro: 
-  tr:  
-
-faq-category-scannerapp-errors:
-  nl: Foutmeldingen
-  fy: 
-  en: Errors
-  ar: 
-  bg: 
-  de: 
-  es: 
-  fr: 
-  pl: 
-  ro: 
   tr:
+
 
 faq-category-one:
   nl: Algemeen
