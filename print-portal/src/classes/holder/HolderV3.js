@@ -34,7 +34,11 @@ class HolderV3 extends _Holder {
     }
 
     get birthDateString() {
-        return dateTool.dateToString(this.birthDate, 'dd LLLL yyyy', store.state.languages.current.locale);
+        if (dateTool.isValidDateString(this.birthDate)) {
+            return dateTool.dateToString(this.birthDate, 'dd LLLL yyyy', store.state.languages.current.locale);
+        } else {
+            return this.birthDate;
+        }
     }
 
     get birthDayStyled() {
