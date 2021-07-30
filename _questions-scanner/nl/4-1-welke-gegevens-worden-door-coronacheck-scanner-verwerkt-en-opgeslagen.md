@@ -1,7 +1,9 @@
 ---
-index: 1
 set: 4
+index: 1
 title: Welke gegevens worden door CoronaCheck Scanner verwerkt en opgeslagen?
+redirect_from: 
+  - /nl/faq-scanner/8-welke-gegevens-worden-door-coronacheck-scanner-verwerkt-en-opgeslagen
 ---
 De CoronaCheck Scanner controleert of de QR-code van de bezoeker geldig is. Ook zie je als controleur een aantal minimale gegevens om te kunnen controleren of het bewijs bij de persoon hoort:  
 
