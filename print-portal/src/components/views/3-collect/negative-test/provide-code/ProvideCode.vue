@@ -165,13 +165,10 @@ export default {
                                 this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
                             }
                             break;
-                        case 'result_blocked':
+                        default:
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'TestResultNone' });
-                            break;
-                        case 'too_many_requests':
-                            this.$store.commit('clearAll');
-                            this.$router.push({ name: 'TestResultSomethingWrong', query: { error: '429' } });
+                            this.$router.push({ name: 'TestResultSomethingWrong', query: { error: errorCause } });
+                            break
                         }
                     } else {
                         this.$store.commit('modal/set', {
@@ -185,7 +182,7 @@ export default {
         },
         getCauseOfError(response) {
             if (response.status === 429) {
-                return 'too_many_requests';
+                return '429';
             } else {
                 if (response.data && response.data.payload) {
                     const payload = cmsDecode(response.data.payload);
