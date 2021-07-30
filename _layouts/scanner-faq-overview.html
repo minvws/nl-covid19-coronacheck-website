@@ -10,10 +10,12 @@
 <body>
   {% include header-slim.html for="scanner" %}
   <main class="content-center" id="content">
-    {% comment %}{% if page.showBreadCrumbs %}
+    {% if page.showBreadCrumbs %}
       {% include components/breadcrumbs.html title=page.title collection=page.collection %}
-    {% endif %}{% endcomment %}
-
+    {% endif %}
+    
+    {% include components/scanner-back-link.html %}
+    
     {% if page.showHomeBtn %}
       <p class="content-center__home return_link">
         <a href="{{ langSlug }}">
