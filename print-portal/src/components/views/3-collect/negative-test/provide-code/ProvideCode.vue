@@ -192,7 +192,11 @@ export default {
                         return 'unknown_error';
                     }
                 } else {
-                    return 'unknown_error';
+                    if (response.status) {
+                        return response.status;
+                    } else {
+                        return 'unknown_error';
+                    }
                 }
             }
         },
