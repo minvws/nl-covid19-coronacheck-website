@@ -20,7 +20,7 @@ export default {
         <div class="section">
             <PageIntro
                 :head="$t('views.testResultSomethingWrong.pageHeader')"
-                :intro="$t('views.testResultSomethingWrong.pageIntro')"/>
+                :intro="$t('views.testResultSomethingWrong.pageIntro', { error: $route.query.error })"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

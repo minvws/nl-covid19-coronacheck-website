@@ -171,7 +171,7 @@ export default {
                             break;
                         case 'too_many_requests':
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'TestResultSomethingWrong' });
+                            this.$router.push({ name: 'TestResultSomethingWrong', query: { error: '429' } });
                         }
                     } else {
                         this.$store.commit('modal/set', {
