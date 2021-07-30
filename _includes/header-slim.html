@@ -1,40 +1,41 @@
 <header>
-  <div class="skiplinks">
-    <a href="#content">
-      {{ site.data.translations.header-skip-to-content[page.lang] }}
-    </a>
-  </div>
-  <div class="header header--slim offset-background">
-
-    <div class="header__homelink">
-          <a href="/{{ page.lang }}">{{ site.data.translations.head-app-name }}</a>
-      </div> 
-
-      <div class="logo">
-        <a href="{{ langSlug }}">
-          <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}" width="40" height="80">
+    <div class="skiplinks">
+        <a href="#content">
+            {{ site.data.translations.header-skip-to-content[page.lang] }}
         </a>
-      </div>
+    </div>
+    <div class="header header--slim offset-background">
 
-      {% if include.for == "scanner" %}
-        <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
-          {{ site.data.translations.faq[page.lang] }}</a>
-      {% else %}
-        <a href="{{ langSlug }}/faq" class="header__quick-link">
-          {{ site.data.translations.faq[page.lang] }}</a>
+        <div class="header__homelink">
+            <a href="/{{ page.lang }}">{{ site.data.translations.head-app-name }}</a>
+        </div> 
+
+        <div class="logo">
+            <a href="{{ langSlug }}">
+                <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}" width="40" height="80">
+            </a>
+        </div>
+
+        {% if include.for == "scanner" %}
+            <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
+                {{ site.data.translations.faq[page.lang] }}
+            </a>
+        {% else %}
+            <a href="{{ langSlug }}/faq" class="header__quick-link">
+                {{ site.data.translations.faq[page.lang] }}
+            </a>
         {% endif %}
 
-      {% include components/language-picker.html headertype="default" %}
+        {% include components/language-picker.html headertype="default" %}
+        
         <div class="container">
-          <div class="header__image">
-
-            {% if include.for == "scanner" %}
-                <img alt="" width="246" height="150" src="/img/2_scannen-header.svg">
-            {% else %}
-                <img alt="" width="246" height="150" src="/img/holder_qrcode_maken.svg">
-            {% endif %}
-          </div>
+            <div class="header__image">
+                {% if include.for == "scanner" %}
+                    <img alt="" width="246" height="150" src="/img/2_scannen-header.svg">
+                {% else %}
+                    <img alt="" width="246" height="150" src="/img/holder_qrcode_maken.svg">
+                {% endif %}
+            </div>
         </div>
     </div>
-  </div>
 </header>
