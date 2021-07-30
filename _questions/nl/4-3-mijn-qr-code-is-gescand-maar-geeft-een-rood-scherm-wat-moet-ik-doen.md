@@ -16,6 +16,6 @@ Dit kun je doen:
 - Controleer de tijd op je telefoon. Als de tijd op jouw telefoon voor of achter loopt of op een andere tijdzone staat kan dat tot een rood scherm leiden
 - Sluit de CoronaCheck-app af. Start hem daarna opnieuw op en laat je QR-code nogmaals scannen
 - Blijft er een rood scherm komen, terwijl je wel een geldig bewijs hebt? Neem dan contact op met de CoronaCheck helpdesk, telefoonnummer: 
-<a href="tel:08001421">0800-1421</a>. Of als je vanuit het buitenland belt: <a href="tel:+31707503720">+31 70 750 37 20</a>
+{{ site.data.translations.phone-action[page.lang] }}. Of als je vanuit het buitenland belt: {{ site.data.translations.phone-action-abroad[page.lang] }}
 
 Er is altijd een groen scherm nodig voor toegang. Laat daarom je geldige QR-code zien via de app of op papier. Heb je geen geldig coronabewijs? Dan kun je helaas niet naar binnen. 

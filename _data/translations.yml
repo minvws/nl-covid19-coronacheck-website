@@ -1585,6 +1585,10 @@ phone-ggd:
   nl: '<a href="tel:08005090">0800-5090</a>'
   en: '<a href="tel:08005090">0800-5090</a>'
 
+phone-action-abroad:
+  nl: '<a href="tel:+31707503720">+31 70 750 37 20</a>'
+  en: '<a href="tel:+31707503720">+31 70 750 37 20</a>'
+
 phone-digid-helpdesk:
   nl: '<a href="tel:0881236555">088 123 65 55</a>'
   en: '<a href="tel:+31881236555">+31 88 123 65 55</a>'

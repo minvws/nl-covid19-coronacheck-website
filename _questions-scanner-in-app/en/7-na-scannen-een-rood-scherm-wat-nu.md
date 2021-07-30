@@ -8,6 +8,6 @@ A red screen means the visitor’s QR code is not valid. This does not mean the 
 - Check if the visitor has used a screenshot instead of the QR code directly from the app. Scanning a screenshot will lead to a red screen.
 - Check whether the visitor shows a Dutch QR code. An international QR code results in a red screen.
 - Ask the visitor to restart the app. And try scanning again. 
-- Keep getting a red screen while the visitor has a vaccination or positive / negative test result? Please refer them to our helpdesk at <a href="tel:08001421">0800-1421</a> (if you are calling from abroad: <a href="tel:+31707503720">+31 70 750 37 20</a>)
+- Keep getting a red screen while the visitor has a vaccination or positive / negative test result? Please refer them to our helpdesk at {{ site.data.translations.phone-action[page.lang] }} (if you are calling from abroad: {{ site.data.translations.phone-action-abroad[page.lang] }})
 
 At all times, a green screen is required for access. Does the visitor not have a (valid) QR code? Then they’re not allowed access. 
