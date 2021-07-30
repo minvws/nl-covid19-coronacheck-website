@@ -44,15 +44,17 @@ export default {
                 return this.vaccination.doseNumber;
             }
         },
+        showDosesString() {
+            return this.vaccination.doseNumber.length > 0 && this.vaccination.totalDoses.length > 0;
+        },
+        isCompleted() {
+            return this.vaccination.completedByMedicalStatement === true || this.vaccination.completedByPersonalStatement === true;
+        },
         finalDosisString() {
-            const isCompleted = () => {
-                return this.vaccination.completedByMedicalStatement === true || this.vaccination.completedByPersonalStatement === true;
-            }
-
             const isNotCompleted = () => {
                 // mind completedByMedicalStatement, completedByPersonalStatement can be null.
                 // So this is not the same as !isCompleted()
-                return !isCompleted() && (this.vaccination.completedByMedicalStatement === false || this.vaccination.completedByPersonalStatement === false)
+                return !this.isCompleted && (this.vaccination.completedByMedicalStatement === false || this.vaccination.completedByPersonalStatement === false)
             }
             //
             // const isUnknown = () => {
@@ -71,11 +73,11 @@ export default {
                 return this.vaccination.completionReason === '';
             }
 
-            if (isCompleted() && reasonIsMissing()) {
+            if (this.isCompleted && reasonIsMissing()) {
                 return this.$t('components.vaccination.info.finalDosisValue.yes');
-            } else if (isCompleted() && reasonIsRecovery()) {
+            } else if (this.isCompleted && reasonIsRecovery()) {
                 return this.$t('components.vaccination.info.finalDosisValue.recovery');
-            } else if (isCompleted() && reasonIsPriorEvent()) {
+            } else if (this.isCompleted && reasonIsPriorEvent()) {
                 return this.$t('components.vaccination.info.finalDosisValue.prior');
             } else if (isNotCompleted()) {
                 return this.$t('components.vaccination.info.finalDosisValue.no');
@@ -161,7 +163,9 @@ export default {
                         {{vaccineManufacturer}}
                     </dd>
                 </div>
-                <div class="dl__row">
+                <div
+                    v-if="showDosesString"
+                    class="dl__row">
                     <dt>
                         {{$t('components.vaccination.info.doses')}}:
                     </dt>
@@ -169,7 +173,9 @@ export default {
                         {{dosesString}}
                     </dd>
                 </div>
-                <div class="dl__row">
+                <div
+                    v-if="isCompleted"
+                    class="dl__row">
                     <dt>
                         {{$t('components.vaccination.info.finalDosis')}}
                     </dt>
