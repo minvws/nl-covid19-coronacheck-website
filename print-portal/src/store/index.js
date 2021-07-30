@@ -19,7 +19,6 @@ const state = {
     testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
     verificationNeeded: false,
     verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
-    testResultStatus: 'idle',
     signedAt: null,
     // we keep this registration for the focus of screenreaders.
     visitedHomePage: false,
@@ -54,9 +53,6 @@ const mutations = {
     updateProperty(state, payload) {
         return _base.mutations.updateProperty(state, payload);
     },
-    setTestResultStatus(state, testResultStatus) {
-        state.testResultStatus = testResultStatus;
-    },
     setQrCode(state, qrCode) {
         state.qrCode = qrCode;
     },
@@ -88,13 +84,11 @@ const mutations = {
         // clear all except testcode
         state.verificationCode = '';
         state.verificationNeeded = false;
-        state.testResultStatus = 'idle';
     },
     clearAll(state) {
         state.testCode = '';
         state.verificationNeeded = false;
         state.verificationCode = '';
-        state.testResultStatus = 'idle';
         state.signedEvents = [];
         state.qrs.proof = null;
         state.signedAt = null;
@@ -103,7 +97,6 @@ const mutations = {
         state.testCode = '';
         state.verificationNeeded = false;
         state.verificationCode = '';
-        state.testResultStatus = 'idle';
         state.signedEvents = [];
         state.qrs.proof = null;
         state.userConsent = false;
