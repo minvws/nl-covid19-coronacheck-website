@@ -1642,3 +1642,26 @@ openingsplan-link:
 wetransfer-toolkit-link:
   nl: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs voor evenementen</a>'
   en: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs for events</a>'
+quicklinks-organising:
+  nl: Een evenement organiseren
+  en: Organising an event
+
+quicklinks-organising-link:
+  nl: /nl/faq-scanner#evenement-organiseren
+  en: /en/faq-scanner#organising-an-event
+
+quicklinks-how-it-works:
+  nl: Zo werkt scannen
+  en: How scanning works
+
+quicklinks-how-it-works-link:
+  nl: /nl/scanner/zo-werkt-scannen
+  en: /en/scanner/zo-werkt-scannen
+
+quicklinks-try:
+  nl: Oefen het scannen
+  en: Try scanning
+
+quicklinks-try-link:
+  nl: /nl/scanner/uitproberen
+  en: /en/scanner/uitproberen
