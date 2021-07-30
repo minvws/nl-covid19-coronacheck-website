@@ -165,7 +165,7 @@ scanner-header-img:
   nl: /img/CoronaCheckScanner_app-tall.png
   en: /img/CoronaCheckScanner_app-tall-en.png
 
-coronacheck-scanner-link:
+coronacheck-scanner-linktext:
   nl: Scanner
   en: Scanner
 
@@ -263,19 +263,6 @@ govlogo:
   pl: Logo Rządu Holandii, strona główna
   ro: Siglă Guvernul Țărilor de Jos, pagina inițială
   tr: Logo Hollanda Devleti, ana sayfa
-    
-phone-action:
-  nl: <a href="tel:08001421">0800-1421</a>
-  fy: <a href="tel:08001421">0800-1421</a>
-  en: <a href="tel:08001421">0800-1421</a>
-  ar: <a href="tel:0800-1421" dir="ltr">0800-1421</a>
-  bg: <a href="tel:08001421">0800-1421</a>
-  de: <a href="tel:08001421">0800-1421</a>
-  fr: <a href="tel:08001421">0800-1421</a>
-  es: <a href="tel:08001421">0800-1421</a>
-  pl: <a href="tel:08001421">0800-1421</a>
-  ro: <a href="tel:08001421">0800-1421</a>
-  tr: <a href="tel:08001421">0800-1421</a>
     
 minvws:
   nl: "Ministerie van Volksgezondheid,<br>Welzijn en Sport"
@@ -1542,7 +1529,7 @@ print-version-url:
   fy: 
   en: /en/print
 
-print-version-url-link: 
+print-version-url-linktext: 
   nl: Maak papieren bewijs
   fy: 
   en: Make certificate on paper
@@ -1577,76 +1564,11 @@ status-block:
   nl: '<p>Bekijk op de <a href="https://status.coronacheck.nl">statuspagina</a> of er op dit moment een storing bekend is.  Hier vind je de laatste status en wat je in de tussentijd kunt doen.</p><p>Staat jouw probleem of storing er niet tussen? Mogelijk is er dan al een oplossing voor. Kijk dan tussen de meestgestelde vragen.</p>'
   en: '<p>Check the <a href="https://status.coronacheck.nl/en/">status page</a> to see if there is a known issue. Here you will find the latest status and what you can do in the meantime.</p><p>Is your problem or technical issue not listed? There may already be a solution. Please check the most frequently asked questions.</p>'
 
-wijsoprijs-link:
-  nl: '<a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">wijsopreis.nl</a>'
-  en: '<a href="https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Travelling outside the Netherlands</a>'
-
-phone-ggd:
-  nl: '<a href="tel:08005090">0800-5090</a>'
-  en: '<a href="tel:08005090">0800-5090</a>'
-
-phone-action-abroad:
-  nl: '<a href="tel:+31707503720">+31 70 750 37 20</a>'
-  en: '<a href="tel:+31707503720">+31 70 750 37 20</a>'
-
-phone-digid-helpdesk:
-  nl: '<a href="tel:0881236555">088 123 65 55</a>'
-  en: '<a href="tel:+31881236555">+31 88 123 65 55</a>'
-
-phone-tvt-helpdesk:
-  nl: '<a href="tel:0887770809">088 777 08 09</a>'
-  en: '<a href="tel:+31887770809">+31 88 777 08 09</a>'
-
-phone-tvjr-helpdesk:
-  nl: '<a href="tel:0887770810">088 777 08 10</a>'
-  en: '<a href="tel:+31887770810">+31 88 777 08 10</a>'
-
-coronabewijs-hulp-link: 
-  nl: '<a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/frequent-problems" rel="noopener noreferrer" target="_blank">Frequent problems and solutions getting a COVID certificate</a>'
-
-testen-voor-toegang-link: 
-  nl: '<a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>'
-  en: '<a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Testen voor Toegang</a>'
-
-reizen-en-vakantie-link: 
-  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie" rel="noopener noreferrer" target="_blank">Reizen en vakantie</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/travelling-abroad" rel="noopener noreferrer" target="_blank">Travelling abroad (information for people living in the Netherlands)</a>'
-
-testenvoorjereis-link: 
-  nl: '<a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank">testenvoorjereis.nl</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Free coronatest for travellers</a>'
-
-coronatest-link: 
-  nl: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank">coronatest.nl</a>'
-  en: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">coronatest.nl</a>'
-
-mijnrivm-link:
-  nl: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank">MijnRIVM - vaccinaties</a>'
-  en: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank" hreflang="nl">MyRIVM - vaccinations</a>'
-
-buitenlandvaccinatie-link:
-  nl: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/vaccinatiebewijs/gevaccineerd-in-het-buitenland" rel="noopener noreferrer" target="_blank">Vaccinatiebewijs na vaccinatie in het buitenland</a>
-  en: <a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/vaccinated-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Getting proof of vaccination after being vaccinated outside of The Netherlands</a>
-
-voororganisatoren-link:
-  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/organisatoren" rel="noopener noreferrer" target="_blank">Testen voor toegang: informatie voor organisatoren</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/vaccinated-outside-the-netherlands" rel="noopener noreferrer" target="_blank" lang="nl" hreflang="nl">Testen voor toegang: informatie voor organisatoren (Dutch)</a>'
-
-# {{ site.data.translations.openingsplan-link[page.lang] }}
-openingsplan-link:
-  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank">Coronavirus Covid-19 Openingsplan</a>'
-  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank" lang="nl" hreflang="nl">Coronavirus Covid-19 Openingsplan (Dutch)</a>'
-
-# {{ site.data.translations.wetransfer-toolkit-link[page.lang] }}
-wetransfer-toolkit-link:
-  nl: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs voor evenementen</a>'
-  en: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs for events</a>'
 quicklinks-organising:
   nl: Een evenement organiseren
   en: Organising an event
 
-quicklinks-organising-link:
+quicklinks-organising-url:
   nl: /nl/faq-scanner#evenement-organiseren
   en: /en/faq-scanner#organising-an-event
 
@@ -1654,7 +1576,7 @@ quicklinks-how-it-works:
   nl: Zo werkt scannen
   en: How scanning works
 
-quicklinks-how-it-works-link:
+quicklinks-how-it-works-url:
   nl: /nl/scanner/zo-werkt-scannen
   en: /en/scanner/zo-werkt-scannen
 
@@ -1662,6 +1584,6 @@ quicklinks-try:
   nl: Oefen het scannen
   en: Try scanning
 
-quicklinks-try-link:
+quicklinks-try-url:
   nl: /nl/scanner/uitproberen
   en: /en/scanner/uitproberen

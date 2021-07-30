@@ -5,4 +5,4 @@ title: What if my scanner suddenly doesn’t work?
 redirect_from: 
   - /en/faq-scanner/6-wat-als-mijn-scanner-plotseling-niet-werkt
 ---
-Close and restart the app. Still doesn’t work? Phone {{ site.data.translations.phone-action[page.lang] }} (if you are calling from abroad: {{ site.data.translations.phone-action-abroad[page.lang] }}) or email [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
+Close and restart the app. Still doesn’t work? Phone {{ site.data.links.phone-helpdesk[page.lang] }} (if you are calling from abroad: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}) or email [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).

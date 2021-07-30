@@ -7,4 +7,4 @@ redirect_from:
 ---
 The EU Digital COVID Certificate (DCC for short) is digital or physical proof that someone has been vaccinated, recovered from coronavirus or recently tested negative for coronavirus. You can create this proof yourself in the app or via [www.coronacheck.nl/print](/print)  in the form of a QR code.
 
-Countries decide for themselves which of these proofs are accepted upon entry. And under what conditions. Before you travel, please check {{ site.data.translations.wijsoprijs-link[page.lang] }} to see if you can use CoronaCheck where you’re heading.
+Countries decide for themselves which of these proofs are accepted upon entry. And under what conditions. Before you travel, please check {{ site.data.links.wijsoprijs[page.lang] }} to see if you can use CoronaCheck where you’re heading.

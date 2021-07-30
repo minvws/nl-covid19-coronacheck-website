@@ -10,9 +10,9 @@ redirect_from:
 
 You can create your coronavirus pass (EU Digital COVID Certificate, DCC) to travel with CoronaCheck. [Read more about how to create a Digital COVID Certificate](https://coronacheck.nl/en/faq/1-1-hoe-werkt-de-coronacheck-app/). 
 
-Are you going on a trip? Please check {{ site.data.translations.wijsoprijs-link[page.lang] }} to find out which coronavirus pass you need in the country you’re planning to visit.
+Are you going on a trip? Please check {{ site.data.links.wijsoprijs[page.lang] }} to find out which coronavirus pass you need in the country you’re planning to visit.
 
-From July 1st, you can get tested for free when you go travelling. Read more about this on {{ site.data.translations.reizen-en-vakantie-link[page.lang] }}.
+From July 1st, you can get tested for free when you go travelling. Read more about this on {{ site.data.links.reizen-en-vakantie[page.lang] }}.
 
 If you have any questions, you can turn to the Ministry of Foreign Affairs. <a href="https://www.netherlandsworldwide.nl/contact/contacting-the-24-7-bz-contact-centre" rel="noopener noreferrer" target="_blank">Please reach out to its 24/7 contact centre</a>. They are available 24 hours per day, 7 days per week.
 
@@ -21,7 +21,7 @@ If you have any questions, you can turn to the Ministry of Foreign Affairs. <a h
 Do you want to retrieve vaccination details in the app? [Read here how to retrieve your vaccination details](/en/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
 ### Get your complete vaccination
-In order to create a domestic QR code, you need to be fully vaccinated. An international QR code can be created after one vaccination. Please be aware: a QR code based on 1 vaccination is not valid in all countries. Make sure to check the travel advice on {{ site.data.translations.wijsoprijs-link[page.lang] }}.
+In order to create a domestic QR code, you need to be fully vaccinated. An international QR code can be created after one vaccination. Please be aware: a QR code based on 1 vaccination is not valid in all countries. Make sure to check the travel advice on {{ site.data.links.wijsoprijs[page.lang] }}.
 
 ### Can’t create a certificate and were you vaccinated in the Netherlands?
 Are you, for example, experiencing one of the following problems:
@@ -30,13 +30,13 @@ Are you, for example, experiencing one of the following problems:
 - Do you see both vaccinations on one day?
 - Can't you retrieve your vaccination details, even though your last vaccination was over 3 days ago?
 
-Then your vaccination details may not have been registered properly. Please contact your vaccinator (GGD via {{ site.data.translations.phone-ggd[page.lang] }}, hospital or general practitioner or another healthcare provider). 
+Then your vaccination details may not have been registered properly. Please contact your vaccinator (GGD via {{ site.data.links.phone-ggd[page.lang] }}, hospital or general practitioner or another healthcare provider). 
 
 Please note: are your details properly registered with the GGD, but are you still unable to retrieve your details? We are aware of this issue. We’re working hard to find out where the cause is in order to resolve the issue. If you are going on a trip or want to visit an event within a few days, the advice is to schedule a free test appointment.
 
 ### Were you vaccinated abroad?
 
-At this time, unfortunately you cannot use CoronaCheck to create a vaccination certificate yet. In some countries, you can create a coronavirus pass while you are visiting that is also valid in the Netherlands. You can read more about it on {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}.
+At this time, unfortunately you cannot use CoronaCheck to create a vaccination certificate yet. In some countries, you can create a coronavirus pass while you are visiting that is also valid in the Netherlands. You can read more about it on {{ site.data.links.coronabewijs-hulp[page.lang] }}.
 
 ## Test certificate
 ### Testing for access
@@ -53,12 +53,12 @@ You may use a positive test result to create a certificate of recovery with Coro
 - The certificate of recovery is valid from 11 days after the positive test result, but the certificate of recovery can be created earlier;
 - The positive test result is no more than 180 days old.
 
-Do you meet these requirements, but are you unable to retrieve your recovery details in CoronaCheck? Please contact the GGD ({{ site.data.translations.phone-ggd[page.lang] }}) to check your details.
+Do you meet these requirements, but are you unable to retrieve your recovery details in CoronaCheck? Please contact the GGD ({{ site.data.links.phone-ggd[page.lang] }}) to check your details.
 
 <strong>Please note:</strong> are your details properly registered with the GGD, but are you still unable to retrieve your details?
 
 We are aware of this issue. We’re working hard to find out where the cause is in order to resolve the issue. If you are going on a trip or want to visit an event within a few days, the advice is to schedule a free test appointment. 
-Make a test appointment to be able to travel within Europe via: {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}. To gain access to an event in the Netherlands, make a test appointment via {{ site.data.translations.testen-voor-toegang-link[page.lang] }}.
+Make a test appointment to be able to travel within Europe via: {{ site.data.links.coronabewijs-hulp[page.lang] }}. To gain access to an event in the Netherlands, make a test appointment via {{ site.data.links.testen-voor-toegang[page.lang] }}.
 
 
 If you’ve had a PCR test, you’ll receive a domestic and an international QR code. Did you do an antigen test? Then you’ll only receive a QR code valid for access within the Netherlands.
@@ -74,7 +74,7 @@ To retrieve your vaccination details in CoronaCheck, you need a valid DigiD. <a 
 
 You can log in with DigiD via the app (<a href="https://www.digid.nl/en/login-methods/digid-app" rel="noopener noreferrer" target="_blank">Download the DigiD app here</a>) or via the DigiD website, using SMS verification. <a href="https://www.digid.nl/en/login-methods/sms-verification" rel="noopener noreferrer" target="_blank">Read more about setting up SMS verification here</a>.
 
-Do you need more information about DigiD? Contact the Helpdesk on  {{ site.data.translations.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
+Do you need more information about DigiD? Contact the Helpdesk on  {{ site.data.links.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
 
 If you don’t have a DigiD or no digital means, please call the CoronaCheck Helpdesk. 
 
@@ -88,7 +88,7 @@ Do you already have a DigiD but are you unable to log in? This is what you can d
 - Change your internet connection, for example stop or try using wi-fi and try again;
 - Restart your phone and try again;
 
-Is it still not possible to log in? Please contact the DigiD helpdesk on {{ site.data.translations.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
+Is it still not possible to log in? Please contact the DigiD helpdesk on {{ site.data.links.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
 
 ## Create printed coronavirus pass  
 

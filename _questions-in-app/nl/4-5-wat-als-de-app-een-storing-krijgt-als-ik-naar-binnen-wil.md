@@ -7,4 +7,4 @@ redirect_from:
 ---
 Sluit de app dan af en start 'm opnieuw op. 
 
-Werkt de app nog steeds niet? Bel {{ site.data.translations.phone-action[page.lang] }}. Of als je vanuit het buitenland belt: {{ site.data.translations.phone-action-abroad[page.lang] }}. Of mail naar [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
+Werkt de app nog steeds niet? Bel {{ site.data.links.phone-helpdesk[page.lang] }}. Of als je vanuit het buitenland belt: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}. Of mail naar [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
