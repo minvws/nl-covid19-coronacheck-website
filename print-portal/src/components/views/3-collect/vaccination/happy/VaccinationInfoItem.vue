@@ -38,10 +38,14 @@ export default {
             return manufacturer ? manufacturer.name : '-';
         },
         dosesString() {
-            if (this.vaccination.totalDoses) {
+            if (this.vaccination.doseNumber.length > 0 && this.vaccination.totalDoses.length > 0) {
                 return this.vaccination.doseNumber + ' ' + this.$t('of') + ' ' + this.vaccination.totalDoses;
             } else {
-                return this.vaccination.doseNumber;
+                if (this.vaccination.doseNumber.length > 0) {
+                    return this.vaccination.doseNumber;
+                } else {
+                    return '? ' + this.$t('of') + ' ' + this.vaccination.totalDoses;
+                }
             }
         },
         showDosesString() {
