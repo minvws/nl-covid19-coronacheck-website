@@ -14,4 +14,4 @@ A recovery certificate becomes valid 11 days after the positive test, until 180 
 
 A vaccination certificate becomes valid 14 days after the last vaccination. How long immunity from a vaccination lasts is still being researched. When we know how long you’re protected by a vaccination, its validity will be updated based on that information. Until then, the proof of vaccination is valid indefinitely.
 
-Are you traveling to another country? Rules and regulations differ from country to country. Check {{ site.data.translations.wijsoprijs-link[page.lang] }} before you leave to see what certificate you need and if your international QR-code is valid at your destination.
+Are you traveling to another country? Rules and regulations differ from country to country. Check {{ site.data.links.wijsoprijs[page.lang] }} before you leave to see what certificate you need and if your international QR-code is valid at your destination.

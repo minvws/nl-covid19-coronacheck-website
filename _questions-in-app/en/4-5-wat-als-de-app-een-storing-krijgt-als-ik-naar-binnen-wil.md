@@ -7,4 +7,4 @@ redirect_from:
 ---
 Completely close the app and launch it again.
 
-If the app still doesn’t work, contact the CoronaCheck helpdesk. Phone {{ site.data.translations.phone-action[page.lang] }} (if you are calling from abroad: {{ site.data.translations.phone-action-abroad[page.lang] }}) or email [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
+If the app still doesn’t work, contact the CoronaCheck helpdesk. Phone {{ site.data.links.phone-helpdesk[page.lang] }} (if you are calling from abroad: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}) or email [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).

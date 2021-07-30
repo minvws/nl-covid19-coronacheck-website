@@ -18,7 +18,7 @@ For access to places and events in the Netherlands, you can have yourself tested
 <a href="https://www.testenvoortoegang.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Make appointment<span class="screen-reader-text"> through <span lang="nl">Testen voor Toegang</span></span></a>
 
 ## Testing for travelers
-Do you want to travel? Free corona tests are available for travelers. For more information, visit {{ site.data.translations.testenvoorjereis-link[page.lang] }}.
+Do you want to travel? Free corona tests are available for travelers. For more information, visit {{ site.data.links.testenvoorjereis[page.lang] }}.
 
 <a href="https://afspraak.testenvoorjereis.nl/" class="btn btn--cta" rel="noopener noreferrer" target="_blank" hreflang="nl">Make appointment<span class="screen-reader-text"> through <span lang="nl">Testen voor je Reis</span></span></a>
 

@@ -9,7 +9,7 @@ To retrieve your vaccination details in CoronaCheck, you need a valid DigiD. <a 
 
 You can log in with DigiD via the app (<a href="https://www.digid.nl/en/login-methods/digid-app" rel="noopener noreferrer" target="_blank">Download the DigiD app here</a>) or via the DigiD website, using SMS verification. <a href="https://www.digid.nl/en/login-methods/sms-verification" rel="noopener noreferrer" target="_blank">Read more about setting up SMS verification here</a>.
 
-Do you need more information about DigiD? Contact the Helpdesk on  {{ site.data.translations.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
+Do you need more information about DigiD? Contact the Helpdesk on  {{ site.data.links.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
 
 If you don’t have a DigiD or no digital means, please call the CoronaCheck Helpdesk. 
 
@@ -25,4 +25,4 @@ Do you already have a DigiD but are you unable to log in? This is what you can d
 - Restart your phone and try again;
 - Try logging in to DigiD from another device.
 
-Is it still not possible to log in? Please contact the DigiD helpdesk on {{ site.data.translations.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
+Is it still not possible to log in? Please contact the DigiD helpdesk on {{ site.data.links.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
