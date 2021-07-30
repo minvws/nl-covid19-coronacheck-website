@@ -123,7 +123,7 @@ const nl = {
             },
             'european': {
                 'pageHeader': 'Print jouw internationale vaccinatiebewijs',
-                'pageIntro': '<h4>Jouw bewijs</h4><p>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Dit kan komen doordat je nog maar één prik hebt gehad. Probeer opnieuw een Nederlands bewijs te maken als je volledig gevaccineerd bent.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+                'pageIntro': '<h4>Jouw bewijs</h4><p>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Dit kan komen doordat je nog maar één vaccinatie hebt gehad. Probeer opnieuw een Nederlands bewijs te maken als je volledig gevaccineerd bent.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
             }
             // domestic only is a non existing scenario for vaccination
         },
@@ -157,9 +157,9 @@ const nl = {
             'dateOfBirth': 'Geboortedatum',
             'dateOfTest': 'Testdatum',
             'testResult': 'Testuitslag',
-            'identificationCode': 'Uniek certificaatnummer',
             'validFrom': 'Geldig vanaf',
-            'validUntil': 'Geldig tot'
+            'validUntil': 'Geldig tot',
+            'eventsFetchedAt': 'Gegevens opgehaald bij'
         },
         'test': {
             'resultNegative': 'Negatieve testuitslag',
@@ -172,21 +172,23 @@ const nl = {
                 'testResultPositive': 'positief (corona)',
                 'testLocation': 'Testlocatie',
                 'testManufacturer': 'Testproducent',
-                'testCountry': 'Getest in'
+                'testCountry': 'Getest in',
+                'identificationCode': 'Uniek testnummer'
             }
         },
         'vaccination': {
             'vaccination': 'Vaccinatie',
             'info': {
-                'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald',
+                'detailsRetrieved': 'Deze gegevens van je vaccinatie zijn opgehaald bij %{provider}',
                 'pathogen': 'Ziekteverwekker',
                 'vaccine': 'Vaccin',
                 'vaccineType': 'Vaccin type',
                 'manufacturer': 'Producent van het vaccin',
                 'doses': 'Doses',
                 'finalDosis': 'Is dit de laatste dosis van je vaccinatie?',
-                'vaccinationDate': 'Prikdatum',
+                'vaccinationDate': 'Vaccinatiedatum',
                 'vaccinationCountry': 'Gevaccineerd in',
+                'identificationCode': 'Uniek vaccinatienummer',
                 'finalDosisValue': {
                     'yes': 'Ja',
                     'recovery': 'Ja (eerder corona gehad)',
@@ -316,8 +318,10 @@ const nl = {
             'author': 'CoronaCheck'
         }
     },
+    'and': 'En',
     'back': 'Terug',
     'close': 'Sluiten',
+    'details': 'Details',
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
     'goBackToStart': 'Naar home',
