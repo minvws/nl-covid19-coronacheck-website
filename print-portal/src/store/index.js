@@ -44,6 +44,9 @@ const getters = {
     },
     getNlTestType: (state) => (testTypeCode) => {
         return state.holderConfig.nlTestTypes.find(nlTestType => nlTestType.code === testTypeCode)
+    },
+    getVaccineInfo: (state) => (hkpCode) => {
+        return state.holderConfig.hpkCodes.find(vaccineInfo => vaccineInfo.code === hkpCode)
     }
 };
 

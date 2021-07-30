@@ -16,25 +16,29 @@ export default {
         vaccination() {
             return this.signedEvent.event.vaccination;
         },
+        vaccineInfo() {
+            return this.$store.getters.getVaccineInfo(this.vaccination.hpkCode);
+        },
         vaccineName() {
-            let vaccine;
-            if (this.vaccination.hpkCode.length > 0) {
-                vaccine = this.$store.state.holderConfig.hpkCodes.find(hpkCode => {
-                    return String(hpkCode.code) === this.vaccination.hpkCode;
-                })
-            } else if (this.vaccination.brand.length > 0) {
-                vaccine = this.$store.state.holderConfig.euBrands.find(euBrand => {
-                    return euBrand.code === this.vaccination.brand;
-                })
+            if (this.vaccineInfo) {
+                return this.vaccineInfo.name;
+            } else {
+                if (this.vaccination.brand.length > 0) {
+                    const brand = this.$store.getters.getEuBrand(this.vaccination.brand);
+                    return brand ? brand.name : ''
+                } else {
+                    return '';
+                }
             }
-            return vaccine ? vaccine.name : ''
         },
         vaccineType() {
-            const vaccineType = this.$store.getters.getVaccineType(this.vaccination.type);
+            const typeCode = this.vaccineInfo ? this.vaccineInfo.vp : this.vaccination.type;
+            const vaccineType = this.$store.getters.getVaccineType(typeCode);
             return vaccineType ? vaccineType.name : '-';
         },
         vaccineManufacturer() {
-            const manufacturer = this.$store.getters.getVaccineManufacturer(this.vaccination.manufacturer);
+            const manufacturerCode = this.vaccineInfo ? this.vaccineInfo.ma : this.vaccination.manufacturer;
+            const manufacturer = this.$store.getters.getVaccineManufacturer(manufacturerCode);
             return manufacturer ? manufacturer.name : '-';
         },
         dosesString() {
