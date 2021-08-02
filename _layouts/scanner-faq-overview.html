@@ -20,7 +20,9 @@
       {% include components/breadcrumbs.html title=page.title collection=page.collection %}
     {% endif %}
     
+    {% comment %}
     {% include components/scanner-back-link.html %}
+    {% endcomment %}
     
     {% if page.showHomeBtn %}
       <p class="content-center__home return_link">
@@ -102,7 +104,6 @@
             </div>
         {% endif %}
 
-        <!-- ------- -->
 
       </div>
     </div>

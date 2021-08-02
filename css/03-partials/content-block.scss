@@ -11,6 +11,24 @@
     }
 }
 
+.container-breadcrumbs {
+    position: relative;
+    display: block;
+    background: #fff;
+    padding: 20px 20px;
+    max-width: 940px;
+
+    @media (min-width: 740px) {
+        width: calc(100% - (54px * 2));
+        padding: 20px 80px;
+        margin: 0 auto;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 0;
+    }
+}
+
 .content-center--statement {
     border-radius: 0;
     margin-top: 0;
