@@ -1,16 +1,12 @@
 .demo-codes {
-    display: block;
-    margin: 0 auto 1em;
-    padding: 1em 0;
-    position: relative;
+    margin: 1em auto;
+    color: #333;
+    padding: 0 20px;
+    max-width: 940px;
 
     @media (min-width: 740px) {
         width: calc(100% - (54px * 2));
-        padding: 50px 80px;
-    }
-
-    @media (min-width: 960px) {
-        max-width: 940px;
+        padding: 0 80px;
     }
 
     a {
@@ -36,16 +32,19 @@
 }
 
 .demo-codes-layout {
-    flex-wrap: wrap;
-    display: flex;
     color: #333333;
-    justify-content: space-evenly;
+
+    @media (min-width: 740px) {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 .demo-codes__block {
     text-align: center;
     position: relative;
-    margin: 16px;
+    margin: 16px 0;
     display: block;
     width: 100%;
 

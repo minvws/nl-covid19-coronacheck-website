@@ -1,13 +1,20 @@
 .scanner-instructions {
     margin: 1em auto;
     color: #333;
+    padding: 0 20px;
+    max-width: 940px;
+
+    @media (min-width: 740px) {
+        width: calc(100% - (54px * 2));
+        padding: 0 80px;
+    }
 
     a {
         text-decoration: underline;
     }
 }
 
-.scanner-instructions__title {
+.scanner-instructions__pagetitle {
     margin: 0 0 0.5em;
     font-size: 30px;
 }
@@ -22,7 +29,7 @@
 
     @media (min-width: 740px) {
         padding: 2em 0.5em;
-        margin: 30px auto 5em auto;
+        margin: 30px auto 2em auto;
         display: flex;
         justify-content: space-between;
     }
@@ -30,21 +37,24 @@
 
 .scanner-instructions__column-image {
     margin-bottom: 1em;
+    text-align: center;
 
     @media (min-width: 740px) {
-        width: 50%;
+        flex: 0 0 250px;
         text-align: right;
         align-items: center;
         justify-content: flex-end;
         margin-bottom: 0em;
-        margin-left: 1.5em;
+    }
+
+    @media (min-width: 1100px) {
+        flex: 0 0 50%;
     }
 }
 
 .scanner-instructions__column-content {
     @media (min-width: 740px) {
-        width: 50%;
-        margin-right: 1.5em;
+        flex: 0 0 50%;
         margin-left: 4.5em;
     }
 }
@@ -54,29 +64,21 @@
     max-height: 200px;
     width: auto;
 
-    @media (min-width: 740px) {
-        width: 150px;
-        max-height: inherit;
-        height: auto;
-    }
+    // @media (min-width: 740px) {
+    //     width: 150px;
+    //     max-height: inherit;
+    //     height: auto;
+    // }
 }
 
 .scanner-instructions__step:nth-child(3n) {
     .scanner-instructions__image {
-        @media (min-width: 740px) {
-            width: 340px;
-        }
-    }
-}
-
-.scanner-instructions__title__highlight {
-    color: $color-coronacheck_blue;
-    font-size: 16px;
-    padding: 0.6em 0 0;
-    display: block;
-
-    @media (min-width: 740px) {
-        padding: 0.8em 0;
+        // @media (min-width: 740px) {
+        //     width: 150px;
+        // }
+        // @media (min-width: 1100px) {
+        //     width: 340px;
+        // }
     }
 }
 
@@ -87,10 +89,6 @@
     font-weight: 800;
     display: block;
     text-align: left;
-
-    @media (min-width: 740px) {
-        font-size: 32px;
-    }
 }
 
 .scanner-instructions__text {

@@ -1,7 +1,7 @@
 {% assign scanner-instructions = site.scanner-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}
 
 <section class="scanner-instructions">
-    <h2 class="scanner-instructions__title">{{ site.data.translations.scanner-instructions-title[page.lang] }}</h2>
+    <h2 class="scanner-instructions__pagetitle">{{ site.data.translations.scanner-instructions-title[page.lang] }}</h2>
 
     {% for step in scanner-instructions %}
         <article class="scanner-instructions__step" id="step-{{ step.index }}">
@@ -14,10 +14,9 @@
             >
             </div>
             <div class="scanner-instructions__column-content">
-            <h2>
-                {% comment %}<span class="scanner-instructions__title__highlight">{{story.title-highlight}}</span>{% endcomment %}
-                <span class="scanner-instructions__title">{{step.title}}</span>
-            </h2>
+            <h3 class="scanner-instructions__title">
+                {{step.title}}
+            </h3>
             <div class="scanner-instructions__text">
                 {{ step.content  }}
             </div>

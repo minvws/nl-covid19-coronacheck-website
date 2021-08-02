@@ -9,12 +9,17 @@
 {% include head.html for="scanner" %}
 <body>
   {% include header-slim.html for="scanner" %}
-  <main class="content-center" id="content">
-    {% include components/scanner-back-link.html %}
+  <main class="" id="content">
+    <!-- {% include components/scanner-back-link.html %} -->
+    {% if page.showBreadCrumbs %}
+    <div class="container-breadcrumbs">
+      {% include components/breadcrumbs.html title=page.title collection=page.collection %}
+    </div>
+    {% endif %}
 
     {% include components/demo-codes.html %}
 
-    {% include components/scanner-back-link.html %}
+    <!-- {% include components/scanner-back-link.html %} -->
   </main>
   {% include footer.html  for="scanner" %}
 </body>
