@@ -166,12 +166,9 @@ export default {
                             }
                             break;
                         case '429':
-                            this.$store.commit('modal/set', {
-                                messageHead: this.$t('message.error.serverBusy.head'),
-                                messageBody: this.$t('message.error.serverBusy.body'),
-                                closeButton: true
-                            });
-                            break;
+                            this.$store.commit('clearAll');
+                            this.$router.push({ name: 'ServerBusy' });
+                            break
                         default:
                             this.$store.commit('clearAll');
                             this.$router.push({ name: 'TestResultOtherSomethingWrong', query: { error: errorCause } });
