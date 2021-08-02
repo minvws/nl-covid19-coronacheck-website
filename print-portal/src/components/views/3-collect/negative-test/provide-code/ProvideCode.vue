@@ -165,6 +165,10 @@ export default {
                                 this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
                             }
                             break;
+                        case '429':
+                            this.$store.commit('clearAll');
+                            this.$router.push({ name: 'ServerBusy' });
+                            break
                         default:
                             this.$store.commit('clearAll');
                             this.$router.push({ name: 'TestResultOtherSomethingWrong', query: { error: errorCause } });
