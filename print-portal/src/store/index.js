@@ -16,7 +16,7 @@ const state = {
     holderConfig: null,
     userConsent: false,
     // negativeTest v2 flow
-    testCode: (process.env.NODE_ENV === 'development') ? 'TST-TTTTTTTTTT-G2' : '',
+    testCode: '',
     verificationNeeded: false,
     verificationCode: (process.env.NODE_ENV === 'development') ? '123456' : '',
     signedAt: null,
