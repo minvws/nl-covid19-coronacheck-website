@@ -36,7 +36,7 @@ Please note: are your details properly registered with the GGD, but are you stil
 
 ### Were you vaccinated abroad?
 
-At this time, unfortunately you cannot use CoronaCheck to create a vaccination certificate yet. In some countries, you can create a coronavirus pass while you are visiting that is also valid in the Netherlands. You can read more about it on {{ site.data.links.coronabewijs-hulp[page.lang] }}.
+Please look at {{ site.data.links.buitenlandvaccinatie[page.lang] }}. You’ll find the latest information there.
 
 ## Test certificate
 ### Testing for access
