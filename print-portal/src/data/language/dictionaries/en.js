@@ -91,6 +91,10 @@ const en = {
             'pageHeader': 'No negative test result available',
             'pageIntro': 'There is no negative test result available.'
         },
+        'testResultOtherSomethingWrong': {
+            'pageHeader': 'Sorry, something went wrong',
+            'pageIntro': '<p>Something went wrong at the test location. Therefore your details can’t be retrieved.</p><h4>What to do now?</h4><p>Contact your test location and give them error code:</p><p><strong>Error code: %{error}</strong></p>'
+        },
         'recoveryOverview': {
             'pageHeader': 'Your retrieved positive test result',
             'pageIntro': '<p>Are your details correct? Then you can turn your positive test result into a QR code. This is your certificate.</p>'
