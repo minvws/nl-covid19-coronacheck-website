@@ -139,7 +139,7 @@ Heb je je vaccinatie bij een andere vaccinatiezetter ontvangen en ervaar je prob
 
 {% capture copy_in_buitenland_gevaccineerd %}
 <div markdown="1">
-Op dit moment kun je helaas nog niet CoronaCheck gebruiken om een bewijs te maken van je vaccinatie. In sommige landen kun je ter plaatse een coronabewijs maken dat ook in Nederland geldig is. Op {{ site.data.links.coronabewijs-hulp[page.lang] }} lees je hier meer over.
+Kijk op {{ site.data.links.buitenlandvaccinatie[page.lang] }}. Daar vind je altijd de laatste informatie.
 </div>
 {% endcapture %}
 
