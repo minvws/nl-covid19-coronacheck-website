@@ -21,7 +21,7 @@ export default {
             return this.signedEventSet[0];
         },
         monthName() {
-            return dateTool.dateToString(this.signedEvent.event.vaccination.date, 'MMMM');
+            return dateTool.dateToMonthName(this.signedEvent.event.vaccination.date, this.$store.state.languages.current.locale);
         },
         eventsFetchedAt() {
             const locationList = this.signedEventSet.map(signedEvent => {

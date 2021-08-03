@@ -13,7 +13,7 @@ export default {
             return this.signedEvent.holder;
         },
         dateOfTest() {
-            return dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
+            return dateTool.dateToString(this.proofEvent.sampleDate, 'datetime-with-day', this.currentLanguage.locale);
         }
     },
     methods: {
