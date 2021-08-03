@@ -1,11 +1,11 @@
 import store from '@/store';
 import i18n from '@/i18n'
 
-const hasInternetConnection = () => {
+export const hasInternetConnection = () => {
     return window.navigator.onLine;
 }
 
-const messageInternetConnection = () => {
+export const messageInternetConnection = () => {
     store.commit('modal/set', {
         messageHead: i18n.t('message.error.noInternet.head'),
         messageBody: i18n.t('message.error.noInternet.body'),

@@ -7,6 +7,7 @@ import ProvideVerificationCode from './ProvideVerificationCode';
 import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import { cmsDecode } from '@/tools/cms'
+import { hasInternetConnection, messageInternetConnection } from '@/tools/error-handler';
 
 export default {
     name: 'ProvideCode',
@@ -152,34 +153,38 @@ export default {
                         }
                     }
                 }).catch((error) => {
-                    if (error.response) {
-                        const errorCause = this.getCauseOfError(error.response)
-                        switch (errorCause) {
-                        case 'invalid_token':
-                            this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
-                            break;
-                        case 'verification_required':
-                            this.$store.commit('setVerificationNeeded', true);
-                            this.testCodeStatus.error = '';
-                            if (options.includeVerificationCode) {
-                                this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
-                            }
-                            break;
-                        case '429':
-                            this.$store.commit('clearAll');
-                            this.$router.push({ name: 'ServerBusy' });
-                            break
-                        default:
-                            this.$store.commit('clearAll');
-                            this.$router.push({ name: 'TestResultOtherSomethingWrong', query: { error: errorCause } });
-                            break
-                        }
+                    if (!hasInternetConnection()) {
+                        messageInternetConnection();
                     } else {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.general.head'),
-                            messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                            closeButton: true
-                        });
+                        if (error.response) {
+                            const errorCause = this.getCauseOfError(error.response)
+                            switch (errorCause) {
+                            case 'invalid_token':
+                                this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                                break;
+                            case 'verification_required':
+                                this.$store.commit('setVerificationNeeded', true);
+                                this.testCodeStatus.error = '';
+                                if (options.includeVerificationCode) {
+                                    this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
+                                }
+                                break;
+                            case '429':
+                                this.$store.commit('clearAll');
+                                this.$router.push({ name: 'ServerBusy' });
+                                break
+                            default:
+                                this.$store.commit('clearAll');
+                                this.$router.push({ name: 'TestResultOtherSomethingWrong', query: { error: errorCause } });
+                                break
+                            }
+                        } else {
+                            this.$store.commit('modal/set', {
+                                messageHead: this.$t('message.error.general.head'),
+                                messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
+                                closeButton: true
+                            });
+                        }
                     }
                 })
             })
