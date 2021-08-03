@@ -38,20 +38,20 @@ export default {
             <div class="section-block">
                 <div class="page-choices">
                     <PageChoice
-                        id="proof-choice-negative-test"
-                        @select="gotoChoiceTestLocation"
-                        :header="$t('views.choiceProof.choiceTestHeader')"
-                        :body="$t('views.choiceProof.choiceTestBody')"/>
+                        id="proof-choice-vaccination"
+                        @select="gotoCollectVaccination"
+                        :header="$t('views.choiceProof.choiceVaccinationHeader')"
+                        :body="$t('views.choiceProof.choiceVaccinationBody')"/>
                     <PageChoice
                         id="proof-choice-recovery"
                         @select="gotoCollectRecovery"
                         :header="$t('views.choiceProof.choiceRecoveryHeader')"
                         :body="$t('views.choiceProof.choiceRecoveryBody')"/>
                     <PageChoice
-                        id="proof-choice-vaccination"
-                        @select="gotoCollectVaccination"
-                        :header="$t('views.choiceProof.choiceVaccinationHeader')"
-                        :body="$t('views.choiceProof.choiceVaccinationBody')"/>
+                        id="proof-choice-negative-test"
+                        @select="gotoChoiceTestLocation"
+                        :header="$t('views.choiceProof.choiceTestHeader')"
+                        :body="$t('views.choiceProof.choiceTestBody')"/>
                 </div>
             </div>
         </div>

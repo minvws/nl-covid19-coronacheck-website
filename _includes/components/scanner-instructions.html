@@ -1,25 +1,26 @@
-<h2 class="instructions__title">{{ site.data.translations.scanner-instructions-title[page.lang] }}</h2>
-<div class="scanner-instructions">
-  {% assign scanner-instructions = site.scanner-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}
-  {% for step in scanner-instructions %}
-  <article class="scanner-instructions__step" id="step-{{ step.index }}">
-    <div class="scanner-instructions__column-image">
-      <img
-        src="{{ site.baseurl }}/img/scanner-instructions/{{ step.graphic }}"
-        alt=""
-        loading="lazy"
-        class="scanner-instructions__image"
-      >
-    </div>
-    <div class="scanner-instructions__column-content">
-      <h2>
-        {% comment %}<span class="scanner-instructions__title__highlight">{{story.title-highlight}}</span>{% endcomment %}
-        <span class="scanner-instructions__title">{{step.title}}</span>
-      </h2>
-      <div class="scanner-instructions__text">
-        {{ step.content  }}
-      </div>
-    </div>
-  </article>
-  {% endfor %}
-</div>
+{% assign scanner-instructions = site.scanner-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}
+
+<section class="scanner-instructions">
+    <h2 class="scanner-instructions__pagetitle">{{ site.data.translations.scanner-instructions-title[page.lang] }}</h2>
+
+    {% for step in scanner-instructions %}
+        <article class="scanner-instructions__step" id="step-{{ step.index }}">
+            <div class="scanner-instructions__column-image">
+            <img
+                src="{{ site.baseurl }}/img/scanner-instructions/{{ step.graphic }}"
+                alt=""
+                loading="lazy"
+                class="scanner-instructions__image"
+            >
+            </div>
+            <div class="scanner-instructions__column-content">
+            <h3 class="scanner-instructions__title">
+                {{step.title}}
+            </h3>
+            <div class="scanner-instructions__text">
+                {{ step.content  }}
+            </div>
+            </div>
+        </article>
+    {% endfor %}
+</section>

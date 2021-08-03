@@ -1,0 +1,22 @@
+.scanner-backlink {
+    max-width: 940px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 auto;
+
+    a {
+        color: #333;
+
+        &::before {
+            content: " ";
+            width: 16px;
+            height: 14px;
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url(#{$file-path}img/arrow-left.svg);
+        }
+    }
+}

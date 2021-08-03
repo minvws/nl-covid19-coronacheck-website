@@ -15,6 +15,6 @@ Contact the healthcare provider who vaccinated or tested you.
 
 **Please note:** in the following cases, it’s not possible to request a paper coronavirus pass from your healthcare provider:
 
-- If you’ve been vaccinated abroad. You can read more about this on {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}.
+- If you’ve been vaccinated abroad. You can read more about this on {{ site.data.links.coronabewijs-hulp[page.lang] }}.
 - If you can retrieve  your coronavirus pass yourself through the CoronaCheck app or [www.coronacheck.nl/en/print](/en/print). 
 - If you don’t have a DigiD or necessary digital resources. Please contact the CoronaCheck helpdesk by telephone.

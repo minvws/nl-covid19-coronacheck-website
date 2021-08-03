@@ -1,5 +1,5 @@
 ---
-layout: faq-scanner-overview
+layout: scanner-faq-overview
 domain: scanner
 lang: en
 showBreadCrumbs: true

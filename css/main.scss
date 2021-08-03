@@ -18,6 +18,7 @@ $file-path: "/";
 @import "02-components/icons";
 @import "02-components/language-picker";
 @import "02-components/video";
+@import "02-components/scanner-backlink";
 
 // Used on every page
 @import "03-partials/header";
@@ -32,6 +33,7 @@ $file-path: "/";
 @import "03-partials/section-intro";
 @import "03-partials/section-how-your-data-is-handled";
 @import "03-partials/section-faq-highlighted-on-home";
+@import "03-partials/section-scanner-quick-links";
 
 // Used on the Scanner landingpage
 @import "03-partials/section-corona-scanner-instructions";

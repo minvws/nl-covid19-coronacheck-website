@@ -9,7 +9,7 @@ Om je vaccinatiegegevens in te laden in CoronaCheck heb je een geldige DigiD nod
 
 Je kan inloggen op DigiD via de app (<a href="https://www.digid.nl/inlogmethodes/digid-app" rel="noopener noreferrer" target="_blank">download hier de DigiD app</a>) of de DigiD website met sms-controle. <a href="https://www.digid.nl/inlogmethodes/sms-controle" rel="noopener noreferrer" target="_blank">Over het instellen van een sms-controle lees je hier meer</a>.
 
-Meer informatie over DigiD: neem hiervoor contact op met de Helpdesk op {{ site.data.translations.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
+Meer informatie over DigiD: neem hiervoor contact op met de Helpdesk op {{ site.data.links.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
 
 Heb je geen DigiD of geen digitale middelen, neem dan telefonisch contact op met de CoronaCheck helpdesk.
 
@@ -24,4 +24,4 @@ Heb je al DigiD en lukt het je niet om hier een coronabewijs mee op te halen? Bi
 - Soms werkt het om de telefoon te herstarten en dan opnieuw te proberen;
 - Tenslotte kan het werken om DigiD op een ander apparaat te gebruiken.
 
-Lukt het nog steeds niet? Neem dan contact op de helpdesk van DigiD op {{ site.data.translations.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
+Lukt het nog steeds niet? Neem dan contact op de helpdesk van DigiD op {{ site.data.links.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).

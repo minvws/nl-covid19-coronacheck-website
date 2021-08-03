@@ -1,7 +1,7 @@
 ---
 index: 3
 show: true
-graphic: 3_scherm_groen.svg
+graphic: scanner-instruction-2.png
 title: Groen scherm
 lang: nl
 ---

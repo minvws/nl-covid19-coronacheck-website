@@ -1,61 +1,68 @@
 <header>
-  <div class="skiplinks">
-    <a href="#content">
-      {{ site.data.translations.header-skip-to-content[page.lang] }}
-    </a>
-  </div>
-  <div class="header offset-background">
-    <div class="logobar">
-      <div class="logo">
-        <a href="{{ langSlug }}">
-          <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}" width="40" height="80">
+    <div class="skiplinks">
+        <a href="#content">
+        {{ site.data.translations.header-skip-to-content[page.lang] }}
         </a>
-      </div>
-      {% if include.for == "scanner" %}
-        <a href="{{ langSlug }}/faq-scanner" class="header__layout__faq-link">
-          {{ site.data.translations.faq[page.lang] }}</a>
-      {% else %}
-        <a href="{{ langSlug }}/faq" class="header__layout__faq-link">
-          {{ site.data.translations.faq[page.lang] }}</a>
-        {% endif %}
-      {% include components/language-picker.html headertype="default" %}
     </div>
-    <div class="container">
-
-      {% if include.for == "scanner" %}
-
-        <div class="header__layout">
-          <div class="header__layout--image">
-            <img src="{{ site.baseurl }}{{ site.data.translations.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
-          </div>
-
-          <div class="header__layout--content">
-            <h1 class="header__title">
-              {{ site.data.translations.scanner-header-title[page.lang] }}
-            </h1>
-            <p>{{ site.data.translations.scanner-header-subtitle[page.lang] }}</p>
-            {% include components/scanner-badges.html %}
-          </div>
+    <div class="header offset-background">
+        <div class="header__homelink">
+            <a href="/{{ page.lang }}">{{ site.data.translations.head-app-name }}</a>
+        </div>      
+    
+        <div class="logobar">
+            <div class="logo">
+                <a href="{{ langSlug }}">
+                <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.translations.govlogo[page.lang] }}" width="40" height="80">
+                </a>
+            </div>
+        
+            {% if include.for == "scanner" %}
+                <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
+                {{ site.data.translations.faq[page.lang] }}</a>
+            {% else %}
+                <div class="header__quick-link">
+                    <a href="{{ langSlug }}/scanner" class="header__quick-link--scanner">
+                    {{ site.data.translations.coronacheck-scanner-linktext[page.lang] }}</a>
+                    <a href="{{ langSlug }}/faq" class="">
+                    {{ site.data.translations.faq[page.lang] }}</a>
+                </div>
+            {% endif %}
+        
+            {% include components/language-picker.html headertype="default" %}
         </div>
+        <div class="container">
 
-      {% else %}
+            {% if include.for == "scanner" %}
+                <div class="header__layout">
+                <div class="header__layout--image">
+                    <img src="{{ site.baseurl }}{{ site.data.translations.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
+                </div>
 
-        <div class="header__layout">
-          <div class="header__layout--image">
-            <img src="{{ site.baseurl }}{{ site.data.translations.coronacheck-header-img[page.lang] }}" alt="" width="250" height="319">
-          </div>
-
-          <div class="header__layout--content">
-            <h1 class="header__title">
-              {{ site.data.translations.header-title[page.lang] }}<br />
-            </h1>
-            <p>{{ site.data.translations.header-subtitle[page.lang] }}</p>
-            {% include components/coronacheck-badges.html %}
-          </div>
+                <div class="header__layout--content">
+                    <h1 class="header__title">
+                    {{ site.data.translations.scanner-header-title[page.lang] }}
+                    </h1>
+                    <p>{{ site.data.translations.scanner-header-subtitle[page.lang] }}</p>
+                    {% include components/scanner-badges.html %}
+                </div>
+                </div>
+            {% else %}
+                <div class="header__layout">
+                <div class="header__layout--image">
+                    <img src="{{ site.baseurl }}{{ site.data.translations.coronacheck-header-img[page.lang] }}" alt="" width="250" height="319">
+                </div>
+                <div class="header__layout--content">
+                    <h1 class="header__title">
+                    {{ site.data.translations.header-title[page.lang] }}<br />
+                    </h1>
+                    <p>{{ site.data.translations.header-subtitle[page.lang] }}</p>
+                    {% include components/coronacheck-badges.html %}
+                </div>
+                <div class="header__layout--image">
+                    <img src="{{ site.baseurl }}{{ site.data.translations.coronacheck-header-illustration }}" alt="" width="250" height="319">
+                </div>
+                </div>
+            {% endif %}
         </div>
-
-      {% endif %}
-
     </div>
-  </div>
 </header>

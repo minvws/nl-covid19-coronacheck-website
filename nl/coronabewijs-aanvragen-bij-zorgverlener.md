@@ -16,7 +16,7 @@ Neem contact op met de zorgverlener waar jij bent gevaccineerd of getest en vraa
 
 **Let op**: in deze gevallen is het niet mogelijk om een papieren coronabewijs aan te vragen bij jouw zorgverlener:
 
-- Je bent gevaccineerd in het buitenland. Op {{ site.data.translations.coronabewijs-hulp-link[page.lang] }} lees je hier meer over
+- Je bent gevaccineerd in het buitenland. Op {{ site.data.links.coronabewijs-hulp[page.lang] }} lees je hier meer over
 - Als je zelf via  [www.coronacheck.nl/print](/print) of in de CoronaCheck-app jouw bewijs kan maken
 - Als je geen DigiD of digitale middelen hebt. Neem dan contact op met de CoronaCheck telefonische helpdesk.
  

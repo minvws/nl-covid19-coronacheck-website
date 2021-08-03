@@ -17,21 +17,21 @@ Heb je bijvoorbeeld één van de volgende problemen:
 - Zie je beide vaccinaties op één dag staan?
 - Of kun je je vaccinatiegegevens niet volledig ophalen, terwijl je laatste vaccinatie langer dan 3 dagen geleden was?
 
-Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem contact op met de zorgverlener waar je bent gevaccineerd (GGD ({{ site.data.translations.phone-ggd[page.lang] }}), ziekenhuis, huisarts of een andere zorginstelling).
+Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem contact op met de zorgverlener waar je bent gevaccineerd (GGD ({{ site.data.links.phone-ggd[page.lang] }}), ziekenhuis, huisarts of een andere zorginstelling).
 
 Als je binnen een paar dagen op reis gaat of een evenement wil bezoeken, is het advies om een gratis testafspraak in te plannen zodat je met een testbewijs toegelaten kan worden. Kijk op ['ik wil me laten testen, waar kan ik terecht?'](/nl/faq/2-1-ik-wil-mij-laten-testen-waar-kan-ik-terecht/) voor meer informatie.
 
 ### Ben je in het buitenland gevaccineerd?
 
-Op dit moment kun je CoronaCheck helaas nog niet gebruiken om een bewijs te maken van je vaccinatie. In sommige landen kun je ter plaatse een coronabewijs maken dat ook in Nederland geldig is. Op {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}.
+Op dit moment kun je CoronaCheck helaas nog niet gebruiken om een bewijs te maken van je vaccinatie. In sommige landen kun je ter plaatse een coronabewijs maken dat ook in Nederland geldig is. Op {{ site.data.links.coronabewijs-hulp[page.lang] }}.
 
 ## Geen herstelbewijs gevonden?
 
-Je kan alleen een herstelbewijs maken wanneer je positieve test is afgenomen bij de GGD en de uitslag niet langer dan 180 dagen geleden was. Is de uitslag niet te vinden in CoronaCheck, neem contact op met de GGD ({{ site.data.translations.phone-ggd[page.lang] }}) om je registratie te controleren.
+Je kan alleen een herstelbewijs maken wanneer je positieve test is afgenomen bij de GGD en de uitslag niet langer dan 180 dagen geleden was. Is de uitslag niet te vinden in CoronaCheck, neem contact op met de GGD ({{ site.data.links.phone-ggd[page.lang] }}) om je registratie te controleren.
 
 ## Geen testuitslag gevonden?
 
-Het kan een paar uur duren tot jouw testuitslag door de testlocatie is verwerkt. Ben je getest bij de GGD, neem dan contact op met de GGD ({{ site.data.translations.phone-ggd[page.lang] }}). Ben je elders getest, wacht dan totdat je de ophaalcode hebt ontvangen of neem contact op met de testlocatie.
+Het kan een paar uur duren tot jouw testuitslag door de testlocatie is verwerkt. Ben je getest bij de GGD, neem dan contact op met de GGD ({{ site.data.links.phone-ggd[page.lang] }}). Ben je elders getest, wacht dan totdat je de ophaalcode hebt ontvangen of neem contact op met de testlocatie.
 
 ## Een papieren coronabewijs aanvragen bij de zorgverlener waar je bent gevaccineerd of getest
 
@@ -47,7 +47,7 @@ Neem contact op met de zorgverlener waar jij bent gevaccineerd of getest en vraa
 
 **Let op**: in deze gevallen is het niet mogelijk om een papieren coronabewijs aan te vragen bij jouw zorgverlener:
 
-- Je bent gevaccineerd in het buitenland. Op {{ site.data.translations.coronabewijs-hulp-link[page.lang] }} lees je hier meer over
+- Je bent gevaccineerd in het buitenland. Op {{ site.data.links.coronabewijs-hulp[page.lang] }} lees je hier meer over
 - Als je zelf via  [www.coronacheck.nl/print](/print) of in de CoronaCheck-app jouw bewijs kan maken
 - Als je geen DigiD of digitale middelen hebt. Neem dan contact op met de CoronaCheck telefonische helpdesk.
  

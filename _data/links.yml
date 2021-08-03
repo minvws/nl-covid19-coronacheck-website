@@ -1,0 +1,80 @@
+# Phone numbers
+
+phone-ggd:
+  nl: '<a href="tel:08005090">0800-5090</a>'
+  en: '<a href="tel:08005090">0800-5090</a>'
+
+phone-helpdesk:
+  nl: <a href="tel:08001421">0800-1421</a>
+  fy: <a href="tel:08001421">0800-1421</a>
+  en: <a href="tel:08001421">0800-1421</a>
+  ar: <a href="tel:0800-1421" dir="ltr">0800-1421</a>
+  bg: <a href="tel:08001421">0800-1421</a>
+  de: <a href="tel:08001421">0800-1421</a>
+  fr: <a href="tel:08001421">0800-1421</a>
+  es: <a href="tel:08001421">0800-1421</a>
+  pl: <a href="tel:08001421">0800-1421</a>
+  ro: <a href="tel:08001421">0800-1421</a>
+  tr: <a href="tel:08001421">0800-1421</a>
+    
+phone-helpdesk-abroad:
+  nl: '<a href="tel:+31707503720">+31 70 750 37 20</a>'
+  en: '<a href="tel:+31707503720">+31 70 750 37 20</a>'
+
+phone-digid-helpdesk:
+  nl: '<a href="tel:0881236555">088 123 65 55</a>'
+  en: '<a href="tel:+31881236555">+31 88 123 65 55</a>'
+
+phone-tvt-helpdesk:
+  nl: '<a href="tel:0887770809">088 777 08 09</a>'
+  en: '<a href="tel:+31887770809">+31 88 777 08 09</a>'
+
+phone-tvjr-helpdesk:
+  nl: '<a href="tel:0887770810">088 777 08 10</a>'
+  en: '<a href="tel:+31887770810">+31 88 777 08 10</a>'
+
+# Websites and their English equivalent
+
+wijsoprijs:
+  nl: '<a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">wijsopreis.nl</a>'
+  en: '<a href="https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Travelling outside the Netherlands</a>'
+
+coronabewijs-hulp: 
+  nl: '<a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/frequent-problems" rel="noopener noreferrer" target="_blank">Frequent problems and solutions getting a COVID certificate</a>'
+
+testen-voor-toegang: 
+  nl: '<a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>'
+  en: '<a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Testen voor Toegang</a>'
+
+reizen-en-vakantie: 
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie" rel="noopener noreferrer" target="_blank">Reizen en vakantie</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/travelling-abroad" rel="noopener noreferrer" target="_blank">Travelling abroad (information for people living in the Netherlands)</a>'
+
+testenvoorjereis: 
+  nl: '<a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank">testenvoorjereis.nl</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Free coronatest for travellers</a>'
+
+coronatest: 
+  nl: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank">coronatest.nl</a>'
+  en: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">coronatest.nl</a>'
+
+mijnrivm:
+  nl: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank">MijnRIVM - vaccinaties</a>'
+  en: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank" hreflang="nl">MyRIVM - vaccinations</a>'
+
+buitenlandvaccinatie:
+  nl: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/vaccinatiebewijs/gevaccineerd-in-het-buitenland" rel="noopener noreferrer" target="_blank">Vaccinatiebewijs na vaccinatie in het buitenland</a>
+  en: <a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/vaccinated-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Getting proof of vaccination after being vaccinated outside of The Netherlands</a>
+
+voororganisatoren:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/organisatoren" rel="noopener noreferrer" target="_blank">Testen voor toegang: informatie voor organisatoren</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/vaccinated-outside-the-netherlands" rel="noopener noreferrer" target="_blank" lang="nl" hreflang="nl">Testen voor toegang: informatie voor organisatoren (Dutch)</a>'
+ 
+openingsplan:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank">Coronavirus Covid-19 Openingsplan</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank" lang="nl" hreflang="nl">Coronavirus Covid-19 Openingsplan (Dutch)</a>'
+ 
+wetransfer-toolkit:
+  nl: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs voor evenementen</a>'
+  en: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs for events</a>'

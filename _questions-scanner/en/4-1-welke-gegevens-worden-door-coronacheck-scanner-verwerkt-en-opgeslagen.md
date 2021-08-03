@@ -1,0 +1,14 @@
+---
+set: 4
+index: 1
+title: What data is processed and saved by the CoronaCheck Scanner?
+redirect_from: 
+  - /en/faq-scanner/8-welke-gegevens-worden-door-coronacheck-scanner-verwerkt-en-opgeslagen
+---
+The CoronaCheck Scanner app checks the validity of the visitor’s QR code. The controller also checks a minimum amount of identifying data. For the Dutch QR code, the controller checks: the first name initial, the last name initial, the day of birth and the month of birth. This check is to ensure the test result belongs to the visitor.
+
+In order to protect the visitor’s privacy, not all data is displayed. Some fields may contain a hyphen (-).
+
+[The international QR code contains more details](/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/#the-international-qr-code).
+
+This data is not saved by the CoronaCheck Scanner app.

@@ -156,14 +156,22 @@ scanner-header-subtitle:
   tr: 
 
 coronacheck-header-img:
-  nl: /img/CoronaCheck_app.png
-  fy: /img/CoronaCheck_app.png
-  en: /img/CoronaCheck_app-en.png
+  nl: /img/Home_NL_Header-min.png
+  en: /img/Home_EN_Header-min.png
+
+coronacheck-header-illustration: /img/Home_Header_Person.svg
     
 scanner-header-img:
   nl: /img/CoronaCheckScanner_app-tall.png
-  fy: /img/CoronaCheckScanner_app-tall.png
   en: /img/CoronaCheckScanner_app-tall-en.png
+
+coronacheck-scanner-linktext:
+  nl: Scanner
+  en: Scanner
+
+coronacheck-scanner-backlink:
+  nl: Terug naar CoronaCheck Scanner
+  en: Back to CoronaCheck Scanner
 
 header-appstore:
   nl: Download in de App Store
@@ -256,19 +264,6 @@ govlogo:
   ro: Siglă Guvernul Țărilor de Jos, pagina inițială
   tr: Logo Hollanda Devleti, ana sayfa
     
-phone-action:
-  nl: <a href="tel:08001421">0800-1421</a>
-  fy: <a href="tel:08001421">0800-1421</a>
-  en: <a href="tel:08001421">0800-1421</a>
-  ar: <a href="tel:0800-1421" dir="ltr">0800-1421</a>
-  bg: <a href="tel:08001421">0800-1421</a>
-  de: <a href="tel:08001421">0800-1421</a>
-  fr: <a href="tel:08001421">0800-1421</a>
-  es: <a href="tel:08001421">0800-1421</a>
-  pl: <a href="tel:08001421">0800-1421</a>
-  ro: <a href="tel:08001421">0800-1421</a>
-  tr: <a href="tel:08001421">0800-1421</a>
-    
 minvws:
   nl: "Ministerie van Volksgezondheid,<br>Welzijn en Sport"
   fy: "Ministearje fan Volksgezondheid,<br>Welzijn en Sport"
@@ -309,7 +304,7 @@ x-of-y:
   tr: itibaren
         
 readmore:
-  nl: Meer uitleg
+  nl: Lees meer
   fy: Mear útlis
   en: More information
   ar: للمزيد من التوضيح
@@ -386,7 +381,34 @@ faq-scanner:
   ro: 
   tr: 
 
-faq-category-scanner-general:
+scanner-quicklinks:
+  nl: Snel aan de slag met CoronaCheck Scanner
+  fy: 
+  en: Get started with CoronaCheck Scanner
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr: 
+
+
+faq-scanner-category-one:
+  nl: Evenement organiseren
+  fy: 
+  en: Organising an event
+  ar: 
+  bg: 
+  de: 
+  es: 
+  fr: 
+  pl: 
+  ro: 
+  tr:
+
+faq-scanner-category-two:
   nl: Algemeen
   fy: 
   en: General
@@ -397,12 +419,12 @@ faq-category-scanner-general:
   fr: 
   pl: 
   ro: 
-  tr:  
+  tr:
 
-faq-category-scanner-testdocument:
-  nl: Toegang met test of vaccinatiebewijs
+faq-scanner-category-three:
+  nl: Problemen
   fy: 
-  en: Getting access with a certificate 
+  en: Problems
   ar: 
   bg: 
   de: 
@@ -410,9 +432,9 @@ faq-category-scanner-testdocument:
   fr: 
   pl: 
   ro: 
-  tr:  
+  tr:
 
-faq-category-scannerapp-privacy:
+faq-scanner-category-four:
   nl: Privacy
   fy: 
   en: Privacy
@@ -423,20 +445,8 @@ faq-category-scannerapp-privacy:
   fr: 
   pl: 
   ro: 
-  tr:  
-
-faq-category-scannerapp-errors:
-  nl: Foutmeldingen
-  fy: 
-  en: Errors
-  ar: 
-  bg: 
-  de: 
-  es: 
-  fr: 
-  pl: 
-  ro: 
   tr:
+
 
 faq-category-one:
   nl: Algemeen
@@ -1519,7 +1529,7 @@ print-version-url:
   fy: 
   en: /en/print
 
-print-version-url-link: 
+print-version-url-linktext: 
   nl: Maak papieren bewijs
   fy: 
   en: Make certificate on paper
@@ -1538,9 +1548,9 @@ about-coronacheck-scanner-title:
   tr: CoronaCheck hakkında
 
 about-coronacheck-scanner-content:
-  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om bezoekers toe te laten?</p><p><a href="/scanner" target="_blank">Lees hier alles over de CoronaCheck Scanner-app.</a></p>
+  nl: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om bezoekers toe te laten?</p><p><a href="/scanner" class="btn btn--cta" target="_blank">Bekijk de Scanner-app</a></p>
   fy: 
-  en: <p>Would you like to find out how you can use CoronaCheck to allow visitors access to your event?</p><p><a href="/en/scanner" target="_blank">Read more about the CoronaCheck Scanner app.</a></p> 
+  en: <p>Would you like to find out how you can use CoronaCheck to allow visitors access to your event?</p><p><a href="/en/scanner" class="btn btn--cta" target="_blank">View the Scanner app</a></p> 
 
 home-intro-content:
   nl: Vanaf nu kun je met toegangstesten of een vaccinatiebewijs toegang krijgen tot bepaalde events en locaties in Nederland. <a href="/nl/faq/1-1-hoe-werkt-de-coronacheck-app/">Dit is hoe CoronaCheck werkt</a>. Vanaf juli kun je met CoronaCheck ook een herstelbewijs maken en een persoonlijke QR-code om internationaal te reizen. Hierover lees je meer op de pagina van de Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>)
@@ -1554,46 +1564,26 @@ status-block:
   nl: '<p>Bekijk op de <a href="https://status.coronacheck.nl">statuspagina</a> of er op dit moment een storing bekend is.  Hier vind je de laatste status en wat je in de tussentijd kunt doen.</p><p>Staat jouw probleem of storing er niet tussen? Mogelijk is er dan al een oplossing voor. Kijk dan tussen de meestgestelde vragen.</p>'
   en: '<p>Check the <a href="https://status.coronacheck.nl/en/">status page</a> to see if there is a known issue. Here you will find the latest status and what you can do in the meantime.</p><p>Is your problem or technical issue not listed? There may already be a solution. Please check the most frequently asked questions.</p>'
 
-wijsoprijs-link:
-  nl: '<a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">wijsopreis.nl</a>'
-  en: '<a href="https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Travelling outside the Netherlands</a>'
+quicklinks-organising:
+  nl: Een evenement organiseren
+  en: Organising an event
 
-phone-ggd:
-  nl: '<a href="tel:08005090">0800-5090</a>'
-  en: '<a href="tel:08005090">0800-5090</a>'
+quicklinks-organising-url:
+  nl: /nl/faq-scanner#evenement-organiseren
+  en: /en/faq-scanner#organising-an-event
 
-phone-digid-helpdesk:
-  nl: '<a href="tel:0881236555">088 123 65 55</a>'
-  en: '<a href="tel:+31881236555">+31 88 123 65 55</a>'
+quicklinks-how-it-works:
+  nl: Zo werkt scannen
+  en: How scanning works
 
-phone-tvt-helpdesk:
-  nl: '<a href="tel:0887770809">088 777 08 09</a>'
-  en: '<a href="tel:+31887770809">+31 88 777 08 09</a>'
+quicklinks-how-it-works-url:
+  nl: /nl/scanner/zo-werkt-scannen
+  en: /en/scanner/zo-werkt-scannen
 
-phone-tvjr-helpdesk:
-  nl: '<a href="tel:0887770810">088 777 08 10</a>'
-  en: '<a href="tel:+31887770810">+31 88 777 08 10</a>'
+quicklinks-try:
+  nl: Oefen het scannen
+  en: Try scanning
 
-coronabewijs-hulp-link: 
-  nl: '<a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/frequent-problems" rel="noopener noreferrer" target="_blank">Frequent problems and solutions getting a COVID certificate</a>'
-
-testen-voor-toegang-link: 
-  nl: '<a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank">Testen voor Toegang</a>'
-  en: '<a href="https://www.testenvoortoegang.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Testen voor Toegang</a>'
-
-reizen-en-vakantie-link: 
-  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie" rel="noopener noreferrer" target="_blank">Reizen en vakantie</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/travelling-abroad" rel="noopener noreferrer" target="_blank">Travelling abroad (information for people living in the Netherlands)</a>'
-
-testenvoorjereis-link: 
-  nl: '<a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank">testenvoorjereis.nl</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Free coronatest for travellers</a>'
-
-coronatest-link: 
-  nl: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank">coronatest.nl</a>'
-  en: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">coronatest.nl</a>'
-
-mijnrivm-link:
-  nl: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank">MijnRIVM - vaccinaties</a>'
-  en: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank" hreflang="nl">MyRIVM - vaccinations</a>'
+quicklinks-try-url:
+  nl: /nl/scanner/uitproberen
+  en: /en/scanner/uitproberen

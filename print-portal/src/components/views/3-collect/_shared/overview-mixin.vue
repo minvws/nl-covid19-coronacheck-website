@@ -8,15 +8,6 @@ export default {
     computed: {
         signedEvents() {
             const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);
-            // currently we do not de-double anymore
-            // const filteredForUnique = []
-            // // we check for unique events
-            // for (const signedEvent of signedEvents) {
-            //     const existingKeys = filteredForUnique.map(s => s.event.unique);
-            //     if (existingKeys.indexOf(signedEvent.event.unique) === -1) {
-            //         filteredForUnique.push(signedEvent)
-            //     }
-            // }
             return signedEvents.sort((a, b) => {
                 return dateTool.getTime(a.event[a.event.type].date) - dateTool.getTime(b.event[b.event.type].date);
             })

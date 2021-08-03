@@ -9,9 +9,23 @@
         padding: 20px 100px;
         margin: 0 auto;
     }
+}
 
-    @media (min-width: 960px) {
-        padding: 26px 200px 20px 200px;
+.container-breadcrumbs {
+    position: relative;
+    display: block;
+    background: #fff;
+    padding: 20px 20px;
+    max-width: 940px;
+
+    @media (min-width: 740px) {
+        width: calc(100% - (54px * 2));
+        padding: 20px 80px;
+        margin: 0 auto;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 0;
     }
 }
 
@@ -51,6 +65,7 @@
     list-style-image: none;
     display: inline-block;
 }
+
 .breadcrumbs {
     line-height: 1.6;
 

@@ -2,10 +2,11 @@
 import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 import SignedEvent from '@/classes/events/SignedEvent';
 import RecoveryInfo from './RecoveryInfo';
+import InfoButton from '@/components/views/3-collect/_shared/InfoButton';
 
 export default {
     name: 'Recovery',
-    components: { RecoveryInfo },
+    components: { RecoveryInfo, InfoButton },
     mixins: [proofEventMixin],
     props: {
         signedEvent: {
@@ -38,13 +39,9 @@ export default {
             </div>
         </dl>
 
-        <button
-            @click="openInfo()"
-            type="button"
-            :aria-expanded="showInfo ? 'true' : 'false'"
-            class="info-button">
-            <img src="assets/img/icons/info.svg" :alt="$t('components.eventInfo.head')" />
-        </button>
+        <InfoButton
+            @select="openInfo"
+            :showInfo="showInfo"/>
 
         <RecoveryInfo
             v-if="showInfo"

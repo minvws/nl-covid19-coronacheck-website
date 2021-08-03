@@ -5,51 +5,57 @@
 {%- endif -%}
 
 <nav class="content-center__home breadcrumbs" aria-label="{{ site.data.translations.youarehere[page.lang] }}:"> 
-  <ul> 
-  {% for crumb in crumbs offset: 1 %}
+    <ul> 
+    {% for crumb in crumbs offset: 1 %}
     {{% assign start_crumb = '' %}}
     
     {% if forloop.first %}
     <li class="breadcrumbs-item"> 
-      {% if include.collection == 'questions-in-app' %} 
-        <a class="breadcrumbs" href="{{langSlug}}/faq-in-app">
-          {{ site.data.translations.faq[page.lang] }}</a>
-      {% elsif include.collection == 'questions-scanner-in-app' %}
-        <a class="breadcrumbs" href="{{langSlug}}/faq-scanner-in-app">
-          {{ site.data.translations.faq[page.lang] }}</a>
-      {% else %}
-        <a class="breadcrumbs" href="{{langSlug}}">
-          {{ site.data.translations.layout-template-home[page.lang] }}</a>
-      {% endif %}
+        {% if include.collection == 'questions-in-app' %} 
+            <a class="breadcrumbs" href="{{langSlug}}/faq-in-app">
+            {{ site.data.translations.faq[page.lang] }}</a>
+        {% elsif include.collection == 'questions-scanner-in-app' %}
+            <a class="breadcrumbs" href="{{langSlug}}/faq-scanner-in-app">
+            {{ site.data.translations.faq[page.lang] }}</a>
+        {% elsif include.collection == 'questions-scanner' %}
+            <a class="breadcrumbs" href="{{langSlug}}/scanner">
+            {{ site.data.translations.coronacheck-scanner-linktext[page.lang] }}</a>
+        {% elsif page.domain == 'scanner' %}
+            <a class="breadcrumbs" href="{{langSlug}}/scanner">
+            {{ site.data.translations.coronacheck-scanner-linktext[page.lang] }}</a>
+        {% else %}
+            <a class="breadcrumbs" href="{{langSlug}}">
+            {{ site.data.translations.layout-template-home[page.lang] }}</a>
+        {% endif %}
 
-      {% if forloop.last == false %}
-        <span class="icon icon-chevron-right"></span>
-      {% endif %}
+        {% if forloop.last == false %}
+            <span class="icon icon-chevron-right"></span>
+        {% endif %}
     </li> 
     {% elsif forloop.last == false %} 
-      {% if include.collection == 'questions-scanner' %} 
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs" href="{{langSlug}}/faq-scanner">
-          {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
-          <span class="icon icon-chevron-right"></span>
-        </li>
-      {% elsif include.collection == 'questions' %}
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs" href="{{langSlug}}/faq">
-              {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
+        {% if include.collection == 'questions-scanner' %} 
+            <li class="breadcrumbs-item">
+            <a class="breadcrumbs" href="{{langSlug}}/faq-scanner">
+            {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
             <span class="icon icon-chevron-right"></span>
-          </li>
-      {% endif %}
-    {% elsif forloop.last  %}
-      <li class="breadcrumbs-item"> 
-        {% if page.contentLang == 'en' %}
-          <span class="breadcrumbs disabled" dir="ltr" lang="en" aria-current="page">{{ include.title | truncate: 40 }}</span>
-        {% elsif page.contentLang == 'nl' %}
-          <span class="breadcrumbs disabled" lang="nl" aria-current="page">{{ include.title | truncate: 40 }}</span>
-        {% else %}
-          <span class="breadcrumbs disabled" aria-current="page">{{ include.title | truncate: 40 }}</span>
+            </li>
+        {% elsif include.collection == 'questions' %}
+            <li class="breadcrumbs-item">
+                <a class="breadcrumbs" href="{{langSlug}}/faq">
+                {{ site.data.translations.faq[page.lang] | truncate: 40 }}</a>
+                <span class="icon icon-chevron-right"></span>
+            </li>
         {% endif %}
-      </li> 
+    {% elsif forloop.last  %}
+        <li class="breadcrumbs-item"> 
+            {% if page.contentLang == 'en' %}
+                <span class="breadcrumbs disabled" dir="ltr" lang="en" aria-current="page">{{ include.title | truncate: 40 }}</span>
+            {% elsif page.contentLang == 'nl' %}
+                <span class="breadcrumbs disabled" lang="nl" aria-current="page">{{ include.title | truncate: 40 }}</span>
+            {% else %}
+                <span class="breadcrumbs disabled" aria-current="page">{{ include.title | truncate: 40 }}</span>
+            {% endif %}
+        </li> 
     {% endif %} 
     {% endfor %}
   </ul> 

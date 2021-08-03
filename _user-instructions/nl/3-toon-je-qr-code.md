@@ -1,7 +1,7 @@
 ---
 index: 3
 show: true
-graphic: instructions-step3.png
+graphic: Home_NL_Iphone3-min.png
 title: 3. Toon je QR-code
 lang: nl
 ---
