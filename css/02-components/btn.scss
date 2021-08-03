@@ -96,6 +96,11 @@
         &:focus {
             color: $color-cc-link-darker--interaction;
         }
+
+        &:visited {
+            color: white;
+            background: $color-coronacheck_blue;
+        }
     }
 }
 

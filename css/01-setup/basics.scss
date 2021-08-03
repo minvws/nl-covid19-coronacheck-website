@@ -89,8 +89,8 @@ a:hover {
 .offset-background {
     background-color: $color-RO_lightblue;
 
-    a,
-    a:visited {
+    a:not(.btn),
+    a:not(.btn):visited {
         color: $color-cc-link-darker;
 
         &:hover,
