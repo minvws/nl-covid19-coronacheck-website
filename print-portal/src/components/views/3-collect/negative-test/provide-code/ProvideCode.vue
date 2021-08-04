@@ -147,8 +147,14 @@ export default {
                     if (response.data && response.data.payload) {
                         const payload = cmsDecode(response.data.payload);
                         if (payload.status === 'complete') {
-                            this.addNegativeTestV2(response.data)
+                            if (payload.events && payload.events.length > 0) {
+                                this.addNegativeTestV2(response.data)
+                            } else {
+                                this.$store.commit('clearAll');
+                                this.$router.push({ name: 'TestResultNone' })
+                            }
                         } else if (payload.status === 'pending') {
+                            this.$store.commit('clearAll');
                             this.$router.push({ name: 'TestResultPending' })
                         }
                     }
