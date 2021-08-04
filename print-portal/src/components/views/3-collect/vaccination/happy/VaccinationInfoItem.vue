@@ -199,7 +199,9 @@ export default {
                         {{vaccinationDate}}
                     </dd>
                 </div>
-                <div class="dl__row">
+                <div
+                    v-if="vaccinationCountry.length > 0"
+                    class="dl__row">
                     <dt>
                         {{$t('components.vaccination.info.vaccinationCountry')}}:
                     </dt>
