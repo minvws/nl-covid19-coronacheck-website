@@ -32,7 +32,7 @@ export default {
 
                 const isOnSameDay = (a, b) => {
                     const dayInMs = 1000 * 3600 * 24;
-                    return new Date(a.date).getTime() - new Date(b.date).getTime() < dayInMs;
+                    return Math.abs(new Date(a.date).getTime() - new Date(b.date).getTime()) < dayInMs;
                 }
 
                 const isSameHpkCode = (a, b) => {
