@@ -21,8 +21,8 @@ class Vaccination {
         this.completedByMedicalStatement = completedByMedicalStatement ?? null;
         this.completionReason = completionReason || '';
         this.country = country || '';
-        this.doseNumber = String(doseNumber) || '';
-        this.totalDoses = String(totalDoses) || '';
+        this.doseNumber = doseNumber ? String(doseNumber) : '';
+        this.totalDoses = totalDoses ? String(totalDoses) : '';
     }
 }
 
