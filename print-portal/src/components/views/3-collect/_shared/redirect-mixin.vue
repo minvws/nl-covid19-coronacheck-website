@@ -55,7 +55,14 @@ export default {
             this.authVaccinations.completeAuthentication().then((user) => {
                 // after redirect we've lost the consent
                 this.notifyDigidFinished();
-                this.collectEvents(user.id_token);
+                this.getTokens(user.id_token).then(response => {
+                    if (response.data && response.data.payload) {
+                        const payload = cmsDecode(response.data.payload)
+                        this.collectEvents(payload.tokens);
+                    }
+                }).catch((error) => {
+                    this.$router.push({ name: 'CollectError', query: { error: error.message } });
+                });
             }).catch(() => {
                 this.gotoPreviousPage();
                 const type = this.$t('message.info.digidCanceled.' + this.type)
@@ -73,10 +80,17 @@ export default {
             const proofType = this.$t('components.digid.proofType.' + this.type)
             this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: proofType }))
         },
-        collectEvents(token) {
+        getTokens(token) {
+            return new Promise((resolve, reject) => {
+                signedEventsInterface.getTokens(token).then(response => {
+                    resolve(response)
+                })
+            })
+        },
+        collectEvents(tokenSets) {
             this.$store.commit('signedEvents/clear');
             this.isLoading = true;
-            signedEventsInterface.collect(token, this.filter, this.eventProviders).then(result => {
+            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders).then(result => {
                 this.isLoading = false;
                 if (result) {
                     const is429 = (error) => {

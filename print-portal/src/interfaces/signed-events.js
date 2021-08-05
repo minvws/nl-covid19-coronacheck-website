@@ -2,21 +2,17 @@ import axios from 'axios';
 import store from '@/store'
 import { cmsDecode } from '@/tools/cms'
 
-const collect = async (token, filter = '', eventProviderIdentifiers = '*') => {
+const collect = async (tokenSets, filter = '', eventProviderIdentifiers = '*') => {
     return new Promise((resolve, reject) => {
-        getTokens(token).then((tokenSets) => {
-            const filteredTokenSets = tokenSets.filter(tokenSet => {
-                if (eventProviderIdentifiers === '*') {
-                    return true;
-                } else {
-                    return tokenSet.provider_identifier === eventProviderIdentifiers;
-                }
-            })
-            getEvents(filteredTokenSets, filter).then(result => {
-                resolve(result);
-            }, (error) => {
-                reject(error)
-            })
+        const filteredTokenSets = tokenSets.filter(tokenSet => {
+            if (eventProviderIdentifiers === '*') {
+                return true;
+            } else {
+                return tokenSet.provider_identifier === eventProviderIdentifiers;
+            }
+        })
+        getEvents(filteredTokenSets, filter).then(result => {
+            resolve(result);
         }, (error) => {
             reject(error)
         })
@@ -34,10 +30,7 @@ const getTokens = async (token) => {
             url: window.config.accessTokens,
             headers
         }).then((response) => {
-            if (response.data && response.data.payload) {
-                const payload = cmsDecode(response.data.payload)
-                resolve(payload.tokens);
-            }
+            resolve(response);
         }).catch((error) => {
             reject(error);
         })
@@ -122,5 +115,6 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
 }
 
 export default {
+    getTokens,
     collect
 }

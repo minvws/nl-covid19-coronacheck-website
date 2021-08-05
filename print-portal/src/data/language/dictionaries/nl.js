@@ -148,6 +148,10 @@ const nl = {
         'serverBusy': {
             'pageHeader': 'Sorry, het is erg druk',
             'pageIntro': '<p>Probeer het later nog eens.</p>'
+        },
+        'collectError': {
+            'pageHeader': 'Sorry, het is niet gelukt',
+            'pageIntro': '<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je vaccinatie(s) kunnen ophalen.</p><p>Tip: wacht een uur en probeer het dan nog een keer. </p>'
         }
     },
     'components': {
