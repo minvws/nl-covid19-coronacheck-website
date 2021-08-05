@@ -32,11 +32,11 @@
         </a>
       </p>
     {% endif %}
-
-    {% include components/banner-status.html %}
     
     <div class="content-block">
         <h1 id="frequently-asked-questions">{{ site.data.translations.faq[page.lang] }}</h1>
+
+        {% include components/banner-status.html %}
 
         <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
         
