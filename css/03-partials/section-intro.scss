@@ -47,4 +47,8 @@
     li:not(:last-child) {
         margin-bottom: 15px;
     }
+
+    .screen-reader-text + p {
+        margin-top: 0;
+    }
 }
