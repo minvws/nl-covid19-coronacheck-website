@@ -103,13 +103,15 @@ export default {
         position: absolute;
         left: 20px;
         top: 38px;
-        color: $color-RO_darkblue;
         font-weight: 700;
         font-size: 20px;
         text-decoration: none;
         padding: 4px;
+        color: $color-cc-link-darker;
 
-        &:hover {
+        &:hover,
+        &:focus {
+            color: $color-cc-link-darker--interaction;
             text-decoration: underline;
         }
     }
