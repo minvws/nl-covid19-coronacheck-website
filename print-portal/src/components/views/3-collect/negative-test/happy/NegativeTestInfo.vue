@@ -111,7 +111,7 @@ export default {
                     <div class="dl__section">
                         <div class="dl__row">
                             <dt>
-                                {{$t('components.eventInfo.identificationCode')}}:<br>
+                                {{$t('components.test.info.identificationCode')}}:<br>
                             </dt>
                             <dd>
                                 {{identificationCode}}

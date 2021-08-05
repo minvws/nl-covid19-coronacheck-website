@@ -32,9 +32,6 @@ export default {
         verificationNeeded() {
             return this.$store.state.verificationNeeded;
         },
-        testResultStatus() {
-            return this.$store.state.testResultStatus;
-        },
         token() {
             return this.numberOfHyphens > 0 ? this.testCode.split('-')[1] : null;
         },
@@ -126,7 +123,7 @@ export default {
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {
-                let responseForSignedResult, data;
+                let data;
                 const url = this.testProvider.result_url;
                 const headers = {
                     'Authorization': `Bearer ${this.token.toUpperCase()}`,
@@ -148,49 +145,34 @@ export default {
                 }).then((response) => {
                     if (response.data && response.data.payload) {
                         const payload = cmsDecode(response.data.payload);
-                        if (payload.status) {
-                            this.$store.commit('setTestResultStatus', payload.status);
-                        } else {
-                            this.$store.commit('setTestResultStatus', 'unknown_error')
-                        }
-                        if (this.testResultStatus === 'complete') {
+                        if (payload.status === 'complete') {
                             this.addNegativeTestV2(response.data)
-                        } else if (this.testResultStatus === 'pending') {
+                        } else if (payload.status === 'pending') {
                             this.$router.push({ name: 'TestResultPending' })
                         }
                     }
                 }).catch((error) => {
                     if (error.response) {
-                        const status = error.response.status;
-                        switch (status) {
-                        case 401:
-                            responseForSignedResult = this.handleError(error.response)
+                        const errorCause = this.getCauseOfError(error.response)
+                        switch (errorCause) {
+                        case 'invalid_token':
+                            this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
                             break;
-                        case 403:
-                            responseForSignedResult = this.handleError(error.response)
-                            break;
-                        default:
-                            responseForSignedResult = 'unknown_error';
-                        }
-                        this.$store.commit('setTestResultStatus', responseForSignedResult);
-
-                        if (this.testResultStatus === 'verification_required') {
+                        case 'verification_required':
                             this.$store.commit('setVerificationNeeded', true);
                             this.testCodeStatus.error = '';
                             if (options.includeVerificationCode) {
                                 this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
                             }
-                        } else {
-                            this.$store.commit('setVerificationNeeded', false);
-                        }
-
-                        if (this.testResultStatus === 'invalid_token') {
-                            this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
-                        }
-
-                        if (this.testResultStatus === 'result_blocked') {
+                            break;
+                        case '429':
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'TestResultNone' })
+                            this.$router.push({ name: 'ServerBusy' });
+                            break
+                        default:
+                            this.$store.commit('clearAll');
+                            this.$router.push({ name: 'TestResultOtherSomethingWrong', query: { error: errorCause } });
+                            break
                         }
                     } else {
                         this.$store.commit('modal/set', {
@@ -202,16 +184,24 @@ export default {
                 })
             })
         },
-        handleError(response) {
-            if (response.data && response.data.payload) {
-                const payload = cmsDecode(response.data.payload);
-                if (payload.status) {
-                    return payload.status;
-                } else {
-                    return 'unknown_error';
-                }
+        getCauseOfError(response) {
+            if (response.status === 429) {
+                return '429';
             } else {
-                return 'unknown_error';
+                if (response.data && response.data.payload) {
+                    const payload = cmsDecode(response.data.payload);
+                    if (payload.status) {
+                        return payload.status;
+                    } else {
+                        return 'unknown_error';
+                    }
+                } else {
+                    if (response.status) {
+                        return response.status;
+                    } else {
+                        return 'unknown_error';
+                    }
+                }
             }
         },
         back() {

@@ -9,3 +9,15 @@
         font-weight: 700;
     }
 }
+
+.proof-event-info-item {
+    padding-bottom: $length-s;
+    margin-bottom: $length-s;
+    border-bottom: 1px solid $color-mediumgrey;
+
+    &:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}

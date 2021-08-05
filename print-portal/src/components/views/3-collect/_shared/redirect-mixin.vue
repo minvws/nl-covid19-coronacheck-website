@@ -154,11 +154,6 @@ export default {
             for (const signedEvent of result.events) {
                 const payload = cmsDecode(signedEvent.payload);
                 if (payload.events) {
-                    if (payload.holder && payload.holder.birthDate) {
-                        if (!dateTool.isValidDateString(payload.holder.birthDate)) {
-                            return payload.providerIdentifier;
-                        }
-                    }
                     for (const proofEvent of payload.events) {
                         const type = proofEvent.type
                         const proofEventOfType = proofEvent[type];

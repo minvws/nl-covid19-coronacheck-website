@@ -2,10 +2,11 @@
 import SignedEvent from '@/classes/events/SignedEvent';
 import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 import NegativeTestInfo from './NegativeTestInfo';
+import InfoButton from '@/components/views/3-collect/_shared/InfoButton';
 
 export default {
     name: 'NegativeTest',
-    components: { NegativeTestInfo },
+    components: { NegativeTestInfo, InfoButton },
     mixins: [proofEventMixin],
     props: {
         signedEvent: {
@@ -41,13 +42,9 @@ export default {
             </div>
         </dl>
 
-        <button
-            @click="openInfo()"
-            type="button"
-            :aria-expanded="showInfo ? 'true' : 'false'"
-            class="info-button">
-            <img src="assets/img/icons/info.svg" :alt="$t('components.eventInfo.head')" />
-        </button>
+        <InfoButton
+            @select="openInfo"
+            :showInfo="showInfo"/>
 
         <NegativeTestInfo
             v-if="showInfo"

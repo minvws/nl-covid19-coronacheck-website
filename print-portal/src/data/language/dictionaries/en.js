@@ -91,6 +91,10 @@ const en = {
             'pageHeader': 'No negative test result available',
             'pageIntro': 'There is no negative test result available.'
         },
+        'testResultOtherSomethingWrong': {
+            'pageHeader': 'Sorry, something went wrong',
+            'pageIntro': '<p>Something went wrong at the test location. Therefore your details can’t be retrieved.</p><h4>What to do now?</h4><p>Contact your test location and give them error code:</p><p><strong>Error code: %{error}</strong></p>'
+        },
         'recoveryOverview': {
             'pageHeader': 'Your retrieved positive test result',
             'pageIntro': '<p>Are your details correct? Then you can turn your positive test result into a QR code. This is your certificate.</p>'
@@ -132,10 +136,18 @@ const en = {
                 'pageHeader': 'Print your certificates',
                 'pageIntro': '<h4>Your certificates</h4><p>You\'ve made a recovery certificate, in the form of  a QR code. You\'ve got a code for the Netherlands and one for other countries.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">This is what\'s in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
             },
-            // european only and domestic only is a non existing scenario for recovery
+            'domestic': {
+                'pageHeader': 'Print your certificate',
+                'pageIntro': '<h4>Your certificate</h4><p>You\'ve made a recovery certificate in the form of a QR code. This QR code is valid within the Netherlands, but not abroad.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">This is what\'s in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and take your print to the location or activity you’re visiting.</p>'
+            },
+            // european only is a non existing scenario for recovery
             'validInFuture': {
                 'pageIntro': '<h4>Your certificates</h4><p>You\'ve made a recovery certificate, in the form of  a QR code. You\'ve got a code for the Netherlands and one for other countries.</p><p>Your recovery certificate will be valid 11 days after the positive test result.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">This is what\'s in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
             }
+        },
+        'serverBusy': {
+            'pageHeader': 'It\'s very busy at the moment',
+            'pageIntro': '<p>Try again later today.</p>'
         }
     },
     'components': {
@@ -157,9 +169,9 @@ const en = {
             'dateOfBirth': 'Date of birth',
             'dateOfTest': 'Test date',
             'testResult': 'Test result',
-            'identificationCode': 'Unique certificate identifier',
             'validFrom': 'Valid From',
-            'validUntil': 'Valid until'
+            'validUntil': 'Valid until',
+            'eventsFetchedAt': 'Data retrieved at'
         },
         'test': {
             'resultNegative': 'Negative test result',
@@ -172,13 +184,14 @@ const en = {
                 'testResultPositive': 'positive (corona)',
                 'testLocation': 'Test location',
                 'testManufacturer': 'Test manufacturer',
-                'testCountry': 'Tested in'
+                'testCountry': 'Tested in',
+                'identificationCode': 'Unique test identifier'
             }
         },
         'vaccination': {
             'vaccination': 'Vaccination',
             'info': {
-                'detailsRetrieved': 'The following details of your vaccination have been retrieved',
+                'detailsRetrieved': 'The following details of your vaccination have been retrieved at %{provider}',
                 'pathogen': 'Pathogen',
                 'vaccine': 'Vaccine',
                 'vaccineType': 'Vaccine type',
@@ -187,6 +200,7 @@ const en = {
                 'finalDosis': 'Is this the last dose of your vaccination?',
                 'vaccinationDate': 'Vaccination date',
                 'vaccinationCountry': 'Country of vaccination',
+                'identificationCode': 'Unique vaccination identifier',
                 'finalDosisValue': {
                     'yes': 'Yes',
                     'recovery': 'Yes (I\'ve had coronavirus earlier)',
@@ -316,8 +330,10 @@ const en = {
             'author': 'CoronaCheck'
         }
     },
+    'and': 'And',
     'back': 'Back',
     'close': 'Close',
+    'details': 'Details',
     'faq': 'Frequently asked questions',
     'forInstanceAbbr': 'E.g.',
     'goBackToStart': 'To Home',

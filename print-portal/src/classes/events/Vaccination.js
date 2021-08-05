@@ -9,8 +9,8 @@ class Vaccination {
         completedByMedicalStatement = null,
         completionReason = '',
         country = '',
-        doseNumber = 0,
-        totalDoses = 0
+        doseNumber = '',
+        totalDoses = ''
     }) {
         this.date = date || '';
         this.hpkCode = hpkCode || '';
@@ -21,8 +21,8 @@ class Vaccination {
         this.completedByMedicalStatement = completedByMedicalStatement ?? null;
         this.completionReason = completionReason || '';
         this.country = country || '';
-        this.doseNumber = doseNumber || '';
-        this.totalDoses = totalDoses || '';
+        this.doseNumber = doseNumber ? String(doseNumber) : '';
+        this.totalDoses = totalDoses ? String(totalDoses) : '';
     }
 }
 

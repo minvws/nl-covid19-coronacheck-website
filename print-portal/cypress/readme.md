@@ -12,6 +12,7 @@
 - [x] Pending
 - [x] Invalid token
 - [x] Invalid verification
+- [x] 429 on provider
 
 ### Side-flows
 - [x] Back button
