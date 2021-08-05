@@ -19,7 +19,7 @@ Heb je bijvoorbeeld één van de volgende problemen:
 
 Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. Neem contact op met de zorgverlener waar je bent gevaccineerd (GGD ({{ site.data.links.phone-ggd[page.lang] }}), ziekenhuis, huisarts of een andere zorginstelling).
 
-Als je binnen een paar dagen op reis gaat of een evenement wil bezoeken, is het advies om een gratis testafspraak in te plannen zodat je met een testbewijs toegelaten kan worden. Kijk op ['ik wil me laten testen, waar kan ik terecht?'](/nl/faq/2-1-ik-wil-mij-laten-testen-waar-kan-ik-terecht/) voor meer informatie.
+Als je binnen een paar dagen op reis gaat of een evenement wil bezoeken, is het advies om een gratis testafspraak in te plannen zodat je met een testbewijs toegelaten kan worden. Kijk op ['ik wil me laten testen, waar kan ik terecht?'](/nl/faq-in-app/2-1-ik-wil-mij-laten-testen-waar-kan-ik-terecht/) voor meer informatie.
 
 ### Ben je in het buitenland gevaccineerd?
 
