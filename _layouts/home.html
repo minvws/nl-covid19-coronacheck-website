@@ -25,7 +25,7 @@
     {% assign announcement-info = site.announcements | where:"lang", page.lang | where:"style", "info" %}
     {% if announcement-info.size != 0 %}
         {% for announcement in announcement-info %}
-        <div class="intro offset-background">
+        <div class="banner offset-background">
           {% if announcement.title != '' %}<h2>{{ announcement.title }}</h2>{% endif %}
           {{ announcement.content }}
         </div>
