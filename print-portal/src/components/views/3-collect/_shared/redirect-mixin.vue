@@ -57,8 +57,12 @@ export default {
                 this.notifyDigidFinished();
                 this.getTokens(user.id_token).then(response => {
                     if (response.data && response.data.payload) {
-                        const payload = cmsDecode(response.data.payload)
-                        this.collectEvents(payload.tokens);
+                        try {
+                            const payload = cmsDecode(response.data.payload);
+                            this.collectEvents(payload.tokens);
+                        } catch (error) {
+                            this.$router.push({ name: 'CollectError', query: { error: error.message } });
+                        }
                     }
                 }).catch((error) => {
                     this.$router.push({ name: 'CollectError', query: { error: error.message } });
