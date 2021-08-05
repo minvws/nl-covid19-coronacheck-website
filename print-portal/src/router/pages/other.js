@@ -2,6 +2,7 @@ import Home from '@/components/views/1-home/Home.vue'
 import ChoiceProof from '@/components/views/2-a-choice-proof/ChoiceProof'
 import ServerBusy from '@/components/views/general/ServerBusy';
 import CollectError from '@/components/views/general/CollectError';
+import EventsError from '@/components/views/general/EventsError';
 
 const otherPages = [{
     path: '/',
@@ -19,9 +20,16 @@ const otherPages = [{
         pageHeader: 'error'
     }
 }, {
-    path: '/sorry-het-is-niet-gelukt',
+    path: '/sorry-er-gaat-iets-mis',
     component: CollectError,
     name: 'CollectError',
+    meta: {
+        pageHeader: 'error'
+    }
+}, {
+    path: '/sorry-het-is-niet-gelukt',
+    component: EventsError,
+    name: 'EventsError',
     meta: {
         pageHeader: 'error'
     }

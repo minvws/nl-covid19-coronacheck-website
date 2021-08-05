@@ -1,7 +1,7 @@
 <script>
 import signedEventsInterface from '@/interfaces/signed-events'
 import { cmsDecode } from '@/tools/cms'
-import dateTool from '@/tools/date';
+// import dateTool from '@/tools/date';
 import { handleRejection } from '@/tools/error-handler';
 
 export default {
@@ -34,17 +34,6 @@ export default {
         gotoPreviousPage() {
             this.$store.commit('snackbar/close');
             this.$router.push({ name: this.pages.previous });
-        },
-        checkResult() {
-            const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);
-            if (signedEvents.length > 0) {
-                this.$router.push({ name: this.pages.overview });
-            } else {
-                this.$router.push({ name: this.pages.noResult });
-            }
-            // todo
-            // pending
-            // not possible?
         },
         completeAuthentication() {
             this.isLoading = true;
@@ -96,68 +85,7 @@ export default {
             this.isLoading = true;
             signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders).then(result => {
                 this.isLoading = false;
-                if (result) {
-                    const is429 = (error) => {
-                        return error.response && error.response.status && error.response.status === 429;
-                    }
-                    const is5xx = (error) => {
-                        return error.response && error.response.status && (error.response.status >= 500 && error.response.status < 600);
-                    }
-
-                    const is5xxOrNetwork = (error) => {
-                        return is5xx(error) || error.message.toLowerCase() === 'network error';
-                    }
-
-                    const dateIsCorrupt = this.dataIsCorrupt(result);
-                    const eventIsIncomplete = this.eventIsIncomplete(result);
-                    if (dateIsCorrupt || eventIsIncomplete) {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.parseErrorInResult.head'),
-                            messageBody: this.$t('message.error.parseErrorInResult.body'),
-                            closeButton: true
-                        });
-                        this.gotoPreviousPage()
-                    } else if (this.hasEventsAndError(result, is429)) {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.someServerBusyButResult.head'),
-                            messageBody: this.$t('message.error.someServerBusyButResult.body'),
-                            closeButton: true
-                        });
-                        this.createEvents(result);
-                        this.checkResult();
-                    } else if (this.hasNoEventsAndError(result, is429)) {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.someServerBusyNoResult.head'),
-                            messageBody: this.$t('message.error.someServerBusyNoResult.body'),
-                            closeButton: true
-                        });
-                        this.gotoPreviousPage()
-                    } else if (this.hasEventsAndError(result, is5xx)) {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.someServerErrorButResult.head'),
-                            messageBody: this.$t('message.error.someServerErrorButResult.body'),
-                            closeButton: true
-                        });
-                        this.createEvents(result);
-                        this.checkResult();
-                    } else if (this.hasNoEventsAndError(result, is5xxOrNetwork)) {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.someServerErrorNoResult.head'),
-                            messageBody: this.$t('message.error.someServerErrorNoResult.body'),
-                            closeButton: true
-                        });
-                        this.gotoPreviousPage()
-                    } else if (this.hasBrokenPromise(result)) {
-                        // will lead to 'no result' page (depending on vaccination / test)
-                        this.checkResult();
-                    } else {
-                        // regular flow
-                        this.createEvents(result);
-                        this.checkResult();
-                    }
-                } else {
-                    this.generalError();
-                }
+                this.analyseResult(result);
             }, (error) => {
                 this.loading = false;
                 this.$store.commit('modal/close');
@@ -165,68 +93,120 @@ export default {
                 handleRejection(error)
             });
         },
-        hasBrokenPromise(result) {
-            return result.events.length === 0 && this.hasAtLeastOneUnomi;
-        },
-        dataIsCorrupt(result) {
-            for (const signedEvent of result.events) {
-                const payload = cmsDecode(signedEvent.payload);
-                if (payload.events) {
-                    for (const proofEvent of payload.events) {
-                        const type = proofEvent.type
-                        const proofEventOfType = proofEvent[type];
-                        let dateFields;
-                        switch (type) {
-                        case 'vaccination':
-                            dateFields = ['date']
-                            break;
-                        case 'negativetest':
-                        case 'recovery':
-                        case 'positivetest':
-                            dateFields = ['sampleDate']
-                            break;
-                        }
-                        for (const dateField of dateFields) {
-                            if (proofEventOfType[dateField]) {
-                                const dateValue = proofEventOfType[dateField];
-                                if (!dateTool.isValidDateString(dateValue)) {
-                                    return payload.providerIdentifier;
-                                }
-                            } else {
-                                return payload.providerIdentifier;
-                            }
-                        }
+        analyseResult(result) {
+            if (result) {
+                const analysis = {
+                    error429: false,
+                    errorAny: false,
+                    hasResults: false,
+                    hasAtLeastOneUnomi: false,
+                    dataIsCorrupt: false,
+                    dataIsIncomplete: false
+                }
+                const is429 = (error) => {
+                    return error.response && error.response.status && error.response.status === 429;
+                }
+                const is5xx = (error) => {
+                    return error.response && error.response.status && (error.response.status >= 500 && error.response.status < 600);
+                }
+                const is5xxOrNetwork = (error) => {
+                    return is5xx(error) || error.message.toLowerCase() === 'network error';
+                }
+                const isErrorAny = (error) => {
+                    return is5xx(error) || is5xxOrNetwork(error) || is429(error);
+                }
+
+                for (const error of result.errors) {
+                    if (is429(error)) {
+                        analysis.error429 = true
+                    }
+                    if (isErrorAny(error)) {
+                        analysis.errorAny = true
                     }
                 }
-            }
-            return '';
-        },
-        eventIsIncomplete(result) {
-            for (const signedEvent of result.events) {
-                const payload = cmsDecode(signedEvent.payload);
-                if (payload.status !== 'complete') {
-                    return payload.providerIdentifier;
+                if (result.events.length > 0) {
+                    analysis.hasResults = true;
                 }
-            }
-            return '';
-        },
-        hasError(result, errorChecker) {
-            let hasError = false
-            for (const error of result.errors) {
-                if (errorChecker(error)) {
-                    hasError = true;
+                analysis.hasAtLeastOneUnomi = result.hasAtLeastOneUnomi;
+                // todo dataIsCorrupt, dataIsIncomplete
+
+                console.log(analysis);
+                if (analysis.hasResults) {
+                    if (analysis.errorAny) {
+                        // todo via dictionary
+                        this.$store.commit('modal/set', {
+                            messageHead: 'Zijn dit al je vaccinaties?',
+                            messageBody: 'Door een storing of drukte zijn mogelijk niet al jouw gegevens opgehaald. Mist er een vaccinatie? Kom later terug en haal opnieuw je gegevens op.',
+                            closeButton: true
+                        });
+                    }
+                    this.createEvents(result);
+                    this.checkResult();
+                } else {
+                    if (analysis.errorAny) {
+                        this.$router.push({ name: 'EventsError' })
+                    } else {
+                        this.$router.push({ name: this.pages.noResult });
+                    }
                 }
+            } else {
+                this.generalError();
             }
-            return hasError;
         },
-        hasEventsAndError(result, errorChecker) {
-            return result.events.length > 0 && this.hasError(result, errorChecker);
-        },
-        hasNoEventsAndError(result, errorChecker) {
-            return result.events.length === 0 && this.hasError(result, errorChecker);
-        },
+        // dataIsCorrupt(result) {
+        //     for (const signedEvent of result.events) {
+        //         const payload = cmsDecode(signedEvent.payload);
+        //         if (payload.events) {
+        //             for (const proofEvent of payload.events) {
+        //                 const type = proofEvent.type
+        //                 const proofEventOfType = proofEvent[type];
+        //                 let dateFields;
+        //                 switch (type) {
+        //                 case 'vaccination':
+        //                     dateFields = ['date']
+        //                     break;
+        //                 case 'negativetest':
+        //                 case 'recovery':
+        //                 case 'positivetest':
+        //                     dateFields = ['sampleDate']
+        //                     break;
+        //                 }
+        //                 for (const dateField of dateFields) {
+        //                     if (proofEventOfType[dateField]) {
+        //                         const dateValue = proofEventOfType[dateField];
+        //                         if (!dateTool.isValidDateString(dateValue)) {
+        //                             return payload.providerIdentifier;
+        //                         }
+        //                     } else {
+        //                         return payload.providerIdentifier;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     return '';
+        // },
+        // eventIsIncomplete(result) {
+        //     for (const signedEvent of result.events) {
+        //         const payload = cmsDecode(signedEvent.payload);
+        //         if (payload.status !== 'complete') {
+        //             return payload.providerIdentifier;
+        //         }
+        //     }
+        //     return '';
+        // },
         createEvents(result) {
             this.$store.commit('signedEvents/createAll', result.events);
+        },
+        checkResult() {
+            const proofEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);
+            // we check for the lengt of the proof events. Even when there are sigend events, it is possible
+            // the do not have any (proof) events inside them
+            if (proofEvents.length > 0) {
+                this.$router.push({ name: this.pages.overview });
+            } else {
+                this.$router.push({ name: this.pages.noResult });
+            }
         },
         generalError() {
             this.gotoPreviousPage();
