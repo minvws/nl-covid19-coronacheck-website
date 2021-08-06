@@ -321,6 +321,10 @@ const en = {
             'signerFailed': {
                 'head': 'Sorry, something went wrong',
                 'body': '<p>Contact our helpdesk and give them error code (print sign error) or try again later.</p>'
+            },
+            'collectEventsWithErrors': {
+                'head': 'Are these all your vaccinations?',
+                'body': '<p>Due to increased traffic or an outage, some of your details may be missing. Are you missing a vaccination? Please come back later and retrieve your details again.</p>'
             }
         }
     },
