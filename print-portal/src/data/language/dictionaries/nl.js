@@ -91,10 +91,6 @@ const nl = {
             'pageHeader': 'Geen negatieve testuitslag',
             'pageIntro': 'Er is geen negatieve testuitslag beschikbaar.'
         },
-        'errorTokenFlow': {
-            'pageHeader': 'Sorry, er gaat iets mis',
-            'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
-        },
         'recoveryOverview': {
             'pageHeader': 'Jouw positieve testuitslag',
             'pageIntro': '<p>Als je gegevens kloppen dan kun je een QR-code maken van je positieve testuitslag. Dat is jouw bewijs.</p>'
@@ -160,6 +156,10 @@ const nl = {
         'errorNoEvents': {
             'pageHeader': 'Sorry, het is niet gelukt',
             'pageIntro': '<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.</p><p>Tip: wacht een uur en probeer het dan nog een keer. </p>'
+        },
+        'errorTokenFlow': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
         }
     },
     'components': {
