@@ -1,9 +1,9 @@
 import Home from '@/components/views/1-home/Home.vue'
 import ChoiceProof from '@/components/views/2-a-choice-proof/ChoiceProof'
-import ServerBusy from '@/components/views/general/ServerBusy';
-import ErrorAccessTokens from '@/components/views/general/ErrorAccessTokens';
-import ErrorEventProvider from '@/components/views/general/ErrorEventProvider';
-import EventsError from '@/components/views/general/EventsError';
+import ServerBusy from '@/components/views/error-pages/ServerBusy';
+import ErrorAccessTokens from '@/components/views/error-pages/ErrorAccessTokens';
+import ErrorEventProvider from '@/components/views/error-pages/ErrorEventProvider';
+import EventsError from '@/components/views/error-pages/EventsError';
 
 const otherPages = [{
     path: '/',
