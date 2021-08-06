@@ -135,11 +135,18 @@ export default {
                         analysis.errorAny = true
                     }
                 }
-                if (result.events.length > 0) {
-                    analysis.hasResults = true;
+                for (const event of result.events) {
+                    try {
+                        const payload = cmsDecode(event.payload);
+                        if (payload.events && payload.events.length > 0) {
+                            analysis.hasResults = true
+                        }
+                    } catch (error) {
+                        analysis.dataIsCorrupt = true;
+                    }
                 }
                 analysis.hasAtLeastOneUnomi = result.hasAtLeastOneUnomi;
-                // todo dataIsCorrupt, dataIsIncomplete
+                // todo dataIsIncomplete
 
                 console.log(analysis);
                 if (analysis.hasResults) {
