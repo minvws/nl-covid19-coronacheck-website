@@ -43,7 +43,7 @@ const nl = {
             'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>',
             'createTestProofButton': 'Maak QR-code'
         },
-        'noVaccinations': {
+        'vaccinationsNone': {
             'pageHeader': 'Geen vaccinatie(s) beschikbaar',
             'pageIntro': '<p>Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Op <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">de Wegwijzer</a> vind je meer informatie.</a></p>'
         },

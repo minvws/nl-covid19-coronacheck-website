@@ -43,7 +43,7 @@ const en = {
             'pageIntro': '<p>You can make a QR code of your vaccination. This will be your certificate.</p>',
             'createTestProofButton': 'Make QR code'
         },
-        'noVaccinations': {
+        'vaccinationsNone': {
             'pageHeader': 'No vaccination(s) available',
             'pageIntro': '<p>Details about your vaccination are not available.</p><p>Have you been vaccinated recently? It might take a little while before your details are available.</p><p>Your general practitioner might not be affiliated with the GGD. You can find more information about what to do on <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">the Guidepost</a>.</p>'
         },

@@ -7,6 +7,6 @@ context('Unhappy: Vaccination: None', () => {
     })
 
     it('Should lead to the none vaccination page', () => {
-        cy.pageHeaderShouldContain(dictionary.nl.views.noVaccinations.pageHeader);
+        cy.pageHeaderShouldContain(dictionary.nl.views.vaccinationsNone.pageHeader);
     })
 })
