@@ -40,7 +40,7 @@ wijsoprijs:
   en: '<a href="https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Travelling outside the Netherlands</a>'
 
 coronabewijs-hulp: 
-  nl: '<a href="https://www.rijksoverheid.nl/coronabewijs-hulp" rel="noopener noreferrer" target="_blank">Coronabewijs: praktische problemen en oplossingen</a>'
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/hulp-en-vragen-over-coronabewijs" rel="noopener noreferrer" target="_blank">Problemen met digitale middelen en andere vragen over coronabewijzen</a>'
   en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/frequent-problems" rel="noopener noreferrer" target="_blank">Frequent problems and solutions getting a COVID certificate</a>'
 
 testen-voor-toegang: 
@@ -63,9 +63,21 @@ mijnrivm:
   nl: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank">MijnRIVM - vaccinaties</a>'
   en: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank" hreflang="nl">MyRIVM - vaccinations</a>'
 
+vaccinatiebewijs:
+  nl: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/vaccinatiebewijs/" rel="noopener noreferrer" target="_blank">Vaccinatiebewijs regelen als coronabewijs</a>
+  en: <a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/" rel="noopener noreferrer" target="_blank">Using proof of vaccination to generate a COVID Certificates</a>
+
 buitenlandvaccinatie:
   nl: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/vaccinatiebewijs/gevaccineerd-in-het-buitenland" rel="noopener noreferrer" target="_blank">Vaccinatiebewijs na vaccinatie in het buitenland</a>
   en: <a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/vaccinated-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Getting proof of vaccination after being vaccinated outside of The Netherlands</a>
+
+testbewijs:
+  nl: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/testbewijs" rel="noopener noreferrer" target="_blank">Testbewijs regelen als coronabewijs voor uw reis</a>
+  en: <a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/negative-test-result" rel="noopener noreferrer" target="_blank">Using a negative test result to generate a COVID Certificate for travel</a>
+
+herstelbewijs:
+  nl: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/herstelbewijs" rel="noopener noreferrer" target="_blank">Herstelbewijs regelen als coronabewijs</a>
+  en: <a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-recovery/" rel="noopener noreferrer" target="_blank">Using proof of recovery to generate a COVID Certificate</a>
 
 voororganisatoren:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/organisatoren" rel="noopener noreferrer" target="_blank">Testen voor toegang: informatie voor organisatoren</a>'

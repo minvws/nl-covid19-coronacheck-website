@@ -9,133 +9,68 @@ redirect_from:
 
 {% capture copy_intro %}
 <div markdown="1">
-Je kunt jouw coronabewijs (Digitale Corona Certificaat, DCC) maken om te reizen met CoronaCheck. [Lees hier meer over hoe je een Digitaal Corona Certificaat maakt](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-Ga je op reis? Check dan eerst {{ site.data.links.wijsoprijs[page.lang] }} om te zien welk coronabewijs je nodig hebt in het land dat je wil bezoeken. Vanaf 1 juli kun je je gratis laten testen wanneer je op reis gaat. Hiervoor vind je alle informatie op {{ site.data.links.reizen-en-vakantie[page.lang] }}.
-
-Voor vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ). Neem  <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">contact op met het contactcenter van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
+Er zijn ondertussen meer dan 6,5 miljoen app–gebruikers van de CoronaCheck-app. Sinds de lancering hebben die al meer dan 12,5 miljoen coronabewijzen (vaccinatiebewijs, testbewijs of herstelbewijs) gedownload via de CoronaCheck-app of CoronaCheck.nl.
+Toch zijn er ook mensen die problemen hebben met het aanmaken van hun coronabewijs. Lukt het niet om een bewijs te maken in CoronaCheck? Lees hier wat je kunt doen.
 </div>
 {% endcapture %}
 
-{% capture copy_herstelbewijs %}
-<div markdown="1">
-
-Een herstelbewijs is een bewijs dat je ooit positief getest bent op aanwezigheid van het Sars-Cov2 virus. Er zijn verschillende manieren waarop dat kan worden vastgesteld: met een zelftest, een antigeen sneltest, een PCR-test of een serologische (bloed) test.
-
-**Let op:** Een herstelbewijs wordt niet verstrekt op basis van een zelftest of een serologische test.
-In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. Voor gebruik binnen Nederland (voor toegang tot evenementen etc.) wordt wel een herstelbewijs afgegeven op basis van een antigeen test.
-
-CoronaCheck haalt de positieve testuitslagen op bij de GGD. In het GGD systeem zijn op dit moment alleen testuitslagen beschikbaar van testen die door de GGD zelf zijn afgenomen. Dit betreft zowel PCR-testen als antigeen testen. Binnen enkele weken worden ook de (positieve) testuitslagen opgenomen van testen die door andere testaanbieders zijn afgenomen.
-
-### Ik krijg wel een Nederlands herstelbewijs, maar geen internationaal herstelbewijs
-
-Dit kan voorkomen in de situatie dat de GGD-test een antigeen / sneltest betrof. In dat geval kun je geen internationaal herstelbewijs krijgen, maar krijg je wel toegang tot evenementen binnen Nederland. 
-
-### Ik ben positief getest maar krijg geen Nederlands of internationaal herstelbewijs 
-
-Dit kan verschillende oorzaken hebben:
-- je bent niet door de GGD getest. Er wordt aan gewerkt om binnen enkele weken ook de gegevens van andere testaanbieders te ontsluiten.
-- je bent korter dan 11 dagen geleden (positief) getest. In dit geval kun je je herstelbewijs al wel ophalen, maar deze is pas op de 12e dag na testafname geldig.
-- je bent langer dan 180 dagen geleden (positief) getest. In dit geval heb je geen recht op een herstelbewijs.
-- Als geen van bovenstaande situaties van toepassing is, en je bent wel positief getest door de GGD, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen je helpen te achterhalen of er wellicht gegevens onjuist geregistreerd staan. 
-
-Staan je gegevens goed geregistreerd bij de GGD, maar niet goed in de CoronaCheck-app, waardoor je geen geldige QR code krijgt? Dit probleem is bij ons bekend en er wordt hard aan gewerkt om uit te zoeken waar de oorzaak ligt om het probleem op te kunnen lossen. 
-
-Als je echt binnen een paar dagen op reis gaat of een evenement wilt bezoeken, is het advies om een gratis testafspraak in te plannen. Voor een test om binnen Europa te kunnen reizen: {{ site.data.links.testenvoorjereis[page.lang] }}. Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via {{ site.data.links.testen-voor-toegang[page.lang] }}.
-
-</div>
-{% endcapture %}
 
 {% capture copy_vaccinatiebewijs %}
 <div markdown="1">
-CoronaCheck haalt gegevens over vaccinaties op bij de systemen van het RIVM en de GGD. Ook andere zorgverleners zoals ziekenhuizen, huisartsen en andere zorgverleners die vaccineren, hebben je vaccinatiegegevens doorgegeven aan het RIVM. Dit doen zij alleen als je hier toestemming voor hebt gegeven. 
-Vaccinatiegegevens ophalen in de app? [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
+CoronaCheck haalt gegevens over vaccinaties op bij de systemen van het RIVM en de GGD. Ook andere vaccinatiezetters, zoals ziekenhuizen, huisartsen en andere zorgverleners, hebben je vaccinatiegegevens doorgegeven aan het RIVM. Dit doen zij alleen als je hier toestemming voor hebt gegeven. Vaccinatiegegevens kan je ophalen in de app. [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
+
+Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Je bent volledig gevaccineerd vanaf 14 dagen na de laatste vaccinatie. Zodra je vaccinatie goed is geregistreerd kun je een vaccinatiebewijs maken. Een internationale QR-code kan worden gemaakt na één vaccinatie.
+
+**Let op:** een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op {{ site.data.links.wijsoprijs[page.lang] }}. Meer informatie over vaccinatiebewijzen vind je op {{ site.data.links.vaccinatiebewijs[page.lang] }}.
 </div>
 {% endcapture %}
 
-{% capture copy_haal_je_volledige_vaccinatie_op %}
+
+{% capture copy_geen_vaccinatiegegevens %}
 <div markdown="1">
-Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Zodra je vaccinatie goed is geregistreerd kun je een vaccinatiebewijs maken. Met ingang van zaterdag 10 juli zijn Nederlandse QR-codes op basis van een vaccinatie geldig vanaf 14 dagen na de laatste vaccinatie. Een internationale QR-code kan worden gemaakt na één vaccinatie.
+Het kan tot 72 uur duren voor de vaccinatiegegevens beschikbaar zijn. Worden er daarna nog steeds geen gegevens gevonden? Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. 
 
-**Let op:** een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op {{ site.data.links.wijsoprijs[page.lang] }}.
+Je vaccinatiegegevens worden via DigiD gezocht op basis van de persoonsgegevens die ook in je paspoort staan; bsn-nummer, naam en geboortedatum. Bij je vaccinatie moeten exact diezelfde gegevens staan. Komt dit niet volledig overeen, zoals bijvoorbeeld een dubbele punt, een ç of een é, dan kunnen de gegevens niet worden gevonden. Ook zijn er mensen met een onbekende geboortedatum in DigiD; dan staat er daar 00 of xx als geboortedatum. 
+
+Neem contact op met de zorgverlener die je heeft gevaccineerd wanneer er geen vaccinatiegegevens gevonden kunnen worden. Ben je bij de GGD gevaccineerd dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten controleren. 
+Ben je gevaccineerd door je huisarts, ziekenhuis of zorginstelling? Neem dan contact met hen op. Zij kunnen een coronabewijs voor je maken met de juiste gegevens.  
+
+Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je binnen een paar dagen op reis gaat of een evenement wilt bezoeken. 
+Voor reizen binnen Europa: {{ site.data.links.testenvoorjereis[page.lang] }}. 
+Om toegang te krijgen tot een evenement: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
 </div>
 {% endcapture %}
 
-{% capture copy_janssen_vaccinatie %}
+
+{% capture copy_incorrecte_vaccinatiegegevens %}
 <div markdown="1">
-Dan ben je voor de  CoronaCheck-app volledig gevaccineerd. Je kunt op basis van deze gegevens een vaccinatiebewijs maken.
+Kloppen er gegevens van je vaccinatie niet?
+Neem dan contact op met de zorgverlener die je heeft gevaccineerd. Ben je bij de GGD gevaccineerd dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
 
-**Let op!** Voorkom teleurstellingen en plan je reis van te voren via {{ site.data.links.wijsoprijs[page.lang] }}.
+Ben je gevaccineerd door je huisarts, ziekenhuis of zorginstelling? Neem dan contact met hen op. Zij kunnen een coronabewijs voor je maken met de juiste gegevens.  
+Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je binnen een paar dagen op reis gaat of een evenement wilt bezoeken. 
 
-Het kan voorkomen dat sommige landen aanvullende eisen stellen aan een Janssen vaccinatie. 
+Voor reizen binnen Europa: {{ site.data.links.testenvoorjereis[page.lang] }}. 
+Om toegang te krijgen tot een evenement: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
 </div>
 {% endcapture %}
 
-{% capture copy_een_vaccinatie_geen_jansen %}
-<div markdown="1">
-Dan kun je geen volledig vaccinatiebewijs krijgen. Voorkom teleurstellingen en plan je reis van te voren via {{ site.data.links.wijsoprijs[page.lang] }} want je hebt waarschijnlijk een negatief testbewijs nodig. 
-Via {{ site.data.links.testenvoorjereis[page.lang] }} kun je hiervoor een afspraak maken.
+{% capture copy_app_kan_geen_bewijs_maken %}
+<div markdown="1"> 
+Worden er wel gegevens over je vaccinatie gevonden, maar zegt CoronaCheck dat er geen bewijs gemaakt kan worden?
+Dit kan het geval zijn wanneer er een fout zit in je vaccinatiegegevens, bijvoorbeeld als de vaccinatiedatum of het merk van het vaccin niet klopt. Dan kan er geen koppeling gemaakt worden en kan CoronaCheck geen vaccinatiebewijs maken. 
+
+Neem dan contact op met de zorgverlener die je heeft gevaccineerd. Ben je bij de GGD gevaccineerd dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
+Ben je gevaccineerd door je huisarts, ziekenhuis of zorginstelling? Neem dan contact met hen op. Zij kunnen een coronabewijs voor je maken met de juiste gegevens.
+
+Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je binnen een paar dagen op reis gaat of een evenement wilt bezoeken. 
+
+Voor reizen binnen Europa: {{ site.data.links.testenvoorjereis[page.lang] }}. 
+Om toegang te krijgen tot een evenement: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
 </div>
 {% endcapture %}
 
-{% capture copy_een_vaccinatie_vanwege_besmetting %}
-<div markdown="1">
-Kies hieronder welke situatie voor je van toepassing is. 
-</div>
-{% endcapture %}
-
-{% capture copy_aangegeven_ggd_corona_gehad %}
-<div markdown="1">
-
-Indien je bij het maken van je afspraak bij de GGD hebt aangegeven dat je in de afgelopen maanden corona hebt gehad wordt dit vanuit de GGD meegegeven aan CoronaCheck. Je bent dan volledig gevaccineerd en kunt met deze gegevens een vaccinatiebewijs opvragen.
-
-**Let op!** Er is een probleem bekend waarbij in een aantal gevallen bij het maken van de afspraak wel is aangegeven dat de persoon corona heeft gehad, maar dit niet is doorgegeven aan de CoronaCheck-app. Dit probleem is opgelost.
-
-Twijfel je of je dit juist hebt aangegeven of doet het hierboven genoemde probleem zich bij jou nog voor? Neem dan contact op met de GGD via {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen dit voor je controleren. Het kan vervolgens een aantal dagen duren voordat deze gegevens ook beschikbaar zijn voor CoronaCheck.
-
-Ga je op korte termijn op reis? Dan kun je via {{ site.data.links.testenvoorjereis[page.lang] }} een afspraak maken voor een coronatest.
-</div>
-{% endcapture %}
-
-{% capture copy_aangegeven_elders_corona_gehad %}
-<div markdown="1">
-Dan is het op dit moment niet mogelijk om digitaal een volledig vaccinatiebewijs te krijgen. Neem contact op met de zorgverlener die je heeft gevaccineerd. Je huisarts, het ziekenhuis of een andere zorginstelling kan je, na overlegging van de positieve testuitslag, een volledig vaccinatiebewijs geven.
-
-Ga je op korte termijn op reis? Dan kun je via {{ site.data.links.testenvoorjereis[page.lang] }} een afspraak maken voor een coronatest waarmee je een testbewijs kunt maken in de CoronaCheck-app.
-</div>
-{% endcapture %}
-
-{% capture copy_korter_dan_180_dagen %}
-<div markdown="1">
-Dan kun je met de CoronaCheck-app alleen een herstelbewijs maken indien je bij de GGD bent getest. [Lees hier meer over het maken van een herstelbewijs](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/). Met je positieve testuitslag in combinatie met 1 vaccinatie krijg je ook een volledig vaccinatiebewijs. Via [www.coronacheck.nl/print](/print) is dit helaas nog niet mogelijk.
-</div>
-{% endcapture %}
-
-{% capture copy_langer_dan_180_dagen %}
-<div markdown="1">
-Dan is het op dit moment niet mogelijk om digitaal een volledig vaccinatiebewijs te krijgen. Neem contact op met de zorgverlener die je heeft gevaccineerd. Je huisarts, het ziekenhuis of een andere zorginstelling kan je, na overlegging van de positieve testuitslag, een volledig vaccinatiebewijs geven.
-
-Ga je op korte termijn op reis? Dan kun je via {{ site.data.links.testenvoorjereis[page.lang] }} een afspraak maken voor een coronatest waarmee je een testbewijs kunt maken in de CoronaCheck-app.
-</div>
-{% endcapture %}
-
-{% capture copy_tweede_afspraak_afgezegd %}
-<div markdown="1">
-Indien je je tweede afspraak hebt geannuleerd bij de GGD of niet meer bent geweest, is het belangrijk om te kijken of dit goed is doorgevoerd. Indien op {{ site.data.links.coronatest[page.lang] }} onder "Mijn vaccinatie afspraken inzien" je tweede afspraak nog zichtbaar is dan is je status niet "volledig gevaccineerd". Neem dan contact op met de GGD via {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen dit voor je controleren en eventueel aanpassen. Het kan vervolgens een aantal dagen duren voordat dit ook juist meegegeven wordt richting CoronaCheck.
-</div>
-{% endcapture %}
-
-{% capture copy_twee_vaccinaties_ontvangen %}
-<div markdown="1">
-Dan ben je voor de CoronaCheck-app volledig gevaccineerd. Je kunt op basis van deze gegevens een vaccinatiebewijs opvragen.
-
-Heb je je vaccinatie(s) ontvangen bij de GGD en twijfel je of je de informatie juist hebt aangegeven of ervaar je problemen? Neem dan contact op met de GGD via {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen dit voor je controleren. Het kan vervolgens een aantal dagen duren voordat deze gegevens ook beschikbaar zijn voor CoronaCheck.
-
-Heb je je vaccinatie bij een andere vaccinatiezetter ontvangen en ervaar je problemen? Dan moet je met de betreffende vaccinatiezetter contact opnemen.
-
-**Let op!** Niet ieder land heeft hetzelfde reisadvies voor de heenreis. Voorkom teleurstellingen en plan je reis van te voren via {{ site.data.links.wijsoprijs[page.lang] }}.
-</div>
-{% endcapture %}
 
 {% capture copy_in_buitenland_gevaccineerd %}
 <div markdown="1">
@@ -143,52 +78,87 @@ Kijk op {{ site.data.links.buitenlandvaccinatie[page.lang] }}. Daar vind je alti
 </div>
 {% endcapture %}
 
-{% capture copy_troubleshooting %}
+
+{% capture copy_herstelbewijs %}
 <div markdown="1">
 
-#### Mijn naam of geboortedatum klopt niet
+Een herstelbewijs is een bewijs dat je ooit positief getest bent op aanwezigheid van het Sars-Cov2 virus door de GGD. 
 
-Het kan zijn dat de vaccinatiegegevens niet goed zijn ingevoerd. Neem contact op met de zorgverlener die je heeft gevaccineerd om je gegevens te laten corrigeren.
+**Let op:** Een herstelbewijs wordt niet verstrekt op basis van een zelftest of een serologische test. In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeen test.
 
-#### Mijn vaccinatiedatum klopt niet / beide vaccinaties staan op één dag
+CoronaCheck haalt de positieve testuitslagen op bij de GGD. In het GGD systeem zijn op dit moment alleen testuitslagen beschikbaar van testen die door de GGD zelf zijn afgenomen. Dit betreft zowel PCR-testen als antigeen testen. Binnen enkele weken worden ook de (positieve) testuitslagen opgenomen van testen die door andere testaanbieders zijn afgenomen.
 
-Kijk op {{ site.data.links.mijnrivm[page.lang] }} of je gegevens juist geregistreerd staan. Staan de gegevens hier niet juist neem dan contact op met de zorgverlener die je heeft gevaccineerd om je gegevens te laten corrigeren.
+Meer informatie over herstelbewijzen vind je op {{ site.data.links.herstelbewijs[page.lang] }}.
 
-**Let op:** er is een bekend technisch probleem voor een beperkt aantal personen _die bij de GGD zijn gevaccineerd_ waarin twee verschillende vaccinaties op dezelfde datum zijn gezet. Hierdoor toont het RIVM en de CoronaCheck-app maar 1 vaccinatie. Dit probleem wordt zo snel mogelijk verholpen, maar we kunnen nu nog niet inschatten wanneer dit zal zijn opgelost. Ga je al binnen een paar dagen op reis? Dan kun je je het beste laten testen. Zie {{ site.data.links.testenvoorjereis[page.lang] }}.
-
-#### Ik heb geen BSN-nummer
-
-Helaas is het niet mogelijk een coronabewijs te maken wanneer u geen BSN-nummer heeft. Wel kun je bij je vaccinatiezetter een vaccinatiebewijs aanvragen waarmee je kunt reizen (afhankelijk van het land waar je naartoe gaat). 
-
-#### Staat jouw vraag er niet tussen? 
-
-Kijk op de pagina van de Rijksoverheid: {{ site.data.links.coronabewijs-hulp[page.lang] }}
 </div>
 {% endcapture %}
+
+{% capture copy_geen_herstelbewijs_gegevens %}
+<div markdown="1">
+Dit kan verschillende oorzaken hebben:
+- je bent niet door de GGD getest. Er wordt aan gewerkt om binnen enkele weken ook de gegevens van andere testaanbieders te ontsluiten.
+- je bent korter dan 11 dagen geleden (positief) getest. In dit geval kun je je herstelbewijs al wel ophalen, maar deze is pas op de 12e dag na testafname geldig.
+- je bent langer dan 180 dagen geleden (positief) getest. In dit geval heb je geen recht op een herstelbewijs.
+
+Als geen van bovenstaande situaties van toepassing is, en je bent wel positief getest door de GGD, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen je helpen te achterhalen of er wellicht gegevens onjuist geregistreerd staan.
+
+Als je echt binnen een paar dagen op reis gaat of een evenement wilt bezoeken, is het advies om een gratis testafspraak in te plannen zodat je een testbewijs kan maken. 
+
+Voor een test om binnen Europa te kunnen reizen: {{ site.data.links.testenvoorjereis[page.lang] }}. 
+Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
+</div>
+{% endcapture %}
+
+
+{% capture copy_incorrecte_herstelgegevens %}
+<div markdown="1"> 
+Kloppen de opgehaalde gegevens van je positieve testuitslag niet, bijvoorbeeld je type test, tijd of datum? Neem dan contact op met de backoffice van de GGD op {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen je gegevens controleren.
+
+**Let op**: Indien je positief bent getest met een antigeen of sneltest bij de GGD, dan krijg je alleen een Nederlands herstelbewijs, geen internationaal bewijs. Ben je met een PCR-test getest, dan ontvang je beide herstelbewijzen.
+</div>
+{% endcapture %}
+
+{% capture copy_we_kunnen_geen_herstelbewijs_maken %}
+<div markdown="1"> 
+Worden er wel gegevens over jouw herstel gevonden, maar zegt CoronaCheck dat er geen bewijs gemaakt kan worden?
+Het kan zijn dat jouw testresultaat meer dan 180 dagen oud is. Dan is het niet meer mogelijk om een herstelbewijs te maken.
+
+Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Neem dan contact op met de zorgverlener waar je bent getest. Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
+Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken om een testbewijs te maken. Bijvoorbeeld als je binnen een paar dagen op reis gaat of een evenement wilt bezoeken. 
+
+Voor reizen binnen Europa: {{ site.data.links.testenvoorjereis[page.lang] }}. 
+Om toegang te krijgen tot een evenement: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
+</div>
+{% endcapture %}
+
 
 {% capture copy_testbewijs %}
 <div markdown="1">
-Alleen testuitslagen van testlocaties die aangesloten zijn bij CoronaCheck kunnen worden omgezet in een coronabewijs.
+Alleen testuitslagen van testlocaties die aangesloten zijn bij CoronaCheck kunnen worden omgezet in een coronabewijs.Meer informatie over testbewijzen vind je op {{ site.data.links.testbewijs[page.lang] }}.
 
 ### Negatief getest bij de GGD
-Het kan tot 30 uur duren alvorens de uitslag van een test beschikbaar is. Vanaf het moment dat de GGD de uitslag heeft (dat kun je zien via {{ site.data.links.coronatest[page.lang] }}) duurt het nog een aantal uur voordat de gegevens zijn op te halen in de CoronaCheck-app (of CoronaCheck website).
-Als je testuitslag al wel in {{ site.data.links.coronatest[page.lang] }} beschikbaar is, maar na 30 uur na testafname nog niet in de CoronaCheck-app én je komt echt in tijdnood vanwege een vliegreis, dan kun je naar de GGD balie gaan op Schiphol (tussen aankomsthal 3 en 4), waar je ter plekke een internationaal testbewijs (DCC) op papier kunt krijgen.
+Het kan tot 30 uur duren alvorens de uitslag van een test beschikbaar is. Vanaf het moment dat de GGD de uitslag heeft (dat kun je zien via {{ site.data.links.coronatest[page.lang] }}) duurt het nog een aantal uur voordat de gegevens zijn op te halen in de CoronaCheck-app (of CoronaCheck website). Als je testuitslag al wel in {{ site.data.links.coronatest[page.lang] }} beschikbaar is, maar na 30 uur na testafname nog niet in de CoronaCheck-app, neem dan contact op met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. 
 
 ### Testen voor toegang
-Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? Hiervoor kun je terecht bij {{ site.data.links.testen-voor-toegang[page.lang] }}. Op die website vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatest voor nodig is, geeft de organisatie je meestal ook informatie, bijvoorbeeld op het ticket, in een bevestigingsmail of op de website.
+Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? Hiervoor kun je terecht bij {{ site.data.links.testen-voor-toegang[page.lang] }} ({{ site.data.links.phone-tvt-helpdesk[page.lang] }}). Hier vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatest voor nodig is, geeft de organisatie je meestal ook informatie, bijvoorbeeld op het ticket, in een bevestigingsmail of op de website.
 </div>
 {% endcapture %}
 
+{% capture copy_testen_voor_je_reis %}
+<div markdown="1">
+Wil je gebruik maken van een coronabewijs om te reizen binnen Europa? Hiervoor kun je terecht bij {{ site.data.links.testenvoorjereis[page.lang] }}. Let op: ieder land bepaalt zelf de inreisregels. Check dus voor vertrek altijd {{ site.data.links.wijsoprijs[page.lang] }} om nare verrassingen te voorkomen.
+</div>
+{% endcapture %}
 
 {% capture copy_geen_ophaalcode %}
 <div markdown="1">
-Deze ophaalcode bestaat uit een lange reeks van letters en cijfers (bv BRB-YYYYYYYYYY-Z2). Deze ontvang je van de testlocatie. In principe ontvang je de uitslag binnen een uur. Soms kan het wat langer duren. Als je deze niet hebt ontvangen kan dat verschillende oorzaken hebben:
+Deze ophaalcode bestaat uit een lange reeks van letters en cijfers (bv BRB-YYYYYYYYYY-Z2). Deze ontvang je van de testlocatie. De uitslag van een antigeentest ontvang je binnen drie uur, de uitslag van een pcr-test kan tot 24 uur duren. Soms kan het wat langer duren. Als je deze niet hebt ontvangen kan dat verschillende oorzaken hebben:
 
-- de testuitslag is nog niet binnen.
+- jouw test moet nog verwerkt worden.
 - je email adres is niet correct of wellicht is de mail in uw spambox terechtgekomen.
 - er is een probleem bij de testlocatie in het doorgeven van de uitslag. Kijk op {{ site.data.links.testen-voor-toegang[page.lang] }} of er storingen bekend zijn bij testlocaties.
 
-Is dit niet de oplossing, neem dan contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} 
+Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} of met de helpdesk van Testen voor je Reis op {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -199,15 +169,29 @@ De verificatiecode (per SMS of e-mail) moet normaliter binnen een minuut binnenk
 - In het geval je aanbieder de verificatiecode per email stuurt, controleer dan ook je spam-folder.
 - Heb je wellicht een buitenlands telefoonnummer doorgegeven? Het komt sporadisch voor dat SMS berichten naar buitenlandse nummers niet doorkomen.
 
-Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} 
+Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} of met de helpdesk van Testen voor je Reis op {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
-{% capture copy_testen_voor_je_reis %}
-<div markdown="1">
-Wil je gebruik maken van een coronabewijs om te reizen binnen Europa? Hiervoor kun je terecht bij {{ site.data.links.testenvoorjereis[page.lang] }}. Let op: ieder land bepaalt zelf de inreisregels. Check dus voor vertrek altijd {{ site.data.links.wijsoprijs[page.lang] }} om nare verrassingen te voorkomen.
+
+{% capture copy_incorrecte_testgegevens %}
+<div markdown="1"> 
+Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
+
+Ben je via Testen voor Toegang of via Testen voor je Reis getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} of met de helpdesk van Testen voor je Reis op {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
+
+{% capture copy_we_kunnen_geen_testbewijs_maken %}
+<div markdown="1"> 
+Zegt de app dat er geen bewijs gemaakt kan worden? Mogelijk klopt er dan iets niet in de gegevens over jouw testuitslag. Neem contact op met de zorgverlener waar jij bent getest. Zij kunnen de gegevens controleren en corrigeren.
+
+Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
+
+Ben je via Testen voor Toegang of via Testen voor je Reis getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} of met de helpdesk van Testen voor je Reis op {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
+</div>
+{% endcapture %}
+
 
 {% capture copy_printbewijs %}
 <div markdown="1">
@@ -240,16 +224,77 @@ Bij sommige mensen lukt het inloggen met DigiD niet. Mogelijk werkt een van de v
 
 Lukt het nog steeds niet? Neem dan contact op de helpdesk van DigiD op {{ site.data.links.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
 
+
+### Ik heb geen BSN-nummer
+
+Alle informatie over het krijgen van een vaccinatiebewijs wanneer je geen BSN-nummer hebt kun je vinden op de pagina {{ site.data.links.coronabewijs-hulp[page.lang] }}.
+
 </div>
 {% endcapture %}
 
 {% comment %}
-    Page structure
+    Page structure ----------------------------------------------
 {% endcomment %}
 
-## Reizen met CoronaCheck 
+{% comment %}
+    Vaccinatiebewijzen
+{% endcomment %}
 
 {{ copy_intro }}
+
+<details><summary><h2>Ik wil een vaccinatiebewijs maken</h2></summary>
+
+<h3>Algemeen over vaccinatiebewijs</h3>
+{{ copy_vaccinatiebewijs }}
+
+<details>
+<summary><h3>Geen vaccinatiegegevens gevonden</h3></summary>
+{{ copy_geen_vaccinatiegegevens }}
+</details>
+
+<details>
+<summary><h3>Mijn vaccinatiegegevens kloppen niet</h3></summary>
+{{ copy_incorrecte_vaccinatiegegevens }}
+</details>
+
+<details>
+<summary><h3>App kan geen bewijs maken</h3></summary>
+{{ copy_app_kan_geen_bewijs_maken }}
+</details>
+
+<details><summary><h3>Ben je in het buitenland gevaccineerd?</h3></summary>
+{{ copy_in_buitenland_gevaccineerd }}
+</details>
+
+</details>
+
+{% comment %}
+    Herstelbewijzen
+{% endcomment %}
+
+<details><summary><h2>Ik wil een herstelbewijs maken</h2></summary>
+{{ copy_herstelbewijs }}
+
+<details>
+<summary><h3>Geen gegevens gevonden</h3></summary>
+{{ copy_geen_herstelbewijs_gegevens }}
+</details>
+
+<details>
+<summary><h3>Onjuiste gegevens gevonden</h3></summary>
+{{ copy_incorrecte_herstelgegevens }}
+</details>
+
+<details>
+<summary><h3>We kunnen geen bewijs maken</h3></summary>
+{{ copy_we_kunnen_geen_herstelbewijs_maken }}
+</details>
+
+</details>
+
+{% comment %}
+    Testbewijzen
+{% endcomment %}
 
 <details><summary><h2>Ik wil een testbewijs maken</h2></summary>
     {{ copy_testbewijs }}
@@ -266,60 +311,16 @@ Lukt het nog steeds niet? Neem dan contact op de helpdesk van DigiD op {{ site.d
     <summary>Ik krijg geen verificatiecode via SMS of e-mail</summary>
     {{ copy_geen_verificatiecode }}
     </details>
-</details>
 
-<details><summary><h2>Ik wil een herstelbewijs maken</h2></summary>
-{{ copy_herstelbewijs }}
-</details>
+    <details>
+    <summary>De gevonden gegevens kloppen niet</summary>
+    {{ copy_incorrecte_testgegevens }}
+    </details>
 
-<details><summary><h2>Ik wil een vaccinatiebewijs maken</h2></summary>
-{{ copy_vaccinatiebewijs }}
-
-<h3>Haal je volledige vaccinatie op</h3>
-{{ copy_haal_je_volledige_vaccinatie_op }}
-
-{% comment %}
-<details><summary><h3>Ben je in Nederland gevaccineerd?</h3></summary>
-<div>
-<h4>Ik heb 1 vaccinatie met Janssen ontvangen</h4>
-{{ copy_janssen_vaccinatie }}
-
-<h4>Heb je nog maar 1 vaccinatie gekregen (anders dan Janssen)? En heb je geen corona besmetting doorgemaakt?</h4>
-{{ copy_een_vaccinatie_geen_jansen }}
-
-<h4>Heb je 1 vaccinatie gehad vanwege een eerdere corona besmetting?</h4>
-{{ copy_een_vaccinatie_vanwege_besmetting }}
-</div>
-
-<details><summary>Ik heb 1 vaccinatie van de GGD ontvangen en bij het maken van de afspraak aangegeven dat ik in de afgelopen maanden corona heb gehad</summary>
-{{ copy_aangegeven_ggd_corona_gehad }}</details>
-
-<details><summary>Ik heb 1 vaccinatie gekregen elders dan bij de GGD en bij het maken van de afspraak aangegeven dat ik in de afgelopen maanden corona heb gehad</summary>
-{{ copy_aangegeven_elders_corona_gehad }}</details>
-
-<details><summary>Ik heb 1 vaccinatie en ben korter dan 180 dagen geleden positief getest op corona</summary>
-{{ copy_korter_dan_180_dagen }}</details>
-
-<details><summary>Ik heb 1 vaccinatie en langer dan 180 dagen geleden positief getest</summary>
-{{ copy_langer_dan_180_dagen }}</details>
-
-<h4>Ik heb mijn tweede afspraak geannuleerd / ben niet geweest</h4>
-{{ copy_tweede_afspraak_afgezegd }}
-
-<h4>Ik heb 2 vaccinaties ontvangen</h4>
-{{ copy_twee_vaccinaties_ontvangen }}
-</details>
-{% endcomment %}
-
-<details>
-<summary><h3>Geen of onjuiste gegevens gevonden?</h3></summary>
-{{ copy_troubleshooting }}
-</details>
-
-<details><summary><h3>Ben je in het buitenland gevaccineerd?</h3></summary>
-{{ copy_in_buitenland_gevaccineerd }}
-</details>
-
+    <details>
+    <summary>De app kan geen bewijs maken</summary>
+    {{ copy_we_kunnen_geen_testbewijs_maken }}
+    </details>
 </details>
 
 <details>
