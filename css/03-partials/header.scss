@@ -210,19 +210,6 @@
             max-width: 343px;
         }
     }
-
-    &.offset-background {
-        a,
-        a:visited {
-            color: $color-RO_darkblue;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: $color-RO_darkblue--interaction;
-            text-decoration: underline;
-        }
-    }
 }
 
 .header__logo-badge {

@@ -1560,6 +1560,10 @@ sorry-btn:
   nl: "Terug naar CoronaCheck"
   en: "Back to CoronaCheck"
 
+status-block-title:
+  nl: Bekijk de actuele status van CoronaCheck
+  en: View the actual status of CoronaCheck
+
 status-block:
   nl: '<p>Bekijk op de <a href="https://status.coronacheck.nl">statuspagina</a> of er op dit moment een storing bekend is.  Hier vind je de laatste status en wat je in de tussentijd kunt doen.</p><p>Staat jouw probleem of storing er niet tussen? Mogelijk is er dan al een oplossing voor. Kijk dan tussen de meestgestelde vragen.</p>'
   en: '<p>Check the <a href="https://status.coronacheck.nl/en/">status page</a> to see if there is a known issue. Here you will find the latest status and what you can do in the meantime.</p><p>Is your problem or technical issue not listed? There may already be a solution. Please check the most frequently asked questions.</p>'
