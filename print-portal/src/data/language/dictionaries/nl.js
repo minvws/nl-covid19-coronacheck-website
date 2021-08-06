@@ -155,7 +155,7 @@ const nl = {
         },
         'errorNoEvents': {
             'pageHeader': 'Sorry, het is niet gelukt',
-            'pageIntro': '<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.</p><p>Tip: wacht een uur en probeer het dan nog een keer. </p>'
+            'pageIntro': '<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.</p><p>Tip: wacht een uur en probeer het dan nog een keer.</p>'
         },
         'errorTokenFlow': {
             'pageHeader': 'Sorry, er gaat iets mis',
