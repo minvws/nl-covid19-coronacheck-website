@@ -146,8 +146,8 @@ const en = {
             'pageIntro': '<p>Try again later today.</p>'
         },
         'errorTokenFlow': {
-            'pageHeader': 'Sorry, something went wrong',
-            'pageIntro': '<p>Something went wrong at the test location. Therefore your details can’t be retrieved.</p><h4>What to do now?</h4><p>Contact your test location and give them error code:</p><p><strong>Error code: %{error}</strong></p>'
+            'pageHeader': 'Sorry, something is going wrong',
+            'pageIntro': '<p>Something is going wrong at the test location. Therefore, your details can’t be retrieved.</p><h4>What now?</h4><p>Contact the test location and give them the following error code:</p><p><strong>Error code: %{error}</strong></p>'
         },
     },
     'components': {
