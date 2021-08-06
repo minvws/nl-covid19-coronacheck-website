@@ -343,7 +343,7 @@ const nl = {
             },
             'errorAccessTokens': {
                 'head': 'Sorry er gaat iets mis',
-                'body': 'Probeer het later nog eens. Of bekijk actuele storingen op status.coronacheck.nl.<br>(Foutcode: %{code})'
+                'body': 'Probeer het later nog eens. Of bekijk actuele storingen op <a href="https://status.coronacheck.nl/">status.coronacheck.nl.</a><br>(Foutcode: %{code})'
             }
         }
     },
