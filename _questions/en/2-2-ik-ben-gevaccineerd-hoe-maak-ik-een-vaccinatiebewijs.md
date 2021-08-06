@@ -23,7 +23,7 @@ Are you having one of the following problems:
 - Are both vaccinations registered on the same day?
 - Or are you not able to fully retrieve your vaccination details, while your last vaccination was over three days ago?
 
-Then your vaccination details might not have been registered the right way. Please contact your vaccination provider  (GGD on {{ site.data.translations.phone-ggd[page.lang] }}, hospital, general practitioner or another healthcare provider.
+Then your vaccination details might not have been registered the right way. Please contact your vaccination provider  (GGD on {{ site.data.links.phone-ggd[page.lang] }}, hospital, general practitioner or another healthcare provider.
 
 ## Were you vaccinated abroad?
 Unfortunately you cannot use CoronaCheck yet to create a vaccination certificate. In some countries you can create a coronavirus pass while you were over there that is valid in the Netherlands too. You can read more about this on {{ site.data.translations.coronabewijs-hulp-link[page.lang] }}.
