@@ -1,7 +1,7 @@
 ---
 set: 2
 index: 4
-title: Ik heb wel een internationale QR-code, maar geen Nederlandse. Wat nu?  
+title: Ik heb geen Nederlands vaccinatiebewijs gekregen, wel een internationaal vaccinatiebewijs. Wat kan ik doen?
 redirect_from: 
     - /nl/faq/2-6-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse
 ---
