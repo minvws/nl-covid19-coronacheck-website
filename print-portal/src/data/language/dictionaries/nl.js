@@ -335,6 +335,8 @@ const nl = {
                 'head': 'Sorry er gaat iets mis',
                 'body': 'Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (print sign error) door'
             },
+            // this one doesnt need a variable %{type} (as errorNoEvents has), since the other event types only
+            // query 1 event provider, the combination: and events and errors is impossible
             'collectEventsWithErrors': {
                 'head': 'Zijn dit al je vaccinaties?',
                 'body': '<p>Door een storing of drukte zijn mogelijk niet al jouw gegevens opgehaald. Mist er een vaccinatie? Kom later terug en haal opnieuw je gegevens op.</p>'
