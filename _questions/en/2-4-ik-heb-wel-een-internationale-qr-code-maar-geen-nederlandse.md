@@ -5,7 +5,7 @@ title: I did not receive a Dutch vaccination certificate, but I did receive an i
 redirect_from: 
     - /en/faq/2-6-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse
 ---
-In the Netherlands, you'll only receive a vaccination certificate if you were fully vaccinated. Or if you've had coronavirus and have been vaccinated once since. Read more here: {{ site.data.links.buitenlandvaccinatie[page.lang] }}. 
+In the Netherlands, you'll only receive a vaccination certificate if you were fully vaccinated. Or if you've had coronavirus and have been vaccinated once since. Read more here: {{ site.data.links.vaccinatiebewijs[page.lang] }}. 
 
 Are you entitled to a Dutch vaccination certificate, but is the app not providing one? See what you can do below. 
 
