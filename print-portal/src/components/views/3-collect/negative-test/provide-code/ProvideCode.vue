@@ -186,7 +186,7 @@ export default {
                                 break
                             default:
                                 this.$store.commit('clearAll');
-                                this.$router.push({ name: 'TestResultOtherSomethingWrong', query: { error: errorCause } });
+                                this.$router.push({ name: 'ErrorTokenFlow', query: { error: errorCause } });
                                 break
                             }
                         } else {

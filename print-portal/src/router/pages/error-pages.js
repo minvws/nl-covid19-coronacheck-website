@@ -2,6 +2,7 @@ import ServerBusy from '@/components/views/error-pages/ServerBusy';
 import ErrorAccessTokens from '@/components/views/error-pages/ErrorAccessTokens';
 import ErrorEventProvider from '@/components/views/error-pages/ErrorEventProvider';
 import EventsError from '@/components/views/error-pages/EventsError';
+import ErrorTokenFlow from '@/components/views/error-pages/ErrorTokenFlow';
 
 const errorPages = [{
     path: '/sorry-het-is-erg-druk',
@@ -28,6 +29,13 @@ const errorPages = [{
     path: '/sorry-het-is-niet-gelukt',
     component: EventsError,
     name: 'EventsError',
+    meta: {
+        pageHeader: 'error'
+    }
+}, {
+    path: '/testlocatie-er-gaat-iets-mis',
+    name: 'ErrorTokenFlow',
+    component: ErrorTokenFlow,
     meta: {
         pageHeader: 'error'
     }
