@@ -5,17 +5,17 @@ phone-ggd:
   en: '<a href="tel:08005090">0800-5090</a>'
 
 phone-helpdesk:
-  nl: <a href="tel:08001421">0800-1421</a>
-  fy: <a href="tel:08001421">0800-1421</a>
-  en: <a href="tel:08001421">0800-1421</a>
-  ar: <a href="tel:0800-1421" dir="ltr">0800-1421</a>
-  bg: <a href="tel:08001421">0800-1421</a>
-  de: <a href="tel:08001421">0800-1421</a>
-  fr: <a href="tel:08001421">0800-1421</a>
-  es: <a href="tel:08001421">0800-1421</a>
-  pl: <a href="tel:08001421">0800-1421</a>
-  ro: <a href="tel:08001421">0800-1421</a>
-  tr: <a href="tel:08001421">0800-1421</a>
+  nl: '<a href="tel:08001421">0800-1421</a>'
+  fy: '<a href="tel:08001421">0800-1421</a>'
+  en: '<a href="tel:08001421">0800-1421</a>'
+  ar: '<a href="tel:0800-1421" dir="ltr">0800-1421</a>'
+  bg: '<a href="tel:08001421">0800-1421</a>'
+  de: '<a href="tel:08001421">0800-1421</a>'
+  fr: '<a href="tel:08001421">0800-1421</a>'
+  es: '<a href="tel:08001421">0800-1421</a>'
+  pl: '<a href="tel:08001421">0800-1421</a>'
+  ro: '<a href="tel:08001421">0800-1421</a>'
+  tr: '<a href="tel:08001421">0800-1421</a>'
     
 phone-helpdesk-abroad:
   nl: '<a href="tel:+31707503720">+31 70 750 37 20</a>'
@@ -64,20 +64,20 @@ mijnrivm:
   en: '<a href="https://mijn.rivm.nl/vaccinaties/" rel="noopener noreferrer" target="_blank" hreflang="nl">MyRIVM - vaccinations</a>'
 
 vaccinatiebewijs:
-  nl: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/vaccinatiebewijs/" rel="noopener noreferrer" target="_blank">Vaccinatiebewijs regelen als coronabewijs</a>
-  en: <a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/" rel="noopener noreferrer" target="_blank">Using proof of vaccination to generate a COVID Certificates</a>
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/vaccinatiebewijs/" rel="noopener noreferrer" target="_blank">Vaccinatiebewijs regelen als coronabewijs</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/" rel="noopener noreferrer" target="_blank">Using proof of vaccination to generate a COVID Certificates</a>'
 
 buitenlandvaccinatie:
-  nl: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/vaccinatiebewijs/gevaccineerd-in-het-buitenland" rel="noopener noreferrer" target="_blank">Vaccinatiebewijs na vaccinatie in het buitenland</a>
-  en: <a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/vaccinated-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Getting proof of vaccination after being vaccinated outside of The Netherlands</a>
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/vaccinatiebewijs/gevaccineerd-in-het-buitenland" rel="noopener noreferrer" target="_blank">Vaccinatiebewijs na vaccinatie in het buitenland</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/vaccinated-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Getting proof of vaccination after being vaccinated outside of The Netherlands</a>'
 
 testbewijs:
-  nl: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/testbewijs" rel="noopener noreferrer" target="_blank">Testbewijs regelen als coronabewijs voor uw reis</a>
-  en: <a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/negative-test-result" rel="noopener noreferrer" target="_blank">Using a negative test result to generate a COVID Certificate for travel</a>
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/testbewijs" rel="noopener noreferrer" target="_blank">Testbewijs regelen als coronabewijs voor uw reis</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/negative-test-result" rel="noopener noreferrer" target="_blank">Using a negative test result to generate a COVID Certificate for travel</a>'
 
 herstelbewijs:
-  nl: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/herstelbewijs" rel="noopener noreferrer" target="_blank">Herstelbewijs regelen als coronabewijs</a>
-  en: <a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-recovery/" rel="noopener noreferrer" target="_blank">Using proof of recovery to generate a COVID Certificate</a>
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/herstelbewijs" rel="noopener noreferrer" target="_blank">Herstelbewijs regelen als coronabewijs</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-recovery/" rel="noopener noreferrer" target="_blank">Using proof of recovery to generate a COVID Certificate</a>'
 
 voororganisatoren:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/organisatoren" rel="noopener noreferrer" target="_blank">Testen voor toegang: informatie voor organisatoren</a>'
