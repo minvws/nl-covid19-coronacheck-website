@@ -329,6 +329,10 @@ const en = {
             'collectEventsWithErrors': {
                 'head': 'Are these all your vaccinations?',
                 'body': '<p>Due to increased traffic or an outage, some of your details may be missing. Are you missing a vaccination? Please come back later and retrieve your details again.</p>'
+            },
+            'errorAccessTokens': {
+                'head': 'Sorry, something went wrong',
+                'body': 'Try again later or view the latest outages at <a href="https://status.coronacheck.nl/en/">status.coronacheck.nl/en</a><br>(Error code: %{code})'
             }
         }
     },
