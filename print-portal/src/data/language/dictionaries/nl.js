@@ -149,9 +149,13 @@ const nl = {
             'pageHeader': 'Sorry, het is erg druk',
             'pageIntro': '<p>Probeer het later nog eens.</p>'
         },
-        'collectError': {
+        'errorEventProvider': {
             'pageHeader': 'Sorry, er gaat iets mis',
             'pageIntro': '<p>Er gaat iets mis bij het ophalen van je gegevens. Neem contact op met de helpdesk van CoronaCheck via 0800 -1421 (gratis). En geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
+        },
+        'errorAccessTokens': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Neem contact op met de helpdesk van CoronaCheck via 0800 -1421 (gratis). En geef de volgende foutcode door</p><p><strong>Foutcode: %{error}</strong></p>'
         },
         'eventsError': {
             'pageHeader': 'Sorry, het is niet gelukt',
@@ -329,6 +333,10 @@ const nl = {
             'signerFailed': {
                 'head': 'Sorry er gaat iets mis',
                 'body': 'Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (print sign error) door'
+            },
+            'errorAccessTokens': {
+                'head': 'Sorry er gaat iets mis',
+                'body': 'Probeer het later nog eens. Of bekijk actuele storingen op status.coronacheck.nl.<br>(Foutcode: %{code})'
             }
         }
     },

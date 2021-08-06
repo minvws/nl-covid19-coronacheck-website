@@ -4,7 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
 
 export default {
-    name: 'CollectError',
+    name: 'ErrorAccessTokens',
     components: { Page, PageIntro, CcButton },
     methods: {
         goHome() {
@@ -19,8 +19,8 @@ export default {
         :display-back-button="false">
         <div class="section">
             <PageIntro
-                :head="$t('views.collectError.pageHeader')"
-                :intro="$t('views.collectError.pageIntro', { error: $route.query.error })"/>
+                :head="$t('views.errorAccessTokens.pageHeader')"
+                :intro="$t('views.errorAccessTokens.pageIntro', { error: $route.query.error })"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

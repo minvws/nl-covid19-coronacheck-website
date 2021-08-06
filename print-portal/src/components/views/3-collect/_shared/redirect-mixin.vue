@@ -50,11 +50,20 @@ export default {
                             const payload = cmsDecode(response.data.payload);
                             this.collectEvents(payload.tokens);
                         } catch (error) {
-                            this.$router.push({ name: 'CollectError', query: { error: error.message } });
+                            this.$router.push({ name: 'ErrorEventProvider', query: { error: error.message } });
                         }
                     }
                 }).catch((error) => {
-                    this.$router.push({ name: 'CollectError', query: { error: error.message } });
+                    if (error.response && error.response.status && (error.response.status >= 400 && error.response.status < 500)) {
+                        this.$router.push({ name: this.pages.previous });
+                        this.$store.commit('modal/set', {
+                            messageHead: this.$t('message.error.errorAccessTokens.head'),
+                            messageBody: this.$t('message.error.errorAccessTokens.body', { code: error.response.status }),
+                            closeButton: true
+                        });
+                    } else {
+                        this.$router.push({ name: 'ErrorAccessTokens', query: { error: error.message } });
+                    }
                 });
             }).catch(() => {
                 this.gotoPreviousPage();
@@ -77,6 +86,8 @@ export default {
             return new Promise((resolve, reject) => {
                 signedEventsInterface.getTokens(token).then(response => {
                     resolve(response)
+                }).catch(error => {
+                    reject(error);
                 })
             })
         },
