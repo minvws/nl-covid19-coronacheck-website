@@ -161,7 +161,7 @@ export default {
                     this.checkResult();
                 } else {
                     if (analysis.errorAny) {
-                        this.$router.push({ name: 'EventsError' })
+                        this.$router.push({ name: 'ErrorNoEvents', query: { type: this.filter } })
                     } else {
                         this.$router.push({ name: this.pages.noResult });
                     }

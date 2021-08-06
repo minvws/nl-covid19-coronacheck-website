@@ -1,7 +1,7 @@
 import ServerBusy from '@/components/views/error-pages/ServerBusy';
 import ErrorAccessTokens from '@/components/views/error-pages/ErrorAccessTokens';
 import ErrorEventProvider from '@/components/views/error-pages/ErrorEventProvider';
-import EventsError from '@/components/views/error-pages/EventsError';
+import ErrorNoEvents from '@/components/views/error-pages/ErrorNoEvents';
 import ErrorTokenFlow from '@/components/views/error-pages/ErrorTokenFlow';
 
 const errorPages = [{
@@ -27,8 +27,8 @@ const errorPages = [{
     }
 }, {
     path: '/sorry-het-is-niet-gelukt',
-    component: EventsError,
-    name: 'EventsError',
+    component: ErrorNoEvents,
+    name: 'ErrorNoEvents',
     meta: {
         pageHeader: 'error'
     }
