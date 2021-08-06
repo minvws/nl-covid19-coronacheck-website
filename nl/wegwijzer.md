@@ -49,6 +49,7 @@ Kloppen er gegevens van je vaccinatie niet?
 Neem dan contact op met de zorgverlener die je heeft gevaccineerd. Ben je bij de GGD gevaccineerd dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
 
 Ben je gevaccineerd door je huisarts, ziekenhuis of zorginstelling? Neem dan contact met hen op. Zij kunnen een coronabewijs voor je maken met de juiste gegevens.  
+
 Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je binnen een paar dagen op reis gaat of een evenement wilt bezoeken. 
 
 Voor reizen binnen Europa: {{ site.data.links.testenvoorjereis[page.lang] }}. 
@@ -96,9 +97,10 @@ Meer informatie over herstelbewijzen vind je op {{ site.data.links.herstelbewijs
 {% capture copy_geen_herstelbewijs_gegevens %}
 <div markdown="1">
 Dit kan verschillende oorzaken hebben:
-- je bent niet door de GGD getest. Er wordt aan gewerkt om binnen enkele weken ook de gegevens van andere testaanbieders te ontsluiten.
-- je bent korter dan 11 dagen geleden (positief) getest. In dit geval kun je je herstelbewijs al wel ophalen, maar deze is pas op de 12e dag na testafname geldig.
-- je bent langer dan 180 dagen geleden (positief) getest. In dit geval heb je geen recht op een herstelbewijs.
+
+- Je bent niet door de GGD getest. Er wordt aan gewerkt om binnen enkele weken ook de gegevens van andere testaanbieders te ontsluiten.
+- Je bent korter dan 11 dagen geleden (positief) getest. In dit geval kun je je herstelbewijs al wel ophalen, maar deze is pas op de 12e dag na testafname geldig.
+- Je bent langer dan 180 dagen geleden (positief) getest. In dit geval heb je geen recht op een herstelbewijs.
 
 Als geen van bovenstaande situaties van toepassing is, en je bent wel positief getest door de GGD, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen je helpen te achterhalen of er wellicht gegevens onjuist geregistreerd staan.
 
@@ -124,6 +126,7 @@ Worden er wel gegevens over jouw herstel gevonden, maar zegt CoronaCheck dat er 
 Het kan zijn dat jouw testresultaat meer dan 180 dagen oud is. Dan is het niet meer mogelijk om een herstelbewijs te maken.
 
 Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Neem dan contact op met de zorgverlener waar je bent getest. Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
+
 Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken om een testbewijs te maken. Bijvoorbeeld als je binnen een paar dagen op reis gaat of een evenement wilt bezoeken. 
 
 Voor reizen binnen Europa: {{ site.data.links.testenvoorjereis[page.lang] }}. 
@@ -134,7 +137,8 @@ Om toegang te krijgen tot een evenement: {{ site.data.links.testen-voor-toegang[
 
 {% capture copy_testbewijs %}
 <div markdown="1">
-Alleen testuitslagen van testlocaties die aangesloten zijn bij CoronaCheck kunnen worden omgezet in een coronabewijs.Meer informatie over testbewijzen vind je op {{ site.data.links.testbewijs[page.lang] }}.
+Alleen testuitslagen van testlocaties die aangesloten zijn bij CoronaCheck kunnen worden omgezet in een coronabewijs. 
+Meer informatie over testbewijzen vind je op {{ site.data.links.testbewijs[page.lang] }}.
 
 ### Negatief getest bij de GGD
 Het kan tot 30 uur duren alvorens de uitslag van een test beschikbaar is. Vanaf het moment dat de GGD de uitslag heeft (dat kun je zien via {{ site.data.links.coronatest[page.lang] }}) duurt het nog een aantal uur voordat de gegevens zijn op te halen in de CoronaCheck-app (of CoronaCheck website). Als je testuitslag al wel in {{ site.data.links.coronatest[page.lang] }} beschikbaar is, maar na 30 uur na testafname nog niet in de CoronaCheck-app, neem dan contact op met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. 
@@ -154,9 +158,9 @@ Wil je gebruik maken van een coronabewijs om te reizen binnen Europa? Hiervoor k
 <div markdown="1">
 Deze ophaalcode bestaat uit een lange reeks van letters en cijfers (bv BRB-YYYYYYYYYY-Z2). Deze ontvang je van de testlocatie. De uitslag van een antigeentest ontvang je binnen drie uur, de uitslag van een pcr-test kan tot 24 uur duren. Soms kan het wat langer duren. Als je deze niet hebt ontvangen kan dat verschillende oorzaken hebben:
 
-- jouw test moet nog verwerkt worden.
-- je email adres is niet correct of wellicht is de mail in uw spambox terechtgekomen.
-- er is een probleem bij de testlocatie in het doorgeven van de uitslag. Kijk op {{ site.data.links.testen-voor-toegang[page.lang] }} of er storingen bekend zijn bij testlocaties.
+- Jouw test moet nog verwerkt worden.
+- Je email adres is niet correct of wellicht is de mail in uw spambox terechtgekomen.
+- Er is een probleem bij de testlocatie in het doorgeven van de uitslag. Kijk op {{ site.data.links.testen-voor-toegang[page.lang] }} of er storingen bekend zijn bij testlocaties.
 
 Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} of met de helpdesk van Testen voor je Reis op {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
 </div>
@@ -294,7 +298,7 @@ Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ
 </details>
 
 <details>
-<summary><h3>We kunnen geen bewijs maken</h3></summary>
+<summary><h3>App kan geen bewijs maken</h3></summary>
 {{ copy_we_kunnen_geen_herstelbewijs_maken }}
 </details>
 
