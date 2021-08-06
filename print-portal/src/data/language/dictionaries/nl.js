@@ -334,6 +334,10 @@ const nl = {
                 'head': 'Sorry er gaat iets mis',
                 'body': 'Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (print sign error) door'
             },
+            'collectEventsWithErrors': {
+                'head': 'Zijn dit al je vaccinaties?',
+                'body': '<p>Door een storing of drukte zijn mogelijk niet al jouw gegevens opgehaald. Mist er een vaccinatie? Kom later terug en haal opnieuw je gegevens op.</p>'
+            },
             'errorAccessTokens': {
                 'head': 'Sorry er gaat iets mis',
                 'body': 'Probeer het later nog eens. Of bekijk actuele storingen op status.coronacheck.nl.<br>(Foutcode: %{code})'

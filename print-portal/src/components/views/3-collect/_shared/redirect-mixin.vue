@@ -144,10 +144,9 @@ export default {
                 console.log(analysis);
                 if (analysis.hasResults) {
                     if (analysis.errorAny) {
-                        // todo via dictionary
                         this.$store.commit('modal/set', {
-                            messageHead: 'Zijn dit al je vaccinaties?',
-                            messageBody: 'Door een storing of drukte zijn mogelijk niet al jouw gegevens opgehaald. Mist er een vaccinatie? Kom later terug en haal opnieuw je gegevens op.',
+                            messageHead: this.$t('message.error.collectEventsWithErrors.head'),
+                            messageBody: this.$t('message.error.collectEventsWithErrors.body'),
                             closeButton: true
                         });
                     }
