@@ -145,6 +145,10 @@ const en = {
             'pageHeader': 'It\'s very busy at the moment',
             'pageIntro': '<p>Try again later today.</p>'
         },
+        'errorAccessTokens': {
+            'pageHeader': 'Sorry, something is going wrong',
+            'pageIntro': '<p>Contact the help desk of CoronaCheck via 0800-1421 (free of charge) and give them the following error code:</p><p><strong>Error code: %{error}</strong></p>'
+        },
         'errorNoEvents': {
             'pageHeader': 'Sorry, your details were not retrieved',
             'pageIntro': '<p>Due to increased traffic or an outage at one of the involved parties, some details of your %{type} may be missing. </p><p>Tip: wait one hour and try again.</p>'
