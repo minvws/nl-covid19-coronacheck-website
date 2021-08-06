@@ -224,13 +224,21 @@ Bij sommige mensen lukt het inloggen met DigiD niet. Mogelijk werkt een van de v
 
 Lukt het nog steeds niet? Neem dan contact op de helpdesk van DigiD op {{ site.data.links.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
 
-
 ### Ik heb geen BSN-nummer
 
 Alle informatie over het krijgen van een vaccinatiebewijs wanneer je geen BSN-nummer hebt kun je vinden op de pagina {{ site.data.links.coronabewijs-hulp[page.lang] }}.
 
 </div>
 {% endcapture %}
+
+{% capture copy_travelquestions %}
+<div markdown="1">
+Ga je binnenkort op reis? Check voor vertrek altijd de geldende inreisregels van je bestemming op {{ site.data.links.wijsoprijs[page.lang] }}. Je kunt nu gratis je testafspraak maken op {{ site.data.links.testenvoorjereis[page.lang] }}. 
+
+Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ).  <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">Neem contact op met het contactcenter van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
+</div>
+{% endcapture %}
+
 
 {% comment %}
     Page structure ----------------------------------------------
@@ -331,4 +339,10 @@ Alle informatie over het krijgen van een vaccinatiebewijs wanneer je geen BSN-nu
 <details>
 <summary><h2>Ik kan niet inloggen met DigiD</h2></summary>
 {{ copy_digid }}
+</details>
+
+
+<details>
+<summary><h2>Vragen over reizen?</h2></summary>
+{{ copy_travelquestions }}
 </details>
