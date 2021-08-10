@@ -270,7 +270,7 @@ Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ
 </details>
 
 <details>
-<summary><h3>De app kan geen bewijs maken</h3></summary>
+<summary><h3>App kan geen bewijs maken</h3></summary>
 {{ copy_app_kan_geen_bewijs_maken }}
 </details>
 
@@ -298,7 +298,7 @@ Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ
 </details>
 
 <details>
-<summary><h3>De app kan geen bewijs maken</h3></summary>
+<summary><h3>App kan geen bewijs maken</h3></summary>
 {{ copy_we_kunnen_geen_herstelbewijs_maken }}
 </details>
 

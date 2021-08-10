@@ -15,4 +15,4 @@ The evaluation will run until September. The final report will then be published
 
 In addition, information about the number of times CoronaCheck and [CoronaCheck Scanner](/en/scanner) are downloaded is made available every day.  You can download an overview of this data here: 
 
-<a href="/media/Factsheet_CoronaCheck_latest.pdf" rel="noopener noreferrer" target="_blank">Factsheet CoronaCheck (PDF, 142kb)</a>
+<a href="/media/Factsheet_CoronaCheck_latest.pdf" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Factsheet CoronaCheck (PDF, 142kb, Dutch)</a>
