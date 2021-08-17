@@ -218,15 +218,18 @@ Wil je geen DigiD of heb je geen digitale middelen, neem dan telefonisch contact
 
 ### Foutmelding DigiD / Technische storing
 
-Bij sommige mensen lukt het inloggen met DigiD niet. Mogelijk werkt een van de volgende oplossingen voor je:
+Heb je al DigiD en lukt het je niet om hier een coronabewijs mee op te halen? Bij sommige mensen lukt het inloggen met DigiD helaas niet. Je kunt een aantal stappen ondernemen:
 
-- Sluit alle openstaande browser van DigiD handmatig, sluit de CoronaCheck-app af en probeer daarna opnieuw in te loggen via CoronaCheck;
-- Soms is het nodig het om je browser cache handmatig te verwijderen en daarna opnieuw in te loggen via CoronaCheck;
-- In sommige gevallen werkt het om je internetverbinding te wisselen. Zet bijvoorbeeld Wi-Fi uit en aan en probeer het dan nog eens;
+- Sluit alle openstaande browsers van DigiD handmatig (_\*.coronacheck.nl_, _\*.overheid.nl_ en _\*.digid.nl)_  en sluit de CoronaCheck-app af;
+- Update de CoronaCheck-app en de DigiD-app (indien in gebruik) naar de laatste versies;
+- Soms is het nodig het om je browser cache en cookies handmatig te verwijderen en daarna opnieuw in te loggen via CoronaCheck;
+- In sommige gevallen werkt het om je internetverbinding te wisselen. Zet bijvoorbeeld wi-fi uit en aan en probeer het dan nog eens;
+- Gebruik een ondersteunde browser, zoals Mozilla Firefox, Google Chrome of Microsoft Edge en stel een andere standaard browser in;
+- Controleer of je browser cookies accepteert. Na het ophalen van de gegevens kun je dit weer uitzetten;
 - Soms werkt het om de telefoon te herstarten en dan opnieuw te proberen;
 - Tenslotte kan het werken om DigiD op een ander apparaat te gebruiken.
 
-Lukt het nog steeds niet? Neem dan contact op met de helpdesk van DigiD op {{ site.data.links.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
+Lukt het nog steeds niet? Neem dan contact op de helpdesk via {{ site.data.links.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00) of via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 ### Ik heb geen BSN-nummer
 
