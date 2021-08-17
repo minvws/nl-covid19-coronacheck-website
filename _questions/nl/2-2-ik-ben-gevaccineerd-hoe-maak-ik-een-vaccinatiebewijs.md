@@ -1,7 +1,7 @@
 ---
 set: 2
 index: 2
-title: Ik ben gevaccineerd. Hoe maak ik een vaccinatiebewijs?
+title: Wanneer kan ik een vaccinatiebewijs maken?
 redirect_from: 
     - /nl/faq/8-ik-heb-mij-laten-testen-hoe-krijg-ik-mijn-testuitslag
     - /nl/faq/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
