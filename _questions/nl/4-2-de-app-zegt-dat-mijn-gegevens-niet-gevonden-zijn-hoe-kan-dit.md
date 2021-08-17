@@ -1,7 +1,7 @@
 ---
 set: 4
 index: 2
-title: De app zegt dat er geen testresultaat of vaccinatie gevonden is. Wat kan ik doen?
+title: De app zegt dat er geen testuitslag of vaccinatie gevonden is. Wat kan ik doen?
 redirect_from: 
   - /nl/faq/13-de-app-zegt-dat-er-geen-negatieve-testuitslag-gevonden-is-hoe-kan-dit
   - /nl/faq/4-1-de-app-zegt-dat-er-geen-negatieve-testuitslag-of-vaccinatie-gevonden-is-hoe-kan-dit
