@@ -2,7 +2,7 @@
 set: 1
 index: 10
 title: Why do I have a Dutch and an international QR code?
-webonly: true
+
 ---
 This app generates two QR codes: one for the Netherlands and one for other countries. For security reasons, the Dutch QR code contains as little data as possible. It does state, among other things, whether your coronavirus pass is valid. The QR code also contains (some of) the following personal details: the first letter of your first name, the first letter of your last name and your month and day of birth. The QR code doesn't contain any details concerning your test, vaccination or recovery. 
 
