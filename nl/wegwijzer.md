@@ -98,7 +98,7 @@ Meer informatie over herstelbewijzen vind je op {{ site.data.links.herstelbewijs
 <div markdown="1">
 Dit kan verschillende oorzaken hebben:
 
-- Je bent niet door de GGD getest. Er wordt aan gewerkt om binnen enkele weken ook de gegevens van andere testaanbieders te ontsluiten.
+- Je bent niet door de GGD getest. Er wordt aan gewerkt om binnen enkele weken ook de gegevens van andere testaanbieders te laten zien.
 - Je bent korter dan 11 dagen geleden (positief) getest. In dit geval kun je je herstelbewijs al wel ophalen, maar deze is pas op de 12e dag na testafname geldig.
 - Je bent langer dan 180 dagen geleden (positief) getest. In dit geval heb je geen recht op een herstelbewijs.
 
@@ -348,7 +348,6 @@ Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ
 <summary><h2>Ik kan niet inloggen met DigiD</h2></summary>
 {{ copy_digid }}
 </details>
-
 
 <details id="travel">
 <summary><h2>Vragen over reizen?</h2></summary>
