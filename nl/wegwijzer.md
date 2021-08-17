@@ -226,7 +226,7 @@ Bij sommige mensen lukt het inloggen met DigiD niet. Mogelijk werkt een van de v
 - Soms werkt het om de telefoon te herstarten en dan opnieuw te proberen;
 - Tenslotte kan het werken om DigiD op een ander apparaat te gebruiken.
 
-Lukt het nog steeds niet? Neem dan contact op de helpdesk van DigiD op {{ site.data.links.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
+Lukt het nog steeds niet? Neem dan contact op met de helpdesk van DigiD op {{ site.data.links.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00).
 
 ### Ik heb geen BSN-nummer
 
@@ -254,27 +254,27 @@ Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ
 
 {{ copy_intro }}
 
-<details><summary><h2>Ik wil een vaccinatiebewijs maken</h2></summary>
+<details id="vacc"><summary><h2>Ik wil een vaccinatiebewijs maken</h2></summary>
 
 <h3>Algemeen over vaccinatiebewijs</h3>
 {{ copy_vaccinatiebewijs }}
 
-<details>
+<details id="vacc_nodata">
 <summary><h3>Geen vaccinatiegegevens gevonden</h3></summary>
 {{ copy_geen_vaccinatiegegevens }}
 </details>
 
-<details>
+<details id="vacc_dataincorrect">
 <summary><h3>Mijn vaccinatiegegevens kloppen niet</h3></summary>
 {{ copy_incorrecte_vaccinatiegegevens }}
 </details>
 
-<details>
-<summary><h3>App kan geen bewijs maken</h3></summary>
+<details id="vacc_cantmakeproof">
+<summary><h3>De app kan geen bewijs maken</h3></summary>
 {{ copy_app_kan_geen_bewijs_maken }}
 </details>
 
-<details><summary><h3>Ben je in het buitenland gevaccineerd?</h3></summary>
+<details id="vacc_othercountry"><summary><h3>Ben je in het buitenland gevaccineerd?</h3></summary>
 {{ copy_in_buitenland_gevaccineerd }}
 </details>
 
@@ -284,21 +284,21 @@ Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ
     Herstelbewijzen
 {% endcomment %}
 
-<details><summary><h2>Ik wil een herstelbewijs maken</h2></summary>
+<details id="recovery"><summary><h2>Ik wil een herstelbewijs maken</h2></summary>
 {{ copy_herstelbewijs }}
 
-<details>
+<details id="recovery_nodata">
 <summary><h3>Geen gegevens gevonden</h3></summary>
 {{ copy_geen_herstelbewijs_gegevens }}
 </details>
 
-<details>
+<details id="recovery_dataincorrect">
 <summary><h3>Onjuiste gegevens gevonden</h3></summary>
 {{ copy_incorrecte_herstelgegevens }}
 </details>
 
-<details>
-<summary><h3>App kan geen bewijs maken</h3></summary>
+<details id="recovery_cantmakeproof">
+<summary><h3>De app kan geen bewijs maken</h3></summary>
 {{ copy_we_kunnen_geen_herstelbewijs_maken }}
 </details>
 
@@ -308,45 +308,46 @@ Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ
     Testbewijzen
 {% endcomment %}
 
-<details><summary><h2>Ik wil een testbewijs maken</h2></summary>
+<details id="test"><summary><h2>Ik wil een testbewijs maken</h2></summary>
     {{ copy_testbewijs }}
- 
-    <h3>Testen voor je reis</h3>
-    {{ copy_testen_voor_je_reis }}
 
-    <details>
-    <summary>Ik heb geen ophaalcode gekregen</summary>
-    {{ copy_geen_ophaalcode }}
-    </details>
+<h3>Testen voor je reis</h3>
+{{ copy_testen_voor_je_reis }}
 
-    <details>
-    <summary>Ik krijg geen verificatiecode via SMS of e-mail</summary>
-    {{ copy_geen_verificatiecode }}
-    </details>
-
-    <details>
-    <summary>De gevonden gegevens kloppen niet</summary>
-    {{ copy_incorrecte_testgegevens }}
-    </details>
-
-    <details>
-    <summary>De app kan geen bewijs maken</summary>
-    {{ copy_we_kunnen_geen_testbewijs_maken }}
-    </details>
+<details id="test_nocode">
+<summary><h3>Ik heb geen ophaalcode gekregen</h3></summary>
+{{ copy_geen_ophaalcode }}
 </details>
 
-<details>
+<details id="test_noverificationcode">
+<summary><h3>Ik krijg geen verificatiecode via SMS of e-mail</h3></summary>
+{{ copy_geen_verificatiecode }}
+</details>
+
+<details id="test_incorrectdata">
+<summary><h3>De gevonden gegevens kloppen niet</h3></summary>
+{{ copy_incorrecte_testgegevens }}
+</details>
+
+<details id="test_cantmakeproof">
+<summary><h3>De app kan geen bewijs maken</h3></summary>
+{{ copy_we_kunnen_geen_testbewijs_maken }}
+</details>
+
+</details>
+
+<details id="paper">
 <summary><h2>Ik wil een papieren coronabewijs maken</h2></summary>
 {{ copy_printbewijs }}
 </details>
 
-<details>
+<details id="digid">
 <summary><h2>Ik kan niet inloggen met DigiD</h2></summary>
 {{ copy_digid }}
 </details>
 
 
-<details>
+<details id="travel">
 <summary><h2>Vragen over reizen?</h2></summary>
 {{ copy_travelquestions }}
 </details>
