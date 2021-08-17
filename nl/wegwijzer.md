@@ -229,7 +229,7 @@ Heb je al DigiD en lukt het je niet om hier een coronabewijs mee op te halen? Bi
 - Soms werkt het om de telefoon te herstarten en dan opnieuw te proberen;
 - Tenslotte kan het werken om DigiD op een ander apparaat te gebruiken.
 
-Lukt het nog steeds niet? Neem dan contact op de helpdesk via {{ site.data.links.phone-digid-helpdesk[page.lang] }} (op werkdagen bereikbaar van 8.00 tot 22.00 uur en in het weekend van 12:00-22:00) of via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
+Lukt het nog steeds niet? Neem dan contact op de helpdesk via {{ site.data.links.phone-helpdesk[page.lang] }} of via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 ### Ik heb geen BSN-nummer
 
