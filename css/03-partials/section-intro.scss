@@ -30,6 +30,10 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 
     @media (min-width: 940px) {

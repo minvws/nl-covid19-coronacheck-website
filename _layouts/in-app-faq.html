@@ -23,10 +23,11 @@
 {% endif %}
 <body>
   <main class="content-center content-center__in_app" id="content">
-    {% include components/banner-status.html %}
 
     <div class="content-block">
       <h1 id="frequently-asked-questions">{{ site.data.translations.faq-coronacheck[page.lang] }}</h1>
+
+        {% include components/banner-status.html %}
     
       <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
         
@@ -98,6 +99,8 @@
 
         {% if questionSetFour.size > 0 %}
             <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-four[page.lang]|slugify }}">{{ site.data.translations.faq-category-four[page.lang] }}</h2>
+
+            {% include components/banner-guidepost.html %}
 
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">

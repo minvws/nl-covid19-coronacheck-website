@@ -6,3 +6,24 @@
 <script src="{{ site.baseurl }}/js/vendors/mediaelement-plugins.2.5.1/a11y/a11y.min.js"></script>
 <script src="{{ site.baseurl }}/js/vendors/mediaelement-plugins.2.5.1/a11y/a11y-i18n.js"></script>
 <script src="{{ site.baseurl }}/js/mediaplayer.js"></script>
+
+<script>
+    
+function openTarget() {
+  var hash = location.hash.substring(1);
+  console.log(hash);
+  if(hash) {
+      var details = document.getElementById(hash);
+      var detailsParent = document.getElementById(hash.split('_')[0]);
+  }
+  if(details && details.tagName.toLowerCase() === 'details') {
+      details.open = true;
+      detailsParent.open = true;
+  }
+}
+window.addEventListener('hashchange', openTarget);
+window.addEventListener('load', openTarget);
+
+openTarget();
+
+</script>
