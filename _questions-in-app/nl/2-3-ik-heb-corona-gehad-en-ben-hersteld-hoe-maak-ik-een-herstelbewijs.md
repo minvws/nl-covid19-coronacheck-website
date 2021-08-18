@@ -2,7 +2,6 @@
 set: 2
 index: 3
 title: Wanneer kan ik een herstelbewijs maken?
-webonly: true
 ---
 Je kunt een positieve testuitslag gebruiken om een herstelbewijs te maken met CoronaCheck. Hiervoor gelden een aantal voorwaarden:
 

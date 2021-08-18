@@ -3,10 +3,10 @@ set: 1
 index: 8
 title: I have a valid certificate, but I also have symptoms. Can I still get access?
 redirect_from: 
-    - /en/faq-in-app/5-ik-heb-een-qr-code-maar-heb-nu-klachten
-    - /en/faq-in-app/1-8-ik-heb-een-geldig-bewijs-maar-heb-nu-klachten-mag-ik-alsnog-naar-binnen
-    - /en/faq-in-app/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd
-    - /en/faq-in-app/1-9-ik-heb-een-geldig-bewijs-maar-moet-in-quarantaine-blijven-van-de-ggd
+    - /enfaq-in-app/5-ik-heb-een-qr-code-maar-heb-nu-klachten
+    - /enfaq-in-app/1-8-ik-heb-een-geldig-bewijs-maar-heb-nu-klachten-mag-ik-alsnog-naar-binnen
+    - /enfaq-in-app/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd
+    - /enfaq-in-app/1-9-ik-heb-een-geldig-bewijs-maar-moet-in-quarantaine-blijven-van-de-ggd
 ---
 Suffering from symptoms such as a cold, cough or shortness of breath? Stay at home. This also applies if you’re vaccinated.
 

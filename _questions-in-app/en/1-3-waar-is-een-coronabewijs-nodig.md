@@ -3,8 +3,8 @@ set: 1
 index: 3
 title: Which locations require a coronavirus pass?
 redirect_from: 
-    - /en/faq-in-app/2-1-bij-welke-locaties-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil
-    - /en/faq-in-app/2-1-bij-welke-plekken-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil
+    - /enfaq-in-app/2-1-bij-welke-locaties-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil
+    - /enfaq-in-app/2-1-bij-welke-plekken-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil
 ---
 Some Dutch locations require a coronavirus pass for access. Imagine a festival or a football match, for example. If this is the case, the organizer will provide more information.
 

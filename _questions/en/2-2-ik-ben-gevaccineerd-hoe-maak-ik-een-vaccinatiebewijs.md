@@ -6,7 +6,6 @@ redirect_from:
     - /en/faq/8-ik-heb-mij-laten-testen-hoe-krijg-ik-mijn-testuitslag
     - /en/faq/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
     - /en/faq/1-5-hoe-maak-ik-een-bewijs-van-een-vaccinatie-herstel-of-testuitslag
-webonly: true
 featuredHome: true
 featuredHomeIndex: 2
 ---

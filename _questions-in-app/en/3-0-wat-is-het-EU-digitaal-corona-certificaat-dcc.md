@@ -3,7 +3,8 @@ set: 3
 index: 0
 title: What is the EU Digital COVID Certificate?
 redirect_from:
-    - /en/faq-in-app/2-7-wat-is-het-EU-digitaal-corona-certificaat-dcc
+    - /enfaq-in-app/2-7-wat-is-het-EU-digitaal-corona-certificaat-dcc
+webonly: true
 ---
 The EU Digital COVID Certificate (DCC for short) is digital or physical proof that someone has been vaccinated, recovered from coronavirus or recently tested negative for coronavirus. You can create this proof yourself in the app or via [www.coronacheck.nl/print](/print)  in the form of a QR code.
 

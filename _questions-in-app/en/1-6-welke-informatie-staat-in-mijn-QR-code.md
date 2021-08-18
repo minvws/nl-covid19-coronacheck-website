@@ -3,11 +3,11 @@ set: 1
 index: 6
 title: Which information does my QR code contain?
 redirect_from: 
-  - /en/faq-in-app/18-welke-informatie-staat-in-mijn-qr-code
-  - /en/faq-in-app/16-hoe-worden-mijn-gegevens-gebruikt/
-  - /en/faq-in-app/17-wat-ziet-de-controleur-na-scannen-van-mijn-qr-code/
+  - /enfaq-in-app/18-welke-informatie-staat-in-mijn-qr-code
+  - /enfaq-in-app/16-hoe-worden-mijn-gegevens-gebruikt/
+  - /enfaq-in-app/17-wat-ziet-de-controleur-na-scannen-van-mijn-qr-code/
 featuredHome: true
-featuredHomeIndex: 3
+featuredHomeIndex: 5
 ---
 ### The Dutch QR code
 In case of a Dutch QR code, the inspector only sees a minimal amount of information on their screen:
