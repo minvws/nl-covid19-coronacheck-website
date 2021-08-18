@@ -156,8 +156,8 @@ scanner-header-subtitle:
   tr: 
 
 coronacheck-header-img:
-  nl: /img/Home_NL_Header-min.png
-  en: /img/Home_EN_Header-min.png
+  nl: /img/Home_NL_Header.png
+  en: /img/Home_EN_Header.png
 
 coronacheck-header-illustration: /img/Home_Header_Person.svg
     

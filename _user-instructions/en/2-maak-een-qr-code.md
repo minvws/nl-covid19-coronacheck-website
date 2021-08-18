@@ -1,7 +1,7 @@
 ---
 index: 2
 show: true
-graphic: Home_EN_Iphone2-min.png
+graphic: Home_EN_Iphone2.png
 title: 2. Make a QR code
 lang: en
 ---
