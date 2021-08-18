@@ -5,8 +5,6 @@ title: How long is my corona certificate valid for and can I use it multiple tim
 redirect_from: 
     - /en/faq/2-2-hoe-lang-is-mijn-testbewijs-geldig-en-kan-ik-hem-meerdere-keren-gebruiken
     - /en/faq/2-3-tot-wanneer-is-mijn-vaccinatiebewijs-geldig
-featuredHome: true
-featuredHomeIndex: 2
 ---
 Since july 13th, a test certificate is valid until 24 hours after the moment of testing. Within these 24 hours, you’re able to visit multiple locations or activities with your certificate (the QR code). Please note: a test done by the GGD often isn’t available in CoronaCheck within 24 hours. 
 

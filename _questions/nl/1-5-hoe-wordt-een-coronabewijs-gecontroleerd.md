@@ -6,8 +6,6 @@ redirect_from:
     - /nl/faq/31-hoe-wordt-mijn-testbewijs-gecontroleerd
     - /nl/faq/2-5-hoe-wordt-mijn-coronabewijs-gecontroleerd
 webonly: true
-featuredHome: true
-featuredHomeIndex: 5
 ---
 Voor toegang tot Nederlandse evenementen gebeurt dat met de [CoronaCheck Scanner](/scanner). Met deze app checkt een controleur de geldigheid van het coronabewijs bij de ingang, door de QR-code te scannen. Ben je organisator van een evenement? Kijk dan op de pagina over de CoronaCheck Scanner.
 

@@ -6,8 +6,6 @@ redirect_from:
     - /en/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
     - /en/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
 webonly: true
-featuredHome: true
-featuredHomeIndex: 3
 ---
 What is the best place to get tested for coronavirus? This depends on what you are planning to use the test certificate for.
 

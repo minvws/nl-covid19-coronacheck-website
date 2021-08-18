@@ -7,7 +7,7 @@ redirect_from:
   - /nl/faq/5-2-hoe-werkt-het-papieren-testbewijs
 webonly: true
 featuredHome: true
-featuredHomeIndex: 6
+featuredHomeIndex: 4
 ---
 In sommige gevallen wil je liever een papieren QR-code uitprinten. Bijvoorbeeld als je geen smartphone hebt. Of als je een QR-code wilt maken voor je kinderen. Ga naar [www.coronacheck.nl/print](/print) en volg de stappen.
 

@@ -4,6 +4,8 @@ index: 4
 title: Ik heb geen Nederlands vaccinatiebewijs gekregen, wel een internationaal vaccinatiebewijs. Wat kan ik doen?
 redirect_from: 
     - /nl/faq/2-6-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse
+featuredHome: true
+featuredHomeIndex: 3
 ---
 In Nederland krijg je alleen een vaccinatiebewijs als je volledig bent gevaccineerd. Of als je corona hebt gehad, en daarna één keer bent gevaccineerd. Lees hier meer over wanneer je in Nederland recht hebt op een vaccinatiebewijs: {{ site.data.links.vaccinatiebewijs[page.lang] }}.
 

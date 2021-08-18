@@ -6,8 +6,6 @@ redirect_from:
     - /nl/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
     - /nl/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
 webonly: true
-featuredHome: true
-featuredHomeIndex: 3
 ---
 Waar je het beste een coronatest kan doen? Dat hangt ervan af waar je het testbewijs voor wil gebruiken.
 
