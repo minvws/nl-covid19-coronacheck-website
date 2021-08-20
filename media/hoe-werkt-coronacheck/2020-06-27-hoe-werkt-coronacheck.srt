@@ -1,204 +1,199 @@
 ﻿1
-00:00:00,400 --> 00:00:03,600
+00:04:13,040 --> 00:04:16,240
 *Muziek speelt* 
 
 2
-00:00:03,880 --> 00:00:07,400
+00:04:16,520 --> 00:04:20,040
 Binnenkort gaan we gezellig met onze twee
 kinderen een dagje uit in Nederland
 
 3
-00:00:07,600 --> 00:00:10,080
+00:04:20,240 --> 00:04:22,720
 en over drie weken ga ik samen
 met mijn vrouw naar Spanje.
 
 4
-00:00:10,280 --> 00:00:12,360
+00:04:22,920 --> 00:04:25,000
 Ik ben zo blij dat het
 weer kan, eindelijk!
 
 5
-00:00:13,000 --> 00:00:15,200
+00:04:25,640 --> 00:04:27,840
 Daar heb je wel een
 coronabewijs voor nodig.
 
 6
-00:00:15,400 --> 00:00:19,480
+00:04:28,040 --> 00:04:32,120
 Nou heb ik begrepen dat je
 via de CoronaCheck app
 
 7
-00:00:19,680 --> 00:00:22,360
+00:04:32,320 --> 00:04:35,000
 zo’n bewijs kunt maken,
 en met je DigiD.
 
 8
-00:00:22,560 --> 00:00:25,360
+00:04:35,200 --> 00:04:38,000
 Nou, mijn vrouw en ik zijn
 allebei volledig gevaccineerd
 
 9
-00:00:25,520 --> 00:00:29,600
+00:04:38,160 --> 00:04:42,240
 en ik heb op MijnRIVM gezien
 dat alle gegevens kloppen.
 
 10
-00:00:29,920 --> 00:00:34,360
+00:04:42,560 --> 00:04:47,000
 Dus nu ga ik eens kijken of het lukt
 om een QR-code te maken.
 
 11
-00:00:34,600 --> 00:00:38,240
+00:04:47,240 --> 00:04:50,880
 Ik heb de app nog niet, dus die
 moet ik eerst even downloaden.
 
 12
-00:00:38,560 --> 00:00:39,840
+00:04:51,200 --> 00:04:52,480
 Zo.
 
 13
-00:00:41,720 --> 00:00:42,640
+00:04:54,360 --> 00:04:55,280
 Nou.
 
 14
-00:00:43,800 --> 00:00:48,160
+00:04:56,440 --> 00:05:00,800
 De app is gedownload, dus ik ga nu
 de CoronaCheck app openen.
 
 15
-00:00:48,920 --> 00:00:51,800
+00:05:01,560 --> 00:05:04,440
 Mooi, nu krijg ik wat informatie.
 
 16
-00:00:52,080 --> 00:00:54,440
+00:05:04,720 --> 00:05:07,080
 De app maakt twee
 QR-codes aan.
 
 17
-00:00:54,640 --> 00:00:57,680
+00:05:07,280 --> 00:05:10,320
 Een QR-code voor Nederland
 en een internationale.
 
 18
-00:00:59,680 --> 00:01:02,800
+00:05:12,320 --> 00:05:15,440
 Ik heb de privacyverklaring
 ondertekend en ik begrijp
 
 19
-00:01:03,000 --> 00:01:06,000
+00:05:15,640 --> 00:05:18,640
 dat CoronaCheck verstandig
 met mijn gegevens omgaat.
 
 20
-00:01:06,960 --> 00:01:07,920
+00:05:19,600 --> 00:05:20,560
 Ja.
 
 21
-00:01:08,800 --> 00:01:09,840
+00:05:21,440 --> 00:05:22,480
 Heel mooi.
 
 22
-00:01:11,160 --> 00:01:15,360
+00:05:23,800 --> 00:05:28,000
 Nog niet iedereen is volledig gevaccineerd
 dus die mensen hebben
 
 23
-00:01:15,560 --> 00:01:18,200
+00:05:28,200 --> 00:05:30,840
 een negatieve testuitslag nodig.
 
 24
-00:01:18,600 --> 00:01:23,760
+00:05:31,240 --> 00:05:36,400
 De mensen die corona hebben gehad,
 die hebben een herstelbewijs nodig.
 
 25
-00:01:24,520 --> 00:01:29,600
+00:05:37,160 --> 00:05:42,240
 Ik heb natuurlijk alleen een vaccinatiebewijs
 nodig dus die ga ik ophalen.
 
 26
-00:01:34,560 --> 00:01:37,320
+00:05:46,960 --> 00:05:49,720
 Nu kan ik veilig met mijn
 DigiD inloggen.
 
 27
-00:01:38,800 --> 00:01:40,840
+00:05:51,200 --> 00:05:53,240
 Dus daar klik ik op.
 
 28
-00:01:42,840 --> 00:01:44,240
+00:05:55,240 --> 00:05:56,640
 Nou, da’s mooi.
 
 29
-00:01:44,440 --> 00:01:46,840
+00:05:56,840 --> 00:05:59,240
 Ik heb de vaccinatiegegevens
 opgehaald.
 
 30
-00:01:47,200 --> 00:01:49,560
+00:05:59,600 --> 00:06:01,960
 Alle gegevens staan er.
 
 31
-00:01:49,760 --> 00:01:54,000
+00:06:02,160 --> 00:06:06,400
 Mijn eerste prik in februari en
 mijn tweede prik in mei.
 
 32
-00:01:54,320 --> 00:01:57,320
+00:06:06,720 --> 00:06:09,720
 Mijn naam en geboortedatum
 kloppen ook.
 
 33
-00:01:57,520 --> 00:02:01,160
+00:06:09,920 --> 00:06:13,560
 Dus klik ik op
 maak QR-code.
 
 34
-00:02:02,280 --> 00:02:05,600
+00:06:14,680 --> 00:06:18,000
 En vervolgens, hier staat dan
 ook: bekijk QR-code.
 
 35
-00:02:06,080 --> 00:02:07,200
+00:06:18,480 --> 00:06:19,600
 Wat gebeurt er dan?
 
 36
-00:02:07,400 --> 00:02:13,040
+00:06:19,800 --> 00:06:25,440
 Dan verschijnt meteen mijn QR-code
 voor mijn uitje in Nederland.
 
 37
-00:02:13,640 --> 00:02:15,040
+00:06:26,040 --> 00:06:27,440
 Dat is helemaal goed.
 
 38
-00:02:15,360 --> 00:02:18,320
+00:06:27,760 --> 00:06:30,720
 Nou ga ik een scherm terug
 en dan klik ik op
 
 39
-00:02:18,520 --> 00:02:21,520
-aanpassen naar internationaal.
+00:06:30,920 --> 00:06:32,880
+internationaal.
 
 40
-00:02:22,000 --> 00:02:26,880
-Dan schuif ik met mijn vinger naar
-rechts voor internationaal.
-
-41
-00:02:28,400 --> 00:02:34,320
+00:06:33,920 --> 00:06:39,840
 Ja, nu heb ik mijn internationale QR-code
 die ik nodig heb voor Spanje.
 
-42
-00:02:34,520 --> 00:02:36,680
+41
+00:06:40,040 --> 00:06:42,200
 En dan ben ik er.
 
-43
-00:02:36,920 --> 00:02:41,680
+42
+00:06:42,440 --> 00:06:47,200
 Dat werkt simpel en snel, dus ik
 ben er helemaal klaar voor.
 
-44
-00:02:42,080 --> 00:02:47,200
+43
+00:06:47,600 --> 00:06:52,720
 *Muziek fadet uit* 
