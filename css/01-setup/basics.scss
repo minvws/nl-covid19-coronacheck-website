@@ -40,6 +40,10 @@ body {
     line-height: 1.35;
 }
 
+.in-app {
+    font-size: 17px;
+}
+
 h1,
 h2,
 h3,
@@ -107,7 +111,7 @@ button {
 // 404 pagina
 
 .link__404 {
-    font-size: 21px;
+    font-size: 1.3125rem;
 
     &:before {
         content: "";
