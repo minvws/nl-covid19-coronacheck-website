@@ -5,11 +5,15 @@ title: I get a red screen after scanning a QR code. What now?
 redirect_from: 
   - /en/faq-scanner/7-na-scannen-een-rood-scherm-wat-nu
 ---
-A red screen means the visitor’s QR code is not valid. This does not mean the visitor has tested positive for corona. It simply means they don’t have a certificate of vaccination, recovery or a recent negative test certificate in their app, or the certificate has expired (older than 24 hours).  
+A red screen means that the QR code does not meet Dutch requirements.
 
-- Check if the visitor has used a screenshot instead of the QR code directly from the app. Scanning a screenshot will lead to a red screen.
-- Is the visitor a Dutch resident? Then check that they are showing the Dutch QR code. Scanning an international QR code in the CoronaCheck app will result in a red screen.
-- Ask the visitor to restart the app. And try scanning again. 
-- Keep getting a red screen while the visitor has a vaccination or positive / negative test result? Please refer them to our helpdesk at {{ site.data.links.phone-helpdesk[page.lang] }} (if you are calling from abroad: {{ site.data.links.phone-helpdesk-abroad[page.lang] }})
+## Here’s what you can do:
 
-At all times, a green screen is required for access. Does the visitor not have a (valid) QR code? Then they’re not allowed access. 
+1. Verify if the time on the visitor’s phone is set correctly.
+2. Verify if the visitor is showing an original certificate. A screenshot of a certificate may cause problems.
+3. Ask the visitor to completely shut down the app and restart it. Please scan the QR code again after.
+
+## Still looking at a red screen? 
+Please ask the visitor to contact the CoronaCheck help desk by phoning {{ site.data.links.phone-helpdesk[page.lang] }}. Or if you are calling from abroad: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}.  
+
+Without a green screen, you can’t grant the visitor access.

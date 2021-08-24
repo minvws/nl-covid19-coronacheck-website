@@ -2,8 +2,6 @@
 set: 1
 index: 2
 title: Which phones are compatible with CoronaCheck?
-featuredHome: true
-featuredHomeIndex: 6
 redirect_from: 
   - /en/faq-in-app/11-werkt-coronacheck-op-mijn-telefoon
 ---

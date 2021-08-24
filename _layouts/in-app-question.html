@@ -4,7 +4,7 @@
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
 {%- endif -%}
 <!DOCTYPE html>
-<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %} class="in-app">
 {% include open-source-comment.html %}
 {% if page.collection == 'questions-scanner-in-app' or page.domain == 'scanner' %}
   {% include head.html for="scanner" in-app="true" %}
@@ -37,6 +37,8 @@
       </p>
     {% endif %}
   </main>
+
+{% include footer-js.html %}
 
 </body>
 </html>

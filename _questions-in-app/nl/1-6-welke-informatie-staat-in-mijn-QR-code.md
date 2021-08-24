@@ -7,7 +7,7 @@ redirect_from:
   - /nl/faq-in-app/16-hoe-worden-mijn-gegevens-gebruikt/
   - /nl/faq-in-app/17-wat-ziet-de-controleur-na-scannen-van-mijn-qr-code/
 featuredHome: true
-featuredHomeIndex: 3
+featuredHomeIndex: 5
 ---
 ### De Nederlandse QR-code
 De controleur ziet bij een Nederlandse QR-code slechts minimale gegevens op zijn of haar scherm:

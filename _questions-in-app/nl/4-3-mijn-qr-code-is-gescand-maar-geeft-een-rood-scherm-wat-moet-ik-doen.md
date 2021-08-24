@@ -6,16 +6,18 @@ redirect_from:
   - /nl/faq-in-app/14-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
   - /nl/faq-in-app/4-2-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
 ---
-Rood scherm aan de grens? Het kan ook zijn dat de corona-maatregelen van het land in het land dat je bezoekt anders zijn dan in Nederland. Kijk op {{ site.data.links.wijsoprijs[page.lang] }} voor de regels en geldigheid van het coronabewijs in andere landen.
+Rood scherm aan de grens of in het buitenland? Het kan zijn dat de corona-maatregelen van het land in het land dat je bezoekt anders zijn dan in Nederland. Kijk op {{ site.data.links.wijsoprijs[page.lang] }} voor de regels en geldigheid van het coronabewijs in andere landen.
 
-Rood scherm binnen Nederland? Dat betekent dat je coronabewijs, in de vorm van een QR-code, ongeldig is. Er is dus geen geldig bewijs van een vaccinatie, een herstel of een recente negatieve testuitslag. 
+Een rood scherm betekent dat de QR-code niet aan Nederlandse eisen voldoet.
 
-Dit kun je doen:
+## Dit kun je doen:
 
-- Laat altijd de QR-code vanuit de CoronaCheck-app zien. Of toon de geprinte versie die je kunt maken op [www.coronacheck.nl/print](/print). Een schermafbeelding of kopie van een QR-code uit de app geeft in Nederland een rood scherm
-- Controleer de tijd op je telefoon. Als de tijd op jouw telefoon voor of achter loopt of op een andere tijdzone staat kan dat tot een rood scherm leiden
-- Sluit de CoronaCheck-app af. Start hem daarna opnieuw op en laat je QR-code nogmaals scannen
-- Blijft er een rood scherm komen, terwijl je wel een geldig bewijs hebt? Neem dan contact op met de CoronaCheck helpdesk, telefoonnummer: 
-{{ site.data.links.phone-helpdesk[page.lang] }}. Of als je vanuit het buitenland belt: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}
+1. Controleer of de tijd op je telefoon goed staat ingesteld.
+2. Laat altijd een origineel bewijs zien. Een screenshot van een bewijs kan voor problemen zorgen.
+3. Sluit de CoronaCheck-app af. Start hem daarna opnieuw op en laat je QR-code nogmaals scannen.
 
-Er is altijd een groen scherm nodig voor toegang. Laat daarom je geldige QR-code zien via de app of op papier. Heb je geen geldig coronabewijs? Dan kun je helaas niet naar binnen. 
+## Blijft het scherm rood?
+
+Neem dan contact op met de helpdesk van CoronaCheck op het telefoonnummer: {{ site.data.links.phone-helpdesk[page.lang] }}. Of als je vanuit het buitenland belt: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}.
+
+Er is altijd een groen scherm nodig voor toegang. Geen groen scherm? Dan kun je helaas niet naar binnen.

@@ -1,7 +1,7 @@
 ---
 index: 2
 show: true
-graphic: Home_NL_Iphone2-min.png
+graphic: Home_NL_Iphone2.png
 title: 2. Maak een QR-code
 lang: nl
 ---

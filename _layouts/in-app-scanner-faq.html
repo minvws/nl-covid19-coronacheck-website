@@ -10,7 +10,7 @@
 {% assign questionSetFour = site.questions-scanner-in-app | where:"lang", page.lang | where:"set", 4 | where:"webonly", false | sort: "index" %}
 
 <!DOCTYPE html>
-<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %} class="in-app">
 {% include open-source-comment.html %}
 {% if page.collection == 'questions-scanner-in-app' or page.domain == 'scanner' %}
   {% include head.html for="scanner" in-app="true" %}

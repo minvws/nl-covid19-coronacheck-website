@@ -156,8 +156,8 @@ scanner-header-subtitle:
   tr: 
 
 coronacheck-header-img:
-  nl: /img/Home_NL_Header-min.png
-  en: /img/Home_EN_Header-min.png
+  nl: /img/Home_NL_Header.png
+  en: /img/Home_EN_Header.png
 
 coronacheck-header-illustration: /img/Home_Header_Person.svg
     
@@ -328,7 +328,15 @@ readmore-about_screen-reader:
   pl: o
   ro: despre
   tr: hakkında
-  
+
+wegwijzerlink:
+  nl: Het lukt niet om een bewijs te maken in CoronaCheck, wat kan ik doen?
+  en: I am unable to create my certificate in CoronaCheck, what can I do? 
+
+wegwijzerlinktext:
+  nl: De Wegwijzer
+  en: The Guidepost 
+
 youarehere:
   nl: Je bent hier
   fy: Do bist hjir
@@ -1567,7 +1575,6 @@ status-block-title:
 status-block:
   nl: '<p>Bekijk op de <a href="https://status.coronacheck.nl">statuspagina</a> of er op dit moment een storing bekend is.  Hier vind je de laatste status en wat je in de tussentijd kunt doen.</p><p>Staat jouw probleem of storing er niet tussen? Mogelijk is er dan al een oplossing voor. Kijk dan tussen de meestgestelde vragen.</p>'
   en: '<p>Check the <a href="https://status.coronacheck.nl/en/">status page</a> to see if there is a known issue. Here you will find the latest status and what you can do in the meantime.</p><p>Is your problem or technical issue not listed? There may already be a solution. Please check the most frequently asked questions.</p>'
-
 
 guidepost-block:
   nl: '<p>Lukt het niet om een bewijs te maken in CoronaCheck? Lees meer over wat je kan doen in <a href="/nl/wegwijzer.html">de Wegwijzer</a>.</p>'

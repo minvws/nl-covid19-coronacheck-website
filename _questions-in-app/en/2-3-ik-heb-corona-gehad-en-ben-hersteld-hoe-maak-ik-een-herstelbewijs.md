@@ -2,7 +2,6 @@
 set: 2
 index: 3
 title: When can I create a recovery certificate?
-webonly: true
 ---
 You may use a positive test result to create a recovery certificate with CoronaCheck. A number of rules apply:
 
