@@ -90,7 +90,7 @@ export default {
             signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders).then(result => {
                 this.isLoading = false;
                 this.analyseResult(result);
-            }, (error) => {
+            }).catch((error) => {
                 this.loading = false;
                 this.$store.commit('modal/close');
                 this.gotoPreviousPage();
