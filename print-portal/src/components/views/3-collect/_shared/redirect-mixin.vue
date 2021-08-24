@@ -50,16 +50,13 @@ export default {
                         }
                     }
                 }).catch((error) => {
-                    if (error.response && error.response.status && (error.response.status >= 400 && error.response.status < 500)) {
-                        this.$router.push({ name: this.pages.previous });
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.errorAccessTokens.head'),
-                            messageBody: this.$t('message.error.errorAccessTokens.body', { code: error.response.status }),
-                            closeButton: true
-                        });
-                    } else {
-                        this.$router.push({ name: 'ErrorAccessTokens', query: { error: error.message } });
-                    }
+                    // todo
+                    // if () {
+                    // BSN not available
+                    // Session expired
+                    // } else {
+                    handleRejection(error)
+                    // }
                 });
             }).catch((error) => {
                 // const confirmAction = () => {
@@ -79,7 +76,7 @@ export default {
                 //     confirmNo: this.$t('close')
                 // })
                 // } else {
-                handleRejection(error)
+                handleRejection(error);
                 // }
             });
         },
