@@ -46,7 +46,7 @@ export default {
                             const payload = cmsDecode(response.data.payload);
                             this.collectEvents(payload.tokens);
                         } catch (error) {
-                            this.$router.push({ name: 'ErrorEventProvider', query: { error: error.message } });
+                            this.$router.push({ name: 'ErrorGeneral', query: { error: error.message } });
                         }
                     }
                 }).catch((error) => {

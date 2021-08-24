@@ -2,7 +2,6 @@ import ServerBusy from '@/components/views/error-pages/ServerBusy';
 import ErrorGeneral from '@/components/views/error-pages/ErrorGeneral';
 import ErrorNoEvents from '@/components/views/error-pages/ErrorNoEvents';
 // import ErrorAccessTokens from '@/components/views/error-pages/ErrorAccessTokens';
-// import ErrorEventProvider from '@/components/views/error-pages/ErrorEventProvider';
 // import ErrorTokenFlow from '@/components/views/error-pages/ErrorTokenFlow';
 
 const errorPages = [
@@ -43,13 +42,6 @@ const errorPages = [
 //     path: '/sorry-er-gaat-iets-mis-access-tokens',
 //     component: ErrorAccessTokens,
 //     name: 'ErrorAccessTokens',
-//     meta: {
-//         pageHeader: 'error'
-//     }
-// }, {
-//     path: '/sorry-er-gaat-iets-mis',
-//     component: ErrorEventProvider,
-//     name: 'ErrorEventProvider',
 //     meta: {
 //         pageHeader: 'error'
 //     }
