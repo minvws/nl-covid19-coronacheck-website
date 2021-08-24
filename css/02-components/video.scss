@@ -152,8 +152,12 @@ details.component-mediaelement__details {
     }
 
     summary:hover:after,
-    summary:focus:after {
+    summary:hover:focus:after {
         background-image: url(../img/chevron-right-white.svg);
+    }
+
+    summary:focus:after {
+        background-image: url(../img/chevron-right.svg);
     }
 
     ul {
@@ -191,8 +195,12 @@ details.component-mediaelement__details[open] {
     }
 
     summary:hover:after,
-    summary:focus:after {
+    summary:hover:focus:after {
         background-image: url(../img/chevron-right-white.svg);
+    }
+
+    summary:focus:after {
+        background-image: url(../img/chevron-right.svg);
     }
 
     > div {
