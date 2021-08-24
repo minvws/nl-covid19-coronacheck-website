@@ -1,7 +1,6 @@
 <script>
 import signedEventsInterface from '@/interfaces/signed-events'
 import { cmsDecode } from '@/tools/cms'
-// import dateTool from '@/tools/date';
 import { handleRejection } from '@/tools/error-handler';
 
 export default {
