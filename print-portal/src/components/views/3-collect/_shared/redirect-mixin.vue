@@ -36,9 +36,6 @@ export default {
         },
         completeAuthentication() {
             this.isLoading = true;
-            const confirmAction = () => {
-                this.$router.push({ name: 'Home' });
-            }
 
             this.authVaccinations.completeAuthentication().then((user) => {
                 // after redirect we've lost the consent
@@ -64,17 +61,26 @@ export default {
                         this.$router.push({ name: 'ErrorAccessTokens', query: { error: error.message } });
                     }
                 });
-            }).catch(() => {
-                this.gotoPreviousPage();
-                const type = this.$t('message.info.digidCanceled.' + this.type)
-                this.$store.commit('modal/set', {
-                    messageHead: this.$t('message.info.digidCanceled.head'),
-                    messageBody: this.$t('message.info.digidCanceled.body', { type }),
-                    confirm: true,
-                    confirmAction,
-                    confirmYes: this.$t('goBackToStart'),
-                    confirmNo: this.$t('close')
-                })
+            }).catch((error) => {
+                // const confirmAction = () => {
+                //     this.$router.push({ name: 'Home' });
+                // }
+
+                // todo check if the actions was cancelel
+                // if () {
+                // this.gotoPreviousPage();
+                // const type = this.$t('message.info.digidCanceled.' + this.type)
+                // this.$store.commit('modal/set', {
+                //     messageHead: this.$t('message.info.digidCanceled.head'),
+                //     messageBody: this.$t('message.info.digidCanceled.body', { type }),
+                //     confirm: true,
+                //     confirmAction,
+                //     confirmYes: this.$t('goBackToStart'),
+                //     confirmNo: this.$t('close')
+                // })
+                // } else {
+                handleRejection(error)
+                // }
             });
         },
         notifyDigidFinished() {
