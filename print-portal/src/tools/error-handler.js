@@ -20,6 +20,7 @@ export const handleRejectionSigner = (error) => {
         return;
     }
     if (error) {
+        console.dir(error);
         if (error.response && error.response.status && error.response.status === 429) {
             router.push({ name: 'ServerBusy' });
         } else {
