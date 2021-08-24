@@ -40,7 +40,7 @@ export default {
             this.authVaccinations.completeAuthentication().then((user) => {
                 // after redirect we've lost the consent
                 this.notifyDigidFinished();
-                this.getTokens(user.id_token).then(response => {
+                signedEventsInterface.getTokens(user.id_token).then(response => {
                     if (response.data && response.data.payload) {
                         try {
                             const payload = cmsDecode(response.data.payload);
@@ -86,15 +86,6 @@ export default {
         notifyDigidFinished() {
             const proofType = this.$t('components.digid.proofType.' + this.type)
             this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: proofType }))
-        },
-        getTokens(token) {
-            return new Promise((resolve, reject) => {
-                signedEventsInterface.getTokens(token).then(response => {
-                    resolve(response)
-                }).catch(error => {
-                    reject(error);
-                })
-            })
         },
         collectEvents(tokenSets) {
             this.$store.commit('signedEvents/clear');
