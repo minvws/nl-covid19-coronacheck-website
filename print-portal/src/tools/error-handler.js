@@ -1,4 +1,5 @@
 import store from '@/store';
+import router from '@/router';
 import i18n from '@/i18n'
 
 export const hasInternetConnection = () => {
@@ -13,30 +14,6 @@ export const messageInternetConnection = () => {
     });
 }
 
-const messageServerBusy = () => {
-    store.commit('modal/set', {
-        messageHead: i18n.t('message.error.serverBusy.head'),
-        messageBody: i18n.t('message.error.serverBusy.body'),
-        closeButton: true
-    });
-}
-
-const messageGeneralWithError = (error) => {
-    store.commit('modal/set', {
-        messageHead: i18n.t('message.error.generalWithError.head'),
-        messageBody: i18n.t('message.error.generalWithError.body', { code: error }),
-        closeButton: true
-    });
-}
-
-const messageGeneral = () => {
-    store.commit('modal/set', {
-        messageHead: i18n.t('message.error.general.head'),
-        messageBody: i18n.t('message.error.general.body'),
-        closeButton: true
-    });
-}
-
 export const handleRejectionSigner = (error) => {
     if (!hasInternetConnection()) {
         messageInternetConnection();
@@ -44,7 +21,7 @@ export const handleRejectionSigner = (error) => {
     }
     if (error) {
         if (error.response && error.response.status && error.response.status === 429) {
-            messageServerBusy();
+            router.push({ name: 'ServerBusy' });
         } else {
             store.commit('modal/set', {
                 messageHead: i18n.t('message.error.signerFailed.head'),
@@ -53,7 +30,7 @@ export const handleRejectionSigner = (error) => {
             });
         }
     } else {
-        messageGeneral();
+        router.push({ name: 'ErrorGeneral' });
     }
 }
 
@@ -64,11 +41,11 @@ export const handleRejection = (error) => {
     }
     if (error) {
         if (error.response && error.response.status && error.response.status === 429) {
-            messageServerBusy();
+            router.push({ name: 'ServerBusy' });
         } else {
-            messageGeneralWithError(error);
+            router.push({ name: 'ErrorGeneral', query: { error: error.message } });
         }
     } else {
-        messageGeneral();
+        router.push({ name: 'ErrorGeneral' });
     }
 }

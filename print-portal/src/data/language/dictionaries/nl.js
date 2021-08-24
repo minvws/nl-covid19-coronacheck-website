@@ -145,21 +145,25 @@ const nl = {
             'pageHeader': 'Sorry, het is erg druk',
             'pageIntro': '<p>Probeer het later nog eens.</p>'
         },
-        'errorEventProvider': {
+        // 'errorEventProvider': {
+        //     'pageHeader': 'Sorry, er gaat iets mis',
+        //     'pageIntro': '<p>Er gaat iets mis bij het ophalen van je gegevens. Neem contact op met de helpdesk van CoronaCheck via 0800 -1421 (gratis). En geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
+        // },
+        // 'errorAccessTokens': {
+        //     'pageHeader': 'Sorry, er gaat iets mis',
+        //     'pageIntro': '<p>Neem contact op met de helpdesk van CoronaCheck via 0800 -1421 (gratis). En geef de volgende foutcode door</p><p><strong>Foutcode: %{error}</strong></p>'
+        // },
+        // 'errorNoEvents': {
+        //     'pageHeader': 'Sorry, het is niet gelukt',
+        //     'pageIntro': '<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.</p><p>Tip: wacht een uur en probeer het dan nog een keer.</p>'
+        // },
+        // 'errorTokenFlow': {
+        //     'pageHeader': 'Sorry, er gaat iets mis',
+        //     'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
+        // }
+        'errorGeneral': {
             'pageHeader': 'Sorry, er gaat iets mis',
-            'pageIntro': '<p>Er gaat iets mis bij het ophalen van je gegevens. Neem contact op met de helpdesk van CoronaCheck via 0800 -1421 (gratis). En geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
-        },
-        'errorAccessTokens': {
-            'pageHeader': 'Sorry, er gaat iets mis',
-            'pageIntro': '<p>Neem contact op met de helpdesk van CoronaCheck via 0800 -1421 (gratis). En geef de volgende foutcode door</p><p><strong>Foutcode: %{error}</strong></p>'
-        },
-        'errorNoEvents': {
-            'pageHeader': 'Sorry, het is niet gelukt',
-            'pageIntro': '<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.</p><p>Tip: wacht een uur en probeer het dan nog een keer.</p>'
-        },
-        'errorTokenFlow': {
-            'pageHeader': 'Sorry, er gaat iets mis',
-            'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
+            'pageIntro': '<p>Er gaat iets mis bij het maken van je bewijs (foutcode: %{error}). Wil je het later nog eens proberen?</p><p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
         }
     },
     'components': {
@@ -303,10 +307,6 @@ const nl = {
                 'head': 'Sorry, er is een storing',
                 'body': '<p>Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (%{code}) door. Of probeer het later opnieuw.</p>'
             },
-            'serverBusy': {
-                'head': '',
-                'body': '<p>Het is erg druk, probeer het later op de dag nog eens</p>'
-            },
             'someServerBusyButResult': {
                 'head': '',
                 'body': '<p>Gegevens mogelijk niet compleet. Door drukte of een storing bij een van de partijen kunnen er gegevens ontbreken. Probeer het eventueel later nog een keer.</p>'
@@ -359,7 +359,7 @@ const nl = {
     'details': 'Details',
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
-    'goBackToStart': 'Naar home',
+    'goBackToStart': 'Naar Home',
     'header-appstore': 'Download in de App Store',
     'header-googleplaystore': 'Ontdek het op Google Play',
     'identity_image_alt': 'Holder QR maken',

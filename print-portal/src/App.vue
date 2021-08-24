@@ -105,7 +105,7 @@ export default {
 
 <template>
     <div
-        v-if="dataReady"
+        v-if="currentLanguage"
         id="app">
         <div
             :aria-hidden="modalIsActive ? 'true' : 'false'"
