@@ -50,6 +50,7 @@
 .component-mediaelement {
     background-color: $color-RO_darkblue;
     margin-bottom: 3.5em;
+
     video {
         max-width: 100%;
     }
@@ -157,7 +158,7 @@ details.component-mediaelement__details {
 
     ul {
         list-style: none;
-        padding: 5px 0 20px 0px;
+        // padding: 5px 0 20px 0px;
         margin-left: 0;
     }
 
@@ -179,6 +180,8 @@ details.component-mediaelement__details {
 }
 
 details.component-mediaelement__details[open] {
+    padding-bottom: 5px;
+
     summary {
         font-weight: 400;
     }
