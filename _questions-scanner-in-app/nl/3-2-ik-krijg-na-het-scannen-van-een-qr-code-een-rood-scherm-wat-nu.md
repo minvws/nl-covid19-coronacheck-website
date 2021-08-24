@@ -5,12 +5,16 @@ title: Ik krijg na het scannen van een QR-code een rood scherm te zien, wat nu?
 redirect_from: 
   - /nl/faq-scanner/7-na-scannen-een-rood-scherm-wat-nu
 ---
-Rood scherm? Dat betekent niet dat de bezoeker corona heeft. Het betekent alleen dat de QR-code ongeldig is. Er is dus geen bewijs van een vaccinatie, van herstel of van een recente negatieve testuitslag. Of het bewijs is verlopen (ouder dan 24 uur). Dit kun je doen:
+Een rood scherm betekent dat de QR-code niet aan Nederlandse eisen voldoet.
 
-- Controleer of de bezoeker de QR-code vanuit de CoronaCheck-app laat zien. Een schermafbeelding of kopie van een QR-code uit de app geeft altijd een rood scherm.
-- Woont de bezoeker in Nederland? Controleer of de bezoeker een Nederlandse QR-code laat zien. Het scannen van een internationale QR-code in de CoronaCheck-app geeft een rood scherm.
-- Vraag de bezoeker de app volledig af te sluiten en opnieuw op te starten. Scan daarna opnieuw de QR-code
-- Vraag of de bezoeker de tijd op zijn/haar telefoon heeft aangepast. Als de tijd op de telefoon voor of achter loopt of op een andere tijdzone staat kan dat tot een rood scherm leiden. 
-- Blijft er een rood scherm komen, terwijl de bezoeker wel een vaccinatie, positieve of negatieve testuitslag heeft? Stuur de bezoeker naar onze helpdesk, telefoonnummer: {{ site.data.links.phone-helpdesk[page.lang] }}. Of als je vanuit het buitenland belt: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}
+## Dit kun je doen:
 
-Er is altijd een groen scherm nodig voor toegang. Heeft de bezoeker geen (geldige) QR-code? Dan kun je de bezoeker niet binnenlaten. 
+1\. Controleer of de tijd op de telefoon van de bezoeker goed staat ingesteld.
+2\. Controleer of de bezoeker een origineel bewijs laat zien. Een screenshot van een bewijs kan voor problemen zorgen.
+3\. Vraag de bezoeker om de app volledig af te sluiten en opnieuw op te starten. Scan daarna opnieuw de QR-code.
+
+## Blijft het scherm rood?
+
+Vraag de bezoeker contact op te nemen met de helpdesk van CoronaCheck op telefoonnummer: {{ site.data.links.phone-helpdesk[page.lang] }}. Of als je vanuit het buitenland belt: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}.
+
+Zonder groen scherm mag de bezoeker niet toegelaten worden.
