@@ -331,10 +331,6 @@ const nl = {
                 'head': 'Je hebt geen internet',
                 'body': 'Controleer je verbinding en probeer het opnieuw.'
             },
-            'signerFailed': {
-                'head': 'Sorry er gaat iets mis',
-                'body': 'Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (print sign error) door'
-            },
             // this one doesnt need a variable %{type} (as errorNoEvents has), since the other event types only
             // query 1 event provider, the combination: and events and errors is impossible
             'collectEventsWithErrors': {
