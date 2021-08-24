@@ -2,17 +2,21 @@ import store from '@/store';
 import router from '@/router';
 import i18n from '@/i18n'
 
-const hasInternetConnection = () => {
+export const hasInternetConnection = () => {
     return window.navigator.onLine;
+}
+
+export const messageInternetConnection = () => {
+    store.commit('modal/set', {
+        messageHead: i18n.t('message.error.noInternet.head'),
+        messageBody: i18n.t('message.error.noInternet.body'),
+        closeButton: true
+    });
 }
 
 export const handleRejection = (error) => {
     if (!hasInternetConnection()) {
-        store.commit('modal/set', {
-            messageHead: i18n.t('message.error.noInternet.head'),
-            messageBody: i18n.t('message.error.noInternet.body'),
-            closeButton: true
-        });
+        messageInternetConnection();
         return;
     }
     if (error) {
