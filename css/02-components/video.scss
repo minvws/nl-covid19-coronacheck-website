@@ -221,3 +221,18 @@ details.component-mediaelement__details[open] {
 .mejs__captions-selector.mejs__offscreen {
     display: none;
 }
+
+.mejs__container-fullscreen {
+    .mejs__captions-layer {
+        font-size: 3vh;
+        line-height: 1.2;
+    }
+
+    .mejs__captions-position-hover {
+        bottom: 100px;
+    }
+
+    .component-mediaelement .mejs__controls {
+        bottom: 0;
+    }
+}
