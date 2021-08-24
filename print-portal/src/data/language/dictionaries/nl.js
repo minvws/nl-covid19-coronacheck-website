@@ -145,10 +145,6 @@ const nl = {
             'pageHeader': 'Sorry, het is erg druk',
             'pageIntro': '<p>Probeer het later nog eens.</p>'
         },
-        // 'errorEventProvider': {
-        //     'pageHeader': 'Sorry, er gaat iets mis',
-        //     'pageIntro': '<p>Er gaat iets mis bij het ophalen van je gegevens. Neem contact op met de helpdesk van CoronaCheck via 0800 -1421 (gratis). En geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
-        // },
         'errorNoEvents': {
             'pageHeader': 'Sorry, het is niet gelukt',
             'pageIntro': '<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.</p><p>Tip: wacht een uur en probeer het dan nog een keer.</p>'
