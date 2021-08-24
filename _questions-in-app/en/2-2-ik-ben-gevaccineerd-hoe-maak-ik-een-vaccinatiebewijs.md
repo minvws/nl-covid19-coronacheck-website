@@ -3,9 +3,9 @@ set: 2
 index: 2
 title: When can I make a vaccination certificate?
 redirect_from: 
-    - /enfaq-in-app/8-ik-heb-mij-laten-testen-hoe-krijg-ik-mijn-testuitslag
-    - /enfaq-in-app/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
-    - /enfaq-in-app/1-5-hoe-maak-ik-een-bewijs-van-een-vaccinatie-herstel-of-testuitslag
+    - /en/faq-in-app/8-ik-heb-mij-laten-testen-hoe-krijg-ik-mijn-testuitslag
+    - /en/faq-in-app/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
+    - /en/faq-in-app/1-5-hoe-maak-ik-een-bewijs-van-een-vaccinatie-herstel-of-testuitslag
 featuredHome: true
 featuredHomeIndex: 2
 ---

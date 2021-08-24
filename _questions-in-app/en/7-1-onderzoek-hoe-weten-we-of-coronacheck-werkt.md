@@ -3,7 +3,7 @@ set: 1
 index: 10
 title: "Research: how do we know CoronaCheck works?"
 redirect_from: 
-  - /enfaq-in-app/30-onderzoek-hoe-weten-we-of-coronacheck-werkt
+  - /en/faq-in-app/30-onderzoek-hoe-weten-we-of-coronacheck-werkt
 ---
 The printed certificate and the CoronaCheck and [CoronaCheck Scanner](/en/scanner) apps are reviewed continuously. This is done by a team of experts with different backgrounds and expertise and includes both quantitative and qualitative studies aimed at CoronaCheck’s objectives. You can find more information in this factsheet:
 

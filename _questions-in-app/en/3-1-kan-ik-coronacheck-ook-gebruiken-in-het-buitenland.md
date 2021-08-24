@@ -3,7 +3,7 @@ index: 4
 set: 3
 title: Can I use CoronaCheck abroad?
 redirect_from: 
-  - /enfaq-in-app/12-kan-ik-coronacheck-ook-gebruiken-in-het-buitenland
+  - /en/faq-in-app/12-kan-ik-coronacheck-ook-gebruiken-in-het-buitenland
 webonly: true
 ---
 Yes, you can from July 1. When you make a QR code, you’ll automatically get a QR code for The Netherlands and a QR code for other countries.

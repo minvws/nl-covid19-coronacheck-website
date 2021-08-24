@@ -3,7 +3,7 @@ set: 1
 index: 2
 title: Which phones are compatible with CoronaCheck?
 redirect_from: 
-  - /enfaq-in-app/11-werkt-coronacheck-op-mijn-telefoon
+  - /en/faq-in-app/11-werkt-coronacheck-op-mijn-telefoon
 ---
 CoronaCheck is compatible with Android phones from Android 6 and iPhones from iOS 12 (iPhone 5S and up).
  

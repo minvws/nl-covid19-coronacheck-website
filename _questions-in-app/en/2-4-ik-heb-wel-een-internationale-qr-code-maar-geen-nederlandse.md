@@ -3,7 +3,7 @@ set: 2
 index: 4 
 title: I did not receive a Dutch vaccination certificate, but I did receive an international vaccination certificate. What can I do?
 redirect_from: 
-    - /enfaq-in-app/2-6-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse
+    - /en/faq-in-app/2-6-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse
 featuredHome: true
 featuredHomeIndex: 3
 ---

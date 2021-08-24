@@ -3,8 +3,8 @@ set: 4
 index: 3
 title: My QR code was scanned but led to a red screen. What should I do?
 redirect_from: 
-  - /enfaq-in-app/14-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
-  - /enfaq-in-app/4-2-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
+  - /en/faq-in-app/14-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
+  - /en/faq-in-app/4-2-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
 ---
 Getting a red screen at the border or abroad? The corona measures or restrictions of the country you’re visiting may differ from those in the Netherlands. Go to {{ site.data.translations.wijsoprijs-link[page.lang] }} for an overview of the rules and validity of the coronavirus pass in other countries.
 
