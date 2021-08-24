@@ -149,10 +149,10 @@ const nl = {
             'pageHeader': 'Sorry, het is niet gelukt',
             'pageIntro': '<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.</p><p>Tip: wacht een uur en probeer het dan nog een keer.</p>'
         },
-        // 'errorTokenFlow': {
-        //     'pageHeader': 'Sorry, er gaat iets mis',
-        //     'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
-        // }
+        'errorTokenFlow': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
+        },
         'errorGeneral': {
             'pageHeader': 'Sorry, er gaat iets mis',
             'pageIntro': '<p>Er gaat iets mis bij het maken van je bewijs (foutcode: %{error}). Wil je het later nog eens proberen?</p><p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
