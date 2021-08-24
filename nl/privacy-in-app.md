@@ -53,7 +53,7 @@ Nederland heeft er belang bij dat niet-essentiële sectoren die tot nog toe aan 
 
 De minister van VWS is wettelijk verplicht om voor iemand die daarom vraagt een EU DCC en een nationaal coronabewijs aan te maken als diegene voldoet aan de eisen. Je moet uiteraard wel gevaccineerd zijn of over een geldige testuitslag beschikken.
 
-In de Algemene Verordening Gegevensbescherming (AVG) worden zes mogelijke grondslagen voor het verwerken van persoonsgegevens genoemd (artikel 6 lid 2 AVG). Een daarvan is een wettelijke plicht die op de verwerkingsverantwoordelijke (in dit geval de minister van VWS) rust. De grondslag voor de verwerking van jouw gegevens is gebaseerd op artikel 6 lid 2 onder c van de AVG: wettelijke plicht. Omdat het hier gaat om zowel een bewijs voor Nederland als voor reizen binnen de EU (EER) moet de grondslag zowel in het nationale recht als in het Europees recht te vinden zijn. 
+In de Algemene Verordening Gegevensbescherming (AVG) worden zes mogelijke grondslagen voor het verwerken van persoonsgegevens genoemd (artikel 6 lid 1 AVG). Een daarvan is een wettelijke plicht die op de verwerkingsverantwoordelijke (in dit geval de minister van VWS) rust. De grondslag voor de verwerking van jouw gegevens is gebaseerd op artikel 6 lid 1 onder c van de AVG: wettelijke plicht. Omdat het hier gaat om zowel een bewijs voor Nederland als voor reizen binnen de EU (EER) moet de grondslag zowel in het nationale recht als in het Europees recht te vinden zijn. 
 
 
 
@@ -130,7 +130,7 @@ De minister neemt de bescherming van uw persoonsgegevens serieus en heeft bij de
 
 ## 12. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 14 juli 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 24 augustus 2021.
 
 ## Overzicht van verwerkte persoonsgegevens
 

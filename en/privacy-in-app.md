@@ -50,7 +50,7 @@ The Netherlands has an interest in allowing non-essential sectors that have so f
 
 The Minister of VWS is required by law to create an EU DCC and domestic coronavirus pass for someone who requests one if they meet the requirements. Of course, they need to be vaccinated or possess a valid test result. 
 
-The General Data Protection Regulation (GDPR) lists six possible bases for processing personal data (Article 6 (2) AVG). One of these is a legal duty that rests with the controller (in this case the Minister of Health, Welfare and Sport). The basis for processing your data is based on Article 6 (2) (c) of the GDPR: legal obligation. Because this is proof for both the Netherlands and travel within the EU (EEA), the basis must be found in both national law and European law.
+The General Data Protection Regulation (GDPR) lists six possible bases for processing personal data (Article 6 (1) AVG). One of these is a legal duty that rests with the controller (in this case the Minister of Health, Welfare and Sport). The basis for processing your data is based on Article 6 (1) (c) of the GDPR: legal obligation. Because this is proof for both the Netherlands and travel within the EU (EEA), the basis must be found in both national law and European law.
 
 ### Basis of European law
 
@@ -123,7 +123,7 @@ The Minister takes protection of your personal data seriously and has taken appr
 
 ## 12. Changing privacy statement
 
-This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: July 14th, 2021.
+This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: August 24th, 2021.
 
 ## Overview of processed personal data 
 
