@@ -19,14 +19,10 @@ export const handleRejection = (error, errorCodeInformation) => {
         messageInternetConnection();
         return;
     }
-    if (error) {
-        if (error.response && error.response.status && error.response.status === 429) {
-            router.push({ name: 'ServerBusy' });
-        } else {
-            router.push({ name: 'ErrorGeneral', query: { error: getErrorCode(error, errorCodeInformation) } });
-        }
+    if (error & error.response && error.response.status && error.response.status === 429) {
+        router.push({ name: 'ServerBusy' });
     } else {
-        router.push({ name: 'ErrorGeneral' });
+        router.push({ name: 'ErrorGeneral', query: { error: getErrorCode(error, errorCodeInformation) } });
     }
 }
 
