@@ -19,7 +19,7 @@ export const handleRejection = (error, errorCodeInformation) => {
         messageInternetConnection();
         return;
     }
-    if (error & error.response && error.response.status && error.response.status === 429) {
+    if (error && error.response && error.response.status && error.response.status === 429) {
         router.push({ name: 'ServerBusy' });
     } else {
         router.push({ name: 'ErrorGeneral', query: { error: getErrorCode(error, errorCodeInformation) } });
@@ -31,7 +31,7 @@ export const getErrorCode = (error, errorCodeInformation) => {
     console.log(errorCodeInformation);
     const flow = getFlowCode(errorCodeInformation.flow);
     const errorCode = (error.response && error.response.status) ? error.response && error.response.status : '-';
-    const errorBody = (error.response && error.response.data) ? error.response.data : '-';
+    const errorBody = (error.response && error.response.data && error.response.data.code) ? error.response.data.code : '-';
     // W stands for web (as i stands for iOS and A stands for Android
     return 'W ' +
         flow + errorCodeInformation.step + ' ' +
