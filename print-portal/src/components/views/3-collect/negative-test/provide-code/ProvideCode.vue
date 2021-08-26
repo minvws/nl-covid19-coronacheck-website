@@ -7,7 +7,7 @@ import ProvideVerificationCode from './ProvideVerificationCode';
 import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import { cmsDecode } from '@/tools/cms'
-import { hasInternetConnection, messageInternetConnection } from '@/tools/error-handler';
+import { hasInternetConnection, messageInternetConnection, getErrorCode } from '@/tools/error-handler';
 
 export default {
     name: 'ProvideCode',
@@ -167,9 +167,8 @@ export default {
                     if (!hasInternetConnection()) {
                         messageInternetConnection();
                     } else {
-                        if (error.response) {
-                            const errorCause = this.getCauseOfError(error.response)
-                            switch (errorCause) {
+                        const errorCause = this.getCauseOfError(error)
+                        switch (errorCause) {
                             case 'invalid_token':
                                 this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
                                 break;
@@ -186,38 +185,35 @@ export default {
                                 break
                             default:
                                 this.$store.commit('clearAll');
-                                this.$router.push({ name: 'ErrorTokenFlow', query: { error: errorCause } });
+                                this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: '000' }) } });
                                 break
-                            }
-                        } else {
-                            this.$store.commit('modal/set', {
-                                messageHead: this.$t('message.error.general.head'),
-                                messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                                closeButton: true
-                            });
                         }
                     }
                 })
             })
         },
-        getCauseOfError(response) {
-            if (response.status === 429) {
-                return '429';
-            } else {
-                if (response.data && response.data.payload) {
-                    const payload = cmsDecode(response.data.payload);
-                    if (payload.status) {
-                        return payload.status;
-                    } else {
-                        return 'unknown_error';
-                    }
+        getCauseOfError(error) {
+            if (error.response) {
+                if (error.response.status === 429) {
+                    return '429';
                 } else {
-                    if (response.status) {
-                        return response.status;
+                    if (error.response.data && error.response.data.payload) {
+                        const payload = cmsDecode(error.response.data.payload);
+                        if (payload.status) {
+                            return payload.status;
+                        } else {
+                            return 'unknown_error';
+                        }
                     } else {
-                        return 'unknown_error';
+                        if (error.response.status) {
+                            return error.response.status;
+                        } else {
+                            return 'unknown_error';
+                        }
                     }
                 }
+            } else {
+                return 'unknown_error';
             }
         },
         back() {
