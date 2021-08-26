@@ -96,10 +96,14 @@ export default {
     methods: {
         submitTestCode() {
             if (this.testCode.length > 0) {
-                if (this.isTestCodeValid) {
-                    this.getSignedResult({ includeVerificationCode: false });
+                if (this.checkIfHasTestProvider) {
+                    if (this.isTestCodeValid) {
+                        this.getSignedResult({ includeVerificationCode: false });
+                    } else {
+                        this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                    }
                 } else {
-                    this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                    this.testCodeStatus.error = this.$t('views.provideCode.unknownTestProvider');
                 }
             } else {
                 this.testCodeStatus.error = this.$t('views.provideCode.emptyTestCode');
