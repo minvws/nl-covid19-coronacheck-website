@@ -43,6 +43,7 @@ export const getErrorCode = (error, errorCodeInformation) => {
 const getFlowCode = (flow) => {
     switch (flow) {
     case 'onboarding':
+    case 'startup':
         return '0';
     case 'commercial_test':
         return '1';

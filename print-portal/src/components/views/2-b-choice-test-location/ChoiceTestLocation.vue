@@ -23,7 +23,7 @@ export default {
             this.authNegativeTests.startAuthentication().then(() => {
                 //
             }).catch(error => {
-                handleRejection(error);
+                handleRejection(error, { flow: 'negativetest', step: '10', provider_identifier: 'GGD' });
             })
         },
         gotoRetrieveTest() {

@@ -37,7 +37,7 @@ export default {
                     this.$store.commit('setHolderConfig', holderConfig);
                 }
             }).catch((error) => {
-                handleRejection(error);
+                handleRejection(error, { flow: 'startup', step: '10', provider_identifier: '000' });
             })
         },
         async getTestProviders() {
@@ -57,7 +57,7 @@ export default {
                     });
                 }
             }).catch((error) => {
-                handleRejection(error);
+                handleRejection(error, { flow: 'startup', step: '20', provider_identifier: '000' });
             })
         },
         addLanguages() {

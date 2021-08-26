@@ -55,7 +55,7 @@ export default {
                     // BSN not available
                     // Session expired
                     // } else {
-                    handleRejection(error)
+                    handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' })
                     // }
                 });
             }).catch((error) => {
@@ -76,7 +76,7 @@ export default {
                 //     confirmNo: this.$t('close')
                 // })
                 // } else {
-                handleRejection(error);
+                handleRejection(error, { flow: this.filter, step: '10', provider_identifier: '000' });
                 // }
             });
         },
@@ -91,10 +91,12 @@ export default {
                 this.isLoading = false;
                 this.analyseResult(result);
             }).catch((error) => {
+                // actually this catch could not be caused by the backend, since all errors are collected
+                // in try catch blocks (and send to analyseResult() )
                 this.loading = false;
                 this.$store.commit('modal/close');
                 this.gotoPreviousPage();
-                handleRejection(error)
+                handleRejection(error, { flow: this.filter, step: '-', provider_identifier: '-' })
             });
         },
         analyseResult(result) {
