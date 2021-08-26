@@ -91,7 +91,7 @@ export default {
                             <dt>
                                 {{$t('components.test.info.identificationCode')}}:<br>
                             </dt>
-                            <dd>
+                            <dd class="word-wrap">
                                 {{identificationCode}}
                             </dd>
                         </div>
