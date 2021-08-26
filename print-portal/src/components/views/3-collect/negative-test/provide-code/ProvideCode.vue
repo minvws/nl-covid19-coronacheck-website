@@ -59,8 +59,7 @@ export default {
             return this.checksumSet.length === 2;
         },
         checkCheckSumIsValid() {
-            // return this.checkSum ? (this.luhn === this.checkSum) : false;
-            return true;
+            return this.checkSum ? (this.luhn === this.checkSum) : false;
         },
         checkIfIsCorrectLength() {
             return this.verificationCode.length >= 5;
