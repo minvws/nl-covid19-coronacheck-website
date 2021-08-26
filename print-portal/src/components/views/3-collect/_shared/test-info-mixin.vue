@@ -12,7 +12,7 @@ export default {
     },
     computed: {
         sampleDate() {
-            return dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL HH:mm', this.currentLanguage.locale);
+            return dateTool.dateToString(this.proofEvent.sampleDate, 'datetime-with-day', this.currentLanguage.locale);
         },
         testType() {
             const testType = this.$store.getters.getEuTestType(this.proofEvent.type)
