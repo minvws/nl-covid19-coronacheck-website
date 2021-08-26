@@ -90,3 +90,7 @@ openingsplan:
 wetransfer-toolkit:
   nl: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs voor evenementen</a>'
   en: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs for events</a>'
+
+aansluiting-apps:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank">Aansluiting op CoronaCheck voor apps</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Aansluiting op CoronaCheck voor apps</a>'
