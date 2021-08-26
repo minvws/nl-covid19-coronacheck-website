@@ -89,7 +89,7 @@ export default {
             return this.checksumSet ? this.checksumSet[0] : null;
         },
         luhn() {
-            return luhnModN.generateCheckCharacter(this.token.toUpperCase());
+            return this.token ? luhnModN.generateCheckCharacter(this.token.toUpperCase()) : '';
         }
     },
     methods: {
