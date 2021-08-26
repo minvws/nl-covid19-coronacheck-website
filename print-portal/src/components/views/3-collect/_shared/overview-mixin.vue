@@ -63,7 +63,7 @@ export default {
                         this.setSignedAt(response);
                     }
                 }).catch(error => {
-                    handleRejection(error, { flow: this.filter, step: '60', provider_identifier: '000' });
+                    handleRejection(error, { flow: this.filter, step: '80', provider_identifier: '000' });
                 })
             } else {
                 this.$router.push({ name: this.pages.print });
