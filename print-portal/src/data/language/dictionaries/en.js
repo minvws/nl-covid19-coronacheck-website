@@ -127,7 +127,7 @@ const en = {
             },
             'european': {
                 'pageHeader': 'Print your vaccination certificate',
-                'pageIntro': '<h4>Your certificate</h4><p>You\'ve made a vaccination certificate in the form of a QR code. You\'ve only got an international certificate. This could be because you\'ve only had one of your vaccinations yet. Try making a Dutch certificate again when you’re fully vaccinated.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Read what is in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p> '
+                'pageIntro': '<h4>Your certificate</h4><p>You\'ve made a vaccination certificate in the form of a QR code. You\'ve only got an international certificate. This could be because you\'ve only had one of your vaccinations yet. Try making a Dutch certificate again when you’re fully vaccinated.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Read what is in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p><p>Please note: this paper certificate is valid for 1 year. After that, you can make a new paper certificate of your vaccination.</p>'
             }
             // domestic only is a non existing scenario for vaccination
         },
