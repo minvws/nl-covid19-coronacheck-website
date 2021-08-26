@@ -169,24 +169,24 @@ export default {
                     } else {
                         const errorCause = this.getCauseOfError(error)
                         switch (errorCause) {
-                            case 'invalid_token':
-                                this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
-                                break;
-                            case 'verification_required':
-                                this.$store.commit('setVerificationNeeded', true);
-                                this.testCodeStatus.error = '';
-                                if (options.includeVerificationCode) {
-                                    this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
-                                }
-                                break;
-                            case '429':
-                                this.$store.commit('clearAll');
-                                this.$router.push({ name: 'ServerBusy' });
-                                break
-                            default:
-                                this.$store.commit('clearAll');
-                                this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: '000' }) } });
-                                break
+                        case 'invalid_token':
+                            this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                            break;
+                        case 'verification_required':
+                            this.$store.commit('setVerificationNeeded', true);
+                            this.testCodeStatus.error = '';
+                            if (options.includeVerificationCode) {
+                                this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
+                            }
+                            break;
+                        case '429':
+                            this.$store.commit('clearAll');
+                            this.$router.push({ name: 'ServerBusy' });
+                            break
+                        default:
+                            this.$store.commit('clearAll');
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: '000' }) } });
+                            break
                         }
                     }
                 })
