@@ -35,7 +35,7 @@ class HolderV3 extends _Holder {
 
     get birthDateString() {
         if (dateTool.isValidDateString(this.birthDate)) {
-            return dateTool.dateToString(this.birthDate, 'dd LLLL yyyy', store.state.languages.current.locale);
+            return dateTool.dateToString(this.birthDate, 'date-without-day', store.state.languages.current.locale);
         } else {
             return this.birthDate;
         }

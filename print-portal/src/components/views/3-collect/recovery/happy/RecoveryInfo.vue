@@ -19,13 +19,13 @@ export default {
             return this.signedEvent.event.recovery;
         },
         validFrom() {
-            return dateTool.dateTimeToString(this.proofEvent.validFrom, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
+            return dateTool.dateToString(this.proofEvent.validFrom, 'date-with-day', this.currentLanguage.locale);
         },
         validUntil() {
-            return dateTool.dateTimeToString(this.proofEvent.validUntil, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
+            return dateTool.dateToString(this.proofEvent.validUntil, 'date-with-day', this.currentLanguage.locale);
         },
         sampleDate() {
-            return dateTool.dateTimeToString(this.proofEvent.sampleDate, 'EEEE d LLLL yyyy', this.currentLanguage.locale);
+            return dateTool.dateToString(this.proofEvent.sampleDate, 'date-with-day', this.currentLanguage.locale);
         }
     }
 }
