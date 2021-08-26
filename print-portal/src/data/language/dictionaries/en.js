@@ -71,7 +71,7 @@ const en = {
             'unknownTestProvider': 'Retrieval code is from unknown provider',
             'invalidTestCode': 'Invalid retrieval code',
             'tokenExpired': 'Retrieval code is expired',
-            'invalidVerificationCode': 'Invalid combination retrieval code of verification code',
+            'invalidVerificationCode': 'Invalid combination of retrieval code and verification code',
             'emptyVerificationCode': 'Verification code not entered',
             'sendCode': 'Send code'
         },
