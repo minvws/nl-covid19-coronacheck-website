@@ -70,7 +70,8 @@ const nl = {
             'emptyTestCode': 'Ophaalcode niet ingevuld',
             'unknownTestProvider': 'Ophaalcode is van een onbekende testlocatie',
             'invalidTestCode': 'Geen geldige ophaalcode',
-            'invalidVerificationCode': 'Geen geldige verificatiecode',
+            'tokenExpired': 'Ophaalcode is niet meer geldig',
+            'invalidVerificationCode': 'Geen geldige combinatie van ophaalcode en verificatiecode',
             'emptyVerificationCode': 'Verificatiecode niet ingevuld',
             'sendCode': 'Stuur code'
         },
