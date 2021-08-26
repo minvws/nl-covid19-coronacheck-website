@@ -33,7 +33,7 @@ export const getErrorCode = (error, errorCodeInformation) => {
     const errorCode = (error.response && error.response.status) ? error.response && error.response.status : '-';
     const errorBody = (error.response && error.response.data) ? error.response.data : '-';
     // W stands for web (as i stands for iOS and A stands for Android
-    return 'W' +
+    return 'W ' +
         flow + errorCodeInformation.step + ' ' +
         errorCodeInformation.provider_identifier + ' ' +
         errorCode + ' ' +
