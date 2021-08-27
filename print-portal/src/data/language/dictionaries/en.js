@@ -68,9 +68,9 @@ const en = {
             'sendAgain': 'Send again',
             'didNotGetCode': 'I don\'t have a code',
             'emptyTestCode': 'Retrieval code not entered',
-            'unknownTestProvider': 'Retrieval code is from unknown provider',
+            'unknownTestProvider': 'Retrieval code is from an unknown test location',
             'invalidTestCode': 'Invalid retrieval code',
-            'tokenExpired': 'Retrieval code is expired',
+            'tokenExpired': 'Retrieval code has expired',
             'invalidVerificationCode': 'Invalid combination of retrieval code and verification code',
             'emptyVerificationCode': 'Verification code not entered',
             'sendCode': 'Send code'
