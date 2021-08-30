@@ -1,7 +1,7 @@
 <script>
 import signedEventsInterface from '@/interfaces/signed-events'
 import { cmsDecode } from '@/tools/cms'
-import { handleRejection } from '@/tools/error-handler';
+import { handleRejection, getErrorCode } from '@/tools/error-handler';
 
 export default {
     name: 'redirect-mixin',
@@ -42,12 +42,8 @@ export default {
                 this.notifyDigidFinished();
                 signedEventsInterface.getTokens(user.id_token).then(response => {
                     if (response.data && response.data.payload) {
-                        try {
-                            const payload = cmsDecode(response.data.payload);
-                            this.collectEvents(payload.tokens);
-                        } catch (error) {
-                            this.$router.push({ name: 'ErrorGeneral', query: { error: error.message } });
-                        }
+                        const payload = cmsDecode(response.data.payload);
+                        this.collectEvents(payload.tokens);
                     }
                 }).catch((error) => {
                     // todo
@@ -87,76 +83,71 @@ export default {
         collectEvents(tokenSets) {
             this.$store.commit('signedEvents/clear');
             this.isLoading = true;
-            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders).then(result => {
+            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders).then(results => {
                 this.isLoading = false;
-                this.analyseResult(result);
-            }).catch((error) => {
-                // actually this catch could not be caused by the backend, since all errors are collected
-                // in try catch blocks (and send to analyseResult() )
-                this.loading = false;
-                this.$store.commit('modal/close');
-                this.gotoPreviousPage();
-                handleRejection(error, { flow: this.filter, step: '-', provider_identifier: '-' })
+                this.analyseResult(results);
             });
         },
-        analyseResult(result) {
-            if (result) {
+        analyseResult(results) {
+            console.log(results);
+            if (results) {
                 const analysis = {
-                    error429: false,
-                    errorAny: false,
-                    hasResults: false,
-                    hasAtLeastOneUnomi: false,
-                    dataIsCorrupt: false,
-                    dataIsIncomplete: false
-                }
-                const is429 = (error) => {
-                    return error.response && error.response.status && error.response.status === 429;
-                }
-                const is5xx = (error) => {
-                    return error.response && error.response.status && (error.response.status >= 500 && error.response.status < 600);
-                }
-                const is5xxOrNetwork = (error) => {
-                    return is5xx(error) || error.message.toLowerCase() === 'network error';
-                }
-                const isErrorAny = (error) => {
-                    return is5xx(error) || is5xxOrNetwork(error) || is429(error);
+                    numberOfUnomi: 0,
+                    numberOfErrors: 0,
+                    // signed event is the object with the holder
+                    // it could be there but have zero proof events
+                    numberOfEventProvidersWithSignedEvents: 0,
+                    numberOfEventProvidersWithProofEvents: 0,
+                    dataIsCorrupt: false
                 }
 
-                for (const error of result.errors) {
-                    if (is429(error)) {
-                        analysis.error429 = true
+                for (const eventProvider of results) {
+                    if (eventProvider.unomi.result) {
+                        analysis.numberOfUnomi++;
                     }
-                    if (isErrorAny(error)) {
-                        analysis.errorAny = true
+                    if (eventProvider.unomi.error || eventProvider.events.error) {
+                        analysis.numberOfErrors++;
                     }
-                }
-                for (const event of result.events) {
-                    try {
-                        const payload = cmsDecode(event.payload);
-                        if (payload.events && payload.events.length > 0) {
-                            analysis.hasResults = true
+                    if (eventProvider.events.result) {
+                        analysis.numberOfEventProvidersWithSignedEvents++;
+                        try {
+                            const payload = cmsDecode(eventProvider.events.result.payload);
+                            if (payload.events && payload.events.length > 0) {
+                                analysis.numberOfEventProvidersWithProofEvents++;
+                            }
+                        } catch (error) {
+                            analysis.dataIsCorrupt = true;
                         }
-                    } catch (error) {
-                        analysis.dataIsCorrupt = true;
                     }
                 }
-                analysis.hasAtLeastOneUnomi = result.hasAtLeastOneUnomi;
-                // todo dataIsIncomplete
-
                 console.log(analysis);
-                if (analysis.hasResults) {
-                    if (analysis.errorAny) {
+
+                if (analysis.numberOfEventProvidersWithProofEvents > 0) {
+                    if (analysis.numberOfErrors > 0) {
                         this.$store.commit('modal/set', {
                             messageHead: this.$t('message.error.collectEventsWithErrors.head'),
                             messageBody: this.$t('message.error.collectEventsWithErrors.body'),
                             closeButton: true
                         });
                     }
-                    this.createEvents(result);
+                    const signedEvents = results.map(r => r.events.result);
+                    this.createEvents(signedEvents);
                     this.checkResult();
                 } else {
-                    if (analysis.errorAny) {
-                        this.$router.push({ name: 'ErrorNoEvents', query: { type: this.filter } })
+                    if (analysis.numberOfErrors > 0) {
+                        const errorCodes = [];
+                        for (const eventProvider of results) {
+                            let errorCode;
+                            if (eventProvider.unomi.error) {
+                                errorCode = getErrorCode(eventProvider.unomi.error, { flow: this.filter, step: '40', provider_identifier: eventProvider.eventProvider });
+                                errorCodes.push(errorCode);
+                            }
+                            if (eventProvider.events.error) {
+                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider });
+                                errorCodes.push(errorCode);
+                            }
+                        }
+                        this.$router.push({ name: 'ErrorGeneral', query: { errors: errorCodes.join('+') } });
                     } else {
                         this.$router.push({ name: this.pages.noResult });
                     }
@@ -207,8 +198,8 @@ export default {
         //     }
         //     return '';
         // },
-        createEvents(result) {
-            this.$store.commit('signedEvents/createAll', result.events);
+        createEvents(signedEvents) {
+            this.$store.commit('signedEvents/createAll', signedEvents);
         },
         checkResult() {
             const proofEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);

@@ -12,11 +12,11 @@ export default {
         }
     },
     computed: {
-        type() {
-            if (this.$route.query.type) {
-                return this.$t('components.digid.proofType.' + this.$route.query.type)
+        errors() {
+            if (this.$route.query.errors) {
+                return this.$route.query.errors.split('+').join('\n');
             } else {
-                return '';
+                return [];
             }
         }
     }
@@ -29,7 +29,7 @@ export default {
         <div class="section">
             <PageIntro
                 :head="$t('views.errorNoEvents.pageHeader')"
-                :intro="$t('views.errorNoEvents.pageIntro', { type: type })"/>
+                :intro="$t('views.errorNoEvents.pageIntro', { errors: errors })"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

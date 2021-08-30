@@ -11,8 +11,8 @@ const collect = async (tokenSets, filter = '', eventProviderIdentifiers = '*') =
                 return tokenSet.provider_identifier === eventProviderIdentifiers;
             }
         })
-        getEvents(filteredTokenSets, filter).then(result => {
-            resolve(result);
+        getEvents(filteredTokenSets, filter).then(results => {
+            resolve(results);
         }, (error) => {
             reject(error)
         })
@@ -38,34 +38,42 @@ const getTokens = async (token) => {
 }
 
 const getEvents = async (tokenSets, filter) => {
-    const response = {
-        events: [],
-        errors: [],
-        hasAtLeastOneUnomi: false
-    }
+    const results = []
     for (const tokenSet of tokenSets) {
         const eventProvider = store.getters['eventProviders/getTestProviderByIdentifier'](tokenSet.provider_identifier);
 
-        let result;
         if (eventProvider) {
-            try {
-                result = await unomi(eventProvider, tokenSet, filter);
-            } catch (error) {
-                response.errors.push(error);
-            }
-            if (result && result.informationAvailable) {
-                response.hasAtLeastOneUnomi = true;
-                try {
-                    await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
-                        response.events.push(signedEvent)
-                    })
-                } catch (error) {
-                    response.errors.push(error);
+            let result;
+            const resultForEventProvider = {
+                eventProvider: tokenSet.provider_identifier,
+                unomi: {
+                    result: false,
+                    error: null
+                },
+                events: {
+                    result: null,
+                    error: null
                 }
             }
+            try {
+                result = await unomi(eventProvider, tokenSet, filter);
+                resultForEventProvider.unomi.result = true;
+            } catch (error) {
+                resultForEventProvider.unomi.error = error;
+            }
+            if (result && result.informationAvailable) {
+                try {
+                    await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
+                        resultForEventProvider.events.result = signedEvent;
+                    })
+                } catch (error) {
+                    resultForEventProvider.events.error = error;
+                }
+            }
+            results.push(resultForEventProvider)
         }
     }
-    return response;
+    return results;
 }
 
 const unomi = async (eventProvider, tokenSet, filter) => {

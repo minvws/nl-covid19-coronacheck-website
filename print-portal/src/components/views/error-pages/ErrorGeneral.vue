@@ -10,6 +10,15 @@ export default {
         goHome() {
             this.$router.push({ name: 'Home' })
         }
+    },
+    computed: {
+        errors() {
+            if (this.$route.query.errors) {
+                return '<ul>' + this.$route.query.errors.split('+').map(e => '<li>' + e + '</li>').join('') + '</ul>';
+            } else {
+                return [];
+            }
+        }
     }
 }
 </script>
@@ -20,7 +29,7 @@ export default {
         <div class="section">
             <PageIntro
                 :head="$t('views.errorGeneral.pageHeader')"
-                :intro="$t('views.errorGeneral.pageIntro', { error: $route.query.error })"/>
+                :intro="$t('views.errorGeneral.pageIntro', { errors: errors })"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

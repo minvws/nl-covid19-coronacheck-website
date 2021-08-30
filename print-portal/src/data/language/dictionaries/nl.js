@@ -155,7 +155,7 @@ const nl = {
         },
         'errorGeneral': {
             'pageHeader': 'Sorry, er gaat iets mis',
-            'pageIntro': '<p>Er gaat iets mis bij het maken van je bewijs (foutcode: <strong>%{error}</strong>). Wil je het later nog eens proberen?</p><p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
+            'pageIntro': '<p>Er gaat iets mis bij het maken van je bewijs. Wil je het later nog eens proberen?</p><p><strong>Foutcode(s)</strong><br>%{errors}</p><p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
         }
     },
     'components': {
