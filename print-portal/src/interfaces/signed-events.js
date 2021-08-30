@@ -102,9 +102,6 @@ const unomi = async (eventProvider, tokenSet, filter) => {
 }
 
 const getEvent = async (eventProvider, tokenSet, filter) => {
-    if (eventProvider.provider_identifier === 'GGD') {
-        eventProvider.event_url = 'https://httpstat.us/429';
-    }
     return new Promise((resolve, reject) => {
         const url = eventProvider.event_url;
         const headers = {
