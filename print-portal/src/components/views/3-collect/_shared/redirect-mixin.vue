@@ -130,9 +130,7 @@ export default {
                             closeButton: true
                         });
                     }
-                    const signedEvents = results.map(r => r.events.result);
-                    this.createEvents(signedEvents);
-                    this.checkResult();
+                    this.checkResult(results);
                 } else {
                     if (analysis.numberOfErrors > 0) {
                         const errorCodes = [];
@@ -201,7 +199,14 @@ export default {
         createEvents(signedEvents) {
             this.$store.commit('signedEvents/createAll', signedEvents);
         },
-        checkResult() {
+        checkResult(results) {
+            const signedEvents = [];
+            for (const result of results) {
+                if (result.events.result) {
+                    signedEvents.push(result.events.result);
+                }
+            }
+            this.createEvents(signedEvents);
             const proofEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);
             // we check for the lengt of the proof events. Even when there are sigend events, it is possible
             // the do not have any (proof) events inside them
