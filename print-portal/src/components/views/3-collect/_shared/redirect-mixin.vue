@@ -65,16 +65,24 @@ export default {
                 });
             }).catch((error) => {
                 console.dir(error);
+
                 const isCanceled = (error) => {
-                    // todo
-                    console.dir(error);
-                    return false;
+                    return error && error.message && error.message === 'saml_authn_failed';
                 }
 
                 const isAppAuthError = (error) => {
-                    // todo
-                    console.dir(error);
-                    return false;
+                    // note: the digid backend also provides a error_desc
+                    // but oidc-client removes this info from the custom error it returns
+                    const options = [
+                        'login_required',
+                        'invalid_request',
+                        'invalid_client',
+                        'invalid_grant',
+                        'unauthorized_client',
+                        'unsupported_grant_type',
+                        'invalid_scope'
+                    ]
+                    return error && error.message && options.indexOf(error.message) > -1;
                 }
 
                 if (isCanceled(error)) {
@@ -86,7 +94,7 @@ export default {
                         closeButton: true
                     })
                 } else if (isAppAuthError(error)) {
-                    const errorCode = getErrorCode(error, { flow: this.filter, step: '10', provider_identifier: '000' });
+                    const errorCode = getErrorCode(error, { flow: this.filter, step: '10', provider_identifier: '000', errorBody: error.message });
                     this.$router.push({ name: 'ErrorGeneral', query: { errors: errorCode } });
                 } else {
                     handleRejection(error, { flow: this.filter, step: '10', provider_identifier: '000' });
