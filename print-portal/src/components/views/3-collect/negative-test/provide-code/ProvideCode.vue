@@ -59,8 +59,7 @@ export default {
             return this.checksumSet.length === 2;
         },
         checkCheckSumIsValid() {
-            // return this.checkSum ? (this.luhn === this.checkSum) : false;
-            return true;
+            return this.checkSum ? (this.luhn === this.checkSum) : false;
         },
         checkIfIsCorrectLength() {
             return this.verificationCode.length >= 5;
@@ -90,16 +89,20 @@ export default {
             return this.checksumSet ? this.checksumSet[0] : null;
         },
         luhn() {
-            return luhnModN.generateCheckCharacter(this.token.toUpperCase());
+            return this.token ? luhnModN.generateCheckCharacter(this.token.toUpperCase()) : '';
         }
     },
     methods: {
         submitTestCode() {
             if (this.testCode.length > 0) {
-                if (this.isTestCodeValid) {
-                    this.getSignedResult({ includeVerificationCode: false });
+                if (this.checkIfHasTestProvider) {
+                    if (this.isTestCodeValid) {
+                        this.getSignedResult({ includeVerificationCode: false });
+                    } else {
+                        this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                    }
                 } else {
-                    this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                    this.testCodeStatus.error = this.$t('views.provideCode.unknownTestProvider');
                 }
             } else {
                 this.testCodeStatus.error = this.$t('views.provideCode.emptyTestCode');
@@ -156,7 +159,7 @@ export default {
                         const errorCause = this.getCauseOfError(error.response)
                         switch (errorCause) {
                         case 'invalid_token':
-                            this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                            this.testCodeStatus.error = this.$t('views.provideCode.tokenExpired');
                             break;
                         case 'verification_required':
                             this.$store.commit('setVerificationNeeded', true);
