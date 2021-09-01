@@ -18,7 +18,7 @@ const isValidDateString = (string) => {
 }
 
 const dateToString = (dateInput, formatType = 'date-with-day', localeString) => {
-    let dateFormat;
+    let dateFormat, dateInputCorrected;
     switch (formatType) {
     case 'date-with-day':
         dateFormat = 'EEEE d LLLL yyyy';
@@ -30,7 +30,14 @@ const dateToString = (dateInput, formatType = 'date-with-day', localeString) => 
         dateFormat = 'EEEE d LLLL HH:mm';
         break;
     }
-    return format(new Date(dateInput), dateFormat, { locale: getLocale(localeString) });
+    if (dateInput.length < 11) {
+        // When a ISO8601 without time is entered in new Date(), it will interpret it as UTC time
+        // and will format it corresponding the timezone, resulting in unexpected dates for specific timezones
+        dateInputCorrected = dateInput + 'T00:00';
+    } else {
+        dateInputCorrected = dateInput;
+    }
+    return format(new Date(dateInputCorrected), dateFormat, { locale: getLocale(localeString) });
 }
 
 const getTime = (dateString) => {
