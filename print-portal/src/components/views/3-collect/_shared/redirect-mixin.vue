@@ -114,8 +114,7 @@ export default {
                     // signed event is the object with the holder
                     // it could be there but have zero proof events
                     numberOfEventProvidersWithSignedEvents: 0,
-                    numberOfEventProvidersWithProofEvents: 0,
-                    dataIsCorrupt: false
+                    numberOfEventProvidersWithProofEvents: 0
                 }
 
                 for (const eventProvider of results) {
@@ -133,7 +132,8 @@ export default {
                                 analysis.numberOfEventProvidersWithProofEvents++;
                             }
                         } catch (error) {
-                            analysis.dataIsCorrupt = true;
+                            analysis.numberOfErrors++;
+                            eventProvider.events.parsingError = true;
                         }
                     }
                 }
@@ -159,6 +159,10 @@ export default {
                             }
                             if (eventProvider.events.error) {
                                 errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider });
+                                errorCodes.push(errorCode);
+                            }
+                            if (eventProvider.events.parsingError) {
+                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider, parsingError: true });
                                 errorCodes.push(errorCode);
                             }
                         }

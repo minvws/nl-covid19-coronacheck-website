@@ -52,7 +52,8 @@ const getEvents = async (tokenSets, filter) => {
                 },
                 events: {
                     result: null,
-                    error: null
+                    error: null,
+                    parsingError: false
                 }
             }
             try {

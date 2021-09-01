@@ -27,8 +27,13 @@ export const handleRejection = (error, errorCodeInformation) => {
 }
 
 export const getErrorCode = (error, errorCodeInformation) => {
+    let errorCode;
     const flow = getFlowCode(errorCodeInformation.flow);
-    const errorCode = (error.response && error.response.status) ? error.response && error.response.status : '-';
+    if (errorCodeInformation.parsingError) {
+        errorCode = '030';
+    } else {
+        errorCode = (error.response && error.response.status) ? error.response && error.response.status : '-';
+    }
     const errorBody = (error.response && error.response.data && error.response.data.code) ? error.response.data.code : '';
     // W stands for web (as i stands for iOS and A stands for Android
     return 'W ' +
