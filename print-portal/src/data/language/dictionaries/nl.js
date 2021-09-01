@@ -156,6 +156,14 @@ const nl = {
         'errorGeneral': {
             'pageHeader': 'Sorry, er gaat iets mis',
             'pageIntro': '<p>Er gaat iets mis bij het maken van je bewijs. Wil je het later nog eens proberen?</p><p><strong>Foutcode(s)</strong><br>%{errors}</p><p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
+        },
+        'errorNoBsn': {
+            'pageHeader': 'Geen BSN gevonden',
+            'pageIntro': '<p>De zorgverlener waar je bent gevaccineerd kan je verder helpen. Neem contact op en geef door dat de CoronaCheck-app geen BSN gevonden heeft.</p>'
+        },
+        'errorSessionExpired': {
+            'pageHeader': 'Je sessie is gestopt',
+            'pageIntro': '<p>Je hebt te lang gewacht. Voor de veiligheid ben je daarom uitgelogd. Log opnieuw in met DigiD om je gegevens op te halen.</p>'
         }
     },
     'components': {

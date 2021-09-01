@@ -46,13 +46,21 @@ export default {
                         this.collectEvents(payload.tokens);
                     }
                 }).catch((error) => {
-                    // todo
-                    // if () {
-                    // BSN not available
-                    // Session expired
-                    // } else {
-                    handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' })
-                    // }
+                    console.dir(error);
+                    const detailedCodeNoBSN = 99782;
+                    const detailedCodeSessionExpired = 99708;
+                    const hasErrorCode = (error, errorCode) => {
+                        return error && error.response && error.response.data && error.response.data &&
+                            error.response.data.code && error.response.data.code === errorCode;
+                    }
+
+                    if (hasErrorCode(detailedCodeNoBSN)) {
+                        this.$router.push({ name: 'ErrorNoBsn' });
+                    } else if (hasErrorCode(detailedCodeSessionExpired)) {
+                        this.$router.push({ name: 'ErrorSessionExpired' });
+                    } else {
+                        handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' })
+                    }
                 });
             }).catch((error) => {
                 // const confirmAction = () => {
