@@ -160,7 +160,7 @@ export default {
                             }
                         } catch (error) {
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'TestResultOtherSomethingWrong', query: { error: error.message } });
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '60', provider_identifier: this.testProviderIdentifier, parsingError: true }) } });
                         }
                     }
                 }).catch((error) => {
@@ -184,8 +184,8 @@ export default {
                             this.$router.push({ name: 'ServerBusy' });
                             break
                         default:
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: this.testProviderIdentifier }) } });
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: '000' }) } });
                             break
                         }
                     }
