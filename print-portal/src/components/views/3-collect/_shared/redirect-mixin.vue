@@ -49,6 +49,7 @@ export default {
                     console.dir(error);
                     const detailedCodeNoBSN = 99782;
                     const detailedCodeSessionExpired = 99708;
+
                     const hasErrorCode = (error, errorCode) => {
                         return error && error.response && error.response.data && error.response.data &&
                             error.response.data.code && error.response.data.code === errorCode;
@@ -63,25 +64,33 @@ export default {
                     }
                 });
             }).catch((error) => {
-                // const confirmAction = () => {
-                //     this.$router.push({ name: 'Home' });
-                // }
+                console.dir(error);
+                const isCanceled = (error) => {
+                    // todo
+                    console.dir(error);
+                    return false;
+                }
 
-                // todo check if the actions was cancelel
-                // if () {
-                // this.gotoPreviousPage();
-                // const type = this.$t('message.info.digidCanceled.' + this.type)
-                // this.$store.commit('modal/set', {
-                //     messageHead: this.$t('message.info.digidCanceled.head'),
-                //     messageBody: this.$t('message.info.digidCanceled.body', { type }),
-                //     confirm: true,
-                //     confirmAction,
-                //     confirmYes: this.$t('goBackToStart'),
-                //     confirmNo: this.$t('close')
-                // })
-                // } else {
-                handleRejection(error, { flow: this.filter, step: '10', provider_identifier: '000' });
-                // }
+                const isAppAuthError = (error) => {
+                    // todo
+                    console.dir(error);
+                    return false;
+                }
+
+                if (isCanceled(error)) {
+                    this.gotoPreviousPage();
+                    const type = this.$t('message.info.digidCanceled.' + this.type)
+                    this.$store.commit('modal/set', {
+                        messageHead: this.$t('message.info.digidCanceled.head'),
+                        messageBody: this.$t('message.info.digidCanceled.body', { type }),
+                        closeButton: true
+                    })
+                } else if (isAppAuthError(error)) {
+                    const errorCode = getErrorCode(error, { flow: this.filter, step: '10', provider_identifier: '000' });
+                    this.$router.push({ name: 'ErrorGeneral', query: { errors: errorCode } });
+                } else {
+                    handleRejection(error, { flow: this.filter, step: '10', provider_identifier: '000' });
+                }
             });
         },
         notifyDigidFinished() {
