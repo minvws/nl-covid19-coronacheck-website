@@ -21,8 +21,13 @@
             <div class="footer-links">
                 <div class="footer-links-col ___desktop-50">
                     <div class="footer-logos-info">
-                    <h2 class="screen-reader-text">{{ site.data.translations.footer-colophon[page.lang] }}</h2>
-                    {{ site.data.translations.footer-logos-info_md[page.lang] }}</div>
+                        <h2 class="screen-reader-text">{{ site.data.translations.footer-colophon[page.lang] }}</h2>
+                        {{ site.data.translations.footer-logos-info_md[page.lang] }}
+                    </div>
+                    <div class="footer-attribution">
+                        <h2 class="footer-attribution__title">{{ site.data.translations.footer-attribution[page.lang] }}</h2>
+                        <img src="{{ site.baseurl }}/img/Logo_EU_Negative_{{ page.lang }}.svg?v={{ timeslug }}" alt="{{ site.data.translations.footer-attribution-logo[page.lang] }}" width="175" height="48" />
+                    </div>
                 </div>
                 <div class="footer-links-col ___desktop-25">
                     {% if include.for != "scanner" %}

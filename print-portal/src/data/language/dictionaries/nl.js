@@ -45,7 +45,7 @@ const nl = {
         },
         'noVaccinations': {
             'pageHeader': 'Geen vaccinatie(s) beschikbaar',
-            'pageIntro': '<p>Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Op <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">de Wegwijzer</a> vind je meer informatie.</a></p>'
+            'pageIntro': '<p>Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Op de <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a> vind je meer informatie.</a></p>'
         },
         'notPossibleVaccinations': {
             'pageHeader': 'We kunnen geen bewijs maken',
@@ -237,7 +237,7 @@ const nl = {
             'somethingWrong': {
                 'vaccination': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen je gegevens niet? Of mist er een vaccinatie? Op <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">de Wegwijzer</a> vind je meer informatie over wat te doen.</p><p>Mist er een prik? Neem contact op met de locatie waar je bent gevaccineerd.</p>'
+                    'body': '<p>Kloppen je gegevens niet? Of mist er een vaccinatie? Op de <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a> vind je meer informatie over wat te doen.</p><p>Mist er een prik? Neem contact op met de locatie waar je bent gevaccineerd.</p>'
                 },
                 'negativetest': {
                     'head': 'Er klopt iets niet',

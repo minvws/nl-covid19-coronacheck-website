@@ -45,7 +45,7 @@ const en = {
         },
         'noVaccinations': {
             'pageHeader': 'No vaccination(s) available',
-            'pageIntro': '<p>Details about your vaccination are not available.</p><p>Have you been vaccinated recently? It might take a little while before your details are available.</p><p>Your general practitioner might not be affiliated with the GGD. You can find more information about what to do on <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">the Guidepost</a>.</p>'
+            'pageIntro': '<p>Details about your vaccination are not available.</p><p>Have you been vaccinated recently? It might take a little while before your details are available.</p><p>Your general practitioner might not be affiliated with the GGD. You can find more information about what to do on the <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
         },
         'notPossibleVaccinations': {
             'pageHeader': 'We can’t make a certificate',
@@ -81,7 +81,7 @@ const en = {
         },
         'negativeTestNotPossible': {
             'pageHeader': 'We can’t make a certificate',
-            'pageIntro': '<p>At the moment, we cannot provide proof of your test result. This can have different causes. You can find more information about what to do on <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">the Guidepost</a>.</p>'
+            'pageIntro': '<p>At the moment, we cannot provide proof of your test result. This can have different causes. You can find more information about what to do on the <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
         },
         'testResultPending': {
             'pageHeader': 'Test result not yet known',
