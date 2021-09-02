@@ -74,14 +74,16 @@ export default {
                 });
             }).catch((error) => {
                 console.dir(error);
+                // note: this is a custom error of the frontend library
+                // the digid backend also provides a error_desc
+                // but oidc-client removes this info from the custom error it returns
+                // as well as the error.response.status
 
                 const isCanceled = (error) => {
                     return error && error.message && error.message === 'saml_authn_failed';
                 }
 
                 const isAppAuthError = (error) => {
-                    // note: the digid backend also provides a error_desc
-                    // but oidc-client removes this info from the custom error it returns
                     const options = [
                         'login_required',
                         'invalid_request',
