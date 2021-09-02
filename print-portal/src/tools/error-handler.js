@@ -66,5 +66,7 @@ const getFlowCode = (flow) => {
         return '3'
     case 'negativetest':
         return '4'
+    default:
+        return '-1'
     }
 }
