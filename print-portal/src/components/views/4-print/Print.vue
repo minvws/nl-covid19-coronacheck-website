@@ -23,11 +23,9 @@ export default {
         browser() {
             return detect();
         },
-        browserIsIE() {
-            return this.browser.name === 'ie';
-        },
-        browserIsSafari() {
-            return this.browser.name === 'safari';
+        browserWithProblemsOpeningPDF() {
+            const list = ['ie', 'safari', 'crios', 'ios'];
+            return list.indexOf(this.browser.name.toLowerCase()) > -1;
         },
         fileName() {
             return 'coronacheck.pdf';
@@ -134,7 +132,7 @@ export default {
             <div class="section-block">
                 <div class="Print__container">
                     <div
-                        :class="{'browser--problems': browserIsIE || browserIsSafari}"
+                        :class="{'browser--problems': browserWithProblemsOpeningPDF}"
                         class="Print__buttons">
                         <CcButton
                             @select="openPDF()"
