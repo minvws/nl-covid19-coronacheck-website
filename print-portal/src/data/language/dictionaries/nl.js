@@ -162,7 +162,7 @@ const nl = {
             'pageIntro': '<p>De zorgverlener waar je gevaccineerd of getest bent kan je verder helpen. Neem contact op en geef door dat de CoronaCheck-app geen BSN gevonden heeft.\n</p>'
         },
         'errorSessionExpired': {
-            'pageHeader': 'Je sessie is gestopt',
+            'pageHeader': 'Je sessie is verlopen',
             'pageIntro': '<p>Je hebt te lang gewacht. Voor de veiligheid ben je daarom uitgelogd. Log opnieuw in met DigiD om je gegevens op te halen.</p>'
         }
     },
