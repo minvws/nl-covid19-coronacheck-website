@@ -5,9 +5,6 @@ title: I want to get tested for coronavirus. Where should I go?
 redirect_from: 
     - /en/faq-in-app/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
     - /en/faq-in-app/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
-webonly: true
-featuredHome: true
-featuredHomeIndex: 3
 ---
 What is the best place to get tested for coronavirus? This depends on what you are planning to use the test certificate for.
 

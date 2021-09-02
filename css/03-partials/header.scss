@@ -49,7 +49,7 @@
         top: 42px;
         color: #154273;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 1.25rem;
         text-decoration: none;
         padding: 4px;
         z-index: 2;
@@ -60,11 +60,11 @@
     }
 
     .header__title {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 800;
 
         @media (min-width: 825px) {
-            font-size: 40px;
+            font-size: 2.5rem;
             line-height: 1.25;
         }
     }
@@ -234,7 +234,7 @@
     right: 230px;
     min-width: 118px;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 1.25rem;
     display: none;
     z-index: 1;
 

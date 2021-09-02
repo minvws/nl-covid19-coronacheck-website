@@ -107,6 +107,8 @@
         {% if questionSetFour.size > 0 %}
             <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-four[page.lang]|slugify }}">{{ site.data.translations.faq-category-four[page.lang] }}</h2>
 
+            {% include components/banner-guidepost.html %}
+
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
                 {% for question in questionSetFour %}

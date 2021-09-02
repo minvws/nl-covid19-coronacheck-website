@@ -41,12 +41,12 @@
 }
 
 .btn--large {
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 100%;
     font-weight: 800;
 
     @media (min-width: 740px) {
-        font-size: 20px;
+        font-size: 1.25rem;
         max-width: 360px;
     }
 }
@@ -67,7 +67,7 @@
     }
 }
 
-.btn--cta {
+*.btn--cta {
     background: $color-coronacheck_blue;
     border: 1px solid currentColor;
     color: white;

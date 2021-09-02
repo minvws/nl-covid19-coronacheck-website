@@ -3,7 +3,7 @@ set: 5
 index: 5
 title: I requested a paper coronavirus pass from my healthcare provider. How do I add it to the CoronaCheck app? 
 ---
-**Please note:** Adding a paper coronavirus pass to the CoronaCheck app is possible from version 2.2 onwards. Do you use an older version of the app? Then please update the app first. 
+ 
 
 A paper coronavirus pass you received from your healthcare provider can be added to the CoronaCheck app. This way you can use the certificate on your phone. This is how it works: 
 

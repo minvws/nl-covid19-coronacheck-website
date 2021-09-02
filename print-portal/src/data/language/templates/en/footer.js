@@ -8,6 +8,10 @@ const html = `
                 of dozens of specialists, hands-on experts and a large open-source community of citizens. They all
                 lent a hand and helped to test the app during its development.
             </div>
+            <div class="footer-attribution">
+                <h2 class="footer-attribution__title">Made possible by</h2>
+                <img src="assets/img/Logo_EU_Negative_en.svg" alt="European Commission" width="175" height="48" />
+            </div>
         </div>
         <div class="footer-links-col ___desktop-50">
             <h2>Do you have questions about CoronaCheck?</h2>

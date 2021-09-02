@@ -3,7 +3,7 @@
 }
 
 .banner {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.42;
     padding: 30px 30px;
     background-color: $color-RO_lightblue;
@@ -21,7 +21,7 @@
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     p {
@@ -30,13 +30,17 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 
     @media (min-width: 940px) {
         margin: 30px auto;
 
         h2 {
-            font-size: 24px;
+            font-size: 1.5rem;
         }
     }
 

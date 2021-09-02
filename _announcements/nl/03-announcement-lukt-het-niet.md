@@ -1,7 +1,7 @@
 ---
 lang: nl
 # set `published` to true to show the announcement on the homepage:
-published: true
+published: false
 # Always set a title:
 title: Problemen met het ophalen van je test-, vaccinatie- of herstelbewijs?
 # Choose a style: error or info

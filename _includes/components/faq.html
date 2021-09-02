@@ -28,6 +28,18 @@
       
       </article>
     {% endfor %}
+
+    <article class="highlighted-faq">
+        <div class="highlighted-faq__summary">
+        <div class="highlighted-faq__title">
+            <h3>{{ site.data.translations.wegwijzerlink[page.lang] }}</h3>
+        </div>
+        <a href="{{ langSlug }}{{ site.data.translations.footer-wegwijzer-url[page.lang] }}" class="highlighted-faq__summary__btn-expand">
+            {{ site.data.translations.wegwijzerlinktext[page.lang] }}
+        </a>
+        </div>
+    
+    </article>
   </div>
 
   <p class="faq-homepage__more">

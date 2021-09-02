@@ -8,6 +8,10 @@ const html = `
                 de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community
                 tijdens de ontwikkeling meegekeken en getest.
             </div>
+            <div class="footer-attribution">
+                <h2 class="footer-attribution__title">Mede mogelijk gemaakt door</h2>
+                <img src="assets/img/Logo_EU_Negative_nl.svg" alt="Europese Commissie" width="175" height="48" />
+            </div>
         </div>
         <div class="footer-links-col ___desktop-50">
             <h2>Heb je vragen over CoronaCheck?</h2>

@@ -12,6 +12,12 @@ $file-path: "/";
 @import "01-setup/fonts";
 @import "01-setup/basics";
 @import "01-setup/form";
+
+// Used on every page
+@import "03-partials/header";
+@import "03-partials/content-block";
+@import "03-partials/footer";
+
 @import "02-components/btn";
 @import "02-components/app-badges";
 @import "02-components/skiplinks";
@@ -19,11 +25,6 @@ $file-path: "/";
 @import "02-components/language-picker";
 @import "02-components/video";
 @import "02-components/scanner-backlink";
-
-// Used on every page
-@import "03-partials/header";
-@import "03-partials/content-block";
-@import "03-partials/footer";
 
 // As used on the homepage
 @import "03-partials/section-how-to-use-coronacheck";

@@ -29,7 +29,7 @@
 
 .video__description__title {
     color: $color-RO_darkblue;
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -50,6 +50,7 @@
 .component-mediaelement {
     background-color: $color-RO_darkblue;
     margin-bottom: 3.5em;
+
     video {
         max-width: 100%;
     }
@@ -151,13 +152,17 @@ details.component-mediaelement__details {
     }
 
     summary:hover:after,
-    summary:focus:after {
+    summary:hover:focus:after {
         background-image: url(../img/chevron-right-white.svg);
+    }
+
+    summary:focus:after {
+        background-image: url(../img/chevron-right.svg);
     }
 
     ul {
         list-style: none;
-        padding: 5px 0 20px 0px;
+        // padding: 5px 0 20px 0px;
         margin-left: 0;
     }
 
@@ -179,6 +184,8 @@ details.component-mediaelement__details {
 }
 
 details.component-mediaelement__details[open] {
+    padding-bottom: 5px;
+
     summary {
         font-weight: 400;
     }
@@ -188,8 +195,12 @@ details.component-mediaelement__details[open] {
     }
 
     summary:hover:after,
-    summary:focus:after {
+    summary:hover:focus:after {
         background-image: url(../img/chevron-right-white.svg);
+    }
+
+    summary:focus:after {
+        background-image: url(../img/chevron-right.svg);
     }
 
     > div {
@@ -209,4 +220,19 @@ details.component-mediaelement__details[open] {
 
 .mejs__captions-selector.mejs__offscreen {
     display: none;
+}
+
+.mejs__container-fullscreen {
+    .mejs__captions-layer {
+        font-size: 3vh;
+        line-height: 1.2;
+    }
+
+    .mejs__captions-position-hover {
+        bottom: 100px;
+    }
+
+    .mejs__controls {
+        bottom: 0;
+    }
 }

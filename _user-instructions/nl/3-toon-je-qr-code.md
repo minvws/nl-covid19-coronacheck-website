@@ -1,7 +1,7 @@
 ---
 index: 3
 show: true
-graphic: Home_NL_Iphone3-min.png
+graphic: Home_NL_Iphone3.png
 title: 3. Toon je QR-code
 lang: nl
 ---

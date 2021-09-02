@@ -42,14 +42,14 @@
     padding: 2.2rem 1.4rem 2rem 1.4em;
     max-width: 940px;
     color: $color-coronacheck_black;
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 2em;
 
     @media (min-width: 740px) {
         padding-top: 3rem;
         padding-bottom: 3rem;
         display: flex;
-        font-size: 18px;
+        font-size: 1.125rem;
         margin: 0 auto;
     }
 
@@ -63,7 +63,7 @@
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     p {
@@ -130,7 +130,7 @@
 }
 
 .footer-links {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.38em;
 
     a,
@@ -156,19 +156,19 @@
         margin-top: 28px;
         color: #fff;
         margin-bottom: 20px;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     h3 {
         color: #fff;
         margin: 0;
-        font-size: 16px;
+        font-size: 1rem;
         margin-top: 32px;
         margin-bottom: 10px;
-        font-size: 20px;
+        font-size: 1.25rem;
 
         @media (min-width: 740px) {
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
 
@@ -222,9 +222,16 @@
 
 .footer-logos-info {
     margin-top: 0;
-    font-size: 16px;
+    font-size: 1rem;
 
     @media (min-width: 960px) {
         margin-top: 28px;
     }
+}
+
+.footer-links .footer-attribution__title {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-family: "RO sans";
 }

@@ -8,8 +8,7 @@ redirect_from:
     - /nl/faq/35-kan-ik-meerdere-pilots-bezoeken-met-een-testbewijs/
     - /nl/faq/2-2-hoe-lang-is-mijn-testbewijs-geldig-en-kan-ik-hem-meerdere-keren-gebruiken
     - /nl/faq/2-3-tot-wanneer-is-mijn-vaccinatiebewijs-geldig
-featuredHome: true
-featuredHomeIndex: 2
+webonly: true
 ---
 Een Nederlands testbewijs is geldig tot 24 uur na het moment van testen. Binnen deze 24 uur kun je met het bewijs (de Nederlandse QR-code) dus meerdere locaties of activiteiten bezoeken. En de QR-code steeds opnieuw laten scannen. Let op: een door de GGD afgenomen test is veelal niet binnen 24 uur na afname beschikbaar in CoronaCheck.
 
