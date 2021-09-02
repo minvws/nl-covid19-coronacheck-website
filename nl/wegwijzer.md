@@ -22,7 +22,7 @@ CoronaCheck haalt gegevens over vaccinaties op bij de systemen van het RIVM en d
 
 Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Je bent volledig gevaccineerd vanaf 14 dagen na de laatste vaccinatie. Zodra je vaccinatie goed is geregistreerd kun je een vaccinatiebewijs maken. Een internationale QR-code kan worden gemaakt na één vaccinatie.
 
-**Let op:** een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op {{ site.data.links.wijsoprijs[page.lang] }}. Meer informatie over vaccinatiebewijzen vind je op {{ site.data.links.vaccinatiebewijs[page.lang] }}.
+**Let op:** een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op {{ site.data.links.wijsopreis[page.lang] }}. Meer informatie over vaccinatiebewijzen vind je op {{ site.data.links.vaccinatiebewijs[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -150,7 +150,7 @@ Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locati
 
 {% capture copy_testen_voor_je_reis %}
 <div markdown="1">
-Wil je gebruik maken van een coronabewijs om te reizen binnen Europa? Hiervoor kun je terecht bij {{ site.data.links.testenvoorjereis[page.lang] }}. Let op: ieder land bepaalt zelf de inreisregels. Check dus voor vertrek altijd {{ site.data.links.wijsoprijs[page.lang] }} om nare verrassingen te voorkomen.
+Wil je gebruik maken van een coronabewijs om te reizen binnen Europa? Hiervoor kun je terecht bij {{ site.data.links.testenvoorjereis[page.lang] }}. Let op: ieder land bepaalt zelf de inreisregels. Check dus voor vertrek altijd {{ site.data.links.wijsopreis[page.lang] }} om nare verrassingen te voorkomen.
 </div>
 {% endcapture %}
 
@@ -240,7 +240,7 @@ Alle informatie over het krijgen van een vaccinatiebewijs wanneer je geen BSN-nu
 
 {% capture copy_travelquestions %}
 <div markdown="1">
-Ga je binnenkort op reis? Check voor vertrek altijd de geldende inreisregels van je bestemming op {{ site.data.links.wijsoprijs[page.lang] }}. Je kunt nu gratis je testafspraak maken op {{ site.data.links.testenvoorjereis[page.lang] }}. 
+Ga je binnenkort op reis? Check voor vertrek altijd de geldende inreisregels van je bestemming op {{ site.data.links.wijsopreis[page.lang] }}. Je kunt nu gratis je testafspraak maken op {{ site.data.links.testenvoorjereis[page.lang] }}. 
 
 Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ).  <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">Neem contact op met het contactcenter van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
 </div>

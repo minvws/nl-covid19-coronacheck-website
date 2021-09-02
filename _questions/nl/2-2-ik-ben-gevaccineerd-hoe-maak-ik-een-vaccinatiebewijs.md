@@ -9,6 +9,6 @@ redirect_from:
 featuredHome: true
 featuredHomeIndex: 2
 ---
-Om een Nederlandse QR-code te maken moet je volledig gevaccineerd zijn. Een internationale QR-code krijg je al na één vaccinatie. Let op: of een QR-code van een onvolledige vaccinatie geldig is hangt af van de regels van het land dat je bezoekt. Check [www.wijsopreis.nl](www.wijsopreis.nl) om te zien welke regels er gelden op jouw bestemming.
+Om een Nederlandse QR-code te maken moet je volledig gevaccineerd zijn. Een internationale QR-code krijg je al na één vaccinatie. Let op: of een QR-code van een onvolledige vaccinatie geldig is hangt af van de regels van het land dat je bezoekt. Check {{ site.data.links.wijsopreis[page.lang] }} om te zien welke regels er gelden op jouw bestemming.
 
 Kijk voor alle regels rondom het maken van een vaccinatiebewijs op de rijksoverheid pagina {{ site.data.translations.vaccinatiebewijs[page.lang] }}.

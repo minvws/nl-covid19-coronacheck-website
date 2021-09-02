@@ -16,4 +16,4 @@ Bijvoorbeeld:
 - Of een herstelbewijs geldig is;
 - Of één prik geldig is of alleen twee, en hoe lang geleden deze moet zijn.
 
-Wil je weten of jouw coronabewijs geldig is in het land dat je bezoekt? Kijk dan op {{ site.data.links.wijsoprijs[page.lang] }}. Hier wordt een actueel overzicht bijgehouden van de coronaregels per land. 
+Wil je weten of jouw coronabewijs geldig is in het land dat je bezoekt? Kijk dan op {{ site.data.links.wijsopreis[page.lang] }}. Hier wordt een actueel overzicht bijgehouden van de coronaregels per land. 
