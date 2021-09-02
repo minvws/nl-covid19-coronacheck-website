@@ -146,7 +146,7 @@ const en = {
             'pageIntro': '<p>Try again later today.</p>'
         },
         'errorAccessTokens': {
-            'pageHeader': 'Sorry, something is going wrong',
+            'pageHeader': 'Sorry, something has gone wrong',
             'pageIntro': '<p>Contact the help desk of CoronaCheck via 0800-1421 (free of charge) and give them the following error code:</p><p><strong>Error code: %{error}</strong></p>'
         },
         'errorNoEvents': {
