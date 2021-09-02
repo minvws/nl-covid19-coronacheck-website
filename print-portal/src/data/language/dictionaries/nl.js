@@ -43,7 +43,7 @@ const nl = {
             'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>',
             'createTestProofButton': 'Maak QR-code'
         },
-        'noVaccinations': {
+        'vaccinationsNone': {
             'pageHeader': 'Geen vaccinatie(s) beschikbaar',
             'pageIntro': '<p>Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Op <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">de Wegwijzer</a> vind je meer informatie.</a></p>'
         },
@@ -92,10 +92,6 @@ const nl = {
         'testResultNone': {
             'pageHeader': 'Geen negatieve testuitslag',
             'pageIntro': 'Er is geen negatieve testuitslag beschikbaar.'
-        },
-        'testResultOtherSomethingWrong': {
-            'pageHeader': 'Sorry, er gaat iets mis',
-            'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
         },
         'recoveryOverview': {
             'pageHeader': 'Jouw positieve testuitslag',
@@ -150,6 +146,26 @@ const nl = {
         'serverBusy': {
             'pageHeader': 'Sorry, het is erg druk',
             'pageIntro': '<p>Probeer het later nog eens.</p>'
+        },
+        'errorNoEvents': {
+            'pageHeader': 'Sorry, het is niet gelukt',
+            'pageIntro': '<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.</p><p>Tip: wacht een uur en probeer het dan nog een keer.</p>'
+        },
+        'errorTokenFlow': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
+        },
+        'errorGeneral': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Er gaat iets mis bij het maken van je bewijs. Wil je het later nog eens proberen?</p><p><strong>Foutcode(s)</strong><br>%{errors}</p><p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
+        },
+        'errorNoBsn': {
+            'pageHeader': 'Geen BSN gevonden',
+            'pageIntro': '<p>De zorgverlener waar je gevaccineerd of getest bent kan je verder helpen. Neem contact op en geef door dat de CoronaCheck-app geen BSN gevonden heeft.\n</p>'
+        },
+        'errorSessionExpired': {
+            'pageHeader': 'Je sessie is verlopen',
+            'pageIntro': '<p>Je hebt te lang gewacht. Voor de veiligheid ben je daarom uitgelogd. Log opnieuw in met DigiD om je gegevens op te halen.</p>'
         }
     },
     'components': {
@@ -229,8 +245,9 @@ const nl = {
             'dontHaveDigid': 'Ik heb geen DigiD',
             'proofType': {
                 'negativetest': 'testuitslag',
-                'vaccination': 'vaccinaties',
-                'positivetest': 'testuitslag'
+                'vaccination': 'vaccinatie(s)',
+                'positivetest': 'testuitslag',
+                'positivetest,recovery': 'testuitslag'
             }
         }
     },
@@ -292,10 +309,6 @@ const nl = {
                 'head': 'Sorry, er is een storing',
                 'body': '<p>Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (%{code}) door. Of probeer het later opnieuw.</p>'
             },
-            'serverBusy': {
-                'head': '',
-                'body': '<p>Het is erg druk, probeer het later op de dag nog eens</p>'
-            },
             'someServerBusyButResult': {
                 'head': '',
                 'body': '<p>Gegevens mogelijk niet compleet. Door drukte of een storing bij een van de partijen kunnen er gegevens ontbreken. Probeer het eventueel later nog een keer.</p>'
@@ -320,9 +333,11 @@ const nl = {
                 'head': 'Je hebt geen internet',
                 'body': 'Controleer je verbinding en probeer het opnieuw.'
             },
-            'signerFailed': {
-                'head': 'Sorry er gaat iets mis',
-                'body': 'Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (print sign error) door'
+            // this one doesnt need a variable %{type} (as errorNoEvents has), since the other event types only
+            // query 1 event provider, the combination: and events and errors is impossible
+            'collectEventsWithErrors': {
+                'head': 'Zijn dit al je vaccinaties?',
+                'body': '<p>Door een storing of drukte zijn mogelijk niet al jouw gegevens opgehaald. Mist er een vaccinatie? Kom later terug en haal opnieuw je gegevens op.</p>'
             }
         }
     },
@@ -338,7 +353,7 @@ const nl = {
     'details': 'Details',
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
-    'goBackToStart': 'Naar home',
+    'goBackToStart': 'Naar Home',
     'header-appstore': 'Download in de App Store',
     'header-googleplaystore': 'Ontdek het op Google Play',
     'identity_image_alt': 'Holder QR maken',

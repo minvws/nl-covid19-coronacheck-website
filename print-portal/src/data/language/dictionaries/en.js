@@ -43,7 +43,7 @@ const en = {
             'pageIntro': '<p>You can make a QR code of your vaccination. This will be your certificate.</p>',
             'createTestProofButton': 'Make QR code'
         },
-        'noVaccinations': {
+        'vaccinationsNone': {
             'pageHeader': 'No vaccination(s) available',
             'pageIntro': '<p>Details about your vaccination are not available.</p><p>Have you been vaccinated recently? It might take a little while before your details are available.</p><p>Your general practitioner might not be affiliated with the GGD. You can find more information about what to do on <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">the Guidepost</a>.</p>'
         },
@@ -92,10 +92,6 @@ const en = {
         'testResultNone': {
             'pageHeader': 'No negative test result available',
             'pageIntro': 'There is no negative test result available.'
-        },
-        'testResultOtherSomethingWrong': {
-            'pageHeader': 'Sorry, something went wrong',
-            'pageIntro': '<p>Something went wrong at the test location. Therefore your details can’t be retrieved.</p><h4>What to do now?</h4><p>Contact your test location and give them error code:</p><p><strong>Error code: %{error}</strong></p>'
         },
         'recoveryOverview': {
             'pageHeader': 'Your retrieved positive test result',
@@ -150,6 +146,18 @@ const en = {
         'serverBusy': {
             'pageHeader': 'It\'s very busy at the moment',
             'pageIntro': '<p>Try again later today.</p>'
+        },
+        'errorAccessTokens': {
+            'pageHeader': 'Sorry, something has gone wrong',
+            'pageIntro': '<p>Contact the help desk of CoronaCheck via 0800-1421 (free of charge) and give them the following error code:</p><p><strong>Error code: %{error}</strong></p>'
+        },
+        'errorNoEvents': {
+            'pageHeader': 'Sorry, your details were not retrieved',
+            'pageIntro': '<p>Due to increased traffic or an outage at one of the involved parties, some details of your %{type} may be missing. </p><p>Tip: wait one hour and try again.</p>'
+        },
+        'errorTokenFlow': {
+            'pageHeader': 'Sorry, something has gone wrong',
+            'pageIntro': '<p>Something is going wrong at the test location. Therefore, your details can’t be retrieved.</p><h4>What now?</h4><p>Contact the test location and give them the following error code:</p><p><strong>Error code: %{error}</strong></p>'
         }
     },
     'components': {
@@ -323,6 +331,14 @@ const en = {
             'signerFailed': {
                 'head': 'Sorry, something went wrong',
                 'body': '<p>Contact our helpdesk and give them error code (print sign error) or try again later.</p>'
+            },
+            'collectEventsWithErrors': {
+                'head': 'Are these all your vaccinations?',
+                'body': '<p>Due to increased traffic or an outage, some of your details may be missing. Are you missing a vaccination? Please come back later and retrieve your details again.</p>'
+            },
+            'errorAccessTokens': {
+                'head': 'Sorry, something went wrong',
+                'body': 'Try again later or view the latest outages at <a href="https://status.coronacheck.nl/en/">status.coronacheck.nl/en</a><br>(Error code: %{code})'
             }
         }
     },

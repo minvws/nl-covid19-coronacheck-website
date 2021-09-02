@@ -1,7 +1,7 @@
 <script>
 import dateTool from '@/tools/date';
 import signer from '@/interfaces/signer';
-import { handleRejectionSigner } from '@/tools/error-handler';
+import { handleRejection } from '@/tools/error-handler';
 
 export default {
     name: 'overview-mixin',
@@ -63,7 +63,7 @@ export default {
                         this.setSignedAt(response);
                     }
                 }).catch(error => {
-                    handleRejectionSigner(error);
+                    handleRejection(error, { flow: this.filter, step: '80', provider_identifier: '000' });
                 })
             } else {
                 this.$router.push({ name: this.pages.print });

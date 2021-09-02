@@ -7,6 +7,7 @@ import ProvideVerificationCode from './ProvideVerificationCode';
 import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import { cmsDecode } from '@/tools/cms'
+import { hasInternetConnection, messageInternetConnection, getErrorCode } from '@/tools/error-handler';
 
 export default {
     name: 'ProvideCode',
@@ -147,16 +148,29 @@ export default {
                     data: data
                 }).then((response) => {
                     if (response.data && response.data.payload) {
-                        const payload = cmsDecode(response.data.payload);
-                        if (payload.status === 'complete') {
-                            this.addNegativeTestV2(response.data)
-                        } else if (payload.status === 'pending') {
-                            this.$router.push({ name: 'TestResultPending' })
+                        try {
+                            const payload = cmsDecode(response.data.payload);
+                            if (payload.status === 'complete') {
+                                if (payload.events && payload.events.length > 0) {
+                                    this.addNegativeTestV2(response.data)
+                                } else {
+                                    this.$store.commit('clearAll');
+                                    this.$router.push({ name: 'TestResultNone' })
+                                }
+                            } else if (payload.status === 'pending') {
+                                this.$store.commit('clearAll');
+                                this.$router.push({ name: 'TestResultPending' })
+                            }
+                        } catch (error) {
+                            this.$store.commit('clearAll');
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '60', provider_identifier: this.testProviderIdentifier, parsingError: true }) } });
                         }
                     }
                 }).catch((error) => {
-                    if (error.response) {
-                        const errorCause = this.getCauseOfError(error.response)
+                    if (!hasInternetConnection()) {
+                        messageInternetConnection();
+                    } else {
+                        const errorCause = this.getCauseOfError(error)
                         switch (errorCause) {
                         case 'invalid_token':
                             this.testCodeStatus.error = this.$t('views.provideCode.tokenExpired');
@@ -173,38 +187,36 @@ export default {
                             this.$router.push({ name: 'ServerBusy' });
                             break
                         default:
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: this.testProviderIdentifier }) } });
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'TestResultOtherSomethingWrong', query: { error: errorCause } });
                             break
                         }
-                    } else {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.general.head'),
-                            messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                            closeButton: true
-                        });
                     }
                 })
             })
         },
-        getCauseOfError(response) {
-            if (response.status === 429) {
-                return '429';
-            } else {
-                if (response.data && response.data.payload) {
-                    const payload = cmsDecode(response.data.payload);
-                    if (payload.status) {
-                        return payload.status;
-                    } else {
-                        return 'unknown_error';
-                    }
+        getCauseOfError(error) {
+            if (error.response) {
+                if (error.response.status === 429) {
+                    return '429';
                 } else {
-                    if (response.status) {
-                        return response.status;
+                    if (error.response.data && error.response.data.payload) {
+                        const payload = cmsDecode(error.response.data.payload);
+                        if (payload.status) {
+                            return payload.status;
+                        } else {
+                            return 'unknown_error';
+                        }
                     } else {
-                        return 'unknown_error';
+                        if (error.response.status) {
+                            return error.response.status;
+                        } else {
+                            return 'unknown_error';
+                        }
                     }
                 }
+            } else {
+                return 'unknown_error';
             }
         },
         back() {

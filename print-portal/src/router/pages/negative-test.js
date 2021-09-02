@@ -5,7 +5,6 @@ import NegativeTestRedirect from '@/components/views/3-collect/negative-test/hap
 import PrintNegativeTest from '@/components/views/4-print/PrintNegativeTest';
 import TestResultPending from '@/components/views/3-collect/negative-test/unhappy/TestResultPending';
 import NegativeTestNotPossible from '@/components/views/3-collect/negative-test/unhappy/NegativeTestNotPossible';
-import TestResultOtherSomethingWrong from '@/components/views/3-collect/negative-test/unhappy/TestResultOtherSomethingWrong';
 import TestResultNone from '@/components/views/3-collect/negative-test/unhappy/TestResultNone';
 
 const negativeTestPages = [
@@ -39,13 +38,6 @@ const negativeTestPages = [
         path: '/testresultaat-niet-mogelijk',
         name: 'NegativeTestNotPossible',
         component: NegativeTestNotPossible,
-        meta: {
-            pageHeader: 'error'
-        }
-    }, {
-        path: '/testlocatie-er-gaat-iets-mis',
-        name: 'TestResultOtherSomethingWrong',
-        component: TestResultOtherSomethingWrong,
         meta: {
             pageHeader: 'error'
         }

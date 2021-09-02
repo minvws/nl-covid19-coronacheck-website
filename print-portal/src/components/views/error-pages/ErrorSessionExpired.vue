@@ -4,7 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
 
 export default {
-    name: 'TestResultOtherSomethingWrong',
+    name: 'ErrorSessionExpired',
     components: { Page, PageIntro, CcButton },
     methods: {
         goHome() {
@@ -19,8 +19,8 @@ export default {
         :display-back-button="false">
         <div class="section">
             <PageIntro
-                :head="$t('views.testResultOtherSomethingWrong.pageHeader')"
-                :intro="$t('views.testResultOtherSomethingWrong.pageIntro', { error: $route.query.error })"/>
+                :head="$t('views.errorSessionExpired.pageHeader')"
+                :intro="$t('views.errorSessionExpired.pageIntro')"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

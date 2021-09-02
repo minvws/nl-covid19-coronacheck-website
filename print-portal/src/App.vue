@@ -9,9 +9,6 @@ import { handleRejection } from '@/tools/error-handler';
 export default {
     components: { Snackbar, Modal, Identity },
     computed: {
-        dataReady() {
-            return this.currentLanguage && this.$store.state.holderConfig && this.$store.state.testProviders.all.length > 0;
-        },
         displaySnackbar() {
             return this.$store.state.snackbar.visible
         },
@@ -40,7 +37,7 @@ export default {
                     this.$store.commit('setHolderConfig', holderConfig);
                 }
             }).catch((error) => {
-                handleRejection(error);
+                handleRejection(error, { flow: 'startup', step: '10', provider_identifier: '000' });
             })
         },
         async getTestProviders() {
@@ -60,7 +57,7 @@ export default {
                     });
                 }
             }).catch((error) => {
-                handleRejection(error);
+                handleRejection(error, { flow: 'startup', step: '20', provider_identifier: '000' });
             })
         },
         addLanguages() {
@@ -105,7 +102,7 @@ export default {
 
 <template>
     <div
-        v-if="dataReady"
+        v-if="currentLanguage"
         id="app">
         <div
             :aria-hidden="modalIsActive ? 'true' : 'false'"
