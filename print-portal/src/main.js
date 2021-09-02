@@ -20,7 +20,8 @@ Vue.prototype.authNegativeTests = new AuthService(baseUrl + 'jouw-testresultaat-
 Vue.prototype.authRecovery = new AuthService(baseUrl + 'recovery-redirect');
 
 const axiosConfig = {
-    baseURL: window.config.api
+    baseURL: window.config.api,
+    timeout: 30000
 };
 Vue.prototype.$axios = axios.create(axiosConfig)
 
