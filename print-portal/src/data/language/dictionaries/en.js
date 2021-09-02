@@ -154,7 +154,7 @@ const en = {
             'pageIntro': '<p>Due to increased traffic or an outage at one of the involved parties, some details of your %{type} may be missing. </p><p>Tip: wait one hour and try again.</p>'
         },
         'errorTokenFlow': {
-            'pageHeader': 'Sorry, something is going wrong',
+            'pageHeader': 'Sorry, something has gone wrong',
             'pageIntro': '<p>Something is going wrong at the test location. Therefore, your details can’t be retrieved.</p><h4>What now?</h4><p>Contact the test location and give them the following error code:</p><p><strong>Error code: %{error}</strong></p>'
         }
     },
