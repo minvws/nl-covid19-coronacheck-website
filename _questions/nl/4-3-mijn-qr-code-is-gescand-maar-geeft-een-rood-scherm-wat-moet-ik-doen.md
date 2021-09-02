@@ -12,7 +12,7 @@ Een rood scherm betekent dat de QR-code niet aan Nederlandse eisen voldoet.
 
 ## Dit kun je doen:
 
-1. Controleer of de tijd op je telefoon goed staat ingesteld.
+1. Controleer of de tijd op je telefoon goed staat ingesteld. Zorg dat de datum en tijd op ‘automatisch instellen’ staan.
 2. Laat altijd een origineel bewijs zien. Een screenshot van een bewijs kan voor problemen zorgen.
 3. Sluit de CoronaCheck-app af. Start hem daarna opnieuw op en laat je QR-code nogmaals scannen.
 
