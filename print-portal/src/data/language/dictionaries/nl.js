@@ -161,7 +161,7 @@ const nl = {
         },
         'errorNoBsn': {
             'pageHeader': 'Geen BSN gevonden',
-            'pageIntro': '<p>De zorgverlener waar je gevaccineerd of getest bent kan je verder helpen. Neem contact op en geef door dat de CoronaCheck-app geen BSN gevonden heeft.\n</p>'
+            'pageIntro': '<p>De zorgverlener waar je gevaccineerd of getest bent kan je verder helpen. Neem contact op en geef door dat de CoronaCheck-app geen BSN gevonden heeft.</p>'
         },
         'errorSessionExpired': {
             'pageHeader': 'Je sessie is verlopen',
