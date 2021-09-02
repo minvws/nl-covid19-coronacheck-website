@@ -29,7 +29,14 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    const pagesWithoutConsentNeeded = ['Home', 'VaccinationRedirect', 'NegativeTestRedirect', 'RecoveryRedirect']
+    const pagesWithoutConsentNeeded = [
+        'Home',
+        'VaccinationRedirect',
+        'NegativeTestRedirect',
+        'RecoveryRedirect',
+        'ErrorGeneral',
+        'ServerBusy'
+    ]
     // check for user consent, otherwise redirect to home (disabled for development)
     if (process.env.NODE_ENV !== 'development' && pagesWithoutConsentNeeded.indexOf(to.name) === -1 && !store.state.userConsent) {
         next({ name: 'Home' })
