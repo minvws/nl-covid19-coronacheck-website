@@ -51,13 +51,22 @@ export default {
                     const detailedCodeSessionExpired = 99708;
 
                     const hasErrorCode = (error, errorCode) => {
+                        if (error.response && error.response.data) {
+                            const cmsDecoded = cmsDecode(error.response.data.payload);
+                            if (cmsDecoded.code) {
+                                return cmsDecoded.code === errorCode;
+                            } else {
+                                return false;
+                            }
+                        }
+
                         return error && error.response && error.response.data && error.response.data &&
                             error.response.data.code && error.response.data.code === errorCode;
                     }
 
-                    if (hasErrorCode(detailedCodeNoBSN)) {
+                    if (hasErrorCode(error, detailedCodeNoBSN)) {
                         this.$router.push({ name: 'ErrorNoBsn' });
-                    } else if (hasErrorCode(detailedCodeSessionExpired)) {
+                    } else if (hasErrorCode(error, detailedCodeSessionExpired)) {
                         this.$router.push({ name: 'ErrorSessionExpired' });
                     } else {
                         handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' })
