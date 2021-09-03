@@ -9,6 +9,9 @@ import { handleRejection } from '@/tools/error-handler';
 export default {
     components: { Snackbar, Modal, Identity },
     computed: {
+        dataReady() {
+            return this.currentLanguage && this.$store.state.holderConfig && this.$store.state.testProviders.all.length > 0;
+        },
         displaySnackbar() {
             return this.$store.state.snackbar.visible
         },
@@ -102,7 +105,7 @@ export default {
 
 <template>
     <div
-        v-if="currentLanguage"
+        v-if="dataReady"
         id="app">
         <div
             :aria-hidden="modalIsActive ? 'true' : 'false'"
