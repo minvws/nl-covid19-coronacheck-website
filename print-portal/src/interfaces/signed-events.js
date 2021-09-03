@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { timeoutTime } from '@/data/constants'
 import store from '@/store'
 import { cmsDecode } from '@/tools/cms'
 
@@ -28,7 +29,8 @@ const getTokens = async (token) => {
         axios({
             method: 'post',
             url: window.config.accessTokens,
-            headers
+            headers,
+            timeout: timeoutTime
         }).then((response) => {
             resolve(response);
         }).catch((error) => {
@@ -88,7 +90,8 @@ const unomi = async (eventProvider, tokenSet, filter) => {
             method: 'post',
             headers: headers,
             url: eventProvider.unomi_url,
-            data: { filter: filter }
+            data: { filter: filter },
+            timeout: timeoutTime
         }).then((response) => {
             if (response.data && response.data.payload) {
                 const payload = cmsDecode(response.data.payload)
@@ -114,7 +117,8 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
             method: 'post',
             headers: headers,
             url: url,
-            data: { filter: filter }
+            data: { filter: filter },
+            timeout: timeoutTime
         }).then((response) => {
             resolve(response.data)
         }).catch((error) => {
