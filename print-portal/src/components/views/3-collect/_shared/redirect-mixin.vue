@@ -46,7 +46,6 @@ export default {
                         this.collectEvents(payload.tokens);
                     }
                 }).catch((error) => {
-                    console.dir(error);
                     const detailedCodeNoBSN = 99782;
                     const detailedCodeSessionExpired = 99708;
 
@@ -73,7 +72,6 @@ export default {
                     }
                 });
             }).catch((error) => {
-                console.dir(error);
                 // note: this is a custom error of the frontend library
                 // the digid backend also provides a error_desc
                 // but oidc-client removes this info from the custom error it returns
@@ -125,7 +123,6 @@ export default {
             });
         },
         analyseResult(results) {
-            console.log(results);
             if (results) {
                 const analysis = {
                     numberOfUnomi: 0,
@@ -156,7 +153,6 @@ export default {
                         }
                     }
                 }
-                console.log(analysis);
 
                 if (analysis.numberOfEventProvidersWithProofEvents > 0) {
                     if (analysis.numberOfErrors > 0) {
