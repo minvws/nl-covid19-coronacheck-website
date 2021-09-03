@@ -1,6 +1,7 @@
 import store from '@/store';
 import router from '@/router';
 import i18n from '@/i18n'
+import { cmsDecode } from './cms';
 
 export const hasInternetConnection = () => {
     return window.navigator.onLine;
@@ -37,8 +38,21 @@ export const getErrorCode = (error, errorCodeInformation) => {
     if (errorCodeInformation.errorBody) {
         errorBody = errorCodeInformation.errorBody;
     } else {
-        if (error.response && error.response.data && error.response.data.code) {
-            errorBody = error.response.data.code;
+        if (error.response && error.response.data) {
+            try {
+                const cmsDecoded = cmsDecode(error.response.data.payload)
+                if (cmsDecoded.code) {
+                    errorBody = cmsDecoded.code;
+                } else {
+                    errorBody = '';
+                }
+            } catch (e) {
+                if (error.response.data.code) {
+                    errorBody = error.response.data.code;
+                } else {
+                    errorBody = '';
+                }
+            }
         } else {
             errorBody = '';
         }

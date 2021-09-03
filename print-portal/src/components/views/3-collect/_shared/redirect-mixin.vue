@@ -46,33 +46,42 @@ export default {
                         this.collectEvents(payload.tokens);
                     }
                 }).catch((error) => {
-                    console.dir(error);
                     const detailedCodeNoBSN = 99782;
                     const detailedCodeSessionExpired = 99708;
 
                     const hasErrorCode = (error, errorCode) => {
+                        if (error.response && error.response.data) {
+                            const cmsDecoded = cmsDecode(error.response.data.payload);
+                            if (cmsDecoded.code) {
+                                return cmsDecoded.code === errorCode;
+                            } else {
+                                return false;
+                            }
+                        }
+
                         return error && error.response && error.response.data && error.response.data &&
                             error.response.data.code && error.response.data.code === errorCode;
                     }
 
-                    if (hasErrorCode(detailedCodeNoBSN)) {
+                    if (hasErrorCode(error, detailedCodeNoBSN)) {
                         this.$router.push({ name: 'ErrorNoBsn' });
-                    } else if (hasErrorCode(detailedCodeSessionExpired)) {
+                    } else if (hasErrorCode(error, detailedCodeSessionExpired)) {
                         this.$router.push({ name: 'ErrorSessionExpired' });
                     } else {
                         handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' })
                     }
                 });
             }).catch((error) => {
-                console.dir(error);
+                // note: this is a custom error of the frontend library
+                // the digid backend also provides a error_desc
+                // but oidc-client removes this info from the custom error it returns
+                // as well as the error.response.status
 
                 const isCanceled = (error) => {
                     return error && error.message && error.message === 'saml_authn_failed';
                 }
 
                 const isAppAuthError = (error) => {
-                    // note: the digid backend also provides a error_desc
-                    // but oidc-client removes this info from the custom error it returns
                     const options = [
                         'login_required',
                         'invalid_request',
@@ -114,7 +123,6 @@ export default {
             });
         },
         analyseResult(results) {
-            console.log(results);
             if (results) {
                 const analysis = {
                     numberOfUnomi: 0,
@@ -145,7 +153,6 @@ export default {
                         }
                     }
                 }
-                console.log(analysis);
 
                 if (analysis.numberOfEventProvidersWithProofEvents > 0) {
                     if (analysis.numberOfErrors > 0) {

@@ -147,10 +147,6 @@ const en = {
             'pageHeader': 'It\'s very busy at the moment',
             'pageIntro': '<p>Try again later today.</p>'
         },
-        'errorAccessTokens': {
-            'pageHeader': 'Sorry, something has gone wrong',
-            'pageIntro': '<p>Contact the help desk of CoronaCheck via 0800-1421 (free of charge) and give them the following error code:</p><p><strong>Error code: %{error}</strong></p>'
-        },
         'errorNoEvents': {
             'pageHeader': 'Sorry, your details were not retrieved',
             'pageIntro': '<p>Due to increased traffic or an outage at one of the involved parties, some details of your %{type} may be missing. </p><p>Tip: wait one hour and try again.</p>'
@@ -158,6 +154,18 @@ const en = {
         'errorTokenFlow': {
             'pageHeader': 'Sorry, something has gone wrong',
             'pageIntro': '<p>Something is going wrong at the test location. Therefore, your details can’t be retrieved.</p><h4>What now?</h4><p>Contact the test location and give them the following error code:</p><p><strong>Error code: %{error}</strong></p>'
+        },
+        'errorGeneral': {
+            'pageHeader': 'Sorry, something has gone wrong',
+            'pageIntro': '<p>Try again later or view the latest outages at <a href="https://status.coronacheck.nl/en/">https://status.coronacheck.nl/en/</a></p><p><strong>Error code(s)</strong><br>%{errors}</p>'
+        },
+        'errorNoBsn': {
+            'pageHeader': 'No social security number found',
+            'pageIntro': '<p>The healthcare provider who vaccinated or tested you can help you further. Contact them and let them know the CoronaCheck app couldn’t find a social security number.</p>'
+        },
+        'errorSessionExpired': {
+            'pageHeader': 'Your session has expired',
+            'pageIntro': '<p>You’ve waited too long. For safety reasons, you were logged out. Login again with your DigiDto retrieve your details.</p>'
         }
     },
     'components': {
@@ -238,7 +246,8 @@ const en = {
             'proofType': {
                 'negativetest': 'test result',
                 'vaccination': 'vaccinations',
-                'positivetest': 'test result'
+                'positivetest': 'test result',
+                'positivetest,recovery': 'test result'
             }
         }
     },
@@ -300,10 +309,6 @@ const en = {
                 'head': 'Sorry, there is an outage',
                 'body': '<p>Contact our helpdesk and give them error code (%{code}) or try again later.</p>'
             },
-            'serverBusy': {
-                'head': '',
-                'body': '<p>It\'s very busy at the moment. Try again later today.</p>'
-            },
             'someServerBusyButResult': {
                 'head': '',
                 'body': '<p>Details possibly incomplete. Due to a technical issue at one of our involved parties, details might be missing. Please try again later./p>'
@@ -328,17 +333,9 @@ const en = {
                 'head': 'You\'re not connected to the internet',
                 'body': 'Check your connection and try again.'
             },
-            'signerFailed': {
-                'head': 'Sorry, something went wrong',
-                'body': '<p>Contact our helpdesk and give them error code (print sign error) or try again later.</p>'
-            },
             'collectEventsWithErrors': {
                 'head': 'Are these all your vaccinations?',
                 'body': '<p>Due to increased traffic or an outage, some of your details may be missing. Are you missing a vaccination? Please come back later and retrieve your details again.</p>'
-            },
-            'errorAccessTokens': {
-                'head': 'Sorry, something went wrong',
-                'body': 'Try again later or view the latest outages at <a href="https://status.coronacheck.nl/en/">status.coronacheck.nl/en</a><br>(Error code: %{code})'
             }
         }
     },
