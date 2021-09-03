@@ -47,7 +47,11 @@ export const getErrorCode = (error, errorCodeInformation) => {
                     errorBody = '';
                 }
             } catch (e) {
-                errorBody = ''
+                if (error.response.data.code) {
+                    errorBody = error.response.data.code;
+                } else {
+                    errorBody = '';
+                }
             }
         } else {
             errorBody = '';
