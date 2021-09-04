@@ -25,7 +25,7 @@ CoronaCheck retrieves data about vaccinations from the systems of the RIVM and t
 
 You must be fully vaccinated to make a Dutch QR code. You are fully vaccinated from 14 days after the last vaccination. As soon as your vaccination has been properly registered, you can make a vaccination certificate. An international QR code can already be created after one vaccination.
 
-**Please note:** a QR code of 1 injection is not valid in all countries. Always check the travel advice on {{ site.data.links.wijsoprijs[page.lang] }} before departure. More information about vaccination certificates can be found on {{ site.data.links.vaccinatiebewijs[page.lang] }}.
+**Please note:** a QR code of 1 injection is not valid in all countries. Always check the travel advice on {{ site.data.links.wijsopreis[page.lang] }} before departure. More information about vaccination certificates can be found on {{ site.data.links.vaccinatiebewijs[page.lang] }}.
 
 </div>
 {% endcapture %}
@@ -159,7 +159,7 @@ Do you want to use a coronavirus pass for access to events and locations within 
 
 {% capture copy_testen_voor_je_reis %}
 <div markdown="1">
-Do you want to use a coronavirus pass to travel within Europe? You can visit {{ site.data.links.testenvoorjereis[page.lang] }}. Please note: each country determines its own entry rules. So always check {{ site.data.links.wijsoprijs[page.lang] }} before departure to avoid unpleasant surprises.
+Do you want to use a coronavirus pass to travel within Europe? You can visit {{ site.data.links.testenvoorjereis[page.lang] }}. Please note: each country determines its own entry rules. So always check {{ site.data.links.wijsopreis[page.lang] }} before departure to avoid unpleasant surprises.
 </div>
 {% endcapture %}
 
@@ -252,7 +252,7 @@ All information about getting a vaccination certificate if you do not have a BSN
 
 {% capture copy_travelquestions %}
 <div markdown="1">
-Are you going on a trip soon? Before departure, always check the applicable entry rules for your destination at {{ site.data.links.wijsoprijs[page.lang] }}. You can now make your test appointment (for free) at {{ site.data.links.testenvoorjereis[page.lang] }}.
+Are you going on a trip soon? Before departure, always check the applicable entry rules for your destination at {{ site.data.links.wijsopreis[page.lang] }}. You can now make your test appointment (for free) at {{ site.data.links.testenvoorjereis[page.lang] }}.
 
 For other questions, you can contact the Ministry of Foreign Affairs (BZ). <a href="https://www.netherlandsworldwide.nl/contact/contacting-the-24-7-bz-contact-centre" rel="noopener noreferrer" target="_blank">Contact the BZ contact center</a> - available 24 hours a day, 7 days a week.
 </div>

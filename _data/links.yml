@@ -35,7 +35,7 @@ phone-tvjr-helpdesk:
 
 # Websites and their English equivalent
 
-wijsoprijs:
+wijsopreis:
   nl: '<a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">Wijs op Reis</a>'
   en: '<a href="https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Travelling outside the Netherlands</a>'
 
@@ -93,4 +93,4 @@ wetransfer-toolkit:
 
 aansluiting-apps:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank">Aansluiting op CoronaCheck voor apps</a>'
-  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Aansluiting op CoronaCheck voor apps</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Connecting apps to CoronaCheck (Dutch)</a>'
