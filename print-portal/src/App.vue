@@ -109,6 +109,13 @@ export default {
     },
     mounted() {
         this.init();
+    },
+    watch: {
+        currentRoute() {
+            if (!this.dataReady) {
+                this.init();
+            }
+        }
     }
 }
 </script>
