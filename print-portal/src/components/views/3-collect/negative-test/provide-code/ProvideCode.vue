@@ -42,7 +42,7 @@ export default {
                 this.checkPrefixLength &&
                 this.checkIfHasTestProvider &&
                 this.checkSuffixLength &&
-                this.checkCheckSumIsValid;
+                (this.luhnCheckIsEnabled && this.checkCheckSumIsValid);
         },
         isVerificationCodeValid() {
             return this.checkIfIsCorrectLength && this.checkIfIsOnlyNumber;
@@ -91,6 +91,9 @@ export default {
         },
         luhn() {
             return this.token ? luhnModN.generateCheckCharacter(this.token.toUpperCase()) : '';
+        },
+        luhnCheckIsEnabled() {
+            return this.$store.state.holderConfig.luhnCheckEnabled;
         }
     },
     methods: {
