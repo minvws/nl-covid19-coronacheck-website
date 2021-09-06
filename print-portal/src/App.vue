@@ -128,7 +128,6 @@ export default {
     <div
         v-if="dataReady || initPhaseHasErrored"
         id="app">
-        {{currentRoute}}
         <div
             :aria-hidden="modalIsActive ? 'true' : 'false'"
             class="content">
