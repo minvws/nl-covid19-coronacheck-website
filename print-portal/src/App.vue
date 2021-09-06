@@ -8,6 +8,11 @@ import { handleRejection } from '@/tools/error-handler';
 
 export default {
     components: { Snackbar, Modal, Identity },
+    data() {
+        return {
+            initPhaseHasErrored: false
+        }
+    },
     computed: {
         dataReady() {
             return this.currentLanguage && this.$store.state.holderConfig && this.$store.state.testProviders.all.length > 0;
@@ -20,6 +25,9 @@ export default {
         },
         modalIsActive() {
             return this.displayModal || this.$store.state.slotModalActive;
+        },
+        currentRoute() {
+            return this.$route.name
         }
     },
     methods: {
@@ -40,6 +48,7 @@ export default {
                     this.$store.commit('setHolderConfig', holderConfig);
                 }
             }).catch((error) => {
+                this.initPhaseHasErrored = true;
                 handleRejection(error, { flow: 'startup', step: '10', provider_identifier: '000' });
             })
         },
@@ -60,6 +69,7 @@ export default {
                     });
                 }
             }).catch((error) => {
+                this.initPhaseHasErrored = true;
                 handleRejection(error, { flow: 'startup', step: '20', provider_identifier: '000' });
             })
         },
@@ -105,8 +115,9 @@ export default {
 
 <template>
     <div
-        v-if="dataReady"
+        v-if="dataReady || initPhaseHasErrored"
         id="app">
+        {{currentRoute}}
         <div
             :aria-hidden="modalIsActive ? 'true' : 'false'"
             class="content">
