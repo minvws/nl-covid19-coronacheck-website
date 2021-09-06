@@ -114,7 +114,9 @@ export default {
     },
     watch: {
         currentRoute() {
-            if (!this.dataReady) {
+            // When coming back from the error page after the init phase (config or config_providers) failed
+            // we have to try the config again
+            if (!this.dataReady && this.currentRoute !== 'ErrorGeneral') {
                 this.init();
             }
         }
