@@ -10,7 +10,8 @@ export default {
     components: { Snackbar, Modal, Identity },
     data() {
         return {
-            initPhaseHasErrored: false
+            initPhaseHasErrored: false,
+            timer: null
         }
     },
     computed: {
@@ -96,7 +97,8 @@ export default {
         setTimerToEndSession() {
             const hours = 24;
             const time = hours * 3600000
-            setTimeout(() => {
+            clearTimeout(this.timer);
+            this.timer = setTimeout(() => {
                 this.$router.push({ name: 'Home' })
                 this.$store.commit('sessionEnded')
                 this.$store.commit('modal/set', {
