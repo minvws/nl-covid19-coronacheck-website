@@ -303,7 +303,7 @@ const en = {
             },
             'areYouSureToCancel': {
                 'head': 'Are you sure you want to stop?',
-                'body': 'Then you need to log in again later using DigiD to retrieve your %{type}.',
+                'body': 'You will then have to retrieve your data later again.',
                 'yes': 'Yes, stop',
                 'no': 'No, continue'
             },

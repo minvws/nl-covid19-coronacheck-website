@@ -288,11 +288,11 @@ const nl = {
                 },
                 'negativetest': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie om je gegevens te laten aanpassen.</p>'
+                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie om de gegevens te laten aanpassen.</p>'
                 },
                 'positivetest': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie om je gegevens te laten aanpassen.'
+                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie om de gegevens te laten aanpassen.'
                 }
             },
             'noVerificationCode': {
@@ -305,7 +305,7 @@ const nl = {
             },
             'areYouSureToCancel': {
                 'head': 'Weet je zeker dat je wilt stoppen?',
-                'body': 'Je moet dan later opnieuw met DigiD inloggen om je %{type} op te halen.',
+                'body': 'Je moet dan later opnieuw je gegevens ophalen.',
                 'yes': 'Ja, stop',
                 'no': 'Nee, ga door'
             },
