@@ -123,7 +123,7 @@ export default {
                 this.verificationCodeStatus.error = this.$t('views.provideCode.emptyVerificationCode');
             }
         },
-        addNegativeTestV2(signedEvent) {
+        addNegativeTest(signedEvent) {
             this.testCodeStatus.error = '';
             this.$store.commit('signedEvents/createAll', [signedEvent]);
             this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0' } });
@@ -153,9 +153,17 @@ export default {
                     if (response.data && response.data.payload) {
                         try {
                             const payload = cmsDecode(response.data.payload);
+                            console.log(payload);
+                            const hasEvents = (payload) => {
+                                if (payload.protocolVersion === '3.0') {
+                                    return payload.events && payload.events.length > 0;
+                                } else {
+                                    return payload.result;
+                                }
+                            }
                             if (payload.status === 'complete') {
-                                if (payload.events && payload.events.length > 0) {
-                                    this.addNegativeTestV2(response.data)
+                                if (hasEvents(payload)) {
+                                    this.addNegativeTest(response.data)
                                 } else {
                                     this.$store.commit('clearAll');
                                     this.$router.push({ name: 'TestResultNone' })
