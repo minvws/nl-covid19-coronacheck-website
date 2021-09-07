@@ -127,11 +127,27 @@ const en = {
         'printVaccination': {
             'both': {
                 'pageHeader': 'Print your certificates',
-                'pageIntro': '<h4>Your certificates</h4><p>You\'ve made a vaccination certificate, in the form of a QR code. You\'ve got a code for the Netherlands and one for other countries.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">This is what\'s in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p><p>Please note: this paper certificate is valid for 1 year. After that, you can make a new paper certificate of your vaccination.</p>'
+                'pageIntro': '<p><strong>Successful! A PDF of your vaccination certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
+                    '<h4>QR code for the Netherlands and abroad</h4>' +
+                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>Before leaving, please check which certificate you need.<br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
+                    '<h4>What now?</h4>' +
+                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting. Or to the country you’re traveling to.</p>' +
+                    '<p>Please note: this paper certificate is valid for 1 year. After that, you can make a new vaccination certificate.</p>'
             },
             'european': {
-                'pageHeader': 'Print your vaccination certificate',
-                'pageIntro': '<h4>Your certificate</h4><p>You\'ve made a vaccination certificate in the form of a QR code. You\'ve only got an international certificate. This could be because you\'ve only had one of your vaccinations yet. Try making a Dutch certificate again when you’re fully vaccinated.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Read what is in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p><p>Please note: this paper certificate is valid for 1 year. After that, you can make a new paper certificate of your vaccination.</p>'
+                'pageHeader': 'Print your international certificate',
+                'pageIntro': '<p><strong>Successful! A PDF of your recovery vaccination has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
+                    '<h4>QR code for abroad</h4>' +
+                    '<p>In the PDF you will only find an international QR code. You can use this if you are abroad or cross the border, but not in the Netherlands.</p>' +
+                    '<p>You may not have received a Dutch QR code because you only had one injection. Add your second vaccination to make proof that is also valid in the Netherlands. ' +
+                    '<a href="https://coronacheck.nl/en/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Read more about the possible causes here</a>.</p>' +
+                    '<p>Before leaving, please check which certificate you need.<br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
+                    '<h4>What now?</h4>' +
+                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting. Or to the country you’re traveling to.</p>' +
+                    '<p>Please note: this paper certificate is valid for 1 year. After that, you can make a new vaccination certificate.</p>'
             }
             // domestic only is a non existing scenario for vaccination
         },
