@@ -112,16 +112,39 @@ const nl = {
         },
         'printNegativeTest': {
             'both': {
-                'pageHeader': 'Print jouw bewijzen',
-                'pageIntro': '<h4>Jouw bewijzen</h4><p>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een QR-code voor als je internationaal reist.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+                'pageHeader': 'Print jouw testbewijs',
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw testbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<h4>QR-code voor Nederland en internationaal</h4>' +
+                    '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
+                    '<h4>Geldigheid verschilt per land</h4>' +
+                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>' +
+                    '<p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
             },
             'european': {
                 'pageHeader': 'Print jouw internationale testbewijs',
-                'pageIntro': '<h4>Jouw bewijs</h4><p>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Er is geen Nederlands bewijs gemaakt omdat het type test niet voldoet, of omdat het testbewijs al verlopen is in Nederland.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar het land waar je heen reist.</p>'
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw testbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<h4>Alleen een internationale QR-code</h4>' +
+                    '<p>In de PDF vind je alleen een internationale QR-code. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p>' +
+                    '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.</p>' +
+                    '<h4>Geldigheid verschilt per land</h4>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming.<br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>' +
+                    '<p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
             },
             'domestic': {
                 'pageHeader': 'Print jouw Nederlandse testbewijs',
-                'pageIntro': '<h4>Jouw bewijs</h4><p>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Deze is binnen Nederland geldig, maar internationaal niet.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt.</p>'
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw testbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<h4>Alleen een Nederlandse QR-code </h4>' +
+                    '<p>In de PDF vind je alleen een Nederlandse QR-code. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet om de grens over te gaan of in het buitenland.</p>' +
+                    '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat het type test niet geaccepteerd wordt in andere landen. Laat je opnieuw testen voor een bewijs dat ook internationaal geldig is.</p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>' +
+                    '<p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je herstelbewijs.</p>'
             }
         },
         'printVaccination': {
