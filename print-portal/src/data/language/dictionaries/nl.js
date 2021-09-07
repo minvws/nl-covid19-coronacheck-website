@@ -90,8 +90,8 @@ const nl = {
             'pageIntro': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.'
         },
         'testResultNone': {
-            'pageHeader': 'Geen negatieve testuitslag',
-            'pageIntro': 'Er is geen negatieve testuitslag beschikbaar.'
+            'pageHeader': 'Geen testuitslag beschikbaar',
+            'pageIntro': '<p>Er zijn geen gegevens over je testuitslag beschikbaar. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op <a href="https://coronacheck.nl/nl/wegwijzer.html" target="_blank" rel="noopener noreferrer">de Wegwijzer</a>.</p><p>Heb je al een testuitslag van de GGD gekregen? Dan kan het nog een paar uur duren voordat je de uitslag hier kunt ophalen. Probeer het later opnieuw.</p>'
         },
         'recoveryOverview': {
             'pageHeader': 'Jouw positieve testuitslag',
