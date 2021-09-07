@@ -81,10 +81,6 @@ const en = {
             'createTestProofButton': 'Make QR code',
             'retrievedTestResult': 'Retrieved test result'
         },
-        'negativeTestNotPossible': {
-            'pageHeader': 'We can’t make a certificate',
-            'pageIntro': '<p>At the moment, we cannot provide proof of your test result. This can have different causes. You can find more information about what to do on the <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
-        },
         'testResultPending': {
             'pageHeader': 'Test result not yet known',
             'pageIntro': 'Please try again later.<br>If you have any questions, contact your test location.'
@@ -100,10 +96,6 @@ const en = {
         'recoveryNone': {
             'pageHeader': 'No positive test result available',
             'pageIntro': '<p>There is no positive test result available.<p><p>Got tested recently? It can take a few hours until your details are available. Try again later.</p><p>Have you been tested more than 180 days ago? Then your test result is no longer valid. In this case, you cannot create a recovery certificate.</p>'
-        },
-        'recoveryNotPossible': {
-            'pageHeader': 'We can\'t make a certificate',
-            'pageIntro': 'At this moment, we can\'t make a certificate from your positive test result. This can have various causes. Read more <a href="https://coronacheck.nl/en/wegwijzer.html" target="_blank" rel="noopener noreferrer">here</a>.'
         },
         'print': {
             'openPDF': 'Open PDF'
@@ -166,6 +158,10 @@ const en = {
         'errorSessionExpired': {
             'pageHeader': 'Your session has expired',
             'pageIntro': '<p>You’ve waited too long. For safety reasons, you were logged out. Login again with your DigiDto retrieve your details.</p>'
+        },
+        'errorProofNotPossible': {
+            'pageHeader': 'We can’t make a certificate',
+            'pageIntro': '<p>At the moment, we cannot provide proof for you. This can have different causes. You can find more information about what to do on the <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
         }
     },
     'components': {

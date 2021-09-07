@@ -15,8 +15,7 @@ export default {
         return {
             filter: 'vaccination',
             pages: {
-                print: 'PrintVaccination',
-                noResultFromSigner: 'VaccinationsNotPossible'
+                print: 'PrintVaccination'
             }
         }
     },

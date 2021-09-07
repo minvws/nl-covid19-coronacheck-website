@@ -58,7 +58,7 @@ export default {
                             this.$store.commit('qrs/add', response.data);
                             this.$router.push({ name: this.pages.print });
                         } else {
-                            this.$router.push({ name: this.pages.noResultFromSigner });
+                            this.$router.push({ name: 'ErrorProofNotPossible' });
                         }
                         this.setSignedAt(response);
                     }

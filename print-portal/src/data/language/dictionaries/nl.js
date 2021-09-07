@@ -81,10 +81,6 @@ const nl = {
             'createTestProofButton': 'Maak QR-code',
             'retrievedTestResult': 'Opgehaalde testuitslag'
         },
-        'negativeTestNotPossible': {
-            'pageHeader': 'We kunnen geen bewijs maken',
-            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken van jouw testuitslag. Dit kan verschillende oorzaken hebben. <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">Meer informatie over mogelijke oorzaken</a>.</p>'
-        },
         'testResultPending': {
             'pageHeader': 'Testuitslag nog niet bekend',
             'pageIntro': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.'
@@ -100,10 +96,6 @@ const nl = {
         'recoveryNone': {
             'pageHeader': 'Geen positieve testuitslag beschikbaar',
             'pageIntro': '<p>Er is geen positieve testuitslag beschikbaar.</p><p>Ben je net getest? Het kan een paar uur duren voordat je positieve test verwerkt is. Probeer het later nog eens.</p><p>Is het langer dan %{days} dagen geleden dat je getest bent? Dan is je testuitslag niet meer geldig. Je kunt dan ook geen herstelbewijs maken.</p>'
-        },
-        'recoveryNotPossible': {
-            'pageHeader': 'We kunnen geen bewijs maken',
-            'pageIntro': 'Op dit moment kunnen we geen bewijs maken van jouw positieve test. Dit kan verschillende oorzaken hebben. Lees <a href="https://coronacheck.nl/nl/wegwijzer.html" target="_blank" rel="noopener noreferrer">hier</a> meer.'
         },
         'print': {
             'openPDF': 'Open PDF'
@@ -166,6 +158,10 @@ const nl = {
         'errorSessionExpired': {
             'pageHeader': 'Je sessie is verlopen',
             'pageIntro': '<p>Je hebt te lang gewacht. Voor de veiligheid ben je daarom uitgelogd. Log opnieuw in met DigiD om je gegevens op te halen.</p>'
+        },
+        'errorProofNotPossible': {
+            'pageHeader': 'We kunnen geen bewijs maken',
+            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">de Wegwijzer</a>.</p>'
         }
     },
     'components': {
