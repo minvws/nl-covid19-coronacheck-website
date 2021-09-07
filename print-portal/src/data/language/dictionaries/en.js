@@ -297,10 +297,6 @@ const en = {
             }
         },
         'error': {
-            'expiredTestCode': {
-                'head': 'Your QR code has expired',
-                'body': '<p>The code you\'ve entered is invalid. Please check it again. Need a new QR code? Get tested again.</p>'
-            },
             'general': {
                 'head': 'Sorry, something went wrong',
                 'body': '<p>Because of a technical error. Contact the CoronaCheck helpdesk.</p>'

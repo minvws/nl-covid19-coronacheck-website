@@ -297,10 +297,6 @@ const nl = {
             }
         },
         'error': {
-            'expiredTestCode': {
-                'head': 'De ophaalcode is verlopen',
-                'body': '<p>De code die je invult is niet meer geldig. Controleer of je de juiste code hebt ingevuld. Nieuwe code nodig? Laat je dan opnieuw testen.</p>'
-            },
             'general': {
                 'head': 'Sorry, er gaat iets mis',
                 'body': '<p>Neem contact op met de helpdesk van CoronaCheck.</p>'
