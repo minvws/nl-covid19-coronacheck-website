@@ -68,10 +68,10 @@ const nl = {
             'sendAgain': 'Verstuur opnieuw',
             'didNotGetCode': 'Ik heb geen code gekregen',
             'emptyTestCode': 'Ophaalcode niet ingevuld',
-            'unknownTestProvider': 'Ophaalcode is van een onbekende testlocatie',
+            'unknownTestProvider': 'De testlocatie is ons niet bekend. Neem contact op met de locatie waar je getest bent.',
             'invalidTestCode': 'Geen geldige ophaalcode',
             'tokenExpired': 'Ophaalcode is niet meer geldig',
-            'invalidVerificationCode': 'Geen geldige combinatie van ophaalcode en verificatiecode',
+            'invalidVerificationCode': 'Geen geldige verificatiecode',
             'emptyVerificationCode': 'Verificatiecode niet ingevuld',
             'sendCode': 'Stuur code'
         },
