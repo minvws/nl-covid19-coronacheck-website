@@ -266,15 +266,15 @@ const nl = {
             'somethingWrong': {
                 'vaccination': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen je gegevens niet? Of mist er een vaccinatie? Op de <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a> vind je meer informatie over wat te doen.</p><p>Mist er een prik? Neem contact op met de locatie waar je bent gevaccineerd.</p>'
+                    'body': '<p>Kloppen er gegevens niet? Neem dan contact op met de zorgverlener waar je bent gevaccineerd. Zij kunnen je gegevens aanpassen.</p>'
                 },
                 'negativetest': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je gegevens te laten aanpassen.</p>'
+                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie om je gegevens te laten aanpassen.</p>'
                 },
                 'positivetest': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je gegevens te laten aanpassen.'
+                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie om je gegevens te laten aanpassen.'
                 }
             },
             'noVerificationCode': {
