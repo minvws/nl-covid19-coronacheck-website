@@ -161,7 +161,7 @@ const en = {
         },
         'errorNoBsn': {
             'pageHeader': 'No social security number found',
-            'pageIntro': '<p>The healthcare provider who vaccinated or tested you can help you further. Contact them and let them know the CoronaCheck app couldn’t find a social security number.</p>'
+            'pageIntro': '<p>The healthcare provider who vaccinated or tested you can help you further. Contact them and let them know CoronaCheck couldn’t find a social security number.</p>'
         },
         'errorSessionExpired': {
             'pageHeader': 'Your session has expired',
