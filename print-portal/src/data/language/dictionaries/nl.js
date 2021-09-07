@@ -305,30 +305,6 @@ const nl = {
                 'head': 'Sorry, er gaat iets mis',
                 'body': '<p>Neem contact op met de helpdesk van CoronaCheck.</p>'
             },
-            'generalWithError': {
-                'head': 'Sorry, er is een storing',
-                'body': '<p>Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (%{code}) door. Of probeer het later opnieuw.</p>'
-            },
-            'someServerBusyButResult': {
-                'head': '',
-                'body': '<p>Gegevens mogelijk niet compleet. Door drukte of een storing bij een van de partijen kunnen er gegevens ontbreken. Probeer het eventueel later nog een keer.</p>'
-            },
-            'someServerBusyNoResult': {
-                'head': 'Sorry, het is erg druk',
-                'body': '<p>Je vaccinaties konden niet worden opgehaald omdat het te druk is. Probeer het op een later moment nog eens.</p>'
-            },
-            'someServerErrorButResult': {
-                'head': '',
-                'body': '<p>Mogelijk zijn niet alle vaccinaties opgehaald omdat er iets fout ging bij bepaalde providers. Indien je vaccinaties mist, probeer het dan nog eens.</p>'
-            },
-            'someServerErrorNoResult': {
-                'head': '',
-                'body': '<p>Je vaccinaties konden niet worden opgehaald omdat er iets fout ging bij bepaalde providers. Probeer het nog eens</p>'
-            },
-            'parseErrorInResult': {
-                'head': '',
-                'body': '<p>Er ging iets mis, resultaat kon niet worden gelezen. Neem contact op met je event provider. (Code: x)</p>'
-            },
             'noInternet': {
                 'head': 'Je hebt geen internet',
                 'body': 'Controleer je verbinding en probeer het opnieuw.'
