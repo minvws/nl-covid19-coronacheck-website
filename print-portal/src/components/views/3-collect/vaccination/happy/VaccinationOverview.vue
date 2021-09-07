@@ -6,10 +6,11 @@ import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import dateTool from '@/tools/date';
+import LoadingCover from '@/components/elements/LoadingCover';
 
 export default {
     name: 'VaccinationOverview',
-    components: { Page, PageIntro, Vaccination, CcButton, CcModestButton },
+    components: { LoadingCover, Page, PageIntro, Vaccination, CcButton, CcModestButton },
     mixins: [overviewMixin],
     data() {
         return {
@@ -106,6 +107,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <LoadingCover v-if="proofSubmitted"/>
         </div>
     </Page>
 </template>

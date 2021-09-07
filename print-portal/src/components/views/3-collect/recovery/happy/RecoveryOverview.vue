@@ -6,10 +6,11 @@ import PositiveTest from './PositiveTest';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
+import LoadingCover from '@/components/elements/LoadingCover';
 
 export default {
     name: 'RecoveryOverview',
-    components: { PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton },
+    components: { LoadingCover, PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton },
     mixins: [overviewMixin],
     data() {
         return {
@@ -58,6 +59,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <LoadingCover v-if="proofSubmitted"/>
         </div>
     </Page>
 </template>
