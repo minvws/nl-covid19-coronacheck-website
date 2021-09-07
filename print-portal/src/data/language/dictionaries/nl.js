@@ -49,7 +49,7 @@ const nl = {
         },
         'vaccinationOverview': {
             'pageHeader': 'Jouw opgehaalde vaccinaties',
-            'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>',
+            'pageIntro': '<p>Met de gegevens die zijn opgehaald kun je een QR-code maken. Dat is jouw bewijs.</p>',
             'createTestProofButton': 'Maak bewijs'
         },
         'vaccinationsNone': {

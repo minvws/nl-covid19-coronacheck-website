@@ -50,7 +50,7 @@ const en = {
         'vaccinationOverview': {
             'pageHeader': 'Your retrieved vaccinations',
             'pageIntro': '<p>You can make a QR code of your vaccination. This will be your certificate.</p>',
-            'createTestProofButton': 'Make QR code'
+            'createTestProofButton': 'Make certificate'
         },
         'vaccinationsNone': {
             'pageHeader': 'No vaccination(s) available',
@@ -87,7 +87,7 @@ const en = {
         'negativeTestOverview': {
             'pageHeader': 'Check your test result',
             'pageIntro': '<p>This test result is retrieved from the test location.</p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.</p>',
-            'createTestProofButton': 'Make QR code',
+            'createTestProofButton': 'Make certificate',
             'retrievedTestResult': 'Retrieved test result'
         },
         'testResultPending': {
@@ -100,7 +100,8 @@ const en = {
         },
         'recoveryOverview': {
             'pageHeader': 'Your retrieved positive test result',
-            'pageIntro': '<p>Are your details correct? Then you can turn your positive test result into a QR code. This is your certificate.</p>'
+            'pageIntro': '<p>Are your details correct? Then you can turn your positive test result into a QR code. This is your certificate.</p>',
+            'createTestProofButton': 'Make certificate'
         },
         'recoveryNone': {
             'pageHeader': 'No positive test result available',
