@@ -38,8 +38,8 @@ export default {
             this.isLoading = true;
 
             this.authVaccinations.completeAuthentication().then((user) => {
-                this.notifyDigidFinished();
                 signedEventsInterface.getTokens(user.id_token).then(response => {
+                    this.notifyDigidFinished();
                     if (response.data && response.data.payload) {
                         const payload = cmsDecode(response.data.payload);
                         this.collectEvents(payload.tokens);
