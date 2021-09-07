@@ -260,11 +260,11 @@ const nl = {
                 },
                 'negativetest': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.</p>'
+                    'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je gegevens te laten aanpassen.</p>'
                 },
                 'positivetest': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.'
+                    'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je gegevens te laten aanpassen.'
                 }
             },
             'noVerificationCode': {
