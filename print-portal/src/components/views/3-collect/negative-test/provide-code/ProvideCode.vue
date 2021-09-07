@@ -176,12 +176,12 @@ export default {
                         const errorCause = this.getCauseOfError(error)
                         switch (errorCause) {
                         case 'invalid_token':
-                            this.testCodeStatus.error = this.$t('views.provideCode.tokenExpired');
+                            this.testCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
                             break;
                         case 'verification_required':
                             this.$store.commit('setVerificationNeeded', true);
                             this.testCodeStatus.error = '';
-                            if (options.includeVerificationCode) {
+                            if (options.includeVerificationCode || errorCause === 'invalid_token') {
                                 this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
                             }
                             break;
