@@ -36,7 +36,7 @@ const nl = {
         },
         'choiceTestLocation': {
             'pageHeader': 'Waar ben je getest?',
-            'pageIntro': '<p>Geef aan of je bij de GGD of bij een andere testlocatie getest bent.</p>',
+            'pageIntro': '<p>Blijkt uit de test dat je geen corona hebt? Dan kan je van de testuitslag een QR-code maken. Geef aan waar je getest bent.</p>',
             'choiceGGDHead': 'GGD',
             'choiceGGDBody': 'Login met DigiD',
             'loginDigid': 'Ik heb geen DigiD',
@@ -70,7 +70,7 @@ const nl = {
         },
         'provideCode': {
             'pageHeader': 'Testuitslag ophalen',
-            'pageIntro': 'Vul jouw ophaalcode in. Deze heb je van de testlocatie gekregen. Of klik op de link in de e-mail die je van je testlocatie krijgt.',
+            'pageIntro': 'Vul jouw ophaalcode in. Deze heb je van je testlocatie gekregen.',
             'uniqueCode': 'Ophaalcode',
             'verificationCode': 'Verificatiecode',
             'verificationCodeDirection': 'Je krijgt een code in een sms of e-mail',
@@ -86,7 +86,7 @@ const nl = {
         },
         'negativeTestOverview': {
             'pageHeader': 'Controleer je testuitslag',
-            'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
+            'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie. Kloppen de gegevens? Dan kun je een QR-code maken van je testuitslag. Dat is jouw bewijs.</p>',
             'createTestProofButton': 'Maak bewijs',
             'retrievedTestResult': 'Opgehaalde testuitslag'
         },
@@ -316,7 +316,8 @@ const nl = {
             },
             'didNotGetTestedYet': {
                 'head': 'Ik ben nog niet getest',
-                'body': '<p>Je moet je eerst laten testen voordat je een QR-code kan maken. Als uit de test blijkt dat je geen corona hebt kan je jouw QR-code maken.</p><p>Een testbewijs is geldig tot 24 uur na het moment van testen. Plan je test dus op tijd. En zorg dat jouw QR-code binnen 24 uur gescand is bij de ingang.</p><p><a href="https://coronacheck.nl/nl/testafspraak-in-app" class="btn" target="_blank" rel="noopener noreferrer">Maak een afspraak</a></p>'
+                'body': '<p>Voor een testbewijs moet je eerst een test doen. Blijkt uit de test dat je geen corona hebt? Dan kan je jouw QR-code maken.</p>' +
+                    '<p><a href="https://coronacheck.nl/nl/testafspraak-in-app" class="btn" target="_blank" rel="noopener noreferrer">Maak een afspraak</a></p>'
             },
             'areYouSureToCancel': {
                 'head': 'Weet je zeker dat je wilt stoppen?',
