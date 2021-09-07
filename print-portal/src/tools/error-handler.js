@@ -33,7 +33,7 @@ export const getErrorCode = (error, errorCodeInformation) => {
     if (errorCodeInformation.parsingError) {
         errorCode = '030';
     } else {
-        errorCode = (error.response && error.response.status) ? error.response && error.response.status : '-';
+        errorCode = (error.response && error.response.status) ? error.response && error.response.status : '';
     }
     if (errorCodeInformation.errorBody) {
         errorBody = errorCodeInformation.errorBody;
