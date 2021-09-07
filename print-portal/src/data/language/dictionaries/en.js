@@ -26,7 +26,7 @@ const en = {
         },
         'choiceProof': {
             'pageHeader': 'What certificate do you want to make?',
-            'pageIntro': '<p>Indicate what kind of certificate you would like to make</p>',
+            'pageIntro': '',
             'choiceTestHeader': 'A test certificate',
             'choiceTestBody': 'The test proves I do not have coronavirus',
             'choiceRecoveryHeader': 'A recovery certificate',
