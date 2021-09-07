@@ -10,7 +10,16 @@ const en = {
     'views': {
         'home': {
             'pageHeader': 'Get access with a certificate on paper',
-            'pageIntro': '<h2 class="screen-reader-text">Here\'s how it works</h2><p>A certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p><div class="home__section"><h3>Only access with a certificate</h3><p>Your and other people’s health matters. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass. You can make a coronavirus pass if you have been vaccinated, if a test result confirms you don’t have corona or if you\'ve had coronavirus and are recovered.</p></div><div class="home__section"><h3>QR code = your proof</h3><p>You can make a QR code of your test result or vaccination. That is your certificate. This QR code will be checked at the entrance of places or activities, or at the border.</p></div><div class="home__section"><h3>QR codes for the Netherlands and international</h3><p>You’ll get one QR code for the Netherlands and one for other countries. Travelling outside of the Netherlands? Then use your international QR code.</p></div>',
+            'pageIntro': '<h2 class="screen-reader-text">Here\'s how it works</h2>' +
+                '<p>Your and other people’s health matters. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass.</p>' +
+                '<p>A certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p>' +
+                '<h4>Certificate of test or vaccination</h4>' +
+                '<p>You can make a coronavirus pass with CoronaCheck if:' +
+                '<ul><li>you have been vaccinated</li><li>a test result confirms you don’t have corona</li><li>you\'ve had coronavirus and are recovered</li></ul></p>' +
+                '<h4>QR code = your proof</h4>' +
+                '<p>CoronaCheck generates a QR code with your vaccination, test result or recovery. That is your certificate. This QR code will be checked before you get access.</p>' +
+                '<h4>QR-codes for the Netherlands and international</h4>' +
+                '<p>This app generates a QR code for the Netherlands and one for other countries. Travelling outside of the Netherlands? Then use your international QR code.</p>',
             'userConsentHeader': 'Start making a certificate on paper',
             'userConsentText': 'I have read the <a href="https://coronacheck.nl/en/privacy" target="_blank" rel="noopener noreferrer">privacy statement</a> and understand how CoronaCheck processes my data.',
             'noConsentError': 'Give consent to the privacy statement first'

@@ -10,7 +10,16 @@ const nl = {
     'views': {
         'home': {
             'pageHeader': 'Krijg toegang met een papieren bewijs',
-            'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2><p>Een bewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><div class="home__section"><h3>Alleen toegang met een bewijs</h3><p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang. Je kan een coronabewijs maken als je bent gevaccineerd, als uit een test blijkt dat je geen corona hebt of als je corona hebt gehad en bent hersteld.</p></div><div class="home__section"><h3>QR-code = jouw bewijs</h3><p>Van jouw testuitslag of vaccinatie wordt een QR-code gemaakt. Dat is jouw bewijs. De QR-code wordt gecheckt bij de ingang van plekken en activiteiten. Of aan de grens.</p></div><div class="home__section"><h3>QR-codes voor Nederland en internationaal</h3><p>Je krijgt twee QR-codes: één voor Nederland en één voor internationaal. Reis je buiten Nederland? Gebruik dan je internationale QR-code.</p></div>',
+            'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2>' +
+                '<p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijgt je toegang.</p>' +
+                '<p>Een bewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p>' +
+                '<h4>Bewijs van test of vaccinatie</h4>' +
+                '<p>Je kan een coronabewijs maken met CoronaCheck als:' +
+                '<ul><li>Je bent gevaccineerd</li><li>Uit een test blijkt dat je geen corona had</li><li>Uit een test blijkt dat je corona hebt gehad en bent hersteld</li></ul></p>' +
+                '<h4>QR-code = jouw bewijs</h4>' +
+                '<p>CoronaCheck maakt van jouw vaccinatie of testuitslag een QR-code. Dat is jouw bewijs. De QR-code wordt gecheckt voordat je toegang krijgt.</p>' +
+                '<h4>QR-codes voor Nederland en internationaal</h4>' +
+                '<p>CoronaCheck maakt twee QR-codes: één voor Nederland en een internationale. Ben je in het buitenland of ga je de grens over? Gebruik dan altijd de internationale QR-code </p>',
             'userConsentHeader': 'Maak een papieren bewijs',
             'userConsentText': 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank" rel="noopener noreferrer">privacyverklaring</a> gelezen en begrijp hoe CoronaCheck mijn gegevens gebruikt',
             'noConsentError': 'Ga eerst akkoord met de privacyverklaring'
