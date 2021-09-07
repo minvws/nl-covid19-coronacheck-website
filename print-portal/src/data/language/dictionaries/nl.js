@@ -44,8 +44,8 @@ const nl = {
             'didNotGetTestedYet': 'Ik ben nog niet getest'
         },
         'collectVaccination': {
-            'pageHeader': 'Vaccinatie ophalen',
-            'pageIntro': '<p>Ben je al gevaccineerd? Log in met DigiD. De gegevens van je vaccinatie worden dan automatisch opgehaald.</p><p>Nog geen prik gehad? Laat je dan eerst vaccineren.</p>'
+            'pageHeader': 'Gegevens van je vaccinatie ophalen',
+            'pageIntro': '<p>Ben je al gevaccineerd? Log in met DigiD. De gegevens van je vaccinatie worden dan automatisch opgehaald.</p>'
         },
         'vaccinationOverview': {
             'pageHeader': 'Jouw opgehaalde vaccinaties',

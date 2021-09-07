@@ -44,8 +44,8 @@ const en = {
             'didNotGetTestedYet': 'I have not been tested yet'
         },
         'collectVaccination': {
-            'pageHeader': 'Collect vaccination',
-            'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p><p>Questions about vaccinations? Read more on the <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="_blank" rel="noopener noreferrer">website of the Dutch Government</a></p>'
+            'pageHeader': 'Retrieve vaccination details',
+            'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p>'
         },
         'vaccinationOverview': {
             'pageHeader': 'Your retrieved vaccinations',
