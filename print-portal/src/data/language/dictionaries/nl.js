@@ -278,9 +278,9 @@ const nl = {
                 'no': 'Nee, ga door'
             },
             'digidCanceled': {
-                'head': 'Inloggen is niet gelukt',
-                'body': 'Je kunt opnieuw inloggen om je %{type} op te halen.',
-                'vaccination': 'vaccinaties',
+                'head': 'Inloggen afgebroken',
+                'body': 'Wil je jouw %{type} ophalen? Log dan opnieuw in met DigiD.',
+                'vaccination': 'vaccinatiegegevens',
                 'negativetest': 'testuitslag',
                 'positivetest': 'testuitslag'
             },

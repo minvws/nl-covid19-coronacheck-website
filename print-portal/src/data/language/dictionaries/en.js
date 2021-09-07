@@ -278,9 +278,9 @@ const en = {
                 'no': 'No, continue'
             },
             'digidCanceled': {
-                'head': 'Login failed',
-                'body': 'You can log in again to retrieve your %{type}',
-                'vaccination': 'vaccinations',
+                'head': 'Login aborted',
+                'body': 'You can log in again to retrieve your %{type}.',
+                'vaccination': 'vaccination details',
                 'negativetest': 'test result',
                 'positivetest': 'test result'
             },
