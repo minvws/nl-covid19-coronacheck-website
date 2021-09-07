@@ -50,7 +50,7 @@ const nl = {
         'vaccinationOverview': {
             'pageHeader': 'Jouw opgehaalde vaccinaties',
             'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>',
-            'createTestProofButton': 'Maak QR-code'
+            'createTestProofButton': 'Maak bewijs'
         },
         'vaccinationsNone': {
             'pageHeader': 'Geen vaccinatie(s) beschikbaar',
@@ -87,7 +87,7 @@ const nl = {
         'negativeTestOverview': {
             'pageHeader': 'Controleer je testuitslag',
             'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
-            'createTestProofButton': 'Maak QR-code',
+            'createTestProofButton': 'Maak bewijs',
             'retrievedTestResult': 'Opgehaalde testuitslag'
         },
         'testResultPending': {
@@ -100,7 +100,8 @@ const nl = {
         },
         'recoveryOverview': {
             'pageHeader': 'Jouw positieve testuitslag',
-            'pageIntro': '<p>Als je gegevens kloppen dan kun je een QR-code maken van je positieve testuitslag. Dat is jouw bewijs.</p>'
+            'pageIntro': '<p>Als je gegevens kloppen dan kun je een QR-code maken van je positieve testuitslag. Dat is jouw bewijs.</p>',
+            'createTestProofButton': 'Maak bewijs'
         },
         'recoveryNone': {
             'pageHeader': 'Geen positieve testuitslag beschikbaar',

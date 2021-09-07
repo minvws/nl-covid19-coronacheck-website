@@ -51,7 +51,7 @@ export default {
                     <CcButton
                         id="create-qr-recovery"
                         @select="gotoPrint()"
-                        :label="$t('views.vaccinationOverview.createTestProofButton')"/>
+                        :label="$t('views.recoveryOverview.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
                             @select="openModalSomethingWrong()"
