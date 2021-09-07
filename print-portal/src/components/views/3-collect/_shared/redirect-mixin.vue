@@ -38,7 +38,6 @@ export default {
             this.isLoading = true;
 
             this.authVaccinations.completeAuthentication().then((user) => {
-                // after redirect we've lost the consent
                 this.notifyDigidFinished();
                 signedEventsInterface.getTokens(user.id_token).then(response => {
                     if (response.data && response.data.payload) {
@@ -268,6 +267,7 @@ export default {
         }
     },
     mounted() {
+        // after redirect we've lost the consent
         this.$store.commit('setUserConsent', true);
         this.completeAuthentication();
     }
