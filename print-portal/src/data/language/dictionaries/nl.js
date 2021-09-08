@@ -38,7 +38,7 @@ const nl = {
             'pageHeader': 'Waar ben je getest?',
             'pageIntro': '<p>Blijkt uit de test dat je geen corona hebt? Dan kan je van de testuitslag een QR-code maken. Geef aan waar je getest bent.</p>',
             'choiceGGDHead': 'GGD',
-            'choiceGGDBody': 'Login met DigiD',
+            'choiceGGDBody': 'Log in met DigiD',
             'loginDigid': 'Ik heb geen DigiD',
             'choiceOtherLocation': 'Andere testlocatie',
             'didNotGetTestedYet': 'Ik ben nog niet getest'
@@ -320,7 +320,7 @@ const nl = {
             }
         },
         'digid': {
-            'loginDigid': 'Login met DigiD',
+            'loginDigid': 'Log in met DigiD',
             'dontHaveDigid': 'Ik heb geen DigiD',
             'proofType': {
                 'negativetest': 'testuitslag',
