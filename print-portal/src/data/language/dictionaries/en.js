@@ -238,7 +238,7 @@ const en = {
         },
         'errorProofNotPossible': {
             'pageHeader': 'We can’t make a certificate',
-            'pageIntro': '<p>At the moment, we cannot provide proof for you. This can have different causes. You can find more information about what to do on the <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
+            'pageIntro': '<p>At this moment, we can\'t make a certificate. This can have various causes. Read more on the <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
         }
     },
     'components': {
