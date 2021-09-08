@@ -195,7 +195,7 @@ const nl = {
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>'
             },
             // european only is a non existing scenario for recovery
-            'validInFuture': {
+            'bothValidInFuture': {
                 'pageHeader': 'Print jouw herstelbewijs',
                 'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw herstelbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
                     '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>' +
@@ -207,7 +207,7 @@ const nl = {
                     '<h4>En nu?</h4>' +
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
             },
-            'validInFutureDomestic': {
+            'domesticvalidInFuture': {
                 'pageHeader': 'Print jouw Nederlandse herstelbewijs',
                 'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw herstelbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
                     '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>' +

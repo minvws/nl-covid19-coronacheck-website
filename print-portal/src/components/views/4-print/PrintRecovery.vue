@@ -19,9 +19,18 @@ export default {
             const dateValidFrom = new Date(dateValidFromString).getTime();
             return dateValidFrom > today;
         },
+        // for recovery there are more combination possible, beacuse of 2 variables:
+        // domestic/european/boths vs recoveryValidInFuture:true/false
+        headText() {
+            if (this.recoveryValidInFuture) {
+                return this.$t('views.printRecovery.' + this.pageType + 'validInFuture.pageHeader');
+            } else {
+                return this.$t('views.printRecovery.' + this.pageType + '.pageHeader');
+            }
+        },
         bodyText() {
             if (this.recoveryValidInFuture) {
-                return this.$t('views.printRecovery.validInFuture.pageIntro');
+                return this.$t('views.printRecovery.' + this.pageType + 'validInFuture.pageIntro');
             } else {
                 return this.$t('views.printRecovery.' + this.pageType + '.pageIntro');
             }
@@ -41,7 +50,7 @@ export default {
             @back="back"
             :type="'recovery'">
             <PageIntro
-                :head="$t('views.printRecovery.' + pageType + '.pageHeader')"
+                :head="headText"
                 :intro="bodyText"/>
         </Print>
     </div>
