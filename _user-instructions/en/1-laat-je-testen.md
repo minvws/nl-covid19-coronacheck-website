@@ -5,4 +5,4 @@ graphic: Home_EN_Iphone1.png
 title: 1. Get tested or vaccinated
 lang: en
 ---
-If you've been vaccinated, had coronavirus before or didn’t have coronavirus at the time of testing, you get access to certain locations or countries.
+For access, some countries and places ask for a vaccination certificate or a result of a corona test. 
