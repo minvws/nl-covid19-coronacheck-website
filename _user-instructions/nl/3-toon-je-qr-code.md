@@ -5,4 +5,4 @@ graphic: Home_NL_Iphone3.png
 title: 3. Toon je QR-code
 lang: nl
 ---
-Laat de QR-code én je identiteitsbewijs controleren voor toegang tot een bepaalde plek of land.
+Laat je identiteitsbewijs en je QR-code controleren voor toegang tot een bepaalde plek. En als je op reis gaat. 

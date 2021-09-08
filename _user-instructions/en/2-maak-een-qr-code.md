@@ -5,4 +5,4 @@ graphic: Home_EN_Iphone2.png
 title: 2. Make a QR code
 lang: en
 ---
-Turn your vaccination record or positive / negative test result into a QR code. This is your certificate. 
+This app generates a QR code for the Netherlands and one for other countries. This is your certificate.
