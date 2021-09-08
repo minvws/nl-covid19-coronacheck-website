@@ -355,11 +355,11 @@ const en = {
                 'no': 'No, continue'
             },
             'digidCanceled': {
-                'head': 'Login aborted',
-                'body': 'You can log in again to retrieve your %{type}.',
+                'head': 'Login was cancelled',
+                'body': 'Want to retrieve your %{type}? Log in again with DigiD.',
                 'vaccination': 'vaccination details',
-                'negativetest': 'test result',
-                'positivetest': 'test result'
+                'negativetest': 'test details',
+                'positivetest': 'recovery details'
             },
             'digidFinished': {
                 'body': 'We\'ll retrieve your %{type}. You will be logged out of DigiD automatically'
