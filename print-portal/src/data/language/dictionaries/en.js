@@ -213,8 +213,8 @@ const en = {
             }
         },
         'serverBusy': {
-            'pageHeader': 'It\'s very busy at the moment',
-            'pageIntro': '<p>Try again later today.</p>'
+            'pageHeader': 'Sorry, it is really busy',
+            'pageIntro': '<p>Please try again later.</p>'
         },
         'errorNoEvents': {
             'pageHeader': 'Sorry, your details were not retrieved',
