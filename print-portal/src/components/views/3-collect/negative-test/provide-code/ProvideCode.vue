@@ -153,7 +153,6 @@ export default {
                     if (response.data && response.data.payload) {
                         try {
                             const payload = cmsDecode(response.data.payload);
-                            console.log(payload);
                             const hasEvents = (payload) => {
                                 if (payload.protocolVersion === '3.0') {
                                     return payload.events && payload.events.length > 0;
