@@ -403,6 +403,7 @@ const en = {
     'logo-government': 'Logo Dutch Government, homepage',
     'next': 'Next',
     'of': 'of',
+    'pageTitle': 'CoronaCheck Print Portal',
     'skiplink': 'Skip to content',
     'somethingIsWrong': 'Is something wrong?',
     'unknown': 'Unknown',

@@ -412,6 +412,7 @@ const nl = {
     'logo-government': 'Logo Rijksoverheid, homepage',
     'next': 'Volgende',
     'of': 'van',
+    'pageTitle': 'CoronaCheck Print Portaal',
     'skiplink': 'Ga direct naar inhoud',
     'somethingIsWrong': 'Klopt er iets niet?',
     'unknown': 'Onbekend',
