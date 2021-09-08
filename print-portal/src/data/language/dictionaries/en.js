@@ -15,7 +15,7 @@ const en = {
                 '<p>A certificate on paper is convenient if you don\'t have a smartphone.</p>' +
                 '<h4>Certificate of test or vaccination</h4>' +
                 '<p>You can make a coronavirus pass with CoronaCheck if:' +
-                '<ul><li>you have been vaccinated</li><li>a test result confirms you don’t have corona</li><li>you\'ve had coronavirus and are recovered</li></ul></p>' +
+                '<ul class="ul--with-padding"><li>you have been vaccinated</li><li>a test result confirms you don’t have corona</li><li>you\'ve had coronavirus and are recovered</li></ul></p>' +
                 '<h4>QR code = your proof</h4>' +
                 '<p>CoronaCheck generates a QR code with your vaccination, test result or recovery. That is your certificate. This QR code will be checked before you get access.</p>' +
                 '<h4>QR-codes for the Netherlands and international</h4>' +

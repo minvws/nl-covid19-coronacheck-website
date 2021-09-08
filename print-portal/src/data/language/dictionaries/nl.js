@@ -15,7 +15,7 @@ const nl = {
                 '<p>Een bewijs op papier is handig als je geen smartphone hebt.</p>' +
                 '<h4>Bewijs van test of vaccinatie</h4>' +
                 '<p>Je kan een coronabewijs maken met CoronaCheck als:' +
-                '<ul><li>je bent gevaccineerd</li><li>uit een test blijkt dat je geen corona had</li><li>uit een test blijkt dat je corona hebt gehad en bent hersteld</li></ul></p>' +
+                '<ul class="ul--with-padding"><li>je bent gevaccineerd</li><li>uit een test blijkt dat je geen corona had</li><li>uit een test blijkt dat je corona hebt gehad en bent hersteld</li></ul></p>' +
                 '<h4>QR-code = jouw bewijs</h4>' +
                 '<p>CoronaCheck maakt van jouw vaccinatie of testuitslag een QR-code. Dat is jouw bewijs. De QR-code wordt gecheckt voordat je toegang krijgt.</p>' +
                 '<h4>QR-codes voor Nederland en internationaal</h4>' +

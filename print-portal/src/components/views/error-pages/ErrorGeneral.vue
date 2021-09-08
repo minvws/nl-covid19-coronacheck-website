@@ -14,7 +14,7 @@ export default {
     computed: {
         errors() {
             if (this.$route.query.errors) {
-                return '<ul>' + this.$route.query.errors.split('+').map(e => '<li>' + e + '</li>').join('') + '</ul>';
+                return '<ul class="ul--with-padding">' + this.$route.query.errors.split('+').map(e => '<li>' + e + '</li>').join('') + '</ul>';
             } else {
                 return [];
             }
