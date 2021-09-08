@@ -99,8 +99,8 @@ const nl = {
             'pageIntro': '<p>Er zijn geen gegevens over je testuitslag beschikbaar. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op <a href="https://coronacheck.nl/nl/wegwijzer.html" target="_blank" rel="noopener noreferrer">de Wegwijzer</a>.</p><p>Heb je al een testuitslag van de GGD gekregen? Dan kan het nog een paar uur duren voordat je de uitslag hier kunt ophalen. Probeer het later opnieuw.</p>'
         },
         'recoveryOverview': {
-            'pageHeader': 'Jouw positieve testuitslag',
-            'pageIntro': '<p>Als je gegevens kloppen dan kun je een QR-code maken van je positieve testuitslag. Dat is jouw bewijs.</p>',
+            'pageHeader': 'Jouw opgehaalde positieve testuitslag',
+            'pageIntro': '<p>Kloppen je gegevens? Dan kun je van je positieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
             'createTestProofButton': 'Maak bewijs'
         },
         'recoveryNone': {
@@ -339,11 +339,11 @@ const nl = {
                 },
                 'negativetest': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie om de gegevens te laten aanpassen.</p>'
+                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie. Zij kunnen de gegevens aanpassen.</p>'
                 },
                 'positivetest': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie om de gegevens te laten aanpassen.'
+                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie. Zij kunnen de gegevens aanpassen.</p>'
                 }
             },
             'noVerificationCode': {
