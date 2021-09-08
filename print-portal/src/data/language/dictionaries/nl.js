@@ -216,7 +216,7 @@ const nl = {
                     '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden.</p>' +
                     '<h4>En nu?</h4>' +
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>'
-            },
+            }
         },
         'serverBusy': {
             'pageHeader': 'Sorry, het is erg druk',

@@ -111,18 +111,35 @@ const en = {
             'openPDF': 'Open PDF'
         },
         'printNegativeTest': {
-            // TODO
             'both': {
                 'pageHeader': 'Print your certificates',
-                'pageIntro': '<h4>Your certificates</h4><p>You\'ve made a test certificate, in the form of a QR code. You\'ve got a code for the Netherlands and one for other countries.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">This is what\'s in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
+                'pageIntro': '<p><strong>Successful! A PDF of your test certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
+                    '<h4>QR code for the Netherlands and abroad</h4>' +
+                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>Before leaving, please check which certificate you need.<br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
+                    '<h4>What now?</h4>' +
+                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
             },
             'european': {
-                'pageHeader': 'Your certificate',
-                'pageIntro': '<h4>Your certificate</h4><p>You\'ve made a test certificate in the form of a QR code. You\'ve only got an international certificate. A dutch certificate could not be made because the type of test is not accepted, or because the test certificate already expired in the Netherlands.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Read what is in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and take your print to the location or activity you’re visiting.Or to the country you’re travelling to.</p>'
+                'pageHeader': 'Print your international certificate',
+                'pageIntro': '<p><strong>Successful! A PDF of your test certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
+                    '<h4>QR code for abroad</h4>' +
+                    '<p>In the PDF you will only find an international QR code. You can use this if you are abroad or cross the border, but not in the Netherlands.</p>' +
+                    '<p>The validity period of your QR-code may be shorter in the Netherlands than in other countries. Get tested again for a certificate that is also valid in the Netherlands.</p>' +
+                    '<p>Before leaving, please check which certificate you need.<br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
+                    '<h4>What now?</h4>' +
+                    '<p>Open the PDF, and print it. Take it to the country you’re traveling to.</p>'
             },
             'domestic': {
-                'pageHeader': 'Your certificate',
-                'pageIntro': '<h4>Your certificate</h4><p>You\'ve made a test certificate in the form of a QR code. This QR code is valid within the Netherlands, but not abroad.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Read what is in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and take your print to the location or activity you’re visiting.</p>'
+                'pageHeader': 'Print your Dutch recovery certificate',
+                'pageIntro': '<p><strong>Successful! A PDF of your test certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
+                    '<h4>Only a Dutch QR code</h4>' +
+                    '<p>In the PDF, you’ll only find a Dutch QR code. You can use it to access places or activities within the Netherlands, but not when your travelling abroad or crossing the border.</p>' +
+                    '<p>It can be that you didn’t get an international QR code because your type of test isn\'t accepted abroad. An international recovery certificate can only be made with a PCR-test.</p>' +
+                    '<h4>What now?</h4>' +
+                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting.</p>'
             }
         },
         'printVaccination': {
@@ -142,12 +159,12 @@ const en = {
                 'pageIntro': '<p><strong>Successful! A PDF of your vaccination certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<h4>QR code for abroad</h4>' +
                     '<p>In the PDF you will only find an international QR code. You can use this if you are abroad or cross the border, but not in the Netherlands.</p>' +
-                    '<p>You may not have received a Dutch QR code because you only had one injection. Add your second vaccination to make proof that is also valid in the Netherlands. ' +
+                    '<p>You may not have received a Dutch QR code because you only had one injection. After your second vaccination, you can create a new certificate that is also valid in the Netherlands. ' +
                     '<a href="https://coronacheck.nl/en/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Read more about the possible causes here</a>.</p>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
-                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting. Or to the country you’re traveling to.</p>' +
+                    '<p>Open the PDF, and print it. Take it to the country you’re traveling to.</p>' +
                     '<p>Please note: this paper certificate is valid for 1 year. After that, you can make a new vaccination certificate.</p>'
             }
             // domestic only is a non existing scenario for vaccination
@@ -161,23 +178,38 @@ const en = {
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
-                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting. Or to the country you’re traveling to.</p>' +
-                    '<p>Please note: this paper certificate is valid for 1 year. After that, you can make a new vaccination certificate.</p>'
+                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
             },
             'domestic': {
                 'pageHeader': 'Print your Dutch recovery certificate',
-                'pageIntro': '<p><strong>Successful! A PDF of your vaccination certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
+                'pageIntro': '<p><strong>Successful! A PDF of your recovery certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<h4>Only a Dutch QR code</h4>' +
                     '<p>In the PDF, you’ll only find a Dutch QR code. You can use it to access places or activities within the Netherlands, but not when your travelling abroad or crossing the border.</p>' +
                     '<p>It can be that you didn’t get an international QR code because your type of test isn\'t accepted abroad. An international recovery certificate can only be made with a PCR-test.</p>' +
                     '<h4>What now?</h4>' +
-                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting. Or to the country you’re traveling to.</p>' +
-                    '<p>Please note: this paper certificate is valid for 1 year. After that, you can make a new vaccination certificate.</p>'
+                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting.</p>'
             },
             // european only is a non existing scenario for recovery
-            // TODO
             'validInFuture': {
-                'pageIntro': '<h4>Your certificates</h4><p>You\'ve made a recovery certificate, in the form of a QR code. You\'ve got a code for the Netherlands and one for other countries.</p><p>Your recovery certificate will be valid 11 days after the positive test result.</p><h4>Information in the QR</h4><p><a href="https://coronacheck.nl/en/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">This is what\'s in the QR codes</a>.</p><h4>What now?</h4><p>Print the PDF and bring it with you to the location or activity you’re visiting. Or to the country you’re travelling to.</p>'
+                'pageHeader': 'Print your certificates',
+                'pageIntro': '<p><strong>Successful! A PDF of your recovery certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
+                    '<p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be free of symptoms.</p>' +
+                    '<h4>QR code for the Netherlands and abroad</h4>' +
+                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>Before leaving, please check which certificate you need.<br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
+                    '<h4>What now?</h4>' +
+                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
+            },
+            'validInFutureDomestic': {
+                'pageHeader': 'Print your Dutch recovery certificate',
+                'pageIntro': '<p><strong>Successful! A PDF of your recovery certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
+                    '<p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be free of symptoms.</p>' +
+                    '<h4>Only a Dutch QR code</h4>' +
+                    '<p>In the PDF, you’ll only find a Dutch QR code. You can use it to access places or activities within the Netherlands, but not when your travelling abroad or crossing the border.</p>' +
+                    '<p>It can be that you didn’t get an international QR code because your type of test isn\'t accepted abroad. An international recovery certificate can only be made with a PCR-test.</p>' +
+                    '<h4>What now?</h4>' +
+                    '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting.</p>'
             }
         },
         'serverBusy': {
