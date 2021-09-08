@@ -23,14 +23,14 @@ export default {
         // domestic/european/boths vs recoveryValidInFuture:true/false
         headText() {
             if (this.recoveryValidInFuture) {
-                return this.$t('views.printRecovery.' + this.pageType + 'validInFuture.pageHeader');
+                return this.$t('views.printRecovery.' + this.pageType + 'ValidInFuture.pageHeader');
             } else {
                 return this.$t('views.printRecovery.' + this.pageType + '.pageHeader');
             }
         },
         bodyText() {
             if (this.recoveryValidInFuture) {
-                return this.$t('views.printRecovery.' + this.pageType + 'validInFuture.pageIntro');
+                return this.$t('views.printRecovery.' + this.pageType + 'ValidInFuture.pageIntro');
             } else {
                 return this.$t('views.printRecovery.' + this.pageType + '.pageIntro');
             }

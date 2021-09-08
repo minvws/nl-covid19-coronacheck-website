@@ -201,7 +201,7 @@ const en = {
                     '<h4>What now?</h4>' +
                     '<p>Open the PDF, and print it. Take it to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
             },
-            'domesticvalidInFuture': {
+            'domesticValidInFuture': {
                 'pageHeader': 'Print your Dutch recovery certificate',
                 'pageIntro': '<p><strong>Successful! A PDF of your recovery certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be free of symptoms.</p>' +
