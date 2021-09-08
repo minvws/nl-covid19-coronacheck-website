@@ -50,6 +50,7 @@ export default {
     border-radius: 12px;
     display: flex;
     align-items: center;
+    margin: $grid-x6 0 $length-s 0;
 
     input[type=checkbox] {
         width: 28px;
@@ -63,6 +64,20 @@ export default {
     label {
         width: calc(100% - 48px);
         cursor: pointer;
+
+        a {
+            text-decoration: underline;
+        }
+
+        a,
+        a:visited {
+            color: $color-coronacheck-link;
+
+            &:hover,
+            &:focus {
+                color: $color-cc-link-darker--interaction;
+            }
+        }
     }
 }
 </style>
