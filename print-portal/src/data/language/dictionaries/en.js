@@ -12,7 +12,7 @@ const en = {
             'pageHeader': 'Get access with a certificate on paper',
             'pageIntro': '<h2 class="screen-reader-text">Here\'s how it works</h2>' +
                 '<p>Your and other people’s health matters. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass.</p>' +
-                '<p>A certificate on paper is convenient if you don\'t have a smartphone. Here\'s how it works:</p>' +
+                '<p>A certificate on paper is convenient if you don\'t have a smartphone.</p>' +
                 '<h4>Certificate of test or vaccination</h4>' +
                 '<p>You can make a coronavirus pass with CoronaCheck if:' +
                 '<ul><li>you have been vaccinated</li><li>a test result confirms you don’t have corona</li><li>you\'ve had coronavirus and are recovered</li></ul></p>' +
