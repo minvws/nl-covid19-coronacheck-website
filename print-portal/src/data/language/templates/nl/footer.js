@@ -9,8 +9,8 @@ const html = `
                 tijdens de ontwikkeling meegekeken en getest.
             </div>
             <div class="footer-attribution">
-                <h2 class="footer-attribution__title">Mede mogelijk gemaakt door</h2>
-                <img src="assets/img/Logo_EU_Negative_nl.svg" alt="Europese Commissie" width="175" height="48" />
+                <h3 class="footer-attribution__title">Mede mogelijk gemaakt door</h3>
+                <img src="assets/img/Logo_EU_Negative_nl.svg" alt="Logo Europese Commissie" width="175" height="48" />
             </div>
         </div>
         <div class="footer-links-col ___desktop-50">

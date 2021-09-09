@@ -18,7 +18,7 @@ const en = {
                 '<ul class="ul--with-padding"><li>you have been vaccinated</li><li>a test result confirms you don’t have corona</li><li>you\'ve had coronavirus and are recovered</li></ul></p>' +
                 '<h4>QR code = your proof</h4>' +
                 '<p>CoronaCheck generates a QR code with your vaccination, test result or recovery. That is your certificate. This QR code will be checked before you get access.</p>' +
-                '<h4>QR-codes for the Netherlands and international</h4>' +
+                '<h4>QR codes for the Netherlands and international</h4>' +
                 '<p>This app generates a QR code for the Netherlands and one for other countries. Travelling outside of the Netherlands? Then use your international QR code.</p>',
             'userConsentHeader': 'Start making a certificate on paper',
             'userConsentText': 'I have read the <a href="https://coronacheck.nl/en/privacy" target="_blank" rel="noopener noreferrer">privacy statement</a> and understand how CoronaCheck processes my data.',
@@ -126,7 +126,7 @@ const en = {
                 'pageIntro': '<p><strong>Successful! A PDF of your test certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<h4>QR code for abroad</h4>' +
                     '<p>In the PDF you will only find an international QR code. You can use this if you are abroad or cross the border, but not in the Netherlands.</p>' +
-                    '<p>The validity period of your QR-code may be shorter in the Netherlands than in other countries. Get tested again for a certificate that is also valid in the Netherlands.</p>' +
+                    '<p>The validity period of your QR code may be shorter in the Netherlands than in other countries. Get tested again for a certificate that is also valid in the Netherlands.</p>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -350,7 +350,7 @@ const en = {
             },
             'areYouSureToCancel': {
                 'head': 'Are you sure you want to stop?',
-                'body': 'You will then have to retrieve your data later again.',
+                'body': 'Then you will have to retrieve your details again later.',
                 'yes': 'Yes, stop',
                 'no': 'No, continue'
             },
@@ -386,7 +386,7 @@ const en = {
     },
     'pdf': {
         'metadata': {
-            'title': 'Certificate containing QR-code',
+            'title': 'Certificate containing QR code',
             'author': 'CoronaCheck'
         }
     },

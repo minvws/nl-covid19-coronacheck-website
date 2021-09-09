@@ -11,7 +11,7 @@ const nl = {
         'home': {
             'pageHeader': 'Krijg toegang met een papieren bewijs',
             'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2>' +
-                '<p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijgt je toegang.</p>' +
+                '<p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang.</p>' +
                 '<p>Een bewijs op papier is handig als je geen smartphone hebt.</p>' +
                 '<h4>Bewijs van test of vaccinatie</h4>' +
                 '<p>Je kan een coronabewijs maken met CoronaCheck als:' +
