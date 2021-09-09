@@ -350,7 +350,7 @@ const en = {
             },
             'areYouSureToCancel': {
                 'head': 'Are you sure you want to stop?',
-                'body': 'You will then have to retrieve your data later again.',
+                'body': 'Then you will have to retrieve your details again later.',
                 'yes': 'Yes, stop',
                 'no': 'No, continue'
             },
