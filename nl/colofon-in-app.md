@@ -42,4 +42,4 @@ Deze licenties, voorwaarden en disclaimers vormen een integraal onderdeel van zo
 
 ### Melden van kwetsbaarheden
 
-Ontdek je een zwakke plek of kwetsbaarheid op de CoronaCheck, CoronaCheck Scanner of op deze website? Dat willen we graag weten. Meld de kwetsbaarheid via security@coronacheck.nl, dan bekijken wij het probleem en lossen dit zo snel mogelijk op.
+Ontdek je een zwakke plek of kwetsbaarheid op de CoronaCheck, CoronaCheck Scanner of op deze website? Dat willen we graag weten. Meld de kwetsbaarheid via [security@coronacheck.nl](mailto:security@coronacheck.nl), dan bekijken wij het probleem en lossen dit zo snel mogelijk op.

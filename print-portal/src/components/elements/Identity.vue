@@ -86,6 +86,7 @@ export default {
                 display: block;
                 height: auto;
                 margin-left: 60px;
+                margin-bottom: -54px;
                 max-width: 343px;
                 width: 100%;
             }
@@ -125,8 +126,9 @@ export default {
             .Identity__image-container {
 
                 .Identity__image {
-                    margin: 0 auto;
-                    height: 150px;
+                    margin: 0 auto -12% auto;
+                    width: 80%;
+                    height: auto;
                 }
             }
         }

@@ -6,17 +6,17 @@ import PositiveTest from './PositiveTest';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
+import LoadingCover from '@/components/elements/LoadingCover';
 
 export default {
     name: 'RecoveryOverview',
-    components: { PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton },
+    components: { LoadingCover, PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton },
     mixins: [overviewMixin],
     data() {
         return {
             filter: 'positivetest,recovery',
             pages: {
-                print: 'PrintRecovery',
-                noResultFromSigner: 'RecoveryNotPossible'
+                print: 'PrintRecovery'
             }
         }
     }
@@ -51,7 +51,7 @@ export default {
                     <CcButton
                         id="create-qr-recovery"
                         @select="gotoPrint()"
-                        :label="$t('views.vaccinationOverview.createTestProofButton')"/>
+                        :label="$t('views.recoveryOverview.createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
                             @select="openModalSomethingWrong()"
@@ -59,6 +59,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <LoadingCover v-if="proofSubmitted"/>
         </div>
     </Page>
 </template>

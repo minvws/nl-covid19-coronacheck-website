@@ -6,17 +6,17 @@ import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import NegativeTestV2 from './NegativeTestV2';
+import LoadingCover from '@/components/elements/LoadingCover';
 
 export default {
     name: 'NegativeTestOverview',
-    components: { NegativeTestV2, Page, PageIntro, NegativeTest, CcButton, CcModestButton },
+    components: { LoadingCover, NegativeTestV2, Page, PageIntro, NegativeTest, CcButton, CcModestButton },
     mixins: [overviewMixin],
     data() {
         return {
             filter: 'negativetest',
             pages: {
-                print: 'PrintNegativeTest',
-                noResultFromSigner: 'NegativeTestNotPossible'
+                print: 'PrintNegativeTest'
             }
         }
     },
@@ -59,6 +59,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <LoadingCover v-if="proofSubmitted"/>
         </div>
     </Page>
 </template>

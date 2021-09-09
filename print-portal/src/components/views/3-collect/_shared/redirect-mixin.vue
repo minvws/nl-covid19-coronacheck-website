@@ -38,9 +38,8 @@ export default {
             this.isLoading = true;
 
             this.authVaccinations.completeAuthentication().then((user) => {
-                // after redirect we've lost the consent
-                this.notifyDigidFinished();
                 signedEventsInterface.getTokens(user.id_token).then(response => {
+                    this.notifyDigidFinished();
                     if (response.data && response.data.payload) {
                         const payload = cmsDecode(response.data.payload);
                         this.collectEvents(payload.tokens);
@@ -83,7 +82,6 @@ export default {
 
                 const isAppAuthError = (error) => {
                     const options = [
-                        'login_required',
                         'invalid_request',
                         'invalid_client',
                         'invalid_grant',
@@ -94,6 +92,11 @@ export default {
                     return error && error.message && options.indexOf(error.message) > -1;
                 }
 
+                const tooBusy = (error) => {
+                    // the response login_required is a hack to communicate too busy mode
+                    return error && error.message && error.message === 'login_required';
+                }
+
                 if (isCanceled(error)) {
                     this.gotoPreviousPage();
                     const type = this.$t('message.info.digidCanceled.' + this.type)
@@ -102,6 +105,8 @@ export default {
                         messageBody: this.$t('message.info.digidCanceled.body', { type }),
                         closeButton: true
                     })
+                } else if (tooBusy(error)) {
+                    this.$router.push({ name: 'ServerBusy' });
                 } else if (isAppAuthError(error)) {
                     const errorCode = getErrorCode(error, { flow: this.filter, step: '10', provider_identifier: '000', errorBody: error.message });
                     this.$router.push({ name: 'ErrorGeneral', query: { errors: errorCode } });
@@ -262,6 +267,7 @@ export default {
         }
     },
     mounted() {
+        // after redirect we've lost the consent
         this.$store.commit('setUserConsent', true);
         this.completeAuthentication();
     }

@@ -123,7 +123,7 @@ export default {
                 this.verificationCodeStatus.error = this.$t('views.provideCode.emptyVerificationCode');
             }
         },
-        addNegativeTestV2(signedEvent) {
+        addNegativeTest(signedEvent) {
             this.testCodeStatus.error = '';
             this.$store.commit('signedEvents/createAll', [signedEvent]);
             this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0' } });
@@ -153,9 +153,16 @@ export default {
                     if (response.data && response.data.payload) {
                         try {
                             const payload = cmsDecode(response.data.payload);
+                            const hasEvents = (payload) => {
+                                if (payload.protocolVersion === '3.0') {
+                                    return payload.events && payload.events.length > 0;
+                                } else {
+                                    return payload.result;
+                                }
+                            }
                             if (payload.status === 'complete') {
-                                if (payload.events && payload.events.length > 0) {
-                                    this.addNegativeTestV2(response.data)
+                                if (hasEvents(payload)) {
+                                    this.addNegativeTest(response.data)
                                 } else {
                                     this.$store.commit('clearAll');
                                     this.$router.push({ name: 'TestResultNone' })
@@ -176,12 +183,12 @@ export default {
                         const errorCause = this.getCauseOfError(error)
                         switch (errorCause) {
                         case 'invalid_token':
-                            this.testCodeStatus.error = this.$t('views.provideCode.tokenExpired');
+                            this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
                             break;
                         case 'verification_required':
                             this.$store.commit('setVerificationNeeded', true);
                             this.testCodeStatus.error = '';
-                            if (options.includeVerificationCode) {
+                            if (options.includeVerificationCode || errorCause === 'invalid_token') {
                                 this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
                             }
                             break;
