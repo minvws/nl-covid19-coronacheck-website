@@ -14,11 +14,11 @@ $redirect = match ($host) {
     default => null,
 };
 
-if(
-    str_starts_with($redirectUri,"https://coronacheck.nl")
-    || str_starts_with($redirectUri,"https://web.acc.coronacheck.nl")
-    || str_starts_with($redirectUri,"https://web.tst.coronacheck.nl")
-    || str_starts_with($redirectUri,"https://web.dev.coronacheck.nl")
+if (
+    str_starts_with($redirectUri, "https://coronacheck.nl")
+    || str_starts_with($redirectUri, "https://web.acc.coronacheck.nl")
+    || str_starts_with($redirectUri, "https://web.tst.coronacheck.nl")
+    || str_starts_with($redirectUri, "https://web.dev.coronacheck.nl")
 ) {
     // Host is allowed as redirect url, continue
 }
@@ -28,7 +28,7 @@ else {
 }
 
 
-if(!is_null($redirect)) {
+if (!is_null($redirect)) {
     $redirectFullUrl = $redirect . "?" . http_build_query(["redirect_uri" => $redirectUri, "client_id" => $clientId, "state" => $state]);
 }
 else {
@@ -37,7 +37,7 @@ else {
 }
 
 http_response_code(302);
-header("Location: ".$redirectFullUrl);
+header("Location: " . $redirectFullUrl);
 
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
