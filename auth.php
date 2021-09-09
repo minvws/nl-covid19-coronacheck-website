@@ -1,5 +1,9 @@
 <?php
+/**
+ * Redirect to Universal Link
+ */
 
+// Input parameters to pass on.
 $redirectUri = $_REQUEST["redirect_uri"];
 $clientId = $_REQUEST["client_id"];
 $state = $_REQUEST["state"];
@@ -14,6 +18,7 @@ $redirect = match ($host) {
     default => null,
 };
 
+// Validate redirectUri.
 if (
     str_starts_with($redirectUri, "https://coronacheck.nl")
     || str_starts_with($redirectUri, "https://web.acc.coronacheck.nl")
