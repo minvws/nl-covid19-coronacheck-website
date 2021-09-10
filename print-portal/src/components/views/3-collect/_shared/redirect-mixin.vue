@@ -94,7 +94,7 @@ export default {
 
                 const tooBusy = (error) => {
                     // the response login_required is a hack to communicate too busy mode
-                    return error && error.message && error.message === 'login_required';
+                    return error && error.error && error.error === 'login_required';
                 }
 
                 if (isCanceled(error)) {
