@@ -156,6 +156,8 @@ exclude:
   - example.content-page.md
   - .sass-cache
   - .history
+  - auth.php
+  - auth2.php
 
 plugins:
   - "jekyll-github-metadata"
