@@ -5,6 +5,8 @@ title: Ik wil mij laten testen, waar kan ik terecht?
 redirect_from: 
     - /nl/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
     - /nl/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
+    - /testafspraak
+    - /nl/testafspraak
 ---
 Waar je het beste een coronatest kan doen? Dat hangt ervan af waar je het testbewijs voor wil gebruiken.
 
@@ -28,4 +30,5 @@ Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, b
 ## Overige aangesloten testlocaties:
 
 - <a href="https://www.medicorps.nl/" rel="noopener noreferrer" target="_blank">MediCorps</a>
-
+- <a href="https://testservice.nl"  rel="noopener noreferrer" target="_blank" hreflang="nl">Health Services The Netherlands B.V.</a>
+- <a href="https://www.howareyoudiagnostics.com"  rel="noopener noreferrer" target="_blank"  hreflang="nl">HOW ARE YOU DIAGNOSTICS</a>

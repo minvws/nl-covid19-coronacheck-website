@@ -26,4 +26,6 @@ Are you experiencing symptoms that could indicate you have coronavirus? Think of
 
 ## Other affiliated test locations
 
-<a href="https://www.medicorps.nl"  rel="noopener noreferrer" target="_blank" class="btn btn--cta" hreflang="nl">Medicorps</a>
+- <a href="https://www.medicorps.nl/" rel="noopener noreferrer" target="_blank">MediCorps</a>
+- <a href="https://testservice.nl"  rel="noopener noreferrer" target="_blank" hreflang="nl">Health Services The Netherlands B.V.</a>
+- <a href="https://www.howareyoudiagnostics.com"  rel="noopener noreferrer" target="_blank"  hreflang="nl">HOW ARE YOU DIAGNOSTICS</a>
