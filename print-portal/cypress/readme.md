@@ -8,7 +8,8 @@
 - [x] Token and verification
 
 ### Unhappy
-- [x] None DigiD (None Token is not possible, this results in invalidTestCode)
+- [x] None DigiD
+- [x] None Token
 - [x] Pending
 - [x] Invalid token
 - [x] Invalid verification

@@ -56,6 +56,9 @@ export default {
                 <div class="label--side-note">
                     {{$t('views.provideCode.verificationCodeDirection')}}
                 </div>
+                <div class="label--side-note">
+                    {{$t('forInstanceAbbr')}} 123456
+                </div>
             </label>
             <input
                 v-model="verificationCode"
@@ -64,7 +67,7 @@ export default {
                 type="text"
                 pattern="[0-9]*"
                 inputmode="numeric"
-                :placeholder="$t('forInstanceAbbr') + ' 123456'"/>
+                :placeholder="$t('views.provideCode.verificationCode')"/>
             <ErrorLabel
                 v-if="verificationCodeStatus.error.length > 0"
                 :label="verificationCodeStatus.error"/>

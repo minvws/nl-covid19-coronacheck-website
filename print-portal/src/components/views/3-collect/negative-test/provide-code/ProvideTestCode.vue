@@ -53,10 +53,10 @@ export default {
         <div class="input__set">
             <label for="input-test-code">
                 {{$t('views.provideCode.uniqueCode')}}
+                <div class="label--side-note">
+                    {{$t('forInstanceAbbr')}} {{exampleCode}}
+                </div>
             </label>
-            <div>
-                {{$t('forInstanceAbbr')}} {{exampleCode}}
-            </div>
             <input
                 v-model="testCode"
                 v-on:keyup.enter="submit"

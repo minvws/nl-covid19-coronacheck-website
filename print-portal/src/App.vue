@@ -8,6 +8,12 @@ import { handleRejection } from '@/tools/error-handler';
 
 export default {
     components: { Snackbar, Modal, Identity },
+    data() {
+        return {
+            initPhaseHasErrored: false,
+            timer: null
+        }
+    },
     computed: {
         dataReady() {
             return this.currentLanguage && this.$store.state.holderConfig && this.$store.state.testProviders.all.length > 0;
@@ -20,6 +26,9 @@ export default {
         },
         modalIsActive() {
             return this.displayModal || this.$store.state.slotModalActive;
+        },
+        currentRoute() {
+            return this.$route.name
         }
     },
     methods: {
@@ -40,7 +49,8 @@ export default {
                     this.$store.commit('setHolderConfig', holderConfig);
                 }
             }).catch((error) => {
-                handleRejection(error);
+                this.initPhaseHasErrored = true;
+                handleRejection(error, { flow: 'startup', step: '10', provider_identifier: '000' });
             })
         },
         async getTestProviders() {
@@ -60,7 +70,8 @@ export default {
                     });
                 }
             }).catch((error) => {
-                handleRejection(error);
+                this.initPhaseHasErrored = true;
+                handleRejection(error, { flow: 'startup', step: '20', provider_identifier: '000' });
             })
         },
         addLanguages() {
@@ -86,7 +97,8 @@ export default {
         setTimerToEndSession() {
             const hours = 24;
             const time = hours * 3600000
-            setTimeout(() => {
+            clearTimeout(this.timer);
+            this.timer = setTimeout(() => {
                 this.$router.push({ name: 'Home' })
                 this.$store.commit('sessionEnded')
                 this.$store.commit('modal/set', {
@@ -99,13 +111,22 @@ export default {
     },
     mounted() {
         this.init();
+    },
+    watch: {
+        currentRoute() {
+            // When coming back from the error page after the init phase (config or config_providers) failed
+            // we have to try the config again
+            if (!this.dataReady && this.currentRoute !== 'ErrorGeneral') {
+                this.init();
+            }
+        }
     }
 }
 </script>
 
 <template>
     <div
-        v-if="dataReady"
+        v-if="dataReady || initPhaseHasErrored"
         id="app">
         <div
             :aria-hidden="modalIsActive ? 'true' : 'false'"

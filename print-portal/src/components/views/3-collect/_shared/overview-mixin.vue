@@ -1,10 +1,15 @@
 <script>
 import dateTool from '@/tools/date';
 import signer from '@/interfaces/signer';
-import { handleRejectionSigner } from '@/tools/error-handler';
+import { handleRejection } from '@/tools/error-handler';
 
 export default {
     name: 'overview-mixin',
+    data() {
+        return {
+            proofSubmitted: false
+        }
+    },
     computed: {
         signedEvents() {
             const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);
@@ -52,18 +57,21 @@ export default {
         },
         gotoPrint() {
             if (this.$store.state.qrs.proof === null) {
+                this.proofSubmitted = true;
                 signer.sign(this.$store.state.signedEvents.all).then(response => {
+                    this.proofSubmitted = false;
                     if (response.data) {
                         if (response.data.domestic || response.data.european) {
                             this.$store.commit('qrs/add', response.data);
                             this.$router.push({ name: this.pages.print });
                         } else {
-                            this.$router.push({ name: this.pages.noResultFromSigner });
+                            this.$router.push({ name: 'ErrorProofNotPossible' });
                         }
                         this.setSignedAt(response);
                     }
                 }).catch(error => {
-                    handleRejectionSigner(error);
+                    this.proofSubmitted = false;
+                    handleRejection(error, { flow: this.filter, step: '80', provider_identifier: '000' });
                 })
             } else {
                 this.$router.push({ name: this.pages.print });

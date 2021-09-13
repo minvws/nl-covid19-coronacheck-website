@@ -1,22 +1,19 @@
 import axios from 'axios';
+import { timeoutTime } from '@/data/constants'
 import store from '@/store'
 import { cmsDecode } from '@/tools/cms'
 
-const collect = async (token, filter = '', eventProviderIdentifiers = '*') => {
+const collect = async (tokenSets, filter = '', eventProviderIdentifiers = '*') => {
     return new Promise((resolve, reject) => {
-        getTokens(token).then((tokenSets) => {
-            const filteredTokenSets = tokenSets.filter(tokenSet => {
-                if (eventProviderIdentifiers === '*') {
-                    return true;
-                } else {
-                    return tokenSet.provider_identifier === eventProviderIdentifiers;
-                }
-            })
-            getEvents(filteredTokenSets, filter).then(result => {
-                resolve(result);
-            }, (error) => {
-                reject(error)
-            })
+        const filteredTokenSets = tokenSets.filter(tokenSet => {
+            if (eventProviderIdentifiers === '*') {
+                return true;
+            } else {
+                return tokenSet.provider_identifier === eventProviderIdentifiers;
+            }
+        })
+        getEvents(filteredTokenSets, filter).then(results => {
+            resolve(results);
         }, (error) => {
             reject(error)
         })
@@ -32,12 +29,10 @@ const getTokens = async (token) => {
         axios({
             method: 'post',
             url: window.config.accessTokens,
-            headers
+            headers,
+            timeout: timeoutTime
         }).then((response) => {
-            if (response.data && response.data.payload) {
-                const payload = cmsDecode(response.data.payload)
-                resolve(payload.tokens);
-            }
+            resolve(response);
         }).catch((error) => {
             reject(error);
         })
@@ -45,34 +40,43 @@ const getTokens = async (token) => {
 }
 
 const getEvents = async (tokenSets, filter) => {
-    const response = {
-        events: [],
-        errors: [],
-        hasAtLeastOneUnomi: false
-    }
+    const results = []
     for (const tokenSet of tokenSets) {
         const eventProvider = store.getters['eventProviders/getTestProviderByIdentifier'](tokenSet.provider_identifier);
 
-        let result;
         if (eventProvider) {
-            try {
-                result = await unomi(eventProvider, tokenSet, filter);
-            } catch (error) {
-                response.errors.push(error);
-            }
-            if (result && result.informationAvailable) {
-                response.hasAtLeastOneUnomi = true;
-                try {
-                    await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
-                        response.events.push(signedEvent)
-                    })
-                } catch (error) {
-                    response.errors.push(error);
+            let result;
+            const resultForEventProvider = {
+                eventProvider: tokenSet.provider_identifier,
+                unomi: {
+                    result: false,
+                    error: null
+                },
+                events: {
+                    result: null,
+                    error: null,
+                    parsingError: false
                 }
             }
+            try {
+                result = await unomi(eventProvider, tokenSet, filter);
+                resultForEventProvider.unomi.result = true;
+            } catch (error) {
+                resultForEventProvider.unomi.error = error;
+            }
+            if (result && result.informationAvailable) {
+                try {
+                    await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
+                        resultForEventProvider.events.result = signedEvent;
+                    })
+                } catch (error) {
+                    resultForEventProvider.events.error = error;
+                }
+            }
+            results.push(resultForEventProvider)
         }
     }
-    return response;
+    return results;
 }
 
 const unomi = async (eventProvider, tokenSet, filter) => {
@@ -86,7 +90,8 @@ const unomi = async (eventProvider, tokenSet, filter) => {
             method: 'post',
             headers: headers,
             url: eventProvider.unomi_url,
-            data: { filter: filter }
+            data: { filter: filter },
+            timeout: timeoutTime
         }).then((response) => {
             if (response.data && response.data.payload) {
                 const payload = cmsDecode(response.data.payload)
@@ -112,7 +117,8 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
             method: 'post',
             headers: headers,
             url: url,
-            data: { filter: filter }
+            data: { filter: filter },
+            timeout: timeoutTime
         }).then((response) => {
             resolve(response.data)
         }).catch((error) => {
@@ -122,5 +128,6 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
 }
 
 export default {
+    getTokens,
     collect
 }

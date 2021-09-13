@@ -4,13 +4,8 @@ import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
 
 export default {
-    name: 'RecoveryNotPossible',
+    name: 'ErrorSessionExpired',
     components: { Page, PageIntro, CcButton },
-    computed: {
-        recoveryExpirationDays() {
-            return this.$store.state.holderConfig.recoveryExpirationDays;
-        }
-    },
     methods: {
         goHome() {
             this.$router.push({ name: 'Home' })
@@ -24,8 +19,8 @@ export default {
         :display-back-button="false">
         <div class="section">
             <PageIntro
-                :head="$t('views.recoveryNotPossible.pageHeader')"
-                :intro="$t('views.recoveryNotPossible.pageIntro')"/>
+                :head="$t('views.errorSessionExpired.pageHeader')"
+                :intro="$t('views.errorSessionExpired.pageIntro')"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

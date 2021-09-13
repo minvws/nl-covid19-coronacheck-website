@@ -4,7 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
 
 export default {
-    name: 'VaccinationsNotPossible',
+    name: 'ErrorProofNotPossible',
     components: { Page, PageIntro, CcButton },
     methods: {
         goHome() {
@@ -19,8 +19,8 @@ export default {
         :display-back-button="false">
         <div class="section">
             <PageIntro
-                :head="$t('views.notPossibleVaccinations.pageHeader')"
-                :intro="$t('views.notPossibleVaccinations.pageIntro')"/>
+                :head="$t('views.errorProofNotPossible.pageHeader')"
+                :intro="$t('views.errorProofNotPossible.pageIntro')"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

@@ -8,6 +8,7 @@ import i18n from './i18n';
 import AuthService from '@/interfaces/authentication';
 
 import PortalVue from 'portal-vue'
+import { timeoutTime } from '@/data/constants'
 Vue.use(PortalVue)
 
 const getBaseUrl = () => {
@@ -20,7 +21,8 @@ Vue.prototype.authNegativeTests = new AuthService(baseUrl + 'jouw-testresultaat-
 Vue.prototype.authRecovery = new AuthService(baseUrl + 'recovery-redirect');
 
 const axiosConfig = {
-    baseURL: window.config.api
+    baseURL: window.config.api,
+    timeout: timeoutTime
 };
 Vue.prototype.$axios = axios.create(axiosConfig)
 

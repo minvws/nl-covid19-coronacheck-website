@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "e2e:open": "cypress run --no-exit --browser chrome",
     "e2e": "cypress run --browser chrome",
-    "e2e:specific": "cypress run --no-exit --browser chrome --spec  cypress/integration/negative-test/side-flows/negative-test-proofs-european.spec.js",
+    "e2e:specific": "cypress run --no-exit --browser chrome --spec  cypress/integration/negative-test/unhappy/negative-test-none-token.spec.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -23,10 +23,10 @@
     "portal-vue": "^2.1.7",
     "register-service-worker": "^1.7.1",
     "v-click-outside": "^3.1.2",
-    "vue": "^2.6.11",
+    "vue": "^2.6.14",
     "vue-i18n": "^8.24.4",
     "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -55,6 +55,6 @@
     "qrcode": "^1.4.4",
     "sass-loader": "^8.0.2",
     "typescript": "^4.3.4",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.14"
   }
 }

@@ -4,11 +4,20 @@ import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
 
 export default {
-    name: 'TestResultOtherSomethingWrong',
+    name: 'ErrorGeneral',
     components: { Page, PageIntro, CcButton },
     methods: {
         goHome() {
             this.$router.push({ name: 'Home' })
+        }
+    },
+    computed: {
+        errors() {
+            if (this.$route.query.errors) {
+                return '<ul class="ul--with-padding">' + this.$route.query.errors.split('+').map(e => '<li>' + e + '</li>').join('') + '</ul>';
+            } else {
+                return [];
+            }
         }
     }
 }
@@ -19,8 +28,8 @@ export default {
         :display-back-button="false">
         <div class="section">
             <PageIntro
-                :head="$t('views.testResultOtherSomethingWrong.pageHeader')"
-                :intro="$t('views.testResultOtherSomethingWrong.pageIntro', { error: $route.query.error })"/>
+                :head="$t('views.errorGeneral.pageHeader')"
+                :intro="$t('views.errorGeneral.pageIntro', { errors: errors })"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

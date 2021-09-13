@@ -34,3 +34,9 @@ export default {
         <Footer/>
     </div>
 </template>
+
+<style lang="scss">
+ul.ul--with-padding {
+    padding-left: 1em;
+}
+</style>

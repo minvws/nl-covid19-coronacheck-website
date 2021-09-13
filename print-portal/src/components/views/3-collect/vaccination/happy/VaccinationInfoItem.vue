@@ -94,7 +94,7 @@ export default {
             }
         },
         vaccinationDate() {
-            return dateTool.dateToString(this.vaccination.date, 'dd-MM-yyyy');
+            return dateTool.dateToString(this.vaccination.date, 'date-without-day', this.currentLanguage.locale);
         },
         vaccinationCountry() {
             return this.vaccination.country;
@@ -215,7 +215,7 @@ export default {
                     <dt>
                         {{$t('components.vaccination.info.identificationCode')}}:<br>
                     </dt>
-                    <dd>
+                    <dd class="word-wrap">
                         {{identificationCode}}
                     </dd>
                 </div>

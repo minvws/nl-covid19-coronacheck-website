@@ -7,6 +7,7 @@ import ProvideVerificationCode from './ProvideVerificationCode';
 import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import { cmsDecode } from '@/tools/cms'
+import { hasInternetConnection, messageInternetConnection, getErrorCode } from '@/tools/error-handler';
 
 export default {
     name: 'ProvideCode',
@@ -41,7 +42,7 @@ export default {
                 this.checkPrefixLength &&
                 this.checkIfHasTestProvider &&
                 this.checkSuffixLength &&
-                this.checkCheckSumIsValid;
+                (this.luhnCheckIsEnabled && this.checkCheckSumIsValid);
         },
         isVerificationCodeValid() {
             return this.checkIfIsCorrectLength && this.checkIfIsOnlyNumber;
@@ -59,8 +60,7 @@ export default {
             return this.checksumSet.length === 2;
         },
         checkCheckSumIsValid() {
-            // return this.checkSum ? (this.luhn === this.checkSum) : false;
-            return true;
+            return this.checkSum ? (this.luhn === this.checkSum) : false;
         },
         checkIfIsCorrectLength() {
             return this.verificationCode.length >= 5;
@@ -90,16 +90,23 @@ export default {
             return this.checksumSet ? this.checksumSet[0] : null;
         },
         luhn() {
-            return luhnModN.generateCheckCharacter(this.token.toUpperCase());
+            return this.token ? luhnModN.generateCheckCharacter(this.token.toUpperCase()) : '';
+        },
+        luhnCheckIsEnabled() {
+            return this.$store.state.holderConfig.luhnCheckEnabled;
         }
     },
     methods: {
         submitTestCode() {
             if (this.testCode.length > 0) {
-                if (this.isTestCodeValid) {
-                    this.getSignedResult({ includeVerificationCode: false });
+                if (this.checkIfHasTestProvider) {
+                    if (this.isTestCodeValid) {
+                        this.getSignedResult({ includeVerificationCode: false });
+                    } else {
+                        this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                    }
                 } else {
-                    this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                    this.testCodeStatus.error = this.$t('views.provideCode.unknownTestProvider');
                 }
             } else {
                 this.testCodeStatus.error = this.$t('views.provideCode.emptyTestCode');
@@ -116,7 +123,7 @@ export default {
                 this.verificationCodeStatus.error = this.$t('views.provideCode.emptyVerificationCode');
             }
         },
-        addNegativeTestV2(signedEvent) {
+        addNegativeTest(signedEvent) {
             this.testCodeStatus.error = '';
             this.$store.commit('signedEvents/createAll', [signedEvent]);
             this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0' } });
@@ -144,16 +151,36 @@ export default {
                     data: data
                 }).then((response) => {
                     if (response.data && response.data.payload) {
-                        const payload = cmsDecode(response.data.payload);
-                        if (payload.status === 'complete') {
-                            this.addNegativeTestV2(response.data)
-                        } else if (payload.status === 'pending') {
-                            this.$router.push({ name: 'TestResultPending' })
+                        try {
+                            const payload = cmsDecode(response.data.payload);
+                            const hasEvents = (payload) => {
+                                if (payload.protocolVersion === '3.0') {
+                                    return payload.events && payload.events.length > 0;
+                                } else {
+                                    return payload.result;
+                                }
+                            }
+                            if (payload.status === 'complete') {
+                                if (hasEvents(payload)) {
+                                    this.addNegativeTest(response.data)
+                                } else {
+                                    this.$store.commit('clearAll');
+                                    this.$router.push({ name: 'TestResultNone' })
+                                }
+                            } else if (payload.status === 'pending') {
+                                this.$store.commit('clearAll');
+                                this.$router.push({ name: 'TestResultPending' })
+                            }
+                        } catch (error) {
+                            this.$store.commit('clearAll');
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '60', provider_identifier: this.testProviderIdentifier, parsingError: true }) } });
                         }
                     }
                 }).catch((error) => {
-                    if (error.response) {
-                        const errorCause = this.getCauseOfError(error.response)
+                    if (!hasInternetConnection()) {
+                        messageInternetConnection();
+                    } else {
+                        const errorCause = this.getCauseOfError(error)
                         switch (errorCause) {
                         case 'invalid_token':
                             this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
@@ -161,7 +188,7 @@ export default {
                         case 'verification_required':
                             this.$store.commit('setVerificationNeeded', true);
                             this.testCodeStatus.error = '';
-                            if (options.includeVerificationCode) {
+                            if (options.includeVerificationCode || errorCause === 'invalid_token') {
                                 this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
                             }
                             break;
@@ -170,38 +197,36 @@ export default {
                             this.$router.push({ name: 'ServerBusy' });
                             break
                         default:
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: this.testProviderIdentifier }) } });
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'TestResultOtherSomethingWrong', query: { error: errorCause } });
                             break
                         }
-                    } else {
-                        this.$store.commit('modal/set', {
-                            messageHead: this.$t('message.error.general.head'),
-                            messageBody: (this.$t('message.error.general.body') + '<p>' + error + '</p>'),
-                            closeButton: true
-                        });
                     }
                 })
             })
         },
-        getCauseOfError(response) {
-            if (response.status === 429) {
-                return '429';
-            } else {
-                if (response.data && response.data.payload) {
-                    const payload = cmsDecode(response.data.payload);
-                    if (payload.status) {
-                        return payload.status;
-                    } else {
-                        return 'unknown_error';
-                    }
+        getCauseOfError(error) {
+            if (error.response) {
+                if (error.response.status === 429) {
+                    return '429';
                 } else {
-                    if (response.status) {
-                        return response.status;
+                    if (error.response.data && error.response.data.payload) {
+                        const payload = cmsDecode(error.response.data.payload);
+                        if (payload.status) {
+                            return payload.status;
+                        } else {
+                            return 'unknown_error';
+                        }
                     } else {
-                        return 'unknown_error';
+                        if (error.response.status) {
+                            return error.response.status;
+                        } else {
+                            return 'unknown_error';
+                        }
                     }
                 }
+            } else {
+                return 'unknown_error';
             }
         },
         back() {

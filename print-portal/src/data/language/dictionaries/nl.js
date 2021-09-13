@@ -10,14 +10,23 @@ const nl = {
     'views': {
         'home': {
             'pageHeader': 'Krijg toegang met een papieren bewijs',
-            'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2><p>Een bewijs op papier is handig als je geen smartphone hebt. Dit is hoe het werkt:</p><div class="home__section"><h3>Alleen toegang met een bewijs</h3><p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang. Je kan een coronabewijs maken als je bent gevaccineerd, als uit een test blijkt dat je geen corona hebt of als je corona hebt gehad en bent hersteld.</p></div><div class="home__section"><h3>QR-code = jouw bewijs</h3><p>Van jouw testuitslag of vaccinatie wordt een QR-code gemaakt. Dat is jouw bewijs. De QR-code wordt gecheckt bij de ingang van plekken en activiteiten. Of aan de grens.</p></div><div class="home__section"><h3>QR-codes voor Nederland en internationaal</h3><p>Je krijgt twee QR-codes: één voor Nederland en één voor internationaal. Reis je buiten Nederland? Gebruik dan je internationale QR-code.</p></div>',
+            'pageIntro': '<h2 class="screen-reader-text">Zo werkt het</h2>' +
+                '<p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang.</p>' +
+                '<p>Een bewijs op papier is handig als je geen smartphone hebt.</p>' +
+                '<h4>Bewijs van test of vaccinatie</h4>' +
+                '<p>Je kan een coronabewijs maken met CoronaCheck als:' +
+                '<ul class="ul--with-padding"><li>je bent gevaccineerd</li><li>uit een test blijkt dat je geen corona had</li><li>uit een test blijkt dat je corona hebt gehad en bent hersteld</li></ul></p>' +
+                '<h4>QR-code = jouw bewijs</h4>' +
+                '<p>CoronaCheck maakt van jouw vaccinatie of testuitslag een QR-code. Dat is jouw bewijs. De QR-code wordt gecheckt voordat je toegang krijgt.</p>' +
+                '<h4>QR-codes voor Nederland en internationaal</h4>' +
+                '<p>CoronaCheck maakt twee QR-codes: één voor Nederland en een internationale. Ben je in het buitenland of ga je de grens over? Gebruik dan altijd de internationale QR-code.</p>',
             'userConsentHeader': 'Maak een papieren bewijs',
             'userConsentText': 'Ik heb de <a href="https://coronacheck.nl/nl/privacy" target="_blank" rel="noopener noreferrer">privacyverklaring</a> gelezen en begrijp hoe CoronaCheck mijn gegevens gebruikt',
             'noConsentError': 'Ga eerst akkoord met de privacyverklaring'
         },
         'choiceProof': {
-            'pageHeader': 'Wat voor bewijs wil je maken?',
-            'pageIntro': '<p>Geef aan wat voor bewijs je wil maken.</p>',
+            'pageHeader': 'Waar wil je een papieren bewijs van maken?',
+            'pageIntro': '',
             'choiceTestHeader': 'Een testbewijs',
             'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
             'choiceRecoveryHeader': 'Een herstelbewijs',
@@ -27,23 +36,23 @@ const nl = {
         },
         'choiceTestLocation': {
             'pageHeader': 'Waar ben je getest?',
-            'pageIntro': '<p>Geef aan of je bij de GGD of bij een andere testlocatie getest bent.</p>',
+            'pageIntro': '<p>Blijkt uit de test dat je geen corona hebt? Dan kan je van de testuitslag een QR-code maken. Geef aan waar je getest bent.</p>',
             'choiceGGDHead': 'GGD',
-            'choiceGGDBody': 'Login met DigiD',
+            'choiceGGDBody': 'Log in met DigiD',
             'loginDigid': 'Ik heb geen DigiD',
             'choiceOtherLocation': 'Andere testlocatie',
             'didNotGetTestedYet': 'Ik ben nog niet getest'
         },
         'collectVaccination': {
-            'pageHeader': 'Vaccinatie ophalen',
-            'pageIntro': '<p>Ben je al gevaccineerd? Log in met DigiD. De gegevens van je vaccinatie worden dan automatisch opgehaald.</p><p>Nog geen prik gehad? Laat je dan eerst vaccineren.</p>'
+            'pageHeader': 'Gegevens van je vaccinatie ophalen',
+            'pageIntro': '<p>Ben je al gevaccineerd? Log in met DigiD. De gegevens van je vaccinatie worden dan automatisch opgehaald.</p>'
         },
         'vaccinationOverview': {
             'pageHeader': 'Jouw opgehaalde vaccinaties',
-            'pageIntro': '<p>Je kan een bewijs maken van je vaccinaties.</p>',
-            'createTestProofButton': 'Maak QR-code'
+            'pageIntro': '<p>Met de gegevens die zijn opgehaald kun je een QR-code maken. Dat is jouw bewijs.</p>',
+            'createTestProofButton': 'Maak bewijs'
         },
-        'noVaccinations': {
+        'vaccinationsNone': {
             'pageHeader': 'Geen vaccinatie(s) beschikbaar',
             'pageIntro': '<p>Er zijn geen gegevens over je vaccinatie beschikbaar.</p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren voordat je gegevens beschikbaar zijn.<p>Het kan zijn dat jouw huisarts niet is aangesloten op de GGD. Op de <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a> vind je meer informatie.</a></p>'
         },
@@ -61,93 +70,181 @@ const nl = {
         },
         'provideCode': {
             'pageHeader': 'Testuitslag ophalen',
-            'pageIntro': 'Vul jouw ophaalcode in. Deze heb je van de testlocatie gekregen. Of klik op de link in de e-mail die je van je testlocatie krijgt.',
+            'pageIntro': 'Vul jouw ophaalcode in. Deze heb je van je testlocatie gekregen.',
             'uniqueCode': 'Ophaalcode',
             'verificationCode': 'Verificatiecode',
             'verificationCodeDirection': 'Je krijgt een code in een sms of e-mail',
             'sendAgain': 'Verstuur opnieuw',
             'didNotGetCode': 'Ik heb geen code gekregen',
             'emptyTestCode': 'Ophaalcode niet ingevuld',
+            'unknownTestProvider': 'De testlocatie is ons niet bekend. Neem contact op met de locatie waar je getest bent.',
             'invalidTestCode': 'Geen geldige ophaalcode',
+            'tokenExpired': 'Ophaalcode is niet meer geldig',
             'invalidVerificationCode': 'Geen geldige verificatiecode',
             'emptyVerificationCode': 'Verificatiecode niet ingevuld',
             'sendCode': 'Stuur code'
         },
         'negativeTestOverview': {
             'pageHeader': 'Controleer je testuitslag',
-            'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie.</p><p>Kloppen de gegevens hieronder? Dan kun je van de negatieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
-            'createTestProofButton': 'Maak QR-code',
+            'pageIntro': '<p>Deze testuitslag is opgehaald bij de testlocatie. Kloppen de gegevens? Dan kun je een QR-code maken van je testuitslag. Dat is jouw bewijs.</p>',
+            'createTestProofButton': 'Maak bewijs',
             'retrievedTestResult': 'Opgehaalde testuitslag'
-        },
-        'negativeTestNotPossible': {
-            'pageHeader': 'We kunnen geen bewijs maken',
-            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken van jouw testuitslag. Dit kan verschillende oorzaken hebben. <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">Meer informatie over mogelijke oorzaken</a>.</p>'
         },
         'testResultPending': {
             'pageHeader': 'Testuitslag nog niet bekend',
             'pageIntro': 'Probeer het later nog eens.<br>Neem voor vragen contact op met jouw testlocatie.'
         },
         'testResultNone': {
-            'pageHeader': 'Geen negatieve testuitslag',
-            'pageIntro': 'Er is geen negatieve testuitslag beschikbaar.'
-        },
-        'testResultOtherSomethingWrong': {
-            'pageHeader': 'Sorry, er gaat iets mis',
-            'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
+            'pageHeader': 'Geen testuitslag beschikbaar',
+            'pageIntro': '<p>Er zijn geen gegevens over je testuitslag beschikbaar. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/wegwijzer.html" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p><p>Heb je al een testuitslag van de GGD gekregen? Dan kan het nog een paar uur duren voordat je de uitslag hier kunt ophalen. Probeer het later opnieuw.</p>'
         },
         'recoveryOverview': {
-            'pageHeader': 'Jouw positieve testuitslag',
-            'pageIntro': '<p>Als je gegevens kloppen dan kun je een QR-code maken van je positieve testuitslag. Dat is jouw bewijs.</p>'
+            'pageHeader': 'Jouw opgehaalde positieve testuitslag',
+            'pageIntro': '<p>Kloppen je gegevens? Dan kun je van je positieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
+            'createTestProofButton': 'Maak bewijs'
         },
         'recoveryNone': {
             'pageHeader': 'Geen positieve testuitslag beschikbaar',
             'pageIntro': '<p>Er is geen positieve testuitslag beschikbaar.</p><p>Ben je net getest? Het kan een paar uur duren voordat je positieve test verwerkt is. Probeer het later nog eens.</p><p>Is het langer dan %{days} dagen geleden dat je getest bent? Dan is je testuitslag niet meer geldig. Je kunt dan ook geen herstelbewijs maken.</p>'
-        },
-        'recoveryNotPossible': {
-            'pageHeader': 'We kunnen geen bewijs maken',
-            'pageIntro': 'Op dit moment kunnen we geen bewijs maken van jouw positieve test. Dit kan verschillende oorzaken hebben. Lees <a href="https://coronacheck.nl/nl/wegwijzer.html" target="_blank" rel="noopener noreferrer">hier</a> meer.'
         },
         'print': {
             'openPDF': 'Open PDF'
         },
         'printNegativeTest': {
             'both': {
-                'pageHeader': 'Print jouw bewijzen',
-                'pageIntro': '<h4>Jouw bewijzen</h4><p>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een QR-code voor als je internationaal reist.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+                'pageHeader': 'Print jouw testbewijs',
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw testbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<h4>QR-code voor Nederland en internationaal</h4>' +
+                    '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
+                    '<h4>Geldigheid verschilt per land</h4>' +
+                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
             },
             'european': {
                 'pageHeader': 'Print jouw internationale testbewijs',
-                'pageIntro': '<h4>Jouw bewijs</h4><p>Je hebt een testbewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Er is geen Nederlands bewijs gemaakt omdat het type test niet voldoet, of omdat het testbewijs al verlopen is in Nederland.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar het land waar je heen reist.</p>'
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw testbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<h4>Alleen een internationale QR-code</h4>' +
+                    '<p>In de PDF vind je alleen een internationale QR-code. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p>' +
+                    '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.</p>' +
+                    '<h4>Geldigheid verschilt per land</h4>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming.<br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar het land waar je heen reist.</p>'
+            },
+            'domestic': {
+                'pageHeader': 'Print jouw Nederlandse testbewijs',
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw testbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<h4>Alleen een Nederlandse QR-code </h4>' +
+                    '<p>In de PDF vind je alleen een Nederlandse QR-code. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet om de grens over te gaan of in het buitenland.</p>' +
+                    '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat het type test niet geaccepteerd wordt in andere landen. Laat je opnieuw testen voor een bewijs dat ook internationaal geldig is.</p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>'
             }
         },
         'printVaccination': {
             'both': {
-                'pageHeader': 'Print jouw bewijzen',
-                'pageIntro': '<h4>Jouw bewijzen</h4><p>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt nu twee QR-codes: één voor Nederland en één internationale.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+                'pageHeader': 'Print jouw vaccinatiebewijs',
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw vaccinatiebewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<h4>QR-code voor Nederland en internationaal</h4>' +
+                    '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
+                    '<h4>Geldigheid verschilt per land</h4>' +
+                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>' +
+                    '<p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
             },
             'european': {
                 'pageHeader': 'Print jouw internationale vaccinatiebewijs',
-                'pageIntro': '<h4>Jouw bewijs</h4><p>Je hebt een vaccinatiebewijs gemaakt, in de vorm van een QR-code. Je hebt alleen een internationaal bewijs. Dit kan komen doordat je nog maar één vaccinatie hebt gehad. Probeer opnieuw een Nederlands bewijs te maken als je volledig gevaccineerd bent.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p><p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw vaccinatiebewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<h4>Alleen een internationale QR-code</h4>' +
+                    '<p>In de PDF vind je alleen een internationale QR-code. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p>' +
+                    '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat je maar één prik hebt gehad. Na je tweede vaccinatie kun je een nieuw bewijs maken dat ook in Nederland geldig is. ' +
+                    '<a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Lees hier meer over de mogelijke oorzaken</a>.</p>' +
+                    '<h4>Geldigheid verschilt per land</h4>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming.<br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar het land waar je heen reist.</p>' +
+                    '<p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
             }
             // domestic only is a non existing scenario for vaccination
         },
         'printRecovery': {
             'both': {
-                'pageHeader': 'Print jouw bewijzen',
-                'pageIntro': '<h4>Jouw bewijzen</h4><p>Je hebt een herstelbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een internationale QR-code.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+                'pageHeader': 'Print jouw herstelbewijs',
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw herstelbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<h4>QR-code voor Nederland en internationaal</h4>' +
+                    '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
+                    '<h4>Geldigheid verschilt per land</h4>' +
+                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
             },
             'domestic': {
                 'pageHeader': 'Print jouw Nederlandse herstelbewijs',
-                'pageIntro': '<h4>Jouw bewijs</h4><p>Je hebt een Nederlands herstelbewijs gemaakt, in de vorm van een QR-code. Deze is binnen Nederland geldig, maar internationaal niet.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt.</p>'
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw herstelbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<h4>Alleen een Nederlandse QR-code </h4>' +
+                    '<p>In de PDF vind je alleen een Nederlandse QR-code. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet om de grens over te gaan of in het buitenland.</p>' +
+                    '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden.</p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>'
             },
             // european only is a non existing scenario for recovery
-            'validInFuture': {
-                'pageIntro': '<h4>Jouw bewijzen</h4><p>Je hebt een herstelbewijs gemaakt, in de vorm van een QR-code. Je hebt een QR-code voor binnen Nederland en een internationale QR-code.</p><p>Je herstelbewijs wordt 11 dagen na de posititieve testuitslag geldig.</p><h4>Informatie in de QR</h4><p><a href="https://coronacheck.nl/nl/faq/1-6-welke-informatie-staat-in-mijn-qr-code/" target="_blank" rel="noopener noreferrer">Dit is wat er in de QR-codes staat</a>.</p><h4>En nu?</h4><p>Print de PDF en neem het printje mee naar de locatie of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+            'bothValidInFuture': {
+                'pageHeader': 'Print jouw herstelbewijs',
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw herstelbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>' +
+                    '<h4>QR-code voor Nederland en internationaal</h4>' +
+                    '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
+                    '<h4>Geldigheid verschilt per land</h4>' +
+                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
+            },
+            'domesticValidInFuture': {
+                'pageHeader': 'Print jouw Nederlandse herstelbewijs',
+                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw herstelbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
+                    '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>' +
+                    '<h4>Alleen een Nederlandse QR-code </h4>' +
+                    '<p>In de PDF vind je alleen een Nederlandse QR-code. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet om de grens over te gaan of in het buitenland.</p>' +
+                    '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden.</p>' +
+                    '<h4>En nu?</h4>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>'
             }
         },
         'serverBusy': {
             'pageHeader': 'Sorry, het is erg druk',
-            'pageIntro': '<p>Probeer het later nog eens.</p>'
+            'pageIntro': '<p>Probeer het op een later moment nog eens.</p>'
+        },
+        'errorNoEvents': {
+            'pageHeader': 'Sorry, het is niet gelukt',
+            'pageIntro': '<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.</p><p>Tip: wacht een uur en probeer het dan nog een keer.</p>'
+        },
+        'errorTokenFlow': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
+        },
+        'errorGeneral': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Er gaat iets mis bij het maken van je bewijs. Wil je het later nog eens proberen?</p><p><strong>Foutcode(s)</strong><br>%{errors}</p><p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
+        },
+        'errorNoBsn': {
+            'pageHeader': 'Geen BSN gevonden',
+            'pageIntro': '<p>De zorgverlener waar je gevaccineerd of getest bent kan je verder helpen. Neem contact op en geef door dat CoronaCheck geen BSN gevonden heeft.</p>'
+        },
+        'errorSessionExpired': {
+            'pageHeader': 'Je sessie is verlopen',
+            'pageIntro': '<p>Je hebt te lang gewacht. Voor de veiligheid ben je daarom uitgelogd. Log opnieuw in met DigiD om je gegevens op te halen.</p>'
+        },
+        'errorProofNotPossible': {
+            'pageHeader': 'We kunnen geen bewijs maken',
+            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
         }
     },
     'components': {
@@ -223,12 +320,13 @@ const nl = {
             }
         },
         'digid': {
-            'loginDigid': 'Login met DigiD',
+            'loginDigid': 'Log in met DigiD',
             'dontHaveDigid': 'Ik heb geen DigiD',
             'proofType': {
                 'negativetest': 'testuitslag',
-                'vaccination': 'vaccinaties',
-                'positivetest': 'testuitslag'
+                'vaccination': 'vaccinatie(s)',
+                'positivetest': 'testuitslag',
+                'positivetest,recovery': 'testuitslag'
             }
         }
     },
@@ -237,15 +335,15 @@ const nl = {
             'somethingWrong': {
                 'vaccination': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen je gegevens niet? Of mist er een vaccinatie? Op de <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a> vind je meer informatie over wat te doen.</p><p>Mist er een prik? Neem contact op met de locatie waar je bent gevaccineerd.</p>'
+                    'body': '<p>Kloppen er gegevens niet? Neem dan contact op met de zorgverlener waar je bent gevaccineerd. Zij kunnen je gegevens aanpassen.</p>'
                 },
                 'negativetest': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.</p>'
+                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie. Zij kunnen de gegevens aanpassen.</p>'
                 },
                 'positivetest': {
                     'head': 'Er klopt iets niet',
-                    'body': '<p>Kloppen jouw gegevens niet met je identiteitsbewijs? Neem contact op met je testlocatie om je  gegevens te laten aanpassen.'
+                    'body': '<p>Kloppen er gegevens niet? Neem contact op met je testlocatie. Zij kunnen de gegevens aanpassen.</p>'
                 }
             },
             'noVerificationCode': {
@@ -254,18 +352,19 @@ const nl = {
             },
             'didNotGetTestedYet': {
                 'head': 'Ik ben nog niet getest',
-                'body': '<p>Je moet je eerst laten testen voordat je een QR-code kan maken. Als uit de test blijkt dat je geen corona hebt kan je jouw QR-code maken.</p><p>Een testbewijs is geldig tot 24 uur na het moment van testen. Plan je test dus op tijd. En zorg dat jouw QR-code binnen 24 uur gescand is bij de ingang.</p><p><a href="https://coronacheck.nl/nl/testafspraak-in-app" class="btn" target="_blank" rel="noopener noreferrer">Maak een afspraak</a></p>'
+                'body': '<p>Voor een testbewijs moet je eerst een test doen. Blijkt uit de test dat je geen corona hebt? Dan kan je jouw QR-code maken.</p>' +
+                    '<p><a href="https://coronacheck.nl/nl/testafspraak-in-app" class="btn" target="_blank" rel="noopener noreferrer">Maak een afspraak</a></p>'
             },
             'areYouSureToCancel': {
                 'head': 'Weet je zeker dat je wilt stoppen?',
-                'body': 'Je moet dan later opnieuw met DigiD inloggen om je %{type} op te halen.',
+                'body': 'Je moet dan later opnieuw je gegevens ophalen.',
                 'yes': 'Ja, stop',
                 'no': 'Nee, ga door'
             },
             'digidCanceled': {
-                'head': 'Inloggen is niet gelukt',
-                'body': 'Je kunt opnieuw inloggen om je %{type} op te halen.',
-                'vaccination': 'vaccinaties',
+                'head': 'Inloggen afgebroken',
+                'body': 'Wil je jouw %{type} ophalen? Log dan opnieuw in met DigiD.',
+                'vaccination': 'vaccinatiegegevens',
                 'negativetest': 'testuitslag',
                 'positivetest': 'testuitslag'
             },
@@ -278,49 +377,19 @@ const nl = {
             }
         },
         'error': {
-            'expiredTestCode': {
-                'head': 'De ophaalcode is verlopen',
-                'body': '<p>De code die je invult is niet meer geldig. Controleer of je de juiste code hebt ingevuld. Nieuwe code nodig? Laat je dan opnieuw testen.</p>'
-            },
             'general': {
                 'head': 'Sorry, er gaat iets mis',
                 'body': '<p>Neem contact op met de helpdesk van CoronaCheck.</p>'
-            },
-            'generalWithError': {
-                'head': 'Sorry, er is een storing',
-                'body': '<p>Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (%{code}) door. Of probeer het later opnieuw.</p>'
-            },
-            'serverBusy': {
-                'head': '',
-                'body': '<p>Het is erg druk, probeer het later op de dag nog eens</p>'
-            },
-            'someServerBusyButResult': {
-                'head': '',
-                'body': '<p>Gegevens mogelijk niet compleet. Door drukte of een storing bij een van de partijen kunnen er gegevens ontbreken. Probeer het eventueel later nog een keer.</p>'
-            },
-            'someServerBusyNoResult': {
-                'head': 'Sorry, het is erg druk',
-                'body': '<p>Je vaccinaties konden niet worden opgehaald omdat het te druk is. Probeer het op een later moment nog eens.</p>'
-            },
-            'someServerErrorButResult': {
-                'head': '',
-                'body': '<p>Mogelijk zijn niet alle vaccinaties opgehaald omdat er iets fout ging bij bepaalde providers. Indien je vaccinaties mist, probeer het dan nog eens.</p>'
-            },
-            'someServerErrorNoResult': {
-                'head': '',
-                'body': '<p>Je vaccinaties konden niet worden opgehaald omdat er iets fout ging bij bepaalde providers. Probeer het nog eens</p>'
-            },
-            'parseErrorInResult': {
-                'head': '',
-                'body': '<p>Er ging iets mis, resultaat kon niet worden gelezen. Neem contact op met je event provider. (Code: x)</p>'
             },
             'noInternet': {
                 'head': 'Je hebt geen internet',
                 'body': 'Controleer je verbinding en probeer het opnieuw.'
             },
-            'signerFailed': {
-                'head': 'Sorry er gaat iets mis',
-                'body': 'Neem contact op met de helpdesk van CoronaCheck en geef de foutcode (print sign error) door'
+            // this one doesnt need a variable %{type} (as errorNoEvents has), since the other event types only
+            // query 1 event provider, the combination: and events and errors is impossible
+            'collectEventsWithErrors': {
+                'head': 'Zijn dit al je vaccinaties?',
+                'body': '<p>Door een storing of drukte zijn mogelijk niet al jouw gegevens opgehaald. Mist er een vaccinatie? Kom later terug en haal opnieuw je gegevens op.</p>'
             }
         }
     },
@@ -336,13 +405,14 @@ const nl = {
     'details': 'Details',
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
-    'goBackToStart': 'Naar home',
+    'goBackToStart': 'Naar Home',
     'header-appstore': 'Download in de App Store',
     'header-googleplaystore': 'Ontdek het op Google Play',
     'identity_image_alt': 'Holder QR maken',
     'logo-government': 'Logo Rijksoverheid, homepage',
     'next': 'Volgende',
     'of': 'van',
+    'pageTitle': 'CoronaCheck Print Portaal',
     'skiplink': 'Ga direct naar inhoud',
     'somethingIsWrong': 'Klopt er iets niet?',
     'unknown': 'Onbekend',

@@ -1538,7 +1538,7 @@ print-version-title:
 print-version-content:
   nl: Een bewijs op papier is handig als je geen smartphone hebt. Je kunt een bewijs maken van een vaccinatie en/of van een testuitslag. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over bewijzen op papier</span></a>.
   fy: 
-  en: A certificate on paper is convenient if you don’t have a smartphone. You can make a certificate of a vaccination and/or a test result. <a href="/en/faq#paper-certificate">Read more here<span class="screen-reader-text"> about a certificate on paper</span></a>.
+  en: A certificate on paper is convenient if you don’t have a smartphone. You can make a certificate from a vaccination and/or a test result. <a href="/en/faq#paper-certificate">Read more here<span class="screen-reader-text"> about a certificate on paper</span></a>.
 
 print-version-url: 
   nl: /print
