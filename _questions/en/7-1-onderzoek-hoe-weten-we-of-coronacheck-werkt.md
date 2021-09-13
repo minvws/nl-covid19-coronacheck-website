@@ -7,7 +7,7 @@ redirect_from:
 ---
 The printed certificate and the CoronaCheck and [CoronaCheck Scanner](/en/scanner) apps are reviewed continuously. This is done by a team of experts with different backgrounds and expertise and includes both quantitative and qualitative studies aimed at CoronaCheck’s objectives. You can find more information in this factsheet:
 
-<a href="/media/Factsheet_doorlopende_evaluatie.pdf" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Factsheet doorlopende evaluatie (PDF, 78kb, Dutch)</a>
+<a href="/media/Factsheet_doorlopende_evaluatie.pdf" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Factsheet doorlopende evaluatie (PDF, 359kb, Dutch)</a>
 
 The evaluation will run until September. The final report will then be published on this website. Interim reports will be available in July and August.
 
