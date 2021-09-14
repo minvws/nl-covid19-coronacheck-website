@@ -23,6 +23,7 @@ header("Pragma: no-cache");
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>CoronaCheck Redirect</title>
+    <meta http-equiv="refresh" content="0;URL='<?php echo $redirectFullUrl; ?>'" />
 </head>
 <body>
 <p>Open the CoronaCheck App: <a href="<?php echo $redirectFullUrl; ?>"><?php echo $redirectFullUrl; ?></a>.</p>
