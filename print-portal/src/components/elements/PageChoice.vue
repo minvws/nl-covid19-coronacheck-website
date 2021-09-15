@@ -11,6 +11,10 @@ export default {
             type: String,
             required: true
         },
+        bodyIcon: {
+            type: String,
+            required: false
+        },
         inactive: {
             type: Boolean,
             required: false,
@@ -38,6 +42,7 @@ export default {
                 v-if="body"
                 class="PageChoice__body PageChoice__line">
                 {{body}}
+                <img v-if="bodyIcon" :src="bodyIcon"/>
             </div>
         </div>
         <div class="PageChoice__icon">
@@ -85,6 +90,17 @@ export default {
 
     &__header {
         font-weight: 700;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 20px;
+            height: auto;
+            margin-left: 12px;
+        }
     }
 
     &__line {
