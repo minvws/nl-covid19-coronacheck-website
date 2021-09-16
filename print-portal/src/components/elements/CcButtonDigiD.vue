@@ -16,7 +16,7 @@ export default {
         class="btn button-digid">
         <div class="btn__content">
             {{$t('components.digid.loginDigid')}}
-            <img alt="logo DigiD" src="assets/img/digid/logo_digid_rgb.svg"/>
+            <img alt="" src="assets/img/digid/logo_digid_rgb.svg"/>
         </div>
     </button>
 </template>
