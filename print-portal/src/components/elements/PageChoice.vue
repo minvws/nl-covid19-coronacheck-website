@@ -97,7 +97,7 @@ export default {
         align-items: center;
 
         img {
-            width: 20px;
+            width: 24px;
             height: auto;
             margin-left: 12px;
         }
