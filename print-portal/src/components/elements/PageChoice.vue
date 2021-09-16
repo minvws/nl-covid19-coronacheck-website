@@ -42,11 +42,11 @@ export default {
                 v-if="body"
                 class="PageChoice__body PageChoice__line">
                 {{body}}
-                <img v-if="bodyIcon" :src="bodyIcon"/>
+                <img v-if="bodyIcon" :src="bodyIcon" alt=""/>
             </div>
         </div>
         <div class="PageChoice__icon">
-            <img src="assets/img/icons/next.svg"/>
+            <img src="assets/img/icons/next.svg" alt=""/>
         </div>
     </button>
 </template>
