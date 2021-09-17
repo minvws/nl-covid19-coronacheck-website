@@ -16,12 +16,12 @@ export const messageInternetConnection = () => {
 }
 
 export const handleRejection = (error, errorCodeInformation) => {
-    console.dir(error);
     if (!hasInternetConnection()) {
         messageInternetConnection();
         return;
     }
     if (error.code === 'ECONNABORTED') {
+        errorCodeInformation.clientSideCode = '001';
         router.push({ name: 'ErrorTimeout', query: { error: getErrorCode(error, errorCodeInformation) } });
         return;
     }
@@ -35,8 +35,8 @@ export const handleRejection = (error, errorCodeInformation) => {
 export const getErrorCode = (error, errorCodeInformation) => {
     let errorCode, errorBody;
     const flow = getFlowCode(errorCodeInformation.flow);
-    if (errorCodeInformation.parsingError) {
-        errorCode = '030';
+    if (errorCodeInformation.clientSideCode) {
+        errorCode = errorCodeInformation.clientSideCode;
     } else {
         errorCode = (error.response && error.response.status) ? error.response && error.response.status : '';
     }

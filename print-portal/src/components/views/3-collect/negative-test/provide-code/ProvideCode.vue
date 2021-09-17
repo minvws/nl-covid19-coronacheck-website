@@ -173,7 +173,7 @@ export default {
                             }
                         } catch (error) {
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '60', provider_identifier: this.testProviderIdentifier, parsingError: true }) } });
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '60', provider_identifier: this.testProviderIdentifier, clientSideCode: '030' }) } });
                         }
                     }
                 }).catch((error) => {
