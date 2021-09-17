@@ -16,8 +16,13 @@ export const messageInternetConnection = () => {
 }
 
 export const handleRejection = (error, errorCodeInformation) => {
+    console.dir(error);
     if (!hasInternetConnection()) {
         messageInternetConnection();
+        return;
+    }
+    if (error.code === 'ECONNABORTED') {
+        router.push({ name: 'ErrorTimeout', query: { error: getErrorCode(error, errorCodeInformation) } });
         return;
     }
     if (error && error.response && error.response.status && error.response.status === 429) {
