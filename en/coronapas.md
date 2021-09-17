@@ -5,7 +5,7 @@ showBreadCrumbs: true
 title: Coronapas
 contentLang: en
 ---
-In the Netherlands you can use the CoronaCheck app to retrieve your Dutch Corona Certificate and European Digital Corona Certificate. The CoronaCheck application can be downloaded free of charge from the Google play store and Apple App store.
+In the Netherlands you can use the CoronaCheck app to retrieve your Dutch Corona Certificate and European Digital Corona Certificate. The CoronaCheck application can be downloaded free of charge from the Google Play Store and Apple App store.
 
 The media often uses the term ‘coronapas’ or ‘coronapass’ when they refer to the CoronaCheck app.
 
