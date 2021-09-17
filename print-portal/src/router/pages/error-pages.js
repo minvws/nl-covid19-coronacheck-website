@@ -5,6 +5,7 @@ import ErrorTokenFlow from '@/components/views/error-pages/ErrorTokenFlow';
 import ErrorNoBsn from '@/components/views/error-pages/ErrorNoBsn';
 import ErrorSessionExpired from '@/components/views/error-pages/ErrorSessionExpired';
 import ErrorProofNotPossible from '@/components/views/error-pages/ErrorProofNotPossible';
+import ErrorTimeout from '@/components/views/error-pages/ErrorTimeout';
 
 const errorPages = [
     {
@@ -59,6 +60,14 @@ const errorPages = [
         path: '/we-kunnen-geen-bewijs-maken',
         name: 'ErrorProofNotPossible',
         component: ErrorProofNotPossible,
+        meta: {
+            pageHeader: 'error'
+        }
+    },
+    {
+        path: '/server-niet-bereikbaar',
+        name: 'ErrorTimeout',
+        component: ErrorTimeout,
         meta: {
             pageHeader: 'error'
         }
