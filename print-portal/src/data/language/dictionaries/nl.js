@@ -220,7 +220,9 @@ const nl = {
         },
         'serverBusy': {
             'pageHeader': 'Sorry, het is erg druk',
-            'pageIntro': '<p>Probeer het op een later moment nog eens.</p>'
+            'pageIntro': '<p>Probeer het op een later moment nog eens.</p>' +
+                '<p><strong>Foutcode</strong><br>%{error}</p>' +
+                '<p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
         },
         'errorNoEvents': {
             'pageHeader': 'Sorry, het is niet gelukt',
