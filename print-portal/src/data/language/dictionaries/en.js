@@ -214,7 +214,9 @@ const en = {
         },
         'serverBusy': {
             'pageHeader': 'Sorry, it is really busy',
-            'pageIntro': '<p>Please try again later.</p>'
+            'pageIntro': '<p>Please try again later.</p>' +
+                '<p><strong>Error code</strong><br>%{error}</p>' +
+                '<p><a href="https://status.coronacheck.nl/en/">View the latest outages</a></p>'
         },
         'errorNoEvents': {
             'pageHeader': 'Sorry, your details were not retrieved',
