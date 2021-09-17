@@ -247,6 +247,12 @@ const nl = {
         'errorProofNotPossible': {
             'pageHeader': 'We kunnen geen bewijs maken',
             'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
+        },
+        'errorTimeout': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Het is niet gelukt de server te bereiken.</p>' +
+                '<p><strong>Foutcode</strong><br>%{error}</p>' +
+                '<p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
         }
     },
     'components': {
