@@ -7,7 +7,12 @@ module.exports = {
                 args[0].unique = Math.round(Math.random() * 99999999);
                 return args;
             })
-    }
+    },
+    transpileDependencies: [
+        'dcc-pdf-tools',
+        'jspdf',
+        'oidc-client'
+    ]
     // , devServer: {
     //     open: process.platform === 'darwin',
     //     host: '0.0.0.0',
