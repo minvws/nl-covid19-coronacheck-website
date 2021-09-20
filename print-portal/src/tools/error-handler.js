@@ -21,7 +21,7 @@ export const handleRejection = (error, errorCodeInformation) => {
         return;
     }
     if (error && error.response && error.response.status && error.response.status === 429) {
-        router.push({ name: 'ServerBusy' });
+        router.push({ name: 'ServerBusy', query: { error: getErrorCode(error, errorCodeInformation) } });
     } else {
         router.push({ name: 'ErrorGeneral', query: { errors: getErrorCode(error, errorCodeInformation) } });
     }
