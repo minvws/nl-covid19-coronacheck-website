@@ -241,6 +241,12 @@ const en = {
         'errorProofNotPossible': {
             'pageHeader': 'We can’t make a certificate',
             'pageIntro': '<p>At this moment, we can\'t make a certificate. This can have various causes. Read more on the <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
+        },
+        'errorTimeout': {
+            'pageHeader': 'Sorry, something has gone wrong',
+            'pageIntro': '<p>Could not reach the server.</p>' +
+                '<p><strong>Error code</strong><br>%{error}</p>' +
+                '<p><a href="https://status.coronacheck.nl/en/">View the latest outages</a></p>'
         }
     },
     'components': {

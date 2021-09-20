@@ -182,7 +182,7 @@ export default {
                                 errorCodes.push(errorCode);
                             }
                             if (eventProvider.events.parsingError) {
-                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider, parsingError: true });
+                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider, clientSideCode: '030' });
                                 errorCodes.push(errorCode);
                             }
                         }
