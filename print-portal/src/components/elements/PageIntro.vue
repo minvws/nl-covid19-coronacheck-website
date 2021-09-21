@@ -46,4 +46,11 @@ export default {
         line-height: 1.21875;
         margin-bottom: 24px;
     }
+
+    #page-intro {
+
+        a {
+            text-decoration: underline;
+        }
+    }
 </style>
