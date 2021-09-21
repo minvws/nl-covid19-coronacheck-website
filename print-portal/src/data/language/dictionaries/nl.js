@@ -25,7 +25,7 @@ const nl = {
             'noConsentError': 'Ga eerst akkoord met de privacyverklaring'
         },
         'choiceProof': {
-            'pageHeader': 'Waar wil je een papieren bewijs van maken?',
+            'pageHeader': 'Welk papieren bewijs wil je maken?',
             'pageIntro': '',
             'choiceTestHeader': 'Een testbewijs',
             'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
@@ -117,7 +117,7 @@ const nl = {
                     '<h4>QR-code voor Nederland en internationaal</h4>' +
                     '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
                     '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
                     '<h4>En nu?</h4>' +
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
@@ -151,7 +151,7 @@ const nl = {
                     '<h4>QR-code voor Nederland en internationaal</h4>' +
                     '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
                     '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
                     '<h4>En nu?</h4>' +
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>' +
@@ -180,7 +180,7 @@ const nl = {
                     '<h4>QR-code voor Nederland en internationaal</h4>' +
                     '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
                     '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
                     '<h4>En nu?</h4>' +
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
@@ -202,7 +202,7 @@ const nl = {
                     '<h4>QR-code voor Nederland en internationaal</h4>' +
                     '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
                     '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
                     '<h4>En nu?</h4>' +
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
