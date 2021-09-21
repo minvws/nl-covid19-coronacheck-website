@@ -12,7 +12,7 @@ Getting a red screen within the Netherlands? That means that the QR code does no
 
 ## Here’s what you can do:
 
-1. Verify if the time on your phone is set correctly. Make sure to set the date and time to ‘set automatically’.
+1. Verify if the time on your phone and the phone of the scanner are set correctly. Make sure to set the date and time to ‘set automatically’.
 2. Always show an original certificate. A screenshot of a certificate may cause problems.
 3. Completely close the CoronaCheck app. Then launch it again and have your QR code scanned once more.
 
