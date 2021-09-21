@@ -30,7 +30,7 @@ export default {
         <h1
             v-if="head"
             ref="initialTabStart"
-            tabindex="0">
+            tabindex="-1">
             {{head}}
         </h1>
         <div
