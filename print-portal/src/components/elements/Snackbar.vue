@@ -26,13 +26,16 @@ export default {
 </script>
 
 <template>
-    <div class="snackbar">
+    <div
+        class="snackbar"
+        role="status">
         <div class="snackbar__message">
             {{message}}
         </div>
-        <div
+        <button
+            :aria-label="$t('close')"
             @click="close"
-            class="snackbar__close"></div>
+            class="snackbar__close"></button>
     </div>
 </template>
 
