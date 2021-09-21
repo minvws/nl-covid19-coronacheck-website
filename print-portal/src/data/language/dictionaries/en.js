@@ -115,7 +115,8 @@ const en = {
                 'pageHeader': 'Print your certificates',
                 'pageIntro': '<p><strong>Successful! A PDF of your test certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<h4>QR code for the Netherlands and abroad</h4>' +
-                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -127,6 +128,7 @@ const en = {
                     '<h4>QR code for abroad</h4>' +
                     '<p>In the PDF you will only find an international QR code. You can use this if you are abroad or cross the border, but not in the Netherlands.</p>' +
                     '<p>The validity period of your QR code may be shorter in the Netherlands than in other countries. Get tested again for a certificate that is also valid in the Netherlands.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -147,7 +149,8 @@ const en = {
                 'pageHeader': 'Print your certificates',
                 'pageIntro': '<p><strong>Successful! A PDF of your vaccination certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<h4>QR code for the Netherlands and abroad</h4>' +
-                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -161,6 +164,7 @@ const en = {
                     '<p>In the PDF you will only find an international QR code. You can use this if you are abroad or cross the border, but not in the Netherlands.</p>' +
                     '<p>You may not have received a Dutch QR code because you only had one injection. After your second vaccination, you can create a new certificate that is also valid in the Netherlands. ' +
                     '<a href="https://coronacheck.nl/en/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Read more about the possible causes here</a>.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -174,7 +178,8 @@ const en = {
                 'pageHeader': 'Print your certificates',
                 'pageIntro': '<p><strong>Successful! A PDF of your recovery certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<h4>QR code for the Netherlands and abroad</h4>' +
-                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -195,7 +200,8 @@ const en = {
                 'pageIntro': '<p><strong>Successful! A PDF of your recovery certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be free of symptoms.</p>' +
                     '<h4>QR code for the Netherlands and abroad</h4>' +
-                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
