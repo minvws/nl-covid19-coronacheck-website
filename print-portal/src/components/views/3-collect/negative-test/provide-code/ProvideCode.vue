@@ -42,7 +42,7 @@ export default {
                 this.checkPrefixLength &&
                 this.checkIfHasTestProvider &&
                 this.checkSuffixLength &&
-                (this.luhnCheckIsEnabled && this.checkCheckSumIsValid);
+                ((this.luhnCheckIsEnabled && this.checkCheckSumIsValid) || !this.luhnCheckIsEnabled);
         },
         isVerificationCodeValid() {
             return this.checkIfIsCorrectLength && this.checkIfIsOnlyNumber;

@@ -7,7 +7,7 @@ lang: en
 ---
 #### Here’s what you can do:
 
-1. Verify if the time on the visitor’s phone is set correctly. Make sure to set the date and time to ‘set automatically’. Make sure to set the date and time to ‘set automatically’.
+1. Verify if the time on the visitor’s phone and the scanner are set correctly. Make sure to set the date and time to ‘set automatically’.
 2. Verify if the visitor is showing an original certificate. A screenshot of a certificate may cause problems.
 3. Ask the visitor to completely shut down the app and restart it. Please scan the QR code again after.
 

@@ -9,11 +9,12 @@ webonly: true
 ---
 Het geprinte testbewijs en de apps CoronaCheck en CoronaCheck Scanner worden doorlopend onderzocht. Dat doet een team van experts met verschillende disciplines. Dit gaat zowel om kwantitatief als kwalitatief onderzoek en richt zich op de doelstellingen van CoronaCheck. Meer informatie kun je in onderstaande factsheet vinden.
 
-<a href="/media/Factsheet_doorlopende_evaluatie.pdf" rel="noopener noreferrer" target="_blank">Factsheet doorlopende evaluatie (PDF, 78kb)</a>
+<a href="/media/Factsheet_doorlopende_evaluatie.pdf" rel="noopener noreferrer" target="_blank">Factsheet doorlopende evaluatie (PDF, 85kb)</a>
 
 De evaluatie loopt tot en met september. Dan komt het eindrapport op deze website. In juli en augustus komen tussenrapportages beschikbaar. 
 
-<a href="/media/Tussentijdse_rapportage_juli_2021.pdf" rel="noopener noreferrer" target="_blank">Tussentijdse rapportage juli 2021 (PDF, 110kb)</a>
+- <a href="/media/Tussentijdse_rapportage_juli_2021.pdf" rel="noopener noreferrer" target="_blank">Tussentijdse rapportage juli 2021 (PDF, 110kb)</a>
+- <a href="/media/Tussentijdse_rapportage_augustus_2021.pdf" rel="noopener noreferrer" target="_blank">Tussentijdse rapportage augustus 2021 (PDF, 385kb)</a>
 
 Daarnaast is er dagelijks informatie beschikbaar van het aantal downloads van CoronaCheck en [CoronaCheck Scanner](/scanner). Een samenvatting van deze data kun je hier downloaden:
 

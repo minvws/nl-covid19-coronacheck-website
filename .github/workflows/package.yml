@@ -75,6 +75,11 @@ jobs:
       - name: Copy img
         run: cp -R public/nl/print/assets/img public/assets/
 
+      - name: Copy auth redirect script
+        run: cp -R auth.php public/app/auth.php
+      - name: Copy auth2 redirect script
+        run: cp -R auth2.php public/app/auth2.php
+
       - name: Create tar
         run: tar -czf ct_website_${{ env.RELEASE_VERSION }}.tar.gz ./public
 
