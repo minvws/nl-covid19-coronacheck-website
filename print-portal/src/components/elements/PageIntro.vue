@@ -30,7 +30,7 @@ export default {
         <h1
             v-if="head"
             ref="initialTabStart"
-            tabindex="0">
+            tabindex="-1">
             {{head}}
         </h1>
         <div
@@ -45,5 +45,12 @@ export default {
         font-size: 30px;
         line-height: 1.21875;
         margin-bottom: 24px;
+    }
+
+    #page-intro {
+
+        a {
+            text-decoration: underline;
+        }
     }
 </style>

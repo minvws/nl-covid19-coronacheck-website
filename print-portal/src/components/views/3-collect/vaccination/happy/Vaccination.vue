@@ -43,8 +43,8 @@ export default {
 
 <template>
     <div class="proof-event">
-        <div class="proof-event__status proof-event__line">
-            <strong>{{title}}</strong>
+        <div class="proof-event__line">
+            <h2>{{title}}</h2>
         </div>
 
         <dl>
