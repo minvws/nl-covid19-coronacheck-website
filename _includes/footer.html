@@ -10,7 +10,7 @@
     
     {% if page.showTogether  %}
     <div class="footer-samen {{ small }}">
-        <a class="footer-samen__logo" href="{{ site.data.translations.footer-samen-logo-url }}">
+        <a class="footer-samen__logo" href="{{ site.data.translations.footer-samen-logo-url[page.lang] }}">
             <img src="{{ site.baseurl }}/img/logo-alleen-samen.svg?v={{ timeslug }}" alt="{{ site.data.translations.footer-samen-logo[page.lang] }}" width="350" height="88" />
         </a>
     </div>
