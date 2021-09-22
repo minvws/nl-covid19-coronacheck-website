@@ -31,6 +31,5 @@ http_response_code(200);
     <meta http-equiv="refresh" content="0;URL='<?php echo $redirectFullUrl; ?>'" />
 </head>
 <body>
-<p>Open the CoronaCheck App: <a href="<?php echo $redirectFullUrl; ?>"><?php echo $redirectFullUrl; ?></a>.</p>
 </body>
 </html>
