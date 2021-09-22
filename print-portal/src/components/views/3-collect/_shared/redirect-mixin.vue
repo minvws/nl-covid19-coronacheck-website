@@ -107,11 +107,16 @@ export default {
                     })
                 } else if (tooBusy(error)) {
                     this.$router.push({ name: 'ServerBusy' });
-                } else if (isAppAuthError(error)) {
-                    const errorCode = getErrorCode(error, { flow: this.filter, step: '10', provider_identifier: '000', errorBody: error.message });
-                    this.$router.push({ name: 'ErrorGeneral', query: { errors: errorCode } });
                 } else {
-                    handleRejection(error, { flow: this.filter, step: '10', provider_identifier: '000' });
+                    const errorCodeInformation = {
+                        flow: this.filter,
+                        step: '10',
+                        provider_identifier: '000'
+                    }
+                    if (error && error.message) {
+                        errorCodeInformation.errorBody = error.message;
+                    }
+                    handleRejection(error, errorCodeInformation);
                 }
             });
         },
