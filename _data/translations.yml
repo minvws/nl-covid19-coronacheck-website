@@ -727,7 +727,10 @@ badge-huawei-img:
   ro: huawei-en.svg
   tr: huawei-tr.svg
  
-footer-samen-logo-url: https://www.rijksoverheid.nl/coronacheck
+footer-samen-logo-url:
+  nl: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19
+  en: https://www.government.nl/topics/coronavirus-covid-19
+
 footer-samen-logo:
   nl: Alleen samen krijgen we corona onder controle. Meer informatie over CoronaCheck
   fy: Allinne mei-inoar krije wy koroana ûnder kontrôle.
