@@ -374,7 +374,7 @@ const nl = {
                 'no': 'Nee, ga door'
             },
             'digidCanceled': {
-                'head': 'Inloggen afgebroken',
+                'head': 'Inloggen geannuleerd',
                 'body': 'Wil je jouw %{type} ophalen? Log dan opnieuw in met DigiD.',
                 'vaccination': 'vaccinatiegegevens',
                 'negativetest': 'testuitslag',
