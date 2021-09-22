@@ -6,6 +6,7 @@ import ErrorNoBsn from '@/components/views/error-pages/ErrorNoBsn';
 import ErrorSessionExpired from '@/components/views/error-pages/ErrorSessionExpired';
 import ErrorProofNotPossible from '@/components/views/error-pages/ErrorProofNotPossible';
 import ErrorTimeout from '@/components/views/error-pages/ErrorTimeout';
+import ErrorDigiD from '@/components/views/error-pages/ErrorDigiD';
 
 const errorPages = [
     {
@@ -68,6 +69,14 @@ const errorPages = [
         path: '/server-niet-bereikbaar',
         name: 'ErrorTimeout',
         component: ErrorTimeout,
+        meta: {
+            pageHeader: 'error'
+        }
+    },
+    {
+        path: '/fout-verbinding-digid',
+        name: 'ErrorDigiD',
+        component: ErrorDigiD,
         meta: {
             pageHeader: 'error'
         }
