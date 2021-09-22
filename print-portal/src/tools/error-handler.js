@@ -25,7 +25,6 @@ export const handleRejection = (error, errorCodeInformation) => {
         router.push({ name: 'ErrorTimeout', query: { error: getErrorCode(error, errorCodeInformation) } });
         return;
     }
-    console.log(errorCodeInformation);
     if (error && error.response && error.response.status && error.response.status === 429) {
         router.push({ name: 'ServerBusy', query: { error: getErrorCode(error, errorCodeInformation) } });
     } else {
