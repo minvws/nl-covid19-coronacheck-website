@@ -80,18 +80,6 @@ export default {
                     return error && error.message && error.message === 'saml_authn_failed';
                 }
 
-                const isAppAuthError = (error) => {
-                    const options = [
-                        'invalid_request',
-                        'invalid_client',
-                        'invalid_grant',
-                        'unauthorized_client',
-                        'unsupported_grant_type',
-                        'invalid_scope'
-                    ]
-                    return error && error.message && options.indexOf(error.message) > -1;
-                }
-
                 const tooBusy = (error) => {
                     // the response login_required is a hack to communicate too busy mode
                     return error && error.error && error.error === 'login_required';
