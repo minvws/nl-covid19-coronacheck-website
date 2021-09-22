@@ -232,6 +232,10 @@ const nl = {
             'pageHeader': 'Sorry, er gaat iets mis',
             'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
         },
+        'errorDigiD': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href="https://www.digid.nl/" target="_blank">www.digid.nl</a> voor de laatste informatie.</p><p><strong>Foutcode: %{error}</strong></p>'
+        },
         'errorGeneral': {
             'pageHeader': 'Sorry, er gaat iets mis',
             'pageIntro': '<p>Er gaat iets mis bij het maken van je bewijs. Wil je het later nog eens proberen?</p><p><strong>Foutcode(s)</strong><br>%{errors}</p><p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
@@ -370,7 +374,7 @@ const nl = {
                 'no': 'Nee, ga door'
             },
             'digidCanceled': {
-                'head': 'Inloggen afgebroken',
+                'head': 'Inloggen geannuleerd',
                 'body': 'Wil je jouw %{type} ophalen? Log dan opnieuw in met DigiD.',
                 'vaccination': 'vaccinatiegegevens',
                 'negativetest': 'testuitslag',
