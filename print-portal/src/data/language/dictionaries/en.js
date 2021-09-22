@@ -232,6 +232,10 @@ const en = {
             'pageHeader': 'Sorry, something has gone wrong',
             'pageIntro': '<p>Something is going wrong at the test location. Therefore, your details can’t be retrieved.</p><h4>What now?</h4><p>Contact the test location and give them the following error code:</p><p><strong>Error code: %{error}</strong></p>'
         },
+        'errorDigiD': {
+            'pageHeader': 'Sorry, something has gone wrong',
+            'pageIntro': '<p>There was an error while communicating with DigiD. Please try again later. If the error persists, please check <a href="https://www.digid.nl/en" target="_blank">www.digid.nl/en</a> for the latest information.</p><p><strong>Foutcode: %{error}</strong></p>'
+        },
         'errorGeneral': {
             'pageHeader': 'Sorry, something has gone wrong',
             'pageIntro': '<p>Try again later or view the latest outages at <a href="https://status.coronacheck.nl/en/">https://status.coronacheck.nl/en/</a></p><p><strong>Error code(s)</strong><br>%{errors}</p>'
