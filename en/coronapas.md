@@ -5,7 +5,7 @@ showBreadCrumbs: true
 title: Coronapas
 contentLang: en
 ---
-In The Netherlands, you can use the CoronaCheck Netherlands app to collect your coronavirus entry pass. Download the CoronaCheck app for free in the Apple App Store and the Google Play Store.
+In the Netherlands, you can use the CoronaCheck app to retrieve your coronavirus entry pass. Download the CoronaCheck-app for free in the Apple App Store and the Google Play Store.
 
 Newspapers and television programmes often mention a 'coronapas' (Dutch for 'coronavirus entry pass'). However, in most of these cases, they're actually referring to CoronaCheck.
 
