@@ -85,6 +85,12 @@ export default {
                     return error && error.error && error.error === 'login_required';
                 }
 
+                const errorCodeInformation = {
+                    flow: this.filter,
+                    step: '10',
+                    provider_identifier: '000'
+                }
+
                 if (isCanceled(error)) {
                     this.gotoPreviousPage();
                     const type = this.$t('message.info.digidCanceled.' + this.type)
@@ -94,13 +100,9 @@ export default {
                         closeButton: true
                     })
                 } else if (tooBusy(error)) {
-                    this.$router.push({ name: 'ServerBusy' });
+                    const errorCode = getErrorCode(error, errorCodeInformation);
+                    this.$router.push({ name: 'ServerBusy', query: { error: errorCode } });
                 } else {
-                    const errorCodeInformation = {
-                        flow: this.filter,
-                        step: '10',
-                        provider_identifier: '000'
-                    }
                     if (error && error.message) {
                         errorCodeInformation.errorBody = error.message;
                     }
