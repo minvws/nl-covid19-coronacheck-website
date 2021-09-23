@@ -17,7 +17,7 @@ De ontwikkeling van CoronaCheck, de uitgifte van coronabewijzen voor reizen en d
 
 <img src="{{ site.baseurl }}/img/Logo_EU_Positive_nl.svg" alt="Logo Europese Commissie" width="175" height="48" />
 
-Naast de auteurs van de diverse open source, 3rd party bibliotheken hebben we bijdragen ontvangen van heel veel andere  <a href="/humans.txt">mensen</a>.
+Naast de auteurs van de diverse open source, 3rd party bibliotheken hebben we bijdragen ontvangen van heel veel andere  mensen.
 
 ## Applicatie licenties, Condities en Disclaimers applicatie
 
