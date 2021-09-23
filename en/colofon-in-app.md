@@ -19,7 +19,7 @@ The development of CoronaCheck, the issuance of corona proofs for travel and the
 
 <img src="{{ site.baseurl }}/img/Logo_EU_Positive_en.svg" alt="Logo European Commission" width="175" height="48" />
 
-Aside from the authors of the various open source, 3rd-party libraries, we have received contributions from many <a href="/humans.txt">people</a>.
+Aside from the authors of the various open source, 3rd-party libraries, we have received contributions from many people.
 
 ## Application Licences, Terms & Conditions and Disclaimers
 
