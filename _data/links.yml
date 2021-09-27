@@ -86,6 +86,10 @@ voororganisatoren:
 openingsplan:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank">Coronavirus Covid-19 Openingsplan</a>'
   en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank" lang="nl" hreflang="nl">Coronavirus Covid-19 Openingsplan (Dutch)</a>'
+
+25sept:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/documenten/publicaties/2021/09/14/overzicht-coronamaatregelen" rel="noopener noreferrer" target="_blank">Nederland verder open met coronatoegangsbewijs per 25 september</a>'
+  en: '<a href="https://www.government.nl/latest/news/2021/09/14/netherlands-to-reopen-further-with-coronavirus-entry-passes" rel="noopener noreferrer" target="_blank">Netherlands to reopen further with coronavirus entry passes</a>'
  
 wetransfer-toolkit:
   nl: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs voor evenementen</a>'
