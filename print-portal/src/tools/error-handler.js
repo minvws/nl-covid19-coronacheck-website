@@ -20,18 +20,27 @@ export const handleRejection = (error, errorCodeInformation) => {
         messageInternetConnection();
         return;
     }
+    if (error.code === 'ECONNABORTED') {
+        errorCodeInformation.clientSideCode = '001';
+        router.push({ name: 'ErrorTimeout', query: { error: getErrorCode(error, errorCodeInformation) } });
+        return;
+    }
     if (error && error.response && error.response.status && error.response.status === 429) {
-        router.push({ name: 'ServerBusy' });
+        router.push({ name: 'ServerBusy', query: { error: getErrorCode(error, errorCodeInformation) } });
     } else {
-        router.push({ name: 'ErrorGeneral', query: { errors: getErrorCode(error, errorCodeInformation) } });
+        if (isDigiDFlowAndStep(errorCodeInformation)) {
+            router.push({ name: 'ErrorDigiD', query: { error: getErrorCode(error, errorCodeInformation) } });
+        } else {
+            router.push({ name: 'ErrorGeneral', query: { errors: getErrorCode(error, errorCodeInformation) } });
+        }
     }
 }
 
 export const getErrorCode = (error, errorCodeInformation) => {
     let errorCode, errorBody;
     const flow = getFlowCode(errorCodeInformation.flow);
-    if (errorCodeInformation.parsingError) {
-        errorCode = '030';
+    if (errorCodeInformation.clientSideCode) {
+        errorCode = errorCodeInformation.clientSideCode;
     } else {
         errorCode = (error.response && error.response.status) ? error.response && error.response.status : '';
     }
@@ -63,6 +72,11 @@ export const getErrorCode = (error, errorCodeInformation) => {
         errorCodeInformation.provider_identifier + ' ' +
         errorCode + ' ' +
         errorBody;
+}
+
+const isDigiDFlowAndStep = (errorCodeInformation) => {
+    const flowCode = getFlowCode(errorCodeInformation.flow);
+    return errorCodeInformation.step === '10' && (flowCode === '2' || flowCode === '3' || flowCode === '4');
 }
 
 const getFlowCode = (flow) => {

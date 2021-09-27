@@ -24,8 +24,8 @@ export default {
 
 <template>
     <div class="proof-event">
-        <div class="proof-event__status proof-event__line">
-            <strong>{{$t('components.positiveTest.title')}}</strong>
+        <div class="proof-event__line">
+            <h2>{{$t('components.positiveTest.title')}}</h2>
         </div>
 
         <dl>

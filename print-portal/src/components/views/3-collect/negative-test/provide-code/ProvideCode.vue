@@ -173,14 +173,15 @@ export default {
                             }
                         } catch (error) {
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '60', provider_identifier: this.testProviderIdentifier, parsingError: true }) } });
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '60', provider_identifier: this.testProviderIdentifier, clientSideCode: '030' }) } });
                         }
                     }
                 }).catch((error) => {
                     if (!hasInternetConnection()) {
                         messageInternetConnection();
                     } else {
-                        const errorCause = this.getCauseOfError(error)
+                        const errorCause = this.getCauseOfError(error);
+                        const errorCode = getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: this.testProviderIdentifier });
                         switch (errorCause) {
                         case 'invalid_token':
                             this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
@@ -194,10 +195,10 @@ export default {
                             break;
                         case '429':
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'ServerBusy' });
+                            this.$router.push({ name: 'ServerBusy', query: { error: errorCode } });
                             break
                         default:
-                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: this.testProviderIdentifier }) } });
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: errorCode } });
                             this.$store.commit('clearAll');
                             break
                         }

@@ -5,13 +5,8 @@ import CcButton from '@/components/elements/CcButton';
 import { goHome } from '@/tools/router';
 
 export default {
-    name: 'RecoveryNone',
+    name: 'ErrorTimeout',
     components: { Page, PageIntro, CcButton },
-    computed: {
-        recoveryExpirationDays() {
-            return this.$store.state.holderConfig.recoveryExpirationDays;
-        }
-    },
     methods: {
         goHome() {
             goHome();
@@ -25,8 +20,8 @@ export default {
         :display-back-button="false">
         <div class="section">
             <PageIntro
-                :head="$t('views.recoveryNone.pageHeader')"
-                :intro="$t('views.recoveryNone.pageIntro', { days: this.recoveryExpirationDays })"/>
+                :head="$t('views.errorTimeout.pageHeader')"
+                :intro="$t('views.errorTimeout.pageIntro', { error: $route.query.error })"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

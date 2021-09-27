@@ -2,6 +2,7 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
+import { goHome } from '@/tools/router';
 
 export default {
     name: 'TestResultPending',
@@ -9,7 +10,7 @@ export default {
     computed: {},
     methods: {
         goHome() {
-            this.$router.push({ name: 'Home' });
+            goHome();
         }
     }
 }

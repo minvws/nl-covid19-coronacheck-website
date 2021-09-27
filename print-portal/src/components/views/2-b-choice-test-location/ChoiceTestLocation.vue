@@ -53,6 +53,7 @@ export default {
                         @select="loginWithDigid"
                         :header="$t('views.choiceTestLocation.choiceGGDHead')"
                         :body="$t('views.choiceTestLocation.choiceGGDBody')"
+                        :body-icon="'assets/img/digid/logo_digid_rgb.svg'"
                         :inactive="tooBusy"/>
                     <div class="too-busy-message" v-if="tooBusy">
                         {{$t('tooBusy')}}

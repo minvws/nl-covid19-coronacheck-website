@@ -42,7 +42,7 @@ export default {
 @import "@/styles/variables/index";
 
 .CcModestButton {
-    color: $color-coronacheck_blue;
+    color: $color-coronacheck-link;
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;

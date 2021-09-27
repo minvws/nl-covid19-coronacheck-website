@@ -15,6 +15,11 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        h2 {
+            font-size: inherit;
+            margin: 0;
+        }
     }
 
     .info-button {

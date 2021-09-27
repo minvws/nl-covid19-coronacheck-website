@@ -3,7 +3,7 @@ import Page from '@/components/elements/Page';
 import { detect } from 'detect-browser';
 import CcButton from '@/components/elements/CcButton';
 import { parseProofData, getDocument } from 'dcc-pdf-tools';
-import { QRSizeInCm } from '@/data/constants'
+import { QRSizeInCm } from '@/data/constants';
 
 export default {
     name: 'Print',
