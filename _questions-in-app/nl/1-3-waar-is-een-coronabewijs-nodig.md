@@ -6,4 +6,4 @@ redirect_from:
     - /nl/faq-in-app/2-1-bij-welke-locaties-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil
     - /nl/faq-in-app/2-1-bij-welke-plekken-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil
 ---
-Kijk voor de meest actuele informatie op de pagina {{ site.data.links.25sept[page.lang] }} van de overheid.
+Kijk voor de meest actuele informatie op de pagina {{ site.data.links.25sept[page.lang] }}.
