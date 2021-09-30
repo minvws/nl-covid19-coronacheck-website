@@ -93,11 +93,11 @@ herstelbewijs:
 
 voororganisatoren:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/organisatoren" rel="noopener noreferrer" target="_blank">Testen voor toegang: informatie voor organisatoren</a>'
-  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/organisatoren" rel="noopener noreferrer" target="_blank" lang="nl" hreflang="nl">Testen voor toegang: informatie voor organisatoren (Dutch)</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/organisatoren" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl" >Testen voor toegang: informatie voor organisatoren</span> (Dutch)</a>'
  
 openingsplan:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank">Coronavirus Covid-19 Openingsplan</a>'
-  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank" lang="nl" hreflang="nl">Coronavirus Covid-19 Openingsplan (Dutch)</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl" >Coronavirus Covid-19 Openingsplan</span> (Dutch)</a>'
 
 25sept:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/documenten/publicaties/2021/09/14/overzicht-coronamaatregelen" rel="noopener noreferrer" target="_blank">Nederland verder open met coronatoegangsbewijs per 25 september</a>'
@@ -109,4 +109,4 @@ wetransfer-toolkit:
 
 aansluiting-apps:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank">Aansluiting op CoronaCheck voor apps</a>'
-  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Connecting apps to CoronaCheck (Dutch)</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Connecting apps to CoronaCheck</span> (Dutch)</a>'
