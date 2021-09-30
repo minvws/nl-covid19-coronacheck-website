@@ -60,6 +60,7 @@ export default {
     padding: $grid-x2 60px $grid-x2 $grid-x2;
     border-radius: 9px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    color: $color-coronacheck_black;
     cursor: pointer;
     position: relative;
     border: 2px solid transparent;
