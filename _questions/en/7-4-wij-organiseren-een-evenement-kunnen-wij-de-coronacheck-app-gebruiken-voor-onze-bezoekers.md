@@ -1,7 +1,11 @@
 ---
 set: 7
 index: 4
-title: We're organising an event. Can we use the CoronaCheck app for our visitors?
-webonly: true
+title: Do I have to use the coronavirus entry pass at our venue or event, and how does this work?
 ---
-In many cases, you can. For more information, go to the <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-voor-evenementen/coronatoegangsbewijs-informatie-voor-organisatoren" target="_blank" rel="noopener noreferrer">government page for organisers</a>. More information about scanning can be found on [www.coronacheck.nl/scanner](/scanner). 
+Whether the coronavirus entry pass must or can be used depends on your type of location or event. 
+
+- Do you have questions about the use of coronavirus entry passes? Please contact your branche organisation or look at the Chamber of Commerce website: {{ site.data.links.kvkEvenement[page.lang] }}. You can also reach the COC on {{ site.data.links.phone-kvk-organisatoren[page.lang] }}.
+- Do you want to organise an event? For more information, please check {{ site.data.links.evenementOrganiseren[page.lang] }}.
+
+You can find more information about scanning on [www.coronacheck.nl/scanner](/scanner).

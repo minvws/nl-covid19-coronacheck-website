@@ -39,10 +39,7 @@ Your vaccination details are searched via DigiD based on the personal details th
 
 If no vaccination data can be found, contact the healthcare provider who vaccinated you. If you have been vaccinated at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data checked. Have you been vaccinated by your general practitioner, hospital or healthcare institution? Then contact them. They can get you a coronavirus pass with the correct data.
 
-Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going on a trip or want to visit an event within a few days.
-
-To travel within Europe: {{ site.data.links.testenvoorjereis[page.lang] }}.
-To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
+Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -55,10 +52,7 @@ Then contact the healthcare provider who vaccinated you. If you have been vaccin
 
 Have you been vaccinated by your general practitioner, hospital or healthcare institution? Then contact them. They can get you a coronavirus pass with the correct data.
 
-Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going on a trip or want to visit an event within a few days.
-
-To travel within Europe: {{ site.data.links.testenvoorjereis[page.lang] }}.
-To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
+Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -72,13 +66,7 @@ Then contact the healthcare provider who vaccinated you. If you have been vaccin
 
 Have you been vaccinated by your general practitioner, hospital or healthcare institution? Then contact them. They can get you a coronavirus pass with the correct data.
 
-Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going on a trip or want to visit an event within a few days.
-To travel within Europe: www.testenvoorjereis.nl.
-To get access to an event: www.testenvoortoegang.org/.
-
-
-To travel within Europe: {{ site.data.links.testenvoorjereis[page.lang] }}.
-To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
+Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -106,18 +94,15 @@ More information about recovery certificates can be found on {{ site.data.links.
 
 {% capture copy_geen_herstelbewijs_gegevens %}
 <div markdown="1">
-Dit kan verschillende oorzaken hebben:
+This can have several causes:
 
-- Je bent niet door de GGD getest. Er wordt aan gewerkt om binnen enkele weken ook de gegevens van andere testaanbieders te laten zien.
-- Je bent korter dan 11 dagen geleden (positief) getest. In dit geval kun je je herstelbewijs al wel ophalen, maar deze is pas op de 12e dag na testafname geldig.
-- Je bent langer dan 180 dagen geleden (positief) getest. In dit geval heb je geen recht op een herstelbewijs.
+- You have not been tested by the GGD. We are working hard to make the data of other test test providers available within a few weeks.
+- You have been tested (positive) less than 11 days ago. In this case you can already get your recovery certificate, which will be valid on the 12th day after taking the test.
+- You have been tested (positive) more than 180 days ago. In this case you are not entitled to a recovery certificate.
 
-Als geen van bovenstaande situaties van toepassing is, en je bent wel positief getest door de GGD, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen je helpen te achterhalen of er wellicht gegevens onjuist geregistreerd staan.
+Do none of the above situations apply, and have you been tested positive by the GGD? Then contact the GGD on {{ site.data.links.phone-ggd[page.lang] }}. They can help you find out whether details may have been registered incorrectly.
 
-Als je echt binnen een paar dagen op reis gaat of een evenement wilt bezoeken, is het advies om een gratis testafspraak in te plannen zodat je een testbewijs kan maken. 
-
-Voor een test om binnen Europa te kunnen reizen: {{ site.data.links.testenvoorjereis[page.lang] }}. 
-Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
+If you really want to visit an event within a few days, the advice is to schedule a free test appointment so that you can make a test certificate. Make your appointment through {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -135,10 +120,7 @@ Are details about your vaccination found, but does CoronaCheck say no certificat
 
 Were you tested less than 180 days ago? Then there may be an error in the test data. Please contact the healthcare provider where you were tested. If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected.
 
-Does that take too long for you? Then you can always book a test appointment (for free) to make a test certificate. For example, if you are going on a trip or want to visit an event within a few days.
-
-To travel within Europe: {{ site.data.links.testenvoorjereis[page.lang] }}.
-To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
+Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -173,7 +155,7 @@ Sometimes it can take a little longer. Didn’t receive your result? It can be f
 - Your email address is incorrect or the email may have ended up in your spam box.
 - There is a problem at the test site in reporting the results. Check Testen voor Toegang to see if there are known outages at test locations.
 
-Contact the Testen voor Toegang help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}  or the Testen voor je Reis help desk on {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
+Contact the <span lang="nl">Testen voor Toegang</span> help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -184,7 +166,7 @@ The verification code (by SMS or email) should normally arrive within a minute o
 - In case your provider sends the verification code by email, please also check your spam folder.
 - Did you perhaps provide a foreign telephone number? It happens sporadically that SMS messages to foreign numbers do not get through.
 
-Contact the Testen voor Toegang help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}  or the Testen voor je Reis help desk on {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
+Contact the <span lang="nl">Testen voor Toegang</span> help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -193,7 +175,7 @@ Contact the Testen voor Toegang help desk on {{ site.data.links.phone-tvt-helpde
 <div markdown="1"> 
 If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected.
 
-Have you been tested via Testen voor Toegang or via Testen voor je Reis? Contact the Testen voor Toegang helpdesk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }} or the Testen voor je Reis helpdesk on {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
+Have you been tested via Testen voor Toegang? Contact the <span lang="nl">Testen voor Toegang</span> help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -203,7 +185,7 @@ Does the app say no certificate can be made? There may be something wrong with t
 
 If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected.
 
-Have you been tested via Testen voor Toegang or via Testen voor je Reis? Contact the Testen voor Toegang helpdesk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }} or the Testen voor je Reis helpdesk on {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
+Have you been tested via Testen voor Toegang? Contact the <span lang="nl">Testen voor Toegang</span> help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 
 </div>
 {% endcapture %}
@@ -224,7 +206,7 @@ To retrieve your vaccination details in CoronaCheck, you need a valid DigiD. <a 
 
 You can log in with DigiD via the app (<a href="https://www.digid.nl/en/login-methods/digid-app" rel="noopener noreferrer" target="_blank">Download the DigiD app here</a>) or via the DigiD website, using SMS verification. <a href="https://www.digid.nl/en/login-methods/sms-verification" rel="noopener noreferrer" target="_blank">Read more about setting up SMS verification here</a>.
 
-Do you need more information about DigiD? Contact the Helpdesk on  {{ site.data.links.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
+Do you need more information about DigiD? Contact the help desk on {{ site.data.links.phone-digid-helpdesk[page.lang] }} (reachable on working days from 8 a.m. to 10 p.m. and during weekends, between 12 p.m. and 10 p.m.).
 
 If you don’t have a DigiD or no digital means, please call the CoronaCheck Helpdesk.
 
@@ -252,7 +234,7 @@ All information about getting a vaccination certificate if you do not have a BSN
 
 {% capture copy_travelquestions %}
 <div markdown="1">
-Are you going on a trip soon? Before departure, always check the applicable entry rules for your destination at {{ site.data.links.wijsopreis[page.lang] }}. You can now make your test appointment (for free) at {{ site.data.links.testenvoorjereis[page.lang] }}.
+Are you going on a trip soon? Before departure, always check the applicable entry rules for your destination at {{ site.data.links.wijsopreis[page.lang] }}. Read more about a coronatest for travellers here: {{ site.data.links.testenvoorjereis[page.lang] }}.
 
 For other questions, you can contact the Ministry of Foreign Affairs (BZ). <a href="https://www.netherlandsworldwide.nl/contact/contacting-the-24-7-bz-contact-centre" rel="noopener noreferrer" target="_blank">Contact the BZ contact center</a> - available 24 hours a day, 7 days a week.
 </div>
