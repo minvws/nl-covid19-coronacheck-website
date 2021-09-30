@@ -2,7 +2,6 @@
 set: 7
 index: 4
 title: Do I have to use the coronavirus entry pass at our venue or event, and how does this work?
-webonly: true
 ---
 Whether the coronavirus entry pass must or can be used depends on your type of location or event. 
 
