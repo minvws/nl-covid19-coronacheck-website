@@ -57,7 +57,7 @@ reizen-en-vakantie:
 
 testenvoorjereis: 
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie/coronabewijs/gratis-coronatest" rel="noopener noreferrer" target="_blank">Testen voor je reis</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Free coronatest for travellers</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Coronatest for travellers</a>'
 
 kvkEvenement:
   nl: '<a href="https://www.kvk.nl/corona/alles-wat-je-moet-weten-over-het-coronatoegangsbewijs/" rel="noopener noreferrer" target="_blank">Alles wat je moet weten over het coronatoegangsbewijs</a>'
