@@ -36,9 +36,7 @@ Je vaccinatiegegevens worden via DigiD gezocht op basis van de persoonsgegevens 
 Neem contact op met de zorgverlener die je heeft gevaccineerd wanneer er geen vaccinatiegegevens gevonden kunnen worden. Ben je bij de GGD gevaccineerd dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten controleren. 
 Ben je gevaccineerd door je huisarts, ziekenhuis of zorginstelling? Neem dan contact met hen op. Zij kunnen een coronabewijs voor je maken met de juiste gegevens.  
 
-Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je binnen een paar dagen op reis gaat of een evenement wilt bezoeken. 
-Voor reizen binnen Europa: {{ site.data.links.testenvoorjereis[page.lang] }}. 
-Om toegang te krijgen tot een evenement: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
+Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je een evenement wilt bezoeken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
 </div>
 {% endcapture %}
 
@@ -50,10 +48,7 @@ Neem dan contact op met de zorgverlener die je heeft gevaccineerd. Ben je bij de
 
 Ben je gevaccineerd door je huisarts, ziekenhuis of zorginstelling? Neem dan contact met hen op. Zij kunnen een coronabewijs voor je maken met de juiste gegevens.  
 
-Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je binnen een paar dagen op reis gaat of een evenement wilt bezoeken. 
-
-Voor reizen binnen Europa: {{ site.data.links.testenvoorjereis[page.lang] }}. 
-Om toegang te krijgen tot een evenement: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
+Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je een evenement wilt bezoeken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
 </div>
 {% endcapture %}
 
@@ -65,10 +60,7 @@ Dit kan het geval zijn wanneer er een fout zit in je vaccinatiegegevens, bijvoor
 Neem dan contact op met de zorgverlener die je heeft gevaccineerd. Ben je bij de GGD gevaccineerd dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
 Ben je gevaccineerd door je huisarts, ziekenhuis of zorginstelling? Neem dan contact met hen op. Zij kunnen een coronabewijs voor je maken met de juiste gegevens.
 
-Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je binnen een paar dagen op reis gaat of een evenement wilt bezoeken. 
-
-Voor reizen binnen Europa: {{ site.data.links.testenvoorjereis[page.lang] }}. 
-Om toegang te krijgen tot een evenement: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
+Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je een evenement wilt bezoeken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
 </div>
 {% endcapture %}
 
@@ -104,10 +96,7 @@ Dit kan verschillende oorzaken hebben:
 
 Als geen van bovenstaande situaties van toepassing is, en je bent wel positief getest door de GGD, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen je helpen te achterhalen of er wellicht gegevens onjuist geregistreerd staan.
 
-Als je echt binnen een paar dagen op reis gaat of een evenement wilt bezoeken, is het advies om een gratis testafspraak in te plannen zodat je een testbewijs kan maken. 
-
-Voor een test om binnen Europa te kunnen reizen: {{ site.data.links.testenvoorjereis[page.lang] }}. 
-Om toegang te krijgen tot een evenement in Nederland maak je een test afspraak via: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
+Als je echt binnen een paar dagen een evenement wilt bezoeken, is het advies om een gratis testafspraak in te plannen zodat je een testbewijs kan maken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -127,10 +116,7 @@ Het kan zijn dat jouw testuitslag meer dan 180 dagen oud is. Dan is het niet mee
 
 Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Neem dan contact op met de zorgverlener waar je bent getest. Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
 
-Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken om een testbewijs te maken. Bijvoorbeeld als je binnen een paar dagen op reis gaat of een evenement wilt bezoeken. 
-
-Voor reizen binnen Europa: {{ site.data.links.testenvoorjereis[page.lang] }}. 
-Om toegang te krijgen tot een evenement: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
+Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je een evenement wilt bezoeken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
 </div>
 {% endcapture %}
 
@@ -150,7 +136,7 @@ Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locati
 
 {% capture copy_testen_voor_je_reis %}
 <div markdown="1">
-Wil je gebruik maken van een coronabewijs om te reizen binnen Europa? Hiervoor kun je terecht bij {{ site.data.links.testenvoorjereis[page.lang] }}. Let op: ieder land bepaalt zelf de inreisregels. Check dus voor vertrek altijd {{ site.data.links.wijsopreis[page.lang] }} om nare verrassingen te voorkomen.
+Wil je gebruik maken van een coronabewijs om te reizen binnen Europa? Lees hierover meer op {{ site.data.links.testenvoorjereis[page.lang] }}. En check voor vertrek altijd {{ site.data.links.wijsopreis[page.lang] }} om nare verrassingen te voorkomen.
 </div>
 {% endcapture %}
 
@@ -162,7 +148,7 @@ Deze ophaalcode bestaat uit een lange reeks van letters en cijfers (bv BRB-YYYYY
 - Je email adres is niet correct of wellicht is de mail in uw spambox terechtgekomen.
 - Er is een probleem bij de testlocatie in het doorgeven van de uitslag. Kijk op {{ site.data.links.testen-voor-toegang[page.lang] }} of er storingen bekend zijn bij testlocaties.
 
-Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} of met de helpdesk van Testen voor je Reis op {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
+Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -173,7 +159,7 @@ De verificatiecode (per SMS of e-mail) moet normaliter binnen een minuut binnenk
 - In het geval je aanbieder de verificatiecode per email stuurt, controleer dan ook je spam-folder.
 - Heb je wellicht een buitenlands telefoonnummer doorgegeven? Het komt sporadisch voor dat SMS berichten naar buitenlandse nummers niet doorkomen.
 
-Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} of met de helpdesk van Testen voor je Reis op {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
+Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -182,7 +168,7 @@ Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.p
 <div markdown="1"> 
 Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
 
-Ben je via Testen voor Toegang of via Testen voor je Reis getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} of met de helpdesk van Testen voor je Reis op {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
+Ben je via Testen voor Toegang getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -192,7 +178,7 @@ Zegt de app dat er geen bewijs gemaakt kan worden? Mogelijk klopt er dan iets ni
 
 Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
 
-Ben je via Testen voor Toegang of via Testen voor je Reis getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }} of met de helpdesk van Testen voor je Reis op {{ site.data.links.phone-tvjr-helpdesk[page.lang] }}.
+Ben je via Testen voor Toegang getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -240,7 +226,7 @@ Alle informatie over het krijgen van een vaccinatiebewijs wanneer je geen BSN-nu
 
 {% capture copy_travelquestions %}
 <div markdown="1">
-Ga je binnenkort op reis? Check voor vertrek altijd de geldende inreisregels van je bestemming op {{ site.data.links.wijsopreis[page.lang] }}. Je kunt nu gratis je testafspraak maken op {{ site.data.links.testenvoorjereis[page.lang] }}. 
+Ga je binnenkort op reis? Check voor vertrek altijd de geldende inreisregels van je bestemming op {{ site.data.links.wijsopreis[page.lang] }}. Lees meer over het maken van een testafspraak op {{ site.data.links.testenvoorjereis[page.lang] }}. 
 
 Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ).  <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">Neem contact op met het contactcenter van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
 </div>
