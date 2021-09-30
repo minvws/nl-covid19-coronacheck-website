@@ -62,7 +62,7 @@ const en = {
         },
         'vaccinationsIncomplete': {
             'pageHeader': 'We can’t make a certificate',
-            'pageIntro': '<p>At this moment, we can’t make a certificate. For a Dutch certificate you need to be fully vaccinated. An international certificate can be made from July 1st.</p>'
+            'pageIntro': '<p>At this moment, we can’t make a certificate. For a Dutch certificate you need to be fully vaccinated.</p>'
         },
         'collectRecovery': {
             'pageHeader': 'Retrieve recovery details',

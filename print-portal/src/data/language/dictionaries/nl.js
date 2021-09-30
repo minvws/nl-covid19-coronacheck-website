@@ -62,7 +62,7 @@ const nl = {
         },
         'vaccinationsIncomplete': {
             'pageHeader': 'We kunnen geen bewijs maken',
-            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Voor een Nederlands bewijs moet je volledig gevaccineerd zijn. Een internationaal bewijs kun je vanaf 1 juli maken.<p></p>'
+            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Voor een Nederlands bewijs moet je volledig gevaccineerd zijn.</p>'
         },
         'collectRecovery': {
             'pageHeader': 'Gegevens van je herstel ophalen',
