@@ -33,6 +33,10 @@ phone-tvjr-helpdesk:
   nl: '<a href="tel:0887770810">088 777 08 10</a>'
   en: '<a href="tel:+31887770810">+31 88 777 08 10</a>'
 
+phone-kvk-organisatoren:
+  nl: '<a href="tel:08002117">0800-2117</a>'
+  en: '<a href="tel:+318002117">+31 800-2117</a>'
+
 # Websites and their English equivalent
 
 wijsopreis:
@@ -54,6 +58,14 @@ reizen-en-vakantie:
 testenvoorjereis: 
   nl: '<a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank">Testen voor je reis</a>'
   en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Free coronatest for travellers</a>'
+
+kvkEvenement:
+  nl: '<a href="https://www.kvk.nl/corona/alles-wat-je-moet-weten-over-het-coronatoegangsbewijs/" rel="noopener noreferrer" target="_blank">Alles wat je moet weten over het coronatoegangsbewijs</a>'
+  en: 
+
+evenementOrganiseren:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-voor-evenementen/coronatoegangsbewijs-informatie-voor-organisatoren" rel="noopener noreferrer" target="_blank">Ondernemers, organisatoren en het coronatoegangsbewijs</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-voor-evenementen/coronatoegangsbewijs-informatie-voor-organisatoren" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Ondernemers, organisatoren en het coronatoegangsbewijs</span> (Dutch)</a>'
 
 coronatest: 
   nl: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank">coronatest.nl</a>'
