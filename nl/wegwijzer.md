@@ -168,7 +168,7 @@ Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.p
 <div markdown="1"> 
 Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
 
-Ben je via Testen voor Toegang of via Testen voor je Reis getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+Ben je via Testen voor Toegang getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -178,7 +178,7 @@ Zegt de app dat er geen bewijs gemaakt kan worden? Mogelijk klopt er dan iets ni
 
 Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
 
-Ben je via Testen voor Toegang of via Testen voor je Reis getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+Ben je via Testen voor Toegang getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
