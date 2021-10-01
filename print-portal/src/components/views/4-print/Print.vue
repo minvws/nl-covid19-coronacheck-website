@@ -1,10 +1,11 @@
 <script>
 import Page from '@/components/elements/Page';
 import ProofRegion from './proofs/ProofRegion';
+import PrintFaq from './PrintFaq';
 
 export default {
     name: 'Print',
-    components: { ProofRegion, Page },
+    components: { PrintFaq, ProofRegion, Page },
     props: {
         type: {
             type: String,
@@ -48,7 +49,7 @@ export default {
         <div class="section">
             <slot></slot>
             <div class="section-block">
-                Hier de accordeons
+                <PrintFaq />
             </div>
 
             <div class="proof-regions">
@@ -75,6 +76,10 @@ export default {
         justify-content: center;
         width: 100%;
         margin-top: 64px;
+    }
+
+    .PrintFaq {
+        margin: 48px 0 64px 0;
     }
 }
 </style>

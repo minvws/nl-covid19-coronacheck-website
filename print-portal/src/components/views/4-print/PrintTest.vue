@@ -32,8 +32,8 @@ export default {
             @back="back"
             :type="'vaccination'">
             <PageIntro
-                :head="'Kop test'"
-                :intro="'Copy test'"/>
+                :head="'PDFs gemaakt!'"
+                :intro="'<p>Van jouw vaccinatie zijn 2 bewijzen gemaakt: een voor in Nederland en een voor het buitenland.</p><p>Open de PDFs en print ze uit. Neem ze mee naar de plek die je bezoekt of naar het land waar je heen reist.</p>'"/>
         </Print>
     </div>
 </template>
