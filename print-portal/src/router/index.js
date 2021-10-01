@@ -35,7 +35,8 @@ router.beforeEach((to, from, next) => {
         'NegativeTestRedirect',
         'RecoveryRedirect',
         'ErrorGeneral',
-        'ServerBusy'
+        'ServerBusy',
+        'PrintTest'
     ]
     // check for user consent, otherwise redirect to home (disabled for development)
     if (process.env.NODE_ENV !== 'development' && pagesWithoutConsentNeeded.indexOf(to.name) === -1 && !store.state.userConsent) {

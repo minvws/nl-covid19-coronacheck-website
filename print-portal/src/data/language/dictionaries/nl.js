@@ -260,6 +260,18 @@ const nl = {
         }
     },
     'components': {
+        'proofRegion': {
+            'domestic': {
+                'title': 'Nederlands bewijs',
+                'intro': 'Gebruik dit bewijs als je locaties binnen Nederland wilt bezoeken.',
+                'paperTitle': 'Bewijs voor in Nederland'
+            },
+            'european': {
+                'title': 'Internationaal bewijs',
+                'intro': 'Gebruik dit bewijs als je de grens over gaat en in het buitenland.',
+                'paperTitle': 'Internationaal bewijs'
+            }
+        },
         'languagePicker': {
             'language': 'Taal',
             'changeLanguage': 'Wissel van taal',
