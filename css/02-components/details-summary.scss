@@ -85,10 +85,6 @@
         transform: rotate(90deg);
     }
 
-    &.component-mediaelement__details summary:after {
-        top: 2px;
-    }
-
     &[open] {
         padding-bottom: 30px;
         border-bottom: 0;
