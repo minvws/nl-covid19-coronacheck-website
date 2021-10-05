@@ -108,6 +108,7 @@ const nl = {
             'pageIntro': '<p>Er is geen positieve testuitslag beschikbaar.</p><p>Ben je net getest? Het kan een paar uur duren voordat je positieve test verwerkt is. Probeer het later nog eens.</p><p>Is het langer dan %{days} dagen geleden dat je getest bent? Dan is je testuitslag niet meer geldig. Je kunt dan ook geen herstelbewijs maken.</p>'
         },
         'print': {
+            'pageTitle': 'Jouw bewijs',
             'pageHeader': 'Jouw %{type}bewijs staat klaar',
             'pageIntro': {
                 'domestic': '<p>Gelukt! Jouw %{type}bewijs staat klaar. Je hebt alleen een bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet om de grens over te gaan of in het buitenland.</p>' +
