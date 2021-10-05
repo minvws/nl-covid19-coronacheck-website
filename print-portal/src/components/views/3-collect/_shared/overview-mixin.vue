@@ -61,7 +61,7 @@ export default {
                 signer.sign(this.$store.state.signedEvents.all).then(response => {
                     this.proofSubmitted = false;
                     if (response.data) {
-                        if (response.data.domestic || response.data.european) {
+                        if (response.data.domestic || (response.data.european && response.data.european.length > 0)) {
                             this.$store.commit('qrs/add', response.data);
                             this.$router.push({ name: this.pages.print });
                         } else {

@@ -58,7 +58,7 @@ export default {
                     :proof="proof.domestic"
                     :region="'domestic'" />
                 <ProofRegion
-                    v-if="proof.european"
+                    v-if="proof.european && proof.european.length > 0"
                     :proof="proof.european"
                     :region="'european'" />
             </div>
