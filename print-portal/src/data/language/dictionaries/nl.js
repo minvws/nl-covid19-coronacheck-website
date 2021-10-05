@@ -132,11 +132,11 @@ const nl = {
                     },
                     'validLocation': {
                         'summary': 'Waar is mijn internationale bewijs geldig?',
-                        'content': '<p>De geldigheid van coronabewijzen verschilt per land. Controleer daarom voor vertrek welk bewijs je nodig hebt op jouw bestemming op <a href="""https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank">www.wijsopreis.nl</a>.</p>'
+                        'content': '<p>De geldigheid van coronabewijzen verschilt per land. Controleer daarom voor vertrek welk bewijs je nodig hebt op jouw bestemming op <a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">www.wijsopreis.nl</a>.</p>'
                     },
                     'whyNoDomesticVaccination': {
                         'summary': 'Waarom krijg ik geen Nederlands vaccinatiebewijs?',
-                        'content': '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat je maar één prik hebt gehad. Na je tweede vaccinatie kun je een nieuw bewijs maken dat ook in Nederland geldig is. Lees TODO hier meer over de mogelijke oorzaken.</p>'
+                        'content': '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat je maar één prik hebt gehad. Na je tweede vaccinatie kun je een nieuw bewijs maken dat ook in Nederland geldig is. Lees <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">hier meer over de mogelijke oorzaken</a>.</p>'
                     },
                     'whyNoEuropeanRecovery': {
                         'summary': 'Waarom krijg ik geen internationaal herstelbewijs?',
