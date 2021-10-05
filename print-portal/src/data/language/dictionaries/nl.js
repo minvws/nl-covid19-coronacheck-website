@@ -108,114 +108,49 @@ const nl = {
             'pageIntro': '<p>Er is geen positieve testuitslag beschikbaar.</p><p>Ben je net getest? Het kan een paar uur duren voordat je positieve test verwerkt is. Probeer het later nog eens.</p><p>Is het langer dan %{days} dagen geleden dat je getest bent? Dan is je testuitslag niet meer geldig. Je kunt dan ook geen herstelbewijs maken.</p>'
         },
         'print': {
-            'openPDF': 'Open PDF'
-        },
-        'printNegativeTest': {
-            'both': {
-                'pageHeader': 'Print jouw testbewijs',
-                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw testbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
-                    '<h4>QR-code voor Nederland en internationaal</h4>' +
-                    '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
-                    '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
-                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
-                    '<h4>En nu?</h4>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
+            'pageHeader': 'Jouw %{type}bewijs staat klaar',
+            'pageIntro': {
+                'domestic': '<p>Gelukt! Jouw %{type}bewijs staat klaar. Je hebt alleen een bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet om de grens over te gaan of in het buitenland.</p>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>',
+                'european': '<p>Gelukt! Jouw %{type}bewijs staat klaar. Je hebt alleen een internationaal bewijs. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p>' +
+                    '<p>Open de PDF en maak een printje. Neem deze mee naar het land waar je heen reist.</p>',
+                'both': '<p>Gelukt! Jouw %{type}bewijs staat klaar. Je hebt een bewijs voor in Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.</p>' +
+                    '<p>Open de PDF’s en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
             },
-            'european': {
-                'pageHeader': 'Print jouw internationale testbewijs',
-                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw testbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
-                    '<h4>Alleen een internationale QR-code</h4>' +
-                    '<p>In de PDF vind je alleen een internationale QR-code. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p>' +
-                    '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.</p>' +
-                    '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming.<br>' +
-                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
-                    '<h4>En nu?</h4>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar het land waar je heen reist.</p>'
+            'proofType': {
+                'vaccination': 'vaccinatie',
+                'recovery': 'herstel',
+                'negativetest': 'test'
             },
-            'domestic': {
-                'pageHeader': 'Print jouw Nederlandse testbewijs',
-                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw testbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
-                    '<h4>Alleen een Nederlandse QR-code </h4>' +
-                    '<p>In de PDF vind je alleen een Nederlandse QR-code. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet om de grens over te gaan of in het buitenland.</p>' +
-                    '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat het type test niet geaccepteerd wordt in andere landen. Laat je opnieuw testen voor een bewijs dat ook internationaal geldig is.</p>' +
-                    '<h4>En nu?</h4>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>'
-            }
-        },
-        'printVaccination': {
-            'both': {
-                'pageHeader': 'Print jouw vaccinatiebewijs',
-                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw vaccinatiebewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
-                    '<h4>QR-code voor Nederland en internationaal</h4>' +
-                    '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
-                    '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
-                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
-                    '<h4>En nu?</h4>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>' +
-                    '<p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
-            },
-            'european': {
-                'pageHeader': 'Print jouw internationale vaccinatiebewijs',
-                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw vaccinatiebewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
-                    '<h4>Alleen een internationale QR-code</h4>' +
-                    '<p>In de PDF vind je alleen een internationale QR-code. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p>' +
-                    '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat je maar één prik hebt gehad. Na je tweede vaccinatie kun je een nieuw bewijs maken dat ook in Nederland geldig is. ' +
-                    '<a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Lees hier meer over de mogelijke oorzaken</a>.</p>' +
-                    '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming.<br>' +
-                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
-                    '<h4>En nu?</h4>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar het land waar je heen reist.</p>' +
-                    '<p>Let op: dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
-            }
-            // domestic only is a non existing scenario for vaccination
-        },
-        'printRecovery': {
-            'both': {
-                'pageHeader': 'Print jouw herstelbewijs',
-                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw herstelbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
-                    '<h4>QR-code voor Nederland en internationaal</h4>' +
-                    '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
-                    '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
-                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
-                    '<h4>En nu?</h4>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
-            },
-            'domestic': {
-                'pageHeader': 'Print jouw Nederlandse herstelbewijs',
-                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw herstelbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
-                    '<h4>Alleen een Nederlandse QR-code </h4>' +
-                    '<p>In de PDF vind je alleen een Nederlandse QR-code. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet om de grens over te gaan of in het buitenland.</p>' +
-                    '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden.</p>' +
-                    '<h4>En nu?</h4>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>'
-            },
-            // european only is a non existing scenario for recovery
-            'bothValidInFuture': {
-                'pageHeader': 'Print jouw herstelbewijs',
-                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw herstelbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
-                    '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>' +
-                    '<h4>QR-code voor Nederland en internationaal</h4>' +
-                    '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
-                    '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
-                    '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
-                    '<h4>En nu?</h4>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
-            },
-            'domesticValidInFuture': {
-                'pageHeader': 'Print jouw Nederlandse herstelbewijs',
-                'pageIntro': '<p><strong>Gelukt! Er is een PDF gemaakt van jouw herstelbewijs. Op de PDF staat een QR-code die je kunt laten scannen.</strong></p>' +
-                    '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>' +
-                    '<h4>Alleen een Nederlandse QR-code </h4>' +
-                    '<p>In de PDF vind je alleen een Nederlandse QR-code. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet om de grens over te gaan of in het buitenland.</p>' +
-                    '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden.</p>' +
-                    '<h4>En nu?</h4>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>'
+            'validInFuture': '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>',
+            'details': {
+                'header': 'Belangrijk om te weten',
+                'set': {
+                    'validPeriod': {
+                        'summary': 'Hoe lang is mijn papieren bewijs geldig?',
+                        'content': '<p>Dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.</p>'
+                    },
+                    'validLocation': {
+                        'summary': 'Waar is mijn internationale bewijs geldig?',
+                        'content': '<p>De geldigheid van coronabewijzen verschilt per land. Controleer daarom voor vertrek welk bewijs je nodig hebt op jouw bestemming op TODO www.wijsopreis.nl.</p>'
+                    },
+                    'whyNoDomesticVaccination': {
+                        'summary': 'Waarom krijg ik geen Nederlands vaccinatiebewijs?',
+                        'content': '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat je maar één prik hebt gehad. Na je tweede vaccinatie kun je een nieuw bewijs maken dat ook in Nederland geldig is. Lees TODO hier meer over de mogelijke oorzaken.</p>'
+                    },
+                    'whyNoEuropeanRecovery': {
+                        'summary': 'Waarom krijg ik geen internationaal herstelbewijs?',
+                        'content': '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden.</p>'
+                    },
+                    'whyNoDomesticTest': {
+                        'summary': 'Waarom krijg ik geen internationaal testbewijs?',
+                        'content': '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat het type test niet geaccepteerd wordt in andere landen. Laat je opnieuw testen voor een bewijs dat ook internationaal geldig is.</p>'
+                    },
+                    'whyNoEuropeanTest': {
+                        'summary': 'Waarom krijg ik geen Nederlands testbewijs?',
+                        'content': '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.</p>'
+                    }
+                }
             }
         },
         'serverBusy': {
@@ -270,7 +205,8 @@ const nl = {
                 'title': 'Internationaal bewijs',
                 'intro': 'Gebruik dit bewijs als je de grens over gaat en in het buitenland.',
                 'paperTitle': 'Internationaal bewijs'
-            }
+            },
+            'openPDF': 'Open PDF'
         },
         'languagePicker': {
             'language': 'Taal',

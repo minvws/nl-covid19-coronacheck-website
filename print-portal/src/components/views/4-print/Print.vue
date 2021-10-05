@@ -2,14 +2,20 @@
 import Page from '@/components/elements/Page';
 import ProofRegion from './proofs/ProofRegion';
 import PrintFaq from './PrintFaq';
+import PageIntro from '@/components/elements/PageIntro';
 
 export default {
     name: 'Print',
-    components: { PrintFaq, ProofRegion, Page },
+    components: { PageIntro, PrintFaq, ProofRegion, Page },
     props: {
         type: {
             type: String,
             required: true
+        },
+        validInFuture: {
+            type: Boolean,
+            required: false,
+            default: false
         }
     },
     computed: {
@@ -20,7 +26,7 @@ export default {
             return this.proof.domestic;
         },
         hasEuropean() {
-            return this.proof.european;
+            return this.proof.european && this.proof.european.length > 0;
         },
         pageType() {
             if (this.hasDomestic && this.hasEuropean) {
@@ -32,6 +38,27 @@ export default {
                     return 'european';
                 }
             }
+        },
+        regionType() {
+            if (this.hasDomestic && this.hasEuropean) {
+                return 'both';
+            } else {
+                if (this.hasDomestic) {
+                    return 'domestic'
+                } else {
+                    return 'european'
+                }
+            }
+        },
+        pageIntroCopy() {
+            let copy = this.$t('views.print.pageIntro.' + this.regionType, { type: this.proofTypeCopy });
+            if (this.validInFuture) {
+                copy += this.$t('views.print.validInFuture');
+            }
+            return copy;
+        },
+        proofTypeCopy() {
+            return this.$t('views.print.proofType.' + this.type);
         }
     },
     methods: {
@@ -47,18 +74,23 @@ export default {
         class="Print"
         @back="goBack">
         <div class="section">
-            <slot></slot>
+            <PageIntro
+                :head="$t('views.print.pageHeader', {type: this.proofTypeCopy })"
+                :intro="pageIntroCopy"/>
+
             <div class="section-block">
-                <PrintFaq />
+                <PrintFaq
+                    :type="type"
+                    :region-type="regionType"/>
             </div>
 
             <div class="proof-regions">
                 <ProofRegion
-                    v-if="proof.domestic"
+                    v-if="hasDomestic"
                     :proof="proof.domestic"
                     :region="'domestic'" />
                 <ProofRegion
-                    v-if="proof.european && proof.european.length > 0"
+                    v-if="hasEuropean"
                     :proof="proof.european"
                     :region="'european'" />
             </div>

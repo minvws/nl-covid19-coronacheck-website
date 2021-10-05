@@ -1,12 +1,9 @@
 <script>
 import Print from './Print';
-import PageIntro from '@/components/elements/PageIntro';
-import printMixin from './print-mixin';
 
 export default {
     name: 'PrintVaccination',
-    components: { Print, PageIntro },
-    mixins: [printMixin],
+    components: { Print },
     methods: {
         back() {
             this.$router.push({ name: 'VaccinationOverview' });
@@ -20,9 +17,6 @@ export default {
         <Print
             @back="back"
             :type="'vaccination'">
-            <PageIntro
-                :head="$t('views.printVaccination.' + pageType + '.pageHeader')"
-                :intro="$t('views.printVaccination.' + pageType + '.pageIntro')"/>
         </Print>
     </div>
 </template>

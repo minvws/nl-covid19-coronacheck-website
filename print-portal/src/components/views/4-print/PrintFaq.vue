@@ -1,8 +1,40 @@
 <script>
 export default {
     name: 'PrintFaq',
-    components: {},
-    computed: {},
+    props: {
+        type: {
+            type: String,
+            required: true
+        },
+        regionType: {
+            type: String,
+            required: true
+        }
+    },
+    computed: {
+        details() {
+            const details = [];
+            if (this.type === 'vaccination') {
+                details.push('validPeriod');
+            }
+            if (this.regionType === 'european' || this.regionType === 'both') {
+                details.push('validLocation');
+            }
+            if (this.type === 'vaccination' && this.regionType === 'european') {
+                details.push('whyNoDomesticVaccination');
+            }
+            if (this.type === 'recovery' && this.regionType === 'domestic') {
+                details.push('whyNoEuropeanRecovery');
+            }
+            if (this.type === 'negativetest' && this.regionType === 'european') {
+                details.push('whyNoDomesticTest');
+            }
+            if (this.type === 'negativetest' && this.regionType === 'domestic') {
+                details.push('whyNoEuropeanTest');
+            }
+            return details;
+        }
+    },
     methods: {}
 }
 </script>
@@ -10,19 +42,18 @@ export default {
 <template>
     <div class="PrintFaq">
         <h2>
-            Belangrijk om te weten
+            {{$t('views.print.details.header')}}
         </h2>
         <div class="content-block">
-            <details>
-                <summary><h3>Waar is mijn internationale bewijs geldig?</h3></summary>
-                <div>
-                    Details
-                </div>
-            </details>
-            <details>
-                <summary><h3>Hoe lang is mijn papieren bewijs geldig?</h3></summary>
-                <div>
-                    Details
+            <details
+                v-for="(detail, index) in details"
+                :key="index">
+                <summary>
+                    <h3>
+                    {{$t('views.print.details.set.' + detail + '.summary')}}
+                    </h3>
+                </summary>
+                <div v-html="$t('views.print.details.set.' + detail + '.content')">
                 </div>
             </details>
         </div>

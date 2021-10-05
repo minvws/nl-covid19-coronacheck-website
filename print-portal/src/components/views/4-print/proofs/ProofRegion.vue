@@ -111,12 +111,12 @@ export default {
                     @select="openPDF()"
                     id="open-pdf"
                     :disabled="isRendering"
-                    :label="$t('views.print.openPDF')"/>
+                    :label="$t('components.proofRegion.openPDF')"/>
                 <CcButton
                     @select="downloadPDF()"
                     id="download-pdf"
                     :disabled="isRendering"
-                    :label="$t('views.print.openPDF')"/>
+                    :label="$t('components.proofRegion.openPDF')"/>
             </div>
         </div>
     </div>
