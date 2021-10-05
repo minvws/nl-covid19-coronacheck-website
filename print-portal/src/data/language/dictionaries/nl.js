@@ -132,7 +132,7 @@ const nl = {
                     },
                     'validLocation': {
                         'summary': 'Waar is mijn internationale bewijs geldig?',
-                        'content': '<p>De geldigheid van coronabewijzen verschilt per land. Controleer daarom voor vertrek welk bewijs je nodig hebt op jouw bestemming op TODO www.wijsopreis.nl.</p>'
+                        'content': '<p>De geldigheid van coronabewijzen verschilt per land. Controleer daarom voor vertrek welk bewijs je nodig hebt op jouw bestemming op <a href="""https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank">www.wijsopreis.nl</a>.</p>'
                     },
                     'whyNoDomesticVaccination': {
                         'summary': 'Waarom krijg ik geen Nederlands vaccinatiebewijs?',
