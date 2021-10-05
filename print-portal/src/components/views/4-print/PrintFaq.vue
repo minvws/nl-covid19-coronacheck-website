@@ -66,5 +66,11 @@ export default {
         h2 {
             font-size: 18px;
         }
+
+        details {
+            > div {
+                padding: 0 16px;
+            }
+        }
 }
 </style>
