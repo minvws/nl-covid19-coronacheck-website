@@ -93,7 +93,7 @@
         padding-bottom: 30px;
         border-bottom: 0;
 
-        summary {
+        > summary {
             font-weight: normal;
 
             &:hover {
@@ -131,6 +131,22 @@
                     background: $color-RO_lightblue;
                 }
             }
+        }
+    }
+}
+
+.details--modest {
+    border-top: 0;
+    border-bottom: 1px solid rgba(21, 66, 115, 0.5);
+
+    summary {
+        background: none;
+
+        &:hover,
+        &:focus {
+            background: transparent;
+            outline: 2px solid #008fcd;
+            outline-offset: -1px;
         }
     }
 }
