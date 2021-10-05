@@ -10,7 +10,7 @@ export default {
     components: { CcButton, Paper },
     props: {
         proof: {
-            type: Object,
+            type: [Object, Array],
             required: true
         },
         region: {
@@ -49,9 +49,22 @@ export default {
         async createDocument() {
             this.isRendering = true;
             const holderConfig = this.$store.state.holderConfig;
-            const proofContainer = { domestic: null, european: null };
-            proofContainer[this.region] = this.proof;
-            const proofs = parseProofData(proofContainer, holderConfig, this.currentLanguage.locale);
+
+            // todo remove this
+            // temp hack to be able to process mulitple DCCs
+            let proofs = [];
+            if (this.region === 'domestic') {
+                const proofContainer = { domestic: null, european: null };
+                proofContainer[this.region] = this.proof;
+                proofs = parseProofData(proofContainer, holderConfig, this.currentLanguage.locale);
+            } else {
+                for (const proofItem of this.proof) {
+                    const proofContainer = { domestic: null, european: null };
+                    proofContainer.european = proofItem;
+                    const parsed = parseProofData(proofContainer, holderConfig, this.currentLanguage.locale);
+                    proofs.push(parsed[0]);
+                }
+            }
             const options = {
                 proofs,
                 locale: this.currentLanguage.locale,
