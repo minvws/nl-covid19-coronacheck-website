@@ -9,4 +9,4 @@ webonly: true
 ---
 Een coronabewijs (de QR-code) op papier is handig voor bezoekers of reizigers die geen smartphone hebben. De Nederlandse QR-code in de CoronaCheck-app verandert elke paar minuten. Een controleur ziet dus steeds een andere QR-code. Daardoor kan diegene niet achterhalen waar je de QR-code nog meer hebt gebruikt.
 
-Op papier is dit niet mogelijk. De papieren versie biedt daarom minder privacy. Door regelmatig een nieuwe QR-code te printen kun je dit voorkomen. 
+Op papier is dit niet mogelijk. De papieren versie biedt daarom minder privacy. 
