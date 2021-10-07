@@ -251,27 +251,27 @@ For other questions, you can contact the Ministry of Foreign Affairs (BZ). <a hr
 
 {{ copy_intro }}
 
-<details id="vacc"><summary><h2>I want to create a vaccination certificate</h2></summary>
+<details class="details" id="vacc"><summary><h2>I want to create a vaccination certificate</h2></summary>
 
 <h3>In general regarding vaccination certificate</h3>
 {{ copy_vaccinatiebewijs }}
 
-<details id="vacc_nodata">
+<details class="details" id="vacc_nodata">
 <summary><h3>No vaccination details found</h3></summary>
 {{ copy_geen_vaccinatiegegevens }}
 </details>
 
-<details id="vacc_dataincorrect">
+<details class="details" id="vacc_dataincorrect">
 <summary><h3>My vaccination details are incorrect</h3></summary>
 {{ copy_incorrecte_vaccinatiegegevens }}
 </details>
 
-<details id="vacc_cantmakeproof">
+<details class="details" id="vacc_cantmakeproof">
 <summary><h3>The app can't create a certificate</h3></summary>
 {{ copy_app_kan_geen_bewijs_maken }}
 </details>
 
-<details id="vacc_othercountry"><summary><h3>Have you been vaccinated abroad? </h3></summary>
+<details class="details" id="vacc_othercountry"><summary><h3>Have you been vaccinated abroad? </h3></summary>
 {{ copy_in_buitenland_gevaccineerd }}
 </details>
 
@@ -281,20 +281,20 @@ For other questions, you can contact the Ministry of Foreign Affairs (BZ). <a hr
     Herstelbewijzen
 {% endcomment %}
 
-<details id="recovery"><summary><h2>I want to create a recovery certificate </h2></summary>
+<details class="details" id="recovery"><summary><h2>I want to create a recovery certificate </h2></summary>
 {{ copy_herstelbewijs }}
 
-<details id="recovery_nodata">
+<details class="details" id="recovery_nodata">
 <summary><h3>No details found</h3></summary>
 {{ copy_geen_herstelbewijs_gegevens }}
 </details>
 
-<details id="recovery_dataincorrect">
+<details class="details" id="recovery_dataincorrect">
 <summary><h3>The details found are incorrect</h3></summary>
 {{ copy_incorrecte_herstelgegevens }}
 </details>
 
-<details id="recovery_cantmakeproof">
+<details class="details" id="recovery_cantmakeproof">
 <summary><h3>The app can't create a certificate</h3></summary>
 {{ copy_we_kunnen_geen_herstelbewijs_maken }}
 </details>
@@ -305,45 +305,45 @@ For other questions, you can contact the Ministry of Foreign Affairs (BZ). <a hr
     Testbewijzen
 {% endcomment %}
 
-<details id="test"><summary><h2>I want to make a test certificate</h2></summary>
+<details class="details" id="test"><summary><h2>I want to make a test certificate</h2></summary>
     {{ copy_testbewijs }}
 
 <h3>Testing before your trip</h3>
 {{ copy_testen_voor_je_reis }}
 
-<details id="test_nocode">
+<details class="details" id="test_nocode">
 <summary><h3>I did not receive a retrieval code</h3></summary>
 {{ copy_geen_ophaalcode }}
 </details>
 
-<details id="test_noverificationcode">
+<details class="details" id="test_noverificationcode">
 <summary><h3>I'm not getting a verification code via SMS or email</h3></summary>
 {{ copy_geen_verificatiecode }}
 </details>
 
-<details id="test_incorrectdata">
+<details class="details" id="test_incorrectdata">
 <summary><h3>The details found are incorrect</h3></summary>
 {{ copy_incorrecte_testgegevens }}
 </details>
 
-<details id="test_cantmakeproof">
+<details class="details" id="test_cantmakeproof">
 <summary><h3>The app can't create a certificate</h3></summary>
 {{ copy_we_kunnen_geen_testbewijs_maken }}
 </details>
 
 </details>
 
-<details id="paper">
+<details class="details" id="paper">
 <summary><h2>I want to make a paper coronavirus pass</h2></summary>
 {{ copy_printbewijs }}
 </details>
 
-<details id="digid">
+<details class="details" id="digid">
 <summary><h2>I can’t login with DigiD</h2></summary>
 {{ copy_digid }}
 </details>
 
-<details id="travel">
+<details class="details" id="travel">
 <summary><h2>Questions about travelling?</h2></summary>
 {{ copy_travelquestions }}
 </details>

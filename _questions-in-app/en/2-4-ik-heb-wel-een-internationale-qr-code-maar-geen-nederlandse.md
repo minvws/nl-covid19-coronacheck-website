@@ -11,7 +11,7 @@ In the Netherlands, you'll only receive a vaccination certificate if you were fu
 
 Are you entitled to a Dutch vaccination certificate, but is the app not providing one? See what you can do below. 
 
-<details>
+<details class="details">
 <summary><h2>I've had coronavirus and received one vaccination </h2></summary>
 <div markdown="1">
 
@@ -28,7 +28,7 @@ Were you vaccinated by your general practitioner (GP), at the hospital or by ano
 </details>
 
 
-<details>
+<details class="details">
 <summary><h2>Did you contract coronavirus between your first and second vaccination?</h2></summary>
 <div markdown="1">
 If you contract coronavirus after your first vaccination, you'll need to get a second vaccination to be fully vaccinated. After that, you'll be able to create a vaccination certificate in CoronaCheck.
@@ -36,7 +36,7 @@ If you contract coronavirus after your first vaccination, you'll need to get a s
 </details>
 
 
-<details>
+<details class="details">
 <summary><h2>I received my two vaccinations on different locations</h2></summary>
 <div markdown="1">
 
