@@ -1,8 +1,8 @@
 <?php
 
-$code = $_REQUEST["code"];
-$state = $_REQUEST["state"];
-$host = $_SERVER["HTTP_HOST"];
+$code = $_REQUEST["code"] ?? '';
+$state = $_REQUEST["state"] ?? '';
+$host = $_SERVER["HTTP_HOST"] ?? '';
 
 $redirect = match ($host) {
     "www.coronacheck.nl" => "coronacheck://auth/login",
