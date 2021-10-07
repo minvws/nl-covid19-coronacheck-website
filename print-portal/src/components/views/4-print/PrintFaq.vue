@@ -47,7 +47,8 @@ export default {
         <div class="content-block">
             <details
                 v-for="(detail, index) in details"
-                :key="index">
+                :key="index"
+                class="details details--modest">
                 <summary>
                     <h3>
                     {{$t('views.print.details.set.' + detail + '.summary')}}
