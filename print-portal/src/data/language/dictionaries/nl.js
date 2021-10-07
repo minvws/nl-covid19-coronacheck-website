@@ -25,7 +25,7 @@ const nl = {
             'noConsentError': 'Ga eerst akkoord met de privacyverklaring'
         },
         'choiceProof': {
-            'pageHeader': 'Waar wil je een papieren bewijs van maken?',
+            'pageHeader': 'Welk papieren bewijs wil je maken?',
             'pageIntro': '',
             'choiceTestHeader': 'Een testbewijs',
             'choiceTestBody': 'Uit de test blijkt dat ik geen corona heb',
@@ -62,7 +62,7 @@ const nl = {
         },
         'vaccinationsIncomplete': {
             'pageHeader': 'We kunnen geen bewijs maken',
-            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Voor een Nederlands bewijs moet je volledig gevaccineerd zijn. Een internationaal bewijs kun je vanaf 1 juli maken.<p></p>'
+            'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Voor een Nederlands bewijs moet je volledig gevaccineerd zijn.</p>'
         },
         'collectRecovery': {
             'pageHeader': 'Gegevens van je herstel ophalen',
@@ -117,7 +117,7 @@ const nl = {
                     '<h4>QR-code voor Nederland en internationaal</h4>' +
                     '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
                     '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
                     '<h4>En nu?</h4>' +
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
@@ -151,7 +151,7 @@ const nl = {
                     '<h4>QR-code voor Nederland en internationaal</h4>' +
                     '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
                     '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
                     '<h4>En nu?</h4>' +
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>' +
@@ -180,7 +180,7 @@ const nl = {
                     '<h4>QR-code voor Nederland en internationaal</h4>' +
                     '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
                     '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
                     '<h4>En nu?</h4>' +
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
@@ -202,7 +202,7 @@ const nl = {
                     '<h4>QR-code voor Nederland en internationaal</h4>' +
                     '<p>Op de PDF vind je twee QR-codes: een QR-code voor Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code.</p>' +
                     '<h4>Geldigheid verschilt per land</h4>' +
-                    '<p>Ga je de grens over of ben je in het buitenland? Gebruik dan de internationale QR-code. Controleer voor vertrek welk bewijs je nodig hebt. <br>' +
+                    '<p>Controleer voor vertrek welk bewijs je nodig hebt op jouw bestemming. <br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is mijn bewijs geldig op mijn bestemming?</a></p>' +
                     '<h4>En nu?</h4>' +
                     '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
@@ -220,7 +220,9 @@ const nl = {
         },
         'serverBusy': {
             'pageHeader': 'Sorry, het is erg druk',
-            'pageIntro': '<p>Probeer het op een later moment nog eens.</p>'
+            'pageIntro': '<p>Probeer het op een later moment nog eens.</p>' +
+                '<p><strong>Foutcode</strong><br>%{error}</p>' +
+                '<p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
         },
         'errorNoEvents': {
             'pageHeader': 'Sorry, het is niet gelukt',
@@ -229,6 +231,10 @@ const nl = {
         'errorTokenFlow': {
             'pageHeader': 'Sorry, er gaat iets mis',
             'pageIntro': '<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.</p><h4>Wat nu?</h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:</p><p><strong>Foutcode: %{error}</strong></p>'
+        },
+        'errorDigiD': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href="https://www.digid.nl/" target="_blank">www.digid.nl</a> voor de laatste informatie.</p><p><strong>Foutcode: %{error}</strong></p>'
         },
         'errorGeneral': {
             'pageHeader': 'Sorry, er gaat iets mis',
@@ -245,6 +251,12 @@ const nl = {
         'errorProofNotPossible': {
             'pageHeader': 'We kunnen geen bewijs maken',
             'pageIntro': '<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href="https://coronacheck.nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
+        },
+        'errorTimeout': {
+            'pageHeader': 'Sorry, er gaat iets mis',
+            'pageIntro': '<p>Het is niet gelukt de server te bereiken.</p>' +
+                '<p><strong>Foutcode</strong><br>%{error}</p>' +
+                '<p><a href="https://status.coronacheck.nl/">Bekijk de actuele storingen</a></p>'
         }
     },
     'components': {
@@ -362,7 +374,7 @@ const nl = {
                 'no': 'Nee, ga door'
             },
             'digidCanceled': {
-                'head': 'Inloggen afgebroken',
+                'head': 'Inloggen geannuleerd',
                 'body': 'Wil je jouw %{type} ophalen? Log dan opnieuw in met DigiD.',
                 'vaccination': 'vaccinatiegegevens',
                 'negativetest': 'testuitslag',

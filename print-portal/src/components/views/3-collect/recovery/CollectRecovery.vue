@@ -1,13 +1,13 @@
 <script>
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
-import CcButton from '@/components/elements/CcButton';
 import { handleRejection } from '@/tools/error-handler';
 import NoDigiD from '@/components/views/3-collect/_shared/NoDigiD';
+import CcButtonDigiD from '@/components/elements/CcButtonDigiD';
 
 export default {
     name: 'CollectRecovery',
-    components: { NoDigiD, Page, PageIntro, CcButton },
+    components: { CcButtonDigiD, NoDigiD, Page, PageIntro },
     computed: {},
     methods: {
         getToken() {
@@ -33,10 +33,9 @@ export default {
                 :intro="$t('views.collectRecovery.pageIntro')"/>
             <div class="section-block">
                  <div class="section-block__footer">
-                     <CcButton
+                     <CcButtonDigiD
                          id="digid-recovery"
-                         @select="getToken()"
-                         :label="$t('components.digid.loginDigid')"/>
+                         @select="getToken()"/>
                      <NoDigiD/>
                 </div>
             </div>

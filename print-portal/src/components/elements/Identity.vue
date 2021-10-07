@@ -14,11 +14,11 @@ export default {
                 if (this.$route.meta.pageHeader === 'error') {
                     return 'assets/img/artwork/coronacheck-header-error.svg';
                 } else {
-                    return 'assets/img/artwork/coronacheck-header-regular.svg'
+                    return 'assets/img/artwork/coronacheck-header-regular-v2.svg'
                 }
             } else {
                 // standard
-                return 'assets/img/artwork/coronacheck-header-regular.svg'
+                return 'assets/img/artwork/coronacheck-header-regular-v2.svg'
             }
         }
     },

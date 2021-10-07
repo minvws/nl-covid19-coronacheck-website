@@ -11,6 +11,10 @@ export default {
             type: String,
             required: true
         },
+        bodyIcon: {
+            type: String,
+            required: false
+        },
         inactive: {
             type: Boolean,
             required: false,
@@ -38,10 +42,11 @@ export default {
                 v-if="body"
                 class="PageChoice__body PageChoice__line">
                 {{body}}
+                <img v-if="bodyIcon" :src="bodyIcon" alt=""/>
             </div>
         </div>
         <div class="PageChoice__icon">
-            <img src="assets/img/icons/next.svg"/>
+            <img src="assets/img/icons/next.svg" alt=""/>
         </div>
     </button>
 </template>
@@ -55,6 +60,7 @@ export default {
     padding: $grid-x2 60px $grid-x2 $grid-x2;
     border-radius: 9px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    color: $color-coronacheck_black;
     cursor: pointer;
     position: relative;
     border: 2px solid transparent;
@@ -85,6 +91,17 @@ export default {
 
     &__header {
         font-weight: 700;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 24px;
+            height: auto;
+            margin-left: 12px;
+        }
     }
 
     &__line {

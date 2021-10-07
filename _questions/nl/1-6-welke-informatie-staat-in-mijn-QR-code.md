@@ -22,9 +22,9 @@ De controleur kan niet zien welk soort bewijs iemand heeft. Om je identiteit te 
 Vanwege privacy ziet de controleur niet altijd al deze gegevens. Het kan dus zijn dat een van uw initialen is weggelaten en is vervangen door een "-" (streepje). Dit is correct. 
 
 ### De internationale QR-code
-Als je vanaf 1 juli op reis gaat met de CoronaCheck, worden er bij controles bij de ingang van locaties of bij grenscontroles meer gegevens zichtbaar. Dit is afgesproken binnen Europa (Digitaal Corona Certificaat). 
+Als je op reis gaat met de CoronaCheck, worden er bij controles bij de ingang van locaties of bij grenscontroles meer gegevens zichtbaar. Dit is afgesproken binnen Europa (Digitaal Corona Certificaat). 
 
-De controleur kan niet zien of je een testbewijs, vaccinatiebewijs of herstelbewijs hebt. Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
+Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
 
 #### Gegevens over het internationale testbewijs
 

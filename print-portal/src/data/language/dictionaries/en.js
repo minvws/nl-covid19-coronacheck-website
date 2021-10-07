@@ -62,7 +62,7 @@ const en = {
         },
         'vaccinationsIncomplete': {
             'pageHeader': 'We can’t make a certificate',
-            'pageIntro': '<p>At this moment, we can’t make a certificate. For a Dutch certificate you need to be fully vaccinated. An international certificate can be made from July 1st.</p>'
+            'pageIntro': '<p>At this moment, we can’t make a certificate. For a Dutch certificate you need to be fully vaccinated.</p>'
         },
         'collectRecovery': {
             'pageHeader': 'Retrieve recovery details',
@@ -115,7 +115,8 @@ const en = {
                 'pageHeader': 'Print your certificates',
                 'pageIntro': '<p><strong>Successful! A PDF of your test certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<h4>QR code for the Netherlands and abroad</h4>' +
-                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -127,6 +128,7 @@ const en = {
                     '<h4>QR code for abroad</h4>' +
                     '<p>In the PDF you will only find an international QR code. You can use this if you are abroad or cross the border, but not in the Netherlands.</p>' +
                     '<p>The validity period of your QR code may be shorter in the Netherlands than in other countries. Get tested again for a certificate that is also valid in the Netherlands.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -147,7 +149,8 @@ const en = {
                 'pageHeader': 'Print your certificates',
                 'pageIntro': '<p><strong>Successful! A PDF of your vaccination certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<h4>QR code for the Netherlands and abroad</h4>' +
-                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -161,6 +164,7 @@ const en = {
                     '<p>In the PDF you will only find an international QR code. You can use this if you are abroad or cross the border, but not in the Netherlands.</p>' +
                     '<p>You may not have received a Dutch QR code because you only had one injection. After your second vaccination, you can create a new certificate that is also valid in the Netherlands. ' +
                     '<a href="https://coronacheck.nl/en/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Read more about the possible causes here</a>.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -174,7 +178,8 @@ const en = {
                 'pageHeader': 'Print your certificates',
                 'pageIntro': '<p><strong>Successful! A PDF of your recovery certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<h4>QR code for the Netherlands and abroad</h4>' +
-                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -195,7 +200,8 @@ const en = {
                 'pageIntro': '<p><strong>Successful! A PDF of your recovery certificate has been made. There’s a QR code on the PDF you can have scanned.</strong></p>' +
                     '<p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be free of symptoms.</p>' +
                     '<h4>QR code for the Netherlands and abroad</h4>' +
-                    'In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.' +
+                    '<p>In the PDF, you’ll find two QR codes. A QR code for the Netherlands, and an international one. Are you crossing the border, or are you abroad right now? Then please use the international QR code.</p>' +
+                    '<h4>The validity period varies by country </h4>' +
                     '<p>Before leaving, please check which certificate you need.<br>' +
                     '<a href="https://www.nederlandwereldwijd.nl/reizen/reisadviezen" target="_blank" rel="noopener noreferrer">Is my certificate valid in the country I’m traveling to?</a></p>' +
                     '<h4>What now?</h4>' +
@@ -214,7 +220,9 @@ const en = {
         },
         'serverBusy': {
             'pageHeader': 'Sorry, it is really busy',
-            'pageIntro': '<p>Please try again later.</p>'
+            'pageIntro': '<p>Please try again later.</p>' +
+                '<p><strong>Error code</strong><br>%{error}</p>' +
+                '<p><a href="https://status.coronacheck.nl/en/">View the latest outages</a></p>'
         },
         'errorNoEvents': {
             'pageHeader': 'Sorry, your details were not retrieved',
@@ -223,6 +231,10 @@ const en = {
         'errorTokenFlow': {
             'pageHeader': 'Sorry, something has gone wrong',
             'pageIntro': '<p>Something is going wrong at the test location. Therefore, your details can’t be retrieved.</p><h4>What now?</h4><p>Contact the test location and give them the following error code:</p><p><strong>Error code: %{error}</strong></p>'
+        },
+        'errorDigiD': {
+            'pageHeader': 'Sorry, something has gone wrong',
+            'pageIntro': '<p>There was an error while communicating with DigiD. Please try again later. If the error persists, please check <a href="https://www.digid.nl/en" target="_blank">www.digid.nl/en</a> for the latest information.</p><p><strong>Foutcode: %{error}</strong></p>'
         },
         'errorGeneral': {
             'pageHeader': 'Sorry, something has gone wrong',
@@ -239,6 +251,12 @@ const en = {
         'errorProofNotPossible': {
             'pageHeader': 'We can’t make a certificate',
             'pageIntro': '<p>At this moment, we can\'t make a certificate. This can have various causes. Read more on the <a href="https://www.coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
+        },
+        'errorTimeout': {
+            'pageHeader': 'Sorry, something has gone wrong',
+            'pageIntro': '<p>Could not reach the server.</p>' +
+                '<p><strong>Error code</strong><br>%{error}</p>' +
+                '<p><a href="https://status.coronacheck.nl/en/">View the latest outages</a></p>'
         }
     },
     'components': {

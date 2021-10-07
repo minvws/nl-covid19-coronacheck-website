@@ -80,21 +80,15 @@ export default {
                     return error && error.message && error.message === 'saml_authn_failed';
                 }
 
-                const isAppAuthError = (error) => {
-                    const options = [
-                        'invalid_request',
-                        'invalid_client',
-                        'invalid_grant',
-                        'unauthorized_client',
-                        'unsupported_grant_type',
-                        'invalid_scope'
-                    ]
-                    return error && error.message && options.indexOf(error.message) > -1;
-                }
-
                 const tooBusy = (error) => {
                     // the response login_required is a hack to communicate too busy mode
                     return error && error.error && error.error === 'login_required';
+                }
+
+                const errorCodeInformation = {
+                    flow: this.filter,
+                    step: '10',
+                    provider_identifier: '000'
                 }
 
                 if (isCanceled(error)) {
@@ -106,12 +100,13 @@ export default {
                         closeButton: true
                     })
                 } else if (tooBusy(error)) {
-                    this.$router.push({ name: 'ServerBusy' });
-                } else if (isAppAuthError(error)) {
-                    const errorCode = getErrorCode(error, { flow: this.filter, step: '10', provider_identifier: '000', errorBody: error.message });
-                    this.$router.push({ name: 'ErrorGeneral', query: { errors: errorCode } });
+                    const errorCode = getErrorCode(error, errorCodeInformation);
+                    this.$router.push({ name: 'ServerBusy', query: { error: errorCode } });
                 } else {
-                    handleRejection(error, { flow: this.filter, step: '10', provider_identifier: '000' });
+                    if (error && error.message) {
+                        errorCodeInformation.errorBody = error.message;
+                    }
+                    handleRejection(error, errorCodeInformation);
                 }
             });
         },
@@ -182,7 +177,7 @@ export default {
                                 errorCodes.push(errorCode);
                             }
                             if (eventProvider.events.parsingError) {
-                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider, parsingError: true });
+                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider, clientSideCode: '030' });
                                 errorCodes.push(errorCode);
                             }
                         }

@@ -14,10 +14,10 @@
   "dependencies": {
     "@cypress/vue": "^2.2.3",
     "@cypress/webpack-dev-server": "^1.4.0",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "core-js": "^3.6.5",
     "date-fns": "^2.20.1",
-    "dcc-pdf-tools": "git://github.com:91divoc-ln/dcc-pdf-tools.git#v2.0.2",
+    "dcc-pdf-tools": "git://github.com:91divoc-ln/dcc-pdf-tools.git#v2.0.3",
     "detect-browser": "^5.2.0",
     "oidc-client": "^1.11.5",
     "portal-vue": "^2.1.7",

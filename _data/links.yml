@@ -33,6 +33,10 @@ phone-tvjr-helpdesk:
   nl: '<a href="tel:0887770810">088 777 08 10</a>'
   en: '<a href="tel:+31887770810">+31 88 777 08 10</a>'
 
+phone-kvk-organisatoren:
+  nl: '<a href="tel:08002117">0800-2117</a>'
+  en: '<a href="tel:+318002117">+31 800-2117</a>'
+
 # Websites and their English equivalent
 
 wijsopreis:
@@ -52,8 +56,16 @@ reizen-en-vakantie:
   en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/travelling-abroad" rel="noopener noreferrer" target="_blank">Travelling abroad (information for people living in the Netherlands)</a>'
 
 testenvoorjereis: 
-  nl: '<a href="https://www.testenvoorjereis.nl" rel="noopener noreferrer" target="_blank">Testen voor je reis</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Free coronatest for travellers</a>'
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie/coronabewijs/gratis-coronatest" rel="noopener noreferrer" target="_blank">Testen voor je reis</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Coronatest for travellers</a>'
+
+kvkEvenement:
+  nl: '<a href="https://www.kvk.nl/corona/alles-wat-je-moet-weten-over-het-coronatoegangsbewijs/" rel="noopener noreferrer" target="_blank">Alles wat je moet weten over het coronatoegangsbewijs</a>'
+  en: 
+
+evenementOrganiseren:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-voor-evenementen/coronatoegangsbewijs-informatie-voor-organisatoren" rel="noopener noreferrer" target="_blank">Ondernemers, organisatoren en het coronatoegangsbewijs</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-voor-evenementen/coronatoegangsbewijs-informatie-voor-organisatoren" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Ondernemers, organisatoren en het coronatoegangsbewijs</span> (Dutch)</a>'
 
 coronatest: 
   nl: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank">coronatest.nl</a>'
@@ -81,11 +93,15 @@ herstelbewijs:
 
 voororganisatoren:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/organisatoren" rel="noopener noreferrer" target="_blank">Testen voor toegang: informatie voor organisatoren</a>'
-  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/organisatoren" rel="noopener noreferrer" target="_blank" lang="nl" hreflang="nl">Testen voor toegang: informatie voor organisatoren (Dutch)</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/organisatoren" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Testen voor toegang: informatie voor organisatoren</span> (Dutch)</a>'
  
 openingsplan:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank">Coronavirus Covid-19 Openingsplan</a>'
-  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank" lang="nl" hreflang="nl">Coronavirus Covid-19 Openingsplan (Dutch)</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Coronavirus Covid-19 Openingsplan</span> (Dutch)</a>'
+
+overzicht-maatregelen:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/documenten/publicaties/2021/09/14/overzicht-coronamaatregelen" rel="noopener noreferrer" target="_blank">Nederland verder open met coronatoegangsbewijs per 25 september</a>'
+  en: '<a href="https://www.government.nl/latest/news/2021/09/14/netherlands-to-reopen-further-with-coronavirus-entry-passes" rel="noopener noreferrer" target="_blank">Netherlands to reopen further with coronavirus entry passes</a>'
  
 wetransfer-toolkit:
   nl: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs voor evenementen</a>'
@@ -93,4 +109,4 @@ wetransfer-toolkit:
 
 aansluiting-apps:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank">Aansluiting op CoronaCheck voor apps</a>'
-  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Connecting apps to CoronaCheck (Dutch)</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronacheck-voor-applicatie-providers" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Connecting apps to CoronaCheck</span> (Dutch)</a>'
