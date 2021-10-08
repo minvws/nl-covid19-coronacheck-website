@@ -215,6 +215,8 @@ Heb je al DigiD en lukt het je niet om hier een coronabewijs mee op te halen? Bi
 - Soms werkt het om de telefoon te herstarten en dan opnieuw te proberen;
 - Tenslotte kan het werken om DigiD op een ander apparaat te gebruiken.
 
+**Let op:** Gebruik je iOS 15 en krijg je de foutmelding ‘Er was langer dan 15 minuten geen activiteit in het scherm’? Stel een andere browser dan Safari in als standaard browser en probeer het nogmaals.
+
 Lukt het nog steeds niet? Neem dan contact op de helpdesk via {{ site.data.links.phone-helpdesk[page.lang] }} of via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 ### Ik heb geen BSN-nummer

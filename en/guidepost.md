@@ -223,6 +223,8 @@ For some people it is not possible to log in with DigiD. One of the following so
 - Sometimes it works to restart the phone and then try again;
 - Finally, it may work to use DigiD on another device.
 
+**Please note:** Are you using iOS15, and did you receive the error message that ‘There was no activity on the screen for more than 15 minutes?’  Set another browser as default (not Safari) and try again.'
+
 Still not working? Please contact the help desk on {{ site.data.links.phone-helpdesk[page.lang] }} or via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 ### I don't have a social security number 
