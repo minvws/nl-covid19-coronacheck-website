@@ -66,7 +66,8 @@ const en = {
         },
         'collectRecovery': {
             'pageHeader': 'Retrieve recovery details',
-            'pageIntro': '<p>Have you had coronavirus? Then you can make a recovery certificate of the positive test result from the GGD. Log in with DigiD to retrieve your test result.</p><p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be symptom-free.</p>'
+            'pageIntro': '<p>Have you had coronavirus? Then you can make a recovery certificate of the positive test result. Log in with DigiD to retrieve your test result.</p>' +
+                '<p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be symptom-free.</p>'
         },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
@@ -262,13 +263,13 @@ const en = {
         'recovery': {
             'title': 'Recovery certificate',
             'info': {
-                'detailsRetrieved': 'The following details were retrieved at the test location'
+                'detailsRetrieved': 'The following details were retrieved'
             }
         },
         'positiveTest': {
             'title': 'Positive test result',
             'info': {
-                'detailsRetrieved': 'The following details were retrieved at the test location'
+                'detailsRetrieved': 'The following details were retrieved'
             }
         },
         'digid': {
