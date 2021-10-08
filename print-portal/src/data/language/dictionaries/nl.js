@@ -66,7 +66,8 @@ const nl = {
         },
         'collectRecovery': {
             'pageHeader': 'Gegevens van je herstel ophalen',
-            'pageIntro': '<p>Heb je corona gehad? Dan kun je van de positieve testuitslag van de GGD een herstelbewijs maken. Log in met DigiD om een testuitslag op te halen.</p><p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>'
+            'pageIntro': '<p>Heb je corona gehad? Dan kun je van de positieve testuitslag een herstelbewijs maken. Log in met DigiD om een testuitslag op te halen.</p>' +
+                '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>'
         },
         'provideCode': {
             'pageHeader': 'Testuitslag ophalen',
