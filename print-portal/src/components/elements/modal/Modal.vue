@@ -79,6 +79,11 @@ export default {
                 role="alertdialog"
                 aria-labelledby="modal__head"
                 aria-describedby="modal__body">
+                <a @click="close()"
+                    class="close-detail-pop-up"
+                    :aria-label="$t('close')">
+                    <img src="assets/img/icons/close.svg" alt=""/>
+                </a>
                 <h1
                     v-html="messageHead"
                     ref="focusStart"
