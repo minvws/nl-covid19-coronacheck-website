@@ -323,13 +323,13 @@ const en = {
         'recovery': {
             'title': 'Recovery certificate',
             'info': {
-                'detailsRetrieved': 'The following details were retrieved at the test location'
+                'detailsRetrieved': 'The following details were retrieved'
             }
         },
         'positiveTest': {
             'title': 'Positive test result',
             'info': {
-                'detailsRetrieved': 'The following details were retrieved at the test location'
+                'detailsRetrieved': 'The following details were retrieved'
             }
         },
         'digid': {

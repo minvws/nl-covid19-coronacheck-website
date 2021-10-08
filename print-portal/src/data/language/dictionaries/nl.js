@@ -272,13 +272,13 @@ const nl = {
         'recovery': {
             'title': 'Herstelbewijs',
             'info': {
-                'detailsRetrieved': 'De volgende gegevens zijn opgehaald bij de testlocatie'
+                'detailsRetrieved': 'De volgende gegevens zijn opgehaald'
             }
         },
         'positiveTest': {
             'title': 'Positieve testuitslag',
             'info': {
-                'detailsRetrieved': 'De volgende gegevens zijn opgehaald bij de testlocatie'
+                'detailsRetrieved': 'De volgende gegevens zijn opgehaald'
             }
         },
         'digid': {
