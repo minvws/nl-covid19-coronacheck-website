@@ -109,23 +109,27 @@ const nl = {
         },
         'print': {
             'pageTitle': 'Jouw bewijs',
-            'pageHeader': 'Jouw %{type}bewijs staat klaar',
+            'pageHeader': {
+                'domestic': 'Gelukt! Jouw bewijs staat klaar',
+                'european': 'Gelukt! Jouw bewijs staat klaar',
+                'both': 'Gelukt! Jouw bewijzen staan klaar'
+            },
             'pageIntro': {
-                'domestic': '<p>Gelukt! Jouw %{type}bewijs staat klaar. Je hebt alleen een bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet om de grens over te gaan of in het buitenland.</p>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt.</p>',
-                'european': '<p>Gelukt! Jouw %{type}bewijs staat klaar. Je hebt alleen een internationaal bewijs. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p>' +
-                    '<p>Open de PDF en maak een printje. Neem deze mee naar het land waar je heen reist.</p>',
-                'both': '<p>Gelukt! Jouw %{type}bewijs staat klaar. Je hebt een bewijs voor in Nederland en een internationale. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.</p>' +
-                    '<p>Open de PDF’s en maak een printje. Neem deze mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist. </p>'
+                'domestic': '<p>JJe hebt alleen een %{type}bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet als je de grens over gaat of in het buitenland bent.</p>' +
+                    '<p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.</p>',
+                'european': '<p>Je hebt alleen een internationaal %{type}bewijs. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p>' +
+                    '<p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.</p>',
+                'both': '<p>Je hebt een Nederlands en een internationaal %{type}bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.</p>' +
+                    '<p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
             },
             'proofType': {
                 'vaccination': 'vaccinatie',
                 'recovery': 'herstel',
                 'negativetest': 'test'
             },
-            'validInFuture': '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>',
+            'validInFuture': '<p>Let op: jouw herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>',
             'details': {
-                'header': 'Belangrijk om te weten',
+                'header': '',
                 'set': {
                     'validPeriod': {
                         'summary': 'Hoe lang is mijn papieren bewijs geldig?',
@@ -137,19 +141,19 @@ const nl = {
                     },
                     'whyNoDomesticVaccination': {
                         'summary': 'Waarom krijg ik geen Nederlands vaccinatiebewijs?',
-                        'content': '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat je maar één prik hebt gehad. Na je tweede vaccinatie kun je een nieuw bewijs maken dat ook in Nederland geldig is. <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Lees hier meer over de mogelijke oorzaken</a>.</p>'
+                        'content': '<p>Dat je geen Nederlandse vaccinatiebewijs hebt gekregen kan komen doordat je maar één prik hebt gehad. Na je tweede prik kun je een nieuw bewijs maken dat ook in Nederland geldig is. <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Lees hier meer over de mogelijke oorzaken</a>.</p>'
                     },
                     'whyNoEuropeanRecovery': {
                         'summary': 'Waarom krijg ik geen internationaal herstelbewijs?',
-                        'content': '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden.</p>'
-                    },
-                    'whyNoDomesticTest': {
-                        'summary': 'Waarom krijg ik geen internationaal testbewijs?',
-                        'content': '<p>Dat je geen internationale QR-code hebt gekregen kan komen doordat het type test niet geaccepteerd wordt in andere landen. Laat je opnieuw testen voor een bewijs dat ook internationaal geldig is.</p>'
+                        'content': '<p>Dat je geen internationaal herstelbewijs hebt gekregen kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden. Lees meer over de mogelijke oorzaken op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
                     },
                     'whyNoEuropeanTest': {
+                        'summary': 'Waarom krijg ik geen internationaal testbewijs?',
+                        'content': '<p>Dat je geen internationaal testbewijs hebt gekregen kan komen doordat het type test niet geaccepteerd wordt in andere landen. Laat je opnieuw testen voor een bewijs dat ook internationaal geldig is.</p>'
+                    },
+                    'whyNoDomesticTest': {
                         'summary': 'Waarom krijg ik geen Nederlands testbewijs?',
-                        'content': '<p>Dat je geen Nederlandse QR-code hebt gekregen kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.</p>'
+                        'content': '<p>Dat je geen Nederlands testbewijs hebt gekregen kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.</p>'
                     }
                 }
             }

@@ -50,6 +50,17 @@ export default {
                 }
             }
         },
+        pageHeaderCopy() {
+            if (this.hasDomestic && this.hasEuropean) {
+                return this.$t('views.print.pageHeader.both');
+            } else {
+                if (this.hasDomestic) {
+                    return this.$t('views.print.pageHeader.domestic');
+                } else {
+                    return this.$t('views.print.pageHeader.european');
+                }
+            }
+        },
         pageIntroCopy() {
             let copy = this.$t('views.print.pageIntro.' + this.regionType, { type: this.proofTypeCopy });
             if (this.validInFuture) {
@@ -75,15 +86,13 @@ export default {
         @back="goBack">
         <div class="section">
             <PageIntro
-                :head="$t('views.print.pageHeader', {type: this.proofTypeCopy })"
+                :head="pageHeaderCopy"
                 :intro="pageIntroCopy"/>
-
             <div class="section-block">
                 <PrintFaq
-                    :type="type"
-                    :region-type="regionType"/>
+                :type="type"
+                :region-type="regionType"/>
             </div>
-
             <div class="proof-regions">
                 <ProofRegion
                     v-if="hasDomestic"
