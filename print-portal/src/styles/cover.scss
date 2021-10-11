@@ -1,10 +1,25 @@
-.modal {
-    position:relative;
+.modal{
+    position:relative;  
+    &__container {            
+        .sticky-header {
+            position:fixed;
+            display:flex;
+            flex-wrap: nowrap;
+            width:100%;
+            max-height: 75px;
+            background-color:#fff;
+            margin-top: -1px;
+            h1 {
+                flex-grow:2;
+            }
+            .close-detail-pop-up {
+                padding:0 32px;
+            }            
+        }
+    }
 }
+#modal__body.sticky {
+        margin-top:91px;
+    }
 
-.close-detail-pop-up {
-    position:absolute;
-    right:0px;
-    padding: 30px;
-    cursor: pointer;
-}
+
