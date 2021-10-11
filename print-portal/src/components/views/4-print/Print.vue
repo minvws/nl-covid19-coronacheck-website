@@ -117,6 +117,15 @@ export default {
         justify-content: center;
         width: 100%;
         margin-top: 64px;
+
+        @include mobile() {
+            display: block;
+
+            .ProofRegion {
+                width: 100%;
+                margin: 0 0 12px 0;
+            }
+        }
     }
 
     .PrintFaq {
