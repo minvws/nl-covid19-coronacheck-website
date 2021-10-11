@@ -193,5 +193,14 @@ export default {
     &:last-child {
         margin-right: 0;
     }
+
+    @include mobile() {
+        display: block;
+        padding: 56px 24px;
+
+        .Paper {
+            margin: 0 auto 56px auto;
+        }
+    }
 }
 </style>

@@ -124,6 +124,10 @@ export default {
             .ProofRegion {
                 width: 100%;
                 margin: 0 0 12px 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }
