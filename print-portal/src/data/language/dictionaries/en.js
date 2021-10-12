@@ -201,6 +201,19 @@ const en = {
         }
     },
     'components': {
+        'proofRegion': {
+            'domestic': {
+                'title': 'Dutch certificate',
+                'intro': 'Use this certificate to access places or activities within the Netherlands.',
+                'paperTitle': 'Dutch certificate'
+            },
+            'european': {
+                'title': 'International certificate',
+                'intro': 'Use this certificate if you are abroad or crossing the border.',
+                'paperTitle': 'International certificate'
+            },
+            'openPDF': 'Open PDF'
+        },
         'languagePicker': {
             'language': 'Language',
             'changeLanguage': 'Change language',
