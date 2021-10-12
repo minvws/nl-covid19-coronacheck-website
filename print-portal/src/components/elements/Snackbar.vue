@@ -94,5 +94,10 @@ export default {
             transform: rotate(-45deg);
         }
     }
+    @include mobile() {
+        transform:none;
+        left:20px;
+        right:20px;
+    }
 }
 </style>

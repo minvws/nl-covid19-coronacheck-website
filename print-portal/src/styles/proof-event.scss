@@ -11,6 +11,8 @@
 
     &__line {
         margin-bottom: 8px;
+        color:$color-darkgrey;
+        font-size:$grid-x2;
 
         &:last-child {
             margin-bottom: 0;
@@ -19,6 +21,7 @@
         h2 {
             font-size: inherit;
             margin: 0;
+            font-family:$font-main;
         }
     }
 
