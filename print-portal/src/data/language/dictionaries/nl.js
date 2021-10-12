@@ -142,19 +142,19 @@ const nl = {
                     },
                     'whyNoDomesticVaccination': {
                         'summary': 'Waarom krijg ik geen Nederlands vaccinatiebewijs?',
-                        'content': '<p>Dat je geen Nederlandse vaccinatiebewijs hebt gekregen kan komen doordat je maar één prik hebt gehad. Na je tweede prik kun je een nieuw bewijs maken dat ook in Nederland geldig is. <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Lees hier meer over de mogelijke oorzaken</a>.</p>'
+                        'content': '<p>Dat je geen Nederlandse vaccinatiebewijs hebt gekregen, kan komen doordat je maar één prik hebt gehad. Na je tweede prik kun je een nieuw bewijs maken dat ook in Nederland geldig is. <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Lees hier meer over de mogelijke oorzaken</a>.</p>'
                     },
                     'whyNoEuropeanRecovery': {
                         'summary': 'Waarom krijg ik geen internationaal herstelbewijs?',
-                        'content': '<p>Dat je geen internationaal herstelbewijs hebt gekregen kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden. Lees meer over de mogelijke oorzaken op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
+                        'content': '<p>Dat je geen internationaal herstelbewijs hebt gekregen, kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden. Lees meer over de mogelijke oorzaken op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
                     },
                     'whyNoEuropeanTest': {
                         'summary': 'Waarom krijg ik geen internationaal testbewijs?',
-                        'content': '<p>Dat je geen internationaal testbewijs hebt gekregen kan komen doordat het type test niet geaccepteerd wordt in andere landen. Laat je opnieuw testen voor een bewijs dat ook internationaal geldig is.</p>'
+                        'content': '<p>Dat je geen internationaal testbewijs hebt gekregen, kan komen doordat het type test niet geaccepteerd wordt in andere landen. Laat je opnieuw testen voor een bewijs dat ook internationaal geldig is.</p>'
                     },
                     'whyNoDomesticTest': {
                         'summary': 'Waarom krijg ik geen Nederlands testbewijs?',
-                        'content': '<p>Dat je geen Nederlands testbewijs hebt gekregen kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.</p>'
+                        'content': '<p>Dat je geen Nederlands testbewijs hebt gekregen, kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.</p>'
                     }
                 }
             }
