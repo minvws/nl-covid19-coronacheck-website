@@ -124,8 +124,8 @@ const en = {
                     '<p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
             },
             'proofType': {
-                'vaccination': 'vaccinatie',
-                'recovery': 'herstel',
+                'vaccination': 'vaccination',
+                'recovery': 'recovery',
                 'negativetest': 'test'
             },
             'validInFuture': '<p>Please note: your recovery certificate will become valid 11 days after the positive test result. You need to be free of symptoms as well.</p>',
