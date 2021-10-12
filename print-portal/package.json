@@ -14,7 +14,7 @@
   "dependencies": {
     "@cypress/vue": "^2.2.3",
     "@cypress/webpack-dev-server": "^1.4.0",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "core-js": "^3.6.5",
     "date-fns": "^2.20.1",
     "dcc-pdf-tools": "git://github.com:91divoc-ln/dcc-pdf-tools.git#v2.0.3",
@@ -23,9 +23,11 @@
     "portal-vue": "^2.1.7",
     "register-service-worker": "^1.7.1",
     "v-click-outside": "^3.1.2",
+    "v-scroll-threshold": "^2.0.0",
     "vue": "^2.6.14",
     "vue-i18n": "^8.24.4",
     "vue-router": "^3.2.0",
+    "vue-sticky-element": "^1.1.2",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
