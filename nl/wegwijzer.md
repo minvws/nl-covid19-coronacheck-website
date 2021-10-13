@@ -97,10 +97,9 @@ Als je echt binnen een paar dagen een evenement wilt bezoeken, is het advies om 
 </div>
 {% endcapture %}
 
-
 {% capture copy_incorrecte_herstelgegevens %}
 <div markdown="1"> 
-Kloppen de opgehaalde gegevens van je positieve testuitslag niet, bijvoorbeeld je type test, tijd of datum? neem dan contact op met jouw testaanbieder. Zij kunnen je helpen met het aanpassen van de gegegevens. Ben je getest bij de GGD? Dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }}.
+Kloppen de opgehaalde gegevens van je positieve testuitslag niet, bijvoorbeeld je type test, tijd of datum? Als je bij de GGD bent getest, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten wijzigen. Ben je door een andere testlocatie getest dan de GGD? Ga dan naar {{ site.data.links.herstelbewijs-elders[page.lang] }} en vul het formulier in.
 </div>
 {% endcapture %}
 
@@ -108,7 +107,7 @@ Kloppen de opgehaalde gegevens van je positieve testuitslag niet, bijvoorbeeld j
 <div markdown="1"> 
 Worden er wel gegevens over jouw herstel gevonden, maar zegt CoronaCheck dat er geen bewijs gemaakt kan worden? Het kan zijn dat jouw testuitslag meer dan 180 dagen oud is. Dan is het niet meer mogelijk om een herstelbewijs te maken.
 
-Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Neem dan contact op met de zorgverlener waar je bent getest. Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren.
+Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Als je bij de GGD bent getest, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten wijzigen. Ben je door een andere testlocatie getest dan de GGD? Ga dan naar {{ site.data.links.herstelbewijs-elders[page.lang] }} en vul het formulier in.
 
 Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je een evenement wilt bezoeken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>

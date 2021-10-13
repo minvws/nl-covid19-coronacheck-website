@@ -106,7 +106,8 @@ If you really want to visit an event within a few days, the advice is to schedul
 
 {% capture copy_incorrecte_herstelgegevens %}
 <div markdown="1">  
-Are the details retrieved from your positive test result incorrect (your type of test, time or date for example)? Please contact the healthcare provider where you were tested. If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected.
+Are the details retrieved from your positive test result incorrect (your type of test, time or date for example)? If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected. If you have been tested at another test provider, please go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form.
+
 </div>
 {% endcapture %}
 
@@ -114,7 +115,7 @@ Are the details retrieved from your positive test result incorrect (your type of
 <div markdown="1"> 
 Are details about your vaccination found, but does CoronaCheck say no certificate can be made? Your test result may be more than 180 days old. Then it is no longer possible to make a recovery certificate.
 
-Were you tested less than 180 days ago? Then there may be an error in the test data. Please contact the healthcare provider where you were tested. If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected.
+Were you tested less than 180 days ago? Then there may be an error in the test data.  If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected. If you have been tested at another test provider, please go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form.
 
 Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. Make your appointment through {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
