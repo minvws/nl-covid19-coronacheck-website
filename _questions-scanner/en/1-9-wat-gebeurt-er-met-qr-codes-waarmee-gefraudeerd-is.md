@@ -1,9 +1,8 @@
 ---
 set: 1
 index: 9
-title: Wat gebeurt er met QR-codes waarmee gefraudeerd is?
-published: false
+title: What happens to QR codes that have been tampered with?
 ---
-Vanaf versie 2.4.0 bevat de **Scanner voor CoronaCheck** de mogelijkheid om specifieke QR-codes te blokkeren. QR-codes en coronabewijzen zijn persoonlijk, en mogen niet worden gebruikt door anderen. Als QR-codes breed worden gedeeld op internet of op sociale media, dan kan het ministerie van VWS deze codes blokkeren. In dat geval geeft de Scanner app een rood scherm en mag de persoon niet toegelaten worden.
+As of version 2.4.0., the Scanner for CoronaCheck has the option to block specific QR codes. QR codes and coronavirus passes are personal, and may not be used by others. If QR codes are widely shared on the internet or on social media, the Ministry of Health, Welfare and Sport can block these codes. In that case, the Scanner app will show a red screen, and the person cannot be admitted. 
 
-Controleer altijd het legitimatiebewijs, om te voorkomen dat personen met een QR-code van een ander toegang proberen te krijgen.
+Always check the proof of identity, to prevent people from trying to gain access with someone else's QR code.
