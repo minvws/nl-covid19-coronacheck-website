@@ -8,7 +8,7 @@ redirect_from:
 ---
 Rood scherm aan de grens of in het buitenland? Het kan zijn dat de corona-maatregelen van het land in het land dat je bezoekt anders zijn dan in Nederland. Kijk op {{ site.data.links.wijsopreis[page.lang] }} voor de regels en geldigheid van het coronabewijs in andere landen.
 
-Een rood scherm betekent dat de QR-code niet aan Nederlandse eisen voldoet.
+Een rood scherm kan betekenen dat de QR-code niet aan Nederlandse eisen voldoet of dat de QR-code geblokkeerd is. QR-codes die breed worden verspreid via internet of sociale media worden geblokkeerd.
 
 ## Dit kun je doen:
 

@@ -5,7 +5,6 @@ title: Wanneer kan ik een herstelbewijs maken?
 ---
 Je kunt een positieve testuitslag gebruiken om een herstelbewijs te maken met CoronaCheck. Hiervoor gelden een aantal voorwaarden:
 
-- De positieve test is afgenomen bij de GGD;
 - Het herstelbewijs is geldig 11 dagen na de positieve testuitslag, het herstelbewijs kan al wel eerder gemaakt worden;
 - De positieve testuitslag is maximaal 180 dagen oud.
 

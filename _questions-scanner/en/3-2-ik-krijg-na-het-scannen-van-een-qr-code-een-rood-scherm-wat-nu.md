@@ -5,7 +5,7 @@ title: I get a red screen after scanning a QR code. What now?
 redirect_from: 
   - /en/faq-scanner/7-na-scannen-een-rood-scherm-wat-nu
 ---
-A red screen means that the QR code does not meet Dutch requirements.
+A red screen could mean that the QR code does not meet Dutch requirements, or that the QR code is blocked. QR codes that are widely shared via the internet or social media will be blocked.
 
 ## Here’s what you can do:
 
