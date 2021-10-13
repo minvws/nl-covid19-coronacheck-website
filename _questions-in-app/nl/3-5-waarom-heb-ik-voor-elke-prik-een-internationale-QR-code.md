@@ -7,14 +7,22 @@ Vanaf nu krijg je in de CoronaCheck-app of via [coronacheck.nl/print](/print) ee
 
 ## Welke QR-code moet ik gebruiken?
 
-Welke QR-code je moet laten zien hangt af van de eisen van het land dat je bezoekt. Let op: deze eisen kunnen veranderen. 
+Welke QR-code je moet laten zien hangt af van de eisen van het land dat je bezoekt. 
 
-### Ik ben twee keer gevaccineerd
+**Let op:** deze eisen kunnen veranderen. Controleer altijd voor vertrek op {{ site.data.links.wijsopreis[page.lang] }} welk bewijs je nodig hebt in het land dat je bezoekt.
 
+
+<details class="details">
+<summary><h3>Ik ben twee keer gevaccineerd</h3></summary>
+<div markdown="1">
 De meeste landen zullen op dit moment om de QR-code van jouw dosis 2/2 vragen.
+</div>
+</details>
 
-### Ik ben meer dan twee keer gevaccineerd
-
+<details class="details">
+<summary><h3>Ik ben meer dan twee keer gevaccineerd</h3></summary>
+<div markdown="1">
 De QR-codes van extra doses worden nog niet overal geaccepteerd. De meeste landen zullen op dit moment om de QR-code van jouw tweede vaccinatie-dosis (2/2) vragen.
+</div>
+</details>
 
-Controleer altijd voor vertrek op {{ site.data.links.wijsopreis[page.lang] }} welk bewijs je nodig hebt in het land dat je bezoekt.
