@@ -1,21 +1,27 @@
 ---
 set: 3
 index: 5
-title: Waarom heb ik voor elke prik een aparte internationale QR-code? En welke moet ik gebruiken?
-published: false
+title: Why do I have a separate international QR code for every vaccination I've had? And which one should I use?
 ---
-Vanaf nu krijg je in de CoronaCheck-app of via [coronacheck.nl/print](/print) een aparte internationale QR-code voor elke prik die je hebt gehad. Dat is bijvoorbeeld handig voor mensen die ergens heen willen waar hun laatste prik nog niet geldig is, omdat die kort geleden gezet is. 
+From now on, you get an international QR code for every vaccination you’ve had in the CoronaCheck app and on [Coronacheck.nl/en/print](/en/print/) This can be useful for people who want to go to a place where their latest vaccination is not yet valid.
 
-## Welke QR-code moet ik gebruiken?
+## Which QR-code should I use?
 
-Welke QR-code je moet laten zien hangt af van de eisen van het land dat je bezoekt. Let op: deze eisen kunnen veranderen. 
+Which QR code you have to show depends on the demands of the country you're visiting. 
 
-### Ik ben twee keer gevaccineerd
+**Please note:** these demands can change. Before leaving, please always check which certificate you need at your destination at {{ site.data.links.wijsopreis[page.lang] }}.
 
-De meeste landen zullen op dit moment om de QR-code van jouw dosis 2/2 vragen.
+<details class="details">
+<summary><h3>I’ve had two vaccinations</h3></summary>
+<div markdown="1">
+At this time, most countries will require the QR code of your second vaccination dose (2/2).
+</div>
+</details>
 
-### Ik ben meer dan twee keer gevaccineerd
+<details class="details">
+<summary><h3>I've had more than two vaccinations</h3></summary>
+<div markdown="1">
 
-De QR-codes van extra doses worden nog niet overal geaccepteerd. De meeste landen zullen op dit moment om de QR-code van jouw tweede vaccinatie-dosis (2/2) vragen.
-
-Controleer altijd voor vertrek op {{ site.data.links.wijsopreis[page.lang] }} welk bewijs je nodig hebt in het land dat je bezoekt.
+QR codes of extra vaccinations aren't widely accepted yet. At this time, most countries will require the QR code of your second vaccination dose (2/2).
+</div>
+</details>
