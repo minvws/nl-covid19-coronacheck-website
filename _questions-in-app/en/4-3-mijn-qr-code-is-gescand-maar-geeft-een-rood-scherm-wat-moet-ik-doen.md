@@ -8,7 +8,7 @@ redirect_from:
 ---
 Getting a red screen at the border or abroad? The corona measures or restrictions of the country you’re visiting may differ from those in the Netherlands. Go to {{ site.data.translations.wijsoprijs-link[page.lang] }} for an overview of the rules and validity of the coronavirus pass in other countries.
 
-Getting a red screen within the Netherlands? That means that the QR code does not meet Dutch requirements.
+Getting a red screen within the Netherlands? A red screen could mean that the QR code does not meet Dutch requirements, or that the QR code is blocked. QR codes that are widely shared via the internet or social media will be blocked.
 
 ## Here’s what you can do:
 
