@@ -3,7 +3,7 @@ set: 3
 index: 5
 title: Why do I have a separate international QR code for every vaccination I've had? And which one should I use?
 redirect_from:
-    - /nl/faq/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-QR-code
+    - /en/faq/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-QR-code
 ---
 From now on, you get an international QR code for every vaccination you’ve had in the CoronaCheck app and on [Coronacheck.nl/en/print](/en/print/) This can be useful for people who want to go to a place where their latest vaccination is not yet valid.
 
