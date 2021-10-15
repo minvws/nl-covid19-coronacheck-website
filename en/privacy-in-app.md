@@ -23,16 +23,18 @@ In addition to the above information, the following information is required, whi
 
 Because the app and website use an internet connection, your IP address will also be processed. This is inherent to the use of internet and IP technology and is necessary to technically establish a connection between the test performer's or vaccinator's server and your phone or browser. The IP address is processed for management and security purposes only.
 
-If you’ve been tested at a test provider other than the GGD, your BSN will not be processed, but the unique retrieval code and verification code provided to you by the test provider will be used.
+If you’ve been tested at a test provider other than a GGD, your BSN will not be processed, but the unique retrieval code and verification code provided to you by the test provider will be used.
 
 In addition, other data is retrieved that cannot be traced back to you directly. [If you want to know exactly what other data is processed, click here](#overview-of-processed-personal-data). There you will find an overview of the data collected and processed to create the coronavirus pass and the EU DCC and a description of which data is actually included in the QR code you have to show at an event or if you want to travel to another country within Europe.
 
+Upon issue of an EU DCC, a unique certificate code of your EU DCC will be generated. If we are issuing a physical EU DCC, a unique pairing code is also included. You can use it to convert the physical EU DCC back to a digital EU DCC and a digital coronavirus pass.
+
 ## 2. Where does my data come from?
 
-Information about your test, vaccination and/or recovery is provided by the care provider who tested or vaccinated you. Data for a certificate or recovery is provided by the GGD. This data is requested through two ways, in which data is also received: 
+Information about your test, vaccination and/or recovery is provided by the care provider who tested or vaccinated you. Data for a certificate or recovery is provided by the GGDs. This data is requested through two ways, in which data is also received: 
 
-1. When you’re tested by another test provider than the GGD, the data is requested via the unique retrieval code and verification code you received from the test provider. In this case you may retrieve your data by entering this unique retrieval code and verification code in the app or on the website.
-2. When retrieving information about vaccination or recovery or a negative test carried out by the GGD, you log in using your DigiD to identify yourself. By logging in, the Minister of VWS will receive your BSN and can, based on your BSN, retrieve your first name, last name and date of birth from the Personal Records Database. Using this combined information, the Minister will request your data from parties (like the GGD, the RIVM and your general practitioner). 
+1. When you’re tested by another test provider than your regional GGD, the data is requested via the unique retrieval code and verification code you received from the test provider. In this case you may retrieve your data by entering this unique retrieval code and verification code in the app or on the website.
+2. When retrieving information about vaccination or recovery or a negative test carried out by a GGD, you log in using your DigiD to identify yourself. By logging in, the Minister of VWS will receive your BSN and can, based on your BSN, retrieve your first name, last name and date of birth from the Personal Records Database. Using this combined information, the Minister will request your data from parties who may have your information about your vaccination, recovery and test (like the GGDs, the RIVM and your general practitioner). Information about your recovery is based on a positive test in the past, which the test provider who tested you has had to report to the local GGD.
 
 If you request your data in CoronaCheck or via coronacheck.nl, you will be shown which information is retrieved and where it is coming from. 
 
@@ -82,6 +84,8 @@ Only data saved in the CoronaCheck-app itself or printed on the paper certificat
 - Test results: 96 hours after date and time of test administration
 - Vaccination data: one year after vaccination date
 - Recovery data: 180 days after date and time of test administration
+- A unique serial number of your EU DCC and a code of the datasource will be saved for two years.
+- In case we provide you with a physical EU DCC, the associated pairing code will be saved for one year after the issue.
 
 Your social security number will not be stored. Your IP address will not be stored for more than seven days.
 
@@ -123,7 +127,7 @@ The Minister takes protection of your personal data seriously and has taken appr
 
 ## 12. Changing privacy statement
 
-This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: August 24th, 2021.
+This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: October 12, 2021.
 
 ## Overview of processed personal data 
 

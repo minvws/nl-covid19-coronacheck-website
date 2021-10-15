@@ -74,15 +74,13 @@ Kijk op {{ site.data.links.buitenlandvaccinatie[page.lang] }}. Daar vind je alti
 
 {% capture copy_herstelbewijs %}
 <div markdown="1">
+Een herstelbewijs is een bewijs dat je ooit positief getest bent op aanwezigheid van het Sars-Cov2 virus.
 
-Een herstelbewijs is een bewijs dat je ooit positief getest bent op aanwezigheid van het Sars-Cov2 virus door de GGD. 
+**Let op:** Een herstelbewijs wordt niet verstrekt op basis van een zelftest of een serologische test. In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test, en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeen test.
 
-**Let op:** Een herstelbewijs wordt niet verstrekt op basis van een zelftest of een serologische test. In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeen test.
-
-CoronaCheck haalt de positieve testuitslagen op bij de GGD. In het GGD systeem zijn op dit moment alleen testuitslagen beschikbaar van testen die door de GGD zelf zijn afgenomen. Dit betreft zowel PCR-testen als antigeen testen. Binnen enkele weken worden ook de (positieve) testuitslagen opgenomen van testen die door andere testaanbieders zijn afgenomen.
+CoronaCheck haalt de positieve testuitslagen op bij de GGD. Zowel testuitslagen van de GGD zelf, als testuitslagen van andere testlocaties kunnen worden opgehaald. Deze uitslagen moeten dan wel zijn doorgegeven aan de GGD.
 
 Meer informatie over herstelbewijzen vind je op {{ site.data.links.herstelbewijs[page.lang] }}.
-
 </div>
 {% endcapture %}
 
@@ -90,36 +88,40 @@ Meer informatie over herstelbewijzen vind je op {{ site.data.links.herstelbewijs
 <div markdown="1">
 Dit kan verschillende oorzaken hebben:
 
-- Je bent niet door de GGD getest. Er wordt aan gewerkt om binnen enkele weken ook de gegevens van andere testaanbieders te laten zien.
 - Je bent korter dan 11 dagen geleden (positief) getest. In dit geval kun je je herstelbewijs al wel ophalen, maar deze is pas op de 12e dag na testafname geldig.
 - Je bent langer dan 180 dagen geleden (positief) getest. In dit geval heb je geen recht op een herstelbewijs.
 
-Als geen van bovenstaande situaties van toepassing is, en je bent wel positief getest door de GGD, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen je helpen te achterhalen of er wellicht gegevens onjuist geregistreerd staan.
+Als geen van bovenstaande situaties van toepassing is, maar je bent wel positief getest, neem dan contact op met jouw testlocatie. Zij kunnen je helpen te achterhalen of er wellicht gegevens onjuist geregistreerd staan. Ben je getest bij de GGD? Dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. 
 
-Als je echt binnen een paar dagen een evenement wilt bezoeken, is het advies om een gratis testafspraak in te plannen zodat je een testbewijs kan maken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}.
+Als je echt binnen een paar dagen een evenement wilt bezoeken, is het advies om een gratis test-afspraak in te plannen zodat je een testbewijs kan maken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
-
 {% capture copy_incorrecte_herstelgegevens %}
 <div markdown="1"> 
-Kloppen de opgehaalde gegevens van je positieve testuitslag niet, bijvoorbeeld je type test, tijd of datum? Neem dan contact op met de backoffice van de GGD op {{ site.data.links.phone-ggd[page.lang] }}. Zij kunnen je gegevens controleren.
-
-**Let op**: Indien je positief bent getest met een antigeen of sneltest bij de GGD, dan krijg je alleen een Nederlands herstelbewijs, geen internationaal bewijs. Ben je met een PCR-test getest, dan ontvang je beide herstelbewijzen.
+Kloppen de opgehaalde gegevens van je positieve testuitslag niet, bijvoorbeeld je type test, tijd of datum? Als je bij de GGD bent getest, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten wijzigen. Ben je door een andere testlocatie getest dan de GGD? Ga dan naar {{ site.data.links.herstelbewijs-elders[page.lang] }} en vul het formulier in.
 </div>
 {% endcapture %}
 
 {% capture copy_we_kunnen_geen_herstelbewijs_maken %}
 <div markdown="1"> 
-Worden er wel gegevens over jouw herstel gevonden, maar zegt CoronaCheck dat er geen bewijs gemaakt kan worden?
-Het kan zijn dat jouw testuitslag meer dan 180 dagen oud is. Dan is het niet meer mogelijk om een herstelbewijs te maken.
+Worden er wel gegevens over jouw herstel gevonden, maar zegt CoronaCheck dat er geen bewijs gemaakt kan worden? Het kan zijn dat jouw testuitslag meer dan 180 dagen oud is. Dan is het niet meer mogelijk om een herstelbewijs te maken.
 
-Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Neem dan contact op met de zorgverlener waar je bent getest. Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
+Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Als je bij de GGD bent getest, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten wijzigen. Ben je door een andere testlocatie getest dan de GGD? Ga dan naar {{ site.data.links.herstelbewijs-elders[page.lang] }} en vul het formulier in.
 
-Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je een evenement wilt bezoeken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}. 
+Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je een evenement wilt bezoeken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
+{% capture copy_geen_internationaal_herstelbewijs %}
+<div markdown="1"> 
+In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test, en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeen test.
+
+### Ben jij vóór 8 september getest bij een andere testlocatie dan de GGD?
+
+Bij de positieve testresultaten van voor 8 september 2021 is het type test niet vastgelegd. Het is dus niet duidelijk of het een PCR-test is geweest. Daarom worden alle testen voor de veiligheid behandeld als een antigeentest. Dit betekent dat er helaas geen internationaal herstelbewijs gemaakt kan worden. 
+</div>
+{% endcapture %}
 
 {% capture copy_testbewijs %}
 <div markdown="1">
@@ -215,6 +217,8 @@ Heb je al DigiD en lukt het je niet om hier een coronabewijs mee op te halen? Bi
 - Soms werkt het om de telefoon te herstarten en dan opnieuw te proberen;
 - Tenslotte kan het werken om DigiD op een ander apparaat te gebruiken.
 
+**Let op:** Gebruik je iOS 15 en krijg je de foutmelding ‘Er was langer dan 15 minuten geen activiteit in het scherm’? Stel een andere browser dan Safari in als standaard browser en probeer het nogmaals.
+
 Lukt het nog steeds niet? Neem dan contact op de helpdesk via {{ site.data.links.phone-helpdesk[page.lang] }} of via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 ### Ik heb geen BSN-nummer
@@ -289,6 +293,11 @@ Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ
 <details class="details" id="recovery_cantmakeproof">
 <summary><h3>De app kan geen bewijs maken</h3></summary>
 {{ copy_we_kunnen_geen_herstelbewijs_maken }}
+</details>
+
+<details class="details" id="recovery_cantmakeintnlproof">
+<summary><h3>Ik krijg geen internationaal herstelbewijs</h3></summary>
+{{ copy_geen_internationaal_herstelbewijs }}
 </details>
 
 </details>

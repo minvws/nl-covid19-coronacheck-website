@@ -1,6 +1,6 @@
 ---
 set: 3
-index: 7
+index: 4
 title: Ik kom uit een ander Europees land. Kan ik met mijn coronabewijs naar een evenement binnen Nederland?
 redirect_from:
     - /nl/faq/3-7-ik-kom-uit-een-ander-europees-land-kan-ik-met-mijn-bewijs-naar-nederlands-evenement

@@ -5,7 +5,7 @@ title: Ik krijg na het scannen van een QR-code een rood scherm te zien, wat nu?
 redirect_from: 
   - /nl/faq-scanner/7-na-scannen-een-rood-scherm-wat-nu
 ---
-Een rood scherm betekent dat de QR-code niet aan Nederlandse eisen voldoet.
+Een rood scherm kan betekenen dat de QR-code niet aan Nederlandse eisen voldoet of dat de QR-code geblokkeerd is. QR-codes die breed worden verspreid via internet of sociale media worden geblokkeerd.
 
 ## Dit kun je doen:
 

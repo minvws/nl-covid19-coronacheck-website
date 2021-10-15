@@ -5,7 +5,7 @@ graphic: scanner-instruction-3.png
 title: Rood scherm
 lang: nl
 ---
-Een rood scherm betekent dat de QR-code niet aan Nederlandse eisen voldoet.
+Een rood scherm kan betekenen dat de QR-code niet aan Nederlandse eisen voldoet of dat de QR-code geblokkeerd is. QR-codes die breed worden verspreid via internet of sociale media worden geblokkeerd.
 
 #### Dit kun je doen:
 

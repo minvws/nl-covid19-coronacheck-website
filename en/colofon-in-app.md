@@ -33,15 +33,15 @@ These licences, terms & conditions and disclaimers are an integral part of both 
  
 ### Backend licences:
 
-- [CoronaCheck backend licence](https://github.com/minvws/nl-covid19-coronacheck-app-backend/blob/main/LICENSES.md)
-- [CoronaCheck BFF private licence](https://github.com/minvws/nl-covid19-coronacheck-app-bff/blob/main/LICENSES.md)
-- [CoronaCheck CL core licence](https://github.com/minvws/nl-covid19-coronacheck-cl-core/blob/main/LICENSES.md)
+- [CoronaCheck backend licence](https://github.com/minvws/nl-covid19-coronacheck-app-dgcg-integration/blob/main/LICENSES.md)
+- [CoronaCheck BFF licence](https://github.com/minvws/nl-covid19-coronacheck-app-bff/blob/main/LICENSES.md)
+- [CoronaCheck CL core licence](https://github.com/minvws/nl-covid19-coronacheck-idemix/blob/main/LICENSES.md)
 
 ### 3rd-party libraries:
 
-- [CoronaCheck third party licenses](https://github.com/minvws/nl-covid19-coronacheck-app-backend/tree/main/licenses)
-- [CoronaCheck BFF private third party licenses](https://github.com/minvws/nl-covid19-coronacheck-app-bff/tree/main/licenses)
-- [CoronaCheck CL core third party licenses](https://github.com/minvws/nl-covid19-coronacheck-cl-core/tree/main/licenses)
+- [CoronaCheck third party licenses](https://github.com/minvws/nl-covid19-coronacheck-app-dgcg-integration/tree/main/licenses)
+- [CoronaCheck BFF third party licenses](https://github.com/minvws/nl-covid19-coronacheck-app-bff/tree/main/licenses)
+- [CoronaCheck CL core third party licenses](https://github.com/minvws/nl-covid19-coronacheck-idemix/tree/main/licenses)
 
 ## Reporting vulnerabilities
 

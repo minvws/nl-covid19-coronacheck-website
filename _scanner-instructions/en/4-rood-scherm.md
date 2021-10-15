@@ -5,6 +5,8 @@ graphic: scanner-instruction-3.png
 title: Red screen
 lang: en
 ---
+A red screen could mean that the QR code does not meet Dutch requirements, or that the QR code is blocked. QR codes that are widely shared via the internet or social media will be blocked.
+
 #### Here’s what you can do:
 
 1. Verify if the time on the visitor’s phone and the scanner are set correctly. Make sure to set the date and time to ‘set automatically’.
