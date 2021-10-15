@@ -381,6 +381,7 @@ const nl = {
     'pageTitle': 'CoronaCheck Print Portaal',
     'skiplink': 'Ga direct naar inhoud',
     'somethingIsWrong': 'Klopt er iets niet?',
+    'tryAgain': 'Probeer opnieuw',
     'unknown': 'Onbekend',
     'tooBusy': 'Het is erg druk op dit moment. Daardoor kun je niet inloggen. Wil je het op een later moment nog eens proberen?'
 }

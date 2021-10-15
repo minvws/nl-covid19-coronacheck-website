@@ -378,6 +378,7 @@ const en = {
     'pageTitle': 'CoronaCheck Print Portal',
     'skiplink': 'Skip to content',
     'somethingIsWrong': 'Is something wrong?',
+    'tryAgain': 'Try again',
     'unknown': 'Unknown',
     'tooBusy': 'It\'s very busy right now, and therefore you cannot log in at the moment. Could you please try again later?'
 }

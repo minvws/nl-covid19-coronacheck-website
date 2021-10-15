@@ -177,8 +177,11 @@ export default {
                         }
                     }
                 }).catch((error) => {
+                    const callback = () => {
+                        this.getSignedResult(options);
+                    }
                     if (!hasInternetConnection()) {
-                        messageInternetConnection();
+                        messageInternetConnection(callback);
                     } else {
                         const errorCause = this.getCauseOfError(error);
                         const errorCode = getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: this.testProviderIdentifier });

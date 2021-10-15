@@ -50,7 +50,10 @@ export default {
                 }
             }).catch((error) => {
                 this.initPhaseHasErrored = true;
-                handleRejection(error, { flow: 'startup', step: '10', provider_identifier: '000' });
+                const callback = () => {
+                    this.getHolderConfig();
+                }
+                handleRejection(error, { flow: 'startup', step: '10', provider_identifier: '000' }, callback);
             })
         },
         async getTestProviders() {
@@ -71,7 +74,10 @@ export default {
                 }
             }).catch((error) => {
                 this.initPhaseHasErrored = true;
-                handleRejection(error, { flow: 'startup', step: '20', provider_identifier: '000' });
+                const callback = () => {
+                    this.getTestProviders();
+                }
+                handleRejection(error, { flow: 'startup', step: '20', provider_identifier: '000' }, callback);
             })
         },
         addLanguages() {

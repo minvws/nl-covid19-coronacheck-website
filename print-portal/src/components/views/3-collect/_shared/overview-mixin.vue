@@ -71,7 +71,10 @@ export default {
                     }
                 }).catch(error => {
                     this.proofSubmitted = false;
-                    handleRejection(error, { flow: this.filter, step: '80', provider_identifier: '000' });
+                    const callback = () => {
+                        this.gotoPrint();
+                    }
+                    handleRejection(error, { flow: this.filter, step: '80', provider_identifier: '000' }, callback);
                 })
             } else {
                 this.$router.push({ name: this.pages.print });

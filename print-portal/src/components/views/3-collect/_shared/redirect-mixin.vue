@@ -64,7 +64,10 @@ export default {
                     } else if (hasErrorCode(error, detailedCodeSessionExpired)) {
                         this.$router.push({ name: 'ErrorSessionExpired' });
                     } else {
-                        handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' })
+                        const callback = () => {
+                            this.completeAuthentication();
+                        }
+                        handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' }, callback)
                     }
                 });
             }).catch((error) => {
@@ -103,7 +106,10 @@ export default {
                     if (error && error.message) {
                         errorCodeInformation.errorBody = error.message;
                     }
-                    handleRejection(error, errorCodeInformation);
+                    const callback = () => {
+                        this.completeAuthentication();
+                    }
+                    handleRejection(error, errorCodeInformation, callback);
                 }
             });
         },
