@@ -28,7 +28,7 @@ const getTokens = async (token) => {
         };
         axios({
             method: 'post',
-            url: window.config.accessTokens,
+            url: window.config.api + '/holder/access_tokens',
             headers,
             timeout: timeoutTime
         }).then((response) => {

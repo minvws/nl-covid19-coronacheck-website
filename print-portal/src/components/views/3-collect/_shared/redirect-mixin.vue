@@ -40,10 +40,7 @@ export default {
             this.authVaccinations.completeAuthentication().then((user) => {
                 signedEventsInterface.getTokens(user.id_token).then(response => {
                     this.notifyDigidFinished();
-                    if (response.data && response.data.payload) {
-                        const payload = cmsDecode(response.data.payload);
-                        this.collectEvents(payload.tokens);
-                    }
+                    this.collectEvents(response.data.tokens);
                 }).catch((error) => {
                     const detailedCodeNoBSN = 99782;
                     const detailedCodeSessionExpired = 99708;

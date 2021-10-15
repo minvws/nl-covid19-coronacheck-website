@@ -11,7 +11,7 @@ In Nederland krijg je alleen een vaccinatiebewijs als je volledig bent gevaccine
 
 Heb jij er recht op, maar geeft de app toch geen nederlands vaccinatiebewijs? Kijk hieronder wat je kan doen.
 
-<details>
+<details class="details">
 <summary><h2>Corona gehad en 1 prik gekregen</h2></summary>
 <div markdown="1">
 
@@ -29,7 +29,7 @@ Ben je bij je huisarts, in het ziekenhuis of door een instelling gevaccineerd? D
 </details>
 
 
-<details>
+<details class="details">
 <summary><h2>Corona gekregen tussen je eerste en tweede prik</h2></summary>
 <div markdown="1">
 Als je na je 1e vaccinatie corona krijgt, moet je ook een 2e vaccinatie halen om volledig gevaccineerd te zijn. Daarna kun je een vaccinatiebewijs maken in CoronaCheck.
@@ -37,7 +37,7 @@ Als je na je 1e vaccinatie corona krijgt, moet je ook een 2e vaccinatie halen om
 </details>
 
 
-<details>
+<details class="details">
 <summary><h2>Twee prikken op verschillende locaties gekregen</h2></summary>
 <div markdown="1">
 

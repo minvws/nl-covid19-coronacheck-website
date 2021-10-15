@@ -32,7 +32,7 @@ const recoveryPages = [
         name: 'PrintRecovery',
         component: PrintRecovery,
         meta: {
-            title: 'views.printRecovery.both.pageHeader'
+            title: 'views.print.pageTitle'
         }
     }
 ]

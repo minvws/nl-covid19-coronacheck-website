@@ -1,10 +1,11 @@
 <script>
 import LanguagePicker from './language/LanguagePicker';
 import Skiplinks from './Skiplinks';
+import LogoRijksoverheid from './LogoRijksoverheid';
 
 export default {
     name: 'Identity',
-    components: { Skiplinks, LanguagePicker },
+    components: { LogoRijksoverheid, Skiplinks, LanguagePicker },
     computed: {
         hasLanguages() {
             return this.$store.state.languages.all.length > 1;
@@ -33,10 +34,7 @@ export default {
         <Skiplinks/>
 
         <div class="logo">
-            <img
-                :alt="$t('logo-government')"
-                width="45"
-                src="assets/img/rijksoverheid/label_ministerie.svg"/>
+            <LogoRijksoverheid />
         </div>
 
         <div class="pagewrap">

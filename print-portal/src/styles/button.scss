@@ -4,6 +4,13 @@ button {
     background: transparent;
     border: 0;
     padding: 0;
+    &.Navigation {
+        &__back {
+            color:$color-coronacheck_black;
+    
+        }
+        
+    }
 }
 
 .button__help-button {

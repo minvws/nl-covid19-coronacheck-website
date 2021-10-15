@@ -32,7 +32,7 @@ const vaccinationPages = [
         name: 'PrintVaccination',
         component: PrintVaccination,
         meta: {
-            title: 'views.printVaccination.both.pageHeader'
+            title: 'views.print.pageTitle'
         }
     }
 ]
