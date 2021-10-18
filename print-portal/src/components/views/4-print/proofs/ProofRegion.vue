@@ -183,10 +183,10 @@ export default {
 
     @include mobile() {
         display: block;
-        padding: 56px 24px;
+        padding: 40px 24px;
 
         .Paper {
-            margin: 0 auto 56px auto;
+            margin: 0 0 16px 0;
         }
     }
 }
