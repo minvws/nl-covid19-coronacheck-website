@@ -120,12 +120,10 @@ export default {
 
         @include mobile() {
             display: block;
-            background: $color-RO_lightblue;
-            border-radius: 12px;
 
             .ProofRegion {
                 width: 100%;
-                margin: 0 0 12px 0;
+                margin: 0 0 16px 0;
 
                 &:last-child {
                     margin-bottom: 0;
