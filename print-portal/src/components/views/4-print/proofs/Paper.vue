@@ -28,7 +28,7 @@ export default {
             {{$t('components.proofRegion.' + region + '.paperTitle')}}
         </h4>
         <div class="Paper__flag">
-            <img :src="'assets/img/flags/' + region + '.png'" alt="" />
+            <img :src="'assets/img/flags/' + region + '.svg'" alt="" />
         </div>
     </div>
 </template>

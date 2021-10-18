@@ -20,14 +20,14 @@ export default {
             if (this.type === 'recovery' && this.regionType === 'domestic') {
                 details.push('whyNoEuropeanRecovery');
             }
-            if (this.regionType === 'european' || this.regionType === 'both') {
-                details.push('validLocation');
-            }
             if (this.type === 'negativetest' && this.regionType === 'european') {
                 details.push('whyNoDomesticTest');
             }
             if (this.type === 'negativetest' && this.regionType === 'domestic') {
                 details.push('whyNoEuropeanTest');
+            }
+            if (this.regionType === 'european' || this.regionType === 'both') {
+                details.push('validLocation');
             }
             if (this.type === 'vaccination') {
                 details.push('validPeriod');

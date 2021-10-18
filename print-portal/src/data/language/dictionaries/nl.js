@@ -204,12 +204,12 @@ const nl = {
         'proofRegion': {
             'domestic': {
                 'title': 'Nederlands bewijs',
-                'intro': 'Gebruik dit bewijs als je locaties binnen Nederland wilt bezoeken.',
+                'intro': 'Gebruik dit bewijs voor toegang tot plekken en activiteiten binnen Nederland.',
                 'paperTitle': 'Bewijs voor in Nederland'
             },
             'european': {
                 'title': 'Internationaal bewijs',
-                'intro': 'Gebruik dit bewijs als je de grens over gaat en in het buitenland.',
+                'intro': 'Gebruik dit bewijs als je in het buitenland bent of de grens over gaat.',
                 'paperTitle': 'Internationaal bewijs'
             },
             'openPDF': 'Open PDF'
