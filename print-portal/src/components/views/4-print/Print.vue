@@ -117,6 +117,13 @@ export default {
         justify-content: center;
         width: 100%;
         margin-top: 64px;
+        @include tablet-custom() {
+            flex-direction: column;
+            .ProofRegion {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
 
         @include mobile() {
             display: block;

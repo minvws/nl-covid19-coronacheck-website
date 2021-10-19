@@ -4,6 +4,12 @@
         @content;
     }
 }
+@mixin tablet-custom {
+    @media only screen
+    and (max-width: 942px) {
+        @content;
+    }
+}
 
 @mixin mobile-landscape-X {
     @media only screen
