@@ -111,9 +111,9 @@ const nl = {
         'print': {
             'pageTitle': 'Jouw bewijs',
             'pageHeader': {
-                'domestic': 'Gelukt! Jouw bewijs staat klaar',
-                'european': 'Gelukt! Jouw bewijs staat klaar',
-                'both': 'Gelukt! Jouw bewijzen staan klaar'
+                'domestic': 'Gelukt! Jouw bewijs staat hieronder klaar',
+                'european': 'Gelukt! Jouw bewijs staat hieronder klaar',
+                'both': 'Gelukt! Jouw bewijzen staan hieronder klaar'
             },
             'pageIntro': {
                 'domestic': '<p>Je hebt alleen een %{type}bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet als je de grens over gaat of in het buitenland bent.</p>' +

@@ -111,9 +111,9 @@ const en = {
         'print': {
             'pageTitle': 'Your certificate',
             'pageHeader': {
-                'domestic': 'Success! Your certificate is ready',
-                'european': 'Success! Your certificate is ready',
-                'both': 'Success! Your certificates are ready'
+                'domestic': 'Success! Your certificate is ready below',
+                'european': 'Success! Your certificate is ready below',
+                'both': 'Success! Your certificates are ready below'
             },
             'pageIntro': {
                 'domestic': '<p>You only have a %{type} certificate for use in the Netherlands. You can use it to access places or activities within the Netherlands, but not when you’re travelling abroad or crossing the border.</p>' +
