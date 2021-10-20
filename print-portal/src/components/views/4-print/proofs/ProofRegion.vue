@@ -23,8 +23,7 @@ export default {
     },
     data() {
         return {
-            document: null,
-            isRendering: false
+            createdDocument: null
         }
     },
     computed: {
@@ -45,9 +44,11 @@ export default {
             };
         }
     },
+    async mounted() {
+        await this.createDocument();
+    },
     methods: {
         async createDocument() {
-            this.isRendering = true;
             const holderConfig = this.$store.state.holderConfig;
             const proofContainer = { domestic: null, european: null };
             proofContainer[this.region] = this.proof;
@@ -58,23 +59,19 @@ export default {
                 qrSizeInCm: QRSizeInCm,
                 createdAt: this.$store.state.signedAt
             }
-            return await getDocument(options);
+            this.createdDocument = await getDocument(options);
         },
-        async downloadPDF() {
-            const document = await this.createDocument();
-            document.save(this.fileName);
-            this.isRendering = false;
+        downloadPDF() {
+            this.createdDocument.save(this.fileName);
         },
-        async openPDF() {
-            const document = await this.createDocument();
-            const string = document.output('datauristring');
+        openPDF() {
+            const string = this.createdDocument.output('datauristring');
             const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
             const action = window.open();
             action.document.open();
             action.document.write(embed);
             action.document.close();
             action.document.title = this.metadata.title;
-            this.isRendering = false;
         }
     }
 }
@@ -97,12 +94,12 @@ export default {
                 <CcButton
                     @select="openPDF()"
                     id="open-pdf"
-                    :disabled="isRendering"
+                    :disabled="createdDocument === null"
                     :label="$t('components.proofRegion.openPDF')"/>
                 <CcButton
                     @select="downloadPDF()"
                     id="download-pdf"
-                    :disabled="isRendering"
+                    :disabled="createdDocument === null"
                     :label="$t('components.proofRegion.openPDF')"/>
             </div>
         </div>
