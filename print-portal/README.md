@@ -3,7 +3,8 @@ This is the print portal for coronaCheck
 See https://coronacheck.nl/nl/print/
 
 ### Required tools
-- `nodejs`, use latest. https://nodejs.org/en/download/
+- `nodejs` https://nodejs.org/en/download/
+  * Use node v14, as the currently used version of node-sass doesn't support node v16.
 - `Vue CLI` `npm install -g @vue/cli`
   
 ### Installation
