@@ -45,7 +45,7 @@ const negativeTestPages = [
         name: 'PrintNegativeTest',
         component: PrintNegativeTest,
         meta: {
-            title: 'views.printNegativeTest.both.pageHeader'
+            title: 'views.print.pageTitle'
         }
     }
 ]

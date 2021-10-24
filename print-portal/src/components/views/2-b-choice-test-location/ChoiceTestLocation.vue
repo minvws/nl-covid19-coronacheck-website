@@ -23,7 +23,10 @@ export default {
             this.authNegativeTests.startAuthentication().then(() => {
                 //
             }).catch(error => {
-                handleRejection(error, { flow: 'negativetest', step: '10', provider_identifier: '000' });
+                const callback = () => {
+                    this.loginWithDigid();
+                }
+                handleRejection(error, { flow: 'negativetest', step: '10', provider_identifier: '000' }, callback);
             })
         },
         gotoRetrieveTest() {

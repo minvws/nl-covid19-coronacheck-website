@@ -61,7 +61,7 @@ export default {
                 signer.sign(this.$store.state.signedEvents.all).then(response => {
                     this.proofSubmitted = false;
                     if (response.data) {
-                        if (response.data.domestic || response.data.european) {
+                        if (response.data.domestic || (response.data.european && response.data.european.length > 0)) {
                             this.$store.commit('qrs/add', response.data);
                             this.$router.push({ name: this.pages.print });
                         } else {
@@ -71,7 +71,10 @@ export default {
                     }
                 }).catch(error => {
                     this.proofSubmitted = false;
-                    handleRejection(error, { flow: this.filter, step: '80', provider_identifier: '000' });
+                    const callback = () => {
+                        this.gotoPrint();
+                    }
+                    handleRejection(error, { flow: this.filter, step: '80', provider_identifier: '000' }, callback);
                 })
             } else {
                 this.$router.push({ name: this.pages.print });

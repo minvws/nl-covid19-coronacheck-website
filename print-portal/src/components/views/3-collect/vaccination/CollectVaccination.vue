@@ -20,7 +20,10 @@ export default {
             this.authVaccinations.startAuthentication().then(() => {
                 //
             }).catch(error => {
-                handleRejection(error, { flow: 'vaccination', step: '10', provider_identifier: '000' });
+                const callback = () => {
+                    this.getToken();
+                }
+                handleRejection(error, { flow: 'vaccination', step: '10', provider_identifier: '000' }, callback);
             })
         },
         back() {

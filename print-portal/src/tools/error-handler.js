@@ -7,17 +7,21 @@ export const hasInternetConnection = () => {
     return window.navigator.onLine;
 }
 
-export const messageInternetConnection = () => {
+export const messageInternetConnection = (callback) => {
     store.commit('modal/set', {
         messageHead: i18n.t('message.error.noInternet.head'),
         messageBody: i18n.t('message.error.noInternet.body'),
-        closeButton: true
+        closeButton: false,
+        confirm: true,
+        confirmAction: callback,
+        confirmYes: i18n.t('tryAgain'),
+        confirmNo: i18n.t('close')
     });
 }
 
-export const handleRejection = (error, errorCodeInformation) => {
+export const handleRejection = (error, errorCodeInformation, callback) => {
     if (!hasInternetConnection()) {
-        messageInternetConnection();
+        messageInternetConnection(callback);
         return;
     }
     if (error.code === 'ECONNABORTED') {

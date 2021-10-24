@@ -40,10 +40,7 @@ export default {
             this.authVaccinations.completeAuthentication().then((user) => {
                 signedEventsInterface.getTokens(user.id_token).then(response => {
                     this.notifyDigidFinished();
-                    if (response.data && response.data.payload) {
-                        const payload = cmsDecode(response.data.payload);
-                        this.collectEvents(payload.tokens);
-                    }
+                    this.collectEvents(response.data.tokens);
                 }).catch((error) => {
                     const detailedCodeNoBSN = 99782;
                     const detailedCodeSessionExpired = 99708;
@@ -67,7 +64,10 @@ export default {
                     } else if (hasErrorCode(error, detailedCodeSessionExpired)) {
                         this.$router.push({ name: 'ErrorSessionExpired' });
                     } else {
-                        handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' })
+                        const callback = () => {
+                            this.completeAuthentication();
+                        }
+                        handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' }, callback)
                     }
                 });
             }).catch((error) => {
@@ -106,7 +106,10 @@ export default {
                     if (error && error.message) {
                         errorCodeInformation.errorBody = error.message;
                     }
-                    handleRejection(error, errorCodeInformation);
+                    const callback = () => {
+                        this.completeAuthentication();
+                    }
+                    handleRejection(error, errorCodeInformation, callback);
                 }
             });
         },

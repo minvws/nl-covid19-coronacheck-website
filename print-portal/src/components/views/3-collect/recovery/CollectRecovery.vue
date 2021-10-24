@@ -14,7 +14,10 @@ export default {
             this.authRecovery.startAuthentication().then(() => {
                 //
             }).catch(error => {
-                handleRejection(error, { flow: 'recovery', step: '10', provider_identifier: '000' });
+                const callback = () => {
+                    this.completeAuthentication();
+                }
+                handleRejection(error, { flow: 'recovery', step: '10', provider_identifier: '000' }, callback);
             })
         },
         back() {

@@ -1,0 +1,21 @@
+.modal{
+    position:relative;
+    &__container {
+
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            display:flex;
+            flex-wrap: nowrap;
+            background-color:#fff;
+            height:60px;
+            width:calc(100% - 15px);
+            h1 {
+                flex-grow:2;
+            }
+            .close-detail-pop-up {
+                padding:0 10px;
+            }
+        }
+    }
+}

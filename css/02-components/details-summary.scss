@@ -97,7 +97,6 @@
             }
 
             &:after {
-                background: url(#{$file-path}img/chevron-right.svg) center center no-repeat;
                 transform: rotate(-90deg);
             }
         }
@@ -132,11 +131,12 @@
 }
 
 .details--modest {
-    border-top: 0;
-    border-bottom: 1px solid rgba(21, 66, 115, 0.5);
+    border-top: 1px solid $color-mediumgrey;
+    border-bottom: 1px solid $color-mediumgrey;
 
-    summary {
+    > summary {
         background: none;
+        padding: 24px 36px 24px 24px;
 
         &:hover,
         &:focus {
@@ -144,5 +144,30 @@
             outline: 2px solid #008fcd;
             outline-offset: -1px;
         }
+
+        &:after {
+            top: 15px;
+            opacity: 1;
+            background: url(#{$file-path}img/chevron-right-blue.svg) center center no-repeat;
+        }
+    }
+
+    > div {
+        padding: 0 24px 24px 24px;
+    }
+
+    p {
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &[open] {
+        border-bottom: 1px solid $color-mediumgrey;
+        padding-bottom: 0;
     }
 }
