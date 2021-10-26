@@ -9,9 +9,7 @@ redirect_from:
 
 {% capture copy_intro %}
 <div markdown="1">
-
-Er zijn ondertussen meer dan 6,5 miljoen app–gebruikers van de CoronaCheck-app. Sinds de lancering hebben die al meer dan 12,5 miljoen coronabewijzen (vaccinatiebewijs, testbewijs of herstelbewijs) gedownload via de CoronaCheck-app of CoronaCheck.nl.
-Toch zijn er ook mensen die problemen hebben met het aanmaken van hun coronabewijs. Lukt het niet om een bewijs te maken in CoronaCheck? Lees hier wat je kunt doen.
+CoronaCheck wordt ondertussen door veel mensen gebruikt om een vaccinatie, herstel of testbewijs te maken. Toch zijn er ook mensen die problemen hebben met het aanmaken van hun coronabewijs. Lukt het niet om een bewijs te maken met CoronaCheck? Lees hier wat je kunt doen.
 </div>
 {% endcapture %}
 

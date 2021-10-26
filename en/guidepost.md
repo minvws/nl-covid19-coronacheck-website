@@ -9,11 +9,7 @@ redirect_from:
 
 {% capture copy_intro %}
 <div markdown="1">
-
-There are now more than 6.5 million users of the CoronaCheck app. Since the launch, they have already downloaded more than 12.5 million coronavirus passes (vaccination certificate, test certificate or recovery certificate) via the CoronaCheck app or CoronaCheck.nl.
-
-Yet there are also people who have problems creating their coronavirus pass. Are you unable to make proof in CoronaCheck? Read what to do here.
-
+CoronaCheck is already used by many people for creating a vaccination, recovery or test certificate. Yet there are also people experiencing problems creating their coronavirus certificate. Are you unable to make a certificate with CoronaCheck? Read what to do here.
 </div>
 {% endcapture %}
 
