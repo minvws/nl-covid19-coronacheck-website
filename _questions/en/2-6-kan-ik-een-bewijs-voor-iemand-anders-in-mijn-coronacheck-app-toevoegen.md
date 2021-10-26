@@ -6,4 +6,4 @@ redirect_from:
     - /en/faq/1-7-kan-ik-een-testbewijs-voor-iemand-anders-in-mijn-app-toevoegen
     - /en/faq/1-7-kan-ik-een-bewijs-voor-iemand-anders-in-mijn-coronacheck-app-toevoegen
 ---
-At this time, it is not possible to add another person’s test certificate to your CoronaCheck app.You can download and print out a certificate for another person via [www.coronacheck.nl/en/print](http://www.coronacheck.nl/en/print).
+At this time, it is not possible to add another person’s test certificate to your CoronaCheck app.You can download and print out a certificate for another person via [www.coronacheck.nl/en/print](/en/print).
