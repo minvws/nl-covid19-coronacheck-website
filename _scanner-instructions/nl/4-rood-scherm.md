@@ -1,7 +1,7 @@
 ---
 index: 4
 show: true
-graphic: scanner-instruction-3.png
+graphic: scanner-instruction-3b.png
 title: Rood scherm
 lang: nl
 ---

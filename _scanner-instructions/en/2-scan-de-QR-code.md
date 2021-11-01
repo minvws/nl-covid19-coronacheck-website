@@ -1,10 +1,10 @@
 ---
 index: 2
 show: true
-graphic: scanner-instruction-1.png
+graphic: scanner-instruction-1b.png
 title: Keep a distance and scan the QR code
 lang: en
 ---
-Press the 'Start Scanning' button and ask the visitor to show their QR code. They can show their code using the CoronaCheck app or the paper version. The QR code acts as a valid vaccination record, negative test certificate or recovery and can be read at a safe distance. 
-
-Point your phone camera at the visitor's phone. Scan the QR code.
+- Press ‘Start scanning’ in the CoronaCheck Scanner app.
+- Ask the visitor to show a QR code in the CoronaCheck app or on paper. A tourist may show a QR code in a foreign app, or on paper.
+- Scan the visitor's QR code with your phone camera.
