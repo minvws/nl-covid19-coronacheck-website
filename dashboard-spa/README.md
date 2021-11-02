@@ -4,7 +4,7 @@ The CoronaCheck Dashboard is an embedded single-page app which shows some key fi
 
 ## Configuration
 
-The Dashboard requires a JSON data URL. By default it will use the relative URL `/api/dashboard.json`. This can be overriden via the `CC_DASHBOARD_DATA_URL` environment variable. During development, this can be done via a `.env` file. See `.env.example` for an example.
+The Dashboard requires a JSON data URL. By default it will use the relative URL `/api/dashboard.json`. This can be overridden via the `CC_DASHBOARD_DATA_URL` environment variable. During development, this can be done via a `.env` file. See `.env.example` for an example.
 
 ## Development
 
