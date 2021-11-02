@@ -2,7 +2,6 @@
 layout: dashboard
 lang: en
 showBreadCrumbs: true
-permalink: /en/dashboard
 title: Dashboard
 ---
 <p class="md-block-lead md-text-color-RO-donkerblauw" markdown="1">
