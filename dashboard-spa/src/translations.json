@@ -20,19 +20,19 @@
         "en": "Past 30 days"
     },
     "vaccination-certificates": {
-        "nl": "Vaccinaties",
-        "en": "Vaccinations"
+        "nl": "Vaccinatie",
+        "en": "Vaccination"
     },
     "recovery-certificates": {
-        "nl": "Herstellen",
-        "en": "Recoveries"
+        "nl": "Herstel",
+        "en": "Recovery"
     },
     "test-certificates": {
-        "nl": "Tests",
-        "en": "Tests"
+        "nl": "Test",
+        "en": "Test"
     },
     "coronacheck-app-statistics": {
-        "nl": "CoronaCheck-app-statistieken",
+        "nl": "Statistieken CoronaCheck-app",
         "en": "CoronaCheck app statistics"
     },
     "android": {
