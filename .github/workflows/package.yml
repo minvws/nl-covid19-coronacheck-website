@@ -69,6 +69,17 @@ jobs:
       - name: Copy print portal to public
         run: mv print-portal/dist public/en/print
 
+      - name: Create dashboard SPA
+        run: |
+          cd dashboard-spa
+          npm install
+          npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Copy dashboard SPA to public
+        run: mv dashboard-spa/dist/* public/js/
+
       - name: Copy fonts
         run: cp -R public/nl/print/assets/fonts public/assets/
 

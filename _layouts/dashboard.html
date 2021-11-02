@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
 {% include open-source-comment.html %}
-{% include head.html %}
+{% include head.html for="dashboard" %}
 <body>
   {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
     {% include header-slim.html for="scanner" %}
@@ -23,8 +23,14 @@
       {{ content }}
     </div>
 
-    {% include components/dcc-certificate-key-figures.html %}
-    {% include components/coronacheck-app-statistics.html %}
+    <noscript>
+      <div class="content-block">
+        <h2>{{ site.data.translations.dashboard-noscript-title[page.lang] }}</h2>
+        <p>{{ site.data.translations.dashboard-noscript-description[page.lang] }}</p>
+      </div>
+    </noscript>
+
+    <div id="dashboard-spa"><!-- managed by dashboard.js SPA --></div>
 
   </main>
   {% include footer.html %}
