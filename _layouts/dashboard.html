@@ -1,0 +1,38 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+{% include open-source-comment.html %}
+{% include head.html for="dashboard" %}
+<body>
+  {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
+    {% include header-slim.html for="scanner" %}
+  {% else %}
+    {% include header-slim.html %}
+  {% endif %}
+  <main class="content-center" id="content"> 
+    {% if page.showBreadCrumbs %}
+      {% include components/breadcrumbs.html title=page.title collection=page.collection %}
+    {% endif %}
+
+    <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
+      <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+      {{ content }}
+    </div>
+
+    <noscript>
+      <div class="content-block">
+        <h2>{{ site.data.translations.dashboard-noscript-title[page.lang] }}</h2>
+        <p>{{ site.data.translations.dashboard-noscript-description[page.lang] }}</p>
+      </div>
+    </noscript>
+
+    <div id="dashboard-spa"><!-- managed by dashboard.js SPA --></div>
+
+  </main>
+  {% include footer.html %}
+</body>
+</html>
