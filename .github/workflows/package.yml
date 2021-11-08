@@ -72,7 +72,7 @@ jobs:
       - name: Create dashboard SPA
         run: |
           cd dashboard-spa
-          npm install
+          npm install --production=false
           npm run build
         env:
           NODE_ENV: production
