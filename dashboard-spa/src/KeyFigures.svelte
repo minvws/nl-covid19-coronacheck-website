@@ -20,7 +20,7 @@
 
     <div class="column-3 legend">
         <div>
-            <h2>{$t('total')}</h2>
+            <h3>{$t('total')}</h3>
             <p>
                 <strong>
                     <Data
@@ -53,7 +53,7 @@
         </div>
 
         <div>
-            <h2>{$t('past-7-days')}</h2>
+            <h3>{$t('past-7-days')}</h3>
             <p>
                 <strong>
                     <Data content={week && sum(week)} placeholderWidth={100} />
@@ -84,7 +84,7 @@
         </div>
 
         <div>
-            <h2>{$t('past-30-days')}</h2>
+            <h3>{$t('past-30-days')}</h3>
             <p>
                 <strong>
                     <Data
