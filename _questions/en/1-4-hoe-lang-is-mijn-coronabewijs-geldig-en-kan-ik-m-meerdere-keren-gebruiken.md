@@ -11,6 +11,7 @@ A dutch test certificate is valid until 24 hours after the moment of testing. Wi
 
 A dutch recovery certificate becomes valid 11 days after the positive test, until 365 days after the positive test.
 
-A dutch vaccination certificate becomes valid 14 days after the last vaccination. How long immunity from a vaccination lasts is still being researched. When we know how long you’re protected by a vaccination, its validity will be updated based on that information. Until then, the proof of vaccination is valid indefinitely.
+A Dutch vaccination certificate is valid from 14 days after the second vaccination. Vaccinations with Janssen become valid from 28 days after vaccination. Did you already receive a booster vaccination? Then there is no waiting period. Your vaccination certificate will remain valid.
+How long immunity from a vaccination lasts is still being researched. When we know how long you’re protected by a vaccination, its validity will be updated based on that information. Until then, the proof of vaccination is valid indefinitely.
 
 Are you traveling to another country? Rules and regulations differ from country to country. Check {{ site.data.links.wijsopreis[page.lang] }} before you leave to see what certificate you need and if your international QR-code is valid at your destination.
