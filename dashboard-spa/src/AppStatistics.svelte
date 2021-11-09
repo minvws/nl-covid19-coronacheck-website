@@ -21,7 +21,7 @@
 
     <div class="column-2">
         <div>
-            <h2>{$t('android')}</h2>
+            <h3>{$t('android')}</h3>
             <p><small>{$t('number-of-downloads-coronacheck-app')}</small></p>
             <p class="emphasize">
                 <Data content={android} placeholderWidth={160} />
@@ -29,7 +29,7 @@
         </div>
 
         <div>
-            <h2>{$t('ios')}</h2>
+            <h3>{$t('ios')}</h3>
             <p><small>{$t('number-of-downloads-coronacheck-app')}</small></p>
             <p class="emphasize">
                 <Data content={ios} placeholderWidth={160} />
