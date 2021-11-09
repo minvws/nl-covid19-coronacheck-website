@@ -159,17 +159,11 @@ export default {
     z-index: 10000;
     pointer-events: none;
 
-    /* width
     ::-webkit-scrollbar {
-        width:15px;
-        border-radius:0 5px 5px 0;
+        width:0px;
+        background:transparent;
     }
-    /* Handle
-    ::-webkit-scrollbar-thumb {
-        border-radius:0 5px 5px 0;
-        background-color:#A8A8A8;
-    }
-    */
+
     @include mobile() {
         width: 100%;
         height: 100%;
