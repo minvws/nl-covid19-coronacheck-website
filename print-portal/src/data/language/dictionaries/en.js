@@ -104,9 +104,13 @@ const en = {
             'pageIntro': '<p>Are your details correct? Then you can turn your positive test result into a QR code. This is your certificate.</p>',
             'createTestProofButton': 'Make certificate'
         },
+        'recoveryExpired': {
+            'pageHeader': 'Positive test result no longer valid',
+            'pageIntro': '<p>It has been more than %{days} days since you tested positive for coronavirus. Therefore, your test result is no longer valid. Unfortunately, you cannot create a recovery certificate.</p><p>Find more information on the <a href="https://coronacheck.nl/en/guidepost.html" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
+        },
         'recoveryNone': {
             'pageHeader': 'No positive test result available',
-            'pageIntro': '<p>There is no positive test result available.<p><p>Got tested recently? It can take a few hours until your details are available. Try again later.</p><p>Have you been tested more than 180 days ago? Then your test result is no longer valid. In this case, you cannot create a recovery certificate.</p>'
+            'pageIntro': '<p>Were you just tested? It can take a few hours before your positive test result is available. Please try again later.</p><p>Find more information on the <a href="https://coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
         },
         'print': {
             'pageTitle': 'Your certificate',
@@ -146,7 +150,7 @@ const en = {
                     },
                     'whyNoEuropeanRecovery': {
                         'summary': 'Why didn’t I receive an international recovery certificate?',
-                        'content': '<p>You may not have received an international recovery certificate because your type of test isn\'t accepted abroad. Only a PCR test can be used to make an international recovery certificate. Read more about the possible causes on the <a href="https://coronacheck.nl/en/wegwijzer" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
+                        'content': '<p>Your recovery certificate isn\'t valid internationally. The reason for this could be that the type of test is not accepted, or that the test is no longer valid abroad. An international recovery certificate can only be made with a PCR-test that is less than 180 days old. Read more about the possible causes on the <a href="https://coronacheck.nl/en/wegwijzer" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
                     },
                     'whyNoEuropeanTest': {
                         'summary': 'Why didn’t I receive an international test certificate?',

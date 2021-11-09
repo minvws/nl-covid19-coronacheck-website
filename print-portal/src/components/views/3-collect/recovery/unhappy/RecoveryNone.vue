@@ -7,11 +7,6 @@ import { goHome } from '@/tools/router';
 export default {
     name: 'RecoveryNone',
     components: { Page, PageIntro, CcButton },
-    computed: {
-        recoveryExpirationDays() {
-            return this.$store.state.holderConfig.recoveryExpirationDays;
-        }
-    },
     methods: {
         goHome() {
             goHome();
@@ -26,7 +21,7 @@ export default {
         <div class="section">
             <PageIntro
                 :head="$t('views.recoveryNone.pageHeader')"
-                :intro="$t('views.recoveryNone.pageIntro', { days: this.recoveryExpirationDays })"/>
+                :intro="$t('views.recoveryNone.pageIntro')"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton
