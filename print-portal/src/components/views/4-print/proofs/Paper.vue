@@ -31,7 +31,6 @@ export default {
     position: relative;
     background: #fff;
 
-
     &__overheid {
         position: absolute;
         left: 50%;
