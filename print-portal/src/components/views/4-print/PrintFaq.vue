@@ -69,6 +69,7 @@ export default {
 
         h2 {
             font-size: 18px;
+            text-align: center;
         }
 }
 </style>
