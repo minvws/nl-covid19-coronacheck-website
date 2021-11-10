@@ -89,18 +89,23 @@ export default {
                 {{$t('components.proofRegion.' + region + '.intro')}}
             </p>
             <div
-                :class="{'browser--problems': browserWithProblemsOpeningPDF}"
                 class="print-buttons">
-                <CcButton
-                    @select="openPDF()"
-                    id="open-pdf"
-                    :disabled="createdDocument === null"
-                    :label="$t('components.proofRegion.openPDF')"/>
+                <div>
+                    <button
+                        class="open-pdf"
+                        @click.prevent="openPDF()"
+                        href="#"
+                        id="open-pdf"
+                        :disabled="createdDocument === null">
+                        {{ $t('components.proofRegion.viewPDF') }}
+                    </button>
+                </div>
+
                 <CcButton
                     @select="downloadPDF()"
                     id="download-pdf"
                     :disabled="createdDocument === null"
-                    :label="$t('components.proofRegion.openPDF')"/>
+                    :label="$t('components.proofRegion.downloadPDF')"/>
             </div>
         </div>
     </div>
@@ -110,68 +115,41 @@ export default {
 @import "@/styles/variables/index";
 
 .ProofRegion {
+    display: block;
     width: 460px;
-    background: $color-RO_lightblue;
-    padding: 40px 40px 36px 40px;
+    padding: 42px;
     border-radius: 12px;
-    display: flex;
+    border: 1px solid $color-grey;
     align-items: center;
     margin-right: 20px;
-
-    .Paper {
-        margin-right: 50px;
-    }
+    text-align: center;
 
     &__content {
         flex: 1;
 
         h3 {
-            font-size: calc(16rem / 16);
+            font-size: calc(22rem / 16);
+            padding-top: 1.2em;
         }
 
         p {
-            font-size: calc(14rem / 16);
-            margin-bottom: 32px;
+            font-size: calc(18rem / 16);
+            line-height: 1.18;
+            margin-bottom: 30px;
         }
 
-        .print-buttons {
-
-            #open-pdf {
-                display: block;
-
-                // hide the open button on mobile. This sometimes fails and besides that it creates undesirable user experience
-                @include mobile() {
-                    display: none;
-                }
-
-                @include mobile-landscape-X() {
-                    display: none;
-                }
+         @include mobile() {
+            h3 {
+                font-size: calc(18rem / 16);
+                line-height: 1.18;
             }
 
-            #download-pdf {
-                display: none;
-
-                @include mobile() {
-                    display: block;
-                }
-
-                @include mobile-landscape-X() {
-                    display: block;
-                }
+            p {
+                font-size: calc(18rem / 16);
+                line-height: 1.18;
+                margin: 0 16px 30px 16px;
             }
-
-            &.browser--problems {
-
-                #open-pdf {
-                    display: none;
-                }
-
-                #download-pdf {
-                    display: block;
-                }
-            }
-        }
+         }
     }
 
     &:last-child {
@@ -179,11 +157,26 @@ export default {
     }
 
     @include mobile() {
-        display: block;
-        padding: 40px 24px;
+        padding: 32px 0px;
 
+        .print-buttons {
+            button {
+                min-width: 216px;
+            }
+        }
         .Paper {
-            margin: 0 0 16px 0;
+            margin: 0 0 4px 0;
+        }
+    }
+
+    .open-pdf {
+        display: inline-block;
+        font-size: calc(18rem / 16);
+        font-weight: 700;
+        padding-bottom: 20px;
+        color: $color-link;
+        &:focus {
+            outline: none;
         }
     }
 }

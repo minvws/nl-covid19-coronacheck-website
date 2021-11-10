@@ -216,7 +216,8 @@ const en = {
                 'intro': 'Use this certificate if you are abroad or crossing the border.',
                 'paperTitle': 'International certificate'
             },
-            'openPDF': 'Open PDF'
+            'viewPDF': 'View PDF',
+            'downloadPDF': 'Download PDF'
         },
         'languagePicker': {
             'language': 'Language',

@@ -216,7 +216,8 @@ const nl = {
                 'intro': 'Gebruik dit bewijs als je in het buitenland bent of de grens over gaat.',
                 'paperTitle': 'Internationaal bewijs'
             },
-            'openPDF': 'Open PDF'
+            'viewPDF': 'Bekijk PDF',
+            'downloadPDF': 'Download PDF'
         },
         'languagePicker': {
             'language': 'Taal',
