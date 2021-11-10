@@ -1,13 +1,13 @@
 $font-main: 'RO Sans', sans-serif;
 $font-headers: 'Montserrat', sans-serif;
 
-h2 {
+h2, .h2 {
     font-size: 30px;
     line-height: calc(39/32);
     margin-bottom: $length-s;
 }
 
-h3 {
+h3, .h3 {
     font-size: 22px;
     line-height: calc(27/22);
     margin-bottom: $grid-x2;
@@ -20,7 +20,7 @@ p {
     }
 }
 
-h4 {
+h4, .h4 {
     font-family: $font-headers;
     font-size: 18px;
     line-height: calc(27/22);
@@ -42,11 +42,11 @@ h4 {
 
 @include mobile() {
 
-    h2 {
+    h2, .h2{
         font-size: 24px;
     }
 
-    h3 {
+    h3, .h3 {
         font-size: 18px;
     }
 }

@@ -82,9 +82,9 @@ export default {
         <Paper
             :region="region"/>
         <div class="ProofRegion__content">
-            <h3>
+            <div class="h3">
                 {{$t('components.proofRegion.' + region + '.title')}}
-            </h3>
+            </div>
             <p>
                 {{$t('components.proofRegion.' + region + '.intro')}}
             </p>
@@ -127,7 +127,7 @@ export default {
     &__content {
         flex: 1;
 
-        h3 {
+        .h3 {
             font-size: calc(22rem / 16);
             padding-top: 1.2em;
         }
@@ -139,7 +139,7 @@ export default {
         }
 
          @include mobile() {
-            h3 {
+            .h3 {
                 font-size: calc(18rem / 16);
                 line-height: 1.18;
             }
