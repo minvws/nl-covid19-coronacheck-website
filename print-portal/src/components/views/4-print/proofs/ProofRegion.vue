@@ -175,9 +175,6 @@ export default {
         font-weight: 700;
         padding-bottom: 20px;
         color: $color-link;
-        &:focus {
-            outline: none;
-        }
     }
 }
 </style>
