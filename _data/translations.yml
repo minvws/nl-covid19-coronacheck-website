@@ -1614,3 +1614,11 @@ quicklinks-try:
 quicklinks-try-url:
   nl: /nl/scanner/uitproberen
   en: /en/scanner/uitproberen
+
+dashboard-noscript-title:
+  nl: JavaScript vereist
+  en: JavaScript required
+
+dashboard-noscript-description:
+  nl: Dit dashboard gebruikt JavaScript. Schakel a.u.b. JavaScript in en probeer het opnieuw, of probeer het in een andere browser.
+  en: This dashboard uses JavaScript. Please enable JavaScript and try again, or try in a different browser.

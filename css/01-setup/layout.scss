@@ -1,0 +1,33 @@
+.column-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+
+    > div {
+        margin: 1rem;
+        width: 100%;
+
+        @media (min-width: 740px) {
+            width: calc(50% - 2rem);
+        }
+    }
+}
+
+.column-3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+
+    > div {
+        margin: 1rem;
+        width: 100%;
+
+        @media (min-width: 740px) {
+            width: calc(50% - 2rem);
+        }
+
+        @media (min-width: 960px) {
+            width: calc(33.333% - 2rem);
+        }
+    }
+}

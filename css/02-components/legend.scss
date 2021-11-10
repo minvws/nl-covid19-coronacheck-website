@@ -1,0 +1,48 @@
+.legend {
+    > div {
+        display: flex;
+        flex-direction: column;
+
+        > h2 {
+            font-size: 1.26562rem;
+        }
+
+        p {
+            margin-top: auto;
+        }
+    }
+
+    ul {
+        border-top: 1px solid #f3f3f3;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        margin-left: 0;
+
+        li {
+            list-style: none;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 0.75rem;
+                height: 0.75rem;
+                border-radius: 50%;
+                background-color: blue;
+                margin-right: 0.5rem;
+            }
+
+            &.type-1:before {
+                background-color: #2b6aa3;
+            }
+
+            &.type-2:before {
+                background-color: #9ecae6;
+            }
+
+            &.type-3:before {
+                background-color: #357fca;
+            }
+        }
+    }
+}
+
