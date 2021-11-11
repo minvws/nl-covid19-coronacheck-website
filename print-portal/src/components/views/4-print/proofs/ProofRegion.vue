@@ -79,34 +79,33 @@ export default {
 
 <template>
     <div class="ProofRegion">
-        <Paper
-            :region="region"/>
+        <Paper :region="region"/>
         <div class="ProofRegion__content">
-            <h2>
-                {{$t('components.proofRegion.' + region + '.title')}}
-            </h2>
-            <p>
-                {{$t('components.proofRegion.' + region + '.intro')}}
-            </p>
-            <div
-                class="print-buttons">
-                <div>
+            <h3>{{ $t('components.proofRegion.' + region + '.title') }}</h3>
+            <p>{{ $t('components.proofRegion.' + region + '.intro' )}}</p>
+            <div class="print-buttons">
+                <template v-if="browserWithProblemsOpeningPDF">
+                    <CcButton
+                        @select="downloadPDF"
+                        id="open-pdf"
+                        :disabled="createdDocument === null"
+                        :label="$t('components.proofRegion.viewPDF')"/>
+                </template>
+                <template v-else>
                     <button
                         class="open-pdf"
-                        @click.prevent="openPDF()"
-                        href="#"
+                        @click.prevent="openPDF"
                         id="open-pdf"
                         :disabled="createdDocument === null">
                         {{ $t('components.proofRegion.viewPDF') }}
                     </button>
+                    <CcButton
+                        @select="downloadPDF"
+                        id="download-pdf"
+                        :disabled="createdDocument === null"
+                        :label="$t('components.proofRegion.downloadPDF')"/>
+                    </template>
                 </div>
-
-                <CcButton
-                    @select="downloadPDF()"
-                    id="download-pdf"
-                    :disabled="createdDocument === null"
-                    :label="$t('components.proofRegion.downloadPDF')"/>
-            </div>
         </div>
     </div>
 </template>
@@ -171,7 +170,8 @@ export default {
     }
 
     .open-pdf {
-        display: inline-block;
+        display: block;
+        margin: 0 auto;
         font-size: calc(18rem / 16);
         font-weight: 700;
         padding-bottom: 20px;
