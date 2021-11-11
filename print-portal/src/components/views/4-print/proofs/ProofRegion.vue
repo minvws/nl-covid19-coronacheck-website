@@ -23,7 +23,8 @@ export default {
     },
     data() {
         return {
-            createdDocument: null
+            createdDocument: null,
+            canOpenObjectUrl: false
         }
     },
     computed: {
@@ -45,6 +46,7 @@ export default {
         }
     },
     async mounted() {
+        this.canOpenObjectUrl = !!(URL?.createObjectURL)
         await this.createDocument();
     },
     methods: {
@@ -72,6 +74,11 @@ export default {
             action.document.write(embed);
             action.document.close();
             action.document.title = this.metadata.title;
+        },
+        openObjectUrl() {
+            const blob = this.createdDocument?.blob
+            const url = URL.createObjectURL(blob)
+            window.open(url, '_blank');
         }
     }
 }
@@ -99,13 +106,22 @@ export default {
                         :disabled="createdDocument === null">
                         {{ $t('components.proofRegion.viewPDF') }}
                     </button>
+                    <button
+                        class="open-pdf"
+                        v-if="canOpenObjectUrl"
+                        @click.prevent="openObjectUrl"
+                        href="#"
+                        id="open-pdf"
+                        :disabled="createdDocument === null">
+                        {{ $t('components.proofRegion.viewPDF') }} with object url
+                    </button>
                     <CcButton
                         @select="downloadPDF"
                         id="download-pdf"
                         :disabled="createdDocument === null"
                         :label="$t('components.proofRegion.downloadPDF')"/>
-                    </template>
-                </div>
+                </template>
+            </div>
         </div>
     </div>
 </template>
