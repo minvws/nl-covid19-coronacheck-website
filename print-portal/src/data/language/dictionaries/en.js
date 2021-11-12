@@ -367,6 +367,10 @@ const en = {
             'author': 'CoronaCheck'
         }
     },
+    'certificate': {
+        'domestic': 'Dutch',
+        'european': 'International'
+    },
     'and': 'And',
     'back': 'Back',
     'close': 'Close',

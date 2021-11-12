@@ -370,6 +370,10 @@ const nl = {
             'author': 'CoronaCheck'
         }
     },
+    'certificate': {
+        'domestic': 'Nederland',
+        'european': 'Internationaal'
+    },
     'and': 'En',
     'back': 'Terug',
     'close': 'Sluiten',

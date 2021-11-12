@@ -32,17 +32,36 @@ export default {
             return detect();
         },
         browserWithProblemsOpeningPDF() {
-            const list = ['ie', 'safari', 'crios', 'ios'];
+            const list = ['ie', 'crios', 'ios'];
             return list.indexOf(this.browser.name.toLowerCase()) > -1;
         },
         fileName() {
-            return 'coronacheck.pdf';
+            const append = this.$t(`certificate.${this.region}`)
+            return `CoronaCheck - ${append}.pdf`;
         },
         metadata() {
             return {
                 title: this.$t('pdf.metadata.title'),
                 author: this.$t('pdf.metadata.author')
             };
+        },
+        buttons () {
+            const buttons = [{
+                label: this.$t('components.proofRegion.viewPDF')
+            }]
+            buttons[0].action = this.browserWithProblemsOpeningPDF ? this.downloadPDF : this.canOpenObjectUrl ? this.openObjectUrl : this.openPDFWithEmbed
+            if (!this.browserWithProblemsOpeningPDF) {
+                buttons.push({
+                    action: this.downloadPDF,
+                    label: this.$t('components.proofRegion.downloadPDF')
+                })
+            }
+            // make last button fat
+            buttons[buttons.length - 1].button = true
+            buttons.forEach(button => {
+                button.disabled = !this.createdDocument
+            })
+            return buttons
         }
     },
     async mounted() {
@@ -66,7 +85,7 @@ export default {
         downloadPDF() {
             this.createdDocument.save(this.fileName);
         },
-        openPDF() {
+        openPDFWithEmbed() {
             const string = this.createdDocument.output('datauristring');
             const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
             const action = window.open();
@@ -78,7 +97,26 @@ export default {
         openObjectUrl() {
             const blob = this.createdDocument?.blob
             const url = URL.createObjectURL(blob)
-            window.open(url, '_blank');
+            const action = window.open(url);
+            action.onload = () => {
+                action.document.getElementsByTagName('html')[0]
+                    .appendChild(document.createElement('head'))
+                    .appendChild(document.createElement('title'))
+                    .appendChild(document.createTextNode(this.metadata.title));
+                URL.revokeObjectURL(url)
+            }
+        },
+        onDownloadClick () {
+            const blob = this.createdDocument?.blob
+            const url = URL.createObjectURL(blob)
+            const a = document.createElement('a')
+            a.href = url
+            a.style.display = 'none'
+            a.download = this.fileName
+            document.body.appendChild(a)
+            a.click()
+            a.parentNode.removeChild(a)
+            URL.revokeObjectURL(url)
         }
     }
 }
@@ -91,35 +129,20 @@ export default {
             <h3>{{ $t('components.proofRegion.' + region + '.title') }}</h3>
             <p>{{ $t('components.proofRegion.' + region + '.intro' )}}</p>
             <div class="print-buttons">
-                <template v-if="browserWithProblemsOpeningPDF">
+                <template v-for="(item, index) in buttons">
                     <CcButton
-                        @select="downloadPDF"
-                        id="open-pdf"
-                        :disabled="createdDocument === null"
-                        :label="$t('components.proofRegion.viewPDF')"/>
-                </template>
-                <template v-else>
+                        v-if="item.button"
+                        :key="index"
+                        v-bind="item"
+                        @select="item.action"
+                    />
                     <button
-                        class="open-pdf"
-                        @click.prevent="openPDF"
-                        id="open-pdf"
-                        :disabled="createdDocument === null">
-                        {{ $t('components.proofRegion.viewPDF') }}
+                        v-else
+                        :key="index"
+                        class="button-pdf"
+                        @click.prevent="item.action">
+                            {{ item.label}}
                     </button>
-                    <button
-                        class="open-pdf"
-                        v-if="canOpenObjectUrl"
-                        @click.prevent="openObjectUrl"
-                        href="#"
-                        id="open-pdf"
-                        :disabled="createdDocument === null">
-                        {{ $t('components.proofRegion.viewPDF') }} with object url
-                    </button>
-                    <CcButton
-                        @select="downloadPDF"
-                        id="download-pdf"
-                        :disabled="createdDocument === null"
-                        :label="$t('components.proofRegion.downloadPDF')"/>
                 </template>
             </div>
         </div>
@@ -185,7 +208,7 @@ export default {
         }
     }
 
-    .open-pdf {
+    .button-pdf {
         display: block;
         margin: 0 auto;
         font-size: calc(18rem / 16);

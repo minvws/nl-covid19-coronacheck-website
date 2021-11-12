@@ -39,7 +39,7 @@ export default {
     }
 
     &__flag {
-
+        padding-bottom: 20px;
        img {
             border-radius: 3px;
             overflow: hidden;
