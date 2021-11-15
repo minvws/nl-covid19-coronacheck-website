@@ -31,9 +31,13 @@ export default {
         browser() {
             return detect();
         },
-        browserWithProblemsOpeningPDF() {
-            const list = ['ie', 'crios', 'ios'];
-            return list.indexOf(this.browser.name.toLowerCase()) > -1;
+        osWithProbemsViewingPDF () {
+            const os = ['android os']
+            return os.indexOf(this.browser.os.toLowerCase()) > -1
+        },
+        browserWithProblemsDownloadingPDF() {
+            const names = ['ie', 'crios', 'ios'];
+            return names.indexOf(this.browser.name.toLowerCase()) > -1
         },
         fileName() {
             const append = this.$t(`certificate.${this.region}`)
@@ -46,11 +50,17 @@ export default {
             };
         },
         buttons () {
-            const buttons = [{
-                label: this.$t('components.proofRegion.viewPDF')
-            }]
-            buttons[0].action = this.browserWithProblemsOpeningPDF ? this.downloadPDF : this.canOpenObjectUrl ? this.openObjectUrl : this.openPDFWithEmbed
-            if (!this.browserWithProblemsOpeningPDF) {
+            const buttons = []
+
+            if (!this.osWithProbemsViewingPDF) {
+                const action = this.browserWithProblemsDownloadingPDF ? this.downloadPDF : this.canOpenObjectUrl ? this.openObjectUrl : this.openPDFWithEmbed
+                buttons.push({
+                    label: this.$t('components.proofRegion.viewPDF'),
+                    action
+                })
+            }
+
+            if (!this.browserWithProblemsDownloadingPDF) {
                 buttons.push({
                     action: this.downloadPDF,
                     label: this.$t('components.proofRegion.downloadPDF')
