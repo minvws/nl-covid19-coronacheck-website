@@ -31,13 +31,16 @@ export default {
         browser() {
             return detect();
         },
-        osWithProbemsViewingPDF () {
-            const os = ['android os']
-            return os.indexOf(this.browser.os.toLowerCase()) > -1
+        osWithProbemsViewingPDF() {
+            if (this.browser.os === 'Android OS') {
+                return true
+            }
+
+            return this.browser.os === 'iOS' && this.browser.name === 'firefox'
         },
         browserWithProblemsDownloadingPDF() {
             const names = ['ie', 'crios', 'ios'];
-            return names.indexOf(this.browser.name.toLowerCase()) > -1
+            return names.includes(this.browser.name)
         },
         fileName() {
             const append = this.$t(`certificate.${this.region}`)
