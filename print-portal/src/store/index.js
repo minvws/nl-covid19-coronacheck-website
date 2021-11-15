@@ -8,6 +8,7 @@ import testProviders from './modules/testProviders';
 import eventProviders from './modules/eventProviders';
 import signedEvents from './modules/signedEvents';
 import qrs from './modules/qrs';
+import { isFuture } from 'date-fns';
 
 Vue.use(Vuex)
 
@@ -46,6 +47,15 @@ const getters = {
     },
     getVaccineInfo: (state) => (hkpCode) => {
         return state.holderConfig.hpkCodes.find(vaccineInfo => vaccineInfo.code === hkpCode)
+    },
+    getRecoveryEventValidityDays: (state) => () => {
+        // TODO: Remove this once recoveryGreencardRevisedValidityLaunchDate has passed
+        const revisedRecoveryValidityDate = new Date(state.holderConfig.recoveryGreencardRevisedValidityLaunchDate)
+        if (isFuture(revisedRecoveryValidityDate)) {
+            return state.holderConfig.recoveryExpirationDays
+        } else {
+            return state.holderConfig.recoveryEventValidityDays
+        }
     }
 };
 
