@@ -10,6 +10,16 @@ export default {
         close() {
             this.$emit('close');
             this.elementThatHadFocusBeforeModal.focus();
+        },
+        handleScroll() {
+            const header = document.querySelector('.sticky-header');
+            const dialog = document.querySelector('.modal__content');
+            var scrollPosition = dialog.scrollTop
+            if (scrollPosition > 1) {
+                header.classList.add('is-sticky');
+            } else if (scrollPosition < 1) {
+                header.classList.remove('is-sticky');
+            }
         }
     }
 }
@@ -43,15 +53,19 @@ export default {
                             <img src="assets/img/icons/close.svg" alt=""/>
                         </button>
                     </div>
-                <div id="modal__body"
-                    class="sticky">
-                    <slot name="body"/>
-                </div>
-                <div id="modal__footer">
-                    <CcModestButton
-                        id="modal-close"
-                        @select="close()"
-                        :label="$t('close')"/>
+                <div
+                    class="modal__content"
+                    @scroll="handleScroll">
+                    <div id="modal__body"
+                        class="sticky">
+                        <slot name="body"/>
+                    </div>
+                    <div id="modal__footer">
+                        <CcModestButton
+                            id="modal-close"
+                            @select="close()"
+                            :label="$t('close')"/>
+                    </div>
                 </div>
             </div>
         </div>

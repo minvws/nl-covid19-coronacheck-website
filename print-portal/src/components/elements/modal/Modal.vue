@@ -151,7 +151,7 @@ export default {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 460px;
-    height: calc(100% - 41px);
+    max-height:600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,8 +160,17 @@ export default {
     pointer-events: none;
 
     ::-webkit-scrollbar {
-        width:0px;
-        background:transparent;
+        margin-top: 30px;
+        width:6px;
+        padding-top:61px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #8F8F93;
+        border-radius: 8px;
+        width:6px;
+        height:322px;
+        margin-top:61px;
     }
 
     @include mobile() {
@@ -170,6 +179,7 @@ export default {
         transform:none;
         left:0;
         top:0;
+        max-height:100%;
     }
 }
 
@@ -181,8 +191,13 @@ export default {
     overflow-y: auto;
     pointer-events: all;
 
+    &__content {
+        overflow-y: auto;
+        max-height: 540px;
+    }
+
     #modal__head {
-        padding: $length-l $length-l 0 $length-l;
+        padding: 30px $length-l 10px $length-l;
         margin-bottom: $grid-x2;
         font-weight: 700;
         outline: none;
