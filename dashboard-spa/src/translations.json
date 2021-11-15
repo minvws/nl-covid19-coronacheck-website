@@ -1,0 +1,66 @@
+{
+    "dcc-certificate": {
+        "nl": "DCC-bewijzen",
+        "en": "Digital Corona Certificates"
+    },
+    "total": {
+        "nl": "Totaal",
+        "en": "Total"
+    },
+    "since-first-data": {
+        "nl": "Sinds de eerste verkregen data",
+        "en": "Since the first data obtained"
+    },
+    "past-7-days": {
+        "nl": "Afgelopen 7 dagen",
+        "en": "Past 7 days"
+    },
+    "past-30-days": {
+        "nl": "Afgelopen 30 dagen",
+        "en": "Past 30 days"
+    },
+    "vaccination-certificates": {
+        "nl": "Vaccinatie",
+        "en": "Vaccination"
+    },
+    "recovery-certificates": {
+        "nl": "Herstel",
+        "en": "Recovery"
+    },
+    "test-certificates": {
+        "nl": "Test",
+        "en": "Test"
+    },
+    "coronacheck-app-statistics": {
+        "nl": "Statistieken CoronaCheck-app",
+        "en": "CoronaCheck app statistics"
+    },
+    "android": {
+        "nl": "Android",
+        "en": "Android"
+    },
+    "ios": {
+        "nl": "iOS",
+        "en": "iOS"
+    },
+    "number-of-downloads-coronacheck-app": {
+        "nl": "Aantal downloads CoronaCheck-app",
+        "en": "Number of CoronaCheck app downloads"
+    },
+    "error-title": {
+        "nl": "Er is een fout opgetreden",
+        "en": "An error occurred"
+    },
+    "error-description": {
+        "nl": "Het ophalen van de gegevens is mislukt. Probeer het a.u.b. later opnieuw.",
+        "en": "We failed to load the data. Please try again later."
+    },
+    "retry": {
+        "nl": "Probeer opnieuw",
+        "en": "Retry"
+    },
+    "loading": {
+        "nl": "Bezig met laden...",
+        "en": "Loading..."
+    }
+}

@@ -23,7 +23,8 @@ export default {
     },
     data() {
         return {
-            createdDocument: null
+            createdDocument: null,
+            canOpenObjectUrl: false
         }
     },
     computed: {
@@ -31,20 +32,40 @@ export default {
             return detect();
         },
         browserWithProblemsOpeningPDF() {
-            const list = ['ie', 'safari', 'crios', 'ios'];
+            const list = ['ie', 'crios', 'ios'];
             return list.indexOf(this.browser.name.toLowerCase()) > -1;
         },
         fileName() {
-            return 'coronacheck.pdf';
+            const append = this.$t(`certificate.${this.region}`)
+            return `CoronaCheck - ${append}.pdf`;
         },
         metadata() {
             return {
                 title: this.$t('pdf.metadata.title'),
                 author: this.$t('pdf.metadata.author')
             };
+        },
+        buttons () {
+            const buttons = [{
+                label: this.$t('components.proofRegion.viewPDF')
+            }]
+            buttons[0].action = this.browserWithProblemsOpeningPDF ? this.downloadPDF : this.canOpenObjectUrl ? this.openObjectUrl : this.openPDFWithEmbed
+            if (!this.browserWithProblemsOpeningPDF) {
+                buttons.push({
+                    action: this.downloadPDF,
+                    label: this.$t('components.proofRegion.downloadPDF')
+                })
+            }
+            // make last button fat
+            buttons[buttons.length - 1].button = true
+            buttons.forEach(button => {
+                button.disabled = !this.createdDocument
+            })
+            return buttons
         }
     },
     async mounted() {
+        this.canOpenObjectUrl = !!(URL?.createObjectURL)
         await this.createDocument();
     },
     methods: {
@@ -64,7 +85,7 @@ export default {
         downloadPDF() {
             this.createdDocument.save(this.fileName);
         },
-        openPDF() {
+        openPDFWithEmbed() {
             const string = this.createdDocument.output('datauristring');
             const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
             const action = window.open();
@@ -72,6 +93,30 @@ export default {
             action.document.write(embed);
             action.document.close();
             action.document.title = this.metadata.title;
+        },
+        openObjectUrl() {
+            const blob = this.createdDocument?.blob
+            const url = URL.createObjectURL(blob)
+            const action = window.open(url);
+            action.onload = () => {
+                action.document.getElementsByTagName('html')[0]
+                    .appendChild(document.createElement('head'))
+                    .appendChild(document.createElement('title'))
+                    .appendChild(document.createTextNode(this.metadata.title));
+                URL.revokeObjectURL(url)
+            }
+        },
+        onDownloadClick () {
+            const blob = this.createdDocument?.blob
+            const url = URL.createObjectURL(blob)
+            const a = document.createElement('a')
+            a.href = url
+            a.style.display = 'none'
+            a.download = this.fileName
+            document.body.appendChild(a)
+            a.click()
+            a.parentNode.removeChild(a)
+            URL.revokeObjectURL(url)
         }
     }
 }
@@ -79,28 +124,26 @@ export default {
 
 <template>
     <div class="ProofRegion">
-        <Paper
-            :region="region"/>
+        <Paper :region="region"/>
         <div class="ProofRegion__content">
-            <h3>
-                {{$t('components.proofRegion.' + region + '.title')}}
-            </h3>
-            <p>
-                {{$t('components.proofRegion.' + region + '.intro')}}
-            </p>
-            <div
-                :class="{'browser--problems': browserWithProblemsOpeningPDF}"
-                class="print-buttons">
-                <CcButton
-                    @select="openPDF()"
-                    id="open-pdf"
-                    :disabled="createdDocument === null"
-                    :label="$t('components.proofRegion.openPDF')"/>
-                <CcButton
-                    @select="downloadPDF()"
-                    id="download-pdf"
-                    :disabled="createdDocument === null"
-                    :label="$t('components.proofRegion.openPDF')"/>
+            <h3>{{ $t('components.proofRegion.' + region + '.title') }}</h3>
+            <p>{{ $t('components.proofRegion.' + region + '.intro' )}}</p>
+            <div class="print-buttons">
+                <template v-for="(item, index) in buttons">
+                    <CcButton
+                        v-if="item.button"
+                        :key="index"
+                        v-bind="item"
+                        @select="item.action"
+                    />
+                    <button
+                        v-else
+                        :key="index"
+                        class="button-pdf"
+                        @click.prevent="item.action">
+                            {{ item.label}}
+                    </button>
+                </template>
             </div>
         </div>
     </div>
@@ -110,68 +153,42 @@ export default {
 @import "@/styles/variables/index";
 
 .ProofRegion {
+    display: block;
     width: 460px;
-    background: $color-RO_lightblue;
-    padding: 40px 40px 36px 40px;
+    padding: 42px;
     border-radius: 12px;
-    display: flex;
+    border: 1px solid $color-grey;
     align-items: center;
     margin-right: 20px;
-
-    .Paper {
-        margin-right: 50px;
-    }
+    text-align: center;
 
     &__content {
         flex: 1;
 
-        h3 {
-            font-size: calc(16rem / 16);
+        h2 {
+            font-size: calc(22rem / 16);
+            padding-top: 1.2em;
+            margin-bottom: 16px;
         }
 
         p {
-            font-size: calc(14rem / 16);
-            margin-bottom: 32px;
+            font-size: calc(18rem / 16);
+            line-height: 1.18;
+            margin-bottom: 30px;
         }
 
-        .print-buttons {
-
-            #open-pdf {
-                display: block;
-
-                // hide the open button on mobile. This sometimes fails and besides that it creates undesirable user experience
-                @include mobile() {
-                    display: none;
-                }
-
-                @include mobile-landscape-X() {
-                    display: none;
-                }
+         @include mobile() {
+            h2 {
+                font-size: calc(18rem / 16);
+                line-height: 1.18;
             }
 
-            #download-pdf {
-                display: none;
-
-                @include mobile() {
-                    display: block;
-                }
-
-                @include mobile-landscape-X() {
-                    display: block;
-                }
+            p {
+                font-size: calc(18rem / 16);
+                line-height: 1.18;
+                margin: 0 16px 30px 16px;
             }
-
-            &.browser--problems {
-
-                #open-pdf {
-                    display: none;
-                }
-
-                #download-pdf {
-                    display: block;
-                }
-            }
-        }
+         }
     }
 
     &:last-child {
@@ -179,12 +196,25 @@ export default {
     }
 
     @include mobile() {
-        display: block;
-        padding: 40px 24px;
+        padding: 32px 0px;
 
-        .Paper {
-            margin: 0 0 16px 0;
+        .print-buttons {
+            button {
+                min-width: 216px;
+            }
         }
+        .Paper {
+            margin: 0 0 4px 0;
+        }
+    }
+
+    .button-pdf {
+        display: block;
+        margin: 0 auto;
+        font-size: calc(18rem / 16);
+        font-weight: 700;
+        padding-bottom: 20px;
+        color: $color-link;
     }
 }
 </style>

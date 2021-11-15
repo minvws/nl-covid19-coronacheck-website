@@ -11,6 +11,7 @@ module.exports = {
     transpileDependencies: [
         'dcc-pdf-tools',
         'jspdf',
+        'vue-i18n',
         'oidc-client'
     ]
     // , devServer: {

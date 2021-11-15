@@ -131,8 +131,8 @@
 }
 
 .details--modest {
-    border-top: 1px solid $color-mediumgrey;
-    border-bottom: 1px solid $color-mediumgrey;
+    border-top: 1px solid $color-grey;
+    border-bottom: 1px solid $color-grey;
 
     > summary {
         background: none;
@@ -167,7 +167,7 @@
     }
 
     &[open] {
-        border-bottom: 1px solid $color-mediumgrey;
+        border-bottom: 1px solid $color-grey;
         padding-bottom: 0;
     }
 }
