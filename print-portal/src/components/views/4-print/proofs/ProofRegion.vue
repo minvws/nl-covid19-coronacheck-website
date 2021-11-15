@@ -31,16 +31,18 @@ export default {
         browser() {
             return detect();
         },
-        osWithProbemsViewingPDF() {
-            if (this.browser.os === 'Android OS') {
+        osWithProbemsViewingPDF () {
+            const oses = ['android os']
+            if (oses.indexOf(this.browser.os.toLowerCase()) > -1) {
                 return true
             }
 
-            return this.browser.os === 'iOS' && this.browser.name === 'firefox'
+            const browsers = ['fxios']
+            return browsers.indexOf(this.browser.name.toLowerCase()) > -1
         },
         browserWithProblemsDownloadingPDF() {
             const names = ['ie', 'crios', 'ios'];
-            return names.includes(this.browser.name)
+            return names.indexOf(this.browser.name.toLowerCase()) > -1
         },
         fileName() {
             const append = this.$t(`certificate.${this.region}`)
