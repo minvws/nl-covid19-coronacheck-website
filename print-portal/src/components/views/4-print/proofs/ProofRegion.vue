@@ -32,8 +32,13 @@ export default {
             return detect();
         },
         osWithProbemsViewingPDF () {
-            const os = ['android os']
-            return os.indexOf(this.browser.os.toLowerCase()) > -1
+            const oses = ['android os']
+            if (oses.indexOf(this.browser.os.toLowerCase()) > -1) {
+                return true
+            }
+
+            const browsers = ['fxios']
+            return browsers.indexOf(this.browser.name.toLowerCase()) > -1
         },
         browserWithProblemsDownloadingPDF() {
             const names = ['ie', 'crios', 'ios'];
