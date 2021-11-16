@@ -18,7 +18,7 @@ const Flow = {
     UNKNOWN: '-1'
 }
 
-const Step = {
+export const Step = {
     TVS_DIGID: '10',
     EVENT_PROVIDERS: '20',
     ACCESS_TOKENS: '30',
@@ -31,8 +31,11 @@ const Step = {
     STORING_CREDENTIALS: '90'
 }
 
+export const Provider = {
+    NON_PROVIDER: '000'
+}
 export const Client = {
-    UNKOWN: '-1',
+    UNKNOWN: '-1',
     CONNECTION: {
         UNABLE_TO_CONNECT: '001',
         INVALID_HOSTNAME: '002',
@@ -96,8 +99,17 @@ export const errorCodeTransformer = ({
     errorCode,
     errorBody
 }) => {
+    console.log(
+        {
+            flow,
+            step,
+            provider,
+            errorCode,
+            errorBody
+        }
+    )
     // s xyy ppp? hhh bbbbbb (system flow.step provider errorcode detailederrorcode)
-    return `${System.WEB} ${flow}${step} ${provider} ${errorCode} ${errorBody}`
+    return `${System.WEB} ${flowCodeTransformer(flow)}${step} ${provider} ${errorCode} ${errorBody}`
 }
 
 export const getClientSideErrorCode = (code = '') => {
@@ -105,6 +117,6 @@ export const getClientSideErrorCode = (code = '') => {
     case 'ECONNABORTED':
         return Client.CONNECTION.UNABLE_TO_CONNECT
     default:
-        return Client.UNKOWN
+        return Client.UNKNOWN
     }
 }

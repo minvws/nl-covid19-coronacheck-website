@@ -5,6 +5,7 @@ import Modal from '@/components/elements/modal/Modal';
 import { cmsDecode } from '@/tools/cms'
 import Snackbar from '@/components/elements/Snackbar';
 import { handleRejection } from '@/tools/error-handler';
+import { Step, Provider } from '@/data/constants/error-codes'
 
 export default {
     components: { Snackbar, Modal, Identity },
@@ -53,7 +54,13 @@ export default {
                 const callback = () => {
                     this.getHolderConfig();
                 }
-                handleRejection(error, { flow: 'startup', step: '10', provider_identifier: '000' }, callback);
+                handleRejection(error, {
+                    flow: 'startup',
+                    step: Step.TVS_DIGID,
+                    provider_identifier: Provider.NON_PROVIDER
+                },
+                callback)
+                ;
             })
         },
         async getTestProviders() {
@@ -77,7 +84,14 @@ export default {
                 const callback = () => {
                     this.getTestProviders();
                 }
-                handleRejection(error, { flow: 'startup', step: '20', provider_identifier: '000' }, callback);
+                handleRejection(error,
+                    {
+                        flow: 'startup',
+                        step: Step.EVENT_PROVIDERS,
+                        provider_identifier: Provider.NON_PROVIDER
+                    },
+                    callback
+                );
             })
         },
         addLanguages() {
