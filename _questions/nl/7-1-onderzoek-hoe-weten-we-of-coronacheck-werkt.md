@@ -1,6 +1,6 @@
 ---
 set: 1
-index: 10
+index: 11
 title: "Onderzoek: hoe weten we of CoronaCheck werkt?"
 redirect_from: 
   - /nl/faq/30-onderzoek-hoe-weten-we-of-coronacheck-werkt

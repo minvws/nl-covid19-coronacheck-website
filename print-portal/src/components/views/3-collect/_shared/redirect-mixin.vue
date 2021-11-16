@@ -2,6 +2,7 @@
 import signedEventsInterface from '@/interfaces/signed-events'
 import { cmsDecode } from '@/tools/cms'
 import { handleRejection, getErrorCode } from '@/tools/error-handler';
+import { differenceInCalendarDays } from 'date-fns';
 
 export default {
     name: 'redirect-mixin',
@@ -238,6 +239,25 @@ export default {
         createEvents(signedEvents) {
             this.$store.commit('signedEvents/createAll', signedEvents);
         },
+        areAllRecoveriesExpired(proofEvents) {
+            const expirationDays = this.$store.getters.getRecoveryEventValidityDays()
+            for (const proofEvent of proofEvents) {
+                if (!proofEvent.event.positivetest) {
+                    return false
+                }
+
+                const sampleDate = proofEvent.event.positivetest.sampleDate
+                var diffDays = differenceInCalendarDays(
+                    new Date(),
+                    new Date(sampleDate)
+                )
+                if (diffDays <= expirationDays) {
+                    return false
+                }
+            }
+
+            return true
+        },
         checkResult(results) {
             const signedEvents = [];
             for (const result of results) {
@@ -250,7 +270,11 @@ export default {
             // we check for the lengt of the proof events. Even when there are sigend events, it is possible
             // the do not have any (proof) events inside them
             if (proofEvents.length > 0) {
-                this.$router.push({ name: this.pages.overview });
+                if (this.areAllRecoveriesExpired(proofEvents)) {
+                    this.$router.push({ name: 'RecoveryExpired' });
+                } else {
+                    this.$router.push({ name: this.pages.overview });
+                }
             } else {
                 this.$router.push({ name: this.pages.noResult });
             }

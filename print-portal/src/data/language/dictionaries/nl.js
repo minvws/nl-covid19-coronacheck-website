@@ -104,9 +104,13 @@ const nl = {
             'pageIntro': '<p>Kloppen je gegevens? Dan kun je van je positieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
             'createTestProofButton': 'Maak bewijs'
         },
+        'recoveryExpired': {
+            'pageHeader': 'Positieve testuitslag niet meer geldig',
+            'pageIntro': '<p>Het is langer dan %{days} dagen geleden dat je positief getest bent op corona. Daarom is je testuitslag niet meer geldig. Je kunt helaas geen herstelbewijs maken.</p><p>Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/wegwijzer.html" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
+        },
         'recoveryNone': {
             'pageHeader': 'Geen positieve testuitslag beschikbaar',
-            'pageIntro': '<p>Er is geen positieve testuitslag beschikbaar.</p><p>Ben je net getest? Het kan een paar uur duren voordat je positieve test verwerkt is. Probeer het later nog eens.</p><p>Is het langer dan %{days} dagen geleden dat je getest bent? Dan is je testuitslag niet meer geldig. Je kunt dan ook geen herstelbewijs maken.</p>'
+            'pageIntro': '<p>Ben je net getest? Het kan een paar uur  duren voordat jouw positieve testuitslag beschikbaar is. Probeer het later nog eens.</p><p>Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
         },
         'print': {
             'pageTitle': 'Jouw bewijs',
@@ -130,7 +134,6 @@ const nl = {
             },
             'validInFuture': '<p>Let op: jouw herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>',
             'details': {
-                'header': '',
                 'set': {
                     'validPeriod': {
                         'summary': 'Hoe lang is mijn papieren bewijs geldig?',
@@ -146,7 +149,7 @@ const nl = {
                     },
                     'whyNoEuropeanRecovery': {
                         'summary': 'Waarom krijg ik geen internationaal herstelbewijs?',
-                        'content': '<p>Dat je geen internationaal herstelbewijs hebt gekregen, kan komen doordat jouw type test niet geldig is in het buitenland. Alleen van een PCR-test kan een internationaal herstelbewijs gemaakt worden. Lees meer over de mogelijke oorzaken op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
+                        'content': '<p>Dat je geen internationaal herstelbewijs hebt gekregen, kan bijvoorbeeld komen doordat je type test niet voldoet, of deze niet meer geldig is in het buitenland. Alleen van een PCR-test die minder dan 180 dagen oud is kan een internationaal herstelbewijs gemaakt worden. Lees meer over de mogelijke oorzaken op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
                     },
                     'whyNoEuropeanTest': {
                         'summary': 'Waarom krijg ik geen internationaal testbewijs?',
@@ -212,7 +215,8 @@ const nl = {
                 'intro': 'Gebruik dit bewijs als je in het buitenland bent of de grens over gaat.',
                 'paperTitle': 'Internationaal bewijs'
             },
-            'openPDF': 'Open PDF'
+            'viewPDF': 'Bekijk PDF',
+            'downloadPDF': 'Download PDF'
         },
         'languagePicker': {
             'language': 'Taal',
@@ -364,6 +368,10 @@ const nl = {
             'title': 'Coronabewijs met QR-code',
             'author': 'CoronaCheck'
         }
+    },
+    'certificate': {
+        'domestic': 'Nederland',
+        'european': 'Internationaal'
     },
     'and': 'En',
     'back': 'Terug',
