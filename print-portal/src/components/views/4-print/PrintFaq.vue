@@ -46,7 +46,7 @@ export default {
     <div class="PrintFaq">
          <h2
             v-if="title"
-            class="visually-hidden">
+            class="screen-reader-text">
             {{ title }}
         </h2>
         <div class="content-block">
@@ -74,14 +74,5 @@ export default {
             text-align: center;
         }
 
-        .visually-hidden {
-            clip-path: inset(100%);
-            clip: rect(1px, 1px, 1px, 1px);
-            height: 1px;
-            overflow: hidden;
-            position: absolute;
-            white-space: nowrap;
-            width: 1px;
-        }
 }
 </style>
