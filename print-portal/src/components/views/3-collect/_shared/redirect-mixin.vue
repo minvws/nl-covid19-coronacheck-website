@@ -47,7 +47,7 @@ export default {
                     const detailedCodeSessionExpired = 99708;
 
                     const hasErrorCode = (error, errorCode) => {
-                        const payload = error.response?.data?.payload
+                        const payload = error?.response?.data?.payload
                         if (payload) {
                             const cmsDecoded = cmsDecode(payload);
                             return cmsDecoded?.code === errorCode;
