@@ -2,7 +2,7 @@ import store from '@/store';
 import router from '@/router';
 import i18n from '@/i18n'
 import { cmsDecode } from './cms';
-import { errorCodeTransformer, isDigiDFlowAndStepError } from '@/data/constants/error-codes';
+import { Client as CLientError, errorCodeTransformer, isDigiDFlowAndStepError } from '@/data/constants/error-codes';
 
 export const hasInternetConnection = () => {
     return window.navigator.onLine;
@@ -26,7 +26,7 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
         return;
     }
     if (error.code === 'ECONNABORTED') {
-        errorCodeInformation.clientSideCode = '001';
+        errorCodeInformation.clientSideCode = CLientError.CONNECTION.UNABLE_TO_CONNECT
         router.push({ name: 'ErrorTimeout', query: { error: getErrorCode(error, errorCodeInformation) } });
         return;
     }
