@@ -2,6 +2,7 @@
 import dateTool from '@/tools/date';
 import signer from '@/interfaces/signer';
 import { handleRejection } from '@/tools/error-handler';
+import { Step, Provider } from '@/data/constants/error-codes'
 
 export default {
     name: 'overview-mixin',
@@ -74,7 +75,11 @@ export default {
                     const callback = () => {
                         this.gotoPrint();
                     }
-                    handleRejection(error, { flow: this.filter, step: '80', provider_identifier: '000' }, callback);
+                    handleRejection(error, {
+                        flow: this.filter,
+                        step: Step.SIGNER,
+                        provider_identifier: Provider.NON_PROVIDER
+                    }, callback);
                 })
             } else {
                 this.$router.push({ name: this.pages.print });

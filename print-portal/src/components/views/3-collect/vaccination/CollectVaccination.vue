@@ -5,6 +5,7 @@ import { handleRejection } from '@/tools/error-handler';
 import NoDigiD from '@/components/views/3-collect/_shared/NoDigiD';
 import TooBusyButton from '@/components/elements/TooBusyButton';
 import CcButtonDigiD from '@/components/elements/CcButtonDigiD';
+import { Provider, Step } from '@/data/constants/error-codes'
 
 export default {
     name: 'CollectVaccination',
@@ -23,7 +24,11 @@ export default {
                 const callback = () => {
                     this.getToken();
                 }
-                handleRejection(error, { flow: 'vaccination', step: '10', provider_identifier: '000' }, callback);
+                handleRejection(error, {
+                    flow: 'vaccination',
+                    step: Step.TVS_DIGID,
+                    provider_identifier: Provider.NON_PROVIDER
+                }, callback);
             })
         },
         back() {

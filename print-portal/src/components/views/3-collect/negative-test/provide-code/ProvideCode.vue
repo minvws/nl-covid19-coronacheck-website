@@ -8,6 +8,7 @@ import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import { cmsDecode } from '@/tools/cms'
 import { hasInternetConnection, messageInternetConnection, getErrorCode } from '@/tools/error-handler';
+import { Client as ClientError, Step } from '@/data/constants/error-codes'
 
 export default {
     name: 'ProvideCode',
@@ -173,7 +174,13 @@ export default {
                             }
                         } catch (error) {
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: getErrorCode(error, { flow: 'commercial_test', step: '60', provider_identifier: this.testProviderIdentifier, clientSideCode: '030' }) } });
+                            const errorCode = getErrorCode(error, {
+                                flow: 'commercial_test',
+                                step: Step.STORING,
+                                provider_identifier: this.testProviderIdentifier,
+                                clientSideCode: ClientError.JSON.DECODE_ERROR
+                            })
+                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: errorCode } });
                         }
                     }
                 }).catch((error) => {
@@ -184,7 +191,11 @@ export default {
                         messageInternetConnection(callback);
                     } else {
                         const errorCause = this.getCauseOfError(error);
-                        const errorCode = getErrorCode(error, { flow: 'commercial_test', step: '50', provider_identifier: this.testProviderIdentifier });
+                        const errorCode = getErrorCode(error, {
+                            flow: 'commercial_test',
+                            step: Step.EVENT,
+                            provider_identifier: this.testProviderIdentifier
+                        });
                         switch (errorCause) {
                         case 'invalid_token':
                             this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');

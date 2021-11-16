@@ -4,6 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import { handleRejection } from '@/tools/error-handler';
 import NoDigiD from '@/components/views/3-collect/_shared/NoDigiD';
 import CcButtonDigiD from '@/components/elements/CcButtonDigiD';
+import { Provider, Step } from '@/data/constants/error-codes'
 
 export default {
     name: 'CollectRecovery',
@@ -17,7 +18,13 @@ export default {
                 const callback = () => {
                     this.completeAuthentication();
                 }
-                handleRejection(error, { flow: 'recovery', step: '10', provider_identifier: '000' }, callback);
+                handleRejection(error, {
+                    flow: 'recovery',
+                    step: Step.TVS_DIGID,
+                    provider_identifier: Provider.NON_PROVIDER
+                },
+                callback
+                );
             })
         },
         back() {
