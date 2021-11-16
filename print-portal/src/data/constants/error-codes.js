@@ -32,6 +32,7 @@ const Step = {
 }
 
 export const Client = {
+    UNKOWN: '-1',
     CONNECTION: {
         UNABLE_TO_CONNECT: '001',
         INVALID_HOSTNAME: '002',
@@ -99,7 +100,11 @@ export const errorCodeTransformer = ({
     return `${System.WEB} ${flow}${step} ${provider} ${errorCode} ${errorBody}`
 }
 
-
 export const getClientSideErrorCode = (code = '') => {
-
+    switch (code) {
+    case 'ECONNABORTED':
+        return Client.CONNECTION.UNABLE_TO_CONNECT
+    default:
+        return Client.UNKOWN
+    }
 }
