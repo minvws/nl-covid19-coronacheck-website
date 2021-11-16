@@ -151,14 +151,14 @@ export default {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 460px;
-    max-height:600px;
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 10000;
     pointer-events: none;
-    overflow:hidden;
+    overflow: hidden;
 
     @include mobile() {
         width: 100%;
@@ -179,22 +179,22 @@ export default {
     pointer-events: all;
 
     div::-webkit-scrollbar {
-        width:6px;
+        width: 6px;
     }
 
     div::-webkit-scrollbar-thumb {
         background: #8F8F93;
         border-radius: 8px;
-        width:6px;
-        height:322px;
+        width: 6px;
+        height: 322px;
     }
 
     &__content {
         overflow-y: auto;
-        max-height:540px;
+        max-height: 540px;
 
         @include mobile() {
-            max-height:calc(100% - 60px);
+            max-height: calc(100% - 60px);
         }
     }
 
