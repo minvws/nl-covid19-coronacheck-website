@@ -158,20 +158,7 @@ export default {
     justify-content: center;
     z-index: 10000;
     pointer-events: none;
-
-    ::-webkit-scrollbar {
-        margin-top: 30px;
-        width:6px;
-        padding-top:61px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #8F8F93;
-        border-radius: 8px;
-        width:6px;
-        height:322px;
-        margin-top:61px;
-    }
+    overflow:hidden;
 
     @include mobile() {
         width: 100%;
@@ -191,9 +178,24 @@ export default {
     overflow-y: auto;
     pointer-events: all;
 
+    div::-webkit-scrollbar {
+        width:6px;
+    }
+
+    div::-webkit-scrollbar-thumb {
+        background: #8F8F93;
+        border-radius: 8px;
+        width:6px;
+        height:322px;
+    }
+
     &__content {
         overflow-y: auto;
-        max-height: 540px;
+        max-height:540px;
+
+        @include mobile() {
+            max-height:calc(100% - 60px);
+        }
     }
 
     #modal__head {
