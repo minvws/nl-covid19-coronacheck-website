@@ -35,14 +35,16 @@ export default {
             this.$store.commit('snackbar/close');
             this.$router.push({ name: this.pages.previous });
         },
-        completeAuthentication() {
+        async completeAuthentication() {
             this.isLoading = true;
 
-            this.authVaccinations.completeAuthentication().then((user) => {
-                signedEventsInterface.getTokens(user.id_token).then(response => {
+            try {
+                const user = await this.authVaccinations.completeAuthentication()
+                try {
+                    const response = await signedEventsInterface.getTokens(user.id_token)
                     this.notifyDigidFinished();
                     this.collectEvents(response.data.tokens);
-                }).catch((error) => {
+                } catch (error) {
                     const detailedCodeNoBSN = 99782;
                     const detailedCodeSessionExpired = 99708;
 
@@ -66,20 +68,20 @@ export default {
                         }
                         handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' }, callback)
                     }
-                });
-            }).catch((error) => {
+                }
+            } catch (error) {
                 // note: this is a custom error of the frontend library
                 // the digid backend also provides a error_desc
                 // but oidc-client removes this info from the custom error it returns
                 // as well as the error.response.status
 
                 const isCanceled = (error) => {
-                    return error && error.message && error.message === 'saml_authn_failed';
+                    return error?.message === 'saml_authn_failed';
                 }
 
                 const tooBusy = (error) => {
                     // the response login_required is a hack to communicate too busy mode
-                    return error && error.error && error.error === 'login_required';
+                    return error?.error === 'login_required';
                 }
 
                 const errorCodeInformation = {
@@ -100,7 +102,7 @@ export default {
                     const errorCode = getErrorCode(error, errorCodeInformation);
                     this.$router.push({ name: 'ServerBusy', query: { error: errorCode } });
                 } else {
-                    if (error && error.message) {
+                    if (error?.message) {
                         errorCodeInformation.errorBody = error.message;
                     }
                     const callback = () => {
@@ -108,7 +110,7 @@ export default {
                     }
                     handleRejection(error, errorCodeInformation, callback);
                 }
-            });
+            }
         },
         notifyDigidFinished() {
             const proofType = this.$t('components.digid.proofType.' + this.type)
