@@ -3,7 +3,9 @@ import signedEventsInterface from '@/interfaces/signed-events'
 import { cmsDecode } from '@/tools/cms'
 import { handleRejection, getErrorCode } from '@/tools/error-handler';
 import { differenceInCalendarDays } from 'date-fns';
-import { Client as ClientError, Step, Provider } from '@/data/constants/error-codes'
+import { ClientCode } from '@/data/constants/error-codes'
+import { StepTypes } from '@/types/step-types'
+import { ProviderTypes } from '@/types/provider-types'
 
 export default {
     name: 'redirect-mixin',
@@ -69,8 +71,8 @@ export default {
                         }
                         handleRejection(error, {
                             flow: this.filter,
-                            step: Step.ACCESS_TOKENS,
-                            provider_identifier: Provider.NON_PROVIDER
+                            step: StepTypes.ACCESS_TOKENS,
+                            provider_identifier: ProviderTypes.NON_PROVIDER
                         }, callback)
                     }
                 }
@@ -91,8 +93,8 @@ export default {
 
                 const errorCodeInformation = {
                     flow: this.filter,
-                    step: Step.TVS_DIGID,
-                    provider_identifier: Provider.NON_PROVIDER
+                    step: StepTypes.TVS_DIGID,
+                    provider_identifier: ProviderTypes.NON_PROVIDER
                 }
 
                 if (isCanceled(error)) {
@@ -178,7 +180,7 @@ export default {
                             if (eventProvider.unomi.error) {
                                 errorCode = getErrorCode(eventProvider.unomi.error, {
                                     flow: this.filter,
-                                    step: Step.UNOMI,
+                                    step: StepTypes.UNOMI,
                                     provider_identifier: eventProvider.eventProvider
                                 });
                                 errorCodes.push(errorCode);
@@ -186,7 +188,7 @@ export default {
                             if (eventProvider.events.error) {
                                 errorCode = getErrorCode(eventProvider.events.error, {
                                     flow: this.filter,
-                                    step: Step.EVENT,
+                                    step: StepTypes.EVENT,
                                     provider_identifier: eventProvider.eventProvider
                                 });
                                 errorCodes.push(errorCode);
@@ -194,9 +196,9 @@ export default {
                             if (eventProvider.events.parsingError) {
                                 errorCode = getErrorCode(eventProvider.events.error, {
                                     flow: this.filter,
-                                    step: Step.EVENT,
+                                    step: StepTypes.EVENT,
                                     provider_identifier: eventProvider.eventProvider,
-                                    clientSideCode: ClientError.JSON.DECODE_ERROR
+                                    clientSideCode: ClientCode.JSON.DECODE_ERROR
                                 });
                                 errorCodes.push(errorCode);
                             }

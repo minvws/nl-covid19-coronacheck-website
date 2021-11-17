@@ -1,13 +1,14 @@
 // see https://github.com/minvws/nl-covid19-coronacheck-app-coordination/blob/main/docs/Error%20Handling.md
 import { FlowTypes } from '@/types/flow-types'
+import { StepTypes } from '@/types/step-types'
 
-const System = {
+const SystemCode = {
     ANDROID: 'A',
     IOS: 'i',
     WEB: 'W'
 }
 
-const Flow = {
+const FlowCode = {
     LAUNCH_STARTUP: '0',
     COMMERCIAL_TEST: '1',
     VACCINATION: '2',
@@ -19,23 +20,7 @@ const Flow = {
     UNKNOWN: '-1'
 }
 
-export const Step = {
-    TVS_DIGID: '10',
-    EVENT_PROVIDERS: '20',
-    ACCESS_TOKENS: '30',
-    UNOMI: '40',
-    EVENT: '50',
-    STORING: '60',
-    PREPARE_ISSUE: '70',
-    REFRESH_TRIPPEN: '75',
-    SIGNER: '80',
-    STORING_CREDENTIALS: '90'
-}
-
-export const Provider = {
-    NON_PROVIDER: '000'
-}
-export const Client = {
+export const ClientCode = {
     UNKNOWN: '-1',
     CONNECTION: {
         UNABLE_TO_CONNECT: '001',
@@ -58,7 +43,7 @@ export const Client = {
     }
 }
 
-const DigiDFlows = [Flow.VACCINATION, Flow.RECOVERY, Flow.DIGID]
+const DigiDFlows = [FlowCode.VACCINATION, FlowCode.RECOVERY, FlowCode.DIGID]
 
 const isDigiDFlowError = ({ flow }) => {
     const code = flowCodeTransformer(flow)
@@ -66,26 +51,26 @@ const isDigiDFlowError = ({ flow }) => {
 }
 
 const isDigiDStepError = ({ step }) => {
-    return step === Step.DIGID
+    return step === StepTypes.DIGID
 }
 
 export const flowCodeTransformer = (flow = '') => {
     switch (flow) {
     case FlowTypes.ONBOARDING:
     case FlowTypes.STARTUP:
-        return Flow.LAUNCH_STARTUP
+        return FlowCode.LAUNCH_STARTUP
     case FlowTypes.COMMERCIAL_TEST:
-        return Flow.COMMERCIAL_TEST;
+        return FlowCode.COMMERCIAL_TEST;
     case FlowTypes.VACCINATION:
-        return Flow.VACCINATION;
+        return FlowCode.VACCINATION;
     case [FlowTypes.POSITIVE_TEST, FlowTypes.RECOVERY].join(','):
     case FlowTypes.POSITIVE_TEST:
     case FlowTypes.RECOVERY:
-        return Flow.RECOVERY;
+        return FlowCode.RECOVERY;
     case FlowTypes.NEGATIVE_TEST:
-        return Flow.DIGID;
+        return FlowCode.DIGID;
     default:
-        return Flow.UNKNOWN
+        return FlowCode.UNKNOWN
     }
 }
 
@@ -101,17 +86,17 @@ export const errorCodeTransformer = ({
     errorBody
 }) => {
     // s xyy ppp? hhh bbbbbb (system flow.step provider errorcode detailederrorcode)
-    return `${System.WEB} ${flowCodeTransformer(flow)}${step} ${provider} ${errorCode} ${errorBody}`
+    return `${SystemCode.WEB} ${flowCodeTransformer(flow)}${step} ${provider} ${errorCode} ${errorBody}`
 }
 
 export const getClientSideErrorCode = (code = '') => {
     switch (code.toUpperCase()) {
     case 'NETWORK ERROR':
-        return Client.CONNECTION.INVALID_HOSTNAME;
+        return ClientCode.CONNECTION.INVALID_HOSTNAME;
     case 'ECONNABORTED':
-        return Client.CONNECTION.UNABLE_TO_CONNECT;
+        return ClientCode.CONNECTION.UNABLE_TO_CONNECT;
     default:
         console.error('unhandled clientSide error', code)
-        return Client.UNKNOWN;
+        return ClientCode.UNKNOWN;
     }
 }

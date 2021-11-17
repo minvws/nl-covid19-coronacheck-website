@@ -8,7 +8,8 @@ import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import { cmsDecode } from '@/tools/cms'
 import { hasInternetConnection, messageInternetConnection, getErrorCode } from '@/tools/error-handler';
-import { Client as ClientError, Step } from '@/data/constants/error-codes'
+import { ClientCode } from '@/data/constants/error-codes'
+import { StepTypes } from '@/types/step-types'
 import { FlowTypes } from '@/types/flow-types'
 
 export default {
@@ -177,9 +178,9 @@ export default {
                             this.$store.commit('clearAll');
                             const errorCode = getErrorCode(error, {
                                 flow: FlowTypes.COMMERCIAL_TEST,
-                                step: Step.STORING,
+                                step: StepTypes.STORING,
                                 provider_identifier: this.testProviderIdentifier,
-                                clientSideCode: ClientError.JSON.DECODE_ERROR
+                                clientSideCode: ClientCode.JSON.DECODE_ERROR
                             })
                             this.$router.push({ name: 'ErrorTokenFlow', query: { error: errorCode } });
                         }
@@ -194,7 +195,7 @@ export default {
                         const errorCause = this.getCauseOfError(error);
                         const errorCode = getErrorCode(error, {
                             flow: FlowTypes.COMMERCIAL_TEST,
-                            step: Step.EVENT,
+                            step: StepTypes.EVENT,
                             provider_identifier: this.testProviderIdentifier
                         });
                         switch (errorCause) {
