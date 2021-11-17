@@ -102,7 +102,12 @@ openingsplan:
 overzicht-maatregelen:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs" rel="noopener noreferrer" target="_blank">Coronatoegangsbewijs voor horeca, evenementen en andere activiteiten</a>'
   en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/coronavirus-entry-pass" rel="noopener noreferrer" target="_blank">Coronavirus entry pass for food and drink venues, events and other activities</a>'
- 
+ [basisregels](https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels)
+
+basisregels:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels" rel="noopener noreferrer" target="_blank">basisregels</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/coronavirus-measures-in-brief" rel="noopener noreferrer" target="_blank">Coronavirus entry pass for food and drink venues, events and other activities</a>'
+
 wetransfer-toolkit:
   nl: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs voor evenementen</a>'
   en: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs for events</a>'
