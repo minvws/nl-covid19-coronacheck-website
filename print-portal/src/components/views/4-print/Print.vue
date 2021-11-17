@@ -3,6 +3,7 @@ import Page from '@/components/elements/Page';
 import ProofRegion from './proofs/ProofRegion';
 import PrintFaq from './PrintFaq';
 import PageIntro from '@/components/elements/PageIntro';
+import { RegionTypes } from '@/types/region-types'
 
 export default {
     name: 'Print',
@@ -30,23 +31,23 @@ export default {
         },
         pageType() {
             if (this.hasDomestic && this.hasEuropean) {
-                return 'both';
+                return RegionTypes.BOTH;
             } else {
                 if (this.hasDomestic) {
-                    return 'domestic';
+                    return RegionTypes.DOMESTIC;
                 } else {
-                    return 'european';
+                    return RegionTypes.EUROPEAN;
                 }
             }
         },
         regionType() {
             if (this.hasDomestic && this.hasEuropean) {
-                return 'both';
+                return RegionTypes.BOTH;
             } else {
                 if (this.hasDomestic) {
-                    return 'domestic'
+                    return RegionTypes.DOMESTIC
                 } else {
-                    return 'european'
+                    return RegionTypes.EUROPEAN
                 }
             }
         },
@@ -97,11 +98,11 @@ export default {
                 <ProofRegion
                     v-if="hasDomestic"
                     :proof="proof.domestic"
-                    :region="'domestic'" />
+                    :region="RegionTypes.DOMESTIC" />
                 <ProofRegion
                     v-if="hasEuropean"
                     :proof="proof.european"
-                    :region="'european'" />
+                    :region="RegionTypes.EUROPEAN" />
             </div>
         </div>
     </Page>

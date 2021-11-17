@@ -4,6 +4,7 @@ import CcButton from '@/components/elements/CcButton';
 import { detect } from 'detect-browser';
 import { getDocument, parseProofData } from 'dcc-pdf-tools';
 import { QRSizeInCm } from '@/data/constants';
+import { RegionTypes } from '@/types/region-types'
 
 export default {
     name: 'ProofRegion',
@@ -17,7 +18,10 @@ export default {
             type: String,
             required: true,
             validator: (value) => {
-                return ['domestic', 'european'].indexOf(value) > -1;
+                return [
+                    RegionTypes.DOMESTIC,
+                    RegionTypes.EUROPEAN
+                ].indexOf(value) > -1;
             }
         }
     },
