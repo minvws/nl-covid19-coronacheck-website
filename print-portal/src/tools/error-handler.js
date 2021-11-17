@@ -72,14 +72,9 @@ export const getErrorCode = (error, errorCodeInformation) => {
     }
 
     // client side error
-    if (error?.isAxiosError && !errorCode && !errorBody) {
-        errorCode = getClientSideErrorCode(error?.code ?? error?.message)
-        errorBody = error?.message ?? ''
-    }
-
-    // @FIXME: temporary, for debugging
-    if (!errorCode || !errorBody) {
-        console.warn('no errorCode of errorBody', { errorCode, errorBody })
+    if (error?.isAxiosError) {
+        if (!errorCode) errorCode = getClientSideErrorCode(error?.code ?? error?.message)
+        if (!errorBody) errorBody = error?.message ?? ''
     }
 
     const {
