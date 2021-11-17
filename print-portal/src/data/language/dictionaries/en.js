@@ -69,6 +69,9 @@ const en = {
             'pageIntro': '<p>Have you had coronavirus? Then you can make a recovery certificate of the positive test result. Log in with DigiD to retrieve your test result.</p>' +
                 '<p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be symptom-free.</p>'
         },
+        'collectPositiveTest': {
+            'pageHeader': 'Retrieve test result'
+        },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
             'pageIntro': 'Enter your retrieval code. The test location sent it to you. Or click on the link in the email you\'ll get from the test location.',
@@ -112,6 +115,10 @@ const en = {
             'pageHeader': 'No positive test result available',
             'pageIntro': '<p>Were you just tested? It can take a few hours before your positive test result is available. Please try again later.</p><p>Find more information on the <a href="https://coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
         },
+        'recoveryInvalid': {
+            'pageHeader': 'Positive test result is not suitable',
+            'pageIntro': '<p>You were tested positive after your first vaccination. Your test result is therefore not suitable for creating a Dutch certificate.</p><p>Check the <a href="https://coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">frequently asked questions</a> for more information.</p>'
+        },
         'print': {
             'pageTitle': 'Your certificate',
             'pageHeader': {
@@ -146,7 +153,12 @@ const en = {
                     },
                     'whyNoDomesticVaccination': {
                         'summary': 'Why didn’t I receive a Dutch vaccination certificate?',
-                        'content': '<p>You may not have received a Dutch vaccination certificate because you only had one vaccination. After your second vaccination, you can create a new certificate that is also valid in the Netherlands. <a href="https://coronacheck.nl/en/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Read more on the possible causes here</a>.</p>'
+                        'content': '<p>To get a Dutch vaccination certificate, you need to be fully vaccinated or have recovered from coronavirus before your first vaccination.</p>'
+                    },
+                    'whyNoDutchCertificate': {
+                        'summary': 'Had coronavirus before your first vaccination?',
+                        'content': '<p>Retrieve your positive test result. You will also receive a Dutch certificate then.</p>',
+                        'label': 'Retrieve my test result'
                     },
                     'whyNoEuropeanRecovery': {
                         'summary': 'Why didn’t I receive an international recovery certificate?',
@@ -378,6 +390,7 @@ const en = {
     'faq': 'Frequently asked questions',
     'forInstanceAbbr': 'E.g.',
     'goBackToStart': 'To Home',
+    'goToOverview': 'Back to overview',
     'header-appstore': 'Download on the App Store',
     'header-googleplaystore': 'Get it on Google Play',
     'identity_image_alt': 'Make Holder QR code',

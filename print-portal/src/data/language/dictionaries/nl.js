@@ -69,6 +69,9 @@ const nl = {
             'pageIntro': '<p>Heb je corona gehad? Dan kun je van de positieve testuitslag een herstelbewijs maken. Log in met DigiD om een testuitslag op te halen.</p>' +
                 '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>'
         },
+        'collectPositiveTest': {
+            'pageHeader': 'Testuitslag ophalen'
+        },
         'provideCode': {
             'pageHeader': 'Testuitslag ophalen',
             'pageIntro': 'Vul jouw ophaalcode in. Deze heb je van je testlocatie gekregen.',
@@ -112,6 +115,10 @@ const nl = {
             'pageHeader': 'Geen positieve testuitslag beschikbaar',
             'pageIntro': '<p>Ben je net getest? Het kan een paar uur  duren voordat jouw positieve testuitslag beschikbaar is. Probeer het later nog eens.</p><p>Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
         },
+        'recoveryInvalid': {
+            'pageHeader': 'Jou positieve testuitslag is niet geschikt',
+            'pageIntro': '<p>Je bent positief getest ná je eerste vaccinatie. Daardoor is je testuitslag niet geschikt om een Nederlands bewijs van te maken</p><p>Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
+        },
         'print': {
             'pageTitle': 'Jouw bewijs',
             'pageHeader': {
@@ -146,7 +153,12 @@ const nl = {
                     },
                     'whyNoDomesticVaccination': {
                         'summary': 'Waarom krijg ik geen Nederlands vaccinatiebewijs?',
-                        'content': '<p>Dat je geen Nederlandse vaccinatiebewijs hebt gekregen, kan komen doordat je maar één prik hebt gehad. Na je tweede prik kun je een nieuw bewijs maken dat ook in Nederland geldig is. <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Lees hier meer over de mogelijke oorzaken</a>.</p>'
+                        'content': '<p>Voor een Nederlands vaccinatiebewijs moet je volledig gevaccineerd zijn, of hersteld van corona vóór je eerste prik.</p>'
+                    },
+                    'whyNoDutchCertificate': {
+                        'summary': 'Corona gehad voor je eerste prik?',
+                        'content': '<p>Haal je positieve testuitslag op. Je krijgt dan ook een Nederlands bewijs.</p>',
+                        'label': 'Haal mijn testuitslag op'
                     },
                     'whyNoEuropeanRecovery': {
                         'summary': 'Waarom krijg ik geen internationaal herstelbewijs?',
@@ -381,6 +393,7 @@ const nl = {
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
     'goBackToStart': 'Naar Home',
+    'goToOverview': 'Terug naar overzicht',
     'header-appstore': 'Download in de App Store',
     'header-googleplaystore': 'Ontdek het op Google Play',
     'identity_image_alt': 'Holder QR maken',
