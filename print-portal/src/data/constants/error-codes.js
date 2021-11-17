@@ -100,24 +100,18 @@ export const errorCodeTransformer = ({
     errorCode,
     errorBody
 }) => {
-    console.log(
-        {
-            flow,
-            step,
-            provider,
-            errorCode,
-            errorBody
-        }
-    )
     // s xyy ppp? hhh bbbbbb (system flow.step provider errorcode detailederrorcode)
     return `${System.WEB} ${flowCodeTransformer(flow)}${step} ${provider} ${errorCode} ${errorBody}`
 }
 
 export const getClientSideErrorCode = (code = '') => {
-    switch (code) {
+    switch (code.toUpperCase()) {
+    case 'NETWORK ERROR':
+        return Client.CONNECTION.INVALID_HOSTNAME;
     case 'ECONNABORTED':
-        return Client.CONNECTION.UNABLE_TO_CONNECT
+        return Client.CONNECTION.UNABLE_TO_CONNECT;
     default:
-        return Client.UNKNOWN
+        console.error('unhandled clientSide error', code)
+        return Client.UNKNOWN;
     }
 }

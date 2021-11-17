@@ -43,7 +43,6 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
 
 export const getErrorCode = (error, errorCodeInformation) => {
     let errorCode, errorBody;
-
     if (errorCodeInformation.clientSideCode) {
         errorCode = errorCodeInformation.clientSideCode;
     } else {
@@ -70,6 +69,17 @@ export const getErrorCode = (error, errorCodeInformation) => {
         } else {
             errorBody = '';
         }
+    }
+
+    // client side error
+    if (error?.isAxiosError && !errorCode && !errorBody) {
+        errorCode = getClientSideErrorCode(error?.code ?? error?.message)
+        errorBody = error?.message ?? ''
+    }
+
+    // @FIXME: temporary, for debugging
+    if (!errorCode || !errorBody) {
+        console.warn('no errorCode of errorBody', { errorCode, errorBody })
     }
 
     const {
