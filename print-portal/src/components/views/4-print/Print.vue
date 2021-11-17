@@ -20,6 +20,9 @@ export default {
         }
     },
     computed: {
+        regionTypes () {
+            return RegionTypes;
+        },
         proof() {
             return this.$store.state.qrs.proof;
         },
@@ -98,11 +101,11 @@ export default {
                 <ProofRegion
                     v-if="hasDomestic"
                     :proof="proof.domestic"
-                    :region="RegionTypes.DOMESTIC" />
+                    :region="regionTypes.DOMESTIC" />
                 <ProofRegion
                     v-if="hasEuropean"
                     :proof="proof.european"
-                    :region="RegionTypes.EUROPEAN" />
+                    :region="regionTypes.EUROPEAN" />
             </div>
         </div>
     </Page>
