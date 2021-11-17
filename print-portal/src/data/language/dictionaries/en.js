@@ -134,6 +134,7 @@ const en = {
             },
             'validInFuture': '<p>Please note: your recovery certificate will become valid 11 days after the positive test result. You need to be free of symptoms as well.</p>',
             'details': {
+                'header': 'More information about your certificate',
                 'set': {
                     'validPeriod': {
                         'summary': 'How long is my paper certificate valid for?',

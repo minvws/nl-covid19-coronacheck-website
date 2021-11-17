@@ -12,6 +12,9 @@ export default {
         }
     },
     computed: {
+        title () {
+            return this.$t('views.print.details.header')
+        },
         details() {
             const details = [];
             if (this.type === 'vaccination' && this.regionType === 'european') {
@@ -41,6 +44,11 @@ export default {
 
 <template>
     <div class="PrintFaq">
+         <h2
+            v-if="title"
+            class="screen-reader-text">
+            {{ title }}
+        </h2>
         <div class="content-block">
             <details
                 v-for="(detail, index) in details"
@@ -65,5 +73,6 @@ export default {
             font-size: 18px;
             text-align: center;
         }
+
 }
 </style>
