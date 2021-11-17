@@ -47,17 +47,13 @@ export default {
                     const detailedCodeSessionExpired = 99708;
 
                     const hasErrorCode = (error, errorCode) => {
-                        if (error.response && error.response.data) {
-                            const cmsDecoded = cmsDecode(error.response.data.payload);
-                            if (cmsDecoded.code) {
-                                return cmsDecoded.code === errorCode;
-                            } else {
-                                return false;
-                            }
+                        const payload = error?.response?.data?.payload
+                        if (payload) {
+                            const cmsDecoded = cmsDecode(payload);
+                            return cmsDecoded?.code === errorCode;
                         }
-
-                        return error && error.response && error.response.data && error.response.data &&
-                            error.response.data.code && error.response.data.code === errorCode;
+                        const code = error?.response?.data?.code
+                        return code === errorCode;
                     }
 
                     if (hasErrorCode(error, detailedCodeNoBSN)) {
