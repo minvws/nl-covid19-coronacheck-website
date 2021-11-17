@@ -3,6 +3,7 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
 import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
+import { FilterTypes } from '@/types/filter-types'
 
 export default {
     name: 'VaccinationRedirect',
@@ -11,7 +12,7 @@ export default {
     data() {
         return {
             isLoading: false,
-            filter: 'vaccination',
+            filter: FilterTypes.VACCINATION,
             eventProviders: '*',
             pages: {
                 cancel: 'ChoiceProof',

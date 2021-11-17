@@ -7,6 +7,7 @@ import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import LoadingCover from '@/components/elements/LoadingCover';
+import { FilterTypes } from '@/types/filter-types'
 
 export default {
     name: 'RecoveryOverview',
@@ -14,7 +15,7 @@ export default {
     mixins: [overviewMixin],
     data() {
         return {
-            filter: 'positivetest,recovery',
+            filter: [FilterTypes.POSITIVE_TEST, FilterTypes.RECOVERY].join(','),
             pages: {
                 print: 'PrintRecovery'
             }
