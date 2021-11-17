@@ -60,8 +60,7 @@ export default {
                     step: Step.TVS_DIGID,
                     provider_identifier: Provider.NON_PROVIDER
                 },
-                callback)
-                ;
+                callback);
             })
         },
         async getTestProviders() {
@@ -85,14 +84,12 @@ export default {
                 const callback = () => {
                     this.getTestProviders();
                 }
-                handleRejection(error,
-                    {
-                        flow: FlowTypes.STARTUP,
-                        step: Step.EVENT_PROVIDERS,
-                        provider_identifier: Provider.NON_PROVIDER
-                    },
-                    callback
-                );
+                handleRejection(error, {
+                    flow: FlowTypes.STARTUP,
+                    step: Step.EVENT_PROVIDERS,
+                    provider_identifier: Provider.NON_PROVIDER
+                },
+                callback);
             })
         },
         addLanguages() {
