@@ -1,4 +1,5 @@
 // see https://github.com/minvws/nl-covid19-coronacheck-app-coordination/blob/main/docs/Error%20Handling.md
+import { FlowTypes } from '@/types/flow-types'
 
 const System = {
     ANDROID: 'A',
@@ -70,18 +71,18 @@ const isDigiDStepError = ({ step }) => {
 
 export const flowCodeTransformer = (flow = '') => {
     switch (flow) {
-    case 'onboarding':
-    case 'startup':
+    case FlowTypes.ONBOARDING:
+    case FlowTypes.STARTUP:
         return Flow.LAUNCH_STARTUP
-    case 'commercial_test':
+    case FlowTypes.COMMERCIAL_TEST:
         return Flow.COMMERCIAL_TEST;
-    case 'vaccination':
+    case FlowTypes.VACCINATION:
         return Flow.VACCINATION;
-    case 'positivetest,recovery':
-    case 'positivetest':
-    case 'recovery':
+    case [FlowTypes.POSITIVE_TEST, FlowTypes.RECOVERY].join(','):
+    case FlowTypes.POSITIVE_TEST:
+    case FlowTypes.RECOVERY:
         return Flow.RECOVERY;
-    case 'negativetest':
+    case FlowTypes.NEGATIVE_TEST:
         return Flow.DIGID;
     default:
         return Flow.UNKNOWN

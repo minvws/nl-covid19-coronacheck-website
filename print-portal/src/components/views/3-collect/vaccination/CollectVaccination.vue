@@ -6,7 +6,7 @@ import NoDigiD from '@/components/views/3-collect/_shared/NoDigiD';
 import TooBusyButton from '@/components/elements/TooBusyButton';
 import CcButtonDigiD from '@/components/elements/CcButtonDigiD';
 import { Provider, Step } from '@/data/constants/error-codes'
-import { FilterTypes } from '@/types/filter-types'
+import { FlowTypes } from '@/types/flow-types'
 
 export default {
     name: 'CollectVaccination',
@@ -26,7 +26,7 @@ export default {
                     this.getToken();
                 }
                 handleRejection(error, {
-                    flow: FilterTypes.VACCINATION,
+                    flow: FlowTypes.VACCINATION,
                     step: Step.TVS_DIGID,
                     provider_identifier: Provider.NON_PROVIDER
                 }, callback);

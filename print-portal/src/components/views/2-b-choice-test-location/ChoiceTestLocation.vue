@@ -6,6 +6,7 @@ import PreferMobile from '@/components/elements/PreferMobile';
 import CcModestButton from '@/components/elements/CcModestButton';
 import { handleRejection } from '@/tools/error-handler';
 import { Step, Provider } from '@/data/constants/error-codes'
+import { FlowTypes } from '@/types/flow-types'
 
 export default {
     name: 'ChoiceTestLocation',
@@ -28,7 +29,7 @@ export default {
                     this.loginWithDigid();
                 }
                 handleRejection(error, {
-                    flow: 'negativetest',
+                    flow: FlowTypes.NEGATIVE_TEST,
                     step: Step.TVS_DIGID,
                     provider_identifier: Provider.NON_PROVIDER
                 },

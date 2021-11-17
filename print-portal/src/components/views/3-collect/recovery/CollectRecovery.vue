@@ -5,6 +5,7 @@ import { handleRejection } from '@/tools/error-handler';
 import NoDigiD from '@/components/views/3-collect/_shared/NoDigiD';
 import CcButtonDigiD from '@/components/elements/CcButtonDigiD';
 import { Provider, Step } from '@/data/constants/error-codes'
+import { FlowTypes } from '@/types/flow-types'
 
 export default {
     name: 'CollectRecovery',
@@ -19,7 +20,7 @@ export default {
                     this.completeAuthentication();
                 }
                 handleRejection(error, {
-                    flow: 'recovery',
+                    flow: FlowTypes.RECOVERY,
                     step: Step.TVS_DIGID,
                     provider_identifier: Provider.NON_PROVIDER
                 },

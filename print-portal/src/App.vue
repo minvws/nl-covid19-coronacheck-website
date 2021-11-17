@@ -6,6 +6,7 @@ import { cmsDecode } from '@/tools/cms'
 import Snackbar from '@/components/elements/Snackbar';
 import { handleRejection } from '@/tools/error-handler';
 import { Step, Provider } from '@/data/constants/error-codes'
+import { FlowTypes } from '@/types/flow-types'
 
 export default {
     components: { Snackbar, Modal, Identity },
@@ -55,7 +56,7 @@ export default {
                     this.getHolderConfig();
                 }
                 handleRejection(error, {
-                    flow: 'startup',
+                    flow: FlowTypes.STARTUP,
                     step: Step.TVS_DIGID,
                     provider_identifier: Provider.NON_PROVIDER
                 },
@@ -86,7 +87,7 @@ export default {
                 }
                 handleRejection(error,
                     {
-                        flow: 'startup',
+                        flow: FlowTypes.STARTUP,
                         step: Step.EVENT_PROVIDERS,
                         provider_identifier: Provider.NON_PROVIDER
                     },

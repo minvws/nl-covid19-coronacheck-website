@@ -9,6 +9,7 @@ import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import { cmsDecode } from '@/tools/cms'
 import { hasInternetConnection, messageInternetConnection, getErrorCode } from '@/tools/error-handler';
 import { Client as ClientError, Step } from '@/data/constants/error-codes'
+import { FlowTypes } from '@/types/flow-types'
 
 export default {
     name: 'ProvideCode',
@@ -175,7 +176,7 @@ export default {
                         } catch (error) {
                             this.$store.commit('clearAll');
                             const errorCode = getErrorCode(error, {
-                                flow: 'commercial_test',
+                                flow: FlowTypes.COMMERCIAL_TEST,
                                 step: Step.STORING,
                                 provider_identifier: this.testProviderIdentifier,
                                 clientSideCode: ClientError.JSON.DECODE_ERROR
@@ -192,7 +193,7 @@ export default {
                     } else {
                         const errorCause = this.getCauseOfError(error);
                         const errorCode = getErrorCode(error, {
-                            flow: 'commercial_test',
+                            flow: FlowTypes.COMMERCIAL_TEST,
                             step: Step.EVENT,
                             provider_identifier: this.testProviderIdentifier
                         });
