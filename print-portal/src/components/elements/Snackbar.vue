@@ -13,6 +13,7 @@ export default {
     methods: {
         close() {
             this.$store.commit('snackbar/close');
+            document.querySelector('h1,h2,h3')?.focus()
         }
     },
     mounted() {
