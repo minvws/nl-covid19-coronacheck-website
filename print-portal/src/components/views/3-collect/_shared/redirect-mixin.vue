@@ -3,6 +3,9 @@ import signedEventsInterface from '@/interfaces/signed-events'
 import { cmsDecode } from '@/tools/cms'
 import { handleRejection, getErrorCode } from '@/tools/error-handler';
 import { differenceInCalendarDays } from 'date-fns';
+import { ClientCode } from '@/data/constants/error-codes'
+import { StepTypes } from '@/types/step-types'
+import { ProviderTypes } from '@/types/provider-types'
 
 export default {
     name: 'redirect-mixin',
@@ -66,7 +69,11 @@ export default {
                         const callback = () => {
                             this.completeAuthentication();
                         }
-                        handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' }, callback)
+                        handleRejection(error, {
+                            flow: this.filter,
+                            step: StepTypes.ACCESS_TOKENS,
+                            provider_identifier: ProviderTypes.NON_PROVIDER
+                        }, callback)
                     }
                 }
             } catch (error) {
@@ -86,8 +93,8 @@ export default {
 
                 const errorCodeInformation = {
                     flow: this.filter,
-                    step: '10',
-                    provider_identifier: '000'
+                    step: StepTypes.TVS_DIGID,
+                    provider_identifier: ProviderTypes.NON_PROVIDER
                 }
 
                 if (isCanceled(error)) {
@@ -171,15 +178,28 @@ export default {
                         for (const eventProvider of results) {
                             let errorCode;
                             if (eventProvider.unomi.error) {
-                                errorCode = getErrorCode(eventProvider.unomi.error, { flow: this.filter, step: '40', provider_identifier: eventProvider.eventProvider });
+                                errorCode = getErrorCode(eventProvider.unomi.error, {
+                                    flow: this.filter,
+                                    step: StepTypes.UNOMI,
+                                    provider_identifier: eventProvider.eventProvider
+                                });
                                 errorCodes.push(errorCode);
                             }
                             if (eventProvider.events.error) {
-                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider });
+                                errorCode = getErrorCode(eventProvider.events.error, {
+                                    flow: this.filter,
+                                    step: StepTypes.EVENT,
+                                    provider_identifier: eventProvider.eventProvider
+                                });
                                 errorCodes.push(errorCode);
                             }
                             if (eventProvider.events.parsingError) {
-                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider, clientSideCode: '030' });
+                                errorCode = getErrorCode(eventProvider.events.error, {
+                                    flow: this.filter,
+                                    step: StepTypes.EVENT,
+                                    provider_identifier: eventProvider.eventProvider,
+                                    clientSideCode: ClientCode.JSON.DECODE_ERROR
+                                });
                                 errorCodes.push(errorCode);
                             }
                         }
