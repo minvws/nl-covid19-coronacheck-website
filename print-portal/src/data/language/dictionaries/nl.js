@@ -48,8 +48,8 @@ const nl = {
             'pageIntro': '<p>Ben je al gevaccineerd? Log in met DigiD. De gegevens van je vaccinatie worden dan automatisch opgehaald.</p>'
         },
         'vaccinationOverview': {
-            'pageHeader': 'Jouw opgehaalde vaccinaties',
-            'pageIntro': '<p>Met de gegevens die zijn opgehaald kun je een QR-code maken. Dat is jouw bewijs.</p>',
+            'pageHeader': 'Kloppen de gegevens?',
+            'pageIntro': '<p>Als de gegevens van je vaccinatie kloppen kun je een bewijs maken.</p>',
             'createTestProofButton': 'Maak bewijs'
         },
         'vaccinationsNone': {
