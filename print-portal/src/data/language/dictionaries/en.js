@@ -113,7 +113,7 @@ const en = {
         },
         'recoveryNone': {
             'pageHeader': 'No positive test result available',
-            'pageIntro': '<p>Were you just tested? It can take a few hours before your positive test result is available. Please try again later.</p><p>Find more information on the <a href="https://coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
+            'pageIntro': '<p>Have you just been tested? It may take a few hours before your result is available. Please try again later.</p><p>Were you tested longer ago? Please contact your test location to verify if your details were entered into the system correctly.</p>'
         },
         'recoveryInvalid': {
             'pageHeader': 'Positive test result is not suitable',
