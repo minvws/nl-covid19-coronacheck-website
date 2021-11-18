@@ -14,7 +14,7 @@ export default {
         return {
             isLoading: false,
             filter: [FilterTypes.POSITIVE_TEST, FilterTypes.RECOVERY].join(','),
-            eventProviders: ProviderTypes.GGD,
+            eventProviders: ProviderTypes.ANY_PROVIDER,
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectRecovery',
