@@ -133,6 +133,8 @@ const en = {
                     '<p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.</p>',
                 'both': '<p>You have a Dutch and an international %{type} certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.</p>' +
                     '<p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
+                'bothVaccinationRecovery': '<p>You have a Dutch and an international certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.</p>' +
+                    '<p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
             },
             'proofType': {
                 'vaccination': 'vaccination',
