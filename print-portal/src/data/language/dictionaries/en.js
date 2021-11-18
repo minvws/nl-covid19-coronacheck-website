@@ -103,8 +103,8 @@ const en = {
             'pageIntro': 'There is no negative test result available.'
         },
         'recoveryOverview': {
-            'pageHeader': 'Your retrieved positive test result',
-            'pageIntro': '<p>Are your details correct? Then you can turn your positive test result into a QR code. This is your certificate.</p>',
+            'pageHeader': 'Are the details correct?',
+            'pageIntro': '<p>If the details about your test are correct, you can make a certificate.</p>',
             'createTestProofButton': 'Make certificate'
         },
         'recoveryExpired': {
