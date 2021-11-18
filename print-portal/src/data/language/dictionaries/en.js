@@ -117,7 +117,7 @@ const en = {
         },
         'recoveryInvalid': {
             'pageHeader': 'Positive test result is not suitable',
-            'pageIntro': '<p>You were tested positive after your first vaccination. Your test result is therefore not suitable for creating a Dutch certificate.</p><p>Check the <a href="https://coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">frequently asked questions</a> for more information.</p>'
+            'pageIntro': '<p>You were tested positive after your first vaccination. Your test result is therefore not suitable for creating a Dutch certificate.</p><p>Check the <a href="https://coronacheck.nl/en/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">frequently asked questions</a> for more information.</p>'
         },
         'print': {
             'pageTitle': 'Your certificate',
