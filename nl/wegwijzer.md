@@ -25,6 +25,15 @@ Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Je be
 {% endcapture %}
 
 
+{% capture copy_geen_derde_prik %}
+<div markdown="1">
+
+Je moet zelf je vaccinatiegegevens van je derde prik ophalen door opnieuw in te loggen met DigiD. Staat je derde prik er niet bij? Neem dan contact op met de zorgverlener die je heeft gevaccineerd. Ben je bij de GGD gevaccineerd dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten controleren. Ben je gevaccineerd door je huisarts, ziekenhuis of zorginstelling? Neem dan contact met hen op.
+
+</div>
+{% endcapture %}
+
+
 {% capture copy_geen_vaccinatiegegevens %}
 <div markdown="1">
 Het kan tot 72 uur duren voor de vaccinatiegegevens beschikbaar zijn. Worden er daarna nog steeds geen gegevens gevonden? Dan kan het zijn dat de vaccinatiegegevens niet goed zijn geregistreerd. 
@@ -249,6 +258,11 @@ Voor overige vragen kun je terecht bij <a href="https://www.nederlandwereldwijd.
 
 <h3>Algemeen over vaccinatiebewijs</h3>
 {{ copy_vaccinatiebewijs }}
+
+<details class="details" id="vacc_nothirdjab">
+<summary><h3>Mijn 3e prik wordt niet gevonden</h3></summary>
+{{ copy_geen_derde_prik }}
+</details>
 
 <details class="details" id="vacc_nodata">
 <summary><h3>Geen vaccinatiegegevens gevonden</h3></summary>

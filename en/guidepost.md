@@ -26,6 +26,14 @@ You must be fully vaccinated to make a Dutch QR code. You are fully vaccinated f
 </div>
 {% endcapture %}
 
+{% capture copy_geen_derde_prik %}
+<div markdown="1">
+
+You have to retrieve your vaccination details for your third vaccination yourself by logging in again with DigiD. Is your third vaccination not listed? Then please contact the healthcare provider who vaccinated you. If you were vaccinated at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have your details checked. Were you vaccinated by your general practitioner, hospital or healthcare institution? Then please contact them.
+
+</div>
+{% endcapture %}
+
 
 {% capture copy_geen_vaccinatiegegevens %}
 <div markdown="1">
@@ -259,6 +267,11 @@ For other questions, you can <a href="https://www.netherlandsworldwide.nl/contac
 
 <h3>In general regarding vaccination certificate</h3>
 {{ copy_vaccinatiebewijs }}
+
+<details class="details" id="vacc_nothirdjab">
+<summary><h3>My third vaccination cannot be found</h3></summary>
+{{ copy_geen_derde_prik }}
+</details>
 
 <details class="details" id="vacc_nodata">
 <summary><h3>No vaccination details found</h3></summary>
