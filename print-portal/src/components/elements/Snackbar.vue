@@ -36,7 +36,7 @@ export default {
             :aria-label="$t('close')"
             @click="close"
             class="snackbar__close">
-            <img src="assets/img/icons/snackbar-close.svg" :alt="`${$t('close')}`"/>
+            <img class="close" src="assets/img/icons/snackbar-close.svg" :alt="`${$t('close')}`"/>
         </button>
     </div>
 </template>
@@ -79,6 +79,10 @@ export default {
         transform: none;
         left: 20px;
         right: 20px;
+    }
+
+    .close {
+        height: 1.125rem;
     }
 }
 </style>
