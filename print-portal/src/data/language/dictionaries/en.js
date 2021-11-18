@@ -371,6 +371,7 @@ const en = {
         'domestic': 'Dutch',
         'european': 'International'
     },
+    'ok': 'OK',
     'and': 'And',
     'back': 'Back',
     'close': 'Close',

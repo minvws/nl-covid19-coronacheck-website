@@ -28,15 +28,22 @@ export default {
 <template>
     <div
         class="snackbar"
-        role="status">
-        <div class="snackbar__message">
+        role="dialog"
+        aria-modal="false"
+        aria-labelledby="message">
+        <div
+            id="message"
+            class="snackbar__message">
             {{message}}
         </div>
         <button
-            :aria-label="$t('close')"
+            :aria-label="$t('ok')"
             @click="close"
             class="snackbar__close">
-            <img class="close" src="assets/img/icons/snackbar-close.svg" :alt="`${$t('close')}`"/>
+            <img
+                class="close"
+                src="assets/img/icons/snackbar-close.svg"
+                :alt="`${$t('ok')}`"/>
         </button>
     </div>
 </template>
