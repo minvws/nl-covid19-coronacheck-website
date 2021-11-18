@@ -103,8 +103,8 @@ const nl = {
             'pageIntro': '<p>Er zijn geen gegevens over je testuitslag beschikbaar. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/wegwijzer.html" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p><p>Heb je al een testuitslag van de GGD gekregen? Dan kan het nog een paar uur duren voordat je de uitslag hier kunt ophalen. Probeer het later opnieuw.</p>'
         },
         'recoveryOverview': {
-            'pageHeader': 'Jouw opgehaalde positieve testuitslag',
-            'pageIntro': '<p>Kloppen je gegevens? Dan kun je van je positieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
+            'pageHeader': 'Kloppen de gegevens?',
+            'pageIntro': '<p>Als de gegevens van je test kloppen kun je een bewijs maken.</p>',
             'createTestProofButton': 'Maak bewijs'
         },
         'recoveryExpired': {
