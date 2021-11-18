@@ -133,6 +133,8 @@ const nl = {
                     '<p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.</p>',
                 'both': '<p>Je hebt een Nederlands en een internationaal %{type}bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.</p>' +
                     '<p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+                'bothVaccinationRecovery': '<p>Je hebt een Nederlands en een internationaal bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.</p>' +
+                    '<p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
             },
             'proofType': {
                 'vaccination': 'vaccinatie',
