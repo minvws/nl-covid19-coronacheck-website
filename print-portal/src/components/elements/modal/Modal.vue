@@ -191,7 +191,7 @@ export default {
         padding: $length-l $length-l 0 $length-l;
         margin-bottom: $grid-x2;
         font-weight: 700;
-        font-size: 1.125em;
+        font-size: 1.125rem;
         font-family: inherit;
         outline: none;
     }
