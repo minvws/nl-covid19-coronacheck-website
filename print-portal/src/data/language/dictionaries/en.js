@@ -48,8 +48,8 @@ const en = {
             'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p>'
         },
         'vaccinationOverview': {
-            'pageHeader': 'Your retrieved vaccinations',
-            'pageIntro': '<p>You can make a QR code of your vaccination. This will be your certificate.</p>',
+            'pageHeader': 'Are the details correct?',
+            'pageIntro': '<p>If the details about your vaccination are correct, you can make a certificate.</p>',
             'createTestProofButton': 'Make certificate'
         },
         'vaccinationsNone': {
