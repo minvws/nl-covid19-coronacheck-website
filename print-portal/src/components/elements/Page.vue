@@ -1,10 +1,11 @@
 <script>
 import Footer from './Footer';
 import Navigation from './Navigation';
+import Snackbar from '@/components/elements/Snackbar';
 
 export default {
     name: 'Page',
-    components: { Navigation, Footer },
+    components: { Snackbar, Navigation, Footer },
     props: {
         displayBackButton: {
             type: Boolean,
@@ -12,7 +13,14 @@ export default {
             default: true
         }
     },
-    computed: {},
+    computed: {
+        isSnackbarVisible() {
+            return this.$store.state.snackbar.visible
+        },
+        hasSnackbarMessage() {
+            return this.$store.state.snackbar.message
+        }
+    },
     methods: {
         back() {
             this.$emit('back');
@@ -31,6 +39,7 @@ export default {
                 <slot/>
             </div>
         </main>
+        <Snackbar v-if="hasSnackbarMessage" :class="{ 'screen-reader-text': !isSnackbarVisible }"/>
         <Footer/>
     </div>
 </template>
