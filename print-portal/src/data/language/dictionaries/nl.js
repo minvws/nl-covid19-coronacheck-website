@@ -113,7 +113,7 @@ const nl = {
         },
         'recoveryNone': {
             'pageHeader': 'Geen positieve testuitslag beschikbaar',
-            'pageIntro': '<p>Ben je net getest? Het kan een paar uur  duren voordat jouw positieve testuitslag beschikbaar is. Probeer het later nog eens.</p><p>Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
+            'pageIntro': '<p>Ben je net getest? Het kan een paar uur  duren voordat jouw positieve testuitslag beschikbaar is. Probeer het later nog eens.</p><p>Al even geleden getest? Neem dan contact op met je testlocatie om te controleren of je gegevens goed in het systeem staan.</p>'
         },
         'recoveryInvalid': {
             'pageHeader': 'Jou positieve testuitslag is niet geschikt',
