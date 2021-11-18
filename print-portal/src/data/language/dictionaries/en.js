@@ -127,14 +127,10 @@ const en = {
                 'both': 'Success! Your certificates are ready below'
             },
             'pageIntro': {
-                'domestic': '<p>You only have a %{type} certificate for use in the Netherlands. You can use it to access places or activities within the Netherlands, but not when you’re travelling abroad or crossing the border.</p>' +
-                    '<p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.</p>',
-                'european': '<p>You only have an international %{type} certificate. You can use this if you are abroad or crossing the border, but not within the Netherlands.</p>' +
-                    '<p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.</p>',
-                'both': '<p>You have a Dutch and an international %{type} certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.</p>' +
-                    '<p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
-                'bothVaccinationRecovery': '<p>You have a Dutch and an international certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.</p>' +
-                    '<p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
+                'domestic': '<p>You only have a %{type} certificate for use in the Netherlands. You can use it to access places or activities within the Netherlands, but not when you’re travelling abroad or crossing the border.</p><p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.</p>',
+                'european': '<p>You only have an international %{type} certificate. You can use this if you are abroad or crossing the border, but not within the Netherlands.</p><p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.</p>',
+                'both': '<p>You have a Dutch and an international %{type} certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.</p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.</p>',
+                'bothVaccinationRecovery': '<p>You have a Dutch and an international certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.</p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
             },
             'proofType': {
                 'vaccination': 'vaccination',
