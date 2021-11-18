@@ -117,7 +117,7 @@ const nl = {
         },
         'recoveryInvalid': {
             'pageHeader': 'Jou positieve testuitslag is niet geschikt',
-            'pageIntro': '<p>Je bent positief getest ná je eerste vaccinatie. Daardoor is je testuitslag niet geschikt om een Nederlands bewijs van te maken</p><p>Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
+            'pageIntro': '<p>Je bent positief getest ná je eerste vaccinatie. Daardoor is je testuitslag niet geschikt om een Nederlands bewijs van te maken</p><p>Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">meestgestelde vragen</a>.</p>'
         },
         'print': {
             'pageTitle': 'Jouw bewijs',
