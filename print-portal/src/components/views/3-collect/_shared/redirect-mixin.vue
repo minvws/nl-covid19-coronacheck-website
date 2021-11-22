@@ -14,6 +14,9 @@ export default {
             return this.filter.split(',')[0];
         }
     },
+    created () {
+        this.setSnackbarContent();
+    },
     methods: {
         back() {
             const callback = () => {
@@ -120,6 +123,10 @@ export default {
             }
         },
         notifyDigidFinished() {
+            this.setSnackbarContent()
+            this.$store.commit('snackbar/show')
+        },
+        setSnackbarContent() {
             const proofType = this.$t('components.digid.proofType.' + this.type)
             this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: proofType }))
         },

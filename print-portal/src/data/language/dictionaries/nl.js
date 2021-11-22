@@ -374,6 +374,7 @@ const nl = {
         'domestic': 'Nederland',
         'european': 'Internationaal'
     },
+    'ok': 'OK',
     'and': 'En',
     'back': 'Terug',
     'close': 'Sluiten',
