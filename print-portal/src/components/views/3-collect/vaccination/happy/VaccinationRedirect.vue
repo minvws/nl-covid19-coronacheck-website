@@ -4,6 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
 import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
 import { FilterTypes } from '@/types/filter-types'
+import { ProviderTypes } from '@/types/provider-types'
 
 export default {
     name: 'VaccinationRedirect',
@@ -13,7 +14,7 @@ export default {
         return {
             isLoading: false,
             filter: FilterTypes.VACCINATION,
-            eventProviders: '*',
+            eventProviders: ProviderTypes.ANY_PROVIDER,
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectVaccination',
