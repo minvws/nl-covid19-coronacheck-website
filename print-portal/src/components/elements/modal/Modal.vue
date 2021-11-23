@@ -163,10 +163,10 @@ export default {
     @include mobile() {
         width: 100%;
         height: 100%;
-        transform:none;
-        left:0;
-        top:0;
-        max-height:100%;
+        transform: none;
+        left: 0;
+        top: 0;
+        max-height: 100%;
     }
 }
 
