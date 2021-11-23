@@ -3,11 +3,14 @@ import Identity from '@/components/elements/Identity';
 import languages from '@/data/languages';
 import Modal from '@/components/elements/modal/Modal';
 import { cmsDecode } from '@/tools/cms'
-import Snackbar from '@/components/elements/Snackbar';
+
 import { handleRejection } from '@/tools/error-handler';
+import { StepTypes } from '@/types/step-types'
+import { FlowTypes } from '@/types/flow-types'
+import { ProviderTypes } from '@/types/provider-types'
 
 export default {
-    components: { Snackbar, Modal, Identity },
+    components: { Modal, Identity },
     data() {
         return {
             initPhaseHasErrored: false,
@@ -17,9 +20,6 @@ export default {
     computed: {
         dataReady() {
             return this.currentLanguage && this.$store.state.holderConfig && this.$store.state.testProviders.all.length > 0;
-        },
-        displaySnackbar() {
-            return this.$store.state.snackbar.visible
         },
         displayModal() {
             return this.$store.state.modal.visible;
@@ -53,7 +53,12 @@ export default {
                 const callback = () => {
                     this.getHolderConfig();
                 }
-                handleRejection(error, { flow: 'startup', step: '10', provider_identifier: '000' }, callback);
+                handleRejection(error, {
+                    flow: FlowTypes.STARTUP,
+                    step: StepTypes.TVS_DIGID,
+                    provider_identifier: ProviderTypes.NON_PROVIDER
+                },
+                callback);
             })
         },
         async getTestProviders() {
@@ -77,7 +82,12 @@ export default {
                 const callback = () => {
                     this.getTestProviders();
                 }
-                handleRejection(error, { flow: 'startup', step: '20', provider_identifier: '000' }, callback);
+                handleRejection(error, {
+                    flow: FlowTypes.STARTUP,
+                    step: StepTypes.EVENT_PROVIDERS,
+                    provider_identifier: ProviderTypes.NON_PROVIDER
+                },
+                callback);
             })
         },
         addLanguages() {
@@ -139,7 +149,6 @@ export default {
             class="content">
             <Identity/>
             <router-view/>
-            <Snackbar v-if="displaySnackbar"/>
         </div>
 
         <Modal v-if="displayModal"/>

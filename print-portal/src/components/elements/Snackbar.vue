@@ -13,6 +13,7 @@ export default {
     methods: {
         close() {
             this.$store.commit('snackbar/close');
+            document.querySelector('h1,h2,h3')?.focus()
         }
     },
     mounted() {
@@ -28,17 +29,25 @@ export default {
 <template>
     <div
         class="snackbar"
-        role="status">
-        <div class="snackbar__message">
+        role="dialog"
+        aria-modal="false"
+        aria-labelledby="message">
+        <div
+            id="message"
+            class="snackbar__message">
             {{message}}
         </div>
         <button
-            :aria-label="$t('close')"
+            :aria-label="$t('ok')"
             @click="close"
-            class="snackbar__close"></button>
+            class="snackbar__close">
+            <img
+                class="close"
+                src="assets/img/icons/snackbar-close.svg"
+                :alt="`${$t('ok')}`"/>
+        </button>
     </div>
 </template>
-
 <style lang="scss" scoped>
 @import "@/styles/variables/index";
 
@@ -53,17 +62,13 @@ export default {
     transform: translateX(-50%);
     bottom: $grid-x6;
     z-index: 2;
-    background: #3C4E6A;
-    color: #fff;
+    color: $color-snackbar-text;
+    background: $color-snackbar-background;
     padding: 12px 48px 12px 12px;
     display: flex;
     border-radius: 4px;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
     max-width: calc(100% - 20px);
-
-    &__message {
-
-    }
 
     &__close {
         position: absolute;
@@ -76,28 +81,16 @@ export default {
         border-radius: 3px;
         margin-left: $length-s;
         flex: 0;
-
-        &:before, &:after {
-            position: absolute;
-            left: 11px;
-            top: 2px;
-            content: ' ';
-            height: 18px;
-            width: 2px;
-            background-color: #fff;
-        }
-
-        &:before {
-            transform: rotate(45deg);
-        }
-        &:after {
-            transform: rotate(-45deg);
-        }
     }
+
     @include mobile() {
-        transform:none;
-        left:20px;
-        right:20px;
+        transform: none;
+        left: 20px;
+        right: 20px;
+    }
+
+    .close {
+        height: 1.125rem;
     }
 }
 </style>

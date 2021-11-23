@@ -1,4 +1,7 @@
 <script>
+import { FilterTypes } from '@/types/filter-types'
+import { RegionTypes } from '@/types/region-types'
+
 export default {
     name: 'PrintFaq',
     props: {
@@ -17,22 +20,22 @@ export default {
         },
         details() {
             const details = [];
-            if (this.type === 'vaccination' && this.regionType === 'european') {
+            if (this.type === FilterTypes.VACCINATION && this.regionType === RegionTypes.EUROPEAN) {
                 details.push('whyNoDomesticVaccination');
             }
-            if (this.type === 'recovery' && this.regionType === 'domestic') {
+            if (this.type === FilterTypes.RECOVERY && this.regionType === RegionTypes.DOMESTIC) {
                 details.push('whyNoEuropeanRecovery');
             }
-            if (this.type === 'negativetest' && this.regionType === 'european') {
+            if (this.type === FilterTypes.NEGATIVE_TEST && this.regionType === RegionTypes.EUROPEAN) {
                 details.push('whyNoDomesticTest');
             }
-            if (this.type === 'negativetest' && this.regionType === 'domestic') {
+            if (this.type === FilterTypes.NEGATIVE_TEST && this.regionType === RegionTypes.DOMESTIC) {
                 details.push('whyNoEuropeanTest');
             }
-            if (this.regionType === 'european' || this.regionType === 'both') {
+            if (this.regionType === RegionTypes.EUROPEAN || this.regionType === RegionTypes.BOTH) {
                 details.push('validLocation');
             }
-            if (this.type === 'vaccination') {
+            if (this.type === FilterTypes.VACCINATION) {
                 details.push('validPeriod');
             }
             return details;
@@ -44,7 +47,9 @@ export default {
 
 <template>
     <div class="PrintFaq">
-        <h2 v-if="title">
+         <h2
+            v-if="title"
+            class="screen-reader-text">
             {{ title }}
         </h2>
         <div class="content-block">
@@ -71,5 +76,6 @@ export default {
             font-size: 18px;
             text-align: center;
         }
+
 }
 </style>

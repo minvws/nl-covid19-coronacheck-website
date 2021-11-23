@@ -230,7 +230,7 @@ Alle informatie over het krijgen van een vaccinatiebewijs wanneer je geen BSN-nu
 <div markdown="1">
 Ga je binnenkort op reis? Check voor vertrek altijd de geldende inreisregels van je bestemming op {{ site.data.links.wijsopreis[page.lang] }}. Lees meer over het maken van een testafspraak op {{ site.data.links.testenvoorjereis[page.lang] }}. 
 
-Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ).  <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">Neem contact op met het contactcenter van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
+Voor overige vragen kun je terecht bij <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-nederland-wereldwijd" rel="noopener noreferrer" target="_blank">het contactcenter van Nederland Wereldwijd</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
 </div>
 {% endcapture %}
 

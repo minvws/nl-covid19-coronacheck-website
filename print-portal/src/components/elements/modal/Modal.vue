@@ -202,9 +202,9 @@ export default {
         padding: 30px $length-l 10px $length-l;
         margin-bottom: $grid-x2;
         font-weight: 700;
-        outline: none;
-        font-size: inherit;
+        font-size: 1.125rem;
         font-family: inherit;
+        outline: none;
     }
 
     #modal__body {

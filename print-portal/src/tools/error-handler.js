@@ -2,6 +2,7 @@ import store from '@/store';
 import router from '@/router';
 import i18n from '@/i18n'
 import { cmsDecode } from './cms';
+import { getClientSideErrorCode, errorCodeTransformer, isDigiDFlowAndStepError } from '@/data/constants/error-codes';
 
 export const hasInternetConnection = () => {
     return window.navigator.onLine;
@@ -25,14 +26,14 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
         return;
     }
     if (error.code === 'ECONNABORTED') {
-        errorCodeInformation.clientSideCode = '001';
+        errorCodeInformation.clientSideCode = getClientSideErrorCode(error.code)
         router.push({ name: 'ErrorTimeout', query: { error: getErrorCode(error, errorCodeInformation) } });
         return;
     }
     if (error && error.response && error.response.status && error.response.status === 429) {
         router.push({ name: 'ServerBusy', query: { error: getErrorCode(error, errorCodeInformation) } });
     } else {
-        if (isDigiDFlowAndStep(errorCodeInformation)) {
+        if (isDigiDFlowAndStepError(errorCodeInformation)) {
             router.push({ name: 'ErrorDigiD', query: { error: getErrorCode(error, errorCodeInformation) } });
         } else {
             router.push({ name: 'ErrorGeneral', query: { errors: getErrorCode(error, errorCodeInformation) } });
@@ -42,7 +43,6 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
 
 export const getErrorCode = (error, errorCodeInformation) => {
     let errorCode, errorBody;
-    const flow = getFlowCode(errorCodeInformation.flow);
     if (errorCodeInformation.clientSideCode) {
         errorCode = errorCodeInformation.clientSideCode;
     } else {
@@ -70,35 +70,24 @@ export const getErrorCode = (error, errorCodeInformation) => {
             errorBody = '';
         }
     }
-    // W stands for web (as i stands for iOS and A stands for Android
-    return 'W ' +
-        flow + errorCodeInformation.step + ' ' +
-        errorCodeInformation.provider_identifier + ' ' +
-        errorCode + ' ' +
-        errorBody;
-}
 
-const isDigiDFlowAndStep = (errorCodeInformation) => {
-    const flowCode = getFlowCode(errorCodeInformation.flow);
-    return errorCodeInformation.step === '10' && (flowCode === '2' || flowCode === '3' || flowCode === '4');
-}
-
-const getFlowCode = (flow) => {
-    switch (flow) {
-    case 'onboarding':
-    case 'startup':
-        return '0';
-    case 'commercial_test':
-        return '1';
-    case 'vaccination':
-        return '2';
-    case 'positivetest,recovery':
-    case 'positivetest':
-    case 'recovery':
-        return '3'
-    case 'negativetest':
-        return '4'
-    default:
-        return '-1'
+    // client side error
+    if (error?.isAxiosError) {
+        if (!errorCode) errorCode = getClientSideErrorCode(error?.code ?? error?.message)
+        if (!errorBody) errorBody = error?.message ?? ''
     }
+
+    const {
+        provider_identifier: provider,
+        flow,
+        step
+    } = errorCodeInformation
+
+    return errorCodeTransformer({
+        flow,
+        step,
+        provider,
+        errorCode,
+        errorBody
+    })
 }

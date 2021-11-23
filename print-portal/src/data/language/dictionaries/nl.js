@@ -134,7 +134,7 @@ const nl = {
             },
             'validInFuture': '<p>Let op: jouw herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>',
             'details': {
-                'header': 'Veelgestelde vragen',
+                'header': 'Meer informatie over jouw bewijs',
                 'set': {
                     'validPeriod': {
                         'summary': 'Hoe lang is mijn papieren bewijs geldig?',
@@ -374,6 +374,7 @@ const nl = {
         'domestic': 'Nederland',
         'european': 'Internationaal'
     },
+    'ok': 'OK',
     'and': 'En',
     'back': 'Terug',
     'close': 'Sluiten',

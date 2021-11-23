@@ -240,7 +240,7 @@ All information about getting a vaccination certificate if you do not have a BSN
 <div markdown="1">
 Are you going on a trip soon? Before departure, always check the applicable entry rules for your destination at {{ site.data.links.wijsopreis[page.lang] }}. Read more about a coronatest for travellers here: {{ site.data.links.testenvoorjereis[page.lang] }}.
 
-For other questions, you can contact the Ministry of Foreign Affairs (BZ). <a href="https://www.netherlandsworldwide.nl/contact/contacting-the-24-7-bz-contact-centre" rel="noopener noreferrer" target="_blank">Contact the BZ contact center</a> - available 24 hours a day, 7 days a week.
+For other questions, you can <a href="https://www.netherlandsworldwide.nl/contact/contacting-the-24-7-bz-contact-centre" rel="noopener noreferrer" target="_blank">contact Netherlands Worldwide</a> - available 24 hours a day, 7 days a week.
 </div>
 {% endcapture %}
 

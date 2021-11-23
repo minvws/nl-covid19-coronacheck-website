@@ -3,6 +3,9 @@ import signedEventsInterface from '@/interfaces/signed-events'
 import { cmsDecode } from '@/tools/cms'
 import { handleRejection, getErrorCode } from '@/tools/error-handler';
 import { differenceInCalendarDays } from 'date-fns';
+import { ClientCode } from '@/data/constants/error-codes'
+import { StepTypes } from '@/types/step-types'
+import { ProviderTypes } from '@/types/provider-types'
 
 export default {
     name: 'redirect-mixin',
@@ -10,6 +13,9 @@ export default {
         type() {
             return this.filter.split(',')[0];
         }
+    },
+    created () {
+        this.setSnackbarContent();
     },
     methods: {
         back() {
@@ -35,29 +41,27 @@ export default {
             this.$store.commit('snackbar/close');
             this.$router.push({ name: this.pages.previous });
         },
-        completeAuthentication() {
+        async completeAuthentication() {
             this.isLoading = true;
 
-            this.authVaccinations.completeAuthentication().then((user) => {
-                signedEventsInterface.getTokens(user.id_token).then(response => {
+            try {
+                const user = await this.authVaccinations.completeAuthentication()
+                try {
+                    const response = await signedEventsInterface.getTokens(user.id_token)
                     this.notifyDigidFinished();
                     this.collectEvents(response.data.tokens);
-                }).catch((error) => {
+                } catch (error) {
                     const detailedCodeNoBSN = 99782;
                     const detailedCodeSessionExpired = 99708;
 
                     const hasErrorCode = (error, errorCode) => {
-                        if (error.response && error.response.data) {
-                            const cmsDecoded = cmsDecode(error.response.data.payload);
-                            if (cmsDecoded.code) {
-                                return cmsDecoded.code === errorCode;
-                            } else {
-                                return false;
-                            }
+                        const payload = error?.response?.data?.payload
+                        if (payload) {
+                            const cmsDecoded = cmsDecode(payload);
+                            return cmsDecoded?.code === errorCode;
                         }
-
-                        return error && error.response && error.response.data && error.response.data &&
-                            error.response.data.code && error.response.data.code === errorCode;
+                        const code = error?.response?.data?.code
+                        return code === errorCode;
                     }
 
                     if (hasErrorCode(error, detailedCodeNoBSN)) {
@@ -68,28 +72,32 @@ export default {
                         const callback = () => {
                             this.completeAuthentication();
                         }
-                        handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' }, callback)
+                        handleRejection(error, {
+                            flow: this.filter,
+                            step: StepTypes.ACCESS_TOKENS,
+                            provider_identifier: ProviderTypes.NON_PROVIDER
+                        }, callback)
                     }
-                });
-            }).catch((error) => {
+                }
+            } catch (error) {
                 // note: this is a custom error of the frontend library
                 // the digid backend also provides a error_desc
                 // but oidc-client removes this info from the custom error it returns
                 // as well as the error.response.status
 
                 const isCanceled = (error) => {
-                    return error && error.message && error.message === 'saml_authn_failed';
+                    return error?.message === 'saml_authn_failed';
                 }
 
                 const tooBusy = (error) => {
                     // the response login_required is a hack to communicate too busy mode
-                    return error && error.error && error.error === 'login_required';
+                    return error?.error === 'login_required';
                 }
 
                 const errorCodeInformation = {
                     flow: this.filter,
-                    step: '10',
-                    provider_identifier: '000'
+                    step: StepTypes.TVS_DIGID,
+                    provider_identifier: ProviderTypes.NON_PROVIDER
                 }
 
                 if (isCanceled(error)) {
@@ -104,7 +112,7 @@ export default {
                     const errorCode = getErrorCode(error, errorCodeInformation);
                     this.$router.push({ name: 'ServerBusy', query: { error: errorCode } });
                 } else {
-                    if (error && error.message) {
+                    if (error?.message) {
                         errorCodeInformation.errorBody = error.message;
                     }
                     const callback = () => {
@@ -112,9 +120,13 @@ export default {
                     }
                     handleRejection(error, errorCodeInformation, callback);
                 }
-            });
+            }
         },
         notifyDigidFinished() {
+            this.setSnackbarContent()
+            this.$store.commit('snackbar/show')
+        },
+        setSnackbarContent() {
             const proofType = this.$t('components.digid.proofType.' + this.type)
             this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: proofType }))
         },
@@ -173,15 +185,28 @@ export default {
                         for (const eventProvider of results) {
                             let errorCode;
                             if (eventProvider.unomi.error) {
-                                errorCode = getErrorCode(eventProvider.unomi.error, { flow: this.filter, step: '40', provider_identifier: eventProvider.eventProvider });
+                                errorCode = getErrorCode(eventProvider.unomi.error, {
+                                    flow: this.filter,
+                                    step: StepTypes.UNOMI,
+                                    provider_identifier: eventProvider.eventProvider
+                                });
                                 errorCodes.push(errorCode);
                             }
                             if (eventProvider.events.error) {
-                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider });
+                                errorCode = getErrorCode(eventProvider.events.error, {
+                                    flow: this.filter,
+                                    step: StepTypes.EVENT,
+                                    provider_identifier: eventProvider.eventProvider
+                                });
                                 errorCodes.push(errorCode);
                             }
                             if (eventProvider.events.parsingError) {
-                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider, clientSideCode: '030' });
+                                errorCode = getErrorCode(eventProvider.events.error, {
+                                    flow: this.filter,
+                                    step: StepTypes.EVENT,
+                                    provider_identifier: eventProvider.eventProvider,
+                                    clientSideCode: ClientCode.JSON.DECODE_ERROR
+                                });
                                 errorCodes.push(errorCode);
                             }
                         }
