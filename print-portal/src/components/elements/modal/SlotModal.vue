@@ -6,20 +6,22 @@ export default {
     name: 'SlotModal',
     components: { CcModestButton },
     mixins: [modalMixin],
+    data () {
+        return {
+            isSticky: false
+        }
+    },
     methods: {
+        mounted () {
+            this.handleScroll()
+        },
         close() {
             this.$emit('close');
             this.elementThatHadFocusBeforeModal.focus();
         },
         handleScroll() {
-            const header = document.querySelector('.sticky-header');
-            const dialog = document.querySelector('.modal__content');
-            var scrollPosition = dialog.scrollTop
-            if (scrollPosition > 1) {
-                header.classList.add('is-sticky');
-            } else if (scrollPosition < 1) {
-                header.classList.remove('is-sticky');
-            }
+            const scrollPosition = this.$refs.modal?.scrollTop || 0
+            this.isSticky = scrollPosition > 1
         }
     }
 }
@@ -40,7 +42,8 @@ export default {
                 aria-labelledby="modal__head"
                 aria-describedby="modal__body">
                     <div
-                        class="sticky-header">
+                        class="sticky-header"
+                        :class="{'is-sticky': isSticky }">
                         <h1
                             ref="focusStart"
                             tabindex="-1"
@@ -55,6 +58,7 @@ export default {
                     </div>
                 <div
                     class="modal__content"
+                    ref="modal"
                     @scroll="handleScroll">
                     <div id="modal__body"
                         class="sticky">
