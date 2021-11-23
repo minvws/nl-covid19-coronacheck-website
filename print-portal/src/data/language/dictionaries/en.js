@@ -1,7 +1,7 @@
 import footer from '../templates/en/footer';
-import nl from './en.json'
+import json from './en.json'
 
 export default {
-    ...nl,
+    ...json,
     'template': { footer }
 }
