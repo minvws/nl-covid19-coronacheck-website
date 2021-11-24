@@ -91,6 +91,12 @@ jobs:
       - name: Copy auth2 redirect script
         run: cp -R auth2.php public/app/auth2.php
 
+      - name: Install jsonlint
+        run: sudo apt-get install --yes jsonlint
+
+      - name: Lint json files
+        run: find . -size +2c \( -name *.json -o -name *.json.v* \) | xargs jsonlint-php
+
       - name: Create tar
         run: tar -czf ct_website_${{ env.RELEASE_VERSION }}.tar.gz ./public
 
