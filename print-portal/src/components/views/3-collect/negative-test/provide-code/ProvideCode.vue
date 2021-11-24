@@ -128,7 +128,8 @@ export default {
         },
         addNegativeTest(signedEvent) {
             this.testCodeStatus.error = '';
-            this.$store.commit('signedEvents/createAll', [signedEvent]);
+            // @TODO: add or replace events?
+            this.$store.dispatch('signedEvents/createAll', { events: [signedEvent], filter: this.filter });
             this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0' } });
         },
         async getSignedResult(options) {

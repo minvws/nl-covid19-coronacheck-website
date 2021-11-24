@@ -60,7 +60,7 @@ export default {
         gotoPrint() {
             if (this.$store.state.qrs.proof === null) {
                 this.proofSubmitted = true;
-                signer.sign(this.$store.state.signedEvents.all).then(response => {
+                signer.sign(this.$store.getters['signedEvents/all']).then(response => {
                     this.proofSubmitted = false;
                     if (response.data) {
                         if (response.data.domestic || (response.data.european && response.data.european.length > 0)) {
