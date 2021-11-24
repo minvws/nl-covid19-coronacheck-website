@@ -27,10 +27,10 @@ export default {
             return this.$store.state.qrs.proof;
         },
         hasDomestic() {
-            return this.proof.domestic;
+            return this.proof?.domestic;
         },
         hasEuropean() {
-            return this.proof.european && this.proof.european.length > 0;
+            return this.proof?.european && this.proof.european.length > 0;
         },
         pageType() {
             if (this.hasDomestic && this.hasEuropean) {

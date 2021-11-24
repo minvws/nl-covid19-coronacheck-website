@@ -6,6 +6,7 @@ import { differenceInCalendarDays } from 'date-fns';
 import { ClientCode } from '@/data/constants/error-codes'
 import { StepTypes } from '@/types/step-types'
 import { ProviderTypes } from '@/types/provider-types'
+import { events as AuthEvent } from '@/store/modules/auth'
 
 export default {
     name: 'redirect-mixin',
@@ -24,7 +25,7 @@ export default {
                     // todo cancel all processes
                 }
                 this.$store.commit('clearAll')
-                this.$store.commit('signedEvents/clear')
+                this.$store.dispatch('signedEvents/clear', { filter: this.filter })
                 this.$router.push({ name: this.pages.cancel });
             }
             this.$store.commit('modal/set', {
@@ -41,11 +42,19 @@ export default {
             this.$store.commit('snackbar/close');
             this.$router.push({ name: this.pages.previous });
         },
+        async getOrFetchUser () {
+            // if no user is fetched yet, fetch user
+            let user = this.$store.getters[AuthEvent.USER]
+            if (user) return user
+            user = await this.authVaccinations.completeAuthentication()
+            this.$store.dispatch(AuthEvent.USER, user)
+            return user
+        },
         async completeAuthentication() {
             this.isLoading = true;
 
             try {
-                const user = await this.authVaccinations.completeAuthentication()
+                const user = await this.getOrFetchUser()
                 try {
                     const response = await signedEventsInterface.getTokens(user.id_token)
                     this.notifyDigidFinished();
@@ -131,7 +140,7 @@ export default {
             this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: proofType }))
         },
         collectEvents(tokenSets) {
-            this.$store.commit('signedEvents/clear');
+            this.$store.dispatch('signedEvents/clear', { filter: this.filter });
             this.isLoading = true;
             signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders).then(results => {
                 this.isLoading = false;
@@ -261,8 +270,8 @@ export default {
         //     }
         //     return '';
         // },
-        createEvents(signedEvents) {
-            this.$store.commit('signedEvents/createAll', signedEvents);
+        createEvents(events) {
+            this.$store.dispatch('signedEvents/createAll', { events, filter: this.filter });
         },
         areAllRecoveriesExpired(proofEvents) {
             const expirationDays = this.$store.getters.getRecoveryEventValidityDays()

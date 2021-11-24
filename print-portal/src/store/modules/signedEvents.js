@@ -41,17 +41,37 @@ const getters = {
             }
         }
         return proofEvents;
+    },
+    all: ({ all }) => {
+        return all.map(({ payload, signature }) => {
+            return {
+                payload,
+                signature
+            }
+        })
     }
 };
 
-const actions = {};
+const actions = {
+    createAll: ({ commit, dispatch }, payload) => {
+        dispatch('clear', payload)
+        commit('createAll', payload)
+        // clear signed qrs
+        commit('qrs/add', null, { root: true });
+    },
+    clear: ({ commit }, { filter }) => {
+        commit('clear', filter)
+    }
+};
 
 const mutations = {
-    createAll(state, signedEvents) {
-        state.all = signedEvents;
+    createAll(state, { events, filter }) {
+        // add filter to event, so we can keep track of the event filter
+        events.forEach(event => (event.filter = filter))
+        state.all = [...state.all, ...events]
     },
-    clear(state) {
-        state.all = []
+    clear(state, filter) {
+        state.all = state.all.filter(({ filter: current }) => current !== filter)
     }
 };
 
