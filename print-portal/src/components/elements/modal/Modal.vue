@@ -151,31 +151,22 @@ export default {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 460px;
-    height: calc(100% - 41px);
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 10000;
     pointer-events: none;
+    overflow: hidden;
 
-    /* width
-    ::-webkit-scrollbar {
-        width:15px;
-        border-radius:0 5px 5px 0;
-    }
-    /* Handle
-    ::-webkit-scrollbar-thumb {
-        border-radius:0 5px 5px 0;
-        background-color:#A8A8A8;
-    }
-    */
     @include mobile() {
         width: 100%;
         height: 100%;
-        transform:none;
-        left:0;
-        top:0;
+        transform: none;
+        left: 0;
+        top: 0;
+        max-height: 100%;
     }
 }
 
@@ -187,8 +178,28 @@ export default {
     overflow-y: auto;
     pointer-events: all;
 
+    div::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    div::-webkit-scrollbar-thumb {
+        background: #8F8F93;
+        border-radius: 8px;
+        width: 6px;
+        height: 322px;
+    }
+
+    &__content {
+        overflow-y: auto;
+        max-height: 540px;
+
+        @include mobile() {
+            max-height: calc(100% - 60px);
+        }
+    }
+
     #modal__head {
-        padding: $length-l $length-l 0 $length-l;
+        padding: 30px $length-l 10px $length-l;
         margin-bottom: $grid-x2;
         font-weight: 700;
         font-size: 1.125rem;
