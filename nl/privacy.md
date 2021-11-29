@@ -19,9 +19,9 @@ Om een nationaal coronabewijs en een EU DCC te maken, gebruiken wij gegevens ove
 
 Aanvullend op bovenstaande gegevens zijn onderstaande gegevens nodig die verschillen per bewijs dat je op wilt halen:
 
-- Als je een bewijs wil op basis van een negatieve test; een recente negatieve testuitslag en het type test;
-- Als je een bewijs wil op basis van een vaccinatie; of je gevaccineerd bent en met welk vaccin;
-- Als je een bewijs wil op basis van herstel; een positieve testuitslag die laat zien dat je in het verleden COVID-19 gehad hebt.
+- Als je een bewijs wilt op basis van een negatieve test; een recente negatieve testuitslag en het type test;
+- Als je een bewijs wilt op basis van een vaccinatie; of je gevaccineerd bent en met welk vaccin, en mogelijk, een positieve testuitslag uit het verleden (zodat bij vaccinaties die normaal uit twee prikken bestaan al na één prik een volwaardig vaccinatiebewijs kan worden afgegeven als je voorafgaand aan je vaccinatie corona hebt gehad);
+- Als je een bewijs wilt op basis van herstel; een positieve testuitslag die laat zien dat je in het verleden COVID-19 gehad hebt.
 
 Omdat met de app en de website gebruik wordt gemaakt van het internet zal ook je IP-adres verwerkt worden. Dit is inherent aan het gebruik van internet en IP-technologie en is nodig om technisch gezien een verbinding op te bouwen tussen de server van de testuitvoerder of de vaccineerder en je telefoon of je browser. Het IP-adres wordt enkel verwerkt voor beheers- en beveiligingsdoeleinden.
 
@@ -81,11 +81,12 @@ Verwerkers van de minister:
 
 Alleen de gegevens die in de CoronaCheck-app zelf staan of in het papieren bewijs, worden bewaard. Voor het papieren bewijs bepaal je uiteraard zelf hoe lang je die gegevens bewaart. Dat is ook zo bij de CoronaCheck-app, als je de app verwijdert, worden ook de gegevens verwijderd. Anders worden de gegevens bewaard volgens onderstaande termijnen:
 
-- Testuitslagen: 96 uur na datum en tijd afname test
-- Vaccinatiegegevens: een jaar na vaccinatiedatum
-- Herstelgegevens: 365 dagen na datum en tijd afname test
-- Een uniek serienummer van je EU DCC en een code van de databron worden twee jaar bewaard
-- In het geval wij jou een fysiek EU DCC geven, wordt bijbehorende de koppelcode een jaar na afgifte bewaard
+- Negatieve testuitslagen: 96 uur na datum en tijd afname test;
+- Positieve testuitslagen: één jaar (voor herstelbewijzen, maar als die ook in een vaccinatiebewijs verwerkt is, tot drie jaar na je laatste vaccinatie);
+- Vaccinatiegegevens: drie jaar na vaccinatiedatum (bedenk dat in sommige gevallen een positieve testuitslag onderdeel van je vaccinatiegegevens kan zijn);
+- Herstelgegevens: 180 dagen na datum en tijd afname test;
+- Een uniek serienummer van je EU DCC en een code van de databron worden twee jaar bewaard;
+- In het geval wij jou een fysiek EU DCC geven, wordt bijbehorende de koppelcode een jaar na afgifte bewaard.
 
 Je BSN wordt niet bewaard. Je IP-adres wordt niet langer dan zeven dagen bewaard.
 
@@ -161,7 +162,7 @@ Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzig
 
 ### Persoonsgegevens die zijn opgeslagen in de QR-code die je toont aan controleurs:
 
-#### *coronabewijs*
+#### Coronabewijs
 
 De QR-code voor het coronabewijs wordt elke 90 seconden opnieuw gegenereerd en bevat:
 
@@ -171,7 +172,7 @@ De QR-code voor het coronabewijs wordt elke 90 seconden opnieuw gegenereerd en b
 - Geboortemaand en geboortedag
 - Indicatie of de code digitaal of als fysiek Bewijsmiddel is uitgegeven
 
-#### *EU DCC*
+#### EU DCC
 
 Persoonsgegevens die in de EU DCC (QR-code) zijn opgenomen ongeacht het type (test-, vaccinatie- of herstelbewijs):
 

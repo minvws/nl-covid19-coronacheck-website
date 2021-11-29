@@ -18,8 +18,8 @@ To create a domestic coronavirus pass and an EU DCC, we use data about your heal
 In addition to the above information, the following information is required, which varies depending on the certificate you want to retrieve: 
 
 - If you want a certificate based on a negative test; a recent negative test result and the type of test;
-- If you want a certificate based on vaccination; if you’ve been vaccinated, using what vaccine;
-- If you want a certificate based on recovery; a positive test result that shows you had coronavirus in the past. 
+- If you want a certificate based on a vaccination; if you’ve been vaccinated, using what vaccine, and possibly a positive test result in the past (so that, in case of vaccinations that normally consist of two injections, a full vaccination certificate can be issued after only one injection if you had coronavirus prior to your vaccination;
+- If you want a certificate based on recovery; a positive test result that shows you had coronavirus in the past.
 
 Because the app and website use an internet connection, your IP address will also be processed. This is inherent to the use of internet and IP technology and is necessary to technically establish a connection between the test performer's or vaccinator's server and your phone or browser. The IP address is processed for management and security purposes only.
 
@@ -81,9 +81,9 @@ The Minister’s processors:
 
 Only data saved in the CoronaCheck-app itself or printed on the paper certificate will be kept. Of course, for the paper certificate you decide how long to keep the data. This is also the case with the CoronaCheck-app: if you delete the app that data will also be deleted. Otherwise, the data will be stored according to the following time periods:
 
-- Test results: 96 hours after date and time of test administration
-- Vaccination data: one year after vaccination date
-- Recovery data: 365 days after date and time of test administration
+- Negative test results: 96 hours after date and time of test administration;
+- Positive test results: 1 year (for a recovery certificate, but if it is part of a vaccination certificate, up until 3 years after your most recent vaccination);
+- Vaccination data: 3 years after the vaccination date (please be aware that in some cases a positive test result can be part of your vaccination data)
 - A unique serial number of your EU DCC and a code of the datasource will be saved for two years.
 - In case we provide you with a physical EU DCC, the associated pairing code will be saved for one year after the issue.
 
