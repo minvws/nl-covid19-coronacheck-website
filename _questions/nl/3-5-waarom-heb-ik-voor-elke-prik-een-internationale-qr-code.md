@@ -25,6 +25,8 @@ De meeste landen zullen op dit moment om de QR-code van jouw dosis 2/2 vragen.
 <summary><h3>Ik ben meer dan twee keer gevaccineerd</h3></summary>
 <div markdown="1">
 De QR-codes van extra doses worden nog niet overal geaccepteerd. De meeste landen zullen op dit moment om de QR-code van jouw tweede vaccinatie-dosis (2/2) vragen.
+
+Omdat je met een tweede vaccinatie-dosis al volledig gevaccineerd bent, worden je eerste en tweede dosis als 1/2 en 2/2 geregistreerd. Bij je derde vaccinatie-dosis komt 3/3 te staan.
 </div>
 </details>
 
