@@ -98,7 +98,7 @@ Dit kan verschillende oorzaken hebben:
 - Je bent pas net getest. Het kan een paar uur duren voordat jouw positieve testuitslag beschikbaar is.
 - Je bent langer dan 365 dagen geleden (positief) getest. In dit geval heb je geen recht op een herstelbewijs.
 
-Als geen van bovenstaande situaties van toepassing is, maar je bent wel positief getest, neem dan contact op met jouw testlocatie. Zij kunnen je helpen te achterhalen of er wellicht gegevens onjuist geregistreerd staan. Ben je getest bij de GGD? Dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. 
+Is geen van bovenstaande situaties op jou van toepassing, maar je bent wel positief getest? Neem dan contact op met de GGD als je daar bent getest op {{ site.data.links.phone-ggd[page.lang] }} of vul dit {{ site.data.links.herstelbewijs-elders[page.lang] }} in als je op een andere locatie bent getest.
 
 Als je echt binnen een paar dagen een evenement wilt bezoeken, is het advies om een gratis test-afspraak in te plannen zodat je een testbewijs kan maken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
@@ -117,6 +117,8 @@ Worden er wel gegevens over jouw herstel gevonden, maar zegt CoronaCheck dat er 
 Ben je korter dan 365 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Als je bij de GGD bent getest, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten wijzigen. Ben je door een andere testlocatie getest dan de GGD? Ga dan naar {{ site.data.links.herstelbewijs-elders[page.lang] }} en vul het formulier in.
 
 Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je een evenement wilt bezoeken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}.
+
+Heb je een papieren herstelbewijs toegevoegd met een geldigheid van 180 dagen? Dan kun je in veel gevallen je herstelbewijs met 365 dagen geldigheid ophalen door in te loggen met DigiD. Of vraag je nieuwe herstelbewijs aan.
 </div>
 {% endcapture %}
 

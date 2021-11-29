@@ -100,9 +100,9 @@ More information about recovery certificates can be found on {{ site.data.links.
 This can have several causes:
 
 - You have just been tested. It can take a few hours for your positive test result to be available. 
-- You have been tested (positive) more than 180 days ago. In this case you are not entitled to a recovery certificate.
+- You have been tested (positive) more than 365 days ago. In this case you are not entitled to a recovery certificate.
 
-Do none of the above situations apply, and have you been tested positive? Then contact your test provider. They can help you find out whether details may have been registered incorrectly. If you have been tested at the GGD, contact the GGD on {{ site.data.links.phone-ggd[page.lang] }}. 
+Do none of the above situations apply, and have you been tested positive? Then contact your test provider.  If you were tested at the GGD, please contact them on {{ site.data.links.phone-ggd[page.lang] }} or go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form if you were tested at another test provider.
 
 If you really want to visit an event within a few days, the advice is to schedule a free test appointment so that you can make a test certificate. Make your appointment through {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
@@ -122,6 +122,8 @@ Are details about your vaccination found, but does CoronaCheck say no certificat
 Were you tested less than 365 days ago? Then there may be an error in the test data.  If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected. If you have been tested at another test provider, please go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form.
 
 Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. Make your appointment through {{ site.data.links.testen-voor-toegang[page.lang] }}.
+
+Did you add a paper recovery certificate with a validity of 180 days? In many cases, you can retrieve your recovery certificate, with a validity of 365 days, by logging in using DigiD. You can also request your new recovery certificate instead.
 </div>
 {% endcapture %}
 
