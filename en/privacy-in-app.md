@@ -83,7 +83,7 @@ Only data saved in the CoronaCheck-app itself or printed on the paper certificat
 
 - Test results: 96 hours after date and time of test administration
 - Vaccination data: one year after vaccination date
-- Recovery data: 180 days after date and time of test administration
+- Recovery data: 365 days after date and time of test administration
 - A unique serial number of your EU DCC and a code of the datasource will be saved for two years.
 - In case we provide you with a physical EU DCC, the associated pairing code will be saved for one year after the issue.
 
@@ -127,7 +127,7 @@ The Minister takes protection of your personal data seriously and has taken appr
 
 ## 12. Changing privacy statement
 
-This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: October 12, 2021.
+This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: November 29, 2021.
 
 ## Overview of processed personal data 
 

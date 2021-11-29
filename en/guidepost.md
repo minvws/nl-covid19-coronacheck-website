@@ -84,7 +84,7 @@ See {{ site.data.links.buitenlandvaccinatie[page.lang] }}. There you’ll always
 
 {% capture copy_herstelbewijs %}
 <div markdown="1">
-A recovery certificate is proof that you have ever been tested positive for the presence of the Sars-Cov2 virus by the GGD.
+A recovery certificate is proof that you have ever been tested positive for the presence of the Sars-Cov2-virus by the GGD.
 
 **Please note:** A recovery certificate is not provided on the basis of a self-test or a serological test. It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test. For use within the Netherlands (for example for access to events), a recovery certificate is also issued based on an antigen test.
 
@@ -314,7 +314,7 @@ For other questions, you can <a href="https://www.netherlandsworldwide.nl/contac
 </details>
 
 <details class="details" id="recovery_cantmakeproof">
-<summary><h3>The app can't create a certificate</h3></summary>
+<summary><h3>The app can't create a certificate/the certificate can't be extended</h3></summary>
 {{ copy_we_kunnen_geen_herstelbewijs_maken }}
 </details>
 

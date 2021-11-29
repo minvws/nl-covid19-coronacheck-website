@@ -82,7 +82,7 @@ Alleen de gegevens die in de CoronaCheck-app zelf staan of in het papieren bewij
 
 - Testuitslagen: 96 uur na datum en tijd afname test
 - Vaccinatiegegevens: een jaar na vaccinatiedatum
-- Herstelgegevens: 180 dagen na datum en tijd afname test
+- Herstelgegevens: 365 dagen na datum en tijd afname test
 - Een uniek serienummer van je EU DCC en een code van de databron worden twee jaar bewaard
 - In het geval wij jou een fysiek EU DCC geven, wordt bijbehorende de koppelcode een jaar na afgifte bewaard
 
@@ -126,7 +126,7 @@ De minister neemt de bescherming van uw persoonsgegevens serieus en heeft bij de
 
 ## 12. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 12 oktober 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 29 november 2021.
 
 ## Overzicht van verwerkte persoonsgegevens
 
