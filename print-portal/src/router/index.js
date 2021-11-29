@@ -34,6 +34,7 @@ router.beforeEach((to, from, next) => {
         'VaccinationRedirect',
         'NegativeTestRedirect',
         'RecoveryRedirect',
+        'RecoveryExpired',
         'ErrorGeneral',
         'ServerBusy'
     ]

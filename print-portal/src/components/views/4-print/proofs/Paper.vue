@@ -1,5 +1,4 @@
 <script>
-import LogoRijksoverheid from '@/components/elements/LogoRijksoverheid';
 
 export default {
     name: 'Paper',
@@ -12,7 +11,6 @@ export default {
             }
         }
     },
-    components: { LogoRijksoverheid },
     computed: {},
     methods: {}
 }
@@ -20,13 +18,6 @@ export default {
 
 <template>
     <div class="Paper">
-        <div class="Paper__overheid">
-            <LogoRijksoverheid
-                :width="13" />
-        </div>
-        <h4>
-            {{$t('components.proofRegion.' + region + '.paperTitle')}}
-        </h4>
         <div class="Paper__flag">
             <img :src="'assets/img/flags/' + region + '.svg'" alt="" />
         </div>
@@ -37,12 +28,8 @@ export default {
 @import "@/styles/variables/index";
 
 .Paper {
-    width: 140px;
-    height: 198px;
-    background: #fff;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
     position: relative;
-    padding: 40px 20px 36px 20px;
+    background: #fff;
 
     &__overheid {
         position: absolute;
@@ -52,13 +39,11 @@ export default {
     }
 
     &__flag {
-        position: absolute;
-        left: 50%;
-        top: 100px;
-        transform: translate(-50%);
-
-        img {
-            width: 93px;
+        padding-bottom: 20px;
+       img {
+            border-radius: 3px;
+            overflow: hidden;
+            width: 64px;
             height: auto;
         }
     }
@@ -70,10 +55,7 @@ export default {
     }
 
     @include mobile() {
-        background: transparent;
-        box-shadow: none;
-        margin: 0;
-        padding: 0;
+        width: 100%;
         height: auto;
 
         &__overheid,
@@ -82,13 +64,9 @@ export default {
         }
 
         &__flag {
-            position: relative;
-            left: 0;
-            top: 0;
-            transform: none;
 
             img {
-                width: 40px;
+                width: 56px;
             }
         }
     }

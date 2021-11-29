@@ -100,9 +100,13 @@ openingsplan:
   en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Coronavirus Covid-19 Openingsplan</span> (Dutch)</a>'
 
 overzicht-maatregelen:
-  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/documenten/publicaties/2021/09/14/overzicht-coronamaatregelen" rel="noopener noreferrer" target="_blank">Nederland verder open met coronatoegangsbewijs per 25 september</a>'
-  en: '<a href="https://www.government.nl/latest/news/2021/09/14/netherlands-to-reopen-further-with-coronavirus-entry-passes" rel="noopener noreferrer" target="_blank">Netherlands to reopen further with coronavirus entry passes</a>'
- 
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs" rel="noopener noreferrer" target="_blank">Coronatoegangsbewijs voor horeca, evenementen en andere activiteiten</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/coronavirus-entry-pass" rel="noopener noreferrer" target="_blank">Coronavirus entry pass for food and drink venues, events and other activities</a>'
+
+basisregels:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels" rel="noopener noreferrer" target="_blank">basisregels</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/coronavirus-measures-in-brief" rel="noopener noreferrer" target="_blank">Coronavirus entry pass for food and drink venues, events and other activities</a>'
+
 wetransfer-toolkit:
   nl: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs voor evenementen</a>'
   en: '<a href="https://wetransfer.com/downloads/007c2f57407ccc2e88542e629073022520210729070707/3cd20a" rel="noopener noreferrer" target="_blank">Toolkit Coronatoegangsbewijs for events</a>'

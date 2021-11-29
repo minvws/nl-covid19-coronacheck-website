@@ -18,9 +18,18 @@ CoronaCheck wordt ondertussen door veel mensen gebruikt om een vaccinatie, herst
 <div markdown="1">
 CoronaCheck haalt gegevens over vaccinaties op bij de systemen van het RIVM en de GGD. Ook andere vaccinatiezetters, zoals ziekenhuizen, huisartsen en andere zorgverleners, hebben je vaccinatiegegevens doorgegeven aan het RIVM. Dit doen zij alleen als je hier toestemming voor hebt gegeven. Vaccinatiegegevens kan je ophalen in de app. [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Je bent volledig gevaccineerd vanaf 14 dagen na de laatste vaccinatie. Zodra je vaccinatie goed is geregistreerd kun je een vaccinatiebewijs maken. Een internationale QR-code kan worden gemaakt na één vaccinatie.
+Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Je bent volledig gevaccineerd vanaf 14 dagen na de laatste vaccinatie. Of na 28 dagen wanneer je met Janssen bent gevaccineerd. Zodra je vaccinatie goed is geregistreerd kun je een vaccinatiebewijs maken. Een internationale QR-code kan worden gemaakt na één vaccinatie.
 
 **Let op:** een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op {{ site.data.links.wijsopreis[page.lang] }}. Meer informatie over vaccinatiebewijzen vind je op {{ site.data.links.vaccinatiebewijs[page.lang] }}.
+</div>
+{% endcapture %}
+
+
+{% capture copy_geen_derde_prik %}
+<div markdown="1">
+
+Je moet zelf je vaccinatiegegevens van je derde prik ophalen door opnieuw in te loggen met DigiD. Staat je derde prik er niet bij? Neem dan contact op met de zorgverlener die je heeft gevaccineerd. Ben je bij de GGD gevaccineerd dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten controleren. Ben je gevaccineerd door je huisarts, ziekenhuis of zorginstelling? Neem dan contact met hen op.
+
 </div>
 {% endcapture %}
 
@@ -230,7 +239,7 @@ Alle informatie over het krijgen van een vaccinatiebewijs wanneer je geen BSN-nu
 <div markdown="1">
 Ga je binnenkort op reis? Check voor vertrek altijd de geldende inreisregels van je bestemming op {{ site.data.links.wijsopreis[page.lang] }}. Lees meer over het maken van een testafspraak op {{ site.data.links.testenvoorjereis[page.lang] }}. 
 
-Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ).  <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-het-24-7-bz-contactcenter" rel="noopener noreferrer" target="_blank">Neem contact op met het contactcenter van BZ</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
+Voor overige vragen kun je terecht bij <a href="https://www.nederlandwereldwijd.nl/contact/contact-met-nederland-wereldwijd" rel="noopener noreferrer" target="_blank">het contactcenter van Nederland Wereldwijd</a>. Dat is 24 uur per dag, 7 dagen per week bereikbaar.
 </div>
 {% endcapture %}
 
@@ -249,6 +258,11 @@ Voor overige vragen kun je terecht bij het ministerie van Buitenlandse Zaken (BZ
 
 <h3>Algemeen over vaccinatiebewijs</h3>
 {{ copy_vaccinatiebewijs }}
+
+<details class="details" id="vacc_nothirdjab">
+<summary><h3>Mijn 3e prik wordt niet gevonden</h3></summary>
+{{ copy_geen_derde_prik }}
+</details>
 
 <details class="details" id="vacc_nodata">
 <summary><h3>Geen vaccinatiegegevens gevonden</h3></summary>

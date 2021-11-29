@@ -141,6 +141,7 @@ include:
 exclude:
   - vendor
   - print-portal
+  - dashboard-spa
   - Gemfile
   - Gemfile.lock
   - CODE_OF_CONDUCT.md

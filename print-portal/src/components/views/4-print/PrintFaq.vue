@@ -41,9 +41,6 @@ export default {
 
 <template>
     <div class="PrintFaq">
-        <h2>
-            {{$t('views.print.details.header')}}
-        </h2>
         <div class="content-block">
             <details
                 v-for="(detail, index) in details"
@@ -66,6 +63,7 @@ export default {
 
         h2 {
             font-size: 18px;
+            text-align: center;
         }
 }
 </style>

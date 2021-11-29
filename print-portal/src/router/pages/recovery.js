@@ -1,5 +1,6 @@
 import CollectRecovery from '@/components/views/3-collect/recovery/CollectRecovery'
 import RecoveryRedirect from '@/components/views/3-collect/recovery/happy/RecoveryRedirect'
+import RecoveryExpired from '@/components/views/3-collect/recovery/unhappy/RecoveryExpired'
 import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview'
 import RecoveryNone from '@/components/views/3-collect/recovery/unhappy/RecoveryNone'
 import PrintRecovery from '@/components/views/4-print/PrintRecovery'
@@ -33,6 +34,13 @@ const recoveryPages = [
         component: PrintRecovery,
         meta: {
             title: 'views.print.pageTitle'
+        }
+    }, {
+        path: '/recovery-expired',
+        name: 'RecoveryExpired',
+        component: RecoveryExpired,
+        meta: {
+            pageHeader: 'error'
         }
     }
 ]

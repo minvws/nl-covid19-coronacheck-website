@@ -151,7 +151,7 @@ export default {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 460px;
-    height: calc(100% - 40px);
+    height: calc(100% - 41px);
     display: flex;
     flex-direction: column;
     align-items: center;

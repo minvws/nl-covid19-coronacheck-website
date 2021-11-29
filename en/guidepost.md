@@ -19,9 +19,17 @@ CoronaCheck is already used by many people for creating a vaccination, recovery 
 
 CoronaCheck retrieves data about vaccinations from the systems of the RIVM and the GGD. Other vaccination setters, such as hospitals, general practitioners and other healthcare providers, have passed on your vaccination details to the RIVM. They only do so if you have given permission. Vaccination details can be retrieved in the app. [Read here how to retrieve your vaccination data](/en/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-You must be fully vaccinated to make a Dutch QR code. You are fully vaccinated from 14 days after the last vaccination. As soon as your vaccination has been properly registered, you can make a vaccination certificate. An international QR code can already be created after one vaccination.
+You must be fully vaccinated to make a Dutch QR code. You are fully vaccinated from 14 days after the last vaccination. Or 28 days after you were vaccinated with Janssen. As soon as your vaccination has been properly registered, you can make a vaccination certificate. An international QR code can already be created after one vaccination.
 
 **Please note:** a QR code of 1 injection is not valid in all countries. Always check the travel advice on {{ site.data.links.wijsopreis[page.lang] }} before departure. More information about vaccination certificates can be found on {{ site.data.links.vaccinatiebewijs[page.lang] }}.
+
+</div>
+{% endcapture %}
+
+{% capture copy_geen_derde_prik %}
+<div markdown="1">
+
+You have to retrieve your vaccination details for your third vaccination yourself by logging in again with DigiD. Is your third vaccination not listed? Then please contact the healthcare provider who vaccinated you. If you were vaccinated at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have your details checked. Were you vaccinated by your general practitioner, hospital or healthcare institution? Then please contact them.
 
 </div>
 {% endcapture %}
@@ -240,7 +248,7 @@ All information about getting a vaccination certificate if you do not have a BSN
 <div markdown="1">
 Are you going on a trip soon? Before departure, always check the applicable entry rules for your destination at {{ site.data.links.wijsopreis[page.lang] }}. Read more about a coronatest for travellers here: {{ site.data.links.testenvoorjereis[page.lang] }}.
 
-For other questions, you can contact the Ministry of Foreign Affairs (BZ). <a href="https://www.netherlandsworldwide.nl/contact/contacting-the-24-7-bz-contact-centre" rel="noopener noreferrer" target="_blank">Contact the BZ contact center</a> - available 24 hours a day, 7 days a week.
+For other questions, you can <a href="https://www.netherlandsworldwide.nl/contact/contacting-the-24-7-bz-contact-centre" rel="noopener noreferrer" target="_blank">contact Netherlands Worldwide</a> - available 24 hours a day, 7 days a week.
 </div>
 {% endcapture %}
 
@@ -259,6 +267,11 @@ For other questions, you can contact the Ministry of Foreign Affairs (BZ). <a hr
 
 <h3>In general regarding vaccination certificate</h3>
 {{ copy_vaccinatiebewijs }}
+
+<details class="details" id="vacc_nothirdjab">
+<summary><h3>My third vaccination cannot be found</h3></summary>
+{{ copy_geen_derde_prik }}
+</details>
 
 <details class="details" id="vacc_nodata">
 <summary><h3>No vaccination details found</h3></summary>
