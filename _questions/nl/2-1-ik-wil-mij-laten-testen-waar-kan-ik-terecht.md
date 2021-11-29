@@ -38,3 +38,6 @@ Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, b
 - <a href="https://www.speedcovidtest.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">Speedcovidtest B.V.</a>
 - <a href="https://www.nepworldwide.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">NEP The Netherlands</a>
 - <a href="https://www.covidtestlimburg.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">NOMO Medical B.V.</a>
+- <a href="https://www.hetcoronalab.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Fenelab consortium</a>
+- <a href="https://www.coronatestalmere.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">Arba Trading</a>
+- <a href="https://www.alegriahealth.com" rel="noopener noreferrer" target="_blank" hreflang="nl">Alegria Health Nederland B.V.</a>
