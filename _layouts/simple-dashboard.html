@@ -1,0 +1,177 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+{% include open-source-comment.html %}
+{% include head.html %}
+<body>
+  {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
+    {% include header-slim.html for="scanner" %}
+  {% else %}
+    {% include header-slim.html %}
+  {% endif %}
+  
+  <main class="content-center" id="content">
+    {% if page.showBreadCrumbs %}
+      {% include components/breadcrumbs.html title=page.title collection=page.collection %}
+    {% endif %}
+
+    {% if page.showHomeBtn %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}">
+          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-home[page.lang] }}
+        </a>
+      </p>
+    {% endif %}
+    
+    <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
+      <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+      
+      <div class="division">
+        {{ content }}
+    
+        <div class="CoronaCheck_downloads column-2"> 
+            <div>
+                <p>Mensen die CoronaCheck hebben gedownload:<br />
+                <span class="number_highlight">13,93 miljoen</span> downloads.</p>
+                <p>De grafiek laat zien hoeveel mensen de CoronaCheck-app hebben gedownload.</p>
+            </div>
+            <div id="CoronaCheck_downloads_plot"></div>
+        </div>
+        <div class="CoronaCheckScanner_downloads column-2"> 
+            <div>
+                <p>Aantal downloads van de CoronaCheck Scanner<br />
+                <span class="number_highlight">2,42 miljoen</span> downloads.</p>
+                <p>Met de CoronaCheck Scanner-app controleer je de geldigheid van een coronabewijs van een bezoeker. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.</p>
+                <p>De grafiek laat zien hoeveel mensen de CoronaCheck Scanner hebben gedownload.</p>
+            </div>
+            <div id="CoronaCheckScanner_downloads_plot"></div>
+        </div>
+    </div>
+ 
+
+  </main> 
+    {% include footer.html %} 
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.2"></script>
+
+    <script>
+        CoronaCheck_downloads_plot = document.getElementById('CoronaCheck_downloads_plot');
+        CC_downloads_plot = [
+            {weeknr: '12', downloadnr: 0},
+            {weeknr: '14', downloadnr: 0},
+            {weeknr: '16', downloadnr: 0},
+            {weeknr: '18', downloadnr: 0},
+            {weeknr: '20', downloadnr: 0},
+            {weeknr: '22', downloadnr: 0},
+            {weeknr: '24', downloadnr: 1},
+            {weeknr: '26', downloadnr: 2},
+            {weeknr: '28', downloadnr: 4},
+            {weeknr: '30', downloadnr: 6},
+            {weeknr: '32', downloadnr: 8},
+            {weeknr: '34', downloadnr: 9},
+            {weeknr: '36', downloadnr: 10},
+            {weeknr: '38', downloadnr: 12},
+            {weeknr: '40', downloadnr: 12.5},
+            {weeknr: '42', downloadnr: 13},
+            {weeknr: '44', downloadnr: 13.5},
+            {weeknr: '46', downloadnr: 14}
+        ]
+        CoronaCheck_downloads_plot.appendChild(
+            Plot.plot({
+                y: {
+                    label: "↑ Aantal downloads CoronaCheck", 
+                    tick: false,
+                    grid: true,
+                    ticks: [0, 2, 4, 6, 8, 10, 12, 14, 16],
+                    tickSize: 0, 
+                    tickPadding: 5,
+                    tickFormat: (f => `${f}m`),
+                },
+                x: {
+                    label: "Weeknummer →",
+                    labelAnchor: 'right',
+                    tickPadding: 15,
+                    tickSize: 0,
+                    margin: 20,
+                    dy: 70
+                },
+                marks: [
+                    Plot.line(CC_downloads_plot, {
+                        x: "weeknr", 
+                        y: "downloadnr",
+                        curve: "monotone-y",
+                        stroke: "red",
+                        fontSize: 12
+                    }),
+                ],
+                style: {
+                    width: 480,
+                    height: 240,
+                    fontSize: 16
+                },
+            })
+        );
+    </script>
+
+    <script>
+        CoronaCheckScanner_downloads_plot = document.getElementById('CoronaCheckScanner_downloads_plot');
+        CCScanner_downloads_plot = [
+            {weeknr: '12', downloadnr: 0},
+            {weeknr: '14', downloadnr: 0},
+            {weeknr: '16', downloadnr: 0},
+            {weeknr: '18', downloadnr: 0},
+            {weeknr: '20', downloadnr: 0},
+            {weeknr: '22', downloadnr: 0.05},
+            {weeknr: '24', downloadnr: 0.1},
+            {weeknr: '26', downloadnr: 0.2},
+            {weeknr: '28', downloadnr: 0.4},
+            {weeknr: '30', downloadnr: 0.5},
+            {weeknr: '32', downloadnr: 0.6},
+            {weeknr: '34', downloadnr: 0.7},
+            {weeknr: '36', downloadnr: 0.8},
+            {weeknr: '38', downloadnr: 1.25},
+            {weeknr: '40', downloadnr: 1.55},
+            {weeknr: '42', downloadnr: 1.6},
+            {weeknr: '44', downloadnr: 1.75},
+            {weeknr: '46', downloadnr: 2.42}
+        ]
+        CoronaCheckScanner_downloads_plot.appendChild(
+            Plot.plot({
+                y: {
+                    label: "↑ Aantal downloads CoronaCheck Scanner (miljoen)", 
+                    tick: false,
+                    grid: true,
+                    ticks: [0, 0.5, 1.0, 1.5, 2.0, 2.5],
+                    tickSize: 0, 
+                    tickFormat: (f => `${f}m`),
+                },
+                x: {
+                    label: "Weeknummer →",
+                    labelAnchor: 'right',
+                    tickSize: 0,
+                    dy: 170
+                },
+                marks: [
+                    Plot.line(CCScanner_downloads_plot, {
+                        x: "weeknr", 
+                        y: "downloadnr",
+                        curve: "monotone-y",
+                        stroke: "red",
+                        fontSize: 12
+                    }),
+                ],
+                style: {
+                    width: 430,
+                    height: 215,
+                    fontSize: 16
+                },
+            })
+        );
+    </script>
+</body>
+</html>

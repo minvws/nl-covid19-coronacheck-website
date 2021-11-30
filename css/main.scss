@@ -12,7 +12,6 @@ $file-path: "/";
 @import "01-setup/fonts";
 @import "01-setup/basics";
 @import "01-setup/form";
-@import "01-setup/layout";
 
 // Used on every page
 @import "03-partials/header";
@@ -44,7 +43,7 @@ $file-path: "/";
 // Used for the FAQ overview pages
 @import "03-partials/faq-overview";
 
-// Used on the Dashboard 
+// Used on the Dashboard
+@import "01-setup/layout";
 @import "02-components/legend";
 @import "03-partials/key-figures";
-
