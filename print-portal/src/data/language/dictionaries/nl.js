@@ -48,8 +48,8 @@ const nl = {
             'pageIntro': '<p>Ben je al gevaccineerd? Log in met DigiD. De gegevens van je vaccinatie worden dan automatisch opgehaald.</p>'
         },
         'vaccinationOverview': {
-            'pageHeader': 'Jouw opgehaalde vaccinaties',
-            'pageIntro': '<p>Met de gegevens die zijn opgehaald kun je een QR-code maken. Dat is jouw bewijs.</p>',
+            'pageHeader': 'Kloppen de gegevens?',
+            'pageIntro': '<p>Als de gegevens van je vaccinatie kloppen kun je een bewijs maken.</p>',
             'createTestProofButton': 'Maak bewijs'
         },
         'vaccinationsNone': {
@@ -68,6 +68,9 @@ const nl = {
             'pageHeader': 'Gegevens van je herstel ophalen',
             'pageIntro': '<p>Heb je corona gehad? Dan kun je van de positieve testuitslag een herstelbewijs maken. Log in met DigiD om een testuitslag op te halen.</p>' +
                 '<p>Je herstelbewijs wordt 11 dagen na de positieve testuitslag geldig. Je moet dan ook vrij zijn van klachten.</p>'
+        },
+        'collectPositiveTest': {
+            'pageHeader': 'Testuitslag ophalen'
         },
         'provideCode': {
             'pageHeader': 'Testuitslag ophalen',
@@ -100,8 +103,8 @@ const nl = {
             'pageIntro': '<p>Er zijn geen gegevens over je testuitslag beschikbaar. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/wegwijzer.html" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p><p>Heb je al een testuitslag van de GGD gekregen? Dan kan het nog een paar uur duren voordat je de uitslag hier kunt ophalen. Probeer het later opnieuw.</p>'
         },
         'recoveryOverview': {
-            'pageHeader': 'Jouw opgehaalde positieve testuitslag',
-            'pageIntro': '<p>Kloppen je gegevens? Dan kun je van je positieve testuitslag een QR-code maken. Dat is jouw bewijs.</p>',
+            'pageHeader': 'Kloppen de gegevens?',
+            'pageIntro': '<p>Als de gegevens van je test kloppen kun je een bewijs maken.</p>',
             'createTestProofButton': 'Maak bewijs'
         },
         'recoveryExpired': {
@@ -110,7 +113,11 @@ const nl = {
         },
         'recoveryNone': {
             'pageHeader': 'Geen positieve testuitslag beschikbaar',
-            'pageIntro': '<p>Ben je net getest? Het kan een paar uur  duren voordat jouw positieve testuitslag beschikbaar is. Probeer het later nog eens.</p><p>Kijk voor meer informatie op de <a href="https://coronacheck.nl/nl/wegwijzer" target="_blank" rel="noopener noreferrer">Wegwijzer</a>.</p>'
+            'pageIntro': '<p>Ben je net getest? Het kan een paar uur duren voordat jouw positieve testuitslag beschikbaar is. Probeer het later nog eens.</p><p>Al even geleden getest? Neem dan contact op met je testlocatie om te controleren of je gegevens goed in het systeem staan.</p>'
+        },
+        'recoveryInvalid': {
+            'pageHeader': 'Jou positieve testuitslag is niet geschikt',
+            'pageIntro': '<p>Je bent positief getest ná je eerste vaccinatie. Daardoor is je testuitslag niet geschikt om een Nederlands bewijs van te maken.</p><p>Kijk voor meer informatie bij de <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">meestgestelde vragen</a>.</p>'
         },
         'print': {
             'pageTitle': 'Jouw bewijs',
@@ -120,12 +127,10 @@ const nl = {
                 'both': 'Gelukt! Jouw bewijzen staan hieronder klaar'
             },
             'pageIntro': {
-                'domestic': '<p>Je hebt alleen een %{type}bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet als je de grens over gaat of in het buitenland bent.</p>' +
-                    '<p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.</p>',
-                'european': '<p>Je hebt alleen een internationaal %{type}bewijs. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p>' +
-                    '<p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.</p>',
-                'both': '<p>Je hebt een Nederlands en een internationaal %{type}bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.</p>' +
-                    '<p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
+                'domestic': '<p>Je hebt alleen een %{type}bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet als je de grens over gaat of in het buitenland bent.</p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.</p>',
+                'european': '<p>Je hebt alleen een internationaal %{type}bewijs. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.</p>',
+                'both': '<p>Je hebt een Nederlands en een internationaal %{type}bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.</p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>',
+                'bothVaccinationRecovery': '<p>Je hebt een Nederlands en een internationaal bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.</p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>'
             },
             'proofType': {
                 'vaccination': 'vaccinatie',
@@ -145,7 +150,12 @@ const nl = {
                     },
                     'whyNoDomesticVaccination': {
                         'summary': 'Waarom krijg ik geen Nederlands vaccinatiebewijs?',
-                        'content': '<p>Dat je geen Nederlandse vaccinatiebewijs hebt gekregen, kan komen doordat je maar één prik hebt gehad. Na je tweede prik kun je een nieuw bewijs maken dat ook in Nederland geldig is. <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Lees hier meer over de mogelijke oorzaken</a>.</p>'
+                        'content': '<p>Voor een Nederlands vaccinatiebewijs moet je volledig gevaccineerd zijn, of hersteld van corona vóór je eerste prik.</p>'
+                    },
+                    'whyNoDutchCertificate': {
+                        'summary': 'Corona gehad voor je eerste prik?',
+                        'content': '<p>Haal je positieve testuitslag op. Je krijgt dan ook een Nederlands bewijs.</p>',
+                        'label': 'Haal mijn testuitslag op'
                     },
                     'whyNoEuropeanRecovery': {
                         'summary': 'Waarom krijg ik geen internationaal herstelbewijs?',
@@ -380,6 +390,7 @@ const nl = {
     'faq': 'Meestgestelde vragen',
     'forInstanceAbbr': 'Bijv.',
     'goBackToStart': 'Naar Home',
+    'goToOverview': 'Terug naar overzicht',
     'header-appstore': 'Download in de App Store',
     'header-googleplaystore': 'Ontdek het op Google Play',
     'identity_image_alt': 'Holder QR maken',

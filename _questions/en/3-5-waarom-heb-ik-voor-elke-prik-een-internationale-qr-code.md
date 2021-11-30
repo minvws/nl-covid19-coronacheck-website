@@ -23,7 +23,8 @@ At this time, most countries will require the QR code of your second vaccination
 <details class="details">
 <summary><h3>I've had more than two vaccinations</h3></summary>
 <div markdown="1">
+QR codes of extra doses aren't widely accepted yet. At this time, most countries will require the QR code of your dose 2/2.
 
-QR codes of extra vaccinations aren't widely accepted yet. At this time, most countries will require the QR code of your second vaccination dose (2/2).
+Because a second vaccination dose means you're already fully vaccinated, your first and second dose are registered as 1/2 and 2/2. A third vaccination dose will be registered as 3/3.
 </div>
 </details>

@@ -48,8 +48,8 @@ const en = {
             'pageIntro': '<p>Have you been vaccinated? Log in with DigiD. Your vaccination details will be automatically retrieved.</p>'
         },
         'vaccinationOverview': {
-            'pageHeader': 'Your retrieved vaccinations',
-            'pageIntro': '<p>You can make a QR code of your vaccination. This will be your certificate.</p>',
+            'pageHeader': 'Are the details correct?',
+            'pageIntro': '<p>If the details about your vaccination are correct, you can make a certificate.</p>',
             'createTestProofButton': 'Make certificate'
         },
         'vaccinationsNone': {
@@ -68,6 +68,9 @@ const en = {
             'pageHeader': 'Retrieve recovery details',
             'pageIntro': '<p>Have you had coronavirus? Then you can make a recovery certificate of the positive test result. Log in with DigiD to retrieve your test result.</p>' +
                 '<p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be symptom-free.</p>'
+        },
+        'collectPositiveTest': {
+            'pageHeader': 'Retrieve test result'
         },
         'provideCode': {
             'pageHeader': 'Retrieve test result',
@@ -100,8 +103,8 @@ const en = {
             'pageIntro': 'There is no negative test result available.'
         },
         'recoveryOverview': {
-            'pageHeader': 'Your retrieved positive test result',
-            'pageIntro': '<p>Are your details correct? Then you can turn your positive test result into a QR code. This is your certificate.</p>',
+            'pageHeader': 'Are the details correct?',
+            'pageIntro': '<p>If the details about your test are correct, you can make a certificate.</p>',
             'createTestProofButton': 'Make certificate'
         },
         'recoveryExpired': {
@@ -110,7 +113,11 @@ const en = {
         },
         'recoveryNone': {
             'pageHeader': 'No positive test result available',
-            'pageIntro': '<p>Were you just tested? It can take a few hours before your positive test result is available. Please try again later.</p><p>Find more information on the <a href="https://coronacheck.nl/en/guidepost" target="_blank" rel="noopener noreferrer">Guidepost</a>.</p>'
+            'pageIntro': '<p>Have you just been tested? It may take a few hours before your result is available. Please try again later.</p><p>Were you tested longer ago? Please contact your test location to verify if your details were entered into the system correctly.</p>'
+        },
+        'recoveryInvalid': {
+            'pageHeader': 'Positive test result is not suitable',
+            'pageIntro': '<p>You were tested positive after your first vaccination. Your test result is therefore not suitable for creating a Dutch certificate.</p><p>Check the <a href="https://coronacheck.nl/en/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">frequently asked questions</a> for more information.</p>'
         },
         'print': {
             'pageTitle': 'Your certificate',
@@ -120,12 +127,10 @@ const en = {
                 'both': 'Success! Your certificates are ready below'
             },
             'pageIntro': {
-                'domestic': '<p>You only have a %{type} certificate for use in the Netherlands. You can use it to access places or activities within the Netherlands, but not when you’re travelling abroad or crossing the border.</p>' +
-                    '<p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.</p>',
-                'european': '<p>You only have an international %{type} certificate. You can use this if you are abroad or crossing the border, but not within the Netherlands.</p>' +
-                    '<p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.</p>',
-                'both': '<p>You have a Dutch and an international %{type} certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.</p>' +
-                    '<p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
+                'domestic': '<p>You only have a %{type} certificate for use in the Netherlands. You can use it to access places or activities within the Netherlands, but not when you’re travelling abroad or crossing the border.</p><p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.</p>',
+                'european': '<p>You only have an international %{type} certificate. You can use this if you are abroad or crossing the border, but not within the Netherlands.</p><p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.</p>',
+                'both': '<p>You have a Dutch and an international %{type} certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.</p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.</p>',
+                'bothVaccinationRecovery': '<p>You have a Dutch and an international certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.</p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.</p>'
             },
             'proofType': {
                 'vaccination': 'vaccination',
@@ -145,7 +150,12 @@ const en = {
                     },
                     'whyNoDomesticVaccination': {
                         'summary': 'Why didn’t I receive a Dutch vaccination certificate?',
-                        'content': '<p>You may not have received a Dutch vaccination certificate because you only had one vaccination. After your second vaccination, you can create a new certificate that is also valid in the Netherlands. <a href="https://coronacheck.nl/en/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">Read more on the possible causes here</a>.</p>'
+                        'content': '<p>To get a Dutch vaccination certificate, you need to be fully vaccinated or have recovered from coronavirus before your first vaccination.</p>'
+                    },
+                    'whyNoDutchCertificate': {
+                        'summary': 'Had coronavirus before your first vaccination?',
+                        'content': '<p>Retrieve your positive test result. In this way you will also receive a Dutch certificate.</p>',
+                        'label': 'Retrieve my test result'
                     },
                     'whyNoEuropeanRecovery': {
                         'summary': 'Why didn’t I receive an international recovery certificate?',
@@ -377,6 +387,7 @@ const en = {
     'faq': 'Frequently asked questions',
     'forInstanceAbbr': 'E.g.',
     'goBackToStart': 'To Home',
+    'goToOverview': 'Back to overview',
     'header-appstore': 'Download on the App Store',
     'header-googleplaystore': 'Get it on Google Play',
     'identity_image_alt': 'Make Holder QR code',
