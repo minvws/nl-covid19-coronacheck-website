@@ -95,7 +95,7 @@ jobs:
         run: sudo apt-get install --yes jsonlint
 
       - name: Lint json files
-        run: find . -size +2c \( -name *.json -o -name *.json.v* \)  -not -path "print-portal/node_modules" | xargs jsonlint-php
+        run: find . -size +2c \( -name *.json -o -name *.json.v* \)  -not -path "print-portal/node_modules" -not -path "dashboard-spa/node_modules" | xargs jsonlint-php
 
       - name: Create tar
         run: tar -czf ct_website_${{ env.RELEASE_VERSION }}.tar.gz ./public
