@@ -86,7 +86,7 @@ Alleen de gegevens die in de CoronaCheck-app zelf staan of in het papieren bewij
 - Vaccinatiegegevens: drie jaar na vaccinatiedatum (bedenk dat in sommige gevallen een positieve testuitslag onderdeel van je vaccinatiegegevens kan zijn);
 - Herstelgegevens: 180 dagen na datum en tijd afname test;
 - Een uniek serienummer van je EU DCC en een code van de databron worden twee jaar bewaard;
-- In het geval wij jou een fysiek EU DCC geven, wordt bijbehorende de koppelcode een jaar na afgifte bewaard.
+- In het geval wij jou een fysiek EU DCC geven, wordt de bijbehorende koppelcode een jaar na afgifte bewaard.
 
 Je BSN wordt niet bewaard. Je IP-adres wordt niet langer dan zeven dagen bewaard.
 
