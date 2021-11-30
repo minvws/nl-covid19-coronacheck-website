@@ -113,11 +113,11 @@ const nl = {
         },
         'recoveryNone': {
             'pageHeader': 'Geen positieve testuitslag beschikbaar',
-            'pageIntro': '<p>Ben je net getest? Het kan een paar uur  duren voordat jouw positieve testuitslag beschikbaar is. Probeer het later nog eens.</p><p>Al even geleden getest? Neem dan contact op met je testlocatie om te controleren of je gegevens goed in het systeem staan.</p>'
+            'pageIntro': '<p>Ben je net getest? Het kan een paar uur duren voordat jouw positieve testuitslag beschikbaar is. Probeer het later nog eens.</p><p>Al even geleden getest? Neem dan contact op met je testlocatie om te controleren of je gegevens goed in het systeem staan.</p>'
         },
         'recoveryInvalid': {
             'pageHeader': 'Jou positieve testuitslag is niet geschikt',
-            'pageIntro': '<p>Je bent positief getest ná je eerste vaccinatie. Daardoor is je testuitslag niet geschikt om een Nederlands bewijs van te maken</p><p>Kijk voor meer informatie bij de <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">meestgestelde vragen</a>.</p>'
+            'pageIntro': '<p>Je bent positief getest ná je eerste vaccinatie. Daardoor is je testuitslag niet geschikt om een Nederlands bewijs van te maken.</p><p>Kijk voor meer informatie bij de <a href="https://coronacheck.nl/nl/faq/2-4-ik-heb-wel-een-internationale-qr-code-maar-geen-nederlandse/" target="_blank" rel="noopener noreferrer">meestgestelde vragen</a>.</p>'
         },
         'print': {
             'pageTitle': 'Jouw bewijs',

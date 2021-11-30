@@ -154,7 +154,7 @@ const en = {
                     },
                     'whyNoDutchCertificate': {
                         'summary': 'Had coronavirus before your first vaccination?',
-                        'content': '<p>Retrieve your positive test result. You will also receive a Dutch certificate then.</p>',
+                        'content': '<p>Retrieve your positive test result. In this way you will also receive a Dutch certificate.</p>',
                         'label': 'Retrieve my test result'
                     },
                     'whyNoEuropeanRecovery': {
