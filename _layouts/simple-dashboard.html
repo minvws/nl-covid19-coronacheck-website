@@ -43,7 +43,7 @@
         </div>
         <div class="CoronaCheckScanner_downloads column-2"> 
             <div>
-                <p>Aantal downloads van de CoronaCheck Scanner<br />
+                <p>Aantal downloads van de CoronaCheck Scanner:<br />
                 <span class="number_highlight">2,42 miljoen</span> downloads.</p>
                 <p>Met de CoronaCheck Scanner-app controleer je de geldigheid van een coronabewijs van een bezoeker. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.</p>
                 <p>De grafiek laat zien hoeveel mensen de CoronaCheck Scanner hebben gedownload.</p>
@@ -84,21 +84,18 @@
         CoronaCheck_downloads_plot.appendChild(
             Plot.plot({
                 y: {
-                    label: "↑ Aantal downloads CoronaCheck", 
-                    tick: false,
+                    label: "↑ Aantal downloads CoronaCheck",  
                     grid: true,
                     ticks: [0, 2, 4, 6, 8, 10, 12, 14, 16],
-                    tickSize: 0, 
-                    tickPadding: 5,
+                    tickSize: 0,  
                     tickFormat: (f => `${f}m`),
+                    labelOffset: -10,
                 },
                 x: {
                     label: "Weeknummer →",
-                    labelAnchor: 'right',
-                    tickPadding: 15,
-                    tickSize: 0,
-                    margin: 20,
-                    dy: 70
+                    labelAnchor: 'right',  
+                    tickSize: 0, 
+                    labelOffset: -10,
                 },
                 marks: [
                     Plot.line(CC_downloads_plot, {
@@ -106,13 +103,12 @@
                         y: "downloadnr",
                         curve: "monotone-y",
                         stroke: "red",
-                        fontSize: 12
                     }),
                 ],
                 style: {
-                    width: 480,
+                    width: 500,
                     height: 240,
-                    fontSize: 16
+                    fontSize: 14
                 },
             })
         );
@@ -144,17 +140,18 @@
             Plot.plot({
                 y: {
                     label: "↑ Aantal downloads CoronaCheck Scanner (miljoen)", 
-                    tick: false,
                     grid: true,
                     ticks: [0, 0.5, 1.0, 1.5, 2.0, 2.5],
                     tickSize: 0, 
                     tickFormat: (f => `${f}m`),
+                    labelOffset: -10,
+                    insetTop: 10
                 },
                 x: {
                     label: "Weeknummer →",
                     labelAnchor: 'right',
+                    labelOffset: -10,
                     tickSize: 0,
-                    dy: 170
                 },
                 marks: [
                     Plot.line(CCScanner_downloads_plot, {
@@ -162,15 +159,15 @@
                         y: "downloadnr",
                         curve: "monotone-y",
                         stroke: "red",
-                        fontSize: 12
                     }),
                 ],
                 style: {
-                    width: 430,
-                    height: 215,
-                    fontSize: 16
+                    width: 500,
+                    height: 240,
+                    fontSize: 14
                 },
-            })
+            }),
+            
         );
     </script>
 </body>
