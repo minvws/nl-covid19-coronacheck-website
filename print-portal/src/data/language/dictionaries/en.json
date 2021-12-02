@@ -303,11 +303,11 @@
 				},
 				"negativetest": {
 					"head": "Is something wrong?",
-					"body": "<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>"
+					"body": "<p>Please contact the test location. They can help you change your details.</p>"
 				},
 				"positivetest": {
 					"head": "Is something wrong?",
-					"body": "<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>"
+					"body": "<p>Please contact the test location. They can help you change your details.</p>"
 				}
 			},
 			"noVerificationCode": {
