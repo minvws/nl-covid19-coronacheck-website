@@ -36,10 +36,11 @@ export default {
                 <Navigation
                     @back="back"
                     :display-back-button="displayBackButton"/>
+                 <Snackbar v-if="hasSnackbarMessage" :class="{ 'screen-reader-text': !isSnackbarVisible }"/>
                 <slot/>
             </div>
         </main>
-        <Snackbar v-if="hasSnackbarMessage" :class="{ 'screen-reader-text': !isSnackbarVisible }"/>
+
         <Footer/>
     </div>
 </template>
