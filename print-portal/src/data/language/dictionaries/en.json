@@ -96,7 +96,7 @@
 		},
 		"recoveryExpired": {
 			"pageHeader": "Positive test result no longer valid",
-			"pageIntro": "<p>It has been more than %{days} days since you tested positive for coronavirus. Therefore, your test result is no longer valid. Unfortunately, you cannot create a recovery certificate.</p><p>Find more information on the <a href=\"https://coronacheck.nl/en/guidepost.html\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost</a>.</p>"
+			"pageIntro": "<p>It has been too long ago since you tested positive for coronavirus. Therefore, your test result is no longer valid. Unfortunately, you cannot create a recovery certificate.</p><p>Find more information on the <a href=\"https://coronacheck.nl/en/guidepost.html\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost</a>.</p>"
 		},
 		"recoveryNone": {
 			"pageHeader": "No positive test result available",
@@ -225,7 +225,7 @@
 			"intro": "Then download the app. You can also make a print of the certificate in the app."
 		},
 		"eventInfo": {
-			"head": "What has been retrieved?",
+			"head": "Details",
 			"name": "Name",
 			"dateOfBirth": "Date of birth",
 			"dateOfTest": "Test date",
@@ -256,7 +256,7 @@
 				"pathogen": "Pathogen",
 				"vaccine": "Vaccine",
 				"vaccineType": "Vaccine type",
-				"manufacturer": "Manufacturer",
+				"manufacturer": "Vaccine manufacturer",
 				"doses": "Doses",
 				"finalDosis": "Is this the last dose of your vaccination?",
 				"vaccinationDate": "Vaccination date",
@@ -298,16 +298,16 @@
 		"info": {
 			"somethingWrong": {
 				"vaccination": {
-					"head": "Something is wrong",
-					"body": "<p>Wrong name or date of birth? Or are your vaccination details incorrect? Please go to <a href=\"https://www.coronacheck.nl/en/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">CoronaCheck.nl/en/guidepost</a> for more information.</p>"
+					"head": "Is something wrong?",
+					"body": "<p>Please contact the care provider who vaccinated you. This can be the GGD, your general practitioner, or a doctor belonging to a healthcare facility. They can help you change these details.</p>"
 				},
 				"negativetest": {
-					"head": "Something is wrong",
-					"body": "<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>"
+					"head": "Is something wrong?",
+					"body": "<p>Please contact the test location. They can help you change your details.</p>"
 				},
 				"positivetest": {
-					"head": "Something is wrong",
-					"body": "<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>"
+					"head": "Is something wrong?",
+					"body": "<p>Please contact the test location. They can help you change your details.</p>"
 				}
 			},
 			"noVerificationCode": {

@@ -99,7 +99,7 @@
 		},
 		"recoveryExpired": {
 			"pageHeader": "Positieve testuitslag niet meer geldig",
-			"pageIntro": "<p>Het is langer dan %{days} dagen geleden dat je positief getest bent op corona. Daarom is je testuitslag niet meer geldig. Je kunt helaas geen herstelbewijs maken.</p><p>Kijk voor meer informatie op de <a href=\"https://coronacheck.nl/nl/wegwijzer.html\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer</a>.</p>"
+			"pageIntro": "<p>Het is te lang geleden dat je positief getest bent op corona. Daarom is je testuitslag niet meer geldig. Je kunt helaas geen herstelbewijs maken.</p><p>Kijk voor meer informatie op de <a href=\"https://coronacheck.nl/nl/wegwijzer.html\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer</a>.</p>"
 		},
 		"recoveryNone": {
 			"pageHeader": "Geen positieve testuitslag beschikbaar",
@@ -228,7 +228,7 @@
 			"intro": "Download dan de app. Ook van een bewijs in de app kun je een print maken."
 		},
 		"eventInfo": {
-			"head": "Wat is er opgehaald?",
+			"head": "Details",
 			"name": "Naam",
 			"dateOfBirth": "Geboortedatum",
 			"dateOfTest": "Testdatum",
@@ -258,8 +258,8 @@
 				"detailsRetrieved": "Deze gegevens van je vaccinatie zijn opgehaald bij %{provider}",
 				"pathogen": "Ziekteverwekker",
 				"vaccine": "Vaccin",
-				"vaccineType": "Vaccin type",
-				"manufacturer": "Producent van het vaccin",
+				"vaccineType": "Type vaccin",
+				"manufacturer": "Producent",
 				"doses": "Doses",
 				"finalDosis": "Is dit de laatste dosis van je vaccinatie?",
 				"vaccinationDate": "Vaccinatiedatum",
@@ -301,16 +301,16 @@
 		"info": {
 			"somethingWrong": {
 				"vaccination": {
-					"head": "Er klopt iets niet",
-					"body": "<p>Kloppen er gegevens niet? Neem dan contact op met de zorgverlener waar je bent gevaccineerd. Zij kunnen je gegevens aanpassen.</p>"
+					"head": "Klopt er iets niet?",
+					"body": "<p>Neem contact op met de zorgverlener waar je bent gevaccineerd. Dat kan de GGD, je huisarts of arts van een zorginstelling zijn. Zij kunnen je helpen je gegevens aan te passen.</p>"
 				},
 				"negativetest": {
-					"head": "Er klopt iets niet",
-					"body": "<p>Kloppen er gegevens niet? Neem contact op met je testlocatie. Zij kunnen de gegevens aanpassen.</p>"
+					"head": "Klopt er iets niet?",
+					"body": "<p>Neem contact op met je testlocatie. Zij kunnen je helpen je gegevens aan te passen.</p>"
 				},
 				"positivetest": {
-					"head": "Er klopt iets niet",
-					"body": "<p>Kloppen er gegevens niet? Neem contact op met je testlocatie. Zij kunnen de gegevens aanpassen.</p>"
+					"head": "Klopt er iets niet?",
+					"body": "<p>Neem contact op met je testlocatie. Zij kunnen je helpen je gegevens aan te passen.</p>"
 				}
 			},
 			"noVerificationCode": {

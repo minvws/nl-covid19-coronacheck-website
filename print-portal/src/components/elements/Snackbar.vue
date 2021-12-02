@@ -11,17 +11,25 @@ export default {
         }
     },
     methods: {
+        onKeyDown ({ key }) {
+            if (key === 'Escape') {
+                this.close();
+            }
+        },
         close() {
             this.$store.commit('snackbar/close');
             document.querySelector('h1,h2,h3')?.focus()
+        },
+        configureListeners(type) {
+            window[`${type}EventListener`]('keydown', this.onKeyDown)
         }
     },
+    beforeDestroy () {
+        this.configureListeners('remove')
+    },
     mounted() {
-        window.addEventListener('keydown', e => {
-            if (e.key === 'Escape') {
-                this.close();
-            }
-        });
+        this.$refs.button?.focus() // auto focus on close button
+        this.configureListeners('add')
     }
 }
 </script>
@@ -40,6 +48,7 @@ export default {
         <button
             :aria-label="$t('ok')"
             @click="close"
+            ref="button"
             class="snackbar__close">
             <img
                 class="close"

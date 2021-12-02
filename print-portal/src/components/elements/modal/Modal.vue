@@ -177,6 +177,7 @@ export default {
     max-width: 100%;
     overflow-y: auto;
     pointer-events: all;
+    overflow: hidden;
 
     div::-webkit-scrollbar {
         width: 6px;
