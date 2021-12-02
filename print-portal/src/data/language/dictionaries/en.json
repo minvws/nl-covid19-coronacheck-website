@@ -298,15 +298,15 @@
 		"info": {
 			"somethingWrong": {
 				"vaccination": {
-					"head": "Something is wrong",
+					"head": "Is something wrong?",
 					"body": "<p>Wrong name or date of birth? Or are your vaccination details incorrect? Please go to <a href=\"https://www.coronacheck.nl/en/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">CoronaCheck.nl/en/guidepost</a> for more information.</p>"
 				},
 				"negativetest": {
-					"head": "Something is wrong",
+					"head": "Is something wrong?",
 					"body": "<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>"
 				},
 				"positivetest": {
-					"head": "Something is wrong",
+					"head": "Is something wrong?",
 					"body": "<p>Do your details not match your ID? Please contact your test location to have your details adjusted.</p>"
 				}
 			},

@@ -301,15 +301,15 @@
 		"info": {
 			"somethingWrong": {
 				"vaccination": {
-					"head": "Er klopt iets niet",
+					"head": "Klopt er iets niet?",
 					"body": "<p>Kloppen er gegevens niet? Neem dan contact op met de zorgverlener waar je bent gevaccineerd. Zij kunnen je gegevens aanpassen.</p>"
 				},
 				"negativetest": {
-					"head": "Er klopt iets niet",
+					"head": "Klopt er iets niet?",
 					"body": "<p>Kloppen er gegevens niet? Neem contact op met je testlocatie. Zij kunnen de gegevens aanpassen.</p>"
 				},
 				"positivetest": {
-					"head": "Er klopt iets niet",
+					"head": "Klopt er iets niet?",
 					"body": "<p>Kloppen er gegevens niet? Neem contact op met je testlocatie. Zij kunnen de gegevens aanpassen.</p>"
 				}
 			},
