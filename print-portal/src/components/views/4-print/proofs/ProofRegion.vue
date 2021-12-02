@@ -2,7 +2,7 @@
 import Paper from './Paper';
 import CcButton from '@/components/elements/CcButton';
 import { detect } from 'detect-browser';
-import { getDocument, parseProofData } from '@91divoc-ln/dcc-pdf-tools';
+import { getDocument, parseProofData } from 'dcc-pdf-tools';
 import { QRSizeInCm } from '@/data/constants';
 import { RegionTypes } from '@/types/region-types'
 

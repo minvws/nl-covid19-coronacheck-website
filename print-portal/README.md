@@ -8,12 +8,6 @@ See https://coronacheck.nl/nl/print/
 - `Vue CLI` `npm install -g @vue/cli`
   
 ### Installation
-- setup a GitHub Personal Access Token
-  1. [create a new token with scopes `repo` and `read:packages`](https://github.com/settings/tokens/new?scopes=repo,read:packages&description=nl-covid19-coronacheck-website)
-  2. add the token to `~/.npmrc` in your home directory:
-    ```
-    //npm.pkg.github.com/:_authToken=TOKEN
-    ```
 - run `npm install` from this directory
 - run `npm run serve`
 
