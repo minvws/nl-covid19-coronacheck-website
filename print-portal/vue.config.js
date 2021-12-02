@@ -9,7 +9,7 @@ module.exports = {
             })
     },
     transpileDependencies: [
-        'dcc-pdf-tools',
+        '@91divoc-ln/dcc-pdf-tools',
         'jspdf',
         'vue-i18n',
         'oidc-client'
