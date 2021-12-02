@@ -225,7 +225,7 @@
 			"intro": "Then download the app. You can also make a print of the certificate in the app."
 		},
 		"eventInfo": {
-			"head": "What has been retrieved?",
+			"head": "Details",
 			"name": "Name",
 			"dateOfBirth": "Date of birth",
 			"dateOfTest": "Test date",
