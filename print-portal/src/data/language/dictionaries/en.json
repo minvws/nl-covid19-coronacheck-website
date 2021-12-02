@@ -299,7 +299,7 @@
 			"somethingWrong": {
 				"vaccination": {
 					"head": "Is something wrong?",
-					"body": "<p>Wrong name or date of birth? Or are your vaccination details incorrect? Please go to <a href=\"https://www.coronacheck.nl/en/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">CoronaCheck.nl/en/guidepost</a> for more information.</p>"
+					"body": "<p>Please contact the care provider who vaccinated you. This can be the GGD, your general practitioner, or a doctor belonging to a healthcare facility. They can help you change these details.</p>"
 				},
 				"negativetest": {
 					"head": "Is something wrong?",
