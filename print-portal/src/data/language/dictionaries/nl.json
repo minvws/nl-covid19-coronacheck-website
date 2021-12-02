@@ -99,7 +99,7 @@
 		},
 		"recoveryExpired": {
 			"pageHeader": "Positieve testuitslag niet meer geldig",
-			"pageIntro": "<p>Het is langer dan %{days} dagen geleden dat je positief getest bent op corona. Daarom is je testuitslag niet meer geldig. Je kunt helaas geen herstelbewijs maken.</p><p>Kijk voor meer informatie op de <a href=\"https://coronacheck.nl/nl/wegwijzer.html\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer</a>.</p>"
+			"pageIntro": "<p>Het is te lang geleden dat je positief getest bent op corona. Daarom is je testuitslag niet meer geldig. Je kunt helaas geen herstelbewijs maken.</p><p>Kijk voor meer informatie op de <a href=\"https://coronacheck.nl/nl/wegwijzer.html\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer</a>.</p>"
 		},
 		"recoveryNone": {
 			"pageHeader": "Geen positieve testuitslag beschikbaar",

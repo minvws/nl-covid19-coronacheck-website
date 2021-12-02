@@ -96,7 +96,7 @@
 		},
 		"recoveryExpired": {
 			"pageHeader": "Positive test result no longer valid",
-			"pageIntro": "<p>It has been more than %{days} days since you tested positive for coronavirus. Therefore, your test result is no longer valid. Unfortunately, you cannot create a recovery certificate.</p><p>Find more information on the <a href=\"https://coronacheck.nl/en/guidepost.html\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost</a>.</p>"
+			"pageIntro": "<p>It has been too long ago since you tested positive for coronavirus. Therefore, your test result is no longer valid. Unfortunately, you cannot create a recovery certificate.</p><p>Find more information on the <a href=\"https://coronacheck.nl/en/guidepost.html\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost</a>.</p>"
 		},
 		"recoveryNone": {
 			"pageHeader": "No positive test result available",
