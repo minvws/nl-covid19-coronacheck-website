@@ -256,7 +256,7 @@
 				"pathogen": "Pathogen",
 				"vaccine": "Vaccine",
 				"vaccineType": "Vaccine type",
-				"manufacturer": "Manufacturer",
+				"manufacturer": "Vaccine manufacturer",
 				"doses": "Doses",
 				"finalDosis": "Is this the last dose of your vaccination?",
 				"vaccinationDate": "Vaccination date",
