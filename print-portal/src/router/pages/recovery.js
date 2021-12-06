@@ -60,8 +60,8 @@ const recoveryPages = [
         props: {
             translationId: 'recoveryInvalid',
             route: {
-                name: 'RecoveryOverview',
-                translationId: 'goToOverview',
+                name: 'Home',
+                translationId: 'goBackToStart',
                 replace: true
             }
         },

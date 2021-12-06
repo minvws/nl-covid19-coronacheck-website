@@ -7,6 +7,7 @@ import { ClientCode } from '@/data/constants/error-codes'
 import { StepTypes } from '@/types/step-types'
 import { ProviderTypes } from '@/types/provider-types'
 import { events as AuthEvent } from '@/store/modules/auth'
+import { FilterTypes } from '@/types/filter-types'
 
 export default {
     name: 'redirect-mixin',
@@ -292,6 +293,29 @@ export default {
 
             return true
         },
+        isTestedPositiveBeforeLastVaccination (proofEvents) {
+            // all positive tests dates
+            const positiveTests = proofEvents.map(({ event: { positivetest } }) => positivetest)
+                .filter(positivetest => !!positivetest)
+                .map(({ sampleDate }) => new Date(sampleDate))
+
+            // get all vaccination dates and sort on date
+            const vaccinations = this.$store.getters['signedEvents/getProofEvents'](FilterTypes.VACCINATION)
+                .map(({ event: { vaccination: { date } } }) => {
+                    return new Date(date)
+                }).sort((a, b) => b.getTime() - a.getTime());
+
+            // positive-test should be BEFORE last vaccination
+            const lastVaccination = vaccinations?.[0]
+            if (lastVaccination && positiveTests.length) {
+                const positiveTestIsBeforeVaccination = positiveTests.find(date => {
+                    const difference = differenceInCalendarDays(date, lastVaccination)
+                    return difference >= 0
+                })
+                if (positiveTestIsBeforeVaccination) return true
+            }
+            return false
+        },
         checkResult(results) {
             const signedEvents = [];
             for (const result of results) {
@@ -306,6 +330,8 @@ export default {
             if (proofEvents.length > 0) {
                 if (this.areAllRecoveriesExpired(proofEvents)) {
                     this.$router.push({ name: 'RecoveryExpired' });
+                } else if (this.isTestedPositiveBeforeLastVaccination(proofEvents)) {
+                    this.$router.push({ name: 'RecoveryInvalid' });
                 } else {
                     this.$router.push({ name: this.pages.overview });
                 }
