@@ -94,7 +94,7 @@ Your social security number will not be stored. Your IP address will not be stor
 
  If you show your certificate to a controller at an event or to the person checking your certificate in another member state when you enter, they can read the data contained in the QR code. The controller is not allowed to store this data. They can only check at that moment whether you have a valid domestic coronavirus pass, or a valid EU DCC and they check whether this card is really yours by comparing the data they see on the CoronaCheck Scanner screen with the data on your identity card.
 
-For checking a coronavirus pass for use in the Netherlands, the Minister of Health has developed the CoronaCheck Scanner app to be used by the controllers. This shows as little data as possible, namely a green screen (valid coronavirus pass) or a red screen (not valid). This means the checker cannot see whether your coronavirus pass is based on a negative test, a vaccination or a positive test (recovery). If a green screen is displayed, the controller will then see the first letter of your first name and first letter of your last name, date of birth and month of birth as to verify it really is your certificate.
+For checking a coronavirus pass for use in the Netherlands, the Minister of Health has developed the CoronaCheck Scanner app to be used by the controllers. This shows as little data as possible, namely a green screen (valid coronavirus pass) or a red screen (not valid). This means the checker cannot see whether your coronavirus pass is based on a negative test, a vaccination or a positive test (recovery). If a green screen is displayed, the controller will then see the first letter of your first name and first letter of your last name, day of birth and month of birth as to verify it really is your certificate.
 
 You cannot use your EU DCC in the Netherlands. If you do show your EU DCC to the controller in the Netherlands, the controller will be shown a red screen and a message that you need to show your domestic coronavirus pass. This is because the QR code of the EU DCC contains more data than we consider necessary for access in the Netherlands. If you show the EU DCC in another country, the controller in that other country will see all the data included in the QR code of the EU DCC. [Click here for an overview of that data](#overview-of-processed-personal-data).
 
@@ -128,7 +128,7 @@ The Minister takes protection of your personal data seriously and has taken appr
 
 ## 12. Changing privacy statement
 
-This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: November 29, 2021.
+This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: December 1, 2021.
 
 ## Overview of processed personal data 
 
