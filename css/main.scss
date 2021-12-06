@@ -47,3 +47,6 @@ $file-path: "/";
 @import "01-setup/layout";
 @import "02-components/legend";
 @import "03-partials/key-figures";
+
+// Used on the download statistics page
+@import "03-partials/graphs";

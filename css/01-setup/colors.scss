@@ -26,18 +26,4 @@ $color-cc-link-on-lightgrey--interaction: rgba(0, 78, 177, 1);
 $color-error: rgba(179, 9, 0, 1);
 $color-announcement-background: rgba(255, 247, 246, 1);
 
-$statistics: rgba(236, 2, 95, 1);
-
-.CoronaCheck_downloads {
-    border-bottom: 1px solid $color-mediumgrey;
-}
-
-.plot {
-    margin: 16px 0;
-}
-
-.number_highlight {
-    color: $statistics;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+$statistics: #ec025f;
