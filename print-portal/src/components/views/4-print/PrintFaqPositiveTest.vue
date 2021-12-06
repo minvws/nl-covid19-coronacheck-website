@@ -1,9 +1,5 @@
 <template>
     <div>
-        <b>
-           {{ summary }}
-        </b>
-        <div v-html="content" />
         <router-link
             v-if="to && label"
             class="link"
@@ -16,14 +12,6 @@
 export default {
     name: 'PrintFaqPositiveTest',
     props: {
-        summary: {
-            type: String,
-            required: true
-        },
-        content: {
-            type: String,
-            required: true
-        },
         label: {
             type: String,
             required: false

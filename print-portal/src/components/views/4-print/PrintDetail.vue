@@ -5,7 +5,7 @@
                 {{ summary }}
             </h3>
         </summary>
-        <div v-html="content" />
+        <div v-html="content" :class="{ slot: hasSlot }"/>
         <slot />
     </details>
 </template>
@@ -20,6 +20,16 @@ export default {
             type: String,
             required: true
         }
+    },
+    computed: {
+        hasSlot () {
+            return !!this.$slots.default?.[0];
+        }
     }
 };
 </script>
+<style scoped>
+.slot {
+    padding-bottom: 0;
+}
+</style>
