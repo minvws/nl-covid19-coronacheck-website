@@ -18,9 +18,18 @@ CoronaCheck wordt ondertussen door veel mensen gebruikt om een vaccinatie, herst
 <div markdown="1">
 CoronaCheck haalt gegevens over vaccinaties op bij de systemen van het RIVM en de GGD. Ook andere vaccinatiezetters, zoals ziekenhuizen, huisartsen en andere zorgverleners, hebben je vaccinatiegegevens doorgegeven aan het RIVM. Dit doen zij alleen als je hier toestemming voor hebt gegeven. Vaccinatiegegevens kan je ophalen in de app. [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Je bent volledig gevaccineerd vanaf 14 dagen na de laatste vaccinatie. Zodra je vaccinatie goed is geregistreerd kun je een vaccinatiebewijs maken. Een internationale QR-code kan worden gemaakt na één vaccinatie.
+Om een Nederlandse QR-code te maken dien je volledig te zijn gevaccineerd. Je bent volledig gevaccineerd vanaf 14 dagen na de laatste vaccinatie. Of na 28 dagen wanneer je met Janssen bent gevaccineerd. Zodra je vaccinatie goed is geregistreerd kun je een vaccinatiebewijs maken. Een internationale QR-code kan worden gemaakt na één vaccinatie.
 
 **Let op:** een QR-code van 1 prik is niet in álle landen geldig. Controleer daarom het reisadvies op {{ site.data.links.wijsopreis[page.lang] }}. Meer informatie over vaccinatiebewijzen vind je op {{ site.data.links.vaccinatiebewijs[page.lang] }}.
+</div>
+{% endcapture %}
+
+
+{% capture copy_geen_derde_prik %}
+<div markdown="1">
+
+Je moet zelf je vaccinatiegegevens van je derde prik ophalen door opnieuw in te loggen met DigiD. Staat je derde prik er niet bij? Neem dan contact op met de zorgverlener die je heeft gevaccineerd. Ben je bij de GGD gevaccineerd dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten controleren. Ben je gevaccineerd door je huisarts, ziekenhuis of zorginstelling? Neem dan contact met hen op.
+
 </div>
 {% endcapture %}
 
@@ -72,9 +81,9 @@ Kijk op {{ site.data.links.buitenlandvaccinatie[page.lang] }}. Daar vind je alti
 
 {% capture copy_herstelbewijs %}
 <div markdown="1">
-Een herstelbewijs is een bewijs dat je ooit positief getest bent op aanwezigheid van het Sars-Cov2 virus.
+Een herstelbewijs is een bewijs dat je ooit positief getest bent op aanwezigheid van het Sars-Cov2-virus.
 
-**Let op:** Een herstelbewijs wordt niet verstrekt op basis van een zelftest of een serologische test. In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test, en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeen test.
+**Let op:** Een herstelbewijs wordt niet verstrekt op basis van een zelftest of een serologische test. In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test. Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeentest.
 
 CoronaCheck haalt de positieve testuitslagen op bij de GGD. Zowel testuitslagen van de GGD zelf, als testuitslagen van andere testlocaties kunnen worden opgehaald. Deze uitslagen moeten dan wel zijn doorgegeven aan de GGD.
 
@@ -86,10 +95,10 @@ Meer informatie over herstelbewijzen vind je op {{ site.data.links.herstelbewijs
 <div markdown="1">
 Dit kan verschillende oorzaken hebben:
 
-- Je bent korter dan 11 dagen geleden (positief) getest. In dit geval kun je je herstelbewijs al wel ophalen, maar deze is pas op de 12e dag na testafname geldig.
-- Je bent langer dan 180 dagen geleden (positief) getest. In dit geval heb je geen recht op een herstelbewijs.
+- Je bent pas net getest. Het kan een paar uur duren voordat jouw positieve testuitslag beschikbaar is.
+- Je bent langer dan 365 dagen geleden (positief) getest. In dit geval heb je geen recht op een herstelbewijs.
 
-Als geen van bovenstaande situaties van toepassing is, maar je bent wel positief getest, neem dan contact op met jouw testlocatie. Zij kunnen je helpen te achterhalen of er wellicht gegevens onjuist geregistreerd staan. Ben je getest bij de GGD? Dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }}. 
+Is geen van bovenstaande situaties op jou van toepassing, maar je bent wel positief getest? Neem dan contact op met de GGD als je daar bent getest op {{ site.data.links.phone-ggd[page.lang] }} of vul dit {{ site.data.links.herstelbewijs-elders[page.lang] }} in als je op een andere locatie bent getest.
 
 Als je echt binnen een paar dagen een evenement wilt bezoeken, is het advies om een gratis test-afspraak in te plannen zodat je een testbewijs kan maken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
@@ -103,17 +112,19 @@ Kloppen de opgehaalde gegevens van je positieve testuitslag niet, bijvoorbeeld j
 
 {% capture copy_we_kunnen_geen_herstelbewijs_maken %}
 <div markdown="1"> 
-Worden er wel gegevens over jouw herstel gevonden, maar zegt CoronaCheck dat er geen bewijs gemaakt kan worden? Het kan zijn dat jouw testuitslag meer dan 180 dagen oud is. Dan is het niet meer mogelijk om een herstelbewijs te maken.
+Worden er wel gegevens over jouw herstel gevonden, maar zegt CoronaCheck dat er geen bewijs gemaakt kan worden? Het kan zijn dat jouw testuitslag meer dan 365 dagen oud is. Dan is het niet meer mogelijk om een herstelbewijs te maken.
 
-Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Als je bij de GGD bent getest, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten wijzigen. Ben je door een andere testlocatie getest dan de GGD? Ga dan naar {{ site.data.links.herstelbewijs-elders[page.lang] }} en vul het formulier in.
+Ben je korter dan 365 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Als je bij de GGD bent getest, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten wijzigen. Ben je door een andere testlocatie getest dan de GGD? Ga dan naar {{ site.data.links.herstelbewijs-elders[page.lang] }} en vul het formulier in.
 
 Duurt dat voor jou te lang? Dan kun je altijd gratis een testafspraak boeken zodat je een testbewijs kan maken. Bijvoorbeeld als je een evenement wilt bezoeken. Maak je afspraak op: {{ site.data.links.testen-voor-toegang[page.lang] }}.
+
+Heb je een papieren herstelbewijs toegevoegd met een geldigheid van 180 dagen? Dan kun je in veel gevallen je herstelbewijs met 365 dagen geldigheid ophalen door in te loggen met DigiD. Of vraag je nieuwe herstelbewijs aan.
 </div>
 {% endcapture %}
 
 {% capture copy_geen_internationaal_herstelbewijs %}
 <div markdown="1"> 
-In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test, en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeen test.
+In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test, en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeentest, en is het herstelbewijs geldig tot 365 dagen na afname van de positieve test.
 
 ### Ben jij vóór 8 september getest bij een andere testlocatie dan de GGD?
 
@@ -250,6 +261,11 @@ Voor overige vragen kun je terecht bij <a href="https://www.nederlandwereldwijd.
 <h3>Algemeen over vaccinatiebewijs</h3>
 {{ copy_vaccinatiebewijs }}
 
+<details class="details" id="vacc_nothirdjab">
+<summary><h3>Mijn 3e prik wordt niet gevonden</h3></summary>
+{{ copy_geen_derde_prik }}
+</details>
+
 <details class="details" id="vacc_nodata">
 <summary><h3>Geen vaccinatiegegevens gevonden</h3></summary>
 {{ copy_geen_vaccinatiegegevens }}
@@ -289,7 +305,7 @@ Voor overige vragen kun je terecht bij <a href="https://www.nederlandwereldwijd.
 </details>
 
 <details class="details" id="recovery_cantmakeproof">
-<summary><h3>De app kan geen bewijs maken</h3></summary>
+<summary><h3>De app kan geen bewijs maken/bewijs kan niet verlengd worden</h3></summary>
 {{ copy_we_kunnen_geen_herstelbewijs_maken }}
 </details>
 
