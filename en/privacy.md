@@ -19,8 +19,8 @@ To create a domestic coronavirus pass and an EU DCC, we use data about your heal
 In addition to the above information, the following information is required, which varies depending on the certificate you want to retrieve: 
 
 - If you want a certificate based on a negative test; a recent negative test result and the type of test;
-- If you want a certificate based on vaccination; if you’ve been vaccinated, using what vaccine;
-- If you want a certificate based on recovery; a positive test result that shows you had coronavirus in the past. 
+- If you want a certificate based on a vaccination; if you’ve been vaccinated, using what vaccine, and possibly a positive test result in the past (so that, in case of vaccinations that normally consist of two injections, a full vaccination certificate can be issued after only one injection if you had coronavirus prior to your vaccination;
+- If you want a certificate based on recovery; a positive test result that shows you had coronavirus in the past.
 
 Because the app and website use an internet connection, your IP address will also be processed. This is inherent to the use of internet and IP technology and is necessary to technically establish a connection between the test performer's or vaccinator's server and your phone or browser. The IP address is processed for management and security purposes only.
 
@@ -82,9 +82,9 @@ The Minister’s processors:
 
 Only data saved in the CoronaCheck-app itself or printed on the paper certificate will be kept. Of course, for the paper certificate you decide how long to keep the data. This is also the case with the CoronaCheck-app: if you delete the app that data will also be deleted. Otherwise, the data will be stored according to the following time periods:
 
-- Test results: 96 hours after date and time of test administration
-- Vaccination data: one year after vaccination date
-- Recovery data: 180 days after date and time of test administration
+- Negative test results: 96 hours after date and time of test administration;
+- Positive test results: 1 year (for a recovery certificate, but if it is part of a vaccination certificate, up until 3 years after your most recent vaccination);
+- Vaccination data: 3 years after the vaccination date (please be aware that in some cases a positive test result can be part of your vaccination data)
 - A unique serial number of your EU DCC and a code of the datasource will be saved for two years.
 - In case we provide you with a physical EU DCC, the associated pairing code will be saved for one year after the issue.
 
@@ -94,7 +94,7 @@ Your social security number will not be stored. Your IP address will not be stor
 
  If you show your certificate to a controller at an event or to the person checking your certificate in another member state when you enter, they can read the data contained in the QR code. The controller is not allowed to store this data. They can only check at that moment whether you have a valid domestic coronavirus pass, or a valid EU DCC and they check whether this card is really yours by comparing the data they see on the CoronaCheck Scanner screen with the data on your identity card.
 
-For checking a coronavirus pass for use in the Netherlands, the Minister of Health has developed the CoronaCheck Scanner app to be used by the controllers. This shows as little data as possible, namely a green screen (valid coronavirus pass) or a red screen (not valid). This means the checker cannot see whether your coronavirus pass is based on a negative test, a vaccination or a positive test (recovery). If a green screen is displayed, the controller will then see the first letter of your first name and first letter of your last name, date of birth and month of birth as to verify it really is your certificate.
+For checking a coronavirus pass for use in the Netherlands, the Minister of Health has developed the CoronaCheck Scanner app to be used by the controllers. This shows as little data as possible, namely a green screen (valid coronavirus pass) or a red screen (not valid). This means the checker cannot see whether your coronavirus pass is based on a negative test, a vaccination or a positive test (recovery). If a green screen is displayed, the controller will then see the first letter of your first name and first letter of your last name, day of birth and month of birth as to verify it really is your certificate.
 
 You cannot use your EU DCC in the Netherlands. If you do show your EU DCC to the controller in the Netherlands, the controller will be shown a red screen and a message that you need to show your domestic coronavirus pass. This is because the QR code of the EU DCC contains more data than we consider necessary for access in the Netherlands. If you show the EU DCC in another country, the controller in that other country will see all the data included in the QR code of the EU DCC. [Click here for an overview of that data](#overview-of-processed-personal-data).
 
@@ -128,7 +128,7 @@ The Minister takes protection of your personal data seriously and has taken appr
 
 ## 12. Changing privacy statement
 
-This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: October 12, 2021.
+This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: December 1, 2021.
 
 ## Overview of processed personal data 
 
