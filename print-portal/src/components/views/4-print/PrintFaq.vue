@@ -28,6 +28,7 @@ export default {
             const details = [];
             if (this.type === FilterTypes.VACCINATION && this.regionType === RegionTypes.EUROPEAN) {
                 details.push('whyNoDomesticVaccination');
+                details.push('whyNoDutchCertificate');
             }
             if (this.type === FilterTypes.RECOVERY && this.regionType === RegionTypes.DOMESTIC) {
                 details.push('whyNoEuropeanRecovery');
@@ -95,7 +96,7 @@ export default {
                 v-bind="{content, summary}"
                 class="details details--modest">
                 <PrintFaqPositiveTest
-                    v-if="name === 'whyNoDomesticVaccination'"
+                    v-if="name === 'whyNoDutchCertificate'"
                     v-bind="action"
                 />
             </PrintDetail>
