@@ -145,7 +145,7 @@ export default {
     <div class="ProofRegion">
         <Paper :region="region"/>
         <div class="ProofRegion__content">
-            <h3>{{ $t('components.proofRegion.' + region + '.title') }}</h3>
+            <h2>{{ $t('components.proofRegion.' + region + '.title') }}</h2>
             <p>{{ $t('components.proofRegion.' + region + '.intro' )}}</p>
             <div class="print-buttons">
                 <template v-for="(item, index) in buttons">
@@ -186,7 +186,6 @@ export default {
 
         h2 {
             font-size: calc(22rem / 16);
-            padding-top: 1.2em;
             margin-bottom: 16px;
         }
 
