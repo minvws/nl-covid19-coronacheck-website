@@ -234,6 +234,15 @@ Voor overige vragen kun je terecht bij <a href="https://www.nederlandwereldwijd.
 </div>
 {% endcapture %}
 
+{% capture copy_positive_before_vacc %}
+<div markdown="1">
+Ben je positief getest en kreeg je daarna je eerste prik? Dan ben je volledig gevaccineerd. Je krijgt een volledig vaccinatiebewijs als je opgehaalde positieve testuitslag van vóór je eerste prik is. 
+
+Vanaf versie 2.6.0 in de CoronaCheck-app krijg je, nadat er maar één prik wordt gevonden tijdens het ophalen van je vaccinatiegegevens, de mogelijkheid om ook een positieve testuitslag op te halen. Op dit moment kun je alleen de meest recente positieve test ophalen. 
+
+Ben je vaker positief getest waarvan de eerste keer vóór je eerste prik, maar wordt alleen je testuitslag van erná gevonden? Neem dan contact op met de zorgverlener waar je gevaccineerd bent. Zij kunnen je helpen om een volledig vaccinatiebewijs te maken.
+</div>
+{% endcapture %}
 
 {% comment %}
     Page structure ----------------------------------------------
@@ -263,6 +272,11 @@ Voor overige vragen kun je terecht bij <a href="https://www.nederlandwereldwijd.
 <details class="details" id="vacc_cantmakeproof">
 <summary><h3>De app kan geen bewijs maken</h3></summary>
 {{ copy_app_kan_geen_bewijs_maken }}
+</details>
+
+<details class="details" id="vacc_positive_before_vacc">
+<summary><h3>Positief getest vóór mijn eerste vaccinatie</h3></summary>
+{{ copy_positive_before_vacc }}
 </details>
 
 <details class="details" id="vacc_othercountry"><summary><h3>Ben je in het buitenland gevaccineerd?</h3></summary>
