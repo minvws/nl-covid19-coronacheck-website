@@ -96,7 +96,6 @@ export const getClientSideErrorCode = (code = '') => {
     case 'ECONNABORTED':
         return ClientCode.CONNECTION.UNABLE_TO_CONNECT;
     default:
-        console.error('unhandled clientSide error', code)
         return ClientCode.UNKNOWN;
     }
 }
