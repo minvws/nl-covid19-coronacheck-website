@@ -308,11 +308,11 @@ export default {
             // positive-test should be BEFORE first vaccination
             const lastVaccination = vaccinations?.[0]
             if (lastVaccination && positiveTests.length) {
-                const positiveTestIsBeforeVaccination = positiveTests.find(date => {
+                const isTestedPositiveBeforeFirstVaccination = positiveTests.find(date => {
                     const difference = differenceInCalendarDays(date, lastVaccination)
                     return difference >= 0
                 })
-                if (positiveTestIsBeforeVaccination) return true
+                if (isTestedPositiveBeforeFirstVaccination) return true
             }
             return false
         },
