@@ -293,7 +293,7 @@ export default {
 
             return true
         },
-        isTestedPositiveBeforeLastVaccination (proofEvents) {
+        isTestedPositiveBeforeFirstVaccination (proofEvents) {
             // all positive tests dates
             const positiveTests = proofEvents.map(({ event: { positivetest } }) => positivetest)
                 .filter(positivetest => !!positivetest)
@@ -306,10 +306,10 @@ export default {
                 }).sort((a, b) => a.getTime() - b.getTime());
 
             // positive-test should be BEFORE first vaccination
-            const lastVaccination = vaccinations?.[0]
-            if (lastVaccination && positiveTests.length) {
+            const firstVaccination = vaccinations?.[0]
+            if (firstVaccination && positiveTests.length) {
                 const isTestedPositiveBeforeFirstVaccination = positiveTests.find(date => {
-                    const difference = differenceInCalendarDays(date, lastVaccination)
+                    const difference = differenceInCalendarDays(date, firstVaccination)
                     return difference >= 0
                 })
                 if (isTestedPositiveBeforeFirstVaccination) return true
@@ -330,7 +330,7 @@ export default {
             if (proofEvents.length > 0) {
                 if (this.areAllRecoveriesExpired(proofEvents)) {
                     this.$router.push({ name: 'RecoveryExpired' });
-                } else if (this.isTestedPositiveBeforeLastVaccination(proofEvents)) {
+                } else if (this.isTestedPositiveBeforeFirstVaccination(proofEvents)) {
                     this.$router.push({ name: 'RecoveryInvalid' });
                 } else {
                     this.$router.push({ name: this.pages.overview });
