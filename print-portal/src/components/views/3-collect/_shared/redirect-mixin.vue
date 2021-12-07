@@ -303,9 +303,9 @@ export default {
             const vaccinations = this.$store.getters['signedEvents/getProofEvents'](FilterTypes.VACCINATION)
                 .map(({ event: { vaccination: { date } } }) => {
                     return new Date(date)
-                }).sort((a, b) => b.getTime() - a.getTime());
+                }).sort((a, b) => a.getTime() - b.getTime());
 
-            // positive-test should be BEFORE last vaccination
+            // positive-test should be BEFORE first vaccination
             const lastVaccination = vaccinations?.[0]
             if (lastVaccination && positiveTests.length) {
                 const positiveTestIsBeforeVaccination = positiveTests.find(date => {
