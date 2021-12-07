@@ -2,6 +2,8 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
+import { goHome } from '@/tools/router';
+
 export default {
     name: 'RecoveryLayout',
     components: { Page, PageIntro, CcButton },
@@ -28,7 +30,11 @@ export default {
     },
     methods: {
         onButtonClick () {
-            const { replace } = this.route
+            const { replace, name } = this.route
+            if (name === 'Home') {
+                goHome()
+                return
+            }
             if (replace) this.$router.replace(this.route)
             else this.$router.push(this.route)
         }
