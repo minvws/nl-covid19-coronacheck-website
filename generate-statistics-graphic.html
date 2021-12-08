@@ -1,60 +1,14 @@
-{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
-{%- assign langSlug = site.baseurl | append: '/' -%}
-{%- if page.lang -%}
-  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
-{%- endif -%}
 <!DOCTYPE html>
-<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
-{% include open-source-comment.html %}
-{% include head.html %}
+<html lang="nl">
 <body>
-  {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
-    {% include header-slim.html for="scanner" %}
-  {% else %}
-    {% include header-slim.html %}
-  {% endif %}
-  
-  <main class="content-center" id="content">
-    {% if page.showBreadCrumbs %}
-      {% include components/breadcrumbs.html title=page.title collection=page.collection %}
-    {% endif %}
+    <div id="CoronaCheck_downloads_plot"></div>
 
-    {% if page.showHomeBtn %}
-      <p class="content-center__home return_link">
-        <a href="{{ langSlug }}">
-          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-home[page.lang] }}
-        </a>
-      </p>
-    {% endif %}
-    
-    <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
-      <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
-      
-      <div class="division">
-        {{ content }}
-    
-        <div class="CoronaCheck_downloads column-2"> 
-            <div>
-                <p>Mensen die CoronaCheck hebben gedownload:<br />
-                <span class="number_highlight">13,93 miljoen</span> downloads.</p>
-                <p>De grafiek laat zien hoeveel mensen de CoronaCheck-app hebben gedownload.</p>
-            </div>
-            <div id="CoronaCheck_downloads_plot"></div>
-        </div>
-        <div class="CoronaCheckScanner_downloads column-2"> 
-            <div>
-                <p>Aantal downloads van de CoronaCheck Scanner:<br />
-                <span class="number_highlight">2,42 miljoen</span> downloads.</p>
-                <p>Met de CoronaCheck Scanner-app controleer je de geldigheid van een coronabewijs van een bezoeker. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.</p>
-                <p>De grafiek laat zien hoeveel mensen de CoronaCheck Scanner hebben gedownload.</p>
-            </div>
-            <div id="CoronaCheckScanner_downloads_plot"></div>
-        </div>
-    </div>
- 
+    <br />    <br />
 
-  </main> 
-    {% include footer.html %} 
+    <div id="CoronaCheckScanner_downloads_plot"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.2"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.2"></script>
@@ -106,10 +60,13 @@
                     }),
                 ],
                 style: {
-                    width: 500,
-                    height: 240,
+                    width: 320,
+                    height: 210,
                     fontSize: 14
                 },
+                attr: {
+                    aria-labelledby: "Grafiek downloads coronacheck."
+                }
             })
         );
     </script>
@@ -162,8 +119,8 @@
                     }),
                 ],
                 style: {
-                    width: 500,
-                    height: 240,
+                    width: 320,
+                    height: 210,
                     fontSize: 14
                 },
             }),
