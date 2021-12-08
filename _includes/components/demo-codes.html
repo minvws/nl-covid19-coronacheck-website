@@ -1,5 +1,9 @@
 <div class="demo-codes">
+  {% if include.headerlevel == "h1" %}
     <h1 class="demo-codes-title">{{ site.data.translations.demo-qr-title[page.lang] }}</h1>
+  {% else %}
+    <h2 class="demo-codes-title">{{ site.data.translations.demo-qr-title[page.lang] }}</h2>
+  {% endif %} 
     <p>{{ site.data.translations.demo-qr-subtitle[page.lang] }}</p>
     <ul class="demo-codes-layout">
       <li class="demo-codes__block">
