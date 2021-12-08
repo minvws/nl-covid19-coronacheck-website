@@ -2,12 +2,15 @@
     border-bottom: 1px solid $color-mediumgrey;
 }
 
-.plot {
-    margin: 16px 0;
-}
-
 .number_highlight {
     color: $statistics;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.graph {
+    width: 100%;
+    height: auto;
+    margin: 16px 0;
+    aspect-ratio: 48 / 32;
 }
