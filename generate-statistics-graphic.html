@@ -13,27 +13,46 @@
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.2"></script>
 
+
     <script>
         CoronaCheck_downloads_plot = document.getElementById('CoronaCheck_downloads_plot');
         CC_downloads_plot = [
-            {weeknr: '12', downloadnr: 0},
-            {weeknr: '14', downloadnr: 0},
-            {weeknr: '16', downloadnr: 0},
-            {weeknr: '18', downloadnr: 0},
-            {weeknr: '20', downloadnr: 0},
-            {weeknr: '22', downloadnr: 0},
-            {weeknr: '24', downloadnr: 1},
-            {weeknr: '26', downloadnr: 2},
-            {weeknr: '28', downloadnr: 4},
-            {weeknr: '30', downloadnr: 6},
-            {weeknr: '32', downloadnr: 8},
-            {weeknr: '34', downloadnr: 9},
-            {weeknr: '36', downloadnr: 10},
-            {weeknr: '38', downloadnr: 12},
-            {weeknr: '40', downloadnr: 12.5},
-            {weeknr: '42', downloadnr: 13},
-            {weeknr: '44', downloadnr: 13.5},
-            {weeknr: '46', downloadnr: 14}
+            {weeknr: '12', downloadnr: 0.004947},
+            {weeknr: '13', downloadnr: 0.005498},
+            {weeknr: '14', downloadnr: 0.031850},
+            {weeknr: '15', downloadnr: 0.077591},
+            {weeknr: '16', downloadnr: 0.120887},
+            {weeknr: '17', downloadnr: 0.135732},
+            {weeknr: '18', downloadnr: 0.150473},
+            {weeknr: '19', downloadnr: 0.161449},
+            {weeknr: '20', downloadnr: 0.221506},
+            {weeknr: '21', downloadnr: 0.250947},
+            {weeknr: '22', downloadnr: 0.369260},
+            {weeknr: '23', downloadnr: 0.518629},
+            {weeknr: '24', downloadnr: 0.947275},
+            {weeknr: '25', downloadnr: 3.046229},
+            {weeknr: '26', downloadnr: 4.559032},
+            {weeknr: '27', downloadnr: 5.494752},
+            {weeknr: '28', downloadnr: 6.337007},
+            {weeknr: '29', downloadnr: 7.006621},
+            {weeknr: '30', downloadnr: 7.628880},
+            {weeknr: '31', downloadnr: 8.226583},
+            {weeknr: '32', downloadnr: 8.756426},
+            {weeknr: '33', downloadnr: 9.138598},
+            {weeknr: '34', downloadnr: 9.446082},
+            {weeknr: '35', downloadnr: 9.745140},
+            {weeknr: '36', downloadnr: 10.048297},
+            {weeknr: '37', downloadnr: 10.798244},
+            {weeknr: '38', downloadnr: 11.583967},
+            {weeknr: '39', downloadnr: 12.127703},
+            {weeknr: '40', downloadnr: 12.449551},
+            {weeknr: '41', downloadnr: 12.721065},
+            {weeknr: '42', downloadnr: 12.987812},
+            {weeknr: '43', downloadnr: 13.206963},
+            {weeknr: '44', downloadnr: 13.516537},
+            {weeknr: '45', downloadnr: 13.753475},
+            {weeknr: '46', downloadnr: 13.926691}, 
+            {weeknr: '47', downloadnr: 14.101764}
         ]
         CoronaCheck_downloads_plot.appendChild(
             Plot.plot({
@@ -48,8 +67,9 @@
                 x: {
                     label: "Weeknummer →",
                     labelAnchor: 'right',  
-                    tickSize: 0, 
                     labelOffset: -10,
+                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
+                    tickSize: 0, 
                 },
                 marks: [
                     Plot.line(CC_downloads_plot, {
@@ -57,6 +77,7 @@
                         y: "downloadnr",
                         curve: "monotone-y",
                         stroke: "#ec025f",
+                        strokeWidth: 3
                     }),
                 ],
                 style: {
@@ -64,9 +85,6 @@
                     height: 210,
                     fontSize: 14
                 },
-                attr: {
-                    aria-labelledby: "Grafiek downloads coronacheck."
-                }
             })
         );
     </script>
@@ -74,31 +92,49 @@
     <script>
         CoronaCheckScanner_downloads_plot = document.getElementById('CoronaCheckScanner_downloads_plot');
         CCScanner_downloads_plot = [
-            {weeknr: '12', downloadnr: 0},
-            {weeknr: '14', downloadnr: 0},
-            {weeknr: '16', downloadnr: 0},
-            {weeknr: '18', downloadnr: 0},
-            {weeknr: '20', downloadnr: 0},
-            {weeknr: '22', downloadnr: 0.05},
-            {weeknr: '24', downloadnr: 0.1},
-            {weeknr: '26', downloadnr: 0.2},
-            {weeknr: '28', downloadnr: 0.4},
-            {weeknr: '30', downloadnr: 0.5},
-            {weeknr: '32', downloadnr: 0.6},
-            {weeknr: '34', downloadnr: 0.7},
-            {weeknr: '36', downloadnr: 0.8},
-            {weeknr: '38', downloadnr: 1.25},
-            {weeknr: '40', downloadnr: 1.55},
-            {weeknr: '42', downloadnr: 1.6},
-            {weeknr: '44', downloadnr: 1.75},
-            {weeknr: '46', downloadnr: 2.42}
+            {weeknr: '12', downloadnr: 0.000237},
+            {weeknr: '13', downloadnr: 0.000331},
+            {weeknr: '14', downloadnr: 0.001934},
+            {weeknr: '15', downloadnr: 0.003730},
+            {weeknr: '16', downloadnr: 0.005458},
+            {weeknr: '17', downloadnr: 0.006398},
+            {weeknr: '18', downloadnr: 0.007378},
+            {weeknr: '19', downloadnr: 0.008142},
+            {weeknr: '20', downloadnr: 0.013578},
+            {weeknr: '21', downloadnr: 0.017016},
+            {weeknr: '22', downloadnr: 0.026904},
+            {weeknr: '23', downloadnr: 0.033952},
+            {weeknr: '24', downloadnr: 0.053821},
+            {weeknr: '25', downloadnr: 0.262348},
+            {weeknr: '26', downloadnr: 0.397372},
+            {weeknr: '27', downloadnr: 0.491841},
+            {weeknr: '28', downloadnr: 0.554220},
+            {weeknr: '29', downloadnr: 0.601111},
+            {weeknr: '30', downloadnr: 0.641847},
+            {weeknr: '31', downloadnr: 0.679457},
+            {weeknr: '32', downloadnr: 0.720303},
+            {weeknr: '33', downloadnr: 0.752788},
+            {weeknr: '34', downloadnr: 0.781461},
+            {weeknr: '35', downloadnr: 0.811810},
+            {weeknr: '36', downloadnr: 0.844162},
+            {weeknr: '37', downloadnr: 0.978263},
+            {weeknr: '38', downloadnr: 1.215228},
+            {weeknr: '39', downloadnr: 1.397778},
+            {weeknr: '40', downloadnr: 1.497258},
+            {weeknr: '41', downloadnr: 1.594784},
+            {weeknr: '42', downloadnr: 1.675985},
+            {weeknr: '43', downloadnr: 1.778053},
+            {weeknr: '44', downloadnr: 2.082709},
+            {weeknr: '45', downloadnr: 2.293167},
+            {weeknr: '46', downloadnr: 2.419318}, 
+            {weeknr: '47', downloadnr: 2.505017}
         ]
         CoronaCheckScanner_downloads_plot.appendChild(
             Plot.plot({
                 y: {
                     label: "↑ Aantal downloads CoronaCheck Scanner (miljoen)", 
                     grid: true,
-                    ticks: [0, 0.5, 1.0, 1.5, 2.0, 2.5],
+                    ticks: [0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0],
                     tickSize: 0, 
                     tickFormat: (f => `${f}m`),
                     labelOffset: -10,
@@ -108,6 +144,7 @@
                     label: "Weeknummer →",
                     labelAnchor: 'right',
                     labelOffset: -10,
+                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46'],
                     tickSize: 0,
                 },
                 marks: [
@@ -116,6 +153,7 @@
                         y: "downloadnr",
                         curve: "monotone-y",
                         stroke: "#ec025f",
+                        strokeWidth: 3
                     }),
                 ],
                 style: {
