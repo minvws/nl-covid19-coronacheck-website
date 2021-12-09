@@ -1,16 +1,35 @@
-.CoronaCheck_downloads {
-    border-bottom: 1px solid $color-mediumgrey;
-}
+.content-block--graphs {
+    .CoronaCheck_downloads {
+        border-bottom: 1px solid $color-mediumgrey;
+    }
 
-.number_highlight {
-    color: $statistics;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+    .downloads_title {
+        font-size: 1rem;
+        line-height: 1.35;
+        font-weight: normal;
+        font-family: "RO sans";
+        margin-bottom: 0;
 
-.graph {
-    width: 100%;
-    height: auto;
-    margin: 16px 0;
-    aspect-ratio: 48 / 32;
+        + p {
+            margin-top: 0;
+        }
+    }
+
+    .number_highlight {
+        color: $statistics;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .graph {
+        width: 100%;
+        height: auto;
+        margin: 16px 0;
+        aspect-ratio: 48 / 32;
+    }
+
+    details h3 {
+        font-weight: normal;
+        font-size: inherit;
+    }
 }
