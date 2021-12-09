@@ -4,8 +4,15 @@ import RecoveryExpired from '@/components/views/3-collect/recovery/unhappy/Recov
 import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview'
 import RecoveryNone from '@/components/views/3-collect/recovery/unhappy/RecoveryNone'
 import PrintRecovery from '@/components/views/4-print/PrintRecovery'
+import RecoveryLayout from '@/components/views/3-collect/recovery/unhappy/RecoveryLayout'
+import CollectPositiveTest from '@/components/views/3-collect/recovery/CollectPositiveTest'
 
 const recoveryPages = [
+    {
+        path: '/ophalen-positive-test',
+        name: 'CollectPositiveTest',
+        component: CollectPositiveTest
+    },
     {
         path: '/recovery-ophalen',
         name: 'CollectRecovery',
@@ -28,7 +35,42 @@ const recoveryPages = [
         meta: {
             pageHeader: 'error'
         }
-    }, {
+    },
+    {
+        path: '/recovery-niet-gevonden-new',
+        name: 'RecoveryNoneNew',
+        component: RecoveryLayout,
+        props: {
+            translationId: 'recoveryNone',
+            route: {
+                name: 'RecoveryOverview',
+                translationId: 'goToOverview',
+                replace: true
+            }
+        },
+        meta: {
+            pageHeader: 'error'
+        }
+
+    },
+    {
+        path: '/recovery-niet-geschrikt',
+        name: 'RecoveryInvalid',
+        component: RecoveryLayout,
+        props: {
+            translationId: 'recoveryInvalid',
+            route: {
+                name: 'Home',
+                translationId: 'goBackToStart',
+                replace: true
+            }
+        },
+        meta: {
+            pageHeader: 'error'
+        }
+
+    },
+    {
         path: '/print-recovery',
         name: 'PrintRecovery',
         component: PrintRecovery,

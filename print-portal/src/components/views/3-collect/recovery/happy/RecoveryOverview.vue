@@ -7,6 +7,9 @@ import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import LoadingCover from '@/components/elements/LoadingCover';
+import uniqWith from 'lodash.uniqwith'
+import isEqual from 'lodash.isequal'
+import { FilterTypes } from '@/types/filter-types'
 
 export default {
     name: 'RecoveryOverview',
@@ -14,10 +17,16 @@ export default {
     mixins: [overviewMixin],
     data() {
         return {
-            filter: 'positivetest,recovery',
+            filter: [FilterTypes.POSITIVE_TEST, FilterTypes.RECOVERY].join(','),
             pages: {
                 print: 'PrintRecovery'
             }
+        }
+    },
+    computed: {
+        uniqueSignedEvents () {
+            // remove duplicate events
+            return uniqWith(this.signedEvents, isEqual)
         }
     }
 }
@@ -34,7 +43,7 @@ export default {
             <div class="section-block">
                 <div class="proof-events">
                     <div
-                        v-for="(signedEvent, index) in signedEvents"
+                        v-for="(signedEvent, index) in uniqueSignedEvents"
                         :key="index"
                         class="proof-event__wrapper">
                         <Recovery

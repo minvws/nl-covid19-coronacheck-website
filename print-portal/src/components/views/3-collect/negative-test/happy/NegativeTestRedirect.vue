@@ -3,6 +3,8 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
 import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
+import { FilterTypes } from '@/types/filter-types'
+import { ProviderTypes } from '@/types/provider-types'
 
 export default {
     name: 'NegativeTestRedirect',
@@ -11,8 +13,8 @@ export default {
     data() {
         return {
             isLoading: false,
-            filter: 'negativetest',
-            eventProviders: 'GGD',
+            filter: FilterTypes.NEGATIVE_TEST,
+            eventProviders: ProviderTypes.GGD,
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'ChoiceTestLocation',

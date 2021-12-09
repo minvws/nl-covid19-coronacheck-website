@@ -7,6 +7,8 @@ import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import dateTool from '@/tools/date';
 import LoadingCover from '@/components/elements/LoadingCover';
+import { FilterTypes } from '@/types/filter-types'
+import { ProviderTypes } from '@/types/provider-types'
 
 export default {
     name: 'VaccinationOverview',
@@ -14,7 +16,7 @@ export default {
     mixins: [overviewMixin],
     data() {
         return {
-            filter: 'vaccination',
+            filter: FilterTypes.VACCINATION,
             pages: {
                 print: 'PrintVaccination'
             }
@@ -65,7 +67,7 @@ export default {
                     uniqueSignedEventSets.push([signedEvent])
                 } else {
                     // we want GGD to be the first
-                    if (signedEvent.providerIdentifier === 'GGD') {
+                    if (signedEvent.providerIdentifier === ProviderTypes.GGD) {
                         match.unshift(signedEvent)
                     } else {
                         match.push(signedEvent)

@@ -14,7 +14,10 @@ export default {
     mounted() {
         this.$nextTick(() => {
             if (this.$store.state.visitedHomePage) {
-                this.$refs.initialTabStart.focus();
+                if (!this.$store.state.snackbar.visible) {
+                    // only set focus when snackbar is not visible
+                    this.$refs.initialTabStart.focus();
+                }
             } else {
                 // to this every time, not only on home, beacuse you could enter from a redirect
                 // we assume you have been at home before then

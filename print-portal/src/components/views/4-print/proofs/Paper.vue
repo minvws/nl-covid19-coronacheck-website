@@ -1,4 +1,5 @@
 <script>
+import { RegionTypes } from '@/types/region-types'
 
 export default {
     name: 'Paper',
@@ -7,7 +8,10 @@ export default {
             type: String,
             required: true,
             validator: (value) => {
-                return ['domestic', 'european'].indexOf(value) > -1;
+                return [
+                    RegionTypes.DOMESTIC,
+                    RegionTypes.EUROPEAN
+                ].indexOf(value) > -1;
             }
         }
     },

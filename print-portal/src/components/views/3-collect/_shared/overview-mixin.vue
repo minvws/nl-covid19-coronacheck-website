@@ -2,6 +2,8 @@
 import dateTool from '@/tools/date';
 import signer from '@/interfaces/signer';
 import { handleRejection } from '@/tools/error-handler';
+import { StepTypes } from '@/types/step-types'
+import { ProviderTypes } from '@/types/provider-types'
 
 export default {
     name: 'overview-mixin',
@@ -58,7 +60,7 @@ export default {
         gotoPrint() {
             if (this.$store.state.qrs.proof === null) {
                 this.proofSubmitted = true;
-                signer.sign(this.$store.state.signedEvents.all).then(response => {
+                signer.sign(this.$store.getters['signedEvents/all']).then(response => {
                     this.proofSubmitted = false;
                     if (response.data) {
                         if (response.data.domestic || (response.data.european && response.data.european.length > 0)) {
@@ -74,7 +76,11 @@ export default {
                     const callback = () => {
                         this.gotoPrint();
                     }
-                    handleRejection(error, { flow: this.filter, step: '80', provider_identifier: '000' }, callback);
+                    handleRejection(error, {
+                        flow: this.filter,
+                        step: StepTypes.SIGNER,
+                        provider_identifier: ProviderTypes.NON_PROVIDER
+                    }, callback);
                 })
             } else {
                 this.$router.push({ name: this.pages.print });

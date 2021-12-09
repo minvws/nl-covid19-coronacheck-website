@@ -7,6 +7,7 @@ import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import NegativeTestV2 from './NegativeTestV2';
 import LoadingCover from '@/components/elements/LoadingCover';
+import { FilterTypes } from '@/types/filter-types'
 
 export default {
     name: 'NegativeTestOverview',
@@ -14,7 +15,7 @@ export default {
     mixins: [overviewMixin],
     data() {
         return {
-            filter: 'negativetest',
+            filter: FilterTypes.NEGATIVE_TEST,
             pages: {
                 print: 'PrintNegativeTest'
             }

@@ -32,7 +32,7 @@ We guarantee good accessibility by various measures in our daily processes:
 
 We are working on the following issues:
 
--   The pdf that is issued when a certificate on paper is made is not yet fully accessible.
+-   The PDF that is issued when a certificate on paper is made is not yet fully accessible.
 -   The PDFs on the page [Research: how do we know CoronaCheck works?](https://coronacheck.nl/en/faq/7-1-onderzoek-hoe-weten-we-of-coronacheck-werkt/) are not fully accessible. Figures and numbers in these PDFs will be reported on an accessible HTML page instead of the PDFs.
 -   See our <a href="https://www.toegankelijkheidsverklaring.nl/register/4230" lang="nl" rel="noreferrer noopener">accessibility statement (Dutch)</a> for the latest information on accessibility issues.
 
