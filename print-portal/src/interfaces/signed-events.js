@@ -2,17 +2,14 @@ import axios from 'axios';
 import { timeoutTime } from '@/data/constants'
 import store from '@/store'
 import { cmsDecode } from '@/tools/cms'
+import { ProviderTypes } from '@/types/provider-types'
 
-const collect = async (tokenSets, filter = '', eventProviderIdentifiers = '*') => {
+const collect = async (tokenSets, filter, provider) => {
     return new Promise((resolve, reject) => {
-        const filteredTokenSets = tokenSets.filter(tokenSet => {
-            if (eventProviderIdentifiers === '*') {
-                return true;
-            } else {
-                return tokenSet.provider_identifier === eventProviderIdentifiers;
-            }
+        const tokens = tokenSets.filter(tokenSet => {
+            return provider === ProviderTypes.ANY_PROVIDER || tokenSet.provider_identifier === provider
         })
-        getEvents(filteredTokenSets, filter).then(results => {
+        getEvents(tokens, filter).then(results => {
             resolve(results);
         }, (error) => {
             reject(error)
@@ -42,8 +39,8 @@ const getTokens = async (token) => {
 const getEvents = async (tokenSets, filter) => {
     const results = []
     for (const tokenSet of tokenSets) {
-        const eventProvider = store.getters['eventProviders/getTestProviderByIdentifier'](tokenSet.provider_identifier);
-
+        // get provider by identifier AND filter
+        const eventProvider = store.getters['eventProviders/getTestProviderByIdentifierAndUsage'](tokenSet.provider_identifier, filter);
         if (eventProvider) {
             let result;
             const resultForEventProvider = {

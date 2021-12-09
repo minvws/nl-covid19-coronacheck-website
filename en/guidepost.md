@@ -255,6 +255,16 @@ For other questions, you can <a href="https://www.netherlandsworldwide.nl/contac
 {% endcapture %}
 
 
+{% capture copy_positive_before_vacc %}
+<div markdown="1">
+Were you tested positive, and did you receive your first injection after? Then you are fully vaccinated. You will receive a full vaccination certificate if your retrieved positive test result is from before your first injection.
+
+From version 2.6.0 of the CoronaCheck app onwards, you’ll have the option to retrieve a positive test result after only one injection is found while retrieving your vaccination details. At this moment, you can only retrieve your most recent positive test result.
+
+Were you tested positive more than once, with the first time happening before your first injection, but can only the result from a test that happened after be found? Please contact the healthcare provider who vaccinated you. They can help you create a full vaccination certificate.
+</div>
+{% endcapture %}
+
 {% comment %}
     Page structure ----------------------------------------------
 {% endcomment %}
@@ -288,6 +298,11 @@ For other questions, you can <a href="https://www.netherlandsworldwide.nl/contac
 <details class="details" id="vacc_cantmakeproof">
 <summary><h3>The app can't create a certificate</h3></summary>
 {{ copy_app_kan_geen_bewijs_maken }}
+</details>
+
+<details class="details" id="vacc_positive_before_vacc">
+<summary><h3>I tested positive before my first vaccination</h3></summary>
+{{ copy_positive_before_vacc }}
 </details>
 
 <details class="details" id="vacc_othercountry"><summary><h3>Have you been vaccinated abroad? </h3></summary>

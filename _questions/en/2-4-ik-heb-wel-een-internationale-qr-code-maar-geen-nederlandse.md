@@ -24,6 +24,14 @@ Were you vaccinated by the GGD? Then the GGD can adjust this afterwards as well.
 
 Were you vaccinated by your general practitioner (GP), at the hospital or by another healthcare provider? Then you won't be able to adjust this. Your GP, the hospital or the healthcare provider that vaccinated you can print a paper vaccination certificate for you. To receive this document, please contact the instance that vaccinated you.
 
+### I tested positive before my first vaccination
+
+Were you tested positive, and did you receive your first injection after? Then you are fully vaccinated. You will receive a full vaccination certificate if your retrieved positive test result is from before your first injection.
+
+From version 2.6.0 of the CoronaCheck app onwards, you’ll have the option to retrieve a positive test result after only one injection is found while retrieving your vaccination details. At this moment, you can only retrieve your most recent positive test result.
+
+Were you tested positive more than once, with the first time happening before your first injection, but can only the result from a test that happened after be found? Please contact the healthcare provider who vaccinated you. They can help you create a full vaccination certificate.
+
 </div>
 </details>
 

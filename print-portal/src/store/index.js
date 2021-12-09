@@ -7,6 +7,7 @@ import languages from './modules/languages';
 import testProviders from './modules/testProviders';
 import eventProviders from './modules/eventProviders';
 import signedEvents from './modules/signedEvents';
+import auth from './modules/auth';
 import qrs from './modules/qrs';
 import { isFuture } from 'date-fns';
 
@@ -56,7 +57,8 @@ const getters = {
         } else {
             return state.holderConfig.recoveryEventValidityDays
         }
-    }
+    },
+    user: ({ user }) => user
 };
 
 const mutations = {
@@ -99,7 +101,7 @@ const mutations = {
         state.testCode = '';
         state.verificationNeeded = false;
         state.verificationCode = '';
-        state.signedEvents = [];
+        state.signedEvents = []; // @FIXME: are these being used?
         state.qrs.proof = null;
         state.signedAt = null;
     },
@@ -107,7 +109,7 @@ const mutations = {
         state.testCode = '';
         state.verificationNeeded = false;
         state.verificationCode = '';
-        state.signedEvents = [];
+        state.signedEvents = []; // @FIXME: are these being used?
         state.qrs.proof = null;
         state.userConsent = false;
         state.signedAt = null;
@@ -126,6 +128,7 @@ export default new Vuex.Store({
         testProviders,
         eventProviders,
         signedEvents,
-        qrs
+        qrs,
+        auth
     }
 })

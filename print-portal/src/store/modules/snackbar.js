@@ -9,8 +9,10 @@ const actions = {};
 
 const mutations = {
     message(state, message) {
-        state.visible = true;
         state.message = message;
+    },
+    show(state) {
+        state.visible = true;
     },
     close(state) {
         state.visible = false;

@@ -4,10 +4,6 @@
         width: 460px;
         max-width: 100%;
         margin: 0 auto;
-
-        .section-block__footer {
-            margin-top: $length-xl;
-        }
     }
 
     &.section--text-align-center {
@@ -18,7 +14,6 @@
 
         .section-block {
             width: 100%;
-            //padding: 0 12px;
         }
     }
 }

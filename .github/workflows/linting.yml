@@ -1,10 +1,16 @@
-name: Create Website Release package
+name: Linting
 
 on:
+  # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    tags:
-      - 'v*'
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+    types: [synchronize, opened, reopened, ready_for_review]
 
+# Colorized output from Python and Ansible tools
+env:
+  PY_COLORS: '1'
 
 jobs:
   build:
@@ -97,12 +103,3 @@ jobs:
       - name: Lint json files
         run: find . -size +2c \( -name *.json -o -name *.json.v* \)  -not -path "./print-portal/node_modules/*" -not -path "./dashboard-spa/node_modules/*" | xargs jsonlint-php
 
-
-      - name: Create tar
-        run: tar -czf ct_website_${{ env.RELEASE_VERSION }}.tar.gz ./public
-
-      - name: Upload release tar
-        uses: actions/upload-artifact@v2
-        with:
-          name: ct_website_${{ env.RELEASE_VERSION }}
-          path: ct_website_${{ env.RELEASE_VERSION }}.tar.gz

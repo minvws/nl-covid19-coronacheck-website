@@ -3,6 +3,11 @@ import signedEventsInterface from '@/interfaces/signed-events'
 import { cmsDecode } from '@/tools/cms'
 import { handleRejection, getErrorCode } from '@/tools/error-handler';
 import { differenceInCalendarDays } from 'date-fns';
+import { ClientCode } from '@/data/constants/error-codes'
+import { StepTypes } from '@/types/step-types'
+import { ProviderTypes } from '@/types/provider-types'
+import { events as AuthEvent } from '@/store/modules/auth'
+import { FilterTypes } from '@/types/filter-types'
 
 export default {
     name: 'redirect-mixin',
@@ -11,6 +16,9 @@ export default {
             return this.filter.split(',')[0];
         }
     },
+    created () {
+        this.setSnackbarContent();
+    },
     methods: {
         back() {
             const callback = () => {
@@ -18,7 +26,7 @@ export default {
                     // todo cancel all processes
                 }
                 this.$store.commit('clearAll')
-                this.$store.commit('signedEvents/clear')
+                this.$store.dispatch('signedEvents/clear', { filter: this.filter })
                 this.$router.push({ name: this.pages.cancel });
             }
             this.$store.commit('modal/set', {
@@ -35,29 +43,35 @@ export default {
             this.$store.commit('snackbar/close');
             this.$router.push({ name: this.pages.previous });
         },
-        completeAuthentication() {
+        async getOrFetchUser () {
+            // if no user is fetched yet, fetch user
+            let user = this.$store.getters[AuthEvent.USER]
+            if (user) return user
+            user = await this.authVaccinations.completeAuthentication()
+            this.$store.dispatch(AuthEvent.USER, user)
+            return user
+        },
+        async completeAuthentication() {
             this.isLoading = true;
 
-            this.authVaccinations.completeAuthentication().then((user) => {
-                signedEventsInterface.getTokens(user.id_token).then(response => {
+            try {
+                const user = await this.getOrFetchUser()
+                try {
+                    const response = await signedEventsInterface.getTokens(user.id_token)
                     this.notifyDigidFinished();
                     this.collectEvents(response.data.tokens);
-                }).catch((error) => {
+                } catch (error) {
                     const detailedCodeNoBSN = 99782;
                     const detailedCodeSessionExpired = 99708;
 
                     const hasErrorCode = (error, errorCode) => {
-                        if (error.response && error.response.data) {
-                            const cmsDecoded = cmsDecode(error.response.data.payload);
-                            if (cmsDecoded.code) {
-                                return cmsDecoded.code === errorCode;
-                            } else {
-                                return false;
-                            }
+                        const payload = error?.response?.data?.payload
+                        if (payload) {
+                            const cmsDecoded = cmsDecode(payload);
+                            return cmsDecoded?.code === errorCode;
                         }
-
-                        return error && error.response && error.response.data && error.response.data &&
-                            error.response.data.code && error.response.data.code === errorCode;
+                        const code = error?.response?.data?.code
+                        return code === errorCode;
                     }
 
                     if (hasErrorCode(error, detailedCodeNoBSN)) {
@@ -68,28 +82,32 @@ export default {
                         const callback = () => {
                             this.completeAuthentication();
                         }
-                        handleRejection(error, { flow: this.filter, step: '30', provider_identifier: '000' }, callback)
+                        handleRejection(error, {
+                            flow: this.filter,
+                            step: StepTypes.ACCESS_TOKENS,
+                            provider_identifier: ProviderTypes.NON_PROVIDER
+                        }, callback)
                     }
-                });
-            }).catch((error) => {
+                }
+            } catch (error) {
                 // note: this is a custom error of the frontend library
                 // the digid backend also provides a error_desc
                 // but oidc-client removes this info from the custom error it returns
                 // as well as the error.response.status
 
                 const isCanceled = (error) => {
-                    return error && error.message && error.message === 'saml_authn_failed';
+                    return error?.message === 'saml_authn_failed';
                 }
 
                 const tooBusy = (error) => {
                     // the response login_required is a hack to communicate too busy mode
-                    return error && error.error && error.error === 'login_required';
+                    return error?.error === 'login_required';
                 }
 
                 const errorCodeInformation = {
                     flow: this.filter,
-                    step: '10',
-                    provider_identifier: '000'
+                    step: StepTypes.TVS_DIGID,
+                    provider_identifier: ProviderTypes.NON_PROVIDER
                 }
 
                 if (isCanceled(error)) {
@@ -104,7 +122,7 @@ export default {
                     const errorCode = getErrorCode(error, errorCodeInformation);
                     this.$router.push({ name: 'ServerBusy', query: { error: errorCode } });
                 } else {
-                    if (error && error.message) {
+                    if (error?.message) {
                         errorCodeInformation.errorBody = error.message;
                     }
                     const callback = () => {
@@ -112,14 +130,18 @@ export default {
                     }
                     handleRejection(error, errorCodeInformation, callback);
                 }
-            });
+            }
         },
         notifyDigidFinished() {
+            this.setSnackbarContent()
+            this.$store.commit('snackbar/show')
+        },
+        setSnackbarContent() {
             const proofType = this.$t('components.digid.proofType.' + this.type)
             this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: proofType }))
         },
         collectEvents(tokenSets) {
-            this.$store.commit('signedEvents/clear');
+            this.$store.dispatch('signedEvents/clear', { filter: this.filter });
             this.isLoading = true;
             signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders).then(results => {
                 this.isLoading = false;
@@ -173,15 +195,28 @@ export default {
                         for (const eventProvider of results) {
                             let errorCode;
                             if (eventProvider.unomi.error) {
-                                errorCode = getErrorCode(eventProvider.unomi.error, { flow: this.filter, step: '40', provider_identifier: eventProvider.eventProvider });
+                                errorCode = getErrorCode(eventProvider.unomi.error, {
+                                    flow: this.filter,
+                                    step: StepTypes.UNOMI,
+                                    provider_identifier: eventProvider.eventProvider
+                                });
                                 errorCodes.push(errorCode);
                             }
                             if (eventProvider.events.error) {
-                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider });
+                                errorCode = getErrorCode(eventProvider.events.error, {
+                                    flow: this.filter,
+                                    step: StepTypes.EVENT,
+                                    provider_identifier: eventProvider.eventProvider
+                                });
                                 errorCodes.push(errorCode);
                             }
                             if (eventProvider.events.parsingError) {
-                                errorCode = getErrorCode(eventProvider.events.error, { flow: this.filter, step: '50', provider_identifier: eventProvider.eventProvider, clientSideCode: '030' });
+                                errorCode = getErrorCode(eventProvider.events.error, {
+                                    flow: this.filter,
+                                    step: StepTypes.EVENT,
+                                    provider_identifier: eventProvider.eventProvider,
+                                    clientSideCode: ClientCode.JSON.DECODE_ERROR
+                                });
                                 errorCodes.push(errorCode);
                             }
                         }
@@ -236,8 +271,8 @@ export default {
         //     }
         //     return '';
         // },
-        createEvents(signedEvents) {
-            this.$store.commit('signedEvents/createAll', signedEvents);
+        createEvents(events) {
+            this.$store.dispatch('signedEvents/createAll', { events, filter: this.filter });
         },
         areAllRecoveriesExpired(proofEvents) {
             const expirationDays = this.$store.getters.getRecoveryEventValidityDays()
@@ -258,6 +293,29 @@ export default {
 
             return true
         },
+        isTestedPositiveBeforeFirstVaccination (proofEvents) {
+            // all positive tests dates
+            const positiveTests = proofEvents.map(({ event: { positivetest } }) => positivetest)
+                .filter(positivetest => !!positivetest)
+                .map(({ sampleDate }) => new Date(sampleDate))
+
+            // get all vaccination dates and sort on date
+            const vaccinations = this.$store.getters['signedEvents/getProofEvents'](FilterTypes.VACCINATION)
+                .map(({ event: { vaccination: { date } } }) => {
+                    return new Date(date)
+                }).sort((a, b) => a.getTime() - b.getTime());
+
+            // positive-test should be BEFORE first vaccination
+            const firstVaccination = vaccinations?.[0]
+            if (firstVaccination && positiveTests.length) {
+                const isTestedPositiveBeforeFirstVaccination = positiveTests.find(date => {
+                    const difference = differenceInCalendarDays(date, firstVaccination)
+                    return difference >= 0
+                })
+                if (isTestedPositiveBeforeFirstVaccination) return true
+            }
+            return false
+        },
         checkResult(results) {
             const signedEvents = [];
             for (const result of results) {
@@ -272,6 +330,8 @@ export default {
             if (proofEvents.length > 0) {
                 if (this.areAllRecoveriesExpired(proofEvents)) {
                     this.$router.push({ name: 'RecoveryExpired' });
+                } else if (this.isTestedPositiveBeforeFirstVaccination(proofEvents)) {
+                    this.$router.push({ name: 'RecoveryInvalid' });
                 } else {
                     this.$router.push({ name: this.pages.overview });
                 }

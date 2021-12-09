@@ -1,5 +1,6 @@
 import _base from './_base-module';
 import EventProvider from '@/classes/EventProvider';
+import { UsageTypes } from '@/types/usage-types'
 
 const Model = EventProvider;
 
@@ -12,7 +13,18 @@ const getters = {
     ..._base.getters,
     getTestProviderByIdentifier: (state) => (identifier) => {
         const identifierToUpperCase = identifier.toUpperCase();
-        return state.all.find(t => t.provider_identifier === identifierToUpperCase);
+        const provider = state.all.find(t => t.provider_identifier === identifierToUpperCase)
+        return provider
+    },
+    getTestProviderByIdentifierAndUsage: (state, { getTestProviderByIdentifier }) => (identifier, filter) => {
+        const provider = getTestProviderByIdentifier(identifier)
+        if (!filter) return provider
+        if (!provider?.usage) return false
+        const usage = provider.usage.map(usage => UsageTypes[usage])
+        const filters = filter.split(',')
+        const isValidUsage = filters.filter(filter => usage.includes(filter)).length === filters.length
+        if (!isValidUsage) return false
+        return provider
     }
 };
 
