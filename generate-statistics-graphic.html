@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="nl">
 <body>
+    <!-- use this page (locally) to generate graphics for the statistics page -->
+    <!-- to use, disable exclusion in _config.yml at line 162, 
+         and restart jekyll in your commandline.
+         You can then find this page at 
+         http://localhost:4000/generate-statistics-graphic.html  -->
     <div id="CoronaCheck_downloads_plot"></div>
 
-    <br />    <br />
+    <br /> <br />
 
     <div id="CoronaCheckScanner_downloads_plot"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.2"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.2"></script>
-
 
     <script>
         CoronaCheck_downloads_plot = document.getElementById('CoronaCheck_downloads_plot');
