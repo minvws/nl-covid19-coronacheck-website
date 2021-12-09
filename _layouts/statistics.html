@@ -27,16 +27,18 @@
       </p>
     {% endif %}
     
-    <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
+    <div class="content-block content-block--graphs" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
       <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
       
       <div class="division">
         {{ content }}
 
+        <p>Cijfers tot en met zondag 5 december 2021.</p>
+
         <div class="CoronaCheck_downloads column-2"> 
             <div>
-                <p>Mensen die CoronaCheck hebben gedownload:<br />
-                <span class="number_highlight">14,10 miljoen</span> downloads.</p>
+                <h2 class="downloads_title">Mensen die CoronaCheck hebben gedownload:</h2>
+                <p><span class="number_highlight">14,10 miljoen</span> downloads.</p>
                 <p>De grafiek laat zien hoeveel mensen de CoronaCheck-app hebben gedownload.</p>
             </div>
             <div id="CoronaCheck_downloads_plot">
@@ -44,7 +46,7 @@
                 groeilijn blijft steil stijgen, met een opleving in week 36 en 37." class="graph" width="480" height="320">
 
                 <details class="details">
-                    <summary>Brongegevens grafiek</summary>
+                    <summary><h3>Brongegevens grafiek</h3></summary>
                     <table>
                         <thead>
                             <tr>
@@ -207,8 +209,8 @@
         </div>
         <div class="CoronaCheckScanner_downloads column-2"> 
             <div>
-                <p>Aantal downloads van de CoronaCheck Scanner:<br />
-                <span class="number_highlight">2,50 miljoen</span> downloads.</p>
+                <h2 class="downloads_title">Aantal downloads van de CoronaCheck Scanner:</h2>
+                <p><span class="number_highlight">2,50 miljoen</span> downloads.</p>
                 <p>Met de CoronaCheck Scanner-app controleer je de geldigheid van een coronabewijs van een bezoeker. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.</p>
                 <p>De grafiek laat zien hoeveel mensen de CoronaCheck Scanner hebben gedownload.</p>
             </div>
@@ -217,7 +219,7 @@
                 groeilijn blijft steil stijgen, met een opleving in week 36 en 37, en opnieuw in week 44." class="graph" width="480" height="320">
 
                 <details class="details">
-                    <summary>Brongegevens grafiek</summary>
+                    <summary><h3>Brongegevens grafiek</h3></summary>
                     <table>
                         <thead>
                             <tr>
