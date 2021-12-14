@@ -154,11 +154,12 @@ exclude:
   - LICENSES.md
   - LICENSE.txt
   - LICENSE.pdf
-  - example.content-page.md
+  - example-content-page.md
   - .sass-cache
   - .history
   - auth.php
   - auth2.php
+  - generate-statistics-graphic.html
 
 plugins:
   - "jekyll-github-metadata"
