@@ -15,7 +15,11 @@
     {% if announcement-errors.size != 0 %}
         {% for announcement in announcement-errors %}
         <div class="announcement offset-background">
-          {% if announcement.title != ''  %}<h2>{{ announcement.title }}</h2>{% endif %}
+          {% if announcement.title == ''  %}
+            <h2 class="screen-reader-text">Belangrijke mededeling</h2>
+          {% else %}
+            <h2>{{ announcement.title }}</h2>
+          {% endif %}
           {{ announcement.content }}
         </div>
         {% endfor %}
