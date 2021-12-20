@@ -4,6 +4,11 @@
 			"abbr": ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
 		}
 	},
+	"dit": {
+		"is": {
+			"een": "test"
+		}
+	},
 	"views": {
 		"home": {
 			"pageHeader": "Get access with a certificate on paper",
