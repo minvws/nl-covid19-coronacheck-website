@@ -159,7 +159,7 @@ exclude:
   - .history
   - auth.php
   - auth2.php
-  - generate-statistics-graphic.html
+  # - generate-statistics-graphic.html
 
 plugins:
   - "jekyll-github-metadata"
