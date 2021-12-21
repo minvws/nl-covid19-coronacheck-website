@@ -21,4 +21,6 @@ The evaluation ran until September. Interim reports were published in july and a
 - <a href="/media/Tussentijdse_rapportage_juli_2021.pdf" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Tussentijdse rapportage juli 2021 (PDF, 110kb, Dutch)</a>
 - <a href="/media/Tussentijdse_rapportage_augustus_2021.pdf" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Tussentijdse rapportage augustus 2021 (PDF, 385kb, Dutch)</a>
 
+How inspectors use CoronaCheck with admitting visitors to places or activities has been tested with 'mystery guests'. You can read the reports here: <a href="/media/RapportCTB211101.pdf" rel="noopener noreferrer" target="_blank">Compliance Checks Corona Admission Ticket November 1, 2021 (PDF, 726kb, Dutch)</a> and <a href= "/media/RapportCTB211130.pdf" rel="noopener noreferrer" target="_blank">Compliance Checks Corona Admission Ticket, November 29, 2021 (PDF, 719kb, Dutch)</a>.
+
 In addition, information about the number of times CoronaCheck and [CoronaCheck Scanner](/en/scanner) are downloaded is made available every day. You can view a summary of this data on [Number of CoronaCheck and Scanner app downloads](/en/faq/1-13-actuele-downloadcijfers/).
