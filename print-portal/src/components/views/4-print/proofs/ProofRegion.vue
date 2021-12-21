@@ -28,7 +28,8 @@ export default {
     data() {
         return {
             createdDocument: null,
-            canOpenObjectUrl: false
+            canOpenObjectUrl: false,
+            objectUrls: []
         }
     },
     computed: {
@@ -87,6 +88,11 @@ export default {
         this.canOpenObjectUrl = !!(URL?.createObjectURL)
         await this.createDocument();
     },
+    beforeDestroy () {
+        while (this.objectUrls.length > 0) {
+            URL.revokeObjectURL(this.objectUrls.pop())
+        }
+    },
     methods: {
         async createDocument() {
             const holderConfig = this.$store.state.holderConfig;
@@ -122,7 +128,7 @@ export default {
                     .appendChild(document.createElement('head'))
                     .appendChild(document.createElement('title'))
                     .appendChild(document.createTextNode(this.metadata.title));
-                URL.revokeObjectURL(url)
+                this.objectUrls.push(url);
             }
         },
         onDownloadClick () {
@@ -135,7 +141,7 @@ export default {
             document.body.appendChild(a)
             a.click()
             a.parentNode.removeChild(a)
-            URL.revokeObjectURL(url)
+            this.objectUrls.push(url)
         }
     }
 }
