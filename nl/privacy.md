@@ -36,7 +36,7 @@ Bij afgifte van een EU DCC wordt een unieke certificaatcode van jouw EU DCC aang
 Je test-, vaccinatie- en herstelgegevens worden verstrekt door de hulpverlener die jou heeft getest of gevaccineerd. Gegevens voor een herstelbewijs worden verstrekt door de GGD’en. Deze gegevens worden opgevraagd via twee manieren waarbij ook gegevens worden ontvangen:
 
 1. In het geval je getest bent bij een andere testaanbieder dan jouw regionale GGD via de unieke ophaalcode en verificatiecode die je hebt gekregen van de testaanbieder. Je kan je gegevens in dat geval ophalen door deze unieke ophaalcode en verificatiecode zelf in te voeren in de app of de website.
-2. Om vaccinatie- of herstelgegevens óf een negatieve test uitgevoerd door een GGD op te halen, log je in met DigiD om je te identificeren. Door in te loggen krijgt de minister van VWS jouw BSN en haalt op basis van jouw BSN je voor- en achternaam en geboortedatum op uit de Basisregistratie Personen. Met de combinatie van deze gegevens bevraagt de minister de partijen die jouw vaccinatie-, herstel- en testgegevens kunnen hebben (zoals de GGD’en, het RIVM en je huisarts) om jouw gegevens bij hen op te halen. Jouw herstelgegevens zijn gebaseerd op een positieve test in het verleden, die zijn verplicht bij de GGD in jouw regio gemeld door de testaanbieder die je getest heeft.
+2. Om vaccinatie- of herstelgegevens óf een negatieve test uitgevoerd door een GGD of een hulpverlener in het ziekenhuis op te halen, log je in met DigiD om je te identificeren. Door in te loggen krijgt de minister van VWS jouw BSN en haalt op basis van jouw BSN je voor- en achternaam en geboortedatum op uit de Basisregistratie Personen. Met de combinatie van deze gegevens bevraagt de minister de partijen die jouw vaccinatie-, herstel- en testgegevens kunnen hebben (zoals de GGD’en, het RIVM, het ziekenhuis waar je gevaccineerd bent en je huisarts) om jouw gegevens bij hen op te halen. Jouw herstelgegevens zijn gebaseerd op een positieve test in het verleden, die zijn verplicht bij de GGD in jouw regio gemeld door de testaanbieder die je getest heeft.
 
 Als je in CoronaCheck of via coronacheck.nl verzoekt om je gegevens op te halen dan krijg je vervolgens te zien welke gegevens zijn opgehaald en waar deze gegevens vandaan komen.
 
@@ -128,7 +128,7 @@ De minister neemt de bescherming van uw persoonsgegevens serieus en heeft bij de
 
 ## 12. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 29 november 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 28 december 2021.
 
 ## Overzicht van verwerkte persoonsgegevens
 
