@@ -35,7 +35,7 @@ Upon issue of an EU DCC, a unique certificate code of your EU DCC will be genera
 Information about your test, vaccination and/or recovery is provided by the care provider who tested or vaccinated you. Data for a certificate or recovery is provided by the GGDs. This data is requested through two ways, in which data is also received: 
 
 1. When you’re tested by another test provider than your regional GGD, the data is requested via the unique retrieval code and verification code you received from the test provider. In this case you may retrieve your data by entering this unique retrieval code and verification code in the app or on the website.
-2. When retrieving information about vaccination or recovery or a negative test carried out by a GGD, you log in using your DigiD to identify yourself. By logging in, the Minister of VWS will receive your BSN and can, based on your BSN, retrieve your first name, last name and date of birth from the Personal Records Database. Using this combined information, the Minister will request your data from parties who may have your information about your vaccination, recovery and test (like the GGDs, the RIVM and your general practitioner). Information about your recovery is based on a positive test in the past, which the test provider who tested you has had to report to the local GGD.
+2. When retrieving information about vaccination or recovery or a negative test carried out by a GGD or a care provider at the hospital, you log in using your DigiD to identify yourself. By logging in, the Minister of VWS will receive your BSN and can, based on your BSN, retrieve your first name, last name and date of birth from the Personal Records Database. Using this combined information, the Minister will request your data from parties who may have your information about your vaccination, recovery and test (like the GGDs, the RIVM, the hospital where you have been vaccinated, and your general practitioner). Information about your recovery is based on a positive test in the past, which the test provider who tested you has had to report to the local GGD.
 
 If you request your data in CoronaCheck or via coronacheck.nl, you will be shown which information is retrieved and where it is coming from. 
 
@@ -128,7 +128,7 @@ The Minister takes protection of your personal data seriously and has taken appr
 
 ## 12. Changing privacy statement
 
-This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: December 1, 2021.
+This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: December 28, 2021.
 
 ## Overview of processed personal data 
 
