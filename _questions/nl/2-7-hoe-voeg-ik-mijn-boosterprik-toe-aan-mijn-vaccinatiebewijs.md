@@ -3,13 +3,21 @@ set: 2
 index: 7
 title: Ik heb een boosterprik gehad, hoe voeg ik deze toe aan mijn vaccinatiebewijs?
 ---
-## In de CoronaCheck-app 
-
+<details class="details">
+<summary><h2>In de CoronaCheck-app </h2></summary>
+<div markdown="1">
 Nieuwe vaccinaties worden niet automatisch in de app opgehaald. Daarom moet je na elke vaccinatie je vaccinatiegegevens opnieuw ophalen door in te loggen met DigiD. Klik op het ‘+’teken rechtsboven in de app en voeg een vaccinatiebewijs toe.
+</div>
+</details>
 
-## Op papier
+<details class="details">
+<summary><h2>Op papier</h2></summary>
+<div markdown="1">
+Ga dan naar [www.coronacheck.nl/print](/print) en maak opnieuw een vaccinatiebewijs. Je boosterprik wordt dan ook in je papieren bewijs verwerkt.
+</div>
+</details>
 
-Ga dan naar www.coronacheck.nl/print en maak opnieuw een vaccinatiebewijs. Je boosterprik wordt dan ook in je papieren bewijs verwerkt.
+## Meer informatie
 
 Heb je één of meerdere vaccinaties in het buitenland gehad? Op {{ site.data.links.buitenlandvaccinatie[page.lang] }} lees je meer over het registreren van je vaccinaties.
 

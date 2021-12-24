@@ -3,13 +3,21 @@ set: 2
 index: 7
 title: I received a booster injection, how do I add it to my vaccination certificate?
 ---
-## In the CoronaCheck app
-
+<details class="details">
+<summary><h2>In the CoronaCheck app</h2></summary>
+<div markdown="1">
 Vaccinations are not retrieved automatically. Therefore, after every injection, you need to retrieve your vaccination details again by logging in with DigiD. Click on the ‘+’ symbol in the top right corner of the app and add a vaccination certificate. 
+</div>
+</details>
 
-## On paper
+<details class="details">
+<summary><h2>On paper</h2></summary>
+<div markdown="1">
+Go to [www.coronacheck.nl/en/print](/print) and make create a new vaccination certificate. Your booster injection will be added to your certificate.
+</div>
+</details>
 
-Go to www.coronacheck.nl/en/print and make create a new vaccination certificate. Your booster injection will be added to your certificate.
+## More information
 
 Have you received one or more vaccinations abroad? Read more about registering your vaccinations on {{ site.data.links.buitenlandvaccinatie[page.lang] }}.
 
