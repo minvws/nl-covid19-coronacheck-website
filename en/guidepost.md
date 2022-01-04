@@ -16,8 +16,7 @@ CoronaCheck is already used by many people for creating a vaccination, recovery 
 
 {% capture copy_vaccinatiebewijs %}
 <div markdown="1">
-
-CoronaCheck retrieves data about vaccinations from the systems of the RIVM and the GGD. Other vaccination setters, such as hospitals, general practitioners and other healthcare providers, have passed on your vaccination details to the RIVM. They only do so if you have given permission. Vaccination details can be retrieved in the app. [Read here how to retrieve your vaccination data](/en/faq/1-1-hoe-werkt-de-coronacheck-app/).
+CoronaCheck retrieves data about vaccinations from the systems of the RIVM, the GGD and hospitals. Other vaccination providers, such as general practitioners and other healthcare providers, have passed on your vaccination details to the RIVM. They only do so if you have given permission. Vaccination details can be retrieved in the app. [Read here how to retrieve your vaccination data](/en/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
 You must be fully vaccinated to make a Dutch QR code. You are fully vaccinated from 14 days after the last vaccination. Or 28 days after you were vaccinated with Janssen. As soon as your vaccination has been properly registered, you can make a vaccination certificate. An international QR code can already be created after one vaccination.
 
