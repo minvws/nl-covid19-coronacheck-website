@@ -1,10 +1,11 @@
 <script>
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
+import CcButton from '@/components/elements/CcButton';
 
 export default {
     name: 'ShortStarHome',
-    components: { Page, PageIntro }
+    components: { Page, PageIntro, CcButton }
 }
 </script>
 
@@ -16,6 +17,11 @@ export default {
                 :intro="$t('views.shortStay.pageIntro')"
             />
             <div class="section-block">
+                <CcButton
+                    id="create-qr-negative-test"
+                    @select="gotoPrint()"
+                    :label="$t('views.shortStay.button')"
+                />
             </div>
         </div>
     </Page>

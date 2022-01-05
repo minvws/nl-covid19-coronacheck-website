@@ -6,6 +6,7 @@ import recoveryPages from './pages/recovery'
 import vaccinationPages from './pages/vaccination'
 import otherPages from './pages/other'
 import errorPages from './pages/error-pages'
+import shortStayPages from './pages/short-stay'
 import i18n from '@/i18n';
 import store from '@/store'
 
@@ -16,7 +17,8 @@ const routes = [
     ...negativeTestPages,
     ...vaccinationPages,
     ...recoveryPages,
-    ...errorPages
+    ...errorPages,
+    ...shortStayPages
 ];
 
 const router = new VueRouter({
