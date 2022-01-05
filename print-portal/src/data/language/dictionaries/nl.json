@@ -25,6 +25,10 @@
 			"choiceVaccinationHeader": "Een vaccinatiebewijs",
 			"choiceVaccinationBody": "Ik heb mijn prik of prikken gehad"
 		},
+		"shortStay": {
+			"pageHeader": "Een bezoekersbewijs maken",
+			"pageIntro": "<p>Ben jij buiten de Europese Unie gevaccineerd en op bezoek in Nederland? Dan kan je een bezoekersbewijs maken waarmee je plekken in Nederland kan bezoeken die een coronatoegangsbewijs vragen.<br><br><a href=\"https://rijksoverheid.nl\" target=\"_blank\" rel=\"noopener noreferrer\">meer info rijksoverheid</a><br><br><b>Wil je je bewijs in de app?</b><br> Download en open de CoronaCheck app op je mobiel. Ga naar ‘Bezoekersbewijs maken' in het menu en volg de instructies.<br><a href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\">Download de app</a><br><br><b>Wil je je bewijs op papier?</b><br>Houd dan de kortverblijfcode en de ophaalcode die je van de testlocatie hebt gekregen bij de hand.</p>"
+		},
 		"choiceTestLocation": {
 			"pageHeader": "Waar ben je getest?",
 			"pageIntro": "<p>Blijkt uit de test dat je geen corona hebt? Dan kan je van de testuitslag een QR-code maken. Geef aan waar je getest bent.</p>",
