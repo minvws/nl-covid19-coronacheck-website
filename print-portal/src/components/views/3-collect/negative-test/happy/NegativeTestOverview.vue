@@ -8,21 +8,35 @@ import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import NegativeTestV2 from './NegativeTestV2';
 import LoadingCover from '@/components/elements/LoadingCover';
 import { FilterTypes } from '@/types/filter-types'
+import { RouterNames } from '@/router/pages/short-stay'
 
 export default {
     name: 'NegativeTestOverview',
     components: { LoadingCover, NegativeTestV2, Page, PageIntro, NegativeTest, CcButton, CcModestButton },
     mixins: [overviewMixin],
+    props: {
+        filter: {
+            type: String,
+            required: false,
+            default: FilterTypes.NEGATIVE_TEST
+        }
+    },
     data() {
         return {
-            filter: FilterTypes.NEGATIVE_TEST,
             pages: {
                 print: 'PrintNegativeTest'
             }
         }
     },
+    computed: {
+        isAssignment () {
+            return this.filter === FilterTypes.VACCINATION_ASSESSMENT
+        }
+    },
     mounted() {
-        if (!this.latestSignedEvent) {
+        if (this.isAssignment) {
+            this.$router.replace({ name: RouterNames.CODE });
+        } else if (!this.latestSignedEvent) {
             this.$router.push({ name: 'TestResultNone' });
         }
     }
@@ -39,7 +53,7 @@ export default {
                 :intro="$t('views.negativeTestOverview.pageIntro')"/>
 
             <div class="section-block">
-                <div class="proof-events">
+                <div class="proof-events" v-if="!isAssignment && latestSignedEvent">
                     <NegativeTestV2
                         v-if="latestSignedEvent.event.negativetest.protocolVersion === '2.0'"
                         :signed-event="latestSignedEvent"/>

@@ -15,6 +15,28 @@ import { FlowTypes } from '@/types/flow-types'
 export default {
     name: 'ProvideCode',
     components: { Page, PageIntro, FaqMobileLink, ProvideVerificationCode, ProvideTestCode, PreferMobile },
+    props: {
+        showFAQ: {
+            type: Boolean,
+            required: false,
+            default: true
+        },
+        translation: {
+            type: String,
+            required: false,
+            default: 'views.provideCode'
+        },
+        filter: {
+            type: String,
+            required: false,
+            default: undefined
+        },
+        clearTestCode: {
+            type: Boolean,
+            required: false,
+            default: false
+        }
+    },
     data () {
         return {
             testCodeStatus: {
@@ -130,7 +152,7 @@ export default {
             this.testCodeStatus.error = '';
             // @TODO: add or replace events?
             this.$store.dispatch('signedEvents/createAll', { events: [signedEvent], filter: this.filter });
-            this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0' } });
+            this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0', filter: this.filter } });
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {
@@ -263,15 +285,17 @@ export default {
     <Page @back="back">
         <div class="section">
             <PageIntro
-                :head="$t('views.provideCode.pageHeader')"
-                :intro="$t('views.provideCode.pageIntro')"/>
+                :head="$t(`${translation}.pageHeader`)"
+                :intro="$t(`${translation}.pageIntro`)"/>
             <div class="section-block">
                 <form
                     v-on:submit.prevent
                     autocomplete="off">
                     <ProvideTestCode
                         @submit="submitTestCode"
+                        :translation="translation"
                         :test-code-status="testCodeStatus"
+                        :clear-test-code="clearTestCode"
                         :verification-needed="verificationNeeded"/>
                     <ProvideVerificationCode
                         v-if="verificationNeeded"
@@ -281,8 +305,9 @@ export default {
                 </form>
             </div>
         </div>
-        <PreferMobile/>
-
-        <FaqMobileLink/>
+        <template v-if="showFAQ">
+            <PreferMobile/>
+            <FaqMobileLink/>
+        </template>
     </Page>
 </template>

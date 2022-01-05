@@ -18,7 +18,8 @@ const negativeTestPages = [
     }, {
         path: '/jouw-testresultaat',
         name: 'NegativeTestOverview',
-        component: NegativeTestOverview
+        component: NegativeTestOverview,
+        props: true
     }, {
         path: '/jouw-testresultaat-redirect',
         name: 'NegativeTestRedirect',

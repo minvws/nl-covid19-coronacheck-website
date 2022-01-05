@@ -2,10 +2,16 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
+import { RouterNames } from '@/router/pages/short-stay.js'
 
 export default {
     name: 'ShortStarHome',
-    components: { Page, PageIntro, CcButton }
+    components: { Page, PageIntro, CcButton },
+    computed: {
+        name () {
+            return RouterNames.ASSESSMENT
+        }
+    }
 }
 </script>
 
@@ -19,7 +25,7 @@ export default {
             <div class="section-block">
                 <CcButton
                     id="create-qr-negative-test"
-                    @select="gotoPrint()"
+                    @select="$router.push({ name })"
                     :label="$t('views.shortStay.button')"
                 />
             </div>

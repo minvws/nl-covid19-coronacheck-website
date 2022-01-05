@@ -16,7 +16,7 @@ export default {
             if (this.$store.state.visitedHomePage) {
                 if (!this.$store.state.snackbar.visible) {
                     // only set focus when snackbar is not visible
-                    this.$refs.initialTabStart.focus();
+                    this.$refs.initialTabStart?.focus();
                 }
             } else {
                 // to this every time, not only on home, beacuse you could enter from a redirect
