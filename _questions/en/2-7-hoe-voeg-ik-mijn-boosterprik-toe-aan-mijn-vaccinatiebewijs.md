@@ -2,6 +2,8 @@
 set: 2
 index: 7
 title: I received a booster injection, how do I add it to my vaccination certificate?
+featuredHome: true
+featuredHomeIndex: 2
 ---
 <details class="details">
 <summary><h2>In the CoronaCheck app</h2></summary>
