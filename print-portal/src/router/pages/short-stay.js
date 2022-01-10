@@ -34,7 +34,7 @@ const routes = [
         props: {
             showFAQ: false,
             clearTestCode: true,
-            exclude: RegionTypes.EUROPEAN
+            exclude: RegionTypes.SHORT_STAY
         }
     }
 ]

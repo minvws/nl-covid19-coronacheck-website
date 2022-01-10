@@ -18,6 +18,10 @@ export default {
         regionType: {
             type: String,
             required: true
+        },
+        exclude: {
+            type: String,
+            required: false
         }
     },
     computed: {
@@ -26,24 +30,28 @@ export default {
         },
         details() {
             const details = [];
-            if (this.type === FilterTypes.VACCINATION && this.regionType === RegionTypes.EUROPEAN) {
-                details.push('whyNoDomesticVaccination');
-                details.push('whyNoDutchCertificate');
-            }
-            if (this.type === FilterTypes.RECOVERY && this.regionType === RegionTypes.DOMESTIC) {
-                details.push('whyNoEuropeanRecovery');
-            }
-            if (this.type === FilterTypes.NEGATIVE_TEST && this.regionType === RegionTypes.EUROPEAN) {
-                details.push('whyNoDomesticTest');
-            }
-            if (this.type === FilterTypes.NEGATIVE_TEST && this.regionType === RegionTypes.DOMESTIC) {
-                details.push('whyNoEuropeanTest');
-            }
-            if (this.regionType === RegionTypes.EUROPEAN || this.regionType === RegionTypes.BOTH) {
-                details.push('validLocation');
-            }
-            if (this.type === FilterTypes.VACCINATION || this.type === FilterTypes.RECOVERY) {
-                details.push('validPeriod');
+            if (this.exclude === RegionTypes.SHORT_STAY) {
+                details.push('shortStay')
+            } else {
+                if (this.type === FilterTypes.VACCINATION && this.regionType === RegionTypes.EUROPEAN) {
+                    details.push('whyNoDomesticVaccination');
+                    details.push('whyNoDutchCertificate');
+                }
+                if (this.type === FilterTypes.RECOVERY && this.regionType === RegionTypes.DOMESTIC) {
+                    details.push('whyNoEuropeanRecovery');
+                }
+                if (this.type === FilterTypes.NEGATIVE_TEST && this.regionType === RegionTypes.EUROPEAN) {
+                    details.push('whyNoDomesticTest');
+                }
+                if (this.type === FilterTypes.NEGATIVE_TEST && this.regionType === RegionTypes.DOMESTIC) {
+                    details.push('whyNoEuropeanTest');
+                }
+                if (this.regionType === RegionTypes.EUROPEAN || this.regionType === RegionTypes.BOTH) {
+                    details.push('validLocation');
+                }
+                if (this.type === FilterTypes.VACCINATION || this.type === FilterTypes.RECOVERY) {
+                    details.push('validPeriod');
+                }
             }
             return details;
         },
