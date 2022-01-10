@@ -81,6 +81,7 @@ export default {
                 v-if="testCodeStatus.error.length > 0"
                 :label="testCodeStatus.error"/>
         </div>
+        <slot />
         <CcButton
             v-if="!verificationNeeded"
             id="submit-test-code"

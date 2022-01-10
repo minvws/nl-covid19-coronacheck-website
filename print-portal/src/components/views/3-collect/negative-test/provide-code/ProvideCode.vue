@@ -4,6 +4,8 @@ import PageIntro from '@/components/elements/PageIntro';
 import PreferMobile from '@/components/elements/PreferMobile';
 import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
+import UserConsent from '@/components/views/1-home/UserConsent';
+import ErrorLabel from '@/components/elements/ErrorLabel';
 import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import { cmsDecode } from '@/tools/cms'
@@ -14,7 +16,7 @@ import { FlowTypes } from '@/types/flow-types'
 
 export default {
     name: 'ProvideCode',
-    components: { Page, PageIntro, FaqMobileLink, ProvideVerificationCode, ProvideTestCode, PreferMobile },
+    components: { Page, PageIntro, FaqMobileLink, ProvideVerificationCode, ProvideTestCode, PreferMobile, UserConsent, ErrorLabel },
     props: {
         showFAQ: {
             type: Boolean,
@@ -44,6 +46,11 @@ export default {
         exclude: {
             type: String,
             required: false
+        },
+        needsConsent: {
+            type: Boolean,
+            required: false,
+            default: false
         }
     },
     data () {
@@ -54,10 +61,14 @@ export default {
             verificationCodeStatus: {
                 error: ''
             },
-            timer: null
+            timer: null,
+            clickedNext: false
         }
     },
     computed: {
+        consent() {
+            return this.$store.state.userConsent;
+        },
         testCode() {
             return this.$store.state.testCode;
         },
@@ -131,7 +142,15 @@ export default {
         }
     },
     methods: {
+        setUserConsent(value) {
+            this.$store.commit('setUserConsent', value);
+        },
         submitTestCode() {
+            this.clickedNext = true;
+            if (this.needsConsent && !this.consent) {
+                return
+            }
+
             if (this.testCode.length > 0) {
                 if (this.checkIfHasTestProvider) {
                     if (this.isTestCodeValid) {
@@ -308,12 +327,22 @@ export default {
                         :translation="translation"
                         :test-code-status="testCodeStatus"
                         :clear-test-code="clearTestCode"
-                        :verification-needed="verificationNeeded"/>
+                        :verification-needed="verificationNeeded">
+                        <UserConsent
+                            v-if="needsConsent"
+                            @update="setUserConsent"
+                            :consent="consent"
+                            :label="$t('views.home.userConsentText')"
+                        />
+                        <ErrorLabel
+                            v-if="clickedNext && !consent"
+                            :label="$t('views.home.noConsentError')"/>
+                    </ProvideTestCode>
                     <ProvideVerificationCode
                         v-if="verificationNeeded"
                         @submit-test-code="submitTestCode"
                         @submit-verification-code="submitVerificationCode"
-                        :verification-code-status="verificationCodeStatus"/>
+                        :verification-code-status="verificationCodeStatus" />
                 </form>
             </div>
         </div>

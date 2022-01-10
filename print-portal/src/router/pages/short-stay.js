@@ -23,7 +23,8 @@ const routes = [
             translation: 'views.shortStayProvideAssessmentCode',
             filter: FilterTypes.VACCINATION_ASSESSMENT,
             clearTestCode: true,
-            historyBack: true
+            historyBack: true,
+            needsConsent: true
         }
     },
     {
