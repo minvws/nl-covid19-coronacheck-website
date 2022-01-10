@@ -40,6 +40,10 @@ export default {
             type: Boolean,
             required: false,
             default: false
+        },
+        exclude: {
+            type: String,
+            required: false
         }
     },
     data () {
@@ -156,7 +160,7 @@ export default {
         addNegativeTest(signedEvent) {
             this.testCodeStatus.error = '';
             this.$store.dispatch('signedEvents/createAll', { events: [signedEvent], filter: this.filter });
-            this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0', filter: this.filter } });
+            this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0', filter: this.filter, exclude: this.exclude } });
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {

@@ -1,6 +1,7 @@
 import ShortStayHome from '@/components/views/5-short-stay/ShortStayHome'
 import ProvideCode from '@/components/views/3-collect/negative-test/provide-code/ProvideCode'
 import { FilterTypes } from '@/types/filter-types'
+import { RegionTypes } from '@/types/region-types'
 
 export const RouterNames = {
     HOME: 'ShortStay',
@@ -31,7 +32,8 @@ const routes = [
         name: RouterNames.CODE,
         props: {
             showFAQ: false,
-            clearTestCode: true
+            clearTestCode: true,
+            exclude: RegionTypes.EUROPEAN
         }
     }
 ]

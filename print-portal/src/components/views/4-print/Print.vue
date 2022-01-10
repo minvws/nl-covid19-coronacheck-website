@@ -17,6 +17,10 @@ export default {
             type: Boolean,
             required: false,
             default: false
+        },
+        exclude: {
+            type: String,
+            required: false
         }
     },
     computed: {
@@ -24,7 +28,12 @@ export default {
             return RegionTypes;
         },
         proof() {
-            return this.$store.state.qrs.proof;
+            const exclude = this.exclude ? this.exclude.split(',') : []
+            const proof = Object.keys(this.$store.state.qrs.proof).reduce((cul, key) => {
+                if (!exclude.includes(key))cul[key] = this.$store.state.qrs.proof[key]
+                return cul
+            }, {})
+            return proof;
         },
         hasDomestic() {
             return this.proof?.domestic;

@@ -45,6 +45,7 @@ const negativeTestPages = [
         path: '/print-testuitslag',
         name: 'PrintNegativeTest',
         component: PrintNegativeTest,
+        props: true,
         meta: {
             title: 'views.print.pageTitle'
         }
