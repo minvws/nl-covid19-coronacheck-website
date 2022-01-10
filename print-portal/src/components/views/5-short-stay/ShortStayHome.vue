@@ -3,7 +3,7 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
 import { RouterNames } from '@/router/pages/short-stay.js'
-
+import { goHome } from '@/tools/router'
 export default {
     name: 'ShortStarHome',
     components: { Page, PageIntro, CcButton },
@@ -11,6 +11,11 @@ export default {
         name () {
             return RouterNames.ASSESSMENT
         }
+    },
+    created () {
+        // go to home when feature flag is disabled
+        if (this.$store.getters.visitorPassEnabled) return
+        goHome()
     }
 }
 </script>
