@@ -19,9 +19,10 @@ const routes = [
         name: RouterNames.ASSESSMENT,
         props: {
             showFAQ: false,
-            translation: 'views.shortStayProvideCode',
+            translation: 'views.shortStayProvideAssessmentCode',
             filter: FilterTypes.VACCINATION_ASSESSMENT,
-            clearTestCode: true
+            clearTestCode: true,
+            historyBack: true
         }
     },
     {

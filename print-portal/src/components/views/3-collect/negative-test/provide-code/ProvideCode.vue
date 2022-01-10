@@ -35,6 +35,11 @@ export default {
             type: Boolean,
             required: false,
             default: false
+        },
+        historyBack: {
+            type: Boolean,
+            required: false,
+            default: false
         }
     },
     data () {
@@ -150,7 +155,6 @@ export default {
         },
         addNegativeTest(signedEvent) {
             this.testCodeStatus.error = '';
-            // @TODO: add or replace events?
             this.$store.dispatch('signedEvents/createAll', { events: [signedEvent], filter: this.filter });
             this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0', filter: this.filter } });
         },
@@ -270,6 +274,10 @@ export default {
             }
         },
         back() {
+            if (this.historyBack) {
+                this.$router.go(-1)
+                return
+            }
             const ggdEnabled = this.$store.state.holderConfig.ggdEnabled
             if (ggdEnabled) {
                 this.$router.push({ name: 'ChoiceTestLocation' });
