@@ -67,7 +67,8 @@
             {weeknr: '49', downloadnr: 14.374068},
             {weeknr: '50', downloadnr: 14.497964},
             {weeknr: '51', downloadnr: 14.594925}, 
-            {weeknr: '52', downloadnr: 14.694699}, // 2 jan
+            {weeknr: '52', downloadnr: 14.694699}, 
+            {weeknr: '01', downloadnr: 14.800272}, // 9 jan
         ]
 
         CoronaCheck_downloads_plot.appendChild(
@@ -84,7 +85,7 @@
                     label: "Weeknummer →",
                     labelAnchor: 'right',  
                     labelOffset: -10,
-                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52'],
+                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52', '02'],
                     tickSize: 0, 
                 },
                 marks: [
@@ -93,7 +94,8 @@
                         y: "downloadnr",
                         curve: "monotone-y",
                         stroke: "#ec025f",
-                        strokeWidth: 3
+                        strokeWidth: 3,
+                        sort: {x: "y"}
                     }),
                 ],
                 style: {
@@ -119,7 +121,7 @@
                     label: "Week number →",
                     labelAnchor: 'right',  
                     labelOffset: -10,
-                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52'],
+                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52', '02'],
                     tickSize: 0, 
                 },
                 marks: [
@@ -128,7 +130,8 @@
                         y: "downloadnr",
                         curve: "monotone-y",
                         stroke: "#ec025f",
-                        strokeWidth: 3
+                        strokeWidth: 3,
+                        sort: {x: "y"}
                     }),
                 ],
                 style: {
@@ -185,7 +188,8 @@
             {weeknr: '49', downloadnr: 2.601181},
             {weeknr: '50', downloadnr: 2.643435},
             {weeknr: '51', downloadnr: 2.695422},
-            {weeknr: '52', downloadnr: 2.721700}, // 2 jan
+            {weeknr: '52', downloadnr: 2.721700}, 
+            {weeknr: '01', downloadnr: 2.748957}, // 9 jan
         ]
         CoronaCheckScanner_downloads_plot.appendChild(
             Plot.plot({
@@ -202,7 +206,7 @@
                     label: "Weeknummer →",
                     labelAnchor: 'right',
                     labelOffset: -10,
-                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52'],
+                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52', '02'],
                     tickSize: 0,
                 },
                 marks: [
@@ -211,7 +215,8 @@
                         y: "downloadnr",
                         curve: "monotone-y",
                         stroke: "#ec025f",
-                        strokeWidth: 3
+                        strokeWidth: 3,
+                        sort: {x: "y"}
                     }),
                 ],
                 style: {
@@ -238,7 +243,7 @@
                     label: "Week number →",
                     labelAnchor: 'right',
                     labelOffset: -10,
-                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52'],
+                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52', '02'],
                     tickSize: 0,
                 },
                 marks: [
@@ -247,7 +252,8 @@
                         y: "downloadnr",
                         curve: "monotone-y",
                         stroke: "#ec025f",
-                        strokeWidth: 3
+                        strokeWidth: 3,
+                        sort: {x: "y"}
                     }),
                 ],
                 style: {
