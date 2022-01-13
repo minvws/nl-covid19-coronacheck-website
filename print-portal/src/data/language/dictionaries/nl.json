@@ -7,7 +7,6 @@
 	"template": {
 		"footer": "\n    <div class=\"footer-links footer-links--print-portal\">\n        <div class=\"footer-links-col ___desktop-50\">\n            <div class=\"footer-logos-info\">\n                <h2 class=\"screen-reader-text\">Colofon</h2>\n                CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn\n                en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder\n                de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community\n                tijdens de ontwikkeling meegekeken en getest.\n            </div>\n            <div class=\"footer-attribution\">\n                <h3 class=\"footer-attribution__title\">Mede mogelijk gemaakt door</h3>\n                <img src=\"assets/img/Logo_EU_Negative_nl.svg\" alt=\"Logo Europese Commissie\" width=\"175\" height=\"48\" />\n            </div>\n        </div>\n        <div class=\"footer-links-col ___desktop-50\">\n            <h2>Heb je vragen over CoronaCheck?</h2>\n            <p>Lees dan de <a href=\"https://www.coronacheck.nl/nl/faq\" target=\"_blank\" rel=\"noopener noreferrer\">meestgestelde vragen</a>.</p>\n        </div>\n    </div>\n"
 	},
-	"hello": "world",
 	"views": {
 		"home": {
 			"pageHeader": "Krijg toegang met een papieren bewijs",
@@ -25,6 +24,19 @@
 			"choiceRecoveryBody": "Uit de test blijkt dat ik corona heb gehad",
 			"choiceVaccinationHeader": "Een vaccinatiebewijs",
 			"choiceVaccinationBody": "Ik heb mijn prik of prikken gehad"
+		},
+		"shortStay": {
+			"pageHeader": "Een bezoekersbewijs maken",
+			"pageIntro": "<p>Ben jij buiten de Europese Unie gevaccineerd en op bezoek in Nederland? Dan kan je een bezoekersbewijs maken waarmee je plekken in Nederland kan bezoeken die een coronatoegangsbewijs vragen.<br><br><a href=\"https://rijksoverheid.nl\" target=\"_blank\" rel=\"noopener noreferrer\">meer info rijksoverheid</a><br><br><b>Wil je je bewijs in de app?</b><br> Download en open de CoronaCheck app op je mobiel. Ga naar ‘Bezoekersbewijs maken' in het menu en volg de instructies.<br><a href=\"\\#\" target=\"_blank\" rel=\"noopener noreferrer\">Download de app</a><br><br><b>Wil je je bewijs op papier?</b><br>Houd dan de kortverblijfcode en de ophaalcode die je van de testlocatie hebt gekregen bij de hand.</p>",
+			"button": "Maak papieren bewijs"
+		},
+		"shortStayProvideAssessmentCode": {
+			"pageHeader": "Vaccinatie beoordeling ophalen",
+			"pageIntro": "<p>Vul jouw kortverblijfcode in. Deze heb je van je testlocatie gekregen.</p>",
+			"uniqueCode": "Kortverblijfcode"
+		},
+		"shortStayProvideCode": {
+			"pageHeader": "Controleer je testuitslag"
 		},
 		"choiceTestLocation": {
 			"pageHeader": "Waar ben je getest?",
@@ -118,6 +130,7 @@
 				"both": "Gelukt! Jouw bewijzen staan hieronder klaar"
 			},
 			"pageIntro": {
+				"short-stay": "<p>Je hebt een bezoekersbewijs voor in Nederland.Open de PDF's en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.</p>",
 				"domestic": "<p>Je hebt alleen een %{type}bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet als je de grens over gaat of in het buitenland bent.</p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.</p>",
 				"european": "<p>Je hebt alleen een internationaal %{type}bewijs. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.</p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.</p>",
 				"both": "<p>Je hebt een Nederlands en een internationaal %{type}bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.</p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.</p>",
@@ -143,6 +156,10 @@
 					"whyNoDomesticVaccination": {
 						"summary": "Waarom krijg ik geen Nederlands vaccinatiebewijs?",
 						"content": "<p>Voor een Nederlands vaccinatiebewijs moet je volledig gevaccineerd zijn, of hersteld van corona vóór je eerste prik.</p>"
+					},
+					"shortStay": {
+						"summary": "Hoe lang is mijn bewijs geldig?",
+						"content": "<p>Het bewijs is geldig tot 14 dagen na de beoordeling van je vaccinatie gegevens. Blijf je langer in Nederland? Dan kun je opnieuw een bezoekersbewijs aanvragen. Ga voor meer informatie naar <a href=\"https://www.bezoekersbewijs.nl/\" target=\"_blank\" rel=\"noopener noreferrer\">www.bezoekersbewijs.nl</a>.</p>"
 					},
 					"whyNoDutchCertificate": {
 						"summary": "Corona gehad voor je eerste prik?",
