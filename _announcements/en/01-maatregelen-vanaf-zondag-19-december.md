@@ -5,6 +5,6 @@ published: true
 # Always set a title:
 title: ''
 # Choose a style: error or info
-style: error
+style: info
 ---
-Please note: as of Sunday December 19 the locations that require a corona certificate for access are temporarily closed. Read more information on <a href="https://www.government.nl/covid-measures" rel="noopener noreferrer" target="_blank">the website of the Government</a>.
+From Saturday January 15, the corona entry pass will be required for entering certain locations. Are you going to use the CoronaCheck app? Please open the app before you leave to avoid problems. Visit the <a href="https://www.government.nl/covid-measures" rel="noopener noreferrer" target="_blank">the Government's website</a> for more information.
