@@ -61,6 +61,9 @@ const actions = {
     },
     clear: ({ commit }, { filter }) => {
         commit('clear', filter)
+    },
+    clearAll: ({ commit }) => {
+        commit('clearAll')
     }
 };
 
@@ -72,6 +75,9 @@ const mutations = {
     },
     clear(state, filter) {
         state.all = state.all.filter(({ filter: current }) => current !== filter)
+    },
+    clearAll(state) {
+        state.all = []
     }
 };
 

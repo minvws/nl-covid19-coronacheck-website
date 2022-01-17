@@ -1,4 +1,5 @@
 import ShortStayHome from '@/components/views/5-short-stay/ShortStayHome'
+import ShortStayCodeError from '@/components/views/5-short-stay/ShortStayCodeError'
 import ProvideCode from '@/components/views/3-collect/negative-test/provide-code/ProvideCode'
 import { FilterTypes } from '@/types/filter-types'
 import { RegionTypes } from '@/types/region-types'
@@ -6,7 +7,8 @@ import { RegionTypes } from '@/types/region-types'
 export const RouterNames = {
     HOME: 'ShortStay',
     ASSESSMENT: 'ShortStayProvideAssessmentCode',
-    CODE: 'ShortStayProvideCode'
+    CODE: 'ShortStayProvideCode',
+    NO_VACCINATION_ASSESSMENT_CODE: 'ShortStayNoAssessmentCode'
 }
 const routes = [
     {
@@ -34,8 +36,17 @@ const routes = [
         props: {
             showFAQ: false,
             clearTestCode: true,
-            exclude: RegionTypes.SHORT_STAY
+            exclude: RegionTypes.SHORT_STAY,
+            redirect: {
+                filter: FilterTypes.VACCINATION_ASSESSMENT,
+                name: RouterNames.NO_VACCINATION_ASSESSMENT_CODE
+            }
         }
+    },
+    {
+        path: '/kort-verblijf-onbekende-code',
+        component: ShortStayCodeError,
+        name: RouterNames.NO_VACCINATION_ASSESSMENT_CODE
     }
 ]
 

@@ -13,6 +13,7 @@ import { hasInternetConnection, messageInternetConnection, getErrorCode } from '
 import { ClientCode } from '@/data/constants/error-codes'
 import { StepTypes } from '@/types/step-types'
 import { FlowTypes } from '@/types/flow-types'
+import { RegionTypes } from '@/types/region-types'
 
 export default {
     name: 'ProvideCode',
@@ -51,6 +52,10 @@ export default {
             type: Boolean,
             required: false,
             default: false
+        },
+        redirect: {
+            type: Object,
+            required: false
         }
     },
     data () {
@@ -63,6 +68,12 @@ export default {
             },
             timer: null,
             clickedNext: false
+        }
+    },
+    mounted () {
+        if (this.exclude === RegionTypes.SHORT_STAY) {
+            const assesment = this.$store.getters['signedEvents/getProofEvents'](this.redirect.filter).length > 0
+            if (!assesment) this.$router.replace({ name: this.redirect.name })
         }
     },
     computed: {
