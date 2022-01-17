@@ -24,7 +24,7 @@ const routes = [
             filter: FilterTypes.VACCINATION_ASSESSMENT,
             clearTestCode: true,
             historyBack: true,
-            needsConsent: true
+            needsConsent: false
         }
     },
     {
