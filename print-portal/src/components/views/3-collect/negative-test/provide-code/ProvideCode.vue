@@ -56,6 +56,10 @@ export default {
         redirect: {
             type: Object,
             required: false
+        },
+        clearSignedEvents: {
+            type: Boolean,
+            required: false
         }
     },
     data () {
@@ -71,6 +75,9 @@ export default {
         }
     },
     mounted () {
+        if (this.clearSignedEvents) {
+            this.$store.dispatch('signedEvents/clearAll')
+        }
         if (this.exclude === RegionTypes.SHORT_STAY) {
             const assesment = this.$store.getters['signedEvents/getProofEvents'](this.redirect.filter).length > 0
             if (!assesment) this.$router.replace({ name: this.redirect.name })
@@ -190,7 +197,8 @@ export default {
         addNegativeTest(signedEvent) {
             this.testCodeStatus.error = '';
             this.$store.dispatch('signedEvents/createAll', { events: [signedEvent], filter: this.filter });
-            this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0', filter: this.filter, exclude: this.exclude } });
+            const type = this.historyBack ? 'replace' : 'push'
+            this.$router[type]({ name: 'NegativeTestOverview', params: { flow: '2.0', filter: this.filter, exclude: this.exclude } });
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {

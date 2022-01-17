@@ -2,13 +2,16 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
+import { RouterNames } from '@/router/pages/short-stay'
 
 export default {
     name: 'ShortStayCodeError',
     components: { Page, PageIntro, CcButton },
     methods: {
         onSelect () {
-            this.$router.go(-1);
+            this.$router.replace({
+                name: RouterNames.ASSESSMENT
+            })
         }
     },
     mounted () {

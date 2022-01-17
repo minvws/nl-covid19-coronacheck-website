@@ -26,7 +26,8 @@ const routes = [
             filter: FilterTypes.VACCINATION_ASSESSMENT,
             clearTestCode: true,
             historyBack: true,
-            needsConsent: false
+            needsConsent: false,
+            clearSignedEvents: true
         }
     },
     {
@@ -37,6 +38,7 @@ const routes = [
             showFAQ: false,
             clearTestCode: true,
             exclude: RegionTypes.SHORT_STAY,
+            historyBack: true,
             redirect: {
                 filter: FilterTypes.VACCINATION_ASSESSMENT,
                 name: RouterNames.NO_VACCINATION_ASSESSMENT_CODE
