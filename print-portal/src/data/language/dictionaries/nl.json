@@ -309,6 +309,19 @@
 				"detailsRetrieved": "De volgende gegevens zijn opgehaald"
 			}
 		},
+		"vaccinationAssessment": {
+			"title": "Vaccinatie-beoordeling",
+			"about": {
+				"head": "Kloppen er gegevens niet?",
+				"body": "<p>Neem contact op met de locatie waar je vaccinatie is beoordeeld. Zij kunnen je helpen je gegevens aan te passen.</p>"
+			},
+			"info": {
+				"date": "Beoordelingsdatum",
+				"detailsRetrieved": "De volgende gegevens zijn opgehaald",
+				"identificationCode": "Uniek beoordelingsnummer",
+				"country": "Gevaccineerd in (land)"
+			}
+		},
 		"digid": {
 			"loginDigid": "Log in met DigiD",
 			"dontHaveDigid": "Ik heb geen DigiD",

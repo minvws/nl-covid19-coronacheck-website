@@ -3,6 +3,7 @@ import NegativeTestV2 from './NegativeTestV2';
 import NegativeTestV3 from './NegativeTestV3';
 import Recovery from './Recovery';
 import PositiveTest from './PositiveTest';
+import VaccinationAssessment from './VaccinationAssessment';
 import { FilterTypes } from '@/types/filter-types'
 class ProofEvent {
     constructor({
@@ -13,6 +14,7 @@ class ProofEvent {
         negativetest = null,
         positivetest = null,
         recovery = null,
+        vaccinationassessment = null,
         protocolVersion = ''
     }) {
         this.type = type || '';
@@ -22,6 +24,7 @@ class ProofEvent {
         this.negativetest = type === FilterTypes.NEGATIVE_TEST ? ((protocolVersion && protocolVersion === '2.0') ? new NegativeTestV2(negativetest) : new NegativeTestV3(negativetest)) : null
         this.positivetest = type === FilterTypes.POSITIVE_TEST ? new PositiveTest(positivetest) : null
         this.recovery = type === FilterTypes.RECOVERY ? new Recovery(recovery) : null
+        this.vaccinationassessment = type === FilterTypes.VACCINATION_ASSESSMENT ? new VaccinationAssessment(vaccinationassessment) : null
     }
 }
 

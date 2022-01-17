@@ -6,13 +6,15 @@ import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import NegativeTestV2 from './NegativeTestV2';
+import VaccinationAssessment from '@/components/views/5-short-stay/VaccinationAssessment';
+
 import LoadingCover from '@/components/elements/LoadingCover';
 import { FilterTypes } from '@/types/filter-types'
 import { RouterNames } from '@/router/pages/short-stay'
 
 export default {
     name: 'NegativeTestOverview',
-    components: { LoadingCover, NegativeTestV2, Page, PageIntro, NegativeTest, CcButton, CcModestButton },
+    components: { LoadingCover, NegativeTestV2, Page, PageIntro, NegativeTest, CcButton, CcModestButton, VaccinationAssessment },
     mixins: [overviewMixin],
     props: {
         filter: {
@@ -31,6 +33,9 @@ export default {
     computed: {
         isAssignment () {
             return this.filter === FilterTypes.VACCINATION_ASSESSMENT
+        },
+        assessmentEvent () {
+            return this.$store.getters['signedEvents/getProofEvents'](FilterTypes.VACCINATION_ASSESSMENT)?.[0]
         }
     },
     mounted() {
@@ -54,6 +59,10 @@ export default {
 
             <div class="section-block">
                 <div class="proof-events" v-if="!isAssignment && latestSignedEvent">
+                    <VaccinationAssessment
+                        v-if="assessmentEvent"
+                        :signed-event="assessmentEvent"
+                    />
                     <NegativeTestV2
                         v-if="latestSignedEvent.event.negativetest.protocolVersion === '2.0'"
                         :signed-event="latestSignedEvent"/>
