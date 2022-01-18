@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <link href="/css/main.css" rel="stylesheet">
 
@@ -23,7 +23,7 @@
     <section class="container content-block">
         <h1>Generated SVG's</h1>
         <h2>CoronaCheck Downloads</h2>
-        <label><input id="number-of-cc-downloads" size="5" /> miljoen</label>
+        <label lang="nl"><input class="number-of-cc-downloads" size="5" /> miljoen</label>
         <div class="column-2">
             <div id="CoronaCheck_downloads_plot"></div>
             <div>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <h2>CoronaCheck Scanner Downloads</h2>
-        <label><input id="number-of-ccs-downloads" size="5"  /> miljoen</label>
+        <label lang="nl"><input class="number-of-ccs-downloads" size="5"  /> miljoen</label>
         <div class="column-2">
             <div id="CoronaCheckScanner_downloads_plot"></div>
             <div>
@@ -42,6 +42,7 @@
         <hr />
 
         <h2>CoronaCheck Downloads (English)</h2>
+        <label><input class="number-of-cc-downloads" size="5" /> million</label>
         <div class="column-2">
             <div id="CoronaCheck_downloads_plot_en"></div>
             <div>
@@ -49,6 +50,7 @@
             </div>
         </div>
         <h2>CoronaCheck Scanner Downloads (English)</h2>
+        <label><input class="number-of-ccs-downloads" size="5"  /> million</label>
         <div class="column-2">
             <div id="CoronaCheckScanner_downloads_plot_en"></div>
             <div>
@@ -168,13 +170,22 @@
 
 
         // provide easy to copy download number
-        CoronaCheck_downloads_number = document.getElementById('number-of-cc-downloads');
-        CoronaCheckScanner_downloads_number = document.getElementById('number-of-ccs-downloads');
+        CoronaCheck_downloads_number = document.getElementsByClassName('number-of-cc-downloads');
+        CoronaCheckScanner_downloads_number = document.getElementsByClassName('number-of-ccs-downloads');
         latest_CC_downloads = CC_downloads_plot[CC_downloads_plot.length - 1].downloadnr.toFixed(2);
         latest_CCS_downloads = CCScanner_downloads_plot[CCScanner_downloads_plot.length - 1].downloadnr.toFixed(2);
-        CoronaCheck_downloads_number.value = latest_CC_downloads;
-        CoronaCheckScanner_downloads_number.value = latest_CCS_downloads;
-        
+
+        for (var i=0; i < CoronaCheck_downloads_number.length; i++) {
+            CoronaCheck_downloads_number[i].value = latest_CC_downloads;
+        }
+
+        for (var i=0; i < CoronaCheckScanner_downloads_number.length; i++) {
+            CoronaCheckScanner_downloads_number[i].value = latest_CCS_downloads;
+        }
+
+        // CoronaCheck_downloads_number.value = latest_CC_downloads;
+        // CoronaCheckScanner_downloads_number.value = latest_CCS_downloads;
+
 
         CoronaCheck_downloads_plot.appendChild(
             Plot.plot({
