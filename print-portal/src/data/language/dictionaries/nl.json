@@ -37,8 +37,8 @@
 		},
 		"shortStayProvideAssessmentCode": {
 			"pageHeader": "Vaccinatie beoordeling ophalen",
-			"pageIntro": "<p>Vul jouw kortverblijfcode in. Deze heb je van je testlocatie gekregen.</p>",
-			"uniqueCode": "Kortverblijfcode"
+			"pageIntro": "<p>Vul je beoordelingscode in. Deze heb je van de balie gekregen waar jouw vaccinatie werd beoordeeld.</p>",
+			"uniqueCode": "Beoordelingscode"
 		},
 		"shortStayProvideCode": {
 			"pageHeader": "Controleer je testuitslag"
