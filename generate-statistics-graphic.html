@@ -1,80 +1,180 @@
 <!DOCTYPE html>
 <html lang="nl">
+<head>
+    <link href="/css/main.css" rel="stylesheet">
+
+    <style>textarea { width: 100%; height: 100%; } hr { margin: 20px 0 } input { text-align: right; font-family: 'courier' }</style>
+
+    <link rel="preload" as="font" href="/fonts/ROsanswebtextregular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/ROsanswebtextregular.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/ROsanswebtextbold.woff" type="font/woff"  crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.woff2" type="font/woff"  crossorigin="anonymous">
+
+    <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
 <body>
     <!-- use this page (locally) to generate graphics for the statistics page -->
     <!-- to use, disable exclusion in _config.yml at line 162, 
          and restart jekyll in your commandline.
          You can then find this page at 
-         http://localhost:4000/generate-statistics-graphic.html  -->
-    <div id="CoronaCheck_downloads_plot"></div>
+         http://localhost:4000/generate-statistics-graphic.html .
+        You only need to update the two arrays starting around line 65 of this document.  -->
 
-    <br /> <br />
+    <section class="container content-block">
+        <h1>Generated SVG's</h1>
+        <h2>CoronaCheck Downloads</h2>
+        <label><input id="number-of-cc-downloads" size="5" /> miljoen</label>
+        <div class="column-2">
+            <div id="CoronaCheck_downloads_plot"></div>
+            <div>
+                <textarea id="CoronaCheck_downloads_plot_code"></textarea>
+            </div>
+        </div>
+        <h2>CoronaCheck Scanner Downloads</h2>
+        <label><input id="number-of-ccs-downloads" size="5"  /> miljoen</label>
+        <div class="column-2">
+            <div id="CoronaCheckScanner_downloads_plot"></div>
+            <div>
+                <textarea id="CoronaCheckScanner_downloads_plot_code"></textarea>
+            </div>
+        </div>
 
-    <div id="CoronaCheckScanner_downloads_plot"></div>
+        <hr />
 
-<br /> <br />    <hr /><br /> <br />
-    
-    <div id="CoronaCheck_downloads_plot_en"></div>
-    <br /> <br />
+        <h2>CoronaCheck Downloads (English)</h2>
+        <div class="column-2">
+            <div id="CoronaCheck_downloads_plot_en"></div>
+            <div>
+                <textarea id="CoronaCheck_downloads_plot_en_code"></textarea>
+            </div>
+        </div>
+        <h2>CoronaCheck Scanner Downloads (English)</h2>
+        <div class="column-2">
+            <div id="CoronaCheckScanner_downloads_plot_en"></div>
+            <div>
+                <textarea id="CoronaCheckScanner_downloads_plot_en_code"></textarea>
+            </div>
+        </div>
+    </section>
 
-    <div id="CoronaCheckScanner_downloads_plot_en"></div>
-
+    <!-- for generating the graphs, we use https://observablehq.com/@observablehq -->
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@mkfreeman/plot-tooltip"></script>
-
 
     <script>
-        CoronaCheck_downloads_plot = document.getElementById('CoronaCheck_downloads_plot');
-        CoronaCheck_downloads_plot_EN = document.getElementById('CoronaCheck_downloads_plot_en');
-
         CC_downloads_plot = [
-            {year: '2021', weeknr: '12', downloadnr: 0.004947, date: '2021-03-28'},
-            {year: '2021', weeknr: '13', downloadnr: 0.005498, date: '2021-04-04'},
-            {year: '2021', weeknr: '14', downloadnr: 0.031850, date: '2021-04-11'},
-            {year: '2021', weeknr: '15', downloadnr: 0.077591, date: '2021-04-18'},
-            {year: '2021', weeknr: '16', downloadnr: 0.120887, date: '2021-04-25'},
-            {year: '2021', weeknr: '17', downloadnr: 0.135732, date: '2021-05-02'},
-            {year: '2021', weeknr: '18', downloadnr: 0.150473, date: '2021-05-09'},
-            {year: '2021', weeknr: '19', downloadnr: 0.161449, date: '2021-05-16'},
-            {year: '2021', weeknr: '20', downloadnr: 0.221506, date: '2021-05-23'},
-            {year: '2021', weeknr: '21', downloadnr: 0.250947, date: '2021-05-30'},
-            {year: '2021', weeknr: '22', downloadnr: 0.369260, date: '2021-06-06'},
-            {year: '2021', weeknr: '23', downloadnr: 0.518629, date: '2021-06-13'},
-            {year: '2021', weeknr: '24', downloadnr: 0.947275, date: '2021-06-20'},
-            {year: '2021', weeknr: '25', downloadnr: 3.046229, date: '2021-06-27'},
-            {year: '2021', weeknr: '26', downloadnr: 4.559032, date: '2021-07-04'},
-            {year: '2021', weeknr: '27', downloadnr: 5.494752, date: '2021-07-11'},
-            {year: '2021', weeknr: '28', downloadnr: 6.337007, date: '2021-07-18'},
-            {year: '2021', weeknr: '29', downloadnr: 7.006621, date: '2021-07-25'},
-            {year: '2021', weeknr: '30', downloadnr: 7.628880, date: '2021-08-01'},
-            {year: '2021', weeknr: '31', downloadnr: 8.226583, date: '2021-08-08'},
-            {year: '2021', weeknr: '32', downloadnr: 8.756426, date: '2021-08-15'},
-            {year: '2021', weeknr: '33', downloadnr: 9.138598, date: '2021-08-15'},
-            {year: '2021', weeknr: '34', downloadnr: 9.446082, date: '2021-08-22'},
-            {year: '2021', weeknr: '35', downloadnr: 9.745140, date: '2021-08-29'},
-            {year: '2021', weeknr: '36', downloadnr: 10.048297, date: '2021-09-05'},
-            {year: '2021', weeknr: '37', downloadnr: 10.798244, date: '2021-09-12'},
-            {year: '2021', weeknr: '38', downloadnr: 11.583967, date: '2021-09-19'},
-            {year: '2021', weeknr: '39', downloadnr: 12.127703, date: '2021-09-26'},
-            {year: '2021', weeknr: '40', downloadnr: 12.449551, date: '2021-10-03'},
-            {year: '2021', weeknr: '41', downloadnr: 12.721065, date: '2021-10-10'},
-            {year: '2021', weeknr: '42', downloadnr: 12.987812, date: '2021-10-17'},
-            {year: '2021', weeknr: '43', downloadnr: 13.206963, date: '2021-10-24'},
-            {year: '2021', weeknr: '44', downloadnr: 13.516537, date: '2021-10-31'},
-            {year: '2021', weeknr: '45', downloadnr: 13.753475, date: '2021-11-07'},
-            {year: '2021', weeknr: '46', downloadnr: 13.926691, date: '2021-11-14'}, 
-            {year: '2021', weeknr: '47', downloadnr: 14.101764, date: '2021-11-21'},
-            {year: '2021', weeknr: '48', downloadnr: 14.244634, date: '2021-11-28'},
-            {year: '2021', weeknr: '49', downloadnr: 14.374068, date: '2021-12-05'},
-            {year: '2021', weeknr: '50', downloadnr: 14.497964, date: '2021-12-12'},
-            {year: '2021', weeknr: '51', downloadnr: 14.594925, date: '2021-12-19'}, 
-            {year: '2021', weeknr: '52', downloadnr: 14.694699, date: '2021-12-26'},
-            {year: '2022', weeknr: '01', downloadnr: 14.694699, date: '2022-01-02'},
-            {year: '2022', weeknr: '02', downloadnr: 14.694699, date: '2022-01-09'},
-            {year: '2022', weeknr: '03', downloadnr: 14.694699, date: '2022-01-16'},
-            {year: '2022', weeknr: '04', downloadnr: 14.694699, date: '2022-01-23'},
+            {weeknr: '12', downloadnr: 0.004947, date: '2021-03-28'},
+            {weeknr: '13', downloadnr: 0.005498, date: '2021-04-04'},
+            {weeknr: '14', downloadnr: 0.031850, date: '2021-04-11'},
+            {weeknr: '15', downloadnr: 0.077591, date: '2021-04-18'},
+            {weeknr: '16', downloadnr: 0.120887, date: '2021-04-25'},
+            {weeknr: '17', downloadnr: 0.135732, date: '2021-05-02'},
+            {weeknr: '18', downloadnr: 0.150473, date: '2021-05-09'},
+            {weeknr: '19', downloadnr: 0.161449, date: '2021-05-16'},
+            {weeknr: '20', downloadnr: 0.221506, date: '2021-05-23'},
+            {weeknr: '21', downloadnr: 0.250947, date: '2021-05-30'},
+            {weeknr: '22', downloadnr: 0.369260, date: '2021-06-06'},
+            {weeknr: '23', downloadnr: 0.518629, date: '2021-06-13'},
+            {weeknr: '24', downloadnr: 0.947275, date: '2021-06-20'},
+            {weeknr: '25', downloadnr: 3.046229, date: '2021-06-27'},
+            {weeknr: '26', downloadnr: 4.559032, date: '2021-07-04'},
+            {weeknr: '27', downloadnr: 5.494752, date: '2021-07-11'},
+            {weeknr: '28', downloadnr: 6.337007, date: '2021-07-18'},
+            {weeknr: '29', downloadnr: 7.006621, date: '2021-07-25'},
+            {weeknr: '30', downloadnr: 7.628880, date: '2021-08-01'},
+            {weeknr: '31', downloadnr: 8.226583, date: '2021-08-08'},
+            {weeknr: '32', downloadnr: 8.756426, date: '2021-08-15'},
+            {weeknr: '33', downloadnr: 9.138598, date: '2021-08-22'},
+            {weeknr: '34', downloadnr: 9.446082, date: '2021-08-29'},
+            {weeknr: '35', downloadnr: 9.745140, date: '2021-09-05'},
+            {weeknr: '36', downloadnr: 10.048297, date: '2021-09-12'},
+            {weeknr: '37', downloadnr: 10.798244, date: '2021-09-19'},
+            {weeknr: '38', downloadnr: 11.583967, date: '2021-09-26'},
+            {weeknr: '39', downloadnr: 12.127703, date: '2021-10-03'},
+            {weeknr: '40', downloadnr: 12.449551, date: '2021-10-10'},
+            {weeknr: '41', downloadnr: 12.721065, date: '2021-10-17'},
+            {weeknr: '42', downloadnr: 12.987812, date: '2021-10-24'},
+            {weeknr: '43', downloadnr: 13.206963, date: '2021-10-31'},
+            {weeknr: '44', downloadnr: 13.516537, date: '2021-11-07'},
+            {weeknr: '45', downloadnr: 13.753475, date: '2021-11-14'},
+            {weeknr: '46', downloadnr: 13.926691, date: '2021-11-21'}, 
+            {weeknr: '47', downloadnr: 14.101764, date: '2021-11-28'},
+            {weeknr: '48', downloadnr: 14.244634, date: '2021-12-05'},
+            {weeknr: '49', downloadnr: 14.374312, date: '2021-12-12'},
+            {weeknr: '50', downloadnr: 14.498218, date: '2021-12-19'},
+            {weeknr: '51', downloadnr: 14.594925, date: '2021-12-26'}, 
+            {weeknr: '52', downloadnr: 14.693906, date: '2022-01-02'},
+            {weeknr: '01', downloadnr: 14.800299, date: '2022-01-09'},
+            {weeknr: '02', downloadnr: 14.898207, date: '2022-01-16'},
         ]
+
+        CCScanner_downloads_plot = [
+            {weeknr: '12', downloadnr: 0.000237, date: '2021-03-28'},
+            {weeknr: '13', downloadnr: 0.000331, date: '2021-04-04'},
+            {weeknr: '14', downloadnr: 0.001934, date: '2021-04-11'},
+            {weeknr: '15', downloadnr: 0.003730, date: '2021-04-18'},
+            {weeknr: '16', downloadnr: 0.005458, date: '2021-04-25'},
+            {weeknr: '17', downloadnr: 0.006398, date: '2021-05-02'},
+            {weeknr: '18', downloadnr: 0.007378, date: '2021-05-09'},
+            {weeknr: '19', downloadnr: 0.008142, date: '2021-05-16'},
+            {weeknr: '20', downloadnr: 0.013578, date: '2021-05-23'},
+            {weeknr: '21', downloadnr: 0.017016, date: '2021-05-30'},
+            {weeknr: '22', downloadnr: 0.026904, date: '2021-06-06'},
+            {weeknr: '23', downloadnr: 0.033952, date: '2021-06-13'},
+            {weeknr: '24', downloadnr: 0.053821, date: '2021-06-20'},
+            {weeknr: '25', downloadnr: 0.262348, date: '2021-06-27'},
+            {weeknr: '26', downloadnr: 0.397372, date: '2021-07-04'},
+            {weeknr: '27', downloadnr: 0.491841, date: '2021-07-11'},
+            {weeknr: '28', downloadnr: 0.554220, date: '2021-07-18'},
+            {weeknr: '29', downloadnr: 0.601111, date: '2021-07-25'},
+            {weeknr: '30', downloadnr: 0.641847, date: '2021-08-01'},
+            {weeknr: '31', downloadnr: 0.679457, date: '2021-08-08'},
+            {weeknr: '32', downloadnr: 0.720303, date: '2021-08-15'},
+            {weeknr: '33', downloadnr: 0.752788, date: '2021-08-22'},
+            {weeknr: '34', downloadnr: 0.781461, date: '2021-08-29'},
+            {weeknr: '35', downloadnr: 0.811810, date: '2021-09-05'},
+            {weeknr: '36', downloadnr: 0.844162, date: '2021-09-12'},
+            {weeknr: '37', downloadnr: 0.978263, date: '2021-09-19'},
+            {weeknr: '38', downloadnr: 1.215228, date: '2021-09-26'},
+            {weeknr: '39', downloadnr: 1.397778, date: '2021-10-03'},
+            {weeknr: '40', downloadnr: 1.497258, date: '2021-10-10'},
+            {weeknr: '41', downloadnr: 1.594784, date: '2021-10-17'},
+            {weeknr: '42', downloadnr: 1.675985, date: '2021-10-24'},
+            {weeknr: '43', downloadnr: 1.778053, date: '2021-10-31'},
+            {weeknr: '44', downloadnr: 2.082709, date: '2021-11-07'},
+            {weeknr: '45', downloadnr: 2.293167, date: '2021-11-14'}, 
+            {weeknr: '46', downloadnr: 2.419318, date: '2021-11-21'},
+            {weeknr: '47', downloadnr: 2.505009, date: '2021-11-28'},
+            {weeknr: '48', downloadnr: 2.556940, date: '2021-12-05'},
+            {weeknr: '49', downloadnr: 2.601576, date: '2021-12-12'},
+            {weeknr: '50', downloadnr: 2.643836, date: '2021-12-19'}, 
+            {weeknr: '51', downloadnr: 2.695422, date: '2021-12-26'},
+            {weeknr: '52', downloadnr: 2.721694, date: '2022-01-02'},
+            {weeknr: '01', downloadnr: 2.748959, date: '2022-01-09'},
+            {weeknr: '02', downloadnr: 2.777990, date: '2022-01-16'},
+        ]
+
+        // Dutch statistics
+        CoronaCheck_downloads_plot = document.getElementById('CoronaCheck_downloads_plot');
+        CoronaCheck_downloads_plot_code = document.getElementById('CoronaCheck_downloads_plot_code');
+        CoronaCheckScanner_downloads_plot = document.getElementById('CoronaCheckScanner_downloads_plot');
+        CoronaCheckScanner_downloads_plot_EN = document.getElementById('CoronaCheckScanner_downloads_plot_en');
+
+        // English statistics
+        CoronaCheck_downloads_plot_EN = document.getElementById('CoronaCheck_downloads_plot_en');
+        CoronaCheck_downloads_plot_EN_code = document.getElementById('CoronaCheck_downloads_plot_en_code');
+        CoronaCheckScanner_downloads_plot_EN = document.getElementById('CoronaCheckScanner_downloads_plot_en');
+        CoronaCheckScanner_downloads_plot_EN_code = document.getElementById('CoronaCheckScanner_downloads_plot_en_code');
+
+
+        // provide easy to copy download number
+        CoronaCheck_downloads_number = document.getElementById('number-of-cc-downloads');
+        CoronaCheckScanner_downloads_number = document.getElementById('number-of-ccs-downloads');
+        latest_CC_downloads = CC_downloads_plot[CC_downloads_plot.length - 1].downloadnr.toFixed(2);
+        latest_CCS_downloads = CCScanner_downloads_plot[CCScanner_downloads_plot.length - 1].downloadnr.toFixed(2);
+        CoronaCheck_downloads_number.value = latest_CC_downloads;
+        CoronaCheckScanner_downloads_number.value = latest_CCS_downloads;
+        
 
         CoronaCheck_downloads_plot.appendChild(
             Plot.plot({
@@ -102,12 +202,6 @@
                         stroke: "#ec025f",
                         strokeWidth: 3
                     }),
-                    // Plot.dot(CC_downloads_plot, {
-                    //     x: "date", 
-                    //     y: "downloadnr",
-                    //     title: (d) =>
-                    //         `${d.date} \n Aantal downloads: ${d.downloadnr} \n Weeknummer: ${d.weeknr}` // \n makes a new line
-                    //     })
                 ],
                 tooltip: {
                     fill: "red",
@@ -121,7 +215,6 @@
                 },
             })
         );
-
 
         CoronaCheck_downloads_plot_EN.appendChild(
             Plot.plot({
@@ -157,59 +250,9 @@
                     fontSize: 14
                 },
             })
-        );
-    </script>
+        ); 
+        
 
-    <script>
-        CoronaCheckScanner_downloads_plot = document.getElementById('CoronaCheckScanner_downloads_plot');
-        CoronaCheckScanner_downloads_plot_EN = document.getElementById('CoronaCheckScanner_downloads_plot_en');
-
-        CCScanner_downloads_plot = [
-            {weeknr: '12', downloadnr: 0.000237},
-            {weeknr: '13', downloadnr: 0.000331},
-            {weeknr: '14', downloadnr: 0.001934},
-            {weeknr: '15', downloadnr: 0.003730},
-            {weeknr: '16', downloadnr: 0.005458},
-            {weeknr: '17', downloadnr: 0.006398},
-            {weeknr: '18', downloadnr: 0.007378},
-            {weeknr: '19', downloadnr: 0.008142},
-            {weeknr: '20', downloadnr: 0.013578},
-            {weeknr: '21', downloadnr: 0.017016},
-            {weeknr: '22', downloadnr: 0.026904},
-            {weeknr: '23', downloadnr: 0.033952},
-            {weeknr: '24', downloadnr: 0.053821},
-            {weeknr: '25', downloadnr: 0.262348},
-            {weeknr: '26', downloadnr: 0.397372},
-            {weeknr: '27', downloadnr: 0.491841},
-            {weeknr: '28', downloadnr: 0.554220},
-            {weeknr: '29', downloadnr: 0.601111},
-            {weeknr: '30', downloadnr: 0.641847},
-            {weeknr: '31', downloadnr: 0.679457},
-            {weeknr: '32', downloadnr: 0.720303},
-            {weeknr: '33', downloadnr: 0.752788},
-            {weeknr: '34', downloadnr: 0.781461},
-            {weeknr: '35', downloadnr: 0.811810},
-            {weeknr: '36', downloadnr: 0.844162},
-            {weeknr: '37', downloadnr: 0.978263},
-            {weeknr: '38', downloadnr: 1.215228},
-            {weeknr: '39', downloadnr: 1.397778},
-            {weeknr: '40', downloadnr: 1.497258},
-            {weeknr: '41', downloadnr: 1.594784},
-            {weeknr: '42', downloadnr: 1.675985},
-            {weeknr: '43', downloadnr: 1.778053},
-            {weeknr: '44', downloadnr: 2.082709},
-            {weeknr: '45', downloadnr: 2.293167},
-            {weeknr: '46', downloadnr: 2.419318}, 
-            {weeknr: '47', downloadnr: 2.505017},
-            {weeknr: '48', downloadnr: 2.556940}, 
-            {weeknr: '49', downloadnr: 2.601181},
-            {weeknr: '50', downloadnr: 2.643435},
-            {weeknr: '51', downloadnr: 2.695422},
-            {weeknr: '52', downloadnr: 2.721700}, // 2 jan
-            {weeknr: '01', downloadnr: 2.721700}, // 9 jan
-            {weeknr: '02', downloadnr: 2.721700}, // 16 jan
-            {weeknr: '03', downloadnr: 2.721700}, // 23 jan
-        ]
         CoronaCheckScanner_downloads_plot.appendChild(
             Plot.plot({
                 y: {
@@ -225,13 +268,18 @@
                     label: "Weeknummer →",
                     labelAnchor: 'right',
                     labelOffset: -10,
-                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52', '02', '04'],
-                    domain: CC_downloads_plot.map((d) => d.weeknr),
-                    tickSize: 0,
+                    // ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52', '02'],
+                    // domain: CC_downloads_plot.map((d) => d.weeknr),
+                    // tickSize: 0,
+
+                    ticks: d3.utcMonth.every(2),
+                    domain: [new Date("2021-03-28"), new Date()],
+                    tickFormat: (f => f.toLocaleString("en", { "month": "short",  "year": "numeric" }))
                 },
                 marks: [
                     Plot.line(CCScanner_downloads_plot, {
-                        x: "weeknr", 
+                        // x: "weeknr", 
+                        x: "date",
                         y: "downloadnr",
                         curve: "monotone-y",
                         stroke: "#ec025f",
@@ -262,13 +310,18 @@
                     label: "Week number →",
                     labelAnchor: 'right',
                     labelOffset: -10,
-                    ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52', '02', '04'],
-                    domain: CC_downloads_plot.map((d) => d.weeknr),
-                    tickSize: 0,
+                    // ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52', '02'],
+                    // domain: CC_downloads_plot.map((d) => d.weeknr),
+                    // tickSize: 0,
+
+                    ticks: d3.utcMonth.every(2),
+                    domain: [new Date("2021-03-28"), new Date()],
+                    tickFormat: (f => f.toLocaleString("en", { "month": "short",  "year": "numeric" }))
                 },
                 marks: [
                     Plot.line(CCScanner_downloads_plot, {
-                        x: "weeknr", 
+                        // x: "weeknr", 
+                        x: "date",
                         y: "downloadnr",
                         curve: "monotone-y",
                         stroke: "#ec025f",
@@ -283,6 +336,12 @@
             }),
             
         );
+
+        CoronaCheck_downloads_plot_code.value = CoronaCheck_downloads_plot.getElementsByTagName('svg')[0].innerHTML;
+        CoronaCheck_downloads_plot_EN_code.value = CoronaCheckScanner_downloads_plot_EN.getElementsByTagName('svg')[0].innerHTML;
+
+        CoronaCheckScanner_downloads_plot_code.value = CoronaCheck_downloads_plot.getElementsByTagName('svg')[0].innerHTML;
+        CoronaCheckScanner_downloads_plot_EN_code.value = CoronaCheckScanner_downloads_plot_EN.getElementsByTagName('svg')[0].innerHTML;
     </script>
 </body>
 </html>
