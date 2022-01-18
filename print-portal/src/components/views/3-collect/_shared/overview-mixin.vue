@@ -83,7 +83,7 @@ export default {
                     }, callback);
                 })
             } else {
-                this.$router.push({ name: this.pages.print });
+                this.$router.push({ name: this.pages.print, params: this.$route.params });
             }
             this.$store.commit('snackbar/close');
         },

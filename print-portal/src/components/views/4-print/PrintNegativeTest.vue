@@ -12,7 +12,7 @@ export default {
     },
     methods: {
         back() {
-            this.$router.push({ name: 'NegativeTestOverview' });
+            this.$router.push({ name: 'NegativeTestOverview', params: { exclude: this.exclude } });
         }
     }
 }
