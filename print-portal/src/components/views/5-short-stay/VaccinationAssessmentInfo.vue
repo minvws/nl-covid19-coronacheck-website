@@ -20,25 +20,26 @@ export default {
             return dateTool.dateToString(this.proofEvent.date, 'datetime-with-day', this.currentLanguage.locale);
         },
         sections () {
+            const section = [
+                {
+                    title: 'components.eventInfo.name',
+                    value: this.signedEvent.holder.fullName
+                },
+                {
+                    title: 'components.eventInfo.dateOfBirth',
+                    value: this.signedEvent.holder.birthDateString
+                },
+                {
+                    title: 'components.vaccinationAssessment.info.date',
+                    value: this.dateString
+                },
+                {
+                    title: 'components.vaccinationAssessment.info.country',
+                    value: this.proofEvent.country
+                }
+            ].filter(({ value }) => value !== undefined && value !== null && value !== '')
             return [
-                [
-                    {
-                        title: 'components.eventInfo.name',
-                        value: this.signedEvent.holder.fullName
-                    },
-                    {
-                        title: 'components.eventInfo.dateOfBirth',
-                        value: this.signedEvent.holder.birthDateString
-                    },
-                    {
-                        title: 'components.vaccinationAssessment.info.date',
-                        value: this.dateString
-                    },
-                    {
-                        title: 'components.vaccinationAssessment.info.country',
-                        value: this.proofEvent.country
-                    }
-                ],
+                section,
                 [
                     {
                         title: 'components.vaccinationAssessment.info.identificationCode',
