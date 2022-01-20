@@ -99,7 +99,7 @@ export default {
                                 {{testLocation}}
                             </dd>
                         </div>
-                        <div class="dl__row">
+                        <div class="dl__row" v-if="testCountry">
                             <dt>
                                 {{$t('components.test.info.testCountry')}}:
                             </dt>

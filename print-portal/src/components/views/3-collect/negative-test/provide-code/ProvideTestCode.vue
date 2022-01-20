@@ -10,15 +10,29 @@ export default {
             type: Object,
             required: true
         },
+        clearTestCode: {
+            type: Boolean,
+            required: true,
+            default: false
+        },
         verificationNeeded: {
             type: Boolean,
             required: true
+        },
+        translation: {
+            type: String,
+            required: false,
+            default: 'views.provideCode'
         }
     },
     data() {
         return {
             exampleCode: 'BRB-YYYYYYYYY1-Z2'
         }
+    },
+    created () {
+        if (!this.clearTestCode) return
+        this.testCode = ''
     },
     computed: {
         hasGivenConsent() {
@@ -52,7 +66,7 @@ export default {
     <div class="ProvideTestCode">
         <div class="input__set">
             <label for="input-test-code">
-                {{$t('views.provideCode.uniqueCode')}}
+                {{$t(`${translation}.uniqueCode`)}}
                 <div class="label--side-note">
                     {{$t('forInstanceAbbr')}} {{exampleCode}}
                 </div>
@@ -62,11 +76,12 @@ export default {
                 v-on:keyup.enter="submit"
                 id="input-test-code"
                 type="text"
-                :placeholder="$t('views.provideCode.uniqueCode')"/>
+                :placeholder="$t(`${translation}.uniqueCode`)"/>
             <ErrorLabel
                 v-if="testCodeStatus.error.length > 0"
                 :label="testCodeStatus.error"/>
         </div>
+        <slot />
         <CcButton
             v-if="!verificationNeeded"
             id="submit-test-code"

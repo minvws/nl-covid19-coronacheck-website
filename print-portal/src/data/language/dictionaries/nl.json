@@ -27,13 +27,18 @@
 		},
 		"shortStay": {
 			"pageHeader": "Een bezoekersbewijs maken",
-			"pageIntro": "<p>Ben jij buiten de Europese Unie gevaccineerd en op bezoek in Nederland? Dan kan je een bezoekersbewijs maken waarmee je plekken in Nederland kan bezoeken die een coronatoegangsbewijs vragen.<br><br><a href=\"https://rijksoverheid.nl\" target=\"_blank\" rel=\"noopener noreferrer\">meer info rijksoverheid</a><br><br><b>Wil je je bewijs in de app?</b><br> Download en open de CoronaCheck app op je mobiel. Ga naar ‘Bezoekersbewijs maken' in het menu en volg de instructies.<br><a href=\"\\#\" target=\"_blank\" rel=\"noopener noreferrer\">Download de app</a><br><br><b>Wil je je bewijs op papier?</b><br>Houd dan de kortverblijfcode en de ophaalcode die je van de testlocatie hebt gekregen bij de hand.</p>",
+			"pageIntro": "<p>Ben je buiten de Europese Unie gevaccineerd en op bezoek in Nederland? Dan kun je van jouw vaccinatiebeoordeling en een negatieve testuitslag een bezoekersbewijs maken.<br><br>Met je bezoekersbewijs krijg je toegang tot plekken en activiteiten in Nederland die vragen om een coronatoegangsbewijs. Kijk voor meer informatie op <a href=\"https://www.rijksoverheid.nl/ctb-bezoekers\" target=\"_blank\" rel=\"noopener noreferrer\">www.rijksoverheid.nl/ctb-bezoekers</a>.<br><br>Houd je beoordelingscode van de balie waar je vaccinatie is beoordeeld bij de hand. En de ophaalcode die je van de testlocatie hebt gekregen.</p>",
 			"button": "Maak papieren bewijs"
+		},
+		"shortStayNoAssessmentCode": {
+			"pageHeader": "Vul eerst je beoordelingscode in",
+			"pageIntro": "<p>Je hebt net de ophaalcode van je testuitslag ingevuld. Vul eerst je beoordelingscode in om je vaccinatie-beoordeling op te halen. Deze code heb je per mail of geprint gekregen van de balie waar jouw vaccinatie is beoordeeld.</p>",
+			"button": "Beoordeling ophalen"
 		},
 		"shortStayProvideAssessmentCode": {
 			"pageHeader": "Vaccinatie beoordeling ophalen",
-			"pageIntro": "<p>Vul jouw kortverblijfcode in. Deze heb je van je testlocatie gekregen.</p>",
-			"uniqueCode": "Kortverblijfcode"
+			"pageIntro": "<p>Vul je beoordelingscode in. Deze heb je van de balie gekregen waar jouw vaccinatie werd beoordeeld.</p>",
+			"uniqueCode": "Beoordelingscode"
 		},
 		"shortStayProvideCode": {
 			"pageHeader": "Controleer je testuitslag"
@@ -302,6 +307,19 @@
 			"title": "Positieve testuitslag",
 			"info": {
 				"detailsRetrieved": "De volgende gegevens zijn opgehaald"
+			}
+		},
+		"vaccinationAssessment": {
+			"title": "Vaccinatie-beoordeling",
+			"about": {
+				"head": "Kloppen er gegevens niet?",
+				"body": "<p>Neem contact op met de locatie waar je vaccinatie is beoordeeld. Zij kunnen je helpen je gegevens aan te passen.</p>"
+			},
+			"info": {
+				"date": "Beoordelingsdatum",
+				"detailsRetrieved": "De volgende gegevens zijn opgehaald",
+				"identificationCode": "Uniek beoordelingsnummer",
+				"country": "Gevaccineerd in (land)"
 			}
 		},
 		"digid": {
