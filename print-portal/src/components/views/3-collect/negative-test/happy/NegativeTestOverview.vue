@@ -31,7 +31,7 @@ export default {
         }
     },
     computed: {
-        isAssignment () {
+        isAssessment () {
             return this.filter === FilterTypes.VACCINATION_ASSESSMENT
         },
         assessmentEvent () {
@@ -39,7 +39,7 @@ export default {
         }
     },
     mounted() {
-        if (this.isAssignment) {
+        if (this.isAssessment) {
             this.$router.replace({ name: RouterNames.CODE });
         } else if (!this.latestSignedEvent) {
             this.$router.push({ name: 'TestResultNone' });
@@ -58,7 +58,7 @@ export default {
                 :intro="$t('views.negativeTestOverview.pageIntro')"/>
 
             <div class="section-block">
-                <div class="proof-events" v-if="!isAssignment && latestSignedEvent">
+                <div class="proof-events" v-if="!isAssessment && latestSignedEvent">
                     <VaccinationAssessment
                         v-if="assessmentEvent"
                         :signed-event="assessmentEvent"

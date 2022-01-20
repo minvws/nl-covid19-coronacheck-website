@@ -7,7 +7,6 @@ import InfoButton from '@/components/views/3-collect/_shared/InfoButton';
 export default {
     name: 'VaccinationAssessment',
     components: { InfoButton, VaccinationAssessmentInfo },
-    // components: { NegativeTestInfo, InfoButton },
     props: {
         signedEvent: {
             type: SignedEvent,
