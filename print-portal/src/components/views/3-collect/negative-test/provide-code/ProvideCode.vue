@@ -79,8 +79,8 @@ export default {
             this.$store.dispatch('signedEvents/clearAll')
         }
         if (this.exclude === RegionTypes.SHORT_STAY) {
-            const assesment = this.$store.getters['signedEvents/getProofEvents'](this.redirect.filter).length > 0
-            if (!assesment) this.$router.replace({ name: this.redirect.name })
+            const assessment = this.$store.getters['signedEvents/getProofEvents'](this.redirect.filter).length > 0
+            if (!assessment) this.$router.replace({ name: this.redirect.name })
         }
     },
     computed: {
