@@ -33,7 +33,7 @@ const getClientSettings = (redirect_uri) => {
         },
         filterProtocolClaims: true,
         loadUserInfo: false,
-        clockSkew: 24 * 60 * 60,
+        clockSkew: 24 * 60 * 60
     };
 }
 
