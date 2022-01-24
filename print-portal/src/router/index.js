@@ -6,7 +6,7 @@ import recoveryPages from './pages/recovery'
 import vaccinationPages from './pages/vaccination'
 import otherPages from './pages/other'
 import errorPages from './pages/error-pages'
-import shortStayPages from './pages/short-stay'
+import shortStayPages, { RouterNames } from './pages/short-stay'
 import i18n from '@/i18n';
 import store from '@/store'
 
@@ -38,7 +38,8 @@ router.beforeEach((to, from, next) => {
         'RecoveryRedirect',
         'RecoveryExpired',
         'ErrorGeneral',
-        'ServerBusy'
+        'ServerBusy',
+        RouterNames.HOME
     ]
     // check for user consent, otherwise redirect to home (disabled for development)
     if (process.env.NODE_ENV !== 'development' && pagesWithoutConsentNeeded.indexOf(to.name) === -1 && !store.state.userConsent) {
