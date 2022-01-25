@@ -22,6 +22,12 @@ jobs:
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
 
       - uses: actions/checkout@v2
+      
+      - name: Debug installing jsonlint
+        run: sudo apt-cache search jsonlint
+
+      - name: Install jsonlint
+        run: sudo apt-get install --yes jsonlint
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -96,9 +102,6 @@ jobs:
         run: cp -R auth.php public/app/auth.php
       - name: Copy auth2 redirect script
         run: cp -R auth2.php public/app/auth2.php
-
-      - name: Install jsonlint
-        run: sudo apt-get install --yes jsonlint
 
       - name: Lint json files
         run: find . -size +2c \( -name *.json -o -name *.json.v* \)  -not -path "./print-portal/node_modules/*" -not -path "./dashboard-spa/node_modules/*" | xargs jsonlint-php
