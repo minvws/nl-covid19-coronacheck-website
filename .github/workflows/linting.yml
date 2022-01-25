@@ -22,9 +22,6 @@ jobs:
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
 
       - uses: actions/checkout@v2
-      
-      - name: Debug installing jsonlint
-        run: sudo apt-cache search jsonlint
 
       - name: Install jsonlint
         run: sudo apt-get install --yes jsonlint
