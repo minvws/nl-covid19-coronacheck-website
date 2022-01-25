@@ -10,26 +10,26 @@
 
     {% if page.domain == "scanner" %}
         {% if page.layout == 'scanner-faq-overview' or page.layout == 'in-app-scanner-faq' %}
-            <h2>{{ site.data.translations.footer-contact-subtitle[page.lang] }}</h2>
+            <h2>{{ site.data.[page.lang].translations.footer-contact-subtitle }}</h2>
         {% else %}
-            <h2>{{ site.data.translations.footer-contact-title-scanner[page.lang] }}</h2>
-            <p>{{ site.data.translations.footer-contact-subtitle[page.lang] }}</p>
+            <h2>{{ site.data.[page.lang].translations.footer-contact-title-scanner }}</h2>
+            <p>{{ site.data.[page.lang].translations.footer-contact-subtitle }}</p>
         {% endif %}
     {% else %}
         {% if page.layout == 'faq-overview' or page.layout == 'in-app-faq' %}
-            <h2>{{ site.data.translations.footer-contact-subtitle[page.lang] }}</h2>
+            <h2>{{ site.data.[page.lang].translations.footer-contact-subtitle }}</h2>
         {% else %}
-            <h2>{{ site.data.translations.footer-contact-title[page.lang] }}</h2>
-            <p>{{ site.data.translations.footer-contact-subtitle[page.lang] }}</p>
+            <h2>{{ site.data.[page.lang].translations.footer-contact-title }}</h2>
+            <p>{{ site.data.[page.lang].translations.footer-contact-subtitle }}</p>
         {% endif %}
     {% endif %}
-    <h3>{{ site.data.translations.footer-phone[page.lang] }}</h3>
+    <h3>{{ site.data.[page.lang].translations.footer-phone }}</h3>
     <p> 
-      {{ site.data.translations.footer-phone-action[page.lang] }}.<br />
-      {{ site.data.translations.footer-phone-opening-hours[page.lang] }}
+      {{ site.data.[page.lang].translations.footer-phone-action }}.<br />
+      {{ site.data.[page.lang].translations.footer-phone-opening-hours }}
     </p>
     {% if page.layout != 'home' %}
-        <h3>{{ site.data.translations.footer-phone-mail[page.lang] }}</h3>
+        <h3>{{ site.data.[page.lang].translations.footer-phone-mail }}</h3>
         <p>
         <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>
         </p>

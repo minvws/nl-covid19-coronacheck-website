@@ -1,5 +1,5 @@
 <div class="information  offset-background">
-  <h2 class="information-title">{{ site.data.translations.scanner-information-title[page.lang] }}</h2>
+  <h2 class="information-title">{{ site.data.[page.lang].translations.scanner-information-title }}</h2>
 
   <ul class="information-layout">
     {% comment %}
@@ -11,7 +11,7 @@
         width="70"
         height="70"
       >
-      {{ site.data.translations.scanner-information-qrcode[page.lang] }}
+      {{ site.data.[page.lang].translations.scanner-information-qrcode }}
     </li>
     {% endcomment %}
     <li class="information__block">
@@ -22,7 +22,7 @@
         width="70"
         height="70"
       >
-      {{ site.data.translations.scanner-information-naw[page.lang] }}
+      {{ site.data.[page.lang].translations.scanner-information-naw }}
     </li>
     <li class="information__block">
       <img
@@ -32,7 +32,7 @@
         width="70"
         height="70"
       >
-      {{ site.data.translations.scanner-information-gps[page.lang] }}
+      {{ site.data.[page.lang].translations.scanner-information-gps }}
     </li>
   </ul>
 </div>

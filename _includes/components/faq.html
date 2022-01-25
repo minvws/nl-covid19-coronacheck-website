@@ -10,7 +10,7 @@
 {% endif %}
 
 <section class="faq-homepage">
-  <h2 class="faq-homepage__title" id="faq">{{ site.data.translations.faq[page.lang] }}</h2>
+  <h2 class="faq-homepage__title" id="faq">{{ site.data.[page.lang].translations.faq }}</h2>
 
   <div class="highlighted-faqs">
     {% for question in questions %}
@@ -21,8 +21,8 @@
             <h3>{{ question.title }}</h3>
           </div>
           <a href="{{ site.baseurl }}{{ question.url }}" class="highlighted-faq__summary__btn-expand">
-            {{ site.data.translations.readmore[page.lang] }}
-            <span class="screen-reader-text"> {{ site.data.translations.readmore-about_screen-reader[page.lang] }}: {{ question.title }}</span>
+            {{ site.data.[page.lang].translations.readmore }}
+            <span class="screen-reader-text"> {{ site.data.[page.lang].translations.readmore-about_screen-reader }}: {{ question.title }}</span>
           </a>
         </div>
       
@@ -32,10 +32,10 @@
     <article class="highlighted-faq">
         <div class="highlighted-faq__summary">
         <div class="highlighted-faq__title">
-            <h3>{{ site.data.translations.wegwijzerlink[page.lang] }}</h3>
+            <h3>{{ site.data.[page.lang].translations.wegwijzerlink }}</h3>
         </div>
-        <a href="{{ langSlug }}{{ site.data.translations.footer-wegwijzer-url[page.lang] }}" class="highlighted-faq__summary__btn-expand">
-            {{ site.data.translations.wegwijzerlinktext[page.lang] }}
+        <a href="{{ langSlug }}{{ site.data.[page.lang].translations.footer-wegwijzer-url }}" class="highlighted-faq__summary__btn-expand">
+            {{ site.data.[page.lang].translations.wegwijzerlinktext }}
         </a>
         </div>
     
@@ -45,11 +45,11 @@
   <p class="faq-homepage__more">
     {% if include.for == "coronacheck" %}
       <a href="{{ langSlug }}faq" class="btn btn--large">
-        {{ site.data.translations.layout-faq-btn[page.lang] }}<span class="icon icon-chevron-right"></span>
+        {{ site.data.[page.lang].translations.layout-faq-btn }}<span class="icon icon-chevron-right"></span>
       </a>
     {% elsif include.for == "scanner" %}
       <a href="{{ langSlug }}faq-scanner" class="btn btn--large">
-        {{ site.data.translations.layout-faq-btn[page.lang] }}<span class="icon icon-chevron-right"></span>
+        {{ site.data.[page.lang].translations.layout-faq-btn }}<span class="icon icon-chevron-right"></span>
       </a>
     {% endif %}
   </p>

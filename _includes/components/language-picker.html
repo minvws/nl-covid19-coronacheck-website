@@ -1,20 +1,20 @@
 <div class="language-picker {% if include.headertype == 'default' %} language-picker--home language-picker--right-orientation{% endif %}">
   <span class="language-picker__current">
     <span class="language-picker__label">
-      {{ site.data.translations.header-language-picker-label[page.lang] }}:
+      {{ site.data.[page.lang].translations.header-language-picker-label }}:
     </span>
     <span class="language-picker__current-language">{{ site.data.languages[page.lang].label }}</span>
   </span>
   <button type="button" class="language-picker__toggle" aria-controls="language-dropdown" aria-expanded="false">
     <span class="screen-reader-text">
-      {{ site.data.translations.header-language-picker-label[page.lang] }}: {{ site.data.languages[page.lang].label }}, {{ site.data.translations.header-language-picker-switch-lang[page.lang] }}
+      {{ site.data.[page.lang].translations.header-language-picker-label }}: {{ site.data.languages[page.lang].label }}, {{ site.data.[page.lang].translations.header-language-picker-switch-lang }}
     </span>
     <span class="language-picker__chevron"></span>
   </button>
   
   <div class="language-picker__dropdown" id="language-dropdown">
     <span class="language-picker__title">
-      {{ site.data.translations.header-language-picker-switch-lang[page.lang] }}:
+      {{ site.data.[page.lang].translations.header-language-picker-switch-lang }}:
     </span>
     <ul class="language-picker__languages">
       {% for lang in site.data.languages %}
@@ -42,7 +42,7 @@
           {% endif %}
           {{ language.label }}
           {% if lang[0] == page.lang %}
-            ({{ site.data.translations.header-language-picker-current-lang[page.lang] }})
+            ({{ site.data.[page.lang].translations.header-language-picker-current-lang }})
           {% endif %}
           {% if lang[0] != page.lang %}
           </a>

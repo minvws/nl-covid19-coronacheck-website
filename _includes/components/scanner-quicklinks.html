@@ -4,7 +4,7 @@
 {%- endif -%}
 
 <section class="scanner-quicklinks">
-  <h2 class="screen-reader-text">{{ site.data.translations.scanner-quicklinks[page.lang] }}</h2> 
+  <h2 class="screen-reader-text">{{ site.data.[page.lang].translations.scanner-quicklinks }}</h2> 
 
   <div class="scanner-menu">
       <article class="scanner-quicklink">
@@ -18,11 +18,11 @@
             height="160"
             >
           <div class="scanner-quicklink__title">
-            <h3>{{ site.data.translations.quicklinks-organising[page.lang] }}</h3>
+            <h3>{{ site.data.[page.lang].translations.quicklinks-organising }}</h3>
           </div>
-          <a href="{{ site.baseurl }}{{ site.data.translations.quicklinks-organising-url[page.lang] }}" class="scanner-quicklink__summary__btn-expand">
-            {{ site.data.translations.readmore[page.lang] }}
-            <span class="screen-reader-text"> {{ site.data.translations.readmore-about_screen-reader[page.lang] }}: {{ site.data.translations.quicklinks-organising[page.lang] }}</span>
+          <a href="{{ site.baseurl }}{{ site.data.[page.lang].translations.quicklinks-organising-url }}" class="scanner-quicklink__summary__btn-expand">
+            {{ site.data.[page.lang].translations.readmore }}
+            <span class="screen-reader-text"> {{ site.data.[page.lang].translations.readmore-about_screen-reader }}: {{ site.data.[page.lang].translations.quicklinks-organising }}</span>
           </a>
         </div>
       </article>
@@ -38,11 +38,11 @@
             height="160"
             >
           <div class="scanner-quicklink__title">
-            <h3>{{ site.data.translations.quicklinks-how-it-works[page.lang] }}</h3>
+            <h3>{{ site.data.[page.lang].translations.quicklinks-how-it-works }}</h3>
           </div>
-          <a href="{{ site.baseurl }}{{ site.data.translations.quicklinks-how-it-works-url[page.lang] }}" class="scanner-quicklink__summary__btn-expand">
-            {{ site.data.translations.readmore[page.lang] }}
-            <span class="screen-reader-text"> {{ site.data.translations.readmore-about_screen-reader[page.lang] }}: {{ site.data.translations.quicklinks-how-it-works[page.lang] }}</span>
+          <a href="{{ site.baseurl }}{{ site.data.[page.lang].translations.quicklinks-how-it-works-url }}" class="scanner-quicklink__summary__btn-expand">
+            {{ site.data.[page.lang].translations.readmore }}
+            <span class="screen-reader-text"> {{ site.data.[page.lang].translations.readmore-about_screen-reader }}: {{ site.data.[page.lang].translations.quicklinks-how-it-works }}</span>
           </a>
         </div>
       </article>
@@ -58,11 +58,11 @@
             height="160"
             >
           <div class="scanner-quicklink__title">
-            <h3>{{ site.data.translations.quicklinks-try[page.lang] }}</h3>
+            <h3>{{ site.data.[page.lang].translations.quicklinks-try }}</h3>
           </div>
-          <a href="{{ site.baseurl }}{{ site.data.translations.quicklinks-try-url[page.lang] }}" class="scanner-quicklink__summary__btn-expand">
-            {{ site.data.translations.readmore[page.lang] }}
-            <span class="screen-reader-text"> {{ site.data.translations.readmore-about_screen-reader[page.lang] }}: {{ site.data.translations.quicklinks-try[page.lang] }}</span>
+          <a href="{{ site.baseurl }}{{ site.data.[page.lang].translations.quicklinks-try-url }}" class="scanner-quicklink__summary__btn-expand">
+            {{ site.data.[page.lang].translations.readmore }}
+            <span class="screen-reader-text"> {{ site.data.[page.lang].translations.readmore-about_screen-reader }}: {{ site.data.[page.lang].translations.quicklinks-try }}</span>
           </a>
         </div>
       </article>

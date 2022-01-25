@@ -28,20 +28,20 @@
     {% if page.showHomeBtn %}
       <p class="content-center__home return_link">
         <a href="{{ langSlug }}">
-          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-home[page.lang] }}
+          <span class="icon icon-chevron-left"></span>{{ site.data.[page.lang].translations.layout-template-home }}
         </a>
       </p>
     {% endif %}
     
     <div class="content-block">
-        <h1 id="frequently-asked-questions">{{ site.data.translations.faq[page.lang] }}</h1>
+        <h1 id="frequently-asked-questions">{{ site.data.[page.lang].translations.faq }}</h1>
 
         {% include components/banner-status.html %}
 
         <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
         
         {% if questionSetOne.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-one[page.lang]|slugify }}">{{ site.data.translations.faq-category-one[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-category-one[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-category-one }}</h2>
 
             <div class="faq-layout__contents __overview">
                 <ul class="faq-layout-contents__list">
@@ -57,7 +57,7 @@
         {% endif %}
 
         {% if questionSetEight.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-eight[page.lang]|slugify }}">{{ site.data.translations.faq-category-eight[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-category-eight[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-category-eight }}</h2>
 
             <div class="faq-layout__contents __overview">
                 <ul class="faq-layout-contents__list">
@@ -73,7 +73,7 @@
         {% endif %}
 
         {% if questionSetTwo.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-two[page.lang]|slugify }}">{{ site.data.translations.faq-category-two[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-category-two[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-category-two }}</h2>
 
             <div class="faq-layout__contents __overview">
                 <ul class="faq-layout-contents__list">
@@ -89,7 +89,7 @@
         {% endif %}
 
         {% if questionSetThree.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-three[page.lang]|slugify }}">{{ site.data.translations.faq-category-three[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-category-three[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-category-three }}</h2>
 
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
@@ -105,7 +105,7 @@
         {% endif %}
 
         {% if questionSetFour.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-four[page.lang]|slugify }}">{{ site.data.translations.faq-category-four[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-category-four[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-category-four }}</h2>
 
             {% include components/banner-guidepost.html %}
 
@@ -125,7 +125,7 @@
         {% endif %}
 
         {% if questionSetFive.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-five[page.lang]|slugify }}">{{ site.data.translations.faq-category-five[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-category-five[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-category-five }}</h2>
 
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
@@ -141,7 +141,7 @@
         {% endif %}
 
         {% if questionSetSix.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-six[page.lang]|slugify }}">{{ site.data.translations.faq-category-six[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-category-six[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-category-six }}</h2>
 
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
@@ -157,7 +157,7 @@
         {% endif %}
 
         {% if questionSetSeven.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-seven[page.lang]|slugify }}">{{ site.data.translations.faq-category-seven[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-category-seven[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-category-seven }}</h2>
 
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">

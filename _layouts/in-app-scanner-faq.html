@@ -21,13 +21,13 @@
   <main class="content-center content-center__in_app" id="content">
     <div class="content-block">
         <h1 id="frequently-asked-questions">
-            {{ site.data.translations.faq-scanner[page.lang] }}
+            {{ site.data.[page.lang].translations.faq-scanner }}
         </h1> 
 
         <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
      
         {% if questionSetOne.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-scanner-category-one[page.lang]|slugify }}">{{ site.data.translations.faq-scanner-category-one[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-scanner-category-one[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-scanner-category-one }}</h2>
 
             <div class="faq-layout__contents __overview">
                 <ul class="faq-layout-contents__list">
@@ -43,7 +43,7 @@
         {% endif %}
 
         {% if questionSetTwo.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-scanner-category-two[page.lang]|slugify }}">{{ site.data.translations.faq-scanner-category-two[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-scanner-category-two[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-scanner-category-two }}</h2>
 
             <div class="faq-layout__contents __overview">
                 <ul class="faq-layout-contents__list">
@@ -59,7 +59,7 @@
         {% endif %}
 
         {% if questionSetThree.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-category-scanner-three[page.lang]|slugify }}">{{ site.data.translations.faq-scanner-category-three[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-category-scanner-three[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-scanner-category-three }}</h2>
 
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
@@ -75,7 +75,7 @@
         {% endif %}
 
         {% if questionSetFour.size > 0 %}
-            <h2 class="faq-layout__title" id="{{ site.data.translations.faq-scanner-category-four[page.lang]|slugify }}">{{ site.data.translations.faq-scanner-category-four[page.lang] }}</h2>
+            <h2 class="faq-layout__title" id="{{ site.data.[page.lang].translations.faq-scanner-category-four[page.lang]|slugify }}">{{ site.data.[page.lang].translations.faq-scanner-category-four }}</h2>
 
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
