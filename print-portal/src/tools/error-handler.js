@@ -2,7 +2,7 @@ import store from '@/store';
 import router from '@/router';
 import i18n from '@/i18n'
 import { cmsDecode } from './cms';
-import { getClientSideErrorCode, errorCodeTransformer, isDigiDFlowAndStepError } from '@/data/constants/error-codes';
+import { getResponseStatusCode, getClientSideErrorCode, errorCodeTransformer, isDigiDFlowAndStepError } from '@/data/constants/error-codes';
 
 export const hasInternetConnection = () => {
     return window.navigator.onLine;
@@ -45,8 +45,53 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
         }
     }
 }
-
 export const getErrorCode = (error, errorCodeInformation) => {
+    const message = error?.message
+    const status = error?.response?.status
+    const statusCode = typeof status === 'number' ? status : ''
+    const code = error?.response?.data?.code
+    const encoded = error?.response?.data?.payload
+    const clientCode = errorCodeInformation?.clientSideCode
+    const clientBody = errorCodeInformation?.errorBody
+    const clientResponseCode = getResponseStatusCode(errorCodeInformation?.errorBody)
+    const axiosCode = error?.isAxiosError ? getClientSideErrorCode(error?.code ?? error?.message) : ''
+    let cmsCode = null
+    if (encoded) {
+        try {
+            const cmsDecoded = cmsDecode(encoded)
+            cmsCode = cmsDecoded.code;
+        } catch (e) {
+            cmsCode = e.message
+        }
+    }
+
+    const {
+        provider_identifier: provider,
+        flow,
+        step
+    } = errorCodeInformation
+
+    const debug = {
+        message,
+        status,
+        code,
+        encoded,
+        clientCode,
+        clientBody,
+        axiosCode,
+        cmsCode,
+        clientResponseCode
+    }
+    const errorCode = cmsCode ?? statusCode ?? code ?? clientResponseCode ?? axiosCode
+    return errorCodeTransformer({
+        flow,
+        step,
+        provider,
+        errorCode: JSON.stringify({ errorCode, debug }),
+        errorBody: cmsCode ?? code ?? axiosCode
+    })
+}
+export const getErrorCode2 = (error, errorCodeInformation) => {
     let errorCode, errorBody;
     if (errorCodeInformation.clientSideCode) {
         errorCode = errorCodeInformation.clientSideCode;

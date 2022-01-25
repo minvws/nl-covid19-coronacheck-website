@@ -15,6 +15,8 @@ export default {
     computed: {
         errors() {
             if (this.$route.query.errors) {
+                const debug = true
+                if (debug) return `<pre style="font-size:10px">${this.$route.query.errors}</pre>`
                 return '<ul class="ul--with-padding">' + this.$route.query.errors.split('+').map(e => '<li>' + e + '</li>').join('') + '</ul>';
             } else {
                 return [];

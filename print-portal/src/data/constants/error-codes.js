@@ -99,3 +99,13 @@ export const getClientSideErrorCode = (code = '') => {
         return ClientCode.UNKNOWN;
     }
 }
+
+export const getResponseStatusCode = (code = '') => {
+    if (typeof code === 'number') return ''
+    switch (code.toUpperCase()) {
+    case 'No matching state found in storage'.toUpperCase():
+        return '072-2007'
+    default:
+        return '';
+    }
+}

@@ -1,3 +1,5 @@
+import { ClientCode } from '@/data/constants/error-codes'
+
 function b64DecodeUnicode(str) {
     // Going backwards: from bytestream, to percent-encoding, to original string.
     return decodeURIComponent(atob(str).split('').map(function(c) {
@@ -6,5 +8,10 @@ function b64DecodeUnicode(str) {
 }
 
 export const cmsDecode = (encoded) => {
-    return JSON.parse(b64DecodeUnicode(encoded));
+    const decoded = b64DecodeUnicode(encoded)
+    try {
+        return JSON.parse(decoded);
+    } catch {
+        throw new Error(ClientCode.DATA_VALIDATION.MALFORMATED_JSON)
+    }
 }
