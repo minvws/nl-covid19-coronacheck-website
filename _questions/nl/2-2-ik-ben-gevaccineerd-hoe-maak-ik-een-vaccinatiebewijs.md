@@ -6,8 +6,6 @@ redirect_from:
     - /nl/faq/8-ik-heb-mij-laten-testen-hoe-krijg-ik-mijn-testuitslag
     - /nl/faq/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
     - /nl/faq/1-5-hoe-maak-ik-een-bewijs-van-een-vaccinatie-herstel-of-testuitslag
-featuredHome: true
-featuredHomeIndex: 2
 ---
 Om een Nederlandse QR-code te maken moet je volledig gevaccineerd zijn. Een internationale QR-code krijg je al na één vaccinatie. Let op: of een QR-code van een onvolledige vaccinatie geldig is hangt af van de regels van het land dat je bezoekt. Check {{ site.data.links.wijsopreis[page.lang] }} om te zien welke regels er gelden op jouw bestemming.
 
