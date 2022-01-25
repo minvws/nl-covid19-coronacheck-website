@@ -22,7 +22,7 @@
     {% if page.showHomeBtn %}
       <p class="content-center__home return_link">
         <a href="{{ langSlug }}">
-          <span class="icon icon-chevron-left"></span>{{ site.data.[page.lang].translations.layout-template-home }}
+          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-home }}
         </a>
       </p>
     {% endif %}
@@ -35,13 +35,13 @@
     {% if page.collection == 'questions' %}
       <p class="content-center__home return_link">
         <a href="{{ langSlug }}/faq#{{ page.title | slugify }}">
-          <span class="icon icon-chevron-left"></span>{{ site.data.[page.lang].translations.layout-template-faq }} 
+          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-faq }} 
         </a>
       </p>
     {% elsif page.collection == 'questions-scanner' %}
       <p class="content-center__home return_link">
         <a href="{{ langSlug }}/faq-scanner#{{ page.title | slugify }}">
-          <span class="icon icon-chevron-left"></span>{{ site.data.[page.lang].translations.layout-template-faq }} 
+          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-faq }} 
         </a>
       </p>
     {% endif %}

@@ -3,14 +3,14 @@
     <title>
         {% if page.domain == "scanner" %}
             {% if page.title != '' %}{{ page.title | strip_html }} - {% endif %}
-            {{ site.data.[page.lang].translations.scanner-app-name }}
+            {{ site.data[page.lang].translations.scanner-app-name }}
         {% else %}
             {% if page.layout == 'content-error' %}
-                {{ site.data.[page.lang].translations.error-pagetitle }} - 
-                {{ site.data.[page.lang].translations.page-title }}
+                {{ site.data[page.lang].translations.error-pagetitle }} - 
+                {{ site.data[page.lang].translations.page-title }}
             {% else %}
                 {% if page.title != '' %}{{ page.title | strip_html  }} - {% endif %}
-                {{ site.data.[page.lang].translations.page-title }}
+                {{ site.data[page.lang].translations.page-title }}
             {% endif %}
         {% endif %}
     </title>
@@ -43,18 +43,18 @@
             <meta name="apple-itunes-app" content="app-id=1549842661">
         {% endif %}
         
-        <meta property="og:site_name" content="{{ site.data.[page.lang].translations.scanner-social-og-site_name }}">
-        <meta property="og:title" content="{% if page.title != '' %}{{ page.title | strip_html }} - {{ site.data.[page.lang].translations.scanner-social-og-site_name }}{% else %}{{ site.data.[page.lang].translations.scanner-social-og-title }}{% endif %}" />
-        <meta property="og:description" content="{{ site.data.[page.lang].translations.scanner-social-og-description }}"/>
+        <meta property="og:site_name" content="{{ site.data[page.lang].translations.scanner-social-og-site_name }}">
+        <meta property="og:title" content="{% if page.title != '' %}{{ page.title | strip_html }} - {{ site.data[page.lang].translations.scanner-social-og-site_name }}{% else %}{{ site.data[page.lang].translations.scanner-social-og-title }}{% endif %}" />
+        <meta property="og:description" content="{{ site.data[page.lang].translations.scanner-social-og-description }}"/>
         <meta property="og:updated_time" content="{{ site.time | date: "%s" }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ page.permalink }}">
-        <meta property="og:image" content="https://coronacheck.nl/img/{{ site.data.[page.lang].translations.scanner-social-og-image-url }}">
+        <meta property="og:image" content="https://coronacheck.nl/img/{{ site.data[page.lang].translations.scanner-social-og-image-url }}">
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="{% if page.title != '' %}{{ page.title | strip_html  }} - {{ site.data.[page.lang].translations.scanner-social-og-site_name }}{% else %}{{ site.data.[page.lang].translations.scanner-social-og-title }}{% endif %}" />
-        <meta name="twitter:description" content="{{ site.data.[page.lang].translations.scanner-social-og-description }}" />
-        <meta name="twitter:image" content="https://coronacheck.nl/img/{{ site.data.[page.lang].translations.scanner-social-og-image-url }}" />
+        <meta name="twitter:title" content="{% if page.title != '' %}{{ page.title | strip_html  }} - {{ site.data[page.lang].translations.scanner-social-og-site_name }}{% else %}{{ site.data[page.lang].translations.scanner-social-og-title }}{% endif %}" />
+        <meta name="twitter:description" content="{{ site.data[page.lang].translations.scanner-social-og-description }}" />
+        <meta name="twitter:image" content="https://coronacheck.nl/img/{{ site.data[page.lang].translations.scanner-social-og-image-url }}" />
     {% else %}
         {% if include.in-app And include.in-app != "" And include.in-app != nil %}
             {% comment %}Don't show quick app download banner{% endcomment %}
@@ -63,7 +63,7 @@
         {% endif %}
 
 
-        <meta name="description" content="{{ site.data.[page.lang].translations.head-social-og-description }}">
+        <meta name="description" content="{{ site.data[page.lang].translations.head-social-og-description }}">
         <link rel="alternate" hreflang="nl-NL" href="https://coronacheck.nl" />
         <link rel="alternate" hreflang="en-GB" href="https://coronacheck.nl/en" />
 
@@ -77,22 +77,22 @@
         <link rel="alternate" hreflang="tr" href="https://coronacheck.nl/tr" />
         {% endcomment %}
 
-        <meta property="og:site_name" content="{{ site.data.[page.lang].translations.head-social-og-site_name }}">
-        <meta property="og:title" content="{% if page.title != '' %}{{ page.title | strip_html  }} - {{ site.data.[page.lang].translations.head-social-og-site_name }}{% else %}{{ site.data.[page.lang].translations.head-social-og-title }}{% endif %}" />
-        <meta property="og:description" content="{{ site.data.[page.lang].translations.head-social-og-description }}"/>
+        <meta property="og:site_name" content="{{ site.data[page.lang].translations.head-social-og-site_name }}">
+        <meta property="og:title" content="{% if page.title != '' %}{{ page.title | strip_html  }} - {{ site.data[page.lang].translations.head-social-og-site_name }}{% else %}{{ site.data[page.lang].translations.head-social-og-title }}{% endif %}" />
+        <meta property="og:description" content="{{ site.data[page.lang].translations.head-social-og-description }}"/>
         <meta property="og:updated_time" content="{{ site.time | date: "%s" }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ page.permalink }}">
-        <meta property="og:image" content="https://coronacheck.nl/img/{{ site.data.[page.lang].translations.head-social-og-image-url }}">
-        <meta name="og:image:alt" content="{{ site.data.[page.lang].translations.head-social-og-image-alt }}" /> 
+        <meta property="og:image" content="https://coronacheck.nl/img/{{ site.data[page.lang].translations.head-social-og-image-url }}">
+        <meta name="og:image:alt" content="{{ site.data[page.lang].translations.head-social-og-image-alt }}" /> 
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="{% if page.title != '' %}{{ page.title | strip_html  }} - {{ site.data.[page.lang].translations.head-social-og-site_name }}{% else %}{{ site.data.[page.lang].translations.head-social-og-title }}{% endif %}" />
-        <meta name="twitter:description" content="{{ site.data.[page.lang].translations.head-social-og-description }}" />
-        <meta name="twitter:image" content="https://coronacheck.nl/img/{{ site.data.[page.lang].translations.head-social-og-image-url }}" />
-        <meta name="twitter:image:alt" content="{{ site.data.[page.lang].translations.head-social-og-image-alt }}" /> 
+        <meta name="twitter:title" content="{% if page.title != '' %}{{ page.title | strip_html  }} - {{ site.data[page.lang].translations.head-social-og-site_name }}{% else %}{{ site.data[page.lang].translations.head-social-og-title }}{% endif %}" />
+        <meta name="twitter:description" content="{{ site.data[page.lang].translations.head-social-og-description }}" />
+        <meta name="twitter:image" content="https://coronacheck.nl/img/{{ site.data[page.lang].translations.head-social-og-image-url }}" />
+        <meta name="twitter:image:alt" content="{{ site.data[page.lang].translations.head-social-og-image-alt }}" /> 
     {% endif %}
 
-    <meta name="og:image:alt" content="{{ site.data.[page.lang].translations.social-og-image-alt }}" /> 
-    <meta name="twitter:image:alt" content="{{ site.data.[page.lang].translations.social-og-image-alt }}" /> 
+    <meta name="og:image:alt" content="{{ site.data[page.lang].translations.social-og-image-alt }}" /> 
+    <meta name="twitter:image:alt" content="{{ site.data[page.lang].translations.social-og-image-alt }}" /> 
 </head>

@@ -1,7 +1,7 @@
 {% assign scanner-instructions = site.scanner-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}
 
 <section class="scanner-instructions">
-    <h1 class="scanner-instructions__pagetitle">{{ site.data.[page.lang].translations.scanner-instructions-title }}</h1>
+    <h1 class="scanner-instructions__pagetitle">{{ site.data[page.lang].translations.scanner-instructions-title }}</h1>
 
     {% for step in scanner-instructions %}
         <article class="scanner-instructions__step" id="step-{{ step.index }}">

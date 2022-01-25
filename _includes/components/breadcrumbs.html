@@ -4,7 +4,7 @@
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
 {%- endif -%}
 
-<nav class="content-center__home breadcrumbs" aria-label="{{ site.data.[page.lang].translations.youarehere }}:"> 
+<nav class="content-center__home breadcrumbs" aria-label="{{ site.data[page.lang].translations.youarehere }}:"> 
     <ul> 
     {% for crumb in crumbs offset: 1 %}
     {{% assign start_crumb = '' %}}
@@ -13,19 +13,19 @@
     <li class="breadcrumbs-item"> 
         {% if include.collection == 'questions-in-app' %} 
             <a class="breadcrumbs" href="{{langSlug}}/faq-in-app">
-            {{ site.data.[page.lang].translations.faq }}</a>
+            {{ site.data[page.lang].translations.faq }}</a>
         {% elsif include.collection == 'questions-scanner-in-app' %}
             <a class="breadcrumbs" href="{{langSlug}}/faq-scanner-in-app">
-            {{ site.data.[page.lang].translations.faq }}</a>
+            {{ site.data[page.lang].translations.faq }}</a>
         {% elsif include.collection == 'questions-scanner' %}
             <a class="breadcrumbs" href="{{langSlug}}/scanner">
-            {{ site.data.[page.lang].translations.coronacheck-scanner-linktext }}</a>
+            {{ site.data[page.lang].translations.coronacheck-scanner-linktext }}</a>
         {% elsif page.domain == 'scanner' %}
             <a class="breadcrumbs" href="{{langSlug}}/scanner">
-            {{ site.data.[page.lang].translations.coronacheck-scanner-linktext }}</a>
+            {{ site.data[page.lang].translations.coronacheck-scanner-linktext }}</a>
         {% else %}
             <a class="breadcrumbs" href="{{langSlug}}">
-            {{ site.data.[page.lang].translations.layout-template-home }}</a>
+            {{ site.data[page.lang].translations.layout-template-home }}</a>
         {% endif %}
 
         {% if forloop.last == false %}
@@ -36,13 +36,13 @@
         {% if include.collection == 'questions-scanner' %} 
             <li class="breadcrumbs-item">
             <a class="breadcrumbs" href="{{langSlug}}/faq-scanner">
-            {{ site.data.[page.lang].translations.faq[page.lang] | truncate: 40 }}</a>
+            {{ site.data[page.lang].translations.faq[page.lang] | truncate: 40 }}</a>
             <span class="icon icon-chevron-right"></span>
             </li>
         {% elsif include.collection == 'questions' %}
             <li class="breadcrumbs-item">
                 <a class="breadcrumbs" href="{{langSlug}}/faq">
-                {{ site.data.[page.lang].translations.faq[page.lang] | truncate: 40 }}</a>
+                {{ site.data[page.lang].translations.faq[page.lang] | truncate: 40 }}</a>
                 <span class="icon icon-chevron-right"></span>
             </li>
         {% endif %}

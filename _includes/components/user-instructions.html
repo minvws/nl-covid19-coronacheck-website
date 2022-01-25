@@ -1,4 +1,4 @@
-<h2 class="instructions__title">{{ site.data.[page.lang].translations.user-instructions-title }}</h2>
+<h2 class="instructions__title">{{ site.data[page.lang].translations.user-instructions-title }}</h2>
   <div class="instructions">
   
   {% assign user_instructions = site.user-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}

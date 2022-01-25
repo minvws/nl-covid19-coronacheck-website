@@ -1,26 +1,26 @@
 <div class="demo-codes">
   {% if include.headerlevel == "h1" %}
-    <h1 class="demo-codes-title">{{ site.data.[page.lang].translations.demo-qr-title }}</h1>
+    <h1 class="demo-codes-title">{{ site.data[page.lang].translations.demo-qr-title }}</h1>
   {% else %}
-    <h2 class="demo-codes-title">{{ site.data.[page.lang].translations.demo-qr-title }}</h2>
+    <h2 class="demo-codes-title">{{ site.data[page.lang].translations.demo-qr-title }}</h2>
   {% endif %} 
-    <p>{{ site.data.[page.lang].translations.demo-qr-subtitle }}</p>
+    <p>{{ site.data[page.lang].translations.demo-qr-subtitle }}</p>
     <ul class="demo-codes-layout">
       <li class="demo-codes__block">
         <img
           src="{{ site.baseurl }}/img/qr/demo_qr_gray.png"
-          alt="{{ site.data.[page.lang].translations.demo-qr-gray-alt }}"
+          alt="{{ site.data[page.lang].translations.demo-qr-gray-alt }}"
           class="demo-codes__image"
         >
-        {{ site.data.[page.lang].translations.demo-qr-gray }}
+        {{ site.data[page.lang].translations.demo-qr-gray }}
       </li>
       <li class="demo-codes__block">
         <img
           src="{{ site.baseurl }}/img/qr/demo_qr_red.png"
-          alt="{{ site.data.[page.lang].translations.demo-qr-red-alt }}"
+          alt="{{ site.data[page.lang].translations.demo-qr-red-alt }}"
           class="demo-codes__image"
         >
-        {{ site.data.[page.lang].translations.demo-qr-red }}
+        {{ site.data[page.lang].translations.demo-qr-red }}
       </li>
     </ul>
   </div>

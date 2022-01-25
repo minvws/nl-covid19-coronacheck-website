@@ -1,28 +1,28 @@
 <header>
     <div class="skiplinks">
         <a href="#content">
-            {{ site.data.[page.lang].translations.header-skip-to-content }}
+            {{ site.data[page.lang].translations.header-skip-to-content }}
         </a>
     </div>
     <div class="header header--slim offset-background">
 
         <div class="header__homelink">
-            <a href="/{{ page.lang }}">{{ site.data.[page.lang].translations.head-app-name }}</a>
+            <a href="/{{ page.lang }}">{{ site.data[page.lang].translations.head-app-name }}</a>
         </div> 
 
         <div class="logo">
             <a href="{{ langSlug }}">
-                <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.[page.lang].translations.govlogo }}" width="40" height="80">
+                <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data[page.lang].translations.govlogo }}" width="40" height="80">
             </a>
         </div>
 
         {% if include.for == "scanner" %}
             <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
-                {{ site.data.[page.lang].translations.faq }}
+                {{ site.data[page.lang].translations.faq }}
             </a>
         {% else %}
             <a href="{{ langSlug }}/faq" class="header__quick-link">
-                {{ site.data.[page.lang].translations.faq }}
+                {{ site.data[page.lang].translations.faq }}
             </a>
         {% endif %}
 
