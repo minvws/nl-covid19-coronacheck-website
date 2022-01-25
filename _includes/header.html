@@ -12,7 +12,7 @@
         <div class="logobar">
             <div class="logo">
                 <a href="{{ langSlug }}">
-                <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data[page.lang].translations.govlogo }}" width="40" height="80">
+                <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.setup.govlogo[page.lang] }}" width="40" height="80">
                 </a>
             </div>
         
@@ -23,7 +23,7 @@
                 <div class="header__quick-link">
                     <a href="{{ langSlug }}/scanner" class="header__quick-link--scanner">
                     {{ site.data[page.lang].translations.coronacheck-scanner-linktext }}</a>
-                    <a href="{{ langSlug }}/faq" class="">
+                    <a href="{{ langSlug }}/faq">
                     {{ site.data[page.lang].translations.faq }}</a>
                 </div>
             {% endif %}
@@ -35,7 +35,7 @@
             {% if include.for == "scanner" %}
                 <div class="header__layout">
                 <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data[page.lang].translations.scanner-header-img }}" alt="" width="250" height="319">
+                    <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
                 </div>
 
                 <div class="header__layout--content">
@@ -49,7 +49,7 @@
             {% else %}
                 <div class="header__layout">
                 <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data[page.lang].translations.coronacheck-header-img }}" alt="" width="250" height="319">
+                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-img[page.lang] }}" alt="" width="250" height="319">
                 </div>
                 <div class="header__layout--content">
                     <h1 class="header__title">
@@ -59,7 +59,7 @@
                     {% include components/coronacheck-badges.html %}
                 </div>
                 <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data[page.lang].translations.coronacheck-header-illustration }}" alt="" width="250" height="319">
+                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="250" height="319">
                 </div>
                 </div>
             {% endif %}

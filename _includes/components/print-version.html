@@ -1,7 +1,7 @@
 <div class="print-version offset-background">
   <div class="print-version__column-image">
     <img
-      src="{{ site.baseurl }}{{ site.data[page.lang].translations.print-version-img }}"
+      src="{{ site.baseurl }}{{ site.data.setup.print-version-img[page.lang] }}"
       alt=""
       loading="lazy"
       class="print-version__image"
@@ -14,6 +14,6 @@
     <p>
       {{ site.data[page.lang].translations.print-version-content }}
     </p>
-    <a href="{{ site.data[page.lang].translations.print-version-url }}" class="btn btn--cta">{{ site.data[page.lang].translations.print-version-url-linktext }}</a>
+    <a href="{{ site.data.setup.print-version-url[page.lang] }}" class="btn btn--cta">{{ site.data[page.lang].translations.print-version-url-linktext }}</a>
   </div>
 </div>

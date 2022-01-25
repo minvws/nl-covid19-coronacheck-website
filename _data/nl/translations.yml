@@ -2,41 +2,20 @@ head-app-name: CoronaCheck
 
 scanner-app-name: CoronaCheck Scanner
   
-## SOCIAL tags
-
-head-social-og-site_name: CoronaCheck
-head-social-og-title: Krijg toegang met de CoronaCheck-app
-head-social-og-description: Met de app bewijs je dat je gevaccineerd of negatief getest bent. Of dat je eerder corona hebt gehad. Je kunt CoronaCheck gebruiken voor toegang tot bepaalde plekken. Of om naar andere landen te reizen.
-head-social-og-image-url: coronacheck-social-og-image--nl.png?=v2
-
-scanner-social-og-site_name: CoronaCheck Scanner
-scanner-social-og-title: Download CoronaCheck Scanner
-scanner-social-og-description: Met CoronaCheck Scanner controleer je de geldigheid van het coronabewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
-scanner-social-og-image-url: scanner-social-og-image--nl.png?v=2
-social-og-image-alt: Impressie van website waarop toelichting te vinden is
-    
 header-skip-to-content: Ga direct naar inhoud
-page-title: CoronaCheck
     
 header-title: Krijg toegang met de CoronaCheck-app
+
 header-subtitle: Met de app bewijs je dat je gevaccineerd of negatief getest bent. Of dat je eerder corona hebt gehad. Je kunt CoronaCheck gebruiken voor toegang tot bepaalde plekken. Of om naar andere landen te reizen. 
 
 scanner-header-title: Geef toegang met CoronaCheck Scanner
-scanner-header-subtitle: Met CoronaCheck Scanner controleer je de geldigheid van het coronabewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten. Wil je CoronaCheck gebruiken voor je locatie of activiteit, lees dan meer op de pagina <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/ondernemers" target="_blank" rel="noopener noreferrer">Ondernemers, organisatoren en het coronatoegangsbewijs</a>.
 
-coronacheck-header-img: /img/Home_NL_Header.png
-coronacheck-header-illustration: /img/Home_Header_Person.svg
+scanner-header-subtitle: Met CoronaCheck Scanner controleer je de geldigheid van het coronabewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten. Wil je CoronaCheck gebruiken voor je locatie of activiteit, lees dan meer op de pagina <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/ondernemers" target="_blank" rel="noopener noreferrer">Ondernemers, organisatoren en het coronatoegangsbewijs</a>.
     
-scanner-header-img: /img/CoronaCheckScanner_app-tall.png
 coronacheck-scanner-linktext: Scanner
+
 coronacheck-scanner-backlink: Terug naar CoronaCheck Scanner
 
-header-appstore: Download in de App Store
-    
-header-googleplaystore: Ontdek het op Google Play
-    
-header-huaweiappgallery: Ontdek het op Huawei App Gallery
-  
 header-language-picker-label: Taal
     
 header-language-picker-switch-lang: Wissel van taal
@@ -49,8 +28,6 @@ minvws: "Ministerie van Volksgezondheid,<br>Welzijn en Sport"
     
 watch: Bekijk de film
     
-x-of-y: van
-        
 readmore: Lees meer
   
 readmore-about_screen-reader: over
@@ -70,48 +47,40 @@ faq-scanner: Meestgestelde vragen
 scanner-quicklinks: Snel aan de slag met CoronaCheck Scanner
 
 faq-scanner-category-one: Evenement organiseren
+
 faq-scanner-category-two: Algemeen
+
 faq-scanner-category-three: Problemen
+
 faq-scanner-category-four: Privacy
 
 faq-category-one: Algemeen
+
 faq-category-two: Coronabewijs maken
+
 faq-category-three: Internationaal reizen met CoronaCheck
+
 faq-category-four: Problemen
+
 faq-category-five: Bewijs op papier
+
 faq-category-six: Achtergrond
+
 faq-category-seven: Overig
+
 faq-category-eight: Herstelbewijs    
-faq-category-privacy: Privacy
+
 layout-template-home: Home
   
 layout-template-faq: Terug naar meestgestelde vragen
   
 layout-faq-btn: Bekijk alle vragen
   
-english: (Engelstalig)
-  
 coronacheck-lead-title: Download de CoronaCheck-app
   
 scanner-lead-title: Download de CoronaCheck Scanner-app
   
-coronacheck-app-store-url: https://apps.apple.com/nl/app/coronacheck/id1548269870
-  
-coronacheck-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder
-  
-scanner-app-store-url: https://apps.apple.com/nl/app/coronacheck-scanner/id1549842661
-  
-scanner-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
-
-badge-app-store-img: app-store-badge-nl.svg
-  
-badge-google-play-img: google-play-badge-nl.svg
-  
-badge-huawei-img: huawei.svg
-
-footer-samen-logo-url: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19
-
-footer-samen-logo: Alleen samen krijgen we corona onder controle. Meer informatie over CoronaCheck
+footer-attribution: 'Mede mogelijk gemaakt door:'
 
 footer-contact-title: Heb je vragen over CoronaCheck?<br /> Lees dan de <a href="/nl/faq">meestgestelde vragen</a>.
 
@@ -129,72 +98,38 @@ footer-phone-mail: "Of stuur een e-mail naar:"
     
 footer-colophon: Colofon
 
-footer-attribution: 'Mede mogelijk gemaakt door:'
-
 footer-attribution-logo: 'Logo Europese Commissie'
         
 footer-logos-info_md: CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community tijdens de ontwikkeling meegekeken en getest.
     
 footer-more-info-title: Meer informatie?
-footer-more-info-url: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19
   
 footer-more-info: Kijk op rijksoverheid.nl
   
-footer-testappointment-url: testafspraak
-footer-testappointment: Doe een coronatest
-
-footer-status-url: https://status.coronacheck.nl
-
 footer-status: Status
 
-footer-wegwijzer-url: wegwijzer
 footer-wegwijzer: Wegwijzer
-
-footer-wijsopreis-url: https://www.nederlandwereldwijd.nl/reizen-naar-het-buitenland
-footer-wijsopreis: Wijs op reis
 
 footer-misc-title: Over CoronaCheck
 
 footer-misc-title-scanner: Over CoronaCheck Scanner
 
-footer-logos-minvws-url: https://minvws.nl/
-footer-logos-minvws-img-alt:  Logo Het ministerie van Volksgezondheid, Welzijn en Sport
-  
-footer-logos-rivm-url: https://www.rivm.nl/
-footer-logos-rivm-img-alt: Logo Rijksinstituut voor Volksgezondheid en Milieu
-  
-footer-logos-ggd-url: https://www.ggd.nl/
-footer-logos-ggd-img-alt: Logo GGD Nederland
-  
-footer-misc-privacy-url: privacy
 footer-misc-privacy: Privacy
 
-footer-misc-terms-of-service-url: gebruikersvoorwaarden
 footer-misc-terms-of-service: Gebruikersvoorwaarden
 
-footer-misc-interoperability-url: interoperabiliteit
-footer-misc-interoperability: Samenwerking CoronaCheck met andere landen
-  
-footer-misc-disclaimer-url: disclaimer
 footer-misc-disclaimer: Disclaimer
   
-footer-misc-report-vulnerability-url: kwetsbaarheid-melden
 footer-misc-report-vulnerability: Kwetsbaarheid melden
   
-footer-misc-cookies-url: cookies
 footer-misc-cookies: Cookies
   
-footer-misc-colofon-url: colofon
 footer-misc-colofon: Colofon
   
-footer-misc-pers-url: pers
 footer-misc-pers: Pers
     
-footer-misc-accessibility-statement-url: toegankelijkheidsverklaring
 footer-misc-accessibility-statement: Toegankelijkheids&shy;verklaring
-footer-misc-partnertoolkit-url: https://news.pressmailings.com/hvdm/partnertoolkit
-footer-misc-partnertoolkit: Partnertoolkit
-  
+
 error-pagetitle: Fout
 
 error-title: Deze pagina kan helaas niet worden gevonden
@@ -227,11 +162,8 @@ demo-qr-subtitle: Ervaren hoe de scanner werkt? <br />Open CoronaCheck Scanner o
  
 demo-qr-gray: Grijs scherm? Dat betekent dat er een geldige demo-code is gescand. Bij het scannen van een echte geldige QR-code zal het scherm groen worden in plaats van grijs.
 
-demo-qr-gray-alt: Een QR code van een fictief persoon die wel naar binnen mag
-
 demo-qr-red: Een rood scherm betekent niet dat de bezoeker corona heeft, alleen dat de QR-code niet geldig is.
 
-demo-qr-red-alt: Een QR code van een fictief persoon die niet naar binnen mag
 
 # Media element (used for videos)
 # See _includes/components/mediaplayer.html
@@ -254,31 +186,19 @@ mediaelement-download-subtitle: Ondertitelingsbestand
   
 mediaelement-transcript-title: Uitgeschreven tekst van de video
   
-home-video-title: Zo beschermen we elkaar
-  
-home-video-content_md: Bekijk in 2 minuten wat CoronaCheck is, wat CoronaCheck doet en waarom de app belangrijk is.
-
 user-instructions-title: Hoe werkt het?
 
 scanner-instructions-title: Hoe werkt het scannen?
 
-print-version-img: /img/printbewijs.png
-
 print-version-title: Liever een papieren bewijs?
  
 print-version-content: Een bewijs op papier is handig als je geen smartphone hebt. Je kunt een bewijs maken van een vaccinatie en/of van een testuitslag. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over bewijzen op papier</span></a>.
-
-print-version-url: /print
 
 print-version-url-linktext: Maak papieren bewijs
 
 about-coronacheck-scanner-title: CoronaCheck Scanner
 
 about-coronacheck-scanner-content: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om bezoekers toe te laten?</p><p><a href="/scanner" class="btn btn--cta" target="_blank">Bekijk de Scanner-app</a></p>
-
-home-intro-content: Vanaf nu kun je met toegangstesten of een vaccinatiebewijs toegang krijgen tot bepaalde events en locaties in Nederland. <a href="/nl/faq/1-1-hoe-werkt-de-coronacheck-app/">Dit is hoe CoronaCheck werkt</a>. Vanaf juli kun je met CoronaCheck ook een herstelbewijs maken en een persoonlijke QR-code om internationaal te reizen. Hierover lees je meer op de pagina van de Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>)
-
-sorry-btn: "Terug naar CoronaCheck"
 
 status-block-title: Bekijk de actuele status van CoronaCheck
 
@@ -288,15 +208,9 @@ guidepost-block: '<p>Lukt het niet om een bewijs te maken in CoronaCheck? Lees m
 
 quicklinks-organising: Een evenement organiseren
 
-quicklinks-organising-url: /nl/faq-scanner#evenement-organiseren
-
 quicklinks-how-it-works: Zo werkt scannen
 
-quicklinks-how-it-works-url: /nl/scanner/zo-werkt-scannen
-
 quicklinks-try: Oefen het scannen
-
-quicklinks-try-url: /nl/scanner/uitproberen
 
 dashboard-noscript-title: JavaScript vereist
 

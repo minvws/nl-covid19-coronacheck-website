@@ -1,0 +1,149 @@
+## HEAD
+
+head-social-og-site_name: CoronaCheck
+  
+head-social-og-title: 
+  nl: Krijg toegang met de CoronaCheck-app
+  en: Get access with the CoronaCheck-app
+     
+head-social-og-description: 
+  nl: Met de app bewijs je dat je gevaccineerd of negatief getest bent. Of dat je eerder corona hebt gehad. Je kunt CoronaCheck gebruiken voor toegang tot bepaalde plekken. Of om naar andere landen te reizen.
+  en:  With this app, you are able to prove you've been vaccinated, you’ve had corona or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain places. And to travel to other countries. 
+
+scanner-social-og-site_name: CoronaCheck Scanner
+  
+scanner-social-og-title: 
+  nl: Download CoronaCheck Scanner
+  en: Download CoronaCheck Scanner
+    
+scanner-social-og-description: 
+  nl: Met CoronaCheck Scanner controleer je de geldigheid van het coronabewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
+  en:  With CoronaCheck Scanner you check the validity of the visitor’s vaccination record, recovery or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
+
+social-og-image-alt: 
+  nl: Impressie van website waarop toelichting te vinden is
+  en:  Impression of website on which more information can be found
+
+coronacheck-header-img: 
+  nl: /img/Home_NL_Header.png
+  en: /img/Home_EN_Header.png
+
+coronacheck-header-illustration: 
+  nl: /img/Home_Header_Person.svg
+  en: /img/Home_Header_Person.svg
+    
+scanner-header-img: 
+  nl: /img/CoronaCheckScanner_app-tall.png
+  en: /img/CoronaCheckScanner_app-tall-en.png
+
+print-version-img: 
+  nl: /img/printbewijs.png
+  en: /img/printbewijs-en.png
+
+header-appstore: 
+  nl: Download in de App Store
+  en: Download on the App Store 
+    
+header-googleplaystore: 
+  nl: Ontdek het op Google Play
+  en: Get it on Google Play
+
+header-huaweiappgallery: 
+  nl: Ontdek het op Huawei App Gallery
+  en: Get it on Huawei App Gallery
+
+coronacheck-app-store-url:   
+  nl: https://apps.apple.com/nl/app/coronacheck/id1548269870
+  en: https://apps.apple.com/gb/app/coronacheck/id1548269870
+  
+coronacheck-google-play-url: 
+  nl: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder
+  en: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder
+  
+scanner-app-store-url: 
+  nl: https://apps.apple.com/nl/app/coronacheck-scanner/id1549842661
+  en: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
+  
+scanner-google-play-url: 
+  nl: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
+  en: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
+
+footer-samen-logo-url: 
+  nl: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19
+  en: https://www.government.nl/topics/coronavirus-covid-19
+
+coronacheck-huawei-url:   
+  nl: 
+  en:  
+    
+scanner-huawei-url:   
+  nl: 
+  en: 
+
+print-version-url: 
+  nl: /print
+  en: /en/print
+
+quicklinks-organising-url:   
+  nl: /nl/faq-scanner#evenement-organiseren
+  en: /en/faq-scanner#organising-an-event
+
+quicklinks-how-it-works-url: 
+  nl: /nl/scanner/zo-werkt-scannen 
+  en: /en/scanner/zo-werkt-scannen
+
+quicklinks-try-url: 
+  nl: /en/scanner/uitproberen 
+  en: /en/scanner/uitproberen
+
+badge-app-store-img: 
+  nl: app-store-badge-nl.svg
+  en: app-store-badge-en.svg
+
+badge-google-play-img: 
+  nl: google-play-badge-nl.svg
+  en: google-play-badge-en.svg
+  
+badge-huawei-img:  
+  nl: huawei-en.svg
+  en: huawei.svg
+
+footer-wegwijzer-url: 
+  nl: wegwijzer
+  en: guidepost
+
+footer-status-url: 
+  nl: https://status.coronacheck.nl/
+  en: https://status.coronacheck.nl/en/
+
+footer-more-info-url: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19
+
+footer-samen-logo: 
+  nl: Alleen samen krijgen we corona onder controle. Meer informatie over CoronaCheck
+  en: Only together we can control corona. More information about CoronaCheck
+
+footer-logos-rivm-url: https://www.rivm.nl/en
+
+footer-misc-privacy-url: privacy
+
+footer-misc-terms-of-service-url: gebruikersvoorwaarden
+
+footer-misc-disclaimer-url: disclaimer
+
+footer-misc-report-vulnerability-url: kwetsbaarheid-melden
+
+footer-misc-cookies-url: cookies
+
+footer-misc-colofon-url: colofon
+
+footer-misc-pers-url: pers
+    
+footer-misc-accessibility-statement-url: toegankelijkheidsverklaring
+    
+demo-qr-red-alt: 
+  nl: Een QR code van een fictief persoon die niet naar binnen mag
+  en: A QR code of a fictitious person who is not allowed to enter
+
+demo-qr-gray-alt: 
+  nl: Een QR code van een fictief persoon die wel naar binnen mag
+  en: A QR code of a fictitious person who is allowed to enter

@@ -10,8 +10,8 @@
     
     {% if page.showTogether  %}
     <div class="footer-samen {{ small }}">
-        <a class="footer-samen__logo" href="{{ site.data[page.lang].translations.footer-samen-logo-url }}">
-            <img src="{{ site.baseurl }}/img/logo-alleen-samen.svg?v={{ timeslug }}" alt="{{ site.data[page.lang].translations.footer-samen-logo }}" width="350" height="88" />
+        <a class="footer-samen__logo" href="{{ site.data.setup.footer-samen-logo-url[page.lang] }}">
+            <img src="{{ site.baseurl }}/img/logo-alleen-samen.svg?v={{ timeslug }}" alt="{{ site.data.setup.footer-samen-logo[page.lang] }}" width="350" height="88" />
         </a>
     </div>
     {% endif %}
@@ -26,7 +26,7 @@
                     </div>
                     <div class="footer-attribution">
                         <h3 class="footer-attribution__title">{{ site.data[page.lang].translations.footer-attribution }}</h3>
-                        <img src="{{ site.baseurl }}/img/Logo_EU_Negative_{{ page.lang }}.svg?v={{ timeslug }}" alt="{{ site.data[page.lang].translations.footer-attribution-logo }}" width="175" height="48" />
+                        <img src="{{ site.baseurl }}/img/Logo_EU_Negative_{{ page.lang }}.svg?v={{ timeslug }}" alt="{{ site.data.setup.footer-attribution-logo[page.lang] }}" width="175" height="48" />
                     </div>
                 </div>
                 <div class="footer-links-col ___desktop-25">
@@ -38,44 +38,43 @@
                     <ul>
                         {% if include.for != "scanner" %}
                             <li>
-                                <a href="{{ langSlug }}{{ site.data[page.lang].translations.footer-misc-privacy-url }}">
+                                <a href="{{ langSlug }}{{ site.data.setup.footer-misc-privacy-url }}">
                                     {{ site.data[page.lang].translations.footer-misc-privacy }}
                                 </a>
                             </li>
                         {% endif %}
                         {% if include.for == "scanner" %}
                             <li>
-                                <a href="{{ langSlug }}{{ site.data[page.lang].translations.footer-misc-terms-of-service-url }}">
+                                <a href="{{ langSlug }}{{ site.data.setup.footer-misc-terms-of-service-url }}">
                                     {{ site.data[page.lang].translations.footer-misc-terms-of-service }}
                                 </a>
                             </li>
                         {% endif %}
                         <li>
-                            <a href="{{ langSlug }}{{ site.data[page.lang].translations.footer-misc-cookies-url }}">
+                            <a href="{{ langSlug }}{{ site.data.setup.footer-misc-cookies-url }}">
                                 {{ site.data[page.lang].translations.footer-misc-cookies }}
-                                {{ site.data[page.lang].translations.english }}
                             </a>
                         </li>
                         <li>
                             <a href="{{ langSlug}}{{ site.data[page.lang].translations.footer-misc-colofon-url }}">
                                 {{ site.data[page.lang].translations.footer-misc-colofon }}
-                                {{ site.data[page.lang].translations.english }}
+                                
                             </a>
                         </li>
                         <li>
-                            <a href="{{ langSlug }}{{ site.data[page.lang].translations.footer-misc-accessibility-statement-url }}">
-                                {{ site.data[page.lang].translations.footer-misc-accessibility-statement }}  {{ site.data[page.lang].translations.english }}
+                            <a href="{{ langSlug }}{{ site.data.setup.footer-misc-accessibility-statement-url }}">
+                                {{ site.data[page.lang].translations.footer-misc-accessibility-statement }}  
                             </a>
                         </li>
                         <li>
-                            <a href="{{ langSlug }}{{ site.data[page.lang].translations.footer-misc-report-vulnerability-url }}">
+                            <a href="{{ langSlug }}{{ site.data.setup.footer-misc-report-vulnerability-url }}">
                                 {{ site.data[page.lang].translations.footer-misc-report-vulnerability }}
-                                {{ site.data[page.lang].translations.english }}
+                                
                             </a>
                         </li>
                         <li>
-                            <a href="{{ langSlug }}{{ site.data[page.lang].translations.footer-misc-pers-url }}">
-                                {{ site.data[page.lang].translations.footer-misc-pers }} {{ site.data[page.lang].translations.english }}
+                            <a href="{{ langSlug }}{{ site.data.setup.footer-misc-pers-url }}">
+                                {{ site.data[page.lang].translations.footer-misc-pers }} 
                             </a>
                         </li>
                     </ul>
@@ -83,10 +82,10 @@
                 <div class="footer-links-col ___desktop-25">
                     <h3>{{ site.data[page.lang].translations.footer-more-info-title }}</h3>
                     <ul>
-                        <li><a href="{{ site.data[page.lang].translations.footer-status-url }}">{{ site.data[page.lang].translations.footer-status }}</a></li>
-                        <li><a href="{{ langSlug }}{{ site.data[page.lang].translations.footer-wegwijzer-url }}">{{ site.data[page.lang].translations.footer-wegwijzer }}</a></li>
+                        <li><a href="{{ site.data.setup.footer-status-url[page.lang] }}">{{ site.data[page.lang].translations.footer-status }}</a></li>
+                        <li><a href="{{ langSlug }}{{ site.data.setup.footer-wegwijzer-url[page.lang] }}">{{ site.data[page.lang].translations.footer-wegwijzer }}</a></li>
                         <li>{{ site.data.links.wijsopreis[page.lang] }}</li>
-                        <li><a href="{{ site.data[page.lang].translations.footer-more-info-url }}" target="_blank" rel="noopener noreferrer">{{ site.data[page.lang].translations.footer-more-info }} {{ site.data[page.lang].translations.english }}</a></li>
+                        <li><a href="{{ site.data.setup.footer-more-info-url[page.lang] }}" target="_blank" rel="noopener noreferrer">{{ site.data[page.lang].translations.footer-more-info }} </a></li>
                     </ul>
                 </div>
             

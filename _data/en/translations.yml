@@ -1,52 +1,20 @@
 head-app-name: CoronaCheck
 
 scanner-app-name: CoronaCheck Scanner
-  
-## SOCIAL tags
-
-head-social-og-site_name: CoronaCheck
-  
-head-social-og-title: Get access with the CoronaCheck-app
-
     
-head-social-og-description: With this app, you are able to prove you've been vaccinated, you’ve had corona or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain places. And to travel to other countries. 
-
- 
-head-social-og-image-url: coronacheck-social-og-image--nl.png?=v2
-
-scanner-social-og-site_name: CoronaCheck Scanner
-  
-scanner-social-og-title: Download CoronaCheck Scanner
-    
-scanner-social-og-description: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record, recovery or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
- 
-scanner-social-og-image-url: scanner-social-og-image--nl.png?v=2
-social-og-image-alt: Impression of website on which more information can be found
-    
-page-title: CoronaCheck
 header-skip-to-content: Skip to content
     
 header-title: Get access with the CoronaCheck-app
+
 header-subtitle: With this app, you are able to prove you've been vaccinated, you’ve had corona or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain places. And to travel to other countries. 
 
-
 scanner-header-title: Allow access with CoronaCheck Scanner 
+
 scanner-header-subtitle: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record, recovery or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
 
-coronacheck-header-img: /img/Home_EN_Header.png
-
-coronacheck-header-illustration: /img/Home_Header_Person.svg
-    
-scanner-header-img: /img/CoronaCheckScanner_app-tall-en.png
-
 coronacheck-scanner-linktext: Scanner
+
 coronacheck-scanner-backlink: Back to CoronaCheck Scanner
-
-header-appstore: Download on the App Store 
-    
-header-googleplaystore: Get it on Google Play
-
-header-huaweiappgallery: Get it on Huawei App Gallery
   
 header-language-picker-label: Language
     
@@ -55,13 +23,11 @@ header-language-picker-switch-lang: Switch language
 header-language-picker-current-lang: current language
   
 govlogo: Logo Dutch Government, homepage
+
 minvws: "Ministry of Health,<br>Welfare and Sport"
 
-    
 watch: Watch the movie
     
-x-of-y: of
-        
 readmore: More information
   
 readmore-about_screen-reader: about
@@ -81,20 +47,28 @@ faq-scanner: Frequently asked questions
 scanner-quicklinks: Get started with CoronaCheck Scanner
 
 faq-scanner-category-one: Organising an event
+
 faq-scanner-category-two: General
+
 faq-scanner-category-three: Problems
+
 faq-scanner-category-four: Privacy
 
-
 faq-category-one: General
+
 faq-category-two: Using CoronaCheck in the Netherlands
+
 faq-category-three: International travel with CoronaCheck
+
 faq-category-four: Problems
+
 faq-category-five: Paper certificate
+
 faq-category-six: Background
+
 faq-category-seven: Other
+
 faq-category-eight: Recovery certificate
-    
 
 layout-template-home: Home
 
@@ -102,94 +76,66 @@ layout-template-faq: Back to frequently asked questions
   
 layout-faq-btn: View all frequently asked questions
 
-english: (English)
-  
 coronacheck-lead-title: Download the CoronaCheck-app
   
 scanner-lead-title: Download the CoronaCheck Scanner app
-  
-coronacheck-app-store-url: https://apps.apple.com/gb/app/coronacheck/id1548269870
-  
-coronacheck-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder
-  
-coronacheck-huawei-url: 
-    
-scanner-app-store-url: https://apps.apple.com/gb/app/coronacheck-scanner/id1549842661
-  
-scanner-google-play-url: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
-  
-scanner-huawei-url: 
 
-badge-app-store-img: app-store-badge-en.svg
-
-badge-google-play-img: google-play-badge-en.svg
-  
-badge-huawei-img:  huawei-en.svg
- 
-footer-samen-logo-url: https://www.government.nl/topics/coronavirus-covid-19
-
-footer-samen-logo: Only together we can control corona. More information about CoronaCheck
+footer-attribution: 'Made possible by:'
 
 footer-contact-title: Do you have questions about CoronaCheck? Read the <a href="/en/faq">frequently asked questions</a>.
 
 footer-contact-subtitle: Don't see your question listed? Contact our helpdesk.
 
-footer-contact-title-scanner: Do you have questions about CoronaCheck Scanner?<br /> Read the <a href="/en/faq-scanner">frequently asked questions</a>.
+footer-contact-title-scanner: 'Do you have questions about CoronaCheck Scanner?<br /> Read the <a href="/en/faq-scanner">frequently asked questions</a>.'
 
 footer-phone: Call the helpdesk
 
 footer-phone-action: '<a href="tel:08001421">0800-1421</a> (free). Or if you are calling from abroad: <a href="tel:+31707503720">+31 70 750 37 20</a>'
   
-footer-phone-opening-hours: "Available Monday till Sunday 08.00 a.m. - 08.00 p.m."
+footer-phone-opening-hours: 'Available Monday till Sunday 08.00 a.m. - 08.00 p.m.'
   
-footer-phone-mail: "Or send an e-mail to:"
+footer-phone-mail: 'Or send an e-mail to:'
     
 footer-colophon: Colophon
 
-footer-attribution: Logo of the Ministry of Health, Welfare and Sport
+footer-attribution-logo: 'Logo of the European Commission'
+
+footer-logos-info_md: CoronaCheck and CoronaCheck Scanner have been developed by the Ministry of Public Health, Welfare and Sport. Both the apps and the certificate on paper would not have been possible without the support of dozens of specialists, hands-on experts and a large open-source community of citizens. They all lent a hand and helped to test the app during its development.
+
+footer-more-info-title: More information?
   
-footer-logos-rivm-url: https://www.rivm.nl/en
-footer-logos-rivm-img-alt: Logo of the Municipal Health Service (GGD)
+footer-more-info: Go to government.nl
   
-footer-misc-privacy-url: privacy
+footer-status: Status
+
+footer-wegwijzer: Guidepost
+
+footer-misc-title: About CoronaCheck
+
+footer-misc-title-scanner: Over CoronaCheck Scanner
 
 footer-misc-privacy: Privacy
 
-footer-misc-terms-of-service-url: gebruikersvoorwaarden
-
 footer-misc-terms-of-service: Terms of Service
-
-footer-misc-interoperability-url: interoperabiliteit
-footer-misc-interoperability: Cooperation between CoronaCheck and other countries
   
-footer-misc-disclaimer-url: disclaimer
 footer-misc-disclaimer: Disclaimer
   
-footer-misc-report-vulnerability-url: kwetsbaarheid-melden
 footer-misc-report-vulnerability: Report vulnerability
   
-footer-misc-cookies-url: cookies
 footer-misc-cookies: Cookies
   
-footer-misc-colofon-url: colofon
 footer-misc-colofon: Colophon
   
-footer-misc-pers-url: pers
 footer-misc-pers: Press
     
-footer-misc-accessibility-statement-url: toegankelijkheidsverklaring
 footer-misc-accessibility-statement: Accessibility statement
     
-footer-misc-partnertoolkit-url: https://news.pressmailings.com/hvdm/partnertoolkit
-footer-misc-partnertoolkit: Partner toolkit
-  
 error-pagetitle: Error
 
-  
 error-title: This page can't be found
-  
+
 error-back-to-home-page: Go back to homepage CoronaCheck.nl
-  
+
 error-back-to-faq: Go to frequently asked questions
     
 accessibility-in-app-email-subject: Problem with using the app
@@ -197,85 +143,61 @@ accessibility-in-app-email-subject: Problem with using the app
 information-title: 'This is how we handle your data:'
   
 information-qrcode: The QR code contains a minimum amount of data
-
     
 information-naw: Your data is not centrally stored anywhere
-
   
 information-gps: Your location data is not used or saved
 
-
-
 scanner-information-title: Acceptable use policy
 
-
 scanner-information-qrcode: The QR code contains a minimum amount of data of the visitor
-
     
 scanner-information-naw: You're only allowed to use this data to check the valid negative test result
 
-  
 scanner-information-gps: The visitor's data is not centrally stored anywhere
-
 
 demo-qr-title: Try scanning
 
-
 demo-qr-subtitle: Want to experience how the scanner works? <br />Open CoronaCheck Scanner on your phone and scan the QR codes.
 
- 
-demo-qr-gray: Gray screen? This means you’ve scanned a valid demo code. When scanning a real valid QR code, the screen will turn green instead of gray.
-
-
-demo-qr-gray-alt: A QR code of a fictitious person who is allowed to enter
-
+demo-qr-gray: Gray screen? This means you've scanned a valid demo code. When scanning a real valid QR code, the screen will turn green instead of gray.
 
 demo-qr-red: A red screen does not mean the visitor has coronavirus. It just means the QR code is invalid.
-
-
-demo-qr-red-alt: A QR code of a fictitious person who is not allowed to enter
-
 
 # Media element (used for videos)
 # See _includes/components/mediaplayer.html
   
 mediaelement-btn-enable-caption: Enable subtitles (CC)
+
 mediaelement-btn-disable-caption: Disable subtitles (CC)
+
 mediaelement-btn-enable-audio-description: Enable audio description (AD)
+
 mediaelement-btn-disable-audio-description: Disable audio description (AD)
+
 mediaelement-download-title: Download this video
+
 mediaelement-download-mp4-video: MP4-video
+
 mediaelement-download-mp3-voiceover: MP3-audio (voiceover)
+
 mediaelement-download-subtitle: Subtitle
-  
+
 mediaelement-transcript-title: Written out text of the video
   
-home-video-title: Video about CoronaCheck
-  
-home-video-content_md: Find out in two-minutes what CoronaCheck is, what it does and what it can mean for you!
-
 user-instructions-title: How does it work?
 
 scanner-instructions-title: How does scanning work?
 
-print-version-img: /img/printbewijs-en.png
-
 print-version-title: Prefer a certificate on paper?
  
 print-version-content: A certificate on paper is convenient if you don’t have a smartphone. You can make a certificate from a vaccination and/or a test result. <a href="/en/faq#paper-certificate">Read more here<span class="screen-reader-text"> about a certificate on paper</span></a>.
-
-print-version-url: 
-  en: /en/print
 
 print-version-url-linktext: Make certificate on paper
 
 about-coronacheck-scanner-title: CoronaCheck Scanner
 
 about-coronacheck-scanner-content: <p>Would you like to find out how you can use CoronaCheck to allow visitors access to your event?</p><p><a href="/en/scanner" class="btn btn--cta" target="_blank">View the Scanner app</a></p> 
-
-home-intro-content: From now on, you will be able to use CoronaCheck to gain access to some events and locations in the Netherlands. <a href="/en/faq/1-1-hoe-werkt-de-coronacheck-app/">This is how CoronaCheck works</a>. From the beginning of July, you will be able to use CoronaCheck to create a personal QR code for travels to other countries within the European Union. You can read more about it at the website of the Rijksoverheid (<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/vraag-en-antwoord/wat-is-het-eu-digitaal-corona-certificaat" target="_blank" rel="noopener noreferrer" lang="nl" hreflang="nl">Wat is het EU Digitaal Corona Certificaat? | Rijksoverheid.nl</a>.)
-
-sorry-btn: "Back to CoronaCheck"
 
 status-block-title: View the actual status of CoronaCheck
 
@@ -285,15 +207,9 @@ guidepost-block: '<p>Unable to create a coronavirus pass with CoronaCheck? Read 
 
 quicklinks-organising: Organising an event
 
-quicklinks-organising-url: /en/faq-scanner#organising-an-event
-
 quicklinks-how-it-works: How scanning works
 
-quicklinks-how-it-works-url: /en/scanner/zo-werkt-scannen
-
 quicklinks-try: Try scanning
-
-quicklinks-try-url: /en/scanner/uitproberen
 
 dashboard-noscript-title: JavaScript required
 

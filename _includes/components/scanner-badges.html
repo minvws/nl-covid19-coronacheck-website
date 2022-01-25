@@ -5,28 +5,24 @@
   {% endif %}
   <ul class="layout-app-badges">
     <li class="app_badge_column__left">
-      <a class="app-store" href="{{ site.data[page.lang].translations.scanner-app-store-url }}">
-        <img src="{{ site.baseurl }}/img/badges/{{ site.data[page.lang].translations.badge-app-store-img }}" 
-        alt="{{ site.data[page.lang].translations.header-appstore }}" 
+      <a class="app-store" href="{{ site.data.setup.scanner-app-store-url[page.lang] }}">
+        <img src="{{ site.baseurl }}/img/badges/{{ site.data.setup.badge-app-store-img[page.lang] }}" 
+        alt="{{ site.data.setup.header-appstore[page.lang] }}" 
         height="65" width="196"
         />
       </a>
     </li>
     <li class="app_badge_column__right">
-      <a class="play-store" href="{{ site.data[page.lang].translations.scanner-google-play-url }}">
-        <img src="{{ site.baseurl }}/img/badges/{{site.data[page.lang].translations.badge-google-play-img }}" alt="{{ site.data[page.lang].translations.header-googleplaystore }}" height="65" width="216" />
+      <a class="play-store" href="{{ site.data.setup.scanner-google-play-url[page.lang] }}">
+        <img src="{{ site.baseurl }}/img/badges/{{site.data.setup.badge-google-play-img[page.lang] }}" alt="{{ site.data.setup.header-googleplaystore[page.lang] }}" height="65" width="216" />
       </a>
     </li>
     <li class="app_badge_column__right {% if include.huawei != 'true' %}huawei-only-show-mobile{% endif %}">
       {% if include.huawei == 'true' %}
-      <a class="huawei-store" href="{{ site.data[page.lang].translations.scanner-huawei-url }}">
-        <img src="{{ site.baseurl }}/img/badges/{{site.data[page.lang].translations.badge-huawei-img[page.lang]  }}" alt="{{ site.data[page.lang].translations.header-huaweiappgallery }}" height="65" width="216" />
+      <a class="huawei-store" href="{{ site.data.setup.scanner-huawei-url[page.lang] }}">
+        <img src="{{ site.baseurl }}/img/badges/{{site.data.setup.badge-huawei-img[page.lang] }}" alt="{{ site.data.setup.header-huaweiappgallery[page.lang] }}" height="65" width="216" />
       </a>
       {% endif %}
     </li>
   </ul>
-  {% comment %}{% if page.lang == 'fy' %}
-  <p class="badges__caveat">
-      <strong class="note">{{ site.data[page.lang].translations.sca-caveat-letop-fy }}</strong> {{ site.data[page.lang].translations.info-caveat-fy }}</p>
-  {% endif %}{% endcomment %}
 </div>
