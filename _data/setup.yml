@@ -52,6 +52,18 @@ header-huaweiappgallery:
   nl: Ontdek het op Huawei App Gallery
   en: Get it on Huawei App Gallery
 
+coronacheck-howto-step-1-img: 
+  nl: /img/Home_NL_Iphone1.png
+  en: /img/Home_EN_Iphone1.png
+
+coronacheck-howto-step-2-img: 
+  nl: /img/Home_NL_Iphone2.png
+  en: /img/Home_EN_Iphone2.png
+
+coronacheck-howto-step-3-img: 
+  nl: /img/Home_NL_Iphone3.png
+  en: /img/Home_EN_Iphone3.png
+
 coronacheck-app-store-url:   
   nl: https://apps.apple.com/nl/app/coronacheck/id1548269870
   en: https://apps.apple.com/gb/app/coronacheck/id1548269870

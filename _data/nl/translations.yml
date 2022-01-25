@@ -188,7 +188,20 @@ mediaelement-transcript-title: Uitgeschreven tekst van de video
   
 user-instructions-title: Hoe werkt het?
 
-scanner-instructions-title: Hoe werkt het scannen?
+coronacheck-howto-step-1-title: 1. Laat je testen of vaccineren
+
+coronacheck-howto-step-1-content: |
+  Voor toegang vragen sommige landen of plekken een bewijs van een vaccinatie of van een uitslag van een coronatest.
+
+coronacheck-howto-step-2-title: 2. Maak een QR-code
+
+coronacheck-howto-step-2-content: |
+  De app maakt twee QR-codes: een QR-code voor Nederland en een internationale. Dat is jouw bewijs.
+
+coronacheck-howto-step-3-title: 3. Toon je QR-code
+
+coronacheck-howto-step-3-content: |
+  Laat je identiteitsbewijs en je QR-code controleren voor toegang tot een bepaalde plek. En als je op reis gaat. 
 
 print-version-title: Liever een papieren bewijs?
  
@@ -211,6 +224,35 @@ quicklinks-organising: Een evenement organiseren
 quicklinks-how-it-works: Zo werkt scannen
 
 quicklinks-try: Oefen het scannen
+
+scanner-instructions-title: Hoe werkt het scannen?
+
+scanner-howto-step-1-title: Houd afstand en scan de QR-code
+
+scanner-howto-step-1-content: |
+  <ul><li>Druk in de CoronaCheck Scanner-app op ‘Start scannen’.</li>
+  <li>Vraag de bezoeker naar een QR-code in de CoronaCheck-app of op papier. Een toerist kan een QR-code in een buitenlandse app of op papier laten zien.</li>
+  <li>Scan de QR-code met de camera van je telefoon.</li></ul>
+
+scanner-howto-step-2-title: Controleer het identiteitsbewijs
+
+scanner-howto-step-2-content: |
+  <p>Controleer bij bezoekers vanaf 14 jaar altijd of de gegevens op jouw scherm hetzelfde zijn als die op het identiteitsbewijs van de bezoeker. Zo weet je zeker dat de QR-code van de bezoeker is.</p>
+  <p>Let op: Soms vallen er gegevens weg. Dat gebeurt om de privacy van de bezoeker te beschermen. Je ziet dan een streepje (-) staan. Controleer in dat geval alleen de gegevens die je wel ziet.</p>
+  <p>Check? Dan mag de bezoeker naar binnen en is de controle klaar.</p>
+
+scanner-howto-step-3-title: Rood scherm
+
+scanner-howto-step-3-content: |
+    <p>Een rood scherm kan betekenen dat de QR-code niet aan Nederlandse eisen voldoet of dat de QR-code geblokkeerd is. QR-codes die breed worden verspreid via internet of sociale media worden geblokkeerd.</p>
+    <h3>Dit kun je doen:</h3>
+    <ol>
+    <li>Controleer of de tijd op de telefoon van de bezoeker en de scanner goed staat ingesteld. Zorg dat de datum en tijd op ‘automatisch instellen’ staan.</li>
+    <li>Controleer of de bezoeker een origineel bewijs laat zien. Een screenshot van een bewijs kan voor problemen zorgen.</li>
+    <li>Vraag de bezoeker om de app volledig af te sluiten en opnieuw op te starten. Scan daarna opnieuw de QR-code.</li></ol>
+    <h3>Blijft het scherm rood?</h3>
+    <p>Vraag de bezoeker contact op te nemen met de helpdesk van CoronaCheck.<br />
+    Zonder groen scherm mag de bezoeker niet toegelaten worden.</p>
 
 dashboard-noscript-title: JavaScript vereist
 

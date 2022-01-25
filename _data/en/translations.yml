@@ -187,7 +187,20 @@ mediaelement-transcript-title: Written out text of the video
   
 user-instructions-title: How does it work?
 
-scanner-instructions-title: How does scanning work?
+coronacheck-howto-step-1-title: 1. Get tested or vaccinated
+
+coronacheck-howto-step-1-content: |
+  For access, some countries and places ask for a vaccination certificate or a result of a corona test. 
+
+coronacheck-howto-step-2-title: 2. Make a QR code
+
+coronacheck-howto-step-2-content: |
+  This app generates a QR code for the Netherlands and one for other countries. This is your certificate.
+
+coronacheck-howto-step-3-title: 3. Show your QR code
+
+coronacheck-howto-step-3-content: |
+  Show both your QR code and your proof of identity at the entrance of the location you're visiting. And when you travel to other countries. 
 
 print-version-title: Prefer a certificate on paper?
  
@@ -211,6 +224,35 @@ quicklinks-how-it-works: How scanning works
 
 quicklinks-try: Try scanning
 
+scanner-instructions-title: How does scanning work?
+
+scanner-howto-step-1-title: Keep a distance and scan the QR code
+
+scanner-howto-step-1-content: |
+  <ul><li>Press ‘Start scanning’ in the CoronaCheck Scanner app.</li>
+  <li>Ask the visitor to show a QR code in the CoronaCheck app or on paper. A tourist may show a QR code in a foreign app, or on paper.</li>
+  <li>Scan the visitor's QR code with your phone camera.</li></ul>
+
+scanner-howto-step-2-title: Check the proof of identity
+
+scanner-howto-step-2-content: |
+  <p>For visitors aged 14 and over, always verify if the details on your screen are the same as those on the visitor's identity document. This way you can ensure the QR code belongs to the visitor.</p>
+  <p>Please note: sometimes not all details are shown. This is done to protect the visitor's privacy. You will see a hyphen (-) in the field. In this case, verify only the details you're seeing.</p>
+  <p>All good? Then the visitor is allowed to enter and the check is done.</p>
+
+scanner-howto-step-3-title: Red screen
+
+scanner-howto-step-3-content: |
+    <p>A red screen could mean that the QR code does not meet Dutch requirements, or that the QR code is blocked. QR codes that are widely shared via the internet or social media will be blocked.</p>
+    <h3>Here’s what you can do:</h3>
+    <ol>
+    <li>Verify if the time on the visitor’s phone and the scanner are set correctly. Make sure to set the date and time to ‘set automatically’.</li>
+    <li>Verify if the visitor is showing an original certificate. A screenshot of a certificate may cause problems.</li>
+    <li>Ask the visitor to completely shut down the app and restart it. Please scan the QR code again after.</li></ol>
+    <h3>Still looking at a red screen?</h3>
+    <p>Please ask the visitor to contact the CoronaCheck help desk.<br />
+    Without a green screen, you can’t grant the visitor access.</p>
+    
 dashboard-noscript-title: JavaScript required
 
 dashboard-noscript-description: This dashboard uses JavaScript. Please enable JavaScript and try again, or try in a different browser.
