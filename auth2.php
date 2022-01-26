@@ -2,6 +2,10 @@
 
 $code = $_REQUEST["code"] ?? '';
 $state = $_REQUEST["state"] ?? '';
+$error = $_REQUEST["error"]  ?? '';
+$errorDescription = $_REQUEST["error_description"]  ?? '';
+
+
 $host = $_SERVER["HTTP_HOST"] ?? '';
 
 $redirect = match ($host) {
@@ -14,14 +18,26 @@ $redirect = match ($host) {
 
 };
 
-$redirectFullUrl = $redirect . "?code=".rawurlencode($code) . "&state=" . rawurlencode($state);
+if(!empty($error)) {
+    $redirectFullUrl = $redirect . "?state=" . rawurlencode($state) . "&error=" . rawurlencode($error) . "&error_description=" . rawurlencode($errorDescription);
+}
+else {
+    $redirectFullUrl = $redirect . "?code=".rawurlencode($code) . "&state=" . rawurlencode($state);
+}
 
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 
 // Use 200 instead of 302 to support all browsers.
-http_response_code(200);
+
+if(empty($state) || (empty($code) &&  empty($error))) {
+    http_response_code(400);
+}
+else {
+    http_response_code(200);
+}
+
 // header("Location: ".$redirectFullUrl);
 
 ?>
