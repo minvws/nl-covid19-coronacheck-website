@@ -21,6 +21,10 @@ export default {
             type: String,
             required: false,
             default: FilterTypes.NEGATIVE_TEST
+        },
+        exclude: {
+            type: String,
+            required: false
         }
     },
     data() {
@@ -36,6 +40,15 @@ export default {
         },
         assessmentEvent () {
             return this.$store.getters['signedEvents/getProofEvents'](FilterTypes.VACCINATION_ASSESSMENT)?.[0]
+        },
+        translation () {
+            return this.exclude || 'negativeTestOverview'
+        }
+    },
+    methods: {
+        translate (id) {
+            const key = `views.${this.translation}`
+            return this.$t(`${key}.${id}`);
         }
     },
     mounted() {
@@ -54,8 +67,8 @@ export default {
         class="NegativeTestOverview">
         <div class="section">
             <PageIntro
-                :head="$t('views.negativeTestOverview.pageHeader')"
-                :intro="$t('views.negativeTestOverview.pageIntro')"/>
+                :head="translate('pageHeader')"
+                :intro="translate('pageIntro')"/>
 
             <div class="section-block">
                 <div class="proof-events" v-if="!isAssessment && latestSignedEvent">
@@ -74,7 +87,7 @@ export default {
                     <CcButton
                         id="create-qr-negative-test"
                         @select="gotoPrint()"
-                        :label="$t('views.negativeTestOverview.createTestProofButton')"/>
+                        :label="translate('createTestProofButton')"/>
                     <div class="button__help-button">
                         <CcModestButton
                             id="something-is-wrong"

@@ -89,6 +89,11 @@
 					"emptyVerificationCode": "Verificatiecode niet ingevuld",
 					"sendCode": "Stuur code"
 			},
+			"short-stay": {
+				"pageHeader": "Kloppen de gegevens?",
+				"pageIntro": "<p>Als de gegevens kloppen kun je een bezoekersbewijs maken. </p>",
+				"createTestProofButton": "Maak bewijs"
+			},
 			"negativeTestOverview": {
 					"pageHeader": "Controleer je testuitslag",
 					"pageIntro": "<p>Deze testuitslag is opgehaald bij de testlocatie. Kloppen de gegevens? Dan kun je een QR-code maken van je testuitslag. Dat is jouw bewijs.<\/p>",
