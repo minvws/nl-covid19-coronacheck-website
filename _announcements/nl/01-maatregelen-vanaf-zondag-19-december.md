@@ -5,6 +5,11 @@ published: true
 # Always set a title:
 title: ''
 # Choose a style: error or info
-style: error
+style: info
 ---
-Vanaf zaterdag 15 januari is het coronatoegangsbewijs op sommige plekken weer verplicht om toegang te krijgen. Ga jij de CoronaCheck-app weer gebruiken? Open dan voor vertrek de app om problemen te voorkomen. Lees meer informatie op <a href="https://www.rijksoverheid.nl/coronamaatregelen" rel="noopener noreferrer" target="_blank">de website van de Rijksoverheid</a>.
+Het kabinet heeft het voornemen om vanaf  1 februari een aantal wijzigingen door te voeren voor het coronatoegangsbewijs (CTB):
+
+* Het vaccinatiebewijs is 270 dagen geldig, na de afronding van volledige vaccinatie. Voor de boostervaccinatie is nog geen geldigheid vastgesteld;
+* Het herstelbewijs is tot 180 dagen geldig na de positieve test;
+
+Hiermee worden de regels voor het coronatoegangsbewijs (CTB) in Nederland en het Internationale coronabewijs (EU DCC) om mee te reizen zoveel mogelijk gelijk getrokken.
