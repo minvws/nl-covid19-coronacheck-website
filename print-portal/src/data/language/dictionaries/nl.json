@@ -235,7 +235,7 @@
 					"verificationCodeDirection": "Je krijgt een code in een sms of e-mail",
 					"sendAgain": "Verstuur opnieuw",
 					"didNotGetCode": "Ik heb geen code gekregen",
-					"emptyTestCode": "Beoordelingscode niet ingevuld",
+					"emptyTestCode": "Graag je beoordelingscode invullen",
 					"unknownTestProvider": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: VAC-YYYYYYYYY1-F2",
 					"invalidTestCode": "Geen geldige beoordelingscode",
 					"tokenExpired": "Beoordelingscode is niet meer geldig",

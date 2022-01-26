@@ -235,7 +235,7 @@
 					"verificationCodeDirection": "You get a code via text or email",
 					"sendAgain": "Send again",
 					"didNotGetCode": "I don't have a code",
-					"emptyTestCode": "Approval code not entered",
+					"emptyTestCode": "Please enter your approval code",
 					"unknownTestProvider": "This code is invalid. A valid code looks like this: VAC-YYYYYYYYY1-F2.",
 					"invalidTestCode": "Invalid approval code",
 					"tokenExpired": "Approval code has expired",
