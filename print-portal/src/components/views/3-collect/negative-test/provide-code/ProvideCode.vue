@@ -174,13 +174,13 @@ export default {
                     if (this.isTestCodeValid) {
                         this.getSignedResult({ includeVerificationCode: false });
                     } else {
-                        this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                        this.testCodeStatus.error = this.translate('invalidTestCode');
                     }
                 } else {
-                    this.testCodeStatus.error = this.$t('views.provideCode.unknownTestProvider');
+                    this.testCodeStatus.error = this.translate('unknownTestProvider');
                 }
             } else {
-                this.testCodeStatus.error = this.$t('views.provideCode.emptyTestCode');
+                this.testCodeStatus.error = this.translate('emptyTestCode');
             }
         },
         submitVerificationCode(options) {
@@ -188,10 +188,10 @@ export default {
                 if (this.isVerificationCodeValid) {
                     this.getSignedResult({ includeVerificationCode: true });
                 } else {
-                    this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
+                    this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
                 }
             } else {
-                this.verificationCodeStatus.error = this.$t('views.provideCode.emptyVerificationCode');
+                this.verificationCodeStatus.error = this.translate('emptyVerificationCode');
             }
         },
         addNegativeTest(signedEvent) {
@@ -269,13 +269,13 @@ export default {
                         });
                         switch (errorCause) {
                         case 'invalid_token':
-                            this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                            this.testCodeStatus.error = this.translate('invalidTestCode');
                             break;
                         case 'verification_required':
                             this.$store.commit('setVerificationNeeded', true);
                             this.testCodeStatus.error = '';
                             if (options.includeVerificationCode || errorCause === 'invalid_token') {
-                                this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
+                                this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
                             }
                             break;
                         case '429':
@@ -326,6 +326,9 @@ export default {
             } else {
                 this.$router.push({ name: 'ChoiceProof' });
             }
+        },
+        translate (id) {
+            return this.$t(`${this.translation}.${id}`)
         }
     }
 }
@@ -335,8 +338,8 @@ export default {
     <Page @back="back">
         <div class="section">
             <PageIntro
-                :head="$t(`${translation}.pageHeader`)"
-                :intro="$t(`${translation}.pageIntro`)"/>
+                :head="translate('pageHeader')"
+                :intro="translate('pageIntro')"/>
             <div class="section-block">
                 <form
                     v-on:submit.prevent

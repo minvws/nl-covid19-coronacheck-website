@@ -77,6 +77,7 @@
 					"pageHeader": "Testuitslag ophalen",
 					"pageIntro": "Vul jouw ophaalcode in. Deze heb je van je testlocatie gekregen.",
 					"uniqueCode": "Ophaalcode",
+					"exampleCode": "BRB-YYYYYYYYY1-Z2",
 					"verificationCode": "Verificatiecode",
 					"verificationCodeDirection": "Je krijgt een code in een sms of e-mail",
 					"sendAgain": "Verstuur opnieuw",
@@ -88,6 +89,11 @@
 					"invalidVerificationCode": "Geen geldige verificatiecode",
 					"emptyVerificationCode": "Verificatiecode niet ingevuld",
 					"sendCode": "Stuur code"
+			},
+			"short-stay": {
+				"pageHeader": "Kloppen de gegevens?",
+				"pageIntro": "<p>Als de gegevens kloppen kun je een bezoekersbewijs maken. </p>",
+				"createTestProofButton": "Maak bewijs"
 			},
 			"negativeTestOverview": {
 					"pageHeader": "Controleer je testuitslag",
@@ -223,7 +229,19 @@
 			"shortStayProvideAssessmentCode": {
 					"pageHeader": "Vaccinatiebeoordeling ophalen",
 					"pageIntro": "<p>Vul je beoordelingscode in. Deze heb je van de balie gekregen waar jouw vaccinatie werd beoordeeld.<\/p>",
-					"uniqueCode": "Beoordelingscode"
+					"uniqueCode": "Beoordelingscode",
+					"exampleCode": "VAC-YYYYYYYYY1-F2",
+					"verificationCode": "Verificatiecode",
+					"verificationCodeDirection": "Je krijgt een code in een sms of e-mail",
+					"sendAgain": "Verstuur opnieuw",
+					"didNotGetCode": "Ik heb geen code gekregen",
+					"emptyTestCode": "Graag je beoordelingscode invullen",
+					"unknownTestProvider": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: VAC-YYYYYYYYY1-F2",
+					"invalidTestCode": "Geen geldige beoordelingscode",
+					"tokenExpired": "Beoordelingscode is niet meer geldig",
+					"invalidVerificationCode": "Geen geldige verificatiecode",
+					"emptyVerificationCode": "Verificatiecode niet ingevuld",
+					"sendCode": "Stuur code"
 			},
 			"shortStayProvideCode": {
 					"pageHeader": "Kloppen de gegevens?"
@@ -329,6 +347,12 @@
 							"positivetest": "testuitslag",
 							"positivetest,recovery": "testuitslag"
 					}
+			},
+			"short-stay": {
+				"info": {
+					"head": "Kloppen er gegevens niet?",
+					"body": "<p>Neem contact op met je testlocatie. Zij kunnen je helpen je gegevens aan te passen.</p>"
+				}
 			},
 			"vaccinationAssessment": {
 					"title": "Vaccinatie-beoordeling",

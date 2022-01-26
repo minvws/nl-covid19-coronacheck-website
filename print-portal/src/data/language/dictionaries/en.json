@@ -77,6 +77,7 @@
 					"pageHeader": "Retrieve test result",
 					"pageIntro": "Enter your retrieval code. The test location sent it to you. Or click on the link in the email you'll get from the test location.",
 					"uniqueCode": "Retrieval code",
+					"exampleCode": "BRB-YYYYYYYYY1-Z2",
 					"verificationCode": "Verification code",
 					"verificationCodeDirection": "You get a code via text or email",
 					"sendAgain": "Send again",
@@ -89,9 +90,14 @@
 					"emptyVerificationCode": "Verification code not entered",
 					"sendCode": "Send code"
 			},
+			"short-stay": {
+				"pageHeader": "Check your results",
+				"pageIntro": "<p>This test result is retrieved from the test location.<\/p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.<\/p>",
+				"createTestProofButton": "Make certificate"
+		},
 			"negativeTestOverview": {
 					"pageHeader": "Check your test result",
-					"pageIntro": "<p>This test result is retrieved from the test location.<\/p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.<\/p>",
+					"pageIntro": "<p>Is the below correct? Then you can convert your results into a visitor certificate</p>",
 					"createTestProofButton": "Make certificate",
 					"retrievedTestResult": "Retrieved test result"
 			},
@@ -223,7 +229,19 @@
 			"shortStayProvideAssessmentCode": {
 					"pageHeader": "Retrieve vaccination approval",
 					"pageIntro": "<p>Enter your approval code. You received this code from the desk that reviewed your vaccination.<\/p>",
-					"uniqueCode": "Approval code"
+					"uniqueCode": "Approval code",
+					"exampleCode": "VAC-YYYYYYYYY1-F2",
+					"verificationCode": "Verification code",
+					"verificationCodeDirection": "You get a code via text or email",
+					"sendAgain": "Send again",
+					"didNotGetCode": "I don't have a code",
+					"emptyTestCode": "Please enter your approval code",
+					"unknownTestProvider": "This code is invalid. A valid code looks like this: VAC-YYYYYYYYY1-F2.",
+					"invalidTestCode": "Invalid approval code",
+					"tokenExpired": "Approval code has expired",
+					"invalidVerificationCode": "Invalid verification code",
+					"emptyVerificationCode": "Verification code not entered",
+					"sendCode": "Send code"
 			},
 			"shortStayProvideCode": {
 					"pageHeader": "Are the details correct?"
@@ -329,6 +347,12 @@
 							"positivetest": "test result",
 							"positivetest,recovery": "test result"
 					}
+			},
+			"short-stay": {
+				"info": {
+					"head": "Are these details incorrect?",
+					"body": "<p>Please contact the test location. They can help you change your details.</p>"
+				}
 			},
 			"vaccinationAssessment": {
 					"title": "Vaccination approval",
