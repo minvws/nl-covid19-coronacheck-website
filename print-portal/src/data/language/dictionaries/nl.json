@@ -230,7 +230,18 @@
 					"pageHeader": "Vaccinatiebeoordeling ophalen",
 					"pageIntro": "<p>Vul je beoordelingscode in. Deze heb je van de balie gekregen waar jouw vaccinatie werd beoordeeld.<\/p>",
 					"uniqueCode": "Beoordelingscode",
-					"exampleCode": "VAC-YYYYYYYYY1-F2"
+					"exampleCode": "VAC-YYYYYYYYY1-F2",
+					"verificationCode": "Verificatiecode",
+					"verificationCodeDirection": "Je krijgt een code in een sms of e-mail",
+					"sendAgain": "Verstuur opnieuw",
+					"didNotGetCode": "Ik heb geen code gekregen",
+					"emptyTestCode": "Beoordelingscode niet ingevuld",
+					"unknownTestProvider": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: VAC-YYYYYYYYY1-F2",
+					"invalidTestCode": "Geen geldige beoordelingscode",
+					"tokenExpired": "Beoordelingscode is niet meer geldig",
+					"invalidVerificationCode": "Geen geldige verificatiecode",
+					"emptyVerificationCode": "Verificatiecode niet ingevuld",
+					"sendCode": "Stuur code"
 			},
 			"shortStayProvideCode": {
 					"pageHeader": "Kloppen de gegevens?"
