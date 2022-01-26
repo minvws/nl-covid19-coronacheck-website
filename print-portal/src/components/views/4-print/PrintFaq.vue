@@ -79,12 +79,21 @@ export default {
                     content
                 }
             })
+                // filter out empty translations
+                .filter((
+                    {
+                        summary,
+                        content
+                    }
+                ) => (summary !== null && content !== null))
         }
     },
     methods: {
         translate (name, prop) {
             const id = 'views.print.details.set.'
-            return this.$t(`${id}${name}.${prop}`)
+            const key = `${id}${name}.${prop}`
+            const translation = this.$t(key)
+            return translation !== key ? translation : null;
         }
     }
 }
