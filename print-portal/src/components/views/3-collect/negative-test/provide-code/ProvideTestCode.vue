@@ -25,11 +25,6 @@ export default {
             default: 'views.provideCode'
         }
     },
-    data() {
-        return {
-            exampleCode: 'BRB-YYYYYYYYY1-Z2'
-        }
-    },
     created () {
         if (!this.clearTestCode) return
         this.testCode = ''
@@ -68,7 +63,7 @@ export default {
             <label for="input-test-code">
                 {{$t(`${translation}.uniqueCode`)}}
                 <div class="label--side-note">
-                    {{$t('forInstanceAbbr')}} {{exampleCode}}
+                    {{$t('forInstanceAbbr')}} {{$t(`${translation}.exampleCode`)}}
                 </div>
             </label>
             <input
