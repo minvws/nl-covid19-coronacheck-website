@@ -81,6 +81,7 @@ export default {
                         :signed-event="latestSignedEvent"/>
                     <NegativeTest
                         v-else
+                        :footer="exclude"
                         :signed-event="latestSignedEvent"/>
                 </div>
                 <div class="section-block__footer">

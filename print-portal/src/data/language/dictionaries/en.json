@@ -335,6 +335,12 @@
 							"positivetest,recovery": "test result"
 					}
 			},
+			"short-stay": {
+				"info": {
+					"head": "Are these details incorrect?",
+					"body": "<p>Please contact the test location. They can help you change your details.</p>"
+				}
+			},
 			"vaccinationAssessment": {
 					"title": "Vaccination approval",
 					"about": {
