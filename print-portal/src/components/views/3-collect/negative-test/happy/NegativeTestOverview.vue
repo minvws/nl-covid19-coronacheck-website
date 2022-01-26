@@ -88,7 +88,9 @@ export default {
                         id="create-qr-negative-test"
                         @select="gotoPrint()"
                         :label="translate('createTestProofButton')"/>
-                    <div class="button__help-button">
+                    <div
+                        v-if="!assessmentEvent"
+                        class="button__help-button">
                         <CcModestButton
                             id="something-is-wrong"
                             @select="openModalSomethingWrong()"
