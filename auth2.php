@@ -20,9 +20,14 @@ header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 
-// Use 200 instead of 302 to support all browsers.
-http_response_code(200);
-// header("Location: ".$redirectFullUrl);
+// If code and state are empty, we cannot deal with the request.
+if(empty($code) || empty($state)) {
+    http_response_code(400);
+}
+else {
+    // Use 200 instead of 302 to support all browsers.
+    http_response_code(200);
+}
 
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
