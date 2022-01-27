@@ -26,13 +26,13 @@
     %}
       <p class="content-center__home return_link">
         <a href="{{ langSlug }}/faq-in-app#{{ page.title | slugify }}">
-          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-faq[page.lang] }} 
+          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-faq }} 
         </a>
       </p>
     {% elsif page.collection == 'questions-scanner-in-app' %}
       <p class="content-center__home return_link">
         <a href="{{ langSlug }}/faq-scanner-in-app#{{ page.title | slugify }}">
-          <span class="icon icon-chevron-left"></span>{{ site.data.translations.layout-template-faq[page.lang] }} 
+          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-faq }} 
         </a>
       </p>
     {% endif %}
