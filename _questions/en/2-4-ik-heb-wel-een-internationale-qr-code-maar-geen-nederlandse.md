@@ -7,7 +7,7 @@ redirect_from:
 featuredHome: true
 featuredHomeIndex: 3
 ---
-A vaccination certificate is valid for 270 days after the completion of full vaccination. Once you've received a new (booster)vaccination, you can add it yourself by logging in again with DigiD. A decision about the validity of booster vaccinations has not been made yet. For children up to 18 years old, a full vaccination certificate is valid indefinitely. This does not require a booster injection. More information on vaccination certificates can be found on {{ site.data.links.vaccinatiebewijs[page.lang] }}.
+A vaccination certificate is valid for 270 days after the completion of full vaccination. Once you've received a new (booster)vaccination, you can add it yourself by logging in again with DigiD. A decision about the validity of booster vaccinations has not been made yet. For children up to 18 years old, a full vaccination certificate is valid indefinitely. This does not require a booster vaccination. More information on vaccination certificates can be found on {{ site.data.links.vaccinatiebewijs[page.lang] }}.
 
 Read more about possible causes:
 
@@ -26,11 +26,11 @@ Were you vaccinated by your general practitioner (GP), at the hospital or by ano
 
 ### I tested positive before my first vaccination
 
-Were you tested positive, and did you receive your first injection after? Then you are fully vaccinated. You will receive a full vaccination certificate if your retrieved positive test result is from before your first injection.
+Were you tested positive, and did you receive your first vaccination after? Then you are fully vaccinated. You will receive a full vaccination certificate if your retrieved positive test result is from before your first vaccination.
 
-From version 2.6.0 of the CoronaCheck app onwards, you’ll have the option to retrieve a positive test result after only one injection is found while retrieving your vaccination details. At this moment, you can only retrieve your most recent positive test result.
+From version 2.6.0 of the CoronaCheck app onwards, you’ll have the option to retrieve a positive test result after only one vaccination is found while retrieving your vaccination details. At this moment, you can only retrieve your most recent positive test result.
 
-Were you tested positive more than once, with the first time happening before your first injection, but can only the result from a test that happened after be found? Please contact the healthcare provider who vaccinated you. They can help you create a full vaccination certificate.
+Were you tested positive more than once, with the first time happening before your first vaccination, but can only the result from a test that happened after be found? Please contact the healthcare provider who vaccinated you. They can help you create a full vaccination certificate.
 
 </div>
 </details>

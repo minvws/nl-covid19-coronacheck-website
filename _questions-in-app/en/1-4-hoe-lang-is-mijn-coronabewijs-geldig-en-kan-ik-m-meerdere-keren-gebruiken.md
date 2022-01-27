@@ -13,7 +13,7 @@ A Dutch recovery certificate becomes valid 11 days after the positive test, unti
 
 A Dutch vaccination certificate is valid from 14 days after the second vaccination. Vaccinations with Janssen become valid from 28 days after vaccination. A full vaccination certificate is valid for 270 days. Once you've received a new (booster)vaccination, you can add it yourself by logging in again with DigiD. A decision about the validity of booster vaccinations has not been made yet. 
 
-For children up to 18 years old, a full vaccination certificate is valid indefinitely. This does not require a booster injection.
+For children up to 18 years old, a full vaccination certificate is valid indefinitely. This does not require a booster vaccination.
 
 Do you have a paper certificate? A paper certificate is valid for a maximum of 90 days. You can print a new certificate after via [coronacheck.nl/en/print](/en/print) (as long as your vaccination or recovery is still valid).
 
