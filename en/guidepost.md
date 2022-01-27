@@ -18,10 +18,11 @@ CoronaCheck is already used by many people for creating a vaccination, recovery 
 <div markdown="1">
 CoronaCheck retrieves data about vaccinations from the systems of the RIVM, the GGD and hospitals. Other vaccination providers, such as general practitioners and other healthcare providers, have passed on your vaccination details to the RIVM. They only do so if you have given permission. Vaccination details can be retrieved in the app. [Read here how to retrieve your vaccination data](/en/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-You must be fully vaccinated to make a Dutch QR code. You are fully vaccinated from 14 days after the last vaccination. Or 28 days after you were vaccinated with Janssen. As soon as your vaccination has been properly registered, you can make a vaccination certificate. An international QR code can already be created after one vaccination.
+A full vaccination certificate is valid for 270 days. Once you have had a new (booster) vaccination you can add it yourself by logging in again with DigiD. For the booster vaccination a valid term has not been set yet.
+For children up to 18 years old, a full vaccination certificate is valid without end. This does not require a booster vaccination.
+An international QR code can be created after one vaccination. Please note: a QR code of an incomplete vaccination is not valid in all countries. Always check the travel advice on {{ site.data.links.wijsopreis[page.lang] }} to see which rules apply to your destination.
 
-**Please note:** a QR code of 1 injection is not valid in all countries. Always check the travel advice on {{ site.data.links.wijsopreis[page.lang] }} before departure. More information about vaccination certificates can be found on {{ site.data.links.vaccinatiebewijs[page.lang] }}.
-
+More information on vaccination certificates can be found on {{ site.data.links.vaccinatiebewijs[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -99,7 +100,7 @@ More information about recovery certificates can be found on {{ site.data.links.
 This can have several causes:
 
 - You have just been tested. It can take a few hours for your positive test result to be available. 
-- You have been tested (positive) more than 365 days ago. In this case you are not entitled to a recovery certificate.
+- You have been tested (positive) more than 180 days ago. In this case you are not entitled to a recovery certificate.
 
 Do none of the above situations apply, and have you been tested positive? Then contact your test provider.  If you were tested at the GGD, please contact them on {{ site.data.links.phone-ggd[page.lang] }} or go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form if you were tested at another test provider.
 
@@ -116,19 +117,17 @@ Are the details retrieved from your positive test result incorrect (your type of
 
 {% capture copy_we_kunnen_geen_herstelbewijs_maken %}
 <div markdown="1"> 
-Are details about your vaccination found, but does CoronaCheck say no certificate can be made? Your test result may be more than 365 days old. Then it is no longer possible to make a recovery certificate.
+Are details about your vaccination found, but does CoronaCheck say no certificate can be made? Your test result may be more than 180 days old. Then it is no longer possible to make a recovery certificate.
 
-Were you tested less than 365 days ago? Then there may be an error in the test data.  If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected. If you have been tested at another test provider, please go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form.
+Were you tested less than 180 days ago? Then there may be an error in the test data.  If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected. If you have been tested at another test provider, please go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form.
 
 Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. Make your appointment through {{ site.data.links.testen-voor-toegang[page.lang] }}.
-
-Did you add a paper recovery certificate with a validity of 180 days? In many cases, you can retrieve your recovery certificate, with a validity of 365 days, by logging in using DigiD. You can also request your new recovery certificate instead.
 </div>
 {% endcapture %}
 
 {% capture copy_geen_internationaal_herstelbewijs %}
 <div markdown="1"> 
-It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test and if the test was taken no less than 11 and no more than 180 days ago. For use within the Netherlands (for example for access to events), a recovery certificate is also issued based on an antigen test and is valid until 365 days after the positive test.
+It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test and if the test was taken no less than 11 and no more than 180 days ago. For use within the Netherlands (for example for access to events), a recovery certificate is also issued based on an antigen test.
 
 ### Were you tested before September 8th at a test provider other than the GGD?
 
@@ -328,7 +327,7 @@ Were you tested positive more than once, with the first time happening before yo
 </details>
 
 <details class="details" id="recovery_cantmakeproof">
-<summary><h3>The app can't create a certificate/the certificate can't be extended</h3></summary>
+<summary><h3>The app cannot create a certificate</h3></summary>
 {{ copy_we_kunnen_geen_herstelbewijs_maken }}
 </details>
 
