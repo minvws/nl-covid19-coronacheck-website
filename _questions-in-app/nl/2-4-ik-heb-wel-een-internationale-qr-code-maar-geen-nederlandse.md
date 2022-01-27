@@ -7,7 +7,7 @@ redirect_from:
 featuredHome: true
 featuredHomeIndex: 3
 ---
-In Nederland krijg je alleen een vaccinatiebewijs als je volledig bent gevaccineerd. Of als je corona hebt gehad, en daarna één keer bent gevaccineerd. Een vaccinatiebewijs is 270 dagen geldig na de afronding van volledige vaccinatie. Zodra je een nieuwe (booster)vaccinatie hebt gehad kun je deze zelf toevoegen door opnieuw in te loggen met DigiD. Je bewijs is daarna weer geldig voor onbepaalde tijd. Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Lees hier meer over wanneer je in Nederland recht hebt op een vaccinatiebewijs: {{ site.data.links.vaccinatiebewijs[page.lang] }}.
+In Nederland krijg je alleen een vaccinatiebewijs als je volledig bent gevaccineerd. Of als je corona hebt gehad, en daarna één keer bent gevaccineerd. Een vaccinatiebewijs is 270 dagen geldig na de afronding van volledige vaccinatie. Zodra je een nieuwe (booster)vaccinatie hebt gehad kun je deze zelf toevoegen door opnieuw in te loggen met DigiD. Voor de boostervaccinatie is nog geen geldigheid vastgesteld.  Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Lees hier meer over wanneer je in Nederland recht hebt op een vaccinatiebewijs: {{ site.data.links.vaccinatiebewijs[page.lang] }}.
 
 Lees hieronder meer over mogelijke oorzaken:
 
