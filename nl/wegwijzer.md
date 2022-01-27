@@ -18,9 +18,9 @@ CoronaCheck wordt ondertussen door veel mensen gebruikt om een vaccinatie, herst
 <div markdown="1">
 CoronaCheck haalt gegevens over vaccinaties op bij de systemen van het RIVM, de GGD en ziekenhuizen. Andere vaccinatiezetters, zoals huisartsen en andere zorgverleners, hebben je vaccinatiegegevens doorgegeven aan het RIVM. Dit doen zij alleen als je hier toestemming voor hebt gegeven. Vaccinatiegegevens kan je ophalen in de app. [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
-Een Nederlands vaccinatiebewijs is geldig vanaf 14 dagen na de tweede vaccinatie. Janssen-vaccinaties worden geldig vanaf 28 dagen na vaccinatie. Een volledig vaccinatiebewijs is 270 dagen geldig. Zodra je een nieuwe (booster)vaccinatie hebt gehad kun je deze zelf toevoegen door opnieuw in te loggen met DigiD. Voor de boostervaccinatie is nog geen geldigheid vastgesteld.  Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Een internationaal vaccinatiebewijs kan gemaakt worden na één vaccinatie.
+Een Nederlands vaccinatiebewijs is geldig vanaf 14 dagen na de tweede vaccinatie. Janssen-vaccinaties worden geldig vanaf 28 dagen na vaccinatie. Een volledig vaccinatiebewijs is 270 dagen geldig. Zodra je een nieuwe (booster)vaccinatie hebt gehad kun je deze zelf toevoegen door opnieuw in te loggen met DigiD. Voor de boostervaccinatie is nog geen geldigheid vastgesteld. Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. 
 
-**Let op:** of een bewijs van een onvolledige vaccinatie geldig is hangt af van de regels van het land dat je bezoekt. Check {{ site.data.links.wijsopreis[page.lang] }} te zien welke regels er gelden op jouw bestemming.
+Een internationaal vaccinatiebewijs kan gemaakt worden na één vaccinatie. **Let op:** of een bewijs van een onvolledige vaccinatie geldig is hangt af van de regels van het land dat je bezoekt. Check {{ site.data.links.wijsopreis[page.lang] }} te zien welke regels er gelden op jouw bestemming.
 
 Meer informatie over vaccinatiebewijzen vind je op {{ site.data.links.vaccinatiebewijs[page.lang] }}.
 </div>

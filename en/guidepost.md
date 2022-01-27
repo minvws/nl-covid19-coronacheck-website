@@ -19,7 +19,9 @@ CoronaCheck is already used by many people for creating a vaccination, recovery 
 CoronaCheck retrieves data about vaccinations from the systems of the RIVM, the GGD and hospitals. Other vaccination providers, such as general practitioners and other healthcare providers, have passed on your vaccination details to the RIVM. They only do so if you have given permission. Vaccination details can be retrieved in the app. [Read here how to retrieve your vaccination data](/en/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
 A full vaccination certificate is valid for 270 days. Once you have had a new (booster) vaccination you can add it yourself by logging in again with DigiD. For the booster vaccination a valid term has not been set yet.
+
 For children up to 18 years old, a full vaccination certificate is valid without end. This does not require a booster vaccination.
+
 An international QR code can be created after one vaccination. Please note: a QR code of an incomplete vaccination is not valid in all countries. Always check the travel advice on {{ site.data.links.wijsopreis[page.lang] }} to see which rules apply to your destination.
 
 More information on vaccination certificates can be found on {{ site.data.links.vaccinatiebewijs[page.lang] }}.
