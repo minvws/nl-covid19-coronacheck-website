@@ -202,7 +202,7 @@
         },
         "errorCode99552": {
             "pageHeader": "Sorry, we cannot create a certificate",
-            "pageIntro": "<p>The personal details on your vaccination approval and your negative test result do not match. As a result, we cannot create a visitor pass.<br><br>Please check which details are incorrect. Then please speak to the desk that reviewed your vaccination or contact your test location. They can help you change these details.</p>"
+            "pageIntro": "<p>The personal details on your vaccination approval and your negative test result do not match. As a result, we cannot create a visitor pass.<br><br>Please check which details are incorrect. Then go back to the desk that reviewed your vaccination or contact your test location. They can help you change these details.</p>"
         },
         "errorNoBsn": {
             "pageHeader": "No social security number found",
