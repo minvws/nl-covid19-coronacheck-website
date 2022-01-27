@@ -7,9 +7,9 @@ redirect_from:
 featuredHome: true
 featuredHomeIndex: 3
 ---
-In the Netherlands, you'll only receive a vaccination certificate if you were fully vaccinated. Or if you've had coronavirus and have been vaccinated once since. Read more here: {{ site.data.links.vaccinatiebewijs[page.lang] }}. 
+A vaccination certificate is valid for 270 days after the completion of full vaccination. Once you've received a new (booster)vaccination, you can add it yourself by logging in again with DigiD. A decision about the validity of booster vaccinations has not been made yet. For children up to 18 years old, a full vaccination certificate is valid indefinitely. This does not require a booster injection. More information on vaccination certificates can be found on {{ site.data.links.vaccinatiebewijs[page.lang] }}.
 
-Are you entitled to a Dutch vaccination certificate, but is the app not providing one? See what you can do below. 
+Read more about possible causes:
 
 <details class="details">
 <summary><h2>I've had coronavirus and received one vaccination </h2></summary>
@@ -35,14 +35,12 @@ Were you tested positive more than once, with the first time happening before yo
 </div>
 </details>
 
-
 <details class="details">
-<summary><h2>Did you contract coronavirus between your first and second vaccination?</h2></summary>
+<summary><h2>I tested positive after my first vaccination</h2></summary>
 <div markdown="1">
 If you contract coronavirus after your first vaccination, you'll need to get a second vaccination to be fully vaccinated. After that, you'll be able to create a vaccination certificate in CoronaCheck.
 </div>
 </details>
-
 
 <details class="details">
 <summary><h2>I received my two vaccinations on different locations</h2></summary>
