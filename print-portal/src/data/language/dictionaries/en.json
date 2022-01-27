@@ -390,7 +390,7 @@
             },
             "noVerificationCode": {
                 "head": "Didn’t receive a verification code?",
-                "body": "<p>TYou receive the verification code via text or email. Didn't get one? Click ‘send again’ below for a new code.<\/p>"
+                "body": "<p>You receive the verification code via text or email. Didn't get one? Click ‘send again’ below for a new code.<\/p>"
             },
             "didNotGetTestedYet": {
                 "head": "I haven’t been tested yet",
