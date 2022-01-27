@@ -13,10 +13,6 @@ collections:
   questions-scanner-in-app:
     output: true
     permalink: /:categories/:name/
-  user-instructions:
-    output: false
-  scanner-instructions:
-    output: false  
   announcements:
     output: false  
 
