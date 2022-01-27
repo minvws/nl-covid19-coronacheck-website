@@ -13,12 +13,17 @@ export const RouterNames = {
 }
 const routes = [
     {
-        path: '/kort-verblijf',
+        path: '/bezoekersbewijs',
         component: ShortStayHome,
         name: RouterNames.HOME
     },
     {
-        path: '/kort-verblijf-beoordeeling-ophalen',
+        path: '/visitor-pass',
+        component: ShortStayHome,
+        name: RouterNames.HOME
+    },
+    {
+        path: '/bezoekersbewijs-beoordeeling-ophalen',
         component: ProvideCode,
         name: RouterNames.ASSESSMENT,
         props: {
@@ -31,7 +36,7 @@ const routes = [
         }
     },
     {
-        path: '/kort-verblijf-vaccinatie-ophalen',
+        path: '/bezoekersbewijs-vaccinatie-ophalen',
         component: ProvideCode,
         name: RouterNames.CODE,
         props: {
@@ -46,12 +51,12 @@ const routes = [
         }
     },
     {
-        path: '/kort-verblijf-onbekende-code',
+        path: '/bezoekersbewijs-onbekende-code',
         component: ShortStayCodeError,
         name: RouterNames.NO_VACCINATION_ASSESSMENT_CODE
     },
     {
-        path: '/fout-kort-verblijf',
+        path: '/fout-bezoekersbewijs',
         component: ErrorCode99552,
         name: 'ErrorCode99552',
         props: {
