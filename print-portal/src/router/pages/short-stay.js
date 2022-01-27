@@ -1,5 +1,6 @@
 import ShortStayHome from '@/components/views/5-short-stay/ShortStayHome'
 import ShortStayCodeError from '@/components/views/5-short-stay/ShortStayCodeError'
+import ErrorCode99552 from '@/components/views/error-pages/ErrorCode99552';
 import ProvideCode from '@/components/views/3-collect/negative-test/provide-code/ProvideCode'
 import { FilterTypes } from '@/types/filter-types'
 import { RegionTypes } from '@/types/region-types'
@@ -48,6 +49,18 @@ const routes = [
         path: '/kort-verblijf-onbekende-code',
         component: ShortStayCodeError,
         name: RouterNames.NO_VACCINATION_ASSESSMENT_CODE
+    },
+    {
+        path: '/fout-kort-verblijf',
+        component: ErrorCode99552,
+        name: 'ErrorCode99552',
+        props: {
+            exclude: RegionTypes.SHORT_STAY,
+            filter: FilterTypes.NEGATIVE_TEST
+        },
+        meta: {
+            pageHeader: 'error'
+        }
     }
 ]
 
