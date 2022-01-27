@@ -25,18 +25,23 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
         messageInternetConnection(callback);
         return;
     }
+
+    const errorCodes = getErrorCode(error, errorCodeInformation);
+
     if (error.code === 'ECONNABORTED') {
         errorCodeInformation.clientSideCode = getClientSideErrorCode(error.code)
-        router.push({ name: 'ErrorTimeout', query: { error: getErrorCode(error, errorCodeInformation) } });
+        router.push({ name: 'ErrorTimeout', query: { error: errorCodes } });
         return;
     }
-    if (error && error.response && error.response.status && error.response.status === 429) {
-        router.push({ name: 'ServerBusy', query: { error: getErrorCode(error, errorCodeInformation) } });
+    if (error?.response?.status === 429) {
+        router.push({ name: 'ServerBusy', query: { error: errorCodes } });
     } else {
-        if (isDigiDFlowAndStepError(errorCodeInformation)) {
-            router.push({ name: 'ErrorDigiD', query: { error: getErrorCode(error, errorCodeInformation) } });
+        if (error?.response?.data?.code === 99552) {
+            router.replace({ name: 'ErrorCode99552', query: { errors: errorCodes } });
+        } else if (isDigiDFlowAndStepError(errorCodeInformation)) {
+            router.push({ name: 'ErrorDigiD', query: { error: errorCodes } });
         } else {
-            router.push({ name: 'ErrorGeneral', query: { errors: getErrorCode(error, errorCodeInformation) } });
+            router.push({ name: 'ErrorGeneral', query: { errors: errorCodes } });
         }
     }
 }
