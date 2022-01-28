@@ -7,9 +7,9 @@ title: ''
 # Choose a style: error or info
 style: info
 ---
-Het kabinet heeft het voornemen om vanaf  1 februari een aantal wijzigingen door te voeren voor het coronatoegangsbewijs (CTB):
+Op vrijdagochtend 28 januari was het voor sommige gebruikers niet mogelijk om hun Coronatoegangsbewijs te gebruiken. Dit was het geval bij:
 
-* Het vaccinatiebewijs is 270 dagen geldig, na de afronding van volledige vaccinatie. Voor de boostervaccinatie is nog geen geldigheid vastgesteld;
-* Het herstelbewijs is tot 180 dagen geldig na de positieve test;
+- Personen die na een doorgemaakte Corona-infectie, 1 vaccinatie en een boosterprik hebben gekregen
+- Personen die een Janssen vaccinatie en een boosterprik hebben gekregen.
 
-Hiermee worden de regels voor het coronatoegangsbewijs (CTB) in Nederland en het Internationale coronabewijs (EU DCC) om mee te reizen zoveel mogelijk gelijk getrokken.
+Voor deze gebruikers werd ten onrechte een wachttijd aan het bewijs meegegeven. Dit probleem is rond 13.00 verholpen. Wanneer je opnieuw je gegevens via DigiD ophaalt en je bewijs opnieuw aanmaakt werkt alles weer naar behoren.
