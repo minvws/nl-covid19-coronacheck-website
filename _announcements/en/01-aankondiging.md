@@ -7,9 +7,9 @@ title: ''
 # Choose a style: error or info
 style: info
 ---
-The Cabinet intends to make several changes to the coronavirus entry pass as of 1 February:
- 
-- The vaccination certificate is valid for 270 days after complete vaccination. No validity has yet been established for booster vaccination;
-- The recovery certificate is valid for up to 180 days after the positive test;
- 
-As a result the rules for the coronavirus entry pass in the Netherlands and the International coronavirus pass (EU DCC) used to travel, are equalized as much as possible.
+On Friday morning, January 28, some people were not able to use their Corona certificate. This was the case with:
+
+- People who had a Corona infection before their first vaccination, and a booster shot
+- People who have received a Janssen vaccination and a booster shot
+
+For these people, a waiting period was wrongly assigned to the certificate. This issue was resolved around 1pm. When you retrieve your data via DigiD and create your certificate again, everything works properly.
