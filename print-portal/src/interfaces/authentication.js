@@ -32,7 +32,8 @@ const getClientSettings = (redirect_uri) => {
             nonce: getNonce(32)
         },
         filterProtocolClaims: true,
-        loadUserInfo: false
+        loadUserInfo: false,
+        clockSkew: 24 * 60 * 60
     };
 }
 

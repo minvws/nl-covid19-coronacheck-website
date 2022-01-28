@@ -4,6 +4,8 @@ import PageIntro from '@/components/elements/PageIntro';
 import PreferMobile from '@/components/elements/PreferMobile';
 import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
+import UserConsent from '@/components/views/1-home/UserConsent';
+import ErrorLabel from '@/components/elements/ErrorLabel';
 import luhnModN from '@/tools/luhn-mod-n';
 import FaqMobileLink from '@/components/elements/FaqMobileLink';
 import { cmsDecode } from '@/tools/cms'
@@ -11,10 +13,55 @@ import { hasInternetConnection, messageInternetConnection, getErrorCode } from '
 import { ClientCode } from '@/data/constants/error-codes'
 import { StepTypes } from '@/types/step-types'
 import { FlowTypes } from '@/types/flow-types'
+import { RegionTypes } from '@/types/region-types'
 
 export default {
     name: 'ProvideCode',
-    components: { Page, PageIntro, FaqMobileLink, ProvideVerificationCode, ProvideTestCode, PreferMobile },
+    components: { Page, PageIntro, FaqMobileLink, ProvideVerificationCode, ProvideTestCode, PreferMobile, UserConsent, ErrorLabel },
+    props: {
+        showFAQ: {
+            type: Boolean,
+            required: false,
+            default: true
+        },
+        translation: {
+            type: String,
+            required: false,
+            default: 'views.provideCode'
+        },
+        filter: {
+            type: String,
+            required: false,
+            default: undefined
+        },
+        clearTestCode: {
+            type: Boolean,
+            required: false,
+            default: false
+        },
+        historyBack: {
+            type: Boolean,
+            required: false,
+            default: false
+        },
+        exclude: {
+            type: String,
+            required: false
+        },
+        needsConsent: {
+            type: Boolean,
+            required: false,
+            default: false
+        },
+        redirect: {
+            type: Object,
+            required: false
+        },
+        clearSignedEvents: {
+            type: Boolean,
+            required: false
+        }
+    },
     data () {
         return {
             testCodeStatus: {
@@ -23,10 +70,23 @@ export default {
             verificationCodeStatus: {
                 error: ''
             },
-            timer: null
+            timer: null,
+            clickedNext: false
+        }
+    },
+    mounted () {
+        if (this.clearSignedEvents) {
+            this.$store.dispatch('signedEvents/clearAll')
+        }
+        if (this.exclude === RegionTypes.SHORT_STAY) {
+            const assessment = this.$store.getters['signedEvents/getProofEvents'](this.redirect.filter).length > 0
+            if (!assessment) this.$router.replace({ name: this.redirect.name })
         }
     },
     computed: {
+        consent() {
+            return this.$store.state.userConsent;
+        },
         testCode() {
             return this.$store.state.testCode;
         },
@@ -100,19 +160,27 @@ export default {
         }
     },
     methods: {
+        setUserConsent(value) {
+            this.$store.commit('setUserConsent', value);
+        },
         submitTestCode() {
+            this.clickedNext = true;
+            if (this.needsConsent && !this.consent) {
+                return
+            }
+
             if (this.testCode.length > 0) {
                 if (this.checkIfHasTestProvider) {
                     if (this.isTestCodeValid) {
                         this.getSignedResult({ includeVerificationCode: false });
                     } else {
-                        this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                        this.testCodeStatus.error = this.translate('invalidTestCode');
                     }
                 } else {
-                    this.testCodeStatus.error = this.$t('views.provideCode.unknownTestProvider');
+                    this.testCodeStatus.error = this.translate('unknownTestProvider');
                 }
             } else {
-                this.testCodeStatus.error = this.$t('views.provideCode.emptyTestCode');
+                this.testCodeStatus.error = this.translate('emptyTestCode');
             }
         },
         submitVerificationCode(options) {
@@ -120,17 +188,17 @@ export default {
                 if (this.isVerificationCodeValid) {
                     this.getSignedResult({ includeVerificationCode: true });
                 } else {
-                    this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
+                    this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
                 }
             } else {
-                this.verificationCodeStatus.error = this.$t('views.provideCode.emptyVerificationCode');
+                this.verificationCodeStatus.error = this.translate('emptyVerificationCode');
             }
         },
         addNegativeTest(signedEvent) {
             this.testCodeStatus.error = '';
-            // @TODO: add or replace events?
             this.$store.dispatch('signedEvents/createAll', { events: [signedEvent], filter: this.filter });
-            this.$router.push({ name: 'NegativeTestOverview', params: { flow: '2.0' } });
+            const type = this.historyBack ? 'replace' : 'push'
+            this.$router[type]({ name: 'NegativeTestOverview', params: { flow: '2.0', filter: this.filter, exclude: this.exclude } });
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {
@@ -201,13 +269,13 @@ export default {
                         });
                         switch (errorCause) {
                         case 'invalid_token':
-                            this.testCodeStatus.error = this.$t('views.provideCode.invalidTestCode');
+                            this.testCodeStatus.error = this.translate('invalidTestCode');
                             break;
                         case 'verification_required':
                             this.$store.commit('setVerificationNeeded', true);
                             this.testCodeStatus.error = '';
                             if (options.includeVerificationCode || errorCause === 'invalid_token') {
-                                this.verificationCodeStatus.error = this.$t('views.provideCode.invalidVerificationCode');
+                                this.verificationCodeStatus.error = this.translate('invalidVerificationCode');
                             }
                             break;
                         case '429':
@@ -248,12 +316,19 @@ export default {
             }
         },
         back() {
+            if (this.historyBack) {
+                this.$router.go(-1)
+                return
+            }
             const ggdEnabled = this.$store.state.holderConfig.ggdEnabled
             if (ggdEnabled) {
                 this.$router.push({ name: 'ChoiceTestLocation' });
             } else {
                 this.$router.push({ name: 'ChoiceProof' });
             }
+        },
+        translate (id) {
+            return this.$t(`${this.translation}.${id}`)
         }
     }
 }
@@ -263,26 +338,39 @@ export default {
     <Page @back="back">
         <div class="section">
             <PageIntro
-                :head="$t('views.provideCode.pageHeader')"
-                :intro="$t('views.provideCode.pageIntro')"/>
+                :head="translate('pageHeader')"
+                :intro="translate('pageIntro')"/>
             <div class="section-block">
                 <form
                     v-on:submit.prevent
                     autocomplete="off">
                     <ProvideTestCode
                         @submit="submitTestCode"
+                        :translation="translation"
                         :test-code-status="testCodeStatus"
-                        :verification-needed="verificationNeeded"/>
+                        :clear-test-code="clearTestCode"
+                        :verification-needed="verificationNeeded">
+                        <UserConsent
+                            v-if="needsConsent"
+                            @update="setUserConsent"
+                            :consent="consent"
+                            :label="$t('views.home.userConsentText')"
+                        />
+                        <ErrorLabel
+                            v-if="clickedNext && !consent"
+                            :label="$t('views.home.noConsentError')"/>
+                    </ProvideTestCode>
                     <ProvideVerificationCode
                         v-if="verificationNeeded"
                         @submit-test-code="submitTestCode"
                         @submit-verification-code="submitVerificationCode"
-                        :verification-code-status="verificationCodeStatus"/>
+                        :verification-code-status="verificationCodeStatus" />
                 </form>
             </div>
         </div>
-        <PreferMobile/>
-
-        <FaqMobileLink/>
+        <template v-if="showFAQ">
+            <PreferMobile/>
+            <FaqMobileLink/>
+        </template>
     </Page>
 </template>

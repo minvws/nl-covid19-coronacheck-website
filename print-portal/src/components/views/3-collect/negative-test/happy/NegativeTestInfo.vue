@@ -11,6 +11,10 @@ export default {
         signedEvent: {
             type: SignedEvent,
             required: true
+        },
+        footer: {
+            type: String,
+            required: false
         }
     },
     computed: {
@@ -99,7 +103,7 @@ export default {
                                 {{testLocation}}
                             </dd>
                         </div>
-                        <div class="dl__row">
+                        <div class="dl__row" v-if="testCountry">
                             <dt>
                                 {{$t('components.test.info.testCountry')}}:
                             </dt>
@@ -119,7 +123,19 @@ export default {
                         </div>
                     </div>
                 </dl>
+                <template v-if="footer">
+                    <p class="title" v-html="$t(`components.${footer}.info.head`)" />
+                    <p v-html="$t(`components.${footer}.info.body`)" />
+                </template>
             </template>
         </SlotModal>
     </portal>
 </template>
+
+<style lang="scss" scoped>
+.title {
+    font-weight: bold;
+    padding-top: 2em;
+    margin-bottom: 0;
+}
+</style>

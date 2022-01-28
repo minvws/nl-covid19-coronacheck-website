@@ -20,7 +20,7 @@
     "axios": "0.21.1",
     "core-js": "^3.6.5",
     "date-fns": "^2.20.1",
-    "dcc-pdf-tools": "https://github.com:91divoc-ln/dcc-pdf-tools.git#v3.0.1",
+    "dcc-pdf-tools": "git://github.com:91divoc-ln/dcc-pdf-tools.git#v3.1.0",
     "detect-browser": "^5.2.0",
     "lodash.isequal": "^4.5.0",
     "lodash.uniqwith": "^4.5.0",

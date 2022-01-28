@@ -28,6 +28,9 @@ const state = {
 };
 
 const getters = {
+    visitorPassEnabled: ({ holderConfig }) => {
+        return holderConfig?.visitorPassEnabled === true
+    },
     getEuBrand: (state) => (euBrandCode) => {
         return state.holderConfig.euBrands.find(euBrand => euBrand.code === euBrandCode)
     },
