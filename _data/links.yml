@@ -77,7 +77,7 @@ mijnrivm:
 
 vaccinatiebewijs:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/vaccinatiebewijs/" rel="noopener noreferrer" target="_blank">Vaccinatiebewijs regelen als coronabewijs</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/" rel="noopener noreferrer" target="_blank">Using proof of vaccination to generate a COVID Certificates</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/" rel="noopener noreferrer" target="_blank">Using proof of vaccination to generate a COVID Certificate</a>'
 
 buitenlandvaccinatie:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/vaccinatiebewijs/gevaccineerd-in-het-buitenland" rel="noopener noreferrer" target="_blank">Vaccinatiebewijs na vaccinatie in het buitenland</a>'
