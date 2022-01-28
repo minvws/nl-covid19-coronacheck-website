@@ -12,4 +12,4 @@ On Friday morning, January 28, some people were not able to use their Corona cer
 - People who had a Corona infection before their first vaccination, and a booster shot
 - People who have received a Janssen vaccination and a booster shot
 
-For these people, a waiting period was wrongly assigned to the certificate. This issue was resolved around 1pm. When you retrieve your data via DigiD again and create your certificate again, everything works properly.
+For these people, a waiting period was wrongly assigned to the certificate. This issue was resolved around 1pm. When you retrieve your data via DigiD and create your certificate again, everything works properly.
