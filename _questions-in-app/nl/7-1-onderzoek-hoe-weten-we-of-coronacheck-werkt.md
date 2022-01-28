@@ -25,4 +25,4 @@ De evaluatie van CoronaCheck liep tot en met september. In juli en augustus vers
 
 Hoe controleurs bij activiteiten omgaan met het toelaten van bezoekers is onderzocht met 'mystery guests'. De verslagen lees je hier: <a href="/media/RapportCTB211101.pdf" rel="noopener noreferrer" target="_blank">Compliance Checks Coronatoegangsbewijs 1 november 2021 (PDF, 726kb)</a> en <a href="/media/RapportCTB211130.pdf" rel="noopener noreferrer" target="_blank">Compliance Checks Coronatoegangsbewijs, 29 november 2021 (PDF, 719kb)</a>.
 
-Daarnaast is er dagelijks informatie beschikbaar over het aantal downloads van CoronaCheck en [CoronaCheck Scanner](/scanner). Een samenvatting van deze data kun je bekijken op de pagina [Aantal downloads CoronaCheck-app en -Scanner](/nl/faq/1-13-actuele-downloadcijfers/).
+Daarnaast is er dagelijks informatie beschikbaar over het aantal downloads van CoronaCheck en [CoronaCheck Scanner](/nl/scanner). Een samenvatting van deze data kun je bekijken op de pagina [Aantal downloads CoronaCheck-app en -Scanner](/nl/faq/1-13-actuele-downloadcijfers/).

@@ -118,3 +118,7 @@ aansluiting-apps:
 herstelbewijs-elders:
   nl: '<a href="https://vragen.coronatest.nl/herstelbewijs-elders/" rel="noopener noreferrer" target="_blank">Aanvraagformulier voor corona herstelbewijzen</a>'
   en: '<a href="https://vragen.coronatest.nl/en/herstelbewijs-elders/" rel="noopener noreferrer" target="_blank">Application form for corona recovery certificates</a>'
+
+waarnodig:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/coronatoegangsbewijs/waar-verplicht" rel="noopener noreferrer" target="_blank">Waar heb ik het coronatoegangsbewijs nodig?</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/coronavirus-entry-pass/where-do-i-need-to-show-a-coronavirus-entry-pass" rel="noopener noreferrer" target="_blank">Where do I need to show a coronavirus entry pass?</a>'
