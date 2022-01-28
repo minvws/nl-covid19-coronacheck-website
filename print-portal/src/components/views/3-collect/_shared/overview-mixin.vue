@@ -65,7 +65,7 @@ export default {
                     if (response.data) {
                         if (response.data.domestic || (response.data.european && response.data.european.length > 0)) {
                             this.$store.commit('qrs/add', response.data);
-                            this.$router.push({ name: this.pages.print });
+                            this.$router.push({ name: this.pages.print, params: this.$route.params });
                         } else {
                             this.$router.push({ name: 'ErrorProofNotPossible' });
                         }
@@ -83,7 +83,7 @@ export default {
                     }, callback);
                 })
             } else {
-                this.$router.push({ name: this.pages.print });
+                this.$router.push({ name: this.pages.print, params: this.$route.params });
             }
             this.$store.commit('snackbar/close');
         },

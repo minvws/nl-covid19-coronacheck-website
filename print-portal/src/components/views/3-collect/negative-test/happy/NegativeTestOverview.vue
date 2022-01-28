@@ -6,23 +6,55 @@ import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import NegativeTestV2 from './NegativeTestV2';
+import VaccinationAssessment from '@/components/views/5-short-stay/VaccinationAssessment';
+
 import LoadingCover from '@/components/elements/LoadingCover';
 import { FilterTypes } from '@/types/filter-types'
+import { RouterNames } from '@/router/pages/short-stay'
 
 export default {
     name: 'NegativeTestOverview',
-    components: { LoadingCover, NegativeTestV2, Page, PageIntro, NegativeTest, CcButton, CcModestButton },
+    components: { LoadingCover, NegativeTestV2, Page, PageIntro, NegativeTest, CcButton, CcModestButton, VaccinationAssessment },
     mixins: [overviewMixin],
+    props: {
+        filter: {
+            type: String,
+            required: false,
+            default: FilterTypes.NEGATIVE_TEST
+        },
+        exclude: {
+            type: String,
+            required: false
+        }
+    },
     data() {
         return {
-            filter: FilterTypes.NEGATIVE_TEST,
             pages: {
                 print: 'PrintNegativeTest'
             }
         }
     },
+    computed: {
+        isAssessment () {
+            return this.filter === FilterTypes.VACCINATION_ASSESSMENT
+        },
+        assessmentEvent () {
+            return this.$store.getters['signedEvents/getProofEvents'](FilterTypes.VACCINATION_ASSESSMENT)?.[0]
+        },
+        translation () {
+            return this.exclude || 'negativeTestOverview'
+        }
+    },
+    methods: {
+        translate (id) {
+            const key = `views.${this.translation}`
+            return this.$t(`${key}.${id}`);
+        }
+    },
     mounted() {
-        if (!this.latestSignedEvent) {
+        if (this.isAssessment) {
+            this.$router.replace({ name: RouterNames.CODE });
+        } else if (!this.latestSignedEvent) {
             this.$router.push({ name: 'TestResultNone' });
         }
     }
@@ -35,24 +67,31 @@ export default {
         class="NegativeTestOverview">
         <div class="section">
             <PageIntro
-                :head="$t('views.negativeTestOverview.pageHeader')"
-                :intro="$t('views.negativeTestOverview.pageIntro')"/>
+                :head="translate('pageHeader')"
+                :intro="translate('pageIntro')"/>
 
             <div class="section-block">
-                <div class="proof-events">
+                <div class="proof-events" v-if="!isAssessment && latestSignedEvent">
+                    <VaccinationAssessment
+                        v-if="assessmentEvent"
+                        :signed-event="assessmentEvent"
+                    />
                     <NegativeTestV2
                         v-if="latestSignedEvent.event.negativetest.protocolVersion === '2.0'"
                         :signed-event="latestSignedEvent"/>
                     <NegativeTest
                         v-else
+                        :footer="exclude"
                         :signed-event="latestSignedEvent"/>
                 </div>
                 <div class="section-block__footer">
                     <CcButton
                         id="create-qr-negative-test"
                         @select="gotoPrint()"
-                        :label="$t('views.negativeTestOverview.createTestProofButton')"/>
-                    <div class="button__help-button">
+                        :label="translate('createTestProofButton')"/>
+                    <div
+                        v-if="!assessmentEvent"
+                        class="button__help-button">
                         <CcModestButton
                             id="something-is-wrong"
                             @select="openModalSomethingWrong()"
