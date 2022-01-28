@@ -7,7 +7,7 @@ redirect_from:
     - /nl/faq/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
     - /nl/faq/1-5-hoe-maak-ik-een-bewijs-van-een-vaccinatie-herstel-of-testuitslag
 ---
-Om een Nederlands vaccinatiebewijs te maken moet je volledig gevaccineerd zijn. Een vaccinatiebewijs is 270 dagen geldig na de afronding van de volledige vaccinatie. Na een boostervaccinatie is het bewijs geldig voor onbepaalde tijd. Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Een internationaal vaccinatiebewijs krijg je al na één vaccinatie. 
+Om een Nederlands vaccinatiebewijs te maken moet je volledig gevaccineerd zijn. Een vaccinatiebewijs is 270 dagen geldig na de afronding van de volledige vaccinatie. Voor de boostervaccinatie is nog geen geldigheid vastgesteld. Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Een internationaal vaccinatiebewijs krijg je al na één vaccinatie. 
 
 **Let op:** of een bewijs van een onvolledige vaccinatie geldig is hangt af van de regels van het land dat je bezoekt. Check {{ site.data.links.wijsopreis[page.lang] }} om te zien welke regels er gelden op jouw bestemming.
 
