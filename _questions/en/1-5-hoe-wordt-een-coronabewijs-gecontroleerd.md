@@ -8,4 +8,4 @@ redirect_from:
 ---
 Before you enter a location or activity in the Netherlands, an inspector uses the [CoronaCheck Scanner](/en/scanner) to check the validity of your certificate. They do so by scanning the QR code at the entrance.
 
-The travel organisation / tour operator will check the coronavirus pass at the border.
+The travel organisation, tour operator or country you're visiting will check the coronavirus pass at the border.
