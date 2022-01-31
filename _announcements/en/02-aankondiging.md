@@ -7,7 +7,7 @@ title: ''
 # Choose a style: error or info
 style: info
 ---
-The Cabinet intends to make several changes to the coronavirus entry pass as of 1 February:
+The Cabinet intends to make several changes to the coronavirus entry pass as of 4 February:
  
 - The vaccination certificate is valid for 270 days after complete vaccination. No validity has yet been established for booster vaccination;
 - The recovery certificate is valid for up to 180 days after the positive test;
