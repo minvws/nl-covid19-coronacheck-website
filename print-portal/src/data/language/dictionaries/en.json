@@ -144,10 +144,6 @@
             "details": {
                 "header": "More information about your certificate",
                 "set": {
-                    "validPeriod": {
-                        "summary": "How long is my paper certificate valid for?",
-                        "content": "<p>This paper certificate is valid for 1 year. After that, you can create a new paper certificate of your vaccination.<\/p>"
-                    },
                     "validLocation": {
                         "summary": "Where can I use my international certificate?",
                         "content": "<p>The validity of corona certificates differs per country. Before leaving, please check which certificate you need for your destination at <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.netherlandsworldwide.nl<\/a>.<\/p>"
