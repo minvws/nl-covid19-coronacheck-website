@@ -144,10 +144,6 @@
           "details": {
               "header": "Meer informatie over jouw bewijs",
               "set": {
-                  "validPeriod": {
-                      "summary": "Hoe lang is mijn papieren bewijs geldig?",
-                      "content": "<p>Dit papieren bewijs is 1 jaar geldig. Daarna kan je een nieuw papieren bewijs maken van je vaccinatie.<\/p>"
-                  },
                   "validLocation": {
                       "summary": "Waar is mijn internationale bewijs geldig?",
                       "content": "<p>De geldigheid van coronabewijzen verschilt per land. Controleer daarom voor vertrek welk bewijs je nodig hebt op jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">www.wijsopreis.nl<\/a>.<\/p>"

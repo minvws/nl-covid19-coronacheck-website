@@ -50,9 +50,6 @@ export default {
             if (this.regionType === RegionTypes.EUROPEAN || this.regionType === RegionTypes.BOTH) {
                 details.push('validLocation');
             }
-            if (this.type === FilterTypes.VACCINATION || this.type === FilterTypes.RECOVERY) {
-                details.push('validPeriod');
-            }
             return details;
         },
         action () {
