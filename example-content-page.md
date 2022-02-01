@@ -1,8 +1,7 @@
 ---
 layout: content
-lang: en
 showBreadCrumbs: true
-permalink: /en/example-content-page
+published: false
 ---
 
 # H1 Paginatitel over drie regels zodat er veel tekst in past
