@@ -1,0 +1,259 @@
+head-app-name: CoronaCheck
+
+scanner-app-name: CoronaCheck Scanner
+  
+header-skip-to-content: Ga direct naar inhoud
+    
+header-title: Krijg toegang met de CoronaCheck-app
+
+header-subtitle: Met de app bewijs je dat je gevaccineerd of negatief getest bent. Of dat je eerder corona hebt gehad. Je kunt CoronaCheck gebruiken voor toegang tot bepaalde plekken. Of om naar andere landen te reizen. 
+
+scanner-header-title: Geef toegang met CoronaCheck Scanner
+
+scanner-header-subtitle: Met CoronaCheck Scanner controleer je de geldigheid van het coronabewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten. Wil je CoronaCheck gebruiken voor je locatie of activiteit, lees dan meer op de pagina <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/ondernemers" target="_blank" rel="noopener noreferrer">Ondernemers, organisatoren en het coronatoegangsbewijs</a>.
+    
+coronacheck-scanner-linktext: Scanner
+
+coronacheck-scanner-backlink: Terug naar CoronaCheck Scanner
+
+header-language-picker-label: Taal
+    
+header-language-picker-switch-lang: Wissel van taal
+    
+header-language-picker-current-lang: huidige taal
+  
+govlogo: Logo Rijksoverheid, homepage
+    
+minvws: "Ministerie van Volksgezondheid,<br>Welzijn en Sport"
+    
+watch: Bekijk de film
+    
+readmore: Lees meer
+  
+readmore-about_screen-reader: over
+
+wegwijzerlink: Het lukt niet om een bewijs te maken in CoronaCheck, wat kan ik doen?
+
+wegwijzerlinktext: De Wegwijzer
+
+youarehere: Je bent hier
+
+faq: Meestgestelde vragen
+
+faq-coronacheck: Meestgestelde vragen over CoronaCheck
+
+faq-scanner: Meestgestelde vragen
+
+scanner-quicklinks: Snel aan de slag met CoronaCheck Scanner
+
+faq-scanner-category-one: Evenement organiseren
+
+faq-scanner-category-two: Algemeen
+
+faq-scanner-category-three: Problemen
+
+faq-scanner-category-four: Privacy
+
+faq-category-one: Algemeen
+
+faq-category-two: Coronabewijs maken
+
+faq-category-three: Internationaal reizen met CoronaCheck
+
+faq-category-four: Problemen
+
+faq-category-five: Bewijs op papier
+
+faq-category-six: Achtergrond
+
+faq-category-seven: Overig
+
+faq-category-eight: Herstelbewijs    
+
+layout-template-home: Home
+  
+layout-template-faq: Terug naar meestgestelde vragen
+  
+layout-faq-btn: Bekijk alle vragen
+  
+coronacheck-lead-title: Download de CoronaCheck-app
+  
+scanner-lead-title: Download de CoronaCheck Scanner-app
+  
+footer-attribution: 'Mede mogelijk gemaakt door:'
+
+footer-contact-title: Heb je vragen over CoronaCheck?<br /> Lees dan de <a href="/nl/faq">meestgestelde vragen</a>.
+
+footer-contact-subtitle: Staat jouw vraag er niet tussen? <br />Neem dan contact op met de helpdesk.
+
+footer-contact-title-scanner: Heb je vragen over CoronaCheck Scanner? Lees dan de <a href="/nl/faq-scanner">meestgestelde vragen</a>.
+
+footer-phone: Bel de helpdesk
+
+footer-phone-action: '<a href="tel:08001421">0800-1421</a> (gratis). Of als je vanuit het buitenland belt: <a href="tel:+31707503720">+31 70 750 37 20</a>'
+  
+footer-phone-opening-hours: "Bereikbaar van maandag t/m zondag 08.00 – 20.00 uur"
+  
+footer-phone-mail: "Of stuur een e-mail naar:"
+    
+footer-colophon: Colofon
+
+footer-attribution-logo: 'Logo Europese Commissie'
+        
+footer-logos-info_md: CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community tijdens de ontwikkeling meegekeken en getest.
+    
+footer-more-info-title: Meer informatie?
+  
+footer-more-info: Kijk op rijksoverheid.nl
+  
+footer-status: Status
+
+footer-wegwijzer: Wegwijzer
+
+footer-misc-title: Over CoronaCheck
+
+footer-misc-title-scanner: Over CoronaCheck Scanner
+
+footer-misc-privacy: Privacy
+
+footer-misc-terms-of-service: Gebruikersvoorwaarden
+
+footer-misc-disclaimer: Disclaimer
+  
+footer-misc-report-vulnerability: Kwetsbaarheid melden
+  
+footer-misc-cookies: Cookies
+  
+footer-misc-colofon: Colofon
+  
+footer-misc-pers: Pers
+    
+footer-misc-accessibility-statement: Toegankelijkheids&shy;verklaring
+
+error-pagetitle: Fout
+
+error-title: Deze pagina kan helaas niet worden gevonden
+  
+error-back-to-home-page: Ga terug naar de hoofdpagina CoronaCheck.nl
+  
+error-back-to-faq: Ga naar meestgestelde vragen
+    
+accessibility-in-app-email-subject: Probleem bij het gebruik van de app
+
+information-title: 'Zo gaan we om met jouw gegevens:'
+  
+information-qrcode: In de QR-code staan minimale persoonsgegevens
+    
+information-naw: Jouw gegevens worden nergens centraal opgeslagen
+  
+information-gps: Je locatiegegevens worden niet gebruikt of bewaard
+
+scanner-information-title: Voorwaarden voor gebruik
+
+scanner-information-qrcode: In de QR-code staan minimale gegevens van de bezoeker
+    
+scanner-information-naw: Deze gegevens mag je alleen gebruiken voor controle van het bewijs
+
+scanner-information-gps: Gegevens van de bezoeker worden nergens centraal opgeslagen
+
+demo-qr-title: Probeer het scannen
+
+demo-qr-subtitle: Ervaren hoe de scanner werkt? <br />Open CoronaCheck Scanner op je telefoon en scan de QR-codes
+ 
+demo-qr-gray: Grijs scherm? Dat betekent dat er een geldige demo-code is gescand. Bij het scannen van een echte geldige QR-code zal het scherm groen worden in plaats van grijs.
+
+demo-qr-red: Een rood scherm betekent niet dat de bezoeker corona heeft, alleen dat de QR-code niet geldig is.
+
+
+# Media element (used for videos)
+# See _includes/components/mediaplayer.html
+  
+mediaelement-btn-enable-caption: Zet ondertiteling (CC) aan
+  
+mediaelement-btn-disable-caption: Zet ondertiteling (CC) uit
+  
+mediaelement-btn-enable-audio-description: Zet audiodescriptie (AD) aan
+  
+mediaelement-btn-disable-audio-description: Zet audiodescriptie (AD) uit
+  
+mediaelement-download-title: Download deze video
+  
+mediaelement-download-mp4-video: MP4-video
+  
+mediaelement-download-mp3-voiceover: MP3-audiospoor (voiceover)
+  
+mediaelement-download-subtitle: Ondertitelingsbestand
+  
+mediaelement-transcript-title: Uitgeschreven tekst van de video
+  
+user-instructions-title: Hoe werkt het?
+
+coronacheck-howto-step-1-title: 1. Laat je testen of vaccineren
+
+coronacheck-howto-step-1-content: |
+  Voor toegang vragen sommige landen of plekken een bewijs van een vaccinatie of van een uitslag van een coronatest.
+
+coronacheck-howto-step-2-title: 2. Maak een QR-code
+
+coronacheck-howto-step-2-content: |
+  De app maakt twee QR-codes: een QR-code voor Nederland en een internationale. Dat is jouw bewijs.
+
+coronacheck-howto-step-3-title: 3. Toon je QR-code
+
+coronacheck-howto-step-3-content: |
+  Laat je identiteitsbewijs en je QR-code controleren voor toegang tot een bepaalde plek. En als je op reis gaat. 
+
+print-version-title: Liever een papieren bewijs?
+ 
+print-version-content: Een bewijs op papier is handig als je geen smartphone hebt. Je kunt een bewijs maken van een vaccinatie en/of van een testuitslag. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over bewijzen op papier</span></a>.
+
+print-version-url-linktext: Maak papieren bewijs
+
+about-coronacheck-scanner-title: CoronaCheck Scanner
+
+about-coronacheck-scanner-content: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om bezoekers toe te laten?</p><p><a href="/scanner" class="btn btn--cta" target="_blank">Bekijk de Scanner-app</a></p>
+
+status-block-title: Bekijk de actuele status van CoronaCheck
+
+status-block: '<p>Bekijk op de <a href="https://status.coronacheck.nl">statuspagina</a> of er op dit moment een storing bekend is.</p>'
+
+guidepost-block: '<p>Lukt het niet om een bewijs te maken in CoronaCheck? Lees meer over wat je kan doen in <a href="/nl/wegwijzer.html">de Wegwijzer</a>.</p>'
+
+quicklinks-organising: Een evenement organiseren
+
+quicklinks-how-it-works: Zo werkt scannen
+
+quicklinks-try: Oefen het scannen
+
+scanner-instructions-title: Hoe werkt het scannen?
+
+scanner-howto-step-1-title: Houd afstand en scan de QR-code
+
+scanner-howto-step-1-content: |
+  <ul><li>Druk in de CoronaCheck Scanner-app op ‘Start scannen’.</li>
+  <li>Vraag de bezoeker naar een QR-code in de CoronaCheck-app of op papier. Een toerist kan een QR-code in een buitenlandse app of op papier laten zien.</li>
+  <li>Scan de QR-code met de camera van je telefoon.</li></ul>
+
+scanner-howto-step-2-title: Controleer het identiteitsbewijs
+
+scanner-howto-step-2-content: |
+  <p>Controleer bij bezoekers vanaf 14 jaar altijd of de gegevens op jouw scherm hetzelfde zijn als die op het identiteitsbewijs van de bezoeker. Zo weet je zeker dat de QR-code van de bezoeker is.</p>
+  <p>Let op: Soms vallen er gegevens weg. Dat gebeurt om de privacy van de bezoeker te beschermen. Je ziet dan een streepje (-) staan. Controleer in dat geval alleen de gegevens die je wel ziet.</p>
+  <p>Check? Dan mag de bezoeker naar binnen en is de controle klaar.</p>
+
+scanner-howto-step-3-title: Rood scherm
+
+scanner-howto-step-3-content: |
+    <p>Een rood scherm kan betekenen dat de QR-code niet aan Nederlandse eisen voldoet of dat de QR-code geblokkeerd is. QR-codes die breed worden verspreid via internet of sociale media worden geblokkeerd.</p>
+    <h3>Dit kun je doen:</h3>
+    <ol>
+    <li>Controleer of de tijd op de telefoon van de bezoeker en de scanner goed staat ingesteld. Zorg dat de datum en tijd op ‘automatisch instellen’ staan.</li>
+    <li>Controleer of de bezoeker een origineel bewijs laat zien. Een screenshot van een bewijs kan voor problemen zorgen.</li>
+    <li>Vraag de bezoeker om de app volledig af te sluiten en opnieuw op te starten. Scan daarna opnieuw de QR-code.</li></ol>
+    <h3>Blijft het scherm rood?</h3>
+    <p>Vraag de bezoeker contact op te nemen met de helpdesk van CoronaCheck.<br />
+    Zonder groen scherm mag de bezoeker niet toegelaten worden.</p>
+
+dashboard-noscript-title: JavaScript vereist
+
+dashboard-noscript-description: Dit dashboard gebruikt JavaScript. Schakel a.u.b. JavaScript in en probeer het opnieuw, of probeer het in een andere browser.

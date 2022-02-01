@@ -1,26 +1,60 @@
-{% assign scanner-instructions = site.scanner-instructions | where:"lang", page.lang | where:"show", true | sort: "index" %}
-
 <section class="scanner-instructions">
-    <h1 class="scanner-instructions__pagetitle">{{ site.data.translations.scanner-instructions-title[page.lang] }}</h1>
+    <h1 class="scanner-instructions__pagetitle">{{ site.data[page.lang].translations.scanner-instructions-title }}</h1>
 
-    {% for step in scanner-instructions %}
-        <article class="scanner-instructions__step" id="step-{{ step.index }}">
-            <div class="scanner-instructions__column-image">
-            <img
-                src="{{ site.baseurl }}/img/scanner-instructions/{{ step.graphic }}"
-                alt=""
-                loading="lazy"
-                class="scanner-instructions__image"
-            >
-            </div>
-            <div class="scanner-instructions__column-content">
-            <h2 class="scanner-instructions__title">
-                {{step.title}}
-            </h2>
-            <div class="scanner-instructions__text">
-                {{ step.content  }}
-            </div>
-            </div>
-        </article>
-    {% endfor %}
+    <article class="scanner-instructions__step" id="step-1">
+        <div class="scanner-instructions__column-image">
+        <img
+            src="{{ site.baseurl }}/img/scanner-instructions/scanner-instruction-1b.png"
+            alt=""
+            loading="lazy"
+            class="scanner-instructions__image"
+        >
+        </div>
+        <div class="scanner-instructions__column-content">
+        <h2 class="scanner-instructions__title">
+            {{ site.data[page.lang].translations.scanner-howto-step-1-title }}
+        </h2>
+        <div class="scanner-instructions__text">
+            {{ site.data[page.lang].translations.scanner-howto-step-1-content  }}
+        </div>
+        </div>
+    </article>
+
+    <article class="scanner-instructions__step" id="step-2">
+        <div class="scanner-instructions__column-image">
+        <img
+            src="{{ site.baseurl }}/img/scanner-instructions/scanner-instruction-2b.png"
+            alt=""
+            loading="lazy"
+            class="scanner-instructions__image"
+        >
+        </div>
+        <div class="scanner-instructions__column-content">
+        <h2 class="scanner-instructions__title">
+            {{ site.data[page.lang].translations.scanner-howto-step-2-title }}
+        </h2>
+        <div class="scanner-instructions__text">
+            {{ site.data[page.lang].translations.scanner-howto-step-2-content  }}
+        </div>
+        </div>
+    </article>
+
+    <article class="scanner-instructions__step" id="step-3">
+        <div class="scanner-instructions__column-image">
+        <img
+            src="{{ site.baseurl }}/img/scanner-instructions/scanner-instruction-3b.png"
+            alt=""
+            loading="lazy"
+            class="scanner-instructions__image"
+        >
+        </div>
+        <div class="scanner-instructions__column-content">
+        <h2 class="scanner-instructions__title">
+            {{ site.data[page.lang].translations.scanner-howto-step-3-title }}
+        </h2>
+        <div class="scanner-instructions__text">
+            {{ site.data[page.lang].translations.scanner-howto-step-3-content  }}
+        </div>
+        </div>
+    </article>
 </section>
