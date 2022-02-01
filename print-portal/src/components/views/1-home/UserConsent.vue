@@ -50,7 +50,7 @@ export default {
     border-radius: 12px;
     display: flex;
     align-items: center;
-    margin: $grid-x6 0 $length-s 0;
+    margin: 0 0 $length-s 0;
 
     input[type=checkbox] {
         width: 28px;

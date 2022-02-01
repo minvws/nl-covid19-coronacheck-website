@@ -138,12 +138,12 @@ export default {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-top: 64px;
+        margin-top: $grid-x8;
         @include tablet-custom() {
             flex-direction: column;
             .ProofRegion {
                 width: 100%;
-                margin-bottom: 20px;
+                margin-bottom: $grid-x2-5;
             }
         }
 
@@ -152,7 +152,7 @@ export default {
 
             .ProofRegion {
                 width: 100%;
-                margin: 0 0 16px 0;
+                margin: 0 0 $grid-x2 0;
 
                 &:last-child {
                     margin-bottom: 0;
@@ -162,7 +162,7 @@ export default {
     }
 
     .PrintFaq {
-        margin: 48px 0 64px 0;
+        margin: 0px 0 $grid-x8 0;
     }
 }
 </style>
