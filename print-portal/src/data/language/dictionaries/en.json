@@ -56,7 +56,7 @@
         },
         "vaccinationsNone": {
             "pageHeader": "No vaccination(s) available",
-            "pageIntro": "<p>Details about your vaccination are not available.<\/p><p>Have you been vaccinated recently? It might take a little while before your details are available.<\/p><p>Your general practitioner might not be affiliated with the GGD. You can find more information about what to do on the <a href=\"https:\/\/www.coronacheck.nl\/en\/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a>.<\/p>"
+            "pageIntro": "<p>There is no available vaccination data. This can have various causes. Read the <a href=\"https:\/\/www.coronacheck.nl\/en\/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a> for more information.<\/p><p>Got vaccinated recently? It can take a few hours until your details are available. Try again later.<\/p>"
         },
         "notPossibleVaccinations": {
             "pageHeader": "We can’t make a certificate",
@@ -144,13 +144,17 @@
             "details": {
                 "header": "More information about your certificate",
                 "set": {
+                    "validPeriod": {
+                        "summary": "How long is my paper certificate valid for?",
+                        "content": "<p>This paper certificate is valid for 1 year. After that, you can create a new paper certificate of your vaccination.<\/p>"
+                    },
                     "validLocation": {
                         "summary": "Where can I use my international certificate?",
                         "content": "<p>The validity of corona certificates differs per country. Before leaving, please check which certificate you need for your destination at <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.netherlandsworldwide.nl<\/a>.<\/p>"
                     },
                     "whyNoDomesticVaccination": {
                         "summary": "Why didn’t I receive a Dutch vaccination certificate?",
-                        "content": "<p>Your vaccination(s) do not entitle you to a Dutch vaccination certificate. For more information, please visit <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/covid-certificate\/proof-of-vaccination\/requirements-and-validity\" target=\"_blank\" rel=\"noopener noreferrer\">this page about the requirements and validity of the vaccination certificate<\/a>.<\/p>"
+                        "content": "<p>Your vaccination(s) unfortunately don't entitle you to a Dutch vaccination certificate. For possible reasons check <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/covid-certificate\/proof-of-vaccination\/requirements-and-validity\" target=\"_blank\" rel=\"noopener noreferrer\">this page about the requirements and validity of the vaccination certificate<\/a>.<\/p>"
                     },
                     "whyNoDutchCertificate": {
                         "summary": "Had coronavirus before your first vaccination?",
@@ -195,10 +199,6 @@
         "errorGeneral": {
             "pageHeader": "Sorry, something has gone wrong",
             "pageIntro": "<p>Try again later or view the latest outages at <a href=\"https:\/\/status.coronacheck.nl\/en\/\">https:\/\/status.coronacheck.nl\/en\/<\/a><\/p><p><strong>Error code(s)<\/strong><br>%{errors}<\/p>"
-        },
-        "errorCode99552": {
-            "pageHeader": "Sorry, we cannot create a certificate",
-            "pageIntro": "<p>The personal details on your vaccination approval and your negative test result do not match. As a result, we cannot create a visitor pass.<br><br>Please check which details are incorrect. Then go back to the desk that reviewed your vaccination or contact your test location. They can help you change these details.</p>"
         },
         "errorNoBsn": {
             "pageHeader": "No social security number found",
@@ -250,6 +250,10 @@
             "pageHeader": "Check your results",
             "pageIntro": "<p>This test result is retrieved from the test location.<\/p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.<\/p>",
             "createTestProofButton": "Make certificate"
+        },
+        "errorCode99552": {
+            "pageHeader": "Sorry, we cannot create a certificate",
+            "pageIntro": "<p>The personal details on your vaccination approval and your negative test result do not match. As a result, we cannot create a visitor pass.<br><br>Please check which details are incorrect. Then please speak to the desk that reviewed your vaccination or contact your test location. They can help you change these details.<\/p>"
         }
     },
     "components": {
@@ -386,7 +390,7 @@
             },
             "noVerificationCode": {
                 "head": "Didn’t receive a verification code?",
-                "body": "<p>You receive the verification code via text or email. Didn't get one? Click ‘send again’ below for a new code.<\/p>"
+                "body": "<p>TYou receive the verification code via text or email. Didn't get one? Click ‘send again’ below for a new code.<\/p>"
             },
             "didNotGetTestedYet": {
                 "head": "I haven’t been tested yet",
@@ -469,4 +473,4 @@
         }
     },
     "hello": "world"
-  }
+}
