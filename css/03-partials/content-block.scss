@@ -200,6 +200,29 @@
         line-height: 116%;
     }
 
+    .h2-question {
+        margin: 0;
+        font-size: inherit;
+        font-family: inherit;
+        line-height: inherit;
+
+        + p {
+            margin-top: 0;
+        }
+
+        & ~ #meer-informatie,
+        & ~ #more-information {
+            margin: 0;
+            font-size: inherit;
+            font-family: inherit;
+            line-height: inherit;
+
+            + p {
+                margin-top: 0;
+            }
+        }
+    }
+
     p {
         margin: 16px 0;
     }
