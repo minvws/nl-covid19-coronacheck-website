@@ -158,7 +158,7 @@
                     },
                     "whyNoDutchCertificate": {
                         "summary": "Had coronavirus before your first vaccination?",
-                        "content": "<p>Retrieve your positive test result. You will also receive a Dutch certificate then.<\/p>",
+                        "content": "<p>Retrieve your positive test result. If you vaccination cycle is incomplete you will also receive a Dutch certificate then. A second vaccination will be marked as booster (2/1) on the international certificate.<\/p>",
                         "label": "Retrieve my test result"
                     },
                     "whyNoEuropeanRecovery": {

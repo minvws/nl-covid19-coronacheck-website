@@ -158,7 +158,7 @@
                   },
                   "whyNoDutchCertificate": {
                       "summary": "Corona gehad voor je eerste prik?",
-                      "content": "<p>Haal je positieve testuitslag op. Je krijgt dan ook een Nederlands bewijs.<\/p>",
+                      "content": "<p>Haal je positieve testuitslag op. Als je niet volledige gevaccineerd bent dan krijg je ook een Nederlands bewijs. Een tweede vaccinatie wordt als booster (2/1) op het internationale bewijs vermeld.<\/p>",
                       "label": "Haal mijn testuitslag op"
                   },
                   "whyNoEuropeanRecovery": {
