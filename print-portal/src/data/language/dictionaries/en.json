@@ -115,7 +115,7 @@
         },
         "recoveryNone": {
             "pageHeader": "No positive test result available",
-            "pageIntro": "<p>Have you just been tested? It may take a few hours before your result is available. Please try again later.<\/p><p>Were you tested longer ago? Please contact your test location to verify if your details were entered into the system correctly.<\/p>"
+            "pageIntro": "<p>Have you just been tested? It may take a few hours before your result is available. Please try again later.</p><p>Were you tested longer ago at the GGD? Then please contact the GGD's backoffice on <a href=\"tel:08005090\">0800-5090</a> to verify if your details were entered into the system correctly.</p><p>Were you tested longer ago at another location? Then please fill out the <a href=\"https://vragen.coronatest.nl/en/herstelbewijs-elders\" target=\"_blank\" rel=\"noopener noreferrer\">application form coronavirus recovery pass for people who weren't tested at the GGD</a>.</p>"
         },
         "recoveryInvalid": {
             "pageHeader": "Positive test result is not suitable",
@@ -158,7 +158,7 @@
                     },
                     "whyNoDutchCertificate": {
                         "summary": "Had coronavirus before your first vaccination?",
-                        "content": "<p>Retrieve your positive test result. If you vaccination cycle is incomplete you will also receive a Dutch certificate then. A second vaccination will be marked as booster (2/1) on the international certificate.<\/p>",
+                        "content": "<p>Then you're normally considered fully vaccinated with one vaccination. Retrieve your positive test result to add this to your vaccination certificate.</p>",
                         "label": "Retrieve my test result"
                     },
                     "whyNoEuropeanRecovery": {
@@ -206,7 +206,7 @@
         },
         "errorSessionExpired": {
             "pageHeader": "Your session has expired",
-            "pageIntro": "<p>You’ve waited too long. For safety reasons, you were logged out. Login again with your DigiDto retrieve your details.<\/p>"
+            "pageIntro": "<p>You’ve waited too long. For safety reasons, you were logged out. Log in again with your DigiD to retrieve your details.<\/p>"
         },
         "errorProofNotPossible": {
             "pageHeader": "We can’t make a certificate",
