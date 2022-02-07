@@ -32,10 +32,11 @@ export default {
             if (this.exclude === RegionTypes.SHORT_STAY) {
                 return ['shortStay']
             }
+
             const details = []
-            if (this.type === FilterTypes.VACCINATION) {
+            if (this.type === FilterTypes.VACCINATION && this.regionType === RegionTypes.EUROPEAN) {
+                details.push('whyNoDomesticVaccination');
                 details.push('whyNoDutchCertificate');
-                if (this.regionType === RegionTypes.EUROPEAN) details.push('whyNoDomesticVaccination');
             }
             if (this.type === FilterTypes.RECOVERY && this.regionType === RegionTypes.DOMESTIC) {
                 details.push('whyNoEuropeanRecovery');
