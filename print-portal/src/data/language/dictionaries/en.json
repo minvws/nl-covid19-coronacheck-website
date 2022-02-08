@@ -56,7 +56,7 @@
         },
         "vaccinationsNone": {
             "pageHeader": "No vaccination(s) available",
-            "pageIntro": "<p>Details about your vaccination are not available.<\/p><p>Have you been vaccinated recently? It might take a little while before your details are available.<\/p><p>Your general practitioner might not be affiliated with the GGD. You can find more information about what to do on the <a href=\"https:\/\/www.coronacheck.nl\/en\/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a>.<\/p>"
+            "pageIntro": "<p>There is no available vaccination data. This can have various causes. Read the <a href=\"https:\/\/www.coronacheck.nl\/en\/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a> for more information.<\/p><p>Got vaccinated recently? It can take a few hours until your details are available. Try again later.<\/p>"
         },
         "notPossibleVaccinations": {
             "pageHeader": "We can’t make a certificate",
@@ -115,7 +115,7 @@
         },
         "recoveryNone": {
             "pageHeader": "No positive test result available",
-            "pageIntro": "<p>Have you just been tested? It may take a few hours before your result is available. Please try again later.<\/p><p>Were you tested longer ago? Please contact your test location to verify if your details were entered into the system correctly.<\/p>"
+            "pageIntro": "<p>Have you just been tested? It may take a few hours before your result is available. Please try again later.</p><p>Were you tested longer ago at the GGD? Then please contact the GGD's backoffice on <a href=\"tel:08005090\">0800-5090</a> to verify if your details were entered into the system correctly.</p><p>Were you tested longer ago at another location? Then please fill out the <a href=\"https://vragen.coronatest.nl/en/herstelbewijs-elders\" target=\"_blank\" rel=\"noopener noreferrer\">application form coronavirus recovery pass for people who weren't tested at the GGD</a>.</p>"
         },
         "recoveryInvalid": {
             "pageHeader": "Positive test result is not suitable",
@@ -154,11 +154,11 @@
                     },
                     "whyNoDomesticVaccination": {
                         "summary": "Why didn’t I receive a Dutch vaccination certificate?",
-                        "content": "<p>Your vaccination(s) do not entitle you to a Dutch vaccination certificate. For more information, please visit <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/covid-certificate\/proof-of-vaccination\/requirements-and-validity\" target=\"_blank\" rel=\"noopener noreferrer\">this page about the requirements and validity of the vaccination certificate<\/a>.<\/p>"
+                        "content": "<p>Your vaccination(s) unfortunately don't entitle you to a Dutch vaccination certificate. For possible reasons check <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/covid-certificate\/proof-of-vaccination\/requirements-and-validity\" target=\"_blank\" rel=\"noopener noreferrer\">this page about the requirements and validity of the vaccination certificate<\/a>.<\/p>"
                     },
                     "whyNoDutchCertificate": {
                         "summary": "Had coronavirus before your first vaccination?",
-                        "content": "<p>Retrieve your positive test result. You will also receive a Dutch certificate then.<\/p>",
+                        "content": "<p>Then you're normally considered fully vaccinated with one vaccination. Retrieve your positive test result to add this to your vaccination certificate.</p>",
                         "label": "Retrieve my test result"
                     },
                     "whyNoEuropeanRecovery": {
@@ -200,17 +200,13 @@
             "pageHeader": "Sorry, something has gone wrong",
             "pageIntro": "<p>Try again later or view the latest outages at <a href=\"https:\/\/status.coronacheck.nl\/en\/\">https:\/\/status.coronacheck.nl\/en\/<\/a><\/p><p><strong>Error code(s)<\/strong><br>%{errors}<\/p>"
         },
-        "errorCode99552": {
-            "pageHeader": "Sorry, we cannot create a certificate",
-            "pageIntro": "<p>The personal details on your vaccination approval and your negative test result do not match. As a result, we cannot create a visitor pass.<br><br>Please check which details are incorrect. Then go back to the desk that reviewed your vaccination or contact your test location. They can help you change these details.</p>"
-        },
         "errorNoBsn": {
             "pageHeader": "No social security number found",
             "pageIntro": "<p>The healthcare provider who vaccinated or tested you can help you further. Contact them and let them know CoronaCheck couldn’t find a social security number.<\/p>"
         },
         "errorSessionExpired": {
             "pageHeader": "Your session has expired",
-            "pageIntro": "<p>You’ve waited too long. For safety reasons, you were logged out. Login again with your DigiDto retrieve your details.<\/p>"
+            "pageIntro": "<p>You’ve waited too long. For safety reasons, you were logged out. Log in again with your DigiD to retrieve your details.<\/p>"
         },
         "errorProofNotPossible": {
             "pageHeader": "We can’t make a certificate",
@@ -254,6 +250,10 @@
             "pageHeader": "Check your results",
             "pageIntro": "<p>This test result is retrieved from the test location.<\/p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.<\/p>",
             "createTestProofButton": "Make certificate"
+        },
+        "errorCode99552": {
+            "pageHeader": "Sorry, we cannot create a certificate",
+            "pageIntro": "<p>The personal details on your vaccination approval and your negative test result do not match. As a result, we cannot create a visitor pass.<br><br>Please check which details are incorrect. Then please speak to the desk that reviewed your vaccination or contact your test location. They can help you change these details.<\/p>"
         }
     },
     "components": {
@@ -390,7 +390,7 @@
             },
             "noVerificationCode": {
                 "head": "Didn’t receive a verification code?",
-                "body": "<p>You receive the verification code via text or email. Didn't get one? Click ‘send again’ below for a new code.<\/p>"
+                "body": "<p>TYou receive the verification code via text or email. Didn't get one? Click ‘send again’ below for a new code.<\/p>"
             },
             "didNotGetTestedYet": {
                 "head": "I haven’t been tested yet",
@@ -473,4 +473,4 @@
         }
     },
     "hello": "world"
-  }
+}

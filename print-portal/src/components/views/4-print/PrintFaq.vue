@@ -32,11 +32,10 @@ export default {
             if (this.exclude === RegionTypes.SHORT_STAY) {
                 return ['shortStay']
             }
-
             const details = []
-            if (this.type === FilterTypes.VACCINATION && this.regionType === RegionTypes.EUROPEAN) {
-                details.push('whyNoDomesticVaccination');
+            if (this.type === FilterTypes.VACCINATION) {
                 details.push('whyNoDutchCertificate');
+                if (this.regionType === RegionTypes.EUROPEAN) details.push('whyNoDomesticVaccination');
             }
             if (this.type === FilterTypes.RECOVERY && this.regionType === RegionTypes.DOMESTIC) {
                 details.push('whyNoEuropeanRecovery');
@@ -49,9 +48,6 @@ export default {
             }
             if (this.regionType === RegionTypes.EUROPEAN || this.regionType === RegionTypes.BOTH) {
                 details.push('validLocation');
-            }
-            if (this.type === FilterTypes.VACCINATION || this.type === FilterTypes.RECOVERY) {
-                details.push('validPeriod');
             }
             return details;
         },
