@@ -115,7 +115,7 @@
         },
         "recoveryNone": {
             "pageHeader": "Geen positieve testuitslag beschikbaar",
-            "pageIntro": "<p>Ben je net getest? Het kan een paar uur  duren voordat jouw positieve testuitslag beschikbaar is. Probeer het later nog eens.<\/p><p>Al even geleden getest? Neem dan contact op met je testlocatie om te controleren of je gegevens goed in het systeem staan.<\/p>"
+            "pageIntro": "<p>Ben je net getest? Het kan een paar uur duren voordat jouw positieve testuitslag beschikbaar is. Probeer het later nog eens.</p><p>Al even geleden getest bij de GGD? Neem dan contact op met de backoffice van de GGD op <a href=\"tel:08005090\">0800-5090</a> om te controleren of je gegevens goed in het systeem staan.<\/p><p>Al even geleden getest op een andere locatie? Vul dan het <a href=\"https://vragen.coronatest.nl/herstelbewijs-elders\" target=\"_blank\" rel=\"noopener noreferrer\">aanvraagformulier corona herstelbewijs voor mensen die niet bij de GGD getest zijn</a> in.</p>"
         },
         "recoveryInvalid": {
             "pageHeader": "Jouw positieve testuitslag is niet geschikt",
@@ -157,8 +157,8 @@
                         "content": "<p>Met jouw vaccinatie(s) heb je helaas geen recht op een Nederlands vaccinatiebewijs. Kijk voor de mogelijke redenen op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze pagina over de eisen en geldigheid van het vaccinatiebewijs<\/a>.<\/p>"
                     },
                     "whyNoDutchCertificate": {
-                        "summary": "Corona gehad voor je eerste prik?",
-                        "content": "<p>Haal je positieve testuitslag op. Je krijgt dan ook een Nederlands bewijs.<\/p>",
+                        "summary": "Corona gehad vóór je eerste vaccinatie?",
+                        "content": "<p>Dan heb je vaak maar één prik nodig om volledig gevaccineerd te zijn. Haal je positieve testuitslag op om deze aan je vaccinatiebewijs toe te voegen.</p>",
                         "label": "Haal mijn testuitslag op"
                     },
                     "whyNoEuropeanRecovery": {
