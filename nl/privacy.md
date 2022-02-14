@@ -81,7 +81,7 @@ Verwerkers van de minister:
 
 Alleen de gegevens die in de CoronaCheck-app zelf staan of in het papieren bewijs, worden bewaard. Voor het papieren bewijs bepaal je uiteraard zelf hoe lang je die gegevens bewaart. Dat is ook zo bij de CoronaCheck-app, als je de app verwijdert, worden ook de gegevens verwijderd. Anders worden de gegevens bewaard volgens onderstaande termijnen:
 
-- Negatieve testuitslagen: 96 uur na datum en tijd afname test;
+- Negatieve testuitslagen: 14 dagen na datum en tijd afname test;
 - Positieve testuitslagen: één jaar (voor herstelbewijzen, maar als die ook in een vaccinatiebewijs verwerkt is, tot drie jaar na je laatste vaccinatie);
 - Vaccinatiegegevens: drie jaar na vaccinatiedatum (bedenk dat in sommige gevallen een positieve testuitslag onderdeel van je vaccinatiegegevens kan zijn);
 - Herstelgegevens: 180 dagen na datum en tijd afname test;
@@ -128,7 +128,7 @@ De minister neemt de bescherming van uw persoonsgegevens serieus en heeft bij de
 
 ## 12. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 28 december 2021.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 10 februari 2022.
 
 ## Overzicht van verwerkte persoonsgegevens
 
