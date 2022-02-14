@@ -209,6 +209,33 @@ No smartphone? Rather have a paper coronavirus pass or do you want to make a cor
 </div>
 {% endcapture %}
 
+{% capture copy_bezoekersbewijs %}
+<div markdown="1">
+Were you vaccinated outside of the European Union and are you visiting the Netherlands? Then you can use your vaccination approval and negative test result to create a visitor pass. You can use your visitor pass to get access to places and activities in the Netherlands that require a coronavirus pass.
+
+For more information, please visit {{ site.data.links.entry-pass[page.lang] }}.
+</div>
+{% endcapture %}
+
+{% capture copy_bezoek_ophalen_vaccinatiebeoordeling %}
+<div markdown="1">
+Do you get an error code when filling in the vaccination approval code? Or are you not receiving a verification code? Please go back to the desk that reviewed your vaccination.
+</div>
+{% endcapture %}
+
+{% capture copy_bezoek_ophalen_negatieve_test %}
+<div markdown="1">
+Do you get an errorcode when filling in the retrieval code after your negative test? Or are you not receiving a verification code? Please contact the Testen voor Toegang help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+</div>
+{% endcapture %}
+
+{% capture copy_bezoek_persoonsgegevens_verschillen %}
+<div markdown="1">
+If the personal details on your vaccination approval and your negative test result do not match, CoronaCheck can not create a visitor pass. Please check which of the personal details are incorrect, and have those changed. Are the details on your vaccination review incorrect? Then go back to the desk that reviews your vaccination. Are the details on your negative test result incorrect? Then contact the Testen voor Toegang help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+</div>
+{% endcapture %}
+
+
 {% capture copy_digid %}
 <div markdown="1">
 
@@ -375,6 +402,27 @@ Were you tested positive more than once, with the first time happening before yo
 <details class="details" id="paper">
 <summary><h2>I want to make a paper coronavirus pass</h2></summary>
 {{ copy_printbewijs }}
+</details>
+
+<details class="details" id="visitor">
+<summary><h2>I want to create a visitor pass</h2></summary>
+{{ copy_bezoekersbewijs }}
+
+<details class="details" id="visitor_cantretrieve">
+<summary><h3>The vaccination approval cannot be retrieved</h3></summary>
+{{ copy_bezoek_ophalen_vaccinatiebeoordeling }}
+</details>
+
+<details class="details" id="visitor_cantretrievenegativetest">
+<summary><h3>The testresult can not be retrieved</h3></summary>
+{{ copy_bezoek_ophalen_negatieve_test }}
+</details>
+
+<details class="details" id="visitor_dataisdifferent">
+<summary><h3>The personal details on your vaccination approval and your negative test result do not match</h3></summary>
+{{ copy_bezoek_persoonsgegevens_verschillen }}
+</details>
+
 </details>
 
 <details class="details" id="digid">
