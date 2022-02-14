@@ -128,7 +128,7 @@ De minister neemt de bescherming van uw persoonsgegevens serieus en heeft bij de
 
 ## 12. Wijziging privacyverklaring
 
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 10 februari 2022.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op onze website publiceren, waarna deze privacyverklaring direct van kracht is. Laatste update: 15 februari 2022.
 
 ## Overzicht van verwerkte persoonsgegevens
 
