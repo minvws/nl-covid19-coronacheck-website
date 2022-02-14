@@ -82,7 +82,7 @@ The Minister’s processors:
 
 Only data saved in the CoronaCheck-app itself or printed on the paper certificate will be kept. Of course, for the paper certificate you decide how long to keep the data. This is also the case with the CoronaCheck-app: if you delete the app that data will also be deleted. Otherwise, the data will be stored according to the following time periods:
 
-- Negative test results: 96 hours after date and time of test administration;
+- Negative test results: 14 days after date and time of test administration;
 - Positive test results: 1 year (for a recovery certificate, but if it is part of a vaccination certificate, up until 3 years after your most recent vaccination);
 - Vaccination data: 3 years after the vaccination date (please be aware that in some cases a positive test result can be part of your vaccination data)
 - A unique serial number of your EU DCC and a code of the datasource will be saved for two years.
@@ -128,7 +128,7 @@ The Minister takes protection of your personal data seriously and has taken appr
 
 ## 12. Changing privacy statement
 
-This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: December 28, 2021.
+This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: February 10, 2022.
 
 ## Overview of processed personal data 
 

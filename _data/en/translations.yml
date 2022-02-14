@@ -82,11 +82,11 @@ scanner-lead-title: Download the CoronaCheck Scanner app
 
 footer-attribution: 'Made possible by:'
 
-footer-contact-title: Do you have questions about CoronaCheck? Read the <a href="/en/faq">frequently asked questions</a>.
+footer-contact-title: Don't see your question listed? <br />Contact our helpdesk.
 
-footer-contact-subtitle: Don't see your question listed? Contact our helpdesk.
+footer-contact-in-app-subtitle: Don't see your question listed? Check <a href="https://www.coronacheck.nl/en/faq" target="_blank">all most frequently asked questions</a> or contact the helpdesk.
 
-footer-contact-title-scanner: 'Do you have questions about CoronaCheck Scanner?<br /> Read the <a href="/en/faq-scanner">frequently asked questions</a>.'
+footer-contact-scanner-in-app-subtitle: Don't see your question listed? Check <a href="https://www.coronacheck.nl/en/faq-scanner" target="_blank">all most frequently asked questions</a> or contact the helpdesk.
 
 footer-phone: Call the helpdesk
 
