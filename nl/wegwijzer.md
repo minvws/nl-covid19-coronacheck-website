@@ -193,12 +193,38 @@ Ben je via Testen voor Toegang getest? Neem contact op met de helpdesk van Teste
 </div>
 {% endcapture %}
 
-
 {% capture copy_printbewijs %}
 <div markdown="1">
 Geen smartphone, liever een papieren coronabewijs of wil je een coronabewijs voor je kinderen maken? Of vind je het prettig om naast je CoronaCheck-app ook een papieren coronabewijs mee te nemen? Dat kan. Een papieren coronabewijs maak je op [www.coronacheck.nl/print](/print).
 </div>
 {% endcapture %}
+
+{% capture copy_bezoekersbewijs %}
+<div markdown="1">
+Ben je buiten de Europese Unie gevaccineerd en op bezoek in Nederland? Dan kun je van jouw vaccinatiebeoordeling en een negatieve testuitslag een bezoekersbewijs maken. Met je bezoekersbewijs krijg je toegang tot plekken en activiteiten in Nederland die vragen om een coronatoegangsbewijs.
+
+Kijk voor meer informatie op {{ site.data.links.entry-pass[page.lang] }}.
+</div>
+{% endcapture %}
+
+{% capture copy_bezoek_ophalen_vaccinatiebeoordeling %}
+<div markdown="1">
+Krijg je een foutcode bij het invoeren van je vaccinatie beoordelingscode of ontvang je geen verificatiecode? Ga dan terug naar de balie waar jouw vaccinatie is beoordeeld.
+</div>
+{% endcapture %}
+
+{% capture copy_bezoek_ophalen_negatieve_test %}
+<div markdown="1">
+Krijg je een foutcode bij het invoeren van je ophaalcode na je negatieve test of ontvang je geen verificatiecode? Neem dan telefonisch contact op met de helpdesk van Testen voor Toegang op {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+</div>
+{% endcapture %}
+
+{% capture copy_bezoek_persoonsgegevens_verschillen %}
+<div markdown="1">
+Als de persoonsgegevens van je vaccinatiebeoordeling en je negatieve testresultaat verschillend zijn, dan kan CoronaCheck geen bewijs maken. Controleer welke gegevens onjuist zijn en laat deze corrigeren. Kloppen de gegevens van je vaccinatiebeoordeling niet, ga dan terug naar de balie waar jouw vaccinatie is beoordeeld. Kloppen je testgegevens niet? Neem dan contact op met de helpdesk van Testen voor Toegang op {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+</div>
+{% endcapture %}
+
 
 {% capture copy_digid %}
 <div markdown="1">
@@ -365,6 +391,27 @@ Ben je vaker positief getest waarvan de eerste keer vóór je eerste prik, maar 
 <details class="details" id="paper">
 <summary><h2>Ik wil een papieren coronabewijs maken</h2></summary>
 {{ copy_printbewijs }}
+</details>
+
+<details class="details" id="visitor">
+<summary><h2>Ik wil een bezoekersbewijs maken</h2></summary>
+{{ copy_bezoekersbewijs }}
+
+<details class="details" id="visitor_cantretrieve">
+<summary><h3>Het ophalen van mijn vaccinatiebeoordeling lukt niet</h3></summary>
+{{ copy_bezoek_ophalen_vaccinatiebeoordeling }}
+</details>
+
+<details class="details" id="visitor_cantretrievenegativetest">
+<summary><h3>Het ophalen van mijn negatieve test lukt niet </h3></summary>
+{{ copy_bezoek_ophalen_negatieve_test }}
+</details>
+
+<details class="details" id="visitor_dataisdifferent">
+<summary><h3>De persoonsgegevens van je vaccinatiebeoordeling en je negatieve testuitslag zijn verschillend</h3></summary>
+{{ copy_bezoek_persoonsgegevens_verschillen }}
+</details>
+
 </details>
 
 <details class="details" id="digid">
