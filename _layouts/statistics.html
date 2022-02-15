@@ -469,7 +469,20 @@
             </div>
         </div>
     </div>
-
+    
+    {% if page.collection == 'questions' %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}/faq#{{ page.title | slugify }}">
+          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-faq }} 
+        </a>
+      </p>
+    {% elsif page.collection == 'questions-scanner' %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}/faq-scanner#{{ page.title | slugify }}">
+          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-faq }} 
+        </a>
+      </p>
+    {% endif %}
   </main> 
     {% include footer.html %} 
 </body>
