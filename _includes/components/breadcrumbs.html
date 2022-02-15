@@ -36,13 +36,13 @@
         {% if include.collection == 'questions-scanner' %} 
             <li class="breadcrumbs-item">
             <a class="breadcrumbs" href="{{langSlug}}/faq-scanner">
-            {{ site.data[page.lang].translations.faq[page.lang] | truncate: 40 }}</a>
+            {{ site.data[page.lang].translations.faq | truncate: 40 }}</a>
             <span class="icon icon-chevron-right"></span>
             </li>
         {% elsif include.collection == 'questions' %}
             <li class="breadcrumbs-item">
                 <a class="breadcrumbs" href="{{langSlug}}/faq">
-                {{ site.data[page.lang].translations.faq[page.lang] | truncate: 40 }}</a>
+                {{ site.data[page.lang].translations.faq | truncate: 40 }}</a>
                 <span class="icon icon-chevron-right"></span>
             </li>
         {% endif %}
