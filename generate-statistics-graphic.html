@@ -107,22 +107,23 @@
 
 
         CoronaCheck_downloads_plot.appendChild(
-            Plot.plot({
+            Plot.plot({                
+                marginBottom: 80,
+                marginTop: 40,
                 y: {
                     label: "↑ Aantal downloads CoronaCheck (miljoen)",  
                     grid: true,
-                    ticks: [0, 2, 4, 6, 8, 10, 12, 14, 16],
+                    ticks: [0, 2, 4, 6, 8, 10, 12, 14],
                     tickSize: 0,  
                     tickFormat: (f => `${f}m`),
-                    labelOffset: -10,
                 },
                 x: { 
-                    label: "Weeknummer →",
+                    label: "Maand →",
                     labelAnchor: 'right',  
                     labelOffset: -10,   
-                    ticks: d3.utcMonth.every(2),
                     domain: [new Date("2021-03-28"), new Date()],
-                    tickFormat: (f => f.toLocaleString("nl", { "month": "short",  "year": "numeric" }))
+                    tickRotate: -45,
+                    tickFormat: (f => f.toLocaleString("nl", { "month": "short", "year": "numeric" })),
                 },
                 marks: [
                     Plot.line(CC_downloads_plot, {
@@ -148,21 +149,22 @@
 
         CoronaCheck_downloads_plot_EN.appendChild(
             Plot.plot({
+                marginBottom: 80,
+                marginTop: 40,
                 y: {
                     label: "↑ Number of downloads CoronaCheck (million)",  
                     grid: true,
-                    ticks: [0, 2, 4, 6, 8, 10, 12, 14, 16],
+                    ticks: [0, 2, 4, 6, 8, 10, 12, 14],
                     tickSize: 0,  
                     tickFormat: (f => `${f}m`),
-                    labelOffset: -10,
                 },
                 x: { 
-                    label: "Week number →",
+                    label: "Month →",
                     labelAnchor: 'right',  
-                    labelOffset: -10,   
-                    ticks: d3.utcMonth.every(2),
-                    domain: [new Date("2021-03-28"), new Date()],
-                    tickFormat: (f => f.toLocaleString("en", { "month": "short",  "year": "numeric" }))
+                    labelOffset: -10,    
+                    domain: [new Date("2021-03-28"), new Date()], 
+                    tickRotate: -45,
+                    tickFormat: (f => f.toLocaleString("en", { "month": "short", "year": "numeric" })),
                     
                 },
                 marks: [
@@ -185,30 +187,26 @@
 
         CoronaCheckScanner_downloads_plot.appendChild(
             Plot.plot({
+                marginBottom: 80,
+                marginTop: 40,
                 y: {
                     label: "↑ Aantal downloads CoronaCheck Scanner (miljoen)", 
                     grid: true,
-                    ticks: [0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5],
+                    ticks: [0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0],
                     tickSize: 0, 
                     tickFormat: (f => `${f}m`),
-                    labelOffset: -10,
-                    insetTop: 10
+                    insetTop: 20
                 },
                 x: {
-                    label: "Weeknummer →",
+                    label: "Maand →",
                     labelAnchor: 'right',
-                    labelOffset: -10,
-                    // ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52', '02'],
-                    // domain: CC_downloads_plot.map((d) => d.weeknr),
-                    // tickSize: 0,
-
-                    ticks: d3.utcMonth.every(2),
+                    labelOffset: -10,  
                     domain: [new Date("2021-03-28"), new Date()],
-                    tickFormat: (f => f.toLocaleString("en", { "month": "short",  "year": "numeric" }))
+                    tickRotate: -45,
+                    tickFormat: (f => f.toLocaleString("nl", { "month": "short", "year": "numeric" })),
                 },
                 marks: [
-                    Plot.line(CCScanner_downloads_plot, {
-                        // x: "weeknr", 
+                    Plot.line(CCScanner_downloads_plot, { 
                         x: "date",
                         y: "downloadnr",
                         curve: "monotone-y",
@@ -227,30 +225,26 @@
 
         CoronaCheckScanner_downloads_plot_EN.appendChild(
             Plot.plot({
+                marginBottom: 80,
+                marginTop: 40,
                 y: {
                     label: "↑ Number of downloads CoronaCheck Scanner (million)", 
                     grid: true,
                     ticks: [0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0],
                     tickSize: 0, 
                     tickFormat: (f => `${f}m`),
-                    labelOffset: -10,
-                    insetTop: 10
+                    insetTop: 20
                 },
                 x: {
-                    label: "Week number →",
+                    label: "Month →",
                     labelAnchor: 'right',
                     labelOffset: -10,
-                    // ticks: ['12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50', '52', '02'],
-                    // domain: CC_downloads_plot.map((d) => d.weeknr),
-                    // tickSize: 0,
-
-                    ticks: d3.utcMonth.every(2),
+                    tickRotate: -45,
                     domain: [new Date("2021-03-28"), new Date()],
                     tickFormat: (f => f.toLocaleString("en", { "month": "short",  "year": "numeric" }))
                 },
                 marks: [
                     Plot.line(CCScanner_downloads_plot, {
-                        // x: "weeknr", 
                         x: "date",
                         y: "downloadnr",
                         curve: "monotone-y",
