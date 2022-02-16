@@ -33,17 +33,17 @@
       <div class="division">
         {{ content }}
 
-        <p>Cijfers tot en met zondag 6 februari 2022.</p>
+        <p>Cijfers tot en met zondag 13 februari 2022.</p>
 
         <div class="CoronaCheck_downloads column-2"> 
             <div>
                 <h2 class="downloads_title">Mensen die CoronaCheck hebben gedownload:</h2>
-                <p><span class="number_highlight">15,33 miljoen</span> downloads.</p>
+                <p><span class="number_highlight">15,46 miljoen</span> downloads.</p>
                 <p>De grafiek laat zien hoeveel mensen de CoronaCheck-app hebben gedownload.</p>
             </div>
             <div id="CoronaCheck_downloads_plot">
-                <img src="{{ site.baseurl }}/img/coronacheck-stats.svg" alt="Grafiek downloads CoronaCheck. In de lijngrafiek is te zien dat in week 24 een explosieve groei van downloads ontstaat. De
-                groeilijn blijft steil stijgen, met een opleving in week 36 en 37." class="graph" width="480" height="320">
+                <img src="{{ site.baseurl }}/img/coronacheck-stats.svg" alt="Grafiek downloads CoronaCheck. In de lijngrafiek is te zien dat in juni 2021 een explosieve groei van downloads ontstaat. De
+                groeilijn blijft steil stijgen, met een opleving in september." class="graph" width="480" height="320">
 
                 <details class="details">
                     <summary><h3>Brongegevens grafiek</h3></summary>
@@ -240,7 +240,11 @@
                             </tr>
                             <tr>
                                 <td>Week 5, 2022</td>
-                                <td>15.339.548</td>
+                                <td>15.339.830</td>
+                            </tr>
+                            <tr>
+                                <td>Week 6, 2022</td>
+                                <td>15.468.948</td>
                             </tr>
                         </tbody>
                     </table>
@@ -250,13 +254,13 @@
         <div class="CoronaCheckScanner_downloads column-2"> 
             <div>
                 <h2 class="downloads_title">Aantal downloads van de CoronaCheck Scanner:</h2>
-                <p><span class="number_highlight">2,93 miljoen</span> downloads.</p>
+                <p><span class="number_highlight">3,00 miljoen</span> downloads.</p>
                 <p>Met de CoronaCheck Scanner-app controleer je de geldigheid van een coronabewijs van een bezoeker. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.</p>
                 <p>De grafiek laat zien hoeveel mensen de CoronaCheck Scanner hebben gedownload.</p>
             </div>
             <div id="CoronaCheckScanner_downloads_plot">
-                <img src="{{ site.baseurl }}/img/coronacheck-scanner-stats.svg" alt="Grafiek downloads CoronaCheck Scanner. In de lijngrafiek is te zien dat in week 24 een explosieve groei van downloads ontstaat. De
-                groeilijn blijft steil stijgen, met een opleving in week 36 en 37, en opnieuw in week 44." class="graph" width="480" height="320">
+                <img src="{{ site.baseurl }}/img/coronacheck-scanner-stats.svg" alt="Grafiek downloads CoronaCheck Scanner. In de lijngrafiek is te zien dat in juni 2021 een explosieve groei van downloads ontstaat. De
+                groeilijn blijft steil stijgen, met een opleving in september, en opnieuw in november." class="graph" width="480" height="320">
 
                 <details class="details">
                     <summary><h3>Brongegevens grafiek</h3></summary>
@@ -455,13 +459,30 @@
                                 <td>Week 5, 2022</td>
                                 <td>2.937.211</td>
                             </tr>
+                            <tr>
+                                <td>Week 6, 2022</td>
+                                <td>3.002.042</td>
+                            </tr>
                         </tbody>
                     </table>
                 </details>
             </div>
         </div>
     </div>
-
+    
+    {% if page.collection == 'questions' %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}/faq#{{ page.title | slugify }}">
+          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-faq }} 
+        </a>
+      </p>
+    {% elsif page.collection == 'questions-scanner' %}
+      <p class="content-center__home return_link">
+        <a href="{{ langSlug }}/faq-scanner#{{ page.title | slugify }}">
+          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-faq }} 
+        </a>
+      </p>
+    {% endif %}
   </main> 
     {% include footer.html %} 
 </body>
