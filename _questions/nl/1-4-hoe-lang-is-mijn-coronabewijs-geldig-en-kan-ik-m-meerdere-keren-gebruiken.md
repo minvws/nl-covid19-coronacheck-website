@@ -1,6 +1,6 @@
 ---
 set: 1
-index: 4
+index: 5
 title: Hoe lang is mijn coronabewijs geldig? Kan ik 'm meerdere keren gebruiken?
 redirect_from: 
     - /nl/faq/9-hoe-lang-is-mijn-testbewijs-geldig
