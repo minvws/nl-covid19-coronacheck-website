@@ -46,15 +46,16 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
     }
 }
 export const getErrorCode = (error, errorCodeInformation) => {
-    const message = error?.message
+    const responseMessage = error?.message
+    const responseCode = error?.code
     const status = error?.response?.status
     const statusCode = typeof status === 'number' ? status : ''
     const code = error?.response?.data?.code
     const encoded = error?.response?.data?.payload
-    const clientCode = errorCodeInformation?.clientSideCode
     const clientBody = errorCodeInformation?.errorBody
-    const clientResponseCode = getResponseStatusCode(errorCodeInformation?.errorBody)
-    const axiosCode = error?.isAxiosError ? getClientSideErrorCode(error?.code ?? error?.message) : ''
+    const clientResponseCode = getResponseStatusCode(clientBody) || responseMessage
+    const axiosCode = error?.isAxiosError ? getClientSideErrorCode(responseCode ?? responseMessage) : ''
+
     let cmsCode = null
     if (encoded) {
         try {
@@ -71,68 +72,8 @@ export const getErrorCode = (error, errorCodeInformation) => {
         step
     } = errorCodeInformation
 
-    const debug = {
-        message,
-        status,
-        code,
-        encoded,
-        clientCode,
-        clientBody,
-        axiosCode,
-        cmsCode,
-        clientResponseCode
-    }
-    const errorCode = cmsCode ?? statusCode ?? code ?? clientResponseCode ?? axiosCode
-    return errorCodeTransformer({
-        flow,
-        step,
-        provider,
-        errorCode: JSON.stringify({ errorCode, debug }),
-        errorBody: cmsCode ?? code ?? axiosCode
-    })
-}
-export const getErrorCode2 = (error, errorCodeInformation) => {
-    let errorCode, errorBody;
-    if (errorCodeInformation.clientSideCode) {
-        errorCode = errorCodeInformation.clientSideCode;
-    } else {
-        errorCode = (error.response && error.response.status) ? error.response && error.response.status : '';
-    }
-    if (errorCodeInformation.errorBody) {
-        errorBody = errorCodeInformation.errorBody;
-    } else {
-        if (error.response && error.response.data) {
-            try {
-                const cmsDecoded = cmsDecode(error.response.data.payload)
-                if (cmsDecoded.code) {
-                    errorBody = cmsDecoded.code;
-                } else {
-                    errorBody = '';
-                }
-            } catch (e) {
-                if (error.response.data.code) {
-                    errorBody = error.response.data.code;
-                } else {
-                    errorBody = '';
-                }
-            }
-        } else {
-            errorBody = '';
-        }
-    }
-
-    // client side error
-    if (error?.isAxiosError) {
-        if (!errorCode) errorCode = getClientSideErrorCode(error?.code ?? error?.message)
-        if (!errorBody) errorBody = error?.message ?? ''
-    }
-
-    const {
-        provider_identifier: provider,
-        flow,
-        step
-    } = errorCodeInformation
-
+    const errorCode = cmsCode || statusCode
+    const errorBody = code || clientResponseCode || axiosCode
     return errorCodeTransformer({
         flow,
         step,

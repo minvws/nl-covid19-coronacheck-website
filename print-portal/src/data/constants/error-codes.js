@@ -86,7 +86,14 @@ export const errorCodeTransformer = ({
     errorBody
 }) => {
     // s xyy ppp? hhh bbbbbb (system flow.step provider errorcode detailederrorcode)
-    return `${SystemCode.WEB} ${flowCodeTransformer(flow)}${step} ${provider} ${errorCode} ${errorBody}`
+    const error = [
+        SystemCode.WEB,
+        `${flowCodeTransformer(flow)}${step}`,
+        provider,
+        errorCode,
+        errorBody
+    ].filter(item => !!item)
+    return error.join(' ');
 }
 
 export const getClientSideErrorCode = (code = '') => {
@@ -104,7 +111,7 @@ export const getResponseStatusCode = (code = '') => {
     if (typeof code === 'number') return ''
     switch (code.toUpperCase()) {
     case 'No matching state found in storage'.toUpperCase():
-        return '072-2007'
+        return '072 2006'
     default:
         return '';
     }
