@@ -77,7 +77,7 @@
         <meta name="og:image:alt" content="{{ site.data.setup.social-og-image-alt[page.lang] }}" /> 
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="{% if page.title != '' %}{{ page.title | strip_html  }} - {{ site.data.setup.head-social-og-site_name[page.lang] }}{% else %}{{ site.data.setup.head-social-og-title }}{% endif %}" />
+        <meta name="twitter:title" content="{% if page.title != '' %}{{ page.title | strip_html  }} - {{ site.data.setup.head-social-og-site_name[page.lang] }}{% else %}{{ site.data.setup.head-social-og-title[page.lang] }}{% endif %}" />
         <meta name="twitter:description" content="{{ site.data.setup.head-social-og-description[page.lang] }}" />
         <meta name="twitter:image" content="https://coronacheck.nl/img/coronacheck-social-og-image--nl.png?=v2 }}" />
         <meta name="twitter:image:alt" content="{{ site.data.setup.social-og-image-alt[page.lang] }}" /> 
