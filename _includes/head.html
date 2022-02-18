@@ -45,7 +45,7 @@
         
         <meta property="og:site_name" content="{{ site.data.setup.scanner-social-og-site_name[page.lang] }}">
         <meta property="og:title" content="{% if page.title != '' %}{{ page.title | strip_html }} - {{ site.data.setup.scanner-social-og-site_name[page.lang] }}{% else %}{{ site.data.setup.scanner-social-og-title[page.lang] }}{% endif %}" />
-        <meta property="og:description" content="{{ site.translations.scanner-social-og-description }}"/>
+        <meta property="og:description" content="{{ site.data.setup.scanner-social-og-description }}"/>
         <meta property="og:updated_time" content="{{ site.time | date: "%s" }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ page.permalink }}">
