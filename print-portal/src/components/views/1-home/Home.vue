@@ -26,8 +26,11 @@ export default {
             return this.$store.state.userConsent;
         },
         intro () {
-            if (this.$store.getters.is1G) return `${this.$t('views.home.pageIntro')} ${this.$t('views.home.pageBody1G')}`
-            return `${this.$t('views.home.pageIntro')} ${this.$t('views.home.pageBody')}`
+            const intro = [
+                this.$t('views.home.pageIntro'),
+                this.$store.getters.is1G ? this.$t('views.home.pageBody1G') : this.$t('views.home.pageBody')
+            ]
+            return intro.join(' ')
         }
     },
     methods: {
