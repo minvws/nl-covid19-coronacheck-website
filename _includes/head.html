@@ -45,7 +45,7 @@
         
         <meta property="og:site_name" content="{{ site.data.setup.scanner-social-og-site_name[page.lang] }}">
         <meta property="og:title" content="{% if page.title != '' %}{{ page.title | strip_html }} - {{ site.data.setup.scanner-social-og-site_name[page.lang] }}{% else %}{{ site.data.setup.scanner-social-og-title[page.lang] }}{% endif %}" />
-        <meta property="og:description" content="{{ site.data.setup.scanner-social-og-description }}"/>
+        <meta property="og:description" content="{{ site.data.setup.scanner-social-og-description[page.lang] }}"/
         <meta property="og:updated_time" content="{{ site.time | date: "%s" }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ page.permalink }}">
@@ -53,7 +53,7 @@
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="{% if page.title != '' %}{{ page.title | strip_html  }} - {{ site.data[page.lang].translations.scanner-social-og-site_name }}{% else %}{{ site.data[page.lang].translations.scanner-social-og-title }}{% endif %}" />
-        <meta name="twitter:description" content="{{ site.data.setup.scanner-social-og-description }}" />
+        <meta name="twitter:description" content="{{ site.data.setup.scanner-social-og-description[page.lang] }}" />
         <meta name="twitter:image" content="https://coronacheck.nl/img/scanner-social-og-image--nl.png?v=2" />
     {% else %}
         {% if include.in-app And include.in-app != "" And include.in-app != nil %}
