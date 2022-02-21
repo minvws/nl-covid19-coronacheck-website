@@ -1,4 +1,5 @@
 import { UserManager } from 'oidc-client';
+import getRandomValuesPolyfill from 'polyfill-crypto.getrandomvalues'
 
 const getNonce = (l) => {
     const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._'
@@ -7,7 +8,8 @@ const getNonce = (l) => {
 
     while (length > 0) {
         const bytes = new Uint8Array(16);
-        const random = window.crypto.getRandomValues(bytes);
+        const getRandomValues = window.crypto?.getRandomValues || getRandomValuesPolyfill
+        const random = getRandomValues(bytes)
         random.forEach(function(c) {
             if (length === 0) {
                 return;
