@@ -19,7 +19,9 @@ export default {
 
 <template>
     <Page
-        class="home">
+        class="home"
+        :display-back-button="false"
+        >
         <div class="section">
             <PageIntro
                 :head="$t('views.browserNotSupported.pageHeader')"
