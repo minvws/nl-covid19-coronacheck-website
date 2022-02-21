@@ -158,10 +158,6 @@
                         "summary": "Why didn’t I receive a Dutch vaccination certificate?",
                         "content": "<p>Your vaccination(s) unfortunately don't entitle you to a Dutch vaccination certificate. For possible reasons check <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/covid-certificate\/proof-of-vaccination\/requirements-and-validity\" target=\"_blank\" rel=\"noopener noreferrer\">this page about the requirements and validity of the vaccination certificate<\/a>.<\/p>"
                     },
-                    "whyNoDomesticVaccination1G": {
-                        "summary": "Why didn’t I receive a Dutch vaccination certificate?",
-                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
-                    },
                     "whyNoDutchCertificate": {
                         "summary": "Had coronavirus before your first vaccination?",
                         "content": "<p>Then you're normally considered fully vaccinated with one vaccination. Retrieve your positive test result to add this to your vaccination certificate.</p>",
@@ -171,6 +167,7 @@
                         "summary": "Why didn’t I receive an international recovery certificate?",
                         "content": "<p>Your recovery certificate isn't valid internationally. The reason for this could be that the type of test is not accepted, or that the test is no longer valid abroad. An international recovery certificate can only be made with a PCR-test that is less than 180 days old. Read more about the possible causes on the <a href=\"https:\/\/coronacheck.nl\/en\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a>.<\/p>"
                     },
+                   
                     "whyNoEuropeanTest": {
                         "summary": "Why didn’t I receive an international test certificate?",
                         "content": "<p>You may not have received an international test certificate because your type of test isn’t accepted abroad. Get tested again for a certificate that is also valid abroad.<\/p>"
@@ -182,6 +179,18 @@
                     "shortStay": {
                         "summary": "How long is my certificate valid?",
                         "content": "<p>A visitor pass is valid up until 14 days after review of your vaccination. Are you staying in the Netherlands longer? Then you can request a visitor pass again. For more information, please visit <a href=\"https:\/\/www.government.nl\/entry-pass-visitors\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.government.nl\/entry-pass-visitors<\/a>.<\/p>"
+                    },
+                    "whyNoDomesticVaccination1G": {
+                        "summary": "Why didn’t I receive a Dutch vaccination certificate?",
+                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
+                    },
+                    "whyNoDomesticRecovery1G": {
+                        "summary": "Why didn’t I receive an Dutch recovery certificate?",
+                        "content": "<p>Dat je geen Nederlands testbewijs hebt gekregen, kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.<\/p>"
+                    },
+                    "whyNoDomesticTest1G": {
+                        "summary": "Why don’t I get a Dutch test certificate?",
+                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
                     }
                 }
             }
