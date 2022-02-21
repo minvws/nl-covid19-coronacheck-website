@@ -157,6 +157,10 @@
                         "summary": "Waarom krijg ik geen Nederlands vaccinatiebewijs?",
                         "content": "<p>Met jouw vaccinatie(s) heb je helaas geen recht op een Nederlands vaccinatiebewijs. Kijk voor de mogelijke redenen op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze pagina over de eisen en geldigheid van het vaccinatiebewijs<\/a>.<\/p>"
                     },
+                    "whyNoDomesticVaccination1G": {
+                        "summary": "Waarom krijg ik geen Nederlands vaccinatiebewijs?",
+                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
+                    },
                     "whyNoDutchCertificate": {
                         "summary": "Corona gehad vóór je eerste vaccinatie?",
                         "content": "<p>Dan heb je vaak maar één prik nodig om volledig gevaccineerd te zijn. Haal je positieve testuitslag op om deze aan je vaccinatiebewijs toe te voegen.</p>",

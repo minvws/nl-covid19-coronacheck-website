@@ -31,6 +31,9 @@ const getters = {
     visitorPassEnabled: ({ holderConfig }) => {
         return holderConfig?.visitorPassEnabled === true
     },
+    is1G: ({ holderConfig }) => {
+        return true // @TODO
+    },
     getEuBrand: (state) => (euBrandCode) => {
         return state.holderConfig.euBrands.find(euBrand => euBrand.code === euBrandCode)
     },

@@ -35,7 +35,10 @@ export default {
             const details = []
             if (this.type === FilterTypes.VACCINATION) {
                 details.push('whyNoDutchCertificate');
-                if (this.regionType === RegionTypes.EUROPEAN) details.push('whyNoDomesticVaccination');
+                if (this.regionType === RegionTypes.EUROPEAN) {
+                    if (this.$store.getters.is1G) details.push('whyNoDomesticVaccination1G');
+                    else details.push('whyNoDomesticVaccination');
+                }
             }
             if (this.type === FilterTypes.RECOVERY && this.regionType === RegionTypes.DOMESTIC) {
                 details.push('whyNoEuropeanRecovery');

@@ -158,6 +158,10 @@
                         "summary": "Why didn’t I receive a Dutch vaccination certificate?",
                         "content": "<p>Your vaccination(s) unfortunately don't entitle you to a Dutch vaccination certificate. For possible reasons check <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/covid-certificate\/proof-of-vaccination\/requirements-and-validity\" target=\"_blank\" rel=\"noopener noreferrer\">this page about the requirements and validity of the vaccination certificate<\/a>.<\/p>"
                     },
+                    "whyNoDomesticVaccination1G": {
+                        "summary": "Why didn’t I receive a Dutch vaccination certificate?",
+                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
+                    },
                     "whyNoDutchCertificate": {
                         "summary": "Had coronavirus before your first vaccination?",
                         "content": "<p>Then you're normally considered fully vaccinated with one vaccination. Retrieve your positive test result to add this to your vaccination certificate.</p>",
