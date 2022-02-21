@@ -26,6 +26,8 @@ export default {
             return this.$store.state.userConsent;
         },
         intro () {
+            const featureFlag = '1G'; // @TODO
+            if (featureFlag === '1G') return `${this.$t('views.home.pageIntro')} ${this.$t('views.home.pageBody1G')}`
             return `${this.$t('views.home.pageIntro')} ${this.$t('views.home.pageBody')}`
         }
     },
