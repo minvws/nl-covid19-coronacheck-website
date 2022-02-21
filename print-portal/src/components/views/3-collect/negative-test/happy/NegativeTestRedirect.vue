@@ -14,7 +14,7 @@ export default {
         return {
             isLoading: false,
             filter: FilterTypes.NEGATIVE_TEST,
-            eventProviders: ProviderTypes.ANY_PROVIDER,
+            eventProviders: ProviderTypes.GGD,
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'ChoiceTestLocation',
