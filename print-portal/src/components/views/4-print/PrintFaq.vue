@@ -40,6 +40,9 @@ export default {
                     else details.push('whyNoDomesticVaccination');
                 }
             }
+            if (this.type === FilterTypes.RECOVERY && this.regionType === RegionTypes.EUROPEAN) {
+                if (this.$store.getters.is1G) details.push('whyNoDomesticVaccination1G');
+            }
             if (this.type === FilterTypes.RECOVERY && this.regionType === RegionTypes.DOMESTIC) {
                 details.push('whyNoEuropeanRecovery');
             }
