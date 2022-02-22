@@ -26,6 +26,11 @@
             "noConsentError": "Ga eerst akkoord met de privacyverklaring",
             "test": "Test test test"
         },
+        "browserNotSupported": {
+            "pageHeader": "Te oude internetbrowser",
+            "pageIntro": "<p>De internetbrowser die je momenteel gebruikt is te oud om deze pagina te kunnen laden. Download een nieuwere browser. Bijvoorbeeld een van onderstaande:<br><br><a href=\"https:\/\/www.google.com\/chrome\" target=\"_blank\" rel=\"noopener noreferrer\">Google Chrome<\/a><br><br><a href=\"https:\/\/www.mozilla.org\/firefox\" target=\"_blank\" rel=\"noopener noreferrer\">Mozilla Firefox<\/a><br><br><a href=\"https:\/\/www.microsoft.com\/edge\" target=\"_blank\" rel=\"noopener noreferrer\">Microsoft Edge<\/a><\/p>",
+            "button": "Terug naar de hoofdpagina van CoronaCheck.nl"
+        },
         "choiceProof": {
             "pageHeader": "Welk papieren bewijs wil je maken?",
             "pageIntro": "",
