@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import negativeTestPages from './pages/negative-test'
 import recoveryPages from './pages/recovery'
 import vaccinationPages from './pages/vaccination'
-import otherPages from './pages/other'
+import otherPages, { BROWSER_NOT_SUPPORTED } from './pages/other'
 import errorPages from './pages/error-pages'
 import shortStayPages, { RouterNames } from './pages/short-stay'
 import i18n from '@/i18n';
@@ -31,18 +31,30 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    const pagesWithoutConsentNeeded = [
+    const generalPages = [
         'Home',
+        'ErrorGeneral',
+        'ServerBusy',
+        RouterNames.HOME,
+        BROWSER_NOT_SUPPORTED
+    ]
+
+    const pagesWithoutConsentNeeded = [
         'VaccinationRedirect',
         'NegativeTestRedirect',
         'RecoveryRedirect',
         'RecoveryExpired',
-        'ErrorGeneral',
-        'ServerBusy',
-        RouterNames.HOME
+        ...generalPages
     ]
+
+    // show 'browser not supported page' when on IE
+    const isIE = (!!window.MSInputMethodContext && !!document.documentMode)
+    if (isIE && !generalPages.includes(to.name)) {
+        next({ name: BROWSER_NOT_SUPPORTED })
+        return
+    }
     // check for user consent, otherwise redirect to home (disabled for development)
-    if (process.env.NODE_ENV !== 'development' && pagesWithoutConsentNeeded.indexOf(to.name) === -1 && !store.state.userConsent) {
+    if ((process.env.NODE_ENV !== 'development') && pagesWithoutConsentNeeded.indexOf(to.name) === -1 && !store.state.userConsent) {
         next({ name: 'Home' })
     } else {
         next();

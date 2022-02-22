@@ -25,6 +25,7 @@
     "lodash.isequal": "^4.5.0",
     "lodash.uniqwith": "^4.5.0",
     "oidc-client": "^1.11.5",
+    "polyfill-crypto.getrandomvalues": "^1.0.0",
     "portal-vue": "^2.1.7",
     "register-service-worker": "^1.7.1",
     "v-click-outside": "^3.1.2",
