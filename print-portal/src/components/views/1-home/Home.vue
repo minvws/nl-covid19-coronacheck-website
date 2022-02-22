@@ -24,6 +24,13 @@ export default {
     computed: {
         consent() {
             return this.$store.state.userConsent;
+        },
+        intro () {
+            const intro = [
+                this.$t('views.home.pageIntro'),
+                this.$store.getters.is1G ? this.$t('views.home.pageBody1G') : this.$t('views.home.pageBody')
+            ]
+            return intro.join(' ')
         }
     },
     methods: {
@@ -50,7 +57,7 @@ export default {
         <div class="section">
             <PageIntro
                 :head="$t('views.home.pageHeader')"
-                :intro="$t('views.home.pageIntro')"/>
+                :intro="intro"/>
             <div class="section-block">
                 <h2 class="screen-reader-text">{{ $t('views.home.userConsentHeader') }}</h2>
                 <UserConsent

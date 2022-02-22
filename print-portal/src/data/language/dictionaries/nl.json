@@ -20,11 +20,12 @@
     "views": {
         "home": {
             "pageHeader": "Krijg toegang met een papieren bewijs",
-            "pageIntro": "<h2 class=\"screen-reader-text\">Zo werkt het<\/h2><p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang.<\/p><p>Een bewijs op papier is handig als je geen smartphone hebt.<\/p><h4>Bewijs van test of vaccinatie<\/h4><p>Je kan een coronabewijs maken met CoronaCheck als:<ul class=\"ul--with-padding\"><li>je bent gevaccineerd<\/li><li>uit een test blijkt dat je geen corona had<\/li><li>uit een test blijkt dat je corona hebt gehad en bent hersteld<\/li><\/ul><\/p><h4>QR-code = jouw bewijs<\/h4><p>CoronaCheck maakt van jouw vaccinatie of testuitslag een QR-code. Dat is jouw bewijs. De QR-code wordt gecheckt voordat je toegang krijgt.<\/p><h4>QR-codes voor Nederland en internationaal<\/h4><p>CoronaCheck maakt QR-codes voor in Nederland en het buitenland. Ben je in het buitenland of ga je de grens over? Gebruik dan altijd de internationale QR-code.<\/p>",
+            "pageIntro": "<h2 class=\"screen-reader-text\">Zo werkt het<\/h2><p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang.<\/p><p>Een bewijs op papier is handig als je geen smartphone hebt.<\/p>",
+            "pageBody": "<h4>Bewijs van test of vaccinatie<\/h4><p>Je kan een coronabewijs maken met CoronaCheck als:<ul class=\"ul--with-padding\"><li>je bent gevaccineerd<\/li><li>uit een test blijkt dat je geen corona had<\/li><li>uit een test blijkt dat je corona hebt gehad en bent hersteld<\/li><\/ul><\/p><h4>QR-code = jouw bewijs<\/h4><p>CoronaCheck maakt van jouw vaccinatie of testuitslag een QR-code. Dat is jouw bewijs. De QR-code wordt gecheckt voordat je toegang krijgt.<\/p><h4>QR-codes voor Nederland en internationaal<\/h4><p>CoronaCheck maakt QR-codes voor in Nederland en het buitenland. Ben je in het buitenland of ga je de grens over? Gebruik dan altijd de internationale QR-code.<\/p>",
+            "pageBody1G": "<h4>Nederlands bewijs voor 1G-toegang<\/h4><p>Bezoek je een plek in Nederland waar om een coronabewijs wordt gevraagd? Dan krijg je alleen toegang met een testbewijs (1G-toegang). Dit kun je maken als je negatief getest bent en geen corona hebt.<p><h4>Internationaal bewijs voor in het buitenland</h4><p>Ben je in het buitenland of ga je de grens over? Dan heb je een internationaal bewijs nodig. Je kunt een internationaal bewijs maken als:<ul class=\"ul--with-padding\"><li>Je bent gevaccineerd<\/li><li>Je positief bent getest en hersteld van corona<\/li><li>Je negatief bent getest en geen corona hebt<\/li><\/ul></p><h4>Over jou gegevens<\/h4><p>In de <a href=\"https:\/\/coronacheck.nl\/nl\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacyverklaring<\/a> staat hoe CoronaCheck omgaat met jou gegevens.<\/p>",
             "userConsentHeader": "Maak een papieren bewijs",
             "userConsentText": "Ik heb de <a href=\"https:\/\/coronacheck.nl\/nl\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacyverklaring<\/a> gelezen en begrijp hoe CoronaCheck mijn gegevens gebruikt",
-            "noConsentError": "Ga eerst akkoord met de privacyverklaring",
-            "test": "Test test test"
+            "noConsentError": "Ga eerst akkoord met de privacyverklaring"
         },
         "browserNotSupported": {
             "pageHeader": "Te oude internetbrowser",
@@ -181,6 +182,18 @@
                     "shortStay": {
                         "summary": "Hoe lang is mijn bewijs geldig?",
                         "content": "<p>Een bezoekersbewijs is geldig tot 14 dagen na de beoordeling van je vaccinatie. Blijf je langer in Nederland? Dan kun je opnieuw een bezoekersbewijs aanvragen. Ga voor meer informatie naar <a href=\"https:\/\/www.rijksoverheid.nl\/ctb-bezoekers\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.rijksoverheid.nl\/ctb-bezoekers<\/a>.<\/p>"
+                    },
+                    "whyNoDomesticVaccination1G": {
+                        "summary": "Waarom krijg ik geen Nederlands vaccinatiebewijs?",
+                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
+                    },
+                    "whyNoDomesticRecovery1G": {
+                        "summary": "Waarom krijg ik geen Nederlands herstelbewijs?",
+                        "content": "<p>Dat je geen Nederlands testbewijs hebt gekregen, kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.<\/p>"
+                    },
+                    "whyNoDomesticTest1G": {
+                        "summary": "Waarom krijg ik geen Nederlands testbewijs?",
+                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
                     }
                 }
             }
@@ -470,7 +483,6 @@
     "tooBusy": "Het is erg druk op dit moment. Daardoor kun je niet inloggen. Wil je het op een later moment nog eens proberen?",
     "template": {
         "footer": "\n    <div class=\"footer-links footer-links--print-portal\">\n        <div class=\"footer-links-col ___desktop-50\">\n            <div class=\"footer-logos-info\">\n                <h2 class=\"screen-reader-text\">Colofon<\/h2>\n                CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn\n                en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder\n                de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community\n                tijdens de ontwikkeling meegekeken en getest.\n            <\/div>\n            <div class=\"footer-attribution\">\n                <h3 class=\"footer-attribution__title\">Mede mogelijk gemaakt door<\/h3>\n                <img src=\"assets\/img\/Logo_EU_Negative_nl.svg\" alt=\"Logo Europese Commissie\" width=\"175\" height=\"48\" \/>\n            <\/div>\n        <\/div>\n        <div class=\"footer-links-col ___desktop-50\">\n            <h2>Heb je vragen over CoronaCheck?<\/h2>\n            <p>Lees dan de <a href=\"https:\/\/www.coronacheck.nl\/nl\/faq\" target=\"_blank\" rel=\"noopener noreferrer\">meestgestelde vragen<\/a>.<\/p>\n        <\/div>\n    <\/div>\n"
-    },
-    "testKeyLokalise": "Dit is een testkey om te kijken of pushen vanuit lokalise werkt"
+    }
   }
   

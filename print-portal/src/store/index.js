@@ -31,6 +31,13 @@ const getters = {
     visitorPassEnabled: ({ holderConfig }) => {
         return holderConfig?.visitorPassEnabled === true
     },
+    is1G: ({ holderConfig }) => {
+        const policies = holderConfig?.verificationPolicies
+        if (Array.isArray(policies) && policies.length === 1) {
+            return policies[0].toUpperCase() === '1G'
+        }
+        return false
+    },
     getEuBrand: (state) => (euBrandCode) => {
         return state.holderConfig.euBrands.find(euBrand => euBrand.code === euBrandCode)
     },
