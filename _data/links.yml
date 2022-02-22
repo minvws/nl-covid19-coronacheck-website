@@ -64,8 +64,8 @@ kvkEvenement:
   en: 
 
 evenementOrganiseren:
-  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-voor-evenementen/coronatoegangsbewijs-informatie-voor-organisatoren" rel="noopener noreferrer" target="_blank">Ondernemers, organisatoren en het coronatoegangsbewijs</a>'
-  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-voor-evenementen/coronatoegangsbewijs-informatie-voor-organisatoren" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Ondernemers, organisatoren en het coronatoegangsbewijs</span> (Dutch)</a>'
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/ondernemers-organisatoren-bedrijven/ondernemers" rel="noopener noreferrer" target="_blank">Ondernemers, organisatoren en het coronatoegangsbewijs</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/ondernemers-organisatoren-bedrijven/ondernemers" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Ondernemers, organisatoren en het coronatoegangsbewijs</span> (Dutch)</a>'
 
 coronatest: 
   nl: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank">coronatest.nl</a>'
