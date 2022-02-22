@@ -1,6 +1,6 @@
 ---
 set: 1
-index: 4
+index: 5
 title: How long is my corona certificate valid and can I use it multiple times?	
 redirect_from: 
     - /en/faq/2-2-hoe-lang-is-mijn-testbewijs-geldig-en-kan-ik-hem-meerdere-keren-gebruiken
