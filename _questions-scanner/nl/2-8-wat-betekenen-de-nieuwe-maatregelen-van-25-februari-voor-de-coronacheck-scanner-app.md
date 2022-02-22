@@ -1,5 +1,5 @@
 ---
-set: 1
+set: 2
 index: -10
 title: 'Wat betekenen de nieuwe maatregelen van 25 februari voor de CoronaCheck Scanner-app?'
 ---

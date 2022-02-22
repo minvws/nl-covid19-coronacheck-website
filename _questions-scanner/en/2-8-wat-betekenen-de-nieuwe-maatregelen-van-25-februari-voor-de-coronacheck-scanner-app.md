@@ -1,5 +1,5 @@
 ---
-set: 1
+set: 2
 index: -10
 title: 'What do the new measures of 25 February mean for my coronavirus entry pass?'
 ---
