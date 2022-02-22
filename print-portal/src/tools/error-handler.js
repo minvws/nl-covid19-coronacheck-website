@@ -2,7 +2,7 @@ import store from '@/store';
 import router from '@/router';
 import i18n from '@/i18n'
 import { cmsDecode } from './cms';
-import { getClientSideErrorCode, errorCodeTransformer, isDigiDFlowAndStepError } from '@/data/constants/error-codes';
+import { getResponseStatusCode, getClientSideErrorCode, errorCodeTransformer, isDigiDFlowAndStepError } from '@/data/constants/error-codes';
 
 export const hasInternetConnection = () => {
     return window.navigator.onLine;
@@ -45,41 +45,25 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
         }
     }
 }
-
 export const getErrorCode = (error, errorCodeInformation) => {
-    let errorCode, errorBody;
-    if (errorCodeInformation.clientSideCode) {
-        errorCode = errorCodeInformation.clientSideCode;
-    } else {
-        errorCode = (error.response && error.response.status) ? error.response && error.response.status : '';
-    }
-    if (errorCodeInformation.errorBody) {
-        errorBody = errorCodeInformation.errorBody;
-    } else {
-        if (error.response && error.response.data) {
-            try {
-                const cmsDecoded = cmsDecode(error.response.data.payload)
-                if (cmsDecoded.code) {
-                    errorBody = cmsDecoded.code;
-                } else {
-                    errorBody = '';
-                }
-            } catch (e) {
-                if (error.response.data.code) {
-                    errorBody = error.response.data.code;
-                } else {
-                    errorBody = '';
-                }
-            }
-        } else {
-            errorBody = '';
-        }
-    }
+    const responseMessage = error?.message
+    const responseCode = error?.code
+    const status = error?.response?.status
+    const statusCode = typeof status === 'number' ? status : ''
+    const code = error?.response?.data?.code
+    const encoded = error?.response?.data?.payload
+    const clientBody = errorCodeInformation?.errorBody
+    const clientResponseCode = getResponseStatusCode(clientBody) || responseMessage
+    const axiosCode = error?.isAxiosError ? getClientSideErrorCode(responseCode ?? responseMessage) : ''
 
-    // client side error
-    if (error?.isAxiosError) {
-        if (!errorCode) errorCode = getClientSideErrorCode(error?.code ?? error?.message)
-        if (!errorBody) errorBody = error?.message ?? ''
+    let cmsCode = null
+    if (encoded) {
+        try {
+            const cmsDecoded = cmsDecode(encoded)
+            cmsCode = cmsDecoded.code;
+        } catch (e) {
+            cmsCode = e.message
+        }
     }
 
     const {
@@ -88,6 +72,8 @@ export const getErrorCode = (error, errorCodeInformation) => {
         step
     } = errorCodeInformation
 
+    const errorCode = cmsCode || statusCode
+    const errorBody = code || clientResponseCode || axiosCode
     return errorCodeTransformer({
         flow,
         step,
