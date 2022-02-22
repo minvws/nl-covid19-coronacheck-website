@@ -137,8 +137,7 @@ Persoonsgegevens die worden verwerkt bij uitgifte van zowel een EU DCC als een c
 - Voor- en achternamen van betrokkene
 - Organisatie bij wie vaccinatie-, of herstelgegevens zijn opgehaald.
 - Bij test- of herstelbewijs:
-
-- - unieke code van de test
+  - unieke code van de test
   - type test
   - testnaam
   - datum en tijd testafname
@@ -147,10 +146,8 @@ Persoonsgegevens die worden verwerkt bij uitgifte van zowel een EU DCC als een c
   - testproducent
   - naam van testcentrum
   - uitslag van de test (negatief voor testbewijs, positief voor herstelbewijs)
-
 - Alleen bij vaccinatiebewijs:
-
-- - datum/data toedieningen
+  - datum/data toedieningen
   - unieke code van vaccinatie
   - ziekteverwekker waar het vaccin tegen werkt
   - vaccintype
@@ -160,7 +157,7 @@ Persoonsgegevens die worden verwerkt bij uitgifte van zowel een EU DCC als een c
 
 ### Persoonsgegevens die zijn opgeslagen in de QR-code die je toont aan controleurs:
 
-#### Coronabewijs
+#### Coronabewijs *
 
 De QR-code voor het coronatoegangsbewijs wordt elke 90 seconden opnieuw gegenereerd en bevat:
 
@@ -171,7 +168,7 @@ De QR-code voor het coronatoegangsbewijs wordt elke 90 seconden opnieuw gegenere
 - Geboortemaand en geboortedag
 - Indicatie of de code digitaal of als fysiek Bewijsmiddel is uitgegeven
 
-#### EU DCC
+#### EU DCC *
 
 Persoonsgegevens die in de EU DCC (QR-code) zijn opgenomen ongeacht het type (test-, vaccinatie- of herstelbewijs):
 
