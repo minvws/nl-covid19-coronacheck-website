@@ -27,13 +27,13 @@ export default {
                 :head="$t('views.browserNotSupported.pageHeader')"
                 :intro="$t('views.browserNotSupported.pageIntro')"/>
             <div class="section-block">
-                <a class="link" :href="home">{{ $t('views.browserNotSupported.button') }}</a>
+                <a class="text-link" :href="home">{{ $t('views.browserNotSupported.button') }}</a>
             </div>
         </div>
     </Page>
 </template>
 <style scoped lang="scss">
-.link {
+.text-link {
     display: inline-block;
     padding-top: 8px;
     font-weight: bold;
