@@ -210,7 +210,7 @@
         },
         "errorProofNotPossible": {
             "pageHeader": "We kunnen geen bewijs maken",
-            "pageIntro": "<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<\/p>"
+            "pageIntro": "<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<br><br><b>Foutcode</b><br>W 180 000 058<\/p>"
         },
         "errorTimeout": {
             "pageHeader": "Sorry, er gaat iets mis",
@@ -466,11 +466,6 @@
     "template": {
         "footer": "\n    <div class=\"footer-links footer-links--print-portal\">\n        <div class=\"footer-links-col ___desktop-50\">\n            <div class=\"footer-logos-info\">\n                <h2 class=\"screen-reader-text\">Colofon<\/h2>\n                CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn\n                en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder\n                de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community\n                tijdens de ontwikkeling meegekeken en getest.\n            <\/div>\n            <div class=\"footer-attribution\">\n                <h3 class=\"footer-attribution__title\">Mede mogelijk gemaakt door<\/h3>\n                <img src=\"assets\/img\/Logo_EU_Negative_nl.svg\" alt=\"Logo Europese Commissie\" width=\"175\" height=\"48\" \/>\n            <\/div>\n        <\/div>\n        <div class=\"footer-links-col ___desktop-50\">\n            <h2>Heb je vragen over CoronaCheck?<\/h2>\n            <p>Lees dan de <a href=\"https:\/\/www.coronacheck.nl\/nl\/faq\" target=\"_blank\" rel=\"noopener noreferrer\">meestgestelde vragen<\/a>.<\/p>\n        <\/div>\n    <\/div>\n"
     },
-    "testKeyLokalise": "Dit is een testkey om te kijken of pushen vanuit lokalise werkt",
-    "dit": {
-        "is": {
-            "een": ""
-        }
-    },
-    "hello": "Wereld"
-}
+    "testKeyLokalise": "Dit is een testkey om te kijken of pushen vanuit lokalise werkt"
+  }
+  
