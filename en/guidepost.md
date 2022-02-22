@@ -16,13 +16,11 @@ CoronaCheck is already used by many people for creating a vaccination, recovery 
 
 {% capture copy_vaccinatiebewijs %}
 <div markdown="1">
+At this moment, vaccination certificates are not in use within the Netherlands. Therefore you can currently use CoronaCheck only to create a vaccination certificate for international use.
+
+You get an international vaccination certificate already after only one vaccination. This certificate is valid for 270 days after the completion of full vaccination. Once you’ve received a new (booster)vaccination, you can add it yourself by logging in again with DigiD. A decision about the validity of booster vaccinations has not been made yet. For children up to 18 years old, a full vaccination certificate is valid indefinitely. This does not require a booster vaccination. Please note: the validity of a certificate made after one vaccination depends on the rules of the country you’re visiting. Check {{ site.data.links.wijsopreis[page.lang] }} to see which rules apply at your destination.
+
 CoronaCheck retrieves data about vaccinations from the systems of the RIVM, the GGD and hospitals. Other vaccination providers, such as general practitioners and other healthcare providers, have passed on your vaccination details to the RIVM. They only do so if you have given permission. Vaccination details can be retrieved in the app. [Read here how to retrieve your vaccination data](/en/faq/1-1-hoe-werkt-de-coronacheck-app/).
-
-A full vaccination certificate is valid for 270 days. Once you have had a new (booster) vaccination you can add it yourself by logging in again with DigiD. For the booster vaccination a valid term has not been set yet.
-
-For children up to 18 years old, a full vaccination certificate is valid without end. This does not require a booster vaccination.
-
-An international QR code can be created after one vaccination. Please note: a QR code of an incomplete vaccination is not valid in all countries. Always check the travel advice on {{ site.data.links.wijsopreis[page.lang] }} to see which rules apply to your destination.
 
 More information on vaccination certificates can be found on {{ site.data.links.vaccinatiebewijs[page.lang] }}.
 </div>
@@ -44,21 +42,16 @@ It can take up to 72 hours before your vaccination details are available. Still 
 Your vaccination details are searched via DigiD based on the personal details that are in your passport; social security number, name and date of birth. Your vaccination must contain exactly the same information. If this does not match completely, such as a colon, a ç or an é, the data cannot be found. There are also people with an unknown date of birth in DigiD; then it says 00 or xx as the date of birth.
 
 If no vaccination data can be found, contact the healthcare provider who vaccinated you. If you have been vaccinated at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data checked. Have you been vaccinated by your general practitioner, hospital or healthcare institution? Then contact them. They can get you a coronavirus pass with the correct data.
-
-Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
 
 {% capture copy_incorrecte_vaccinatiegegevens %}
 <div markdown="1">
-
 Are your vaccination details incorrect?
 Then contact the healthcare provider who vaccinated you. If you have been vaccinated at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the details corrected.
 
 Have you been vaccinated by your general practitioner, hospital or healthcare institution? Then contact them. They can get you a coronavirus pass with the correct data.
-
-Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -71,8 +64,6 @@ This can be the case if there is an error in your vaccination data, for example 
 Then contact the healthcare provider who vaccinated you. If you have been vaccinated at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected.
 
 Have you been vaccinated by your general practitioner, hospital or healthcare institution? Then contact them. They can get you a coronavirus pass with the correct data.
-
-Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. To get access to an event: {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -88,12 +79,16 @@ See {{ site.data.links.buitenlandvaccinatie[page.lang] }}. There you’ll always
 <div markdown="1">
 A recovery certificate is proof that you have ever been tested positive for the presence of the Sars-Cov2-virus by the GGD.
 
-**Please note:** A recovery certificate is not provided on the basis of a self-test or a serological test. It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test. For use within the Netherlands (for example for access to events), a recovery certificate is also issued based on an antigen test.
+At this moment, recovery certificates are not in use within the Netherlands. Therefore you can currently use CoronaCheck only to create a recovery certificate for international use. A number of rules apply:
+
+The recovery certificate is valid from 11 days after the positive test result, but the recovery certificate may be created earlier.
+In the case of a recovery certificate, the positive test result may be a maximum of 180 days old.
+
+**Please note:** It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test. A recovery certificate is not provided on the basis of an antigen test, self-test or a serological test. 
 
 CoronaCheck retrieves positive test results from the GGD. Both test results from the GGD itself and test results from other testing locations can be retrieved. These results must have been passed on to the GGD.
 
 More information about recovery certificates can be found on {{ site.data.links.herstelbewijs[page.lang] }}.
-
 </div>
 {% endcapture %}
 
@@ -105,15 +100,12 @@ This can have several causes:
 - You have been tested (positive) more than 180 days ago. In this case you are not entitled to a recovery certificate.
 
 Do none of the above situations apply, and have you been tested positive? Then contact your test provider.  If you were tested at the GGD, please contact them on {{ site.data.links.phone-ggd[page.lang] }} or go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form if you were tested at another test provider.
-
-If you really want to visit an event within a few days, the advice is to schedule a free test appointment so that you can make a test certificate. Make your appointment through {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
 {% capture copy_incorrecte_herstelgegevens %}
 <div markdown="1">  
 Are the details retrieved from your positive test result incorrect (your type of test, time or date for example)? If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected. If you have been tested at another test provider, please go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form.
-
 </div>
 {% endcapture %}
 
@@ -122,8 +114,6 @@ Are the details retrieved from your positive test result incorrect (your type of
 Are details about your vaccination found, but does CoronaCheck say no certificate can be made? Your test result may be more than 180 days old. Then it is no longer possible to make a recovery certificate.
 
 Were you tested less than 180 days ago? Then there may be an error in the test data.  If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected. If you have been tested at another test provider, please go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form.
-
-Does that take too long? Then you can always book a free test appointment so that you can make a test certificate. For example, if you are going to visit an event within a few days. Make your appointment through {{ site.data.links.testen-voor-toegang[page.lang] }}.
 </div>
 {% endcapture %}
 
