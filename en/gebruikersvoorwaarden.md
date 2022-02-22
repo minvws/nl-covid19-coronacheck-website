@@ -11,7 +11,7 @@ title: CoronaCheck Scanner Terms of Use
 2. [About the terms of use](#about-the-terms-of-use)
 3. [How does the CoronaCheck Scanner app work?](#how-does-the-coronacheck-scanner-app-work)
     1. [Download and installation](#download-and-installation)
-    3. [Scanning a corona admission ticket](#scanning-a-corona-admission-ticket) 
+    3. [Scanning a coronavirus entry pass or EU DCC](#scanning-a-coronavirus-entry-pass-or-eu-dcc) 
     4. [Updates](#updates)
     4. [More information](#more-information)
     5. [Uninstalling the app](#uninstalling-the-app)
@@ -33,8 +33,8 @@ title: CoronaCheck Scanner Terms of Use
 ## Used abbreviations
 
 - **AVG**: Algemene Verordening Gegevensbescherming (GDPR) 
-- **Controller**:Person checking the validity of a coronavirus pass and DCC 
-- **Coronavirus pass**:Certificate created using vaccination, test and/or recovery status shown by the person to a controller for access to an activity or facility in the Netherlands
+- **Controller**: Person checking the validity of a coronavirus entry pass and EU DCC 
+- **Coronavirus entry pass**:Certificate created using vaccination, test and/or recovery status shown by the person to a controller for access to an activity or facility in the Netherlands
 - **DCC	EU Digital COVID Certificate**: an inoperable certificate containing information about vaccination, test and/or recovery status of the holder, issued in the context of the COVID-19 pandemic
 - **VWS**:The Ministry of Health, Welfare and Sport
 
@@ -46,17 +46,17 @@ In these terms of use you will read how CoronaCheck Scanner works, what you’re
 
 ### Download and installation
 
-To check the validity of a coronavirus pass or DCC, you need CoronaCheck Scanner. You can download CoronaCheck Scanner for free from the Apple App Store (for iOS) and the Google Play Store (for Android) and install it on your smartphone or tablet. Please only download CoronaCheck Scanner from the App Store or Google Play Store and watch out for fake apps. CoronaCheck Scanner is only supported on iOS version 11 and up and Android version 6 and up.
+To check the validity of a coronavirus entry pass or EU DCC, you need CoronaCheck Scanner. You can download CoronaCheck Scanner for free from the Apple App Store (for iOS) and the Google Play Store (for Android) and install it on your smartphone or tablet. Please only download CoronaCheck Scanner from the App Store or Google Play Store and watch out for fake apps. CoronaCheck Scanner is only supported on iOS version 11 and up and Android version 6 and up.
 
 After CoronaCheck Scanner has been downloaded and these terms are accepted, CoronaCheck Scanner can be used. Before you can use the app, you must read these terms of use and accept them. You can find these terms of use on [CoronaCheck website](/en/gebruikersvoorwaarden.html).
 
-### Scanning a corona admission ticket
+### Scanning a coronavirus entry pass or EU DCC
 
-When a person presents a coronavirus pass or DCC to the controller, the validity of the coronavirus pass or DCC can be verified by using the CoronaCheck Scanner app. A person can display a digital or physical coronavirus pass or DCC. To validate a coronavirus pass or DCC, no internet connection is required. When the coronavirus pass is scanned using CoronaCheck Scanner, the moving visual animation next to the QR code scanner serves as a security check. Using this animation, a controller can verify if the QR code in CoronaCheck has not been screenshotted. 
+When a person presents a coronavirus entry pass or EU DCC to the controller, the validity of the coronavirus entry pass or EU DCC can be verified by using the CoronaCheck Scanner app. A person can display a digital or physical coronavirus entry pass or EU DCC. To validate a coronavirus entry pass or EU DCC, no internet connection is required. When the coronavirus entry pass is scanned using CoronaCheck Scanner, the moving visual animation next to the QR code scanner serves as a security check. Using this animation, a controller can verify if the QR code in CoronaCheck has not been screenshotted. 
 
-After scanning, a green or red screen will be shown. Green means that the coronavirus pass is valid, red means that it is invalid. A green screen also shows a set of identifying data (first letter of first name, first letter of last name, date of birth and month of birth). The controller should compare the data shown in the CoronaCheck Scanner with the data on the person’s identity card, to check if the coronavirus pass or DCC belongs to the person showing it. If a green screen shows and the data matches, the controller can grant access to the event or location.
+After scanning, a blue or red screen will be shown. Blue means that the coronavirus entry pass is valid, red means that it is invalid. A blue screen also shows a set of identifying data (first letter of first name, first letter of last name, date of birth and month of birth). The controller should compare the data shown in the CoronaCheck Scanner with the data on the person’s identity card, to check if the coronavirus entry pass or EU DCC belongs to the person showing it. If a blue screen shows and the data matches, the controller can grant access to the event or location.
 
-It is important to note that CoronaCheck Scanner does not record this set of identifying data, nor is it allowed to record this data or the data on the identity document. When CoronaCheck shows a red screen (no valid coronavirus pass or DCC), it will also include a general description outlining possible causes for this status. 
+It is important to note that CoronaCheck Scanner does not record this set of identifying data, nor is it allowed to record this data or the data on the identity document. When CoronaCheck shows a red screen (no valid coronavirus entry pass or EU DCC), it will also include a general description outlining possible causes for this status. 
 
 It’s possible a grey screen is displayed after scanning a QR code. This only happens after scanning a QR code developed to test the functioning of the CoronaCheck Scanner app. A grey screen does not give any information about a person but is simply a reflection of a test code.
 
@@ -76,23 +76,23 @@ If you no longer wish to use the app, you can uninstall the CoronaCheck Scanner 
 
 ## For whom is the CoronaCheck Scanner app intended?
 
-The app is publicly available in the Apple App Store or Google Play Store. A controller can deny access using the CoronaCheck Scanner app if persons are unable to display a coronavirus pass or DCC or when the CoronaCheck Scanner app shows a red screen after scanning a corona admission ticket.
+The app is publicly available in the Apple App Store or Google Play Store. A controller can deny access using the CoronaCheck Scanner app if persons are unable to display a coronavirus entry pass or EU DCC or when the CoronaCheck Scanner app shows a red screen after scanning a corona admission ticket.
 
 ## Why use CoronaCheck Scanner?
 
-The outbreak of SARS-CoV-2 (hereinafter: “coronavirus”) has tremendous social impact on Dutch society. By containing and controlling coronavirus, society can slowly return to normal and economical damage can be limited as much as possible. The CoronaCheck Scanner app is intended to scan the coronavirus pass or DCC persons show to a controller and ascertain if someone is allowed access to a certain location. It is a legal requirement to use only this app for scanning. By only allowing access to certain locations to people who can prove they have recently tested negative for coronavirus, have been vaccinated or have recovered, further spread of coronavirus can be limited.
+The outbreak of SARS-CoV-2 (hereinafter: “coronavirus”) has tremendous social impact on Dutch society. By containing and controlling coronavirus, society can slowly return to normal and economical damage can be limited as much as possible. The CoronaCheck Scanner app is intended to scan the coronavirus entry pass or EU DCC persons show to a controller and ascertain if someone is allowed access to a certain location. It is a legal requirement to use only this app for scanning. By only allowing access to certain locations to people who can prove they have recently tested negative for coronavirus, have been vaccinated or have recovered, further spread of coronavirus can be limited.
 
 ## The CoronaCheck Scanner app does not offer protection from coronavirus
 
-Scanning a coronavirus pass or DCC indicates that a person was not infected with coronavirus at the time of testing, recovered from coronavirus or recently tested negative for coronavirus. However, this does not guarantee that this person cannot infect others with coronavirus at the time of scanning the QR code with the CoronaCheck Scanner app.
+Scanning a coronavirus entry pass or EU DCC indicates that a person was not infected with coronavirus at the time of testing, recovered from coronavirus or recently tested negative for coronavirus. However, this does not guarantee that this person cannot infect others with coronavirus at the time of scanning the QR code with the CoronaCheck Scanner app.
 
 ## Privacy
 
-The use of the CoronaCheck Scanner app does not involve processing of personal data. The CoronaCheck Scanner app requires consent to use the scanner’s phone camera. This consent is required to scan the coronavirus pass or DCC, in the form of a QR code. Without this consent the user can install the app but cannot use the app to scan the coronavirus pass or DCC, in the form of a QR code.
+The use of the CoronaCheck Scanner app does not involve processing of personal data. The CoronaCheck Scanner app requires consent to use the scanner’s phone camera. This consent is required to scan the coronavirus entry pass or EU DCC, in the form of a QR code. Without this consent the user can install the app but cannot use the app to scan the coronavirus entry pass or EU DCC, in the form of a QR code.
 
 ### Purpose limitation
 
-The CoronaCheck Scanner app is used to regulate access to a certain event or location by checking if someone has a coronavirus pass or DCC. This is only possible when a person shows a valid coronavirus pass or DCC. When using the CoronaCheck Scanner app, it is not allowed to capture a coronavirus pass or DCC in any way, including but not limited to taking a screenshot. The CoronaCheck Scanner app may only be used to read a coronavirus pass or DCC. Saving or recording coronavirus passes or DCCs presented to a controller is strictly prohibited.
+The CoronaCheck Scanner app is used to regulate access to a certain event or location by checking if someone has a coronavirus entry pass or EU DCC. This is only possible when a person shows a valid coronavirus entry pass or EU DCC. When using the CoronaCheck Scanner app, it is not allowed to capture a coronavirus entry pass or EU DCC in any way, including but not limited to taking a screenshot. The CoronaCheck Scanner app may only be used to read a coronavirus entry pass or EU DCC. Saving or recording coronavirus entry passes or EU DCCs presented to a controller is strictly prohibited.
 
 ## Security
 
@@ -127,7 +127,7 @@ VWS may change the terms if and when VWS deems necessary. The date and version v
 
 ## Termination of the CoronaCheck Scanner app
 
-Checking coronavirus passes and DCCs to allow access is a temporary crisis measure. This means what will happen in the future cannot be predicted. For this reason, VWS can decide at any time to terminate use of the CoronaCheck Scanner app. Should this happen, you will be informed via the [CoronaCheck website](https://coronacheck.nl/en).  
+Checking coronavirus entry passes and EU DCCs to allow access is a temporary crisis measure. This means what will happen in the future cannot be predicted. For this reason, VWS can decide at any time to terminate use of the CoronaCheck Scanner app. Should this happen, you will be informed via the [CoronaCheck website](https://coronacheck.nl/en).  
 
 ## Applicable law and competent court
 
@@ -141,4 +141,4 @@ If any part of these terms is illegal, not valid or unenforceable, such will not
 
 If you have a question of complaint about the CoronaCheck Scanner app, please consult the [CoronaCheck website](https://coronacheck.nl/en).  
 
-Last updated: 23 June 2021. 
+Last updated: 21 February 2022. 
