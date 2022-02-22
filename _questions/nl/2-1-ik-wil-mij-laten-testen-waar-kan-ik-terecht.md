@@ -7,6 +7,8 @@ redirect_from:
     - /nl/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
     - /testafspraak
     - /nl/testafspraak
+featuredHome: true
+featuredHomeIndex: 3
 ---
 ## Testen voor toegang in Nederland
 
