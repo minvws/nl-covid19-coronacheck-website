@@ -19,19 +19,16 @@ Go to [www.coronacheck.nl/en/print](/print) and make create a new vaccination ce
 </div>
 </details>
 
-
-For every vaccination, you’ll receive a separate international QR code with the date of the injection. You can read more about this on: [Why do I have a separate international QR code for every vaccination I’ve had? And which one should I use?](/en/faq/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-qr-code/) You will only receive one Dutch QR code with all your vaccination details, which shows the date of your last vaccination.
+For every vaccination, you’ll receive a separate international QR code with the date of the injection. You can read more about this on: [Why do I have a separate international QR code for every vaccination I’ve had? And which one should I use?](/en/faq/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-qr-code/)
 
 <h2 class="h2-question">Have you received two vaccinations and then a booster?</h2>
 
-You will then see three vaccination doses in your Dutch certificate. Your international certificate contains three QR codes with doses registered as ‘1/2', ‘2/2’ and ‘3/3’.
+Your international certificate contains three QR codes with doses registered as ‘1/2’, ‘2/2’ and ‘3/3’.
 
 <h2 class="h2-question">Have you had coronavirus and a vaccination? Or have you received a Janssen vaccination and then a booster?</h2>
 
-You will then see two vaccination doses in your Dutch certificate. Your international certificate contains two QR codes with doses registered as: 1/1 and 2/1. This is to indicate that your primary vaccination series holds one vaccination. This is automatically changed in the CoronaCheck-app on 1 February 2022. It can take up to 14 days for this change to be visible.
+Your international certificate contains two QR codes with doses registered as: 1/1 and 2/1. This is to indicate that your primary vaccination series holds one vaccination.
 
 ## More information
 
 Have you received one or more vaccinations abroad? Read more about registering your vaccinations on {{ site.data.links.buitenlandvaccinatie[page.lang] }}.
-
-  
