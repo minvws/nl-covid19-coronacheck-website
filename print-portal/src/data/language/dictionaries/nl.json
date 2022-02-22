@@ -483,6 +483,6 @@
     "tooBusy": "Het is erg druk op dit moment. Daardoor kun je niet inloggen. Wil je het op een later moment nog eens proberen?",
     "template": {
         "footer": "\n    <div class=\"footer-links footer-links--print-portal\">\n        <div class=\"footer-links-col ___desktop-50\">\n            <div class=\"footer-logos-info\">\n                <h2 class=\"screen-reader-text\">Colofon<\/h2>\n                CoronaCheck en CoronaCheck Scanner zijn ontwikkeld door het ministerie van Volksgezondheid, Welzijn\n                en Sport. Zowel de apps als de papieren versie via CoronaCheck.nl waren niet tot stand gekomen zonder\n                de hulp van tientallen experts en ervaringsdeskundigen. Ook heeft een grote open source community\n                tijdens de ontwikkeling meegekeken en getest.\n            <\/div>\n            <div class=\"footer-attribution\">\n                <h3 class=\"footer-attribution__title\">Mede mogelijk gemaakt door<\/h3>\n                <img src=\"assets\/img\/Logo_EU_Negative_nl.svg\" alt=\"Logo Europese Commissie\" width=\"175\" height=\"48\" \/>\n            <\/div>\n        <\/div>\n        <div class=\"footer-links-col ___desktop-50\">\n            <h2>Heb je vragen over CoronaCheck?<\/h2>\n            <p>Lees dan de <a href=\"https:\/\/www.coronacheck.nl\/nl\/faq\" target=\"_blank\" rel=\"noopener noreferrer\">meestgestelde vragen<\/a>.<\/p>\n        <\/div>\n    <\/div>\n"
-    },
+    }
   }
   
