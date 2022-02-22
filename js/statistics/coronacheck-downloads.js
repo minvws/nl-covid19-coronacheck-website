@@ -46,5 +46,6 @@ CC_downloads_plot = [
     {"downloadnr": 15.185929, "date": "2022-01-30"},
     {"downloadnr": 15.339548, "date": "2022-02-06"},
     {"downloadnr": 15.339548, "date": "2022-02-06"},
-    {"downloadnr": 15.468948, "date": "2022-02-13"},
+    {"downloadnr": 15.469220, "date": "2022-02-13"},
+    {"downloadnr": 15.561861, "date": "2022-02-20"},
 ]
