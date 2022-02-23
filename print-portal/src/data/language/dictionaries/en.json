@@ -27,11 +27,6 @@
             "userConsentText": "I have read the <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> and understand how CoronaCheck processes my data.",
             "noConsentError": "Give consent to the privacy statement first"
         },
-        "browserNotSupported": {
-            "pageHeader": "Internet browser too old",
-            "pageIntro": "<p>The internet browser you are using is too old to load this page. Please download a newer browser. For example:<br><br><a href=\"https:\/\/www.google.com\/chrome\" target=\"_blank\" rel=\"noopener noreferrer\">Google Chrome<\/a><br><br><a href=\"https:\/\/www.mozilla.org\/firefox\" target=\"_blank\" rel=\"noopener noreferrer\">Mozilla Firefox<\/a><br><br><a href=\"https:\/\/www.microsoft.com\/edge\" target=\"_blank\" rel=\"noopener noreferrer\">Microsoft Edge<\/a><\/p>",
-            "button": "Back to the homepage of CoronaCheck.nl"
-        },
         "choiceProof": {
             "pageHeader": "What certificate do you want to make?",
             "pageIntro": "",
@@ -44,7 +39,7 @@
         },
         "choiceTestLocation": {
             "pageHeader": "Where have you been tested?",
-            "pageIntro": "<p>Indicate whether you were tested at the GGD or at a different test location.<\/p>",
+            "pageIntro": "<p>Does the test point out you don't have coronavirus? Then you can use the negative test result to create a certificate. Please specify where you were tested.<\/p>",
             "choiceGGDHead": "GGD",
             "choiceGGDBody": "Log in with DigiD",
             "loginDigid": "I don’t have DigiD",
@@ -74,7 +69,7 @@
         },
         "collectRecovery": {
             "pageHeader": "Retrieve recovery details",
-            "pageIntro": "<p>Have you had coronavirus? Then you can make a recovery certificate of the positive test result. Log in with DigiD to retrieve your test result.<\/p><p>Your recovery certificate will be valid 11 days after the positive test result. You also need to be symptom-free.<\/p>"
+            "pageIntro": "<p>Have you had coronavirus? Then you can make a recovery certificate of the positive test result. Log in with DigiD to retrieve your test result.<\/p>"
         },
         "collectPositiveTest": {
             "pageHeader": "Retrieve test result"
@@ -97,8 +92,8 @@
             "exampleCode": "BRB-YYYYYYYYY1-Z2"
         },
         "negativeTestOverview": {
-            "pageHeader": "Check your test result",
-            "pageIntro": "<p>This test result is retrieved from the test location.<\/p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.<\/p>",
+            "pageHeader": "Are the details correct?",
+            "pageIntro": "<p>This test result is retrieved from the test location. If the details are correct, you can create a certificate.<\/p>",
             "createTestProofButton": "Make certificate",
             "retrievedTestResult": "Retrieved test result"
         },
@@ -121,7 +116,7 @@
         },
         "recoveryNone": {
             "pageHeader": "No positive test result available",
-            "pageIntro": "<p>Have you just been tested? It may take a few hours before your result is available. Please try again later.</p><p>Were you tested longer ago at the GGD? Then please contact the GGD's backoffice on <a href=\"tel:08005090\">0800-5090</a> to verify if your details were entered into the system correctly.</p><p>Were you tested longer ago at another location? Then please fill out the <a href=\"https://vragen.coronatest.nl/en/herstelbewijs-elders\" target=\"_blank\" rel=\"noopener noreferrer\">application form coronavirus recovery pass for people who weren't tested at the GGD</a>.</p>"
+            "pageIntro": "<p>Have you just been tested? It may take a few hours before your result is available. Please try again later.<\/p><p>Were you tested longer ago at the GGD? Then please contact the GGD's backoffice on 0800-5090 to verify if your details were entered into the system correctly.<\/p><p>Were you tested longer ago at another location? Then please fill out the <a href=\"https:\/\/vragen.coronatest.nl\/en\/herstelbewijs-elders\" target=\"_blank\" rel=\"noopener noreferrer\">application form coronavirus recovery pass for people who weren't tested at the GGD<\/a>.<\/p>"
         },
         "recoveryInvalid": {
             "pageHeader": "Positive test result is not suitable",
@@ -164,14 +159,13 @@
                     },
                     "whyNoDutchCertificate": {
                         "summary": "Had coronavirus before your first vaccination?",
-                        "content": "<p>Then you're normally considered fully vaccinated with one vaccination. Retrieve your positive test result to add this to your vaccination certificate.</p>",
+                        "content": "<p>Then you're normally considered fully vaccinated with one vaccination. Retrieve your positive test result to add this to your vaccination certificate.<\/p>",
                         "label": "Retrieve my test result"
                     },
                     "whyNoEuropeanRecovery": {
                         "summary": "Why didn’t I receive an international recovery certificate?",
                         "content": "<p>Your recovery certificate isn't valid internationally. The reason for this could be that the type of test is not accepted, or that the test is no longer valid abroad. An international recovery certificate can only be made with a PCR-test that is less than 180 days old. Read more about the possible causes on the <a href=\"https:\/\/coronacheck.nl\/en\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a>.<\/p>"
                     },
-                   
                     "whyNoEuropeanTest": {
                         "summary": "Why didn’t I receive an international test certificate?",
                         "content": "<p>You may not have received an international test certificate because your type of test isn’t accepted abroad. Get tested again for a certificate that is also valid abroad.<\/p>"
@@ -253,7 +247,7 @@
             "unknownTestProvider": "This code is invalid. A valid code looks like this: VAC-YYYYYYYYY1-F2.",
             "invalidTestCode": "Invalid approval code",
             "tokenExpired": "Approval code has expired",
-            "invalidVerificationCode": "Invalid verification code",
+            "invalidVerificationCode": "Invalid verification code. You received this code via text or email.",
             "emptyVerificationCode": "Verification code not entered",
             "sendCode": "Send code"
         },
@@ -273,6 +267,11 @@
         "errorCode99552": {
             "pageHeader": "Sorry, we cannot create a certificate",
             "pageIntro": "<p>The personal details on your vaccination approval and your negative test result do not match. As a result, we cannot create a visitor pass.<br><br>Please check which details are incorrect. Then please speak to the desk that reviewed your vaccination or contact your test location. They can help you change these details.<\/p>"
+        },
+        "browserNotSupported": {
+            "pageHeader": "Internet browser too old",
+            "pageIntro": "<p>The internet browser you are using is too old to load this page. Please download a newer browser. For example:<br><br><a href=\"https:\/\/www.google.com\/chrome\" target=\"_blank\" rel=\"noopener noreferrer\">Google Chrome<\/a><br><br><a href=\"https:\/\/www.mozilla.org\/firefox\" target=\"_blank\" rel=\"noopener noreferrer\">Mozilla Firefox<\/a><br><br><a href=\"https:\/\/www.microsoft.com\/edge\" target=\"_blank\" rel=\"noopener noreferrer\">Microsoft Edge<\/a><\/p>",
+            "button": "Back to the homepage of CoronaCheck.nl"
         }
     },
     "components": {
@@ -413,7 +412,7 @@
             },
             "didNotGetTestedYet": {
                 "head": "I haven’t been tested yet",
-                "body": "<p>You must get tested before you make a QR code. You can only turn a negative test result into a QR code.<\/p><p>A test certificate is valid until 24 hours after the moment you've been tested. So schedule your test on time. And make sure your QR code is scanned at the entrance within 24 hours.<\/p><p><a href=\"https:\/\/coronacheck.nl\/en\/testafspraak-in-app\" class=\"btn\" target=\"_blank\" rel=\"noopener noreferrer\">Make an appointment\n<\/a><\/p>"
+                "body": "<p>For a test certificate, you must take a test first at an affiliated test location. Does the test prove you don't have coronavirus? Then you can make a certificate.<\/p><p><a href=\"https:\/\/coronacheck.nl\/en\/testafspraak-in-app\" class=\"btn\" target=\"_blank\" rel=\"noopener noreferrer\">Make an appointment\n<\/a><\/p>"
             },
             "areYouSureToCancel": {
                 "head": "Are you sure you want to stop?",
