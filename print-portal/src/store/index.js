@@ -39,8 +39,8 @@ const getters = {
         }
         return false
     },
-    isUserConsentDisabledOnHome: ({ isUserConsentDisabled }) => {
-        return isUserConsentDisabled
+    isUserConsentDisabledOnHome: ({ isUserConsentDisabledOnHome }) => {
+        return isUserConsentDisabledOnHome
     },
     getEuBrand: (state) => (euBrandCode) => {
         return state.holderConfig.euBrands.find(euBrand => euBrand.code === euBrandCode)
