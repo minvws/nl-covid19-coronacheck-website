@@ -49,9 +49,13 @@ export default {
             if (this.type === FilterTypes.RECOVERY && this.regionType === RegionTypes.DOMESTIC) {
                 details.push('whyNoEuropeanRecovery');
             }
+
             if (this.type === FilterTypes.NEGATIVE_TEST && this.regionType === RegionTypes.EUROPEAN) {
                 if (this.$store.getters.is1G) details.push('whyNoDomesticTest1G');
                 else details.push('whyNoDomesticTest');
+            }
+            if (this.type === FilterTypes.NEGATIVE_TEST && this.regionType === RegionTypes.BOTH) {
+                if (this.$store.getters.is1G) details.push('whyNoDomesticTest1G');
             }
             if (this.type === FilterTypes.NEGATIVE_TEST && this.regionType === RegionTypes.DOMESTIC) {
                 details.push('whyNoEuropeanTest');
