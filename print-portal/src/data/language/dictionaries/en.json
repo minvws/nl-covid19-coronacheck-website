@@ -25,8 +25,7 @@
             "pageBody1G": "<h4>Nederlands bewijs voor 1G-toegang<\/h4><p>Bezoek je een plek in Nederland waar om een coronabewijs wordt gevraagd? Dan krijg je alleen toegang met een testbewijs (1G-toegang). Dit kun je maken als je negatief getest bent en geen corona hebt.<p><h4>Internationaal bewijs voor in het buitenland</h4><p>Ben je in het buitenland of ga je de grens over? Dan heb je een internationaal bewijs nodig. Je kunt een internationaal bewijs maken als:<ul class=\"ul--with-padding\"><li>Je bent gevaccineerd<\/li><li>Je positief bent getest en hersteld van corona<\/li><li>Je negatief bent getest en geen corona hebt<\/li><\/ul></p><h4>Over jou gegevens<\/h4><p>In de <a href=\"https:\/\/coronacheck.nl\/nl\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacyverklaring<\/a> staat hoe CoronaCheck omgaat met jou gegevens.<\/p>",
             "userConsentHeader": "Start making a certificate on paper",
             "userConsentText": "I have read the <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> and understand how CoronaCheck processes my data.",
-            "noConsentError": "Give consent to the privacy statement first",
-            "test": ""
+            "noConsentError": "Give consent to the privacy statement first"
         },
         "browserNotSupported": {
             "pageHeader": "Internet browser too old",
