@@ -186,15 +186,15 @@
                     },
                     "whyNoDomesticVaccination1G": {
                         "summary": "Why didn’t I receive a Dutch vaccination certificate?",
-                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
+                        "content": "<p>Currently, in the Netherlands the coronavirus entry pass is only used in places you can only enter with a test certificate (1G access). A vaccination certificate is not needed for access within the Netherlands. Read more on <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/tackling-new-coronavirus-in-the-netherlands\/measures-announced\" target=\"_blank\" rel=\"noopener noreferrer\">this government page about the measures<\/a>.<\/p>"
                     },
                     "whyNoDomesticRecovery1G": {
-                        "summary": "Why didn’t I receive an Dutch recovery certificate?",
-                        "content": "<p>Dat je geen Nederlands testbewijs hebt gekregen, kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.<\/p>"
+                        "summary": "Why didn’t I receive a Dutch recovery certificate?",
+                        "content": "<p>Currently, in the Netherlands the coronavirus entry pass is only used in places you can only enter with a test certificate (1G access). A vaccination certificate is not needed for access within the Netherlands. Read more on <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/tackling-new-coronavirus-in-the-netherlands\/measures-announced\" target=\"_blank\" rel=\"noopener noreferrer\">this government page about the measures<\/a>.<\/p>"
                     },
                     "whyNoDomesticTest1G": {
-                        "summary": "Why don’t I get a Dutch test certificate?",
-                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
+                        "summary": "Where can I use my Dutch certificate?",
+                        "content": "<p>A test certificate is valid anywhere in the Netherlands where you are asked for a coronavirus entry pass <a href=\"https:\/\/coronacheck.nl\/en\/accesspolicy\/1g-access-ccweb\" target=\"_blank\" rel=\"noopener noreferrer\">(1G access)<\/a>.<\/p>"
                     }
                 }
             }
