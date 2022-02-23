@@ -12,7 +12,8 @@ export default {
             if (proof.domestic) {
                 dateValidFromString = Number(proof.domestic.attributes.validFrom) * 1000;
             } else {
-                dateValidFromString = proof.european[0].dcc.r[0].df;
+                const certificate = proof.european.find(({ dcc }) => dcc.r?.[0].df)
+                dateValidFromString = certificate.dcc.r[0].df;
             }
             const dateValidFrom = new Date(dateValidFromString).getTime();
             return dateValidFrom > today;
