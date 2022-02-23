@@ -6,17 +6,29 @@ export default {
     components: { Print },
     computed: {
         recoveryValidInFuture() {
-            const proof = this.$store.state.qrs.proof;
-            let dateValidFromString;
             const today = new Date().getTime();
-            if (proof.domestic) {
-                dateValidFromString = Number(proof.domestic.attributes.validFrom) * 1000;
-            } else {
-                const certificate = proof.european.find(({ dcc }) => dcc.r?.[0].df)
-                dateValidFromString = certificate.dcc.r[0].df;
+            const proof = this.$store.state.qrs.proof;
+
+            const isAfterToday = (dateConstructorArg) => {
+                const dateValidFrom = new Date(dateConstructorArg).getTime();
+                return dateValidFrom > today;
             }
-            const dateValidFrom = new Date(dateValidFromString).getTime();
-            return dateValidFrom > today;
+
+            if (proof.domestic) {
+                const validFromInt = Number(proof.domestic.attributes.validFrom) * 1000;
+                return isAfterToday(validFromInt)
+            } else {
+                // See if validFrom in any certificate is after today
+                return proof.european.some(({ dcc }) => {
+                    // Skip if not a recovery certificate
+                    if (!dcc.r || dcc.r.length === 0) {
+                        return false
+                    }
+
+                    const validFromString = dcc.r[0].df
+                    return isAfterToday(validFromString)
+                })
+            }
         }
     },
     methods: {
