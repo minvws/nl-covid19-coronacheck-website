@@ -180,11 +180,11 @@
                     },
                     "whyNoDomesticVaccination1G": {
                         "summary": "Waarom krijg ik geen Nederlands vaccinatiebewijs?",
-                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-covid-19\/algemene-coronaregels\/aangekondigde-maatregelen\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
+                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.coronacheck.nl\/nl\/aangekondigde-maatregelen\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
                     },
                     "whyNoDomesticRecovery1G": {
                         "summary": "Waarom krijg ik geen Nederlands herstelbewijs?",
-                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een herstelbewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-covid-19\/algemene-coronaregels\/aangekondigde-maatregelen\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
+                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een herstelbewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.coronacheck.nl\/nl\/aangekondigde-maatregelen\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
                     },
                     "whyNoDomesticTest1G": {
                         "summary": "Waar is mijn Nederlandse bewijs geldig?",
