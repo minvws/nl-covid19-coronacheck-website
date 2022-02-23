@@ -25,6 +25,9 @@ export default {
         consent() {
             return this.$store.state.userConsent;
         },
+        isUserConsentDisabledOnHome () {
+            return this.$store.getters.isUserConsentDisabledOnHome;
+        },
         intro () {
             const intro = [
                 this.$t('views.home.pageIntro'),
@@ -39,6 +42,10 @@ export default {
         },
         next() {
             this.clickedNext = true;
+            if (this.isUserConsentDisabledOnHome) {
+                // when isUserConsentDisabledOnHome is true, set consent to true
+                this.setUserConsent(true)
+            }
             if (this.consent) {
                 this.$router.push({ name: 'ChoiceProof' });
             }
@@ -60,13 +67,15 @@ export default {
                 :intro="intro"/>
             <div class="section-block">
                 <h2 class="screen-reader-text">{{ $t('views.home.userConsentHeader') }}</h2>
-                <UserConsent
-                    @update="setUserConsent"
-                    :consent="consent"
-                    :label="$t('views.home.userConsentText')"/>
-                <ErrorLabel
-                    v-if="clickedNext && !consent"
-                    :label="$t('views.home.noConsentError')"/>
+                <template v-if="!isUserConsentDisabledOnHome">
+                    <UserConsent
+                        @update="setUserConsent"
+                        :consent="consent"
+                        :label="$t('views.home.userConsentText')"/>
+                    <ErrorLabel
+                        v-if="clickedNext && !consent"
+                        :label="$t('views.home.noConsentError')"/>
+                </template>
             </div>
             <div class="section-block">
                 <CcButton

@@ -17,6 +17,7 @@ const state = {
     // general
     holderConfig: null,
     userConsent: false,
+    isUserConsentDisabledOnHome: true, // when true, user does have to accept privacy-consent on home, UserConsent component is not rendered
     // negativeTest v2 flow
     testCode: '',
     verificationNeeded: false,
@@ -37,6 +38,9 @@ const getters = {
             return policies[0].toUpperCase() === '1G'
         }
         return false
+    },
+    isUserConsentDisabledOnHome: ({ isUserConsentDisabled }) => {
+        return isUserConsentDisabled
     },
     getEuBrand: (state) => (euBrandCode) => {
         return state.holderConfig.euBrands.find(euBrand => euBrand.code === euBrandCode)
