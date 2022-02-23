@@ -17,7 +17,6 @@ title: CoronaCheck Scanner Terms of Use
 5. [Why use CoronaCheck Scanner?](#why-use-CoronaCheck-Scanner)
 6. [The CoronaCheck Scanner app does not offer protection from coronavirus](#the-CoronaCheck-Scanner-app-does-not-offer-protection-from-coronavirus)
 7. [Privacy](#privacy)
-    1. [Purpose limitation](#purpose-limitation)
 8. [Security](#security)
 9. [Functioning of the CoronaCheck Scanner app](#functioning-of-the-CoronaCheck-Scanner-app) 
 10. [Liability](#liability)
@@ -30,10 +29,10 @@ title: CoronaCheck Scanner Terms of Use
 
 ## Used abbreviations
 
-- **AVG**: Algemene Verordening Gegevensbescherming (GDPR) 
-- **Controller**: Person checking the validity of a coronavirus entry pass and EU DCC 
-- **Coronavirus entry pass**:Certificate created using vaccination, test and/or recovery status shown by the person to a controller for access to an activity or facility in the Netherlands
-- **DCC	EU Digital COVID Certificate**: an inoperable certificate containing information about vaccination, test and/or recovery status of the holder, issued in the context of the COVID-19 pandemic
+- **Controller**: Person checking the validity of a coronavirus entry pass and EU DCC
+- **Coronavirus entry pass**: Certificate created using a negative test result shown by the person to a controller for access to an activity or facility in the Netherlands.
+- **EU DCC**: EU Digital COVID Certificate: an inoperable certificate containing information about vaccination, test and/or recovery status of the holder, issued in the context of the COVID-19 pandemic.
+- **GDPR**: General Data Protection Regulation (AVG: Algemene Verordening Gegevensbescherming)
 - **VWS**:The Ministry of Health, Welfare and Sport
 
 ## About the terms of use
@@ -46,7 +45,7 @@ In these terms of use you will read how CoronaCheck Scanner works, what you’re
 
 To check the validity of a coronavirus entry pass or EU DCC, you need CoronaCheck Scanner. You can download CoronaCheck Scanner for free from the Apple App Store (for iOS) and the Google Play Store (for Android) and install it on your smartphone or tablet. Please only download CoronaCheck Scanner from the App Store or Google Play Store and watch out for fake apps. CoronaCheck Scanner is only supported on iOS version 11 and up and Android version 6 and up.
 
-After CoronaCheck Scanner has been downloaded and these terms are accepted, CoronaCheck Scanner can be used. Before you can use the app, you must read these terms of use and accept them. You can find these terms of use on [CoronaCheck website](/en/gebruikersvoorwaarden.html).
+After CoronaCheck Scanner has been downloaded and these terms are accepted, CoronaCheck Scanner can be used. Before you can use the app, you must read these terms of use and accept them. You can find these terms of use on the [CoronaCheck website](/en/gebruikersvoorwaarden.html).
 
 ### Scanning a coronavirus entry pass or EU DCC
 
@@ -74,7 +73,7 @@ If you no longer wish to use the app, you can uninstall the CoronaCheck Scanner 
 
 ## For whom is the CoronaCheck Scanner app intended?
 
-The app is publicly available in the Apple App Store or Google Play Store. A controller can deny access using the CoronaCheck Scanner app if persons are unable to display a coronavirus entry pass or EU DCC or when the CoronaCheck Scanner app shows a red screen after scanning a corona admission ticket.
+The app is publicly available in the Apple App Store or Google Play Store. A controller can deny access using the CoronaCheck Scanner app if persons are unable to display a coronavirus entry pass or EU DCC or when the CoronaCheck Scanner app shows a red screen after scanning a coronavirus entry pass or EU DCC.
 
 ## Why use CoronaCheck Scanner?
 
@@ -94,9 +93,7 @@ The CoronaCheck Scanner app is used to regulate access to a certain event or loc
 
 ## Security
 
-When using CoronaCheck Scanner, connections are secured and encrypted by Transport Layer Security (TLS), Public Key Infrastructure (PKI) and certificate pinning.
-In addition, transport encryption (TLS) is used for all connections in combination with certificates from the Dutch Public Key Infrastructure (PKI) Overheid and certificate pinning. The latter means that CoronaCheck Scanner only connects to servers that have certificates issued by the PKI Overheid.
-
+When using CoronaCheck Scanner, connections are secured and encrypted by Transport Layer Security (TLS), Public Key Infrastructure (PKI) and certificate pinning. In addition, transport encryption (TLS) is used for all connections in combination with certificates from the Dutch Public Key Infrastructure (PKI) Overheid and certificate pinning. The latter means that CoronaCheck Scanner only connects to servers that have certificates issued by the PKI Overheid.
 Important configuration files, e.g. in which the functioning of the app can be influenced, are digitally signed. This process also exclusively uses and accepts certificates issues under the supervision of the Dutch government.
 
 ## Functioning of the CoronaCheck Scanner app
@@ -113,7 +110,7 @@ VWS is not liable for any damages suffered through the use of the CoronaCheck Sc
 
 VWS can stop offering the app or change the content at any time (also [see Termination of the CoronaCheck Scanner app](#termination-of-the-coronacheck-scanner-app)).
 
-VWS it not liable for any damage or costs incurred by you or third parties, for whatever reasons, because of the use or inability to use the app.
+VWS is not liable for any damage or costs incurred by you or third parties, for whatever reasons, because of the use or inability to use the app.
 
 ## Intellectual property rights
 
