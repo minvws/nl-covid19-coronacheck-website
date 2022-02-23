@@ -180,11 +180,11 @@
                     },
                     "whyNoDomesticVaccination1G": {
                         "summary": "Why didn’t I receive a Dutch vaccination certificate?",
-                        "content": "<p>Currently, in the Netherlands the coronavirus entry pass is only used in places you can only enter with a test certificate (1G access). A vaccination certificate is not needed for access within the Netherlands. Read more on <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/tackling-new-coronavirus-in-the-netherlands\/measures-announced\" target=\"_blank\" rel=\"noopener noreferrer\">this government page about the measures<\/a>.<\/p>"
+                        "content": "<p>Currently, in the Netherlands the coronavirus entry pass is only used in places you can only enter with a test certificate (1G access). A vaccination certificate is not needed for access within the Netherlands. Read more on <a href=\"https:\/\/coronacheck.nl\/en\/announced-measures\" target=\"_blank\" rel=\"noopener noreferrer\">this government page about the measures<\/a>.<\/p>"
                     },
                     "whyNoDomesticRecovery1G": {
                         "summary": "Why didn’t I receive a Dutch recovery certificate?",
-                        "content": "<p>Currently, in the Netherlands the coronavirus entry pass is only used in places you can only enter with a test certificate (1G access). A vaccination certificate is not needed for access within the Netherlands. Read more on <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/tackling-new-coronavirus-in-the-netherlands\/measures-announced\" target=\"_blank\" rel=\"noopener noreferrer\">this government page about the measures<\/a>.<\/p>"
+                        "content": "<p>Currently, in the Netherlands the coronavirus entry pass is only used in places you can only enter with a test certificate (1G access). A vaccination certificate is not needed for access within the Netherlands. Read more on <a href=\"https:\/\/coronacheck.nl\/en\/announced-measures\" target=\"_blank\" rel=\"noopener noreferrer\">this government page about the measures<\/a>.<\/p>"
                     },
                     "whyNoDomesticTest1G": {
                         "summary": "Where can I use my Dutch certificate?",
