@@ -5,6 +5,8 @@ title: Ik wil mij laten testen, waar kan ik terecht?
 redirect_from: 
     - /nl/faq-in-app/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
     - /nl/faq-in-app/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
+featuredHome: true
+featuredHomeIndex: 3
 ---
 ## Testen voor toegang in Nederland
 
