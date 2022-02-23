@@ -185,15 +185,15 @@
                     },
                     "whyNoDomesticVaccination1G": {
                         "summary": "Waarom krijg ik geen Nederlands vaccinatiebewijs?",
-                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
+                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-covid-19\/algemene-coronaregels\/aangekondigde-maatregelen\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
                     },
                     "whyNoDomesticRecovery1G": {
                         "summary": "Waarom krijg ik geen Nederlands herstelbewijs?",
-                        "content": "<p>Dat je geen Nederlands testbewijs hebt gekregen, kan komen doordat de geldigheidsduur van een test in Nederland korter is dan in andere landen. Laat je opnieuw testen voor een bewijs dat ook in Nederland geldig is.<\/p>"
+                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een herstelbewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-covid-19\/algemene-coronaregels\/aangekondigde-maatregelen\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
                     },
                     "whyNoDomesticTest1G": {
-                        "summary": "Waarom krijg ik geen Nederlands testbewijs?",
-                        "content": "<p>In Nederland wordt het coronatoegangsbewijs nu alleen nog gebruikt op plekken waar je alleen met een testbewijs naar binnen kunt (1G-toegang). Een vaccinatiebewijs is dus niet nodig voor toegang in Nederland. Lees meer op <a href=\"https:\/\/www.rijksoverheid.nl\/onderwerpen\/coronavirus-coronabewijs-en-coronatoegangsbewijs\/vaccinatiebewijs\/eisen-en-geldigheid\" target=\"_blank\" rel=\"noopener noreferrer\">deze overheidspagina over de maatregelen<\/a>.<\/p>"
+                        "summary": "Waar is mijn Nederlandse bewijs geldig?",
+                        "content": "<p>Overal in Nederland waar om een coronabewijs wordt gevraagd is een testbewijs geldig <a href=\"https:\/\/coronacheck.nl\/toegangsregels\/1g-toegang-ccweb\" target=\"_blank\" rel=\"noopener noreferrer\">(1G-toegang)<\/a>.<\/p>"
                     }
                 }
             }
