@@ -3,7 +3,7 @@ set: 2
 index: 3
 title: Wanneer kan ik een herstelbewijs maken?
 ---
-Op dit moment kun je geen Nederlands herstelbewijs maken, omdat herstelbewijzen momenteel niet worden gebruikt.
+Op dit moment kun je geen Nederlands herstelbewijs maken, omdat herstelbewijzen momenteel niet worden gebruikt in Nederland.
 
 Je kan wel een internationaal herstelbewijs maken. Hiervoor gelden een aantal voorwaarden:
 
