@@ -24,6 +24,16 @@ export default {
     computed: {
         consent() {
             return this.$store.state.userConsent;
+        },
+        isUserConsentDisabledOnHome () {
+            return this.$store.getters.isUserConsentDisabledOnHome;
+        },
+        intro () {
+            const intro = [
+                this.$t('views.home.pageIntro'),
+                this.$store.getters.is1G ? this.$t('views.home.pageBody1G') : this.$t('views.home.pageBody')
+            ]
+            return intro.join(' ')
         }
     },
     methods: {
@@ -32,6 +42,10 @@ export default {
         },
         next() {
             this.clickedNext = true;
+            if (this.isUserConsentDisabledOnHome) {
+                // when isUserConsentDisabledOnHome is true, set consent to true
+                this.setUserConsent(true)
+            }
             if (this.consent) {
                 this.$router.push({ name: 'ChoiceProof' });
             }
@@ -50,16 +64,18 @@ export default {
         <div class="section">
             <PageIntro
                 :head="$t('views.home.pageHeader')"
-                :intro="$t('views.home.pageIntro')"/>
+                :intro="intro"/>
             <div class="section-block">
                 <h2 class="screen-reader-text">{{ $t('views.home.userConsentHeader') }}</h2>
-                <UserConsent
-                    @update="setUserConsent"
-                    :consent="consent"
-                    :label="$t('views.home.userConsentText')"/>
-                <ErrorLabel
-                    v-if="clickedNext && !consent"
-                    :label="$t('views.home.noConsentError')"/>
+                <template v-if="!isUserConsentDisabledOnHome">
+                    <UserConsent
+                        @update="setUserConsent"
+                        :consent="consent"
+                        :label="$t('views.home.userConsentText')"/>
+                    <ErrorLabel
+                        v-if="clickedNext && !consent"
+                        :label="$t('views.home.noConsentError')"/>
+                </template>
             </div>
             <div class="section-block">
                 <CcButton

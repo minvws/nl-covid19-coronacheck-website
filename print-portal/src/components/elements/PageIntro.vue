@@ -51,7 +51,7 @@ export default {
     }
 
     #page-intro {
-
+        padding-bottom: 24px;
         a {
             text-decoration: underline;
         }

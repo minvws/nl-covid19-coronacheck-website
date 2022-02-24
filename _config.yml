@@ -156,8 +156,6 @@ exclude:
   - auth.php
   - auth2.php
   - generate-statistics-graphic.html
-  - js/statistics/coronacheck-downloads.js
-  - js/statistics/scanner-downloads.js
 
 plugins:
   - "jekyll-github-metadata"
