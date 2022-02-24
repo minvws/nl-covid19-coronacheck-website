@@ -35,13 +35,3 @@ export default {
         </div>
     </Page>
 </template>
-
-<style lang="scss">
-    .section {
-        &-block {
-            button{
-                margin-top: 24px;
-            }
-        }
-    }
-</style>

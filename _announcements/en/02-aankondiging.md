@@ -7,9 +7,4 @@ title: ''
 # Choose a style: error or info
 style: info
 ---
-As of February 8, the validity of the coronavirus entry pass has changed:
-
-- The vaccination certificate is valid for 270 days after complete vaccination. This is applied to everyone of 18 years or older. No validity has yet been established for the booster vaccination. The booster will therefore not yet expire;
-- The recovery certificate is valid for up to 180 days after the positive test.
-
-As a result, the rules for the coronavirus entry pass in the Netherlands and the International coronavirus pass (EU DCC) used to travel, are equalized as much as possible. The validity of the certificates will be changed automatically in the CoronaCheck-app as of February 8, this may take up to 14 days.
+As of the 25th of February, the corona virus entry pass will within the Netherlands only be used at indoor activities with over 500 visitors, without assigned seating. At these locations, you can only get access with a test certificate (1G access). <a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/measures-announced" rel="noopener noreferrer" target="_blank">Read more on this government page about the announced measures</a>.

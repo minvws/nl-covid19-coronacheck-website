@@ -1,8 +1,7 @@
 .proof-event {
-    padding: $grid-x2 0;
+    padding: $grid-x2-5 0;
     border-bottom: 1px solid $color-mediumgrey;
     font-size: 17px;
-    margin-bottom: $grid-x2;
     position: relative;
 
     &:first-child {
@@ -33,7 +32,7 @@
 }
 
 .proof-events {
-    margin: $length-l 0;
+    margin: 0 0 $length-l 0;
 }
 
 .proof-event__wrapper:not(:first-child) {

@@ -12,7 +12,8 @@ module.exports = {
         'dcc-pdf-tools',
         'jspdf',
         'vue-i18n',
-        'oidc-client'
+        'oidc-client',
+        'date-fns'
     ]
     // , devServer: {
     //     open: process.platform === 'darwin',
