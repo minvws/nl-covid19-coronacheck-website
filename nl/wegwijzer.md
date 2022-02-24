@@ -87,9 +87,6 @@ Voor een herstelbewijs mag de positieve testuitslag maximaal 180 dagen oud zijn.
 CoronaCheck haalt de positieve testuitslagen op bij de GGD. Zowel testuitslagen van de GGD zelf, als testuitslagen van andere testlocaties kunnen worden opgehaald. Deze uitslagen moeten dan wel zijn doorgegeven aan de GGD.
 
 Meer informatie over herstelbewijzen vind je op {{ site.data.links.herstelbewijs[page.lang] }}.
-
-
-Een herstelbewijs is een bewijs dat je ooit positief getest bent op aanwezigheid van het Sars-Cov2-virus.
 </div>
 {% endcapture %}
 
