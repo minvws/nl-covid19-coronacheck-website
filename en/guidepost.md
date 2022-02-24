@@ -129,8 +129,7 @@ For positive test results from before September 8th, 2021, the type of test is n
 
 {% capture copy_testbewijs %}
 <div markdown="1">
-Only test results from test locations that are affiliated with CoronaCheck can be converted into a coronavirus pass.
-More information about test certificates can be found on {{ site.data.links.testbewijs[page.lang] }}.
+Only test results from test locations that are affiliated with CoronaCheck can be converted into a coronavirus pass. More information about test certificates can be found on [this government page about Testen voor Toegang](Https://Government.nl/test-certificate-access ) and on {{ site.data.links.testbewijs[page.lang] }}.
 
 ### Tested negative at the GGD
 It can take up to 30 hours before the results of a test are available. From the moment the GGD has the results (you can see this via {{ site.data.links.coronatest[page.lang] }}) it will take a few hours before the data can be retrieved in the CoronaCheck app (or CoronaCheck website). Is your test result already available in {{ site.data.links.coronatest[page.lang] }}, but not in the CoronaCheck app 30 hours after taking the test? Please contact the GGD on {{ site.data.links.phone-ggd[page.lang] }}.
@@ -157,7 +156,7 @@ Sometimes it can take a little longer. Didn’t receive your result? It can be f
 - Your email address is incorrect or the email may have ended up in your spam box.
 - There is a problem at the test site in reporting the results. Check Testen voor Toegang to see if there are known outages at test locations.
 
-Contact the <span lang="nl">Testen voor Toegang</span> help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+Please contact the location where you have been tested. Have you been tested via <span lang="nl">Testen voor Toegang</span>? Contact their help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
@@ -168,16 +167,18 @@ The verification code (by SMS or email) should normally arrive within a minute o
 - In case your provider sends the verification code by email, please also check your spam folder.
 - Did you perhaps provide a foreign telephone number? It happens sporadically that SMS messages to foreign numbers do not get through.
 
-Contact the <span lang="nl">Testen voor Toegang</span> help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+Please contact the location where you have been tested. Have you been tested via <span lang="nl">Testen voor Toegang</span>? Contact their help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 
 
 {% capture copy_incorrecte_testgegevens %}
 <div markdown="1"> 
-If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected.
+Please contact the location where you have been tested to your data corrected.
 
-Have you been tested via Testen voor Toegang? Contact the <span lang="nl">Testen voor Toegang</span> help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }}.
+
+Have you been tested via <span lang="nl">Testen voor Toegang</span>? Contact their help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
 </div>
 {% endcapture %}
 

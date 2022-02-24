@@ -56,8 +56,8 @@ reizen-en-vakantie:
   en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/travelling-abroad" rel="noopener noreferrer" target="_blank">Travelling abroad (information for people living in the Netherlands)</a>'
 
 testenvoorjereis: 
-  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie/coronabewijs/gratis-coronatest" rel="noopener noreferrer" target="_blank">Testen voor je reis</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Coronatest for travellers</a>'
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/negatief-testbewijs/negatieve-testuitslag-regelen-voor-uw-reis" rel="noopener noreferrer" target="_blank">Testbewijs regelen als coronabewijs voor uw reis</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/negative-test-result" rel="noopener noreferrer" target="_blank">Using a negative test result to generate a COVID Certificate for travel</a>'
 
 kvkEvenement:
   nl: '<a href="https://www.kvk.nl/corona/alles-wat-je-moet-weten-over-het-coronatoegangsbewijs/" rel="noopener noreferrer" target="_blank">Alles wat je moet weten over het coronatoegangsbewijs</a>'
@@ -130,3 +130,7 @@ entry-pass:
 maatregelen-25feb:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/aangekondigde-maatregelen" rel="noopener noreferrer" target="_blank">Coronatoegangsbewijs voor bezoekers</a>'
   en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/measures-announced" rel="noopener noreferrer" target="_blank">Announced COVID-19 measures from 25 February 2022</a>'
+
+rijksoverheid-tvt:
+  nl: '<a href="https://rijksoverheid.nl/testenvoortoegang" rel="noopener noreferrer" target="_blank">Testen voor Toegang voor bezoekers van grote evenementen</a>'
+  en: '<a href="https://www.government.nl/test-certificate-access" rel="noopener noreferrer" target="_blank">this government page about Testen voor Toegang</a>'
