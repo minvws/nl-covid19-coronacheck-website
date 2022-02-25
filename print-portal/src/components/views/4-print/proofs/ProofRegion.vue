@@ -238,7 +238,7 @@ export default {
         font-size: calc(18rem / 16);
         font-weight: 700;
         padding-bottom: 20px;
-        color: $color-link;
+        color: $color-coronacheck-link;
     }
 }
 </style>

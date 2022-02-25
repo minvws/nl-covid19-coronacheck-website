@@ -80,10 +80,6 @@ scanner-google-play-url:
   nl: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
   en: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
 
-footer-samen-logo-url: 
-  nl: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19
-  en: https://www.government.nl/topics/coronavirus-covid-19
-
 coronacheck-huawei-url:   
   nl: 
   en:  
@@ -129,10 +125,6 @@ footer-status-url:
   en: https://status.coronacheck.nl/en/
 
 footer-more-info-url: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19
-
-footer-samen-logo: 
-  nl: Alleen samen krijgen we corona onder controle. Meer informatie over CoronaCheck
-  en: Only together we can control corona. More information about CoronaCheck
 
 footer-logos-rivm-url: https://www.rivm.nl/en
 
