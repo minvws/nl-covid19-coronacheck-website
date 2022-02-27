@@ -11,6 +11,7 @@ redirect_from:
     - /en/accesspolicy/1g-certificate/
     - /en/faq/1-4-waarom-heb-ik-een-bewijs-voor-3g-toegang/
     - /en/faq/1-4-waarom-heb-ik-een-bewijs-voor-3g-toegang
+    - /en/toegangsregels/1g-certificate
 ---
 The government has announced that the corona virus measures will change as of February 25. From that moment on, the corona virus entry pass will no longer be used for 3G access (access with a vaccination, recovery or test certificate). You can only get access with a test certificate (1G access). The test certificate will only be required at indoor activities with over 500 visitors, without assigned seating. It's then no longer necessary to use a vaccination or recovery certificate within the Netherlands. In the CoronaCheck-app, these certificates will be inactive. You no longer need the Dutch vaccination or recovery certificates that you have already printed on paper.
 
