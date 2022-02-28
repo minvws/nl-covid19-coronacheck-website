@@ -9,6 +9,8 @@ redirect_from:
     - /toegangsregels/1g-bewijs/
     - /nl/toegangsregels/1g-bewijs
     - /nl/toegangsregels/1g-bewijs/
+    - /nl/faq/1-4-waarom-heb-ik-een-bewijs-voor-3g-toegang/
+    - /nl/faq/1-4-waarom-heb-ik-een-bewijs-voor-3g-toegang
 ---
 Het kabinet heeft aangekondigd dat de coronamaatregelen per 25 februari veranderen. Vanaf dat moment wordt het coronatoegangsbewijs in Nederland niet meer voor 3G-toegang (toegang met vaccinatiebewijs, herstelbewijs of testbewijs) gebruikt. Je krijgt dan alleen nog toegang met een negatief testbewijs (1G-toegang). Het testbewijs wordt alleen gevraagd bij binnenactiviteiten met meer dan 500 bezoekers, zonder vaste zitplaats.
 
