@@ -307,6 +307,7 @@
             "pageHeader": "Krijg toegang met een papieren bewijs",
             "pageIntro": "<h2 class=\"screen-reader-text\">Zo werkt het<\/h2><p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang.<\/p><p>Een bewijs op papier is handig als je geen smartphone hebt.<\/p>",
             "test": "Test test test",
+            "test2": "Nieuw aangemaakte key TEST",
             "userConsentHeader": "Maak een papieren bewijs",
             "userConsentText": "Ik heb de <a href=\"https:\/\/coronacheck.nl\/nl\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacyverklaring<\/a> gelezen en begrijp hoe CoronaCheck mijn gegevens gebruikt"
         },

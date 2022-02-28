@@ -307,6 +307,7 @@
             "pageHeader": "Get access with a certificate on paper",
             "pageIntro": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your and other people’s health matters. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass.<\/p><p>A certificate on paper is convenient if you don't have a smartphone.<\/p>",
             "test": "",
+            "test2": "New created key TEST",
             "userConsentHeader": "Start making a certificate on paper",
             "userConsentText": "I have read the <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> and understand how CoronaCheck processes my data."
         },
