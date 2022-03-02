@@ -28,9 +28,7 @@
         <div class="container">
 
             <div class="header__layout">
-                <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-img[page.lang] }}" alt="" width="250" height="319">
-                </div>
+
                 <div class="header__layout--content">
                     <h1 class="header__title">
                         {{ site.data[page.lang].translations.header-title }}<br />
@@ -38,8 +36,14 @@
                     <p>
                         {{ site.data[page.lang].translations.header-subtitle }}
                     </p>
-                    {% include components/coronacheck-badges.html %}
+
+                    <div class="buttons">
+                        <a href="{{ site.setup.translations.header-button-download-app-url[page.lang] }}" class="btn">{{ site.data[page.lang].translations.header-button-download-app }}</a>
+                        <a href="{{ site.setup.translations.header-button-paper-certificate-url[page.lang] }}" class="btn">{{ site.data[page.lang].translations.header-button-paper-certificate }}</a>
+                    </div>
+                    <!-- {% include components/coronacheck-badges.html %} -->
                 </div>
+
                 <div class="header__layout--image">
                     <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="250" height="319">
                 </div>

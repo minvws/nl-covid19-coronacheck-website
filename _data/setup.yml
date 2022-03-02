@@ -22,19 +22,27 @@ scanner-social-og-description:
 
 social-og-image-alt: 
   nl: Impressie van website waarop toelichting te vinden is
-  en:  Impression of website on which more information can be found
+  en: Impression of website on which more information can be found
 
-coronacheck-header-img: 
-  nl: /img/Home_NL_Header.png
-  en: /img/Home_EN_Header.png
+## Headers
 
 coronacheck-header-illustration: 
-  nl: /img/Home_Header_Person.svg
-  en: /img/Home_Header_Person.svg
+  nl: /img/Home_march-2022.svg
+  en: /img/Home_march-2022.svg
     
 scanner-header-img: 
   nl: /img/CoronaCheckScanner_app-tall.png
   en: /img/CoronaCheckScanner_app-tall-en.png
+
+header-button-paper-certificate-url:
+    nl: /print
+    en: /en/print
+
+header-button-download-app-url:
+    nl: /
+    en: /
+
+# Badges
 
 header-appstore: 
   nl: Download in de App Store
@@ -47,18 +55,6 @@ header-googleplaystore:
 header-huaweiappgallery: 
   nl: Ontdek het op Huawei App Gallery
   en: Get it on Huawei App Gallery
-
-coronacheck-howto-step-1-img: 
-  nl: /img/Home_NL_Iphone1.png
-  en: /img/Home_EN_Iphone1.png
-
-coronacheck-howto-step-2-img: 
-  nl: /img/Home_NL_Iphone2.png
-  en: /img/Home_EN_Iphone2.png
-
-coronacheck-howto-step-3-img: 
-  nl: /img/Home_NL_Iphone3.png
-  en: /img/Home_EN_Iphone3.png
 
 coronacheck-app-store-url:   
   nl: https://apps.apple.com/nl/app/coronacheck/id1548269870
@@ -75,14 +71,6 @@ scanner-app-store-url:
 scanner-google-play-url: 
   nl: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
   en: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
-
-coronacheck-huawei-url:   
-  nl: 
-  en:  
-    
-scanner-huawei-url:   
-  nl: 
-  en: 
 
 print-version-url: 
   nl: /print
