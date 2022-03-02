@@ -4,12 +4,13 @@ h2:empty {
 }
 
 .announcement {
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.42;
     padding: 30px 30px;
-    background-color: $color-announcement-background;
     max-width: 940px;
     margin: 30px;
+    display: flex;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
 
     a {
         text-decoration: underline;
@@ -22,7 +23,7 @@ h2:empty {
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.125rem;
     }
 
     p {
@@ -37,7 +38,7 @@ h2:empty {
         margin: 30px auto;
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.125rem;
         }
     }
 }
@@ -45,4 +46,13 @@ h2:empty {
 .announcement p + h2 {
     border-top: 1px solid currentColor;
     padding-top: 20px;
+}
+
+.announcement_icon {
+    padding-right: 2.5rem;
+    flex-grow: 0;
+}
+
+.announcement_content {
+    // placeholder css
 }
