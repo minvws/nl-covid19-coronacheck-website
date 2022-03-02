@@ -401,6 +401,7 @@
             "invalidVerificationCode": "Invalid verification code",
             "pageHeader": "Retrieve test result",
             "pageIntro": "Enter your retrieval code. You received it from your test location.",
+            "resultBlocked": "Retrieval code is geblockeerd",
             "sendAgain": "Send again",
             "sendCode": "Send again",
             "tokenExpired": "Retrieval code has expired",
