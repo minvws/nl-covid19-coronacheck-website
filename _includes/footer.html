@@ -5,7 +5,9 @@
 
 <footer> 
     {% if page.showContact  %}
-        {% include footer-phone.html %}
+        {% if include.for != "homepage" %}
+            {% include footer-phone.html %}
+        {% endif %}
     {% endif %} 
     
     <div class="footer">
