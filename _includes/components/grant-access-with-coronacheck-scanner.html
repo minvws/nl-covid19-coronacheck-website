@@ -1,18 +1,24 @@
 <div class="about">
-  <div class="about__column-image">
-    <img
-      src="{{ site.baseurl }}/img/scanner.svg"
-      alt=""
-      loading="lazy"
-      class="about__image"
-      width="200"
-      height="202"
-    >
-  </div>
-  <div class="about__column-content">
-      <h2 class="about__title">{{ site.data[page.lang].translations.about-coronacheck-scanner-title }}</h2>
+    <div class="about__column-content">
+        <h2 class="about__title">
+            {{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-title }}
+        </h2>
 
-      {{ site.data[page.lang].translations.about-coronacheck-scanner-content }}
-  </div>
+        {{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-content }}
+
+        <a href="{{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-url }}">
+            {{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-link }}
+        </a>
+    </div>
+    <div class="about__column-image">
+        <img
+            src="{{ site.baseurl }}/img/scanner_aan_de_slag.svg"
+            alt=""
+            loading="lazy"
+            class="about__image"
+            width="200"
+            height="202"
+        />
+    </div>
   </div>
   

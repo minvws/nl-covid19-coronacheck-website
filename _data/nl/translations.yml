@@ -186,9 +186,13 @@ coronacheck-howto-step-2: 2. Maak een QR-code
 
 coronacheck-howto-step-3: 3. Toon je QR-code
 
-about-coronacheck-scanner-title: CoronaCheck Scanner
+grant-access-with-coronacheck-scanner-title: CoronaCheck Scanner
 
-about-coronacheck-scanner-content: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om bezoekers toe te laten?</p><p><a href="/scanner" class="btn btn--cta" target="_blank">Bekijk de Scanner-app</a></p>
+grant-access-with-coronacheck-scanner-content: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om bezoekers toe te laten?</p><p><a href="/scanner" class="btn btn--cta" target="_blank">Bekijk de Scanner-app</a></p>
+
+grant-access-with-coronacheck-scanner-url: /nl/scanner
+
+grant-access-with-coronacheck-scanner-link: Bekijk de Scanner-app
 
 status-block-title: Bekijk de actuele status van CoronaCheck
 
