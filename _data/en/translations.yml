@@ -187,26 +187,12 @@ mediaelement-transcript-title: Written out text of the video
   
 user-instructions-title: How does it work?
 
-coronacheck-howto-step-1-title: 1. Get tested or vaccinated
+coronacheck-howto-step-1: 1. Get tested or vaccinated
 
-coronacheck-howto-step-1-content: |
-  For access, some countries and places ask for a vaccination certificate or a result of a corona test. 
+coronacheck-howto-step-2: 2. Make a QR code
 
-coronacheck-howto-step-2-title: 2. Make a QR code
 
-coronacheck-howto-step-2-content: |
-  This app generates a QR code for the Netherlands and one for other countries. This is your certificate.
-
-coronacheck-howto-step-3-title: 3. Show your QR code
-
-coronacheck-howto-step-3-content: |
-  Show both your QR code and your proof of identity at the entrance of the location you're visiting. And when you travel to other countries. 
-
-print-version-title: Prefer a certificate on paper?
- 
-print-version-content: A certificate on paper is convenient if you don’t have a smartphone. You can make a certificate from a vaccination and/or a test result. <a href="/en/faq#paper-certificate">Read more here<span class="screen-reader-text"> about a certificate on paper</span></a>.
-
-print-version-url-linktext: Make certificate on paper
+coronacheck-howto-step-3: 3. Show your QR code
 
 about-coronacheck-scanner-title: CoronaCheck Scanner
 

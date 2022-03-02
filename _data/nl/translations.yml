@@ -186,28 +186,13 @@ mediaelement-download-subtitle: Ondertitelingsbestand
   
 mediaelement-transcript-title: Uitgeschreven tekst van de video
   
-user-instructions-title: Hoe werkt het?
+user-instructions-title: Hoe werkt het coronabewijs?
 
-coronacheck-howto-step-1-title: 1. Laat je testen of vaccineren
+coronacheck-howto-step-1: 1. Laat je testen of vaccineren
 
-coronacheck-howto-step-1-content: |
-  Voor toegang vragen sommige landen of plekken een bewijs van een vaccinatie of van een uitslag van een coronatest.
+coronacheck-howto-step-2: 2. Maak een QR-code
 
-coronacheck-howto-step-2-title: 2. Maak een QR-code
-
-coronacheck-howto-step-2-content: |
-  De app maakt twee QR-codes: een QR-code voor Nederland en een internationale. Dat is jouw bewijs.
-
-coronacheck-howto-step-3-title: 3. Toon je QR-code
-
-coronacheck-howto-step-3-content: |
-  Laat je identiteitsbewijs en je QR-code controleren voor toegang tot een bepaalde plek. En als je op reis gaat. 
-
-print-version-title: Liever een papieren bewijs?
- 
-print-version-content: Een bewijs op papier is handig als je geen smartphone hebt. Je kunt een bewijs maken van een vaccinatie en/of van een testuitslag. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over bewijzen op papier</span></a>.
-
-print-version-url-linktext: Maak papieren bewijs
+coronacheck-howto-step-3: 3. Toon je QR-code
 
 about-coronacheck-scanner-title: CoronaCheck Scanner
 
