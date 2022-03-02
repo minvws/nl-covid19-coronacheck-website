@@ -256,3 +256,7 @@ scanner-howto-step-3-content: |
 dashboard-noscript-title: JavaScript required
 
 dashboard-noscript-description: This dashboard uses JavaScript. Please enable JavaScript and try again, or try in a different browser.
+
+coronamelder-title: Also use CoronaMelder
+
+coronamelder-content: Also download the CoronaMelder app, because it detects and stops infections faster. Even if you are vaccinated.
