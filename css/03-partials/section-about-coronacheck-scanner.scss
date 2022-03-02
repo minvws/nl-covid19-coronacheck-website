@@ -28,6 +28,10 @@
     .about__image {
         max-width: 200px;
         width: 100%;
+
+        @media (min-width: 680px) {
+            max-width: inherit;
+        }
     }
 }
 
