@@ -51,6 +51,9 @@ const getters = {
     getTestManufacturer: (state) => (testManufacturerCode) => {
         return state.holderConfig.euTestManufacturers.find(euTestManufacturer => euTestManufacturer.code === testManufacturerCode)
     },
+    euTestName: ({ holderConfig: { euTestNames } }) => (code) => {
+        return euTestNames.find(({ code: target }) => target === code)?.name
+    },
     getVaccineType: (state) => (vaccineTypeCode) => {
         return state.holderConfig.euVaccinations.find(euVaccination => euVaccination.code === vaccineTypeCode)
     },
