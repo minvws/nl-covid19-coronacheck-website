@@ -13,18 +13,17 @@
  
     {% include components/announcements.html %}
     
-    <!-- {% include components/user-instructions.html %} -->
-    <!-- {% include components/print-version.html %} -->
-
-    <!-- {% include components/print-version.html %} -->
-    <!-- {% include components/print-version.html %} -->
+    {% include components/user-instructions.html %} 
 
     {% include components/about-coronacheck-scanner.html %}
 
-    {% include components/information.html %}
     {% include components/faq.html for="coronacheck" %}
+    
+    {% include footer-phone.html %}
+
+    {% include components/coronamelder.html %}
 
   </main>
-  {% include footer.html %}
+  {% include footer.html on="homepage" %}
 </body>
 </html>
