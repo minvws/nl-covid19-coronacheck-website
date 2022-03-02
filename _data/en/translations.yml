@@ -179,12 +179,15 @@ mediaelement-transcript-title: Written out text of the video
   
 user-instructions-title: How does it work?
 
-coronacheck-howto-step-1: 1. Get tested or vaccinated
+coronacheck-howto-step-1: Get tested or vaccinated
 
-coronacheck-howto-step-2: 2. Make a QR code
+coronacheck-howto-step-2: Make a QR code
 
+coronacheck-howto-step-3: Show your QR code
 
-coronacheck-howto-step-3: 3. Show your QR code
+coronacheck-howto-url: /
+
+coronacheck-howto-link: Read more about the certificate
 
 grant-access-with-coronacheck-scanner-title: CoronaCheck Scanner
 

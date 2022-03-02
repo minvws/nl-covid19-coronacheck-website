@@ -12,10 +12,16 @@
     <div class="about__column-content">
         <h2 class="about__title">{{ site.data[page.lang].translations.user-instructions-title }}</h2>
         
-        {{ site.data[page.lang].translations.coronacheck-howto-step-1 }}
-        {{ site.data[page.lang].translations.coronacheck-howto-step-2 }}
-        {{ site.data[page.lang].translations.coronacheck-howto-step-3 }}
-    </div>
-    </div>
+        <ol>
+            <li>{{ site.data[page.lang].translations.coronacheck-howto-step-1 }}</li>
+            <li>{{ site.data[page.lang].translations.coronacheck-howto-step-2 }}</li>
+            <li>{{ site.data[page.lang].translations.coronacheck-howto-step-3 }}</li>
+        </ol>
 
+        <p>
+            <a href="{{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-url }}">
+            {{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-link }}
+            </a>
+        </p>
+    </div>
 </div>

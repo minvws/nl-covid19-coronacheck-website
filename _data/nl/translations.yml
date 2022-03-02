@@ -180,11 +180,15 @@ mediaelement-transcript-title: Uitgeschreven tekst van de video
   
 user-instructions-title: Hoe werkt het coronabewijs?
 
-coronacheck-howto-step-1: 1. Laat je testen of vaccineren
+coronacheck-howto-step-1: Laat je testen of vaccineren
 
-coronacheck-howto-step-2: 2. Maak een QR-code
+coronacheck-howto-step-2: Maak een QR-code
 
-coronacheck-howto-step-3: 3. Toon je QR-code
+coronacheck-howto-step-3: Toon je QR-code
+
+coronacheck-howto-url: /
+
+coronacheck-howto-link: Lees meer over het coronabewijs
 
 grant-access-with-coronacheck-scanner-title: CoronaCheck Scanner
 
