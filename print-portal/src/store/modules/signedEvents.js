@@ -74,7 +74,7 @@ const mutations = {
         state.all = [...state.all, ...events]
     },
     clear(state, filter) {
-        state.all = state.all.filter(({ filter: current }) => current !== filter)
+        state.all = state.all?.filter(({ filter: current }) => current !== filter) || []
     },
     clearAll(state) {
         state.all = []
