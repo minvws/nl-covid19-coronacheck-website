@@ -16,35 +16,25 @@
                 </a>
             </div>
         
-            <div class="header__quick-link">
-                <a href="{{ langSlug }}/scanner" class="header__quick-link--scanner">
-                {{ site.data[page.lang].translations.coronacheck-scanner-linktext }}</a>
-                <a href="{{ langSlug }}/faq">
-                {{ site.data[page.lang].translations.faq }}</a>
-            </div>
+            <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
+            {{ site.data[page.lang].translations.faq }}</a>
         
             {% include components/language-picker.html headertype="default" %}
         </div>
         <div class="container">
-
             <div class="header__layout">
                 <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-img[page.lang] }}" alt="" width="250" height="319">
+                    <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
                 </div>
+
                 <div class="header__layout--content">
                     <h1 class="header__title">
-                        {{ site.data[page.lang].translations.header-title }}<br />
+                    {{ site.data[page.lang].translations.scanner-header-title }}
                     </h1>
-                    <p>
-                        {{ site.data[page.lang].translations.header-subtitle }}
-                    </p>
-                    {% include components/coronacheck-badges.html %}
-                </div>
-                <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="250" height="319">
+                    <p>{{ site.data[page.lang].translations.scanner-header-subtitle }}</p>
+                    {% include components/scanner-badges.html %}
                 </div>
             </div>
         </div>
-
     </div>
 </header>
