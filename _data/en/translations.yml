@@ -140,14 +140,6 @@ error-back-to-faq: Go to frequently asked questions
     
 accessibility-in-app-email-subject: Problem with using the app
       
-information-title: 'This is how we handle your data:'
-  
-information-qrcode: The QR code contains a minimum amount of data
-    
-information-naw: Your data is not centrally stored anywhere
-  
-information-gps: Your location data is not used or saved
-
 scanner-information-title: Acceptable use policy
 
 scanner-information-qrcode: The QR code contains a minimum amount of data of the visitor

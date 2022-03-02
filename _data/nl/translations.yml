@@ -140,14 +140,6 @@ error-back-to-faq: Ga naar meestgestelde vragen
     
 accessibility-in-app-email-subject: Probleem bij het gebruik van de app
 
-information-title: 'Zo gaan we om met jouw gegevens:'
-  
-information-qrcode: In de QR-code staan minimale persoonsgegevens
-    
-information-naw: Jouw gegevens worden nergens centraal opgeslagen
-  
-information-gps: Je locatiegegevens worden niet gebruikt of bewaard
-
 scanner-information-title: Voorwaarden voor gebruik
 
 scanner-information-qrcode: In de QR-code staan minimale gegevens van de bezoeker
