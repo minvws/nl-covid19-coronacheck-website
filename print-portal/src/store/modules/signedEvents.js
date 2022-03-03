@@ -69,7 +69,7 @@ const actions = {
 
 const mutations = {
     createAll(state, { events, filter, scope }) {
-        // add filter ans scope to event, so we can keep track of the event filter
+        // add filter and scope to event, so we can keep track of the event filter
         events.forEach(event => {
             event.filter = filter
             event.scope = scope
