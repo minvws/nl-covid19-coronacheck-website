@@ -4,11 +4,14 @@ import store from '@/store'
 import { cmsDecode } from '@/tools/cms'
 import { ProviderTypes } from '@/types/provider-types'
 
+const filterTokensByProvider = (tokens, provider) => {
+    if (provider === ProviderTypes.ANY_PROVIDER) return tokens
+    return tokens.filter(({ provider_identifier }) => (provider === provider_identifier))
+}
+
 const collect = async (tokenSets, filter, provider) => {
     return new Promise((resolve, reject) => {
-        const tokens = tokenSets.filter(tokenSet => {
-            return provider === ProviderTypes.ANY_PROVIDER || tokenSet.provider_identifier === provider
-        })
+        const tokens = filterTokensByProvider(tokenSets, provider)
         getEvents(tokens, filter).then(results => {
             resolve(results);
         }, (error) => {
