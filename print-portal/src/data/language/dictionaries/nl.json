@@ -401,6 +401,7 @@
             "invalidVerificationCode": "Geen geldige verificatiecode",
             "pageHeader": "Testuitslag ophalen",
             "pageIntro": "Vul jouw ophaalcode in. Deze heb je van je testlocatie gekregen.",
+            "resultBlocked": "Ophaalcode is geblokkeerd",
             "sendAgain": "Verstuur opnieuw",
             "sendCode": "Stuur opnieuw",
             "tokenExpired": "Ophaalcode is niet meer geldig",
