@@ -59,8 +59,8 @@ const actions = {
         // clear signed qrs
         commit('qrs/add', null, { root: true });
     },
-    clear: ({ commit }, { filter }) => {
-        commit('clear', filter)
+    clear: ({ commit }, { filter, scope }) => {
+        commit('clear', { filter, scope })
     },
     clearAll: ({ commit }) => {
         commit('clearAll')
@@ -68,13 +68,18 @@ const actions = {
 };
 
 const mutations = {
-    createAll(state, { events, filter }) {
-        // add filter to event, so we can keep track of the event filter
-        events.forEach(event => (event.filter = filter))
+    createAll(state, { events, filter, scope }) {
+        // add filter ans scope to event, so we can keep track of the event filter
+        events.forEach(event => {
+            event.filter = filter
+            event.scope = scope
+        })
         state.all = [...state.all, ...events]
     },
-    clear(state, filter) {
-        state.all = state.all?.filter(({ filter: current }) => current !== filter) || []
+    clear(state, { filter, scope }) {
+        state.all = state.all?.filter(({ filter: currentFilter, scope: currentScope }) => {
+            return filter !== currentFilter && scope !== currentScope
+        }) || []
     },
     clearAll(state) {
         state.all = []

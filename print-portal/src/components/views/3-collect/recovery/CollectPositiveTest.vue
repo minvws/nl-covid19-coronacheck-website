@@ -3,7 +3,7 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
 import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
-import { FilterTypes } from '@/types/filter-types'
+import { FilterTypes, FilterScopes } from '@/types/filter-types'
 import { ProviderTypes } from '@/types/provider-types'
 
 export default {
@@ -14,6 +14,7 @@ export default {
         return {
             isLoading: false,
             filter: [FilterTypes.POSITIVE_TEST, FilterTypes.RECOVERY].join(','),
+            scope: FilterScopes.FIRST_EPISODE,
             eventProviders: ProviderTypes.ANY_PROVIDER,
             pages: {
                 cancel: 'ChoiceProof',
