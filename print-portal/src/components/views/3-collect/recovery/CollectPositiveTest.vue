@@ -3,6 +3,9 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Loading from '@/components/elements/Loading';
 import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
+import { FilterTypes } from '@/types/filter-types'
+import { ProviderTypes } from '@/types/provider-types'
+
 export default {
     name: 'CollectPositiveTest',
     components: { Page, PageIntro, Loading },
@@ -10,8 +13,8 @@ export default {
     data() {
         return {
             isLoading: false,
-            filter: 'positivetest,recovery',
-            eventProviders: 'GGD',
+            filter: [FilterTypes.POSITIVE_TEST, FilterTypes.RECOVERY].join(','),
+            eventProviders: ProviderTypes.ANY_PROVIDER,
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectRecovery',
