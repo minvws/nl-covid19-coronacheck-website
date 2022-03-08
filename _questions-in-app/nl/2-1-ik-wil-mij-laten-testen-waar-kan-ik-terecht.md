@@ -44,7 +44,7 @@ Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, b
 - <a href="https://www.covidplus.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">ATTG B.V.</a>
 - <a href="https://www.carephar.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">Carephar</a>
 - <a href="https://www.covidtestloket.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">Cirkelhoff B.V.</a>
-- Covid Spoedservice
+- <a href="https://www.testenvoortoegang.org/" rel="noopener noreferrer" target="_blank" hreflang="nl">Covid Spoedservice</a>
 - <a href="https://www.covidia.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">Covidia Nederland B.V.</a>
 - <a href="https://www.covidtestnederland.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">DAZA B.V.</a>
 - <a href="https://www.ecocare.center" rel="noopener noreferrer" target="_blank" hreflang="nl">Ecolog Deutschland GmbH</a>
