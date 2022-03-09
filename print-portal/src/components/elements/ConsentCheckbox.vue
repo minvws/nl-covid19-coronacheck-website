@@ -4,6 +4,7 @@
         <p v-html="body" />
         <UserConsent
             class="consent-checkbox-label"
+            @update="consent = $event"
             v-bind="{
                 consent,
                 label: checkbox
