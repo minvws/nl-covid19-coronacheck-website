@@ -5,13 +5,14 @@ import { handleRejection } from '@/tools/error-handler';
 import NoDigiD from '@/components/views/3-collect/_shared/NoDigiD';
 import TooBusyButton from '@/components/elements/TooBusyButton';
 import CcButtonDigiD from '@/components/elements/CcButtonDigiD';
+import ConsentCheckbox from '@/components/elements/ConsentCheckbox';
 import { StepTypes } from '@/types/step-types'
 import { FlowTypes } from '@/types/flow-types'
 import { ProviderTypes } from '@/types/provider-types'
 
 export default {
     name: 'CollectVaccination',
-    components: { CcButtonDigiD, TooBusyButton, NoDigiD, Page, PageIntro },
+    components: { CcButtonDigiD, TooBusyButton, NoDigiD, Page, PageIntro, ConsentCheckbox },
     data() {
         return {
             tooBusy: window.config.tooBusy
@@ -50,6 +51,11 @@ export default {
             <div class="section-block">
                  <div class="section-block__footer">
                      <TooBusyButton v-if="tooBusy"/>
+                     <ConsentCheckbox
+                        :title="$t('components.consent.vaccination.title')"
+                        :body="$t('components.consent.vaccination.body')"
+                        :checkbox="$t('components.consent.vaccination.checkbox')"
+                    />
                      <CcButtonDigiD
                          id="digid-vaccination"
                          v-if="!tooBusy"

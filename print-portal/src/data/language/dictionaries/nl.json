@@ -7,6 +7,13 @@
     },
     "close": "Sluiten",
     "components": {
+        "consent": {
+            "vaccination": {
+                "title": "Corona gehad vóór je eerste vaccinatie?",
+                "body": "Dan heb je vaak een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je positieve testuitslag op om die mee te laten tellen in je vaccinatiebewijs.",
+                "checkbox": "Ja, haal ook mijn positieve testuitslag op"
+            }
+        },
         "digid": {
             "dontHaveDigid": "Ik heb geen DigiD",
             "loginDigid": "Log in met DigiD",
