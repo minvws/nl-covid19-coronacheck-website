@@ -16,7 +16,8 @@ export default {
 </script>
 
 <template>
-    <Page>
+    <Page
+    :display-back-button="false">
         <div class="section">
             <PageIntro
                 :head="$t('views.errorCodeSaml.pageHeader')"
