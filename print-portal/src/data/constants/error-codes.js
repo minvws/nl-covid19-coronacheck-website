@@ -78,6 +78,10 @@ export const isDigiDFlowAndStepError = (payload) => {
     return isDigiDFlowError(payload) && isDigiDStepError(payload)
 }
 
+export const isDigiDSamlError = (message = '') => {
+    return message.indexOf('saml_') === 0
+}
+
 export const errorCodeTransformer = ({
     flow,
     step,
