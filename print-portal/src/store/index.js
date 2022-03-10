@@ -9,6 +9,7 @@ import eventProviders from './modules/eventProviders';
 import signedEvents from './modules/signedEvents';
 import auth from './modules/auth';
 import qrs from './modules/qrs';
+import storage from './modules/storage';
 import { isFuture } from 'date-fns';
 
 Vue.use(Vuex)
@@ -137,7 +138,6 @@ export default new Vuex.Store({
     state,
     getters,
     mutations,
-    actions: {},
     modules: {
         modal,
         snackbar,
@@ -146,6 +146,7 @@ export default new Vuex.Store({
         eventProviders,
         signedEvents,
         qrs,
-        auth
+        auth,
+        storage
     }
 })
