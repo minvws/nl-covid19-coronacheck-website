@@ -4,7 +4,7 @@
         <p v-html="body" />
         <UserConsent
             class="consent-checkbox-label"
-            @update="consent = $event"
+            @update="$emit('input', $event)"
             v-bind="{
                 consent,
                 label: checkbox
@@ -19,11 +19,6 @@ import WarningMessage from './WarningMessage.vue'
 export default {
     name: 'ConsentCheckbox',
     components: { UserConsent, WarningMessage },
-    data () {
-        return {
-            consent: false
-        }
-    },
     props: {
         title: {
             type: String,
@@ -35,6 +30,10 @@ export default {
         },
         checkbox: {
             type: String,
+            required: true
+        },
+        consent: {
+            type: Boolean,
             required: true
         }
     }
