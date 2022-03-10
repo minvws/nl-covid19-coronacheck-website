@@ -235,6 +235,9 @@
     "tooBusy": "Het is erg druk op dit moment. Daardoor kun je niet inloggen. Wil je het op een later moment nog eens proberen?",
     "tryAgain": "Probeer opnieuw",
     "unknown": "Onbekend",
+    "warning": {
+        "noPositivetest": "Er is helaas geen geschikte positieve testuitslag gevonden om mee te laten tellen in je vaccinatiebewijs."
+    },
     "views": {
         "browserNotSupported": {
             "button": "Terug naar de hoofdpagina van CoronaCheck.nl",
