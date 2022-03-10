@@ -35,7 +35,7 @@ export default {
             <div class="section-block">
                 <div class="proof-events">
                     <Vaccination
-                        v-for="signedEventSet of signedEventSets"
+                        v-for="signedEventSet of signedVaccinations"
                         :key="signedEventSet[0].unique"
                         :signed-event-set="signedEventSet"/>
                 </div>

@@ -4,7 +4,7 @@ import { FilterTypes } from '@/types/filter-types'
 
 export default {
     computed: {
-        signedEventSets() {
+        signedVaccinations() {
             // for vaccination we put double data in one set
             const signedEvents = this.$store.getters['signedEvents/getProofEvents'](FilterTypes.VACCINATION);
             const uniqueSignedEventSets = [];
