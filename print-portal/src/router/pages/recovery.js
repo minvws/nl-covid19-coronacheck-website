@@ -27,7 +27,8 @@ const recoveryPages = [
     }, {
         path: '/recovery-overzicht',
         name: 'RecoveryOverview',
-        component: RecoveryOverview
+        component: RecoveryOverview,
+        props: true
     }, {
         path: '/recovery-niet-gevonden',
         name: 'RecoveryNone',
