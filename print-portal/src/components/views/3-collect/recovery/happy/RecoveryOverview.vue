@@ -3,10 +3,13 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import Recovery from './Recovery';
 import PositiveTest from './PositiveTest';
+import Vaccination from '@/components/views/3-collect/vaccination/happy/Vaccination';
+
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import WarningMessage from '@/components/elements/WarningMessage';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
+import VaccinationOverviewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
 import LoadingCover from '@/components/elements/LoadingCover';
 import uniqWith from 'lodash.uniqwith'
 import isEqual from 'lodash.isequal'
@@ -14,8 +17,8 @@ import { FilterTypes } from '@/types/filter-types'
 
 export default {
     name: 'RecoveryOverview',
-    components: { LoadingCover, PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton, WarningMessage },
-    mixins: [overviewMixin],
+    components: { LoadingCover, PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton, WarningMessage, Vaccination },
+    mixins: [overviewMixin, VaccinationOverviewMixin],
     props: {
         message: {
             type: String,
@@ -49,6 +52,10 @@ export default {
                 :intro="$t('views.recoveryOverview.pageIntro')"/>
             <div class="section-block">
                 <div class="proof-events">
+                    <Vaccination
+                        v-for="signedEventSet of signedEventSets"
+                        :key="signedEventSet[0].unique"
+                        :signed-event-set="signedEventSet"/>
                     <div
                         v-for="(signedEvent, index) in uniqueSignedEvents"
                         :key="index"
