@@ -52,6 +52,7 @@ export default {
                  <div class="section-block__footer">
                      <TooBusyButton v-if="tooBusy"/>
                      <ConsentCheckbox
+                        class="consent"
                         :title="$t('components.consent.vaccination.title')"
                         :body="$t('components.consent.vaccination.body')"
                         :checkbox="$t('components.consent.vaccination.checkbox')"
@@ -67,4 +68,9 @@ export default {
     </Page>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+@import "@/styles/variables/sizes.scss";
+.consent {
+    margin-bottom: 2 * $grid-x2-5;
+}
+</style>
