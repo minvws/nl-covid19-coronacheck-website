@@ -223,7 +223,9 @@ export default {
                         }
                         this.$router.push({ name: 'ErrorGeneral', query: { errors: errorCodes.join('+') } });
                     } else {
-                        this.$router.push({ name: this.pages.noResult });
+                        if (this.withPositiveTest()) {
+                            this.handleWithPositiveTest()
+                        } else this.$router.push({ name: this.pages.noResult });
                     }
                 }
             } else {
@@ -294,6 +296,11 @@ export default {
 
             return true
         },
+        handleWithPositiveTest () {
+            // no recovery is fetched, or expired, remove signed events and show a warning
+            this.$store.dispatch('signedEvents/clear', { filter: this.filter })
+            this.$router.push({ name: this.pages.overview, params: { message: this.$t('warning.noPositivetest') } });
+        },
         isTestedPositiveBeforeFirstVaccination (proofEvents) {
             // all positive tests dates
             const positiveTests = proofEvents.map(({ event: { positivetest } }) => positivetest)
@@ -339,9 +346,7 @@ export default {
                     this.$router.push({ name: 'RecoveryExpired' });
                 } else if (this.isTestedPositiveBeforeFirstVaccination(proofEvents)) {
                     if (this.withPositiveTest()) {
-                        // recovery is also fetched, but expired, remove out of signed events and show a warning
-                        this.$store.dispatch('signedEvents/clear', { filter: this.filter })
-                        this.$router.push({ name: this.pages.overview, params: { message: this.$t('warning.noPositivetest') } });
+                        this.handleWithPositiveTest()
                     } else this.$router.push({ name: 'RecoveryInvalid' });
                 } else {
                     this.$router.push({ name: this.pages.overview });
