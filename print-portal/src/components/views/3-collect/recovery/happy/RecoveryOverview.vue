@@ -5,6 +5,7 @@ import Recovery from './Recovery';
 import PositiveTest from './PositiveTest';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
+import WarningMessage from '@/components/elements/WarningMessage';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import LoadingCover from '@/components/elements/LoadingCover';
 import uniqWith from 'lodash.uniqwith'
@@ -13,8 +14,14 @@ import { FilterTypes } from '@/types/filter-types'
 
 export default {
     name: 'RecoveryOverview',
-    components: { LoadingCover, PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton },
+    components: { LoadingCover, PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton, WarningMessage },
     mixins: [overviewMixin],
+    props: {
+        message: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
             filter: [FilterTypes.POSITIVE_TEST, FilterTypes.RECOVERY].join(','),
@@ -57,10 +64,16 @@ export default {
                     </div>
                 </div>
                 <div class="section-block__footer">
+                     <WarningMessage
+                        v-if="message"
+                        class="warning"
+                        :message="message"
+                    />
                     <CcButton
                         id="create-qr-recovery"
                         @select="gotoPrint()"
                         :label="$t('views.recoveryOverview.createTestProofButton')"/>
+
                     <div class="button__help-button">
                         <CcModestButton
                             @select="openModalSomethingWrong()"
@@ -72,3 +85,10 @@ export default {
         </div>
     </Page>
 </template>
+
+<style lang="scss" scoped>
+@import "@/styles/variables/sizes.scss";
+.warning {
+    margin-bottom: 2 * $grid-x2-5;
+}
+</style>
