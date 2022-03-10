@@ -1,5 +1,5 @@
 <template>
-    <div class="consent-checkbox">
+    <WarningMessage>
         <h4 class="consent-checkbox-title" v-html="title" />
         <p v-html="body" />
         <UserConsent
@@ -10,14 +10,15 @@
                 label: checkbox
             }"
         />
-    </div>
+    </WarningMessage>
 </template>
 
 <script>
 import UserConsent from '../views/1-home/UserConsent.vue'
+import WarningMessage from './WarningMessage.vue'
 export default {
     name: 'ConsentCheckbox',
-    components: { UserConsent },
+    components: { UserConsent, WarningMessage },
     data () {
         return {
             consent: false
@@ -41,12 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/variables/sizes.scss";
 .consent-checkbox {
-    border-radius: 12px;
-    border: 1px solid #E5E5E5;
-    padding: $grid-x2-5 $grid-x2-5 0 $grid-x2-5;
-    margin-bottom: 2 * $grid-x2-5;
     &-label {
         background: none;
         padding: 0;
