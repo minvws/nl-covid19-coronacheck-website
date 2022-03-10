@@ -8,6 +8,7 @@ import { StepTypes } from '@/types/step-types'
 import { ProviderTypes } from '@/types/provider-types'
 import { events as AuthEvent } from '@/store/modules/auth'
 import { FilterTypes } from '@/types/filter-types'
+import { events as StorageEvent } from '@/store/modules/storage'
 
 export default {
     name: 'redirect-mixin',
@@ -316,6 +317,12 @@ export default {
             }
             return false
         },
+        withPositiveTest () {
+            // retrieve local saved data and reset
+            const value = this.$store.getters[StorageEvent.WITH_POSITIVE_TEST];
+            this.$store.dispatch(StorageEvent.WITH_POSITIVE_TEST, null);
+            return value
+        },
         checkResult(results) {
             const signedEvents = [];
             for (const result of results) {
@@ -331,7 +338,11 @@ export default {
                 if (this.areAllRecoveriesExpired(proofEvents)) {
                     this.$router.push({ name: 'RecoveryExpired' });
                 } else if (this.isTestedPositiveBeforeFirstVaccination(proofEvents)) {
-                    this.$router.push({ name: 'RecoveryInvalid' });
+                    if (this.withPositiveTest()) {
+                        // recovery is also fetched, but expired, remove out of signed events and show a warning
+                        this.$store.dispatch('signedEvents/clear', { filter: this.filter })
+                        this.$router.push({ name: this.pages.overview, params: { message: this.$t('warning.noPositivetest') } });
+                    } else this.$router.push({ name: 'RecoveryInvalid' });
                 } else {
                     this.$router.push({ name: this.pages.overview });
                 }
