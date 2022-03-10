@@ -5,12 +5,15 @@ import Loading from '@/components/elements/Loading';
 import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
 import { FilterTypes } from '@/types/filter-types'
 import { ProviderTypes } from '@/types/provider-types'
+import { events as StorageEvent } from '@/store/modules/storage'
 
 export default {
     name: 'VaccinationRedirect',
     components: { Page, PageIntro, Loading },
     mixins: [redirectMixin],
     data() {
+        const withPositiveTest = this.$store.getters[StorageEvent.WITH_POSITIVE_TEST]
+        const overview = withPositiveTest ? 'CollectPositiveTest' : 'VaccinationOverview';
         return {
             isLoading: false,
             filter: FilterTypes.VACCINATION,
@@ -18,7 +21,7 @@ export default {
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectVaccination',
-                overview: 'VaccinationOverview',
+                overview,
                 noResult: 'VaccinationsNone'
             }
         }
