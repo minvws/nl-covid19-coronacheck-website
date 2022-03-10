@@ -10,6 +10,8 @@ import { StepTypes } from '@/types/step-types'
 import { FlowTypes } from '@/types/flow-types'
 import { ProviderTypes } from '@/types/provider-types'
 
+// const key = 'withPositiveTest'
+import { events as StorageEvent } from '@/store/modules/storage'
 export default {
     name: 'CollectVaccination',
     components: { CcButtonDigiD, TooBusyButton, NoDigiD, Page, PageIntro, ConsentCheckbox },
@@ -18,7 +20,20 @@ export default {
             tooBusy: window.config.tooBusy
         }
     },
-    computed: {},
+    mounted () {
+        // clear consent when mounted
+        this.consent = false
+    },
+    computed: {
+        consent: {
+            get () {
+                return this.$store.getters[StorageEvent.WITH_POSITIVE_TEST]
+            },
+            set (value) {
+                this.$store.dispatch(StorageEvent.WITH_POSITIVE_TEST, value)
+            }
+        }
+    },
     methods: {
         getToken() {
             this.authVaccinations.startAuthentication().then(() => {
@@ -53,9 +68,11 @@ export default {
                      <TooBusyButton v-if="tooBusy"/>
                      <ConsentCheckbox
                         class="consent"
+                        v-model="consent"
                         :title="$t('components.consent.vaccination.title')"
                         :body="$t('components.consent.vaccination.body')"
                         :checkbox="$t('components.consent.vaccination.checkbox')"
+                        :consent="consent"
                     />
                      <CcButtonDigiD
                          id="digid-vaccination"
