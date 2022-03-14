@@ -24,7 +24,7 @@ const mutations = {
             return
         }
         if (value) localStorage.setItem(key, value);
-        else localStorage.removeItem(value);
+        else localStorage.removeItem(key);
     }
 };
 
