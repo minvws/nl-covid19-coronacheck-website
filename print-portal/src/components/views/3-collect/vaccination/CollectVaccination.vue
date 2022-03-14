@@ -10,7 +10,6 @@ import { StepTypes } from '@/types/step-types'
 import { FlowTypes } from '@/types/flow-types'
 import { ProviderTypes } from '@/types/provider-types'
 
-// const key = 'withPositiveTest'
 import { events as StorageEvent } from '@/store/modules/storage'
 export default {
     name: 'CollectVaccination',
