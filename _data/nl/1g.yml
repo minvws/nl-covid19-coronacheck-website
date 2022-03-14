@@ -10,6 +10,11 @@ coronacheck-howto-step-2: Maak van het resultaat een bewijs met QR-code in de ap
 
 coronacheck-howto-step-3: Laat je QR-code en identiteitsbewijs zien bij de ingang van de plek die je bezoekt, of aan de grens
 
+grant-access-with-coronacheck-scanner-title: Geef toegang met de CoronaCheck Scanner
+
+grant-access-with-coronacheck-scanner-content: Met CoronaCheck Scanner controleer je de geldigheid van het coronabewijs van bezoekers. Zo kun je veilig toegang geven tot jouw locatie of activiteit.
+
+
 scanner-header-title: Geef toegang met CoronaCheck Scanner
 
 scanner-header-subtitle: Met CoronaCheck Scanner controleer je de geldigheid van het coronabewijs van bezoekers. Dat doe je door de QR-code op hun bewijs te scannen. Zo kun je veilig toegang geven tot jouw locatie of activiteit.

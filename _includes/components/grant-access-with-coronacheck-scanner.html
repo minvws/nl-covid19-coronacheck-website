@@ -1,10 +1,10 @@
 <div class="about">
     <div class="about__column-content">
         <h2 class="about__title">
-            {{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-title }}
+            {{ site.data[page.lang][include.version].grant-access-with-coronacheck-scanner-title }}
         </h2>
 
-        <p>{{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-content }}</p>
+        <p>{{ site.data[page.lang][include.version].grant-access-with-coronacheck-scanner-content }}</p>
 
         <p>
             <a href="{{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-url }}" class="btn btn--cta" target="_blank">
