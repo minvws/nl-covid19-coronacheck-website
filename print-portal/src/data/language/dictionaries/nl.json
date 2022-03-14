@@ -274,6 +274,10 @@
             "pageHeader": "Gegevens van je vaccinatie ophalen",
             "pageIntro": "<p>Heb je een (booster)vaccinatie gehad? Log in met DigiD om al je vaccinatiegegevens op te halen.<\/p>"
         },
+        "errorCodeSaml": {
+            "pageHeader": "Sorry, er gaat iets mis",
+            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.digid.nl<\/a> voor de laatste informatie.<\/p>"
+        },
         "errorCode99552": {
             "pageHeader": "Sorry, we kunnen geen bewijs maken",
             "pageIntro": "<p>De persoonsgegevens van je vaccinatiebeoordeling en je negatieve testuitslag zijn verschillend. Daarom kan er geen bezoekersbewijs gemaakt worden.<br><br>Controleer welke gegevens niet kloppen. Neem daarna contact op met de balie waar je vaccinatie is beoordeeld, of met je testlocatie. Zij kunnen je helpen je gegevens aan te passen.<\/p>"
