@@ -266,7 +266,7 @@
         },
         "errorCodeSaml": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\">www.digid.nl<\/a> voor de laatste informatie.<\/p>"
+            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.digid.nl<\/a> voor de laatste informatie.<\/p>"
         },
         "errorCode99552": {
             "pageHeader": "Sorry, we kunnen geen bewijs maken",
