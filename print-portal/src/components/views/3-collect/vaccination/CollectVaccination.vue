@@ -21,10 +21,10 @@ export default {
     },
     mounted () {
         // clear consent when mounted
-        this.consent = false
+        this.withPositiveTestConsent = false
     },
     computed: {
-        consent: {
+        withPositiveTestConsent: {
             get () {
                 return this.$store.getters[StorageEvent.WITH_POSITIVE_TEST]
             },
@@ -71,7 +71,7 @@ export default {
                         :title="$t('components.consent.vaccination.title')"
                         :body="$t('components.consent.vaccination.body')"
                         :checkbox="$t('components.consent.vaccination.checkbox')"
-                        :consent="consent"
+                        :consent="withPositiveTestConsent"
                     />
                      <CcButtonDigiD
                          id="digid-vaccination"
