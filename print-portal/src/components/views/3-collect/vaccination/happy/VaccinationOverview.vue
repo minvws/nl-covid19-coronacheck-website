@@ -5,14 +5,14 @@ import Vaccination from './Vaccination';
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
-import VaccinationOverviewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
+import vaccinationOverviewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
 import LoadingCover from '@/components/elements/LoadingCover';
 import { FilterTypes } from '@/types/filter-types'
 
 export default {
     name: 'VaccinationOverview',
     components: { LoadingCover, Page, PageIntro, Vaccination, CcButton, CcModestButton },
-    mixins: [overviewMixin, VaccinationOverviewMixin],
+    mixins: [overviewMixin, vaccinationOverviewMixin],
     data() {
         return {
             filter: FilterTypes.VACCINATION,

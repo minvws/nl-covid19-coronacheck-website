@@ -9,7 +9,7 @@ import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import WarningMessage from '@/components/elements/WarningMessage';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
-import VaccinationOverviewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
+import vaccinationOverviewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
 import LoadingCover from '@/components/elements/LoadingCover';
 import uniqWith from 'lodash.uniqwith'
 import isEqual from 'lodash.isequal'
@@ -18,7 +18,7 @@ import { FilterTypes } from '@/types/filter-types'
 export default {
     name: 'RecoveryOverview',
     components: { LoadingCover, PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton, WarningMessage, Vaccination },
-    mixins: [overviewMixin, VaccinationOverviewMixin],
+    mixins: [overviewMixin, vaccinationOverviewMixin],
     props: {
         message: {
             type: String,
