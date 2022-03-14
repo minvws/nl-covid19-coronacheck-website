@@ -1,21 +1,18 @@
-{% assign announcement = site.announcements | where:"lang", page.lang %}
-{% if announcement-errors.size != 0 %}
-    {% for announcement in announcement-errors %}
+{% assign announcements = site.announcements | where:"lang", page.lang | where:"version", include.version %}
+{% if announcements.size != 0 %}
+    {% for announcement in announcements %}
     <div class="announcement">
         <div class="announcement_icon">
             <img
-                src="{{ site.baseurl }}/img/announcement-info.svg"
+                src="{{ site.baseurl }}/img/announcement-{{ announcement.style }}.svg"
                 alt="Informatie"
                 width="20"
                 height="20"
             />
-
-            {{ announcement.style }}
         </div>
 
         <div class="announcement_content">
             {% if announcement.title == ''  %}
-                <h2 class="screen-reader-text">Belangrijke mededeling</h2>
             {% else %}
                 <h2>{{ announcement.title }}</h2>
             {% endif %}
