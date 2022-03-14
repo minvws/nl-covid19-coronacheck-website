@@ -7,6 +7,10 @@ featuredHomeIndex: 1
 featuredHomeIcon: app-touch
 redirect_from: 
   - /en/faq/1-hoe-werkt-de-coronacheck-app
+faqversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Entering certain locations, activities, and countries requires a coronavirus pass. Is this the case for the location you’re visiting? Then follow these steps:
 
