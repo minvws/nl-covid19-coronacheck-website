@@ -7,6 +7,13 @@
     },
     "close": "Sluiten",
     "components": {
+        "consent": {
+            "vaccination": {
+                "title": "Corona gehad vóór je eerste vaccinatie?",
+                "body": "Dan heb je vaak een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je positieve testuitslag op om die mee te laten tellen in je vaccinatiebewijs.",
+                "checkbox": "Ja, haal ook mijn positieve testuitslag op"
+            }
+        },
         "digid": {
             "dontHaveDigid": "Ik heb geen DigiD",
             "loginDigid": "Log in met DigiD",
@@ -228,6 +235,9 @@
     "tooBusy": "Het is erg druk op dit moment. Daardoor kun je niet inloggen. Wil je het op een later moment nog eens proberen?",
     "tryAgain": "Probeer opnieuw",
     "unknown": "Onbekend",
+    "warning": {
+        "noPositivetest": "Er is helaas geen geschikte positieve testuitslag gevonden om mee te laten tellen in je vaccinatiebewijs."
+    },
     "views": {
         "browserNotSupported": {
             "button": "Terug naar de hoofdpagina van CoronaCheck.nl",
