@@ -34,6 +34,10 @@ scanner-header-img:
   nl: /img/CoronaCheckScanner_app-tall.png
   en: /img/CoronaCheckScanner_app-tall-en.png
 
+scanner-header-out-of-order:
+  nl: /img/buitenwerking.svg
+  en: /img/buitenwerking.svg
+
 header-button-paper-certificate-url:
     nl: /print
     en: /en/print

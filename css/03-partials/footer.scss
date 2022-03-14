@@ -113,6 +113,10 @@
     }
 }
 
+.scanner-0g {
+    background: #0e6999;
+}
+
 .footer-inner {
     position: relative;
     padding: 1em;
@@ -130,6 +134,10 @@
 
     @media (min-width: 960px) {
         margin: 4.8em auto 0 auto;
+
+        .scanner-0g & {
+            margin-top: 0;
+        }
     }
 }
 

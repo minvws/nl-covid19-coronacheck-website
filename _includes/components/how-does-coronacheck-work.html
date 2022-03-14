@@ -1,25 +1,39 @@
 <div class="about">
     <div class="about__column-image">
-        <img
-        src="{{ site.baseurl }}/img/scanner.svg"
-        alt=""
-        loading="lazy"
-        class="about__image"
-        width="200"
-        height="202"
-        >
+        {% if include.version == "0g" %}
+            <img
+            src="{{ site.baseurl }}/img/nederland_wereld.svg"
+            alt=""
+            loading="lazy"
+            class="about__image"
+            width="200"
+            height="202"
+            >
+        {% else %}
+            <img
+            src="{{ site.baseurl }}/img/scanner.svg"
+            alt=""
+            loading="lazy"
+            class="about__image"
+            width="200"
+            height="202"
+            >
+        {% endif %}
     </div>
     <div class="about__column-content">
-        <h2 class="about__title">{{ site.data[page.lang].translations.user-instructions-title }}</h2>
+        <h2 class="about__title">{{ site.data[page.lang][include.version].user-instructions-title }}</h2>
         
         <ol>
-            <li>{{ site.data[page.lang].translations.coronacheck-howto-step-1 }}</li>
-            <li>{{ site.data[page.lang].translations.coronacheck-howto-step-2 }}</li>
-            <li>{{ site.data[page.lang].translations.coronacheck-howto-step-3 }}</li>
+                <li>{{ site.data[page.lang][include.version].coronacheck-howto-step-1 }}</li>
+                <li>{{ site.data[page.lang][include.version].coronacheck-howto-step-2 }}</li>
+                <li>{{ site.data[page.lang][include.version].coronacheck-howto-step-3 }}</li>
+            {% if include.version == "0g" %}
+                <li>{{ site.data[page.lang] [include.version].coronacheck-howto-step-4 }}</li>
+            {% endif %}
         </ol>
 
         <p>
-            <a href="{{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-url }}">
+            <a href="{{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-url }}" target="_blank"  rel="noopener noreferrer">
             {{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-link }}
             </a>
         </p>

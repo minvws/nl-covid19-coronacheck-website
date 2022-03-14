@@ -4,17 +4,9 @@ scanner-app-name: CoronaCheck Scanner
   
 header-skip-to-content: Ga direct naar inhoud
     
-header-title: Krijg toegang met de CoronaCheck-app
-
-header-subtitle: Met de app bewijs je dat je gevaccineerd of negatief getest bent. Of dat je eerder corona hebt gehad. Je kunt CoronaCheck gebruiken voor toegang tot bepaalde plekken. Of om naar andere landen te reizen. 
-
 header-button-download-app: Download de app
 
 header-button-paper-certificate: Maak papieren bewijs
-
-scanner-header-title: Geef toegang met CoronaCheck Scanner
-
-scanner-header-subtitle: Met CoronaCheck Scanner controleer je de geldigheid van het coronabewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten. Wil je CoronaCheck gebruiken voor je locatie of activiteit, lees dan meer op de pagina <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/ondernemers" target="_blank" rel="noopener noreferrer">Ondernemers, organisatoren en het coronatoegangsbewijs</a>.
     
 coronacheck-scanner-linktext: Scanner
 
@@ -88,7 +80,7 @@ footer-attribution: 'Mede mogelijk gemaakt door:'
 
 footer-contact-in-app-subtitle: Staat jouw vraag er niet tussen? <br />Bekijk dan <a href="https://www.coronacheck.nl/nl/faq" target="_blank">alle meestgestelde vragen</a> of neem contact op met de helpdesk.
 
-footer-contact-title: Staat jouw vraag er niet tussen? <br />Neem dan contact op met de helpdesk.
+footer-contact-title: Staat jouw vraag er niet tussen? <br />Neem dan contact op met de helpdesk
 
 footer-contact-scanner-in-app-subtitle: Staat jouw vraag er niet tussen? <br />Bekijk dan  <a href="https://www.coronacheck.nl/nl/faq-scanner" target="_blank">alle meestgestelde vragen</a> of neem contact op met de helpdesk.
 
@@ -97,8 +89,7 @@ footer-phone: Bel de helpdesk
 footer-phone-action: '<a href="tel:08001421">0800-1421</a> (gratis). Of als je vanuit het buitenland belt: <a href="tel:+31707503720">+31 70 750 37 20</a>'
   
 footer-phone-opening-hours: "Bereikbaar van maandag t/m zondag 08.00 – 20.00 uur"
-  
-footer-phone-mail: "Of stuur een e-mail naar:"
+
     
 footer-colophon: Colofon
 
@@ -182,15 +173,8 @@ mediaelement-download-subtitle: Ondertitelingsbestand
   
 mediaelement-transcript-title: Uitgeschreven tekst van de video
   
-user-instructions-title: Hoe werkt het coronabewijs?
 
-coronacheck-howto-step-1: Laat je testen of vaccineren
-
-coronacheck-howto-step-2: Haal je resultaat op in de app of deze website. Dan krijg je een bewijs met QR-code.
-
-coronacheck-howto-step-3: Laat je QR-code en identiteitsbewijs controleren om toegang te krijgen.
-
-coronacheck-howto-url: /
+coronacheck-howto-url: https://www.rijksoverheid.nl/coronabewijs
 
 coronacheck-howto-link: Lees meer over het coronabewijs
 

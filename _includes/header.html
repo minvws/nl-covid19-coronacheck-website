@@ -30,16 +30,15 @@
             <div class="header__layout">
 
                 <div class="header__layout--content">
-                    <h1 class="header__title">
-                        {{ site.data[page.lang].translations.header-title }}<br />
+                    <h1 class="header__title"> 
+                        {{ site.data[page.lang][include.version].header-title }}<br /> 
                     </h1>
-                    <p>
-                        {{ site.data[page.lang].translations.header-subtitle }}
-                    </p>
+
+                    <p>{{ site.data[page.lang][include.version].header-subtitle }}</p> 
 
                     <div class="buttons">
                         <!-- shown on desktop only -->
-                        <a href="{{ site.setup.translations.header-button-download-app-url[page.lang] }}" class="btn only-desktop">{{ site.data[page.lang].translations.header-button-download-app }}</a>
+                            <a href="{{ site.data.setup.header-button-download-app-url[page.lang] }}" class="btn only-desktop">{{ site.data[page.lang].translations.header-button-download-app }}</a>
                         <!-- end shown on desktop -->
 
                         <!-- shown on mobile only -->

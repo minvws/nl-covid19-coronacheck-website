@@ -4,17 +4,9 @@ scanner-app-name: CoronaCheck Scanner
     
 header-skip-to-content: Skip to content
     
-header-title: Get access with the CoronaCheck-app
-
-header-subtitle: With this app, you are able to prove you've been vaccinated, you’ve had corona or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain places. And to travel to other countries. 
-
 header-button-download-app: Download the app
 
 header-button-paper-certificate: Print your certificate
-
-scanner-header-title: Allow access with CoronaCheck Scanner 
-
-scanner-header-subtitle: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record, recovery or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
 
 coronacheck-scanner-linktext: Scanner
 
@@ -98,8 +90,6 @@ footer-phone-action: '<a href="tel:08001421">0800-1421</a> (free). Or if you are
   
 footer-phone-opening-hours: 'Available Monday till Sunday 08.00 a.m. - 08.00 p.m.'
   
-footer-phone-mail: 'Or send an e-mail to:'
-    
 footer-colophon: Colophon
 
 footer-attribution-logo: 'Logo of the European Commission'
@@ -181,13 +171,7 @@ mediaelement-download-subtitle: Subtitle
 
 mediaelement-transcript-title: Written out text of the video
   
-user-instructions-title: How does it work?
 
-coronacheck-howto-step-1: Get tested or vaccinated
-
-coronacheck-howto-step-2: Get your result in the app or this website. Then you will receive a QR code.
-
-coronacheck-howto-step-3: Have your QR code and ID checked to gain entry.
 
 coronacheck-howto-url: /
 

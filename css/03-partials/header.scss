@@ -121,7 +121,6 @@
     .header__layout {
         display: flex;
         justify-content: center;
-        // align-items: flex-end;
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -157,6 +156,10 @@
         .header__layout--image {
             display: block;
             padding: 30px 0 0 30px;
+
+            .scanner-0g & {
+                padding: 30px;
+            }
         }
 
         .header__layout--content {

@@ -24,15 +24,22 @@
         <div class="container">
             <div class="header__layout">
                 <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
+                    {% if include.version == "0g" %}
+                        <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-out-of-order[page.lang] }}" alt="" width="250" height="319">
+                    {% else %}
+                        <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
+                    {% endif %}
                 </div>
 
                 <div class="header__layout--content">
                     <h1 class="header__title">
-                    {{ site.data[page.lang].translations.scanner-header-title }}
+                        {{ site.data[page.lang][include.version].scanner-header-title }}
                     </h1>
-                    <p>{{ site.data[page.lang].translations.scanner-header-subtitle }}</p>
-                    {% include components/scanner-badges.html %}
+                    <p>{{ site.data[page.lang][include.version].scanner-header-subtitle }}</p>
+                    
+                    {% if include.version != "0g" %}
+                        {% include components/scanner-badges.html %}
+                    {% endif %}
                 </div>
             </div>
         </div>
