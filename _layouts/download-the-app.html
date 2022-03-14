@@ -30,27 +30,10 @@
     <div class="content-block" {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
       <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
       {{ content }}
+
+      {% include components/coronacheck-badges.html %}
     </div>
-
-    {% if page.collection == 'questions' %}
-      <p class="content-center__home return_link">
-        <a href="{{ langSlug }}/faq#{{ page.title | slugify }}">
-          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-faq }} 
-        </a>
-      </p>
-    {% elsif page.collection == 'questions-scanner' %}
-      <p class="content-center__home return_link">
-        <a href="{{ langSlug }}/faq-scanner#{{ page.title | slugify }}">
-          <span class="icon icon-chevron-left"></span>{{ site.data[page.lang].translations.layout-template-faq }} 
-        </a>
-      </p>
-    {% endif %}
-
-  </main>
-  {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
-    {% include footer.html for="scanner" %}
-  {% else %}
-    {% include footer.html %}
-  {% endif %}
+  </main> 
+  {% include footer.html %} 
 </body>
 </html>
