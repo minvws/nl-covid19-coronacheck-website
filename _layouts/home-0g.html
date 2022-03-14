@@ -8,16 +8,14 @@
 {% include open-source-comment.html %}
 {% include head.html %}
 <body>
-  {% include header.html %}
-  <main id="content"> 
- 
-    {% include components/announcements.html %}
+  {% include header.html version="0g" %}
+  <main id="content content-0g"> 
+
+    {% include components/announcements.html  version="0g" %}
     
-    {% include components/how-does-coronacheck-work.html %} 
+    {% include components/how-does-coronacheck-work.html  version="0g" %} 
 
-    {% include components/grant-access-with-coronacheck-scanner.html %}
-
-    {% include components/faq.html for="coronacheck" %}
+    {% include components/faq.html for="coronacheck" version="0g" %}
 
     {% include components/helpdesk.html %}
 

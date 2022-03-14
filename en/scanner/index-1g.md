@@ -1,10 +1,9 @@
 ---
-layout: scanner-home
+layout: scanner-home-1g
 domain: scanner
-lang: nl
+lang: en
 title: ''
-
+permalink: /en/scanner
 showContact: true
 lang-ref: covid19-notification-app-website-scanner
-redirect_from: /scanner
 ---
