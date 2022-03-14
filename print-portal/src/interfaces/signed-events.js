@@ -9,10 +9,10 @@ const filterTokensByProvider = (tokens, provider) => {
     return tokens.filter(({ provider_identifier }) => (provider === provider_identifier))
 }
 
-const collect = async (tokenSets, filter, provider) => {
+const collect = async (tokenSets, filter, provider, scope) => {
     return new Promise((resolve, reject) => {
         const tokens = filterTokensByProvider(tokenSets, provider)
-        getEvents(tokens, filter).then(results => {
+        getEvents(tokens, filter, scope).then(results => {
             resolve(results);
         }, (error) => {
             reject(error)
@@ -39,7 +39,7 @@ const getTokens = async (token) => {
     })
 }
 
-const getEvents = async (tokenSets, filter) => {
+const getEvents = async (tokenSets, filter, scope) => {
     const results = []
     for (const tokenSet of tokenSets) {
         // get provider by identifier AND filter
@@ -59,14 +59,14 @@ const getEvents = async (tokenSets, filter) => {
                 }
             }
             try {
-                result = await unomi(eventProvider, tokenSet, filter);
+                result = await unomi({ eventProvider, tokenSet, filter, scope });
                 resultForEventProvider.unomi.result = true;
             } catch (error) {
                 resultForEventProvider.unomi.error = error;
             }
             if (result && result.informationAvailable) {
                 try {
-                    await getEvent(eventProvider, tokenSet, filter).then(signedEvent => {
+                    await getEvent({ eventProvider, tokenSet, filter, scope }).then(signedEvent => {
                         resultForEventProvider.events.result = signedEvent;
                     })
                 } catch (error) {
@@ -79,8 +79,9 @@ const getEvents = async (tokenSets, filter) => {
     return results;
 }
 
-const unomi = async (eventProvider, tokenSet, filter) => {
+const unomi = async ({ eventProvider, tokenSet, filter, scope }) => {
     return new Promise((resolve, reject) => {
+        const url = eventProvider.unomi_url;
         const headers = {
             'Authorization': `Bearer ${tokenSet.unomi}`,
             'Content-Type': 'application/json',
@@ -88,9 +89,12 @@ const unomi = async (eventProvider, tokenSet, filter) => {
         };
         axios({
             method: 'post',
-            headers: headers,
-            url: eventProvider.unomi_url,
-            data: { filter: filter },
+            headers,
+            url,
+            data: {
+                filter,
+                scope
+            },
             timeout: timeoutTime
         }).then((response) => {
             if (response.data && response.data.payload) {
@@ -105,7 +109,7 @@ const unomi = async (eventProvider, tokenSet, filter) => {
     })
 }
 
-const getEvent = async (eventProvider, tokenSet, filter) => {
+const getEvent = async ({ eventProvider, tokenSet, filter, scope }) => {
     return new Promise((resolve, reject) => {
         const url = eventProvider.event_url;
         const headers = {
@@ -115,9 +119,12 @@ const getEvent = async (eventProvider, tokenSet, filter) => {
         };
         axios({
             method: 'post',
-            headers: headers,
-            url: url,
-            data: { filter: filter },
+            headers,
+            url,
+            data: {
+                filter,
+                scope
+            },
             timeout: timeoutTime
         }).then((response) => {
             resolve(response.data)
