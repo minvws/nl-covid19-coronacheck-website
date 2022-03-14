@@ -6,12 +6,6 @@
     for (const element of incaseOfNoJS) {
         element.remove()
     }
-    
-    // console.log(incaseOfNoJS);
-    // for (let i = 0; i < incaseOfNoJS.length; i++) {
-    //     incaseOfNoJS[i].remove();
-    // }
-    
 
     if (window.navigator.userAgent.indexOf('MSIE') >= 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
         htmlEl.setAttribute('class', htmlEl.getAttribute('class') + ' browser-ie-11');
