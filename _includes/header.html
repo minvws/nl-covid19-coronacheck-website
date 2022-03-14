@@ -38,10 +38,19 @@
                     </p>
 
                     <div class="buttons">
-                        <a href="{{ site.setup.translations.header-button-download-app-url[page.lang] }}" class="btn">{{ site.data[page.lang].translations.header-button-download-app }}</a>
+                        <!-- shown on desktop only -->
+                        <a href="{{ site.setup.translations.header-button-download-app-url[page.lang] }}" class="btn only-desktop">{{ site.data[page.lang].translations.header-button-download-app }}</a>
+                        <!-- end shown on desktop -->
+
+                        <!-- shown on mobile only -->
+                            <!-- if on iphone -->
+                            <a href="{{ site.data.setup.coronacheck-app-store-url[page.lang] }}" class="btn onlyiOS">{{ site.data[page.lang].translations.header-button-download-app }} <span class="noJS">(iOS)</span></a>
+                            <!-- if on android -->
+                            <a href="{{ site.data.setup.coronacheck-google-play-url[page.lang] }}" class="btn onlyAndroid">{{ site.data[page.lang].translations.header-button-download-app }} <span class="noJS">(Android)</span></a>
+                        <!-- end shown on mobile -->
+
                         <a href="{{ site.setup.translations.header-button-paper-certificate-url[page.lang] }}" class="btn">{{ site.data[page.lang].translations.header-button-paper-certificate }}</a>
                     </div>
-                    <!-- {% include components/coronacheck-badges.html %} -->
                 </div>
 
                 <div class="header__layout--image">

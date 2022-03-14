@@ -147,3 +147,36 @@ button {
         max-height: 30vh;
     }
 }
+
+.btn.only-mobile {
+    display: none;
+
+    @media only screen and (max-width: 767px) {
+        display: initial;
+    }
+}
+
+.btn.only-desktop {
+    display: initial;
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.btn.onlyAndroid,
+.btn.onlyiOS {
+    display: none;
+}
+
+.iOS {
+    .btn.onlyiOS {
+        display: initial;
+    }
+}
+
+.android {
+    .btn.onlyAndroid {
+        display: initial;
+    }
+}
