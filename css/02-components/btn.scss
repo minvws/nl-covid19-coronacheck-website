@@ -1,6 +1,5 @@
 .btn {
     padding: 14px 20px;
-    margin-bottom: 5px;
     background: #fff;
     display: inline-block;
     background: $color-coronacheck_blue;
@@ -11,7 +10,8 @@
     font-family: inherit;
     text-decoration: none;
     font-weight: 700;
-    
+    margin-bottom: 0;
+
     @media (min-width: 740px) {
         padding: 14px 50px;
     }

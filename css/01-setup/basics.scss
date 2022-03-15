@@ -152,12 +152,12 @@ button {
     display: none;
 
     @media only screen and (max-width: 767px) {
-        display: initial;
+        display: inline-block;
     }
 }
 
 .btn.only-desktop {
-    display: initial;
+    display: inline-block;
 
     @media only screen and (max-width: 767px) {
         display: none;
@@ -171,12 +171,12 @@ button {
 
 .iOS {
     .btn.onlyiOS {
-        display: initial;
+        display: inline-block;
     }
 }
 
 .android {
     .btn.onlyAndroid {
-        display: initial;
+        display: inline-block;
     }
 }
