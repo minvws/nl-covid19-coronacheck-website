@@ -21,9 +21,12 @@
       if (userAgent.indexOf('huawei') > -1) {
         htmlEl.setAttribute('class', htmlEl.getAttribute('class') + ' huawei-app-gallery');
       }
-    }
-
-    if (userAgent.indexOf('iphone') > -1) {
+    } else if (userAgent.indexOf('iphone') > -1) {
       htmlEl.setAttribute('class', htmlEl.getAttribute('class') + ' iOS');
+    } else {
+        var fallBackButton = document.querySelector('.fallBack');
+        if (fallBackButton != null) { 
+            fallBackButton.setAttribute('hidden', false);
+        }
     }
 })();

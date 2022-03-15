@@ -10,10 +10,6 @@
         padding: 0;
         margin-bottom: -16px; // Compensate for statement tile margins
     }
-
-    @media (min-width: 960px) {
-        padding: 0 0;
-    }
 }
 
 .scanner-quicklink {
@@ -21,13 +17,9 @@
     flex-grow: 0;
     position: relative;
 
-    @media (min-width: 740px) {
-        width: calc(50% - 20px);
-        aspect-ratio: 3 / 4;
-    }
-
-    @media (min-width: 960px) {
+    @media (min-width: 769px) {
         width: calc(33.333% - 20px);
+        aspect-ratio: 3 / 4;
     }
 }
 
@@ -64,7 +56,11 @@
     align-self: stretch;
 
     h3 {
-        font-size: 1.875rem;
+        font-size: 1.2rem;
+
+        @media (min-width: 960px) {
+            font-size: 1.875rem;
+        }
     }
 
     p {
