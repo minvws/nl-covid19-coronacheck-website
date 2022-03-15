@@ -223,6 +223,10 @@
 .hero__image {
     padding: 30px;
 
+    @media (min-width: 530px) and (max-width: 959px) {
+        display: none;
+    }
+
     @media (min-width: 960px) {
         padding: 30px 0 80px 0;
         flex: 1 1 35%;
