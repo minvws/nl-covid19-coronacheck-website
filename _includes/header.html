@@ -27,9 +27,8 @@
         </div>
         <div class="container">
 
-            <div class="header__layout">
-
-                <div class="header__layout--content">
+            <div class="hero">
+                <div  class="hero__content">
                     <h1 class="header__title"> 
                         {{ site.data[page.lang][include.version].header-title }}<br /> 
                     </h1>
@@ -52,8 +51,8 @@
                     </div>
                 </div>
 
-                <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="250" height="319">
+                <div class="hero__image">
+                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="360" height="280">
                 </div>
             </div>
         </div>
