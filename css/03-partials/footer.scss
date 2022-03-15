@@ -50,7 +50,7 @@
         padding-bottom: 3rem;
         display: flex;
         font-size: 1.125rem;
-        margin: 0 auto;
+        margin: 0 auto 100px;
     }
 
     a {
@@ -73,12 +73,16 @@
     p {
         margin-bottom: 20px;
     }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .footer-contact__column-left {
     display: flex;
     flex-direction: column;
-    flex: 0 0 33.333%;
+    flex: 0 0 224px;
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
@@ -133,11 +137,7 @@
     }
 
     @media (min-width: 960px) {
-        margin: 4.8em auto 0 auto;
-
-        .scanner-0g & {
-            margin-top: 0;
-        }
+        margin: 0 auto 0 auto;
     }
 }
 
