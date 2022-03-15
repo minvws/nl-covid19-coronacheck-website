@@ -62,7 +62,7 @@
     summary {
         list-style-type: none;
     } /* Firefox */
-    summary::-webkit-details-marker {
+    summary::marker {
         display: none;
     } /* Chrome */
     summary::marker {
