@@ -6,16 +6,7 @@ phone-ggd:
 
 phone-helpdesk:
   nl: '<a href="tel:08001421">0800-1421</a>'
-  fy: '<a href="tel:08001421">0800-1421</a>'
   en: '<a href="tel:08001421">0800-1421</a>'
-  ar: '<a href="tel:0800-1421" dir="ltr">0800-1421</a>'
-  bg: '<a href="tel:08001421">0800-1421</a>'
-  de: '<a href="tel:08001421">0800-1421</a>'
-  fr: '<a href="tel:08001421">0800-1421</a>'
-  es: '<a href="tel:08001421">0800-1421</a>'
-  pl: '<a href="tel:08001421">0800-1421</a>'
-  ro: '<a href="tel:08001421">0800-1421</a>'
-  tr: '<a href="tel:08001421">0800-1421</a>'
     
 phone-helpdesk-abroad:
   nl: '<a href="tel:+31707503720">+31 70 750 37 20</a>'
@@ -26,8 +17,8 @@ phone-digid-helpdesk:
   en: '<a href="tel:+31881236555">+31 88 123 65 55</a>'
 
 phone-tvt-helpdesk:
-  nl: '<a href="tel:0887770809">088 777 08 09</a>'
-  en: '<a href="tel:+31887770809">+31 88 777 08 09</a>'
+  nl: '<a href="tel:0889324283">088 932 42 83</a>'
+  en: '<a href="tel:+31889324283">+31 88  932 42 83</a>'
 
 phone-tvjr-helpdesk:
   nl: '<a href="tel:0887770810">088 777 08 10</a>'
@@ -56,16 +47,16 @@ reizen-en-vakantie:
   en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/travelling-abroad" rel="noopener noreferrer" target="_blank">Travelling abroad (information for people living in the Netherlands)</a>'
 
 testenvoorjereis: 
-  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie/coronabewijs/gratis-coronatest" rel="noopener noreferrer" target="_blank">Testen voor je reis</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/travel-and-holidays/free-coronavirus-test-for-travellers" rel="noopener noreferrer" target="_blank">Coronatest for travellers</a>'
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/negatief-testbewijs/negatieve-testuitslag-regelen-voor-uw-reis" rel="noopener noreferrer" target="_blank">Testbewijs regelen als coronabewijs voor uw reis</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/negative-test-result" rel="noopener noreferrer" target="_blank">Using a negative test result to generate a COVID Certificate for travel</a>'
 
 kvkEvenement:
   nl: '<a href="https://www.kvk.nl/corona/alles-wat-je-moet-weten-over-het-coronatoegangsbewijs/" rel="noopener noreferrer" target="_blank">Alles wat je moet weten over het coronatoegangsbewijs</a>'
   en: 
 
 evenementOrganiseren:
-  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-voor-evenementen/coronatoegangsbewijs-informatie-voor-organisatoren" rel="noopener noreferrer" target="_blank">Ondernemers, organisatoren en het coronatoegangsbewijs</a>'
-  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/coronabewijs-voor-evenementen/coronatoegangsbewijs-informatie-voor-organisatoren" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Ondernemers, organisatoren en het coronatoegangsbewijs</span> (Dutch)</a>'
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/ondernemers-organisatoren-bedrijven/ondernemers" rel="noopener noreferrer" target="_blank">Ondernemers, organisatoren en het coronatoegangsbewijs</a>'
+  en: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/ondernemers-organisatoren-bedrijven/ondernemers" rel="noopener noreferrer" target="_blank" hreflang="nl"><span lang="nl">Ondernemers, organisatoren en het coronatoegangsbewijs</span> (Dutch)</a>'
 
 coronatest: 
   nl: '<a href="https://www.coronatest.nl" rel="noopener noreferrer" target="_blank">coronatest.nl</a>'
@@ -128,5 +119,9 @@ entry-pass:
   en: '<a href="https://www.government.nl/entry-pass-visitors" rel="noopener noreferrer" target="_blank">Coronavirus entry pass for visitors</a>'
 
 maatregelen-25feb:
-  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/aangekondigde-maatregelen" rel="noopener noreferrer" target="_blank">Coronatoegangsbewijs voor bezoekers</a>'
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/aangekondigde-maatregelen" rel="noopener noreferrer" target="_blank">deze pagina van de overheid over de aangekondigde maatregelen.</a>'
   en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/tackling-new-coronavirus-in-the-netherlands/measures-announced" rel="noopener noreferrer" target="_blank">Announced COVID-19 measures from 25 February 2022</a>'
+
+rijksoverheid-tvt:
+  nl: '<a href="https://rijksoverheid.nl/testenvoortoegang" rel="noopener noreferrer" target="_blank">Testen voor Toegang voor bezoekers van grote evenementen</a>'
+  en: '<a href="https://www.government.nl/test-certificate-access" rel="noopener noreferrer" target="_blank">this goverment page about the new Testen voor Toegang measures</a>'

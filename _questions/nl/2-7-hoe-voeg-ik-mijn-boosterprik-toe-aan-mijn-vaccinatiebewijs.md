@@ -17,13 +17,13 @@ Ga dan naar [www.coronacheck.nl/print](/print) en maak opnieuw een vaccinatiebew
 </div>
 </details>
 
-Voor iedere prik ontvang je een aparte internationale QR-code met de datum van die prik. Lees hierover meer op: [Waarom heb ik voor elke prik een aparte internationale QR-code? En welke moet ik gebruiken?](/nl/faq/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-qr-code/) Je krijgt maar één Nederlandse QR-code voor al je vaccinaties. Hierbij staat de datum van je laatste vaccinatie.
+Voor iedere prik ontvang je een aparte internationale QR-code met de datum van die prik. Lees hierover meer op: [Waarom heb ik voor elke prik een aparte internationale QR-code? En welke moet ik gebruiken?](/nl/faq/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-qr-code/)
 
 <h2 class="h2-question">Heb je twee prikken gekregen en daarna een boosterprik gehad?</h2>
-Je ziet dan in je Nederlandse bewijs drie vaccinatiedoses staan. In je internationale bewijs krijg je drie QR-codes met doses geregistreerd als ‘1/2', ‘2/2’ en ‘3/3’. 
+In je internationale bewijs krijg je drie QR-codes met doses geregistreerd als ‘1/2’, ‘2/2’ en ‘3/3’.
 
 <h2 class="h2-question">Heb je corona gehad en een vaccinatie? Of ben je met Janssen geprikt en kreeg je daarna een boostervaccinatie?</h2>
-Je ziet dan in je Nederlandse bewijs twee vaccinatiedoses staan. In je internationale bewijs krijg je twee QR-codes met doses geregistreerd als ‘1/1’ en ‘2/1’. Zo zie je dat de afgeronde basis-serie uit één vaccin bestond. Dit is vanaf 1 februari 2022 automatisch gewijzigd in de CoronaCheck-app. Het kan 14 dagen duren voordat deze wijziging zichtbaar is. 
+In je internationale bewijs krijg je twee QR-codes met doses geregistreerd als ‘1/1’ en ‘2/1’. Zo zie je dat de afgeronde basis-serie uit één vaccin bestond.  
 
 ## Meer informatie
 
