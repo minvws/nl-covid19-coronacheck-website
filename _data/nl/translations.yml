@@ -70,7 +70,7 @@ layout-template-home: Home
   
 layout-template-faq: Terug naar meestgestelde vragen
   
-layout-faq-btn: Bekijk alle vragen
+layout-faq-btn: Bekijk alle meestgestelde vragen
   
 coronacheck-lead-title: Download de CoronaCheck-app
   
@@ -180,7 +180,7 @@ coronacheck-howto-link: Lees meer over het coronabewijs
 
 grant-access-with-coronacheck-scanner-url: /nl/scanner
 
-grant-access-with-coronacheck-scanner-link: Bekijk de Scanner-app
+grant-access-with-coronacheck-scanner-link: Lees meer over CoronaCheck Scanner
 
 status-block-title: Bekijk de actuele status van CoronaCheck
 
@@ -229,4 +229,8 @@ dashboard-noscript-description: Dit dashboard gebruikt JavaScript. Schakel a.u.b
 
 coronamelder-title: Gebruik ook CoronaMelder
 
-coronamelder-content: Download ook de CoronaMelder-app, want hiermee worden besmettingen sneller opgespoord en gestopt. Ook als je gevaccineerd bent. 
+coronamelder-content: De CoronaMelder app helpt om sneller besmettingen op te sporen en te stoppen. Zo kunnen we verspreiding van het coronavirus voorkomen. 
+
+coronamelder-url: https://www.coronamelder.nl
+
+coronamelder-link: Lees meer over CoronaMelder

@@ -228,4 +228,8 @@ dashboard-noscript-description: This dashboard uses JavaScript. Please enable Ja
 
 coronamelder-title: Also use CoronaMelder
 
-coronamelder-content: Also download the CoronaMelder app, because it detects and stops infections faster. Even if you are vaccinated.
+coronamelder-content: The CoronaMelder app helps to detect and stop infections faster. This way we can prevent the spread of the coronavirus.
+
+coronamelder-url: https://www.coronamelder.nl
+
+coronamelder-link: Read more about CoronaMelder
