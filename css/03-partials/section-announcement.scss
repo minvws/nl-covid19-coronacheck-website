@@ -6,11 +6,12 @@ h2:empty {
 .announcement {
     font-size: 1.125rem;
     line-height: 1.42;
-    padding: 30px 30px;
+    padding: 24px;
     max-width: 940px;
-    margin: 30px;
     display: flex;
+    margin: 40px 30px;
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
 
     a {
         text-decoration: underline;
@@ -34,8 +35,9 @@ h2:empty {
         }
     }
 
-    @media (min-width: 940px) {
-        margin: 30px auto;
+    @media (min-width: 767px) {
+        margin: 64px auto;
+        padding: 40px;
 
         h2 {
             font-size: 1.125rem;
@@ -49,10 +51,19 @@ h2:empty {
 }
 
 .announcement_icon {
-    padding-right: 2.5rem;
-    flex-grow: 0;
+    flex: 0 0 40px;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media only screen and (min-width: 960px) {
+        flex: 0 0 70px;
+    }
 }
 
 .announcement_content {
-    // placeholder css
+    padding-right: 24px;
+
+    @media (min-width: 767px) {
+        padding-right: 40px;
+    }
 }
