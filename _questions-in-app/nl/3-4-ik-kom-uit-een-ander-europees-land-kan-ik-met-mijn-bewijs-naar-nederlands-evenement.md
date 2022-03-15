@@ -6,4 +6,5 @@ redirect_from:
     - /nl/faq-in-app/3-7-ik-kom-uit-een-ander-europees-land-kan-ik-met-mijn-bewijs-naar-nederlands-evenement
 webonly: true
 ---
-Ja, dat kan. Voor alle Europeanen gelden dezelfde binnenlandse regels zoals die ook voor de Nederlanders gelden. Wanneer de bewijzen voldoen aan de Nederlandse regels, kan je als Europeaan ook naar evenementen in Nederland. 
+Op dit moment wordt het coronatoegangsbewijs in Nederland alleen gebruikt bij binnenactiviteiten met meer dan 500 bezoekers, zonder vaste zitplaats. Hier kan je alleen met een negatief testbewijs toegang toe krijgen. Heb jij een internationaal bewijs (EU DCC) van een negatieve test dan kun je daarmee binnen 24 uur na afname van de test naar een evenement.  
+Wil je in Nederland getest worden? Dan kun je gratis een testafspraak plannen via {{ site.data.links.testen-voor-toegang[page.lang] }}, en vervolgens een bewijs maken via de CoronaCheck-app of [CoronaCheck.nl/print](/print). 
