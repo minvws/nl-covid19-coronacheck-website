@@ -1,11 +1,11 @@
-<div class="about">
-    <div class="about__column-image">
+<div class="block">
+    <div class="block__image-container">
         {% if include.version == "0g" %}
             <img
             src="{{ site.baseurl }}/img/nederland_wereld.svg"
             alt=""
             loading="lazy"
-            class="about__image"
+            class="block__image"
             width="200"
             height="202"
             >
@@ -14,14 +14,14 @@
             src="{{ site.baseurl }}/img/scanner.svg"
             alt=""
             loading="lazy"
-            class="about__image"
+            class="block__image"
             width="200"
             height="202"
             >
         {% endif %}
     </div>
-    <div class="about__column-content">
-        <h2 class="about__title">{{ site.data[page.lang][include.version].user-instructions-title }}</h2>
+    <div class="block__content-container">
+        <h2 class="block__title">{{ site.data[page.lang][include.version].user-instructions-title }}</h2>
         
         <ol>
                 <li>{{ site.data[page.lang][include.version].coronacheck-howto-step-1 }}</li>
@@ -33,8 +33,8 @@
         </ol>
 
         <p>
-            <a href="{{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-url }}" target="_blank"  rel="noopener noreferrer">
-            {{ site.data[page.lang].translations.grant-access-with-coronacheck-scanner-link }}
+            <a href="{{ site.data[page.lang].translations.coronacheck-howto-url }}" target="_blank"  rel="noopener noreferrer">
+            {{ site.data[page.lang].translations.coronacheck-howto-link }}
             </a>
         </p>
     </div>
