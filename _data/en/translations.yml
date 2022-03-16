@@ -226,10 +226,10 @@ dashboard-noscript-title: JavaScript required
 
 dashboard-noscript-description: This dashboard uses JavaScript. Please enable JavaScript and try again, or try in a different browser.
 
-coronamelder-title: Also use CoronaMelder
+coronamelder-title: Use CoronaMelder too
 
-coronamelder-content: The CoronaMelder app helps to detect and stop infections faster. This way we can prevent the spread of the coronavirus.
+coronamelder-content: The CoronaMelder app helps detect and stop infections faster. This way we can prevent the spread of coronavirus.
 
-coronamelder-url: https://www.coronamelder.nl
+coronamelder-url: https://www.coronamelder.nl/en
 
 coronamelder-link: Read more about CoronaMelder

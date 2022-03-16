@@ -1,16 +1,22 @@
-header-title: Get access with the CoronaCheck-app
+header-title: Get access with your coronavirus pass
 
-header-subtitle: With this app, you are able to prove you've been vaccinated, you’ve had corona or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain places. And to travel to other countries. 
+header-subtitle: A coronavirus pass allows access to certain places and activities in the Netherlands, or while travelling. You can create a certificate if you’ve been vaccinated, if you’ve been tested and don’t have coronavirus, or if you’ve had coronavirus and have recovered. Download the app to get a certificate on your phone, or create a paper certificate.
 
-user-instructions-title: How does it work?
+
+user-instructions-title: How the coronavirus pass works
 
 coronacheck-howto-step-1: Get tested or vaccinated
 
-coronacheck-howto-step-2: Get your result in the app or this website. Then you will receive a QR code.
+coronacheck-howto-step-2: Create a certificate with QR code from the result in the app, or on paper via this website
 
-coronacheck-howto-step-3: Have your QR code and ID checked to gain entry.
+coronacheck-howto-step-3: Show your QR code and proof of identity at the entrance of the venue you’re visiting, or at the border
 
 
-scanner-header-title: Allow access with CoronaCheck Scanner 
+grant-access-with-coronacheck-scanner-title: Grant access with the CoronaCheck Scanner
 
-scanner-header-subtitle: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record, recovery or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
+grant-access-with-coronacheck-scanner-content: With CoronaCheck Scanner you can check the validity of visitors' coronavirus passes. This way you can give safe access to your venue or activity.
+
+
+scanner-header-title: Allow access with CoronaCheck Scanner
+
+scanner-header-subtitle: With CoronaCheck Scanner you can check the validity of visitors' coronavirus passes. You do this by scanning the QR code on their certificate. This way you can give safe access to your venue or activity.
