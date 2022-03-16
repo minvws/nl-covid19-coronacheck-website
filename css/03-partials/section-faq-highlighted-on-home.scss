@@ -11,45 +11,39 @@
     line-height: 40px;
     color: #333;
     margin-top: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
     padding: 0 20px;
 
     @media (min-width: 680px) {
         margin-top: 80px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         padding: 0;
         font-size: 2rem;
     }
 }
 
 .faq-homepage__more {
-    margin: 30px 0;
+    margin-bottom: 30px;
     text-align: center;
     padding: 0 24px;
 
-    @media (min-width: 740px) {
-        margin-top: 20px 0;
-    }
-
     @media (min-width: 960px) {
-        margin: 40px 0;
+        margin-bottom: 100px;
     }
 }
 
 // Featured faq on homepage
 
 .highlighted-faqs {
-    margin: 10px auto 22px auto;
+    margin: 0 auto 40px auto;
     padding: 0 10px;
     max-width: 940px;
 
     @media (min-width: 740px) {
-        margin: 10px auto 22px auto;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: -16px; // Compensate for statement tile margins
     }
 }
 

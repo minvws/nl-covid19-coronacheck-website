@@ -223,7 +223,7 @@
 .hero__image {
     padding: 30px;
 
-    @media (min-width: 530px) and (max-width: 959px) {
+    @media (max-width: 959px) {
         display: none;
     }
 
