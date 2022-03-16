@@ -10,9 +10,9 @@
     "components": {
         "consent": {
             "vaccination": {
-                "title": "Corona gehad vóór je eerste vaccinatie?",
                 "body": "Dan heb je vaak een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je positieve testuitslag op om die mee te laten tellen in je vaccinatiebewijs.",
-                "checkbox": "Ja, haal ook mijn positieve testuitslag op"
+                "checkbox": "Ja, haal ook mijn positieve testuitslag op",
+                "title": "Corona gehad vóór je eerste vaccinatie?"
             }
         },
         "digid": {
@@ -236,9 +236,6 @@
     "tooBusy": "Het is erg druk op dit moment. Daardoor kun je niet inloggen. Wil je het op een later moment nog eens proberen?",
     "tryAgain": "Probeer opnieuw",
     "unknown": "Onbekend",
-    "warning": {
-        "noPositivetest": "Er is helaas geen geschikte positieve testuitslag gevonden om mee te laten tellen in je vaccinatiebewijs."
-    },
     "views": {
         "browserNotSupported": {
             "button": "Terug naar de hoofdpagina van CoronaCheck.nl",
@@ -275,13 +272,13 @@
             "pageHeader": "Gegevens van je vaccinatie ophalen",
             "pageIntro": "<p>Heb je een (booster)vaccinatie gehad? Log in met DigiD om al je vaccinatiegegevens op te halen.<\/p>"
         },
-        "errorCodeSaml": {
-            "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.digid.nl<\/a> voor de laatste informatie.<\/p>"
-        },
         "errorCode99552": {
             "pageHeader": "Sorry, we kunnen geen bewijs maken",
             "pageIntro": "<p>De persoonsgegevens van je vaccinatiebeoordeling en je negatieve testuitslag zijn verschillend. Daarom kan er geen bezoekersbewijs gemaakt worden.<br><br>Controleer welke gegevens niet kloppen. Neem daarna contact op met de balie waar je vaccinatie is beoordeeld, of met je testlocatie. Zij kunnen je helpen je gegevens aan te passen.<\/p>"
+        },
+        "errorCodeSaml": {
+            "pageHeader": "Sorry, er gaat iets mis",
+            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.digid.nl<\/a> voor de laatste informatie.<\/p>"
         },
         "errorDigiD": {
             "pageHeader": "Sorry, er gaat iets mis",
@@ -416,7 +413,7 @@
             "invalidVerificationCode": "Geen geldige verificatiecode",
             "pageHeader": "Testuitslag ophalen",
             "pageIntro": "Vul jouw ophaalcode in. Deze heb je van je testlocatie gekregen.",
-            "resultBlocked": "Ophaalcode is geblokkeerd",
+            "resultBlocked": "Je hebt te vaak geprobeerd een foute code in te vullen. Probeer het over 5 minuten opnieuw.",
             "sendAgain": "Verstuur opnieuw",
             "sendCode": "Stuur opnieuw",
             "tokenExpired": "Ophaalcode is niet meer geldig",
@@ -492,7 +489,7 @@
         "vaccinationOverview": {
             "createTestProofButton": "Maak bewijs",
             "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Als de gegevens van je vaccinatie kloppen kun je een bewijs maken.<\/p>"
+            "pageIntro": "<p>Als de gegevens kloppen kun je een bewijs maken.<\/p>"
         },
         "vaccinationsIncomplete": {
             "pageHeader": "We kunnen geen bewijs maken",
@@ -502,5 +499,8 @@
             "pageHeader": "Geen vaccinatie(s) beschikbaar",
             "pageIntro": "<p>Er zijn geen gegevens over je vaccinatie(s) beschikbaar. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<\/p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren tot de gegevens beschikbaar zijn.<\/p>"
         }
+    },
+    "warning": {
+        "noPositivetest": "Er is helaas geen geschikte positieve testuitslag gevonden om mee te laten tellen in je vaccinatiebewijs."
     }
 }
