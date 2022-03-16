@@ -298,7 +298,7 @@ export default {
         },
         handleWithPositiveTest () {
             // no recovery is fetched, or expired, remove signed events and show a warning
-            this.$store.dispatch('signedEvents/clear', { filter: this.filter })
+            this.$store.dispatch('signedEvents/clear', { filter: this.filter, scope: this.scope })
             this.$router.push({ name: this.pages.overview, params: { message: this.$t('warning.noPositivetest') } });
         },
         isTestedPositiveBeforeFirstVaccination (proofEvents) {

@@ -67,7 +67,7 @@ export default {
                      <TooBusyButton v-if="tooBusy"/>
                      <ConsentCheckbox
                         class="consent"
-                        v-model="consent"
+                        v-model="withPositiveTestConsent"
                         :title="$t('components.consent.vaccination.title')"
                         :body="$t('components.consent.vaccination.body')"
                         :checkbox="$t('components.consent.vaccination.checkbox')"
