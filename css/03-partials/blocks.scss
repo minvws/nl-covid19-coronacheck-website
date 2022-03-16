@@ -5,6 +5,7 @@
 
     a:not(.btn) {
         text-decoration: underline;
+        font-weight: bold;
     }
 
     @media (min-width: 680px) {
