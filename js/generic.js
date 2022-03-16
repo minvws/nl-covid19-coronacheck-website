@@ -26,7 +26,7 @@
     } else {
         var fallBackButton = document.querySelector('.fallBack');
         if (fallBackButton != null) { 
-            fallBackButton.setAttribute('hidden', false);
+            fallBackButton.setAttribute('class', 'only-mobile')
         }
     }
 })();
