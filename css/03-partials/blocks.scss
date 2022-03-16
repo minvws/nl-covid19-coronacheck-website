@@ -9,9 +9,22 @@
     }
 
     @media (min-width: 680px) {
-        width: calc(100% - (54px * 2));
         display: flex;
+        width: calc(100% - (54px * 2));
         margin: 100px auto;
+    }
+}
+
+.block--reverse {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: 680px) {
+        flex-direction: row;
+    }
+
+    .block__image-container {
+        padding-bottom: 0;
     }
 }
 
