@@ -6,4 +6,4 @@ redirect_from:
     - /en/faq-in-app/3-7-ik-kom-uit-een-ander-europees-land-kan-ik-met-mijn-bewijs-naar-nederlands-evenement
 webonly: true
 ---
-Yes, you can. The domestic rules are the same for European citizens as they are for Dutch people. When your certificate meets the Dutch rules, as a European you’re allowed to visit events in the Netherlands.
+At this moment the corona virus entry pass in the Netherlands is only required at indoor activities over 500 visitors, without assigned seating. Here you can only enter with a test certificate. Do you have an international certificate (EU DCC) of a negative test? Then you can enter the event within 24 hours after the test was taken. Do you want to get tested within the Netherlands? Then you can book a testappointment for free at {{ site.data.links.testen-voor-toegang[page.lang] }}. After the test you can create a test certificate using the CoronaCheck app or [CoronaCheck.nl/print](/en/print).
