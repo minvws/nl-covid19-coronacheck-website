@@ -3,6 +3,7 @@ import ErrorGeneral from '@/components/views/error-pages/ErrorGeneral';
 import ErrorNoEvents from '@/components/views/error-pages/ErrorNoEvents';
 import ErrorTokenFlow from '@/components/views/error-pages/ErrorTokenFlow';
 import ErrorNoBsn from '@/components/views/error-pages/ErrorNoBsn';
+import ErrorCodeSaml from '@/components/views/error-pages/ErrorCodeSaml';
 import ErrorSessionExpired from '@/components/views/error-pages/ErrorSessionExpired';
 import ErrorProofNotPossible from '@/components/views/error-pages/ErrorProofNotPossible';
 import ErrorTimeout from '@/components/views/error-pages/ErrorTimeout';
@@ -21,6 +22,14 @@ const errorPages = [
         path: '/fout-algemeen',
         component: ErrorGeneral,
         name: 'ErrorGeneral',
+        meta: {
+            pageHeader: 'error'
+        }
+    },
+    {
+        path: '/fout-digid',
+        name: 'ErrorCodeSaml',
+        component: ErrorCodeSaml,
         meta: {
             pageHeader: 'error'
         }

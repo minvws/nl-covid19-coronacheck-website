@@ -5,3 +5,8 @@ export const FilterTypes = {
     RECOVERY: 'recovery',
     VACCINATION_ASSESSMENT: 'vaccinationassessment'
 }
+
+export const FilterScopes = {
+    FIRST_EPISODE: 'firstepisode',
+    RECOVERY: 'recovery'
+}

@@ -27,7 +27,7 @@ export default {
                     // todo cancel all processes
                 }
                 this.$store.commit('clearAll')
-                this.$store.dispatch('signedEvents/clear', { filter: this.filter })
+                this.$store.dispatch('signedEvents/clear', { filter: this.filter, scope: this.scope })
                 this.$router.push({ name: this.pages.cancel });
             }
             this.$store.commit('modal/set', {
@@ -142,9 +142,9 @@ export default {
             this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: proofType }))
         },
         collectEvents(tokenSets) {
-            this.$store.dispatch('signedEvents/clear', { filter: this.filter });
+            this.$store.dispatch('signedEvents/clear', { filter: this.filter, scope: this.scope });
             this.isLoading = true;
-            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders).then(results => {
+            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders, this.scope).then(results => {
                 this.isLoading = false;
                 this.analyseResult(results);
             });
@@ -275,7 +275,7 @@ export default {
         //     return '';
         // },
         createEvents(events) {
-            this.$store.dispatch('signedEvents/createAll', { events, filter: this.filter });
+            this.$store.dispatch('signedEvents/createAll', { events, filter: this.filter, scope: this.scope });
         },
         areAllRecoveriesExpired(proofEvents) {
             const expirationDays = this.$store.getters.getRecoveryEventValidityDays()

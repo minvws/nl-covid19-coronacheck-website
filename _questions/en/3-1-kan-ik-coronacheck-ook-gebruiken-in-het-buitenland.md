@@ -6,8 +6,14 @@ redirect_from:
   - /en/faq/12-kan-ik-coronacheck-ook-gebruiken-in-het-buitenland
 webonly: true
 ---
-Yes, you can from July 1. When you make a QR code, you’ll automatically get a QR code for The Netherlands and a QR code for other countries.
- 
-When you’re abroad, always use the international QR code. Please note: this QR code is meant for travel. You may be asked to show it at the border or in the country of destination. You can also use the international QR code to enter locations in the country you’re visiting. However, you must comply with local regulations to do so.  
- 
-Want to know which test, recovery and vaccination certificates are valid in the country you’re visiting?Take a look at {{ site.data.links.wijsopreis[page.lang] }}. This’ll help you avoid any unpleasant surprises once you’re there.
+Yes, you can. When you make a certificate with CoronaCheck, you’ll receive an international QR-code (EU Digital COVID Certificate)
+
+When you’re abroad, always use the international QR code. Please note: this QR code is meant for travel. You may be asked to show it at the border or in the country of destination. You can also use the international QR code to enter locations in the country you’re visiting. However, you must comply with local regulations to do so.
+
+Please note: the regulations to which your corona certificate need to comply differ per country. For example:
+
+- Which test you need for a test certificate (antigen or PCR test);
+- Wether a recovery certificate is accepted
+- The amount of vaccinations that are required, and how old these can be.
+
+Want to know wether your COVID certificates is valid in the country you’re visiting? Take a look at {{ site.data.links.wijsopreis[page.lang] }}. There you can find an overview of the most recent rules and regulations per country.
