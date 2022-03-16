@@ -150,6 +150,7 @@
     "details": "Details",
     "faq": "Frequently asked questions",
     "forInstanceAbbr": "E.g.",
+    "git-test-key": "test for alvaro",
     "goBackToStart": "To Home",
     "goToOverview": "Back to overview",
     "header-appstore": "Download on the App Store",
@@ -231,6 +232,11 @@
             "title": "Certificate containing QR code"
         }
     },
+    "print": {
+        "pageIntro": {
+            "0G": "You have created an international %{type} certificate. Always check before departure if you have the right certificate on <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.netherlandsworldwide.nl<\/a>.<\/p>"
+        }
+    },
     "skiplink": "Skip to content",
     "somethingIsWrong": "Is something wrong?",
     "template": {
@@ -281,7 +287,7 @@
         },
         "errorCodeSaml": {
             "pageHeader": "Sorry, something went wrong",
-            "pageIntro": "<p>An error has occurred while communicating with DigiD. Please try again later. If this error persists, please check <a href=\"https:\/\/www.digid.nl\/en\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.digid.nl\/en\/<\/a> for the latest information.<\/p>"
+            "pageIntro": "<p>An error has occurred while communicating with DigiD. Please try again later. If this error persists, please check <a href=\"https:\/\/www.digid.nl\/en\/\" target=\"_blank\" rel=\"noopener noreferrer\">https:\/\/www.digid.nl\/en<\/a> for the latest information.<\/p>"
         },
         "errorDigiD": {
             "pageHeader": "Sorry, something has gone wrong",
@@ -318,9 +324,11 @@
         "home": {
             "noConsentError": "Give consent to the privacy statement first",
             "pageBody": "<h4>Certificate of test or vaccination<\/h4><p>You can make a coronavirus pass with CoronaCheck if:<ul class=\"ul--with-padding\"><li>you have been vaccinated<\/li><li>a test result confirms you don’t have corona<\/li><li>you've had coronavirus and are recovered<\/li><\/ul><\/p><h4>QR code = your proof<\/h4><p>CoronaCheck generates a QR code with your vaccination, test result or recovery. That is your certificate. This QR code will be checked before you get access.<\/p><h4>QR codes for the Netherlands and international<\/h4><p>This app generates QR codes for the Netherlands and abroad. Travelling outside of the Netherlands? Then use your international QR code.<\/p>",
+            "pageBody0G": "<h4>Travel safely with a certificate<\/h4><p>Travelling to a country where a coronavirus pass is required? Then you need an international certificate. You can create this if:<ul class=\"ul--with-padding\"><li>You are vaccinated<\/li><li>You have tested positive and have recovered from coronavirus<\/li><li>You have tested negative and don’t have coronavirus<\/li><\/ul><\/p><h4>Your certificate contains a QR code<\/h4><p>The QR code on your certificate can be checked at the entrance to places and activities abroad. Or at the border.<p><h4>About your data<\/h4><p>The <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> states the way CoronaCheck handles your data.<\/p>",
             "pageBody1G": "<h4>Dutch certificate for 1G access<\/h4><p>Visiting a place in the Netherlands where a coronavirus pass is required to enter? You only get access with a test certificate (1G access). You can create this if you have a negative coronavirus test.<p><h4>International certificate for abroad<\/h4><p>Are you abroad or crossing the border? Then you need an international certificate. You can create this if:<ul class=\"ul--with-padding\"><li>You have been vaccinated<\/li><li>You have tested positive and have recovered from coronavirus<\/li><li>You have tested negative and don’t have coronavirus<\/li><\/ul><\/p><h4>About your data<\/h4><p>The <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> states the way CoronaCheck handles your data.<\/p>",
             "pageHeader": "Get access with a certificate on paper",
             "pageIntro": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your and other people’s health matters. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass.<\/p><p>A certificate on paper is convenient if you don't have a smartphone.<\/p>",
+            "pageIntro0G": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your health matters, and so does the health of others. That is why some countries require a coronavirus pass. For example at the border, or at certain places and activities. A paper certificate on paper is convenient if you don't have a smartphone.<\/p>",
             "test": "",
             "test2": "New created key TEST",
             "userConsentHeader": "Start making a certificate on paper",
@@ -440,7 +448,7 @@
         "recoveryOverview": {
             "createTestProofButton": "Make certificate",
             "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>If the details about your test are correct, you can make a certificate.<\/p>"
+            "pageIntro": "<p>If the details are correct you can make a certificate.<\/p>"
         },
         "serverBusy": {
             "pageHeader": "Sorry, it is really busy",
