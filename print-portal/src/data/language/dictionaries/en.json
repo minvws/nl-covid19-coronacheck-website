@@ -7,6 +7,13 @@
     },
     "close": "Close",
     "components": {
+        "consent": {
+            "vaccination": {
+                "body": "Then you often need a vaccination less to be considered fully vaccinated. Retrieve your positive test result to record it into your vaccination certificate.",
+                "checkbox": "Yes, retrieve my positive test result too",
+                "title": "Had coronavirus before your first vaccination?"
+            }
+        },
         "digid": {
             "dontHaveDigid": "I don’t have DigiD",
             "loginDigid": "Log in with DigiD",
@@ -206,6 +213,10 @@
                 "vaccination": {
                     "body": "<p>Please contact the care provider who vaccinated you. This can be the GGD, your general practitioner, or a doctor belonging to a healthcare facility. They can help you change these details.<\/p>",
                     "head": "Is something wrong?"
+                },
+                "vaccinationWithPositiveTest": {
+                    "body": "Please contact the care provider who vaccinated or tested you. This can be the GGD, your general practitioner, or a doctor belonging to a healthcare facility. They can help you change these details.",
+                    "head": "Is something wrong?"
                 }
             }
         }
@@ -268,9 +279,13 @@
             "pageHeader": "Sorry, we cannot create a certificate",
             "pageIntro": "<p>The personal details on your vaccination approval and your negative test result do not match. As a result, we cannot create a visitor pass.<br><br>Please check which details are incorrect. Then please speak to the desk that reviewed your vaccination or contact your test location. They can help you change these details.<\/p>"
         },
+        "errorCodeSaml": {
+            "pageHeader": "Sorry, something went wrong",
+            "pageIntro": "<p>An error has occurred while communicating with DigiD. Please try again later. If this error persists, please check <a href=\"https:\/\/www.digid.nl\/en\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.digid.nl\/en\/<\/a> for the latest information.<\/p>"
+        },
         "errorDigiD": {
             "pageHeader": "Sorry, something has gone wrong",
-            "pageIntro": "<p>There was an error while communicating with DigiD. Please try again later. If the error persists, please check <a href=\"https:\/\/www.digid.nl\/en\" rel=\"noopener noreferrer\" target=\"_blank\">www.digid.nl\/en<\/a> for the latest information.<\/p><p><strong>Foutcode: %{error}<\/strong><\/p>"
+            "pageIntro": "<p>There was an error while communicating with DigiD. Please try again later. If the error persists, please check <a href=\"https:\/\/www.digid.nl\/en\" target=\"_blank\">www.digid.nl\/en<\/a> for the latest information.<\/p><p><strong>Foutcode: %{error}<\/strong><\/p>"
         },
         "errorGeneral": {
             "pageHeader": "Sorry, something has gone wrong",
@@ -401,7 +416,7 @@
             "invalidVerificationCode": "Invalid verification code",
             "pageHeader": "Retrieve test result",
             "pageIntro": "Enter your retrieval code. You received it from your test location.",
-            "resultBlocked": "Retrieval code is blocked",
+            "resultBlocked": "You’ve tried to enter an invalid code too many times. Please try again in 5 minutes.",
             "sendAgain": "Send again",
             "sendCode": "Send again",
             "tokenExpired": "Retrieval code has expired",
@@ -477,7 +492,7 @@
         "vaccinationOverview": {
             "createTestProofButton": "Make certificate",
             "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>If the details about your vaccination are correct, you can make a certificate.<\/p>"
+            "pageIntro": "<p>If the details are correct you can make a certificate.<\/p>"
         },
         "vaccinationsIncomplete": {
             "pageHeader": "We can’t make a certificate",
@@ -487,5 +502,8 @@
             "pageHeader": "No vaccination(s) available",
             "pageIntro": "<p>There is no available vaccination data. This can have various causes. Read the <a href=\"https:\/\/www.coronacheck.nl\/en\/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a> for more information.<\/p><p>Got vaccinated recently? It can take a few hours until your details are available. Try again later.<\/p>"
         }
+    },
+    "warning": {
+        "noPositivetest": "Unfortunately, no suitable positive test result has been found to be recorded into your vaccination certificate."
     }
 }
