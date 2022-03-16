@@ -8,6 +8,10 @@ redirect_from:
   - /nl/faq/17-wat-ziet-de-controleur-na-scannen-van-mijn-qr-code/
 featuredHome: true
 featuredHomeIndex: 5
+faqversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 ### De Nederlandse QR-code
 De controleur ziet bij een Nederlandse QR-code slechts minimale gegevens op zijn of haar scherm:

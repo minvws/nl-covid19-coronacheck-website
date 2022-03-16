@@ -11,6 +11,10 @@
     }
 }
 
+.content-center--download-the-app {
+    max-width: 460px;
+}
+
 .container-breadcrumbs {
     position: relative;
     display: block;
@@ -162,7 +166,7 @@
     // Block elements
 
     h1 {
-        margin: 25px 0 40px 0;
+        margin: 25px 0 24px 0;
         font-size: 1.75rem;
         line-height: 116%;
     }

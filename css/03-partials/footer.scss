@@ -44,13 +44,14 @@
     color: $color-coronacheck_black;
     font-size: 1rem;
     margin-bottom: 2em;
+    border-radius: 16px;
 
     @media (min-width: 740px) {
         padding-top: 3rem;
         padding-bottom: 3rem;
         display: flex;
         font-size: 1.125rem;
-        margin: 0 auto;
+        margin: 0 auto 100px;
     }
 
     a {
@@ -73,12 +74,16 @@
     p {
         margin-bottom: 20px;
     }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .footer-contact__column-left {
     display: flex;
     flex-direction: column;
-    flex: 0 0 33.333%;
+    flex: 0 0 224px;
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
@@ -113,6 +118,10 @@
     }
 }
 
+.scanner-0g {
+    background: #0e6999;
+}
+
 .footer-inner {
     position: relative;
     padding: 1em;
@@ -129,7 +138,7 @@
     }
 
     @media (min-width: 960px) {
-        margin: 4.8em auto 0 auto;
+        margin: 0 auto 0 auto;
     }
 }
 

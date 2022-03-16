@@ -1,0 +1,41 @@
+<div class="block">
+    <div class="block__image-container">
+        {% if include.version == "0g" %}
+            <img
+            src="{{ site.baseurl }}/img/nederland_wereld.svg"
+            alt=""
+            loading="lazy"
+            class="block__image"
+            width="200"
+            height="202"
+            >
+        {% else %}
+            <img
+            src="{{ site.baseurl }}/img/scanner.svg"
+            alt=""
+            loading="lazy"
+            class="block__image"
+            width="200"
+            height="202"
+            >
+        {% endif %}
+    </div>
+    <div class="block__content-container">
+        <h2 class="block__title">{{ site.data[page.lang][include.version].user-instructions-title }}</h2>
+        
+        <ol>
+                <li>{{ site.data[page.lang][include.version].coronacheck-howto-step-1 }}</li>
+                <li>{{ site.data[page.lang][include.version].coronacheck-howto-step-2 }}</li>
+                <li>{{ site.data[page.lang][include.version].coronacheck-howto-step-3 }}</li>
+            {% if include.version == "0g" %}
+                <li>{{ site.data[page.lang] [include.version].coronacheck-howto-step-4 }}</li>
+            {% endif %}
+        </ol>
+
+        <p>
+            <a href="{{ site.data[page.lang].translations.coronacheck-howto-url }}" target="_blank"  rel="noopener noreferrer">
+            {{ site.data[page.lang].translations.coronacheck-howto-link }}
+            </a>
+        </p>
+    </div>
+</div>

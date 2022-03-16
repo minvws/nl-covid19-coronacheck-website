@@ -1,0 +1,14 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+{% include open-source-comment.html %}
+{% include head.html for="scanner" %}
+<body class="scanner-0g">
+  {% include header-scanner.html  version="0g" %}
+  {% include footer.html  for="scanner" %}
+</body>
+</html>

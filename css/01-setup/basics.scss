@@ -28,16 +28,23 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
-
-    // &[ar] {
-    //     direction: rtl;
-    // }
+    height: 100%;
 }
 
 body {
     font-family: "RO Sans", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.35;
+    min-height: 100%;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+
+        main {
+            flex: 1 0 auto;
+        }
+    }
 }
 
 .in-app {
@@ -145,5 +152,38 @@ button {
         max-width: 236px;
         height: auto;
         max-height: 30vh;
+    }
+}
+
+.btn.only-mobile {
+    display: none;
+
+    @media only screen and (max-width: 767px) {
+        display: inline-block;
+    }
+}
+
+.btn.only-desktop {
+    display: inline-block;
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.btn.onlyAndroid,
+.btn.onlyiOS {
+    display: none;
+}
+
+.iOS {
+    .btn.onlyiOS {
+        display: inline-block;
+    }
+}
+
+.android {
+    .btn.onlyAndroid {
+        display: inline-block;
     }
 }

@@ -1,6 +1,5 @@
 .btn {
     padding: 14px 20px;
-    margin-bottom: 5px;
     background: #fff;
     display: inline-block;
     background: $color-coronacheck_blue;
@@ -11,7 +10,8 @@
     font-family: inherit;
     text-decoration: none;
     font-weight: 700;
-    
+    margin-bottom: 0;
+
     @media (min-width: 740px) {
         padding: 14px 50px;
     }
@@ -48,22 +48,12 @@
 
     @media (min-width: 740px) {
         font-size: 1.25rem;
-        max-width: 360px;
+        max-width: 400px;
     }
 }
 
 @media (min-width: 740px) {
-    [lang="bg"] .btn--large,
-    [lang="fr"] .btn--large,
-    [lang="ro"] .btn--large,
-    [lang="pl"] .btn--large,
-    [lang="de"] .btn--large,
-    [lang="tr"] .btn--large {
-        max-width: 700px;
-    }
-
-    [lang="en"] .btn--large,
-    [lang="fy"] .btn--large {
+    [lang="en"] .btn--large {
         max-width: 500px;
     }
 }

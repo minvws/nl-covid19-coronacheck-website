@@ -7,6 +7,10 @@ redirect_from:
     - /nl/faq-in-app/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
 featuredHome: true
 featuredHomeIndex: 3
+faqversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 ## Testen voor toegang in Nederland
 

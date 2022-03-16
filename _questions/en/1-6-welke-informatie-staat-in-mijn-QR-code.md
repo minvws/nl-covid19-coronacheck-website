@@ -8,6 +8,10 @@ redirect_from:
   - /en/faq/17-wat-ziet-de-controleur-na-scannen-van-mijn-qr-code/
 featuredHome: true
 featuredHomeIndex: 5
+faqversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 ### The Dutch QR code
 In case of a Dutch QR code, the inspector only sees a minimal amount of information on their screen:

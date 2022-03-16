@@ -8,7 +8,7 @@ head-social-og-title:
      
 head-social-og-description: 
   nl: Met de app bewijs je dat je gevaccineerd of negatief getest bent. Of dat je eerder corona hebt gehad. Je kunt CoronaCheck gebruiken voor toegang tot bepaalde plekken. Of om naar andere landen te reizen.
-  en:  With this app, you are able to prove you've been vaccinated, you’ve had corona or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain places. And to travel to other countries. 
+  en: With this app, you are able to prove you've been vaccinated, you’ve had corona or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain places. And to travel to other countries. 
 
 scanner-social-og-site_name: CoronaCheck Scanner
   
@@ -18,27 +18,35 @@ scanner-social-og-title:
     
 scanner-social-og-description: 
   nl: Met CoronaCheck Scanner controleer je de geldigheid van het coronabewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.
-  en:  With CoronaCheck Scanner you check the validity of the visitor’s vaccination record, recovery or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
+  en: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record, recovery or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
 
 social-og-image-alt: 
   nl: Impressie van website waarop toelichting te vinden is
-  en:  Impression of website on which more information can be found
+  en: Impression of website on which more information can be found
 
-coronacheck-header-img: 
-  nl: /img/Home_NL_Header.png
-  en: /img/Home_EN_Header.png
+## Headers
 
 coronacheck-header-illustration: 
-  nl: /img/Home_Header_Person.svg
-  en: /img/Home_Header_Person.svg
+  nl: /img/Home_march-2022.svg
+  en: /img/Home_march-2022.svg
     
 scanner-header-img: 
   nl: /img/CoronaCheckScanner_app-tall.png
   en: /img/CoronaCheckScanner_app-tall-en.png
 
-print-version-img: 
-  nl: /img/printbewijs.png
-  en: /img/printbewijs-en.png
+scanner-header-out-of-order:
+  nl: /img/buitenwerking.svg
+  en: /img/buitenwerking.svg
+
+header-button-paper-certificate-url:
+    nl: /print
+    en: /en/print
+
+header-button-download-app-url:
+    nl: /nl/download-de-app
+    en: /en/download-de-app
+
+# Badges
 
 header-appstore: 
   nl: Download in de App Store
@@ -51,18 +59,6 @@ header-googleplaystore:
 header-huaweiappgallery: 
   nl: Ontdek het op Huawei App Gallery
   en: Get it on Huawei App Gallery
-
-coronacheck-howto-step-1-img: 
-  nl: /img/Home_NL_Iphone1.png
-  en: /img/Home_EN_Iphone1.png
-
-coronacheck-howto-step-2-img: 
-  nl: /img/Home_NL_Iphone2.png
-  en: /img/Home_EN_Iphone2.png
-
-coronacheck-howto-step-3-img: 
-  nl: /img/Home_NL_Iphone3.png
-  en: /img/Home_EN_Iphone3.png
 
 coronacheck-app-store-url:   
   nl: https://apps.apple.com/nl/app/coronacheck/id1548269870
@@ -79,14 +75,6 @@ scanner-app-store-url:
 scanner-google-play-url: 
   nl: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
   en: https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.verifier
-
-coronacheck-huawei-url:   
-  nl: 
-  en:  
-    
-scanner-huawei-url:   
-  nl: 
-  en: 
 
 print-version-url: 
   nl: /print

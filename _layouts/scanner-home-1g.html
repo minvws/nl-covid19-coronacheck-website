@@ -1,0 +1,23 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+{% include open-source-comment.html %}
+{% include head.html for="scanner" %}
+<body>
+  {% include header-scanner.html version="1g" %}
+  <main id="content content-1g">
+    {% include components/scanner-quicklinks.html version="1g" %}
+
+    {% include components/faq.html for="scanner" version="1g" %}
+
+    {% include components/scanner-badges.html class="layout-app-badges--center-wrap" %}
+
+    {% include components/helpdesk.html for="scanner" %}
+  </main>
+  {% include footer.html for="scanner" %}
+</body>
+</html>

@@ -1,0 +1,27 @@
+{%- assign timeslug = site.time | replace_first: " ", "T" | replace: " ", "" -%}
+{%- assign langSlug = site.baseurl | append: '/' -%}
+{%- if page.lang -%}
+  {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+{% include open-source-comment.html %}
+{% include head.html %}
+<body>
+  {% include header.html version="0g" %}
+  <main id="content content-0g"> 
+
+    {% include components/announcements.html  version="0g" %}
+    
+    {% include components/how-does-coronacheck-work.html  version="0g" %} 
+
+    {% include components/faq.html for="coronacheck" version="0g" %}
+
+    {% include components/helpdesk.html %}
+
+    {% include components/coronamelder.html %}
+
+  </main>
+  {% include footer.html %}
+</body>
+</html>

@@ -16,53 +16,47 @@
                 </a>
             </div>
         
-            {% if include.for == "scanner" %}
-                <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
+            <div class="header__quick-link">
+                <a href="{{ langSlug }}/scanner" class="header__quick-link--scanner">
+                {{ site.data[page.lang].translations.coronacheck-scanner-linktext }}</a>
+                <a href="{{ langSlug }}/faq">
                 {{ site.data[page.lang].translations.faq }}</a>
-            {% else %}
-                <div class="header__quick-link">
-                    <a href="{{ langSlug }}/scanner" class="header__quick-link--scanner">
-                    {{ site.data[page.lang].translations.coronacheck-scanner-linktext }}</a>
-                    <a href="{{ langSlug }}/faq">
-                    {{ site.data[page.lang].translations.faq }}</a>
-                </div>
-            {% endif %}
+            </div>
         
             {% include components/language-picker.html headertype="default" %}
         </div>
         <div class="container">
 
-            {% if include.for == "scanner" %}
-                <div class="header__layout">
-                <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
+            <div class="hero">
+                <div  class="hero__content">
+                    <h1 class="header__title"> 
+                        {{ site.data[page.lang][include.version].header-title }}<br /> 
+                    </h1>
+
+                    <p>{{ site.data[page.lang][include.version].header-subtitle }}</p> 
+
+                    <div class="buttons">
+                        <!-- shown on desktop only -->
+                            <a href="{{ site.data.setup.header-button-download-app-url[page.lang] }}" class="btn only-desktop">{{ site.data[page.lang].translations.header-button-download-app }}</a>
+                        <!-- end shown on desktop -->
+
+                        <!-- shown on mobile only -->
+                            <!-- if on iphone -->
+                            <a href="{{ site.data.setup.coronacheck-app-store-url[page.lang] }}" class="btn onlyiOS">{{ site.data[page.lang].translations.header-button-download-app }} <span class="noJS">(iOS)</span></a>
+                            <!-- if on android -->
+                            <a href="{{ site.data.setup.coronacheck-google-play-url[page.lang] }}" class="btn onlyAndroid">{{ site.data[page.lang].translations.header-button-download-app }} <span class="noJS">(Android)</span></a>
+                            <a href="{{ site.data.setup.header-button-download-app-url[page.lang] }}" class="btn fallBack only-mobile" style="display: none">{{ site.data[page.lang].translations.header-button-download-app }}</a>
+                        <!-- end shown on mobile -->
+
+                        <a href="{{ site.data.setup.header-button-paper-certificate-url[page.lang] }}" class="btn">{{ site.data[page.lang].translations.header-button-paper-certificate }}</a>
+                    </div>
                 </div>
 
-                <div class="header__layout--content">
-                    <h1 class="header__title">
-                    {{ site.data[page.lang].translations.scanner-header-title }}
-                    </h1>
-                    <p>{{ site.data[page.lang].translations.scanner-header-subtitle }}</p>
-                    {% include components/scanner-badges.html %}
+                <div class="hero__image">
+                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="360" height="280">
                 </div>
-                </div>
-            {% else %}
-                <div class="header__layout">
-                <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-img[page.lang] }}" alt="" width="250" height="319">
-                </div>
-                <div class="header__layout--content">
-                    <h1 class="header__title">
-                    {{ site.data[page.lang].translations.header-title }}<br />
-                    </h1>
-                    <p>{{ site.data[page.lang].translations.header-subtitle }}</p>
-                    {% include components/coronacheck-badges.html %}
-                </div>
-                <div class="header__layout--image">
-                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="250" height="319">
-                </div>
-                </div>
-            {% endif %}
+            </div>
         </div>
+
     </div>
 </header>

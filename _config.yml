@@ -1,3 +1,8 @@
+## Default config file used by Github Pages, copy the config from one of the other config files to use:
+## _config-0g
+## _config-1g
+## _config-3g
+
 repo: minvws/nl-covid19-notification-app-website
 
 collections:
@@ -156,6 +161,15 @@ exclude:
   - auth.php
   - auth2.php
   - generate-statistics-graphic.html
+  # exclude when site is in 1g mode
+  - nl/index-0g.md
+  - nl/index-3g.md
+  - nl/scanner/index-0g.md
+  - nl/scanner/index-3g.md
+  - en/index-0g.md
+  - en/index-3g.md
+  - en/scanner/index-0g.md
+  - en/scanner/index-3g.md
 
 plugins:
   - "jekyll-github-metadata"
