@@ -28,16 +28,23 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
-
-    // &[ar] {
-    //     direction: rtl;
-    // }
+    height: 100%;
 }
 
 body {
     font-family: "RO Sans", sans-serif;
     font-size: 18px;
     line-height: 1.35;
+    min-height: 100%;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+
+        main {
+            flex: 1 0 auto;
+        }
+    }
 }
 
 .in-app {
