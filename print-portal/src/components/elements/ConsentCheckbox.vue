@@ -1,6 +1,6 @@
 <template>
     <WarningMessage>
-        <p><b><div class="consent-checkbox-title" v-html="title" /></b></p>
+        <h4 class="consent-checkbox-title" v-html="title" />
         <p v-html="body" />
         <UserConsent
             class="consent-checkbox-label"
@@ -42,6 +42,9 @@ export default {
 
 <style lang="scss" scoped>
 .consent-checkbox {
+    &-title {
+        font-size: 18px;
+    }
     &-label {
         background: none;
         padding: 0;
