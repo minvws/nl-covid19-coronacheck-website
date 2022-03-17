@@ -232,11 +232,6 @@
             "title": "Certificate containing QR code"
         }
     },
-    "print": {
-        "pageIntro": {
-            "0G": "You have created an international %{type} certificate. Always check before departure if you have the right certificate on <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.netherlandsworldwide.nl<\/a>.<\/p>"
-        }
-    },
     "skiplink": "Skip to content",
     "somethingIsWrong": "Is something wrong?",
     "template": {
@@ -405,7 +400,8 @@
                 "bothVaccinationRecovery": "<p>You have a Dutch and an international certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.<\/p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.<\/p>",
                 "domestic": "<p>You only have a %{type} certificate for use in the Netherlands. You can use it to access places or activities within the Netherlands, but not when you’re travelling abroad or crossing the border.<\/p><p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.<\/p>",
                 "european": "<p>You only have an international %{type} certificate. You can use this if you are abroad or crossing the border, but not within the Netherlands.<\/p><p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.<\/p>",
-                "short-stay": "<p>You have a visitor pass for use in the Netherlands. Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.<\/p>"
+                "short-stay": "<p>You have a visitor pass for use in the Netherlands. Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.<\/p>",
+                "0G": "You have created an international %{type} certificate. Always check before departure if you have the right certificate on <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.netherlandsworldwide.nl<\/a>.<\/p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.<\/p>"
             },
             "pageTitle": "Your certificate",
             "proofType": {

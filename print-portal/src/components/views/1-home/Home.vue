@@ -29,9 +29,12 @@ export default {
             return this.$store.getters.isUserConsentDisabledOnHome;
         },
         intro () {
+            const { is0G, is1G } = this.$store.getters
+            const pageIntro = is0G ? '0G' : ''
+            const pageBody = is0G ? '0G' : is1G ? '1G' : ''
             const intro = [
-                this.$t('views.home.pageIntro'),
-                this.$store.getters.is1G ? this.$t('views.home.pageBody1G') : this.$t('views.home.pageBody')
+                this.$t(`views.home.pageIntro${pageIntro}`),
+                this.$t(`views.home.pageBody${pageBody}`)
             ]
             return intro.join(' ')
         }

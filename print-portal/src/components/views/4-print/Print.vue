@@ -24,6 +24,12 @@ export default {
         }
     },
     computed: {
+        is0G () {
+            return this.$store.getters.is0G;
+        },
+        showPrintFaq () {
+            return !this.is0G
+        },
         regionTypes () {
             return RegionTypes;
         },
@@ -82,8 +88,9 @@ export default {
             if (this.isShortStay) {
                 return this.$t('views.print.pageIntro.short-stay');
             }
+            const type = this.is0G ? '0G' : this.regionType
 
-            let copy = this.$t('views.print.pageIntro.' + this.regionType, { type: this.proofTypeCopy });
+            let copy = this.$t(`views.print.pageIntro.${type}`, { type: this.proofTypeCopy });
             if (this.validInFuture) {
                 copy += this.$t('views.print.validInFuture');
             }
@@ -111,9 +118,10 @@ export default {
                 :intro="pageIntroCopy"/>
             <div class="section-block">
                 <PrintFaq
-                :type="type"
-                :exclude="exclude"
-                :region-type="regionType"/>
+                    v-if="showPrintFaq"
+                    :type="type"
+                    :exclude="exclude"
+                    :region-type="regionType"/>
             </div>
             <div class="proof-regions">
                 <ProofRegion
