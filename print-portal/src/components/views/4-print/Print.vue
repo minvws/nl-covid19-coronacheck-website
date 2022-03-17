@@ -27,8 +27,12 @@ export default {
         is0G () {
             return this.$store.getters.is0G;
         },
+        vaccinationWithPositiveTestEnabled () {
+            return this.$store.getters.vaccinationWithPositiveTestEnabled;
+        },
+
         showPrintFaq () {
-            return !this.is0G
+            return !this.is0G && !this.vaccinationWithPositiveTestEnabled;
         },
         regionTypes () {
             return RegionTypes;
