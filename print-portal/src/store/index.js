@@ -36,7 +36,7 @@ const getters = {
     isPolicy: ({ holderConfig }) => policy => {
         const policies = holderConfig?.disclosurePolicy
         if (Array.isArray(policies) && policies.length === 1) {
-            return policies[0].toUpperCase() === policy.tpUpperCase()
+            return policies[0].toUpperCase() === policy.toUpperCase()
         }
         return false
     },
