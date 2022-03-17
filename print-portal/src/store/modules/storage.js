@@ -3,11 +3,13 @@ const withPositiveTest = localStorage?.getItem(key) === 'true';
 localStorage?.removeItem(key);
 
 export const events = {
-    WITH_POSITIVE_TEST: 'storage/WITH_POSITIVE_TEST'
+    WITH_POSITIVE_TEST: 'storage/WITH_POSITIVE_TEST',
+    WITH_POSITIVE_TEST_FLOW: 'storage/WITH_POSITIVE_TEST_FLOW'
 }
 
 const state = {
-    withPositiveTest
+    withPositiveTest,
+    withPositiveTestFlow: withPositiveTest
 };
 
 const actions = {
@@ -28,7 +30,8 @@ const mutations = {
 };
 
 const getters = {
-    [events.WITH_POSITIVE_TEST]: ({ withPositiveTest }) => withPositiveTest
+    [events.WITH_POSITIVE_TEST]: ({ withPositiveTest }) => withPositiveTest,
+    [events.WITH_POSITIVE_TEST_FLOW]: ({ withPositiveTestFlow }) => withPositiveTestFlow
 };
 
 export default {
