@@ -116,14 +116,17 @@ export default {
             <PageIntro
                 :head="pageHeaderCopy"
                 :intro="pageIntroCopy"/>
-            <div class="section-block">
+            <div
+                v-if="showPrintFaq"
+                class="section-block">
                 <PrintFaq
-                    v-if="showPrintFaq"
                     :type="type"
                     :exclude="exclude"
                     :region-type="regionType"/>
             </div>
-            <div class="proof-regions">
+            <div
+                class="proof-regions"
+                :class="{ 'has-faq': showPrintFaq }">
                 <ProofRegion
                     v-if="hasDomestic"
                     :proof="proof.domestic"
@@ -146,7 +149,11 @@ export default {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-top: $grid-x8;
+
+        &.has-faq {
+            margin-top: $grid-x8;
+        }
+
         @include tablet-custom() {
             flex-direction: column;
             .ProofRegion {
