@@ -24,6 +24,9 @@ export default {
         this.withPositiveTestConsent = false
     },
     computed: {
+        vaccinationWithPositiveTestEnabled () {
+            return this.$store.getters.vaccinationWithPositiveTestEnabled
+        },
         withPositiveTestConsent: {
             get () {
                 return this.$store.getters[StorageEvent.WITH_POSITIVE_TEST]
@@ -66,6 +69,7 @@ export default {
                  <div class="section-block__footer">
                      <TooBusyButton v-if="tooBusy"/>
                      <ConsentCheckbox
+                        v-if="vaccinationWithPositiveTestEnabled"
                         class="consent"
                         v-model="withPositiveTestConsent"
                         :title="$t('components.consent.vaccination.title')"
