@@ -43,7 +43,7 @@ export default {
 <style lang="scss" scoped>
 .consent-checkbox {
     &-title {
-        font-size: 18px;
+        font-size: 16px;
     }
     &-label {
         background: none;
