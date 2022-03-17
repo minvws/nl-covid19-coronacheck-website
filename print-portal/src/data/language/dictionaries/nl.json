@@ -1,5 +1,4 @@
 {
-    "git-test-key": "success",
     "and": "En",
     "back": "Terug",
     "certificate": {
@@ -151,6 +150,7 @@
     "details": "Details",
     "faq": "Meestgestelde vragen",
     "forInstanceAbbr": "Bijv.",
+    "git-test-key": "success",
     "goBackToStart": "Naar Home",
     "goToOverview": "Terug naar overzicht",
     "header-appstore": "Download in de App Store",
@@ -214,6 +214,10 @@
                 "vaccination": {
                     "body": "<p>Neem contact op met de zorgverlener waar je bent gevaccineerd. Dat kan de GGD, je huisarts of arts van een zorginstelling zijn. Zij kunnen je helpen je gegevens aan te passen.<\/p>",
                     "head": "Klopt er iets niet?"
+                },
+                "vaccinationWithPositiveTest": {
+                    "body": "Neem contact op met de zorgverlener waar je bent gevaccineerd of getest. Dat kan de GGD, je huisarts of arts van een zorginstelling zijn. Zij kunnen je helpen je gegevens aan te passen.",
+                    "head": "Klopt er iets niet?"
                 }
             }
         }
@@ -226,6 +230,11 @@
         "metadata": {
             "author": "CoronaCheck",
             "title": "Coronabewijs met QR-code"
+        }
+    },
+    "print": {
+        "pageIntro": {
+            "0G": "Je hebt een internationaal %{type}bewijs gemaakt. Controleer altijd voor vertrek of je het goede bewijs hebt voor jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">www.wijsopreis.nl<\/a>.<\/p>"
         }
     },
     "skiplink": "Ga direct naar inhoud",
@@ -278,7 +287,7 @@
         },
         "errorCodeSaml": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.digid.nl<\/a> voor de laatste informatie.<\/p>"
+            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">https:\/\/www.digid.nl<\/a> voor de laatste informatie.<\/p>"
         },
         "errorDigiD": {
             "pageHeader": "Sorry, er gaat iets mis",
@@ -315,9 +324,11 @@
         "home": {
             "noConsentError": "Ga eerst akkoord met de privacyverklaring",
             "pageBody": "<h4>Bewijs van test of vaccinatie<\/h4><p>Je kan een coronabewijs maken met CoronaCheck als:<ul class=\"ul--with-padding\"><li>je bent gevaccineerd<\/li><li>uit een test blijkt dat je geen corona had<\/li><li>uit een test blijkt dat je corona hebt gehad en bent hersteld<\/li><\/ul><\/p><h4>QR-code = jouw bewijs<\/h4><p>CoronaCheck maakt van jouw vaccinatie of testuitslag een QR-code. Dat is jouw bewijs. De QR-code wordt gecheckt voordat je toegang krijgt.<\/p><h4>QR-codes voor Nederland en internationaal<\/h4><p>CoronaCheck maakt QR-codes voor in Nederland en het buitenland. Ben je in het buitenland of ga je de grens over? Gebruik dan altijd de internationale QR-code.<\/p>",
+            "pageBody0G": "<h4>Veilig op reis met een bewijs<\/h4><p>Reis je naar een land waar een coronabewijs nodig is? Dan heb je een internationaal bewijs nodig. Je kunt dit maken als:<ul class=\"ul--with-padding\"><li>Je bent gevaccineerd<\/li><li>Je positief getest bent en hersteld van corona<\/li><li>Je negatief getest bent en geen corona hebt<\/li><\/ul><\/p><h4>Je bewijs heeft een QR-code<\/h4><p>Op je bewijs staat een QR-code. Deze kan worden gecheckt bij de ingang van plekken en activiteiten in het buitenland. Of aan de grens.<p><h4>Over jouw gegevens<\/h4><p>In de <a href=\"https:\/\/coronacheck.nl\/nl\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacyverklaring<\/a> staat hoe CoronaCheck omgaat met jouw gegevens.<\/p>",
             "pageBody1G": "<h4>Nederlands bewijs voor 1G-toegang<\/h4><p>Bezoek je een plek in Nederland waar om een coronabewijs wordt gevraagd? Dan krijg je alleen toegang met een testbewijs (1G-toegang). Dit kun je maken als je negatief getest bent en geen corona hebt.<p><h4>Internationaal bewijs voor in het buitenland<\/h4><p>Ben je in het buitenland of ga je de grens over? Dan heb je een internationaal bewijs nodig. Je kunt een internationaal bewijs maken als:<ul class=\"ul--with-padding\"><li>Je bent gevaccineerd<\/li><li>Je positief getest bent en hersteld van corona<\/li><li>Je negatief getest bent en geen corona hebt<\/li><\/ul><\/p><h4>Over jouw gegevens<\/h4><p>In de <a href=\"https:\/\/coronacheck.nl\/nl\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacyverklaring<\/a> staat hoe CoronaCheck omgaat met jouw gegevens.<\/p>",
             "pageHeader": "Krijg toegang met een papieren bewijs",
             "pageIntro": "<h2 class=\"screen-reader-text\">Zo werkt het<\/h2><p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen of plekken om een coronabewijs. Alleen met dit bewijs krijg je toegang.<\/p><p>Een bewijs op papier is handig als je geen smartphone hebt.<\/p>",
+            "pageIntro0G": "<h2 class=\"screen-reader-text\">Zo werkt het<\/h2><p>Jouw gezondheid en die van anderen is belangrijk. Daarom vragen sommige landen om een coronabewijs. Bijvoorbeeld aan de grens, of bij bepaalde plekken of activiteiten. Een bewijs op papier is handig als je geen smartphone hebt.<\/p>",
             "test": "Test test test",
             "test2": "Nieuw aangemaakte key TEST",
             "userConsentHeader": "Maak een papieren bewijs",
@@ -437,7 +448,7 @@
         "recoveryOverview": {
             "createTestProofButton": "Maak bewijs",
             "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Als de gegevens van je test kloppen kun je een bewijs maken.<\/p>"
+            "pageIntro": "<p>Als de gegevens kloppen kun je een bewijs maken.<\/p>"
         },
         "serverBusy": {
             "pageHeader": "Sorry, het is erg druk",
