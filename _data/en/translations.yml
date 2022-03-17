@@ -6,7 +6,7 @@ header-skip-to-content: Skip to content
     
 header-button-download-app: Download the app
 
-header-button-paper-certificate: Print your certificate
+header-button-paper-certificate: Create paper certificate
 
 coronacheck-scanner-linktext: Scanner
 
@@ -171,7 +171,7 @@ mediaelement-download-subtitle: Subtitle
 
 mediaelement-transcript-title: Written out text of the video
 
-coronacheck-howto-url: /
+coronacheck-howto-url: /en/faq/1-1-hoe-werkt-de-coronacheck-app/
 
 coronacheck-howto-link: Read more about the coronavirus pass
 
