@@ -7,7 +7,7 @@ export default {
     components: { Print },
     computed: {
         type () {
-            return this.$store.getters[StorageEvent.WITH_POSITIVE_TEST] ? FilterTypes.VACCINATION : FilterTypes.RECOVERY;
+            return this.$store.getters[StorageEvent.WITH_POSITIVE_TEST_FLOW] ? FilterTypes.VACCINATION : FilterTypes.RECOVERY;
         },
         recoveryValidInFuture() {
             const today = new Date().getTime();
