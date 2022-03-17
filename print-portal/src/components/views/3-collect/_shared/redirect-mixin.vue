@@ -223,7 +223,7 @@ export default {
                         }
                         this.$router.push({ name: 'ErrorGeneral', query: { errors: errorCodes.join('+') } });
                     } else {
-                        if (this.withPositiveTest()) {
+                        if (this.withPositiveTest() && this.filter !== FilterTypes.VACCINATION) {
                             this.handleWithPositiveTest()
                         } else this.$router.push({ name: this.pages.noResult });
                     }
