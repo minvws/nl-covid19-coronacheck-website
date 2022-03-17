@@ -78,7 +78,7 @@ scanner-lead-title: Download the CoronaCheck Scanner app
 
 footer-attribution: 'Made possible by:'
 
-footer-contact-title: Don't see your question listed? <br />Contact our helpdesk.
+footer-contact-title: Don't see your question listed? <br />Contact our helpdesk
 
 footer-contact-in-app-subtitle: Don't see your question listed? Check <a href="https://www.coronacheck.nl/en/faq" target="_blank">all most frequently asked questions</a> or contact the helpdesk.
 
@@ -170,16 +170,14 @@ mediaelement-download-mp3-voiceover: MP3-audio (voiceover)
 mediaelement-download-subtitle: Subtitle
 
 mediaelement-transcript-title: Written out text of the video
-  
-
 
 coronacheck-howto-url: /
 
-coronacheck-howto-link: Read more about the certificate
+coronacheck-howto-link: Read more about the coronavirus pass
 
 grant-access-with-coronacheck-scanner-url: /en/scanner
 
-grant-access-with-coronacheck-scanner-link: Check out the Scanner app
+grant-access-with-coronacheck-scanner-link: Read more about CoronaCheck Scanner
 
 status-block-title: View the actual status of CoronaCheck
 
