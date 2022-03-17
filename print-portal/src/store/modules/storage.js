@@ -20,7 +20,6 @@ const mutations = {
     [events.WITH_POSITIVE_TEST]: (state, value) => {
         state.withPositiveTest = value
         if (!localStorage) {
-            console.warn('no localstorage')
             return
         }
         if (value) localStorage.setItem(key, value);
