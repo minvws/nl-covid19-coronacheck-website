@@ -187,6 +187,7 @@
 .hero {
     display: flex;
     flex-direction: column;
+    font-size: 1.125rem;
 
     @media (min-width: 960px) {
         flex-direction: row;
