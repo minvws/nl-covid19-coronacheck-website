@@ -33,17 +33,21 @@ const getters = {
     visitorPassEnabled: ({ holderConfig }) => {
         return holderConfig?.visitorPassEnabled === true
     },
-    isPolicy: ({ holderConfig }) => policy => {
-        const policies = holderConfig?.disclosurePolicy
-        if (Array.isArray(policies) && policies.length === 1) {
-            return policies[0].toUpperCase() === policy.toUpperCase()
+    disclosurePolicies: ({ holderConfig }) => {
+        return holderConfig?.disclosurePolicies
+    },
+    isPolicy: (state, { disclosurePolicies }) => policy => {
+        if (Array.isArray(disclosurePolicies) && disclosurePolicies.length === 1) {
+            return disclosurePolicies[0].toUpperCase() === policy.toUpperCase()
         }
         return false
     },
-    is0G: (state, { isPolicy }) => {
-        return isPolicy('0G');
+    is0G: (state, { disclosurePolicies }) => {
+        // 0G when disclosurePolicies = []
+        return Array.isArray(disclosurePolicies) && !disclosurePolicies.length
     },
     is1G: (state, { isPolicy }) => {
+        // 1G when disclosurePolicies = ['1G']
         return isPolicy('1G');
     },
     isUserConsentDisabledOnHome: ({ isUserConsentDisabledOnHome }) => {
