@@ -97,5 +97,7 @@ export default {
 @import "@/styles/variables/sizes.scss";
 .warning {
     margin-bottom: 2 * $grid-x2-5;
+    background: #F3F5FE;
+    border-color: #F3F5FE;
 }
 </style>
