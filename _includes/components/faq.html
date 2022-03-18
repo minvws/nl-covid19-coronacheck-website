@@ -14,7 +14,7 @@
 
   <div class="highlighted-faqs">
     {% for question in questions %}
-        {% if question.faqversion contains include.version %}
+        {% if question.whichversion contains site.version %}
             <article class="highlighted-faq">
                 <div class="highlighted-faq__summary">
                     <div class="highlighted-faq__title">

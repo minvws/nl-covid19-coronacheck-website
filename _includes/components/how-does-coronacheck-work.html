@@ -1,6 +1,6 @@
 <div class="block">
     <div class="block__image-container">
-        {% if include.version == "0g" %}
+        {% if site.version == "0g" %}
             <img
             src="{{ site.baseurl }}/img/nederland_wereld.svg"
             alt=""
@@ -21,14 +21,14 @@
         {% endif %}
     </div>
     <div class="block__content-container">
-        <h2 class="block__title">{{ site.data[page.lang][include.version].user-instructions-title }}</h2>
+        <h2 class="block__title">{{ site.data[page.lang][site.version].user-instructions-title }}</h2>
         
         <ol>
-                <li>{{ site.data[page.lang][include.version].coronacheck-howto-step-1 }}</li>
-                <li>{{ site.data[page.lang][include.version].coronacheck-howto-step-2 }}</li>
-                <li>{{ site.data[page.lang][include.version].coronacheck-howto-step-3 }}</li>
-            {% if include.version == "0g" %}
-                <li>{{ site.data[page.lang] [include.version].coronacheck-howto-step-4 }}</li>
+                <li>{{ site.data[page.lang][site.version].coronacheck-howto-step-1 }}</li>
+                <li>{{ site.data[page.lang][site.version].coronacheck-howto-step-2 }}</li>
+                <li>{{ site.data[page.lang][site.version].coronacheck-howto-step-3 }}</li>
+            {% if site.version == "0g" %}
+                <li>{{ site.data[page.lang] [site.version].coronacheck-howto-step-4 }}</li>
             {% endif %}
         </ol>
 

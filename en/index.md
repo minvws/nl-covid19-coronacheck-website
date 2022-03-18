@@ -1,5 +1,5 @@
 ---
-layout: home-0g
+layout: home
 lang: en
 title: ''
 permalink: /en/
