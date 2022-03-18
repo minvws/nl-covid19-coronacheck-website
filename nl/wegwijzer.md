@@ -117,7 +117,7 @@ Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit
 
 {% capture copy_geen_internationaal_herstelbewijs %}
 <div markdown="1"> 
-In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test, en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeentest.
+In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test, en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. {% if site.version != "0g" %}Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeentest.{% endif %}
 
 ### Ben jij vóór 8 september getest bij een andere testlocatie dan de GGD?
 

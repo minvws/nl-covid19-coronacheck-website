@@ -119,7 +119,7 @@ Were you tested less than 180 days ago? Then there may be an error in the test d
 
 {% capture copy_geen_internationaal_herstelbewijs %}
 <div markdown="1"> 
-It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test and if the test was taken no less than 11 and no more than 180 days ago. For use within the Netherlands (for example for access to events), a recovery certificate is also issued based on an antigen test.
+It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test and if the test was taken no less than 11 and no more than 180 days ago. {% if site.version != "0g" %}For use within the Netherlands (for example for access to events), a recovery certificate is also issued based on an antigen test.{% endif %}
 
 ### Were you tested before September 8th at a test provider other than the GGD?
 
