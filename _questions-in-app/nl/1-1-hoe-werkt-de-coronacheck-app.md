@@ -5,10 +5,7 @@ title: Hoe werkt de CoronaCheck-app?
 featuredHome: true
 featuredHomeIndex: 1
 hasVideo: true
-redirect_from: 
-  - /nl/faq-in-app/1-hoe-werkt-de-coronacheck-app
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---
