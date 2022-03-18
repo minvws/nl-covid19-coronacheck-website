@@ -2,11 +2,8 @@
 set: 3
 index: 1
 title: Kan ik CoronaCheck gebruiken in het buitenland?
-redirect_from: 
-  - /nl/faq/12-kan-ik-coronacheck-ook-gebruiken-in-het-buitenland
 webonly: true
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---
