@@ -6,7 +6,7 @@ featuredHome: true
 featuredHomeIndex: 3
 redirect_from: 
   - /en/faq-scanner/9-werkt-coronacheck-scanner-op-mijn-telefoon
-faqversion:
+whichversion:
   - 0g
   - 1g
   - 3g

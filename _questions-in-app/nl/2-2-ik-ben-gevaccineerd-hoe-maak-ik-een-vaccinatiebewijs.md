@@ -6,6 +6,10 @@ redirect_from:
     - /nl/faq-in-app/8-ik-heb-mij-laten-testen-hoe-krijg-ik-mijn-testuitslag
     - /nl/faq-in-app/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
     - /nl/faq-in-app/1-5-hoe-maak-ik-een-bewijs-van-een-vaccinatie-herstel-of-testuitslag
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Op dit moment kun je geen Nederlands vaccinatiebewijs maken, omdat vaccinatiebewijzen momenteel niet worden gebruikt in Nederland.
 

@@ -2,7 +2,10 @@
 set: 1
 index: 10
 title: Waarom heb ik een Nederlandse en een internationale QR-code?
-
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 CoronaCheck maakt twee QR-codes: een QR-code voor Nederland en een internationale. In de Nederlandse QR-code staan weinig gegevens, om privacy zoveel mogelijk te beschermen. In de QR-code staat o.a. dat je beschikt over een geldig coronabewijs. Verder staan (een deel van) deze gegevens in de QR-code: de eerste letter van je voornaam, de eerste letter van je achternaam, je geboortedag en geboortemaand. Er staan geen gegevens over jouw test, vaccinatie of herstel in de QR-code. 
 

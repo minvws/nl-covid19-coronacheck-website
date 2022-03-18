@@ -5,6 +5,10 @@ title: Kan ik CoronaCheck gebruiken in het buitenland?
 redirect_from: 
   - /nl/faq/12-kan-ik-coronacheck-ook-gebruiken-in-het-buitenland
 webonly: true
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Ja dat kan. Als je een bewijs maakt met CoronaCheck krijg je een internationale QR-code (EU Digitaal Corona Certificaat).
 

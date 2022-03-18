@@ -9,6 +9,10 @@ redirect_from:
     - /nl/faq/2-2-hoe-lang-is-mijn-testbewijs-geldig-en-kan-ik-hem-meerdere-keren-gebruiken
     - /nl/faq/2-3-tot-wanneer-is-mijn-vaccinatiebewijs-geldig
 webonly: true
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Vaccinatie- en herstelbewijzen worden op dit moment in Nederland niet gebruikt. Op plekken waar het coronatoegangsbewijs wordt ingezet krijg je alleen toegang met een testbewijs (1G-toegang). 
 

@@ -8,7 +8,7 @@ redirect_from:
 webonly: true
 featuredHome: true
 featuredHomeIndex: 4
-faqversion:
+whichversion:
   - 0g
   - 1g
   - 3g

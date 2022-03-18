@@ -4,6 +4,10 @@ index: 5
 title: Waarom heb ik voor elke prik een aparte internationale QR-code? En welke moet ik gebruiken?
 redirect_from:
     - /nl/faq/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-QR-code/
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Vanaf nu krijg je in de CoronaCheck-app of via [coronacheck.nl/print](/print) een aparte internationale QR-code voor elke prik die je hebt gehad. Dat is bijvoorbeeld handig voor mensen die ergens heen willen waar hun laatste prik nog niet geldig is, omdat die kort geleden gezet is. 
 

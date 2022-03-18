@@ -6,7 +6,7 @@ featuredHome: true
 featuredHomeIndex: 2
 redirect_from: 
   - /nl/faq-scanner/4-mag-ik-iemand-zonder-geldig-testbewijs-binnen-laten
-faqversion:
+whichversion:
   - 0g
   - 1g
   - 3g

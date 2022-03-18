@@ -7,6 +7,10 @@ redirect_from:
     - /nl/faq-in-app/1-8-ik-heb-een-geldig-bewijs-maar-heb-nu-klachten-mag-ik-alsnog-naar-binnen
     - /nl/faq-in-app/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd
     - /nl/faq-in-app/1-9-ik-heb-een-geldig-bewijs-maar-moet-in-quarantaine-blijven-van-de-ggd
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Heb je klachten die horen bij corona? Of moet je in quarantaine? Volg dan de {{ site.data.links.basisregels[page.lang] }}: Blijf thuis, laat je testen en vermijd contact met anderen. Ook als je al (volledig) gevaccineerd bent.     
 

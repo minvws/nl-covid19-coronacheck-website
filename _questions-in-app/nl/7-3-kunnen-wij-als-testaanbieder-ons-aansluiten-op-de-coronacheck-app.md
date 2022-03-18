@@ -6,6 +6,10 @@ webonly: true
 redirect_from: 
   - /nl/faq-in-app/36-kunnen-wij-als-testaanbieder-ons-aansluiten-op-de-coronacheck-app
   - /nl/faq-in-app/7-1-kunnen-wij-als-testaanbieder-ons-aansluiten-op-de-coronacheck-app
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Ja, dat kan. In de CoronaCheck-app of via de website kunnen jullie negatieve uitslagen dan omgezet worden in een testbewijs. 
 

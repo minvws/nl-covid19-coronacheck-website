@@ -2,6 +2,10 @@
 set: 2
 index: 3
 title: Wanneer kan ik een herstelbewijs maken?
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Op dit moment kun je geen Nederlands herstelbewijs maken, omdat herstelbewijzen momenteel niet worden gebruikt in Nederland.
 

@@ -11,7 +11,7 @@ redirect_from:
     - /nl/toegangsregels/1g-bewijs/
     - /nl/faq/1-4-waarom-heb-ik-een-bewijs-voor-3g-toegang/
     - /nl/faq/1-4-waarom-heb-ik-een-bewijs-voor-3g-toegang
-faqversion:
+whichversion:
   - 0g
   - 1g
   - 3g

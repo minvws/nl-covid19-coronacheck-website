@@ -2,6 +2,10 @@
 set: 2
 index: -10
 title: 'Wat betekenen de nieuwe maatregelen van 25 februari voor de CoronaCheck Scanner-app?'
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Het kabinet heeft aangekondigd dat de coronamaatregelen per 25 februari veranderen. Vanaf dat moment wordt het coronatoegangsbewijs in Nederland niet meer voor 3G-toegang (toegang met vaccinatiebewijs, herstelbewijs of testbewijs) gebruikt. Op <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/coronatoegangsbewijs/waar-verplicht" rel="noopener noreferrer" target="_blank">bepaalde plekken</a> is er nog wel een coronatoegangsbewijs nodig. Bezoekers krijgen daar alleen nog toegang met een negatief testbewijs (1G-toegang). 
 

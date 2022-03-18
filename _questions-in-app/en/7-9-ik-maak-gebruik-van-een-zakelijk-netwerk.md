@@ -2,6 +2,10 @@
 set: 7
 index: 9
 title: I'm using a corporate network, how can I still use CoronaCheck?
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 To use CoronaCheck within a corporate network, the below IP ranges and/or DNS zones have to be made available.
 

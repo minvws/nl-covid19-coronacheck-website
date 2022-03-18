@@ -12,7 +12,7 @@ redirect_from:
     - /en/faq/1-4-waarom-heb-ik-een-bewijs-voor-3g-toegang/
     - /en/faq/1-4-waarom-heb-ik-een-bewijs-voor-3g-toegang
     - /en/toegangsregels/1g-certificate
-faqversion:
+whichversion:
   - 0g
   - 1g
   - 3g

@@ -7,7 +7,7 @@ featuredHomeIndex: 1
 hasVideo: true
 redirect_from: 
   - /nl/faq/1-hoe-werkt-de-coronacheck-app
-faqversion:
+whichversion:
   - 0g
   - 1g
   - 3g

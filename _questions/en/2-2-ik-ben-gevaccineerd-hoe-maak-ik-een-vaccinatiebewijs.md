@@ -6,6 +6,10 @@ redirect_from:
     - /en/faq/8-ik-heb-mij-laten-testen-hoe-krijg-ik-mijn-testuitslag
     - /en/faq/40-hoe-kan-ik-mijn-vaccinatie-toevoegen-in-coronacheck
     - /en/faq/1-5-hoe-maak-ik-een-bewijs-van-een-vaccinatie-herstel-of-testuitslag
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 At this moment, it's not possible to create a Dutch vaccination certificate, because vaccination certificates are currently not in use within the Netherlands.
 
