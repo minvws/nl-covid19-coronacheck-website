@@ -3,7 +3,6 @@ set: 1
 index: 10
 title: Why do I have a Dutch and an international QR code?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---
