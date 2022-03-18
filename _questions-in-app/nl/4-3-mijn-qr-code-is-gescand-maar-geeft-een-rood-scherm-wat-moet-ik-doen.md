@@ -2,11 +2,7 @@
 set: 4
 index: 3
 title: Mijn QR-code is gescand, maar geeft een rood scherm. Wat moet ik doen?
-redirect_from: 
-  - /nl/faq-in-app/14-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
-  - /nl/faq-in-app/4-2-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

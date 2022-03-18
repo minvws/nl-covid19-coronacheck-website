@@ -2,11 +2,7 @@
 set: 4
 index: 3
 title: My QR code was scanned but led to a red screen. What should I do?
-redirect_from: 
-  - /en/faq/14-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
-  - /en/faq/4-2-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---
