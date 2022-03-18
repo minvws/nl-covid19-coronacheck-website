@@ -9,7 +9,6 @@ redirect_from:
 featuredHome: true
 featuredHomeIndex: 5
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---
