@@ -2,11 +2,7 @@
 set: 1
 index: 5
 title: Hoe wordt een coronabewijs gecontroleerd?
-redirect_from: 
-    - /nl/faq-in-app/31-hoe-wordt-mijn-testbewijs-gecontroleerd
-    - /nl/faq-in-app/2-5-hoe-wordt-mijn-coronabewijs-gecontroleerd
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---
