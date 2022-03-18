@@ -388,6 +388,7 @@ Ben je vaker positief getest waarvan de eerste keer vóór je eerste prik, maar 
 {{ copy_printbewijs }}
 </details>
 
+{% if site.version == "3g" %}
 <details class="details" id="visitor">
 <summary><h2>Ik wil een bezoekersbewijs maken</h2></summary>
 {{ copy_bezoekersbewijs }}
@@ -408,6 +409,7 @@ Ben je vaker positief getest waarvan de eerste keer vóór je eerste prik, maar 
 </details>
 
 </details>
+{% endif %}
 
 <details class="details" id="digid">
 <summary><h2>Ik kan niet inloggen met DigiD</h2></summary>

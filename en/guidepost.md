@@ -395,6 +395,7 @@ Were you tested positive more than once, with the first time happening before yo
 {{ copy_printbewijs }}
 </details>
 
+{% if site.version == "3g" %}
 <details class="details" id="visitor">
 <summary><h2>I want to create a visitor pass</h2></summary>
 {{ copy_bezoekersbewijs }}
@@ -413,8 +414,8 @@ Were you tested positive more than once, with the first time happening before yo
 <summary><h3>The personal details on your vaccination approval and your negative test result do not match</h3></summary>
 {{ copy_bezoek_persoonsgegevens_verschillen }}
 </details>
-
 </details>
+{% endif %}
 
 <details class="details" id="digid">
 <summary><h2>I can’t login with DigiD</h2></summary>
