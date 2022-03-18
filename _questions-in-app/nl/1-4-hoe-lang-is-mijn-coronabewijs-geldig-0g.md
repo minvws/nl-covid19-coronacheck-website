@@ -1,15 +1,12 @@
 ---
 set: 1
 index: 5
-title: Hoe lang is mijn coronabewijs geldig? Kan ik 'm meerdere keren gebruiken?
+title: Hoe lang is mijn coronabewijs geldig?
 webonly: true
 whichversion:
-  - 1g
-  - 3g
+  - 0g
 ---
-Vaccinatie- en herstelbewijzen worden op dit moment in Nederland niet gebruikt. Op plekken waar het coronatoegangsbewijs wordt ingezet krijg je alleen toegang met een testbewijs (1G-toegang). 
-
-Een Nederlands testbewijs is geldig tot 24 uur na het moment van testen. Binnen deze 24 uur kun je met het bewijs (de Nederlandse QR-code) dus meerdere locaties of activiteiten bezoeken. En de QR-code steeds opnieuw laten scannen. Let op: een door de GGD afgenomen test is veelal niet binnen 24 uur na afname beschikbaar in CoronaCheck.
+Coronabewijzen worden op dit moment in Nederland niet gebruikt.
 
 Om internationaal te reizen heb je in sommige landen wel een coronabewijs nodig. Dan is de geldigheid als volgt:
 
