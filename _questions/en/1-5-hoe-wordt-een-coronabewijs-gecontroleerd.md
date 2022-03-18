@@ -6,7 +6,6 @@ redirect_from:
     - /en/faq/31-hoe-wordt-mijn-testbewijs-gecontroleerd
     - /en/faq/2-5-hoe-wordt-mijn-coronabewijs-gecontroleerd
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---
