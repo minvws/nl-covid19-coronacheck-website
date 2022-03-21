@@ -6,6 +6,9 @@ featuredHome: true
 featuredHomeIndex: 2
 whichversion:
   - 0g
+redirect_from: 
+    - /alleen-internationaal 
+    - /nl/alleen-internationaal
 ---
 Het kabinet heeft aangekondigd dat het coronabewijs per 23 maart in Nederland niet meer in gebruik is. 
 
