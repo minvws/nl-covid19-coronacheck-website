@@ -14,6 +14,9 @@ export default {
         }
     },
     computed: {
+        withPositiveTestFlow () {
+            return this.$store.getters[events.WITH_POSITIVE_TEST_FLOW]
+        },
         signedEvents() {
             const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);
             return signedEvents.sort((a, b) => {
@@ -92,9 +95,6 @@ export default {
             if (response && response.headers && response.headers.date) {
                 this.$store.commit('setSignedAt', new Date(response.headers.date));
             }
-        },
-        withPositiveTestFlow () {
-            return this.$store.getters[events.WITH_POSITIVE_TEST_FLOW]
         },
         openModalSomethingWrong() {
             const type = this.withPositiveTestFlow ? 'vaccinationWithPositiveTest' : this.filter.split(',')[0]
