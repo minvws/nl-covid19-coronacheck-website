@@ -59,6 +59,12 @@
         }
     }
 
+    @media (min-width: 740px) {
+        .scanner-0g & {
+            padding-bottom: 100px;
+        }
+    }
+
     .header__title {
         font-size: 1.5rem;
         font-weight: 800;
@@ -87,6 +93,11 @@
             height: auto;
             position: relative;
             bottom: -10px;
+
+            .scanner-0g & {
+                position: inherit;
+                max-height: 275px;
+            }
         }
 
         &:last-child {
@@ -120,8 +131,7 @@
         & {
             display: flex;
             justify-content: center;
-            padding-left: 0;
-            padding-right: 30px;
+            padding: 0;
         }
 
         .header__layout--image {
@@ -166,6 +176,10 @@
                 flex-direction: column;
                 justify-content: center;
                 padding-left: 100px;
+
+                .scanner-0g & {
+                    padding-left: 0;
+                }
             }
         }
 
