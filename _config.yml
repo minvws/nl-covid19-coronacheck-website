@@ -91,6 +91,7 @@ defaults:
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
+      published: false
   -
     scope:
       path: "_questions-scanner/en"
@@ -104,6 +105,7 @@ defaults:
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
+      published: false
   -
     scope:
       path: "_questions-scanner-in-app/en"
@@ -118,6 +120,7 @@ defaults:
       showContact: true
       showOnFAQoverview: true
       webonly: false
+      published: false
   -
     scope:
       path: "_questions-scanner-in-app/nl"
@@ -132,6 +135,7 @@ defaults:
       showContact: true
       showOnFAQoverview: true
       webonly: false
+      published: false
 
 sass:
   style: compressed
@@ -171,4 +175,3 @@ plugins:
   # - "jekyll-seo-tag"
 
 incremental: false
-

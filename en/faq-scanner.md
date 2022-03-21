@@ -6,4 +6,5 @@ showBreadCrumbs: true
 showContact: true
 title: Frequently asked questions
 redirect_from: /faq-scanner
+published: false
 ---
