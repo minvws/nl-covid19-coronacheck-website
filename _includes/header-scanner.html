@@ -16,8 +16,10 @@
                 </a>
             </div>
         
-            <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
-            {{ site.data[page.lang].translations.faq }}</a>
+            {% if site.version != "0g" %}
+                <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
+                {{ site.data[page.lang].translations.faq }}</a>
+            {% endif %}
         
             {% include components/language-picker.html headertype="default" %}
         </div>
