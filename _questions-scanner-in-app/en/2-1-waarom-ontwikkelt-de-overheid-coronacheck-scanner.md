@@ -3,7 +3,6 @@ set: 2
 index: 1
 title: Why is the government developing CoronaCheck Scanner?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

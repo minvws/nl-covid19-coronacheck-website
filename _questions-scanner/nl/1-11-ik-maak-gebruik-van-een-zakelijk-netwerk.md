@@ -3,7 +3,6 @@ set: 1
 index: 11
 title: Ik maak gebruik van een zakelijk netwerk, hoe kan ik CoronaCheck toch gebruiken?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

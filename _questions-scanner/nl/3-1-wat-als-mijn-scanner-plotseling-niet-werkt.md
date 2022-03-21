@@ -5,7 +5,6 @@ title: Wat als mijn scanner plotseling niet werkt?
 redirect_from: 
   - /nl/faq-scanner/6-wat-als-mijn-scanner-plotseling-niet-werkt
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

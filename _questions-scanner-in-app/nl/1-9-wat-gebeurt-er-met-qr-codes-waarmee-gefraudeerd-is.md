@@ -3,7 +3,6 @@ set: 1
 index: 9
 title: Wat gebeurt er met QR-codes waarmee gefraudeerd is?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

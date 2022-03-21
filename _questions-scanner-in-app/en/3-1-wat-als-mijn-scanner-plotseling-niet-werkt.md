@@ -3,7 +3,6 @@ set: 3
 index: 1
 title: What if my scanner suddenly doesn’t work?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

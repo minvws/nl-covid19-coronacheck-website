@@ -5,7 +5,6 @@ title: Mag ik iemand zonder geldig bewijs of geldig identiteitsbewijs binnen lat
 featuredHome: true
 featuredHomeIndex: 2
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

@@ -5,7 +5,6 @@ title: Is CoronaCheck Scanner compatible with my phone?
 featuredHome: true
 featuredHomeIndex: 3
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

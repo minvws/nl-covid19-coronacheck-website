@@ -5,7 +5,6 @@ title: I get a red screen after scanning a QR code. What now?
 redirect_from: 
   - /en/faq-scanner/7-na-scannen-een-rood-scherm-wat-nu
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

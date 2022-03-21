@@ -3,7 +3,6 @@ set: 1
 index: 9
 title: What happens to QR codes that have been tampered with?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

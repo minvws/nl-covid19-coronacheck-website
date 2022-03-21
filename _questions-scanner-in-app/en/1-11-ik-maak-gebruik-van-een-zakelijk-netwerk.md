@@ -3,7 +3,6 @@ set: 1
 index: 11
 title: I'm using a corporate network, how can I still use CoronaCheck?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

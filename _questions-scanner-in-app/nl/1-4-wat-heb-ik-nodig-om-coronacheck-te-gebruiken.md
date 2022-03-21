@@ -3,7 +3,6 @@ set: 1
 index: 3
 title: Wat heb ik nodig om CoronaCheck te gebruiken?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

@@ -5,7 +5,6 @@ title: What if my scanner suddenly doesn’t work?
 redirect_from: 
   - /en/faq-scanner/6-wat-als-mijn-scanner-plotseling-niet-werkt
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

@@ -3,7 +3,6 @@ set: 2
 index: 5
 title: Can a visitor get access to a location that requires a certificate if they don’t own a smartphone?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

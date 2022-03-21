@@ -3,7 +3,6 @@ set: 1
 index: 7
 title: I’m organising an event without WiFi. Will I be able to scan visitors’ QR codes? 
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

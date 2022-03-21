@@ -3,7 +3,6 @@ set: 1
 index: 3
 title: What do I need to use CoronaCheck? 
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

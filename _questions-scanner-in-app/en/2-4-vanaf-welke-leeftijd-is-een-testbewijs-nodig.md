@@ -3,7 +3,6 @@ set: 2
 index: 4
 title: From what age is a certificate required?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

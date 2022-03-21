@@ -6,7 +6,6 @@ webonly: true
 redirect_from: 
   - /en/faq-scanner/16-kan-ik-een-apk-bestand-downloaden
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

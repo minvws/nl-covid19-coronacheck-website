@@ -5,7 +5,6 @@ title: From what age is a certificate required?
 redirect_from: 
   - /en/faq-scanner/12-vanaf-welke-leeftijd-is-een-testbewijs-nodig
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

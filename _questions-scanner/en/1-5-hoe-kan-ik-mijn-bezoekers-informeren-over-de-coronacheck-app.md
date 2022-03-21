@@ -5,7 +5,6 @@ title: How can I inform my visitors about the CoronaCheck app?
 redirect_from: 
   - /en/faq-scanner/13-welke-informatie-kan-ik-delen-met-bezoekers
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

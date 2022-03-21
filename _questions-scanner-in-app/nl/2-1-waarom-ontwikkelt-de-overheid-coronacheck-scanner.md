@@ -3,7 +3,6 @@ set: 2
 index: 1
 title: Waarom ontwikkelt de overheid CoronaCheck Scanner?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

@@ -5,7 +5,6 @@ title: Werkt CoronaCheck Scanner op mijn telefoon?
 featuredHome: true
 featuredHomeIndex: 3
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

@@ -3,7 +3,6 @@ set: 2
 index: 4
 title: Vanaf welke leeftijd is een bewijs nodig?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

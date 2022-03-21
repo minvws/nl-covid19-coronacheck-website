@@ -5,7 +5,6 @@ title: Can I allow a visitor access without a proof of identity or a valid decla
 featuredHome: true
 featuredHomeIndex: 2
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

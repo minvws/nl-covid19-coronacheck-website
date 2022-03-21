@@ -3,7 +3,6 @@ set: 1
 index: 2
 title: Do I have to register my event to scan with the CoronaCheck Scanner app?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

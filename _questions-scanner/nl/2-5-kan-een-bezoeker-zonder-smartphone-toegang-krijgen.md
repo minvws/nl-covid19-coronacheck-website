@@ -5,7 +5,6 @@ title: Kan een bezoeker zonder smartphone toegang krijgen tot een locatie waar e
 redirect_from: 
   - /nl/faq-scanner/15-kan-een-bezoeker-zonder-smartphone-toegang-krijgen
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

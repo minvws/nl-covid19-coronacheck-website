@@ -5,7 +5,6 @@ title: Welke gegevens worden door CoronaCheck Scanner verwerkt en opgeslagen?
 redirect_from: 
   - /nl/faq-scanner/8-welke-gegevens-worden-door-coronacheck-scanner-verwerkt-en-opgeslagen
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

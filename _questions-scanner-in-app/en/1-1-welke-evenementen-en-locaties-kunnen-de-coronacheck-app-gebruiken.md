@@ -5,7 +5,6 @@ title: Which events and locations can use the CoronaCheck app?
 featuredHome: true
 featuredHomeIndex: 1
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

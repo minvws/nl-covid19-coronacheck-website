@@ -5,7 +5,6 @@ title: Waarom ontwikkelt de overheid CoronaCheck Scanner?
 redirect_from: 
   - /nl/faq-scanner/1-waarom-ontwikkelt-de-overheid-coronacheck-scanner
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

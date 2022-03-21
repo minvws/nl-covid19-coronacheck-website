@@ -3,7 +3,6 @@ set: 3
 index: 2
 title: Ik krijg na het scannen van een QR-code een rood scherm te zien, wat nu?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

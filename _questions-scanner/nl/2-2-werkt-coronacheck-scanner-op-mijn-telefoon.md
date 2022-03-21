@@ -7,7 +7,6 @@ featuredHomeIndex: 3
 redirect_from: 
   - /nl/faq-scanner/9-werkt-coronacheck-scanner-op-mijn-telefoon
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

@@ -3,7 +3,6 @@ set: 1
 index: 6
 title: How can I inform my employees about the CoronaCheck app?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

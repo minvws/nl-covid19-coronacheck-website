@@ -5,7 +5,6 @@ title: Can a visitor get access to a location that requires a certificate if the
 redirect_from: 
   - /en/faq-scanner/15-kan-een-bezoeker-zonder-smartphone-toegang-krijgen
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

@@ -3,7 +3,6 @@ set: 4
 index: 1
 title: What data is processed and saved by the CoronaCheck Scanner?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

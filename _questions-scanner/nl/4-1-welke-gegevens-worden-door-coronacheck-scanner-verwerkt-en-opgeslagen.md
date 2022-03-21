@@ -3,7 +3,6 @@ set: 4
 index: 1
 title: Welke gegevens worden door CoronaCheck Scanner verwerkt en opgeslagen?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

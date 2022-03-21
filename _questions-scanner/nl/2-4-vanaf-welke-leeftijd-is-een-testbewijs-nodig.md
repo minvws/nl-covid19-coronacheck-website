@@ -5,7 +5,6 @@ title: Vanaf welke leeftijd is een bewijs nodig?
 redirect_from: 
   - /nl/faq-scanner/12-vanaf-welke-leeftijd-is-een-testbewijs-nodig
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

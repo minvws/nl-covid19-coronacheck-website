@@ -3,7 +3,6 @@ set: 1
 index: 6
 title: Hoe kan ik mijn medewerkers informeren over de CoronaCheck-app?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

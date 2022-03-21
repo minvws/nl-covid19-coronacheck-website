@@ -3,7 +3,6 @@ set: 3
 index: 2
 title: I get a red screen after scanning a QR code. What now?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---
