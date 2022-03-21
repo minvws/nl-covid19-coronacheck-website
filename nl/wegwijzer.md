@@ -127,14 +127,15 @@ Bij de positieve testresultaten van voor 8 september 2021 is het type test niet 
 
 {% capture copy_testbewijs %}
 <div markdown="1">
-Alleen testuitslagen van testlocaties die aangesloten zijn bij CoronaCheck kunnen worden omgezet in een coronabewijs. 
-Meer informatie over testbewijzen vind je op {{ site.data.links.rijksoverheid-tvt[page.lang] }} en op {{ site.data.links.testbewijs[page.lang] }}.  
+Alleen testuitslagen van testlocaties die aangesloten zijn bij CoronaCheck kunnen worden omgezet in een coronabewijs. Meer informatie over testbewijzen vind je op {{ site.data.links.testenvoorjereis[page.lang] }}.
 
 ### Negatief getest bij de GGD
 Het kan tot 30 uur duren alvorens de uitslag van een test beschikbaar is. Vanaf het moment dat de GGD de uitslag heeft (dat kun je zien via {{ site.data.links.coronatest[page.lang] }}) duurt het nog een aantal uur voordat de gegevens zijn op te halen met CoronaCheck). Als je testuitslag al wel in {{ site.data.links.coronatest[page.lang] }} beschikbaar is, maar na 30 uur na testafname nog niet in de CoronaCheck-app, neem dan contact op met de GGD op {{ site.data.links.phone-ggd[page.lang] }}.
 
+{% if site.version != "0g" %}
 ### Testen voor toegang
 Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? Hiervoor kun je terecht bij {{ site.data.links.testen-voor-toegang[page.lang] }} ({{ site.data.links.phone-tvt-helpdesk[page.lang] }}). Hier vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatest voor nodig is, geeft de organisatie je meestal ook informatie, bijvoorbeeld op het ticket, in een bevestigingsmail of op de website.
+{% endif %}
 </div>
 {% endcapture %}
 
@@ -150,9 +151,15 @@ Deze ophaalcode bestaat uit een lange reeks van letters en cijfers (bv BRB-YYYYY
 
 - Jouw test moet nog verwerkt worden.
 - Je email adres is niet correct of wellicht is de mail in uw spambox terechtgekomen.
+- Er is een probleem bij de testlocatie in het doorgeven van de uitslag. Neem contact op met de locatie waar je bent getest. 
+
+Deze ophaalcode bestaat uit een lange reeks van letters en cijfers (bv BRB-YYYYYYYYYY-Z2). Deze ontvang je van de testlocatie. De uitslag van een antigeentest ontvang je binnen drie uur, de uitslag van een pcr-test kan tot 24 uur duren. Soms kan het wat langer duren. Als je deze niet hebt ontvangen kan dat verschillende oorzaken hebben:
+
+- Jouw test moet nog verwerkt worden.
+- Je email adres is niet correct of wellicht is de mail in uw spambox terechtgekomen.
 - Er is een probleem bij de testlocatie in het doorgeven van de uitslag. Kijk op {{ site.data.links.testen-voor-toegang[page.lang] }} of er storingen bekend zijn bij testlocaties.
 
-Neem contact op met de locatie waar je bent getest. Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+Neem contact op met de locatie waar je bent getest. {% if site.version != "0g" %}Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.{% endif %}
 </div>
 {% endcapture %}
 
@@ -163,7 +170,7 @@ De verificatiecode (per SMS of e-mail) moet normaliter binnen een minuut binnenk
 - In het geval je aanbieder de verificatiecode per email stuurt, controleer dan ook je spam-folder.
 - Heb je wellicht een buitenlands telefoonnummer doorgegeven? Het komt sporadisch voor dat SMS berichten naar buitenlandse nummers niet doorkomen.
 
-Neem contact op met de locatie waar je bent getest. Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+Neem contact op met de locatie waar je bent getest. {% if site.version != "0g" %}Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.{% endif %}
 </div>
 {% endcapture %}
 
@@ -174,7 +181,7 @@ Neem contact op met de locatie waar je bent getest om je gegevens te laten wijzi
 
 Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }}.
 
-Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+{% if site.version != "0g" %}Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.{% endif %}
 </div>
 {% endcapture %}
 
@@ -184,7 +191,7 @@ Zegt de app dat er geen bewijs gemaakt kan worden? Mogelijk klopt er dan iets ni
 
 Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
 
-Ben je via Testen voor Toegang getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+{% if site.version != "0g" %}Ben je via Testen voor Toegang getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.{% endif %}
 </div>
 {% endcapture %}
 
