@@ -4,8 +4,6 @@ index: 2
 title: Werkt CoronaCheck Scanner op mijn telefoon? 
 featuredHome: true
 featuredHomeIndex: 3
-redirect_from: 
-  - /nl/faq-scanner/9-werkt-coronacheck-scanner-op-mijn-telefoon
 whichversion:
   - 0g
   - 1g

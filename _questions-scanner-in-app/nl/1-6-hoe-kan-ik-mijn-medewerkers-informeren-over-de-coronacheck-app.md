@@ -2,6 +2,10 @@
 set: 1
 index: 6
 title: Hoe kan ik mijn medewerkers informeren over de CoronaCheck-app?
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 In de Toolkit voor organisatoren vind je niet alleen informatie voor jouw medewerkers, maar ook informatie die je vooraf kunt delen met bezoekers van jouw locatie of evenement. Download de toolkit met communicatiemiddelen: {{ site.data.links.wetransfer-toolkit[page.lang] }} (via We Transfer).
 

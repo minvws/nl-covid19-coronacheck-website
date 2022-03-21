@@ -2,6 +2,10 @@
 set: 1
 index: 3
 title: What do I need to use CoronaCheck? 
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 In order to be able to scan your visitors’ coronavirus passes, you need the CoronaCheck Scanner app. Employees can download the CoronaCheck Scanner app in the [Apple App Store](https://apps.apple.com/gb/app/coronacheck/id1548269870) (iPhone) or in the [Google Play Store](https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder) (Android). They can use it to scan visitors’ QR codes at the entrance.
 
