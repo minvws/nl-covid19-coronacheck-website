@@ -3,7 +3,6 @@ set: 1
 index: 8
 title: Does CoronaCheck also work for foreign visitors?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---

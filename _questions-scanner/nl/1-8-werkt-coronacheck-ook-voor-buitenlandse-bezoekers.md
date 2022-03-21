@@ -3,7 +3,6 @@ set: 1
 index: 8
 title: Werkt CoronaCheck ook voor buitenlandse bezoekers?
 whichversion:
-  - 0g
   - 1g
   - 3g
 ---
