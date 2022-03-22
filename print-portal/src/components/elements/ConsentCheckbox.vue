@@ -41,9 +41,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables/typography.scss";
 .consent-checkbox {
     &-title {
         font-size: 18px;
+        font-family: $font-main;
     }
     &-label {
         background: none;

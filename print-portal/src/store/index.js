@@ -26,7 +26,8 @@ const state = {
     signedAt: null,
     // we keep this registration for the focus of screenreaders.
     visitedHomePage: false,
-    slotModalActive: false
+    slotModalActive: false,
+    vaccinationWithPositiveTestEnabled: true // when true, show a consent and hide all faq's
 };
 
 const getters = {
@@ -41,6 +42,9 @@ const getters = {
             return disclosurePolicies[0].toUpperCase() === policy.toUpperCase()
         }
         return false
+    },
+    vaccinationWithPositiveTestEnabled: ({ vaccinationWithPositiveTestEnabled }) => {
+        return vaccinationWithPositiveTestEnabled
     },
     is0G: (state, { disclosurePolicies }) => {
         // 0G when disclosurePolicies = []
