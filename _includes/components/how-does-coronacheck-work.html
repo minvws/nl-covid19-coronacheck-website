@@ -28,12 +28,16 @@
                 <li>{{ site.data[page.lang][site.version].coronacheck-howto-step-2 }}</li>
                 <li>{{ site.data[page.lang][site.version].coronacheck-howto-step-3 }}</li>
             {% if site.version == "0g" %}
-                <li>{{ site.data[page.lang] [site.version].coronacheck-howto-step-4 }}</li>
+                <li>{{ site.data[page.lang][site.version].coronacheck-howto-step-4 }}</li>
             {% endif %}
         </ol>
 
         <p>
-            <a href="{{ site.data[page.lang].translations.coronacheck-howto-url }}">
+            {% if site.version == "0g" %}
+                <a href="{{ site.data[page.lang].translations.coronacheck-howto-url-0g }}">
+            {% else %}
+                <a href="{{ site.data[page.lang].translations.coronacheck-howto-url }}">
+            {% endif %}
             {{ site.data[page.lang].translations.coronacheck-howto-link }}
             </a>
         </p>
