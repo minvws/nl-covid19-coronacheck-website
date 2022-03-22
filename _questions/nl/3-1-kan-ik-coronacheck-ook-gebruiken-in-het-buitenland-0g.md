@@ -5,6 +5,8 @@ title: Kan ik CoronaCheck gebruiken in het buitenland?
 webonly: true
 whichversion:
   - 0g
+featuredHome: true
+featuredHomeIndex: 3
 ---
 Ja dat kan. Als je een bewijs maakt met CoronaCheck krijg je een internationale QR-code (EU Digitaal Corona Certificaat). Er kan naar gevraagd worden aan de grens of in het land van bestemming. Je kunt de internationale QR-code ook gebruiken voor evenementen in het land waar je heen reist. Daarvoor moet je wel voldoen aan de lokale regels.
 

@@ -2,8 +2,6 @@
 set: 2
 index: 1
 title: I want to get tested for coronavirus. Where should I go?
-featuredHome: true
-featuredHomeIndex: 3
 whichversion:
   - 1g
   - 3g

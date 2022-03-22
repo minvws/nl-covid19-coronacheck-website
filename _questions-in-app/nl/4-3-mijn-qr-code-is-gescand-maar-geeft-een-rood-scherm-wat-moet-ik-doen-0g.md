@@ -16,6 +16,6 @@ Rood scherm aan de grens of in het buitenland? Het kan zijn dat je bewijs niet v
 
 ## Blijft het scherm rood?
 
-Er is altijd een groen scherm nodig voor toegang. Geen groen scherm? Dan kun je helaas niet naar binnen.
-
 Neem dan contact op met de helpdesk van CoronaCheck op het telefoonnummer: {{ site.data.links.phone-helpdesk[page.lang] }}. Of als je vanuit het buitenland belt: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}.
+
+Er is altijd een groen scherm nodig voor toegang. Geen groen scherm? Dan kun je helaas niet naar binnen.

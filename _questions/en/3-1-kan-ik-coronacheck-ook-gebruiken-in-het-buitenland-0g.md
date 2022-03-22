@@ -5,6 +5,8 @@ title: Can I use CoronaCheck abroad?
 webonly: true
 whichversion:
   - 0g
+featuredHome: true
+featuredHomeIndex: 3
 ---
 Yes, you can. When you make a certificate with CoronaCheck, you’ll receive an international QR-code (EU Digital COVID Certificate). You may be asked to show it at the border or in the country of destination. You can also use the international QR code to enter locations in the country you’re visiting. However, you must comply with local regulations to do so.
 

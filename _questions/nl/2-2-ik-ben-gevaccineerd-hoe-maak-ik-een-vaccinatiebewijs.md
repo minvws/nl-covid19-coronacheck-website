@@ -13,6 +13,6 @@ whichversion:
 ---
 Op dit moment kun je geen Nederlands vaccinatiebewijs maken, omdat vaccinatiebewijzen momenteel niet worden gebruikt in Nederland.
 
-Je kan wel een internationaal vaccinatiebewijs maken. Deze krijg je al na één vaccinatie. Een volledig vaccinatiebewijs is 270 dagen geldig. Zodra je een nieuwe (booster)vaccinatie hebt gehad kun je deze zelf toevoegen door opnieuw in te loggen met DigiD. Voor de boostervaccinatie is nog geen geldigheid vastgesteld. Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Let op: de regels kunnen verschillen per land. Check {{ site.data.links.wijsopreis[page.lang] }} om te zien welke regels er gelden op jouw bestemming.
+Je kan wel een internationaal vaccinatiebewijs maken. Deze krijg je al na één vaccinatie. Een volledig vaccinatiebewijs is over het algemeen 270 dagen geldig. Zodra je een nieuwe (booster)vaccinatie hebt gehad kun je deze zelf toevoegen door opnieuw in te loggen met DigiD. Voor de boostervaccinatie is nog geen geldigheid vastgesteld. Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Let op: de regels kunnen verschillen per land. Check {{ site.data.links.wijsopreis[page.lang] }} om te zien welke regels er gelden op jouw bestemming.
 
 Kijk voor alle regels rondom het maken van een vaccinatiebewijs op de Rijksoverheid-pagina {{ site.data.links.vaccinatiebewijs[page.lang] }}.

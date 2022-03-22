@@ -7,9 +7,9 @@
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
 {% include open-source-comment.html %}
 {% include head.html %}
-<body>
+<body class="content-{{ site.version }}">
   {% include header.html %}
-  <main id="content content-{{ site.version }}"> 
+  <main id="content"> 
 
     {% include components/announcements.html  %}
     

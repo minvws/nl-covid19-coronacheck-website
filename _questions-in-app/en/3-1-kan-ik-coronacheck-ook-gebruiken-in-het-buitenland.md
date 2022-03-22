@@ -6,6 +6,8 @@ webonly: true
 whichversion:
   - 1g
   - 3g
+featuredHome: true
+featuredHomeIndex: 3
 ---
 Yes, you can. When you make a certificate with CoronaCheck, you’ll receive an international QR-code (EU Digital COVID Certificate)
 

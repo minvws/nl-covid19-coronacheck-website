@@ -2,11 +2,6 @@
 set: 2
 index: 1
 title: Ik wil mij laten testen, waar kan ik terecht?
-redirect_from: 
-    - /testafspraak
-    - /nl/testafspraak
-featuredHome: true
-featuredHomeIndex: 3
 whichversion:
   - 0g
 ---

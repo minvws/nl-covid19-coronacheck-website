@@ -63,7 +63,7 @@ Nou.
 14
 00:00:52,800 --> 00:00:57,160
 De app is gedownload, dus ik ga nu
-de CoronaCheck app openen.
+de CoronaCheck-app openen.
 
 15
 00:00:57,920 --> 00:01:00,800

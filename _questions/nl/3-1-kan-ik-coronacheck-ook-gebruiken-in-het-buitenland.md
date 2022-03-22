@@ -6,6 +6,8 @@ webonly: true
 whichversion:
   - 1g
   - 3g
+featuredHome: true
+featuredHomeIndex: 3
 ---
 Ja dat kan. Als je een bewijs maakt met CoronaCheck krijg je een internationale QR-code (EU Digitaal Corona Certificaat).
 
