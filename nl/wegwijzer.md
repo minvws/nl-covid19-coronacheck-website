@@ -18,7 +18,7 @@ CoronaCheck wordt ondertussen door veel mensen gebruikt om een vaccinatie, herst
 <div markdown="1">
 Op dit moment worden vaccinatiebewijzen niet gebruikt in Nederland. Daarom kun je nu met CoronaCheck alleen een vaccinatiebewijs maken dat internationaal geldig is. 
 
-Een internationaal vaccinatiebewijs krijg je al na één vaccinatie. Een volledig vaccinatiebewijs is 270 dagen geldig. Zodra je een nieuwe (booster)vaccinatie hebt gehad kun je deze zelf toevoegen door opnieuw in te loggen met DigiD. Voor de boostervaccinatie is nog geen geldigheid vastgesteld. Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Let op: de regels kunnen verschillen per land. Check {{ site.data.links.wijsopreis[page.lang] }} om te zien welke regels er gelden op jouw bestemming.
+Een internationaal vaccinatiebewijs krijg je al na één vaccinatie. Een volledig vaccinatiebewijs is over het algemeen 270 dagen geldig. Zodra je een nieuwe (booster)vaccinatie hebt gehad kun je deze zelf toevoegen door opnieuw in te loggen met DigiD. Voor de boostervaccinatie is nog geen geldigheid vastgesteld. Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Let op: de regels kunnen verschillen per land. Check {{ site.data.links.wijsopreis[page.lang] }} om te zien welke regels er gelden op jouw bestemming.
 
 CoronaCheck haalt gegevens over vaccinaties op bij de systemen van het RIVM, de GGD en ziekenhuizen. Andere vaccinatiezetters, zoals huisartsen en andere zorgverleners, hebben je vaccinatiegegevens doorgegeven aan het RIVM. Dit doen zij alleen als je hier toestemming voor hebt gegeven. Vaccinatiegegevens kan je ophalen in de app. [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
@@ -153,13 +153,7 @@ Deze ophaalcode bestaat uit een lange reeks van letters en cijfers (bv BRB-YYYYY
 - Je email adres is niet correct of wellicht is de mail in uw spambox terechtgekomen.
 - Er is een probleem bij de testlocatie in het doorgeven van de uitslag. Neem contact op met de locatie waar je bent getest. 
 
-Deze ophaalcode bestaat uit een lange reeks van letters en cijfers (bv BRB-YYYYYYYYYY-Z2). Deze ontvang je van de testlocatie. De uitslag van een antigeentest ontvang je binnen drie uur, de uitslag van een pcr-test kan tot 24 uur duren. Soms kan het wat langer duren. Als je deze niet hebt ontvangen kan dat verschillende oorzaken hebben:
-
-- Jouw test moet nog verwerkt worden.
-- Je email adres is niet correct of wellicht is de mail in uw spambox terechtgekomen.
-- Er is een probleem bij de testlocatie in het doorgeven van de uitslag. Kijk op {{ site.data.links.testen-voor-toegang[page.lang] }} of er storingen bekend zijn bij testlocaties.
-
-Neem contact op met de locatie waar je bent getest. {% if site.version != "0g" %}Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.{% endif %}
+{% if site.version != "0g" %}Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.{% endif %}
 </div>
 {% endcapture %}
 
