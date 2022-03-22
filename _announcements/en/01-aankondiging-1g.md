@@ -1,7 +1,7 @@
 ---
 lang: en
 # set `published` to true to show the announcement on the homepage:
-published: false
+published: true
 # Always set a title:
 title: 'Only 1G-access in the Netherlands'
 # Version: 0g, 1g or 3g
