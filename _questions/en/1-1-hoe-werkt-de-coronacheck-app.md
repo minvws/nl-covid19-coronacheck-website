@@ -5,10 +5,7 @@ title: How does the CoronaCheck app work?
 featuredHome: true
 featuredHomeIndex: 1
 featuredHomeIcon: app-touch
-redirect_from: 
-  - /en/faq/1-hoe-werkt-de-coronacheck-app
-faqversion:
-  - 0g
+whichversion:
   - 1g
   - 3g
 ---

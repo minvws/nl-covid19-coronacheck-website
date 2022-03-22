@@ -2,6 +2,10 @@
 set: 7
 index: 9
 title: Ik maak gebruik van een zakelijk netwerk, hoe kan ik CoronaCheck toch gebruiken?
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Voor gebruik van CoronaCheck binnen een zakelijk netwerk moeten de onderstaande IP ranges en/of DNS zones beschikbaar worden gesteld.
 

@@ -4,10 +4,7 @@ index: 7
 title: Mag ik iemand zonder geldig bewijs of geldig identiteitsbewijs binnen laten?  
 featuredHome: true
 featuredHomeIndex: 2
-redirect_from: 
-  - /nl/faq-scanner/4-mag-ik-iemand-zonder-geldig-testbewijs-binnen-laten
-faqversion:
-  - 0g
+whichversion:
   - 1g
   - 3g
 ---

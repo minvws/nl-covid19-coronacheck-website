@@ -4,10 +4,7 @@ index: 2
 title: Is CoronaCheck Scanner compatible with my phone?
 featuredHome: true
 featuredHomeIndex: 3
-redirect_from: 
-  - /en/faq-scanner/9-werkt-coronacheck-scanner-op-mijn-telefoon
-faqversion:
-  - 0g
+whichversion:
   - 1g
   - 3g
 ---

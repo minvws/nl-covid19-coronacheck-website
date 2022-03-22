@@ -2,6 +2,10 @@
 set: 1
 index: 9
 title: Hoe kan ik de CoronaCheck-app instellen op een andere taal?
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 ## In iOS:
 

@@ -4,10 +4,7 @@ index: 7
 title: Can I allow a visitor access without a proof of identity or a valid declaration? 
 featuredHome: true
 featuredHomeIndex: 2
-redirect_from: 
-  - /en/faq-scanner/4-mag-ik-iemand-zonder-geldig-testbewijs-binnen-laten
-faqversion:
-  - 0g
+whichversion:
   - 1g
   - 3g
 ---

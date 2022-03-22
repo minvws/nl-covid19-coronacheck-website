@@ -8,8 +8,7 @@ redirect_from:
   - /en/faq-in-app/17-wat-ziet-de-controleur-na-scannen-van-mijn-qr-code/
 featuredHome: true
 featuredHomeIndex: 5
-faqversion:
-  - 0g
+whichversion:
   - 1g
   - 3g
 ---

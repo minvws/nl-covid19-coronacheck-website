@@ -5,6 +5,8 @@
 
 repo: minvws/nl-covid19-notification-app-website
 
+version: 0g
+
 collections:
   questions:
     output: true
@@ -89,6 +91,7 @@ defaults:
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
+      published: false
   -
     scope:
       path: "_questions-scanner/en"
@@ -102,6 +105,7 @@ defaults:
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
+      published: false
   -
     scope:
       path: "_questions-scanner-in-app/en"
@@ -116,6 +120,7 @@ defaults:
       showContact: true
       showOnFAQoverview: true
       webonly: false
+      published: false
   -
     scope:
       path: "_questions-scanner-in-app/nl"
@@ -130,6 +135,7 @@ defaults:
       showContact: true
       showOnFAQoverview: true
       webonly: false
+      published: false
 
 sass:
   style: compressed
@@ -161,15 +167,6 @@ exclude:
   - auth.php
   - auth2.php
   - generate-statistics-graphic.html
-  # exclude when site is in 1g mode
-  - nl/index-0g.md
-  - nl/index-3g.md
-  - nl/scanner/index-0g.md
-  - nl/scanner/index-3g.md
-  - en/index-0g.md
-  - en/index-3g.md
-  - en/scanner/index-0g.md
-  - en/scanner/index-3g.md
 
 plugins:
   - "jekyll-github-metadata"
@@ -178,4 +175,3 @@ plugins:
   # - "jekyll-seo-tag"
 
 incremental: false
-

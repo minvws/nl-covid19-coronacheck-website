@@ -1,11 +1,15 @@
 ---
 set: 1
-index: 10
+index: 11
 title: "Onderzoek: hoe weten we of CoronaCheck werkt?"
 redirect_from: 
   - /nl/faq-in-app/30-onderzoek-hoe-weten-we-of-coronacheck-werkt
   - /nl/faq-in-app/6-2-onderzoek-hoe-weten-we-of-coronacheck-werkt
 webonly: true
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Het geprinte testbewijs en de apps CoronaCheck en [CoronaCheck Scanner](/nl/scanner) worden doorlopend onderzocht. Dat doet een team van experts met verschillende disciplines. Dit gaat zowel om kwantitatief als kwalitatief onderzoek en richt zich op de doelstellingen van CoronaCheck. Meer informatie kun je in onderstaande factsheet vinden.
 
@@ -25,4 +29,4 @@ De evaluatie van CoronaCheck liep tot en met september 2021. In juli en augustus
 
 Hoe controleurs bij activiteiten omgaan met het toelaten van bezoekers is onderzocht met 'mystery guests'. De verslagen lees je hier: <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/11/01/compliance-checks-ctb-coronacheck-1-november-2021" rel="noopener noreferrer" target="_blank">Compliance Checks Coronatoegangsbewijs 1 november 2021</a> en <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/11/29/compliance-checks-ctb-coronacheck-29-november-2021" rel="noopener noreferrer" target="_blank">Compliance Checks Coronatoegangsbewijs, 29 november 2021</a>.
 
-Daarnaast is er dagelijks informatie beschikbaar over het aantal downloads van CoronaCheck en [CoronaCheck Scanner](/nl/scanner). Een samenvatting van deze data kun je bekijken op de pagina [Aantal downloads CoronaCheck-app en -Scanner](/nl/faq/1-13-actuele-downloadcijfers/).
+Daarnaast is er dagelijks informatie beschikbaar over het aantal downloads van CoronaCheck en [CoronaCheck Scanner](/nl/scanner). Een samenvatting van deze data kun je bekijken op de pagina [Aantal downloads CoronaCheck-app en -Scanner](/nl/faq-in-app/1-13-actuele-downloadcijfers/).

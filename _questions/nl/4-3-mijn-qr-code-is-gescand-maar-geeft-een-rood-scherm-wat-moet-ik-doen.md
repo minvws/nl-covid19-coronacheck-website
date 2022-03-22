@@ -2,9 +2,9 @@
 set: 4
 index: 3
 title: Mijn QR-code is gescand, maar geeft een rood scherm. Wat moet ik doen?
-redirect_from: 
-  - /nl/faq/14-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
-  - /nl/faq/4-2-mijn-qr-code-is-gescand-maar-geeft-een-rood-scherm-wat-moet-ik-doen
+whichversion:
+  - 1g
+  - 3g
 ---
 Rood scherm aan de grens of in het buitenland? Het kan zijn dat de corona-maatregelen van het land in het land dat je bezoekt anders zijn dan in Nederland. Kijk op {{ site.data.links.wijsopreis[page.lang] }} voor de regels en geldigheid van het coronabewijs in andere landen.
 

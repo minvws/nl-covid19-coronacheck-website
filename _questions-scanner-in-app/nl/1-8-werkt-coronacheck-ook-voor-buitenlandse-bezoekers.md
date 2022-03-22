@@ -2,6 +2,9 @@
 set: 1
 index: 8
 title: Werkt CoronaCheck ook voor buitenlandse bezoekers?
+whichversion:
+  - 1g
+  - 3g
 ---
 Buitenlandse bezoekers uit Europa kunnen gebruik maken van het EU Digitaal Corona Certificaat (DCC). Met een papieren of digitaal DCC uit hun land van herkomst kunnen zij toegelaten worden tot Nederlandse evenementen. Hiervoor dienen zij een vaccinatie-, herstelbewijs of testbewijs te maken. Organisatoren kunnen elke EU DCC scannen met de Nederlandse CoronaCheck Scanner-app. 
 

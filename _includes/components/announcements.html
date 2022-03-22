@@ -1,4 +1,4 @@
-{% assign announcements = site.announcements | where:"lang", page.lang | where:"version", include.version %}
+{% assign announcements = site.announcements | where:"lang", page.lang | where:"version", site.version %}
 {% if announcements.size != 0 %}
     {% for announcement in announcements %}
     <div class="announcement">

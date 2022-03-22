@@ -59,6 +59,10 @@ h4 {
     color: #383836;
 }
 
+h3 {
+    margin-top: 40px;
+}
+
 dt,
 dd {
     display: inline-block;
@@ -187,4 +191,8 @@ button {
     .btn.onlyAndroid {
         display: inline-block;
     }
+}
+
+.banner {
+    padding: 10px 20px;
 }

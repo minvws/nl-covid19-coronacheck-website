@@ -6,6 +6,10 @@ redirect_from:
   - /nl/faq/33-kan-ik-een-testbewijs-in-de-coronacheck-app-en-op-papier-hebben
   - /nl/faq/5-4-kan-ik-een-internationale-qr-code-in-de-coronacheck-app-en-op-papier-hebben
 webonly: true
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Ja, dat kan. Maar dat is niet nodig. Zolang je bewijs geldig is blijft deze in de app staan. Mocht er toch iets fout gaan waardoor je het bewijs niet meer in de app kunt laden, dan kun je altijd je bewijs printen via [www.coronacheck.nl/print](/print).
 

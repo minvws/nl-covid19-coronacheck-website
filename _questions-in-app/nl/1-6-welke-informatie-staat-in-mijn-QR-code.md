@@ -2,14 +2,9 @@
 set: 1
 index: 6
 title: Welke informatie staat in mijn QR-code? 
-redirect_from: 
-  - /nl/faq-in-app/18-welke-informatie-staat-in-mijn-qr-code
-  - /nl/faq-in-app/16-hoe-worden-mijn-gegevens-gebruikt/
-  - /nl/faq-in-app/17-wat-ziet-de-controleur-na-scannen-van-mijn-qr-code/
 featuredHome: true
 featuredHomeIndex: 5
-faqversion:
-  - 0g
+whichversion: 
   - 1g
   - 3g
 ---

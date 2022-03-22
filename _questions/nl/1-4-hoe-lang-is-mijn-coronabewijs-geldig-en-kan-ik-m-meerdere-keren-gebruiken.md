@@ -2,13 +2,10 @@
 set: 1
 index: 5
 title: Hoe lang is mijn coronabewijs geldig? Kan ik 'm meerdere keren gebruiken?
-redirect_from: 
-    - /nl/faq/9-hoe-lang-is-mijn-testbewijs-geldig
-    - /nl/faq/10-waarom-is-de-geldigheidsduur-van-een-testbewijs-40-uur
-    - /nl/faq/35-kan-ik-meerdere-pilots-bezoeken-met-een-testbewijs/
-    - /nl/faq/2-2-hoe-lang-is-mijn-testbewijs-geldig-en-kan-ik-hem-meerdere-keren-gebruiken
-    - /nl/faq/2-3-tot-wanneer-is-mijn-vaccinatiebewijs-geldig
 webonly: true
+whichversion:
+  - 1g
+  - 3g
 ---
 Vaccinatie- en herstelbewijzen worden op dit moment in Nederland niet gebruikt. Op plekken waar het coronatoegangsbewijs wordt ingezet krijg je alleen toegang met een testbewijs (1G-toegang). 
 

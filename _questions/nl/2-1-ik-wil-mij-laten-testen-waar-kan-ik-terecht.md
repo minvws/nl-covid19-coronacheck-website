@@ -9,8 +9,7 @@ redirect_from:
     - /nl/testafspraak
 featuredHome: true
 featuredHomeIndex: 3
-faqversion:
-  - 0g
+whichversion:
   - 1g
   - 3g
 ---

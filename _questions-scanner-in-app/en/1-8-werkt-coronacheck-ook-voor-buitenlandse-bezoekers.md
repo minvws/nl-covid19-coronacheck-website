@@ -2,6 +2,9 @@
 set: 1
 index: 8
 title: Does CoronaCheck also work for foreign visitors?
+whichversion:
+  - 1g
+  - 3g
 ---
 Visitors from another European country can use the EU Digital COVID Certificate (DCC). Using a paper or digital DCC from their country of origin, they can be allowed access to Dutch events. To do so, they have to create a vaccination, recovery or test certificate. Organisers can scan every EU DCC using the Dutch CoronaCheck Scanner app. 
 

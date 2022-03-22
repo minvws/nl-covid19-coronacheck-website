@@ -119,7 +119,7 @@ Were you tested less than 180 days ago? Then there may be an error in the test d
 
 {% capture copy_geen_internationaal_herstelbewijs %}
 <div markdown="1"> 
-It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test and if the test was taken no less than 11 and no more than 180 days ago. For use within the Netherlands (for example for access to events), a recovery certificate is also issued based on an antigen test.
+It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test and if the test was taken no less than 11 and no more than 180 days ago. {% if site.version != "0g" %}For use within the Netherlands (for example for access to events), a recovery certificate is also issued based on an antigen test.{% endif %}
 
 ### Were you tested before September 8th at a test provider other than the GGD?
 
@@ -129,14 +129,15 @@ For positive test results from before September 8th, 2021, the type of test is n
 
 {% capture copy_testbewijs %}
 <div markdown="1">
-Only test results from test locations that are affiliated with CoronaCheck can be converted into a coronavirus pass. More information about test certificates can be found on [this government page about Testen voor Toegang](Https://Government.nl/test-certificate-access ) and on {{ site.data.links.testbewijs[page.lang] }}.
+Only test results from test locations that are affiliated with CoronaCheck can be converted into a coronavirus pass. More information about test certificates can be found on {{ site.data.links.testenvoorjereis[page.lang] }}.
 
 ### Tested negative at the GGD
 It can take up to 30 hours before the results of a test are available. From the moment the GGD has the results (you can see this via {{ site.data.links.coronatest[page.lang] }}) it will take a few hours before the data can be retrieved through CoronaCheck. Is your test result already available in {{ site.data.links.coronatest[page.lang] }}, but not in the CoronaCheck app 30 hours after taking the test? Please contact the GGD on {{ site.data.links.phone-ggd[page.lang] }}.
 
+{% if site.version != "0g" %}
 ### Testing for access
 Do you want to use a coronavirus pass for access to events and locations within the Netherlands? Contact {{ site.data.links.testen-voor-toegang[page.lang] }} ({{ site.data.links.phone-tvt-helpdesk[page.lang] }}). There you will get all relevant information and you can make an appointment. When you’re visiting an event or location that requires a test certificate, the organization usually provides you with the information for example on the ticket, in a confirmation email or on the website.
-
+{% endif %}
 </div>
 {% endcapture %}
 
@@ -154,9 +155,11 @@ Sometimes it can take a little longer. Didn’t receive your result? It can be f
 
 - Your test has yet to be processed.
 - Your email address is incorrect or the email may have ended up in your spam box.
-- There is a problem at the test site in reporting the results. Check Testen voor Toegang to see if there are known outages at test locations.
+- There is a problem at the test site in reporting the results. Please contact the location where you have been tested.
 
-Please contact the location where you have been tested. Have you been tested via <span lang="nl">Testen voor Toegang</span>? Contact their help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+Please contact the location where you have been tested. {% if site.version != "0g" %}
+Have you been tested via <span lang="nl">Testen voor Toegang</span>? Contact their help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+{% endif %}
 </div>
 {% endcapture %}
 
@@ -167,7 +170,10 @@ The verification code (by SMS or email) should normally arrive within a minute o
 - In case your provider sends the verification code by email, please also check your spam folder.
 - Did you perhaps provide a foreign telephone number? It happens sporadically that SMS messages to foreign numbers do not get through.
 
-Please contact the location where you have been tested. Have you been tested via <span lang="nl">Testen voor Toegang</span>? Contact their help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+Please contact the location where you have been tested. 
+{% if site.version != "0g" %}
+Have you been tested via <span lang="nl">Testen voor Toegang</span>? Contact their help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+{% endif %}
 </div>
 {% endcapture %}
 
@@ -178,7 +184,9 @@ Please contact the location where you have been tested to your data corrected.
 
 If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }}.
 
+{% if site.version != "0g" %}
 Have you been tested via <span lang="nl">Testen voor Toegang</span>? Contact their help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+{% endif %}
 </div>
 {% endcapture %}
 
@@ -188,7 +196,9 @@ Does the app say no certificate can be made? There may be something wrong with t
 
 If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected.
 
-Have you been tested via Testen voor Toegang? Contact the <span lang="nl">Testen voor Toegang</span> help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+{% if site.version != "0g" %}
+Have you been tested via <span lang="nl">Testen voor Toegang</span>? Contact their help desk on {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+{% endif %}
 
 </div>
 {% endcapture %}
@@ -395,6 +405,7 @@ Were you tested positive more than once, with the first time happening before yo
 {{ copy_printbewijs }}
 </details>
 
+{% if site.version == "3g" %}
 <details class="details" id="visitor">
 <summary><h2>I want to create a visitor pass</h2></summary>
 {{ copy_bezoekersbewijs }}
@@ -413,8 +424,8 @@ Were you tested positive more than once, with the first time happening before yo
 <summary><h3>The personal details on your vaccination approval and your negative test result do not match</h3></summary>
 {{ copy_bezoek_persoonsgegevens_verschillen }}
 </details>
-
 </details>
+{% endif %}
 
 <details class="details" id="digid">
 <summary><h2>I can’t login with DigiD</h2></summary>
