@@ -7,7 +7,7 @@ featuredHomeIndex: 5
 whichversion:
   - 0g
 ---
-If you’re traveling with the CoronaCheck app, more personal details are visible during checks at location entrances or border controls. This is due to an official agreement within Europe (Digital Coronavirus Certificate). 
+If you’re traveling with the CoronaCheck app, personal details are visible during checks at location entrances or border controls. This is due to an official agreement within Europe (Digital Coronavirus Certificate). 
 
 Depending on the certificate, the inspector sees:
 
