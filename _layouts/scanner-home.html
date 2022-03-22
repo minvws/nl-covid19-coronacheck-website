@@ -7,10 +7,10 @@
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
 {% include open-source-comment.html %}
 {% include head.html for="scanner" %}
-<body class="scanner-{{ site.version }}">
+<body class="scanner-{{ site.version }} content-{{ site.version }}">
   {% include header-scanner.html  %}
       {% if site.version != "0g" %}
-        <main id="content content-1g">
+        <main id="content">
             {% include components/scanner-quicklinks.html version="1g" %}
 
             {% include components/faq.html for="scanner" version="1g" %}
