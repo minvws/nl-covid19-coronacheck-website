@@ -5,8 +5,7 @@ title: I want to get tested for coronavirus. Where should I go?
 redirect_from: 
     - /en/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
     - /en/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
-featuredHome: true
-featuredHomeIndex: 3
+
 whichversion:
   - 1g
   - 3g

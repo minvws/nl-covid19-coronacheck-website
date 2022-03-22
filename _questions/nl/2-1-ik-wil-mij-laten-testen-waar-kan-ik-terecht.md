@@ -5,10 +5,8 @@ title: Ik wil mij laten testen, waar kan ik terecht?
 redirect_from: 
     - /nl/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
     - /nl/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
-    - /testafspraak
-    - /nl/testafspraak
-featuredHome: true
-featuredHomeIndex: 3
+    # - /testafspraak
+    # - /nl/testafspraak
 whichversion:
   - 1g
   - 3g
