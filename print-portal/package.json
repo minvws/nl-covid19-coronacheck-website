@@ -19,11 +19,14 @@
     "date-fns": "^2.20.1",
     "dcc-pdf-tools": "https://github.com/91divoc-ln/dcc-pdf-tools.git#v3.6.1",
     "detect-browser": "^5.2.0",
+    "file-loader": "^6.2.0",
     "lodash.isequal": "^4.5.0",
     "lodash.uniqwith": "^4.5.0",
     "oidc-client": "^1.11.5",
+    "pdfjs-dist": "^2.13.216",
     "polyfill-crypto.getrandomvalues": "^1.0.0",
     "portal-vue": "^2.1.7",
+    "qr-scanner": "^1.4.1",
     "register-service-worker": "^1.7.1",
     "v-click-outside": "^3.1.2",
     "vue": "^2.6.14",
@@ -32,6 +35,7 @@
     "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-methods": "^7.16.11",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",

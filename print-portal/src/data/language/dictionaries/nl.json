@@ -509,5 +509,60 @@
     },
     "warning": {
         "noPositivetest": "Er is helaas geen geschikte positieve testuitslag gevonden om mee te laten tellen in je vaccinatiebewijs."
-    }
+    },
+    "qr": {
+        "dialog": {
+          "duplicate": {
+            "title": "QR al toegevoegd",
+            "body": "Deze QR code is al eerder toegevoegd "
+          }
+        },
+        "error": {
+          "no-renderer": "Cannot capture, no renderer",
+          "not-started": "Er is iets fout gegaan met het starten van de camera"
+        },
+        "and": "en",
+        "camera": {
+          "title": "Houd je QR code voor de camera",
+          "start": "Start camera",
+          "stop": "Stop camera",
+          "route": {
+            "title": "Scan je bewijs",
+            "description": "Ik kan mijn bewijs laten zien voor de webcam of de camera in mij laptop"
+          },
+          "states": {
+            "NONE": "",
+            "STARTING": "Camera is aan het starten",
+            "STARTED": "Camera is gestart",
+            "PLAYING": "Camera is actief",
+            "SELECTED": "Camera bezig met starten",
+            "LIST": "Ophalen beschikbare cameras",
+            "STOPPED": "Camera is gestop"
+          },
+          "selected": "Geselecteerde camera"
+        },
+        "file": {
+          "title": "Voeg bestand toe",
+          "route": {
+            "title": "Upload je bewijs",
+            "description": "Ik heb mijn bewijs op mijn telefoon of computed staan"
+          },
+          "upload": {
+            "default": "Voeg bestand toe",
+            "isOver": "Laat los om toe te voegen",
+            "isPending": "Bezig"
+          },
+          "error": {
+            "unsupported": {
+              "title": "Mislukt",
+              "body": "Dit bestand wordt niet ondersteund. Ondersteunde bestandsformaten zijn: {acceptFileExtensions}"
+            }
+          }
+        },
+        "code": {
+          "scanned": "Gescande QR codes",
+          "not-found": "Geen QR code gevonden",
+          "added": "{count} QR codes toegevoegd | {count} QR code toegevoegd"
+        }
+      }
 }

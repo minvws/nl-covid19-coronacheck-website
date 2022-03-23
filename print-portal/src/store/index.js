@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import qr from '@/qr/store/qr'
 import _base from './modules/_base-module';
 import modal from './modules/modal';
 import snackbar from './modules/snackbar';
@@ -147,7 +148,6 @@ const mutations = {
         state.signedAt = null;
     }
 }
-
 export default new Vuex.Store({
     state,
     getters,
@@ -161,6 +161,7 @@ export default new Vuex.Store({
         signedEvents,
         qrs,
         auth,
-        storage
+        storage,
+        qr
     }
 })
