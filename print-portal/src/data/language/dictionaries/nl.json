@@ -527,7 +527,8 @@
         },
         "and": "en",
         "camera": {
-          "title": "Houd je QR code voor de camera",
+          "title": "Houd de QR-code op je bewijs voor de camera",
+          "description": "Zorg ervoor dat de gehele QR-code goed in beeld te zien is.",
           "start": "Start camera",
           "stop": "Stop camera",
           "route": {

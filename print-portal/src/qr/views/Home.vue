@@ -22,7 +22,6 @@ import PageIntro from '@/components/elements/PageIntro.vue';
 import QRScannerNav from '@/qr/components/QRScanner/QRScannerNav.vue'
 
 export default Vue.extend({
-    name: 'Home',
     components: {
         Page,
         PageIntro,

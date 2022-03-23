@@ -1,6 +1,7 @@
 <template>
   <div class="qr-scanner">
-    <Title :visible="isReady" id="qr.camera.title" />
+    <Title :visible="isReady" id="qr.camera.title" tag="h2"/>
+    <Title :visible="isReady" id="qr.camera.description" tag="p"/>
     <CameraRender :status="state">
       <template>
         <video ref="renderer" @playing="state = ''" />

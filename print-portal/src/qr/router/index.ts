@@ -1,6 +1,6 @@
 import { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
-import QRScanner from '@/qr/components/QRScanner/index.vue'
+import QRScannerPage from '@/qr/components/QRScanner/QRScannerPage.vue'
 import QRFromImageOrPDF from '@/qr/components/QRScanner/QRFromImageOrPDF.vue'
 
 export enum RouterNames {
@@ -18,7 +18,7 @@ const routes: Array<RouteConfig> = [
     {
         path: '/camera',
         name: RouterNames.CAMERA,
-        component: QRScanner
+        component: QRScannerPage
     },
     {
         path: '/file',

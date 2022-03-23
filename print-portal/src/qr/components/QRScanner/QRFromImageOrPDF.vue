@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Title id="qr.file.title" />
+    <Title id="qr.file.title" tag="h2"/>
     <FileInput
       accept="image/jpeg,image/png,application/pdf"
       v-bind="{ isPending }"

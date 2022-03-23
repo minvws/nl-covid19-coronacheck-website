@@ -12,7 +12,7 @@
             <div class="link-title">{{title }}</div>
             <div class="link-description">{{ description }}</div>
         </div>
-        <img class="next" src="@/qr/assets/icons/chevron.svg" alt=""/>
+        <img class="next" src="@/qr/assets/icons/next.svg" alt=""/>
       </div>
     </router-link>
   </header>
