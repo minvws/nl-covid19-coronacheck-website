@@ -2,15 +2,17 @@
   <header>
     <router-link
       class="link"
-      v-for="{ name, title, description } in routes"
+      v-for="{ name, title, description, icon} in routes"
       :to="{ name }"
       :key="description"
     >
       <div class="inner">
-        <p>
-          <b>{{ title }}</b>
-        </p>
-        <span>{{ description }}</span>
+        <img class="icon" :src="icon" alt=""/>
+        <div class="inner-content">
+            <div class="link-title">{{title }}</div>
+            <div class="link-description">{{ description }}</div>
+        </div>
+        <img class="next" src="@/qr/assets/icons/chevron.svg" alt=""/>
       </div>
     </router-link>
   </header>
@@ -18,18 +20,20 @@
 
 <script lang="ts">
 import Vue from 'vue'
-
+import { RouterNames } from '@/qr/router'
 export default Vue.extend({
     computed: {
         routes() {
             const routes = [
                 {
-                    name: 'camera',
-                    ...(this.$t('qr.camera.route') as Record<string, unknown>)
+                    name: RouterNames.CAMERA,
+                    ...(this.$t('qr.camera.route') as Record<string, unknown>),
+                    icon: require('@/qr/assets/icons/camera.svg')
                 },
                 {
-                    name: 'file',
-                    ...(this.$t('qr.file.route') as Record<string, unknown>)
+                    name: RouterNames.FILE,
+                    ...(this.$t('qr.file.route') as Record<string, unknown>),
+                    icon: require('@/qr/assets/icons/upload.svg')
                 }
             ]
             const routerName = this.$route.name
@@ -40,14 +44,46 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables/typography.scss";
 .link {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.04);
-  color: black;
-  margin: 32px 16px;
+    font-family: $font-main;
+    color: #383836;
+    background: #F6FAFB;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 9px;
+    margin-bottom: 24px;
+
+    &-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 16px 0 8px 0;
+    }
+    &-description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 16px;
+    }
 }
 .inner {
-  padding: 8px 16px 32px 16px;
+    display: flex;
+    flex-direction: row;
+    &-content {
+        flex-grow: 1;
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    margin: 0 18px;
+}
+.next {
+    width: 16px;
+    height: 16px;
+    align-self: center;
+    margin: 0 18px;
 }
 </style>

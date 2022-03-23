@@ -256,6 +256,10 @@
             "pageHeader": "Welk papieren bewijs wil je maken?",
             "pageIntro": ""
         },
+        "chooseAddProof": {
+            "pageHeader": "Hoe wil je jouw bewijs toevoegen?",
+            "pageIntro": "<p>Als je een camera op je apparaat hebt, kun je jouw bewijs hiermee scannen. Of kies ervoor om je bewijs te uploaden.<\/p>"
+        },
         "choiceTestLocation": {
             "choiceGGDBody": "Log in met DigiD",
             "choiceGGDHead": "GGD",
@@ -527,8 +531,8 @@
           "start": "Start camera",
           "stop": "Stop camera",
           "route": {
-            "title": "Scan je bewijs",
-            "description": "Ik kan mijn bewijs laten zien voor de webcam of de camera in mij laptop"
+            "title": "Bewijs scannen via camera",
+            "description": "Ik kan mijn bewijs laten zien voor de camera van mijn apparaat"
           },
           "states": {
             "NONE": "",
@@ -544,8 +548,8 @@
         "file": {
           "title": "Voeg bestand toe",
           "route": {
-            "title": "Upload je bewijs",
-            "description": "Ik heb mijn bewijs op mijn telefoon of computed staan"
+            "title": "Bewijs uploaden",
+            "description": "Ik heb een bestand of foto van mijn bewijs op mijn apparaat staan"
           },
           "upload": {
             "default": "Voeg bestand toe",
