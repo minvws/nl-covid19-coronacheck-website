@@ -2,13 +2,19 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import CurrentLanguage from '@/components/mixins/CurrentLanguage';
+import CurrentLanguage from '@/components/mixins/CurrentLanguage.vue';
 import axios from 'axios';
 import i18n from './i18n';
 import AuthService from '@/interfaces/authentication';
-
 import PortalVue from 'portal-vue'
 import { timeoutTime } from '@/data/constants'
+
+declare global {
+    interface Window {
+        config?: any;
+    }
+}
+
 Vue.use(PortalVue)
 
 const getBaseUrl = () => {
