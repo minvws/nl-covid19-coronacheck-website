@@ -53,7 +53,7 @@ import CameraRender from './CameraRender.vue'
 import CameraStatus from './CameraStatus.vue'
 import CameraCaptures from './CameraCaptures.vue'
 /* eslint-disable-next-line */ // @TODO: fix typing
-import QrScanner, { QrScannerExtend } from '@/qr/utils/QRScanner'
+import QrScanner, { QrScannerExtend, isValidQR } from '@/qr/utils/QRScanner'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
 import Title from '@/qr/components/Title.vue'
 import qrMixin, { QRMixin } from '@/qr/mixins/qr-mixin'
@@ -110,6 +110,10 @@ export default QRMixin.extend({
         },
         code(result: string) {
             if (!result) return
+            if (!isValidQR(result)) {
+                this.code = null
+                return
+            }
             this.onAddPendingQR({ result })
         },
         codesAdded(codesAdded) {

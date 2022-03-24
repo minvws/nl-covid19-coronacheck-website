@@ -524,7 +524,7 @@
         "error": {
           "no-renderer": "Cannot capture, no renderer",
           "not-started": "Er is iets fout gegaan met het starten van de camera",
-          "invalidQR": "Geen geldige nederlandse of internationale QR-code"
+          "invalidQR": "Geen geldige Nederlandse of Internationale QR-code gevonden"
         },
         "and": "en",
         "or": "of een",

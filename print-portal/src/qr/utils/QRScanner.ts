@@ -18,12 +18,15 @@ export const isDutchQR = (qr: string) => {
     return regex.test(qr);
 }
 
+export const isValidQR = (qr: string) => {
+    return isDutchQR(qr) || isEuropeanQR(qr)
+}
 export const NO_QR_CODE_FOUND = `Scanner error: ${QrScanner.NO_QR_CODE_FOUND}`
 
 export const scanQR = async (input: any) => { // @TODO: fix type
     const result = await QrScanner.scanImage(input)
     if (!result) return null
-    if (!isDutchQR(result) && !isEuropeanQR(result)) {
+    if (!isValidQR(result)) {
         throw new Error(i18n.t('qr.error.invalidQR') as string);
     }
     return result
