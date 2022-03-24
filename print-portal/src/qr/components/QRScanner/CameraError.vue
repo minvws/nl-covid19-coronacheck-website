@@ -7,13 +7,13 @@
     </transition>
   </div>
 </template>
-<script>
+<script lang="ts">
 import Vue from 'vue'
 import { NO_QR_CODE_FOUND } from '@/qr/utils/QRScanner'
 export default Vue.extend({
     props: {
         error: {
-            type: String,
+            type: String, // @TODO: can be error object
             required: false
         }
     },

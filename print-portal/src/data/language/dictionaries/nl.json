@@ -561,13 +561,14 @@
             "unsupported": {
               "title": "Mislukt",
               "body": "Dit bestand wordt niet ondersteund. Ondersteunde bestandsformaten zijn: {acceptFileExtensions}"
-            }
+            },
+            "invalidQR": "Geen geldige nederlandse of internationale QR-code"
           }
         },
         "code": {
           "scanned": "Gescande QR codes",
-          "not-found": "Geen QR code gevonden",
-          "added": "{count} QR codes toegevoegd | {count} QR code toegevoegd"
+          "not-found": "Geen QR-code gevonden",
+          "added": "{count} QR-codes toegevoegd | {count} QR code toegevoegd"
         }
       }
 }

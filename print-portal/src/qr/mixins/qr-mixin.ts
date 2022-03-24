@@ -36,7 +36,7 @@ export type QRMixinType = {
 
 export type QRScannerType = {
   isPending: boolean
-  error: null | string
+  error: null | string | Error
   file: null | File
   src: null | string
   scanResult: null | string

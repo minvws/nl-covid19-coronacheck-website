@@ -37,7 +37,7 @@ import FilePreview from '@/qr/components/QRScanner/FilePreview.vue'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
 import QRList from '@/qr/components/QRScanner/QRList.vue'
 import Title from '@/qr/components/Title.vue'
-import QrScanner from '@/qr/utils/QRScanner'
+import { scanQR } from '@/qr/utils/QRScanner'
 import { isPDF, isImage } from '@/qr/utils/FileType'
 import { getImagesFromPDFFile } from '@/qr/utils/PDFJsLib'
 import qrMixin, { QRMixin, QRData } from '@/qr/mixins/qr-mixin'
@@ -89,7 +89,7 @@ export default QRMixin.extend({
         async scanPDF(file: File) {
             const images = await getImagesFromPDFFile(file)
             const results = await Promise.all(
-                images.map((src) => QrScanner.scanImage(src))
+                images.map((src) => scanQR(src))
             )
             results.forEach((result, i) => {
                 this.onAddPendingQR({ result, src: images[i] })
@@ -98,7 +98,7 @@ export default QRMixin.extend({
         async onScanFile(file: File) {
             if (isPDF(file)) return this.scanPDF(file)
             else if (isImage(file)) {
-                this.scanResult = await QrScanner.scanImage(file)
+                this.scanResult = await scanQR(file)
             } else {
                 console.warn('unsupported file of type', file.type)
             }
@@ -109,8 +109,8 @@ export default QRMixin.extend({
             try {
                 this.isPending = true
                 await this.onScanFile(file)
-            } catch (error) {
-                this.error = error as string
+            } catch (error: unknown) {
+                this.error = (error as Error)?.message || error as string
             } finally {
                 this.isPending = false
             }

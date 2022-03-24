@@ -157,8 +157,8 @@ export default QRMixin.extend({
                 await this.qrScanner?.start()
                 this.isStarted = true
                 this.state = CameraState.STARTED
-            } catch (error) {
-                this.error = error as string
+            } catch (error: unknown) {
+                this.error = (error as Error)?.message || error as string
             } finally {
                 this.isStartPending = false
                 this.isAutoStart = false
@@ -170,8 +170,8 @@ export default QRMixin.extend({
                 this.qrScanner?.stop()
                 this.isStarted = false
                 this.state = CameraState.STOPPED
-            } catch (error) {
-                this.error = error as string
+            } catch (error: unknown) {
+                this.error = (error as Error)?.message || error as string;
             } finally {
                 this.isStopPending = false
             }
@@ -191,8 +191,8 @@ export default QRMixin.extend({
                 await this.qrScanner?.setCamera(id)
                 const camera = await this.getCameraFromStream()
                 this.cameraId = camera?.id || id
-            } catch (error) {
-                this.error = error as string
+            } catch (error: unknown) {
+                this.error = (error as Error)?.message || error as string
             } finally {
                 this.pendingCameraId = null
             }
@@ -221,7 +221,7 @@ export default QRMixin.extend({
             if (this.isAutoStart) await this.onStart()
             this.isReady = true
         } catch (e) {
-        // something went wrong with starting the camera
+            // something went wrong with starting the camera
             this.error = this.$t('qr.error.not-started') as string
         }
     },

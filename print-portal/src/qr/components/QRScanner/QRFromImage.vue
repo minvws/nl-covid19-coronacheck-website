@@ -23,7 +23,7 @@
 </template>
 
 <script lang="ts">
-import QrScanner from '@/qr/utils/QRScanner'
+import { scanQR } from '@/qr/utils/QRScanner'
 import CameraError from './CameraError.vue'
 import FileInput from './FileInput.vue'
 import FilePreview from './FilePreview.vue'
@@ -74,9 +74,9 @@ export default QRMixin.extend({
             this.file = file
             try {
                 this.isPending = true
-                this.scanResult = await QrScanner.scanImage(file)
-            } catch (error) {
-                this.error = error
+                this.scanResult = await scanQR(file)
+            } catch (error: unknown) {
+                this.error = (error as Error)?.message || error as string
             } finally {
                 this.isPending = false
             }
