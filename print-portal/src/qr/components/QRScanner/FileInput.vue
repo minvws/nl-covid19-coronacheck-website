@@ -2,15 +2,17 @@
   <div class="file-input">
     <input
       v-if="!isPending"
-      class="file screen-reader"
+      class="file"
       type="file"
       ref="input"
       id="input"
       :accept="accept"
       @change="onFileInput"
+      aria-describedby="input-description"
     />
     <label for="input">
       <DropFile
+        class="drop"
         @file="$emit('file', $event)"
         @error="$emit('error', $event)"
         v-bind="{
@@ -74,19 +76,17 @@ export default Vue.extend({
 .file-input {
   position: relative;
 }
+
 .file {
   position: absolute;
   width: 100%;
+  height: 100%;
+  padding: 20%;
 }
 
-.screen-reader {
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+.drop {
+    position: relative;
+    z-index: 1;
 }
+
 </style>

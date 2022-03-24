@@ -18,7 +18,7 @@
                 <Spinner color="#007aff" :visible="isDurationPending" />
             </div>
             <template>
-                <p class="label">{{ label }}</p>
+                <p id="input-description" class="label">{{ label }}</p>
                 <AcceptFileTypes
                     :accept="accept"
                     :visible="!isDurationPending"
