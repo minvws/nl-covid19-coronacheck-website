@@ -13,8 +13,13 @@ import { NO_QR_CODE_FOUND } from '@/qr/utils/QRScanner'
 export default Vue.extend({
     props: {
         error: {
-            type: String, // @TODO: can be error object
+            type: String,
             required: false
+        },
+        timeoutDuration: {
+            type: Number,
+            required: false,
+            default: 4000
         }
     },
     data() {
@@ -33,7 +38,7 @@ export default Vue.extend({
             this.clear()
             this.timeout = setTimeout(() => {
                 this.$emit('clear')
-            }, 2000)
+            }, this.timeoutDuration)
         },
         clear() {
             clearTimeout(this.timeout)

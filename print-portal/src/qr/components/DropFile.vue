@@ -124,12 +124,18 @@ export default Vue.extend({
 .is-over {
     background-color: #ecfafd;
 }
+
+.drag-and-drop {
+    &.drag {
+        border: 2px dashed #007aff;
+    }
+}
 .drag {
     .icon {
          &:after {
             content: "";
             background-image: url('~@/qr/assets/icons/arrow.svg');
-            top: 32px;
+            top: 33px;
             left: 8px;
             transform: translate(-50%, -50%) rotate(90deg);
             background-repeat: no-repeat;
@@ -139,9 +145,9 @@ export default Vue.extend({
 
 .drop-file {
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 8px;
-    background-color: #f6fafb;
+    background-color: #F6FAFB;
     transition: background 0.3s;
     cursor: pointer;
     &.is-pending {
@@ -153,10 +159,6 @@ export default Vue.extend({
 }
 .inner {
     padding: 40px 0;
-}
-
-.drag-and-drop {
-    border: 2px dashed #007aff;
 }
 
 .icon {
