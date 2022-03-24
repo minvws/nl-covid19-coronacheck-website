@@ -544,7 +544,7 @@
             "PLAYING": "Camera is actief",
             "SELECTED": "Camera bezig met starten",
             "LIST": "Ophalen beschikbare cameras",
-            "STOPPED": "Camera is gestop"
+            "STOPPED": "Camera is gestopt"
           },
           "selected": "Geselecteerde camera"
         },
