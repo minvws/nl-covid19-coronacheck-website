@@ -130,7 +130,7 @@ export default QRMixin.extend({
 <style lang="scss" scoped>
 .message {
   position: relative;
-  height: 24px;
+  height: 48px;
   div {
     position: absolute;
     top: 0;

@@ -77,6 +77,7 @@ $duration: 0.3s;
 }
 
 .icon {
+  width: 18px;
   height: 18px;
   margin-top: 3px;
 }
