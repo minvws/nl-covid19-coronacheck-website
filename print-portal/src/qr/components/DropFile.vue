@@ -21,6 +21,7 @@
             <template>
                 <p id="input-description" class="label">{{ label }}</p>
                 <AcceptFileTypes
+                    class="accept"
                     :accept="accept"
                     :visible="!isDurationPending"
                 />
@@ -121,13 +122,16 @@ export default Vue.extend({
 });
 </script>
 <style lang="scss" scoped>
+$color-primary: #1540EB;
+$color-secondary: #F6FAFB;
+
 .is-over {
-    background-color: #ecfafd;
+    background-color: $color-secondary;
 }
 
 .drag-and-drop {
     &.drag {
-        border: 2px dashed #007aff;
+        border: 2px dashed $color-primary;
     }
 }
 .drag {
@@ -147,7 +151,7 @@ export default Vue.extend({
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 8px;
-    background-color: #F6FAFB;
+    background-color: $color-secondary;
     transition: background 0.3s;
     cursor: pointer;
     &.is-pending {
@@ -168,7 +172,7 @@ export default Vue.extend({
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #007aff;
+    background: $color-primary;
     opacity: 0;
     transition: opacity 0.3s;
 
@@ -197,7 +201,11 @@ export default Vue.extend({
 }
 .label {
     font-weight: bold;
-    color: #007aff;
+    color: $color-primary;
     margin: 8px 0;
+}
+
+.accept {
+    color: #383836;
 }
 </style>
