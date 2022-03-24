@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Title id="qr.file.title" tag="h2"/>
     <FileInput
       accept="image/jpeg,image/png,application/pdf"
       v-bind="{ isPending }"
@@ -36,7 +35,6 @@ import FileInput from '@/qr/components/QRScanner/FileInput.vue'
 import FilePreview from '@/qr/components/QRScanner/FilePreview.vue'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
 import QRList from '@/qr/components/QRScanner/QRList.vue'
-import Title from '@/qr/components/Title.vue'
 import { scanQR } from '@/qr/utils/QRScanner'
 import { isPDF, isImage } from '@/qr/utils/FileType'
 import { getImagesFromPDFFile } from '@/qr/utils/PDFJsLib'
@@ -45,7 +43,6 @@ import qrMixin, { QRMixin, QRData } from '@/qr/mixins/qr-mixin'
 export default QRMixin.extend({
     mixins: [qrMixin],
     components: {
-        Title,
         CameraError,
         FileInput,
         FilePreview,

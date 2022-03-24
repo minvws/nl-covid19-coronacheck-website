@@ -523,7 +523,8 @@
         },
         "error": {
           "no-renderer": "Cannot capture, no renderer",
-          "not-started": "Er is iets fout gegaan met het starten van de camera"
+          "not-started": "Er is iets fout gegaan met het starten van de camera",
+          "invalidQR": "Geen geldige nederlandse of internationale QR-code"
         },
         "and": "en",
         "camera": {
@@ -547,7 +548,8 @@
           "selected": "Geselecteerde camera"
         },
         "file": {
-          "title": "Voeg bestand toe",
+          "title": "Voeg een bestand toe om te uploaden",
+          "description": "Je kunt je bestand uploaden vanuit een map, of direct in het vak hieronder slepen. Zorg dat je een jpg-, png- of pdf-bestand hebt om toe te voegen.",
           "route": {
             "title": "Bewijs uploaden",
             "description": "Ik heb een bestand of foto van mijn bewijs op mijn apparaat staan"
@@ -561,8 +563,7 @@
             "unsupported": {
               "title": "Mislukt",
               "body": "Dit bestand wordt niet ondersteund. Ondersteunde bestandsformaten zijn: {acceptFileExtensions}"
-            },
-            "invalidQR": "Geen geldige nederlandse of internationale QR-code"
+            }
           }
         },
         "code": {

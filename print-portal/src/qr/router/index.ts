@@ -1,7 +1,7 @@
 import { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
-import QRScannerPage from '@/qr/components/QRScanner/QRScannerPage.vue'
-import QRFromImageOrPDF from '@/qr/components/QRScanner/QRFromImageOrPDF.vue'
+import QRScannerPage from '@/qr/pages/QRScannerPage.vue'
+import QRFromImageOrPDFPage from '@/qr/pages/QRFromImageOrPDFPage.vue'
 
 export enum RouterNames {
     CHOOSE_ADD_PROOF = 'chooseAddProof',
@@ -23,7 +23,7 @@ const routes: Array<RouteConfig> = [
     {
         path: '/file',
         name: RouterNames.FILE,
-        component: QRFromImageOrPDF
+        component: QRFromImageOrPDFPage
     }
 ]
 

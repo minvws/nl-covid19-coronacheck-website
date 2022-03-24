@@ -74,6 +74,7 @@ export default Vue.extend({
 }
 .inner {
   position: absolute;
+  max-width: 460px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

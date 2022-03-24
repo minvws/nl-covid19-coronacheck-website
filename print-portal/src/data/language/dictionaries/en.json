@@ -519,7 +519,8 @@
         },
         "error": {
           "no-renderer": "Cannot capture, no renderer",
-          "not-started": "Something went wrong with starting the camera"
+          "not-started": "Something went wrong with starting the camera",
+          "invalidQR": "Not a valid dutch or european QR-code"
         },
         "and": "and",
         "camera": {
