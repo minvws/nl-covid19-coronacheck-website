@@ -257,8 +257,24 @@
             "pageIntro": ""
         },
         "chooseAddProof": {
-            "pageHeader": "Hoe wil je jouw bewijs toevoegen?",
+            "pageHeader": "Wil je scanen of uploaden?",
             "pageIntro": "<p>Als je een camera op je apparaat hebt, kun je jouw bewijs hiermee scannen. Of kies ervoor om je bewijs te uploaden.<\/p>"
+        },
+        "chooseMissingVaccination": {
+            "pageHeader": "Heb je al een bewijs met QR-code van de missende vaccinatie(s)?",
+            "options": {
+                "domestic": {
+                    "title": "Ja, gekregen in Nederland",
+                    "description": "Als je in Nederland je vaccinatie(s) hebt gehad"
+                },
+                "international": {
+                    "title": "Ja, gekregen in het buitenland",
+                    "description": "Als je in het buitenland je vaccinatie(s) hebt gehad"
+                },
+                "none": {
+                    "title": "Nee, ik heb geen bewijs met QR-code"
+                }
+            }
         },
         "choiceTestLocation": {
             "choiceGGDBody": "Log in met DigiD",

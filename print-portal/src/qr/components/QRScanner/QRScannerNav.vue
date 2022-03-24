@@ -7,9 +7,9 @@
       :key="description"
     >
       <div class="inner">
-        <img class="icon" :src="icon" alt=""/>
+        <img v-if="icon" class="icon" :src="icon" alt=""/>
         <div class="inner-content">
-            <div class="link-title">{{title }}</div>
+            <div class="link-title">{{ title }}</div>
             <div class="link-description">{{ description }}</div>
         </div>
         <img class="next" src="@/qr/assets/icons/next.svg" alt=""/>
@@ -20,24 +20,11 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { RouterNames } from '@/qr/router'
 export default Vue.extend({
-    computed: {
-        routes() {
-            const routes = [
-                {
-                    name: RouterNames.CAMERA,
-                    ...(this.$t('qr.camera.route') as Record<string, unknown>),
-                    icon: require('@/qr/assets/icons/camera.svg')
-                },
-                {
-                    name: RouterNames.FILE,
-                    ...(this.$t('qr.file.route') as Record<string, unknown>),
-                    icon: require('@/qr/assets/icons/upload.svg')
-                }
-            ]
-            const routerName = this.$route.name
-            return routes.filter(({ name }) => name !== routerName)
+    props: {
+        routes: {
+            type: Array,
+            required: true
         }
     }
 })
@@ -46,12 +33,14 @@ export default Vue.extend({
 <style lang="scss" scoped>
 @import "@/styles/variables/typography.scss";
 .link {
+    display: block;
     font-family: $font-main;
     color: #383836;
     background: #F6FAFB;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
     border-radius: 9px;
     margin-bottom: 24px;
+    text-decoration: none;
 
     &-title {
         font-weight: 700;
@@ -71,6 +60,7 @@ export default Vue.extend({
     flex-direction: row;
     &-content {
         flex-grow: 1;
+        margin-left: 18px;
     }
 }
 
@@ -78,7 +68,7 @@ export default Vue.extend({
     width: 24px;
     height: 24px;
     align-self: center;
-    margin: 0 18px;
+    margin-left: 18px;
 }
 .next {
     width: 16px;
