@@ -23,12 +23,7 @@ export const fileExtensions = (accept: string): string[] => {
 }
 
 export const prettyFileExtensions = (accept: string, seperator: string): string => {
-    const ext = fileExtensions(accept)
-        .map((type) => {
-            if (type === 'pdf') return type.toUpperCase()
-            return type
-        })
-        .map((type) => `<b>${type}</b>`)
+    const ext = fileExtensions(accept).map((type) => `<b>${type}</b>`)
     if (ext.length > 1) {
         ext[ext.length - 2] = `
         ${ext[ext.length - 2]}

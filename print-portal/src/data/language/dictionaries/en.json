@@ -523,6 +523,7 @@
           "invalidQR": "Not a valid dutch or european QR-code"
         },
         "and": "and",
+        "or": "ar a",
         "camera": {
           "title": "Show your QR in front of the camera",
           "start": "Start camera",

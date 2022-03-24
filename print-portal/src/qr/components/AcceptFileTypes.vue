@@ -19,7 +19,7 @@ export default Vue.extend({
     },
     computed: {
         acceptFileExtensions() {
-            return prettyFileExtensions(this.accept, this.$t('qr.and') as string)
+            return prettyFileExtensions(this.accept, this.$t('qr.or') as string)
         }
     }
 })

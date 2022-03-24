@@ -527,6 +527,7 @@
           "invalidQR": "Geen geldige nederlandse of internationale QR-code"
         },
         "and": "en",
+        "or": "of een",
         "camera": {
           "title": "Houd de QR-code op je bewijs voor de camera",
           "description": "Zorg ervoor dat de gehele QR-code goed in beeld te zien is.",
