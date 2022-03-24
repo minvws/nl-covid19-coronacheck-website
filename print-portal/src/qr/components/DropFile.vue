@@ -5,7 +5,8 @@
             'is-pending': isPending,
             'drag-and-drop': isDragAndDrop,
             'is-over': isOver,
-            'drag': !!type
+            'drag': !!type,
+            'dialog': dialog
         }"
         @dragover.prevent.stop="isOver = true"
         @dragenter.prevent.stop="isOver = true"
@@ -71,6 +72,9 @@ export default Vue.extend({
         };
     },
     watch: {
+        dialog (dialog) {
+            this.$emit('dialog', dialog)
+        },
         isPending(isPending) {
             this.clear();
             if (isPending) this.isDurationPending = true;
@@ -153,7 +157,9 @@ $color-secondary: #F6FAFB;
     border-radius: 8px;
     background-color: $color-secondary;
     transition: background 0.3s;
-    cursor: pointer;
+    &:not(.dialog) {
+        cursor: pointer;
+    }
     &.is-pending {
         pointer-events: none;
     }

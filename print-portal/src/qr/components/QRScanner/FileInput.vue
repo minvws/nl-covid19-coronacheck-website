@@ -6,6 +6,7 @@
       type="file"
       ref="input"
       id="input"
+      :disabled="dialog"
       :accept="accept"
       @change="onFileInput"
       aria-describedby="input-description"
@@ -15,6 +16,7 @@
         class="drop"
         @file="$emit('file', $event)"
         @error="$emit('error', $event)"
+        @dialog="dialog = $event"
         v-bind="{
           isPending,
           labels,
@@ -32,6 +34,11 @@ import { LocaleMessages } from 'vue-i18n'
 export default Vue.extend({
     components: {
         DropFile
+    },
+    data () {
+        return {
+            dialog: false
+        }
     },
     props: {
         isPending: {
