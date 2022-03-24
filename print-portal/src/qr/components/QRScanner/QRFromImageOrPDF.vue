@@ -85,12 +85,24 @@ export default QRMixin.extend({
         },
         async scanPDF(file: File) {
             const images = await getImagesFromPDFFile(file)
-            const results = await Promise.all(
+            const scans = await Promise.allSettled(
                 images.map((src) => scanQR(src))
             )
-            results.forEach((result, i) => {
-                this.onAddPendingQR({ result, src: images[i] })
-            })
+            const results = scans.reduce((cul, scan, i) => {
+                const { value: result } = scan as { value: string }
+                if (result) cul.push({ result, src: images[i] })
+                return cul
+            }, [] as { result: string, src: string} [])
+            // QR found
+            if (results.length) {
+                results.forEach(result => {
+                    this.onAddPendingQR(result)
+                })
+            } else {
+                // no QR found, throw first error
+                const message = (scans as { reason: string }[]).find(({ reason }) => reason)?.reason
+                throw new Error(message);
+            }
         },
         async onScanFile(file: File) {
             if (isPDF(file)) return this.scanPDF(file)
