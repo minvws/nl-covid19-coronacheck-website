@@ -5,6 +5,7 @@
             'is-pending': isPending,
             'drag-and-drop': isDragAndDrop,
             'is-over': isOver,
+            'drag': !!type
         }"
         @dragover.prevent.stop="isOver = true"
         @dragenter.prevent.stop="isOver = true"
@@ -99,13 +100,15 @@ export default Vue.extend({
         this.clear();
     },
     computed: {
-        label() {
-            const type = this.$data.isDurationPending
+        type () {
+            return this.$data.isDurationPending
                 ? 'isPending'
                 : this.$data.isOver
                     ? 'isOver'
                     : '';
-            const label = this.labels[type] || this.labels.default;
+        },
+        label() {
+            const label = this.labels[this.type] || this.labels.default;
             return label;
         },
         isDragAndDrop() {
@@ -120,6 +123,18 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .is-over {
     background-color: #ecfafd;
+}
+.drag {
+    .icon {
+         &:after {
+            content: "";
+            background-image: url('~@/qr/assets/icons/arrow.svg');
+            top: 32px;
+            left: 8px;
+            transform: translate(-50%, -50%) rotate(90deg);
+            background-repeat: no-repeat;
+        }
+    }
 }
 
 .drop-file {
@@ -137,7 +152,7 @@ export default Vue.extend({
     }
 }
 .inner {
-    padding: 64px 0 64px 0;
+    padding: 40px 0;
 }
 
 .drag-and-drop {
@@ -181,5 +196,6 @@ export default Vue.extend({
 .label {
     font-weight: bold;
     color: #007aff;
+    margin: 8px 0;
 }
 </style>

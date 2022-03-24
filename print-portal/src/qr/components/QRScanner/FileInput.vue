@@ -81,7 +81,7 @@ export default Vue.extend({
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 20%;
+  padding-left: 20px;
 }
 
 .drop {
