@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-    name: 'PrintFaqPositiveTest',
+    name: 'PrintFaqLink',
     props: {
         label: {
             type: String,

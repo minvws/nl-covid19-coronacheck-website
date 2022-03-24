@@ -35,7 +35,15 @@
             "validUntil": "Geldig tot"
         },
         "faq": {
-            "viewFaq": "Bekijk de meestgestelde vragen"
+            "viewFaq": "Bekijk de meestgestelde vragen",
+            "recently-vaccinated": {
+                "summary": "Ben je kortgeleden gevaccineerd?",
+                "content": "<p>Dan kan het even duren tot je gegevens op te halen zijn en je een bewijs kunt maken. Probeer het later opnieuw.<\/p><p>Mist je vaccinatie na een paar dagen nog steeds? Neem dan contact op met de zorgverlener waar je bent gevaccineerd. Dat kan de GGD, je huisarts of een arts van een zorginstelling zijn. Zij kunnen je helpen je gegevens aan te passen.<\/p>"
+            },
+            "no-qr": {
+                "summary": "Heb je een bewijs, maar zonder QR-code?",
+                "content": "Je kunt helaas alleen een missende vaccinatie ophalen als je daar al een bewijs met QR-code van hebt. Kijk voor meer informatie op  <a href=\"https:\/\/www.rijksoverheid.nl\" target=\"_blank\" rel=\"noopener noreferrer\">www.rijksoverheid.nl<\/a>"
+            }
         },
         "languagePicker": {
             "changeLanguage": "Wissel van taal",
@@ -256,9 +264,18 @@
             "pageHeader": "Welk papieren bewijs wil je maken?",
             "pageIntro": ""
         },
-        "chooseAddProof": {
-            "pageHeader": "Wil je scanen of uploaden?",
-            "pageIntro": "<p>Als je een camera op je apparaat hebt, kun je jouw bewijs hiermee scannen. Of kies ervoor om je bewijs te uploaden.<\/p>"
+        "chooseDomesticQR": {
+            "pageHeader": "todo",
+            "pageIntro": ""
+        },
+        "chooseInternationalQR": {
+            "pageHeader": "Buitenlands bewijs van vaccinatie",
+            "pageIntro": "<p>Helaas kun je op dit moment met CoronaCheck nog niet de gegevens ophalen van vaccinaties die je in het buitenland hebt gehad. Binnenkort wordt dit wel mogelijk.<\/p>",
+            "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
+        },
+        "chooseNoneQR": {
+            "pageHeader": "Geen bewijs met QR-code van missende vaccinatie(s)",
+            "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
         },
         "chooseMissingVaccination": {
             "pageHeader": "Heb je al een bewijs met QR-code van de missende vaccinatie(s)?",

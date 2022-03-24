@@ -17,7 +17,7 @@ import Vue from 'vue'
 import Page from '@/components/elements/Page.vue';
 import PageIntro from '@/components/elements/PageIntro.vue';
 import QRScannerNav from '@/qr/components/QRScanner/QRScannerNav.vue'
-
+import { getPageHeaderIntro } from '@/qr/utils/QRPage'
 export default Vue.extend({
     components: {
         Page,
@@ -33,16 +33,7 @@ export default Vue.extend({
     computed: {
         intro () {
             const { name } = this.$route
-            const keys = [
-                ['head', `views.${name}.pageHeader`],
-                ['intro', `views.${name}.pageIntro`]
-
-            ]
-            return keys.reduce((cul, [key, value]) => {
-                const t = this.$t(value) as string;
-                if (value !== t) cul[key] = t
-                return cul
-            }, {} as Record<string, string>)
+            return getPageHeaderIntro(name ?? '')
         }
     }
 })

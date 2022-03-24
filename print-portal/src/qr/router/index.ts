@@ -15,7 +15,8 @@ export enum RouterNames {
     FILE = 'file',
     PROOF_DOMESTIC = 'proofDomestic',
     PROOF_INTERNATIONAL = 'proofInternational',
-    PROOF_NONE = 'proofNone'
+    PROOF_NONE = 'proofNone',
+    SCANNER_COMPLETE = 'scannerComplete'
 
 }
 const routes: Array<RouteConfig> = [
@@ -67,11 +68,30 @@ const routes: Array<RouteConfig> = [
     {
         path: '/internationaal-bewijs',
         name: RouterNames.PROOF_INTERNATIONAL,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            }
+        },
         component: QRProofInternational
     },
     {
         path: '/geen-bewijs',
         name: RouterNames.PROOF_NONE,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            }
+        },
+        component: QRProofNone
+    },
+    {
+        path: '/scanner-complete',
+        name: RouterNames.SCANNER_COMPLETE,
         component: QRProofNone
     },
     {
@@ -81,6 +101,11 @@ const routes: Array<RouteConfig> = [
     },
     {
         path: '/file',
+        name: RouterNames.FILE,
+        component: QRFromImageOrPDFPage
+    },
+    {
+        path: '/scanner-complete',
         name: RouterNames.FILE,
         component: QRFromImageOrPDFPage
     }

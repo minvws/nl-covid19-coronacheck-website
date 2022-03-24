@@ -3,9 +3,7 @@
 <Page
     @back="$router.go(-1)">
     <div class="section">
-        <PageIntro
-            :head="$t('TODO')"
-            :intro="$t('TODO')"/>
+        <PageIntro v-bind="intro"/>
         <div class="section-block">
             TODO
         </div>
@@ -18,11 +16,16 @@
 import Vue from 'vue'
 import Page from '@/components/elements/Page.vue';
 import PageIntro from '@/components/elements/PageIntro.vue';
-
+import { getPageHeaderIntro } from '@/qr/utils/QRPage'
 export default Vue.extend({
     components: {
         Page,
         PageIntro
+    },
+    computed: {
+        intro () {
+            return getPageHeaderIntro('chooseDomesticQR')
+        }
     }
 })
 </script>
