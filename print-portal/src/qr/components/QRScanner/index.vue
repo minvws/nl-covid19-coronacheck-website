@@ -164,11 +164,11 @@ export default QRMixin.extend({
             }
             try {
                 this.isStartPending = true
+                await this.qrScanner?.start()
                 if (!this.cameraId && this.cameras) {
                     await this.setCamera(this.getPreferredCamera())
                 }
                 this.state = CameraState.STARTING
-                await this.qrScanner?.start()
                 this.isStarted = true
                 this.state = CameraState.STARTED
             } catch (error: unknown) {
@@ -191,11 +191,7 @@ export default QRMixin.extend({
             }
         },
         async getCameraFromStream() {
-            if (!this.qrScanner) return null
-            const camera = await (
-                this.qrScanner as any // @FIXME type
-            )._getCameraStream()
-            const track = camera?.stream?.getVideoTracks()?.[0]
+            const track = (this.qrScanner?.$video.srcObject as MediaStream)?.getVideoTracks()?.[0]
             return this.cameras?.find(({ label }) => label === track?.label)
         },
         async setCamera({ id }: { id: string }): Promise<void> {
