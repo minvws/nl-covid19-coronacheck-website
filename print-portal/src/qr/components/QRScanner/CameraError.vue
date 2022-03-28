@@ -7,7 +7,7 @@
     </transition>
   </div>
 </template>
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import { NO_QR_CODE_FOUND } from '@/qr/utils/QRScanner'
 export default Vue.extend({

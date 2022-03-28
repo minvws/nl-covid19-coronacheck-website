@@ -6,6 +6,7 @@
         <PageIntro v-bind="intro" />
         <div class="section-block">
             <PrintFaqLink v-if="link" v-bind="{ label, ...link }"/>
+            <router-link :to="{ name: 'chooseAddProof' }"> haxor </router-link>
         </div>
     </div>
 </Page>

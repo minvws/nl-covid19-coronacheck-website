@@ -1,7 +1,12 @@
 <template>
   <div class="qr-scanner">
-    <Title :visible="isReady" id="qr.camera.title" tag="h2"/>
-    <Title :visible="isReady" id="qr.camera.description" tag="p"/>
+    <div class="coronacheck">
+        <p class="only-mobile">CoronaCeck</p>
+    </div>
+    <div class="only-desktop">
+        <Title :visible="isReady" id="qr.camera.title" tag="h2"/>
+        <Title :visible="isReady" id="qr.camera.description" tag="p"/>
+    </div>
     <CameraRender :status="state">
       <template>
         <video ref="renderer" @playing="state = ''" />
@@ -20,6 +25,12 @@
       }"
       @select="setCamera"
     />
+    <div class="title-mobile">
+        <div class="only-mobile">
+            <Title :visible="isReady" id="qr.camera.title" tag="h2"/>
+            <Title :visible="isReady" id="qr.camera.description" tag="p"/>
+        </div>
+    </div>
     <CameraCaptures
       class="py"
       :label="$t('qr.code.scanned')"
@@ -52,8 +63,7 @@ import CameraResult from './CameraResult.vue'
 import CameraRender from './CameraRender.vue'
 import CameraStatus from './CameraStatus.vue'
 import CameraCaptures from './CameraCaptures.vue'
-/* eslint-disable-next-line */ // @TODO: fix typing
-import QrScanner, { QrScannerExtend, isValidQR } from '@/qr/utils/QRScanner'
+import QrScanner, { isValidQR } from '@/qr/utils/QRScanner'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
 import Title from '@/qr/components/Title.vue'
 import qrMixin, { QRMixin } from '@/qr/mixins/qr-mixin'
@@ -237,6 +247,7 @@ export default QRMixin.extend({
 </script>
 
 <style scoped lang="scss">
+@import "@/styles/variables/typography.scss";
 .pa {
   padding: 16px 8px;
 }
@@ -262,4 +273,19 @@ export default QRMixin.extend({
     padding: 8px 0;
   }
 }
+
+.title-mobile {
+    padding-top: 2em;
+}
+
+.coronacheck {
+    display: block;
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #154273;
+    padding-bottom: 1em;
+}
+
 </style>

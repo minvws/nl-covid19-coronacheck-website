@@ -31,7 +31,7 @@
         <Dialog @close="dialog = null" v-if="dialog" v-bind="dialog" />
     </div>
 </template>
-<script lang="ts">
+<script>
 import Vue from 'vue';
 import Dialog from '@/qr/components/Dialog.vue';
 import Spinner from '@/qr/components/Spinner.vue';
@@ -65,10 +65,10 @@ export default Vue.extend({
     },
     data() {
         return {
-            timeout: -1 as any,
+            timeout: -1,
             isOver: false,
             isDurationPending: this.isPending,
-            dialog: null as null | { title: string; body: string }
+            dialog: null
         };
     },
     watch: {
@@ -90,7 +90,7 @@ export default Vue.extend({
         clear() {
             clearTimeout(this.timeout);
         },
-        onDropFile({ dataTransfer }: DragEvent) {
+        onDropFile({ dataTransfer }) {
             this.isOver = false;
             const file = dataTransfer?.files[0];
             if (!file) return;
