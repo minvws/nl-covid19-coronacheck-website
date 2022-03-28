@@ -264,6 +264,10 @@
             "pageHeader": "Welk papieren bewijs wil je maken?",
             "pageIntro": ""
         },
+        "proofIntroduction": {
+            "pageHeader": "Pak je internationale QR-code erbij",
+            "pageIntro": "<p>Scan of upload straks de <b>internationale QR-code</b> op je bewijs. Hierin staan de gegevens die nodig zijn om je missende vaccinatie op te halen.<\/p>"
+        },
         "letterCombination": {
             "pageHeader": "Vul eerst de lettercombinatie in",
             "pageIntro": "<p>Bij je bewijs heb je een apart papier met een lettercombinatie gekregen. Vul die lettercombinatie hieronder in.<\/p>",

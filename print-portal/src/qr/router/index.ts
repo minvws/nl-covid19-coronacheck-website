@@ -5,6 +5,7 @@ import QRFromImageOrPDFPage from '@/qr/pages/QRFromImageOrPDFPage.vue'
 import QRProofDomestic from '@/qr/pages/QRProofDomestic.vue'
 import QRProofInternational from '@/qr/pages/QRProofInternational.vue'
 import QRProofNone from '@/qr/pages/QRProofNone.vue'
+import QRProofIntroductionPage from '@/qr/pages/QRProofIntroductionPage.vue'
 import QRLetterCombinationPage from '@/qr/pages/QRLetterCombinationPage.vue'
 
 import i18n from '@/i18n'
@@ -17,6 +18,7 @@ export enum RouterNames {
     PROOF_DOMESTIC = 'proofDomestic',
     PROOF_INTERNATIONAL = 'proofInternational',
     PROOF_NONE = 'proofNone',
+    PROOF_INTRODUCTION = 'proofIntroduction',
     LETTER_COMBINATION = 'letterCombination',
     NO_LETTER_COMBINATION = 'noLetterCombination',
     SCANNER_COMPLETE = 'scannerComplete'
@@ -106,6 +108,18 @@ const routes: Array<RouteConfig> = [
         path: '/file',
         name: RouterNames.FILE,
         component: QRFromImageOrPDFPage
+    },
+    {
+        path: '/bewijs-start',
+        name: RouterNames.PROOF_INTRODUCTION,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.CHOOSE_ADD_PROOF
+                }
+            }
+        },
+        component: QRProofIntroductionPage
     },
     {
         path: '/geen-lettercombinatie',
