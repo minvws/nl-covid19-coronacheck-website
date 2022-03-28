@@ -5,6 +5,7 @@ import QRFromImageOrPDFPage from '@/qr/pages/QRFromImageOrPDFPage.vue'
 import QRProofDomestic from '@/qr/pages/QRProofDomestic.vue'
 import QRProofInternational from '@/qr/pages/QRProofInternational.vue'
 import QRProofNone from '@/qr/pages/QRProofNone.vue'
+import QRLetterCombinationPage from '@/qr/pages/QRLetterCombinationPage.vue'
 
 import i18n from '@/i18n'
 
@@ -16,6 +17,8 @@ export enum RouterNames {
     PROOF_DOMESTIC = 'proofDomestic',
     PROOF_INTERNATIONAL = 'proofInternational',
     PROOF_NONE = 'proofNone',
+    LETTER_COMBINATION = 'letterCombination',
+    NO_LETTER_COMBINATION = 'noLetterCombination',
     SCANNER_COMPLETE = 'scannerComplete'
 
 }
@@ -46,7 +49,7 @@ const routes: Array<RouteConfig> = [
         props: {
             routes: [
                 {
-                    name: RouterNames.PROOF_DOMESTIC,
+                    name: RouterNames.LETTER_COMBINATION,
                     ...(i18n.t('views.chooseMissingVaccination.options.domestic') as Record<string, unknown>)
                 },
                 {
@@ -105,9 +108,28 @@ const routes: Array<RouteConfig> = [
         component: QRFromImageOrPDFPage
     },
     {
-        path: '/scanner-complete',
-        name: RouterNames.FILE,
-        component: QRFromImageOrPDFPage
+        path: '/geen-lettercombinatie',
+        name: RouterNames.NO_LETTER_COMBINATION,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/lettercombinatie-invullen',
+        name: RouterNames.LETTER_COMBINATION,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.NO_LETTER_COMBINATION
+                }
+            }
+        },
+        component: QRLetterCombinationPage
     }
 ]
 

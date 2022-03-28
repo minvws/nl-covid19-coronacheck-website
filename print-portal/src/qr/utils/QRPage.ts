@@ -1,4 +1,5 @@
 import i18n from '@/i18n'
+import { TranslateResult } from 'vue-i18n'
 
 const translate = (key: string) => {
     const translation = i18n.t(key)
@@ -12,9 +13,9 @@ export const getPageHeaderIntro = (name: string) => {
     ]
     return keys.reduce((cul, [key, value]) => {
         const t = translate(value)
-        if (value !== t) cul[key] = t
+        if (t && value !== t) cul[key] = t
         return cul
-    }, {} as Record<string, string>)
+    }, {} as Record<string, TranslateResult>)
 }
 
 export const getPageLink = (name: string) => {
