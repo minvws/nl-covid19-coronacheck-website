@@ -205,8 +205,16 @@
     }
 }
 
-.footer-links--print-portal a {
-    text-decoration: underline;
+.footer-links--print-portal {
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-family: "RO Sans";
+    }
+    a {
+        text-decoration: underline;
+    }
 }
 
 .footer-links-col {
