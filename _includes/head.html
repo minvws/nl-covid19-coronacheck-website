@@ -40,7 +40,9 @@
         {% if include.in-app And include.in-app != "" And include.in-app != nil %}
             {% comment %}Don't show quick app download banner{% endcomment %}
         {% else %}
-            <meta name="apple-itunes-app" content="app-id=1549842661">
+            {% if site.version != "0g" %}
+                <meta name="apple-itunes-app" content="app-id=1549842661">
+            {% endif %}
         {% endif %}
         
         <meta property="og:site_name" content="{{ site.data.setup.scanner-social-og-site_name[page.lang] }}">
