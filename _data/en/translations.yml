@@ -92,6 +92,12 @@ footer-phone-opening-hours: 'Available Monday till Sunday 08.00 a.m. - 08.00 p.m
 
 footer-phone-mail: "Or send an e-mail to:"
 
+footer-faqpages-title: Don't see your question listed?
+
+footer-faqpages-mobiletitle: 'Call <a href="tel:08001421">0800-1421</a> (free)'
+
+footer-faqpages-mobiletext: 'If you are calling from abroad: <a href="tel:+31707503720">+31 70 750 37 20</a>.'
+
 footer-colophon: Colophon
 
 footer-attribution-logo: 'Logo of the European Commission'

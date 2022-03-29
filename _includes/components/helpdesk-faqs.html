@@ -1,0 +1,43 @@
+{% if page.layout == 'content' or page.layout == 'faq-overview' %}
+{% assign small = 'small' %}
+{% endif %}
+
+<div class="helpdesk--faqs  offset-background">
+  <div class="footer-inner"> 
+    <div class="helpdesk--faqs__content">
+        <div class="only-mobile">
+            <img src="{{ site.baseurl }}/img/phone-icon.svg" alt="" width="64" height="64">
+        </div>
+        
+        <div class="helpdesk--faqs__first">
+            <h2>{{ site.data[page.lang].translations.footer-faqpages-title }}<br />
+            <span class="only-mobile">{{ site.data[page.lang].translations.footer-faqpages-mobiletitle }}</span></h2>
+            <div class="only-mobile">
+                {{ site.data[page.lang].translations.footer-faqpages-mobiletext }}
+                {{ site.data[page.lang].translations.footer-phone-opening-hours }}
+            </div>
+            <div class="only-desktop">
+                <h3>{{ site.data[page.lang].translations.footer-phone }}</h3>
+                <p> 
+                {{ site.data[page.lang].translations.footer-phone-action }}.<br />
+                {{ site.data[page.lang].translations.footer-phone-opening-hours }}
+                </p>
+            </div>
+            <h3>{{ site.data[page.lang].translations.footer-phone-mail }}</h3>
+            <p>
+            <a href='mailto:helpdesk@coronacheck.nl'>helpdesk@coronacheck.nl</a>
+            </p>
+        </div>
+        <div class="helpdesk--faqs__last">
+            <img
+                src="{{ site.baseurl }}/img/footer-faqs.svg"
+                alt=""
+                loading="lazy"
+                class="block__image"
+                width="220"
+                height="284"
+                />
+        </div>
+     </div>
+  </div>
+</div> 

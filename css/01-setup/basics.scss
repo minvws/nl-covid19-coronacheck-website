@@ -159,7 +159,7 @@ button {
 .btn.only-mobile {
     display: none;
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 739px) {
         display: inline-block;
     }
 }
@@ -167,7 +167,7 @@ button {
 .btn.only-desktop {
     display: inline-block;
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 740px) {
         display: none;
     }
 }
