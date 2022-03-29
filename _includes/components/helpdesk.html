@@ -1,0 +1,29 @@
+{% if page.layout == 'content' or page.layout == 'faq-overview' %}
+{% assign small = 'small' %}
+{% endif %}
+
+<div class="footer-contact {{ small }} offset-background">
+  <div class="footer-contact__column-left">
+    <img src="{{ site.baseurl }}/img/phone-icon.svg" alt="" width="64" height="64">
+  </div>
+  <div class="footer-contact__column-right"> 
+
+    {% if include.in-app And include.in-app != "" And include.in-app != nil %}
+        {% if page.domain == "scanner" %}
+            <h2>{{ site.data[page.lang].translations.footer-contact-scanner-in-app-subtitle }}</h2>
+            <!-- <p>{{ site.data[page.lang].translations.footer-contact-scanner-in-app-subtitle }}</p> -->
+        {% else %}
+            <h2>{{ site.data[page.lang].translations.footer-contact-in-app-subtitle }}</h2>
+            <!-- <p>{{ site.data[page.lang].translations.footer-contact-in-app-subtitle }}</p> -->
+        {% endif %}
+    {% else %}
+            <h2>{{ site.data[page.lang].translations.footer-contact-title }}</h2>
+    {% endif %}
+    
+    <h3>{{ site.data[page.lang].translations.footer-phone }}</h3>
+    <p> 
+      {{ site.data[page.lang].translations.footer-phone-action }}.<br />
+      {{ site.data[page.lang].translations.footer-phone-opening-hours }}
+    </p>
+  </div>
+</div> 

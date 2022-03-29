@@ -9,6 +9,7 @@ import eventProviders from './modules/eventProviders';
 import signedEvents from './modules/signedEvents';
 import auth from './modules/auth';
 import qrs from './modules/qrs';
+import storage from './modules/storage';
 import { isFuture } from 'date-fns';
 
 Vue.use(Vuex)
@@ -25,19 +26,33 @@ const state = {
     signedAt: null,
     // we keep this registration for the focus of screenreaders.
     visitedHomePage: false,
-    slotModalActive: false
+    slotModalActive: false,
+    vaccinationWithPositiveTestEnabled: true // when true, show a consent and hide all faq's
 };
 
 const getters = {
     visitorPassEnabled: ({ holderConfig }) => {
         return holderConfig?.visitorPassEnabled === true
     },
-    is1G: ({ holderConfig }) => {
-        const policies = holderConfig?.disclosurePolicy
-        if (Array.isArray(policies) && policies.length === 1) {
-            return policies[0].toUpperCase() === '1G'
+    disclosurePolicies: ({ holderConfig }) => {
+        return holderConfig?.disclosurePolicies
+    },
+    isPolicy: (state, { disclosurePolicies }) => policy => {
+        if (Array.isArray(disclosurePolicies) && disclosurePolicies.length === 1) {
+            return disclosurePolicies[0].toUpperCase() === policy.toUpperCase()
         }
         return false
+    },
+    vaccinationWithPositiveTestEnabled: ({ vaccinationWithPositiveTestEnabled }) => {
+        return vaccinationWithPositiveTestEnabled
+    },
+    is0G: (state, { disclosurePolicies }) => {
+        // 0G when disclosurePolicies = []
+        return Array.isArray(disclosurePolicies) && !disclosurePolicies.length
+    },
+    is1G: (state, { isPolicy }) => {
+        // 1G when disclosurePolicies = ['1G']
+        return isPolicy('1G');
     },
     isUserConsentDisabledOnHome: ({ isUserConsentDisabledOnHome }) => {
         return isUserConsentDisabledOnHome
@@ -50,6 +65,9 @@ const getters = {
     },
     getTestManufacturer: (state) => (testManufacturerCode) => {
         return state.holderConfig.euTestManufacturers.find(euTestManufacturer => euTestManufacturer.code === testManufacturerCode)
+    },
+    euTestName: ({ holderConfig: { euTestNames } }) => (code) => {
+        return euTestNames.find(({ code: target }) => target === code)?.name
     },
     getVaccineType: (state) => (vaccineTypeCode) => {
         return state.holderConfig.euVaccinations.find(euVaccination => euVaccination.code === vaccineTypeCode)
@@ -134,7 +152,6 @@ export default new Vuex.Store({
     state,
     getters,
     mutations,
-    actions: {},
     modules: {
         modal,
         snackbar,
@@ -143,6 +160,7 @@ export default new Vuex.Store({
         eventProviders,
         signedEvents,
         qrs,
-        auth
+        auth,
+        storage
     }
 })

@@ -7,42 +7,23 @@
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
 {% include open-source-comment.html %}
 {% include head.html %}
-<body>
+<body class="content-{{ site.version }}">
   {% include header.html %}
   <main id="content"> 
- 
-    {% assign announcement-errors = site.announcements | where:"lang", page.lang | where:"style", "error" %}
-    {% if announcement-errors.size != 0 %}
-        {% for announcement in announcement-errors %}
-        <div class="announcement offset-background">
-          {% if announcement.title == ''  %}
-            <h2 class="screen-reader-text">Belangrijke mededeling</h2>
-          {% else %}
-            <h2>{{ announcement.title }}</h2>
-          {% endif %}
-          {{ announcement.content }}
-        </div>
-        {% endfor %}
-      </div> 
-    {% endif %}
 
-    {% assign announcement-info = site.announcements | where:"lang", page.lang | where:"style", "info" %}
-    {% if announcement-info.size != 0 %}
-        {% for announcement in announcement-info %}
-        <div class="banner offset-background">
-          {% if announcement.title != '' %}<h2>{{ announcement.title }}</h2>{% endif %}
-          {{ announcement.content }}
-        </div>
-        {% endfor %}
-      </div> 
-    {% endif %}
+    {% include components/announcements.html  %}
     
-    {% include components/user-instructions.html %}
-    {% include components/print-version.html %}
-    {% include components/about-coronacheck-scanner.html %}
+    {% include components/how-does-coronacheck-work.html  %} 
 
-    {% include components/information.html %}
+    {% if site.version != "0g" %}
+        {% include components/grant-access-with-coronacheck-scanner.html  %}
+    {% endif %}
+
     {% include components/faq.html for="coronacheck" %}
+
+    {% include components/helpdesk.html %}
+
+    {% include components/coronamelder.html %}
 
   </main>
   {% include footer.html %}

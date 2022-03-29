@@ -4,13 +4,9 @@ scanner-app-name: CoronaCheck Scanner
     
 header-skip-to-content: Skip to content
     
-header-title: Get access with the CoronaCheck-app
+header-button-download-app: Download the app
 
-header-subtitle: With this app, you are able to prove you've been vaccinated, you’ve had corona or that you’ve recently tested negative for corona. You can use CoronaCheck to get access to certain places. And to travel to other countries. 
-
-scanner-header-title: Allow access with CoronaCheck Scanner 
-
-scanner-header-subtitle: With CoronaCheck Scanner you check the validity of the visitor’s vaccination record, recovery or negative test result. And also if the data on your screen matches the data on the proof of identity. You can use CoronaCheck Scanner to check if a visitor can get access to certain locations or activities.
+header-button-paper-certificate: Create paper certificate
 
 coronacheck-scanner-linktext: Scanner
 
@@ -82,7 +78,7 @@ scanner-lead-title: Download the CoronaCheck Scanner app
 
 footer-attribution: 'Made possible by:'
 
-footer-contact-title: Don't see your question listed? <br />Contact our helpdesk.
+footer-contact-title: Don't see your question listed? <br />Contact our helpdesk
 
 footer-contact-in-app-subtitle: Don't see your question listed? Check <a href="https://www.coronacheck.nl/en/faq" target="_blank">all most frequently asked questions</a> or contact the helpdesk.
 
@@ -94,8 +90,6 @@ footer-phone-action: '<a href="tel:08001421">0800-1421</a> (free). Or if you are
   
 footer-phone-opening-hours: 'Available Monday till Sunday 08.00 a.m. - 08.00 p.m.'
   
-footer-phone-mail: 'Or send an e-mail to:'
-    
 footer-colophon: Colophon
 
 footer-attribution-logo: 'Logo of the European Commission'
@@ -140,14 +134,6 @@ error-back-to-faq: Go to frequently asked questions
     
 accessibility-in-app-email-subject: Problem with using the app
       
-information-title: 'This is how we handle your data:'
-  
-information-qrcode: The QR code contains a minimum amount of data
-    
-information-naw: Your data is not centrally stored anywhere
-  
-information-gps: Your location data is not used or saved
-
 scanner-information-title: Acceptable use policy
 
 scanner-information-qrcode: The QR code contains a minimum amount of data of the visitor
@@ -184,33 +170,14 @@ mediaelement-download-mp3-voiceover: MP3-audio (voiceover)
 mediaelement-download-subtitle: Subtitle
 
 mediaelement-transcript-title: Written out text of the video
-  
-user-instructions-title: How does it work?
 
-coronacheck-howto-step-1-title: 1. Get tested or vaccinated
+coronacheck-howto-url: /en/faq/1-1-hoe-werkt-de-coronacheck-app/
 
-coronacheck-howto-step-1-content: |
-  For access, some countries and places ask for a vaccination certificate or a result of a corona test. 
+coronacheck-howto-link: Read more about the coronavirus pass
 
-coronacheck-howto-step-2-title: 2. Make a QR code
+grant-access-with-coronacheck-scanner-url: /en/scanner
 
-coronacheck-howto-step-2-content: |
-  This app generates a QR code for the Netherlands and one for other countries. This is your certificate.
-
-coronacheck-howto-step-3-title: 3. Show your QR code
-
-coronacheck-howto-step-3-content: |
-  Show both your QR code and your proof of identity at the entrance of the location you're visiting. And when you travel to other countries. 
-
-print-version-title: Prefer a certificate on paper?
- 
-print-version-content: A certificate on paper is convenient if you don’t have a smartphone. You can make a certificate from a vaccination and/or a test result. <a href="/en/faq#paper-certificate">Read more here<span class="screen-reader-text"> about a certificate on paper</span></a>.
-
-print-version-url-linktext: Make certificate on paper
-
-about-coronacheck-scanner-title: CoronaCheck Scanner
-
-about-coronacheck-scanner-content: <p>Would you like to find out how you can use CoronaCheck to allow visitors access to your event?</p><p><a href="/en/scanner" class="btn btn--cta" target="_blank">View the Scanner app</a></p> 
+grant-access-with-coronacheck-scanner-link: Read more about CoronaCheck Scanner
 
 status-block-title: View the actual status of CoronaCheck
 
@@ -256,3 +223,11 @@ scanner-howto-step-3-content: |
 dashboard-noscript-title: JavaScript required
 
 dashboard-noscript-description: This dashboard uses JavaScript. Please enable JavaScript and try again, or try in a different browser.
+
+coronamelder-title: Use CoronaMelder too
+
+coronamelder-content: The CoronaMelder app helps detect and stop infections faster. This way we can prevent the spread of coronavirus.
+
+coronamelder-url: https://www.coronamelder.nl/en
+
+coronamelder-link: Read more about CoronaMelder

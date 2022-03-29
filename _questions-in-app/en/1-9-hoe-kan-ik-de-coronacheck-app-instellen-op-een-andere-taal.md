@@ -2,6 +2,10 @@
 set: 1
 index: 9
 title: How can I change the language of the CoronaCheck-app?
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 ## In iOS:
 

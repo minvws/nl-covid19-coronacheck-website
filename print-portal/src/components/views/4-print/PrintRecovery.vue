@@ -1,10 +1,14 @@
 <script>
 import Print from './Print';
-
+import { events as StorageEvent } from '@/store/modules/storage'
+import { FilterTypes } from '@/types/filter-types'
 export default {
     name: 'PrintRecovery',
     components: { Print },
     computed: {
+        type () {
+            return this.$store.getters[StorageEvent.WITH_POSITIVE_TEST_FLOW] ? FilterTypes.VACCINATION : FilterTypes.RECOVERY;
+        },
         recoveryValidInFuture() {
             const today = new Date().getTime();
             const proof = this.$store.state.qrs.proof;
@@ -43,7 +47,7 @@ export default {
     <div class="PrintRecovery">
         <Print
             @back="back"
-            :type="'recovery'"
+            :type="type"
             :valid-in-future="recoveryValidInFuture">
         </Print>
     </div>

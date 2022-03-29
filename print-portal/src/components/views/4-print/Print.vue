@@ -24,6 +24,16 @@ export default {
         }
     },
     computed: {
+        is0G () {
+            return this.$store.getters.is0G;
+        },
+        vaccinationWithPositiveTestEnabled () {
+            return this.$store.getters.vaccinationWithPositiveTestEnabled;
+        },
+
+        showPrintFaq () {
+            return !this.is0G && !this.vaccinationWithPositiveTestEnabled;
+        },
         regionTypes () {
             return RegionTypes;
         },
@@ -82,8 +92,9 @@ export default {
             if (this.isShortStay) {
                 return this.$t('views.print.pageIntro.short-stay');
             }
+            const type = this.is0G ? '0G' : this.regionType
 
-            let copy = this.$t('views.print.pageIntro.' + this.regionType, { type: this.proofTypeCopy });
+            let copy = this.$t(`views.print.pageIntro.${type}`, { type: this.proofTypeCopy });
             if (this.validInFuture) {
                 copy += this.$t('views.print.validInFuture');
             }
@@ -109,13 +120,17 @@ export default {
             <PageIntro
                 :head="pageHeaderCopy"
                 :intro="pageIntroCopy"/>
-            <div class="section-block">
+            <div
+                v-if="showPrintFaq"
+                class="section-block">
                 <PrintFaq
-                :type="type"
-                :exclude="exclude"
-                :region-type="regionType"/>
+                    :type="type"
+                    :exclude="exclude"
+                    :region-type="regionType"/>
             </div>
-            <div class="proof-regions">
+            <div
+                class="proof-regions"
+                :class="{ 'has-faq': showPrintFaq }">
                 <ProofRegion
                     v-if="hasDomestic"
                     :proof="proof.domestic"
@@ -138,7 +153,11 @@ export default {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-top: $grid-x8;
+
+        &.has-faq {
+            margin-top: $grid-x8;
+        }
+
         @include tablet-custom() {
             flex-direction: column;
             .ProofRegion {

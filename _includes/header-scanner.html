@@ -1,0 +1,49 @@
+<header>
+    <div class="skiplinks">
+        <a href="#content">
+        {{ site.data[page.lang].translations.header-skip-to-content }}
+        </a>
+    </div>
+    <div class="header offset-background">
+        <div class="header__homelink">
+            <a href="/{{ page.lang }}">{{ site.data[page.lang].translations.head-app-name }}</a>
+        </div>      
+    
+        <div class="logobar">
+            <div class="logo">
+                <a href="{{ langSlug }}">
+                <img src="{{ site.baseurl }}/img/logo-RO.svg" alt="{{ site.data.setup.govlogo[page.lang] }}" width="40" height="80">
+                </a>
+            </div>
+        
+            {% if site.version != "0g" %}
+                <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
+                {{ site.data[page.lang].translations.faq }}</a>
+            {% endif %}
+        
+            {% include components/language-picker.html headertype="default" %}
+        </div>
+        <div class="container">
+            <div class="header__layout header__layout--scanner">
+                <div class="header__layout--image">
+                    {% if site.version == "0g" %}
+                        <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-out-of-order[page.lang] }}" alt="" width="74" height="150">
+                    {% else %}
+                        <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
+                    {% endif %}
+                </div>
+
+                <div class="header__layout--content">
+                    <h1 class="header__title">
+                        {{ site.data[page.lang][site.version].scanner-header-title }}
+                    </h1>
+                    <p>{{ site.data[page.lang][site.version].scanner-header-subtitle }}</p>
+                    
+                    {% if site.version != "0g" %}
+                        {% include components/scanner-badges.html %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -6,6 +6,9 @@ featuredHome: true
 featuredHomeIndex: 2
 redirect_from: 
   - /nl/faq-scanner/4-mag-ik-iemand-zonder-geldig-testbewijs-binnen-laten
+whichversion:
+  - 1g
+  - 3g
 ---
 Nee, de bezoeker moet altijd een geldig coronabewijs en een identiteitsbewijs laten zien.
 

@@ -4,10 +4,6 @@
 {%- endif -%}
 
 <footer> 
-    {% if page.showContact  %}
-        {% include footer-phone.html %}
-    {% endif %} 
-    
     <div class="footer">
         <div class="footer-inner">
             <div class="footer-links">
@@ -48,7 +44,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ langSlug}}{{ site.data[page.lang].translations.footer-misc-colofon-url }}">
+                            <a href="{{ langSlug}}{{ site.data.setup.footer-misc-colofon-url }}">
                                 {{ site.data[page.lang].translations.footer-misc-colofon }}
                                 
                             </a>
@@ -77,7 +73,7 @@
                         <li><a href="{{ site.data.setup.footer-status-url[page.lang] }}">{{ site.data[page.lang].translations.footer-status }}</a></li>
                         <li><a href="{{ langSlug }}{{ site.data.setup.footer-wegwijzer-url[page.lang] }}">{{ site.data[page.lang].translations.footer-wegwijzer }}</a></li>
                         <li>{{ site.data.links.wijsopreis[page.lang] }}</li>
-                        <li><a href="{{ site.data.setup.footer-more-info-url[page.lang] }}" target="_blank" rel="noopener noreferrer">{{ site.data[page.lang].translations.footer-more-info }} </a></li>
+                        <li><a href="{{ site.data.setup.footer-more-info-url }}" target="_blank" rel="noopener noreferrer">{{ site.data[page.lang].translations.footer-more-info }} </a></li>
                     </ul>
                 </div>
             

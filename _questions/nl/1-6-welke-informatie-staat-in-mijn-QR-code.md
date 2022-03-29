@@ -2,12 +2,11 @@
 set: 1
 index: 6
 title: Welke informatie staat in mijn QR-code? 
-redirect_from: 
-  - /nl/faq/18-welke-informatie-staat-in-mijn-qr-code
-  - /nl/faq/16-hoe-worden-mijn-gegevens-gebruikt/
-  - /nl/faq/17-wat-ziet-de-controleur-na-scannen-van-mijn-qr-code/
 featuredHome: true
 featuredHomeIndex: 5
+whichversion:
+  - 1g
+  - 3g
 ---
 ### De Nederlandse QR-code
 De controleur ziet bij een Nederlandse QR-code slechts minimale gegevens op zijn of haar scherm:
@@ -23,7 +22,7 @@ De controleur kan niet zien welk soort bewijs iemand heeft. Om je identiteit te 
 Vanwege privacy ziet de controleur niet altijd al deze gegevens. Het kan dus zijn dat een van uw initialen is weggelaten en is vervangen door een "-" (streepje).
 
 ### De internationale QR-code
-Als je op reis gaat met de CoronaCheck, worden er bij controles bij de ingang van locaties of bij grenscontroles meer gegevens zichtbaar. Dit is afgesproken binnen Europa (Digitaal Corona Certificaat). 
+Als je op reis gaat met de CoronaCheck, worden er bij controles bij de ingang van locaties of bij grenscontroles gegevens zichtbaar. Dit is afgesproken binnen Europa (Digitaal Corona Certificaat). 
 
 Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
 

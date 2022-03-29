@@ -61,11 +61,11 @@
     padding-right: 14px;
     border-bottom: rgba(0, 39, 131, 0.3) 1px solid;
 
-    ::-webkit-details-marker {
+    ::marker {
         color: rgba(0, 39, 131, 0.6);
     }
 
-    &:hover::-webkit-details-marker {
+    &:hover::marker {
         color: rgba(0, 39, 131, 0.84);
     }
 
@@ -94,7 +94,7 @@
     summary {
         list-style-type: none;
     } /* Firefox */
-    summary::-webkit-details-marker {
+    summary::marker {
         display: none;
     } /* Chrome */
     summary::marker {

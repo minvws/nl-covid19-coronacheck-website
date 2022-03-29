@@ -5,8 +5,9 @@ title: How does the CoronaCheck app work?
 featuredHome: true
 featuredHomeIndex: 1
 featuredHomeIcon: app-touch
-redirect_from: 
-  - /en/faq-in-app/1-hoe-werkt-de-coronacheck-app
+whichversion:
+  - 1g
+  - 3g
 ---
 Entering certain locations, activities, and countries requires a coronavirus pass. Is this the case for the location you’re visiting? Then follow these steps:
 

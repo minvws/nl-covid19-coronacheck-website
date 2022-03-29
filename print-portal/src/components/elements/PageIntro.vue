@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss">
     h1 {
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: 1.21875;
         margin-bottom: 24px;
     }
@@ -55,5 +55,10 @@ export default {
         a {
             text-decoration: underline;
         }
+    }
+
+    h3 {
+        margin-top: 40px;
+        font-size: 1.125rem;
     }
 </style>

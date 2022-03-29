@@ -2,6 +2,10 @@
 set: 7
 index: 4
 title: Moet ik het coronatoegangsbewijs gebruiken voor onze locatie of ons evenement, en hoe werkt dat dan?
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Of het coronatoegangsbewijs gebruikt moet of kan worden hangt af van het type van jouw locatie of evenement. 
 

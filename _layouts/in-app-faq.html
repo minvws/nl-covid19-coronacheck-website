@@ -37,11 +37,13 @@
             <div class="faq-layout__contents __overview">
                 <ul class="faq-layout-contents__list">
                 {% for question in questionSetOne %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                            {{ question.title }}
-                        </a>
-                    </li>
+                    {% if question.whichversion contains site.version %}
+                        <li>
+                            <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                                {{ question.title }}
+                            </a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
                 </ul>
             </div>
@@ -54,11 +56,13 @@
                 <div class="faq-layout__contents __overview">
                     <ul class="faq-layout-contents__list">
                     {% for question in questionSetEight %}
-                        <li>
-                            <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                                {{ question.title }}
-                            </a>
-                        </li>
+                        {% if question.whichversion contains site.version %}
+                            <li>
+                                <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                                    {{ question.title }}
+                                </a>
+                            </li>
+                        {% endif %}
                     {% endfor %}
                     </ul>
                 </div>
@@ -71,11 +75,13 @@
             <div class="faq-layout__contents __overview">
                 <ul class="faq-layout-contents__list">
                 {% for question in questionSetTwo %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                            {{ question.title }}
-                        </a>
-                    </li>
+                    {% if question.whichversion contains site.version %}
+                        <li>
+                            <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                                {{ question.title }}
+                            </a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
                 </ul>
             </div>
@@ -87,11 +93,13 @@
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
                 {% for question in questionSetThree %}
-                    <li>
-                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                        {{ question.title }}
-                    </a>
-                    </li>
+                    {% if question.whichversion contains site.version %}
+                        <li>
+                            <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                                {{ question.title }}
+                            </a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
                 </ul>
             </div>
@@ -105,12 +113,12 @@
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
                 {% for question in questionSetFour %}
-                {% if question.set == 4  %}
-                    <li>
-                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                        {{ question.title }}
-                    </a>
-                    </li>
+                    {% if question.whichversion contains site.version %}
+                        <li>
+                            <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                                {{ question.title }}
+                            </a>
+                        </li>
                     {% endif %}
                 {% endfor %}
                 </ul>
@@ -123,11 +131,13 @@
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
                 {% for question in questionSetFive %}
-                    <li>
-                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                        {{ question.title }}
-                    </a>
-                    </li>
+                    {% if question.whichversion contains site.version %}
+                        <li>
+                            <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                                {{ question.title }}
+                            </a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
                 </ul>
             </div>
@@ -139,11 +149,13 @@
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
                 {% for question in questionSetSix %}
-                    <li>
-                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                        {{ question.title }}
-                    </a>
-                    </li>
+                    {% if question.whichversion contains site.version %}
+                        <li>
+                            <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                                {{ question.title }}
+                            </a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
                 </ul>
             </div>
@@ -155,11 +167,13 @@
             <div class="faq-layout__contents __overview" {% if question.lang != 'ar' %}dir="ltr"{% endif %}>
                 <ul class="faq-layout-contents__list">
                 {% for question in questionSetSeven %}
-                    <li>
-                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                        {{ question.title }}
-                    </a>
-                    </li>
+                    {% if question.whichversion contains site.version %}
+                        <li>
+                            <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                                {{ question.title }}
+                            </a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
                 </ul>
             </div>
@@ -169,7 +183,7 @@
     </div>
   </main>
     
-  {% include footer-phone.html in-app="true" %}
+  {% include components/helpdesk.html in-app="true" %}
   <br />
 
 </body>

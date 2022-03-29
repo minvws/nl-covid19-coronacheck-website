@@ -7,17 +7,19 @@
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
 {% include open-source-comment.html %}
 {% include head.html for="scanner" %}
-<body>
-  {% include header.html for="scanner" %}
-  <main id="content">
-    {% include components/scanner-quicklinks.html %}
+<body class="scanner-{{ site.version }} content-{{ site.version }}">
+  {% include header-scanner.html  %}
+      {% if site.version != "0g" %}
+        <main id="content">
+            {% include components/scanner-quicklinks.html version="1g" %}
 
-    {% include components/faq.html for="scanner" %}
+            {% include components/faq.html for="scanner" version="1g" %}
 
-    {% include components/scanner-information.html %}
-    
-    {% include components/scanner-badges.html class="layout-app-badges--center-wrap" %}
-  </main>
+            {% include components/scanner-badges.html class="layout-app-badges--center-wrap" %}
+
+            {% include components/helpdesk.html for="scanner" %}
+        </main>
+      {% endif %}
   {% include footer.html  for="scanner" %}
 </body>
 </html>

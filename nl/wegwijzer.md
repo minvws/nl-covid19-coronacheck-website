@@ -18,7 +18,7 @@ CoronaCheck wordt ondertussen door veel mensen gebruikt om een vaccinatie, herst
 <div markdown="1">
 Op dit moment worden vaccinatiebewijzen niet gebruikt in Nederland. Daarom kun je nu met CoronaCheck alleen een vaccinatiebewijs maken dat internationaal geldig is. 
 
-Een internationaal vaccinatiebewijs krijg je al na één vaccinatie. Een volledig vaccinatiebewijs is 270 dagen geldig. Zodra je een nieuwe (booster)vaccinatie hebt gehad kun je deze zelf toevoegen door opnieuw in te loggen met DigiD. Voor de boostervaccinatie is nog geen geldigheid vastgesteld. Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Let op: de regels kunnen verschillen per land. Check {{ site.data.links.wijsopreis[page.lang] }} om te zien welke regels er gelden op jouw bestemming.
+Een internationaal vaccinatiebewijs krijg je al na één vaccinatie. Een volledig vaccinatiebewijs is over het algemeen 270 dagen geldig. Zodra je een nieuwe (booster)vaccinatie hebt gehad kun je deze zelf toevoegen door opnieuw in te loggen met DigiD. Voor de boostervaccinatie is nog geen geldigheid vastgesteld. Voor kinderen tot 18 jaar is een volledig vaccinatiebewijs geldig voor onbepaalde tijd. Hier is geen boosterprik voor nodig. Let op: de regels kunnen verschillen per land. Check {{ site.data.links.wijsopreis[page.lang] }} om te zien welke regels er gelden op jouw bestemming.
 
 CoronaCheck haalt gegevens over vaccinaties op bij de systemen van het RIVM, de GGD en ziekenhuizen. Andere vaccinatiezetters, zoals huisartsen en andere zorgverleners, hebben je vaccinatiegegevens doorgegeven aan het RIVM. Dit doen zij alleen als je hier toestemming voor hebt gegeven. Vaccinatiegegevens kan je ophalen in de app. [Lees hier hoe je je vaccinatiegegevens kan ophalen](/nl/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
@@ -117,7 +117,7 @@ Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit
 
 {% capture copy_geen_internationaal_herstelbewijs %}
 <div markdown="1"> 
-In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test, en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeentest.
+In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test, en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. {% if site.version != "0g" %}Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeentest.{% endif %}
 
 ### Ben jij vóór 8 september getest bij een andere testlocatie dan de GGD?
 
@@ -127,14 +127,15 @@ Bij de positieve testresultaten van voor 8 september 2021 is het type test niet 
 
 {% capture copy_testbewijs %}
 <div markdown="1">
-Alleen testuitslagen van testlocaties die aangesloten zijn bij CoronaCheck kunnen worden omgezet in een coronabewijs. 
-Meer informatie over testbewijzen vind je op {{ site.data.links.rijksoverheid-tvt[page.lang] }} en op {{ site.data.links.testbewijs[page.lang] }}.  
+Alleen testuitslagen van testlocaties die aangesloten zijn bij CoronaCheck kunnen worden omgezet in een coronabewijs. Meer informatie over testbewijzen vind je op {{ site.data.links.testenvoorjereis[page.lang] }}.
 
 ### Negatief getest bij de GGD
 Het kan tot 30 uur duren alvorens de uitslag van een test beschikbaar is. Vanaf het moment dat de GGD de uitslag heeft (dat kun je zien via {{ site.data.links.coronatest[page.lang] }}) duurt het nog een aantal uur voordat de gegevens zijn op te halen met CoronaCheck). Als je testuitslag al wel in {{ site.data.links.coronatest[page.lang] }} beschikbaar is, maar na 30 uur na testafname nog niet in de CoronaCheck-app, neem dan contact op met de GGD op {{ site.data.links.phone-ggd[page.lang] }}.
 
+{% if site.version != "0g" %}
 ### Testen voor toegang
 Wil je gebruik maken van een coronabewijs voor toegang tot evenementen en locaties binnen Nederland? Hiervoor kun je terecht bij {{ site.data.links.testen-voor-toegang[page.lang] }} ({{ site.data.links.phone-tvt-helpdesk[page.lang] }}). Hier vind je ook alle relevante informatie en kun je een afspraak maken. Wanneer je naar een evenement of locatie gaat, waar een bewijs van een negatieve coronatest voor nodig is, geeft de organisatie je meestal ook informatie, bijvoorbeeld op het ticket, in een bevestigingsmail of op de website.
+{% endif %}
 </div>
 {% endcapture %}
 
@@ -150,9 +151,9 @@ Deze ophaalcode bestaat uit een lange reeks van letters en cijfers (bv BRB-YYYYY
 
 - Jouw test moet nog verwerkt worden.
 - Je email adres is niet correct of wellicht is de mail in uw spambox terechtgekomen.
-- Er is een probleem bij de testlocatie in het doorgeven van de uitslag. Kijk op {{ site.data.links.testen-voor-toegang[page.lang] }} of er storingen bekend zijn bij testlocaties.
+- Er is een probleem bij de testlocatie in het doorgeven van de uitslag. Neem contact op met de locatie waar je bent getest. 
 
-Neem contact op met de locatie waar je bent getest. Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+{% if site.version != "0g" %}Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.{% endif %}
 </div>
 {% endcapture %}
 
@@ -163,7 +164,7 @@ De verificatiecode (per SMS of e-mail) moet normaliter binnen een minuut binnenk
 - In het geval je aanbieder de verificatiecode per email stuurt, controleer dan ook je spam-folder.
 - Heb je wellicht een buitenlands telefoonnummer doorgegeven? Het komt sporadisch voor dat SMS berichten naar buitenlandse nummers niet doorkomen.
 
-Neem contact op met de locatie waar je bent getest. Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+Neem contact op met de locatie waar je bent getest. {% if site.version != "0g" %}Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.{% endif %}
 </div>
 {% endcapture %}
 
@@ -174,7 +175,7 @@ Neem contact op met de locatie waar je bent getest om je gegevens te laten wijzi
 
 Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }}.
 
-Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+{% if site.version != "0g" %}Ben je getest bij Testen voor Toegang? Neem dan contact op met hun helpdesk via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.{% endif %}
 </div>
 {% endcapture %}
 
@@ -184,7 +185,7 @@ Zegt de app dat er geen bewijs gemaakt kan worden? Mogelijk klopt er dan iets ni
 
 Ben je bij de GGD getest dan kun je bellen met hun backoffice op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten corrigeren. 
 
-Ben je via Testen voor Toegang getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.
+{% if site.version != "0g" %}Ben je via Testen voor Toegang getest? Neem contact op met de helpdesk van Testen voor Toegang via {{ site.data.links.phone-tvt-helpdesk[page.lang] }}.{% endif %}
 </div>
 {% endcapture %}
 
@@ -388,6 +389,7 @@ Ben je vaker positief getest waarvan de eerste keer vóór je eerste prik, maar 
 {{ copy_printbewijs }}
 </details>
 
+{% if site.version == "3g" %}
 <details class="details" id="visitor">
 <summary><h2>Ik wil een bezoekersbewijs maken</h2></summary>
 {{ copy_bezoekersbewijs }}
@@ -408,6 +410,7 @@ Ben je vaker positief getest waarvan de eerste keer vóór je eerste prik, maar 
 </details>
 
 </details>
+{% endif %}
 
 <details class="details" id="digid">
 <summary><h2>Ik kan niet inloggen met DigiD</h2></summary>

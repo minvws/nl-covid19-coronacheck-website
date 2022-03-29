@@ -2,6 +2,9 @@
 set: 1
 index: 3
 title: Wat heb ik nodig om CoronaCheck te gebruiken?
+whichversion:
+  - 1g
+  - 3g
 ---
 Om het coronabewijs van jouw bezoekers te kunnen scannen, heb je de CoronaCheck Scanner-app nodig. Medewerkers kunnen de CoronaCheck Scanner-app downloaden in de [Apple App Store](https://apps.apple.com/nl/app/coronacheck/id1548269870) (iPhone) of op [Google Play Store](https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder) (Android). Daarmee kunnen zij bij de ingang de QR-codes van bezoekers scannen.
 

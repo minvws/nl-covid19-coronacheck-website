@@ -2,11 +2,9 @@
 set: 2
 index: 1
 title: Ik wil mij laten testen, waar kan ik terecht?
-redirect_from: 
-    - /nl/faq-in-app/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
-    - /nl/faq-in-app/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
-featuredHome: true
-featuredHomeIndex: 3
+whichversion:
+  - 1g
+  - 3g
 ---
 ## Testen voor toegang in Nederland
 
@@ -21,9 +19,8 @@ Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, b
 
 ## Overige aangesloten testlocaties:
 
-
 - <a href="https://www.medicorps.nl/" rel="noopener noreferrer" target="_blank" hreflang="nl">MediCorps</a>
-- <a href="https://testservice.nl"  rel="noopener noreferrer" target="_blank" hreflang="nl" hreflang="nl">Health Services The Netherlands B.V.</a>
+- <a href="https://testservice.nl"  rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Health Services The Netherlands B.V.</a>
 - <a href="https://www.howareyoudiagnostics.com"  rel="noopener noreferrer" target="_blank" hreflang="nl">HOW ARE YOU DIAGNOSTICS</a>
 - <a href="https://www.coronasneltestnederland.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Bobeldijk V.A.W. B.V.</a>
 - <a href="https://www.testsnelcovid.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Covid Testcentrum Amstelland B.V.</a>

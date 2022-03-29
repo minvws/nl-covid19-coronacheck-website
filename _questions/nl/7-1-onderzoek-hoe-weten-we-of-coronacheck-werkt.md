@@ -6,6 +6,10 @@ redirect_from:
   - /nl/faq/30-onderzoek-hoe-weten-we-of-coronacheck-werkt
   - /nl/faq/6-2-onderzoek-hoe-weten-we-of-coronacheck-werkt
 webonly: true
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 Het geprinte testbewijs en de apps CoronaCheck en [CoronaCheck Scanner](/nl/scanner) worden doorlopend onderzocht. Dat doet een team van experts met verschillende disciplines. Dit gaat zowel om kwantitatief als kwalitatief onderzoek en richt zich op de doelstellingen van CoronaCheck. Meer informatie kun je in onderstaande factsheet vinden.
 

@@ -8,6 +8,9 @@ redirect_from:
   - /en/faq-in-app/17-wat-ziet-de-controleur-na-scannen-van-mijn-qr-code/
 featuredHome: true
 featuredHomeIndex: 5
+whichversion:
+  - 1g
+  - 3g
 ---
 ### The Dutch QR code
 In case of a Dutch QR code, the inspector only sees a minimal amount of information on their screen:
@@ -23,7 +26,7 @@ The inspector is unable to see which type of certificate a person has. When they
 Due to privacy the controller won’t always see all the details above. When details are left out, they are replaced by a "-" (dash).
 
 ### The international QR code
-If you’re traveling with the CoronaCheck app, more personal details are visible during checks at location entrances or border controls. This is due to an official agreement within Europe (Digital Coronavirus Certificate). 
+If you’re traveling with the CoronaCheck app, personal details are visible during checks at location entrances or border controls. This is due to an official agreement within Europe (Digital Coronavirus Certificate). 
 
 Depending on the certificate, the inspector sees:
 

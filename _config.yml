@@ -1,4 +1,11 @@
+## Default config file used by Github Pages, copy the config from one of the other config files to use:
+## _config-0g
+## _config-1g
+## _config-3g
+
 repo: minvws/nl-covid19-notification-app-website
+
+version: 0g
 
 collections:
   questions:
@@ -84,6 +91,7 @@ defaults:
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
+      published: false
   -
     scope:
       path: "_questions-scanner/en"
@@ -97,6 +105,7 @@ defaults:
       showBreadCrumbs: true
       showContact: true
       showOnFAQoverview: true
+      published: false
   -
     scope:
       path: "_questions-scanner-in-app/en"
@@ -111,6 +120,7 @@ defaults:
       showContact: true
       showOnFAQoverview: true
       webonly: false
+      published: false
   -
     scope:
       path: "_questions-scanner-in-app/nl"
@@ -125,6 +135,7 @@ defaults:
       showContact: true
       showOnFAQoverview: true
       webonly: false
+      published: false
 
 sass:
   style: compressed
@@ -164,4 +175,3 @@ plugins:
   # - "jekyll-seo-tag"
 
 incremental: false
-

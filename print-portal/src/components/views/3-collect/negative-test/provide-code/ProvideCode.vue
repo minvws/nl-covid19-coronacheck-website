@@ -268,6 +268,9 @@ export default {
                             provider_identifier: this.testProviderIdentifier
                         });
                         switch (errorCause) {
+                        case 'result_blocked':
+                            this.testCodeStatus.error = this.translate('resultBlocked');
+                            break;
                         case 'invalid_token':
                             this.testCodeStatus.error = this.translate('invalidTestCode');
                             break;

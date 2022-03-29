@@ -2,31 +2,31 @@
 {%- if page.lang -%}
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang | append: '/' -%}
 {%- endif -%}
-
+ 
 {% if include.for == "coronacheck" %}
-  {% assign questions = site.questions | where:"lang", page.lang | where:"featuredHome", true  | sort: "featuredHomeIndex" %}
+    {% assign questions = site.questions | where:"lang", page.lang | where:"featuredHome", true  | sort: "featuredHomeIndex" %}
 {% elsif include.for == "scanner" %}
-  {% assign questions = site.questions-scanner | where:"lang", page.lang | where:"featuredHome", true  | sort: "featuredHomeIndex" %}
-{% endif %}
+    {% assign questions = site.questions-scanner | where:"lang", page.lang | where:"featuredHome", true  | sort: "featuredHomeIndex" %}
+{% endif %} 
 
 <section class="faq-homepage">
   <h2 class="faq-homepage__title" id="faq">{{ site.data[page.lang].translations.faq }}</h2>
 
   <div class="highlighted-faqs">
     {% for question in questions %}
-  
-      <article class="highlighted-faq">
-        <div class="highlighted-faq__summary">
-          <div class="highlighted-faq__title">
-            <h3>{{ question.title }}</h3>
-          </div>
-          <a href="{{ site.baseurl }}{{ question.url }}" class="highlighted-faq__summary__btn-expand">
-            {{ site.data[page.lang].translations.readmore }}
-            <span class="screen-reader-text"> {{ site.data[page.lang].translations.readmore-about_screen-reader }}: {{ question.title }}</span>
-          </a>
-        </div>
-      
-      </article>
+        {% if question.whichversion contains site.version %}
+            <article class="highlighted-faq">
+                <div class="highlighted-faq__summary">
+                    <div class="highlighted-faq__title">
+                        <h3>{{ question.title }}</h3>
+                    </div>
+                    <a href="{{ site.baseurl }}{{ question.url }}" class="highlighted-faq__summary__btn-expand">
+                    {{ site.data[page.lang].translations.readmore }}
+                    <span class="screen-reader-text"> {{ site.data[page.lang].translations.readmore-about_screen-reader }}: {{ question.title }}</span>
+                    </a>
+                </div>
+            </article>
+        {% endif %}
     {% endfor %}
 
     <article class="highlighted-faq">
@@ -45,11 +45,11 @@
   <p class="faq-homepage__more">
     {% if include.for == "coronacheck" %}
       <a href="{{ langSlug }}faq" class="btn btn--large">
-        {{ site.data[page.lang].translations.layout-faq-btn }}<span class="icon icon-chevron-right"></span>
+        {{ site.data[page.lang].translations.layout-faq-btn }}
       </a>
     {% elsif include.for == "scanner" %}
       <a href="{{ langSlug }}faq-scanner" class="btn btn--large">
-        {{ site.data[page.lang].translations.layout-faq-btn }}<span class="icon icon-chevron-right"></span>
+        {{ site.data[page.lang].translations.layout-faq-btn }}
       </a>
     {% endif %}
   </p>

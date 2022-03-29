@@ -8,6 +8,7 @@ import { StepTypes } from '@/types/step-types'
 import { ProviderTypes } from '@/types/provider-types'
 import { events as AuthEvent } from '@/store/modules/auth'
 import { FilterTypes } from '@/types/filter-types'
+import { events as StorageEvent } from '@/store/modules/storage'
 
 export default {
     name: 'redirect-mixin',
@@ -26,7 +27,7 @@ export default {
                     // todo cancel all processes
                 }
                 this.$store.commit('clearAll')
-                this.$store.dispatch('signedEvents/clear', { filter: this.filter })
+                this.$store.dispatch('signedEvents/clear', { filter: this.filter, scope: this.scope })
                 this.$router.push({ name: this.pages.cancel });
             }
             this.$store.commit('modal/set', {
@@ -141,9 +142,9 @@ export default {
             this.$store.commit('snackbar/message', this.$t('message.info.digidFinished.body', { type: proofType }))
         },
         collectEvents(tokenSets) {
-            this.$store.dispatch('signedEvents/clear', { filter: this.filter });
+            this.$store.dispatch('signedEvents/clear', { filter: this.filter, scope: this.scope });
             this.isLoading = true;
-            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders).then(results => {
+            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders, this.scope).then(results => {
                 this.isLoading = false;
                 this.analyseResult(results);
             });
@@ -222,7 +223,9 @@ export default {
                         }
                         this.$router.push({ name: 'ErrorGeneral', query: { errors: errorCodes.join('+') } });
                     } else {
-                        this.$router.push({ name: this.pages.noResult });
+                        if (this.withPositiveTest() && this.filter !== FilterTypes.VACCINATION) {
+                            this.handleWithPositiveTest()
+                        } else this.$router.push({ name: this.pages.noResult });
                     }
                 }
             } else {
@@ -272,7 +275,7 @@ export default {
         //     return '';
         // },
         createEvents(events) {
-            this.$store.dispatch('signedEvents/createAll', { events, filter: this.filter });
+            this.$store.dispatch('signedEvents/createAll', { events, filter: this.filter, scope: this.scope });
         },
         areAllRecoveriesExpired(proofEvents) {
             const expirationDays = this.$store.getters.getRecoveryEventValidityDays()
@@ -292,6 +295,11 @@ export default {
             }
 
             return true
+        },
+        handleWithPositiveTest () {
+            // no recovery is fetched, or expired, remove signed events and show a warning
+            this.$store.dispatch('signedEvents/clear', { filter: this.filter, scope: this.scope })
+            this.$router.push({ name: this.pages.overview, params: { message: this.$t('warning.noPositivetest') } });
         },
         isTestedPositiveBeforeFirstVaccination (proofEvents) {
             // all positive tests dates
@@ -316,6 +324,12 @@ export default {
             }
             return false
         },
+        withPositiveTest () {
+            // retrieve local saved data and reset
+            const value = this.$store.getters[StorageEvent.WITH_POSITIVE_TEST];
+            this.$store.dispatch(StorageEvent.WITH_POSITIVE_TEST, null);
+            return value
+        },
         checkResult(results) {
             const signedEvents = [];
             for (const result of results) {
@@ -331,7 +345,9 @@ export default {
                 if (this.areAllRecoveriesExpired(proofEvents)) {
                     this.$router.push({ name: 'RecoveryExpired' });
                 } else if (this.isTestedPositiveBeforeFirstVaccination(proofEvents)) {
-                    this.$router.push({ name: 'RecoveryInvalid' });
+                    if (this.withPositiveTest()) {
+                        this.handleWithPositiveTest()
+                    } else this.$router.push({ name: 'RecoveryInvalid' });
                 } else {
                     this.$router.push({ name: this.pages.overview });
                 }

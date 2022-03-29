@@ -3,6 +3,10 @@ set: 7
 index: 7
 title: Wat is het verschil tussen CoronaCheck en Coronapas?
 webonly: true
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 In Nederland kan je met de CoronaCheck-app het coronatoegangsbewijs ophalen. De CoronaCheck-app is gratis te downloaden uit de Apple App Store en Google Play Store.
 

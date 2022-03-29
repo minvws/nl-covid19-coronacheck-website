@@ -4,13 +4,9 @@ scanner-app-name: CoronaCheck Scanner
   
 header-skip-to-content: Ga direct naar inhoud
     
-header-title: Krijg toegang met de CoronaCheck-app
+header-button-download-app: Download de app
 
-header-subtitle: Met de app bewijs je dat je gevaccineerd of negatief getest bent. Of dat je eerder corona hebt gehad. Je kunt CoronaCheck gebruiken voor toegang tot bepaalde plekken. Of om naar andere landen te reizen. 
-
-scanner-header-title: Geef toegang met CoronaCheck Scanner
-
-scanner-header-subtitle: Met CoronaCheck Scanner controleer je de geldigheid van het coronabewijs van de bezoeker en of de gegevens op jouw scherm hetzelfde zijn als op het identiteitsbewijs. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten. Wil je CoronaCheck gebruiken voor je locatie of activiteit, lees dan meer op de pagina <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/cultuur-uitgaan-en-sport/coronatoegangsbewijs/ondernemers" target="_blank" rel="noopener noreferrer">Ondernemers, organisatoren en het coronatoegangsbewijs</a>.
+header-button-paper-certificate: Maak papieren bewijs
     
 coronacheck-scanner-linktext: Scanner
 
@@ -74,7 +70,7 @@ layout-template-home: Home
   
 layout-template-faq: Terug naar meestgestelde vragen
   
-layout-faq-btn: Bekijk alle vragen
+layout-faq-btn: Bekijk alle meestgestelde vragen
   
 coronacheck-lead-title: Download de CoronaCheck-app
   
@@ -84,7 +80,7 @@ footer-attribution: 'Mede mogelijk gemaakt door:'
 
 footer-contact-in-app-subtitle: Staat jouw vraag er niet tussen? <br />Bekijk dan <a href="https://www.coronacheck.nl/nl/faq" target="_blank">alle meestgestelde vragen</a> of neem contact op met de helpdesk.
 
-footer-contact-title: Staat jouw vraag er niet tussen? <br />Neem dan contact op met de helpdesk.
+footer-contact-title: Staat jouw vraag er niet tussen? <br />Neem dan contact op met de helpdesk
 
 footer-contact-scanner-in-app-subtitle: Staat jouw vraag er niet tussen? <br />Bekijk dan  <a href="https://www.coronacheck.nl/nl/faq-scanner" target="_blank">alle meestgestelde vragen</a> of neem contact op met de helpdesk.
 
@@ -93,8 +89,7 @@ footer-phone: Bel de helpdesk
 footer-phone-action: '<a href="tel:08001421">0800-1421</a> (gratis). Of als je vanuit het buitenland belt: <a href="tel:+31707503720">+31 70 750 37 20</a>'
   
 footer-phone-opening-hours: "Bereikbaar van maandag t/m zondag 08.00 – 20.00 uur"
-  
-footer-phone-mail: "Of stuur een e-mail naar:"
+
     
 footer-colophon: Colofon
 
@@ -140,14 +135,6 @@ error-back-to-faq: Ga naar meestgestelde vragen
     
 accessibility-in-app-email-subject: Probleem bij het gebruik van de app
 
-information-title: 'Zo gaan we om met jouw gegevens:'
-  
-information-qrcode: In de QR-code staan minimale persoonsgegevens
-    
-information-naw: Jouw gegevens worden nergens centraal opgeslagen
-  
-information-gps: Je locatiegegevens worden niet gebruikt of bewaard
-
 scanner-information-title: Voorwaarden voor gebruik
 
 scanner-information-qrcode: In de QR-code staan minimale gegevens van de bezoeker
@@ -186,32 +173,16 @@ mediaelement-download-subtitle: Ondertitelingsbestand
   
 mediaelement-transcript-title: Uitgeschreven tekst van de video
   
-user-instructions-title: Hoe werkt het?
 
-coronacheck-howto-step-1-title: 1. Laat je testen of vaccineren
+coronacheck-howto-url: /nl/faq/1-1-hoe-werkt-de-coronacheck-app/
 
-coronacheck-howto-step-1-content: |
-  Voor toegang vragen sommige landen of plekken een bewijs van een vaccinatie of van een uitslag van een coronatest.
+coronacheck-howto-url-0g: /nl/faq/1-1-hoe-werkt-de-coronacheck-app-0g/
 
-coronacheck-howto-step-2-title: 2. Maak een QR-code
+coronacheck-howto-link: Lees meer over het coronabewijs
 
-coronacheck-howto-step-2-content: |
-  De app maakt twee QR-codes: een QR-code voor Nederland en een internationale. Dat is jouw bewijs.
+grant-access-with-coronacheck-scanner-url: /nl/scanner
 
-coronacheck-howto-step-3-title: 3. Toon je QR-code
-
-coronacheck-howto-step-3-content: |
-  Laat je identiteitsbewijs en je QR-code controleren voor toegang tot een bepaalde plek. En als je op reis gaat. 
-
-print-version-title: Liever een papieren bewijs?
- 
-print-version-content: Een bewijs op papier is handig als je geen smartphone hebt. Je kunt een bewijs maken van een vaccinatie en/of van een testuitslag. <a href="/nl/faq#bewijs-op-papier">Lees hier meer<span class="screen-reader-text"> over bewijzen op papier</span></a>.
-
-print-version-url-linktext: Maak papieren bewijs
-
-about-coronacheck-scanner-title: CoronaCheck Scanner
-
-about-coronacheck-scanner-content: <p>Wil je weten hoe je CoronaCheck kunt gebruiken om bezoekers toe te laten?</p><p><a href="/scanner" class="btn btn--cta" target="_blank">Bekijk de Scanner-app</a></p>
+grant-access-with-coronacheck-scanner-link: Lees meer over CoronaCheck Scanner
 
 status-block-title: Bekijk de actuele status van CoronaCheck
 
@@ -257,3 +228,11 @@ scanner-howto-step-3-content: |
 dashboard-noscript-title: JavaScript vereist
 
 dashboard-noscript-description: Dit dashboard gebruikt JavaScript. Schakel a.u.b. JavaScript in en probeer het opnieuw, of probeer het in een andere browser.
+
+coronamelder-title: Gebruik ook CoronaMelder
+
+coronamelder-content: De CoronaMelder app helpt om sneller besmettingen op te sporen en te stoppen. Zo kunnen we verspreiding van het coronavirus voorkomen. 
+
+coronamelder-url: https://www.coronamelder.nl
+
+coronamelder-link: Lees meer over CoronaMelder

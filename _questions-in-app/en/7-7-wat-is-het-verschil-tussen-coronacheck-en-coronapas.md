@@ -3,6 +3,10 @@ set: 7
 index: 7
 title: What's the difference between CoronaCheck and Coronapas?
 webonly: true
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 In the Netherlands, you can use the CoronaCheck app to retrieve your coronavirus entry pass. Download the CoronaCheck-app for free in the Apple App Store and the Google Play Store.
 

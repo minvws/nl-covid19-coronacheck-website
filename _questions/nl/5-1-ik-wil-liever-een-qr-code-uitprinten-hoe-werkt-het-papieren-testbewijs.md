@@ -8,6 +8,10 @@ redirect_from:
 webonly: true
 featuredHome: true
 featuredHomeIndex: 4
+whichversion:
+  - 0g
+  - 1g
+  - 3g
 ---
 In sommige gevallen wil je liever een papieren QR-code uitprinten. Bijvoorbeeld als je geen smartphone hebt. Of als je een QR-code wilt maken voor je kinderen. Ga naar [www.coronacheck.nl/print](/print) en volg de stappen.
 

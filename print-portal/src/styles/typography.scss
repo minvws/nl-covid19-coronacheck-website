@@ -1,5 +1,4 @@
-$font-main: 'RO Sans', sans-serif;
-$font-headers: 'Montserrat', sans-serif;
+@import './variables/typography.scss';
 
 h2 {
     font-size: 30px;

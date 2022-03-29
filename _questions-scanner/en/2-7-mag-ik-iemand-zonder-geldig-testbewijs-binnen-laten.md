@@ -6,6 +6,9 @@ featuredHome: true
 featuredHomeIndex: 2
 redirect_from: 
   - /en/faq-scanner/4-mag-ik-iemand-zonder-geldig-testbewijs-binnen-laten
+whichversion:
+  - 1g
+  - 3g
 ---
 No, at all times the visitor must be able to show a valid proof of identity and certificate.
 

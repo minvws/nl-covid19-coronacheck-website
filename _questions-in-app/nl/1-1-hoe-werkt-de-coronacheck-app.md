@@ -5,15 +5,15 @@ title: Hoe werkt de CoronaCheck-app?
 featuredHome: true
 featuredHomeIndex: 1
 hasVideo: true
-redirect_from: 
-  - /nl/faq-in-app/1-hoe-werkt-de-coronacheck-app
+whichversion:
+  - 1g
+  - 3g
 ---
 Met de CoronaCheck-app kunt je een coronabewijs maken. Dit is een QR-code op basis van een test, herstel of vaccinatie. Je krijgt twee QR-codes: een Nederlandse QR-code en een internationale QR-code.
 
 Wil je weten hoe het maken van een coronabewijs in de app werkt? Kijk dan dit filmpje:
 
 {% include components/mediaelement.html key="2020-06-27-hoe-werkt-coronacheck" width="100%" height="394" videoLang="nl" %}
-
 
 Je downloadt de app via de <a href="https://apps.apple.com/nl/app/coronacheck/id1548269870" rel="noopener noreferrer" target="_blank">Apple App Store</a> of de <a href="https://play.google.com/store/apps/details?id=nl.rijksoverheid.ctr.holder" rel="noopener noreferrer" target="_blank">Google Play Store</a>.
 

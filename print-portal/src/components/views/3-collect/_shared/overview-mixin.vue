@@ -4,6 +4,7 @@ import signer from '@/interfaces/signer';
 import { handleRejection } from '@/tools/error-handler';
 import { StepTypes } from '@/types/step-types'
 import { ProviderTypes } from '@/types/provider-types'
+import { events } from '@/store/modules/storage'
 
 export default {
     name: 'overview-mixin',
@@ -13,6 +14,9 @@ export default {
         }
     },
     computed: {
+        withPositiveTestFlow () {
+            return this.$store.getters[events.WITH_POSITIVE_TEST_FLOW]
+        },
         signedEvents() {
             const signedEvents = this.$store.getters['signedEvents/getProofEvents'](this.filter);
             return signedEvents.sort((a, b) => {
@@ -93,7 +97,7 @@ export default {
             }
         },
         openModalSomethingWrong() {
-            const type = this.filter.split(',')[0]
+            const type = this.withPositiveTestFlow ? 'vaccinationWithPositiveTest' : this.filter.split(',')[0]
             this.$store.commit('modal/set', {
                 messageHead: this.$t('message.info.somethingWrong.' + type + '.head'),
                 messageBody: this.$t('message.info.somethingWrong.' + type + '.body'),

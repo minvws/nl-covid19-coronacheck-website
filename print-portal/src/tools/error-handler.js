@@ -2,7 +2,7 @@ import store from '@/store';
 import router from '@/router';
 import i18n from '@/i18n'
 import { cmsDecode } from './cms';
-import { getResponseStatusCode, getClientSideErrorCode, errorCodeTransformer, isDigiDFlowAndStepError } from '@/data/constants/error-codes';
+import { getResponseStatusCode, getClientSideErrorCode, errorCodeTransformer, isDigiDSamlError, isDigiDFlowAndStepError } from '@/data/constants/error-codes';
 
 export const hasInternetConnection = () => {
     return window.navigator.onLine;
@@ -25,7 +25,6 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
         messageInternetConnection(callback);
         return;
     }
-
     const errorCodes = getErrorCode(error, errorCodeInformation);
 
     if (error.code === 'ECONNABORTED') {
@@ -36,7 +35,9 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
     if (error?.response?.status === 429) {
         router.push({ name: 'ServerBusy', query: { error: errorCodes } });
     } else {
-        if (error?.response?.data?.code === 99552) {
+        if (isDigiDSamlError(error?.message)) {
+            router.replace({ name: 'ErrorCodeSaml' });
+        } else if (error?.response?.data?.code === 99552) {
             router.replace({ name: 'ErrorCode99552', query: { errors: errorCodes } });
         } else if (isDigiDFlowAndStepError(errorCodeInformation)) {
             router.push({ name: 'ErrorDigiD', query: { error: errorCodes } });
