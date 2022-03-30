@@ -98,6 +98,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a[href^="tel"] {
+    display: inline-block;
+}
+
 .offset-background {
     background-color: $color-RO_lightblue;
 
