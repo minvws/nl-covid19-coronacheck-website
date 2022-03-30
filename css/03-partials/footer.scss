@@ -280,26 +280,6 @@
         flex-direction: row;
     }
 
-    > .only-mobile {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 2rem;
-    }
-
-    .only-mobile {
-        display: inherit;
-
-        @media (min-width: 690px) {
-            display: none;
-        }
-    }
-
-    @media (max-width: 689px) {
-        .only-desktop {
-            display: none;
-        }
-    }
-
     h2 {
         margin-bottom: 1rem;
     }
