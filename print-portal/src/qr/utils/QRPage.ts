@@ -22,6 +22,10 @@ export const getPageLink = (name: string) => {
     return translate(`views.${name}.link`);
 }
 
+export const getPageButton = (name: string) => {
+    return translate(`views.${name}.button`);
+}
+
 export const getFAQ = (list: string[]) => {
     return list.map(name => {
         const key = `components.faq.${name}`
