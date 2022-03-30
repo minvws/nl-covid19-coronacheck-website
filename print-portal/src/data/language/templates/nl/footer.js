@@ -17,7 +17,7 @@ const html = `
             <h2>Heb je vragen over CoronaCheck?</h2>
             <h3>Bel de helpdesk</h3>
             <p><a href="tel:08001421">0800-1421</a> (gratis).
-            Of als je vanuit het buitenland belt: <a href="tel:+31707503720">+31 70 750 37 20</a>.
+            Of als je vanuit het buitenland belt: <a href="tel:+31707503720">+31 70 750 37 20</a>.<br />
             Bereikbaar van maandag t/m zondag 08.00 – 20.00 uur.</p>
 
             <h3>Of stuur een e-mail naar:</h3>
