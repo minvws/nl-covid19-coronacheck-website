@@ -7,7 +7,8 @@ export type QRData = {
 
 export type QRState = {
   qrs: QRData[]
-  pending: QRData[]
+  pending: QRData[],
+  code: string | any; // @TODO
 }
 
 export type QRActionContext = ActionContext<QRState, QRState>

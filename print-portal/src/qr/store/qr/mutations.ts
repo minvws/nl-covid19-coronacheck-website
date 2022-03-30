@@ -26,5 +26,8 @@ export const mutations = {
             const index = qrs.indexOf(qr)
             qrs.splice(index, 1)
         }
+    },
+    [QRMutation.CODE]: (state: QRState, code: string): void => {
+        state.code = code
     }
 }

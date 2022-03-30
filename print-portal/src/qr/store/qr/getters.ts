@@ -12,5 +12,8 @@ export const getters = {
         ({ pending }: QRState) =>
             (target: string): QRData[] => {
                 return pending.filter(({ result }) => result !== target)
-            }
+            },
+    [QRGetter.CODE]: ({ code }: QRState) => {
+        return code
+    }
 }

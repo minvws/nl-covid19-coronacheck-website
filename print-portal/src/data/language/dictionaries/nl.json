@@ -30,9 +30,11 @@
             "eventsFetchedAt": "Gegevens opgehaald bij",
             "head": "Details",
             "name": "Naam",
+            "vaccinationResult": "Vaccinatie",
             "testResult": "Testuitslag",
             "validFrom": "Geldig vanaf",
-            "validUntil": "Geldig tot"
+            "validUntil": "Geldig tot",
+            "receivedFrom": "Opgehaald via"
         },
         "faq": {
             "viewFaq": "Bekijk de meestgestelde vragen",
@@ -270,7 +272,12 @@
         },
         "letterCombination": {
             "pageHeader": "Vul eerst de lettercombinatie in",
-            "pageIntro": "<p>Bij je bewijs heb je een apart papier met een lettercombinatie gekregen. Vul die lettercombinatie hieronder in.<\/p>",
+            "pageIntro": "<p>Je kunt zo je missende vaccinatie toevoegen via de QR-code op je bewijs. Bij je bewijs heb je ook een apart papier met een lettercombinatie gekregen. Vul eerst die lettercombinatie hieronder in.<\/p>",
+            "emptyCode": "Lettercombinatie niet ingevuld",
+            "invalidCode": "Geen geldige lettercombinatie",
+            "rejectedCode": "Lettercombinatie niet geldig",
+            "uniqueCode": "Lettercombinatie",
+            "exampleCode": "FLBRXQ",
             "link": "Heb je geen lettercombinatie?"
         },
         "noLetterCombination": {
@@ -548,6 +555,12 @@
             "createTestProofButton": "Maak bewijs",
             "pageHeader": "Kloppen de gegevens?",
             "pageIntro": "<p>Als de gegevens kloppen kun je een bewijs maken.<\/p>"
+        },
+        "vaccinationOverviewList": {
+            "pageHeader": "Zijn dit al jouw vaccinaties?",
+            "pageIntro": "<p>Deze vaccinaties hebben we opgehaald bij de GGD en het RIVM:<\/p>",
+            "button": "Ja, volgende",
+            "link": "Nee, er mist een vaccinatie"
         },
         "vaccinationsIncomplete": {
             "pageHeader": "We kunnen geen bewijs maken",

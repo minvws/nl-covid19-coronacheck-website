@@ -7,6 +7,10 @@ import QRProofInternational from '@/qr/pages/QRProofInternational.vue'
 import QRProofNone from '@/qr/pages/QRProofNone.vue'
 import QRProofIntroductionPage from '@/qr/pages/QRProofIntroductionPage.vue'
 import QRLetterCombinationPage from '@/qr/pages/QRLetterCombinationPage.vue'
+import VaccinationOverviewList from '@/components/views/3-collect/vaccination/happy/VaccinationOverviewList.vue'
+import VaccinationOverview from '@/components/views/3-collect/vaccination/happy/VaccinationOverview.vue'
+import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview.vue'
+import RecoveryOverviewList from '@/components/views/3-collect/recovery/happy/RecoveryOverviewList.vue'
 
 import i18n from '@/i18n'
 
@@ -21,10 +25,41 @@ export enum RouterNames {
     PROOF_INTRODUCTION = 'proofIntroduction',
     LETTER_COMBINATION = 'letterCombination',
     NO_LETTER_COMBINATION = 'noLetterCombination',
-    SCANNER_COMPLETE = 'scannerComplete'
+    SCANNER_COMPLETE = 'scannerComplete',
+    VACCINATION_OVERVIEW = 'vaccinationOverview',
+    VACCINATION_OVERVIEW_LIST = 'vaccinationOverviewList'
 
 }
 const routes: Array<RouteConfig> = [
+    {
+        path: '/jouw-vaccinaties',
+        component: VaccinationOverviewList,
+        name: RouterNames.VACCINATION_OVERVIEW_LIST,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.MISSING_VACCINATION
+                }
+            }
+        }
+    },
+    {
+        path: '/jouw-vaccinaties-overzicht',
+        component: VaccinationOverview,
+        name: RouterNames.VACCINATION_OVERVIEW
+    },
+    {
+        path: '/recovery',
+        name: 'RecoveryOverviewList',
+        component: RecoveryOverviewList,
+        props: true
+    },
+    {
+        path: '/recovery-overzicht',
+        name: 'RecoveryOverview',
+        component: RecoveryOverview,
+        props: true
+    },
     {
         path: '/kies-bewijs-toevoegen',
         name: RouterNames.CHOOSE_ADD_PROOF,
@@ -141,6 +176,9 @@ const routes: Array<RouteConfig> = [
                 to: {
                     name: RouterNames.NO_LETTER_COMBINATION
                 }
+            },
+            next: {
+                name: RouterNames.PROOF_INTRODUCTION
             }
         },
         component: QRLetterCombinationPage

@@ -17,5 +17,8 @@ export const actions = {
     },
     [QRAction.REMOVE]({ commit }: QRActionContext, qr: QRData): void {
         commit(QRMutation.REMOVE, qr)
+    },
+    [QRAction.CODE]({ commit }: QRActionContext, code: any): void {
+        commit(QRMutation.CODE, code)
     }
 }
