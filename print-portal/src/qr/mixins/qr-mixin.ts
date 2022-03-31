@@ -13,7 +13,7 @@ export default {
             captures: QRGetter.QR,
             result: QRGetter.PENDING,
             filteredResult: QRGetter.FILTER_PENDING,
-            code: QRGetter.CODE
+            letterCombination: QRGetter.CODE
         })
     },
     methods: {
@@ -22,7 +22,8 @@ export default {
             onRemoveQR: QRAction.REMOVE,
             onAddPendingQR: QRAction.ADD_PENDING,
             onRemovePendingQR: QRAction.REMOVE_PENDING,
-            onClearPendingQRS: QRAction.CLEAR_PENDING
+            onClearPendingQRS: QRAction.CLEAR_PENDING,
+            setLetterCombination: QRAction.CODE
         })
     }
 }
@@ -33,7 +34,8 @@ export type QRMixinType = {
   onAddPendingQR: (qr: QRData) => void
   onRemovePendingQR: (qr: QRData) => void
   onClearPendingQRS: () => void
-  code: any; // @TODO type
+  setLetterCombination: (combination: any) => void // @TODO type
+  letterCombination: any; // @TODO type
 }
 
 export type QRScannerType = {
