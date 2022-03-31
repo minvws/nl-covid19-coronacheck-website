@@ -1,5 +1,5 @@
-import { CameraFacingMode } from '@/qr/types/QRScannerDataType'
 import QrScanner from 'qr-scanner'
+import { getImagesFromPDFFile } from '@/qr/utils/PDFJsLib'
 import i18n from '@/i18n';
 
 export const isEuropeanQR = (qr: string) => {
@@ -29,6 +29,24 @@ export const scanQR = async (input: any) => { // @TODO: fix type
         throw new Error(i18n.t('qr.error.invalidQR') as string);
     }
     return result
+}
+
+export const getQRFromPDFile = async (file: File) => {
+    const images = await getImagesFromPDFFile(file)
+    const scans = await Promise.allSettled(
+        images.map((src) => scanQR(src))
+    )
+    const results = scans.reduce((cul, scan, i) => {
+        const { value: result } = scan as { value: string }
+        if (result) cul.push({ result, src: images[i] })
+        return cul
+    }, [] as { result: string, src: string} [])
+    if (!results.length) {
+        // no QR found, throw first error
+        const message = (scans as { reason: string }[]).find(({ reason }) => reason)?.reason
+        throw new Error(message);
+    }
+    return results
 }
 
 export default QrScanner

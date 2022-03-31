@@ -23,12 +23,11 @@
 </template>
 
 <script lang="ts">
-import { scanQR } from '@/qr/utils/QRScanner'
+import { getQRFromPDFile } from '@/qr/utils/QRScanner'
 import QRList from '@/qr/components/QRScanner/QRList.vue'
 import FileInput from '@/qr/components/QRScanner/FileInput.vue'
 import CameraError from '@/qr/components/QRScanner/CameraError.vue'
 import qrMixin, { QRMixin, QRData } from '@/qr/mixins/qr-mixin'
-import { getImagesFromPDFFile } from '@/qr/utils/PDFJsLib'
 
 export default QRMixin.extend({
     mixins: [qrMixin],
@@ -46,24 +45,13 @@ export default QRMixin.extend({
     },
     methods: {
         async scanPDF(file: File) {
-            const images = await getImagesFromPDFFile(file)
-            const scans = await Promise.allSettled(
-                images.map((src) => scanQR(src))
-            )
-            const results = scans.reduce((cul, scan, i) => {
-                const { value: result } = scan as { value: string }
-                if (result) cul.push({ result, src: images[i] })
-                return cul
-            }, [] as { result: string, src: string} [])
-            // QR found
-            if (results.length) {
+            try {
+                const results = await getQRFromPDFile(file)
                 results.forEach(result => {
                     this.onAddPendingQR(result)
                 })
-            } else {
-                // no QR found, throw first error
-                const message = (scans as { reason: string }[]).find(({ reason }) => reason)?.reason
-                throw new Error(message);
+            } catch (error) {
+                this.error = (error as Error)?.message || error as string
             }
         },
         onCapture({ result, src }: QRData) {
