@@ -5,18 +5,18 @@
     <div class="section">
         <PageIntro v-bind="intro" />
         <div class="section-block">
-            <ProvideTestCode
+            <LetterValidation
                 class="code"
-                @submit="onSubmit"
-                :translation="`views.${name}`"
-                :test-code-status="{
-                    error
+                v-model="value"
+                v-bind="{
+                    error,
+                    value,
+                    translation: `views.${name}`
                 }"
-                :clear-test-code="true"
-                :verification-needed="false"
+                @submit="onSubmit"
             >
                 <PrintFaqLink class="link" v-if="link" v-bind="{ label, ...link }"/>
-            </ProvideTestCode>
+            </LetterValidation>
         </div>
     </div>
 </Page>
@@ -24,21 +24,21 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import Page from '@/components/elements/Page.vue';
 import PageIntro from '@/components/elements/PageIntro.vue';
 import PrintFaqLink from '@/components/views/4-print/PrintFaqLink.vue'
 import { isValidLetterCombination, isValidLetterCombinationLengthExceeded, isValidLetterCombinationLengthError } from '@/qr/utils/QRScanner'
-import ProvideTestCode from '@/components/views/3-collect/negative-test/provide-code/ProvideTestCode.vue'
+import LetterValidation from '@/qr/components/LetterValidation.vue'
 import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
+import qrMixin, { QRMixin } from '@/qr/mixins/qr-mixin';
 
-export default Vue.extend({
-    mixins: [pageIntroMixin],
+export default QRMixin.extend({
+    mixins: [pageIntroMixin, qrMixin],
     components: {
         Page,
         PageIntro,
         PrintFaqLink,
-        ProvideTestCode
+        LetterValidation
     },
     props: {
         routes: {
@@ -56,11 +56,15 @@ export default Vue.extend({
     },
     data () {
         return {
-            error: ''
+            error: '',
+            value: ''
         }
     },
+    created () {
+        this.value = this.letterCombination?.code || ''
+    },
     watch: {
-        '$store.state.testCode' (code, before) {
+        value (code, before) {
             const exceeded = isValidLetterCombinationLengthError(before)
             if (exceeded) {
                 this.error = this.translate('invalidCodeLength', { count: exceeded })
@@ -71,9 +75,7 @@ export default Vue.extend({
             while (isValidLetterCombinationLengthExceeded(code)) {
                 code = code.substr(0, code.length - 1)
             }
-            // @TODO: do not like this thingy
-            this.$store.commit('resetProvideCode');
-            this.$store.commit('updateProperty', { key: 'testCode', value: code })
+            this.value = code.toUpperCase()
         }
     },
     methods: {
@@ -88,11 +90,10 @@ export default Vue.extend({
             } else this.error = ''
         },
         onSubmit () {
-            const code = this.$store.state.testCode
-            console.log({ code })
+            const code = this.value
             this.onValidate(code)
             if (this.error) return
-            this.$store.dispatch('qr/CODE', { code })
+            this.setLetterCombination({ code })
             this.$router.push(this.next)
         }
     }
