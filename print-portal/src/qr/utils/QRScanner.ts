@@ -13,13 +13,22 @@ export const isDutchQR = (qr: string) => {
 }
 
 const LETTER_COMBINATION_LENGTH = 6
+
 export const isValidLetterCombination = (code: string) => {
-    const regex = new RegExp(/^[0-9A-Z]{}$/);
+    const ex = `^[0-9A-Z]{${LETTER_COMBINATION_LENGTH}}$`
+    const regex = new RegExp(ex);
     return regex.test(code);
 }
 
 export const isValidLetterCombinationLengthExceeded = (code: string) => {
     return code.length > LETTER_COMBINATION_LENGTH
+}
+
+export const isValidLetterCombinationLengthError = (code: string) => {
+    if (isValidLetterCombinationLengthExceeded(code)) {
+        return LETTER_COMBINATION_LENGTH
+    }
+    return undefined
 }
 
 export const isValidQR = (qr: string) => {

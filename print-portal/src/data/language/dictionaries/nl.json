@@ -275,7 +275,7 @@
             "pageIntro": "<p>Je kunt zo je missende vaccinatie toevoegen via de QR-code op je bewijs. Bij je bewijs heb je ook een apart papier met een lettercombinatie gekregen. Vul eerst die lettercombinatie hieronder in.<\/p>",
             "emptyCode": "Lettercombinatie niet ingevuld",
             "invalidCode": "Geen geldige lettercombinatie",
-            "invalidCodeLength": "Letter combinatie bestaat uit 6 karakters",
+            "invalidCodeLength": "Lettercombinatie bestaat uit {count} karakters",
             "rejectedCode": "Lettercombinatie niet geldig",
             "uniqueCode": "Lettercombinatie",
             "exampleCode": "FLBRXQ",

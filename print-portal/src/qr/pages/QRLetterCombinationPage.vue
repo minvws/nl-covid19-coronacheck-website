@@ -28,7 +28,7 @@ import Vue from 'vue'
 import Page from '@/components/elements/Page.vue';
 import PageIntro from '@/components/elements/PageIntro.vue';
 import PrintFaqLink from '@/components/views/4-print/PrintFaqLink.vue'
-import { isValidLetterCombination, isValidLetterCombinationLengthExceeded } from '@/qr/utils/QRScanner'
+import { isValidLetterCombination, isValidLetterCombinationLengthExceeded, isValidLetterCombinationLengthError } from '@/qr/utils/QRScanner'
 import ProvideTestCode from '@/components/views/3-collect/negative-test/provide-code/ProvideTestCode.vue'
 import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
 
@@ -61,22 +61,24 @@ export default Vue.extend({
     },
     watch: {
         '$store.state.testCode' (code, before) {
-            if (isValidLetterCombinationLengthExceeded(before)) {
-                this.error = this.translate('invalidCodeLength')
+            const exceeded = isValidLetterCombinationLengthError(before)
+            if (exceeded) {
+                this.error = this.translate('invalidCodeLength', { count: exceeded })
             } else {
                 this.error = ''
             }
 
             while (isValidLetterCombinationLengthExceeded(code)) {
                 code = code.substr(0, code.length - 1)
-                // @TODO: do not like this thingy
-                this.$store.commit('updateProperty', { key: 'testCode', value: code })
             }
+            // @TODO: do not like this thingy
+            this.$store.commit('resetProvideCode');
+            this.$store.commit('updateProperty', { key: 'testCode', value: code })
         }
     },
     methods: {
-        translate (id) {
-            return this.$t(`views.${this.name}.${id}`)
+        translate (id, params) {
+            return this.$t(`views.${this.name}.${id}`, params)
         },
         onValidate (code) {
             if (!code) {
@@ -87,6 +89,7 @@ export default Vue.extend({
         },
         onSubmit () {
             const code = this.$store.state.testCode
+            console.log({ code })
             this.onValidate(code)
             if (this.error) return
             this.$store.dispatch('qr/CODE', { code })
