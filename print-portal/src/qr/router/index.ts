@@ -5,8 +5,11 @@ import QRFromImageOrPDFPage from '@/qr/pages/QRFromImageOrPDFPage.vue'
 import QRProofDomestic from '@/qr/pages/QRProofDomestic.vue'
 import QRProofInternational from '@/qr/pages/QRProofInternational.vue'
 import QRProofNone from '@/qr/pages/QRProofNone.vue'
+import QRScannerComplete from '@/qr/pages/QRScannerComplete.vue'
 import QRProofIntroductionPage from '@/qr/pages/QRProofIntroductionPage.vue'
 import QRLetterCombinationPage from '@/qr/pages/QRLetterCombinationPage.vue'
+import QRLetterCombinationValidationPage from '@/qr/pages/QRLetterCombinationValidationPage.vue'
+import QRLetterCombinationInvalidPage from '@/qr/pages/QRLetterCombinationInvalidPage.vue'
 import VaccinationOverviewList from '@/components/views/3-collect/vaccination/happy/VaccinationOverviewList.vue'
 import VaccinationOverview from '@/components/views/3-collect/vaccination/happy/VaccinationOverview.vue'
 import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview.vue'
@@ -17,13 +20,15 @@ import i18n from '@/i18n'
 export enum RouterNames {
     MISSING_VACCINATION = 'chooseMissingVaccination',
     CHOOSE_ADD_PROOF = 'chooseAddProof',
-    CAMERA = 'camera',
-    FILE = 'file',
+    CAMERA = 'cameraQR',
+    FILE = 'uploadFileQR',
     PROOF_DOMESTIC = 'proofDomestic',
     PROOF_INTERNATIONAL = 'proofInternational',
     PROOF_NONE = 'proofNone',
     PROOF_INTRODUCTION = 'proofIntroduction',
     LETTER_COMBINATION = 'letterCombination',
+    LETTER_COMBINATION_VALIDATION = 'letterCombinationValidation',
+    LETTER_COMBINATION_INVALID = 'letterCombinationInvalid',
     NO_LETTER_COMBINATION = 'noLetterCombination',
     SCANNER_COMPLETE = 'scannerComplete',
     VACCINATION_OVERVIEW = 'vaccinationOverview',
@@ -132,17 +137,25 @@ const routes: Array<RouteConfig> = [
     {
         path: '/scanner-complete',
         name: RouterNames.SCANNER_COMPLETE,
-        component: QRProofNone
+        component: QRScannerComplete
     },
     {
-        path: '/camera',
+        path: '/scannen-met-camera',
         name: RouterNames.CAMERA,
         component: QRScannerPage
     },
     {
-        path: '/file',
+        path: '/bestand-uploaden',
         name: RouterNames.FILE,
-        component: QRFromImageOrPDFPage
+        component: QRFromImageOrPDFPage,
+        props: {
+            accepted: {
+                name: RouterNames.CHOOSE_ADD_PROOF
+            },
+            rejected: {
+                name: RouterNames.LETTER_COMBINATION_VALIDATION
+            }
+        }
     },
     {
         path: '/bewijs-start',
@@ -155,6 +168,34 @@ const routes: Array<RouteConfig> = [
             }
         },
         component: QRProofIntroductionPage
+    },
+    {
+        path: '/geen-geldige-lettercombinatie',
+        name: RouterNames.LETTER_COMBINATION_INVALID,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.CHOOSE_ADD_PROOF
+                }
+            },
+            next: {
+                name: RouterNames.SCANNER_COMPLETE
+            }
+        },
+        component: QRLetterCombinationInvalidPage
+    },
+    {
+        path: '/lettercombinatie-valideren',
+        name: RouterNames.LETTER_COMBINATION_VALIDATION,
+        props: {
+            accepted: {
+                name: RouterNames.SCANNER_COMPLETE
+            },
+            rejected: {
+                name: RouterNames.LETTER_COMBINATION_INVALID
+            }
+        },
+        component: QRLetterCombinationValidationPage
     },
     {
         path: '/geen-lettercombinatie',

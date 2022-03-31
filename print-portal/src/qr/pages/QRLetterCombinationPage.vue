@@ -28,11 +28,12 @@ import Vue from 'vue'
 import Page from '@/components/elements/Page.vue';
 import PageIntro from '@/components/elements/PageIntro.vue';
 import PrintFaqLink from '@/components/views/4-print/PrintFaqLink.vue'
-import { getPageHeaderIntro, getPageLink } from '@/qr/utils/QRPage'
 import { isValidLetterCombination } from '@/qr/utils/QRScanner'
 import ProvideTestCode from '@/components/views/3-collect/negative-test/provide-code/ProvideTestCode.vue'
+import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
 
 export default Vue.extend({
+    mixins: [pageIntroMixin],
     components: {
         Page,
         PageIntro,
@@ -58,18 +59,6 @@ export default Vue.extend({
             error: ''
         }
     },
-    computed: {
-        name () {
-            const { name } = this.$route
-            return name ?? ''
-        },
-        label () {
-            return getPageLink(this.name)
-        },
-        intro () {
-            return getPageHeaderIntro(this.name)
-        }
-    },
     watch: {
         '$store.state.testCode' () {
             this.error = ''
@@ -78,9 +67,6 @@ export default Vue.extend({
     methods: {
         translate (id) {
             return this.$t(`views.${this.name}.${id}`)
-        },
-        clearTestCode () {
-            alert('sja')
         },
         onValidate (code) {
             if (!code) {
@@ -93,29 +79,9 @@ export default Vue.extend({
             const code = this.$store.state.testCode
             this.onValidate(code)
             if (this.error) return
-            console.log('onSend', '@TODO: call onSend')
-        },
-        async onSend (payload) {
-            try {
-                const { data: { status } } = await this.$axios({
-                    method: 'post',
-                    url: '/holder/coupling',
-                    data: payload
-                })
-                switch (status) {
-                case 'accepted':
-                    this.$store.dispatch('qr/CODE', payload)
-                    this.$router.push(this.next)
-                    break
-                case 'rejected':
-                    this.error = this.translate('rejectedCode')
-                    break
-                default:
-                }
-            } catch (e) {
-                this.error = e.response.statusText
-            }
-        },
+            this.$store.dispatch('qr/CODE', { code })
+            this.$router.push(this.next)
+        }
     }
 })
 </script>

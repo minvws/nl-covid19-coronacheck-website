@@ -25,9 +25,10 @@ import Vue from 'vue'
 import Page from '@/components/elements/Page.vue';
 import PageIntro from '@/components/elements/PageIntro.vue';
 import CcButton from '@/components/elements/CcButton';
-import { getPageHeaderIntro } from '@/qr/utils/QRPage'
+import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
 
 export default Vue.extend({
+    mixins: [pageIntroMixin],
     components: {
         Page,
         PageIntro,
@@ -41,15 +42,6 @@ export default Vue.extend({
         link: {
             type: Object,
             required: false
-        }
-    },
-    computed: {
-        name () {
-            const { name } = this.$route
-            return name ?? ''
-        },
-        intro () {
-            return getPageHeaderIntro(this.name)
         }
     },
     methods: {
