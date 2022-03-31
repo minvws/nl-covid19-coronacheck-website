@@ -12,9 +12,14 @@ export const isDutchQR = (qr: string) => {
     return regex.test(qr);
 }
 
+const LETTER_COMBINATION_LENGTH = 6
 export const isValidLetterCombination = (code: string) => {
-    const regex = new RegExp(/^[0-9A-Z]{6}$/);
+    const regex = new RegExp(/^[0-9A-Z]{}$/);
     return regex.test(code);
+}
+
+export const isValidLetterCombinationLengthExceeded = (code: string) => {
+    return code.length > LETTER_COMBINATION_LENGTH
 }
 
 export const isValidQR = (qr: string) => {
