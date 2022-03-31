@@ -12,7 +12,8 @@ export default {
         ...mapGetters(moduleName, {
             captures: QRGetter.QR,
             result: QRGetter.PENDING,
-            filteredResult: QRGetter.FILTER_PENDING
+            filteredResult: QRGetter.FILTER_PENDING,
+            code: QRGetter.CODE
         })
     },
     methods: {
@@ -32,6 +33,7 @@ export type QRMixinType = {
   onAddPendingQR: (qr: QRData) => void
   onRemovePendingQR: (qr: QRData) => void
   onClearPendingQRS: () => void
+  code: any; // @TODO type
 }
 
 export type QRScannerType = {

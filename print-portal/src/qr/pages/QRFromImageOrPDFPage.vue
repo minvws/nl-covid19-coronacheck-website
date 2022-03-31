@@ -3,9 +3,9 @@
 <Page
     @back="$router.go(-1)">
     <div class="section">
-        <PageIntro
-            :head="$t('qr.file.title')"
-            :intro="$t('qr.file.description')"/>
+        <pre>{{ captures }}</pre>
+        <pre>{{ $store.getters['qr/CODE'] }}</pre>
+        <PageIntro v-bind="intro"/>
         <div class="section-block">
             <QRFromImageOrPDF />
         </div>
@@ -15,16 +15,32 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
 import Page from '@/components/elements/Page.vue';
 import QRFromImageOrPDF from '@/qr/components/QRScanner/QRFromImageOrPDF.vue'
 import PageIntro from '@/components/elements/PageIntro.vue';
-
-export default Vue.extend({
+import mixin, { QRMixin } from '@/qr/mixins/qr-mixin';
+import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
+export default QRMixin.extend({
+    mixins: [mixin, pageIntroMixin],
     components: {
         Page,
         QRFromImageOrPDF,
         PageIntro
+    },
+    watch: {
+        code (code) {
+            alert('deze ' + code)
+        },
+        captures (captures) {
+            const [capture] = captures
+            const result = capture?.result
+            const code = this.code || {}
+            this.$store.dispatch('qr/CODE', result ? {
+                ...code,
+                result
+            } : null)
+        }
     }
+
 })
 </script>

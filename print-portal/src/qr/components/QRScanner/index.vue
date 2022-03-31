@@ -4,8 +4,7 @@
         <p class="only-mobile">CoronaCeck</p>
     </div>
     <div class="only-desktop">
-        <Title :visible="isReady" id="qr.camera.title" tag="h2"/>
-        <Title :visible="isReady" id="qr.camera.description" tag="p"/>
+        <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
     </div>
     <CameraRender :status="state">
       <template>
@@ -27,8 +26,7 @@
     />
     <div class="title-mobile">
         <div class="only-mobile">
-            <Title :visible="isReady" id="qr.camera.title" tag="h2"/>
-            <Title :visible="isReady" id="qr.camera.description" tag="p"/>
+            <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
         </div>
     </div>
     <CameraCaptures
@@ -55,7 +53,7 @@
 </template>
 
 <script lang="ts">
-
+import PageIntro from '@/components/elements/PageIntro.vue';
 import CameraFlashlight from './CameraFlashlight.vue'
 import CameraList from './CameraList.vue'
 import CameraButtons from './CameraButtons.vue'
@@ -65,8 +63,8 @@ import CameraStatus from './CameraStatus.vue'
 import CameraCaptures from './CameraCaptures.vue'
 import QrScanner, { isValidQR } from '@/qr/utils/QRScanner'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
-import Title from '@/qr/components/Title.vue'
 import qrMixin, { QRMixin } from '@/qr/mixins/qr-mixin'
+import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
 
 import QRScannerDataType, {
     CameraFacingMode,
@@ -75,9 +73,9 @@ import QRScannerDataType, {
 
 export default QRMixin.extend({
     name: 'QRScanner',
-    mixins: [qrMixin],
+    mixins: [qrMixin, pageIntroMixin],
     components: {
-        Title,
+        PageIntro,
         CameraResult,
         CameraButtons,
         CameraFlashlight,
@@ -282,6 +280,14 @@ export default QRMixin.extend({
     line-height: 24px;
     color: #154273;
     padding-bottom: 1em;
+}
+
+.intro {
+    opacity: 0;
+    transition: opacity 0.3s;
+    &.ready {
+        opacity: 1;
+    }
 }
 
 </style>

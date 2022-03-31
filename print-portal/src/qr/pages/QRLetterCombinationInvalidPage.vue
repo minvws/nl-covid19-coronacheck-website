@@ -3,10 +3,18 @@
 <Page
     @back="$router.go(-1)">
     <div class="section">
-        <PageIntro v-bind="intro" />
+        <PageIntro v-bind="intro"/>
         <div class="section-block">
-            <QRScannerNav v-if="routes" :routes="routes" />
-            <PrintFaqLink v-if="link" v-bind="{ label, ...link }"/>
+            <CcButton
+                v-if="next"
+                @select="onNext"
+                :label="button"
+            />
+            <PrintFaqLink
+                v-if="link"
+                class="link"
+                v-bind="{ label, ...link }"
+            />
         </div>
     </div>
 </Page>
@@ -18,7 +26,7 @@ import Vue from 'vue'
 import Page from '@/components/elements/Page.vue';
 import PageIntro from '@/components/elements/PageIntro.vue';
 import PrintFaqLink from '@/components/views/4-print/PrintFaqLink.vue'
-import QRScannerNav from '@/qr/components/QRScanner/QRScannerNav.vue'
+import CcButton from '@/components/elements/CcButton';
 import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
 
 export default Vue.extend({
@@ -27,17 +35,29 @@ export default Vue.extend({
         Page,
         PageIntro,
         PrintFaqLink,
-        QRScannerNav
+        CcButton
+    },
+    methods: {
+        onNext () {
+            this.$router.replace(this.next)
+        }
     },
     props: {
-        routes: {
-            type: Array,
+        link: {
+            type: Object,
             required: false
         },
-        link: {
+        next: {
             type: Object,
             required: false
         }
     }
 })
 </script>
+
+<style lang="scss" scoped>
+.link {
+    display: block;
+    padding-top: 1em;
+}
+</style>

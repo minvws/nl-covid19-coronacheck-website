@@ -280,6 +280,15 @@
             "exampleCode": "FLBRXQ",
             "link": "Heb je geen lettercombinatie?"
         },
+        "letterCombinationValidation": {
+            "pageHeader": "QR-code wordt verwerkt"
+        },
+        "letterCombinationInvalid": {
+            "pageHeader": "Geen geldige combinatie",
+            "pageIntro": "<p>Deze lettercombinatie en QR-code horen niet bij elkaar. Zoek de goede lettercombinatie en QR-code bij elkaar en probeer het opnieuw.<br><br>Lukt het niet? Dan kun je van de vaccinaties die je hebt opgehaald via DigiD nog wel een bewijs maken.<\/p>",
+            "link": "Doorgaan met de opgehaalde vaccinaties(s)",
+            "button": "Probeer opnieuw"
+        },
         "noLetterCombination": {
             "pageHeader": "Geen lettercombinatie?",
             "pageIntro": "<p>Je hebt alleen een lettercombinatie als je jouw bewijs hebt aangevraagd bij een zorgverlener, bijvoorbeeld je huisarts. Of als je deze van de Nederlandse overheid hebt gekregen per post.<br><br>Heb je geen lettercombinatie of ben je deze kwijt? Dan is het helaas niet mogelijk om de gegevens van je vaccinatie nu op te halen. Vraag eerst een nieuw bewijs met bijbehorende lettercombinatie aan bij je zorgverlener of de overheid.<\/p>",
@@ -569,7 +578,16 @@
         "vaccinationsNone": {
             "pageHeader": "Geen vaccinatie(s) beschikbaar",
             "pageIntro": "<p>Er zijn geen gegevens over je vaccinatie(s) beschikbaar. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<\/p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren tot de gegevens beschikbaar zijn.<\/p>"
+        },
+        "uploadFileQR": {
+            "pageHeader": "Voeg een bestand toe om te uploaden",
+            "pageIntro": "<p>Je kunt je bestand uploaden vanuit een map, of direct in het vak hieronder slepen. Zorg dat je een jpg-, png- of pdf-bestand hebt om toe te voegen.<\/p>"
+        },
+        "cameraQR": {
+            "pageHeader": "Houd de QR-code op je bewijs voor de camera",
+            "pageIntro": "<p>Zorg ervoor dat de gehele QR-code goed in beeld te zien is.<\/p>"
         }
+
     },
     "warning": {
         "noPositivetest": "Er is helaas geen geschikte positieve testuitslag gevonden om mee te laten tellen in je vaccinatiebewijs."
@@ -589,8 +607,6 @@
         "and": "en",
         "or": "of een",
         "camera": {
-          "title": "Houd de QR-code op je bewijs voor de camera",
-          "description": "Zorg ervoor dat de gehele QR-code goed in beeld te zien is.",
           "start": "Start camera",
           "stop": "Stop camera",
           "route": {
@@ -609,8 +625,6 @@
           "selected": "Geselecteerde camera"
         },
         "file": {
-          "title": "Voeg een bestand toe om te uploaden",
-          "description": "Je kunt je bestand uploaden vanuit een map, of direct in het vak hieronder slepen. Zorg dat je een jpg-, png- of pdf-bestand hebt om toe te voegen.",
           "route": {
             "title": "Bewijs uploaden",
             "description": "Ik heb een bestand of foto van mijn bewijs op mijn apparaat staan"

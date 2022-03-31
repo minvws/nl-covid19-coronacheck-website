@@ -31,12 +31,10 @@ import PrintFaqLink from '@/components/views/4-print/PrintFaqLink.vue'
 import VaccinationSummary from './VaccinationSummary';
 import vaccinationOverviewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
 import CcButton from '@/components/elements/CcButton';
-// import { FilterTypes } from '@/types/filter-types'
-
-import { getPageHeaderIntro, getPageLink, getPageButton } from '@/qr/utils/QRPage'
+import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
 
 export default Vue.extend({
-    mixins: [vaccinationOverviewMixin],
+    mixins: [pageIntroMixin, vaccinationOverviewMixin],
     components: {
         Page,
         PageIntro,
@@ -53,19 +51,6 @@ export default Vue.extend({
     computed: {
         next () {
             return { name: 'vaccinationOverview', params: this.$route.params }
-        },
-        name () {
-            const { name } = this.$route
-            return name ?? ''
-        },
-        label () {
-            return getPageLink(this.name)
-        },
-        button () {
-            return getPageButton(this.name)
-        },
-        intro () {
-            return getPageHeaderIntro(this.name)
         }
     }
 })
