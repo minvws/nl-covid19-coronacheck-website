@@ -194,11 +194,13 @@ export default QRMixin.extend({
         },
         async setCamera({ id }: { id: string }): Promise<void> {
             try {
+                this.isReady = false
                 this.state = CameraState.SELECTED
                 this.pendingCameraId = id
                 await this.qrScanner?.setCamera(id)
                 const camera = await this.getCameraFromStream()
                 this.cameraId = camera?.id || id
+                this.isReady = true
             } catch (error: unknown) {
                 this.error = (error as Error)?.message || error as string
             } finally {
