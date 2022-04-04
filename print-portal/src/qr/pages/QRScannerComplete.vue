@@ -4,6 +4,7 @@
     @back="$router.go(-1)">
     <div class="section">
         QR SCANNER COMPLETE TODO
+        <router-link :replace="true" :to="{ name: 'vaccinationOverviewList' }">continue</router-link>
     </div>
 </Page>
 

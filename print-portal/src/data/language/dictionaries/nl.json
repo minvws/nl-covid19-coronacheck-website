@@ -28,13 +28,15 @@
             "dateOfBirth": "Geboortedatum",
             "dateOfTest": "Testdatum",
             "eventsFetchedAt": "Gegevens opgehaald bij",
+            "eventsAddedByQR": "Gegevens zelf toegevoegd",
             "head": "Details",
             "name": "Naam",
             "vaccinationResult": "Vaccinatie",
             "testResult": "Testuitslag",
             "validFrom": "Geldig vanaf",
             "validUntil": "Geldig tot",
-            "receivedFrom": "Opgehaald via"
+            "receivedFrom": "Opgehaald via",
+            "scannedQR": "Zelf toegevoegd"
         },
         "faq": {
             "viewFaq": "Bekijk de meestgestelde vragen",

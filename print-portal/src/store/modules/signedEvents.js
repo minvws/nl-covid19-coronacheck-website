@@ -7,7 +7,8 @@ import HolderV3 from '@/classes/holder/HolderV3';
 import { cmsDecode } from '@/tools/cms'
 
 const state = {
-    all: []
+    all: [],
+    signedEvent: []
 };
 
 const getters = {
@@ -40,6 +41,9 @@ const getters = {
                 }
             }
         }
+        state.signedEvent.filter(({ event: { type } }) => types.indexOf(type) > -1).forEach(event => {
+            proofEvents.push(event)
+        })
         return proofEvents;
     },
     all: ({ all }) => {
@@ -56,6 +60,11 @@ const actions = {
     createAll: ({ commit, dispatch }, payload) => {
         dispatch('clear', payload)
         commit('createAll', payload)
+        // clear signed qrs
+        commit('qrs/add', null, { root: true });
+    },
+    signedEvent: ({ commit }, events) => {
+        commit('signedEvents', events)
         // clear signed qrs
         commit('qrs/add', null, { root: true });
     },
@@ -83,6 +92,17 @@ const mutations = {
     },
     clearAll(state) {
         state.all = []
+    },
+    signedEvents (state, { events, holder, ...data }) {
+        // @TODO: events should be encoded?
+        events.forEach(event => {
+            const signedEvent = new SignedEvent({
+                ...data,
+                holder: new HolderV3(holder),
+                event: new ProofEvent(event)
+            })
+            state.signedEvent.push(signedEvent)
+        })
     }
 };
 

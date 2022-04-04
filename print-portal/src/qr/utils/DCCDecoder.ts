@@ -1,6 +1,7 @@
 import * as base45 from 'base45'
 import * as cbor from 'cbor'
 import * as pako from 'pako'
+import { ProviderTypes } from '@/types/provider-types'
 
 type DCC = {
     nam: {
@@ -62,6 +63,18 @@ const getEvents = (dcc: DCC) => {
     return getRemoteVaccinationFromDcc(dcc) || getRemoteRecoveryFromDcc(dcc) || getRemoteTestFromDcc(dcc)
 }
 
+const getProviderIdentifier = (dcc: DCC) => {
+    if (dcc.v) {
+        const unique = dcc.v.find(v => v.ci)?.ci
+        return `${ProviderTypes.DCC}_${unique}`
+    }
+    return ProviderTypes.DCC
+}
+
+export const getDCCProvider = (identifier: string) => {
+    return identifier.toUpperCase().startsWith(ProviderTypes.DCC.toLocaleUpperCase()) ? ProviderTypes.DCC : undefined
+}
+
 export const decodeQRtoDCC = (qr: string) => {
     // inspiration from https://gist.github.com/lmillucci/48804b0598553689fc5054da10e63231
     const encoded = qr.substring(4)
@@ -70,9 +83,13 @@ export const decodeQRtoDCC = (qr: string) => {
     const [result] = cbor.decodeAllSync(output);
     const data = cbor.decodeAllSync(result?.value?.[2])?.[0];
     const dcc = data.get(-260).get(1)
+
     return {
         dcc,
         result: {
+            // protocolVersion: '3.0',
+            // status: 'complete',
+            providerIdentifier: getProviderIdentifier(dcc),
             holder: getHolderFromDCC(dcc),
             events: getEvents(dcc)
         }
@@ -82,7 +99,7 @@ export const decodeQRtoDCC = (qr: string) => {
 const getRemoteTestFromDcc = (dcc: DCC) => {
     if (!dcc.t) return undefined;
     return dcc.t.map((t) => ({
-        type: 'test',
+        type: 'negativetest', //  'test', // @TODO
         unique: t.ci ?? null,
         isSpecimen: false,
         negativetest: {

@@ -10,7 +10,7 @@
             </label>
             <input
                 v-model="input"
-                v-on:keyup.enter="submit"
+                v-on:keyup.enter="$emit('submit')"
                 type="text"
                 id="input-code"
                 :placeholder="$t(`${translation}.uniqueCode`)"/>
