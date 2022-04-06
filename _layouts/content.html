@@ -47,10 +47,13 @@
     {% endif %}
 
   </main>
-  {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
-    {% include footer.html for="scanner" %}
-  {% else %}
-    {% include footer.html %}
-  {% endif %}
+    {% if page.showContact  %}
+        {% include components/helpdesk-faqs.html %}
+    {% endif %} 
+    {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
+        {% include footer.html for="scanner" %}
+    {% else %}
+        {% include footer.html %}
+    {% endif %}
 </body>
 </html>
