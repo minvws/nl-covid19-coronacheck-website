@@ -2,7 +2,7 @@
 layout: download-the-app
 lang: en
 showBreadCrumbs: true
-title: 'Download the CoronaCheck app'
+title: 'Download the app'
 ---
 With the CoronaCheck app you can conveniently create and save your coronavirus pass on your smartphone.
 
