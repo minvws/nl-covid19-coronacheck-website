@@ -193,6 +193,10 @@
     </div>
 
   </main>
+  {% if page.showContact  %}
+        {% include components/helpdesk-faqs.html %}
+    {% endif %} 
+    
   {% include footer.html %}
 </body>
 </html>
