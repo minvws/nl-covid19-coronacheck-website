@@ -46,14 +46,16 @@
       </p>
     {% endif %}
 
-  </main>
     {% if page.showContact  %}
         {% include components/helpdesk-faqs.html %}
     {% endif %} 
-    {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
+
+</main>
+
+{% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
         {% include footer.html for="scanner" %}
-    {% else %}
-        {% include footer.html %}
-    {% endif %}
+{% else %}
+    {% include footer.html %}
+{% endif %}
 </body>
 </html>
