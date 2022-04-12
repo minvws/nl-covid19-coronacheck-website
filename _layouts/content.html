@@ -14,7 +14,7 @@
     {% include header-slim.html %}
   {% endif %}
   
-  <main class="content-center" id="content">
+<main class="content-center" id="content">
     {% if page.showBreadCrumbs %}
       {% include components/breadcrumbs.html title=page.title collection=page.collection %}
     {% endif %}
@@ -45,11 +45,6 @@
         </a>
       </p>
     {% endif %}
-
-    {% if page.showContact  %}
-        {% include components/helpdesk-faqs.html %}
-    {% endif %} 
-
 </main>
 
 {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
