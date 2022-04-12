@@ -53,6 +53,6 @@ CCScanner_downloads_plot = [
     { "downloadnr": 3.073253, "date": "2022-03-11" },
     { "downloadnr": 3.081987, "date": "2022-03-18" },
     { "downloadnr": 3.091294, "date": "2022-03-25" },
-    { "downloadnr": 3.097042, "date": "2022-03-30" }
-    
+    { "downloadnr": 3.097042, "date": "2022-03-30" },
+    { "downloadnr": 3.109676, "date": "2022-04-12" }
 ]
