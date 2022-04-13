@@ -28,7 +28,8 @@ const state = {
     // we keep this registration for the focus of screenreaders.
     visitedHomePage: false,
     slotModalActive: false,
-    vaccinationWithPositiveTestEnabled: true // when true, show a consent and hide all faq's
+    vaccinationWithPositiveTestEnabled: true, // when true, show a consent and hide all faq's,
+    showListBeforeOverview: true // will show a list of proofs before an overview page
 };
 
 const getters = {
@@ -54,6 +55,9 @@ const getters = {
     is1G: (state, { isPolicy }) => {
         // 1G when disclosurePolicies = ['1G']
         return isPolicy('1G');
+    },
+    isListBeforeOverview: ({ showListBeforeOverview }) => {
+        return showListBeforeOverview
     },
     isUserConsentDisabledOnHome: ({ isUserConsentDisabledOnHome }) => {
         return isUserConsentDisabledOnHome

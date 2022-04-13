@@ -6,6 +6,7 @@ import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
 import { FilterTypes } from '@/types/filter-types'
 import { ProviderTypes } from '@/types/provider-types'
 import { events as StorageEvent } from '@/store/modules/storage'
+import { RouterNames } from '@/qr/router'
 
 export default {
     name: 'VaccinationRedirect',
@@ -13,7 +14,9 @@ export default {
     mixins: [redirectMixin],
     data() {
         const withPositiveTest = this.$store.getters[StorageEvent.WITH_POSITIVE_TEST]
-        const overview = withPositiveTest ? 'CollectPositiveTest' : 'VaccinationOverview';
+        const positiveTest = 'CollectPositiveTest'
+        const overview = this.$store.getters.isListBeforeOverview ? RouterNames.VACCINATION_OVERVIEW_LIST : 'VaccinationOverview'
+
         return {
             isLoading: false,
             filter: FilterTypes.VACCINATION,
@@ -21,7 +24,7 @@ export default {
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectVaccination',
-                overview,
+                overview: withPositiveTest ? positiveTest : overview,
                 noResult: 'VaccinationsNone'
             }
         }
