@@ -6,7 +6,7 @@
          <PageIntro v-bind="intro"/>
            <div class="section-block">
                  <VaccinationSummary
-                    :signed-event-set="signedVaccinations"
+                    :signed-event-set="vaccinationSummary"
                 />
                 <CcButton
                     @select="$router.push(next)"
@@ -46,11 +46,18 @@ export default Vue.extend({
         link: {
             type: Object,
             required: false
+        },
+        next: {
+            type: Object,
+            required: false
         }
     },
     computed: {
-        next () {
-            return { name: 'vaccinationOverview', params: this.$route.params }
+        vaccinationSummary () {
+            return [
+                ...this.signedVaccinations,
+                ...[this.$store.state.signedEvents.addedProofs]
+            ]
         }
     }
 })

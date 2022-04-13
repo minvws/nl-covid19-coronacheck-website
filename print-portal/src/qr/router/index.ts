@@ -45,6 +45,9 @@ const routes: Array<RouteConfig> = [
                 to: {
                     name: RouterNames.MISSING_VACCINATION
                 }
+            },
+            next: {
+                name: RouterNames.VACCINATION_OVERVIEW
             }
         }
     },
