@@ -3,10 +3,11 @@
 <Page
     @back="$router.go(-1)">
     <div class="section">
+        <pre>{{ $props }}</pre>
          <PageIntro v-bind="intro"/>
            <div class="section-block">
                  <VaccinationSummary
-                    :signed-event-set="signedVaccinations"
+                    :signed-event-set="vaccinationSummary"
                 />
                 <CcButton
                     @select="$router.push(next)"
@@ -45,12 +46,26 @@ export default Vue.extend({
     props: {
         link: {
             type: Object,
-            required: false
+            required: true
+        },
+        next: {
+            type: Object,
+            required: true
+        },
+        id: {
+            type: String,
+            required: true
         }
     },
     computed: {
-        next () {
-            return { name: 'vaccinationOverview', params: this.$route.params }
+        name () {
+            return this.id
+        },
+        vaccinationSummary () {
+            return [
+                ...this.signedVaccinations,
+                ...[this.$store.state.signedEvents.addedProofs]
+            ]
         }
     }
 })

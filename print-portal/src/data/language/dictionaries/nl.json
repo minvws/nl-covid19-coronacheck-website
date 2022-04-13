@@ -568,7 +568,7 @@
             "pageHeader": "Kloppen de gegevens?",
             "pageIntro": "<p>Als de gegevens kloppen kun je een bewijs maken.<\/p>"
         },
-        "vaccinationOverviewList": {
+        "proofsOverviewList": {
             "pageHeader": "Zijn dit al jouw vaccinaties?",
             "pageIntro": "<p>Deze vaccinaties hebben we opgehaald bij de GGD en het RIVM:<\/p>",
             "button": "Ja, volgende",

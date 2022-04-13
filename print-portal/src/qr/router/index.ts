@@ -9,10 +9,9 @@ import QRProofIntroductionPage from '@/qr/pages/QRProofIntroductionPage.vue'
 import QRLetterCombinationPage from '@/qr/pages/QRLetterCombinationPage.vue'
 import QRLetterCombinationValidationPage from '@/qr/pages/QRLetterCombinationValidationPage.vue'
 import QRLetterCombinationInvalidPage from '@/qr/pages/QRLetterCombinationInvalidPage.vue'
-import VaccinationOverviewList from '@/components/views/3-collect/vaccination/happy/VaccinationOverviewList.vue'
+import ProofsOverviewList from '@/components/views/3-collect/recovery/happy/ProofsOverviewList.vue'
 import VaccinationOverview from '@/components/views/3-collect/vaccination/happy/VaccinationOverview.vue'
 import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview.vue'
-import RecoveryOverviewList from '@/components/views/3-collect/recovery/happy/RecoveryOverviewList.vue'
 
 import i18n from '@/i18n'
 
@@ -31,15 +30,18 @@ export enum RouterNames {
     NO_LETTER_COMBINATION = 'noLetterCombination',
     SCANNER_COMPLETE = 'scannerComplete',
     VACCINATION_OVERVIEW = 'vaccinationOverview',
-    VACCINATION_OVERVIEW_LIST = 'vaccinationOverviewList'
+    VACCINATION_OVERVIEW_LIST = 'vaccinationOverviewList',
+    RECOVERY_OVERVIEW = 'recoveryOverview',
+    RECOVERY_OVERVIEW_LIST = 'recoveryOverviewList'
 
 }
 const routes: Array<RouteConfig> = [
     {
         path: '/jouw-vaccinaties',
-        component: VaccinationOverviewList,
+        component: ProofsOverviewList,
         name: RouterNames.VACCINATION_OVERVIEW_LIST,
         props: {
+            id: 'proofsOverviewList',
             link: {
                 to: {
                     name: RouterNames.MISSING_VACCINATION
@@ -51,19 +53,29 @@ const routes: Array<RouteConfig> = [
         }
     },
     {
+        path: '/jouw-herstelbewijzen',
+        name: RouterNames.RECOVERY_OVERVIEW_LIST,
+        component: ProofsOverviewList,
+        props: {
+            id: 'proofsOverviewList',
+            link: {
+                to: {
+                    name: RouterNames.MISSING_VACCINATION
+                }
+            },
+            next: {
+                name: RouterNames.RECOVERY_OVERVIEW
+            }
+        }
+    },
+    {
         path: '/jouw-vaccinaties-overzicht',
         component: VaccinationOverview,
         name: RouterNames.VACCINATION_OVERVIEW
     },
     {
-        path: '/recovery',
-        name: 'RecoveryOverviewList',
-        component: RecoveryOverviewList,
-        props: true
-    },
-    {
         path: '/recovery-overzicht',
-        name: 'RecoveryOverview',
+        name: RouterNames.RECOVERY_OVERVIEW,
         component: RecoveryOverview,
         props: true
     },
