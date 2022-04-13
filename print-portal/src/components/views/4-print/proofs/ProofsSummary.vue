@@ -5,39 +5,54 @@ import vaccinationOverviewMixin from '@/components/views/3-collect/_shared/vacci
 import { ProviderTypes } from '@/types/provider-types';
 
 export default {
-    name: 'VaccinationSummary',
+    name: 'ProofsSummary',
     mixins: [proofEventMixin, vaccinationOverviewMixin],
     props: {
-        signedEventSet: {
+        events: {
             type: Array,
             required: true
         }
     },
     computed: {
         group () {
-            return this.vaccinations.reduce((cul, cur) => {
+            return this.list.reduce((cul, cur) => {
                 if (!cul[cur.name]) cul[cur.name] = []
                 cul[cur.name].push(cur)
                 return cul
             }, {})
         },
-        vaccinations () {
-            const list = this.signedEventSet.flat().map(({ providerIdentifier, event }) => {
-                const type = 'vaccination'
-                const { hpkCode, date } = event[type]
+        list () {
+            const list = this.events.flat().map(({ providerIdentifier, event }) => {
                 const provider = this.$store.getters['eventProviders/getTestProviderByIdentifier'](providerIdentifier);
-                const dateString = this.formateDate(date)
-                return { hpkCode, type, name: this.getName(provider), date, dateString }
+                const name = this.getName(provider)
+                const { type } = event
+                switch (type) {
+                case 'vaccination':
+                    return this.getVaccination({ name, event, type });
+                case 'positivetest':
+                    return this.getPositiveTest({ name, event, type });
+                }
+                throw new Error('unsupported')
             })
-            return list.filter((a, index) => {
+            return list.filter(a => !!a).filter((a, index) => {
                 const position = list.findIndex(({ hpkCode, date, type }) => {
-                    return hpkCode === a.hpkCode && date === a.date && type === a.type
+                    return hpkCode === a?.hpkCode && date === a.date && type === a.type
                 })
                 return position === index
             })
         }
     },
     methods: {
+        getPositiveTest ({ name, event, type }) {
+            const { sampleDate } = event[type]
+            const dateString = this.formateDate(sampleDate)
+            return { type, name, dateString }
+        },
+        getVaccination ({ name, event, type }) {
+            const { hpkCode, date } = event[type]
+            const dateString = this.formateDate(date)
+            return { hpkCode, type, name, date, dateString }
+        },
         formateDate(date) {
             return dateTool.dateToString(date, 'date-without-day', this.currentLanguage.locale);
         },
@@ -45,6 +60,7 @@ export default {
             return provider?.name ?? ProviderTypes.DCC
         },
         getTitle (providerName) {
+            console.log({ providerName })
             if (providerName === ProviderTypes.DCC) return this.$t('components.eventInfo.scannedQR')
             return `${this.$t('components.eventInfo.receivedFrom')} ${providerName}`
         }

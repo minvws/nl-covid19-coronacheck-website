@@ -33,6 +33,7 @@
             "name": "Naam",
             "vaccinationResult": "Vaccinatie",
             "testResult": "Testuitslag",
+            "positivetestResult": "Positieve testuitslag",
             "validFrom": "Geldig vanaf",
             "validUntil": "Geldig tot",
             "receivedFrom": "Opgehaald via",

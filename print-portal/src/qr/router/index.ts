@@ -40,15 +40,18 @@ const routes: Array<RouteConfig> = [
         path: '/jouw-vaccinaties',
         component: ProofsOverviewList,
         name: RouterNames.VACCINATION_OVERVIEW_LIST,
-        props: {
-            id: 'proofsOverviewList',
-            link: {
-                to: {
-                    name: RouterNames.MISSING_VACCINATION
+        props: ({ params }) => {
+            return {
+                ...params,
+                id: 'proofsOverviewList',
+                link: {
+                    to: {
+                        name: RouterNames.MISSING_VACCINATION
+                    }
+                },
+                next: {
+                    name: RouterNames.VACCINATION_OVERVIEW
                 }
-            },
-            next: {
-                name: RouterNames.VACCINATION_OVERVIEW
             }
         }
     },
@@ -56,15 +59,18 @@ const routes: Array<RouteConfig> = [
         path: '/jouw-herstelbewijzen',
         name: RouterNames.RECOVERY_OVERVIEW_LIST,
         component: ProofsOverviewList,
-        props: {
-            id: 'proofsOverviewList',
-            link: {
-                to: {
-                    name: RouterNames.MISSING_VACCINATION
+        props: ({ params }) => {
+            return {
+                ...params,
+                id: 'proofsOverviewList',
+                link: {
+                    to: {
+                        name: RouterNames.MISSING_VACCINATION
+                    }
+                },
+                next: {
+                    name: RouterNames.RECOVERY_OVERVIEW
                 }
-            },
-            next: {
-                name: RouterNames.RECOVERY_OVERVIEW
             }
         }
     },

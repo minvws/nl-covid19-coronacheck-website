@@ -3,14 +3,13 @@
 <Page
     @back="$router.go(-1)">
     <div class="section">
-        <pre>{{ $props }}</pre>
          <PageIntro v-bind="intro"/>
            <div class="section-block">
-                 <VaccinationSummary
-                    :signed-event-set="vaccinationSummary"
-                />
+                <ProofsSummary v-bind="{
+                    events
+                }" />
                 <CcButton
-                    @select="$router.push(next)"
+                    @select="$router.push({ ...next, params: { message} } )"
                     :label="button"
                 />
                 <PrintFaqLink
@@ -29,19 +28,19 @@ import Vue from 'vue'
 import Page from '@/components/elements/Page.vue';
 import PageIntro from '@/components/elements/PageIntro.vue';
 import PrintFaqLink from '@/components/views/4-print/PrintFaqLink.vue'
-import VaccinationSummary from '@/components/views/3-collect/vaccination/happy/VaccinationSummary.vue';
 import vaccinationOverviewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
 import CcButton from '@/components/elements/CcButton';
 import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
+import ProofsSummary from '@/components/views/4-print/proofs/ProofsSummary.vue';
 
 export default Vue.extend({
     mixins: [pageIntroMixin, vaccinationOverviewMixin],
     components: {
         Page,
         PageIntro,
-        VaccinationSummary,
         CcButton,
-        PrintFaqLink
+        PrintFaqLink,
+        ProofsSummary
     },
     props: {
         link: {
@@ -55,23 +54,38 @@ export default Vue.extend({
         id: {
             type: String,
             required: true
+        },
+        message: {
+            type: String,
+            required: false
         }
+
     },
     computed: {
         name () {
             return this.id
         },
-        vaccinationSummary () {
-            return [
-                ...this.signedVaccinations,
-                ...[this.$store.state.signedEvents.addedProofs]
-            ]
+        events () {
+            const events = this.$store.getters['signedEvents/getProofEvents']('all');
+            return events.map(item => {
+                const tag = item.event.type
+                return {
+                    ...item,
+                    tag
+                }
+            })
         }
     }
 })
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables/sizes.scss";
+.warning {
+    margin-bottom: 2 * $grid-x2-5;
+    background: #F3F5FE;
+    border-color: #F3F5FE;
+}
 .link {
     display: block;
     padding-top: 1em;
