@@ -137,7 +137,9 @@ const routes: Array<RouteConfig> = [
     {
         path: '/scanner-complete',
         name: RouterNames.SCANNER_COMPLETE,
-        component: QRScannerComplete
+        redirect: () => {
+            return { name: RouterNames.VACCINATION_OVERVIEW_LIST }
+        }
     },
     {
         path: '/scannen-met-camera',
@@ -150,10 +152,10 @@ const routes: Array<RouteConfig> = [
         component: QRFromImageOrPDFPage,
         props: {
             accepted: {
-                name: RouterNames.CHOOSE_ADD_PROOF
+                name: RouterNames.LETTER_COMBINATION_VALIDATION
             },
             rejected: {
-                name: RouterNames.LETTER_COMBINATION_VALIDATION
+                name: RouterNames.LETTER_COMBINATION_INVALID
             }
         }
     },
@@ -175,11 +177,11 @@ const routes: Array<RouteConfig> = [
         props: {
             link: {
                 to: {
-                    name: RouterNames.CHOOSE_ADD_PROOF
+                    name: RouterNames.SCANNER_COMPLETE
                 }
             },
             next: {
-                name: RouterNames.SCANNER_COMPLETE
+                name: RouterNames.CHOOSE_ADD_PROOF
             }
         },
         component: QRLetterCombinationInvalidPage

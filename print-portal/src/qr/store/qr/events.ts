@@ -4,7 +4,8 @@ export enum action {
   REMOVE_PENDING = 'REMOVE_PENDING',
   CLEAR_PENDING = 'CLEAR_PENDING',
   REMOVE = 'REMOVE',
-  CODE = 'CODE'
+  CODE = 'CODE',
+  CLEAR = 'CLEAR'
 }
 
 export enum mutation {
@@ -13,7 +14,8 @@ export enum mutation {
   REMOVE_PENDING = 'REMOVE_PENDING',
   CLEAR_PENDING = 'CLEAR_PENDING',
   REMOVE = 'REMOVE',
-  CODE = 'CODE'
+  CODE = 'CODE',
+  CLEAR = 'CLEAR'
 }
 
 export enum getter {

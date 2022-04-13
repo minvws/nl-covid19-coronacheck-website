@@ -23,6 +23,7 @@ export default {
             onAddPendingQR: QRAction.ADD_PENDING,
             onRemovePendingQR: QRAction.REMOVE_PENDING,
             onClearPendingQRS: QRAction.CLEAR_PENDING,
+            onClearQRs: QRAction.CLEAR,
             setLetterCombination: QRAction.CODE
         })
     }

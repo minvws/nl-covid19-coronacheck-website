@@ -46,11 +46,12 @@ export default QRMixin.extend({
             return
         }
         this.onSend({ couplingCode, credential })
+        this.onClearQRs()
     },
     methods: {
         onComplete (payload) {
             const { result } = decodeQRtoDCC(payload.credential)
-            this.$store.dispatch('signedEvents/signedEvent', result);
+            this.$store.dispatch('signedEvents/signedEvent', { result, payload });
             this.$router.replace(this.accepted)
         },
         async onSend (payload) {
@@ -74,7 +75,7 @@ export default QRMixin.extend({
                 }
             } catch (e) {
                 console.log(e)
-                // this.$router.replace(this.rejected)
+                this.$router.replace(this.rejected)
             }
         }
     }

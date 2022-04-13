@@ -20,5 +20,8 @@ export const actions = {
     },
     [QRAction.CODE]({ commit }: QRActionContext, code: any): void {
         commit(QRMutation.CODE, code)
+    },
+    [QRAction.CLEAR]({ commit }: QRActionContext): void {
+        commit(QRMutation.CLEAR)
     }
 }

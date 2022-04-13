@@ -2,6 +2,9 @@ import { mutation as QRMutation } from './events'
 import { QRData, QRState } from './types'
 
 export const mutations = {
+    [QRMutation.CLEAR]: ({ qrs }: QRState): void => {
+        qrs.length = 0
+    },
     [QRMutation.ADD]: ({ qrs }: QRState, qr: QRData): void => {
         qrs.push(qr)
     },
