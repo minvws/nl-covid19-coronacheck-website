@@ -39,7 +39,8 @@ export const isValidQR = (qr: string) => {
 
 const isOfType = (scan: string, filter: string) => {
     const { result: { events } } = decodeQRtoDCC(scan)
-    const match = !events?.find(({ type }) => type !== filter)
+    const types : { type: string} [] | undefined = events;
+    const match = !types?.find(({ type }) => type !== filter)
     return match
 }
 export const NO_QR_CODE_FOUND = `Scanner error: ${QrScanner.NO_QR_CODE_FOUND}`

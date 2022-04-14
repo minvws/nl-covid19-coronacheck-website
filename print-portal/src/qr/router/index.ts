@@ -165,8 +165,7 @@ const routes: Array<RouteConfig> = [
         path: '/scanner-complete',
         name: RouterNames.SCANNER_COMPLETE,
         redirect: () => {
-            alert('sja')
-            return { name: RouterNames.VACCINATION_OVERVIEW_LIST }
+            return { name: RouterNames.VACCINATION_OVERVIEW_LIST, replace: true }
         }
     },
     {

@@ -36,7 +36,7 @@ import FileInput from '@/qr/components/QRScanner/FileInput.vue'
 import FilePreview from '@/qr/components/QRScanner/FilePreview.vue'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
 import QRList from '@/qr/components/QRScanner/QRList.vue'
-import { scanQR, getQRFromPDFile, ERROR_INVALID_QR } from '@/qr/utils/QRScanner'
+import { scanQR, getQRFromPDFile } from '@/qr/utils/QRScanner'
 import { isPDF, isImage } from '@/qr/utils/FileType'
 import qrMixin, { QRMixin, QRData } from '@/qr/mixins/qr-mixin'
 
@@ -74,13 +74,6 @@ export default QRMixin.extend({
         }
     },
     methods: {
-        openErrorInDialog (message: string) {
-            if (message === ERROR_INVALID_QR) {
-                this.openDialogError(this.$t('qr.dialog.invalid'))
-                return true
-            }
-            return false
-        },
         onCapture({ result, src }: QRData) {
             this.onAddQR({ result, src })
             this.codesAdded++
@@ -124,14 +117,6 @@ export default QRMixin.extend({
             } finally {
                 this.isPending = false
             }
-        },
-        openDialogError ({ title, body }) {
-            this.$store.commit('modal/set', {
-                messageHead: title,
-                messageBody: body,
-                showConfirm: false,
-                closeButton: true
-            })
         }
     }
 })

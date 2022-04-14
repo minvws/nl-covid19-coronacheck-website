@@ -2,12 +2,13 @@ import Vue, { VueConstructor } from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 import { getter as QRGetter, action as QRAction } from '@/qr/store/qr/events'
 import { QRData as QRDataType } from '@/qr/store/qr/types'
+import { ERROR_INVALID_QR } from '@/qr/utils/QRScanner'
+export type QRData = QRDataType
+export type Modal = { title: string, body: string }
 
 const moduleName = 'qr'
 
-export type QRData = QRDataType
-
-export default {
+export default Vue.extend({
     computed: {
         ...mapGetters(moduleName, {
             captures: QRGetter.QR,
@@ -17,6 +18,22 @@ export default {
         })
     },
     methods: {
+        openErrorInDialog (message: string) {
+            if (message === ERROR_INVALID_QR) {
+                const message: unknown = this.$t('qr.dialog.invalid')
+                this.openDialogError(message as Modal)
+                return true
+            }
+            return false
+        },
+        openDialogError ({ title, body }: Modal) {
+            this.$store.commit('modal/set', {
+                messageHead: title,
+                messageBody: body,
+                showConfirm: false,
+                closeButton: true
+            })
+        },
         ...mapActions(moduleName, {
             onAddQR: QRAction.ADD,
             onRemoveQR: QRAction.REMOVE,
@@ -27,13 +44,15 @@ export default {
             setLetterCombination: QRAction.CODE
         })
     }
-}
+})
 
 export type QRMixinType = {
   onAddQR: (qr: QRData) => void
   onRemoveQR: (qr: QRData) => void
   onAddPendingQR: (qr: QRData) => void
-  onRemovePendingQR: (qr: QRData) => void
+  onRemovePendingQR: (qr: QRData) => void,
+  openErrorInDialog: (message: string) => boolean,
+  openDialogError: (modal: Modal) => void,
   onClearPendingQRS: () => void
   setLetterCombination: (combination: any) => void // @TODO type
   letterCombination: any; // @TODO type

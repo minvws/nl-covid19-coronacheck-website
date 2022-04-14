@@ -61,7 +61,8 @@ const getHolderFromDCC = (dcc: DCC) => {
 }
 
 const getEvents = (dcc: DCC) => {
-    return getRemoteVaccinationFromDcc(dcc) || getRemoteRecoveryFromDcc(dcc) || getRemoteTestFromDcc(dcc)
+    // return getRemoteVaccinationFromDcc(dcc) ||
+    return getRemoteRecoveryFromDcc(dcc) || getRemoteTestFromDcc(dcc)
 }
 
 const getProviderIdentifier = (dcc: DCC) => {
