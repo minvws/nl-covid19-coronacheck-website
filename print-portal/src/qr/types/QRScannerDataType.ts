@@ -26,14 +26,11 @@ export const showCameraState = (type: CameraState): boolean => {
 }
 
 type QRScannerDataType = {
-  isDebug: boolean
   isAutoStart: boolean
   isReady: boolean
   isStartPending: boolean
   isStopPending: boolean
   isStarted: boolean
-  cameraHasFlash: boolean
-  cameraIsFlashOn: boolean
   qrScanner: null | QrScanner
   cameras: null | QrScanner.Camera[]
   cameraId: null | string

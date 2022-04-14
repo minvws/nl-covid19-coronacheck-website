@@ -37,27 +37,12 @@
       @capture="onCapture"
       @clear="onCaptureClear"
     />
-    <CameraResult v-if="isDebug" class="pa ma" :result="result" />
-    <CameraButtons
-      v-if="isDebug"
-      v-bind="{ isStarted, isStartPending, isStopPending, isAutoStart }"
-      @start="onStart"
-      @stop="onStop"
-    />
-    <CameraFlashlight
-      v-if="isDebug"
-      :enabled="cameraIsFlashOn"
-      v-model="cameraIsFlashOn"
-    />
   </div>
 </template>
 
 <script lang="ts">
 import PageIntro from '@/components/elements/PageIntro.vue';
-import CameraFlashlight from './CameraFlashlight.vue'
 import CameraList from './CameraList.vue'
-import CameraButtons from './CameraButtons.vue'
-import CameraResult from './CameraResult.vue'
 import CameraRender from './CameraRender.vue'
 import CameraStatus from './CameraStatus.vue'
 import CameraCaptures from './CameraCaptures.vue'
@@ -76,9 +61,6 @@ export default QRMixin.extend({
     mixins: [qrMixin, pageIntroMixin],
     components: {
         PageIntro,
-        CameraResult,
-        CameraButtons,
-        CameraFlashlight,
         CameraList,
         CameraRender,
         CameraStatus,
@@ -87,7 +69,6 @@ export default QRMixin.extend({
     },
     data(): QRScannerDataType {
         return {
-            isDebug: false,
             isReady: false,
             isAutoStart: true,
             isStartPending: false,
@@ -97,8 +78,6 @@ export default QRMixin.extend({
             cameras: null,
             cameraId: null,
             pendingCameraId: null,
-            cameraHasFlash: false,
-            cameraIsFlashOn: false,
             cameraDefaultFacingMode: CameraFacingMode.ENVIRONMENT,
             error: null,
             code: null,
@@ -114,7 +93,6 @@ export default QRMixin.extend({
         },
         isStarted(): void {
             if (!this.isStarted) this.cameraId = null
-            this.updateCameraProps()
         },
         code(result: string) {
             if (!result) return
@@ -210,15 +188,6 @@ export default QRMixin.extend({
         async listCameras() {
             this.state = CameraState.LIST
             this.cameras = await QrScanner.listCameras(this.isAutoStart)
-        },
-        async updateCameraProps(): Promise<void> {
-            if (this.isStarted) {
-                this.cameraHasFlash = (await this.qrScanner?.hasFlash()) || false
-                this.cameraIsFlashOn = this.qrScanner?.isFlashOn() || false
-            } else {
-                this.cameraHasFlash = false
-                this.cameraIsFlashOn = false
-            }
         }
     },
     async mounted(): Promise<void> {
