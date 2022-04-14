@@ -43,13 +43,13 @@ const isOfType = (scan: string, filter: string) => {
     return match
 }
 export const NO_QR_CODE_FOUND = `Scanner error: ${QrScanner.NO_QR_CODE_FOUND}`
-export const INVALID_QR = 'INVALID_QR'
+export const ERROR_INVALID_QR = 'ERROR_INVALID_QR'
 
 export const scanQR = async (input: any) => { // @TODO: fix type
     const scan = await QrScanner.scanImage(input)
     if (!scan) return null
     if (!isValidQR(scan) || !isOfType(scan, FilterTypes.VACCINATION)) {
-        return Promise.reject(INVALID_QR)
+        return Promise.reject(ERROR_INVALID_QR)
     }
     return scan
 }

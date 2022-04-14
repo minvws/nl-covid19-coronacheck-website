@@ -36,7 +36,7 @@ import FileInput from '@/qr/components/QRScanner/FileInput.vue'
 import FilePreview from '@/qr/components/QRScanner/FilePreview.vue'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
 import QRList from '@/qr/components/QRScanner/QRList.vue'
-import { scanQR, getQRFromPDFile } from '@/qr/utils/QRScanner'
+import { scanQR, getQRFromPDFile, ERROR_INVALID_QR } from '@/qr/utils/QRScanner'
 import { isPDF, isImage } from '@/qr/utils/FileType'
 import qrMixin, { QRMixin, QRData } from '@/qr/mixins/qr-mixin'
 
@@ -75,7 +75,7 @@ export default QRMixin.extend({
     },
     methods: {
         openErrorInDialog (message: string) {
-            if (message === 'INVALID_QR') {
+            if (message === ERROR_INVALID_QR) {
                 this.openDialogError(this.$t('qr.dialog.invalid'))
                 return true
             }
@@ -117,7 +117,10 @@ export default QRMixin.extend({
                 this.isPending = true
                 await this.onScanFile(file)
             } catch (error: unknown) {
-                this.error = (error as Error)?.message || error as string
+                const message = (error as Error)?.message || error as string
+                if (!this.openErrorInDialog(message)) {
+                    this.error = (error as Error)?.message || error as string
+                }
             } finally {
                 this.isPending = false
             }
