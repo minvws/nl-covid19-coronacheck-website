@@ -300,10 +300,6 @@
             "pageIntro": "<p>Je hebt alleen een lettercombinatie als je jouw bewijs hebt aangevraagd bij een zorgverlener, bijvoorbeeld je huisarts. Of als je deze van de Nederlandse overheid hebt gekregen per post.<br><br>Heb je geen lettercombinatie of ben je deze kwijt? Dan is het helaas niet mogelijk om de gegevens van je vaccinatie nu op te halen. Vraag eerst een nieuw bewijs met bijbehorende lettercombinatie aan bij je zorgverlener of de overheid.<\/p>",
             "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
         },
-        "chooseDomesticQR": {
-            "pageHeader": "todo",
-            "pageIntro": ""
-        },
         "chooseInternationalQR": {
             "pageHeader": "Buitenlands bewijs van vaccinatie",
             "pageIntro": "<p>Helaas kun je op dit moment met CoronaCheck nog niet de gegevens ophalen van vaccinaties die je in het buitenland hebt gehad. Binnenkort wordt dit wel mogelijk.<\/p>",

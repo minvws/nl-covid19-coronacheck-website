@@ -2,7 +2,6 @@ import { RouteConfig } from 'vue-router'
 import QRGeneralPage from '@/qr/pages/QRGeneralPage.vue'
 import QRScannerPage from '@/qr/pages/QRScannerPage.vue'
 import QRFromImageOrPDFPage from '@/qr/pages/QRFromImageOrPDFPage.vue'
-import QRProofDomestic from '@/qr/pages/QRProofDomestic.vue'
 import QRProofInternational from '@/qr/pages/QRProofInternational.vue'
 import QRProofNone from '@/qr/pages/QRProofNone.vue'
 import QRProofIntroductionPage from '@/qr/pages/QRProofIntroductionPage.vue'
@@ -131,11 +130,6 @@ const routes: Array<RouteConfig> = [
                 }
             ]
         }
-    },
-    {
-        path: '/nederlands-bewijs',
-        name: RouterNames.PROOF_DOMESTIC,
-        component: QRProofDomestic
     },
     {
         path: '/internationaal-bewijs',
