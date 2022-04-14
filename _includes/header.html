@@ -52,7 +52,11 @@
                 </div>
 
                 <div class="hero__image">
-                    <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="360" height="280">
+                    {% if site.version == '0g' %}
+                        <img src="{{ site.baseurl }}/img/hero_image_0g.svg" alt="" width="360" height="280">
+                    {% else %}
+                        <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="360" height="280">
+                    {% endif %}
                 </div>
             </div>
         </div>
