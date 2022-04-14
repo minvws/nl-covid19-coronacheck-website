@@ -88,8 +88,6 @@ export const decodeQRtoDCC = (qr: string) => {
     return {
         dcc,
         result: {
-            // protocolVersion: '3.0',
-            // status: 'complete',
             providerIdentifier: getProviderIdentifier(dcc),
             holder: getHolderFromDCC(dcc),
             events: getEvents(dcc)
