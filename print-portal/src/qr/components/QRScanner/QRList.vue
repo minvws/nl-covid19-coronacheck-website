@@ -27,9 +27,10 @@
 import Vue from 'vue'
 import CameraFrame from '@/qr/components/QRScanner/CameraFrame.vue'
 import Dialog from '@/qr/components/Dialog.vue'
-import { TranslateResult } from 'vue-i18n'
+import qrResultMixin from '@/qr/mixins/qr-result-mixin'
 
 export default Vue.extend({
+    mixins: [qrResultMixin],
     components: {
         CameraFrame,
         Dialog
@@ -48,52 +49,15 @@ export default Vue.extend({
             required: false,
             default: 0.7
         },
-        duplicates: {
-            type: Boolean,
-            required: false,
-            default: false
-        },
         result: {
             type: Array as () => { result: string; src: string }[],
             required: false
-        },
-        captures: {
-            type: Array as () => { result: string; src: string }[],
-            required: true
-        }
-    },
-    data() {
-        return {
-            dialog: null as null | TranslateResult
-        }
-    },
-    watch: {
-        result: {
-            handler(result) {
-                if (!result) return
-                this.onScan(result)
-            },
-            immediate: true
         }
     },
     methods: {
         onRemoveCapture(qr: { result: string; src: string }) {
             this.$emit('remove', qr)
             this.$emit('clear')
-        },
-        isAlreadyScanned(target: string) {
-            return !!this.captures.find(({ result }) => result === target)
-        },
-        onScanResult(result: string, src?: string) {
-            if (!this.duplicates && this.isAlreadyScanned(result)) {
-                this.dialog = this.$t('qr.dialog.duplicate')
-                this.$emit('remove-pending', { result, src })
-                return
-            }
-            this.$emit('capture', { result, src })
-        },
-        async onScan(results: { result: string; src: string }[]) {
-            results.forEach(({ result, src }) => this.onScanResult(result, src))
         }
     }
 })
