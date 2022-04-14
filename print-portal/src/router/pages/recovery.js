@@ -1,7 +1,6 @@
 import CollectRecovery from '@/components/views/3-collect/recovery/CollectRecovery'
 import RecoveryRedirect from '@/components/views/3-collect/recovery/happy/RecoveryRedirect'
 import RecoveryExpired from '@/components/views/3-collect/recovery/unhappy/RecoveryExpired'
-import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview'
 import RecoveryNone from '@/components/views/3-collect/recovery/unhappy/RecoveryNone'
 import PrintRecovery from '@/components/views/4-print/PrintRecovery'
 import RecoveryLayout from '@/components/views/3-collect/recovery/unhappy/RecoveryLayout'
@@ -24,12 +23,8 @@ const recoveryPages = [
         meta: {
             title: 'views.recoveryOverview.pageHeader'
         }
-    }, {
-        path: '/recovery-overzicht',
-        name: 'RecoveryOverview',
-        component: RecoveryOverview,
-        props: true
-    }, {
+    },
+    {
         path: '/recovery-niet-gevonden',
         name: 'RecoveryNone',
         component: RecoveryNone,
