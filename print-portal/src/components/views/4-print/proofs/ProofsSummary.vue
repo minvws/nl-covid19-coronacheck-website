@@ -32,7 +32,7 @@ export default {
                 case 'positivetest':
                     return this.getPositiveTest({ name, event, type });
                 }
-                throw new Error('unsupported')
+                throw new Error('unsupported', type)
             })
             return list.filter(a => !!a).filter((a, index) => {
                 const position = list.findIndex(({ hpkCode, date, type }) => {
@@ -60,7 +60,6 @@ export default {
             return provider?.name ?? ProviderTypes.DCC
         },
         getTitle (providerName) {
-            console.log({ providerName })
             if (providerName === ProviderTypes.DCC) return this.$t('components.eventInfo.scannedQR')
             return `${this.$t('components.eventInfo.receivedFrom')} ${providerName}`
         }
