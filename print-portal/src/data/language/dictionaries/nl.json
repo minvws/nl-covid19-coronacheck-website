@@ -610,7 +610,6 @@
           }
         },
         "error": {
-          "no-renderer": "Cannot capture, no renderer",
           "not-started": "Er is iets fout gegaan met het starten van de camera"
         },
         "and": "en",

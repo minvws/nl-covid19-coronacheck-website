@@ -42,7 +42,7 @@ export default QRMixin.extend({
                 return;
             }
             if (!this.renderer) {
-                console.warn(this.$t('qr.error.no-renderer'));
+                console.warn(this.$t('qr.error.no-started'));
                 return;
             }
             this.$emit('capture', result);
