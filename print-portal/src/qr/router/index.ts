@@ -32,7 +32,8 @@ export enum RouterNames {
     VACCINATION_OVERVIEW = 'vaccinationOverview',
     VACCINATION_OVERVIEW_LIST = 'vaccinationOverviewList',
     RECOVERY_OVERVIEW = 'recoveryOverview',
-    RECOVERY_OVERVIEW_LIST = 'recoveryOverviewList'
+    RECOVERY_OVERVIEW_LIST = 'recoveryOverviewList',
+    PROOFS_OVERVIEW_LIST = 'proofsOverviewList'
 
 }
 const routes: Array<RouteConfig> = [
@@ -40,10 +41,13 @@ const routes: Array<RouteConfig> = [
         path: '/jouw-vaccinaties',
         component: ProofsOverviewList,
         name: RouterNames.VACCINATION_OVERVIEW_LIST,
+        meta: {
+            title: `views.${RouterNames.PROOFS_OVERVIEW_LIST}.pageHeader`
+        },
         props: ({ params }) => {
             return {
                 ...params,
-                id: 'proofsOverviewList',
+                id: RouterNames.PROOFS_OVERVIEW_LIST,
                 link: {
                     to: {
                         name: RouterNames.MISSING_VACCINATION
@@ -56,13 +60,16 @@ const routes: Array<RouteConfig> = [
         }
     },
     {
-        path: '/jouw-herstelbewijzen',
+        path: '/jouw-bewijzen',
         name: RouterNames.RECOVERY_OVERVIEW_LIST,
         component: ProofsOverviewList,
+        meta: {
+            title: `views.${RouterNames.PROOFS_OVERVIEW_LIST}.pageHeader`
+        },
         props: ({ params }) => {
             return {
                 ...params,
-                id: 'proofsOverviewList',
+                id: RouterNames.PROOFS_OVERVIEW_LIST,
                 link: {
                     to: {
                         name: RouterNames.MISSING_VACCINATION
@@ -158,6 +165,7 @@ const routes: Array<RouteConfig> = [
         path: '/scanner-complete',
         name: RouterNames.SCANNER_COMPLETE,
         redirect: () => {
+            alert('sja')
             return { name: RouterNames.VACCINATION_OVERVIEW_LIST }
         }
     },
