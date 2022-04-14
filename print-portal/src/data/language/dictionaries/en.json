@@ -511,12 +511,6 @@
         "noPositivetest": "Unfortunately, no suitable positive test result has been found to be recorded into your vaccination certificate."
     },
     "qr": {
-        "dialog": {
-          "duplicate": {
-            "title": "Duplicate QR",
-            "body": "This QR is already scanned"
-          }
-        },
         "error": {
           "not-started": "Something went wrong with starting the camera"
         },

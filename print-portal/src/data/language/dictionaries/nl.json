@@ -601,8 +601,8 @@
     "qr": {
         "dialog": {
           "duplicate": {
-            "title": "QR al toegevoegd",
-            "body": "Deze QR code is al eerder toegevoegd "
+            "title": "Deze QR code is al gescand",
+            "body": "Je hebt deze QR-code al ingescand. Probeer een andere QR-code te scannen."
           },
           "invalid": {
             "title": "Deze QR-code is niet van een vaccinatiebewijs",
