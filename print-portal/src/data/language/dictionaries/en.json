@@ -515,15 +515,10 @@
           "not-started": "Something went wrong with starting the camera"
         },
         "and": "and",
-        "or": "ar a",
+        "or": "or a",
         "camera": {
-          "title": "Show your QR in front of the camera",
           "start": "Start camera",
           "stop": "Stop camera",
-          "route": {
-            "title": "Scan your certificate",
-            "description": "I can show my certificate in front of my webcam or camera"
-          },
           "states": {
             "NONE": "",
             "STARTING": "Starting camera",
@@ -536,7 +531,6 @@
           "selected": "Selected camera"
         },
         "file": {
-          "title": "Add a file",
           "route": {
             "title": "Upload your certificate",
             "description": "I have my certificate on my phone or computed"
@@ -554,9 +548,9 @@
           }
         },
         "code": {
-          "scanned": "Scanned QR codes",
-          "not-found": "No QR code found",
-          "added": "{count} QR codes added | {count} QR code added"
+          "scanned": "Scanned QR-codes",
+          "not-found": "No QR-code found",
+          "added": "{count} QR-codes added | {count} QR-code added"
         }
       }
 }
