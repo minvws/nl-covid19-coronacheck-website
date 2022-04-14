@@ -72,7 +72,7 @@ $duration: 0.3s;
 }
 .icon-enter-active {
   position: relative;
-  transition: all $duration calc($duration / 2);
+  transition: all 0.3 0.15;
 }
 
 .icon-leave {
