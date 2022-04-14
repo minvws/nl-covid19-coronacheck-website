@@ -30,7 +30,7 @@ import qrResultMixin from '@/qr/mixins/qr-result-mixin'
 export default Vue.extend({
     mixins: [qrResultMixin],
     components: {
-        CameraFrame,
+        CameraFrame
     },
     props: {
         label: {

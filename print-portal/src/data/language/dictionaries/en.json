@@ -518,7 +518,7 @@
           }
         },
         "error": {
-          "not-started": "Something went wrong with starting the camera",
+          "not-started": "Something went wrong with starting the camera"
         },
         "and": "and",
         "or": "ar a",
