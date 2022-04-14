@@ -646,7 +646,7 @@
           }
         },
         "code": {
-          "scanned": "Gescande QR codes",
+          "scanned": "Gescande QR-codes",
           "not-found": "Geen QR-code gevonden",
           "added": "{count} QR-codes toegevoegd | {count} QR code toegevoegd"
         }
