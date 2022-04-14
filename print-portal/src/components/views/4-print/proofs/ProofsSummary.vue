@@ -3,7 +3,6 @@ import dateTool from '@/tools/date';
 import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 import vaccinationOverviewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
 import { ProviderTypes } from '@/types/provider-types';
-
 export default {
     name: 'ProofsSummary',
     mixins: [proofEventMixin, vaccinationOverviewMixin],
@@ -25,14 +24,7 @@ export default {
             const list = this.events.flat().map(({ providerIdentifier, event }) => {
                 const provider = this.$store.getters['eventProviders/getTestProviderByIdentifier'](providerIdentifier);
                 const name = this.getName(provider)
-                const { type } = event
-                switch (type) {
-                case 'vaccination':
-                    return this.getVaccination({ name, event, type });
-                case 'positivetest':
-                    return this.getPositiveTest({ name, event, type });
-                }
-                throw new Error('unsupported', type)
+                return this.getResult({ name, event });
             })
             return list.filter(a => !!a).filter((a, index) => {
                 const position = list.findIndex(({ hpkCode, date, type }) => {
@@ -43,14 +35,10 @@ export default {
         }
     },
     methods: {
-        getPositiveTest ({ name, event, type }) {
-            const { sampleDate } = event[type]
-            const dateString = this.formateDate(sampleDate)
-            return { type, name, dateString }
-        },
-        getVaccination ({ name, event, type }) {
-            const { hpkCode, date } = event[type]
-            const dateString = this.formateDate(date)
+        getResult ({ name, event }) {
+            const { type } = event
+            const { hpkCode, date, sampleDate } = event[type]
+            const dateString = this.formateDate(date || sampleDate)
             return { hpkCode, type, name, date, dateString }
         },
         formateDate(date) {

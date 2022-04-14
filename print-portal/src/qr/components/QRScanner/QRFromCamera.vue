@@ -16,13 +16,13 @@
       <SuccessMessage :codes-added="codesAdded" @clear="codesAdded = 0" />
     </div>
     <CameraList
-      v-bind="{
-        cameraId,
-        cameras,
-        pendingCameraId,
-        label: $t('qr.camera.selected')
-      }"
-      @select="setCamera"
+        v-bind="{
+            cameraId,
+            cameras,
+            pendingCameraId,
+            label: $t('qr.camera.selected')
+        }"
+        @select="setCamera"
     />
     <div class="title-mobile">
         <div class="only-mobile">

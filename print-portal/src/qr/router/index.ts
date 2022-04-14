@@ -164,7 +164,15 @@ const routes: Array<RouteConfig> = [
     {
         path: '/scannen-met-camera',
         name: RouterNames.CAMERA,
-        component: QRScannerPage
+        component: QRScannerPage,
+        props: {
+            accepted: {
+                name: RouterNames.LETTER_COMBINATION_VALIDATION
+            },
+            rejected: {
+                name: RouterNames.LETTER_COMBINATION_INVALID
+            }
+        }
     },
     {
         path: '/bestand-uploaden',
