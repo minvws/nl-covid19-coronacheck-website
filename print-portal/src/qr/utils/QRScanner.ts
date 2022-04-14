@@ -1,6 +1,8 @@
 import QrScanner from 'qr-scanner'
 import { getImagesFromPDFFile } from '@/qr/utils/PDFJsLib'
 import i18n from '@/i18n';
+import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
+import { FilterTypes } from '@/types/filter-types'
 
 export const isEuropeanQR = (qr: string) => {
     const regex = new RegExp(/^HC[0-9A-Z]\:/);
@@ -34,15 +36,22 @@ export const isValidLetterCombinationLengthError = (code: string) => {
 export const isValidQR = (qr: string) => {
     return isEuropeanQR(qr)
 }
+
+const isOfType = (scan: string, filter: string) => {
+    const { result: { events } } = decodeQRtoDCC(scan)
+    const match = !events?.find(({ type }) => type !== filter)
+    return match
+}
 export const NO_QR_CODE_FOUND = `Scanner error: ${QrScanner.NO_QR_CODE_FOUND}`
+export const INVALID_QR = 'INVALID_QR'
 
 export const scanQR = async (input: any) => { // @TODO: fix type
-    const result = await QrScanner.scanImage(input)
-    if (!result) return null
-    if (!isValidQR(result)) {
-        throw new Error(i18n.t('qr.error.invalidQR') as string);
+    const scan = await QrScanner.scanImage(input)
+    if (!scan) return null
+    if (!isValidQR(scan) || !isOfType(scan, FilterTypes.VACCINATION)) {
+        return Promise.reject(INVALID_QR)
     }
-    return result
+    return scan
 }
 
 export const getQRFromPDFile = async (file: File) => {
@@ -58,7 +67,7 @@ export const getQRFromPDFile = async (file: File) => {
     if (!results.length) {
         // no QR found, throw first error
         const message = (scans as { reason: string }[]).find(({ reason }) => reason)?.reason
-        throw new Error(message);
+        return Promise.reject(message)
     }
     return results
 }

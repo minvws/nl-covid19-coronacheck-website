@@ -5,8 +5,7 @@
             'is-pending': isPending,
             'drag-and-drop': isDragAndDrop,
             'is-over': isOver,
-            'drag': !!type,
-            'dialog': dialog
+            'drag': !!type
         }"
         @dragover.prevent.stop="isOver = true"
         @dragenter.prevent.stop="isOver = true"
@@ -28,12 +27,10 @@
                 />
             </template>
         </div>
-        <Dialog @close="dialog = null" v-if="dialog" v-bind="dialog" />
     </div>
 </template>
 <script>
 import Vue from 'vue';
-import Dialog from '@/qr/components/Dialog.vue';
 import Spinner from '@/qr/components/Spinner.vue';
 import AcceptFileTypes from '@/qr/components/AcceptFileTypes.vue';
 import { fileIsOfType } from '@/qr/utils/FileType';
@@ -41,8 +38,7 @@ import { fileIsOfType } from '@/qr/utils/FileType';
 export default Vue.extend({
     components: {
         AcceptFileTypes,
-        Spinner,
-        Dialog
+        Spinner
     },
     props: {
         isPending: {
@@ -67,14 +63,10 @@ export default Vue.extend({
         return {
             timeout: -1,
             isOver: false,
-            isDurationPending: this.isPending,
-            dialog: null
+            isDurationPending: this.isPending
         };
     },
     watch: {
-        dialog (dialog) {
-            this.$emit('dialog', dialog)
-        },
         isPending(isPending) {
             this.clear();
             if (isPending) this.isDurationPending = true;
@@ -95,7 +87,7 @@ export default Vue.extend({
             const file = dataTransfer?.files[0];
             if (!file) return;
             if (!fileIsOfType(this.accept, file)) {
-                this.dialog = this.labels.unsupported;
+                this.$emit('error', this.labels.unsupported)
                 return;
             }
             this.$emit('file', file);

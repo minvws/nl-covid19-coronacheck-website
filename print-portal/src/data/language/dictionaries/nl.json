@@ -603,12 +603,15 @@
           "duplicate": {
             "title": "QR al toegevoegd",
             "body": "Deze QR code is al eerder toegevoegd "
+          },
+          "invalid": {
+            "title": "Deze QR-code is niet van een vaccinatiebewijs",
+            "body": "Scan de QR-code die op het internationale vaccinatiebewijs staat dat je van je zorgverlener of de overheid hebt gekregen."
           }
         },
         "error": {
           "no-renderer": "Cannot capture, no renderer",
-          "not-started": "Er is iets fout gegaan met het starten van de camera",
-          "invalidQR": "Geen geldige Nederlandse of Internationale QR-code gevonden"
+          "not-started": "Er is iets fout gegaan met het starten van de camera"
         },
         "and": "en",
         "or": "of een",

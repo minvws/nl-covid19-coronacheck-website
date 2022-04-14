@@ -2,6 +2,7 @@ import * as base45 from 'base45'
 import * as cbor from 'cbor'
 import * as pako from 'pako'
 import { ProviderTypes } from '@/types/provider-types'
+import { FilterTypes } from '@/types/filter-types'
 
 type DCC = {
     nam: {
@@ -98,25 +99,28 @@ export const decodeQRtoDCC = (qr: string) => {
 
 const getRemoteTestFromDcc = (dcc: DCC) => {
     if (!dcc.t) return undefined;
-    return dcc.t.map((t) => ({
-        type: 'negativetest', //  'test', // @TODO
-        unique: t.ci ?? null,
-        isSpecimen: false,
-        negativetest: {
-            sampleDate: t?.sc ? formatSampleDate(t.sc) : null,
-            negativeResult: t?.tr === '260415000',
-            facility: t.tc ?? null,
-            type: t.tt ?? null,
-            name: t.nm ?? false,
-            manufacturer: t.ma ?? false
+    return dcc.t.map((t) => {
+        const negativeResult = t?.tr === '260415000'
+        return {
+            type: negativeResult ? FilterTypes.NEGATIVE_TEST : FilterTypes.POSITIVE_TEST,
+            unique: t.ci ?? null,
+            isSpecimen: false,
+            negativetest: {
+                sampleDate: t?.sc ? formatSampleDate(t.sc) : null,
+                negativeResult,
+                facility: t.tc ?? null,
+                type: t.tt ?? null,
+                name: t.nm ?? false,
+                manufacturer: t.ma ?? false
+            }
         }
-    }));
+    });
 }
 
 const getRemoteVaccinationFromDcc = (dcc: DCC) => {
     if (!dcc.v) return undefined;
     return dcc.v.map((v) => ({
-        type: 'vaccination',
+        type: FilterTypes.VACCINATION,
         unique: v?.ci ?? null,
         vaccination: {
             doseNumber: v?.dn ?? null,
@@ -137,7 +141,7 @@ const getRemoteVaccinationFromDcc = (dcc: DCC) => {
 const getRemoteRecoveryFromDcc = (dcc: DCC) => {
     if (!dcc.r) return undefined;
     return dcc.r.map((r) => ({
-        type: 'recovery',
+        type: FilterTypes.RECOVERY,
         unique: r?.ci ?? null,
         isSpecimen: false,
         recovery: {

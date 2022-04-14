@@ -4,6 +4,7 @@
       accept="image/jpeg,image/png,application/pdf"
       v-bind="{ isPending }"
       @file="onFileInput"
+      @error="openDialogError"
     />
     <div class="message">
       <SuccessMessage :codes-added="codesAdded" @clear="codesAdded = 0" />
@@ -73,6 +74,13 @@ export default QRMixin.extend({
         }
     },
     methods: {
+        openErrorInDialog (message: string) {
+            if (message === 'INVALID_QR') {
+                this.openDialogError(this.$t('qr.dialog.invalid'))
+                return true
+            }
+            return false
+        },
         onCapture({ result, src }: QRData) {
             this.onAddQR({ result, src })
             this.codesAdded++
@@ -89,7 +97,9 @@ export default QRMixin.extend({
                     this.onAddPendingQR(result)
                 })
             } catch (error) {
-                this.error = (error as Error)?.message || error as string
+                const message = (error as Error)?.message || error as string
+                if (this.openErrorInDialog(message)) return
+                this.error = message
             }
         },
         async onScanFile(file: File) {
@@ -111,6 +121,14 @@ export default QRMixin.extend({
             } finally {
                 this.isPending = false
             }
+        },
+        openDialogError ({ title, body }) {
+            this.$store.commit('modal/set', {
+                messageHead: title,
+                messageBody: body,
+                showConfirm: false,
+                closeButton: true
+            })
         }
     }
 })
