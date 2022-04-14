@@ -6,6 +6,8 @@ export enum LetterCombinationStatus {
 }
 
 export type LetterCombination = {
-    code: string,
-    result: string
+    code?: string,
+    result?: string,
+    couplingCode?: string,
+    credential?: string
 }

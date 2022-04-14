@@ -3,6 +3,8 @@ import { mapActions, mapGetters } from 'vuex'
 import { getter as QRGetter, action as QRAction } from '@/qr/store/qr/events'
 import { QRData as QRDataType } from '@/qr/store/qr/types'
 import { ERROR_INVALID_QR } from '@/qr/utils/QRScanner'
+import { LetterCombination } from '@/qr/types/QRLetterCombinationType'
+
 export type QRData = QRDataType
 export type Modal = { title: string, body: string }
 
@@ -54,8 +56,8 @@ export type QRMixinType = {
   openErrorInDialog: (message: string) => boolean,
   openDialogError: (modal: Modal) => void,
   onClearPendingQRS: () => void
-  setLetterCombination: (combination: any) => void // @TODO type
-  letterCombination: any; // @TODO type
+  setLetterCombination: (combination: LetterCombination | null) => void
+  letterCombination: LetterCombination;
 }
 
 export type QRScannerType = {
