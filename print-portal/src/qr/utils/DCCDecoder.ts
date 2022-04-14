@@ -61,8 +61,7 @@ const getHolderFromDCC = (dcc: DCC) => {
 }
 
 const getEvents = (dcc: DCC) => {
-    // return getRemoteVaccinationFromDcc(dcc) ||
-    return getRemoteRecoveryFromDcc(dcc) || getRemoteTestFromDcc(dcc)
+    return getRemoteVaccinationFromDcc(dcc) || getRemoteRecoveryFromDcc(dcc) || getRemoteTestFromDcc(dcc)
 }
 
 const getProviderIdentifier = (dcc: DCC) => {
@@ -102,11 +101,12 @@ const getRemoteTestFromDcc = (dcc: DCC) => {
     if (!dcc.t) return undefined;
     return dcc.t.map((t) => {
         const negativeResult = t?.tr === '260415000'
+        const type = negativeResult ? FilterTypes.NEGATIVE_TEST : FilterTypes.POSITIVE_TEST
         return {
-            type: negativeResult ? FilterTypes.NEGATIVE_TEST : FilterTypes.POSITIVE_TEST,
+            type,
             unique: t.ci ?? null,
             isSpecimen: false,
-            negativetest: {
+            [type]: {
                 sampleDate: t?.sc ? formatSampleDate(t.sc) : null,
                 negativeResult,
                 facility: t.tc ?? null,
