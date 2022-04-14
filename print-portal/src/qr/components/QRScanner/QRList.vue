@@ -19,21 +19,18 @@
         />
       </CameraFrame>
     </transition-group>
-    <Dialog @close="dialog = null" v-if="dialog" v-bind="dialog" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import CameraFrame from '@/qr/components/QRScanner/CameraFrame.vue'
-import Dialog from '@/qr/components/Dialog.vue'
 import qrResultMixin from '@/qr/mixins/qr-result-mixin'
 
 export default Vue.extend({
     mixins: [qrResultMixin],
     components: {
         CameraFrame,
-        Dialog
     },
     props: {
         label: {
