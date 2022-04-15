@@ -10,7 +10,7 @@ The CoronaCheck app should be accessible to everyone. From its very first design
 The CoronaCheck app follows the Web Content Accessibility Guidelines (WCAG) 2.1 on level AA as set out in the European standard EN 301 549. If this European standard is updated with specific guidelines for mobile applications, we will follow them. 
 
 Find detailed information about the app’s accessibility in our 
-<a href="https://www.toegankelijkheidsverklaring.nl/register/4309" target="_blank" rel="noopener noreferrer" hreflang="nl">accessibility statement (Dutch)</a>
+<a href="https://www.toegankelijkheidsverklaring.nl/register/7117" target="_blank" rel="noopener noreferrer" hreflang="nl">accessibility statement (Dutch)</a>
 
 ## How do we ensure CoronaCheck is accessible?
 
