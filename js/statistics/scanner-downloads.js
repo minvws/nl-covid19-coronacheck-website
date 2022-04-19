@@ -1,107 +1,107 @@
 CCScanner_downloads_plot_raw = [
     {
         date: "2021-03-28", 
-        downloads: 0000237
+        downloads: 237
     },
     {
         date: "2021-04-04", 
-        downloads: 0000331
+        downloads: 331
     },
     {
         date: "2021-04-11", 
-        downloads: 0001934
+        downloads: 1934
     },
     {
         date: "2021-04-18", 
-        downloads: 0003730
+        downloads: 3730
     },
     {
         date: "2021-04-25", 
-        downloads: 0005458
+        downloads: 5458
     },
     {
         date: "2021-05-02", 
-        downloads: 0006398
+        downloads: 6398
     },
     {
         date: "2021-05-09", 
-        downloads: 0007378
+        downloads: 7378
     },
     {
         date: "2021-05-16", 
-        downloads: 0008142
+        downloads: 8142
     },
     {
         date: "2021-05-23", 
-        downloads: 0013578
+        downloads: 13578
     },
     {
         date: "2021-05-30", 
-        downloads: 0017016
+        downloads: 17016
     },
     {
         date: "2021-06-06", 
-        downloads: 0026904
+        downloads: 26904
     },
     {
         date: "2021-06-13", 
-        downloads: 0033952
+        downloads: 33952
     },
     {
         date: "2021-06-20", 
-        downloads: 0053821
+        downloads: 53821
     },
     {
         date: "2021-06-27", 
-        downloads: 0262348
+        downloads: 262348
     },
     {
         date: "2021-07-04", 
-        downloads: 0397372
+        downloads: 397372
     },
     {
         date: "2021-07-11", 
-        downloads: 0491841
+        downloads: 491841
     },
     {
         date: "2021-07-18", 
-        downloads: 0554220
+        downloads: 554220
     },
     {
         date: "2021-07-25", 
-        downloads: 0601111
+        downloads: 601111
     },
     {
         date: "2021-08-01", 
-        downloads: 0641847
+        downloads: 641847
     },
     {
         date: "2021-08-08", 
-        downloads: 0679457
+        downloads: 679457
     },
     {
         date: "2021-08-15", 
-        downloads: 0720303
+        downloads: 720303
     },
     {
         date: "2021-08-22", 
-        downloads: 0752788
+        downloads: 752788
     },
     {
         date: "2021-08-29", 
-        downloads: 0781461
+        downloads: 781461
     },
     {
         date: "2021-09-05", 
-        downloads: 0811810
+        downloads: 811810
     },
     {
         date: "2021-09-12", 
-        downloads: 0844162
+        downloads: 844162
     },
     {
         date: "2021-09-19", 
-        downloads: 0978263
+        downloads: 978263
     },
     {
         date: "2021-09-26", 
@@ -211,7 +211,11 @@ CCScanner_downloads_plot_raw = [
     },
     {
         date: "2022-04-12",
-        downloads: 3109676
+        downloads: 3109676,
+    },
+    {
+        date: "2022-04-15",
+        downloads: 3111542
     }
 ]
 
