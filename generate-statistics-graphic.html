@@ -135,7 +135,7 @@
                 tickRotate: -45,
                 tickFormat: (
                     (f) => {
-                        const date = f.toLocaleString("nl", { "month": "short", "year": "numeric" });
+                        const date = f.toLocaleString("en", { "month": "short", "year": "numeric" });
                         const monthYear = f.toLocaleString("nl", { "month": "numeric" }) + f.toLocaleString("nl", { "year": "numeric" });
                         return monthYear === thisMonthYear ? `${date} *` : date;
                     }
@@ -206,7 +206,7 @@
                 tickRotate: -45,
                 tickFormat: (
                     (f) => {
-                        const date = f.toLocaleString("nl", { "month": "short", "year": "numeric" });
+                        const date = f.toLocaleString("en", { "month": "short", "year": "numeric" });
                         const monthYear = f.toLocaleString("nl", { "month": "numeric" }) + f.toLocaleString("nl", { "year": "numeric" });
                         return monthYear === thisMonthYear ? `${date} *` : date;
                     }
