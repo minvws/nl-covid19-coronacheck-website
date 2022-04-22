@@ -6,8 +6,7 @@ redirect_from:
   - /en/faq-in-app/18-welke-informatie-staat-in-mijn-qr-code
   - /en/faq-in-app/16-hoe-worden-mijn-gegevens-gebruikt/
   - /en/faq-in-app/17-wat-ziet-de-controleur-na-scannen-van-mijn-qr-code/
-featuredHome: true
-featuredHomeIndex: 5
+
 whichversion:
   - 1g
   - 3g

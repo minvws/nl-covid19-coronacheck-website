@@ -1,6 +1,8 @@
 ---
 set: 2
 index: 7
+featuredHome: true
+featuredHomeIndex: 5
 title: Ik heb een boosterprik gehad, hoe voeg ik deze toe aan mijn vaccinatiebewijs?
 whichversion:
   - 0g
