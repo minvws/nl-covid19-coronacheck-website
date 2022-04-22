@@ -1,7 +1,7 @@
 ---
 index: 4
 set: 3
-title: Can I use CoronaCheck abroad?
+title: I am going travelling, can I use CoronaCheck abroad?
 webonly: true
 whichversion:
   - 1g
