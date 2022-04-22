@@ -41,5 +41,5 @@ Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, b
 - <a href="https://www.covidtestlimburg.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">NOMO Medical B.V.</a>
 - <a href="https://www.hetcoronalab.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Fenelab consortium</a>
 - <a href="https://www.alegriahealth.com" rel="noopener noreferrer" target="_blank" hreflang="nl">Alegria Health Nederland B.V.</a>
-- <a href="https://www.salux.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">Eurofins-Salux</a>
+- <a href="https://eurofins-clinicaldiagnostics.nl/" rel="noopener noreferrer" target="_blank" hreflang="nl">Eurofins-Salux</a>
 
