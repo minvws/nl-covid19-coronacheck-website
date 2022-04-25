@@ -13,10 +13,10 @@ See https://coronacheck.nl/nl/print/
 
 ### Other
 
-#### dcc-pdf-tools
-Inside package.json there is ao `dcc-pdf-tools`, this is a library 
-created by the CoronaCheck team, which handles the PDF creation.  
-See https://github.com/91divoc-ln/dcc-pdf-tools/
+#### nl-covid19-coronacheck-web-pdf-tools
+One of the dependencies is `nl-covid19-coronacheck-web-pdf-tools`. This is a
+library created by the CoronaCheck team, which handles the PDF creation. See
+https://github.com/minvws/nl-covid19-coronacheck-web-pdf-tools.
 
 #### Whitelisting
 - You need to have your ip whitelisten to be accepted to https://tvs.acc.coronacheck.nl
