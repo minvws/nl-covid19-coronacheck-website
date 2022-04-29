@@ -1,0 +1,30 @@
+{% if page.layout == 'content' or page.layout == 'faq-overview' %}
+{% assign small = 'small' %}
+{% endif %}
+
+{% assign questionCategories = site.faqcategories | where:"lang", page.lang | sort: "questionCategory" %} 
+
+
+<div class="helpdesk--faqs  offset-background">
+  <div class="footer-inner"> 
+    <div class="helpdesk--faqs__content">
+        <div class="helpdesk--faqs__first">
+            <h2>{{ site.data[page.lang].translations.faq }}<br />
+            </h2>
+
+            <div class="faq-layout__contents __overview">
+                <ul class="faq-layout-contents__list">
+                {% for questionCategory in questionCategories %}
+                    <li>
+                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ questionCategory.url }}" id="{{ questionCategory.title | slugify }}">
+                            {{ questionCategory.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+     </div>
+  </div>
+</div> 

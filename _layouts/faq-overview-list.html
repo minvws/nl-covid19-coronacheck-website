@@ -4,7 +4,7 @@
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
 {%- endif -%}
 
-{% assign questionCategories = site.faqcategories | where:"lang", page.lang | sort: "questionCategory" %} 
+{% assign questionSet = site.questions | where:"lang", page.lang | where:"set", page.questionCategory | sort: "index" %}
 
 <!DOCTYPE html>
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
@@ -13,9 +13,9 @@
 <body>
   {% include header-slim.html %}
   <main class="content-center" id="content">
-    {% comment %}{% if page.showBreadCrumbs %}
+    {% if page.showBreadCrumbs %}
       {% include components/breadcrumbs.html title=page.title collection=page.collection %}
-    {% endif %}{% endcomment %}
+    {% endif %}
 
     {% if page.showHomeBtn %}
       <p class="content-center__home return_link">
@@ -26,23 +26,29 @@
     {% endif %}
     
     <div class="content-block">
-        <h1 id="frequently-asked-questions">{{ site.data[page.lang].translations.faq }}</h1>
+        <h1 id="frequently-asked-questions">{{ page.title }}</h1>
 
-        {% include components/banner-status.html %}
+        {% if page.questionCategory == 5 %}
+            {% include components/banner-status.html %}
+        {% endif %}
 
         <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
-    
-        <div class="faq-layout__contents __overview">
-            <ul class="faq-layout-contents__list">
-            {% for questionCategory in questionCategories %}
-                <li>
-                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ questionCategory.url }}" id="{{ questionCategory.title | slugify }}">
-                        {{ questionCategory.title }}
-                    </a>
-                </li>
-            {% endfor %}
-            </ul>
-        </div>
+        
+        {% if questionSet.size > 0 %}
+            <div class="faq-layout__contents __overview">
+                <ul class="faq-layout-contents__list">
+                {% for question in questionSet %}
+                    {% if question.whichversion contains site.version %}
+                        <li>
+                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
+                            {{ question.title }}
+                        </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
 
       </div>
     </div>

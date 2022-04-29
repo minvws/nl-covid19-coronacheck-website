@@ -20,6 +20,9 @@ collections:
   questions-scanner-in-app:
     output: true
     permalink: /:categories/:name/
+  faqcategories:
+    output: true
+    permalink: /faq/:name/
   announcements:
     output: false  
 
