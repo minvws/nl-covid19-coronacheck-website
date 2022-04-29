@@ -7,4 +7,5 @@ showBreadCrumbs: true
 showContact: true
 permalink: /nl/faq/04-bewijs-op-papier
 title: Bewijs op papier
+graphic: paperproof
 ---

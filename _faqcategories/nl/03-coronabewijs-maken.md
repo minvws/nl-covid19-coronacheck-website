@@ -7,4 +7,5 @@ showBreadCrumbs: true
 showContact: true
 permalink: /nl/faq/03-coronabewijs-maken
 title: Coronabewijs maken
+graphic: mobilephone
 ---

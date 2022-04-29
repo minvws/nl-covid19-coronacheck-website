@@ -22,9 +22,8 @@ collections:
     permalink: /:categories/:name/
   faqcategories:
     output: true
-    permalink: /faq/:name/
   announcements:
-    output: false  
+    output: false
 
 defaults:
   -

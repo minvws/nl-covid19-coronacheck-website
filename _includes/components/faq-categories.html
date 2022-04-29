@@ -4,24 +4,25 @@
 
 {% assign questionCategories = site.faqcategories | where:"lang", page.lang | sort: "questionCategory" %} 
 
-<div class="helpdesk--faqs  offset-background">
+<div class="faq-categories-block">
   <div class="footer-inner"> 
-    <div class="helpdesk--faqs__content">
-        <div class="helpdesk--faqs__first">
-            <h2>{{ site.data[page.lang].translations.faq }}<br />
+    <div class="faq-categories-block__content">
+        <div class="faq-categories-block__first">
+            <h2>{{ site.data[page.lang].translations.faq-more }}<br />
             </h2>
-
-            <div class="faq-layout__contents __overview">
-                <ul class="faq-layout-contents__list">
+ 
+            <ul class="faq-categories-block__list">
                 {% for questionCategory in questionCategories %}
-                    <li>
-                        <a class="faq-layout__item" href="{{ site.baseurl }}{{ questionCategory.url }}" id="{{ questionCategory.title | slugify }}">
-                            {{ questionCategory.title }}
+                    <li class="faq-categories__item"> 
+                        <a class="faq-categories__link" href="{{ site.baseurl }}{{ questionCategory.url }}" id="{{ questionCategory.title | slugify }}">
+                            <div class="faq-categories__image">
+                            {% include faqcategories/{{ questionCategory.graphic }}.svg %}
+                            </div>
+                            <span class="faq-categories__linktext">{{ questionCategory.title }}</span>
                         </a>
                     </li>
                 {% endfor %}
-                </ul>
-            </div>
+            </ul> 
 
         </div>
      </div>

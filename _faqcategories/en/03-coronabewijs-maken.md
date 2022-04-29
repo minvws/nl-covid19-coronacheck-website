@@ -7,4 +7,5 @@ showBreadCrumbs: true
 showContact: true
 permalink: /en/faq/03-coronabewijs-maken
 title: Using CoronaCheck
+graphic: mobilephone
 ---

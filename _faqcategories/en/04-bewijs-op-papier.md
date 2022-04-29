@@ -7,4 +7,5 @@ showBreadCrumbs: true
 showContact: true
 permalink: /en/faq/04-bewijs-op-papier
 title: Paper certificate
+graphic: paperproof
 ---

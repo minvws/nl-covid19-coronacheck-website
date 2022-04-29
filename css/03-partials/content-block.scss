@@ -2,11 +2,21 @@
     position: relative; // Necessary for specific iOS iPad overflow issue
     display: block; // Necessary for IE11
     background: #fff;
-    padding: 20px 20px;
+    padding: 20px;
     max-width: 940px;
+    width: 100%;
 
     @media (min-width: 740px) {
         padding: 20px 100px;
+        margin: 0 auto;
+    }
+}
+
+.content-center--faq {
+    max-width: 620px;
+
+    @media (min-width: 740px) {
+        padding: 20px;
         margin: 0 auto;
     }
 }
@@ -244,8 +254,8 @@
         margin-left: 15px;
     }
 
-    ul li,
-    ol li {
+    ul li[class=""],
+    ol li[class=""] {
         margin-bottom: 4px;
     }
 
