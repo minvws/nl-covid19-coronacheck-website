@@ -37,7 +37,7 @@
             {% for questionCategory in questionCategories %}
                 <li>
                     <a class="faq-layout__item" href="{{ site.baseurl }}{{ questionCategory.url }}" id="{{ questionCategory.title | slugify }}">
-                        {{ questionCategory.title }}
+                        <span>{{ questionCategory.title }}</span>
                     </a>
                 </li>
             {% endfor %}
