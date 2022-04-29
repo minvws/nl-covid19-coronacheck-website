@@ -1,10 +1,10 @@
 ---
 layout: faq-overview-list
-lang: nl
+lang: en
 questionCategory: 5
 questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
-permalink: /nl/faq/05-problemen
-title: Problemen - het lukt niet
+permalink: /en/faq/05-problemen
+title: Problems
 ---

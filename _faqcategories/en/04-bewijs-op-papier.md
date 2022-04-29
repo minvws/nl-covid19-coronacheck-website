@@ -1,10 +1,10 @@
 ---
 layout: faq-overview-list
-lang: nl
-questionCategory: 5
+lang: en
+questionCategory: 4
 questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
-permalink: /nl/faq/05-problemen
-title: Problemen - het lukt niet
+permalink: /en/faq/04-bewijs-op-papier
+title: Paper certificate
 ---
