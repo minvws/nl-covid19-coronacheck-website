@@ -25,26 +25,24 @@
       </p>
     {% endif %}
     
-    <div class="content-block">
+    <div class="content-block content-block--faq-overview">
         <h1 id="frequently-asked-questions">{{ site.data[page.lang].translations.faq }}</h1>
 
-        {% include components/banner-status.html %}
+        <div class="faq-categories-block faq-categories-block--{{ include.class }}">
+            <ul class="faq-categories-block__list">
+                {% for questionCategory in questionCategories %}
+                    <li class="faq-categories__item"> 
+                        <a class="faq-categories__link" href="{{ site.baseurl }}{{ questionCategory.url }}" id="{{ questionCategory.title | slugify }}">
+                            <div class="faq-categories__image">
+                            {% include faqcategories/{{ questionCategory.graphic }}.svg %}
+                            </div>
+                            <span class="faq-categories__linktext">{{ questionCategory.title }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul> 
+        </div> 
 
-        <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
-    
-        <div class="faq-layout__contents __overview">
-            <ul class="faq-layout-contents__list">
-            {% for questionCategory in questionCategories %}
-                <li>
-                    <a class="faq-layout__item" href="{{ site.baseurl }}{{ questionCategory.url }}" id="{{ questionCategory.title | slugify }}">
-                        <span>{{ questionCategory.title }}</span>
-                    </a>
-                </li>
-            {% endfor %}
-            </ul>
-        </div>
-
-      </div>
     </div>
   </main>
     

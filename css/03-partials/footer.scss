@@ -377,6 +377,9 @@
         .faq-categories__image {
             width: 24px;
             margin-right: 1rem;
+            justify-content: center;
+            display: flex;
+            align-content: center;
         }
 
         .faq-categories__linktext {

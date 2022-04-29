@@ -5,26 +5,24 @@
 {% assign questionCategories = site.faqcategories | where:"lang", page.lang | sort: "questionCategory" %} 
 
 <div class="faq-categories-block">
-  <div class="footer-inner"> 
-    <div class="faq-categories-block__content">
-        <div class="faq-categories-block__first">
-            <h2>{{ site.data[page.lang].translations.faq-more }}<br />
-            </h2>
- 
-            <ul class="faq-categories-block__list">
-                {% for questionCategory in questionCategories %}
-                    <li class="faq-categories__item"> 
-                        <a class="faq-categories__link" href="{{ site.baseurl }}{{ questionCategory.url }}" id="{{ questionCategory.title | slugify }}">
-                            <div class="faq-categories__image">
-                            {% include faqcategories/{{ questionCategory.graphic }}.svg %}
-                            </div>
-                            <span class="faq-categories__linktext">{{ questionCategory.title }}</span>
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul> 
+  <div class="footer-inner">  
+    {% if include.class != "overview" %}
+        <h2>{{ site.data[page.lang].translations.faq-more }}<br />
+        </h2>
+    {% endif %}
 
-        </div>
-     </div>
+    <ul class="faq-categories-block__list">
+        {% for questionCategory in questionCategories %}
+            <li class="faq-categories__item"> 
+                <a class="faq-categories__link" href="{{ site.baseurl }}{{ questionCategory.url }}" id="{{ questionCategory.title | slugify }}">
+                    <div class="faq-categories__image">
+                    {% include faqcategories/{{ questionCategory.graphic }}.svg %}
+                    </div>
+                    <span class="faq-categories__linktext">{{ questionCategory.title }}</span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul> 
+
   </div>
 </div> 

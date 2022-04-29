@@ -6,6 +6,21 @@
     padding: 0.6em 20px;
 }
 
+.content-block--faq-overview {
+    @media (min-width: 740px) {
+        ul.faq-categories-block__list {
+            margin-left: 0;
+            display: block;
+
+            .faq-categories__item {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+// was FAQ overview, is now sub-page list of FAQs
+
 ul.faq-layout-contents__list {
     position: relative;
     width: 100%;
