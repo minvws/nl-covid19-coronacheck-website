@@ -1,39 +1,3 @@
-// .footer-samen {
-//     padding: 2.2rem 1.4rem 5rem 1.4em;
-//     max-width: 940px;
-//     flex-direction: column;
-
-//     @media (min-width: 740px) {
-//         padding: 3.2rem 1.4rem 2rem 1.4em;
-//         display: flex;
-//     }
-
-//     @media (min-width: 960px) {
-//         padding-top: 5em;
-//         margin: 0 auto;
-//     }
-// }
-
-// .footer-samen__logo {
-//     position: relative;
-
-//     > img {
-//         display: block;
-//         width: 100%;
-//         max-width: 350px;
-//         height: auto;
-//         margin: 0 auto;
-//         transition: var(--transition-out);
-//     }
-
-//     &:hover {
-//         img {
-//             transform: scale(1.06);
-//             transition: var(--transition-in);
-//         }
-//     }
-// }
-
 //
 // Phone footer
 //
@@ -320,6 +284,123 @@
         @media (min-width: 740px) {
             max-width: 220px;
             height: auto;
+        }
+    }
+}
+
+.faq-categories-block {
+    width: 100%;
+}
+
+.faq-categories-block .footer-inner {
+    padding-bottom: 0;
+    padding-top: 2rem;
+
+    @media (min-width: 740px) {
+        padding-top: 100px;
+    }
+}
+
+.faq-categories-block__list {
+    margin-left: 0;
+    border-radius: 0px;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+
+    @media (min-width: 740px) {
+        display: flex;
+        flex-wrap: wrap;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 5.75rem;
+    }
+
+    .faq-categories__item {
+        list-style-type: none;
+        margin-bottom: 1rem;
+
+        @media (min-width: 740px) {
+            flex: 0 1 48%;
+            margin-bottom: 0px;
+
+            // &:nth-child(1),
+            // &:nth-child(2),
+            // &:nth-child(3) {
+            //     grid-column: 1 / 2;
+            // }
+
+            // &:nth-child(4),
+            // &:nth-child(5),
+            // &:nth-child(3) {
+            //     grid-column: 2 / 3;
+            // }
+        }
+    }
+
+    .faq-categories__link {
+        color: $color-coronacheck_black;
+        background-color: $color-RO_lightblue;
+        width: 100%;
+        font-size: 1rem;
+        border-radius: 0.75rem;
+        text-decoration: none;
+        font-weight: 700;
+        display: flex;
+        align-content: stretch;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 24px 16px;
+        // margin-bottom: 1rem;
+        // margin-right: 1rem;
+
+        &:hover {
+            background-color: $color-RO_darkblue; /* RO donker link2 */
+            transition: var(--transition-in);
+            color: white;
+
+            // svg path {
+            //     stroke: white;
+            // }
+
+            &:after {
+                background: url(../img/chevron-right-white.svg) center center no-repeat;
+            }
+        }
+
+        &:focus {
+            outline-offset: -2px;
+        }
+
+        .faq-categories__image {
+            width: 24px;
+            margin-right: 1rem;
+            justify-content: center;
+            display: flex;
+            align-content: center;
+        }
+
+        .faq-categories__linktext {
+            flex: 1 0 auto;
+        }
+
+        &:after {
+            content: "";
+            height: 11px;
+            width: 13px;
+            opacity: 0.62;
+            border-radius: 2px;
+            outline-offset: 8px;
+            outline: 2px solid transparent;
+            background: url(../img/chevron-right.svg) center center no-repeat;
+            transition: var(--transition-out);
+            display: flex;
+            flex: 0 0 15px;
+            align-self: center;
+            justify-content: flex-end;
+            margin-left: 20px;
         }
     }
 }

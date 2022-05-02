@@ -36,6 +36,8 @@ youarehere: Je bent hier
 
 faq: Meestgestelde vragen
 
+faq-more: Of zoek verder
+
 faq-coronacheck: Meestgestelde vragen over CoronaCheck
 
 faq-scanner: Meestgestelde vragen
@@ -49,22 +51,6 @@ faq-scanner-category-two: Algemeen
 faq-scanner-category-three: Problemen
 
 faq-scanner-category-four: Privacy
-
-faq-category-one: Algemeen
-
-faq-category-two: Coronabewijs maken
-
-faq-category-three: Internationaal reizen met CoronaCheck
-
-faq-category-four: Problemen
-
-faq-category-five: Bewijs op papier
-
-faq-category-six: Achtergrond
-
-faq-category-seven: Overig
-
-faq-category-eight: Herstelbewijs    
 
 layout-template-home: Home
   
