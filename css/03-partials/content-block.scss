@@ -98,7 +98,7 @@
         right: 100px;
         bottom: 0;
         z-index: 0;
-        background-image: url(../img/404-clouds.svg);
+        background-image: url(#{$file-path}img/404-clouds.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center 23px;

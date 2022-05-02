@@ -366,7 +366,7 @@
             // }
 
             &:after {
-                background: url(../img/chevron-right-white.svg) center center no-repeat;
+                background: url(#{$file-path}img/chevron-right-white.svg) center center no-repeat;
             }
         }
 
@@ -394,7 +394,7 @@
             border-radius: 2px;
             outline-offset: 8px;
             outline: 2px solid transparent;
-            background: url(../img/chevron-right.svg) center center no-repeat;
+            background: url(#{$file-path}img/chevron-right.svg) center center no-repeat;
             transition: var(--transition-out);
             display: flex;
             flex: 0 0 15px;
