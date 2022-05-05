@@ -1,5 +1,7 @@
 ---
-set: 3
+set: 
+  - 3
+  - 1
 index: 6
 title: Kan ik een bewijs voor iemand anders in mijn CoronaCheck-app toevoegen?
 redirect_from: 

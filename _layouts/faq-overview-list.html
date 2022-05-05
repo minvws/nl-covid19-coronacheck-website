@@ -32,6 +32,10 @@
             {% include components/banner-status.html %}
         {% endif %}
 
+        {% if page.questionCategory == 3 or page.questionCategory == 5 %} 
+            {% include components/banner-guidepost.html %}
+        {% endif %}
+
         <div {% if page.contentLang == 'en' %}lang="en" dir="ltr"{% elsif page.contentLang == 'nl' %}lang="nl"{% endif %}>
         
         {% if questionSet.size > 0 %}
