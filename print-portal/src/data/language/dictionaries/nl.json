@@ -396,12 +396,12 @@
                 "european": "Gelukt! Jouw bewijs staat hieronder klaar"
             },
             "pageIntro": {
+                "0G": "Je hebt een internationaal %{type}bewijs gemaakt. Controleer altijd voor vertrek of je het goede bewijs hebt voor jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">www.wijsopreis.nl<\/a>.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.<\/p>",
                 "both": "<p>Je hebt een Nederlands en een internationaal %{type}bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.<\/p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.<\/p>",
                 "bothVaccinationRecovery": "<p>Je hebt een Nederlands en een internationaal bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.<\/p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.<\/p>",
                 "domestic": "<p>Je hebt alleen een %{type}bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet als je de grens over gaat of in het buitenland bent.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.<\/p>",
                 "european": "<p>Je hebt alleen een internationaal %{type}bewijs. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.<\/p>",
-                "short-stay": "<p>Je hebt een bezoekersbewijs voor in Nederland. Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.<\/p>",
-                "0G": "Je hebt een internationaal %{type}bewijs gemaakt. Controleer altijd voor vertrek of je het goede bewijs hebt voor jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">www.wijsopreis.nl<\/a>.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.<\/p>"
+                "short-stay": "<p>Je hebt een bezoekersbewijs voor in Nederland. Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.<\/p>"
             },
             "pageTitle": "Jouw bewijs",
             "proofType": {
@@ -413,19 +413,19 @@
         },
         "provideCode": {
             "didNotGetCode": "Geen verificatiecode gekregen?",
-            "emptyTestCode": "Ophaalcode niet ingevuld",
-            "emptyVerificationCode": "Verificatiecode niet ingevuld",
+            "emptyTestCode": "Graag eerst een ophaalcode invullen",
+            "emptyVerificationCode": "Graag eerst een verificatiecode invullen",
             "exampleCode": "BRB-YYYYYYYYY1-Z2",
-            "invalidTestCode": "Geen geldige ophaalcode",
-            "invalidVerificationCode": "Geen geldige verificatiecode",
+            "invalidTestCode": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: BRB-YYYYYYYYY1-Z2.",
+            "invalidVerificationCode": "Geen geldige combinatie. Vul de 6-cijferige verificatiecode in.",
             "pageHeader": "Testuitslag ophalen",
             "pageIntro": "Vul jouw ophaalcode in. Deze heb je van je testlocatie gekregen.",
             "resultBlocked": "Je hebt te vaak geprobeerd een foute code in te vullen. Probeer het over 5 minuten opnieuw.",
             "sendAgain": "Verstuur opnieuw",
             "sendCode": "Stuur opnieuw",
-            "tokenExpired": "Ophaalcode is niet meer geldig",
+            "tokenExpired": "Deze ophaalcode is verlopen",
             "uniqueCode": "Ophaalcode",
-            "unknownTestProvider": "De testlocatie is ons niet bekend. Neem contact op met de locatie waar je getest bent.",
+            "unknownTestProvider": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: BRB-YYYYYYYYY1-Z2.",
             "verificationCode": "Verificatiecode",
             "verificationCodeDirection": "Je krijgt een code in een sms of e-mail"
         },
@@ -467,16 +467,16 @@
         },
         "shortStayProvideAssessmentCode": {
             "didNotGetCode": "Ik heb geen code gekregen",
-            "emptyTestCode": "Graag je beoordelingscode invullen",
-            "emptyVerificationCode": "Verificatiecode niet ingevuld",
+            "emptyTestCode": "Graag eerst een beoordelingscode invullen",
+            "emptyVerificationCode": "Graag eerst een verificatiecode invullen",
             "exampleCode": "VAC-YYYYYYYYY1-F2",
-            "invalidTestCode": "Geen geldige beoordelingscode",
-            "invalidVerificationCode": "Geen geldige verificatiecode. Je hebt deze code in een sms of e-mail gekregen.",
+            "invalidTestCode": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: VAC-YYYYYYYYY1-F2",
+            "invalidVerificationCode": "Geen geldige combinatie. Vul de 6-cijferige verificatiecode in.",
             "pageHeader": "Vaccinatiebeoordeling ophalen",
             "pageIntro": "<p>Vul je beoordelingscode in. Deze heb je van de balie gekregen waar jouw vaccinatie werd beoordeeld.<\/p>",
             "sendAgain": "Verstuur opnieuw",
             "sendCode": "Stuur code",
-            "tokenExpired": "Beoordelingscode is niet meer geldig",
+            "tokenExpired": "Deze beoordelingscode is niet meer geldig",
             "uniqueCode": "Beoordelingscode",
             "unknownTestProvider": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: VAC-YYYYYYYYY1-F2",
             "verificationCode": "Verificatiecode",
@@ -508,6 +508,6 @@
         }
     },
     "warning": {
-        "noPositivetest": "Er is helaas geen geschikte positieve testuitslag gevonden om mee te laten tellen in je vaccinatiebewijs."
+        "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen in je vaccinatiebewijs."
     }
 }

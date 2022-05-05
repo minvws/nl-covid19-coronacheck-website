@@ -396,12 +396,12 @@
                 "european": "Success! Your certificate is ready below"
             },
             "pageIntro": {
+                "0G": "You have created an international %{type} certificate. Always check before departure if you have the right certificate on <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.netherlandsworldwide.nl<\/a>.<\/p><p>Open the PDF and print it. Take your printed certificate to the country you’re traveling to.<\/p>",
                 "both": "<p>You have a Dutch and an international %{type} certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.<\/p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.<\/p>",
                 "bothVaccinationRecovery": "<p>You have a Dutch and an international certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.<\/p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.<\/p>",
                 "domestic": "<p>You only have a %{type} certificate for use in the Netherlands. You can use it to access places or activities within the Netherlands, but not when you’re travelling abroad or crossing the border.<\/p><p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.<\/p>",
                 "european": "<p>You only have an international %{type} certificate. You can use this if you are abroad or crossing the border, but not within the Netherlands.<\/p><p>Open the PDF and print it. Take your printed certificate to the country you're traveling to.<\/p>",
-                "short-stay": "<p>You have a visitor pass for use in the Netherlands. Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.<\/p>",
-                "0G": "You have created an international %{type} certificate. Always check before departure if you have the right certificate on <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.netherlandsworldwide.nl<\/a>.<\/p><p>Open the PDF and print it. Take your printed certificate to the country you’re traveling to.<\/p>"
+                "short-stay": "<p>You have a visitor pass for use in the Netherlands. Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.<\/p>"
             },
             "pageTitle": "Your certificate",
             "proofType": {
@@ -413,19 +413,19 @@
         },
         "provideCode": {
             "didNotGetCode": "Didn't receive a verification code?",
-            "emptyTestCode": "Retrieval code not entered",
-            "emptyVerificationCode": "Verification code not entered",
+            "emptyTestCode": "Please enter a retrieval code first",
+            "emptyVerificationCode": "Please enter a verification code first",
             "exampleCode": "BRB-YYYYYYYYY1-Z2",
-            "invalidTestCode": "Invalid retrieval code",
-            "invalidVerificationCode": "Invalid verification code",
+            "invalidTestCode": "This code is invalid. A valid code looks like this: BRB-YYYYYYYYY1-Z2.",
+            "invalidVerificationCode": "Invalid combination. Enter the 6-digit verification code.",
             "pageHeader": "Retrieve test result",
             "pageIntro": "Enter your retrieval code. You received it from your test location.",
             "resultBlocked": "You’ve tried to enter an invalid code too many times. Please try again in 5 minutes.",
             "sendAgain": "Send again",
             "sendCode": "Send again",
-            "tokenExpired": "Retrieval code has expired",
+            "tokenExpired": "This retrieval code has expired",
             "uniqueCode": "Retrieval code",
-            "unknownTestProvider": "Retrieval code is from an unknown test location",
+            "unknownTestProvider": "This code is invalid. A valid code looks like this: BRB-YYYYYYYYY1-Z2.",
             "verificationCode": "Verification code",
             "verificationCodeDirection": "You get a code via text or email"
         },
@@ -467,16 +467,16 @@
         },
         "shortStayProvideAssessmentCode": {
             "didNotGetCode": "I don't have a code",
-            "emptyTestCode": "Please enter your approval code",
-            "emptyVerificationCode": "Verification code not entered",
+            "emptyTestCode": "Please enter an approval code first",
+            "emptyVerificationCode": "Please enter a verification code first",
             "exampleCode": "VAC-YYYYYYYYY1-F2",
-            "invalidTestCode": "Invalid approval code",
-            "invalidVerificationCode": "Invalid verification code. You received this code via text or email.",
+            "invalidTestCode": "This code is invalid. A valid code looks like this: VAC-YYYYYYYYY1-F2.",
+            "invalidVerificationCode": "Invalid combination. Enter the 6-digit verification code.",
             "pageHeader": "Retrieve vaccination approval",
             "pageIntro": "<p>Enter your approval code. You received this code from the desk that reviewed your vaccination.<\/p>",
             "sendAgain": "Send again",
             "sendCode": "Send code",
-            "tokenExpired": "Approval code has expired",
+            "tokenExpired": "This approval code has expired",
             "uniqueCode": "Approval code",
             "unknownTestProvider": "This code is invalid. A valid code looks like this: VAC-YYYYYYYYY1-F2.",
             "verificationCode": "Verification code",
@@ -508,6 +508,6 @@
         }
     },
     "warning": {
-        "noPositivetest": "Unfortunately, no suitable positive test result has been found to be recorded into your vaccination certificate."
+        "noPositivetest": "No positive test result was found to be recorded into your vaccination certificate."
     }
 }
