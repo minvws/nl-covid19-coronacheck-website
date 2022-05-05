@@ -5,7 +5,7 @@ questionCategory: 6
 questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
-permalink: /en/faq/06-overige-vragen
+permalink: /en/faq-in-app/06-overige-vragen
 title: Other questions
 graphic: chat
 ---

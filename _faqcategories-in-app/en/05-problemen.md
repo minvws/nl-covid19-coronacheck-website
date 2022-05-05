@@ -5,7 +5,7 @@ questionCategory: 5
 questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
-permalink: /en/faq/05-problemen
+permalink: /en/faq-in-app/05-problemen
 title: Problems
 graphic: problems
 ---
