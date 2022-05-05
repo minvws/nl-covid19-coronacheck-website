@@ -28,6 +28,10 @@
     <div class="content-block content-block--faq-overview">
         <h1 id="frequently-asked-questions">{{ site.data[page.lang].translations.faq }}</h1>
 
+        {% include components/banner-status.html %}
+
+        <h2 class="faq_sub">{{ site.data[page.lang].translations.faq-sub }}</h2>
+
         <div class="faq-categories-block faq-categories-block--{{ include.class }}">
             <ul class="faq-categories-block__list">
                 {% for questionCategory in questionCategories %}
