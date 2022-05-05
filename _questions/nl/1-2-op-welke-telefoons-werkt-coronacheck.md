@@ -1,7 +1,7 @@
 ---
 set: 1
 index: 2
-title: Op welke telefoons werkt CoronaCheck? 
+title: Op welke telefoons werkt CoronaCheck?  
 redirect_from: 
   - /nl/faq/11-werkt-coronacheck-op-mijn-telefoon
 webonly: true

@@ -3,7 +3,7 @@ set: 1
 index: 2
 title: Which phones are compatible with CoronaCheck?
 redirect_from: 
-  - /en/faq-in-app/11-werkt-coronacheck-op-mijn-telefoon
+  - /en/faq/11-werkt-coronacheck-op-mijn-telefoon
 whichversion:
   - 0g
   - 1g
