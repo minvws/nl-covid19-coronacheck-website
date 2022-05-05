@@ -302,7 +302,7 @@
 }
 
 .faq-categories-block__list {
-    margin-left: 0;
+    margin-left: 0 !important;
     border-radius: 0px;
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
@@ -323,18 +323,6 @@
         @media (min-width: 740px) {
             flex: 0 1 48%;
             margin-bottom: 0px;
-
-            // &:nth-child(1),
-            // &:nth-child(2),
-            // &:nth-child(3) {
-            //     grid-column: 1 / 2;
-            // }
-
-            // &:nth-child(4),
-            // &:nth-child(5),
-            // &:nth-child(3) {
-            //     grid-column: 2 / 3;
-            // }
         }
     }
 
@@ -353,17 +341,12 @@
         justify-content: space-between;
         position: relative;
         padding: 24px 16px;
-        // margin-bottom: 1rem;
-        // margin-right: 1rem;
+        flex-wrap: wrap;
 
         &:hover {
             background-color: $color-RO_darkblue; /* RO donker link2 */
             transition: var(--transition-in);
             color: white;
-
-            // svg path {
-            //     stroke: white;
-            // }
 
             &:after {
                 background: url(#{$file-path}img/chevron-right-white.svg) center center no-repeat;
@@ -375,15 +358,19 @@
         }
 
         .faq-categories__image {
-            width: 24px;
-            margin-right: 1rem;
-            justify-content: center;
-            display: flex;
-            align-content: center;
+            display: none;
+
+            @media (min-width: 265px) {
+                width: 24px;
+                margin-right: 1rem;
+                justify-content: center;
+                display: flex;
+                align-content: center;
+            }
         }
 
         .faq-categories__linktext {
-            flex: 1 0 auto;
+            flex: 1 1 100px;
         }
 
         &:after {
