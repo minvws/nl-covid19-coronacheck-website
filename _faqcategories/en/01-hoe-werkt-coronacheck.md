@@ -7,5 +7,5 @@ showBreadCrumbs: true
 showContact: true
 permalink: /en/faq/01-hoe-werkt-coronacheck
 title: How does CoronaCheck work?
-graphic: qrcode
+graphic: mobilephone
 ---
