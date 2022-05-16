@@ -2,11 +2,10 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import PageChoice from '@/components/elements/PageChoice';
-import PreferMobile from '@/components/elements/PreferMobile';
 
 export default {
     name: 'ChoiceProof',
-    components: { Page, PageIntro, PageChoice, PreferMobile },
+    components: { Page, PageIntro, PageChoice },
     methods: {
         back() {
             this.$router.push({ name: 'Home' })
@@ -55,12 +54,9 @@ export default {
                 </div>
             </div>
         </div>
-        <PreferMobile/>
     </Page>
 </template>
 
 <style lang="scss">
-.ChoiceProof {
-
-}
+// .ChoiceProof {}
 </style>

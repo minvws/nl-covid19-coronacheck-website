@@ -2,7 +2,6 @@
 set: 1
 index: 6
 title: Welke informatie staat in mijn QR-code? 
-
 whichversion:
   - 1g
   - 3g

@@ -2,7 +2,6 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import PageChoice from '@/components/elements/PageChoice';
-import PreferMobile from '@/components/elements/PreferMobile';
 import CcModestButton from '@/components/elements/CcModestButton';
 import { handleRejection } from '@/tools/error-handler';
 import { StepTypes } from '@/types/step-types'
@@ -11,7 +10,7 @@ import { ProviderTypes } from '@/types/provider-types'
 
 export default {
     name: 'ChoiceTestLocation',
-    components: { Page, PageIntro, PageChoice, PreferMobile, CcModestButton },
+    components: { Page, PageIntro, PageChoice, CcModestButton },
     data() {
         return {
             tooBusy: window.config.tooBusy
@@ -84,12 +83,9 @@ export default {
                     :label="$t('views.choiceTestLocation.didNotGetTestedYet')"/>
             </div>
         </div>
-        <PreferMobile/>
     </Page>
 </template>
 
 <style lang="scss">
-.ChoiceTestLocation {
-
-}
+// .ChoiceTestLocation {}
 </style>
