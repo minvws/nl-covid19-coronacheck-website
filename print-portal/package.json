@@ -23,7 +23,7 @@
     "detect-browser": "^5.2.0",
     "lodash.isequal": "^4.5.0",
     "lodash.uniqwith": "^4.5.0",
-    "nl-covid19-coronacheck-web-pdf-tools": "https://github.com/minvws/nl-covid19-coronacheck-web-pdf-tools.git#v3.7.0",
+    "nl-covid19-coronacheck-web-pdf-tools": "https://github.com/minvws/nl-covid19-coronacheck-web-pdf-tools.git#v3.7.1",
     "oidc-client": "^1.11.5",
     "polyfill-crypto.getrandomvalues": "^1.0.0",
     "portal-vue": "^2.1.7",
