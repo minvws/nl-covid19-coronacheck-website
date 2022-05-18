@@ -2,11 +2,21 @@
     position: relative; // Necessary for specific iOS iPad overflow issue
     display: block; // Necessary for IE11
     background: #fff;
-    padding: 20px 20px;
+    padding: 20px;
     max-width: 940px;
+    width: 100%;
 
     @media (min-width: 740px) {
         padding: 20px 100px;
+        margin: 0 auto;
+    }
+}
+
+.content-center--faq {
+    max-width: 620px;
+
+    @media (min-width: 740px) {
+        padding: 20px;
         margin: 0 auto;
     }
 }
@@ -88,7 +98,7 @@
         right: 100px;
         bottom: 0;
         z-index: 0;
-        background-image: url(../img/404-clouds.svg);
+        background-image: url(#{$file-path}img/404-clouds.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center 23px;
@@ -244,8 +254,8 @@
         margin-left: 15px;
     }
 
-    ul li,
-    ol li {
+    ul li[class=""],
+    ol li[class=""] {
         margin-bottom: 4px;
     }
 
@@ -255,6 +265,12 @@
         min-width: 100%;
         border-collapse: separate;
         border-spacing: 6px;
+
+        caption {
+            font-weight: bold;
+            padding: 20px 0 6px 0;
+            text-align: left;
+        }
 
         tr {
             th,

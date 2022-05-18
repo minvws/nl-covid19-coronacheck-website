@@ -1,9 +1,7 @@
 ---
 set: 1
 index: 6
-title: Welke informatie staat in mijn QR-code? 
-featuredHome: true
-featuredHomeIndex: 5
+title: Welke informatie staat in mijn QR-code?  
 whichversion:
   - 0g
 ---

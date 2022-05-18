@@ -35,7 +35,7 @@
                     {% if question.whichversion contains site.version %}
                         <li>
                             <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                                {{ question.title }}
+                                <span>{{ question.title }}</span>
                             </a>
                         </li>
                     {% endif %}
@@ -53,7 +53,7 @@
                     {% if question.whichversion contains site.version %}
                         <li>
                             <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                                {{ question.title }}
+                                <span>{{ question.title }}</span>
                             </a>
                         </li>
                     {% endif %}
@@ -71,7 +71,7 @@
                     {% if question.whichversion contains site.version %}
                         <li>
                             <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                                {{ question.title }}
+                                <span>{{ question.title }}</span>
                             </a>
                         </li>
                     {% endif %}
@@ -89,7 +89,7 @@
                     {% if question.whichversion contains site.version %}
                         <li>
                             <a class="faq-layout__item" href="{{ site.baseurl }}{{ question.url }}" {% if question.lang != 'ar' %}dir="ltr"{% endif %} id="{{ question.title | slugify }}">
-                                {{ question.title }}
+                                <span>{{ question.title }}</span>
                             </a>
                         </li>
                     {% endif %}
@@ -97,14 +97,13 @@
                 </ul>
             </div>
         {% endif %}
-
-
       </div>
     </div>
+</main>
 
-  </main>
+<footer>
+    {% include components/helpdesk-faqs.html in-app="true" %}
+</footer>
 
-        {% include components/helpdesk-faqs.html in-app="true" %}
-  <br />
 </body>
 </html>

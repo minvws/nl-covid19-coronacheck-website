@@ -2,8 +2,6 @@
 set: 1
 index: 6
 title: Which information does my QR code contain?
-featuredHome: true
-featuredHomeIndex: 5
 whichversion:
   - 0g
 ---

@@ -36,6 +36,10 @@ youarehere: You are here
 
 faq: Frequently asked questions
 
+faq-sub: What is your question about?
+
+faq-more: Or try
+
 faq-coronacheck: Frequently asked questions
 
 faq-scanner: Frequently asked questions
@@ -49,22 +53,6 @@ faq-scanner-category-two: General
 faq-scanner-category-three: Problems
 
 faq-scanner-category-four: Privacy
-
-faq-category-one: General
-
-faq-category-two: Using CoronaCheck in the Netherlands
-
-faq-category-three: International travel with CoronaCheck
-
-faq-category-four: Problems
-
-faq-category-five: Paper certificate
-
-faq-category-six: Background
-
-faq-category-seven: Other
-
-faq-category-eight: Recovery certificate
 
 layout-template-home: Home
 
@@ -235,3 +223,11 @@ coronamelder-content: The CoronaMelder app helps detect and stop infections fast
 coronamelder-url: https://www.coronamelder.nl/en
 
 coronamelder-link: Read more about CoronaMelder
+
+nww-title: Prepare for your trip
+
+nww-content: Which certificate you need varies by destination. Before departure, check the coronavirus measurements of the country you’re visiting on netherlandsworldwide.nl. 
+
+nww-url: https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands
+
+nww-link: Read more on netherlandsworldwide.nl

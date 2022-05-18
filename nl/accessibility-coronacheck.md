@@ -14,7 +14,7 @@ Toch kan het zo zijn dat de app misschien op bepaalde punten niet goed toegankel
  
 De CoronaCheck-app volgt de Web Content Accessibility Guidelines (WCAG) 2.1 op niveau AA, zoals opgenomen in Europese standaard EN 301 549. Als deze Europese standaard wordt bijgewerkt met specifieke richtlijnen voor mobiele applicaties, zullen we deze volgen.
 
-<a href='https://www.toegankelijkheidsverklaring.nl/register/4309' target='_blank' rel='noopener noreferrer'>Toegankelijkheidsverklaring</a>
+<a href='https://www.toegankelijkheidsverklaring.nl/register/7117' target='_blank' rel='noopener noreferrer'>Toegankelijkheidsverklaring</a>
 
 ## Zo zorgen we voor een toegankelijke CoronaCheck(-app)
  

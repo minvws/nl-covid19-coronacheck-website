@@ -4,6 +4,15 @@
 {%- endif -%}
 
 <footer> 
+
+    {% if page.questionCategoryPage  %}
+        {% include components/faq-categories.html %}
+    {% endif %} 
+
+    {% if page.showContact  %}
+        {% include components/helpdesk-faqs.html %}
+    {% endif %} 
+    
     <div class="footer">
         <div class="footer-inner">
             <div class="footer-links">

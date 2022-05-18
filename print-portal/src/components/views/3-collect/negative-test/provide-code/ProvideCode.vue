@@ -1,7 +1,6 @@
 <script>
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
-import PreferMobile from '@/components/elements/PreferMobile';
 import ProvideTestCode from './ProvideTestCode';
 import ProvideVerificationCode from './ProvideVerificationCode';
 import UserConsent from '@/components/views/1-home/UserConsent';
@@ -17,7 +16,7 @@ import { RegionTypes } from '@/types/region-types'
 
 export default {
     name: 'ProvideCode',
-    components: { Page, PageIntro, FaqMobileLink, ProvideVerificationCode, ProvideTestCode, PreferMobile, UserConsent, ErrorLabel },
+    components: { Page, PageIntro, FaqMobileLink, ProvideVerificationCode, ProvideTestCode, UserConsent, ErrorLabel },
     props: {
         showFAQ: {
             type: Boolean,
@@ -372,7 +371,6 @@ export default {
             </div>
         </div>
         <template v-if="showFAQ">
-            <PreferMobile/>
             <FaqMobileLink/>
         </template>
     </Page>
