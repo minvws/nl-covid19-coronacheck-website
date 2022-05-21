@@ -6,6 +6,9 @@ featuredHome: true
 featuredHomeIndex: 2
 whichversion:
   - 0g
+redirect_from: 
+    - /only-international 
+    - /en/only-international
 ---
 The government has announced that from the 23d of march onwards, the coronavirus entry pass will no longer be used in the Netherlands. 
 

@@ -2,7 +2,6 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import UserConsent from './UserConsent';
-import PreferMobile from '@/components/elements/PreferMobile';
 import CcButton from '@/components/elements/CcButton';
 import ErrorLabel from '@/components/elements/ErrorLabel';
 
@@ -13,8 +12,7 @@ export default {
         CcButton,
         Page,
         PageIntro,
-        UserConsent,
-        PreferMobile
+        UserConsent
     },
     data() {
         return {
@@ -86,7 +84,6 @@ export default {
                     :label="$t('next')"/>
             </div>
         </div>
-        <PreferMobile/>
     </Page>
 </template>
 

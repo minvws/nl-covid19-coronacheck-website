@@ -1,7 +1,7 @@
 ---
 set: 1
 index: 5
-title: Hoe wordt een coronabewijs gecontroleerd?
+title: Hoe wordt een coronabewijs gecontroleerd? 
 whichversion:
   - 1g
   - 3g

@@ -5,6 +5,10 @@
 
 <footer> 
 
+    {% if page.questionCategoryPage  %}
+        {% include components/faq-categories.html %}
+    {% endif %} 
+
     {% if page.showContact  %}
         {% include components/helpdesk-faqs.html %}
     {% endif %} 
