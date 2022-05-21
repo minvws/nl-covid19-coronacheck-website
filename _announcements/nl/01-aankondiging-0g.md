@@ -3,10 +3,12 @@ lang: nl
 # set `published` to true to show the announcement on the homepage:
 published: true
 # Always set a title:
-title: 'Geen coronabewijs meer in Nederland'
+title: ''
 # Version: 0g, 1g or 3g
 version: '0g'
 # Style (icon)
 style: info
 ---
-Het coronatoegangsbewijs wordt in Nederland niet meer gebruikt. Voor reizen in het buitenland zijn nog wel internationale bewijzen te maken en te gebruiken. <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/aangekondigde-maatregelen" rel="noopener noreferrer" target="_blank">Lees meer op deze overheidspagina over de aangekondigde maatregelen</a>.
+Vanaf dinsdag 24 mei kunnen positieve uitslagen van antigeentesten ook worden gebruikt om een internationaal herstelbewijs te maken. 
+
+Als je in de afgelopen 180 dagen positief bent getest met een antigeentest en deze testuitslag al eerder in de CoronaCheck-app hebt opgehaald, dan komt jouw bewijs binnen 14 dagen automatisch in de app te staan. Heb je jouw bewijs al eerder nodig? Of heb je jouw testgegevens nog niet in de CoronaCheck-app opgehaald? Voeg je positieve test dan zelf toe door in te loggen met DigiD.
