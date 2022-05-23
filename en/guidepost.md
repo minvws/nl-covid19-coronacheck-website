@@ -85,7 +85,8 @@ The recovery certificate is valid from 11 days after the positive test result, b
 
 CoronaCheck retrieves positive test results from the GGD. Both test results from the GGD itself and test results from other testing locations can be retrieved. These results must have been passed on to the GGD.
 
-More information about recovery certificates can be found on {{ site.data.links herstelbewijs[page.lang] }}.
+More information about recovery certificates can be found on {{ site.data.links.herstelbewijs[page.lang] }}.
+
 </div>
 {% endcapture %}
 
