@@ -79,10 +79,7 @@ Een herstelbewijs is een bewijs dat je ooit positief getest bent op aanwezigheid
 
 Op dit moment worden herstelbewijzen niet gebruikt in Nederland. Daarom kun je nu met CoronaCheck alleen een herstelbewijs maken dat internationaal geldig is. Hiervoor gelden een aantal voorwaarden:
 
-Het herstelbewijs is geldig 11 dagen na de positieve testuitslag. Het herstelbewijs kan al wel eerder gemaakt worden.
-Voor een herstelbewijs mag de positieve testuitslag maximaal 180 dagen oud zijn.
-
-**Let op:** In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test. Een herstelbewijs wordt niet verstrekt op basis van een antigeentest, zelftest of een serologische test.
+Het herstelbewijs is geldig 11 dagen na de positieve testuitslag. Het herstelbewijs kan al wel eerder gemaakt worden. Voor een herstelbewijs mag de positieve testuitslag maximaal 180 dagen oud zijn.
 
 CoronaCheck haalt de positieve testuitslagen op bij de GGD. Zowel testuitslagen van de GGD zelf, als testuitslagen van andere testlocaties kunnen worden opgehaald. Deze uitslagen moeten dan wel zijn doorgegeven aan de GGD.
 
@@ -112,16 +109,6 @@ Kloppen de opgehaalde gegevens van je positieve testuitslag niet, bijvoorbeeld j
 Worden er wel gegevens over jouw herstel gevonden, maar zegt CoronaCheck dat er geen bewijs gemaakt kan worden? Het kan zijn dat jouw testuitslag meer dan 180 dagen oud is. Dan is het niet meer mogelijk om een herstelbewijs te maken.
 
 Ben je korter dan 180 dagen geleden getest? Dan kan het zijn dat er een fout zit in de testgegevens. Als je bij de GGD bent getest, dan kun je contact opnemen met de GGD op {{ site.data.links.phone-ggd[page.lang] }} om de gegevens te laten wijzigen. Ben je door een andere testlocatie getest dan de GGD? Ga dan naar {{ site.data.links.herstelbewijs-elders[page.lang] }} en vul het formulier in.
-</div>
-{% endcapture %}
-
-{% capture copy_geen_internationaal_herstelbewijs %}
-<div markdown="1"> 
-In Europees verband is afgesproken dat een herstelbewijs alleen afgegeven mag worden op basis van een PCR-test, en als de test niet korter dan 11 en niet langer dan 180 dagen geleden is afgenomen. {% if site.version != "0g" %}Voor gebruik binnen Nederland (bijvoorbeeld voor toegang tot evenementen) wordt een herstelbewijs ook afgegeven op basis van een antigeentest.{% endif %}
-
-### Ben jij vóór 8 september getest bij een andere testlocatie dan de GGD?
-
-Bij de positieve testresultaten van voor 8 september 2021 is het type test niet vastgelegd. Het is dus niet duidelijk of het een PCR-test is geweest. Daarom worden alle testen voor de veiligheid behandeld als een antigeentest. Dit betekent dat er helaas geen internationaal herstelbewijs gemaakt kan worden. 
 </div>
 {% endcapture %}
 
@@ -343,11 +330,6 @@ Ben je vaker positief getest waarvan de eerste keer vóór je eerste prik, maar 
 <details class="details" id="recovery_cantmakeproof">
 <summary><h3>De app kan geen bewijs maken</h3></summary>
 {{ copy_we_kunnen_geen_herstelbewijs_maken }}
-</details>
-
-<details class="details" id="recovery_cantmakeintnlproof">
-<summary><h3>Ik krijg geen internationaal herstelbewijs</h3></summary>
-{{ copy_geen_internationaal_herstelbewijs }}
 </details>
 
 </details>

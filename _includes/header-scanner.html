@@ -23,27 +23,28 @@
         
             {% include components/language-picker.html headertype="default" %}
         </div>
-        <div class="container">
-            <div class="header__layout header__layout--scanner">
-                <div class="header__layout--image">
-                    {% if site.version == "0g" %}
-                        <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-out-of-order[page.lang] }}" alt="" width="74" height="150">
-                    {% else %}
-                        <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
-                    {% endif %}
-                </div>
-
-                <div class="header__layout--content">
-                    <h1 class="header__title">
-                        {{ site.data[page.lang][site.version].scanner-header-title }}
-                    </h1>
-                    <p>{{ site.data[page.lang][site.version].scanner-header-subtitle }}</p>
-                    
-                    {% if site.version != "0g" %}
-                        {% include components/scanner-badges.html %}
-                    {% endif %}
+        {% if site.version != "0g" %}
+            <div class="container">
+                <div class="header__layout header__layout--scanner">
+                    <div class="header__layout--image">
+                        {% if site.version == "0g" %}
+                            <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-out-of-order[page.lang] }}" alt="" width="74" height="150">
+                        {% else %}
+                            <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
+                        {% endif %}
+                    </div>
+                    <div class="header__layout--content">
+                        <h1 class="header__title">
+                            {{ site.data[page.lang][site.version].scanner-header-title }}
+                        </h1>
+                        <p>{{ site.data[page.lang][site.version].scanner-header-subtitle }}</p>
+                        
+                        {% if site.version != "0g" %}
+                            {% include components/scanner-badges.html %}
+                        {% endif %}
+                    </div>
                 </div>
             </div>
-        </div>
+        {% endif %}
     </div>
 </header>
