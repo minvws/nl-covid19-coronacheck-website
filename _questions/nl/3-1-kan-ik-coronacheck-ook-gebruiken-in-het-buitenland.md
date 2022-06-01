@@ -1,7 +1,7 @@
 ---
 set: 3
 index: 1
-title: Kan ik CoronaCheck gebruiken in het buitenland?
+title: Ik ga op reis, kan ik CoronaCheck gebruiken in het buitenland?
 webonly: true
 whichversion:
   - 1g

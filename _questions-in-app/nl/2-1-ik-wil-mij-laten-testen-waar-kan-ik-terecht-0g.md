@@ -5,7 +5,7 @@ title: Ik wil mij laten testen, waar kan ik terecht?
 whichversion:
   - 0g
 ---
-### Bij klachten
+## Bij klachten
 Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, benauwdheid, verhoging of koorts. Laat je testen bij de GGD. 
 
 <a href="https://www.coronatest.nl" class="btn btn--cta" rel="noopener noreferrer" target="_blank">Maak afspraak<span class="screen-reader-text"> bij de GGD</span></a>
@@ -29,5 +29,5 @@ Heb je klachten die passen bij het coronavirus? Denk aan verkoudheid, hoesten, b
 - <a href="https://www.covidtestlimburg.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">NOMO Medical B.V.</a>
 - <a href="https://www.hetcoronalab.nl" rel="noopener noreferrer" target="_blank" hreflang="nl" lang="nl">Fenelab consortium</a>
 - <a href="https://www.alegriahealth.com" rel="noopener noreferrer" target="_blank" hreflang="nl">Alegria Health Nederland B.V.</a>
-- <a href="https://www.salux.nl" rel="noopener noreferrer" target="_blank" hreflang="nl">Eurofins-Salux</a>
+- <a href="https://eurofins-clinicaldiagnostics.nl/" rel="noopener noreferrer" target="_blank" hreflang="nl">Eurofins-Salux</a>
 

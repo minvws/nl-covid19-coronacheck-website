@@ -9,7 +9,7 @@ module.exports = {
             })
     },
     transpileDependencies: [
-        'dcc-pdf-tools',
+        'nl-covid19-coronacheck-web-pdf-tools',
         'jspdf',
         'vue-i18n',
         'oidc-client',

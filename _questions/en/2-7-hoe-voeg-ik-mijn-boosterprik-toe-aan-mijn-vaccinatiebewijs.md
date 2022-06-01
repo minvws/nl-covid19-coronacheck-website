@@ -1,6 +1,8 @@
 ---
 set: 2
 index: 7
+featuredHome: true
+featuredHomeIndex: 5
 title: I received a booster vaccination, how do I add it to my vaccination certificate?
 whichversion:
   - 0g
