@@ -482,19 +482,19 @@
         },
         "provideCode": {
             "didNotGetCode": "Geen verificatiecode gekregen?",
-            "emptyTestCode": "Ophaalcode niet ingevuld",
-            "emptyVerificationCode": "Verificatiecode niet ingevuld",
+            "emptyTestCode": "Graag eerst een ophaalcode invullen",
+            "emptyVerificationCode": "Graag eerst een verificatiecode invullen",
             "exampleCode": "BRB-YYYYYYYYY1-Z2",
-            "invalidTestCode": "Geen geldige ophaalcode",
-            "invalidVerificationCode": "Geen geldige verificatiecode",
+            "invalidTestCode": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: BRB-YYYYYYYYY1-Z2.",
+            "invalidVerificationCode": "Geen geldige combinatie. Vul de 6-cijferige verificatiecode in.",
             "pageHeader": "Testuitslag ophalen",
             "pageIntro": "Vul jouw ophaalcode in. Deze heb je van je testlocatie gekregen.",
             "resultBlocked": "Je hebt te vaak geprobeerd een foute code in te vullen. Probeer het over 5 minuten opnieuw.",
             "sendAgain": "Verstuur opnieuw",
             "sendCode": "Stuur opnieuw",
-            "tokenExpired": "Ophaalcode is niet meer geldig",
+            "tokenExpired": "Deze ophaalcode is verlopen",
             "uniqueCode": "Ophaalcode",
-            "unknownTestProvider": "De testlocatie is ons niet bekend. Neem contact op met de locatie waar je getest bent.",
+            "unknownTestProvider": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: BRB-YYYYYYYYY1-Z2.",
             "verificationCode": "Verificatiecode",
             "verificationCodeDirection": "Je krijgt een code in een sms of e-mail"
         },
@@ -536,16 +536,16 @@
         },
         "shortStayProvideAssessmentCode": {
             "didNotGetCode": "Ik heb geen code gekregen",
-            "emptyTestCode": "Graag je beoordelingscode invullen",
-            "emptyVerificationCode": "Verificatiecode niet ingevuld",
+            "emptyTestCode": "Graag eerst een beoordelingscode invullen",
+            "emptyVerificationCode": "Graag eerst een verificatiecode invullen",
             "exampleCode": "VAC-YYYYYYYYY1-F2",
-            "invalidTestCode": "Geen geldige beoordelingscode",
-            "invalidVerificationCode": "Geen geldige verificatiecode. Je hebt deze code in een sms of e-mail gekregen.",
+            "invalidTestCode": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: VAC-YYYYYYYYY1-F2",
+            "invalidVerificationCode": "Geen geldige combinatie. Vul de 6-cijferige verificatiecode in.",
             "pageHeader": "Vaccinatiebeoordeling ophalen",
             "pageIntro": "<p>Vul je beoordelingscode in. Deze heb je van de balie gekregen waar jouw vaccinatie werd beoordeeld.<\/p>",
             "sendAgain": "Verstuur opnieuw",
             "sendCode": "Stuur code",
-            "tokenExpired": "Beoordelingscode is niet meer geldig",
+            "tokenExpired": "Deze beoordelingscode is niet meer geldig",
             "uniqueCode": "Beoordelingscode",
             "unknownTestProvider": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: VAC-YYYYYYYYY1-F2",
             "verificationCode": "Verificatiecode",
@@ -592,7 +592,7 @@
 
     },
     "warning": {
-        "noPositivetest": "Er is helaas geen geschikte positieve testuitslag gevonden om mee te laten tellen in je vaccinatiebewijs."
+        "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen in je vaccinatiebewijs."
     },
     "qr": {
         "dialog": {
@@ -650,5 +650,5 @@
           "not-found": "Geen QR-code gevonden",
           "added": "{count} QR-codes toegevoegd | {count} QR code toegevoegd"
         }
-      }
+    }
 }
