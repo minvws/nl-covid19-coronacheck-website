@@ -9,7 +9,7 @@ Als je op reis gaat met de CoronaCheck, worden er bij controles bij de ingang va
 
 Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
 
-#### Gegevens over het internationale testbewijs
+## Gegevens over het internationale testbewijs
 
 - (a) achternaam, voornaam(en) en geboortedatum;
 - (c) ziekteverwekker: COVID-19
@@ -18,7 +18,7 @@ Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
 - (j) Lidstaat waar de test is afgenomen
 - (k) Certificaat uitgever en certificaat code
  
-#### Gegevens over de internationale vaccinatie
+## Gegevens over de internationale vaccinatie
 
 - (a) achternaam, voornaam(en) en geboortedatum;
 - (c) ziekteverwekker: COVID-19 
@@ -28,7 +28,7 @@ Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
 - (i) Lidstaat waarin is gevaccineerd
 - (j) Uitgever certificaat en een certificaat code
  
-#### Gegevens over het internationale herstelbewijs
+## Gegevens over het internationale herstelbewijs
 
 - (a) achternaam, voornaam(en) en geboortedatum;
 - (c) ziekteverwekker: COVID-19 
