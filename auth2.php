@@ -12,7 +12,7 @@ $redirect = match ($host) {
     "www.coronacheck.nl" => "coronacheck://auth/login",
     "coronacheck.nl" => "coronacheck://auth/login",
     "web.acc.coronacheck.nl" => "coronacheck-acc://auth/login",
-    "web.tst.coronacheck.nl" => "coronacheck-tst://auth/login",
+    "web.test.coronacheck.nl" => "coronacheck-tst://auth/login",
     "web.dev.coronacheck.nl" => "coronacheck-dev://auth/login",
     default => null,
 
