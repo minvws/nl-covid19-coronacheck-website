@@ -201,7 +201,27 @@ export default QRMixin.extend({
         try {
             this.qrScanner = new QrScanner(
                 this.$refs.renderer as HTMLVideoElement,
-                (result: string) => (this.code = result)
+                ({ data }: { data: string }) => (this.code = data),
+                {
+                    highlightScanRegion: false,
+                    highlightCodeOutline: true,
+                    returnDetailedScanResult: false,
+                    maxScansPerSecond: 10,
+                    calculateScanRegion: ({ videoWidth: width, videoHeight: height }) => {
+                        const scale = 1
+                        const downScaledWidth = width * scale
+                        const downScaledHeight = height * scale
+                        return {
+                            x: 0,
+                            y: 0,
+                            width,
+                            height,
+                            downScaledWidth,
+                            downScaledHeight
+
+                        }
+                    }
+                }
             )
             if (this.isAutoStart) await this.onStart()
             this.isReady = true
