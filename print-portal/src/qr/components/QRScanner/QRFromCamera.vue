@@ -94,9 +94,15 @@ export default QRMixin.extend({
         isStarted(): void {
             if (!this.isStarted) this.cameraId = null
         },
-        code(result: string) {
+        async code(result: string) {
             if (!result) return
-            if (!isValidQR(result)) {
+            try {
+                await isValidQR(result)
+            } catch (error) {
+                const message = (error as Error)?.message || error as string
+                if (!this.openErrorInDialog(message)) {
+                    this.error = (error as Error)?.message || error as string
+                }
                 this.code = null
                 return
             }

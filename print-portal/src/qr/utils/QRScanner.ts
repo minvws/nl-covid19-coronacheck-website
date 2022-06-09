@@ -34,7 +34,10 @@ export const isValidLetterCombinationLengthError = (code: string) => {
 }
 
 export const isValidQR = (qr: string) => {
-    return isEuropeanQR(qr)
+    if (!isEuropeanQR(qr) || !isOfType(qr, FilterTypes.VACCINATION)) {
+        return Promise.reject(ERROR_INVALID_QR)
+    }
+    return Promise.resolve(true)
 }
 
 const isOfType = (scan: string, filter: string) => {
@@ -43,17 +46,16 @@ const isOfType = (scan: string, filter: string) => {
     const match = !types?.find(({ type }) => type !== filter)
     return match
 }
+
 export const NO_QR_CODE_FOUND = `Scanner error: ${QrScanner.NO_QR_CODE_FOUND}`
 export const ERROR_INVALID_QR = 'ERROR_INVALID_QR'
 
 export const scanQR = async (input: string | File) => {
     const result = await QrScanner.scanImage(input, { returnDetailedScanResult: true })
-    const scan = result?.data;
-    if (!scan) return null
-    if (!isValidQR(scan) || !isOfType(scan, FilterTypes.VACCINATION)) {
-        return Promise.reject(ERROR_INVALID_QR)
-    }
-    return scan
+    const qr = result?.data;
+    if (!qr) return null
+    await isValidQR(qr)
+    return qr
 }
 
 export const getQRFromPDFile = async (file: File) => {
