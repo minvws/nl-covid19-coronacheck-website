@@ -210,7 +210,7 @@ const routes: Array<RouteConfig> = [
                 }
             },
             next: {
-                name: RouterNames.CHOOSE_ADD_PROOF
+                name: RouterNames.LETTER_COMBINATION
             }
         },
         component: QRLetterCombinationInvalidPage
