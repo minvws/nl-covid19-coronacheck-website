@@ -32,14 +32,12 @@ export default Vue.extend({
             video.style.width = ''
             video.style.height = ''
             if (!video) return
-            requestAnimationFrame(() => {
-                const bounds = this.$el.getBoundingClientRect()
-                const target = video.getBoundingClientRect()
-                const scaleInX =
-                bounds.width / bounds.height > target.width / target.height
-                if (scaleInX) video.style.width = `${bounds.width}px`
-                else video.style.height = `${bounds.height}px`
-            })
+            const bounds = this.$el.getBoundingClientRect()
+            const target = video.getBoundingClientRect()
+            const scaleInX =
+            bounds.width / bounds.height > target.width / target.height
+            if (scaleInX) video.style.width = `${bounds.width}px`
+            else video.style.height = `${bounds.height}px`
         }
     },
     mounted() {
