@@ -16,7 +16,7 @@ import i18n from '@/i18n'
 
 export enum RouterNames {
     MISSING_VACCINATION = 'chooseMissingVaccination',
-    CHOOSE_ADD_PROOF = 'chooseAddProof',
+    CHOOSE_ADD_PROOF = 'chooseAddProofQR',
     CAMERA = 'cameraQR',
     FILE = 'uploadFileQR',
     PROOF_DOMESTIC = 'proofDomestic',
