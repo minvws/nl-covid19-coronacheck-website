@@ -5,6 +5,7 @@ import RecoveryNone from '@/components/views/3-collect/recovery/unhappy/Recovery
 import PrintRecovery from '@/components/views/4-print/PrintRecovery'
 import RecoveryLayout from '@/components/views/3-collect/recovery/unhappy/RecoveryLayout'
 import CollectPositiveTest from '@/components/views/3-collect/recovery/CollectPositiveTest'
+import { RouterNames } from '@/qr/router'
 
 const recoveryPages = [
     {
@@ -39,7 +40,7 @@ const recoveryPages = [
         props: {
             translationId: 'recoveryNone',
             route: {
-                name: 'RecoveryOverview',
+                name: RouterNames.RECOVERY_OVERVIEW,
                 translationId: 'goToOverview',
                 replace: true
             }

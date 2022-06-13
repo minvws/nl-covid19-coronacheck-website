@@ -2,6 +2,7 @@
 import Print from './Print';
 import { events as StorageEvent } from '@/store/modules/storage'
 import { FilterTypes } from '@/types/filter-types'
+import { RouterNames } from '@/qr/router'
 export default {
     name: 'PrintRecovery',
     components: { Print },
@@ -37,7 +38,7 @@ export default {
     },
     methods: {
         back() {
-            this.$router.push({ name: 'RecoveryOverview' });
+            this.$router.push({ name: RouterNames.RECOVERY_OVERVIEW });
         }
     }
 }

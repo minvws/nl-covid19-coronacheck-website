@@ -12,7 +12,7 @@ export default {
     components: { Page, PageIntro, Loading },
     mixins: [redirectMixin],
     data() {
-        const overview = this.$store.getters.isListBeforeOverview ? RouterNames.RECOVERY_OVERVIEW_LIST : 'RecoveryOverview'
+        const overview = this.$store.getters.isListBeforeOverview ? RouterNames.RECOVERY_OVERVIEW_LIST : RouterNames.RECOVERY_OVERVIEW
         return {
             isLoading: false,
             filter: [FilterTypes.POSITIVE_TEST, FilterTypes.RECOVERY].join(','),
