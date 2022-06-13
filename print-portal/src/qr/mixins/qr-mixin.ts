@@ -2,7 +2,7 @@ import Vue, { VueConstructor } from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 import { getter as QRGetter, action as QRAction } from '@/qr/store/qr/events'
 import { QRData as QRDataType } from '@/qr/store/qr/types'
-import { ERROR_QR_INVALID, ERROR_QR_INVALID_TYPE } from '@/qr/utils/QRScanner'
+import { ERROR_QR_DOMESTIC, ERROR_QR_INVALID, ERROR_QR_INVALID_TYPE } from '@/qr/utils/QRScanner'
 import { LetterCombination } from '@/qr/types/QRLetterCombinationType'
 
 export type QRData = QRDataType
@@ -24,6 +24,8 @@ export default Vue.extend({
             switch (message) {
             case ERROR_QR_INVALID:
                 return 'qr.dialog.invalid'
+            case ERROR_QR_DOMESTIC:
+                return 'qr.dialog.domestic'
             case ERROR_QR_INVALID_TYPE:
                 return 'qr.dialog.invalidType'
             default:

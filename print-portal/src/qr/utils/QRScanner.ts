@@ -6,6 +6,7 @@ import { FilterTypes } from '@/types/filter-types'
 export const NO_QR_CODE_FOUND = `Scanner error: ${QrScanner.NO_QR_CODE_FOUND}`
 export const ERROR_QR_INVALID = 'ERROR_QR_INVALID'
 export const ERROR_QR_INVALID_TYPE = 'ERROR_QR_INVALID_TYPE'
+export const ERROR_QR_DOMESTIC = 'ERROR_QR_DOMESTIC'
 
 export const isEuropeanQR = (qr: string) => {
     const regex = new RegExp(/^HC[0-9A-Z]\:/);
@@ -37,6 +38,9 @@ export const isValidLetterCombinationLengthError = (code: string) => {
 }
 
 export const isValidQR = (qr: string) => {
+    if (isDutchQR(qr)) {
+        return Promise.reject(ERROR_QR_DOMESTIC)
+    }
     if (!isEuropeanQR(qr)) {
         return Promise.reject(ERROR_QR_INVALID)
     }
