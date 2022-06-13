@@ -77,8 +77,7 @@ export default Vue.extend({
     methods: {
         getCameraLabel(camera?: QrScanner.Camera): string | null {
             if (!camera) return null
-            const parse = camera.label.split(' ')
-            return parse.splice(0, parse.length - 1).join(' ')
+            return camera.label
         }
     },
     watch: {
