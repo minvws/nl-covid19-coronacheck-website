@@ -604,6 +604,10 @@
             "body": "Je hebt deze QR-code al ingescand. Probeer een andere QR-code te scannen."
           },
           "invalid": {
+            "title": "QR-code wordt niet herkend",
+            "body": "De QR-code die je probeert te scannen wordt niet herkend als die van een coronabewijs. Controleer of je de goede QR-code voor de camera houdt."
+          },
+          "invalidType": {
             "title": "Deze QR-code is niet van een vaccinatiebewijs",
             "body": "Scan de QR-code die op het internationale vaccinatiebewijs staat dat je van je zorgverlener of de overheid hebt gekregen."
           }

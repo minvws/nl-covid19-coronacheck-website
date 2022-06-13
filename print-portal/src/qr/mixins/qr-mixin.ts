@@ -2,7 +2,7 @@ import Vue, { VueConstructor } from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 import { getter as QRGetter, action as QRAction } from '@/qr/store/qr/events'
 import { QRData as QRDataType } from '@/qr/store/qr/types'
-import { ERROR_INVALID_QR } from '@/qr/utils/QRScanner'
+import { ERROR_QR_INVALID, ERROR_QR_INVALID_TYPE } from '@/qr/utils/QRScanner'
 import { LetterCombination } from '@/qr/types/QRLetterCombinationType'
 
 export type QRData = QRDataType
@@ -20,9 +20,20 @@ export default Vue.extend({
         })
     },
     methods: {
+        errorDialogId (message: string) {
+            switch (message) {
+            case ERROR_QR_INVALID:
+                return 'qr.dialog.invalid'
+            case ERROR_QR_INVALID_TYPE:
+                return 'qr.dialog.invalidType'
+            default:
+                return undefined
+            }
+        },
         openErrorInDialog (message: string) {
-            if (message === ERROR_INVALID_QR) {
-                const message: unknown = this.$t('qr.dialog.invalid')
+            const id = this.errorDialogId(message)
+            if (id) {
+                const message: unknown = this.$t(id)
                 this.openDialogError(message as Modal)
                 return true
             }
