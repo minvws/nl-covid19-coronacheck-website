@@ -113,7 +113,7 @@ export default QRMixin.extend({
             if (state !== CameraState.NO_CAMERA) return
             const actions = [
                 {
-                    label: this.$t('qr.file.route.title'),
+                    label: this.$t('qr.file.route.title') as string,
                     action: () => {
                         this.$router.replace({ name: RouterNames.FILE })
                     }
