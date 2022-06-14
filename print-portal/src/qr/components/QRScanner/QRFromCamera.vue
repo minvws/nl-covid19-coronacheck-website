@@ -1,7 +1,7 @@
 <template>
   <div class="qr-scanner">
     <div class="coronacheck">
-        <p class="only-mobile">CoronaCeck {{ isReady }}</p>
+        <p class="only-mobile">CoronaCeck</p>
     </div>
     <div class="only-desktop">
         <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
