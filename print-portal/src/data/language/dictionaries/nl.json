@@ -297,7 +297,7 @@
         },
         "letterCombinationBlocked": {
             "pageHeader": "Te vaak geprobeerd",
-            "pageIntro": "<p>Voor de veiligheid kun je deze QR-code tijdelijk niet gebruiken<br><br>Je kunt het over 24 uur weer proberen.<\/p>",
+            "pageIntro": "<p>Voor de veiligheid kun je deze QR-code tijdelijk niet gebruiken<.br><br>Je kunt het over 24 uur weer proberen.<\/p>",
             "link": "Doorgaan met de opgehaalde vaccinaties(s)"
         },
         "noLetterCombination": {
