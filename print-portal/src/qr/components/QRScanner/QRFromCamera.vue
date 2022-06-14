@@ -151,7 +151,7 @@ export default QRMixin.extend({
             )
         },
         async onStart(): Promise<boolean> {
-            const hasCamera = false; // await QrScanner.hasCamera();
+            const hasCamera = await QrScanner.hasCamera();
             if (!hasCamera) {
                 this.state = CameraState.NO_CAMERA;
                 return false
