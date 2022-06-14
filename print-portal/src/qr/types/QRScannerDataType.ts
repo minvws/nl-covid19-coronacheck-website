@@ -13,7 +13,8 @@ export enum CameraState {
   SELECTED = 'SELECTED',
   LIST = 'LIST',
   STOPPED = 'STOPPED',
-  NO_CAMERA = 'NO_CAMERA'
+  NO_CAMERA = 'NO_CAMERA',
+  REJECTED = 'REJECTED'
 }
 
 export const showCameraState = (type: CameraState): boolean => {
@@ -23,7 +24,8 @@ export const showCameraState = (type: CameraState): boolean => {
         CameraState.SELECTED,
         CameraState.LIST,
         CameraState.STOPPED,
-        CameraState.NO_CAMERA
+        CameraState.NO_CAMERA,
+        CameraState.REJECTED
     ].includes(type)
 }
 

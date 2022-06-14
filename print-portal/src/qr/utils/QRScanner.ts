@@ -4,6 +4,7 @@ import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
 import { FilterTypes } from '@/types/filter-types'
 
 export const NO_QR_CODE_FOUND = `Scanner error: ${QrScanner.NO_QR_CODE_FOUND}`
+export const ERROR_PERMISSION_REJECTED = 'Camera not found.'
 export const ERROR_QR_INVALID = 'ERROR_QR_INVALID'
 export const ERROR_QR_INVALID_TYPE = 'ERROR_QR_INVALID_TYPE'
 export const ERROR_QR_DOMESTIC = 'ERROR_QR_DOMESTIC'

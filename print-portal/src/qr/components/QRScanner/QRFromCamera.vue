@@ -46,7 +46,7 @@ import CameraList from './CameraList.vue'
 import CameraRender from './CameraRender.vue'
 import CameraStatus from './CameraStatus.vue'
 import CameraCaptures from './CameraCaptures.vue'
-import QrScanner, { isValidQR } from '@/qr/utils/QRScanner'
+import QrScanner, { isValidQR, ERROR_PERMISSION_REJECTED } from '@/qr/utils/QRScanner'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
 import qrMixin, { QRMixin } from '@/qr/mixins/qr-mixin'
 import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
@@ -173,7 +173,12 @@ export default QRMixin.extend({
                 this.state = CameraState.STARTED
                 return true
             } catch (error: unknown) {
-                this.error = (error as Error)?.message || error as string
+                const message = (error as Error)?.message || error as string
+                if (message === ERROR_PERMISSION_REJECTED) {
+                    this.state = CameraState.REJECTED
+                    return false
+                }
+                this.error = message
             } finally {
                 this.isStartPending = false
                 this.isAutoStart = false

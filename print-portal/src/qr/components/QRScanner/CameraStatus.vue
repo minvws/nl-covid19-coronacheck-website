@@ -42,8 +42,13 @@ export default Vue.extend({
     computed: {
         icon () {
             const { state } = this
-            if (state !== CameraState.NO_CAMERA) return
-            return require('@/qr/assets/icons/no-camera.svg')
+            switch (state) {
+            case CameraState.NO_CAMERA:
+            case CameraState.REJECTED:
+                return require('@/qr/assets/icons/no-camera.svg')
+            default:
+                return undefined
+            }
         },
         label() {
             const { error, state } = this
@@ -53,8 +58,12 @@ export default Vue.extend({
         },
         message() {
             const { state } = this
-            if (state !== CameraState.NO_CAMERA) return
-            return this.$t(`qr.camera.message.${state}`)
+            switch (state) {
+            case CameraState.NO_CAMERA:
+                return this.$t(`qr.camera.message.${state}`)
+            default:
+                return undefined
+            }
         }
     }
 })

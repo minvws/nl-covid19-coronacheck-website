@@ -645,7 +645,8 @@
             "SELECTED": "Camera bezig met starten",
             "LIST": "Ophalen beschikbare cameras",
             "STOPPED": "Camera is gestopt",
-            "NO_CAMERA": "Geen camera gevonden"
+            "NO_CAMERA": "Geen camera gevonden",
+            "REJECTED": "Je moet eerst toestemming geven om je camera te gebruiken."
           },
           "message": {
             "NO_CAMERA": "Sluit een camera aan"
