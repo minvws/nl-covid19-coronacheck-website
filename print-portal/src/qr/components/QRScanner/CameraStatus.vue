@@ -2,7 +2,7 @@
   <div class="spinner">
     <Spinner color="blue" class="inner" :visible="!error && !!label && !icon">
       <transition appear name="label">
-        <div :key="label">
+        <div :key="label" class="text">
             <div>{{ label }}</div>
             <div class="message" v-if="message">{{ message }}</div>
         </div>
@@ -113,6 +113,10 @@ $transition-size: 18px;
   width: 100%;
 }
 
+.text  {
+  padding: 0 16px;
+
+}
 .message {
     padding-top: 16px;
     font-weight: normal;

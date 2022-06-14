@@ -94,8 +94,8 @@ $color: black;
 
 .label {
   position: relative;
+  top: 16px;
   line-height: 24px;
-  padding: 16px 16px 0 16px;
 }
 
 $duration: 0.3s;
