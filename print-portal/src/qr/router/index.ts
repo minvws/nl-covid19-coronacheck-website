@@ -26,6 +26,7 @@ export enum RouterNames {
     LETTER_COMBINATION = 'letterCombination',
     LETTER_COMBINATION_VALIDATION = 'letterCombinationValidation',
     LETTER_COMBINATION_INVALID = 'letterCombinationInvalid',
+    LETTER_COMBINATION_BLOCKED = 'letterCombinationBlocked',
     NO_LETTER_COMBINATION = 'noLetterCombination',
     SCANNER_COMPLETE = 'scannerComplete',
     VACCINATION_OVERVIEW = 'vaccinationOverview',
@@ -199,6 +200,18 @@ const routes: Array<RouteConfig> = [
             }
         },
         component: QRProofIntroductionPage
+    },
+    {
+        path: '/lettercombinatie-geblokkeerd',
+        name: RouterNames.LETTER_COMBINATION_BLOCKED,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            }
+        },
+        component: QRLetterCombinationInvalidPage
     },
     {
         path: '/geen-geldige-lettercombinatie',
