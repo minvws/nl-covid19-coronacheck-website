@@ -237,6 +237,9 @@ const routes: Array<RouteConfig> = [
             },
             rejected: {
                 name: RouterNames.LETTER_COMBINATION_INVALID
+            },
+            blocked: {
+                name: RouterNames.LETTER_COMBINATION_BLOCKED
             }
         },
         component: QRLetterCombinationValidationPage
