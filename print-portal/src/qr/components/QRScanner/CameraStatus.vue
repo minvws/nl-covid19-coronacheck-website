@@ -8,7 +8,7 @@
         </div>
       </transition>
     </Spinner>
-    <ErrorIcon class="inner" :visible="!!error || icon" :icon="icon">
+    <ErrorIcon class="inner" :visible="!!error || !!icon" :icon="icon">
       <transition appear name="label">
         <CameraError v-if="error" key="error" :error="error" />
       </transition>

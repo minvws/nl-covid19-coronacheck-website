@@ -4,9 +4,11 @@ import { getter as QRGetter, action as QRAction } from '@/qr/store/qr/events'
 import { QRData as QRDataType } from '@/qr/store/qr/types'
 import { ERROR_QR_DOMESTIC, ERROR_QR_INVALID, ERROR_QR_INVALID_TYPE } from '@/qr/utils/QRScanner'
 import { LetterCombination } from '@/qr/types/QRLetterCombinationType'
+import { CameraState } from '../types/QRScannerDataType'
 
 export type QRData = QRDataType
-export type Modal = { title: string, body: string }
+type ModalActions = {label: string, action: () => void }[]
+export type Modal = { title: string, body: string, actions?: ModalActions }
 
 const moduleName = 'qr'
 
@@ -22,6 +24,8 @@ export default Vue.extend({
     methods: {
         errorDialogId (message: string) {
             switch (message) {
+            case CameraState.NO_CAMERA:
+                return 'qr.dialog.no-camera'
             case ERROR_QR_INVALID:
                 return 'qr.dialog.invalid'
             case ERROR_QR_DOMESTIC:
@@ -32,21 +36,23 @@ export default Vue.extend({
                 return undefined
             }
         },
-        openErrorInDialog (message: string) {
+        openErrorInDialog (message: string, actions?: ModalActions) {
             const id = this.errorDialogId(message)
             if (id) {
-                const message: unknown = this.$t(id)
-                this.openDialogError(message as Modal)
+                const message = this.$t(id) as Record<string, unknown>
+                const modal = { ...message, actions } as Modal
+                this.openDialogError(modal)
                 return true
             }
             return false
         },
-        openDialogError ({ title, body }: Modal) {
+        openDialogError ({ title, body, actions }: Modal) {
             this.$store.commit('modal/set', {
                 messageHead: title,
                 messageBody: body,
                 showConfirm: false,
-                closeButton: true
+                closeButton: true,
+                actions
             })
         },
         ...mapActions(moduleName, {
@@ -66,8 +72,8 @@ export type QRMixinType = {
   onRemoveQR: (qr: QRData) => void
   onAddPendingQR: (qr: QRData) => void
   onRemovePendingQR: (qr: QRData) => void,
-  openErrorInDialog: (message: string) => boolean,
-  openDialogError: (modal: Modal) => void,
+  openErrorInDialog: (message: string, actions?: ModalAction) => boolean,
+  openDialogError: (modal: Modal, actions?: ModalActions) => void,
   onClearPendingQRS: () => void
   setLetterCombination: (combination: LetterCombination | null) => void
   letterCombination: LetterCombination;

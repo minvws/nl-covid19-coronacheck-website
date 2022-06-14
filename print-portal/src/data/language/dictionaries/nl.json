@@ -619,6 +619,10 @@
           "invalidType": {
             "title": "Deze QR-code is niet van een vaccinatiebewijs",
             "body": "Scan de QR-code die op het internationale vaccinatiebewijs staat dat je van je zorgverlener of de overheid hebt gekregen."
+          },
+          "no-camera": {
+            "title": "Geen camera gevonden",
+            "body": "Controleer of je camera is aangesloten en geïnstalleerd op je apparaat. Of kies ervoor om je bewijs te uploaden. "
           }
         },
         "error": {

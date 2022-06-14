@@ -55,6 +55,7 @@ import QRScannerDataType, {
     CameraFacingMode,
     CameraState
 } from '@/qr/types/QRScannerDataType'
+import { RouterNames } from '@/qr/router';
 
 export default QRMixin.extend({
     name: 'QRScanner',
@@ -107,6 +108,18 @@ export default QRMixin.extend({
                 return
             }
             this.onAddPendingQR({ result })
+        },
+        state (state) {
+            if (state !== CameraState.NO_CAMERA) return
+            const actions = [
+                {
+                    label: this.$t('qr.file.route.title'),
+                    action: () => {
+                        this.$router.replace({ name: RouterNames.FILE })
+                    }
+                }
+            ]
+            this.openErrorInDialog(state, actions)
         },
         codesAdded(codesAdded) {
             if (!codesAdded) {
