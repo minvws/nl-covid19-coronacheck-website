@@ -55,8 +55,6 @@ $duration: 0.3s;
 
 .error-message {
   position: relative;
-  color: red;
-  font-weight: bold;
 }
 .inner {
   display: flex;

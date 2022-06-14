@@ -94,8 +94,9 @@ $color: black;
 
 .label {
   position: relative;
+  top: 16px;
+  line-height: 24px;
   font-weight: bold;
-  top: 24px;
 }
 
 $duration: 0.3s;

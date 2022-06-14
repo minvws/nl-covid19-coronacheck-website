@@ -138,6 +138,11 @@ export default QRMixin.extend({
             )
         },
         async onStart(): Promise<void> {
+            const hasCamera = false; // await QrScanner.hasCamera();
+            if (!hasCamera) {
+                this.state = CameraState.NO_CAMERA;
+                return
+            }
             if (this.error) {
                 // when there was a camera error, and the camera is started (again)
                 // retrieve the camera list

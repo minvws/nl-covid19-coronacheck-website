@@ -1,7 +1,10 @@
 <template>
   <div class="error-icon">
     <transition appear name="icon">
-      <div class="icon" v-if="visible" :style="style">!</div>
+        <template v-if="visible">
+            <img v-if="icon" :src="icon" class="icon" alt=""/>
+            <div class="icon" v-else :style="style">!</div>
+        </template>
     </transition>
     <div class="label"><slot /></div>
   </div>
@@ -14,7 +17,7 @@ export default Vue.extend({
         visible: {
             type: Boolean,
             required: false,
-            default: true
+            default: false
         },
         color: {
             type: String,
@@ -27,6 +30,10 @@ export default Vue.extend({
             default: 30
         },
         label: {
+            type: String,
+            required: false
+        },
+        icon: {
             type: String,
             required: false
         }
@@ -51,12 +58,10 @@ export default Vue.extend({
   position: relative;
   text-align: center;
   border-radius: 50%;
-  font-weight: bold;
   margin: 0 auto;
 }
 .label {
   position: relative;
-  font-weight: bold;
   top: 24px;
 }
 
@@ -83,5 +88,10 @@ $duration: 0.3s;
 }
 .icon-leave-active {
   transition: all $duration;
+}
+
+.icon {
+    width: 44px;
+    height: 44px;
 }
 </style>

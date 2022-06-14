@@ -640,7 +640,11 @@
             "PLAYING": "Camera is actief",
             "SELECTED": "Camera bezig met starten",
             "LIST": "Ophalen beschikbare cameras",
-            "STOPPED": "Camera is gestopt"
+            "STOPPED": "Camera is gestopt",
+            "NO_CAMERA": "Geen camera gevonden"
+          },
+          "message": {
+            "NO_CAMERA": "Sluit een camera aan"
           },
           "selected": "Geselecteerde camera"
         },

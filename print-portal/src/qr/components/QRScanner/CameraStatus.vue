@@ -1,11 +1,14 @@
 <template>
   <div class="spinner">
-    <Spinner color="blue" class="inner" :visible="!error && !!label">
+    <Spinner color="blue" class="inner" :visible="!error && !!label && !icon">
       <transition appear name="label">
-        <div :key="label">{{ label }}</div>
+        <div :key="label">
+            <div>{{ label }}</div>
+            <div class="message" v-if="message">{{ message }}</div>
+        </div>
       </transition>
     </Spinner>
-    <ErrorIcon class="inner" :visible="!!error">
+    <ErrorIcon class="inner" :visible="!!error || icon" :icon="icon">
       <transition appear name="label">
         <CameraError v-if="error" key="error" :error="error" />
       </transition>
@@ -37,11 +40,21 @@ export default Vue.extend({
         }
     },
     computed: {
+        icon () {
+            const { state } = this
+            if (state !== CameraState.NO_CAMERA) return
+            return require('@/qr/assets/icons/no-camera.svg')
+        },
         label() {
             const { error, state } = this
             return !error && showCameraState(state as CameraState)
                 ? this.$t(`qr.camera.states.${state}`)
                 : ''
+        },
+        message() {
+            const { state } = this
+            if (state !== CameraState.NO_CAMERA) return
+            return this.$t(`qr.camera.message.${state}`)
         }
     }
 })
@@ -86,8 +99,14 @@ $transition-size: 18px;
 
 .inner {
   position: absolute;
-  top: 0;
+  top: -24px;
   left: 0;
   width: 100%;
 }
+
+.message {
+    padding-top: 16px;
+    font-weight: normal;
+}
+
 </style>

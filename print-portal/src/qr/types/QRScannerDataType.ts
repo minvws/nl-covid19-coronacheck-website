@@ -12,7 +12,8 @@ export enum CameraState {
   PLAYING = 'PLAYING',
   SELECTED = 'SELECTED',
   LIST = 'LIST',
-  STOPPED = 'STOPPED'
+  STOPPED = 'STOPPED',
+  NO_CAMERA = 'NO_CAMERA'
 }
 
 export const showCameraState = (type: CameraState): boolean => {
@@ -21,7 +22,8 @@ export const showCameraState = (type: CameraState): boolean => {
         CameraState.STARTING,
         CameraState.SELECTED,
         CameraState.LIST,
-        CameraState.STOPPED
+        CameraState.STOPPED,
+        CameraState.NO_CAMERA
     ].includes(type)
 }
 
