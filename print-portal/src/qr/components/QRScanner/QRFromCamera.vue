@@ -1,7 +1,7 @@
 <template>
   <div class="qr-scanner">
     <div class="coronacheck">
-        <p class="only-mobile">CoronaCeck</p>
+        <p class="only-mobile">CoronaCeck {{ isReady }}</p>
     </div>
     <div class="only-desktop">
         <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
@@ -137,11 +137,11 @@ export default QRMixin.extend({
                 ) || { id: this.cameraDefaultFacingMode }
             )
         },
-        async onStart(): Promise<void> {
+        async onStart(): Promise<boolean> {
             const hasCamera = false; // await QrScanner.hasCamera();
             if (!hasCamera) {
                 this.state = CameraState.NO_CAMERA;
-                return
+                return false
             }
             if (this.error) {
                 // when there was a camera error, and the camera is started (again)
@@ -158,12 +158,14 @@ export default QRMixin.extend({
                 this.state = CameraState.STARTING
                 this.isStarted = true
                 this.state = CameraState.STARTED
+                return true
             } catch (error: unknown) {
                 this.error = (error as Error)?.message || error as string
             } finally {
                 this.isStartPending = false
                 this.isAutoStart = false
             }
+            return !!this.error
         },
         onStop(): void {
             try {
@@ -231,7 +233,10 @@ export default QRMixin.extend({
                     }
                 }
             )
-            if (this.isAutoStart) await this.onStart()
+            if (this.isAutoStart) {
+                const started = await this.onStart()
+                if (!started) return
+            }
             this.isReady = true
         } catch (e) {
             // something went wrong with starting the camera
