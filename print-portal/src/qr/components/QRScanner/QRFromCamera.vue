@@ -26,7 +26,7 @@
     />
     <div class="title-mobile">
         <div class="only-mobile">
-            <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
+            <PageIntro v-bind="intro" :focus="false" class="intro" :class="{ ready: isReady }"/>
         </div>
     </div>
     <CameraCaptures
