@@ -4,12 +4,14 @@ set:
   - 3
 index: 5
 title: Ik ben gevaccineerd in het buitenland. Kan ik een vaccinatiebewijs maken met CoronaCheck?  
-redirect_from: 
-  - /nl/faq/3-5-ik-ben-gevaccineerd-in-het-buitenland-kan-ik-de-vaccinatie-uploaden-in-de-nederlandse-coronacheck-app
 webonly: true
 whichversion:
   - 0g
   - 1g
   - 3g
 ---
-Kijk op {{ site.data.links.buitenlandvaccinatie[page.lang] }}. Daar vind je altijd de laatste informatie.
+Ben je gevaccineerd in het buitenland en heb je een bewijs met QR-code gekregen? Dan kun je deze toevoegen aan jouw CoronaCheck app. 
+
+Wil je jouw bewijs met QR-code toevoegen in de app? Ga naar ["Ik heb een bewijs met QR-code gekregen van mijn zorgverlener. Hoe zet ik deze in de app?"](/nl/faq/4-5-hoe-zet-ik-een-papieren-coronabewijs-van-mijn-zorgverlener-in-de-coronacheck-app/) om te lezen hoe je jouw QR-code kan toevoegen in de CoronaCheck app. 
+
+Heb je geen bewijs met QR-code gekregen? Kijk op {{ site.data.links.buitenlandvaccinatie[page.lang] }}. Daar vind je altijd de laatste informatie.
