@@ -41,6 +41,10 @@ export default QRMixin.extend({
         blocked: {
             type: Object,
             required: true
+        },
+        expired: {
+            type: Object,
+            required: true
         }
     },
     created () {
@@ -74,6 +78,8 @@ export default QRMixin.extend({
                     this.$router.replace(this.blocked)
                     break
                 case LetterCombinationStatus.EXPIRED:
+                    this.$router.replace(this.expired)
+                    break
                 case LetterCombinationStatus.REJECTED:
                     this.$router.replace(this.rejected)
                     break
