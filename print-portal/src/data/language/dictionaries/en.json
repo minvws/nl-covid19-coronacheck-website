@@ -509,5 +509,48 @@
     },
     "warning": {
         "noPositivetest": "No positive test result was found to be recorded into your vaccination certificate."
-    }
+    },
+    "qr": {
+        "error": {
+          "not-started": "Something went wrong with starting the camera"
+        },
+        "and": "and",
+        "or": "or a",
+        "camera": {
+          "start": "Start camera",
+          "stop": "Stop camera",
+          "states": {
+            "NONE": "",
+            "STARTING": "Starting camera",
+            "STARTED": "Camera started",
+            "PLAYING": "Camera running",
+            "SELECTED": "Camera starting",
+            "LIST": "Retrieving camera list",
+            "STOPPED": "Camera stopped"
+          },
+          "selected": "Selected camera"
+        },
+        "file": {
+          "route": {
+            "title": "Upload your certificate",
+            "description": "I have my certificate on my phone or computed"
+          },
+          "upload": {
+            "default": "Add a file",
+            "isOver": "Release to add file",
+            "isPending": "Busy scanning file"
+          },
+          "error": {
+            "unsupported": {
+              "title": "Failed",
+              "body": "This file is unsupported, supported file types: {acceptFileExtensions}"
+            }
+          }
+        },
+        "code": {
+          "scanned": "Scanned QR-codes",
+          "not-found": "No QR-code found",
+          "added": "{count} QR-codes added | {count} QR-code added"
+        }
+      }
 }

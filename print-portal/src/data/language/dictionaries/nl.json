@@ -28,14 +28,29 @@
             "dateOfBirth": "Geboortedatum",
             "dateOfTest": "Testdatum",
             "eventsFetchedAt": "Gegevens opgehaald bij",
+            "eventsAddedByQR": "Gegevens zelf toegevoegd",
             "head": "Details",
             "name": "Naam",
+            "vaccinationResult": "Vaccinatie",
             "testResult": "Testuitslag",
+            "positivetestResult": "Positieve testuitslag",
+            "negativetestResult": "Negatieve testuitslag",
+            "recoveryResult": "Herstelbewijs",
             "validFrom": "Geldig vanaf",
-            "validUntil": "Geldig tot"
+            "validUntil": "Geldig tot",
+            "receivedFrom": "Opgehaald via",
+            "scannedQR": "Zelf toegevoegd"
         },
         "faq": {
-            "viewFaq": "Bekijk de meestgestelde vragen"
+            "viewFaq": "Bekijk de meestgestelde vragen",
+            "recently-vaccinated": {
+                "summary": "Ben je kortgeleden gevaccineerd?",
+                "content": "<p>Dan kan het even duren tot je gegevens op te halen zijn en je een bewijs kunt maken. Probeer het later opnieuw.<\/p><p>Mist je vaccinatie na een paar dagen nog steeds? Neem dan contact op met de zorgverlener waar je bent gevaccineerd. Dat kan de GGD, je huisarts of een arts van een zorginstelling zijn. Zij kunnen je helpen je gegevens aan te passen.<\/p>"
+            },
+            "no-qr": {
+                "summary": "Heb je een bewijs, maar zonder QR-code?",
+                "content": "Je kunt helaas alleen een missende vaccinatie ophalen als je daar al een bewijs met QR-code van hebt. Kijk voor meer informatie op  <a href=\"https:\/\/www.rijksoverheid.nl\" target=\"_blank\" rel=\"noopener noreferrer\">www.rijksoverheid.nl<\/a>"
+            }
         },
         "languagePicker": {
             "changeLanguage": "Wissel van taal",
@@ -256,6 +271,73 @@
             "pageHeader": "Welk papieren bewijs wil je maken?",
             "pageIntro": ""
         },
+        "proofIntroduction": {
+            "pageHeader": "Pak je internationale QR-code erbij",
+            "pageIntro": "<p>Scan of upload straks de <b>internationale QR-code</b> op je bewijs. Hierin staan de gegevens die nodig zijn om je missende vaccinatie op te halen.<\/p>"
+        },
+        "letterCombination": {
+            "pageHeader": "Vul eerst de lettercombinatie in",
+            "pageIntro": "<p>Je kunt zo je missende vaccinatie toevoegen via de QR-code op je bewijs. Bij je bewijs heb je ook een apart papier met een lettercombinatie gekregen. Vul eerst die lettercombinatie hieronder in.<\/p>",
+            "emptyCode": "Lettercombinatie niet ingevuld",
+            "invalidCode": "Geen geldige lettercombinatie",
+            "invalidCodeLength": "Lettercombinatie bestaat uit {count} karakters",
+            "rejectedCode": "Lettercombinatie niet geldig",
+            "uniqueCode": "Lettercombinatie",
+            "exampleCode": "FLBRXQ",
+            "link": "Heb je geen lettercombinatie?"
+        },
+        "letterCombinationValidation": {
+            "pageHeader": "QR-code wordt verwerkt"
+        },
+        "letterCombinationInvalid": {
+            "pageHeader": "Geen geldige combinatie",
+            "pageIntro": "<p>Deze lettercombinatie en QR-code horen niet bij elkaar. Zoek de goede lettercombinatie en QR-code bij elkaar en probeer het opnieuw.<br><br>Lukt het niet? Dan kun je van de vaccinaties die je hebt opgehaald via DigiD nog wel een bewijs maken.<\/p>",
+            "link": "Doorgaan met de opgehaalde vaccinaties(s)",
+            "button": "Probeer opnieuw"
+        },
+        "letterCombinationBlocked": {
+            "pageHeader": "Te vaak geprobeerd",
+            "pageIntro": "<p>Voor de veiligheid kun je deze QR-code tijdelijk niet gebruiken<.br><br>Je kunt het over 24 uur weer proberen.<\/p>",
+            "link": "Doorgaan met de opgehaalde vaccinaties(s)"
+        },
+        "letterCombinationExpired": {
+            "pageHeader": "Dit papieren bewijs is verlopen",
+            "pageIntro": "<p>Dit papieren bewijs is niet meer geldig. Dit kan verschillende oorzaken hebben: <ul class=\"ul--with-padding\"><li>Je vaccinatie of herstel is nog geldig, maar het papiere bewijs niet. Vraag dan opnieuw je papieren bewijs aan.<\/li><li>Je vaccinatie of herstel is verlopen.<\/li><\/ul><\/p>",
+            "link": "Doorgaan met de opgehaalde vaccinaties(s)"
+        },
+        "noLetterCombination": {
+            "pageHeader": "Geen lettercombinatie?",
+            "pageIntro": "<p>Je hebt alleen een lettercombinatie als je jouw bewijs hebt aangevraagd bij een zorgverlener, bijvoorbeeld je huisarts. Of als je deze van de Nederlandse overheid hebt gekregen per post.<br><br>Heb je geen lettercombinatie of ben je deze kwijt? Dan is het helaas niet mogelijk om de gegevens van je vaccinatie nu op te halen. Vraag eerst een nieuw bewijs met bijbehorende lettercombinatie aan bij je zorgverlener of de overheid.<\/p>",
+            "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
+        },
+        "chooseAddProofQR": {
+            "pageHeader": "Hoe wil je toevoegen"
+        },
+        "chooseInternationalQR": {
+            "pageHeader": "Buitenlands bewijs van vaccinatie",
+            "pageIntro": "<p>Helaas kun je op dit moment met CoronaCheck nog niet de gegevens ophalen van vaccinaties die je in het buitenland hebt gehad. Binnenkort wordt dit wel mogelijk.<\/p>",
+            "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
+        },
+        "chooseNoneQR": {
+            "pageHeader": "Geen bewijs met QR-code van missende vaccinatie(s)",
+            "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
+        },
+        "chooseMissingVaccination": {
+            "pageHeader": "Heb je al een bewijs met QR-code van de missende vaccinatie(s)?",
+            "options": {
+                "domestic": {
+                    "title": "Ja, gekregen in Nederland",
+                    "description": "Als je in Nederland je vaccinatie(s) hebt gehad"
+                },
+                "international": {
+                    "title": "Ja, gekregen in het buitenland",
+                    "description": "Als je in het buitenland je vaccinatie(s) hebt gehad"
+                },
+                "none": {
+                    "title": "Nee, ik heb geen bewijs met QR-code"
+                }
+            }
+        },
         "choiceTestLocation": {
             "choiceGGDBody": "Log in met DigiD",
             "choiceGGDHead": "GGD",
@@ -396,12 +478,12 @@
                 "european": "Gelukt! Jouw bewijs staat hieronder klaar"
             },
             "pageIntro": {
-                "0G": "Je hebt een internationaal %{type}bewijs gemaakt. Controleer altijd voor vertrek of je het goede bewijs hebt voor jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">www.wijsopreis.nl<\/a>.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.<\/p>",
                 "both": "<p>Je hebt een Nederlands en een internationaal %{type}bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.<\/p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.<\/p>",
                 "bothVaccinationRecovery": "<p>Je hebt een Nederlands en een internationaal bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.<\/p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.<\/p>",
                 "domestic": "<p>Je hebt alleen een %{type}bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet als je de grens over gaat of in het buitenland bent.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.<\/p>",
                 "european": "<p>Je hebt alleen een internationaal %{type}bewijs. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.<\/p>",
-                "short-stay": "<p>Je hebt een bezoekersbewijs voor in Nederland. Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.<\/p>"
+                "short-stay": "<p>Je hebt een bezoekersbewijs voor in Nederland. Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.<\/p>",
+                "0G": "Je hebt een internationaal %{type}bewijs gemaakt. Controleer altijd voor vertrek of je het goede bewijs hebt voor jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">www.wijsopreis.nl<\/a>.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.<\/p>"
             },
             "pageTitle": "Jouw bewijs",
             "proofType": {
@@ -498,6 +580,12 @@
             "pageHeader": "Kloppen de gegevens?",
             "pageIntro": "<p>Als de gegevens kloppen kun je een bewijs maken.<\/p>"
         },
+        "proofsOverviewList": {
+            "pageHeader": "Zijn dit al jouw vaccinaties?",
+            "pageIntro": "<p>Deze vaccinaties hebben we opgehaald bij de GGD en het RIVM:<\/p>",
+            "button": "Ja, volgende",
+            "link": "Nee, er mist een vaccinatie"
+        },
         "vaccinationsIncomplete": {
             "pageHeader": "We kunnen geen bewijs maken",
             "pageIntro": "<p>Op dit moment kunnen we geen bewijs maken. Voor een Nederlands bewijs moet je volledig gevaccineerd zijn.<\/p>"
@@ -505,9 +593,92 @@
         "vaccinationsNone": {
             "pageHeader": "Geen vaccinatie(s) beschikbaar",
             "pageIntro": "<p>Er zijn geen gegevens over je vaccinatie(s) beschikbaar. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<\/p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren tot de gegevens beschikbaar zijn.<\/p>"
+        },
+        "uploadFileQR": {
+            "pageHeader": "Voeg een bestand toe om te uploaden",
+            "pageIntro": "<p>Je kunt je bestand uploaden vanuit een map, of direct in het vak hieronder slepen. Zorg dat je een jpg-, png- of pdf-bestand hebt om toe te voegen.<\/p>"
+        },
+        "cameraQR": {
+            "pageHeader": "Houd de QR-code op je bewijs voor de camera",
+            "pageIntro": "<p>Zorg ervoor dat de gehele QR-code goed in beeld te zien is.<\/p>"
         }
+
     },
     "warning": {
         "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen in je vaccinatiebewijs."
+    },
+    "qr": {
+        "dialog": {
+          "duplicate": {
+            "title": "Deze QR code is al gescand",
+            "body": "Je hebt deze QR-code al ingescand. Probeer een andere QR-code te scannen."
+          },
+          "domestic": {
+            "title": "Scan je internationale QR-code",
+            "body": "Je hoeft je Nederlandse QR-code niet te scannen. Scan de QR-code op het internationale bewijs dat je van je zorgverlener of de overheid hebt gekregen. Hierin staan de gegevens die nodig zijn om je missende vaccinatie toe te voegen. Je herkent dit bewijs aan de Europese vlag."
+          },
+          "invalid": {
+            "title": "QR-code wordt niet herkend",
+            "body": "De QR-code die je probeert te scannen wordt niet herkend als die van een coronabewijs. Controleer of je de goede QR-code voor de camera houdt."
+          },
+          "invalidType": {
+            "title": "Deze QR-code is niet van een vaccinatiebewijs",
+            "body": "Scan de QR-code die op het internationale vaccinatiebewijs staat dat je van je zorgverlener of de overheid hebt gekregen."
+          },
+          "no-camera": {
+            "title": "Geen camera gevonden",
+            "body": "Controleer of je camera is aangesloten en geïnstalleerd op je apparaat. Of kies ervoor om je bewijs te uploaden. "
+          }
+        },
+        "error": {
+          "not-started": "Er is iets fout gegaan met het starten van de camera"
+        },
+        "and": "en",
+        "or": "of een",
+        "camera": {
+          "start": "Start camera",
+          "stop": "Stop camera",
+          "route": {
+            "title": "Bewijs scannen via camera",
+            "description": "Ik kan mijn bewijs laten zien voor de camera van mijn apparaat"
+          },
+          "states": {
+            "NONE": "",
+            "STARTING": "Camera is aan het starten",
+            "STARTED": "Camera is gestart",
+            "PLAYING": "Camera is actief",
+            "SELECTED": "Camera bezig met starten",
+            "LIST": "Ophalen beschikbare cameras",
+            "STOPPED": "Camera is gestopt",
+            "NO_CAMERA": "Geen camera gevonden",
+            "REJECTED": "Je moet eerst toestemming geven om je camera te gebruiken."
+          },
+          "message": {
+            "NO_CAMERA": "Sluit een camera aan"
+          },
+          "selected": "Geselecteerde camera"
+        },
+        "file": {
+          "route": {
+            "title": "Bewijs uploaden",
+            "description": "Ik heb een bestand of foto van mijn bewijs op mijn apparaat staan"
+          },
+          "upload": {
+            "default": "Voeg bestand toe",
+            "isOver": "Laat los om toe te voegen",
+            "isPending": "Bezig"
+          },
+          "error": {
+            "unsupported": {
+              "title": "Mislukt",
+              "body": "Dit bestand wordt niet ondersteund. Ondersteunde bestandsformaten zijn: {acceptFileExtensions}"
+            }
+          }
+        },
+        "code": {
+          "scanned": "Gescande QR-codes",
+          "not-found": "Geen QR-code gevonden",
+          "added": "{count} QR-codes toegevoegd | {count} QR code toegevoegd"
+        }
     }
 }
