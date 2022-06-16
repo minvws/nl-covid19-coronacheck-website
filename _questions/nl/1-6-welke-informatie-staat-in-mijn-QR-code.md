@@ -2,12 +2,11 @@
 set: 1
 index: 6
 title: Welke informatie staat in mijn QR-code? 
-
 whichversion:
   - 1g
   - 3g
 ---
-### De Nederlandse QR-code
+## De Nederlandse QR-code
 De controleur ziet bij een Nederlandse QR-code slechts minimale gegevens op zijn of haar scherm:
 
 - bij een groen scherm: persoon beschikt over een geldig bewijs voor 1G-toegang, of
@@ -20,12 +19,12 @@ De controleur kan niet zien welk soort bewijs iemand heeft. Om je identiteit te 
 
 Vanwege privacy ziet de controleur niet altijd al deze gegevens. Het kan dus zijn dat een van uw initialen is weggelaten en is vervangen door een "-" (streepje).
 
-### De internationale QR-code
+## De internationale QR-code
 Als je op reis gaat met de CoronaCheck, worden er bij controles bij de ingang van locaties of bij grenscontroles gegevens zichtbaar. Dit is afgesproken binnen Europa (Digitaal Corona Certificaat). 
 
 Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
 
-#### Gegevens over het internationale testbewijs
+### Gegevens over het internationale testbewijs
 
 - (a) achternaam, voornaam(en) en geboortedatum;
 - (c) ziekteverwekker: COVID-19 
@@ -34,7 +33,7 @@ Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
 - (j) Lidstaat waar de test is afgenomen
 - (k) Certificaat uitgever en certificaat code
  
-#### Gegevens over de internationale vaccinatie
+### Gegevens over de internationale vaccinatie
 
 - (a) achternaam, voornaam(en) en geboortedatum;
 - (c) ziekteverwekker: COVID-19 
@@ -44,7 +43,7 @@ Afhankelijk van het bewijs dat gebruikt wordt, ziet de controleur:
 - (i) Lidstaat waarin is gevaccineerd
 - (j) Uitgever certificaat en een certificaat code
  
-#### Gegevens over het internationale herstelbewijs
+### Gegevens over het internationale herstelbewijs
 
 - (a) achternaam, voornaam(en) en geboortedatum;
 - (c) ziekteverwekker: COVID-19 

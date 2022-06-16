@@ -1,7 +1,7 @@
 ---
 set: 1
 index: -10
-title: 'Het coronabewijs wordt niet meer gebruikt in Nederland. Wat betekent dat voor CoronaCheck?'
+title: 'Het coronabewijs wordt niet meer gebruikt in Nederland. Wat betekent dat voor CoronaCheck?' 
 featuredHome: true
 featuredHomeIndex: 2
 whichversion:
