@@ -273,7 +273,8 @@
         },
         "proofIntroduction": {
             "pageHeader": "Een missende vaccinatie toevoegen",
-            "pageIntro": "<p>Als je vaccinatie er niet bij staat, wordt deze niet meegeteld in het vaccinatiebewijs dat je wilt maken. Heb je al een bewijs met QR-code van je missende vaccinatie? Dan kun je die in de volgende stap toevoegen.<br><br>Je kunt een bewijs met QR-code toevoegen van je vaccinatie uit het buitenland. Of een bewijs dat je opgestuurd hebt gekregen van je zorgverlener of de Nederlandse overheid.<\/p>"
+            "pageIntro": "<p>Als je vaccinatie er niet bij staat, wordt deze niet meegeteld in het vaccinatiebewijs dat je wilt maken. Heb je al een bewijs met QR-code van je missende vaccinatie? Dan kun je die in de volgende stap toevoegen.<br><br>Je kunt een bewijs met QR-code toevoegen van je vaccinatie uit het buitenland. Of een bewijs dat je opgestuurd hebt gekregen van je zorgverlener of de Nederlandse overheid.<\/p>",
+            "link": "Heb je geen bewijs met QR-code?"
         },
         "letterCombination": {
             "pageHeader": "Vul eerst de lettercombinatie in",
@@ -319,7 +320,7 @@
             "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
         },
         "chooseNoneQR": {
-            "pageHeader": "Geen bewijs met QR-code van missende vaccinatie(s)",
+            "pageHeader": "Geen bewijs met QR-code van missende vaccinatie",
             "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
         },
         "chooseMissingVaccination": {
