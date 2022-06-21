@@ -8,6 +8,7 @@ export const ERROR_PERMISSION_REJECTED = 'Camera not found.'
 export const ERROR_QR_INVALID = 'ERROR_QR_INVALID'
 export const ERROR_QR_INVALID_TYPE = 'ERROR_QR_INVALID_TYPE'
 export const ERROR_QR_DOMESTIC = 'ERROR_QR_DOMESTIC'
+export const ERROR_QR_DUPLICATE = 'ERROR_QR_DUPLICATE'
 
 export const isEuropeanQR = (qr: string) => {
     const regex = new RegExp(/^HC[0-9A-Z]\:/);

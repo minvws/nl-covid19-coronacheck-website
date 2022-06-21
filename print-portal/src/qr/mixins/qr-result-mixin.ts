@@ -1,12 +1,8 @@
 import Vue from 'vue'
 import { TranslateResult } from 'vue-i18n'
+import { ERROR_QR_DUPLICATE } from '@/qr/utils/QRScanner'
 
 export default Vue.extend({
-    data() {
-        return {
-            dialog: null as null | TranslateResult
-        }
-    },
     props: {
         duplicates: {
             type: Boolean,
@@ -33,7 +29,7 @@ export default Vue.extend({
         },
         onScanResult(result: string, src?: string) {
             if (!this.duplicates && this.isAlreadyScanned(result)) {
-                this.dialog = this.$t('qr.dialog.duplicate')
+                this.$emit('error', ERROR_QR_DUPLICATE)
                 this.$emit('remove-pending', { result, src })
                 return
             }
