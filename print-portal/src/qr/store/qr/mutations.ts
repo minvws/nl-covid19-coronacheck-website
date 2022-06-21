@@ -6,7 +6,7 @@ export const mutations = {
         qrs.length = 0
     },
     [QRMutation.ADD]: ({ qrs }: QRState, qr: QRData): void => {
-        qrs.push(qr)
+        qrs.unshift(qr)
     },
     [QRMutation.ADD_PENDING]: ({ pending }: QRState, qr: QRData): void => {
         pending.push(qr)
