@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="visible">
     <p v-if="label" class="label" :class="{ hidden: !captures.length }">
       {{ label }}
     </p>
@@ -40,6 +40,11 @@ export default Vue.extend({
         renderer: {
             type: HTMLVideoElement,
             required: false
+        },
+        visible: {
+            type: Boolean,
+            required: false,
+            default: false
         },
         ratio: {
             type: Number,

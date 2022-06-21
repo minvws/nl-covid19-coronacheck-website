@@ -14,11 +14,13 @@
       @capture="onCapture"
       @remove="onRemoveQR"
       @remove-pending="onRemovePendingQR"
+      @error="openErrorInDialog"
       @clear="onClearPendingQRS"
       v-bind="{
         label: $t('qr.code.scanned'),
         result,
-        captures
+        captures,
+        visible: false
       }"
     />
     <FilePreview

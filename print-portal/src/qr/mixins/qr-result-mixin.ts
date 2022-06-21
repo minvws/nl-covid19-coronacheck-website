@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import { TranslateResult } from 'vue-i18n'
 import { ERROR_QR_DUPLICATE } from '@/qr/utils/QRScanner'
 
 export default Vue.extend({

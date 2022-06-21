@@ -35,6 +35,7 @@
       :renderer="$refs.renderer"
       :last-capture="lastCapture"
       @capture="onCapture"
+      @error="openErrorInDialog"
       @clear="onCaptureClear"
     />
   </div>
