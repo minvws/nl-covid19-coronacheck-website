@@ -179,7 +179,7 @@ const routes: Array<RouteConfig> = [
         }
     },
     {
-        path: '/bestand-uploaden',
+        path: '/bestand-toevoegen',
         name: RouterNames.FILE,
         component: QRFromImageOrPDFPage,
         props: {
