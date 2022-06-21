@@ -51,6 +51,13 @@ export default QRMixin.extend({
         QRList,
         SuccessMessage
     },
+    props: {
+        accept: {
+            type: String,
+            required: false,
+            default: 'image/jpeg,image/png,application/pdf'
+        }
+    },
     data() {
         return {
             isPending: false,

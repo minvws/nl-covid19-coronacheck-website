@@ -22,14 +22,12 @@ export const fileExtensions = (accept: string): string[] => {
     })
 }
 
-export const prettyFileExtensions = (accept: string, seperator: string): string => {
-    const ext = fileExtensions(accept).map((type) => `<b>${type}</b>`)
+export const prettyFileExtensions = (accept: string, seperator: string, bold = false, append = ''): string => {
+    const ext = fileExtensions(accept)
+        .map((type) => `${type}${append}`)
+        .map((type) => bold ? `<b>${type}</b>` : type)
     if (ext.length > 1) {
-        ext[ext.length - 2] = `
-        ${ext[ext.length - 2]}
-        ${seperator}
-        ${ext[ext.length - 1]}
-        `
+        ext[ext.length - 2] = `${ext[ext.length - 2]} ${seperator} ${ext[ext.length - 1]}`
         ext.splice(ext.length - 1, 1)
     }
     return ext.join(', ')

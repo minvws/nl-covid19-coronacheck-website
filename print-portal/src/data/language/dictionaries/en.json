@@ -515,7 +515,8 @@
           "not-started": "Something went wrong with starting the camera"
         },
         "and": "and",
-        "or": "or a",
+        "or": "or",
+        "or-a": "or a",
         "camera": {
           "start": "Start camera",
           "stop": "Stop camera",

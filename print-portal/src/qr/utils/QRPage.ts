@@ -1,33 +1,33 @@
 import i18n from '@/i18n'
 import { TranslateResult } from 'vue-i18n'
 
-const translate = (key: string) => {
-    const translation = i18n.t(key)
+const translate = (key: string, props?: Record<string, unknown>) => {
+    const translation = i18n.t(key, props)
     return translation !== key ? translation : null
 }
-export const getPageHeaderIntro = (name: string) => {
+export const getPageHeaderIntro = (name: string, props?: Record<string, unknown>) => {
     const keys = [
         ['head', `views.${name}.pageHeader`],
         ['intro', `views.${name}.pageIntro`]
 
     ]
     return keys.reduce((cul, [key, value]) => {
-        const t = translate(value)
+        const t = translate(value, props)
         if (t && value !== t) cul[key] = t
         return cul
     }, {} as Record<string, TranslateResult>)
 }
 
-export const getPageHeaderBody = (name: string) => {
-    return translate(`views.${name}.body`);
+export const getPageHeaderBody = (name: string, props?: Record<string, unknown>) => {
+    return translate(`views.${name}.body`, props);
 }
 
-export const getPageLink = (name: string) => {
-    return translate(`views.${name}.link`);
+export const getPageLink = (name: string, props?: Record<string, unknown>) => {
+    return translate(`views.${name}.link`, props);
 }
 
-export const getPageButton = (name: string) => {
-    return translate(`views.${name}.button`);
+export const getPageButton = (name: string, props?: Record<string, unknown>) => {
+    return translate(`views.${name}.button`, props);
 }
 
 export const getFAQ = (list: string[]) => {

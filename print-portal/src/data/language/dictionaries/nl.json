@@ -597,8 +597,8 @@
             "pageIntro": "<p>Er zijn geen gegevens over je vaccinatie(s) beschikbaar. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<\/p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren tot de gegevens beschikbaar zijn.<\/p>"
         },
         "uploadFileQR": {
-            "pageHeader": "Voeg een bestand toe om te uploaden",
-            "pageIntro": "<p>Je kunt je bestand uploaden vanuit een map, of direct in het vak hieronder slepen. Zorg dat je een jpg-, png- of pdf-bestand hebt om toe te voegen.<\/p>"
+            "pageHeader": "Kies een bestand om toe te voegen",
+            "pageIntro": "<p>Je kunt je bestand met een of meerdere QR-codes toevoegen vanuit een map, of direct in het vak hieronder slepen. Zorg dat je een {acceptFileExtensions}bestand hebt.<\/p>"
         },
         "cameraQR": {
             "pageHeader": "Houd de QR-code op je bewijs voor de camera",
@@ -636,7 +636,8 @@
           "not-started": "Er is iets fout gegaan met het starten van de camera"
         },
         "and": "en",
-        "or": "of een",
+        "or": "of",
+        "or-a": "of een",
         "camera": {
           "start": "Start camera",
           "stop": "Stop camera",
@@ -672,8 +673,8 @@
           },
           "error": {
             "unsupported": {
-              "title": "Mislukt",
-              "body": "Dit bestand wordt niet ondersteund. Ondersteunde bestandsformaten zijn: {acceptFileExtensions}"
+              "title": "Kies een ander soort bestand",
+              "body": "Je kunt alleen {acceptFileExtensions}bestanden toevoegen. Kies een van dit soort bestanden."
             }
           }
         },

@@ -55,7 +55,9 @@ export default Vue.extend({
         labels() {
             const acceptFileExtensions = prettyFileExtensions(
                 this.accept,
-                this.$t('qr.and') as string
+                this.$t('qr.or') as string,
+                false,
+                '-'
             )
             return {
                 ...(this.$t('qr.file.upload') as LocaleMessages),
