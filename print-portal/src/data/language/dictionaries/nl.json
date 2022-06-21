@@ -321,7 +321,8 @@
         },
         "chooseNoneQR": {
             "pageHeader": "Geen bewijs met QR-code van missende vaccinatie",
-            "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
+            "link": "Doorgaan met mijn opgehaalde vaccinaties(s)",
+            "body": "<p>Toch nu een bewijs maken? Ga door met de vaccinaties die je via DigiD hebt opgehaald.<\/p>"
         },
         "chooseMissingVaccination": {
             "pageHeader": "Heb je al een bewijs met QR-code van de missende vaccinatie(s)?",

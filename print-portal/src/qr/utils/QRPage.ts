@@ -18,6 +18,10 @@ export const getPageHeaderIntro = (name: string) => {
     }, {} as Record<string, TranslateResult>)
 }
 
+export const getPageHeaderBody = (name: string) => {
+    return translate(`views.${name}.body`);
+}
+
 export const getPageLink = (name: string) => {
     return translate(`views.${name}.link`);
 }
