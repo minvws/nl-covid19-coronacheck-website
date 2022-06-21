@@ -1,16 +1,17 @@
 ---
 set: 4
 index: 5
-title: I requested a paper coronavirus pass from my healthcare provider. How do I add it to the CoronaCheck app? 
+title: I’ve received a certificate with QR code from my healthcare provider. How do I get this in the CoronaCheck app?
 whichversion:
   - 0g
   - 1g
   - 3g
 ---
-A paper coronavirus pass you received from your healthcare provider can be added to the CoronaCheck app. This way you can use the certificate on your phone. This is how it works: 
+A certificate with QR code that you have received from your healthcare provider can be added in the CoronaCheck app. Even if you got it abroad. This way you can also use the certificate on your phone. It works like this:
 
 1. Open the CoronaCheck app
 2. Go to the menu
-3. Click on 'Add paper certificate' and follow the steps in the app. 
+3. Choose ‘Scan to add certificate’ and follow the steps in the app
 
-A certificate from the government of a different country cannot be added to the CoronaCheck app this way. This has to do with legislation. Did you get a certificate from the government of another country? Then please use the app from that specific country.
+Do you have the CoronaCheck app on multiple phones? Repeat the steps for each device.
+Do you like to make a printout of your certificates yourself? This will soon be possible on the CoronaCheck website.

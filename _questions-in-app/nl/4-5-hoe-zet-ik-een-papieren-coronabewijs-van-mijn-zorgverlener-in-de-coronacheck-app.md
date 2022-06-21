@@ -11,7 +11,7 @@ Een bewijs met QR-code dat je van je zorgverlener hebt gekregen kan toegevoegd w
 
 1. Open de CoronaCheck-app
 2. Ga naar het menu
-3. Klik op 'Bewijs inscannen' en volg de stappen in de app.
+3. Klik op 'Coronabewijs inscannen' en volg de stappen in de app
 
 Heb je meerdere telefoons met de CoronaCheck app? Doe de stappen opnieuw voor iedere telefoon.  
 Wil je zelf een print maken van jouw bewijzen? Dit kan binnenkort op de website van CoronaCheck.
