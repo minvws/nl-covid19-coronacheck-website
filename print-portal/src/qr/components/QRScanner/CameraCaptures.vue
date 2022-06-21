@@ -4,10 +4,12 @@
         @remove="onRemoveQR"
         @clear="$emit('clear')"
         @remove-pending="$emit('clear')"
+        @error="$emit('error', $event)"
         v-bind="{
             label,
             result: filteredResult(lastCapture),
             captures,
+            visible: false
         }"
     />
 </template>
