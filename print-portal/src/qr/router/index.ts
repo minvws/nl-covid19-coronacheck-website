@@ -191,7 +191,7 @@ const routes: Array<RouteConfig> = [
         }
     },
     {
-        path: '/bewijs-start',
+        path: '/missende-vaccinatie-toevoegen',
         name: RouterNames.PROOF_INTRODUCTION,
         props: {
             link: {

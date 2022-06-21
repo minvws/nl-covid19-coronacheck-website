@@ -272,8 +272,8 @@
             "pageIntro": ""
         },
         "proofIntroduction": {
-            "pageHeader": "Pak je internationale QR-code erbij",
-            "pageIntro": "<p>Scan of upload straks de <b>internationale QR-code</b> op je bewijs. Hierin staan de gegevens die nodig zijn om je missende vaccinatie op te halen.<\/p>"
+            "pageHeader": "Een missende vaccinatie toevoegen",
+            "pageIntro": "<p>Als je vaccinatie er niet bij staat, wordt deze niet meegeteld in het vaccinatiebewijs dat je wilt maken. Heb je al een bewijs met QR-code van je missende vaccinatie? Dan kun je die in de volgende stap toevoegen.<br><br>Je kunt een bewijs met QR-code toevoegen van je vaccinatie uit het buitenland. Of een bewijs dat je opgestuurd hebt gekregen van je zorgverlener of de Nederlandse overheid.<\/p>"
         },
         "letterCombination": {
             "pageHeader": "Vul eerst de lettercombinatie in",

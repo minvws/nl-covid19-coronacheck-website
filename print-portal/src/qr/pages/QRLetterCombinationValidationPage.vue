@@ -54,7 +54,6 @@ export default QRMixin.extend({
             return
         }
         this.onSend({ couplingCode, credential })
-        this.onClearQRs()
     },
     methods: {
         onComplete (payload) {
