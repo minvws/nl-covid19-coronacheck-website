@@ -150,6 +150,7 @@ const routes: Array<RouteConfig> = [
         name: RouterNames.PROOF_NONE,
         props: {
             link: {
+                replace: true,
                 to: {
                     name: RouterNames.SCANNER_COMPLETE
                 }

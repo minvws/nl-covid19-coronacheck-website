@@ -3,6 +3,7 @@
         <router-link
             v-if="to && label"
             class="link"
+            :replace="replace"
             :to="to" >
             {{ label }}
         </router-link>
@@ -19,6 +20,11 @@ export default {
         to: {
             type: Object,
             required: true
+        },
+        replace: {
+            type: Boolean,
+            required: false,
+            default: false
         }
     }
 };
