@@ -7,7 +7,7 @@ contentLang: en
 ---
 Accessibility statement, dated 23-11-2021
 
-The Ministry of Health, Welfare and Sport wants everybody to be able to use this website, which is being updated all the time. However, if you encounter a page which you find inaccessible we ask you to please let us know by emailing  <a href="mailto:helpdesk@coronacheck.nl?subject={{ site.datatranslations-[page.lang].accessibility-in-app-email-subject[page.lang] | url_encode | replace: "+", "%20" }}">helpdesk@coronacheck.nl</a>. <br />
+The Ministry of Health, Welfare and Sport wants everybody to be able to use this website, which is being updated all the time. However, if you encounter a page which you find inaccessible we ask you to please let us know by emailing  <a href="mailto:helpdesk@coronacheck.nl?subject={{ site.data.links.accessibility-in-app-email-subject[page.lang] | url_encode | replace: "+", "%20" }}">helpdesk@coronacheck.nl</a>. <br />
 
 Find detailed information about the website's accessibility in <a href="https://www.toegankelijkheidsverklaring.nl/register/4230" hreflang="nl">our accessibility statement</a> (Dutch).
 
