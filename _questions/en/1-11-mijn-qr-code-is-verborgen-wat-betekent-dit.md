@@ -3,8 +3,8 @@ set: 1
 index: 11
 title: My QR code is hidden. What does this mean?
 whichversion:
+  - 0g
   - 1g
-  - 2g
   - 3g
 ---
 In the CoronaCheck app, you get a different QR code for each vaccination you’ve had. Did you get a new vaccination or booster? Then CoronaCheck sometimes hides the QR codes of previous vaccinations, because you probably don’t need to show those anymore.

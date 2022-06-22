@@ -3,8 +3,8 @@ set: 1
 index: 11
 title: Mijn QR-code is verborgen. Wat betekent dit?
 whichversion:
+  - 0g
   - 1g
-  - 2g
   - 3g
 ---
 Je krijgt per vaccinatie die je hebt gehad een aparte QR-code in de CoronaCheck-app. Heb je een nieuwe vaccinatie of booster gehad? Dan verbergt CoronaCheck soms je QR-codes van eerdere vaccinaties, omdat je die waarschijnlijk niet meer hoeft te laten zien. 
