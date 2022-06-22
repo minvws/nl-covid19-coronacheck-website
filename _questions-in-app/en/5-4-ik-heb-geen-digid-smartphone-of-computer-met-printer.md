@@ -9,4 +9,4 @@ whichversion:
   - 3g
 ---
 Don't have a DigiD, smartphone or computer with a printer? In some cases, you can have your paper coronavirus pass sent to your home.
-Please call the CoronaCheck helpdesk on {{ site.data.links.phone-action[page.lang] }} and ask about the possibilities.
+Please call the CoronaCheck helpdesk on {{ site.data.links.phone-helpdesk[page.lang] }} and ask about the possibilities.
