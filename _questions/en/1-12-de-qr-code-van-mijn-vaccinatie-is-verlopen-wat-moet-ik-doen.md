@@ -7,7 +7,7 @@ whichversion:
   - 1g
   - 3g
 ---
-Your QR code can expire if you’ve added it yourself to the CoronaCheck app. For example if you’ve scanned a QR code of a paper certificate, or from a foreign coronavirus app. Your vaccination is still valid, but the certificate you’ve added is no longer.
+Your QR code can expire if you’ve added it yourself to the CoronaCheck app. For example if you’ve scanned a QR code of a paper certificate, or from a foreign coronavirus app. Your vaccination is still valid, but the certificate you’ve added isn't.
 
 Because your vaccination is included in your vaccination series, the QR code remains in the app, but you can no longer use this QR code.
 
