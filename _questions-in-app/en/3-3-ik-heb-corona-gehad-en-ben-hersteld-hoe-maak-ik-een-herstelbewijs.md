@@ -2,7 +2,6 @@
 set: 3
 index: 3
 title: When can I create a recovery certificate?
-webonly: true
 whichversion:
   - 0g
   - 1g
