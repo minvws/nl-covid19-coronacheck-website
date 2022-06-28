@@ -317,6 +317,11 @@
             "link": "Toch liever mijn bewijs scannen",
             "button": "Probeer opnieuw"
         },
+        "errorQRInvalid": {
+            "pageHeader": "QR-code wordt niet herkend",
+            "pageIntro": "<p>De QR-code die je probeert toe te voegen wordt niet herkend als die van een coronabewijs. Controleer of je de goede QR-code hebt.<\/p>",
+            "button": "Probeer opnieuw"
+        },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen"
         },

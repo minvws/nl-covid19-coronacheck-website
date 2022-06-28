@@ -35,7 +35,8 @@ export enum RouterNames {
     RECOVERY_OVERVIEW = 'recoveryOverview',
     RECOVERY_OVERVIEW_LIST = 'recoveryOverviewList',
     PROOFS_OVERVIEW_LIST = 'proofsOverviewList',
-    NO_QR_CODE_FOUND = 'noQRCodeFound'
+    NO_QR_CODE_FOUND = 'noQRCodeFound',
+    ERROR_QR_INVALID = 'errorQRInvalid'
 
 }
 const routes: Array<RouteConfig> = [
@@ -289,6 +290,16 @@ const routes: Array<RouteConfig> = [
                     name: RouterNames.CAMERA
                 }
             },
+            next: {
+                name: RouterNames.FILE
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/qr-code-wordt-niet-herkend',
+        name: RouterNames.ERROR_QR_INVALID,
+        props: {
             next: {
                 name: RouterNames.FILE
             }
