@@ -37,7 +37,8 @@ export enum RouterNames {
     PROOFS_OVERVIEW_LIST = 'proofsOverviewList',
     NO_QR_CODE_FOUND = 'noQRCodeFound',
     ERROR_QR_INVALID = 'errorQRInvalid',
-    ERROR_QR_DOMESTIC = 'errorQRDomestic'
+    ERROR_QR_DOMESTIC = 'errorQRDomestic',
+    ERROR_QR_INVALID_TYPE = 'errorQRInvalidType'
 
 }
 const routes: Array<RouteConfig> = [
@@ -317,7 +318,16 @@ const routes: Array<RouteConfig> = [
         },
         component: QRGeneralPage
     },
-
+    {
+        path: '/voeg-je-vaccinatie-bewijs-toe',
+        name: RouterNames.ERROR_QR_INVALID_TYPE,
+        props: {
+            next: {
+                name: RouterNames.FILE
+            }
+        },
+        component: QRGeneralPage
+    },
     {
         path: '/lettercombinatie-invullen',
         name: RouterNames.LETTER_COMBINATION,

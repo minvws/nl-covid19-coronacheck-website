@@ -327,6 +327,11 @@
             "pageIntro": "<p>Je hoeft je Nederlandse QR-code niet toe te voegen. Voeg het internationale vaccinatiebewijs toe dat je van je zorgverlener of de overheid hebt gekregen. Hierin staan de gegevens die nodig zijn om je missende vaccinatie toe te voegen. Je herkent dit bewijs aan de Europese vlag.<\/p>",
             "button": "Probeer opnieuw"
         },
+        "errorQRInvalidType": {
+            "pageHeader": "Voeg je vaccinatiebewijs toe",
+            "pageIntro": "<p>De QR-code die je probeert toe te voegen is niet van een vaccinatiebewijs. Je kunt alleen een bewijs van vaccinatie toevoegen.<\/p>",
+            "button": "Probeer opnieuw"
+        },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen"
         },
