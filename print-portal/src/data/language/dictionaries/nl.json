@@ -337,6 +337,12 @@
             "pageIntro": "<p>Je hebt deze QR-code al toegevoegd. Probeer een andere QR-code toe te voegen.<\/p>",
             "button": "Probeer opnieuw"
         },
+        "errorQRMismatch":{
+            "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
+            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald via DigiD. Je kunt dit bewijs daarom niet toevoegen.<\/p>",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "button": "Probeer opnieuw"
+        },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen"
         },

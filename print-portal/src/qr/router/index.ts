@@ -39,7 +39,8 @@ export enum RouterNames {
     ERROR_QR_INVALID = 'errorQRInvalid',
     ERROR_QR_DOMESTIC = 'errorQRDomestic',
     ERROR_QR_INVALID_TYPE = 'errorQRInvalidType',
-    ERROR_QR_DUPLICATE = 'errorQRDuplicate'
+    ERROR_QR_DUPLICATE = 'errorQRDuplicate',
+    ERROR_QR_MISMATCH = 'errorQRMismatch'
 
 }
 const routes: Array<RouteConfig> = [
@@ -333,6 +334,21 @@ const routes: Array<RouteConfig> = [
         path: '/deze-qr-code-heb-je-al-toegevoegd',
         name: RouterNames.ERROR_QR_DUPLICATE,
         props: {
+            next: {
+                name: RouterNames.FILE
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/de-persoonsgegevens-zijn-niet-hetzelfde',
+        name: RouterNames.ERROR_QR_MISMATCH,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            },
             next: {
                 name: RouterNames.FILE
             }
