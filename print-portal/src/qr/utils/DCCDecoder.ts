@@ -84,9 +84,11 @@ export const decodeQRtoDCC = (qr: string) => {
     const [result] = cbor.decodeAllSync(output);
     const data = cbor.decodeAllSync(result?.value?.[2])?.[0];
     const dcc = data.get(-260).get(1)
+    const issuer = data.get(1)
 
     return {
         dcc,
+        issuer,
         result: {
             providerIdentifier: getProviderIdentifier(dcc),
             holder: getHolderFromDCC(dcc),
