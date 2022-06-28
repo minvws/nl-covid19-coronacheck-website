@@ -57,6 +57,23 @@ export const isValidQR = (qr: string, events: Event[]) => {
     return Promise.resolve(true)
 }
 
+const getErrorPriority = (error: string) => {
+    const QR_ERROR_ORDER = [
+        ERROR_QR_MISMATCH,
+        ERROR_QR_INVALID_TYPE,
+        ERROR_QR_DOMESTIC,
+        ERROR_QR_INVALID,
+        NO_QR_CODE_FOUND
+    ]
+    const index = QR_ERROR_ORDER.indexOf(error)
+    if (index < 0) return QR_ERROR_ORDER.length
+    return index
+}
+
+const sortErrorsOnPriority = (a: string, b: string) => {
+    return getErrorPriority(a) - getErrorPriority(b)
+}
+
 const isOfType = (scan: string, filter: string) => {
     const { result: { events } } = decodeQRtoDCC(scan)
     const types : { type: string} [] | undefined = events;
@@ -82,10 +99,14 @@ export const getQRFromPDFile = async (file: File, events: Event[]) => {
         if (result) cul.push({ result, src: images[i] })
         return cul
     }, [] as { result: string, src: string} [])
+
     if (!results.length) {
-        // no QR found, throw first error
-        const message = (scans as { reason: string }[]).find(({ reason }) => reason)?.reason
-        return Promise.reject(message)
+        // no QR found, throw the error with highes priotity to show
+        const errors = (scans as { reason: string }[])
+            .filter(({ reason }) => reason)
+            .map(({ reason }) => reason)
+            .sort(sortErrorsOnPriority)
+        return Promise.reject(errors[0])
     }
     return results
 }
