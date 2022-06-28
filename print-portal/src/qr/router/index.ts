@@ -38,7 +38,8 @@ export enum RouterNames {
     NO_QR_CODE_FOUND = 'noQRCodeFound',
     ERROR_QR_INVALID = 'errorQRInvalid',
     ERROR_QR_DOMESTIC = 'errorQRDomestic',
-    ERROR_QR_INVALID_TYPE = 'errorQRInvalidType'
+    ERROR_QR_INVALID_TYPE = 'errorQRInvalidType',
+    ERROR_QR_DUPLICATE = 'errorQRDuplicate'
 
 }
 const routes: Array<RouteConfig> = [
@@ -321,6 +322,16 @@ const routes: Array<RouteConfig> = [
     {
         path: '/voeg-je-vaccinatie-bewijs-toe',
         name: RouterNames.ERROR_QR_INVALID_TYPE,
+        props: {
+            next: {
+                name: RouterNames.FILE
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/deze-qr-code-heb-je-al-toegevoegd',
+        name: RouterNames.ERROR_QR_DUPLICATE,
         props: {
             next: {
                 name: RouterNames.FILE

@@ -332,6 +332,11 @@
             "pageIntro": "<p>De QR-code die je probeert toe te voegen is niet van een vaccinatiebewijs. Je kunt alleen een bewijs van vaccinatie toevoegen.<\/p>",
             "button": "Probeer opnieuw"
         },
+        "errorQRDuplicate": {
+            "pageHeader": "Deze QR-code heb je al toegevoegd",
+            "pageIntro": "<p>Je hebt deze QR-code al toegevoegd. Probeer een andere QR-code toe te voegen.<\/p>",
+            "button": "Probeer opnieuw"
+        },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen"
         },
