@@ -24,13 +24,14 @@ export default QRMixin.extend({
             immediate: true
         },
         captures (captures: QRData[]) {
-            const [capture] = captures
-            const result = capture?.result
+            const [qrData] = captures
+            const result = qrData?.result
             const code = this.letterCombination || {}
             this.setLetterCombination(
                 result ? {
                     ...code,
-                    result
+                    result,
+                    qrData
                 } : null
             )
         }

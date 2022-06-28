@@ -1,3 +1,5 @@
+import { QRData } from '../mixins/qr-mixin'
+
 export enum LetterCombinationStatus {
     ACCEPTED = 'accepted',
     REJECTED = 'rejected',
@@ -8,6 +10,7 @@ export enum LetterCombinationStatus {
 export type LetterCombination = {
     code?: string,
     result?: string,
+    qrData?: QRData,
     couplingCode?: string,
     credential?: string
 }

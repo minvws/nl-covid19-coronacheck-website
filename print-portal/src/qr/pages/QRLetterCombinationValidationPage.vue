@@ -3,7 +3,7 @@
 <Page
     @back="$router.go(-1)">
     <div class="section">
-       <PageIntro v-bind="intro" />
+        <PageIntro v-bind="intro" />
         <div
             class="section-block">
             <Loading/>
@@ -50,16 +50,25 @@ export default QRMixin.extend({
     created () {
         const { code: couplingCode, result: credential } = this.letterCombination || {}
         if (!couplingCode || !credential) {
-            this.$router.replace(this.rejected)
+            this.onFail(this.rejected)
             return
         }
         this.onSend({ couplingCode, credential })
     },
     methods: {
-        onComplete (payload) {
+        onSuccess (payload) {
             const { result } = decodeQRtoDCC(payload.credential)
             this.$store.dispatch('signedEvents/addProof', { result, payload });
             this.$router.replace(this.accepted)
+        },
+        onFail (route) {
+            // remove QR from scanned qrs
+            const { qrData, code } = this.letterCombination ?? {}
+            if (qrData) this.onRemoveQR(qrData)
+            // clear letterCombination, but keep last entered code
+            this.setLetterCombination({ code })
+            // change route
+            this.$router.replace(route)
         },
         async onSend (payload) {
             try {
@@ -71,22 +80,21 @@ export default QRMixin.extend({
                 switch (status) {
                 case LetterCombinationStatus.ACCEPTED:
                     this.setLetterCombination(payload)
-                    this.onComplete(payload)
+                    this.onSuccess(payload)
                     break
                 case LetterCombinationStatus.BLOCKED:
-                    this.$router.replace(this.blocked)
+                    this.onFail(this.blocked)
                     break
                 case LetterCombinationStatus.EXPIRED:
-                    this.$router.replace(this.expired)
+                    this.onFail(this.expired)
                     break
                 case LetterCombinationStatus.REJECTED:
-                    this.$router.replace(this.rejected)
+                    this.onFail(this.rejected)
                     break
                 default:
                 }
             } catch (e) {
-                console.log(e)
-                this.$router.replace(this.rejected)
+                this.onFail(this.rejected)
             }
         }
     }
