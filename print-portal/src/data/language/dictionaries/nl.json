@@ -311,6 +311,11 @@
             "pageIntro": "<p>Je hebt alleen een lettercombinatie als je jouw bewijs hebt aangevraagd bij een zorgverlener, bijvoorbeeld je huisarts. Of als je deze van de Nederlandse overheid hebt gekregen per post.<br><br>Heb je geen lettercombinatie of ben je deze kwijt? Dan is het helaas niet mogelijk om de gegevens van je vaccinatie nu op te halen. Vraag eerst een nieuw bewijs met bijbehorende lettercombinatie aan bij je zorgverlener of de overheid.<\/p>",
             "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
         },
+        "noQRCodeFound":{
+            "pageHeader": "Geen QR-code gevonden",
+            "pageIntro": "<p>Er is geen QR-code gevonden om je missende vaccinatie toe te kunnen voegen. Maak een nieuwe foto of voeg een ander bestand toe waarop de QR-code goed zichtbaar is.<\/p>",
+            "link": "Toch liever mijn bewijs scannen"
+        },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen"
         },

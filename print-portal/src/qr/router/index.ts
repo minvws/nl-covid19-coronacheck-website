@@ -34,7 +34,8 @@ export enum RouterNames {
     VACCINATION_OVERVIEW_LIST = 'vaccinationOverviewList',
     RECOVERY_OVERVIEW = 'recoveryOverview',
     RECOVERY_OVERVIEW_LIST = 'recoveryOverviewList',
-    PROOFS_OVERVIEW_LIST = 'proofsOverviewList'
+    PROOFS_OVERVIEW_LIST = 'proofsOverviewList',
+    NO_QR_CODE_FOUND = 'noQRCodeFound'
 
 }
 const routes: Array<RouteConfig> = [
@@ -278,6 +279,20 @@ const routes: Array<RouteConfig> = [
         },
         component: QRGeneralPage
     },
+
+    {
+        path: '/geen-qr-code-gevonden',
+        name: RouterNames.NO_QR_CODE_FOUND,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.CAMERA
+                }
+            }
+        },
+        component: QRGeneralPage
+    },
+
     {
         path: '/lettercombinatie-invullen',
         name: RouterNames.LETTER_COMBINATION,
