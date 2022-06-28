@@ -6,7 +6,11 @@
         <PageIntro v-bind="intro" />
         <div class="section-block">
             <QRScannerNav v-if="routes" :routes="routes" />
-            <PrintFaqLink v-if="link" v-bind="{ label, ...link }"/>
+            <CcButton
+                @select="$router.push(next)"
+                :label="button"
+            />
+            <PrintFaqLink v-if="link" :class="{ link: !!next }" v-bind="{ label, ...link }"/>
         </div>
     </div>
 </Page>
@@ -20,6 +24,7 @@ import PageIntro from '@/components/elements/PageIntro.vue';
 import PrintFaqLink from '@/components/views/4-print/PrintFaqLink.vue'
 import QRScannerNav from '@/qr/components/QRScanner/QRScannerNav.vue'
 import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
+import CcButton from '@/components/elements/CcButton';
 
 export default Vue.extend({
     mixins: [pageIntroMixin],
@@ -27,7 +32,8 @@ export default Vue.extend({
         Page,
         PageIntro,
         PrintFaqLink,
-        QRScannerNav
+        QRScannerNav,
+        CcButton
     },
     props: {
         routes: {
@@ -37,7 +43,20 @@ export default Vue.extend({
         link: {
             type: Object,
             required: false
+        },
+        next: {
+            type: Object,
+            required: false
         }
     }
 })
 </script>
+
+<style lang="scss" scoped>
+@import "@/styles/variables/sizes.scss";
+
+.link {
+    display: block;
+    padding-top: 1em;
+}
+</style>

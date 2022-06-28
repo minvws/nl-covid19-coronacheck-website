@@ -288,6 +288,9 @@ const routes: Array<RouteConfig> = [
                 to: {
                     name: RouterNames.CAMERA
                 }
+            },
+            next: {
+                name: RouterNames.FILE
             }
         },
         component: QRGeneralPage

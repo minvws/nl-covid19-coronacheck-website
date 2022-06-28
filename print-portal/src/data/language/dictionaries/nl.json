@@ -314,7 +314,8 @@
         "noQRCodeFound":{
             "pageHeader": "Geen QR-code gevonden",
             "pageIntro": "<p>Er is geen QR-code gevonden om je missende vaccinatie toe te kunnen voegen. Maak een nieuwe foto of voeg een ander bestand toe waarop de QR-code goed zichtbaar is.<\/p>",
-            "link": "Toch liever mijn bewijs scannen"
+            "link": "Toch liever mijn bewijs scannen",
+            "button": "Probeer opnieuw"
         },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen"
