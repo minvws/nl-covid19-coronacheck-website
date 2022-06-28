@@ -629,7 +629,11 @@
           },
           "no-camera": {
             "title": "Geen camera gevonden",
-            "body": "Controleer of je camera is aangesloten en geïnstalleerd op je apparaat. Of kies ervoor om je bewijs te uploaden. "
+            "body": "Controleer of je camera is aangesloten en geïnstalleerd op je apparaat. Of kies ervoor om je bewijs te uploaden."
+          }, 
+          "mismatch": {
+            "title": "De persoonsgegevens zijn niet hetzelfde",
+            "body": "De persoonsgegevens in het bewijs dat je probeert te scannen zijn anders dan de gegevens die je hebt opgehaald via DigiD. Je kunt dit bewijs daarom niet toevoegen."
           }
         },
         "error": {
