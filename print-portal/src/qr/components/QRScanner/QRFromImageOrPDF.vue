@@ -94,7 +94,7 @@ export default QRMixin.extend({
         },
         async scanPDF(file: File) {
             try {
-                const results = await getQRFromPDFile(file)
+                const results = await getQRFromPDFile(file, this.events)
                 results.forEach(result => {
                     this.onAddPendingQR(result)
                 })
@@ -107,7 +107,7 @@ export default QRMixin.extend({
         async onScanFile(file: File) {
             if (isPDF(file)) return this.scanPDF(file)
             else if (isImage(file)) {
-                this.scanResult = await scanQR(file)
+                this.scanResult = await scanQR(file, this.events)
             } else {
                 console.warn('unsupported file of type', file.type)
             }

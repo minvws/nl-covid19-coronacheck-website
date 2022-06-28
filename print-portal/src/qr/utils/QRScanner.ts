@@ -1,6 +1,7 @@
 import QrScanner from 'qr-scanner'
 import { getImagesFromPDFFile } from '@/qr/utils/PDFJsLib'
 import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
+import { Event, isHolderEqual } from '@/qr/utils/HolderUtil'
 import { FilterTypes } from '@/types/filter-types'
 
 export const NO_QR_CODE_FOUND = `Scanner error: ${QrScanner.NO_QR_CODE_FOUND}`
@@ -9,6 +10,7 @@ export const ERROR_QR_INVALID = 'ERROR_QR_INVALID'
 export const ERROR_QR_INVALID_TYPE = 'ERROR_QR_INVALID_TYPE'
 export const ERROR_QR_DOMESTIC = 'ERROR_QR_DOMESTIC'
 export const ERROR_QR_DUPLICATE = 'ERROR_QR_DUPLICATE'
+export const ERROR_QR_MISMATCH = 'ERROR_QR_MISMATCH'
 
 export const isEuropeanQR = (qr: string) => {
     const regex = new RegExp(/^HC[0-9A-Z]\:/);
@@ -39,7 +41,7 @@ export const isValidLetterCombinationLengthError = (code: string) => {
     return undefined
 }
 
-export const isValidQR = (qr: string) => {
+export const isValidQR = (qr: string, events: Event[]) => {
     if (isDutchQR(qr)) {
         return Promise.reject(ERROR_QR_DOMESTIC)
     }
@@ -48,6 +50,9 @@ export const isValidQR = (qr: string) => {
     }
     if (!isOfType(qr, FilterTypes.VACCINATION)) {
         return Promise.reject(ERROR_QR_INVALID_TYPE)
+    }
+    if (!isHolderEqual(qr, events)) {
+        return Promise.reject(ERROR_QR_MISMATCH)
     }
     return Promise.resolve(true)
 }
@@ -59,18 +64,18 @@ const isOfType = (scan: string, filter: string) => {
     return match
 }
 
-export const scanQR = async (input: string | File) => {
+export const scanQR = async (input: string | File, events: Event[]) => {
     const result = await QrScanner.scanImage(input, { returnDetailedScanResult: true })
     const qr = result?.data;
     if (!qr) return null
-    await isValidQR(qr)
+    await isValidQR(qr, events)
     return qr
 }
 
-export const getQRFromPDFile = async (file: File) => {
+export const getQRFromPDFile = async (file: File, events: Event[]) => {
     const images = await getImagesFromPDFFile(file)
     const scans = await Promise.allSettled(
-        images.map((src) => scanQR(src))
+        images.map((src) => scanQR(src, events))
     )
     const results = scans.reduce((cul, scan, i) => {
         const { value: result } = scan as { value: string }

@@ -99,7 +99,7 @@ export default QRMixin.extend({
         async code(result: string) {
             if (!result) return
             try {
-                await isValidQR(result)
+                await isValidQR(result, this.events);
             } catch (error) {
                 const message = (error as Error)?.message || error as string
                 if (!this.openErrorInDialog(message)) {
