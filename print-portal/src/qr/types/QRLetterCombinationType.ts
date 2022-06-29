@@ -1,4 +1,5 @@
 import { QRData } from '../mixins/qr-mixin'
+import { DCCResult } from '@/qr/utils/DCCDecoder'
 
 export enum LetterCombinationStatus {
     ACCEPTED = 'accepted',
@@ -12,5 +13,6 @@ export type LetterCombination = {
     result?: string,
     qrData?: QRData,
     couplingCode?: string,
-    credential?: string
+    credential?: string,
+    dcc?: DCCResult
 }
