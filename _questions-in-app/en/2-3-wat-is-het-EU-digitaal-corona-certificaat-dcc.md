@@ -3,7 +3,7 @@ set: 2
 index: 3
 title: What is the EU Digital COVID Certificate?
 redirect_from:
-    - /en/faq/2-7-wat-is-het-EU-digitaal-corona-certificaat-dcc
+    - /en/faq-in-app/2-7-wat-is-het-EU-digitaal-corona-certificaat-dcc
 whichversion:
   - 0g
   - 1g

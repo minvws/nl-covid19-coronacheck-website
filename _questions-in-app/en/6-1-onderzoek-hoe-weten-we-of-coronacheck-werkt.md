@@ -3,7 +3,7 @@ set: 6
 index: 10
 title: "Research: how do we know CoronaCheck works?"
 redirect_from: 
-  - /en/faq/30-onderzoek-hoe-weten-we-of-coronacheck-werkt
+  - /en/faq-in-app/30-onderzoek-hoe-weten-we-of-coronacheck-werkt
 whichversion:
   - 0g
   - 1g
@@ -27,4 +27,4 @@ The evaluation ran until September. Interim reports were published in july and a
 
 How inspectors use CoronaCheck with admitting visitors to places or activities has been tested with 'mystery guests'. You can read the reports here: <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/11/01/compliance-checks-ctb-coronacheck-1-november-2021" rel="noopener noreferrer" target="_blank">Compliance Checks Corona Admission Ticket November 1, 2021 (Dutch)</a> and <a href= "https://www.rijksoverheid.nl/documenten/rapporten/2021/11/29/compliance-checks-ctb-coronacheck-29-november-2021" rel="noopener noreferrer" target="_blank">Compliance Checks Corona Admission Ticket, November 29, 2021 (Dutch)</a>.
 
-In addition, information about the number of times CoronaCheck and [CoronaCheck Scanner](/en/scanner) are downloaded is made available every day. You can view a summary of this data on [Number of CoronaCheck and Scanner app downloads](/en/faq/1-13-actuele-downloadcijfers/).
+In addition, information about the number of times CoronaCheck and [CoronaCheck Scanner](/en/scanner) are downloaded is made available every day. You can view a summary of this data on [Number of CoronaCheck and Scanner app downloads](/en/faq-in-app/1-13-actuele-downloadcijfers/).

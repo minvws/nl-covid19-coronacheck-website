@@ -3,7 +3,7 @@ set: 2
 index: 5
 title: Why do I have a separate international QR code for every vaccination I've had? And which one should I use?
 redirect_from:
-  - /en/faq/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-QR-code/
+  - /en/faq-in-app/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-QR-code/
 whichversion:
   - 0g
   - 1g

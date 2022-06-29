@@ -3,8 +3,8 @@ set: 1
 index: 5
 title: How is my coronavirus pass checked?
 redirect_from: 
-    - /en/faq/31-hoe-wordt-mijn-testbewijs-gecontroleerd
-    - /en/faq/2-5-hoe-wordt-mijn-coronabewijs-gecontroleerd
+    - /en/faq-in-app/31-hoe-wordt-mijn-testbewijs-gecontroleerd
+    - /en/faq-in-app/2-5-hoe-wordt-mijn-coronabewijs-gecontroleerd
 whichversion:
   - 1g
   - 3g
