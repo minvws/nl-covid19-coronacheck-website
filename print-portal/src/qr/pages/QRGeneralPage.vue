@@ -6,7 +6,6 @@
         <PageIntro v-bind="intro" />
         <div class="section-block">
             <QRScannerNav v-if="routes" :routes="routes" />
-            {{ next }}
             <CcButton
                 v-if="next"
                 @select="onButton"
