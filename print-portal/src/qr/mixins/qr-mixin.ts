@@ -6,6 +6,7 @@ import { Event } from '@/qr/utils/HolderUtil'
 import { ERROR_QR_DOMESTIC, ERROR_QR_INVALID, ERROR_QR_INVALID_TYPE, ERROR_QR_DUPLICATE, ERROR_QR_MISMATCH } from '@/qr/utils/QRScanner'
 import { LetterCombination } from '@/qr/types/QRLetterCombinationType'
 import { CameraState } from '../types/QRScannerDataType'
+import { RouterNames } from '@/qr/router'
 
 export type QRData = QRDataType
 type ModalActions = {label: string, action: () => void }[]
@@ -19,11 +20,12 @@ export type QRMixinType = {
     onAddPendingQR: (qr: QRData) => void
     onRemovePendingQR: (qr: QRData) => void,
     openErrorInDialog: (message: string, actions?: ModalActions) => boolean,
+    openErrorInPageOrDialog: (message: string, actions?: ModalActions) => boolean,
     openDialogError: (modal: Modal, actions?: ModalActions) => void,
     onClearPendingQRS: () => void
     setLetterCombination: (combination: LetterCombination | null) => void
     letterCombination: LetterCombination;
-    errorDialogId: (message: string) => string | undefined;
+    errorMessageId: (message: string) => string | undefined;
     events: Event[];
   }
 
@@ -54,7 +56,7 @@ export default QRMixin.extend({
         }
     },
     methods: {
-        errorDialogId (message: string) {
+        errorMessageId (message: string) {
             switch (message) {
             case CameraState.NO_CAMERA:
                 return 'qr.dialog.no-camera'
@@ -72,8 +74,14 @@ export default QRMixin.extend({
                 return undefined
             }
         },
+        openErrorInPageOrDialog (message: string) {
+            const name = (RouterNames as Record<string, string>)[message]
+            if (!name) return false;
+            this.$router.push({ name })
+            return true
+        },
         openErrorInDialog (message: string, actions?: ModalActions) {
-            const id = this.errorDialogId(message)
+            const id = this.errorMessageId(message)
             if (id) {
                 const message = this.$t(id) as Record<string, unknown>
                 const modal = { ...message, actions } as Modal

@@ -14,7 +14,7 @@
       @capture="onCapture"
       @remove="onRemoveQR"
       @remove-pending="onRemovePendingQR"
-      @error="openErrorInDialog"
+      @error="openErrorInPageOrDialog"
       @clear="onClearPendingQRS"
       v-bind="{
         label: $t('qr.code.scanned'),
@@ -100,7 +100,7 @@ export default QRMixin.extend({
                 })
             } catch (error) {
                 const message = (error as Error)?.message || error as string
-                if (this.openErrorInDialog(message)) return
+                if (this.openErrorInPageOrDialog(message)) return
                 this.error = message
             }
         },
@@ -120,7 +120,7 @@ export default QRMixin.extend({
                 await this.onScanFile(file)
             } catch (error: unknown) {
                 const message = (error as Error)?.message || error as string
-                if (!this.openErrorInDialog(message)) {
+                if (!this.openErrorInPageOrDialog(message)) {
                     this.error = (error as Error)?.message || error as string
                 }
             } finally {
