@@ -3,6 +3,7 @@ import * as cbor from 'cbor'
 import * as pako from 'pako'
 import { ProviderTypes } from '@/types/provider-types'
 import { FilterTypes } from '@/types/filter-types'
+import { Holder } from './HolderUtil'
 
 type DCC = {
     nam: {
@@ -35,6 +36,16 @@ type DCC = {
         df?: string,
         du?: string,
     }[]
+}
+
+export type DCCResult = {
+    dcc: DCC;
+    issuer: string;
+    result: {
+        providerIdentifier: string;
+        holder: Holder;
+        events: unknown;
+    }
 }
 
 const formatSampleDate = (dateString: string) => {
@@ -76,7 +87,7 @@ export const getDCCProvider = (identifier: string) => {
     return identifier.toUpperCase().startsWith(ProviderTypes.DCC.toLocaleUpperCase()) ? ProviderTypes.DCC : undefined
 }
 
-export const decodeQRtoDCC = (qr: string) => {
+export const decodeQRtoDCC = (qr: string): DCCResult => {
     // inspiration from https://gist.github.com/lmillucci/48804b0598553689fc5054da10e63231
     const encoded = qr.substring(4)
     const decoded = base45.decode(encoded)
