@@ -2,6 +2,8 @@
 set: 1
 index: 12
 title: The QR code of my vaccination has expired. What should I do?
+redirect_from: 
+  - /en/faq/3-9-de-qr-code-van-mijn-vaccinatie-is-niet-meer-geldig-wat-betekent-dit
 whichversion:
   - 0g
   - 1g
