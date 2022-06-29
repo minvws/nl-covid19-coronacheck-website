@@ -93,8 +93,10 @@ export default QRMixin.extend({
             const code = this.value
             this.onValidate(code)
             if (this.error) return
-            this.setLetterCombination({ code })
-            this.$router.push(this.next)
+            const combination = { ...(this.letterCombination || {}), code }
+            this.setLetterCombination(combination)
+            if (this.next.replace) this.$router.replace(this.next)
+            else this.$router.push(this.next)
         }
     }
 })
