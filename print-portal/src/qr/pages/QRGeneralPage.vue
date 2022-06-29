@@ -6,9 +6,10 @@
         <PageIntro v-bind="intro" />
         <div class="section-block">
             <QRScannerNav v-if="routes" :routes="routes" />
+            {{ next }}
             <CcButton
                 v-if="next"
-                @select="$router.push(next)"
+                @select="onButton"
                 :label="button"
             />
             <PrintFaqLink v-if="link" :class="{ link: !!next }" v-bind="{ label, ...link }"/>
@@ -48,6 +49,13 @@ export default Vue.extend({
         next: {
             type: Object,
             required: false
+        }
+    },
+    methods: {
+        onButton () {
+            const { replace } = this.next
+            if (replace) this.$router.replace(this.next)
+            else this.$router.push(this.next)
         }
     }
 })

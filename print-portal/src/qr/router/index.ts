@@ -291,11 +291,13 @@ const routes: Array<RouteConfig> = [
         props: {
             link: {
                 to: {
-                    name: RouterNames.CAMERA
+                    name: RouterNames.CAMERA,
+                    replace: true
                 }
             },
             next: {
-                name: RouterNames.FILE
+                name: RouterNames.FILE,
+                replace: true
             }
         },
         component: QRGeneralPage
@@ -305,7 +307,8 @@ const routes: Array<RouteConfig> = [
         name: RouterNames.ERROR_QR_INVALID,
         props: {
             next: {
-                name: RouterNames.FILE
+                name: RouterNames.FILE,
+                replace: true
             }
         },
         component: QRGeneralPage
@@ -315,7 +318,8 @@ const routes: Array<RouteConfig> = [
         name: RouterNames.ERROR_QR_DOMESTIC,
         props: {
             next: {
-                name: RouterNames.FILE
+                name: RouterNames.FILE,
+                replace: true
             }
         },
         component: QRGeneralPage
@@ -325,7 +329,8 @@ const routes: Array<RouteConfig> = [
         name: RouterNames.ERROR_QR_INVALID_TYPE,
         props: {
             next: {
-                name: RouterNames.FILE
+                name: RouterNames.FILE,
+                replace: true
             }
         },
         component: QRGeneralPage
@@ -335,7 +340,8 @@ const routes: Array<RouteConfig> = [
         name: RouterNames.ERROR_QR_DUPLICATE,
         props: {
             next: {
-                name: RouterNames.FILE
+                name: RouterNames.FILE,
+                replace: true
             }
         },
         component: QRGeneralPage
@@ -350,7 +356,8 @@ const routes: Array<RouteConfig> = [
                 }
             },
             next: {
-                name: RouterNames.FILE
+                name: RouterNames.FILE,
+                replace: true
             }
         },
         component: QRGeneralPage
