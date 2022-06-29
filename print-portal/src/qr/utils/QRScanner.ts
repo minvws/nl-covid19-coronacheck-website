@@ -76,8 +76,7 @@ const sortErrorsOnPriority = (a: string, b: string) => {
 
 const isOfType = (scan: string, filter: string) => {
     const { result: { events } } = decodeQRtoDCC(scan)
-    const types : { type: string} [] | undefined = events;
-    const match = !types?.find(({ type }) => type !== filter)
+    const match = !events?.find(({ type }) => type !== filter)
     return match
 }
 

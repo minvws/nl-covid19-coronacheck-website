@@ -44,7 +44,7 @@ export type DCCResult = {
     result: {
         providerIdentifier: string;
         holder: Holder;
-        events: unknown;
+        events: { type: string }[] | undefined;
     }
 }
 
