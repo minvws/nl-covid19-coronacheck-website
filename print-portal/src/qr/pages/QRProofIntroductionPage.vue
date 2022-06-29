@@ -59,8 +59,9 @@ export default Vue.extend({
         onNext () {
             const { next } = this
             if (!next) return
-            const { to: { name } } = next
-            this.$router.push({ name });
+            const { to: { name, replace } } = next
+            if (replace) this.$router.replace({ name });
+            else this.$router.push({ name });
         }
     }
 })
