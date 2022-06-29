@@ -2,8 +2,9 @@
   <header>
     <router-link
       class="link"
-      v-for="{ name, title, description, icon} in routes"
+      v-for="{ name, title, description, icon, replace} in routes"
       :to="{ name }"
+      :replace="replace"
       :key="description"
     >
       <div class="inner">
