@@ -57,7 +57,7 @@ const routes: Array<RouteConfig> = [
                 id: RouterNames.PROOFS_OVERVIEW_LIST,
                 link: {
                     to: {
-                        name: RouterNames.MISSING_VACCINATION
+                        name: RouterNames.PROOF_INTRODUCTION
                     }
                 },
                 next: {
