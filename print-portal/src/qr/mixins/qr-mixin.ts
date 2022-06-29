@@ -2,7 +2,7 @@ import Vue, { VueConstructor } from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 import { getter as QRGetter, action as QRAction } from '@/qr/store/qr/events'
 import { QRData as QRDataType } from '@/qr/store/qr/types'
-import { Event } from '@/qr/utils/HolderUtil'
+import { Event, getHolderFromEvents, Holder } from '@/qr/utils/HolderUtil'
 import { ERROR_QR_DOMESTIC, ERROR_QR_INVALID, ERROR_QR_INVALID_TYPE, ERROR_QR_DUPLICATE, ERROR_QR_MISMATCH } from '@/qr/utils/QRScanner'
 import { LetterCombination } from '@/qr/types/QRLetterCombinationType'
 import { CameraState } from '../types/QRScannerDataType'
@@ -27,6 +27,7 @@ export type QRMixinType = {
     letterCombination: LetterCombination;
     errorMessageId: (message: string) => string | undefined;
     events: Event[];
+    holder: Holder;
   }
 
 export type QRScannerType = {
@@ -53,6 +54,9 @@ export default QRMixin.extend({
         }),
         events () {
             return this.$store.getters['signedEvents/getProofEvents']('all');
+        },
+        holder () {
+            return getHolderFromEvents(this.events);
         }
     },
     methods: {

@@ -25,7 +25,7 @@ const isNameMatch = (holder: Holder, target: Holder) => {
         isFirstCharEqual(holder.lastName, target.lastName)
 }
 
-const getHolderFromEvents = (events: Event[]) => {
+export const getHolderFromEvents = (events: Event[]) => {
     return events.find(({ event }) => !!event)?.holder
 }
 
