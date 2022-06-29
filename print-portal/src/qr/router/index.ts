@@ -108,12 +108,14 @@ const routes: Array<RouteConfig> = [
                 {
                     name: RouterNames.CAMERA,
                     ...(i18n.t('qr.camera.route') as Record<string, unknown>),
-                    icon: require('@/qr/assets/icons/camera.svg')
+                    icon: require('@/qr/assets/icons/camera.svg'),
+                    replace: true
                 },
                 {
                     name: RouterNames.FILE,
                     ...(i18n.t('qr.file.route') as Record<string, unknown>),
-                    icon: require('@/qr/assets/icons/upload.svg')
+                    icon: require('@/qr/assets/icons/upload.svg'),
+                    replace: true
                 }
             ]
         }
@@ -192,6 +194,9 @@ const routes: Array<RouteConfig> = [
             accepted: {
                 name: RouterNames.LETTER_COMBINATION_VALIDATION
             },
+            validation: {
+                name: RouterNames.LETTER_COMBINATION
+            },
             rejected: {
                 name: RouterNames.LETTER_COMBINATION_INVALID
             }
@@ -203,7 +208,8 @@ const routes: Array<RouteConfig> = [
         props: {
             next: {
                 to: {
-                    name: RouterNames.CHOOSE_ADD_PROOF
+                    name: RouterNames.CHOOSE_ADD_PROOF,
+                    replace: true
                 }
             },
             link: {
@@ -372,7 +378,8 @@ const routes: Array<RouteConfig> = [
                 }
             },
             next: {
-                name: RouterNames.PROOF_INTRODUCTION
+                name: RouterNames.LETTER_COMBINATION_VALIDATION,
+                replace: true
             }
         },
         component: QRLetterCombinationPage
