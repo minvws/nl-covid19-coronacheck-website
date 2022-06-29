@@ -2,7 +2,6 @@
 set: 5
 index: 4
 title: I don't have a DigiD, smartphone or computer with a printer
-webonly: true
 whichversion:
   - 0g
   - 1g

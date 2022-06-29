@@ -5,7 +5,6 @@ title: "Onderzoek: hoe weten we of CoronaCheck werkt?"
 redirect_from: 
   - /nl/faq/30-onderzoek-hoe-weten-we-of-coronacheck-werkt
   - /nl/faq/6-2-onderzoek-hoe-weten-we-of-coronacheck-werkt
-webonly: true
 whichversion:
   - 0g
   - 1g

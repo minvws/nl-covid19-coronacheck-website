@@ -5,7 +5,6 @@ title: Is it possible to have a QR code in the CoronaCheck app and on paper at t
 redirect_from: 
   - /en/faq/33-kan-ik-een-testbewijs-in-de-coronacheck-app-en-op-papier-hebben
   - /en/faq/5-4-kan-ik-een-internationale-qr-code-in-de-coronacheck-app-en-op-papier-hebben
-webonly: true
 whichversion:
   - 0g
   - 1g

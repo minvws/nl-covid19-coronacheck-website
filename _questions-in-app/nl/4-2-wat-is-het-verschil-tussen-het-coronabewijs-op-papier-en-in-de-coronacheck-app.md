@@ -5,7 +5,6 @@ title: Wat is het verschil tussen het coronabewijs op papier en in de CoronaChec
 redirect_from: 
   - /nl/faq/38-wat-is-het-verschil-tussen-de-QR-code-op-papier-en-in-de-CoronaCheck-app
   - /nl/faq/5-3-wat-is-het-verschil-tussen-de-QR-code-op-papier-en-in-de-CoronaCheck-app
-webonly: true
 whichversion:
   - 1g
   - 3g

@@ -4,7 +4,6 @@ set:
   - 3
 index: 5
 title: Ik ben gevaccineerd in het buitenland. Kan ik een vaccinatiebewijs maken met CoronaCheck?  
-webonly: true
 whichversion:
   - 0g
   - 1g

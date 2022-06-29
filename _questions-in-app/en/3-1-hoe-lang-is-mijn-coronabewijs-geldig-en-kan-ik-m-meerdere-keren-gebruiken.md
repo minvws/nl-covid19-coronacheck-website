@@ -2,7 +2,6 @@
 set: 3
 index: 5
 title: How long is my corona certificate valid and can I use it multiple times?	
-webonly: true
 whichversion:
   - 1g
   - 3g

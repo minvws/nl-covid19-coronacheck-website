@@ -5,7 +5,6 @@ title: Ik wil liever een QR-code uitprinten. Hoe werkt het papieren bewijs?
 redirect_from: 
   - /nl/faq/34-hoe-werkt-het-papieren-testbewijs
   - /nl/faq/5-2-hoe-werkt-het-papieren-testbewijs
-webonly: true
 featuredHome: true
 featuredHomeIndex: 4
 whichversion:
