@@ -7,6 +7,7 @@
         <div class="section-block">
             <QRScannerNav v-if="routes" :routes="routes" />
             <CcButton
+                v-if="next"
                 @select="$router.push(next)"
                 :label="button"
             />
