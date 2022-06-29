@@ -163,6 +163,9 @@ const routes: Array<RouteConfig> = [
         name: RouterNames.CAMERA,
         component: QRScannerPage,
         props: {
+            validation: {
+                name: RouterNames.LETTER_COMBINATION
+            },
             accepted: {
                 name: RouterNames.LETTER_COMBINATION_VALIDATION
             },
@@ -176,11 +179,11 @@ const routes: Array<RouteConfig> = [
         name: RouterNames.FILE,
         component: QRFromImageOrPDFPage,
         props: {
-            accepted: {
-                name: RouterNames.LETTER_COMBINATION_VALIDATION
-            },
             validation: {
                 name: RouterNames.LETTER_COMBINATION
+            },
+            accepted: {
+                name: RouterNames.LETTER_COMBINATION_VALIDATION
             },
             rejected: {
                 name: RouterNames.LETTER_COMBINATION_INVALID
@@ -240,7 +243,7 @@ const routes: Array<RouteConfig> = [
                 }
             },
             next: {
-                name: RouterNames.LETTER_COMBINATION
+                name: RouterNames.CHOOSE_ADD_PROOF
             }
         },
         component: QRLetterCombinationInvalidPage
@@ -251,6 +254,9 @@ const routes: Array<RouteConfig> = [
         props: {
             accepted: {
                 name: RouterNames.SCANNER_COMPLETE
+            },
+            validation: {
+                name: RouterNames.CHOOSE_ADD_PROOF
             },
             rejected: {
                 name: RouterNames.LETTER_COMBINATION_INVALID
