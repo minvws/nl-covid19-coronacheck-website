@@ -2,7 +2,6 @@
 set: 3
 index: 5
 title: How long is my corona certificate valid for?	
-webonly: true
 whichversion:
   - 0g
 ---

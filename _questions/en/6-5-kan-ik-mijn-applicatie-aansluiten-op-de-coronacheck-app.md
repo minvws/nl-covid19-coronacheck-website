@@ -2,7 +2,6 @@
 set: 6
 index: 5
 title: Can I connect my own application to the CoronaCheck app or CoronaCheck Scanner app?
-webonly: true
 whichversion:
   - 0g
   - 1g

@@ -4,7 +4,6 @@ index: 2
 title: I’ve heard the code is open-source. Where can I find it?
 redirect_from:
     - /en/faq/6-3-ik-heb-gehoord-dat-de-code-open-source-is-waar-kan-ik-die-vinden
-webonly: true
 whichversion:
   - 0g
   - 1g

@@ -2,7 +2,6 @@
 set: 3
 index: 5
 title: Hoe lang is mijn coronabewijs geldig?
-webonly: true
 whichversion:
   - 0g
 ---
