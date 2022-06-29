@@ -45,12 +45,17 @@ export default QRMixin.extend({
         expired: {
             type: Object,
             required: true
+        },
+        validation: {
+            type: Object,
+            required: true
         }
     },
     created () {
         const { code: couplingCode, result: credential } = this.letterCombination || {}
-        if (!couplingCode || !credential) {
-            this.onFail(this.rejected)
+        if (!credential) {
+            console.log('credentials missing')
+            this.onFail(this.validation)
             return
         }
         this.onSend({ couplingCode, credential })

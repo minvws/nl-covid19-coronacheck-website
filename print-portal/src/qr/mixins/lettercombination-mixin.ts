@@ -1,9 +1,15 @@
+/*eslint-disable*/
 import { QRMixin, QRData } from '@/qr/mixins/qr-mixin';
 import { LetterCombination } from '@/qr/types/QRLetterCombinationType'
+import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
 
 export default QRMixin.extend({
     props: {
         accepted: {
+            type: Object,
+            required: true
+        },
+        validation: {
             type: Object,
             required: true
         },
@@ -15,10 +21,15 @@ export default QRMixin.extend({
     watch: {
         letterCombination: {
             handler (value: LetterCombination) {
-                if (value?.code && value?.result) {
+                if (!value) return
+                const { dcc } = value
+                if (!dcc) return
+                // needs lettercombination check
+                const letterCombination = ['NL']
+                if (letterCombination.includes(dcc.issuer)) {
+                    this.$router.replace(this.validation)
+                } else {
                     this.$router.replace(this.accepted)
-                } else if (!value?.code) {
-                    this.$router.replace(this.rejected)
                 }
             },
             immediate: true
@@ -31,7 +42,8 @@ export default QRMixin.extend({
                 result ? {
                     ...code,
                     result,
-                    qrData
+                    qrData,
+                    dcc: decodeQRtoDCC(result)
                 } : null
             )
         }
