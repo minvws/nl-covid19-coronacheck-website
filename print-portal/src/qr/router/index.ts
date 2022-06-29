@@ -1,5 +1,6 @@
 import { RouteConfig } from 'vue-router'
 import QRGeneralPage from '@/qr/pages/QRGeneralPage.vue'
+import QREntryPage from '@/qr/pages/QREntryPage.vue'
 import QRScannerPage from '@/qr/pages/QRScannerPage.vue'
 import QRFromImageOrPDFPage from '@/qr/pages/QRFromImageOrPDFPage.vue'
 import QRProofInternational from '@/qr/pages/QRProofInternational.vue'
@@ -79,7 +80,7 @@ const routes: Array<RouteConfig> = [
                 id: RouterNames.PROOFS_OVERVIEW_LIST,
                 link: {
                     to: {
-                        name: RouterNames.MISSING_VACCINATION
+                        name: RouterNames.PROOF_INTRODUCTION
                     }
                 },
                 next: {
@@ -102,8 +103,14 @@ const routes: Array<RouteConfig> = [
     {
         path: '/kies-bewijs-toevoegen',
         name: RouterNames.CHOOSE_ADD_PROOF,
-        component: QRGeneralPage,
+        component: QREntryPage,
         props: {
+            reject: {
+                to: {
+                    name: 'CollectVaccination'
+                },
+                replace: true
+            },
             routes: [
                 {
                     name: RouterNames.CAMERA,
@@ -215,7 +222,8 @@ const routes: Array<RouteConfig> = [
             link: {
                 to: {
                     name: RouterNames.PROOF_NONE
-                }
+                },
+                replace: true
             }
         },
         component: QRProofIntroductionPage
@@ -297,9 +305,9 @@ const routes: Array<RouteConfig> = [
         props: {
             link: {
                 to: {
-                    name: RouterNames.CAMERA,
-                    replace: true
-                }
+                    name: RouterNames.CAMERA
+                },
+                replace: true
             },
             next: {
                 name: RouterNames.FILE,
