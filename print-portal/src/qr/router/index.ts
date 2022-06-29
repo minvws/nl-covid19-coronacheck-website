@@ -16,7 +16,6 @@ import RecoveryOverview from '@/components/views/3-collect/recovery/happy/Recove
 import i18n from '@/i18n'
 
 export enum RouterNames {
-    MISSING_VACCINATION = 'chooseMissingVaccination',
     CHOOSE_ADD_PROOF = 'chooseAddProofQR',
     CAMERA = 'cameraQR',
     FILE = 'uploadFileQR',
@@ -123,27 +122,6 @@ const routes: Array<RouteConfig> = [
                     ...(i18n.t('qr.file.route') as Record<string, unknown>),
                     icon: require('@/qr/assets/icons/upload.svg'),
                     replace: true
-                }
-            ]
-        }
-    },
-    {
-        path: '/vaccinatie-ontbreekt',
-        name: RouterNames.MISSING_VACCINATION,
-        component: QRGeneralPage,
-        props: {
-            routes: [
-                {
-                    name: RouterNames.LETTER_COMBINATION,
-                    ...(i18n.t('views.chooseMissingVaccination.options.domestic') as Record<string, unknown>)
-                },
-                {
-                    name: RouterNames.PROOF_INTERNATIONAL,
-                    ...(i18n.t('views.chooseMissingVaccination.options.international') as Record<string, unknown>)
-                },
-                {
-                    name: RouterNames.PROOF_NONE,
-                    ...(i18n.t('views.chooseMissingVaccination.options.none') as Record<string, unknown>)
                 }
             ]
         }
