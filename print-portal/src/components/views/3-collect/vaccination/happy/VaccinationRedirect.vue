@@ -15,7 +15,7 @@ export default {
     data() {
         const withPositiveTest = this.$store.getters[StorageEvent.WITH_POSITIVE_TEST]
         const positiveTest = 'CollectPositiveTest'
-        const overview = this.$store.getters.isListBeforeOverview ? RouterNames.VACCINATION_OVERVIEW_LIST : 'VaccinationOverview'
+        const overview = this.$store.getters.isListBeforeOverview ? RouterNames.VACCINATION_OVERVIEW_LIST : 'vaccinationOverview'
 
         return {
             isLoading: false,
