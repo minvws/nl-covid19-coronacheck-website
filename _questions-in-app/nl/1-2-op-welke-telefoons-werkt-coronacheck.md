@@ -3,7 +3,7 @@ set: 1
 index: 2
 title: Op welke telefoons werkt CoronaCheck?  
 redirect_from: 
-  - /nl/faq/11-werkt-coronacheck-op-mijn-telefoon
+  - /nl/faq-in-app/11-werkt-coronacheck-op-mijn-telefoon
 whichversion:
   - 0g
   - 1g
