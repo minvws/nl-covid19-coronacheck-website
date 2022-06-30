@@ -14,5 +14,6 @@ export type LetterCombination = {
     qrData?: QRData,
     couplingCode?: string,
     credential?: string,
-    dcc?: DCCResult
+    dcc?: DCCResult,
+    validate?: boolean
 }

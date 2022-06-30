@@ -52,16 +52,22 @@ export default QRMixin.extend({
         }
     },
     created () {
-        const { code: couplingCode, result: credential } = this.letterCombination || {}
+        const { code: couplingCode, result: credential, validate } = this.letterCombination || {}
         if (!credential) {
             console.log('credentials missing')
             this.onFail(this.validation)
+            return
+        }
+        if (!validate) {
+            // no need to validate qr with lettterCombination
+            this.onSuccess({ couplingCode, credential })
             return
         }
         this.onSend({ couplingCode, credential })
     },
     methods: {
         onSuccess (payload) {
+            this.setLetterCombination(payload)
             const { result } = decodeQRtoDCC(payload.credential)
             this.$store.dispatch('signedEvents/addProof', { result, payload });
             this.$router.replace(this.accepted)
@@ -84,7 +90,6 @@ export default QRMixin.extend({
                 })
                 switch (status) {
                 case LetterCombinationStatus.ACCEPTED:
-                    this.setLetterCombination(payload)
                     this.onSuccess(payload)
                     break
                 case LetterCombinationStatus.BLOCKED:

@@ -41,8 +41,8 @@ export enum RouterNames {
     ERROR_QR_INVALID_TYPE = 'errorQRInvalidType',
     ERROR_QR_DUPLICATE = 'errorQRDuplicate',
     ERROR_QR_MISMATCH = 'errorQRMismatch'
-
 }
+
 const routes: Array<RouteConfig> = [
     {
         path: '/jouw-vaccinaties',

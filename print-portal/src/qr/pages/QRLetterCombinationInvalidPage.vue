@@ -4,6 +4,7 @@
     @back="$router.go(-1)">
     <div class="section">
         <PageIntro v-bind="intro"/>
+        {{ holder }}
         <div class="section-block">
             <CcButton
                 v-if="next"
@@ -28,9 +29,10 @@ import PageIntro from '@/components/elements/PageIntro.vue';
 import PrintFaqLink from '@/components/views/4-print/PrintFaqLink.vue'
 import CcButton from '@/components/elements/CcButton';
 import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
+import qrMixin from '../mixins/qr-mixin';
 
 export default Vue.extend({
-    mixins: [pageIntroMixin],
+    mixins: [pageIntroMixin, qrMixin],
     components: {
         Page,
         PageIntro,

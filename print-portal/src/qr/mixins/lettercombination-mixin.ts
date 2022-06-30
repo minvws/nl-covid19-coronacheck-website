@@ -22,15 +22,11 @@ export default QRMixin.extend({
         letterCombination: {
             handler (value: LetterCombination) {
                 if (!value) return
-                const { dcc } = value
+                const { dcc, validate } = value
                 if (!dcc) return
                 // needs lettercombination check
-                const letterCombination = ['NL']
-                if (letterCombination.includes(dcc.issuer)) {
-                    this.$router.replace(this.validation)
-                } else {
-                    this.$router.replace(this.accepted)
-                }
+                if (validate) this.$router.replace(this.validation)
+                else this.$router.replace(this.accepted)
             },
             immediate: true
         },
@@ -38,12 +34,18 @@ export default QRMixin.extend({
             const [qrData] = captures
             const result = qrData?.result
             const code = this.letterCombination || {}
+            const dcc = decodeQRtoDCC(result)
+
+            // needs letterCombination
+            const validate = ['NL'].includes(dcc.issuer)
+
             this.setLetterCombination(
                 result ? {
                     ...code,
                     result,
                     qrData,
-                    dcc: decodeQRtoDCC(result)
+                    dcc,
+                    validate,
                 } : null
             )
         }
