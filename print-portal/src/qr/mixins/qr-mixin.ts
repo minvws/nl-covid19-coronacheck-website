@@ -3,7 +3,7 @@ import { mapActions, mapGetters } from 'vuex'
 import { getter as QRGetter, action as QRAction } from '@/qr/store/qr/events'
 import { QRData as QRDataType } from '@/qr/store/qr/types'
 import { Event, getHolderFromEvents, Holder } from '@/qr/utils/HolderUtil'
-import { ERROR_QR_DOMESTIC, ERROR_QR_INVALID, ERROR_QR_INVALID_TYPE, ERROR_QR_DUPLICATE, ERROR_QR_MISMATCH } from '@/qr/utils/QRScanner'
+import { ERROR_QR_DOMESTIC, ERROR_QR_INVALID, ERROR_QR_INVALID_TYPE, ERROR_QR_DUPLICATE, ERROR_QR_MISMATCH, NO_QR_CODE_FOUND } from '@/qr/utils/QRScanner'
 import { LetterCombination } from '@/qr/types/QRLetterCombinationType'
 import { CameraState } from '../types/QRScannerDataType'
 import { RouterNames } from '@/qr/router'
@@ -79,7 +79,8 @@ export default QRMixin.extend({
             }
         },
         openErrorInPageOrDialog (message: string) {
-            const name = (RouterNames as Record<string, string>)[message]
+            const id = message === NO_QR_CODE_FOUND ? 'NO_QR_CODE_FOUND' : message
+            const name = (RouterNames as Record<string, string>)[id]
             if (!name) return false;
             this.$router.push({ name })
             return true
