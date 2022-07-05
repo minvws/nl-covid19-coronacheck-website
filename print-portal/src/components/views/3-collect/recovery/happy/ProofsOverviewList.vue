@@ -74,6 +74,7 @@ export default Vue.extend({
                     tag
                 }
             })
+                .filter(({ event: { vaccination } }) => !!vaccination) // only show vaccinations, see #TAIGA-4607
         }
     }
 })
