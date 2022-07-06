@@ -9,7 +9,7 @@
 </template>
 <script>
 import Vue from 'vue'
-import { NO_QR_CODE_FOUND } from '@/qr/utils/QRScanner'
+import { isNoQRCodeFoundError } from '@/qr/utils/QRScanner'
 export default Vue.extend({
     props: {
         error: {
@@ -29,7 +29,7 @@ export default Vue.extend({
     },
     computed: {
         errorMessage() {
-            if (this.error === NO_QR_CODE_FOUND) return this.$t('qr.code.not-found')
+            if (isNoQRCodeFoundError(this.error)) return this.$t('qr.code.not-found')
             return this.error
         }
     },

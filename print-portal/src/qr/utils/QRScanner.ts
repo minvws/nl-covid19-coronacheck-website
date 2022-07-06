@@ -4,13 +4,16 @@ import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
 import { Event, isHolderEqual } from '@/qr/utils/HolderUtil'
 import { FilterTypes } from '@/types/filter-types'
 
-export const NO_QR_CODE_FOUND = `Scanner error: ${QrScanner.NO_QR_CODE_FOUND}`
 export const ERROR_PERMISSION_REJECTED = 'Camera not found.'
 export const ERROR_QR_INVALID = 'ERROR_QR_INVALID'
 export const ERROR_QR_INVALID_TYPE = 'ERROR_QR_INVALID_TYPE'
 export const ERROR_QR_DOMESTIC = 'ERROR_QR_DOMESTIC'
 export const ERROR_QR_DUPLICATE = 'ERROR_QR_DUPLICATE'
 export const ERROR_QR_MISMATCH = 'ERROR_QR_MISMATCH'
+
+export const isNoQRCodeFoundError = (error?: string) => {
+    return error?.includes(QrScanner.NO_QR_CODE_FOUND) || false
+}
 
 export const isEuropeanQR = (qr: string) => {
     const regex = new RegExp(/^HC[0-9A-Z]\:/);
@@ -62,11 +65,13 @@ const getErrorPriority = (error: string) => {
         ERROR_QR_MISMATCH,
         ERROR_QR_INVALID_TYPE,
         ERROR_QR_DOMESTIC,
-        ERROR_QR_INVALID,
-        NO_QR_CODE_FOUND
+        ERROR_QR_INVALID
     ]
     const index = QR_ERROR_ORDER.indexOf(error)
-    if (index < 0) return QR_ERROR_ORDER.length
+    if (index < 0) {
+        if (isNoQRCodeFoundError(error)) return QR_ERROR_ORDER.length
+        return QR_ERROR_ORDER.length + 1
+    }
     return index
 }
 
