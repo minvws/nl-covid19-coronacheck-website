@@ -12,7 +12,7 @@ export default {
     },
     methods: {
         back() {
-            this.$router.push({ name: 'vaccinationOverview' });
+            this.$router.go(-1)
         }
     }
 }
