@@ -1,7 +1,7 @@
 <template>
 
 <Page
-    @back="$router.go(-1)">
+    @back="back">
     <div class="section">
          <PageIntro v-bind="intro"/>
            <div class="section-block">
@@ -60,6 +60,27 @@ export default Vue.extend({
             required: false
         }
 
+    },
+    methods: {
+        back () {
+            const confirmAction = () => {
+                this.$store.commit('clearAll')
+                this.$router.replace({ name: 'ChoiceProof' });
+            }
+
+            const { head, body, yes, no } = this.$t('message.info.areYouSureToCancel')
+
+            this.$store.commit('modal/set', {
+                messageHead: head,
+                messageBody: body,
+                confirmYes: yes,
+                confirmNo: no,
+                confirm: true,
+                closeButton: false,
+                confirmAlert: true,
+                confirmAction
+            })
+        }
     },
     computed: {
         name () {
