@@ -228,7 +228,6 @@ export default QRMixin.extend({
             this.qrScanner = new QrScanner(
                 this.$refs.renderer as HTMLVideoElement,
                 ({ data }:QrScanner.ScanResult) => {
-                    console.log(data)
                     this.code = data
                 },
                 {

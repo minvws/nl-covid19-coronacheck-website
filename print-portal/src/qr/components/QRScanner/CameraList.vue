@@ -9,7 +9,7 @@
     <div class="camera-list-inner">
       <div class="inner">
         <div class="item">{{ selectedCamera || '&nbsp;' }}</div>
-        <div class="icon" :class="{ open: isOpen }">
+        <div class="list-icon" :class="{ open: isOpen }">
           <img src="@/qr/assets/icons/chevron.svg" />
         </div>
       </div>
@@ -157,11 +157,13 @@ export default Vue.extend({
   backdrop-filter: blur(60px);
 }
 
-.icon {
+.list-icon {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   &.open {
-    transform: rotate(180deg);
+    img {
+        transform: rotate(180deg);
+    }
   }
 }
 </style>
