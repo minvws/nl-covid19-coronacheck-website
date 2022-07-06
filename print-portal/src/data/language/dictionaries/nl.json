@@ -344,7 +344,8 @@
             "button": "Probeer opnieuw"
         },
         "chooseAddProofQR": {
-            "pageHeader": "Hoe wil je toevoegen"
+            "pageHeader": "Hoe wil je toevoegen?",
+            "pageIntro": "Als je een camera op je apparaat hebt, kun je de QR-code op je bewijs scannen. Of voeg je bewijs toe als bestand."
         },
         "chooseInternationalQR": {
             "pageHeader": "Buitenlands bewijs van vaccinatie",
