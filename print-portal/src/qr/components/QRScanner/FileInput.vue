@@ -29,8 +29,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import DropFile from '@/qr/components/DropFile.vue'
-import { prettyFileExtensions } from '@/qr/utils/FileType'
-import { LocaleMessages } from 'vue-i18n'
+
 export default Vue.extend({
     components: {
         DropFile
@@ -49,27 +48,10 @@ export default Vue.extend({
             type: String,
             required: false,
             default: 'image/*'
-        }
-    },
-    computed: {
-        labels() {
-            const acceptFileExtensions = prettyFileExtensions(
-                this.accept,
-                this.$t('qr.or') as string,
-                false,
-                '-'
-            )
-            return {
-                ...(this.$t('qr.file.upload') as LocaleMessages),
-                ...{
-                    unsupported: {
-                        ...(this.$t('qr.file.error.unsupported') as LocaleMessages),
-                        body: this.$t('qr.file.error.unsupported.body', {
-                            acceptFileExtensions
-                        })
-                    }
-                }
-            }
+        },
+        labels: {
+            type: Object,
+            required: true
         }
     },
     methods: {

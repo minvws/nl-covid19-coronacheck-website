@@ -2,7 +2,7 @@
   <div>
     <FileInput
       accept="image/jpeg,image/png,application/pdf"
-      v-bind="{ isPending }"
+      v-bind="{ isPending, labels }"
       @file="onFileInput"
       @error="openDialogError"
     />
@@ -39,8 +39,9 @@ import FilePreview from '@/qr/components/QRScanner/FilePreview.vue'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
 import QRList from '@/qr/components/QRScanner/QRList.vue'
 import { scanQR, getQRFromPDFile } from '@/qr/utils/QRScanner'
-import { isPDF, isImage } from '@/qr/utils/FileType'
+import { isPDF, isImage, prettyFileExtensions } from '@/qr/utils/FileType'
 import qrMixin, { QRMixin, QRData } from '@/qr/mixins/qr-mixin'
+import { LocaleMessages } from 'vue-i18n'
 
 export default QRMixin.extend({
     mixins: [qrMixin],
@@ -66,11 +67,37 @@ export default QRMixin.extend({
             src: null,
             scanResult: null,
             codesAdded: 0
+        } as {
+            isPending: boolean,
+            error: null | string,
+            file: null | File,
+            src: null | string,
+            scanResult: null | string,
+            codesAdded: number,
         }
     },
     computed: {
         isScanReady() {
             return !!this.scanResult && !!this.src
+        },
+        labels () {
+            const acceptFileExtensions = prettyFileExtensions(
+                this.accept,
+                this.$t('qr.or') as string,
+                false,
+                '-'
+            )
+            return {
+                ...(this.$t('qr.file.upload') as LocaleMessages),
+                ...{
+                    unsupported: {
+                        ...(this.$t('qr.file.error.unsupported') as LocaleMessages),
+                        body: this.$t('qr.file.error.unsupported.body', {
+                            acceptFileExtensions
+                        })
+                    }
+                }
+            }
         }
     },
     watch: {
@@ -109,7 +136,7 @@ export default QRMixin.extend({
             else if (isImage(file)) {
                 this.scanResult = await scanQR(file, this.events)
             } else {
-                console.warn('unsupported file of type', file.type)
+                this.openDialogError(this.labels.unsupported)
             }
         },
         async onFileInput(file: File) {

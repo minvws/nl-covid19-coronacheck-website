@@ -39,7 +39,8 @@ export type QRScannerType = {
     codesAdded: number
     onClear: () => void
     onScanFile: (file: File) => Promise<void>
-    scanPDF: (file: File) => Promise<void>
+    scanPDF: (file: File) => Promise<void>,
+    labels: { unsupported: Modal }
   }
 
 export const QRMixin = Vue as VueConstructor<Vue & QRMixinType & QRScannerType>
