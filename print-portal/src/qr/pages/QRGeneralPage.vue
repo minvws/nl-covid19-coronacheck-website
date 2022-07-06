@@ -52,8 +52,9 @@ export default Vue.extend({
     },
     methods: {
         onButton () {
-            const { replace } = this.next
-            if (replace) this.$router.replace(this.next)
+            const { replace, go } = this.next
+            if (go) this.$router.go(go)
+            else if (replace) this.$router.replace(this.next)
             else this.$router.push(this.next)
         }
     }
