@@ -48,8 +48,8 @@
                 "content": "<p>Dan kan het even duren tot je gegevens op te halen zijn en je een bewijs kunt maken. Probeer het later opnieuw.<\/p><p>Mist je vaccinatie na een paar dagen nog steeds? Neem dan contact op met de zorgverlener waar je bent gevaccineerd. Dat kan de GGD, je huisarts of een arts van een zorginstelling zijn. Zij kunnen je helpen je gegevens aan te passen.<\/p>"
             },
             "no-qr": {
-                "summary": "Heb je een bewijs, maar zonder QR-code?",
-                "content": "Je kunt helaas alleen een missende vaccinatie ophalen als je daar al een bewijs met QR-code van hebt. Kijk voor meer informatie op  <a href=\"https:\/\/www.rijksoverheid.nl\" target=\"_blank\" rel=\"noopener noreferrer\">www.rijksoverheid.nl<\/a>"
+                "summary": "Heb je een bewijs van je vaccinatie, maar zonder QR-code?",
+                "content": "<p>Je kunt alleen een missende vaccinatie toevoegen als je daar al een bewijs met QR-code van hebt. Dit kan een bewijs van een buitenlandse vaccinatie zijn die je op papier hebt, of in een buitenlandse corona-app. Je kunt ook een papieren bewijs toevoegen dat je van je zorgverlener of de Nederlandse overheid opgestuurd hebt gekregen. <br><br>Kijk voor meer informatie op  <a href=\"https:\/\/www.rijksoverheid.nl\/coronabewijs\" target=\"_blank\" rel=\"noopener noreferrer\">rijksoverheid.nl/coronabewijs<\/a><\/p>"
             }
         },
         "languagePicker": {
@@ -272,8 +272,9 @@
             "pageIntro": ""
         },
         "proofIntroduction": {
-            "pageHeader": "Pak je internationale QR-code erbij",
-            "pageIntro": "<p>Scan of upload straks de <b>internationale QR-code</b> op je bewijs. Hierin staan de gegevens die nodig zijn om je missende vaccinatie op te halen.<\/p>"
+            "pageHeader": "Een missende vaccinatie toevoegen",
+            "pageIntro": "<p>Als je vaccinatie er niet bij staat, wordt deze niet meegeteld in het vaccinatiebewijs dat je wilt maken. Heb je al een bewijs met QR-code van je missende vaccinatie? Dan kun je die in de volgende stap toevoegen.<br><br>Je kunt een bewijs met QR-code toevoegen van je vaccinatie uit het buitenland. Of een bewijs dat je opgestuurd hebt gekregen van je zorgverlener of de Nederlandse overheid.<\/p>",
+            "link": "Heb je geen bewijs met QR-code?"
         },
         "letterCombination": {
             "pageHeader": "Vul eerst de lettercombinatie in",
@@ -297,7 +298,7 @@
         },
         "letterCombinationBlocked": {
             "pageHeader": "Te vaak geprobeerd",
-            "pageIntro": "<p>Voor de veiligheid kun je deze QR-code tijdelijk niet gebruiken<.br><br>Je kunt het over 24 uur weer proberen.<\/p>",
+            "pageIntro": "<p>Voor de veiligheid kun je deze QR-code tijdelijk niet gebruiken<br><br>Je kunt het over 24 uur weer proberen.<\/p>",
             "link": "Doorgaan met de opgehaalde vaccinaties(s)"
         },
         "letterCombinationExpired": {
@@ -310,8 +311,41 @@
             "pageIntro": "<p>Je hebt alleen een lettercombinatie als je jouw bewijs hebt aangevraagd bij een zorgverlener, bijvoorbeeld je huisarts. Of als je deze van de Nederlandse overheid hebt gekregen per post.<br><br>Heb je geen lettercombinatie of ben je deze kwijt? Dan is het helaas niet mogelijk om de gegevens van je vaccinatie nu op te halen. Vraag eerst een nieuw bewijs met bijbehorende lettercombinatie aan bij je zorgverlener of de overheid.<\/p>",
             "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
         },
+        "noQRCodeFound":{
+            "pageHeader": "Geen QR-code gevonden",
+            "pageIntro": "<p>Er is geen QR-code gevonden om je missende vaccinatie toe te kunnen voegen. Maak een nieuwe foto of voeg een ander bestand toe waarop de QR-code goed zichtbaar is.<\/p>",
+            "link": "Toch liever mijn bewijs scannen",
+            "button": "Probeer opnieuw"
+        },
+        "errorQRInvalid": {
+            "pageHeader": "QR-code wordt niet herkend",
+            "pageIntro": "<p>De QR-code die je probeert toe te voegen wordt niet herkend als die van een coronabewijs. Controleer of je de goede QR-code hebt.<\/p>",
+            "button": "Probeer opnieuw"
+        },
+        "errorQRDomestic": {
+            "pageHeader": "Voeg je internationale QR-code toe",
+            "pageIntro": "<p>Je hoeft je Nederlandse QR-code niet toe te voegen. Voeg het internationale vaccinatiebewijs toe dat je van je zorgverlener of de overheid hebt gekregen. Hierin staan de gegevens die nodig zijn om je missende vaccinatie toe te voegen. Je herkent dit bewijs aan de Europese vlag.<\/p>",
+            "button": "Probeer opnieuw"
+        },
+        "errorQRInvalidType": {
+            "pageHeader": "Voeg je vaccinatiebewijs toe",
+            "pageIntro": "<p>De QR-code die je probeert toe te voegen is niet van een vaccinatiebewijs. Je kunt alleen een bewijs van vaccinatie toevoegen.<\/p>",
+            "button": "Probeer opnieuw"
+        },
+        "errorQRDuplicate": {
+            "pageHeader": "Deze QR-code heb je al toegevoegd",
+            "pageIntro": "<p>Je hebt deze QR-code al toegevoegd. Probeer een andere QR-code toe te voegen.<\/p>",
+            "button": "Probeer opnieuw"
+        },
+        "errorQRMismatch":{
+            "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
+            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald via DigiD. Je kunt dit bewijs daarom niet toevoegen.<\/p>",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "button": "Probeer opnieuw"
+        },
         "chooseAddProofQR": {
-            "pageHeader": "Hoe wil je toevoegen"
+            "pageHeader": "Hoe wil je toevoegen?",
+            "pageIntro": "Als je een camera op je apparaat hebt, kun je de QR-code op je bewijs scannen. Of voeg je bewijs toe als bestand."
         },
         "chooseInternationalQR": {
             "pageHeader": "Buitenlands bewijs van vaccinatie",
@@ -319,8 +353,9 @@
             "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
         },
         "chooseNoneQR": {
-            "pageHeader": "Geen bewijs met QR-code van missende vaccinatie(s)",
-            "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
+            "pageHeader": "Geen bewijs met QR-code van missende vaccinatie",
+            "link": "Doorgaan met mijn opgehaalde vaccinaties(s)",
+            "body": "<p>Toch nu een bewijs maken? Ga door met de vaccinaties die je via DigiD hebt opgehaald.<\/p>"
         },
         "chooseMissingVaccination": {
             "pageHeader": "Heb je al een bewijs met QR-code van de missende vaccinatie(s)?",
@@ -595,8 +630,8 @@
             "pageIntro": "<p>Er zijn geen gegevens over je vaccinatie(s) beschikbaar. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<\/p><p>Ben je kortgeleden gevaccineerd? Dan kan het even duren tot de gegevens beschikbaar zijn.<\/p>"
         },
         "uploadFileQR": {
-            "pageHeader": "Voeg een bestand toe om te uploaden",
-            "pageIntro": "<p>Je kunt je bestand uploaden vanuit een map, of direct in het vak hieronder slepen. Zorg dat je een jpg-, png- of pdf-bestand hebt om toe te voegen.<\/p>"
+            "pageHeader": "Kies een bestand om toe te voegen",
+            "pageIntro": "<p>Je kunt je bestand met een of meerdere QR-codes toevoegen vanuit een map, of direct in het vak hieronder slepen. Zorg dat je een {acceptFileExtensions}bestand hebt.<\/p>"
         },
         "cameraQR": {
             "pageHeader": "Houd de QR-code op je bewijs voor de camera",
@@ -627,14 +662,19 @@
           },
           "no-camera": {
             "title": "Geen camera gevonden",
-            "body": "Controleer of je camera is aangesloten en geïnstalleerd op je apparaat. Of kies ervoor om je bewijs te uploaden. "
+            "body": "Controleer of je camera is aangesloten en geïnstalleerd op je apparaat. Of kies ervoor om je bewijs te uploaden."
+          }, 
+          "mismatch": {
+            "title": "De persoonsgegevens zijn niet hetzelfde",
+            "body": "De persoonsgegevens in het bewijs dat je probeert te scannen zijn anders dan de gegevens die je hebt opgehaald via DigiD. Je kunt dit bewijs daarom niet toevoegen."
           }
         },
         "error": {
           "not-started": "Er is iets fout gegaan met het starten van de camera"
         },
         "and": "en",
-        "or": "of een",
+        "or": "of",
+        "or-a": "of een",
         "camera": {
           "start": "Start camera",
           "stop": "Stop camera",
@@ -670,8 +710,8 @@
           },
           "error": {
             "unsupported": {
-              "title": "Mislukt",
-              "body": "Dit bestand wordt niet ondersteund. Ondersteunde bestandsformaten zijn: {acceptFileExtensions}"
+              "title": "Kies een ander soort bestand",
+              "body": "Je kunt alleen {acceptFileExtensions}bestanden toevoegen. Kies een van dit soort bestanden."
             }
           }
         },
