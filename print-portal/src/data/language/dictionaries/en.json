@@ -27,14 +27,29 @@
         "eventInfo": {
             "dateOfBirth": "Date of birth",
             "dateOfTest": "Test date",
+            "eventsAddedByQR": "Data added by you",
             "eventsFetchedAt": "Data retrieved at",
             "head": "Details",
             "name": "Name",
+            "negativetestResult": "Negative test result",
+            "positivetestResult": "Positive test result",
+            "receivedFrom": "Retrieved via",
+            "recoveryResult": "Recovery certificate",
+            "scannedQR": "Added by you",
             "testResult": "Test result",
+            "vaccinationResult": "Vaccination",
             "validFrom": "Valid From",
             "validUntil": "Valid until"
         },
         "faq": {
+            "no-qr": {
+                "content": "<p>You can only add a missing vaccination if you already have the certificate with QR code of that vaccination. This can be a certificate of a foreign vaccination you have on paper, or in a foreign coronavirus app. You can also add a paper certificate you received from your health care provider or the Dutch government.<br><br>For more information, visit <a href=\"https:\/\/www.government.nl\/topics\/coronavirus-covid-19\/covid-certificate\" target=\"_blank\" rel=\"noopener noreferrer\">government.nl\/covid-certificate<\/a>.<\/p>",
+                "summary": "Do you have a vaccination certificate, but without QR code?"
+            },
+            "recently-vaccinated": {
+                "content": "<p>Then it may take a while to retrieve your data and create a certificate. Please try again later.<\/p><p>Is your vaccination still missing after a few days? Please contact the health care provider where you were vaccinated. This can be the GGD, your GP or another health care provider. They can help you adjust your data.<\/p>",
+                "summary": "Have you been vaccinated recently?"
+            },
             "viewFaq": "View frequently asked questions"
         },
         "languagePicker": {
@@ -232,6 +247,85 @@
             "title": "Certificate containing QR code"
         }
     },
+    "qr": {
+        "and": "and",
+        "camera": {
+            "message": {
+                "NO_CAMERA": "Connect a camera"
+            },
+            "route": {
+                "description": "I can show my certificate in front of my device’s camera",
+                "title": "Scan certificate with camera"
+            },
+            "selected": "Selected camera",
+            "start": "Start camera",
+            "states": {
+                "LIST": "Retrieving camera list",
+                "NONE": "",
+                "NO_CAMERA": "No camera found",
+                "PLAYING": "Camera running",
+                "REJECTED": "You must first give permission to use your camera.",
+                "SELECTED": "Camera starting",
+                "STARTED": "Camera started",
+                "STARTING": "Starting camera",
+                "STOPPED": "Camera stopped"
+            },
+            "stop": "Stop camera"
+        },
+        "code": {
+            "added": "{count} QR-codes added | {count} QR-code added",
+            "not-found": "No QR code found",
+            "scanned": "Scanned QR codes"
+        },
+        "dialog": {
+            "domestic": {
+                "body": "You don’t need to scan your Dutch QR code. Scan the QR code on the international certificate you received from your health care provider or the government. It contains the information needed to add your missing vaccination. You can recognise this certificate by the European flag.",
+                "title": "Scan your international QR code"
+            },
+            "duplicate": {
+                "body": "You have already scanned this QR code. Try scanning another QR code.",
+                "title": "This QR code has already been scanned"
+            },
+            "invalid": {
+                "body": "The QR code you are trying to scan is not recognised as a coronavirus pass. Check if you’re holding the correct QR code in front of the camera.",
+                "title": "QR code not recognised"
+            },
+            "invalidType": {
+                "body": "The QR code you are trying to scan does not belong to a vaccination certificate. You can only add a certificate of your vaccination.",
+                "title": "Scan your vaccination certificate"
+            },
+            "mismatch": {
+                "body": "The personal details on the certificate you are trying to scan differ from the details you retrieved via DigiD. Because of that, you can’t add this certificate.",
+                "title": "The personal details don’t match"
+            },
+            "no-camera": {
+                "body": "Make sure your camera is connected and installed on your device. Or choose to add your certificate as a file.",
+                "title": "No camera found"
+            }
+        },
+        "error": {
+            "not-started": "Something went wrong when starting the camera"
+        },
+        "file": {
+            "error": {
+                "unsupported": {
+                    "body": "You can only upload {acceptFileExtensions}. Choose one of these file types.",
+                    "title": "Choose a different file type"
+                }
+            },
+            "route": {
+                "description": "I have my certificate on my phone or computed",
+                "title": "Add certificate as a file"
+            },
+            "upload": {
+                "default": "Add a file",
+                "isOver": "Release to add file",
+                "isPending": "Checking file"
+            }
+        },
+        "or": "or",
+        "or-a": "or a"
+    },
     "skiplink": "Skip to content",
     "somethingIsWrong": "Is something wrong?",
     "template": {
@@ -245,6 +339,10 @@
             "button": "Back to the homepage of CoronaCheck.nl",
             "pageHeader": "Internet browser too old",
             "pageIntro": "<p>The internet browser you are using is too old to load this page. Please download a newer browser. For example:<br><br><a href=\"https:\/\/www.google.com\/chrome\" target=\"_blank\" rel=\"noopener noreferrer\">Google Chrome<\/a><br><br><a href=\"https:\/\/www.mozilla.org\/firefox\" target=\"_blank\" rel=\"noopener noreferrer\">Mozilla Firefox<\/a><br><br><a href=\"https:\/\/www.microsoft.com\/edge\" target=\"_blank\" rel=\"noopener noreferrer\">Microsoft Edge<\/a><\/p>"
+        },
+        "cameraQR": {
+            "pageHeader": "Hold the QR code on your certificate in front of the camera",
+            "pageIntro": "<p>Make sure the entire QR code is visible. Do you have multiple QR codes? Then you can add these in the same way later.<\/p>"
         },
         "choiceProof": {
             "choiceRecoveryBody": "The test proves I have had coronavirus",
@@ -264,6 +362,18 @@
             "loginDigid": "I don’t have DigiD",
             "pageHeader": "Where have you been tested?",
             "pageIntro": "<p>Does the test point out you don't have coronavirus? Then you can use the negative test result to create a certificate. Please specify where you were tested.<\/p>"
+        },
+        "chooseAddProofQR": {
+            "pageHeader": "How do you want to add?",
+            "pageIntro": "If your device has a camera, you can scan the QR code on your certificate. Or add your certificate as a file."
+        },
+        "chooseInternationalQR": {
+            "link": "Continue with my retrieved vaccination(s)"
+        },
+        "chooseNoneQR": {
+            "body": "<p>Want to create a certificate now anyway? Continue with the vaccinations you retrieved via DigiD.<\/p>",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "No certificate with QR code of missing vaccination"
         },
         "collectPositiveTest": {
             "pageHeader": "Retrieve test result"
@@ -304,6 +414,32 @@
             "pageHeader": "We can’t make a certificate",
             "pageIntro": "<p>At this moment, we can't make a certificate. This can have various causes. Read more on the <a href=\"https:\/\/www.coronacheck.nl\/en\/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a>.<br><br><b>Error code<\/b><br>W 180 000 058<\/p>"
         },
+        "errorQRDomestic": {
+            "button": "Try again",
+            "pageHeader": "Add your international QR code",
+            "pageIntro": "<p>You don’t need to add your Dutch QR code. Add the QR code on the international certificate you received from your health care provider or the government. It contains the information needed to add your missing vaccination. You can recognise this certificate by the European flag.<\/p>"
+        },
+        "errorQRDuplicate": {
+            "button": "Try again",
+            "pageHeader": "This QR code has already been added",
+            "pageIntro": "<p>You’ve already added this QR code. Try adding another QR code.<\/p>"
+        },
+        "errorQRInvalid": {
+            "button": "Try again",
+            "pageHeader": "QR code not recognised",
+            "pageIntro": "<p>The QR code you are trying to add is not recognised as a coronavirus pass. Check if you have the correct QR code.<\/p>"
+        },
+        "errorQRInvalidType": {
+            "button": "Try again",
+            "pageHeader": "Add your vaccination certificate",
+            "pageIntro": "<p>The QR code you are trying to add does not belong to a vaccination certificate. You can only add a certificate of your vaccination.<\/p>"
+        },
+        "errorQRMismatch": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "The personal details don’t match",
+            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved via DigiD. Because of that, you can’t add this certificate.<\/p>"
+        },
         "errorSessionExpired": {
             "pageHeader": "Your session has expired",
             "pageIntro": "<p>You’ve waited too long. For safety reasons, you were logged out. Log in again with your DigiD to retrieve your details.<\/p>"
@@ -324,16 +460,55 @@
             "pageHeader": "Get access with a certificate on paper",
             "pageIntro": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your and other people’s health matters. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass.<\/p><p>A certificate on paper is convenient if you don't have a smartphone.<\/p>",
             "pageIntro0G": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your health matters, and so does the health of others. That is why some countries require a coronavirus pass. For example at the border, or at certain places and activities. A certificate on paper is convenient if you don't have a smartphone.<\/p>",
-            "test": "",
-            "test2": "New created key TEST",
             "userConsentHeader": "Start making a certificate on paper",
             "userConsentText": "I have read the <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> and understand how CoronaCheck processes my data."
+        },
+        "letterCombination": {
+            "emptyCode": "Please enter a letter combination first",
+            "exampleCode": "E.g. FLBRXQ",
+            "invalidCode": "This letter combination is invalid. A valid combination looks like this: FLBRXQ.",
+            "invalidCodeLength": "",
+            "link": "Don’t have a letter combination?",
+            "pageHeader": "Enter the letter combination",
+            "pageIntro": "<p>With your certificate you received a separate paper with a letter combination. Enter this letter combination below to add your missing vaccination.<\/p>",
+            "rejectedCode": "This letter combination is invalid. A valid combination looks like this: FLBRXQ.",
+            "uniqueCode": "Letter combination"
+        },
+        "letterCombinationBlocked": {
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "Too many attempts",
+            "pageIntro": ""
+        },
+        "letterCombinationExpired": {
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "",
+            "pageIntro": ""
+        },
+        "letterCombinationInvalid": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "No valid combination",
+            "pageIntro": "<p>This letter combination and the certificate you want to add do not belong together. Find the correct letter combination and certificate and try again.<br><br>Not working? Then you can still create a certificate from the vaccinations you retrieved via DigiD.<\/p>"
+        },
+        "letterCombinationValidation": {
+            "pageHeader": "Checking QR code"
         },
         "negativeTestOverview": {
             "createTestProofButton": "Make certificate",
             "pageHeader": "Are the details correct?",
             "pageIntro": "<p>This test result is retrieved from the test location. If the details are correct, you can create a certificate.<\/p>",
             "retrievedTestResult": "Retrieved test result"
+        },
+        "noLetterCombination": {
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "No letter combination?",
+            "pageIntro": "<p>You only have a letter combination if you requested your certificate at a healthcare provider, for example your GP. Or if you received it from the Dutch government by post.<br><br>Don't have a letter combination or lost it? Unfortunately, it is not possible to add your vaccination now. First, request a new certificate with letter combination at your health care provider or the Dutch government.<br><br>Want to create a certificate now anyway? Continue with the vaccinations you retrieved via DigiD.<\/p>"
+        },
+        "noQRCodeFound": {
+            "button": "Try again",
+            "link": "Scan my certificate instead",
+            "pageHeader": "No QR code found",
+            "pageIntro": "<p>No QR code was found to add your missing vaccination. Take another picture or add another file, showing the QR code clearly.<\/p>"
         },
         "notPossibleVaccinations": {
             "pageHeader": "We can’t make a certificate",
@@ -411,6 +586,17 @@
             },
             "validInFuture": "<p>Please note: your recovery certificate will become valid 11 days after the positive test result. You need to be free of symptoms as well.<\/p>"
         },
+        "proofIntroduction": {
+            "link": "Don’t have a certificate with QR code?",
+            "pageHeader": "Adding a missing vaccination",
+            "pageIntro": "<p>If your vaccination is missing, it will not be included in the vaccination certificate you want to create. Do you already have a certificate with QR code of your missing vaccination? Then you can add it in the next step.<br><br>You can add a certificate with QR code of your vaccination from abroad. Or a certificate you received from your health care provider or the Dutch government.<\/p>"
+        },
+        "proofsOverviewList": {
+            "button": "Yes, next",
+            "link": "No, a vaccination is missing",
+            "pageHeader": "Are these all your vaccinations?",
+            "pageIntro": "<p>We retrieved these vaccinations from the GGD and the RIVM:<\/p>"
+        },
         "provideCode": {
             "didNotGetCode": "Didn't receive a verification code?",
             "emptyTestCode": "Please enter a retrieval code first",
@@ -452,8 +638,8 @@
         },
         "short-stay": {
             "createTestProofButton": "Make certificate",
-            "pageHeader": "Check your results",
-            "pageIntro": "<p>This test result is retrieved from the test location.<\/p><p>Is the below correct? Then you can convert the negative test result into a QR code. This is your test certificate.<\/p>"
+            "pageHeader": "Are the details correct?",
+            "pageIntro": "<p>If the details are correct you can create a visitor pass<\/p>"
         },
         "shortStay": {
             "button": "Next",
@@ -466,7 +652,7 @@
             "pageIntro": "<p>You've just entered the retrieval code of your test result. Please enter your approval code first to retrieve your vaccination approval. You've received this code either by email or on paper from the desk that reviewed your vaccination.<\/p>"
         },
         "shortStayProvideAssessmentCode": {
-            "didNotGetCode": "I don't have a code",
+            "didNotGetCode": "I didn't receive a code",
             "emptyTestCode": "Please enter an approval code first",
             "emptyVerificationCode": "Please enter a verification code first",
             "exampleCode": "VAC-YYYYYYYYY1-F2",
@@ -493,6 +679,10 @@
             "pageHeader": "Test result not yet known",
             "pageIntro": "Please try again later.<br>If you have any questions, contact your test location."
         },
+        "uploadFileQR": {
+            "pageHeader": "Choose a file to add",
+            "pageIntro": "<p>You can add a file with one or more QR codes from a folder, or drag and drop it into the box below. Make sure the file type is {acceptFileExtensions}.<\/p>"
+        },
         "vaccinationOverview": {
             "createTestProofButton": "Make certificate",
             "pageHeader": "Are the details correct?",
@@ -509,49 +699,5 @@
     },
     "warning": {
         "noPositivetest": "No positive test result was found to be recorded into your vaccination certificate."
-    },
-    "qr": {
-        "error": {
-          "not-started": "Something went wrong with starting the camera"
-        },
-        "and": "and",
-        "or": "or",
-        "or-a": "or a",
-        "camera": {
-          "start": "Start camera",
-          "stop": "Stop camera",
-          "states": {
-            "NONE": "",
-            "STARTING": "Starting camera",
-            "STARTED": "Camera started",
-            "PLAYING": "Camera running",
-            "SELECTED": "Camera starting",
-            "LIST": "Retrieving camera list",
-            "STOPPED": "Camera stopped"
-          },
-          "selected": "Selected camera"
-        },
-        "file": {
-          "route": {
-            "title": "Upload your certificate",
-            "description": "I have my certificate on my phone or computed"
-          },
-          "upload": {
-            "default": "Add a file",
-            "isOver": "Release to add file",
-            "isPending": "Busy scanning file"
-          },
-          "error": {
-            "unsupported": {
-              "title": "Failed",
-              "body": "This file is unsupported, supported file types: {acceptFileExtensions}"
-            }
-          }
-        },
-        "code": {
-          "scanned": "Scanned QR-codes",
-          "not-found": "No QR-code found",
-          "added": "{count} QR-codes added | {count} QR-code added"
-        }
-      }
+    }
 }
