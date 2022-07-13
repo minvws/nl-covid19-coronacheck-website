@@ -597,6 +597,12 @@
             "pageHeader": "Zijn dit al jouw vaccinaties?",
             "pageIntro": "<p>Deze vaccinaties hebben we opgehaald bij de GGD en het RIVM:<\/p>"
         },
+        "proofAddedOverviewList": {
+            "button": "Volgende",
+            "link": "Ik wil nog een vaccinatie toevoegen",
+            "pageHeader": "Vaccinatie toevoegen gelukt",
+            "pageIntro": "<p>Ga verder om deze vaccinaties mee te nemen in je bewijs of voeg nog een vaccinatie toe.<\/p>"
+        },
         "provideCode": {
             "didNotGetCode": "Geen verificatiecode gekregen?",
             "emptyTestCode": "Graag eerst een ophaalcode invullen",
