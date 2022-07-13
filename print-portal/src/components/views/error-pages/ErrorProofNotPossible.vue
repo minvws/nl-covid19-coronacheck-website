@@ -11,6 +11,12 @@ export default {
         goHome() {
             goHome();
         }
+    },
+    props: {
+        error: {
+            type: String,
+            required: false
+        }
     }
 }
 </script>
@@ -21,7 +27,7 @@ export default {
         <div class="section">
             <PageIntro
                 :head="$t('views.errorProofNotPossible.pageHeader')"
-                :intro="$t('views.errorProofNotPossible.pageIntro')"/>
+                :intro="$t('views.errorProofNotPossible.pageIntro', { error })"/>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

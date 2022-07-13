@@ -72,7 +72,8 @@ const errorPages = [
         component: ErrorProofNotPossible,
         meta: {
             pageHeader: 'error'
-        }
+        },
+        props: true
     },
     {
         path: '/server-niet-bereikbaar',
