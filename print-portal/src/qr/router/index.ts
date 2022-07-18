@@ -35,6 +35,7 @@ export enum RouterNames {
     RECOVERY_OVERVIEW = 'recoveryOverview',
     RECOVERY_OVERVIEW_LIST = 'recoveryOverviewList',
     PROOFS_OVERVIEW_LIST = 'proofsOverviewList',
+    PROOF_ADDED_OVERVIEW_LIST = 'proofAddedOverviewList',
     NO_QR_CODE_FOUND = 'noQRCodeFound',
     ERROR_QR_INVALID = 'errorQRInvalid',
     ERROR_QR_DOMESTIC = 'errorQRDomestic',
@@ -53,8 +54,8 @@ const routes: Array<RouteConfig> = [
         },
         props: ({ params }) => {
             return {
-                ...params,
                 id: RouterNames.PROOFS_OVERVIEW_LIST,
+                ...params,
                 link: {
                     to: {
                         name: RouterNames.PROOF_INTRODUCTION
@@ -154,8 +155,12 @@ const routes: Array<RouteConfig> = [
     {
         path: '/scanner-complete',
         name: RouterNames.SCANNER_COMPLETE,
-        redirect: () => {
-            return { name: RouterNames.VACCINATION_OVERVIEW_LIST, replace: true }
+        redirect: ({ params }) => {
+            return {
+                name: RouterNames.VACCINATION_OVERVIEW_LIST,
+                params,
+                replace: true
+            }
         }
     },
     {
@@ -253,7 +258,10 @@ const routes: Array<RouteConfig> = [
         name: RouterNames.LETTER_COMBINATION_VALIDATION,
         props: {
             accepted: {
-                name: RouterNames.SCANNER_COMPLETE
+                name: RouterNames.SCANNER_COMPLETE,
+                params: {
+                    id: RouterNames.PROOF_ADDED_OVERVIEW_LIST
+                }
             },
             validation: {
                 name: RouterNames.CHOOSE_ADD_PROOF

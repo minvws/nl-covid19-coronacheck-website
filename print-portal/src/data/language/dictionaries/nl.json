@@ -412,7 +412,7 @@
         },
         "errorProofNotPossible": {
             "pageHeader": "We kunnen geen bewijs maken",
-            "pageIntro": "<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<br><br><b>Foutcode<\/b><br>W 180 000 058<\/p>"
+            "pageIntro": "<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<br><br><strong>Foutcode<\/strong><br>%{error}<\/p>"
         },
         "errorQRDomestic": {
             "button": "Probeer opnieuw",
@@ -596,6 +596,12 @@
             "link": "Nee, er mist een vaccinatie",
             "pageHeader": "Zijn dit al jouw vaccinaties?",
             "pageIntro": "<p>Deze vaccinaties hebben we opgehaald bij de GGD en het RIVM:<\/p>"
+        },
+        "proofAddedOverviewList": {
+            "button": "Volgende",
+            "link": "Ik wil nog een vaccinatie toevoegen",
+            "pageHeader": "Vaccinatie toevoegen gelukt",
+            "pageIntro": "<p>Ga verder om deze vaccinaties mee te nemen in je bewijs of voeg nog een vaccinatie toe.<\/p>"
         },
         "provideCode": {
             "didNotGetCode": "Geen verificatiecode gekregen?",
