@@ -412,7 +412,7 @@
         },
         "errorProofNotPossible": {
             "pageHeader": "We can’t make a certificate",
-            "pageIntro": "<p>At this moment, we can't make a certificate. This can have various causes. Read more on the <a href=\"https:\/\/www.coronacheck.nl\/en\/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a>.<br><br><b>Error code<\/b><br>W 180 000 058<\/p>"
+            "pageIntro": "<p>At this moment, we can't make a certificate. This can have various causes. Read more on the <a href=\"https:\/\/www.coronacheck.nl\/en\/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a>.<br><br><strong>Error code<\/strong><br>%{error}<\/p>"
         },
         "errorQRDomestic": {
             "button": "Try again",

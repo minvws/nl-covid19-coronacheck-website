@@ -1,10 +1,11 @@
 <script>
 import dateTool from '@/tools/date';
 import signer from '@/interfaces/signer';
-import { handleRejection } from '@/tools/error-handler';
+import { handleRejection, getErrorCode } from '@/tools/error-handler';
 import { StepTypes } from '@/types/step-types'
 import { ProviderTypes } from '@/types/provider-types'
 import { events } from '@/store/modules/storage'
+import { ClientCode } from '@/data/constants/error-codes';
 
 export default {
     name: 'overview-mixin',
@@ -71,7 +72,17 @@ export default {
                             this.$store.commit('qrs/add', response.data);
                             this.$router.push({ name: this.pages.print, params: this.$route.params });
                         } else {
-                            this.$router.push({ name: 'ErrorProofNotPossible' });
+                            // status = 200
+                            // no certificates are returned
+                            // show error message
+                            const error = getErrorCode({
+                                message: ClientCode.DATA_VALIDATION.NO_CERTIFICATES
+                            }, {
+                                flow: this.filter,
+                                step: StepTypes.SIGNER,
+                                provider_identifier: ProviderTypes.NON_PROVIDER
+                            })
+                            this.$router.push({ name: 'ErrorProofNotPossible', params: { error, response } });
                         }
                         this.setSignedAt(response);
                     }
