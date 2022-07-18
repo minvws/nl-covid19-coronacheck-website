@@ -16,6 +16,9 @@ export default {
         vaccination() {
             return this.signedEvent.event.vaccination;
         },
+        issuer() {
+            return this.signedEvent.event.issuer;
+        },
         vaccineInfo() {
             return this.$store.getters.getVaccineInfo(this.vaccination.hpkCode);
         },
@@ -97,7 +100,7 @@ export default {
             return dateTool.dateToString(this.vaccination.date, 'date-without-day', this.currentLanguage.locale);
         },
         vaccinationCountry() {
-            return this.vaccination.country;
+            return this.issuer || this.vaccination.country;
         },
         identificationCode() {
             return this.signedEvent.event.unique;

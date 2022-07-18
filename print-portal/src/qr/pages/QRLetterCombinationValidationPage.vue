@@ -68,8 +68,8 @@ export default QRMixin.extend({
     methods: {
         onSuccess (payload) {
             this.setLetterCombination(payload)
-            const { result } = decodeQRtoDCC(payload.credential)
-            this.$store.dispatch('signedEvents/addProof', { result, payload });
+            const dcc = decodeQRtoDCC(payload.credential)
+            this.$store.dispatch('signedEvents/addProof', { ...dcc, payload });
             this.$router.replace(this.accepted)
         },
         onFail (route) {

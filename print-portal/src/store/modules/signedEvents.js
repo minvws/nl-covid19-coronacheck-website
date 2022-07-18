@@ -98,12 +98,12 @@ const mutations = {
     clearAll(state) {
         state.all = []
     },
-    addProof (state, { result: { events, holder, ...data }, payload }) {
+    addProof (state, { issuer, result: { events, holder, ...data }, payload }) {
         events.forEach(event => {
             const signedEvent = new SignedEvent({
                 ...data,
                 holder: new HolderV3(holder),
-                event: new ProofEvent(event)
+                event: new ProofEvent({ issuer, ...event })
             })
             state.addedProofs.push(signedEvent)
         })
