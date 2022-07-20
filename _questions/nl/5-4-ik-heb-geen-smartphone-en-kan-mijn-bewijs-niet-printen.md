@@ -2,7 +2,7 @@
 set: 5
 index: 4
 title: Ik heb geen smartphone en kan mijn bewijs niet printen. Wat moet ik doen?
-webonly: true
+
 redirect_from:
     - /nl/faq/5-4-ik-heb-geen-digid-smartphone-of-computer-met-printer
 whichversion:

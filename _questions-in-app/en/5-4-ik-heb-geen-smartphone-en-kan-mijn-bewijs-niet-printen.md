@@ -2,7 +2,7 @@
 set: 5
 index: 4
 title: I don’t have a smartphone and I’m not able to print my certificate. What should I do?
-webonly: true
+
 whichversion:
   - 0g
   - 1g
