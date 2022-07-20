@@ -3,8 +3,8 @@ set: 3
 index: 1
 title: I want to get tested for coronavirus. Where should I go?
 redirect_from: 
-    - /en/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
-    - /en/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
+    - /en/faq-in-app/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
+    - /en/faq-in-app/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
 whichversion:
   - 0g
 ---

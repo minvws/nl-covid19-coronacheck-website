@@ -2,7 +2,6 @@
 set: 2
 index: 4
 title: Ik kom uit een ander Europees land. Kan ik met mijn coronabewijs naar een evenement binnen Nederland?
-webonly: true
 whichversion:
   - 3g
 ---

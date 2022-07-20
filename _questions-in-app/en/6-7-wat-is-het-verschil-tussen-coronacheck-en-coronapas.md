@@ -2,7 +2,6 @@
 set: 6
 index: 7
 title: What's the difference between CoronaCheck and Coronapas?
-webonly: true
 whichversion:
   - 0g
   - 1g

@@ -5,7 +5,6 @@ title: What’s the difference between the paper QR code and the CoronaCheck app
 redirect_from: 
   - /en/faq/38-wat-is-het-verschil-tussen-de-QR-code-op-papier-en-in-de-CoronaCheck-app
   - /en/faq/5-3-wat-is-het-verschil-tussen-de-QR-code-op-papier-en-in-de-CoronaCheck-app
-webonly: true
 whichversion:
   - 1g
   - 3g

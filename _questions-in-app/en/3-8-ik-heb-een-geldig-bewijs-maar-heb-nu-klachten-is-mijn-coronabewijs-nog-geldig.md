@@ -3,10 +3,10 @@ set: 3
 index: 8
 title: I'm experiencing symptoms, have to quarantine or have been tested positive. What should I do? And what happens to my coronavirus pass?
 redirect_from: 
-    - /en/faq/5-ik-heb-een-qr-code-maar-heb-nu-klachten
-    - /en/faq/1-8-ik-heb-een-geldig-bewijs-maar-heb-nu-klachten-mag-ik-alsnog-naar-binnen
-    - /en/faq/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd
-    - /en/faq/1-9-ik-heb-een-geldig-bewijs-maar-moet-in-quarantaine-blijven-van-de-ggd
+    - /en/faq-in-app/5-ik-heb-een-qr-code-maar-heb-nu-klachten
+    - /en/faq-in-app/1-8-ik-heb-een-geldig-bewijs-maar-heb-nu-klachten-mag-ik-alsnog-naar-binnen
+    - /en/faq-in-app/6-ik-heb-een-negatieve-uitslag-maar-moet-in-quarantaine-van-ggd
+    - /en/faq-in-app/1-9-ik-heb-een-geldig-bewijs-maar-moet-in-quarantaine-blijven-van-de-ggd
 whichversion:
   - 0g
   - 1g
