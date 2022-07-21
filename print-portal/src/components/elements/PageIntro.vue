@@ -61,6 +61,10 @@ export default {
         a {
             text-decoration: underline;
         }
+        // no underline on phone numbers
+        a[href^="tel:"] {
+            text-decoration: none;
+        }
     }
 
     h3 {
