@@ -22,6 +22,17 @@
                 "positivetest": "testuitslag",
                 "positivetest,recovery": "testuitslag",
                 "vaccination": "vaccinatie(s)"
+            },
+            "button": {
+                "requestDigiD": {
+                    "title": "Een DigiD aanvragen",
+                    "description": "Je wordt doorverwezen naar DigiD.nl"
+                },
+                "noDigiD": {
+                    "title": "Doorgaan zonder DigiD",
+                    "description": "Als je geen DigiD kunt of wilt aanvragen"
+                }
+
             }
         },
         "eventInfo": {
@@ -362,6 +373,10 @@
             "loginDigid": "Ik heb geen DigiD",
             "pageHeader": "Waar ben je getest?",
             "pageIntro": "<p>Blijkt uit de test dat je geen corona hebt? Dan kun je van de negatieve testuitslag een bewijs maken. Geef aan waar je getest bent.<\/p>"
+        },
+        "chooseNoDigiD": {
+            "pageHeader": "Ik heb geen DigiD",
+            "pageIntro": "Woon je in Nederland en heb je een Nederlands indentiteitsbewijs? Dan kun je een DigiD aanvragen om je testuitslag of vaccinatiegegevens op te halen."
         },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen?",
