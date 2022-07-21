@@ -6,6 +6,6 @@ questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
 permalink: /nl/faq/02-reizen-met-coronacheck
-title: Reizen met CoronaCheck
+title: Reizen van/naar het buitenland
 graphic: suitcase
 ---

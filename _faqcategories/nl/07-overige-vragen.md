@@ -1,11 +1,11 @@
 ---
-layout: faq-overview-list-in-app
+layout: faq-overview-list
 lang: nl
-questionCategory: 6
+questionCategory: 7
 questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
-permalink: /nl/faq-in-app/06-overige-vragen
+permalink: /nl/faq/07-overige-vragen
 title: Overige vragen
 graphic: chat
 ---

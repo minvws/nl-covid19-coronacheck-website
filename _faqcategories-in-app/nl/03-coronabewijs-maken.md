@@ -7,5 +7,5 @@ showBreadCrumbs: true
 showContact: true
 permalink: /nl/faq-in-app/03-coronabewijs-maken
 title: Coronabewijs maken
-graphic: qrcode
+graphic: paperproof
 ---

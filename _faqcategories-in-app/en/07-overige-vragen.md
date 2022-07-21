@@ -1,11 +1,11 @@
 ---
 layout: faq-overview-list-in-app
 lang: en
-questionCategory: 5
+questionCategory: 7
 questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
-permalink: /en/faq-in-app/05-problemen
-title: Troubleshooting
-graphic: problems
+permalink: /en/faq-in-app/07-overige-vragen
+title: Other questions
+graphic: chat
 ---

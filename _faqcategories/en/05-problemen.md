@@ -6,6 +6,6 @@ questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
 permalink: /en/faq/05-problemen
-title: Problems
+title: Troubleshooting
 graphic: problems
 ---

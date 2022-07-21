@@ -1,11 +1,11 @@
 ---
 layout: faq-overview-list
 lang: en
-questionCategory: 3  
+questionCategory: 7
 questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
-permalink: /en/faq/03-coronabewijs-maken
-title: Using CoronaCheck
-graphic: paperproof
+permalink: /en/faq/07-overige-vragen
+title: Other questions
+graphic: chat
 ---
