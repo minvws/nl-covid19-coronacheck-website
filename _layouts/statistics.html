@@ -33,7 +33,7 @@
       <div class="division">
         {{ content }}
 
-        <p>Cijfers tot en met vrijdag 22 april 2022.</p>
+        <p>Cijfers tot en met woensdag 18 mei 2022.</p>
 
         <div class="CoronaCheck_downloads column-2"> 
             <div>
@@ -130,6 +130,13 @@
                     }
                 }
 
+                // add an asterisk if the current month is the last month in the JSON
+                if (dataMonthYear === currentMonthYear) {
+                    // statsIncomplete += `*`;
+                } else {
+                    statsIncomplete = ``;
+                }
+
                 // create a row string, adding html and content to it
                 let statsRow = ``;
                  
@@ -137,6 +144,7 @@
 
                 statsRow += `<td>
                     ${statsObject[0].toLocaleString("nl", { "day": "numeric", "month": "long", "year": "numeric" })} 
+                    ${statsIncomplete}
                 </td>`;
 
                 for (let j = 1; j < number_of_key_value_pairs; j++) {

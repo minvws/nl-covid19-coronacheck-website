@@ -1,7 +1,7 @@
 ---
 set: 1
 index: 1
-title: Hoe werkt de CoronaCheck-app?
+title: Hoe werkt de CoronaCheck-app? 
 featuredHome: true
 featuredHomeIndex: 1
 hasVideo: true

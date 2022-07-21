@@ -1,7 +1,7 @@
 ---
 set: 1
 index: 1
-title: Hoe werkt CoronaCheck?
+title: Hoe werkt CoronaCheck? 
 featuredHome: true
 featuredHomeIndex: 1
 whichversion:

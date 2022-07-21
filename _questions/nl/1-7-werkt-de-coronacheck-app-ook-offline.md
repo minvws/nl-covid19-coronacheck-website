@@ -1,7 +1,7 @@
 ---
 set: 1
 index: 7
-title: Werkt de CoronaCheck-app ook offline?
+title: Werkt de CoronaCheck-app ook offline? 
 redirect_from: 
   - /nl/faq/4-1-werkt-de-coronacheck-app-ook-offline
 whichversion:

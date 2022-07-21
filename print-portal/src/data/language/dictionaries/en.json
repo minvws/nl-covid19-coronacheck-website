@@ -440,6 +440,32 @@
             "pageHeader": "The personal details don’t match",
             "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved via DigiD. Because of that, you can’t add this certificate.<\/p>"
         },
+        "errorQRDomestic": {
+            "button": "Try again",
+            "pageHeader": "Add your international QR code",
+            "pageIntro": "<p>You don’t need to add your Dutch QR code. Add the QR code on the international certificate you received from your health care provider or the government. It contains the information needed to add your missing vaccination. You can recognise this certificate by the European flag.<\/p>"
+        },
+        "errorQRDuplicate": {
+            "button": "Try again",
+            "pageHeader": "This QR code has already been added",
+            "pageIntro": "<p>You’ve already added this QR code. Try adding another QR code.<\/p>"
+        },
+        "errorQRInvalid": {
+            "button": "Try again",
+            "pageHeader": "QR code not recognised",
+            "pageIntro": "<p>The QR code you are trying to add is not recognised as a coronavirus pass. Check if you have the correct QR code.<\/p>"
+        },
+        "errorQRInvalidType": {
+            "button": "Try again",
+            "pageHeader": "Add your vaccination certificate",
+            "pageIntro": "<p>The QR code you are trying to add does not belong to a vaccination certificate. You can only add a certificate of your vaccination.<\/p>"
+        },
+        "errorQRMismatch": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "The personal details don’t match",
+            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved via DigiD. Because of that, you can’t add this certificate.<\/p>"
+        },
         "errorSessionExpired": {
             "pageHeader": "Your session has expired",
             "pageIntro": "<p>You’ve waited too long. For safety reasons, you were logged out. Log in again with your DigiD to retrieve your details.<\/p>"

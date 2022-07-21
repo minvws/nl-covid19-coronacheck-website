@@ -1,7 +1,7 @@
 ---
 set: 1
 index: 10
-title: Waarom heb ik een Nederlandse en een internationale QR-code?
+title: Waarom heb ik een Nederlandse en een internationale QR-code? 
 whichversion:
   - 1g
   - 3g

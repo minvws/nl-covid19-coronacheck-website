@@ -440,6 +440,32 @@
             "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
             "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald via DigiD. Je kunt dit bewijs daarom niet toevoegen.<\/p>"
         },
+        "errorQRDomestic": {
+            "button": "Probeer opnieuw",
+            "pageHeader": "Voeg je internationale QR-code toe",
+            "pageIntro": "<p>Je hoeft je Nederlandse QR-code niet toe te voegen. Voeg het internationale vaccinatiebewijs toe dat je van je zorgverlener of de overheid hebt gekregen. Hierin staan de gegevens die nodig zijn om je missende vaccinatie toe te voegen. Je herkent dit bewijs aan de Europese vlag.<\/p>"
+        },
+        "errorQRDuplicate": {
+            "button": "Probeer opnieuw",
+            "pageHeader": "Deze QR-code heb je al toegevoegd",
+            "pageIntro": "<p>Je hebt deze QR-code al toegevoegd. Probeer een andere QR-code toe te voegen.<\/p>"
+        },
+        "errorQRInvalid": {
+            "button": "Probeer opnieuw",
+            "pageHeader": "QR-code wordt niet herkend",
+            "pageIntro": "<p>De QR-code die je probeert toe te voegen wordt niet herkend als die van een coronabewijs. Controleer of je de goede QR-code hebt.<\/p>"
+        },
+        "errorQRInvalidType": {
+            "button": "Probeer opnieuw",
+            "pageHeader": "Voeg je vaccinatiebewijs toe",
+            "pageIntro": "<p>De QR-code die je probeert toe te voegen is niet van een vaccinatiebewijs. Je kunt alleen een bewijs van vaccinatie toevoegen.<\/p>"
+        },
+        "errorQRMismatch": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
+            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald via DigiD. Je kunt dit bewijs daarom niet toevoegen.<\/p>"
+        },
         "errorSessionExpired": {
             "pageHeader": "Je sessie is verlopen",
             "pageIntro": "<p>Je hebt te lang gewacht. Voor de veiligheid ben je daarom uitgelogd. Log opnieuw in met DigiD om je gegevens op te halen.<\/p>"

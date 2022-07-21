@@ -24,27 +24,38 @@
             <a class="breadcrumbs" href="{{langSlug}}/scanner">
             {{ site.data[page.lang].translations.coronacheck-scanner-linktext }}</a>
         {% else %}
-            <a class="breadcrumbs" href="{{langSlug}}">
-            {{ site.data[page.lang].translations.layout-template-home }}</a>
+            {% if include.collection == 'questions-scanner'
+               or include.collection == 'questions'
+               or include.collection == 'questions-scanner-in-app'
+               or include.collection == 'questions-scanner-in-app'
+               or include.collection == 'faqcategories' %} 
+                <a class="breadcrumbs" href="{{langSlug}}/faq">
+                {{ site.data[page.lang].translations.faq }}</a>
+            {% else %}
+                <a class="breadcrumbs" href="{{langSlug}}">
+                {{ site.data[page.lang].translations.layout-template-home }}</a>
+            {% endif %}
         {% endif %}
 
-        {% if forloop.last == false %}
-            <span class="icon icon-chevron-right"></span>
+        {% if forloop.last == false %} 
+                <span class="icon icon-chevron-right"></span> 
         {% endif %}
     </li> 
     {% elsif forloop.last == false %} 
-        {% if include.collection == 'questions-scanner' %} 
-            <li class="breadcrumbs-item">
-            <a class="breadcrumbs" href="{{langSlug}}/faq-scanner">
-            {{ site.data[page.lang].translations.faq | truncate: 40 }}</a>
-            <span class="icon icon-chevron-right"></span>
-            </li>
-        {% elsif include.collection == 'questions' %}
-            <li class="breadcrumbs-item">
-                <a class="breadcrumbs" href="{{langSlug}}/faq">
-                {{ site.data[page.lang].translations.faq | truncate: 40 }}</a>
-                <span class="icon icon-chevron-right"></span>
-            </li>
+        {% if include.collection == 'questions-scanner'
+            or include.collection == 'questions'
+            or include.collection == 'questions-scanner-in-app'
+            or include.collection == 'questions-scanner-in-app' %} 
+            {% assign questionCategories = site.faqcategories | where:"lang", page.lang | sort: "questionCategory" %} 
+            {% for questionCategory in questionCategories %}
+                {% if questionCategory.questionCategory == page.set %}
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs" href="{{ site.baseurl }}{{ questionCategory.url }}">
+                        {{ questionCategory.title | truncate: 40 }}</a>
+                        <span class="icon icon-chevron-right"></span>
+                    </li>
+                {% endif %}
+            {% endfor %}
         {% endif %}
     {% elsif forloop.last  %}
         <li class="breadcrumbs-item"> 

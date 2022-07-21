@@ -36,6 +36,10 @@ youarehere: Je bent hier
 
 faq: Meestgestelde vragen
 
+faq-sub: Waar gaat je vraag over?
+
+faq-more: Of zoek verder
+
 faq-coronacheck: Meestgestelde vragen over CoronaCheck
 
 faq-scanner: Meestgestelde vragen
@@ -49,22 +53,6 @@ faq-scanner-category-two: Algemeen
 faq-scanner-category-three: Problemen
 
 faq-scanner-category-four: Privacy
-
-faq-category-one: Algemeen
-
-faq-category-two: Coronabewijs maken
-
-faq-category-three: Internationaal reizen met CoronaCheck
-
-faq-category-four: Problemen
-
-faq-category-five: Bewijs op papier
-
-faq-category-six: Achtergrond
-
-faq-category-seven: Overig
-
-faq-category-eight: Herstelbewijs    
 
 layout-template-home: Home
   
@@ -212,7 +200,7 @@ scanner-howto-step-2-title: Controleer het identiteitsbewijs
 
 scanner-howto-step-2-content: |
   <p>Controleer bij bezoekers vanaf 14 jaar altijd of de gegevens op jouw scherm hetzelfde zijn als die op het identiteitsbewijs van de bezoeker. Zo weet je zeker dat de QR-code van de bezoeker is.</p>
-  <p>Let op: Soms vallen er gegevens weg. Dat gebeurt om de privacy van de bezoeker te beschermen. Je ziet dan een streepje (-) staan. Controleer in dat geval alleen de gegevens die je wel ziet.</p>
+  <p><strong>Let op:</strong>Soms vallen er gegevens weg. Dat gebeurt om de privacy van de bezoeker te beschermen. Je ziet dan een streepje (-) staan. Controleer in dat geval alleen de gegevens die je wel ziet.</p>
   <p>Check? Dan mag de bezoeker naar binnen en is de controle klaar.</p>
 
 scanner-howto-step-3-title: Rood scherm

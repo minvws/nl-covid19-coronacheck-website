@@ -18,7 +18,7 @@ CoronaCheck is already used by many people for creating a vaccination, recovery 
 <div markdown="1">
 At this moment, vaccination certificates are not in use within the Netherlands. Therefore you can currently use CoronaCheck only to create a vaccination certificate for international use.
 
-You get an international vaccination certificate already after only one vaccination. This certificate in general is valid for 270 days after the completion of full vaccination. Once you’ve received a new (booster)vaccination, you can add it yourself by logging in again with DigiD. A decision about the validity of booster vaccinations has not been made yet. For children up to 18 years old, a full vaccination certificate is valid indefinitely. This does not require a booster vaccination. Please note: the validity of a certificate made after one vaccination depends on the rules of the country you’re visiting. Check {{ site.data.links.wijsopreis[page.lang] }} to see which rules apply at your destination.
+You get an international vaccination certificate already after only one vaccination. This certificate in general is valid for 270 days after the completion of full vaccination. Please note: the QR codes of all your vaccinations always remain visible in the CoronaCheck-app, even after the 270 days. This is done because it varies by country how long a vaccination is valid and of which vaccination you have to show the QR code. Once you’ve received a new (booster)vaccination, you can add it yourself by logging in again with DigiD. A decision about the validity of booster vaccinations has not been made yet. For children up to 18 years old, a full vaccination certificate is valid indefinitely. This does not require a booster vaccination. Please note: the validity of a certificate made after one vaccination depends on the rules of the country you’re visiting. Check {{ site.data.links.wijsopreis[page.lang] }} to see which rules apply at your destination.
 
 CoronaCheck retrieves data about vaccinations from the systems of the RIVM, the GGD and hospitals. Other vaccination providers, such as general practitioners and other healthcare providers, have passed on your vaccination details to the RIVM. They only do so if you have given permission. Vaccination details can be retrieved in the app. [Read here how to retrieve your vaccination data](/en/faq/1-1-hoe-werkt-de-coronacheck-app/).
 
@@ -81,14 +81,12 @@ A recovery certificate is proof that you have ever been tested positive for the 
 
 At this moment, recovery certificates are not in use within the Netherlands. Therefore you can currently use CoronaCheck only to create a recovery certificate for international use. A number of rules apply:
 
-The recovery certificate is valid from 11 days after the positive test result, but the recovery certificate may be created earlier.
-In the case of a recovery certificate, the positive test result may be a maximum of 180 days old.
-
-**Please note:** It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test. A recovery certificate is not provided on the basis of an antigen test, self-test or a serological test. 
+The recovery certificate is valid from 11 days after the positive test result, but the recovery certificate may be created earlier. In the case of a recovery certificate, the positive test result may be a maximum of 180 days old.
 
 CoronaCheck retrieves positive test results from the GGD. Both test results from the GGD itself and test results from other testing locations can be retrieved. These results must have been passed on to the GGD.
 
 More information about recovery certificates can be found on {{ site.data.links.herstelbewijs[page.lang] }}.
+
 </div>
 {% endcapture %}
 
@@ -116,17 +114,7 @@ Are details about your vaccination found, but does CoronaCheck say no certificat
 Were you tested less than 180 days ago? Then there may be an error in the test data.  If you have been tested at the GGD, you can call their back office on {{ site.data.links.phone-ggd[page.lang] }} to have the data corrected. If you have been tested at another test provider, please go to {{ site.data.links.herstelbewijs-elders[page.lang] }} and fill in the form.
 </div>
 {% endcapture %}
-
-{% capture copy_geen_internationaal_herstelbewijs %}
-<div markdown="1"> 
-It has been agreed in a European context that a recovery certificate may only be issued on the basis of a PCR test and if the test was taken no less than 11 and no more than 180 days ago. {% if site.version != "0g" %}For use within the Netherlands (for example for access to events), a recovery certificate is also issued based on an antigen test.{% endif %}
-
-### Were you tested before September 8th at a test provider other than the GGD?
-
-For positive test results from before September 8th, 2021, the type of test is not specified. As a result, it is not clear if it has been a PCR test. Therefore, for safety reasons, all tests are treated as antigen tests. This means that we cannot create an international recovery certificate, unfortunately. 
-</div>
-{% endcapture %}
-
+ 
 {% capture copy_testbewijs %}
 <div markdown="1">
 Only test results from test locations that are affiliated with CoronaCheck can be converted into a coronavirus pass. More information about test certificates can be found on {{ site.data.links.testenvoorjereis[page.lang] }}.
@@ -360,12 +348,7 @@ Were you tested positive more than once, with the first time happening before yo
 <summary><h3>The app cannot create a certificate</h3></summary>
 {{ copy_we_kunnen_geen_herstelbewijs_maken }}
 </details>
-
-<details class="details" id="recovery_cantmakeintnlproof">
-<summary><h3>I didn’t receive an international recovery certificate</h3></summary>
-{{ copy_geen_internationaal_herstelbewijs }}
-</details>
-
+ 
 </details>
 
 {% comment %}

@@ -3,7 +3,7 @@ set: 1
 index: 7
 title: Does the CoronaCheck app work offline too?
 redirect_from: 
-  - /en/faq-in-app/4-1-werkt-de-coronacheck-app-ook-offline
+  - /en/faq/4-1-werkt-de-coronacheck-app-ook-offline
 whichversion:
   - 0g
   - 1g
