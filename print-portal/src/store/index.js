@@ -29,7 +29,8 @@ const state = {
     visitedHomePage: false,
     slotModalActive: false,
     vaccinationWithPositiveTestEnabled: true, // when true, show a consent and hide all faq's,
-    showListBeforeOverview: true // will show a list of proofs before an overview page
+    showListBeforeOverview: true, // will show a list of proofs before an overview page
+    flow: '' // vaccination | recovery
 };
 
 const getters = {
@@ -95,7 +96,8 @@ const getters = {
             return state.holderConfig.recoveryEventValidityDays
         }
     },
-    user: ({ user }) => user
+    user: ({ user }) => user,
+    flow: ({ flow }) => flow
 };
 
 const mutations = {
@@ -141,6 +143,7 @@ const mutations = {
         state.signedEvents = []; // @FIXME: are these being used?
         state.qrs.proof = null;
         state.signedAt = null;
+        state.flow = null
     },
     sessionEnded(state) {
         state.testCode = '';
@@ -150,8 +153,13 @@ const mutations = {
         state.qrs.proof = null;
         state.userConsent = false;
         state.signedAt = null;
+        state.flow = null
+    },
+    setFlow(state, flow) {
+        state.flow = flow;
     }
 }
+
 export default new Vuex.Store({
     state,
     getters,
