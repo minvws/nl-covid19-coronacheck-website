@@ -405,6 +405,12 @@
             "pageHeader": "Vraag je coronabewijs aan bij je zorgverlener",
             "pageIntro": "<p>Neem contact op met de zorgverlener waar je bent gevaccineerd. Je kunt je coronabewijs aanvragen op papier of als pdf-bestand.</p>"
         },
+        "chooseTestProvider": {
+            "link": "Ik heb geen DigiD",
+            "button": "Login met DigiD",
+            "pageHeader": "Testuitslag ophalen",
+            "pageIntro": "<p>Is je uitslag bekend? Log in met DigiD om je testuitslag bij de GGD op te halen.</p>"
+        },
         "chooseNoDigiD": {
             "pageHeader": "Ik heb geen DigiD",
             "pageIntro": "<p>Woon je in Nederland en heb je een Nederlands indentiteitsbewijs? Dan kun je een DigiD aanvragen om je testuitslag of vaccinatiegegevens op te halen.</p>"
