@@ -24,11 +24,19 @@
             },
             "noBSNWithVaccination": {
                 "title": "Nee, ik heb geen BSN",
-                "description": "Krijg je bewijs via GGD"
+                "description": "Krijg jouw bewijs via GGD"
+            },
+            "vaccinationLocationGGD": {
+                "title": "Bij de GGD",
+                "description": "Regel je bewijs via de GGD"
+            },
+            "vaccinationLocationOther": {
+                "title": "Op een andere locatie",
+                "description": "Regel je bewijs via bijvoorbeeld je huisarts of andere zorginstelling"
             },
             "noBSNWithTest": {
                 "title": "Nee, ik heb geen BSN",
-                "description": "Krijg je bewijs via jou zorgverlener"
+                "description": "Krijg je bewijs via jouw zorgverlener"
             }
         }
     },
@@ -380,6 +388,9 @@
             "pageHeader": "Welk papieren bewijs wil je maken?",
             "pageIntro": ""
         },
+        "choiceVaccinationLocation": {
+            "pageHeader": "Waar ben je gevaccineerd?"
+        },
         "choiceTestLocation": {
             "choiceGGDBody": "Log in met DigiD",
             "choiceGGDHead": "GGD",
@@ -389,13 +400,18 @@
             "pageHeader": "Waar ben je getest?",
             "pageIntro": "<p>Blijkt uit de test dat je geen corona hebt? Dan kun je van de negatieve testuitslag een bewijs maken. Geef aan waar je getest bent.<\/p>"
         },
+        "chooseCareProvider": {
+            "button": "Terug naar home",
+            "pageHeader": "Vraag je coronabewijs aan bij je zorgverlener",
+            "pageIntro": "<p>Neem contact op met de zorgverlener waar je bent gevaccineerd. Je kunt je coronabewijs aanvragen op papier of als pdf-bestand.</p>"
+        },
         "chooseNoDigiD": {
             "pageHeader": "Ik heb geen DigiD",
-            "pageIntro": "Woon je in Nederland en heb je een Nederlands indentiteitsbewijs? Dan kun je een DigiD aanvragen om je testuitslag of vaccinatiegegevens op te halen."
+            "pageIntro": "<p>Woon je in Nederland en heb je een Nederlands indentiteitsbewijs? Dan kun je een DigiD aanvragen om je testuitslag of vaccinatiegegevens op te halen.</p>"
         },
         "chooseBSN": {
             "pageHeader": "Heb je een Nederlands burgerservicenummer (BSN)?",
-            "pageIntro": "Met je BSN kun je jouw bewijs aanvragen bij de CoronaCheck helpdesk. Heb je geen BSN? Dan kun je een bewijs krijgen via je test- of vaccinatielocatie"
+            "pageIntro": "<p>Met je BSN kun je jouw bewijs aanvragen bij de CoronaCheck helpdesk. Heb je geen BSN? Dan kun je een bewijs krijgen via je test- of vaccinatielocatie</p>"
         },
         "requestDigid": {
             "button": "Terug naar home",
@@ -404,7 +420,7 @@
         },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen?",
-            "pageIntro": "Als je een camera op je apparaat hebt, kun je de QR-code op je bewijs scannen. Of voeg je bewijs toe als bestand."
+            "pageIntro": "<p>Als je een camera op je apparaat hebt, kun je de QR-code op je bewijs scannen. Of voeg je bewijs toe als bestand.</p>"
         },
         "chooseInternationalQR": {
             "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
