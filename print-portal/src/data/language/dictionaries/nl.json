@@ -394,8 +394,13 @@
             "pageIntro": "Woon je in Nederland en heb je een Nederlands indentiteitsbewijs? Dan kun je een DigiD aanvragen om je testuitslag of vaccinatiegegevens op te halen."
         },
         "chooseBSN": {
-            "pageHeader": "Heb je een Nederlands burgerservicenummer (BSN)??",
+            "pageHeader": "Heb je een Nederlands burgerservicenummer (BSN)?",
             "pageIntro": "Met je BSN kun je jouw bewijs aanvragen bij de CoronaCheck helpdesk. Heb je geen BSN? Dan kun je een bewijs krijgen via je test- of vaccinatielocatie"
+        },
+        "requestDigid": {
+            "button": "Terug naar home",
+            "pageHeader": "Vraag een coronabewijs aan via de helpdesk",
+            "pageIntro": "<p>Vraag je bewijs aan bij de CoronaCheck helpdesk. Die kun je elke dag tussen 08.00 en 20.00 uur bellen op: 0800-1421 (gratis). Of als je vanuit het buitenland belt: +31 70 750 37 20. Kies in het keuzemenu voor “een bewijs aanvragen”. <br><br> Geef het volgende door: <ul class=\"ul--with-padding\"><li>je burgerservicenummer (BSN)<\/li><li>je postcode<\/li><\/ul><br>Je bewijs met QR-code wordt per post opgestuurd. Dit kan maximaal 7 werkdagen duren.<\/p>"
         },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen?",
@@ -447,32 +452,6 @@
         "errorProofNotPossible": {
             "pageHeader": "We kunnen geen bewijs maken",
             "pageIntro": "<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<br><br><strong>Foutcode<\/strong><br>%{error}<\/p>"
-        },
-        "errorQRDomestic": {
-            "button": "Probeer opnieuw",
-            "pageHeader": "Voeg je internationale QR-code toe",
-            "pageIntro": "<p>Je hoeft je Nederlandse QR-code niet toe te voegen. Voeg het internationale vaccinatiebewijs toe dat je van je zorgverlener of de overheid hebt gekregen. Hierin staan de gegevens die nodig zijn om je missende vaccinatie toe te voegen. Je herkent dit bewijs aan de Europese vlag.<\/p>"
-        },
-        "errorQRDuplicate": {
-            "button": "Probeer opnieuw",
-            "pageHeader": "Deze QR-code heb je al toegevoegd",
-            "pageIntro": "<p>Je hebt deze QR-code al toegevoegd. Probeer een andere QR-code toe te voegen.<\/p>"
-        },
-        "errorQRInvalid": {
-            "button": "Probeer opnieuw",
-            "pageHeader": "QR-code wordt niet herkend",
-            "pageIntro": "<p>De QR-code die je probeert toe te voegen wordt niet herkend als die van een coronabewijs. Controleer of je de goede QR-code hebt.<\/p>"
-        },
-        "errorQRInvalidType": {
-            "button": "Probeer opnieuw",
-            "pageHeader": "Voeg je vaccinatiebewijs toe",
-            "pageIntro": "<p>De QR-code die je probeert toe te voegen is niet van een vaccinatiebewijs. Je kunt alleen een bewijs van vaccinatie toevoegen.<\/p>"
-        },
-        "errorQRMismatch": {
-            "button": "Probeer opnieuw",
-            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
-            "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
-            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald via DigiD. Je kunt dit bewijs daarom niet toevoegen.<\/p>"
         },
         "errorQRDomestic": {
             "button": "Probeer opnieuw",
