@@ -34,7 +34,8 @@ export default {
             set (value) {
                 this.$store.dispatch(StorageEvent.WITH_POSITIVE_TEST, value)
             }
-        }
+        },
+        flow: () => FlowTypes.VACCINATION
     },
     methods: {
         getToken() {
@@ -45,7 +46,7 @@ export default {
                     this.getToken();
                 }
                 handleRejection(error, {
-                    flow: FlowTypes.VACCINATION,
+                    flow: this.flow,
                     step: StepTypes.TVS_DIGID,
                     provider_identifier: ProviderTypes.NON_PROVIDER
                 }, callback);
@@ -81,7 +82,7 @@ export default {
                          id="digid-vaccination"
                          v-if="!tooBusy"
                          @select="getToken()"/>
-                     <NoDigiD/>
+                     <NoDigiD :flow="flow"/>
                 </div>
             </div>
         </div>

@@ -5,10 +5,15 @@ import { RouterNames } from '@/qr/router';
 export default {
     name: 'NoDigiD',
     components: { CcModestButton },
-    computed: {},
+    props: {
+        flow: {
+            type: String,
+            required: true
+        }
+    },
     methods: {
         dontHaveDigid() {
-            this.$router.push({ name: RouterNames.CHOOSE_NO_DIGID });
+            this.$router.push({ name: RouterNames.CHOOSE_NO_DIGID, params: this.$props });
         }
     }
 }
