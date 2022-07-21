@@ -1,5 +1,6 @@
 <script>
 import CcModestButton from '@/components/elements/CcModestButton';
+import { RouterNames } from '@/qr/router';
 
 export default {
     name: 'NoDigiD',
@@ -7,11 +8,7 @@ export default {
     computed: {},
     methods: {
         dontHaveDigid() {
-            const urls = {
-                nl: 'https://www.digid.nl/digid-aanvragen-activeren#hoe-vraag-ik-digid-aan',
-                en: 'https://www.digid.nl/en/apply-or-activate-digid'
-            }
-            window.open(urls[this.currentLanguage.locale])
+            this.$router.push({ name: RouterNames.CHOOSE_NO_DIGID });
         }
     }
 }
