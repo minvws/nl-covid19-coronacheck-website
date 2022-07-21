@@ -6,6 +6,32 @@
         "european": "Internationaal"
     },
     "close": "Sluiten",
+    "button": {
+        "digid": {
+            "requestDigiD": {
+                "title": "Een DigiD aanvragen",
+                "description": "Je wordt doorverwezen naar DigiD.nl"
+            },
+            "noDigiD": {
+                "title": "Doorgaan zonder DigiD",
+                "description": "Als je geen DigiD kunt of wilt aanvragen"
+            }
+        },
+        "bsn": {
+            "withBSN": {
+                "title": "Ja, ik heb een BSN",
+                "description": "Krijg je bewijs via de CoronaCheck helpdesk"
+            },
+            "noBSNWithVaccination": {
+                "title": "Nee, ik heb geen BSN",
+                "description": "Krijg je bewijs via GGD"
+            },
+            "noBSNWithTest": {
+                "title": "Nee, ik heb geen BSN",
+                "description": "Krijg je bewijs via jou zorgverlener"
+            }
+        }
+    },
     "components": {
         "consent": {
             "vaccination": {
@@ -22,17 +48,6 @@
                 "positivetest": "testuitslag",
                 "positivetest,recovery": "testuitslag",
                 "vaccination": "vaccinatie(s)"
-            },
-            "button": {
-                "requestDigiD": {
-                    "title": "Een DigiD aanvragen",
-                    "description": "Je wordt doorverwezen naar DigiD.nl"
-                },
-                "noDigiD": {
-                    "title": "Doorgaan zonder DigiD",
-                    "description": "Als je geen DigiD kunt of wilt aanvragen"
-                }
-
             }
         },
         "eventInfo": {
