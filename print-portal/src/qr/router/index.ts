@@ -12,10 +12,18 @@ import QRLetterCombinationInvalidPage from '@/qr/pages/QRLetterCombinationInvali
 import ProofsOverviewList from '@/components/views/3-collect/recovery/happy/ProofsOverviewList.vue'
 import VaccinationOverview from '@/components/views/3-collect/vaccination/happy/VaccinationOverview.vue'
 import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview.vue'
+import store from '@/store';
 
 import i18n from '@/i18n'
 
 export enum RouterNames {
+    PROVIDER_PAP = 'papProvider',
+    CHOOSE_CARE_PROFIDER = 'chooseCareProvider',
+    REQUEST_CERTIFICATE_DIGID = 'requestDigid',
+    CHOOSE_VACCINATION_LOCATION = 'choiceVaccinationLocation',
+    CHOOSE_TEST_PROFIDER = 'chooseTestProvider',
+    CHOOSE_NO_DIGID = 'chooseNoDigiD',
+    CHOOSE_BSN = 'chooseBSN',
     CHOOSE_ADD_PROOF = 'chooseAddProofQR',
     CAMERA = 'cameraQR',
     FILE = 'uploadFileQR',
@@ -45,6 +53,127 @@ export enum RouterNames {
 }
 
 const routes: Array<RouteConfig> = [
+    {
+        path: '/pap',
+        name: RouterNames.PROVIDER_PAP,
+        props: () => {
+            const type = store.getters.flow
+            return {
+                routes: [
+                    {
+                        name: RouterNames.REQUEST_CERTIFICATE_DIGID,
+                        title: `PAP Provider - ${type}`
+                    }
+                ]
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/testuitslag-ophalen-met-digid',
+        name: RouterNames.CHOOSE_TEST_PROFIDER,
+        props: () => {
+            return {
+                link: {
+                    to: {
+                        // name: TODO
+                    }
+                },
+                next: {
+                    // name: TODO
+                }
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/waar-ben-je-gevaccineerd',
+        name: RouterNames.CHOOSE_VACCINATION_LOCATION,
+        props: {
+            routes: [
+                {
+                    name: RouterNames.PROVIDER_PAP,
+                    ...(i18n.t('button.bsn.vaccinationLocationGGD') as Record<string, unknown>)
+                },
+                {
+                    name: RouterNames.CHOOSE_CARE_PROFIDER,
+                    ...(i18n.t('button.bsn.vaccinationLocationOther') as Record<string, unknown>)
+                }
+            ]
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/coronabewijs-aanvragen-helpdesk',
+        name: RouterNames.REQUEST_CERTIFICATE_DIGID,
+        props: {
+            next: {
+                // TODO: got to home
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/coronabewijs-aanvragen-zorgverlener',
+        name: RouterNames.CHOOSE_CARE_PROFIDER,
+        props: {
+            next: {
+                // got to home
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/heb-je-een-bsn',
+        name: RouterNames.CHOOSE_BSN,
+        props: () => {
+            const flow = store.getters.flow
+            return {
+                routes: [
+                    {
+                        name: RouterNames.REQUEST_CERTIFICATE_DIGID,
+                        ...(i18n.t('button.bsn.withBSN') as Record<string, unknown>)
+                    },
+                    flow === 'vaccination' && {
+                        name: RouterNames.PROVIDER_PAP,
+                        ...(i18n.t('button.bsn.noBSNWithVaccination') as Record<string, unknown>)
+                    },
+                    flow === 'recovery' && {
+                        name: RouterNames.CHOOSE_VACCINATION_LOCATION,
+                        ...(i18n.t('button.bsn.noBSNWithTest') as Record<string, unknown>)
+                    }
+                ].filter(a => !!a)
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/ik-heb-geen-digid',
+        name: RouterNames.CHOOSE_NO_DIGID,
+        props: ({ params }) => {
+            if (params.flow) {
+                const { flow } = params
+                store.commit('setFlow', flow);
+            }
+            return {
+                routes: [
+                    {
+                        // name: // TODO
+                        ...(i18n.t('button.digid.requestDigiD') as Record<string, unknown>),
+                        icon: {
+                            src: 'assets/img/digid/logo_digid_rgb.svg',
+                            position: 'after'
+                        }
+                    },
+                    {
+                        name: RouterNames.CHOOSE_BSN,
+                        ...(i18n.t('button.digid.noDigiD') as Record<string, unknown>)
+                    }
+                ]
+            }
+        },
+        component: QRGeneralPage
+    },
     {
         path: '/jouw-vaccinaties',
         component: ProofsOverviewList,
@@ -115,13 +244,19 @@ const routes: Array<RouteConfig> = [
                 {
                     name: RouterNames.CAMERA,
                     ...(i18n.t('qr.camera.route') as Record<string, unknown>),
-                    icon: require('@/qr/assets/icons/camera.svg'),
+                    icon: {
+                        src: require('@/qr/assets/icons/camera.svg'),
+                        position: 'after'
+                    },
                     replace: true
                 },
                 {
                     name: RouterNames.FILE,
                     ...(i18n.t('qr.file.route') as Record<string, unknown>),
-                    icon: require('@/qr/assets/icons/upload.svg'),
+                    icon: {
+                        src: require('@/qr/assets/icons/upload.svg'),
+                        position: 'after'
+                    },
                     replace: true
                 }
             ]
