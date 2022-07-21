@@ -393,6 +393,10 @@
             "pageHeader": "Ik heb geen DigiD",
             "pageIntro": "Woon je in Nederland en heb je een Nederlands indentiteitsbewijs? Dan kun je een DigiD aanvragen om je testuitslag of vaccinatiegegevens op te halen."
         },
+        "chooseBSN": {
+            "pageHeader": "Heb je een Nederlands burgerservicenummer (BSN)??",
+            "pageIntro": "Met je BSN kun je jouw bewijs aanvragen bij de CoronaCheck helpdesk. Heb je geen BSN? Dan kun je een bewijs krijgen via je test- of vaccinatielocatie"
+        },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen?",
             "pageIntro": "Als je een camera op je apparaat hebt, kun je de QR-code op je bewijs scannen. Of voeg je bewijs toe als bestand."
