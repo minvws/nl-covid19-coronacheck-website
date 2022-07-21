@@ -2,17 +2,18 @@
   <header>
     <router-link
       class="link"
-      v-for="{ name, title, description, icon, replace} in routes"
-      :to="{ name }"
+      v-for="{ name, params, title, description, icon, replace} in routes"
+      :to="{ name, params }"
       :replace="replace"
       :key="description"
     >
       <div class="inner">
-        <img v-if="icon" class="icon" :src="icon" alt=""/>
+        <img v-if="icon && icon.position !== 'after'" class="icon" :src="icon.src" alt=""/>
         <div class="inner-content">
             <div class="link-title">{{ title }}</div>
             <div class="link-description">{{ description }}</div>
         </div>
+        <img v-if="icon && icon.position === 'after'" class="icon" :src="icon.src" alt=""/>
         <img class="next" src="@/qr/assets/icons/next.svg" alt=""/>
       </div>
     </router-link>
