@@ -75,8 +75,12 @@ const routes: Array<RouteConfig> = [
         props: () => {
             return {
                 link: {
+                    icon: {
+                        src: 'assets/img/digid/logo_digid_rgb.svg'
+                    },
                     to: {
                         // name: TODO
+
                     }
                 },
                 next: {

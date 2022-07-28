@@ -10,7 +10,10 @@
                 v-if="next"
                 @select="onButton"
                 :label="button"
-            />
+                :class="{ 'with-icon': !!src }"
+            >
+                <img v-if="src" alt="" :src="src"/>
+            </CcButton>
             <PrintFaqLink v-if="link" :class="{ link: !!next }" v-bind="{ label, ...link }"/>
         </div>
     </div>
@@ -57,6 +60,11 @@ export default Vue.extend({
             else if (replace) this.$router.replace(this.next)
             else this.$router.push(this.next)
         }
+    },
+    computed: {
+        src () {
+            return this.link?.icon?.src;
+        }
     }
 })
 </script>
@@ -67,5 +75,14 @@ export default Vue.extend({
 .link {
     display: block;
     padding-top: 1em;
+}
+
+img {
+    width: 20px;
+    height: auto;
+    margin-left: 12px;
+}
+.with-icon {
+    padding: 13px 32px 13px 48px;
 }
 </style>
