@@ -13,8 +13,10 @@ import ProofsOverviewList from '@/components/views/3-collect/recovery/happy/Proo
 import VaccinationOverview from '@/components/views/3-collect/vaccination/happy/VaccinationOverview.vue'
 import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview.vue'
 import store from '@/store';
-
+import Vue from 'vue'
 import i18n from '@/i18n'
+import { digidLogin } from '@/interfaces/auth-helper'
+import { FlowTypes } from '@/types/flow-types'
 
 export enum RouterNames {
     PROVIDER_PAP = 'papProvider',
@@ -75,16 +77,21 @@ const routes: Array<RouteConfig> = [
         props: () => {
             return {
                 link: {
-                    icon: {
-                        src: 'assets/img/digid/logo_digid_rgb.svg'
-                    },
                     to: {
-                        // name: TODO
-
+                        name: RouterNames.CHOOSE_NO_DIGID,
+                        params: {
+                            flow: FlowTypes.NEGATIVE_TEST
+                        }
                     }
                 },
                 next: {
-                    // name: TODO
+                    icon: {
+                        src: 'assets/img/digid/logo_digid_rgb.svg'
+                    },
+                    action: () => {
+                        // @TODO
+                        digidLogin(Vue.prototype.authNegativeTests)
+                    }
                 }
             }
         },

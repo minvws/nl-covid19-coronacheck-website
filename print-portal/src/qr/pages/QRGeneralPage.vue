@@ -55,7 +55,11 @@ export default Vue.extend({
     },
     methods: {
         onButton () {
-            const { replace, go } = this.next
+            const { replace, go, action } = this.next
+            if (action) {
+                action?.()
+                return
+            }
             if (go) this.$router.go(go)
             else if (replace) this.$router.replace(this.next)
             else this.$router.push(this.next)
@@ -63,7 +67,7 @@ export default Vue.extend({
     },
     computed: {
         src () {
-            return this.link?.icon?.src;
+            return this.next?.icon?.src;
         }
     }
 })
