@@ -10,7 +10,11 @@
         "digid": {
             "requestDigiD": {
                 "title": "Een DigiD aanvragen",
-                "description": "Je wordt doorverwezen naar DigiD.nl"
+                "description": "Je wordt doorverwezen naar DigiD.nl",
+                "link": {
+                    "href": "https:\/\/digid.nl\/aanvragen",
+                    "target": "_self"
+                }
             },
             "noDigiD": {
                 "title": "Doorgaan zonder DigiD",

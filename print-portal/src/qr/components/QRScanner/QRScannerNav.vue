@@ -1,12 +1,14 @@
 <template>
   <header>
-    <router-link
+    <component
+      :is="link ? 'a' : 'router-link'"
       class="link"
-      v-for="{ name, params, title, description, icon, replace} in routes"
-      :to="{ name, params }"
-      :replace="replace"
-      :key="description"
-    >
+      v-for="({ name, params, link, title, description, icon, replace }, index) in routes"
+      v-bind="link || {
+        to: { name, params },
+        replace
+      }"
+      :key="index">
       <div class="inner">
         <img v-if="icon && icon.position !== 'after'" class="icon" :src="icon.src" alt=""/>
         <div class="inner-content">
@@ -16,11 +18,11 @@
         <img v-if="icon && icon.position === 'after'" class="icon" :src="icon.src" alt=""/>
         <img class="next" src="@/qr/assets/icons/next.svg" alt=""/>
       </div>
-    </router-link>
+    </component>
   </header>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 export default Vue.extend({
     props: {

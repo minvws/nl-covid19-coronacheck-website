@@ -158,7 +158,6 @@ const routes: Array<RouteConfig> = [
             return {
                 routes: [
                     {
-                        // name: // TODO
                         ...(i18n.t('button.digid.requestDigiD') as Record<string, unknown>),
                         icon: {
                             src: 'assets/img/digid/logo_digid_rgb.svg',
