@@ -3,10 +3,7 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import PageChoice from '@/components/elements/PageChoice';
 import CcModestButton from '@/components/elements/CcModestButton';
-import { handleRejection } from '@/tools/error-handler';
-import { StepTypes } from '@/types/step-types'
-import { FlowTypes } from '@/types/flow-types'
-import { ProviderTypes } from '@/types/provider-types'
+import { RouterNames } from '@/qr/router';
 
 export default {
     name: 'ChoiceTestLocation',
@@ -22,20 +19,7 @@ export default {
             this.$router.push({ name: 'ChoiceProof' })
         },
         loginWithDigid() {
-            this.authNegativeTests.startAuthentication().then(() => {
-                //
-            }).catch(error => {
-                const callback = () => {
-                    this.loginWithDigid();
-                }
-                handleRejection(error, {
-                    flow: FlowTypes.NEGATIVE_TEST,
-                    step: StepTypes.TVS_DIGID,
-                    provider_identifier: ProviderTypes.NON_PROVIDER
-                },
-                callback
-                );
-            })
+            this.$router.push({ name: RouterNames.CHOOSE_TEST_PROFIDER })
         },
         gotoRetrieveTest() {
             this.$router.push({ name: 'ProvideCode' });
