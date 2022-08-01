@@ -1,19 +1,19 @@
 class EventProvider {
     constructor({
         name = '',
-        provider_identifier = '',
+        identifier = '',
         cms = '',
         tls = '',
-        unomi_url = '',
-        event_url = '',
+        unomiUrl = '',
+        eventUrl = '',
         usage = []
     }) {
         this.name = name;
-        this.provider_identifier = provider_identifier;
+        this.provider_identifier = identifier;
         this.cms = cms;
         this.tls = tls;
-        this.unomi_url = unomi_url;
-        this.event_url = event_url;
+        this.unomi_url = unomiUrl;
+        this.event_url = eventUrl;
         this.usage = usage;
     }
 }
