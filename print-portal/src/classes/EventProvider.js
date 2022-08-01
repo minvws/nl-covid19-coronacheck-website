@@ -6,7 +6,8 @@ class EventProvider {
         tls = '',
         unomiUrl = '',
         eventUrl = '',
-        usage = []
+        usage = [],
+        auth = []
     }) {
         this.name = name;
         this.provider_identifier = identifier;
@@ -15,6 +16,7 @@ class EventProvider {
         this.unomi_url = unomiUrl;
         this.event_url = eventUrl;
         this.usage = usage;
+        this.auth = auth;
     }
 }
 
