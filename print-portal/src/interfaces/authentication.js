@@ -22,13 +22,13 @@ const getNonce = (l) => {
     return result;
 }
 
-const getClientSettings = (redirect_uri) => {
+const getClientSettings = (redirect_uri, authority) => {
     return {
-        authority: window.config.tvs,
+        authority,
         client_id: 'cc_web',
         scope: 'openid',
         response_type: 'code',
-        redirect_uri: redirect_uri,
+        redirect_uri,
         extraQueryParams: {
             nonce: getNonce(32)
         },
@@ -41,8 +41,8 @@ const getClientSettings = (redirect_uri) => {
 export default class Authentication {
     manager = null;
 
-    constructor(redirect_uri) {
-        this.manager = new UserManager(getClientSettings(redirect_uri))
+    constructor(redirect_uri, authority) {
+        this.manager = new UserManager(getClientSettings(redirect_uri, authority))
     }
 
     startAuthentication() {

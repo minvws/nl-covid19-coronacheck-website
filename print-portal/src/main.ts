@@ -22,9 +22,9 @@ const getBaseUrl = () => {
     return chunks[0] + '/print/';
 }
 const baseUrl = getBaseUrl();
-Vue.prototype.authVaccinations = new AuthService(baseUrl + 'jouw-vaccinaties-redirect');
-Vue.prototype.authNegativeTests = new AuthService(baseUrl + 'jouw-testresultaat-redirect');
-Vue.prototype.authRecovery = new AuthService(baseUrl + 'recovery-redirect');
+Vue.prototype.authVaccinations = new AuthService(baseUrl + 'jouw-vaccinaties-redirect', window.config.tvs);
+Vue.prototype.authNegativeTests = new AuthService(baseUrl + 'jouw-testresultaat-redirect', window.config.tvs);
+Vue.prototype.authRecovery = new AuthService(baseUrl + 'recovery-redirect', window.config.tvs);
 
 const axiosConfig = {
     baseURL: window.config.api,
