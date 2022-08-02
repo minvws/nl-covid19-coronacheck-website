@@ -1,5 +1,7 @@
 ---
-set: 1
+set: 
+  - 1
+  - 3
 index: 12
 title: De QR-code van mijn vaccinatie is verlopen. <br />Wat moet ik doen?
 redirect_from: 

@@ -1,6 +1,6 @@
 ---
 set: 5
-index: 4
+index: 3
 title: Ik heb geen smartphone en kan mijn bewijs niet printen. Wat moet ik doen?
 
 redirect_from:

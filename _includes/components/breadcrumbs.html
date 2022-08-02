@@ -26,7 +26,7 @@
         {% else %}
             {% if include.collection == 'questions-scanner'
                or include.collection == 'questions'
-               or include.collection == 'questions-scanner-in-app'
+               or include.collection == 'questions-in-app'
                or include.collection == 'questions-scanner-in-app'
                or include.collection == 'faqcategories' %} 
                 <a class="breadcrumbs" href="{{langSlug}}/faq">
@@ -44,7 +44,7 @@
     {% elsif forloop.last == false %} 
         {% if include.collection == 'questions-scanner'
             or include.collection == 'questions'
-            or include.collection == 'questions-scanner-in-app'
+            or include.collection == 'questions-in-app'
             or include.collection == 'questions-scanner-in-app' %} 
             {% assign questionCategories = site.faqcategories | where:"lang", page.lang | sort: "questionCategory" %} 
             {% for questionCategory in questionCategories %}

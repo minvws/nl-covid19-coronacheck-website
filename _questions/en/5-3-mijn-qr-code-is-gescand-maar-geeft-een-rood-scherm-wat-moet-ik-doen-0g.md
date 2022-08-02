@@ -1,6 +1,6 @@
 ---
 set: 5
-index: 3
+index: 1
 title: My QR code was scanned but led to a red screen. What should I do?
 whichversion:
   - 0g
