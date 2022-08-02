@@ -264,6 +264,14 @@ CC_downloads_plot_raw = [
     {
         date: "2022-06-24",
         downloads: 16445398
+    },
+    {
+        date: "2022-07-01",
+        downloads: 16488698
+    },
+    {
+        date: "2022-07-08",
+        downloads: 16531931
     }
 ]
 
