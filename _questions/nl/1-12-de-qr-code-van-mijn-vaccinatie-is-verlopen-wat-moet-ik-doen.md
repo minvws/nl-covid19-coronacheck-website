@@ -3,7 +3,7 @@ set:
   - 4
   - 5
 index: 1
-title: De QR-code van mijn vaccinatie is niet meer geldig. <br />Wat betekent dat?
+title: De QR-code van mijn vaccinatie is verlopen. <br />Wat moet ik doen?
 redirect_from: 
   - /nl/faq/3-9-de-qr-code-van-mijn-vaccinatie-is-niet-meer-geldig-wat-betekent-dit
 whichversion:
