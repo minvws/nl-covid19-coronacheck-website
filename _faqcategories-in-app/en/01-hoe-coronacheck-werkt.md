@@ -1,11 +1,11 @@
 ---
 layout: faq-overview-list-in-app
-lang: nl
-questionCategory: 1
+lang: en
+questionCategory: 1 
 questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
-permalink: /nl/faq-in-app/01-hoe-werkt-coronacheck
-title: Hoe werkt CoronaCheck?
+permalink: /en/faq-in-app/01-hoe-werkt-coronacheck
+title: How CoronaCheck works
 graphic: mobilephone
 ---

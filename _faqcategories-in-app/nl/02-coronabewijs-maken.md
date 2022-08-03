@@ -6,6 +6,6 @@ questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
 permalink: /nl/faq-in-app/03-coronabewijs-maken
-title: Coronabewijs maken
+title: Een coronabewijs maken
 graphic: paperproof
 ---
