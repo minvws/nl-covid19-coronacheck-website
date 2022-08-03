@@ -2,7 +2,7 @@
 set: 1
 index: 10
 title: Kan mijn eigen applicatie aangesloten worden op de CoronaCheck-app of CoronaCheck Scanner-app?
-webonly: true
+
 whichversion:
   - 1g
   - 3g

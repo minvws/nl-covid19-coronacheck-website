@@ -2,7 +2,7 @@
 set: 2
 index: 6
 title: Can I download an APK file to convert CoronaCheck Scanner to a Mobile Device Management System?
-webonly: true
+
 redirect_from: 
   - /en/faq-scanner/16-kan-ik-een-apk-bestand-downloaden
 whichversion:

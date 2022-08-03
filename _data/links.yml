@@ -5,8 +5,8 @@ phone-ggd:
   en: '<a href="tel:08005090">0800-5090</a>'
 
 phone-helpdesk:
-  nl: '<a href="tel:08001421">0800-1421</a>'
-  en: '<a href="tel:08001421">0800-1421</a>'
+  nl: '<a href="tel:08001421">0800-1421</a> (gratis)'
+  en: '<a href="tel:08001421">0800-1421</a> (free)'
     
 phone-helpdesk-abroad:
   nl: '<a href="tel:+31707503720">+31 70 750 37 20</a>'
