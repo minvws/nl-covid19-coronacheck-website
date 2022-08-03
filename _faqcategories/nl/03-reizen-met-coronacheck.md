@@ -1,7 +1,7 @@
 ---
 layout: faq-overview-list
 lang: nl
-questionCategory: 2
+questionCategory: 3
 questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
