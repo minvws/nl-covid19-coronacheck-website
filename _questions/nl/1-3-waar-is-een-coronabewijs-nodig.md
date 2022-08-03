@@ -1,5 +1,7 @@
 ---
-set: 2
+set: 
+  - 2
+  - 3
 index: -4
 title: Waar is een coronabewijs nodig?
 redirect_from: 

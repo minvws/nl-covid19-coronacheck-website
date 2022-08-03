@@ -1,6 +1,6 @@
 ---
 set: 3
-index: -3
+index: -2
 title: Ik ga op reis, kan ik CoronaCheck gebruiken in het buitenland?
 whichversion:
   - 1g

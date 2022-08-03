@@ -1,5 +1,7 @@
 ---
-set: 2
+set: 
+  - 2
+  - 3
 index: -4
 title: Which locations require a coronavirus pass?
 redirect_from: 
