@@ -1,6 +1,6 @@
 ---
-set: 7
-index: 8
+set: 4
+index: 6
 title: What happens to QR codes that have been tampered with?
 whichversion:
   - 0g

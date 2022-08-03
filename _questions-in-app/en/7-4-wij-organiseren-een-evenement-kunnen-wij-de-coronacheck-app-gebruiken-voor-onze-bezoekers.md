@@ -1,6 +1,6 @@
 ---
-set: 7
-index: 4
+set: 6
+index: 3
 title: Do I have to use the coronavirus entry pass at our venue or event, and how does this work?
 whichversion:
   - 0g

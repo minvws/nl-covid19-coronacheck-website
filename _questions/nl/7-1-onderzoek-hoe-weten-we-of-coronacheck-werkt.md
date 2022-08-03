@@ -1,5 +1,5 @@
 ---
-set: 7
+set: 1
 index: 11
 title: "Onderzoek: hoe weten we of CoronaCheck werkt?"
 redirect_from: 

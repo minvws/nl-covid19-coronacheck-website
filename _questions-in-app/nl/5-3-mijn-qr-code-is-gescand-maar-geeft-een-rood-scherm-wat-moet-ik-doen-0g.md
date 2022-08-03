@@ -1,6 +1,6 @@
 ---
 set: 5
-index: 1
+index: -3
 title: Mijn QR-code is gescand, maar geeft een rood scherm. Wat moet ik doen?
 whichversion:
   - 0g

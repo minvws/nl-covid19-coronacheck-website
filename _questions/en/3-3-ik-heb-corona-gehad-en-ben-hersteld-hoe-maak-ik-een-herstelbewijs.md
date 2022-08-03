@@ -1,6 +1,6 @@
 ---
-set: 3
-index: 3
+set: 2
+index: 4
 title: When can I create a recovery certificate?
 whichversion:
   - 0g

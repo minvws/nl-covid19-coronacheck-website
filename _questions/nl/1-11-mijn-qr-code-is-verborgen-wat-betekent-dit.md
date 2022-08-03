@@ -1,6 +1,6 @@
 ---
-set: 1
-index: 11
+set: 4
+index: 4
 title: Mijn QR-code is verborgen. Wat betekent dit?
 whichversion:
   - 0g

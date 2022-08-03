@@ -1,6 +1,6 @@
 ---
-set: 7
-index: 4
+set: 6
+index: 3
 title: Moet ik het coronatoegangsbewijs gebruiken voor onze locatie of ons evenement, en hoe werkt dat dan?
 whichversion:
   - 0g

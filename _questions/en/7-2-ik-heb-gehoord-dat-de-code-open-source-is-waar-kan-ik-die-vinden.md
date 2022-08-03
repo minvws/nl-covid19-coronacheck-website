@@ -1,5 +1,5 @@
 ---
-set: 7
+set: 6
 index: 2
 title: I’ve heard the code is open-source. Where can I find it?
 redirect_from:

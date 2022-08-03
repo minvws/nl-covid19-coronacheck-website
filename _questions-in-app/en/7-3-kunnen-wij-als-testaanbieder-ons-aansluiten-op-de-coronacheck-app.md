@@ -1,5 +1,5 @@
 ---
-set: 7
+set: 6
 index: 1
 title: We’re a test provider, can we connect with the CoronaCheck app?
 redirect_from: 

@@ -1,6 +1,6 @@
 ---
-set: 3
-index: 3
+set: 2
+index: 4
 title: Wanneer kan ik een herstelbewijs maken?
 whichversion:
   - 0g

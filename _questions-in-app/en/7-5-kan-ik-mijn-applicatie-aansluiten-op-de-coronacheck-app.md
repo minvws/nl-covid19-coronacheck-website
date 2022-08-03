@@ -1,6 +1,6 @@
 ---
-set: 7
-index: 5
+set: 6
+index: 4
 title: Can I connect my own application to the CoronaCheck app or CoronaCheck Scanner app?
 whichversion:
   - 0g

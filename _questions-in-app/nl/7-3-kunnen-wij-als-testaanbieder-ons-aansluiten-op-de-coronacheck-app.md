@@ -1,5 +1,5 @@
 ---
-set: 7
+set: 6
 index: 1
 title: Kunnen wij, als testaanbieder, ons aansluiten op de CoronaCheck-app?
 redirect_from: 

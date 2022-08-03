@@ -1,6 +1,6 @@
 ---
-set: 1
-index: 3
+set: 2
+index: -4
 title: Which locations require a coronavirus pass?
 redirect_from: 
     - /en/faq-in-app/2-1-bij-welke-locaties-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil

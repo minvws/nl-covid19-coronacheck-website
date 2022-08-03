@@ -1,6 +1,6 @@
 ---
-set: 7
-index: 8
+set: 4
+index: 6
 title: Wat gebeurt er met QR-codes waarmee gefraudeerd is?
 whichversion:
   - 0g

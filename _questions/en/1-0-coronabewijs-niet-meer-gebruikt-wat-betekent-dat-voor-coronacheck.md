@@ -1,6 +1,8 @@
 ---
-set: 1
-index: -10
+set: 
+  - 1
+  - 2
+index: 10
 title: 'The corona virus entry pass is no longer used in the Netherlands. What does that mean for CoronaCheck?'
 featuredHome: true
 featuredHomeIndex: 2

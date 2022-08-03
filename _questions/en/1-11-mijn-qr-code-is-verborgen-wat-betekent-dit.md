@@ -1,6 +1,6 @@
 ---
-set: 1
-index: 11
+set: 4
+index: 4
 title: My QR code is hidden. What does this mean?
 whichversion:
   - 0g

@@ -1,6 +1,6 @@
 ---
-set: 7
-index: 5
+set: 6
+index: 4
 title: Kan mijn eigen applicatie aangesloten worden op de CoronaCheck-app of CoronaCheck Scanner-app?
 whichversion:
   - 0g

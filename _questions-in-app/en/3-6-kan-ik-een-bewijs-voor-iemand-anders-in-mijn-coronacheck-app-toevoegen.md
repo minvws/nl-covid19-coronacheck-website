@@ -1,8 +1,6 @@
 ---
-set: 
-  - 1
-  - 3
-index: 6
+set: 1
+index: 7
 title: Can I add someone else’s certificate to my CoronaCheck app?
 redirect_from: 
     - /en/faq-in-app/1-7-kan-ik-een-testbewijs-voor-iemand-anders-in-mijn-app-toevoegen

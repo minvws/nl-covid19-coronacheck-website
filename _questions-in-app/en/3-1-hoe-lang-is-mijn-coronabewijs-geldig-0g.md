@@ -1,6 +1,6 @@
 ---
-set: 3
-index: 5
+set: 2
+index: -3
 title: How long is my corona certificate valid for?	
 whichversion:
   - 0g

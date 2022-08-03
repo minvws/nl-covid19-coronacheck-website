@@ -1,6 +1,6 @@
 ---
-set: 7
-index: 9
+set: 1
+index: 5
 title: I'm using a corporate network, how can I still use CoronaCheck?
 whichversion:
   - 0g

@@ -1,6 +1,6 @@
 ---
-set: 2
-index: 4
+set: 3
+index: -0
 title: Ik kom uit een ander Europees land. Kan ik met mijn coronabewijs naar een evenement binnen Nederland?
 whichversion:
   - 1g
