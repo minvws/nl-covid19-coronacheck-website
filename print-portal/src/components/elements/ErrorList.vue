@@ -1,19 +1,23 @@
 <template>
     <div>
         <template v-if="errors.length">
-            <p><strong>{{ label }}</strong></p>
-            <ul class="ul--with-padding" v-if="errors.length > 1">
+            <p>
+                <strong>
+                    {{ $tc("views.errorGeneral.label", errors.length) }}
+                </strong>
+            </p>
+            <ul class="list" v-if="errors.length > 1">
                 <li :key="index" v-for="(error, index) in errors">
-                {{ error }}
+                    {{ error }}
                 </li>
             </ul>
             <div v-else>{{ errors[0] }}</div>
         </template>
-        <template v-if="link">
-            <br v-if="errors.length" />
-            <div v-html="link" />
-        <br>
-        </template>
+        <div
+            v-if="link"
+            v-html="link"
+            :class="{ 'has-errors': errors.length }"
+        />
     </div>
 </template>
 
@@ -30,11 +34,17 @@ export default {
             type: String,
             required: false
         }
-    },
-    computed: {
-        label () {
-            return this.$tc('views.errorGeneral.label', this.errors.length)
-        }
     }
 }
 </script>
+
+<style lang="scss" scoped>
+.list {
+    padding-left: 1em;
+}
+
+.has-errors {
+    padding-top: 1em;
+}
+
+</style>
