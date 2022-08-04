@@ -286,7 +286,7 @@
         },
         "errorDigiD": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\">www.digid.nl<\/a> voor de laatste informatie.<\/p><p><strong>Foutcode: %{error}<\/strong><\/p>"
+            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\">www.digid.nl<\/a> voor de laatste informatie.<\/p>"
         },
         "errorGeneral": {
             "pageHeader": "Sorry, er gaat iets mis",
@@ -450,7 +450,8 @@
         },
         "serverBusy": {
             "pageHeader": "Sorry, het is erg druk",
-            "pageIntro": "<p>Probeer het op een later moment nog eens.<\/p><p><strong>Foutcode<\/strong><br>%{error}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a><\/p>"
+            "pageIntro": "<p>Probeer het op een later moment nog eens.<\/p>",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>"
         },
         "short-stay": {
             "createTestProofButton": "Maak bewijs",
