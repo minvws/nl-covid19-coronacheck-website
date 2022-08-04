@@ -298,10 +298,6 @@
             "pageHeader": "Geen BSN gevonden",
             "pageIntro": "<p>De zorgverlener waar je gevaccineerd of getest bent kan je verder helpen. Neem contact op en geef door dat CoronaCheck geen BSN gevonden heeft.<\/p>"
         },
-        "errorNoEvents": {
-            "pageHeader": "Sorry, het is niet gelukt",
-            "pageIntro": "<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.<\/p><p>Tip: wacht een uur en probeer het dan nog een keer.<\/p>"
-        },
         "errorProofNotPossible": {
             "pageHeader": "We kunnen geen bewijs maken",
             "pageIntro": "<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<br><br><b>Foutcode<\/b><br>W 180 000 058<\/p>"

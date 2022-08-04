@@ -298,10 +298,6 @@
             "pageHeader": "No social security number found",
             "pageIntro": "<p>The healthcare provider who vaccinated or tested you can help you further. Contact them and let them know CoronaCheck couldn’t find a social security number.<\/p>"
         },
-        "errorNoEvents": {
-            "pageHeader": "Sorry, your details were not retrieved",
-            "pageIntro": "<p>Due to increased traffic or an outage at one of the involved parties, some details of your %{type} may be missing. <\/p><p>Tip: wait one hour and try again.<\/p>"
-        },
         "errorProofNotPossible": {
             "pageHeader": "We can’t make a certificate",
             "pageIntro": "<p>At this moment, we can't make a certificate. This can have various causes. Read more on the <a href=\"https:\/\/www.coronacheck.nl\/en\/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a>.<br><br><b>Error code<\/b><br>W 180 000 058<\/p>"
