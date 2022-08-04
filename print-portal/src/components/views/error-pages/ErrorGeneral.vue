@@ -13,12 +13,6 @@ export default {
         goHome() {
             goHome();
         }
-    },
-    computed: {
-        errors() {
-            const errors = this.$route.query?.errors?.split('+') ?? []
-            return errors.length ? errors : undefined
-        }
     }
 }
 </script>
