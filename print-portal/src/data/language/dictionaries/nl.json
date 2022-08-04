@@ -291,7 +291,7 @@
         "errorGeneral": {
             "pageHeader": "Sorry, er gaat iets mis",
             "pageIntro": "<p>Er gaat iets mis bij het maken van je bewijs. Wil je het later nog eens proberen?<\/p>",
-            "label": "Foutcode(s)",
+            "label": "Foutcode | Foutecodes",
             "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>"
         },
         "errorNoBsn": {

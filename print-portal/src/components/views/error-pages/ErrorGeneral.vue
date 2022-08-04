@@ -2,19 +2,21 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
+import ErrorList from '@/components/elements/ErrorList.vue';
 import { goHome } from '@/tools/router';
 
 export default {
     name: 'ErrorGeneral',
-    components: { Page, PageIntro, CcButton },
+    components: { Page, PageIntro, CcButton, ErrorList },
     methods: {
         goHome() {
             goHome();
         }
     },
     computed: {
-        list() {
-            return this.$route.query?.errors?.split('+') ?? undefined
+        errors() {
+            const errors = this.$route.query?.errors?.split('+') ?? []
+            return errors.length ? errors : undefined
         },
         link () {
             const link = this.$t('views.errorGeneral.link')
@@ -31,17 +33,9 @@ export default {
             <PageIntro
                 :head="$t('views.errorGeneral.pageHeader')"
                 :intro="$t('views.errorGeneral.pageIntro')">
-                <div
-                    v-if="list">
-                    <p><strong>{{ $t('views.errorGeneral.label') }}</strong></p>
-                    <ul class="ul--with-padding">
-                        <i18n path="xss" tag="li" :key="index" v-for="(item, index) in list">
-                        {{ item }}
-                        </i18n>
-                    </ul>
-                </div>
+                <ErrorList v-if="errors" :errors="errors" />
                 <template v-if="link">
-                    <br>
+                    <br v-if="errors" />
                     <div v-html="link" />
                     <br>
                 </template>

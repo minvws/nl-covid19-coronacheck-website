@@ -291,7 +291,7 @@
         "errorGeneral": {
             "pageHeader": "Sorry, something has gone wrong",
             "pageIntro": "<p>Try again later or view the latest outages at <a href=\"https:\/\/status.coronacheck.nl\/en\/\">https:\/\/status.coronacheck.nl\/en\/<\/a><\/p>",
-            "label": "Error code(s)",
+            "label": "Error code | Error codes",
             "link": ""
         },
         "errorNoBsn": {
