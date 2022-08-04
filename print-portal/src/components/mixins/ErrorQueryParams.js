@@ -6,8 +6,8 @@ export default (id) => ({
     },
     computed: {
         errors() {
-            const errors = this.$route.query.error ? [this.$route.query.error]
-                : this.$route.query?.errors?.split('+') ?? []
+            const errors = this.$route.params.error ? [this.$route.params.error]
+                : this.$route.params?.errors?.split('+') ?? []
             return errors.length ? errors : undefined
         },
         link () {

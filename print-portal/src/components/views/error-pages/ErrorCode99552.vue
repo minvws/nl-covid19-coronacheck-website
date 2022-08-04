@@ -32,7 +32,7 @@ export default {
     created () {
         if (this.assessmentEvent && this.latestSignedEvent) return
         // when this page is hard refreshed, no events are available, show general error page
-        this.$router.replace({ name: 'ErrorGeneral', query: this.$route.query })
+        this.$router.replace({ name: 'ErrorGeneral', params: this.$route.params })
     }
 }
 </script>

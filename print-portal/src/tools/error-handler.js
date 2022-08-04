@@ -29,20 +29,20 @@ export const handleRejection = (error, errorCodeInformation, callback) => {
 
     if (error.code === 'ECONNABORTED') {
         errorCodeInformation.clientSideCode = getClientSideErrorCode(error.code)
-        router.push({ name: 'ErrorTimeout', query: { error: errorCodes } });
+        router.push({ name: 'ErrorTimeout', params: { error: errorCodes } });
         return;
     }
     if (error?.response?.status === 429) {
-        router.push({ name: 'ServerBusy', query: { error: errorCodes } });
+        router.push({ name: 'ServerBusy', params: { error: errorCodes } });
     } else {
         if (isDigiDSamlError(error?.message)) {
             router.replace({ name: 'ErrorCodeSaml' });
         } else if (error?.response?.data?.code === 99552) {
-            router.replace({ name: 'ErrorCode99552', query: { errors: errorCodes } });
+            router.replace({ name: 'ErrorCode99552', params: { errors: errorCodes } });
         } else if (isDigiDFlowAndStepError(errorCodeInformation)) {
-            router.push({ name: 'ErrorDigiD', query: { error: errorCodes } });
+            router.push({ name: 'ErrorDigiD', params: { error: errorCodes } });
         } else {
-            router.push({ name: 'ErrorGeneral', query: { errors: errorCodes } });
+            router.push({ name: 'ErrorGeneral', params: { errors: errorCodes } });
         }
     }
 }
