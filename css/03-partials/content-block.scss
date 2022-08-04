@@ -76,6 +76,14 @@
     display: inline-block;
 }
 
+.breadcrumbs-item[id] {
+    display: none;
+}
+
+.breadcrumbs-item[id]:target {
+    display: inline-block;
+}
+
 .breadcrumbs {
     line-height: 1.6;
 

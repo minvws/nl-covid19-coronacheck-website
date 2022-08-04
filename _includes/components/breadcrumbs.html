@@ -48,8 +48,8 @@
             or include.collection == 'questions-scanner-in-app' %} 
             {% assign questionCategories = site.faqcategories | where:"lang", page.lang | sort: "questionCategory" %} 
             {% for questionCategory in questionCategories %}
-                {% if questionCategory.questionCategory == page.set %}
-                    <li class="breadcrumbs-item">
+                {% if page.set contains questionCategory.questionCategory %}
+                    <li class="breadcrumbs-item" id="{{ questionCategory.questionCategory }}" hidden>
                         <a class="breadcrumbs" href="{{ site.baseurl }}{{ questionCategory.url }}">
                         {{ questionCategory.title | truncate: 40 }}</a>
                         <span class="icon icon-chevron-right"></span>
