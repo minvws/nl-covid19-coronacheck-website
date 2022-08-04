@@ -38,8 +38,8 @@ export default {
         </h1>
         <div id="page-intro">
             <div v-if="intro" v-html="intro"/>
-                <slot />
-            </div>
+            <slot />
+        </div>
     </div>
 </template>
 
