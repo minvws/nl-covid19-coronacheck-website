@@ -1,11 +1,18 @@
 <template>
     <div>
-        <p><strong>{{ label }}</strong></p>
-        <ul class="ul--with-padding">
-            <i18n path="xss" tag="li" :key="index" v-for="(error, index) in errors">
-            {{ error }}
-            </i18n>
-        </ul>
+        <template v-if="errors.length">
+            <p><strong>{{ label }}</strong></p>
+            <ul class="ul--with-padding">
+                <i18n path="xss" tag="li" :key="index" v-for="(error, index) in errors">
+                {{ error }}
+                </i18n>
+            </ul>
+        </template>
+        <template v-if="link">
+            <br v-if="errors.length" />
+            <div v-html="link" />
+        <br>
+        </template>
     </div>
 </template>
 
@@ -15,7 +22,12 @@ export default {
     props: {
         errors: {
             type: Array,
-            required: true
+            required: false,
+            default: () => []
+        },
+        link: {
+            type: String,
+            required: false
         }
     },
     computed: {

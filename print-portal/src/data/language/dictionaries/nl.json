@@ -312,7 +312,8 @@
         },
         "errorTimeout": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Het is niet gelukt de server te bereiken.<\/p><p><strong>Foutcode<\/strong><br>%{error}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a><\/p>"
+            "pageIntro": "<p>Het is niet gelukt de server te bereiken.<\/p>",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>"
         },
         "errorTokenFlow": {
             "pageHeader": "Sorry, er gaat iets mis",

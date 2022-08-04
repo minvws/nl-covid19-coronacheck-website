@@ -2,12 +2,13 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
-import ErrorList from '@/components/elements/ErrorList.vue';
+import ErrorQueryParams from '@/components/mixins/ErrorQueryParams';
 import { goHome } from '@/tools/router';
 
 export default {
     name: 'ErrorDigiD',
-    components: { Page, PageIntro, CcButton, ErrorList },
+    mixins: [ErrorQueryParams('errorDigiD')],
+    components: { Page, PageIntro, CcButton },
     methods: {
         goHome() {
             goHome();
@@ -29,7 +30,7 @@ export default {
             <PageIntro
                 :head="$t('views.errorDigiD.pageHeader')"
                 :intro="$t('views.errorDigiD.pageIntro')">
-                 <ErrorList v-if="errors" :errors="errors" />
+                <ErrorList v-if="hasErrorList" v-bind="{ errors, link }" />
             </PageIntro>
             <div class="section-block">
                 <div class="section-block__footer">

@@ -312,7 +312,8 @@
         },
         "errorTimeout": {
             "pageHeader": "Sorry, something has gone wrong",
-            "pageIntro": "<p>Could not reach the server.<\/p><p><strong>Error code<\/strong><br>%{error}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a><\/p>"
+            "pageIntro": "<p>Could not reach the server.<\/p>",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>"
         },
         "errorTokenFlow": {
             "pageHeader": "Sorry, something has gone wrong",

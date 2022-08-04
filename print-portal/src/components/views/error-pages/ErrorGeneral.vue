@@ -2,12 +2,13 @@
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import CcButton from '@/components/elements/CcButton';
-import ErrorList from '@/components/elements/ErrorList.vue';
+import ErrorQueryParams from '@/components/mixins/ErrorQueryParams';
 import { goHome } from '@/tools/router';
 
 export default {
     name: 'ErrorGeneral',
-    components: { Page, PageIntro, CcButton, ErrorList },
+    components: { Page, PageIntro, CcButton },
+    mixins: [ErrorQueryParams('errorGeneral')],
     methods: {
         goHome() {
             goHome();
@@ -17,10 +18,6 @@ export default {
         errors() {
             const errors = this.$route.query?.errors?.split('+') ?? []
             return errors.length ? errors : undefined
-        },
-        link () {
-            const link = this.$t('views.errorGeneral.link')
-            return link
         }
     }
 }
@@ -33,12 +30,7 @@ export default {
             <PageIntro
                 :head="$t('views.errorGeneral.pageHeader')"
                 :intro="$t('views.errorGeneral.pageIntro')">
-                <ErrorList v-if="errors" :errors="errors" />
-                <template v-if="link">
-                    <br v-if="errors" />
-                    <div v-html="link" />
-                    <br>
-                </template>
+                <ErrorList v-if="hasErrorList" v-bind="{ errors, link }" />
             </PageIntro>
             <div class="section-block">
                 <div class="section-block__footer">
