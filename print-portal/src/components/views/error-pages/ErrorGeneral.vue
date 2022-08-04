@@ -13,12 +13,12 @@ export default {
         }
     },
     computed: {
-        errors() {
-            if (this.$route.query.errors) {
-                return '<ul class="ul--with-padding">' + this.$route.query.errors.split('+').map(e => '<li>' + e + '</li>').join('') + '</ul>';
-            } else {
-                return [];
-            }
+        list() {
+            return this.$route.query?.errors?.split('+') ?? undefined
+        },
+        link () {
+            const link = this.$t('views.errorGeneral.link')
+            return link
         }
     }
 }
@@ -30,7 +30,22 @@ export default {
         <div class="section">
             <PageIntro
                 :head="$t('views.errorGeneral.pageHeader')"
-                :intro="$t('views.errorGeneral.pageIntro', { errors: errors })"/>
+                :intro="$t('views.errorGeneral.pageIntro')">
+                <div
+                    v-if="list">
+                    <p><strong>{{ $t('views.errorGeneral.label') }}</strong></p>
+                    <ul class="ul--with-padding">
+                        <i18n path="xss" tag="li" :key="index" v-for="(item, index) in list">
+                        {{ item }}
+                        </i18n>
+                    </ul>
+                </div>
+                <template v-if="link">
+                    <br>
+                    <div v-html="link" />
+                    <br>
+                </template>
+            </PageIntro>
             <div class="section-block">
                 <div class="section-block__footer">
                     <CcButton

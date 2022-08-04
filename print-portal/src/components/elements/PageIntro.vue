@@ -36,10 +36,10 @@ export default {
             tabindex="-1">
             {{head}}
         </h1>
-        <div
-            v-if="intro"
-            id="page-intro"
-            v-html="intro"/>
+        <div id="page-intro">
+            <div v-if="intro" v-html="intro"/>
+           <slot />
+        </div>
     </div>
 </template>
 

@@ -290,7 +290,9 @@
         },
         "errorGeneral": {
             "pageHeader": "Sorry, something has gone wrong",
-            "pageIntro": "<p>Try again later or view the latest outages at <a href=\"https:\/\/status.coronacheck.nl\/en\/\">https:\/\/status.coronacheck.nl\/en\/<\/a><\/p><p><strong>Error code(s)<\/strong><br>%{errors}<\/p>"
+            "pageIntro": "<p>Try again later or view the latest outages at <a href=\"https:\/\/status.coronacheck.nl\/en\/\">https:\/\/status.coronacheck.nl\/en\/<\/a><\/p>",
+            "label": "Error code(s)",
+            "link": ""
         },
         "errorNoBsn": {
             "pageHeader": "No social security number found",
