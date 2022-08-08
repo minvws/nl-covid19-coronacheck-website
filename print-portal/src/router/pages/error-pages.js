@@ -1,6 +1,5 @@
 import ServerBusy from '@/components/views/error-pages/ServerBusy';
 import ErrorGeneral from '@/components/views/error-pages/ErrorGeneral';
-import ErrorNoEvents from '@/components/views/error-pages/ErrorNoEvents';
 import ErrorTokenFlow from '@/components/views/error-pages/ErrorTokenFlow';
 import ErrorNoBsn from '@/components/views/error-pages/ErrorNoBsn';
 import ErrorCodeSaml from '@/components/views/error-pages/ErrorCodeSaml';
@@ -30,14 +29,6 @@ const errorPages = [
         path: '/fout-digid',
         name: 'ErrorCodeSaml',
         component: ErrorCodeSaml,
-        meta: {
-            pageHeader: 'error'
-        }
-    },
-    {
-        path: '/sorry-het-is-niet-gelukt',
-        component: ErrorNoEvents,
-        name: 'ErrorNoEvents',
         meta: {
             pageHeader: 'error'
         }

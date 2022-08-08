@@ -121,7 +121,7 @@ export default {
                     })
                 } else if (tooBusy(error)) {
                     const errorCode = getErrorCode(error, errorCodeInformation);
-                    this.$router.push({ name: 'ServerBusy', query: { error: errorCode } });
+                    this.$router.push({ name: 'ServerBusy', params: { error: errorCode } });
                 } else {
                     if (error?.message) {
                         errorCodeInformation.errorBody = error.message;
@@ -221,7 +221,7 @@ export default {
                                 errorCodes.push(errorCode);
                             }
                         }
-                        this.$router.push({ name: 'ErrorGeneral', query: { errors: errorCodes.join('+') } });
+                        this.$router.push({ name: 'ErrorGeneral', params: { errors: errorCodes.join('+') } });
                     } else {
                         if (this.withPositiveTest() && this.filter !== FilterTypes.VACCINATION) {
                             this.handleWithPositiveTest()
