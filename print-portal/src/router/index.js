@@ -10,6 +10,7 @@ import shortStayPages, { RouterNames } from './pages/short-stay'
 import i18n from '@/i18n';
 import store from '@/store'
 import QRRoutes from '@/qr/router'
+import { Routes as PAPRoutes } from '@/pap/router'
 
 Vue.use(VueRouter)
 
@@ -20,7 +21,8 @@ const routes = [
     ...recoveryPages,
     ...errorPages,
     ...shortStayPages,
-    ...QRRoutes
+    ...QRRoutes,
+    ...PAPRoutes
 ];
 
 const router = new VueRouter({
