@@ -1,13 +1,10 @@
 <template>
   <header>
     <component
-      :is="link ? 'a' : 'router-link'"
+      :is="action ? 'NavAction' : 'NavRoute'"
       class="link"
-      v-for="({ name, params, link, title, description, icon, replace }, index) in routes"
-      v-bind="link || {
-        to: { name, params },
-        replace
-      }"
+      v-for="({ name, params, link, title, description, icon, action, replace }, index) in routes"
+      v-bind="{ link, name, params, replace, action }"
       :key="index">
       <div class="inner">
         <img v-if="icon && icon.position !== 'after'" class="icon" :src="icon.src" alt=""/>
@@ -24,7 +21,14 @@
 
 <script>
 import Vue from 'vue'
+import NavRoute from './QRScannerNavRoute.vue'
+import NavAction from './QRScannerNavAction.vue'
+
 export default Vue.extend({
+    components: {
+        NavRoute,
+        NavAction
+    },
     props: {
         routes: {
             type: Array,
