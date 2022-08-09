@@ -16,10 +16,11 @@ const getters = {
         const provider = state.all.find(t => t.provider_identifier === identifierToUpperCase)
         return provider
     },
-    getTestProviderByIdentifierAndUsage: (state, { getTestProviderByIdentifier }) => (identifier, filter) => {
+    getTestProviderByIdentifierAndUsage: (state, { getTestProviderByIdentifier }) => (identifier, filter, auth) => {
         const provider = getTestProviderByIdentifier(identifier)
         if (!filter) return provider
         if (!provider?.usage) return false
+        if (!provider.auth?.includes(auth)) return false // auth type does not match
         const usage = provider.usage.map(usage => UsageTypes[usage])
         const filters = filter.split(',')
         const isValidUsage = filters.filter(filter => usage.includes(filter)).length === filters.length

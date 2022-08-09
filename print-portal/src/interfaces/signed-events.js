@@ -3,21 +3,38 @@ import { timeoutTime } from '@/data/constants'
 import store from '@/store'
 import { cmsDecode } from '@/tools/cms'
 import { ProviderTypes } from '@/types/provider-types'
+import { AuthType } from '@/types/auth-types'
 
 const filterTokensByProvider = (tokens, provider) => {
     if (provider === ProviderTypes.ANY_PROVIDER) return tokens
     return tokens.filter(({ provider_identifier }) => (provider === provider_identifier))
 }
 
-const collect = async (tokenSets, filter, provider, scope) => {
+const collect = async (tokenSets, filter, provider, scope, auth) => {
     return new Promise((resolve, reject) => {
         const tokens = filterTokensByProvider(tokenSets, provider)
-        getEvents(tokens, filter, scope).then(results => {
+        getEvents(tokens, filter, scope, auth).then(results => {
             resolve(results);
         }, (error) => {
             reject(error)
         })
     })
+}
+
+const getTokensByAuthType = ({ id_token, access_token }) => {
+    if (id_token) {
+        return getTokens(id_token);
+    }
+    const providers = store.state.eventProviders.all.filter(({ auth }) => auth.includes(AuthType.PAP))
+    return {
+        data: {
+            tokens: providers.map(provider => ({
+                ...provider,
+                unomi: access_token,
+                event: access_token
+            }))
+        }
+    }
 }
 
 const getTokens = async (token) => {
@@ -39,11 +56,11 @@ const getTokens = async (token) => {
     })
 }
 
-const getEvents = async (tokenSets, filter, scope) => {
+const getEvents = async (tokenSets, filter, scope, auth) => {
     const results = []
     for (const tokenSet of tokenSets) {
-        // get provider by identifier AND filter
-        const eventProvider = store.getters['eventProviders/getTestProviderByIdentifierAndUsage'](tokenSet.provider_identifier, filter);
+        // get provider by identifier AND filter AND auth
+        const eventProvider = store.getters['eventProviders/getTestProviderByIdentifierAndUsage'](tokenSet.provider_identifier, filter, auth);
         if (eventProvider) {
             let result;
             const resultForEventProvider = {
@@ -135,6 +152,6 @@ const getEvent = async ({ eventProvider, tokenSet, filter, scope }) => {
 }
 
 export default {
-    getTokens,
+    getTokensByAuthType,
     collect
 }
