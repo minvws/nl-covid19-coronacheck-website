@@ -17,7 +17,7 @@ import Vue from 'vue';
 export default Vue.extend({
     props: {
         link: {
-            type: String,
+            type: Object,
             required: false
         },
         name: {

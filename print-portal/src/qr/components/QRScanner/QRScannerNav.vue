@@ -5,7 +5,7 @@
       class="link"
       v-for="({ name, params, link, title, description, icon, action, replace }, index) in routes"
       v-bind="{ link, name, params, replace, action }"
-      :key="index">
+      :key="`${title}-${index}`">
       <div class="inner">
         <img v-if="icon && icon.position !== 'after'" class="icon" :src="icon.src" alt=""/>
         <div class="inner-content">
