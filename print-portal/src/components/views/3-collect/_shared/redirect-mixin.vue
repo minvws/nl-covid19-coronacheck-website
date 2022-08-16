@@ -12,6 +12,12 @@ import { events as StorageEvent } from '@/store/modules/storage'
 
 export default {
     name: 'redirect-mixin',
+    props: {
+        auth: {
+            type: String,
+            required: true
+        }
+    },
     computed: {
         type() {
             return this.filter.split(',')[0];
@@ -48,17 +54,16 @@ export default {
             // if no user is fetched yet, fetch user
             let user = this.$store.getters[AuthEvent.USER]
             if (user) return user
-            user = await this.authVaccinations.completeAuthentication()
+            user = await this.getAuthProvider(this.flow, this.auth).completeAuthentication()
             this.$store.dispatch(AuthEvent.USER, user)
             return user
         },
         async completeAuthentication() {
             this.isLoading = true;
-
             try {
                 const user = await this.getOrFetchUser()
                 try {
-                    const response = await signedEventsInterface.getTokens(user.id_token)
+                    const response = await signedEventsInterface.getTokensByAuthType(user)
                     this.notifyDigidFinished();
                     this.collectEvents(response.data.tokens);
                 } catch (error) {
@@ -149,7 +154,7 @@ export default {
         collectEvents(tokenSets) {
             this.$store.dispatch('signedEvents/clear', { filter: this.filter, scope: this.scope });
             this.isLoading = true;
-            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders, this.scope).then(results => {
+            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders, this.scope, this.auth).then(results => {
                 this.isLoading = false;
                 this.analyseResult(results);
             });

@@ -5,10 +5,9 @@ import store from './store';
 import CurrentLanguage from '@/components/mixins/CurrentLanguage.vue';
 import axios from 'axios';
 import i18n from './i18n';
-import AuthService from '@/interfaces/authentication';
 import PortalVue from 'portal-vue'
 import { timeoutTime } from '@/data/constants'
-
+import { createAuthProvider } from '@/interfaces/auth-helper'
 declare global {
     interface Window {
         config?: any;
@@ -22,9 +21,8 @@ const getBaseUrl = () => {
     return chunks[0] + '/print/';
 }
 const baseUrl = getBaseUrl();
-Vue.prototype.authVaccinations = new AuthService(baseUrl + 'jouw-vaccinaties-redirect', window.config.tvs);
-Vue.prototype.authNegativeTests = new AuthService(baseUrl + 'jouw-testresultaat-redirect', window.config.tvs);
-Vue.prototype.authRecovery = new AuthService(baseUrl + 'recovery-redirect', window.config.tvs);
+
+Vue.prototype.getAuthProvider = createAuthProvider(baseUrl)
 
 const axiosConfig = {
     baseURL: window.config.api,

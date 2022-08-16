@@ -7,6 +7,7 @@ import { FilterTypes } from '@/types/filter-types'
 import { ProviderTypes } from '@/types/provider-types'
 import { events as StorageEvent } from '@/store/modules/storage'
 import { RouterNames } from '@/qr/router'
+import { FlowTypes } from '@/types/flow-types';
 
 export default {
     name: 'VaccinationRedirect',
@@ -21,6 +22,7 @@ export default {
             isLoading: false,
             filter: FilterTypes.VACCINATION,
             eventProviders: ProviderTypes.ANY_PROVIDER,
+            flow: FlowTypes.VACCINATION,
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectVaccination',

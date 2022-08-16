@@ -19,6 +19,12 @@ export default {
             tooBusy: window.config.tooBusy
         }
     },
+    props: {
+        auth: {
+            type: String,
+            required: true
+        }
+    },
     mounted () {
         // clear consent when mounted
         this.withPositiveTestConsent = false
@@ -39,7 +45,7 @@ export default {
     },
     methods: {
         getToken() {
-            this.authVaccinations.startAuthentication().then(() => {
+            this.getAuthProvider(this.flow, this.auth).startAuthentication().then(() => {
                 //
             }).catch(error => {
                 const callback = () => {

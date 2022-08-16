@@ -11,12 +11,18 @@ import { ProviderTypes } from '@/types/provider-types'
 export default {
     name: 'CollectRecovery',
     components: { CcButtonDigiD, NoDigiD, Page, PageIntro },
+    props: {
+        auth: {
+            type: String,
+            required: true
+        }
+    },
     computed: {
         flow: () => FlowTypes.RECOVERY
     },
     methods: {
         getToken() {
-            this.authRecovery.startAuthentication().then(() => {
+            this.getAuthProvider(this.flow, this.auth).startAuthentication().then(() => {
                 //
             }).catch(error => {
                 const callback = () => {

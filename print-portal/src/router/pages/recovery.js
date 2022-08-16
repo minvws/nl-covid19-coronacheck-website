@@ -6,6 +6,7 @@ import PrintRecovery from '@/components/views/4-print/PrintRecovery'
 import RecoveryLayout from '@/components/views/3-collect/recovery/unhappy/RecoveryLayout'
 import CollectPositiveTest from '@/components/views/3-collect/recovery/CollectPositiveTest'
 import { RouterNames } from '@/qr/router'
+import { routeProps } from '@/interfaces/auth-helper';
 
 const recoveryPages = [
     {
@@ -16,11 +17,13 @@ const recoveryPages = [
     {
         path: '/recovery-ophalen',
         name: 'CollectRecovery',
-        component: CollectRecovery
+        component: CollectRecovery,
+        props: routeProps
     }, {
         path: '/recovery-redirect',
         name: 'RecoveryRedirect',
         component: RecoveryRedirect,
+        props: routeProps,
         meta: {
             title: 'views.recoveryOverview.pageHeader'
         }

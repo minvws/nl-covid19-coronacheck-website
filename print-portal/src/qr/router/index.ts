@@ -13,13 +13,12 @@ import ProofsOverviewList from '@/components/views/3-collect/recovery/happy/Proo
 import VaccinationOverview from '@/components/views/3-collect/vaccination/happy/VaccinationOverview.vue'
 import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview.vue'
 import store from '@/store';
-import Vue from 'vue'
 import i18n from '@/i18n'
-import { digidLogin } from '@/interfaces/auth-helper'
+import { authenticate } from '@/interfaces/auth-helper'
 import { FlowTypes } from '@/types/flow-types'
+import { AuthType } from '@/types/auth-types'
 
 export enum RouterNames {
-    PROVIDER_PAP = 'papProvider',
     CHOOSE_CARE_PROFIDER = 'chooseCareProvider',
     REQUEST_CERTIFICATE_DIGID = 'requestDigid',
     CHOOSE_VACCINATION_LOCATION = 'choiceVaccinationLocation',
@@ -56,22 +55,6 @@ export enum RouterNames {
 
 const routes: Array<RouteConfig> = [
     {
-        path: '/pap',
-        name: RouterNames.PROVIDER_PAP,
-        props: () => {
-            const type = store.getters.flow
-            return {
-                routes: [
-                    {
-                        name: RouterNames.REQUEST_CERTIFICATE_DIGID,
-                        title: `PAP Provider - ${type}`
-                    }
-                ]
-            }
-        },
-        component: QRGeneralPage
-    },
-    {
         path: '/testuitslag-ophalen-met-digid',
         name: RouterNames.CHOOSE_TEST_PROFIDER,
         props: () => {
@@ -89,8 +72,7 @@ const routes: Array<RouteConfig> = [
                         src: 'assets/img/digid/logo_digid_rgb.svg'
                     },
                     action: () => {
-                        // @TODO
-                        digidLogin(Vue.prototype.authNegativeTests)
+                        authenticate(FlowTypes.NEGATIVE_TEST, AuthType.MAX)
                     }
                 }
             }
@@ -103,8 +85,10 @@ const routes: Array<RouteConfig> = [
         props: {
             routes: [
                 {
-                    name: RouterNames.PROVIDER_PAP,
-                    ...(i18n.t('button.bsn.vaccinationLocationGGD') as Record<string, unknown>)
+                    ...(i18n.t('button.bsn.vaccinationLocationGGD') as Record<string, unknown>),
+                    action: () => {
+                        authenticate(FlowTypes.VACCINATION, AuthType.PAP)
+                    }
                 },
                 {
                     name: RouterNames.CHOOSE_CARE_PROFIDER,
@@ -145,11 +129,13 @@ const routes: Array<RouteConfig> = [
                         name: RouterNames.REQUEST_CERTIFICATE_DIGID,
                         ...(i18n.t('button.bsn.withBSN') as Record<string, unknown>)
                     },
-                    flow === 'vaccination' && {
-                        name: RouterNames.PROVIDER_PAP,
-                        ...(i18n.t('button.bsn.noBSNWithVaccination') as Record<string, unknown>)
+                    (flow === FlowTypes.RECOVERY || flow === FlowTypes.NEGATIVE_TEST) && {
+                        ...(i18n.t('button.bsn.noBSNWithVaccination') as Record<string, unknown>),
+                        action: () => {
+                            authenticate(flow, AuthType.PAP)
+                        }
                     },
-                    flow === 'recovery' && {
+                    flow === FlowTypes.VACCINATION && {
                         name: RouterNames.CHOOSE_VACCINATION_LOCATION,
                         ...(i18n.t('button.bsn.noBSNWithTest') as Record<string, unknown>)
                     }
