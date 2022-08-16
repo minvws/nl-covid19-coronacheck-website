@@ -2,10 +2,9 @@
 set: 6
 index: 1
 title: We’re a test provider, can we connect with the CoronaCheck app?
-webonly: true
 redirect_from: 
-  - /en/faq/36-kunnen-wij-als-testaanbieder-ons-aansluiten-op-de-coronacheck-app
-  - /en/faq/7-1-kunnen-wij-als-testaanbieder-ons-aansluiten-op-de-coronacheck-app
+  - /en/faq-in-app/36-kunnen-wij-als-testaanbieder-ons-aansluiten-op-de-coronacheck-app
+  - /en/faq-in-app/7-1-kunnen-wij-als-testaanbieder-ons-aansluiten-op-de-coronacheck-app
 whichversion:
   - 0g
   - 1g

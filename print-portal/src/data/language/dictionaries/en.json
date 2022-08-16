@@ -396,19 +396,17 @@
         },
         "errorDigiD": {
             "pageHeader": "Sorry, something has gone wrong",
-            "pageIntro": "<p>There was an error while communicating with DigiD. Please try again later. If the error persists, please check <a href=\"https:\/\/www.digid.nl\/en\" target=\"_blank\">www.digid.nl\/en<\/a> for the latest information.<\/p><p><strong>Foutcode: %{error}<\/strong><\/p>"
+            "pageIntro": "<p>There was an error while communicating with DigiD. Please try again later. If the error persists, please check <a href=\"https:\/\/www.digid.nl\/en\" target=\"_blank\">www.digid.nl\/en<\/a> for the latest information.<\/p>"
         },
         "errorGeneral": {
             "pageHeader": "Sorry, something has gone wrong",
-            "pageIntro": "<p>Try again later or view the latest outages at <a href=\"https:\/\/status.coronacheck.nl\/en\/\">https:\/\/status.coronacheck.nl\/en\/<\/a><\/p><p><strong>Error code(s)<\/strong><br>%{errors}<\/p>"
+            "pageIntro": "<p>Try again later or view the latest outages at <a href=\"https:\/\/status.coronacheck.nl\/en\/\">https:\/\/status.coronacheck.nl\/en\/<\/a><\/p>",
+            "label": "Error code | Error codes",
+            "link": ""
         },
         "errorNoBsn": {
             "pageHeader": "No social security number found",
             "pageIntro": "<p>The healthcare provider who vaccinated or tested you can help you further. Contact them and let them know CoronaCheck couldn’t find a social security number.<\/p>"
-        },
-        "errorNoEvents": {
-            "pageHeader": "Sorry, your details were not retrieved",
-            "pageIntro": "<p>Due to increased traffic or an outage at one of the involved parties, some details of your %{type} may be missing. <\/p><p>Tip: wait one hour and try again.<\/p>"
         },
         "errorProofNotPossible": {
             "pageHeader": "We can’t make a certificate",
@@ -472,11 +470,12 @@
         },
         "errorTimeout": {
             "pageHeader": "Sorry, something has gone wrong",
-            "pageIntro": "<p>Could not reach the server.<\/p><p><strong>Error code<\/strong><br>%{error}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a><\/p>"
+            "pageIntro": "<p>Could not reach the server.<\/p>",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>"
         },
         "errorTokenFlow": {
             "pageHeader": "Sorry, something has gone wrong",
-            "pageIntro": "<p>Something is going wrong at the test location. Therefore, your details can’t be retrieved.<\/p><h4>What now?<\/h4><p>Contact the test location and give them the following error code:<\/p><p><strong>Error code: %{error}<\/strong><\/p>"
+            "pageIntro": "<p>Something is going wrong at the test location. Therefore, your details can’t be retrieved.<\/p><h4>What now?<\/h4><p>Contact the test location and give them the following error code:<\/p>"
         },
         "home": {
             "noConsentError": "Give consent to the privacy statement first",
@@ -660,7 +659,8 @@
         },
         "serverBusy": {
             "pageHeader": "Sorry, it is really busy",
-            "pageIntro": "<p>Please try again later.<\/p><p><strong>Error code<\/strong><br>%{error}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a><\/p>"
+            "pageIntro": "<p>Please try again later.<\/p>",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>"
         },
         "short-stay": {
             "createTestProofButton": "Make certificate",

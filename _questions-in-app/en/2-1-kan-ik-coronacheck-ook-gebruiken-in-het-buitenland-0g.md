@@ -2,7 +2,6 @@
 set: 2
 index: 4
 title: I am going travelling, can I use CoronaCheck abroad?
-webonly: true
 whichversion:
   - 0g
 featuredHome: true

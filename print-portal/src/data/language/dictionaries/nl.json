@@ -469,19 +469,17 @@
         },
         "errorDigiD": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\">www.digid.nl<\/a> voor de laatste informatie.<\/p><p><strong>Foutcode: %{error}<\/strong><\/p>"
+            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\">www.digid.nl<\/a> voor de laatste informatie.<\/p>"
         },
         "errorGeneral": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Er gaat iets mis bij het maken van je bewijs. Wil je het later nog eens proberen?<\/p><p><strong>Foutcode(s)<\/strong><br>%{errors}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a><\/p>"
+            "pageIntro": "<p>Er gaat iets mis bij het maken van je bewijs. Wil je het later nog eens proberen?<\/p>",
+            "label": "Foutcode | Foutecodes",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>"
         },
         "errorNoBsn": {
             "pageHeader": "Geen BSN gevonden",
             "pageIntro": "<p>De zorgverlener waar je gevaccineerd of getest bent kan je verder helpen. Neem contact op en geef door dat CoronaCheck geen BSN gevonden heeft.<\/p>"
-        },
-        "errorNoEvents": {
-            "pageHeader": "Sorry, het is niet gelukt",
-            "pageIntro": "<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.<\/p><p>Tip: wacht een uur en probeer het dan nog een keer.<\/p>"
         },
         "errorProofNotPossible": {
             "pageHeader": "We kunnen geen bewijs maken",
@@ -519,11 +517,12 @@
         },
         "errorTimeout": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Het is niet gelukt de server te bereiken.<\/p><p><strong>Foutcode<\/strong><br>%{error}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a><\/p>"
+            "pageIntro": "<p>Het is niet gelukt de server te bereiken.<\/p>",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>"
         },
         "errorTokenFlow": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.<\/p><h4>Wat nu?<\/h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:<\/p><p><strong>Foutcode: %{error}<\/strong><\/p>"
+            "pageIntro": "<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.<\/p><h4>Wat nu?<\/h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:<\/p>"
         },
         "home": {
             "noConsentError": "Ga eerst akkoord met de privacyverklaring",
@@ -713,7 +712,8 @@
         },
         "serverBusy": {
             "pageHeader": "Sorry, het is erg druk",
-            "pageIntro": "<p>Probeer het op een later moment nog eens.<\/p><p><strong>Foutcode<\/strong><br>%{error}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a><\/p>"
+            "pageIntro": "<p>Probeer het op een later moment nog eens.<\/p>",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>"
         },
         "short-stay": {
             "createTestProofButton": "Maak bewijs",

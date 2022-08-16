@@ -2,7 +2,6 @@
 set: 2
 index: 1
 title: Ik ga op reis, kan ik CoronaCheck gebruiken in het buitenland?
-webonly: true
 whichversion:
   - 0g
 featuredHome: true
