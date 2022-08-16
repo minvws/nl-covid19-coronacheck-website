@@ -47,7 +47,7 @@
     "components": {
         "consent": {
             "vaccination": {
-                "body": "Dan heb je vaak een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je positieve testuitslag op om die mee te laten tellen in je vaccinatiebewijs.",
+                "body": "Dan heb je soms een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je oudste positieve testuitslag op om die mogelijk mee te laten tellen in je vaccinatiebewijs.",
                 "checkbox": "Ja, haal ook mijn positieve testuitslag op",
                 "title": "Corona gehad vóór je eerste vaccinatie?"
             }
