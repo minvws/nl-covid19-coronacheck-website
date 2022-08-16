@@ -35,7 +35,7 @@
                 "description": "Regel je bewijs via de GGD"
             },
             "vaccinationLocationOther": {
-                "title": "Op een andere locatie",
+                "title": "Een andere zorgverlener",
                 "description": "Regel je bewijs via bijvoorbeeld je huisarts of andere zorginstelling"
             },
             "noBSNWithTest": {
