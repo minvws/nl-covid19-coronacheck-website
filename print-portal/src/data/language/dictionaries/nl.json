@@ -237,6 +237,14 @@
                 "body": "<p>Voor een testbewijs moet je eerst een test doen bij een aangesloten testlocatie. Blijkt uit de test dat je geen corona hebt? Dan kun je een bewijs maken.<\/p><p><a href=\"https:\/\/coronacheck.nl\/nl\/testafspraak-in-app\" class=\"btn\" target=\"_blank\" rel=\"noopener noreferrer\">Maak een afspraak<\/a><\/p>",
                 "head": "Ik ben nog niet getest"
             },
+            "loginCanceled": {
+                "body": "Wil je jouw %{type} ophalen? Log dan opnieuw in.",
+                "head": "Inloggen geannuleerd",
+                "negativetest": "testuitslag",
+                "positivetest": "testuitslag",
+                "vaccination": "vaccinatiegegevens",
+                "recovery": "herstelbewijs"
+            },
             "digidCanceled": {
                 "body": "Wil je jouw %{type} ophalen? Log dan opnieuw in met DigiD.",
                 "head": "Inloggen geannuleerd",

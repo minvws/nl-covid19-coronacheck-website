@@ -96,8 +96,12 @@ export default {
                 // but oidc-client removes this info from the custom error it returns
                 // as well as the error.response.status
 
-                const isCanceled = (error) => {
+                const isDigiDCanceled = (error) => {
                     return error?.message === 'saml_authn_failed';
+                }
+
+                const isCanceled = (error) => {
+                    return isDigiDCanceled(error) || error?.error === 'cancelled'
                 }
 
                 const tooBusy = (error) => {
@@ -113,10 +117,11 @@ export default {
 
                 if (isCanceled(error)) {
                     this.gotoPreviousPage();
-                    const type = this.$t('message.info.digidCanceled.' + this.type)
+                    const id = isDigiDCanceled(error) ? 'message.info.digidCanceled' : 'message.info.loginCanceled'
+                    const type = this.$t(`${id}.${this.type}`)
                     this.$store.commit('modal/set', {
-                        messageHead: this.$t('message.info.digidCanceled.head'),
-                        messageBody: this.$t('message.info.digidCanceled.body', { type }),
+                        messageHead: this.$t(`${id}.head`),
+                        messageBody: this.$t(`${id}.body`, { type }),
                         closeButton: true
                     })
                 } else if (tooBusy(error)) {
