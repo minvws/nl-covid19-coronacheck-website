@@ -7,7 +7,7 @@ import { AuthType } from '@/types/auth-types'
 import AuthService from '@/interfaces/authentication';
 import Vue from 'vue'
 
-export const authenticate = async (flow: FlowTypes, auth: AuthType) => {
+export const authenticate = async (flow: string, auth: AuthType) => {
     try {
         const service = Vue.prototype.getAuthProvider(flow, auth)
         await service.startAuthentication()
