@@ -147,9 +147,8 @@ const routes: Array<RouteConfig> = [
     {
         path: '/ik-heb-geen-digid',
         name: RouterNames.CHOOSE_NO_DIGID,
-        props: ({ params }) => {
-            if (params.flow) {
-                const { flow } = params
+        props: ({ params: { flow } }) => {
+            if (flow) {
                 store.commit('setFlow', flow);
             }
             return {

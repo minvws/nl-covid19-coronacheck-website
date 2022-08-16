@@ -55,8 +55,6 @@ export const createAuthProvider = (baseUrl: string) => {
     }
 
     return (flow: AuthFlow, auth: AuthType) => {
-        if (!auth) alert('no auth specified')
-        console.log({ flow, auth });
         return authProviders[auth][flow]
     }
 }
