@@ -6,10 +6,48 @@
         "european": "Internationaal"
     },
     "close": "Sluiten",
+    "button": {
+        "digid": {
+            "requestDigiD": {
+                "title": "Een DigiD aanvragen",
+                "description": "Je wordt doorverwezen naar DigiD.nl",
+                "link": {
+                    "href": "https:\/\/digid.nl\/aanvragen",
+                    "target": "_self"
+                }
+            },
+            "noDigiD": {
+                "title": "Doorgaan zonder DigiD",
+                "description": "Als je geen DigiD kunt of wilt aanvragen"
+            }
+        },
+        "bsn": {
+            "withBSN": {
+                "title": "Ja, ik heb een BSN",
+                "description": "Krijg je bewijs via de CoronaCheck helpdesk"
+            },
+            "noBSNWithVaccination": {
+                "title": "Nee, ik heb geen BSN",
+                "description": "Krijg jouw bewijs via GGD"
+            },
+            "vaccinationLocationGGD": {
+                "title": "Bij de GGD",
+                "description": "Regel je bewijs via de GGD"
+            },
+            "vaccinationLocationOther": {
+                "title": "Een andere zorgverlener",
+                "description": "Regel je bewijs via bijvoorbeeld je huisarts of andere zorginstelling"
+            },
+            "noBSNWithTest": {
+                "title": "Nee, ik heb geen BSN",
+                "description": "Krijg je bewijs via jouw zorgverlener"
+            }
+        }
+    },
     "components": {
         "consent": {
             "vaccination": {
-                "body": "Dan heb je vaak een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je positieve testuitslag op om die mee te laten tellen in je vaccinatiebewijs.",
+                "body": "Dan heb je soms een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je oudste positieve testuitslag op om die mogelijk mee te laten tellen in je vaccinatiebewijs.",
                 "checkbox": "Ja, haal ook mijn positieve testuitslag op",
                 "title": "Corona gehad vóór je eerste vaccinatie?"
             }
@@ -199,6 +237,14 @@
                 "body": "<p>Voor een testbewijs moet je eerst een test doen bij een aangesloten testlocatie. Blijkt uit de test dat je geen corona hebt? Dan kun je een bewijs maken.<\/p><p><a href=\"https:\/\/coronacheck.nl\/nl\/testafspraak-in-app\" class=\"btn\" target=\"_blank\" rel=\"noopener noreferrer\">Maak een afspraak<\/a><\/p>",
                 "head": "Ik ben nog niet getest"
             },
+            "loginCanceled": {
+                "body": "Wil je jouw %{type} ophalen? Log dan opnieuw in.",
+                "head": "Inloggen geannuleerd",
+                "negativetest": "testuitslag",
+                "positivetest": "testuitslag",
+                "vaccination": "vaccinatiegegevens",
+                "recovery": "herstelbewijs"
+            },
             "digidCanceled": {
                 "body": "Wil je jouw %{type} ophalen? Log dan opnieuw in met DigiD.",
                 "head": "Inloggen geannuleerd",
@@ -354,6 +400,9 @@
             "pageHeader": "Welk papieren bewijs wil je maken?",
             "pageIntro": ""
         },
+        "choiceVaccinationLocation": {
+            "pageHeader": "Waar ben je gevaccineerd?"
+        },
         "choiceTestLocation": {
             "choiceGGDBody": "Log in met DigiD",
             "choiceGGDHead": "GGD",
@@ -363,9 +412,33 @@
             "pageHeader": "Waar ben je getest?",
             "pageIntro": "<p>Blijkt uit de test dat je geen corona hebt? Dan kun je van de negatieve testuitslag een bewijs maken. Geef aan waar je getest bent.<\/p>"
         },
+        "chooseCareProvider": {
+            "button": "Terug naar home",
+            "pageHeader": "Vraag je coronabewijs aan bij je zorgverlener",
+            "pageIntro": "<p>Neem contact op met de zorgverlener waar je bent gevaccineerd. Je kunt je coronabewijs aanvragen op papier of als pdf-bestand.</p>"
+        },
+        "chooseTestProvider": {
+            "link": "Ik heb geen DigiD",
+            "button": "Login met DigiD",
+            "pageHeader": "Testuitslag ophalen",
+            "pageIntro": "<p>Is je uitslag bekend? Log in met DigiD om je testuitslag bij de GGD op te halen.</p>"
+        },
+        "chooseNoDigiD": {
+            "pageHeader": "Ik heb geen DigiD",
+            "pageIntro": "<p>Woon je in Nederland en heb je een Nederlands indentiteitsbewijs? Dan kun je een DigiD aanvragen om je testuitslag of vaccinatiegegevens op te halen.</p>"
+        },
+        "chooseBSN": {
+            "pageHeader": "Heb je een Nederlands burgerservicenummer (BSN)?",
+            "pageIntro": "<p>Met je BSN kun je jouw bewijs aanvragen bij de CoronaCheck helpdesk. Heb je geen BSN? Dan kun je een bewijs krijgen via je test- of vaccinatielocatie</p>"
+        },
+        "requestDigid": {
+            "button": "Terug naar home",
+            "pageHeader": "Vraag een coronabewijs aan via de helpdesk",
+            "pageIntro": "<p>Vraag je bewijs aan bij de CoronaCheck helpdesk. Die kun je elke dag tussen 08.00 en 20.00 uur bellen op:  <a href=\"tel:08001421\">0800-1421<\/a> (gratis). Of als je vanuit het buitenland belt: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. Kies in het keuzemenu voor “een bewijs aanvragen”. <br><br> Geef het volgende door: <ul class=\"ul--with-padding\"><li>je burgerservicenummer (BSN)<\/li><li>je postcode<\/li><\/ul><br>Je bewijs met QR-code wordt per post opgestuurd. Dit kan maximaal 7 werkdagen duren.<\/p>"
+        },
         "chooseAddProofQR": {
             "pageHeader": "Hoe wil je toevoegen?",
-            "pageIntro": "Als je een camera op je apparaat hebt, kun je de QR-code op je bewijs scannen. Of voeg je bewijs toe als bestand."
+            "pageIntro": "<p>Als je een camera op je apparaat hebt, kun je de QR-code op je bewijs scannen. Of voeg je bewijs toe als bestand.</p>"
         },
         "chooseInternationalQR": {
             "link": "Doorgaan met mijn opgehaalde vaccinaties(s)"
@@ -396,23 +469,21 @@
         },
         "errorDigiD": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\">www.digid.nl<\/a> voor de laatste informatie.<\/p><p><strong>Foutcode: %{error}<\/strong><\/p>"
+            "pageIntro": "<p>Er is een fout opgetreden in de communicatie met DigiD. Probeert u het later nogmaals. Indien deze fout blijft aanhouden, kijk dan op de website <a href=\"https:\/\/www.digid.nl\/\" target=\"_blank\">www.digid.nl<\/a> voor de laatste informatie.<\/p>"
         },
         "errorGeneral": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Er gaat iets mis bij het maken van je bewijs. Wil je het later nog eens proberen?<\/p><p><strong>Foutcode(s)<\/strong><br>%{errors}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a><\/p>"
+            "pageIntro": "<p>Er gaat iets mis bij het maken van je bewijs. Wil je het later nog eens proberen?<\/p>",
+            "label": "Foutcode | Foutecodes",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>"
         },
         "errorNoBsn": {
             "pageHeader": "Geen BSN gevonden",
             "pageIntro": "<p>De zorgverlener waar je gevaccineerd of getest bent kan je verder helpen. Neem contact op en geef door dat CoronaCheck geen BSN gevonden heeft.<\/p>"
         },
-        "errorNoEvents": {
-            "pageHeader": "Sorry, het is niet gelukt",
-            "pageIntro": "<p>Door drukte of een storing bij een van de partijen hebben we geen gegevens over je %{type} kunnen ophalen.<\/p><p>Tip: wacht een uur en probeer het dan nog een keer.<\/p>"
-        },
         "errorProofNotPossible": {
             "pageHeader": "We kunnen geen bewijs maken",
-            "pageIntro": "<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<br><br><b>Foutcode<\/b><br>W 180 000 058<\/p>"
+            "pageIntro": "<p>Op dit moment kunnen we geen bewijs maken. Dit kan verschillende oorzaken hebben. Kijk voor meer informatie op de <a href=\"https:\/\/coronacheck.nl\/wegwijzer\" target=\"_blank\" rel=\"noopener noreferrer\">Wegwijzer<\/a>.<br><br><strong>Foutcode<\/strong><br>%{error}<\/p>"
         },
         "errorQRDomestic": {
             "button": "Probeer opnieuw",
@@ -446,11 +517,12 @@
         },
         "errorTimeout": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Het is niet gelukt de server te bereiken.<\/p><p><strong>Foutcode<\/strong><br>%{error}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a><\/p>"
+            "pageIntro": "<p>Het is niet gelukt de server te bereiken.<\/p>",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>"
         },
         "errorTokenFlow": {
             "pageHeader": "Sorry, er gaat iets mis",
-            "pageIntro": "<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.<\/p><h4>Wat nu?<\/h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:<\/p><p><strong>Foutcode: %{error}<\/strong><\/p>"
+            "pageIntro": "<p>Er gaat iets mis bij de testlocatie. Daardoor kunnen jouw gegevens niet worden opgehaald.<\/p><h4>Wat nu?<\/h4><p>Neem contact op met je testlocatie en geef de volgende foutcode door:<\/p>"
         },
         "home": {
             "noConsentError": "Ga eerst akkoord met de privacyverklaring",
@@ -597,6 +669,12 @@
             "pageHeader": "Zijn dit al jouw vaccinaties?",
             "pageIntro": "<p>Deze vaccinaties hebben we opgehaald bij de GGD en het RIVM:<\/p>"
         },
+        "proofAddedOverviewList": {
+            "button": "Volgende",
+            "link": "Ik wil nog een vaccinatie toevoegen",
+            "pageHeader": "Vaccinatie toevoegen gelukt",
+            "pageIntro": "<p>Ga verder om deze vaccinaties mee te nemen in je bewijs of voeg nog een vaccinatie toe.<\/p>"
+        },
         "provideCode": {
             "didNotGetCode": "Geen verificatiecode gekregen?",
             "emptyTestCode": "Graag eerst een ophaalcode invullen",
@@ -634,7 +712,8 @@
         },
         "serverBusy": {
             "pageHeader": "Sorry, het is erg druk",
-            "pageIntro": "<p>Probeer het op een later moment nog eens.<\/p><p><strong>Foutcode<\/strong><br>%{error}<\/p><p><a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a><\/p>"
+            "pageIntro": "<p>Probeer het op een later moment nog eens.<\/p>",
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>"
         },
         "short-stay": {
             "createTestProofButton": "Maak bewijs",
