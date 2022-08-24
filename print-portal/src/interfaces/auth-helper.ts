@@ -14,7 +14,7 @@ export const authenticate = async (flow: string, auth: AuthType) => {
     } catch (error) {
         handleRejection(error, {
             flow,
-            step: StepTypes.TVS_DIGID,
+            step: auth === AuthType.PAP ? StepTypes.PAP : StepTypes.TVS_DIGID,
             provider_identifier: ProviderTypes.NON_PROVIDER
         },
         () => {
