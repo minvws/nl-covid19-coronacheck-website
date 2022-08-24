@@ -13,7 +13,12 @@ export default {
     },
     methods: {
         dontHaveDigid() {
-            this.$router.push({ name: RouterNames.CHOOSE_NO_DIGID, params: this.$props });
+            if (this.$store.getters.isPapEnabled) {
+                this.$router.push({ name: RouterNames.CHOOSE_NO_DIGID, params: this.$props });
+                return
+            }
+            const { href, target } = this.$t('button.digid.requestOrActivateDigiD.link');
+            window.open(href, target);
         }
     }
 }

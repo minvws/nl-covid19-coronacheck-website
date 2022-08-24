@@ -29,6 +29,12 @@
                 "description": "Als je geen DigiD kunt of wilt aanvragen",
                 "title": "Doorgaan zonder DigiD"
             },
+            "requestOrActivateDigiD": {
+                "link": {
+                    "href": "https:\/\/www.digid.nl\/digid-aanvragen-activeren#hoe-vraag-ik-digid-aan",
+                    "target": "_blank"
+                }
+            },
             "requestDigiD": {
                 "description": "Je wordt doorverwezen naar DigiD.nl",
                 "link": {

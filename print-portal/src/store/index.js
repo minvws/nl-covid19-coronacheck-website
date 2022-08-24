@@ -46,6 +46,9 @@ const getters = {
         }
         return false
     },
+    isPapEnabled: ({ holderConfig: { papEnabled } }) => {
+        return papEnabled;
+    },
     vaccinationWithPositiveTestEnabled: ({ vaccinationWithPositiveTestEnabled }) => {
         return vaccinationWithPositiveTestEnabled
     },

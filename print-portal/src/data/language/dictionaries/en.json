@@ -29,6 +29,12 @@
                 "description": "If you can’t or don’t want to request a DigiD",
                 "title": "Continue without DigiD"
             },
+            "requestOrActivateDigiD": {
+                "link": {
+                    "href": "https:\/\/www.digid.nl\/en\/apply-or-activate-digid",
+                    "target": "_blank"
+                }
+            },
             "requestDigiD": {
                 "description": "You’ll be redirected to DigiD.nl",
                 "link": {
