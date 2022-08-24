@@ -18,6 +18,11 @@ import { authenticate } from '@/interfaces/auth-helper'
 import { FlowTypes } from '@/types/flow-types'
 import { AuthType } from '@/types/auth-types'
 
+const goToHome = () => {
+    // force a reload of the home page
+    window.location.href = `/${i18n.locale}/`;
+}
+
 export enum RouterNames {
     CHOOSE_CARE_PROFIDER = 'chooseCareProvider',
     REQUEST_CERTIFICATE_DIGID = 'requestDigid',
@@ -103,7 +108,9 @@ const routes: Array<RouteConfig> = [
         name: RouterNames.REQUEST_CERTIFICATE_DIGID,
         props: {
             next: {
-                // TODO: got to home
+                action: () => {
+                    goToHome()
+                }
             }
         },
         component: QRGeneralPage
@@ -112,8 +119,8 @@ const routes: Array<RouteConfig> = [
         path: '/coronabewijs-aanvragen-zorgverlener',
         name: RouterNames.CHOOSE_CARE_PROFIDER,
         props: {
-            next: {
-                // got to home
+            action: () => {
+                goToHome()
             }
         },
         component: QRGeneralPage
