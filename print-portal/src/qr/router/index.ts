@@ -119,8 +119,10 @@ const routes: Array<RouteConfig> = [
         path: '/coronabewijs-aanvragen-zorgverlener',
         name: RouterNames.CHOOSE_CARE_PROFIDER,
         props: {
-            action: () => {
-                goToHome()
+            next: {
+                action: () => {
+                    goToHome()
+                }
             }
         },
         component: QRGeneralPage
