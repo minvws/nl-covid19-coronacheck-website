@@ -87,7 +87,7 @@ const routes: Array<RouteConfig> = [
     {
         path: '/waar-ben-je-gevaccineerd',
         name: RouterNames.CHOOSE_VACCINATION_LOCATION,
-        props: {
+        props: () => ({
             routes: [
                 {
                     ...(i18n.t('button.bsn.vaccinationLocationGGD') as Record<string, unknown>),
@@ -100,7 +100,7 @@ const routes: Array<RouteConfig> = [
                     ...(i18n.t('button.bsn.vaccinationLocationOther') as Record<string, unknown>)
                 }
             ]
-        },
+        }),
         component: QRGeneralPage
     },
     {
@@ -235,7 +235,7 @@ const routes: Array<RouteConfig> = [
         path: '/kies-bewijs-toevoegen',
         name: RouterNames.CHOOSE_ADD_PROOF,
         component: QREntryPage,
-        props: {
+        props: () => ({
             reject: {
                 to: {
                     name: 'CollectVaccination'
@@ -262,7 +262,7 @@ const routes: Array<RouteConfig> = [
                     replace: true
                 }
             ]
-        }
+        })
     },
     {
         path: '/internationaal-bewijs',
