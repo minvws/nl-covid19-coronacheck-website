@@ -16,13 +16,7 @@ declare global {
 
 Vue.use(PortalVue)
 
-const getBaseUrl = () => {
-    const chunks = window.location.href.split('/print');
-    return chunks[0] + '/print/';
-}
-const baseUrl = getBaseUrl();
-
-Vue.prototype.getAuthProvider = createAuthProvider(baseUrl)
+Vue.prototype.getAuthProvider = createAuthProvider(window.location.origin, 'print');
 
 const axiosConfig = {
     baseURL: window.config.api,

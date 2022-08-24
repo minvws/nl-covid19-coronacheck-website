@@ -1,5 +1,7 @@
 import { UserManager } from 'oidc-client';
 import getRandomValues from 'polyfill-crypto.getrandomvalues'
+import i18n from './../i18n'
+
 const getNonce = (l) => {
     const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._'
     let length = l;
@@ -22,7 +24,9 @@ const getNonce = (l) => {
     return result;
 }
 
-const getClientSettings = (redirect_uri, authority) => {
+const getClientSettings = ({ authority, redirect, path, baseUrl }) => {
+    const { locale: lang } = i18n;
+    const redirect_uri = `${baseUrl}/${lang}/${path}/${redirect}`
     return {
         authority,
         client_id: 'cc_web',
@@ -30,7 +34,8 @@ const getClientSettings = (redirect_uri, authority) => {
         response_type: 'code',
         redirect_uri,
         extraQueryParams: {
-            nonce: getNonce(32)
+            nonce: getNonce(32),
+            lang
         },
         filterProtocolClaims: true,
         loadUserInfo: false,
@@ -40,14 +45,28 @@ const getClientSettings = (redirect_uri, authority) => {
 
 export default class Authentication {
     manager = null;
+    baseUrl = null;
+    path = null;
+    redirect = null;
+    authority = null;
 
-    constructor(redirect_uri, authority) {
-        this.manager = new UserManager(getClientSettings(redirect_uri, authority))
+    constructor(baseUrl, path, redirect, authority) {
+        this.baseUrl = baseUrl
+        this.path = path;
+        this.redirect = redirect;
+        this.authority = authority;
+    }
+
+    getManager() {
+        if (!this.manager) {
+            this.manager = new UserManager(getClientSettings(this))
+        }
+        return this.manager;
     }
 
     startAuthentication() {
         return new Promise((resolve, reject) => {
-            this.manager.signinRedirect().then((result) => {
+            this.getManager().signinRedirect().then((result) => {
                 resolve();
             }).catch((error) => {
                 reject(error);
@@ -57,7 +76,7 @@ export default class Authentication {
 
     completeAuthentication() {
         return new Promise((resolve, reject) => {
-            return this.manager.signinRedirectCallback().then(user => {
+            return this.getManager().signinRedirectCallback().then(user => {
                 resolve(user);
             }).catch((error) => {
                 reject(error);

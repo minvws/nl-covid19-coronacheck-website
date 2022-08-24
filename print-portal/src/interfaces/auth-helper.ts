@@ -39,19 +39,20 @@ const redirects = {
     }
 }
 
-const createAuthProviders = (baseUrl: string, auth: AuthType, authority: string) => {
+const createAuthProviders = (baseUrl: string, path: string, auth: AuthType, authority: string) => {
+    console.log(baseUrl);
     const urls = redirects[auth]
     return Object.keys(urls).reduce((cul, flow) => {
-        const redirect = `${baseUrl}${urls[flow]}`
-        cul[flow] = new AuthService(redirect, authority)
+        const redirect = urls[flow]
+        cul[flow] = new AuthService(baseUrl, path, redirect, authority)
         return cul
     }, {} as Record<string, AuthService>)
 }
 
-export const createAuthProvider = (baseUrl: string) => {
+export const createAuthProvider = (baseUrl: string, path: string) => {
     const authProviders = {
-        [AuthType.MAX]: createAuthProviders(baseUrl, AuthType.MAX, window.config.tvs),
-        [AuthType.PAP]: createAuthProviders(baseUrl, AuthType.PAP, window.config.pap)
+        [AuthType.MAX]: createAuthProviders(baseUrl, path, AuthType.MAX, window.config.tvs),
+        [AuthType.PAP]: createAuthProviders(baseUrl, path, AuthType.PAP, window.config.pap)
     }
 
     return (flow: AuthFlow, auth: AuthType) => {
