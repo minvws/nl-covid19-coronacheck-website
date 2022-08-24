@@ -40,7 +40,6 @@ const redirects = {
 }
 
 const createAuthProviders = (baseUrl: string, path: string, auth: AuthType, authority: string) => {
-    console.log(baseUrl);
     const urls = redirects[auth]
     return Object.keys(urls).reduce((cul, flow) => {
         const redirect = urls[flow]
