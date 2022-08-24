@@ -1,6 +1,44 @@
 {
     "and": "And",
     "back": "Back",
+    "button": {
+        "bsn": {
+            "noBSNWithTest": {
+                "description": "Get your certificate from your healthcare provider",
+                "title": "No, I don't have a BSN"
+            },
+            "noBSNWithVaccination": {
+                "description": "Get your certificate from the GGD",
+                "title": "No, I don't have a BSN"
+            },
+            "vaccinationLocationGGD": {
+                "description": "Arrange your certificate via the GGD",
+                "title": "At the GGD"
+            },
+            "vaccinationLocationOther": {
+                "description": "Arrange your certificate via, for example, your GP or care facility",
+                "title": "At another healthcare provider"
+            },
+            "withBSN": {
+                "description": "Get your certificate from the CoronaCheck helpdesk",
+                "title": "Yes, I have a BSN"
+            }
+        },
+        "digid": {
+            "noDigiD": {
+                "description": "If you can’t or don’t want to request a DigiD",
+                "title": "Continue without DigiD"
+            },
+            "requestDigiD": {
+                "description": "You’ll be redirected to DigiD.nl",
+                "link": {
+                    "href": "https:\/\/digid.nl\/en\/aanvragen",
+                    "target": ""
+                },
+                "title": "Request a DigiD"
+            }
+        }
+    },
     "certificate": {
         "domestic": "Dutch",
         "european": "International"
@@ -9,9 +47,9 @@
     "components": {
         "consent": {
             "vaccination": {
-                "body": "Then you often need a vaccination less to be considered fully vaccinated. Retrieve your positive test result to record it into your vaccination certificate.",
+                "body": "In some cases, you need one less vaccination to be fully vaccinated. Retrieve your oldest positive test result as well to possibly have it count for your vaccination certificate.",
                 "checkbox": "Yes, retrieve my positive test result too",
-                "title": "Had coronavirus before your first vaccination?"
+                "title": "Did you have coronavirus?"
             }
         },
         "digid": {
@@ -209,6 +247,14 @@
             "digidFinished": {
                 "body": "We'll retrieve your %{type}. You will be logged out of DigiD automatically"
             },
+            "loginCanceled": {
+                "body": "Couldn’t retrieve your %{type}. Please try again to arrange your certificate via the GGD.",
+                "head": "Retrieval cancelled",
+                "negativetest": "test result",
+                "positivetest": "test result",
+                "recovery": "recovery details",
+                "vaccination": "vaccination details"
+            },
             "noVerificationCode": {
                 "body": "<p>TYou receive the verification code via text or email. Didn't get one? Click ‘send again’ below for a new code.<\/p>",
                 "head": "Didn’t receive a verification code?"
@@ -273,7 +319,7 @@
             "stop": "Stop camera"
         },
         "code": {
-            "added": "{count} QR-codes added | {count} QR-code added",
+            "added": "{count} QR-codes added | {count} QR code added",
             "not-found": "No QR code found",
             "scanned": "Scanned QR codes"
         },
@@ -363,17 +409,39 @@
             "pageHeader": "Where have you been tested?",
             "pageIntro": "<p>Does the test point out you don't have coronavirus? Then you can use the negative test result to create a certificate. Please specify where you were tested.<\/p>"
         },
+        "choiceVaccinationLocation": {
+            "pageHeader": "Where were you vaccinated?"
+        },
         "chooseAddProofQR": {
             "pageHeader": "How do you want to add?",
             "pageIntro": "If your device has a camera, you can scan the QR code on your certificate. Or add your certificate as a file."
         },
+        "chooseBSN": {
+            "pageHeader": "Do you have a Dutch citizen service number (BSN)?",
+            "pageIntro": "<p>With your BSN, you can request your certificate at the CoronaCheck helpdesk. Don’t have a BSN? Then you can get a certificate from your test or vaccination location.<\/p>"
+        },
+        "chooseCareProvider": {
+            "button": "Back to home",
+            "pageHeader": "Request your certificate from your healthcare provider",
+            "pageIntro": "<p>Please contact the care provider who vaccinated you. Here you can request your certificate on paper or as a PDF file.<\/p>"
+        },
         "chooseInternationalQR": {
             "link": "Continue with my retrieved vaccination(s)"
+        },
+        "chooseNoDigiD": {
+            "pageHeader": "I don’t have a DigiD",
+            "pageIntro": "<p>Are you living in the Netherlands and do you have a Dutch proof of identity? Then you can request a DigiD to retrieve your test result or vaccination details.<\/p>"
         },
         "chooseNoneQR": {
             "body": "<p>Want to create a certificate now anyway? Continue with the vaccinations you retrieved via DigiD.<\/p>",
             "link": "Continue with my retrieved vaccination(s)",
             "pageHeader": "No certificate with QR code of missing vaccination"
+        },
+        "chooseTestProvider": {
+            "button": "Log in with DigiD",
+            "link": "I don't have DigiD",
+            "pageHeader": "Retrieve your test details",
+            "pageIntro": "<p>Is your result in? Log in with DigiD to retrieve your test result from the GGD.<\/p>"
         },
         "collectPositiveTest": {
             "pageHeader": "Retrieve test result"
@@ -399,44 +467,22 @@
             "pageIntro": "<p>There was an error while communicating with DigiD. Please try again later. If the error persists, please check <a href=\"https:\/\/www.digid.nl\/en\" target=\"_blank\">www.digid.nl\/en<\/a> for the latest information.<\/p>"
         },
         "errorGeneral": {
-            "pageHeader": "Sorry, something has gone wrong",
-            "pageIntro": "<p>Try again later or view the latest outages at <a href=\"https:\/\/status.coronacheck.nl\/en\/\">https:\/\/status.coronacheck.nl\/en\/<\/a><\/p>",
             "label": "Error code | Error codes",
-            "link": ""
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>",
+            "pageHeader": "Sorry, something has gone wrong",
+            "pageIntro": "<p>Something went wrong while creating your certificate. Can you try again later?<\/p>"
         },
         "errorNoBsn": {
             "pageHeader": "No social security number found",
             "pageIntro": "<p>The healthcare provider who vaccinated or tested you can help you further. Contact them and let them know CoronaCheck couldn’t find a social security number.<\/p>"
         },
+        "errorNoEvents": {
+            "pageHeader": "Sorry, your details were not retrieved",
+            "pageIntro": "<p>Due to increased traffic or an outage at one of the involved parties, some details of your %{type} may be missing. <\/p><p>Tip: wait one hour and try again.<\/p>"
+        },
         "errorProofNotPossible": {
             "pageHeader": "We can’t make a certificate",
             "pageIntro": "<p>At this moment, we can't make a certificate. This can have various causes. Read more on the <a href=\"https:\/\/www.coronacheck.nl\/en\/guidepost\" target=\"_blank\" rel=\"noopener noreferrer\">Guidepost<\/a>.<br><br><strong>Error code<\/strong><br>%{error}<\/p>"
-        },
-        "errorQRDomestic": {
-            "button": "Try again",
-            "pageHeader": "Add your international QR code",
-            "pageIntro": "<p>You don’t need to add your Dutch QR code. Add the QR code on the international certificate you received from your health care provider or the government. It contains the information needed to add your missing vaccination. You can recognise this certificate by the European flag.<\/p>"
-        },
-        "errorQRDuplicate": {
-            "button": "Try again",
-            "pageHeader": "This QR code has already been added",
-            "pageIntro": "<p>You’ve already added this QR code. Try adding another QR code.<\/p>"
-        },
-        "errorQRInvalid": {
-            "button": "Try again",
-            "pageHeader": "QR code not recognised",
-            "pageIntro": "<p>The QR code you are trying to add is not recognised as a coronavirus pass. Check if you have the correct QR code.<\/p>"
-        },
-        "errorQRInvalidType": {
-            "button": "Try again",
-            "pageHeader": "Add your vaccination certificate",
-            "pageIntro": "<p>The QR code you are trying to add does not belong to a vaccination certificate. You can only add a certificate of your vaccination.<\/p>"
-        },
-        "errorQRMismatch": {
-            "button": "Try again",
-            "link": "Continue with my retrieved vaccination(s)",
-            "pageHeader": "The personal details don’t match",
-            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved via DigiD. Because of that, you can’t add this certificate.<\/p>"
         },
         "errorQRDomestic": {
             "button": "Try again",
@@ -469,9 +515,9 @@
             "pageIntro": "<p>You’ve waited too long. For safety reasons, you were logged out. Log in again with your DigiD to retrieve your details.<\/p>"
         },
         "errorTimeout": {
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>",
             "pageHeader": "Sorry, something has gone wrong",
-            "pageIntro": "<p>Could not reach the server.<\/p>",
-            "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>"
+            "pageIntro": "<p>Couldn't reach the server.<\/p>"
         },
         "errorTokenFlow": {
             "pageHeader": "Sorry, something has gone wrong",
@@ -611,6 +657,12 @@
             },
             "validInFuture": "<p>Please note: your recovery certificate will become valid 11 days after the positive test result. You need to be free of symptoms as well.<\/p>"
         },
+        "proofAddedOverviewList": {
+            "button": "",
+            "link": "",
+            "pageHeader": "",
+            "pageIntro": ""
+        },
         "proofIntroduction": {
             "link": "Don’t have a certificate with QR code?",
             "pageHeader": "Adding a missing vaccination",
@@ -657,10 +709,15 @@
             "pageHeader": "Are the details correct?",
             "pageIntro": "<p>If the details are correct you can make a certificate.<\/p>"
         },
+        "requestDigid": {
+            "button": "Back to home",
+            "pageHeader": "Request your certificate via the helpdesk",
+            "pageIntro": "<p>Request your certificate at the CoronaCheck helpdesk. You can call them every day between 8AM and 8PM at: <a href=\"tel:08001421\">0800-1421<\/a> (free). Or if you’re calling from abroad: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. In the menu you can choose “request a certificate”.<br><br>Please provide the following: <ul class=\"ul--with-padding\"><li>your citizen service number (BSN)<\/li><li>your zipcode<\/li><\/ul><br>Your certificate with QR code will be sent by post. This can take up to 7 working days.<\/p>"
+        },
         "serverBusy": {
+            "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>",
             "pageHeader": "Sorry, it is really busy",
-            "pageIntro": "<p>Please try again later.<\/p>",
-            "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>"
+            "pageIntro": "<p>Please try again later.<\/p>"
         },
         "short-stay": {
             "createTestProofButton": "Make certificate",
