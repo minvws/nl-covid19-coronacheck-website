@@ -48,9 +48,5 @@ export default {
         &.button--full-width {
             width: 100%;
         }
-        .content {
-            display: flex;
-            align-items: center;
-        }
     }
 </style>
