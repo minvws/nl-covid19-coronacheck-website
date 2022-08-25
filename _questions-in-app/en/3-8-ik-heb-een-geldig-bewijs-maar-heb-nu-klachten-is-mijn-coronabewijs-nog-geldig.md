@@ -1,6 +1,8 @@
 ---
-set: 3
-index: 8
+set: 
+  - 2
+  - 7
+index: 5
 title: I'm experiencing symptoms, have to quarantine or have been tested positive. What should I do? And what happens to my coronavirus pass?
 redirect_from: 
     - /en/faq-in-app/5-ik-heb-een-qr-code-maar-heb-nu-klachten

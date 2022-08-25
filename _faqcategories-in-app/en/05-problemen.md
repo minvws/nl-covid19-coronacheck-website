@@ -6,6 +6,6 @@ questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
 permalink: /en/faq-in-app/05-problemen
-title: Problems
+title: Something's gone wrong
 graphic: problems
 ---

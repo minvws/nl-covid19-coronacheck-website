@@ -1,6 +1,6 @@
 ---
-set: 3
-index: 8
+set: 2
+index: 3
 title: Wat betekent een dosis 2/1 of 3/1 op mijn vaccinatiebewijs?
 redirect_from: 
     - /nl/dosis

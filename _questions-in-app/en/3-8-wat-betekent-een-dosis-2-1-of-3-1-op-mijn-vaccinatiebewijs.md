@@ -1,6 +1,6 @@
 ---
-set: 3
-index: 8
+set: 2
+index: 3
 title: What does a dose 2/1 or 3/1 on my vaccination certificate mean?
 redirect_from: 
     - /en/dose
