@@ -1,8 +1,11 @@
 <template>
     <component
-        :is="link ? 'a' : 'router-link'"
+        class="nav-button"
+        :is="link ? 'button' : 'router-link'"
+        tag="button"
+        @click="onButtonClick"
         v-bind="
-            link || {
+            name && {
                 to: { name, params },
                 replace,
             }
@@ -32,6 +35,21 @@ export default Vue.extend({
             type: Boolean,
             required: false
         }
+    },
+    methods: {
+        onButtonClick () {
+            if (!this.link) return
+            const { href, target } = this.link
+            window.open(href, target)
+        }
     }
 });
 </script>
+
+<style lang="scss" scoped>
+.nav-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+</style>
