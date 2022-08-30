@@ -8,7 +8,7 @@
                 "title": "Nee, ik heb geen BSN"
             },
             "noBSNWithVaccination": {
-                "description": "Krijg je bewijs via GGD",
+                "description": "Krijg je bewijs via de GGD",
                 "title": "Nee, ik heb geen BSN"
             },
             "vaccinationLocationGGD": {
@@ -306,7 +306,7 @@
             "selected": "Geselecteerde camera",
             "start": "Start camera",
             "states": {
-                "LIST": "Ophalen beschikbare camera's",
+                "LIST": "Beschikbare camera's ophalen",
                 "NONE": "",
                 "NO_CAMERA": "Geen camera gevonden",
                 "PLAYING": "Camera is actief",
@@ -536,7 +536,7 @@
         },
         "letterCombination": {
             "emptyCode": "Graag eerst een lettercombinatie invullen",
-            "exampleCode": "Bijv. FLBRXQ",
+            "exampleCode": "FLBRXQ",
             "invalidCode": "Deze lettercombinatie is niet geldig. Een combinatie ziet er bijvoorbeeld zo uit: FLBRXQ.",
             "invalidCodeLength": "Lettercombinatie bestaat uit {count} tekens",
             "link": "Heb je geen lettercombinatie?",
@@ -553,7 +553,7 @@
         "letterCombinationExpired": {
             "link": "Doorgaan met de opgehaalde vaccinaties(s)",
             "pageHeader": "Dit papieren bewijs is verlopen",
-            "pageIntro": "<p>Dit papieren bewijs is niet meer geldig. Dit kan verschillende oorzaken hebben: <ul class=\"ul--with-padding\"><li>Je vaccinatie of herstel is nog geldig, maar het papiere bewijs niet. Vraag dan opnieuw je papieren bewijs aan.<\/li><li>Je vaccinatie of herstel is verlopen.<\/li><\/ul><\/p>"
+            "pageIntro": "<p>Dit papieren bewijs is niet meer geldig. Dit kan verschillende oorzaken hebben: <ul class=\"ul--with-padding\"><li>Je vaccinatie of herstel is nog geldig, maar het papieren bewijs niet. Vraag dan opnieuw je papieren bewijs aan.<\/li><li>Je vaccinatie of herstel is verlopen.<\/li><\/ul><\/p>"
         },
         "letterCombinationInvalid": {
             "button": "Probeer opnieuw",
@@ -707,7 +707,7 @@
         "recoveryOverview": {
             "createTestProofButton": "Maak bewijs",
             "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Als de gegevens kloppen kun je een bewijs maken.<\/p>"
+            "pageIntro": "<p>Controleer je gegevens hieronder. Als deze kloppen kun je een bewijs maken.<\/p>"
         },
         "requestDigid": {
             "button": "Terug naar home",
@@ -722,7 +722,7 @@
         "short-stay": {
             "createTestProofButton": "Maak bewijs",
             "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Als de gegevens kloppen kun je een bezoekersbewijs maken. <\/p>"
+            "pageIntro": "<p>Als de gegevens kloppen kun je een bezoekersbewijs maken.<\/p>"
         },
         "shortStay": {
             "button": "Volgende",
@@ -769,7 +769,7 @@
         "vaccinationOverview": {
             "createTestProofButton": "Maak bewijs",
             "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Als de gegevens kloppen kun je een bewijs maken.<\/p>"
+            "pageIntro": "<p>Controleer je gegevens hieronder. Als deze kloppen kun je een bewijs maken.<\/p>"
         },
         "vaccinationsIncomplete": {
             "pageHeader": "We kunnen geen bewijs maken",
