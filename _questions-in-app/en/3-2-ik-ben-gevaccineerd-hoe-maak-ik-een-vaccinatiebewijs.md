@@ -1,6 +1,6 @@
 ---
-set: 3
-index: 2
+set: 2
+index: -1
 title: When can I make a vaccination certificate?
 redirect_from: 
     - /en/faq-in-app/8-ik-heb-mij-laten-testen-hoe-krijg-ik-mijn-testuitslag

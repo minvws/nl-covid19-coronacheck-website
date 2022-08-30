@@ -1,6 +1,6 @@
 ---
-set: 2
-index: 3
+set: 3
+index: -2
 title: Wat is het EU Digitaal Corona Certificaat? (DCC)
 redirect_from:
     - /nl/faq-in-app/2-7-wat-is-het-EU-digitaal-corona-certificaat-dcc

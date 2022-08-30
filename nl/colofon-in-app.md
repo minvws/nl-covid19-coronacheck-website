@@ -12,9 +12,9 @@ De broncode van de app en de achterliggende systemen zijn volledig openbaar. Je 
 
 ## Bijdragen
 
-De ontwikkeling van CoronaCheck, de uitgifte van coronabewijzen voor reizen en de aansluiting op de Europese gateway zijn mede mogelijk gemaakt dankzij een financiële bijdrage van de Europese Commissie.
+De ontwikkeling van CoronaCheck, de uitgifte van coronabewijzen voor reizen en de aansluiting op de Europese gateway zijn mede mogelijk gemaakt dankzij een financiële bijdrage van de Europese Unie.
 
-<img src="{{ site.baseurl }}/img/Logo_EU_Positive_nl.svg" alt="Logo Europese Commissie" width="175" height="48" />
+<img src="{{ site.baseurl }}/img/Logo_EU_Positive_nl.svg" alt="Medegefinancierd door de Europese Unie" width="300" height="54" />
 
 Naast de auteurs van de diverse open-source third-partybibliotheken hebben we bijdragen ontvangen van heel veel andere mensen.
 

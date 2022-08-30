@@ -1,6 +1,6 @@
 ---
 set: 5
-index: 4
+index: -2
 title: I don’t have a smartphone and I’m not able to print my certificate. What should I do?
 redirect_from:
     - /en/faq/5-4-ik-heb-geen-digid-smartphone-of-computer-met-printer

@@ -14,7 +14,7 @@
     <ul class="faq-categories-block__list">
         {% for questionCategory in questionCategories %}
             <li class="faq-categories__item"> 
-                <a class="faq-categories__link" href="{{ site.baseurl }}{{ questionCategory.url }}" id="{{ questionCategory.title | slugify }}">
+                <a class="faq-categories__link" href="{{ site.baseurl }}{{ questionCategory.url }}" id="category-{{ questionCategory.title | slugify }}">
                     <div class="faq-categories__image">
                     {% include faqcategories/{{ questionCategory.graphic }}.svg %}
                     </div>

@@ -1,6 +1,6 @@
 ---
-set: 2
-index: 5
+set: 3
+index: -1
 title: Waarom heb ik voor elke prik een aparte internationale QR-code? En welke moet ik gebruiken?
 redirect_from:
     - /nl/faq/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-QR-code/

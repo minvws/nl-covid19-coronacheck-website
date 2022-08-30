@@ -1,6 +1,6 @@
 ---
 set: 5
-index: 4
+index: -1
 title: I am unable to log in with DigiD. What can I do?
 redirect_from:
     - /en/faq-in-app/4-4-problemen-met-digid

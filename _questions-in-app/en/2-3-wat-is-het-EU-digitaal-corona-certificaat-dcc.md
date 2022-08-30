@@ -1,6 +1,6 @@
 ---
-set: 2
-index: 3
+set: 3
+index: -2
 title: What is the EU Digital COVID Certificate?
 redirect_from:
     - /en/faq-in-app/2-7-wat-is-het-EU-digitaal-corona-certificaat-dcc

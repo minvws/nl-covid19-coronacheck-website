@@ -1,6 +1,6 @@
 ---
 set: 1
-index: 5
+index: 9
 title: How is my coronavirus pass checked?
 redirect_from: 
     - /en/faq-in-app/31-hoe-wordt-mijn-testbewijs-gecontroleerd

@@ -1,6 +1,6 @@
 ---
-set: 2
-index: 1
+set: 3
+index: -3
 title: Ik ben niet gevaccineerd. Kan ik internationaal reizen?
 whichversion:
   - 0g

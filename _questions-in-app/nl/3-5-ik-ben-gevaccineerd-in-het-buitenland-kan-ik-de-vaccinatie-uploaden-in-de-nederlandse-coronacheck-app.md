@@ -1,8 +1,8 @@
 ---
 set: 
-  - 1
+  - 2
   - 3
-index: 5
+index: 1
 title: Ik ben gevaccineerd in het buitenland. Kan ik een vaccinatiebewijs maken met CoronaCheck?  
 whichversion:
   - 0g
