@@ -309,7 +309,8 @@ export default {
         handleWithPositiveTest () {
             // no recovery is fetched, or expired, remove signed events and show a warning
             this.$store.dispatch('signedEvents/clear', { filter: this.filter, scope: this.scope })
-            this.$router.replace({ name: this.pages.overview, params: { message: this.$t('warning.noPositivetest') } });
+            const { auth } = this
+            this.$router.replace({ name: this.pages.overview, params: { auth, message: this.$t('warning.noPositivetest') } });
         },
         isTestedPositiveBeforeFirstVaccination (proofEvents) {
             // all positive tests dates
@@ -359,7 +360,8 @@ export default {
                         this.handleWithPositiveTest()
                     } else this.$router.push({ name: 'RecoveryInvalid' });
                 } else {
-                    this.$router.replace({ name: this.pages.overview });
+                    const { auth } = this
+                    this.$router.replace({ name: this.pages.overview, params: { auth } });
                 }
             } else {
                 this.$router.push({ name: this.pages.noResult });

@@ -13,11 +13,16 @@ export default {
     name: 'VaccinationRedirect',
     components: { Page, PageIntro, Loading },
     mixins: [redirectMixin],
+    props: {
+        auth: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         const withPositiveTest = this.$store.getters[StorageEvent.WITH_POSITIVE_TEST]
         const positiveTest = 'CollectPositiveTest'
         const overview = this.$store.getters.isListBeforeOverview ? RouterNames.VACCINATION_OVERVIEW_LIST : 'vaccinationOverview'
-
         return {
             isLoading: false,
             filter: FilterTypes.VACCINATION,
