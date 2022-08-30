@@ -43,14 +43,10 @@ export default {
     </button>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     button {
         &.button--full-width {
             width: 100%;
-        }
-        .content {
-            display: flex;
-            align-items: center;
         }
     }
 </style>
