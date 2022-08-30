@@ -309,7 +309,7 @@
                 "LIST": "Retrieving camera list",
                 "NONE": "",
                 "NO_CAMERA": "No camera found",
-                "PLAYING": "Camera running",
+                "PLAYING": "Camera is running",
                 "REJECTED": "You must first give permission to use your camera.",
                 "SELECTED": "Camera starting",
                 "STARTED": "Camera started",
@@ -355,12 +355,12 @@
         "file": {
             "error": {
                 "unsupported": {
-                    "body": "You can only upload {acceptFileExtensions}. Choose one of these file types.",
+                    "body": "You can only add {acceptFileExtensions}files. Choose one of these file types.",
                     "title": "Choose a different file type"
                 }
             },
             "route": {
-                "description": "I have my certificate on my phone or computed",
+                "description": "I have a file or picture of my certificate on my device",
                 "title": "Add certificate as a file"
             },
             "upload": {
@@ -414,7 +414,7 @@
         },
         "chooseAddProofQR": {
             "pageHeader": "How do you want to add?",
-            "pageIntro": "If your device has a camera, you can scan the QR code on your certificate. Or add your certificate as a file."
+            "pageIntro": "<p>If your device has a camera, you can scan the QR code on your certificate. Or add your certificate as a file.<\/p>"
         },
         "chooseBSN": {
             "pageHeader": "Do you have a Dutch citizen service number (BSN)?",
@@ -536,7 +536,7 @@
         },
         "letterCombination": {
             "emptyCode": "Please enter a letter combination first",
-            "exampleCode": "E.g. FLBRXQ",
+            "exampleCode": "FLBRXQ",
             "invalidCode": "This letter combination is invalid. A valid combination looks like this: FLBRXQ.",
             "invalidCodeLength": "",
             "link": "Don’t have a letter combination?",
@@ -658,10 +658,10 @@
             "validInFuture": "<p>Please note: your recovery certificate will become valid 11 days after the positive test result. You need to be free of symptoms as well.<\/p>"
         },
         "proofAddedOverviewList": {
-            "button": "",
-            "link": "",
-            "pageHeader": "",
-            "pageIntro": ""
+            "button": "Next",
+            "link": "I want to add another vaccination",
+            "pageHeader": "Vaccination successfully added",
+            "pageIntro": "<p>Continue to add these vaccinations to your certificate. Or add another vaccination.<\/p>"
         },
         "proofIntroduction": {
             "link": "Don’t have a certificate with QR code?",
@@ -707,7 +707,7 @@
         "recoveryOverview": {
             "createTestProofButton": "Make certificate",
             "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>If the details are correct you can make a certificate.<\/p>"
+            "pageIntro": "<p>Check your details below. If these are correct you can create a certificate.<\/p>"
         },
         "requestDigid": {
             "button": "Back to home",
@@ -722,7 +722,7 @@
         "short-stay": {
             "createTestProofButton": "Make certificate",
             "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>If the details are correct you can create a visitor pass<\/p>"
+            "pageIntro": "<p>If the details are correct you can create a visitor pass.<\/p>"
         },
         "shortStay": {
             "button": "Next",
@@ -769,7 +769,7 @@
         "vaccinationOverview": {
             "createTestProofButton": "Make certificate",
             "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>If the details are correct you can make a certificate.<\/p>"
+            "pageIntro": "<p>Check your details below. If these are correct you can create a certificate.<\/p>"
         },
         "vaccinationsIncomplete": {
             "pageHeader": "We can’t make a certificate",
