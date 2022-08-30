@@ -8,7 +8,7 @@
     </div>
     <CameraRender :status="state">
       <template>
-        <video ref="renderer" @playing="state = ''" />
+        <video ref="renderer" @playing="state = ''" :aria-label="$t(`qr.camera.states.${state}`)"/>
         <CameraStatus v-bind="{ error, state }" />
       </template>
     </CameraRender>
