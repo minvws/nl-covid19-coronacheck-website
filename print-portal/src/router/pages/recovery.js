@@ -12,7 +12,8 @@ const recoveryPages = [
     {
         path: '/ophalen-positive-test',
         name: 'CollectPositiveTest',
-        component: CollectPositiveTest
+        component: CollectPositiveTest,
+        props: routeProps
     },
     {
         path: '/recovery-ophalen',
