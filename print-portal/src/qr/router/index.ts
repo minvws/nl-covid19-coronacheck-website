@@ -17,11 +17,7 @@ import i18n from '@/i18n'
 import { authenticate } from '@/interfaces/auth-helper'
 import { FlowTypes } from '@/types/flow-types'
 import { AuthType } from '@/types/auth-types'
-
-const goToHome = () => {
-    // force a reload of the home page
-    window.location.href = `/${i18n.locale}/`;
-}
+import { goHome } from '@/tools/router';
 
 export enum RouterNames {
     CHOOSE_CARE_PROFIDER = 'chooseCareProvider',
@@ -109,7 +105,7 @@ const routes: Array<RouteConfig> = [
         props: {
             next: {
                 action: () => {
-                    goToHome()
+                    goHome()
                 }
             }
         },
@@ -121,7 +117,7 @@ const routes: Array<RouteConfig> = [
         props: {
             next: {
                 action: () => {
-                    goToHome()
+                    goHome()
                 }
             }
         },

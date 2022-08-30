@@ -1,11 +1,6 @@
-import store from '@/store';
-
-export const homeLink = () => {
-    const locale = store.state.languages.current ? store.state.languages.current.locale : 'nl';
-    // this address is outside of the vue application, therefor not testable in local host env
-    return window.location.origin + '/' + locale + '/';
-}
+import i18n from '@/i18n'
 
 export const goHome = () => {
-    window.location.href = homeLink()
+    // force a reload of the home page
+    window.location.href = `/${i18n.locale}/`;
 }
