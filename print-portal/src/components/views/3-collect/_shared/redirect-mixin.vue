@@ -145,7 +145,7 @@ export default {
         },
         notifyDigidFinished() {
             this.setSnackbarContent()
-            this.$store.commit('snackbar/show', { duration: 4000 })
+            this.$store.commit('snackbar/show')
         },
         setSnackbarContent() {
             const proofType = this.$t('components.digid.proofType.' + this.type)
@@ -156,6 +156,7 @@ export default {
             this.isLoading = true;
             signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders, this.scope, this.auth).then(results => {
                 this.isLoading = false;
+                this.$store.commit('snackbar/close', { duration: 4000 })
                 this.analyseResult(results);
             });
         },

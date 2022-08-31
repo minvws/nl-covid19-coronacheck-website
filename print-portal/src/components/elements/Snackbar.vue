@@ -18,14 +18,13 @@ export default {
         },
         close() {
             this.$store.commit('snackbar/close');
-            document.querySelector('h1,h2,h3')?.focus()
         },
         configureListeners(type) {
             window[`${type}EventListener`]('keydown', this.onKeyDown)
         }
     },
     beforeDestroy () {
-        this.close()
+        document.querySelector('h1,h2,h3')?.focus()
         this.configureListeners('remove')
     },
     mounted() {

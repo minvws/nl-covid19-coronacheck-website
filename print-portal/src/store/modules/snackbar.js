@@ -12,20 +12,23 @@ const mutations = {
     message(state, message) {
         state.message = message;
     },
-    show(state, { duration } = { duration: 0 }) {
+    show(state) {
         state.visible = true;
-
+    },
+    close(state, { duration } = { duration: 0 }) {
         // if duration, auto close the snackbar after duration, see #TAIGA-4791
         if (state.autoCloseTimeout) {
             clearTimeout(state.autoCloseTimeout)
             state.autoCloseTimeout = 0
         }
-        if (!duration) return;
-        state.autoCloseTimeout = setTimeout(() => {
-            state.visible = false;
-        }, duration)
-    },
-    close(state) {
+        if (duration) {
+            state.autoCloseTimeout = setTimeout(() => {
+                state.visible = false;
+                state.message = '';
+                state.autoCloseTimeout = 0;
+            }, duration)
+            return
+        }
         state.visible = false;
         state.message = '';
     }
