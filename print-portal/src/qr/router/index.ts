@@ -502,6 +502,7 @@ const routes: Array<RouteConfig> = [
         name: RouterNames.LETTER_COMBINATION,
         props: {
             link: {
+                replace: true,
                 to: {
                     name: RouterNames.NO_LETTER_COMBINATION
                 }

@@ -58,18 +58,33 @@ export default {
 <template>
 <div class="summary-list">
     <div class="summary-list-group" v-for="(item, key) in group" :key="key">
-        <b>{{ getTitle(key) }}</b>
-        <div v-for="({ dateString, type }, index) in item" :key="index">
-            {{ $t(`components.eventInfo.${type}Result`) }} {{ dateString}}
-        </div>
+        <h2 class="summary-list-group-title">{{ getTitle(key) }}</h2>
+        <ul class="summary-list-group-items">
+            <li v-for="({ dateString, type }, index) in item" :key="index">
+                {{ $t(`components.eventInfo.${type}Result`) }} {{ dateString}}
+            </li>
+        </ul>
     </div>
 </div>
 </template>
 
 <style lang="scss">
+ @import "@/styles/variables/typography.scss";
+
 .summary-list {
    &-group {
         padding-bottom: 2em;
+
+        &-title {
+            font-family: $font-main;
+            padding: 0;
+            margin: 0 0 .1em 0;
+            font-size: 1em;
+        }
+        &-items {
+            list-style-type: none;
+
+        }
    }
 }
 </style>

@@ -2,6 +2,7 @@
     <div>
         <router-link
             v-if="to && label"
+            tag="button"
             class="link"
             :replace="replace"
             :to="to" >
@@ -30,10 +31,20 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+@import "@/styles/variables/index";
+
 .link {
     display: inline-block;
     padding-top: 8px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-coronacheck-link;
     text-decoration: none;
+
+    &:hover {
+        @media (hover: hover) and (pointer: fine) {
+            text-decoration: underline;
+        }
+    }
 }
 </style>

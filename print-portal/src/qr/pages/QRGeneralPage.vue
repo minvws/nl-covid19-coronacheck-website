@@ -3,7 +3,7 @@
 <Page
     @back="$router.go(-1)">
     <div class="section">
-        <PageIntro v-bind="intro" />
+        <PageIntro v-bind="intro" :key="$route.name"/>
         <div class="section-block">
             <QRScannerNav v-if="routes" :routes="routes" />
             <CcButton

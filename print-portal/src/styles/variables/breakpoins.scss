@@ -1,19 +1,31 @@
+$tablet: 1024px;
+$tabletCustom: 942px;
+$mobileLandscapeX: 812px;
+$mobile: 767px;
+
+:export {
+    tablet: $tablet;
+    tabletCustom: $tabletCustom;
+    mobileLandscapeX: $mobileLandscapeX;
+    mobile: $mobile;
+}
+
 @mixin tablet {
     @media only screen
-    and (max-width: 1024px) {
+    and (max-width: $tablet) {
         @content;
     }
 }
 @mixin tablet-custom {
     @media only screen
-    and (max-width: 942px) {
+    and (max-width: $tabletCustom) {
         @content;
     }
 }
 
 @mixin mobile-landscape-X {
     @media only screen
-    and (max-width: 812px)
+    and (max-width: $mobileLandscapeX)
     and (orientation: landscape) {
         @content;
     }
@@ -21,7 +33,7 @@
 
 @mixin mobile {
     @media only screen
-    and (max-width: 767px) {
+    and (max-width: $mobile) {
         @content;
     }
 }

@@ -14,7 +14,7 @@
         @drop.prevent.stop="onDropFile"
     >
         <div class="inner">
-            <div class="icon-holder">
+            <div class="icon-holder" aria-hidden="true">
                 <div class="icon" :class="{ active: !isDurationPending }" />
                 <Spinner color="#007aff" :visible="isDurationPending" />
             </div>
