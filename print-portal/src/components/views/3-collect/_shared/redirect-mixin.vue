@@ -145,7 +145,7 @@ export default {
         },
         notifyDigidFinished() {
             this.setSnackbarContent()
-            this.$store.commit('snackbar/show')
+            this.$store.commit('snackbar/show', { duration: 4000 })
         },
         setSnackbarContent() {
             const proofType = this.$t('components.digid.proofType.' + this.type)
