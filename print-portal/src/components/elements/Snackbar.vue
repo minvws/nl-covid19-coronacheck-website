@@ -25,6 +25,7 @@ export default {
         }
     },
     beforeDestroy () {
+        this.close()
         this.configureListeners('remove')
     },
     mounted() {
