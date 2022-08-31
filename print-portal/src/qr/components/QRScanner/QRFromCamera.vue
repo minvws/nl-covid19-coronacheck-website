@@ -3,7 +3,7 @@
     <div class="coronacheck">
         <p class="only-mobile">CoronaCheck</p>
     </div>
-    <div class="only-desktop">
+    <div v-if="!isMobile">
         <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
     </div>
     <CameraRender :status="state">
@@ -24,10 +24,8 @@
         }"
         @select="setCamera"
     />
-    <div class="title-mobile">
-        <div class="only-mobile">
-            <PageIntro v-bind="intro" :focus="false" class="intro" :class="{ ready: isReady }"/>
-        </div>
+    <div class="title-mobile" v-if="isMobile">
+        <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
     </div>
     <CameraCaptures
       class="py"
@@ -50,6 +48,7 @@ import CameraCaptures from './CameraCaptures.vue'
 import QrScanner, { isValidQR, ERROR_PERMISSION_REJECTED } from '@/qr/utils/QRScanner'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
 import qrMixin, { QRMixin } from '@/qr/mixins/qr-mixin'
+import qrResizeMixin from '@/qr/mixins/qr-resize-mixing'
 import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
 
 import QRScannerDataType, {
@@ -60,7 +59,7 @@ import { RouterNames } from '@/qr/router';
 
 export default QRMixin.extend({
     name: 'QRScanner',
-    mixins: [qrMixin, pageIntroMixin],
+    mixins: [qrMixin, pageIntroMixin, qrResizeMixin],
     components: {
         PageIntro,
         CameraList,
