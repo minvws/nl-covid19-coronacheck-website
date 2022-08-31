@@ -63,6 +63,17 @@ export default QRMixin.extend({
     created () {
         this.value = this.letterCombination?.code || ''
     },
+    beforeDestroy () {
+        if (!this.letterCombination) return
+
+        const { qrData, validate, code } = this.letterCombination
+        if (validate && !code) {
+            // an QR is added, but no code is given, this can happen when a user navigates back
+            // remove the letterCombination and remove the QR from the list of QRS
+            if (qrData) this.onRemoveQR(qrData)
+            this.setLetterCombination({});
+        }
+    },
     watch: {
         value (code, before) {
             const exceeded = isValidLetterCombinationLengthError(before)
