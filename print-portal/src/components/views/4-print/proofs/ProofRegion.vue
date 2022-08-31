@@ -2,7 +2,7 @@
 import Paper from './Paper';
 import CcButton from '@/components/elements/CcButton';
 import { detect } from 'detect-browser';
-import { getDocument, parseProofData } from 'nl-covid19-coronacheck-web-pdf-tools';
+import { getDocument, parseProofData } from '@minvws/coronacheck-web-pdf-tools';
 import { QRSizeInCm } from '@/data/constants';
 import { RegionTypes } from '@/types/region-types'
 
@@ -82,6 +82,9 @@ export default {
                 button.disabled = !this.createdDocument
             })
             return buttons
+        },
+        internationalProofScanned () {
+            return this.$store.getters['qr/QR']?.length > 0;
         }
     },
     async mounted() {
@@ -103,7 +106,8 @@ export default {
                 proofs,
                 locale: this.currentLanguage.locale,
                 qrSizeInCm: QRSizeInCm,
-                createdAt: this.$store.state.signedAt
+                createdAt: this.$store.state.signedAt,
+                internationalProofScanned: this.internationalProofScanned
             }
             this.createdDocument = await getDocument(options);
         },
