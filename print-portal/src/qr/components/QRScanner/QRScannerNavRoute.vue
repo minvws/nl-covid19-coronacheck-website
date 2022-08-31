@@ -51,5 +51,6 @@ export default Vue.extend({
     display: block;
     width: 100%;
     text-align: left;
+    white-space: normal;
 }
 </style>
