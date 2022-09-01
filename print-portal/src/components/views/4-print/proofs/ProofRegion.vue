@@ -5,6 +5,7 @@ import { detect } from 'detect-browser';
 import { getDocument, parseProofData } from '@minvws/coronacheck-web-pdf-tools';
 import { QRSizeInCm } from '@/data/constants';
 import { RegionTypes } from '@/types/region-types'
+import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
 
 export default {
     name: 'ProofRegion',
@@ -84,7 +85,10 @@ export default {
             return buttons
         },
         internationalProofScanned () {
-            return this.$store.getters['qr/QR']?.length > 0;
+            return !!this.$store.getters['qr/QR'].find(({ result }) => {
+                const dcc = decodeQRtoDCC(result);
+                return dcc.issuer !== 'NL'
+            });
         }
     },
     async mounted() {
