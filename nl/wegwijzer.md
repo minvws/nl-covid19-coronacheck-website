@@ -89,6 +89,16 @@ Meer informatie over herstelbewijzen vind je op {{ site.data.links.herstelbewijs
 </div>
 {% endcapture %}
 
+{% capture copy_mijn_test_telt_mee %}
+<div markdown="1">
+Als je corona hebt gehad, kan in sommige gevallen jouw positieve test meetellen in je vaccinatiebewijs. Je hebt dan een prik minder nodig voor een volledig bewijs, omdat je positieve test kan gelden als een vaccinatie. Je positieve testuitslag kan alleen meetellen in je vaccinatiebewijs als je:
+
+- Positief getest bent vóór je eerste vaccinatie
+- Jonger dan 12 jaar oud was toen je positief testte
+</div>
+{% endcapture %}
+
+
 {% capture copy_geen_herstelbewijs_gegevens %}
 <div markdown="1">
 Dit kan verschillende oorzaken hebben:
@@ -256,6 +266,20 @@ Voor overige vragen kun je terecht bij <a href="https://www.nederlandwereldwijd.
 </div>
 {% endcapture %}
 
+
+{% capture copy_positieve_test_laten_meetellen %}
+<div markdown="1">
+Als je corona hebt gehad kun je in sommige gevallen jouw positieve test laten meetellen in je vaccinatiebewijs. Je hebt dan een prik minder nodig voor een volledig bewijs, omdat je positieve test kan gelden als een vaccinatie. Je positieve testuitslag kan alleen meetellen in je vaccinatiebewijs als je:
+
+- positief getest bent vóór je eerste vaccinatie
+- jonger dan 12 jaar oud was toen je positief testte
+
+Als je via CoronaCheck je vaccinatiebewijs maakt, kun je kiezen om ook je oudste positieve testuitslag op te halen. Als je testuitslag voldoet aan één van de hierboven genoemde punten, dan wordt deze automatisch meegeteld in je vaccinatiebewijs. 
+
+Wordt de juiste testuitslag niet gevonden? Neem dan contact op met de zorgverlener waar je gevaccineerd bent. Zij kunnen je helpen om een volledig vaccinatiebewijs te krijgen waarin je test wordt meegeteld.
+</div>
+{% endcapture %}
+
 {% capture copy_positive_before_vacc %}
 <div markdown="1">
 Ben je positief getest en kreeg je daarna je eerste prik? Dan ben je volledig gevaccineerd. Je krijgt een volledig vaccinatiebewijs als je opgehaalde positieve testuitslag van vóór je eerste prik is. 
@@ -306,6 +330,10 @@ Ben je vaker positief getest waarvan de eerste keer vóór je eerste prik, maar 
 {{ copy_positive_before_vacc }}
 </details>
 
+<details class="details" id="vacc_countpositivetest"><summary><h3>Positieve test laten meetellen in mijn vaccinatiebewijs</h3></summary>
+{{ copy_positieve_test_laten_meetellen }}
+</details>
+
 <details class="details" id="vacc_othercountry"><summary><h3>Ben je in het buitenland gevaccineerd?</h3></summary>
 {{ copy_in_buitenland_gevaccineerd }}
 </details>
@@ -318,6 +346,11 @@ Ben je vaker positief getest waarvan de eerste keer vóór je eerste prik, maar 
 
 <details class="details" id="recovery"><summary><h2>Ik wil een herstelbewijs maken</h2></summary>
 {{ copy_herstelbewijs }}
+
+<details class="details" id="recovery_countpositivetest">
+<summary><h3>Mijn positieve test telt mee in mijn vaccinatiebewijs</h3></summary>
+{{ copy_mijn_test_telt_mee }}
+</details>
 
 <details class="details" id="recovery_nodata">
 <summary><h3>Geen gegevens gevonden</h3></summary>
