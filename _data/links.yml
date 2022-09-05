@@ -125,3 +125,7 @@ maatregelen-25feb:
 rijksoverheid-tvt:
   nl: '<a href="https://rijksoverheid.nl/testenvoortoegang" rel="noopener noreferrer" target="_blank">Testen voor Toegang voor bezoekers van grote evenementen</a>'
   en: '<a href="https://www.government.nl/test-certificate-access" rel="noopener noreferrer" target="_blank">this goverment page about the new Testen voor Toegang measures</a>'
+
+eisen-en-geldigheid:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/vaccinatiebewijs/eisen-en-geldigheid" rel="noopener noreferrer" target="_blank">Eisen en geldigheid vaccinatiebewijs</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/requirements-and-validity" rel="noopener noreferrer" target="_blank">Requirements and validity proof of vaccination</a>'
