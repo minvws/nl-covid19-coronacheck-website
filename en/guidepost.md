@@ -86,9 +86,18 @@ The recovery certificate is valid from 11 days after the positive test result, b
 CoronaCheck retrieves positive test results from the GGD. Both test results from the GGD itself and test results from other testing locations can be retrieved. These results must have been passed on to the GGD.
 
 More information about recovery certificates can be found on {{ site.data.links.herstelbewijs[page.lang] }}.
-
 </div>
 {% endcapture %}
+
+{% capture copy_mijn_test_telt_mee %}
+<div markdown="1">
+If you’ve had coronavirus, in some cases your positive test can count for your vaccination certificate. You then need one less jab for a full certificate, because your positive test can count as a vaccination. Your positive test result can only count for your vaccination certificate if you:
+
+- were tested positive before your first vaccination
+- were less than 12 years old when you tested positive
+</div>
+{% endcapture %}
+
 
 {% capture copy_geen_herstelbewijs_gegevens %}
 <div markdown="1">
@@ -270,6 +279,18 @@ For other questions, you can <a href="https://www.netherlandsworldwide.nl/contac
 </div>
 {% endcapture %}
 
+{% capture copy_positieve_test_laten_meetellen %}
+<div markdown="1">
+If you’ve had coronavirus, in some cases you can have a positive test count for your vaccination certificate. You then need one less jab for a full certificate, because your positive test can count as a vaccination. Your positive test result can only count for your vaccination certificate if you:
+
+- were tested positive before your first vaccination
+- were less than 12 years old when you tested positive
+
+If you create your vaccination certificate using CoronaCheck, you may also choose to retrieve your oldest positive test result. If your test result meets any of the conditions above, it will automatically count for your vaccination certificate. 
+
+If the right test result cannot be found, please contact the healthcare provider that vaccinated you. They can help you get a full vaccination certificate that includes your test.
+</div>
+{% endcapture %}
 
 {% capture copy_positive_before_vacc %}
 <div markdown="1">
@@ -321,6 +342,10 @@ Were you tested positive more than once, with the first time happening before yo
 {{ copy_positive_before_vacc }}
 </details>
 
+<details class="details" id="vacc_countpositivetest"><summary><h3>Having a positive test count for my vaccination certificate</h3></summary>
+{{ copy_positieve_test_laten_meetellen }}
+</details>
+
 <details class="details" id="vacc_othercountry"><summary><h3>Have you been vaccinated abroad? </h3></summary>
 {{ copy_in_buitenland_gevaccineerd }}
 </details>
@@ -333,6 +358,11 @@ Were you tested positive more than once, with the first time happening before yo
 
 <details class="details" id="recovery"><summary><h2>I want to create a recovery certificate </h2></summary>
 {{ copy_herstelbewijs }}
+
+<details class="details" id="recovery_countpositivetest">
+<summary><h3>My positive test counts for my vaccination certificate</h3></summary>
+{{ copy_mijn_test_telt_mee }}
+</details>
 
 <details class="details" id="recovery_nodata">
 <summary><h3>No details found</h3></summary>

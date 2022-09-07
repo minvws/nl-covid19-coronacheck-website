@@ -23,7 +23,7 @@ Ga dan naar [www.coronacheck.nl/print](/print) en maak opnieuw een vaccinatiebew
 </div>
 </details>
 
-Voor iedere prik ontvang je een aparte internationale QR-code met de datum van die prik. Lees hierover meer op: [Waarom heb ik voor elke prik een aparte internationale QR-code? En welke moet ik gebruiken?](/nl/faq-in-app/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-qr-code/)
+Voor iedere prik ontvang je een aparte internationale QR-code met de datum van die prik. Lees hierover meer op: [Waarom heb ik voor elke prik een aparte internationale QR-code? En welke moet ik gebruiken?](/nl/faq-in-app/2-5-waarom-heb-ik-voor-elke-prik-een-internationale-qr-code/#3)
 
 <h2 class="h2-question">Heb je twee prikken gekregen en daarna een boosterprik gehad?</h2>
 In je internationale bewijs krijg je drie QR-codes met doses geregistreerd als ‘1/2’, ‘2/2’ en ‘3/3’.
