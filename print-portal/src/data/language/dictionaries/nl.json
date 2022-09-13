@@ -36,14 +36,6 @@
                     "target": "_blank"
                 },
                 "title": "Een DigiD aanvragen"
-            },
-            "requestOrActivateDigiD": {
-                "description": "Je wordt doorverwezen naar DigiD.nl",
-                "link": {
-                    "href": "https:\/\/www.digid.nl\/digid-aanvragen-activeren#hoe-vraag-ik-digid-aan",
-                    "target": "_blank"
-                },
-                "title": "Een DigiD aanvragen of activeren"
             }
         }
     },

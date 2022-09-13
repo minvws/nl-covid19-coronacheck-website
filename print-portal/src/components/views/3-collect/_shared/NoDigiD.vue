@@ -17,7 +17,7 @@ export default {
                 this.$router.push({ name: RouterNames.CHOOSE_NO_DIGID, params: this.$props });
                 return
             }
-            const { href, target } = this.$t('button.digid.requestOrActivateDigiD.link');
+            const { href, target } = this.$t('button.digid.requestDigiD.link');
             window.open(href, target);
         }
     }

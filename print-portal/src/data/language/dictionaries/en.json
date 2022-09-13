@@ -37,14 +37,6 @@
                 },
                 "title": "Request a DigiD"
             },
-            "requestOrActivateDigiD": {
-                "description": "You’ll be redirected to DigiD.nl",
-                "link": {
-                    "href": "https:\/\/www.digid.nl\/en\/apply-or-activate-digid",
-                    "target": "_blank"
-                },
-                "title": "Request or activate a DigiD"
-            }
         }
     },
     "certificate": {
