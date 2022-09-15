@@ -15,10 +15,12 @@ class ProofEvent {
         positivetest = null,
         recovery = null,
         vaccinationassessment = null,
-        protocolVersion = ''
+        protocolVersion = '',
+        issuer = ''
     }) {
         this.type = type || '';
         this.unique = unique || '';
+        this.issuer = issuer || '';
         this.isSpecimen = isSpecimen;
         this.vaccination = type === FilterTypes.VACCINATION ? new Vaccination(vaccination) : null
         this.negativetest = type === FilterTypes.NEGATIVE_TEST ? ((protocolVersion && protocolVersion === '2.0') ? new NegativeTestV2(negativetest) : new NegativeTestV3(negativetest)) : null

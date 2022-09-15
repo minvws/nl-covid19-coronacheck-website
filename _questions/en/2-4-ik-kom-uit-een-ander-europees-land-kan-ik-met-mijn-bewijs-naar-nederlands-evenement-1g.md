@@ -1,8 +1,7 @@
 ---
-set: 2
-index: 7
+set: 3
+index: -0
 title: I’m from another European country. Can I use my certificate to visit an event or location in the Netherlands?
-webonly: true
 whichversion:
   - 1g
 ---

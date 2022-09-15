@@ -33,6 +33,12 @@ export default {
             }
         }
     },
+    methods: {
+        onBack () {
+            if (this.withPositiveTestFlow) this.$router.go(-1)
+            else this.back()
+        }
+    },
     computed: {
         uniqueSignedEvents () {
             // remove duplicate events
@@ -45,7 +51,7 @@ export default {
 <template>
     <Page
         class="VaccinationOverview"
-        @back="back">
+        @back="onBack">
         <div class="section">
             <PageIntro
                 :head="$t('views.recoveryOverview.pageHeader')"

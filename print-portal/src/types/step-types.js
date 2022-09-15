@@ -1,5 +1,6 @@
 export const StepTypes = {
     TVS_DIGID: '10',
+    PAP: '15',
     EVENT_PROVIDERS: '20',
     ACCESS_TOKENS: '30',
     UNOMI: '40',

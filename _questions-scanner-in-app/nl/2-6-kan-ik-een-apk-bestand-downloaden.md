@@ -2,7 +2,7 @@
 set: 2
 index: 6
 title: Kan ik een APK-bestand downloaden om de CoronaCheck Scanner op een Mobile Device Management Systeem te zetten?
-webonly: true
+
 whichversion:
   - 1g
   - 3g

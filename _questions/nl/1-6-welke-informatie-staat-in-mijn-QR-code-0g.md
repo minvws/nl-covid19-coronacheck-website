@@ -1,6 +1,6 @@
 ---
-set: 1
-index: 6
+set: 4
+index: 5
 title: Welke informatie staat in mijn QR-code?  
 whichversion:
   - 0g

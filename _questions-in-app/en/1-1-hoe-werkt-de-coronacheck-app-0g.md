@@ -43,4 +43,4 @@ Travelling abroad? Always check if you have the right certificate before departu
 </div>
 </details>
 
-Having trouble creating your certificate? Please call the CoronaCheck helpdesk on {{ site.data.links.phone-helpdesk[page.lang] }} (free). Or if you are calling from abroad: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}. Available Monday till Sunday 08.00 a.m. - 08.00 p.m.
+Having trouble creating your certificate? Please call the CoronaCheck helpdesk on {{ site.data.links.phone-helpdesk[page.lang] }}. Or if you are calling from abroad: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}. Available Monday till Sunday 08.00 a.m. - 08.00 p.m.

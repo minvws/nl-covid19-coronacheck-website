@@ -234,8 +234,64 @@ CCScanner_downloads_plot_raw = [
         downloads: 3137206
     },
     {
-        date: "2022-05-17",
-        downloads: 3139919
+        date: "2022-05-20",
+        downloads: 3142217
+    },
+    {
+        date: "2022-05-27",
+        downloads: 3147660
+    },
+    {
+        date: "2022-06-03",
+        downloads: 3153293
+    },
+    {
+        date: "2022-06-10",
+        downloads: 3157918
+    },
+    {
+        date: "2022-06-17",
+        downloads: 3162599
+    },
+    {
+        date: "2022-06-24",
+        downloads: 3167307
+    },
+    {
+        date: "2022-07-01",
+        downloads: 3172500
+    },
+    {
+        date: "2022-07-08",
+        downloads: 3177628
+    },
+    {
+        date: "2022-07-15",
+        downloads: 3182617
+    },
+    {
+        date: "2022-07-22",
+        downloads: 3187601
+    },
+    {
+        date: "2022-07-29",
+        downloads: 3192794
+    },
+    {
+        date: "2022-08-05",
+        downloads: 3197629
+    },
+    {
+        date: "2022-08-12",
+        downloads: 3201363
+    },
+    {
+        date: "2022-08-19",
+        downloads: 3205327
+    },
+    {
+        date: "2022-08-26",
+        downloads: 3209505
     }
 ]
 

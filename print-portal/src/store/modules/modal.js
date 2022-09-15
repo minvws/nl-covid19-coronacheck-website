@@ -8,7 +8,8 @@ const state = {
     messageBody: '...',
     closeButton: true,
     closeText: '',
-    confirmAlert: false
+    confirmAlert: false,
+    actions: []
 };
 
 const getters = {};
@@ -28,6 +29,7 @@ const mutations = {
         state.closeAfter = options.closeAfter || false;
         state.closeText = options.closeText || '';
         state.confirmAlert = options.confirmAlert || false
+        state.actions = options.actions || []
     },
     close(state) {
         state.visible = false;

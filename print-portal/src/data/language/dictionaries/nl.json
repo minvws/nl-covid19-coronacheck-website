@@ -33,7 +33,7 @@
                 "description": "Je wordt doorverwezen naar DigiD.nl",
                 "link": {
                     "href": "https:\/\/digid.nl\/aanvragen",
-                    "target": "_self"
+                    "target": "_blank"
                 },
                 "title": "Een DigiD aanvragen"
             }

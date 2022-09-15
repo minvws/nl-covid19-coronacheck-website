@@ -1,11 +1,10 @@
 ---
-set: 4
-index: 1
+set: 2
+index: 6
 title: I would rather print a QR code. How does the paper certificate work?
 redirect_from: 
   - /en/faq/34-hoe-werkt-het-papieren-testbewijs
   - /en/faq/5-2-hoe-werkt-het-papieren-testbewijs
-webonly: true
 featuredHome: true
 featuredHomeIndex: 4
 whichversion:

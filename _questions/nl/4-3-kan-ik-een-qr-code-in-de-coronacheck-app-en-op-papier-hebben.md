@@ -1,11 +1,12 @@
 ---
-set: 4
-index: 3
+set: 
+  - 1
+  - 2
+index: 7
 title: Kan ik een QR-code in de CoronaCheck-app en op papier hebben?
 redirect_from: 
   - /nl/faq/33-kan-ik-een-testbewijs-in-de-coronacheck-app-en-op-papier-hebben
   - /nl/faq/5-4-kan-ik-een-internationale-qr-code-in-de-coronacheck-app-en-op-papier-hebben
-webonly: true
 whichversion:
   - 0g
   - 1g

@@ -1,6 +1,6 @@
 ---
-set: 3
-index: 9
+set: 4
+index: 3
 title: What happens to QR codes of an expired vaccination, recovery or test certificate?
 whichversion:
   - 0g

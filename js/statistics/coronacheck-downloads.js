@@ -242,8 +242,64 @@ CC_downloads_plot_raw = [
         downloads: 16191439
     },
     {
-        date: "2022-05-17",
-        downloads: 16213839
+        date: "2022-05-20",
+        downloads: 16232766
+    },
+    {
+        date: "2022-05-27",
+        downloads: 16278863
+    },
+    {
+        date: "2022-06-03",
+        downloads: 16327015
+    },
+    {
+        date: "2022-06-10",
+        downloads: 16367137
+    },
+    {
+        date: "2022-06-17",
+        downloads: 16405379
+    },
+    {
+        date: "2022-06-24",
+        downloads: 16445398
+    },
+    {
+        date: "2022-07-01",
+        downloads: 16488698
+    },
+    {
+        date: "2022-07-08",
+        downloads: 16531931
+    },
+    {
+        date: "2022-07-15",
+        downloads: 16575618
+    },
+    {
+        date: "2022-07-22",
+        downloads: 16618135
+    },
+    {
+        date: "2022-07-29",
+        downloads: 16670190
+    },
+    {
+        date: "2022-08-05",
+        downloads: 16707828
+    },
+    {
+        date: "2022-08-12",
+        downloads: 16741298
+    },
+    {
+        date: "2022-08-19",
+        downloads: 16774927
+    },
+    {
+        date: "2022-08-26",
+        downloads: 16810732
     }
 ]
 
