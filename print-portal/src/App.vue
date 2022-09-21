@@ -68,8 +68,8 @@ export default {
             }).then((response) => {
                 if (response.data && response.data.payload) {
                     const config = cmsDecode(response.data.payload);
-                    this.$store.commit('testProviders/init', config.corona_test_providers);
-                    this.$store.commit('eventProviders/init', config.event_providers);
+                    this.$store.commit('testProviders/init', config.tokenProviders);
+                    this.$store.commit('eventProviders/init', config.eventProviders);
                 } else {
                     this.$store.commit('modal/set', {
                         messageHead: this.$t('message.error.general.head'),

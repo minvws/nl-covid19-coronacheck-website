@@ -49,7 +49,7 @@ export default {
 
         </div>
         <a
-            href="https://coronacheck.nl/nl/"
+            :href="`/${$store.state.languages.current.locale}/`"
             class="CoronaCheck-logo">
             CoronaCheck
         </a>

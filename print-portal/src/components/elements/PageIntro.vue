@@ -9,11 +9,17 @@ export default {
         intro: {
             type: String,
             required: false
+        },
+        focus: {
+            type: Boolean,
+            required: false,
+            default: true
         }
     },
     mounted() {
         this.$nextTick(() => {
             if (this.$store.state.visitedHomePage) {
+                if (!this.focus) return
                 if (!this.$store.state.snackbar.visible) {
                     // only set focus when snackbar is not visible
                     this.$refs.initialTabStart?.focus();
@@ -54,6 +60,10 @@ export default {
         padding-bottom: 24px;
         a {
             text-decoration: underline;
+        }
+        // no underline on phone numbers
+        a[href^="tel:"] {
+            text-decoration: none;
         }
     }
 

@@ -12,6 +12,12 @@ import { events as StorageEvent } from '@/store/modules/storage'
 
 export default {
     name: 'redirect-mixin',
+    props: {
+        auth: {
+            type: String,
+            required: true
+        }
+    },
     computed: {
         type() {
             return this.filter.split(',')[0];
@@ -48,17 +54,16 @@ export default {
             // if no user is fetched yet, fetch user
             let user = this.$store.getters[AuthEvent.USER]
             if (user) return user
-            user = await this.authVaccinations.completeAuthentication()
+            user = await this.getAuthProvider(this.flow, this.auth).completeAuthentication()
             this.$store.dispatch(AuthEvent.USER, user)
             return user
         },
         async completeAuthentication() {
             this.isLoading = true;
-
             try {
                 const user = await this.getOrFetchUser()
                 try {
-                    const response = await signedEventsInterface.getTokens(user.id_token)
+                    const response = await signedEventsInterface.getTokensByAuthType(user)
                     this.notifyDigidFinished();
                     this.collectEvents(response.data.tokens);
                 } catch (error) {
@@ -96,8 +101,12 @@ export default {
                 // but oidc-client removes this info from the custom error it returns
                 // as well as the error.response.status
 
-                const isCanceled = (error) => {
+                const isDigiDCanceled = (error) => {
                     return error?.message === 'saml_authn_failed';
+                }
+
+                const isCanceled = (error) => {
+                    return isDigiDCanceled(error) || error?.error === 'cancelled'
                 }
 
                 const tooBusy = (error) => {
@@ -113,10 +122,11 @@ export default {
 
                 if (isCanceled(error)) {
                     this.gotoPreviousPage();
-                    const type = this.$t('message.info.digidCanceled.' + this.type)
+                    const id = isDigiDCanceled(error) ? 'message.info.digidCanceled' : 'message.info.loginCanceled'
+                    const type = this.$t(`${id}.${this.type}`)
                     this.$store.commit('modal/set', {
-                        messageHead: this.$t('message.info.digidCanceled.head'),
-                        messageBody: this.$t('message.info.digidCanceled.body', { type }),
+                        messageHead: this.$t(`${id}.head`),
+                        messageBody: this.$t(`${id}.body`, { type }),
                         closeButton: true
                     })
                 } else if (tooBusy(error)) {
@@ -144,8 +154,9 @@ export default {
         collectEvents(tokenSets) {
             this.$store.dispatch('signedEvents/clear', { filter: this.filter, scope: this.scope });
             this.isLoading = true;
-            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders, this.scope).then(results => {
+            signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders, this.scope, this.auth).then(results => {
                 this.isLoading = false;
+                this.$store.commit('snackbar/close', { duration: 4000 })
                 this.analyseResult(results);
             });
         },
@@ -299,7 +310,8 @@ export default {
         handleWithPositiveTest () {
             // no recovery is fetched, or expired, remove signed events and show a warning
             this.$store.dispatch('signedEvents/clear', { filter: this.filter, scope: this.scope })
-            this.$router.push({ name: this.pages.overview, params: { message: this.$t('warning.noPositivetest') } });
+            const { auth } = this
+            this.$router.replace({ name: this.pages.overview, params: { auth, message: this.$t('warning.noPositivetest') } });
         },
         isTestedPositiveBeforeFirstVaccination (proofEvents) {
             // all positive tests dates
@@ -349,7 +361,8 @@ export default {
                         this.handleWithPositiveTest()
                     } else this.$router.push({ name: 'RecoveryInvalid' });
                 } else {
-                    this.$router.push({ name: this.pages.overview });
+                    const { auth } = this
+                    this.$router.replace({ name: this.pages.overview, params: { auth } });
                 }
             } else {
                 this.$router.push({ name: this.pages.noResult });

@@ -1,17 +1,24 @@
 <script>
 import CcModestButton from '@/components/elements/CcModestButton';
+import { RouterNames } from '@/qr/router';
 
 export default {
     name: 'NoDigiD',
     components: { CcModestButton },
-    computed: {},
+    props: {
+        flow: {
+            type: String,
+            required: true
+        }
+    },
     methods: {
         dontHaveDigid() {
-            const urls = {
-                nl: 'https://www.digid.nl/digid-aanvragen-activeren#hoe-vraag-ik-digid-aan',
-                en: 'https://www.digid.nl/en/apply-or-activate-digid'
+            if (this.$store.getters.isPapEnabled) {
+                this.$router.push({ name: RouterNames.CHOOSE_NO_DIGID, params: this.$props });
+                return
             }
-            window.open(urls[this.currentLanguage.locale])
+            const { href, target } = this.$t('button.digid.requestDigiD.link');
+            window.open(href, target);
         }
     }
 }

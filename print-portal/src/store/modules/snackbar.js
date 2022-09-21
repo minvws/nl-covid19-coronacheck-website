@@ -1,6 +1,7 @@
 const state = {
     visible: false,
-    message: ''
+    message: '',
+    autoCloseTimeout: 0
 };
 
 const getters = {};
@@ -14,7 +15,20 @@ const mutations = {
     show(state) {
         state.visible = true;
     },
-    close(state) {
+    close(state, { duration } = { duration: 0 }) {
+        // if duration, auto close the snackbar after duration, see #TAIGA-4791
+        if (state.autoCloseTimeout) {
+            clearTimeout(state.autoCloseTimeout)
+            state.autoCloseTimeout = 0
+        }
+        if (duration) {
+            state.autoCloseTimeout = setTimeout(() => {
+                state.visible = false;
+                state.message = '';
+                state.autoCloseTimeout = 0;
+            }, duration)
+            return
+        }
         state.visible = false;
         state.message = '';
     }

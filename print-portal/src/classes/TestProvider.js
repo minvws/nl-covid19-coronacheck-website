@@ -1,16 +1,11 @@
 class TestProvider {
-    constructor({
-        name = '',
-        provider_identifier = '',
-        public_key = '',
-        result_url = '',
-        ssl_cert = ''
-    }) {
+    constructor ({ name, identifier, tls, url, usage, cms }) {
         this.name = name;
-        this.provider_identifier = provider_identifier;
-        this.public_key = public_key;
-        this.result_url = result_url;
-        this.ssl_cert = ssl_cert;
+        this.provider_identifier = identifier
+        this.tls = tls;
+        this.result_url = url;
+        this.usage = usage;
+        this.cms = cms
     }
 }
 

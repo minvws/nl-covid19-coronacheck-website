@@ -23,7 +23,7 @@ Go to [www.coronacheck.nl/en/print](/print) and make create a new vaccination ce
 </div>
 </details>
 
-For every vaccination, you’ll receive a separate international QR code with the date of the injection. You can read more about this on: [Why do I have a separate international QR code for every vaccination I’ve had? And which one should I use?](/en/faq-in-app/3-5-waarom-heb-ik-voor-elke-prik-een-internationale-qr-code/)
+For every vaccination, you’ll receive a separate international QR code with the date of the injection. You can read more about this on: [Why do I have a separate international QR code for every vaccination I’ve had? And which one should I use?](/en/faq-in-app/2-5-waarom-heb-ik-voor-elke-prik-een-internationale-qr-code/#3)
 
 <h2 class="h2-question">Have you received two vaccinations and then a booster?</h2>
 
