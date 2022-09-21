@@ -1,8 +1,7 @@
 ---
-set: 3
-index: 5
+set: 2
+index: -3
 title: Hoe lang is mijn coronabewijs geldig? Kan ik 'm meerdere keren gebruiken?
-webonly: true
 whichversion:
   - 1g
   - 3g

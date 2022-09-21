@@ -1,5 +1,6 @@
 window.config = {
-    api: 'https://holder-api.acc.coronacheck.nl/v7',
-    tvs: 'https://tvs.acc.coronacheck.nl',
+    api: 'https://holder-api.test.coronacheck.nl/v8',
+    tvs: 'https://max.test.coronacheck.nl',
+    pap: 'https://pap.bananenhalen.nl',
     tooBusy: false
 }

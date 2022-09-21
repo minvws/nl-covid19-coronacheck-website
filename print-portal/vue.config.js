@@ -13,7 +13,8 @@ module.exports = {
         'jspdf',
         'vue-i18n',
         'oidc-client',
-        'date-fns'
+        'date-fns',
+        'pdfjs-dist'
     ]
     // , devServer: {
     //     open: process.platform === 'darwin',

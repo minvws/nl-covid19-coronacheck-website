@@ -27,7 +27,7 @@ export default {
 <template>
     <Page
         class="VaccinationOverview"
-        @back="back">
+        @back="$router.go(-1)">
         <div class="section">
             <PageIntro
                 :head="$t('views.vaccinationOverview.pageHeader')"

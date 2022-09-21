@@ -1,8 +1,9 @@
 ---
-set: 3
-index: 5
+set: 
+  - 2
+  - 3
+index: 1
 title: I’ve been vaccinated abroad. Can I make a vaccination certificate with CoronaCheck?
-webonly: true
 whichversion:
   - 0g
   - 1g

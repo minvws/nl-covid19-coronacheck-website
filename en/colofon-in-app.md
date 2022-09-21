@@ -12,9 +12,9 @@ The app’s source code and its backend systems are all publicly available. You 
 
 ## Contributions
 
-The development of CoronaCheck, the issuance of coronavirus passes for travel, and the connection to the European gateway have been made possible thanks to a financial contribution from the European Commission.
+The development of CoronaCheck, the issuance of coronavirus passes for travel, and the connection to the European gateway have been made possible thanks to a financial contribution from the European Union.
 
-<img src="{{ site.baseurl }}/img/Logo_EU_Positive_en.svg" alt="Logo European Commission" width="175" height="48" />
+<img src="{{ site.baseurl }}/img/Logo_EU_Positive_en.svg" alt="Co-funded by the European Union" width="300" height="63" />
 
 Aside from the authors of the various open source, third-party libraries, we have received contributions from many people.
 

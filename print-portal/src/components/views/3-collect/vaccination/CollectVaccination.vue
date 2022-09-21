@@ -19,6 +19,12 @@ export default {
             tooBusy: window.config.tooBusy
         }
     },
+    props: {
+        auth: {
+            type: String,
+            required: true
+        }
+    },
     mounted () {
         // clear consent when mounted
         this.withPositiveTestConsent = false
@@ -34,18 +40,19 @@ export default {
             set (value) {
                 this.$store.dispatch(StorageEvent.WITH_POSITIVE_TEST, value)
             }
-        }
+        },
+        flow: () => FlowTypes.VACCINATION
     },
     methods: {
         getToken() {
-            this.authVaccinations.startAuthentication().then(() => {
+            this.getAuthProvider(this.flow, this.auth).startAuthentication().then(() => {
                 //
             }).catch(error => {
                 const callback = () => {
                     this.getToken();
                 }
                 handleRejection(error, {
-                    flow: FlowTypes.VACCINATION,
+                    flow: this.flow,
                     step: StepTypes.TVS_DIGID,
                     provider_identifier: ProviderTypes.NON_PROVIDER
                 }, callback);
@@ -81,7 +88,7 @@ export default {
                          id="digid-vaccination"
                          v-if="!tooBusy"
                          @select="getToken()"/>
-                     <NoDigiD/>
+                     <NoDigiD :flow="flow"/>
                 </div>
             </div>
         </div>

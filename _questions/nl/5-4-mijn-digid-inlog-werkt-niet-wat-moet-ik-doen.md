@@ -1,6 +1,6 @@
 ---
 set: 5
-index: 4
+index: -1
 title: Het lukt niet om in te loggen met DigiD. Wat moet ik doen?
 redirect_from:
     - /nl/faq/4-4-problemen-met-digid

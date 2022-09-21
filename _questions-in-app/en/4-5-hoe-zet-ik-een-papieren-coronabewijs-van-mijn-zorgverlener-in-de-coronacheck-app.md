@@ -1,6 +1,6 @@
 ---
-set: 4
-index: 5
+set: 1
+index: 8
 title: I’ve received a certificate with QR code from my healthcare provider. How do I get this in the CoronaCheck app?
 whichversion:
   - 0g

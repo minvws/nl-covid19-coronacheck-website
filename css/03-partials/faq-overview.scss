@@ -66,6 +66,10 @@ a.faq-layout__item {
         z-index: 2;
     }
 
+    br {
+        display: none;
+    }
+
     &:hover {
         background-color: $color-RO_darkblue;
         border-color: $color-RO_darkblue;

@@ -1,6 +1,6 @@
 ---
-set: 3
-index: 9
+set: 4
+index: 3
 title: Wat gebeurt er met QR-codes van een verlopen vaccinatie of test?
 whichversion:
   - 0g

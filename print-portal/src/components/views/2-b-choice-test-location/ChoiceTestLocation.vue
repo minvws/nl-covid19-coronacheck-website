@@ -3,10 +3,10 @@ import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
 import PageChoice from '@/components/elements/PageChoice';
 import CcModestButton from '@/components/elements/CcModestButton';
-import { handleRejection } from '@/tools/error-handler';
-import { StepTypes } from '@/types/step-types'
-import { FlowTypes } from '@/types/flow-types'
-import { ProviderTypes } from '@/types/provider-types'
+import { RouterNames } from '@/qr/router';
+import { authenticate } from '@/interfaces/auth-helper'
+import { FlowTypes } from '@/types/flow-types';
+import { AuthType } from '@/types/auth-types';
 
 export default {
     name: 'ChoiceTestLocation',
@@ -16,26 +16,30 @@ export default {
             tooBusy: window.config.tooBusy
         }
     },
-    computed: {},
+    computed: {
+        buttonProps () {
+            // do not show body and icon when PAP is enabled
+            if (this.$store.isPapEnabled) {
+                return {
+                    body: ''
+                }
+            }
+            return {
+                body: this.$t('views.choiceTestLocation.choiceGGDBody'),
+                'body-icon': 'assets/img/digid/logo_digid_rgb.svg'
+            }
+        }
+    },
     methods: {
         back() {
             this.$router.push({ name: 'ChoiceProof' })
         },
         loginWithDigid() {
-            this.authNegativeTests.startAuthentication().then(() => {
-                //
-            }).catch(error => {
-                const callback = () => {
-                    this.loginWithDigid();
-                }
-                handleRejection(error, {
-                    flow: FlowTypes.NEGATIVE_TEST,
-                    step: StepTypes.TVS_DIGID,
-                    provider_identifier: ProviderTypes.NON_PROVIDER
-                },
-                callback
-                );
-            })
+            if (this.$store.isPapEnabled) {
+                this.$router.push({ name: RouterNames.CHOOSE_TEST_PROFIDER })
+            } else {
+                authenticate(FlowTypes.NEGATIVE_TEST, AuthType.MAX)
+            }
         },
         gotoRetrieveTest() {
             this.$router.push({ name: 'ProvideCode' });
@@ -63,8 +67,7 @@ export default {
                         id="digid-negative-test"
                         @select="loginWithDigid"
                         :header="$t('views.choiceTestLocation.choiceGGDHead')"
-                        :body="$t('views.choiceTestLocation.choiceGGDBody')"
-                        :body-icon="'assets/img/digid/logo_digid_rgb.svg'"
+                        v-bind="buttonProps"
                         :inactive="tooBusy"/>
                     <div class="too-busy-message" v-if="tooBusy">
                         {{$t('tooBusy')}}
@@ -85,7 +88,3 @@ export default {
         </div>
     </Page>
 </template>
-
-<style lang="scss">
-// .ChoiceTestLocation {}
-</style>

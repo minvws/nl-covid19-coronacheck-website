@@ -1,7 +1,6 @@
 import languages from '@/data/languages'
 import dictionary from '@/data/language/dictionary'
 
-
 describe('Language', () => {
     it('Each language should have a dictionary', () => {
         for (const language of languages) {
@@ -17,7 +16,7 @@ describe('Language', () => {
         return targetPoint
     }
 
-    const checkForTargetEntry= (targetPoint, key, levels) => {
+    const checkForTargetEntry = (targetPoint, key, levels) => {
         if (!targetPoint[key]) {
             // logging empty strings as well
             // This is allowed, but interesting to double check
@@ -32,7 +31,6 @@ describe('Language', () => {
             if (typeof entry === 'string') {
                 const targetPoint = getTargetPoint(target, levels)
                 checkForTargetEntry(targetPoint, key, levels);
-
             } else if (Object.prototype.toString.call(entry) === '[object Array]') {
                 const targetPoint = getTargetPoint(target, levels)
                 checkForTargetEntry(targetPoint, key, levels);

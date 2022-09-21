@@ -1,6 +1,6 @@
 <script>
 import PrintDetail from './PrintDetail.vue'
-import PrintFaqPositiveTest from './PrintFaqPositiveTest.vue'
+import PrintFaqLink from './PrintFaqLink.vue'
 import { FilterTypes } from '@/types/filter-types'
 import { RegionTypes } from '@/types/region-types'
 
@@ -8,7 +8,7 @@ export default {
     name: 'PrintFaq',
     components: {
         PrintDetail,
-        PrintFaqPositiveTest
+        PrintFaqLink
     },
     props: {
         type: {
@@ -122,7 +122,7 @@ export default {
                 :key="name"
                 v-bind="{content, summary}"
                 class="details details--modest">
-                <PrintFaqPositiveTest
+                <PrintFaqLink
                     v-if="name === 'whyNoDutchCertificate'"
                     v-bind="action"
                 />

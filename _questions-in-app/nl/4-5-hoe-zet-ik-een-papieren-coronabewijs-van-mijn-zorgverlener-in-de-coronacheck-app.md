@@ -1,6 +1,6 @@
 ---
-set: 4
-index: 5
+set: 1
+index: 8
 title: Ik heb een bewijs met QR-code van mijn zorgverlener gekregen. Hoe zet ik deze in de CoronaCheck-app?
 whichversion:
   - 0g

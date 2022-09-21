@@ -5,12 +5,14 @@ import Loading from '@/components/elements/Loading';
 import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
 import { FilterTypes, FilterScopes } from '@/types/filter-types'
 import { ProviderTypes } from '@/types/provider-types'
+import { RouterNames } from '@/qr/router'
 
 export default {
     name: 'CollectPositiveTest',
     components: { Page, PageIntro, Loading },
     mixins: [redirectMixin],
     data() {
+        const overview = this.$store.getters.isListBeforeOverview ? RouterNames.RECOVERY_OVERVIEW_LIST : RouterNames.RECOVERY_OVERVIEW
         return {
             isLoading: false,
             filter: [FilterTypes.POSITIVE_TEST, FilterTypes.RECOVERY].join(','),
@@ -19,7 +21,7 @@ export default {
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectRecovery',
-                overview: 'RecoveryOverview',
+                overview,
                 noResult: 'RecoveryNone'
             }
         }

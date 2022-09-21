@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import qr from '@/qr/store/qr'
 import _base from './modules/_base-module';
 import modal from './modules/modal';
 import snackbar from './modules/snackbar';
@@ -27,7 +28,9 @@ const state = {
     // we keep this registration for the focus of screenreaders.
     visitedHomePage: false,
     slotModalActive: false,
-    vaccinationWithPositiveTestEnabled: true // when true, show a consent and hide all faq's
+    vaccinationWithPositiveTestEnabled: true, // when true, show a consent and hide all faq's,
+    showListBeforeOverview: true, // will show a list of proofs before an overview page
+    flow: '' // vaccination | recovery
 };
 
 const getters = {
@@ -43,6 +46,9 @@ const getters = {
         }
         return false
     },
+    isPapEnabled: ({ holderConfig: { papEnabled } }) => {
+        return papEnabled;
+    },
     vaccinationWithPositiveTestEnabled: ({ vaccinationWithPositiveTestEnabled }) => {
         return vaccinationWithPositiveTestEnabled
     },
@@ -53,6 +59,9 @@ const getters = {
     is1G: (state, { isPolicy }) => {
         // 1G when disclosurePolicies = ['1G']
         return isPolicy('1G');
+    },
+    isListBeforeOverview: ({ showListBeforeOverview }) => {
+        return showListBeforeOverview
     },
     isUserConsentDisabledOnHome: ({ isUserConsentDisabledOnHome }) => {
         return isUserConsentDisabledOnHome
@@ -90,7 +99,8 @@ const getters = {
             return state.holderConfig.recoveryEventValidityDays
         }
     },
-    user: ({ user }) => user
+    user: ({ user }) => user,
+    flow: ({ flow }) => flow
 };
 
 const mutations = {
@@ -133,18 +143,23 @@ const mutations = {
         state.testCode = '';
         state.verificationNeeded = false;
         state.verificationCode = '';
-        state.signedEvents = []; // @FIXME: are these being used?
+        state.signedEvents = { all: [], addedProofs: [], coupling: [] };
         state.qrs.proof = null;
         state.signedAt = null;
+        state.flow = null
     },
     sessionEnded(state) {
         state.testCode = '';
         state.verificationNeeded = false;
         state.verificationCode = '';
-        state.signedEvents = []; // @FIXME: are these being used?
+        state.signedEvents = { all: [], addedProofs: [], coupling: [] };
         state.qrs.proof = null;
         state.userConsent = false;
         state.signedAt = null;
+        state.flow = null
+    },
+    setFlow(state, flow) {
+        state.flow = flow;
     }
 }
 
@@ -161,6 +176,7 @@ export default new Vuex.Store({
         signedEvents,
         qrs,
         auth,
-        storage
+        storage,
+        qr
     }
 })

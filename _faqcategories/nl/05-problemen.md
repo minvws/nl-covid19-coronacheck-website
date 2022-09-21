@@ -6,6 +6,6 @@ questionCategoryPage: true
 showBreadCrumbs: true
 showContact: true
 permalink: /nl/faq/05-problemen
-title: Problemen - het lukt niet
+title: Er gaat iets mis
 graphic: problems
 ---

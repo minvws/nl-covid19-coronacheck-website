@@ -5,8 +5,8 @@ phone-ggd:
   en: '<a href="tel:08005090">0800-5090</a>'
 
 phone-helpdesk:
-  nl: '<a href="tel:08001421">0800-1421</a>'
-  en: '<a href="tel:08001421">0800-1421</a>'
+  nl: '<a href="tel:08001421">0800-1421</a> (gratis)'
+  en: '<a href="tel:08001421">0800-1421</a> (free)'
     
 phone-helpdesk-abroad:
   nl: '<a href="tel:+31707503720">+31 70 750 37 20</a>'
@@ -31,7 +31,7 @@ phone-kvk-organisatoren:
 # Websites and their English equivalent
 
 wijsopreis:
-  nl: '<a href="https://www.wijsopreis.nl/" rel="noopener noreferrer" target="_blank">Wijs op Reis</a>'
+  nl: '<a href="https://www.nederlandwereldwijd.nl/reisadvies" rel="noopener noreferrer" target="_blank">Wijs op Reis</a>'
   en: '<a href="https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Travelling outside the Netherlands</a>'
 
 coronabewijs-hulp: 
@@ -112,7 +112,7 @@ herstelbewijs-elders:
 
 waarnodig:
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/coronatoegangsbewijs/waar-verplicht" rel="noopener noreferrer" target="_blank">Waar heb ik het coronatoegangsbewijs nodig?</a>'
-  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/coronavirus-entry-pass/where-do-i-need-to-show-a-coronavirus-entry-pass" rel="noopener noreferrer" target="_blank">Where do I need to show a coronavirus entry pass?</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/covid-certificate-for-travel-outside-europe-schengen" rel="noopener noreferrer" target="_blank">Where do I need to show a coronavirus entry pass?</a>'
 
 entry-pass:
   nl: '<a href="https://www.rijksoverheid.nl/ctb-bezoekers" rel="noopener noreferrer" target="_blank">Coronatoegangsbewijs voor bezoekers</a>'
@@ -125,3 +125,7 @@ maatregelen-25feb:
 rijksoverheid-tvt:
   nl: '<a href="https://rijksoverheid.nl/testenvoortoegang" rel="noopener noreferrer" target="_blank">Testen voor Toegang voor bezoekers van grote evenementen</a>'
   en: '<a href="https://www.government.nl/test-certificate-access" rel="noopener noreferrer" target="_blank">this goverment page about the new Testen voor Toegang measures</a>'
+
+eisen-en-geldigheid:
+  nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-coronabewijs-en-coronatoegangsbewijs/vaccinatiebewijs/eisen-en-geldigheid" rel="noopener noreferrer" target="_blank">Eisen en geldigheid vaccinatiebewijs</a>'
+  en: '<a href="https://www.government.nl/topics/coronavirus-covid-19/covid-certificate/proof-of-vaccination/requirements-and-validity" rel="noopener noreferrer" target="_blank">Requirements and validity proof of vaccination</a>'

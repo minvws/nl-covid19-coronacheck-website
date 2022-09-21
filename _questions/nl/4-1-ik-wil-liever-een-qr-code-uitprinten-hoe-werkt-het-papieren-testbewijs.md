@@ -1,11 +1,10 @@
 ---
-set: 4
-index: 1
-title: Ik wil liever een QR-code uitprinten. Hoe werkt het papieren bewijs? 
+set: 2
+index: 6
+title: Ik wil liever een papieren bewijs. Hoe maak ik dit? 
 redirect_from: 
   - /nl/faq/34-hoe-werkt-het-papieren-testbewijs
   - /nl/faq/5-2-hoe-werkt-het-papieren-testbewijs
-webonly: true
 featuredHome: true
 featuredHomeIndex: 4
 whichversion:

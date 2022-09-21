@@ -11,17 +11,25 @@ import { ProviderTypes } from '@/types/provider-types'
 export default {
     name: 'CollectRecovery',
     components: { CcButtonDigiD, NoDigiD, Page, PageIntro },
-    computed: {},
+    props: {
+        auth: {
+            type: String,
+            required: true
+        }
+    },
+    computed: {
+        flow: () => FlowTypes.RECOVERY
+    },
     methods: {
         getToken() {
-            this.authRecovery.startAuthentication().then(() => {
+            this.getAuthProvider(this.flow, this.auth).startAuthentication().then(() => {
                 //
             }).catch(error => {
                 const callback = () => {
                     this.completeAuthentication();
                 }
                 handleRejection(error, {
-                    flow: FlowTypes.RECOVERY,
+                    flow: this.flow,
                     step: StepTypes.TVS_DIGID,
                     provider_identifier: ProviderTypes.NON_PROVIDER
                 },
@@ -48,7 +56,7 @@ export default {
                      <CcButtonDigiD
                          id="digid-recovery"
                          @select="getToken()"/>
-                     <NoDigiD/>
+                     <NoDigiD :flow="flow"/>
                 </div>
             </div>
         </div>

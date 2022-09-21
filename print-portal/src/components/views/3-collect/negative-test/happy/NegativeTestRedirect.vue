@@ -5,6 +5,7 @@ import Loading from '@/components/elements/Loading';
 import redirectMixin from '@/components/views/3-collect/_shared/redirect-mixin'
 import { FilterTypes } from '@/types/filter-types'
 import { ProviderTypes } from '@/types/provider-types'
+import { FlowTypes } from '@/types/flow-types';
 
 export default {
     name: 'NegativeTestRedirect',
@@ -15,6 +16,7 @@ export default {
             isLoading: false,
             filter: FilterTypes.NEGATIVE_TEST,
             eventProviders: ProviderTypes.ANY_PROVIDER,
+            flow: FlowTypes.NEGATIVE_TEST,
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'ChoiceTestLocation',
