@@ -15,7 +15,7 @@
     "@cypress/vue": "^2.2.3",
     "@cypress/webpack-dev-server": "^1.4.0",
     "@minvws/coronacheck-web-pdf-tools": "^3.9.0",
-    "axios": "0.21.1",
+    "axios": "0.21.2",
     "base45": "^2.0.1",
     "cbor": "^8.1.0",
     "core-js": "^3.6.5",
