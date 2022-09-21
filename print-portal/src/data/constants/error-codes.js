@@ -39,7 +39,8 @@ export const ClientCode = {
     },
     DATA_VALIDATION: {
         MALFORMATED_JSON: '040',
-        REQUIRED_FIELD_MISSING: '041'
+        REQUIRED_FIELD_MISSING: '041',
+        NO_CERTIFICATES: '058'
     }
 }
 

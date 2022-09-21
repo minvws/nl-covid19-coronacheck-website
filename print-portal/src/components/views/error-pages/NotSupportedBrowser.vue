@@ -1,7 +1,7 @@
 <script>
 import Page from '@/components/elements/Page';
 import PageIntro from '@/components/elements/PageIntro';
-import { homeLink } from '@/tools/router';
+import { goHome } from '@/tools/router';
 
 export default {
     name: 'BrowserNotSupported',
@@ -9,9 +9,9 @@ export default {
         Page,
         PageIntro
     },
-    computed: {
-        home () {
-            return homeLink()
+    methods: {
+        goToHome () {
+            goHome()
         }
     }
 }
@@ -27,7 +27,7 @@ export default {
                 :head="$t('views.browserNotSupported.pageHeader')"
                 :intro="$t('views.browserNotSupported.pageIntro')"/>
             <div class="section-block">
-                <a class="text-link" :href="home">{{ $t('views.browserNotSupported.button') }}</a>
+                <a class="text-link" @click="goToHome">{{ $t('views.browserNotSupported.button') }}</a>
             </div>
         </div>
     </Page>
@@ -38,5 +38,6 @@ export default {
     padding-top: 8px;
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
 }
 </style>

@@ -1,12 +1,12 @@
 ---
 set: 
-  - 1
   - 2
-index: 3
+  - 3
+index: -4
 title: Waar is een coronabewijs nodig?
 redirect_from: 
-    - /nl/faq/2-1-bij-welke-locaties-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil
-    - /nl/faq/2-1-bij-welke-plekken-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil
+    - /nl/faq-in-app/2-1-bij-welke-locaties-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil
+    - /nl/faq-in-app/2-1-bij-welke-plekken-is-een-coronabewijs-nodig-als-ik-naar-binnen-wil
 whichversion:
   - 0g
   - 1g

@@ -58,8 +58,18 @@
             top: 38px;
         }
     }
+}
 
-    .header__title {
+.header__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    @media (min-width: 825px) {
+        font-size: 2.5rem;
+        line-height: 1.25;
+    }
+
+    .scanner-0g & {
         font-size: 1.5rem;
         font-weight: 800;
 
@@ -67,23 +77,6 @@
             font-size: 2.5rem;
             line-height: 1.25;
         }
-
-        .scanner-0g & {
-            @media (min-width: 825px) {
-                font-size: 2.5rem;
-                line-height: 1.25;
-            }
-        }
-    }
-}
-
-.scanner-0g .header__title {
-    font-size: 1.5rem;
-    font-weight: 800;
-
-    @media (min-width: 825px) {
-        font-size: 2.5rem;
-        line-height: 1.25;
     }
 }
 

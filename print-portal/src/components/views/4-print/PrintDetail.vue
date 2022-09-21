@@ -1,6 +1,6 @@
 <template>
     <details>
-        <summary>
+        <summary class="summary">
             <h3>
                 {{ summary }}
             </h3>
@@ -31,5 +31,9 @@ export default {
 <style scoped>
 .slot {
     padding-bottom: 0;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 </style>

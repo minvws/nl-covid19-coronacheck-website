@@ -1,8 +1,7 @@
 ---
-set: 3
-index: 5
+set: 2
+index: -3
 title: How long is my corona certificate valid and can I use it multiple times?	
-webonly: true
 whichversion:
   - 1g
   - 3g

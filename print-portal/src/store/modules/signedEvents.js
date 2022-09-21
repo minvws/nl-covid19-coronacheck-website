@@ -7,9 +7,14 @@ import HolderV3 from '@/classes/holder/HolderV3';
 import { cmsDecode } from '@/tools/cms'
 
 const state = {
-    all: []
+    all: [],
+    addedProofs: [],
+    coupling: []
 };
 
+const isInFilter = (types, event, filter) => {
+    return types.indexOf(event.type) > -1 || filter === 'all'
+}
 const getters = {
     ..._base.getters,
     getProofEvents: (state) => (filter) => {
@@ -30,7 +35,7 @@ const getters = {
                 for (const ev of result.events) {
                     const event = new ProofEvent(ev);
                     const providerIdentifier = result.providerIdentifier;
-                    if (types.indexOf(event.type) > -1 || filter === 'all') {
+                    if (isInFilter(types, event, filter)) {
                         proofEvents.push(new SignedEvent({
                             holder,
                             event,
@@ -40,15 +45,19 @@ const getters = {
                 }
             }
         }
+        state.addedProofs.filter(({ event }) => isInFilter(types, event, filter)).forEach(event => {
+            // add QRS to proof events
+            proofEvents.push(event)
+        })
         return proofEvents;
     },
-    all: ({ all }) => {
-        return all.map(({ payload, signature }) => {
+    all: ({ all, coupling }) => {
+        return [...coupling, ...all.map(({ payload, signature }) => {
             return {
                 payload,
                 signature
             }
-        })
+        })]
     }
 };
 
@@ -56,6 +65,11 @@ const actions = {
     createAll: ({ commit, dispatch }, payload) => {
         dispatch('clear', payload)
         commit('createAll', payload)
+        // clear signed qrs
+        commit('qrs/add', null, { root: true });
+    },
+    addProof: ({ commit }, events) => {
+        commit('addProof', events)
         // clear signed qrs
         commit('qrs/add', null, { root: true });
     },
@@ -83,6 +97,17 @@ const mutations = {
     },
     clearAll(state) {
         state.all = []
+    },
+    addProof (state, { issuer, result: { events, holder, ...data }, payload }) {
+        events.forEach(event => {
+            const signedEvent = new SignedEvent({
+                ...data,
+                holder: new HolderV3(holder),
+                event: new ProofEvent({ issuer, ...event })
+            })
+            state.addedProofs.push(signedEvent)
+        })
+        state.coupling.push(payload)
     }
 };
 

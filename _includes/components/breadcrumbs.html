@@ -26,7 +26,7 @@
         {% else %}
             {% if include.collection == 'questions-scanner'
                or include.collection == 'questions'
-               or include.collection == 'questions-scanner-in-app'
+               or include.collection == 'questions-in-app'
                or include.collection == 'questions-scanner-in-app'
                or include.collection == 'faqcategories' %} 
                 <a class="breadcrumbs" href="{{langSlug}}/faq">
@@ -44,12 +44,12 @@
     {% elsif forloop.last == false %} 
         {% if include.collection == 'questions-scanner'
             or include.collection == 'questions'
-            or include.collection == 'questions-scanner-in-app'
+            or include.collection == 'questions-in-app'
             or include.collection == 'questions-scanner-in-app' %} 
             {% assign questionCategories = site.faqcategories | where:"lang", page.lang | sort: "questionCategory" %} 
             {% for questionCategory in questionCategories %}
-                {% if questionCategory.questionCategory == page.set %}
-                    <li class="breadcrumbs-item">
+                {% if page.set contains questionCategory.questionCategory %}
+                    <li class="breadcrumbs-item" id="{{ questionCategory.questionCategory }}" hidden>
                         <a class="breadcrumbs" href="{{ site.baseurl }}{{ questionCategory.url }}">
                         {{ questionCategory.title | truncate: 40 }}</a>
                         <span class="icon icon-chevron-right"></span>

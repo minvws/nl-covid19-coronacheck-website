@@ -4,6 +4,7 @@ import PageIntro from '@/components/elements/PageIntro';
 import UserConsent from './UserConsent';
 import CcButton from '@/components/elements/CcButton';
 import ErrorLabel from '@/components/elements/ErrorLabel';
+import { goHome } from '@/tools/router';
 
 export default {
     name: 'Home',
@@ -39,7 +40,7 @@ export default {
     },
     methods: {
         gotoHome() {
-            window.location = 'https://coronacheck.nl/nl/';
+            goHome()
         },
         next() {
             this.clickedNext = true;

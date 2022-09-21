@@ -1,11 +1,11 @@
 ---
 set: 5
-index: 3
+index: -3
 title: My QR code was scanned but led to a red screen. What should I do?
 whichversion:
   - 0g
 ---
-Getting a red screen at the border or abroad? Your certificate might not comply with the rules of the country you’re visiting. Go to {{ site.datatranslations-[page.lang].wijsoprijs-link[page.lang] }} for an overview of the rules and validity of the coronavirus pass in other countries. 
+Getting a red screen at the border or abroad? Your certificate might not comply with the rules of the country you’re visiting. Go to {{ site.data.links.wijsopreis[page.lang] }} for an overview of the rules and validity of the coronavirus pass in other countries. 
 
 ## Here’s what you can do:
 

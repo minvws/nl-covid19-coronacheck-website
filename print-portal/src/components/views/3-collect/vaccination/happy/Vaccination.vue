@@ -3,6 +3,7 @@ import dateTool from '@/tools/date';
 import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 import VaccinationInfo from './VaccinationInfo';
 import InfoButton from '@/components/views/3-collect/_shared/InfoButton';
+import { getDCCProvider } from '@/qr/utils/DCCDecoder'
 
 export default {
     name: 'Vaccination',
@@ -22,6 +23,9 @@ export default {
         },
         monthName() {
             return dateTool.dateToMonthName(this.signedEvent.event.vaccination.date, this.$store.state.languages.current.locale);
+        },
+        eventsAddedByQR () {
+            return !!this.signedEventSet.find(signedEvent => getDCCProvider(signedEvent.providerIdentifier))
         },
         eventsFetchedAt() {
             const locationList = this.signedEventSet.map(signedEvent => {
@@ -57,8 +61,13 @@ export default {
                 <dd>{{holder.birthDateString}}</dd>
             </div>
             <div class="proof-event__line">
-                <dt>{{$t('components.eventInfo.eventsFetchedAt')}}:</dt>
-                <dd>{{eventsFetchedAt}}</dd>
+                  <template v-if="eventsAddedByQR">
+                     <dt>{{$t('components.eventInfo.eventsAddedByQR')}}</dt>
+                </template>
+                <template v-else>
+                    <dt>{{$t('components.eventInfo.eventsFetchedAt')}}:</dt>
+                    <dd>{{eventsFetchedAt}}</dd>
+                </template>
             </div>
         </dl>
 

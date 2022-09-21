@@ -33,6 +33,9 @@ export default {
         },
         confirmAlert() {
             return this.$store.state.modal.confirmAlert;
+        },
+        actions () {
+            return this.$store.state.modal.actions;
         }
     },
     methods: {
@@ -95,7 +98,6 @@ export default {
                         id="modal-refute"
                         @select="refute()"
                         :label="refuteText"/>
-
                     <CcModestButton
                         v-if="showConfirm"
                         id="modal-confirm"
@@ -108,6 +110,15 @@ export default {
                         id="modal-close"
                         @select="close()"
                         :label="closeText"/>
+
+                     <CcModestButton
+                        v-for="({ action, label }, i) in actions"
+                        :key="`action-${i}`"
+                        @select="() => {
+                            close();
+                            if (action) action()
+                        }"
+                        :label="label"/>
                 </div>
             </div>
         </div>

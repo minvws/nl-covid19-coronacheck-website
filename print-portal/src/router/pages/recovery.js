@@ -1,35 +1,35 @@
 import CollectRecovery from '@/components/views/3-collect/recovery/CollectRecovery'
 import RecoveryRedirect from '@/components/views/3-collect/recovery/happy/RecoveryRedirect'
 import RecoveryExpired from '@/components/views/3-collect/recovery/unhappy/RecoveryExpired'
-import RecoveryOverview from '@/components/views/3-collect/recovery/happy/RecoveryOverview'
 import RecoveryNone from '@/components/views/3-collect/recovery/unhappy/RecoveryNone'
 import PrintRecovery from '@/components/views/4-print/PrintRecovery'
 import RecoveryLayout from '@/components/views/3-collect/recovery/unhappy/RecoveryLayout'
 import CollectPositiveTest from '@/components/views/3-collect/recovery/CollectPositiveTest'
+import { RouterNames } from '@/qr/router'
+import { routeProps } from '@/interfaces/auth-helper';
 
 const recoveryPages = [
     {
         path: '/ophalen-positive-test',
         name: 'CollectPositiveTest',
-        component: CollectPositiveTest
+        component: CollectPositiveTest,
+        props: routeProps
     },
     {
         path: '/recovery-ophalen',
         name: 'CollectRecovery',
-        component: CollectRecovery
+        component: CollectRecovery,
+        props: routeProps
     }, {
         path: '/recovery-redirect',
         name: 'RecoveryRedirect',
         component: RecoveryRedirect,
+        props: routeProps,
         meta: {
             title: 'views.recoveryOverview.pageHeader'
         }
-    }, {
-        path: '/recovery-overzicht',
-        name: 'RecoveryOverview',
-        component: RecoveryOverview,
-        props: true
-    }, {
+    },
+    {
         path: '/recovery-niet-gevonden',
         name: 'RecoveryNone',
         component: RecoveryNone,
@@ -44,7 +44,7 @@ const recoveryPages = [
         props: {
             translationId: 'recoveryNone',
             route: {
-                name: 'RecoveryOverview',
+                name: RouterNames.RECOVERY_OVERVIEW,
                 translationId: 'goToOverview',
                 replace: true
             }

@@ -1,10 +1,10 @@
 ---
-set: 3
+set: 7
 index: 1
 title: Ik wil mij laten testen, waar kan ik terecht?
 redirect_from: 
-    - /nl/faq/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
-    - /nl/faq/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
+    - /nl/faq-in-app/7-ik-wil-me-laten-testen-waar-kan-ik-terecht
+    - /nl/faq-in-app/1-4-ik-wil-me-laten-testen-waar-kan-ik-terecht
     # - /testafspraak
     # - /nl/testafspraak
 whichversion:

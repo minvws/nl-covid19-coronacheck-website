@@ -1,6 +1,8 @@
 ---
-set: 3
-index: 8
+set: 
+  - 2
+  - 7
+index: 5
 title: Ik heb klachten, moet in quarantaine of ben positief getest. Wat moet ik doen? En wat gebeurt er met mijn coronabewijs?
 redirect_from: 
     - /nl/faq/5-ik-heb-een-qr-code-maar-heb-nu-klachten

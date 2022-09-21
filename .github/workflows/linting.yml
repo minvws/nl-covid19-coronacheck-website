@@ -78,17 +78,6 @@ jobs:
       - name: Copy print portal to public
         run: mv print-portal/dist public/en/print
 
-      - name: Create dashboard SPA
-        run: |
-          cd dashboard-spa
-          npm install --production=false
-          npm run build
-        env:
-          NODE_ENV: production
-
-      - name: Copy dashboard SPA to public
-        run: mv dashboard-spa/dist/* public/js/
-
       - name: Copy fonts
         run: cp -R public/nl/print/assets/fonts public/assets/
 
@@ -101,5 +90,5 @@ jobs:
         run: cp -R auth2.php public/app/auth2.php
 
       - name: Lint json files
-        run: find . -size +2c \( -name *.json -o -name *.json.v* \)  -not -path "./print-portal/node_modules/*" -not -path "./dashboard-spa/node_modules/*" | xargs jsonlint-php
+        run: find . -size +2c \( -name *.json -o -name *.json.v* \)  -not -path "./print-portal/node_modules/*" | xargs jsonlint-php
 

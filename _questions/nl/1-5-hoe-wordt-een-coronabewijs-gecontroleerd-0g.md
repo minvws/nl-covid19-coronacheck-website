@@ -1,6 +1,6 @@
 ---
 set: 1
-index: 5
+index: 9
 title: Hoe wordt een coronabewijs gecontroleerd? 
 whichversion:
   - 0g

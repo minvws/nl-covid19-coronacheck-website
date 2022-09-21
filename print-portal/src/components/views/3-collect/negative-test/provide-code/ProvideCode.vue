@@ -250,7 +250,7 @@ export default {
                                 provider_identifier: this.testProviderIdentifier,
                                 clientSideCode: ClientCode.JSON.DECODE_ERROR
                             })
-                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: errorCode } });
+                            this.$router.push({ name: 'ErrorTokenFlow', params: { error: errorCode } });
                         }
                     }
                 }).catch((error) => {
@@ -282,10 +282,10 @@ export default {
                             break;
                         case '429':
                             this.$store.commit('clearAll');
-                            this.$router.push({ name: 'ServerBusy', query: { error: errorCode } });
+                            this.$router.push({ name: 'ServerBusy', params: { error: errorCode } });
                             break
                         default:
-                            this.$router.push({ name: 'ErrorTokenFlow', query: { error: errorCode } });
+                            this.$router.push({ name: 'ErrorTokenFlow', params: { error: errorCode } });
                             this.$store.commit('clearAll');
                             break
                         }

@@ -7,7 +7,7 @@ contentLang: en
 ---
 Accessibility statement, dated 23-11-2021
 
-The Ministry of Health, Welfare and Sport wants everybody to be able to use this website, which is being updated all the time. However, if you encounter a page which you find inaccessible we ask you to please let us know by emailing  <a href="mailto:helpdesk@coronacheck.nl?subject={{ site.datatranslations-[page.lang].accessibility-in-app-email-subject[page.lang] | url_encode | replace: "+", "%20" }}">helpdesk@coronacheck.nl</a>. <br />
+The Ministry of Health, Welfare and Sport wants everybody to be able to use this website, which is being updated all the time. However, if you encounter a page which you find inaccessible we ask you to please let us know by emailing  <a href="mailto:helpdesk@coronacheck.nl?subject={{ site.data.links.accessibility-in-app-email-subject[page.lang] | url_encode | replace: "+", "%20" }}">helpdesk@coronacheck.nl</a>. <br />
 
 Find detailed information about the website's accessibility in <a href="https://www.toegankelijkheidsverklaring.nl/register/4230" hreflang="nl">our accessibility statement</a> (Dutch).
 
@@ -27,12 +27,3 @@ We guarantee good accessibility by various measures in our daily processes:
 - A formal audit has been done to ensure WCAG-EM standards are met. This involved an examination of functional and technical features as well as editorial aspects. Our team are working hard to resolve any issues identified by the audit (see below).
 - The audit was completed in September 2021.
 - Expert knowledge of accessibility will be kept up to standard and applied when needed by our staff.
-
-## Parts of the site to be improved 
-
-We are working on the following issues:
-
--   The PDF that is issued when a certificate on paper is made is not yet fully accessible.
--   The PDFs on the page [Research: how do we know CoronaCheck works?](https://coronacheck.nl/en/faq/7-1-onderzoek-hoe-weten-we-of-coronacheck-werkt/) are not fully accessible. Figures and numbers in these PDFs will be reported on an accessible HTML page instead of the PDFs.
--   See our <a href="https://www.toegankelijkheidsverklaring.nl/register/4230" lang="nl" rel="noreferrer noopener">accessibility statement (Dutch)</a> for the latest information on accessibility issues.
-

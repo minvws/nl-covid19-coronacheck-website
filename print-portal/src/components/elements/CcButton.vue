@@ -36,13 +36,15 @@ export default {
             'button--full-width': fullWidth
         }"
         class="btn">
-        {{label}}
+        <div class="content">
+            {{ label }}
+            <slot />
+        </div>
     </button>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     button {
-
         &.button--full-width {
             width: 100%;
         }
