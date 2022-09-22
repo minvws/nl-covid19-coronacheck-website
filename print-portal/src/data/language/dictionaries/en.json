@@ -672,7 +672,7 @@
             "button": "Yes, next",
             "link": "No, a vaccination is missing",
             "pageHeader": "Are these all your vaccinations?",
-            "pageIntro": "<p>We retrieved these vaccinations from the GGD and the RIVM:<\/p>"
+            "pageIntro": "<p>Continue to add these vaccinations to your certificate. Or add another vaccination.<\/p>"
         },
         "provideCode": {
             "didNotGetCode": "Didn't receive a verification code?",
