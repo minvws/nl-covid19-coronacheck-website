@@ -44,6 +44,10 @@
         "european": "International"
     },
     "close": "Close",
+    "provider": {
+        "pap": "GGD GHOR",
+        "max": "DigiD"
+    },
     "components": {
         "consent": {
             "vaccination": {
