@@ -75,7 +75,7 @@
             "name": "Naam",
             "negativetestResult": "Negatieve testuitslag",
             "positivetestResult": "Positieve testuitslag",
-            "receivedFrom": "Opgehaald via",
+            "receivedFrom": "Opgehaald met",
             "recoveryResult": "Herstelbewijs",
             "scannedQR": "Zelf toegevoegd",
             "testResult": "Testuitslag",
@@ -345,7 +345,7 @@
                 "title": "Scan je vaccinatiebewijs"
             },
             "mismatch": {
-                "body": "De persoonsgegevens in het bewijs dat je probeert te scannen zijn anders dan de gegevens die je hebt opgehaald via DigiD. Je kunt dit bewijs daarom niet toevoegen.",
+                "body": "De persoonsgegevens in het bewijs dat je probeert te scannen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.",
                 "title": "De persoonsgegevens zijn niet hetzelfde"
             },
             "no-camera": {
@@ -512,7 +512,7 @@
             "button": "Probeer opnieuw",
             "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
             "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
-            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald via DigiD. Je kunt dit bewijs daarom niet toevoegen.<\/p>"
+            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<\/p>"
         },
         "errorSessionExpired": {
             "pageHeader": "Je sessie is verlopen",
@@ -563,7 +563,7 @@
             "button": "Probeer opnieuw",
             "link": "Doorgaan met de opgehaalde vaccinaties(s)",
             "pageHeader": "Geen geldige combinatie",
-            "pageIntro": "<p>Deze lettercombinatie en het bewijs dat je wilt toevoegen horen niet bij elkaar. Zoek de goede lettercombinatie en bijbehorend bewijs bij elkaar en probeer het opnieuw.<br><br>Lukt het niet? Dan kun je van de vaccinaties die je hebt opgehaald via DigiD nog wel een bewijs maken.<\/p>"
+            "pageIntro": "<p>Deze lettercombinatie en het bewijs dat je wilt toevoegen horen niet bij elkaar. Zoek de goede lettercombinatie en bijbehorend bewijs bij elkaar en probeer het opnieuw.<br><br>Lukt het niet? Dan kun je van de vaccinaties die je hebt opgehaald met DigiD nog wel een bewijs maken.<\/p>"
         },
         "letterCombinationValidation": {
             "pageHeader": "QR-code controleren"
