@@ -44,6 +44,10 @@
         "european": "Internationaal"
     },
     "close": "Sluiten",
+    "provider": {
+        "pap": "GGD GHOR",
+        "max": "DigiD"
+    },
     "components": {
         "consent": {
             "vaccination": {
@@ -672,7 +676,7 @@
             "button": "Ja, volgende",
             "link": "Nee, er mist een vaccinatie",
             "pageHeader": "Zijn dit al jouw vaccinaties?",
-            "pageIntro": "<p>Deze vaccinaties hebben we opgehaald bij de GGD en het RIVM:<\/p>"
+            "pageIntro": "<p>Ga verder om deze vaccinaties mee te nemen in je bewijs of voeg nog een vaccinatie toe.<\/p>"
         },
         "provideCode": {
             "didNotGetCode": "Geen verificatiecode gekregen?",
