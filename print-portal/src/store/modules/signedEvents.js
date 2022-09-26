@@ -52,7 +52,7 @@ const getters = {
         return proofEvents;
     },
     all: ({ all, coupling }) => {
-        return [...coupling, ...all.map(({ payload, signature, ...lala }) => {
+        return [...coupling, ...all.map(({ payload, signature }) => {
             return {
                 payload,
                 signature
