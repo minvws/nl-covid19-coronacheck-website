@@ -52,12 +52,17 @@ const getters = {
         return proofEvents;
     },
     all: ({ all, coupling }) => {
-        return [...coupling, ...all.map(({ payload, signature }) => {
+        return [...coupling, ...all.map(({ payload, signature, ...lala }) => {
             return {
                 payload,
                 signature
             }
         })]
+    },
+    getProofsWithFilterAndScope: ({ all }) => ({ filter, scope } = {}) => {
+        return all.filter(event => {
+            return event.filter === filter && event.scope === scope;
+        })
     }
 };
 
