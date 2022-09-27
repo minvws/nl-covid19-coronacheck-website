@@ -99,10 +99,10 @@
             "currentLanguage": "Current language",
             "language": "Language",
             "modal": {
-                "head": "TODO",
-                "body": "TODO",
-                "yes": "TODO",
-                "no": "TODO"
+                "head": "Do you want to switch to English?",
+                "body": "Switching languages will return you to the first page and restart the process of creating a paper certificate.",
+                "yes": "Yes, switch to English",
+                "no": "No, stop"
             }
         },
         "positiveTest": {
