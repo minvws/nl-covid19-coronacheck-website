@@ -97,7 +97,13 @@
         "languagePicker": {
             "changeLanguage": "Change language",
             "currentLanguage": "Current language",
-            "language": "Language"
+            "language": "Language",
+            "modal": {
+                "head": "TODO",
+                "body": "TODO",
+                "yes": "TODO",
+                "no": "TODO"
+            }
         },
         "positiveTest": {
             "info": {
