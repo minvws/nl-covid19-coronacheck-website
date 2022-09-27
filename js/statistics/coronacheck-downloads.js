@@ -300,7 +300,23 @@ CC_downloads_plot_raw = [
     {
         date: "2022-08-26",
         downloads: 16810732
-    }
+    },
+    {
+        date: "2022-09-02",
+        downloads: 16845960
+    },
+    {
+        date: "2022-09-09",
+        downloads: 16877209
+    },
+    {
+        date: "2022-09-16",
+        downloads: 16908811
+    },
+    {
+        date: "2022-09-23",
+        downloads: 16939197
+    },
 ]
 
 const CC_downloads_plot = CC_downloads_plot_raw.map(({date, ...rest}) => {
