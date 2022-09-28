@@ -44,6 +44,10 @@
         "european": "International"
     },
     "close": "Close",
+    "provider": {
+        "pap": "GGD GHOR",
+        "max": "DigiD"
+    },
     "components": {
         "consent": {
             "vaccination": {
@@ -71,7 +75,7 @@
             "name": "Name",
             "negativetestResult": "Negative test result",
             "positivetestResult": "Positive test result",
-            "receivedFrom": "Retrieved via",
+            "receivedFrom": "Retrieved with",
             "recoveryResult": "Recovery certificate",
             "scannedQR": "Added by you",
             "testResult": "Test result",
@@ -341,7 +345,7 @@
                 "title": "Scan your vaccination certificate"
             },
             "mismatch": {
-                "body": "The personal details on the certificate you are trying to scan differ from the details you retrieved via DigiD. Because of that, you can’t add this certificate.",
+                "body": "The personal details on the certificate you are trying to scan differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.",
                 "title": "The personal details don’t match"
             },
             "no-camera": {
@@ -508,7 +512,7 @@
             "button": "Try again",
             "link": "Continue with my retrieved vaccination(s)",
             "pageHeader": "The personal details don’t match",
-            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved via DigiD. Because of that, you can’t add this certificate.<\/p>"
+            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<\/p>"
         },
         "errorSessionExpired": {
             "pageHeader": "Your session has expired",
@@ -559,7 +563,7 @@
             "button": "Try again",
             "link": "Continue with my retrieved vaccination(s)",
             "pageHeader": "No valid combination",
-            "pageIntro": "<p>This letter combination and the certificate you want to add do not belong together. Find the correct letter combination and certificate and try again.<br><br>Not working? Then you can still create a certificate from the vaccinations you retrieved via DigiD.<\/p>"
+            "pageIntro": "<p>This letter combination and the certificate you want to add do not belong together. Find the correct letter combination and certificate and try again.<br><br>Not working? Then you can still create a certificate from the vaccinations you retrieved with DigiD.<\/p>"
         },
         "letterCombinationValidation": {
             "pageHeader": "Checking QR code"
@@ -672,7 +676,7 @@
             "button": "Yes, next",
             "link": "No, a vaccination is missing",
             "pageHeader": "Are these all your vaccinations?",
-            "pageIntro": "<p>We retrieved these vaccinations from the GGD and the RIVM:<\/p>"
+            "pageIntro": "<p>Continue to add these vaccinations to your certificate. Or add another vaccination.<\/p>"
         },
         "provideCode": {
             "didNotGetCode": "Didn't receive a verification code?",
