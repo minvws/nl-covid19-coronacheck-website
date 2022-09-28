@@ -181,7 +181,8 @@ const routes: Array<RouteConfig> = [
         meta: {
             title: `views.${RouterNames.PROOFS_OVERVIEW_LIST}.pageHeader`
         },
-        props: ({ params }) => {
+        props: ({ params: { auth, ...params } }) => {
+            if (auth) store.commit('setAuthType', auth);
             return {
                 id: RouterNames.PROOFS_OVERVIEW_LIST,
                 ...params,
@@ -203,7 +204,8 @@ const routes: Array<RouteConfig> = [
         meta: {
             title: `views.${RouterNames.PROOFS_OVERVIEW_LIST}.pageHeader`
         },
-        props: ({ params }) => {
+        props: ({ params: { auth, ...params } }) => {
+            if (auth) store.commit('setAuthType', auth);
             return {
                 ...params,
                 id: RouterNames.PROOFS_OVERVIEW_LIST,

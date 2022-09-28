@@ -30,7 +30,9 @@ const state = {
     slotModalActive: false,
     vaccinationWithPositiveTestEnabled: true, // when true, show a consent and hide all faq's,
     showListBeforeOverview: true, // will show a list of proofs before an overview page
-    flow: '' // vaccination | recovery
+    flow: '', // vaccination | recovery,
+    authType: '', // AuthType,
+    groupProofsSummaryByProviderName: false
 };
 
 const getters = {
@@ -100,7 +102,9 @@ const getters = {
         }
     },
     user: ({ user }) => user,
-    flow: ({ flow }) => flow
+    flow: ({ flow }) => flow,
+    authType: ({ authType }) => authType,
+    groupProofsSummaryByProviderName: ({ groupProofsSummaryByProviderName }) => groupProofsSummaryByProviderName
 };
 
 const mutations = {
@@ -160,6 +164,9 @@ const mutations = {
     },
     setFlow(state, flow) {
         state.flow = flow;
+    },
+    setAuthType(state, authType) {
+        state.authType = authType;
     }
 }
 
