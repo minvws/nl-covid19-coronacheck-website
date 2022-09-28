@@ -11,16 +11,10 @@ whichversion:
   - 1g
   - 3g
 ---
-<details class="details">
-<summary><h2>In de CoronaCheck-app </h2></summary>
-<div markdown="1">
-Nieuwe vaccinaties worden niet automatisch in de app opgehaald. Daarom moet je elke prik die je hebt gehad zelf toevoegen. Kies in het menu voor “Vaccinatie of test toevoegen” en haal je vaccinatiegegevens op.
-</div>
-</details>
+## In de CoronaCheck-app
 
-<details class="details">
-<summary><h2>Aan je papieren bewijs</h2></summary>
-<div markdown="1">
+Nieuwe vaccinaties worden niet automatisch in de app opgehaald. Daarom moet je elke prik die je hebt gehad zelf toevoegen. Kies in het menu voor “Vaccinatie of test toevoegen” en haal je vaccinatiegegevens op. 
+
+## Aan je papieren bewijs
+
 Ga naar [www.coronacheck.nl/print](/print) en maak opnieuw een vaccinatiebewijs. Je nieuwe prik wordt dan ook in je papieren bewijs verwerkt.
-</div>
-</details>
