@@ -110,7 +110,6 @@ export default QRMixin.extend({
             this.onAddPendingQR({ result })
         },
         state (state) {
-            console.log({ state });
             if (state !== CameraState.NO_CAMERA) return
             const actions = [
                 {
