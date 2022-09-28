@@ -316,7 +316,6 @@
                 "PLAYING": "Camera is actief",
                 "REJECTED": "Je moet eerst toestemming geven om je camera te gebruiken.",
                 "SELECTED": "Camera bezig met starten",
-                "STARTED": "Camera is gestart",
                 "STARTING": "Camera is aan het starten",
                 "STOPPED": "Camera is gestopt"
             },

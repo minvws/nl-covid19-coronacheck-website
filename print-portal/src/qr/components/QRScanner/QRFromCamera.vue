@@ -8,7 +8,7 @@
     </div>
     <CameraRender :status="state">
       <template>
-        <video ref="renderer" @playing="state = ''" :aria-label="$t(`qr.camera.states.${state}`)"/>
+        <video ref="renderer" @playing="onCameraPlaying" :aria-label="$t(`qr.camera.states.${state}`)"/>
         <CameraStatus v-bind="{ error, state }" />
       </template>
     </CameraRender>
@@ -110,6 +110,7 @@ export default QRMixin.extend({
             this.onAddPendingQR({ result })
         },
         state (state) {
+            console.log({ state });
             if (state !== CameraState.NO_CAMERA) return
             const actions = [
                 {
@@ -129,6 +130,10 @@ export default QRMixin.extend({
         }
     },
     methods: {
+        onCameraPlaying () {
+            if (!this.isStarted) return
+            this.state = CameraState.PLAYING;
+        },
         onCapture(result: string) {
             this.lastCapture = result
             this.clear()
@@ -164,13 +169,13 @@ export default QRMixin.extend({
             }
             try {
                 this.isStartPending = true
+                this.state = CameraState.STARTING
                 await this.qrScanner?.start()
                 if (!this.cameraId && this.cameras) {
                     await this.setCamera(this.getPreferredCamera())
                 }
-                this.state = CameraState.STARTING
                 this.isStarted = true
-                this.state = CameraState.STARTED
+                this.onCameraPlaying()
                 return true
             } catch (error: unknown) {
                 const message = (error as Error)?.message || error as string
