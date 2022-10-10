@@ -31,8 +31,8 @@ phone-kvk-organisatoren:
 # Websites and their English equivalent
 
 wijsopreis:
-  nl: '<a href="https://www.nederlandwereldwijd.nl/reisadvies" rel="noopener noreferrer" target="_blank">Wijs op Reis</a>'
-  en: '<a href="https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Travelling outside the Netherlands</a>'
+  nl: '<a href="https://www.nederlandwereldwijd.nl/reisadvies" rel="noopener noreferrer" target="_blank">Nederland Wereldwijd</a>'
+  en: '<a href="https://www.netherlandsworldwide.nl/travelling-outside-the-netherlands" rel="noopener noreferrer" target="_blank">Netherlands Worldwide</a>'
 
 coronabewijs-hulp: 
   nl: '<a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/coronabewijs/hulp-en-vragen-over-coronabewijs" rel="noopener noreferrer" target="_blank">Problemen met digitale middelen en andere vragen over coronabewijzen</a>'
