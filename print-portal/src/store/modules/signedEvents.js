@@ -58,6 +58,11 @@ const getters = {
                 signature
             }
         })]
+    },
+    getProofsWithFilterAndScope: ({ all }) => ({ filter, scope } = {}) => {
+        return all.filter(event => {
+            return event.filter === filter && event.scope === scope;
+        })
     }
 };
 

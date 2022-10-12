@@ -31,6 +31,7 @@ const state = {
     vaccinationWithPositiveTestEnabled: true, // when true, show a consent and hide all faq's,
     showListBeforeOverview: true, // will show a list of proofs before an overview page
     flow: '', // vaccination | recovery,
+    removeExpiredPositiveTestsWithPositiveTest: false, // see TAIGA--4532
     authType: '', // AuthType,
     groupProofsSummaryByProviderName: false
 };
@@ -53,6 +54,9 @@ const getters = {
     },
     vaccinationWithPositiveTestEnabled: ({ vaccinationWithPositiveTestEnabled }) => {
         return vaccinationWithPositiveTestEnabled
+    },
+    removeExpiredPositiveTestsWithPositiveTest: ({ removeExpiredProofsWithPositiveTest }) => {
+        return removeExpiredProofsWithPositiveTest
     },
     is0G: (state, { disclosurePolicies }) => {
         // 0G when disclosurePolicies = []
