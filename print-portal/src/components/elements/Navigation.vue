@@ -23,7 +23,6 @@ export default {
         <button
             v-if="displayBackButton"
             @click="goBack()"
-            :aria-label="$t('back')"
             type="button"
             class="Navigation__button Navigation__back">
             <img
