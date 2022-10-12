@@ -17,10 +17,10 @@ export default {
     },
     methods: {
         openDialog (locale) {
-            const showDialog = this.$route.name !== 'Home'
-            const confirmAction = this.select
+            const showDialog = this.$route.name !== 'Home';
+            const confirmAction = this.select;
             if (showDialog) {
-                const { head, body, yes, no } = this.$t('components.languagePicker.modal', locale)
+                const { head, body, yes, no } = this.$t('components.languagePicker.modal', locale);
                 this.$store.commit('modal/set', {
                     messageHead: head,
                     messageBody: body,
@@ -30,8 +30,8 @@ export default {
                     closeButton: false,
                     confirmAlert: true,
                     confirmAction
-                })
-            } else confirmAction()
+                });
+            } else confirmAction();
         },
         select() {
             const locale = this.language.locale;
