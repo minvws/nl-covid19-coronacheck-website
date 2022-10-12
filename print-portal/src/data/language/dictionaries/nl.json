@@ -97,7 +97,13 @@
         "languagePicker": {
             "changeLanguage": "Wissel van taal",
             "currentLanguage": "Huidige taal",
-            "language": "Taal"
+            "language": "Taal",
+            "modal": {
+                "head": "Wil je naar Nederlands wisselen?",
+                "body": "Als je van taal wisselt ga je terug naar het begin en moet je opnieuw je papieren bewijs maken.",
+                "yes": "Ja, wissel naar Nederlands",
+                "no": "Nee, stop"
+            }
         },
         "positiveTest": {
             "info": {
