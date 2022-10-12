@@ -603,7 +603,7 @@
                         "summary": "How long is my certificate valid?"
                     },
                     "validLocation": {
-                        "content": "<p>The validity of corona certificates differs per country. Before leaving, please check which certificate you need for your destination at <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.netherlandsworldwide.nl<\/a>.<\/p>",
+                        "content": "<p>The validity of corona certificates differs per country. Before leaving, please check which certificate you need for your destination at <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">Netherlands Worldwide<\/a>.<\/p>",
                         "summary": "Where can I use my international certificate?"
                     },
                     "validPeriod": {
@@ -651,7 +651,7 @@
                 "european": "Success! Your certificate is ready below"
             },
             "pageIntro": {
-                "0G": "You have created an international %{type} certificate. Always check before departure if you have the right certificate on <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.netherlandsworldwide.nl<\/a>.<\/p><p>Open the PDF and print it. Take your printed certificate to the country you’re traveling to.<\/p>",
+                "0G": "You have created an international %{type} certificate. Always check before departure if you have the right certificate on <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">Netherlands Worldwide<\/a>.<\/p><p>Open the PDF and print it. Take your printed certificate to the country you’re traveling to.<\/p>",
                 "both": "<p>You have a Dutch and an international %{type} certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.<\/p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.<\/p>",
                 "bothVaccinationRecovery": "<p>You have a Dutch and an international certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.<\/p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.<\/p>",
                 "domestic": "<p>You only have a %{type} certificate for use in the Netherlands. You can use it to access places or activities within the Netherlands, but not when you’re travelling abroad or crossing the border.<\/p><p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.<\/p>",

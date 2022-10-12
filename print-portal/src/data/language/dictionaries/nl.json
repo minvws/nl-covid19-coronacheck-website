@@ -603,7 +603,7 @@
                         "summary": "Hoe lang is mijn bewijs geldig?"
                     },
                     "validLocation": {
-                        "content": "<p>De geldigheid van coronabewijzen verschilt per land. Controleer daarom voor vertrek welk bewijs je nodig hebt op jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">www.wijsopreis.nl<\/a>.<\/p>",
+                        "content": "<p>De geldigheid van coronabewijzen verschilt per land. Controleer daarom voor vertrek welk bewijs je nodig hebt op jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">Nederland Wereldwijd<\/a>.<\/p>",
                         "summary": "Waar is mijn internationale bewijs geldig?"
                     },
                     "validPeriod": {
@@ -651,7 +651,7 @@
                 "european": "Gelukt! Jouw bewijs staat hieronder klaar"
             },
             "pageIntro": {
-                "0G": "Je hebt een internationaal %{type}bewijs gemaakt. Controleer altijd voor vertrek of je het goede bewijs hebt voor jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">www.wijsopreis.nl<\/a>.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.<\/p>",
+                "0G": "Je hebt een internationaal %{type}bewijs gemaakt. Controleer altijd voor vertrek of je het goede bewijs hebt voor jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">Nederland Wereldwijd<\/a>.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.<\/p>",
                 "both": "<p>Je hebt een Nederlands en een internationaal %{type}bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.<\/p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.<\/p>",
                 "bothVaccinationRecovery": "<p>Je hebt een Nederlands en een internationaal bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.<\/p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.<\/p>",
                 "domestic": "<p>Je hebt alleen een %{type}bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet als je de grens over gaat of in het buitenland bent.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.<\/p>",
