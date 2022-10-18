@@ -3,6 +3,7 @@ import dateTool from '@/tools/date';
 import proofEventMixin from '@/components/views/3-collect/_shared/proof-event-mixin'
 import vaccinationOverviewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
 import { ProviderTypes } from '@/types/provider-types';
+
 export default {
     name: 'ProofsSummary',
     mixins: [proofEventMixin, vaccinationOverviewMixin],
@@ -14,9 +15,10 @@ export default {
     },
     computed: {
         group () {
-            return this.list.reduce((cul, cur) => {
-                if (!cul[cur.name]) cul[cur.name] = []
-                cul[cur.name].push(cur)
+            return this.list.reduce((cul, provider) => {
+                const name = this.getGroupName(provider)
+                if (!cul[name]) cul[name] = []
+                cul[name].push(provider)
                 return cul
             }, {})
         },
@@ -35,6 +37,11 @@ export default {
         }
     },
     methods: {
+        getGroupName (provider) {
+            const name = this.getName(provider);
+            if (this.$store.getters.groupProofsSummaryByProviderName || name === ProviderTypes.DCC) return name;
+            return this.$t(`provider.${this.$store.getters.authType}`)
+        },
         getResult ({ name, event }) {
             const { type } = event
             const { hpkCode, date, sampleDate } = event[type]
