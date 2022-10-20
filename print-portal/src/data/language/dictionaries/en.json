@@ -97,7 +97,13 @@
         "languagePicker": {
             "changeLanguage": "Change language",
             "currentLanguage": "Current language",
-            "language": "Language"
+            "language": "Language",
+            "modal": {
+                "head": "Do you want to switch to English?",
+                "body": "Switching languages will return you to the first page and restart the process of creating a paper certificate.",
+                "yes": "Yes, switch to English",
+                "no": "No, stop"
+            }
         },
         "positiveTest": {
             "info": {
@@ -316,7 +322,6 @@
                 "PLAYING": "Camera is running",
                 "REJECTED": "You must first give permission to use your camera.",
                 "SELECTED": "Camera starting",
-                "STARTED": "Camera started",
                 "STARTING": "Starting camera",
                 "STOPPED": "Camera stopped"
             },

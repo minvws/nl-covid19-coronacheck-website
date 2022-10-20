@@ -7,6 +7,10 @@ export default {
     name: 'Identity',
     components: { LogoRijksoverheid, Skiplinks, LanguagePicker },
     computed: {
+        isCompact () {
+            // show compact header when not on home, see #TAIGA-4102
+            return this.$route.name?.toLowerCase() !== 'home';
+        },
         hasLanguages() {
             return this.$store.state.languages.all.length > 1;
         },
@@ -30,14 +34,14 @@ export default {
 </script>
 
 <template>
-    <header class="Identity">
+    <header class="Identity" :class="{ compact: isCompact }">
         <Skiplinks/>
 
         <div class="logo">
             <LogoRijksoverheid />
         </div>
 
-        <div class="pagewrap">
+        <div class="pagewrap" v-if="!isCompact">
             <div class="Identity__image-container">
                 <img
                     class="Identity__image"
@@ -70,6 +74,10 @@ export default {
     background: $color-RO_lightblue;
     position: relative;
     height: 250px;
+
+    &.compact {
+        height: 120px;
+    }
 
     .pagewrap {
         height: 100%;

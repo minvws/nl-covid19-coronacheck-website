@@ -16,6 +16,23 @@ export default {
         }
     },
     methods: {
+        openDialog (locale) {
+            const showDialog = this.$route.name !== 'Home';
+            const confirmAction = this.select;
+            if (showDialog) {
+                const { head, body, yes, no } = this.$t('components.languagePicker.modal', locale);
+                this.$store.commit('modal/set', {
+                    messageHead: head,
+                    messageBody: body,
+                    confirmYes: yes,
+                    confirmNo: no,
+                    confirm: true,
+                    closeButton: false,
+                    confirmAlert: true,
+                    confirmAction
+                });
+            } else confirmAction();
+        },
         select() {
             const locale = this.language.locale;
             this.$store.commit('languages/setCurrent', this.language);
@@ -36,7 +53,7 @@ export default {
         </span>
         <button
             v-else
-            @click="select()"
+            @click="openDialog(language.locale)"
             class="language-picker__link"
             :hreflang="language.locale"
             :lang="language.locale"
