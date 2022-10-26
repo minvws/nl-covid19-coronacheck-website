@@ -24,6 +24,9 @@ export default {
         monthName() {
             return dateTool.dateToMonthName(this.signedEvent.event.vaccination.date, this.$store.state.languages.current.locale);
         },
+        date () {
+            return dateTool.dateToString(this.signedEvent.event.vaccination.date, 'date-without-day', this.currentLanguage.locale)
+        },
         eventsAddedByQR () {
             return !!this.signedEventSet.find(signedEvent => getDCCProvider(signedEvent.providerIdentifier))
         },
@@ -39,7 +42,7 @@ export default {
             return locationList.join(' ' + this.$t('and').toLocaleLowerCase() + ' ')
         },
         title() {
-            return this.$t('components.vaccination.vaccination') + ' ' + this.monthName;
+            return this.$t('components.vaccination.vaccination')
         }
     }
 }
@@ -50,8 +53,11 @@ export default {
         <div class="proof-event__line">
             <h2>{{title}}</h2>
         </div>
-
         <dl>
+            <div class="proof-event__line">
+                <dt>{{$t('components.vaccination.info.vaccinationDate')}}:</dt>
+                <dd>{{date}}</dd>
+            </div>
             <div class="proof-event__line">
                 <dt>{{$t('components.eventInfo.name')}}:</dt>
                 <dd>{{holder.fullName}}</dd>
