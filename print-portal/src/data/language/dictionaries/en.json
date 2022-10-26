@@ -44,10 +44,6 @@
         "european": "International"
     },
     "close": "Close",
-    "provider": {
-        "pap": "GGD GHOR",
-        "max": "DigiD"
-    },
     "components": {
         "consent": {
             "vaccination": {
@@ -99,10 +95,10 @@
             "currentLanguage": "Current language",
             "language": "Language",
             "modal": {
-                "head": "Do you want to switch to English?",
                 "body": "Switching languages will return you to the first page and restart the process of creating a paper certificate.",
-                "yes": "Yes, switch to English",
-                "no": "No, stop"
+                "head": "Do you want to switch to English?",
+                "no": "No, don't switch",
+                "yes": "Yes, switch to English"
             }
         },
         "positiveTest": {
@@ -302,6 +298,10 @@
             "author": "CoronaCheck",
             "title": "Certificate containing QR code"
         }
+    },
+    "provider": {
+        "max": "DigiD",
+        "pap": "GGD GHOR"
     },
     "qr": {
         "and": "and",
@@ -790,6 +790,6 @@
         }
     },
     "warning": {
-        "noPositivetest": "No positive test result was found to be recorded into your vaccination certificate."
+        "noPositivetest": "No positive test result that could count for your vaccination certificate was found."
     }
 }

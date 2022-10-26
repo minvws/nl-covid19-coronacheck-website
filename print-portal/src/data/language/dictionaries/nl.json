@@ -44,14 +44,10 @@
         "european": "Internationaal"
     },
     "close": "Sluiten",
-    "provider": {
-        "pap": "GGD GHOR",
-        "max": "DigiD"
-    },
     "components": {
         "consent": {
             "vaccination": {
-                "body": "Dan heb je soms een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je oudste positieve testuitslag op om die mogelijk mee te laten tellen in je vaccinatiebewijs.",
+                "body": "Dan heb je soms een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je oudste positieve testuitslag op om die mogelijk mee te laten tellen voor je vaccinatiebewijs.",
                 "checkbox": "Ja, haal ook mijn positieve testuitslag op",
                 "title": "Heb je corona gehad?"
             }
@@ -99,10 +95,10 @@
             "currentLanguage": "Huidige taal",
             "language": "Taal",
             "modal": {
-                "head": "Wil je naar Nederlands wisselen?",
                 "body": "Als je van taal wisselt ga je terug naar het begin en moet je opnieuw je papieren bewijs maken.",
-                "yes": "Ja, wissel naar Nederlands",
-                "no": "Nee, stop"
+                "head": "Wil je naar Nederlands wisselen?",
+                "no": "Nee, niet wisselen",
+                "yes": "Ja, wissel naar Nederlands"
             }
         },
         "positiveTest": {
@@ -302,6 +298,10 @@
             "author": "CoronaCheck",
             "title": "Coronabewijs met QR-code"
         }
+    },
+    "provider": {
+        "max": "DigiD",
+        "pap": "GGD GHOR"
     },
     "qr": {
         "and": "en",
@@ -790,6 +790,6 @@
         }
     },
     "warning": {
-        "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen in je vaccinatiebewijs."
+        "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen voor je vaccinatiebewijs."
     }
 }
