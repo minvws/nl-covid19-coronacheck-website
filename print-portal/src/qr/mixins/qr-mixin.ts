@@ -4,6 +4,14 @@ import { getter as QRGetter, action as QRAction } from '@/qr/store/qr/events'
 import { QRData as QRDataType } from '@/qr/store/qr/types'
 import { Event, getHolderFromEvents, Holder } from '@/qr/utils/HolderUtil'
 import { ERROR_QR_DOMESTIC, ERROR_QR_INVALID, ERROR_QR_INVALID_TYPE, ERROR_QR_DUPLICATE, ERROR_QR_MISMATCH, isNoQRCodeFoundError } from '@/qr/utils/QRScanner'
+import {
+    VALIDATE_DCC_MISSING_HOLDER_NAMES,
+    VALIDATE_DCC_INVALID_DCC,
+    VALIDATE_DCC_BLOCKED_DCC,
+    VALIDATE_DCC_FUZZY_MATCH_FAILED,
+    VALIDATE_DCC_UNKNOWN_ERROR
+
+} from '@/interfaces/validate-qr'
 import { LetterCombination } from '@/qr/types/QRLetterCombinationType'
 import { CameraState } from '../types/QRScannerDataType'
 import { RouterNames } from '@/qr/router'
@@ -65,6 +73,16 @@ export default QRMixin.extend({
             switch (message) {
             case CameraState.NO_CAMERA:
                 return 'qr.dialog.no-camera'
+            case VALIDATE_DCC_FUZZY_MATCH_FAILED:
+                return 'qr.dialog.errorQRValidateFuzzyMatchFailed'
+            case VALIDATE_DCC_MISSING_HOLDER_NAMES:
+                return 'qr.dialog.errorQRValidateMissingHolderNames'
+            case VALIDATE_DCC_INVALID_DCC:
+                return 'qr.dialog.errorQRValidateInvalidDCC'
+            case VALIDATE_DCC_BLOCKED_DCC:
+                return 'qr.dialog.errorQRValidateBlockedDCC'
+            case VALIDATE_DCC_UNKNOWN_ERROR:
+                return 'qr.dialog.errorQRValidateUnknownError'
             case ERROR_QR_MISMATCH:
                 return 'qr.dialog.mismatch'
             case ERROR_QR_DUPLICATE:

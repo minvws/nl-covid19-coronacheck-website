@@ -51,7 +51,12 @@ export enum RouterNames {
     ERROR_QR_DOMESTIC = 'errorQRDomestic',
     ERROR_QR_INVALID_TYPE = 'errorQRInvalidType',
     ERROR_QR_DUPLICATE = 'errorQRDuplicate',
-    ERROR_QR_MISMATCH = 'errorQRMismatch'
+    ERROR_QR_MISMATCH = 'errorQRMismatch',
+    VALIDATE_DCC_FUZZY_MATCH_FAILED = 'errorQRValidateFuzzyMatchFailed',
+    VALIDATE_DCC_MISSING_HOLDER_NAMES = 'errorQRValidateMissingHolderNames',
+    VALIDATE_DCC_INVALID_DCC = 'errorQRValidateInvalidDCC',
+    VALIDATE_DCC_BLOCKED_DCC = 'errorQRValidateBlockedDCC',
+    VALIDATE_DCC_UNKNOWN_ERROR = 'errorQRValidateUnknownError',
 }
 
 const routes: Array<RouteConfig> = [
@@ -487,6 +492,81 @@ const routes: Array<RouteConfig> = [
     {
         path: '/de-persoonsgegevens-zijn-niet-hetzelfde',
         name: RouterNames.ERROR_QR_MISMATCH,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            },
+            next: {
+                go: -1
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/de-persoonsgegevens-in-het-bewijs-zijn-niet-hetzelfde',
+        name: RouterNames.VALIDATE_DCC_FUZZY_MATCH_FAILED,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            },
+            next: {
+                go: -1
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/de-persoonsgegevens-zijn-niet-aanwezig',
+        name: RouterNames.VALIDATE_DCC_MISSING_HOLDER_NAMES,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            },
+            next: {
+                go: -1
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/qr-code-is-ongeldig',
+        name: RouterNames.VALIDATE_DCC_INVALID_DCC,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            },
+            next: {
+                go: -1
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/qr-code-is-geblokkeerd',
+        name: RouterNames.VALIDATE_DCC_BLOCKED_DCC,
+        props: {
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            },
+            next: {
+                go: -1
+            }
+        },
+        component: QRGeneralPage
+    },
+    {
+        path: '/probleem-met-controleren-qr-code',
+        name: RouterNames.VALIDATE_DCC_UNKNOWN_ERROR,
         props: {
             link: {
                 to: {

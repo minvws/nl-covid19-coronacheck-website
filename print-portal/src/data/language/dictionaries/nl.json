@@ -353,6 +353,26 @@
                 "body": "De persoonsgegevens in het bewijs dat je probeert te scannen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.",
                 "title": "De persoonsgegevens zijn niet hetzelfde"
             },
+            "errorQRValidateFuzzyMatchFailed": {
+                "body": "De persoonsgegevens in het bewijs dat je probeert te scannen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.",
+                "title": "De persoonsgegevens zijn niet hetzelfde"
+            },
+            "errorQRValidateMissingHolderNames": {
+                "body": "TODO",
+                "title": "TODO"
+            },
+            "errorQRValidateInvalidDCC": {
+                "body": "TODO",
+                "title": "TODO"
+            },
+            "errorQRValidateBlockedDCC": {
+                "body": "TODO",
+                "title": "TODO"
+            },
+            "errorQRValidateUnknownError": {
+                "body": "TODO",
+                "title": "TODO"
+            },
             "no-camera": {
                 "body": "Controleer of je camera is aangesloten en geïnstalleerd op je apparaat. Of kies ervoor om je bewijs als bestand toe te voegen.",
                 "title": "Geen camera gevonden"
@@ -518,6 +538,36 @@
             "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
             "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
             "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<\/p>"
+        },
+        "errorQRValidateFuzzyMatchFailed": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
+            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<br><br>Controleer of de geboortedatum klopt en of je naam is geschreven zoals in je paspoort.<br><br>Klopt er iets niet? Laat je gegevens aanpassen bij de plek waar je die vaccinatie hebt gehad.<\/p>"
+        },
+        "errorQRValidateMissingHolderNames": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "TODO",
+            "pageIntro": "<p>TODO<\/p>"
+        },
+        "errorQRValidateInvalidDCC": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "TODO",
+            "pageIntro": "<p>TODO<\/p>"
+        },
+        "errorQRValidateBlockedDCC": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "TODO",
+            "pageIntro": "<p>TODO<\/p>"
+        },
+        "errorQRValidateUnknownError": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "TODO",
+            "pageIntro": "<p>TODO<\/p>"
         },
         "errorSessionExpired": {
             "pageHeader": "Je sessie is verlopen",

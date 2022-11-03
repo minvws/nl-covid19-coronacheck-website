@@ -1,14 +1,18 @@
 import axios, { AxiosError } from 'axios';
 import { timeoutTime as timeout } from '@/data/constants'
-import { ERROR_QR_MISMATCH } from '@/qr/utils/QRScanner';
 import { Event } from '@/qr/utils/HolderUtil';
 
-enum ValidationCodes {
-    VALIDATE_DCC_MISSING_HOLDER_NAMES = 99792,
-    VALIDATE_DCC_INVALID_DCC = 99793,
-    VALIDATE_DCC_BLOCKED_DCC = 99794,
-    VALIDATE_DCC_FUZZY_MATCH_FAILED = 99795,
-    VALIDATE_DCC_UNKNOWN = -1
+export const VALIDATE_DCC_FUZZY_MATCH_FAILED = 'VALIDATE_DCC_FUZZY_MATCH_FAILED';
+export const VALIDATE_DCC_MISSING_HOLDER_NAMES = 'VALIDATE_DCC_MISSING_HOLDER_NAMES';
+export const VALIDATE_DCC_INVALID_DCC = 'VALIDATE_DCC_INVALID_DCC';
+export const VALIDATE_DCC_BLOCKED_DCC = 'VALIDATE_DCC_BLOCKED_DCC';
+export const VALIDATE_DCC_UNKNOWN_ERROR = 'VALIDATE_DCC_UNKNOWN_ERROR';
+
+const ValidationCodes: Record<string, number> = {
+    [VALIDATE_DCC_MISSING_HOLDER_NAMES]: 99792,
+    [VALIDATE_DCC_INVALID_DCC]: 99793,
+    [VALIDATE_DCC_BLOCKED_DCC]: 99794,
+    [VALIDATE_DCC_FUZZY_MATCH_FAILED]: 99795
 }
 
 export const validateQR = async (credential: string, events: Event[]) => {
@@ -24,7 +28,8 @@ export const validateQR = async (credential: string, events: Event[]) => {
     } catch (e) {
         const error = e as AxiosError;
         const code = error?.response?.data?.code
-        const response = ValidationCodes[code] ?? ValidationCodes.VALIDATE_DCC_UNKNOWN;
-        return Promise.reject(response)
+        const codes = Object.keys(ValidationCodes).map((key) => ([ValidationCodes[key], key]))
+        const response = codes.find(([value]) => value === code)?.[1]
+        return Promise.reject(response || VALIDATE_DCC_UNKNOWN_ERROR)
     }
 }

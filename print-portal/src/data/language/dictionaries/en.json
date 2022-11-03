@@ -353,6 +353,26 @@
                 "body": "The personal details on the certificate you are trying to scan differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.",
                 "title": "The personal details don’t match"
             },
+            "errorQRValidateFuzzyMatchFailed": {
+                "body": "The personal details on the certificate you are trying to scan differ from the details you retrieved with TODO!!. Because of that, you can’t add this certificate.",
+                "title": "The personal details don’t match"
+            },
+            "errorQRValidateMissingHolderNames": {
+                "body": "TODO",
+                "title": "TODO"
+            },
+            "errorQRValidateInvalidDCC": {
+                "body": "TODO",
+                "title": "TODO"
+            },
+            "errorQRValidateBlockedDCC": {
+                "body": "TODO",
+                "title": "TODO"
+            },
+            "errorQRValidateUnknownError": {
+                "body": "TODO",
+                "title": "TODO"
+            },
             "no-camera": {
                 "body": "Make sure your camera is connected and installed on your device. Or choose to add your certificate as a file.",
                 "title": "No camera found"
@@ -518,6 +538,36 @@
             "link": "Continue with my retrieved vaccination(s)",
             "pageHeader": "The personal details don’t match",
             "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<\/p>"
+        },
+        "errorQRValidateFuzzyMatchFailed": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "The personal details don’t match",
+            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if you name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>"
+        },
+        "errorQRValidateMissingHolderNames": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "TODO",
+            "pageIntro": "<p>TODO<\/p>"
+        },
+        "errorQRValidateInvalidDCC": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "TODO",
+            "pageIntro": "<p>TODO<\/p>"
+        },
+        "errorQRValidateBlockedDCC": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "TODO",
+            "pageIntro": "<p>TODO<\/p>"
+        },
+        "errorQRValidateUnknownError": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "TODO",
+            "pageIntro": "<p>TODO<\/p>"
         },
         "errorSessionExpired": {
             "pageHeader": "Your session has expired",

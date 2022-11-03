@@ -3,7 +3,15 @@ import { getImagesFromPDFFile } from '@/qr/utils/PDFJsLib'
 import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
 import { Event } from '@/qr/utils/HolderUtil'
 import { FilterTypes } from '@/types/filter-types'
-import { validateQR } from '@/interfaces/validate-qr'
+import {
+    validateQR,
+    VALIDATE_DCC_MISSING_HOLDER_NAMES,
+    VALIDATE_DCC_INVALID_DCC,
+    VALIDATE_DCC_BLOCKED_DCC,
+    VALIDATE_DCC_FUZZY_MATCH_FAILED,
+    VALIDATE_DCC_UNKNOWN_ERROR
+
+} from '@/interfaces/validate-qr'
 
 export const ERROR_PERMISSION_REJECTED = 'Camera not found.'
 export const ERROR_QR_INVALID = 'ERROR_QR_INVALID'
@@ -11,7 +19,6 @@ export const ERROR_QR_INVALID_TYPE = 'ERROR_QR_INVALID_TYPE'
 export const ERROR_QR_DOMESTIC = 'ERROR_QR_DOMESTIC'
 export const ERROR_QR_DUPLICATE = 'ERROR_QR_DUPLICATE'
 export const ERROR_QR_MISMATCH = 'ERROR_QR_MISMATCH'
-export const ERROR_QR_FUZZY_MISMATCH = 'ERROR_QR_FUZZY_MISMATCH'
 
 export const isNoQRCodeFoundError = (error?: string) => {
     return error?.includes(QrScanner.NO_QR_CODE_FOUND) || false
@@ -61,6 +68,11 @@ export const isValidQR = (qr: string, events: Event[]) => {
 
 const getErrorPriority = (error: string) => {
     const QR_ERROR_ORDER = [
+        VALIDATE_DCC_MISSING_HOLDER_NAMES,
+        VALIDATE_DCC_INVALID_DCC,
+        VALIDATE_DCC_BLOCKED_DCC,
+        VALIDATE_DCC_FUZZY_MATCH_FAILED,
+        VALIDATE_DCC_UNKNOWN_ERROR,
         ERROR_QR_MISMATCH,
         ERROR_QR_INVALID_TYPE,
         ERROR_QR_DOMESTIC,
