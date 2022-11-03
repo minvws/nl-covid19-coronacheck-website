@@ -366,8 +366,8 @@
                 "title": "TODO"
             },
             "errorQRValidateBlockedDCC": {
-                "body": "TODO",
-                "title": "TODO"
+                "body": "De QR-code die je probeerd toe te voegen is ongeldig verklaard en daarom geblokkeerd. Probeer een geldige QR-code toe te voegen of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.",
+                "title": "QR-code ongeldig verklaard"
             },
             "errorQRValidateUnknownError": {
                 "body": "TODO",
@@ -560,8 +560,8 @@
         "errorQRValidateBlockedDCC": {
             "button": "Probeer opnieuw",
             "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
-            "pageHeader": "TODO",
-            "pageIntro": "<p>TODO<\/p>"
+            "pageHeader": "QR-code ongeldig verklaard",
+            "pageIntro": "<p>De QR-code die je probeerd toe te voegen is ongeldig verklaard en daarom geblokkeerd. Probeer een geldige QR-code toe te voegen of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.<\/p>"
         },
         "errorQRValidateUnknownError": {
             "button": "Probeer opnieuw",

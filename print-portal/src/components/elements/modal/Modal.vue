@@ -1,10 +1,11 @@
 <script>
 import CcModestButton from '@/components/elements/CcModestButton';
 import modalMixin from './modal-mixin'
+import ErrorList from '@/components/elements/ErrorList.vue';
 
 export default {
     name: 'Modal',
-    components: { CcModestButton },
+    components: { CcModestButton, ErrorList },
     mixins: [modalMixin],
     computed: {
         messageHead() {
@@ -36,6 +37,9 @@ export default {
         },
         actions () {
             return this.$store.state.modal.actions;
+        },
+        errors () {
+            return this.$store.state.modal.errors;
         }
     },
     methods: {
@@ -89,8 +93,9 @@ export default {
                     id="modal__head">
                 </h1>
                 <div
-                    v-html="messageBody"
                     id="modal__body">
+                    <div v-html="messageBody" />
+                    <ErrorList class="errors" v-if="errors && errors.length" v-bind="{ errors }" />
                 </div>
                 <div id="modal__footer">
                     <CcModestButton
@@ -252,5 +257,8 @@ export default {
         border-radius: 0;
         overflow: auto;
     }
+}
+.errors {
+    padding-top: 1em;
 }
 </style>

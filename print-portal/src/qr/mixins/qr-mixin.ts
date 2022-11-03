@@ -15,10 +15,11 @@ import {
 import { LetterCombination } from '@/qr/types/QRLetterCombinationType'
 import { CameraState } from '../types/QRScannerDataType'
 import { RouterNames } from '@/qr/router'
+import { QRValidationErrorCode } from '@/data/constants/error-codes'
 
 export type QRData = QRDataType
 type ModalActions = {label: string, action: () => void }[]
-export type Modal = { title: string, body: string, actions?: ModalActions }
+export type Modal = { title: string, body: string, actions?: ModalActions, errors?: string[] }
 
 const moduleName = 'qr'
 
@@ -101,25 +102,28 @@ export default QRMixin.extend({
             const id = isNoQRCodeFoundError(message) ? 'NO_QR_CODE_FOUND' : message
             const name = (RouterNames as Record<string, string>)[id]
             if (!name) return false;
-            this.$router.push({ name })
+            const errors: any = QRValidationErrorCode(message);
+            this.$router.push({ name, params: { errors } })
             return true
         },
         openErrorInDialog (message: string, actions?: ModalActions) {
             const id = this.errorMessageId(message)
             if (id) {
-                const message = this.$t(id) as Record<string, unknown>
-                const modal = { ...message, actions } as Modal
+                const content = this.$t(id) as Record<string, unknown>
+                const errors: any = QRValidationErrorCode(message);
+                const modal = { ...content, actions, errors } as Modal
                 this.openDialogError(modal)
                 return true
             }
             return false
         },
-        openDialogError ({ title, body, actions }: Modal) {
+        openDialogError ({ title, body, actions, errors }: Modal) {
             this.$store.commit('modal/set', {
                 messageHead: title,
                 messageBody: body,
                 showConfirm: false,
                 closeButton: true,
+                errors,
                 actions
             })
         },

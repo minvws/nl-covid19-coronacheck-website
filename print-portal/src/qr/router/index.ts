@@ -507,7 +507,8 @@ const routes: Array<RouteConfig> = [
     {
         path: '/de-persoonsgegevens-in-het-bewijs-zijn-niet-hetzelfde',
         name: RouterNames.VALIDATE_DCC_FUZZY_MATCH_FAILED,
-        props: {
+        props: ({ params }) => ({
+            ...params,
             link: {
                 to: {
                     name: RouterNames.SCANNER_COMPLETE
@@ -516,13 +517,13 @@ const routes: Array<RouteConfig> = [
             next: {
                 go: -1
             }
-        },
+        }),
         component: QRGeneralPage
     },
     {
         path: '/de-persoonsgegevens-zijn-niet-aanwezig',
-        name: RouterNames.VALIDATE_DCC_MISSING_HOLDER_NAMES,
-        props: {
+        props: ({ params }) => ({
+            ...params,
             link: {
                 to: {
                     name: RouterNames.SCANNER_COMPLETE
@@ -531,13 +532,14 @@ const routes: Array<RouteConfig> = [
             next: {
                 go: -1
             }
-        },
+        }),
         component: QRGeneralPage
     },
     {
         path: '/qr-code-is-ongeldig',
         name: RouterNames.VALIDATE_DCC_INVALID_DCC,
-        props: {
+        props: ({ params }) => ({
+            ...params,
             link: {
                 to: {
                     name: RouterNames.SCANNER_COMPLETE
@@ -546,13 +548,14 @@ const routes: Array<RouteConfig> = [
             next: {
                 go: -1
             }
-        },
+        }),
         component: QRGeneralPage
     },
     {
         path: '/qr-code-is-geblokkeerd',
         name: RouterNames.VALIDATE_DCC_BLOCKED_DCC,
-        props: {
+        props: ({ params }) => ({
+            ...params,
             link: {
                 to: {
                     name: RouterNames.SCANNER_COMPLETE
@@ -561,13 +564,14 @@ const routes: Array<RouteConfig> = [
             next: {
                 go: -1
             }
-        },
+        }),
         component: QRGeneralPage
     },
     {
         path: '/probleem-met-controleren-qr-code',
         name: RouterNames.VALIDATE_DCC_UNKNOWN_ERROR,
-        props: {
+        props: ({ params }) => ({
+            ...params,
             link: {
                 to: {
                     name: RouterNames.SCANNER_COMPLETE
@@ -576,7 +580,7 @@ const routes: Array<RouteConfig> = [
             next: {
                 go: -1
             }
-        },
+        }),
         component: QRGeneralPage
     },
     {
