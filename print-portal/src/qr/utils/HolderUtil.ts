@@ -2,6 +2,7 @@ import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
 
 export type Holder = {
     firstName: string;
+    infix: string;
     lastName: string;
     birthDate: string;
 }

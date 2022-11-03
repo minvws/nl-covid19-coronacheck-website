@@ -1,8 +1,17 @@
 import QrScanner from 'qr-scanner'
 import { getImagesFromPDFFile } from '@/qr/utils/PDFJsLib'
 import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
-import { Event, isHolderEqual } from '@/qr/utils/HolderUtil'
+import { Event } from '@/qr/utils/HolderUtil'
 import { FilterTypes } from '@/types/filter-types'
+import {
+    validateQR,
+    VALIDATE_DCC_MISSING_HOLDER_NAMES,
+    VALIDATE_DCC_INVALID_DCC,
+    VALIDATE_DCC_BLOCKED_DCC,
+    VALIDATE_DCC_FUZZY_MATCH_FAILED,
+    VALIDATE_DCC_UNKNOWN_ERROR
+
+} from '@/interfaces/validate-qr'
 
 export const ERROR_PERMISSION_REJECTED = 'Camera not found.'
 export const ERROR_QR_INVALID = 'ERROR_QR_INVALID'
@@ -54,14 +63,16 @@ export const isValidQR = (qr: string, events: Event[]) => {
     if (!isOfType(qr, FilterTypes.VACCINATION)) {
         return Promise.reject(ERROR_QR_INVALID_TYPE)
     }
-    if (!isHolderEqual(qr, events)) {
-        return Promise.reject(ERROR_QR_MISMATCH)
-    }
-    return Promise.resolve(true)
+    return validateQR(qr, events);
 }
 
 const getErrorPriority = (error: string) => {
     const QR_ERROR_ORDER = [
+        VALIDATE_DCC_MISSING_HOLDER_NAMES,
+        VALIDATE_DCC_INVALID_DCC,
+        VALIDATE_DCC_BLOCKED_DCC,
+        VALIDATE_DCC_FUZZY_MATCH_FAILED,
+        VALIDATE_DCC_UNKNOWN_ERROR,
         ERROR_QR_MISMATCH,
         ERROR_QR_INVALID_TYPE,
         ERROR_QR_DOMESTIC,
