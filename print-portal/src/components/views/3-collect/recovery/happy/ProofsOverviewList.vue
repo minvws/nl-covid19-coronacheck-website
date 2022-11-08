@@ -88,14 +88,18 @@ export default Vue.extend({
         },
         events () {
             const events = this.$store.getters['signedEvents/getProofEvents']('all');
-            return events.map(item => {
+            const result = events.map(item => {
                 const tag = item.event.type
                 return {
                     ...item,
                     tag
                 }
             })
-                .filter(({ event: { vaccination } }) => !!vaccination) // only show vaccinations, see #TAIGA-4607
+            if (!this.$store.getters.removeExpiredPositiveTestsWithPositiveTest) {
+                // show all results, see #TAIGA-4532
+                return result
+            }
+            return result.filter(({ event: { vaccination } }) => !!vaccination) // only show vaccinations, see #TAIGA-4607
         }
     }
 })

@@ -291,8 +291,36 @@ CCScanner_downloads_plot_raw = [
     },
     {
         date: "2022-08-26",
-        downloads: 3209505
-    }
+        downloads: 3209511
+    },
+    {
+        date: "2022-09-02",
+        downloads: 3213654
+    },
+    {
+        date: "2022-09-09",
+        downloads: 3217375
+    },
+    {
+        date: "2022-09-16",
+        downloads: 3221094
+    },
+    {
+        date: "2022-09-23",
+        downloads: 3224674
+    },
+    {
+        date: "2022-09-30",
+        downloads: 3228429
+    },
+    {
+        date: "2022-10-07",
+        downloads: 3232074
+    },
+    {
+        date: "2022-10-14",
+        downloads: 3235807
+    },
 ]
 
 const CCScanner_downloads_plot = CCScanner_downloads_plot_raw.map(({date, ...rest}) => {
