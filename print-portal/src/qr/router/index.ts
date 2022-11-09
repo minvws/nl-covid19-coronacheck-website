@@ -505,6 +505,22 @@ const routes: Array<RouteConfig> = [
         component: QRGeneralPage
     },
     {
+        path: '/de-persoonsgegevens-ontbreken',
+        name: RouterNames.VALIDATE_DCC_MISSING_HOLDER_NAMES,
+        props: ({ params }) => ({
+            ...params,
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            },
+            next: {
+                go: -1
+            }
+        }),
+        component: QRGeneralPage
+    },
+    {
         path: '/de-persoonsgegevens-in-het-bewijs-zijn-niet-hetzelfde',
         name: RouterNames.VALIDATE_DCC_FUZZY_MATCH_FAILED,
         props: ({ params }) => ({
