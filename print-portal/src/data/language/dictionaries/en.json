@@ -346,7 +346,7 @@
                 "title": "QR code has been declared invalid"
             },
             "errorQRValidateFuzzyMatchFailed": {
-                "body": "<p>The personal details on the certificate you are trying to scan differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if you name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>",
+                "body": "<p>The personal details on the certificate you are trying to scan differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>",
                 "title": "The personal details don’t match"
             },
             "errorQRValidateInvalidDCC": {
@@ -549,7 +549,7 @@
             "button": "Try again",
             "link": "Continue with my retrieved vaccination(s)",
             "pageHeader": "The personal details don’t match",
-            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if you name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>"
+            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>"
         },
         "errorQRValidateInvalidDCC": {
             "button": "Try again",
@@ -588,7 +588,7 @@
             "pageBody0G": "<h3>Travel safely with a certificate<\/h3><p>Travelling to a country where a coronavirus pass is required? Then you need an international certificate. You can create this if:<ul class=\"ul--with-padding\"><li>You are vaccinated<\/li><li>You have tested positive and have recovered from coronavirus<\/li><li>You have tested negative and don’t have coronavirus<\/li><\/ul><\/p><h3>Your certificate contains a QR code<\/h3><p>The QR code on your certificate can be checked at the entrance to places and activities abroad. Or at the border.<p><h3>About your data<\/h3><p>The <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> states the way CoronaCheck handles your data.<\/p>",
             "pageBody1G": "<h3>Dutch certificate for 1G access<\/h3><p>Visiting a place in the Netherlands where a coronavirus pass is required to enter? You only get access with a test certificate (1G access). You can create this if you have a negative coronavirus test.<p><h3>International certificate for abroad<\/h3><p>Are you abroad or crossing the border? Then you need an international certificate. You can create this if:<ul class=\"ul--with-padding\"><li>You have been vaccinated<\/li><li>You have tested positive and have recovered from coronavirus<\/li><li>You have tested negative and don’t have coronavirus<\/li><\/ul><\/p><h3>About your data<\/h3><p>The <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> states the way CoronaCheck handles your data.<\/p>",
             "pageHeader": "Get access with a certificate on paper",
-            "pageIntro": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your and other people’s health matters. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass.<\/p><p>A certificate on paper is convenient if you don't have a smartphone.<\/p>",
+            "pageIntro": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your health matters, so does the health of others. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass.<\/p><p>A certificate on paper is convenient if you don't have a smartphone.<\/p>",
             "pageIntro0G": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your health matters, and so does the health of others. That is why some countries require a coronavirus pass. For example at the border, or at certain places and activities. A certificate on paper is convenient if you don't have a smartphone.<\/p>",
             "userConsentHeader": "Start making a certificate on paper",
             "userConsentText": "I have read the <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> and understand how CoronaCheck processes my data."
