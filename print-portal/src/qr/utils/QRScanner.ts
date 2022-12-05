@@ -63,7 +63,6 @@ export const isValidQR = (qr: string, events: Event[]) => {
     if (!isOfType(qr, FilterTypes.VACCINATION)) {
         return Promise.reject(ERROR_QR_INVALID_TYPE)
     }
-    console.log({ events, la: decodeQRtoDCC(qr) })
     return validateQR(qr, events);
 }
 
