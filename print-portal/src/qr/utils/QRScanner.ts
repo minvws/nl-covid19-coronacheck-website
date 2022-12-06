@@ -1,7 +1,7 @@
 import QrScanner from 'qr-scanner'
 import { getImagesFromPDFFile } from '@/qr/utils/PDFJsLib'
 import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
-import { Event } from '@/qr/utils/HolderUtil'
+import { Event, isHolderDayAndMonthEqual } from '@/qr/utils/HolderUtil'
 import { FilterTypes } from '@/types/filter-types'
 import {
     validateQR,
@@ -53,6 +53,10 @@ export const isValidLetterCombinationLengthError = (code: string) => {
     return undefined
 }
 
+export const isDayAndMonthOfBirthEqual = (qr:string, events: Event[]) => {
+    return !true
+}
+
 export const isValidQR = (qr: string, events: Event[]) => {
     if (isDutchQR(qr)) {
         return Promise.reject(ERROR_QR_DOMESTIC)
@@ -62,6 +66,9 @@ export const isValidQR = (qr: string, events: Event[]) => {
     }
     if (!isOfType(qr, FilterTypes.VACCINATION)) {
         return Promise.reject(ERROR_QR_INVALID_TYPE)
+    }
+    if (!isHolderDayAndMonthEqual(qr, events)) {
+        return Promise.reject(ERROR_QR_MISMATCH)
     }
     return validateQR(qr, events);
 }

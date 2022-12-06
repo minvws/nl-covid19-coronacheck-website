@@ -36,6 +36,13 @@ const isDayAndMonthOfBirthEqual = (holder: Holder, target: Holder) => {
     return (a.getDate() === b.getDate()) && (a.getMonth() === b.getMonth())
 }
 
+export const isHolderDayAndMonthEqual = (qr: string, events: Event[]) => {
+    const holder = getHolderFromEvents(events)
+    if (!holder) return false
+    const { result: { holder: target } } = decodeQRtoDCC(qr)
+    return isDayAndMonthOfBirthEqual(holder, target)
+}
+
 export const isHolderEqual = (qr: string, events: Event[]) => {
     const holder = getHolderFromEvents(events)
     if (!holder) return false
