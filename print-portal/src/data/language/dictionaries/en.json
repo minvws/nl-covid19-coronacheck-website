@@ -349,6 +349,10 @@
                 "body": "<p>The personal details on the certificate you are trying to scan differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>",
                 "title": "The personal details don’t match"
             },
+            "errorQRValidateDifferentInitials": {
+                "body": "<p>The personal details on the certificate you are trying to scan differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>",
+                "title": "The personal details don’t match"
+            },
             "errorQRValidateInvalidDCC": {
                 "body": "The QR code you are trying to scan has been declared invalid. For that reason, you cannot add it. Try to add a valid QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.",
                 "title": "QR code has been declared invalid"
@@ -544,6 +548,12 @@
             "link": "Continue with my retrieved vaccination(s)",
             "pageHeader": "QR code has been declared invalid",
             "pageIntro": "<p>The QR code you are trying to add has been declared invalid and is therefore blocked. Try to add a valid QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.<\/p>"
+        },
+        "errorQRValidateDifferentInitials": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "The personal details don’t match",
+            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>"
         },
         "errorQRValidateFuzzyMatchFailed": {
             "button": "Try again",

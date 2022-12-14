@@ -56,6 +56,7 @@ export enum RouterNames {
     VALIDATE_DCC_MISSING_HOLDER_NAMES = 'errorQRValidateMissingHolderNames',
     VALIDATE_DCC_INVALID_DCC = 'errorQRValidateInvalidDCC',
     VALIDATE_DCC_BLOCKED_DCC = 'errorQRValidateBlockedDCC',
+    VALIDATE_DCC_DIFFERENT_INITIALS = 'errorQRValidateDifferentInitials',
     VALIDATE_DCC_UNKNOWN_ERROR = 'errorQRValidateUnknownError',
 }
 
@@ -523,6 +524,22 @@ const routes: Array<RouteConfig> = [
     {
         path: '/de-persoonsgegevens-in-het-bewijs-zijn-niet-hetzelfde',
         name: RouterNames.VALIDATE_DCC_FUZZY_MATCH_FAILED,
+        props: ({ params }) => ({
+            ...params,
+            link: {
+                to: {
+                    name: RouterNames.SCANNER_COMPLETE
+                }
+            },
+            next: {
+                go: -1
+            }
+        }),
+        component: QRGeneralPage
+    },
+    {
+        path: '/de-initialen-in-het-bewijs-zijn-niet-hetzelfde',
+        name: RouterNames.VALIDATE_DCC_DIFFERENT_INITIALS,
         props: ({ params }) => ({
             ...params,
             link: {
