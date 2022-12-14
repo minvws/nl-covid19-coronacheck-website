@@ -345,6 +345,14 @@ CCScanner_downloads_plot_raw = [
         date: "2022-11-25",
         downloads: 3267489
     },
+    {
+        date: "2022-12-02",
+        downloads: 3272016
+    },
+    {
+        date: "2022-12-09",
+        downloads: 3275330
+    },
 ]
 
 const CCScanner_downloads_plot = CCScanner_downloads_plot_raw.map(({date, ...rest}) => {
