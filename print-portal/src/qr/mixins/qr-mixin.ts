@@ -9,6 +9,7 @@ import {
     VALIDATE_DCC_INVALID_DCC,
     VALIDATE_DCC_BLOCKED_DCC,
     VALIDATE_DCC_FUZZY_MATCH_FAILED,
+    VALIDATE_DCC_DIFFERENT_INITIALS,
     VALIDATE_DCC_UNKNOWN_ERROR
 
 } from '@/interfaces/validate-qr'
@@ -76,6 +77,8 @@ export default QRMixin.extend({
                 return 'qr.dialog.no-camera'
             case VALIDATE_DCC_FUZZY_MATCH_FAILED:
                 return 'qr.dialog.errorQRValidateFuzzyMatchFailed'
+            case VALIDATE_DCC_DIFFERENT_INITIALS:
+                return 'qr.dialog.errorQRValidateDifferentInitials'
             case VALIDATE_DCC_MISSING_HOLDER_NAMES:
                 return 'qr.dialog.errorQRValidateMissingHolderNames'
             case VALIDATE_DCC_INVALID_DCC:
