@@ -44,10 +44,6 @@
         "european": "International"
     },
     "close": "Close",
-    "provider": {
-        "pap": "GGD GHOR",
-        "max": "DigiD"
-    },
     "components": {
         "consent": {
             "vaccination": {
@@ -99,10 +95,10 @@
             "currentLanguage": "Current language",
             "language": "Language",
             "modal": {
-                "head": "Do you want to switch to English?",
                 "body": "Switching languages will return you to the first page and restart the process of creating a paper certificate.",
-                "yes": "Yes, switch to English",
-                "no": "No, stop"
+                "head": "Do you want to switch to English?",
+                "no": "No, don't switch",
+                "yes": "Yes, switch to English"
             }
         },
         "positiveTest": {
@@ -169,6 +165,7 @@
                     "yes": "Yes"
                 },
                 "identificationCode": "Unique vaccination identifier",
+                "displayName": "Product name",
                 "manufacturer": "Vaccine manufacturer",
                 "pathogen": "Pathogen",
                 "vaccinationCountry": "Country of vaccination",
@@ -303,6 +300,10 @@
             "title": "Certificate containing QR code"
         }
     },
+    "provider": {
+        "max": "DigiD",
+        "pap": "GGD GHOR"
+    },
     "qr": {
         "and": "and",
         "camera": {
@@ -340,6 +341,30 @@
             "duplicate": {
                 "body": "You have already scanned this QR code. Try scanning another QR code.",
                 "title": "This QR code has already been scanned"
+            },
+            "errorQRValidateBlockedDCC": {
+                "body": "The QR code you are trying to scan has been declared invalid. For that reason, you cannot add it. Try to add a valid QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.",
+                "title": "QR code has been declared invalid"
+            },
+            "errorQRValidateFuzzyMatchFailed": {
+                "body": "<p>The personal details on the certificate you are trying to scan differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>",
+                "title": "The personal details don’t match"
+            },
+            "errorQRValidateDifferentInitials": {
+                "body": "<p>The personal details on the certificate you are trying to scan differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>",
+                "title": "The personal details don’t match"
+            },
+            "errorQRValidateInvalidDCC": {
+                "body": "The QR code you are trying to scan has been declared invalid. For that reason, you cannot add it. Try to add a valid QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.",
+                "title": "QR code has been declared invalid"
+            },
+            "errorQRValidateMissingHolderNames": {
+                "body": "Try to add a different QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.",
+                "title": "Sorry, something went wrong"
+            },
+            "errorQRValidateUnknownError": {
+                "body": "Try to add a different QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.",
+                "title": "Sorry, something went wrong"
             },
             "invalid": {
                 "body": "The QR code you are trying to scan is not recognised as a coronavirus pass. Check if you’re holding the correct QR code in front of the camera.",
@@ -517,7 +542,43 @@
             "button": "Try again",
             "link": "Continue with my retrieved vaccination(s)",
             "pageHeader": "The personal details don’t match",
-            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<\/p>"
+            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<\/p><p>Please check if the date of birth is correct, and if your name is written as in your passport.<\/p><p>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>"
+        },
+        "errorQRValidateBlockedDCC": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "QR code has been declared invalid",
+            "pageIntro": "<p>The QR code you are trying to add has been declared invalid and is therefore blocked. Try to add a valid QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.<\/p>"
+        },
+        "errorQRValidateDifferentInitials": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "The personal details don’t match",
+            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>"
+        },
+        "errorQRValidateFuzzyMatchFailed": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "The personal details don’t match",
+            "pageIntro": "<p>The personal details on the certificate you are trying to add differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>"
+        },
+        "errorQRValidateInvalidDCC": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "QR code has been declared invalid",
+            "pageIntro": "<p>The QR code you are trying to scan has been declared invalid. Try to add a valid QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.<\/p>"
+        },
+        "errorQRValidateMissingHolderNames": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "Sorry, something went wrong",
+            "pageIntro": "<p>Try to add a different QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.<\/p>"
+        },
+        "errorQRValidateUnknownError": {
+            "button": "Try again",
+            "link": "Continue with my retrieved vaccination(s)",
+            "pageHeader": "Sorry, something went wrong",
+            "pageIntro": "<p>Try to add a different QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.<\/p>"
         },
         "errorSessionExpired": {
             "pageHeader": "Your session has expired",
@@ -538,7 +599,7 @@
             "pageBody0G": "<h3>Travel safely with a certificate<\/h3><p>Travelling to a country where a coronavirus pass is required? Then you need an international certificate. You can create this if:<ul class=\"ul--with-padding\"><li>You are vaccinated<\/li><li>You have tested positive and have recovered from coronavirus<\/li><li>You have tested negative and don’t have coronavirus<\/li><\/ul><\/p><h3>Your certificate contains a QR code<\/h3><p>The QR code on your certificate can be checked at the entrance to places and activities abroad. Or at the border.<p><h3>About your data<\/h3><p>The <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> states the way CoronaCheck handles your data.<\/p>",
             "pageBody1G": "<h3>Dutch certificate for 1G access<\/h3><p>Visiting a place in the Netherlands where a coronavirus pass is required to enter? You only get access with a test certificate (1G access). You can create this if you have a negative coronavirus test.<p><h3>International certificate for abroad<\/h3><p>Are you abroad or crossing the border? Then you need an international certificate. You can create this if:<ul class=\"ul--with-padding\"><li>You have been vaccinated<\/li><li>You have tested positive and have recovered from coronavirus<\/li><li>You have tested negative and don’t have coronavirus<\/li><\/ul><\/p><h3>About your data<\/h3><p>The <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> states the way CoronaCheck handles your data.<\/p>",
             "pageHeader": "Get access with a certificate on paper",
-            "pageIntro": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your and other people’s health matters. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass.<\/p><p>A certificate on paper is convenient if you don't have a smartphone.<\/p>",
+            "pageIntro": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your health matters, so does the health of others. That is why some countries and places ask for a coronavirus pass. You’re only allowed to enter carrying this pass.<\/p><p>A certificate on paper is convenient if you don't have a smartphone.<\/p>",
             "pageIntro0G": "<h2 class=\"screen-reader-text\">Here's how it works<\/h2><p>Your health matters, and so does the health of others. That is why some countries require a coronavirus pass. For example at the border, or at certain places and activities. A certificate on paper is convenient if you don't have a smartphone.<\/p>",
             "userConsentHeader": "Start making a certificate on paper",
             "userConsentText": "I have read the <a href=\"https:\/\/coronacheck.nl\/en\/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy statement<\/a> and understand how CoronaCheck processes my data."
@@ -790,6 +851,6 @@
         }
     },
     "warning": {
-        "noPositivetest": "No positive test result was found to be recorded into your vaccination certificate."
+        "noPositivetest": "No positive test result that could count for your vaccination certificate was found."
     }
 }
