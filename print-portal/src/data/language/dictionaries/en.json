@@ -165,6 +165,7 @@
                     "yes": "Yes"
                 },
                 "identificationCode": "Unique vaccination identifier",
+                "displayName": "Product name",
                 "manufacturer": "Vaccine manufacturer",
                 "pathogen": "Pathogen",
                 "vaccinationCountry": "Country of vaccination",

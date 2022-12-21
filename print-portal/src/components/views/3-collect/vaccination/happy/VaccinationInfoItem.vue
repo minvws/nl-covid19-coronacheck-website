@@ -22,6 +22,9 @@ export default {
         vaccineInfo() {
             return this.$store.getters.getVaccineInfo(this.vaccination.hpkCode);
         },
+        vaccineDisplayName () {
+            return this.vaccineInfo?.displayName
+        },
         vaccineBrand() {
             if (this.vaccineInfo) {
                 return this.vaccineInfo.name;
@@ -156,6 +159,14 @@ export default {
                     </dt>
                     <dd>
                         {{vaccineBrand}}
+                    </dd>
+                </div>
+                <div class="dl__row" v-if="vaccineDisplayName">
+                    <dt>
+                        {{$t('components.vaccination.info.displayName')}}:
+                    </dt>
+                    <dd>
+                        {{ vaccineDisplayName }}
                     </dd>
                 </div>
                 <div class="dl__row">
