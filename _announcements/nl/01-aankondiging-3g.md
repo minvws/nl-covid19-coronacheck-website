@@ -1,7 +1,7 @@
 ---
 lang: nl
 # set `published` to true to show the announcement on the homepage:
-published: true
+published: false
 # Always set a title:
 title: '3G-toegang en 1G-toegang in Nederland'
 # Version: 0g, 1g or 3g
