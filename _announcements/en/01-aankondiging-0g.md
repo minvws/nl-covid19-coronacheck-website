@@ -1,7 +1,7 @@
 ---
 lang: en
 # set `published` to true to show the announcement on the homepage:
-published: true
+published: false
 # Always set a title:
 title: ''
 # Version: 0g, 1g or 3g
