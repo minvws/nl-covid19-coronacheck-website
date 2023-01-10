@@ -1,11 +1,9 @@
 <template>
     <div>
         <template v-if="errors.length">
-            <p>
-                <strong>
-                    {{ $tc("views.errorGeneral.label", errors.length) }}
-                </strong>
-            </p>
+            <strong>
+                {{ $tc("views.errorGeneral.label", errors.length) }}
+            </strong>
             <ul class="list" v-if="errors.length > 1">
                 <li :key="index" v-for="(error, index) in errors">
                     {{ error }}
