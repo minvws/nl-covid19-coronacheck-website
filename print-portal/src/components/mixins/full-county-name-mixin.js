@@ -1,12 +1,12 @@
 export default {
     methods: {
-        getFullCountryName (name) {
-            const id = `country.${name}`
+        getFullCountryName (shortCode) {
+            const id = `country.${shortCode}`
             const value = this.$t(id)
             if (value === id) {
-                // valuenis the same as id, so no translation is available
-                // return the name
-                return name
+                // short-code is the same as id, so no translation is available
+                // return the shortCode
+                return shortCode
             }
             return value
         }
