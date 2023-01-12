@@ -12,7 +12,7 @@ redirect_from:
     - /only-international 
     - /en/only-international
 ---
-The government has announced that from the 23d of march onwards, the coronavirus entry pass will no longer be used in the Netherlands. 
+The government has announced that from the 23d of march 2022 onwards, the coronavirus entry pass will no longer be used in the Netherlands. 
 
 In the CoronaCheck-app, the Dutch certificates are no longer visible from that moment on. Because the coronavirus entry pass is still necessary for traveling abroad, CoronaCheck can still be used for creating and using international certificates. 
 
