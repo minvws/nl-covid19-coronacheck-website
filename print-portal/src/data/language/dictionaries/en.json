@@ -154,7 +154,7 @@
         },
         "vaccination": {
             "info": {
-                "detailsRetrieved": "The following details of your vaccination have been retrieved at %{provider}",
+                "detailsRetrieved": "The following details about your vaccination have been retrieved at %{provider}",
                 "doses": "Doses",
                 "finalDosis": "Is this the last dose of your vaccination?",
                 "finalDosisValue": {
@@ -168,7 +168,7 @@
                 "displayName": "Product name",
                 "manufacturer": "Vaccine manufacturer",
                 "pathogen": "Pathogen",
-                "vaccinationCountry": "Country of vaccination",
+                "vaccinationCountry": "Vaccinated in",
                 "vaccinationDate": "Vaccination date",
                 "vaccine": "Vaccine",
                 "vaccineType": "Vaccine type"
@@ -852,5 +852,8 @@
     },
     "warning": {
         "noPositivetest": "No positive test result that could count for your vaccination certificate was found."
+    },
+    "country": {
+        "NL": "The Netherlands"
     }
 }
