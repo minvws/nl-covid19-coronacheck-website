@@ -44,14 +44,10 @@
         "european": "Internationaal"
     },
     "close": "Sluiten",
-    "provider": {
-        "pap": "GGD GHOR",
-        "max": "DigiD"
-    },
     "components": {
         "consent": {
             "vaccination": {
-                "body": "Dan heb je soms een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je oudste positieve testuitslag op om die mogelijk mee te laten tellen in je vaccinatiebewijs.",
+                "body": "Dan heb je soms een prik minder nodig om volledig gevaccineerd te zijn. Haal ook je oudste positieve testuitslag op om die mogelijk mee te laten tellen voor je vaccinatiebewijs.",
                 "checkbox": "Ja, haal ook mijn positieve testuitslag op",
                 "title": "Heb je corona gehad?"
             }
@@ -99,10 +95,10 @@
             "currentLanguage": "Huidige taal",
             "language": "Taal",
             "modal": {
-                "head": "Wil je naar Nederlands wisselen?",
                 "body": "Als je van taal wisselt ga je terug naar het begin en moet je opnieuw je papieren bewijs maken.",
-                "yes": "Ja, wissel naar Nederlands",
-                "no": "Nee, stop"
+                "head": "Wil je naar Nederlands wisselen?",
+                "no": "Nee, niet wisselen",
+                "yes": "Ja, wissel naar Nederlands"
             }
         },
         "positiveTest": {
@@ -169,6 +165,7 @@
                     "yes": "Ja"
                 },
                 "identificationCode": "Uniek vaccinatienummer",
+                "displayName": "Productnaam",
                 "manufacturer": "Producent",
                 "pathogen": "Ziekteverwekker",
                 "vaccinationCountry": "Gevaccineerd in",
@@ -303,6 +300,10 @@
             "title": "Coronabewijs met QR-code"
         }
     },
+    "provider": {
+        "max": "DigiD",
+        "pap": "GGD GHOR"
+    },
     "qr": {
         "and": "en",
         "camera": {
@@ -340,6 +341,30 @@
             "duplicate": {
                 "body": "Je hebt deze QR-code al ingescand. Probeer een andere QR-code te scannen.",
                 "title": "Deze QR-code is al gescand"
+            },
+            "errorQRValidateBlockedDCC": {
+                "body": "De QR-code die je probeert te scannen is ongeldig verklaard. Daarom kun je deze niet toevoegen. Probeer een geldige QR-code toe te voegen, of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.",
+                "title": "QR-code ongeldig verklaard"
+            },
+            "errorQRValidateFuzzyMatchFailed": {
+                "body": "<p>De persoonsgegevens in het bewijs dat je probeert te scannen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<br><br>Controleer of de geboortedatum klopt en of je naam is geschreven zoals in je paspoort.<br><br>Klopt er iets niet? Laat je gegevens aanpassen bij de plek waar je die vaccinatie hebt gehad.<\/p>",
+                "title": "De persoonsgegevens zijn niet hetzelfde"
+            },
+            "errorQRValidateDifferentInitials": {
+                "body": "<p>De persoonsgegevens in het bewijs dat je probeert te scannen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<br><br>Controleer of de geboortedatum klopt en of je naam is geschreven zoals in je paspoort.<br><br>Klopt er iets niet? Laat je gegevens aanpassen bij de plek waar je die vaccinatie hebt gehad.<\/p>",
+                "title": "De persoonsgegevens zijn niet hetzelfde"
+            },
+            "errorQRValidateInvalidDCC": {
+                "body": "De QR-code die je probeert te scannen is ongeldig verklaard. Daarom kun je deze niet toevoegen. Probeer een geldige QR-code toe te voegen, of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.",
+                "title": "QR-code ongeldig verklaard"
+            },
+            "errorQRValidateMissingHolderNames": {
+                "body": "Probeer een andere QR-code toe te voegen, of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.",
+                "title": "Sorry, er gaat iets mis"
+            },
+            "errorQRValidateUnknownError": {
+                "body": "Probeer een andere QR-code toe te voegen, of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.",
+                "title": "Sorry, er gaat iets mis"
             },
             "invalid": {
                 "body": "De QR-code die je probeert te scannen wordt niet herkend als die van een coronabewijs. Controleer of je de goede QR-code voor de camera houdt.",
@@ -517,7 +542,43 @@
             "button": "Probeer opnieuw",
             "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
             "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
-            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<\/p>"
+            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<\/p><p>Controleer of de geboortedatum klopt en of je naam is geschreven zoals in je paspoort.<\/p><p>Klop er iets niet? Laat je gegevens aanpassen bij de plek waar je die vaccinatie hebt gehad.<\/p>"
+        },
+        "errorQRValidateBlockedDCC": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "QR-code ongeldig verklaard",
+            "pageIntro": "<p>De QR-code die je probeert toe te voegen is ongeldig verklaard en daarom geblokkeerd. Probeer een geldige QR-code toe te voegen of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.<\/p>"
+        },
+        "errorQRValidateDifferentInitials": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
+            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<br><br>Controleer of de geboortedatum klopt en of je naam is geschreven zoals in je paspoort.<br><br>Klopt er iets niet? Laat je gegevens aanpassen bij de plek waar je die vaccinatie hebt gehad.<\/p>"
+        },
+        "errorQRValidateFuzzyMatchFailed": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "De persoonsgegevens zijn niet hetzelfde",
+            "pageIntro": "<p>De persoonsgegevens in het bewijs dat je probeert toe te voegen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<br><br>Controleer of de geboortedatum klopt en of je naam is geschreven zoals in je paspoort.<br><br>Klopt er iets niet? Laat je gegevens aanpassen bij de plek waar je die vaccinatie hebt gehad.<\/p>"
+        },
+        "errorQRValidateInvalidDCC": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "QR-code ongeldig verklaard",
+            "pageIntro": "<p>De QR-code die je probeert toe te voegen is ongeldig verklaard. Probeer een geldige QR-code toe te voegen of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.<\/p>"
+        },
+        "errorQRValidateMissingHolderNames": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "Sorry, er gaat iets mis",
+            "pageIntro": "<p>Probeer een andere QR-code toe te voegen, of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.<\/p>"
+        },
+        "errorQRValidateUnknownError": {
+            "button": "Probeer opnieuw",
+            "link": "Doorgaan met mijn opgehaalde vaccinatie(s)",
+            "pageHeader": "Sorry, er gaat iets mis",
+            "pageIntro": "<p>Probeer een andere QR-code toe te voegen, of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.<\/p>"
         },
         "errorSessionExpired": {
             "pageHeader": "Je sessie is verlopen",
@@ -790,6 +851,6 @@
         }
     },
     "warning": {
-        "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen in je vaccinatiebewijs."
+        "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen voor je vaccinatiebewijs."
     }
 }

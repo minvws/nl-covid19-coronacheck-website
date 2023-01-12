@@ -329,6 +329,50 @@ CC_downloads_plot_raw = [
         date: "2022-10-14",
         downloads: 17038347
     },
+    {
+        date: "2022-10-21",
+        downloads: 17070782
+    },
+    {
+        date: "2022-10-28",
+        downloads: 17104898
+    },
+    {
+        date: "2022-11-04",
+        downloads: 17136846
+    },
+    {
+        date: "2022-11-11",
+        downloads: 17164518
+    },
+    {
+        date: "2022-11-18",
+        downloads: 17192424
+    },
+    {
+        date: "2022-11-25",
+        downloads: 17227557
+    },
+    {
+        date: "2022-12-02",
+        downloads: 17265790
+    },
+    {
+        date: "2022-12-09",
+        downloads: 17293264
+    },
+    {
+        date: "2022-12-16",
+        downloads: 17316712
+    },
+    {
+        date: "2022-12-23",
+        downloads: 17339990
+    },
+    {
+        date: "2022-12-30",
+        downloads: 17372834
+    }
 ]
 
 const CC_downloads_plot = CC_downloads_plot_raw.map(({date, ...rest}) => {

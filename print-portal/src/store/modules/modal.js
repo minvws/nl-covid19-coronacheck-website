@@ -9,6 +9,7 @@ const state = {
     closeButton: true,
     closeText: '',
     confirmAlert: false,
+    errors: null,
     actions: []
 };
 
@@ -30,6 +31,7 @@ const mutations = {
         state.closeText = options.closeText || '';
         state.confirmAlert = options.confirmAlert || false
         state.actions = options.actions || []
+        state.errors = options.errors || null
     },
     close(state) {
         state.visible = false;

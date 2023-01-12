@@ -3,7 +3,9 @@
 <Page
     @back="$router.go(-1)">
     <div class="section">
-        <PageIntro v-bind="intro" :key="$route.name"/>
+        <PageIntro v-bind="intro" :key="$route.name">
+            <ErrorList v-if="errors && errors.length" v-bind="{ errors }" />
+        </PageIntro>
         <div class="section-block">
             <QRScannerNav v-if="routes" :routes="routes" />
             <CcButton
@@ -29,7 +31,7 @@ import PrintFaqLink from '@/components/views/4-print/PrintFaqLink.vue'
 import QRScannerNav from '@/qr/components/QRScanner/QRScannerNav.vue'
 import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
 import CcButton from '@/components/elements/CcButton';
-
+import ErrorList from '@/components/elements/ErrorList.vue';
 export default Vue.extend({
     mixins: [pageIntroMixin],
     components: {
@@ -37,6 +39,7 @@ export default Vue.extend({
         PageIntro,
         PrintFaqLink,
         QRScannerNav,
+        ErrorList,
         CcButton
     },
     props: {
@@ -50,6 +53,10 @@ export default Vue.extend({
         },
         next: {
             type: Object,
+            required: false
+        },
+        errors: {
+            type: Array,
             required: false
         }
     },

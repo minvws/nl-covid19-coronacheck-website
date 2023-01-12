@@ -2,6 +2,7 @@ import { decodeQRtoDCC } from '@/qr/utils/DCCDecoder'
 
 export type Holder = {
     firstName: string;
+    infix: string;
     lastName: string;
     birthDate: string;
 }
@@ -33,6 +34,13 @@ const isDayAndMonthOfBirthEqual = (holder: Holder, target: Holder) => {
     const a = new Date(holder.birthDate)
     const b = new Date(target.birthDate)
     return (a.getDate() === b.getDate()) && (a.getMonth() === b.getMonth())
+}
+
+export const isHolderDayAndMonthEqual = (qr: string, events: Event[]) => {
+    const holder = getHolderFromEvents(events)
+    if (!holder) return false
+    const { result: { holder: target } } = decodeQRtoDCC(qr)
+    return isDayAndMonthOfBirthEqual(holder, target)
 }
 
 export const isHolderEqual = (qr: string, events: Event[]) => {

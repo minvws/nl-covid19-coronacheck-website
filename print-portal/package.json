@@ -14,7 +14,7 @@
   "dependencies": {
     "@cypress/vue": "^2.2.3",
     "@cypress/webpack-dev-server": "^1.4.0",
-    "@minvws/coronacheck-web-pdf-tools": "^3.9.0",
+    "@minvws/coronacheck-web-pdf-tools": "^4.0.0",
     "axios": "0.21.1",
     "base45": "^2.0.1",
     "cbor": "^8.1.0",
@@ -29,7 +29,7 @@
     "pdfjs-dist": "^2.13.216",
     "polyfill-crypto.getrandomvalues": "^1.0.0",
     "portal-vue": "^2.1.7",
-    "qr-scanner": "^1.4.1",
+    "qr-scanner": "^1.4.2",
     "register-service-worker": "^1.7.1",
     "v-click-outside": "^3.1.2",
     "vue": "^2.6.14",

@@ -1,7 +1,8 @@
 // see https://github.com/minvws/nl-covid19-coronacheck-app-coordination/blob/main/docs/Error%20Handling.md
 import { FlowTypes } from '@/types/flow-types'
 import { StepTypes } from '@/types/step-types'
-
+import { ProviderTypes } from '@/types/provider-types'
+import { QrValidationCodes } from '@/interfaces/validate-qr'
 const SystemCode = {
     ANDROID: 'A',
     IOS: 'i',
@@ -120,4 +121,18 @@ export const getResponseStatusCode = (code = '') => {
     default:
         return '';
     }
+}
+
+export const QRValidationErrorCode = (code) => {
+    const errorCode = QrValidationCodes[code];
+    if (!errorCode) return undefined
+    const message = [
+        SystemCode.WEB,
+        FlowCode.QR,
+        ProviderTypes.NON_PROVIDER,
+        errorCode
+    ].join(' ')
+    return [
+        message
+    ]
 }

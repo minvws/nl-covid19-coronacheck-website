@@ -55,13 +55,6 @@ const formatSampleDate = (dateString: string) => {
     return `${new Date(time + offset).toISOString().split('.')[0]}Z`
 }
 
-const formatDate = (dateString: string) => {
-    const date = new Date(dateString)
-    const time = date.getTime()
-    const offset = date.getTimezoneOffset() * 60 * 1000
-    return `${new Date(time + offset).toISOString().split('T')[0]}`
-}
-
 const getHolderFromDCC = (dcc: DCC) => {
     return {
         infix: '',
@@ -137,7 +130,7 @@ const getRemoteVaccinationFromDcc = (dcc: DCC) => {
         vaccination: {
             doseNumber: v?.dn ?? null,
             totalDoses: v?.sd ?? null,
-            date: v?.dt ? formatDate(v.dt) : null,
+            date: v?.dt ?? null,
             country: v?.co ?? null,
             type: v?.vp ?? null,
             brand: v?.mp ?? null,
@@ -157,9 +150,9 @@ const getRemoteRecoveryFromDcc = (dcc: DCC) => {
         unique: r?.ci ?? null,
         isSpecimen: false,
         recovery: {
-            sampleDate: r?.fr ? formatDate(r.fr) : null,
-            validFrom: r?.df ? formatDate(r.df) : null,
-            validUntil: r?.du ? formatDate(r.du) : null
+            sampleDate: r?.fr ?? null,
+            validFrom: r?.df ?? null,
+            validUntil: r?.du ?? null
         }
     }))
 }

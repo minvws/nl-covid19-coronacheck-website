@@ -41,4 +41,4 @@ Ga je naar het buitenland? Controleer altijd voor vertrek of je het goede bewijs
 </div>
 </details>
 
-Kom je er niet uit? Bel dan voor hulp de CoronaCheck helpdesk op {{ site.data.links.phone-helpdesk[page.lang] }}. Of als je vanuit het buitenland belt: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}. Bereikbaar van maandag t/m zondag 08.00 – 20.00 uur.
+Kom je er niet uit? Bel dan voor hulp de CoronaCheck helpdesk op {{ site.data.links.phone-helpdesk[page.lang] }}. Of als je vanuit het buitenland belt: {{ site.data.links.phone-helpdesk-abroad[page.lang] }}. Bereikbaar van maandag t/m vrijdag 08.00 – 18.00 uur.
