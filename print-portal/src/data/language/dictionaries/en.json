@@ -103,7 +103,7 @@
         },
         "positiveTest": {
             "info": {
-                "detailsRetrieved": "The following details were retrieved"
+                "detailsRetrieved": "The following details were retrieved from the test location"
             },
             "title": "Positive test result"
         },

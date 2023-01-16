@@ -103,7 +103,7 @@
         },
         "positiveTest": {
             "info": {
-                "detailsRetrieved": "De volgende gegevens zijn opgehaald"
+                "detailsRetrieved": "De volgende gegevens zijn opgehaald bij de testlocatie"
             },
             "title": "Positieve testuitslag"
         },
