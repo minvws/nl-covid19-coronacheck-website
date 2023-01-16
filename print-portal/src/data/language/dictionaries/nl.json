@@ -146,7 +146,7 @@
                 "testManufacturer": "Testproducent",
                 "testName": "Testnaam",
                 "testResultNegative": "negatief (geen corona)",
-                "testResultPositive": "positief (corona)",
+                "testResultPositive": "positief (coronavirus vastgesteld)",
                 "testType": "Type test"
             },
             "resultNegative": "Negatieve testuitslag",
