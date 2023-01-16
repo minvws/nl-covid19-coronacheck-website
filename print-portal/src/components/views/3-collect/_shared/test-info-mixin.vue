@@ -15,7 +15,7 @@ export default {
     },
     computed: {
         sampleDate() {
-            return dateTool.dateToString(this.proofEvent.sampleDate, 'datetime-with-day', this.currentLanguage.locale);
+            return dateTool.dateToString(this.proofEvent.sampleDate, 'datetime-with-year-and-day', this.currentLanguage.locale);
         },
         testType() {
             const testType = this.$store.getters.getEuTestType(this.proofEvent.type)
