@@ -154,7 +154,7 @@
         },
         "vaccination": {
             "info": {
-                "detailsRetrieved": "Deze gegevens van je vaccinatie zijn opgehaald bij %{provider}",
+                "detailsRetrieved": "De volgende gegevens van je vaccinatie zijn opgehaald bij %{provider}",
                 "doses": "Doses",
                 "finalDosis": "Is dit de laatste dosis van je vaccinatie?",
                 "finalDosisValue": {
@@ -852,5 +852,8 @@
     },
     "warning": {
         "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen voor je vaccinatiebewijs."
+    },
+    "country": {
+        "NL": "Nederland"
     }
 }
