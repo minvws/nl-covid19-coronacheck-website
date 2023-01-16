@@ -1,11 +1,13 @@
 <script>
 import dateTool from '@/tools/date';
 import proofEventInfoMixin from '@/components/views/3-collect/_shared/proof-event-info-mixin'
+import fullCountryName from '@/components/mixins/full-county-name-mixin'
+
 import { isRAT } from '@/types/proof-types'
 
 export default {
     name: 'test-info-mixin',
-    mixins: [proofEventInfoMixin],
+    mixins: [proofEventInfoMixin, fullCountryName],
     data() {
         return {
             showInfo: false
@@ -13,7 +15,7 @@ export default {
     },
     computed: {
         sampleDate() {
-            return dateTool.dateToString(this.proofEvent.sampleDate, 'datetime-with-day', this.currentLanguage.locale);
+            return dateTool.dateToString(this.proofEvent.sampleDate, 'datetime-with-year-and-day', this.currentLanguage.locale);
         },
         testType() {
             const testType = this.$store.getters.getEuTestType(this.proofEvent.type)
@@ -37,6 +39,9 @@ export default {
         },
         testCountry() {
             return this.proofEvent.country;
+        },
+        testFullCountryName() {
+            return this.getFullCountryName(this.testCountry);
         }
     }
 }

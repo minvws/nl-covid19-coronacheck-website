@@ -2,6 +2,7 @@
 import SlotModal from '@/components/elements/modal/SlotModal';
 import SignedEvent from '@/classes/events/SignedEvent';
 import testInfoMixin from '@/components/views/3-collect/_shared/test-info-mixin'
+import dateTool from '@/tools/date';
 
 export default {
     name: 'PositiveTestInfo',
@@ -16,6 +17,9 @@ export default {
     computed: {
         proofEvent() {
             return this.signedEvent.event.positivetest;
+        },
+        sampleDateWithYear () {
+            return dateTool.dateToString(this.proofEvent.sampleDate, 'datetime-with-year-and-day', this.currentLanguage.locale);
         }
     }
 }
@@ -72,7 +76,7 @@ export default {
                                 {{$t('components.eventInfo.dateOfTest')}}:
                             </dt>
                             <dd>
-                                {{sampleDate}}
+                                {{sampleDateWithYear}}
                             </dd>
                         </div>
                         <div class="dl__row">
@@ -104,7 +108,7 @@ export default {
                                 {{$t('components.test.info.testCountry')}}:
                             </dt>
                             <dd>
-                                {{testCountry}}
+                                {{testFullCountryName}}
                             </dd>
                         </div>
                     </div>

@@ -103,7 +103,7 @@
         },
         "positiveTest": {
             "info": {
-                "detailsRetrieved": "De volgende gegevens zijn opgehaald"
+                "detailsRetrieved": "De volgende gegevens zijn opgehaald bij de testlocatie"
             },
             "title": "Positieve testuitslag"
         },
@@ -145,8 +145,8 @@
                 "testLocation": "Testlocatie",
                 "testManufacturer": "Testproducent",
                 "testName": "Testnaam",
-                "testResultNegative": "negatief (geen corona)",
-                "testResultPositive": "positief (corona)",
+                "testResultNegative": "negatief (geen coronavirus vastgesteld)",
+                "testResultPositive": "positief (coronavirus vastgesteld)",
                 "testType": "Type test"
             },
             "resultNegative": "Negatieve testuitslag",

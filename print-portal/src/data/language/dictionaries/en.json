@@ -103,7 +103,7 @@
         },
         "positiveTest": {
             "info": {
-                "detailsRetrieved": "The following details were retrieved"
+                "detailsRetrieved": "The following details were retrieved from the test location"
             },
             "title": "Positive test result"
         },
@@ -145,8 +145,8 @@
                 "testLocation": "Test location",
                 "testManufacturer": "Test manufacturer",
                 "testName": "Test name",
-                "testResultNegative": "negative (no corona)",
-                "testResultPositive": "positive (corona)",
+                "testResultNegative": "negative (no coronavirus detected)",
+                "testResultPositive": "positive (coronavirus detected)",
                 "testType": "Type test"
             },
             "resultNegative": "Negative test result",

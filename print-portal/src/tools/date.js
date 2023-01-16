@@ -29,6 +29,9 @@ const dateToString = (dateInput, formatType = 'date-with-day', localeString) => 
     case 'datetime-with-day':
         dateFormat = 'EEEE d LLLL HH:mm';
         break;
+    case 'datetime-with-year-and-day':
+        dateFormat = 'EEEE d LLLL yyyy HH:mm';
+        break;
     }
     if (dateInput.length < 11) {
         // When a ISO8601 without time is entered in new Date(), it will interpret it as UTC time
