@@ -108,7 +108,7 @@ export default {
                                 {{$t('components.test.info.testCountry')}}:
                             </dt>
                             <dd>
-                                {{testCountry}}
+                                {{testFullCountryName}}
                             </dd>
                         </div>
                     </div>
