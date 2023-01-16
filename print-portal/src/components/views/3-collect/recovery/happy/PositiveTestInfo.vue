@@ -19,7 +19,7 @@ export default {
             return this.signedEvent.event.positivetest;
         },
         sampleDateWithYear () {
-            return dateTool.dateToString(this.sampleDate, 'datetime-with-year-and-day', this.currentLanguage.locale);
+            return dateTool.dateToString(this.proofEvent.sampleDate, 'datetime-with-year-and-day', this.currentLanguage.locale);
         }
     }
 }
