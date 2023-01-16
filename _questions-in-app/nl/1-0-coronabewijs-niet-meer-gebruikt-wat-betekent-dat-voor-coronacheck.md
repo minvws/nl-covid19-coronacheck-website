@@ -12,7 +12,7 @@ redirect_from:
     - /alleen-internationaal 
     - /nl/alleen-internationaal
 ---
-Het kabinet heeft aangekondigd dat het coronabewijs per 23 maart in Nederland niet meer in gebruik is. 
+Het kabinet heeft aangekondigd dat het coronabewijs per 23 maart 2022 in Nederland niet meer in gebruik is. 
 
 In de CoronaCheck-app zijn alle Nederlandse bewijzen vanaf dat moment niet meer zichtbaar. Omdat je voor het reizen naar sommige landen nog wel een coronabewijs nodig hebt, kun je met CoronaCheck nog wel de internationale bewijzen gebruiken en aanmaken.
 
