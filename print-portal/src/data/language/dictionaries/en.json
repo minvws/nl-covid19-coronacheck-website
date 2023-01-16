@@ -145,7 +145,7 @@
                 "testLocation": "Test location",
                 "testManufacturer": "Test manufacturer",
                 "testName": "Test name",
-                "testResultNegative": "negative (no corona)",
+                "testResultNegative": "negative (no coronavirus detected)",
                 "testResultPositive": "positive (coronavirus detected)",
                 "testType": "Type test"
             },

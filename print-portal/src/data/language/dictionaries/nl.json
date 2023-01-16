@@ -145,7 +145,7 @@
                 "testLocation": "Testlocatie",
                 "testManufacturer": "Testproducent",
                 "testName": "Testnaam",
-                "testResultNegative": "negatief (geen corona)",
+                "testResultNegative": "negatief (geen coronavirus vastgesteld)",
                 "testResultPositive": "positief (coronavirus vastgesteld)",
                 "testType": "Type test"
             },
