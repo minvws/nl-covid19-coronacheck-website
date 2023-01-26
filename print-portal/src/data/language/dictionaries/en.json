@@ -155,6 +155,7 @@
         "vaccination": {
             "info": {
                 "detailsRetrieved": "The following details about your vaccination have been retrieved at %{provider}",
+                "displayName": "Product name",
                 "doses": "Doses",
                 "finalDosis": "Is this the last dose of your vaccination?",
                 "finalDosisValue": {
@@ -165,7 +166,6 @@
                     "yes": "Yes"
                 },
                 "identificationCode": "Unique vaccination identifier",
-                "displayName": "Product name",
                 "manufacturer": "Vaccine manufacturer",
                 "pathogen": "Pathogen",
                 "vaccinationCountry": "Vaccinated in",
@@ -188,6 +188,9 @@
             },
             "title": "Vaccination approval"
         }
+    },
+    "country": {
+        "NL": "The Netherlands"
     },
     "date": {
         "months": {
@@ -346,11 +349,11 @@
                 "body": "The QR code you are trying to scan has been declared invalid. For that reason, you cannot add it. Try to add a valid QR code, or contact the CoronaCheck helpdesk via <a href=\"tel:08001421\">0800-1421<\/a> and pass on the error code below.",
                 "title": "QR code has been declared invalid"
             },
-            "errorQRValidateFuzzyMatchFailed": {
+            "errorQRValidateDifferentInitials": {
                 "body": "<p>The personal details on the certificate you are trying to scan differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>",
                 "title": "The personal details don’t match"
             },
-            "errorQRValidateDifferentInitials": {
+            "errorQRValidateFuzzyMatchFailed": {
                 "body": "<p>The personal details on the certificate you are trying to scan differ from the details you retrieved with DigiD. Because of that, you can’t add this certificate.<br><br>Please check if the date of birth is correct, and if your name is written as in your passport.<br><br>Is something wrong? Please have your details updated at the place where you received this vaccination.<\/p>",
                 "title": "The personal details don’t match"
             },
@@ -421,8 +424,8 @@
             "pageIntro": "<p>The internet browser you are using is too old to load this page. Please download a newer browser. For example:<br><br><a href=\"https:\/\/www.google.com\/chrome\" target=\"_blank\" rel=\"noopener noreferrer\">Google Chrome<\/a><br><br><a href=\"https:\/\/www.mozilla.org\/firefox\" target=\"_blank\" rel=\"noopener noreferrer\">Mozilla Firefox<\/a><br><br><a href=\"https:\/\/www.microsoft.com\/edge\" target=\"_blank\" rel=\"noopener noreferrer\">Microsoft Edge<\/a><\/p>"
         },
         "cameraQR": {
-            "pageHeader": "Hold the QR code on your certificate in front of the camera",
-            "pageIntro": "<p>Make sure the entire QR code is visible. Do you have multiple QR codes? Then you can add these in the same way later.<\/p>"
+            "pageHeader": "Scan your certificate",
+            "pageIntro": "<p>Hold the QR code on your certificate in front of the camera. Do you have multiple QR codes? Then you can add these in the same way later.<\/p>"
         },
         "choiceProof": {
             "choiceRecoveryBody": "The test proves I have had coronavirus",
@@ -782,7 +785,7 @@
         "requestDigid": {
             "button": "Back to home",
             "pageHeader": "Request your certificate via the helpdesk",
-            "pageIntro": "<p>Request your certificate at the CoronaCheck helpdesk. You can call them every day between 8AM and 8PM at: <a href=\"tel:08001421\">0800-1421<\/a> (free). Or if you’re calling from abroad: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. In the menu you can choose “request a certificate”.<br><br>Please provide the following: <ul class=\"ul--with-padding\"><li>your citizen service number (BSN)<\/li><li>your zipcode<\/li><\/ul><br>Your certificate with QR code will be sent by post. This can take up to 7 working days.<\/p>"
+            "pageIntro": "<p>Request your certificate at the CoronaCheck helpdesk. You can call them from Monday till Friday between 8AM and 6PM at: <a href=\"tel:08001421\">0800-1421<\/a> (free). Or if you’re calling from abroad: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. In the menu you can choose “request a certificate”.<br><br>Please provide the following: <ul class=\"ul--with-padding\"><li>your citizen service number (BSN)<\/li><li>your zipcode<\/li><\/ul><br>Your certificate with QR code will be sent by post. This can take up to 7 working days.<\/p>"
         },
         "serverBusy": {
             "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>",
@@ -852,8 +855,5 @@
     },
     "warning": {
         "noPositivetest": "No positive test result that could count for your vaccination certificate was found."
-    },
-    "country": {
-        "NL": "The Netherlands"
     }
 }

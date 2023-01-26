@@ -155,6 +155,7 @@
         "vaccination": {
             "info": {
                 "detailsRetrieved": "De volgende gegevens van je vaccinatie zijn opgehaald bij %{provider}",
+                "displayName": "Productnaam",
                 "doses": "Doses",
                 "finalDosis": "Is dit de laatste dosis van je vaccinatie?",
                 "finalDosisValue": {
@@ -165,7 +166,6 @@
                     "yes": "Ja"
                 },
                 "identificationCode": "Uniek vaccinatienummer",
-                "displayName": "Productnaam",
                 "manufacturer": "Producent",
                 "pathogen": "Ziekteverwekker",
                 "vaccinationCountry": "Gevaccineerd in",
@@ -188,6 +188,9 @@
             },
             "title": "Vaccinatiebeoordeling"
         }
+    },
+    "country": {
+        "NL": "Nederland"
     },
     "date": {
         "months": {
@@ -346,11 +349,11 @@
                 "body": "De QR-code die je probeert te scannen is ongeldig verklaard. Daarom kun je deze niet toevoegen. Probeer een geldige QR-code toe te voegen, of bel de CoronaCheck helpdesk op <a href=\"tel:08001421\">0800-1421<\/a> en geef onderstaande foutcode door.",
                 "title": "QR-code ongeldig verklaard"
             },
-            "errorQRValidateFuzzyMatchFailed": {
+            "errorQRValidateDifferentInitials": {
                 "body": "<p>De persoonsgegevens in het bewijs dat je probeert te scannen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<br><br>Controleer of de geboortedatum klopt en of je naam is geschreven zoals in je paspoort.<br><br>Klopt er iets niet? Laat je gegevens aanpassen bij de plek waar je die vaccinatie hebt gehad.<\/p>",
                 "title": "De persoonsgegevens zijn niet hetzelfde"
             },
-            "errorQRValidateDifferentInitials": {
+            "errorQRValidateFuzzyMatchFailed": {
                 "body": "<p>De persoonsgegevens in het bewijs dat je probeert te scannen zijn anders dan de gegevens die je hebt opgehaald met DigiD. Je kunt dit bewijs daarom niet toevoegen.<br><br>Controleer of de geboortedatum klopt en of je naam is geschreven zoals in je paspoort.<br><br>Klopt er iets niet? Laat je gegevens aanpassen bij de plek waar je die vaccinatie hebt gehad.<\/p>",
                 "title": "De persoonsgegevens zijn niet hetzelfde"
             },
@@ -421,8 +424,8 @@
             "pageIntro": "<p>De internetbrowser die je momenteel gebruikt is te oud om deze pagina te kunnen laden. Download een nieuwere browser. Bijvoorbeeld een van onderstaande:<br><br><a href=\"https:\/\/www.google.com\/chrome\" target=\"_blank\" rel=\"noopener noreferrer\">Google Chrome<\/a><br><br><a href=\"https:\/\/www.mozilla.org\/firefox\" target=\"_blank\" rel=\"noopener noreferrer\">Mozilla Firefox<\/a><br><br><a href=\"https:\/\/www.microsoft.com\/edge\" target=\"_blank\" rel=\"noopener noreferrer\">Microsoft Edge<\/a><\/p>"
         },
         "cameraQR": {
-            "pageHeader": "Houd de QR-code op je bewijs voor de camera",
-            "pageIntro": "<p>Zorg ervoor dat de gehele QR-code goed in beeld te zien is. Heb je meerdere QR-codes? Dan kun je deze straks op dezelfde manier toevoegen.<\/p>"
+            "pageHeader": "Scan je bewijs",
+            "pageIntro": "<p>Houd de QR-code op je bewijs voor de camera. Heb je meerdere QR-codes? Dan kun je deze straks op dezelfde manier toevoegen.<\/p>"
         },
         "choiceProof": {
             "choiceRecoveryBody": "Uit de test blijkt dat ik corona heb gehad",
@@ -782,7 +785,7 @@
         "requestDigid": {
             "button": "Terug naar home",
             "pageHeader": "Vraag je coronabewijs aan via de helpdesk",
-            "pageIntro": "<p>Vraag je bewijs aan bij de CoronaCheck helpdesk. Die kun je elke dag tussen 08.00 en 20.00 uur bellen op: <a href=\"tel:08001421\">0800-1421<\/a> (gratis). Of als je vanuit het buitenland belt: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. Kies in het keuzemenu voor “een bewijs aanvragen”. <br><br>Geef het volgende door: <ul class=\"ul--with-padding\"><li>je burgerservicenummer (BSN)<\/li><li>je postcode<\/li><\/ul><br>Je bewijs met QR-code wordt per post opgestuurd. Dit kan maximaal 7 werkdagen duren.<\/p>"
+            "pageIntro": "<p>Vraag je bewijs aan bij de CoronaCheck helpdesk. Die kun je van maandag t\/m vrijdag tussen 08:00 en 18:00 uur bellen op: <a href=\"tel:08001421\">0800-1421<\/a> (gratis). Of als je vanuit het buitenland belt: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. Kies in het keuzemenu voor “een bewijs aanvragen”. <br><br>Geef het volgende door: <ul class=\"ul--with-padding\"><li>je burgerservicenummer (BSN)<\/li><li>je postcode<\/li><\/ul><br>Je bewijs met QR-code wordt per post opgestuurd. Dit kan maximaal 7 werkdagen duren.<\/p>"
         },
         "serverBusy": {
             "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>",
@@ -852,8 +855,5 @@
     },
     "warning": {
         "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen voor je vaccinatiebewijs."
-    },
-    "country": {
-        "NL": "Nederland"
     }
 }
