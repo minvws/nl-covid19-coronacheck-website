@@ -1,9 +1,9 @@
 <template>
   <div class="qr-scanner">
-    <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
+    <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }" :aria-busy="!isReady" />
     <CameraRender :status="state">
       <template>
-        <video ref="renderer" @playing="onCameraPlaying" :aria-label="$t(`qr.camera.states.${state}`)"/>
+        <video ref="renderer" @playing="onCameraPlaying" :aria-label="$t(`qr.camera.states.${state}`)" aria-live="assertive"/>
         <CameraStatus v-bind="{ error, state }" />
       </template>
     </CameraRender>
