@@ -35,6 +35,11 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
+    // close snackbar when page changes
+    if (store.getters['snackbar/closeOnPageChange']) {
+        store.commit('snackbar/close');
+    }
+
     const generalPages = [
         'Home',
         'ErrorGeneral',
