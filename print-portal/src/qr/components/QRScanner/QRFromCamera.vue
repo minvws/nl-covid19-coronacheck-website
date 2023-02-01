@@ -1,11 +1,6 @@
 <template>
   <div class="qr-scanner">
-    <div class="coronacheck">
-        <p class="only-mobile">CoronaCheck</p>
-    </div>
-    <div v-if="!isMobile">
-        <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
-    </div>
+    <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
     <CameraRender :status="state">
       <template>
         <video ref="renderer" @playing="onCameraPlaying" :aria-label="$t(`qr.camera.states.${state}`)"/>
@@ -24,9 +19,6 @@
         }"
         @select="setCamera"
     />
-    <div class="title-mobile" v-if="isMobile">
-        <PageIntro v-bind="intro" class="intro" :class="{ ready: isReady }"/>
-    </div>
     <CameraCaptures
       class="py"
       :label="$t('qr.code.scanned')"
@@ -48,7 +40,6 @@ import CameraCaptures from './CameraCaptures.vue'
 import QrScanner, { isValidQR, ERROR_PERMISSION_REJECTED } from '@/qr/utils/QRScanner'
 import SuccessMessage from '@/qr/components/SuccessMessage.vue'
 import qrMixin, { QRMixin } from '@/qr/mixins/qr-mixin'
-import qrResizeMixin from '@/qr/mixins/qr-resize-mixing'
 import pageIntroMixin from '@/qr/mixins/page-intro-mixin'
 
 import QRScannerDataType, {
@@ -59,7 +50,7 @@ import { RouterNames } from '@/qr/router';
 
 export default QRMixin.extend({
     name: 'QRScanner',
-    mixins: [qrMixin, pageIntroMixin, qrResizeMixin],
+    mixins: [qrMixin, pageIntroMixin],
     components: {
         PageIntro,
         CameraList,
@@ -299,23 +290,12 @@ export default QRMixin.extend({
   }
 }
 
-.title-mobile {
-    padding-top: 2em;
-}
-
-.coronacheck {
-    display: block;
-    font-family: $font-main;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #154273;
-    padding-bottom: 1em;
-}
-
 .intro {
     opacity: 0;
     transition: opacity 0.3s;
+    ::v-deep #page-intro {
+        padding-bottom: 8px;
+    }
     &.ready {
         opacity: 1;
     }
