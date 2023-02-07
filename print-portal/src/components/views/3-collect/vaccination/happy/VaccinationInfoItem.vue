@@ -1,11 +1,13 @@
 <script>
 import dateTool from '@/tools/date';
 import proofEventInfoMixin from '@/components/views/3-collect/_shared/proof-event-info-mixin'
+import fullCountryName from '@/components/mixins/full-county-name-mixin'
+
 import SignedEvent from '@/classes/events/SignedEvent';
 
 export default {
     name: 'VaccinationInfoItem',
-    mixins: [proofEventInfoMixin],
+    mixins: [proofEventInfoMixin, fullCountryName],
     props: {
         signedEvent: {
             type: SignedEvent,
@@ -220,7 +222,7 @@ export default {
                         {{$t('components.vaccination.info.vaccinationCountry')}}:
                     </dt>
                     <dd>
-                        {{vaccinationCountry}}
+                        {{getFullCountryName(vaccinationCountry)}}
                     </dd>
                 </div>
             </div>
