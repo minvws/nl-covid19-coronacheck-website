@@ -1,6 +1,6 @@
 <template>
     <WarningMessage>
-        <h4 class="consent-checkbox-title" v-html="title" />
+        <h2 class="consent-checkbox-title" v-html="title" />
         <p v-html="body" />
         <UserConsent
             class="consent-checkbox-label"
