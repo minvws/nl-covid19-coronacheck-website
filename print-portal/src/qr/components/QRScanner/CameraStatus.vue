@@ -16,13 +16,12 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
 import CameraError from './CameraError.vue'
 import Spinner from '@/qr/components/Spinner.vue'
 import ErrorIcon from '@/qr/components/ErrorIcon.vue'
 import { CameraState, showCameraState } from '@/qr/types/QRScannerDataType'
-export default Vue.extend({
+export default {
     name: 'CameraStatus',
     components: {
         ErrorIcon,
@@ -52,7 +51,7 @@ export default Vue.extend({
         },
         label() {
             const { error, state } = this
-            return !error && showCameraState(state as CameraState)
+            return !error && showCameraState(state)
                 ? this.$t(`qr.camera.states.${state}`)
                 : ''
         },
@@ -66,7 +65,7 @@ export default Vue.extend({
             }
         }
     }
-})
+}
 </script>
 
 <style scoped lang="scss">
