@@ -46,6 +46,7 @@ export default {
     &-title {
         font-size: 18px;
         font-family: $font-main;
+        margin-bottom: 8px;
     }
     &-label {
         background: none;
