@@ -13,7 +13,7 @@ export const getImageDataFromPDFPage = async (
     const canvasContext = canvas.getContext('2d')
     if (!canvasContext) return ''
 
-    const viewport = page.getViewport({ scale: 1 })
+    const viewport = page.getViewport({ scale: 2 })
     canvas.height = viewport.height
     canvas.width = viewport.width
 
