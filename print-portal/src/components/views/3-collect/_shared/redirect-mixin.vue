@@ -156,8 +156,8 @@ export default {
             this.isLoading = true;
             signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders, this.scope, this.auth).then(results => {
                 this.isLoading = false;
-                this.$store.commit('snackbar/close', { duration: 4000 })
                 this.analyseResult(results);
+                this.$store.commit('snackbar/close', { pageChange: true })
             });
         },
         analyseResult(results) {
