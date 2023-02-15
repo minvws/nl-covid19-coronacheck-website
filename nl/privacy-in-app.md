@@ -149,10 +149,8 @@ Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzig
     - testproducent
     - naam van testcentrum
     - uitslag van de test (negatief voor testbewijs, positief voor herstelbewijs)
-
 - Alleen bij vaccinatiebewijs:
-
--   - datum/data toedieningen
+    - datum/data toedieningen
     - unieke code van vaccinatie
     - ziekteverwekker waar het vaccin tegen werkt
     - vaccintype
