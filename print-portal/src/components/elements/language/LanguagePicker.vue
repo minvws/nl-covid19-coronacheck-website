@@ -31,7 +31,7 @@ export default {
             if (process.env.NODE_ENV !== 'development') {
                 if (newValue && oldValue) {
                     const url = `${window.location.origin}/${this.currentLanguage.locale}/print`;
-                    window.open(url, '_self', 'noopener,noopener');
+                    window.open(url, '_self', 'noopener,norefferer');
                 }
             }
         }
