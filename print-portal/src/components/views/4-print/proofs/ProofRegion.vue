@@ -121,7 +121,7 @@ export default {
         openPDFWithEmbed() {
             const string = this.createdDocument.output('datauristring');
             const embed = '<embed width="100%" height="100%" src="' + string + '"/>';
-            const action = window.open();
+            const action = window.open(null);
             action.document.open();
             action.document.write(embed);
             action.document.close();
