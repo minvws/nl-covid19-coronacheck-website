@@ -42,7 +42,8 @@ export default {
                     const { type } = item
                     if (!cul[key][type]) cul[key][type] = []
                     cul[key][type].push(item)
-                    cul[key][type] = cul[key][type].sort(({ date: a }, { date: b }) => a.localeCompare(b))
+                    cul[key][type] = cul[key][type]
+                        .sort(({ date: a }, { date: b }) => a.localeCompare(b))
                 })
                 return cul
             }, {});

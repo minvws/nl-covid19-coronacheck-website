@@ -734,7 +734,7 @@
             "button": "Volgende",
             "link": "Ik wil nog een vaccinatie toevoegen",
             "pageHeader": "Vaccinatie toevoegen gelukt",
-            "pageIntro": "<p>Ga verder om deze vaccinaties mee te nemen in je bewijs of voeg nog een vaccinatie toe.<\/p>"
+            "pageIntro": "<p>Ga verder om deze gegevens mee te nemen in je bewijs of voeg nog een vaccinatie toe als er een mist.<\/p>"
         },
         "proofIntroduction": {
             "link": "Heb je geen bewijs met QR-code?",
