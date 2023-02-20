@@ -742,10 +742,10 @@
             "pageIntro": "<p>Als je vaccinatie er niet bij staat, wordt deze niet meegeteld in het vaccinatiebewijs dat je wilt maken. Heb je al een bewijs met QR-code van je missende vaccinatie? Dan kun je die in de volgende stap toevoegen.<br><br>Je kunt een bewijs met QR-code toevoegen van je vaccinatie uit het buitenland. Of een bewijs dat je opgestuurd hebt gekregen van je zorgverlener of de Nederlandse overheid.<\/p>"
         },
         "proofsOverviewList": {
-            "button": "Ja, volgende",
-            "link": "Nee, er mist een vaccinatie",
-            "pageHeader": "Zijn dit al jouw vaccinaties?",
-            "pageIntro": "<p>Ga verder om deze vaccinaties mee te nemen in je bewijs of voeg nog een vaccinatie toe.<\/p>"
+            "button": "Volgende",
+            "link": "Er mist een vaccinatie",
+            "pageHeader": "Dit is er opgehaald:",
+            "pageIntro": "<p>Ga verder om deze gegevens mee te nemen in je bewijs of voeg nog een vaccinatie toe als er een mist.<\/p>"
         },
         "provideCode": {
             "didNotGetCode": "Geen verificatiecode gekregen?",
