@@ -321,7 +321,6 @@ export default {
                     message = undefined;
                 }
             }
-
             this.$router.replace({ name: this.pages.overview, params: { auth, message } });
         },
         isTestedPositiveBeforeFirstVaccination (proofEvents) {
@@ -372,8 +371,8 @@ export default {
                         this.handleWithPositiveTest()
                     } else this.$router.push({ name: 'RecoveryInvalid' });
                 } else {
-                    const { auth } = this
-                    this.$router.replace({ name: this.pages.overview, params: { auth } });
+                    const { auth, isWithPositiveTest } = this
+                    this.$router.replace({ name: this.pages.overview, params: { auth, isWithPositiveTest } });
                 }
             } else {
                 this.$router.push({ name: this.pages.noResult });
