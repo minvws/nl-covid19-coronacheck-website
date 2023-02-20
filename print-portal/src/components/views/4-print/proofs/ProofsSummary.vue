@@ -34,6 +34,18 @@ export default {
                 })
                 return position === index
             })
+        },
+        groupByType () {
+            return Object.entries(this.group).reduce((cul, [key, items]) => {
+                if (!cul[key]) cul[key] = {}
+                items.forEach(item => {
+                    const { type } = item
+                    if (!cul[key][type]) cul[key][type] = []
+                    cul[key][type].push(item)
+                    cul[key][type] = cul[key][type].sort(({ date: a }, { date: b }) => a.localeCompare(b))
+                })
+                return cul
+            }, {});
         }
     },
     methods: {
@@ -64,13 +76,18 @@ export default {
 
 <template>
 <div class="summary-list">
-    <div class="summary-list-group" v-for="(item, key) in group" :key="key">
+    <div class="summary-list-group" v-for="(items, key) in groupByType" :key="key">
         <h2 class="summary-list-group-title">{{ getTitle(key) }}</h2>
-        <ul class="summary-list-group-items">
-            <li v-for="({ dateString, type }, index) in item" :key="index">
-                {{ $t(`components.eventInfo.${type}Result`) }} {{ dateString}}
-            </li>
-        </ul>
+        <div  v-for="(item, type) in items" :key="`${key}-${type}-type`">
+            <div class="summary-list-group-type">
+                {{ $t(`components.eventInfo.${type}Result`) }}
+            </div>
+            <ul class="summary-list-group-items">
+                <li v-for="({ dateString }, index) in item" :key="index">
+                    {{ dateString }}
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 </template>
@@ -86,8 +103,14 @@ export default {
             font-family: $font-main;
             padding: 0;
             margin: 0 0 .1em 0;
-            font-size: 1em;
+            font-size: 1.7em;
         }
+
+        &-type {
+            font-weight: bold;
+            padding-top: 1em;
+        }
+
         &-items {
             list-style-type: none;
 
