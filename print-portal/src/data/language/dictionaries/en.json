@@ -854,6 +854,9 @@
         }
     },
     "warning": {
-        "noPositivetest": "No positive test result that could count for your vaccination certificate was found."
+        "noPositivetest": {
+            "type": "positivetest",
+            "message": "No positive test result that could count for your vaccination certificate was found."
+        }
     }
 }
