@@ -9,7 +9,7 @@ import errorPages from './pages/error-pages'
 import shortStayPages, { RouterNames } from './pages/short-stay'
 import i18n from '@/i18n';
 import store from '@/store'
-import QRRoutes from '@/qr/router'
+import QRRoutes, { RouterNames as Route } from '@/qr/router'
 import { Routes as PAPRoutes } from '@/pap/router'
 
 Vue.use(VueRouter)
@@ -34,10 +34,13 @@ const router = new VueRouter({
     }
 })
 
+const AUTO_CLOSE_SNACKBAR_ROUTES = [Route.VACCINATION_OVERVIEW_LIST, Route.RECOVERY_OVERVIEW_LIST]
+
 router.beforeEach((to, from, next) => {
-    // close snackbar when page changes
-    if (store.getters['snackbar/closeOnPageChange']) {
+    // auto close snackbar when page changes from these pages when snackbar is open
+    if (store.getters['snackbar/closeOnPageChange'] && AUTO_CLOSE_SNACKBAR_ROUTES.includes(from?.name)) {
         store.commit('snackbar/close');
+        alert('sja')
     }
 
     const generalPages = [
