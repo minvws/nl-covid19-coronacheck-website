@@ -16,7 +16,7 @@ const state = {
 
 const actions = {
     [events.POSITIVE_TEST_WARNING]: ({ commit }, message) => {
-        commit(events.POSITIVE_TEST_WARNING, message)
+        commit(events.POSITIVE_TEST_WARNING, message ?? null)
     },
     [events.WITH_POSITIVE_TEST]: ({ commit }, value) => {
         commit(events.WITH_POSITIVE_TEST, value)
