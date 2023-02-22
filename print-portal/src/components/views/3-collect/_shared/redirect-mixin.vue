@@ -309,7 +309,7 @@ export default {
         },
         handleWithPositiveTest () {
             const { auth, filter, scope } = this
-            let message = this.$t('warning.noPositivetest')
+            let warning = this.$t('warning.noPositivetest')
 
             if (this.$store.getters.removeExpiredPositiveTestsWithPositiveTest) {
                 // no recovery is fetched, or expired, remove signed events and show a warning
@@ -318,10 +318,11 @@ export default {
                 // see #TAIGA-4532: always include positive-test
                 const proofs = this.$store.getters['signedEvents/getProofsWithFilterAndScope']({ filter, scope });
                 if (proofs.length) {
-                    message = undefined;
+                    warning = undefined;
                 }
             }
-            this.$router.replace({ name: this.pages.overview, params: { auth, message } });
+            this.$store.dispatch('storage/POSITIVE_TEST_WARNING', warning)
+            this.$router.replace({ name: this.pages.overview, params: { auth } });
         },
         isTestedPositiveBeforeFirstVaccination (proofEvents) {
             // all positive tests dates

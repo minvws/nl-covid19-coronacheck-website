@@ -11,6 +11,10 @@ export default {
         events: {
             type: Array,
             required: true
+        },
+        warning: {
+            type: Object,
+            required: false
         }
     },
     computed: {
@@ -36,7 +40,7 @@ export default {
             })
         },
         groupByType () {
-            return Object.entries(this.group).reduce((cul, [key, items]) => {
+            const list = Object.entries(this.group).reduce((cul, [key, items]) => {
                 if (!cul[key]) cul[key] = {}
                 items.forEach(item => {
                     const { type } = item
@@ -47,6 +51,15 @@ export default {
                 })
                 return cul
             }, {});
+
+            if (this.warning) {
+                // add a warning in the list at type of auth AND filter -type of warning
+                const target = list[this.$t(`provider.${this.$store.getters.authType}`)]
+                const { type, message } = this.warning
+                if (!target[type]) target[type] = []
+                target[type].push({ message })
+            }
+            return list
         }
     },
     methods: {
@@ -84,8 +97,8 @@ export default {
                 {{ $t(`components.eventInfo.${type}Result`) }}
             </div>
             <ul class="summary-list-group-items">
-                <li v-for="({ dateString }, index) in item" :key="index">
-                    {{ dateString }}
+                <li v-for="({ dateString, message }, index) in item" :key="index">
+                    {{ dateString || message }}
                 </li>
             </ul>
         </div>

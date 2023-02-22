@@ -854,6 +854,9 @@
         }
     },
     "warning": {
-        "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen voor je vaccinatiebewijs."
+        "noPositivetest": {
+            "type": "positivetest",
+            "message": "Er is geen positieve testuitslag gevonden die mee kan tellen voor je vaccinatiebewijs."
+        }
     }
 }

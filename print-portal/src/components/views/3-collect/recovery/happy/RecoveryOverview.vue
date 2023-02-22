@@ -7,7 +7,6 @@ import Vaccination from '@/components/views/3-collect/vaccination/happy/Vaccinat
 
 import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
-import WarningMessage from '@/components/elements/WarningMessage';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import vaccinationOverviewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
 import LoadingCover from '@/components/elements/LoadingCover';
@@ -17,14 +16,8 @@ import { FilterTypes } from '@/types/filter-types'
 
 export default {
     name: 'RecoveryOverview',
-    components: { LoadingCover, PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton, WarningMessage, Vaccination },
+    components: { LoadingCover, PositiveTest, Page, PageIntro, Recovery, CcButton, CcModestButton, Vaccination },
     mixins: [overviewMixin, vaccinationOverviewMixin],
-    props: {
-        message: {
-            type: String,
-            required: false
-        }
-    },
     data() {
         return {
             filter: [FilterTypes.POSITIVE_TEST, FilterTypes.RECOVERY].join(','),
@@ -77,11 +70,6 @@ export default {
                     </div>
                 </div>
                 <div class="section-block__footer">
-                     <WarningMessage
-                        v-if="message"
-                        class="warning"
-                        :message="message"
-                    />
                     <CcButton
                         id="create-qr-recovery"
                         @select="gotoPrint()"
