@@ -40,7 +40,6 @@ router.beforeEach((to, from, next) => {
     // auto close snackbar when page changes from these pages when snackbar is open
     if (store.getters['snackbar/closeOnPageChange'] && AUTO_CLOSE_SNACKBAR_ROUTES.includes(from?.name)) {
         store.commit('snackbar/close');
-        alert('sja')
     }
 
     const generalPages = [
