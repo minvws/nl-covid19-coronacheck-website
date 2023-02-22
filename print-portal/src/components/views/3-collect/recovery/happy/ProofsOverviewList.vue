@@ -6,10 +6,11 @@
          <PageIntro v-bind="intro"/>
            <div class="section-block">
                 <ProofsSummary v-bind="{
-                    events
+                    events,
+                    warning
                 }" />
                 <CcButton
-                    @select="$router.push({ ...next, params: { message} } )"
+                    @select="$router.push(next)"
                     :label="button"
                 />
                 <PrintFaqLink
@@ -54,12 +55,7 @@ export default Vue.extend({
         id: {
             type: String,
             required: true
-        },
-        message: {
-            type: String,
-            required: false
         }
-
     },
     methods: {
         back () {
@@ -100,6 +96,9 @@ export default Vue.extend({
                 return result
             }
             return result.filter(({ event: { vaccination } }) => !!vaccination) // only show vaccinations, see #TAIGA-4607
+        },
+        warning () {
+            return this.$store.getters['storage/POSITIVE_TEST_WARNING']
         }
     }
 })
