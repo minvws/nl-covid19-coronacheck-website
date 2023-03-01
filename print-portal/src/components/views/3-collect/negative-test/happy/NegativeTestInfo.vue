@@ -82,7 +82,7 @@ export default {
                         </div>
                         <div class="dl__row">
                             <dt>
-                                {{$t('components.eventInfo.testResult')}}:
+                                {{$tc('components.eventInfo.testResult')}}:
                             </dt>
                             <dd>
                                 {{$t('components.test.info.testResultNegative')}}

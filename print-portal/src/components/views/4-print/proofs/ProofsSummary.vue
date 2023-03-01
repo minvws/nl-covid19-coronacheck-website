@@ -94,7 +94,7 @@ export default {
         <h2 class="summary-list-group-title">{{ getTitle(key) }}</h2>
         <div  v-for="(item, type) in items" :key="`${key}-${type}-type`">
             <div class="summary-list-group-type">
-                {{ $t(`components.eventInfo.${type}Result`) }}
+                {{ $tc(`components.eventInfo.${type}Result`, item.length) }}
             </div>
             <ul class="summary-list-group-items">
                 <li v-for="({ dateString, message }, index) in item" :key="index">
