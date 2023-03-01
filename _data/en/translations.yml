@@ -68,9 +68,9 @@ footer-attribution: 'Made possible by:'
 
 footer-contact-title: Don't see your question listed? <br />Contact our helpdesk
 
-footer-contact-in-app-subtitle: Don't see your question listed? Check <a href="https://www.coronacheck.nl/en/faq" target="_blank">all most frequently asked questions</a> or contact the helpdesk.
+footer-contact-in-app-subtitle: Don't see your question listed? Check <a href="https://www.coronacheck.nl/en/faq" target="_blank" rel="noopener noreferrer">all most frequently asked questions</a> or contact the helpdesk.
 
-footer-contact-scanner-in-app-subtitle: Don't see your question listed? Check <a href="https://www.coronacheck.nl/en/faq-scanner" target="_blank">all most frequently asked questions</a> or contact the helpdesk.
+footer-contact-scanner-in-app-subtitle: Don't see your question listed? Check <a href="https://www.coronacheck.nl/en/faq-scanner" target="_blank" rel="noopener noreferrer">all most frequently asked questions</a> or contact the helpdesk.
 
 footer-phone: Call the helpdesk
 
