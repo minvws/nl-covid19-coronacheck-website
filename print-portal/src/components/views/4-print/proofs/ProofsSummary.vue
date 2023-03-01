@@ -47,7 +47,7 @@ export default {
                     if (!cul[key][type]) cul[key][type] = []
                     cul[key][type].push(item)
                     cul[key][type] = cul[key][type]
-                        .sort(({ date: a }, { date: b }) => a.localeCompare(b))
+                        .sort(({ date: a }, { date: b }) => b.localeCompare(a))
                 })
                 return cul
             }, {});
@@ -70,8 +70,9 @@ export default {
         },
         getResult ({ name, event }) {
             const { type } = event
-            const { hpkCode, date, sampleDate } = event[type]
-            const dateString = this.formateDate(date || sampleDate)
+            const { hpkCode, date: eventDate, sampleDate } = event[type]
+            const date = eventDate ?? sampleDate
+            const dateString = this.formateDate(date)
             return { hpkCode, type, name, date, dateString }
         },
         formateDate(date) {
