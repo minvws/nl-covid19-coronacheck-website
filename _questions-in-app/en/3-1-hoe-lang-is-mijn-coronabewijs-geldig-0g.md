@@ -5,8 +5,6 @@ title: How long is my corona certificate valid for?
 whichversion:
   - 0g
 ---
-The coronavirus entry pass is currently not in use within the Netherlands.
-
 For international travel, showing a coronavirus entry pass is required in some countries. The following validities apply:
 
 - A recovery certificate becomes valid 11 days after the positive test, until 180 days after the positive test.
