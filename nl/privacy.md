@@ -64,7 +64,7 @@ Wij verwerken persoonsgegevens om voor jou een EU DCC te kunnen maken. Hiermee k
 
 De minister van VWS is wettelijk verplicht om voor iemand die daarom vraagt een EU DCC aan te maken als diegene voldoet aan de eisen. Je moet wel gevaccineerd zijn, over een geldige testuitslag of over een herstelbewijs beschikken.
 
-In de algemene verordening gegevensbescherming (AVG) worden zes mogelijke grondslagen voor het verwerken van persoonsgegevens genoemd (artikel 6 lid 1 AVG). De grondslag voor de verwerking van jouw gegevens is gebaseerd op artikel 6 lid 1 onder e van de AVG: een taak van algemeen belang. Gegevens over jouw gezondheid worden verwerkt op grond van artikel 6 lid 1 sub e jo artikel 9 lid 2 onder g AVG. Omdat het hier gaat om een bewijs voor reizen binnen de EER moet de grondslag in het Europees recht te vinden zijn (zie Verordening 2021/953/EU, plus Tijdelijk Besluit DCC).
+In de algemene verordening gegevensbescherming (AVG) worden zes mogelijke grondslagen voor het verwerken van persoonsgegevens genoemd (artikel 6 lid 1 AVG). De grondslag voor de verwerking van jouw gegevens is gebaseerd op artikel 6 lid 1 onder e van de AVG: een taak van algemeen belang. Gegevens over jouw gezondheid worden verwerkt op grond van artikel 6 lid 1 sub e jo artikel 9 lid 2 sub b van de AVG. Omdat het hier gaat om een bewijs voor reizen binnen de EER moet de grondslag in het Europees recht te vinden zijn (zie Verordening 2021/953/EU, plus Tijdelijk Besluit DCC).
 
 ## Grondslag Europees recht
 

@@ -64,7 +64,7 @@ We process personal data to be able to create an EU DCC for you. You may use it 
 
 The Minister of VWS is required by law to create an EU DCC for someone who requests one if they meet the requirements. They need to be vaccinated or possess a valid test result or recovery certificate.
 
-The General Data Protection Regulation (GDPR) lists six possible bases for processing personal data (Article 6 (1) AVG). The basis for processing your data is based on Article 6 (1) (e) of the GDPR: a task of general interest. Data concerning your health may be processed on the basis of Article 6 (1) (e) and Article 9 (2) (g) of the GDPR. Since this is a certificate for travel within the EEA the basis must be found in European law (see Regulation 2021/953/EU and Temporary Decision DCC).
+The General Data Protection Regulation (GDPR) lists six possible bases for processing personal data (Article 6 (1) AVG). The basis for processing your data is based on Article 6 (1) (e) of the GDPR: a task of general interest. Data concerning your health may be processed on the basis of Article 6 (1) (e) in conjunction with Article 9 (2) (b) of the GDPR. Since this is a certificate for travel within the EEA the basis must be found in European law (see Regulation 2021/953/EU and Temporary Decision DCC).
 
 ### Basis of European law
 
