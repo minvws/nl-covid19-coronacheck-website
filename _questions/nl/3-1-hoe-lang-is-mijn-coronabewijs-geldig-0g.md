@@ -5,9 +5,7 @@ title: Hoe lang is mijn coronabewijs geldig?
 whichversion:
   - 0g
 ---
-Coronabewijzen worden op dit moment in Nederland niet gebruikt.
-
-Om internationaal te reizen heb je in sommige landen wel een coronabewijs nodig. Dan is de geldigheid als volgt:
+Om internationaal te reizen heb je in sommige landen een coronabewijs nodig. De geldigheid als volgt:
 
 - Een herstelbewijs is geldig vanaf 11 dagen na de positieve test, tot 180 dagen na de positieve test.
 - Een vaccinatiebewijs krijg je al na één vaccinatie. Een volledig vaccinatiebewijs is over het algemeen 270 dagen geldig. Ben je jonger dan 18 jaar? Dan gelden er andere regels voor de geldigheid van je vaccinatiebewijs. Kijk op {{ site.data.links.eisen-en-geldigheid[page.lang] }}.<br />
