@@ -324,7 +324,7 @@
                 "NONE": "",
                 "NO_CAMERA": "No camera found",
                 "PLAYING": "Camera is running",
-                "REJECTED": "You must first give permission to use your camera.",
+                "REJECTED": "You must first give permission to use your camera. Open the privacy settings of your device to do this.",
                 "SELECTED": "Camera starting",
                 "STARTING": "Starting camera",
                 "STOPPED": "Camera stopped"
@@ -855,8 +855,8 @@
     },
     "warning": {
         "noPositivetest": {
-            "type": "positivetest",
-            "message": "No positive test result that could count for your vaccination certificate was found."
+            "message": "No positive test result that could count for your vaccination certificate was found.",
+            "type": "positivetest"
         }
     }
 }
