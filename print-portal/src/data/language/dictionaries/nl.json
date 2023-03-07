@@ -324,7 +324,7 @@
                 "NONE": "",
                 "NO_CAMERA": "Geen camera gevonden",
                 "PLAYING": "Camera is actief",
-                "REJECTED": "Je moet eerst toestemming geven om je camera te gebruiken.",
+                "REJECTED": "Je moet eerst toestemming geven om je camera te gebruiken. Open hiervoor de privacyinstellingen van je apparaat.",
                 "SELECTED": "Camera bezig met starten",
                 "STARTING": "Camera is aan het starten",
                 "STOPPED": "Camera is gestopt"
@@ -855,8 +855,8 @@
     },
     "warning": {
         "noPositivetest": {
-            "type": "positivetest",
-            "message": "Er is geen positieve testuitslag gevonden die mee kan tellen voor je vaccinatiebewijs."
+            "message": "Er is geen positieve testuitslag gevonden die mee kan tellen voor je vaccinatiebewijs.",
+            "type": "positivetest"
         }
     }
 }
