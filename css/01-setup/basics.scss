@@ -163,7 +163,7 @@ button {
 .btn.only-mobile {
     display: none;
 
-    @media only screen and (max-width: 739px) {
+    @media (max-width: 739px) {
         display: inline-block;
     }
 }
@@ -171,7 +171,7 @@ button {
 .btn.only-desktop {
     display: inline-block;
 
-    @media only screen and (max-width: 740px) {
+    @media (max-width: 740px) {
         display: none;
     }
 }
@@ -182,12 +182,18 @@ button {
 }
 
 .iOS {
+    .btn.only-desktop {
+        display: none;
+    }
     .btn.onlyiOS {
         display: inline-block;
     }
 }
 
 .android {
+    .btn.only-desktop {
+        display: none;
+    }
     .btn.onlyAndroid {
         display: inline-block;
     }
