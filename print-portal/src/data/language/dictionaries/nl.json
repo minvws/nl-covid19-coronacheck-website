@@ -166,7 +166,7 @@
                     "yes": "Ja"
                 },
                 "identificationCode": "Uniek vaccinatienummer",
-                "manufacturer": "Producent",
+                "manufacturer": "Vaccinproducent",
                 "pathogen": "Ziekteverwekker",
                 "vaccinationCountry": "Gevaccineerd in",
                 "vaccinationDate": "Vaccinatiedatum",

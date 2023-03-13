@@ -154,7 +154,7 @@
         },
         "vaccination": {
             "info": {
-                "detailsRetrieved": "The following details about your vaccination have been retrieved at %{provider}",
+                "detailsRetrieved": "The following details about your vaccination have been retrieved from %{provider}",
                 "displayName": "Product name",
                 "doses": "Doses",
                 "finalDosis": "Is this the last dose of your vaccination?",
@@ -167,7 +167,7 @@
                 },
                 "identificationCode": "Unique vaccination identifier",
                 "manufacturer": "Vaccine manufacturer",
-                "pathogen": "Pathogen",
+                "pathogen": "Disease targeted",
                 "vaccinationCountry": "Vaccinated in",
                 "vaccinationDate": "Vaccination date",
                 "vaccine": "Vaccine",
