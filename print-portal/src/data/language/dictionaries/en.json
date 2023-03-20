@@ -72,7 +72,7 @@
             "negativetestResult": "Negative test result | Negative test results",
             "positivetestResult": "Positive test result | Positive test results",
             "receivedFrom": "Retrieved with",
-            "recoveryResult": "Recovery certificate",
+            "recoveryResult": "Recovery certificate | Recovery certificates",
             "scannedQR": "Added by you",
             "testResult": "Test result | Test results",
             "vaccinationResult": "Vaccination | Vaccinations",
@@ -731,7 +731,7 @@
             "button": "Next",
             "link": "I want to add another vaccination",
             "pageHeader": "Vaccination successfully added",
-            "pageIntro": "<p>Continue to add these vaccinations to your certificate. Or add another vaccination.<\/p>"
+            "pageIntro": "<p>Continue to include these details in your certificate. Or add another vaccination if one is missing.<\/p>"
         },
         "proofIntroduction": {
             "link": "Don’t have a certificate with QR code?",
@@ -739,10 +739,10 @@
             "pageIntro": "<p>If your vaccination is missing, it will not be included in the vaccination certificate you want to create. Do you already have a certificate with QR code of your missing vaccination? Then you can add it in the next step.<br><br>You can add a certificate with QR code of your vaccination from abroad. Or a certificate you received from your health care provider or the Dutch government.<\/p>"
         },
         "proofsOverviewList": {
-            "button": "Yes, next",
-            "link": "No, a vaccination is missing",
-            "pageHeader": "Are these all your vaccinations?",
-            "pageIntro": "<p>Continue to add these vaccinations to your certificate. Or add another vaccination.<\/p>"
+            "button": "Next",
+            "link": "A vaccination is missing",
+            "pageHeader": "This was retrieved:",
+            "pageIntro": "<p>Continue to include these details in your certificate. Or add another vaccination if one is missing.<\/p>"
         },
         "provideCode": {
             "didNotGetCode": "Didn't receive a verification code?",
@@ -838,8 +838,8 @@
         },
         "vaccinationOverview": {
             "createTestProofButton": "Make certificate",
-            "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>Check your details below. If these are correct you can create a certificate.<\/p>"
+            "pageHeader": "Check your details below",
+            "pageIntro": "<p>If these are correct you can create a certificate.<\/p>"
         },
         "vaccinationsIncomplete": {
             "pageHeader": "We can’t make a certificate",
