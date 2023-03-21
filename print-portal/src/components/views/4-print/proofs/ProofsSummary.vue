@@ -11,6 +11,10 @@ export default {
         events: {
             type: Array,
             required: true
+        },
+        warning: {
+            type: Object,
+            required: false
         }
     },
     computed: {
@@ -34,6 +38,28 @@ export default {
                 })
                 return position === index
             })
+        },
+        groupByType () {
+            const list = Object.entries(this.group).reduce((cul, [key, items]) => {
+                if (!cul[key]) cul[key] = {}
+                items.forEach(item => {
+                    const { type } = item
+                    if (!cul[key][type]) cul[key][type] = []
+                    cul[key][type].push(item)
+                    cul[key][type] = cul[key][type]
+                        .sort(({ date: a }, { date: b }) => b.localeCompare(a))
+                })
+                return cul
+            }, {});
+
+            if (this.warning) {
+                // add a warning in the list at type of auth AND filter -type of warning
+                const target = list[this.$t(`provider.${this.$store.getters.authType}`)]
+                const { type, message } = this.warning
+                if (!target[type]) target[type] = []
+                target[type].push({ message })
+            }
+            return list
         }
     },
     methods: {
@@ -44,8 +70,9 @@ export default {
         },
         getResult ({ name, event }) {
             const { type } = event
-            const { hpkCode, date, sampleDate } = event[type]
-            const dateString = this.formateDate(date || sampleDate)
+            const { hpkCode, date: eventDate, sampleDate } = event[type]
+            const date = eventDate ?? sampleDate
+            const dateString = this.formateDate(date)
             return { hpkCode, type, name, date, dateString }
         },
         formateDate(date) {
@@ -64,13 +91,18 @@ export default {
 
 <template>
 <div class="summary-list">
-    <div class="summary-list-group" v-for="(item, key) in group" :key="key">
+    <div class="summary-list-group" v-for="(items, key) in groupByType" :key="key">
         <h2 class="summary-list-group-title">{{ getTitle(key) }}</h2>
-        <ul class="summary-list-group-items">
-            <li v-for="({ dateString, type }, index) in item" :key="index">
-                {{ $t(`components.eventInfo.${type}Result`) }} {{ dateString}}
-            </li>
-        </ul>
+        <div  v-for="(item, type) in items" :key="`${key}-${type}-type`">
+            <div class="summary-list-group-type">
+                {{ $tc(`components.eventInfo.${type}Result`, item.length) }}
+            </div>
+            <ul class="summary-list-group-items">
+                <li v-for="({ dateString, message }, index) in item" :key="index">
+                    {{ dateString || message }}
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 </template>
@@ -86,8 +118,14 @@ export default {
             font-family: $font-main;
             padding: 0;
             margin: 0 0 .1em 0;
-            font-size: 1em;
+            font-size: 1.7em;
         }
+
+        &-type {
+            font-weight: bold;
+            padding-top: 1em;
+        }
+
         &-items {
             list-style-type: none;
 

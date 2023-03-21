@@ -11,6 +11,13 @@ export default {
     name: 'CollectPositiveTest',
     components: { Page, PageIntro, Loading },
     mixins: [redirectMixin],
+    props: {
+        isWithPositiveTest: {
+            type: Boolean,
+            requiored: false,
+            default: false
+        }
+    },
     data() {
         const overview = this.$store.getters.isListBeforeOverview ? RouterNames.RECOVERY_OVERVIEW_LIST : RouterNames.RECOVERY_OVERVIEW
         return {
@@ -33,7 +40,7 @@ export default {
     <Page>
         <div class="section">
             <PageIntro
-                :head="$t('views.collectPositiveTest.pageHeader')"/>
+                :head="isWithPositiveTest ? $t('views.proofsOverviewList.pageHeader') : $t('views.collectPositiveTest.pageHeader')"/>
             <div class="section-block">
                  <div class="section-block__footer">
                      <Loading />

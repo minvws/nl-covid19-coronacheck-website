@@ -69,13 +69,13 @@
             "eventsFetchedAt": "Gegevens opgehaald bij",
             "head": "Details",
             "name": "Naam",
-            "negativetestResult": "Negatieve testuitslag",
-            "positivetestResult": "Positieve testuitslag",
+            "negativetestResult": "Negatieve testuitslag | Negatieve testuitslagen",
+            "positivetestResult": "Positieve testuitslag | Positieve testuitslagen",
             "receivedFrom": "Opgehaald met",
-            "recoveryResult": "Herstelbewijs",
+            "recoveryResult": "Herstelbewijs | Herstelbewijzen",
             "scannedQR": "Zelf toegevoegd",
-            "testResult": "Testuitslag",
-            "vaccinationResult": "Vaccinatie",
+            "testResult": "Testuitslag | Testuitslagen",
+            "vaccinationResult": "Vaccinatie | Vaccinaties",
             "validFrom": "Geldig vanaf",
             "validUntil": "Geldig tot"
         },
@@ -166,7 +166,7 @@
                     "yes": "Ja"
                 },
                 "identificationCode": "Uniek vaccinatienummer",
-                "manufacturer": "Producent",
+                "manufacturer": "Vaccinproducent",
                 "pathogen": "Ziekteverwekker",
                 "vaccinationCountry": "Gevaccineerd in",
                 "vaccinationDate": "Vaccinatiedatum",
@@ -324,7 +324,7 @@
                 "NONE": "",
                 "NO_CAMERA": "Geen camera gevonden",
                 "PLAYING": "Camera is actief",
-                "REJECTED": "Je moet eerst toestemming geven om je camera te gebruiken.",
+                "REJECTED": "Je moet eerst toestemming geven om je camera te gebruiken. Open hiervoor de privacyinstellingen van je apparaat.",
                 "SELECTED": "Camera bezig met starten",
                 "STARTING": "Camera is aan het starten",
                 "STOPPED": "Camera is gestopt"
@@ -734,7 +734,7 @@
             "button": "Volgende",
             "link": "Ik wil nog een vaccinatie toevoegen",
             "pageHeader": "Vaccinatie toevoegen gelukt",
-            "pageIntro": "<p>Ga verder om deze vaccinaties mee te nemen in je bewijs of voeg nog een vaccinatie toe.<\/p>"
+            "pageIntro": "<p>Ga verder om deze gegevens mee te nemen in je bewijs of voeg nog een vaccinatie toe als er een mist.<\/p>"
         },
         "proofIntroduction": {
             "link": "Heb je geen bewijs met QR-code?",
@@ -742,10 +742,10 @@
             "pageIntro": "<p>Als je vaccinatie er niet bij staat, wordt deze niet meegeteld in het vaccinatiebewijs dat je wilt maken. Heb je al een bewijs met QR-code van je missende vaccinatie? Dan kun je die in de volgende stap toevoegen.<br><br>Je kunt een bewijs met QR-code toevoegen van je vaccinatie uit het buitenland. Of een bewijs dat je opgestuurd hebt gekregen van je zorgverlener of de Nederlandse overheid.<\/p>"
         },
         "proofsOverviewList": {
-            "button": "Ja, volgende",
-            "link": "Nee, er mist een vaccinatie",
-            "pageHeader": "Zijn dit al jouw vaccinaties?",
-            "pageIntro": "<p>Ga verder om deze vaccinaties mee te nemen in je bewijs of voeg nog een vaccinatie toe.<\/p>"
+            "button": "Volgende",
+            "link": "Er mist een vaccinatie",
+            "pageHeader": "Dit is er opgehaald:",
+            "pageIntro": "<p>Ga verder om deze gegevens mee te nemen in je bewijs of voeg nog een vaccinatie toe als er een mist.<\/p>"
         },
         "provideCode": {
             "didNotGetCode": "Geen verificatiecode gekregen?",
@@ -854,6 +854,9 @@
         }
     },
     "warning": {
-        "noPositivetest": "Er is geen positieve testuitslag gevonden die mee kan tellen voor je vaccinatiebewijs."
+        "noPositivetest": {
+            "message": "Er is geen positieve testuitslag gevonden die mee kan tellen voor je vaccinatiebewijs.",
+            "type": "positivetest"
+        }
     }
 }
