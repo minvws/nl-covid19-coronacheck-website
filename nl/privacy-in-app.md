@@ -43,22 +43,22 @@ Bij afgifte van een EU DCC wordt een unieke certificaatcode van jouw EU DCC aang
 
 Je test-, vaccinatie- en herstelgegevens worden verstrekt door de hulpverlener die jou heeft getest of gevaccineerd. Gegevens voor een herstelbewijs worden verstrekt door de GGD’en. Deze gegevens worden op twee manieren opgevraagd, waarbij ook persoonsgegevens worden verwerkt:
 
-1. In het geval je getest bent bij een andere testaanbieder dan jouw regionale GGD worden de gegevens opgehaald via de unieke ophaalcode en verificatiecode die je hebt gekregen van de testaanbieder. Je kunt je gegevens in dat geval ophalen door deze unieke ophaalcode en verificatiecode zelf in te voeren in de CoronaCheck-app of de website coronacheck.nl.
-2. Om vaccinatie- of herstelgegevens óf een negatieve test uitgevoerd door een GGD of een hulpverlener in het ziekenhuis op te halen, log je in met DigiD om je te identificeren. Door in te loggen krijgt VWS jouw BSN en verifieert op basis van jouw BSN je voor- en achternaam en geboortedatum aan de hand van de Basisregistratie Personen. Met de combinatie van deze gegevens bevraagt de minister de partijen die jouw vaccinatie-, herstel- en testgegevens kunnen hebben (zoals de GGD’en, het RIVM, het ziekenhuis waar je gevaccineerd bent en je huisarts) om jouw gegevens bij hen op te halen. Jouw herstelgegevens zijn gebaseerd op een positieve test in het verleden, die zijn verplicht bij de GGD in jouw regio gemeld door de testaanbieder die je getest heeft.
+1. In het geval je getest bent bij een andere testaanbieder dan jouw regionale GGD worden de gegevens opgehaald via de unieke ophaalcode en verificatiecode die je hebt gekregen van de testaanbieder. Je kunt je gegevens in dat geval ophalen door deze unieke ophaalcode en verificatiecode zelf in te voeren in de CoronaCheck-app of op de website coronacheck.nl.
+2. Om vaccinatie- of herstelgegevens óf een negatieve test uitgevoerd door een GGD of een hulpverlener in het ziekenhuis op te halen, log je in met DigiD om je te identificeren. Door in te loggen krijgt VWS jouw BSN en verifieert op basis van jouw BSN je voor- en achternaam en geboortedatum aan de hand van de Basisregistratie Personen. Met de combinatie van deze gegevens bevraagt de minister de partijen die jouw vaccinatie-, herstel- en testgegevens kunnen hebben (zoals de GGD’en, het RIVM, het ziekenhuis waar je gevaccineerd bent en je huisarts) om jouw gegevens bij hen op te halen. Jouw herstelgegevens zijn gebaseerd op een positieve test in het verleden, die verplicht bij de GGD in jouw regio zijn gemeld door de testaanbieder die je getest heeft.
 
 Als je met de CoronaCheck-app of via de website coronacheck.nl je gegevens ophaalt, dan krijg je te zien welke gegevens zijn opgehaald en waar deze gegevens vandaan komen.
 
-Als je alleen maar beschikt over een fysiek bewijs op papier dat je via je hulpverlener of via de helpdesk bij het CIBG hebt verkregen dan is er een mogelijkheid om je papieren bewijs alsnog in te scannen via de CoronaCheck-app. Je kunt de QR-code van je fysieke bewijs scannen met de camera van je telefoon. De gegevens worden dan gebruikt om een digitaal EU DCC te maken. 
+Als je alleen maar beschikt over een fysiek bewijs op papier dat je via je hulpverlener of via de helpdesk bij het CIBG hebt verkregen, dan is er een mogelijkheid om je papieren bewijs alsnog in te scannen via de CoronaCheck-app. Je kunt de QR-code van je fysieke bewijs scannen met de camera van je telefoon. De gegevens worden dan gebruikt om een digitaal EU DCC te maken. 
 
 ## 3. Waarom verwerken wij persoonsgegevens? (doel van de verwerking)
 
-Het doel van de beoogde gegevensverwerking is om het vrij verkeer van personen, zoals normaal geldt binnen de Europese Economische Ruimte (EER), tijdens de COVID-19-pandemie te faciliteren en te voorkomen dat mensen met een verhoogd besmettingsgevaar inreizen in de lidstaten.
+Het doel van de beoogde gegevensverwerking is om het vrije verkeer van personen, zoals normaal geldt binnen de Europese Economische Ruimte (EER), tijdens de COVID-19-pandemie te faciliteren en te voorkomen dat mensen met een verhoogd besmettingsgevaar inreizen in de lidstaten.
 
 Wij verwerken persoonsgegevens om voor jou een EU DCC te kunnen maken. Hiermee kun je reizen naar landen binnen Europa die een EU DCC als voorwaarde stellen om in te reizen. Ook een aantal niet-EER-landen en -gebieden heeft zich aangesloten bij het EU DCC systeem.
 
 ## 4. Wat is de grondslag voor deze gegevensverwerking?
 
-De minister van VWS is wettelijk verplicht om voor iemand die daarom vraagt een EU DCC aan te maken als diegene voldoet aan de eisen. Je moet wel gevaccineerd zijn, over een geldige testuitslag of over een herstelbewijs beschikken.
+De minister van VWS is wettelijk verplicht om voor iemand die daarom vraagt een EU DCC aan te maken als diegene voldoet aan de eisen. Je moet wel gevaccineerd zijn, of over een geldige testuitslag of over een herstelbewijs beschikken.
 
 In de algemene verordening gegevensbescherming (AVG) worden zes mogelijke grondslagen voor het verwerken van persoonsgegevens genoemd (artikel 6 lid 1 AVG). De grondslag voor de verwerking van jouw gegevens is gebaseerd op artikel 6 lid 1 onder e van de AVG: een taak van algemeen belang. Gegevens over jouw gezondheid worden verwerkt op grond van artikel 6 lid 1 sub e jo artikel 9 lid 2 sub b van de AVG. Omdat het hier gaat om een bewijs voor reizen binnen de EER moet de grondslag in het Europees recht te vinden zijn (zie Verordening 2021/953/EU, plus Tijdelijk Besluit DCC).
 
@@ -66,7 +66,7 @@ In de algemene verordening gegevensbescherming (AVG) worden zes mogelijke gronds
 
 Op 14 juni 2021 is de Verordening (EU) 2021/953 van het Europees Parlement en de Raad betreffende een kader voor de afgifte, verificatie en aanvaarding van interoperabele COVID-19-vaccinatie-, test- en herstelcertificaten (digitaal EU-COVID-certificaat) teneinde het vrije verkeer tijdens de COVID-19-pandemie te faciliteren, gepubliceerd (hierna: de verordening).
 
-De verordening ziet op een Europees (technisch) kader voor de uitgifte van interoperabele certificaten inzake COVID-19-vaccinatie, -testen en –herstelbewijzen met als doel om het vrij verkeer van personen te bevorderen (artikel 21 VWEU). De EU DCC wordt verstrekt op grond van de verordening (artikel 3 tweede lid van de verordening). De minister van VWS (of de door hem aangewezen instanties) draagt zorg voor de uitgifte van het EU DCC in digitale vorm of op papier. In artikel 10 zesde lid van de verordening wordt degene die verantwoordelijk is voor de uitgifte aangewezen als verwerkingsverantwoordelijke. De minister van VWS is daarmee verwerkingsverantwoordelijke voor de uitgifte van het EU DCC.
+De verordening ziet toe op een Europees (technisch) kader voor de uitgifte van interoperabele certificaten inzake COVID-19-vaccinatie, -testen en –herstelbewijzen met als doel om het vrij verkeer van personen te bevorderen (artikel 21 VWEU). Het EU DCC wordt verstrekt op grond van de verordening (artikel 3 tweede lid van de verordening). De minister van VWS (of de door hem aangewezen instanties) draagt zorg voor de uitgifte van het EU DCC in digitale vorm of op papier. In artikel 10 zesde lid van de verordening wordt degene die verantwoordelijk is voor de uitgifte aangewezen als verwerkingsverantwoordelijke. De minister van VWS is daarmee verwerkingsverantwoordelijke voor de uitgifte van het EU DCC.
 
 ## 5. Wie is verwerkingsverantwoordelijke en wie zijn verwerkers?
 
@@ -74,7 +74,7 @@ De Minister van Volksgezondheid, Welzijn en Sport (hierna: ‘de minister’) is
 
 Verwerkers van de minister:
 
-- Prolocation B.V. beheert de configuratie server en back end systemen van VWS en tevens de signing servers die door VWS worden ingezet.
+- Prolocation B.V. beheert de configuratieserver en back-endsystemen van VWS en tevens de signing servers die door VWS worden ingezet.
 - Yource Operations B.V. levert de benodigde helpdeskdiensten. De helpdesk doet dienst als informatiepunt en ondersteunt burgers als ze vastlopen bij de werking van de CoronaCheck-app. Daarnaast zorgen ze voor uitleg en doorverwijzing als burgers er tegenaan lopen dat de data die wordt opgehaald niet volledig of juist is.
 
 ## 6. Hoelang bewaren we jouw gegevens?
@@ -92,15 +92,15 @@ Je BSN wordt niet bewaard door VWS. Je IP-adres wordt niet langer dan zeven dage
 
 ## 7. Met wie worden de gegevens gedeeld?
 
-Als je je bewijs laat zien aan degene die je bewijs controleert in een andere lidstaat als je inreist dan kan die persoon de gegevens die in de QR-code staan uitlezen. Die gegevens mag de controleur niet opslaan. Ze kunnen op dat moment enkel controleren of je een geldig EU DCC hebt.
+Als je je bewijs laat zien aan degene die je bewijs controleert in een andere lidstaat als je inreist, dan kan die persoon de gegevens die in de QR-code staan uitlezen. Die gegevens mag de controleur niet opslaan. Ze kunnen op dat moment enkel controleren of je een geldig EU DCC hebt.
 
-Als jij het EU DCC toont in een ander land dan ziet de controleur in dat andere land alle gegevens die zijn opgenomen in de QR-code van de EU DCC. [Klik hier voor een overzicht van die gegevens](https://coronacheck.nl/nl/privacy#overzicht-van-verwerkte-persoonsgegevens).
+Als jij het EU DCC toont in een ander land, dan ziet de controleur in dat andere land alle gegevens die zijn opgenomen in de QR-code van de EU DCC. [Klik hier voor een overzicht van die gegevens](https://coronacheck.nl/nl/privacy#overzicht-van-verwerkte-persoonsgegevens).
 
 Bedenk wel dat als je de QR-codes laat scannen in een ander land buiten de EER, dat daar andere regels voor het beschermen van jouw persoonsgegevens kunnen gelden. En dat je daar ook niet alle rechten kunt uitoefenen die je binnen de EER hebt omdat buiten de EER de AVG niet van toepassing is.
 
 ## 8. Is er sprake van geautomatiseerde besluitvorming?
 
-Ja, als jij jouw EU DCC via de website coronacheck.nl of via de CoronaCheck-app aanvraagt wordt dit proces helemaal geautomatiseerd afgehandeld. Mocht je daardoor vastlopen en je voldoet wel aan de eisen dan zijn er meerdere mogelijkheden om alsnog een EU DCC te krijgen. Allereerst is er een pagina met antwoorden op de meest voorkomende vragen. Als je daar geen antwoord op je vraag vindt kun je contact opnemen met de helpdesk via: [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl). Zij kunnen je helpen als je bent vastgelopen omdat de techniek niet goed werkt. Het kan bijvoorbeeld ook zo zijn dat het systeem aangeeft dat je niet voldoende gegevens hebt om een bewijs aan te maken maar je weet zeker dat dit niet klopt. De helpdesk kan dan ook ondersteunen bij hoe je dit vervolgens kunt oplossen. Het kan bijvoorbeeld zo zijn dat de hulpverlener die je heeft getest of gevaccineerd de gegevens niet juist heeft opgeslagen. Dat kun je dan via de hulpverlener laten aanpassen.
+Ja, als jij jouw EU DCC via de website coronacheck.nl of via de CoronaCheck-app aanvraagt wordt dit proces helemaal geautomatiseerd afgehandeld. Mocht je daardoor vastlopen en je voldoet wel aan de eisen, dan zijn er meerdere mogelijkheden om alsnog een EU DCC te krijgen. Allereerst is er een pagina met antwoorden op de meest voorkomende vragen. Als je daar geen antwoord op je vraag vindt kun je contact opnemen met de helpdesk via: [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl). Zij kunnen je helpen als je bent vastgelopen omdat de techniek niet goed werkt. Het kan bijvoorbeeld ook zo zijn dat het systeem aangeeft dat je niet voldoende gegevens hebt om een bewijs aan te maken maar je weet zeker dat dit niet klopt. De helpdesk kan dan ook ondersteunen bij hoe je dit vervolgens kunt oplossen. Het kan bijvoorbeeld zo zijn dat de hulpverlener die je heeft getest of gevaccineerd de gegevens niet juist heeft opgeslagen. Dat kun je dan via de hulpverlener laten aanpassen.
 
 Daarnaast is een route ontwikkeld via een hulpverlenersportaal. Je kunt dan contact opnemen met degene die je heeft gevaccineerd of getest en via die weg kun je alsnog een EU DCC krijgen.
 
@@ -112,17 +112,17 @@ Zoals eerder aangegeven laten zowel de CoronaCheck-app als de website coronachec
 
 De mogelijkheid om een beroep te doen op een van de rechten die hebt ten aanzien van de verwerking van je persoonsgegevens in CoronaCheck en coronacheck.nl blijft van kracht. Een dergelijk verzoek kun je indienen via [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
-## 10. Klachten over het gebruik van uw gegevens melden?
+## 10. Klachten over het gebruik van je gegevens melden?
 
 Voor vragen of klachten over het gebruik van de CoronaCheck-app of de website coronacheck.nl kun je terecht bij de helpdesk: [helpdesk@coronacheck.nl](mailto:helpdesk@coronacheck.nl).
 
 Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie van Volksgezondheid, Welzijn en Sport vind je op de [website van het ministerie](https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/privacy).
 
-Mocht je klacht niet naar tevredenheid zijn behandeld dan kun je altijd een klacht over de verwerking van je persoonsgegevens indienen bij de Autoriteit Persoonsgegevens. Meer informatie daarover vind je op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap). Contactgegevens van de Autoriteit Persoonsgegevens vind je [hier](https://www.rijksoverheid.nl/contact/contactgids/autoriteit-persoonsgegevens).
+Mocht je klacht niet naar tevredenheid zijn behandeld, dan kun je altijd een klacht over de verwerking van je persoonsgegevens indienen bij de Autoriteit Persoonsgegevens. Meer informatie daarover vind je op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap). Contactgegevens van de Autoriteit Persoonsgegevens vind je [hier](https://www.rijksoverheid.nl/contact/contactgids/autoriteit-persoonsgegevens).
 
-## 11. Beveiliging van uw persoonsgegevens
+## 11. Beveiliging van je persoonsgegevens
 
-De overheid neemt de bescherming van uw persoonsgegevens serieus en heeft bij de totstandkoming van de CoronaCheck-app en de website coronacheck.nl passende technische en organisatorische maatregelen genomen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging van de verwerkte gegevens tegen te gaan.
+De overheid neemt de bescherming van je persoonsgegevens serieus en heeft bij de totstandkoming van de CoronaCheck-app en de website coronacheck.nl passende technische en organisatorische maatregelen genomen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging van de verwerkte gegevens tegen te gaan.
 
 ## 12. Wijziging privacyverklaring
 
@@ -132,29 +132,29 @@ Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzig
 
 ### Persoonsgegevens die worden verwerkt bij uitgifte van een EU DCC:
 
-- IP-adres wat betrokkene gebruikt bij het aan laten maken van het Bewijsmiddel
+- IP-adres dat de betrokkene gebruikt bij het aan laten maken van het Bewijsmiddel
 - BSN van betrokkene
 - Voor- en achternamen van betrokkene
-- Organisatie bij wie vaccinatie-, of herstelgegevens zijn opgehaald.
+- Organisatie bij wie vaccinatie-, of herstelgegevens zijn opgehaald
 - Bij test- of herstelbewijs:
-  -unieke code van de test
-  - type test
-  - testnaam
-  - datum en tijd testafname
-  - datum en tijd van vaststelling testresultaat
-  - ziekteverwekker waar voor getest is
-  - testproducent
-  - naam van testcentrum
-  - uitslag van de test (negatief voor testbewijs, positief voor herstelbewijs)
+  - Unieke code van de test
+  - Type test
+  - Testnaam
+  - Datum en tijd testafname
+  - Datum en tijd van vaststelling testresultaat
+  - Ziekteverwekker waarop getest is
+  - Testproducent
+  - Naam van testcentrum
+  - Uitslag van de test (negatief voor testbewijs, positief voor herstelbewijs)
 
 - Alleen bij vaccinatiebewijs:
-  -datum/data toedieningen
-  - unieke code van vaccinatie
-  - ziekteverwekker waar het vaccin tegen werkt
-  - vaccintype
-  - vaccinnaam
-  - handelsvergunninghouder of producent van het vaccin
-  - volgnummer in reeks vaccinaties/doses
+  - Datum/datums toedieningen
+  - Unieke code van vaccinatie
+  - Ziekteverwekker waar het vaccin tegen werkt
+  - Vaccintype
+  - Vaccinnaam
+  - Handelsvergunninghouder of producent van het vaccin
+  - Volgnummer in reeks vaccinaties/doses
 
 ### Persoonsgegevens die zijn opgeslagen in de QR-code die je toont aan controleurs:
  
@@ -173,15 +173,15 @@ De QR-code voor het EU DCC als testbewijs bevat naast de algemene gegevens:
 
 - Geregistreerde datum en tijdstip van testafname
 - Type test
-- Naam van de test(facultatief voor NAAT (PCR) test)
+- Naam van de test (facultatief voor NAAT (PCR) test)
 - Naam van de testproducent (facultatief voor NAAT (PCR) test)
 - Testresultaat
-- Testcentrum of – faciliteit (optioneel bij snelle antigeentest)
+- Testcentrum of -faciliteit (optioneel bij snelle antigeentest)
 
 De QR-code voor het EU DCC als vaccinatiebewijs naast de algemene gegevens:
 
-- Vaccin/profylaxe (type vaccin, bv. mRNA-vaccin of antigen-vaccin)
-- Vaccin-naam
+- Vaccin/profylaxe (type vaccin, bv. mRNA-vaccin of antigeen-vaccin)
+- Vaccinnaam
 - Handelsvergunninghouder of producent van het vaccin
 - Volgnummer in reeks vaccinaties/doses
 - Vaccinatiedatum, met vermelding datum van laatst ontvangen dosis
