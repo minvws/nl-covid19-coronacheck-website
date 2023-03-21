@@ -41,7 +41,7 @@ Upon issue of an EU DCC, a unique certificate code of your EU DCC will be genera
 
 ## 2. Where does my data come from?
 
-Information about your test, vaccination and/or recovery is provided by the care provider who tested or vaccinated you. Data for a certificate or recovery is provided by the GGDs. This datacan be requested in two ways, which also include the processing of personal data::
+Information about your test, vaccination and/or recovery is provided by the care provider who tested or vaccinated you. Data for a certificate or recovery is provided by the GGDs. This data can be requested in two ways, which also include the processing of personal data:
 
 1. When you’re tested by another test provider than your regional GGD, the data is requested via the unique retrieval code and verification code you received from the test provider. In this case, you may retrieve your data by entering this unique retrieval code and verification code in the CoronaCheck app or on the coronacheck.nl website.
 2. When retrieving information about vaccination or recovery or a negative test carried out by a GGD or a care provider at the hospital, log in using your DigiD to identify yourself. By logging in, VWS will receive your BSN and can verify your first name, last name, and date of birth based on your BSN by checking the Personal Records Database Using this combined information, the Minister will request your data from parties who may have your information about your vaccination, recovery, and test (like the GGDs, the RIVM, the hospital where you have been vaccinated, and your general practitioner). Information about your recovery is based on a positive test in the past, which the test provider who tested you has had to report to the local GGD.
