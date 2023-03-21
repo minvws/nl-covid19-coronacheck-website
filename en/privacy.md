@@ -70,10 +70,6 @@ On June 14, 2021, the Regulation (EU) 2021/953 of the European Parliament and th
 
 The regulation provides a European (technical) framework for the issuing of interoperable certificates on COVID-19 vaccination, testing, and recovery with the aim of facilitating the free movement of persons (Article 21, TFEU). The EU DCC is issued under the regulation (Article 3, second paragraph of the regulation). The Minister of Health (or his designee) is responsible for issuing the EU DCC in digital or paper form. In article 10, sixth paragraph of the regulation, the person responsible for the issuing is designated responsible for data processing. The Minister of Health, Welfare, and Sport is therefore the data processor for the issuing of the EU DCC.
 
-### Basis in national law
-
-The Temporary act on coronavirus passes regulates the use of passes with the aim of reopening Dutch society. Article 58re (4) states that the Minister of Health, Welfare and Sport is responsible for the set-up and management of the applications and takes measures to ensure that the applications only show reliable results. In article 58re (5), the Minister of Health, Welfare and Sport is designated responsible for data processing. The basis for processing the data required for this purpose is provided in the draft legislation Change of the Public Health Act in connection with some improvements and clarifications of the temporary rules on the use of coronavirus passes in the fight against COVID-19. Article 58re (6) provides the basis for the Minister to process personal data, including personal data on health. In the Ministerial regulation amending the temporary regulation on COVID-19 Measures in connection with the use of coronavirus entry passes, Article 6.31 regulates which personal data may be processed.
-
 ## 5. Who is responsible for data processing and who are the processors?
 
 The Minister of Health, Welfare, and Sport (hereinafter: the Minister) is responsible for processing personal information in the CoronaCheck app and the coronacheck.nl website.
