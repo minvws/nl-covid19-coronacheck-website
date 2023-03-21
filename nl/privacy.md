@@ -121,7 +121,7 @@ Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie 
 
 Mocht je klacht niet naar tevredenheid zijn behandeld, dan kun je altijd een klacht over de verwerking van je persoonsgegevens indienen bij de Autoriteit Persoonsgegevens. Meer informatie daarover vind je op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap). Contactgegevens van de Autoriteit Persoonsgegevens vind je [hier](https://www.rijksoverheid.nl/contact/contactgids/autoriteit-persoonsgegevens).
 
-## 11. Beveiliging van uw persoonsgegevens
+## 11. Beveiliging van je persoonsgegevens
 
 De overheid neemt de bescherming van je persoonsgegevens serieus en heeft bij de totstandkoming van de CoronaCheck-app en de website coronacheck.nl passende technische en organisatorische maatregelen genomen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging van de verwerkte gegevens tegen te gaan.
 
