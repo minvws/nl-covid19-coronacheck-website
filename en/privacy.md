@@ -6,7 +6,7 @@ title: CoronaCheck app and printed EU Digital COVID Certificate Privacy Statemen
 ---
 This privacy statement has been written for the use of the CoronaCheck application and the coronacheck.nl website as of February 2023 and explains how personal data of individuals who generate and use an EU Digital COVID Certificate are processed and what measures have been taken to protect this personal data.
 
-For travels within Europe, you need an EU Digital Covid Certificate (we call it the EU DCC, which also takes the form of a QR code). With this certificate you can prove that you have tested negative, have been vaccinated, or have recovered from coronavirus. You can create the EU DCC via an app and save it there (CoronaCheck app) or you can create the certificate via the website [www.coronacheck.nl](http://www.coronacheck.nl/).and print it. 
+For travels within Europe, you need an EU Digital Covid Certificate (we call it the EU DCC, which also takes the form of a QR code). With this certificate you can prove that you have tested negative, have been vaccinated, or have recovered from coronavirus. You can create the EU DCC via an app and save it there (CoronaCheck app) or you can create the certificate via the website [www.coronacheck.nl](http://www.coronacheck.nl/) and print it. 
 
 The Minister of Health, Welfare, and Sport (VWS) is responsible for creating a certificate via the CoronaCheck app or the coronacheck.nl website. To create a certificate, personal data must be processed.
 
@@ -23,16 +23,13 @@ To create an EU DCC, we use data about your health: test results, vaccination re
 In addition to the above information, the following information is required, which varies depending on the certificate you want to retrieve:
 
 - If you want a certificate based on a negative test: 
-
-- - a recent negative test result and the type of test;
+  - a recent negative test result and the type of test;
 
 - If you want a certificate based on a vaccination: 
-
-- - a confirmation that you’ve been vaccinated using what vaccine, and possibly a positive test result from the past (so that, in case of vaccinations that normally consist of two injections, a full vaccination certificate can be issued after only one injection if you had coronavirus prior to your vaccination);
+  - a confirmation that you’ve been vaccinated using what vaccine, and possibly a positive test result from the past (so that, in case of vaccinations that normally consist of two injections, a full vaccination certificate can be issued after only one injection if you had coronavirus prior to your vaccination);
 
 - If you want a certificate based on recovery: 
-
-- - a recent positive test result that shows you had coronavirus in the past.
+  - a recent positive test result that shows you had coronavirus in the past.
 
 Because the CoronaCheck app and coronacheck.nl website use an internet connection, your IP address will also be processed. This is inherent to the use of internet and IP technology and is necessary to establish a technical connection between the test or vaccination performer’s server and your phone or browser. The IP address is also processed for management and security purposes.
 
@@ -133,7 +130,7 @@ If your complaint has not been resolved to your satisfaction, you can always sub
 
 The government takes the protection of your personal data seriously and has taken appropriate technical and organizational measures in the creation of the CoronaCheck app and the coronacheck.nl website to prevent misuse, loss, unauthorized access, unwanted disclosure, and unauthorized alteration of the processed data.
 
-## **12. Changing privacy **statement
+## 12. Changing privacy statement
 
 This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: February 2023.
 
