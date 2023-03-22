@@ -6,7 +6,7 @@ title: CoronaCheck app and printed EU Digital COVID Certificate Privacy Statemen
 ---
 This privacy statement has been written for the use of the CoronaCheck application and the coronacheck.nl website as of February 2023 and explains how personal data of individuals who generate and use an EU Digital COVID Certificate are processed and what measures have been taken to protect this personal data.
 
-For travels within Europe, you need an EU Digital Covid Certificate (we call it the EU DCC, which also takes the form of a QR code). With this certificate you can prove that you have tested negative, have been vaccinated, or have recovered from coronavirus. You can create the EU DCC via an app and save it there (CoronaCheck app) or you can create the certificate via the website [www.coronacheck.nl](http://www.coronacheck.nl/).and print it. 
+For travels within Europe, you need an EU Digital Covid Certificate (we call it the EU DCC, which also takes the form of a QR code). With this certificate you can prove that you have tested negative, have been vaccinated, or have recovered from coronavirus. You can create the EU DCC via an app and save it there (CoronaCheck app) or you can create the certificate via the website [www.coronacheck.nl](http://www.coronacheck.nl/) and print it. 
 
 The Minister of Health, Welfare, and Sport (VWS) is responsible for creating a certificate via the CoronaCheck app or the coronacheck.nl website. To create a certificate, personal data must be processed.
 
@@ -23,16 +23,13 @@ To create an EU DCC, we use data about your health: test results, vaccination re
 In addition to the above information, the following information is required, which varies depending on the certificate you want to retrieve:
 
 - If you want a certificate based on a negative test: 
-
-- - a recent negative test result and the type of test;
+  - a recent negative test result and the type of test;
 
 - If you want a certificate based on a vaccination: 
-
-- - a confirmation that you’ve been vaccinated using what vaccine, and possibly a positive test result from the past (so that, in case of vaccinations that normally consist of two injections, a full vaccination certificate can be issued after only one injection if you had coronavirus prior to your vaccination);
+  - a confirmation that you’ve been vaccinated using what vaccine, and possibly a positive test result from the past (so that, in case of vaccinations that normally consist of two injections, a full vaccination certificate can be issued after only one injection if you had coronavirus prior to your vaccination);
 
 - If you want a certificate based on recovery: 
-
-- - a recent positive test result that shows you had coronavirus in the past.
+  - a recent positive test result that shows you had coronavirus in the past.
 
 Because the CoronaCheck app and coronacheck.nl website use an internet connection, your IP address will also be processed. This is inherent to the use of internet and IP technology and is necessary to establish a technical connection between the test or vaccination performer’s server and your phone or browser. The IP address is also processed for management and security purposes.
 
@@ -44,7 +41,7 @@ Upon issue of an EU DCC, a unique certificate code of your EU DCC will be genera
 
 ## 2. Where does my data come from?
 
-Information about your test, vaccination and/or recovery is provided by the care provider who tested or vaccinated you. Data for a certificate or recovery is provided by the GGDs. This datacan be requested in two ways, which also include the processing of personal data::
+Information about your test, vaccination and/or recovery is provided by the care provider who tested or vaccinated you. Data for a certificate or recovery is provided by the GGDs. This data can be requested in two ways, which also include the processing of personal data:
 
 1. When you’re tested by another test provider than your regional GGD, the data is requested via the unique retrieval code and verification code you received from the test provider. In this case, you may retrieve your data by entering this unique retrieval code and verification code in the CoronaCheck app or on the coronacheck.nl website.
 2. When retrieving information about vaccination or recovery or a negative test carried out by a GGD or a care provider at the hospital, log in using your DigiD to identify yourself. By logging in, VWS will receive your BSN and can verify your first name, last name, and date of birth based on your BSN by checking the Personal Records Database Using this combined information, the Minister will request your data from parties who may have your information about your vaccination, recovery, and test (like the GGDs, the RIVM, the hospital where you have been vaccinated, and your general practitioner). Information about your recovery is based on a positive test in the past, which the test provider who tested you has had to report to the local GGD.
@@ -72,10 +69,6 @@ The General Data Protection Regulation (GDPR) lists six possible bases for proce
 On June 14, 2021, the Regulation (EU) 2021/953 of the European Parliament and the Council regarding a framework for the issuing, verification, and acceptance of interoperable COVID-19 vaccination, test, and recovery certificates (digital EU-COVID certificate) to facilitate free movement during the COVID-19 pandemic was published (hereinafter: the regulation).
 
 The regulation provides a European (technical) framework for the issuing of interoperable certificates on COVID-19 vaccination, testing, and recovery with the aim of facilitating the free movement of persons (Article 21, TFEU). The EU DCC is issued under the regulation (Article 3, second paragraph of the regulation). The Minister of Health (or his designee) is responsible for issuing the EU DCC in digital or paper form. In article 10, sixth paragraph of the regulation, the person responsible for the issuing is designated responsible for data processing. The Minister of Health, Welfare, and Sport is therefore the data processor for the issuing of the EU DCC.
-
-### Basis in national law
-
-The Temporary act on coronavirus passes regulates the use of passes with the aim of reopening Dutch society. Article 58re (4) states that the Minister of Health, Welfare and Sport is responsible for the set-up and management of the applications and takes measures to ensure that the applications only show reliable results. In article 58re (5), the Minister of Health, Welfare and Sport is designated responsible for data processing. The basis for processing the data required for this purpose is provided in the draft legislation Change of the Public Health Act in connection with some improvements and clarifications of the temporary rules on the use of coronavirus passes in the fight against COVID-19. Article 58re (6) provides the basis for the Minister to process personal data, including personal data on health. In the Ministerial regulation amending the temporary regulation on COVID-19 Measures in connection with the use of coronavirus entry passes, Article 6.31 regulates which personal data may be processed.
 
 ## 5. Who is responsible for data processing and who are the processors?
 
@@ -133,7 +126,7 @@ If your complaint has not been resolved to your satisfaction, you can always sub
 
 The government takes the protection of your personal data seriously and has taken appropriate technical and organizational measures in the creation of the CoronaCheck app and the coronacheck.nl website to prevent misuse, loss, unauthorized access, unwanted disclosure, and unauthorized alteration of the processed data.
 
-## **12. Changing privacy **statement
+## 12. Changing privacy statement
 
 This privacy statement is subject to change. In such cases, we will post the amended privacy statement on our website, after which this privacy statement will be effective immediately. Last update: February 2023.
 
