@@ -7,7 +7,7 @@
 {% assign questionSet = site.questions-in-app | where:"lang", page.lang | where:"set", page.questionCategory | where:"webonly", false | sort: "index" %}
 
 <!DOCTYPE html>
-<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %} class="in-app">
 {% include open-source-comment.html %}
 {% include head.html %}
 <body>
