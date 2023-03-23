@@ -5,17 +5,23 @@ import PositiveTest from '@/components/views/3-collect/recovery/happy/PositiveTe
 import uniqWith from 'lodash.uniqwith'
 import isEqual from 'lodash.isequal'
 import { FilterTypes } from '@/types/filter-types';
+import vaccinationOverViewMixin from '@/components/views/3-collect/_shared/vaccination-overview-mixin'
 
 export default {
     name: 'ProofEvents',
     components: { Vaccination, Recovery, PositiveTest },
+    mixins: [vaccinationOverViewMixin],
     computed: {
         events () {
-            const events = this.$store.getters['signedEvents/getProofEvents']('all')
+            const events = this.$store.getters['signedEvents/getProofEvents']([FilterTypes.POSITIVE_TEST, FilterTypes.RECOVERY].join(','))
             const unique = uniqWith(events, isEqual)
 
-            const result = unique.map(item => {
-                const { event } = item
+            const result = [
+                ...unique,
+                ...this.signedVaccinations
+            ].map(item => {
+                const target = Array.isArray(item) ? item[0] : item
+                const { event } = target
                 const { type } = event
                 const data = event[type]
                 const { date, sampleDate } = data
@@ -32,7 +38,7 @@ export default {
                     case FilterTypes.VACCINATION:
                         return {
                             component: Vaccination,
-                            signedEventSet: [item]
+                            signedEventSet: item
                         }
                     case FilterTypes.POSITIVE_TEST:
                         return {
