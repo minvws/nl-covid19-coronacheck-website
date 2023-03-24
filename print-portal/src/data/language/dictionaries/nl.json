@@ -636,8 +636,8 @@
         },
         "negativeTestOverview": {
             "createTestProofButton": "Maak bewijs",
-            "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Deze testuitslag is opgehaald bij de testlocatie. Als de gegevens kloppen kun je een bewijs maken.<\/p>",
+            "pageHeader": "Controleer de details van je gegevens",
+            "pageIntro": "<p>Als deze kloppen kun je een bewijs maken.<\/p>",
             "retrievedTestResult": "Opgehaalde testuitslag"
         },
         "noLetterCombination": {
@@ -776,8 +776,8 @@
         },
         "recoveryOverview": {
             "createTestProofButton": "Maak bewijs",
-            "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Controleer je gegevens hieronder. Als deze kloppen kun je een bewijs maken.<\/p>"
+            "pageHeader": "Controleer de details van je gegevens",
+            "pageIntro": "<p>Als deze kloppen kun je een bewijs maken.<\/p>"
         },
         "requestDigid": {
             "button": "Terug naar home",

@@ -636,8 +636,8 @@
         },
         "negativeTestOverview": {
             "createTestProofButton": "Make certificate",
-            "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>This test result is retrieved from the test location. If the details are correct, you can create a certificate.<\/p>",
+            "pageHeader": "Check your details below",
+            "pageIntro": "<p>If these are correct you can create a certificate.<\/p>",
             "retrievedTestResult": "Retrieved test result"
         },
         "noLetterCombination": {
@@ -776,8 +776,8 @@
         },
         "recoveryOverview": {
             "createTestProofButton": "Make certificate",
-            "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>Check your details below. If these are correct you can create a certificate.<\/p>"
+            "pageHeader": "Check your details below",
+            "pageIntro": "<p>If these are correct you can create a certificate.<\/p>"
         },
         "requestDigid": {
             "button": "Back to home",
