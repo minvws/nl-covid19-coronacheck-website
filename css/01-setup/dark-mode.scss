@@ -63,10 +63,19 @@
             border-bottom: 1px solid #3db1ff;
         }
 
-        .faq-categories-block__list .faq-categories__link:after,
         a.faq-layout__item::after,
+        .faq-categories-block__list .faq-categories__link::after,
         .details summary:after {
             background: url(/img/chevron-right-white.svg) center center no-repeat;
+        }
+
+        a.faq-layout__item:hover:focus {
+            width: 100%;
+        }
+
+        a.faq-layout__item:hover::after,
+        .faq-categories-block__list .faq-categories__link:hover::after {
+            background: url(/img/chevron-right-darkmode.svg) center center no-repeat;
         }
 
         li::marker {
