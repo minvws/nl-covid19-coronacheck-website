@@ -17,6 +17,10 @@ export default {
     computed: {
         proofEvent() {
             return this.signedEvent.event.positivetest;
+        },
+        providerIdentifier () {
+            const { providerIdentifier } = this.signedEvent
+            return this.$store.getters['eventProviders/getTestProviderByIdentifier'](providerIdentifier)?.name;
         }
     }
 }
@@ -40,6 +44,10 @@ export default {
             <div class="proof-event__line">
                 <dt>{{$t('components.eventInfo.dateOfBirth')}}:</dt>
                 <dd>{{holder.birthDateString}}</dd>
+            </div>
+            <div class="proof-event__line" v-if="providerIdentifier">
+                <dt>{{$t('components.eventInfo.eventsFetchedAt')}}:</dt>
+                <dd>{{providerIdentifier}}</dd>
             </div>
         </dl>
 
