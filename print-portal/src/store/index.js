@@ -78,8 +78,17 @@ const getters = {
     getEuTestType: (state) => (testTypeCode) => {
         return state.holderConfig.euTestTypes.find(euTestType => euTestType.code === testTypeCode)
     },
-    getTestManufacturer: (state) => (testManufacturerCode) => {
-        return state.holderConfig.euTestManufacturers.find(euTestManufacturer => euTestManufacturer.code === testManufacturerCode)
+    getTestManufacturer: (state) => (manufacturer) => {
+        const result = state.holderConfig.euTestManufacturers.find(({ code }) => code === manufacturer)
+        if (!result) {
+            const isName = Number.isNaN(parseInt(manufacturer))
+            if (isName) {
+                // manufacturer is not in list of test-manufacturers and manufacturer is not a number
+                // return manufactor as name
+                return { name: manufacturer }
+            }
+        }
+        return result
     },
     euTestName: ({ holderConfig: { euTestNames } }) => (code) => {
         return euTestNames.find(({ code: target }) => target === code)?.name

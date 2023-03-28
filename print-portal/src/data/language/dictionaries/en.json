@@ -69,13 +69,13 @@
             "eventsFetchedAt": "Data retrieved at",
             "head": "Details",
             "name": "Name",
-            "negativetestResult": "Negative test result",
-            "positivetestResult": "Positive test result",
+            "negativetestResult": "Negative test result | Negative test results",
+            "positivetestResult": "Positive test result | Positive test results",
             "receivedFrom": "Retrieved with",
             "recoveryResult": "Recovery certificate",
             "scannedQR": "Added by you",
-            "testResult": "Test result",
-            "vaccinationResult": "Vaccination",
+            "testResult": "Test result | Test results",
+            "vaccinationResult": "Vaccination | Vaccinations",
             "validFrom": "Valid From",
             "validUntil": "Valid until"
         },
@@ -154,7 +154,7 @@
         },
         "vaccination": {
             "info": {
-                "detailsRetrieved": "The following details about your vaccination have been retrieved at %{provider}",
+                "detailsRetrieved": "The following details about your vaccination have been retrieved from %{provider}",
                 "displayName": "Product name",
                 "doses": "Doses",
                 "finalDosis": "Is this the last dose of your vaccination?",
@@ -167,7 +167,7 @@
                 },
                 "identificationCode": "Unique vaccination identifier",
                 "manufacturer": "Vaccine manufacturer",
-                "pathogen": "Pathogen",
+                "pathogen": "Disease targeted",
                 "vaccinationCountry": "Vaccinated in",
                 "vaccinationDate": "Vaccination date",
                 "vaccine": "Vaccine",
@@ -324,7 +324,7 @@
                 "NONE": "",
                 "NO_CAMERA": "No camera found",
                 "PLAYING": "Camera is running",
-                "REJECTED": "You must first give permission to use your camera.",
+                "REJECTED": "You must first give permission to use your camera. Open the privacy settings of your device to do this.",
                 "SELECTED": "Camera starting",
                 "STARTING": "Starting camera",
                 "STOPPED": "Camera stopped"
@@ -854,6 +854,9 @@
         }
     },
     "warning": {
-        "noPositivetest": "No positive test result that could count for your vaccination certificate was found."
+        "noPositivetest": {
+            "message": "No positive test result that could count for your vaccination certificate was found.",
+            "type": "positivetest"
+        }
     }
 }

@@ -156,8 +156,8 @@ export default {
             this.isLoading = true;
             signedEventsInterface.collect(tokenSets, this.filter, this.eventProviders, this.scope, this.auth).then(results => {
                 this.isLoading = false;
-                this.$store.commit('snackbar/close', { duration: 4000 })
                 this.analyseResult(results);
+                this.$store.commit('snackbar/close', { pageChange: true })
             });
         },
         analyseResult(results) {
@@ -309,7 +309,7 @@ export default {
         },
         handleWithPositiveTest () {
             const { auth, filter, scope } = this
-            let message = this.$t('warning.noPositivetest')
+            let warning = this.$t('warning.noPositivetest')
 
             if (this.$store.getters.removeExpiredPositiveTestsWithPositiveTest) {
                 // no recovery is fetched, or expired, remove signed events and show a warning
@@ -318,11 +318,11 @@ export default {
                 // see #TAIGA-4532: always include positive-test
                 const proofs = this.$store.getters['signedEvents/getProofsWithFilterAndScope']({ filter, scope });
                 if (proofs.length) {
-                    message = undefined;
+                    warning = undefined;
                 }
             }
-
-            this.$router.replace({ name: this.pages.overview, params: { auth, message } });
+            this.$store.dispatch('storage/POSITIVE_TEST_WARNING', warning)
+            this.$router.replace({ name: this.pages.overview, params: { auth } });
         },
         isTestedPositiveBeforeFirstVaccination (proofEvents) {
             // all positive tests dates
@@ -372,8 +372,8 @@ export default {
                         this.handleWithPositiveTest()
                     } else this.$router.push({ name: 'RecoveryInvalid' });
                 } else {
-                    const { auth } = this
-                    this.$router.replace({ name: this.pages.overview, params: { auth } });
+                    const { auth, isWithPositiveTest } = this
+                    this.$router.replace({ name: this.pages.overview, params: { auth, isWithPositiveTest } });
                 }
             } else {
                 this.$router.push({ name: this.pages.noResult });

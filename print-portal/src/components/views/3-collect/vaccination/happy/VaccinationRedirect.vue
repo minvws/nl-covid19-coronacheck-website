@@ -20,7 +20,7 @@ export default {
         }
     },
     data() {
-        const withPositiveTest = this.$store.getters[StorageEvent.WITH_POSITIVE_TEST]
+        const isWithPositiveTest = this.$store.getters[StorageEvent.WITH_POSITIVE_TEST]
         const positiveTest = 'CollectPositiveTest'
         const overview = this.$store.getters.isListBeforeOverview ? RouterNames.VACCINATION_OVERVIEW_LIST : 'vaccinationOverview'
         return {
@@ -28,10 +28,11 @@ export default {
             filter: FilterTypes.VACCINATION,
             eventProviders: ProviderTypes.ANY_PROVIDER,
             flow: FlowTypes.VACCINATION,
+            isWithPositiveTest,
             pages: {
                 cancel: 'ChoiceProof',
                 previous: 'CollectVaccination',
-                overview: withPositiveTest ? positiveTest : overview,
+                overview: isWithPositiveTest ? positiveTest : overview,
                 noResult: 'VaccinationsNone'
             }
         }
@@ -45,7 +46,7 @@ export default {
         @back="back">
         <div class="section">
             <PageIntro
-                :head="$t('views.vaccinationOverview.pageHeader')"/>
+                :head="$t('views.proofsOverviewList.pageHeader')"/>
             <div
                 v-if="isLoading"
                 class="section-block">

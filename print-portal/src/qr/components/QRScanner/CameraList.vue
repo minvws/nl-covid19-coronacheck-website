@@ -94,7 +94,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .camera-list {
-  padding-top: 16px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
