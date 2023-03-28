@@ -94,6 +94,10 @@ a.faq-layout__item {
 
     &:focus {
         outline-offset: -2px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 14px 20px;
+        width: calc(100% + 40px);
     }
 
     &::after {
