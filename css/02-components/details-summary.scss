@@ -65,11 +65,19 @@
 
     summary {
         list-style-type: none;
-    } /* Firefox */
+    }
+    /* Firefox */
     summary::marker {
         display: none;
-    } /* Chrome */
+    }
+
+    /* Chrome */
     summary::marker {
+        display: none;
+    }
+
+    /* Safari */
+    summary::-webkit-details-marker {
         display: none;
     }
 
