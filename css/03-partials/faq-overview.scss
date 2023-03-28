@@ -98,6 +98,14 @@ a.faq-layout__item {
         margin-right: -20px;
         padding: 14px 20px;
         width: calc(100% + 40px);
+
+        &:hover {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 14px 0px;
+            width: 100%;
+            transition: none;
+        }
     }
 
     &::after {
