@@ -18,7 +18,7 @@ const html = `
             <h3>Call the helpdesk</h3>
             <p><a href="tel:08001421">0800-1421</a> (free).<br />
             Or if you are calling from abroad: <a href="tel:+31707503720">+31 70 750 37 20</a>.<br />
-            Available Monday till Friday 08.00 a.m. - 06.00 p.m.</p>
+            Available Monday till Friday 08.00 a.m. - 06.00 p.m. except public holidays.</p>
 
             <h3>Or send an e-mail to:</h3>
             <p><a href="mailto:helpdesk@coronacheck.nl">helpdesk@coronacheck.nl</a></p>

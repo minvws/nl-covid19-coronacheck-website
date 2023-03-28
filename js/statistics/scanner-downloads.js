@@ -410,6 +410,10 @@ CCScanner_downloads_plot_raw = [
     {
         date: "2023-03-17",
         downloads: 3323023
+    },
+    {
+        date: "2023-03-24",
+        downloads: 3325956
     }
 ]
 
