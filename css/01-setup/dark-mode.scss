@@ -43,7 +43,10 @@
         // }
 
         .offset-background,
-        .faq-categories-block__list .faq-categories__link {
+        .faq-categories-block__list .faq-categories__link,
+        .details summary,
+        .details summary:hover,
+        .details summary:focus {
             /* was #727679 */
             background-color: #23252f;
         }
@@ -51,6 +54,7 @@
         .faq-layout__item:hover,
         .faq-categories-block__list .faq-categories__link:hover {
             background-color: #3db1ff;
+            color: #141415;
         }
 
         .faq-layout__item:hover::before {
@@ -60,7 +64,8 @@
         }
 
         .faq-categories-block__list .faq-categories__link:after,
-        a.faq-layout__item::after {
+        a.faq-layout__item::after,
+        .details summary:after {
             background: url(/img/chevron-right-white.svg) center center no-repeat;
         }
 
