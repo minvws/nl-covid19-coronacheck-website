@@ -37,7 +37,7 @@
         cursor: pointer;
         position: relative;
         color: #333333;
-        padding: 14px 30px 14px 20px;
+        padding: 14px 40px 14px 20px;
         font-size: 1rem;
         background: $color-RO_lightblue;
 
@@ -65,11 +65,19 @@
 
     summary {
         list-style-type: none;
-    } /* Firefox */
+    }
+    /* Firefox */
     summary::marker {
         display: none;
-    } /* Chrome */
+    }
+
+    /* Chrome */
     summary::marker {
+        display: none;
+    }
+
+    /* Safari */
+    summary::-webkit-details-marker {
         display: none;
     }
 

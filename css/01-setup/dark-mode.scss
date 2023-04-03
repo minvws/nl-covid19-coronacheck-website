@@ -1,0 +1,85 @@
+@media (prefers-color-scheme: dark) {
+    .in-app {
+        body,
+        .content-center {
+            /* was #fff */
+            background-color: #141415;
+        }
+
+        .offset-background,
+        .content-block,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .faq-categories-block__list .faq-categories__link,
+        a.faq-layout__item,
+        .breadcrumbs.disabled {
+            /* was: #383836 */
+            color: #ededed;
+        }
+
+        a,
+        .offset-background a {
+            /* was #1540EB */
+            color: #3db1ff;
+        }
+
+        /* seperator lines */
+        a.faq-layout__item {
+            /* was:#e5e5eA; */
+            border-top: 1px solid #23252f;
+        }
+
+        ul.faq-layout-contents__list li:last-child .faq-layout__item {
+            border-bottom: 1px solid #23252f;
+        }
+
+        // .secondary {
+        //     /* was #727679 */
+        //     color: #a7a7af;
+        // }
+
+        .offset-background,
+        .faq-categories-block__list .faq-categories__link,
+        .details summary,
+        .details summary:hover,
+        .details summary:focus {
+            /* was #727679 */
+            background-color: #23252f;
+        }
+
+        .faq-layout__item:hover,
+        .faq-categories-block__list .faq-categories__link:hover {
+            background-color: #3db1ff;
+            color: #141415;
+        }
+
+        .faq-layout__item:hover::before {
+            background-color: #3db1ff;
+            border-top: 1px solid #3db1ff;
+            border-bottom: 1px solid #3db1ff;
+        }
+
+        a.faq-layout__item::after,
+        .faq-categories-block__list .faq-categories__link::after,
+        .details summary:after {
+            background: url(/img/chevron-right-white.svg) center center no-repeat;
+        }
+
+        a.faq-layout__item:hover:focus {
+            width: 100%;
+        }
+
+        a.faq-layout__item:hover::after,
+        .faq-categories-block__list .faq-categories__link:hover::after {
+            background: url(/img/chevron-right-darkmode.svg) center center no-repeat;
+        }
+
+        li::marker {
+            color: #a7a7af;
+        }
+    }
+}
