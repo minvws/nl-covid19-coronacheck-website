@@ -81,5 +81,38 @@
         li::marker {
             color: #a7a7af;
         }
+
+        .btn--cta {
+            background: #3db1ff;
+            border: 1px solid currentColor;
+            color: #141415;
+
+            &:visited {
+                color: #141415;
+                background: #3db1ff;
+            }
+
+            &:hover,
+            &:focus {
+                color: #cdcdd6;
+                background-color: #1c1d22;
+                // border: 1px solid #1c1d22;
+            }
+
+            .offset-background & {
+                color: #141415;
+
+                &:hover,
+                &:focus {
+                    color: #cdcdd6;
+                    background-color: #1c1d22;
+                }
+
+                &:visited {
+                    color: #141415;
+                    background: #3db1ff;
+                }
+            }
+        }
     }
 }
