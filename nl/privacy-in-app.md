@@ -1,7 +1,7 @@
 ---
 layout: in-app-content
 lang: nl
-title: Privacyverklaring CoronaCheck en fysiek testbewijs
+title: Privacyverklaring CoronaCheck en fysiek EU Digitaal Corona Certificaat 
 redirect_from: /privacy-in-app
 ---
 Deze privacyverklaring is geschreven voor de inzet van de applicatie CoronaCheck en de website coronacheck.nl vanaf februari 2023 en legt uit op welke wijze persoonsgegevens van personen die een EU Digitaal Corona Certificaat genereren en gebruiken worden verwerkt en welke maatregelen genomen zijn om deze persoonsgegevens te beschermen.
