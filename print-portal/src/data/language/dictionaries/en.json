@@ -782,7 +782,7 @@
         "requestDigid": {
             "button": "Back to home",
             "pageHeader": "Request your certificate via the helpdesk",
-            "pageIntro": "<p>Request your certificate at the CoronaCheck helpdesk. You can call them from Monday till Friday between 8AM and 6PM at: <a href=\"tel:08001421\">0800-1421<\/a> (free). Or if you’re calling from abroad: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. In the menu you can choose “request a certificate”.<br><br>Please provide the following: <ul class=\"ul--with-padding\"><li>your citizen service number (BSN)<\/li><li>your zipcode<\/li><\/ul><br>Your certificate with QR code will be sent by post. This can take up to 7 working days.<\/p>"
+            "pageIntro": "<p>Request your certificate at the CoronaCheck helpdesk. You can call them from Monday till Friday (except on public holidays) between 8AM and 6PM at: <a href=\"tel:08001421\">0800-1421<\/a> (free). Or if you’re calling from abroad: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. In the menu you can choose “request a certificate”.<br><br>Please provide the following: <ul class=\"ul--with-padding\"><li>your citizen service number (BSN)<\/li><li>your zipcode<\/li><\/ul><br>Your certificate with QR code will be sent by post. This can take up to 7 working days.<\/p>"
         },
         "serverBusy": {
             "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>",
