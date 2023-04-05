@@ -1,5 +1,5 @@
 ---
-layout: faq-overview-list
+layout: faq-overview-list-in-app
 lang: en
 questionCategory: 6
 questionCategoryPage: true
