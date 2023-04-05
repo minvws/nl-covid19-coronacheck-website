@@ -782,7 +782,7 @@
         "requestDigid": {
             "button": "Terug naar home",
             "pageHeader": "Vraag je coronabewijs aan via de helpdesk",
-            "pageIntro": "<p>Vraag je bewijs aan bij de CoronaCheck helpdesk. Die kun je van werkdagen tussen 08:00 en 18:00 uur bellen op: <a href=\"tel:08001421\">0800-1421<\/a> (gratis). Of als je vanuit het buitenland belt: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. Kies in het keuzemenu voor “een bewijs aanvragen”. <br><br>Geef het volgende door: <ul class=\"ul--with-padding\"><li>je burgerservicenummer (BSN)<\/li><li>je postcode<\/li><\/ul><br>Je bewijs met QR-code wordt per post opgestuurd. Dit kan maximaal 7 werkdagen duren.<\/p>"
+            "pageIntro": "<p>Vraag je bewijs aan bij de CoronaCheck helpdesk. Die kun je op werkdagen tussen 08:00 en 18:00 uur bellen op: <a href=\"tel:08001421\">0800-1421<\/a> (gratis). Of als je vanuit het buitenland belt: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. Kies in het keuzemenu voor “een bewijs aanvragen”. <br><br>Geef het volgende door: <ul class=\"ul--with-padding\"><li>je burgerservicenummer (BSN)<\/li><li>je postcode<\/li><\/ul><br>Je bewijs met QR-code wordt per post opgestuurd. Dit kan maximaal 7 werkdagen duren.<\/p>"
         },
         "serverBusy": {
             "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>",
