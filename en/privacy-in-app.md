@@ -1,7 +1,7 @@
 ---
 layout: in-app-content
 lang: en
-title: CoronaCheck app and printed corona admission ticket Privacy Statement 
+title: CoronaCheck app and printed EU Digital COVID Certificate Privacy Statement
 ---
 This privacy statement has been written for the use of the CoronaCheck application and the coronacheck.nl website as of February 2023 and explains how personal data of individuals who generate and use an EU Digital COVID Certificate are processed and what measures have been taken to protect this personal data.
 

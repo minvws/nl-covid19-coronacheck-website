@@ -26,10 +26,14 @@
         {% else %}
             {% if include.collection == 'questions-scanner'
                or include.collection == 'questions'
-               or include.collection == 'questions-in-app'
-               or include.collection == 'questions-scanner-in-app'
-               or include.collection == 'faqcategories' %} 
-                <a class="breadcrumbs" href="{{langSlug}}/faq">
+               or include.collection == 'faqcategories' %}
+                    <a class="breadcrumbs" href="{{langSlug}}/faq">
+                    {{ site.data[page.lang].translations.faq }}</a>
+               {% elsif include.collection == 'questions-in-app'
+                    or include.collection == 'questions-scanner-in-app'
+                    or include.collection == 'faqcategories-in-app'
+               %} 
+                <a class="breadcrumbs" href="{{langSlug}}/faq-in-app">
                 {{ site.data[page.lang].translations.faq }}</a>
             {% else %}
                 <a class="breadcrumbs" href="{{langSlug}}">
@@ -43,11 +47,23 @@
     </li> 
     {% elsif forloop.last == false %} 
         {% if include.collection == 'questions-scanner'
-            or include.collection == 'questions'
-            or include.collection == 'questions-in-app'
-            or include.collection == 'questions-scanner-in-app' %} 
+            or include.collection == 'questions' %}
+
             {% assign questionCategories = site.faqcategories | where:"lang", page.lang | sort: "questionCategory" %} 
             {% for questionCategory in questionCategories %}
+                {% if page.set contains questionCategory.questionCategory %}
+                    <li class="breadcrumbs-item" id="{{ questionCategory.questionCategory }}" hidden>
+                        <a class="breadcrumbs" href="{{ site.baseurl }}{{ questionCategory.url }}">
+                        {{ questionCategory.title | truncate: 40 }}</a>
+                        <span class="icon icon-chevron-right"></span>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        {% elsif include.collection == 'questions-in-app'
+            or include.collection == 'questions-scanner-in-app' %} 
+
+            {% assign questionCategoriesInApp = site.faqcategories-in-app | where:"lang", page.lang | sort: "questionCategory" %} 
+            {% for questionCategory in questionCategoriesInApp %}
                 {% if page.set contains questionCategory.questionCategory %}
                     <li class="breadcrumbs-item" id="{{ questionCategory.questionCategory }}" hidden>
                         <a class="breadcrumbs" href="{{ site.baseurl }}{{ questionCategory.url }}">
