@@ -114,5 +114,18 @@
                 }
             }
         }
+
+        .icon-chevron-right,
+        .icon-chevron-left {
+            background-image: url("#{$file-path}img/chevron-up-darkmode.svg");
+        }
+
+        .btn:hover,
+        .btn:focus {
+            .icon-chevron-right,
+            .icon-chevron-left {
+                background-image: url("#{$file-path}img/chevron-up-darkmode.svg");
+            }
+        }
     }
 }
