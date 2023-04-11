@@ -1,10 +1,21 @@
 <svg class="plot" fill="currentColor" text-anchor="middle" width="640" height="460" viewBox="0 0 640 400" style="font-family: 'RO Sans', sans-serif; font-size: 14px;" xmlns="http://www.w3.org/2000/svg">
 
 <style>
-        line[stroke-opacity] {
-            stroke-opacity: 1;
-            stroke: #949494;
+    line[stroke-opacity] {
+        stroke-opacity: 1;
+        stroke: #949494;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        svg { 
+            background-color: black;
+            color: white;
         }
+
+        line[stroke-opacity] {
+            color: white;
+        }
+    }
 </style>
 
 <!-- replace the below code -->

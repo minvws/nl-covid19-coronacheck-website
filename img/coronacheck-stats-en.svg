@@ -4,6 +4,18 @@
             stroke-opacity: 1;
             stroke: #949494;
         }
+
+    @media (prefers-color-scheme: dark) {
+
+        svg { 
+            background-color: black;
+            color: white;
+        }
+
+        line[stroke-opacity] {
+            color: white;
+        }
+    }
 </style>
 
 <!-- replace the below code -->
