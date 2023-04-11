@@ -72,7 +72,7 @@
             "negativetestResult": "Negative test result | Negative test results",
             "positivetestResult": "Positive test result | Positive test results",
             "receivedFrom": "Retrieved with",
-            "recoveryResult": "Recovery certificate",
+            "recoveryResult": "Recovery certificate | Recovery certificates",
             "scannedQR": "Added by you",
             "testResult": "Test result | Test results",
             "vaccinationResult": "Vaccination | Vaccinations",
@@ -188,9 +188,6 @@
             },
             "title": "Vaccination approval"
         }
-    },
-    "country": {
-        "NL": "The Netherlands"
     },
     "date": {
         "months": {
@@ -639,8 +636,8 @@
         },
         "negativeTestOverview": {
             "createTestProofButton": "Make certificate",
-            "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>This test result is retrieved from the test location. If the details are correct, you can create a certificate.<\/p>",
+            "pageHeader": "Check your details below",
+            "pageIntro": "<p>If these are correct you can create a certificate.<\/p>",
             "retrievedTestResult": "Retrieved test result"
         },
         "noLetterCombination": {
@@ -734,7 +731,7 @@
             "button": "Next",
             "link": "I want to add another vaccination",
             "pageHeader": "Vaccination successfully added",
-            "pageIntro": "<p>Continue to add these vaccinations to your certificate. Or add another vaccination.<\/p>"
+            "pageIntro": "<p>Continue to include these details in your certificate. Or add another vaccination if one is missing.<\/p>"
         },
         "proofIntroduction": {
             "link": "Don’t have a certificate with QR code?",
@@ -742,10 +739,10 @@
             "pageIntro": "<p>If your vaccination is missing, it will not be included in the vaccination certificate you want to create. Do you already have a certificate with QR code of your missing vaccination? Then you can add it in the next step.<br><br>You can add a certificate with QR code of your vaccination from abroad. Or a certificate you received from your health care provider or the Dutch government.<\/p>"
         },
         "proofsOverviewList": {
-            "button": "Yes, next",
-            "link": "No, a vaccination is missing",
-            "pageHeader": "Are these all your vaccinations?",
-            "pageIntro": "<p>Continue to add these vaccinations to your certificate. Or add another vaccination.<\/p>"
+            "button": "Next",
+            "link": "A vaccination is missing",
+            "pageHeader": "This was retrieved:",
+            "pageIntro": "<p>Continue to include these details in your certificate. Or add another vaccination if one is missing.<\/p>"
         },
         "provideCode": {
             "didNotGetCode": "Didn't receive a verification code?",
@@ -779,13 +776,13 @@
         },
         "recoveryOverview": {
             "createTestProofButton": "Make certificate",
-            "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>Check your details below. If these are correct you can create a certificate.<\/p>"
+            "pageHeader": "Check your details below",
+            "pageIntro": "<p>If these are correct you can create a certificate.<\/p>"
         },
         "requestDigid": {
             "button": "Back to home",
             "pageHeader": "Request your certificate via the helpdesk",
-            "pageIntro": "<p>Request your certificate at the CoronaCheck helpdesk. You can call them from Monday till Friday between 8AM and 6PM at: <a href=\"tel:08001421\">0800-1421<\/a> (free). Or if you’re calling from abroad: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. In the menu you can choose “request a certificate”.<br><br>Please provide the following: <ul class=\"ul--with-padding\"><li>your citizen service number (BSN)<\/li><li>your zipcode<\/li><\/ul><br>Your certificate with QR code will be sent by post. This can take up to 7 working days.<\/p>"
+            "pageIntro": "<p>Request your certificate at the CoronaCheck helpdesk. You can call them from Monday till Friday (except on public holidays) between 8AM and 6PM at: <a href=\"tel:08001421\">0800-1421<\/a> (free). Or if you’re calling from abroad: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. In the menu you can choose “request a certificate”.<br><br>Please provide the following: <ul class=\"ul--with-padding\"><li>your citizen service number (BSN)<\/li><li>your zipcode<\/li><\/ul><br>Your certificate with QR code will be sent by post. This can take up to 7 working days.<\/p>"
         },
         "serverBusy": {
             "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>",
@@ -841,8 +838,8 @@
         },
         "vaccinationOverview": {
             "createTestProofButton": "Make certificate",
-            "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>Check your details below. If these are correct you can create a certificate.<\/p>"
+            "pageHeader": "Check your details below",
+            "pageIntro": "<p>If these are correct you can create a certificate.<\/p>"
         },
         "vaccinationsIncomplete": {
             "pageHeader": "We can’t make a certificate",

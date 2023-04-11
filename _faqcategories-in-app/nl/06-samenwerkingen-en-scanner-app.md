@@ -1,5 +1,5 @@
 ---
-layout: faq-overview-list
+layout: faq-overview-list-in-app
 lang: nl
 questionCategory: 6
 questionCategoryPage: true
