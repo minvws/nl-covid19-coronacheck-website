@@ -8,13 +8,7 @@
 {% include open-source-comment.html %}
 {% include head.html %}
 <body>
-  {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
-    {% include header-slim.html for="scanner" %}
-  {% else %}
-    {% include header-slim.html %}
-  {% endif %}
-  
-  <main class="content-center" id="content">
+  <main class="content-center content-center__in_app content-center--faq" id="content">
     {% if page.showBreadCrumbs %}
       {% include components/breadcrumbs.html title=page.title collection=page.collection %}
     {% endif %}
@@ -93,7 +87,10 @@
     </div>
      
   </main> 
-    {% include footer.html %} 
+    
+<footer>
+    {% include components/helpdesk-faqs.html in-app="true" %}
+</footer>
 
     <script type="text/javascript" src="/js/statistics/coronacheck-downloads.js"></script>
     <script type="text/javascript" src="/js/statistics/scanner-downloads.js"></script>
