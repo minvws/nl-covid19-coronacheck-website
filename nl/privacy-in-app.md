@@ -24,11 +24,14 @@ Aanvullend op bovenstaande gegevens zijn onderstaande gegevens nodig die verschi
 
 - Als je een bewijs wilt op basis van een negatieve test:
   - een recente negatieve testuitslag en het type test;
+  - een recente negatieve testuitslag en het type test;
 
 - Als je een bewijs wilt op basis van een vaccinatie:
   - een bevestiging dat je gevaccineerd bent en met welk vaccin, en mogelijk, een positieve testuitslag uit het verleden (zodat bij vaccinaties die normaal uit twee prikken bestaan al na één prik een volwaardig vaccinatiebewijs kan worden afgegeven als je voorafgaand aan je vaccinatie corona hebt gehad);
+  - een bevestiging dat je gevaccineerd bent en met welk vaccin, en mogelijk, een positieve testuitslag uit het verleden (zodat bij vaccinaties die normaal uit twee prikken bestaan al na één prik een volwaardig vaccinatiebewijs kan worden afgegeven als je voorafgaand aan je vaccinatie corona hebt gehad);
 
 - Als je een bewijs wilt op basis van herstel:
+  - een recente positieve testuitslag die laat zien dat je in het verleden COVID-19 gehad hebt.
   - een recente positieve testuitslag die laat zien dat je in het verleden COVID-19 gehad hebt.
 
 Omdat de CoronaCheck-app en de website coronacheck.nl gebruik maken van het internet zal ook je IP-adres verwerkt worden. Dit is inherent aan het gebruik van internet en IP-technologie en is nodig om technisch gezien een verbinding op te bouwen tussen de server van de testuitvoerder of de uitvoerder van vaccinaties en je telefoon of je browser. Het IP-adres wordt verder verwerkt voor beheers- en beveiligingsdoeleinden.
@@ -56,6 +59,7 @@ Het doel van de beoogde gegevensverwerking is om het vrije verkeer van personen,
 
 Wij verwerken persoonsgegevens om voor jou een EU DCC te kunnen maken. Hiermee kun je reizen naar landen binnen Europa die een EU DCC als voorwaarde stellen om in te reizen. Ook een aantal niet-EER-landen en -gebieden heeft zich aangesloten bij het EU DCC systeem.
 
+## 4. Wat is de grondslag voor deze gegevensverwerking?
 ## 4. Wat is de grondslag voor deze gegevensverwerking?
 
 De minister van VWS is wettelijk verplicht om voor iemand die daarom vraagt een EU DCC aan te maken als diegene voldoet aan de eisen. Je moet wel gevaccineerd zijn, of over een geldige testuitslag of over een herstelbewijs beschikken.
@@ -120,7 +124,7 @@ Contactgegevens van de Functionaris voor Gegevensbescherming van het Ministerie 
 
 Mocht je klacht niet naar tevredenheid zijn behandeld, dan kun je altijd een klacht over de verwerking van je persoonsgegevens indienen bij de Autoriteit Persoonsgegevens. Meer informatie daarover vind je op [de website van de Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap). Contactgegevens van de Autoriteit Persoonsgegevens vind je [hier](https://www.rijksoverheid.nl/contact/contactgids/autoriteit-persoonsgegevens).
 
-## 11. Beveiliging van je persoonsgegevens
+11. ## Beveiliging van uw persoonsgegevens
 
 De overheid neemt de bescherming van je persoonsgegevens serieus en heeft bij de totstandkoming van de CoronaCheck-app en de website coronacheck.nl passende technische en organisatorische maatregelen genomen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging van de verwerkte gegevens tegen te gaan.
 
