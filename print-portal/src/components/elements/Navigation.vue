@@ -58,11 +58,7 @@ nav {
     }
 
     @include mobile() {
-        height: $length-xl--mobile;
-
-        .Navigation__button {
-            display: none;
-        }
+        height: $length-xxl--mobile;
     }
 }
 </style>

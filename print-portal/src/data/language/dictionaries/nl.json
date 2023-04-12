@@ -189,9 +189,6 @@
             "title": "Vaccinatiebeoordeling"
         }
     },
-    "country": {
-        "NL": "Nederland"
-    },
     "date": {
         "months": {
             "abbr": [
@@ -639,8 +636,8 @@
         },
         "negativeTestOverview": {
             "createTestProofButton": "Maak bewijs",
-            "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Deze testuitslag is opgehaald bij de testlocatie. Als de gegevens kloppen kun je een bewijs maken.<\/p>",
+            "pageHeader": "Controleer de details van je gegevens",
+            "pageIntro": "<p>Als deze kloppen kun je een bewijs maken.<\/p>",
             "retrievedTestResult": "Opgehaalde testuitslag"
         },
         "noLetterCombination": {
@@ -779,13 +776,13 @@
         },
         "recoveryOverview": {
             "createTestProofButton": "Maak bewijs",
-            "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Controleer je gegevens hieronder. Als deze kloppen kun je een bewijs maken.<\/p>"
+            "pageHeader": "Controleer de details van je gegevens",
+            "pageIntro": "<p>Als deze kloppen kun je een bewijs maken.<\/p>"
         },
         "requestDigid": {
             "button": "Terug naar home",
             "pageHeader": "Vraag je coronabewijs aan via de helpdesk",
-            "pageIntro": "<p>Vraag je bewijs aan bij de CoronaCheck helpdesk. Die kun je van maandag t\/m vrijdag tussen 08:00 en 18:00 uur bellen op: <a href=\"tel:08001421\">0800-1421<\/a> (gratis). Of als je vanuit het buitenland belt: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. Kies in het keuzemenu voor “een bewijs aanvragen”. <br><br>Geef het volgende door: <ul class=\"ul--with-padding\"><li>je burgerservicenummer (BSN)<\/li><li>je postcode<\/li><\/ul><br>Je bewijs met QR-code wordt per post opgestuurd. Dit kan maximaal 7 werkdagen duren.<\/p>"
+            "pageIntro": "<p>Vraag je bewijs aan bij de CoronaCheck helpdesk. Die kun je op werkdagen tussen 08:00 en 18:00 uur bellen op: <a href=\"tel:08001421\">0800-1421<\/a> (gratis). Of als je vanuit het buitenland belt: <a href=\"tel:+31707503720\">+31 70 750 37 20<\/a>. Kies in het keuzemenu voor “een bewijs aanvragen”. <br><br>Geef het volgende door: <ul class=\"ul--with-padding\"><li>je burgerservicenummer (BSN)<\/li><li>je postcode<\/li><\/ul><br>Je bewijs met QR-code wordt per post opgestuurd. Dit kan maximaal 7 werkdagen duren.<\/p>"
         },
         "serverBusy": {
             "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>",
@@ -841,8 +838,8 @@
         },
         "vaccinationOverview": {
             "createTestProofButton": "Maak bewijs",
-            "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Controleer je gegevens hieronder. Als deze kloppen kun je een bewijs maken.<\/p>"
+            "pageHeader": "Controleer de details van je gegevens",
+            "pageIntro": "<p>Als deze kloppen kun je een bewijs maken.<\/p>"
         },
         "vaccinationsIncomplete": {
             "pageHeader": "We kunnen geen bewijs maken",
