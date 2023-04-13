@@ -1,4 +1,4 @@
-const webpack = require("webpack")
+const nodePolyfillWebpackPlugin = require('node-polyfill-webpack-plugin')
 
 module.exports = {
     publicPath: '/nl/print/',
@@ -9,20 +9,7 @@ module.exports = {
                 args[0].unique = Math.round(Math.random() * 99999999);
                 return args;
             })
-    },
-    configureWebpack: {
-        plugins: [
-            new webpack.ProvidePlugin({
-                process: 'process/browser',
-                Buffer: ['buffer', 'Buffer']
-            })
-        ],
-        resolve: {
-            fallback: {
-                stream: require.resolve('stream-browserify'),
-                buffer: require.resolve('buffer')
-            }
-        }
+        config.plugin('node-polyfill').use(nodePolyfillWebpackPlugin)
     },
     transpileDependencies: [
         'nl-covid19-coronacheck-web-pdf-tools',
