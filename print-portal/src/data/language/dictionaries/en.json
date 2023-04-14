@@ -131,12 +131,6 @@
             },
             "title": "Recovery certificate"
         },
-        "short-stay": {
-            "info": {
-                "body": "<p>Please contact the test location. They can help you change your details.<\/p>",
-                "head": "Are these details incorrect?"
-            }
-        },
         "test": {
             "info": {
                 "detailsRetrieved": "The following details were retrieved at the test location",
@@ -174,19 +168,6 @@
                 "vaccineType": "Vaccine type"
             },
             "vaccination": "Vaccination"
-        },
-        "vaccinationAssessment": {
-            "about": {
-                "body": "<p>Please go back to the desk that reviewed your vaccination. They can help you change your details.<\/p>",
-                "head": "Are these details incorrect?"
-            },
-            "info": {
-                "country": "Vaccinated in (country)",
-                "date": "Review date",
-                "detailsRetrieved": "The following details were retrieved",
-                "identificationCode": "Unique review identifier"
-            },
-            "title": "Vaccination approval"
         }
     },
     "date": {
@@ -659,10 +640,6 @@
             "details": {
                 "header": "More information about your certificate",
                 "set": {
-                    "shortStay": {
-                        "content": "<p>A visitor pass is valid up until 14 days after review of your vaccination. Are you staying in the Netherlands longer? Then you can request a visitor pass again. For more information, please visit <a href=\"https:\/\/www.government.nl\/entry-pass-visitors\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.government.nl\/entry-pass-visitors<\/a>.<\/p>",
-                        "summary": "How long is my certificate valid?"
-                    },
                     "validLocation": {
                         "content": "<p>The validity of corona certificates differs per country. Before leaving, please check which certificate you need for your destination at <a href=\"https:\/\/www.netherlandsworldwide.nl\/\" target=\"_blank\" rel=\"noopener noreferrer\">Netherlands Worldwide<\/a>.<\/p>",
                         "summary": "Where can I use my international certificate?"
@@ -716,8 +693,7 @@
                 "both": "<p>You have a Dutch and an international %{type} certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.<\/p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.<\/p>",
                 "bothVaccinationRecovery": "<p>You have a Dutch and an international certificate. Are you crossing the border, or are you abroad right now? Then please use the international certificate.<\/p><p>Open the PDFs and print them. Take your printed certificate to the place or activity you’re visiting. Or to the country you’re traveling to.<\/p>",
                 "domestic": "<p>You only have a %{type} certificate for use in the Netherlands. You can use it to access places or activities within the Netherlands, but not when you’re travelling abroad or crossing the border.<\/p><p>Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.<\/p>",
-                "european": "<p>You only have an international %{type} certificate. You can use this if you are abroad or crossing the border, but not within the Netherlands.<\/p><p>Open the PDF and print it. Take your printed certificate to the country you're traveling to.<\/p>",
-                "short-stay": "<p>You have a visitor pass for use in the Netherlands. Open the PDF and print it. Take your printed certificate to the place or activity you’re visiting.<\/p>"
+                "european": "<p>You only have an international %{type} certificate. You can use this if you are abroad or crossing the border, but not within the Netherlands.<\/p><p>Open the PDF and print it. Take your printed certificate to the country you're traveling to.<\/p>"
             },
             "pageTitle": "Your certificate",
             "proofType": {
@@ -788,41 +764,6 @@
             "link": "<a href=\"https:\/\/status.coronacheck.nl\/en\/\">View the latest outages<\/a>",
             "pageHeader": "Sorry, it is really busy",
             "pageIntro": "<p>Please try again later.<\/p>"
-        },
-        "short-stay": {
-            "createTestProofButton": "Make certificate",
-            "pageHeader": "Are the details correct?",
-            "pageIntro": "<p>If the details are correct you can create a visitor pass.<\/p>"
-        },
-        "shortStay": {
-            "button": "Next",
-            "pageHeader": "Creating a visitor pass",
-            "pageIntro": "<p>Were you vaccinated outside of the European Union, and are you visiting the Netherlands? Then you can use your vaccination approval and negative test result to create a visitor pass.<br><br>You can use your visitor pass to get access to places and activities in the Netherlands that require a coronavirus pass. For more information, please visit <a href=\"https:\/\/www.government.nl\/entry-pass-visitors\">www.government.nl\/entry-pass-visitors<\/a>.<br><br>Please keep your approval code from the desk that reviewed your vaccination at hand. The same goes for the retrieval code you've received from the test location.<\/p>"
-        },
-        "shortStayNoAssessmentCode": {
-            "button": "Retrieve approval",
-            "pageHeader": "Enter your approval code first",
-            "pageIntro": "<p>You've just entered the retrieval code of your test result. Please enter your approval code first to retrieve your vaccination approval. You've received this code either by email or on paper from the desk that reviewed your vaccination.<\/p>"
-        },
-        "shortStayProvideAssessmentCode": {
-            "didNotGetCode": "I didn't receive a code",
-            "emptyTestCode": "Please enter an approval code first",
-            "emptyVerificationCode": "Please enter a verification code first",
-            "exampleCode": "VAC-YYYYYYYYY1-F2",
-            "invalidTestCode": "This code is invalid. A valid code looks like this: VAC-YYYYYYYYY1-F2.",
-            "invalidVerificationCode": "Invalid combination. Enter the 6-digit verification code.",
-            "pageHeader": "Retrieve vaccination approval",
-            "pageIntro": "<p>Enter your approval code. You received this code from the desk that reviewed your vaccination.<\/p>",
-            "sendAgain": "Send again",
-            "sendCode": "Send code",
-            "tokenExpired": "This approval code has expired",
-            "uniqueCode": "Approval code",
-            "unknownTestProvider": "This code is invalid. A valid code looks like this: VAC-YYYYYYYYY1-F2.",
-            "verificationCode": "Verification code",
-            "verificationCodeDirection": "You get a code via text or email"
-        },
-        "shortStayProvideCode": {
-            "pageHeader": "Are the details correct?"
         },
         "testResultNone": {
             "pageHeader": "No negative test result available",

@@ -29,9 +29,6 @@ export default {
             return this.$t('views.print.details.header')
         },
         details() {
-            if (this.exclude === RegionTypes.SHORT_STAY) {
-                return ['shortStay']
-            }
             const details = []
 
             if (this.type === FilterTypes.VACCINATION) {
