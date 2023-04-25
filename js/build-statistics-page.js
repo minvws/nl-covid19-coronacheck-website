@@ -300,3 +300,7 @@ if (pageLang === 'en') {
     ccs_graph_en.setAttribute('role', 'img');
     ccs_graph_en.insertBefore(ccs_graph_title_en, ccs_graph_en.firstChild);
 }
+
+const js_generated_content = document.getElementById('js_generated_content');
+
+js_generated_content.removeAttribute('hidden');

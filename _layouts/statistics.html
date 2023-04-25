@@ -75,70 +75,76 @@
       <div class="division">
         {{ content }}
 
-        <p>{{ site.data.statistics.lastupdated[page.lang] }} 
-            <span id="lastUpdate"></span>.
-        </p>
+        <noscript>
+            <p>{{ site.data[page.lang].translations.dashboard-noscript-description }}</p>
+        </noscript>
 
-        <div class="CoronaCheck_downloads column-2"> 
-            <div>
-                <h2 class="downloads_title">{{ site.data.statistics.ccdownloads[page.lang] }}</h2>
-                <p><span class="number_highlight" id="downloads_cc_number">17,6 {{ site.data.statistics.million[page.lang] }}</span> {{ site.data.statistics.downloads[page.lang] }}.</p>
-                <p>{{ site.data.statistics.ccdownloads_graphexplained[page.lang] }}</p>
-            </div>
-            <div> 
-                <div id="CoronaCheck_downloads_plot_{{page.lang}}" class="graph"></div>
+        <div id="js_generated_content" hidden>
+            <p>{{ site.data.statistics.lastupdated[page.lang] }} 
+                <span id="lastUpdate"></span>.
+            </p>
 
-                <details class="details">
-                    <summary>
-                        <h3>{{ site.data.statistics.tableheader[page.lang] }} 
-                            <span>{{ site.data.statistics.tableheader_reference[page.lang] }}</span>
-                        </h3>
-                    </summary>
-                    <table>
-                        <caption>
-                            {{ site.data.statistics.tablecaption[page.lang] }}
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th>{{ site.data.statistics.table_weeknumber[page.lang] }}</th>
-                                <th>{{ site.data.statistics.table_downloadnumber[page.lang] }}</th>
-                            </tr>
-                        </thead>
-                        <tbody id="downloads_cc_table">
-                        </tbody>
-                    </table>
-                </details>
-            </div>
-        </div>
-        <div class="CoronaCheckScanner_downloads column-2"> 
-            <div>
-                <h2 class="downloads_title">{{ site.data.statistics.ccsdownloads[page.lang] }}</h2>
-                <p><span class="number_highlight" id="downloads_ccs_number">3,32 {{ site.data.statistics.million[page.lang] }}</span> {{ site.data.statistics.downloads[page.lang] }}.</p>
-                <p>{{ site.data.statistics.ccsdownloads_graphexplained[page.lang] }}</p>
-            </div>
-            <div>
-                <div id="CoronaCheckScanner_downloads_plot_{{page.lang}}" class="graph"></div>
+            <div class="CoronaCheck_downloads column-2"> 
+                <div>
+                    <h2 class="downloads_title">{{ site.data.statistics.ccdownloads[page.lang] }}</h2>
+                    <p><span class="number_highlight" id="downloads_cc_number">17,6 {{ site.data.statistics.million[page.lang] }}</span> {{ site.data.statistics.downloads[page.lang] }}.</p>
+                    <p>{{ site.data.statistics.ccdownloads_graphexplained[page.lang] }}</p>
+                </div>
+                <div> 
+                    <div id="CoronaCheck_downloads_plot_{{page.lang}}" class="graph"></div>
 
-                <details class="details">
-                    <summary>
-                        <h3>{{ site.data.statistics.tableheader[page.lang] }} 
-                            <span>{{ site.data.statistics.tableheader_reference[page.lang] }}</span>
-                        </h3>
-                    </summary>
-                    <table>
-                        <caption>
-                            {{ site.data.statistics.tablecaption[page.lang] }} Scanner
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th>{{ site.data.statistics.table_weeknumber[page.lang] }}</th>
-                                <th>{{ site.data.statistics.table_downloadnumber[page.lang] }}</th>
-                            </tr>
-                        </thead>
-                        <tbody id="downloads_ccs_table">
-                        </tbody>
-                    </table>
-                </details>
+                    <details class="details">
+                        <summary>
+                            <h3>{{ site.data.statistics.tableheader[page.lang] }} 
+                                <span>{{ site.data.statistics.tableheader_reference[page.lang] }}</span>
+                            </h3>
+                        </summary>
+                        <table>
+                            <caption>
+                                {{ site.data.statistics.tablecaption[page.lang] }}
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th>{{ site.data.statistics.table_weeknumber[page.lang] }}</th>
+                                    <th>{{ site.data.statistics.table_downloadnumber[page.lang] }}</th>
+                                </tr>
+                            </thead>
+                            <tbody id="downloads_cc_table">
+                            </tbody>
+                        </table>
+                    </details>
+                </div>
+            </div>
+            <div class="CoronaCheckScanner_downloads column-2"> 
+                <div>
+                    <h2 class="downloads_title">{{ site.data.statistics.ccsdownloads[page.lang] }}</h2>
+                    <p><span class="number_highlight" id="downloads_ccs_number">3,32 {{ site.data.statistics.million[page.lang] }}</span> {{ site.data.statistics.downloads[page.lang] }}.</p>
+                    <p>{{ site.data.statistics.ccsdownloads_graphexplained[page.lang] }}</p>
+                </div>
+                <div>
+                    <div id="CoronaCheckScanner_downloads_plot_{{page.lang}}" class="graph"></div>
+
+                    <details class="details">
+                        <summary>
+                            <h3>{{ site.data.statistics.tableheader[page.lang] }} 
+                                <span>{{ site.data.statistics.tableheader_reference[page.lang] }}</span>
+                            </h3>
+                        </summary>
+                        <table>
+                            <caption>
+                                {{ site.data.statistics.tablecaption[page.lang] }} Scanner
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th>{{ site.data.statistics.table_weeknumber[page.lang] }}</th>
+                                    <th>{{ site.data.statistics.table_downloadnumber[page.lang] }}</th>
+                                </tr>
+                            </thead>
+                            <tbody id="downloads_ccs_table">
+                            </tbody>
+                        </table>
+                    </details>
+                </div>
             </div>
         </div>
     </div>
