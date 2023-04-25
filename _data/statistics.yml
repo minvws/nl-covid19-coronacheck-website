@@ -11,8 +11,12 @@ downloads:
   en: 'downloads'
 
 tableheader:
-  nl: 'Brongegevens grafiek'
-  en: 'Source data chart'
+  nl: 'Brongegevens'
+  en: 'Source data'
+
+tableheader_reference:
+  nl: 'grafiek'
+  en: 'chart'
 
 tablecaption:
   nl: 'Downloads CoronaCheck'
