@@ -41,10 +41,8 @@
         const ccsdownloads_graphalt = `{{ site.data.statistics.ccsdownloads_graphalt[page.lang] }}`;
     </script>
 
-    <!-- for generating the graphs, we use https://observablehq.com/@observablehq -->
-    <script src="https://cdn.jsdelivr.net/npm/d3@7" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.2" defer></script>
-
+    <script type="text/javascript" src="/js/vendors/d3_7.min.js" defer></script>
+    <script type="text/javascript" src="/js/vendors/observable_plot_02.min.js" defer></script>
 
     {% if page.collection == 'questions-in-app'
         or page.collection == 'questions-scanner-in-app' %} 
