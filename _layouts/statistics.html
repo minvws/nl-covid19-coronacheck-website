@@ -7,14 +7,42 @@
 <html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
 {% include open-source-comment.html %}
 {% include head.html %}
+
+<style>
+    svg {
+        font-family: 'RO Sans', sans-serif; 
+        font-size: 14px;
+    }
+
+    svg line[stroke-opacity] {
+        stroke-opacity: 1;
+        stroke: #949494;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        svg { 
+            background-color: black;
+            color: white;
+        }
+
+        line[stroke-opacity] {
+            color: white;
+        }
+    }
+</style>
 <body>
-  {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
+   {% if page.collection == 'questions-in-app'
+    or page.collection == 'questions-scanner-in-app' %} 
+    <!-- no header -->
+  {% elsif page.collection == 'questions-scanner' or page.domain == 'scanner' %}
     {% include header-slim.html for="scanner" %}
   {% else %}
     {% include header-slim.html %}
   {% endif %}
   
   <main class="content-center" id="content">
+    <!-- {{ page.lang }} -->
+
     {% if page.showBreadCrumbs %}
       {% include components/breadcrumbs.html title=page.title collection=page.collection %}
     {% endif %}
@@ -33,27 +61,29 @@
       <div class="division">
         {{ content }}
 
-        <p>Cijfers tot en met vrijdag 7 april 2023.</p>
+        <p>{{ site.data.statistics.lastupdated[page.lang] }} 
+            <span id="lastUpdate"></span>.
+        </p>
 
         <div class="CoronaCheck_downloads column-2"> 
             <div>
-                <h2 class="downloads_title">Mensen die CoronaCheck hebben gedownload:</h2>
-                <p><span class="number_highlight" id="downloads_cc_number">17,6 miljoen</span> downloads.</p>
-                <p>De grafiek laat zien hoeveel mensen de CoronaCheck-app hebben gedownload.</p>
+                <h2 class="downloads_title">{{ site.data.statistics.ccdownloads[page.lang] }}</h2>
+                <p><span class="number_highlight" id="downloads_cc_number">17,6 {{ site.data.statistics.million[page.lang] }}</span> {{ site.data.statistics.downloads[page.lang] }}.</p>
+                <p>{{ site.data.statistics.ccdownloads_graphexplained[page.lang] }}</p>
             </div>
-            <div id="CoronaCheck_downloads_plot">
-                <img src="{{ site.baseurl }}/img/coronacheck-stats.svg" alt="Grafiek downloads CoronaCheck. In de lijngrafiek is te zien dat in juni 2021 een explosieve groei van downloads ontstaat. De explosieve groei stopt in oktober 2021 waarna het aantal downloads blijft stijgen maar op een lager tempo met een kleine opleving in februari 2022." class="graph" width="480" height="320">
+            <div> 
+                <div id="CoronaCheck_downloads_plot_{{page.lang}}" class="graph"></div>
 
                 <details class="details">
-                    <summary><h3>Brongegevens grafiek</h3></summary>
+                    <summary><h3>{{ site.data.statistics.tableheader[page.lang] }}</h3></summary>
                     <table>
                         <caption>
-                            Downloads CoronaCheck 
+                            {{ site.data.statistics.tablecaption[page.lang] }}
                         </caption>
                         <thead>
                             <tr>
-                                <th>Datum</th>
-                                <th>Aantal downloads</th>
+                                <th>{{ site.data.statistics.table_weeknumber[page.lang] }}</th>
+                                <th>{{ site.data.statistics.table_downloadnumber[page.lang] }}</th>
                             </tr>
                         </thead>
                         <tbody id="downloads_cc_table">
@@ -64,24 +94,23 @@
         </div>
         <div class="CoronaCheckScanner_downloads column-2"> 
             <div>
-                <h2 class="downloads_title">Aantal downloads van de CoronaCheck Scanner:</h2>
-                <p><span class="number_highlight" id="downloads_ccs_number">3,32 miljoen</span> downloads.</p>
-                <p>Met de CoronaCheck Scanner-app controleer je de geldigheid van een coronabewijs van een bezoeker. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.</p>
-                <p>De grafiek laat zien hoeveel mensen de CoronaCheck Scanner hebben gedownload.</p>
+                <h2 class="downloads_title">{{ site.data.statistics.ccsdownloads[page.lang] }}</h2>
+                <p><span class="number_highlight" id="downloads_ccs_number">3,32 {{ site.data.statistics.million[page.lang] }}</span> {{ site.data.statistics.downloads[page.lang] }}.</p>
+                <p>{{ site.data.statistics.ccsdownloads_graphexplained[page.lang] }}</p>
             </div>
-            <div id="CoronaCheckScanner_downloads_plot">
-                <img src="{{ site.baseurl }}/img/coronacheck-scanner-stats.svg" alt="Grafiek downloads CoronaCheck Scanner. In de lijngrafiek is te zien dat in juni 2021 een explosieve groei van downloads ontstaat. De groeilijn blijft steil stijgen, met een opleving in september 2021, in november 2021 en in februari 2022. Daarna remt de groei af." class="graph" width="480" height="320">
+            <div>
+                <div id="CoronaCheckScanner_downloads_plot_{{page.lang}}" class="graph"></div>
 
                 <details class="details">
-                    <summary><h3>Brongegevens grafiek</h3></summary>
+                    <summary><h3>{{ site.data.statistics.tableheader[page.lang] }}</h3></summary>
                     <table>
                         <caption>
-                            Downloads CoronaCheck Scanner
+                            {{ site.data.statistics.tablecaption[page.lang] }} Scanner
                         </caption>
                         <thead>
                             <tr>
-                                <th>Datum</th>
-                                <th>Aantal downloads</th>
+                                <th>{{ site.data.statistics.table_weeknumber[page.lang] }}</th>
+                                <th>{{ site.data.statistics.table_downloadnumber[page.lang] }}</th>
                             </tr>
                         </thead>
                         <tbody id="downloads_ccs_table">
@@ -93,19 +122,40 @@
     </div>
      
   </main> 
+
+  {% if page.collection == 'questions-in-app'
+    or page.collection == 'questions-scanner-in-app' %} 
+    <footer>
+        {% include components/helpdesk-faqs.html in-app="true" %}
+    </footer>
+  {% else %}
     {% include footer.html %} 
+  {% endif %}
+
 
     <script type="text/javascript" src="/js/statistics/coronacheck-downloads.js"></script>
     <script type="text/javascript" src="/js/statistics/scanner-downloads.js"></script>
 
+    <!-- for generating the graphs, we use https://observablehq.com/@observablehq -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.2"></script>
+
     <script> 
-        downloads_cc_number = document.getElementById('downloads_cc_number');
-        downloads_ccs_number = document.getElementById('downloads_ccs_number');
+        const pageLang = `{{ page.lang }}`;
+
+        const ccdownloads_graphalt = `{{ site.data.statistics.ccdownloads_graphalt[page.lang] }}`;
+        const ccsdownloads_graphalt = `{{ site.data.statistics.ccsdownloads_graphalt[page.lang] }}`;
+    </script>
+
+    <script> 
+        const downloads_cc_number = document.getElementById('downloads_cc_number');
+        const downloads_ccs_number = document.getElementById('downloads_ccs_number');
 
         const cc_table = document.getElementById("downloads_cc_table");
         const ccs_table = document.getElementById("downloads_ccs_table");
          
-        function constructTable(selectedData, selected_table) {
+        function constructTable(selectedData, selected_table) { 
+
             // loop through all the data objects in the requested JSON
             for (let i = 0; i < selectedData.length; i++) {
                 // store object in a variable
@@ -113,8 +163,6 @@
 
                 // turn today's date into a string we can compare to a date string in the JSON
                 const today = new Date();
-                const currentMonthYear = today.toLocaleString("nl", { "month": "numeric" }) + today.toLocaleString("nl", { "year": "numeric" });
-                const dataMonthYear = statsObject[0].toLocaleString("nl", { "month": "numeric" }) + statsObject[0].toLocaleString("nl", { "year": "numeric" });
 
                 // get the number of key value pairs
                 let number_of_key_value_pairs = Object.values(selectedData[i]).length;
@@ -123,28 +171,44 @@
                 function getColumnValue(valueID) {
                     if (typeof(statsObject[valueID]) == 'number') {
                         columnValue = Math.round(statsObject[valueID]);
-                        return new Intl.NumberFormat('nl-NL', {  }).format(columnValue)
+
+                        if (pageLang === 'nl') {
+                            return new Intl.NumberFormat('nl-NL', {  }).format(columnValue)
+                        } else {
+                            return new Intl.NumberFormat('en-GB', {  }).format(columnValue)
+                        }
                     } else {
                         return statsObject[valueID];
                     }
                 }
 
-                // add an asterisk if the current month is the last month in the JSON
-                if (dataMonthYear === currentMonthYear) {
-                    // statsIncomplete += `*`;
-                } else {
-                    statsIncomplete = ``;
-                }
+                const lastUpdate = document.getElementById("lastUpdate");
 
                 // create a row string, adding html and content to it
                 let statsRow = ``;
                  
                 statsRow += `<tr>`;
 
-                statsRow += `<td>
+                if (pageLang === 'nl') {
+                    statsRow += `<td>
                     ${statsObject[0].toLocaleString("nl", { "day": "numeric", "month": "long", "year": "numeric" })} 
-                    ${statsIncomplete}
-                </td>`;
+                    </td>`;
+                    lastUpdate.innerHTML = statsObject[0].toLocaleString("nl", { 
+                        "weekday": "long",    
+                        "day": "numeric", 
+                        "month": "long", 
+                        "year": "numeric" })
+                } else {
+                    statsRow += `<td>
+                    ${statsObject[0].toLocaleString("en", { "day": "numeric", "month": "long", "year": "numeric" })} 
+                    </td>`;
+                    lastUpdate.innerHTML = statsObject[0].toLocaleString("en", { 
+                        "weekday": "long", 
+                        "day": "numeric", 
+                        "month": "long", 
+                        "year": "numeric" 
+                    })
+                }
 
                 for (let j = 1; j < number_of_key_value_pairs; j++) {
                     statsRow += `<td>${getColumnValue(j)}</td>`
@@ -161,7 +225,12 @@
                 if (i == (selectedData.length -1)) {
                     function getValue(valueID) {
                         valueToGet = Math.round(valueID);
-                        return new Intl.NumberFormat('nl-NL', {  }).format(valueToGet)
+
+                        if (pageLang === 'nl') {
+                            return new Intl.NumberFormat('nl-NL', {  }).format(valueToGet)
+                        } else {
+                            return new Intl.NumberFormat('en-GB', {  }).format(valueToGet)
+                        }
                     }
                 
                     statisticNumber = getValue(selectedData[i][selectedKey]);
@@ -179,6 +248,213 @@
         updateStatisticNumber(CC_downloads_plot, 'downloads', downloads_cc_number);
         updateStatisticNumber(CCScanner_downloads_plot, 'downloads', downloads_ccs_number);
         
+    </script>
+
+
+
+    <script>
+        // Dutch statistics
+        CoronaCheck_downloads_plot = document.getElementById('CoronaCheck_downloads_plot_nl');
+        CoronaCheckScanner_downloads_plot = document.getElementById('CoronaCheckScanner_downloads_plot_nl');
+
+        // English statistics
+        CoronaCheck_downloads_plot_EN = document.getElementById('CoronaCheck_downloads_plot_en');
+        CoronaCheckScanner_downloads_plot_EN = document.getElementById('CoronaCheckScanner_downloads_plot_en');
+
+        const firstEntry = new Date(2021,03,28);
+        const today = new Date();
+        const thisMonthYear = today.toLocaleString("nl", { "month": "numeric" }) + today.toLocaleString("nl", { "year": "numeric" });
+        const thisMonthNumber = parseInt(today.toLocaleString("nl", { "month": "numeric" }));
+        const nextMonth = thisMonthNumber + 1;
+        const nextMonthString = nextMonth.toString() + today.toLocaleString("nl", { "year": "numeric" }); 
+
+        if (CoronaCheck_downloads_plot != null) {
+            CoronaCheck_downloads_plot.appendChild(
+                Plot.plot({
+                marginBottom: 80,
+                marginTop: 40,
+                x: { 
+                    label: "Maand →",
+                    tickRotate: -45,
+                    tickFormat: (
+                        (f) => {
+                            const date = f.toLocaleString("nl", { "month": "short", "year": "numeric" });
+                            const monthYear = f.toLocaleString("nl", { "month": "numeric" }) + f.toLocaleString("nl", { "year": "numeric" });
+                            return monthYear === thisMonthYear ? `${date} *` : date;
+                        }
+                    ),
+                    ticks: d3.utcMonth.every(1),
+                },
+                y: {
+                    label: "↑ Aantal downloads CoronaCheck (miljoen)",  
+                    labelOffset: -20,   
+                    transform: d => d / 1000000,
+                    grid: true,
+                    tickFormat: (f => `${f}M`),
+                    domain: [0, 18],
+                },
+                marks: [
+                    Plot.line(CC_downloads_plot, {
+                        x: "date", 
+                        y: "downloads",
+                        stroke: "#ec025f",
+                        strokeWidth: 3
+                    }),
+                    Plot.ruleY([0]),
+                ],
+            })
+            );
+        };
+
+        if (CoronaCheckScanner_downloads_plot != null) {
+            CoronaCheckScanner_downloads_plot.appendChild(
+                Plot.plot({
+                marginBottom: 80,
+                marginTop: 40,
+                x: { 
+                    label: "Maand →",
+                    tickRotate: -45,
+                    tickFormat: (
+                        (f) => {
+                            const date = f.toLocaleString("nl", { "month": "short", "year": "numeric" });
+                            const monthYear = f.toLocaleString("nl", { "month": "numeric" }) + f.toLocaleString("nl", { "year": "numeric" });
+                            return monthYear === thisMonthYear ? `${date} *` : date;
+                        }
+                    ),
+                    ticks: d3.utcMonth.every(1),
+                },
+                y: {
+                    label: "↑ Aantal downloads CoronaCheck Scanner (miljoen)",  
+                    labelOffset: -20,   
+                    transform: d => d / 1000000,
+                    grid: true,
+                    tickFormat: (f => `${f}M`),
+                    domain: [0, 4],
+                },
+                marks: [
+                    Plot.line(CCScanner_downloads_plot, {
+                        x: "date", 
+                        y: "downloads",
+                        stroke: "#ec025f",
+                        strokeWidth: 3
+                    }),
+                    Plot.ruleY([0]),
+                ],
+            })
+            );
+        };
+
+        if (CoronaCheck_downloads_plot_EN != null) {
+            CoronaCheck_downloads_plot_EN.appendChild(
+                Plot.plot({
+                marginBottom: 80,
+                marginTop: 40,
+                x: { 
+                    label: "Month →",
+                    tickRotate: -45,
+                    tickFormat: (
+                        (f) => {
+                            const date = f.toLocaleString("en", { "month": "short", "year": "numeric" });
+                            const monthYear = f.toLocaleString("nl", { "month": "numeric" }) + f.toLocaleString("nl", { "year": "numeric" });
+                            return monthYear === thisMonthYear ? `${date} *` : date;
+                        }
+                    ),
+                    ticks: d3.utcMonth.every(1),
+                },
+                y: {
+                    label: "↑ Number of downloads CoronaCheck (million)",  
+                    labelOffset: -20,   
+                    transform: d => d / 1000000,
+                    grid: true,
+                    tickFormat: (f => `${f}M`),
+                    domain: [0, 18],
+                },
+                marks: [
+                    Plot.line(CC_downloads_plot, {
+                        x: "date", 
+                        y: "downloads",
+                        stroke: "#ec025f",
+                        strokeWidth: 3
+                    }),
+                    Plot.ruleY([0]),
+                ],
+            }));
+        };
+
+        if (CoronaCheckScanner_downloads_plot_EN != null) {
+            CoronaCheckScanner_downloads_plot_EN.appendChild(
+                Plot.plot({
+                marginBottom: 80,
+                marginTop: 40,
+                x: { 
+                    label: "Maand →",
+                    tickRotate: -45,
+                    tickFormat: (
+                        (f) => {
+                            const date = f.toLocaleString("en", { "month": "short", "year": "numeric" });
+                            const monthYear = f.toLocaleString("nl", { "month": "numeric" }) + f.toLocaleString("nl", { "year": "numeric" });
+                            return monthYear === thisMonthYear ? `${date} *` : date;
+                        }
+                    ),
+                    ticks: d3.utcMonth.every(1),
+                },
+                y: {
+                    label: "↑ Number of downloads CoronaCheck Scanner (million)",   
+                    labelOffset: -20,   
+                    transform: d => d / 1000000,
+                    grid: true,
+                    tickFormat: (f => `${f}M`),
+                    domain: [0, 4],
+                },
+                marks: [
+                    Plot.line(CCScanner_downloads_plot, {
+                        x: "date", 
+                        y: "downloads",
+                        stroke: "#ec025f",
+                        strokeWidth: 3
+                    }),
+                    Plot.ruleY([0]),
+                ],
+            }));
+        };
+
+
+        if (pageLang === 'nl') {
+            // CoronaCheck 
+            const cc_graph_title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+            cc_graph_title.textContent = ccdownloads_graphalt;
+
+            const cc_graph = CoronaCheck_downloads_plot.getElementsByTagName('svg')[0];
+            cc_graph.setAttribute('role', 'img');
+            cc_graph.insertBefore(cc_graph_title, cc_graph.firstChild);
+
+            // CoronaCheck Scanner 
+            const ccs_graph_title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+            ccs_graph_title.textContent = ccsdownloads_graphalt;
+
+            const ccs_graph = CoronaCheckScanner_downloads_plot.getElementsByTagName('svg')[0];
+            ccs_graph.setAttribute('role', 'img');
+            ccs_graph.insertBefore(ccs_graph_title, ccs_graph.firstChild);
+        }
+
+        if (pageLang === 'en') {
+            // CoronaCheck English
+            const cc_graph_title_en = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+            cc_graph_title_en.textContent = ccdownloads_graphalt;
+
+            const cc_graph_en = CoronaCheck_downloads_plot_EN.getElementsByTagName('svg')[0];
+            cc_graph_en.setAttribute('role', 'img');
+            cc_graph_en.insertBefore(cc_graph_title_en, cc_graph_en.firstChild);
+
+            // CoronaCheck Scanner English 
+            const ccs_graph_title_en = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+            ccs_graph_title_en.textContent = ccsdownloads_graphalt;
+
+            const ccs_graph_en = CoronaCheckScanner_downloads_plot_EN.getElementsByTagName('svg')[0];
+            ccs_graph_en.setAttribute('role', 'img');
+            ccs_graph_en.insertBefore(ccs_graph_title_en, ccs_graph_en.firstChild);
+        }
+
     </script>
 </body>
 </html>
