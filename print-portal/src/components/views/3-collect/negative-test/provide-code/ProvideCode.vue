@@ -212,7 +212,7 @@ export default {
                 if (options.includeVerificationCode) {
                     data = { 'verificationCode': this.verificationCode };
                 } else {
-                    data = null;
+                    data = undefined;
                 }
 
                 this.$axios({

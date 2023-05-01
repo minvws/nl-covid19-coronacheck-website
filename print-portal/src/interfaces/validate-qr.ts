@@ -28,7 +28,7 @@ export const validateQR = async (credential: string, events: Event[]) => {
         })
         return Promise.resolve(true);
     } catch (e) {
-        const error = e as AxiosError;
+        const error = e as AxiosError & { response?: { data?: { code?: string }}};
         const code = error?.response?.data?.code
         const codes = Object.keys(QrValidationCodes).map((key) => ([QrValidationCodes[key], key]))
         const response = codes.find(([value]) => value === code)?.[1]

@@ -4,17 +4,11 @@
   {%- assign langSlug = site.baseurl | append: '/' | append: page.lang -%}
 {%- endif -%}
 <!DOCTYPE html>
-<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+<html lang="{{page.lang}}" {% if page.lang == 'ar' %}dir="rtl"{% endif %} class="in-app">
 {% include open-source-comment.html %}
 {% include head.html %}
 <body>
-  {% if page.collection == 'questions-scanner' or page.domain == 'scanner' %}
-    {% include header-slim.html for="scanner" %}
-  {% else %}
-    {% include header-slim.html %}
-  {% endif %}
-  
-  <main class="content-center" id="content">
+  <main class="content-center content-center__in_app content-center--faq" id="content">
     {% if page.showBreadCrumbs %}
       {% include components/breadcrumbs.html title=page.title collection=page.collection %}
     {% endif %}
@@ -33,30 +27,30 @@
       <div class="division">
         {{ content }}
 
-        <p>Figures up to and including Friday, April 7, 2023.</p>
+        <p>Cijfers tot en met vrijdag 7 april 2023.</p>
 
         <div class="CoronaCheck_downloads column-2"> 
             <div>
-                <h2 class="downloads_title">People who downloaded CoronaCheck:</h2>
-                <p><span class="number_highlight" id="downloads_cc_number">17.6 million</span> downloads.</p>
-                <p>The chart shows the number of people who downloaded the CoronaCheck app.</p>
+                <h2 class="downloads_title">Mensen die CoronaCheck hebben gedownload:</h2>
+                <p><span class="number_highlight" id="downloads_cc_number">17,6 miljoen</span> downloads.</p>
+                <p>De grafiek laat zien hoeveel mensen de CoronaCheck-app hebben gedownload.</p>
             </div>
             <div id="CoronaCheck_downloads_plot">
-                <img src="{{ site.baseurl }}/img/coronacheck-stats-en.svg" alt="CoronaCheck downloads chart. The line graph shows that there will be an explosive growth in downloads in June 2021. The explosive growth stopped in October 2021 while the number of downloads continues to rise but at a slower pace with a small uptick in February 2022." class="graph" width="480" height="320">
+                <img src="{{ site.baseurl }}/img/coronacheck-stats.svg" alt="Grafiek downloads CoronaCheck. In de lijngrafiek is te zien dat in juni 2021 een explosieve groei van downloads ontstaat. De explosieve groei stopt in oktober 2021 waarna het aantal downloads blijft stijgen maar op een lager tempo met een kleine opleving in februari 2022." class="graph" width="480" height="320">
 
                 <details class="details">
-                    <summary><h3>Source data chart</h3></summary>
+                    <summary><h3>Brongegevens grafiek</h3></summary>
                     <table>
                         <caption>
-                            Number of downloads CoronaCheck
+                            Downloads CoronaCheck 
                         </caption>
-                        <thead> 
+                        <thead>
                             <tr>
-                                <th>Weeknumber</th>
-                                <th>Number of downloads</th>
+                                <th>Datum</th>
+                                <th>Aantal downloads</th>
                             </tr>
                         </thead>
-                        <tbody id="downloads_cc_table"> 
+                        <tbody id="downloads_cc_table">
                         </tbody>
                     </table>
                 </details>
@@ -64,24 +58,24 @@
         </div>
         <div class="CoronaCheckScanner_downloads column-2"> 
             <div>
-                <h2 class="downloads_title">Number of CoronaCheck Scanner downloads:</h2>
-                <p><span class="number_highlight" id="downloads_ccs_number">3,32 million</span> downloads.</p>
-                <p>With CoronaCheck Scanner, you can check the validity of a visitor’s coronavirus pass. The app is used for access to some locations and activities.</p>
-                <p>The chart shows how many people downloaded the CoronaCheck Scanner.</p>
+                <h2 class="downloads_title">Aantal downloads van de CoronaCheck Scanner:</h2>
+                <p><span class="number_highlight" id="downloads_ccs_number">3,32 miljoen</span> downloads.</p>
+                <p>Met de CoronaCheck Scanner-app controleer je de geldigheid van een coronabewijs van een bezoeker. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.</p>
+                <p>De grafiek laat zien hoeveel mensen de CoronaCheck Scanner hebben gedownload.</p>
             </div>
             <div id="CoronaCheckScanner_downloads_plot">
-                <img src="{{ site.baseurl }}/img/coronacheck-scanner-stats-en.svg" alt="CoronaCheck Scanner downloads chart. The line graph shows that there will be an explosive growth in downloads in June 2021. The growth line continues to rise sharply, with a uptick in September 2021, November 2021 and February 2022. After that, the growth in number of downloads changes to a slower pace." class="graph" width="480" height="320">
+                <img src="{{ site.baseurl }}/img/coronacheck-scanner-stats.svg" alt="Grafiek downloads CoronaCheck Scanner. In de lijngrafiek is te zien dat in juni 2021 een explosieve groei van downloads ontstaat. De groeilijn blijft steil stijgen, met een opleving in september 2021, in november 2021 en in februari 2022. Daarna remt de groei af." class="graph" width="480" height="320">
 
                 <details class="details">
-                    <summary><h3>Source data chart</h3></summary>
+                    <summary><h3>Brongegevens grafiek</h3></summary>
                     <table>
                         <caption>
-                            Number of downloads CoronaCheck
+                            Downloads CoronaCheck Scanner
                         </caption>
-                        <thead> 
+                        <thead>
                             <tr>
-                                <th>Weeknumber</th>
-                                <th>Number of downloads</th>
+                                <th>Datum</th>
+                                <th>Aantal downloads</th>
                             </tr>
                         </thead>
                         <tbody id="downloads_ccs_table">
@@ -91,10 +85,13 @@
             </div>
         </div>
     </div>
-    
+     
   </main> 
+    
+<footer>
+    {% include components/helpdesk-faqs.html in-app="true" %}
+</footer>
 
-  
     <script type="text/javascript" src="/js/statistics/coronacheck-downloads.js"></script>
     <script type="text/javascript" src="/js/statistics/scanner-downloads.js"></script>
 
@@ -113,8 +110,8 @@
 
                 // turn today's date into a string we can compare to a date string in the JSON
                 const today = new Date();
-                const currentMonthYear = today.toLocaleString("en", { "month": "numeric" }) + today.toLocaleString("en", { "year": "numeric" });
-                const dataMonthYear = statsObject[0].toLocaleString("en", { "month": "numeric" }) + statsObject[0].toLocaleString("en", { "year": "numeric" });
+                const currentMonthYear = today.toLocaleString("nl", { "month": "numeric" }) + today.toLocaleString("nl", { "year": "numeric" });
+                const dataMonthYear = statsObject[0].toLocaleString("nl", { "month": "numeric" }) + statsObject[0].toLocaleString("nl", { "year": "numeric" });
 
                 // get the number of key value pairs
                 let number_of_key_value_pairs = Object.values(selectedData[i]).length;
@@ -123,7 +120,7 @@
                 function getColumnValue(valueID) {
                     if (typeof(statsObject[valueID]) == 'number') {
                         columnValue = Math.round(statsObject[valueID]);
-                        return new Intl.NumberFormat('en-GB', {  }).format(columnValue)
+                        return new Intl.NumberFormat('nl-NL', {  }).format(columnValue)
                     } else {
                         return statsObject[valueID];
                     }
@@ -142,7 +139,8 @@
                 statsRow += `<tr>`;
 
                 statsRow += `<td>
-                    ${statsObject[0].toLocaleString("en", { "day": "numeric", "month": "long", "year": "numeric" })} ${statsIncomplete}
+                    ${statsObject[0].toLocaleString("nl", { "day": "numeric", "month": "long", "year": "numeric" })} 
+                    ${statsIncomplete}
                 </td>`;
 
                 for (let j = 1; j < number_of_key_value_pairs; j++) {
@@ -160,7 +158,7 @@
                 if (i == (selectedData.length -1)) {
                     function getValue(valueID) {
                         valueToGet = Math.round(valueID);
-                        return new Intl.NumberFormat('en-GB', {  }).format(valueToGet)
+                        return new Intl.NumberFormat('nl-NL', {  }).format(valueToGet)
                     }
                 
                     statisticNumber = getValue(selectedData[i][selectedKey]);
@@ -179,7 +177,5 @@
         updateStatisticNumber(CCScanner_downloads_plot, 'downloads', downloads_ccs_number);
         
     </script>
-
-    {% include footer.html %} 
 </body>
 </html>
