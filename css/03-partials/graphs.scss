@@ -27,6 +27,14 @@
         height: auto;
         margin: 16px 0;
         aspect-ratio: 64 / 46;
+
+        &:empty {
+            display: none;
+
+            + .details h3 span {
+                display: none;
+            }
+        }
     }
 
     details h3 {
