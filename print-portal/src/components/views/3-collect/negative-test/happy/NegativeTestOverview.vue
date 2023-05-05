@@ -18,10 +18,6 @@ export default {
             type: String,
             required: false,
             default: FilterTypes.NEGATIVE_TEST
-        },
-        exclude: {
-            type: String,
-            required: false
         }
     },
     data() {
@@ -31,14 +27,9 @@ export default {
             }
         }
     },
-    computed: {
-        translation () {
-            return this.exclude || 'negativeTestOverview'
-        }
-    },
     methods: {
         translate (id) {
-            const key = `views.${this.translation}`
+            const key = 'views.negativeTestOverview'
             return this.$t(`${key}.${id}`);
         }
     },
@@ -66,7 +57,6 @@ export default {
                         :signed-event="latestSignedEvent"/>
                     <NegativeTest
                         v-else
-                        :footer="exclude"
                         :signed-event="latestSignedEvent"/>
                 </div>
                 <div class="section-block__footer">

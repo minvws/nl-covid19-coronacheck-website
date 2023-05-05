@@ -42,10 +42,6 @@ export default {
             required: false,
             default: false
         },
-        exclude: {
-            type: String,
-            required: false
-        },
         needsConsent: {
             type: Boolean,
             required: false,
@@ -192,7 +188,7 @@ export default {
             this.testCodeStatus.error = '';
             this.$store.dispatch('signedEvents/createAll', { events: [signedEvent], filter: this.filter });
             const type = this.historyBack ? 'replace' : 'push'
-            this.$router[type]({ name: 'NegativeTestOverview', params: { flow: '2.0', filter: this.filter, exclude: this.exclude } });
+            this.$router[type]({ name: 'NegativeTestOverview', params: { flow: '2.0', filter: this.filter } });
         },
         async getSignedResult(options) {
             return new Promise((resolve, reject) => {

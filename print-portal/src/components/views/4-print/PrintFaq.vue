@@ -18,10 +18,6 @@ export default {
         regionType: {
             type: String,
             required: true
-        },
-        exclude: {
-            type: String,
-            required: false
         }
     },
     computed: {

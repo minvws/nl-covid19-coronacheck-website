@@ -17,10 +17,6 @@ export default {
             type: Boolean,
             required: false,
             default: false
-        },
-        exclude: {
-            type: String,
-            required: false
         }
     },
     computed: {
@@ -118,7 +114,6 @@ export default {
                 class="section-block">
                 <PrintFaq
                     :type="type"
-                    :exclude="exclude"
                     :region-type="regionType"/>
             </div>
             <div
