@@ -75,7 +75,6 @@ export default {
                         @select="gotoPrint()"
                         :label="translate('createTestProofButton')"/>
                     <div
-                        v-if="!assessmentEvent"
                         class="button__help-button">
                         <CcModestButton
                             id="something-is-wrong"
