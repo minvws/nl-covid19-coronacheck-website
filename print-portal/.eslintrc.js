@@ -23,7 +23,9 @@ module.exports = {
         'quote-props': 0,
         'semi': 0,
         'camelcase': 0,
-        'no-useless-escape': 0
+        'no-useless-escape': 0,
+        'vue/multi-word-component-names': 0,
+        'vue/no-reserved-component-names': 0
     },
 
     overrides: [
