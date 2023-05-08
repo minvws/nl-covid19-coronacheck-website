@@ -1,5 +1,5 @@
 ---
-layout: statistics-en-in-app
+layout: statistics
 set: 7
 index: 13
 title: 'Number of CoronaCheck and Scanner app downloads'
