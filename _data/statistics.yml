@@ -31,12 +31,12 @@ table_downloadnumber:
   en: Number of downloads
 
 ccdownloads:
-  nl: 'Mensen die CoronaCheck hebben gedownload:'
-  en: 'People who downloaded CoronaCheck:'
+  nl: 'Aantal downloads van de CoronaCheck-app:'
+  en: 'Number of CoronaCheck app downloads:'
 
 ccdownloads_graphexplained:
-  nl: 'De grafiek laat zien hoeveel mensen de CoronaCheck-app hebben gedownload.'
-  en: 'The chart shows the number of people who downloaded the CoronaCheck app.'
+  nl: 'De grafiek laat zien hoeveel keer de CoronaCheck-app is gedownload.'
+  en: 'The chart shows the number of times the CoronaCheck app was downloaded.'
 
 ccdownloads_graphalt:
   nl: 'Grafiek downloads CoronaCheck. In de lijngrafiek is te zien dat in juni 2021 een explosieve groei van downloads ontstaat. De explosieve groei stopt in oktober 2021 waarna het aantal downloads blijft stijgen maar op een lager tempo met een kleine opleving in februari 2022.'
@@ -47,8 +47,8 @@ ccsdownloads:
   en: 'Number of CoronaCheck Scanner downloads:'
 
 ccsdownloads_graphexplained:
-  nl: '<p>Met de CoronaCheck Scanner-app controleer je de geldigheid van een coronabewijs van een bezoeker. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.</p><p>De grafiek laat zien hoeveel mensen de CoronaCheck Scanner hebben gedownload.</p>'
-  en: '<p>With CoronaCheck Scanner, you can check the validity of a visitor’s coronavirus pass. The app is used for access to some locations and activities.</p><p>The chart shows how many people downloaded the CoronaCheck Scanner.</p>'
+  nl: '<p>Met de CoronaCheck Scanner-app controleer je de geldigheid van een coronabewijs van een bezoeker. De app wordt gebruikt voor toegang tot sommige locaties en activiteiten.</p><p>De grafiek laat zien hoeveel keer de CoronaCheck Scanner app is gedownload.</p>'
+  en: '<p>With CoronaCheck Scanner, you can check the validity of a visitor’s coronavirus pass. The app is used for access to some locations and activities.</p><p>The chart shows how many times the CoronaCheck Scanner app was downloaded.</p>'
 
 ccsdownloads_graphalt:
   nl: 'Grafiek downloads CoronaCheck Scanner. In de lijngrafiek is te zien dat in juni 2021 een explosieve groei van downloads ontstaat. De groeilijn blijft steil stijgen, met een opleving in september 2021, in november 2021 en in februari 2022. Daarna remt de groei af.'
