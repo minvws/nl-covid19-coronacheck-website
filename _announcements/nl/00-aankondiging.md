@@ -11,6 +11,6 @@ icon: info
 # Style (set to warning to add red background)
 style: warning
 ---
-**Let op!** U kunt uw bewijs printen tot en met 30 juni 2023. Dan vervalt de Europese wetgeving voor coronabewijzen. Print uw bewijs dus zo snel mogelijk maar vóór 1 juli via [coronacheck.nl/print](/print).
+**Let op!** Je kan een bewijs printen tot en met 30 juni 2023. Dan loopt de Europese Verordening af die de uitgifte van coronabewijzen mogelijk maakt. Download of print je bewijs vóór 1 juli via [coronacheck.nl/print](/print). Dit bewijs is dan nog 1 jaar te gebruiken.
 
-Na die tijd kunt u geen herstelbewijzen en vaccinatiebewijzen meer printen. Wilt u na 30 juni inzage in uw COVID-19 vaccinatiegegevens? Dan kunt u deze opvragen bij de instantie die u gevaccineerd heeft. Herstelbewijzen zijn na deze datum niet meer beschikbaar.
+Na 1 juli kan je geen herstelbewijzen en vaccinatiebewijzen meer downloaden of printen. Bewijzen die vóór 1 juli zijn ingeladen in de CoronaCheck-app blijven in de app tot het eind van 2023 beschikbaar. Als er geen bewijzen in de app staan, zal de applicatie na 1 juli niet meer bruikbaar zijn. Wil je na 30 juni tijd inzage in jouw COVID-19 vaccinatiegegevens? Dan kan je deze opvragen via [MijnRIVM](https://mijn.rivm.nl) of bij de zorgverlener die de vaccinaties heeft gezet. 
