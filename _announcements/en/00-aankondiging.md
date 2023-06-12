@@ -11,6 +11,6 @@ icon: info
 # Style (set to warning to add red background)
 style: warning
 ---
-**Please note** You can print your corona certificate up to and including 30 June 2023. Then the European legislation for corona certificates will expire. So print your certificates as soon as possible but before 1 July via [coronacheck.nl/print](/en/print).
-
-After that time you can no longer print recovery certificates and vaccination certificates. Do you want to view your COVID-19 vaccination data after 30 June? Then you can request this from the agency that vaccinated you. Recovery receipts will not be available after this date.
+**Please note** You can print your certificate until the 30th of June, 2023. On this date, the European regulation for issuing coronavirus certificates will expire. Download or print your certificate before the 1st of July via [coronacheck.nl/print](/en/print). This certificate will remain valid for 1 year.
+  
+From the 1st of July 2023, you will no longer be able to download or print recovery and vaccination certificates. Certificates loaded onto the CoronaCheck app before the 1st of July will remain available in the app until the end of 2023. If the app does not contain any certificates at that time, it will no longer be functional. If you want to access your COVID-19 vaccination data after 30th June, you can request this data via MijnRIVM or from the healthcare provider where you were vaccinated.
