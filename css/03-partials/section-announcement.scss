@@ -35,6 +35,10 @@ h2:empty {
         }
     }
 
+    &--warning {
+        background: #edacaf;
+    }
+
     @media (min-width: 767px) {
         margin: 64px auto;
         padding: 40px;
