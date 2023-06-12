@@ -131,12 +131,6 @@
             },
             "title": "Herstelbewijs"
         },
-        "short-stay": {
-            "info": {
-                "body": "<p>Neem contact op met je testlocatie. Zij kunnen je helpen je gegevens aan te passen.<\/p>",
-                "head": "Kloppen er gegevens niet?"
-            }
-        },
         "test": {
             "info": {
                 "detailsRetrieved": "De volgende gegevens zijn opgehaald bij de testlocatie",
@@ -174,19 +168,6 @@
                 "vaccineType": "Type vaccin"
             },
             "vaccination": "Vaccinatie"
-        },
-        "vaccinationAssessment": {
-            "about": {
-                "body": "<p>Ga terug naar de balie waar jouw vaccinatie is beoordeeld. Zij kunnen je helpen je gegevens aan te passen.<\/p>",
-                "head": "Kloppen er gegevens niet?"
-            },
-            "info": {
-                "country": "Gevaccineerd in (land)",
-                "date": "Beoordelingsdatum",
-                "detailsRetrieved": "De volgende gegevens zijn opgehaald",
-                "identificationCode": "Uniek beoordelingsnummer"
-            },
-            "title": "Vaccinatiebeoordeling"
         }
     },
     "date": {
@@ -659,10 +640,6 @@
             "details": {
                 "header": "Meer informatie over jouw bewijs",
                 "set": {
-                    "shortStay": {
-                        "content": "<p>Een bezoekersbewijs is geldig tot 14 dagen na de beoordeling van je vaccinatie. Blijf je langer in Nederland? Dan kun je opnieuw een bezoekersbewijs aanvragen. Ga voor meer informatie naar <a href=\"https:\/\/www.rijksoverheid.nl\/ctb-bezoekers\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.rijksoverheid.nl\/ctb-bezoekers<\/a>.<\/p>",
-                        "summary": "Hoe lang is mijn bewijs geldig?"
-                    },
                     "validLocation": {
                         "content": "<p>De geldigheid van coronabewijzen verschilt per land. Controleer daarom voor vertrek welk bewijs je nodig hebt op jouw bestemming op <a href=\"https:\/\/www.nederlandwereldwijd.nl\/reizen\/reisadviezen\" target=\"_blank\" rel=\"noopener noreferrer\">Nederland Wereldwijd<\/a>.<\/p>",
                         "summary": "Waar is mijn internationale bewijs geldig?"
@@ -716,8 +693,7 @@
                 "both": "<p>Je hebt een Nederlands en een internationaal %{type}bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.<\/p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.<\/p>",
                 "bothVaccinationRecovery": "<p>Je hebt een Nederlands en een internationaal bewijs. Ga je de grens over of ben je in het buitenland? Gebruik dan jouw internationale bewijs.<\/p><p>Open de PDF’s en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt. Of naar het land waar je heen reist.<\/p>",
                 "domestic": "<p>Je hebt alleen een %{type}bewijs voor in Nederland. Deze kun je gebruiken voor toegang tot plekken en activiteiten binnen Nederland, maar niet als je de grens over gaat of in het buitenland bent.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.<\/p>",
-                "european": "<p>Je hebt alleen een internationaal %{type}bewijs. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.<\/p>",
-                "short-stay": "<p>Je hebt een bezoekersbewijs voor in Nederland. Open de PDF en print deze uit. Neem je geprinte bewijs mee naar de plek of activiteit die je bezoekt.<\/p>"
+                "european": "<p>Je hebt alleen een internationaal %{type}bewijs. Deze kun je gebruiken als je in het buitenland bent of de grens over gaat, maar niet in Nederland.<\/p><p>Open de PDF en print deze uit. Neem je geprinte bewijs mee naar het land waar je heen reist.<\/p>"
             },
             "pageTitle": "Jouw bewijs",
             "proofType": {
@@ -788,41 +764,6 @@
             "link": "<a href=\"https:\/\/status.coronacheck.nl\/\">Bekijk de actuele storingen<\/a>",
             "pageHeader": "Sorry, het is erg druk",
             "pageIntro": "<p>Probeer het op een later moment nog eens.<\/p>"
-        },
-        "short-stay": {
-            "createTestProofButton": "Maak bewijs",
-            "pageHeader": "Kloppen de gegevens?",
-            "pageIntro": "<p>Als de gegevens kloppen kun je een bezoekersbewijs maken.<\/p>"
-        },
-        "shortStay": {
-            "button": "Volgende",
-            "pageHeader": "Een bezoekersbewijs maken",
-            "pageIntro": "<p>Ben je buiten de Europese Unie gevaccineerd en op bezoek in Nederland? Dan kun je van jouw vaccinatiebeoordeling en een negatieve testuitslag een bezoekersbewijs maken.<br><br>Met je bezoekersbewijs krijg je toegang tot plekken en activiteiten in Nederland die vragen om een coronatoegangsbewijs. Kijk voor meer informatie op <a href=\"https:\/\/www.rijksoverheid.nl\/ctb-bezoekers\">www.rijksoverheid.nl\/ctb-bezoekers<\/a>.<br><br>Houd je beoordelingscode van de balie waar je vaccinatie is beoordeeld bij de hand. En de ophaalcode die je van de testlocatie hebt gekregen.<\/p>"
-        },
-        "shortStayNoAssessmentCode": {
-            "button": "Beoordeling ophalen",
-            "pageHeader": "Vul eerst je beoordelingscode in",
-            "pageIntro": "<p>Je hebt net de ophaalcode van je testuitslag ingevuld. Vul eerst je beoordelingscode in om je vaccinatiebeoordeling op te halen. Deze code heb je per mail of geprint gekregen van de balie waar jouw vaccinatie is beoordeeld.<\/p>"
-        },
-        "shortStayProvideAssessmentCode": {
-            "didNotGetCode": "Ik heb geen code gekregen",
-            "emptyTestCode": "Graag eerst een beoordelingscode invullen",
-            "emptyVerificationCode": "Graag eerst een verificatiecode invullen",
-            "exampleCode": "VAC-YYYYYYYYY1-F2",
-            "invalidTestCode": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: VAC-YYYYYYYYY1-F2",
-            "invalidVerificationCode": "Geen geldige combinatie. Vul de 6-cijferige verificatiecode in.",
-            "pageHeader": "Vaccinatiebeoordeling ophalen",
-            "pageIntro": "<p>Vul je beoordelingscode in. Deze heb je van de balie gekregen waar jouw vaccinatie werd beoordeeld.<\/p>",
-            "sendAgain": "Verstuur opnieuw",
-            "sendCode": "Stuur code",
-            "tokenExpired": "Deze beoordelingscode is niet meer geldig",
-            "uniqueCode": "Beoordelingscode",
-            "unknownTestProvider": "Deze code is niet geldig. Een code ziet er bijvoorbeeld zo uit: VAC-YYYYYYYYY1-F2",
-            "verificationCode": "Verificatiecode",
-            "verificationCodeDirection": "Je krijgt een code in een sms of e-mail"
-        },
-        "shortStayProvideCode": {
-            "pageHeader": "Kloppen de gegevens?"
         },
         "testResultNone": {
             "pageHeader": "Geen testuitslag beschikbaar",

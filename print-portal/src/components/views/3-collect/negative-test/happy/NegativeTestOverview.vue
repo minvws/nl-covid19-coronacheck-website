@@ -6,25 +6,18 @@ import CcButton from '@/components/elements/CcButton';
 import CcModestButton from '@/components/elements/CcModestButton';
 import overviewMixin from '@/components/views/3-collect/_shared/overview-mixin'
 import NegativeTestV2 from './NegativeTestV2';
-import VaccinationAssessment from '@/components/views/5-short-stay/VaccinationAssessment';
-
 import LoadingCover from '@/components/elements/LoadingCover';
 import { FilterTypes } from '@/types/filter-types'
-import { RouterNames } from '@/router/pages/short-stay'
 
 export default {
     name: 'NegativeTestOverview',
-    components: { LoadingCover, NegativeTestV2, Page, PageIntro, NegativeTest, CcButton, CcModestButton, VaccinationAssessment },
+    components: { LoadingCover, NegativeTestV2, Page, PageIntro, NegativeTest, CcButton, CcModestButton },
     mixins: [overviewMixin],
     props: {
         filter: {
             type: String,
             required: false,
             default: FilterTypes.NEGATIVE_TEST
-        },
-        exclude: {
-            type: String,
-            required: false
         }
     },
     data() {
@@ -34,27 +27,14 @@ export default {
             }
         }
     },
-    computed: {
-        isAssessment () {
-            return this.filter === FilterTypes.VACCINATION_ASSESSMENT
-        },
-        assessmentEvent () {
-            return this.$store.getters['signedEvents/getProofEvents'](FilterTypes.VACCINATION_ASSESSMENT)?.[0]
-        },
-        translation () {
-            return this.exclude || 'negativeTestOverview'
-        }
-    },
     methods: {
         translate (id) {
-            const key = `views.${this.translation}`
+            const key = 'views.negativeTestOverview'
             return this.$t(`${key}.${id}`);
         }
     },
     mounted() {
-        if (this.isAssessment) {
-            this.$router.replace({ name: RouterNames.CODE });
-        } else if (!this.latestSignedEvent) {
+        if (!this.latestSignedEvent) {
             this.$router.push({ name: 'TestResultNone' });
         }
     }
@@ -71,17 +51,12 @@ export default {
                 :intro="translate('pageIntro')"/>
 
             <div class="section-block">
-                <div class="proof-events" v-if="!isAssessment && latestSignedEvent">
-                    <VaccinationAssessment
-                        v-if="assessmentEvent"
-                        :signed-event="assessmentEvent"
-                    />
+                <div class="proof-events" v-if="latestSignedEvent">
                     <NegativeTestV2
                         v-if="latestSignedEvent.event.negativetest.protocolVersion === '2.0'"
                         :signed-event="latestSignedEvent"/>
                     <NegativeTest
                         v-else
-                        :footer="exclude"
                         :signed-event="latestSignedEvent"/>
                 </div>
                 <div class="section-block__footer">
@@ -90,7 +65,6 @@ export default {
                         @select="gotoPrint()"
                         :label="translate('createTestProofButton')"/>
                     <div
-                        v-if="!assessmentEvent"
                         class="button__help-button">
                         <CcModestButton
                             id="something-is-wrong"

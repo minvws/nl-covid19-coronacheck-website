@@ -12,10 +12,6 @@ export default {
         signedEvent: {
             type: SignedEvent,
             required: true
-        },
-        footer: {
-            type: String,
-            required: false
         }
     },
     computed: {
@@ -124,10 +120,6 @@ export default {
                         </div>
                     </div>
                 </dl>
-                <template v-if="footer">
-                    <p class="title" v-html="$t(`components.${footer}.info.head`)" />
-                    <p v-html="$t(`components.${footer}.info.body`)" />
-                </template>
             </template>
         </SlotModal>
     </portal>
