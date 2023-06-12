@@ -6,8 +6,8 @@ published: false
 title: ''
 # Version: 0g, 1g or 3g
 version: '0g'
-# Style (icon)
-style: info
+# Icon
+icon: info
 ---
 Vanaf dinsdag 24 mei kunnen positieve uitslagen van antigeentesten ook worden gebruikt om een internationaal herstelbewijs te maken. 
 

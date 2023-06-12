@@ -6,8 +6,8 @@ published: false
 title: '3G-toegang en 1G-toegang in Nederland'
 # Version: 0g, 1g or 3g
 version: '3g'
-# Style (icon)
-style: info
+# Icon
+icon: info
 ---
 Vanaf [datum] wordt er in Nederland 3G-toegang of 1G-toegang gegeven op plekken waar een coronabewijs nodig is. Check vooraf welk soort toegang wordt gegeven op de plek die je wilt bezoeken.
 
