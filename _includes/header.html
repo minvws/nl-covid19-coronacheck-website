@@ -17,14 +17,15 @@
             </div>
         
 
-            {% if site.version != 'offline' %}
                 <div class="header__quick-link">
                     <a href="{{ langSlug }}/scanner" class="header__quick-link--scanner">
                     {{ site.data[page.lang].translations.coronacheck-scanner-linktext }}</a>
-                    <a href="{{ langSlug }}/faq">
-                    {{ site.data[page.lang].translations.faq }}</a>
+
+                    {% if site.version != 'offline' %}
+                        <a href="{{ langSlug }}/faq">
+                        {{ site.data[page.lang].translations.faq }}</a>
+                    {% endif %}
                 </div>
-            {% endif %}
         
             {% include components/language-picker.html headertype="default" %}
         </div>
