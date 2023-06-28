@@ -218,6 +218,10 @@
     p {
         margin-top: 1.5rem;
         margin-bottom: 2.5rem;
+
+        .content-offline & {
+            margin-bottom: 0;
+        }
     }
 
     a {
@@ -257,6 +261,10 @@
         align-items: flex-end;
         justify-content: flex-end;
         display: flex;
+
+        .content-offline & {
+            align-items: center;
+        }
     }
 
     img {
