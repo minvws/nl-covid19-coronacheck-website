@@ -9,12 +9,12 @@
 {% include head.html for="scanner" %}
 <body class="scanner-{{ site.version }} content-{{ site.version }}">
   {% include header-scanner.html  %}
-      {% if site.version == "0g" %}
+    {% if site.version == "offline" %}
         <main id="content" class="offset-background">
             <div class="container">
                 <div class="header__layout header__layout--scanner">
                     <div class="header__layout--image">
-                        {% if site.version == "0g" %}
+                        {% if site.version == "offline" %}
                             <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-out-of-order[page.lang] }}" alt="" width="74" height="150">
                         {% else %}
                             <img src="{{ site.baseurl }}{{ site.data.setup.scanner-header-img[page.lang] }}" alt="" width="250" height="319">
@@ -26,7 +26,7 @@
                         </h1>
                         <p>{{ site.data[page.lang][site.version].scanner-header-subtitle }}</p>
                         
-                        {% if site.version != "0g" %}
+                        {% if site.version != "offline" %}
                             {% include components/scanner-badges.html %}
                         {% endif %}
                     </div>
