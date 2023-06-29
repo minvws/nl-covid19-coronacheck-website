@@ -4,7 +4,6 @@ lang: nl
 title: FAQ
 redirect_from: 
     - /nl/faq-in-app/1-12-de-qr-code-van-mijn-vaccinatie-is-verlopen-wat-moet-ik-doen
-    - /nl/faq-in-app/1-11-mijn-qr-code-is-verborgen-wat-betekent-dit
     - /nl/dosis
     - /dosis
     - /nl/faq-in-app/3-8-wat-betekent-een-dosis-2-1-of-3-1-op-mijn-vaccinatiebewijs/

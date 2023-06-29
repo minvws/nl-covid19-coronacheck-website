@@ -4,7 +4,6 @@ lang: en
 title: FAQ
 redirect_from: 
     - /en/faq-in-app/1-12-de-qr-code-van-mijn-vaccinatie-is-verlopen-wat-moet-ik-doen
-    - /en/faq-in-app/1-11-mijn-qr-code-is-verborgen-wat-betekent-dit
     - /en/faq-in-app/3-8-wat-betekent-een-dosis-2-1-of-3-1-op-mijn-vaccinatiebewijs/
 ---
 ## The QR code of my vaccination has expired. <br />What should I do?
