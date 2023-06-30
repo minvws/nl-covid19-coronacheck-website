@@ -26,16 +26,16 @@
           <a href="{{ langSlug }}" class="link__404">{{ site.data[page.lang].translations.error-back-to-home-page }}</a> 
         </p>
 
-        <p>
-          <a href="{{ langSlug }}/faq" class="link__404">{{ site.data[page.lang].translations.error-back-to-faq }}</a>
-        </p>
-
+        {% if site.version != 'offline' %}
+            <p>
+            <a href="{{ langSlug }}/faq" class="link__404">{{ site.data[page.lang].translations.error-back-to-faq }}</a>
+            </p>
+        {% endif %}
 
         {{ content }}
       </div>
     </div>
   </main>
-
 
 {% include footer-js.html %}
 </body>

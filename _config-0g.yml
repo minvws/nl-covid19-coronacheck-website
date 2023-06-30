@@ -15,8 +15,12 @@ collections:
   questions-scanner-in-app:
     output: true
     permalink: /:categories/:name/
+  faqcategories:
+    output: true
+  faqcategories-in-app:
+    output: true
   announcements:
-    output: false  
+    output: false
 
 defaults:
   -
@@ -160,7 +164,6 @@ exclude:
   - .history
   - auth.php
   - auth2.php
-  - generate-statistics-graphic.html
 
 plugins:
   - "jekyll-github-metadata"
