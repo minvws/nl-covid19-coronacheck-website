@@ -14,54 +14,67 @@
     <div class="offset-background">
         <div class="container">
             <div class="hero">
-                <div  class="hero__content">
+
+                {% if site.version == 'offline' %}
+                    <div class="hero__image hero__image--offline">
+                        <img src="{{ site.baseurl }}/img/hero_image_offline.svg" alt="" width="376" height="261">
+                    </div>
+                {% endif %}
+
+                <div class="hero__content">
                     <h1 class="header__title"> 
                         {{ site.data[page.lang][site.version].header-title }}<br /> 
                     </h1>
 
                     <p>{{ site.data[page.lang][site.version].header-subtitle }}</p> 
 
-                    <div class="buttons">
-                        <!-- shown on desktop only -->
-                            <a href="{{ site.data.setup.header-button-download-app-url[page.lang] }}" class="btn only-desktop">{{ site.data[page.lang].translations.header-button-download-app }}</a>
-                        <!-- end shown on desktop -->
+                    {% if site.version != 'offline' %}
+                        <div class="buttons">
+                            <!-- shown on desktop only -->
+                                <a href="{{ site.data.setup.header-button-download-app-url[page.lang] }}" class="btn only-desktop">{{ site.data[page.lang].translations.header-button-download-app }}</a>
+                            <!-- end shown on desktop -->
 
-                        <!-- shown on mobile only -->
-                            <!-- if on iphone -->
-                            <a href="{{ site.data.setup.coronacheck-app-store-url[page.lang] }}" class="btn onlyiOS">{{ site.data[page.lang].translations.header-button-download-app }} <span class="noJS">(iOS)</span></a>
-                            <!-- if on android -->
-                            <a href="{{ site.data.setup.coronacheck-google-play-url[page.lang] }}" class="btn onlyAndroid">{{ site.data[page.lang].translations.header-button-download-app }} <span class="noJS">(Android)</span></a>
-                        <!-- end shown on mobile -->
+                            <!-- shown on mobile only -->
+                                <!-- if on iphone -->
+                                <a href="{{ site.data.setup.coronacheck-app-store-url[page.lang] }}" class="btn onlyiOS">{{ site.data[page.lang].translations.header-button-download-app }} <span class="noJS">(iOS)</span></a>
+                                <!-- if on android -->
+                                <a href="{{ site.data.setup.coronacheck-google-play-url[page.lang] }}" class="btn onlyAndroid">{{ site.data[page.lang].translations.header-button-download-app }} <span class="noJS">(Android)</span></a>
+                            <!-- end shown on mobile -->
 
-                        <a href="{{ site.data.setup.header-button-paper-certificate-url[page.lang] }}" class="btn">{{ site.data[page.lang].translations.header-button-paper-certificate }}</a>
-                    </div>
-                </div>
-
-                <div class="hero__image">
-                    {% if site.version == '0g' %}
-                        <img src="{{ site.baseurl }}/img/hero_image_0g.svg" alt="" width="360" height="280">
-                    {% else %}
-                        <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="360" height="280">
+                            <a href="{{ site.data.setup.header-button-paper-certificate-url[page.lang] }}" class="btn">{{ site.data[page.lang].translations.header-button-paper-certificate }}</a>
+                        </div>
                     {% endif %}
                 </div>
+
+                {% if site.version != 'offline' %}
+                    <div class="hero__image">
+                        {% if site.version == '0g' %}
+                            <img src="{{ site.baseurl }}/img/hero_image_0g.svg" alt="" width="360" height="280">
+                        {% else %}
+                            <img src="{{ site.baseurl }}{{ site.data.setup.coronacheck-header-illustration[page.lang] }}" alt="" width="360" height="280">
+                        {% endif %}
+                    </div>
+                {% endif %}
             </div>
         </div>
 
     </div>
 
-    {% include components/announcements.html  %}
-    
-    {% include components/how-does-coronacheck-work.html  %} 
+    {% if site.version != 'offline' %}
+        {% include components/announcements.html  %}
+        
+        {% include components/how-does-coronacheck-work.html  %} 
 
-    {% if site.version != "0g" %}
-        {% include components/grant-access-with-coronacheck-scanner.html  %}
+        {% if site.version != "0g" %}
+            {% include components/grant-access-with-coronacheck-scanner.html  %}
+        {% endif %}
+
+        {% include components/faq.html for="coronacheck" %}
     {% endif %}
 
-    {% include components/faq.html for="coronacheck" %}
+        {% include components/helpdesk.html %}
 
-    {% include components/helpdesk.html %}
-
-    {% include components/netherlands-worldwide.html %}
+        {% include components/netherlands-worldwide.html %}
 
   </main>
   {% include footer.html %}

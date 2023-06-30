@@ -12,10 +12,6 @@ export default {
         signedEvent: {
             type: SignedEvent,
             required: true
-        },
-        footer: {
-            type: String,
-            required: false
         }
     },
     computed: {
@@ -61,7 +57,6 @@ export default {
         <NegativeTestInfo
             v-if="showInfo"
             @close="closeInfo"
-            :footer="footer"
             :signed-event="signedEvent"/>
     </div>
 </template>

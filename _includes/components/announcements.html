@@ -1,10 +1,10 @@
 {% assign announcements = site.announcements | where:"lang", page.lang | where:"version", site.version %}
 {% if announcements.size != 0 %}
     {% for announcement in announcements %}
-    <div class="announcement">
+    <div class="announcement {% if announcement.style %}announcement--{{ announcement.style }}{% endif %}">
         <div class="announcement_icon">
             <img
-                src="{{ site.baseurl }}/img/announcement-{{ announcement.style }}.svg"
+                src="{{ site.baseurl }}/img/announcement-{{ announcement.icon }}.svg"
                 alt="Informatie"
                 width="20"
                 height="20"

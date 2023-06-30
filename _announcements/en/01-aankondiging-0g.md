@@ -6,8 +6,8 @@ published: false
 title: ''
 # Version: 0g, 1g or 3g
 version: '0g'
-# Style (icon)
-style: info
+# Icon
+icon: info
 ---
 Starting Tuesday May 24, positive antigen test results can also be used to create an international recovery certificate. 
 

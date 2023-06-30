@@ -1,145 +1,31 @@
-## Default config file used by Github Pages, copy the config from one of the other config files to use:
+## Default config file used by Github Pages, copy the config from one of the other config files to switch:
 ## _config-0g
 ## _config-1g
 ## _config-3g
 
 repo: minvws/nl-covid19-notification-app-website
 
-version: 0g
+version: offline
 
 collections:
   questions:
-    output: true
+    output: false
     permalink: /:categories/:name/
   questions-in-app:
-    output: true
+    output: false
     permalink: /:categories/:name/
   questions-scanner:
-    output: true
+    output: false
     permalink: /:categories/:name/
   questions-scanner-in-app:
-    output: true
+    output: false
     permalink: /:categories/:name/
   faqcategories:
-    output: true
+    output: false
   faqcategories-in-app:
-    output: true
+    output: false
   announcements:
     output: false
-
-defaults:
-  -
-    scope:
-      path: "_questions/nl"
-      type: "questions"
-    values:
-      layout: content
-      categories:
-      - nl
-      - faq
-      lang: nl
-      showBreadCrumbs: true
-      showContact: true
-      showOnFAQoverview: true
-  -
-    scope:
-      path: "_questions/en"
-      type: "questions"
-    values:
-      layout: content
-      categories:
-      - en
-      - faq
-      lang: en
-      showBreadCrumbs: true
-      showContact: true
-      showOnFAQoverview: true
-  -
-    scope:
-      path: "_questions-in-app/en"
-      type: "questions-in-app"
-    values:
-      layout: in-app-question
-      categories:
-      - en
-      - faq-in-app
-      lang: en
-      showBreadCrumbs: true
-      showContact: true
-      showOnFAQoverview: true
-      webonly: false
-  -
-    scope:
-      path: "_questions-in-app/nl"
-      type: "questions-in-app"
-    values:
-      layout: in-app-question
-      categories:
-      - nl
-      - faq-in-app
-      lang: nl
-      showBreadCrumbs: true
-      showContact: true
-      showOnFAQoverview: true
-      webonly: false
-  -
-    scope:
-      path: "_questions-scanner/nl"
-      type: "questions-scanner"
-    values:
-      layout: content
-      categories:
-      - nl
-      - faq-scanner
-      lang: nl
-      showBreadCrumbs: true
-      showContact: true
-      showOnFAQoverview: true
-      published: false
-  -
-    scope:
-      path: "_questions-scanner/en"
-      type: "questions-scanner"
-    values:
-      layout: content
-      categories:
-      - en
-      - faq-scanner
-      lang: en
-      showBreadCrumbs: true
-      showContact: true
-      showOnFAQoverview: true
-      published: false
-  -
-    scope:
-      path: "_questions-scanner-in-app/en"
-      type: "questions-scanner-in-app"
-    values:
-      layout: in-app-question
-      categories:
-      - en
-      - faq-scanner-in-app
-      lang: en
-      showBreadCrumbs: true
-      showContact: true
-      showOnFAQoverview: true
-      webonly: false
-      published: false
-  -
-    scope:
-      path: "_questions-scanner-in-app/nl"
-      type: "questions-scanner-in-app"
-    values:
-      layout: in-app-question
-      categories:
-      - nl
-      - faq-scanner-in-app
-      lang: nl
-      showBreadCrumbs: true
-      showContact: true
-      showOnFAQoverview: true
-      webonly: false
-      published: false
 
 sass:
   style: compressed
@@ -169,7 +55,24 @@ exclude:
   - .history
   - auth.php
   - auth2.php
-  - generate-statistics-graphic.html
+  - nl/faq.md
+  - nl/faq-in-app.md
+  - nl/faq-scanner.md
+  - nl/faq-scanner-in-app.md
+  - nl/wegwijzer
+  - nl/wegwijzer-in-app
+  - en/faq.md
+  - en/faq-in-app.md
+  - en/faq-scanner.md
+  - en/faq-scanner-in-app.md
+  - en/guidepost
+  - en/guidepost-in-app
+  - _questions
+  - _questions-in-app
+  - _questions-scanner
+  - _questions-scanner-in-app
+  - _faqcategories
+  - _faqcategories-in-app
 
 plugins:
   - "jekyll-github-metadata"

@@ -78,11 +78,13 @@
                 </div>
                 <div class="footer-links-col ___desktop-25">
                     <h3>{{ site.data[page.lang].translations.footer-more-info-title }}</h3>
-                    <ul>
-                        <li><a href="{{ site.data.setup.footer-status-url[page.lang] }}">{{ site.data[page.lang].translations.footer-status }}</a></li>
-                        <li><a href="{{ langSlug }}{{ site.data.setup.footer-wegwijzer-url[page.lang] }}">{{ site.data[page.lang].translations.footer-wegwijzer }}</a></li>
+                    <ul> 
+                        {% if site.version != "offline" %}
+                            <li><a href="{{ site.data.setup.footer-status-url[page.lang] }}">{{ site.data[page.lang].translations.footer-status }}</a></li>
+                            <li><a href="{{ langSlug }}{{ site.data.setup.footer-wegwijzer-url[page.lang] }}">{{ site.data[page.lang].translations.footer-wegwijzer }}</a></li>
+                        {% endif %}
                         <li>{{ site.data.links.wijsopreis[page.lang] }}</li>
-                        <li><a href="{{ site.data.setup.footer-more-info-url }}" target="_blank" rel="noopener noreferrer">{{ site.data[page.lang].translations.footer-more-info }} </a></li>
+                        <li><a href="{{ site.data.setup.footer-more-info-url[page.lang] }}" target="_blank" rel="noopener noreferrer">{{ site.data[page.lang].translations.footer-more-info }} </a></li>
                     </ul>
                 </div>
             

@@ -18,10 +18,6 @@ export default {
         regionType: {
             type: String,
             required: true
-        },
-        exclude: {
-            type: String,
-            required: false
         }
     },
     computed: {
@@ -29,9 +25,6 @@ export default {
             return this.$t('views.print.details.header')
         },
         details() {
-            if (this.exclude === RegionTypes.SHORT_STAY) {
-                return ['shortStay']
-            }
             const details = []
 
             if (this.type === FilterTypes.VACCINATION) {
