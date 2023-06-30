@@ -66,11 +66,11 @@ scanner-lead-title: Download de CoronaCheck Scanner-app
   
 footer-attribution: 'Mede mogelijk gemaakt door:'
 
-footer-contact-in-app-subtitle: Staat je vraag er niet tussen? <br />Bekijk <a href="https://www.coronacheck.nl/nl/faq" target="_blank" rel="noopener noreferrer">alle meestgestelde vragen</a> of neem contact op met de helpdesk.
+footer-contact-in-app-subtitle: Heb je vragen? <br />Bekijk <a href="https://www.coronacheck.nl/nl/faq" target="_blank" rel="noopener noreferrer">alle meestgestelde vragen</a> of neem contact op met de helpdesk.
 
-footer-contact-title: Staat je vraag er niet tussen? <br />Neem contact op met de helpdesk
+footer-contact-title: Heb je vragen? <br />Neem contact op met de helpdesk
 
-footer-contact-scanner-in-app-subtitle: Staat je vraag er niet tussen? <br />Bekijk <a href="https://www.coronacheck.nl/nl/faq-scanner" target="_blank" rel="noopener noreferrer">alle meestgestelde vragen</a> of neem contact op met de helpdesk.
+footer-contact-scanner-in-app-subtitle: Heb je vragen? <br />Bekijk <a href="https://www.coronacheck.nl/nl/faq-scanner" target="_blank" rel="noopener noreferrer">alle meestgestelde vragen</a> of neem contact op met de helpdesk.
 
 footer-phone: Bel de helpdesk
 
@@ -218,7 +218,7 @@ scanner-howto-step-3-content: |
 
 dashboard-noscript-title: JavaScript vereist
 
-dashboard-noscript-description: Dit dashboard gebruikt JavaScript. Schakel a.u.b. JavaScript in en probeer het opnieuw, of probeer het in een andere browser.
+dashboard-noscript-description: Dit dashboard gebruikt JavaScript. Schakel alsjeblieft JavaScript in en probeer het opnieuw, of probeer het in een andere browser.
 
 coronamelder-title: Gebruik ook CoronaMelder
 

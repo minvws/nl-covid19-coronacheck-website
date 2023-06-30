@@ -1,5 +1,0 @@
-Contact: mailto:security@coronacheck.nl
-Expires: 2024-03-26T23:00:00.000Z
-Preferred-Languages: nl,en
-Policy: https://coronacheck.nl/nl/kwetsbaarheid-melden
-Policy: https://coronacheck.nl/en/kwetsbaarheid-melden

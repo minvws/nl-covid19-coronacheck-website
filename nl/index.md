@@ -7,4 +7,10 @@ redirect_from:
   - /app/redeem
   - /app/niet-in-gebruik
   - /index.html
+  - /nl/wegwijzer
+  - /wegwijzer
+  - /nl/testafspraak-in-app
+  - /nl/faq
+  - /nl/faq-in-app
+  - /alleen-internationaal
 ---

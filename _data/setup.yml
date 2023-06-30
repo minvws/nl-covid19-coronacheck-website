@@ -112,7 +112,9 @@ footer-status-url:
   nl: https://status.coronacheck.nl/
   en: https://status.coronacheck.nl/en/
 
-footer-more-info-url: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19
+footer-more-info-url: 
+  nl: https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/reizen-en-vakantie/coronabewijs
+  en: https://www.government.nl/topics/coronavirus-covid-19
 
 footer-misc-privacy-url: privacy
 

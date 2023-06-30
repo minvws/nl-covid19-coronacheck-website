@@ -127,5 +127,19 @@
                 background-image: url("#{$file-path}img/chevron-up-darkmode.svg");
             }
         }
+
+        svg {
+            background-color: #141415;
+            color: white;
+        }
+
+        line[stroke-opacity] {
+            color: white;
+        }
+
+        .content-block table tr th {
+            background: #141415;
+            color: inherit;
+        }
     }
 }

@@ -16,14 +16,16 @@
             </a>
         </div>
 
-        {% if include.for == "scanner" %}
-            <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
-                {{ site.data[page.lang].translations.faq }}
-            </a>
-        {% else %}
-            <a href="{{ langSlug }}/faq" class="header__quick-link">
-                {{ site.data[page.lang].translations.faq }}
-            </a>
+        {% if site.version != 'offline' %}
+            {% if include.for == "scanner" %}
+                <a href="{{ langSlug }}/faq-scanner" class="header__quick-link">
+                    {{ site.data[page.lang].translations.faq }}
+                </a>
+            {% else %}
+                <a href="{{ langSlug }}/faq" class="header__quick-link">
+                    {{ site.data[page.lang].translations.faq }}
+                </a>
+            {% endif %}
         {% endif %}
 
         {% include components/language-picker.html headertype="default" %}

@@ -17,10 +17,6 @@ export default {
             type: Boolean,
             required: false,
             default: false
-        },
-        exclude: {
-            type: String,
-            required: false
         }
     },
     computed: {
@@ -37,14 +33,10 @@ export default {
         regionTypes () {
             return RegionTypes;
         },
-        isShortStay () {
-            return this.exclude === RegionTypes.SHORT_STAY
-        },
         proof() {
-            const exclude = this.isShortStay ? [RegionTypes.EUROPEAN] : []
             const proof = this.$store.state.qrs.proof || {}
             const result = Object.keys(proof).reduce((cul, key) => {
-                if (!exclude.includes(key))cul[key] = this.$store.state.qrs.proof[key]
+                cul[key] = this.$store.state.qrs.proof[key]
                 return cul
             }, {})
             return result;
@@ -89,9 +81,6 @@ export default {
             }
         },
         pageIntroCopy() {
-            if (this.isShortStay) {
-                return this.$t('views.print.pageIntro.short-stay');
-            }
             const type = this.is0G ? '0G' : this.regionType
 
             let copy = this.$t(`views.print.pageIntro.${type}`, { type: this.proofTypeCopy });
@@ -125,7 +114,6 @@ export default {
                 class="section-block">
                 <PrintFaq
                     :type="type"
-                    :exclude="exclude"
                     :region-type="regionType"/>
             </div>
             <div
